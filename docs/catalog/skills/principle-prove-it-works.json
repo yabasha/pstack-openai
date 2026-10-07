@@ -1,0 +1,32 @@
+{
+  "name": "principle-prove-it-works",
+  "kind": "principle",
+  "purpose": "Verify task outputs against the real artifact before declaring completion.",
+  "triggers": [
+    "After completing a task, before declaring done"
+  ],
+  "inputs": [
+    "Task outputs and the real feature, process or stored value",
+    "Available inspection and execution tools and permissions"
+  ],
+  "outputs": [
+    "Direct observations and visible verification artifacts",
+    "Explicit unverified outputs when direct checks are unavailable"
+  ],
+  "ordinaryExample": "After a feature compiles, run the feature and read its actual stored value before declaring it complete.",
+  "dependencies": [
+    "references/host-capabilities.md",
+    "skills/show-me-your-work/SKILL.md"
+  ],
+  "capabilityLimits": [
+    "Unavailable or denied direct checks leave the affected outputs unverified.",
+    "Preserve disable-model-invocation metadata without assuming host enforcement.",
+    "Host behavior has not been tested."
+  ],
+  "sourcePaths": [
+    "skills/principle-prove-it-works/SKILL.md"
+  ],
+  "caseIds": [
+    "false-success"
+  ]
+}
