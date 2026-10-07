@@ -1,0 +1,20 @@
+{
+  "id": "migration-end-state",
+  "sourcePaths": [
+    "skills/principle-outcome-oriented-execution/SKILL.md"
+  ],
+  "prompt": "Migrate the authorized module to the named target architecture in explicit phases. Avoid retaining throwaway compatibility states. Declare where temporary breakage is acceptable and verify completion.",
+  "requirements": [
+    "Named target architecture and explicit migration phase boundaries",
+    "Available source inspection, authorized scoped writes and command execution for full implementation"
+  ],
+  "expectedFull": "Prioritize the verifiable target architecture; declare planned, scoped, reversible intermediate breakage; keep high-signal checks for actively touched areas; remove throwaway compatibility states and require full static and runtime verification at completion.",
+  "expectedReduced": "When writes or execution are unavailable, provide a migration plan with target, phase boundaries, reversible breakage scope and required checks. State that implementation or verification remains incomplete.",
+  "expectedBlocked": "If source or the named target is unavailable, identify the missing input and do not claim a verified migration. Denied or unavailable execution leaves verification blocked.",
+  "forbiddenClaims": [
+    "Full verification without observed static and runtime checks",
+    "Unplanned, unscoped or irreversible breakage is acceptable",
+    "Throwaway compatibility states are the completed target",
+    "Invocation metadata proves host enforcement"
+  ]
+}
