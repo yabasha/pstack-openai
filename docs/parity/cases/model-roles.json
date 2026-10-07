@@ -1,0 +1,94 @@
+[
+  {
+    "id": "unsupported-selected-model",
+    "sourcePaths": [
+      "agents/poteto-agent.md",
+      "agents/comment-sicko.md"
+    ],
+    "prompt": "The requested model is unavailable or rejects the selected effort.",
+    "requirements": [
+      "Record the rejected request and supported effort; disclose any inherited fallback before proceeding.",
+      "Read portable role instructions; bind operations to observed session capabilities."
+    ],
+    "expectedFull": "Observed independent worker and result inspection preserve the role; disclose requested and observed model separately. Record the rejected request and supported effort; disclose any inherited fallback before proceeding.",
+    "expectedReduced": "Authorized sequential role review preserves scope and reports reduced capability. Record the rejected request and supported effort; disclose any inherited fallback before proceeding.",
+    "expectedBlocked": "Required independent worker or selected model is unavailable and fallback is not authorized; stop dependent work and record blocked.",
+    "forbiddenClaims": [
+      "Requested model proves actual model.",
+      "Different role names prove model diversity.",
+      "Unknown actual models establish diversity.",
+      "Cached documentation proves current session tools.",
+      "Portable prompt files register custom agents.",
+      "Sequential fallback is independent workers or full pass."
+    ]
+  },
+  {
+    "id": "inherited-identical-models",
+    "sourcePaths": [
+      "agents/poteto-agent.md",
+      "agents/comment-sicko.md"
+    ],
+    "prompt": "Two roles inherit the same observed parent model.",
+    "requirements": [
+      "Record identical observed models; separate role prompts do not establish model diversity.",
+      "Read portable role instructions; bind operations to observed session capabilities."
+    ],
+    "expectedFull": "Observed independent worker and result inspection preserve the role; disclose requested and observed model separately. Record identical observed models; separate role prompts do not establish model diversity.",
+    "expectedReduced": "Authorized sequential role review preserves scope and reports reduced capability. Record identical observed models; separate role prompts do not establish model diversity.",
+    "expectedBlocked": "Required independent worker or selected model is unavailable and fallback is not authorized; stop dependent work and record blocked.",
+    "forbiddenClaims": [
+      "Requested model proves actual model.",
+      "Different role names prove model diversity.",
+      "Unknown actual models establish diversity.",
+      "Cached documentation proves current session tools.",
+      "Portable prompt files register custom agents.",
+      "Sequential fallback is independent workers or full pass."
+    ]
+  },
+  {
+    "id": "unknown-actual-model",
+    "sourcePaths": [
+      "agents/poteto-agent.md",
+      "agents/comment-sicko.md"
+    ],
+    "prompt": "A spawn request names a model but its result does not expose the actual model.",
+    "requirements": [
+      "Keep observed model unknown and retain the request separately.",
+      "Read portable role instructions; bind operations to observed session capabilities."
+    ],
+    "expectedFull": "Observed independent worker and result inspection preserve the role; disclose requested and observed model separately. Keep observed model unknown and retain the request separately.",
+    "expectedReduced": "Authorized sequential role review preserves scope and reports reduced capability. Keep observed model unknown and retain the request separately.",
+    "expectedBlocked": "Required independent worker or selected model is unavailable and fallback is not authorized; stop dependent work and record blocked.",
+    "forbiddenClaims": [
+      "Requested model proves actual model.",
+      "Different role names prove model diversity.",
+      "Unknown actual models establish diversity.",
+      "Cached documentation proves current session tools.",
+      "Portable prompt files register custom agents.",
+      "Sequential fallback is independent workers or full pass."
+    ]
+  },
+  {
+    "id": "missing-model-enumeration",
+    "sourcePaths": [
+      "agents/poteto-agent.md",
+      "agents/comment-sicko.md"
+    ],
+    "prompt": "No exposed operation enumerates supported models or reasoning efforts.",
+    "requirements": [
+      "Default to inherit-parent; declare enumeration unavailable without guessing models or efforts.",
+      "Read portable role instructions; bind operations to observed session capabilities."
+    ],
+    "expectedFull": "Observed independent worker and result inspection preserve the role; disclose requested and observed model separately. Default to inherit-parent; declare enumeration unavailable without guessing models or efforts.",
+    "expectedReduced": "Authorized sequential role review preserves scope and reports reduced capability. Default to inherit-parent; declare enumeration unavailable without guessing models or efforts.",
+    "expectedBlocked": "Required independent worker or selected model is unavailable and fallback is not authorized; stop dependent work and record blocked.",
+    "forbiddenClaims": [
+      "Requested model proves actual model.",
+      "Different role names prove model diversity.",
+      "Unknown actual models establish diversity.",
+      "Cached documentation proves current session tools.",
+      "Portable prompt files register custom agents.",
+      "Sequential fallback is independent workers or full pass."
+    ]
+  }
+]
