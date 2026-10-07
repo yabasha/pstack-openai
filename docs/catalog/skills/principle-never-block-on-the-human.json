@@ -1,0 +1,36 @@
+{
+  "name": "principle-never-block-on-the-human",
+  "kind": "principle",
+  "purpose": "Proceed on authorized reversible work, present reviewable results and let the human course-correct asynchronously while preserving confirmation and explicit review gates.",
+  "triggers": [
+    "Temptation to ask whether to perform authorized reversible work",
+    "Explicit principle-never-block-on-the-human invocation"
+  ],
+  "inputs": [
+    "Authorized task and assigned scope",
+    "Human product direction and explicit review gates",
+    "Available session permissions and capabilities"
+  ],
+  "outputs": [
+    "Completed reversible work and reviewable result with reasoning",
+    "Scoped problem log and next-round fixes where authorized",
+    "Proposed change or missing-capability report when execution is unavailable"
+  ],
+  "ordinaryExample": "Apply an authorized local code fix and present the diff; wait for required human review before merging, while continuing independent authorized work.",
+  "dependencies": [
+    "references/host-capabilities.md"
+  ],
+  "capabilityLimits": [
+    "Reversible actions still require task authorization and host permissions.",
+    "Irreversible actions and explicit user review gates retain confirmation requirements.",
+    "Unavailable writes permit a proposed change, never a claim that it was applied.",
+    "No host behavior has been tested.",
+    "Preserve disable-model-invocation metadata without assuming host enforcement."
+  ],
+  "sourcePaths": [
+    "skills/principle-never-block-on-the-human/SKILL.md"
+  ],
+  "caseIds": [
+    "reversible-step"
+  ]
+}
