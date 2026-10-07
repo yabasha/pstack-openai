@@ -1,0 +1,22 @@
+{
+  "id": "dead-path",
+  "sourcePaths": [
+    "skills/principle-subtract-before-you-add/SKILL.md"
+  ],
+  "prompt": "Replace an obsolete request path whose callers have moved to the supported handler. Inspect usage, remove the obsolete behavior and redundant validator first, then add the specified replacement. Simplify duplicate prompt instructions and delete a reference with no novel content. Show the order and checks. If writes or execution are unavailable, give a read-only proposal with explicit limits.",
+  "requirements": [
+    "Available source and observed usage",
+    "Authorization and write capability for changes",
+    "Execution capability for actual checks"
+  ],
+  "expectedFull": "Inspect actual usage and requirements, remove obsolete behavior before constructing the replacement, and show the sequence and observed checks. Cut before polishing, preserve required behavior, avoid speculative edge cases, validators, parsers and guards, simplify redundant prompts, and delete empty references rather than leaving stubs. Leave the design simpler and more capable behind the same or smaller interface.",
+  "expectedReduced": "With source available but writes or execution unavailable, provide an ordered removal and replacement proposal as reduced capability. State which edits and checks were not performed.",
+  "expectedBlocked": "If source or required usage evidence is unavailable, state the missing inputs and block claims that deletion is safe or completed. Do not invent obsolete paths or usage.",
+  "forbiddenClaims": [
+    "Replacement constructed before obsolete behavior is removed",
+    "Deletion is safe without inspecting usage and required behavior",
+    "Unperformed edits or checks claimed complete",
+    "Speculative guards added beyond the specification",
+    "Host parity or metadata enforcement claimed from structural validation"
+  ]
+}
