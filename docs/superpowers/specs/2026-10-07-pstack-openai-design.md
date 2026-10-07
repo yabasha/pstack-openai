@@ -421,3 +421,23 @@ print("\n".join(str(p) for p in files))
 ```
 
 The archive endpoints are [canonical source archive](https://codeload.github.com/cursor/plugins/tar.gz/df581122cde17e6e27686b5a448bde23e4ad4318) and [comparison-port archive](https://codeload.github.com/FetchUpstream/pstack-plugin/tar.gz/ba2205db1f83295154e31abc762f533954f581bb). Downloading these archives does not install either plugin.
+
+## Approved-scope addendum: complete usage documentation
+
+Date: 2026-10-07, after approval of the original written spec.
+
+The user additionally requires a GitHub Wiki or README that explains setup, every skill, principles, and workflows in a way they can use. This addendum adds a documentation workstream and does not change the baseline, orchestration ownership, capability limits, customization order, or review gates.
+
+README is the entry point. Version-controlled `docs/` pages are canonical and ready for optional GitHub Wiki export. Separate guides cover personal ChatGPT and Codex setup. The catalog covers all 51 skills and identifies all 24 principles. Each entry includes purpose, triggers, inputs, outputs, examples, dependencies, and capability limits. Generate or check the catalog against the parity inventory to prevent drift.
+
+Provide arena, swarm, and poteto-mode walkthroughs, a guide to choosing pstack or Superpowers, troubleshooting, and release-specific compatibility evidence. The maintenance guide explains update checking, preparation, conflict review, application, validation, and rollback. Link and command examples need validation. Setup instructions need observed walkthrough evidence in both real hosts before they are called verified.
+
+Wiki export uses the same canonical docs rather than a second manually maintained catalog. Wiki availability and publication are separate later decisions. No Wiki enabling or publication is part of planning.
+
+## Planning-stage authorization record: private remote only
+
+Date: 2026-10-07.
+
+The user subsequently authorized creating a private GitHub repository in message `Sentinel_7c0eeac4de3c81919aca1d9689c6cb57`. After documentation planning, verify the authenticated owner is `yabasha` and check `yabasha/pstack-openai` before creation. If absent, create it private and link the local repository without replacing unrelated remotes. Stop on an owner mismatch or repository conflict.
+
+This authorization permits creation and local remote linking only. It does not authorize pushing the documentation, enabling Wiki, changing visibility or credentials, installing integrations, or starting implementation. The earlier design-stage prohibition on remote creation remains an accurate record of that stage. This later explicit authorization is the only exception for the current planning stage.
