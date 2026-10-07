@@ -1,0 +1,44 @@
+{
+  "name": "automate-me",
+  "kind": "skill",
+  "purpose": "Draft or revise a personal mode from scoped evidence and user preferences.",
+  "triggers": [
+    "/automate-me",
+    "automate me",
+    "create/update/refresh my -mode skill",
+    "turn/capture my preferences or working style into a skill",
+    "wanting agents to follow how the user works"
+  ],
+  "inputs": [
+    "Existing personal mode and last-edit boundary",
+    "Authorized workspace-scoped history",
+    "User answers and baseline acceptance evidence"
+  ],
+  "outputs": [
+    "Evidence-strength findings",
+    "Reviewable personal-mode draft and feedback revisions",
+    "Explicit capability and authorization limits"
+  ],
+  "ordinaryExample": "After baseline acceptance, update an existing jay-mode from newer workspace history, retain uncontradicted preferences and show the draft before an authorized local edit.",
+  "dependencies": [
+    "skills/unslop/SKILL.md",
+    "skills/poteto-mode/SKILL.md",
+    "skills/poteto-mode/playbooks/authoring-a-skill.md",
+    "references/host-capabilities.md",
+    "references/workflow-ownership.md",
+    "references/orchestration-contract.md"
+  ],
+  "capabilityLimits": [
+    "Personal drafting and edits wait for all reviewed baseline dispositions and per-host supported-behavior evidence or explicit blocks.",
+    "create-skill and structured questions require observed exposed companions or a declared reduced fallback.",
+    "Sequential mining does not prove independent workers. Missing scoped history limits evidence.",
+    "Scheduling and remote creation are outside the flow. Commit, push and PR each need separate authorization.",
+    "Both hosts remain not-run. Pending authoring playbook requires Task 24 closure."
+  ],
+  "sourcePaths": [
+    "skills/automate-me/SKILL.md"
+  ],
+  "caseIds": [
+    "existing-personal-mode"
+  ]
+}
