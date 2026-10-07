@@ -878,5 +878,15 @@
     "kind": "historical",
     "rationale": "Approved design and implementation history, preserved verbatim; this token does not bind runtime behavior.",
     "reviewed": true
+  },
+  {
+    "path": "skills/make-bot-ui/SKILL.md",
+    "sha256": "988aca737cdbd2016b60ade8d1411c77e21baafdc7454d0388d0f3bedbd7c043",
+    "token": ".cursor.sh/automations/webhook/",
+    "startLine": 29,
+    "endLine": 29,
+    "kind": "source-only",
+    "rationale": "Historical canonical provider endpoint in a quoted source example only. Operative instructions require the actual configured provider URL and observed provider bindings; this record grants no provider or network capability.",
+    "reviewed": true
   }
 ]
