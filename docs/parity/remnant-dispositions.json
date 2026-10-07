@@ -2,26 +2,6 @@
   {
     "path": "docs/superpowers/plans/2026-10-07-pstack-openai.md",
     "sha256": "fe6e1f0a86882a7578edac15f2731ba327c077911646c4ccea025289a940385f",
-    "token": "task",
-    "startLine": 3,
-    "endLine": 3,
-    "kind": "historical",
-    "rationale": "Approved design and implementation history, preserved verbatim; this token does not bind runtime behavior.",
-    "reviewed": true
-  },
-  {
-    "path": "docs/superpowers/plans/2026-10-07-pstack-openai.md",
-    "sha256": "fe6e1f0a86882a7578edac15f2731ba327c077911646c4ccea025289a940385f",
-    "token": "task",
-    "startLine": 3,
-    "endLine": 3,
-    "kind": "historical",
-    "rationale": "Approved design and implementation history, preserved verbatim; this token does not bind runtime behavior.",
-    "reviewed": true
-  },
-  {
-    "path": "docs/superpowers/plans/2026-10-07-pstack-openai.md",
-    "sha256": "fe6e1f0a86882a7578edac15f2731ba327c077911646c4ccea025289a940385f",
     "token": "Task",
     "startLine": 36,
     "endLine": 36,
@@ -32,66 +12,6 @@
   {
     "path": "docs/superpowers/plans/2026-10-07-pstack-openai.md",
     "sha256": "fe6e1f0a86882a7578edac15f2731ba327c077911646c4ccea025289a940385f",
-    "token": "task",
-    "startLine": 44,
-    "endLine": 44,
-    "kind": "historical",
-    "rationale": "Approved design and implementation history, preserved verbatim; this token does not bind runtime behavior.",
-    "reviewed": true
-  },
-  {
-    "path": "docs/superpowers/plans/2026-10-07-pstack-openai.md",
-    "sha256": "fe6e1f0a86882a7578edac15f2731ba327c077911646c4ccea025289a940385f",
-    "token": "task",
-    "startLine": 46,
-    "endLine": 46,
-    "kind": "historical",
-    "rationale": "Approved design and implementation history, preserved verbatim; this token does not bind runtime behavior.",
-    "reviewed": true
-  },
-  {
-    "path": "docs/superpowers/plans/2026-10-07-pstack-openai.md",
-    "sha256": "fe6e1f0a86882a7578edac15f2731ba327c077911646c4ccea025289a940385f",
-    "token": "task",
-    "startLine": 52,
-    "endLine": 52,
-    "kind": "historical",
-    "rationale": "Approved design and implementation history, preserved verbatim; this token does not bind runtime behavior.",
-    "reviewed": true
-  },
-  {
-    "path": "docs/superpowers/plans/2026-10-07-pstack-openai.md",
-    "sha256": "fe6e1f0a86882a7578edac15f2731ba327c077911646c4ccea025289a940385f",
-    "token": "task",
-    "startLine": 52,
-    "endLine": 52,
-    "kind": "historical",
-    "rationale": "Approved design and implementation history, preserved verbatim; this token does not bind runtime behavior.",
-    "reviewed": true
-  },
-  {
-    "path": "docs/superpowers/plans/2026-10-07-pstack-openai.md",
-    "sha256": "fe6e1f0a86882a7578edac15f2731ba327c077911646c4ccea025289a940385f",
-    "token": "task",
-    "startLine": 52,
-    "endLine": 52,
-    "kind": "historical",
-    "rationale": "Approved design and implementation history, preserved verbatim; this token does not bind runtime behavior.",
-    "reviewed": true
-  },
-  {
-    "path": "docs/superpowers/plans/2026-10-07-pstack-openai.md",
-    "sha256": "fe6e1f0a86882a7578edac15f2731ba327c077911646c4ccea025289a940385f",
-    "token": "task",
-    "startLine": 70,
-    "endLine": 70,
-    "kind": "historical",
-    "rationale": "Approved design and implementation history, preserved verbatim; this token does not bind runtime behavior.",
-    "reviewed": true
-  },
-  {
-    "path": "docs/superpowers/plans/2026-10-07-pstack-openai.md",
-    "sha256": "fe6e1f0a86882a7578edac15f2731ba327c077911646c4ccea025289a940385f",
     "token": "Task",
     "startLine": 110,
     "endLine": 110,
@@ -165,16 +85,6 @@
     "token": "Task",
     "startLine": 110,
     "endLine": 110,
-    "kind": "historical",
-    "rationale": "Approved design and implementation history, preserved verbatim; this token does not bind runtime behavior.",
-    "reviewed": true
-  },
-  {
-    "path": "docs/superpowers/plans/2026-10-07-pstack-openai.md",
-    "sha256": "fe6e1f0a86882a7578edac15f2731ba327c077911646c4ccea025289a940385f",
-    "token": "task",
-    "startLine": 112,
-    "endLine": 112,
     "kind": "historical",
     "rationale": "Approved design and implementation history, preserved verbatim; this token does not bind runtime behavior.",
     "reviewed": true
@@ -345,16 +255,6 @@
     "token": "Task",
     "startLine": 116,
     "endLine": 116,
-    "kind": "historical",
-    "rationale": "Approved design and implementation history, preserved verbatim; this token does not bind runtime behavior.",
-    "reviewed": true
-  },
-  {
-    "path": "docs/superpowers/plans/2026-10-07-pstack-openai.md",
-    "sha256": "fe6e1f0a86882a7578edac15f2731ba327c077911646c4ccea025289a940385f",
-    "token": "task",
-    "startLine": 118,
-    "endLine": 118,
     "kind": "historical",
     "rationale": "Approved design and implementation history, preserved verbatim; this token does not bind runtime behavior.",
     "reviewed": true
@@ -365,16 +265,6 @@
     "token": "Task",
     "startLine": 120,
     "endLine": 120,
-    "kind": "historical",
-    "rationale": "Approved design and implementation history, preserved verbatim; this token does not bind runtime behavior.",
-    "reviewed": true
-  },
-  {
-    "path": "docs/superpowers/plans/2026-10-07-pstack-openai.md",
-    "sha256": "fe6e1f0a86882a7578edac15f2731ba327c077911646c4ccea025289a940385f",
-    "token": "task",
-    "startLine": 129,
-    "endLine": 129,
     "kind": "historical",
     "rationale": "Approved design and implementation history, preserved verbatim; this token does not bind runtime behavior.",
     "reviewed": true
@@ -393,16 +283,6 @@
     "path": "docs/superpowers/plans/2026-10-07-pstack-openai.md",
     "sha256": "fe6e1f0a86882a7578edac15f2731ba327c077911646c4ccea025289a940385f",
     "token": ".cursor-plugin/plugin.json",
-    "startLine": 142,
-    "endLine": 142,
-    "kind": "historical",
-    "rationale": "Approved design and implementation history, preserved verbatim; this token does not bind runtime behavior.",
-    "reviewed": true
-  },
-  {
-    "path": "docs/superpowers/plans/2026-10-07-pstack-openai.md",
-    "sha256": "fe6e1f0a86882a7578edac15f2731ba327c077911646c4ccea025289a940385f",
-    "token": "task",
     "startLine": 142,
     "endLine": 142,
     "kind": "historical",
@@ -492,16 +372,6 @@
   {
     "path": "docs/superpowers/plans/2026-10-07-pstack-openai.md",
     "sha256": "fe6e1f0a86882a7578edac15f2731ba327c077911646c4ccea025289a940385f",
-    "token": "task",
-    "startLine": 183,
-    "endLine": 183,
-    "kind": "historical",
-    "rationale": "Approved design and implementation history, preserved verbatim; this token does not bind runtime behavior.",
-    "reviewed": true
-  },
-  {
-    "path": "docs/superpowers/plans/2026-10-07-pstack-openai.md",
-    "sha256": "fe6e1f0a86882a7578edac15f2731ba327c077911646c4ccea025289a940385f",
     "token": "Task",
     "startLine": 183,
     "endLine": 183,
@@ -513,16 +383,6 @@
     "path": "docs/superpowers/plans/2026-10-07-pstack-openai.md",
     "sha256": "fe6e1f0a86882a7578edac15f2731ba327c077911646c4ccea025289a940385f",
     "token": "Task",
-    "startLine": 183,
-    "endLine": 183,
-    "kind": "historical",
-    "rationale": "Approved design and implementation history, preserved verbatim; this token does not bind runtime behavior.",
-    "reviewed": true
-  },
-  {
-    "path": "docs/superpowers/plans/2026-10-07-pstack-openai.md",
-    "sha256": "fe6e1f0a86882a7578edac15f2731ba327c077911646c4ccea025289a940385f",
-    "token": "task",
     "startLine": 183,
     "endLine": 183,
     "kind": "historical",
@@ -622,29 +482,9 @@
   {
     "path": "docs/superpowers/plans/2026-10-07-pstack-openai.md",
     "sha256": "fe6e1f0a86882a7578edac15f2731ba327c077911646c4ccea025289a940385f",
-    "token": "task",
-    "startLine": 298,
-    "endLine": 298,
-    "kind": "historical",
-    "rationale": "Approved design and implementation history, preserved verbatim; this token does not bind runtime behavior.",
-    "reviewed": true
-  },
-  {
-    "path": "docs/superpowers/plans/2026-10-07-pstack-openai.md",
-    "sha256": "fe6e1f0a86882a7578edac15f2731ba327c077911646c4ccea025289a940385f",
     "token": "Task",
     "startLine": 301,
     "endLine": 301,
-    "kind": "historical",
-    "rationale": "Approved design and implementation history, preserved verbatim; this token does not bind runtime behavior.",
-    "reviewed": true
-  },
-  {
-    "path": "docs/superpowers/plans/2026-10-07-pstack-openai.md",
-    "sha256": "fe6e1f0a86882a7578edac15f2731ba327c077911646c4ccea025289a940385f",
-    "token": "task",
-    "startLine": 309,
-    "endLine": 309,
     "kind": "historical",
     "rationale": "Approved design and implementation history, preserved verbatim; this token does not bind runtime behavior.",
     "reviewed": true
@@ -695,16 +535,6 @@
     "token": "Task",
     "startLine": 347,
     "endLine": 347,
-    "kind": "historical",
-    "rationale": "Approved design and implementation history, preserved verbatim; this token does not bind runtime behavior.",
-    "reviewed": true
-  },
-  {
-    "path": "docs/superpowers/plans/2026-10-07-pstack-openai.md",
-    "sha256": "fe6e1f0a86882a7578edac15f2731ba327c077911646c4ccea025289a940385f",
-    "token": "task",
-    "startLine": 360,
-    "endLine": 360,
     "kind": "historical",
     "rationale": "Approved design and implementation history, preserved verbatim; this token does not bind runtime behavior.",
     "reviewed": true
@@ -872,16 +702,6 @@
   {
     "path": "docs/superpowers/plans/2026-10-07-pstack-openai.md",
     "sha256": "fe6e1f0a86882a7578edac15f2731ba327c077911646c4ccea025289a940385f",
-    "token": "task",
-    "startLine": 474,
-    "endLine": 474,
-    "kind": "historical",
-    "rationale": "Approved design and implementation history, preserved verbatim; this token does not bind runtime behavior.",
-    "reviewed": true
-  },
-  {
-    "path": "docs/superpowers/plans/2026-10-07-pstack-openai.md",
-    "sha256": "fe6e1f0a86882a7578edac15f2731ba327c077911646c4ccea025289a940385f",
     "token": "Task",
     "startLine": 481,
     "endLine": 481,
@@ -892,29 +712,9 @@
   {
     "path": "docs/superpowers/plans/2026-10-07-pstack-openai.md",
     "sha256": "fe6e1f0a86882a7578edac15f2731ba327c077911646c4ccea025289a940385f",
-    "token": "task",
-    "startLine": 485,
-    "endLine": 485,
-    "kind": "historical",
-    "rationale": "Approved design and implementation history, preserved verbatim; this token does not bind runtime behavior.",
-    "reviewed": true
-  },
-  {
-    "path": "docs/superpowers/plans/2026-10-07-pstack-openai.md",
-    "sha256": "fe6e1f0a86882a7578edac15f2731ba327c077911646c4ccea025289a940385f",
     "token": ".cursor-plugin/plugin.json",
     "startLine": 490,
     "endLine": 490,
-    "kind": "historical",
-    "rationale": "Approved design and implementation history, preserved verbatim; this token does not bind runtime behavior.",
-    "reviewed": true
-  },
-  {
-    "path": "docs/superpowers/plans/2026-10-07-pstack-openai.md",
-    "sha256": "fe6e1f0a86882a7578edac15f2731ba327c077911646c4ccea025289a940385f",
-    "token": "task",
-    "startLine": 498,
-    "endLine": 498,
     "kind": "historical",
     "rationale": "Approved design and implementation history, preserved verbatim; this token does not bind runtime behavior.",
     "reviewed": true
@@ -952,16 +752,6 @@
   {
     "path": "docs/superpowers/plans/2026-10-07-pstack-openai.md",
     "sha256": "fe6e1f0a86882a7578edac15f2731ba327c077911646c4ccea025289a940385f",
-    "token": "task",
-    "startLine": 528,
-    "endLine": 528,
-    "kind": "historical",
-    "rationale": "Approved design and implementation history, preserved verbatim; this token does not bind runtime behavior.",
-    "reviewed": true
-  },
-  {
-    "path": "docs/superpowers/plans/2026-10-07-pstack-openai.md",
-    "sha256": "fe6e1f0a86882a7578edac15f2731ba327c077911646c4ccea025289a940385f",
     "token": "Task",
     "startLine": 536,
     "endLine": 536,
@@ -985,16 +775,6 @@
     "token": "Task",
     "startLine": 567,
     "endLine": 567,
-    "kind": "historical",
-    "rationale": "Approved design and implementation history, preserved verbatim; this token does not bind runtime behavior.",
-    "reviewed": true
-  },
-  {
-    "path": "docs/superpowers/plans/2026-10-07-pstack-openai.md",
-    "sha256": "fe6e1f0a86882a7578edac15f2731ba327c077911646c4ccea025289a940385f",
-    "token": "task",
-    "startLine": 571,
-    "endLine": 571,
     "kind": "historical",
     "rationale": "Approved design and implementation history, preserved verbatim; this token does not bind runtime behavior.",
     "reviewed": true
@@ -1050,16 +830,6 @@
     "reviewed": true
   },
   {
-    "path": "docs/superpowers/plans/2026-10-07-pstack-openai.md",
-    "sha256": "fe6e1f0a86882a7578edac15f2731ba327c077911646c4ccea025289a940385f",
-    "token": "task",
-    "startLine": 633,
-    "endLine": 633,
-    "kind": "historical",
-    "rationale": "Approved design and implementation history, preserved verbatim; this token does not bind runtime behavior.",
-    "reviewed": true
-  },
-  {
     "path": "docs/superpowers/specs/2026-10-07-pstack-openai-design.md",
     "sha256": "67a98a268a8a5e82129f5b23cea5e4e74fb4844522a880cd7aa7e20309ae2d31",
     "token": ".cursor-plugin/plugin.json",
@@ -1082,36 +852,6 @@
   {
     "path": "docs/superpowers/specs/2026-10-07-pstack-openai-design.md",
     "sha256": "67a98a268a8a5e82129f5b23cea5e4e74fb4844522a880cd7aa7e20309ae2d31",
-    "token": "task",
-    "startLine": 74,
-    "endLine": 74,
-    "kind": "historical",
-    "rationale": "Approved design and implementation history, preserved verbatim; this token does not bind runtime behavior.",
-    "reviewed": true
-  },
-  {
-    "path": "docs/superpowers/specs/2026-10-07-pstack-openai-design.md",
-    "sha256": "67a98a268a8a5e82129f5b23cea5e4e74fb4844522a880cd7aa7e20309ae2d31",
-    "token": "task",
-    "startLine": 82,
-    "endLine": 82,
-    "kind": "historical",
-    "rationale": "Approved design and implementation history, preserved verbatim; this token does not bind runtime behavior.",
-    "reviewed": true
-  },
-  {
-    "path": "docs/superpowers/specs/2026-10-07-pstack-openai-design.md",
-    "sha256": "67a98a268a8a5e82129f5b23cea5e4e74fb4844522a880cd7aa7e20309ae2d31",
-    "token": "task",
-    "startLine": 122,
-    "endLine": 122,
-    "kind": "historical",
-    "rationale": "Approved design and implementation history, preserved verbatim; this token does not bind runtime behavior.",
-    "reviewed": true
-  },
-  {
-    "path": "docs/superpowers/specs/2026-10-07-pstack-openai-design.md",
-    "sha256": "67a98a268a8a5e82129f5b23cea5e4e74fb4844522a880cd7aa7e20309ae2d31",
     "token": "Task",
     "startLine": 169,
     "endLine": 169,
@@ -1125,16 +865,6 @@
     "token": "AskQuestion",
     "startLine": 169,
     "endLine": 169,
-    "kind": "historical",
-    "rationale": "Approved design and implementation history, preserved verbatim; this token does not bind runtime behavior.",
-    "reviewed": true
-  },
-  {
-    "path": "docs/superpowers/specs/2026-10-07-pstack-openai-design.md",
-    "sha256": "67a98a268a8a5e82129f5b23cea5e4e74fb4844522a880cd7aa7e20309ae2d31",
-    "token": "task",
-    "startLine": 174,
-    "endLine": 174,
     "kind": "historical",
     "rationale": "Approved design and implementation history, preserved verbatim; this token does not bind runtime behavior.",
     "reviewed": true

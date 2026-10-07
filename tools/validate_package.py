@@ -52,6 +52,34 @@ def read_json(path, fallback):
     return json.loads(path.read_text()) if path.is_file() else fallback
 
 
+def quoted_regions(lines):
+    """Return complete fenced-code and consecutive blockquote regions."""
+    regions = []
+    fence, start = None, None
+    quote_start = None
+    for number, line in enumerate(lines, 1):
+        marker = re.match(r'^\s{0,3}(`{3,}|~{3,})', line)
+        if fence:
+            if marker and marker[1][0] == fence[0] and len(marker[1]) >= len(fence):
+                regions.append((start, number - 1))
+                fence, start = None, None
+            continue
+        if marker:
+            if quote_start is not None:
+                regions.append((quote_start, number - 1))
+                quote_start = None
+            fence, start = marker[1], number + 1
+        elif re.match(r'^\s{0,3}>', line):
+            if quote_start is None:
+                quote_start = number
+        elif quote_start is not None:
+            regions.append((quote_start, number - 1))
+            quote_start = None
+    if quote_start is not None:
+        regions.append((quote_start, len(lines)))
+    return regions
+
+
 def inspect_package(root: Path, inventory: list[dict], scope=None):
     root = Path(root).resolve()
     errors, deferred = [], []
@@ -150,8 +178,24 @@ def inspect_package(root: Path, inventory: list[dict], scope=None):
         if not file.is_file():
             continue
         content = file.read_text()
+        lines = content.splitlines()
         digest = hashlib.sha256(file.read_bytes()).hexdigest()
         approved = [entry for entry in dispositions if isinstance(entry, dict) and entry.get('path') == relative and entry.get('sha256') == digest and entry.get('reviewed') is True]
+        valid = []
+        regions = quoted_regions(lines)
+        for entry in approved:
+            first, last = entry.get('startLine'), entry.get('endLine')
+            if type(first) is not int or type(last) is not int or not 1 <= first <= last <= len(lines):
+                errors.append(f'{relative}: invalid disposition range {first}..{last}')
+                continue
+            if entry.get('kind') == 'source-only' and not any(begin <= first <= last <= end for begin, end in regions):
+                errors.append(f'{relative}: source-only range {first}..{last} must stay inside one explicit quote or fenced example')
+                continue
+            if not any(entry.get('token') == match[0] for line in lines[first - 1:last] for match in REMNANTS.finditer(line)):
+                errors.append(f'{relative}: disposition range {first}..{last} does not contain exact remnant token')
+                continue
+            valid.append(entry)
+        approved = valid
         historical = any(entry.get('kind') == 'historical' for entry in approved)
         if not historical:
             # Exact source-only ranges are data. Unreviewed examples remain checked.
@@ -168,6 +212,9 @@ def inspect_package(root: Path, inventory: list[dict], scope=None):
                 target = unquote(link.strip('<>'))
                 parsed = urlsplit(target)
                 if parsed.scheme or target.startswith('#') or not parsed.path:
+                    continue
+                if Path(parsed.path).is_absolute():
+                    check(parsed.path, relative)
                     continue
                 path = (file.parent/parsed.path).relative_to(root).as_posix()
                 # Normalize .. before matching inventory, but never permit escape.
