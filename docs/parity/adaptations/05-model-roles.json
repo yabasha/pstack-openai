@@ -5,7 +5,7 @@
     "upstreamSha256": "c0fd0383008da45fc78cfac17b9007d62c42f87ad1c8d5c2fb658b1fd01f7c82",
     "destinationPath": "references/agent-prompts/comment-sicko.md",
     "disposition": "relocated",
-    "rationale": "Relocate report-only comment role; preserve exceptions, rule and nearby-code investigation, scoped MUST KILL flags; clarify proposed deletions and missing-evidence skips.",
+    "rationale": "Relocate comment role; preserve authorized scoped comment deletion, actual touched files and deletion counts, keep exceptions, investigation and in-scope MUST KILL flags; use explicit reduced proposals for unavailable or unauthorized writes and skip missing evidence. Never edit application code.",
     "dependencies": [
       "skills/how/SKILL.md",
       "skills/why/SKILL.md",
