@@ -1,0 +1,36 @@
+[
+  {
+    "upstreamPath": "skills/recall/SKILL.md",
+    "upstreamCommit": "df581122cde17e6e27686b5a448bde23e4ad4318",
+    "upstreamSha256": "d265b0e5b6dc5b89c0407f3387d24462c988e1990a37d5359735137908128c5a",
+    "destinationPath": "skills/recall/SKILL.md",
+    "disposition": "runtime",
+    "rationale": "Preserve routing, scope lock, complete-capsule mining shortcut, independent shared-record sweep and live verification, per-chat findings and capped brief. Replace source-host transcript assumptions and worker/model defaults with observed authorized history and execution bindings. Sequential passes remain reduced capability; inaccessible state remains blocked.",
+    "dependencies": [
+      "references/host-capabilities.md",
+      "references/model-roles.md",
+      "references/orchestration-contract.md",
+      "references/workflow-ownership.md",
+      "skills/why/SKILL.md",
+      "skills/unslop/SKILL.md",
+      "skills/poteto-mode/playbooks/session-pickup.md",
+      "skills/automate-me/SKILL.md"
+    ],
+    "licenseProvenance": {
+      "license": "MIT",
+      "copyright": "Copyright (c) 2026 Lauren Tan",
+      "sourcePath": "LICENSE"
+    },
+    "adaptationStatus": "adapted-reviewed",
+    "verification": {
+      "chatgpt": {
+        "status": "not-run",
+        "evidence": []
+      },
+      "codex": {
+        "status": "not-run",
+        "evidence": []
+      }
+    }
+  }
+]
