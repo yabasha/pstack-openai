@@ -1,0 +1,52 @@
+{
+  "name": "interrogate",
+  "kind": "workflow",
+  "purpose": "Adversarially review changes through competing reviewers and pragmatic lead judgment without automatically applying changes.",
+  "triggers": [
+    "interrogate",
+    "adversarial review",
+    "multi-model review",
+    "challenge this",
+    "stress test this code",
+    "find blind spots",
+    "tear this apart"
+  ],
+  "inputs": [
+    "Diff or files and surrounding context",
+    "Stated intent paragraph",
+    "Authorized reviewer selections and observed capabilities"
+  ],
+  "outputs": [
+    "Intent, Reviewers, Act On, Consider, Noted, Dismissed and Agreement Map",
+    "Attributed findings with evidence, category and lead rationale",
+    "Observed worker independence, model diversity and limits"
+  ],
+  "ordinaryExample": "Challenge a branch diff with identical reviewer prompts, then trace a disputed null-input finding to its caller before categorizing it.",
+  "dependencies": [
+    "skills/interrogate/references/code-quality-review.md",
+    "skills/interrogate/references/reviewer-prompt.md",
+    "skills/interrogate/references/rubric.md",
+    "skills/interrogate/references/lead-judgment.md",
+    "references/host-capabilities.md",
+    "references/model-roles.md",
+    "references/orchestration-contract.md"
+  ],
+  "capabilityLimits": [
+    "Independent reviewers require observed authorized spawn and result inspection.",
+    "Unknown or identical observed models do not establish model diversity.",
+    "Sequential review is reduced capability.",
+    "Missing source or denied review blocks grounded findings.",
+    "Invocation metadata is retained without claiming host enforcement.",
+    "Host behavior has not been tested."
+  ],
+  "sourcePaths": [
+    "skills/interrogate/SKILL.md",
+    "skills/interrogate/references/code-quality-review.md",
+    "skills/interrogate/references/reviewer-prompt.md",
+    "skills/interrogate/references/rubric.md",
+    "skills/interrogate/references/lead-judgment.md"
+  ],
+  "caseIds": [
+    "adversarial-review"
+  ]
+}
