@@ -1,0 +1,31 @@
+[
+  {
+    "upstreamPath": "skills/poteto-mode/scripts/check-plan.mjs",
+    "upstreamCommit": "df581122cde17e6e27686b5a448bde23e4ad4318",
+    "upstreamSha256": "4f9432d9989880b6afc2bdda503d5b12a9d07d357ecf31936b7ab5e83bc80523",
+    "destinationPath": "skills/poteto-mode/scripts/check-plan.mjs",
+    "disposition": "runtime",
+    "rationale": "Preserve positional read-only pstack plan validation, ordered verifiable units and review gates. Replace fixed ten-lane, model, scheduler and remote assumptions with declared capability evidence and observed capacity. Require checked live receipts and explicit reduced or blocked limits; record justified performance non-applicability separately. Bun fixture checks are structural only. Review gates require explicit interaction applicability and preserve operator media review when applicable. Unavailable workers require reduced-review reason and evidence even for a None. operator gate.",
+    "dependencies": [
+      "skills/poteto-mode/playbooks/multi-phase-plan.md",
+      "references/host-capabilities.md",
+      "references/orchestration-contract.md"
+    ],
+    "licenseProvenance": {
+      "license": "MIT",
+      "copyright": "Copyright (c) 2026 Lauren Tan",
+      "sourcePath": "LICENSE"
+    },
+    "adaptationStatus": "adapted-reviewed",
+    "verification": {
+      "chatgpt": {
+        "status": "not-run",
+        "evidence": []
+      },
+      "codex": {
+        "status": "not-run",
+        "evidence": []
+      }
+    }
+  }
+]
