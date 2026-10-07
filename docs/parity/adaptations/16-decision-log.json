@@ -1,0 +1,54 @@
+[
+  {
+    "upstreamPath": "skills/show-me-your-work/scripts/log.sh",
+    "upstreamCommit": "df581122cde17e6e27686b5a448bde23e4ad4318",
+    "upstreamSha256": "a65a4bc5fb7cdeadbdb7b7ff1ca4682f4d9c42420942b2977cd17b46c4ac338e",
+    "destinationPath": "skills/show-me-your-work/scripts/log.sh",
+    "disposition": "runtime",
+    "rationale": "Preserve the six positional arguments, UTC timestamp, TSV fields, append-only writes and spreadsheet formula protection. Require an explicit nonempty owned output path and reject record separators before any filesystem write. Caller authorization and secret limits remain mandatory.",
+    "dependencies": [
+      "skills/show-me-your-work/references/decision-log-template.tsv"
+    ],
+    "licenseProvenance": {
+      "license": "MIT",
+      "copyright": "Copyright (c) 2026 Lauren Tan",
+      "sourcePath": "LICENSE"
+    },
+    "adaptationStatus": "adapted-reviewed",
+    "verification": {
+      "chatgpt": {
+        "status": "not-run",
+        "evidence": []
+      },
+      "codex": {
+        "status": "not-run",
+        "evidence": []
+      }
+    }
+  },
+  {
+    "upstreamPath": "skills/show-me-your-work/references/decision-log-template.tsv",
+    "upstreamCommit": "df581122cde17e6e27686b5a448bde23e4ad4318",
+    "upstreamSha256": "6779378006a2f5225e8c06deb84f1d913fb532041ebbb6e50d94600bfe3f4b76",
+    "destinationPath": "skills/show-me-your-work/references/decision-log-template.tsv",
+    "disposition": "runtime",
+    "rationale": "Task 16 reconfirms the canonical six-column TSV template unchanged. Task 11 provenance remains in show-me-your-work.json.",
+    "dependencies": [],
+    "licenseProvenance": {
+      "license": "MIT",
+      "copyright": "Copyright (c) 2026 Lauren Tan",
+      "sourcePath": "LICENSE"
+    },
+    "adaptationStatus": "unchanged-reviewed",
+    "verification": {
+      "chatgpt": {
+        "status": "not-run",
+        "evidence": []
+      },
+      "codex": {
+        "status": "not-run",
+        "evidence": []
+      }
+    }
+  }
+]

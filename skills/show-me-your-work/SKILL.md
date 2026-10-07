@@ -35,7 +35,7 @@ ts	phase	decision	why	evidence	result
 
 Write each entry the way you'd tell a teammate what you did. Plain words, concrete actions, no AI speak or abstract jargon (the **unslop** skill applies to log text too).
 
-Use the helper [scripts/log.sh](scripts/log.sh) with `<logfile> <phase> <decision> <why> <evidence> <result>` through an authorized execution binding. The separately assigned helper work owns its runtime adaptation; until it is present and reviewed, helper execution is unavailable. It stamps `ts`, writes the header on first use, strips stray tabs/newlines, and prefixes any cell starting with `=`, `+`, `-`, or `@` with a single quote. A bare `printf` appending a row works too, but mind those same bytes if cells come from generated or user-supplied text.
+Use the helper [scripts/log.sh](scripts/log.sh) with `<logfile> <phase> <decision> <why> <evidence> <result>` through an authorized execution binding. Pass an explicit nonempty local output path that this task owns. The helper rejects tabs, newlines and carriage returns in any argument before creating directories or writing bytes. It stamps `ts`, writes the header on first use, preserves previous rows, and prefixes any cell starting with `=`, `+`, `-`, or `@` with a single quote. Use this helper for generated or user-supplied cells so validation and formula protection apply consistently. Host execution still requires an authorized binding.
 
 Log decision points and checkpoints, not every action: a fork chosen, a unit completed with its verification result, a pivot or revert with its trigger, a blocker surfaced, a gate fixed. For loop runs, one row per iteration. Skip the trivial and self-evident.
 
