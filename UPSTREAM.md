@@ -17,3 +17,13 @@ Both downloaded archives matched the approved digests before extraction. Extract
 `docs/parity/baseline-paths.txt` records all 164 canonical files, including 51 root skills, 24 principle leaves, 23 poteto playbooks, and three nested Benny skills. `docs/parity/inventory.json` records each original file digest and proposed destination. All adaptations remain pending and both host verification statuses remain not-run. Dependency arrays remain empty until the owning adaptation tasks review callers and external requirements.
 
 The comparison port contains 26 root skills and is a reference, not the baseline. Its archive is retained for later comparison. This unit imports the canonical license and inventory only.
+
+## Package metadata and logo
+
+Task 2 replaces canonical `.cursor-plugin/plugin.json` with root `plugin.json`. The original identity is `pstack`, version `0.15.15`, author Lauren Tan, MIT. Its homepage is https://github.com/cursor/plugins/tree/main/pstack and repository is https://github.com/cursor/plugins. Original keywords are pstack, poteto-mode, workflow, principles, agent-style, subagents, unslop; category is developer-tools; tags are workflow, principles, review, planning. Its display name is pstack, logo is `assets/logo.png`, skills path is `./skills/`, and agents path is `./agents/`. Its description reads "if you want to go fast, go deep first. pstack helps you write less, but higher quality code. rigorous agent workflows you can parallelize with confidence."
+
+The candidate uses `pstack-openai`, version `0.1.0`, MIT, and identifies itself as an unofficial port. No public repository or website for this port is asserted. The portable root `skills/` convention replaces the explicit skills path. Presentation metadata lives at `extensions.com.openai.interface`. No agent registration, hooks, MCP server, app mapping, or compatibility overlay is added.
+
+`assets/logo.png` is a byte-for-byte copy from the canonical archive above, covered by its MIT notice. SHA-256 is `672f6791589ef758b0ced2c4c477913fa2758623c438e265639a0d539ce90695`. `docs/parity/adaptations/02-manifest.json` records both source digests and reviewed dispositions. Host checks remain not-run.
+
+Manifest review used https://developers.openai.com/plugins/build/plugins and https://agent-plugins.org/schemas/1.0.0/plugin.schema.json, fetched 2026-10-07 and supplied in the task's cached research. The schema forbids a root skills field; packaging documentation discovers skills from root `skills/` and requires extension asset paths to start with `./`. These are structural conventions, not evidence that either host loaded this package.

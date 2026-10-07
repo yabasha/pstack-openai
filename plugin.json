@@ -1,0 +1,16 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "pstack-openai",
+  "version": "0.1.0",
+  "description": "Unofficial port of pstack engineering workflows and principles.",
+  "license": "MIT",
+  "extensions": {
+    "com.openai": {
+      "interface": {
+        "displayName": "pstack-openai",
+        "shortDescription": "Engineering workflows and principles from pstack.",
+        "logo": "./assets/logo.png"
+      }
+    }
+  }
+}
