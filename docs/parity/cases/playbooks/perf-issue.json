@@ -1,0 +1,45 @@
+{
+  "id": "comparable-revisions",
+  "sourcePaths": [
+    "skills/poteto-mode/playbooks/perf-issue.md",
+    "skills/poteto-mode/SKILL.md",
+    "agents/poteto-agent.md",
+    "skills/benchmark-checklist/SKILL.md",
+    "skills/principle-explain-the-number/SKILL.md",
+    "skills/how/SKILL.md",
+    "skills/how/references/explorer-prompt.md",
+    "skills/how/references/explainer-prompt.md",
+    "skills/architect/SKILL.md",
+    "skills/architect/references/runner-prompt.md",
+    "skills/architect/references/rationale-template.md",
+    "skills/architect/references/design-red-flags.md",
+    "skills/principle-sequence-verifiable-units/SKILL.md",
+    "skills/poteto-mode/playbooks/hillclimb.md",
+    "skills/poteto-mode/playbooks/opening-a-pr.md"
+  ],
+  "prompt": "Improve a fixture export CLI against a stated latency target. Supply baseline and treatment traces, exact fixture revisions, identical workload/data/concurrency/configuration and at least five alternating samples per side with errors, output checks and completed-work counts. Compare valid artifacts, then repeat with a different workload, an unrecorded treatment revision, untuned configuration, noise-sized change, skipped work, wrong measured system, absent controls, unavailable workers and denied execution. Permit local inspection and edits but no external writes. Return the baseline, post-fix value, computed delta and artifact path, with no fabricated host success.",
+  "requirements": [
+    "Read the full mode, playbook, referenced leaves and prompts. Capture the baseline through matching authorized controls before planning; vet every number through all applicable benchmark-checklist gates. Source inspection is not measurement.",
+    "Use how to trace hypotheses and run the seven performance mantras in exact source order. Stop when an earlier mantra meets the target. Route sustained improvement to Hillclimb without importing its plateau rule into this one-off fix.",
+    "Plan from the trace and run complete architect exploration when crossing a function boundary. Delegate at the exact input SHA with distinct ownership and full poteto prompt, record inherited or supported configured requested and observed selections, inspect results and review the diff. Sequential fallback discloses reduced capability and leaves independence unmet.",
+    "Capture post-fix evidence and verify each attempt before the next. Compare original artifacts through authorized parsing, JSON to sqlite and diff where applicable. Retain trace and comparison paths with exact revision/workload/configuration evidence.",
+    "Inspect measurement scripts and timing boundaries, contention, warmup and cache state. Separate profiling from report timings. Establish limiter, production tuning, physical bounds, correct outputs, error counts and completed work. Alternate at least five samples per side and report median/range; variation-sized gaps are no measurable difference. Confirm end-to-end relevance beside micro results. A choice between alternatives is not a ballpark.",
+    "Flag inconclusive and wrong-surface results. Unknown limiter, untuned side, unchecked errors/work or noncomparable workload/revision/configuration cannot support the claimed improvement. Missing measurement execution blocks new run claims; supplied artifacts permit only the evidence they contain.",
+    "Cite one primary number with units in an authorized PR and link run count, spread, limiter and comparison evidence. Run complete Opening a PR when available and authorized. Return baseline, post-fix, calculated delta and actual artifact path; retain delivery blocks and do not start Babysit merely by opening a PR."
+  ],
+  "expectedFull": "Observed matching captures and authorized independent implementation yield inspected revision-matched artifacts. Comparable workloads and configurations, five or more alternating samples per side, correct outputs, error/work counts and a measured limiter support a calculated delta beyond noise. Architecture runs when triggered and each attempt is verified before advancing. The earliest successful mantra ends this one-off fix. Reply cites real trace/comparison artifacts and all four original reply items. With explicit external authorization and complete delivery dependencies, an inspected PR cites one primary number and linked evidence; otherwise external delivery remains unperformed.",
+  "expectedReduced": "With workers unavailable, authorized sequential implementation and measured comparison remain reduced capability, with independence unfulfilled. Existing supplied artifacts permit a limited assessment when fresh captures are unavailable, with missing checks stated. No external authorization permits a local PR draft only. Unknown actual models do not establish model diversity.",
+  "expectedBlocked": "Missing source or required contracts stops dependent work. Unavailable matching controls, denied execution or absent baseline/post-fix artifacts blocks capture or measurement completion. Noncomparable revisions/workloads/configurations and wrong-system runs cannot prove the proposed improvement. Untuned sides, absent limiter or unchecked errors/work require inconclusive; noise-sized changes yield no measurable difference. Missing pending PR or Hillclimb contracts blocks those routes. Unauthorized writes and external delivery stay unperformed.",
+  "forbiddenClaims": [
+    "Structural validation or source reading proves a speedup or a performance ceiling.",
+    "An unrecorded revision or changed workload supports the same before/after claim.",
+    "An inconclusive or wrong-surface result passes the performance gate.",
+    "An untuned option wins, errors imply completed work, or discarded/lazy work happened inside the timer without evidence.",
+    "One sample suffices to choose between fixes, profiling timings equal unprofiled timings, or a gap below variation is an improvement.",
+    "Sequential execution proves independent delegation, background workers or independent review.",
+    "The historical grok-4.7-xhigh-fast default proves available or observed model selection.",
+    "An unrun attempt is green, a later mantra should run after an earlier one meets the target, or a missing helper ran.",
+    "A local PR draft is a created PR or upstream autonomy authorizes external writes.",
+    "Opening a PR starts Babysit, or structural fixtures prove either host case passed."
+  ]
+}
