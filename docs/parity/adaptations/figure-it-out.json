@@ -1,0 +1,42 @@
+[
+  {
+    "upstreamPath": "skills/figure-it-out/SKILL.md",
+    "upstreamCommit": "df581122cde17e6e27686b5a448bde23e4ad4318",
+    "upstreamSha256": "0eb9485f0e7d84fee56b5d0f0af0faf4635e3ca87c8cba3970c01293b76ecc19",
+    "destinationPath": "skills/figure-it-out/SKILL.md",
+    "disposition": "runtime",
+    "rationale": "Preserves canonical metadata, aliases, all five phases, investigation order, verdicts and reply contract. Adds session capability bindings, honest missing-dependency and persistence limits, reduced sequential execution and authorization boundaries.",
+    "dependencies": [
+      "references/host-capabilities.md",
+      "references/orchestration-contract.md",
+      "references/workflow-ownership.md",
+      "skills/poteto-mode/SKILL.md",
+      "skills/architect/SKILL.md",
+      "skills/arena/SKILL.md",
+      "skills/show-me-your-work/SKILL.md",
+      "skills/principle-prove-it-works/SKILL.md",
+      "skills/principle-never-block-on-the-human/SKILL.md",
+      "skills/principle-foundational-thinking/SKILL.md",
+      "skills/principle-laziness-protocol/SKILL.md",
+      "skills/principle-separate-before-serializing-shared-state/SKILL.md",
+      "skills/principle-sequence-verifiable-units/SKILL.md",
+      "skills/principle-encode-lessons-in-structure/SKILL.md"
+    ],
+    "licenseProvenance": {
+      "license": "MIT",
+      "copyright": "Copyright (c) 2026 Lauren Tan",
+      "sourcePath": "LICENSE"
+    },
+    "adaptationStatus": "adapted-reviewed",
+    "verification": {
+      "chatgpt": {
+        "status": "not-run",
+        "evidence": []
+      },
+      "codex": {
+        "status": "not-run",
+        "evidence": []
+      }
+    }
+  }
+]

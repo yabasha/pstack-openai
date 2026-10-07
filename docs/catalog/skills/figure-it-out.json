@@ -1,0 +1,51 @@
+{
+  "name": "figure-it-out",
+  "kind": "workflow",
+  "purpose": "Design and execute an auditable playbook when no narrower workflow fits, with task-scaled rigor and hypothesis loops.",
+  "triggers": [
+    "/figure-it-out",
+    "figure it out",
+    "A large migration",
+    "No narrower playbook applies"
+  ],
+  "inputs": [
+    "Task scope and accessible grounding evidence",
+    "Falsifiable definition of done, authorized scope and available capabilities"
+  ],
+  "outputs": [
+    "Designed playbook before code and rigor rationale",
+    "Decision trail recorded as units land",
+    "Verified results against the predicate and open limits"
+  ],
+  "ordinaryExample": "Use /figure-it-out for a large migration, capture the old behavior, verify atomic units and record an inconclusive measurement as an open limit.",
+  "dependencies": [
+    "references/host-capabilities.md",
+    "references/orchestration-contract.md",
+    "references/workflow-ownership.md",
+    "skills/poteto-mode/SKILL.md",
+    "skills/architect/SKILL.md",
+    "skills/arena/SKILL.md",
+    "skills/show-me-your-work/SKILL.md",
+    "skills/principle-prove-it-works/SKILL.md",
+    "skills/principle-never-block-on-the-human/SKILL.md",
+    "skills/principle-foundational-thinking/SKILL.md",
+    "skills/principle-laziness-protocol/SKILL.md",
+    "skills/principle-separate-before-serializing-shared-state/SKILL.md",
+    "skills/principle-sequence-verifiable-units/SKILL.md",
+    "skills/principle-encode-lessons-in-structure/SKILL.md"
+  ],
+  "capabilityLimits": [
+    "Missing inspection or execution leaves results NOT VERIFIED or INCONCLUSIVE",
+    "Unavailable independent workers permit explicitly reduced sequential work",
+    "Unavailable persistence prevents a durable-trail claim",
+    "Missing supporting skills remain explicit dependencies",
+    "Authorization bounds commits, external actions and setup",
+    "Host behavior is not-run; invocation metadata enforcement is not assumed"
+  ],
+  "sourcePaths": [
+    "skills/figure-it-out/SKILL.md"
+  ],
+  "caseIds": [
+    "uncertain-result"
+  ]
+}
