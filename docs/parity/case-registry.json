@@ -1,0 +1,123 @@
+{
+  "schemaVersion": 1,
+  "entries": [
+    {
+      "caseId": "absent-workers",
+      "caseFile": "docs/parity/cases/contracts.json",
+      "sourcePaths": [
+        "skills/poteto-mode/SKILL.md",
+        "skills/poteto-mode/playbooks/orchestrate.md",
+        "agents/poteto-agent.md"
+      ],
+      "requiredHosts": [
+        "chatgpt",
+        "codex"
+      ],
+      "structuralOnly": false,
+      "hostStatus": {
+        "chatgpt": "not-run",
+        "codex": "not-run"
+      }
+    },
+    {
+      "caseId": "denied-writes",
+      "caseFile": "docs/parity/cases/contracts.json",
+      "sourcePaths": [
+        "skills/poteto-mode/SKILL.md",
+        "skills/poteto-mode/playbooks/orchestrate.md",
+        "agents/poteto-agent.md"
+      ],
+      "requiredHosts": [
+        "chatgpt",
+        "codex"
+      ],
+      "structuralOnly": false,
+      "hostStatus": {
+        "chatgpt": "not-run",
+        "codex": "not-run"
+      }
+    },
+    {
+      "caseId": "shared-path-conflict",
+      "caseFile": "docs/parity/cases/contracts.json",
+      "sourcePaths": [
+        "skills/poteto-mode/SKILL.md",
+        "skills/poteto-mode/playbooks/orchestrate.md",
+        "agents/poteto-agent.md"
+      ],
+      "requiredHosts": [
+        "chatgpt",
+        "codex"
+      ],
+      "structuralOnly": false,
+      "hostStatus": {
+        "chatgpt": "not-run",
+        "codex": "not-run"
+      }
+    },
+    {
+      "caseId": "cancelled-worker",
+      "caseFile": "docs/parity/cases/contracts.json",
+      "sourcePaths": [
+        "skills/poteto-mode/SKILL.md",
+        "skills/poteto-mode/playbooks/orchestrate.md",
+        "agents/poteto-agent.md"
+      ],
+      "requiredHosts": [
+        "chatgpt",
+        "codex"
+      ],
+      "structuralOnly": false,
+      "hostStatus": {
+        "chatgpt": "not-run",
+        "codex": "not-run"
+      }
+    },
+    {
+      "caseId": "interrupted-external-write",
+      "caseFile": "docs/parity/cases/contracts.json",
+      "sourcePaths": [
+        "skills/poteto-mode/SKILL.md",
+        "skills/poteto-mode/playbooks/orchestrate.md",
+        "agents/poteto-agent.md"
+      ],
+      "requiredHosts": [
+        "chatgpt",
+        "codex"
+      ],
+      "structuralOnly": false,
+      "hostStatus": {
+        "chatgpt": "not-run",
+        "codex": "not-run"
+      }
+    },
+    {
+      "caseId": "unavailable-persistence",
+      "caseFile": "docs/parity/cases/contracts.json",
+      "sourcePaths": [
+        "skills/poteto-mode/SKILL.md",
+        "skills/poteto-mode/playbooks/orchestrate.md",
+        "agents/poteto-agent.md"
+      ],
+      "requiredHosts": [
+        "chatgpt",
+        "codex"
+      ],
+      "structuralOnly": false,
+      "hostStatus": {
+        "chatgpt": "not-run",
+        "codex": "not-run"
+      }
+    }
+  ],
+  "structuralChecks": [
+    {
+      "id": "evidence-validator-fixtures",
+      "paths": [
+        "tests/test_validate_evidence.py"
+      ],
+      "requiredHosts": [],
+      "structuralOnly": true
+    }
+  ]
+}

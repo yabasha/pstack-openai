@@ -1,0 +1,13 @@
+# Assignment and integration contract
+
+Before dispatch, the coordinator creates an immutable assignment with `id`, `scope`, `inputRevision`, `outputOwner`, `isolatedOutputPath`, `role`, `retryCount`, `terminalStatus`, and `evidenceLinks`. Use the full Git SHA for inputRevision, an exact owned path, and an explicit role. Start retryCount at 0 and terminalStatus at `pending`. Preserve every attempt as an append-only event under the same assignment ID; update status through events, never rewrite the original scope, revision, owner or path. A changed scope or revision requires a new assignment ID that links its predecessor.
+
+The coordinator checks authorization and observed host bindings before dispatch. One path has one writer. Reject overlapping paths before work starts; assign distinct paths instead. Workers write only their isolated output and report results. Only the coordinator integrates shared files, inventory, registry, or other workers' output.
+
+Accept a result only when its assignment identity and input SHA match, its artifacts exist, and required method evidence was observed. Reject stale revisions. Permit at most one retry for missing required SHA or method evidence, after inspecting the prior attempt and confirming the same permissions still apply. A retry count of 1 exhausts this allowance. Denied permissions, unknown action outcomes, and missing artifacts never become success by retry policy.
+
+Terminal states are `completed`, `blocked`, `failed`, and `cancelled`. A completion event links the exact result and evidence. Stop a cancelled worker through the exposed stop binding when available, then inspect its terminal state. Quarantine any partial artifacts; cancellation does not authorize their integration. If stop cannot be observed, record that limit and do not claim termination. Report interrupted execution explicitly.
+
+Before an external action, record explicit permission, a stable action identity, the intended destination and the last observed outcome. After interruption, inspect whether that identity already completed. Retry only with authorization, an observed safe replay decision and an idempotency mechanism appropriate to the destination. If the outcome is unknown, block replay. Do not infer permission from upstream autonomy instructions.
+
+History and persistence have separate bindings. Keep assignment events and result links in an authorized durable location and verify readback. If unavailable, declare the gap and offer an authorized local handoff as reduced capability; never claim unattended recovery or cross-session continuity. All host statuses remain `not-run` until actual observations exist.
