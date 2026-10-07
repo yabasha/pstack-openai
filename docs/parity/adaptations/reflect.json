@@ -1,0 +1,133 @@
+[
+  {
+    "upstreamPath": "skills/reflect/SKILL.md",
+    "upstreamCommit": "df581122cde17e6e27686b5a448bde23e4ad4318",
+    "upstreamSha256": "31b8fb866ebe084e7fb7f16dc0ea46ab84ffdc838d54f948edc78556f301a497",
+    "destinationPath": "skills/reflect/SKILL.md",
+    "disposition": "runtime",
+    "rationale": "Preserve reflect metadata, aliases, four lens contracts, structural check, routing and explicit Accepted-subset approval. Replace source-host transcript/worker/model/authoring assumptions with observed authorized capability contracts. Tracker writes require explicit authorization; unavailable independent workers use disclosed sequential reduction.",
+    "dependencies": [
+      "references/host-capabilities.md",
+      "references/model-roles.md",
+      "references/orchestration-contract.md",
+      "references/workflow-ownership.md",
+      "skills/principle-encode-lessons-in-structure/SKILL.md"
+    ],
+    "licenseProvenance": {
+      "license": "MIT",
+      "copyright": "Copyright (c) 2026 Lauren Tan",
+      "sourcePath": "LICENSE"
+    },
+    "adaptationStatus": "adapted-reviewed",
+    "verification": {
+      "chatgpt": {
+        "status": "not-run",
+        "evidence": []
+      },
+      "codex": {
+        "status": "not-run",
+        "evidence": []
+      }
+    }
+  },
+  {
+    "upstreamPath": "skills/reflect/references/divergent-reviewer.md",
+    "upstreamCommit": "df581122cde17e6e27686b5a448bde23e4ad4318",
+    "upstreamSha256": "221dfc0abf7cbcd25e1da3cd87323f5d1050fc3bf652e096d093584e183c98fb",
+    "destinationPath": "skills/reflect/references/divergent-reviewer.md",
+    "disposition": "runtime",
+    "rationale": "Preserve complete reviewer or synthesis criteria, injection boundaries, actual-use and missed-trigger routing, evidence, durability and output format. Replace source-specific tool/location assumptions with authorized observed equivalents and retain tracker authorization.",
+    "dependencies": [],
+    "licenseProvenance": {
+      "license": "MIT",
+      "copyright": "Copyright (c) 2026 Lauren Tan",
+      "sourcePath": "LICENSE"
+    },
+    "adaptationStatus": "adapted-reviewed",
+    "verification": {
+      "chatgpt": {
+        "status": "not-run",
+        "evidence": []
+      },
+      "codex": {
+        "status": "not-run",
+        "evidence": []
+      }
+    }
+  },
+  {
+    "upstreamPath": "skills/reflect/references/judgment-reviewer.md",
+    "upstreamCommit": "df581122cde17e6e27686b5a448bde23e4ad4318",
+    "upstreamSha256": "a40ecb9b28bd2a3491e11a541157fe58efe158e0eda7b61a5006c14590aabe61",
+    "destinationPath": "skills/reflect/references/judgment-reviewer.md",
+    "disposition": "runtime",
+    "rationale": "Preserve complete reviewer or synthesis criteria, injection boundaries, actual-use and missed-trigger routing, evidence, durability and output format. Replace source-specific tool/location assumptions with authorized observed equivalents and retain tracker authorization.",
+    "dependencies": [],
+    "licenseProvenance": {
+      "license": "MIT",
+      "copyright": "Copyright (c) 2026 Lauren Tan",
+      "sourcePath": "LICENSE"
+    },
+    "adaptationStatus": "adapted-reviewed",
+    "verification": {
+      "chatgpt": {
+        "status": "not-run",
+        "evidence": []
+      },
+      "codex": {
+        "status": "not-run",
+        "evidence": []
+      }
+    }
+  },
+  {
+    "upstreamPath": "skills/reflect/references/synthesizer.md",
+    "upstreamCommit": "df581122cde17e6e27686b5a448bde23e4ad4318",
+    "upstreamSha256": "2f76c847eb45b182dc6fbcbf7d96c8ee7e2986ecfd9e0d640fec44e3cc5a617c",
+    "destinationPath": "skills/reflect/references/synthesizer.md",
+    "disposition": "runtime",
+    "rationale": "Preserve complete reviewer or synthesis criteria, injection boundaries, actual-use and missed-trigger routing, evidence, durability and output format. Replace source-specific tool/location assumptions with authorized observed equivalents and retain tracker authorization.",
+    "dependencies": [],
+    "licenseProvenance": {
+      "license": "MIT",
+      "copyright": "Copyright (c) 2026 Lauren Tan",
+      "sourcePath": "LICENSE"
+    },
+    "adaptationStatus": "adapted-reviewed",
+    "verification": {
+      "chatgpt": {
+        "status": "not-run",
+        "evidence": []
+      },
+      "codex": {
+        "status": "not-run",
+        "evidence": []
+      }
+    }
+  },
+  {
+    "upstreamPath": "skills/reflect/references/tooling-reviewer.md",
+    "upstreamCommit": "df581122cde17e6e27686b5a448bde23e4ad4318",
+    "upstreamSha256": "bc49ced90fa81eaba3083b88aeb430d900a6d8f14ff40c1d6b52263bacfc77b6",
+    "destinationPath": "skills/reflect/references/tooling-reviewer.md",
+    "disposition": "runtime",
+    "rationale": "Preserve complete reviewer or synthesis criteria, injection boundaries, actual-use and missed-trigger routing, evidence, durability and output format. Replace source-specific tool/location assumptions with authorized observed equivalents and retain tracker authorization.",
+    "dependencies": [],
+    "licenseProvenance": {
+      "license": "MIT",
+      "copyright": "Copyright (c) 2026 Lauren Tan",
+      "sourcePath": "LICENSE"
+    },
+    "adaptationStatus": "adapted-reviewed",
+    "verification": {
+      "chatgpt": {
+        "status": "not-run",
+        "evidence": []
+      },
+      "codex": {
+        "status": "not-run",
+        "evidence": []
+      }
+    }
+  }
+]
