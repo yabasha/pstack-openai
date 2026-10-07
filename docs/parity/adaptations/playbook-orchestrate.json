@@ -1,0 +1,51 @@
+[
+  {
+    "upstreamPath": "skills/poteto-mode/playbooks/orchestrate.md",
+    "upstreamCommit": "df581122cde17e6e27686b5a448bde23e4ad4318",
+    "upstreamSha256": "d42b4375f1bd4ce23da0b575a198571a2117df7eea10c3c9fc6d92ae1053f7be",
+    "destinationPath": "skills/poteto-mode/playbooks/orchestrate.md",
+    "disposition": "runtime",
+    "rationale": "Preserve the complete program coordinator purpose, roles, brief, pilot, rolling window, drain boundaries, stack ownership, verification, liveness, escalation and checkpoint artifacts. Replace source-host placement, worker, wake and store assumptions with observed capability bindings and explicit permission gates. Bind the actual Task 13 CLI and preserve exact revision checks, caller-enforced ownership and evidence inspection, full standing orders, durable drain receipts and reviewed lock takeover. Helper snapshot tests do not establish current caller or host behavior; operative dependencies are absent. Autonomous run and Babysit remain deferred pending callers for Task 24. Missing independent workers, persistence, execution, remote placement, wake, companions and different-family review stay explicit reduced or blocked limits. Both hosts remain not-run.",
+    "dependencies": [
+      "skills/poteto-mode/SKILL.md",
+      "agents/poteto-agent.md",
+      "skills/poteto-mode/scripts/orch/orch.ts",
+      "skills/poteto-mode/scripts/orch/store.ts",
+      "skills/poteto-mode/scripts/orch/orch.test.ts",
+      "skills/poteto-mode/scripts/bootstrap.ts",
+      "skills/poteto-mode/scripts/package.json",
+      "skills/poteto-mode/scripts/bun.lock",
+      "skills/arena/SKILL.md",
+      "skills/figure-it-out/SKILL.md",
+      "skills/show-me-your-work/SKILL.md",
+      "skills/show-me-your-work/scripts/log.sh",
+      "skills/show-me-your-work/references/decision-log-template.tsv",
+      "skills/principle-separate-before-serializing-shared-state/SKILL.md",
+      "skills/principle-encode-lessons-in-structure/SKILL.md",
+      "skills/poteto-mode/playbooks/autonomous-run.md",
+      "skills/poteto-mode/playbooks/babysit.md",
+      "skills/unslop/SKILL.md",
+      "references/host-capabilities.md",
+      "references/model-roles.md",
+      "references/orchestration-contract.md",
+      "references/workflow-ownership.md",
+      "references/agent-prompts/poteto-agent.md"
+    ],
+    "licenseProvenance": {
+      "license": "MIT",
+      "copyright": "Copyright (c) 2026 Lauren Tan",
+      "sourcePath": "LICENSE"
+    },
+    "adaptationStatus": "adapted-reviewed",
+    "verification": {
+      "chatgpt": {
+        "status": "not-run",
+        "evidence": []
+      },
+      "codex": {
+        "status": "not-run",
+        "evidence": []
+      }
+    }
+  }
+]
