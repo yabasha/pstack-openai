@@ -118,6 +118,44 @@ class PackageTests(unittest.TestCase):
         self.assertIn('references/pending.md', '\n'.join(deferred))
         self.fails('references/pending.md')
 
+    def test_missing_scoped_target_is_not_deferred(self):
+        self.rows.append(record('references/missing-own.md', 'pending'))
+        errors, deferred = inspect_package(self.root, self.rows, 'references/missing-own.md')
+        self.assertTrue(any('references/missing-own.md' in error for error in errors))
+        self.assertEqual(deferred, [])
+        inventory = self.write('docs/parity/inventory.json', json.dumps(self.rows))
+        result = subprocess.run(['python3', str(ROOT/'tools/validate_package.py'), '--root', str(self.root), '--inventory', str(inventory), '--scope', 'references/missing-own.md'], capture_output=True, text=True)
+        self.assertEqual(result.returncode, 1)
+        self.assertIn('references/missing-own.md', result.stdout)
+        self.assertNotIn('DEFERRED', result.stdout)
+
+    def test_nested_cases_and_global_duplicate_ids(self):
+        case = dict(id='same', sourcePaths=['skills/demo/SKILL.md'], prompt='Do work.', requirements=['Result.'], expectedFull='Full.', expectedReduced='Reduced.', expectedBlocked='Blocked.', forbiddenClaims=['No inventions.'])
+        self.write('docs/parity/cases/skills/demo.json', json.dumps(case))
+        self.write('docs/parity/cases/playbooks/demo.json', json.dumps([case]))
+        self.assertTrue(any('duplicate case id same' in error for error in validate_package(self.root, self.rows)))
+        del case['expectedBlocked']
+        self.write('docs/parity/cases/playbooks/demo.json', json.dumps([case]))
+        errors, _ = inspect_package(self.root, self.rows, 'skills/demo/SKILL.md')
+        self.assertTrue(any('cases/playbooks/demo.json.expectedBlocked' in error for error in errors))
+        self.write('docs/parity/cases/skills/demo.json', json.dumps(case))
+        self.assertTrue(any('cases/skills/demo.json.expectedBlocked' in error for error in validate_package(self.root, self.rows)))
+
+    def test_case_symlink_escape_is_rejected_before_read(self):
+        # Guard the actual read boundary so the test proves rejection before I/O.
+        from unittest.mock import patch
+        target = ROOT/'plugin.json'
+        link = self.root/'docs/parity/cases/skills/escape.json'
+        link.parent.mkdir(parents=True, exist_ok=True)
+        link.symlink_to(target)
+        original = Path.read_text
+        def guarded(file, *args, **kwargs):
+            if file == link:
+                raise AssertionError('Escaping case symlink must not be read')
+            return original(file, *args, **kwargs)
+        with patch.object(Path, 'read_text', guarded):
+            self.fails('docs/parity/cases/skills/escape.json')
+
     def test_cursor_remnant_needs_disposition(self):
         self.write('skills/demo/SKILL.md', 'Use AskQuestion and Task with .cursor/config.')
         self.fails('skills/demo/SKILL.md')

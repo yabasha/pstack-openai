@@ -117,19 +117,19 @@ def inspect_package(root: Path, inventory: list[dict], scope=None):
         seen.add(path)
         if contained(root, path) is None:
             errors.append(f'{path}: source path escapes package')
-    def check(path, context):
+    def check(path, context, allow_deferred=True):
         candidate = contained(root, path)
         if candidate is None:
             errors.append(f'{context}: {path}: path or symlink escapes package')
         elif not candidate.exists():
             row = destinations.get(path)
-            if scope is not None and row and row['adaptationStatus'] == 'pending':
+            if allow_deferred and scope is not None and row and row['adaptationStatus'] == 'pending':
                 deferred.append(f'{context}: {path}: inventoried pending dependency')
             else:
                 errors.append(f'{context}: {path}: missing path')
         return candidate
     for row in selected:
-        check(row['destinationPath'], row['upstreamPath'])
+        check(row['destinationPath'], row['upstreamPath'], allow_deferred=False)
         for dependency in row['dependencies']:
             # Explicit upstream dependencies map to their package destinations.
             check(effective.get(dependency, {}).get('destinationPath', dependency), row['upstreamPath'])
@@ -227,12 +227,23 @@ def inspect_package(root: Path, inventory: list[dict], scope=None):
                 token = match[0]
                 if not any(entry.get('token') == token and isinstance(entry.get('startLine'), int) and isinstance(entry.get('endLine'), int) and entry['startLine'] <= number <= entry['endLine'] for entry in approved):
                     errors.append(f'{relative}:{number}: remnant {token!r} needs reviewed binding or source-only disposition')
-    case_schema = read_json(root/'docs/parity/cases/schema.json', None)
+    cases_root = contained(root, 'docs/parity/cases')
+    if cases_root is None:
+        errors.append('docs/parity/cases: path or symlink escapes package')
+        return sorted(set(errors)), sorted(set(deferred))
+    schema_path = contained(root, 'docs/parity/cases/schema.json')
+    if schema_path is None:
+        errors.append('docs/parity/cases/schema.json: path or symlink escapes package')
+    case_schema = read_json(schema_path, None) if schema_path else None
     if case_schema is None:
         errors.append('docs/parity/cases/schema.json: missing contract')
     case_ids = set()
-    for file in sorted((root/'docs/parity/cases').glob('*.json')):
-        if file.name == 'schema.json':
+    for file in sorted(cases_root.rglob('*')):
+        relative = file.relative_to(root).as_posix()
+        if contained(root, relative) is None:
+            errors.append(f'{relative}: case path or symlink escapes package')
+            continue
+        if not file.is_file() or file.suffix != '.json' or file == schema_path:
             continue
         cases = read_json(file, [])
         for case in cases if isinstance(cases, list) else [cases]:
