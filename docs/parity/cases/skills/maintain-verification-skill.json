@@ -1,0 +1,27 @@
+{
+  "id": "stale-feature-map",
+  "sourcePaths": [
+    "skills/maintain-verification-skill/SKILL.md"
+  ],
+  "prompt": "Audit the verify skill against this supplied changed app contract: a previously immediate save now requires entitlement and finishes asynchronously. Review every feature from source and live without weakening proof to a static screenshot or silently deleting the old requirement.",
+  "requirements": [
+    "Supplied changed app contract and repository source access",
+    "Target verification skill, feature-map index and feature files",
+    "Observed independent readers for full source wave",
+    "Authorized execution, app driving and scoped skill writes",
+    "Explicit authorization before a branch or PR ships corrections"
+  ],
+  "expectedFull": "Locate the existing target and reconcile its index. Assign one read-only reader per feature, inspect every returned source summary and citation, merge recipes and check churn for missing source-backed features. The coordinator drives every feature according to the target launch model. Doctor before first and fresh-session drives and after failures; reset wedged UI state. Preserve and check evidence after cleanup, clean failed-drive residue and perform final teardown after re-proofs. Classify confirmed contract change as doc drift, broken product behavior as a product gap, and working behavior unreachable by the harness as a harness gap. Record the entitlement and attempted route for verified-unreachable, repair missing prerequisites and re-drive harness fixes. Re-read changed files and produce at most one authorized PR of proven corrections, or report clean or blocked honestly.",
+  "expectedReduced": "Without independent workers, one coordinator may read every feature serially as reduced capability, retaining all source and live coverage standards. Without shipping authorization, retain proven corrections for local review and report blocked shipping; do not create a branch or PR. Without execution or app-driving, provide source findings and pending live recipes, mark live verification not-run and outcome blocked. Read-only permissions permit recommendations only, with denied writes explicit.",
+  "expectedBlocked": "Missing target stops with a pointer to /create-verification-skill; multiple candidates require target selection. Missing source access or denied proof execution blocks coverage. Doctor drift permits one scoped repair and retry with only invalidated state restarted; unresolved failure remains blocked. Never call incomplete coverage clean or silently weaken feature proof.",
+  "forbiddenClaims": [
+    "Source review or static screenshots alone prove every feature live",
+    "Sequential readers are independent parallel workers",
+    "Product regressions can be hidden by weakening the feature map",
+    "A feature is verified-unreachable without a concrete prerequisite and attempted route",
+    "Cleanup may delete evidence or leave failed-drive residue running",
+    "A harness repair can ship without a live re-drive",
+    "Upstream ship instructions authorize a PR or recurring schedule",
+    "Structural validation proves host behavior"
+  ]
+}
