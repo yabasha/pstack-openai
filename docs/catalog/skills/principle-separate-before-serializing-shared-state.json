@@ -1,0 +1,34 @@
+{
+  "name": "principle-separate-before-serializing-shared-state",
+  "kind": "principle",
+  "purpose": "Eliminate shared mutable write targets before structurally serializing access to a required shared object.",
+  "triggers": [
+    "Concurrent actors might write to the same file, branch, key or state object"
+  ],
+  "inputs": [
+    "Concurrent actors and mutable write targets",
+    "Ownership requirements and any real canonical-object invariant"
+  ],
+  "outputs": [
+    "Distinct owned writable outputs merged at the read or reporting boundary",
+    "Structural serialization when a shared write target is required"
+  ],
+  "ordinaryExample": "Give an indexer and a metrics worker separate state files instead of separate fields in one state.json; combine their independent facts when reading the report.",
+  "dependencies": [
+    "references/host-capabilities.md",
+    "references/orchestration-contract.md"
+  ],
+  "capabilityLimits": [
+    "Writes, worker dispatch and external actions require available capabilities and permission.",
+    "Unavailable implementation leaves a design with unperformed checks stated.",
+    "Sequential fallback is reduced capability and does not prove concurrent execution.",
+    "Preserve disable-model-invocation metadata without assuming host enforcement.",
+    "Host behavior has not been tested."
+  ],
+  "sourcePaths": [
+    "skills/principle-separate-before-serializing-shared-state/SKILL.md"
+  ],
+  "caseIds": [
+    "two-writers"
+  ]
+}
