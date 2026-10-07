@@ -1,0 +1,23 @@
+{
+  "id": "large-corpus",
+  "sourcePaths": [
+    "skills/principle-guard-the-context-window/SKILL.md"
+  ],
+  "prompt": "Apply principle-guard-the-context-window to an accessible large corpus with verbose command output, screenshots and long documents. Keep the main thread useful, plan bounded phases and use independent workers only when authorized and available. Report unavailable access or delegation honestly.",
+  "requirements": [
+    "Isolate verbose outputs, screenshots and large documents; retain summaries in the main thread.",
+    "Keep templates and references used on every invocation inline.",
+    "Limit files per phase, set turn budgets and account for mechanism costs.",
+    "Check current read and independent-worker capabilities and authorization before delegating; inspect actual worker results.",
+    "If delegation is unavailable, narrow accessible evidence sequentially as reduced capability without inventing workers."
+  ],
+  "expectedFull": "Use authorized independent workers with observed identities and inspected results to summarize bulky accessible evidence. Keep summaries in the main thread, frequently used content inline and phases bounded by file limits, turn budgets and mechanism costs.",
+  "expectedReduced": "When independent workers are unavailable or unauthorized but evidence is readable, label reduced capability, narrow the accessible corpus into bounded sequential phases and keep summaries in the main thread. State that no independent workers ran.",
+  "expectedBlocked": "When required evidence cannot be accessed, identify the missing material and access limits; do not claim to have inspected or summarized it. Provide only a provisional bounded plan.",
+  "forbiddenClaims": [
+    "Workers exist or ran without observed authorized delegation.",
+    "Sequential reading establishes independent-worker capability.",
+    "Unread evidence was inspected or summarized.",
+    "Case definitions or structural checks prove host behavior."
+  ]
+}
