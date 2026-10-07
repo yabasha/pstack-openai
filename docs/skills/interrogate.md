@@ -1,0 +1,149 @@
+# interrogate
+
+Generated from the reviewed catalog record. Regenerate with `python3 -B tools/build_catalog.py --root .`.
+
+Catalog record: [docs/catalog/skills/interrogate.json](../catalog/skills/interrogate.json).
+
+Skill: [skills/interrogate/SKILL.md](../../skills/interrogate/SKILL.md). Kind: workflow.
+
+## Purpose
+
+Adversarially review changes through competing reviewers and pragmatic lead judgment without automatically applying changes.
+
+## Triggers
+
+- interrogate
+- adversarial review
+- multi-model review
+- challenge this
+- stress test this code
+- find blind spots
+- tear this apart
+
+## Required input
+
+- Diff or files and surrounding context
+- Stated intent paragraph
+- Authorized reviewer selections and observed capabilities
+
+## Output contract
+
+- Intent, Reviewers, Act On, Consider, Noted, Dismissed and Agreement Map
+- Attributed findings with evidence, category and lead rationale
+- Observed worker independence, model diversity and limits
+
+## Ordinary example
+
+Challenge a branch diff with identical reviewer prompts, then trace a disputed null-input finding to its caller before categorizing it.
+
+The linked cases define acceptance observations. Their prompts and expected results are not execution evidence.
+
+### Case [adversarial-review](../parity/cases/skills/interrogate.json)
+
+Adversarially review the current changes against their stated intent. Challenge correctness and structural quality, then decide which findings warrant action.
+
+Full capability expectation:
+
+Authorized independent reviewers receive the same template and all rubric/code-quality lenses. The lead deduplicates findings, traces evidence and classifies every finding with attribution and rationale. The verdict includes Intent, Reviewers, Act On, Consider, Noted, Dismissed and Agreement Map, with observed model diversity or its explicit limit.
+
+Reduced capability expectation:
+
+When independent workers are unavailable, an authorized sequential review applies the complete rubric and lead judgment and labels reduced capability. It does not claim independent agreement or model diversity; unknown actual models remain unknown.
+
+Blocked capability expectation:
+
+Unavailable diff or context, or denied review capability, blocks grounded findings. Report the missing source or permission without inventing findings, reviewer execution or agreement.
+
+Required observations:
+
+- State intent and give every competing reviewer the identical diff, context, rubric and code-quality lens.
+- Preserve all rubric lenses, evidence-based findings and pragmatic lead judgment across act on, consider, noted and dismissed categories.
+- Report reviewer models, finding counts, independent consensus, lone findings and disagreements in the complete verdict format.
+- Verify independent worker results and observed model diversity; disclose sequential review as reduced capability.
+- Do not auto-apply changes or create external changes to fix rejected model defaults.
+
+Forbidden claims:
+
+- Sequential passes are independent reviewers.
+- Requested model names prove actual model diversity.
+- The rubric or code-quality lens can be omitted.
+- A review authorizes automatic fixes or an external PR.
+- Structural checks establish host behavioral parity.
+
+## Dependencies
+
+- [skills/interrogate/references/code-quality-review.md](../../skills/interrogate/references/code-quality-review.md)
+- [skills/interrogate/references/reviewer-prompt.md](../../skills/interrogate/references/reviewer-prompt.md)
+- [skills/interrogate/references/rubric.md](../../skills/interrogate/references/rubric.md)
+- [skills/interrogate/references/lead-judgment.md](../../skills/interrogate/references/lead-judgment.md)
+- [references/host-capabilities.md](../../references/host-capabilities.md)
+- [references/model-roles.md](../../references/model-roles.md)
+- [references/orchestration-contract.md](../../references/orchestration-contract.md)
+
+## Host limits
+
+- Independent reviewers require observed authorized spawn and result inspection.
+- Unknown or identical observed models do not establish model diversity.
+- Sequential review is reduced capability.
+- Missing source or denied review blocks grounded findings.
+- Invocation metadata is retained without claiming host enforcement.
+- Host behavior has not been tested.
+
+## Source proof and release evidence
+
+The following statuses come from the current parity inventory. Pending aggregate review remains pending. Structural catalog checks do not establish host support.
+
+### `skills/interrogate/SKILL.md`
+
+Destination: [skills/interrogate/SKILL.md](../../skills/interrogate/SKILL.md).
+
+Upstream commit: `df581122cde17e6e27686b5a448bde23e4ad4318`. SHA-256: `2f7e570ec23791ed2e485a09c98ed0597c46035e2050b351b84d3dc760ddd71f`.
+
+Disposition: `runtime`. Aggregate adaptation status: `pending`.
+
+- chatgpt: `not-run`. Tested release evidence: none recorded.
+- codex: `not-run`. Tested release evidence: none recorded.
+
+### `skills/interrogate/references/code-quality-review.md`
+
+Destination: [skills/interrogate/references/code-quality-review.md](../../skills/interrogate/references/code-quality-review.md).
+
+Upstream commit: `df581122cde17e6e27686b5a448bde23e4ad4318`. SHA-256: `79162fda183eafd40d51661fbb5e151c7ba250f89e506ba17f5bd135dcbd50a8`.
+
+Disposition: `runtime`. Aggregate adaptation status: `pending`.
+
+- chatgpt: `not-run`. Tested release evidence: none recorded.
+- codex: `not-run`. Tested release evidence: none recorded.
+
+### `skills/interrogate/references/reviewer-prompt.md`
+
+Destination: [skills/interrogate/references/reviewer-prompt.md](../../skills/interrogate/references/reviewer-prompt.md).
+
+Upstream commit: `df581122cde17e6e27686b5a448bde23e4ad4318`. SHA-256: `e0598e254792b56de39bb16b1e6db559b03a522fdc54b98f942d254090920ae6`.
+
+Disposition: `runtime`. Aggregate adaptation status: `pending`.
+
+- chatgpt: `not-run`. Tested release evidence: none recorded.
+- codex: `not-run`. Tested release evidence: none recorded.
+
+### `skills/interrogate/references/rubric.md`
+
+Destination: [skills/interrogate/references/rubric.md](../../skills/interrogate/references/rubric.md).
+
+Upstream commit: `df581122cde17e6e27686b5a448bde23e4ad4318`. SHA-256: `a85aa801abbaf14434f00579440abc0d8e2723227ba8bf57de7cca8d6e7d2f25`.
+
+Disposition: `runtime`. Aggregate adaptation status: `pending`.
+
+- chatgpt: `not-run`. Tested release evidence: none recorded.
+- codex: `not-run`. Tested release evidence: none recorded.
+
+### `skills/interrogate/references/lead-judgment.md`
+
+Destination: [skills/interrogate/references/lead-judgment.md](../../skills/interrogate/references/lead-judgment.md).
+
+Upstream commit: `df581122cde17e6e27686b5a448bde23e4ad4318`. SHA-256: `6e5bdf5670eb34017692e9b6c546f36ac7552e6bb9f3f2f3429164fcc46a9361`.
+
+Disposition: `runtime`. Aggregate adaptation status: `pending`.
+
+- chatgpt: `not-run`. Tested release evidence: none recorded.
+- codex: `not-run`. Tested release evidence: none recorded.
