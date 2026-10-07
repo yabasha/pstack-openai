@@ -1,0 +1,38 @@
+{
+  "name": "setup-pstack",
+  "kind": "workflow",
+  "purpose": "Configure pstack model choices per role and reasoning budget with confirmed availability and an explicit persistence gate.",
+  "triggers": [
+    "/setup-pstack",
+    "configure pstack models",
+    "pstack budget",
+    "changing pstack's model choices"
+  ],
+  "inputs": [
+    "Available session models and supported efforts, current overrides, budget and role choices",
+    "Explicit authorization and supported destination for a persistent override"
+  ],
+  "outputs": [
+    "Reviewed complete role table with budget, retired roles and capability limits",
+    "Verified persistent override only when authorized and supported; otherwise session-only proposal"
+  ],
+  "ordinaryExample": "Run /setup-pstack when model enumeration is unavailable; retain inherited choices, reject an unknown slug, and return a session-only table without writing personal configuration.",
+  "dependencies": [
+    "references/host-capabilities.md",
+    "references/model-roles.md",
+    "references/orchestration-contract.md",
+    "skills/create-verification-skill/SKILL.md"
+  ],
+  "capabilityLimits": [
+    "Unknown availability defaults to inherited roles",
+    "Persistent always-applied overrides require a verified host mechanism and explicit write authorization",
+    "Requested models and budgets do not establish actual models, supported effort, diversity or worker independence",
+    "The verification-skill leaf is deferred until its assigned port; host behavior remains not-run"
+  ],
+  "sourcePaths": [
+    "skills/setup-pstack/SKILL.md"
+  ],
+  "caseIds": [
+    "unknown-model"
+  ]
+}
