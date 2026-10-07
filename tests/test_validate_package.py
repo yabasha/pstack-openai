@@ -42,6 +42,37 @@ class PackageTests(unittest.TestCase):
         self.write('skills/demo/SKILL.md', '[missing](missing.md)')
         self.fails('skills/demo/missing.md')
 
+    def test_inline_code_references_are_ignored(self):
+        for content in ('Use `[T, T][]`.', 'Use ``[T, `T`][]``.', 'Use `[missing](gone.md)`.', 'Use `[label]: gone.md`.', '`first line\n[T, T][]`', '`first line\n< 5 [T, T][]`', '`first line\n<span> [T, T][]`'):
+            with self.subTest(content=content):
+                self.write('skills/demo/SKILL.md', content)
+                self.assertEqual(validate_package(self.root, self.rows), [])
+
+    def test_inline_code_keeps_same_line_reference_checks(self):
+        self.write('skills/demo/SKILL.md', '`[T, T][]` then [real][missing]')
+        self.assertTrue(any('[missing]: undefined Markdown reference' in error for error in validate_package(self.root, self.rows)))
+
+    def test_unmatched_inline_delimiters_keep_reference_checks(self):
+        for content in ('`[real][missing]', '``[real][missing]`', '`[real][missing]``', '\\`[real][missing]`', '`[real][missing]\n\n`'):
+            with self.subTest(content=content):
+                self.write('skills/demo/SKILL.md', content)
+                self.assertTrue(any('[missing]: undefined Markdown reference' in error for error in validate_package(self.root, self.rows)))
+
+    def test_inline_code_keeps_same_line_link_containment(self):
+        self.write('skills/demo/SKILL.md', '`[T, T][]` then [outside](../../../outside.md)')
+        self.assertTrue(any('escapes package' in error for error in validate_package(self.root, self.rows)))
+
+    def test_inline_code_does_not_exempt_remnants(self):
+        self.write('skills/demo/SKILL.md', '`Task`')
+        self.assertTrue(any("remnant 'Task'" in error for error in validate_package(self.root, self.rows)))
+
+    def test_inline_delimiters_do_not_cross_interrupting_blocks(self):
+        for boundary in ('# H', '> quote', '- item', '1. item', '-', '--', '---', '===', '```text', '~~~text', '<div>', '</DIV>', '<script>', '<?process', '<![CDATA[', '<!DOCTYPE html>', '<!-- comment -->'):
+            for link, expected in (('[real][missing]', 'undefined Markdown reference'), ('[outside](../../../outside.md)', 'escapes package')):
+                with self.subTest(boundary=boundary, link=link):
+                    self.write('skills/demo/SKILL.md', f'`\n{boundary}\n{link}\n`')
+                    self.assertTrue(any(expected in error for error in validate_package(self.root, self.rows)))
+
     def test_absolute_reference_api_and_cli(self):
         self.write('skills/demo/SKILL.md', '[outside](/tmp/outside.md)')
         self.fails('/tmp/outside.md')

@@ -81,6 +81,54 @@ def quoted_regions(lines):
     return regions
 
 
+def mask_inline_code(text):
+    """Mask matched backtick runs for link extraction, retaining line boundaries."""
+    # Delimiters in separate blocks cannot form a code span. Treat block
+    # marker lines independently; ordinary consecutive prose lines stay together.
+    boundary = re.compile(r'^ {0,3}(?:#{1,6}(?:[ \t]|$)|>|[-+*][ \t]+|1[.)][ \t]+|`{3,}|~{3,}|(?:=[ \t]*)+$|-+[ \t]*$|(?:[-_*][ \t]*){3,}$)')
+    html_tags = 'address article aside base basefont blockquote body caption center col colgroup dd details dialog dir div dl dt fieldset figcaption figure footer form frame frameset h1 h2 h3 h4 h5 h6 head header hr html iframe legend li link main menu menuitem nav noframes ol optgroup option p param search section summary table tbody td tfoot th thead title tr track ul'
+    html_boundary = re.compile(r'^ {0,3}(?:<!--|<\?|<![A-Z]|<!\[CDATA\[|(?i:<(?:script|pre|style|textarea)(?:[ \t>]|$)|</?(?:' + '|'.join(html_tags.split()) + r')(?:[ \t]|/?>|$)))')
+    output, paragraph = [], []
+    for line in text.splitlines(keepends=True):
+        if not line.strip() or boundary.match(line.rstrip('\r\n')) or html_boundary.match(line.rstrip('\r\n')):
+            output.append(mask_inline_code_block(''.join(paragraph)))
+            paragraph = []
+            output.append(mask_inline_code_block(line))
+        else:
+            paragraph.append(line)
+    output.append(mask_inline_code_block(''.join(paragraph)))
+    return ''.join(output)
+
+
+def mask_inline_code_block(text):
+    """Mask equal-length delimiter pairs within one conservatively bounded block."""
+    characters = list(text)
+    runs = list(re.finditer(r'`+', text))
+    next_match, following = {}, {}
+    for index in range(len(runs) - 1, -1, -1):
+        length = len(runs[index][0])
+        if length in following:
+            next_match[index] = following[length]
+        following[length] = index
+    index = 0
+    while index < len(runs):
+        opening = runs[index]
+        position = opening.start() - 1
+        while position >= 0 and text[position] == '\\':
+            position -= 1
+        escaped = (opening.start() - position - 1) % 2
+        closing_index = next_match.get(index)
+        if escaped or closing_index is None:
+            index += 1
+            continue
+        closing = runs[closing_index]
+        for position in range(opening.start(), closing.end()):
+            if characters[position] not in '\r\n':
+                characters[position] = ' '
+        index = closing_index + 1
+    return ''.join(characters)
+
+
 def inspect_package(root: Path, inventory: list[dict], scope=None):
     root = Path(root).resolve()
     errors, deferred = [], []
@@ -201,6 +249,7 @@ def inspect_package(root: Path, inventory: list[dict], scope=None):
         if not historical:
             # Exact source-only ranges are data. Unreviewed examples remain checked.
             operative = '\n'.join(line for number, line in enumerate(content.splitlines(), 1) if not any(entry.get('kind') == 'source-only' and isinstance(entry.get('startLine'), int) and isinstance(entry.get('endLine'), int) and entry['startLine'] <= number <= entry['endLine'] for entry in approved))
+            operative = mask_inline_code(operative)
             links = re.findall(r'!?\[[^\]]*\]\(\s*(<[^>]*>|[^\s)]+)', operative)
             definitions = re.findall(r'^\s*\[([^\]]+)\]:\s*(<[^>]*>|\S+)', operative, re.M)
             links += [target for _, target in definitions]
