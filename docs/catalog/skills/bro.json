@@ -1,0 +1,27 @@
+{
+  "name": "bro",
+  "kind": "skill",
+  "purpose": "Restate the previous assistant message in plain, coherent, concise language without jargon.",
+  "triggers": [
+    "User invokes bro to simplify the previous assistant message."
+  ],
+  "inputs": [
+    "The actual previous assistant message."
+  ],
+  "outputs": [
+    "A simpler, concise restatement of that message."
+  ],
+  "ordinaryExample": "After an explanation about concurrent writes, invoke bro to get the same point in plain language.",
+  "dependencies": [],
+  "capabilityLimits": [
+    "Missing conversation history prevents faithful restatement; partial history limits restatement to the available text.",
+    "Preserve disable-model-invocation metadata without assuming host enforcement.",
+    "Host behavior has not been tested."
+  ],
+  "sourcePaths": [
+    "skills/bro/SKILL.md"
+  ],
+  "caseIds": [
+    "plain-restate"
+  ]
+}
