@@ -1,0 +1,36 @@
+{
+  "name": "benchmark-checklist",
+  "kind": "workflow",
+  "purpose": "Vet performance measurements before reporting or acting on a speedup or regression.",
+  "triggers": [
+    "Running a benchmark or reporting a measured speedup or regression"
+  ],
+  "inputs": [
+    "Claim, measurement script, workload, revisions/configurations and run artifacts",
+    "Available inspection, execution, profiling and storage permissions"
+  ],
+  "outputs": [
+    "Verdict with units, run count, range and evidenced limiter",
+    "Seven-question measurement review and named gaps, with linked run evidence"
+  ],
+  "ordinaryExample": "Vet export on a 60k-row dataset across revisions A and B using at least 5 alternating runs per side before reporting a speedup.",
+  "dependencies": [
+    "references/host-capabilities.md",
+    "skills/principle-explain-the-number/SKILL.md",
+    "skills/poteto-mode/playbooks/opening-a-pr.md",
+    "skills/poteto-mode/playbooks/perf-issue.md",
+    "skills/poteto-mode/playbooks/hillclimb.md"
+  ],
+  "capabilityLimits": [
+    "Missing tools or permission leave affected checks unverified; missing required evidence makes a difference inconclusive.",
+    "One-run ballparks require an explicit user request, errors and completed-work checks; option choices require the full method.",
+    "Source metadata does not prove host invocation enforcement.",
+    "Host behavior has not been tested."
+  ],
+  "sourcePaths": [
+    "skills/benchmark-checklist/SKILL.md"
+  ],
+  "caseIds": [
+    "measurement-method"
+  ]
+}
