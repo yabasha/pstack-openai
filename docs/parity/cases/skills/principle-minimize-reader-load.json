@@ -1,0 +1,22 @@
+{
+  "id": "trace-load",
+  "sourcePaths": [
+    "skills/principle-minimize-reader-load/SKILL.md"
+  ],
+  "prompt": "Trace where invoice.total comes from through Controller -> InvoiceFacade -> InvoiceAdapter -> Calculator. The facade and adapter each have one caller and pass identical arguments. Calculator synchronizes a cached module total with invoice rows. Reduce indirection in this concrete path and explain what can change total.",
+  "requirements": [
+    "Read source and callers; writes and execution require available tools and authorization.",
+    "Inspect both layers to trace and state to hold.",
+    "Preserve meaningful abstraction boundaries and invariants."
+  ],
+  "expectedFull": "Inspect the concrete path and caller evidence. Collapse unnecessary one-caller and pass-through layers, keep boundaries that hide meaningful decisions, derive total from rows in a pure function or smaller state scope, and name the invariant once at the boundary. Explain where total comes from and what can change it. Verify authorized edits with observed checks; treat the under-30-second reader test as a criterion unless actually measured.",
+  "expectedReduced": "With readable source but unavailable or denied writes or execution, give a source-grounded ordered proposal that reduces trace layers and hidden state. State which edits or checks were not performed and preserve permission limits.",
+  "expectedBlocked": "Without readable source or sufficient caller and state evidence, identify the missing access or evidence and stop concrete refactoring and completion claims.",
+  "forbiddenClaims": [
+    "A structural validator pass proves host behavior or a measured reader time.",
+    "Fewer lines alone prove reduced reader load.",
+    "All abstraction layers should be removed regardless of interface compression.",
+    "Unavailable writes or execution succeeded.",
+    "Preserved invocation metadata proves host enforcement."
+  ]
+}
