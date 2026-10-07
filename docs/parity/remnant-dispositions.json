@@ -888,5 +888,25 @@
     "kind": "source-only",
     "rationale": "Historical canonical provider endpoint in a quoted source example only. Operative instructions require the actual configured provider URL and observed provider bindings; this record grants no provider or network capability.",
     "reviewed": true
+  },
+  {
+    "path": "skills/reflect/references/synthesizer.md",
+    "sha256": "85611e226c1a5ee7b92f64580843352f9517467a8c83677c1f42eccdf27693b9",
+    "token": "gpt-4",
+    "startLine": 28,
+    "endLine": 28,
+    "kind": "source-only",
+    "rationale": "The complete quoted bullet is historical encodingForModel rename data in the Drop examples, not model routing.",
+    "reviewed": true
+  },
+  {
+    "path": "skills/reflect/references/synthesizer.md",
+    "sha256": "85611e226c1a5ee7b92f64580843352f9517467a8c83677c1f42eccdf27693b9",
+    "token": "gpt-4o",
+    "startLine": 28,
+    "endLine": 28,
+    "kind": "source-only",
+    "rationale": "The complete quoted bullet is historical encodingForModel rename data in the Drop examples, not model routing.",
+    "reviewed": true
   }
 ]

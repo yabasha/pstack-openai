@@ -38,6 +38,57 @@ class PackageTests(unittest.TestCase):
     def fails(self, path):
         self.assertTrue(any(path in error for error in validate_package(self.root, self.rows)))
 
+    def test_actual_patterns_fenced_links_are_literal_data(self):
+        source = (ROOT/'skills/typescript-best-practices/references/patterns.md').read_text()
+        self.assertIn('type Pairs<T> = [T, T][];', source)
+        self.write('skills/demo/SKILL.md', source)
+        self.assertEqual(validate_package(self.root, self.rows), [])
+        self.write('skills/demo/SKILL.md', source + '\n[real](gone.md) [real][undefined]\n')
+        errors = validate_package(self.root, self.rows)
+        self.assertTrue(any('gone.md' in error for error in errors))
+        self.assertTrue(any('undefined Markdown reference' in error for error in errors))
+
+    def test_fenced_literals_do_not_hide_operative_remnants(self):
+        self.write('skills/demo/SKILL.md', '```text\n[example](url) [T,T][]\nUse Task and gpt-4.\n```\n')
+        errors = validate_package(self.root, self.rows)
+        self.assertTrue(any("remnant 'Task'" in error for error in errors))
+        self.assertTrue(any("remnant 'gpt-4'" in error for error in errors))
+        self.assertFalse(any('missing path' in error or 'undefined Markdown' in error for error in errors))
+
+    def test_actual_reflection_quote_requires_exact_hash_line_and_token(self):
+        import hashlib
+        path = 'skills/reflect/references/synthesizer.md'
+        source = (ROOT/path).read_text()
+        file = self.write('skills/demo/SKILL.md', source)
+        entries = [dict(entry, path='skills/demo/SKILL.md') for entry in
+                   json.loads((ROOT/'docs/parity/remnant-dispositions.json').read_text())
+                   if entry['path'] == path]
+        self.assertEqual({entry['token'] for entry in entries}, {'gpt-4', 'gpt-4o'})
+        self.assertEqual({entry['sha256'] for entry in entries}, {hashlib.sha256(file.read_bytes()).hexdigest()})
+        self.write('docs/parity/remnant-dispositions.json', json.dumps(entries))
+        self.assertEqual(validate_package(self.root, self.rows), [])
+        self.write('skills/demo/SKILL.md', source + '\nUse Task and gpt-4 for workers.\n')
+        errors = validate_package(self.root, self.rows)
+        self.assertTrue(any(':28:' in error for error in errors))
+        self.assertTrue(any("remnant 'Task'" in error for error in errors))
+        self.assertTrue(any("remnant 'gpt-4o'" in error for error in errors))
+        for entry in entries:
+            entry['sha256'] = hashlib.sha256(file.read_bytes()).hexdigest()
+        self.write('docs/parity/remnant-dispositions.json', json.dumps(entries))
+        errors = validate_package(self.root, self.rows)
+        self.assertFalse(any(':28:' in error for error in errors))
+        self.assertTrue(any('for workers' in line for line in file.read_text().splitlines()))
+        self.assertTrue(any("remnant 'Task'" in error for error in errors))
+        self.assertTrue(any("remnant 'gpt-4'" in error for error in errors))
+
+    def test_actual_why_template_preserves_contract_and_real_links(self):
+        source = (ROOT/'skills/why/references/synthesizer-prompt.md').read_text()
+        self.assertIn('Source: [PR #123](url) / ticket ID / file:line.', source)
+        self.write('skills/demo/SKILL.md', source)
+        self.assertEqual(validate_package(self.root, self.rows), [])
+        self.write('skills/demo/SKILL.md', source + '\n[operative](url)\n')
+        self.fails('skills/demo/url')
+
     def test_broken_reference(self):
         self.write('skills/demo/SKILL.md', '[missing](missing.md)')
         self.fails('skills/demo/missing.md')

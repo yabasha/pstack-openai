@@ -52,7 +52,7 @@ def read_json(path, fallback):
     return json.loads(path.read_text()) if path.is_file() else fallback
 
 
-def quoted_regions(lines):
+def quoted_regions(lines, *, fenced_only=False):
     """Return complete fenced-code and consecutive blockquote regions."""
     regions = []
     fence, start = None, None
@@ -70,7 +70,12 @@ def quoted_regions(lines):
                 regions.append((quote_start, number - 1))
                 quote_start = None
             fence, start = marker[1], number + 1
-        elif re.match(r'^\s{0,3}>', line):
+        elif not fenced_only and re.match(r'^ {0,3}- "[^"\n]*"\s*$', line):
+            if quote_start is not None:
+                regions.append((quote_start, number - 1))
+                quote_start = None
+            regions.append((number, number))
+        elif not fenced_only and re.match(r'^\s{0,3}>', line):
             if quote_start is None:
                 quote_start = number
         elif quote_start is not None:
@@ -247,8 +252,9 @@ def inspect_package(root: Path, inventory: list[dict], scope=None):
         approved = valid
         historical = any(entry.get('kind') == 'historical' for entry in approved)
         if not historical:
-            # Exact source-only ranges are data. Unreviewed examples remain checked.
-            operative = '\n'.join(line for number, line in enumerate(content.splitlines(), 1) if not any(entry.get('kind') == 'source-only' and isinstance(entry.get('startLine'), int) and isinstance(entry.get('endLine'), int) and entry['startLine'] <= number <= entry['endLine'] for entry in approved))
+            # Fenced literals are not rendered links. Remnants still require exact review.
+            fences = quoted_regions(lines, fenced_only=True)
+            operative = '\n'.join('' if any(begin <= number <= end for begin, end in fences) or any(entry.get('kind') == 'source-only' and entry['startLine'] <= number <= entry['endLine'] for entry in approved) else line for number, line in enumerate(lines, 1))
             operative = mask_inline_code(operative)
             links = re.findall(r'!?\[[^\]]*\]\(\s*(<[^>]*>|[^\s)]+)', operative)
             definitions = re.findall(r'^\s*\[([^\]]+)\]:\s*(<[^>]*>|\S+)', operative, re.M)

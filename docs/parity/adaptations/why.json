@@ -255,7 +255,7 @@
     "upstreamSha256": "733a3e9cf897b1aca56aaddeae01a3832e4bfed024c2f602db2d1bf807d7a73b",
     "destinationPath": "skills/why/references/synthesizer-prompt.md",
     "disposition": "runtime",
-    "rationale": "Preserves historical rationale investigation, category evidence mechanics, confidence tiers and source privacy. Adapts session tool/model discovery and authorization; sequential investigation is reduced capability. Host behavior not run.",
+    "rationale": "Preserves historical rationale investigation, category evidence mechanics, confidence tiers and source privacy. Adapts session tool/model discovery and authorization; sequential investigation is reduced capability. Host behavior not run. Fences the literal finding-output template so its placeholder URL remains illustrative data; citation and confidence contracts are preserved.",
     "dependencies": [],
     "licenseProvenance": {
       "license": "MIT",
