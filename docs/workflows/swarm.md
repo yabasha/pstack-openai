@@ -1,0 +1,14 @@
+# Swarm walkthrough
+
+Start with three disposable source files, authorized reads, isolated report outputs and the exact input SHA. The example prompt is: "Swarm a read-only review of fixture files A, B and C at the supplied full SHA. Cover every file, record the method and return one evidenced report. No external actions."
+
+Read the full [Swarm skill](../../skills/swarm/SKILL.md), [capabilities](../../references/host-capabilities.md), [roles](../../references/model-roles.md), [assignments](../../references/orchestration-contract.md) and [workflow ownership](../../references/workflow-ownership.md).
+
+1. Frame the done predicate as one valid source-grounded result per required file. Choose partition coverage with three total workers and disjoint report paths. Open Frame, Fan out, Aggregate and Report todos. A race or mixed shape instead declares first pass, rank all or best-of before dispatch. N is total workers, not concurrency capacity.
+2. Give each standalone brief its goal, file slice, full input SHA, output owner, method and evidence requirements. Measurement briefs additionally specify sample count, what one sample means and order. Record immutable assignments and append-only attempts. Inherit model selection unless actual exposed support permits an authorized explicit choice.
+3. Dispatch within actual concurrency and environment limits. Cloud, background execution or non-default base branches require observed support and exact revision checks. Missing support needs disclosure before an authorized alternative.
+4. Wait for terminal results and inspect artifacts. Workers report PASS, ISSUES or BLOCKED; those are report labels, not assignment states. Reject stale revisions, missing artifacts or missing required SHA/method. After inspecting a failed attempt and permissions, allow one retry under the same immutable assignment. A second miss is a gap.
+5. Aggregate one row per file with its result, evidence and limits. Record every dropout and uncovered slice. A race winner never hides mandatory coverage gaps. For cancellation, observe stop, terminal inspection and partial-artifact quarantine. Without that binding, termination remains unverified. Durable records require readback; missing persistence limits recovery.
+6. Return one compact report with evidenced issue one-liners, gaps, dropouts and any race rule. The coordinator owns integration; workers never share the inventory or registry.
+
+Expected visible result is complete inspected slice coverage and one consolidated report. Without independent workers, an authorized sequential review is reduced capability. It proves no parallel race, background execution, independence or model diversity. Missing source, denied reads or unobserved required cancellation blocks the corresponding claim. [Case](../parity/cases/documentation-walkthroughs.json), [catalog entry](../skills/swarm.md), [troubleshooting](../troubleshooting.md).

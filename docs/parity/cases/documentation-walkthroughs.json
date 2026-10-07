@@ -1,0 +1,145 @@
+[
+  {
+    "id": "chatgpt-setup-from-readme",
+    "sourcePaths": [
+      "docs/guide/01-setup.md"
+    ],
+    "prompt": "Start in personal ChatGPT without an installed pstack package. Follow README to the ChatGPT setup page; inspect available loading controls without changing them.",
+    "requirements": [
+      "Starting state and exact action are in the prompt. README must link docs/setup/chatgpt.md and the destination must exist.",
+      "Read the full linked workflow and required contracts before dependent work.",
+      "Record exact frozen package SHA, version, host tools, permission decisions and visible results. Do not install or alter settings without exact separate authorization.",
+      "Inspect resulting artifacts and assignment revisions; source reads alone cannot establish installed discovery."
+    ],
+    "expectedFull": "Only after the personal route is actually exposed and separately authorized, observe supported loading and complete installed discovery with all 51 roots, three Benny exclusions, exact installed-copy identity, version and final frozen SHA. Do not infer account access from official documentation.",
+    "expectedReduced": "With readable supplied instructions but missing workers, return an authorized sequential artifact and comparison labelled reduced capability. Complete package discovery still requires its full receipt; sequential roles do not prove independence. Keep unsupported personal ChatGPT loading blocked.",
+    "expectedBlocked": "Name absent or denied loading, discovery, execution, writes, independent review or setup. Leave affected gates blocked or not-run; produce only separately authorized read-only guidance. A documented loading route is unverified until exercised in a fresh host case.",
+    "forbiddenClaims": [
+      "Links or direct source reads prove installed discovery.",
+      "Sequential roles are independent workers.",
+      "An isolated helper snapshot proves this candidate or host passed.",
+      "A resolution file, owner marker or upstream autonomy grants approval.",
+      "Apply automatically accepts an update or refreshes a host."
+    ]
+  },
+  {
+    "id": "codex-setup-from-readme",
+    "sourcePaths": [
+      "docs/guide/01-setup.md"
+    ],
+    "prompt": "Start in a fresh Codex chat without approved installation. Follow README to Codex setup and inspect the documented marketplace route without loading.",
+    "requirements": [
+      "Starting state and exact action are in the prompt. README must link docs/setup/codex.md and the destination must exist.",
+      "Read the full linked workflow and required contracts before dependent work.",
+      "Record exact frozen package SHA, version, host tools, permission decisions and visible results. Do not install or alter settings without exact separate authorization.",
+      "Inspect resulting artifacts and assignment revisions; source reads alone cannot establish installed discovery."
+    ],
+    "expectedFull": "After separately authorized supported loading, observe actual package discovery, exact installed-copy identity and all 51 root skills with three Benny exclusions. With required authorized tools, follow every documented phase and retain inspected artifact evidence at the exact frozen SHA.",
+    "expectedReduced": "With readable supplied instructions but missing workers, return an authorized sequential artifact and comparison labelled reduced capability. Complete package discovery still requires its full receipt; sequential roles do not prove independence. Keep unsupported personal ChatGPT loading blocked.",
+    "expectedBlocked": "Name absent or denied loading, discovery, execution, writes, independent review or setup. Leave affected gates blocked or not-run; produce only separately authorized read-only guidance. A documented loading route is unverified until exercised in a fresh host case.",
+    "forbiddenClaims": [
+      "Links or direct source reads prove installed discovery.",
+      "Sequential roles are independent workers.",
+      "An isolated helper snapshot proves this candidate or host passed.",
+      "A resolution file, owner marker or upstream autonomy grants approval.",
+      "Apply automatically accepts an update or refreshes a host."
+    ]
+  },
+  {
+    "id": "arena-walkthrough",
+    "sourcePaths": [
+      "skills/arena/SKILL.md"
+    ],
+    "prompt": "Start with an authorized disposable local artifact and exact input SHA. Follow README to Arena and compare two proposals for a cache API.",
+    "requirements": [
+      "Starting state and exact action are in the prompt. README must link docs/workflows/arena.md and the destination must exist.",
+      "Read the full linked workflow and required contracts before dependent work.",
+      "Record exact frozen package SHA, version, host tools, permission decisions and visible results. Do not install or alter settings without exact separate authorization.",
+      "Inspect resulting artifacts and assignment revisions; source reads alone cannot establish installed discovery.",
+      "Follow Frame, Fan out, Cross-judge, Pick, Graft and Verify. Keep a parent-only 3-6 criterion rubric from candidates; inspect all terminal candidates before the fresh read-only judge."
+    ],
+    "expectedFull": "Two authorized independent isolated candidates and rationales are inspected at the exact input SHA. A fresh read-only judge scores the rubric after candidates finish. The parent reads every candidate, picks a base, records grafts/rejections/dropouts and verifies one synthesis with an adjacent note.",
+    "expectedReduced": "With readable supplied instructions but missing workers, return an authorized sequential artifact and comparison labelled reduced capability. Complete package discovery still requires its full receipt; sequential roles do not prove independence. Keep unsupported personal ChatGPT loading blocked.",
+    "expectedBlocked": "Name absent or denied loading, discovery, execution, writes, independent review or setup. Leave affected gates blocked or not-run; produce only separately authorized read-only guidance. A documented loading route is unverified until exercised in a fresh host case.",
+    "forbiddenClaims": [
+      "Links or direct source reads prove installed discovery.",
+      "Sequential roles are independent workers.",
+      "An isolated helper snapshot proves this candidate or host passed.",
+      "A resolution file, owner marker or upstream autonomy grants approval.",
+      "Apply automatically accepts an update or refreshes a host."
+    ]
+  },
+  {
+    "id": "swarm-walkthrough",
+    "sourcePaths": [
+      "skills/swarm/SKILL.md"
+    ],
+    "prompt": "Start with an authorized disposable local artifact and exact input SHA. Follow README to Swarm and partition a three-file source review.",
+    "requirements": [
+      "Starting state and exact action are in the prompt. README must link docs/workflows/swarm.md and the destination must exist.",
+      "Read the full linked workflow and required contracts before dependent work.",
+      "Record exact frozen package SHA, version, host tools, permission decisions and visible results. Do not install or alter settings without exact separate authorization.",
+      "Inspect resulting artifacts and assignment revisions; source reads alone cannot establish installed discovery.",
+      "Declare partition/race/mixed shape, N and first pass/rank all/best-of when relevant before dispatch. Include full SHA and method; reject incomplete results, allow at most one inspected retry and retain uncovered slices as gaps."
+    ],
+    "expectedFull": "Three independent authorized slice results cover the three fixture files at the exact SHA and method. The coordinator inspects terminal artifacts and returns one consolidated table with evidenced issues and explicit gaps/dropouts. Cancellation requires observed stop, terminal inspection and quarantine.",
+    "expectedReduced": "With readable supplied instructions but missing workers, return an authorized sequential artifact and comparison labelled reduced capability. Complete package discovery still requires its full receipt; sequential roles do not prove independence. Keep unsupported personal ChatGPT loading blocked.",
+    "expectedBlocked": "Name absent or denied loading, discovery, execution, writes, independent review or setup. Leave affected gates blocked or not-run; produce only separately authorized read-only guidance. A documented loading route is unverified until exercised in a fresh host case.",
+    "forbiddenClaims": [
+      "Links or direct source reads prove installed discovery.",
+      "Sequential roles are independent workers.",
+      "An isolated helper snapshot proves this candidate or host passed.",
+      "A resolution file, owner marker or upstream autonomy grants approval.",
+      "Apply automatically accepts an update or refreshes a host."
+    ]
+  },
+  {
+    "id": "poteto-walkthrough",
+    "sourcePaths": [
+      "skills/poteto-mode/SKILL.md"
+    ],
+    "prompt": "Start with a read-only architecture question and an explicit active controller. Follow README to Poteto mode and select Investigation.",
+    "requirements": [
+      "Starting state and exact action are in the prompt. README must link docs/workflows/poteto-mode.md and the destination must exist.",
+      "Read the full linked workflow and required contracts before dependent work.",
+      "Record exact frozen package SHA, version, host tools, permission decisions and visible results. Do not install or alter settings without exact separate authorization.",
+      "Inspect resulting artifacts and assignment revisions; source reads alone cannot establish installed discovery.",
+      "Resolve controller ownership before work. Read the full mode, Investigation playbook, routed how contracts and every applied principle leaf. Copy exact steps or explicit skips; preserve the read-only checkpoint and Investigation no-PR exception."
+    ],
+    "expectedFull": "The active owner produces a cited read-only architecture explanation using inspected read-only worker results, with the Investigation checkpoint and actual capability limits. Principles named in the answer were read in full. No implementation, PR or babysit starts.",
+    "expectedReduced": "With readable supplied instructions but missing workers, return an authorized sequential artifact and comparison labelled reduced capability. Complete package discovery still requires its full receipt; sequential roles do not prove independence. Keep unsupported personal ChatGPT loading blocked.",
+    "expectedBlocked": "Name absent or denied loading, discovery, execution, writes, independent review or setup. Leave affected gates blocked or not-run; produce only separately authorized read-only guidance. A documented loading route is unverified until exercised in a fresh host case.",
+    "forbiddenClaims": [
+      "Links or direct source reads prove installed discovery.",
+      "Sequential roles are independent workers.",
+      "An isolated helper snapshot proves this candidate or host passed.",
+      "A resolution file, owner marker or upstream autonomy grants approval.",
+      "Apply automatically accepts an update or refreshes a host."
+    ]
+  },
+  {
+    "id": "upstream-update-walkthrough",
+    "sourcePaths": [
+      "skills/how/SKILL.md",
+      "LICENSE"
+    ],
+    "prompt": "Start with a clean owned disposable package worktree and an exact candidate SHA. Follow README to upstream updates and rehearse check, prepare, apply, validate, separate acceptance and next update using fixtures only.",
+    "requirements": [
+      "Starting state and exact action are in the prompt. README must link docs/maintenance/upstream-updates.md and the destination must exist.",
+      "Read the full linked workflow and required contracts before dependent work.",
+      "Record exact frozen package SHA, version, host tools, permission decisions and visible results. Do not install or alter settings without exact separate authorization.",
+      "Inspect resulting artifacts and assignment revisions; source reads alone cannot establish installed discovery.",
+      "Use injected offline source fixtures and owned linked worktrees. Inspect accepted-baseline receipt/digests and report version 2; preserve exact draft/resolved bytes, actionable resolution version 2, higher version and exhaustive ownership. Exact apply approval is separate from acceptance; verify accepted A then next check/prepare B and block unaccepted or tampered A."
+    ],
+    "expectedFull": "Offline structural rehearsal follows the documented check/prepare review, exact approved apply and package/evidence/release validation. An explicit separate reviewed acceptance receipt binds the manifest, ancestor package identity and nonempty evidence digests before the next update. Fixtures prove tooling behavior only; both actual hosts remain unobserved.",
+    "expectedReduced": "A read-only review or safe preview identifies missing approval, source identity, ownership, state compatibility or host evidence. The operative package remains intact; neither apply, acceptance nor rollback is claimed.",
+    "expectedBlocked": "Name absent or denied loading, discovery, execution, writes, independent review or setup. Leave affected gates blocked or not-run; produce only separately authorized read-only guidance. A documented loading route is unverified until exercised in a fresh host case.",
+    "forbiddenClaims": [
+      "Links or direct source reads prove installed discovery.",
+      "Sequential roles are independent workers.",
+      "An isolated helper snapshot proves this candidate or host passed.",
+      "A resolution file, owner marker or upstream autonomy grants approval.",
+      "Apply automatically accepts an update or refreshes a host."
+    ]
+  }
+]

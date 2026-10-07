@@ -1,19 +1,37 @@
-# Helper setup
+# Helper dependency setup
 
-`ensureDependenciesInstalled(): void` checks the local manifest, resolved lock entries and installed package metadata. Missing files, unreadable files or mismatched versions throw a setup-required error. An uncaught error exits the helper with a nonzero status. The check never installs dependencies, launches subprocesses, restarts a helper or writes files.
+Bootstrap checks the local [manifest](../../skills/poteto-mode/scripts/package.json), [lock](../../skills/poteto-mode/scripts/bun.lock) and installed package metadata. Missing, unreadable or mismatched files cause a setup-required error and nonzero exit. [ensureDependenciesInstalled](../../skills/poteto-mode/scripts/bootstrap.ts) never installs, spawns, restarts or writes. Use Bun with runtime auto-install disabled.
 
-The initial pins are `commander@14.0.0`, `bun-types@1.3.14` and `typescript@7.0.2`. The canonical lockfile is preserved with those exact resolutions. Its workspace devDependency requests still say `latest`. Lockfile regeneration requires separate setup authorization and has not been performed.
+## Exact historical approved scope
 
-## Explicit setup procedure
+The separately approved validation copy was the complete committed snapshot `37b68c8e842b275f310ead112c0ecb7fa0ade308` at `/Users/digital-hawk/Herd/pstack-openai-helper-verification`. It was created only after verifying that directory was absent. Its install working directory was `/Users/digital-hawk/Herd/pstack-openai-helper-verification/skills/poteto-mode/scripts`. Its cache was `/Users/digital-hawk/Herd/pstack-openai-helper-verification/.bun-cache`.
 
-Obtain authorization for network access and dependency installation before running this procedure. Copy the helper scripts, manifest and lockfile into a task-owned writable directory under `/Users/digital-hawk/Herd`. Never perform setup in an installed plugin cache. Use an already available Bun runtime. If Bun is unavailable, stop and report blocked.
+The pins are commander 14.0.0, bun-types 1.3.14 and typescript 7.0.2. Reconciliation changed only the two workspace devDependency requests from latest to the existing exact pins. All 25 package records, transitive requests, platform conditions and integrity values remained byte-identical. These include @types/node 26.1.2, undici-types 8.3.0 and TypeScript platform packages 7.0.2. The operative lock now includes the reviewed request reconciliation. It has SHA-256 `530b7fb6cba7f0b2a6cfc862dbcfe9020c333d45e7e0f448133006583ffdc1f2`. The original lock hash was `667d9cf7222e9aae3fa42a4be383e657784216e9df115da02227fbc5ac7bbe46`.
 
-In that writable copy, run `bun install` once to reconcile the workspace requests with the pinned manifest. This command contacts the configured package registry, downloads packages, writes Bun's package cache and `node_modules`, and may rewrite `bun.lock`. Review the lockfile diff. Confirm that all three direct versions remain the exact pins above and retain the resolved transitive dependency integrity records. Then run `bun install --frozen-lockfile` in the same authorized copy to verify the reconciled lock. Neither installation command belongs in an ordinary helper invocation.
+## Procedure for a separately authorized copy
 
-Run `bun --no-install test skills/poteto-mode/scripts/bootstrap.test.ts` from the writable project copy. Run each dependent helper with `bun --no-install` and record `Bun.version` from a successful run. Missing packages remain blocked; do not use `bunx` or runtime auto-install to continue.
+No generic new setup authorization follows from that historical approval. Before future setup, agree an exact immutable source SHA, complete writable copy, absent destination, scripts cwd, task-owned cache and allowed writes. Do not install in a host cache or operative invocation. Use existing Bun. Missing Bun or unavailable exact pins stops the procedure. No substitutes or material resolution/integrity changes are allowed without new review.
 
-## Observed checks and limits
+A reconciliation install, only if specifically needed and authorized, must use `bun install --ignore-scripts --registry=https://registry.npmjs.org --cache-dir=<approved-task-cache>` from the approved scripts cwd. Review any manifest/lock diff before frozen verification. Preserve every direct pin and all 25 transitive/integrity records. The current operative lock already has reconciled requests, so ordinary execution does not regenerate it.
 
-Bun `1.4.2` with build `50a8a8387` successfully ran the isolated bootstrap metadata-check fixtures on 2026-10-07. Five tests passed, including missing dependencies, lock mismatch, installed version mismatch and read-only package failure. Every fixture asserted zero helper subprocess calls and an unchanged package tree. The positive fixture uses synthetic package metadata and does not prove that third-party packages can execute.
+For the historically approved snapshot, the actual frozen install command was:
 
-The real pinned dependency copy is unavailable. Its bootstrap invocation exited with status 1 and a setup-required error. Installation, lock reconciliation, frozen-lock verification, full helper execution and dependency-backed typechecking remain blocked pending separately authorized setup. No host behavior is claimed by these structural tests.
+```sh
+bun install --frozen-lockfile --ignore-scripts --registry=https://registry.npmjs.org --cache-dir=/Users/digital-hawk/Herd/pstack-openai-helper-verification/.bun-cache
+```
+
+It ran from the exact scripts cwd above. It contacted the explicit registry, downloaded packages and wrote snapshot node_modules and its cache. Lifecycle scripts were disabled. No global settings/cache, credentials or operative source writes were approved. A future exact-copy approval must specify its own scope rather than reuse these paths or overwrite this snapshot.
+
+## Historical observed validation
+
+Bun 1.4.2 revision `50a8a838737a8f0e226d1c115788aa18192a2f18` completed the reviewed frozen install. These commands then ran from that snapshot's scripts cwd:
+
+```sh
+bun --no-install -e 'import {ensureDependenciesInstalled} from "./bootstrap.ts"; ensureDependenciesInstalled()'
+ORCH_TEST_ROOT=/Users/digital-hawk/Herd/pstack-openai-helper-test-scratch bun --no-install test bootstrap.test.ts orch watch-pr
+bun --no-install node_modules/typescript/bin/tsc --project watch-pr/tsconfig.json --noEmit --strict
+```
+
+Bootstrap passed. The suites passed 85 tests with 316 assertions and zero failures across five files. Strict TypeScript exited 0 without diagnostics. Tests used inert bootstrap spies, injected watcher transports, fake Graphite and owned fixture repositories. No live gh ran. All 299 tracked snapshot files matched the source commit except the reviewed two-request lock reconciliation. Tests and installation preserved the reviewed lock bytes.
+
+The operative candidate has no installed dependencies. Snapshot results support only that source snapshot, not this caller, the current package or either host. Missing current metadata leaves dependency-backed helpers blocked. Development dependency setup is separate from plugin loading, enabling, integration, credentials and host behavior. See [Codex setup](../setup/codex.md), [ChatGPT setup](../setup/chatgpt.md) and [compatibility](../compatibility.md).
