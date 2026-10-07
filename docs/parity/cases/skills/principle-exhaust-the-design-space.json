@@ -1,0 +1,10 @@
+{
+  "id": "alternatives",
+  "sourcePaths": ["skills/principle-exhaust-the-design-space/SKILL.md"],
+  "prompt": "A novel UI interaction has no precedent in this codebase. Compare distinct approaches before implementation. If execution is unavailable, label untested proposals.",
+  "requirements": ["Identify a novel decision with multiple viable approaches", "Compare 2-3 distinct prototypes or sketches side by side", "Observe available write and execution tools and permissions before using them"],
+  "expectedFull": "Build 2-3 distinct prototypes or sketches, compare them side by side, and choose only after comparison. Report executed checks only when observed. Explain that minor variations of one approach do not count and that established patterns or a single viable approach do not require this exploration.",
+  "expectedReduced": "Without execution, compare 2-3 distinct sketches or proposals and label them untested. State that runtime behavior and interaction feel remain unverified. Without writes, keep sketches in the response and disclose the limitation.",
+  "expectedBlocked": "If required prototype construction or evaluation is denied or unavailable and sketches cannot answer the decision, report that step as blocked and identify the missing capability without claiming a completed comparison.",
+  "forbiddenClaims": ["Execution or interaction testing occurred without observed results", "Minor variants count as distinct alternatives", "Prototype work authorizes publishing or external writes", "Static review establishes host parity"]
+}
