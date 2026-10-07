@@ -1,0 +1,31 @@
+{
+  "name": "principle-boundary-discipline",
+  "kind": "principle",
+  "purpose": "Concentrate validation, type narrowing and error handling at system boundaries; trust internal types and keep business logic in pure functions.",
+  "triggers": [
+    "Wiring validation, error handling or framework adapters"
+  ],
+  "inputs": [
+    "Relevant source and external input contracts",
+    "Authorized task and available capabilities"
+  ],
+  "outputs": [
+    "Boundary validation and typed internal error propagation with pure business logic; observed implementation and checks when available"
+  ],
+  "ordinaryExample": "Validate an incoming order quantity in an HTTP adapter, pass a typed order to pure pricing logic and remove redundant internal quantity checks.",
+  "dependencies": [
+    "references/host-capabilities.md"
+  ],
+  "capabilityLimits": [
+    "Missing source or input contracts keep proposals provisional.",
+    "Unavailable writes or execution allow a reduced proposal with unperformed checks stated.",
+    "Invocation metadata does not prove host enforcement.",
+    "Host behavior has not been tested."
+  ],
+  "sourcePaths": [
+    "skills/principle-boundary-discipline/SKILL.md"
+  ],
+  "caseIds": [
+    "invalid-input"
+  ]
+}
