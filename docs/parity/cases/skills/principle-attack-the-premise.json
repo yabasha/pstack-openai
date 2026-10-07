@@ -1,0 +1,21 @@
+{
+  "id": "repeated-failure",
+  "sourcePaths": [
+    "skills/principle-attack-the-premise/SKILL.md"
+  ],
+  "prompt": "Two fixes assume actor assignment is harmless, but both fail the same imbalance check. Before a third fix, apply Attack the Premise. Inspect actor counts across runs and consider both skewed and even census outcomes.",
+  "requirements": [
+    "Read the shared premise and both failed checks.",
+    "Inspect actor-level evidence and create a rerunnable census when writes and execution are authorized."
+  ],
+  "expectedFull": "Write the common premise before another fix. Create and run an actor census; inspect who holds the imbalance across runs. For persistent skew, trace role assignment and remove asymmetry by rotating, randomizing or moving the role. Reject compensations that preserve assignment and add recurring work. For an even census, retain evidence and investigate another cause. Distinguish this from redesign around a new requirement.",
+  "expectedReduced": "With evidence available but writes or execution unavailable, state the premise and propose the rerunnable census with explicit limits. Stop before the next fix and do not claim a census exists or ran.",
+  "expectedBlocked": "If failed-check or actor evidence is unavailable, identify missing inputs and stop before diagnosing the assignment or implementing another fix.",
+  "forbiddenClaims": [
+    "Two failed fixes prove the premise false without a census.",
+    "A proposed census is an executed census.",
+    "An even census supports blaming the premise.",
+    "Compensation that retains assignment removes the asymmetry.",
+    "Static review proves host behavior or metadata enforcement."
+  ]
+}
