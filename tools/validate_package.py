@@ -58,13 +58,14 @@ def quoted_regions(lines):
     fence, start = None, None
     quote_start = None
     for number, line in enumerate(lines, 1):
-        marker = re.match(r'^\s{0,3}(`{3,}|~{3,})', line)
+        marker = re.match(r'^ {0,3}(`{3,}|~{3,})(.*)$', line)
         if fence:
-            if marker and marker[1][0] == fence[0] and len(marker[1]) >= len(fence):
+            closing = re.fullmatch(r' {0,3}' + re.escape(fence[0]) + '{' + str(len(fence)) + r',}[ \t]*', line)
+            if closing:
                 regions.append((start, number - 1))
                 fence, start = None, None
             continue
-        if marker:
+        if marker and not (marker[1][0] == '`' and '`' in marker[2]):
             if quote_start is not None:
                 regions.append((quote_start, number - 1))
                 quote_start = None

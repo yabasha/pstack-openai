@@ -5,7 +5,7 @@ import subprocess
 import tempfile
 import unittest
 
-from tools.validate_package import validate_package, inspect_package
+from tools.validate_package import validate_package, inspect_package, quoted_regions
 
 ROOT = Path(__file__).resolve().parents[1]
 
@@ -76,6 +76,22 @@ class PackageTests(unittest.TestCase):
         errors = validate_package(self.root, self.rows)
         self.assertTrue(any('explicit quote' in error for error in errors))
         self.assertTrue(any('skills/demo/gone.md' in error for error in errors))
+
+    def test_inline_backticks_do_not_open_fenced_example(self):
+        import hashlib
+        file = self.write('skills/demo/SKILL.md', '```not a fence```\nUse Task. [operative](gone.md)\n```\n')
+        entry = dict(path='skills/demo/SKILL.md', sha256=hashlib.sha256(file.read_bytes()).hexdigest(), token='Task', startLine=2, endLine=2, kind='source-only', rationale='Claims a fenced source example.', reviewed=True)
+        self.write('docs/parity/remnant-dispositions.json', json.dumps([entry]))
+        errors = validate_package(self.root, self.rows)
+        self.assertTrue(any('explicit quote' in error for error in errors))
+        self.assertTrue(any('skills/demo/gone.md' in error for error in errors))
+
+    def test_fence_opening_and_closing_syntax(self):
+        self.assertEqual(quoted_regions(['```python', 'Task example', '````  ']), [(2, 2)])
+        self.assertEqual(quoted_regions(['~~~text `info`', 'Task example', '~~~']), [(2, 2)])
+        self.assertEqual(quoted_regions(['```text', 'Task example', '```not closing', 'more example', '```']), [(2, 4)])
+        self.assertEqual(quoted_regions(['    ```', 'Task operative', '```']), [])
+        self.assertEqual(quoted_regions(['> Task quoted example', 'Operative text']), [(1, 1)])
 
     def test_path_escape(self):
         self.rows[0]['destinationPath'] = '../outside.md'
