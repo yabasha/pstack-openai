@@ -1,0 +1,29 @@
+[
+  {
+    "upstreamPath": "skills/principle-fix-root-causes/SKILL.md",
+    "upstreamCommit": "df581122cde17e6e27686b5a448bde23e4ad4318",
+    "upstreamSha256": "ba4cd38da1dcc8fe5432feb64457cba95594736a9b21b2ebf8f8c52aee068707",
+    "destinationPath": "skills/principle-fix-root-causes/SKILL.md",
+    "disposition": "runtime",
+    "rationale": "Preserve the complete canonical root-cause principle and invocation metadata. Bind reproduction, instrumentation, code fixes and persistent-state changes to observed session capabilities and authorized scope. No comparison content or personal preferences added.",
+    "dependencies": [
+      "references/host-capabilities.md"
+    ],
+    "licenseProvenance": {
+      "license": "MIT",
+      "copyright": "Copyright (c) 2026 Lauren Tan",
+      "sourcePath": "LICENSE"
+    },
+    "adaptationStatus": "adapted-reviewed",
+    "verification": {
+      "chatgpt": {
+        "status": "not-run",
+        "evidence": []
+      },
+      "codex": {
+        "status": "not-run",
+        "evidence": []
+      }
+    }
+  }
+]

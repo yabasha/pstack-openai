@@ -1,0 +1,35 @@
+{
+  "name": "principle-fix-root-causes",
+  "kind": "principle",
+  "purpose": "Reproduce debugging symptoms, trace their root causes and fix the causes.",
+  "triggers": [
+    "When debugging",
+    "Failures after restart"
+  ],
+  "inputs": [
+    "Symptoms, reproducible failures and actual errors",
+    "Code and persistent config, caches, locks or serialized state",
+    "Available tools and permissions"
+  ],
+  "outputs": [
+    "A causal investigation and scoped root-cause fix",
+    "Other instances of the faulty pattern",
+    "Explicit unverified causes and fixes when observations or writes are unavailable"
+  ],
+  "ordinaryExample": "For a crash after restart, reproduce it and inspect stale serialized state before adding a nil-check guard.",
+  "dependencies": [
+    "references/host-capabilities.md"
+  ],
+  "capabilityLimits": [
+    "Unavailable reproduction or inspection leaves the cause unverified.",
+    "Code and persistent-state changes require authorized scope and host permissions.",
+    "Preserve disable-model-invocation metadata without assuming host enforcement.",
+    "Host behavior has not been tested."
+  ],
+  "sourcePaths": [
+    "skills/principle-fix-root-causes/SKILL.md"
+  ],
+  "caseIds": [
+    "symptom-repro"
+  ]
+}
