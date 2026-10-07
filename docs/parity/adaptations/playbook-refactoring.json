@@ -1,0 +1,47 @@
+[
+  {
+    "upstreamPath": "skills/poteto-mode/playbooks/refactoring.md",
+    "upstreamCommit": "df581122cde17e6e27686b5a448bde23e4ad4318",
+    "upstreamSha256": "50f4f7d3d301551f8b8a57c3303c99958c5ca630ae0d0051823b6987c0eb5b96",
+    "destinationPath": "skills/poteto-mode/playbooks/refactoring.md",
+    "disposition": "runtime",
+    "rationale": "Preserve all eight Refactoring steps, before-edit behavior pin, feature and bug separation, figure-it-out routing, target-shape exploration, subtraction, same-wave caller migration and API deletion, small green moves, real equivalence proof, reader-load revert gate, ordered commits and complete reply artifacts. Bind delegation, model selection, writes and delivery to reviewed observed session contracts. The canonical grok-4.7-xhigh-fast refactoring default is historical provenance, not host availability. Opening a PR is deferred to Task 21 and Task 24 integration. This caller directly invokes no script helper. Structural checks and isolated helper fixtures supply no host behavior evidence.",
+    "dependencies": [
+      "skills/poteto-mode/SKILL.md",
+      "references/host-capabilities.md",
+      "references/model-roles.md",
+      "references/orchestration-contract.md",
+      "references/agent-prompts/poteto-agent.md",
+      "skills/how/SKILL.md",
+      "skills/figure-it-out/SKILL.md",
+      "skills/architect/SKILL.md",
+      "skills/principle-model-the-domain/SKILL.md",
+      "skills/principle-foundational-thinking/SKILL.md",
+      "skills/principle-redesign-from-first-principles/SKILL.md",
+      "skills/principle-subtract-before-you-add/SKILL.md",
+      "skills/principle-laziness-protocol/SKILL.md",
+      "skills/principle-migrate-callers-then-delete-legacy-apis/SKILL.md",
+      "skills/principle-prove-it-works/SKILL.md",
+      "skills/principle-minimize-reader-load/SKILL.md",
+      "skills/principle-sequence-verifiable-units/SKILL.md",
+      "skills/poteto-mode/playbooks/feature.md",
+      "skills/poteto-mode/playbooks/opening-a-pr.md"
+    ],
+    "licenseProvenance": {
+      "license": "MIT",
+      "copyright": "Copyright (c) 2026 Lauren Tan",
+      "sourcePath": "LICENSE"
+    },
+    "adaptationStatus": "adapted-reviewed",
+    "verification": {
+      "chatgpt": {
+        "status": "not-run",
+        "evidence": []
+      },
+      "codex": {
+        "status": "not-run",
+        "evidence": []
+      }
+    }
+  }
+]
