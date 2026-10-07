@@ -1,0 +1,33 @@
+{
+  "name": "principle-experience-first",
+  "kind": "principle",
+  "purpose": "Choose user delight over implementation convenience, justify scope and polish the central workflow.",
+  "triggers": [
+    "Product, UX or feature-scope tradeoffs"
+  ],
+  "inputs": [
+    "Authorized task",
+    "User and central workflow context",
+    "Available design or implementation source"
+  ],
+  "outputs": [
+    "Concrete scope recommendation with reasons from the perspective of end users, API consumers and maintainers",
+    "Authorized prototypes or edits and actual checks when tools permit"
+  ],
+  "ordinaryExample": "Choose three polished import controls over ten rough controls because users can finish and recover from the core import workflow with clear feedback.",
+  "dependencies": [
+    "references/host-capabilities.md"
+  ],
+  "capabilityLimits": [
+    "Prototype writes, edits and execution require available tools and permissions.",
+    "Without writes or execution, provide a reduced recommendation and prototype plan; missing user context keeps designs provisional.",
+    "Preserve disable-model-invocation metadata without assuming host enforcement.",
+    "Host behavior has not been tested."
+  ],
+  "sourcePaths": [
+    "skills/principle-experience-first/SKILL.md"
+  ],
+  "caseIds": [
+    "user-tradeoff"
+  ]
+}
