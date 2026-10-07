@@ -3186,6 +3186,39 @@
           "read"
         ]
       }
+    },
+    {
+      "caseId": "dependency-readiness",
+      "caseFile": "docs/parity/cases/dependencies.json",
+      "sourcePaths": [
+        "skills/automate-me/SKILL.md",
+        "skills/reflect/SKILL.md",
+        "skills/poteto-mode/SKILL.md",
+        "skills/poteto-mode/playbooks/authoring-a-skill.md",
+        "skills/poteto-mode/playbooks/shipping.md",
+        "skills/poteto-mode/playbooks/orchestrate.md",
+        "skills/poteto-mode/scripts/bootstrap.ts",
+        "automations/benny/skills/reproduce-and-fix-issues/references/control-adapter.md"
+      ],
+      "requiredHosts": [
+        "chatgpt",
+        "codex"
+      ],
+      "structuralOnly": false,
+      "hostStatus": {
+        "chatgpt": "not-run",
+        "codex": "not-run"
+      },
+      "requiredObservations": {
+        "pass": [
+          "read",
+          "execution",
+          "inspect-result"
+        ],
+        "reduced-pass": [
+          "read"
+        ]
+      }
     }
   ],
   "structuralChecks": [
