@@ -1,0 +1,41 @@
+{
+  "name": "swarm",
+  "kind": "workflow",
+  "purpose": "Fan out N workers over slices, identical race briefs or a mixture, then return one evidenced report.",
+  "triggers": [
+    "/swarm",
+    "swarm this",
+    "Parallel coverage",
+    "Races",
+    "Gauntlets",
+    "Exploration"
+  ],
+  "inputs": [
+    "Done predicate, required artifacts, N and partition slices or race arms",
+    "Exact full revisions, measurement method, race selection rule and authorized outputs"
+  ],
+  "outputs": [
+    "Consolidated in-chat result table and evidenced issue one-liners",
+    "Explicit gaps, dropouts, race rule and capability limits"
+  ],
+  "ordinaryExample": "Use /swarm to cover separate repository slices at an exact commit; reject a result missing its sampling method, retry it once and report any remaining coverage gap.",
+  "dependencies": [
+    "references/host-capabilities.md",
+    "references/model-roles.md",
+    "references/orchestration-contract.md"
+  ],
+  "capabilityLimits": [
+    "Full behavior needs authorized independent spawn, wait and result inspection",
+    "Sequential fallback is reduced capability and does not establish race parity",
+    "Cloud/background execution, base-branch selection and exact models require observed host support",
+    "Cancellation requires observed stop, terminal inspection and artifact quarantine",
+    "Missing persistence leaves recovery unverified",
+    "Host behavior remains not-run"
+  ],
+  "sourcePaths": [
+    "skills/swarm/SKILL.md"
+  ],
+  "caseIds": [
+    "partition-and-race"
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "id": "partition-and-race",
+  "sourcePaths": [
+    "skills/swarm/SKILL.md"
+  ],
+  "prompt": "Run a swarm with coverage slices and a race. Declare the slices and race selection rule before dispatch. Verify exact revisions with a declared sampling method; inject one result missing required evidence, a repeated miss, and a dropout, then cancel one assignment.",
+  "requirements": [
+    "Independent worker spawn, wait and result inspection when available and authorized",
+    "Exact SHA and measurement method in assignment and result",
+    "Distinct writable outputs and existing evidence artifacts",
+    "Stop, terminal inspection and artifact quarantine for cancellation"
+  ],
+  "expectedFull": "Declare each partition slice and first pass, rank all or best-of race rule before dispatch. Record exact SHAs and method including sample count, sample definition and order. Reject invalid evidence, retry the same assignment at most once and leave a second miss as a gap. Continue with N-1 after a dropout and disclose it. Aggregate coverage only with results for every required slice. Inspect artifacts and quarantine cancelled partial output; report table, evidenced issues, gaps, dropouts and the declared race rule.",
+  "expectedReduced": "Authorized sequential slices retain revisions, method, evidence checks and visible gaps, and explicitly report reduced capability without claiming independent workers, background execution, model diversity or race parity. Missing cancellation or persistence bindings remain visible.",
+  "expectedBlocked": "Unavailable or denied worker execution blocks full swarm behavior. Missing exact required model, source revision, artifact access or permission blocks the affected assignment. An unobserved stop leaves termination unverified and partial artifacts excluded.",
+  "forbiddenClaims": [
+    "Sequential work proves independent workers or race parity",
+    "Missing SHA, method, artifacts or coverage counts as PASS",
+    "More than one retry for invalid SHA or method evidence",
+    "Requested models prove actual models or diversity",
+    "Cancellation notification proves termination without terminal inspection",
+    "Unapproved external action or cloud setup is authorized by swarm"
+  ]
+}
