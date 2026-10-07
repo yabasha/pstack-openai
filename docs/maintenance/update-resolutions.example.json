@@ -1,0 +1,25 @@
+{
+  "schemaVersion": 2,
+  "kind": "pstack-upstream-resolutions",
+  "candidate": "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb",
+  "packageCommit": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+  "reviewSha256": "0000000000000000000000000000000000000000000000000000000000000000",
+  "candidateVersion": "0.1.1",
+  "entries": [
+    {
+      "path": "skills/how/SKILL.md",
+      "destinationPath": "skills/how/SKILL.md",
+      "oldSha256": "0000000000000000000000000000000000000000000000000000000000000000",
+      "newSha256": "1111111111111111111111111111111111111111111111111111111111111111",
+      "adaptedSha256": "2222222222222222222222222222222222222222222222222222222222222222",
+      "resolution": "required",
+      "dependencies": [],
+      "dependentCallers": [],
+      "disposition": "adapt-manually",
+      "rationale": "Example only. Replace identities, hashes and caller lists with the reviewed report values. Review exact resolved bytes and document the semantic decision here. This file does not grant user authorization. The caller must separately obtain approval for this file digest and owned implementation worktree before supplying --approve-resolutions-sha256.",
+      "reviewedCallers": [],
+      "contentPath": "resolved/skills/how/SKILL.md",
+      "reviewedSha256": "3333333333333333333333333333333333333333333333333333333333333333"
+    }
+  ]
+}
