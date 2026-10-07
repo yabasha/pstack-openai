@@ -1,0 +1,39 @@
+[
+  {
+    "upstreamPath": "skills/poteto-mode/playbooks/shipping.md",
+    "upstreamCommit": "df581122cde17e6e27686b5a448bde23e4ad4318",
+    "upstreamSha256": "19f3f6803a7bbe9ff04f624b03e3b55f07ac0a05e991aa00d5fe51239b920b2a",
+    "destinationPath": "skills/poteto-mode/playbooks/shipping.md",
+    "disposition": "runtime",
+    "rationale": "Preserves contiguous independent verification, exact patch freshness, build-noise analysis and one-at-a-time authorized merges. Replaces host-specific workers and loop assumptions with observed bindings and bounded reductions; external control skills and helper setup remain explicit runtime limits. Structural checks establish no host support.",
+    "dependencies": [
+      "skills/poteto-mode/playbooks/babysit.md",
+      "skills/poteto-mode/playbooks/opening-a-pr.md",
+      "skills/poteto-mode/scripts/watch-pr/watch-pr",
+      "skills/poteto-mode/scripts/watch-pr/cli.ts",
+      "skills/poteto-mode/scripts/watch-pr/types.ts",
+      "skills/poteto-mode/scripts/bootstrap.ts",
+      "docs/testing/helper-setup.md",
+      "references/host-capabilities.md",
+      "references/model-roles.md",
+      "references/workflow-ownership.md",
+      "references/orchestration-contract.md"
+    ],
+    "licenseProvenance": {
+      "license": "MIT",
+      "copyright": "Copyright (c) 2026 Lauren Tan",
+      "sourcePath": "LICENSE"
+    },
+    "adaptationStatus": "adapted-reviewed",
+    "verification": {
+      "chatgpt": {
+        "status": "not-run",
+        "evidence": []
+      },
+      "codex": {
+        "status": "not-run",
+        "evidence": []
+      }
+    }
+  }
+]
