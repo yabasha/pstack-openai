@@ -1,0 +1,44 @@
+{
+  "name": "create-verification-skill",
+  "kind": "skill",
+  "purpose": "Generate a project-local verification skill grounded in the real app and prove one mapped user-facing feature.",
+  "triggers": [
+    "/create-verification-skill",
+    "make a control skill for this repo",
+    "project has no scripted way to prove UI/CLI/service behavior"
+  ],
+  "inputs": [
+    "Actual repository controls, startup instructions and existing harnesses",
+    "Observed host discovery and authorized tool capabilities"
+  ],
+  "outputs": [
+    "Project-local verify-<app> skill with YAML metadata",
+    "Feature-map index and top 3-5 identifiable features",
+    "Observed end-to-end proof with surviving evidence, or an explicit unrun draft"
+  ],
+  "ordinaryExample": "Inspect a notes app toolbar, keyboard shortcuts and CLI; generate its local verification skill and feature map, then exercise one feature and retain proof after cleanup.",
+  "dependencies": [
+    "references/host-capabilities.md",
+    "references/workflow-ownership.md",
+    "skills/maintain-verification-skill/SKILL.md",
+    "skills/create-verification-skill/references/feature-map-example/README.md",
+    "skills/create-verification-skill/references/feature-map-example/create-note.md",
+    "skills/create-verification-skill/references/feature-map-example/search.md"
+  ],
+  "capabilityLimits": [
+    "Project-local registration requires observed host discovery; otherwise registration remains unverified.",
+    "Execution or app-driving gaps leave verification not-run and the generated skill a draft.",
+    "Dependency installation, listeners and external writes require applicable authorization.",
+    "Maintenance leaf is a pending dependency for coordinator integration and Task 24 closure.",
+    "Both hosts remain not-run; structural checks supply no behavioral proof."
+  ],
+  "sourcePaths": [
+    "skills/create-verification-skill/SKILL.md",
+    "skills/create-verification-skill/references/feature-map-example/README.md",
+    "skills/create-verification-skill/references/feature-map-example/create-note.md",
+    "skills/create-verification-skill/references/feature-map-example/search.md"
+  ],
+  "caseIds": [
+    "real-app-contract"
+  ]
+}
