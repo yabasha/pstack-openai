@@ -15,6 +15,7 @@ The implementation is a candidate awaiting aggregate review, frozen-package disc
 - [Troubleshooting](docs/troubleshooting.md) and [host test matrix](docs/testing/host-matrix.md).
 - [Helper dependency setup](docs/testing/helper-setup.md) and [optional Benny readiness](docs/testing/benny-readiness.md).
 - [Upstream check, prepare, apply, validation and separate acceptance](docs/maintenance/upstream-updates.md).
+- [Baseline gate and personal customization boundary](docs/maintenance/customization-boundary.md).
 - [Conflict resolution format](docs/maintenance/update-resolutions.example.json) and [rollback](docs/maintenance/rollback.md).
 - [Package validator](tools/validate_package.py), [evidence validator](tools/validate_evidence.py), [update CLI](tools/sync_upstream.py), [release report CLI](tools/release_report.py) and [catalog renderer](tools/build_catalog.py).
 - [Acceptance cases](docs/parity/cases/documentation-walkthroughs.json), [inventory](docs/parity/inventory.json) and [case registry](docs/parity/case-registry.json).
