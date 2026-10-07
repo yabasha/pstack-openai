@@ -17,6 +17,15 @@
       "hostStatus": {
         "chatgpt": "not-run",
         "codex": "not-run"
+      },
+      "requiredObservations": {
+        "pass": [
+          "spawn",
+          "inspect-result"
+        ],
+        "reduced-pass": [
+          "read"
+        ]
       }
     },
     {
@@ -35,6 +44,15 @@
       "hostStatus": {
         "chatgpt": "not-run",
         "codex": "not-run"
+      },
+      "requiredObservations": {
+        "pass": [
+          "isolated-write",
+          "read"
+        ],
+        "reduced-pass": [
+          "read"
+        ]
       }
     },
     {
@@ -53,6 +71,17 @@
       "hostStatus": {
         "chatgpt": "not-run",
         "codex": "not-run"
+      },
+      "requiredObservations": {
+        "pass": [
+          "resolve-ownership",
+          "isolated-write",
+          "read"
+        ],
+        "reduced-pass": [
+          "isolated-write",
+          "read"
+        ]
       }
     },
     {
@@ -71,6 +100,17 @@
       "hostStatus": {
         "chatgpt": "not-run",
         "codex": "not-run"
+      },
+      "requiredObservations": {
+        "pass": [
+          "stop",
+          "inspect-terminal",
+          "quarantine-artifacts",
+          "inspect-result"
+        ],
+        "reduced-pass": [
+          "read"
+        ]
       }
     },
     {
@@ -89,6 +129,16 @@
       "hostStatus": {
         "chatgpt": "not-run",
         "codex": "not-run"
+      },
+      "requiredObservations": {
+        "pass": [
+          "inspect-prior-action",
+          "inspect-destination",
+          "safe-recovery"
+        ],
+        "reduced-pass": [
+          "read"
+        ]
       }
     },
     {
@@ -107,6 +157,16 @@
       "hostStatus": {
         "chatgpt": "not-run",
         "codex": "not-run"
+      },
+      "requiredObservations": {
+        "pass": [
+          "persistence",
+          "read"
+        ],
+        "reduced-pass": [
+          "isolated-write",
+          "read"
+        ]
       }
     }
   ],

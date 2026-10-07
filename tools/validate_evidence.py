@@ -19,6 +19,7 @@ def validate_evidence(record: dict, package_commit: str, root: Path) -> list[str
     if shape_errors:
         return shape_errors
     registry_path = root / 'docs/parity/case-registry.json'
+    entry = None
     if registry_path.is_file():
         try:
             entries = json.loads(registry_path.read_text())['entries']
@@ -27,8 +28,16 @@ def validate_evidence(record: dict, package_commit: str, root: Path) -> list[str
                 errors.append('caseId: no applicable behavioral registry entry for host')
             elif set(record['sourcePaths']) != set(entry['sourcePaths']):
                 errors.append('sourcePaths: must match registered case scope')
+            if entry is not None:
+                requirements = entry.get('requiredObservations')
+                if not isinstance(requirements, dict) or any(not isinstance(requirements.get(status), list) or not requirements[status] or any(not isinstance(x, str) or not x.strip() for x in requirements[status]) for status in ('pass', 'reduced-pass')):
+                    errors.append('case registry: pass and reduced-pass observations required')
+                    entry = None
         except (OSError, ValueError, KeyError, TypeError):
+            entry = None
             errors.append('case registry: malformed applicability artifact')
+    else:
+        errors.append('case registry: required file missing or not a file')
     required_strings = ('caseId', 'packageVersion', 'packageCommit', 'host', 'hostMode', 'date',
                         'input', 'observedOutput', 'status', 'execution')
     for key in required_strings:
@@ -83,17 +92,27 @@ def validate_evidence(record: dict, package_commit: str, root: Path) -> list[str
     if status in ('pass', 'reduced-pass'):
         if not record.get('artifacts'):
             errors.append('artifacts: passing observation requires artifacts')
-        if permissions.get('execution') != 'granted' or permissions.get('writes') != 'granted':
-            errors.append('permissions: passing execution requires granted execution and writes')
+        if permissions.get('execution') != 'granted':
+            errors.append('permissions: passing execution requires granted execution')
+        if entry is not None:
+            for operation in entry['requiredObservations'][status]:
+                if operation not in valid_operations:
+                    errors.append(f'{record["caseId"]}: missing required observation {operation}')
+        if status == 'reduced-pass' and any(permissions.get(k) in ('denied', 'unavailable') for k in ('writes', 'externalActions')) and not record['limits']:
+            errors.append('limits: reduced outcome must preserve denied or unavailable permissions')
         if execution in ('unavailable', 'not-run'):
             errors.append('execution: unavailable execution must be blocked or not-run')
-        if execution == 'workers' and 'spawn' not in valid_operations:
-            errors.append('execution: worker claim requires successful spawn operation')
+        if execution == 'workers':
+            for operation in ('spawn', 'inspect-result'):
+                if operation not in valid_operations:
+                    errors.append(f'execution: worker claim requires successful {operation} operation')
         if execution == 'sequential' and status != 'reduced-pass':
             errors.append('status: sequential execution is reduced-pass, never full pass')
-    if 'external-write' in valid_operations:
+    if set(valid_operations) & {'isolated-write', 'persistence'} and permissions.get('writes') != 'granted':
+        errors.append('permissions: performed writes require granted writes')
+    if set(valid_operations) & {'external-write', 'safe-recovery'} or (record['caseId'] == 'interrupted-external-write' and status == 'pass'):
         if permissions.get('externalActions') != 'granted' or not record.get('priorActionIdentities'):
-            errors.append('external-write: explicit permission and prior action identities required')
+            errors.append('external recovery: explicit permission and prior action identities required')
     return errors
 
 
