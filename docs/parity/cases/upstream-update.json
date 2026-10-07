@@ -1,0 +1,28 @@
+{
+  "id": "upstream-update",
+  "sourcePaths": [
+    "skills/how/SKILL.md",
+    "LICENSE"
+  ],
+  "prompt": "Rehearse an upstream update in isolated fixtures, then restore a previous immutable package and its matching inventory through the reviewed rollback procedure.",
+  "requirements": [
+    "Use injected source responses and owned linked Git worktrees under Herd. Execute no upstream program and contact no service.",
+    "Exercise a modified leaf, added skill, renamed reference, deleted support file and changed notice through check, prepare, reviewed exact-byte apply and failed validation.",
+    "Preserve the portable adaptation and newer destination-only customization, secrets and host settings during failed update, caught interruption and rollback.",
+    "Review exhaustive ownership for both immutable package trees, including port-only helpers, and approve the exact computed rollback plan digest separately.",
+    "Validate package references, inventory provenance and host evidence. Staging and rollback never establish acceptance.",
+    "Reject missing releases, incomplete ownership, stale bytes, unsafe paths and unknown or incompatible runtime-state migrations before replacement.",
+    "Passing evidence may name an immutable frozen ancestor only with explicit tested-package provenance proving identical operative bytes, source inventory identity and version; empty acceptance evidence blocks restoration.",
+    "Allow explicitly declared post-freeze host reports only at docs/testing/codex.md, docs/testing/chatgpt.md and docs/testing/release-checklist.md; neighboring helper/setup changes remain operative and block stale evidence."
+  ],
+  "expectedFull": "Structural fixture checks pass. The restored package digest and inventory match the immutable release snapshot. Both host behaviors remain unobserved.",
+  "expectedReduced": "A safe preview identifies unresolved ownership, validation or state compatibility. The existing package remains intact and no rollback or acceptance is claimed.",
+  "expectedBlocked": "Missing authorization, ownership, release data or compatible state blocks mutation and preserves current package and personal content.",
+  "forbiddenClaims": [
+    "A structural regression proves actual host behavior or release readiness.",
+    "An approval flag authenticates a human or grants authorization by itself.",
+    "Rollback reverts external automations, user data or installed host settings.",
+    "Caught interruption recovery proves power-loss or uncatchable process-termination recovery.",
+    "A draft patch or candidate staging receipt establishes acceptance."
+  ]
+}

@@ -620,9 +620,286 @@ def apply_review(review, resolutions, worktree, *, owner, approval, failure_hook
     return state
 
 
+# Ownership is exhaustive over both immutable trees. No directory prefix grants
+# ownership; excluded paths need an explicit preservation reason in this review.
+ROLLBACK_OWNERSHIP_SCHEMA = object_schema({'schemaVersion': {'const': 1},
+    'kind': {'const': 'pstack-rollback-ownership'}, 'release': REVISION_SCHEMA,
+    'packageCommit': REVISION_SCHEMA, 'runtimeState': {'const': 'no-runtime-state-migrations'},
+    'ownedPaths': {'type': 'array', 'items': PATH_SCHEMA},
+    'preservedPaths': {'type': 'object', 'additionalProperties': {'type': 'string', 'minLength': 1}}})
+
+
+def committed_tree(root, commit):
+    """Read immutable bytes and modes without checkout, filters, or execution."""
+    exact_revision(commit)
+    if git_read(root, 'rev-parse', commit + '^{commit}') != commit:
+        raise ValueError('Rollback requires an exact package commit')
+    entries = subprocess.run(['git', '-C', str(root), 'ls-tree', '-rz', commit],
+        check=True, capture_output=True).stdout
+    result = {}
+    for entry in entries.split(b'\0'):
+        if not entry:
+            continue
+        metadata, path = entry.split(b'\t', 1)
+        mode, kind, oid = metadata.decode().split()
+        path = path.decode('utf-8')
+        relative_path(path)
+        # Even preserved paths cannot hide submodules, links or special objects.
+        if kind != 'blob' or mode not in ('100644', '100755'):
+            raise ValueError('Rollback tree contains unsupported object: ' + path)
+        data = subprocess.run(['git', '-C', str(root), 'cat-file', 'blob', oid],
+            check=True, capture_output=True).stdout
+        result[path] = (data, int(mode, 8) & 0o777)
+    return result
+
+
+def package_digest(files):
+    return sha256(json_bytes({p: {'sha256': sha256(d), 'mode': m} for p, (d, m) in sorted(files.items())}))
+
+
+POST_FREEZE_REPORTS = frozenset({"docs/testing/codex.md", "docs/testing/chatgpt.md",
+    "docs/testing/release-checklist.md"})
+TESTED_PACKAGE_PATH = 'docs/parity/tested-package.json'
+TESTED_PACKAGE_SCHEMA = object_schema({'schemaVersion': {'const': 1},
+    'kind': {'const': 'pstack-tested-package'}, 'testedCommit': REVISION_SCHEMA,
+    'reportPaths': {'type': 'array', 'items': PATH_SCHEMA}})
+
+
+def rollback_tested_commit(root, release, files, inventory):
+    """Prove a frozen tested tree still supplies the release's operative bytes.
+
+    A later immutable release may add named evidence/reports and change inventory
+    verification. Everything else in both Git trees must remain byte/mode equal.
+    The provenance record is itself committed in the release, never caller input.
+    """
+    if TESTED_PACKAGE_PATH not in files:
+        raise ValueError('Passing rollback evidence requires immutable tested-package provenance')
+    provenance = json.loads(files[TESTED_PACKAGE_PATH][0])
+    validate_shape(provenance, TESTED_PACKAGE_SCHEMA)
+    tested = provenance['testedCommit']
+    subprocess.run(['git', '-C', str(root), 'merge-base', '--is-ancestor', tested, release], check=True, capture_output=True)
+    frozen, released = committed_tree(root, tested), committed_tree(root, release)
+    if released.get(TESTED_PACKAGE_PATH) != files[TESTED_PACKAGE_PATH]:
+        raise ValueError('Tested provenance differs from immutable release')
+    reports = provenance['reportPaths']
+    if len(reports) != len(set(reports)) or not set(reports).issubset(set(frozen) | set(released)):
+        raise ValueError('Report provenance has duplicate or missing paths')
+    rows = index_records(inventory)
+    operative = {r['destinationPath'] for r in rows.values()}
+    operative.update(rows.get(dep, {}).get('destinationPath', dep) for r in rows.values() for dep in r.get('dependencies', []))
+    for path in reports:
+        relative_path(path)
+        receipt_metadata = path == "docs/parity/upstream-manifests/accepted.json" and path in files
+        if not (receipt_metadata or path in POST_FREEZE_REPORTS or path.startswith(('docs/parity/evidence/', 'docs/releases/'))) or Path(path).suffix not in ('.json', '.md', '.txt') or any(path == p or path.startswith(p.rstrip('/') + '/') for p in operative):
+            raise ValueError('Report provenance cannot exempt operative content: ' + path)
+    inventory_path = 'docs/parity/inventory.json'
+    frozen_inventory = json.loads(frozen[inventory_path][0])
+    def identity(records):
+        return {p: {k:v for k,v in row.items() if k != 'verification'} for p,row in index_records(records).items()}
+    # Source pin, source hashes, mappings, dependencies and dispositions all stay
+    # fixed; only host observations may advance after the operative freeze.
+    if identity(frozen_inventory) != identity(inventory):
+        raise ValueError('Operative package differs in inventory identity')
+    exemptions = set(reports) | {TESTED_PACKAGE_PATH, inventory_path}
+    for path in (set(frozen) | set(released)) - exemptions:
+        if frozen.get(path) != released.get(path):
+            raise ValueError('Operative package differs from tested commit: ' + path)
+    if frozen[inventory_path][1] != released[inventory_path][1]:
+        raise ValueError('Operative package differs in inventory mode')
+    version = json.loads(released['plugin.json'][0])['version']
+    return tested, version
+
+
+def validate_rollback_snapshot(root, release, files):
+    """Validate the immutable package, inventory and provenance before replacement."""
+    import tempfile
+    from tools.validate_package import validate_package, schema_errors
+    inventory = json.loads(files['docs/parity/inventory.json'][0])
+    contract_root = Path(__file__).resolve().parents[1]
+    for path in ('docs/parity/inventory.schema.json', 'docs/parity/cases/schema.json'):
+        if json.loads(files[path][0]) != read_json(contract_root / path):
+            raise ValueError('Unknown rollback schema version: ' + path)
+    errors = schema_errors(inventory, read_json(contract_root / 'docs/parity/inventory.schema.json'), 'inventory')
+    if errors:
+        raise ValueError('Invalid release inventory: ' + '; '.join(errors))
+    rows = index_records(inventory)
+    if not rows:
+        raise ValueError('Release inventory is empty')
+    if "docs/parity/baseline-paths.txt" in files and files["docs/parity/baseline-paths.txt"][0].decode().splitlines() != sorted(rows):
+        raise ValueError("Release baseline path list differs from inventory")
+    source_commit = next(iter(rows.values()))['upstreamCommit']
+    manifest_path = f'docs/parity/upstream-manifests/{source_commit}.json'
+    manifest = json.loads(files[manifest_path][0])
+    sources = index_records(manifest['files'])
+    if manifest.get('schemaVersion') != 1 or manifest.get('commit') != source_commit or manifest.get('repository') != 'https://github.com/cursor/plugins' or manifest.get('subtree') != 'pstack/' or not re.fullmatch('[0-9a-f]{64}', manifest.get('archiveSha256', '')):
+        raise ValueError('Release manifest has incompatible provenance')
+    if set(rows) != set(sources) or any(any(rows[p][k] != sources[p][k] for k in ('upstreamCommit', 'upstreamSha256')) for p in rows):
+        raise ValueError('Release package inventory and source manifest differ')
+    receipt_path = 'docs/parity/upstream-manifests/accepted.json'
+    if receipt_path in files:
+        receipt = json.loads(files[receipt_path][0])
+        validate_shape(receipt, ACCEPTANCE_SCHEMA)
+        if not files[receipt["evidencePath"]][0]:
+            raise ValueError("Release acceptance evidence must be nonempty")
+        if receipt['commit'] != source_commit or receipt['manifestPath'] != manifest_path or receipt['manifestSha256'] != sha256(files[manifest_path][0]) or receipt['evidenceSha256'] != sha256(files[receipt['evidencePath']][0]):
+            raise ValueError('Release acceptance receipt differs from package snapshot')
+        subprocess.run(['git', '-C', str(root), 'merge-base', '--is-ancestor', receipt['packageCommit'], release], check=True, capture_output=True)
+        accepted = committed_tree(root, receipt['packageCommit'])
+        accepted_rows = index_records(json.loads(accepted["docs/parity/inventory.json"][0]))
+        if set(accepted_rows) != set(sources) or any(any(accepted_rows[p][k] != sources[p][k] for k in ("upstreamCommit", "upstreamSha256")) for p in sources):
+            raise ValueError("Release acceptance inventory lacks immutable provenance")
+        if accepted[manifest_path][0] != files[manifest_path][0]:
+            raise ValueError('Release acceptance manifest lacks immutable provenance')
+    elif source_commit != BASELINE:
+        raise ValueError('Rollback target is an unaccepted candidate')
+    # These temporary files are inert validation data, never executed.
+    with tempfile.TemporaryDirectory(prefix='pstack-rollback-validate-', dir=Path.home() / 'Herd') as directory:
+        snapshot = Path(directory)
+        for path, (data, mode) in files.items():
+            target = safe_path(snapshot, path)
+            target.parent.mkdir(parents=True, exist_ok=True)
+            target.write_bytes(data)
+        # Validate original provenance even when a later receipt is present.
+        canonical = json.loads(files[f"docs/parity/upstream-manifests/{BASELINE}.json"][0])
+        canonical_rows = index_records(canonical["files"])
+        if canonical.get("schemaVersion") != 1 or canonical.get("commit") != BASELINE or canonical.get("archiveSha256") != ARCHIVE_SHA256 or canonical.get("repository") != "https://github.com/cursor/plugins" or canonical.get("subtree") != "pstack/" or len(canonical_rows) != 164 or any(r["upstreamCommit"] != BASELINE for r in canonical_rows.values()):
+            raise ValueError("Original rollback provenance changed")
+        errors = validate_package(snapshot, inventory)
+        if errors:
+            raise ValueError('Release structural validation failed: ' + '; '.join(errors))
+        from tools.validate_evidence import validate_evidence
+        tested_identity = None
+        for row in inventory:
+            for host, verification in row["verification"].items():
+                if verification["status"] not in ("pass", "reduced-pass"):
+                    continue
+                if not verification["evidence"]:
+                    raise ValueError("Passing rollback inventory requires host evidence")
+                if tested_identity is None:
+                    tested_identity = rollback_tested_commit(root, release, files, inventory)
+                tested_commit, tested_version = tested_identity
+                for path in verification["evidence"]:
+                    records = read_json(safe_path(snapshot, path))
+                    records = records if isinstance(records, list) else [records]
+                    matching = [r for r in records if isinstance(r, dict) and r.get("host") == host and row["upstreamPath"] in r.get("sourcePaths", []) and r.get("status") == verification["status"]]
+                    if not matching or any(r.get("packageVersion") != tested_version or validate_evidence(r, tested_commit, snapshot) for r in matching):
+                        raise ValueError("Invalid rollback host evidence: " + path)
+
+
+def rollback_plan(worktree, ownership, *, owner):
+    """Read-only preview. Its digest is the distinct human-approval boundary."""
+    from tools.compare_upstream import adapted_path
+    validate_shape(ownership, ROLLBACK_OWNERSHIP_SCHEMA)
+    root = Path(worktree).absolute()
+    current, release = ownership['packageCommit'], ownership['release']
+    verify_owned_worktree(root, owner, current)
+    subprocess.run(['git', '-C', str(root), 'merge-base', '--is-ancestor', release, current], check=True, capture_output=True)
+    before, after = committed_tree(root, current), committed_tree(root, release)
+    owned = ownership['ownedPaths']
+    preserved = ownership['preservedPaths']
+    if not owned or owned != sorted(set(owned)) or set(owned) & set(preserved) or set(owned) | set(preserved) != set(before) | set(after) or any(not reason.strip() for reason in preserved.values()):
+        raise ValueError('Ownership must exhaustively classify both trees without duplicates or overlaps')
+    # Inventory, dependency paths and update metadata cannot be labelled personal.
+    required = {'plugin.json', 'UPSTREAM.md', 'NOTICE.md', 'docs/parity/inventory.json',
+        'docs/parity/inventory.schema.json', 'docs/parity/cases/schema.json'}
+    for tree in (before, after):
+        inventory = json.loads(tree['docs/parity/inventory.json'][0])
+        rows = index_records(inventory)
+        required.update(r['destinationPath'] for r in rows.values())
+        for row in rows.values():
+            for dependency in row.get('dependencies', []):
+                destination = rows.get(dependency, {}).get('destinationPath', dependency)
+                matches = {p for p in tree if p == destination or p.startswith(destination.rstrip('/') + '/')}
+                if not matches:
+                    raise ValueError('Missing declared package dependency: ' + destination)
+                required.update(matches)
+        if TESTED_PACKAGE_PATH in tree:
+            required.add(TESTED_PACKAGE_PATH)
+        if "docs/parity/baseline-paths.txt" in tree:
+            required.add("docs/parity/baseline-paths.txt")
+        required.update(p for p in tree if p.startswith('docs/parity/upstream-manifests/'))
+        if 'docs/parity/upstream-manifests/accepted.json' in tree:
+            receipt = json.loads(tree['docs/parity/upstream-manifests/accepted.json'][0])
+            required.add(receipt['evidencePath'])
+    if not required.issubset(owned):
+        raise ValueError('Ownership omits required package or inventory paths')
+    changes = []
+    for path in owned:
+        target = adapted_path(root, path)
+        if target.exists() and (not target.is_file() or target.stat().st_nlink != 1):
+            raise ValueError('Rollback target must be an unshared regular file: ' + path)
+        observed = (target.read_bytes(), target.stat().st_mode & 0o777) if target.exists() else None
+        if observed != before.get(path):
+            raise ValueError('Working bytes or modes differ from current commit: ' + path)
+        changes.append({'path': path,
+            'before': {'sha256': sha256(before[path][0]), 'mode': before[path][1]} if path in before else None,
+            'after': {'sha256': sha256(after[path][0]), 'mode': after[path][1]} if path in after else None})
+    old_package = {p: before[p] for p in owned if p in before}
+    release_package = {p: after[p] for p in owned if p in after}
+    validate_rollback_snapshot(root, release, release_package)
+    return dict(schemaVersion=1, kind='pstack-rollback-plan', packageCommit=current, release=release,
+        worktree=str(root), owner=owner, ownershipSha256=sha256(json_bytes(ownership)),
+        runtimeState=ownership['runtimeState'], currentPackageSha256=package_digest(old_package),
+        releasePackageSha256=package_digest(release_package), changes=changes,
+        preservedPaths=preserved, acceptanceReady=False, releasable=False)
+
+
+def rollback_release(release, worktree, *, ownership, owner, approval, failure_hook=None):
+    """Restore an approved immutable package snapshot; never reset Git or runtime state."""
+    from tools.compare_upstream import adapted_path
+    if release != ownership.get('release'):
+        raise ValueError('Requested release differs from reviewed ownership')
+    root = Path(worktree).absolute()
+    plan = rollback_plan(root, ownership, owner=owner)
+    if not approval or approval != sha256(json_bytes(plan)):
+        raise ValueError('Explicit approval must match the exact rollback plan SHA-256')
+    snapshot = committed_tree(root, release)
+    paths = ownership['ownedPaths']
+    backup = {p: ((root / p).read_bytes(), (root / p).stat().st_mode & 0o777) if (root / p).exists() else None for p in paths}
+    created_dirs = []
+    try:
+        # Inventory is last. Exceptions, including KeyboardInterrupt, restore all
+        # bytes and modes. This is not crash-safe storage or an atomic tree swap.
+        for path in [p for p in paths if p != 'docs/parity/inventory.json'] + ['docs/parity/inventory.json']:
+            if path == 'docs/parity/inventory.json' and failure_hook:
+                failure_hook('before-inventory')
+            target = adapted_path(root, path)
+            if path not in snapshot:
+                if target.exists():
+                    target.unlink()
+                continue
+            missing, parent = [], target.parent
+            while not parent.exists():
+                missing.append(parent)
+                parent = parent.parent
+            for directory in reversed(missing):
+                directory.mkdir()
+                created_dirs.append(directory)
+            data, mode = snapshot[path]
+            target.write_bytes(data)
+            target.chmod(mode)
+        actual = {p: ((root / p).read_bytes(), (root / p).stat().st_mode & 0o777) for p in paths if (root / p).exists()}
+        actual_hash = package_digest(actual)
+        if actual_hash != plan['releasePackageSha256']:
+            raise ValueError('Restored package digest mismatch')
+    except BaseException:
+        for path, value in backup.items():
+            target = adapted_path(root, path)
+            if value is None:
+                if target.exists():
+                    target.unlink()
+            else:
+                target.write_bytes(value[0])
+                target.chmod(value[1])
+        for directory in reversed(created_dirs):
+            directory.rmdir()
+        raise
+    return {**plan, 'actualPackageSha256': actual_hash, 'approvalSha256': approval}
+
+
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument("command", choices=("check", "prepare", "apply"))
+    parser.add_argument("command", choices=("check", "prepare", "apply", "rollback"))
     parser.add_argument("--candidate")
     parser.add_argument("--root", type=Path, default=Path.cwd())
     parser.add_argument("--review", type=Path)
@@ -630,9 +907,22 @@ def main():
     parser.add_argument("--worktree", type=Path)
     parser.add_argument("--owner", help="Task owner from the linked worktree Git-admin ownership marker")
     parser.add_argument("--approve-resolutions-sha256", help="Supply only after explicit user approval of this exact resolution digest and worktree")
+    parser.add_argument("--release", help="Exact previous package commit")
+    parser.add_argument("--ownership", type=Path, help="Reviewed exhaustive rollback ownership JSON")
+    parser.add_argument("--approve-plan-sha256", help="Explicit approval of preview plan digest; omit for read-only preview")
     args = parser.parse_args()
     try:
-        if args.command == "apply":
+        if args.command == "rollback":
+            if not all((args.release, args.worktree, args.owner, args.ownership)):
+                raise ValueError("Rollback requires --release, --worktree, --owner and --ownership")
+            ownership = read_json(safe_path(args.ownership.absolute().parent, args.ownership.name))
+            if args.release != ownership.get("release"):
+                raise ValueError("Release differs from ownership document")
+            plan = rollback_plan(args.worktree, ownership, owner=args.owner)
+            if args.approve_plan_sha256:
+                plan = rollback_release(args.release, args.worktree, ownership=ownership, owner=args.owner, approval=args.approve_plan_sha256)
+            print(json.dumps({"plan": plan, "planSha256": sha256(json_bytes(plan))}, indent=2))
+        elif args.command == "apply":
             if not all((args.review, args.resolutions, args.worktree, args.owner, args.approve_resolutions_sha256)):
                 raise ValueError("Apply requires --review, --resolutions, --worktree, --owner and --approve-resolutions-sha256")
             apply_review(args.review, args.resolutions, args.worktree, owner=args.owner, approval=args.approve_resolutions_sha256)
