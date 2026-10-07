@@ -1,0 +1,70 @@
+{
+  "name": "poteto-mode",
+  "kind": "mode",
+  "purpose": "Apply poteto's deliberate worker routing, principle-grounded decisions, concise detailed prose, simple code and verified playbooks.",
+  "triggers": [
+    "poteto",
+    "/poteto-mode",
+    "Requests to work in this style",
+    "Matched playbook or rigor needed on a new task; exclude casual turns and opt-out"
+  ],
+  "inputs": [
+    "Authorized task and active workflow owner",
+    "Full mode, chosen playbook and applied principle leaves",
+    "Observed tools, permissions, role configuration and exact assignment revision"
+  ],
+  "outputs": [
+    "Selected playbook todos with explicit skipped steps",
+    "Four-item throughput checkpoint, reviewed artifacts and evidence",
+    "Decision explanation naming only principles read in this session",
+    "Explicit reduced or blocked capabilities and open decisions"
+  ],
+  "ordinaryExample": "For a scoped feature, read the full mode and Feature playbook, name its data shape, write the checkpoint, assign an authorized fresh worker and inspect its resulting diff before reporting evidence.",
+  "dependencies": [
+    "skills/poteto-mode/playbooks/prototype.md",
+    "skills/poteto-mode/playbooks/babysit.md",
+    "skills/poteto-mode/playbooks/shipping.md",
+    "skills/poteto-mode/playbooks/investigation.md",
+    "skills/poteto-mode/playbooks/bug-fix.md",
+    "skills/poteto-mode/playbooks/perf-issue.md",
+    "skills/poteto-mode/playbooks/hillclimb.md",
+    "skills/poteto-mode/playbooks/runtime-forensics.md",
+    "skills/poteto-mode/playbooks/trace-forensics.md",
+    "skills/poteto-mode/playbooks/feature.md",
+    "skills/poteto-mode/playbooks/refactoring.md",
+    "skills/poteto-mode/playbooks/visual-parity.md",
+    "skills/poteto-mode/playbooks/authoring-a-skill.md",
+    "skills/poteto-mode/playbooks/eval.md",
+    "skills/poteto-mode/playbooks/autonomous-run.md",
+    "skills/poteto-mode/playbooks/orchestrate.md",
+    "skills/poteto-mode/playbooks/autopilot-full.md",
+    "skills/poteto-mode/playbooks/autopilot-stack.md",
+    "skills/poteto-mode/playbooks/session-pickup.md",
+    "skills/poteto-mode/playbooks/pause-safely.md",
+    "skills/poteto-mode/playbooks/multi-phase-plan.md",
+    "skills/poteto-mode/playbooks/worktree-cleanup.md",
+    "skills/poteto-mode/playbooks/opening-a-pr.md",
+    "skills/poteto-mode/references/bugbot-triage.md",
+    "skills/show-me-your-work/SKILL.md",
+    "skills/show-me-your-work/scripts/log.sh",
+    "references/host-capabilities.md",
+    "references/model-roles.md",
+    "references/orchestration-contract.md",
+    "references/workflow-ownership.md",
+    "references/agent-prompts/poteto-agent.md"
+  ],
+  "capabilityLimits": [
+    "Companion deslop, no-comments, create-skill and control tools require discovered support; missing gates remain visible.",
+    "Fresh workers and model diversity require observed capabilities; sequential fallback is reduced capability.",
+    "Metadata does not register host modes or agents.",
+    "Pending playbooks and helpers require final integration review after their owning tasks.",
+    "No autonomy grant overrides authorization or permissions.",
+    "Both hosts remain not-run."
+  ],
+  "sourcePaths": [
+    "skills/poteto-mode/SKILL.md"
+  ],
+  "caseIds": [
+    "fresh-worker-mode"
+  ]
+}

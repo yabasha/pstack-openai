@@ -1,0 +1,59 @@
+[
+  {
+    "upstreamPath": "skills/poteto-mode/SKILL.md",
+    "upstreamCommit": "df581122cde17e6e27686b5a448bde23e4ad4318",
+    "upstreamSha256": "31cd02290360ce63564ef22b74d69fc6d90e62181d05a644cbed8f6c47cc9412",
+    "destinationPath": "skills/poteto-mode/SKILL.md",
+    "disposition": "runtime",
+    "rationale": "Preserve canonical metadata, aliases, complete principle index and triggers, full-mode reading, playbook routing, fresh-worker rules, coordinator ownership, reply and comment contracts. Replace source-host APIs and model defaults with observed capability bindings, preserve four throughput checkpoint dimensions, constrain autonomy and external companions to explicit authorization, and disclose pending integration dependencies. Core review does not establish integrated playbook or helper behavior.",
+    "dependencies": [
+      "skills/poteto-mode/playbooks/prototype.md",
+      "skills/poteto-mode/playbooks/babysit.md",
+      "skills/poteto-mode/playbooks/shipping.md",
+      "skills/poteto-mode/playbooks/investigation.md",
+      "skills/poteto-mode/playbooks/bug-fix.md",
+      "skills/poteto-mode/playbooks/perf-issue.md",
+      "skills/poteto-mode/playbooks/hillclimb.md",
+      "skills/poteto-mode/playbooks/runtime-forensics.md",
+      "skills/poteto-mode/playbooks/trace-forensics.md",
+      "skills/poteto-mode/playbooks/feature.md",
+      "skills/poteto-mode/playbooks/refactoring.md",
+      "skills/poteto-mode/playbooks/visual-parity.md",
+      "skills/poteto-mode/playbooks/authoring-a-skill.md",
+      "skills/poteto-mode/playbooks/eval.md",
+      "skills/poteto-mode/playbooks/autonomous-run.md",
+      "skills/poteto-mode/playbooks/orchestrate.md",
+      "skills/poteto-mode/playbooks/autopilot-full.md",
+      "skills/poteto-mode/playbooks/autopilot-stack.md",
+      "skills/poteto-mode/playbooks/session-pickup.md",
+      "skills/poteto-mode/playbooks/pause-safely.md",
+      "skills/poteto-mode/playbooks/multi-phase-plan.md",
+      "skills/poteto-mode/playbooks/worktree-cleanup.md",
+      "skills/poteto-mode/playbooks/opening-a-pr.md",
+      "skills/poteto-mode/references/bugbot-triage.md",
+      "skills/show-me-your-work/SKILL.md",
+      "skills/show-me-your-work/scripts/log.sh",
+      "references/host-capabilities.md",
+      "references/model-roles.md",
+      "references/orchestration-contract.md",
+      "references/workflow-ownership.md",
+      "references/agent-prompts/poteto-agent.md"
+    ],
+    "licenseProvenance": {
+      "license": "MIT",
+      "copyright": "Copyright (c) 2026 Lauren Tan",
+      "sourcePath": "LICENSE"
+    },
+    "adaptationStatus": "adapted-reviewed",
+    "verification": {
+      "chatgpt": {
+        "status": "not-run",
+        "evidence": []
+      },
+      "codex": {
+        "status": "not-run",
+        "evidence": []
+      }
+    }
+  }
+]
