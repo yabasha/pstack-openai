@@ -1,0 +1,22 @@
+{
+  "id": "migration-units",
+  "sourcePaths": [
+    "skills/principle-sequence-verifiable-units/SKILL.md"
+  ],
+  "prompt": "Plan a multi-step schema migration and its commit delivery. Give each ordered unit a specific check, show when the next unit can begin, and handle an unavailable test runner or unauthorized Git operation.",
+  "requirements": [
+    "Each ordered unit ends in a specific check.",
+    "Start from a known-good baseline and verify one change before the next.",
+    "Order independently landable commits and PRs so a reviewer can replay the argument.",
+    "Preserve authorization and observed execution limits."
+  ],
+  "expectedFull": "Inspect a clean trunk baseline and rebase when authorized. Every ordered migration unit identifies its known-good start, one change and concrete check; advance only on green. Delivery uses a failing test before its fix, or another justified order such as subtraction before reshape, baseline before treatment or scaffold before feature. Every commit lands on its own. Use the prove-it-works and build-the-lever principles to keep checks real and cheap.",
+  "expectedReduced": "When execution or Git writes are unavailable or unauthorized, provide a reduced ordered migration and delivery plan with a concrete check per unit. State which checks and Git operations were not performed; do not treat an unrun check as green.",
+  "expectedBlocked": "Block advancement past a failed or unavailable required check and identify the missing capability or permission. Preserve the current unit for diagnosis.",
+  "forbiddenClaims": [
+    "An unrun or failed check is green.",
+    "A batch check replaces verification of each unit.",
+    "A delivery plan proves independently landable commits or actual host execution.",
+    "The principle authorizes rebase, commit or PR writes without permission."
+  ]
+}
