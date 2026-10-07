@@ -27,7 +27,7 @@
     "references/orchestration-contract.md"
   ],
   "capabilityLimits": [
-    "Task 16 logging helper is a deferred runtime dependency until reviewed.",
+    "The logging helper is present and reviewed; authorized execution, local persistence and readback still require observed host capabilities.",
     "History, durable write and readback, and independent different-family review require observed authorized bindings.",
     "Sequential self-review does not satisfy cross-model review.",
     "No secrets or unsupported completion claims; commits and external actions need explicit authorization.",

@@ -183,7 +183,7 @@ Destination: [skills/poteto-mode/SKILL.md](../../skills/poteto-mode/SKILL.md).
 
 Upstream commit: `df581122cde17e6e27686b5a448bde23e4ad4318`. SHA-256: `31cd02290360ce63564ef22b74d69fc6d90e62181d05a644cbed8f6c47cc9412`.
 
-Disposition: `runtime`. Aggregate adaptation status: `pending`.
+Disposition: `runtime`. Aggregate adaptation status: `adapted-reviewed`.
 
 - chatgpt: `not-run`. Tested release evidence: none recorded.
 - codex: `not-run`. Tested release evidence: none recorded.

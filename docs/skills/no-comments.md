@@ -92,7 +92,7 @@ Destination: [skills/no-comments/SKILL.md](../../skills/no-comments/SKILL.md).
 
 Upstream commit: `df581122cde17e6e27686b5a448bde23e4ad4318`. SHA-256: `5c5b0882297d704c3a9720c52b7a793c68b013eaf717989f0945624efdfe2b05`.
 
-Disposition: `runtime`. Aggregate adaptation status: `pending`.
+Disposition: `runtime`. Aggregate adaptation status: `adapted-reviewed`.
 
 - chatgpt: `not-run`. Tested release evidence: none recorded.
 - codex: `not-run`. Tested release evidence: none recorded.
@@ -103,7 +103,7 @@ Destination: [references/agent-prompts/comment-sicko.md](../../references/agent-
 
 Upstream commit: `df581122cde17e6e27686b5a448bde23e4ad4318`. SHA-256: `c0fd0383008da45fc78cfac17b9007d62c42f87ad1c8d5c2fb658b1fd01f7c82`.
 
-Disposition: `relocated`. Aggregate adaptation status: `pending`.
+Disposition: `relocated`. Aggregate adaptation status: `adapted-reviewed`.
 
 - chatgpt: `not-run`. Tested release evidence: none recorded.
 - codex: `not-run`. Tested release evidence: none recorded.

@@ -83,7 +83,7 @@ Destination: [skills/principle-type-system-discipline/SKILL.md](../../skills/pri
 
 Upstream commit: `df581122cde17e6e27686b5a448bde23e4ad4318`. SHA-256: `c83da8031ffb4c86410030d3e261f659598fca2b7d8158fd9dc269d70a3a025e`.
 
-Disposition: `runtime`. Aggregate adaptation status: `pending`.
+Disposition: `runtime`. Aggregate adaptation status: `adapted-reviewed`.
 
 - chatgpt: `not-run`. Tested release evidence: none recorded.
 - codex: `not-run`. Tested release evidence: none recorded.

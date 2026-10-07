@@ -84,7 +84,7 @@ Destination: [skills/principle-minimize-reader-load/SKILL.md](../../skills/princ
 
 Upstream commit: `df581122cde17e6e27686b5a448bde23e4ad4318`. SHA-256: `42551c5dc74cd578163c148da552db3ff67d29b78600ef216bfd311fb828fe69`.
 
-Disposition: `runtime`. Aggregate adaptation status: `pending`.
+Disposition: `runtime`. Aggregate adaptation status: `adapted-reviewed`.
 
 - chatgpt: `not-run`. Tested release evidence: none recorded.
 - codex: `not-run`. Tested release evidence: none recorded.

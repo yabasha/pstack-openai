@@ -84,7 +84,7 @@ Forbidden claims:
 - create-skill and structured questions require observed exposed companions or a declared reduced fallback.
 - Sequential mining does not prove independent workers. Missing scoped history limits evidence.
 - Scheduling and remote creation are outside the flow. Commit, push and PR each need separate authorization.
-- Both hosts remain not-run. Pending authoring playbook requires Task 24 closure.
+- The authoring playbook is present and reviewed. Both hosts remain not-run; external authoring companions still require discovery.
 
 ## Source proof and release evidence
 
@@ -96,7 +96,7 @@ Destination: [skills/automate-me/SKILL.md](../../skills/automate-me/SKILL.md).
 
 Upstream commit: `df581122cde17e6e27686b5a448bde23e4ad4318`. SHA-256: `1510979b0b71b54284427a19c09918f8b1fdfc168f9b7f9e30098793a5ec88ef`.
 
-Disposition: `runtime`. Aggregate adaptation status: `pending`.
+Disposition: `runtime`. Aggregate adaptation status: `adapted-reviewed`.
 
 - chatgpt: `not-run`. Tested release evidence: none recorded.
 - codex: `not-run`. Tested release evidence: none recorded.

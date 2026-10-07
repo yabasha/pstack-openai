@@ -9,7 +9,7 @@
     "No narrower playbook applies"
   ],
   "inputs": [
-    "Task scope and accessible grounding evidence",
+    "task scope and accessible grounding evidence",
     "Falsifiable definition of done, authorized scope and available capabilities"
   ],
   "outputs": [

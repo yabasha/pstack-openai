@@ -84,7 +84,7 @@ Destination: [skills/principle-attack-the-premise/SKILL.md](../../skills/princip
 
 Upstream commit: `df581122cde17e6e27686b5a448bde23e4ad4318`. SHA-256: `c87bd7536f772f8a403ad8155535ee17a1bbec9a353156693eb3bb1520c87ae3`.
 
-Disposition: `runtime`. Aggregate adaptation status: `pending`.
+Disposition: `runtime`. Aggregate adaptation status: `adapted-reviewed`.
 
 - chatgpt: `not-run`. Tested release evidence: none recorded.
 - codex: `not-run`. Tested release evidence: none recorded.

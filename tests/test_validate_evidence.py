@@ -26,7 +26,8 @@ class EvidenceTests(unittest.TestCase):
             input='fixture', observedOutput='fixture observation', artifacts=['result.txt'],
             status='pass', limits=[], execution='workers', models=dict(requested='unknown', actual='unknown'),
             priorActionIdentities=[])
-        self.record['sourcePaths'] = registry['entries'][0]['sourcePaths']
+        self.record['sourcePaths'] = next(entry['sourcePaths'] for entry in registry['entries']
+                                          if entry['caseId'] == 'absent-workers')
         self.record['successfulOperations'] += [dict(operation=x,tool='observed.spawn',evidence='result.txt') for x in ('inspect-result','read')]
 
     def check(self):
@@ -112,6 +113,10 @@ class EvidenceTests(unittest.TestCase):
         registry = json.loads((self.root / 'docs/parity/case-registry.json').read_text())
         for entry in registry['entries']:
             self.record['caseId'] = entry['caseId']
+            self.record['sourcePaths'] = entry['sourcePaths']
+            if entry['structuralOnly']:
+                self.assertTrue(self.check(), entry['caseId'])
+                continue
             self.record['permissions']['externalActions'] = 'granted'
             self.record['priorActionIdentities'] = ['action-1']
             operations = set(entry['requiredObservations']['pass']) | {'spawn','inspect-result'}

@@ -79,7 +79,7 @@ Destination: [skills/principle-outcome-oriented-execution/SKILL.md](../../skills
 
 Upstream commit: `df581122cde17e6e27686b5a448bde23e4ad4318`. SHA-256: `10eb91633aa570355ba4bb37088fcade2b22e498df7a58edc749e65bc5a78e2d`.
 
-Disposition: `runtime`. Aggregate adaptation status: `pending`.
+Disposition: `runtime`. Aggregate adaptation status: `adapted-reviewed`.
 
 - chatgpt: `not-run`. Tested release evidence: none recorded.
 - codex: `not-run`. Tested release evidence: none recorded.

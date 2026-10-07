@@ -82,7 +82,7 @@ Destination: [skills/principle-subtract-before-you-add/SKILL.md](../../skills/pr
 
 Upstream commit: `df581122cde17e6e27686b5a448bde23e4ad4318`. SHA-256: `a983a50e732c1ed315eba7aaf47a61329e31c4794eb1ab9d25d9945265b31e03`.
 
-Disposition: `runtime`. Aggregate adaptation status: `pending`.
+Disposition: `runtime`. Aggregate adaptation status: `adapted-reviewed`.
 
 - chatgpt: `not-run`. Tested release evidence: none recorded.
 - codex: `not-run`. Tested release evidence: none recorded.

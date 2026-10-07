@@ -83,7 +83,7 @@ Destination: [skills/principle-exhaust-the-design-space/SKILL.md](../../skills/p
 
 Upstream commit: `df581122cde17e6e27686b5a448bde23e4ad4318`. SHA-256: `8583310d7297b7823d75494faa57b003564d436807febecdecbd8321abe5cf6e`.
 
-Disposition: `runtime`. Aggregate adaptation status: `pending`.
+Disposition: `runtime`. Aggregate adaptation status: `adapted-reviewed`.
 
 - chatgpt: `not-run`. Tested release evidence: none recorded.
 - codex: `not-run`. Tested release evidence: none recorded.

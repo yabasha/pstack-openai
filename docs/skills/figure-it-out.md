@@ -19,7 +19,7 @@ Design and execute an auditable playbook when no narrower workflow fits, with ta
 
 ## Required input
 
-- Task scope and accessible grounding evidence
+- task scope and accessible grounding evidence
 - Falsifiable definition of done, authorized scope and available capabilities
 
 ## Output contract
@@ -100,7 +100,7 @@ Destination: [skills/figure-it-out/SKILL.md](../../skills/figure-it-out/SKILL.md
 
 Upstream commit: `df581122cde17e6e27686b5a448bde23e4ad4318`. SHA-256: `0eb9485f0e7d84fee56b5d0f0af0faf4635e3ca87c8cba3970c01293b76ecc19`.
 
-Disposition: `runtime`. Aggregate adaptation status: `pending`.
+Disposition: `runtime`. Aggregate adaptation status: `adapted-reviewed`.
 
 - chatgpt: `not-run`. Tested release evidence: none recorded.
 - codex: `not-run`. Tested release evidence: none recorded.

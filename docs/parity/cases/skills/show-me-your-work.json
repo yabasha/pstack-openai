@@ -9,7 +9,7 @@
   "requirements": [
     "Authorized local persistence and readback",
     "Accessible history for this run",
-    "Task 16 logging helper or equally safe TSV append",
+    "task 16 logging helper or equally safe TSV append",
     "Authorized independent reviewer with observed different model family for full review"
   ],
   "expectedFull": "Save and read back one canonical six-column TSV with sanitized single-line cells and formula-prefix protection. Preserve run start boundaries and append-only corrections. Resolve evidence, audit this run against its transcript, and obtain independent different-family review. End every trail-producing reply with Attention, observed reviewer model and row-specific flags or No flags. Exclude secrets and unobserved results.",

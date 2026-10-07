@@ -6,7 +6,7 @@
     "After completing a task, before declaring done"
   ],
   "inputs": [
-    "Task outputs and the real feature, process or stored value",
+    "task outputs and the real feature, process or stored value",
     "Available inspection and execution tools and permissions"
   ],
   "outputs": [

@@ -87,7 +87,7 @@ Destination: [skills/principle-guard-the-context-window/SKILL.md](../../skills/p
 
 Upstream commit: `df581122cde17e6e27686b5a448bde23e4ad4318`. SHA-256: `d2cef147862576e3d709b7afc149d85196245e8338b9c7eef337c95fba412b3e`.
 
-Disposition: `runtime`. Aggregate adaptation status: `pending`.
+Disposition: `runtime`. Aggregate adaptation status: `adapted-reviewed`.
 
 - chatgpt: `not-run`. Tested release evidence: none recorded.
 - codex: `not-run`. Tested release evidence: none recorded.

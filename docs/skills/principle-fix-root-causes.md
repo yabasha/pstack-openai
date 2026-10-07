@@ -87,7 +87,7 @@ Destination: [skills/principle-fix-root-causes/SKILL.md](../../skills/principle-
 
 Upstream commit: `df581122cde17e6e27686b5a448bde23e4ad4318`. SHA-256: `ba4cd38da1dcc8fe5432feb64457cba95594736a9b21b2ebf8f8c52aee068707`.
 
-Disposition: `runtime`. Aggregate adaptation status: `pending`.
+Disposition: `runtime`. Aggregate adaptation status: `adapted-reviewed`.
 
 - chatgpt: `not-run`. Tested release evidence: none recorded.
 - codex: `not-run`. Tested release evidence: none recorded.

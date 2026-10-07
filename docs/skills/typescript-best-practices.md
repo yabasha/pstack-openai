@@ -86,7 +86,7 @@ Destination: [skills/typescript-best-practices/SKILL.md](../../skills/typescript
 
 Upstream commit: `df581122cde17e6e27686b5a448bde23e4ad4318`. SHA-256: `28f9e61710e205f6f3c5476f333483cff0e988f6a5b639e2faad536344b40c5e`.
 
-Disposition: `runtime`. Aggregate adaptation status: `pending`.
+Disposition: `runtime`. Aggregate adaptation status: `adapted-reviewed`.
 
 - chatgpt: `not-run`. Tested release evidence: none recorded.
 - codex: `not-run`. Tested release evidence: none recorded.
@@ -97,7 +97,7 @@ Destination: [skills/typescript-best-practices/references/patterns.md](../../ski
 
 Upstream commit: `df581122cde17e6e27686b5a448bde23e4ad4318`. SHA-256: `faa1362055374452efccac1b629677c61acfb0bcc6c4e3311836b5715638ee18`.
 
-Disposition: `runtime`. Aggregate adaptation status: `pending`.
+Disposition: `runtime`. Aggregate adaptation status: `unchanged-reviewed`.
 
 - chatgpt: `not-run`. Tested release evidence: none recorded.
 - codex: `not-run`. Tested release evidence: none recorded.

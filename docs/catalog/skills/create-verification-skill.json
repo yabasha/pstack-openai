@@ -29,7 +29,7 @@
     "Project-local registration requires observed host discovery; otherwise registration remains unverified.",
     "Execution or app-driving gaps leave verification not-run and the generated skill a draft.",
     "Dependency installation, listeners and external writes require applicable authorization.",
-    "Maintenance leaf is a pending dependency for coordinator integration and Task 24 closure.",
+    "The maintenance leaf is present and reviewed; its live app verification still requires observed capabilities.",
     "Both hosts remain not-run; structural checks supply no behavioral proof."
   ],
   "sourcePaths": [

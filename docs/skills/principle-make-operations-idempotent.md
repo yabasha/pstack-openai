@@ -79,7 +79,7 @@ Destination: [skills/principle-make-operations-idempotent/SKILL.md](../../skills
 
 Upstream commit: `df581122cde17e6e27686b5a448bde23e4ad4318`. SHA-256: `540738217c3da7bf513b9886924ad6a2bc77e58be867f5bd2e1831c74bf2ce70`.
 
-Disposition: `runtime`. Aggregate adaptation status: `pending`.
+Disposition: `runtime`. Aggregate adaptation status: `adapted-reviewed`.
 
 - chatgpt: `not-run`. Tested release evidence: none recorded.
 - codex: `not-run`. Tested release evidence: none recorded.

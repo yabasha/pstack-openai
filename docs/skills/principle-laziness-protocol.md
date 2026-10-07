@@ -83,7 +83,7 @@ Destination: [skills/principle-laziness-protocol/SKILL.md](../../skills/principl
 
 Upstream commit: `df581122cde17e6e27686b5a448bde23e4ad4318`. SHA-256: `9006579e9e3f33955d17569733db688ae65f22577dc3b21803d219a5a8445aff`.
 
-Disposition: `runtime`. Aggregate adaptation status: `pending`.
+Disposition: `runtime`. Aggregate adaptation status: `adapted-reviewed`.
 
 - chatgpt: `not-run`. Tested release evidence: none recorded.
 - codex: `not-run`. Tested release evidence: none recorded.

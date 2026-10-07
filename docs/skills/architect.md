@@ -111,7 +111,7 @@ Destination: [skills/architect/SKILL.md](../../skills/architect/SKILL.md).
 
 Upstream commit: `df581122cde17e6e27686b5a448bde23e4ad4318`. SHA-256: `922238947195f2fb825e90688bb6cfa520b81a35a7bee12223c73a6cf96ae64b`.
 
-Disposition: `runtime`. Aggregate adaptation status: `pending`.
+Disposition: `runtime`. Aggregate adaptation status: `adapted-reviewed`.
 
 - chatgpt: `not-run`. Tested release evidence: none recorded.
 - codex: `not-run`. Tested release evidence: none recorded.
@@ -122,7 +122,7 @@ Destination: [skills/architect/references/design-red-flags.md](../../skills/arch
 
 Upstream commit: `df581122cde17e6e27686b5a448bde23e4ad4318`. SHA-256: `d0e639e4cc588ec865f930d3a4111faad60987ae36925917e319d7ceca7c69ce`.
 
-Disposition: `runtime`. Aggregate adaptation status: `pending`.
+Disposition: `runtime`. Aggregate adaptation status: `unchanged-reviewed`.
 
 - chatgpt: `not-run`. Tested release evidence: none recorded.
 - codex: `not-run`. Tested release evidence: none recorded.
@@ -133,7 +133,7 @@ Destination: [skills/architect/references/rationale-template.md](../../skills/ar
 
 Upstream commit: `df581122cde17e6e27686b5a448bde23e4ad4318`. SHA-256: `0cedfccdc7b47fc881febd5a8293eecbc542c20f8df825639904a8102d2eb5d3`.
 
-Disposition: `runtime`. Aggregate adaptation status: `pending`.
+Disposition: `runtime`. Aggregate adaptation status: `unchanged-reviewed`.
 
 - chatgpt: `not-run`. Tested release evidence: none recorded.
 - codex: `not-run`. Tested release evidence: none recorded.
@@ -144,7 +144,7 @@ Destination: [skills/architect/references/runner-prompt.md](../../skills/archite
 
 Upstream commit: `df581122cde17e6e27686b5a448bde23e4ad4318`. SHA-256: `21dd5314aab778c5007228027a4591d97693fbec6ab86524037772b63f40948e`.
 
-Disposition: `runtime`. Aggregate adaptation status: `pending`.
+Disposition: `runtime`. Aggregate adaptation status: `adapted-reviewed`.
 
 - chatgpt: `not-run`. Tested release evidence: none recorded.
 - codex: `not-run`. Tested release evidence: none recorded.

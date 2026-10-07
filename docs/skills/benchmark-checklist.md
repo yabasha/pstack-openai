@@ -86,7 +86,7 @@ Destination: [skills/benchmark-checklist/SKILL.md](../../skills/benchmark-checkl
 
 Upstream commit: `df581122cde17e6e27686b5a448bde23e4ad4318`. SHA-256: `6a767e788a60428fa14e645ee10fe2e49896e514ff654f668b1d824deb9038e8`.
 
-Disposition: `runtime`. Aggregate adaptation status: `pending`.
+Disposition: `runtime`. Aggregate adaptation status: `adapted-reviewed`.
 
 - chatgpt: `not-run`. Tested release evidence: none recorded.
 - codex: `not-run`. Tested release evidence: none recorded.

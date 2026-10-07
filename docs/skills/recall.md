@@ -88,7 +88,7 @@ Forbidden claims:
 - History layout and UUID availability depend on observed host tools.
 - Independent parallel mining requires authorized exposed workers; sequential passes are reduced capability.
 - Unavailable live reads block affected status claims even with a complete capsule.
-- session-pickup and automate-me are pending local dependencies owned by later tasks; Task 24 must close them.
+- session-pickup and automate-me are present and reviewed. Actual history access and baseline acceptance gates still apply.
 - Host behavior has not been tested.
 
 ## Source proof and release evidence
@@ -101,7 +101,7 @@ Destination: [skills/recall/SKILL.md](../../skills/recall/SKILL.md).
 
 Upstream commit: `df581122cde17e6e27686b5a448bde23e4ad4318`. SHA-256: `d265b0e5b6dc5b89c0407f3387d24462c988e1990a37d5359735137908128c5a`.
 
-Disposition: `runtime`. Aggregate adaptation status: `pending`.
+Disposition: `runtime`. Aggregate adaptation status: `adapted-reviewed`.
 
 - chatgpt: `not-run`. Tested release evidence: none recorded.
 - codex: `not-run`. Tested release evidence: none recorded.

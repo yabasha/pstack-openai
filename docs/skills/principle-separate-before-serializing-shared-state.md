@@ -82,7 +82,7 @@ Destination: [skills/principle-separate-before-serializing-shared-state/SKILL.md
 
 Upstream commit: `df581122cde17e6e27686b5a448bde23e4ad4318`. SHA-256: `05294b40448e927c5da1c7b6f5c6b9fed3744637e3833d2d948b9154a9dd00bb`.
 
-Disposition: `runtime`. Aggregate adaptation status: `pending`.
+Disposition: `runtime`. Aggregate adaptation status: `adapted-reviewed`.
 
 - chatgpt: `not-run`. Tested release evidence: none recorded.
 - codex: `not-run`. Tested release evidence: none recorded.

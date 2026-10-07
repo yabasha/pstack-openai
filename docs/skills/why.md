@@ -104,7 +104,7 @@ Destination: [skills/why/references/investigator-prompt.md](../../skills/why/ref
 
 Upstream commit: `df581122cde17e6e27686b5a448bde23e4ad4318`. SHA-256: `6892956a7ab0b5ee6c4babaf4f793703abe89b350ea7cb9463b4a56eea1c8266`.
 
-Disposition: `runtime`. Aggregate adaptation status: `pending`.
+Disposition: `runtime`. Aggregate adaptation status: `unchanged-reviewed`.
 
 - chatgpt: `not-run`. Tested release evidence: none recorded.
 - codex: `not-run`. Tested release evidence: none recorded.
@@ -115,7 +115,7 @@ Destination: [skills/why/references/epistemics.md](../../skills/why/references/e
 
 Upstream commit: `df581122cde17e6e27686b5a448bde23e4ad4318`. SHA-256: `fcc0f559c072832c869a5ada72434b4849320a637ae63c09e8ee14f7ad787059`.
 
-Disposition: `runtime`. Aggregate adaptation status: `pending`.
+Disposition: `runtime`. Aggregate adaptation status: `unchanged-reviewed`.
 
 - chatgpt: `not-run`. Tested release evidence: none recorded.
 - codex: `not-run`. Tested release evidence: none recorded.
@@ -126,7 +126,7 @@ Destination: [skills/why/references/sources/incident-postmortem.md](../../skills
 
 Upstream commit: `df581122cde17e6e27686b5a448bde23e4ad4318`. SHA-256: `a899470f05f86029630a13a2696491cc708ca7b56a6e822a69ff6e954d6ff8cf`.
 
-Disposition: `runtime`. Aggregate adaptation status: `pending`.
+Disposition: `runtime`. Aggregate adaptation status: `adapted-reviewed`.
 
 - chatgpt: `not-run`. Tested release evidence: none recorded.
 - codex: `not-run`. Tested release evidence: none recorded.
@@ -137,7 +137,7 @@ Destination: [skills/why/references/sources/slack.md](../../skills/why/reference
 
 Upstream commit: `df581122cde17e6e27686b5a448bde23e4ad4318`. SHA-256: `58fee61d024b3700b407e7acbed367944720ff05adfddb6954d36c88368f3ba7`.
 
-Disposition: `runtime`. Aggregate adaptation status: `pending`.
+Disposition: `runtime`. Aggregate adaptation status: `adapted-reviewed`.
 
 - chatgpt: `not-run`. Tested release evidence: none recorded.
 - codex: `not-run`. Tested release evidence: none recorded.
@@ -148,7 +148,7 @@ Destination: [skills/why/references/sources/datadog.md](../../skills/why/referen
 
 Upstream commit: `df581122cde17e6e27686b5a448bde23e4ad4318`. SHA-256: `ebe9c07bac28e47757ee7f16fb93b0c01d427a08c501957d047f395a2f37b7e7`.
 
-Disposition: `runtime`. Aggregate adaptation status: `pending`.
+Disposition: `runtime`. Aggregate adaptation status: `adapted-reviewed`.
 
 - chatgpt: `not-run`. Tested release evidence: none recorded.
 - codex: `not-run`. Tested release evidence: none recorded.
@@ -159,7 +159,7 @@ Destination: [skills/why/references/sources/notion.md](../../skills/why/referenc
 
 Upstream commit: `df581122cde17e6e27686b5a448bde23e4ad4318`. SHA-256: `3bcfa695c49dfad4ac036d5d7181c12585f55ac04f1936198d16ab75a2788997`.
 
-Disposition: `runtime`. Aggregate adaptation status: `pending`.
+Disposition: `runtime`. Aggregate adaptation status: `adapted-reviewed`.
 
 - chatgpt: `not-run`. Tested release evidence: none recorded.
 - codex: `not-run`. Tested release evidence: none recorded.
@@ -170,7 +170,7 @@ Destination: [skills/why/references/sources/databricks.md](../../skills/why/refe
 
 Upstream commit: `df581122cde17e6e27686b5a448bde23e4ad4318`. SHA-256: `236ede7aab6454662a992db088a5393537a5233a4c26719c93188f9e174488f6`.
 
-Disposition: `runtime`. Aggregate adaptation status: `pending`.
+Disposition: `runtime`. Aggregate adaptation status: `adapted-reviewed`.
 
 - chatgpt: `not-run`. Tested release evidence: none recorded.
 - codex: `not-run`. Tested release evidence: none recorded.
@@ -181,7 +181,7 @@ Destination: [skills/why/references/sources/sentry.md](../../skills/why/referenc
 
 Upstream commit: `df581122cde17e6e27686b5a448bde23e4ad4318`. SHA-256: `6f292bc4fb1548e956f95e1900b9481abf5134254419f1cd9edec95428c82d73`.
 
-Disposition: `runtime`. Aggregate adaptation status: `pending`.
+Disposition: `runtime`. Aggregate adaptation status: `adapted-reviewed`.
 
 - chatgpt: `not-run`. Tested release evidence: none recorded.
 - codex: `not-run`. Tested release evidence: none recorded.
@@ -192,7 +192,7 @@ Destination: [skills/why/references/sources/linear.md](../../skills/why/referenc
 
 Upstream commit: `df581122cde17e6e27686b5a448bde23e4ad4318`. SHA-256: `01304e7f1badfcfb78babbb0edcadeb3cc8dd3f713793420cdff24ba190f907c`.
 
-Disposition: `runtime`. Aggregate adaptation status: `pending`.
+Disposition: `runtime`. Aggregate adaptation status: `adapted-reviewed`.
 
 - chatgpt: `not-run`. Tested release evidence: none recorded.
 - codex: `not-run`. Tested release evidence: none recorded.
@@ -203,7 +203,7 @@ Destination: [skills/why/references/sources/code-archaeology.md](../../skills/wh
 
 Upstream commit: `df581122cde17e6e27686b5a448bde23e4ad4318`. SHA-256: `8c14aa382f0de40829b2668d43e3f54814480bb93a486c9282ada4003f6b9dbd`.
 
-Disposition: `runtime`. Aggregate adaptation status: `pending`.
+Disposition: `runtime`. Aggregate adaptation status: `adapted-reviewed`.
 
 - chatgpt: `not-run`. Tested release evidence: none recorded.
 - codex: `not-run`. Tested release evidence: none recorded.
@@ -214,7 +214,7 @@ Destination: [skills/why/references/synthesizer-prompt.md](../../skills/why/refe
 
 Upstream commit: `df581122cde17e6e27686b5a448bde23e4ad4318`. SHA-256: `733a3e9cf897b1aca56aaddeae01a3832e4bfed024c2f602db2d1bf807d7a73b`.
 
-Disposition: `runtime`. Aggregate adaptation status: `pending`.
+Disposition: `runtime`. Aggregate adaptation status: `adapted-reviewed`.
 
 - chatgpt: `not-run`. Tested release evidence: none recorded.
 - codex: `not-run`. Tested release evidence: none recorded.
@@ -225,7 +225,7 @@ Destination: [skills/why/references/source-playbook.md](../../skills/why/referen
 
 Upstream commit: `df581122cde17e6e27686b5a448bde23e4ad4318`. SHA-256: `9ae9dcb9d09111c9facc68510331c5aba4aed9b1b057314ff1fc0e166ad3993a`.
 
-Disposition: `runtime`. Aggregate adaptation status: `pending`.
+Disposition: `runtime`. Aggregate adaptation status: `unchanged-reviewed`.
 
 - chatgpt: `not-run`. Tested release evidence: none recorded.
 - codex: `not-run`. Tested release evidence: none recorded.
@@ -236,7 +236,7 @@ Destination: [skills/why/SKILL.md](../../skills/why/SKILL.md).
 
 Upstream commit: `df581122cde17e6e27686b5a448bde23e4ad4318`. SHA-256: `442215bf70e491d4d31bd200c197f2ec447445df38e074c40880fc4bf30a1f9e`.
 
-Disposition: `runtime`. Aggregate adaptation status: `pending`.
+Disposition: `runtime`. Aggregate adaptation status: `adapted-reviewed`.
 
 - chatgpt: `not-run`. Tested release evidence: none recorded.
 - codex: `not-run`. Tested release evidence: none recorded.

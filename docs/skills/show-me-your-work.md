@@ -54,7 +54,7 @@ Required observations:
 
 - Authorized local persistence and readback
 - Accessible history for this run
-- Task 16 logging helper or equally safe TSV append
+- task 16 logging helper or equally safe TSV append
 - Authorized independent reviewer with observed different model family for full review
 
 Forbidden claims:
@@ -77,7 +77,7 @@ Forbidden claims:
 
 ## Host limits
 
-- Task 16 logging helper is a deferred runtime dependency until reviewed.
+- The logging helper is present and reviewed; authorized execution, local persistence and readback still require observed host capabilities.
 - History, durable write and readback, and independent different-family review require observed authorized bindings.
 - Sequential self-review does not satisfy cross-model review.
 - No secrets or unsupported completion claims; commits and external actions need explicit authorization.
@@ -93,7 +93,7 @@ Destination: [skills/show-me-your-work/SKILL.md](../../skills/show-me-your-work/
 
 Upstream commit: `df581122cde17e6e27686b5a448bde23e4ad4318`. SHA-256: `bcff5f7f9fd23f92c12b251f9cd6b947e9485e1055cfacb6fdd9cae0789d7550`.
 
-Disposition: `runtime`. Aggregate adaptation status: `pending`.
+Disposition: `runtime`. Aggregate adaptation status: `adapted-reviewed`.
 
 - chatgpt: `not-run`. Tested release evidence: none recorded.
 - codex: `not-run`. Tested release evidence: none recorded.
@@ -104,7 +104,7 @@ Destination: [skills/show-me-your-work/references/decision-log-template.tsv](../
 
 Upstream commit: `df581122cde17e6e27686b5a448bde23e4ad4318`. SHA-256: `6779378006a2f5225e8c06deb84f1d913fb532041ebbb6e50d94600bfe3f4b76`.
 
-Disposition: `runtime`. Aggregate adaptation status: `pending`.
+Disposition: `runtime`. Aggregate adaptation status: `unchanged-reviewed`.
 
 - chatgpt: `not-run`. Tested release evidence: none recorded.
 - codex: `not-run`. Tested release evidence: none recorded.
@@ -115,7 +115,7 @@ Destination: [skills/show-me-your-work/scripts/log.sh](../../skills/show-me-your
 
 Upstream commit: `df581122cde17e6e27686b5a448bde23e4ad4318`. SHA-256: `a65a4bc5fb7cdeadbdb7b7ff1ca4682f4d9c42420942b2977cd17b46c4ac338e`.
 
-Disposition: `runtime`. Aggregate adaptation status: `pending`.
+Disposition: `runtime`. Aggregate adaptation status: `adapted-reviewed`.
 
 - chatgpt: `not-run`. Tested release evidence: none recorded.
 - codex: `not-run`. Tested release evidence: none recorded.

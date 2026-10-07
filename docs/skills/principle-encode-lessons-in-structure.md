@@ -86,7 +86,7 @@ Destination: [skills/principle-encode-lessons-in-structure/SKILL.md](../../skill
 
 Upstream commit: `df581122cde17e6e27686b5a448bde23e4ad4318`. SHA-256: `77044c83a9ac6df78fc643887ea5f1f11f082adaf14b717c060cdaed03cce863`.
 
-Disposition: `runtime`. Aggregate adaptation status: `pending`.
+Disposition: `runtime`. Aggregate adaptation status: `adapted-reviewed`.
 
 - chatgpt: `not-run`. Tested release evidence: none recorded.
 - codex: `not-run`. Tested release evidence: none recorded.

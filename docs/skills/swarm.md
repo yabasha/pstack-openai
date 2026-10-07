@@ -92,7 +92,7 @@ Destination: [skills/swarm/SKILL.md](../../skills/swarm/SKILL.md).
 
 Upstream commit: `df581122cde17e6e27686b5a448bde23e4ad4318`. SHA-256: `bdcee4168e22428036e93d7cdeec3f391dbc4132f927f6db2540328c22db0273`.
 
-Disposition: `runtime`. Aggregate adaptation status: `pending`.
+Disposition: `runtime`. Aggregate adaptation status: `adapted-reviewed`.
 
 - chatgpt: `not-run`. Tested release evidence: none recorded.
 - codex: `not-run`. Tested release evidence: none recorded.

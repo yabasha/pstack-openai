@@ -27,7 +27,7 @@
     "Unknown availability defaults to inherited roles",
     "Persistent always-applied overrides require a verified host mechanism and explicit write authorization",
     "Requested models and budgets do not establish actual models, supported effort, diversity or worker independence",
-    "The verification-skill leaf is deferred until its assigned port; host behavior remains not-run"
+    "The verification-skill leaf is present and reviewed; host behavior remains not-run"
   ],
   "sourcePaths": [
     "skills/setup-pstack/SKILL.md"

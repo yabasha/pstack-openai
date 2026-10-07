@@ -126,7 +126,7 @@ Destination: [skills/poteto-help/SKILL.md](../../skills/poteto-help/SKILL.md).
 
 Upstream commit: `df581122cde17e6e27686b5a448bde23e4ad4318`. SHA-256: `ea71bcb15c023a5d9cc70686e4812144687ffe03bf80d85cc480af3e0b181d1e`.
 
-Disposition: `runtime`. Aggregate adaptation status: `pending`.
+Disposition: `runtime`. Aggregate adaptation status: `adapted-reviewed`.
 
 - chatgpt: `not-run`. Tested release evidence: none recorded.
 - codex: `not-run`. Tested release evidence: none recorded.
@@ -137,7 +137,7 @@ Destination: [skills/poteto-help/references/prompting.md](../../skills/poteto-he
 
 Upstream commit: `df581122cde17e6e27686b5a448bde23e4ad4318`. SHA-256: `463f450c44a60afd001a2f69fdf8a5dea174351f339369b12ec3c41515e564d3`.
 
-Disposition: `runtime`. Aggregate adaptation status: `pending`.
+Disposition: `runtime`. Aggregate adaptation status: `adapted-reviewed`.
 
 - chatgpt: `not-run`. Tested release evidence: none recorded.
 - codex: `not-run`. Tested release evidence: none recorded.
@@ -148,7 +148,7 @@ Destination: [skills/poteto-help/references/recipes.md](../../skills/poteto-help
 
 Upstream commit: `df581122cde17e6e27686b5a448bde23e4ad4318`. SHA-256: `1872323419a3e5c7783b1933f7a180ca26c25a6e1f4ec83bd65e091ebbfb812b`.
 
-Disposition: `runtime`. Aggregate adaptation status: `pending`.
+Disposition: `runtime`. Aggregate adaptation status: `adapted-reviewed`.
 
 - chatgpt: `not-run`. Tested release evidence: none recorded.
 - codex: `not-run`. Tested release evidence: none recorded.

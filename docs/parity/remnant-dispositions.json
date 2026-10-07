@@ -908,5 +908,25 @@
     "kind": "source-only",
     "rationale": "The complete quoted bullet is historical encodingForModel rename data in the Drop examples, not model routing.",
     "reviewed": true
+  },
+  {
+    "path": "UPSTREAM.md",
+    "sha256": "dd9094df807e995664109297700e426fcd2f6029166657271f958aab5d5f4d09",
+    "token": ".cursor-plugin/plugin.json",
+    "startLine": 23,
+    "endLine": 23,
+    "kind": "source-only",
+    "rationale": "Exact quoted canonical metadata filename identifies source lineage; operative package uses the reviewed root manifest. No runtime source-host binding is introduced.",
+    "reviewed": true
+  },
+  {
+    "path": "docs/parity/support-map.md",
+    "sha256": "ba4b1d12ec7aef0aefa5672d9c84c60900f2e13bad4ae6e8218b39c55c2f5a2c",
+    "token": ".cursor-plugin/plugin.json",
+    "startLine": 29,
+    "endLine": 29,
+    "kind": "source-only",
+    "rationale": "Exact quoted canonical metadata filename identifies source lineage; operative package uses the reviewed root manifest. No runtime source-host binding is introduced.",
+    "reviewed": true
   }
 ]

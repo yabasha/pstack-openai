@@ -16,7 +16,7 @@ Verify task outputs against the real artifact before declaring completion.
 
 ## Required input
 
-- Task outputs and the real feature, process or stored value
+- task outputs and the real feature, process or stored value
 - Available inspection and execution tools and permissions
 
 ## Output contract
@@ -82,7 +82,7 @@ Destination: [skills/principle-prove-it-works/SKILL.md](../../skills/principle-p
 
 Upstream commit: `df581122cde17e6e27686b5a448bde23e4ad4318`. SHA-256: `ec79a15025bac8d33d62011c54f3b612733fd2a024e623b531b3637aa75070e2`.
 
-Disposition: `runtime`. Aggregate adaptation status: `pending`.
+Disposition: `runtime`. Aggregate adaptation status: `adapted-reviewed`.
 
 - chatgpt: `not-run`. Tested release evidence: none recorded.
 - codex: `not-run`. Tested release evidence: none recorded.

@@ -80,7 +80,7 @@ Forbidden claims:
 - Missing independent workers permits serial source review only as reduced capability.
 - Missing execution or app driving leaves live verification not-run and coverage blocked.
 - Missing writes permits recommendations only; shipping requires explicit authorization.
-- Shared inventory remains pending until coordinator integration; Task 24 closes dependencies and registry applicability.
+- The canonical inventory and local dependencies are structurally reconciled; registered cases still require actual per-host observations.
 - Both hosts remain not-run; structural checks do not prove behavior.
 
 ## Source proof and release evidence
@@ -93,7 +93,7 @@ Destination: [skills/maintain-verification-skill/SKILL.md](../../skills/maintain
 
 Upstream commit: `df581122cde17e6e27686b5a448bde23e4ad4318`. SHA-256: `515c0eaa054b3f6be1b1fb06f2c2f173c80fddb58bbcac57576f89c479bc68e8`.
 
-Disposition: `runtime`. Aggregate adaptation status: `pending`.
+Disposition: `runtime`. Aggregate adaptation status: `adapted-reviewed`.
 
 - chatgpt: `not-run`. Tested release evidence: none recorded.
 - codex: `not-run`. Tested release evidence: none recorded.

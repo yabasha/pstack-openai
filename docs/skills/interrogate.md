@@ -99,7 +99,7 @@ Destination: [skills/interrogate/SKILL.md](../../skills/interrogate/SKILL.md).
 
 Upstream commit: `df581122cde17e6e27686b5a448bde23e4ad4318`. SHA-256: `2f7e570ec23791ed2e485a09c98ed0597c46035e2050b351b84d3dc760ddd71f`.
 
-Disposition: `runtime`. Aggregate adaptation status: `pending`.
+Disposition: `runtime`. Aggregate adaptation status: `adapted-reviewed`.
 
 - chatgpt: `not-run`. Tested release evidence: none recorded.
 - codex: `not-run`. Tested release evidence: none recorded.
@@ -110,7 +110,7 @@ Destination: [skills/interrogate/references/code-quality-review.md](../../skills
 
 Upstream commit: `df581122cde17e6e27686b5a448bde23e4ad4318`. SHA-256: `79162fda183eafd40d51661fbb5e151c7ba250f89e506ba17f5bd135dcbd50a8`.
 
-Disposition: `runtime`. Aggregate adaptation status: `pending`.
+Disposition: `runtime`. Aggregate adaptation status: `unchanged-reviewed`.
 
 - chatgpt: `not-run`. Tested release evidence: none recorded.
 - codex: `not-run`. Tested release evidence: none recorded.
@@ -121,7 +121,7 @@ Destination: [skills/interrogate/references/reviewer-prompt.md](../../skills/int
 
 Upstream commit: `df581122cde17e6e27686b5a448bde23e4ad4318`. SHA-256: `e0598e254792b56de39bb16b1e6db559b03a522fdc54b98f942d254090920ae6`.
 
-Disposition: `runtime`. Aggregate adaptation status: `pending`.
+Disposition: `runtime`. Aggregate adaptation status: `unchanged-reviewed`.
 
 - chatgpt: `not-run`. Tested release evidence: none recorded.
 - codex: `not-run`. Tested release evidence: none recorded.
@@ -132,7 +132,7 @@ Destination: [skills/interrogate/references/rubric.md](../../skills/interrogate/
 
 Upstream commit: `df581122cde17e6e27686b5a448bde23e4ad4318`. SHA-256: `a85aa801abbaf14434f00579440abc0d8e2723227ba8bf57de7cca8d6e7d2f25`.
 
-Disposition: `runtime`. Aggregate adaptation status: `pending`.
+Disposition: `runtime`. Aggregate adaptation status: `unchanged-reviewed`.
 
 - chatgpt: `not-run`. Tested release evidence: none recorded.
 - codex: `not-run`. Tested release evidence: none recorded.
@@ -143,7 +143,7 @@ Destination: [skills/interrogate/references/lead-judgment.md](../../skills/inter
 
 Upstream commit: `df581122cde17e6e27686b5a448bde23e4ad4318`. SHA-256: `6e5bdf5670eb34017692e9b6c546f36ac7552e6bb9f3f2f3429164fcc46a9361`.
 
-Disposition: `runtime`. Aggregate adaptation status: `pending`.
+Disposition: `runtime`. Aggregate adaptation status: `unchanged-reviewed`.
 
 - chatgpt: `not-run`. Tested release evidence: none recorded.
 - codex: `not-run`. Tested release evidence: none recorded.

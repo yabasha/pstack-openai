@@ -33,7 +33,7 @@
     "create-skill and structured questions require observed exposed companions or a declared reduced fallback.",
     "Sequential mining does not prove independent workers. Missing scoped history limits evidence.",
     "Scheduling and remote creation are outside the flow. Commit, push and PR each need separate authorization.",
-    "Both hosts remain not-run. Pending authoring playbook requires Task 24 closure."
+    "The authoring playbook is present and reviewed. Both hosts remain not-run; external authoring companions still require discovery."
   ],
   "sourcePaths": [
     "skills/automate-me/SKILL.md"

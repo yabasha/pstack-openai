@@ -35,7 +35,7 @@
     "History layout and UUID availability depend on observed host tools.",
     "Independent parallel mining requires authorized exposed workers; sequential passes are reduced capability.",
     "Unavailable live reads block affected status claims even with a complete capsule.",
-    "session-pickup and automate-me are pending local dependencies owned by later tasks; Task 24 must close them.",
+    "session-pickup and automate-me are present and reviewed. Actual history access and baseline acceptance gates still apply.",
     "Host behavior has not been tested."
   ],
   "sourcePaths": [

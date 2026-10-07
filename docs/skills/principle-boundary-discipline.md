@@ -80,7 +80,7 @@ Destination: [skills/principle-boundary-discipline/SKILL.md](../../skills/princi
 
 Upstream commit: `df581122cde17e6e27686b5a448bde23e4ad4318`. SHA-256: `62ac2862c2caa22dd14531f51c9c6bb445ceb198ca98a687e25b4d47c1f10a28`.
 
-Disposition: `runtime`. Aggregate adaptation status: `pending`.
+Disposition: `runtime`. Aggregate adaptation status: `adapted-reviewed`.
 
 - chatgpt: `not-run`. Tested release evidence: none recorded.
 - codex: `not-run`. Tested release evidence: none recorded.

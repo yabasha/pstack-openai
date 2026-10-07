@@ -27,7 +27,7 @@
     "Missing independent workers permits serial source review only as reduced capability.",
     "Missing execution or app driving leaves live verification not-run and coverage blocked.",
     "Missing writes permits recommendations only; shipping requires explicit authorization.",
-    "Shared inventory remains pending until coordinator integration; Task 24 closes dependencies and registry applicability.",
+    "The canonical inventory and local dependencies are structurally reconciled; registered cases still require actual per-host observations.",
     "Both hosts remain not-run; structural checks do not prove behavior."
   ],
   "sourcePaths": [

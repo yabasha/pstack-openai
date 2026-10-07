@@ -75,7 +75,7 @@ Forbidden claims:
 - Unknown availability defaults to inherited roles
 - Persistent always-applied overrides require a verified host mechanism and explicit write authorization
 - Requested models and budgets do not establish actual models, supported effort, diversity or worker independence
-- The verification-skill leaf is deferred until its assigned port; host behavior remains not-run
+- The verification-skill leaf is present and reviewed; host behavior remains not-run
 
 ## Source proof and release evidence
 
@@ -87,7 +87,7 @@ Destination: [skills/setup-pstack/SKILL.md](../../skills/setup-pstack/SKILL.md).
 
 Upstream commit: `df581122cde17e6e27686b5a448bde23e4ad4318`. SHA-256: `d61b47256a18155a81c8e5ef95e3cc6569ce8c18317c35c4dd9c8015cf68cb59`.
 
-Disposition: `runtime`. Aggregate adaptation status: `pending`.
+Disposition: `runtime`. Aggregate adaptation status: `adapted-reviewed`.
 
 - chatgpt: `not-run`. Tested release evidence: none recorded.
 - codex: `not-run`. Tested release evidence: none recorded.

@@ -86,7 +86,7 @@ Destination: [skills/principle-build-the-lever/SKILL.md](../../skills/principle-
 
 Upstream commit: `df581122cde17e6e27686b5a448bde23e4ad4318`. SHA-256: `458b269eab8e95a1573276955312f7d2a13ae8599879a9efc748248f6bc34b56`.
 
-Disposition: `runtime`. Aggregate adaptation status: `pending`.
+Disposition: `runtime`. Aggregate adaptation status: `adapted-reviewed`.
 
 - chatgpt: `not-run`. Tested release evidence: none recorded.
 - codex: `not-run`. Tested release evidence: none recorded.

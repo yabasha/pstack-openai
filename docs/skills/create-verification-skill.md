@@ -81,7 +81,7 @@ Forbidden claims:
 - Project-local registration requires observed host discovery; otherwise registration remains unverified.
 - Execution or app-driving gaps leave verification not-run and the generated skill a draft.
 - Dependency installation, listeners and external writes require applicable authorization.
-- Maintenance leaf is a pending dependency for coordinator integration and Task 24 closure.
+- The maintenance leaf is present and reviewed; its live app verification still requires observed capabilities.
 - Both hosts remain not-run; structural checks supply no behavioral proof.
 
 ## Source proof and release evidence
@@ -94,7 +94,7 @@ Destination: [skills/create-verification-skill/SKILL.md](../../skills/create-ver
 
 Upstream commit: `df581122cde17e6e27686b5a448bde23e4ad4318`. SHA-256: `644f2551403c1bca01a2855b34611b6e7be0ce0dc5b204514c376c0f6a6e6ac4`.
 
-Disposition: `runtime`. Aggregate adaptation status: `pending`.
+Disposition: `runtime`. Aggregate adaptation status: `adapted-reviewed`.
 
 - chatgpt: `not-run`. Tested release evidence: none recorded.
 - codex: `not-run`. Tested release evidence: none recorded.
@@ -105,7 +105,7 @@ Destination: [skills/create-verification-skill/references/feature-map-example/RE
 
 Upstream commit: `df581122cde17e6e27686b5a448bde23e4ad4318`. SHA-256: `cb7bd782cf89968a4ba3d58a5151db837430db92d19a6f52a906973b77b516ba`.
 
-Disposition: `runtime`. Aggregate adaptation status: `pending`.
+Disposition: `runtime`. Aggregate adaptation status: `unchanged-reviewed`.
 
 - chatgpt: `not-run`. Tested release evidence: none recorded.
 - codex: `not-run`. Tested release evidence: none recorded.
@@ -116,7 +116,7 @@ Destination: [skills/create-verification-skill/references/feature-map-example/cr
 
 Upstream commit: `df581122cde17e6e27686b5a448bde23e4ad4318`. SHA-256: `644a44c74f35d38c2feb7cd05a0121fdebbb623e8dc376c185b565a581d1ccf7`.
 
-Disposition: `runtime`. Aggregate adaptation status: `pending`.
+Disposition: `runtime`. Aggregate adaptation status: `unchanged-reviewed`.
 
 - chatgpt: `not-run`. Tested release evidence: none recorded.
 - codex: `not-run`. Tested release evidence: none recorded.
@@ -127,7 +127,7 @@ Destination: [skills/create-verification-skill/references/feature-map-example/se
 
 Upstream commit: `df581122cde17e6e27686b5a448bde23e4ad4318`. SHA-256: `6e87b9e7f2791a7776ba1bb83f371cd285c306c67f19d245cc4dd6ca3015c823`.
 
-Disposition: `runtime`. Aggregate adaptation status: `pending`.
+Disposition: `runtime`. Aggregate adaptation status: `unchanged-reviewed`.
 
 - chatgpt: `not-run`. Tested release evidence: none recorded.
 - codex: `not-run`. Tested release evidence: none recorded.
