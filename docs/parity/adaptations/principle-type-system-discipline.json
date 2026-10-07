@@ -1,0 +1,32 @@
+[
+  {
+    "upstreamPath": "skills/principle-type-system-discipline/SKILL.md",
+    "upstreamCommit": "df581122cde17e6e27686b5a448bde23e4ad4318",
+    "upstreamSha256": "c83da8031ffb4c86410030d3e261f659598fca2b7d8158fd9dc269d70a3a025e",
+    "destinationPath": "skills/principle-type-system-discipline/SKILL.md",
+    "disposition": "runtime",
+    "rationale": "Preserve the complete canonical text and metadata. Append session capability discovery, authorized operation limits and explicit reduced or blocked verification. No comparison-port content added.",
+    "dependencies": [
+      "references/host-capabilities.md",
+      "skills/typescript-best-practices/SKILL.md",
+      "skills/principle-boundary-discipline/SKILL.md",
+      "skills/principle-encode-lessons-in-structure/SKILL.md"
+    ],
+    "licenseProvenance": {
+      "license": "MIT",
+      "copyright": "Copyright (c) 2026 Lauren Tan",
+      "sourcePath": "LICENSE"
+    },
+    "adaptationStatus": "adapted-reviewed",
+    "verification": {
+      "chatgpt": {
+        "status": "not-run",
+        "evidence": []
+      },
+      "codex": {
+        "status": "not-run",
+        "evidence": []
+      }
+    }
+  }
+]
