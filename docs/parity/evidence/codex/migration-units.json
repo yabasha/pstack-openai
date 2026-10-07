@@ -1,0 +1,53 @@
+{
+  "caseId": "migration-units",
+  "packageVersion": "0.1.0",
+  "packageCommit": "18718aa5ee8cfe63a86b2688d9d277a12925e92e",
+  "host": "codex",
+  "hostMode": "existing delegated local implementation session; installed-plugin testing unavailable",
+  "date": "2026-10-08",
+  "input": "Plan a multi-step schema migration and its commit delivery. Give each ordered unit a specific check, show when the next unit can begin, and handle an unavailable test runner or unauthorized Git operation.",
+  "observedOutput": "Not attempted. Inherited prerequisite block from package-discovery. Installed-copy discovery is unobserved for this frozen candidate. No separate human authorization exists for package loading, installation, enabling, settings changes or a fresh host setup. The current session exposes source reads and local command execution, but no actual installed pstack copy identity or complete 51-root/3-exclusion discovery receipt was observed. Source reads cannot establish installed discovery.",
+  "status": "blocked",
+  "execution": "unavailable",
+  "sourcePaths": [
+    "skills/principle-sequence-verifiable-units/SKILL.md"
+  ],
+  "documentedCapabilities": [
+    "references/host-capabilities.md defines observations, not callable APIs.",
+    "docs/setup/codex.md requires separate loading authorization and actual installed-copy discovery."
+  ],
+  "exposedTools": [
+    "functions.exec",
+    "functions.wait",
+    "tools.exec_command",
+    "tools.clock__curr_time",
+    "collaboration.spawn_agent",
+    "collaboration.followup_task",
+    "collaboration.send_message",
+    "collaboration.wait_agent",
+    "collaboration.interrupt_agent",
+    "collaboration.list_agents",
+    "mcp__cua_repl.js",
+    "mcp__cua_repl.js_reset"
+  ],
+  "artifacts": [
+    "docs/parity/evidence/codex/authorization-capability-check.md"
+  ],
+  "limits": [
+    "Installed-copy discovery is unobserved for this frozen candidate. No separate human authorization exists for package loading, installation, enabling, settings changes or a fresh host setup. The current session exposes source reads and local command execution, but no actual installed pstack copy identity or complete 51-root/3-exclusion discovery receipt was observed. Source reads cannot establish installed discovery.",
+    "This case was not attempted; its failure modes and expected outputs were not observed.",
+    "No requested model, case model output, worker independence or fresh loaded session was observed.",
+    "Local structural validation does not establish host behavior."
+  ],
+  "priorActionIdentities": [],
+  "permissions": {
+    "execution": "unavailable",
+    "writes": "granted",
+    "externalActions": "unknown"
+  },
+  "models": {
+    "requested": "unknown",
+    "actual": "unknown"
+  },
+  "successfulOperations": []
+}

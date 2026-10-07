@@ -1,0 +1,67 @@
+{
+  "caseId": "comparable-revisions",
+  "packageVersion": "0.1.0",
+  "packageCommit": "18718aa5ee8cfe63a86b2688d9d277a12925e92e",
+  "host": "codex",
+  "hostMode": "existing delegated local implementation session; installed-plugin testing unavailable",
+  "date": "2026-10-08",
+  "input": "Improve a fixture export CLI against a stated latency target. Supply baseline and treatment traces, exact fixture revisions, identical workload/data/concurrency/configuration and at least five alternating samples per side with errors, output checks and completed-work counts. Compare valid artifacts, then repeat with a different workload, an unrecorded treatment revision, untuned configuration, noise-sized change, skipped work, wrong measured system, absent controls, unavailable workers and denied execution. Permit local inspection and edits but no external writes. Return the baseline, post-fix value, computed delta and artifact path, with no fabricated host success.",
+  "observedOutput": "Not attempted. Inherited prerequisite block from package-discovery. Installed-copy discovery is unobserved for this frozen candidate. No separate human authorization exists for package loading, installation, enabling, settings changes or a fresh host setup. The current session exposes source reads and local command execution, but no actual installed pstack copy identity or complete 51-root/3-exclusion discovery receipt was observed. Source reads cannot establish installed discovery.",
+  "status": "blocked",
+  "execution": "unavailable",
+  "sourcePaths": [
+    "skills/poteto-mode/playbooks/perf-issue.md",
+    "skills/poteto-mode/SKILL.md",
+    "agents/poteto-agent.md",
+    "skills/benchmark-checklist/SKILL.md",
+    "skills/principle-explain-the-number/SKILL.md",
+    "skills/how/SKILL.md",
+    "skills/how/references/explorer-prompt.md",
+    "skills/how/references/explainer-prompt.md",
+    "skills/architect/SKILL.md",
+    "skills/architect/references/runner-prompt.md",
+    "skills/architect/references/rationale-template.md",
+    "skills/architect/references/design-red-flags.md",
+    "skills/principle-sequence-verifiable-units/SKILL.md",
+    "skills/poteto-mode/playbooks/hillclimb.md",
+    "skills/poteto-mode/playbooks/opening-a-pr.md"
+  ],
+  "documentedCapabilities": [
+    "references/host-capabilities.md defines observations, not callable APIs.",
+    "docs/setup/codex.md requires separate loading authorization and actual installed-copy discovery."
+  ],
+  "exposedTools": [
+    "functions.exec",
+    "functions.wait",
+    "tools.exec_command",
+    "tools.clock__curr_time",
+    "collaboration.spawn_agent",
+    "collaboration.followup_task",
+    "collaboration.send_message",
+    "collaboration.wait_agent",
+    "collaboration.interrupt_agent",
+    "collaboration.list_agents",
+    "mcp__cua_repl.js",
+    "mcp__cua_repl.js_reset"
+  ],
+  "artifacts": [
+    "docs/parity/evidence/codex/authorization-capability-check.md"
+  ],
+  "limits": [
+    "Installed-copy discovery is unobserved for this frozen candidate. No separate human authorization exists for package loading, installation, enabling, settings changes or a fresh host setup. The current session exposes source reads and local command execution, but no actual installed pstack copy identity or complete 51-root/3-exclusion discovery receipt was observed. Source reads cannot establish installed discovery.",
+    "This case was not attempted; its failure modes and expected outputs were not observed.",
+    "No requested model, case model output, worker independence or fresh loaded session was observed.",
+    "Local structural validation does not establish host behavior."
+  ],
+  "priorActionIdentities": [],
+  "permissions": {
+    "execution": "unavailable",
+    "writes": "granted",
+    "externalActions": "unknown"
+  },
+  "models": {
+    "requested": "unknown",
+    "actual": "unknown"
+  },
+  "successfulOperations": []
+}
