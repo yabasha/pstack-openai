@@ -1,0 +1,41 @@
+[
+  {
+    "upstreamPath": "skills/poteto-mode/playbooks/feature.md",
+    "upstreamCommit": "df581122cde17e6e27686b5a448bde23e4ad4318",
+    "upstreamSha256": "3a62cc4a8cbcf144bb9dd05f05420a15be0d38b784d3b141bb730a5852f50a62",
+    "destinationPath": "skills/poteto-mode/playbooks/feature.md",
+    "disposition": "runtime",
+    "rationale": "Preserve all eight Feature steps, design leadership, mandatory delegated implementation and review separation, no-spawn worker ownership, arena alternatives, four checkpoint dimensions, phase-boundary rewrites, small verified delivery units, matching outcome evidence and reply content. Bind workers, models, todo lists, writes and delivery to observed authorized capabilities. Canonical feature model grok-4.7-xhigh-fast remains historical provenance, not host availability. Opening a PR is a deferred Task 22 dependency until its complete playbook exists. Missing companions, unavailable independent workers and denied matching verification remain exact runtime gates. Feature directly invokes no script helper. Isolated helper test results at snapshot 37b68c8 do not establish this caller or either host.",
+    "dependencies": [
+      "skills/poteto-mode/SKILL.md",
+      "references/host-capabilities.md",
+      "references/model-roles.md",
+      "references/orchestration-contract.md",
+      "references/agent-prompts/poteto-agent.md",
+      "skills/how/SKILL.md",
+      "skills/architect/SKILL.md",
+      "skills/arena/SKILL.md",
+      "skills/interrogate/SKILL.md",
+      "skills/principle-model-the-domain/SKILL.md",
+      "skills/principle-separate-before-serializing-shared-state/SKILL.md",
+      "skills/principle-sequence-verifiable-units/SKILL.md",
+      "skills/poteto-mode/playbooks/opening-a-pr.md"
+    ],
+    "licenseProvenance": {
+      "license": "MIT",
+      "copyright": "Copyright (c) 2026 Lauren Tan",
+      "sourcePath": "LICENSE"
+    },
+    "adaptationStatus": "adapted-reviewed",
+    "verification": {
+      "chatgpt": {
+        "status": "not-run",
+        "evidence": []
+      },
+      "codex": {
+        "status": "not-run",
+        "evidence": []
+      }
+    }
+  }
+]
