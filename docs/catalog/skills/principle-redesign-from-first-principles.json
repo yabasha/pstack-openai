@@ -1,0 +1,32 @@
+{
+  "name": "principle-redesign-from-first-principles",
+  "kind": "principle",
+  "purpose": "Integrate a requirement by redesigning the affected structure as if the requirement had been present from the start, preserving option value.",
+  "triggers": [
+    "Integrating a new requirement into an existing design"
+  ],
+  "inputs": [
+    "Authorized task and new requirement",
+    "All affected source files and current design context"
+  ],
+  "outputs": [
+    "A redesign propagated through types, docs, examples and rationale, delivered incrementally",
+    "Observed edits and checks, or an explicit reduced or provisional proposal"
+  ],
+  "ordinaryExample": "When adding tenant ownership, rethink the data model and access paths with ownership as a foundational assumption, update references, and deliver coherent increments.",
+  "dependencies": [
+    "references/host-capabilities.md"
+  ],
+  "capabilityLimits": [
+    "Inspection requires available source; edits require authorization and writes; checks require observed execution.",
+    "Unavailable writes or execution permit a reduced design proposal; missing design context keeps proposals provisional.",
+    "Preserve disable-model-invocation metadata without assuming host enforcement.",
+    "Host behavior has not been tested."
+  ],
+  "sourcePaths": [
+    "skills/principle-redesign-from-first-principles/SKILL.md"
+  ],
+  "caseIds": [
+    "new-requirement"
+  ]
+}
