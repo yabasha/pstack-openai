@@ -187,6 +187,7 @@ def validate_method(record, kind, root, artifact, required_slice_count=None):
             candidates = [by_id[i] for i in ids]
             judge = by_id[receipt['judge']]
             require(judge['id'] not in ids and judge['role'] == 'judge' and judge['status'] == 'completed', 'fresh completed judge required')
+            require(judge['rubricProvided'] is True, 'judge must receive the rubric')
             require(all(a['role'] == 'candidate' and a['status'] == 'completed' and a['rubricProvided'] is False for a in candidates), 'completed candidates must not receive the rubric')
             require(len({a['taskArtifact'] for a in candidates}) == 1, 'candidates need the same task artifact')
             require(all(a['completedOrder'] < judge['startedOrder'] for a in candidates), 'judge started before candidates completed')
@@ -238,7 +239,7 @@ def validate_method(record, kind, root, artifact, required_slice_count=None):
             require(bool(rejected) and bool(dropouts), 'combined case requires rejected evidence, exhausted retry and dropout exercises')
             for identity, events in rejected.items():
                 require([e['attempt'] for e in events]==[0,1] and events[0]['order']<events[1]['order'] and by_id[identity]['retryCount']==1 and by_id[identity]['status'] in ('failed','blocked'), 'second invalid result exhausts the one retry and must remain a gap')
-            used = set(partition['results'].values()) | set(race['assignments'])
+            used = set(partition['results'].values()) | {race['winner']}
             require(not set(partition['results'].values()) & (set(rejected)|dropouts), 'failed exercise cannot satisfy a required slice')
             require(not used & cancelled, 'cancelled output cannot be integrated')
     except (OSError, ValueError, KeyError, TypeError, AttributeError):

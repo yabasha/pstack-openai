@@ -251,6 +251,51 @@ class DirectAndMethodTests(unittest.TestCase):
             self.assertTrue(self.check())
             self.record['permissions']['writes'] = 'granted'
 
+    def test_cancelled_losing_racer_remains_valid_participant(self):
+        from tests.evidence_fixtures import method_fixture
+        import copy
+        self.select('partition-and-race')
+        receipt = method_fixture(self.root, self.record, 'swarm')
+        receipt['assignments'][4]['role'] = 'race'
+        receipt['race']['assignments'].append('assignment-4')
+        (self.root / self.record['methodReceipt']).write_text(json.dumps(receipt))
+        self.assertEqual([], self.check())
+        for name, mutate in [
+                ('cancelled winner', lambda r: r['race'].update(winner='assignment-4')),
+                ('cancelled partition output', lambda r: r['partition']['results'].update(left='assignment-4')),
+                ('missing quarantine', lambda r: r.update(quarantined=[])),
+                ('incomplete rank-all', lambda r: r['race'].update(rule='rank-all'))]:
+            with self.subTest(name=name):
+                broken = copy.deepcopy(receipt)
+                mutate(broken)
+                (self.root / self.record['methodReceipt']).write_text(json.dumps(broken))
+                self.assertTrue(self.check())
+
+    def test_arena_requires_judge_rubric_delivery(self):
+        from tests.evidence_fixtures import method_fixture
+        import copy
+        self.select('candidate-cross-review')
+        receipt = method_fixture(self.root, self.record, 'arena')
+        for name, mutate in [
+                ('no delivery', lambda a: a.update(rubricProvided=False)),
+                ('absent delivery', lambda a: a.pop('rubricProvided')),
+                ('non-Boolean delivery', lambda a: a.update(rubricProvided='true'))]:
+            with self.subTest(name=name):
+                broken = copy.deepcopy(receipt)
+                judge = next(a for a in broken['assignments'] if a['id'] == broken['judge'])
+                mutate(judge)
+                (self.root / self.record['methodReceipt']).write_text(json.dumps(broken))
+                self.assertTrue(self.check())
+        judge = next(a for a in receipt['assignments'] if a['id'] == receipt['judge'])
+        self.assertIs(True, judge['rubricProvided'])
+        candidates = [a for a in receipt['assignments'] if a['id'] in receipt['candidates']]
+        self.assertTrue(all(a['rubricProvided'] is False for a in candidates))
+        (self.root / self.record['methodReceipt']).write_text(json.dumps(receipt))
+        self.assertEqual([], self.check())
+        candidates[0]['rubricProvided'] = True
+        (self.root / self.record['methodReceipt']).write_text(json.dumps(receipt))
+        self.assertTrue(self.check())
+
     def test_partition_only_walkthrough_and_assignment_operation_binding(self):
         from tests.evidence_fixtures import method_fixture
         self.select('swarm-walkthrough')

@@ -19,7 +19,7 @@ def method_fixture(root, record, kind):
                  startedOrder=10+i if role != 'judge' else 30, completedOrder=20+i if role != 'judge' else 40,
                  requestedModel='inherit-parent', actualModel='unknown', retryCount=1 if role=='invalid' else 0,
                  method=dict(sampleCount=2, sampleDefinition='two fixed synthetic inputs', order='input order'),
-                 taskArtifact='result.txt', rubricProvided=False)
+                 taskArtifact='result.txt', rubricProvided=role == 'judge')
         a.update(resultRevision=a['inputRevision'],resultMethod=dict(a['method']),outputSha256=__import__('hashlib').sha256(target.read_bytes()).hexdigest())
         assignments.append(a)
         record['artifacts'].append(output)
