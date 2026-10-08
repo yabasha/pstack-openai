@@ -1,3 +1,21 @@
+# Verified frozen installation and current limits
+
+The approved version 0.1.0 is installed and enabled through the supported personal marketplace. Operative source remains 5d05ab2458f4cd73c44b24265a3a1920b98b8cf4. Both the source export and installed cache match all 726 frozen files and permission modes, with no extra files. Only the target marketplace entry and plugin enablement were added; existing plugins were retained.
+
+Independent installation review confirmed the frozen copies, actual fresh local runtime discovery of all 51 root skills, exclusion of the three nested Benny skills, and a fresh installed bro smoke invocation. Independent review of the complete report integration range 2103cf63676fab6a49682b8f292786e816641577..955191e370f3fc6fc69ca04e4018b45147ab0768 passed spec compliance and data quality with zero findings. Review SHA-256 is 337fbb66fc441d390675be848e65e51fff2871d430c11494d924d86887db4419. The reviewed committed-HEAD identity and rollback-provenance proof passed, with digest 205c4c9c0bd40cf6e4a1f0434e3e1cca66394aa334eba7fa396c797e955391b4. This later report-only revision requires its own actual-HEAD check; the approved installed copies are not refreshed by report changes.
+
+Only package-discovery earns a formal pass. The bro smoke succeeded, but used a different input from its exact registered acceptance fixture, so plain-restate remains blocked and unrun. Current formal counts are one pass and 104 blocked cases for the CLI host, zero passes and 105 blocked cases for ChatGPT, no reduced passes and no stale evidence. Full acceptance is not established. The 60 focused evidence/release tests passed in 25.874 seconds; package, evidence, catalog and diff checks passed. Prior source209/169.765s and unchanged historical helper92/346 evidence retain their original scope.
+
+Release remains false for actual ChatGPT discovery/invocation and the frozen upstream manifest metadata row's verification consistency. The exact source-ledger error is preserved in the discovery record's limits. The approved inventory, marker and 217-path report allowlist remain unchanged. Changing this frozen metadata or refreshing an installed candidate is outside this report unit.
+
+ChatGPT ordinary Chat, Work and the desktop window have no fresh loading observation. The computer-use tool refused access to the app; this is a tool limitation, not missing installation approval. The current supported personal installation is available for a fresh desktop session, but shared files/configuration do not prove runtime loading. A fresh ChatGPT session must select pstack-openai and produce its own discovery and invocation observations.
+
+The installed smoke model executed only a local skill read; the host also attempted automatic Notion OAuth refresh and reported invalid_grant. Credentials were not repaired. Initial unsupported help, proxy timeout, pre-existing configuration warnings and telemetry timeouts remain disclosed in the durable transcript. No dependency installation, integration setup, personal role customization, Benny enablement, schedules, listeners, release or merge was performed. The prior push/PR approval remains distinct from installation authorization. The existing draft PR remains a review candidate while these limits are open.
+
+The records below preserve earlier outcomes and historical observations. The original authorization Markdown remains verbatim in docs/testing/codex.md history; its former path now holds the exact standalone JSON discovery receipt. Branch, worktree and review evidence are retained.
+
+---
+
 # Current frozen installation evidence
 
 Observed 2026-10-08, Asia/Amman. The separately approved personal skills-only installation of pstack-openai 0.1.0 used operative SHA 5d05ab2458f4cd73c44b24265a3a1920b98b8cf4 and codex-cli 0.161.0. The supported installation CLI completed successfully. Source export /Users/digital-hawk/.codex/plugins/yabasha-local/pstack-openai and installed cache /Users/digital-hawk/.codex/plugins/cache/yabasha-local/pstack-openai/0.1.0 each matched all 726 frozen paths, bytes and modes, with zero extras. Only the approved personal marketplace entry and target enablement changed semantically; no unrelated configuration or credentials were repaired.
