@@ -1,3 +1,13 @@
+# Verified receipt follow-up report ancestor
+
+The actual committed report ancestor `cfffad163584da171a77c110e828c22e3009660d` passed identity_checks and rollback_tested_commit against source freeze `5d05ab2458f4cd73c44b24265a3a1920b98b8cf4` across all 726 committed files and full modes. Its package digest is `257d1df3c9f9d51b92c3268f2db1174ea61c1f42dfdee532e9d1392ab81c90b9`; saved proof SHA-256 is `582b987789341ff02c2f9f3457b48f0c7a29cea875e68d5055b3b3c6e537ddf3`. The index and worktree were clean. All non-report bytes and modes matched the source freeze; only the three corrected source paths differ from F4 outside the same reserved report allowlist. All 210 evidence records changed packageCommit only and remain blocked with zero positive observations.
+
+Package, evidence, catalog and diff checks passed. Release assessment remains false with exactly the two missing actual package-discovery blockers and no stale records. This is proof for the named ancestor, not a claim that this later report revision was already checked. A fresh actual-HEAD proof is required after this report commit and is retained separately in the review workspace. Independent controller review of R1/R2 and the entire follow-up range is pending.
+
+The records below preserve the correction, original rulings and earlier failed checks in their original order. External gates remain closed.
+
+---
+
 # Resumed receipt correction, independent review pending
 
 The renewed human instruction authorized this narrow local R1/R2 follow-up. The controller overrode the earlier final-wave cap for this correction and its independent review. Every external action gate remains closed. The operative source freeze is `5d05ab2458f4cd73c44b24265a3a1920b98b8cf4`, following `48254cbb6efa2a3b489b15cbaa1c78da19316599`. Independent controller review is pending; no merge or release approval is claimed.
