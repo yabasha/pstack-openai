@@ -1,6 +1,6 @@
 # Codex behavioral evidence
 
-On 2026-10-08, all 105 required Codex behavioral cases are blocked and unattempted for package version 0.1.0 at F2 commit `1659eb6f87c2a87a308bb0d5546b937809e312de`. The current session permits local evidence preparation but provides no observed installed-copy discovery. No separate human authorization exists for loading, installation, enabling, settings changes, app restart or fresh host setup. No setup action was requested or attempted, and no runtime denial was observed.
+On 2026-10-08, all 105 required Codex behavioral cases are blocked and unattempted for package version 0.1.0 at F3 commit `e808be2d2b03277fdb1422dd729936e6b775126d`. The current session permits local evidence preparation but provides no observed installed-copy discovery. No separate human authorization exists for loading, installation, enabling, settings changes, app restart or fresh host setup. No setup action was requested or attempted, and no runtime denial was observed.
 
 The [authorization and capability check](../parity/evidence/codex/authorization-capability-check.md) records actual local reads, exposed tool definitions and their limits. Reading source files and counting 51 root files does not prove host discovery. Exact discovery requires the actual installed copy, all 51 root names and exclusion of the three operational Benny skills. No discovery receipt was fabricated.
 
@@ -14,10 +14,14 @@ The three maintenance-only structural entries, pstack-plan-format, upstream-upda
 
 Follow [setup](../setup/codex.md) only after separate explicit authorization for its concrete setup effects. Then inspect actual supported loading and the installed copy in a fresh enabled session. Retain the complete discovery receipt and actual workflow artifacts. Bind successful observations to exposed tools and existing artifacts; use reduced-pass only for observed authorized sequential behavior. Keep denied and unavailable operations blocked.
 
-Run the evidence validator through Bun with --no-install and Python -B, targeting the exact tested commit. A valid blocked record proves accurate accounting, not behavioral support. Inventory integration was completed in the separately reviewed F2 unit. These files do not change inventory, registry or catalog statuses. The controller explicitly relinked the blocked records at these same paths to the reviewed F2 freeze and revalidated their accounting.
+Run the evidence validator through Bun with --no-install and Python -B, targeting the exact tested commit. A valid blocked record proves accurate accounting, not behavioral support. Inventory integration was completed in the separately reviewed F2 unit. These files do not change inventory, registry or catalog statuses. The controller explicitly relinked the blocked records at these same paths to the reviewed F3 freeze and revalidated their accounting.
 
 Historical isolated helper validation belongs to its approved snapshot and remains development-only evidence. It neither authorizes host setup nor proves this candidate loaded. Codex observations do not transfer to ChatGPT.
 
 ## Second freeze linkage
 
 The controller explicitly relinked these existing blocked records to second freeze F2 `1659eb6f87c2a87a308bb0d5546b937809e312de`. The original F1 `18718aa5ee8cfe63a86b2688d9d277a12925e92e` records remain in Git history. This changes the package identity for blocked accounting only. There are no passes to transfer. No fresh host observation, discovery receipt or behavioral execution was produced; all cases remain blocked and unattempted. The original observation date, blocking reasons, proof limits and empty successfulOperations arrays remain unchanged.
+
+## Third freeze linkage
+
+The controller relinked these existing blocked records to third freeze F3 `e808be2d2b03277fdb1422dd729936e6b775126d` after two reviewed dependency fixes: the README destination hash now matches the frozen README, and the dependency test requires the actual blocked registry statuses. F1 `18718aa5ee8cfe63a86b2688d9d277a12925e92e` and F2 `1659eb6f87c2a87a308bb0d5546b937809e312de` remain in Git history. This changes candidate identity for blocked accounting only. No passes were transferred, and no fresh host observation, discovery receipt or behavioral execution occurred. Original dates, observations, blocking reasons, proof limits and empty successfulOperations arrays remain unchanged.

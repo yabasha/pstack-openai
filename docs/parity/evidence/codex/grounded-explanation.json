@@ -1,7 +1,7 @@
 {
   "caseId": "grounded-explanation",
   "packageVersion": "0.1.0",
-  "packageCommit": "1659eb6f87c2a87a308bb0d5546b937809e312de",
+  "packageCommit": "e808be2d2b03277fdb1422dd729936e6b775126d",
   "host": "codex",
   "hostMode": "existing delegated local implementation session; installed-plugin testing unavailable",
   "date": "2026-10-08",

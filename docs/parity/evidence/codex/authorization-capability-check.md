@@ -1,6 +1,6 @@
 # Authorization and capability check
 
-Observed on 2026-10-08 in Asia/Amman. Candidate version 0.1.0, F2 commit 1659eb6f87c2a87a308bb0d5546b937809e312de. This is the existing delegated implementation session, not a fresh loaded-plugin session.
+Observed on 2026-10-08 in Asia/Amman. Candidate version 0.1.0, F3 commit e808be2d2b03277fdb1422dd729936e6b775126d. This is the existing delegated implementation session, not a fresh loaded-plugin session.
 
 Installed-copy discovery is unobserved for this frozen candidate. No separate human authorization exists for package loading, installation, enabling, settings changes or a fresh host setup. The current session exposes source reads and local command execution, but no actual installed pstack copy identity or complete 51-root/3-exclusion discovery receipt was observed. Source reads cannot establish installed discovery.
 
@@ -36,3 +36,7 @@ No installed discovery receipt exists. No package loading, workflow invocation, 
 ## Second freeze linkage
 
 The controller explicitly relinked these existing blocked records to second freeze F2 `1659eb6f87c2a87a308bb0d5546b937809e312de`. The original F1 `18718aa5ee8cfe63a86b2688d9d277a12925e92e` records remain in Git history. This changes the package identity for blocked accounting only. There are no passes to transfer. No fresh host observation, discovery receipt or behavioral execution was produced; all cases remain blocked and unattempted. The original observation date, blocking reasons, proof limits and empty successfulOperations arrays remain unchanged.
+
+## Third freeze linkage
+
+The controller relinked these existing blocked records to third freeze F3 `e808be2d2b03277fdb1422dd729936e6b775126d` after two reviewed dependency fixes: the README destination hash now matches the frozen README, and the dependency test requires the actual blocked registry statuses. F1 `18718aa5ee8cfe63a86b2688d9d277a12925e92e` and F2 `1659eb6f87c2a87a308bb0d5546b937809e312de` remain in Git history. This changes candidate identity for blocked accounting only. No passes were transferred, and no fresh host observation, discovery receipt or behavioral execution occurred. Original dates, observations, blocking reasons, proof limits and empty successfulOperations arrays remain unchanged.
