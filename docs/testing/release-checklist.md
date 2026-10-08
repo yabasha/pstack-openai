@@ -1,3 +1,19 @@
+# Current frozen installation evidence
+
+Observed 2026-10-08, Asia/Amman. The separately approved personal skills-only installation of pstack-openai 0.1.0 used operative SHA 5d05ab2458f4cd73c44b24265a3a1920b98b8cf4 and codex-cli 0.161.0. The supported installation CLI completed successfully. Source export /Users/digital-hawk/.codex/plugins/yabasha-local/pstack-openai and installed cache /Users/digital-hawk/.codex/plugins/cache/yabasha-local/pstack-openai/0.1.0 each matched all 726 frozen paths, bytes and modes, with zero extras. Only the approved personal marketplace entry and target enablement changed semantically; no unrelated configuration or credentials were repaired.
+
+The fresh CLI app-server registered all 51 root skills and excluded the three nested Benny skills. Only the package-discovery acceptance record is now pass/direct. The fresh installed bro invocation completed as a narrow smoke check, but its supplied user sentence did not meet the registered plain-restate case's exact seeded preceding assistant-turn contract. That acceptance case remains blocked and unrun. The durable portable transcript and independent installation review are in docs/testing/codex.md; the exact discovery JSON receipt is in the existing reserved docs/parity/evidence/codex/authorization-capability-check.md path.
+
+Current validated counts are Codex 1 pass, 104 blocked and 0 reduced passes, and ChatGPT 0 passes, 105 blocked and 0 reduced passes. Exactly 209 records remain blocked; none is stale. Full parity and broad workflow acceptance remain unproven. ChatGPT ordinary Chat and Work discovery/invocation and desktop-window loading remain unobserved because CUA refused app access. This is an actual tool limitation, not missing user approval. Shared personal installation does not prove ChatGPT runtime loading.
+
+Release remains false. The missing ChatGPT discovery/invocation blocker remains, and the frozen source ledger's blocked verification for the upstream manifest metadata row no longer matches its now-passing sole discovery record. That source-ledger consistency blocker does not indicate an installation failure. The report unit preserves the frozen inventory and validator instead of changing operative bytes to remove it. Independent controller review of the complete report integration remains pending.
+
+Diagnostics retain the initial unsupported install-help query, proxy initialize timeout, successful fresh stdio fallback, ignored pre-existing mcpServers key, existing local telemetry export timeouts, chronicle warning and automatic Notion OAuth refresh failures. The model executed only the installed skill read, but host background authentication attempted external contact. The root changed no credentials.
+
+Prior source evidence remains scoped to its runs: 209 maintenance tests in 169.765 seconds and historical unchanged helper evidence of 92 tests with 346 assertions. This report-only update does not repeat the full source suite or create a new operative freeze. The same 217 reserved report paths, installed copies and historical report bytes remain preserved.
+
+---
+
 # Current reviewed local candidate
 
 The resumed receipt correction passed independent spec and code-quality review. R1 and R2 are addressed, with no new findings or unresolved review doubts. The cancelled losing racer can remain a participant without its output being integrated; cancelled selected outputs, incomplete rank-all races and missing quarantine still fail. A fresh judge must explicitly receive the rubric while candidates remain blind.

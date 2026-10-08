@@ -3,47 +3,38 @@
   "packageVersion": "0.1.0",
   "packageCommit": "5d05ab2458f4cd73c44b24265a3a1920b98b8cf4",
   "host": "codex",
-  "hostMode": "existing delegated local implementation session; installed-plugin testing unavailable",
+  "hostMode": "fresh ephemeral read-only installed CLI smoke observed; exact registered seeded-assistant acceptance case unrun",
   "date": "2026-10-08",
   "input": "Invoke bro.",
-  "observedOutput": "Not attempted. Inherited prerequisite block from package-discovery. Installed-copy discovery is unobserved for this frozen candidate. No separate human authorization exists for package loading, installation, enabling, settings changes or a fresh host setup. The current session exposes source reads and local command execution, but no actual installed pstack copy identity or complete 51-root/3-exclusion discovery receipt was observed. Source reads cannot establish installed discovery.",
+  "observedOutput": "The separate installed bro smoke session read the registered cached SKILL.md and returned: \"If a request fails, the service tries again up to three times. Sending the same request more than once must never create more than one order.\" CLI exit was 0. This input was supplied inside the user prompt, not as the exact immediately preceding assistant turn required by docs/parity/cases/skills/bro.json. The registered plain-restate acceptance case was not run and cannot be promoted from this smoke result.",
   "status": "blocked",
   "execution": "unavailable",
   "sourcePaths": [
     "skills/bro/SKILL.md"
   ],
   "documentedCapabilities": [
-    "references/host-capabilities.md defines observations, not callable APIs.",
-    "docs/setup/codex.md requires separate loading authorization and actual installed-copy discovery."
+    "docs/parity/cases/skills/bro.json requires the exact seeded immediately preceding assistant turn and a conversation artifact identifying it.",
+    "The installed bro skill retains disable-model-invocation: true; the smoke explicitly selected $pstack-openai:bro and read its registered installed SKILL.md."
   ],
   "exposedTools": [
-    "functions.exec",
-    "functions.wait",
-    "tools.exec_command",
-    "tools.clock__curr_time",
-    "collaboration.spawn_agent",
-    "collaboration.followup_task",
-    "collaboration.send_message",
-    "collaboration.wait_agent",
-    "collaboration.interrupt_agent",
-    "collaboration.list_agents",
-    "mcp__cua_repl.js",
-    "mcp__cua_repl.js_reset"
+    "tools.exec_command"
   ],
   "artifacts": [
+    "docs/testing/codex.md",
     "docs/parity/evidence/codex/authorization-capability-check.md"
   ],
   "limits": [
-    "Installed-copy discovery is unobserved for this frozen candidate. No separate human authorization exists for package loading, installation, enabling, settings changes or a fresh host setup. The current session exposes source reads and local command execution, but no actual installed pstack copy identity or complete 51-root/3-exclusion discovery receipt was observed. Source reads cannot establish installed discovery.",
-    "This case was not attempted; its failure modes and expected outputs were not observed.",
-    "No requested model, case model output, worker independence or fresh loaded session was observed.",
-    "Local structural validation does not establish host behavior."
+    "Package discovery and personal installation are now observed and separately authorized. The exact registered plain-restate case remains unrun because the saved smoke user input differs from its seeded preceding assistant-turn contract.",
+    "The smoke result establishes only the installed skill read and supplied retry-sentence restatement. It does not establish access to or faithful restatement of the registered previous assistant message, failure modes or broader workflow acceptance.",
+    "The smoke session was ephemeral and read-only, with no writes, helpers or workers in the model transcript. Automatic host Notion OAuth refresh nevertheless attempted external contact and failed twice with invalid_grant; no credentials were changed.",
+    "Requested and actual model identities are unknown; inherited model selection was recorded without a model identity.",
+    "ChatGPT ordinary Chat and Work behavior and desktop-window loading remain unobserved."
   ],
   "priorActionIdentities": [],
   "permissions": {
-    "execution": "unavailable",
-    "writes": "granted",
-    "externalActions": "unknown"
+    "execution": "granted",
+    "writes": "denied",
+    "externalActions": "denied"
   },
   "models": {
     "requested": "unknown",
