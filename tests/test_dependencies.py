@@ -156,14 +156,30 @@ class DependencyTests(unittest.TestCase):
             self.assertTrue(dep["binding"]["paths"])
             self.assertEqual(dep["executionStatus"], "blocked")
 
-    def test_case_is_behavioral_and_unobserved(self):
+    def test_case_is_behavioral_and_blocked(self):
         case = json.loads((ROOT / "docs/parity/cases/dependencies.json").read_text())
         registry = json.loads((ROOT / "docs/parity/case-registry.json").read_text())
         entry = next(e for e in registry["entries"] if e["caseId"] == case["id"])
         self.assertFalse(entry["structuralOnly"])
         self.assertEqual(entry["requiredHosts"], ["chatgpt", "codex"])
-        self.assertEqual(entry["hostStatus"], {"chatgpt": "not-run", "codex": "not-run"})
+        self.assertEqual(entry["hostStatus"], {"chatgpt": "blocked", "codex": "blocked"})
         self.assertEqual(entry["sourcePaths"], case["sourcePaths"])
         from tools.validate_package import schema_errors
         schema = json.loads((ROOT / "docs/parity/cases/schema.json").read_text())
         self.assertEqual(schema_errors(case, schema, "dependency case"), [])
+
+    def test_blocked_case_receipts_cannot_be_promoted_to_pass(self):
+        from tools.validate_evidence import validate_evidence
+        for host in ("chatgpt", "codex"):
+            with self.subTest(host=host):
+                receipt = json.loads((ROOT / f"docs/parity/evidence/{host}/dependency-readiness.json").read_text())
+                self.assertEqual(receipt["status"], "blocked")
+                self.assertEqual(receipt["execution"], "unavailable")
+                self.assertEqual(receipt["successfulOperations"], [])
+                self.assertEqual(validate_evidence(receipt, receipt["packageCommit"], ROOT), [])
+                for status in ("pass", "reduced-pass"):
+                    promoted = copy.deepcopy(receipt)
+                    promoted["status"] = status
+                    failures = validate_evidence(promoted, receipt["packageCommit"], ROOT)
+                    self.assertIn("execution: unavailable execution must be blocked or not-run", failures)
+                    self.assertIn("dependency-readiness: missing required observation read", failures)

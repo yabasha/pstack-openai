@@ -1521,7 +1521,7 @@
       "sourcePath": "README.md",
       "sourceSha256": "7f39feae81103e18b567e1fa5075cba86425cf4697a01be66a7422ef93c2c855",
       "destinationPath": "README.md",
-      "destinationSha256": "205821d71f34430c87e77221e52d741fddc2109088b22aa4c55eea829d02963d",
+      "destinationSha256": "4deaad036e82484f1eccce2b06abec11d868efa8a816af873b93abc8d1e34712",
       "kind": "support",
       "packageDependencies": [
         "UPSTREAM.md",
