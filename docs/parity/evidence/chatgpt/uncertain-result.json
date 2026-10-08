@@ -1,0 +1,42 @@
+{
+  "caseId": "uncertain-result",
+  "packageVersion": "0.1.0",
+  "packageCommit": "18718aa5ee8cfe63a86b2688d9d277a12925e92e",
+  "host": "chatgpt",
+  "hostMode": "personal ChatGPT not accessed; host mode unobserved",
+  "date": "2026-10-08",
+  "input": "Figure it out: design and carry out an auditable migration playbook. The initial measurement is ambiguous and the deployment evidence is inaccessible. Investigate accessible evidence and report what remains uncertain.",
+  "observedOutput": "Not attempted. Inherited prerequisite block from package-discovery. No documented supported local plugin loading route is established for this personal ChatGPT context. No actual personal ChatGPT session or installed copy was accessed. No separate human authorization exists for loading, installation, enabling, settings changes or fresh host setup. Personal-host tool probing was not attempted. Current controller filesystem and tools are not personal ChatGPT tools.",
+  "status": "blocked",
+  "execution": "unavailable",
+  "sourcePaths": [
+    "skills/figure-it-out/SKILL.md"
+  ],
+  "documentedCapabilities": [
+    "docs/setup/chatgpt.md leaves the personal loading route unsupported here; supplied source is reduced capability guidance only.",
+    "references/host-capabilities.md requires actual exposed and successful bindings."
+  ],
+  "exposedTools": [],
+  "artifacts": [
+    "docs/parity/evidence/chatgpt/authorization-support-check.md"
+  ],
+  "limits": [
+    "No documented supported local plugin loading route is established for this personal ChatGPT context. No actual personal ChatGPT session or installed copy was accessed. No separate human authorization exists for loading, installation, enabling, settings changes or fresh host setup. Personal-host tool probing was not attempted. Current controller filesystem and tools are not personal ChatGPT tools.",
+    "This case input was not submitted to personal ChatGPT; no model result or expected behavioral output was observed.",
+    "Full and reduced capability are not observed. Runtime cases were not run.",
+    "Exact installed-copy identity, all 51 root names and three canonical nested Benny exclusions remain unobserved.",
+    "No history access, privacy behavior, worker lifecycle, model choice, persistence, integration or negative runtime condition was exercised.",
+    "Local evidence validation checks accounting only. Codex capabilities and results do not transfer to ChatGPT."
+  ],
+  "priorActionIdentities": [],
+  "permissions": {
+    "execution": "unavailable",
+    "writes": "unknown",
+    "externalActions": "unknown"
+  },
+  "models": {
+    "requested": "unknown",
+    "actual": "unknown"
+  },
+  "successfulOperations": []
+}
