@@ -16,7 +16,7 @@ Full capability and reduced capability are NOT OBSERVED. Runtime cases are NOT R
 
 Use the [setup guide](../setup/chatgpt.md) only when a supported personal route is exposed and its concrete setup effects receive separate authorization. A fresh enabled session must supply the actual installed-copy identity, version, frozen SHA, exact 51-root discovery and three canonical nested Benny exclusions. No receipt exists today. Source file reads and Codex results cannot supply it.
 
-Run each registered case in the actual available mode, retaining real outputs and artifacts. Label observed authorized sequential behavior reduced capability. Record missing or denied operations precisely. Do not treat a documented capability as a callable binding.
+Run each registered case in the actual available mode, retaining real outputs and artifacts. Complete native direct tasks may pass with reviewed input, response and outcome artifacts. Label an omitted requirement or sequential substitution for required independent work reduced capability. Arena and Swarm passes require their structured method receipts. Record missing or denied operations precisely. Do not treat a documented capability as a callable binding.
 
 Validate records through Bun with --no-install and Python -B against the exact tested commit. Inventory, registry and catalog statuses are unchanged in this unit. Both host statuses were integrated separately before F2. The controller explicitly relinked these existing blocked records to the reviewed F3 freeze and revalidated their accounting. Historical isolated helper checks remain development-only evidence.
 

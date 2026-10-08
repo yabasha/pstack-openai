@@ -11,7 +11,7 @@ from tools.release_report import registry_checks
 from tools.validate_package import schema_errors
 
 ROOT = Path(__file__).resolve().parents[1]
-SOURCE = Path('/Users/digital-hawk/Herd/pstack-port-research/task-1-20261007/extracted/plugins-df581122cde17e6e27686b5a448bde23e4ad4318/pstack')
+from tests.fixture_paths import SOURCE
 PIN = 'df581122cde17e6e27686b5a448bde23e4ad4318'
 
 

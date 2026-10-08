@@ -98,22 +98,21 @@ export interface CommitRollup {
 export interface GitHubMergeRefusal {
   readonly kind: "refused";
   readonly mergeStateStatus: "BLOCKED";
-  readonly headRollupState: "ERROR" | "FAILURE";
+  readonly headRollupState: RollupState;
 }
 export type GitHubMergeAllowed =
   | {
       readonly kind: "allowed";
       readonly basis: "merge-state";
-      readonly mergeStateStatus: Exclude<MergeStateStatus, "BLOCKED">;
+      readonly mergeStateStatus: Exclude<MergeStateStatus, "BLOCKED" | "UNKNOWN">;
       readonly headRollupState: RollupState;
-    }
-  | {
-      readonly kind: "allowed";
-      readonly basis: "rollup";
-      readonly mergeStateStatus: "BLOCKED";
-      readonly headRollupState: Exclude<RollupState, "ERROR" | "FAILURE">;
     };
-export type GitHubMergeAssessment = GitHubMergeAllowed | GitHubMergeRefusal;
+export interface GitHubMergeUnknown {
+  readonly kind: "unknown";
+  readonly mergeStateStatus: "UNKNOWN";
+  readonly headRollupState: RollupState;
+}
+export type GitHubMergeAssessment = GitHubMergeAllowed | GitHubMergeRefusal | GitHubMergeUnknown;
 interface CiBase {
   readonly source: CheckRead["source"];
   readonly all: NonEmpty<Check>;
@@ -140,7 +139,7 @@ export type CiClean = CiBase & {
   readonly kind: "ci-clean";
   readonly failed: readonly [];
   readonly pending: readonly [];
-  readonly github: GitHubMergeAllowed;
+  readonly github: GitHubMergeAllowed | GitHubMergeUnknown;
 };
 export type CiState = CiFailing | CiGithubRejected | CiPending | CiClean;
 export type PrSnapshot =
@@ -164,7 +163,7 @@ export interface ReadyPr {
     readonly headRefOid?: string;
     readonly mergeability: "clear";
     readonly threads: readonly [];
-    readonly ci: CiClean;
+    readonly ci: CiClean & {readonly github: GitHubMergeAllowed};
     readonly gate: {
       readonly state: "OPEN";
       readonly reviewDecision: Exclude<ReviewDecision, "CHANGES_REQUESTED">;
@@ -180,6 +179,7 @@ export interface MergedPr {
 export type MergeGateReason =
   | "closed-without-merge"
   | "draft-pr"
+  | "forge-blocked"
   | "changes-requested";
 export type MergeBlocker =
   | {
@@ -195,7 +195,7 @@ export type MergeBlocker =
   | {
       readonly kind: "failing-checks";
       readonly pr: PrContext;
-      readonly ci: CiFailing | CiGithubRejected;
+      readonly ci: CiFailing;
     }
   | {
       readonly kind: "merge-gate";
@@ -222,7 +222,7 @@ export type QueryFailure =
       readonly code: number;
     }
   | {
-      readonly kind: "checks-unavailable";
+      readonly kind: "checks-unavailable" | "mergeability-unknown";
       readonly retryable: true;
       readonly detail: string;
     }

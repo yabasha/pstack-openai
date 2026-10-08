@@ -75,6 +75,7 @@ def fixture(root):
               expectedBlocked='Explicit block', forbiddenClaims=['Inferred pass']))
         entries.append(dict(caseId=case_id, caseFile=case_path, sourcePaths=scope,
               requiredHosts=['chatgpt', 'codex'], structuralOnly=False,
+              executionModes={'pass':['direct','workers'],'reduced-pass':['direct','sequential','workers']}, requiredPermissions={'pass':[],'reduced-pass':[]},
               hostStatus={'chatgpt': 'not-run', 'codex': 'not-run'},
               requiredObservations={'pass': sorted(DISCOVERY) if case_id == 'package-discovery' else ['read'],
                   'reduced-pass': sorted(DISCOVERY | {'read'}) if case_id == 'package-discovery' else ['read']}))
@@ -269,6 +270,17 @@ class RootPolicyTests(unittest.TestCase):
             (self.root / f'docs/parity/evidence/{host}.txt').unlink()
         report = self.report()
         self.assertEqual(report['workflowCoverage']['observedSourceFiles'], 0)
+        for host in ('chatgpt','codex'):
+            self.assertEqual(0,report['byHost'][host]['pass'])
+            self.assertEqual(0,report['byHost'][host]['reduced-pass'])
+            self.assertEqual(1,report['rawClaimsByHost'][host]['pass'])
+
+    def test_duplicate_discovery_cannot_count_as_validated_pass(self):
+        self.change_records(lambda records: records.append(dict(records[1])))
+        report=self.report()
+        self.assertEqual(0,report['byHost']['chatgpt']['pass'])
+        self.assertFalse(report['byHost']['chatgpt']['packageDiscovery'])
+        self.assertTrue(any('duplicate/conflicting' in e for e in report['blockers']))
 
     def test_discovery_excludes_nested_skills(self):
         path = 'docs/parity/evidence/codex.txt'

@@ -28,8 +28,7 @@
       "references/host-capabilities.md",
       "references/model-roles.md",
       "references/orchestration-contract.md",
-      "references/workflow-ownership.md",
-      "references/agent-prompts/poteto-agent.md"
+      "references/workflow-ownership.md"
     ],
     "licenseProvenance": {
       "license": "MIT",

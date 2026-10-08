@@ -12,7 +12,7 @@ function ciCell(row: T.PrSnapshot): string {
     case "ci-failing":
       return `❌ ${row.ci.failed.length} failed${row.ci.pending.length ? `, ${row.ci.pending.length} pending` : ""}${was}`;
     case "ci-github-rejected":
-      return `❌ GitHub reports failing checks${was}`;
+      return `⛔ forge merge blocked${was}`;
     default: {
       const exhaustive: never = row.ci;
       return exhaustive;
@@ -36,6 +36,8 @@ function mergeCell(row: T.PrSnapshot): string {
   if (row.facts.isDraft) return "⏸ draft";
   if (row.facts.reviewDecision === "CHANGES_REQUESTED")
     return "⚠️ changes requested";
+  if (row.facts.mergeStateStatus === "BLOCKED") return "forge blocked";
+  if (row.facts.mergeable === "UNKNOWN" || row.facts.mergeStateStatus === "UNKNOWN") return "unknown";
   return row.facts.mergeable === "CONFLICTING" ||
     row.facts.mergeStateStatus === "DIRTY" ||
     row.facts.mergeStateStatus === "CONFLICTING"
@@ -87,16 +89,11 @@ function renderBlocker(blocker: T.MergeBlocker | StatusQueryBlocker): string {
         ...blocker.threads.map(threadLine),
       ].join("\n");
     case "failing-checks": {
-      const failed = blocker.ci.kind === "ci-failing" ? blocker.ci.failed : [];
+      const failed = blocker.ci.failed;
       const details = failed.map(
         (check) =>
           `${check.name} ${check.reportedState} ${check.description} ${check.link}`
       );
-      if (blocker.ci.kind === "ci-github-rejected")
-        details.push(
-          `mergeStateStatus=${blocker.ci.github.mergeStateStatus}`,
-          `headRollupState=${blocker.ci.github.headRollupState}`
-        );
       return [
         "BLOCKER: failing-checks",
         `pr=${blocker.pr.number}`,
@@ -108,6 +105,8 @@ function renderBlocker(blocker: T.MergeBlocker | StatusQueryBlocker): string {
       const action =
         blocker.reason === "closed-without-merge"
           ? "restore or remove the closed PR from the queued stack"
+          : blocker.reason === "forge-blocked"
+            ? "resolve the forge merge restriction and recheck the pinned head"
           : blocker.reason === "draft-pr"
             ? "mark the PR ready for review before waiting for the merge queue"
             : "resolve the changes-requested review before waiting for the merge queue";

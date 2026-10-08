@@ -5,16 +5,10 @@ export function assessGitHubMerge(args: {
   readonly mergeStateStatus: T.MergeStateStatus;
   readonly headRollupState: T.RollupState;
 }): T.GitHubMergeAssessment {
+  if (args.mergeStateStatus === "UNKNOWN") return {kind: "unknown", mergeStateStatus: args.mergeStateStatus, headRollupState: args.headRollupState};
   if (args.mergeStateStatus === "BLOCKED") {
-    if (args.headRollupState === "ERROR" || args.headRollupState === "FAILURE")
-      return {
-        kind: "refused",
-        mergeStateStatus: args.mergeStateStatus,
-        headRollupState: args.headRollupState,
-      };
     return {
-      kind: "allowed",
-      basis: "rollup",
+      kind: "refused",
       mergeStateStatus: args.mergeStateStatus,
       headRollupState: args.headRollupState,
     };
@@ -167,7 +161,7 @@ function threadBlocker(row: T.PrSnapshot): T.MergeBlocker | null {
 }
 const ciBlocker = (row: T.PrSnapshot): T.MergeBlocker | null =>
   row.kind === "open" &&
-  (row.ci.kind === "ci-failing" || row.ci.kind === "ci-github-rejected")
+  row.ci.kind === "ci-failing"
     ? { kind: "failing-checks", pr: row.context, ci: row.ci }
     : null;
 function gateReason(
@@ -177,6 +171,7 @@ function gateReason(
   if (row.kind === "merged") return null;
   if (row.kind === "closed") return "closed-without-merge";
   if (row.facts.isDraft && !allowDraft) return "draft-pr";
+  if (row.facts.mergeStateStatus === "BLOCKED") return "forge-blocked";
   return row.facts.reviewDecision === "CHANGES_REQUESTED"
     ? "changes-requested"
     : null;
@@ -211,6 +206,8 @@ function readyContribution(
     gateReason(row, allowDraft) !== null
   )
     return null;
+  if (row.facts.mergeable === "UNKNOWN" || row.ci.github.kind === "unknown")
+    throw new WatcherQueryError({kind: "mergeability-unknown", retryable: true, detail: "forge mergeability remains unknown"});
   const reviewDecision = row.facts.reviewDecision;
   if (reviewDecision === "CHANGES_REQUESTED") return null;
   return {
@@ -220,7 +217,7 @@ function readyContribution(
       headRefOid: row.facts.headRefOid ?? undefined,
       mergeability: "clear",
       threads: [],
-      ci: row.ci,
+      ci: {...row.ci, github: row.ci.github},
       gate: {
         state: "OPEN",
         reviewDecision,

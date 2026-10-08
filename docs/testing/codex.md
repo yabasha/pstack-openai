@@ -12,7 +12,7 @@ The three maintenance-only structural entries, pstack-plan-format, upstream-upda
 
 ## Resume and validation
 
-Follow [setup](../setup/codex.md) only after separate explicit authorization for its concrete setup effects. Then inspect actual supported loading and the installed copy in a fresh enabled session. Retain the complete discovery receipt and actual workflow artifacts. Bind successful observations to exposed tools and existing artifacts; use reduced-pass only for observed authorized sequential behavior. Keep denied and unavailable operations blocked.
+Follow [setup](../setup/codex.md) only after separate explicit authorization for its concrete setup effects. Then inspect actual supported loading and the installed copy in a fresh enabled session. Retain the complete discovery receipt and actual workflow artifacts. Bind actual tool operations to exposed tools and existing artifacts. Native input, response and outcome review use the separate native-observation contract. Complete direct tasks may pass; an omitted requirement or sequential substitution for required independent work uses reduced-pass. Arena and Swarm passes require their structured method receipts. Keep denied and unavailable operations blocked.
 
 Run the evidence validator through Bun with --no-install and Python -B, targeting the exact tested commit. A valid blocked record proves accurate accounting, not behavioral support. Inventory integration was completed in the separately reviewed F2 unit. These files do not change inventory, registry or catalog statuses. The controller explicitly relinked the blocked records at these same paths to the reviewed F3 freeze and revalidated their accounting.
 

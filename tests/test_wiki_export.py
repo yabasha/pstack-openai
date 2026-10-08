@@ -34,14 +34,8 @@ class WikiExportTests(unittest.TestCase):
     def test_wiki_links_resolve(self):
         output = self.fixture()
         export_wiki(ROOT, output)
-        for page in output.glob('*.md'):
-            text = re.sub(r'```.*?```', '', page.read_text(), flags=re.S)
-            text = re.sub(r'`[^`\n]+`', '', text)
-            for target in re.findall(r'!?\[[^\]]*\]\(([^\s)]+)', text):
-                if ':' in target or target.startswith('#'):
-                    continue
-                path = target.split('#')[0]
-                self.assertTrue((output / path).exists() or (output / (path + '.md')).exists(), (page.name, target))
+        from tools.export_wiki import validate_links
+        self.assertEqual([], validate_links({p.name:p.read_bytes() for p in output.iterdir()}))
         for overview in ('docs/skills/README.md', 'docs/principles/README.md', 'docs/guide/README.md'):
             source = (ROOT / overview).read_text()
             exported = next(p.read_text() for p in output.glob('*.md') if f'Source: `{overview}`' in p.read_text())
@@ -71,3 +65,35 @@ class WikiExportTests(unittest.TestCase):
 
 if __name__ == '__main__':
     unittest.main()
+
+class WikiAnchorTests(unittest.TestCase):
+    def test_heading_fragments_and_directory_suffix(self):
+        from tools.export_wiki import validate_links
+        pages = {'Home.md': b'# Home\n[a](topic#same-1) [b](#home)\n', 'topic.md': b'# Same\n## Same\n'}
+        self.assertEqual([],validate_links(pages))
+        pages['Home.md'] += b'[bad](#missing)\n'
+        self.assertTrue(validate_links(pages))
+        from tools.export_wiki import heading_ids
+        self.assertEqual({'same','same-1','same-1-1','inline-code'},heading_ids('# Same\n## Same\n# Same-1\n# Inline `code`\n```text\n# Not a heading\n```\n'))
+
+    def test_directory_fragment_survives_export(self):
+        import shutil
+        with tempfile.TemporaryDirectory(dir=HERD) as directory:
+            root=Path(directory)/'source';root.mkdir()
+            shutil.copytree(ROOT/'docs',root/'docs')
+            shutil.copytree(ROOT/'references',root/'references')
+            shutil.copytree(ROOT/'skills',root/'skills')
+            shutil.copytree(ROOT/'automations',root/'automations')
+            for name in ('plugin.json','README.md','UPSTREAM.md','LICENSE'):
+                shutil.copy2(ROOT/name,root/name)
+            # Only this selected page matters in the focused export fixture.
+            for p in list((root/'docs').rglob('*.md')):
+                if 'skills' not in p.parts: p.write_text('# Fixture\n')
+            for p in (root/'docs/skills').glob('*.md'): p.write_text('# Fixture\n')
+            (root/'docs/compatibility.md').write_text('# Fixture\n[directory](fixture-support/#fixture-support)\n')
+            support=root/'docs/fixture-support';support.mkdir();(support/'one.txt').write_text('fixture')
+            output=Path(directory)/'output';output.mkdir()
+            from types import SimpleNamespace
+            with patch('tools.export_wiki.subprocess.run',return_value=SimpleNamespace(stdout='a'*40)):
+                export_wiki(root,output)
+            self.assertIn('(docs--fixture-support#fixture-support)',(output/'docs--compatibility.md').read_text())

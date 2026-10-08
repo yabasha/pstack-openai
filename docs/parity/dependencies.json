@@ -1192,7 +1192,7 @@
     {
       "id": "profile-trace-sqlite",
       "requiredProof": "Discover the matching capture/parser and source symbols. Retain original artifact identity/order and map queries to it. SQLite conversion writes only authorized output. Live instrumentation requires explicit mutation scope.",
-      "blockedReason": "No live profiler, parser, SQLite conversion or source mapping observed. Supplied trace analysis is reduced and never proves a new live capture or intervention.",
+      "blockedReason": "No live profiler, parser, SQLite conversion or source mapping observed. Supplied traces can fully satisfy trace-forensics when actual parsing, source mapping and required execution are observed. They are reduced for runtime-forensics when new live capture or intervention is omitted.",
       "setupEffects": "No profiler or parser installation, implicit uploads, new captures or live hotfixes. Separate authorization for execution and storage.",
       "binding": {
         "kind": "contract",
@@ -1989,7 +1989,7 @@
       "sourcePath": "automations/benny/README.md",
       "sourceSha256": "ca3c42cbb7f0bf7068f7407eb355815e6c234d5c2786942f3cbe751a3690024b",
       "destinationPath": "automations/benny/README.md",
-      "destinationSha256": "d5c48f46d909e771f5c19a02975ffd942990978dfbb153012c8c21beb0a8472b",
+      "destinationSha256": "c939765bd07551addd0bfa6b59b9ceed8b227272b717713c1fe15be7c3e1132c",
       "kind": "support",
       "packageDependencies": [
         "references/host-capabilities.md",
@@ -4063,7 +4063,7 @@
       "sourcePath": "docs/guide/10-recipes-and-pitfalls.md",
       "sourceSha256": "c652474764b08da4a6364d85f5d03cf1fc1cf35e9d7c549348fb66e2d09f7b1f",
       "destinationPath": "docs/guide/10-recipes-and-pitfalls.md",
-      "destinationSha256": "72c0797b1f1091f2d7ae510408879aa1641f0039954ed2e4fbb94fe7114408d0",
+      "destinationSha256": "4be34d37aa0dce687d7bcf13951369f9c9bd320a58391474f511cf9afd00b1f8",
       "kind": "support",
       "packageDependencies": [
         "LICENSE",
@@ -5689,7 +5689,7 @@
       "sourcePath": "skills/poteto-mode/SKILL.md",
       "sourceSha256": "31cd02290360ce63564ef22b74d69fc6d90e62181d05a644cbed8f6c47cc9412",
       "destinationPath": "skills/poteto-mode/SKILL.md",
-      "destinationSha256": "ab6800641032d3235230d47e5a81ea9a7369d012bd25dcc2a5b2dc681249f6a6",
+      "destinationSha256": "cb03eedb91cea96b570af30a7af317c6aae6a47a321cff2e82af656141ab0f14",
       "kind": "root-skill",
       "packageDependencies": [
         "skills/poteto-mode/playbooks/prototype.md",
@@ -6520,7 +6520,7 @@
       "sourcePath": "skills/poteto-mode/playbooks/babysit.md",
       "sourceSha256": "a0346c37c2313f36a863b80f66ee7b98059c2242adf74fc7b3e48abdb9ec6f5a",
       "destinationPath": "skills/poteto-mode/playbooks/babysit.md",
-      "destinationSha256": "e23eece631e9a7605d34016b6effaff7a4cf42e10d8e3594feec60f25c3f9b82",
+      "destinationSha256": "85883ceae3e4485fb00ed77b9337a48148bd0263ef045a6dc496761b7fa8fa39",
       "kind": "playbook",
       "packageDependencies": [
         "skills/poteto-mode/playbooks/shipping.md",
@@ -7285,7 +7285,7 @@
       "sourcePath": "skills/poteto-mode/playbooks/orchestrate.md",
       "sourceSha256": "d42b4375f1bd4ce23da0b575a198571a2117df7eea10c3c9fc6d92ae1053f7be",
       "destinationPath": "skills/poteto-mode/playbooks/orchestrate.md",
-      "destinationSha256": "42276d0bd6e24db526a48cfded45de7109902edc96976c51b630704e28941bf4",
+      "destinationSha256": "bd3d7d52f475effd6c0365125da3dccbef4c79a93be5cd0752a1bc71545e0adb",
       "kind": "playbook",
       "packageDependencies": [
         "skills/poteto-mode/SKILL.md",
@@ -7309,8 +7309,7 @@
         "references/host-capabilities.md",
         "references/model-roles.md",
         "references/orchestration-contract.md",
-        "references/workflow-ownership.md",
-        "references/agent-prompts/poteto-agent.md"
+        "references/workflow-ownership.md"
       ],
       "dependencyIds": [
         "control-cli",
@@ -7888,7 +7887,7 @@
       "sourcePath": "skills/poteto-mode/playbooks/shipping.md",
       "sourceSha256": "19f3f6803a7bbe9ff04f624b03e3b55f07ac0a05e991aa00d5fe51239b920b2a",
       "destinationPath": "skills/poteto-mode/playbooks/shipping.md",
-      "destinationSha256": "e6569f2c2ee8903d6d2bfc1516a7fdd4968b51d9288dcb61a1de751b046fc837",
+      "destinationSha256": "94bb986b545617ed6123fa76efd5a5ceac73601e232bde929aad357fba1ece9b",
       "kind": "playbook",
       "packageDependencies": [
         "skills/poteto-mode/playbooks/babysit.md",
@@ -9037,7 +9036,7 @@
       "sourcePath": "skills/poteto-mode/scripts/watch-pr/cli.test.ts",
       "sourceSha256": "a35592b4c6da96caf8d47987e9cd503fab6c7774ab87d11a43f24b4b5df2a9d1",
       "destinationPath": "skills/poteto-mode/scripts/watch-pr/cli.test.ts",
-      "destinationSha256": "5a52309fffe8c880d5f1fbe6f7115c9e8518f9814d0333b3375653d55911cc15",
+      "destinationSha256": "843574a1755a375984d6ed207272ff378a71d16550c13bd0832eb56bb681f03f",
       "kind": "support",
       "packageDependencies": [
         "skills/poteto-mode/scripts/bootstrap.ts",
@@ -9186,7 +9185,7 @@
       "sourcePath": "skills/poteto-mode/scripts/watch-pr/github.test.ts",
       "sourceSha256": "0cbce011050522938523e36bb42a260e92b812dcd2076930fa681672ad316b24",
       "destinationPath": "skills/poteto-mode/scripts/watch-pr/github.test.ts",
-      "destinationSha256": "25d931c0c47a79e2948f72895f318ccfe2f98977e5afde4e7095aa142c1a13f6",
+      "destinationSha256": "a50b32aa5fd92c5d54ebb0a1b1ddc2545d924ff7a96d3794742bd8ed2949d79b",
       "kind": "support",
       "packageDependencies": [
         "skills/poteto-mode/scripts/bootstrap.ts",
@@ -9278,7 +9277,7 @@
       "sourcePath": "skills/poteto-mode/scripts/watch-pr/github.ts",
       "sourceSha256": "d1bbbafbe8e2c703c84da2029de7f2c4011412512f8cf65a42100f46bcb92c8a",
       "destinationPath": "skills/poteto-mode/scripts/watch-pr/github.ts",
-      "destinationSha256": "dee99091301dfa74a441c3adc229e806b5df65c5aae12108b9f4ebb8a9f2908b",
+      "destinationSha256": "d286c466014df5c21a98cab4d0aa4bebe22dd1295cbe27419b52ecc478892e8b",
       "kind": "support",
       "packageDependencies": [
         "skills/poteto-mode/scripts/bootstrap.ts",
@@ -9428,7 +9427,7 @@
       "sourcePath": "skills/poteto-mode/scripts/watch-pr/policy.test.ts",
       "sourceSha256": "a9fedb25feefd1f57ef6a662f80c99018690170a3a8070773a08eaf694d1d3d9",
       "destinationPath": "skills/poteto-mode/scripts/watch-pr/policy.test.ts",
-      "destinationSha256": "b0ab044260240620f2e9c8d18e2dd7e5f0e1bd9bde92735d4a293d234a1acf05",
+      "destinationSha256": "b377f82cd332fd5e24be6bfe0087d7307d39c1eb27ca61dbc4b52970f41f5da6",
       "kind": "support",
       "packageDependencies": [
         "skills/poteto-mode/scripts/bootstrap.ts",
@@ -9483,7 +9482,7 @@
       "sourcePath": "skills/poteto-mode/scripts/watch-pr/policy.ts",
       "sourceSha256": "68d240505852cf23c9b2dea463342e9e61243f486b3cc86c735d140f9ee7be49",
       "destinationPath": "skills/poteto-mode/scripts/watch-pr/policy.ts",
-      "destinationSha256": "07c974c132d80f07100df8ea7382424dc43345763413eed45371dbbfff18514d",
+      "destinationSha256": "6a89a4698138ce64cf5285b67ff92750cdc2a3f8ba48946fa202678c72ac37a4",
       "kind": "support",
       "packageDependencies": [
         "skills/poteto-mode/scripts/bootstrap.ts",
@@ -9586,7 +9585,7 @@
       "sourcePath": "skills/poteto-mode/scripts/watch-pr/render.ts",
       "sourceSha256": "2b709e86628d5b8fdb61f860e60ababc342b0626c67576305442cf548283a604",
       "destinationPath": "skills/poteto-mode/scripts/watch-pr/render.ts",
-      "destinationSha256": "2b709e86628d5b8fdb61f860e60ababc342b0626c67576305442cf548283a604",
+      "destinationSha256": "edb559abd29395cd684a60265e29ba9859ce266edd2762d23af7b4cb3f5dd434",
       "kind": "support",
       "packageDependencies": [
         "skills/poteto-mode/scripts/bootstrap.ts",
@@ -9755,7 +9754,7 @@
       "sourcePath": "skills/poteto-mode/scripts/watch-pr/types.ts",
       "sourceSha256": "64ba6221e3bfe61bbb292337d199cdec6309455477280efb060203dba34e0e91",
       "destinationPath": "skills/poteto-mode/scripts/watch-pr/types.ts",
-      "destinationSha256": "093ab54b297427b05df5274bce72d33f49154cc42c2ff46e1f79a0faf599833e",
+      "destinationSha256": "951ba0fc933b215757c6a1eeca6b71801eb52247eb97a24bb9d585a6d301f834",
       "kind": "support",
       "packageDependencies": [
         "skills/poteto-mode/scripts/bootstrap.ts",

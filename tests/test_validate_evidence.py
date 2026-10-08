@@ -120,13 +120,21 @@ class EvidenceTests(unittest.TestCase):
             self.record['permissions']['externalActions'] = 'granted'
             self.record['priorActionIdentities'] = ['action-1']
             operations = set(entry['requiredObservations']['pass']) | {'spawn','inspect-result'}
-            self.record['successfulOperations'] = [dict(operation=x,tool='observed.spawn',evidence='result.txt') for x in operations]
+            native = operations & {'supplied-input','response','review-outcome'}
+            self.record['nativeObservations'] = [dict(observation=x,evidence='result.txt',reviewedBy='synthetic-reviewer') for x in native]
+            self.record['successfulOperations'] = [dict(operation=x,tool='observed.spawn',evidence='result.txt') for x in operations-native]
+            if entry.get('requiredMethod'):
+                from tests.evidence_fixtures import method_fixture
+                method_fixture(self.root, self.record, entry['requiredMethod'])
             self.assertEqual([],self.check(),entry['caseId'])
             for omitted in entry['requiredObservations']['pass']:
                 with self.subTest(case=entry['caseId'], omitted=omitted):
                     original = self.record['successfulOperations']
+                    native_original = self.record.get('nativeObservations', [])
+                    self.record['nativeObservations'] = [x for x in native_original if x['observation'] != omitted]
                     self.record['successfulOperations'] = [x for x in original if x['operation'] != omitted]
                     self.assertTrue(self.check())
+                    self.record['nativeObservations'] = native_original
                     self.record['successfulOperations'] = original
 
     def test_read_only_reduced_with_denied_writes(self):
@@ -171,3 +179,93 @@ class EvidenceTests(unittest.TestCase):
         bad = subprocess.run(command, capture_output=True, text=True)
         self.assertEqual(1, bad.returncode)
         self.assertIn('packageCommit', bad.stdout)
+
+class DirectAndMethodTests(unittest.TestCase):
+    setUp = EvidenceTests.setUp
+    check = EvidenceTests.check
+    def select(self, case):
+        registry = json.loads((self.root/'docs/parity/case-registry.json').read_text())
+        entry = next(e for e in registry['entries'] if e['caseId'] == case)
+        self.record.update(caseId=case, sourcePaths=entry['sourcePaths'])
+        return entry
+
+    def test_direct_completion_without_execution_or_workers(self):
+        for case in ('plain-restate', 'dense-doc', 'prose-rewrite'):
+            self.select(case)
+            self.record.update(execution='direct', successfulOperations=[], exposedTools=[],
+                nativeObservations=[dict(observation=o,evidence='result.txt',reviewedBy='synthetic-reviewer') for o in ('supplied-input','response','review-outcome')])
+            self.record['permissions']['execution'] = 'unavailable'
+            self.record['permissions']['writes'] = 'denied'
+            self.assertEqual([], self.check(), case)
+
+    def test_direct_discovery_requires_complete_operations(self):
+        self.select('package-discovery')
+        self.record.update(execution='direct', successfulOperations=[dict(operation=o,tool='observed.spawn',evidence='result.txt') for o in ('discover-package','enumerate-skills','inspect-installed-copy')])
+        self.record['permissions']['execution'] = 'unavailable'
+        self.assertEqual([], self.check())
+        self.record['successfulOperations'].pop()
+        self.assertTrue(self.check())
+
+    def test_direct_cannot_bypass_required_workers(self):
+        self.select('candidate-cross-review')
+        self.record['execution'] = 'direct'
+        self.assertTrue(self.check())
+
+    def test_generic_workers_do_not_prove_methods(self):
+        for case in ('candidate-cross-review','partition-and-race'):
+            self.select(case)
+            self.assertTrue(self.check(), case)
+
+    def test_structured_arena_and_swarm_relationships(self):
+        from tests.evidence_fixtures import method_fixture
+        import copy
+        for case, kind in [('candidate-cross-review','arena'),('partition-and-race','swarm')]:
+            self.select(case)
+            self.record['successfulOperations'] = [dict(operation=o,tool='observed.spawn',evidence='result.txt') for o in ('read','inspect-result')]
+            receipt = method_fixture(self.root,self.record,kind)
+            self.assertEqual([], self.check(), kind)
+            bad = [lambda r: r['assignments'][0].update(inputRevision='b'*40),
+                   lambda r: r['assignments'][0].update(resultRevision='d'*40),
+                   lambda r: r['assignments'][0].update(resultMethod={'sampleCount':99}),
+                   lambda r: r['assignments'][0].update(outputSha256='0'*64),
+                   lambda r: r['assignments'][0].pop('resultMethod'),
+                   lambda r: r['assignments'][0].update(outputOwner='someone-else'),
+                   lambda r: r['assignments'][1].update(outputPath=r['assignments'][0]['outputPath'])]
+            if kind == 'arena':
+                bad += [lambda r: r.update(candidates=['assignment-0']),
+                        lambda r: r['assignments'][2].update(workerId=r['assignments'][0]['workerId']),
+                        lambda r: r['assignments'][2].update(startedOrder=5)]
+            else:
+                bad += [lambda r: r['partition']['results'].pop('left'),
+                        lambda r: r.update(quarantined=[]),
+                        lambda r: r['race'].update(winner='assignment-3'),
+                        lambda r: r.update(failureExercises=[]),
+                        lambda r: r['failureExercises'].pop(1),
+                        lambda r: r['failureExercises'][1].update(attempt=2)]
+            for mutate in bad:
+                broken = copy.deepcopy(receipt); mutate(broken)
+                (self.root/self.record['methodReceipt']).write_text(json.dumps(broken))
+                self.assertTrue(self.check(), (kind,broken))
+            (self.root/self.record['methodReceipt']).write_text(json.dumps(receipt))
+            self.record['permissions']['writes'] = 'denied'
+            self.assertTrue(self.check())
+            self.record['permissions']['writes'] = 'granted'
+
+    def test_partition_only_walkthrough_and_assignment_operation_binding(self):
+        from tests.evidence_fixtures import method_fixture
+        self.select('swarm-walkthrough')
+        receipt=method_fixture(self.root,self.record,'swarm-partition')
+        self.assertEqual(3,len(receipt['partition']['requiredSlices']))
+        (self.root/self.record['methodReceipt']).write_text(json.dumps(receipt))
+        self.assertEqual([],self.check())
+        broken=json.loads(json.dumps(receipt));broken['partition']['requiredSlices'].pop();broken['partition']['results'].pop('third')
+        (self.root/self.record['methodReceipt']).write_text(json.dumps(broken))
+        self.assertTrue(self.check())
+        (self.root/self.record['methodReceipt']).write_text(json.dumps(receipt))
+        self.record['successfulOperations']=[o for o in self.record['successfulOperations'] if not (o.get('assignmentId')=='assignment-0' and o['operation']=='isolated-write')]
+        self.assertTrue(self.check())
+
+    def test_native_response_cannot_be_fabricated_as_a_tool_operation(self):
+        self.select('plain-restate')
+        self.record.update(execution='direct',successfulOperations=[dict(operation=o,tool='observed.spawn',evidence='result.txt') for o in ('supplied-input','response','review-outcome')])
+        self.assertTrue(any('native text' in e for e in self.check()))

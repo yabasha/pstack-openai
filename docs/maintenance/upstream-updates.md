@@ -14,7 +14,7 @@ bun --no-install -e 'const r=Bun.spawnSync(["python3","-B","-m","tools.sync_upst
 ```
 
 2. Check writes a new `.upstream/reviews/<candidate>/` bundle. Open summary.md and report.json, source copies, complete manifests, file/skill changes, notice changes, conflicts, possible renames and callers. Existing bundles are never overwritten. To prepare the same candidate, intentionally move the check bundle to a retained sibling first, or run prepare directly.
-3. Prepare supplies exact-byte drafts only where the original adaptation permits them. Report/schema version 2 binds accepted-baseline receipt and evidence digests. Pending resolutions use version 1. draft.patch is a review aid; its inherited no-final-newline limitation means exact drafts/resolved bytes and hashes govern apply. Never apply that patch mechanically.
+3. Prepare supplies exact-byte drafts only where the original adaptation permits them. Report/schema version 2 binds accepted-baseline receipt and evidence digests. Pending resolutions use version 1. draft.patch is a review aid with explicit no-final-newline markers; exact drafts/resolved bytes and hashes govern apply. Never apply that patch mechanically.
 4. Preserve every original bundle artifact. Copy decisions into the strict version 2 [actionable resolution format](update-resolutions.example.json). Bind reviewSha256, higher candidateVersion, every changed file's disposition, contentPath and reviewedSha256, rationale and dependent callers. Put manual bytes under resolved/. Explicit deletion uses null content/hash. Review both paired rename decisions and all notices. Empty caller lists establish no coverage.
 
 ## Exact approved apply and validation
@@ -47,3 +47,43 @@ Release report exits 0 only when root evidence gates establish readiness; exit 1
 Freeze operative bytes, catalog and navigation together. Later reports must identify that tested ancestor through the exact [tested-package marker contract](rollback.md). Named narrow report exceptions and inventory verification may differ; setup, helpers and navigation may not. Record an explicit second freeze after blocked host inventory merge/catalog regeneration, then fresh blocked discovery at that final SHA. Preserve both freeze identities and prior records in Git history. The final handoff must keep final navigation byte-identical or explicitly refreeze.
 
 Expected visible result for `upstream-update-walkthrough` is an inspected source review, exact approved staged diff, validation results and separately reviewed acceptance before the next update. With no fetch/write authorization, an offline fixture rehearsal or read-only review is reduced capability. Missing inputs, conflicts, stale identities, denied setup or invalid host observations blocks the affected stage. Neither helper snapshots nor update fixtures establish a host pass.
+
+## Reviewed package metadata closure
+
+A complete package also requires `packageMetadata` in its version 2 resolutions. It contains `contentPath`, such as `resolved/package-metadata.json`, and `reviewedSha256`. The out-of-band resolution approval digest binds this reference, which binds every metadata file. Missing or incomplete closure stops before any package mutation. Inventory-only maintenance fixtures exercise a smaller development contract and are not proof of full-package updates.
+
+The referenced JSON has exactly schemaVersion 1, kind `pstack-package-metadata`, inventory, fragmentOwners and files. Supply the complete reviewed candidate inventory with exact candidate source identities and destination mappings. Every host verification must be not-run with empty evidence. Dependencies, dispositions, rationale and license provenance require review. fragmentOwners maps every candidate source path to one `docs/parity/adaptations/<name>.json` owner. Added or removed workflows require explicit reviewed ownership, cases, catalog and dependency changes; apply does not invent them.
+
+Each files entry has path, contentPath and sha256. Exact bytes live under resolved/; deliberate deletions use null contentPath and sha256. Allowed files are the registry, case definitions, catalog inputs and generated pages, dependency audit, remnant dispositions, support map and `docs/parity/baseline-policy.json`. Schemas, code, host evidence and acceptance receipts cannot enter this write set. At minimum supply the registry with all candidate hostStatus values not-run, dependencies and baseline policy. Include regenerated catalog pages and any changed case/catalog definitions or removed pages needed for closure.
+
+Baseline policy declares schemaVersion 1, upstreamCommit, reviewRationale and exact sorted sourcePaths, rootSkills, principles, playbooks and bennySkills arrays. Its membership and source hashes must match the candidate manifest and inventory. It declares reviewed scope, not behavioral readiness. The current package remains the original 164-file, 51-root, 24-principle, 23-playbook baseline. Future reviewed membership changes do not edit that historical canonical manifest.
+
+Apply checks a complete projected package before mutation, including fragment ownership, source membership, case/catalog coverage, regenerated pages, dependency hashes and references. It writes the active fragments and aggregate in the same caught-failure transaction and retains prior fragments in `<candidate>.previous-fragments.json`. Existing host records keep their old identities and cannot transfer. Candidate registry and inventory become untested. Acceptance remains the separate authorized receipt in step 7 after the actual checks and evidence review. Structural closure does not make the candidate releasable.
+
+The shape below is illustrative; replace the abbreviated inventory and file list with the complete reviewed package data. The [resolution example](update-resolutions.example.json) shows the enclosing digest reference.
+
+```json
+{
+  "schemaVersion": 1,
+  "kind": "pstack-package-metadata",
+  "inventory": ["<complete reviewed inventory row objects>"],
+  "fragmentOwners": {
+    "skills/how/SKILL.md": "docs/parity/adaptations/skill-how.json"
+  },
+  "files": [
+    {
+      "path": "docs/parity/case-registry.json",
+      "contentPath": "resolved/metadata/docs/parity/case-registry.json",
+      "sha256": "<sha256 of exact reviewed bytes>"
+    }
+  ]
+}
+```
+
+Compute each file digest after writing its final reviewed bytes, then hash the metadata bundle and place that digest in packageMetadata. Finally hash the full resolutions file for the existing apply approval command in step 5. For example, this read-only command prints a file digest without installing dependencies:
+
+```sh
+bun --no-install -e 'const {createHash}=await import("node:crypto"); const bytes=await Bun.file(process.argv[1]).arrayBuffer(); console.log(createHash("sha256").update(new Uint8Array(bytes)).digest("hex"))' /absolute/path/to/review/resolved/package-metadata.json
+```
+
+No automatic draft is an approved metadata bundle. Missing new cases, removed case scopes, catalog membership, dependency callers or regenerated outputs fail the projected closure check before writes.

@@ -13,7 +13,7 @@ from unittest.mock import patch
 from tools.compare_upstream import compare_sources
 from tools import sync_upstream as sync
 
-HERD = Path('/Users/digital-hawk/Herd')
+HERD = Path.home() / 'Herd'
 
 
 def digest(data):
@@ -253,3 +253,9 @@ class PublicSourceContractTests(unittest.TestCase):
 
 if __name__ == '__main__':
     unittest.main()
+
+class PatchPresentationTests(unittest.TestCase):
+    def test_final_newline_markers_preserve_line_boundaries(self):
+        from tools.sync_upstream import draft_patch
+        self.assertEqual(draft_patch(b'old',b'new','x'), '--- a/x\n+++ b/x\n@@ -1 +1 @@\n-old\n\\ No newline at end of file\n+new\n\\ No newline at end of file\n')
+        self.assertIn('+new\n',draft_patch(b'old\n',b'new\n','x'))

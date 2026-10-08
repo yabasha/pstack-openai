@@ -201,7 +201,7 @@ describe("main", () => {
     expect(harness.stdout[0]).not.toContain('"kind":"QUEUE"');
   });
 
-  it("returns exit 4 for a hidden GitHub-side CI refusal", async () => {
+  it("returns exit 6 for a forge merge refusal", async () => {
     const reader = fakeReader({
       facts: { mergeStateStatus: "BLOCKED", headRefOid: pinnedHead },
       fastPath: { kind: "checks", checks: [passingCheck()] },
@@ -212,14 +212,14 @@ describe("main", () => {
       [...pins, "--owner", "owner", "--repo", "repo", "--pr", "1"],
       harness.runtime
     );
-    expect(code).toBe(4);
+    expect(code).toBe(6);
     expect(harness.stdout).toHaveLength(1);
     expect(JSON.parse(harness.stdout[0])).toMatchObject({
       kind: "BLOCKER",
-      exitCode: 4,
+      exitCode: 6,
       blocker: {
-        kind: "failing-checks",
-        ci: { kind: "ci-github-rejected" },
+        kind: "merge-gate",
+        reason: "forge-blocked",
       },
     });
   });

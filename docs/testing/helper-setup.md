@@ -35,3 +35,11 @@ bun --no-install node_modules/typescript/bin/tsc --project watch-pr/tsconfig.jso
 Bootstrap passed. The suites passed 85 tests with 316 assertions and zero failures across five files. Strict TypeScript exited 0 without diagnostics. Tests used inert bootstrap spies, injected watcher transports, fake Graphite and owned fixture repositories. No live gh ran. All 299 tracked snapshot files matched the source commit except the reviewed two-request lock reconciliation. Tests and installation preserved the reviewed lock bytes.
 
 The operative candidate has no installed dependencies. Snapshot results support only that source snapshot, not this caller, the current package or either host. Missing current metadata leaves dependency-backed helpers blocked. Development dependency setup is separate from plugin loading, enabling, integration, credentials and host behavior. See [Codex setup](../setup/codex.md), [ChatGPT setup](../setup/chatgpt.md) and [compatibility](../compatibility.md).
+
+## Offline maintenance source input
+
+Source-inventory tests need the exact canonical subtree as local data. Set `PSTACK_SOURCE_FIXTURE` to its absolute directory when it is outside the previously retained research tree beneath your home Herd directory. Tests verify its 164 paths and recorded per-file hashes against the pinned source; they never fetch or execute it. A missing fixture is an explicit test prerequisite failure. Run maintenance tests through Bun with Python bytecode disabled:
+
+```sh
+PSTACK_SOURCE_FIXTURE=/absolute/path/to/pinned/pstack bun --no-install -e 'const r=Bun.spawnSync(["python3","-B","-m","unittest","discover","-s","tests","-v"],{env:{...process.env,PYTHONDONTWRITEBYTECODE:"1"},stdout:"inherit",stderr:"inherit"});process.exit(r.exitCode)'
+```

@@ -23,7 +23,7 @@ Write or review clear technical documents using Diátaxis, Google developer styl
 
 ## Output contract
 
-- A document or review that preserves named symbols and facts, removes filler, and applies all four layers.
+- A document or review that preserves named symbols and facts, removes filler, and applies all four layers. PR descriptions and commit messages skip Diátaxis as the leaf requires.
 - A proposed diff for any new abstract-metaphor offender and replacement; do not edit unslop.
 
 ## Ordinary example
@@ -42,7 +42,7 @@ Remove filler, retain every named symbol and condition, and keep a clear how-to 
 
 Reduced capability expectation:
 
-With supplied text but unavailable document writes, return the rewrite in the conversation and identify the unsaved result. If unslop is unavailable, identify the missing dependency and label the review partial.
+If required source text is incomplete or unslop is unavailable, identify the missing input or dependency and label the review partial. Returning the requested supplied-text rewrite in conversation is full direct completion; a specifically requested saved edit still requires an observed authorized write.
 
 Blocked capability expectation:
 

@@ -71,6 +71,7 @@
     },
     "execution": {
       "enum": [
+        "direct",
         "workers",
         "sequential",
         "unavailable",
@@ -193,6 +194,47 @@
             "minLength": 1
           },
           "evidence": {
+            "type": "string",
+            "minLength": 1
+          },
+          "assignmentId": {
+            "type": "string",
+            "minLength": 1
+          }
+        }
+      }
+    },
+    "inputRevision": {
+      "type": "string",
+      "pattern": "^[0-9a-f]{40}$"
+    },
+    "methodReceipt": {
+      "type": "string",
+      "minLength": 1
+    },
+    "nativeObservations": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "observation",
+          "evidence",
+          "reviewedBy"
+        ],
+        "properties": {
+          "observation": {
+            "enum": [
+              "supplied-input",
+              "response",
+              "review-outcome"
+            ]
+          },
+          "evidence": {
+            "type": "string",
+            "minLength": 1
+          },
+          "reviewedBy": {
             "type": "string",
             "minLength": 1
           }

@@ -53,7 +53,10 @@ def read_json(path, fallback):
 
 
 def quoted_regions(lines, *, fenced_only=False):
-    """Return complete fenced-code and consecutive blockquote regions."""
+    """Return complete fences, consecutive blockquotes and quoted bullets.
+
+    fenced_only excludes blockquotes and quoted single-line bullets.
+    """
     regions = []
     fence, start = None, None
     quote_start = None
@@ -145,14 +148,25 @@ def inspect_package(root: Path, inventory: list[dict], scope=None):
         return errors, []
     # Fragments supply reviewed destinations without rewriting coordinator-owned inventory.
     effective = {row['upstreamPath']: row for row in inventory}
+    fragment_owners = set()
     for file in sorted((root/'docs/parity/adaptations').glob('*.json')):
         fragment = read_json(file, [])
         fragment_errors = schema_errors(fragment, schema, str(file.relative_to(root)))
         errors += fragment_errors
         if not fragment_errors:
             for row in fragment:
-                if row['upstreamPath'] in effective:
-                    effective[row['upstreamPath']] = row
+                source = row['upstreamPath']
+                if source not in effective:
+                    errors.append(f'{file.name}: unknown active fragment source {source}')
+                elif source in fragment_owners:
+                    errors.append(f'{file.name}: duplicate active fragment owner {source}')
+                elif any(v != effective[source].get(k) for k,v in row.items() if k != 'verification'):
+                    # During leaf development only a scoped pending row can be supplied.
+                    if scope == source and effective[source]['adaptationStatus'] == 'pending' and all(row[k] == effective[source][k] for k in ('upstreamCommit','upstreamSha256')):
+                        effective[source] = row
+                    else:
+                        errors.append(f'{file.name}: conflicting active fragment {source}')
+                fragment_owners.add(source)
     rows = list(effective.values())
     for row in rows:
         for path in [row['destinationPath'], *row['dependencies']]:
@@ -172,6 +186,9 @@ def inspect_package(root: Path, inventory: list[dict], scope=None):
             errors.append(f'{path}: source path escapes package')
     def check(path, context, allow_deferred=True):
         candidate = contained(root, path)
+        if candidate is not None and candidate.resolve().is_relative_to(root / '.upstream'):
+            errors.append(f'{context}: {path}: inert review data cannot be an operative destination or dependency')
+            return None
         if candidate is None:
             errors.append(f'{context}: {path}: path or symlink escapes package')
         elif not candidate.exists():
@@ -224,7 +241,7 @@ def inspect_package(root: Path, inventory: list[dict], scope=None):
     markdown = sorted(root.rglob('*.md')) if scope is None else [root/row['destinationPath'] for row in selected if row['destinationPath'].endswith('.md')]
     for file in markdown:
         relative = file.relative_to(root).as_posix()
-        if relative.startswith(('.git/', '.superpowers/')):
+        if relative.startswith(('.git/', '.superpowers/', '.upstream/')):
             continue
         if contained(root, relative) is None:
             errors.append(f'{relative}: symlink escapes package')

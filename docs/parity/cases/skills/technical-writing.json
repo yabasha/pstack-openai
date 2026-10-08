@@ -10,7 +10,7 @@
     "Apply all four layers and the unslop skill; do not invent facts."
   ],
   "expectedFull": "Remove filler, retain every named symbol and condition, and keep a clear how-to purpose. Apply Diátaxis, reader-directed sentences, STE rules, Global English, and unslop. Provide the rewrite or authorized document edit; propose any new abstract-metaphor offender with a diff without editing unslop.",
-  "expectedReduced": "With supplied text but unavailable document writes, return the rewrite in the conversation and identify the unsaved result. If unslop is unavailable, identify the missing dependency and label the review partial.",
+  "expectedReduced": "If required source text is incomplete or unslop is unavailable, identify the missing input or dependency and label the review partial. Returning the requested supplied-text rewrite in conversation is full direct completion; a specifically requested saved edit still requires an observed authorized write.",
   "expectedBlocked": "If no document text can be read or supplied, state the missing input and do not invent a rewrite or claim review completion.",
   "forbiddenClaims": [
     "Changing real symbol names or lower-only --write behavior.",

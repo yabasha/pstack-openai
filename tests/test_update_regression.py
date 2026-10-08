@@ -189,6 +189,8 @@ class UpdateRegressionTests(unittest.TestCase):
         self.stage_candidate()
         registry = {'entries':[{'caseId':'fixture-workers', 'sourcePaths':[self.leaf],
             'requiredHosts':['codex'], 'structuralOnly':False,
+            'executionModes':{'pass':['workers'],'reduced-pass':['sequential']},
+            'requiredPermissions':{'pass':['execution'],'reduced-pass':[]},
             'requiredObservations':{'pass':['spawn','inspect-result'], 'reduced-pass':['read']}}]}
         (self.root / 'docs/parity/case-registry.json').write_text(json.dumps(registry))
         record = dict(caseId='fixture-workers', sourcePaths=[self.leaf], packageVersion='0.1.1',
@@ -255,6 +257,8 @@ class UpdateRegressionTests(unittest.TestCase):
     def freeze_with_passing_evidence(self, change_operative=False, extra_report=None, declare_extra=False):
         registry = {'entries':[{'caseId':'fixture-workers', 'sourcePaths':[self.leaf],
             'requiredHosts':['codex'], 'structuralOnly':False,
+            'executionModes':{'pass':['workers'],'reduced-pass':['sequential']},
+            'requiredPermissions':{'pass':['execution'],'reduced-pass':[]},
             'requiredObservations':{'pass':['spawn','inspect-result'], 'reduced-pass':['read']}}]}
         (self.root / 'docs/parity/case-registry.json').write_text(json.dumps(registry))
         self.git('add', '.', ':!.upstream')

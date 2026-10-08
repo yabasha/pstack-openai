@@ -251,6 +251,11 @@ def json_bytes(value):
     return (json.dumps(value, indent=2, sort_keys=True) + '\n').encode()
 
 
+def draft_patch(old, new, destination):
+    lines = difflib.unified_diff(old.decode('utf-8').splitlines(True), new.decode('utf-8').splitlines(True), fromfile='a/' + destination, tofile='b/' + destination)
+    return ''.join(line if line.endswith('\n') else line + '\n\\ No newline at end of file\n' for line in lines)
+
+
 def build_review(root, candidate, command, fetch=fetch_public):
     root = Path(root).absolute()
     exact_revision(candidate)
@@ -297,7 +302,7 @@ def build_review(root, candidate, command, fetch=fetch_public):
         if command == 'prepare' and entry['oldSha256'] is not None and entry['adaptedSha256'] == entry['oldSha256'] and path in proposed:
             artifacts[f'drafts/{destination}'] = proposed[path]
             try:
-                patches.extend(difflib.unified_diff(adapted.decode('utf-8').splitlines(True), proposed[path].decode('utf-8').splitlines(True), fromfile='a/' + destination, tofile='b/' + destination))
+                patches.append(draft_patch(adapted, proposed[path], destination))
             except UnicodeDecodeError:
                 patches.append(f'Binary draft: {destination}\n')
     resolutions = {'schemaVersion': 1, 'kind': RESOLUTION_KIND, 'candidate': candidate, 'packageCommit': package_commit,
@@ -344,6 +349,10 @@ APPLY_RESOLUTION_SCHEMA = {'$schema': 'https://json-schema.org/draft/2020-12/sch
             'reviewedCallers': {'type': 'array', 'items': PATH_SCHEMA},
             'contentPath': {'anyOf': [PATH_SCHEMA, {'type': 'null'}]},
             'reviewedSha256': {'anyOf': [HASH_SCHEMA, {'type': 'null'}]}})}})}
+
+
+# Optional for inventory-only development fixtures, mandatory for full packages.
+APPLY_RESOLUTION_SCHEMA['properties']['packageMetadata'] = object_schema({'contentPath': PATH_SCHEMA, 'reviewedSha256': HASH_SCHEMA})
 
 
 def validate_shape(value, schema):
@@ -576,7 +585,10 @@ def apply_review(review, resolutions, worktree, *, owner, approval, failure_hook
         reviewSha256=decisions['reviewSha256'], resolutionsSha256=approval, invalidatedSources=sorted(affected),
         checks={'structural': 'not-run', 'helperRegression': 'not-run', 'affectedHostCases': {'chatgpt': 'not-run', 'codex': 'not-run'}}, resolutions=decisions)
     writes[state_path] = json_bytes(state)
-    # Inventory is last so fault injection can prove package-and-pin recovery.
+    from tools.update_metadata import closure_writes
+    result_inventory = closure_writes(root, review, decisions, result_inventory, writes)
+    # Inventory is last so fault injection proves all metadata and pin recovery.
+    writes.pop('docs/parity/inventory.json', None)
     writes['docs/parity/inventory.json'] = json_bytes(result_inventory)
     backup, modes, created_dirs = {}, {}, []
     for path in writes:

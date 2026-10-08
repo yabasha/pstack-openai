@@ -133,7 +133,7 @@ After blocked host results enter inventory verification and regenerate the catal
 | `skills/poteto-mode/scripts/watch-pr/github.ts` | [skills/poteto-mode/scripts/watch-pr/github.ts](../../skills/poteto-mode/scripts/watch-pr/github.ts) | runtime / adapted-reviewed | [docs/parity/adaptations/14-watch-pr.json](adaptations/14-watch-pr.json) | `bounded-poll` |
 | `skills/poteto-mode/scripts/watch-pr/policy.test.ts` | [skills/poteto-mode/scripts/watch-pr/policy.test.ts](../../skills/poteto-mode/scripts/watch-pr/policy.test.ts) | runtime / adapted-reviewed | [docs/parity/adaptations/14-watch-pr.json](adaptations/14-watch-pr.json) | `bounded-poll` |
 | `skills/poteto-mode/scripts/watch-pr/policy.ts` | [skills/poteto-mode/scripts/watch-pr/policy.ts](../../skills/poteto-mode/scripts/watch-pr/policy.ts) | runtime / adapted-reviewed | [docs/parity/adaptations/14-watch-pr.json](adaptations/14-watch-pr.json) | `bounded-poll` |
-| `skills/poteto-mode/scripts/watch-pr/render.ts` | [skills/poteto-mode/scripts/watch-pr/render.ts](../../skills/poteto-mode/scripts/watch-pr/render.ts) | runtime / unchanged-reviewed | [docs/parity/adaptations/14-watch-pr.json](adaptations/14-watch-pr.json) | `bounded-poll` |
+| `skills/poteto-mode/scripts/watch-pr/render.ts` | [skills/poteto-mode/scripts/watch-pr/render.ts](../../skills/poteto-mode/scripts/watch-pr/render.ts) | runtime / adapted-reviewed | [docs/parity/adaptations/14-watch-pr.json](adaptations/14-watch-pr.json) | `bounded-poll` |
 | `skills/poteto-mode/scripts/watch-pr/tsconfig.json` | [skills/poteto-mode/scripts/watch-pr/tsconfig.json](../../skills/poteto-mode/scripts/watch-pr/tsconfig.json) | runtime / unchanged-reviewed | [docs/parity/adaptations/14-watch-pr.json](adaptations/14-watch-pr.json) | `package-support-contracts` |
 | `skills/poteto-mode/scripts/watch-pr/types.compile.ts` | [skills/poteto-mode/scripts/watch-pr/types.compile.ts](../../skills/poteto-mode/scripts/watch-pr/types.compile.ts) | runtime / unchanged-reviewed | [docs/parity/adaptations/14-watch-pr.json](adaptations/14-watch-pr.json) | `package-support-contracts` |
 | `skills/poteto-mode/scripts/watch-pr/types.ts` | [skills/poteto-mode/scripts/watch-pr/types.ts](../../skills/poteto-mode/scripts/watch-pr/types.ts) | runtime / adapted-reviewed | [docs/parity/adaptations/14-watch-pr.json](adaptations/14-watch-pr.json) | `bounded-poll`, `contiguous-verified-stack` |
@@ -752,6 +752,13 @@ These exact package-owned paths are additional port material, outside the 164 ca
 | [docs/testing/codex.md](../testing/codex.md) | Port-authored per-host verification guide and blocked accounting; installed discovery and runtime remain unobserved |
 | [docs/testing/dependency-readiness.md](../testing/dependency-readiness.md) | Port-authored dependency readiness report; isolated development tests do not transfer to host evidence |
 | [tests/test_dependencies.py](../../tests/test_dependencies.py) | Port-authored deterministic dependency audit tests; no host behavior proof |
+
+| [docs/parity/baseline-policy.json](baseline-policy.json) | Port-authored: Exact reviewed source membership policy; no readiness or host observation |
+| [tests/evidence_fixtures.py](../../tests/evidence_fixtures.py) | Port-authored: Synthetic structured method receipts for validator tests; never host proof |
+| [tests/fixture_paths.py](../../tests/fixture_paths.py) | Port-authored: Explicit offline pinned-source fixture location; never downloads source |
+| [tests/test_full_package_update.py](../../tests/test_full_package_update.py) | Port-authored: Full-package-shaped inert apply, closure, failure recovery and separate acceptance fixtures |
+| [tools/baseline_policy.py](../../tools/baseline_policy.py) | Port-authored: Validate exact reviewed baseline policy against immutable source manifest identities |
+| [tools/update_metadata.py](../../tools/update_metadata.py) | Port-authored: Preflight reviewed hash-bound metadata and fragment closure inside the update transaction |
 
 ## Reserved report-only paths
 

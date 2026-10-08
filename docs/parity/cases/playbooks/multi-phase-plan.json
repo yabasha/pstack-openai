@@ -39,7 +39,7 @@
   ],
   "expectedFull": "An authorized saved pstack plan preserves all sections, ten independent live scenarios within observed capacity, per-PR units and evidence, applicable performance or justified non-applicability, operator interaction review and checker output with zero structural problems. Execution waits for explicit go.",
   "expectedReduced": "Authorized sequential exploration or reduced live capacity remains labelled reduced capability with reasons, evidence and omitted scenarios. Manual ticks replace unavailable scheduling without unattended claims. Denied writes return unsaved text. Independent verdict gates remain blocked. A structural checker pass proves format only.",
-  "expectedBlocked": "Missing source contracts, unreadable plan, denied execution, unavailable live control or required independent review blocks the affected work. Preserve planned scenarios, disclose missing dependency and checker failure; do not fabricate artifacts or start execution.",
+  "expectedBlocked": "Missing source contracts, unreadable plan, denied execution, unavailable live control or required independent review blocks the affected work. Preserve planned scenarios, disclose the missing dependency and the actual checker outcome. A structurally valid plan with blocked execution can pass; report checker failure only when the checker actually fails; do not fabricate artifacts or start execution.",
   "forbiddenClaims": [
     "Structural checker success proves implementation or host parity.",
     "Sequential role switching provides independent workers or review.",

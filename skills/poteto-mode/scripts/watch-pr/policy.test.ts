@@ -50,18 +50,20 @@ describe("readiness truth table", () => {
     const cases: readonly [
       PullRequestFacts["mergeStateStatus"],
       RollupState,
-      "allowed" | "refused",
+      "allowed" | "refused" | "unknown",
     ][] = [
       ["BLOCKED", "FAILURE", "refused"],
       ["BLOCKED", "ERROR", "refused"],
-      ["BLOCKED", "PENDING", "allowed"],
+      ["BLOCKED", "PENDING", "refused"],
+      ["BLOCKED", "SUCCESS", "refused"],
+      ["BLOCKED", null, "refused"],
       ["UNSTABLE", "FAILURE", "allowed"],
-      ["UNKNOWN", "ERROR", "allowed"],
-      ["UNKNOWN", "EXPECTED", "allowed"],
-      ["UNKNOWN", "FAILURE", "allowed"],
-      ["UNKNOWN", "PENDING", "allowed"],
-      ["UNKNOWN", "SUCCESS", "allowed"],
-      ["UNKNOWN", null, "allowed"],
+      ["UNKNOWN", "ERROR", "unknown"],
+      ["UNKNOWN", "EXPECTED", "unknown"],
+      ["UNKNOWN", "FAILURE", "unknown"],
+      ["UNKNOWN", "PENDING", "unknown"],
+      ["UNKNOWN", "SUCCESS", "unknown"],
+      ["UNKNOWN", null, "unknown"],
       ["CLEAN", "SUCCESS", "allowed"],
     ];
     for (const [mergeStateStatus, headRollupState, expected] of cases) {
@@ -71,7 +73,7 @@ describe("readiness truth table", () => {
     }
   });
 
-  it("turns a clean visible list plus GitHub refusal into an explicit CI blocker", async () => {
+  it("turns a clean visible list plus GitHub refusal into an explicit forge blocker", async () => {
     const reader = fakeReader({
       facts: { mergeStateStatus: "BLOCKED" },
       fastPath: { kind: "checks", checks: [passingCheck()] },
@@ -88,7 +90,7 @@ describe("readiness truth table", () => {
     expect(snapshot.ci.kind).toBe("ci-github-rejected");
     expect(classifyPr(snapshot)).toMatchObject({
       kind: "blocker",
-      blocker: { kind: "failing-checks" },
+      blocker: { kind: "merge-gate", reason: "forge-blocked" },
     });
   });
 });
@@ -495,4 +497,50 @@ describe("exported runner exact head boundary", () => {
       }
     });
   }
+});
+
+it("unknown forge state retries to clean and times out honestly", async () => {
+  for (const forever of [false, true]) {
+    let ticks = 0;
+    const unknown = fakeReader({facts: {mergeable: "UNKNOWN", mergeStateStatus: "UNKNOWN"}});
+    const clean = fakeReader();
+    const events: ProgressVerdict[] = [];
+    const result = await runSimple({contexts: [context(1)], mode: "single", statusOnly: false,
+      options: {...options, timeout: 60}, dependencies: {
+        reader: {...clean, pullRequest: requested => (forever || ticks === 0 ? unknown : clean).pullRequest(requested)},
+        clock: {now: () => ticks, observedAt: () => "synthetic", sleep: async seconds => {ticks += seconds;}},
+        emit: event => events.push(event),
+      }});
+    expect(result.kind).toBe(forever ? "TIMEOUT" : "READY");
+    expect(events[0]?.kind).toBe("RETRY");
+    if (result.kind === "TIMEOUT") expect(result.reason.kind).toBe("status-unavailable");
+  }
+});
+
+it("unknown mergeability stays explicit in status JSON and pretty output", async () => {
+  const {renderJson, renderPretty} = await import("./render.ts");
+  for (const facts of [{mergeable: "UNKNOWN", mergeStateStatus: "CLEAN"}, {mergeable: "MERGEABLE", mergeStateStatus: "UNKNOWN"}] as const) {
+    const result = await runSimple({contexts:[context(1)],mode:"single",statusOnly:true,options,dependencies:{reader:fakeReader({facts}),emit:()=>{},clock:{now:()=>0,observedAt:()=>"synthetic",sleep:async()=>{throw new Error("unexpected sleep");}}}});
+    expect(result.kind).toBe("STATUS");
+    expect(renderJson(result)).toContain("UNKNOWN");
+    expect(renderPretty(result)).toContain("unknown");
+  }
+});
+
+it("preserves the declared known-state policy behind independent clean gates", async () => {
+  for (const mergeStateStatus of ["CLEAN","BEHIND","DRAFT","HAS_HOOKS","UNSTABLE"] as const) {
+    const reader=fakeReader({facts:{mergeable:"MERGEABLE",mergeStateStatus},commitRollups:[{oid:fixtureHead,state:"SUCCESS"}]});
+    const result=await runSimple({contexts:[context(1)],mode:"single",statusOnly:false,options,dependencies:{reader,emit:()=>{},clock:{now:()=>0,observedAt:()=>"synthetic",sleep:async()=>{throw new Error("unexpected sleep");}}}});
+    expect(result.kind).toBe("READY");
+  }
+});
+
+it("never promotes a forge BLOCKED state from a successful head rollup", async () => {
+  const snapshot=await readSnapshot({reader:fakeReader({facts:{mergeable:"MERGEABLE",mergeStateStatus:"BLOCKED"},commitRollups:[{oid:fixtureHead,state:"SUCCESS"}]}),context:context(1),pendingHistory:"include",allowDraft:false});
+  expect(classifyPr(snapshot)).toMatchObject({kind:"blocker",blocker:{kind:"merge-gate",reason:"forge-blocked"}});
+  const {renderPretty,renderStatusTable}=await import("./render.ts");
+  expect(renderStatusTable([snapshot])).toContain("| forge blocked |");
+  const result=await runSimple({contexts:[context(1)],mode:"single",statusOnly:false,options,dependencies:{reader:fakeReader({facts:{mergeable:"MERGEABLE",mergeStateStatus:"BLOCKED"},commitRollups:[{oid:fixtureHead,state:"SUCCESS"}]}),emit:()=>{},clock:{now:()=>0,observedAt:()=>"synthetic",sleep:async()=>{throw new Error("unexpected sleep");}}}});
+  expect(renderPretty(result)).toContain("forge-blocked");
+  expect(renderPretty(result)).not.toContain("failing-checks");
 });

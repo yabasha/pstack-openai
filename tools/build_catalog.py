@@ -43,8 +43,6 @@ def bullets(values: list[str]) -> str:
 def validate_entries(inventory: list[dict], entries: list[dict]) -> None:
     expected = {match.group(1) for row in inventory
                 if (match := LEAF.fullmatch(row['upstreamPath']))}
-    if len(expected) != 51 or sum(name.startswith('principle-') for name in expected) != 24:
-        raise ValueError('Inventory must contain exactly 51 root skills and 24 principles')
     names = []
     for entry in entries:
         if set(entry) != set(REQUIRED):
@@ -68,11 +66,11 @@ def validate_entries(inventory: list[dict], entries: list[dict]) -> None:
             raise ValueError('Catalog entry must cite its owning root skill')
         names.append(entry['name'])
     if len(names) != len(set(names)) or set(names) != expected:
-        raise ValueError('Catalog names must exactly match the 51 inventoried root skills')
+        raise ValueError('Catalog names must exactly match inventoried root skills')
 
 
 def build_catalog(root: Path, inventory: list[dict], entries: list[dict]) -> dict[str, str]:
-    """Return only the 51 leaf pages and two overview pages."""
+    """Return exactly the inventoried leaf pages and two overview pages."""
     root = root.resolve()
     validate_entries(inventory, entries)
     sources = {row['upstreamPath']: row for row in inventory}
@@ -131,7 +129,7 @@ def build_catalog(root: Path, inventory: list[dict], entries: list[dict]) -> dic
     ):
         link = lambda target, label=None: local_link(root, destination, target, label)
         # Leaf links are generated in the same batch and may not exist yet.
-        lines = [f'# {title}', '', 'Generated from 51 reviewed leaf records, including 24 principles. No additional root skill is registered.', '',
+        lines = [f'# {title}', '', f'Generated from {len(entries)} reviewed leaf records, including {sum(e["kind"] == "principle" for e in entries)} principles. No additional root skill is registered.', '',
                  'Host support depends on capabilities, permissions and observed evidence. Inventory review may remain pending, and a not-run result remains untested.', '',
                  f'Source inventory: {link("docs/parity/inventory.json")}. Catalog schema: {link("docs/catalog/schema.json")}.', '',
                  '| Name | Purpose |', '| --- | --- |']
@@ -182,7 +180,7 @@ def main() -> int:
     if args.check and stale:
         print('Catalog drift:\n' + '\n'.join(stale))
         return 1
-    print(f'Catalog {"check passed" if args.check else "generated"}: 51 skills, 24 principles.')
+    print(f'Catalog {"check passed" if args.check else "generated"}: {len(entries)} skills, {sum(e["kind"] == "principle" for e in entries)} principles.')
     return 0
 
 

@@ -359,3 +359,38 @@ describe("context and stack discovery", () => {
     expect(ordered.map((item) => Number(item.number))).toEqual([41, 42, 43]);
   });
 });
+
+// Synthetic transports only; this regression cannot invoke the real forge.
+it("reads every review page before filtering and counts passes across pages", async () => {
+  const thread = (id: string, resolved: boolean, run: string) => ({id, isResolved: resolved, comments: {nodes: [{body: "RUN_ID: " + run, createdAt: "2026-10-07T00:00:00Z", path: "x", line: 1, author: {login: "bugbot"}}]}});
+  const calls: string[][] = [];
+  const reader = new GhGitHubReader(async argv => {
+    calls.push([...argv]);
+    const second = argv.includes("after=page2");
+    return {code: 0, stderr: "", stdout: JSON.stringify({data: {repository: {pullRequest: {reviewThreads: {
+      totalCount: 101, pageInfo: {hasNextPage: !second, endCursor: second ? null : "page2"},
+      nodes: second ? [thread("last", false, "two")] : Array.from({length: 100}, (_, i) => thread(String(i), true, "one"))
+    }}}}})};
+  });
+  const result = await reader.reviewThreads(context);
+  expect(result.map(t => t.id)).toEqual(["last"]);
+  expect(result[0]?.bugbotReviewPasses).toBe(2);
+  expect(calls).toHaveLength(2);
+});
+it("rejects incomplete, repeated and failed review pages", async () => {
+  for (const fault of ["missing-cursor", "repeated", "error", "count"]) {
+    let calls = 0;
+    const reader = new GhGitHubReader(async () => {
+      calls++;
+      if (fault === "error" && calls === 2) return {code: 1, stdout: "", stderr: "inert failure"};
+      return {code: 0, stderr: "", stdout: JSON.stringify({data: {repository: {pullRequest: {reviewThreads: {
+        totalCount: 2, nodes: [], pageInfo: {hasNextPage: fault !== "count", endCursor: fault === "missing-cursor" ? null : "same"}
+      }}}}})};
+    });
+    await expect(reader.reviewThreads(context)).rejects.toBeInstanceOf(WatcherQueryError);
+  }
+});
+it("blocks stack discovery at the 300 PR enumeration cap", async () => {
+  const reader = new GhGitHubReader(async () => ({code: 0, stderr: "", stdout: JSON.stringify(Array.from({length: 300}, (_, i) => ({number: i+1, headRefName: "b"+i, baseRefName: "main"})))}));
+  await expect(reader.openPullRequests(context)).rejects.toBeInstanceOf(WatcherQueryError);
+});

@@ -4,9 +4,13 @@ import json
 import re
 import subprocess
 from pathlib import Path
+import sys
+
+if __package__ in (None, ""):
+    sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
 from urllib.parse import unquote
 
-HERD = Path('/Users/digital-hawk/Herd')
+HERD = Path.home() / 'Herd'
 LINK = re.compile(r'(!?\[[^\]\n]*\]\()([^\s)]+)([^)]*\))')
 CODE = re.compile(r'(```.*?```|~~~.*?~~~|`+[^`\n]*`+)', re.S)
 
@@ -34,8 +38,10 @@ def export_wiki(root: Path, output: Path) -> list[Path]:
     for directory in ('skills', 'principles', 'setup', 'workflows', 'maintenance', 'guide', 'testing'):
         selected.extend(sorted((root / 'docs' / directory).glob('*.md')))
     leaves = [p for p in selected if p.parent == root / 'docs/skills' and p.name != 'README.md']
-    if len(leaves) != 51 or sum(p.stem.startswith('principle-') for p in leaves) != 24:
-        raise ValueError('Canonical catalog must contain 51 leaves and 24 principles')
+    from tools.baseline_policy import POLICY_PATH, validate_policy
+    counts = validate_policy(root,json.loads((root/'docs/parity/inventory.json').read_text())) if (root/POLICY_PATH).exists() else dict(leafSkills=51,principles=24)
+    if len(leaves) != counts['leafSkills'] or sum(p.stem.startswith('principle-') for p in leaves) != counts['principles']:
+        raise ValueError('Catalog differs from reviewed baseline policy')
     names = {}
     rendered = {}
 
@@ -81,7 +87,7 @@ def export_wiki(root: Path, output: Path) -> list[Path]:
                     lines.append(f"- [{entry.relative_to(resolved)}]({register(entry)})")
                     pending.append(entry)
                 rendered[resolved] = ("\n".join(lines) + "\n").encode()
-                return match.group(1) + name + match.group(3)
+                return match.group(1) + name + (separator + anchor if separator else "") + match.group(3)
             name = register(resolved)
             if resolved not in rendered:
                 pending.append(resolved)
@@ -95,6 +101,8 @@ def export_wiki(root: Path, output: Path) -> list[Path]:
     home += [f'- [{p.relative_to(root).as_posix()}]({names[p]})' for p in selected]
     payloads = {names[p] + ('.md' if p.suffix == '.md' or p.is_dir() else ''): data for p, data in rendered.items()}
     payloads['Home.md'] = ('\n'.join(home) + '\n').encode()
+    errors = validate_links(payloads)
+    if errors: raise ValueError("Exported links failed: " + "; ".join(errors))
     written = []
     try:
         for name, data in sorted(payloads.items()):
@@ -108,6 +116,47 @@ def export_wiki(root: Path, output: Path) -> list[Path]:
             destination.unlink()
         raise
     return written
+
+
+def heading_ids(text):
+    """IDs for generated ATX headings, excluding fenced examples."""
+    ids, fence = set(), None
+    for line in text.splitlines():
+        marker = re.match(r'^ {0,3}(`{3,}|~{3,})(.*)$',line)
+        if marker:
+            token, rest = marker.groups()
+            if fence is None: fence=token
+            elif token[0]==fence[0] and len(token)>=len(fence) and not rest.strip(): fence=None
+            continue
+        if fence is not None: continue
+        heading=re.match(r'^ {0,3}#{1,6} +(.+?) *#*$',line)
+        if not heading: continue
+        title=re.sub(r'<[^>]*>','',heading.group(1))
+        title=re.sub(r'\[([^\]]+)\]\([^)]*\)',r'\1',title)
+        slug = re.sub(r'[^\w -]', '', title.lower()).replace(' ', '-')
+        candidate, suffix = slug, 0
+        while candidate in ids:
+            suffix += 1; candidate=slug+'-'+str(suffix)
+        ids.add(candidate)
+    return ids
+
+
+def validate_links(payloads):
+    errors = []
+    for name, data in payloads.items():
+        if not name.endswith('.md'): continue
+        text = CODE.sub('', data.decode())
+        for match in LINK.finditer(text):
+            target = match.group(2)
+            if re.match(r'[a-zA-Z][a-zA-Z0-9+.-]*:', target) or target.startswith('//'): continue
+            path, separator, anchor = unquote(target).partition('#')
+            destination = path or name
+            if destination not in payloads and destination + '.md' in payloads: destination += '.md'
+            if destination not in payloads:
+                errors.append(name + ': missing target ' + target)
+            elif separator and anchor and (not destination.endswith('.md') or anchor not in heading_ids(payloads[destination].decode())):
+                errors.append(name + ': missing heading ' + target)
+    return errors
 
 
 def main():

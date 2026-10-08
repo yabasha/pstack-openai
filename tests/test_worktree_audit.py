@@ -9,7 +9,7 @@ from unittest.mock import patch
 
 ROOT = Path(__file__).resolve().parents[1]
 HELPER = ROOT / 'skills/poteto-mode/scripts/worktree-audit.py'
-SCRATCH = Path('/Users/digital-hawk/Herd/pstack-port-research/task-15-fixtures')
+SCRATCH = Path.home() / 'Herd/pstack-port-research/task-15-fixtures'
 
 
 class WorktreeAuditTests(unittest.TestCase):

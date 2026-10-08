@@ -12,7 +12,7 @@ This is an evidence-bounded candidate summary, not a list of assumed product too
 | Historical helper validation | Passed only in isolated snapshot | [Helper guide](testing/helper-setup.md) identifies the exact tested source SHA and limits |
 | Optional integrations and Benny | Not-run or blocked when unavailable | [Benny readiness](testing/benny-readiness.md), actual bindings and separate action permission |
 
-Use [host matrix](testing/host-matrix.md), [case registry](parity/case-registry.json), [case schema](parity/cases/schema.json) and [evidence schema](parity/evidence.schema.json). Required cases need actual host observations or explicit blocked records. Complete discovery needs the identical 51-root receipt in either a worker pass or validated sequential reduced-pass. A reduction never proves worker independence or full orchestration.
+Use [host matrix](testing/host-matrix.md), [case registry](parity/case-registry.json), [case schema](parity/cases/schema.json) and [evidence schema](parity/evidence.schema.json). Required cases need actual host observations or explicit blocked records. Complete discovery needs the identical 51-root receipt in a direct pass, worker pass or validated sequential reduced-pass. Ordinary direct completion is full when it satisfies every case requirement. A reduction never proves worker independence or full orchestration.
 
 [Release report](../tools/release_report.py) checks actual root evidence and discovery. An empty evidence directory is not a pass. Regenerate or check this summary against the actual release report after host testing; retain missing, stale and blocked results.
 

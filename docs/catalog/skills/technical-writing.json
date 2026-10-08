@@ -12,7 +12,7 @@
     "The unslop skill."
   ],
   "outputs": [
-    "A document or review that preserves named symbols and facts, removes filler, and applies all four layers.",
+    "A document or review that preserves named symbols and facts, removes filler, and applies all four layers. PR descriptions and commit messages skip Diátaxis as the leaf requires.",
     "A proposed diff for any new abstract-metaphor offender and replacement; do not edit unslop."
   ],
   "ordinaryExample": "Rewrite a how-to about budget.mjs and budget.json while keeping the lower-only --write rule and CI failure condition.",

@@ -10,7 +10,7 @@ Reading these files directly does not prove supported plugin loading, registrati
 
 Prompts worth copying, then the mistakes everyone makes once. Swap in your own paths and finish conditions. The recipes are deliberately informal. That's how they get typed in practice, and the skills read intent fine.
 
-![She tastes a finished dish while robots cook from a recipe box, with pinned cards reading /how, /tdd, and the observed wake mechanism above the counter.](./images/recipes.jpg)
+![Source kitchen illustration with recipe cards labelled /how, /tdd and /loop](./images/recipes.jpg)
 
 ## Understand an unfamiliar subsystem
 

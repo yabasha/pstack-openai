@@ -8,7 +8,7 @@ structural and immutable Git checks. No list-only call asserts filesystem proof.
 Policy accepts explicit blocked optional capabilities and validated reductions,
 while both hosts must observe package discovery and invocation. Discovery uses
 the package-discovery case with discover-package, enumerate-skills and
-inspect-installed-copy operations. Both worker pass and sequential reduced-pass
+inspect-installed-copy operations. Direct or worker pass and sequential reduced-pass
 can prove complete discovery. Reduced execution never proves independent workers.
 These labels describe observations, never host API names. Every source file must
 have a behavioral caller case on both hosts; structural cases cannot replace it.
@@ -37,7 +37,7 @@ def read_json(path):
     return json.loads(path.read_text())
 
 
-def summarize_release(inventory: list[dict], evidence: list[dict], commit: str) -> dict:
+def summarize_release(inventory: list[dict], evidence: list[dict], commit: str, *, expected_counts=None) -> dict:
     """Summarize unverified claims without asserting missing root proof."""
     blockers, stale = [], []
     paths = [r.get('upstreamPath', '') for r in inventory]
@@ -46,8 +46,8 @@ def summarize_release(inventory: list[dict], evidence: list[dict], commit: str) 
     counts = dict(sourceFiles=len(paths), leafSkills=len(leaves),
                   principles=sum(p.startswith('skills/principle-') for p in leaves),
                   supportFiles=len(paths)-len(leaves), playbooks=len(playbooks))
-    if list(counts.values()) != [164, 51, 24, 113, 23]:
-        blockers.append('incomplete source closure: expected 164/51/24/113/23')
+    if counts != (expected_counts or dict(sourceFiles=164, leafSkills=51, principles=24, supportFiles=113, playbooks=23)):
+        blockers.append('incomplete source closure for reviewed baseline policy')
     if len(set(paths)) != len(paths):
         blockers.append('duplicate or conflicting source dispositions')
     if not re.fullmatch('[0-9a-f]{40}', commit):
@@ -123,6 +123,15 @@ def registry_checks(root, inventory):
             continue
         if not hosts:
             errors.append('behavioral case lacks required hosts: ' + case_id)
+        for status in ('pass','reduced-pass'):
+            for field, allowed in (('executionModes',{'direct','workers'} if status == 'pass' else {'direct','workers','sequential'}),('requiredPermissions',{'execution','writes','externalActions'})):
+                values=entry.get(field,{}).get(status)
+                if not isinstance(values,list) or len(values)!=len(set(values)) or not set(values)<=allowed or (field=='executionModes' and not values):
+                    errors.append('invalid case '+field+': '+case_id)
+        if entry.get('requiredMethod') not in (None,'arena','swarm','swarm-partition'):
+            errors.append('unknown required method: '+case_id)
+        if entry.get('requiredMethod') and (entry['executionModes']['pass'] != ['workers'] or not {'execution','writes'} <= set(entry['requiredPermissions']['pass'])):
+            errors.append('method requires worker execution and write permissions: '+case_id)
         for host in hosts:
             coverage[host].update(entry['sourcePaths'])
     for host in HOSTS:
@@ -235,13 +244,17 @@ def assess_release(root: Path, commit: str, version: str) -> dict:
                     raise ValueError('evidence must contain objects')
                 evidence.append(record)
                 evidence_files[id(record)] = path.relative_to(root).as_posix()
-        report = summarize_release(inventory, evidence, commit)
+        from tools.baseline_policy import POLICY_PATH, validate_policy
+        counts = validate_policy(root, inventory) if (root / POLICY_PATH).exists() else None
+        report = summarize_release(inventory, evidence, commit, expected_counts=counts)
+        report['rawClaimsByHost'] = {h: dict(v) for h,v in report['byHost'].items()}
+        report['byHost'] = {h: {s: 0 for s in STATUSES} for h in HOSTS}
         report['proof'] = 'root structural, applicability, artifacts and immutable package checks'
         errors = report['blockers']
-        expected = (CONTRACT_ROOT / 'docs/parity/baseline-paths.txt').read_text().splitlines()
+        expected = ((root if counts is not None else CONTRACT_ROOT) / 'docs/parity/baseline-paths.txt').read_text().splitlines()
         if sorted(r['upstreamPath'] for r in inventory) != expected:
             errors.append('inventory does not match canonical source paths')
-        baseline = read_json(CONTRACT_ROOT / 'docs/parity/inventory.json')
+        baseline = inventory if counts is not None else read_json(CONTRACT_ROOT / 'docs/parity/inventory.json')
         identities = {r['upstreamPath']: (r['upstreamCommit'], r['upstreamSha256']) for r in baseline}
         if any(identities.get(r['upstreamPath']) != (r['upstreamCommit'], r['upstreamSha256']) for r in inventory):
             errors.append('canonical source hashes or pin differ')
@@ -258,17 +271,19 @@ def assess_release(root: Path, commit: str, version: str) -> dict:
                            if re.fullmatch(r'skills/[^/]+/SKILL\.md', r['upstreamPath'])}
         actual_skills = {p.relative_to(root).as_posix() for p in (root / 'skills').glob('*/SKILL.md')}
         if actual_skills != expected_skills:
-            errors.append('actual root skill discovery differs from inventoried 51 leaves')
+            errors.append('actual root skill discovery differs from inventoried leaves')
         entries, registry_errors = registry_checks(root, inventory)
         errors += registry_errors
-        valid, discovery = {}, {h: set() for h in HOSTS}
+        valid, seen, discovery = {}, set(), {h: set() for h in HOSTS}
         for record in evidence:
             issues = validate_evidence(record, commit, root)
             if record.get('packageVersion') != version:
                 issues.append('packageVersion differs from requested version')
             key = (record.get('host'), record.get('caseId'))
-            if key in valid:
+            if key in seen:
+                valid.pop(key, None)
                 issues.append('duplicate/conflicting case observation')
+            seen.add(key)
             if record.get('status') == 'blocked' and (not record.get('limits') or not record.get('artifacts')):
                 issues.append('blocked case requires limits and an artifact')
             if not issues and record['caseId'] == 'package-discovery' and record['status'] in ('pass', 'reduced-pass'):
@@ -277,8 +292,9 @@ def assess_release(root: Path, commit: str, version: str) -> dict:
             errors += [f'{key}: {issue}' for issue in issues]
             if not issues:
                 valid[key] = record
-                if record['caseId'] == 'package-discovery' and record['status'] in ('pass', 'reduced-pass'):
-                    discovery[record['host']].update(op['operation'] for op in record['successfulOperations'])
+        for (host, case_id), record in valid.items():
+            if case_id == 'package-discovery' and record['status'] in ('pass', 'reduced-pass'):
+                discovery[host].update(op['operation'] for op in record['successfulOperations'])
         for case_id, entry in entries.items():
             if entry['structuralOnly']:
                 continue
@@ -287,6 +303,8 @@ def assess_release(root: Path, commit: str, version: str) -> dict:
                 if not record or record['status'] not in ('pass', 'reduced-pass', 'blocked'):
                     errors.append(f'{host}: required case lacks validated result: {case_id}')
         for host in HOSTS:
+            for status in STATUSES:
+                report['byHost'][host][status] = sum(h == host and r['status'] == status for (h,_),r in valid.items())
             report['byHost'][host]['packageDiscovery'] = DISCOVERY <= discovery[host]
             if not DISCOVERY <= discovery[host]:
                 errors.append(f'{host}: actual package discovery and invocation missing')

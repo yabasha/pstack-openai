@@ -26,6 +26,22 @@
         "reduced-pass": [
           "read"
         ]
+      },
+      "executionModes": {
+        "pass": [
+          "workers"
+        ],
+        "reduced-pass": [
+          "direct",
+          "sequential",
+          "workers"
+        ]
+      },
+      "requiredPermissions": {
+        "pass": [
+          "execution"
+        ],
+        "reduced-pass": []
       }
     },
     {
@@ -51,11 +67,29 @@
       "requiredObservations": {
         "pass": [
           "read",
-          "inspect-result"
+          "review-outcome",
+          "execution"
         ],
         "reduced-pass": [
           "read"
         ]
+      },
+      "executionModes": {
+        "pass": [
+          "direct",
+          "workers"
+        ],
+        "reduced-pass": [
+          "direct",
+          "sequential",
+          "workers"
+        ]
+      },
+      "requiredPermissions": {
+        "pass": [
+          "execution"
+        ],
+        "reduced-pass": []
       }
     },
     {
@@ -85,6 +119,22 @@
         "reduced-pass": [
           "read"
         ]
+      },
+      "executionModes": {
+        "pass": [
+          "workers"
+        ],
+        "reduced-pass": [
+          "direct",
+          "sequential",
+          "workers"
+        ]
+      },
+      "requiredPermissions": {
+        "pass": [
+          "execution"
+        ],
+        "reduced-pass": []
       }
     },
     {
@@ -105,11 +155,26 @@
       "requiredObservations": {
         "pass": [
           "read",
-          "inspect-result"
+          "review-outcome"
         ],
         "reduced-pass": [
           "read"
         ]
+      },
+      "executionModes": {
+        "pass": [
+          "direct",
+          "workers"
+        ],
+        "reduced-pass": [
+          "direct",
+          "sequential",
+          "workers"
+        ]
+      },
+      "requiredPermissions": {
+        "pass": [],
+        "reduced-pass": []
       }
     },
     {
@@ -139,6 +204,22 @@
         "reduced-pass": [
           "read"
         ]
+      },
+      "executionModes": {
+        "pass": [
+          "workers"
+        ],
+        "reduced-pass": [
+          "direct",
+          "sequential",
+          "workers"
+        ]
+      },
+      "requiredPermissions": {
+        "pass": [
+          "execution"
+        ],
+        "reduced-pass": []
       }
     },
     {
@@ -164,7 +245,25 @@
         "reduced-pass": [
           "read"
         ]
-      }
+      },
+      "executionModes": {
+        "pass": [
+          "workers"
+        ],
+        "reduced-pass": [
+          "direct",
+          "sequential",
+          "workers"
+        ]
+      },
+      "requiredPermissions": {
+        "pass": [
+          "execution",
+          "writes"
+        ],
+        "reduced-pass": []
+      },
+      "requiredMethod": "arena"
     },
     {
       "caseId": "authorized-program",
@@ -194,11 +293,29 @@
       "requiredObservations": {
         "pass": [
           "read",
-          "inspect-result"
+          "inspect-result",
+          "isolated-write"
         ],
         "reduced-pass": [
           "read"
         ]
+      },
+      "executionModes": {
+        "pass": [
+          "workers"
+        ],
+        "reduced-pass": [
+          "direct",
+          "sequential",
+          "workers"
+        ]
+      },
+      "requiredPermissions": {
+        "pass": [
+          "execution",
+          "writes"
+        ],
+        "reduced-pass": []
       }
     },
     {
@@ -230,11 +347,26 @@
       "requiredObservations": {
         "pass": [
           "read",
-          "inspect-result"
+          "review-outcome"
         ],
         "reduced-pass": [
           "read"
         ]
+      },
+      "executionModes": {
+        "pass": [
+          "direct",
+          "workers"
+        ],
+        "reduced-pass": [
+          "direct",
+          "sequential",
+          "workers"
+        ]
+      },
+      "requiredPermissions": {
+        "pass": [],
+        "reduced-pass": []
       }
     },
     {
@@ -266,11 +398,26 @@
       "requiredObservations": {
         "pass": [
           "read",
-          "inspect-result"
+          "review-outcome"
         ],
         "reduced-pass": [
           "read"
         ]
+      },
+      "executionModes": {
+        "pass": [
+          "direct",
+          "workers"
+        ],
+        "reduced-pass": [
+          "direct",
+          "sequential",
+          "workers"
+        ]
+      },
+      "requiredPermissions": {
+        "pass": [],
+        "reduced-pass": []
       }
     },
     {
@@ -302,11 +449,26 @@
       "requiredObservations": {
         "pass": [
           "read",
-          "inspect-result"
+          "review-outcome"
         ],
         "reduced-pass": [
           "read"
         ]
+      },
+      "executionModes": {
+        "pass": [
+          "direct",
+          "workers"
+        ],
+        "reduced-pass": [
+          "direct",
+          "sequential",
+          "workers"
+        ]
+      },
+      "requiredPermissions": {
+        "pass": [],
+        "reduced-pass": []
       }
     },
     {
@@ -338,11 +500,26 @@
       "requiredObservations": {
         "pass": [
           "read",
-          "inspect-result"
+          "review-outcome"
         ],
         "reduced-pass": [
           "read"
         ]
+      },
+      "executionModes": {
+        "pass": [
+          "direct",
+          "workers"
+        ],
+        "reduced-pass": [
+          "direct",
+          "sequential",
+          "workers"
+        ]
+      },
+      "requiredPermissions": {
+        "pass": [],
+        "reduced-pass": []
       }
     },
     {
@@ -374,11 +551,26 @@
       "requiredObservations": {
         "pass": [
           "read",
-          "inspect-result"
+          "review-outcome"
         ],
         "reduced-pass": [
           "read"
         ]
+      },
+      "executionModes": {
+        "pass": [
+          "direct",
+          "workers"
+        ],
+        "reduced-pass": [
+          "direct",
+          "sequential",
+          "workers"
+        ]
+      },
+      "requiredPermissions": {
+        "pass": [],
+        "reduced-pass": []
       }
     },
     {
@@ -410,11 +602,26 @@
       "requiredObservations": {
         "pass": [
           "read",
-          "inspect-result"
+          "review-outcome"
         ],
         "reduced-pass": [
           "read"
         ]
+      },
+      "executionModes": {
+        "pass": [
+          "direct",
+          "workers"
+        ],
+        "reduced-pass": [
+          "direct",
+          "sequential",
+          "workers"
+        ]
+      },
+      "requiredPermissions": {
+        "pass": [],
+        "reduced-pass": []
       }
     },
     {
@@ -446,11 +653,26 @@
       "requiredObservations": {
         "pass": [
           "read",
-          "inspect-result"
+          "review-outcome"
         ],
         "reduced-pass": [
           "read"
         ]
+      },
+      "executionModes": {
+        "pass": [
+          "direct",
+          "workers"
+        ],
+        "reduced-pass": [
+          "direct",
+          "sequential",
+          "workers"
+        ]
+      },
+      "requiredPermissions": {
+        "pass": [],
+        "reduced-pass": []
       }
     },
     {
@@ -482,11 +704,26 @@
       "requiredObservations": {
         "pass": [
           "read",
-          "inspect-result"
+          "review-outcome"
         ],
         "reduced-pass": [
           "read"
         ]
+      },
+      "executionModes": {
+        "pass": [
+          "direct",
+          "workers"
+        ],
+        "reduced-pass": [
+          "direct",
+          "sequential",
+          "workers"
+        ]
+      },
+      "requiredPermissions": {
+        "pass": [],
+        "reduced-pass": []
       }
     },
     {
@@ -515,6 +752,22 @@
         "reduced-pass": [
           "read"
         ]
+      },
+      "executionModes": {
+        "pass": [
+          "workers"
+        ],
+        "reduced-pass": [
+          "direct",
+          "sequential",
+          "workers"
+        ]
+      },
+      "requiredPermissions": {
+        "pass": [
+          "execution"
+        ],
+        "reduced-pass": []
       }
     },
     {
@@ -554,11 +807,30 @@
       "requiredObservations": {
         "pass": [
           "read",
-          "inspect-result"
+          "inspect-result",
+          "execution",
+          "isolated-write"
         ],
         "reduced-pass": [
           "read"
         ]
+      },
+      "executionModes": {
+        "pass": [
+          "workers"
+        ],
+        "reduced-pass": [
+          "direct",
+          "sequential",
+          "workers"
+        ]
+      },
+      "requiredPermissions": {
+        "pass": [
+          "execution",
+          "writes"
+        ],
+        "reduced-pass": []
       }
     },
     {
@@ -594,11 +866,29 @@
       "requiredObservations": {
         "pass": [
           "read",
-          "inspect-result"
+          "review-outcome",
+          "execution"
         ],
         "reduced-pass": [
           "read"
         ]
+      },
+      "executionModes": {
+        "pass": [
+          "direct",
+          "workers"
+        ],
+        "reduced-pass": [
+          "direct",
+          "sequential",
+          "workers"
+        ]
+      },
+      "requiredPermissions": {
+        "pass": [
+          "execution"
+        ],
+        "reduced-pass": []
       }
     },
     {
@@ -619,11 +909,26 @@
       "requiredObservations": {
         "pass": [
           "read",
-          "inspect-result"
+          "review-outcome"
         ],
         "reduced-pass": [
           "read"
         ]
+      },
+      "executionModes": {
+        "pass": [
+          "direct",
+          "workers"
+        ],
+        "reduced-pass": [
+          "direct",
+          "sequential",
+          "workers"
+        ]
+      },
+      "requiredPermissions": {
+        "pass": [],
+        "reduced-pass": []
       }
     },
     {
@@ -653,6 +958,22 @@
         "reduced-pass": [
           "read"
         ]
+      },
+      "executionModes": {
+        "pass": [
+          "workers"
+        ],
+        "reduced-pass": [
+          "direct",
+          "sequential",
+          "workers"
+        ]
+      },
+      "requiredPermissions": {
+        "pass": [
+          "execution"
+        ],
+        "reduced-pass": []
       }
     },
     {
@@ -678,7 +999,25 @@
         "reduced-pass": [
           "read"
         ]
-      }
+      },
+      "executionModes": {
+        "pass": [
+          "workers"
+        ],
+        "reduced-pass": [
+          "direct",
+          "sequential",
+          "workers"
+        ]
+      },
+      "requiredPermissions": {
+        "pass": [
+          "execution",
+          "writes"
+        ],
+        "reduced-pass": []
+      },
+      "requiredMethod": "arena"
     },
     {
       "caseId": "chatgpt-setup-from-readme",
@@ -698,11 +1037,26 @@
       "requiredObservations": {
         "pass": [
           "read",
-          "inspect-result"
+          "review-outcome"
         ],
         "reduced-pass": [
           "read"
         ]
+      },
+      "executionModes": {
+        "pass": [
+          "direct",
+          "workers"
+        ],
+        "reduced-pass": [
+          "direct",
+          "sequential",
+          "workers"
+        ]
+      },
+      "requiredPermissions": {
+        "pass": [],
+        "reduced-pass": []
       }
     },
     {
@@ -723,11 +1077,26 @@
       "requiredObservations": {
         "pass": [
           "read",
-          "inspect-result"
+          "review-outcome"
         ],
         "reduced-pass": [
           "read"
         ]
+      },
+      "executionModes": {
+        "pass": [
+          "direct",
+          "workers"
+        ],
+        "reduced-pass": [
+          "direct",
+          "sequential",
+          "workers"
+        ]
+      },
+      "requiredPermissions": {
+        "pass": [],
+        "reduced-pass": []
       }
     },
     {
@@ -762,11 +1131,30 @@
       "requiredObservations": {
         "pass": [
           "read",
-          "inspect-result"
+          "inspect-result",
+          "execution",
+          "isolated-write"
         ],
         "reduced-pass": [
           "read"
         ]
+      },
+      "executionModes": {
+        "pass": [
+          "workers"
+        ],
+        "reduced-pass": [
+          "direct",
+          "sequential",
+          "workers"
+        ]
+      },
+      "requiredPermissions": {
+        "pass": [
+          "execution",
+          "writes"
+        ],
+        "reduced-pass": []
       }
     },
     {
@@ -793,11 +1181,28 @@
       "requiredObservations": {
         "pass": [
           "read",
-          "inspect-result"
+          "inspect-result",
+          "execution"
         ],
         "reduced-pass": [
           "read"
         ]
+      },
+      "executionModes": {
+        "pass": [
+          "workers"
+        ],
+        "reduced-pass": [
+          "direct",
+          "sequential",
+          "workers"
+        ]
+      },
+      "requiredPermissions": {
+        "pass": [
+          "execution"
+        ],
+        "reduced-pass": []
       }
     },
     {
@@ -818,11 +1223,26 @@
       "requiredObservations": {
         "pass": [
           "read",
-          "inspect-result"
+          "review-outcome"
         ],
         "reduced-pass": [
           "read"
         ]
+      },
+      "executionModes": {
+        "pass": [
+          "direct",
+          "workers"
+        ],
+        "reduced-pass": [
+          "direct",
+          "sequential",
+          "workers"
+        ]
+      },
+      "requiredPermissions": {
+        "pass": [],
+        "reduced-pass": []
       }
     },
     {
@@ -845,11 +1265,29 @@
       "requiredObservations": {
         "pass": [
           "read",
-          "inspect-result"
+          "inspect-result",
+          "isolated-write"
         ],
         "reduced-pass": [
           "read"
         ]
+      },
+      "executionModes": {
+        "pass": [
+          "workers"
+        ],
+        "reduced-pass": [
+          "direct",
+          "sequential",
+          "workers"
+        ]
+      },
+      "requiredPermissions": {
+        "pass": [
+          "execution",
+          "writes"
+        ],
+        "reduced-pass": []
       }
     },
     {
@@ -877,6 +1315,23 @@
         "reduced-pass": [
           "read"
         ]
+      },
+      "executionModes": {
+        "pass": [
+          "direct",
+          "workers"
+        ],
+        "reduced-pass": [
+          "direct",
+          "sequential",
+          "workers"
+        ]
+      },
+      "requiredPermissions": {
+        "pass": [
+          "writes"
+        ],
+        "reduced-pass": []
       }
     },
     {
@@ -896,12 +1351,30 @@
       },
       "requiredObservations": {
         "pass": [
-          "read",
-          "inspect-result"
+          "supplied-input",
+          "response",
+          "review-outcome"
         ],
         "reduced-pass": [
-          "read"
+          "supplied-input",
+          "response",
+          "review-outcome"
         ]
+      },
+      "executionModes": {
+        "pass": [
+          "direct",
+          "workers"
+        ],
+        "reduced-pass": [
+          "direct",
+          "sequential",
+          "workers"
+        ]
+      },
+      "requiredPermissions": {
+        "pass": [],
+        "reduced-pass": []
       }
     },
     {
@@ -927,6 +1400,22 @@
         "reduced-pass": [
           "read"
         ]
+      },
+      "executionModes": {
+        "pass": [
+          "workers"
+        ],
+        "reduced-pass": [
+          "direct",
+          "sequential",
+          "workers"
+        ]
+      },
+      "requiredPermissions": {
+        "pass": [
+          "execution"
+        ],
+        "reduced-pass": []
       }
     },
     {
@@ -949,11 +1438,30 @@
       "requiredObservations": {
         "pass": [
           "read",
-          "inspect-result"
+          "inspect-result",
+          "execution",
+          "isolated-write"
         ],
         "reduced-pass": [
           "read"
         ]
+      },
+      "executionModes": {
+        "pass": [
+          "workers"
+        ],
+        "reduced-pass": [
+          "direct",
+          "sequential",
+          "workers"
+        ]
+      },
+      "requiredPermissions": {
+        "pass": [
+          "execution",
+          "writes"
+        ],
+        "reduced-pass": []
       }
     },
     {
@@ -982,11 +1490,29 @@
       "requiredObservations": {
         "pass": [
           "read",
-          "inspect-result"
+          "review-outcome",
+          "execution"
         ],
         "reduced-pass": [
           "read"
         ]
+      },
+      "executionModes": {
+        "pass": [
+          "direct",
+          "workers"
+        ],
+        "reduced-pass": [
+          "direct",
+          "sequential",
+          "workers"
+        ]
+      },
+      "requiredPermissions": {
+        "pass": [
+          "execution"
+        ],
+        "reduced-pass": []
       }
     },
     {
@@ -1007,11 +1533,26 @@
       "requiredObservations": {
         "pass": [
           "read",
-          "inspect-result"
+          "review-outcome"
         ],
         "reduced-pass": [
           "read"
         ]
+      },
+      "executionModes": {
+        "pass": [
+          "direct",
+          "workers"
+        ],
+        "reduced-pass": [
+          "direct",
+          "sequential",
+          "workers"
+        ]
+      },
+      "requiredPermissions": {
+        "pass": [],
+        "reduced-pass": []
       }
     },
     {
@@ -1032,11 +1573,29 @@
       "requiredObservations": {
         "pass": [
           "read",
-          "inspect-result"
+          "inspect-result",
+          "isolated-write"
         ],
         "reduced-pass": [
           "read"
         ]
+      },
+      "executionModes": {
+        "pass": [
+          "workers"
+        ],
+        "reduced-pass": [
+          "direct",
+          "sequential",
+          "workers"
+        ]
+      },
+      "requiredPermissions": {
+        "pass": [
+          "execution",
+          "writes"
+        ],
+        "reduced-pass": []
       }
     },
     {
@@ -1057,11 +1616,29 @@
       "requiredObservations": {
         "pass": [
           "read",
-          "inspect-result"
+          "review-outcome",
+          "execution"
         ],
         "reduced-pass": [
           "read"
         ]
+      },
+      "executionModes": {
+        "pass": [
+          "direct",
+          "workers"
+        ],
+        "reduced-pass": [
+          "direct",
+          "sequential",
+          "workers"
+        ]
+      },
+      "requiredPermissions": {
+        "pass": [
+          "execution"
+        ],
+        "reduced-pass": []
       }
     },
     {
@@ -1082,11 +1659,29 @@
       "requiredObservations": {
         "pass": [
           "read",
-          "inspect-result"
+          "inspect-result",
+          "isolated-write"
         ],
         "reduced-pass": [
           "read"
         ]
+      },
+      "executionModes": {
+        "pass": [
+          "workers"
+        ],
+        "reduced-pass": [
+          "direct",
+          "sequential",
+          "workers"
+        ]
+      },
+      "requiredPermissions": {
+        "pass": [
+          "execution",
+          "writes"
+        ],
+        "reduced-pass": []
       }
     },
     {
@@ -1112,6 +1707,22 @@
         "reduced-pass": [
           "read"
         ]
+      },
+      "executionModes": {
+        "pass": [
+          "workers"
+        ],
+        "reduced-pass": [
+          "direct",
+          "sequential",
+          "workers"
+        ]
+      },
+      "requiredPermissions": {
+        "pass": [
+          "execution"
+        ],
+        "reduced-pass": []
       }
     },
     {
@@ -1148,11 +1759,26 @@
       "requiredObservations": {
         "pass": [
           "read",
-          "inspect-result"
+          "review-outcome"
         ],
         "reduced-pass": [
           "read"
         ]
+      },
+      "executionModes": {
+        "pass": [
+          "direct",
+          "workers"
+        ],
+        "reduced-pass": [
+          "direct",
+          "sequential",
+          "workers"
+        ]
+      },
+      "requiredPermissions": {
+        "pass": [],
+        "reduced-pass": []
       }
     },
     {
@@ -1189,11 +1815,26 @@
       "requiredObservations": {
         "pass": [
           "read",
-          "inspect-result"
+          "review-outcome"
         ],
         "reduced-pass": [
           "read"
         ]
+      },
+      "executionModes": {
+        "pass": [
+          "direct",
+          "workers"
+        ],
+        "reduced-pass": [
+          "direct",
+          "sequential",
+          "workers"
+        ]
+      },
+      "requiredPermissions": {
+        "pass": [],
+        "reduced-pass": []
       }
     },
     {
@@ -1230,11 +1871,26 @@
       "requiredObservations": {
         "pass": [
           "read",
-          "inspect-result"
+          "review-outcome"
         ],
         "reduced-pass": [
           "read"
         ]
+      },
+      "executionModes": {
+        "pass": [
+          "direct",
+          "workers"
+        ],
+        "reduced-pass": [
+          "direct",
+          "sequential",
+          "workers"
+        ]
+      },
+      "requiredPermissions": {
+        "pass": [],
+        "reduced-pass": []
       }
     },
     {
@@ -1271,11 +1927,26 @@
       "requiredObservations": {
         "pass": [
           "read",
-          "inspect-result"
+          "review-outcome"
         ],
         "reduced-pass": [
           "read"
         ]
+      },
+      "executionModes": {
+        "pass": [
+          "direct",
+          "workers"
+        ],
+        "reduced-pass": [
+          "direct",
+          "sequential",
+          "workers"
+        ]
+      },
+      "requiredPermissions": {
+        "pass": [],
+        "reduced-pass": []
       }
     },
     {
@@ -1317,6 +1988,22 @@
         "reduced-pass": [
           "read"
         ]
+      },
+      "executionModes": {
+        "pass": [
+          "workers"
+        ],
+        "reduced-pass": [
+          "direct",
+          "sequential",
+          "workers"
+        ]
+      },
+      "requiredPermissions": {
+        "pass": [
+          "execution"
+        ],
+        "reduced-pass": []
       }
     },
     {
@@ -1354,6 +2041,22 @@
         "reduced-pass": [
           "read"
         ]
+      },
+      "executionModes": {
+        "pass": [
+          "workers"
+        ],
+        "reduced-pass": [
+          "direct",
+          "sequential",
+          "workers"
+        ]
+      },
+      "requiredPermissions": {
+        "pass": [
+          "execution"
+        ],
+        "reduced-pass": []
       }
     },
     {
@@ -1380,6 +2083,22 @@
         "reduced-pass": [
           "read"
         ]
+      },
+      "executionModes": {
+        "pass": [
+          "workers"
+        ],
+        "reduced-pass": [
+          "direct",
+          "sequential",
+          "workers"
+        ]
+      },
+      "requiredPermissions": {
+        "pass": [
+          "execution"
+        ],
+        "reduced-pass": []
       }
     },
     {
@@ -1404,11 +2123,26 @@
       "requiredObservations": {
         "pass": [
           "read",
-          "inspect-result"
+          "review-outcome"
         ],
         "reduced-pass": [
           "read"
         ]
+      },
+      "executionModes": {
+        "pass": [
+          "direct",
+          "workers"
+        ],
+        "reduced-pass": [
+          "direct",
+          "sequential",
+          "workers"
+        ]
+      },
+      "requiredPermissions": {
+        "pass": [],
+        "reduced-pass": []
       }
     },
     {
@@ -1437,6 +2171,23 @@
         "reduced-pass": [
           "read"
         ]
+      },
+      "executionModes": {
+        "pass": [
+          "direct",
+          "workers"
+        ],
+        "reduced-pass": [
+          "direct",
+          "sequential",
+          "workers"
+        ]
+      },
+      "requiredPermissions": {
+        "pass": [
+          "externalActions"
+        ],
+        "reduced-pass": []
       }
     },
     {
@@ -1457,11 +2208,26 @@
       "requiredObservations": {
         "pass": [
           "read",
-          "inspect-result"
+          "review-outcome"
         ],
         "reduced-pass": [
           "read"
         ]
+      },
+      "executionModes": {
+        "pass": [
+          "direct",
+          "workers"
+        ],
+        "reduced-pass": [
+          "direct",
+          "sequential",
+          "workers"
+        ]
+      },
+      "requiredPermissions": {
+        "pass": [],
+        "reduced-pass": []
       }
     },
     {
@@ -1482,11 +2248,26 @@
       "requiredObservations": {
         "pass": [
           "read",
-          "inspect-result"
+          "review-outcome"
         ],
         "reduced-pass": [
           "read"
         ]
+      },
+      "executionModes": {
+        "pass": [
+          "direct",
+          "workers"
+        ],
+        "reduced-pass": [
+          "direct",
+          "sequential",
+          "workers"
+        ]
+      },
+      "requiredPermissions": {
+        "pass": [],
+        "reduced-pass": []
       }
     },
     {
@@ -1512,6 +2293,22 @@
         "reduced-pass": [
           "read"
         ]
+      },
+      "executionModes": {
+        "pass": [
+          "workers"
+        ],
+        "reduced-pass": [
+          "direct",
+          "sequential",
+          "workers"
+        ]
+      },
+      "requiredPermissions": {
+        "pass": [
+          "execution"
+        ],
+        "reduced-pass": []
       }
     },
     {
@@ -1533,11 +2330,29 @@
       "requiredObservations": {
         "pass": [
           "read",
-          "inspect-result"
+          "inspect-result",
+          "isolated-write"
         ],
         "reduced-pass": [
           "read"
         ]
+      },
+      "executionModes": {
+        "pass": [
+          "workers"
+        ],
+        "reduced-pass": [
+          "direct",
+          "sequential",
+          "workers"
+        ]
+      },
+      "requiredPermissions": {
+        "pass": [
+          "execution",
+          "writes"
+        ],
+        "reduced-pass": []
       }
     },
     {
@@ -1558,11 +2373,29 @@
       "requiredObservations": {
         "pass": [
           "read",
-          "inspect-result"
+          "review-outcome",
+          "execution"
         ],
         "reduced-pass": [
           "read"
         ]
+      },
+      "executionModes": {
+        "pass": [
+          "direct",
+          "workers"
+        ],
+        "reduced-pass": [
+          "direct",
+          "sequential",
+          "workers"
+        ]
+      },
+      "requiredPermissions": {
+        "pass": [
+          "execution"
+        ],
+        "reduced-pass": []
       }
     },
     {
@@ -1583,11 +2416,26 @@
       "requiredObservations": {
         "pass": [
           "read",
-          "inspect-result"
+          "review-outcome"
         ],
         "reduced-pass": [
           "read"
         ]
+      },
+      "executionModes": {
+        "pass": [
+          "direct",
+          "workers"
+        ],
+        "reduced-pass": [
+          "direct",
+          "sequential",
+          "workers"
+        ]
+      },
+      "requiredPermissions": {
+        "pass": [],
+        "reduced-pass": []
       }
     },
     {
@@ -1608,11 +2456,26 @@
       "requiredObservations": {
         "pass": [
           "read",
-          "inspect-result"
+          "review-outcome"
         ],
         "reduced-pass": [
           "read"
         ]
+      },
+      "executionModes": {
+        "pass": [
+          "direct",
+          "workers"
+        ],
+        "reduced-pass": [
+          "direct",
+          "sequential",
+          "workers"
+        ]
+      },
+      "requiredPermissions": {
+        "pass": [],
+        "reduced-pass": []
       }
     },
     {
@@ -1633,11 +2496,26 @@
       "requiredObservations": {
         "pass": [
           "read",
-          "inspect-result"
+          "review-outcome"
         ],
         "reduced-pass": [
           "read"
         ]
+      },
+      "executionModes": {
+        "pass": [
+          "direct",
+          "workers"
+        ],
+        "reduced-pass": [
+          "direct",
+          "sequential",
+          "workers"
+        ]
+      },
+      "requiredPermissions": {
+        "pass": [],
+        "reduced-pass": []
       }
     },
     {
@@ -1664,6 +2542,22 @@
         "reduced-pass": [
           "read"
         ]
+      },
+      "executionModes": {
+        "pass": [
+          "workers"
+        ],
+        "reduced-pass": [
+          "direct",
+          "sequential",
+          "workers"
+        ]
+      },
+      "requiredPermissions": {
+        "pass": [
+          "execution"
+        ],
+        "reduced-pass": []
       }
     },
     {
@@ -1684,11 +2578,26 @@
       "requiredObservations": {
         "pass": [
           "read",
-          "inspect-result"
+          "review-outcome"
         ],
         "reduced-pass": [
           "read"
         ]
+      },
+      "executionModes": {
+        "pass": [
+          "direct",
+          "workers"
+        ],
+        "reduced-pass": [
+          "direct",
+          "sequential",
+          "workers"
+        ]
+      },
+      "requiredPermissions": {
+        "pass": [],
+        "reduced-pass": []
       }
     },
     {
@@ -1709,11 +2618,26 @@
       "requiredObservations": {
         "pass": [
           "read",
-          "inspect-result"
+          "review-outcome"
         ],
         "reduced-pass": [
           "read"
         ]
+      },
+      "executionModes": {
+        "pass": [
+          "direct",
+          "workers"
+        ],
+        "reduced-pass": [
+          "direct",
+          "sequential",
+          "workers"
+        ]
+      },
+      "requiredPermissions": {
+        "pass": [],
+        "reduced-pass": []
       }
     },
     {
@@ -1739,11 +2663,30 @@
       "requiredObservations": {
         "pass": [
           "read",
-          "inspect-result"
+          "inspect-result",
+          "execution",
+          "isolated-write"
         ],
         "reduced-pass": [
           "read"
         ]
+      },
+      "executionModes": {
+        "pass": [
+          "workers"
+        ],
+        "reduced-pass": [
+          "direct",
+          "sequential",
+          "workers"
+        ]
+      },
+      "requiredPermissions": {
+        "pass": [
+          "execution",
+          "writes"
+        ],
+        "reduced-pass": []
       }
     },
     {
@@ -1771,11 +2714,28 @@
       "requiredObservations": {
         "pass": [
           "read",
-          "inspect-result"
+          "inspect-result",
+          "execution"
         ],
         "reduced-pass": [
           "read"
         ]
+      },
+      "executionModes": {
+        "pass": [
+          "workers"
+        ],
+        "reduced-pass": [
+          "direct",
+          "sequential",
+          "workers"
+        ]
+      },
+      "requiredPermissions": {
+        "pass": [
+          "execution"
+        ],
+        "reduced-pass": []
       }
     },
     {
@@ -1859,6 +2819,21 @@
           "inspect-installed-copy",
           "read"
         ]
+      },
+      "executionModes": {
+        "pass": [
+          "direct",
+          "workers"
+        ],
+        "reduced-pass": [
+          "direct",
+          "sequential",
+          "workers"
+        ]
+      },
+      "requiredPermissions": {
+        "pass": [],
+        "reduced-pass": []
       }
     },
     {
@@ -1888,13 +2863,31 @@
           "inspect-support-contracts",
           "render-logo",
           "check-ignore",
-          "compile-proof"
+          "compile-proof",
+          "execution"
         ],
         "reduced-pass": [
           "read",
           "inspect-installed-copy",
           "inspect-support-contracts"
         ]
+      },
+      "executionModes": {
+        "pass": [
+          "direct",
+          "workers"
+        ],
+        "reduced-pass": [
+          "direct",
+          "sequential",
+          "workers"
+        ]
+      },
+      "requiredPermissions": {
+        "pass": [
+          "execution"
+        ],
+        "reduced-pass": []
       }
     },
     {
@@ -1920,7 +2913,25 @@
         "reduced-pass": [
           "read"
         ]
-      }
+      },
+      "executionModes": {
+        "pass": [
+          "workers"
+        ],
+        "reduced-pass": [
+          "direct",
+          "sequential",
+          "workers"
+        ]
+      },
+      "requiredPermissions": {
+        "pass": [
+          "execution",
+          "writes"
+        ],
+        "reduced-pass": []
+      },
+      "requiredMethod": "swarm"
     },
     {
       "caseId": "plain-restate",
@@ -1939,12 +2950,30 @@
       },
       "requiredObservations": {
         "pass": [
-          "read",
-          "inspect-result"
+          "supplied-input",
+          "response",
+          "review-outcome"
         ],
         "reduced-pass": [
-          "read"
+          "supplied-input",
+          "response",
+          "review-outcome"
         ]
+      },
+      "executionModes": {
+        "pass": [
+          "direct",
+          "workers"
+        ],
+        "reduced-pass": [
+          "direct",
+          "sequential",
+          "workers"
+        ]
+      },
+      "requiredPermissions": {
+        "pass": [],
+        "reduced-pass": []
       }
     },
     {
@@ -1970,6 +2999,22 @@
         "reduced-pass": [
           "read"
         ]
+      },
+      "executionModes": {
+        "pass": [
+          "workers"
+        ],
+        "reduced-pass": [
+          "direct",
+          "sequential",
+          "workers"
+        ]
+      },
+      "requiredPermissions": {
+        "pass": [
+          "execution"
+        ],
+        "reduced-pass": []
       }
     },
     {
@@ -2011,11 +3056,30 @@
       "requiredObservations": {
         "pass": [
           "read",
-          "inspect-result"
+          "inspect-result",
+          "execution",
+          "isolated-write"
         ],
         "reduced-pass": [
           "read"
         ]
+      },
+      "executionModes": {
+        "pass": [
+          "workers"
+        ],
+        "reduced-pass": [
+          "direct",
+          "sequential",
+          "workers"
+        ]
+      },
+      "requiredPermissions": {
+        "pass": [
+          "execution",
+          "writes"
+        ],
+        "reduced-pass": []
       }
     },
     {
@@ -2035,12 +3099,30 @@
       },
       "requiredObservations": {
         "pass": [
-          "read",
-          "inspect-result"
+          "supplied-input",
+          "response",
+          "review-outcome"
         ],
         "reduced-pass": [
-          "read"
+          "supplied-input",
+          "response",
+          "review-outcome"
         ]
+      },
+      "executionModes": {
+        "pass": [
+          "direct",
+          "workers"
+        ],
+        "reduced-pass": [
+          "direct",
+          "sequential",
+          "workers"
+        ]
+      },
+      "requiredPermissions": {
+        "pass": [],
+        "reduced-pass": []
       }
     },
     {
@@ -2093,11 +3175,26 @@
       "requiredObservations": {
         "pass": [
           "read",
-          "inspect-result"
+          "review-outcome"
         ],
         "reduced-pass": [
           "read"
         ]
+      },
+      "executionModes": {
+        "pass": [
+          "direct",
+          "workers"
+        ],
+        "reduced-pass": [
+          "direct",
+          "sequential",
+          "workers"
+        ]
+      },
+      "requiredPermissions": {
+        "pass": [],
+        "reduced-pass": []
       }
     },
     {
@@ -2121,11 +3218,31 @@
       "requiredObservations": {
         "pass": [
           "read",
-          "inspect-result"
+          "review-outcome",
+          "execution",
+          "isolated-write"
         ],
         "reduced-pass": [
           "read"
         ]
+      },
+      "executionModes": {
+        "pass": [
+          "direct",
+          "workers"
+        ],
+        "reduced-pass": [
+          "direct",
+          "sequential",
+          "workers"
+        ]
+      },
+      "requiredPermissions": {
+        "pass": [
+          "execution",
+          "writes"
+        ],
+        "reduced-pass": []
       }
     },
     {
@@ -2150,11 +3267,31 @@
       "requiredObservations": {
         "pass": [
           "read",
-          "inspect-result"
+          "review-outcome",
+          "execution",
+          "isolated-write"
         ],
         "reduced-pass": [
           "read"
         ]
+      },
+      "executionModes": {
+        "pass": [
+          "direct",
+          "workers"
+        ],
+        "reduced-pass": [
+          "direct",
+          "sequential",
+          "workers"
+        ]
+      },
+      "requiredPermissions": {
+        "pass": [
+          "execution",
+          "writes"
+        ],
+        "reduced-pass": []
       }
     },
     {
@@ -2175,11 +3312,31 @@
       "requiredObservations": {
         "pass": [
           "read",
-          "inspect-result"
+          "review-outcome",
+          "execution",
+          "isolated-write"
         ],
         "reduced-pass": [
           "read"
         ]
+      },
+      "executionModes": {
+        "pass": [
+          "direct",
+          "workers"
+        ],
+        "reduced-pass": [
+          "direct",
+          "sequential",
+          "workers"
+        ]
+      },
+      "requiredPermissions": {
+        "pass": [
+          "execution",
+          "writes"
+        ],
+        "reduced-pass": []
       }
     },
     {
@@ -2200,11 +3357,29 @@
       "requiredObservations": {
         "pass": [
           "read",
-          "inspect-result"
+          "review-outcome",
+          "isolated-write"
         ],
         "reduced-pass": [
           "read"
         ]
+      },
+      "executionModes": {
+        "pass": [
+          "direct",
+          "workers"
+        ],
+        "reduced-pass": [
+          "direct",
+          "sequential",
+          "workers"
+        ]
+      },
+      "requiredPermissions": {
+        "pass": [
+          "writes"
+        ],
+        "reduced-pass": []
       }
     },
     {
@@ -2225,11 +3400,26 @@
       "requiredObservations": {
         "pass": [
           "read",
-          "inspect-result"
+          "review-outcome"
         ],
         "reduced-pass": [
           "read"
         ]
+      },
+      "executionModes": {
+        "pass": [
+          "direct",
+          "workers"
+        ],
+        "reduced-pass": [
+          "direct",
+          "sequential",
+          "workers"
+        ]
+      },
+      "requiredPermissions": {
+        "pass": [],
+        "reduced-pass": []
       }
     },
     {
@@ -2250,11 +3440,26 @@
       "requiredObservations": {
         "pass": [
           "read",
-          "inspect-result"
+          "review-outcome"
         ],
         "reduced-pass": [
           "read"
         ]
+      },
+      "executionModes": {
+        "pass": [
+          "direct",
+          "workers"
+        ],
+        "reduced-pass": [
+          "direct",
+          "sequential",
+          "workers"
+        ]
+      },
+      "requiredPermissions": {
+        "pass": [],
+        "reduced-pass": []
       }
     },
     {
@@ -2275,11 +3480,26 @@
       "requiredObservations": {
         "pass": [
           "read",
-          "inspect-result"
+          "review-outcome"
         ],
         "reduced-pass": [
           "read"
         ]
+      },
+      "executionModes": {
+        "pass": [
+          "direct",
+          "workers"
+        ],
+        "reduced-pass": [
+          "direct",
+          "sequential",
+          "workers"
+        ]
+      },
+      "requiredPermissions": {
+        "pass": [],
+        "reduced-pass": []
       }
     },
     {
@@ -2330,11 +3550,30 @@
       "requiredObservations": {
         "pass": [
           "read",
-          "inspect-result"
+          "inspect-result",
+          "execution",
+          "isolated-write"
         ],
         "reduced-pass": [
           "read"
         ]
+      },
+      "executionModes": {
+        "pass": [
+          "workers"
+        ],
+        "reduced-pass": [
+          "direct",
+          "sequential",
+          "workers"
+        ]
+      },
+      "requiredPermissions": {
+        "pass": [
+          "execution",
+          "writes"
+        ],
+        "reduced-pass": []
       }
     },
     {
@@ -2357,11 +3596,26 @@
       "requiredObservations": {
         "pass": [
           "read",
-          "inspect-result"
+          "review-outcome"
         ],
         "reduced-pass": [
           "read"
         ]
+      },
+      "executionModes": {
+        "pass": [
+          "direct",
+          "workers"
+        ],
+        "reduced-pass": [
+          "direct",
+          "sequential",
+          "workers"
+        ]
+      },
+      "requiredPermissions": {
+        "pass": [],
+        "reduced-pass": []
       }
     },
     {
@@ -2382,11 +3636,26 @@
       "requiredObservations": {
         "pass": [
           "read",
-          "inspect-result"
+          "review-outcome"
         ],
         "reduced-pass": [
           "read"
         ]
+      },
+      "executionModes": {
+        "pass": [
+          "direct",
+          "workers"
+        ],
+        "reduced-pass": [
+          "direct",
+          "sequential",
+          "workers"
+        ]
+      },
+      "requiredPermissions": {
+        "pass": [],
+        "reduced-pass": []
       }
     },
     {
@@ -2409,11 +3678,26 @@
       "requiredObservations": {
         "pass": [
           "read",
-          "inspect-result"
+          "review-outcome"
         ],
         "reduced-pass": [
           "read"
         ]
+      },
+      "executionModes": {
+        "pass": [
+          "direct",
+          "workers"
+        ],
+        "reduced-pass": [
+          "direct",
+          "sequential",
+          "workers"
+        ]
+      },
+      "requiredPermissions": {
+        "pass": [],
+        "reduced-pass": []
       }
     },
     {
@@ -2439,6 +3723,22 @@
         "reduced-pass": [
           "read"
         ]
+      },
+      "executionModes": {
+        "pass": [
+          "workers"
+        ],
+        "reduced-pass": [
+          "direct",
+          "sequential",
+          "workers"
+        ]
+      },
+      "requiredPermissions": {
+        "pass": [
+          "execution"
+        ],
+        "reduced-pass": []
       }
     },
     {
@@ -2459,11 +3759,26 @@
       "requiredObservations": {
         "pass": [
           "read",
-          "inspect-result"
+          "review-outcome"
         ],
         "reduced-pass": [
           "read"
         ]
+      },
+      "executionModes": {
+        "pass": [
+          "direct",
+          "workers"
+        ],
+        "reduced-pass": [
+          "direct",
+          "sequential",
+          "workers"
+        ]
+      },
+      "requiredPermissions": {
+        "pass": [],
+        "reduced-pass": []
       }
     },
     {
@@ -2493,6 +3808,25 @@
           "isolated-write",
           "read"
         ]
+      },
+      "executionModes": {
+        "pass": [
+          "direct",
+          "workers"
+        ],
+        "reduced-pass": [
+          "direct",
+          "sequential",
+          "workers"
+        ]
+      },
+      "requiredPermissions": {
+        "pass": [
+          "writes"
+        ],
+        "reduced-pass": [
+          "writes"
+        ]
       }
     },
     {
@@ -2513,11 +3847,26 @@
       "requiredObservations": {
         "pass": [
           "read",
-          "inspect-result"
+          "review-outcome"
         ],
         "reduced-pass": [
           "read"
         ]
+      },
+      "executionModes": {
+        "pass": [
+          "direct",
+          "workers"
+        ],
+        "reduced-pass": [
+          "direct",
+          "sequential",
+          "workers"
+        ]
+      },
+      "requiredPermissions": {
+        "pass": [],
+        "reduced-pass": []
       }
     },
     {
@@ -2556,6 +3905,22 @@
         "reduced-pass": [
           "read"
         ]
+      },
+      "executionModes": {
+        "pass": [
+          "workers"
+        ],
+        "reduced-pass": [
+          "direct",
+          "sequential",
+          "workers"
+        ]
+      },
+      "requiredPermissions": {
+        "pass": [
+          "execution"
+        ],
+        "reduced-pass": []
       }
     },
     {
@@ -2576,11 +3941,31 @@
       "requiredObservations": {
         "pass": [
           "read",
-          "inspect-result"
+          "review-outcome",
+          "execution",
+          "isolated-write"
         ],
         "reduced-pass": [
           "read"
         ]
+      },
+      "executionModes": {
+        "pass": [
+          "direct",
+          "workers"
+        ],
+        "reduced-pass": [
+          "direct",
+          "sequential",
+          "workers"
+        ]
+      },
+      "requiredPermissions": {
+        "pass": [
+          "execution",
+          "writes"
+        ],
+        "reduced-pass": []
       }
     },
     {
@@ -2601,11 +3986,26 @@
       "requiredObservations": {
         "pass": [
           "read",
-          "inspect-result"
+          "review-outcome"
         ],
         "reduced-pass": [
           "read"
         ]
+      },
+      "executionModes": {
+        "pass": [
+          "direct",
+          "workers"
+        ],
+        "reduced-pass": [
+          "direct",
+          "sequential",
+          "workers"
+        ]
+      },
+      "requiredPermissions": {
+        "pass": [],
+        "reduced-pass": []
       }
     },
     {
@@ -2628,11 +4028,31 @@
       "requiredObservations": {
         "pass": [
           "read",
-          "inspect-result"
+          "review-outcome",
+          "execution",
+          "isolated-write"
         ],
         "reduced-pass": [
           "read"
         ]
+      },
+      "executionModes": {
+        "pass": [
+          "direct",
+          "workers"
+        ],
+        "reduced-pass": [
+          "direct",
+          "sequential",
+          "workers"
+        ]
+      },
+      "requiredPermissions": {
+        "pass": [
+          "execution",
+          "writes"
+        ],
+        "reduced-pass": []
       }
     },
     {
@@ -2658,7 +4078,26 @@
         "reduced-pass": [
           "read"
         ]
-      }
+      },
+      "executionModes": {
+        "pass": [
+          "workers"
+        ],
+        "reduced-pass": [
+          "direct",
+          "sequential",
+          "workers"
+        ]
+      },
+      "requiredPermissions": {
+        "pass": [
+          "execution",
+          "writes"
+        ],
+        "reduced-pass": []
+      },
+      "requiredMethod": "swarm-partition",
+      "requiredSliceCount": 3
     },
     {
       "caseId": "symptom-repro",
@@ -2678,11 +4117,26 @@
       "requiredObservations": {
         "pass": [
           "read",
-          "inspect-result"
+          "review-outcome"
         ],
         "reduced-pass": [
           "read"
         ]
+      },
+      "executionModes": {
+        "pass": [
+          "direct",
+          "workers"
+        ],
+        "reduced-pass": [
+          "direct",
+          "sequential",
+          "workers"
+        ]
+      },
+      "requiredPermissions": {
+        "pass": [],
+        "reduced-pass": []
       }
     },
     {
@@ -2713,11 +4167,31 @@
       "requiredObservations": {
         "pass": [
           "read",
-          "inspect-result"
+          "review-outcome",
+          "execution",
+          "isolated-write"
         ],
         "reduced-pass": [
           "read"
         ]
+      },
+      "executionModes": {
+        "pass": [
+          "direct",
+          "workers"
+        ],
+        "reduced-pass": [
+          "direct",
+          "sequential",
+          "workers"
+        ]
+      },
+      "requiredPermissions": {
+        "pass": [
+          "execution",
+          "writes"
+        ],
+        "reduced-pass": []
       }
     },
     {
@@ -2738,11 +4212,26 @@
       "requiredObservations": {
         "pass": [
           "read",
-          "inspect-result"
+          "review-outcome"
         ],
         "reduced-pass": [
           "read"
         ]
+      },
+      "executionModes": {
+        "pass": [
+          "direct",
+          "workers"
+        ],
+        "reduced-pass": [
+          "direct",
+          "sequential",
+          "workers"
+        ]
+      },
+      "requiredPermissions": {
+        "pass": [],
+        "reduced-pass": []
       }
     },
     {
@@ -2770,6 +4259,22 @@
         "reduced-pass": [
           "read"
         ]
+      },
+      "executionModes": {
+        "pass": [
+          "workers"
+        ],
+        "reduced-pass": [
+          "direct",
+          "sequential",
+          "workers"
+        ]
+      },
+      "requiredPermissions": {
+        "pass": [
+          "execution"
+        ],
+        "reduced-pass": []
       }
     },
     {
@@ -2796,11 +4301,29 @@
       "requiredObservations": {
         "pass": [
           "read",
-          "inspect-result"
+          "review-outcome",
+          "execution"
         ],
         "reduced-pass": [
           "read"
         ]
+      },
+      "executionModes": {
+        "pass": [
+          "direct",
+          "workers"
+        ],
+        "reduced-pass": [
+          "direct",
+          "sequential",
+          "workers"
+        ]
+      },
+      "requiredPermissions": {
+        "pass": [
+          "execution"
+        ],
+        "reduced-pass": []
       }
     },
     {
@@ -2821,11 +4344,26 @@
       "requiredObservations": {
         "pass": [
           "read",
-          "inspect-result"
+          "review-outcome"
         ],
         "reduced-pass": [
           "read"
         ]
+      },
+      "executionModes": {
+        "pass": [
+          "direct",
+          "workers"
+        ],
+        "reduced-pass": [
+          "direct",
+          "sequential",
+          "workers"
+        ]
+      },
+      "requiredPermissions": {
+        "pass": [],
+        "reduced-pass": []
       }
     },
     {
@@ -2847,11 +4385,26 @@
       "requiredObservations": {
         "pass": [
           "read",
-          "inspect-result"
+          "review-outcome"
         ],
         "reduced-pass": [
           "read"
         ]
+      },
+      "executionModes": {
+        "pass": [
+          "direct",
+          "workers"
+        ],
+        "reduced-pass": [
+          "direct",
+          "sequential",
+          "workers"
+        ]
+      },
+      "requiredPermissions": {
+        "pass": [],
+        "reduced-pass": []
       }
     },
     {
@@ -2880,6 +4433,25 @@
           "isolated-write",
           "read"
         ]
+      },
+      "executionModes": {
+        "pass": [
+          "direct",
+          "workers"
+        ],
+        "reduced-pass": [
+          "direct",
+          "sequential",
+          "workers"
+        ]
+      },
+      "requiredPermissions": {
+        "pass": [
+          "writes"
+        ],
+        "reduced-pass": [
+          "writes"
+        ]
       }
     },
     {
@@ -2900,11 +4472,26 @@
       "requiredObservations": {
         "pass": [
           "read",
-          "inspect-result"
+          "review-outcome"
         ],
         "reduced-pass": [
           "read"
         ]
+      },
+      "executionModes": {
+        "pass": [
+          "direct",
+          "workers"
+        ],
+        "reduced-pass": [
+          "direct",
+          "sequential",
+          "workers"
+        ]
+      },
+      "requiredPermissions": {
+        "pass": [],
+        "reduced-pass": []
       }
     },
     {
@@ -2943,11 +4530,29 @@
       "requiredObservations": {
         "pass": [
           "read",
-          "inspect-result"
+          "inspect-result",
+          "isolated-write"
         ],
         "reduced-pass": [
           "read"
         ]
+      },
+      "executionModes": {
+        "pass": [
+          "workers"
+        ],
+        "reduced-pass": [
+          "direct",
+          "sequential",
+          "workers"
+        ]
+      },
+      "requiredPermissions": {
+        "pass": [
+          "execution",
+          "writes"
+        ],
+        "reduced-pass": []
       }
     },
     {
@@ -2990,11 +4595,30 @@
       "requiredObservations": {
         "pass": [
           "read",
-          "inspect-result"
+          "inspect-result",
+          "execution",
+          "isolated-write"
         ],
         "reduced-pass": [
           "read"
         ]
+      },
+      "executionModes": {
+        "pass": [
+          "workers"
+        ],
+        "reduced-pass": [
+          "direct",
+          "sequential",
+          "workers"
+        ]
+      },
+      "requiredPermissions": {
+        "pass": [
+          "execution",
+          "writes"
+        ],
+        "reduced-pass": []
       }
     },
     {
@@ -3021,6 +4645,22 @@
         "reduced-pass": [
           "read"
         ]
+      },
+      "executionModes": {
+        "pass": [
+          "workers"
+        ],
+        "reduced-pass": [
+          "direct",
+          "sequential",
+          "workers"
+        ]
+      },
+      "requiredPermissions": {
+        "pass": [
+          "execution"
+        ],
+        "reduced-pass": []
       }
     },
     {
@@ -3041,11 +4681,26 @@
       "requiredObservations": {
         "pass": [
           "read",
-          "inspect-result"
+          "review-outcome"
         ],
         "reduced-pass": [
           "read"
         ]
+      },
+      "executionModes": {
+        "pass": [
+          "direct",
+          "workers"
+        ],
+        "reduced-pass": [
+          "direct",
+          "sequential",
+          "workers"
+        ]
+      },
+      "requiredPermissions": {
+        "pass": [],
+        "reduced-pass": []
       }
     },
     {
@@ -3072,6 +4727,22 @@
         "reduced-pass": [
           "read"
         ]
+      },
+      "executionModes": {
+        "pass": [
+          "workers"
+        ],
+        "reduced-pass": [
+          "direct",
+          "sequential",
+          "workers"
+        ]
+      },
+      "requiredPermissions": {
+        "pass": [
+          "execution"
+        ],
+        "reduced-pass": []
       }
     },
     {
@@ -3114,11 +4785,26 @@
       "requiredObservations": {
         "pass": [
           "read",
-          "inspect-result"
+          "review-outcome"
         ],
         "reduced-pass": [
           "read"
         ]
+      },
+      "executionModes": {
+        "pass": [
+          "direct",
+          "workers"
+        ],
+        "reduced-pass": [
+          "direct",
+          "sequential",
+          "workers"
+        ]
+      },
+      "requiredPermissions": {
+        "pass": [],
+        "reduced-pass": []
       }
     },
     {
@@ -3139,11 +4825,26 @@
       "requiredObservations": {
         "pass": [
           "read",
-          "inspect-result"
+          "review-outcome"
         ],
         "reduced-pass": [
           "read"
         ]
+      },
+      "executionModes": {
+        "pass": [
+          "direct",
+          "workers"
+        ],
+        "reduced-pass": [
+          "direct",
+          "sequential",
+          "workers"
+        ]
+      },
+      "requiredPermissions": {
+        "pass": [],
+        "reduced-pass": []
       }
     },
     {
@@ -3180,11 +4881,30 @@
       "requiredObservations": {
         "pass": [
           "read",
-          "inspect-result"
+          "inspect-result",
+          "execution",
+          "isolated-write"
         ],
         "reduced-pass": [
           "read"
         ]
+      },
+      "executionModes": {
+        "pass": [
+          "workers"
+        ],
+        "reduced-pass": [
+          "direct",
+          "sequential",
+          "workers"
+        ]
+      },
+      "requiredPermissions": {
+        "pass": [
+          "execution",
+          "writes"
+        ],
+        "reduced-pass": []
       }
     },
     {
@@ -3213,11 +4933,28 @@
         "pass": [
           "read",
           "execution",
-          "inspect-result"
+          "review-outcome"
         ],
         "reduced-pass": [
           "read"
         ]
+      },
+      "executionModes": {
+        "pass": [
+          "direct",
+          "workers"
+        ],
+        "reduced-pass": [
+          "direct",
+          "sequential",
+          "workers"
+        ]
+      },
+      "requiredPermissions": {
+        "pass": [
+          "execution"
+        ],
+        "reduced-pass": []
       }
     }
   ],

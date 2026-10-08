@@ -2,7 +2,7 @@ import { spawn } from "node:child_process";
 import type * as T from "./types.ts";
 import { nonEmpty, parsePrNumber } from "./types.ts";
 export const REVIEW_THREADS_QUERY =
-  "\nquery ReviewThreads($owner: String!, $repo: String!, $pr: Int!) {\n  repository(owner: $owner, name: $repo) {\n    pullRequest(number: $pr) {\n      reviewThreads(first: 100) {\n        nodes {\n          id\n          isResolved\n          comments(first: 10) {\n            nodes {\n              body\n              createdAt\n              path\n              line\n              author { login }\n            }\n          }\n        }\n      }\n    }\n  }\n}\n";
+  "\nquery ReviewThreads($owner: String!, $repo: String!, $pr: Int!, $after: String) {\n  repository(owner: $owner, name: $repo) {\n    pullRequest(number: $pr) {\n      reviewThreads(first: 100, after: $after) {\n        totalCount\n        pageInfo { hasNextPage endCursor }\n        nodes {\n          id\n          isResolved\n          comments(first: 10) {\n            nodes {\n              body\n              createdAt\n              path\n              line\n              author { login }\n            }\n          }\n        }\n      }\n    }\n  }\n}\n";
 export const PR_COMMIT_STATUS_QUERY =
   "\nquery PrCommitStatuses($owner: String!, $repo: String!, $pr: Int!) {\n  repository(owner: $owner, name: $repo) {\n    pullRequest(number: $pr) {\n      commits(last: 50) {\n        nodes {\n          commit {\n            oid\n            statusCheckRollup {\n              state\n            }\n          }\n        }\n      }\n    }\n  }\n}\n";
 export const PR_CHECK_ROLLUP_QUERY =
@@ -504,6 +504,7 @@ export class GhGitHubReader implements T.GitHubReader {
       "--json",
       "number,headRefName,baseRefName",
     ]);
+    if (list(value, "open PRs").length >= 300) missing("open PR enumeration reached the 300 PR cap; stack completeness unavailable", value);
     return list(value, "open PRs").map((item, index) => {
       const object = record(item, `open PRs[${index}]`);
       return {
@@ -578,9 +579,40 @@ export class GhGitHubReader implements T.GitHubReader {
   async reviewThreads(
     context: T.PrContext
   ): Promise<readonly T.ReviewThread[]> {
-    return parseReviewThreads(
-      await this.json(graphqlArgs(REVIEW_THREADS_QUERY, context))
-    );
+    const nodes: unknown[] = [];
+    const cursors = new Set<string>();
+    const ids = new Set<string>();
+    let after: string | null = null;
+    let total: number | null = null;
+    for (let pageNumber = 0; pageNumber < 1000; pageNumber++) {
+      const argv = graphqlArgs(REVIEW_THREADS_QUERY, context);
+      if (after !== null) argv.push("-f", "after=" + after);
+      const value = await this.json(argv);
+      if (record(value, "review response").errors !== undefined) missing("review response contains GraphQL errors", value);
+      const connection = record(at(value, ["data", "repository", "pullRequest", "reviewThreads"]), "reviewThreads");
+      if (typeof connection.totalCount !== "number" || !Number.isInteger(connection.totalCount) || connection.totalCount < 0)
+        missing("reviewThreads.totalCount", connection.totalCount);
+      if (total !== null && total !== connection.totalCount) missing("reviewThreads changed during pagination", connection.totalCount);
+      total = connection.totalCount;
+      const pageNodes = list(connection.nodes, "reviewThreads.nodes");
+      for (const node of pageNodes) {
+        const id = string(record(node, "review thread").id, "review thread.id");
+        if (ids.has(id)) missing("duplicate review thread during pagination", id);
+        ids.add(id);
+        nodes.push(node);
+      }
+      const page = record(connection.pageInfo, "reviewThreads.pageInfo");
+      if (typeof page.hasNextPage !== "boolean") missing("reviewThreads.pageInfo.hasNextPage", page.hasNextPage);
+      if (!page.hasNextPage) {
+        if (nodes.length !== total) missing("incomplete review thread pagination", nodes.length);
+        return parseReviewThreads({data: {repository: {pullRequest: {reviewThreads: {nodes}}}}});
+      }
+      const cursor = optionalString(page.endCursor, "reviewThreads.pageInfo.endCursor");
+      if (!cursor || cursors.has(cursor)) missing("review thread pagination cursor missing or repeated", cursor);
+      cursors.add(cursor);
+      after = cursor;
+    }
+    return missing("review thread pagination budget exhausted", nodes.length);
   }
   async commitRollups(
     context: T.PrContext

@@ -25,7 +25,27 @@ The Principles section below grounds every trigger. In your reply, name each pri
 Remaining triggers:
 
 - For a nontrivial change, architecture decision, or "are we sure?", use the **how** skill.
-- Before using the host's user-question operation on a "which approach", "how should I", or "what should this do" fork, classify it before you ask. If the answer is a fact you could observe by running something (behavior, timing, layout, output, perf, even whether an eval separates), it is not the human's to answer. Sketch it via the Prototype playbook (`playbooks/prototype.md`) and let the result decide. If the task is a read-only Investigation whose deliverable is a cited answer, stay in it and answer from the evidence rather than building a sketch. Reserve the question for a genuine product or preference call no experiment can settle. Under a full-autonomy grant, decide a call that the grant covers, act on it, and report it, with no reply word and no offer. Under the grant, apply a default for a call that only the operator can make. Report the default with a full explanation, and say in plain words what the operator could tell you to do instead. The operator answers in their own words. Never give a shorthand token to type back. Gates that the operator named and the Always-pause list in Autonomy still need the operator.
+- Before using the host's user-question operation on a "which approach", "how should I", or "what should this do" fork, classify it before you ask.
+
+  If the answer is a fact you could observe by running something (behavior, timing, layout, output, perf, even whether an eval separates), it is not the human's to answer.
+
+  Sketch it via the Prototype playbook (`playbooks/prototype.md`) and let the result decide.
+
+  If the task is a read-only Investigation whose deliverable is a cited answer, stay in it and answer from the evidence rather than building a sketch.
+
+  Reserve the question for a genuine product or preference call no experiment can settle.
+
+  Under a full-autonomy grant, decide a call that the grant covers, act on it, and report it, with no reply word and no offer.
+
+  Under the grant, apply a default for a call that only the operator can make.
+
+  Report the default with a full explanation, and say in plain words what the operator could tell you to do instead.
+
+  The operator answers in their own words.
+
+  Never give a shorthand token to type back.
+
+  Gates that the operator named and the Always-pause list in Autonomy still need the operator.
 - For any code, name the data shape first, and choose its organizing structure per **principle-model-the-domain**.
 - For code crossing a function boundary, use the **architect** skill, parallel design exploration before implementing.
 - For parallel fan-out, use the **swarm** skill for coverage matrices, races, gauntlets, and exploration partitions. Use **arena** for design or code bakeoffs with base selection and grafting.
@@ -35,9 +55,29 @@ Remaining triggers:
 - For docs, RFCs, readmes, PR descriptions, or commit messages, use the **technical-writing** skill (`/technical-writing`).
 - Before commit, use the `deslop` companion from `cursor-team-kit` (`/deslop`) if available. If absent, report the missing gate and obtain an authorized replacement review before claiming it satisfied. Do not install it implicitly.
 - Before review, use the **no-comments** companion (`/no-comments`) if available. If absent, disclose the missing gate; this mode's Comments rules remain applicable but do not prove that companion ran.
-- When shipping UI / IDE / CLI, use the matching control skill. `cursor-team-kit` publishes `control-cli` for CLIs and TUIs and `control-ui` for browser, Electron and web UIs. Discover their availability and the actual exposed control tools. Missing tools or companions leave the matching verification blocked; an authorized reduced check must name the surface and its limits. For bug fixes, reproduce first on the same surface yourself. Hand to the user only under the narrow Bug fix step 1 exception.
+- When shipping UI / IDE / CLI, use the matching control skill. `cursor-team-kit` publishes `control-cli` for CLIs and TUIs and `control-ui` for browser, Electron and web UIs.
+
+  Discover their availability and the actual exposed control tools.
+
+  Missing tools or companions leave the matching verification blocked; an authorized reduced check must name the surface and its limits.
+
+  For bug fixes, reproduce first on the same surface yourself.
+
+  Hand to the user only under the narrow Bug fix step 1 exception.
 - When running a benchmark, measuring perf yourself, or reporting a speedup or regression you measured, use the **benchmark-checklist** skill before you report or act on the number.
-- For any PR-status request, use the **Babysit** playbook (`playbooks/babysit.md`). Use the bundled routing even if a host companion has a matching description. That includes "babysit this", "get it green", "address the bugbot comments", and the commonest phrasing, "check on PR X" / "anything outstanding on X". Never triggered by merely opening a PR. Declare its mode before polling. The playbook's step 1 owns the request-to-mode mapping. Reaching for `drive` inside a phase agent stops that agent finishing its turn.
+- For any PR-status request, use the **Babysit** playbook (`playbooks/babysit.md`).
+
+  Use the bundled routing even if a host companion has a matching description.
+
+  That includes "babysit this", "get it green", "address the bugbot comments", and the commonest phrasing, "check on PR X" / "anything outstanding on X".
+
+  Never triggered by merely opening a PR.
+
+  Declare its mode before polling.
+
+  The playbook's step 1 owns the request-to-mode mapping.
+
+  Reaching for `drive` inside a phase agent stops that agent finishing its turn.
 - When asked to land or ship a green stack, use the **Shipping** playbook (`playbooks/shipping.md`). Green is not safe. Nothing gets armed before an independent per-PR verdict, and only the contiguous verified run from the root lands.
 - When Bugbot or the agentic security review comments, assess it skeptically. They catch real bugs and also file non-issues and nitpicks, so assess each on its merits and dismiss noise with a concrete reason instead of churning code. Triage fix / dismiss / ask per `references/bugbot-triage.md`.
 - Broken skill mid-task, fix it separately within authorized scope and prepare its own PR when PR creation is authorized. Continue independent work. Stop dependent work and disclose the broken contract instead of silently working around it.
@@ -127,13 +167,81 @@ Code-coupled work goes to one owner with the checkpoint inline. That owner fans 
 
 Read the selected playbook's complete adapted helper and prompt contracts before dependent execution. The 23 bundled playbook routes below and the Bugbot rubric are local instructions. Historical task deferrals in those files are not proof of absence or permission to skip a present contract. Check the actual path. An absent required contract still blocks its dependent step.
 
-- Decision trails use [show-me-your-work](../show-me-your-work/SKILL.md), its [template](../show-me-your-work/references/decision-log-template.tsv) and [log helper](../show-me-your-work/scripts/log.sh). Invoke the helper through authorized execution with exactly `<logfile> <phase> <decision> <why> <evidence> <result>`. The nonempty logfile is an explicit owned local path. Tabs, newlines and carriage returns are rejected before writes, and formula-leading cells are quoted. Read back the trail and retain the skill's scoped transcript audit, cross-model review and Attention requirements. Append-only logging proves neither unattended execution nor recovery.
-- Multi-phase plans use [check-plan.mjs](scripts/check-plan.mjs) as `bun --no-install <package-root>/skills/poteto-mode/scripts/check-plan.mjs <plan.md>`. It takes one positional path and reads without edits. Exit 2 means usage or unreadable input, 1 means format problems, and 0 means structural success. Keep capability declarations, live and perf evidence, independent review and exact-head receipts. It checks pstack plans only. It never validates another controller's plan, implementation or host behavior.
-- Orchestrate uses its [complete helper contract](playbooks/orchestrate.md) and the real [CLI](scripts/orch/orch.ts) and [store](scripts/orch/store.ts). Bind `bun --no-install <package-root>/skills/poteto-mode/scripts/orch/orch.ts --store <owned-store>` or explicit `ORCH_STORE` outside the package tree. Use full JSON for standing orders and rows. Preserve `inbox drain --peek --json` and actual drain receipts with durable readback before classification. `ledger check <pr> <full-head-sha>` returns NOT-VERIFIED and exit 2 for a missing key. Usage or runtime errors exit 1. Ledger rows replace the same key without enforcing verifier precedence. The caller owns precedence, append-only attempt history, exact SHA syntax, artifact inspection, terminal states, permissions and current-head filtering. The helper never spawns, waits or wakes workers. Stale locks require ownership review, and `--force` requires explicit takeover permission even for a dead holder. Frontier discovery uses local git and gt in the stack owner's clone and fails on unavailable metadata or pin mismatch. Do not substitute this binding for the gt-free Autopilot stack workflow. Atomic rename is not a crash-durability or adversarial-concurrency guarantee.
-- Babysit and Shipping use the GitHub-specific read-only [watcher](scripts/watch-pr/watch-pr) through their complete playbooks. From the package root bind `bun --no-install skills/poteto-mode/scripts/watch-pr/watch-pr` with explicit `--owner`, `--repo`, PR selection, `--head <number=full-40-character-head>` for every watched member, `--max-polls <remaining-count>` and `--timeout <remaining-seconds>`. Freeze queued order with `--queued-stack --stack-prs <bottom-to-top-list>`. Connected mode uses `--stack`, mutually exclusive with queued mode. `check` adds `--status-only`. Inspect NDJSON schemaVersion 1 kind, terminal and reason. Exit 0 includes status-only and proves no readiness by itself. Codes 2, 3, 4, 5, 6, 7 and 64 identify conflicts, threads, checks, timeout, merge gates, query failures and usage. A changed head, missing authentication or transport, or exhausted poll-budget blocks the result. Queued WAITING with reason kind merge-queue is non-terminal. Babysit reports the frontier merge-ready and stops that watcher. Shipping waits for observed merge under its distinct rule. Carry budgets across re-arms and retain an observed stop or deadline binding for a hard wall-clock limit. The helper deadline is checked between polling work. Do not add a second sleep loop or treat GitHub output as Origin evidence.
+- Decision trails use [show-me-your-work](../show-me-your-work/SKILL.md), its [template](../show-me-your-work/references/decision-log-template.tsv) and [log helper](../show-me-your-work/scripts/log.sh).
+
+  Invoke the helper through authorized execution with exactly `<logfile> <phase> <decision> <why> <evidence> <result>`.
+
+  The nonempty logfile is an explicit owned local path.
+
+  Tabs, newlines and carriage returns are rejected before writes, and formula-leading cells are quoted.
+
+  Read back the trail and retain the skill's scoped transcript audit, cross-model review and Attention requirements.
+
+  Append-only logging proves neither unattended execution nor recovery.
+- Multi-phase plans use [check-plan.mjs](scripts/check-plan.mjs) as `bun --no-install <package-root>/skills/poteto-mode/scripts/check-plan.mjs <plan.md>`.
+
+  It takes one positional path and reads without edits.
+
+  Exit 2 means usage or unreadable input, 1 means format problems, and 0 means structural success.
+
+  Keep capability declarations, live and perf evidence, independent review and exact-head receipts.
+
+  It checks pstack plans only.
+
+  It never validates another controller's plan, implementation or host behavior.
+- Orchestrate uses its [complete helper contract](playbooks/orchestrate.md) and the real [CLI](scripts/orch/orch.ts) and [store](scripts/orch/store.ts).
+
+  Bind `bun --no-install <package-root>/skills/poteto-mode/scripts/orch/orch.ts --store <owned-store>` or explicit `ORCH_STORE` outside the package tree.
+
+  Use full JSON for standing orders and rows.
+
+  Preserve `inbox drain --peek --json` and actual drain receipts with durable readback before classification. `ledger check <pr> <full-head-sha>` returns NOT-VERIFIED and exit 2 for a missing key.
+
+  Usage or runtime errors exit 1.
+
+  Ledger rows replace the same key without enforcing verifier precedence.
+
+  The caller owns precedence, append-only attempt history, exact SHA syntax, artifact inspection, terminal states, permissions and current-head filtering.
+
+  The helper never spawns, waits or wakes workers.
+
+  Stale locks require ownership review, and `--force` requires explicit takeover permission even for a dead holder.
+
+  Frontier discovery uses local git and gt in the stack owner's clone and fails on unavailable metadata or pin mismatch.
+
+  Do not substitute this binding for the gt-free Autopilot stack workflow.
+
+  Atomic rename is not a crash-durability or adversarial-concurrency guarantee.
+- Babysit and Shipping use the GitHub-specific read-only [watcher](scripts/watch-pr/watch-pr) through their complete playbooks.
+
+  From the package root bind `bun --no-install skills/poteto-mode/scripts/watch-pr/watch-pr` with explicit `--owner`, `--repo`, PR selection, `--head <number=full-40-character-head>` for every watched member, `--max-polls <remaining-count>` and `--timeout <remaining-seconds>`.
+
+  Freeze queued order with `--queued-stack --stack-prs <bottom-to-top-list>`.
+
+  Connected mode uses `--stack`, mutually exclusive with queued mode. `check` adds `--status-only`.
+
+  Inspect NDJSON schemaVersion 1 kind, terminal and reason.
+
+  Exit 0 includes status-only and proves no readiness by itself.
+
+  Codes 2, 3, 4, 5, 6, 7 and 64 identify conflicts, threads, checks, timeout, merge gates, query failures and usage.
+
+  A changed head, missing authentication or transport, or exhausted poll-budget blocks the result.
+
+  Queued WAITING with reason kind merge-queue is non-terminal.
+
+  Babysit reports the frontier merge-ready and stops that watcher.
+
+  Shipping waits for observed merge under its distinct rule.
+
+  Carry budgets across re-arms and retain an observed stop or deadline binding for a hard wall-clock limit.
+
+  The helper deadline is checked between polling work.
+
+  Do not add a second sleep loop or treat GitHub output as Origin evidence.
 - Cleanup uses the [audit wrapper](scripts/worktree-audit.sh) and [implementation](scripts/worktree-audit.py) through its playbook with an explicit local `--repo` and verified `--base`, plus authorized `--history-map` and `--pr-state` exports when available. The helper returns logical bytes and evidence buckets, performs no fetch or deletion, and leaves unknown facts as holds. A bucket never grants deletion permission. Recheck actual usage and ignored files before separately authorized removal.
 
-The [bootstrap](scripts/bootstrap.ts), [manifest](scripts/package.json) and [lock](scripts/bun.lock) require exact commander 14.0.0, bun-types 1.3.14 and typescript 7.0.2 metadata before dependency-backed CLI execution. Bootstrap fails setup-required and never installs. Run helpers with Bun runtime auto-install disabled. Missing dependencies remain blocked. The isolated tested snapshot only supports that snapshot, not this caller, the current checkout or either host. [Helper setup](../../docs/testing/helper-setup.md) contains historical statements and unqualified install examples. Those do not authorize setup. Any future setup needs fresh authorization for an exact writable copy, registry, disabled lifecycle scripts and task-owned cache. Never install in an operative invocation or bypass bootstrap.
+The [bootstrap](scripts/bootstrap.ts), [manifest](scripts/package.json) and [lock](scripts/bun.lock) require exact commander 14.0.0, bun-types 1.3.14 and typescript 7.0.2 metadata before dependency-backed CLI execution. Bootstrap fails setup-required and never installs. Run helpers with Bun runtime auto-install disabled. Missing dependencies remain blocked. The isolated tested snapshot only supports that snapshot, not this caller, the current checkout or either host. [Helper setup](../../docs/testing/helper-setup.md) states the exact-copy validation boundary and retains historical setup evidence. It does not authorize installation or transfer a historical pass to this caller. Any future setup needs fresh authorization for an exact writable copy, registry, disabled lifecycle scripts and task-owned cache. Never install in an operative invocation or bypass bootstrap.
 
 Delivery reads [Opening a PR](playbooks/opening-a-pr.md) in full and retains its review, companion, commit, push, draft or ready authorization and actual-result gates. A local draft is not a created PR. An exposed built-in PR tool owns operations it covers, and a failed tool does not authorize a CLI bypass. Opening alone never starts Babysit. A read-only question stays in Investigation, with no PR; its specific exception takes precedence over the generic delivery route. Prototype and planning handoffs grant no implementation or external permission. Missing create-skill, deslop, matching controls or independent review remains an explicit blocked gate even when a reduced local artifact is useful.
 

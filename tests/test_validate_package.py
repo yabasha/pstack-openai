@@ -285,3 +285,28 @@ class PackageTests(unittest.TestCase):
         inventory.write_text('{')
         self.assertEqual(subprocess.run(command, capture_output=True).returncode, 2)
         self.assertEqual(subprocess.run(command+['--unknown'], capture_output=True).returncode, 2)
+
+class FragmentClosureTests(unittest.TestCase):
+    setUp = PackageTests.setUp
+    write = PackageTests.write
+    fails = PackageTests.fails
+
+    def test_inert_review_sources_are_excluded_but_operative_links_and_destinations_rejected(self):
+        self.write(".upstream/reviews/source.md", "Use Task and [missing](gone.md).\n")
+        self.assertEqual([], validate_package(self.root, self.rows))
+        self.write("skills/demo/SKILL.md", "[source](../../.upstream/reviews/source.md)\n")
+        self.fails("inert")
+        self.rows[0]["destinationPath"] = ".upstream/reviews/source.md"
+        self.fails("inert")
+
+    def test_unknown_duplicate_and_conflicting_active_fragments_rejected(self):
+        import copy
+        for bad in ('unknown','duplicate','conflict'):
+            fragment = copy.deepcopy(self.rows)
+            if bad == 'unknown': fragment[0]['upstreamPath'] = 'skills/unknown/SKILL.md'
+            if bad == 'duplicate': fragment += copy.deepcopy(fragment)
+            if bad == 'conflict': fragment[0]['upstreamCommit'] = 'c'*40
+            self.write('docs/parity/adaptations/one.json', json.dumps(fragment))
+            self.assertTrue(any('fragment' in e for e in validate_package(self.root,self.rows)), bad)
+        self.write('docs/parity/adaptations/one.json', json.dumps(self.rows))
+        self.assertEqual([],validate_package(self.root,self.rows))
