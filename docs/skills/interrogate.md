@@ -101,8 +101,8 @@ Upstream commit: `df581122cde17e6e27686b5a448bde23e4ad4318`. SHA-256: `2f7e570ec
 
 Disposition: `runtime`. Aggregate adaptation status: `adapted-reviewed`.
 
-- chatgpt: `not-run`. Tested release evidence: none recorded.
-- codex: `not-run`. Tested release evidence: none recorded.
+- chatgpt: `blocked`. Tested release evidence: [docs/parity/evidence/chatgpt/adversarial-review.json](../parity/evidence/chatgpt/adversarial-review.json), [docs/parity/evidence/chatgpt/draft-only-authorized.json](../parity/evidence/chatgpt/draft-only-authorized.json), [docs/parity/evidence/chatgpt/package-discovery.json](../parity/evidence/chatgpt/package-discovery.json), [docs/parity/evidence/chatgpt/reproduce-before-fix.json](../parity/evidence/chatgpt/reproduce-before-fix.json), [docs/parity/evidence/chatgpt/units-and-proof.json](../parity/evidence/chatgpt/units-and-proof.json), [docs/parity/evidence/chatgpt/verifiable-feature.json](../parity/evidence/chatgpt/verifiable-feature.json).
+- codex: `blocked`. Tested release evidence: [docs/parity/evidence/codex/adversarial-review.json](../parity/evidence/codex/adversarial-review.json), [docs/parity/evidence/codex/draft-only-authorized.json](../parity/evidence/codex/draft-only-authorized.json), [docs/parity/evidence/codex/package-discovery.json](../parity/evidence/codex/package-discovery.json), [docs/parity/evidence/codex/reproduce-before-fix.json](../parity/evidence/codex/reproduce-before-fix.json), [docs/parity/evidence/codex/units-and-proof.json](../parity/evidence/codex/units-and-proof.json), [docs/parity/evidence/codex/verifiable-feature.json](../parity/evidence/codex/verifiable-feature.json).
 
 ### `skills/interrogate/references/code-quality-review.md`
 
@@ -112,8 +112,8 @@ Upstream commit: `df581122cde17e6e27686b5a448bde23e4ad4318`. SHA-256: `79162fda1
 
 Disposition: `runtime`. Aggregate adaptation status: `unchanged-reviewed`.
 
-- chatgpt: `not-run`. Tested release evidence: none recorded.
-- codex: `not-run`. Tested release evidence: none recorded.
+- chatgpt: `blocked`. Tested release evidence: [docs/parity/evidence/chatgpt/adversarial-review.json](../parity/evidence/chatgpt/adversarial-review.json), [docs/parity/evidence/chatgpt/reproduce-before-fix.json](../parity/evidence/chatgpt/reproduce-before-fix.json).
+- codex: `blocked`. Tested release evidence: [docs/parity/evidence/codex/adversarial-review.json](../parity/evidence/codex/adversarial-review.json), [docs/parity/evidence/codex/reproduce-before-fix.json](../parity/evidence/codex/reproduce-before-fix.json).
 
 ### `skills/interrogate/references/reviewer-prompt.md`
 
@@ -123,8 +123,8 @@ Upstream commit: `df581122cde17e6e27686b5a448bde23e4ad4318`. SHA-256: `e0598e254
 
 Disposition: `runtime`. Aggregate adaptation status: `unchanged-reviewed`.
 
-- chatgpt: `not-run`. Tested release evidence: none recorded.
-- codex: `not-run`. Tested release evidence: none recorded.
+- chatgpt: `blocked`. Tested release evidence: [docs/parity/evidence/chatgpt/adversarial-review.json](../parity/evidence/chatgpt/adversarial-review.json), [docs/parity/evidence/chatgpt/reproduce-before-fix.json](../parity/evidence/chatgpt/reproduce-before-fix.json), [docs/parity/evidence/chatgpt/verifiable-feature.json](../parity/evidence/chatgpt/verifiable-feature.json).
+- codex: `blocked`. Tested release evidence: [docs/parity/evidence/codex/adversarial-review.json](../parity/evidence/codex/adversarial-review.json), [docs/parity/evidence/codex/reproduce-before-fix.json](../parity/evidence/codex/reproduce-before-fix.json), [docs/parity/evidence/codex/verifiable-feature.json](../parity/evidence/codex/verifiable-feature.json).
 
 ### `skills/interrogate/references/rubric.md`
 
@@ -134,8 +134,8 @@ Upstream commit: `df581122cde17e6e27686b5a448bde23e4ad4318`. SHA-256: `a85aa801a
 
 Disposition: `runtime`. Aggregate adaptation status: `unchanged-reviewed`.
 
-- chatgpt: `not-run`. Tested release evidence: none recorded.
-- codex: `not-run`. Tested release evidence: none recorded.
+- chatgpt: `blocked`. Tested release evidence: [docs/parity/evidence/chatgpt/adversarial-review.json](../parity/evidence/chatgpt/adversarial-review.json), [docs/parity/evidence/chatgpt/reproduce-before-fix.json](../parity/evidence/chatgpt/reproduce-before-fix.json), [docs/parity/evidence/chatgpt/verifiable-feature.json](../parity/evidence/chatgpt/verifiable-feature.json).
+- codex: `blocked`. Tested release evidence: [docs/parity/evidence/codex/adversarial-review.json](../parity/evidence/codex/adversarial-review.json), [docs/parity/evidence/codex/reproduce-before-fix.json](../parity/evidence/codex/reproduce-before-fix.json), [docs/parity/evidence/codex/verifiable-feature.json](../parity/evidence/codex/verifiable-feature.json).
 
 ### `skills/interrogate/references/lead-judgment.md`
 
@@ -145,5 +145,5 @@ Upstream commit: `df581122cde17e6e27686b5a448bde23e4ad4318`. SHA-256: `6e5bdf567
 
 Disposition: `runtime`. Aggregate adaptation status: `unchanged-reviewed`.
 
-- chatgpt: `not-run`. Tested release evidence: none recorded.
-- codex: `not-run`. Tested release evidence: none recorded.
+- chatgpt: `blocked`. Tested release evidence: [docs/parity/evidence/chatgpt/adversarial-review.json](../parity/evidence/chatgpt/adversarial-review.json), [docs/parity/evidence/chatgpt/reproduce-before-fix.json](../parity/evidence/chatgpt/reproduce-before-fix.json).
+- codex: `blocked`. Tested release evidence: [docs/parity/evidence/codex/adversarial-review.json](../parity/evidence/codex/adversarial-review.json), [docs/parity/evidence/codex/reproduce-before-fix.json](../parity/evidence/codex/reproduce-before-fix.json).

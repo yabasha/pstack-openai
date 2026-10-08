@@ -533,3 +533,233 @@ These exact package-owned paths are additional port material, outside the 164 ca
 | [tools/sync_upstream.py](../../tools/sync_upstream.py) | Port-authored maintenance or structural verification tool |
 | [tools/validate_evidence.py](../../tools/validate_evidence.py) | Port-authored maintenance or structural verification tool |
 | [tools/validate_package.py](../../tools/validate_package.py) | Port-authored maintenance or structural verification tool |
+| [docs/maintenance/customization-boundary.md](../maintenance/customization-boundary.md) | Port-authored baseline completion and customization gate; no customization authorization |
+| [docs/parity/cases/dependencies.json](cases/dependencies.json) | Port-authored dependency readiness acceptance case; expected observations are not execution evidence |
+| [docs/parity/dependencies.json](dependencies.json) | Port-authored pinned source dependency audit with caller hashes; structural provenance, no host execution proof |
+| [docs/parity/evidence/chatgpt/absent-workers.json](evidence/chatgpt/absent-workers.json) | Port-authored per-host blocked/unattempted case record linked to F1; no observed host behavior |
+| [docs/parity/evidence/chatgpt/accessible-trace.json](evidence/chatgpt/accessible-trace.json) | Port-authored per-host blocked/unattempted case record linked to F1; no observed host behavior |
+| [docs/parity/evidence/chatgpt/adversarial-review.json](evidence/chatgpt/adversarial-review.json) | Port-authored per-host blocked/unattempted case record linked to F1; no observed host behavior |
+| [docs/parity/evidence/chatgpt/alternatives.json](evidence/chatgpt/alternatives.json) | Port-authored per-host blocked/unattempted case record linked to F1; no observed host behavior |
+| [docs/parity/evidence/chatgpt/approval-before-edit.json](evidence/chatgpt/approval-before-edit.json) | Port-authored per-host blocked/unattempted case record linked to F1; no observed host behavior |
+| [docs/parity/evidence/chatgpt/arena-walkthrough.json](evidence/chatgpt/arena-walkthrough.json) | Port-authored per-host blocked/unattempted case record linked to F1; no observed host behavior |
+| [docs/parity/evidence/chatgpt/authorization-support-check.md](evidence/chatgpt/authorization-support-check.md) | Port-authored authorization and documented support boundary; personal-host probe remains unattempted |
+| [docs/parity/evidence/chatgpt/authorized-program.json](evidence/chatgpt/authorized-program.json) | Port-authored per-host blocked/unattempted case record linked to F1; no observed host behavior |
+| [docs/parity/evidence/chatgpt/benny-duplicate-report.json](evidence/chatgpt/benny-duplicate-report.json) | Port-authored per-host blocked/unattempted case record linked to F1; no observed host behavior |
+| [docs/parity/evidence/chatgpt/benny-existing-fix-ownership.json](evidence/chatgpt/benny-existing-fix-ownership.json) | Port-authored per-host blocked/unattempted case record linked to F1; no observed host behavior |
+| [docs/parity/evidence/chatgpt/benny-existing-pr.json](evidence/chatgpt/benny-existing-pr.json) | Port-authored per-host blocked/unattempted case record linked to F1; no observed host behavior |
+| [docs/parity/evidence/chatgpt/benny-missing-adapter.json](evidence/chatgpt/benny-missing-adapter.json) | Port-authored per-host blocked/unattempted case record linked to F1; no observed host behavior |
+| [docs/parity/evidence/chatgpt/benny-missing-coordinates.json](evidence/chatgpt/benny-missing-coordinates.json) | Port-authored per-host blocked/unattempted case record linked to F1; no observed host behavior |
+| [docs/parity/evidence/chatgpt/benny-source-thread-compensation.json](evidence/chatgpt/benny-source-thread-compensation.json) | Port-authored per-host blocked/unattempted case record linked to F1; no observed host behavior |
+| [docs/parity/evidence/chatgpt/benny-unsupported-trigger.json](evidence/chatgpt/benny-unsupported-trigger.json) | Port-authored per-host blocked/unattempted case record linked to F1; no observed host behavior |
+| [docs/parity/evidence/chatgpt/benny-untrusted-marker.json](evidence/chatgpt/benny-untrusted-marker.json) | Port-authored per-host blocked/unattempted case record linked to F1; no observed host behavior |
+| [docs/parity/evidence/chatgpt/boundary-design.json](evidence/chatgpt/boundary-design.json) | Port-authored per-host blocked/unattempted case record linked to F1; no observed host behavior |
+| [docs/parity/evidence/chatgpt/bounded-improvement.json](evidence/chatgpt/bounded-improvement.json) | Port-authored per-host blocked/unattempted case record linked to F1; no observed host behavior |
+| [docs/parity/evidence/chatgpt/bounded-poll.json](evidence/chatgpt/bounded-poll.json) | Port-authored per-host blocked/unattempted case record linked to F1; no observed host behavior |
+| [docs/parity/evidence/chatgpt/caller-migration.json](evidence/chatgpt/caller-migration.json) | Port-authored per-host blocked/unattempted case record linked to F1; no observed host behavior |
+| [docs/parity/evidence/chatgpt/cancelled-worker.json](evidence/chatgpt/cancelled-worker.json) | Port-authored per-host blocked/unattempted case record linked to F1; no observed host behavior |
+| [docs/parity/evidence/chatgpt/candidate-cross-review.json](evidence/chatgpt/candidate-cross-review.json) | Port-authored per-host blocked/unattempted case record linked to F1; no observed host behavior |
+| [docs/parity/evidence/chatgpt/chatgpt-setup-from-readme.json](evidence/chatgpt/chatgpt-setup-from-readme.json) | Port-authored per-host blocked/unattempted case record linked to F1; no observed host behavior |
+| [docs/parity/evidence/chatgpt/codex-setup-from-readme.json](evidence/chatgpt/codex-setup-from-readme.json) | Port-authored per-host blocked/unattempted case record linked to F1; no observed host behavior |
+| [docs/parity/evidence/chatgpt/comparable-revisions.json](evidence/chatgpt/comparable-revisions.json) | Port-authored per-host blocked/unattempted case record linked to F1; no observed host behavior |
+| [docs/parity/evidence/chatgpt/contiguous-verified-stack.json](evidence/chatgpt/contiguous-verified-stack.json) | Port-authored per-host blocked/unattempted case record linked to F1; no observed host behavior |
+| [docs/parity/evidence/chatgpt/dead-path.json](evidence/chatgpt/dead-path.json) | Port-authored per-host blocked/unattempted case record linked to F1; no observed host behavior |
+| [docs/parity/evidence/chatgpt/decision-trail.json](evidence/chatgpt/decision-trail.json) | Port-authored per-host blocked/unattempted case record linked to F1; no observed host behavior |
+| [docs/parity/evidence/chatgpt/denied-writes.json](evidence/chatgpt/denied-writes.json) | Port-authored per-host blocked/unattempted case record linked to F1; no observed host behavior |
+| [docs/parity/evidence/chatgpt/dense-doc.json](evidence/chatgpt/dense-doc.json) | Port-authored per-host blocked/unattempted case record linked to F1; no observed host behavior |
+| [docs/parity/evidence/chatgpt/dependency-readiness.json](evidence/chatgpt/dependency-readiness.json) | Port-authored per-host blocked/unattempted case record linked to F1; no observed host behavior |
+| [docs/parity/evidence/chatgpt/dependent-caller.json](evidence/chatgpt/dependent-caller.json) | Port-authored per-host blocked/unattempted case record linked to F1; no observed host behavior |
+| [docs/parity/evidence/chatgpt/discriminating-eval.json](evidence/chatgpt/discriminating-eval.json) | Port-authored per-host blocked/unattempted case record linked to F1; no observed host behavior |
+| [docs/parity/evidence/chatgpt/draft-only-authorized.json](evidence/chatgpt/draft-only-authorized.json) | Port-authored per-host blocked/unattempted case record linked to F1; no observed host behavior |
+| [docs/parity/evidence/chatgpt/empty-function.json](evidence/chatgpt/empty-function.json) | Port-authored per-host blocked/unattempted case record linked to F1; no observed host behavior |
+| [docs/parity/evidence/chatgpt/existing-personal-mode.json](evidence/chatgpt/existing-personal-mode.json) | Port-authored per-host blocked/unattempted case record linked to F1; no observed host behavior |
+| [docs/parity/evidence/chatgpt/false-success.json](evidence/chatgpt/false-success.json) | Port-authored per-host blocked/unattempted case record linked to F1; no observed host behavior |
+| [docs/parity/evidence/chatgpt/fresh-worker-mode.json](evidence/chatgpt/fresh-worker-mode.json) | Port-authored per-host blocked/unattempted case record linked to F1; no observed host behavior |
+| [docs/parity/evidence/chatgpt/grounded-explanation.json](evidence/chatgpt/grounded-explanation.json) | Port-authored per-host blocked/unattempted case record linked to F1; no observed host behavior |
+| [docs/parity/evidence/chatgpt/guides-github-absent.json](evidence/chatgpt/guides-github-absent.json) | Port-authored per-host blocked/unattempted case record linked to F1; no observed host behavior |
+| [docs/parity/evidence/chatgpt/guides-local-codex.json](evidence/chatgpt/guides-local-codex.json) | Port-authored per-host blocked/unattempted case record linked to F1; no observed host behavior |
+| [docs/parity/evidence/chatgpt/guides-optional-setup-skipped.json](evidence/chatgpt/guides-optional-setup-skipped.json) | Port-authored per-host blocked/unattempted case record linked to F1; no observed host behavior |
+| [docs/parity/evidence/chatgpt/guides-ordinary-chatgpt.json](evidence/chatgpt/guides-ordinary-chatgpt.json) | Port-authored per-host blocked/unattempted case record linked to F1; no observed host behavior |
+| [docs/parity/evidence/chatgpt/guides-worker-chatgpt.json](evidence/chatgpt/guides-worker-chatgpt.json) | Port-authored per-host blocked/unattempted case record linked to F1; no observed host behavior |
+| [docs/parity/evidence/chatgpt/history-evidence.json](evidence/chatgpt/history-evidence.json) | Port-authored per-host blocked/unattempted case record linked to F1; no observed host behavior |
+| [docs/parity/evidence/chatgpt/inherited-identical-models.json](evidence/chatgpt/inherited-identical-models.json) | Port-authored per-host blocked/unattempted case record linked to F1; no observed host behavior |
+| [docs/parity/evidence/chatgpt/interrupted-action.json](evidence/chatgpt/interrupted-action.json) | Port-authored per-host blocked/unattempted case record linked to F1; no observed host behavior |
+| [docs/parity/evidence/chatgpt/interrupted-external-write.json](evidence/chatgpt/interrupted-external-write.json) | Port-authored per-host blocked/unattempted case record linked to F1; no observed host behavior |
+| [docs/parity/evidence/chatgpt/invalid-input.json](evidence/chatgpt/invalid-input.json) | Port-authored per-host blocked/unattempted case record linked to F1; no observed host behavior |
+| [docs/parity/evidence/chatgpt/invalid-state.json](evidence/chatgpt/invalid-state.json) | Port-authored per-host blocked/unattempted case record linked to F1; no observed host behavior |
+| [docs/parity/evidence/chatgpt/large-corpus.json](evidence/chatgpt/large-corpus.json) | Port-authored per-host blocked/unattempted case record linked to F1; no observed host behavior |
+| [docs/parity/evidence/chatgpt/legal-header.json](evidence/chatgpt/legal-header.json) | Port-authored per-host blocked/unattempted case record linked to F1; no observed host behavior |
+| [docs/parity/evidence/chatgpt/measurement-method.json](evidence/chatgpt/measurement-method.json) | Port-authored per-host blocked/unattempted case record linked to F1; no observed host behavior |
+| [docs/parity/evidence/chatgpt/migration-end-state.json](evidence/chatgpt/migration-end-state.json) | Port-authored per-host blocked/unattempted case record linked to F1; no observed host behavior |
+| [docs/parity/evidence/chatgpt/migration-units.json](evidence/chatgpt/migration-units.json) | Port-authored per-host blocked/unattempted case record linked to F1; no observed host behavior |
+| [docs/parity/evidence/chatgpt/misleading-speedup.json](evidence/chatgpt/misleading-speedup.json) | Port-authored per-host blocked/unattempted case record linked to F1; no observed host behavior |
+| [docs/parity/evidence/chatgpt/missing-model-enumeration.json](evidence/chatgpt/missing-model-enumeration.json) | Port-authored per-host blocked/unattempted case record linked to F1; no observed host behavior |
+| [docs/parity/evidence/chatgpt/missing-webhook.json](evidence/chatgpt/missing-webhook.json) | Port-authored per-host blocked/unattempted case record linked to F1; no observed host behavior |
+| [docs/parity/evidence/chatgpt/new-requirement.json](evidence/chatgpt/new-requirement.json) | Port-authored per-host blocked/unattempted case record linked to F1; no observed host behavior |
+| [docs/parity/evidence/chatgpt/no-persistent-tool.json](evidence/chatgpt/no-persistent-tool.json) | Port-authored per-host blocked/unattempted case record linked to F1; no observed host behavior |
+| [docs/parity/evidence/chatgpt/owned-safe-cleanup.json](evidence/chatgpt/owned-safe-cleanup.json) | Port-authored per-host blocked/unattempted case record linked to F1; no observed host behavior |
+| [docs/parity/evidence/chatgpt/package-discovery.json](evidence/chatgpt/package-discovery.json) | Port-authored per-host blocked/unattempted case record linked to F1; no observed host behavior |
+| [docs/parity/evidence/chatgpt/package-support-contracts.json](evidence/chatgpt/package-support-contracts.json) | Port-authored per-host blocked/unattempted case record linked to F1; no observed host behavior |
+| [docs/parity/evidence/chatgpt/partition-and-race.json](evidence/chatgpt/partition-and-race.json) | Port-authored per-host blocked/unattempted case record linked to F1; no observed host behavior |
+| [docs/parity/evidence/chatgpt/plain-restate.json](evidence/chatgpt/plain-restate.json) | Port-authored per-host blocked/unattempted case record linked to F1; no observed host behavior |
+| [docs/parity/evidence/chatgpt/poteto-walkthrough.json](evidence/chatgpt/poteto-walkthrough.json) | Port-authored per-host blocked/unattempted case record linked to F1; no observed host behavior |
+| [docs/parity/evidence/chatgpt/preserved-behavior.json](evidence/chatgpt/preserved-behavior.json) | Port-authored per-host blocked/unattempted case record linked to F1; no observed host behavior |
+| [docs/parity/evidence/chatgpt/prose-rewrite.json](evidence/chatgpt/prose-rewrite.json) | Port-authored per-host blocked/unattempted case record linked to F1; no observed host behavior |
+| [docs/parity/evidence/chatgpt/read-only-answer.json](evidence/chatgpt/read-only-answer.json) | Port-authored per-host blocked/unattempted case record linked to F1; no observed host behavior |
+| [docs/parity/evidence/chatgpt/real-app-contract.json](evidence/chatgpt/real-app-contract.json) | Port-authored per-host blocked/unattempted case record linked to F1; no observed host behavior |
+| [docs/parity/evidence/chatgpt/real-render.json](evidence/chatgpt/real-render.json) | Port-authored per-host blocked/unattempted case record linked to F1; no observed host behavior |
+| [docs/parity/evidence/chatgpt/red-green.json](evidence/chatgpt/red-green.json) | Port-authored per-host blocked/unattempted case record linked to F1; no observed host behavior |
+| [docs/parity/evidence/chatgpt/repeatable-change.json](evidence/chatgpt/repeatable-change.json) | Port-authored per-host blocked/unattempted case record linked to F1; no observed host behavior |
+| [docs/parity/evidence/chatgpt/repeated-failure.json](evidence/chatgpt/repeated-failure.json) | Port-authored per-host blocked/unattempted case record linked to F1; no observed host behavior |
+| [docs/parity/evidence/chatgpt/repeated-rule.json](evidence/chatgpt/repeated-rule.json) | Port-authored per-host blocked/unattempted case record linked to F1; no observed host behavior |
+| [docs/parity/evidence/chatgpt/replay.json](evidence/chatgpt/replay.json) | Port-authored per-host blocked/unattempted case record linked to F1; no observed host behavior |
+| [docs/parity/evidence/chatgpt/reproduce-before-fix.json](evidence/chatgpt/reproduce-before-fix.json) | Port-authored per-host blocked/unattempted case record linked to F1; no observed host behavior |
+| [docs/parity/evidence/chatgpt/resume-revision.json](evidence/chatgpt/resume-revision.json) | Port-authored per-host blocked/unattempted case record linked to F1; no observed host behavior |
+| [docs/parity/evidence/chatgpt/reversible-step.json](evidence/chatgpt/reversible-step.json) | Port-authored per-host blocked/unattempted case record linked to F1; no observed host behavior |
+| [docs/parity/evidence/chatgpt/route-recipe.json](evidence/chatgpt/route-recipe.json) | Port-authored per-host blocked/unattempted case record linked to F1; no observed host behavior |
+| [docs/parity/evidence/chatgpt/scoped-history.json](evidence/chatgpt/scoped-history.json) | Port-authored per-host blocked/unattempted case record linked to F1; no observed host behavior |
+| [docs/parity/evidence/chatgpt/shape-first.json](evidence/chatgpt/shape-first.json) | Port-authored per-host blocked/unattempted case record linked to F1; no observed host behavior |
+| [docs/parity/evidence/chatgpt/shared-path-conflict.json](evidence/chatgpt/shared-path-conflict.json) | Port-authored per-host blocked/unattempted case record linked to F1; no observed host behavior |
+| [docs/parity/evidence/chatgpt/smaller-solution.json](evidence/chatgpt/smaller-solution.json) | Port-authored per-host blocked/unattempted case record linked to F1; no observed host behavior |
+| [docs/parity/evidence/chatgpt/stack-resume.json](evidence/chatgpt/stack-resume.json) | Port-authored per-host blocked/unattempted case record linked to F1; no observed host behavior |
+| [docs/parity/evidence/chatgpt/stale-feature-map.json](evidence/chatgpt/stale-feature-map.json) | Port-authored per-host blocked/unattempted case record linked to F1; no observed host behavior |
+| [docs/parity/evidence/chatgpt/state-shape.json](evidence/chatgpt/state-shape.json) | Port-authored per-host blocked/unattempted case record linked to F1; no observed host behavior |
+| [docs/parity/evidence/chatgpt/supported-authoring.json](evidence/chatgpt/supported-authoring.json) | Port-authored per-host blocked/unattempted case record linked to F1; no observed host behavior |
+| [docs/parity/evidence/chatgpt/swarm-walkthrough.json](evidence/chatgpt/swarm-walkthrough.json) | Port-authored per-host blocked/unattempted case record linked to F1; no observed host behavior |
+| [docs/parity/evidence/chatgpt/symptom-repro.json](evidence/chatgpt/symptom-repro.json) | Port-authored per-host blocked/unattempted case record linked to F1; no observed host behavior |
+| [docs/parity/evidence/chatgpt/throwaway-probe.json](evidence/chatgpt/throwaway-probe.json) | Port-authored per-host blocked/unattempted case record linked to F1; no observed host behavior |
+| [docs/parity/evidence/chatgpt/trace-load.json](evidence/chatgpt/trace-load.json) | Port-authored per-host blocked/unattempted case record linked to F1; no observed host behavior |
+| [docs/parity/evidence/chatgpt/trace-path.json](evidence/chatgpt/trace-path.json) | Port-authored per-host blocked/unattempted case record linked to F1; no observed host behavior |
+| [docs/parity/evidence/chatgpt/trace-provenance.json](evidence/chatgpt/trace-provenance.json) | Port-authored per-host blocked/unattempted case record linked to F1; no observed host behavior |
+| [docs/parity/evidence/chatgpt/two-writers.json](evidence/chatgpt/two-writers.json) | Port-authored per-host blocked/unattempted case record linked to F1; no observed host behavior |
+| [docs/parity/evidence/chatgpt/typed-boundary.json](evidence/chatgpt/typed-boundary.json) | Port-authored per-host blocked/unattempted case record linked to F1; no observed host behavior |
+| [docs/parity/evidence/chatgpt/unavailable-persistence.json](evidence/chatgpt/unavailable-persistence.json) | Port-authored per-host blocked/unattempted case record linked to F1; no observed host behavior |
+| [docs/parity/evidence/chatgpt/uncertain-result.json](evidence/chatgpt/uncertain-result.json) | Port-authored per-host blocked/unattempted case record linked to F1; no observed host behavior |
+| [docs/parity/evidence/chatgpt/unit-state.json](evidence/chatgpt/unit-state.json) | Port-authored per-host blocked/unattempted case record linked to F1; no observed host behavior |
+| [docs/parity/evidence/chatgpt/units-and-proof.json](evidence/chatgpt/units-and-proof.json) | Port-authored per-host blocked/unattempted case record linked to F1; no observed host behavior |
+| [docs/parity/evidence/chatgpt/unknown-actual-model.json](evidence/chatgpt/unknown-actual-model.json) | Port-authored per-host blocked/unattempted case record linked to F1; no observed host behavior |
+| [docs/parity/evidence/chatgpt/unknown-model.json](evidence/chatgpt/unknown-model.json) | Port-authored per-host blocked/unattempted case record linked to F1; no observed host behavior |
+| [docs/parity/evidence/chatgpt/unsupported-selected-model.json](evidence/chatgpt/unsupported-selected-model.json) | Port-authored per-host blocked/unattempted case record linked to F1; no observed host behavior |
+| [docs/parity/evidence/chatgpt/user-correction.json](evidence/chatgpt/user-correction.json) | Port-authored per-host blocked/unattempted case record linked to F1; no observed host behavior |
+| [docs/parity/evidence/chatgpt/user-tradeoff.json](evidence/chatgpt/user-tradeoff.json) | Port-authored per-host blocked/unattempted case record linked to F1; no observed host behavior |
+| [docs/parity/evidence/chatgpt/verifiable-feature.json](evidence/chatgpt/verifiable-feature.json) | Port-authored per-host blocked/unattempted case record linked to F1; no observed host behavior |
+| [docs/parity/evidence/codex/absent-workers.json](evidence/codex/absent-workers.json) | Port-authored per-host blocked/unattempted case record linked to F1; no observed host behavior |
+| [docs/parity/evidence/codex/accessible-trace.json](evidence/codex/accessible-trace.json) | Port-authored per-host blocked/unattempted case record linked to F1; no observed host behavior |
+| [docs/parity/evidence/codex/adversarial-review.json](evidence/codex/adversarial-review.json) | Port-authored per-host blocked/unattempted case record linked to F1; no observed host behavior |
+| [docs/parity/evidence/codex/alternatives.json](evidence/codex/alternatives.json) | Port-authored per-host blocked/unattempted case record linked to F1; no observed host behavior |
+| [docs/parity/evidence/codex/approval-before-edit.json](evidence/codex/approval-before-edit.json) | Port-authored per-host blocked/unattempted case record linked to F1; no observed host behavior |
+| [docs/parity/evidence/codex/arena-walkthrough.json](evidence/codex/arena-walkthrough.json) | Port-authored per-host blocked/unattempted case record linked to F1; no observed host behavior |
+| [docs/parity/evidence/codex/authorization-capability-check.md](evidence/codex/authorization-capability-check.md) | Port-authored authorization and capability observation boundary; source reads do not prove installed discovery |
+| [docs/parity/evidence/codex/authorized-program.json](evidence/codex/authorized-program.json) | Port-authored per-host blocked/unattempted case record linked to F1; no observed host behavior |
+| [docs/parity/evidence/codex/benny-duplicate-report.json](evidence/codex/benny-duplicate-report.json) | Port-authored per-host blocked/unattempted case record linked to F1; no observed host behavior |
+| [docs/parity/evidence/codex/benny-existing-fix-ownership.json](evidence/codex/benny-existing-fix-ownership.json) | Port-authored per-host blocked/unattempted case record linked to F1; no observed host behavior |
+| [docs/parity/evidence/codex/benny-existing-pr.json](evidence/codex/benny-existing-pr.json) | Port-authored per-host blocked/unattempted case record linked to F1; no observed host behavior |
+| [docs/parity/evidence/codex/benny-missing-adapter.json](evidence/codex/benny-missing-adapter.json) | Port-authored per-host blocked/unattempted case record linked to F1; no observed host behavior |
+| [docs/parity/evidence/codex/benny-missing-coordinates.json](evidence/codex/benny-missing-coordinates.json) | Port-authored per-host blocked/unattempted case record linked to F1; no observed host behavior |
+| [docs/parity/evidence/codex/benny-source-thread-compensation.json](evidence/codex/benny-source-thread-compensation.json) | Port-authored per-host blocked/unattempted case record linked to F1; no observed host behavior |
+| [docs/parity/evidence/codex/benny-unsupported-trigger.json](evidence/codex/benny-unsupported-trigger.json) | Port-authored per-host blocked/unattempted case record linked to F1; no observed host behavior |
+| [docs/parity/evidence/codex/benny-untrusted-marker.json](evidence/codex/benny-untrusted-marker.json) | Port-authored per-host blocked/unattempted case record linked to F1; no observed host behavior |
+| [docs/parity/evidence/codex/boundary-design.json](evidence/codex/boundary-design.json) | Port-authored per-host blocked/unattempted case record linked to F1; no observed host behavior |
+| [docs/parity/evidence/codex/bounded-improvement.json](evidence/codex/bounded-improvement.json) | Port-authored per-host blocked/unattempted case record linked to F1; no observed host behavior |
+| [docs/parity/evidence/codex/bounded-poll.json](evidence/codex/bounded-poll.json) | Port-authored per-host blocked/unattempted case record linked to F1; no observed host behavior |
+| [docs/parity/evidence/codex/caller-migration.json](evidence/codex/caller-migration.json) | Port-authored per-host blocked/unattempted case record linked to F1; no observed host behavior |
+| [docs/parity/evidence/codex/cancelled-worker.json](evidence/codex/cancelled-worker.json) | Port-authored per-host blocked/unattempted case record linked to F1; no observed host behavior |
+| [docs/parity/evidence/codex/candidate-cross-review.json](evidence/codex/candidate-cross-review.json) | Port-authored per-host blocked/unattempted case record linked to F1; no observed host behavior |
+| [docs/parity/evidence/codex/chatgpt-setup-from-readme.json](evidence/codex/chatgpt-setup-from-readme.json) | Port-authored per-host blocked/unattempted case record linked to F1; no observed host behavior |
+| [docs/parity/evidence/codex/codex-setup-from-readme.json](evidence/codex/codex-setup-from-readme.json) | Port-authored per-host blocked/unattempted case record linked to F1; no observed host behavior |
+| [docs/parity/evidence/codex/comparable-revisions.json](evidence/codex/comparable-revisions.json) | Port-authored per-host blocked/unattempted case record linked to F1; no observed host behavior |
+| [docs/parity/evidence/codex/contiguous-verified-stack.json](evidence/codex/contiguous-verified-stack.json) | Port-authored per-host blocked/unattempted case record linked to F1; no observed host behavior |
+| [docs/parity/evidence/codex/dead-path.json](evidence/codex/dead-path.json) | Port-authored per-host blocked/unattempted case record linked to F1; no observed host behavior |
+| [docs/parity/evidence/codex/decision-trail.json](evidence/codex/decision-trail.json) | Port-authored per-host blocked/unattempted case record linked to F1; no observed host behavior |
+| [docs/parity/evidence/codex/denied-writes.json](evidence/codex/denied-writes.json) | Port-authored per-host blocked/unattempted case record linked to F1; no observed host behavior |
+| [docs/parity/evidence/codex/dense-doc.json](evidence/codex/dense-doc.json) | Port-authored per-host blocked/unattempted case record linked to F1; no observed host behavior |
+| [docs/parity/evidence/codex/dependency-readiness.json](evidence/codex/dependency-readiness.json) | Port-authored per-host blocked/unattempted case record linked to F1; no observed host behavior |
+| [docs/parity/evidence/codex/dependent-caller.json](evidence/codex/dependent-caller.json) | Port-authored per-host blocked/unattempted case record linked to F1; no observed host behavior |
+| [docs/parity/evidence/codex/discriminating-eval.json](evidence/codex/discriminating-eval.json) | Port-authored per-host blocked/unattempted case record linked to F1; no observed host behavior |
+| [docs/parity/evidence/codex/draft-only-authorized.json](evidence/codex/draft-only-authorized.json) | Port-authored per-host blocked/unattempted case record linked to F1; no observed host behavior |
+| [docs/parity/evidence/codex/empty-function.json](evidence/codex/empty-function.json) | Port-authored per-host blocked/unattempted case record linked to F1; no observed host behavior |
+| [docs/parity/evidence/codex/existing-personal-mode.json](evidence/codex/existing-personal-mode.json) | Port-authored per-host blocked/unattempted case record linked to F1; no observed host behavior |
+| [docs/parity/evidence/codex/false-success.json](evidence/codex/false-success.json) | Port-authored per-host blocked/unattempted case record linked to F1; no observed host behavior |
+| [docs/parity/evidence/codex/fresh-worker-mode.json](evidence/codex/fresh-worker-mode.json) | Port-authored per-host blocked/unattempted case record linked to F1; no observed host behavior |
+| [docs/parity/evidence/codex/grounded-explanation.json](evidence/codex/grounded-explanation.json) | Port-authored per-host blocked/unattempted case record linked to F1; no observed host behavior |
+| [docs/parity/evidence/codex/guides-github-absent.json](evidence/codex/guides-github-absent.json) | Port-authored per-host blocked/unattempted case record linked to F1; no observed host behavior |
+| [docs/parity/evidence/codex/guides-local-codex.json](evidence/codex/guides-local-codex.json) | Port-authored per-host blocked/unattempted case record linked to F1; no observed host behavior |
+| [docs/parity/evidence/codex/guides-optional-setup-skipped.json](evidence/codex/guides-optional-setup-skipped.json) | Port-authored per-host blocked/unattempted case record linked to F1; no observed host behavior |
+| [docs/parity/evidence/codex/guides-ordinary-chatgpt.json](evidence/codex/guides-ordinary-chatgpt.json) | Port-authored per-host blocked/unattempted case record linked to F1; no observed host behavior |
+| [docs/parity/evidence/codex/guides-worker-chatgpt.json](evidence/codex/guides-worker-chatgpt.json) | Port-authored per-host blocked/unattempted case record linked to F1; no observed host behavior |
+| [docs/parity/evidence/codex/history-evidence.json](evidence/codex/history-evidence.json) | Port-authored per-host blocked/unattempted case record linked to F1; no observed host behavior |
+| [docs/parity/evidence/codex/inherited-identical-models.json](evidence/codex/inherited-identical-models.json) | Port-authored per-host blocked/unattempted case record linked to F1; no observed host behavior |
+| [docs/parity/evidence/codex/interrupted-action.json](evidence/codex/interrupted-action.json) | Port-authored per-host blocked/unattempted case record linked to F1; no observed host behavior |
+| [docs/parity/evidence/codex/interrupted-external-write.json](evidence/codex/interrupted-external-write.json) | Port-authored per-host blocked/unattempted case record linked to F1; no observed host behavior |
+| [docs/parity/evidence/codex/invalid-input.json](evidence/codex/invalid-input.json) | Port-authored per-host blocked/unattempted case record linked to F1; no observed host behavior |
+| [docs/parity/evidence/codex/invalid-state.json](evidence/codex/invalid-state.json) | Port-authored per-host blocked/unattempted case record linked to F1; no observed host behavior |
+| [docs/parity/evidence/codex/large-corpus.json](evidence/codex/large-corpus.json) | Port-authored per-host blocked/unattempted case record linked to F1; no observed host behavior |
+| [docs/parity/evidence/codex/legal-header.json](evidence/codex/legal-header.json) | Port-authored per-host blocked/unattempted case record linked to F1; no observed host behavior |
+| [docs/parity/evidence/codex/measurement-method.json](evidence/codex/measurement-method.json) | Port-authored per-host blocked/unattempted case record linked to F1; no observed host behavior |
+| [docs/parity/evidence/codex/migration-end-state.json](evidence/codex/migration-end-state.json) | Port-authored per-host blocked/unattempted case record linked to F1; no observed host behavior |
+| [docs/parity/evidence/codex/migration-units.json](evidence/codex/migration-units.json) | Port-authored per-host blocked/unattempted case record linked to F1; no observed host behavior |
+| [docs/parity/evidence/codex/misleading-speedup.json](evidence/codex/misleading-speedup.json) | Port-authored per-host blocked/unattempted case record linked to F1; no observed host behavior |
+| [docs/parity/evidence/codex/missing-model-enumeration.json](evidence/codex/missing-model-enumeration.json) | Port-authored per-host blocked/unattempted case record linked to F1; no observed host behavior |
+| [docs/parity/evidence/codex/missing-webhook.json](evidence/codex/missing-webhook.json) | Port-authored per-host blocked/unattempted case record linked to F1; no observed host behavior |
+| [docs/parity/evidence/codex/new-requirement.json](evidence/codex/new-requirement.json) | Port-authored per-host blocked/unattempted case record linked to F1; no observed host behavior |
+| [docs/parity/evidence/codex/no-persistent-tool.json](evidence/codex/no-persistent-tool.json) | Port-authored per-host blocked/unattempted case record linked to F1; no observed host behavior |
+| [docs/parity/evidence/codex/owned-safe-cleanup.json](evidence/codex/owned-safe-cleanup.json) | Port-authored per-host blocked/unattempted case record linked to F1; no observed host behavior |
+| [docs/parity/evidence/codex/package-discovery.json](evidence/codex/package-discovery.json) | Port-authored per-host blocked/unattempted case record linked to F1; no observed host behavior |
+| [docs/parity/evidence/codex/package-support-contracts.json](evidence/codex/package-support-contracts.json) | Port-authored per-host blocked/unattempted case record linked to F1; no observed host behavior |
+| [docs/parity/evidence/codex/partition-and-race.json](evidence/codex/partition-and-race.json) | Port-authored per-host blocked/unattempted case record linked to F1; no observed host behavior |
+| [docs/parity/evidence/codex/plain-restate.json](evidence/codex/plain-restate.json) | Port-authored per-host blocked/unattempted case record linked to F1; no observed host behavior |
+| [docs/parity/evidence/codex/poteto-walkthrough.json](evidence/codex/poteto-walkthrough.json) | Port-authored per-host blocked/unattempted case record linked to F1; no observed host behavior |
+| [docs/parity/evidence/codex/preserved-behavior.json](evidence/codex/preserved-behavior.json) | Port-authored per-host blocked/unattempted case record linked to F1; no observed host behavior |
+| [docs/parity/evidence/codex/prose-rewrite.json](evidence/codex/prose-rewrite.json) | Port-authored per-host blocked/unattempted case record linked to F1; no observed host behavior |
+| [docs/parity/evidence/codex/read-only-answer.json](evidence/codex/read-only-answer.json) | Port-authored per-host blocked/unattempted case record linked to F1; no observed host behavior |
+| [docs/parity/evidence/codex/real-app-contract.json](evidence/codex/real-app-contract.json) | Port-authored per-host blocked/unattempted case record linked to F1; no observed host behavior |
+| [docs/parity/evidence/codex/real-render.json](evidence/codex/real-render.json) | Port-authored per-host blocked/unattempted case record linked to F1; no observed host behavior |
+| [docs/parity/evidence/codex/red-green.json](evidence/codex/red-green.json) | Port-authored per-host blocked/unattempted case record linked to F1; no observed host behavior |
+| [docs/parity/evidence/codex/repeatable-change.json](evidence/codex/repeatable-change.json) | Port-authored per-host blocked/unattempted case record linked to F1; no observed host behavior |
+| [docs/parity/evidence/codex/repeated-failure.json](evidence/codex/repeated-failure.json) | Port-authored per-host blocked/unattempted case record linked to F1; no observed host behavior |
+| [docs/parity/evidence/codex/repeated-rule.json](evidence/codex/repeated-rule.json) | Port-authored per-host blocked/unattempted case record linked to F1; no observed host behavior |
+| [docs/parity/evidence/codex/replay.json](evidence/codex/replay.json) | Port-authored per-host blocked/unattempted case record linked to F1; no observed host behavior |
+| [docs/parity/evidence/codex/reproduce-before-fix.json](evidence/codex/reproduce-before-fix.json) | Port-authored per-host blocked/unattempted case record linked to F1; no observed host behavior |
+| [docs/parity/evidence/codex/resume-revision.json](evidence/codex/resume-revision.json) | Port-authored per-host blocked/unattempted case record linked to F1; no observed host behavior |
+| [docs/parity/evidence/codex/reversible-step.json](evidence/codex/reversible-step.json) | Port-authored per-host blocked/unattempted case record linked to F1; no observed host behavior |
+| [docs/parity/evidence/codex/route-recipe.json](evidence/codex/route-recipe.json) | Port-authored per-host blocked/unattempted case record linked to F1; no observed host behavior |
+| [docs/parity/evidence/codex/scoped-history.json](evidence/codex/scoped-history.json) | Port-authored per-host blocked/unattempted case record linked to F1; no observed host behavior |
+| [docs/parity/evidence/codex/shape-first.json](evidence/codex/shape-first.json) | Port-authored per-host blocked/unattempted case record linked to F1; no observed host behavior |
+| [docs/parity/evidence/codex/shared-path-conflict.json](evidence/codex/shared-path-conflict.json) | Port-authored per-host blocked/unattempted case record linked to F1; no observed host behavior |
+| [docs/parity/evidence/codex/smaller-solution.json](evidence/codex/smaller-solution.json) | Port-authored per-host blocked/unattempted case record linked to F1; no observed host behavior |
+| [docs/parity/evidence/codex/stack-resume.json](evidence/codex/stack-resume.json) | Port-authored per-host blocked/unattempted case record linked to F1; no observed host behavior |
+| [docs/parity/evidence/codex/stale-feature-map.json](evidence/codex/stale-feature-map.json) | Port-authored per-host blocked/unattempted case record linked to F1; no observed host behavior |
+| [docs/parity/evidence/codex/state-shape.json](evidence/codex/state-shape.json) | Port-authored per-host blocked/unattempted case record linked to F1; no observed host behavior |
+| [docs/parity/evidence/codex/supported-authoring.json](evidence/codex/supported-authoring.json) | Port-authored per-host blocked/unattempted case record linked to F1; no observed host behavior |
+| [docs/parity/evidence/codex/swarm-walkthrough.json](evidence/codex/swarm-walkthrough.json) | Port-authored per-host blocked/unattempted case record linked to F1; no observed host behavior |
+| [docs/parity/evidence/codex/symptom-repro.json](evidence/codex/symptom-repro.json) | Port-authored per-host blocked/unattempted case record linked to F1; no observed host behavior |
+| [docs/parity/evidence/codex/throwaway-probe.json](evidence/codex/throwaway-probe.json) | Port-authored per-host blocked/unattempted case record linked to F1; no observed host behavior |
+| [docs/parity/evidence/codex/trace-load.json](evidence/codex/trace-load.json) | Port-authored per-host blocked/unattempted case record linked to F1; no observed host behavior |
+| [docs/parity/evidence/codex/trace-path.json](evidence/codex/trace-path.json) | Port-authored per-host blocked/unattempted case record linked to F1; no observed host behavior |
+| [docs/parity/evidence/codex/trace-provenance.json](evidence/codex/trace-provenance.json) | Port-authored per-host blocked/unattempted case record linked to F1; no observed host behavior |
+| [docs/parity/evidence/codex/two-writers.json](evidence/codex/two-writers.json) | Port-authored per-host blocked/unattempted case record linked to F1; no observed host behavior |
+| [docs/parity/evidence/codex/typed-boundary.json](evidence/codex/typed-boundary.json) | Port-authored per-host blocked/unattempted case record linked to F1; no observed host behavior |
+| [docs/parity/evidence/codex/unavailable-persistence.json](evidence/codex/unavailable-persistence.json) | Port-authored per-host blocked/unattempted case record linked to F1; no observed host behavior |
+| [docs/parity/evidence/codex/uncertain-result.json](evidence/codex/uncertain-result.json) | Port-authored per-host blocked/unattempted case record linked to F1; no observed host behavior |
+| [docs/parity/evidence/codex/unit-state.json](evidence/codex/unit-state.json) | Port-authored per-host blocked/unattempted case record linked to F1; no observed host behavior |
+| [docs/parity/evidence/codex/units-and-proof.json](evidence/codex/units-and-proof.json) | Port-authored per-host blocked/unattempted case record linked to F1; no observed host behavior |
+| [docs/parity/evidence/codex/unknown-actual-model.json](evidence/codex/unknown-actual-model.json) | Port-authored per-host blocked/unattempted case record linked to F1; no observed host behavior |
+| [docs/parity/evidence/codex/unknown-model.json](evidence/codex/unknown-model.json) | Port-authored per-host blocked/unattempted case record linked to F1; no observed host behavior |
+| [docs/parity/evidence/codex/unsupported-selected-model.json](evidence/codex/unsupported-selected-model.json) | Port-authored per-host blocked/unattempted case record linked to F1; no observed host behavior |
+| [docs/parity/evidence/codex/user-correction.json](evidence/codex/user-correction.json) | Port-authored per-host blocked/unattempted case record linked to F1; no observed host behavior |
+| [docs/parity/evidence/codex/user-tradeoff.json](evidence/codex/user-tradeoff.json) | Port-authored per-host blocked/unattempted case record linked to F1; no observed host behavior |
+| [docs/parity/evidence/codex/verifiable-feature.json](evidence/codex/verifiable-feature.json) | Port-authored per-host blocked/unattempted case record linked to F1; no observed host behavior |
+| [docs/testing/chatgpt.md](../testing/chatgpt.md) | Port-authored per-host verification guide and blocked accounting; installed discovery and runtime remain unobserved |
+| [docs/testing/codex.md](../testing/codex.md) | Port-authored per-host verification guide and blocked accounting; installed discovery and runtime remain unobserved |
+| [docs/testing/dependency-readiness.md](../testing/dependency-readiness.md) | Port-authored dependency readiness report; isolated development tests do not transfer to host evidence |
+| [tests/test_dependencies.py](../../tests/test_dependencies.py) | Port-authored deterministic dependency audit tests; no host behavior proof |
+
+## Reserved report-only paths
+
+These exact optional paths are planned and are not present or verified at F2. Their reservation provides provenance for later report-only writes, not execution evidence or permission to change operative files. Unknown future paths remain outside this reservation.
+
+| Reserved path | Planned role |
+| --- | --- |
+| `docs/releases/0.1.0.md` | Reserved report-only path; planned, not present or verified at F2 |
+| `docs/testing/release-checklist.md` | Reserved report-only path; planned, not present or verified at F2 |
+| `docs/parity/tested-package.json` | Reserved report-only path; planned, not present or verified at F2 |
+| `docs/releases/remaining-controller-report.md` | Reserved report-only path; planned, not present or verified at F2 |

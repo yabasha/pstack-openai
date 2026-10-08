@@ -94,8 +94,8 @@ Upstream commit: `df581122cde17e6e27686b5a448bde23e4ad4318`. SHA-256: `31b8fb866
 
 Disposition: `runtime`. Aggregate adaptation status: `adapted-reviewed`.
 
-- chatgpt: `not-run`. Tested release evidence: none recorded.
-- codex: `not-run`. Tested release evidence: none recorded.
+- chatgpt: `blocked`. Tested release evidence: [docs/parity/evidence/chatgpt/approval-before-edit.json](../parity/evidence/chatgpt/approval-before-edit.json), [docs/parity/evidence/chatgpt/dependency-readiness.json](../parity/evidence/chatgpt/dependency-readiness.json), [docs/parity/evidence/chatgpt/package-discovery.json](../parity/evidence/chatgpt/package-discovery.json).
+- codex: `blocked`. Tested release evidence: [docs/parity/evidence/codex/approval-before-edit.json](../parity/evidence/codex/approval-before-edit.json), [docs/parity/evidence/codex/dependency-readiness.json](../parity/evidence/codex/dependency-readiness.json), [docs/parity/evidence/codex/package-discovery.json](../parity/evidence/codex/package-discovery.json).
 
 ### `skills/reflect/references/divergent-reviewer.md`
 
@@ -105,8 +105,8 @@ Upstream commit: `df581122cde17e6e27686b5a448bde23e4ad4318`. SHA-256: `221dfc0ab
 
 Disposition: `runtime`. Aggregate adaptation status: `adapted-reviewed`.
 
-- chatgpt: `not-run`. Tested release evidence: none recorded.
-- codex: `not-run`. Tested release evidence: none recorded.
+- chatgpt: `blocked`. Tested release evidence: [docs/parity/evidence/chatgpt/approval-before-edit.json](../parity/evidence/chatgpt/approval-before-edit.json).
+- codex: `blocked`. Tested release evidence: [docs/parity/evidence/codex/approval-before-edit.json](../parity/evidence/codex/approval-before-edit.json).
 
 ### `skills/reflect/references/judgment-reviewer.md`
 
@@ -116,8 +116,8 @@ Upstream commit: `df581122cde17e6e27686b5a448bde23e4ad4318`. SHA-256: `a40ecb9b2
 
 Disposition: `runtime`. Aggregate adaptation status: `adapted-reviewed`.
 
-- chatgpt: `not-run`. Tested release evidence: none recorded.
-- codex: `not-run`. Tested release evidence: none recorded.
+- chatgpt: `blocked`. Tested release evidence: [docs/parity/evidence/chatgpt/approval-before-edit.json](../parity/evidence/chatgpt/approval-before-edit.json).
+- codex: `blocked`. Tested release evidence: [docs/parity/evidence/codex/approval-before-edit.json](../parity/evidence/codex/approval-before-edit.json).
 
 ### `skills/reflect/references/synthesizer.md`
 
@@ -127,8 +127,8 @@ Upstream commit: `df581122cde17e6e27686b5a448bde23e4ad4318`. SHA-256: `2f76c847e
 
 Disposition: `runtime`. Aggregate adaptation status: `adapted-reviewed`.
 
-- chatgpt: `not-run`. Tested release evidence: none recorded.
-- codex: `not-run`. Tested release evidence: none recorded.
+- chatgpt: `blocked`. Tested release evidence: [docs/parity/evidence/chatgpt/approval-before-edit.json](../parity/evidence/chatgpt/approval-before-edit.json).
+- codex: `blocked`. Tested release evidence: [docs/parity/evidence/codex/approval-before-edit.json](../parity/evidence/codex/approval-before-edit.json).
 
 ### `skills/reflect/references/tooling-reviewer.md`
 
@@ -138,5 +138,5 @@ Upstream commit: `df581122cde17e6e27686b5a448bde23e4ad4318`. SHA-256: `bc49ced90
 
 Disposition: `runtime`. Aggregate adaptation status: `adapted-reviewed`.
 
-- chatgpt: `not-run`. Tested release evidence: none recorded.
-- codex: `not-run`. Tested release evidence: none recorded.
+- chatgpt: `blocked`. Tested release evidence: [docs/parity/evidence/chatgpt/approval-before-edit.json](../parity/evidence/chatgpt/approval-before-edit.json).
+- codex: `blocked`. Tested release evidence: [docs/parity/evidence/codex/approval-before-edit.json](../parity/evidence/codex/approval-before-edit.json).

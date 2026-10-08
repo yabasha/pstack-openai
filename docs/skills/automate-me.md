@@ -98,5 +98,5 @@ Upstream commit: `df581122cde17e6e27686b5a448bde23e4ad4318`. SHA-256: `1510979b0
 
 Disposition: `runtime`. Aggregate adaptation status: `adapted-reviewed`.
 
-- chatgpt: `not-run`. Tested release evidence: none recorded.
-- codex: `not-run`. Tested release evidence: none recorded.
+- chatgpt: `blocked`. Tested release evidence: [docs/parity/evidence/chatgpt/dependency-readiness.json](../parity/evidence/chatgpt/dependency-readiness.json), [docs/parity/evidence/chatgpt/existing-personal-mode.json](../parity/evidence/chatgpt/existing-personal-mode.json), [docs/parity/evidence/chatgpt/package-discovery.json](../parity/evidence/chatgpt/package-discovery.json).
+- codex: `blocked`. Tested release evidence: [docs/parity/evidence/codex/dependency-readiness.json](../parity/evidence/codex/dependency-readiness.json), [docs/parity/evidence/codex/existing-personal-mode.json](../parity/evidence/codex/existing-personal-mode.json), [docs/parity/evidence/codex/package-discovery.json](../parity/evidence/codex/package-discovery.json).

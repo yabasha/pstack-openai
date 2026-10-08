@@ -129,7 +129,21 @@ class InventoryClosedTests(unittest.TestCase):
         files -= {r['destinationPath'] for r in read('docs/parity/inventory.json')}
         section = (ROOT / 'docs/parity/support-map.md').read_text().split('## Additional port-file provenance\n', 1)[1]
         documented = set(re.findall(r'^\| \[([^\]]+)\]\(', section, re.M))
-        self.assertEqual(documented, files)
+        reserved_section = section.split('## Reserved report-only paths\n', 1)[1]
+        reserved = set(re.findall(r'^\| `([^`]+)` \|', reserved_section, re.M))
+        expected_reserved = {
+            'docs/releases/0.1.0.md',
+            'docs/testing/release-checklist.md',
+            'docs/parity/tested-package.json',
+            'docs/releases/remaining-controller-report.md',
+        }
+        self.assertEqual(reserved, expected_reserved)
+        self.assertFalse(documented & reserved)
+        self.assertEqual(documented, files - (files & reserved))
+        # Every declared future report can appear without changing this frozen map.
+        self.assertEqual(documented, (files | reserved) - reserved)
+        unknown = 'docs/releases/unreserved-future-report.md'
+        self.assertNotEqual(documented, (files | {unknown}) - reserved)
 
     def test_notices_and_ignored_working_data_preserve_provenance(self):
         self.assertEqual((ROOT / 'LICENSE').read_bytes(), (SOURCE / 'LICENSE').read_bytes())
