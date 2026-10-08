@@ -1,3 +1,9 @@
+## Current F4 accounting
+
+The final local source freeze is `d4c05c3e619a085c06d391f45299fe81d99cd7ce`. All 105 cases for this host remain blocked and unattempted, with unavailable execution, no successful operations, unknown models and no installed-copy discovery. The relink changes package identity only; original dates, observations, permissions, limits and stable paths remain intact. F1, F2 and F3 remain history. The root scoped review of the entire final fix range is pending.
+
+## Earlier evidence and procedure record
+
 # Personal ChatGPT authorization and support check
 
 Recorded on 2026-10-08 in Asia/Amman. The clock returned 2026-10-07 23:57:37 UTC, or 2026-10-08 02:57:37 Asia/Amman. Candidate version 0.1.0 is bound to F3 commit `e808be2d2b03277fdb1422dd729936e6b775126d`. The local evidence writer was on branch `codex/pstack-port` at HEAD `48d118e0ca96f5cb971364bd8e327981960cd412`. HEAD is an evidence-only successor, not a newly tested package revision.

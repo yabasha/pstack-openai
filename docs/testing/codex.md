@@ -1,3 +1,9 @@
+## Current F4 accounting
+
+The final local source freeze is `d4c05c3e619a085c06d391f45299fe81d99cd7ce`. All 105 cases for this host remain blocked and unattempted, with unavailable execution, no successful operations, unknown models and no installed-copy discovery. The relink changes package identity only; original dates, observations, permissions, limits and stable paths remain intact. F1, F2 and F3 remain history. The root scoped review of the entire final fix range is pending.
+
+## Earlier evidence and procedure record
+
 # Codex behavioral evidence
 
 On 2026-10-08, all 105 required Codex behavioral cases are blocked and unattempted for package version 0.1.0 at F3 commit `e808be2d2b03277fdb1422dd729936e6b775126d`. The current session permits local evidence preparation but provides no observed installed-copy discovery. No separate human authorization exists for loading, installation, enabling, settings changes, app restart or fresh host setup. No setup action was requested or attempted, and no runtime denial was observed.

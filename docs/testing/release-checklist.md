@@ -1,3 +1,23 @@
+# Current F4 candidate and final fix status
+
+The whole-branch review requested five Important corrections and identified 21 Minor findings. This single fix wave implements all 26 findings. The root's one scoped review of the entire fix range is still pending; no review approval or release is claimed.
+
+The actual operative freeze is `d4c05c3e619a085c06d391f45299fe81d99cd7ce`, version 0.1.0. Canonical source remains `df581122cde17e6e27686b5a448bde23e4ad4318`: 164 files, 51 roots, 24 principles, 23 playbooks and 12 Benny files. All 210 host records remain blocked, unavailable and without successful operations. Each host has 105 validated blocked cases, zero passes, zero reduced passes and no observed package discovery. The release decision remains false.
+
+The final source suite passed 207/207 maintenance tests in 161.799 seconds. Exact F4 source was exported to /Users/digital-hawk/Herd/pstack-final-f4-validation; all 726 tracked files retained exact bytes and modes. Bootstrap and strict TypeScript exited zero. The fake-only helper suite passed 92 tests with 346 assertions in 2 seconds. It used only the existing approved dependency snapshot /Users/digital-hawk/Herd/pstack-openai-helper-verification at historical identity `37b68c8e842b275f310ead112c0ecb7fa0ade308`, with Bun 1.4.2, commander 14.0.0, bun-types 1.3.14 and TypeScript 7.0.2. Manifest and lock bytes matched the approved snapshot; dependency/cache bytes, modes and symlink targets remained unchanged. No new dependency setup, installed host, live forge or external action was used.
+
+The fixes distinguish full direct work from reduced sequential substitution, enforce method receipts, exhaust review-thread pages, retain UNKNOWN as unavailable, reject forge BLOCKED even with successful CI, and require reviewed full-package update metadata before writes. Automatic stack discovery explicitly blocks at its 300-open-PR cap. The full-package update fixture performs actual local apply, valid fragment closure, separate synthetic acceptance and next preparation. Fixture acceptance proves source tooling only. It does not establish actual-host acceptance or release readiness.
+
+The first final-wave full run had 202/207 passes, two failures and three errors in 157.982 seconds. The next had 206/207 passes and one fixture error in 163.638 seconds. A stale already-loaded attempt was cancelled with SIGINT and supplies no completed-suite result. After exact fixture correction, the settled pre-refinement suite passed 207/207 in 157.677 seconds. Late case-bound Swarm, anchor and forge BLOCKED refinements prompted the final suite above. The initial working helper run passed 90 tests but failed strict TypeScript; explicit union narrowing corrected it. Earlier RED logs, the synthetic author correction, inert-review471-error scan and all failed attempts remain in the controller's working record. None is relabeled green.
+
+The strict marker retains the same 217 explicit report paths and separate marker exception. Only existing reserved report data changed after F4. The final actual-HEAD identity and rollback-provenance proof is a required next check after committing these reports; this paragraph does not claim that future check has run. Installed-copy rollback, host discovery, worker/model behavior, persistent wake, integrations and external actions remain unverified.
+
+See the [controller handoff](../releases/remaining-controller-report.md) for the full finding dispositions and root decisions.
+
+# Preserved historical report through F3
+
+Everything below records the earlier checkpoints and their then-pending findings. Current status is the F4 section above. Its original test results, incident history and lossless ruling appendix are retained verbatim.
+
 # Release candidate checklist
 
 Version 0.1.0 targets frozen source `e808be2d2b03277fdb1422dd729936e6b775126d`, F3. Report ancestor `a5628dd849174f17b34d24ee7f1afb705cec77e9` contains the blocked-record relink. This checklist records development validation and remaining gates. It does not authorize installation or publication.

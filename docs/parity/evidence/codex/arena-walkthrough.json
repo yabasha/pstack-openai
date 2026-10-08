@@ -1,7 +1,7 @@
 {
   "caseId": "arena-walkthrough",
   "packageVersion": "0.1.0",
-  "packageCommit": "e808be2d2b03277fdb1422dd729936e6b775126d",
+  "packageCommit": "d4c05c3e619a085c06d391f45299fe81d99cd7ce",
   "host": "codex",
   "hostMode": "existing delegated local implementation session; installed-plugin testing unavailable",
   "date": "2026-10-08",

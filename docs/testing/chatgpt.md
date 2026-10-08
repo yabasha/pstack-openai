@@ -1,3 +1,9 @@
+## Current F4 accounting
+
+The final local source freeze is `d4c05c3e619a085c06d391f45299fe81d99cd7ce`. All 105 cases for this host remain blocked and unattempted, with unavailable execution, no successful operations, unknown models and no installed-copy discovery. The relink changes package identity only; original dates, observations, permissions, limits and stable paths remain intact. F1, F2 and F3 remain history. The root scoped review of the entire final fix range is pending.
+
+## Earlier evidence and procedure record
+
 # Personal ChatGPT behavioral evidence
 
 All 105 required personal ChatGPT behavioral cases are blocked and unattempted as of 2026-10-08 in Asia/Amman. Records identify package version 0.1.0 at F3 commit `e808be2d2b03277fdb1422dd729936e6b775126d`. No documented supported local plugin loading route is established for this personal context. No actual personal ChatGPT session or installed package copy was accessed. Separate human authorization for loading, installation, enabling, settings changes or fresh host setup is absent.
