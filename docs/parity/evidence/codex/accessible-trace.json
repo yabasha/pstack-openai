@@ -1,7 +1,7 @@
 {
   "caseId": "accessible-trace",
   "packageVersion": "0.1.0",
-  "packageCommit": "d4c05c3e619a085c06d391f45299fe81d99cd7ce",
+  "packageCommit": "5d05ab2458f4cd73c44b24265a3a1920b98b8cf4",
   "host": "codex",
   "hostMode": "existing delegated local implementation session; installed-plugin testing unavailable",
   "date": "2026-10-08",

@@ -1,3 +1,17 @@
+# Resumed receipt correction, independent review pending
+
+The renewed human instruction authorized this narrow local R1/R2 follow-up. The controller overrode the earlier final-wave cap for this correction and its independent review. Every external action gate remains closed. The operative source freeze is `5d05ab2458f4cd73c44b24265a3a1920b98b8cf4`, following `48254cbb6efa2a3b489b15cbaa1c78da19316599`. Independent controller review is pending; no merge or release approval is claimed.
+
+R1 now treats only partition results and the selected race winner as integrated outputs. A stopped, terminal-inspected and quarantined losing participant can pass a first-pass race. Cancelled selected outputs, missing quarantine and incomplete rank-all races still fail. R2 requires judge.rubricProvided to be exactly true, while candidates remain false. Existing independence, phase order, revision, digest, inspection, failure-exercise and permission checks remain intact.
+
+The new behavioral tests reproduced the defects before correction. The focused evidence/release suite passed 60 tests in 36.122 seconds. The full offline maintenance suite passed 209 tests in 169.765 seconds. All 35 helper/support paths match immutable F4 bytes and modes exactly. The saved F4 proof of 92 helper tests, 346 assertions, bootstrap and strict TypeScript is reused only for that unchanged helper source; it is a historical run, not a fresh execution. Its historical export directory is now absent.
+
+All 210 actual-host records remain blocked, unavailable and without successful operations. Only their packageCommit identity changed. Each host still has 105 blocked cases, zero passes, zero reduced passes and no actual package discovery. The release remains false with the two discovery blockers. No host loading, installation, dependency resolution, network, live forge, publication, installed rollback or external action occurred. Fresh actual committed-HEAD identity and rollback-provenance checks follow the report commits and are saved in the retained review workspace.
+
+The same 217 reserved report paths and separate marker exception remain. All canonical identities, source metadata, earlier reports, rulings, failed checks and incidents are preserved below. Current controller review remains pending.
+
+---
+
 # Final scoped review outcome
 
 The final scoped review verified all 26 original findings as addressed at source-review commit `8562cfb114290850ffd0a1b23ec9e7b32e17dd95`. It found new Important R1 and Minor R2. The source review is not clean; this candidate is not approved for merge or release.
