@@ -1,3 +1,21 @@
+# Final scoped review outcome
+
+The final scoped review verified all 26 original findings as addressed at source-review commit `8562cfb114290850ffd0a1b23ec9e7b32e17dd95`. It found new Important R1 and Minor R2. The source review is not clean; this candidate is not approved for merge or release.
+
+R1 at tools/validate_evidence.py:241-243 rejects a legitimate stopped, terminal-inspected and quarantined losing racer because every declared race participant is counted as integrated output. The inspected synthetic receipt passes until the quarantined loser is added to race participation, then fails only with cancelled output cannot be integrated. Selection and participation must be distinct; rank-all completeness must remain strict.
+
+R2 at tools/validate_evidence.py:189-190 accepts an Arena judge explicitly marked rubricProvided=False. The judge must receive the rubric, or have an equivalent inspected binding, while candidates remain blind. The existing reviewed judgment artifact limits this to a Minor deterministic consistency gap.
+
+The root accepts both findings as real. The subagent-driven-development procedure allows one final fix wave and one scoped re-review, which this run has consumed. No second product fix wave was started. The proposed narrow follow-up is at `/Users/digital-hawk/Herd/pstack-openai-port/.superpowers/sdd/2026-10-07-pstack-openai/2026-10-08-method-receipt-follow-up.md`, is local review data, and requires human authorization before execution. It preserves the selected subagent method and every external permission gate.
+
+Current source proof remains F4 `d4c05c3e619a085c06d391f45299fe81d99cd7ce`: 207 maintenance tests passed in 161.799 seconds; the exact source export passed 92 fake helper tests with 346 assertions, bootstrap and strict TypeScript. The new receipt counterexample was absent from that suite; a green suite does not supersede R1. Independent root and scoped-reviewer identity/rollback-provenance checks passed at the named source-review commit across all 726 files and modes. Report-only outcome commits preserve those operative bytes and require fresh actual-HEAD identity checks.
+
+Both actual hosts remain undiscovered with 105 blocked records each, zero positive observations and releasable=false. No push, merge, publication, installation, host loading or new dependency setup occurred in this continuation. The historical invalid initial read-only gh incident remains preserved below. The branch, worktree, source fixtures and review workspace are retained while Important review remains open.
+
+The records below this section preserve earlier report states; their pending-review statements are historical. This section is the current root adjudication.
+
+---
+
 # Current F4 candidate and final fix status
 
 The whole-branch review requested five Important corrections and identified 21 Minor findings. This single fix wave implements all 26 findings. The root's one scoped review of the entire fix range is still pending; no review approval or release is claimed.
