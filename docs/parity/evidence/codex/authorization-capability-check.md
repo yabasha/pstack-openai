@@ -1,6 +1,6 @@
 # Authorization and capability check
 
-Observed on 2026-10-08 in Asia/Amman. Candidate version 0.1.0, F1 commit 18718aa5ee8cfe63a86b2688d9d277a12925e92e. This is the existing delegated implementation session, not a fresh loaded-plugin session.
+Observed on 2026-10-08 in Asia/Amman. Candidate version 0.1.0, F2 commit 1659eb6f87c2a87a308bb0d5546b937809e312de. This is the existing delegated implementation session, not a fresh loaded-plugin session.
 
 Installed-copy discovery is unobserved for this frozen candidate. No separate human authorization exists for package loading, installation, enabling, settings changes or a fresh host setup. The current session exposes source reads and local command execution, but no actual installed pstack copy identity or complete 51-root/3-exclusion discovery receipt was observed. Source reads cannot establish installed discovery.
 
@@ -32,3 +32,7 @@ Local reads and scoped evidence/report writes are authorized. Loading, installat
 All required cases remain blocked and unattempted, including absent workers, unsupported model, worker dropout, stale SHA, lost evidence, denied execution, shared-output conflict, broken reference, missing optional integration and both workflow ownership paths. Their individual conditions were not simulated or observed. Requested model is unknown because none was requested; actual model is unknown because no case model output was observed.
 
 No installed discovery receipt exists. No package loading, workflow invocation, worker lifecycle, model diversity, persistent wake or external delivery is proven. Historical separately approved helper snapshot setup is development validation only and does not authorize this host setup or transfer results to F1. Codex evidence does not transfer to ChatGPT.
+
+## Second freeze linkage
+
+The controller explicitly relinked these existing blocked records to second freeze F2 `1659eb6f87c2a87a308bb0d5546b937809e312de`. The original F1 `18718aa5ee8cfe63a86b2688d9d277a12925e92e` records remain in Git history. This changes the package identity for blocked accounting only. There are no passes to transfer. No fresh host observation, discovery receipt or behavioral execution was produced; all cases remain blocked and unattempted. The original observation date, blocking reasons, proof limits and empty successfulOperations arrays remain unchanged.

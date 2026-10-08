@@ -1,6 +1,6 @@
 # Personal ChatGPT authorization and support check
 
-Recorded on 2026-10-08 in Asia/Amman. The clock returned 2026-10-07 23:57:37 UTC, or 2026-10-08 02:57:37 Asia/Amman. Candidate version 0.1.0 is bound to F1 commit `18718aa5ee8cfe63a86b2688d9d277a12925e92e`. The local evidence writer was on branch `codex/pstack-port` at HEAD `48d118e0ca96f5cb971364bd8e327981960cd412`. HEAD is an evidence-only successor, not a newly tested package revision.
+Recorded on 2026-10-08 in Asia/Amman. The clock returned 2026-10-07 23:57:37 UTC, or 2026-10-08 02:57:37 Asia/Amman. Candidate version 0.1.0 is bound to F2 commit `1659eb6f87c2a87a308bb0d5546b937809e312de`. The local evidence writer was on branch `codex/pstack-port` at HEAD `48d118e0ca96f5cb971364bd8e327981960cd412`. HEAD is an evidence-only successor, not a newly tested package revision.
 
 ## Documented support
 
@@ -24,4 +24,8 @@ The fresh-host README walkthrough was not run. Exact discovery requires an actua
 
 No pure reasoning output, supplied-source sequential result, independent worker, delayed cross-review, partition/race behavior, cancellation, model selection or isolated host artifact was observed. History privacy, digest fallback, reflect approval, automate-me draft preservation, missing webhook setup and unauthorized connector behavior were not exercised. Their expected outcomes remain unproven. Full capability and reduced capability are NOT OBSERVED; runtime cases are NOT RUN.
 
-Bun local validation can establish schema and scope consistency only. Historical helper validation and Codex records cannot establish personal ChatGPT support. Host status integration belongs to a separate serial unit. F2 will require explicit relinking and revalidation; these F1 records do not certify another revision.
+Bun local validation can establish schema and scope consistency only. Historical helper validation and Codex records cannot establish personal ChatGPT support. Host status integration was completed in the separately reviewed F2 unit. These records now identify F2 for blocked accounting; they do not certify behavioral support.
+
+## Second freeze linkage
+
+The controller explicitly relinked these existing blocked records to second freeze F2 `1659eb6f87c2a87a308bb0d5546b937809e312de`. The original F1 `18718aa5ee8cfe63a86b2688d9d277a12925e92e` records remain in Git history. This changes the package identity for blocked accounting only. There are no passes to transfer. No fresh host observation, discovery receipt or behavioral execution was produced; all cases remain blocked and unattempted. The original observation date, blocking reasons, proof limits and empty successfulOperations arrays remain unchanged.

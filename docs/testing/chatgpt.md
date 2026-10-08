@@ -1,6 +1,6 @@
 # Personal ChatGPT behavioral evidence
 
-All 105 required personal ChatGPT behavioral cases are blocked and unattempted as of 2026-10-08 in Asia/Amman. Records identify package version 0.1.0 at F1 commit `18718aa5ee8cfe63a86b2688d9d277a12925e92e`. No documented supported local plugin loading route is established for this personal context. No actual personal ChatGPT session or installed package copy was accessed. Separate human authorization for loading, installation, enabling, settings changes or fresh host setup is absent.
+All 105 required personal ChatGPT behavioral cases are blocked and unattempted as of 2026-10-08 in Asia/Amman. Records identify package version 0.1.0 at F2 commit `1659eb6f87c2a87a308bb0d5546b937809e312de`. No documented supported local plugin loading route is established for this personal context. No actual personal ChatGPT session or installed package copy was accessed. Separate human authorization for loading, installation, enabling, settings changes or fresh host setup is absent.
 
 The [authorization and support check](../parity/evidence/chatgpt/authorization-support-check.md) separates the setup guide's documented support findings from personal-host probing, which was not attempted. Local controller tools do not establish ChatGPT capabilities. No runtime denial or case model output was observed.
 
@@ -18,4 +18,8 @@ Use the [setup guide](../setup/chatgpt.md) only when a supported personal route 
 
 Run each registered case in the actual available mode, retaining real outputs and artifacts. Label observed authorized sequential behavior reduced capability. Record missing or denied operations precisely. Do not treat a documented capability as a callable binding.
 
-Validate records through Bun with --no-install and Python -B against the exact tested commit. Inventory, registry and catalog statuses are unchanged in this unit. The controller merges both host statuses separately before F2. After the reviewed F2 catalog freeze, explicitly relink the records at their existing paths and revalidate; F1 evidence cannot silently certify F2. Historical isolated helper checks remain development-only evidence.
+Validate records through Bun with --no-install and Python -B against the exact tested commit. Inventory, registry and catalog statuses are unchanged in this unit. Both host statuses were integrated separately before F2. The controller explicitly relinked these existing blocked records to the reviewed F2 freeze and revalidated their accounting. Historical isolated helper checks remain development-only evidence.
+
+## Second freeze linkage
+
+The controller explicitly relinked these existing blocked records to second freeze F2 `1659eb6f87c2a87a308bb0d5546b937809e312de`. The original F1 `18718aa5ee8cfe63a86b2688d9d277a12925e92e` records remain in Git history. This changes the package identity for blocked accounting only. There are no passes to transfer. No fresh host observation, discovery receipt or behavioral execution was produced; all cases remain blocked and unattempted. The original observation date, blocking reasons, proof limits and empty successfulOperations arrays remain unchanged.

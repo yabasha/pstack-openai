@@ -1,7 +1,7 @@
 {
   "caseId": "authorized-program",
   "packageVersion": "0.1.0",
-  "packageCommit": "18718aa5ee8cfe63a86b2688d9d277a12925e92e",
+  "packageCommit": "1659eb6f87c2a87a308bb0d5546b937809e312de",
   "host": "codex",
   "hostMode": "existing delegated local implementation session; installed-plugin testing unavailable",
   "date": "2026-10-08",
