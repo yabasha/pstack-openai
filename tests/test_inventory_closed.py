@@ -139,6 +139,16 @@ class InventoryClosedTests(unittest.TestCase):
         files -= {r['destinationPath'] for r in read('docs/parity/inventory.json')}
         section = (ROOT / 'docs/parity/support-map.md').read_text().split('## Additional port-file provenance\n', 1)[1]
         documented = set(re.findall(r'^\| \[([^\]]+)\]\(', section, re.M))
+        transaction_section = section.split('## Transaction-generated paths\n', 1)
+        transactions = set(re.findall(r'^\| `([^`]+)` \|', transaction_section[1].split('## Reserved report-only paths\n', 1)[0], re.M)) if len(transaction_section) == 2 else set()
+        pin = read('docs/parity/baseline-policy.json')['upstreamCommit']
+        expected_transactions = set() if pin == 'df581122cde17e6e27686b5a448bde23e4ad4318' else {
+            f'docs/parity/upstream-manifests/{pin}.apply.json',
+            f'docs/parity/upstream-manifests/{pin}.previous-fragments.json',
+        }
+        self.assertEqual(transactions, expected_transactions)
+        self.assertFalse(documented & transactions)
+        files -= transactions
         reserved_section = section.split('## Reserved report-only paths\n', 1)[1]
         reserved = set(re.findall(r'^\| `([^`]+)` \|', reserved_section, re.M))
         expected_reserved = {
