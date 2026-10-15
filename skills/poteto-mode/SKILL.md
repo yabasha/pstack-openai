@@ -18,6 +18,8 @@ Before any work, read this entire mode, including the Principles index, and the 
 
 Discover operations using [session capabilities](../../references/host-capabilities.md). Follow [assignment and integration](../../references/orchestration-contract.md), [model roles](../../references/model-roles.md) and the [poteto role prompt](../../references/agent-prompts/poteto-agent.md). Observed bindings and user permissions govern execution. Bundled helpers and playbooks supply instructions, not executable host capability. Never install or configure a companion implicitly.
 
+Bundled skills live at `../<name>/SKILL.md` from this file. Give every poteto-role delegate this file's exact absolute path and the full role prompt. The receiving chat owns the selected playbook, checklist and every worker assignment. Never delegate the playbook controller itself.
+
 ## Non-negotiables
 
 The Principles section below grounds every trigger. In your reply, name each principle that shaped a decision and the specific choice it changed. Cite only principles whose leaf SKILL.md you read this session.
@@ -92,7 +94,7 @@ Read the leaf skill in full for any principle you apply. Each entry names when i
 - **Laziness Protocol** (**principle-laziness-protocol**). Refactoring, sizing a diff, or tempted to add abstractions, layers, or signal threading. Bias to deletion and the smallest change that solves the problem.
 - **Foundational Thinking** (**principle-foundational-thinking**). Before writing logic: core types and data structures, scaffold-vs-feature sequencing, what concurrent actors share.
 - **Redesign from First Principles** (**principle-redesign-from-first-principles**). Integrating a new requirement into an existing design. Redesign as if it had been foundational from day one.
-- **Attack the Premise** (**principle-attack-the-premise**). Two or more fixes that share one premise have failed the same gate. Take a census of which actors hold the imbalance before the next fix, then question the premise instead of writing another fix that assumes it.
+- **Attack the Premise** (**principle-attack-the-premise**). Two or more fixes that share one premise have failed the same gate. Write the premise down and test it directly before writing another fix that assumes it.
 - **Subtract Before You Add** (**principle-subtract-before-you-add**). Sequencing an addition, refactor, or rewrite. Remove dead weight first, then build on the simpler base.
 - **Minimize Reader Load** (**principle-minimize-reader-load**). Reviewing or shaping code that's hard to trace. Count layers and hidden state, collapse one-caller wrappers, shrink mutable scope.
 - **Outcome-Oriented Execution** (**principle-outcome-oriented-execution**). Planned rewrites and migrations with explicit phase boundaries. Converge on the target architecture, don't preserve throwaway compatibility states.
@@ -112,9 +114,9 @@ Read the leaf skill in full for any principle you apply. Each entry names when i
 **Verification**
 
 - **Prove It Works** (**principle-prove-it-works**). After a task, before declaring done. Verify against the real artifact, not a proxy or "it compiles".
-- **Fix Root Causes** (**principle-fix-root-causes**). Debugging. Trace each symptom to its root cause, reproduce first, ask why until you reach it.
+- **Fix Root Causes** (**principle-fix-root-causes**). Debugging. Trace each symptom back to the first place the system went wrong and fix it there. A guard is a fix only when the state it handles is legitimate.
 - **Sequence Work into Verifiable Units** (**principle-sequence-verifiable-units**). Multi-step work (sweeps, migrations, runs of similar edits) and how you stack commits and PRs. Break work into small units that each end in a check, verify each before the next, and order delivery so the sequence proves itself.
-- **Test Behavior, Not Implementation** (**principle-test-behavior-not-implementation**). Writing, changing, or keeping a test. Call the code the way its users do and assert the result against a literal expected value. If the test would still pass when every imported function returns `undefined`, rewrite the assertion or delete the test.
+- **Test Behavior, Not Implementation** (**principle-test-behavior-not-implementation**). Writing, changing, or keeping a test. Assert what the code's users can observe, so the test fails when that behavior breaks and keeps passing when only the internals change.
 - **Explain the Number** (**principle-explain-the-number**). Before you trust, report, or act on a number you measured (a speedup, a regression, a throughput, a latency, or an eval result). Find what limits it, and rule out that it measured something other than the work you think.
 
 **Delegation**
@@ -138,11 +140,13 @@ Read the leaf skill in full for any principle you apply. Each entry names when i
 
 ## Subagents
 
-Use the [poteto role prompt](../../references/agent-prompts/poteto-agent.md) for any independent worker you spawn inside a playbook step, including code-writing delegates and ad-hoc helpers. /poteto-mode and the poteto-agent role route through this same full-mode read. Supply the entire role prompt and exact file pointers to the exposed worker operation. Generic routing without that prompt and read skips the style contract. Routed skills such as how, why, interrogate, reflect and swarm choose their own roles for diverse review; preserve their roles instead of overriding them with poteto-agent.
+The chat that receives /poteto-mode runs the playbook. Use the [poteto role prompt](../../references/agent-prompts/poteto-agent.md) for any independent worker you spawn inside a playbook step, including code-writing delegates and ad-hoc helpers. /poteto-mode and the poteto-agent role route through this same full-mode read. Supply the entire role prompt and exact file pointers to the exposed worker operation. Generic routing without that prompt and read skips the style contract. Routed skills such as how, why, interrogate, reflect and swarm choose their own roles for diverse review; preserve their roles instead of overriding them with poteto-agent.
 
 Defaults for every worker assignment follow the [assignment contract](../../references/orchestration-contract.md). Use independent background execution only when exposed and observed. Do not claim it from a role name or flag. Grant only the operations the scope needs; read-only work retains read-only permissions even when MCP tools exist. Use file pointers rather than inlined bulk context. Record requested and observed model and effort separately under [model roles](../../references/model-roles.md).
 
 Code delegates tier by difficulty. Give cross-cutting design, concurrency and subtle algorithms to the strongest available judgment model, even when the implementation instructions are precise. Trivial mechanical edits use an available fast code model. Authorized role configuration from /setup-pstack can override role defaults for feature and refactoring, bug-fix, perf-issue, hillclimb, hardest tasks, judgment and prose, and routed skills. Select only supported models and efforts from current tool documentation or observed enumeration. A missing role line keeps the portable inherit-parent default. A role line of inherit-parent or auto omits explicit model selection. Unsupported configured models or efforts require a disclosed supported fallback, or blocked if that exact choice is required. The source-host named defaults are not portable availability evidence. Unknown observed models leave diversity unverified.
+
+**Match effort and speed to the job.** Start from the authorized role configuration and supported inherited defaults. When explicit adjustment is supported and authorized, raise effort for subtle or difficult work and lower it for routine work. Use fast speed only when a person is blocked now or CI or trunk is red; verification retains its configured worker speed. Keep the configured model family when adjusting effort or speed so intended diversity is preserved. An inherit-parent or auto role remains inherited. Select only documented supported values, never construct source-host model slugs. If an adjustment is rejected, record the rejection and use the role's supported authorized default with disclosure instead of probing adjusted names. Record requested and observed effort and speed separately. Unsupported required choices remain blocked.
 
 Without an exposed and authorized independent-worker operation, apply the same full-mode and leaf reads sequentially only within authorized scope. Label reduced capability. Sequential roles are not independent workers, independent review, background execution or model diversity. If the playbook requires independence, leave that gate blocked rather than silently waiving it.
 
@@ -207,7 +211,7 @@ Read the selected playbook's complete adapted helper and prompt contracts before
 
   Stale locks require ownership review, and `--force` requires explicit takeover permission even for a dead holder.
 
-  Frontier discovery uses local git and gt in the stack owner's clone and fails on unavailable metadata or pin mismatch.
+  Frontier discovery uses local git and the resolved forge PR base chain in the stack owner's clone. Bind `frontier set --repo <stack-owner-clone> --forge gh|origin`, selecting the resolved forge. It fails on unavailable PR chains, local refs or pin mismatch rather than guessing.
 
   Do not substitute this binding for the gt-free Autopilot stack workflow.
 

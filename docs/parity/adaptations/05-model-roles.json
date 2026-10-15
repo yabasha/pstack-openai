@@ -1,60 +1,60 @@
 [
   {
-    "upstreamPath": "agents/comment-sicko.md",
-    "upstreamCommit": "df581122cde17e6e27686b5a448bde23e4ad4318",
-    "upstreamSha256": "c0fd0383008da45fc78cfac17b9007d62c42f87ad1c8d5c2fb658b1fd01f7c82",
-    "destinationPath": "references/agent-prompts/comment-sicko.md",
-    "disposition": "relocated",
-    "rationale": "Relocate comment role; preserve authorized scoped comment deletion, actual touched files and deletion counts, keep exceptions, investigation and in-scope MUST KILL flags; use explicit reduced proposals for unavailable or unauthorized writes and skip missing evidence. Never edit application code.",
+    "adaptationStatus": "adapted-reviewed",
     "dependencies": [
       "skills/how/SKILL.md",
       "skills/why/SKILL.md",
       "references/model-roles.md",
       "references/host-capabilities.md"
     ],
+    "destinationPath": "references/agent-prompts/comment-sicko.md",
+    "disposition": "relocated",
     "licenseProvenance": {
-      "license": "MIT",
       "copyright": "Copyright (c) 2026 Lauren Tan",
+      "license": "MIT",
       "sourcePath": "LICENSE"
     },
-    "adaptationStatus": "adapted-reviewed",
+    "rationale": "Canonical identifier case change has no registered portable agent equivalent. Retain role prompt and existing host-neutral binding.",
+    "upstreamCommit": "e5136d82418d2db3165ea1050d17577cd618cc05",
+    "upstreamPath": "agents/comment-sicko.md",
+    "upstreamSha256": "3e239e40b7b4b9beb2cf7f3ccc57f2388eb8b69bd1ba8ae888ef87ef6e0e2116",
     "verification": {
       "chatgpt": {
-        "status": "not-run",
-        "evidence": []
+        "evidence": [],
+        "status": "not-run"
       },
       "codex": {
-        "status": "not-run",
-        "evidence": []
+        "evidence": [],
+        "status": "not-run"
       }
     }
   },
   {
-    "upstreamPath": "agents/poteto-agent.md",
-    "upstreamCommit": "df581122cde17e6e27686b5a448bde23e4ad4318",
-    "upstreamSha256": "abe41c169ecbfe65641f1725f4188d568e046c0dec7fd2dc271abb594c299201",
-    "destinationPath": "references/agent-prompts/poteto-agent.md",
-    "disposition": "relocated",
-    "rationale": "Relocate portable role prompt; preserve complete mode and principle reads, fresh-task routing and strict resume rules; gate workers and model selection on session evidence.",
+    "adaptationStatus": "adapted-reviewed",
     "dependencies": [
       "skills/poteto-mode/SKILL.md",
       "references/model-roles.md",
       "references/host-capabilities.md"
     ],
+    "destinationPath": "references/agent-prompts/poteto-agent.md",
+    "disposition": "relocated",
     "licenseProvenance": {
-      "license": "MIT",
       "copyright": "Copyright (c) 2026 Lauren Tan",
+      "license": "MIT",
       "sourcePath": "LICENSE"
     },
-    "adaptationStatus": "adapted-reviewed",
+    "rationale": "Delegate-only ownership and exact mode read while preserving portable package discovery and missing dependency behavior.",
+    "upstreamCommit": "e5136d82418d2db3165ea1050d17577cd618cc05",
+    "upstreamPath": "agents/poteto-agent.md",
+    "upstreamSha256": "979f18abd000d185a0b4c41a2a4111c0910596a7f5c81cbb571885bc721b2bf7",
     "verification": {
       "chatgpt": {
-        "status": "not-run",
-        "evidence": []
+        "evidence": [],
+        "status": "not-run"
       },
       "codex": {
-        "status": "not-run",
-        "evidence": []
+        "evidence": [],
+        "status": "not-run"
       }
     }
   }

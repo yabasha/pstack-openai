@@ -84,9 +84,9 @@ The following statuses come from the current parity inventory. Pending aggregate
 
 Destination: [skills/benchmark-checklist/SKILL.md](../../skills/benchmark-checklist/SKILL.md).
 
-Upstream commit: `df581122cde17e6e27686b5a448bde23e4ad4318`. SHA-256: `6a767e788a60428fa14e645ee10fe2e49896e514ff654f668b1d824deb9038e8`.
+Upstream commit: `e5136d82418d2db3165ea1050d17577cd618cc05`. SHA-256: `ba109e96c8f6c1c391baccf19e5d11e14370df7b3f2605e1572cd565a6c0fca0`.
 
 Disposition: `runtime`. Aggregate adaptation status: `adapted-reviewed`.
 
-- chatgpt: `blocked`. Tested release evidence: [docs/parity/evidence/chatgpt/bounded-improvement.json](../parity/evidence/chatgpt/bounded-improvement.json), [docs/parity/evidence/chatgpt/comparable-revisions.json](../parity/evidence/chatgpt/comparable-revisions.json), [docs/parity/evidence/chatgpt/measurement-method.json](../parity/evidence/chatgpt/measurement-method.json), [docs/parity/evidence/chatgpt/package-discovery.json](../parity/evidence/chatgpt/package-discovery.json), [docs/parity/evidence/chatgpt/throwaway-probe.json](../parity/evidence/chatgpt/throwaway-probe.json).
-- codex: `blocked`. Tested release evidence: [docs/parity/evidence/codex/bounded-improvement.json](../parity/evidence/codex/bounded-improvement.json), [docs/parity/evidence/codex/comparable-revisions.json](../parity/evidence/codex/comparable-revisions.json), [docs/parity/evidence/codex/measurement-method.json](../parity/evidence/codex/measurement-method.json), [docs/parity/evidence/codex/package-discovery.json](../parity/evidence/codex/package-discovery.json), [docs/parity/evidence/codex/throwaway-probe.json](../parity/evidence/codex/throwaway-probe.json).
+- chatgpt: `not-run`. Tested release evidence: none recorded.
+- codex: `not-run`. Tested release evidence: none recorded.

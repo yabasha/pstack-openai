@@ -1,15 +1,15 @@
 # pstack portable package
 
-An unofficial port of Lauren Tan's pstack v0.15.15. The pinned baseline includes 51 root skills, 24 principles, 23 playbooks and 164 source files. Read [UPSTREAM.md](UPSTREAM.md), [NOTICE.md](NOTICE.md) and [LICENSE](LICENSE) for lineage and attribution.
+An unofficial port of Lauren Tan's pstack v0.15.25. The pinned baseline includes 54 root skills, 24 principles, 23 playbooks and 169 source files. Read [UPSTREAM.md](UPSTREAM.md), [NOTICE.md](NOTICE.md) and [LICENSE](LICENSE) for lineage and attribution.
 
-The implementation is a candidate awaiting aggregate review, frozen-package discovery and fresh host observations. Both hosts remain unverified. A local file read does not prove installed discovery. See [compatibility](docs/compatibility.md) before relying on a workflow.
+Port candidate 0.2.0 includes ketchup, sharpen and in-your-own-words. The implementation is a candidate awaiting aggregate review, frozen-package discovery and fresh host observations. Both hosts remain unverified. A local file read does not prove installed discovery. See [compatibility](docs/compatibility.md) before relying on a workflow.
 
 ## Start here
 
 - [Personal ChatGPT setup and blocked route](docs/setup/chatgpt.md).
 - [Codex setup and unverified documented route](docs/setup/codex.md).
 - [Choose a workflow](docs/workflows/choosing-a-workflow.md).
-- [All 51 skills](docs/skills/README.md) and [all 24 principles](docs/principles/README.md).
+- [All 54 skills](docs/skills/README.md) and [all 24 principles](docs/principles/README.md).
 - [Preserved guide](docs/guide/README.md).
 - [Arena walkthrough](docs/workflows/arena.md), [Swarm walkthrough](docs/workflows/swarm.md) and [Poteto mode walkthrough](docs/workflows/poteto-mode.md).
 - [Troubleshooting](docs/troubleshooting.md) and [host test matrix](docs/testing/host-matrix.md).

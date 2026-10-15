@@ -1,53 +1,53 @@
 [
   {
-    "upstreamPath": ".cursor-plugin/plugin.json",
-    "upstreamCommit": "df581122cde17e6e27686b5a448bde23e4ad4318",
-    "upstreamSha256": "7bc736c60985805f70465e044e5adc7028663f72a73deea7fa3e95e52d70dc8e",
-    "destinationPath": "plugin.json",
-    "disposition": "metadata-replaced",
-    "rationale": "Replace Cursor metadata with one portable root manifest and inline presentation metadata. Root skills discovery is implicit; host agent registration, hooks, MCP servers, and app mappings are absent.",
+    "adaptationStatus": "adapted-reviewed",
     "dependencies": [
       "assets/logo.png"
     ],
+    "destinationPath": "plugin.json",
+    "disposition": "metadata-replaced",
     "licenseProvenance": {
-      "license": "MIT",
       "copyright": "Copyright (c) 2026 Lauren Tan",
+      "license": "MIT",
       "sourcePath": "LICENSE"
     },
-    "adaptationStatus": "adapted-reviewed",
+    "rationale": "Preserve portable identity and complete adapted navigation or principles; upstream source identity is recorded independently.",
+    "upstreamCommit": "e5136d82418d2db3165ea1050d17577cd618cc05",
+    "upstreamPath": ".cursor-plugin/plugin.json",
+    "upstreamSha256": "b75609951c8a558e74f1eb20e15493933754eb2695fd2059d7f435f913889bb3",
     "verification": {
       "chatgpt": {
-        "status": "not-run",
-        "evidence": []
+        "evidence": [],
+        "status": "not-run"
       },
       "codex": {
-        "status": "not-run",
-        "evidence": []
+        "evidence": [],
+        "status": "not-run"
       }
     }
   },
   {
-    "upstreamPath": "assets/logo.png",
-    "upstreamCommit": "df581122cde17e6e27686b5a448bde23e4ad4318",
-    "upstreamSha256": "672f6791589ef758b0ced2c4c477913fa2758623c438e265639a0d539ce90695",
+    "adaptationStatus": "unchanged-reviewed",
+    "dependencies": [],
     "destinationPath": "assets/logo.png",
     "disposition": "runtime",
-    "rationale": "Copy the canonical logo unchanged for package presentation. This asset establishes no runtime workflow capability.",
-    "dependencies": [],
     "licenseProvenance": {
-      "license": "MIT",
       "copyright": "Copyright (c) 2026 Lauren Tan",
+      "license": "MIT",
       "sourcePath": "LICENSE"
     },
-    "adaptationStatus": "unchanged-reviewed",
+    "rationale": "Copy the canonical logo unchanged for package presentation. This asset establishes no runtime workflow capability.",
+    "upstreamCommit": "e5136d82418d2db3165ea1050d17577cd618cc05",
+    "upstreamPath": "assets/logo.png",
+    "upstreamSha256": "672f6791589ef758b0ced2c4c477913fa2758623c438e265639a0d539ce90695",
     "verification": {
       "chatgpt": {
-        "status": "not-run",
-        "evidence": []
+        "evidence": [],
+        "status": "not-run"
       },
       "codex": {
-        "status": "not-run",
-        "evidence": []
+        "evidence": [],
+        "status": "not-run"
       }
     }
   }

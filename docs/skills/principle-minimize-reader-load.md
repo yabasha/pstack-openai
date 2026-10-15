@@ -82,9 +82,9 @@ The following statuses come from the current parity inventory. Pending aggregate
 
 Destination: [skills/principle-minimize-reader-load/SKILL.md](../../skills/principle-minimize-reader-load/SKILL.md).
 
-Upstream commit: `df581122cde17e6e27686b5a448bde23e4ad4318`. SHA-256: `42551c5dc74cd578163c148da552db3ff67d29b78600ef216bfd311fb828fe69`.
+Upstream commit: `e5136d82418d2db3165ea1050d17577cd618cc05`. SHA-256: `1ea2b7fef2391cae5844c4efdbd59031f775e8a52d06b7495d707229a200dcca`.
 
 Disposition: `runtime`. Aggregate adaptation status: `adapted-reviewed`.
 
-- chatgpt: `blocked`. Tested release evidence: [docs/parity/evidence/chatgpt/package-discovery.json](../parity/evidence/chatgpt/package-discovery.json), [docs/parity/evidence/chatgpt/preserved-behavior.json](../parity/evidence/chatgpt/preserved-behavior.json), [docs/parity/evidence/chatgpt/trace-load.json](../parity/evidence/chatgpt/trace-load.json).
-- codex: `blocked`. Tested release evidence: [docs/parity/evidence/codex/package-discovery.json](../parity/evidence/codex/package-discovery.json), [docs/parity/evidence/codex/preserved-behavior.json](../parity/evidence/codex/preserved-behavior.json), [docs/parity/evidence/codex/trace-load.json](../parity/evidence/codex/trace-load.json).
+- chatgpt: `not-run`. Tested release evidence: none recorded.
+- codex: `not-run`. Tested release evidence: none recorded.

@@ -1,26 +1,26 @@
 [
   {
-    "upstreamPath": "skills/unslop/SKILL.md",
-    "upstreamCommit": "df581122cde17e6e27686b5a448bde23e4ad4318",
-    "upstreamSha256": "195411d320b5b328f9f642baf59757ed19aaf0931c0838740e0aca273d538dc1",
+    "adaptationStatus": "adapted-reviewed",
+    "dependencies": [],
     "destinationPath": "skills/unslop/SKILL.md",
     "disposition": "runtime",
-    "rationale": "Preserve the complete canonical prose-editing skill verbatim, including metadata, stable rule IDs and all original pattern examples. It requires supplied text and no host API adaptation.",
-    "dependencies": [],
     "licenseProvenance": {
-      "license": "MIT",
       "copyright": "Copyright (c) 2026 Lauren Tan",
+      "license": "MIT",
       "sourcePath": "LICENSE"
     },
-    "adaptationStatus": "unchanged-reviewed",
+    "rationale": "Retain equivalent complete prose rules and always-apply user preference; upstream edits are editorial and remove that invocation preference.",
+    "upstreamCommit": "e5136d82418d2db3165ea1050d17577cd618cc05",
+    "upstreamPath": "skills/unslop/SKILL.md",
+    "upstreamSha256": "ccab208e315ce05e2fab8eeee2f7879f1289b5c6844840b2d307adf31c79144f",
     "verification": {
       "chatgpt": {
-        "status": "not-run",
-        "evidence": []
+        "evidence": [],
+        "status": "not-run"
       },
       "codex": {
-        "status": "not-run",
-        "evidence": []
+        "evidence": [],
+        "status": "not-run"
       }
     }
   }

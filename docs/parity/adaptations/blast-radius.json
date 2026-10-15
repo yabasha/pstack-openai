@@ -1,11 +1,6 @@
 [
   {
-    "upstreamPath": "skills/blast-radius/SKILL.md",
-    "upstreamCommit": "df581122cde17e6e27686b5a448bde23e4ad4318",
-    "upstreamSha256": "2e10745b97f5862323dcda3b29ca60d56b5c3c98e37020085d26b48efbe0a436",
-    "destinationPath": "skills/blast-radius/SKILL.md",
-    "disposition": "runtime",
-    "rationale": "Preserve the canonical safety-fact evidence ladder, dependent caller and runtime tracing, risk assessment, real-code proof and complete output contract. Bind execution, history and arena model review to observed capabilities and authorization; label unavailable proof unproven and sequential review reduced capability.",
+    "adaptationStatus": "adapted-reviewed",
     "dependencies": [
       "skills/how/SKILL.md",
       "skills/why/SKILL.md",
@@ -15,20 +10,25 @@
       "references/model-roles.md",
       "references/orchestration-contract.md"
     ],
+    "destinationPath": "skills/blast-radius/SKILL.md",
+    "disposition": "runtime",
     "licenseProvenance": {
-      "license": "MIT",
       "copyright": "Copyright (c) 2026 Lauren Tan",
+      "license": "MIT",
       "sourcePath": "LICENSE"
     },
-    "adaptationStatus": "adapted-reviewed",
+    "rationale": "Preserve the canonical safety-fact evidence ladder, dependent caller and runtime tracing, risk assessment, real-code proof and complete output contract. Bind execution, history and arena model review to observed capabilities and authorization; label unavailable proof unproven and sequential review reduced capability.",
+    "upstreamCommit": "e5136d82418d2db3165ea1050d17577cd618cc05",
+    "upstreamPath": "skills/blast-radius/SKILL.md",
+    "upstreamSha256": "2e10745b97f5862323dcda3b29ca60d56b5c3c98e37020085d26b48efbe0a436",
     "verification": {
       "chatgpt": {
-        "status": "not-run",
-        "evidence": []
+        "evidence": [],
+        "status": "not-run"
       },
       "codex": {
-        "status": "not-run",
-        "evidence": []
+        "evidence": [],
+        "status": "not-run"
       }
     }
   }

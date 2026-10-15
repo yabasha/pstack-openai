@@ -1,30 +1,30 @@
 [
   {
-    "upstreamPath": "skills/swarm/SKILL.md",
-    "upstreamCommit": "df581122cde17e6e27686b5a448bde23e4ad4318",
-    "upstreamSha256": "bdcee4168e22428036e93d7cdeec3f391dbc4132f927f6db2540328c22db0273",
-    "destinationPath": "skills/swarm/SKILL.md",
-    "disposition": "runtime",
-    "rationale": "Preserve partition/race declaration, exact revisions and measurement methods, one evidence retry, dropout and coverage reporting. Bind worker dispatch, models, isolation, cancellation and persistence to observed host capabilities and authorization; sequential fallback remains reduced capability.",
+    "adaptationStatus": "adapted-reviewed",
     "dependencies": [
       "references/host-capabilities.md",
       "references/model-roles.md",
       "references/orchestration-contract.md"
     ],
+    "destinationPath": "skills/swarm/SKILL.md",
+    "disposition": "runtime",
     "licenseProvenance": {
-      "license": "MIT",
       "copyright": "Copyright (c) 2026 Lauren Tan",
+      "license": "MIT",
       "sourcePath": "LICENSE"
     },
-    "adaptationStatus": "adapted-reviewed",
+    "rationale": "Retain reviewed host capability, assignment, ownership and model-selection adaptations; upstream changes are editorial or introduce Cursor-specific delegation controls.",
+    "upstreamCommit": "e5136d82418d2db3165ea1050d17577cd618cc05",
+    "upstreamPath": "skills/swarm/SKILL.md",
+    "upstreamSha256": "c8fe1b28282e7a051a4041a146a11f076e0fd95252bb010106a58209805303d5",
     "verification": {
       "chatgpt": {
-        "status": "not-run",
-        "evidence": []
+        "evidence": [],
+        "status": "not-run"
       },
       "codex": {
-        "status": "not-run",
-        "evidence": []
+        "evidence": [],
+        "status": "not-run"
       }
     }
   }

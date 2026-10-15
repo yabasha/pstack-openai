@@ -1,29 +1,29 @@
 [
   {
-    "upstreamPath": "skills/principle-make-operations-idempotent/SKILL.md",
-    "upstreamCommit": "df581122cde17e6e27686b5a448bde23e4ad4318",
-    "upstreamSha256": "540738217c3da7bf513b9886924ad6a2bc77e58be867f5bd2e1831c74bf2ce70",
-    "destinationPath": "skills/principle-make-operations-idempotent/SKILL.md",
-    "disposition": "runtime",
-    "rationale": "Preserve the complete canonical principle and invocation metadata; bind recovery to observed session capabilities and authorized destination inspection before external replay. No comparison-port content or personal preferences added.",
+    "adaptationStatus": "adapted-reviewed",
     "dependencies": [
       "references/host-capabilities.md",
       "references/orchestration-contract.md"
     ],
+    "destinationPath": "skills/principle-make-operations-idempotent/SKILL.md",
+    "disposition": "runtime",
     "licenseProvenance": {
-      "license": "MIT",
       "copyright": "Copyright (c) 2026 Lauren Tan",
+      "license": "MIT",
       "sourcePath": "LICENSE"
     },
-    "adaptationStatus": "adapted-reviewed",
+    "rationale": "Retain complete current host adaptation; upstream prose consolidation does not add substantive required behavior.",
+    "upstreamCommit": "e5136d82418d2db3165ea1050d17577cd618cc05",
+    "upstreamPath": "skills/principle-make-operations-idempotent/SKILL.md",
+    "upstreamSha256": "7aa9327cf1f1aa057e95d47a0a78bd88a8f9d556b608866fee939d455a53a019",
     "verification": {
       "chatgpt": {
-        "status": "not-run",
-        "evidence": []
+        "evidence": [],
+        "status": "not-run"
       },
       "codex": {
-        "status": "not-run",
-        "evidence": []
+        "evidence": [],
+        "status": "not-run"
       }
     }
   }

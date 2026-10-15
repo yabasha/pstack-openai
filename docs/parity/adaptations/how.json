@@ -1,11 +1,6 @@
 [
   {
-    "upstreamPath": "skills/how/SKILL.md",
-    "upstreamCommit": "df581122cde17e6e27686b5a448bde23e4ad4318",
-    "upstreamSha256": "7e0d902484a90eba73dcf518bff478dc5b962b456d23c3d0a188c2ce36b236d8",
-    "destinationPath": "skills/how/SKILL.md",
-    "disposition": "runtime",
-    "rationale": "Preserve canonical how architecture, read-only exploration and explanation roles, factual source tracing, output sections and evidence gaps. Replace source-host worker and model bindings with observed session capabilities and explicit sequential reduced capability.",
+    "adaptationStatus": "adapted-reviewed",
     "dependencies": [
       "skills/how/references/explorer-prompt.md",
       "skills/how/references/explainer-prompt.md",
@@ -13,70 +8,75 @@
       "references/model-roles.md",
       "references/orchestration-contract.md"
     ],
+    "destinationPath": "skills/how/SKILL.md",
+    "disposition": "runtime",
     "licenseProvenance": {
-      "license": "MIT",
       "copyright": "Copyright (c) 2026 Lauren Tan",
+      "license": "MIT",
       "sourcePath": "LICENSE"
     },
-    "adaptationStatus": "adapted-reviewed",
+    "rationale": "Retain reviewed host capability, assignment, ownership and model-selection adaptations; upstream changes are editorial or introduce Cursor-specific delegation controls.",
+    "upstreamCommit": "e5136d82418d2db3165ea1050d17577cd618cc05",
+    "upstreamPath": "skills/how/SKILL.md",
+    "upstreamSha256": "08a00079bb15b4258874ac3ff62d4ca7e94350ffedb521d0fd296dc9dd21904e",
     "verification": {
       "chatgpt": {
-        "status": "not-run",
-        "evidence": []
+        "evidence": [],
+        "status": "not-run"
       },
       "codex": {
-        "status": "not-run",
-        "evidence": []
+        "evidence": [],
+        "status": "not-run"
       }
     }
   },
   {
-    "upstreamPath": "skills/how/references/explainer-prompt.md",
-    "upstreamCommit": "df581122cde17e6e27686b5a448bde23e4ad4318",
-    "upstreamSha256": "ddb89cebefc24e2b54517a331aedfe045b6971e101f45c71b8cef4cccff45bff",
+    "adaptationStatus": "adapted-reviewed",
+    "dependencies": [],
     "destinationPath": "skills/how/references/explainer-prompt.md",
     "disposition": "runtime",
-    "rationale": "Preserve canonical how architecture, read-only exploration and explanation roles, factual source tracing, output sections and evidence gaps. Replace source-host worker and model bindings with observed session capabilities and explicit sequential reduced capability.",
-    "dependencies": [],
     "licenseProvenance": {
-      "license": "MIT",
       "copyright": "Copyright (c) 2026 Lauren Tan",
+      "license": "MIT",
       "sourcePath": "LICENSE"
     },
-    "adaptationStatus": "adapted-reviewed",
+    "rationale": "Preserve canonical how architecture, read-only exploration and explanation roles, factual source tracing, output sections and evidence gaps. Replace source-host worker and model bindings with observed session capabilities and explicit sequential reduced capability.",
+    "upstreamCommit": "e5136d82418d2db3165ea1050d17577cd618cc05",
+    "upstreamPath": "skills/how/references/explainer-prompt.md",
+    "upstreamSha256": "ddb89cebefc24e2b54517a331aedfe045b6971e101f45c71b8cef4cccff45bff",
     "verification": {
       "chatgpt": {
-        "status": "not-run",
-        "evidence": []
+        "evidence": [],
+        "status": "not-run"
       },
       "codex": {
-        "status": "not-run",
-        "evidence": []
+        "evidence": [],
+        "status": "not-run"
       }
     }
   },
   {
-    "upstreamPath": "skills/how/references/explorer-prompt.md",
-    "upstreamCommit": "df581122cde17e6e27686b5a448bde23e4ad4318",
-    "upstreamSha256": "a3b44a6e5bb16a6d4d1cac19db8ed5322ffd5f5f5d45baca4e73990ca096f8be",
+    "adaptationStatus": "adapted-reviewed",
+    "dependencies": [],
     "destinationPath": "skills/how/references/explorer-prompt.md",
     "disposition": "runtime",
-    "rationale": "Preserve canonical how architecture, read-only exploration and explanation roles, factual source tracing, output sections and evidence gaps. Replace source-host worker and model bindings with observed session capabilities and explicit sequential reduced capability.",
-    "dependencies": [],
     "licenseProvenance": {
-      "license": "MIT",
       "copyright": "Copyright (c) 2026 Lauren Tan",
+      "license": "MIT",
       "sourcePath": "LICENSE"
     },
-    "adaptationStatus": "adapted-reviewed",
+    "rationale": "Retain complete tracing and evidence-quality guidance; upstream shortening removes useful standalone instructions or source-specific cautions.",
+    "upstreamCommit": "e5136d82418d2db3165ea1050d17577cd618cc05",
+    "upstreamPath": "skills/how/references/explorer-prompt.md",
+    "upstreamSha256": "6300128385ee940fd42ecb84b0e623435440a2dc283eae54ee4a52ba56947ba1",
     "verification": {
       "chatgpt": {
-        "status": "not-run",
-        "evidence": []
+        "evidence": [],
+        "status": "not-run"
       },
       "codex": {
-        "status": "not-run",
-        "evidence": []
+        "evidence": [],
+        "status": "not-run"
       }
     }
   }

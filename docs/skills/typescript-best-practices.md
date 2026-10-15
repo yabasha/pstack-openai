@@ -84,20 +84,20 @@ The following statuses come from the current parity inventory. Pending aggregate
 
 Destination: [skills/typescript-best-practices/SKILL.md](../../skills/typescript-best-practices/SKILL.md).
 
-Upstream commit: `df581122cde17e6e27686b5a448bde23e4ad4318`. SHA-256: `28f9e61710e205f6f3c5476f333483cff0e988f6a5b639e2faad536344b40c5e`.
+Upstream commit: `e5136d82418d2db3165ea1050d17577cd618cc05`. SHA-256: `28f9e61710e205f6f3c5476f333483cff0e988f6a5b639e2faad536344b40c5e`.
 
 Disposition: `runtime`. Aggregate adaptation status: `adapted-reviewed`.
 
-- chatgpt: `blocked`. Tested release evidence: [docs/parity/evidence/chatgpt/package-discovery.json](../parity/evidence/chatgpt/package-discovery.json), [docs/parity/evidence/chatgpt/typed-boundary.json](../parity/evidence/chatgpt/typed-boundary.json).
-- codex: `blocked`. Tested release evidence: [docs/parity/evidence/codex/package-discovery.json](../parity/evidence/codex/package-discovery.json), [docs/parity/evidence/codex/typed-boundary.json](../parity/evidence/codex/typed-boundary.json).
+- chatgpt: `not-run`. Tested release evidence: none recorded.
+- codex: `not-run`. Tested release evidence: none recorded.
 
 ### `skills/typescript-best-practices/references/patterns.md`
 
 Destination: [skills/typescript-best-practices/references/patterns.md](../../skills/typescript-best-practices/references/patterns.md).
 
-Upstream commit: `df581122cde17e6e27686b5a448bde23e4ad4318`. SHA-256: `faa1362055374452efccac1b629677c61acfb0bcc6c4e3311836b5715638ee18`.
+Upstream commit: `e5136d82418d2db3165ea1050d17577cd618cc05`. SHA-256: `faa1362055374452efccac1b629677c61acfb0bcc6c4e3311836b5715638ee18`.
 
 Disposition: `runtime`. Aggregate adaptation status: `unchanged-reviewed`.
 
-- chatgpt: `blocked`. Tested release evidence: [docs/parity/evidence/chatgpt/typed-boundary.json](../parity/evidence/chatgpt/typed-boundary.json).
-- codex: `blocked`. Tested release evidence: [docs/parity/evidence/codex/typed-boundary.json](../parity/evidence/codex/typed-boundary.json).
+- chatgpt: `not-run`. Tested release evidence: none recorded.
+- codex: `not-run`. Tested release evidence: none recorded.

@@ -1,0 +1,28 @@
+{
+  "capabilityLimits": [
+    "Missing required source or operations remain explicit gaps.",
+    "Discovery and host behavior require fresh observed evidence."
+  ],
+  "caseIds": [
+    "task-sharpen"
+  ],
+  "dependencies": [
+    "references/host-capabilities.md"
+  ],
+  "inputs": [
+    "The current user request and authorized current-chat context."
+  ],
+  "kind": "skill",
+  "name": "sharpen",
+  "ordinaryExample": "Invoke sharpen on a task to diagnose slow search. The user requires an offline fixture and prohibits production data. Inspect the supplied fixture results and propose or run an authorized independent check.",
+  "outputs": [
+    "Frame the task around its intended outcome, preserve user constraints and choose an outside verification."
+  ],
+  "purpose": "Frame the task around its intended outcome, preserve user constraints and choose an outside verification.",
+  "sourcePaths": [
+    "skills/sharpen/SKILL.md"
+  ],
+  "triggers": [
+    "Explicit sharpen invocation."
+  ]
+}

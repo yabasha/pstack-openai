@@ -78,9 +78,9 @@ The following statuses come from the current parity inventory. Pending aggregate
 
 Destination: [skills/principle-boundary-discipline/SKILL.md](../../skills/principle-boundary-discipline/SKILL.md).
 
-Upstream commit: `df581122cde17e6e27686b5a448bde23e4ad4318`. SHA-256: `62ac2862c2caa22dd14531f51c9c6bb445ceb198ca98a687e25b4d47c1f10a28`.
+Upstream commit: `e5136d82418d2db3165ea1050d17577cd618cc05`. SHA-256: `62ac2862c2caa22dd14531f51c9c6bb445ceb198ca98a687e25b4d47c1f10a28`.
 
 Disposition: `runtime`. Aggregate adaptation status: `adapted-reviewed`.
 
-- chatgpt: `blocked`. Tested release evidence: [docs/parity/evidence/chatgpt/invalid-input.json](../parity/evidence/chatgpt/invalid-input.json), [docs/parity/evidence/chatgpt/package-discovery.json](../parity/evidence/chatgpt/package-discovery.json).
-- codex: `blocked`. Tested release evidence: [docs/parity/evidence/codex/invalid-input.json](../parity/evidence/codex/invalid-input.json), [docs/parity/evidence/codex/package-discovery.json](../parity/evidence/codex/package-discovery.json).
+- chatgpt: `not-run`. Tested release evidence: none recorded.
+- codex: `not-run`. Tested release evidence: none recorded.

@@ -84,9 +84,9 @@ The following statuses come from the current parity inventory. Pending aggregate
 
 Destination: [skills/principle-encode-lessons-in-structure/SKILL.md](../../skills/principle-encode-lessons-in-structure/SKILL.md).
 
-Upstream commit: `df581122cde17e6e27686b5a448bde23e4ad4318`. SHA-256: `77044c83a9ac6df78fc643887ea5f1f11f082adaf14b717c060cdaed03cce863`.
+Upstream commit: `e5136d82418d2db3165ea1050d17577cd618cc05`. SHA-256: `228963799189f481827d6f28065f278bc2008ffa37030b1234cbd5814d36b9e9`.
 
 Disposition: `runtime`. Aggregate adaptation status: `adapted-reviewed`.
 
-- chatgpt: `blocked`. Tested release evidence: [docs/parity/evidence/chatgpt/owned-safe-cleanup.json](../parity/evidence/chatgpt/owned-safe-cleanup.json), [docs/parity/evidence/chatgpt/package-discovery.json](../parity/evidence/chatgpt/package-discovery.json), [docs/parity/evidence/chatgpt/repeated-rule.json](../parity/evidence/chatgpt/repeated-rule.json), [docs/parity/evidence/chatgpt/supported-authoring.json](../parity/evidence/chatgpt/supported-authoring.json), [docs/parity/evidence/chatgpt/unit-state.json](../parity/evidence/chatgpt/unit-state.json), [docs/parity/evidence/chatgpt/units-and-proof.json](../parity/evidence/chatgpt/units-and-proof.json).
-- codex: `blocked`. Tested release evidence: [docs/parity/evidence/codex/owned-safe-cleanup.json](../parity/evidence/codex/owned-safe-cleanup.json), [docs/parity/evidence/codex/package-discovery.json](../parity/evidence/codex/package-discovery.json), [docs/parity/evidence/codex/repeated-rule.json](../parity/evidence/codex/repeated-rule.json), [docs/parity/evidence/codex/supported-authoring.json](../parity/evidence/codex/supported-authoring.json), [docs/parity/evidence/codex/unit-state.json](../parity/evidence/codex/unit-state.json), [docs/parity/evidence/codex/units-and-proof.json](../parity/evidence/codex/units-and-proof.json).
+- chatgpt: `not-run`. Tested release evidence: none recorded.
+- codex: `not-run`. Tested release evidence: none recorded.

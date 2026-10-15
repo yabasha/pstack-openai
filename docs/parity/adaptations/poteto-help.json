@@ -1,11 +1,6 @@
 [
   {
-    "upstreamPath": "skills/poteto-help/SKILL.md",
-    "upstreamCommit": "df581122cde17e6e27686b5a448bde23e4ad4318",
-    "upstreamSha256": "ea71bcb15c023a5d9cc70686e4812144687ffe03bf80d85cc480af3e0b181d1e",
-    "destinationPath": "skills/poteto-help/SKILL.md",
-    "disposition": "runtime",
-    "rationale": "Preserve the complete help routing, metadata, source invocation aliases, prompting advice and recipes. Bind source-host setup, persistence, models, workers and loop behavior to observed portable capabilities and explicit authorization. Pending local destinations remain visible. Explain source customization options before baseline acceptance, but gate acting on personal-mode drafting and custom skill edits on complete reviewed baseline dispositions and per-host supported-behavior evidence or explicit blocks, independently of authorization.",
+    "adaptationStatus": "adapted-reviewed",
     "dependencies": [
       "skills/poteto-mode/SKILL.md",
       "references/host-capabilities.md",
@@ -47,78 +42,86 @@
       "docs/guide/07-overnight.md",
       "docs/guide/10-recipes-and-pitfalls.md",
       "docs/guide/09-make-it-yours.md",
-      "skills/poteto-help/references/recipes.md"
+      "skills/poteto-help/references/recipes.md",
+      "skills/in-your-own-words/SKILL.md",
+      "skills/sharpen/SKILL.md",
+      "skills/ketchup/SKILL.md"
     ],
+    "destinationPath": "skills/poteto-help/SKILL.md",
+    "disposition": "runtime",
     "licenseProvenance": {
-      "license": "MIT",
       "copyright": "Copyright (c) 2026 Lauren Tan",
+      "license": "MIT",
       "sourcePath": "LICENSE"
     },
-    "adaptationStatus": "adapted-reviewed",
+    "rationale": "Add reviewed new routes and recall/ketchup boundary while retaining portable invocation and model contracts.",
+    "upstreamCommit": "e5136d82418d2db3165ea1050d17577cd618cc05",
+    "upstreamPath": "skills/poteto-help/SKILL.md",
+    "upstreamSha256": "1b0645c25200a19e5863583e117bad684b1b79ba8434823ebf4f6bbcc61e8a75",
     "verification": {
       "chatgpt": {
-        "status": "not-run",
-        "evidence": []
+        "evidence": [],
+        "status": "not-run"
       },
       "codex": {
-        "status": "not-run",
-        "evidence": []
+        "evidence": [],
+        "status": "not-run"
       }
     }
   },
   {
-    "upstreamPath": "skills/poteto-help/references/prompting.md",
-    "upstreamCommit": "df581122cde17e6e27686b5a448bde23e4ad4318",
-    "upstreamSha256": "463f450c44a60afd001a2f69fdf8a5dea174351f339369b12ec3c41515e564d3",
+    "adaptationStatus": "adapted-reviewed",
+    "dependencies": [
+      "references/host-capabilities.md",
+      "references/workflow-ownership.md"
+    ],
     "destinationPath": "skills/poteto-help/references/prompting.md",
     "disposition": "runtime",
-    "rationale": "Preserve the complete help routing, metadata, source invocation aliases, prompting advice and recipes. Bind source-host setup, persistence, models, workers and loop behavior to observed portable capabilities and explicit authorization. Pending local destinations remain visible. Explain source customization options before baseline acceptance, but gate acting on personal-mode drafting and custom skill edits on complete reviewed baseline dispositions and per-host supported-behavior evidence or explicit blocks, independently of authorization.",
-    "dependencies": [
-      "references/host-capabilities.md",
-      "references/workflow-ownership.md"
-    ],
     "licenseProvenance": {
-      "license": "MIT",
       "copyright": "Copyright (c) 2026 Lauren Tan",
+      "license": "MIT",
       "sourcePath": "LICENSE"
     },
-    "adaptationStatus": "adapted-reviewed",
+    "rationale": "Preserve the complete help routing, metadata, source invocation aliases, prompting advice and recipes. Bind source-host setup, persistence, models, workers and loop behavior to observed portable capabilities and explicit authorization. Pending local destinations remain visible. Explain source customization options before baseline acceptance, but gate acting on personal-mode drafting and custom skill edits on complete reviewed baseline dispositions and per-host supported-behavior evidence or explicit blocks, independently of authorization.",
+    "upstreamCommit": "e5136d82418d2db3165ea1050d17577cd618cc05",
+    "upstreamPath": "skills/poteto-help/references/prompting.md",
+    "upstreamSha256": "463f450c44a60afd001a2f69fdf8a5dea174351f339369b12ec3c41515e564d3",
     "verification": {
       "chatgpt": {
-        "status": "not-run",
-        "evidence": []
+        "evidence": [],
+        "status": "not-run"
       },
       "codex": {
-        "status": "not-run",
-        "evidence": []
+        "evidence": [],
+        "status": "not-run"
       }
     }
   },
   {
-    "upstreamPath": "skills/poteto-help/references/recipes.md",
-    "upstreamCommit": "df581122cde17e6e27686b5a448bde23e4ad4318",
-    "upstreamSha256": "1872323419a3e5c7783b1933f7a180ca26c25a6e1f4ec83bd65e091ebbfb812b",
-    "destinationPath": "skills/poteto-help/references/recipes.md",
-    "disposition": "runtime",
-    "rationale": "Preserve the complete help routing, metadata, source invocation aliases, prompting advice and recipes. Bind source-host setup, persistence, models, workers and loop behavior to observed portable capabilities and explicit authorization. Pending local destinations remain visible. Explain source customization options before baseline acceptance, but gate acting on personal-mode drafting and custom skill edits on complete reviewed baseline dispositions and per-host supported-behavior evidence or explicit blocks, independently of authorization.",
+    "adaptationStatus": "adapted-reviewed",
     "dependencies": [
       "references/host-capabilities.md",
       "references/workflow-ownership.md"
     ],
+    "destinationPath": "skills/poteto-help/references/recipes.md",
+    "disposition": "runtime",
     "licenseProvenance": {
-      "license": "MIT",
       "copyright": "Copyright (c) 2026 Lauren Tan",
+      "license": "MIT",
       "sourcePath": "LICENSE"
     },
-    "adaptationStatus": "adapted-reviewed",
+    "rationale": "Add new restatement and sharpen recipes without changing existing host-specific caveats.",
+    "upstreamCommit": "e5136d82418d2db3165ea1050d17577cd618cc05",
+    "upstreamPath": "skills/poteto-help/references/recipes.md",
+    "upstreamSha256": "5fb97a805976a82db0aba5cc8943e88d0cb38b17a0d6b8e89a44633677febb1a",
     "verification": {
       "chatgpt": {
-        "status": "not-run",
-        "evidence": []
+        "evidence": [],
+        "status": "not-run"
       },
       "codex": {
-        "status": "not-run",
-        "evidence": []
+        "evidence": [],
+        "status": "not-run"
       }
     }
   }

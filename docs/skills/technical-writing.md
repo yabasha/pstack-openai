@@ -82,9 +82,9 @@ The following statuses come from the current parity inventory. Pending aggregate
 
 Destination: [skills/technical-writing/SKILL.md](../../skills/technical-writing/SKILL.md).
 
-Upstream commit: `df581122cde17e6e27686b5a448bde23e4ad4318`. SHA-256: `f5c512ffeec70bc4e0dee50f7bb4c26742e1be77967a6e8b15d1921e1c209ceb`.
+Upstream commit: `e5136d82418d2db3165ea1050d17577cd618cc05`. SHA-256: `61fe9c424a798ebf36ad94941f87be049cb8827bdf86d21474a0dde37b513c43`.
 
 Disposition: `runtime`. Aggregate adaptation status: `adapted-reviewed`.
 
-- chatgpt: `blocked`. Tested release evidence: [docs/parity/evidence/chatgpt/dense-doc.json](../parity/evidence/chatgpt/dense-doc.json), [docs/parity/evidence/chatgpt/draft-only-authorized.json](../parity/evidence/chatgpt/draft-only-authorized.json), [docs/parity/evidence/chatgpt/package-discovery.json](../parity/evidence/chatgpt/package-discovery.json), [docs/parity/evidence/chatgpt/units-and-proof.json](../parity/evidence/chatgpt/units-and-proof.json).
-- codex: `blocked`. Tested release evidence: [docs/parity/evidence/codex/dense-doc.json](../parity/evidence/codex/dense-doc.json), [docs/parity/evidence/codex/draft-only-authorized.json](../parity/evidence/codex/draft-only-authorized.json), [docs/parity/evidence/codex/package-discovery.json](../parity/evidence/codex/package-discovery.json), [docs/parity/evidence/codex/units-and-proof.json](../parity/evidence/codex/units-and-proof.json).
+- chatgpt: `not-run`. Tested release evidence: none recorded.
+- codex: `not-run`. Tested release evidence: none recorded.

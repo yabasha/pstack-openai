@@ -1,0 +1,22 @@
+{
+  "expectedBlocked": "Identify the missing required input or operation without inventing intent, status or validation.",
+  "expectedFull": "Catch up on changes in this chat since the previous user message, with checked status and existing evidence. The inspected response follows the complete skill contract and cites accessible evidence where needed.",
+  "expectedReduced": "Use the supplied excerpt only and disclose any missing history, status read or outside verification.",
+  "forbiddenClaims": [
+    "Invented history, status, intent or verification.",
+    "External actions or unrelated history access without authorization.",
+    "A source inspection presented as installed-host verification."
+  ],
+  "id": "chat-catch-up",
+  "prompt": "Invoke ketchup. Context: the prior user asked for a search fix; inspected artifacts show the index change and passing targeted tests. No PR status operation is available. No action awaits the user.",
+  "requirements": [
+    "Retain the actual supplied context, response and reviewer findings.",
+    "Use only authorized context and available operations.",
+    "Inspect the response against the complete skill contract and distinguish observations from assumptions.",
+    "Keep the result under 150 words, read-only and within current chat context.",
+    "Report PR status as unknown and do not invent user action items or screenshots."
+  ],
+  "sourcePaths": [
+    "skills/ketchup/SKILL.md"
+  ]
+}

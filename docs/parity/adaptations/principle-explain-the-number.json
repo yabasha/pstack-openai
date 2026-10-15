@@ -1,30 +1,30 @@
 [
   {
-    "upstreamPath": "skills/principle-explain-the-number/SKILL.md",
-    "upstreamCommit": "df581122cde17e6e27686b5a448bde23e4ad4318",
-    "upstreamSha256": "5aac99e7ce0bb1b37e2579acf4fe88c32a1456d9d46afd4a57cfe1df9092e89c",
-    "destinationPath": "skills/principle-explain-the-number/SKILL.md",
-    "disposition": "runtime",
-    "rationale": "Preserve the complete canonical measurement principle and invocation metadata. Add a capability and authorization branch for unavailable runs, profiling, inspection and evidence storage without weakening measurement requirements.",
+    "adaptationStatus": "adapted-reviewed",
     "dependencies": [
       "references/host-capabilities.md",
       "skills/benchmark-checklist/SKILL.md",
       "skills/principle-prove-it-works/SKILL.md"
     ],
+    "destinationPath": "skills/principle-explain-the-number/SKILL.md",
+    "disposition": "runtime",
     "licenseProvenance": {
-      "license": "MIT",
       "copyright": "Copyright (c) 2026 Lauren Tan",
+      "license": "MIT",
       "sourcePath": "LICENSE"
     },
-    "adaptationStatus": "adapted-reviewed",
+    "rationale": "Retain complete current host adaptation; upstream prose consolidation does not add substantive required behavior.",
+    "upstreamCommit": "e5136d82418d2db3165ea1050d17577cd618cc05",
+    "upstreamPath": "skills/principle-explain-the-number/SKILL.md",
+    "upstreamSha256": "cd5a25f9e7cf023627ccb470dc5faa97542f29b4319496a32b839a8e1e988047",
     "verification": {
       "chatgpt": {
-        "status": "not-run",
-        "evidence": []
+        "evidence": [],
+        "status": "not-run"
       },
       "codex": {
-        "status": "not-run",
-        "evidence": []
+        "evidence": [],
+        "status": "not-run"
       }
     }
   }

@@ -124,31 +124,31 @@ The following statuses come from the current parity inventory. Pending aggregate
 
 Destination: [skills/poteto-help/SKILL.md](../../skills/poteto-help/SKILL.md).
 
-Upstream commit: `df581122cde17e6e27686b5a448bde23e4ad4318`. SHA-256: `ea71bcb15c023a5d9cc70686e4812144687ffe03bf80d85cc480af3e0b181d1e`.
+Upstream commit: `e5136d82418d2db3165ea1050d17577cd618cc05`. SHA-256: `1b0645c25200a19e5863583e117bad684b1b79ba8434823ebf4f6bbcc61e8a75`.
 
 Disposition: `runtime`. Aggregate adaptation status: `adapted-reviewed`.
 
-- chatgpt: `blocked`. Tested release evidence: [docs/parity/evidence/chatgpt/package-discovery.json](../parity/evidence/chatgpt/package-discovery.json), [docs/parity/evidence/chatgpt/route-recipe.json](../parity/evidence/chatgpt/route-recipe.json).
-- codex: `blocked`. Tested release evidence: [docs/parity/evidence/codex/package-discovery.json](../parity/evidence/codex/package-discovery.json), [docs/parity/evidence/codex/route-recipe.json](../parity/evidence/codex/route-recipe.json).
+- chatgpt: `not-run`. Tested release evidence: none recorded.
+- codex: `not-run`. Tested release evidence: none recorded.
 
 ### `skills/poteto-help/references/prompting.md`
 
 Destination: [skills/poteto-help/references/prompting.md](../../skills/poteto-help/references/prompting.md).
 
-Upstream commit: `df581122cde17e6e27686b5a448bde23e4ad4318`. SHA-256: `463f450c44a60afd001a2f69fdf8a5dea174351f339369b12ec3c41515e564d3`.
+Upstream commit: `e5136d82418d2db3165ea1050d17577cd618cc05`. SHA-256: `463f450c44a60afd001a2f69fdf8a5dea174351f339369b12ec3c41515e564d3`.
 
 Disposition: `runtime`. Aggregate adaptation status: `adapted-reviewed`.
 
-- chatgpt: `blocked`. Tested release evidence: [docs/parity/evidence/chatgpt/route-recipe.json](../parity/evidence/chatgpt/route-recipe.json).
-- codex: `blocked`. Tested release evidence: [docs/parity/evidence/codex/route-recipe.json](../parity/evidence/codex/route-recipe.json).
+- chatgpt: `not-run`. Tested release evidence: none recorded.
+- codex: `not-run`. Tested release evidence: none recorded.
 
 ### `skills/poteto-help/references/recipes.md`
 
 Destination: [skills/poteto-help/references/recipes.md](../../skills/poteto-help/references/recipes.md).
 
-Upstream commit: `df581122cde17e6e27686b5a448bde23e4ad4318`. SHA-256: `1872323419a3e5c7783b1933f7a180ca26c25a6e1f4ec83bd65e091ebbfb812b`.
+Upstream commit: `e5136d82418d2db3165ea1050d17577cd618cc05`. SHA-256: `5fb97a805976a82db0aba5cc8943e88d0cb38b17a0d6b8e89a44633677febb1a`.
 
 Disposition: `runtime`. Aggregate adaptation status: `adapted-reviewed`.
 
-- chatgpt: `blocked`. Tested release evidence: [docs/parity/evidence/chatgpt/route-recipe.json](../parity/evidence/chatgpt/route-recipe.json).
-- codex: `blocked`. Tested release evidence: [docs/parity/evidence/codex/route-recipe.json](../parity/evidence/codex/route-recipe.json).
+- chatgpt: `not-run`. Tested release evidence: none recorded.
+- codex: `not-run`. Tested release evidence: none recorded.

@@ -1,11 +1,6 @@
 [
   {
-    "upstreamPath": "skills/poteto-mode/playbooks/visual-parity.md",
-    "upstreamCommit": "df581122cde17e6e27686b5a448bde23e4ad4318",
-    "upstreamSha256": "950ca51999a6454c98eee6bcbc3d1bbe501a4e3a5d5439b6f6ddc378991b256c",
-    "destinationPath": "skills/poteto-mode/playbooks/visual-parity.md",
-    "disposition": "runtime",
-    "rationale": "Preserve all five visual-parity steps, immutable baseline and harness, component ownership, shared-primitives first, zero-diff acceptance, repeated per-component verification, per-component or safe-batch PR delivery and all reply artifacts. Controls, actual rendering, execution, worker isolation and external delivery require observed capabilities and authorization. Missing controls block visual pass. Sequential migration and explicit repetition disclose reduced capability. Opening a PR is deferred to Task 21 and Task 24 integration. No host runtime test was performed.",
+    "adaptationStatus": "adapted-reviewed",
     "dependencies": [
       "skills/poteto-mode/SKILL.md",
       "references/host-capabilities.md",
@@ -15,20 +10,25 @@
       "skills/principle-separate-before-serializing-shared-state/SKILL.md",
       "skills/poteto-mode/playbooks/opening-a-pr.md"
     ],
+    "destinationPath": "skills/poteto-mode/playbooks/visual-parity.md",
+    "disposition": "runtime",
     "licenseProvenance": {
-      "license": "MIT",
       "copyright": "Copyright (c) 2026 Lauren Tan",
+      "license": "MIT",
       "sourcePath": "LICENSE"
     },
-    "adaptationStatus": "adapted-reviewed",
+    "rationale": "Preserve all five visual-parity steps, immutable baseline and harness, component ownership, shared-primitives first, zero-diff acceptance, repeated per-component verification, per-component or safe-batch PR delivery and all reply artifacts. Controls, actual rendering, execution, worker isolation and external delivery require observed capabilities and authorization. Missing controls block visual pass. Sequential migration and explicit repetition disclose reduced capability. Opening a PR is deferred to Task 21 and Task 24 integration. No host runtime test was performed.",
+    "upstreamCommit": "e5136d82418d2db3165ea1050d17577cd618cc05",
+    "upstreamPath": "skills/poteto-mode/playbooks/visual-parity.md",
+    "upstreamSha256": "950ca51999a6454c98eee6bcbc3d1bbe501a4e3a5d5439b6f6ddc378991b256c",
     "verification": {
       "chatgpt": {
-        "status": "not-run",
-        "evidence": []
+        "evidence": [],
+        "status": "not-run"
       },
       "codex": {
-        "status": "not-run",
-        "evidence": []
+        "evidence": [],
+        "status": "not-run"
       }
     }
   }

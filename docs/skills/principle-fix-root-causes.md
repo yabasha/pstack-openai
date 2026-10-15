@@ -85,9 +85,9 @@ The following statuses come from the current parity inventory. Pending aggregate
 
 Destination: [skills/principle-fix-root-causes/SKILL.md](../../skills/principle-fix-root-causes/SKILL.md).
 
-Upstream commit: `df581122cde17e6e27686b5a448bde23e4ad4318`. SHA-256: `ba4cd38da1dcc8fe5432feb64457cba95594736a9b21b2ebf8f8c52aee068707`.
+Upstream commit: `e5136d82418d2db3165ea1050d17577cd618cc05`. SHA-256: `8df3c8c3fe57eb0055a5c8efab8ab144557fdf301da70b1cdc77a3a3ef3f3052`.
 
 Disposition: `runtime`. Aggregate adaptation status: `adapted-reviewed`.
 
-- chatgpt: `blocked`. Tested release evidence: [docs/parity/evidence/chatgpt/package-discovery.json](../parity/evidence/chatgpt/package-discovery.json), [docs/parity/evidence/chatgpt/symptom-repro.json](../parity/evidence/chatgpt/symptom-repro.json).
-- codex: `blocked`. Tested release evidence: [docs/parity/evidence/codex/package-discovery.json](../parity/evidence/codex/package-discovery.json), [docs/parity/evidence/codex/symptom-repro.json](../parity/evidence/codex/symptom-repro.json).
+- chatgpt: `not-run`. Tested release evidence: none recorded.
+- codex: `not-run`. Tested release evidence: none recorded.

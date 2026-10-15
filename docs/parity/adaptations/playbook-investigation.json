@@ -1,11 +1,6 @@
 [
   {
-    "upstreamPath": "skills/poteto-mode/playbooks/investigation.md",
-    "upstreamCommit": "df581122cde17e6e27686b5a448bde23e4ad4318",
-    "upstreamSha256": "dc66bcf6af3a074fc7f67aa5e12b93ef571a4fb4d8e17f2f1af5ae5359f42e46",
-    "destinationPath": "skills/poteto-mode/playbooks/investigation.md",
-    "disposition": "runtime",
-    "rationale": "Preserve all four Investigation steps, answer ownership, read-only cited explanation or recommendation, how and conditional why routing, exact checkpoint, output sections or tradeoffs table, unslop, no PR or babysit, architect exception and user handoff to Bug fix or Feature, real judgment and premise pushback. Bind reads, delegated roles and selection to actual capabilities and permissions. Direct script helpers are absent. Structural checks are not host behavior; inaccessible evidence and independent workers remain runtime limits. Task 24 must integrate this fragment and caller registry; both hosts remain not-run.",
+    "adaptationStatus": "adapted-reviewed",
     "dependencies": [
       "skills/poteto-mode/SKILL.md",
       "references/host-capabilities.md",
@@ -32,20 +27,25 @@
       "skills/poteto-mode/playbooks/bug-fix.md",
       "skills/poteto-mode/playbooks/feature.md"
     ],
+    "destinationPath": "skills/poteto-mode/playbooks/investigation.md",
+    "disposition": "runtime",
     "licenseProvenance": {
-      "license": "MIT",
       "copyright": "Copyright (c) 2026 Lauren Tan",
+      "license": "MIT",
       "sourcePath": "LICENSE"
     },
-    "adaptationStatus": "adapted-reviewed",
+    "rationale": "Preserve all four Investigation steps, answer ownership, read-only cited explanation or recommendation, how and conditional why routing, exact checkpoint, output sections or tradeoffs table, unslop, no PR or babysit, architect exception and user handoff to Bug fix or Feature, real judgment and premise pushback. Bind reads, delegated roles and selection to actual capabilities and permissions. Direct script helpers are absent. Structural checks are not host behavior; inaccessible evidence and independent workers remain runtime limits. Task 24 must integrate this fragment and caller registry; both hosts remain not-run.",
+    "upstreamCommit": "e5136d82418d2db3165ea1050d17577cd618cc05",
+    "upstreamPath": "skills/poteto-mode/playbooks/investigation.md",
+    "upstreamSha256": "dc66bcf6af3a074fc7f67aa5e12b93ef571a4fb4d8e17f2f1af5ae5359f42e46",
     "verification": {
       "chatgpt": {
-        "status": "not-run",
-        "evidence": []
+        "evidence": [],
+        "status": "not-run"
       },
       "codex": {
-        "status": "not-run",
-        "evidence": []
+        "evidence": [],
+        "status": "not-run"
       }
     }
   }

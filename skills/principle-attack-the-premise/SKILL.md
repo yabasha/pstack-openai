@@ -1,6 +1,6 @@
 ---
 name: principle-attack-the-premise
-description: "Apply when two or more fixes that share one premise have failed the same gate. Take a census of which actors hold the imbalance before the next fix, then question the premise instead of writing another fix that assumes it."
+description: "Apply when two or more fixes that share one premise have failed the same gate. Write the premise down and test it directly before you write another fix that assumes it."
 disable-model-invocation: true
 ---
 
@@ -8,24 +8,22 @@ disable-model-invocation: true
 
 When two or more fixes that share one premise have failed the same gate, suspect the premise, not the fixes.
 
-**Why:** Each failure under a shared premise is evidence about the premise.
+**Why:** Each failed fix is evidence against the belief it assumed. A third fix on the same premise spends effort where the evidence already says the cause is not.
 
 **Pattern:**
 - **Write the premise down.** The premise is the one sentence that every failed fix assumed.
-- **Take a census before the next fix.** Count the imbalance per actor. The census shows which actors hold the imbalance, not how large it is. Write the census as a rerunnable script per [Build the Lever](../principle-build-the-lever/SKILL.md).
-- **Read the skew.** If the same few actors hold most of the imbalance on every run, something assigns them that role. Find what assigns the role. That assignment is the next "why" per [Fix Root Causes](../principle-fix-root-causes/SKILL.md).
-- **Remove the asymmetry instead of compensating for it**, per the [Laziness Protocol](../principle-laziness-protocol/SKILL.md). Rotate the role between actors, randomize the assignment, or move the role, so that no actor holds it on every run. A return path, a shared pool, a batched hand-off, or a periodic rebalance leaves the assignment in place and adds work on every run.
+- **Test the premise before the next fix.** Find an observation that would come out differently if the premise were false, and make it. Look at how the failures are distributed, not only at how large they are. Make the check rerunnable per [Build the Lever](../principle-build-the-lever/SKILL.md).
+- **Follow the evidence.** If it contradicts the premise, the cause is elsewhere. Look for what the failures have in common that the premise did not predict. If it confirms the premise, ask the next "why" per [Fix Root Causes](../principle-fix-root-causes/SKILL.md). The earlier fixes may have treated a consequence instead of the cause.
+- **Remove the condition instead of compensating for it**, per the [Laziness Protocol](../principle-laziness-protocol/SKILL.md). If the evidence shows that one part always lands on the losing side, change what puts it there. A mechanism that cleans up after it leaves the cause in place and adds work on every run.
 
-**Stop:**
-- Do not start the next fix before the premise is written down and the census exists.
-- If the census is even across actors, the premise is not the cause. Look for the cause elsewhere and keep the census as evidence.
+**Stop:** Do not start the next fix before the premise is written down and tested.
 
 This principle is distinct from [Redesign from First Principles](../principle-redesign-from-first-principles/SKILL.md), which rebuilds a design around a new requirement. It questions a fact the current design assumes.
 
 ## Session capabilities and limits
 
-Use the current session bindings in [Host capabilities](../../references/host-capabilities.md). Inspect the failed checks and actor evidence before diagnosing the premise. Census creation requires authorized writes; running it requires available execution. Observe results before claiming it ran.
+Use the current session bindings in [host capabilities](../../references/host-capabilities.md). Inspect failed-check evidence before diagnosing the premise. Creating a rerunnable check requires authorized writes; running it requires available execution. Observe results before claiming it ran.
 
-If writes or execution are unavailable, state the premise and propose a rerunnable census as reduced capability. Keep the stop rule: do not start the next fix before the census exists. If the failed-check or actor evidence is unavailable, identify the missing inputs and stop the diagnosis. Do not invent actor counts or treat a proposal as measured evidence.
+If writes or execution are unavailable, state the premise and propose a falsifiable, rerunnable check as reduced capability. Keep the stop rule: do not start the next fix before the premise is tested. If the failed-check evidence is unavailable, identify the missing inputs and stop the diagnosis. Do not invent observations or treat a proposal as measured evidence.
 
 Preserve the invocation metadata above; its presence does not establish host enforcement.

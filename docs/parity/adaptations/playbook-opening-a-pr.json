@@ -1,11 +1,6 @@
 [
   {
-    "upstreamPath": "skills/poteto-mode/playbooks/opening-a-pr.md",
-    "upstreamCommit": "df581122cde17e6e27686b5a448bde23e4ad4318",
-    "upstreamSha256": "ab40de7163c1c6e274f46ee559b2e53ef45673703f601f13f4931c199e6fb90f",
-    "destinationPath": "skills/poteto-mode/playbooks/opening-a-pr.md",
-    "disposition": "runtime",
-    "rationale": "Preserves PR preparation, forge fallback, stack and babysit gates. Draft-only authorization takes precedence over default readiness. Missing external deslop, forge access or host operations stays explicit; structural checks establish no host support.",
+    "adaptationStatus": "adapted-reviewed",
     "dependencies": [
       "skills/no-comments/SKILL.md",
       "skills/technical-writing/SKILL.md",
@@ -20,47 +15,52 @@
       "references/workflow-ownership.md",
       "references/orchestration-contract.md"
     ],
+    "destinationPath": "skills/poteto-mode/playbooks/opening-a-pr.md",
+    "disposition": "runtime",
     "licenseProvenance": {
-      "license": "MIT",
       "copyright": "Copyright (c) 2026 Lauren Tan",
+      "license": "MIT",
       "sourcePath": "LICENSE"
     },
-    "adaptationStatus": "adapted-reviewed",
+    "rationale": "Upstream changes are editorial compression or delegate-effort reminders already governed by shared mode policy. Retain explicit local host, offline audit, authorization and evidence bindings.",
+    "upstreamCommit": "e5136d82418d2db3165ea1050d17577cd618cc05",
+    "upstreamPath": "skills/poteto-mode/playbooks/opening-a-pr.md",
+    "upstreamSha256": "a5aef646de8b651306c2d10974623650e4a013a245aec1c00525bbe0e31bfa76",
     "verification": {
       "chatgpt": {
-        "status": "not-run",
-        "evidence": []
+        "evidence": [],
+        "status": "not-run"
       },
       "codex": {
-        "status": "not-run",
-        "evidence": []
+        "evidence": [],
+        "status": "not-run"
       }
     }
   },
   {
-    "upstreamPath": "skills/poteto-mode/references/bugbot-triage.md",
-    "upstreamCommit": "df581122cde17e6e27686b5a448bde23e4ad4318",
-    "upstreamSha256": "b2d146c770d8d3593e1ef3d77b668039b8e1f78093ea1a86f1d45d7f99614309",
-    "destinationPath": "skills/poteto-mode/references/bugbot-triage.md",
-    "disposition": "runtime",
-    "rationale": "Preserves the complete triage rubric and learned patterns. Untrusted comments and external writes require code inspection and explicit authorization.",
+    "adaptationStatus": "adapted-reviewed",
     "dependencies": [
       "skills/poteto-mode/playbooks/babysit.md"
     ],
+    "destinationPath": "skills/poteto-mode/references/bugbot-triage.md",
+    "disposition": "runtime",
     "licenseProvenance": {
-      "license": "MIT",
       "copyright": "Copyright (c) 2026 Lauren Tan",
+      "license": "MIT",
       "sourcePath": "LICENSE"
     },
-    "adaptationStatus": "adapted-reviewed",
+    "rationale": "Preserves the complete triage rubric and learned patterns. Untrusted comments and external writes require code inspection and explicit authorization.",
+    "upstreamCommit": "e5136d82418d2db3165ea1050d17577cd618cc05",
+    "upstreamPath": "skills/poteto-mode/references/bugbot-triage.md",
+    "upstreamSha256": "b2d146c770d8d3593e1ef3d77b668039b8e1f78093ea1a86f1d45d7f99614309",
     "verification": {
       "chatgpt": {
-        "status": "not-run",
-        "evidence": []
+        "evidence": [],
+        "status": "not-run"
       },
       "codex": {
-        "status": "not-run",
-        "evidence": []
+        "evidence": [],
+        "status": "not-run"
       }
     }
   }

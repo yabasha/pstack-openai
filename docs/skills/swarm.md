@@ -90,9 +90,9 @@ The following statuses come from the current parity inventory. Pending aggregate
 
 Destination: [skills/swarm/SKILL.md](../../skills/swarm/SKILL.md).
 
-Upstream commit: `df581122cde17e6e27686b5a448bde23e4ad4318`. SHA-256: `bdcee4168e22428036e93d7cdeec3f391dbc4132f927f6db2540328c22db0273`.
+Upstream commit: `e5136d82418d2db3165ea1050d17577cd618cc05`. SHA-256: `c8fe1b28282e7a051a4041a146a11f076e0fd95252bb010106a58209805303d5`.
 
 Disposition: `runtime`. Aggregate adaptation status: `adapted-reviewed`.
 
-- chatgpt: `blocked`. Tested release evidence: [docs/parity/evidence/chatgpt/authorized-program.json](../parity/evidence/chatgpt/authorized-program.json), [docs/parity/evidence/chatgpt/package-discovery.json](../parity/evidence/chatgpt/package-discovery.json), [docs/parity/evidence/chatgpt/partition-and-race.json](../parity/evidence/chatgpt/partition-and-race.json), [docs/parity/evidence/chatgpt/stack-resume.json](../parity/evidence/chatgpt/stack-resume.json), [docs/parity/evidence/chatgpt/swarm-walkthrough.json](../parity/evidence/chatgpt/swarm-walkthrough.json), [docs/parity/evidence/chatgpt/units-and-proof.json](../parity/evidence/chatgpt/units-and-proof.json).
-- codex: `blocked`. Tested release evidence: [docs/parity/evidence/codex/authorized-program.json](../parity/evidence/codex/authorized-program.json), [docs/parity/evidence/codex/package-discovery.json](../parity/evidence/codex/package-discovery.json), [docs/parity/evidence/codex/partition-and-race.json](../parity/evidence/codex/partition-and-race.json), [docs/parity/evidence/codex/stack-resume.json](../parity/evidence/codex/stack-resume.json), [docs/parity/evidence/codex/swarm-walkthrough.json](../parity/evidence/codex/swarm-walkthrough.json), [docs/parity/evidence/codex/units-and-proof.json](../parity/evidence/codex/units-and-proof.json).
+- chatgpt: `not-run`. Tested release evidence: none recorded.
+- codex: `not-run`. Tested release evidence: none recorded.

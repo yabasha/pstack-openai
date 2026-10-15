@@ -1,0 +1,26 @@
+{
+  "capabilityLimits": [
+    "Missing required source or operations remain explicit gaps.",
+    "Discovery and host behavior require fresh observed evidence."
+  ],
+  "caseIds": [
+    "goal-restatement"
+  ],
+  "dependencies": [],
+  "inputs": [
+    "The current user request and authorized current-chat context."
+  ],
+  "kind": "skill",
+  "name": "in-your-own-words",
+  "ordinaryExample": "Invoke in-your-own-words. User goal: diagnose why the overnight import duplicates invoices, using the supplied logs and a local fixture. No implementation is authorized yet.",
+  "outputs": [
+    "Restate the user goals and problem while keeping assumptions explicit."
+  ],
+  "purpose": "Restate the user goals and problem while keeping assumptions explicit.",
+  "sourcePaths": [
+    "skills/in-your-own-words/SKILL.md"
+  ],
+  "triggers": [
+    "Explicit in-your-own-words invocation."
+  ]
+}

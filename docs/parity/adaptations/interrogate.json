@@ -1,11 +1,6 @@
 [
   {
-    "upstreamPath": "skills/interrogate/SKILL.md",
-    "upstreamCommit": "df581122cde17e6e27686b5a448bde23e4ad4318",
-    "upstreamSha256": "2f7e570ec23791ed2e485a09c98ed0597c46035e2050b351b84d3dc760ddd71f",
-    "destinationPath": "skills/interrogate/SKILL.md",
-    "disposition": "runtime",
-    "rationale": "Preserve canonical triggers, competing reviews, identical template, rubric, synthesis and lead judgment. Bind worker and model selection to observed session capabilities and authorization; disclose reduced capability and unverified diversity. No comparison fallback used. Canonical defaults were Reviewer A claude-opus-5-5-xhigh and Reviewer B grok-4.7-xhigh-fast, selected by the interrogate reviewers line in ~/.cursor/rules/pstack-models.mdc. These are source provenance, not callable portable defaults.",
+    "adaptationStatus": "adapted-reviewed",
     "dependencies": [
       "skills/interrogate/references/code-quality-review.md",
       "skills/interrogate/references/reviewer-prompt.md",
@@ -13,122 +8,128 @@
       "skills/interrogate/references/lead-judgment.md",
       "references/host-capabilities.md",
       "references/model-roles.md",
-      "references/orchestration-contract.md"
+      "references/orchestration-contract.md",
+      "docs/parity/adaptations/interrogate.json"
     ],
+    "destinationPath": "skills/interrogate/SKILL.md",
+    "disposition": "runtime",
     "licenseProvenance": {
-      "license": "MIT",
       "copyright": "Copyright (c) 2026 Lauren Tan",
+      "license": "MIT",
       "sourcePath": "LICENSE"
     },
-    "adaptationStatus": "adapted-reviewed",
+    "rationale": "Retain reviewed host capability, assignment, ownership and model-selection adaptations; upstream changes are editorial or introduce Cursor-specific delegation controls.",
+    "upstreamCommit": "e5136d82418d2db3165ea1050d17577cd618cc05",
+    "upstreamPath": "skills/interrogate/SKILL.md",
+    "upstreamSha256": "a16dfe179005abc22a4651b82f25b0c8ab953284276efe4e6dc341958fb63647",
     "verification": {
       "chatgpt": {
-        "status": "not-run",
-        "evidence": []
+        "evidence": [],
+        "status": "not-run"
       },
       "codex": {
-        "status": "not-run",
-        "evidence": []
+        "evidence": [],
+        "status": "not-run"
       }
     }
   },
   {
-    "upstreamPath": "skills/interrogate/references/code-quality-review.md",
-    "upstreamCommit": "df581122cde17e6e27686b5a448bde23e4ad4318",
-    "upstreamSha256": "79162fda183eafd40d51661fbb5e151c7ba250f89e506ba17f5bd135dcbd50a8",
+    "adaptationStatus": "unchanged-reviewed",
+    "dependencies": [],
     "destinationPath": "skills/interrogate/references/code-quality-review.md",
     "disposition": "runtime",
-    "rationale": "Preserve the entire canonical support contract unchanged, including all lenses, evidence rules and lead judgment criteria. No comparison fallback used.",
-    "dependencies": [],
     "licenseProvenance": {
-      "license": "MIT",
       "copyright": "Copyright (c) 2026 Lauren Tan",
+      "license": "MIT",
       "sourcePath": "LICENSE"
     },
-    "adaptationStatus": "unchanged-reviewed",
+    "rationale": "Preserve the entire canonical support contract unchanged, including all lenses, evidence rules and lead judgment criteria. No comparison fallback used.",
+    "upstreamCommit": "e5136d82418d2db3165ea1050d17577cd618cc05",
+    "upstreamPath": "skills/interrogate/references/code-quality-review.md",
+    "upstreamSha256": "79162fda183eafd40d51661fbb5e151c7ba250f89e506ba17f5bd135dcbd50a8",
     "verification": {
       "chatgpt": {
-        "status": "not-run",
-        "evidence": []
+        "evidence": [],
+        "status": "not-run"
       },
       "codex": {
-        "status": "not-run",
-        "evidence": []
+        "evidence": [],
+        "status": "not-run"
       }
     }
   },
   {
-    "upstreamPath": "skills/interrogate/references/reviewer-prompt.md",
-    "upstreamCommit": "df581122cde17e6e27686b5a448bde23e4ad4318",
-    "upstreamSha256": "e0598e254792b56de39bb16b1e6db559b03a522fdc54b98f942d254090920ae6",
-    "destinationPath": "skills/interrogate/references/reviewer-prompt.md",
-    "disposition": "runtime",
-    "rationale": "Preserve the entire canonical support contract unchanged, including all lenses, evidence rules and lead judgment criteria. No comparison fallback used.",
-    "dependencies": [],
-    "licenseProvenance": {
-      "license": "MIT",
-      "copyright": "Copyright (c) 2026 Lauren Tan",
-      "sourcePath": "LICENSE"
-    },
     "adaptationStatus": "unchanged-reviewed",
-    "verification": {
-      "chatgpt": {
-        "status": "not-run",
-        "evidence": []
-      },
-      "codex": {
-        "status": "not-run",
-        "evidence": []
-      }
-    }
-  },
-  {
-    "upstreamPath": "skills/interrogate/references/rubric.md",
-    "upstreamCommit": "df581122cde17e6e27686b5a448bde23e4ad4318",
-    "upstreamSha256": "a85aa801abbaf14434f00579440abc0d8e2723227ba8bf57de7cca8d6e7d2f25",
-    "destinationPath": "skills/interrogate/references/rubric.md",
-    "disposition": "runtime",
-    "rationale": "Preserve the entire canonical support contract unchanged, including all lenses, evidence rules and lead judgment criteria. No comparison fallback used.",
     "dependencies": [],
-    "licenseProvenance": {
-      "license": "MIT",
-      "copyright": "Copyright (c) 2026 Lauren Tan",
-      "sourcePath": "LICENSE"
-    },
-    "adaptationStatus": "unchanged-reviewed",
-    "verification": {
-      "chatgpt": {
-        "status": "not-run",
-        "evidence": []
-      },
-      "codex": {
-        "status": "not-run",
-        "evidence": []
-      }
-    }
-  },
-  {
-    "upstreamPath": "skills/interrogate/references/lead-judgment.md",
-    "upstreamCommit": "df581122cde17e6e27686b5a448bde23e4ad4318",
-    "upstreamSha256": "6e5bdf5670eb34017692e9b6c546f36ac7552e6bb9f3f2f3429164fcc46a9361",
     "destinationPath": "skills/interrogate/references/lead-judgment.md",
     "disposition": "runtime",
-    "rationale": "Preserve the entire canonical support contract unchanged, including all lenses, evidence rules and lead judgment criteria. No comparison fallback used.",
-    "dependencies": [],
     "licenseProvenance": {
-      "license": "MIT",
       "copyright": "Copyright (c) 2026 Lauren Tan",
+      "license": "MIT",
       "sourcePath": "LICENSE"
     },
-    "adaptationStatus": "unchanged-reviewed",
+    "rationale": "Preserve the entire canonical support contract unchanged, including all lenses, evidence rules and lead judgment criteria. No comparison fallback used.",
+    "upstreamCommit": "e5136d82418d2db3165ea1050d17577cd618cc05",
+    "upstreamPath": "skills/interrogate/references/lead-judgment.md",
+    "upstreamSha256": "6e5bdf5670eb34017692e9b6c546f36ac7552e6bb9f3f2f3429164fcc46a9361",
     "verification": {
       "chatgpt": {
-        "status": "not-run",
-        "evidence": []
+        "evidence": [],
+        "status": "not-run"
       },
       "codex": {
-        "status": "not-run",
-        "evidence": []
+        "evidence": [],
+        "status": "not-run"
+      }
+    }
+  },
+  {
+    "adaptationStatus": "adapted-reviewed",
+    "dependencies": [],
+    "destinationPath": "skills/interrogate/references/reviewer-prompt.md",
+    "disposition": "runtime",
+    "licenseProvenance": {
+      "copyright": "Copyright (c) 2026 Lauren Tan",
+      "license": "MIT",
+      "sourcePath": "LICENSE"
+    },
+    "rationale": "Retain reviewed host capability, assignment, ownership and model-selection adaptations; upstream changes are editorial or introduce Cursor-specific delegation controls.",
+    "upstreamCommit": "e5136d82418d2db3165ea1050d17577cd618cc05",
+    "upstreamPath": "skills/interrogate/references/reviewer-prompt.md",
+    "upstreamSha256": "f6005cc2b535006fca97a96c5bfda49df57312eedf1ffd8d1aaaf3eb33817c25",
+    "verification": {
+      "chatgpt": {
+        "evidence": [],
+        "status": "not-run"
+      },
+      "codex": {
+        "evidence": [],
+        "status": "not-run"
+      }
+    }
+  },
+  {
+    "adaptationStatus": "adapted-reviewed",
+    "dependencies": [],
+    "destinationPath": "skills/interrogate/references/rubric.md",
+    "disposition": "runtime",
+    "licenseProvenance": {
+      "copyright": "Copyright (c) 2026 Lauren Tan",
+      "license": "MIT",
+      "sourcePath": "LICENSE"
+    },
+    "rationale": "Retain reviewed host capability, assignment, ownership and model-selection adaptations; upstream changes are editorial or introduce Cursor-specific delegation controls.",
+    "upstreamCommit": "e5136d82418d2db3165ea1050d17577cd618cc05",
+    "upstreamPath": "skills/interrogate/references/rubric.md",
+    "upstreamSha256": "0f9c6bdb0b96e26dbde5f6407f417e0c02f54080e7a1268d8994f3c3ec6c5ac0",
+    "verification": {
+      "chatgpt": {
+        "evidence": [],
+        "status": "not-run"
+      },
+      "codex": {
+        "evidence": [],
+        "status": "not-run"
       }
     }
   }

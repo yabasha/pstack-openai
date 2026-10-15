@@ -76,9 +76,9 @@ The following statuses come from the current parity inventory. Pending aggregate
 
 Destination: [skills/unslop/SKILL.md](../../skills/unslop/SKILL.md).
 
-Upstream commit: `df581122cde17e6e27686b5a448bde23e4ad4318`. SHA-256: `195411d320b5b328f9f642baf59757ed19aaf0931c0838740e0aca273d538dc1`.
+Upstream commit: `e5136d82418d2db3165ea1050d17577cd618cc05`. SHA-256: `ccab208e315ce05e2fab8eeee2f7879f1289b5c6844840b2d307adf31c79144f`.
 
-Disposition: `runtime`. Aggregate adaptation status: `unchanged-reviewed`.
+Disposition: `runtime`. Aggregate adaptation status: `adapted-reviewed`.
 
-- chatgpt: `blocked`. Tested release evidence: [docs/parity/evidence/chatgpt/discriminating-eval.json](../parity/evidence/chatgpt/discriminating-eval.json), [docs/parity/evidence/chatgpt/draft-only-authorized.json](../parity/evidence/chatgpt/draft-only-authorized.json), [docs/parity/evidence/chatgpt/package-discovery.json](../parity/evidence/chatgpt/package-discovery.json), [docs/parity/evidence/chatgpt/prose-rewrite.json](../parity/evidence/chatgpt/prose-rewrite.json), [docs/parity/evidence/chatgpt/read-only-answer.json](../parity/evidence/chatgpt/read-only-answer.json), [docs/parity/evidence/chatgpt/unit-state.json](../parity/evidence/chatgpt/unit-state.json), [docs/parity/evidence/chatgpt/units-and-proof.json](../parity/evidence/chatgpt/units-and-proof.json).
-- codex: `blocked`. Tested release evidence: [docs/parity/evidence/codex/discriminating-eval.json](../parity/evidence/codex/discriminating-eval.json), [docs/parity/evidence/codex/draft-only-authorized.json](../parity/evidence/codex/draft-only-authorized.json), [docs/parity/evidence/codex/package-discovery.json](../parity/evidence/codex/package-discovery.json), [docs/parity/evidence/codex/prose-rewrite.json](../parity/evidence/codex/prose-rewrite.json), [docs/parity/evidence/codex/read-only-answer.json](../parity/evidence/codex/read-only-answer.json), [docs/parity/evidence/codex/unit-state.json](../parity/evidence/codex/unit-state.json), [docs/parity/evidence/codex/units-and-proof.json](../parity/evidence/codex/units-and-proof.json).
+- chatgpt: `not-run`. Tested release evidence: none recorded.
+- codex: `not-run`. Tested release evidence: none recorded.

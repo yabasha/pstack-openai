@@ -1,0 +1,22 @@
+{
+  "expectedBlocked": "Identify the missing required input or operation without inventing intent, status or validation.",
+  "expectedFull": "Restate the user goals and problem while keeping assumptions explicit. The inspected response follows the complete skill contract and cites accessible evidence where needed.",
+  "expectedReduced": "Use the supplied excerpt only and disclose any missing history, status read or outside verification.",
+  "forbiddenClaims": [
+    "Invented history, status, intent or verification.",
+    "External actions or unrelated history access without authorization.",
+    "A source inspection presented as installed-host verification."
+  ],
+  "id": "goal-restatement",
+  "prompt": "Invoke in-your-own-words. User goal: diagnose why the overnight import duplicates invoices, using the supplied logs and a local fixture. No implementation is authorized yet.",
+  "requirements": [
+    "Retain the actual supplied context, response and reviewer findings.",
+    "Use only authorized context and available operations.",
+    "Inspect the response against the complete skill contract and distinguish observations from assumptions.",
+    "Restate the desired outcome and problem without starting implementation.",
+    "Keep unproven causes and missing details explicit."
+  ],
+  "sourcePaths": [
+    "skills/in-your-own-words/SKILL.md"
+  ]
+}

@@ -1,11 +1,6 @@
 [
   {
-    "upstreamPath": "skills/poteto-mode/SKILL.md",
-    "upstreamCommit": "df581122cde17e6e27686b5a448bde23e4ad4318",
-    "upstreamSha256": "31cd02290360ce63564ef22b74d69fc6d90e62181d05a644cbed8f6c47cc9412",
-    "destinationPath": "skills/poteto-mode/SKILL.md",
-    "disposition": "runtime",
-    "rationale": "Preserve canonical metadata, aliases, all 24 principle meanings and ordered 23 playbook routes, fresh-worker and coordinator ownership, full reads, reply and comment contracts. Final caller integration closes the original 26 local-reference deferrals through present reviewed playbooks, Bugbot rubric and decision-trail contracts. Bind actual helper arguments and error boundaries, no-spawn worker exception, exact revisions and artifact checks, tasklist reduction, delivery exceptions and independent review gates. Record helper guarantee limits, dependency setup and snapshot boundaries explicitly. Structural closure establishes no model or host behavior.",
+    "adaptationStatus": "adapted-reviewed",
     "dependencies": [
       "skills/poteto-mode/playbooks/prototype.md",
       "skills/poteto-mode/playbooks/babysit.md",
@@ -79,20 +74,25 @@
       "skills/principle-never-block-on-the-human/SKILL.md",
       "skills/principle-encode-lessons-in-structure/SKILL.md"
     ],
+    "destinationPath": "skills/poteto-mode/SKILL.md",
+    "disposition": "runtime",
     "licenseProvenance": {
-      "license": "MIT",
       "copyright": "Copyright (c) 2026 Lauren Tan",
+      "license": "MIT",
       "sourcePath": "LICENSE"
     },
-    "adaptationStatus": "adapted-reviewed",
+    "rationale": "Adopt receiving-chat ownership, exact mode paths and supported task-based effort/speed; preserve host permissions and disclose actual capabilities. Align frontier prose to proposed forge helper.",
+    "upstreamCommit": "e5136d82418d2db3165ea1050d17577cd618cc05",
+    "upstreamPath": "skills/poteto-mode/SKILL.md",
+    "upstreamSha256": "c5e6b605f46e5d9fbab31afa7a99d3d50680f2180d1fdfae3a924901bc52d99a",
     "verification": {
       "chatgpt": {
-        "status": "not-run",
-        "evidence": []
+        "evidence": [],
+        "status": "not-run"
       },
       "codex": {
-        "status": "not-run",
-        "evidence": []
+        "evidence": [],
+        "status": "not-run"
       }
     }
   }

@@ -1,11 +1,6 @@
 [
   {
-    "upstreamPath": "skills/figure-it-out/SKILL.md",
-    "upstreamCommit": "df581122cde17e6e27686b5a448bde23e4ad4318",
-    "upstreamSha256": "0eb9485f0e7d84fee56b5d0f0af0faf4635e3ca87c8cba3970c01293b76ecc19",
-    "destinationPath": "skills/figure-it-out/SKILL.md",
-    "disposition": "runtime",
-    "rationale": "Preserves canonical metadata, aliases, all five phases, investigation order, verdicts and reply contract. Adds session capability bindings, honest missing-dependency and persistence limits, reduced sequential execution and authorization boundaries.",
+    "adaptationStatus": "adapted-reviewed",
     "dependencies": [
       "references/host-capabilities.md",
       "references/orchestration-contract.md",
@@ -22,20 +17,25 @@
       "skills/principle-sequence-verifiable-units/SKILL.md",
       "skills/principle-encode-lessons-in-structure/SKILL.md"
     ],
+    "destinationPath": "skills/figure-it-out/SKILL.md",
+    "disposition": "runtime",
     "licenseProvenance": {
-      "license": "MIT",
       "copyright": "Copyright (c) 2026 Lauren Tan",
+      "license": "MIT",
       "sourcePath": "LICENSE"
     },
-    "adaptationStatus": "adapted-reviewed",
+    "rationale": "Retain reviewed host capability, assignment, ownership and model-selection adaptations; upstream changes are editorial or introduce Cursor-specific delegation controls.",
+    "upstreamCommit": "e5136d82418d2db3165ea1050d17577cd618cc05",
+    "upstreamPath": "skills/figure-it-out/SKILL.md",
+    "upstreamSha256": "bdb23cdbd82a1e6af094b495691c832a6f7f3ab9706ba9edbeb664ef51a726e1",
     "verification": {
       "chatgpt": {
-        "status": "not-run",
-        "evidence": []
+        "evidence": [],
+        "status": "not-run"
       },
       "codex": {
-        "status": "not-run",
-        "evidence": []
+        "evidence": [],
+        "status": "not-run"
       }
     }
   }

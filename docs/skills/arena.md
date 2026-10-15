@@ -97,9 +97,9 @@ The following statuses come from the current parity inventory. Pending aggregate
 
 Destination: [skills/arena/SKILL.md](../../skills/arena/SKILL.md).
 
-Upstream commit: `df581122cde17e6e27686b5a448bde23e4ad4318`. SHA-256: `6e17736b5228b661569c3af054f8302c55cf9bf1649447652d53705cce38bed6`.
+Upstream commit: `e5136d82418d2db3165ea1050d17577cd618cc05`. SHA-256: `ed72f6c132b1ce3974d949581d0adc5dade424fe20793ac3b4c4fae22ecb9354`.
 
 Disposition: `runtime`. Aggregate adaptation status: `adapted-reviewed`.
 
-- chatgpt: `blocked`. Tested release evidence: [docs/parity/evidence/chatgpt/arena-walkthrough.json](../parity/evidence/chatgpt/arena-walkthrough.json), [docs/parity/evidence/chatgpt/candidate-cross-review.json](../parity/evidence/chatgpt/candidate-cross-review.json), [docs/parity/evidence/chatgpt/discriminating-eval.json](../parity/evidence/chatgpt/discriminating-eval.json), [docs/parity/evidence/chatgpt/package-discovery.json](../parity/evidence/chatgpt/package-discovery.json), [docs/parity/evidence/chatgpt/unit-state.json](../parity/evidence/chatgpt/unit-state.json), [docs/parity/evidence/chatgpt/verifiable-feature.json](../parity/evidence/chatgpt/verifiable-feature.json).
-- codex: `blocked`. Tested release evidence: [docs/parity/evidence/codex/arena-walkthrough.json](../parity/evidence/codex/arena-walkthrough.json), [docs/parity/evidence/codex/candidate-cross-review.json](../parity/evidence/codex/candidate-cross-review.json), [docs/parity/evidence/codex/discriminating-eval.json](../parity/evidence/codex/discriminating-eval.json), [docs/parity/evidence/codex/package-discovery.json](../parity/evidence/codex/package-discovery.json), [docs/parity/evidence/codex/unit-state.json](../parity/evidence/codex/unit-state.json), [docs/parity/evidence/codex/verifiable-feature.json](../parity/evidence/codex/verifiable-feature.json).
+- chatgpt: `not-run`. Tested release evidence: none recorded.
+- codex: `not-run`. Tested release evidence: none recorded.

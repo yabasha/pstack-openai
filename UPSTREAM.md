@@ -37,3 +37,8 @@ The [helper reconciliation](docs/parity/reconciliations/task12-lock.json) record
 The [template reconciliation](docs/parity/reconciliations/task16-template.json) retains both historical rows and assigns the unchanged decision-log template to its original single current owner. The [support map](docs/parity/support-map.md) also records the relocated orchestration prompt dependency and local dependency closure. Historical fragment rationales retain the implementation-time limits; the map distinguishes closed local paths from current runtime limits.
 
 The operative copy has no installed helper dependencies. Historical isolated tests at `37b68c8e842b275f310ead112c0ecb7fa0ade308` do not prove this candidate or either host. No host installation or loading follows from the metadata reconciliation.
+
+## Unaccepted candidate e5136d82418d2db3165ea1050d17577cd618cc05
+
+Candidate version 0.2.0. Archive SHA-256 30d6c97a55e4b08f6f75d6314b465bb3fe8c9a118149fc17fb1713bd7827014e. Review SHA-256 b9a52e1464c4738c53166f71cf6567dff260a035a4908b97ccfa4eb0a43330dc.
+The inventory stages this candidate. The accepted baseline above remains historical evidence. Structural checks, helper regression tests, and affected host cases must run before separate acceptance.

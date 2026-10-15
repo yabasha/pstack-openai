@@ -1,11 +1,46 @@
 [
   {
-    "upstreamPath": "automations/benny/FOR_AGENTS.md",
-    "upstreamCommit": "df581122cde17e6e27686b5a448bde23e4ad4318",
-    "upstreamSha256": "a125e317dec1b8731fdc71f404c669f1127a73af932f7a7b8b8744a5542328a7",
+    "adaptationStatus": "adapted-reviewed",
+    "dependencies": [
+      "references/host-capabilities.md",
+      "references/model-roles.md",
+      "references/orchestration-contract.md",
+      "references/workflow-ownership.md",
+      "skills/how/SKILL.md",
+      "skills/why/SKILL.md",
+      "skills/tdd/SKILL.md",
+      "skills/unslop/SKILL.md",
+      "skills/principle-separate-before-serializing-shared-state/SKILL.md",
+      "skills/principle-minimize-reader-load/SKILL.md",
+      "skills/principle-guard-the-context-window/SKILL.md",
+      "skills/principle-sequence-verifiable-units/SKILL.md",
+      "skills/principle-fix-root-causes/SKILL.md",
+      "skills/principle-prove-it-works/SKILL.md"
+    ],
     "destinationPath": "automations/benny/FOR_AGENTS.md",
     "disposition": "runtime",
+    "licenseProvenance": {
+      "copyright": "Copyright (c) 2026 Lauren Tan",
+      "license": "MIT",
+      "sourcePath": "LICENSE"
+    },
     "rationale": "Preserve optional Benny setup, direct operational instructions and safety contracts. Replace host settings and creation assumptions with observed capabilities, scoped setup blocks and explicit action authorization. Keep nested skills outside discovery. Structural checks supply no host behavior.",
+    "upstreamCommit": "e5136d82418d2db3165ea1050d17577cd618cc05",
+    "upstreamPath": "automations/benny/FOR_AGENTS.md",
+    "upstreamSha256": "a125e317dec1b8731fdc71f404c669f1127a73af932f7a7b8b8744a5542328a7",
+    "verification": {
+      "chatgpt": {
+        "evidence": [],
+        "status": "not-run"
+      },
+      "codex": {
+        "evidence": [],
+        "status": "not-run"
+      }
+    }
+  },
+  {
+    "adaptationStatus": "adapted-reviewed",
     "dependencies": [
       "references/host-capabilities.md",
       "references/model-roles.md",
@@ -22,30 +57,30 @@
       "skills/principle-fix-root-causes/SKILL.md",
       "skills/principle-prove-it-works/SKILL.md"
     ],
-    "licenseProvenance": {
-      "license": "MIT",
-      "copyright": "Copyright (c) 2026 Lauren Tan",
-      "sourcePath": "LICENSE"
-    },
-    "adaptationStatus": "adapted-reviewed",
-    "verification": {
-      "chatgpt": {
-        "status": "not-run",
-        "evidence": []
-      },
-      "codex": {
-        "status": "not-run",
-        "evidence": []
-      }
-    }
-  },
-  {
-    "upstreamPath": "automations/benny/README.md",
-    "upstreamCommit": "df581122cde17e6e27686b5a448bde23e4ad4318",
-    "upstreamSha256": "ca3c42cbb7f0bf7068f7407eb355815e6c234d5c2786942f3cbe751a3690024b",
     "destinationPath": "automations/benny/README.md",
     "disposition": "runtime",
+    "licenseProvenance": {
+      "copyright": "Copyright (c) 2026 Lauren Tan",
+      "license": "MIT",
+      "sourcePath": "LICENSE"
+    },
     "rationale": "Preserve optional Benny setup, direct operational instructions and safety contracts. Replace host settings and creation assumptions with observed capabilities, scoped setup blocks and explicit action authorization. Keep nested skills outside discovery. Structural checks supply no host behavior.",
+    "upstreamCommit": "e5136d82418d2db3165ea1050d17577cd618cc05",
+    "upstreamPath": "automations/benny/README.md",
+    "upstreamSha256": "ca3c42cbb7f0bf7068f7407eb355815e6c234d5c2786942f3cbe751a3690024b",
+    "verification": {
+      "chatgpt": {
+        "evidence": [],
+        "status": "not-run"
+      },
+      "codex": {
+        "evidence": [],
+        "status": "not-run"
+      }
+    }
+  },
+  {
+    "adaptationStatus": "adapted-reviewed",
     "dependencies": [
       "references/host-capabilities.md",
       "references/model-roles.md",
@@ -62,30 +97,30 @@
       "skills/principle-fix-root-causes/SKILL.md",
       "skills/principle-prove-it-works/SKILL.md"
     ],
-    "licenseProvenance": {
-      "license": "MIT",
-      "copyright": "Copyright (c) 2026 Lauren Tan",
-      "sourcePath": "LICENSE"
-    },
-    "adaptationStatus": "adapted-reviewed",
-    "verification": {
-      "chatgpt": {
-        "status": "not-run",
-        "evidence": []
-      },
-      "codex": {
-        "status": "not-run",
-        "evidence": []
-      }
-    }
-  },
-  {
-    "upstreamPath": "automations/benny/skills/reproduce-and-fix-issues/SKILL.md",
-    "upstreamCommit": "df581122cde17e6e27686b5a448bde23e4ad4318",
-    "upstreamSha256": "1363cc07343fe86aab42853b1bd4563288cbcbdf12f1c265b3b3b1afa25c09cb",
     "destinationPath": "automations/benny/skills/reproduce-and-fix-issues/SKILL.md",
     "disposition": "runtime",
+    "licenseProvenance": {
+      "copyright": "Copyright (c) 2026 Lauren Tan",
+      "license": "MIT",
+      "sourcePath": "LICENSE"
+    },
     "rationale": "Preserve optional Benny setup, direct operational instructions and safety contracts. Replace host settings and creation assumptions with observed capabilities, scoped setup blocks and explicit action authorization. Keep nested skills outside discovery. Structural checks supply no host behavior.",
+    "upstreamCommit": "e5136d82418d2db3165ea1050d17577cd618cc05",
+    "upstreamPath": "automations/benny/skills/reproduce-and-fix-issues/SKILL.md",
+    "upstreamSha256": "1363cc07343fe86aab42853b1bd4563288cbcbdf12f1c265b3b3b1afa25c09cb",
+    "verification": {
+      "chatgpt": {
+        "evidence": [],
+        "status": "not-run"
+      },
+      "codex": {
+        "evidence": [],
+        "status": "not-run"
+      }
+    }
+  },
+  {
+    "adaptationStatus": "adapted-reviewed",
     "dependencies": [
       "references/host-capabilities.md",
       "references/model-roles.md",
@@ -102,30 +137,30 @@
       "skills/principle-fix-root-causes/SKILL.md",
       "skills/principle-prove-it-works/SKILL.md"
     ],
-    "licenseProvenance": {
-      "license": "MIT",
-      "copyright": "Copyright (c) 2026 Lauren Tan",
-      "sourcePath": "LICENSE"
-    },
-    "adaptationStatus": "adapted-reviewed",
-    "verification": {
-      "chatgpt": {
-        "status": "not-run",
-        "evidence": []
-      },
-      "codex": {
-        "status": "not-run",
-        "evidence": []
-      }
-    }
-  },
-  {
-    "upstreamPath": "automations/benny/skills/reproduce-and-fix-issues/references/control-adapter.md",
-    "upstreamCommit": "df581122cde17e6e27686b5a448bde23e4ad4318",
-    "upstreamSha256": "58b0615d2fca895f9a20df83266e280042b0d585b5f2fd324e2094a682fd846b",
     "destinationPath": "automations/benny/skills/reproduce-and-fix-issues/references/control-adapter.md",
     "disposition": "runtime",
+    "licenseProvenance": {
+      "copyright": "Copyright (c) 2026 Lauren Tan",
+      "license": "MIT",
+      "sourcePath": "LICENSE"
+    },
     "rationale": "Preserve optional Benny setup, direct operational instructions and safety contracts. Replace host settings and creation assumptions with observed capabilities, scoped setup blocks and explicit action authorization. Keep nested skills outside discovery. Structural checks supply no host behavior.",
+    "upstreamCommit": "e5136d82418d2db3165ea1050d17577cd618cc05",
+    "upstreamPath": "automations/benny/skills/reproduce-and-fix-issues/references/control-adapter.md",
+    "upstreamSha256": "58b0615d2fca895f9a20df83266e280042b0d585b5f2fd324e2094a682fd846b",
+    "verification": {
+      "chatgpt": {
+        "evidence": [],
+        "status": "not-run"
+      },
+      "codex": {
+        "evidence": [],
+        "status": "not-run"
+      }
+    }
+  },
+  {
+    "adaptationStatus": "adapted-reviewed",
     "dependencies": [
       "references/host-capabilities.md",
       "references/model-roles.md",
@@ -142,30 +177,30 @@
       "skills/principle-fix-root-causes/SKILL.md",
       "skills/principle-prove-it-works/SKILL.md"
     ],
-    "licenseProvenance": {
-      "license": "MIT",
-      "copyright": "Copyright (c) 2026 Lauren Tan",
-      "sourcePath": "LICENSE"
-    },
-    "adaptationStatus": "adapted-reviewed",
-    "verification": {
-      "chatgpt": {
-        "status": "not-run",
-        "evidence": []
-      },
-      "codex": {
-        "status": "not-run",
-        "evidence": []
-      }
-    }
-  },
-  {
-    "upstreamPath": "automations/benny/skills/reproduce-and-fix-issues/references/feature-map.example.md",
-    "upstreamCommit": "df581122cde17e6e27686b5a448bde23e4ad4318",
-    "upstreamSha256": "1e5c7c8522daec3e43fcc2e73ceb97289ded65b552949ce65a11cc8eb3d2b6ee",
     "destinationPath": "automations/benny/skills/reproduce-and-fix-issues/references/feature-map.example.md",
     "disposition": "runtime",
+    "licenseProvenance": {
+      "copyright": "Copyright (c) 2026 Lauren Tan",
+      "license": "MIT",
+      "sourcePath": "LICENSE"
+    },
     "rationale": "Preserve optional Benny setup, direct operational instructions and safety contracts. Replace host settings and creation assumptions with observed capabilities, scoped setup blocks and explicit action authorization. Keep nested skills outside discovery. Structural checks supply no host behavior.",
+    "upstreamCommit": "e5136d82418d2db3165ea1050d17577cd618cc05",
+    "upstreamPath": "automations/benny/skills/reproduce-and-fix-issues/references/feature-map.example.md",
+    "upstreamSha256": "1e5c7c8522daec3e43fcc2e73ceb97289ded65b552949ce65a11cc8eb3d2b6ee",
+    "verification": {
+      "chatgpt": {
+        "evidence": [],
+        "status": "not-run"
+      },
+      "codex": {
+        "evidence": [],
+        "status": "not-run"
+      }
+    }
+  },
+  {
+    "adaptationStatus": "adapted-reviewed",
     "dependencies": [
       "references/host-capabilities.md",
       "references/model-roles.md",
@@ -182,30 +217,30 @@
       "skills/principle-fix-root-causes/SKILL.md",
       "skills/principle-prove-it-works/SKILL.md"
     ],
-    "licenseProvenance": {
-      "license": "MIT",
-      "copyright": "Copyright (c) 2026 Lauren Tan",
-      "sourcePath": "LICENSE"
-    },
-    "adaptationStatus": "adapted-reviewed",
-    "verification": {
-      "chatgpt": {
-        "status": "not-run",
-        "evidence": []
-      },
-      "codex": {
-        "status": "not-run",
-        "evidence": []
-      }
-    }
-  },
-  {
-    "upstreamPath": "automations/benny/skills/reproduce-and-fix-issues/references/verify-existing-fix.md",
-    "upstreamCommit": "df581122cde17e6e27686b5a448bde23e4ad4318",
-    "upstreamSha256": "c90eae00abcdec71a58fa8d60f2c495b082a526ad50b8e8e494837609129bf29",
     "destinationPath": "automations/benny/skills/reproduce-and-fix-issues/references/verify-existing-fix.md",
     "disposition": "runtime",
+    "licenseProvenance": {
+      "copyright": "Copyright (c) 2026 Lauren Tan",
+      "license": "MIT",
+      "sourcePath": "LICENSE"
+    },
     "rationale": "Preserve optional Benny setup, direct operational instructions and safety contracts. Replace host settings and creation assumptions with observed capabilities, scoped setup blocks and explicit action authorization. Keep nested skills outside discovery. Structural checks supply no host behavior.",
+    "upstreamCommit": "e5136d82418d2db3165ea1050d17577cd618cc05",
+    "upstreamPath": "automations/benny/skills/reproduce-and-fix-issues/references/verify-existing-fix.md",
+    "upstreamSha256": "c90eae00abcdec71a58fa8d60f2c495b082a526ad50b8e8e494837609129bf29",
+    "verification": {
+      "chatgpt": {
+        "evidence": [],
+        "status": "not-run"
+      },
+      "codex": {
+        "evidence": [],
+        "status": "not-run"
+      }
+    }
+  },
+  {
+    "adaptationStatus": "adapted-reviewed",
     "dependencies": [
       "references/host-capabilities.md",
       "references/model-roles.md",
@@ -222,30 +257,30 @@
       "skills/principle-fix-root-causes/SKILL.md",
       "skills/principle-prove-it-works/SKILL.md"
     ],
-    "licenseProvenance": {
-      "license": "MIT",
-      "copyright": "Copyright (c) 2026 Lauren Tan",
-      "sourcePath": "LICENSE"
-    },
-    "adaptationStatus": "adapted-reviewed",
-    "verification": {
-      "chatgpt": {
-        "status": "not-run",
-        "evidence": []
-      },
-      "codex": {
-        "status": "not-run",
-        "evidence": []
-      }
-    }
-  },
-  {
-    "upstreamPath": "automations/benny/skills/setup-benny/SKILL.md",
-    "upstreamCommit": "df581122cde17e6e27686b5a448bde23e4ad4318",
-    "upstreamSha256": "5a3cbe63360c9f6373b6cb6c79a1eaf7e0eba181bfaa1577e2e6431af3407282",
     "destinationPath": "automations/benny/skills/setup-benny/SKILL.md",
     "disposition": "runtime",
+    "licenseProvenance": {
+      "copyright": "Copyright (c) 2026 Lauren Tan",
+      "license": "MIT",
+      "sourcePath": "LICENSE"
+    },
     "rationale": "Preserve optional Benny setup, direct operational instructions and safety contracts. Replace host settings and creation assumptions with observed capabilities, scoped setup blocks and explicit action authorization. Keep nested skills outside discovery. Structural checks supply no host behavior.",
+    "upstreamCommit": "e5136d82418d2db3165ea1050d17577cd618cc05",
+    "upstreamPath": "automations/benny/skills/setup-benny/SKILL.md",
+    "upstreamSha256": "5a3cbe63360c9f6373b6cb6c79a1eaf7e0eba181bfaa1577e2e6431af3407282",
+    "verification": {
+      "chatgpt": {
+        "evidence": [],
+        "status": "not-run"
+      },
+      "codex": {
+        "evidence": [],
+        "status": "not-run"
+      }
+    }
+  },
+  {
+    "adaptationStatus": "adapted-reviewed",
     "dependencies": [
       "references/host-capabilities.md",
       "references/model-roles.md",
@@ -262,30 +297,30 @@
       "skills/principle-fix-root-causes/SKILL.md",
       "skills/principle-prove-it-works/SKILL.md"
     ],
-    "licenseProvenance": {
-      "license": "MIT",
-      "copyright": "Copyright (c) 2026 Lauren Tan",
-      "sourcePath": "LICENSE"
-    },
-    "adaptationStatus": "adapted-reviewed",
-    "verification": {
-      "chatgpt": {
-        "status": "not-run",
-        "evidence": []
-      },
-      "codex": {
-        "status": "not-run",
-        "evidence": []
-      }
-    }
-  },
-  {
-    "upstreamPath": "automations/benny/skills/triage-issue-reports/SKILL.md",
-    "upstreamCommit": "df581122cde17e6e27686b5a448bde23e4ad4318",
-    "upstreamSha256": "216a758b8711e64d19a55e6032c496527daac6364d010611040f3c04ef1a448f",
     "destinationPath": "automations/benny/skills/triage-issue-reports/SKILL.md",
     "disposition": "runtime",
+    "licenseProvenance": {
+      "copyright": "Copyright (c) 2026 Lauren Tan",
+      "license": "MIT",
+      "sourcePath": "LICENSE"
+    },
     "rationale": "Preserve optional Benny setup, direct operational instructions and safety contracts. Replace host settings and creation assumptions with observed capabilities, scoped setup blocks and explicit action authorization. Keep nested skills outside discovery. Structural checks supply no host behavior.",
+    "upstreamCommit": "e5136d82418d2db3165ea1050d17577cd618cc05",
+    "upstreamPath": "automations/benny/skills/triage-issue-reports/SKILL.md",
+    "upstreamSha256": "216a758b8711e64d19a55e6032c496527daac6364d010611040f3c04ef1a448f",
+    "verification": {
+      "chatgpt": {
+        "evidence": [],
+        "status": "not-run"
+      },
+      "codex": {
+        "evidence": [],
+        "status": "not-run"
+      }
+    }
+  },
+  {
+    "adaptationStatus": "adapted-reviewed",
     "dependencies": [
       "references/host-capabilities.md",
       "references/model-roles.md",
@@ -302,30 +337,30 @@
       "skills/principle-fix-root-causes/SKILL.md",
       "skills/principle-prove-it-works/SKILL.md"
     ],
-    "licenseProvenance": {
-      "license": "MIT",
-      "copyright": "Copyright (c) 2026 Lauren Tan",
-      "sourcePath": "LICENSE"
-    },
-    "adaptationStatus": "adapted-reviewed",
-    "verification": {
-      "chatgpt": {
-        "status": "not-run",
-        "evidence": []
-      },
-      "codex": {
-        "status": "not-run",
-        "evidence": []
-      }
-    }
-  },
-  {
-    "upstreamPath": "automations/benny/skills/triage-issue-reports/references/routing.example.md",
-    "upstreamCommit": "df581122cde17e6e27686b5a448bde23e4ad4318",
-    "upstreamSha256": "e5e53013692568cf69da8e8b302fff929fe2fbc9aec1a4651fd7997e2c7a4025",
     "destinationPath": "automations/benny/skills/triage-issue-reports/references/routing.example.md",
     "disposition": "runtime",
+    "licenseProvenance": {
+      "copyright": "Copyright (c) 2026 Lauren Tan",
+      "license": "MIT",
+      "sourcePath": "LICENSE"
+    },
     "rationale": "Preserve optional Benny setup, direct operational instructions and safety contracts. Replace host settings and creation assumptions with observed capabilities, scoped setup blocks and explicit action authorization. Keep nested skills outside discovery. Structural checks supply no host behavior.",
+    "upstreamCommit": "e5136d82418d2db3165ea1050d17577cd618cc05",
+    "upstreamPath": "automations/benny/skills/triage-issue-reports/references/routing.example.md",
+    "upstreamSha256": "e5e53013692568cf69da8e8b302fff929fe2fbc9aec1a4651fd7997e2c7a4025",
+    "verification": {
+      "chatgpt": {
+        "evidence": [],
+        "status": "not-run"
+      },
+      "codex": {
+        "evidence": [],
+        "status": "not-run"
+      }
+    }
+  },
+  {
+    "adaptationStatus": "adapted-reviewed",
     "dependencies": [
       "references/host-capabilities.md",
       "references/model-roles.md",
@@ -342,30 +377,30 @@
       "skills/principle-fix-root-causes/SKILL.md",
       "skills/principle-prove-it-works/SKILL.md"
     ],
-    "licenseProvenance": {
-      "license": "MIT",
-      "copyright": "Copyright (c) 2026 Lauren Tan",
-      "sourcePath": "LICENSE"
-    },
-    "adaptationStatus": "adapted-reviewed",
-    "verification": {
-      "chatgpt": {
-        "status": "not-run",
-        "evidence": []
-      },
-      "codex": {
-        "status": "not-run",
-        "evidence": []
-      }
-    }
-  },
-  {
-    "upstreamPath": "automations/benny/templates/configuration.example.yaml",
-    "upstreamCommit": "df581122cde17e6e27686b5a448bde23e4ad4318",
-    "upstreamSha256": "13e24b4ce9b9a0913916e85fe3b080b88d45f8e55dccfe8ae38e0751a997b6f5",
     "destinationPath": "automations/benny/templates/configuration.example.yaml",
     "disposition": "runtime",
+    "licenseProvenance": {
+      "copyright": "Copyright (c) 2026 Lauren Tan",
+      "license": "MIT",
+      "sourcePath": "LICENSE"
+    },
     "rationale": "Preserve optional Benny setup, direct operational instructions and safety contracts. Replace host settings and creation assumptions with observed capabilities, scoped setup blocks and explicit action authorization. Keep nested skills outside discovery. Structural checks supply no host behavior.",
+    "upstreamCommit": "e5136d82418d2db3165ea1050d17577cd618cc05",
+    "upstreamPath": "automations/benny/templates/configuration.example.yaml",
+    "upstreamSha256": "13e24b4ce9b9a0913916e85fe3b080b88d45f8e55dccfe8ae38e0751a997b6f5",
+    "verification": {
+      "chatgpt": {
+        "evidence": [],
+        "status": "not-run"
+      },
+      "codex": {
+        "evidence": [],
+        "status": "not-run"
+      }
+    }
+  },
+  {
+    "adaptationStatus": "adapted-reviewed",
     "dependencies": [
       "references/host-capabilities.md",
       "references/model-roles.md",
@@ -382,70 +417,30 @@
       "skills/principle-fix-root-causes/SKILL.md",
       "skills/principle-prove-it-works/SKILL.md"
     ],
-    "licenseProvenance": {
-      "license": "MIT",
-      "copyright": "Copyright (c) 2026 Lauren Tan",
-      "sourcePath": "LICENSE"
-    },
-    "adaptationStatus": "adapted-reviewed",
-    "verification": {
-      "chatgpt": {
-        "status": "not-run",
-        "evidence": []
-      },
-      "codex": {
-        "status": "not-run",
-        "evidence": []
-      }
-    }
-  },
-  {
-    "upstreamPath": "automations/benny/templates/reproduce-automation-prompt.md",
-    "upstreamCommit": "df581122cde17e6e27686b5a448bde23e4ad4318",
-    "upstreamSha256": "71ec574f1844e379394ae4ef14c48d7df10afbaa319d395c788d7f856f0e6899",
     "destinationPath": "automations/benny/templates/reproduce-automation-prompt.md",
     "disposition": "runtime",
-    "rationale": "Preserve optional Benny setup, direct operational instructions and safety contracts. Replace host settings and creation assumptions with observed capabilities, scoped setup blocks and explicit action authorization. Keep nested skills outside discovery. Structural checks supply no host behavior.",
-    "dependencies": [
-      "references/host-capabilities.md",
-      "references/model-roles.md",
-      "references/orchestration-contract.md",
-      "references/workflow-ownership.md",
-      "skills/how/SKILL.md",
-      "skills/why/SKILL.md",
-      "skills/tdd/SKILL.md",
-      "skills/unslop/SKILL.md",
-      "skills/principle-separate-before-serializing-shared-state/SKILL.md",
-      "skills/principle-minimize-reader-load/SKILL.md",
-      "skills/principle-guard-the-context-window/SKILL.md",
-      "skills/principle-sequence-verifiable-units/SKILL.md",
-      "skills/principle-fix-root-causes/SKILL.md",
-      "skills/principle-prove-it-works/SKILL.md"
-    ],
     "licenseProvenance": {
-      "license": "MIT",
       "copyright": "Copyright (c) 2026 Lauren Tan",
+      "license": "MIT",
       "sourcePath": "LICENSE"
     },
-    "adaptationStatus": "adapted-reviewed",
+    "rationale": "Preserve optional Benny setup, direct operational instructions and safety contracts. Replace host settings and creation assumptions with observed capabilities, scoped setup blocks and explicit action authorization. Keep nested skills outside discovery. Structural checks supply no host behavior.",
+    "upstreamCommit": "e5136d82418d2db3165ea1050d17577cd618cc05",
+    "upstreamPath": "automations/benny/templates/reproduce-automation-prompt.md",
+    "upstreamSha256": "71ec574f1844e379394ae4ef14c48d7df10afbaa319d395c788d7f856f0e6899",
     "verification": {
       "chatgpt": {
-        "status": "not-run",
-        "evidence": []
+        "evidence": [],
+        "status": "not-run"
       },
       "codex": {
-        "status": "not-run",
-        "evidence": []
+        "evidence": [],
+        "status": "not-run"
       }
     }
   },
   {
-    "upstreamPath": "automations/benny/templates/triage-automation-prompt.md",
-    "upstreamCommit": "df581122cde17e6e27686b5a448bde23e4ad4318",
-    "upstreamSha256": "e0bba594547834f013ec805915610eb597e7929efe3ffbe85ae00339ee16d474",
-    "destinationPath": "automations/benny/templates/triage-automation-prompt.md",
-    "disposition": "runtime",
-    "rationale": "Preserve optional Benny setup, direct operational instructions and safety contracts. Replace host settings and creation assumptions with observed capabilities, scoped setup blocks and explicit action authorization. Keep nested skills outside discovery. Structural checks supply no host behavior.",
+    "adaptationStatus": "adapted-reviewed",
     "dependencies": [
       "references/host-capabilities.md",
       "references/model-roles.md",
@@ -462,20 +457,25 @@
       "skills/principle-fix-root-causes/SKILL.md",
       "skills/principle-prove-it-works/SKILL.md"
     ],
+    "destinationPath": "automations/benny/templates/triage-automation-prompt.md",
+    "disposition": "runtime",
     "licenseProvenance": {
-      "license": "MIT",
       "copyright": "Copyright (c) 2026 Lauren Tan",
+      "license": "MIT",
       "sourcePath": "LICENSE"
     },
-    "adaptationStatus": "adapted-reviewed",
+    "rationale": "Preserve optional Benny setup, direct operational instructions and safety contracts. Replace host settings and creation assumptions with observed capabilities, scoped setup blocks and explicit action authorization. Keep nested skills outside discovery. Structural checks supply no host behavior.",
+    "upstreamCommit": "e5136d82418d2db3165ea1050d17577cd618cc05",
+    "upstreamPath": "automations/benny/templates/triage-automation-prompt.md",
+    "upstreamSha256": "e0bba594547834f013ec805915610eb597e7929efe3ffbe85ae00339ee16d474",
     "verification": {
       "chatgpt": {
-        "status": "not-run",
-        "evidence": []
+        "evidence": [],
+        "status": "not-run"
       },
       "codex": {
-        "status": "not-run",
-        "evidence": []
+        "evidence": [],
+        "status": "not-run"
       }
     }
   }

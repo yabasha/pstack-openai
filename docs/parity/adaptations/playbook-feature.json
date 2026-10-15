@@ -1,11 +1,6 @@
 [
   {
-    "upstreamPath": "skills/poteto-mode/playbooks/feature.md",
-    "upstreamCommit": "df581122cde17e6e27686b5a448bde23e4ad4318",
-    "upstreamSha256": "3a62cc4a8cbcf144bb9dd05f05420a15be0d38b784d3b141bb730a5852f50a62",
-    "destinationPath": "skills/poteto-mode/playbooks/feature.md",
-    "disposition": "runtime",
-    "rationale": "Preserve all eight Feature steps, design leadership, mandatory delegated implementation and review separation, no-spawn worker ownership, arena alternatives, four checkpoint dimensions, phase-boundary rewrites, small verified delivery units, matching outcome evidence and reply content. Bind workers, models, todo lists, writes and delivery to observed authorized capabilities. Canonical feature model grok-4.7-xhigh-fast remains historical provenance, not host availability. Opening a PR is a deferred Task 22 dependency until its complete playbook exists. Missing companions, unavailable independent workers and denied matching verification remain exact runtime gates. Feature directly invokes no script helper. Isolated helper test results at snapshot 37b68c8 do not establish this caller or either host.",
+    "adaptationStatus": "adapted-reviewed",
     "dependencies": [
       "skills/poteto-mode/SKILL.md",
       "references/host-capabilities.md",
@@ -21,20 +16,25 @@
       "skills/principle-sequence-verifiable-units/SKILL.md",
       "skills/poteto-mode/playbooks/opening-a-pr.md"
     ],
+    "destinationPath": "skills/poteto-mode/playbooks/feature.md",
+    "disposition": "runtime",
     "licenseProvenance": {
-      "license": "MIT",
       "copyright": "Copyright (c) 2026 Lauren Tan",
+      "license": "MIT",
       "sourcePath": "LICENSE"
     },
-    "adaptationStatus": "adapted-reviewed",
+    "rationale": "Upstream changes are editorial compression or delegate-effort reminders already governed by shared mode policy. Retain explicit local host, offline audit, authorization and evidence bindings.",
+    "upstreamCommit": "e5136d82418d2db3165ea1050d17577cd618cc05",
+    "upstreamPath": "skills/poteto-mode/playbooks/feature.md",
+    "upstreamSha256": "af8ce700b99953741cb547e34308fde0cf6b98ce67e1652c800d0deedf53aba1",
     "verification": {
       "chatgpt": {
-        "status": "not-run",
-        "evidence": []
+        "evidence": [],
+        "status": "not-run"
       },
       "codex": {
-        "status": "not-run",
-        "evidence": []
+        "evidence": [],
+        "status": "not-run"
       }
     }
   }

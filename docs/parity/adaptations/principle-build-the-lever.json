@@ -1,11 +1,6 @@
 [
   {
-    "upstreamPath": "skills/principle-build-the-lever/SKILL.md",
-    "upstreamCommit": "df581122cde17e6e27686b5a448bde23e4ad4318",
-    "upstreamSha256": "458b269eab8e95a1573276955312f7d2a13ae8599879a9efc748248f6bc34b56",
-    "destinationPath": "skills/principle-build-the-lever/SKILL.md",
-    "disposition": "runtime",
-    "rationale": "Preserve the complete canonical principle and invocation metadata; append capability, authorization and proposed-versus-executed proof boundaries. No comparison content or personal preferences added.",
+    "adaptationStatus": "adapted-reviewed",
     "dependencies": [
       "skills/principle-laziness-protocol/SKILL.md",
       "skills/principle-encode-lessons-in-structure/SKILL.md",
@@ -14,20 +9,25 @@
       "references/orchestration-contract.md",
       "references/workflow-ownership.md"
     ],
+    "destinationPath": "skills/principle-build-the-lever/SKILL.md",
+    "disposition": "runtime",
     "licenseProvenance": {
-      "license": "MIT",
       "copyright": "Copyright (c) 2026 Lauren Tan",
+      "license": "MIT",
       "sourcePath": "LICENSE"
     },
-    "adaptationStatus": "adapted-reviewed",
+    "rationale": "Retain complete current host adaptation; upstream prose consolidation does not add substantive required behavior.",
+    "upstreamCommit": "e5136d82418d2db3165ea1050d17577cd618cc05",
+    "upstreamPath": "skills/principle-build-the-lever/SKILL.md",
+    "upstreamSha256": "3434b0ad0c640c6f1d7960be7a8986c3bcdc14e26060360dec29903df60074ff",
     "verification": {
       "chatgpt": {
-        "status": "not-run",
-        "evidence": []
+        "evidence": [],
+        "status": "not-run"
       },
       "codex": {
-        "status": "not-run",
-        "evidence": []
+        "evidence": [],
+        "status": "not-run"
       }
     }
   }

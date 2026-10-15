@@ -1,11 +1,6 @@
 [
   {
-    "upstreamPath": "skills/poteto-mode/playbooks/autopilot-stack.md",
-    "upstreamCommit": "df581122cde17e6e27686b5a448bde23e4ad4318",
-    "upstreamSha256": "007c0a3b12011954a224f54773ef4ad7b75918be0a311914c1b51ad4e794c1e5",
-    "destinationPath": "skills/poteto-mode/playbooks/autopilot-stack.md",
-    "disposition": "runtime",
-    "rationale": "Preserve the eight-step stack owner, audit, gate, round, topology, drift and operator-delivery workflow and aliases. Bind workers/models/wake/forge to observed capabilities, require actual authorization and inspect every resumed revision and interrupted action before another write. Missing wake stays reduced; missing adapted Babysit, Shipping, Bugbot and Opening a PR contracts block dependent execution until their tasks and final integration close them. Independent/live verdict gates and operator-only landing remain intact. Structural checks prove no host behavior.",
+    "adaptationStatus": "adapted-reviewed",
     "dependencies": [
       "skills/poteto-mode/playbooks/autopilot-full.md",
       "skills/poteto-mode/playbooks/babysit.md",
@@ -22,22 +17,28 @@
       "skills/poteto-mode/playbooks/opening-a-pr.md",
       "references/host-capabilities.md",
       "references/orchestration-contract.md",
-      "references/model-roles.md"
+      "references/model-roles.md",
+      "skills/ketchup/SKILL.md"
     ],
+    "destinationPath": "skills/poteto-mode/playbooks/autopilot-stack.md",
+    "disposition": "runtime",
     "licenseProvenance": {
-      "license": "MIT",
       "copyright": "Copyright (c) 2026 Lauren Tan",
+      "license": "MIT",
       "sourcePath": "LICENSE"
     },
-    "adaptationStatus": "adapted-reviewed",
+    "rationale": "Adopt dependency branching, root-only topology, explicit lease handoff, shared review cadence, frozen landing chain and ketchup without granting merge authority.",
+    "upstreamCommit": "e5136d82418d2db3165ea1050d17577cd618cc05",
+    "upstreamPath": "skills/poteto-mode/playbooks/autopilot-stack.md",
+    "upstreamSha256": "c6bcb18b2ce605e77a2a2225854590a4b9a687911f79331746d91a4fe9a52e60",
     "verification": {
       "chatgpt": {
-        "status": "not-run",
-        "evidence": []
+        "evidence": [],
+        "status": "not-run"
       },
       "codex": {
-        "status": "not-run",
-        "evidence": []
+        "evidence": [],
+        "status": "not-run"
       }
     }
   }

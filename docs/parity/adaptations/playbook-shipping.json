@@ -1,11 +1,6 @@
 [
   {
-    "upstreamPath": "skills/poteto-mode/playbooks/shipping.md",
-    "upstreamCommit": "df581122cde17e6e27686b5a448bde23e4ad4318",
-    "upstreamSha256": "19f3f6803a7bbe9ff04f624b03e3b55f07ac0a05e991aa00d5fe51239b920b2a",
-    "destinationPath": "skills/poteto-mode/playbooks/shipping.md",
-    "disposition": "runtime",
-    "rationale": "Preserves contiguous independent verification, exact patch freshness, build-noise analysis and one-at-a-time authorized merges. Replaces host-specific workers and loop assumptions with observed bindings and bounded reductions; external control skills and helper setup remain explicit runtime limits. Structural checks establish no host support.",
+    "adaptationStatus": "adapted-reviewed",
     "dependencies": [
       "skills/poteto-mode/playbooks/babysit.md",
       "skills/poteto-mode/playbooks/opening-a-pr.md",
@@ -19,20 +14,25 @@
       "references/workflow-ownership.md",
       "references/orchestration-contract.md"
     ],
+    "destinationPath": "skills/poteto-mode/playbooks/shipping.md",
+    "disposition": "runtime",
     "licenseProvenance": {
-      "license": "MIT",
       "copyright": "Copyright (c) 2026 Lauren Tan",
+      "license": "MIT",
       "sourcePath": "LICENSE"
     },
-    "adaptationStatus": "adapted-reviewed",
+    "rationale": "Adopt actual merged/trunk-base confirmation and exclusive post-merge child movement while preserving stronger bounded watches, exact revision checks and explicit external permissions.",
+    "upstreamCommit": "e5136d82418d2db3165ea1050d17577cd618cc05",
+    "upstreamPath": "skills/poteto-mode/playbooks/shipping.md",
+    "upstreamSha256": "bf56339bdf7e0223bcff5abf4e8599e3f5b547b3fcc3b4ce9475e6e7dda14a9f",
     "verification": {
       "chatgpt": {
-        "status": "not-run",
-        "evidence": []
+        "evidence": [],
+        "status": "not-run"
       },
       "codex": {
-        "status": "not-run",
-        "evidence": []
+        "evidence": [],
+        "status": "not-run"
       }
     }
   }

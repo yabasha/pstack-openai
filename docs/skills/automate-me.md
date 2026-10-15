@@ -94,9 +94,9 @@ The following statuses come from the current parity inventory. Pending aggregate
 
 Destination: [skills/automate-me/SKILL.md](../../skills/automate-me/SKILL.md).
 
-Upstream commit: `df581122cde17e6e27686b5a448bde23e4ad4318`. SHA-256: `1510979b0b71b54284427a19c09918f8b1fdfc168f9b7f9e30098793a5ec88ef`.
+Upstream commit: `e5136d82418d2db3165ea1050d17577cd618cc05`. SHA-256: `30b35f3628c4fd8c11af0ada06d14cdc3b28901810caca2480f627d4d21acfbe`.
 
 Disposition: `runtime`. Aggregate adaptation status: `adapted-reviewed`.
 
-- chatgpt: `blocked`. Tested release evidence: [docs/parity/evidence/chatgpt/dependency-readiness.json](../parity/evidence/chatgpt/dependency-readiness.json), [docs/parity/evidence/chatgpt/existing-personal-mode.json](../parity/evidence/chatgpt/existing-personal-mode.json), [docs/parity/evidence/chatgpt/package-discovery.json](../parity/evidence/chatgpt/package-discovery.json).
-- codex: `blocked`. Tested release evidence: [docs/parity/evidence/codex/dependency-readiness.json](../parity/evidence/codex/dependency-readiness.json), [docs/parity/evidence/codex/existing-personal-mode.json](../parity/evidence/codex/existing-personal-mode.json), [docs/parity/evidence/codex/package-discovery.json](../parity/evidence/codex/package-discovery.json).
+- chatgpt: `not-run`. Tested release evidence: none recorded.
+- codex: `not-run`. Tested release evidence: none recorded.

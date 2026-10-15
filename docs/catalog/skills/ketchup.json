@@ -1,0 +1,29 @@
+{
+  "capabilityLimits": [
+    "Missing required source or operations remain explicit gaps.",
+    "Discovery and host behavior require fresh observed evidence."
+  ],
+  "caseIds": [
+    "chat-catch-up"
+  ],
+  "dependencies": [
+    "skills/bro/SKILL.md",
+    "references/host-capabilities.md"
+  ],
+  "inputs": [
+    "The current user request and authorized current-chat context."
+  ],
+  "kind": "skill",
+  "name": "ketchup",
+  "ordinaryExample": "Invoke ketchup. Context: the prior user asked for a search fix; inspected artifacts show the index change and passing targeted tests. No PR status operation is available. No action awaits the user.",
+  "outputs": [
+    "Catch up on changes in this chat since the previous user message, with checked status and existing evidence."
+  ],
+  "purpose": "Catch up on changes in this chat since the previous user message, with checked status and existing evidence.",
+  "sourcePaths": [
+    "skills/ketchup/SKILL.md"
+  ],
+  "triggers": [
+    "Explicit ketchup invocation."
+  ]
+}

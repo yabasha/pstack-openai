@@ -1,11 +1,6 @@
 [
   {
-    "upstreamPath": "skills/poteto-mode/playbooks/runtime-forensics.md",
-    "upstreamCommit": "df581122cde17e6e27686b5a448bde23e4ad4318",
-    "upstreamSha256": "594f02c40c243a346e1f57b688ecf2ed5e882f21b3d24ed2204d1ac6f1c24a8a",
-    "destinationPath": "skills/poteto-mode/playbooks/runtime-forensics.md",
-    "disposition": "runtime",
-    "rationale": "Preserve all five runtime-forensics steps, matching live capture types, artifact reduction, large-artifact worker parsing, live CDP eval or no-reload hotfix proof, source mapping, exact read-only throughput line, cited diagnosis reply and Bug fix or Perf handoff without an unsolicited fix. Bind capture, artifact access, worker operations and diagnostic mutation to observed capabilities and actual authorization. Missing control-cli/control-ui companions and inaccessible telemetry remain runtime limits; supplied-trace assessment and sequential parsing are reduced capability. No script helper is directly invoked and no host runtime test ran.",
+    "adaptationStatus": "adapted-reviewed",
     "dependencies": [
       "skills/poteto-mode/SKILL.md",
       "references/host-capabilities.md",
@@ -16,20 +11,25 @@
       "skills/poteto-mode/playbooks/bug-fix.md",
       "skills/poteto-mode/playbooks/perf-issue.md"
     ],
+    "destinationPath": "skills/poteto-mode/playbooks/runtime-forensics.md",
+    "disposition": "runtime",
     "licenseProvenance": {
-      "license": "MIT",
       "copyright": "Copyright (c) 2026 Lauren Tan",
+      "license": "MIT",
       "sourcePath": "LICENSE"
     },
-    "adaptationStatus": "adapted-reviewed",
+    "rationale": "Upstream changes are editorial compression or delegate-effort reminders already governed by shared mode policy. Retain explicit local host, offline audit, authorization and evidence bindings.",
+    "upstreamCommit": "e5136d82418d2db3165ea1050d17577cd618cc05",
+    "upstreamPath": "skills/poteto-mode/playbooks/runtime-forensics.md",
+    "upstreamSha256": "3463372b578c28f27c236f2627f09b5c5b1e85e86db7399fb984f3892fb450f5",
     "verification": {
       "chatgpt": {
-        "status": "not-run",
-        "evidence": []
+        "evidence": [],
+        "status": "not-run"
       },
       "codex": {
-        "status": "not-run",
-        "evidence": []
+        "evidence": [],
+        "status": "not-run"
       }
     }
   }

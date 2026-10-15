@@ -1,311 +1,6 @@
 [
   {
-    "upstreamPath": "skills/why/references/investigator-prompt.md",
-    "upstreamCommit": "df581122cde17e6e27686b5a448bde23e4ad4318",
-    "upstreamSha256": "6892956a7ab0b5ee6c4babaf4f793703abe89b350ea7cb9463b4a56eea1c8266",
-    "destinationPath": "skills/why/references/investigator-prompt.md",
-    "disposition": "runtime",
-    "rationale": "Preserves historical rationale investigation, category evidence mechanics, confidence tiers and source privacy. Adapts session tool/model discovery and authorization; sequential investigation is reduced capability. Host behavior not run.",
-    "dependencies": [],
-    "licenseProvenance": {
-      "license": "MIT",
-      "copyright": "Copyright (c) 2026 Lauren Tan",
-      "sourcePath": "LICENSE"
-    },
-    "adaptationStatus": "unchanged-reviewed",
-    "verification": {
-      "chatgpt": {
-        "status": "not-run",
-        "evidence": []
-      },
-      "codex": {
-        "status": "not-run",
-        "evidence": []
-      }
-    }
-  },
-  {
-    "upstreamPath": "skills/why/references/epistemics.md",
-    "upstreamCommit": "df581122cde17e6e27686b5a448bde23e4ad4318",
-    "upstreamSha256": "fcc0f559c072832c869a5ada72434b4849320a637ae63c09e8ee14f7ad787059",
-    "destinationPath": "skills/why/references/epistemics.md",
-    "disposition": "runtime",
-    "rationale": "Preserves historical rationale investigation, category evidence mechanics, confidence tiers and source privacy. Adapts session tool/model discovery and authorization; sequential investigation is reduced capability. Host behavior not run.",
-    "dependencies": [],
-    "licenseProvenance": {
-      "license": "MIT",
-      "copyright": "Copyright (c) 2026 Lauren Tan",
-      "sourcePath": "LICENSE"
-    },
-    "adaptationStatus": "unchanged-reviewed",
-    "verification": {
-      "chatgpt": {
-        "status": "not-run",
-        "evidence": []
-      },
-      "codex": {
-        "status": "not-run",
-        "evidence": []
-      }
-    }
-  },
-  {
-    "upstreamPath": "skills/why/references/sources/incident-postmortem.md",
-    "upstreamCommit": "df581122cde17e6e27686b5a448bde23e4ad4318",
-    "upstreamSha256": "a899470f05f86029630a13a2696491cc708ca7b56a6e822a69ff6e954d6ff8cf",
-    "destinationPath": "skills/why/references/sources/incident-postmortem.md",
-    "disposition": "runtime",
-    "rationale": "Preserves historical rationale investigation, category evidence mechanics, confidence tiers and source privacy. Adapts session tool/model discovery and authorization; sequential investigation is reduced capability. Host behavior not run.",
-    "dependencies": [],
-    "licenseProvenance": {
-      "license": "MIT",
-      "copyright": "Copyright (c) 2026 Lauren Tan",
-      "sourcePath": "LICENSE"
-    },
     "adaptationStatus": "adapted-reviewed",
-    "verification": {
-      "chatgpt": {
-        "status": "not-run",
-        "evidence": []
-      },
-      "codex": {
-        "status": "not-run",
-        "evidence": []
-      }
-    }
-  },
-  {
-    "upstreamPath": "skills/why/references/sources/slack.md",
-    "upstreamCommit": "df581122cde17e6e27686b5a448bde23e4ad4318",
-    "upstreamSha256": "58fee61d024b3700b407e7acbed367944720ff05adfddb6954d36c88368f3ba7",
-    "destinationPath": "skills/why/references/sources/slack.md",
-    "disposition": "runtime",
-    "rationale": "Preserves historical rationale investigation, category evidence mechanics, confidence tiers and source privacy. Adapts session tool/model discovery and authorization; sequential investigation is reduced capability. Host behavior not run.",
-    "dependencies": [],
-    "licenseProvenance": {
-      "license": "MIT",
-      "copyright": "Copyright (c) 2026 Lauren Tan",
-      "sourcePath": "LICENSE"
-    },
-    "adaptationStatus": "adapted-reviewed",
-    "verification": {
-      "chatgpt": {
-        "status": "not-run",
-        "evidence": []
-      },
-      "codex": {
-        "status": "not-run",
-        "evidence": []
-      }
-    }
-  },
-  {
-    "upstreamPath": "skills/why/references/sources/datadog.md",
-    "upstreamCommit": "df581122cde17e6e27686b5a448bde23e4ad4318",
-    "upstreamSha256": "ebe9c07bac28e47757ee7f16fb93b0c01d427a08c501957d047f395a2f37b7e7",
-    "destinationPath": "skills/why/references/sources/datadog.md",
-    "disposition": "runtime",
-    "rationale": "Preserves historical rationale investigation, category evidence mechanics, confidence tiers and source privacy. Adapts session tool/model discovery and authorization; sequential investigation is reduced capability. Host behavior not run.",
-    "dependencies": [],
-    "licenseProvenance": {
-      "license": "MIT",
-      "copyright": "Copyright (c) 2026 Lauren Tan",
-      "sourcePath": "LICENSE"
-    },
-    "adaptationStatus": "adapted-reviewed",
-    "verification": {
-      "chatgpt": {
-        "status": "not-run",
-        "evidence": []
-      },
-      "codex": {
-        "status": "not-run",
-        "evidence": []
-      }
-    }
-  },
-  {
-    "upstreamPath": "skills/why/references/sources/notion.md",
-    "upstreamCommit": "df581122cde17e6e27686b5a448bde23e4ad4318",
-    "upstreamSha256": "3bcfa695c49dfad4ac036d5d7181c12585f55ac04f1936198d16ab75a2788997",
-    "destinationPath": "skills/why/references/sources/notion.md",
-    "disposition": "runtime",
-    "rationale": "Preserves historical rationale investigation, category evidence mechanics, confidence tiers and source privacy. Adapts session tool/model discovery and authorization; sequential investigation is reduced capability. Host behavior not run.",
-    "dependencies": [],
-    "licenseProvenance": {
-      "license": "MIT",
-      "copyright": "Copyright (c) 2026 Lauren Tan",
-      "sourcePath": "LICENSE"
-    },
-    "adaptationStatus": "adapted-reviewed",
-    "verification": {
-      "chatgpt": {
-        "status": "not-run",
-        "evidence": []
-      },
-      "codex": {
-        "status": "not-run",
-        "evidence": []
-      }
-    }
-  },
-  {
-    "upstreamPath": "skills/why/references/sources/databricks.md",
-    "upstreamCommit": "df581122cde17e6e27686b5a448bde23e4ad4318",
-    "upstreamSha256": "236ede7aab6454662a992db088a5393537a5233a4c26719c93188f9e174488f6",
-    "destinationPath": "skills/why/references/sources/databricks.md",
-    "disposition": "runtime",
-    "rationale": "Preserves historical rationale investigation, category evidence mechanics, confidence tiers and source privacy. Adapts session tool/model discovery and authorization; sequential investigation is reduced capability. Host behavior not run.",
-    "dependencies": [],
-    "licenseProvenance": {
-      "license": "MIT",
-      "copyright": "Copyright (c) 2026 Lauren Tan",
-      "sourcePath": "LICENSE"
-    },
-    "adaptationStatus": "adapted-reviewed",
-    "verification": {
-      "chatgpt": {
-        "status": "not-run",
-        "evidence": []
-      },
-      "codex": {
-        "status": "not-run",
-        "evidence": []
-      }
-    }
-  },
-  {
-    "upstreamPath": "skills/why/references/sources/sentry.md",
-    "upstreamCommit": "df581122cde17e6e27686b5a448bde23e4ad4318",
-    "upstreamSha256": "6f292bc4fb1548e956f95e1900b9481abf5134254419f1cd9edec95428c82d73",
-    "destinationPath": "skills/why/references/sources/sentry.md",
-    "disposition": "runtime",
-    "rationale": "Preserves historical rationale investigation, category evidence mechanics, confidence tiers and source privacy. Adapts session tool/model discovery and authorization; sequential investigation is reduced capability. Host behavior not run.",
-    "dependencies": [],
-    "licenseProvenance": {
-      "license": "MIT",
-      "copyright": "Copyright (c) 2026 Lauren Tan",
-      "sourcePath": "LICENSE"
-    },
-    "adaptationStatus": "adapted-reviewed",
-    "verification": {
-      "chatgpt": {
-        "status": "not-run",
-        "evidence": []
-      },
-      "codex": {
-        "status": "not-run",
-        "evidence": []
-      }
-    }
-  },
-  {
-    "upstreamPath": "skills/why/references/sources/linear.md",
-    "upstreamCommit": "df581122cde17e6e27686b5a448bde23e4ad4318",
-    "upstreamSha256": "01304e7f1badfcfb78babbb0edcadeb3cc8dd3f713793420cdff24ba190f907c",
-    "destinationPath": "skills/why/references/sources/linear.md",
-    "disposition": "runtime",
-    "rationale": "Preserves historical rationale investigation, category evidence mechanics, confidence tiers and source privacy. Adapts session tool/model discovery and authorization; sequential investigation is reduced capability. Host behavior not run.",
-    "dependencies": [],
-    "licenseProvenance": {
-      "license": "MIT",
-      "copyright": "Copyright (c) 2026 Lauren Tan",
-      "sourcePath": "LICENSE"
-    },
-    "adaptationStatus": "adapted-reviewed",
-    "verification": {
-      "chatgpt": {
-        "status": "not-run",
-        "evidence": []
-      },
-      "codex": {
-        "status": "not-run",
-        "evidence": []
-      }
-    }
-  },
-  {
-    "upstreamPath": "skills/why/references/sources/code-archaeology.md",
-    "upstreamCommit": "df581122cde17e6e27686b5a448bde23e4ad4318",
-    "upstreamSha256": "8c14aa382f0de40829b2668d43e3f54814480bb93a486c9282ada4003f6b9dbd",
-    "destinationPath": "skills/why/references/sources/code-archaeology.md",
-    "disposition": "runtime",
-    "rationale": "Preserves historical rationale investigation, category evidence mechanics, confidence tiers and source privacy. Adapts session tool/model discovery and authorization; sequential investigation is reduced capability. Host behavior not run.",
-    "dependencies": [],
-    "licenseProvenance": {
-      "license": "MIT",
-      "copyright": "Copyright (c) 2026 Lauren Tan",
-      "sourcePath": "LICENSE"
-    },
-    "adaptationStatus": "adapted-reviewed",
-    "verification": {
-      "chatgpt": {
-        "status": "not-run",
-        "evidence": []
-      },
-      "codex": {
-        "status": "not-run",
-        "evidence": []
-      }
-    }
-  },
-  {
-    "upstreamPath": "skills/why/references/synthesizer-prompt.md",
-    "upstreamCommit": "df581122cde17e6e27686b5a448bde23e4ad4318",
-    "upstreamSha256": "733a3e9cf897b1aca56aaddeae01a3832e4bfed024c2f602db2d1bf807d7a73b",
-    "destinationPath": "skills/why/references/synthesizer-prompt.md",
-    "disposition": "runtime",
-    "rationale": "Preserves historical rationale investigation, category evidence mechanics, confidence tiers and source privacy. Adapts session tool/model discovery and authorization; sequential investigation is reduced capability. Host behavior not run. Fences the literal finding-output template so its placeholder URL remains illustrative data; citation and confidence contracts are preserved.",
-    "dependencies": [],
-    "licenseProvenance": {
-      "license": "MIT",
-      "copyright": "Copyright (c) 2026 Lauren Tan",
-      "sourcePath": "LICENSE"
-    },
-    "adaptationStatus": "adapted-reviewed",
-    "verification": {
-      "chatgpt": {
-        "status": "not-run",
-        "evidence": []
-      },
-      "codex": {
-        "status": "not-run",
-        "evidence": []
-      }
-    }
-  },
-  {
-    "upstreamPath": "skills/why/references/source-playbook.md",
-    "upstreamCommit": "df581122cde17e6e27686b5a448bde23e4ad4318",
-    "upstreamSha256": "9ae9dcb9d09111c9facc68510331c5aba4aed9b1b057314ff1fc0e166ad3993a",
-    "destinationPath": "skills/why/references/source-playbook.md",
-    "disposition": "runtime",
-    "rationale": "Preserves historical rationale investigation, category evidence mechanics, confidence tiers and source privacy. Adapts session tool/model discovery and authorization; sequential investigation is reduced capability. Host behavior not run.",
-    "dependencies": [],
-    "licenseProvenance": {
-      "license": "MIT",
-      "copyright": "Copyright (c) 2026 Lauren Tan",
-      "sourcePath": "LICENSE"
-    },
-    "adaptationStatus": "unchanged-reviewed",
-    "verification": {
-      "chatgpt": {
-        "status": "not-run",
-        "evidence": []
-      },
-      "codex": {
-        "status": "not-run",
-        "evidence": []
-      }
-    }
-  },
-  {
-    "upstreamPath": "skills/why/SKILL.md",
-    "upstreamCommit": "df581122cde17e6e27686b5a448bde23e4ad4318",
-    "upstreamSha256": "442215bf70e491d4d31bd200c197f2ec447445df38e074c40880fc4bf30a1f9e",
-    "destinationPath": "skills/why/SKILL.md",
-    "disposition": "runtime",
-    "rationale": "Preserves historical rationale investigation, category evidence mechanics, confidence tiers and source privacy. Adapts session tool/model discovery and authorization; sequential investigation is reduced capability. Host behavior not run.",
     "dependencies": [
       "skills/why/references/investigator-prompt.md",
       "skills/why/references/epistemics.md",
@@ -323,20 +18,334 @@
       "references/model-roles.md",
       "references/orchestration-contract.md"
     ],
+    "destinationPath": "skills/why/SKILL.md",
+    "disposition": "runtime",
     "licenseProvenance": {
-      "license": "MIT",
       "copyright": "Copyright (c) 2026 Lauren Tan",
+      "license": "MIT",
       "sourcePath": "LICENSE"
     },
-    "adaptationStatus": "adapted-reviewed",
+    "rationale": "Retain reviewed host capability, assignment, ownership and model-selection adaptations; upstream changes are editorial or introduce Cursor-specific delegation controls.",
+    "upstreamCommit": "e5136d82418d2db3165ea1050d17577cd618cc05",
+    "upstreamPath": "skills/why/SKILL.md",
+    "upstreamSha256": "144d42e7712723d763e607bc0a969e5f1cdf83ec7228519d87677cc534571bed",
     "verification": {
       "chatgpt": {
-        "status": "not-run",
-        "evidence": []
+        "evidence": [],
+        "status": "not-run"
       },
       "codex": {
-        "status": "not-run",
-        "evidence": []
+        "evidence": [],
+        "status": "not-run"
+      }
+    }
+  },
+  {
+    "adaptationStatus": "adapted-reviewed",
+    "dependencies": [],
+    "destinationPath": "skills/why/references/epistemics.md",
+    "disposition": "runtime",
+    "licenseProvenance": {
+      "copyright": "Copyright (c) 2026 Lauren Tan",
+      "license": "MIT",
+      "sourcePath": "LICENSE"
+    },
+    "rationale": "Retain reviewed host capability, assignment, ownership and model-selection adaptations; upstream changes are editorial or introduce Cursor-specific delegation controls.",
+    "upstreamCommit": "e5136d82418d2db3165ea1050d17577cd618cc05",
+    "upstreamPath": "skills/why/references/epistemics.md",
+    "upstreamSha256": "d54a2361b2d5973bc3fe2edf62f446d87935974d4b40d47f23b9529f956ca758",
+    "verification": {
+      "chatgpt": {
+        "evidence": [],
+        "status": "not-run"
+      },
+      "codex": {
+        "evidence": [],
+        "status": "not-run"
+      }
+    }
+  },
+  {
+    "adaptationStatus": "adapted-reviewed",
+    "dependencies": [],
+    "destinationPath": "skills/why/references/investigator-prompt.md",
+    "disposition": "runtime",
+    "licenseProvenance": {
+      "copyright": "Copyright (c) 2026 Lauren Tan",
+      "license": "MIT",
+      "sourcePath": "LICENSE"
+    },
+    "rationale": "Retain reviewed host capability, assignment, ownership and model-selection adaptations; upstream changes are editorial or introduce Cursor-specific delegation controls.",
+    "upstreamCommit": "e5136d82418d2db3165ea1050d17577cd618cc05",
+    "upstreamPath": "skills/why/references/investigator-prompt.md",
+    "upstreamSha256": "c44afba186f899094f3694e6c9d6de5d14ff7c4ce28b787a9f50fc789c9a7fc3",
+    "verification": {
+      "chatgpt": {
+        "evidence": [],
+        "status": "not-run"
+      },
+      "codex": {
+        "evidence": [],
+        "status": "not-run"
+      }
+    }
+  },
+  {
+    "adaptationStatus": "unchanged-reviewed",
+    "dependencies": [
+      "skills/why/references/sources/code-archaeology.md",
+      "skills/why/references/sources/linear.md",
+      "skills/why/references/sources/notion.md",
+      "skills/why/references/sources/slack.md",
+      "skills/why/references/sources/datadog.md",
+      "skills/why/references/sources/sentry.md",
+      "skills/why/references/sources/databricks.md",
+      "skills/why/references/sources/incident-postmortem.md"
+    ],
+    "destinationPath": "skills/why/references/source-playbook.md",
+    "disposition": "runtime",
+    "licenseProvenance": {
+      "copyright": "Copyright (c) 2026 Lauren Tan",
+      "license": "MIT",
+      "sourcePath": "LICENSE"
+    },
+    "rationale": "Preserves historical rationale investigation, category evidence mechanics, confidence tiers and source privacy. Adapts session tool/model discovery and authorization; sequential investigation is reduced capability. Host behavior not run.",
+    "upstreamCommit": "e5136d82418d2db3165ea1050d17577cd618cc05",
+    "upstreamPath": "skills/why/references/source-playbook.md",
+    "upstreamSha256": "9ae9dcb9d09111c9facc68510331c5aba4aed9b1b057314ff1fc0e166ad3993a",
+    "verification": {
+      "chatgpt": {
+        "evidence": [],
+        "status": "not-run"
+      },
+      "codex": {
+        "evidence": [],
+        "status": "not-run"
+      }
+    }
+  },
+  {
+    "adaptationStatus": "adapted-reviewed",
+    "dependencies": [],
+    "destinationPath": "skills/why/references/sources/code-archaeology.md",
+    "disposition": "runtime",
+    "licenseProvenance": {
+      "copyright": "Copyright (c) 2026 Lauren Tan",
+      "license": "MIT",
+      "sourcePath": "LICENSE"
+    },
+    "rationale": "Retain complete tracing and evidence-quality guidance; upstream shortening removes useful standalone instructions or source-specific cautions.",
+    "upstreamCommit": "e5136d82418d2db3165ea1050d17577cd618cc05",
+    "upstreamPath": "skills/why/references/sources/code-archaeology.md",
+    "upstreamSha256": "a4a3970e9db448054aed676f3f7feeee667b4b69f0bd57c8fd72b751be687cc7",
+    "verification": {
+      "chatgpt": {
+        "evidence": [],
+        "status": "not-run"
+      },
+      "codex": {
+        "evidence": [],
+        "status": "not-run"
+      }
+    }
+  },
+  {
+    "adaptationStatus": "adapted-reviewed",
+    "dependencies": [],
+    "destinationPath": "skills/why/references/sources/databricks.md",
+    "disposition": "runtime",
+    "licenseProvenance": {
+      "copyright": "Copyright (c) 2026 Lauren Tan",
+      "license": "MIT",
+      "sourcePath": "LICENSE"
+    },
+    "rationale": "Preserves historical rationale investigation, category evidence mechanics, confidence tiers and source privacy. Adapts session tool/model discovery and authorization; sequential investigation is reduced capability. Host behavior not run.",
+    "upstreamCommit": "e5136d82418d2db3165ea1050d17577cd618cc05",
+    "upstreamPath": "skills/why/references/sources/databricks.md",
+    "upstreamSha256": "236ede7aab6454662a992db088a5393537a5233a4c26719c93188f9e174488f6",
+    "verification": {
+      "chatgpt": {
+        "evidence": [],
+        "status": "not-run"
+      },
+      "codex": {
+        "evidence": [],
+        "status": "not-run"
+      }
+    }
+  },
+  {
+    "adaptationStatus": "adapted-reviewed",
+    "dependencies": [],
+    "destinationPath": "skills/why/references/sources/datadog.md",
+    "disposition": "runtime",
+    "licenseProvenance": {
+      "copyright": "Copyright (c) 2026 Lauren Tan",
+      "license": "MIT",
+      "sourcePath": "LICENSE"
+    },
+    "rationale": "Retain complete tracing and evidence-quality guidance; upstream shortening removes useful standalone instructions or source-specific cautions.",
+    "upstreamCommit": "e5136d82418d2db3165ea1050d17577cd618cc05",
+    "upstreamPath": "skills/why/references/sources/datadog.md",
+    "upstreamSha256": "b139faac5dc11b8f26c8255dce6033c1a6ac143b038d3dd103f2034c5dbec9cd",
+    "verification": {
+      "chatgpt": {
+        "evidence": [],
+        "status": "not-run"
+      },
+      "codex": {
+        "evidence": [],
+        "status": "not-run"
+      }
+    }
+  },
+  {
+    "adaptationStatus": "adapted-reviewed",
+    "dependencies": [],
+    "destinationPath": "skills/why/references/sources/incident-postmortem.md",
+    "disposition": "runtime",
+    "licenseProvenance": {
+      "copyright": "Copyright (c) 2026 Lauren Tan",
+      "license": "MIT",
+      "sourcePath": "LICENSE"
+    },
+    "rationale": "Retain complete tracing and evidence-quality guidance; upstream shortening removes useful standalone instructions or source-specific cautions.",
+    "upstreamCommit": "e5136d82418d2db3165ea1050d17577cd618cc05",
+    "upstreamPath": "skills/why/references/sources/incident-postmortem.md",
+    "upstreamSha256": "bf2661f1a81c37700884a45b77d6289be0c802b065febced31990e6564510839",
+    "verification": {
+      "chatgpt": {
+        "evidence": [],
+        "status": "not-run"
+      },
+      "codex": {
+        "evidence": [],
+        "status": "not-run"
+      }
+    }
+  },
+  {
+    "adaptationStatus": "adapted-reviewed",
+    "dependencies": [],
+    "destinationPath": "skills/why/references/sources/linear.md",
+    "disposition": "runtime",
+    "licenseProvenance": {
+      "copyright": "Copyright (c) 2026 Lauren Tan",
+      "license": "MIT",
+      "sourcePath": "LICENSE"
+    },
+    "rationale": "Preserves historical rationale investigation, category evidence mechanics, confidence tiers and source privacy. Adapts session tool/model discovery and authorization; sequential investigation is reduced capability. Host behavior not run.",
+    "upstreamCommit": "e5136d82418d2db3165ea1050d17577cd618cc05",
+    "upstreamPath": "skills/why/references/sources/linear.md",
+    "upstreamSha256": "01304e7f1badfcfb78babbb0edcadeb3cc8dd3f713793420cdff24ba190f907c",
+    "verification": {
+      "chatgpt": {
+        "evidence": [],
+        "status": "not-run"
+      },
+      "codex": {
+        "evidence": [],
+        "status": "not-run"
+      }
+    }
+  },
+  {
+    "adaptationStatus": "adapted-reviewed",
+    "dependencies": [],
+    "destinationPath": "skills/why/references/sources/notion.md",
+    "disposition": "runtime",
+    "licenseProvenance": {
+      "copyright": "Copyright (c) 2026 Lauren Tan",
+      "license": "MIT",
+      "sourcePath": "LICENSE"
+    },
+    "rationale": "Preserves historical rationale investigation, category evidence mechanics, confidence tiers and source privacy. Adapts session tool/model discovery and authorization; sequential investigation is reduced capability. Host behavior not run.",
+    "upstreamCommit": "e5136d82418d2db3165ea1050d17577cd618cc05",
+    "upstreamPath": "skills/why/references/sources/notion.md",
+    "upstreamSha256": "3bcfa695c49dfad4ac036d5d7181c12585f55ac04f1936198d16ab75a2788997",
+    "verification": {
+      "chatgpt": {
+        "evidence": [],
+        "status": "not-run"
+      },
+      "codex": {
+        "evidence": [],
+        "status": "not-run"
+      }
+    }
+  },
+  {
+    "adaptationStatus": "adapted-reviewed",
+    "dependencies": [],
+    "destinationPath": "skills/why/references/sources/sentry.md",
+    "disposition": "runtime",
+    "licenseProvenance": {
+      "copyright": "Copyright (c) 2026 Lauren Tan",
+      "license": "MIT",
+      "sourcePath": "LICENSE"
+    },
+    "rationale": "Retain complete tracing and evidence-quality guidance; upstream shortening removes useful standalone instructions or source-specific cautions.",
+    "upstreamCommit": "e5136d82418d2db3165ea1050d17577cd618cc05",
+    "upstreamPath": "skills/why/references/sources/sentry.md",
+    "upstreamSha256": "2d4f83048eac1df530b399e2aed75dd7c9c18577b7665420aaeb96d0ceb0b702",
+    "verification": {
+      "chatgpt": {
+        "evidence": [],
+        "status": "not-run"
+      },
+      "codex": {
+        "evidence": [],
+        "status": "not-run"
+      }
+    }
+  },
+  {
+    "adaptationStatus": "adapted-reviewed",
+    "dependencies": [],
+    "destinationPath": "skills/why/references/sources/slack.md",
+    "disposition": "runtime",
+    "licenseProvenance": {
+      "copyright": "Copyright (c) 2026 Lauren Tan",
+      "license": "MIT",
+      "sourcePath": "LICENSE"
+    },
+    "rationale": "Retain complete tracing and evidence-quality guidance; upstream shortening removes useful standalone instructions or source-specific cautions.",
+    "upstreamCommit": "e5136d82418d2db3165ea1050d17577cd618cc05",
+    "upstreamPath": "skills/why/references/sources/slack.md",
+    "upstreamSha256": "3bc6309f5c7b26ace3b919dbd7f7b048861dd2020f910fe24f656cc74b3b661c",
+    "verification": {
+      "chatgpt": {
+        "evidence": [],
+        "status": "not-run"
+      },
+      "codex": {
+        "evidence": [],
+        "status": "not-run"
+      }
+    }
+  },
+  {
+    "adaptationStatus": "adapted-reviewed",
+    "dependencies": [],
+    "destinationPath": "skills/why/references/synthesizer-prompt.md",
+    "disposition": "runtime",
+    "licenseProvenance": {
+      "copyright": "Copyright (c) 2026 Lauren Tan",
+      "license": "MIT",
+      "sourcePath": "LICENSE"
+    },
+    "rationale": "Retain reviewed host capability, assignment, ownership and model-selection adaptations; upstream changes are editorial or introduce Cursor-specific delegation controls.",
+    "upstreamCommit": "e5136d82418d2db3165ea1050d17577cd618cc05",
+    "upstreamPath": "skills/why/references/synthesizer-prompt.md",
+    "upstreamSha256": "11c62671aa7b7a6e3d36929ffe2b59bf95e6ca664eee4d93e6ee527dd3390ddb",
+    "verification": {
+      "chatgpt": {
+        "evidence": [],
+        "status": "not-run"
+      },
+      "codex": {
+        "evidence": [],
+        "status": "not-run"
       }
     }
   }

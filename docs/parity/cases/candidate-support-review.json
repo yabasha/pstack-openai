@@ -1,0 +1,20 @@
+{
+  "expectedBlocked": "Missing mapped files or inventory records are explicit gaps.",
+  "expectedFull": "The inspected answer identifies provenance-only manifest storage and the adapted Bun fence-regression caller without claiming installed discovery.",
+  "expectedReduced": "Read-only explanation identifies both source mappings and leaves unavailable regression execution unverified.",
+  "forbiddenClaims": [
+    "Official source metadata overwrites port identity.",
+    "Unobserved host discovery or regression execution."
+  ],
+  "id": "candidate-support-review",
+  "prompt": "Inspect the candidate source manifest provenance and fence-regression caller, then explain their relationship to the portable manifest and adapted plan checker.",
+  "requirements": [
+    "Inspect both mapped destinations and their owning inventory records.",
+    "Keep the official pstack identity separate from the port identity.",
+    "Inspect actual checker-regression results when execution is authorized; otherwise leave execution unverified."
+  ],
+  "sourcePaths": [
+    "plugin.json",
+    "skills/poteto-mode/scripts/check-plan.test.ts"
+  ]
+}

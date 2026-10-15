@@ -1,11 +1,6 @@
 [
   {
-    "upstreamPath": "skills/poteto-mode/playbooks/hillclimb.md",
-    "upstreamCommit": "df581122cde17e6e27686b5a448bde23e4ad4318",
-    "upstreamSha256": "244f289898fe67a458065e90fe8217c916c5acf61cdee8975ade3f9831a12e91",
-    "destinationPath": "skills/poteto-mode/playbooks/hillclimb.md",
-    "disposition": "runtime",
-    "rationale": "Preserve all eight hillclimb steps, measurable target and attempt floor, realistic repro, frozen sensitive harness, green regression baseline, architecture-grounded hypotheses, one-change keep/revert loop, per-attempt decision.tsv evidence, per-accepted-fix commits, plateau pivots, cost-based stop distinction, ordered PR delivery and all reply items. Compose the reviewed show-me-your-work schema and helper without losing source attempt fields. Models, workers, isolation, execution, persistence, commits and wake scheduling require actual capability and authorization. Historical source model default is provenance only, not an operative binding. Autonomous run and Opening a PR remain deferred to tasks 20 and 21 and task 24 integration. Structural checks do not establish metric improvement or either host pass.",
+    "adaptationStatus": "adapted-reviewed",
     "dependencies": [
       "skills/poteto-mode/SKILL.md",
       "references/host-capabilities.md",
@@ -30,20 +25,25 @@
       "skills/poteto-mode/playbooks/autonomous-run.md",
       "skills/poteto-mode/playbooks/opening-a-pr.md"
     ],
+    "destinationPath": "skills/poteto-mode/playbooks/hillclimb.md",
+    "disposition": "runtime",
     "licenseProvenance": {
-      "license": "MIT",
       "copyright": "Copyright (c) 2026 Lauren Tan",
+      "license": "MIT",
       "sourcePath": "LICENSE"
     },
-    "adaptationStatus": "adapted-reviewed",
+    "rationale": "Upstream changes are editorial compression or delegate-effort reminders already governed by shared mode policy. Retain explicit local host, offline audit, authorization and evidence bindings.",
+    "upstreamCommit": "e5136d82418d2db3165ea1050d17577cd618cc05",
+    "upstreamPath": "skills/poteto-mode/playbooks/hillclimb.md",
+    "upstreamSha256": "942c1565b75ad02a2cb6230dd7c1ebd87e19f59a00319ebac2b6616007bf018f",
     "verification": {
       "chatgpt": {
-        "status": "not-run",
-        "evidence": []
+        "evidence": [],
+        "status": "not-run"
       },
       "codex": {
-        "status": "not-run",
-        "evidence": []
+        "evidence": [],
+        "status": "not-run"
       }
     }
   }

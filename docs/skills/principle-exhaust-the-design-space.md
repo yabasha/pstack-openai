@@ -81,9 +81,9 @@ The following statuses come from the current parity inventory. Pending aggregate
 
 Destination: [skills/principle-exhaust-the-design-space/SKILL.md](../../skills/principle-exhaust-the-design-space/SKILL.md).
 
-Upstream commit: `df581122cde17e6e27686b5a448bde23e4ad4318`. SHA-256: `8583310d7297b7823d75494faa57b003564d436807febecdecbd8321abe5cf6e`.
+Upstream commit: `e5136d82418d2db3165ea1050d17577cd618cc05`. SHA-256: `2de83d99f93f60ec6313455b0bc9aa9f0bfb93dd59f414f403691322db00d4db`.
 
 Disposition: `runtime`. Aggregate adaptation status: `adapted-reviewed`.
 
-- chatgpt: `blocked`. Tested release evidence: [docs/parity/evidence/chatgpt/alternatives.json](../parity/evidence/chatgpt/alternatives.json), [docs/parity/evidence/chatgpt/package-discovery.json](../parity/evidence/chatgpt/package-discovery.json), [docs/parity/evidence/chatgpt/throwaway-probe.json](../parity/evidence/chatgpt/throwaway-probe.json).
-- codex: `blocked`. Tested release evidence: [docs/parity/evidence/codex/alternatives.json](../parity/evidence/codex/alternatives.json), [docs/parity/evidence/codex/package-discovery.json](../parity/evidence/codex/package-discovery.json), [docs/parity/evidence/codex/throwaway-probe.json](../parity/evidence/codex/throwaway-probe.json).
+- chatgpt: `not-run`. Tested release evidence: none recorded.
+- codex: `not-run`. Tested release evidence: none recorded.

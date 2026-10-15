@@ -72,8 +72,8 @@ Model selection <available or unavailable>. Evidence `<artifact>`.
 
 ### Verdict and merge, for every PR
 
-- [ ] At the code-ready head SHA and at each later push that changes the patch, run the swarm per `pstack/skills/swarm/SKILL.md`. One gates lane. The ten live lanes from the PR's **Verify, live** block. The perf lane from its **Verify, perf** block. Two or more audit lanes, each with its own focus, that read the diff and the receipts and distrust the PR body. The root audits the receipts in the merge-ready report before the verdict.
-- [ ] Clean only when every required independent lane is `PASS` with inspected receipts at the exact head. Reduced or blocked lanes prevent a full clean verdict. Findings go back to the owner, including a defect that a lane filed as a note. A new head gets a fresh swarm and a fresh verdict, except for results that stay valid under the patch-id rule in `playbooks/shipping.md`.
+- [ ] Run a full swarm at code-ready and again only for new behavior, a redesign or a large new diff. A rebase, conflict resolution or minor fix gets a single independent verifier at the new head, with fresh current-head CI and a fresh applicable verdict. Run each full swarm per `pstack/skills/swarm/SKILL.md`. One gates lane. The ten live lanes from the PR's **Verify, live** block. The perf lane from its **Verify, perf** block. Two or more audit lanes, each with its own focus, that read the diff and the receipts and distrust the PR body. The root audits the receipts in the merge-ready report before the verdict.
+- [ ] Clean only when every required independent lane is `PASS` with inspected receipts at the exact head. Reduced or blocked lanes prevent a full clean verdict. Findings go back to the owner, including a defect that a lane filed as a note. A new head gets a fresh applicable verdict, except for results that stay valid under the patch-id rule in `playbooks/shipping.md`.
 - [ ] <The merge or append rule from the execution playbook, with the patch-id rule from `playbooks/shipping.md`.>
 
 ### Boot recipe, for every live lane
