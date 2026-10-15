@@ -7,6 +7,7 @@ import subprocess
 import tempfile
 import unittest
 from tools.release_report import summarize_release, assess_release, DISCOVERY
+from tools.baseline_policy import membership, validate_policy
 
 ROOT = Path(__file__).resolve().parents[1]
 COMMIT = 'a' * 40
@@ -64,6 +65,13 @@ def fixture(root):
         write(root, path, json.loads((ROOT / path).read_text()))
     write(root, 'plugin.json', {'version': '0.1.0'})
     write(root, 'docs/parity/inventory.json', inventory)
+    policy_path = 'docs/parity/baseline-policy.json'
+    policy = json.loads((ROOT / policy_path).read_text())
+    manifest_path = f"docs/parity/upstream-manifests/{policy['upstreamCommit']}.json"
+    write(root, policy_path, policy)
+    write(root, manifest_path, json.loads((ROOT / manifest_path).read_text()))
+    write(root, 'docs/parity/baseline-paths.txt',
+          (ROOT / 'docs/parity/baseline-paths.txt').read_text())
     discovery_paths = sorted(p for p in paths if p == '.cursor-plugin/plugin.json' or
                              re.fullmatch(r'skills/[^/]+/SKILL\.md', p) or
                              (p.startswith('automations/benny/skills/') and p.endswith('/SKILL.md')))
@@ -160,7 +168,9 @@ class RootPolicyTests(unittest.TestCase):
                          len(self.read('docs/parity/inventory.json')))
 
     def test_summary_does_not_claim_filesystem_proof(self):
-        result = summarize_release(self.read('docs/parity/inventory.json'), self.read('docs/parity/evidence/results.json'), self.frozen)
+        inventory = self.read('docs/parity/inventory.json')
+        result = summarize_release(inventory, self.read('docs/parity/evidence/results.json'),
+                                   self.frozen, expected_counts=validate_policy(self.root, inventory))
         self.assertFalse(result['releasable'])
         self.assertTrue(result['logicalEligibility'])
         self.assertTrue(result['validationRequired'])
@@ -293,8 +303,16 @@ class RootPolicyTests(unittest.TestCase):
     def test_same_count_wrong_canonical_path_rejected(self):
         path = 'docs/parity/inventory.json'
         rows = self.read(path)
+        original = rows[0]['upstreamPath']
         rows[0]['upstreamPath'] = '.cursor-plugin/other.json'
         write(self.root, path, rows)
+        policy = self.read('docs/parity/baseline-policy.json')
+        policy.update(membership(rows))
+        write(self.root, 'docs/parity/baseline-policy.json', policy)
+        manifest_path = f"docs/parity/upstream-manifests/{policy['upstreamCommit']}.json"
+        manifest = self.read(manifest_path)
+        next(row for row in manifest['files'] if row['upstreamPath'] == original)['upstreamPath'] = rows[0]['upstreamPath']
+        write(self.root, manifest_path, manifest)
         self.assertBlocked('canonical source paths')
 
     def test_discovery_operations_cannot_come_from_other_case(self):

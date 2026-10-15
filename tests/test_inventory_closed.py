@@ -145,6 +145,7 @@ class InventoryClosedTests(unittest.TestCase):
         expected_transactions = set() if pin == 'df581122cde17e6e27686b5a448bde23e4ad4318' else {
             f'docs/parity/upstream-manifests/{pin}.apply.json',
             f'docs/parity/upstream-manifests/{pin}.previous-fragments.json',
+            'docs/parity/upstream-manifests/accepted.json',
         }
         self.assertEqual(transactions, expected_transactions)
         self.assertFalse(documented & transactions)
@@ -157,6 +158,7 @@ class InventoryClosedTests(unittest.TestCase):
             'docs/parity/tested-package.json',
             'docs/releases/remaining-controller-report.md',
         }
+        expected_reserved.add(f"docs/releases/{read('plugin.json')['version']}.md")
         self.assertEqual(reserved, expected_reserved)
         self.assertFalse(documented & reserved)
         self.assertEqual(documented, files - (files & reserved))
