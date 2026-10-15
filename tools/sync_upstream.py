@@ -242,6 +242,11 @@ def load_sources(root, candidate, fetch):
     verify_tree(proposed, tree)
     new = [{'upstreamPath': path, 'destinationPath': indexed.get(path, {}).get('destinationPath', path),
             'upstreamCommit': candidate, 'upstreamSha256': sha256(data)} for path, data in sorted(proposed.items())]
+    if ('plugin.json' not in indexed and
+            indexed.get('.cursor-plugin/plugin.json', {}).get('destinationPath') == 'plugin.json'):
+        for row in new:
+            if row['upstreamPath'] == 'plugin.json':
+                row['destinationPath'] = 'references/upstream-metadata/plugin.json'
     return old, new, original, proposed, {'repository': manifest['repository'], 'subtree': 'pstack/',
         'baselineArchiveSha256': manifest['archiveSha256'], 'candidateArchiveSha256': sha256(candidate_archive),
         'candidateTree': tree_sha, 'lineage': lineage['status'], 'manifestSha256': selection['manifestSha256']}

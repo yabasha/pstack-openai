@@ -171,6 +171,45 @@ class PublicSourceContractTests(unittest.TestCase):
                     self.run_review(command)
                 shutil.rmtree(review)
 
+    def test_new_portable_manifest_does_not_overwrite_adapted_identity(self):
+        source = '.cursor-plugin/plugin.json'
+        original = dict(self.original)
+        del original['docs/file-161.md']
+        original[source] = b'{"name":"pstack","version":"0.15.15"}\n'
+        proposed = dict(self.proposed)
+        del proposed['docs/file-161.md']
+        proposed[source] = b'{"name":"pstack","version":"0.15.25"}\n'
+        proposed['plugin.json'] = b'{"name":"pstack","version":"0.15.25"}\n'
+        baseline_archive = archive_bytes(original, sync.BASELINE)
+        self.baseline_hash = digest(baseline_archive)
+        old = [row(path, data, sync.BASELINE) for path, data in sorted(original.items())]
+        for record in old:
+            if record['upstreamPath'] == source:
+                record['destinationPath'] = 'plugin.json'
+        manifest_path = self.root / f'docs/parity/upstream-manifests/{sync.BASELINE}.json'
+        manifest = json.loads(manifest_path.read_text())
+        manifest.update(archiveSha256=self.baseline_hash, files=old)
+        manifest_path.write_text(json.dumps(manifest))
+        (self.root / 'docs/parity/inventory.json').write_text(json.dumps(old))
+        portable = b'{"name":"pstack-openai","version":"0.1.0"}\n'
+        (self.root / 'plugin.json').write_bytes(portable)
+        self.responses[sync.ARCHIVE + sync.BASELINE] = baseline_archive
+        self.responses[sync.ARCHIVE + self.candidate] = archive_bytes(proposed, self.candidate)
+        tree_key = sync.API + '/git/trees/' + self.tree_sha + '?recursive=1'
+        tree = json.loads(self.responses[tree_key])
+        tree['tree'] = [
+            {'path': 'pstack/' + path, 'type': 'blob', 'mode': '100644',
+             'sha': hashlib.sha1(b'blob ' + str(len(data)).encode() + b'\0' + data).hexdigest()}
+            for path, data in proposed.items()]
+        self.responses[tree_key] = json.dumps(tree).encode()
+        bundle = self.run_review('prepare')
+        added = next(entry for entry in bundle['files']['added'] if entry['path'] == 'plugin.json')
+        self.assertEqual(added['destinationPath'], 'references/upstream-metadata/plugin.json')
+        self.assertEqual((self.root / 'plugin.json').read_bytes(), portable)
+        destinations = [entry['destinationPath'] for category in ('added', 'removed', 'changed', 'unchanged')
+                        for entry in bundle['files'][category]]
+        self.assertEqual(len(destinations), len(set(destinations)))
+
     def test_rejects_source_tampering_and_divergence_before_write(self):
         cases = [sync.ARCHIVE + sync.BASELINE, sync.ARCHIVE + self.candidate,
                  sync.API + '/commits/' + self.candidate,
