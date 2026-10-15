@@ -6,13 +6,13 @@ import subprocess
 import unittest
 from pathlib import Path
 
+from tools.baseline_policy import validate_policy
 from tools.build_catalog import load_cases
 from tools.release_report import registry_checks
 from tools.validate_package import schema_errors
 
 ROOT = Path(__file__).resolve().parents[1]
 from tests.fixture_paths import SOURCE
-PIN = 'df581122cde17e6e27686b5a448bde23e4ad4318'
 
 
 def read(path):
@@ -24,24 +24,33 @@ class InventoryClosedTests(unittest.TestCase):
         rows = read('docs/parity/inventory.json')
         self.assertEqual([r['upstreamPath'] for r in rows],
                          (ROOT / 'docs/parity/baseline-paths.txt').read_text().splitlines())
-        self.assertEqual(len(rows), 164)
-        self.assertEqual(len({r['destinationPath'] for r in rows}), 164)
+        counts = validate_policy(ROOT, rows)
+        policy = read('docs/parity/baseline-policy.json')
+        manifest = read(f"docs/parity/upstream-manifests/{policy['upstreamCommit']}.json")
+        sources = {r['upstreamPath']: r for r in manifest['files']}
+        self.assertEqual(len(sources), len(manifest['files']))
+        self.assertEqual({r['upstreamPath'] for r in rows}, set(sources))
+        self.assertEqual(len(rows), counts['sourceFiles'])
+        self.assertEqual(len({r['destinationPath'] for r in rows}), counts['sourceFiles'])
         self.assertEqual(schema_errors(rows, read('docs/parity/inventory.schema.json'), 'inventory'), [])
         for row in rows:
             with self.subTest(source=row['upstreamPath']):
                 self.assertNotEqual(row['adaptationStatus'], 'pending')
-                self.assertEqual(row['upstreamCommit'], PIN)
-                self.assertEqual(row['upstreamSha256'], hashlib.sha256((SOURCE / row['upstreamPath']).read_bytes()).hexdigest())
+                source = sources[row['upstreamPath']]
+                self.assertEqual(row['upstreamCommit'], policy['upstreamCommit'])
+                self.assertEqual(row['upstreamCommit'], source['upstreamCommit'])
+                self.assertEqual(row['upstreamSha256'], source['upstreamSha256'])
                 self.assertTrue((ROOT / row['destinationPath']).is_file())
                 for dependency in row['dependencies']:
                     self.assertTrue((ROOT / dependency).exists(), dependency)
                 if row['adaptationStatus'] == 'unchanged-reviewed':
-                    self.assertEqual((ROOT / row['destinationPath']).read_bytes(), (SOURCE / row['upstreamPath']).read_bytes())
+                    self.assertEqual(hashlib.sha256((ROOT / row['destinationPath']).read_bytes()).hexdigest(),
+                                     source['upstreamSha256'])
         roots = [r for r in rows if re.fullmatch(r'skills/[^/]+/SKILL\.md', r['upstreamPath'])]
-        self.assertEqual(len(roots), 51)
-        self.assertEqual(sum('/principle-' in r['upstreamPath'] for r in roots), 24)
-        self.assertEqual(len(rows) - len(roots), 113)
-        self.assertEqual(sum(r['upstreamPath'].startswith('skills/poteto-mode/playbooks/') for r in rows), 23)
+        self.assertEqual(len(roots), counts['leafSkills'])
+        self.assertEqual(sum('/principle-' in r['upstreamPath'] for r in roots), counts['principles'])
+        self.assertEqual(len(rows) - len(roots), counts['supportFiles'])
+        self.assertEqual(sum(r['upstreamPath'].startswith('skills/poteto-mode/playbooks/') for r in rows), counts['playbooks'])
 
     def test_fragments_have_one_current_owner_and_match_aggregate(self):
         rows = {r['upstreamPath']: r for r in read('docs/parity/inventory.json')}
@@ -91,7 +100,8 @@ class InventoryClosedTests(unittest.TestCase):
         paths = {r['upstreamPath'] for r in read('docs/parity/inventory.json')}
         expected = {p for p in paths if p == '.cursor-plugin/plugin.json' or re.fullmatch(r'skills/[^/]+/SKILL\.md', p) or (p.startswith('automations/benny/skills/') and p.endswith('/SKILL.md'))}
         self.assertEqual(set(entry['sourcePaths']), expected)
-        self.assertEqual(len(expected), 55)
+        policy = read('docs/parity/baseline-policy.json')
+        self.assertEqual(expected, set(policy['rootSkills']) | set(policy['bennySkills']) | {'.cursor-plugin/plugin.json'})
         operations = {'discover-package', 'enumerate-skills', 'inspect-installed-copy'}
         self.assertEqual(set(entry['requiredObservations']['pass']), operations)
         self.assertEqual(set(entry['requiredObservations']['reduced-pass']), operations | {'read'})

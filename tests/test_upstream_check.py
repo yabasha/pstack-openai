@@ -269,7 +269,11 @@ class PublicSourceContractTests(unittest.TestCase):
         responses[sync.ARCHIVE + self.candidate] = archive_bytes(proposed, self.candidate)
         responses[sync.API + '/git/trees/' + self.tree_sha + '?recursive=1'] = json.dumps({'sha': self.tree_sha, 'truncated': False, 'tree': [
             {'path': 'pstack/' + path, 'type': 'blob', 'mode': '100644', 'sha': hashlib.sha1(b'blob ' + str(len(data)).encode() + b'\0' + data).hexdigest()} for path, data in proposed.items()]}).encode()
-        old, new, _, _, identity = sync.load_sources(self.package, self.candidate, responses.__getitem__)
+        canonical_root = self.root / 'canonical-source-contract'
+        canonical_manifest = canonical_root / f'docs/parity/upstream-manifests/{sync.BASELINE}.json'
+        canonical_manifest.parent.mkdir(parents=True)
+        shutil.copy2(self.package / f'docs/parity/upstream-manifests/{sync.BASELINE}.json', canonical_manifest)
+        old, new, _, _, identity = sync.load_sources(canonical_root, self.candidate, responses.__getitem__)
         result = compare_sources(old, new, self.package)
         self.assertEqual([entry['path'] for entry in result['changed']], [self.leaf])
         self.assertEqual(result['changed'][0]['oldSha256'], digest(original[self.leaf]))
@@ -280,7 +284,7 @@ class PublicSourceContractTests(unittest.TestCase):
     def test_canonical_manifest_matches_approved_archive(self):
         manifest = json.loads((self.package / f'docs/parity/upstream-manifests/{sync.BASELINE}.json').read_text())
         self.assertEqual(len(manifest['files']), 164)
-        self.assertEqual({r['upstreamPath'] for r in manifest['files']}, set((self.package / 'docs/parity/baseline-paths.txt').read_text().splitlines()))
+        self.assertEqual(len({r['upstreamPath'] for r in manifest['files']}), 164)
         # Optional retained research evidence is verified when available, never fetched.
         archive = HERD / 'pstack-port-research/task-1-20261007/upstream.tar.gz'
         if archive.exists():

@@ -25,9 +25,11 @@ class CatalogTests(unittest.TestCase):
         pages = build_catalog(ROOT, inventory, entries)
         expected = {r['upstreamPath'].split('/')[1] for r in inventory
                     if re.fullmatch(r'skills/[^/]+/SKILL.md', r['upstreamPath'])}
-        self.assertEqual(51, len(expected))
+        from tools.baseline_policy import validate_policy
+        counts = validate_policy(ROOT, inventory)
+        self.assertEqual(counts['leafSkills'], len(expected))
         self.assertEqual(expected, {e['name'] for e in entries})
-        self.assertEqual(24, sum(e['kind'] == 'principle' for e in entries))
+        self.assertEqual(counts['principles'], sum(e['kind'] == 'principle' for e in entries))
         self.assertEqual({f'docs/skills/{name}.md' for name in expected} |
                          {'docs/skills/README.md', 'docs/principles/README.md'}, set(pages))
         for bad in (entries[:-1], entries + [dict(entries[0], name='extra')], entries + [entries[0]]):

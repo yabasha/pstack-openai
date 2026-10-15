@@ -143,10 +143,15 @@ class DependencyTests(unittest.TestCase):
     def test_audit_counts(self):
         data = self.load()
         rows = data["sourceAudit"]
-        self.assertEqual(len(rows), 164)
-        self.assertEqual(sum(r["kind"] == "root-skill" for r in rows), 51)
-        self.assertEqual(sum(r["kind"] == "playbook" for r in rows), 23)
-        self.assertEqual(data["counts"]["supportIncludingPlaybooks"], 113)
+        from tools.baseline_policy import validate_policy
+        inventory = json.loads((ROOT / "docs/parity/inventory.json").read_text())
+        counts = validate_policy(ROOT, inventory)
+        self.assertEqual({r["sourcePath"] for r in rows}, {r["upstreamPath"] for r in inventory})
+        self.assertEqual(len(rows), counts["sourceFiles"])
+        self.assertEqual(sum(r["kind"] == "root-skill" for r in rows), counts["leafSkills"])
+        self.assertEqual(sum(r["kind"] == "playbook" for r in rows), counts["playbooks"])
+        self.assertEqual(data["counts"], dict(files=counts["sourceFiles"], rootSkills=counts["leafSkills"],
+                         supportIncludingPlaybooks=counts["supportFiles"], playbooks=counts["playbooks"]))
 
     def test_selected_helpers_remain_binding(self):
         data = self.load()
@@ -162,7 +167,13 @@ class DependencyTests(unittest.TestCase):
         entry = next(e for e in registry["entries"] if e["caseId"] == case["id"])
         self.assertFalse(entry["structuralOnly"])
         self.assertEqual(entry["requiredHosts"], ["chatgpt", "codex"])
-        self.assertEqual(entry["hostStatus"], {"chatgpt": "blocked", "codex": "blocked"})
+        inventory = json.loads((ROOT / "docs/parity/inventory.json").read_text())
+        callers = [r for r in inventory if r["upstreamPath"] in case["sourcePaths"]]
+        self.assertEqual({r["upstreamPath"] for r in callers}, set(case["sourcePaths"]))
+        for host in entry["requiredHosts"]:
+            statuses = {r["verification"][host]["status"] for r in callers}
+            self.assertEqual(len(statuses), 1, f"Dependency caller statuses disagree for {host}")
+            self.assertEqual(entry["hostStatus"][host], statuses.pop())
         self.assertEqual(entry["sourcePaths"], case["sourcePaths"])
         from tools.validate_package import schema_errors
         schema = json.loads((ROOT / "docs/parity/cases/schema.json").read_text())

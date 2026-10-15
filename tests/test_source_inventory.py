@@ -1,4 +1,5 @@
 import hashlib
+import json
 import re
 import tempfile
 import unittest
@@ -22,7 +23,10 @@ class SourceInventoryTests(unittest.TestCase):
         expected.update(re.findall(r'^- `([^`]+)`', b, re.M))
         self.assertEqual(paths, expected)
         self.assertEqual(len(records), 164)
-        self.assertEqual(paths, set((ROOT / 'docs/parity/baseline-paths.txt').read_text().splitlines()))
+        manifest = json.loads((ROOT / f'docs/parity/upstream-manifests/{COMMIT}.json').read_text())
+        self.assertEqual(manifest['commit'], COMMIT)
+        self.assertEqual({r['upstreamPath']: r['upstreamSha256'] for r in records},
+                         {r['upstreamPath']: r['upstreamSha256'] for r in manifest['files']})
         skills = [p for p in paths if re.fullmatch(r'skills/[^/]+/SKILL.md', p)]
         self.assertEqual(len(skills), 51)
         self.assertEqual(sum(p.split('/')[1].startswith('principle-') for p in skills), 24)

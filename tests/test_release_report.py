@@ -156,7 +156,8 @@ class RootPolicyTests(unittest.TestCase):
         self.assertEqual(report['byHost']['codex']['reduced-pass'], 1)
         self.assertEqual(report['byHost']['codex']['pass'], 1)
         self.assertTrue(report['byHost']['codex']['packageDiscovery'])
-        self.assertEqual(report['workflowCoverage']['sourceFiles'], 164)
+        self.assertEqual(report['workflowCoverage']['sourceFiles'],
+                         len(self.read('docs/parity/inventory.json')))
 
     def test_summary_does_not_claim_filesystem_proof(self):
         result = summarize_release(self.read('docs/parity/inventory.json'), self.read('docs/parity/evidence/results.json'), self.frozen)

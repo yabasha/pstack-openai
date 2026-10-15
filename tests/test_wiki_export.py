@@ -1,5 +1,6 @@
 """Offline export checks against the actual canonical documentation."""
 import hashlib
+import json
 import re
 import tempfile
 import unittest
@@ -23,12 +24,19 @@ class WikiExportTests(unittest.TestCase):
         pages = export_wiki(ROOT, output)
         leaves = list((ROOT / 'docs/skills').glob('*.md'))
         leaves = [p for p in leaves if p.name != 'README.md']
-        self.assertEqual(len(leaves), 51)
-        self.assertEqual(sum(p.stem.startswith('principle-') for p in leaves), 24)
+        from tools.baseline_policy import validate_policy
+        inventory = json.loads((ROOT / 'docs/parity/inventory.json').read_text())
+        counts = validate_policy(ROOT, inventory)
+        expected = {Path(r['upstreamPath']).parent.name for r in inventory
+                    if re.fullmatch(r'skills/[^/]+/SKILL\.md', r['upstreamPath'])}
+        self.assertEqual({p.stem for p in leaves}, expected)
+        self.assertEqual(len(leaves), counts['leafSkills'])
+        self.assertEqual(sum(p.stem.startswith('principle-') for p in leaves), counts['principles'])
         for source in leaves + [ROOT / 'docs/setup/chatgpt.md', ROOT / 'docs/setup/codex.md']:
             self.assertTrue(any(source.relative_to(ROOT).as_posix() in p.read_text() for p in pages if p.suffix == '.md'))
         home = (output / 'Home.md').read_text()
-        self.assertIn('0.1.0', home)
+        version = json.loads((ROOT / 'plugin.json').read_text())['version']
+        self.assertIn(f'Package version: `{version}`.', home)
         self.assertRegex(home, r'Package commit: `[a-f0-9]{40}`')
 
     def test_wiki_links_resolve(self):
