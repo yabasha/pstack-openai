@@ -42,3 +42,7 @@ The operative copy has no installed helper dependencies. Historical isolated tes
 
 Candidate version 0.2.0. Archive SHA-256 30d6c97a55e4b08f6f75d6314b465bb3fe8c9a118149fc17fb1713bd7827014e. Review SHA-256 b9a52e1464c4738c53166f71cf6567dff260a035a4908b97ccfa4eb0a43330dc.
 The inventory stages this candidate. The accepted baseline above remains historical evidence. Structural checks, helper regression tests, and affected host cases must run before separate acceptance.
+
+## Accepted source baseline, 2026-10-15
+
+Port 0.2.0 accepts official pstack 0.15.25 at `e5136d82418d2db3165ea1050d17577cd618cc05` after user authorization and reviewed validation. The [acceptance receipt](docs/parity/upstream-manifests/accepted.json) binds the exact manifest and [source acceptance evidence](docs/releases/0.2.0.md). Installed-host and workflow evidence remain separate. The unaccepted-candidate section above records the earlier staging event.

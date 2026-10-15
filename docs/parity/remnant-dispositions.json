@@ -915,7 +915,7 @@
     "path": "UPSTREAM.md",
     "rationale": "Exact quoted canonical metadata filename identifies source lineage; operative package uses the reviewed root manifest. No runtime source-host binding is introduced.",
     "reviewed": true,
-    "sha256": "ef6c0b5515407125ee6a9bac29ae7b4c05c9944790468d7cdff43b28183fb900",
+    "sha256": "d1d7d7536ed7f86f9877a9bc30888411548bbc6e14bdd730784120bcc46246e9",
     "startLine": 23,
     "token": ".cursor-plugin/plugin.json"
   },
