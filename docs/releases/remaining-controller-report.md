@@ -6,6 +6,16 @@ Codex CLI and signed-in personal ChatGPT web each observed the installed package
 
 Current accounting is one discovery pass and 104 blocked workflow cases per host, with zero reduced passes. The ChatGPT smoke response is preserved as a narrow observation and does not promote plain-restate or any other acceptance case. The marker retains the same report allowlist; only inventory verification changes outside report paths. Current verification follows below.
 
+## Current verification
+
+- All 22 focused tests passed in 28.595 seconds: manifest, dependency audit, inventory closure and the repository actual-HEAD provenance regression. The preceding 210-test run remains historical evidence for its prior freeze.
+- Package structural checks, all 210 evidence records, generated catalog consistency and whitespace checks passed.
+- Actual committed-head identity passed at 1459db032e4e53d398a8eef0bc9d96f65762c332 against frozen ancestor f4623636a287bea2aa79c4b2234a53d20a5f193c.
+- The release assessment returned an empty blocker list, zero stale evidence and packageDiscovery=true for both hosts. Each host has one pass, zero reduced passes and 104 blocked cases. Its releasable=true is the current policy decision with explicit blocked capabilities, not evidence that the 208 unrun workflows work.
+- Independent review found no actionable findings and independently checked the uploaded archive digest, the disclosed cloud manifest difference and the canonical root list.
+
+The final report-only commit requires a fresh identity check. Integrate this branch with a merge commit so the frozen ancestor remains reachable. No package release, shared publication, recurring schedule or behavioral-case promotion occurred.
+
 ## Preserved historical reports
 
 # Provenance refresh, 16 October 2026

@@ -98,7 +98,7 @@ The observation labels are bound to the actual callable operations in the eviden
 
 ## Previous receipt or support record preserved verbatim
 
-```text
+````text
 # Resumed receipt correction, independent review pending
 
 The renewed human instruction authorized this narrow local R1/R2 follow-up. The controller overrode the earlier final-wave cap for this correction and its independent review. Every external action gate remains closed. The operative source freeze is `5d05ab2458f4cd73c44b24265a3a1920b98b8cf4`, following `48254cbb6efa2a3b489b15cbaa1c78da19316599`. Independent controller review is pending; no merge or release approval is claimed.
@@ -154,7 +154,7 @@ The controller explicitly relinked these existing blocked records to second free
 ## Third freeze linkage
 
 The controller relinked these existing blocked records to third freeze F3 `e808be2d2b03277fdb1422dd729936e6b775126d` after two reviewed dependency fixes: the README destination hash now matches the frozen README, and the dependency test requires the actual blocked registry statuses. F1 `18718aa5ee8cfe63a86b2688d9d277a12925e92e` and F2 `1659eb6f87c2a87a308bb0d5546b937809e312de` remain in Git history. This changes candidate identity for blocked accounting only. No passes were transferred, and no fresh host observation, discovery receipt or behavioral execution occurred. Original dates, observations, blocking reasons, proof limits and empty successfulOperations arrays remain unchanged.
-```
+````
 
 ## Preserved historical reports
 
