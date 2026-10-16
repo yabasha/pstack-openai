@@ -17,13 +17,13 @@
     "adaptationStatus": "adapted-reviewed",
     "verification": {
       "chatgpt": {
-        "status": "pass",
+        "status": "not-run",
         "evidence": [
           "docs/parity/evidence/chatgpt/package-discovery.json"
         ]
       },
       "codex": {
-        "status": "pass",
+        "status": "not-run",
         "evidence": [
           "docs/parity/evidence/codex/package-discovery.json"
         ]
@@ -46,13 +46,13 @@
     "adaptationStatus": "adapted-reviewed",
     "verification": {
       "chatgpt": {
-        "status": "blocked",
+        "status": "not-run",
         "evidence": [
           "docs/parity/evidence/chatgpt/package-support-contracts.json"
         ]
       },
       "codex": {
-        "status": "blocked",
+        "status": "not-run",
         "evidence": [
           "docs/parity/evidence/codex/package-support-contracts.json"
         ]
@@ -75,13 +75,13 @@
     "adaptationStatus": "unchanged-reviewed",
     "verification": {
       "chatgpt": {
-        "status": "blocked",
+        "status": "not-run",
         "evidence": [
           "docs/parity/evidence/chatgpt/package-support-contracts.json"
         ]
       },
       "codex": {
-        "status": "blocked",
+        "status": "not-run",
         "evidence": [
           "docs/parity/evidence/codex/package-support-contracts.json"
         ]
@@ -113,13 +113,13 @@
     "adaptationStatus": "adapted-reviewed",
     "verification": {
       "chatgpt": {
-        "status": "blocked",
+        "status": "not-run",
         "evidence": [
           "docs/parity/evidence/chatgpt/package-support-contracts.json"
         ]
       },
       "codex": {
-        "status": "blocked",
+        "status": "not-run",
         "evidence": [
           "docs/parity/evidence/codex/package-support-contracts.json"
         ]
@@ -147,7 +147,7 @@
     "adaptationStatus": "adapted-reviewed",
     "verification": {
       "chatgpt": {
-        "status": "blocked",
+        "status": "not-run",
         "evidence": [
           "docs/parity/evidence/chatgpt/inherited-identical-models.json",
           "docs/parity/evidence/chatgpt/legal-header.json",
@@ -157,7 +157,7 @@
         ]
       },
       "codex": {
-        "status": "blocked",
+        "status": "not-run",
         "evidence": [
           "docs/parity/evidence/codex/inherited-identical-models.json",
           "docs/parity/evidence/codex/legal-header.json",
@@ -188,7 +188,7 @@
     "adaptationStatus": "adapted-reviewed",
     "verification": {
       "chatgpt": {
-        "status": "blocked",
+        "status": "not-run",
         "evidence": [
           "docs/parity/evidence/chatgpt/absent-workers.json",
           "docs/parity/evidence/chatgpt/accessible-trace.json",
@@ -216,7 +216,7 @@
         ]
       },
       "codex": {
-        "status": "blocked",
+        "status": "not-run",
         "evidence": [
           "docs/parity/evidence/codex/absent-workers.json",
           "docs/parity/evidence/codex/accessible-trace.json",
@@ -261,13 +261,13 @@
     "adaptationStatus": "unchanged-reviewed",
     "verification": {
       "chatgpt": {
-        "status": "blocked",
+        "status": "not-run",
         "evidence": [
           "docs/parity/evidence/chatgpt/package-support-contracts.json"
         ]
       },
       "codex": {
-        "status": "blocked",
+        "status": "not-run",
         "evidence": [
           "docs/parity/evidence/codex/package-support-contracts.json"
         ]
@@ -305,7 +305,7 @@
     "adaptationStatus": "adapted-reviewed",
     "verification": {
       "chatgpt": {
-        "status": "blocked",
+        "status": "not-run",
         "evidence": [
           "docs/parity/evidence/chatgpt/benny-duplicate-report.json",
           "docs/parity/evidence/chatgpt/benny-existing-fix-ownership.json",
@@ -318,7 +318,7 @@
         ]
       },
       "codex": {
-        "status": "blocked",
+        "status": "not-run",
         "evidence": [
           "docs/parity/evidence/codex/benny-duplicate-report.json",
           "docs/parity/evidence/codex/benny-existing-fix-ownership.json",
@@ -363,7 +363,7 @@
     "adaptationStatus": "adapted-reviewed",
     "verification": {
       "chatgpt": {
-        "status": "blocked",
+        "status": "not-run",
         "evidence": [
           "docs/parity/evidence/chatgpt/benny-duplicate-report.json",
           "docs/parity/evidence/chatgpt/benny-existing-fix-ownership.json",
@@ -376,7 +376,7 @@
         ]
       },
       "codex": {
-        "status": "blocked",
+        "status": "not-run",
         "evidence": [
           "docs/parity/evidence/codex/benny-duplicate-report.json",
           "docs/parity/evidence/codex/benny-existing-fix-ownership.json",
@@ -421,7 +421,7 @@
     "adaptationStatus": "adapted-reviewed",
     "verification": {
       "chatgpt": {
-        "status": "blocked",
+        "status": "not-run",
         "evidence": [
           "docs/parity/evidence/chatgpt/benny-duplicate-report.json",
           "docs/parity/evidence/chatgpt/benny-existing-fix-ownership.json",
@@ -435,7 +435,7 @@
         ]
       },
       "codex": {
-        "status": "blocked",
+        "status": "not-run",
         "evidence": [
           "docs/parity/evidence/codex/benny-duplicate-report.json",
           "docs/parity/evidence/codex/benny-existing-fix-ownership.json",
@@ -481,7 +481,7 @@
     "adaptationStatus": "adapted-reviewed",
     "verification": {
       "chatgpt": {
-        "status": "blocked",
+        "status": "not-run",
         "evidence": [
           "docs/parity/evidence/chatgpt/benny-duplicate-report.json",
           "docs/parity/evidence/chatgpt/benny-existing-fix-ownership.json",
@@ -495,7 +495,7 @@
         ]
       },
       "codex": {
-        "status": "blocked",
+        "status": "not-run",
         "evidence": [
           "docs/parity/evidence/codex/benny-duplicate-report.json",
           "docs/parity/evidence/codex/benny-existing-fix-ownership.json",
@@ -541,7 +541,7 @@
     "adaptationStatus": "adapted-reviewed",
     "verification": {
       "chatgpt": {
-        "status": "blocked",
+        "status": "not-run",
         "evidence": [
           "docs/parity/evidence/chatgpt/benny-duplicate-report.json",
           "docs/parity/evidence/chatgpt/benny-existing-fix-ownership.json",
@@ -554,7 +554,7 @@
         ]
       },
       "codex": {
-        "status": "blocked",
+        "status": "not-run",
         "evidence": [
           "docs/parity/evidence/codex/benny-duplicate-report.json",
           "docs/parity/evidence/codex/benny-existing-fix-ownership.json",
@@ -599,7 +599,7 @@
     "adaptationStatus": "adapted-reviewed",
     "verification": {
       "chatgpt": {
-        "status": "blocked",
+        "status": "not-run",
         "evidence": [
           "docs/parity/evidence/chatgpt/benny-duplicate-report.json",
           "docs/parity/evidence/chatgpt/benny-existing-fix-ownership.json",
@@ -612,7 +612,7 @@
         ]
       },
       "codex": {
-        "status": "blocked",
+        "status": "not-run",
         "evidence": [
           "docs/parity/evidence/codex/benny-duplicate-report.json",
           "docs/parity/evidence/codex/benny-existing-fix-ownership.json",
@@ -657,7 +657,7 @@
     "adaptationStatus": "adapted-reviewed",
     "verification": {
       "chatgpt": {
-        "status": "blocked",
+        "status": "not-run",
         "evidence": [
           "docs/parity/evidence/chatgpt/benny-duplicate-report.json",
           "docs/parity/evidence/chatgpt/benny-existing-fix-ownership.json",
@@ -671,7 +671,7 @@
         ]
       },
       "codex": {
-        "status": "blocked",
+        "status": "not-run",
         "evidence": [
           "docs/parity/evidence/codex/benny-duplicate-report.json",
           "docs/parity/evidence/codex/benny-existing-fix-ownership.json",
@@ -717,7 +717,7 @@
     "adaptationStatus": "adapted-reviewed",
     "verification": {
       "chatgpt": {
-        "status": "blocked",
+        "status": "not-run",
         "evidence": [
           "docs/parity/evidence/chatgpt/benny-duplicate-report.json",
           "docs/parity/evidence/chatgpt/benny-existing-fix-ownership.json",
@@ -731,7 +731,7 @@
         ]
       },
       "codex": {
-        "status": "blocked",
+        "status": "not-run",
         "evidence": [
           "docs/parity/evidence/codex/benny-duplicate-report.json",
           "docs/parity/evidence/codex/benny-existing-fix-ownership.json",
@@ -777,7 +777,7 @@
     "adaptationStatus": "adapted-reviewed",
     "verification": {
       "chatgpt": {
-        "status": "blocked",
+        "status": "not-run",
         "evidence": [
           "docs/parity/evidence/chatgpt/benny-duplicate-report.json",
           "docs/parity/evidence/chatgpt/benny-existing-fix-ownership.json",
@@ -790,7 +790,7 @@
         ]
       },
       "codex": {
-        "status": "blocked",
+        "status": "not-run",
         "evidence": [
           "docs/parity/evidence/codex/benny-duplicate-report.json",
           "docs/parity/evidence/codex/benny-existing-fix-ownership.json",
@@ -835,7 +835,7 @@
     "adaptationStatus": "adapted-reviewed",
     "verification": {
       "chatgpt": {
-        "status": "blocked",
+        "status": "not-run",
         "evidence": [
           "docs/parity/evidence/chatgpt/benny-duplicate-report.json",
           "docs/parity/evidence/chatgpt/benny-existing-fix-ownership.json",
@@ -848,7 +848,7 @@
         ]
       },
       "codex": {
-        "status": "blocked",
+        "status": "not-run",
         "evidence": [
           "docs/parity/evidence/codex/benny-duplicate-report.json",
           "docs/parity/evidence/codex/benny-existing-fix-ownership.json",
@@ -893,7 +893,7 @@
     "adaptationStatus": "adapted-reviewed",
     "verification": {
       "chatgpt": {
-        "status": "blocked",
+        "status": "not-run",
         "evidence": [
           "docs/parity/evidence/chatgpt/benny-duplicate-report.json",
           "docs/parity/evidence/chatgpt/benny-existing-fix-ownership.json",
@@ -906,7 +906,7 @@
         ]
       },
       "codex": {
-        "status": "blocked",
+        "status": "not-run",
         "evidence": [
           "docs/parity/evidence/codex/benny-duplicate-report.json",
           "docs/parity/evidence/codex/benny-existing-fix-ownership.json",
@@ -951,7 +951,7 @@
     "adaptationStatus": "adapted-reviewed",
     "verification": {
       "chatgpt": {
-        "status": "blocked",
+        "status": "not-run",
         "evidence": [
           "docs/parity/evidence/chatgpt/benny-duplicate-report.json",
           "docs/parity/evidence/chatgpt/benny-existing-fix-ownership.json",
@@ -964,7 +964,7 @@
         ]
       },
       "codex": {
-        "status": "blocked",
+        "status": "not-run",
         "evidence": [
           "docs/parity/evidence/codex/benny-duplicate-report.json",
           "docs/parity/evidence/codex/benny-existing-fix-ownership.json",
@@ -1005,7 +1005,7 @@
     "adaptationStatus": "adapted-reviewed",
     "verification": {
       "chatgpt": {
-        "status": "blocked",
+        "status": "not-run",
         "evidence": [
           "docs/parity/evidence/chatgpt/chatgpt-setup-from-readme.json",
           "docs/parity/evidence/chatgpt/codex-setup-from-readme.json",
@@ -1017,7 +1017,7 @@
         ]
       },
       "codex": {
-        "status": "blocked",
+        "status": "not-run",
         "evidence": [
           "docs/parity/evidence/codex/chatgpt-setup-from-readme.json",
           "docs/parity/evidence/codex/codex-setup-from-readme.json",
@@ -1064,7 +1064,7 @@
     "adaptationStatus": "adapted-reviewed",
     "verification": {
       "chatgpt": {
-        "status": "blocked",
+        "status": "not-run",
         "evidence": [
           "docs/parity/evidence/chatgpt/guides-github-absent.json",
           "docs/parity/evidence/chatgpt/guides-local-codex.json",
@@ -1074,7 +1074,7 @@
         ]
       },
       "codex": {
-        "status": "blocked",
+        "status": "not-run",
         "evidence": [
           "docs/parity/evidence/codex/guides-github-absent.json",
           "docs/parity/evidence/codex/guides-local-codex.json",
@@ -1118,7 +1118,7 @@
     "adaptationStatus": "adapted-reviewed",
     "verification": {
       "chatgpt": {
-        "status": "blocked",
+        "status": "not-run",
         "evidence": [
           "docs/parity/evidence/chatgpt/guides-github-absent.json",
           "docs/parity/evidence/chatgpt/guides-local-codex.json",
@@ -1128,7 +1128,7 @@
         ]
       },
       "codex": {
-        "status": "blocked",
+        "status": "not-run",
         "evidence": [
           "docs/parity/evidence/codex/guides-github-absent.json",
           "docs/parity/evidence/codex/guides-local-codex.json",
@@ -1173,7 +1173,7 @@
     "adaptationStatus": "adapted-reviewed",
     "verification": {
       "chatgpt": {
-        "status": "blocked",
+        "status": "not-run",
         "evidence": [
           "docs/parity/evidence/chatgpt/guides-github-absent.json",
           "docs/parity/evidence/chatgpt/guides-local-codex.json",
@@ -1183,7 +1183,7 @@
         ]
       },
       "codex": {
-        "status": "blocked",
+        "status": "not-run",
         "evidence": [
           "docs/parity/evidence/codex/guides-github-absent.json",
           "docs/parity/evidence/codex/guides-local-codex.json",
@@ -1231,7 +1231,7 @@
     "adaptationStatus": "adapted-reviewed",
     "verification": {
       "chatgpt": {
-        "status": "blocked",
+        "status": "not-run",
         "evidence": [
           "docs/parity/evidence/chatgpt/guides-github-absent.json",
           "docs/parity/evidence/chatgpt/guides-local-codex.json",
@@ -1241,7 +1241,7 @@
         ]
       },
       "codex": {
-        "status": "blocked",
+        "status": "not-run",
         "evidence": [
           "docs/parity/evidence/codex/guides-github-absent.json",
           "docs/parity/evidence/codex/guides-local-codex.json",
@@ -1291,7 +1291,7 @@
     "adaptationStatus": "adapted-reviewed",
     "verification": {
       "chatgpt": {
-        "status": "blocked",
+        "status": "not-run",
         "evidence": [
           "docs/parity/evidence/chatgpt/guides-github-absent.json",
           "docs/parity/evidence/chatgpt/guides-local-codex.json",
@@ -1301,7 +1301,7 @@
         ]
       },
       "codex": {
-        "status": "blocked",
+        "status": "not-run",
         "evidence": [
           "docs/parity/evidence/codex/guides-github-absent.json",
           "docs/parity/evidence/codex/guides-local-codex.json",
@@ -1349,7 +1349,7 @@
     "adaptationStatus": "adapted-reviewed",
     "verification": {
       "chatgpt": {
-        "status": "blocked",
+        "status": "not-run",
         "evidence": [
           "docs/parity/evidence/chatgpt/guides-github-absent.json",
           "docs/parity/evidence/chatgpt/guides-local-codex.json",
@@ -1359,7 +1359,7 @@
         ]
       },
       "codex": {
-        "status": "blocked",
+        "status": "not-run",
         "evidence": [
           "docs/parity/evidence/codex/guides-github-absent.json",
           "docs/parity/evidence/codex/guides-local-codex.json",
@@ -1419,7 +1419,7 @@
     "adaptationStatus": "adapted-reviewed",
     "verification": {
       "chatgpt": {
-        "status": "blocked",
+        "status": "not-run",
         "evidence": [
           "docs/parity/evidence/chatgpt/guides-github-absent.json",
           "docs/parity/evidence/chatgpt/guides-local-codex.json",
@@ -1429,7 +1429,7 @@
         ]
       },
       "codex": {
-        "status": "blocked",
+        "status": "not-run",
         "evidence": [
           "docs/parity/evidence/codex/guides-github-absent.json",
           "docs/parity/evidence/codex/guides-local-codex.json",
@@ -1475,7 +1475,7 @@
     "adaptationStatus": "adapted-reviewed",
     "verification": {
       "chatgpt": {
-        "status": "blocked",
+        "status": "not-run",
         "evidence": [
           "docs/parity/evidence/chatgpt/guides-github-absent.json",
           "docs/parity/evidence/chatgpt/guides-local-codex.json",
@@ -1485,7 +1485,7 @@
         ]
       },
       "codex": {
-        "status": "blocked",
+        "status": "not-run",
         "evidence": [
           "docs/parity/evidence/codex/guides-github-absent.json",
           "docs/parity/evidence/codex/guides-local-codex.json",
@@ -1527,7 +1527,7 @@
     "adaptationStatus": "adapted-reviewed",
     "verification": {
       "chatgpt": {
-        "status": "blocked",
+        "status": "not-run",
         "evidence": [
           "docs/parity/evidence/chatgpt/guides-github-absent.json",
           "docs/parity/evidence/chatgpt/guides-local-codex.json",
@@ -1537,7 +1537,7 @@
         ]
       },
       "codex": {
-        "status": "blocked",
+        "status": "not-run",
         "evidence": [
           "docs/parity/evidence/codex/guides-github-absent.json",
           "docs/parity/evidence/codex/guides-local-codex.json",
@@ -1581,7 +1581,7 @@
     "adaptationStatus": "adapted-reviewed",
     "verification": {
       "chatgpt": {
-        "status": "blocked",
+        "status": "not-run",
         "evidence": [
           "docs/parity/evidence/chatgpt/guides-github-absent.json",
           "docs/parity/evidence/chatgpt/guides-local-codex.json",
@@ -1591,7 +1591,7 @@
         ]
       },
       "codex": {
-        "status": "blocked",
+        "status": "not-run",
         "evidence": [
           "docs/parity/evidence/codex/guides-github-absent.json",
           "docs/parity/evidence/codex/guides-local-codex.json",
@@ -1618,7 +1618,7 @@
     "adaptationStatus": "unchanged-reviewed",
     "verification": {
       "chatgpt": {
-        "status": "blocked",
+        "status": "not-run",
         "evidence": [
           "docs/parity/evidence/chatgpt/guides-github-absent.json",
           "docs/parity/evidence/chatgpt/guides-local-codex.json",
@@ -1628,7 +1628,7 @@
         ]
       },
       "codex": {
-        "status": "blocked",
+        "status": "not-run",
         "evidence": [
           "docs/parity/evidence/codex/guides-github-absent.json",
           "docs/parity/evidence/codex/guides-local-codex.json",
@@ -1655,7 +1655,7 @@
     "adaptationStatus": "unchanged-reviewed",
     "verification": {
       "chatgpt": {
-        "status": "blocked",
+        "status": "not-run",
         "evidence": [
           "docs/parity/evidence/chatgpt/guides-github-absent.json",
           "docs/parity/evidence/chatgpt/guides-local-codex.json",
@@ -1665,7 +1665,7 @@
         ]
       },
       "codex": {
-        "status": "blocked",
+        "status": "not-run",
         "evidence": [
           "docs/parity/evidence/codex/guides-github-absent.json",
           "docs/parity/evidence/codex/guides-local-codex.json",
@@ -1692,7 +1692,7 @@
     "adaptationStatus": "unchanged-reviewed",
     "verification": {
       "chatgpt": {
-        "status": "blocked",
+        "status": "not-run",
         "evidence": [
           "docs/parity/evidence/chatgpt/guides-github-absent.json",
           "docs/parity/evidence/chatgpt/guides-local-codex.json",
@@ -1702,7 +1702,7 @@
         ]
       },
       "codex": {
-        "status": "blocked",
+        "status": "not-run",
         "evidence": [
           "docs/parity/evidence/codex/guides-github-absent.json",
           "docs/parity/evidence/codex/guides-local-codex.json",
@@ -1729,7 +1729,7 @@
     "adaptationStatus": "unchanged-reviewed",
     "verification": {
       "chatgpt": {
-        "status": "blocked",
+        "status": "not-run",
         "evidence": [
           "docs/parity/evidence/chatgpt/guides-github-absent.json",
           "docs/parity/evidence/chatgpt/guides-local-codex.json",
@@ -1739,7 +1739,7 @@
         ]
       },
       "codex": {
-        "status": "blocked",
+        "status": "not-run",
         "evidence": [
           "docs/parity/evidence/codex/guides-github-absent.json",
           "docs/parity/evidence/codex/guides-local-codex.json",
@@ -1766,7 +1766,7 @@
     "adaptationStatus": "unchanged-reviewed",
     "verification": {
       "chatgpt": {
-        "status": "blocked",
+        "status": "not-run",
         "evidence": [
           "docs/parity/evidence/chatgpt/guides-github-absent.json",
           "docs/parity/evidence/chatgpt/guides-local-codex.json",
@@ -1776,7 +1776,7 @@
         ]
       },
       "codex": {
-        "status": "blocked",
+        "status": "not-run",
         "evidence": [
           "docs/parity/evidence/codex/guides-github-absent.json",
           "docs/parity/evidence/codex/guides-local-codex.json",
@@ -1803,7 +1803,7 @@
     "adaptationStatus": "unchanged-reviewed",
     "verification": {
       "chatgpt": {
-        "status": "blocked",
+        "status": "not-run",
         "evidence": [
           "docs/parity/evidence/chatgpt/guides-github-absent.json",
           "docs/parity/evidence/chatgpt/guides-local-codex.json",
@@ -1813,7 +1813,7 @@
         ]
       },
       "codex": {
-        "status": "blocked",
+        "status": "not-run",
         "evidence": [
           "docs/parity/evidence/codex/guides-github-absent.json",
           "docs/parity/evidence/codex/guides-local-codex.json",
@@ -1864,7 +1864,7 @@
     "adaptationStatus": "adapted-reviewed",
     "verification": {
       "chatgpt": {
-        "status": "blocked",
+        "status": "not-run",
         "evidence": [
           "docs/parity/evidence/chatgpt/boundary-design.json",
           "docs/parity/evidence/chatgpt/comparable-revisions.json",
@@ -1877,7 +1877,7 @@
         ]
       },
       "codex": {
-        "status": "blocked",
+        "status": "not-run",
         "evidence": [
           "docs/parity/evidence/codex/boundary-design.json",
           "docs/parity/evidence/codex/comparable-revisions.json",
@@ -1907,7 +1907,7 @@
     "adaptationStatus": "unchanged-reviewed",
     "verification": {
       "chatgpt": {
-        "status": "blocked",
+        "status": "not-run",
         "evidence": [
           "docs/parity/evidence/chatgpt/boundary-design.json",
           "docs/parity/evidence/chatgpt/comparable-revisions.json",
@@ -1917,7 +1917,7 @@
         ]
       },
       "codex": {
-        "status": "blocked",
+        "status": "not-run",
         "evidence": [
           "docs/parity/evidence/codex/boundary-design.json",
           "docs/parity/evidence/codex/comparable-revisions.json",
@@ -1947,7 +1947,7 @@
     "adaptationStatus": "unchanged-reviewed",
     "verification": {
       "chatgpt": {
-        "status": "blocked",
+        "status": "not-run",
         "evidence": [
           "docs/parity/evidence/chatgpt/boundary-design.json",
           "docs/parity/evidence/chatgpt/comparable-revisions.json",
@@ -1958,7 +1958,7 @@
         ]
       },
       "codex": {
-        "status": "blocked",
+        "status": "not-run",
         "evidence": [
           "docs/parity/evidence/codex/boundary-design.json",
           "docs/parity/evidence/codex/comparable-revisions.json",
@@ -1991,7 +1991,7 @@
     "adaptationStatus": "adapted-reviewed",
     "verification": {
       "chatgpt": {
-        "status": "blocked",
+        "status": "not-run",
         "evidence": [
           "docs/parity/evidence/chatgpt/boundary-design.json",
           "docs/parity/evidence/chatgpt/comparable-revisions.json",
@@ -2002,7 +2002,7 @@
         ]
       },
       "codex": {
-        "status": "blocked",
+        "status": "not-run",
         "evidence": [
           "docs/parity/evidence/codex/boundary-design.json",
           "docs/parity/evidence/codex/comparable-revisions.json",
@@ -2040,7 +2040,7 @@
     "adaptationStatus": "adapted-reviewed",
     "verification": {
       "chatgpt": {
-        "status": "blocked",
+        "status": "not-run",
         "evidence": [
           "docs/parity/evidence/chatgpt/arena-walkthrough.json",
           "docs/parity/evidence/chatgpt/candidate-cross-review.json",
@@ -2051,7 +2051,7 @@
         ]
       },
       "codex": {
-        "status": "blocked",
+        "status": "not-run",
         "evidence": [
           "docs/parity/evidence/codex/arena-walkthrough.json",
           "docs/parity/evidence/codex/candidate-cross-review.json",
@@ -2086,7 +2086,7 @@
     "adaptationStatus": "adapted-reviewed",
     "verification": {
       "chatgpt": {
-        "status": "blocked",
+        "status": "not-run",
         "evidence": [
           "docs/parity/evidence/chatgpt/dependency-readiness.json",
           "docs/parity/evidence/chatgpt/existing-personal-mode.json",
@@ -2094,7 +2094,7 @@
         ]
       },
       "codex": {
-        "status": "blocked",
+        "status": "not-run",
         "evidence": [
           "docs/parity/evidence/codex/dependency-readiness.json",
           "docs/parity/evidence/codex/existing-personal-mode.json",
@@ -2125,7 +2125,7 @@
     "adaptationStatus": "adapted-reviewed",
     "verification": {
       "chatgpt": {
-        "status": "blocked",
+        "status": "not-run",
         "evidence": [
           "docs/parity/evidence/chatgpt/bounded-improvement.json",
           "docs/parity/evidence/chatgpt/comparable-revisions.json",
@@ -2135,7 +2135,7 @@
         ]
       },
       "codex": {
-        "status": "blocked",
+        "status": "not-run",
         "evidence": [
           "docs/parity/evidence/codex/bounded-improvement.json",
           "docs/parity/evidence/codex/comparable-revisions.json",
@@ -2170,14 +2170,14 @@
     "adaptationStatus": "adapted-reviewed",
     "verification": {
       "chatgpt": {
-        "status": "blocked",
+        "status": "not-run",
         "evidence": [
           "docs/parity/evidence/chatgpt/dependent-caller.json",
           "docs/parity/evidence/chatgpt/package-discovery.json"
         ]
       },
       "codex": {
-        "status": "blocked",
+        "status": "not-run",
         "evidence": [
           "docs/parity/evidence/codex/dependent-caller.json",
           "docs/parity/evidence/codex/package-discovery.json"
@@ -2201,14 +2201,14 @@
     "adaptationStatus": "unchanged-reviewed",
     "verification": {
       "chatgpt": {
-        "status": "blocked",
+        "status": "not-run",
         "evidence": [
           "docs/parity/evidence/chatgpt/package-discovery.json",
           "docs/parity/evidence/chatgpt/plain-restate.json"
         ]
       },
       "codex": {
-        "status": "blocked",
+        "status": "not-run",
         "evidence": [
           "docs/parity/evidence/codex/package-discovery.json",
           "docs/parity/evidence/codex/plain-restate.json"
@@ -2234,14 +2234,14 @@
     "adaptationStatus": "adapted-reviewed",
     "verification": {
       "chatgpt": {
-        "status": "blocked",
+        "status": "not-run",
         "evidence": [
           "docs/parity/evidence/chatgpt/package-discovery.json",
           "docs/parity/evidence/chatgpt/user-correction.json"
         ]
       },
       "codex": {
-        "status": "blocked",
+        "status": "not-run",
         "evidence": [
           "docs/parity/evidence/codex/package-discovery.json",
           "docs/parity/evidence/codex/user-correction.json"
@@ -2272,14 +2272,14 @@
     "adaptationStatus": "adapted-reviewed",
     "verification": {
       "chatgpt": {
-        "status": "blocked",
+        "status": "not-run",
         "evidence": [
           "docs/parity/evidence/chatgpt/package-discovery.json",
           "docs/parity/evidence/chatgpt/real-app-contract.json"
         ]
       },
       "codex": {
-        "status": "blocked",
+        "status": "not-run",
         "evidence": [
           "docs/parity/evidence/codex/package-discovery.json",
           "docs/parity/evidence/codex/real-app-contract.json"
@@ -2306,13 +2306,13 @@
     "adaptationStatus": "unchanged-reviewed",
     "verification": {
       "chatgpt": {
-        "status": "blocked",
+        "status": "not-run",
         "evidence": [
           "docs/parity/evidence/chatgpt/real-app-contract.json"
         ]
       },
       "codex": {
-        "status": "blocked",
+        "status": "not-run",
         "evidence": [
           "docs/parity/evidence/codex/real-app-contract.json"
         ]
@@ -2338,13 +2338,13 @@
     "adaptationStatus": "unchanged-reviewed",
     "verification": {
       "chatgpt": {
-        "status": "blocked",
+        "status": "not-run",
         "evidence": [
           "docs/parity/evidence/chatgpt/real-app-contract.json"
         ]
       },
       "codex": {
-        "status": "blocked",
+        "status": "not-run",
         "evidence": [
           "docs/parity/evidence/codex/real-app-contract.json"
         ]
@@ -2370,13 +2370,13 @@
     "adaptationStatus": "unchanged-reviewed",
     "verification": {
       "chatgpt": {
-        "status": "blocked",
+        "status": "not-run",
         "evidence": [
           "docs/parity/evidence/chatgpt/real-app-contract.json"
         ]
       },
       "codex": {
-        "status": "blocked",
+        "status": "not-run",
         "evidence": [
           "docs/parity/evidence/codex/real-app-contract.json"
         ]
@@ -2414,7 +2414,7 @@
     "adaptationStatus": "adapted-reviewed",
     "verification": {
       "chatgpt": {
-        "status": "blocked",
+        "status": "not-run",
         "evidence": [
           "docs/parity/evidence/chatgpt/package-discovery.json",
           "docs/parity/evidence/chatgpt/preserved-behavior.json",
@@ -2423,7 +2423,7 @@
         ]
       },
       "codex": {
-        "status": "blocked",
+        "status": "not-run",
         "evidence": [
           "docs/parity/evidence/codex/package-discovery.json",
           "docs/parity/evidence/codex/preserved-behavior.json",
@@ -2455,7 +2455,7 @@
     "adaptationStatus": "adapted-reviewed",
     "verification": {
       "chatgpt": {
-        "status": "blocked",
+        "status": "not-run",
         "evidence": [
           "docs/parity/evidence/chatgpt/bounded-improvement.json",
           "docs/parity/evidence/chatgpt/comparable-revisions.json",
@@ -2469,7 +2469,7 @@
         ]
       },
       "codex": {
-        "status": "blocked",
+        "status": "not-run",
         "evidence": [
           "docs/parity/evidence/codex/bounded-improvement.json",
           "docs/parity/evidence/codex/comparable-revisions.json",
@@ -2500,7 +2500,7 @@
     "adaptationStatus": "adapted-reviewed",
     "verification": {
       "chatgpt": {
-        "status": "blocked",
+        "status": "not-run",
         "evidence": [
           "docs/parity/evidence/chatgpt/bounded-improvement.json",
           "docs/parity/evidence/chatgpt/comparable-revisions.json",
@@ -2512,7 +2512,7 @@
         ]
       },
       "codex": {
-        "status": "blocked",
+        "status": "not-run",
         "evidence": [
           "docs/parity/evidence/codex/bounded-improvement.json",
           "docs/parity/evidence/codex/comparable-revisions.json",
@@ -2541,7 +2541,7 @@
     "adaptationStatus": "adapted-reviewed",
     "verification": {
       "chatgpt": {
-        "status": "blocked",
+        "status": "not-run",
         "evidence": [
           "docs/parity/evidence/chatgpt/bounded-improvement.json",
           "docs/parity/evidence/chatgpt/comparable-revisions.json",
@@ -2553,7 +2553,7 @@
         ]
       },
       "codex": {
-        "status": "blocked",
+        "status": "not-run",
         "evidence": [
           "docs/parity/evidence/codex/bounded-improvement.json",
           "docs/parity/evidence/codex/comparable-revisions.json",
@@ -2590,7 +2590,7 @@
     "adaptationStatus": "adapted-reviewed",
     "verification": {
       "chatgpt": {
-        "status": "blocked",
+        "status": "not-run",
         "evidence": [
           "docs/parity/evidence/chatgpt/adversarial-review.json",
           "docs/parity/evidence/chatgpt/draft-only-authorized.json",
@@ -2601,7 +2601,7 @@
         ]
       },
       "codex": {
-        "status": "blocked",
+        "status": "not-run",
         "evidence": [
           "docs/parity/evidence/codex/adversarial-review.json",
           "docs/parity/evidence/codex/draft-only-authorized.json",
@@ -2629,14 +2629,14 @@
     "adaptationStatus": "unchanged-reviewed",
     "verification": {
       "chatgpt": {
-        "status": "blocked",
+        "status": "not-run",
         "evidence": [
           "docs/parity/evidence/chatgpt/adversarial-review.json",
           "docs/parity/evidence/chatgpt/reproduce-before-fix.json"
         ]
       },
       "codex": {
-        "status": "blocked",
+        "status": "not-run",
         "evidence": [
           "docs/parity/evidence/codex/adversarial-review.json",
           "docs/parity/evidence/codex/reproduce-before-fix.json"
@@ -2660,14 +2660,14 @@
     "adaptationStatus": "unchanged-reviewed",
     "verification": {
       "chatgpt": {
-        "status": "blocked",
+        "status": "not-run",
         "evidence": [
           "docs/parity/evidence/chatgpt/adversarial-review.json",
           "docs/parity/evidence/chatgpt/reproduce-before-fix.json"
         ]
       },
       "codex": {
-        "status": "blocked",
+        "status": "not-run",
         "evidence": [
           "docs/parity/evidence/codex/adversarial-review.json",
           "docs/parity/evidence/codex/reproduce-before-fix.json"
@@ -2691,7 +2691,7 @@
     "adaptationStatus": "unchanged-reviewed",
     "verification": {
       "chatgpt": {
-        "status": "blocked",
+        "status": "not-run",
         "evidence": [
           "docs/parity/evidence/chatgpt/adversarial-review.json",
           "docs/parity/evidence/chatgpt/reproduce-before-fix.json",
@@ -2699,7 +2699,7 @@
         ]
       },
       "codex": {
-        "status": "blocked",
+        "status": "not-run",
         "evidence": [
           "docs/parity/evidence/codex/adversarial-review.json",
           "docs/parity/evidence/codex/reproduce-before-fix.json",
@@ -2724,7 +2724,7 @@
     "adaptationStatus": "unchanged-reviewed",
     "verification": {
       "chatgpt": {
-        "status": "blocked",
+        "status": "not-run",
         "evidence": [
           "docs/parity/evidence/chatgpt/adversarial-review.json",
           "docs/parity/evidence/chatgpt/reproduce-before-fix.json",
@@ -2732,7 +2732,7 @@
         ]
       },
       "codex": {
-        "status": "blocked",
+        "status": "not-run",
         "evidence": [
           "docs/parity/evidence/codex/adversarial-review.json",
           "docs/parity/evidence/codex/reproduce-before-fix.json",
@@ -2762,14 +2762,14 @@
     "adaptationStatus": "adapted-reviewed",
     "verification": {
       "chatgpt": {
-        "status": "blocked",
+        "status": "not-run",
         "evidence": [
           "docs/parity/evidence/chatgpt/package-discovery.json",
           "docs/parity/evidence/chatgpt/stale-feature-map.json"
         ]
       },
       "codex": {
-        "status": "blocked",
+        "status": "not-run",
         "evidence": [
           "docs/parity/evidence/codex/package-discovery.json",
           "docs/parity/evidence/codex/stale-feature-map.json"
@@ -2796,14 +2796,14 @@
     "adaptationStatus": "adapted-reviewed",
     "verification": {
       "chatgpt": {
-        "status": "blocked",
+        "status": "not-run",
         "evidence": [
           "docs/parity/evidence/chatgpt/missing-webhook.json",
           "docs/parity/evidence/chatgpt/package-discovery.json"
         ]
       },
       "codex": {
-        "status": "blocked",
+        "status": "not-run",
         "evidence": [
           "docs/parity/evidence/codex/missing-webhook.json",
           "docs/parity/evidence/codex/package-discovery.json"
@@ -2838,7 +2838,7 @@
     "adaptationStatus": "adapted-reviewed",
     "verification": {
       "chatgpt": {
-        "status": "blocked",
+        "status": "not-run",
         "evidence": [
           "docs/parity/evidence/chatgpt/authorized-program.json",
           "docs/parity/evidence/chatgpt/draft-only-authorized.json",
@@ -2849,7 +2849,7 @@
         ]
       },
       "codex": {
-        "status": "blocked",
+        "status": "not-run",
         "evidence": [
           "docs/parity/evidence/codex/authorized-program.json",
           "docs/parity/evidence/codex/draft-only-authorized.json",
@@ -2919,14 +2919,14 @@
     "adaptationStatus": "adapted-reviewed",
     "verification": {
       "chatgpt": {
-        "status": "blocked",
+        "status": "not-run",
         "evidence": [
           "docs/parity/evidence/chatgpt/package-discovery.json",
           "docs/parity/evidence/chatgpt/route-recipe.json"
         ]
       },
       "codex": {
-        "status": "blocked",
+        "status": "not-run",
         "evidence": [
           "docs/parity/evidence/codex/package-discovery.json",
           "docs/parity/evidence/codex/route-recipe.json"
@@ -2953,13 +2953,13 @@
     "adaptationStatus": "adapted-reviewed",
     "verification": {
       "chatgpt": {
-        "status": "blocked",
+        "status": "not-run",
         "evidence": [
           "docs/parity/evidence/chatgpt/route-recipe.json"
         ]
       },
       "codex": {
-        "status": "blocked",
+        "status": "not-run",
         "evidence": [
           "docs/parity/evidence/codex/route-recipe.json"
         ]
@@ -2985,13 +2985,13 @@
     "adaptationStatus": "adapted-reviewed",
     "verification": {
       "chatgpt": {
-        "status": "blocked",
+        "status": "not-run",
         "evidence": [
           "docs/parity/evidence/chatgpt/route-recipe.json"
         ]
       },
       "codex": {
-        "status": "blocked",
+        "status": "not-run",
         "evidence": [
           "docs/parity/evidence/codex/route-recipe.json"
         ]
@@ -3086,7 +3086,7 @@
     "adaptationStatus": "adapted-reviewed",
     "verification": {
       "chatgpt": {
-        "status": "blocked",
+        "status": "not-run",
         "evidence": [
           "docs/parity/evidence/chatgpt/absent-workers.json",
           "docs/parity/evidence/chatgpt/accessible-trace.json",
@@ -3118,7 +3118,7 @@
         ]
       },
       "codex": {
-        "status": "blocked",
+        "status": "not-run",
         "evidence": [
           "docs/parity/evidence/codex/absent-workers.json",
           "docs/parity/evidence/codex/accessible-trace.json",
@@ -3172,14 +3172,14 @@
     "adaptationStatus": "adapted-reviewed",
     "verification": {
       "chatgpt": {
-        "status": "blocked",
+        "status": "not-run",
         "evidence": [
           "docs/parity/evidence/chatgpt/dependency-readiness.json",
           "docs/parity/evidence/chatgpt/supported-authoring.json"
         ]
       },
       "codex": {
-        "status": "blocked",
+        "status": "not-run",
         "evidence": [
           "docs/parity/evidence/codex/dependency-readiness.json",
           "docs/parity/evidence/codex/supported-authoring.json"
@@ -3214,7 +3214,7 @@
     "adaptationStatus": "adapted-reviewed",
     "verification": {
       "chatgpt": {
-        "status": "blocked",
+        "status": "not-run",
         "evidence": [
           "docs/parity/evidence/chatgpt/bounded-improvement.json",
           "docs/parity/evidence/chatgpt/no-persistent-tool.json",
@@ -3222,7 +3222,7 @@
         ]
       },
       "codex": {
-        "status": "blocked",
+        "status": "not-run",
         "evidence": [
           "docs/parity/evidence/codex/bounded-improvement.json",
           "docs/parity/evidence/codex/no-persistent-tool.json",
@@ -3262,7 +3262,7 @@
     "adaptationStatus": "adapted-reviewed",
     "verification": {
       "chatgpt": {
-        "status": "blocked",
+        "status": "not-run",
         "evidence": [
           "docs/parity/evidence/chatgpt/authorized-program.json",
           "docs/parity/evidence/chatgpt/bounded-poll.json",
@@ -3272,7 +3272,7 @@
         ]
       },
       "codex": {
-        "status": "blocked",
+        "status": "not-run",
         "evidence": [
           "docs/parity/evidence/codex/authorized-program.json",
           "docs/parity/evidence/codex/bounded-poll.json",
@@ -3316,7 +3316,7 @@
     "adaptationStatus": "adapted-reviewed",
     "verification": {
       "chatgpt": {
-        "status": "blocked",
+        "status": "not-run",
         "evidence": [
           "docs/parity/evidence/chatgpt/bounded-poll.json",
           "docs/parity/evidence/chatgpt/draft-only-authorized.json",
@@ -3325,7 +3325,7 @@
         ]
       },
       "codex": {
-        "status": "blocked",
+        "status": "not-run",
         "evidence": [
           "docs/parity/evidence/codex/bounded-poll.json",
           "docs/parity/evidence/codex/draft-only-authorized.json",
@@ -3366,7 +3366,7 @@
     "adaptationStatus": "adapted-reviewed",
     "verification": {
       "chatgpt": {
-        "status": "blocked",
+        "status": "not-run",
         "evidence": [
           "docs/parity/evidence/chatgpt/authorized-program.json",
           "docs/parity/evidence/chatgpt/bounded-poll.json",
@@ -3377,7 +3377,7 @@
         ]
       },
       "codex": {
-        "status": "blocked",
+        "status": "not-run",
         "evidence": [
           "docs/parity/evidence/codex/authorized-program.json",
           "docs/parity/evidence/codex/bounded-poll.json",
@@ -3418,7 +3418,7 @@
     "adaptationStatus": "adapted-reviewed",
     "verification": {
       "chatgpt": {
-        "status": "blocked",
+        "status": "not-run",
         "evidence": [
           "docs/parity/evidence/chatgpt/accessible-trace.json",
           "docs/parity/evidence/chatgpt/read-only-answer.json",
@@ -3427,7 +3427,7 @@
         ]
       },
       "codex": {
-        "status": "blocked",
+        "status": "not-run",
         "evidence": [
           "docs/parity/evidence/codex/accessible-trace.json",
           "docs/parity/evidence/codex/read-only-answer.json",
@@ -3460,13 +3460,13 @@
     "adaptationStatus": "adapted-reviewed",
     "verification": {
       "chatgpt": {
-        "status": "blocked",
+        "status": "not-run",
         "evidence": [
           "docs/parity/evidence/chatgpt/discriminating-eval.json"
         ]
       },
       "codex": {
-        "status": "blocked",
+        "status": "not-run",
         "evidence": [
           "docs/parity/evidence/codex/discriminating-eval.json"
         ]
@@ -3503,7 +3503,7 @@
     "adaptationStatus": "adapted-reviewed",
     "verification": {
       "chatgpt": {
-        "status": "blocked",
+        "status": "not-run",
         "evidence": [
           "docs/parity/evidence/chatgpt/preserved-behavior.json",
           "docs/parity/evidence/chatgpt/read-only-answer.json",
@@ -3512,7 +3512,7 @@
         ]
       },
       "codex": {
-        "status": "blocked",
+        "status": "not-run",
         "evidence": [
           "docs/parity/evidence/codex/preserved-behavior.json",
           "docs/parity/evidence/codex/read-only-answer.json",
@@ -3561,14 +3561,14 @@
     "adaptationStatus": "adapted-reviewed",
     "verification": {
       "chatgpt": {
-        "status": "blocked",
+        "status": "not-run",
         "evidence": [
           "docs/parity/evidence/chatgpt/bounded-improvement.json",
           "docs/parity/evidence/chatgpt/comparable-revisions.json"
         ]
       },
       "codex": {
-        "status": "blocked",
+        "status": "not-run",
         "evidence": [
           "docs/parity/evidence/codex/bounded-improvement.json",
           "docs/parity/evidence/codex/comparable-revisions.json"
@@ -3617,13 +3617,13 @@
     "adaptationStatus": "adapted-reviewed",
     "verification": {
       "chatgpt": {
-        "status": "blocked",
+        "status": "not-run",
         "evidence": [
           "docs/parity/evidence/chatgpt/read-only-answer.json"
         ]
       },
       "codex": {
-        "status": "blocked",
+        "status": "not-run",
         "evidence": [
           "docs/parity/evidence/codex/read-only-answer.json"
         ]
@@ -3673,13 +3673,13 @@
     "adaptationStatus": "adapted-reviewed",
     "verification": {
       "chatgpt": {
-        "status": "blocked",
+        "status": "not-run",
         "evidence": [
           "docs/parity/evidence/chatgpt/units-and-proof.json"
         ]
       },
       "codex": {
-        "status": "blocked",
+        "status": "not-run",
         "evidence": [
           "docs/parity/evidence/codex/units-and-proof.json"
         ]
@@ -3715,7 +3715,7 @@
     "adaptationStatus": "adapted-reviewed",
     "verification": {
       "chatgpt": {
-        "status": "blocked",
+        "status": "not-run",
         "evidence": [
           "docs/parity/evidence/chatgpt/bounded-improvement.json",
           "docs/parity/evidence/chatgpt/comparable-revisions.json",
@@ -3732,7 +3732,7 @@
         ]
       },
       "codex": {
-        "status": "blocked",
+        "status": "not-run",
         "evidence": [
           "docs/parity/evidence/codex/bounded-improvement.json",
           "docs/parity/evidence/codex/comparable-revisions.json",
@@ -3789,7 +3789,7 @@
     "adaptationStatus": "adapted-reviewed",
     "verification": {
       "chatgpt": {
-        "status": "blocked",
+        "status": "not-run",
         "evidence": [
           "docs/parity/evidence/chatgpt/absent-workers.json",
           "docs/parity/evidence/chatgpt/cancelled-worker.json",
@@ -3803,7 +3803,7 @@
         ]
       },
       "codex": {
-        "status": "blocked",
+        "status": "not-run",
         "evidence": [
           "docs/parity/evidence/codex/absent-workers.json",
           "docs/parity/evidence/codex/cancelled-worker.json",
@@ -3842,13 +3842,13 @@
     "adaptationStatus": "adapted-reviewed",
     "verification": {
       "chatgpt": {
-        "status": "blocked",
+        "status": "not-run",
         "evidence": [
           "docs/parity/evidence/chatgpt/interrupted-action.json"
         ]
       },
       "codex": {
-        "status": "blocked",
+        "status": "not-run",
         "evidence": [
           "docs/parity/evidence/codex/interrupted-action.json"
         ]
@@ -3884,7 +3884,7 @@
     "adaptationStatus": "adapted-reviewed",
     "verification": {
       "chatgpt": {
-        "status": "blocked",
+        "status": "not-run",
         "evidence": [
           "docs/parity/evidence/chatgpt/accessible-trace.json",
           "docs/parity/evidence/chatgpt/bounded-improvement.json",
@@ -3893,7 +3893,7 @@
         ]
       },
       "codex": {
-        "status": "blocked",
+        "status": "not-run",
         "evidence": [
           "docs/parity/evidence/codex/accessible-trace.json",
           "docs/parity/evidence/codex/bounded-improvement.json",
@@ -3930,14 +3930,14 @@
     "adaptationStatus": "adapted-reviewed",
     "verification": {
       "chatgpt": {
-        "status": "blocked",
+        "status": "not-run",
         "evidence": [
           "docs/parity/evidence/chatgpt/throwaway-probe.json",
           "docs/parity/evidence/chatgpt/units-and-proof.json"
         ]
       },
       "codex": {
-        "status": "blocked",
+        "status": "not-run",
         "evidence": [
           "docs/parity/evidence/codex/throwaway-probe.json",
           "docs/parity/evidence/codex/units-and-proof.json"
@@ -3981,13 +3981,13 @@
     "adaptationStatus": "adapted-reviewed",
     "verification": {
       "chatgpt": {
-        "status": "blocked",
+        "status": "not-run",
         "evidence": [
           "docs/parity/evidence/chatgpt/preserved-behavior.json"
         ]
       },
       "codex": {
-        "status": "blocked",
+        "status": "not-run",
         "evidence": [
           "docs/parity/evidence/codex/preserved-behavior.json"
         ]
@@ -4019,14 +4019,14 @@
     "adaptationStatus": "adapted-reviewed",
     "verification": {
       "chatgpt": {
-        "status": "blocked",
+        "status": "not-run",
         "evidence": [
           "docs/parity/evidence/chatgpt/accessible-trace.json",
           "docs/parity/evidence/chatgpt/trace-provenance.json"
         ]
       },
       "codex": {
-        "status": "blocked",
+        "status": "not-run",
         "evidence": [
           "docs/parity/evidence/codex/accessible-trace.json",
           "docs/parity/evidence/codex/trace-provenance.json"
@@ -4057,13 +4057,13 @@
     "adaptationStatus": "adapted-reviewed",
     "verification": {
       "chatgpt": {
-        "status": "blocked",
+        "status": "not-run",
         "evidence": [
           "docs/parity/evidence/chatgpt/resume-revision.json"
         ]
       },
       "codex": {
-        "status": "blocked",
+        "status": "not-run",
         "evidence": [
           "docs/parity/evidence/codex/resume-revision.json"
         ]
@@ -4098,7 +4098,7 @@
     "adaptationStatus": "adapted-reviewed",
     "verification": {
       "chatgpt": {
-        "status": "blocked",
+        "status": "not-run",
         "evidence": [
           "docs/parity/evidence/chatgpt/authorized-program.json",
           "docs/parity/evidence/chatgpt/bounded-poll.json",
@@ -4109,7 +4109,7 @@
         ]
       },
       "codex": {
-        "status": "blocked",
+        "status": "not-run",
         "evidence": [
           "docs/parity/evidence/codex/authorized-program.json",
           "docs/parity/evidence/codex/bounded-poll.json",
@@ -4147,13 +4147,13 @@
     "adaptationStatus": "adapted-reviewed",
     "verification": {
       "chatgpt": {
-        "status": "blocked",
+        "status": "not-run",
         "evidence": [
           "docs/parity/evidence/chatgpt/trace-provenance.json"
         ]
       },
       "codex": {
-        "status": "blocked",
+        "status": "not-run",
         "evidence": [
           "docs/parity/evidence/codex/trace-provenance.json"
         ]
@@ -4184,13 +4184,13 @@
     "adaptationStatus": "adapted-reviewed",
     "verification": {
       "chatgpt": {
-        "status": "blocked",
+        "status": "not-run",
         "evidence": [
           "docs/parity/evidence/chatgpt/real-render.json"
         ]
       },
       "codex": {
-        "status": "blocked",
+        "status": "not-run",
         "evidence": [
           "docs/parity/evidence/codex/real-render.json"
         ]
@@ -4226,13 +4226,13 @@
     "adaptationStatus": "adapted-reviewed",
     "verification": {
       "chatgpt": {
-        "status": "blocked",
+        "status": "not-run",
         "evidence": [
           "docs/parity/evidence/chatgpt/owned-safe-cleanup.json"
         ]
       },
       "codex": {
-        "status": "blocked",
+        "status": "not-run",
         "evidence": [
           "docs/parity/evidence/codex/owned-safe-cleanup.json"
         ]
@@ -4257,7 +4257,7 @@
     "adaptationStatus": "adapted-reviewed",
     "verification": {
       "chatgpt": {
-        "status": "blocked",
+        "status": "not-run",
         "evidence": [
           "docs/parity/evidence/chatgpt/authorized-program.json",
           "docs/parity/evidence/chatgpt/bounded-poll.json",
@@ -4267,7 +4267,7 @@
         ]
       },
       "codex": {
-        "status": "blocked",
+        "status": "not-run",
         "evidence": [
           "docs/parity/evidence/codex/authorized-program.json",
           "docs/parity/evidence/codex/bounded-poll.json",
@@ -4298,7 +4298,7 @@
     "adaptationStatus": "adapted-reviewed",
     "verification": {
       "chatgpt": {
-        "status": "blocked",
+        "status": "not-run",
         "evidence": [
           "docs/parity/evidence/chatgpt/bounded-poll.json",
           "docs/parity/evidence/chatgpt/contiguous-verified-stack.json",
@@ -4307,7 +4307,7 @@
         ]
       },
       "codex": {
-        "status": "blocked",
+        "status": "not-run",
         "evidence": [
           "docs/parity/evidence/codex/bounded-poll.json",
           "docs/parity/evidence/codex/contiguous-verified-stack.json",
@@ -4336,13 +4336,13 @@
     "adaptationStatus": "adapted-reviewed",
     "verification": {
       "chatgpt": {
-        "status": "blocked",
+        "status": "not-run",
         "evidence": [
           "docs/parity/evidence/chatgpt/unit-state.json"
         ]
       },
       "codex": {
-        "status": "blocked",
+        "status": "not-run",
         "evidence": [
           "docs/parity/evidence/codex/unit-state.json"
         ]
@@ -4369,13 +4369,13 @@
     "adaptationStatus": "adapted-reviewed",
     "verification": {
       "chatgpt": {
-        "status": "blocked",
+        "status": "not-run",
         "evidence": [
           "docs/parity/evidence/chatgpt/units-and-proof.json"
         ]
       },
       "codex": {
-        "status": "blocked",
+        "status": "not-run",
         "evidence": [
           "docs/parity/evidence/codex/units-and-proof.json"
         ]
@@ -4404,13 +4404,13 @@
     "adaptationStatus": "adapted-reviewed",
     "verification": {
       "chatgpt": {
-        "status": "blocked",
+        "status": "not-run",
         "evidence": [
           "docs/parity/evidence/chatgpt/unit-state.json"
         ]
       },
       "codex": {
-        "status": "blocked",
+        "status": "not-run",
         "evidence": [
           "docs/parity/evidence/codex/unit-state.json"
         ]
@@ -4439,13 +4439,13 @@
     "adaptationStatus": "adapted-reviewed",
     "verification": {
       "chatgpt": {
-        "status": "blocked",
+        "status": "not-run",
         "evidence": [
           "docs/parity/evidence/chatgpt/unit-state.json"
         ]
       },
       "codex": {
-        "status": "blocked",
+        "status": "not-run",
         "evidence": [
           "docs/parity/evidence/codex/unit-state.json"
         ]
@@ -4474,13 +4474,13 @@
     "adaptationStatus": "adapted-reviewed",
     "verification": {
       "chatgpt": {
-        "status": "blocked",
+        "status": "not-run",
         "evidence": [
           "docs/parity/evidence/chatgpt/unit-state.json"
         ]
       },
       "codex": {
-        "status": "blocked",
+        "status": "not-run",
         "evidence": [
           "docs/parity/evidence/codex/unit-state.json"
         ]
@@ -4506,13 +4506,13 @@
     "adaptationStatus": "adapted-reviewed",
     "verification": {
       "chatgpt": {
-        "status": "blocked",
+        "status": "not-run",
         "evidence": [
           "docs/parity/evidence/chatgpt/unit-state.json"
         ]
       },
       "codex": {
-        "status": "blocked",
+        "status": "not-run",
         "evidence": [
           "docs/parity/evidence/codex/unit-state.json"
         ]
@@ -4540,13 +4540,13 @@
     "adaptationStatus": "adapted-reviewed",
     "verification": {
       "chatgpt": {
-        "status": "blocked",
+        "status": "not-run",
         "evidence": [
           "docs/parity/evidence/chatgpt/bounded-poll.json"
         ]
       },
       "codex": {
-        "status": "blocked",
+        "status": "not-run",
         "evidence": [
           "docs/parity/evidence/codex/bounded-poll.json"
         ]
@@ -4574,14 +4574,14 @@
     "adaptationStatus": "adapted-reviewed",
     "verification": {
       "chatgpt": {
-        "status": "blocked",
+        "status": "not-run",
         "evidence": [
           "docs/parity/evidence/chatgpt/bounded-poll.json",
           "docs/parity/evidence/chatgpt/contiguous-verified-stack.json"
         ]
       },
       "codex": {
-        "status": "blocked",
+        "status": "not-run",
         "evidence": [
           "docs/parity/evidence/codex/bounded-poll.json",
           "docs/parity/evidence/codex/contiguous-verified-stack.json"
@@ -4610,13 +4610,13 @@
     "adaptationStatus": "adapted-reviewed",
     "verification": {
       "chatgpt": {
-        "status": "blocked",
+        "status": "not-run",
         "evidence": [
           "docs/parity/evidence/chatgpt/bounded-poll.json"
         ]
       },
       "codex": {
-        "status": "blocked",
+        "status": "not-run",
         "evidence": [
           "docs/parity/evidence/codex/bounded-poll.json"
         ]
@@ -4644,13 +4644,13 @@
     "adaptationStatus": "adapted-reviewed",
     "verification": {
       "chatgpt": {
-        "status": "blocked",
+        "status": "not-run",
         "evidence": [
           "docs/parity/evidence/chatgpt/bounded-poll.json"
         ]
       },
       "codex": {
-        "status": "blocked",
+        "status": "not-run",
         "evidence": [
           "docs/parity/evidence/codex/bounded-poll.json"
         ]
@@ -4678,13 +4678,13 @@
     "adaptationStatus": "adapted-reviewed",
     "verification": {
       "chatgpt": {
-        "status": "blocked",
+        "status": "not-run",
         "evidence": [
           "docs/parity/evidence/chatgpt/bounded-poll.json"
         ]
       },
       "codex": {
-        "status": "blocked",
+        "status": "not-run",
         "evidence": [
           "docs/parity/evidence/codex/bounded-poll.json"
         ]
@@ -4712,13 +4712,13 @@
     "adaptationStatus": "adapted-reviewed",
     "verification": {
       "chatgpt": {
-        "status": "blocked",
+        "status": "not-run",
         "evidence": [
           "docs/parity/evidence/chatgpt/bounded-poll.json"
         ]
       },
       "codex": {
-        "status": "blocked",
+        "status": "not-run",
         "evidence": [
           "docs/parity/evidence/codex/bounded-poll.json"
         ]
@@ -4746,13 +4746,13 @@
     "adaptationStatus": "adapted-reviewed",
     "verification": {
       "chatgpt": {
-        "status": "blocked",
+        "status": "not-run",
         "evidence": [
           "docs/parity/evidence/chatgpt/bounded-poll.json"
         ]
       },
       "codex": {
-        "status": "blocked",
+        "status": "not-run",
         "evidence": [
           "docs/parity/evidence/codex/bounded-poll.json"
         ]
@@ -4780,13 +4780,13 @@
     "adaptationStatus": "adapted-reviewed",
     "verification": {
       "chatgpt": {
-        "status": "blocked",
+        "status": "not-run",
         "evidence": [
           "docs/parity/evidence/chatgpt/bounded-poll.json"
         ]
       },
       "codex": {
-        "status": "blocked",
+        "status": "not-run",
         "evidence": [
           "docs/parity/evidence/codex/bounded-poll.json"
         ]
@@ -4814,13 +4814,13 @@
     "adaptationStatus": "unchanged-reviewed",
     "verification": {
       "chatgpt": {
-        "status": "blocked",
+        "status": "not-run",
         "evidence": [
           "docs/parity/evidence/chatgpt/package-support-contracts.json"
         ]
       },
       "codex": {
-        "status": "blocked",
+        "status": "not-run",
         "evidence": [
           "docs/parity/evidence/codex/package-support-contracts.json"
         ]
@@ -4848,13 +4848,13 @@
     "adaptationStatus": "unchanged-reviewed",
     "verification": {
       "chatgpt": {
-        "status": "blocked",
+        "status": "not-run",
         "evidence": [
           "docs/parity/evidence/chatgpt/package-support-contracts.json"
         ]
       },
       "codex": {
-        "status": "blocked",
+        "status": "not-run",
         "evidence": [
           "docs/parity/evidence/codex/package-support-contracts.json"
         ]
@@ -4882,14 +4882,14 @@
     "adaptationStatus": "adapted-reviewed",
     "verification": {
       "chatgpt": {
-        "status": "blocked",
+        "status": "not-run",
         "evidence": [
           "docs/parity/evidence/chatgpt/bounded-poll.json",
           "docs/parity/evidence/chatgpt/contiguous-verified-stack.json"
         ]
       },
       "codex": {
-        "status": "blocked",
+        "status": "not-run",
         "evidence": [
           "docs/parity/evidence/codex/bounded-poll.json",
           "docs/parity/evidence/codex/contiguous-verified-stack.json"
@@ -4918,14 +4918,14 @@
     "adaptationStatus": "adapted-reviewed",
     "verification": {
       "chatgpt": {
-        "status": "blocked",
+        "status": "not-run",
         "evidence": [
           "docs/parity/evidence/chatgpt/bounded-poll.json",
           "docs/parity/evidence/chatgpt/contiguous-verified-stack.json"
         ]
       },
       "codex": {
-        "status": "blocked",
+        "status": "not-run",
         "evidence": [
           "docs/parity/evidence/codex/bounded-poll.json",
           "docs/parity/evidence/codex/contiguous-verified-stack.json"
@@ -4953,13 +4953,13 @@
     "adaptationStatus": "adapted-reviewed",
     "verification": {
       "chatgpt": {
-        "status": "blocked",
+        "status": "not-run",
         "evidence": [
           "docs/parity/evidence/chatgpt/owned-safe-cleanup.json"
         ]
       },
       "codex": {
-        "status": "blocked",
+        "status": "not-run",
         "evidence": [
           "docs/parity/evidence/codex/owned-safe-cleanup.json"
         ]
@@ -4988,14 +4988,14 @@
     "adaptationStatus": "adapted-reviewed",
     "verification": {
       "chatgpt": {
-        "status": "blocked",
+        "status": "not-run",
         "evidence": [
           "docs/parity/evidence/chatgpt/package-discovery.json",
           "docs/parity/evidence/chatgpt/repeated-failure.json"
         ]
       },
       "codex": {
-        "status": "blocked",
+        "status": "not-run",
         "evidence": [
           "docs/parity/evidence/codex/package-discovery.json",
           "docs/parity/evidence/codex/repeated-failure.json"
@@ -5021,14 +5021,14 @@
     "adaptationStatus": "adapted-reviewed",
     "verification": {
       "chatgpt": {
-        "status": "blocked",
+        "status": "not-run",
         "evidence": [
           "docs/parity/evidence/chatgpt/invalid-input.json",
           "docs/parity/evidence/chatgpt/package-discovery.json"
         ]
       },
       "codex": {
-        "status": "blocked",
+        "status": "not-run",
         "evidence": [
           "docs/parity/evidence/codex/invalid-input.json",
           "docs/parity/evidence/codex/package-discovery.json"
@@ -5059,7 +5059,7 @@
     "adaptationStatus": "adapted-reviewed",
     "verification": {
       "chatgpt": {
-        "status": "blocked",
+        "status": "not-run",
         "evidence": [
           "docs/parity/evidence/chatgpt/bounded-improvement.json",
           "docs/parity/evidence/chatgpt/owned-safe-cleanup.json",
@@ -5068,7 +5068,7 @@
         ]
       },
       "codex": {
-        "status": "blocked",
+        "status": "not-run",
         "evidence": [
           "docs/parity/evidence/codex/bounded-improvement.json",
           "docs/parity/evidence/codex/owned-safe-cleanup.json",
@@ -5096,7 +5096,7 @@
     "adaptationStatus": "adapted-reviewed",
     "verification": {
       "chatgpt": {
-        "status": "blocked",
+        "status": "not-run",
         "evidence": [
           "docs/parity/evidence/chatgpt/owned-safe-cleanup.json",
           "docs/parity/evidence/chatgpt/package-discovery.json",
@@ -5107,7 +5107,7 @@
         ]
       },
       "codex": {
-        "status": "blocked",
+        "status": "not-run",
         "evidence": [
           "docs/parity/evidence/codex/owned-safe-cleanup.json",
           "docs/parity/evidence/codex/package-discovery.json",
@@ -5137,7 +5137,7 @@
     "adaptationStatus": "adapted-reviewed",
     "verification": {
       "chatgpt": {
-        "status": "blocked",
+        "status": "not-run",
         "evidence": [
           "docs/parity/evidence/chatgpt/alternatives.json",
           "docs/parity/evidence/chatgpt/package-discovery.json",
@@ -5145,7 +5145,7 @@
         ]
       },
       "codex": {
-        "status": "blocked",
+        "status": "not-run",
         "evidence": [
           "docs/parity/evidence/codex/alternatives.json",
           "docs/parity/evidence/codex/package-discovery.json",
@@ -5172,14 +5172,14 @@
     "adaptationStatus": "adapted-reviewed",
     "verification": {
       "chatgpt": {
-        "status": "blocked",
+        "status": "not-run",
         "evidence": [
           "docs/parity/evidence/chatgpt/package-discovery.json",
           "docs/parity/evidence/chatgpt/user-tradeoff.json"
         ]
       },
       "codex": {
-        "status": "blocked",
+        "status": "not-run",
         "evidence": [
           "docs/parity/evidence/codex/package-discovery.json",
           "docs/parity/evidence/codex/user-tradeoff.json"
@@ -5207,7 +5207,7 @@
     "adaptationStatus": "adapted-reviewed",
     "verification": {
       "chatgpt": {
-        "status": "blocked",
+        "status": "not-run",
         "evidence": [
           "docs/parity/evidence/chatgpt/bounded-improvement.json",
           "docs/parity/evidence/chatgpt/comparable-revisions.json",
@@ -5216,7 +5216,7 @@
         ]
       },
       "codex": {
-        "status": "blocked",
+        "status": "not-run",
         "evidence": [
           "docs/parity/evidence/codex/bounded-improvement.json",
           "docs/parity/evidence/codex/comparable-revisions.json",
@@ -5244,14 +5244,14 @@
     "adaptationStatus": "adapted-reviewed",
     "verification": {
       "chatgpt": {
-        "status": "blocked",
+        "status": "not-run",
         "evidence": [
           "docs/parity/evidence/chatgpt/package-discovery.json",
           "docs/parity/evidence/chatgpt/symptom-repro.json"
         ]
       },
       "codex": {
-        "status": "blocked",
+        "status": "not-run",
         "evidence": [
           "docs/parity/evidence/codex/package-discovery.json",
           "docs/parity/evidence/codex/symptom-repro.json"
@@ -5277,7 +5277,7 @@
     "adaptationStatus": "adapted-reviewed",
     "verification": {
       "chatgpt": {
-        "status": "blocked",
+        "status": "not-run",
         "evidence": [
           "docs/parity/evidence/chatgpt/package-discovery.json",
           "docs/parity/evidence/chatgpt/preserved-behavior.json",
@@ -5285,7 +5285,7 @@
         ]
       },
       "codex": {
-        "status": "blocked",
+        "status": "not-run",
         "evidence": [
           "docs/parity/evidence/codex/package-discovery.json",
           "docs/parity/evidence/codex/preserved-behavior.json",
@@ -5313,7 +5313,7 @@
     "adaptationStatus": "adapted-reviewed",
     "verification": {
       "chatgpt": {
-        "status": "blocked",
+        "status": "not-run",
         "evidence": [
           "docs/parity/evidence/chatgpt/accessible-trace.json",
           "docs/parity/evidence/chatgpt/bounded-improvement.json",
@@ -5326,7 +5326,7 @@
         ]
       },
       "codex": {
-        "status": "blocked",
+        "status": "not-run",
         "evidence": [
           "docs/parity/evidence/codex/accessible-trace.json",
           "docs/parity/evidence/codex/bounded-improvement.json",
@@ -5358,7 +5358,7 @@
     "adaptationStatus": "adapted-reviewed",
     "verification": {
       "chatgpt": {
-        "status": "blocked",
+        "status": "not-run",
         "evidence": [
           "docs/parity/evidence/chatgpt/bounded-improvement.json",
           "docs/parity/evidence/chatgpt/package-discovery.json",
@@ -5367,7 +5367,7 @@
         ]
       },
       "codex": {
-        "status": "blocked",
+        "status": "not-run",
         "evidence": [
           "docs/parity/evidence/codex/bounded-improvement.json",
           "docs/parity/evidence/codex/package-discovery.json",
@@ -5396,14 +5396,14 @@
     "adaptationStatus": "adapted-reviewed",
     "verification": {
       "chatgpt": {
-        "status": "blocked",
+        "status": "not-run",
         "evidence": [
           "docs/parity/evidence/chatgpt/package-discovery.json",
           "docs/parity/evidence/chatgpt/replay.json"
         ]
       },
       "codex": {
-        "status": "blocked",
+        "status": "not-run",
         "evidence": [
           "docs/parity/evidence/codex/package-discovery.json",
           "docs/parity/evidence/codex/replay.json"
@@ -5429,7 +5429,7 @@
     "adaptationStatus": "adapted-reviewed",
     "verification": {
       "chatgpt": {
-        "status": "blocked",
+        "status": "not-run",
         "evidence": [
           "docs/parity/evidence/chatgpt/caller-migration.json",
           "docs/parity/evidence/chatgpt/package-discovery.json",
@@ -5437,7 +5437,7 @@
         ]
       },
       "codex": {
-        "status": "blocked",
+        "status": "not-run",
         "evidence": [
           "docs/parity/evidence/codex/caller-migration.json",
           "docs/parity/evidence/codex/package-discovery.json",
@@ -5465,7 +5465,7 @@
     "adaptationStatus": "adapted-reviewed",
     "verification": {
       "chatgpt": {
-        "status": "blocked",
+        "status": "not-run",
         "evidence": [
           "docs/parity/evidence/chatgpt/package-discovery.json",
           "docs/parity/evidence/chatgpt/preserved-behavior.json",
@@ -5473,7 +5473,7 @@
         ]
       },
       "codex": {
-        "status": "blocked",
+        "status": "not-run",
         "evidence": [
           "docs/parity/evidence/codex/package-discovery.json",
           "docs/parity/evidence/codex/preserved-behavior.json",
@@ -5500,7 +5500,7 @@
     "adaptationStatus": "adapted-reviewed",
     "verification": {
       "chatgpt": {
-        "status": "blocked",
+        "status": "not-run",
         "evidence": [
           "docs/parity/evidence/chatgpt/package-discovery.json",
           "docs/parity/evidence/chatgpt/preserved-behavior.json",
@@ -5509,7 +5509,7 @@
         ]
       },
       "codex": {
-        "status": "blocked",
+        "status": "not-run",
         "evidence": [
           "docs/parity/evidence/codex/package-discovery.json",
           "docs/parity/evidence/codex/preserved-behavior.json",
@@ -5537,7 +5537,7 @@
     "adaptationStatus": "adapted-reviewed",
     "verification": {
       "chatgpt": {
-        "status": "blocked",
+        "status": "not-run",
         "evidence": [
           "docs/parity/evidence/chatgpt/package-discovery.json",
           "docs/parity/evidence/chatgpt/reversible-step.json",
@@ -5545,7 +5545,7 @@
         ]
       },
       "codex": {
-        "status": "blocked",
+        "status": "not-run",
         "evidence": [
           "docs/parity/evidence/codex/package-discovery.json",
           "docs/parity/evidence/codex/reversible-step.json",
@@ -5572,14 +5572,14 @@
     "adaptationStatus": "adapted-reviewed",
     "verification": {
       "chatgpt": {
-        "status": "blocked",
+        "status": "not-run",
         "evidence": [
           "docs/parity/evidence/chatgpt/migration-end-state.json",
           "docs/parity/evidence/chatgpt/package-discovery.json"
         ]
       },
       "codex": {
-        "status": "blocked",
+        "status": "not-run",
         "evidence": [
           "docs/parity/evidence/codex/migration-end-state.json",
           "docs/parity/evidence/codex/package-discovery.json"
@@ -5606,7 +5606,7 @@
     "adaptationStatus": "adapted-reviewed",
     "verification": {
       "chatgpt": {
-        "status": "blocked",
+        "status": "not-run",
         "evidence": [
           "docs/parity/evidence/chatgpt/authorized-program.json",
           "docs/parity/evidence/chatgpt/bounded-improvement.json",
@@ -5620,7 +5620,7 @@
         ]
       },
       "codex": {
-        "status": "blocked",
+        "status": "not-run",
         "evidence": [
           "docs/parity/evidence/codex/authorized-program.json",
           "docs/parity/evidence/codex/bounded-improvement.json",
@@ -5653,7 +5653,7 @@
     "adaptationStatus": "adapted-reviewed",
     "verification": {
       "chatgpt": {
-        "status": "blocked",
+        "status": "not-run",
         "evidence": [
           "docs/parity/evidence/chatgpt/new-requirement.json",
           "docs/parity/evidence/chatgpt/package-discovery.json",
@@ -5661,7 +5661,7 @@
         ]
       },
       "codex": {
-        "status": "blocked",
+        "status": "not-run",
         "evidence": [
           "docs/parity/evidence/codex/new-requirement.json",
           "docs/parity/evidence/codex/package-discovery.json",
@@ -5689,7 +5689,7 @@
     "adaptationStatus": "adapted-reviewed",
     "verification": {
       "chatgpt": {
-        "status": "blocked",
+        "status": "not-run",
         "evidence": [
           "docs/parity/evidence/chatgpt/bounded-improvement.json",
           "docs/parity/evidence/chatgpt/package-discovery.json",
@@ -5700,7 +5700,7 @@
         ]
       },
       "codex": {
-        "status": "blocked",
+        "status": "not-run",
         "evidence": [
           "docs/parity/evidence/codex/bounded-improvement.json",
           "docs/parity/evidence/codex/package-discovery.json",
@@ -5733,7 +5733,7 @@
     "adaptationStatus": "adapted-reviewed",
     "verification": {
       "chatgpt": {
-        "status": "blocked",
+        "status": "not-run",
         "evidence": [
           "docs/parity/evidence/chatgpt/bounded-improvement.json",
           "docs/parity/evidence/chatgpt/comparable-revisions.json",
@@ -5747,7 +5747,7 @@
         ]
       },
       "codex": {
-        "status": "blocked",
+        "status": "not-run",
         "evidence": [
           "docs/parity/evidence/codex/bounded-improvement.json",
           "docs/parity/evidence/codex/comparable-revisions.json",
@@ -5780,7 +5780,7 @@
     "adaptationStatus": "adapted-reviewed",
     "verification": {
       "chatgpt": {
-        "status": "blocked",
+        "status": "not-run",
         "evidence": [
           "docs/parity/evidence/chatgpt/dead-path.json",
           "docs/parity/evidence/chatgpt/package-discovery.json",
@@ -5788,7 +5788,7 @@
         ]
       },
       "codex": {
-        "status": "blocked",
+        "status": "not-run",
         "evidence": [
           "docs/parity/evidence/codex/dead-path.json",
           "docs/parity/evidence/codex/package-discovery.json",
@@ -5815,14 +5815,14 @@
     "adaptationStatus": "adapted-reviewed",
     "verification": {
       "chatgpt": {
-        "status": "blocked",
+        "status": "not-run",
         "evidence": [
           "docs/parity/evidence/chatgpt/empty-function.json",
           "docs/parity/evidence/chatgpt/package-discovery.json"
         ]
       },
       "codex": {
-        "status": "blocked",
+        "status": "not-run",
         "evidence": [
           "docs/parity/evidence/codex/empty-function.json",
           "docs/parity/evidence/codex/package-discovery.json"
@@ -5851,14 +5851,14 @@
     "adaptationStatus": "adapted-reviewed",
     "verification": {
       "chatgpt": {
-        "status": "blocked",
+        "status": "not-run",
         "evidence": [
           "docs/parity/evidence/chatgpt/invalid-state.json",
           "docs/parity/evidence/chatgpt/package-discovery.json"
         ]
       },
       "codex": {
-        "status": "blocked",
+        "status": "not-run",
         "evidence": [
           "docs/parity/evidence/codex/invalid-state.json",
           "docs/parity/evidence/codex/package-discovery.json"
@@ -5891,14 +5891,14 @@
     "adaptationStatus": "adapted-reviewed",
     "verification": {
       "chatgpt": {
-        "status": "blocked",
+        "status": "not-run",
         "evidence": [
           "docs/parity/evidence/chatgpt/package-discovery.json",
           "docs/parity/evidence/chatgpt/scoped-history.json"
         ]
       },
       "codex": {
-        "status": "blocked",
+        "status": "not-run",
         "evidence": [
           "docs/parity/evidence/codex/package-discovery.json",
           "docs/parity/evidence/codex/scoped-history.json"
@@ -5928,7 +5928,7 @@
     "adaptationStatus": "adapted-reviewed",
     "verification": {
       "chatgpt": {
-        "status": "blocked",
+        "status": "not-run",
         "evidence": [
           "docs/parity/evidence/chatgpt/approval-before-edit.json",
           "docs/parity/evidence/chatgpt/dependency-readiness.json",
@@ -5936,7 +5936,7 @@
         ]
       },
       "codex": {
-        "status": "blocked",
+        "status": "not-run",
         "evidence": [
           "docs/parity/evidence/codex/approval-before-edit.json",
           "docs/parity/evidence/codex/dependency-readiness.json",
@@ -5961,13 +5961,13 @@
     "adaptationStatus": "adapted-reviewed",
     "verification": {
       "chatgpt": {
-        "status": "blocked",
+        "status": "not-run",
         "evidence": [
           "docs/parity/evidence/chatgpt/approval-before-edit.json"
         ]
       },
       "codex": {
-        "status": "blocked",
+        "status": "not-run",
         "evidence": [
           "docs/parity/evidence/codex/approval-before-edit.json"
         ]
@@ -5990,13 +5990,13 @@
     "adaptationStatus": "adapted-reviewed",
     "verification": {
       "chatgpt": {
-        "status": "blocked",
+        "status": "not-run",
         "evidence": [
           "docs/parity/evidence/chatgpt/approval-before-edit.json"
         ]
       },
       "codex": {
-        "status": "blocked",
+        "status": "not-run",
         "evidence": [
           "docs/parity/evidence/codex/approval-before-edit.json"
         ]
@@ -6019,13 +6019,13 @@
     "adaptationStatus": "adapted-reviewed",
     "verification": {
       "chatgpt": {
-        "status": "blocked",
+        "status": "not-run",
         "evidence": [
           "docs/parity/evidence/chatgpt/approval-before-edit.json"
         ]
       },
       "codex": {
-        "status": "blocked",
+        "status": "not-run",
         "evidence": [
           "docs/parity/evidence/codex/approval-before-edit.json"
         ]
@@ -6048,13 +6048,13 @@
     "adaptationStatus": "adapted-reviewed",
     "verification": {
       "chatgpt": {
-        "status": "blocked",
+        "status": "not-run",
         "evidence": [
           "docs/parity/evidence/chatgpt/approval-before-edit.json"
         ]
       },
       "codex": {
-        "status": "blocked",
+        "status": "not-run",
         "evidence": [
           "docs/parity/evidence/codex/approval-before-edit.json"
         ]
@@ -6082,14 +6082,14 @@
     "adaptationStatus": "adapted-reviewed",
     "verification": {
       "chatgpt": {
-        "status": "blocked",
+        "status": "not-run",
         "evidence": [
           "docs/parity/evidence/chatgpt/package-discovery.json",
           "docs/parity/evidence/chatgpt/unknown-model.json"
         ]
       },
       "codex": {
-        "status": "blocked",
+        "status": "not-run",
         "evidence": [
           "docs/parity/evidence/codex/package-discovery.json",
           "docs/parity/evidence/codex/unknown-model.json"
@@ -6120,7 +6120,7 @@
     "adaptationStatus": "adapted-reviewed",
     "verification": {
       "chatgpt": {
-        "status": "blocked",
+        "status": "not-run",
         "evidence": [
           "docs/parity/evidence/chatgpt/authorized-program.json",
           "docs/parity/evidence/chatgpt/bounded-improvement.json",
@@ -6134,7 +6134,7 @@
         ]
       },
       "codex": {
-        "status": "blocked",
+        "status": "not-run",
         "evidence": [
           "docs/parity/evidence/codex/authorized-program.json",
           "docs/parity/evidence/codex/bounded-improvement.json",
@@ -6165,7 +6165,7 @@
     "adaptationStatus": "unchanged-reviewed",
     "verification": {
       "chatgpt": {
-        "status": "blocked",
+        "status": "not-run",
         "evidence": [
           "docs/parity/evidence/chatgpt/authorized-program.json",
           "docs/parity/evidence/chatgpt/bounded-improvement.json",
@@ -6177,7 +6177,7 @@
         ]
       },
       "codex": {
-        "status": "blocked",
+        "status": "not-run",
         "evidence": [
           "docs/parity/evidence/codex/authorized-program.json",
           "docs/parity/evidence/codex/bounded-improvement.json",
@@ -6208,7 +6208,7 @@
     "adaptationStatus": "adapted-reviewed",
     "verification": {
       "chatgpt": {
-        "status": "blocked",
+        "status": "not-run",
         "evidence": [
           "docs/parity/evidence/chatgpt/authorized-program.json",
           "docs/parity/evidence/chatgpt/bounded-improvement.json",
@@ -6220,7 +6220,7 @@
         ]
       },
       "codex": {
-        "status": "blocked",
+        "status": "not-run",
         "evidence": [
           "docs/parity/evidence/codex/authorized-program.json",
           "docs/parity/evidence/codex/bounded-improvement.json",
@@ -6253,7 +6253,7 @@
     "adaptationStatus": "adapted-reviewed",
     "verification": {
       "chatgpt": {
-        "status": "blocked",
+        "status": "not-run",
         "evidence": [
           "docs/parity/evidence/chatgpt/authorized-program.json",
           "docs/parity/evidence/chatgpt/package-discovery.json",
@@ -6264,7 +6264,7 @@
         ]
       },
       "codex": {
-        "status": "blocked",
+        "status": "not-run",
         "evidence": [
           "docs/parity/evidence/codex/authorized-program.json",
           "docs/parity/evidence/codex/package-discovery.json",
@@ -6294,7 +6294,7 @@
     "adaptationStatus": "adapted-reviewed",
     "verification": {
       "chatgpt": {
-        "status": "blocked",
+        "status": "not-run",
         "evidence": [
           "docs/parity/evidence/chatgpt/package-discovery.json",
           "docs/parity/evidence/chatgpt/red-green.json",
@@ -6302,7 +6302,7 @@
         ]
       },
       "codex": {
-        "status": "blocked",
+        "status": "not-run",
         "evidence": [
           "docs/parity/evidence/codex/package-discovery.json",
           "docs/parity/evidence/codex/red-green.json",
@@ -6333,14 +6333,14 @@
     "adaptationStatus": "adapted-reviewed",
     "verification": {
       "chatgpt": {
-        "status": "blocked",
+        "status": "not-run",
         "evidence": [
           "docs/parity/evidence/chatgpt/grounded-explanation.json",
           "docs/parity/evidence/chatgpt/package-discovery.json"
         ]
       },
       "codex": {
-        "status": "blocked",
+        "status": "not-run",
         "evidence": [
           "docs/parity/evidence/codex/grounded-explanation.json",
           "docs/parity/evidence/codex/package-discovery.json"
@@ -6367,7 +6367,7 @@
     "adaptationStatus": "adapted-reviewed",
     "verification": {
       "chatgpt": {
-        "status": "blocked",
+        "status": "not-run",
         "evidence": [
           "docs/parity/evidence/chatgpt/dense-doc.json",
           "docs/parity/evidence/chatgpt/draft-only-authorized.json",
@@ -6376,7 +6376,7 @@
         ]
       },
       "codex": {
-        "status": "blocked",
+        "status": "not-run",
         "evidence": [
           "docs/parity/evidence/codex/dense-doc.json",
           "docs/parity/evidence/codex/draft-only-authorized.json",
@@ -6407,14 +6407,14 @@
     "adaptationStatus": "adapted-reviewed",
     "verification": {
       "chatgpt": {
-        "status": "blocked",
+        "status": "not-run",
         "evidence": [
           "docs/parity/evidence/chatgpt/package-discovery.json",
           "docs/parity/evidence/chatgpt/typed-boundary.json"
         ]
       },
       "codex": {
-        "status": "blocked",
+        "status": "not-run",
         "evidence": [
           "docs/parity/evidence/codex/package-discovery.json",
           "docs/parity/evidence/codex/typed-boundary.json"
@@ -6441,13 +6441,13 @@
     "adaptationStatus": "unchanged-reviewed",
     "verification": {
       "chatgpt": {
-        "status": "blocked",
+        "status": "not-run",
         "evidence": [
           "docs/parity/evidence/chatgpt/typed-boundary.json"
         ]
       },
       "codex": {
-        "status": "blocked",
+        "status": "not-run",
         "evidence": [
           "docs/parity/evidence/codex/typed-boundary.json"
         ]
@@ -6470,7 +6470,7 @@
     "adaptationStatus": "unchanged-reviewed",
     "verification": {
       "chatgpt": {
-        "status": "blocked",
+        "status": "not-run",
         "evidence": [
           "docs/parity/evidence/chatgpt/discriminating-eval.json",
           "docs/parity/evidence/chatgpt/draft-only-authorized.json",
@@ -6482,7 +6482,7 @@
         ]
       },
       "codex": {
-        "status": "blocked",
+        "status": "not-run",
         "evidence": [
           "docs/parity/evidence/codex/discriminating-eval.json",
           "docs/parity/evidence/codex/draft-only-authorized.json",
@@ -6527,7 +6527,7 @@
     "adaptationStatus": "adapted-reviewed",
     "verification": {
       "chatgpt": {
-        "status": "blocked",
+        "status": "not-run",
         "evidence": [
           "docs/parity/evidence/chatgpt/history-evidence.json",
           "docs/parity/evidence/chatgpt/package-discovery.json",
@@ -6536,7 +6536,7 @@
         ]
       },
       "codex": {
-        "status": "blocked",
+        "status": "not-run",
         "evidence": [
           "docs/parity/evidence/codex/history-evidence.json",
           "docs/parity/evidence/codex/package-discovery.json",
@@ -6562,7 +6562,7 @@
     "adaptationStatus": "unchanged-reviewed",
     "verification": {
       "chatgpt": {
-        "status": "blocked",
+        "status": "not-run",
         "evidence": [
           "docs/parity/evidence/chatgpt/history-evidence.json",
           "docs/parity/evidence/chatgpt/read-only-answer.json",
@@ -6570,7 +6570,7 @@
         ]
       },
       "codex": {
-        "status": "blocked",
+        "status": "not-run",
         "evidence": [
           "docs/parity/evidence/codex/history-evidence.json",
           "docs/parity/evidence/codex/read-only-answer.json",
@@ -6595,7 +6595,7 @@
     "adaptationStatus": "unchanged-reviewed",
     "verification": {
       "chatgpt": {
-        "status": "blocked",
+        "status": "not-run",
         "evidence": [
           "docs/parity/evidence/chatgpt/history-evidence.json",
           "docs/parity/evidence/chatgpt/read-only-answer.json",
@@ -6603,7 +6603,7 @@
         ]
       },
       "codex": {
-        "status": "blocked",
+        "status": "not-run",
         "evidence": [
           "docs/parity/evidence/codex/history-evidence.json",
           "docs/parity/evidence/codex/read-only-answer.json",
@@ -6628,7 +6628,7 @@
     "adaptationStatus": "unchanged-reviewed",
     "verification": {
       "chatgpt": {
-        "status": "blocked",
+        "status": "not-run",
         "evidence": [
           "docs/parity/evidence/chatgpt/history-evidence.json",
           "docs/parity/evidence/chatgpt/read-only-answer.json",
@@ -6636,7 +6636,7 @@
         ]
       },
       "codex": {
-        "status": "blocked",
+        "status": "not-run",
         "evidence": [
           "docs/parity/evidence/codex/history-evidence.json",
           "docs/parity/evidence/codex/read-only-answer.json",
@@ -6661,7 +6661,7 @@
     "adaptationStatus": "adapted-reviewed",
     "verification": {
       "chatgpt": {
-        "status": "blocked",
+        "status": "not-run",
         "evidence": [
           "docs/parity/evidence/chatgpt/history-evidence.json",
           "docs/parity/evidence/chatgpt/read-only-answer.json",
@@ -6669,7 +6669,7 @@
         ]
       },
       "codex": {
-        "status": "blocked",
+        "status": "not-run",
         "evidence": [
           "docs/parity/evidence/codex/history-evidence.json",
           "docs/parity/evidence/codex/read-only-answer.json",
@@ -6694,7 +6694,7 @@
     "adaptationStatus": "adapted-reviewed",
     "verification": {
       "chatgpt": {
-        "status": "blocked",
+        "status": "not-run",
         "evidence": [
           "docs/parity/evidence/chatgpt/history-evidence.json",
           "docs/parity/evidence/chatgpt/read-only-answer.json",
@@ -6702,7 +6702,7 @@
         ]
       },
       "codex": {
-        "status": "blocked",
+        "status": "not-run",
         "evidence": [
           "docs/parity/evidence/codex/history-evidence.json",
           "docs/parity/evidence/codex/read-only-answer.json",
@@ -6727,7 +6727,7 @@
     "adaptationStatus": "adapted-reviewed",
     "verification": {
       "chatgpt": {
-        "status": "blocked",
+        "status": "not-run",
         "evidence": [
           "docs/parity/evidence/chatgpt/history-evidence.json",
           "docs/parity/evidence/chatgpt/read-only-answer.json",
@@ -6735,7 +6735,7 @@
         ]
       },
       "codex": {
-        "status": "blocked",
+        "status": "not-run",
         "evidence": [
           "docs/parity/evidence/codex/history-evidence.json",
           "docs/parity/evidence/codex/read-only-answer.json",
@@ -6760,7 +6760,7 @@
     "adaptationStatus": "adapted-reviewed",
     "verification": {
       "chatgpt": {
-        "status": "blocked",
+        "status": "not-run",
         "evidence": [
           "docs/parity/evidence/chatgpt/history-evidence.json",
           "docs/parity/evidence/chatgpt/read-only-answer.json",
@@ -6768,7 +6768,7 @@
         ]
       },
       "codex": {
-        "status": "blocked",
+        "status": "not-run",
         "evidence": [
           "docs/parity/evidence/codex/history-evidence.json",
           "docs/parity/evidence/codex/read-only-answer.json",
@@ -6793,7 +6793,7 @@
     "adaptationStatus": "adapted-reviewed",
     "verification": {
       "chatgpt": {
-        "status": "blocked",
+        "status": "not-run",
         "evidence": [
           "docs/parity/evidence/chatgpt/history-evidence.json",
           "docs/parity/evidence/chatgpt/read-only-answer.json",
@@ -6801,7 +6801,7 @@
         ]
       },
       "codex": {
-        "status": "blocked",
+        "status": "not-run",
         "evidence": [
           "docs/parity/evidence/codex/history-evidence.json",
           "docs/parity/evidence/codex/read-only-answer.json",
@@ -6826,7 +6826,7 @@
     "adaptationStatus": "adapted-reviewed",
     "verification": {
       "chatgpt": {
-        "status": "blocked",
+        "status": "not-run",
         "evidence": [
           "docs/parity/evidence/chatgpt/history-evidence.json",
           "docs/parity/evidence/chatgpt/read-only-answer.json",
@@ -6834,7 +6834,7 @@
         ]
       },
       "codex": {
-        "status": "blocked",
+        "status": "not-run",
         "evidence": [
           "docs/parity/evidence/codex/history-evidence.json",
           "docs/parity/evidence/codex/read-only-answer.json",
@@ -6859,7 +6859,7 @@
     "adaptationStatus": "adapted-reviewed",
     "verification": {
       "chatgpt": {
-        "status": "blocked",
+        "status": "not-run",
         "evidence": [
           "docs/parity/evidence/chatgpt/history-evidence.json",
           "docs/parity/evidence/chatgpt/read-only-answer.json",
@@ -6867,7 +6867,7 @@
         ]
       },
       "codex": {
-        "status": "blocked",
+        "status": "not-run",
         "evidence": [
           "docs/parity/evidence/codex/history-evidence.json",
           "docs/parity/evidence/codex/read-only-answer.json",
@@ -6892,7 +6892,7 @@
     "adaptationStatus": "adapted-reviewed",
     "verification": {
       "chatgpt": {
-        "status": "blocked",
+        "status": "not-run",
         "evidence": [
           "docs/parity/evidence/chatgpt/history-evidence.json",
           "docs/parity/evidence/chatgpt/read-only-answer.json",
@@ -6900,7 +6900,7 @@
         ]
       },
       "codex": {
-        "status": "blocked",
+        "status": "not-run",
         "evidence": [
           "docs/parity/evidence/codex/history-evidence.json",
           "docs/parity/evidence/codex/read-only-answer.json",
@@ -6925,7 +6925,7 @@
     "adaptationStatus": "adapted-reviewed",
     "verification": {
       "chatgpt": {
-        "status": "blocked",
+        "status": "not-run",
         "evidence": [
           "docs/parity/evidence/chatgpt/history-evidence.json",
           "docs/parity/evidence/chatgpt/read-only-answer.json",
@@ -6933,7 +6933,7 @@
         ]
       },
       "codex": {
-        "status": "blocked",
+        "status": "not-run",
         "evidence": [
           "docs/parity/evidence/codex/history-evidence.json",
           "docs/parity/evidence/codex/read-only-answer.json",

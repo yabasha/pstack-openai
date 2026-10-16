@@ -106,8 +106,8 @@ Upstream commit: `df581122cde17e6e27686b5a448bde23e4ad4318`. SHA-256: `6892956a7
 
 Disposition: `runtime`. Aggregate adaptation status: `unchanged-reviewed`.
 
-- chatgpt: `blocked`. Tested release evidence: [docs/parity/evidence/chatgpt/history-evidence.json](../parity/evidence/chatgpt/history-evidence.json), [docs/parity/evidence/chatgpt/read-only-answer.json](../parity/evidence/chatgpt/read-only-answer.json), [docs/parity/evidence/chatgpt/reproduce-before-fix.json](../parity/evidence/chatgpt/reproduce-before-fix.json).
-- codex: `blocked`. Tested release evidence: [docs/parity/evidence/codex/history-evidence.json](../parity/evidence/codex/history-evidence.json), [docs/parity/evidence/codex/read-only-answer.json](../parity/evidence/codex/read-only-answer.json), [docs/parity/evidence/codex/reproduce-before-fix.json](../parity/evidence/codex/reproduce-before-fix.json).
+- chatgpt: `not-run`. Tested release evidence: [docs/parity/evidence/chatgpt/history-evidence.json](../parity/evidence/chatgpt/history-evidence.json), [docs/parity/evidence/chatgpt/read-only-answer.json](../parity/evidence/chatgpt/read-only-answer.json), [docs/parity/evidence/chatgpt/reproduce-before-fix.json](../parity/evidence/chatgpt/reproduce-before-fix.json).
+- codex: `not-run`. Tested release evidence: [docs/parity/evidence/codex/history-evidence.json](../parity/evidence/codex/history-evidence.json), [docs/parity/evidence/codex/read-only-answer.json](../parity/evidence/codex/read-only-answer.json), [docs/parity/evidence/codex/reproduce-before-fix.json](../parity/evidence/codex/reproduce-before-fix.json).
 
 ### `skills/why/references/epistemics.md`
 
@@ -117,8 +117,8 @@ Upstream commit: `df581122cde17e6e27686b5a448bde23e4ad4318`. SHA-256: `fcc0f559c
 
 Disposition: `runtime`. Aggregate adaptation status: `unchanged-reviewed`.
 
-- chatgpt: `blocked`. Tested release evidence: [docs/parity/evidence/chatgpt/history-evidence.json](../parity/evidence/chatgpt/history-evidence.json), [docs/parity/evidence/chatgpt/read-only-answer.json](../parity/evidence/chatgpt/read-only-answer.json), [docs/parity/evidence/chatgpt/reproduce-before-fix.json](../parity/evidence/chatgpt/reproduce-before-fix.json).
-- codex: `blocked`. Tested release evidence: [docs/parity/evidence/codex/history-evidence.json](../parity/evidence/codex/history-evidence.json), [docs/parity/evidence/codex/read-only-answer.json](../parity/evidence/codex/read-only-answer.json), [docs/parity/evidence/codex/reproduce-before-fix.json](../parity/evidence/codex/reproduce-before-fix.json).
+- chatgpt: `not-run`. Tested release evidence: [docs/parity/evidence/chatgpt/history-evidence.json](../parity/evidence/chatgpt/history-evidence.json), [docs/parity/evidence/chatgpt/read-only-answer.json](../parity/evidence/chatgpt/read-only-answer.json), [docs/parity/evidence/chatgpt/reproduce-before-fix.json](../parity/evidence/chatgpt/reproduce-before-fix.json).
+- codex: `not-run`. Tested release evidence: [docs/parity/evidence/codex/history-evidence.json](../parity/evidence/codex/history-evidence.json), [docs/parity/evidence/codex/read-only-answer.json](../parity/evidence/codex/read-only-answer.json), [docs/parity/evidence/codex/reproduce-before-fix.json](../parity/evidence/codex/reproduce-before-fix.json).
 
 ### `skills/why/references/sources/incident-postmortem.md`
 
@@ -128,8 +128,8 @@ Upstream commit: `df581122cde17e6e27686b5a448bde23e4ad4318`. SHA-256: `a899470f0
 
 Disposition: `runtime`. Aggregate adaptation status: `adapted-reviewed`.
 
-- chatgpt: `blocked`. Tested release evidence: [docs/parity/evidence/chatgpt/history-evidence.json](../parity/evidence/chatgpt/history-evidence.json), [docs/parity/evidence/chatgpt/read-only-answer.json](../parity/evidence/chatgpt/read-only-answer.json), [docs/parity/evidence/chatgpt/reproduce-before-fix.json](../parity/evidence/chatgpt/reproduce-before-fix.json).
-- codex: `blocked`. Tested release evidence: [docs/parity/evidence/codex/history-evidence.json](../parity/evidence/codex/history-evidence.json), [docs/parity/evidence/codex/read-only-answer.json](../parity/evidence/codex/read-only-answer.json), [docs/parity/evidence/codex/reproduce-before-fix.json](../parity/evidence/codex/reproduce-before-fix.json).
+- chatgpt: `not-run`. Tested release evidence: [docs/parity/evidence/chatgpt/history-evidence.json](../parity/evidence/chatgpt/history-evidence.json), [docs/parity/evidence/chatgpt/read-only-answer.json](../parity/evidence/chatgpt/read-only-answer.json), [docs/parity/evidence/chatgpt/reproduce-before-fix.json](../parity/evidence/chatgpt/reproduce-before-fix.json).
+- codex: `not-run`. Tested release evidence: [docs/parity/evidence/codex/history-evidence.json](../parity/evidence/codex/history-evidence.json), [docs/parity/evidence/codex/read-only-answer.json](../parity/evidence/codex/read-only-answer.json), [docs/parity/evidence/codex/reproduce-before-fix.json](../parity/evidence/codex/reproduce-before-fix.json).
 
 ### `skills/why/references/sources/slack.md`
 
@@ -139,8 +139,8 @@ Upstream commit: `df581122cde17e6e27686b5a448bde23e4ad4318`. SHA-256: `58fee61d0
 
 Disposition: `runtime`. Aggregate adaptation status: `adapted-reviewed`.
 
-- chatgpt: `blocked`. Tested release evidence: [docs/parity/evidence/chatgpt/history-evidence.json](../parity/evidence/chatgpt/history-evidence.json), [docs/parity/evidence/chatgpt/read-only-answer.json](../parity/evidence/chatgpt/read-only-answer.json), [docs/parity/evidence/chatgpt/reproduce-before-fix.json](../parity/evidence/chatgpt/reproduce-before-fix.json).
-- codex: `blocked`. Tested release evidence: [docs/parity/evidence/codex/history-evidence.json](../parity/evidence/codex/history-evidence.json), [docs/parity/evidence/codex/read-only-answer.json](../parity/evidence/codex/read-only-answer.json), [docs/parity/evidence/codex/reproduce-before-fix.json](../parity/evidence/codex/reproduce-before-fix.json).
+- chatgpt: `not-run`. Tested release evidence: [docs/parity/evidence/chatgpt/history-evidence.json](../parity/evidence/chatgpt/history-evidence.json), [docs/parity/evidence/chatgpt/read-only-answer.json](../parity/evidence/chatgpt/read-only-answer.json), [docs/parity/evidence/chatgpt/reproduce-before-fix.json](../parity/evidence/chatgpt/reproduce-before-fix.json).
+- codex: `not-run`. Tested release evidence: [docs/parity/evidence/codex/history-evidence.json](../parity/evidence/codex/history-evidence.json), [docs/parity/evidence/codex/read-only-answer.json](../parity/evidence/codex/read-only-answer.json), [docs/parity/evidence/codex/reproduce-before-fix.json](../parity/evidence/codex/reproduce-before-fix.json).
 
 ### `skills/why/references/sources/datadog.md`
 
@@ -150,8 +150,8 @@ Upstream commit: `df581122cde17e6e27686b5a448bde23e4ad4318`. SHA-256: `ebe9c07ba
 
 Disposition: `runtime`. Aggregate adaptation status: `adapted-reviewed`.
 
-- chatgpt: `blocked`. Tested release evidence: [docs/parity/evidence/chatgpt/history-evidence.json](../parity/evidence/chatgpt/history-evidence.json), [docs/parity/evidence/chatgpt/read-only-answer.json](../parity/evidence/chatgpt/read-only-answer.json), [docs/parity/evidence/chatgpt/reproduce-before-fix.json](../parity/evidence/chatgpt/reproduce-before-fix.json).
-- codex: `blocked`. Tested release evidence: [docs/parity/evidence/codex/history-evidence.json](../parity/evidence/codex/history-evidence.json), [docs/parity/evidence/codex/read-only-answer.json](../parity/evidence/codex/read-only-answer.json), [docs/parity/evidence/codex/reproduce-before-fix.json](../parity/evidence/codex/reproduce-before-fix.json).
+- chatgpt: `not-run`. Tested release evidence: [docs/parity/evidence/chatgpt/history-evidence.json](../parity/evidence/chatgpt/history-evidence.json), [docs/parity/evidence/chatgpt/read-only-answer.json](../parity/evidence/chatgpt/read-only-answer.json), [docs/parity/evidence/chatgpt/reproduce-before-fix.json](../parity/evidence/chatgpt/reproduce-before-fix.json).
+- codex: `not-run`. Tested release evidence: [docs/parity/evidence/codex/history-evidence.json](../parity/evidence/codex/history-evidence.json), [docs/parity/evidence/codex/read-only-answer.json](../parity/evidence/codex/read-only-answer.json), [docs/parity/evidence/codex/reproduce-before-fix.json](../parity/evidence/codex/reproduce-before-fix.json).
 
 ### `skills/why/references/sources/notion.md`
 
@@ -161,8 +161,8 @@ Upstream commit: `df581122cde17e6e27686b5a448bde23e4ad4318`. SHA-256: `3bcfa695c
 
 Disposition: `runtime`. Aggregate adaptation status: `adapted-reviewed`.
 
-- chatgpt: `blocked`. Tested release evidence: [docs/parity/evidence/chatgpt/history-evidence.json](../parity/evidence/chatgpt/history-evidence.json), [docs/parity/evidence/chatgpt/read-only-answer.json](../parity/evidence/chatgpt/read-only-answer.json), [docs/parity/evidence/chatgpt/reproduce-before-fix.json](../parity/evidence/chatgpt/reproduce-before-fix.json).
-- codex: `blocked`. Tested release evidence: [docs/parity/evidence/codex/history-evidence.json](../parity/evidence/codex/history-evidence.json), [docs/parity/evidence/codex/read-only-answer.json](../parity/evidence/codex/read-only-answer.json), [docs/parity/evidence/codex/reproduce-before-fix.json](../parity/evidence/codex/reproduce-before-fix.json).
+- chatgpt: `not-run`. Tested release evidence: [docs/parity/evidence/chatgpt/history-evidence.json](../parity/evidence/chatgpt/history-evidence.json), [docs/parity/evidence/chatgpt/read-only-answer.json](../parity/evidence/chatgpt/read-only-answer.json), [docs/parity/evidence/chatgpt/reproduce-before-fix.json](../parity/evidence/chatgpt/reproduce-before-fix.json).
+- codex: `not-run`. Tested release evidence: [docs/parity/evidence/codex/history-evidence.json](../parity/evidence/codex/history-evidence.json), [docs/parity/evidence/codex/read-only-answer.json](../parity/evidence/codex/read-only-answer.json), [docs/parity/evidence/codex/reproduce-before-fix.json](../parity/evidence/codex/reproduce-before-fix.json).
 
 ### `skills/why/references/sources/databricks.md`
 
@@ -172,8 +172,8 @@ Upstream commit: `df581122cde17e6e27686b5a448bde23e4ad4318`. SHA-256: `236ede7aa
 
 Disposition: `runtime`. Aggregate adaptation status: `adapted-reviewed`.
 
-- chatgpt: `blocked`. Tested release evidence: [docs/parity/evidence/chatgpt/history-evidence.json](../parity/evidence/chatgpt/history-evidence.json), [docs/parity/evidence/chatgpt/read-only-answer.json](../parity/evidence/chatgpt/read-only-answer.json), [docs/parity/evidence/chatgpt/reproduce-before-fix.json](../parity/evidence/chatgpt/reproduce-before-fix.json).
-- codex: `blocked`. Tested release evidence: [docs/parity/evidence/codex/history-evidence.json](../parity/evidence/codex/history-evidence.json), [docs/parity/evidence/codex/read-only-answer.json](../parity/evidence/codex/read-only-answer.json), [docs/parity/evidence/codex/reproduce-before-fix.json](../parity/evidence/codex/reproduce-before-fix.json).
+- chatgpt: `not-run`. Tested release evidence: [docs/parity/evidence/chatgpt/history-evidence.json](../parity/evidence/chatgpt/history-evidence.json), [docs/parity/evidence/chatgpt/read-only-answer.json](../parity/evidence/chatgpt/read-only-answer.json), [docs/parity/evidence/chatgpt/reproduce-before-fix.json](../parity/evidence/chatgpt/reproduce-before-fix.json).
+- codex: `not-run`. Tested release evidence: [docs/parity/evidence/codex/history-evidence.json](../parity/evidence/codex/history-evidence.json), [docs/parity/evidence/codex/read-only-answer.json](../parity/evidence/codex/read-only-answer.json), [docs/parity/evidence/codex/reproduce-before-fix.json](../parity/evidence/codex/reproduce-before-fix.json).
 
 ### `skills/why/references/sources/sentry.md`
 
@@ -183,8 +183,8 @@ Upstream commit: `df581122cde17e6e27686b5a448bde23e4ad4318`. SHA-256: `6f292bc4f
 
 Disposition: `runtime`. Aggregate adaptation status: `adapted-reviewed`.
 
-- chatgpt: `blocked`. Tested release evidence: [docs/parity/evidence/chatgpt/history-evidence.json](../parity/evidence/chatgpt/history-evidence.json), [docs/parity/evidence/chatgpt/read-only-answer.json](../parity/evidence/chatgpt/read-only-answer.json), [docs/parity/evidence/chatgpt/reproduce-before-fix.json](../parity/evidence/chatgpt/reproduce-before-fix.json).
-- codex: `blocked`. Tested release evidence: [docs/parity/evidence/codex/history-evidence.json](../parity/evidence/codex/history-evidence.json), [docs/parity/evidence/codex/read-only-answer.json](../parity/evidence/codex/read-only-answer.json), [docs/parity/evidence/codex/reproduce-before-fix.json](../parity/evidence/codex/reproduce-before-fix.json).
+- chatgpt: `not-run`. Tested release evidence: [docs/parity/evidence/chatgpt/history-evidence.json](../parity/evidence/chatgpt/history-evidence.json), [docs/parity/evidence/chatgpt/read-only-answer.json](../parity/evidence/chatgpt/read-only-answer.json), [docs/parity/evidence/chatgpt/reproduce-before-fix.json](../parity/evidence/chatgpt/reproduce-before-fix.json).
+- codex: `not-run`. Tested release evidence: [docs/parity/evidence/codex/history-evidence.json](../parity/evidence/codex/history-evidence.json), [docs/parity/evidence/codex/read-only-answer.json](../parity/evidence/codex/read-only-answer.json), [docs/parity/evidence/codex/reproduce-before-fix.json](../parity/evidence/codex/reproduce-before-fix.json).
 
 ### `skills/why/references/sources/linear.md`
 
@@ -194,8 +194,8 @@ Upstream commit: `df581122cde17e6e27686b5a448bde23e4ad4318`. SHA-256: `01304e7f1
 
 Disposition: `runtime`. Aggregate adaptation status: `adapted-reviewed`.
 
-- chatgpt: `blocked`. Tested release evidence: [docs/parity/evidence/chatgpt/history-evidence.json](../parity/evidence/chatgpt/history-evidence.json), [docs/parity/evidence/chatgpt/read-only-answer.json](../parity/evidence/chatgpt/read-only-answer.json), [docs/parity/evidence/chatgpt/reproduce-before-fix.json](../parity/evidence/chatgpt/reproduce-before-fix.json).
-- codex: `blocked`. Tested release evidence: [docs/parity/evidence/codex/history-evidence.json](../parity/evidence/codex/history-evidence.json), [docs/parity/evidence/codex/read-only-answer.json](../parity/evidence/codex/read-only-answer.json), [docs/parity/evidence/codex/reproduce-before-fix.json](../parity/evidence/codex/reproduce-before-fix.json).
+- chatgpt: `not-run`. Tested release evidence: [docs/parity/evidence/chatgpt/history-evidence.json](../parity/evidence/chatgpt/history-evidence.json), [docs/parity/evidence/chatgpt/read-only-answer.json](../parity/evidence/chatgpt/read-only-answer.json), [docs/parity/evidence/chatgpt/reproduce-before-fix.json](../parity/evidence/chatgpt/reproduce-before-fix.json).
+- codex: `not-run`. Tested release evidence: [docs/parity/evidence/codex/history-evidence.json](../parity/evidence/codex/history-evidence.json), [docs/parity/evidence/codex/read-only-answer.json](../parity/evidence/codex/read-only-answer.json), [docs/parity/evidence/codex/reproduce-before-fix.json](../parity/evidence/codex/reproduce-before-fix.json).
 
 ### `skills/why/references/sources/code-archaeology.md`
 
@@ -205,8 +205,8 @@ Upstream commit: `df581122cde17e6e27686b5a448bde23e4ad4318`. SHA-256: `8c14aa382
 
 Disposition: `runtime`. Aggregate adaptation status: `adapted-reviewed`.
 
-- chatgpt: `blocked`. Tested release evidence: [docs/parity/evidence/chatgpt/history-evidence.json](../parity/evidence/chatgpt/history-evidence.json), [docs/parity/evidence/chatgpt/read-only-answer.json](../parity/evidence/chatgpt/read-only-answer.json), [docs/parity/evidence/chatgpt/reproduce-before-fix.json](../parity/evidence/chatgpt/reproduce-before-fix.json).
-- codex: `blocked`. Tested release evidence: [docs/parity/evidence/codex/history-evidence.json](../parity/evidence/codex/history-evidence.json), [docs/parity/evidence/codex/read-only-answer.json](../parity/evidence/codex/read-only-answer.json), [docs/parity/evidence/codex/reproduce-before-fix.json](../parity/evidence/codex/reproduce-before-fix.json).
+- chatgpt: `not-run`. Tested release evidence: [docs/parity/evidence/chatgpt/history-evidence.json](../parity/evidence/chatgpt/history-evidence.json), [docs/parity/evidence/chatgpt/read-only-answer.json](../parity/evidence/chatgpt/read-only-answer.json), [docs/parity/evidence/chatgpt/reproduce-before-fix.json](../parity/evidence/chatgpt/reproduce-before-fix.json).
+- codex: `not-run`. Tested release evidence: [docs/parity/evidence/codex/history-evidence.json](../parity/evidence/codex/history-evidence.json), [docs/parity/evidence/codex/read-only-answer.json](../parity/evidence/codex/read-only-answer.json), [docs/parity/evidence/codex/reproduce-before-fix.json](../parity/evidence/codex/reproduce-before-fix.json).
 
 ### `skills/why/references/synthesizer-prompt.md`
 
@@ -216,8 +216,8 @@ Upstream commit: `df581122cde17e6e27686b5a448bde23e4ad4318`. SHA-256: `733a3e9cf
 
 Disposition: `runtime`. Aggregate adaptation status: `adapted-reviewed`.
 
-- chatgpt: `blocked`. Tested release evidence: [docs/parity/evidence/chatgpt/history-evidence.json](../parity/evidence/chatgpt/history-evidence.json), [docs/parity/evidence/chatgpt/read-only-answer.json](../parity/evidence/chatgpt/read-only-answer.json), [docs/parity/evidence/chatgpt/reproduce-before-fix.json](../parity/evidence/chatgpt/reproduce-before-fix.json).
-- codex: `blocked`. Tested release evidence: [docs/parity/evidence/codex/history-evidence.json](../parity/evidence/codex/history-evidence.json), [docs/parity/evidence/codex/read-only-answer.json](../parity/evidence/codex/read-only-answer.json), [docs/parity/evidence/codex/reproduce-before-fix.json](../parity/evidence/codex/reproduce-before-fix.json).
+- chatgpt: `not-run`. Tested release evidence: [docs/parity/evidence/chatgpt/history-evidence.json](../parity/evidence/chatgpt/history-evidence.json), [docs/parity/evidence/chatgpt/read-only-answer.json](../parity/evidence/chatgpt/read-only-answer.json), [docs/parity/evidence/chatgpt/reproduce-before-fix.json](../parity/evidence/chatgpt/reproduce-before-fix.json).
+- codex: `not-run`. Tested release evidence: [docs/parity/evidence/codex/history-evidence.json](../parity/evidence/codex/history-evidence.json), [docs/parity/evidence/codex/read-only-answer.json](../parity/evidence/codex/read-only-answer.json), [docs/parity/evidence/codex/reproduce-before-fix.json](../parity/evidence/codex/reproduce-before-fix.json).
 
 ### `skills/why/references/source-playbook.md`
 
@@ -227,8 +227,8 @@ Upstream commit: `df581122cde17e6e27686b5a448bde23e4ad4318`. SHA-256: `9ae9dcb9d
 
 Disposition: `runtime`. Aggregate adaptation status: `unchanged-reviewed`.
 
-- chatgpt: `blocked`. Tested release evidence: [docs/parity/evidence/chatgpt/history-evidence.json](../parity/evidence/chatgpt/history-evidence.json), [docs/parity/evidence/chatgpt/read-only-answer.json](../parity/evidence/chatgpt/read-only-answer.json), [docs/parity/evidence/chatgpt/reproduce-before-fix.json](../parity/evidence/chatgpt/reproduce-before-fix.json).
-- codex: `blocked`. Tested release evidence: [docs/parity/evidence/codex/history-evidence.json](../parity/evidence/codex/history-evidence.json), [docs/parity/evidence/codex/read-only-answer.json](../parity/evidence/codex/read-only-answer.json), [docs/parity/evidence/codex/reproduce-before-fix.json](../parity/evidence/codex/reproduce-before-fix.json).
+- chatgpt: `not-run`. Tested release evidence: [docs/parity/evidence/chatgpt/history-evidence.json](../parity/evidence/chatgpt/history-evidence.json), [docs/parity/evidence/chatgpt/read-only-answer.json](../parity/evidence/chatgpt/read-only-answer.json), [docs/parity/evidence/chatgpt/reproduce-before-fix.json](../parity/evidence/chatgpt/reproduce-before-fix.json).
+- codex: `not-run`. Tested release evidence: [docs/parity/evidence/codex/history-evidence.json](../parity/evidence/codex/history-evidence.json), [docs/parity/evidence/codex/read-only-answer.json](../parity/evidence/codex/read-only-answer.json), [docs/parity/evidence/codex/reproduce-before-fix.json](../parity/evidence/codex/reproduce-before-fix.json).
 
 ### `skills/why/SKILL.md`
 
@@ -238,5 +238,5 @@ Upstream commit: `df581122cde17e6e27686b5a448bde23e4ad4318`. SHA-256: `442215bf7
 
 Disposition: `runtime`. Aggregate adaptation status: `adapted-reviewed`.
 
-- chatgpt: `blocked`. Tested release evidence: [docs/parity/evidence/chatgpt/history-evidence.json](../parity/evidence/chatgpt/history-evidence.json), [docs/parity/evidence/chatgpt/package-discovery.json](../parity/evidence/chatgpt/package-discovery.json), [docs/parity/evidence/chatgpt/read-only-answer.json](../parity/evidence/chatgpt/read-only-answer.json), [docs/parity/evidence/chatgpt/reproduce-before-fix.json](../parity/evidence/chatgpt/reproduce-before-fix.json).
-- codex: `blocked`. Tested release evidence: [docs/parity/evidence/codex/history-evidence.json](../parity/evidence/codex/history-evidence.json), [docs/parity/evidence/codex/package-discovery.json](../parity/evidence/codex/package-discovery.json), [docs/parity/evidence/codex/read-only-answer.json](../parity/evidence/codex/read-only-answer.json), [docs/parity/evidence/codex/reproduce-before-fix.json](../parity/evidence/codex/reproduce-before-fix.json).
+- chatgpt: `not-run`. Tested release evidence: [docs/parity/evidence/chatgpt/history-evidence.json](../parity/evidence/chatgpt/history-evidence.json), [docs/parity/evidence/chatgpt/package-discovery.json](../parity/evidence/chatgpt/package-discovery.json), [docs/parity/evidence/chatgpt/read-only-answer.json](../parity/evidence/chatgpt/read-only-answer.json), [docs/parity/evidence/chatgpt/reproduce-before-fix.json](../parity/evidence/chatgpt/reproduce-before-fix.json).
+- codex: `not-run`. Tested release evidence: [docs/parity/evidence/codex/history-evidence.json](../parity/evidence/codex/history-evidence.json), [docs/parity/evidence/codex/package-discovery.json](../parity/evidence/codex/package-discovery.json), [docs/parity/evidence/codex/read-only-answer.json](../parity/evidence/codex/read-only-answer.json), [docs/parity/evidence/codex/reproduce-before-fix.json](../parity/evidence/codex/reproduce-before-fix.json).

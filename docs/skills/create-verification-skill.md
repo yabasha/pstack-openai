@@ -96,8 +96,8 @@ Upstream commit: `df581122cde17e6e27686b5a448bde23e4ad4318`. SHA-256: `644f25514
 
 Disposition: `runtime`. Aggregate adaptation status: `adapted-reviewed`.
 
-- chatgpt: `blocked`. Tested release evidence: [docs/parity/evidence/chatgpt/package-discovery.json](../parity/evidence/chatgpt/package-discovery.json), [docs/parity/evidence/chatgpt/real-app-contract.json](../parity/evidence/chatgpt/real-app-contract.json).
-- codex: `blocked`. Tested release evidence: [docs/parity/evidence/codex/package-discovery.json](../parity/evidence/codex/package-discovery.json), [docs/parity/evidence/codex/real-app-contract.json](../parity/evidence/codex/real-app-contract.json).
+- chatgpt: `not-run`. Tested release evidence: [docs/parity/evidence/chatgpt/package-discovery.json](../parity/evidence/chatgpt/package-discovery.json), [docs/parity/evidence/chatgpt/real-app-contract.json](../parity/evidence/chatgpt/real-app-contract.json).
+- codex: `not-run`. Tested release evidence: [docs/parity/evidence/codex/package-discovery.json](../parity/evidence/codex/package-discovery.json), [docs/parity/evidence/codex/real-app-contract.json](../parity/evidence/codex/real-app-contract.json).
 
 ### `skills/create-verification-skill/references/feature-map-example/README.md`
 
@@ -107,8 +107,8 @@ Upstream commit: `df581122cde17e6e27686b5a448bde23e4ad4318`. SHA-256: `cb7bd782c
 
 Disposition: `runtime`. Aggregate adaptation status: `unchanged-reviewed`.
 
-- chatgpt: `blocked`. Tested release evidence: [docs/parity/evidence/chatgpt/real-app-contract.json](../parity/evidence/chatgpt/real-app-contract.json).
-- codex: `blocked`. Tested release evidence: [docs/parity/evidence/codex/real-app-contract.json](../parity/evidence/codex/real-app-contract.json).
+- chatgpt: `not-run`. Tested release evidence: [docs/parity/evidence/chatgpt/real-app-contract.json](../parity/evidence/chatgpt/real-app-contract.json).
+- codex: `not-run`. Tested release evidence: [docs/parity/evidence/codex/real-app-contract.json](../parity/evidence/codex/real-app-contract.json).
 
 ### `skills/create-verification-skill/references/feature-map-example/create-note.md`
 
@@ -118,8 +118,8 @@ Upstream commit: `df581122cde17e6e27686b5a448bde23e4ad4318`. SHA-256: `644a44c74
 
 Disposition: `runtime`. Aggregate adaptation status: `unchanged-reviewed`.
 
-- chatgpt: `blocked`. Tested release evidence: [docs/parity/evidence/chatgpt/real-app-contract.json](../parity/evidence/chatgpt/real-app-contract.json).
-- codex: `blocked`. Tested release evidence: [docs/parity/evidence/codex/real-app-contract.json](../parity/evidence/codex/real-app-contract.json).
+- chatgpt: `not-run`. Tested release evidence: [docs/parity/evidence/chatgpt/real-app-contract.json](../parity/evidence/chatgpt/real-app-contract.json).
+- codex: `not-run`. Tested release evidence: [docs/parity/evidence/codex/real-app-contract.json](../parity/evidence/codex/real-app-contract.json).
 
 ### `skills/create-verification-skill/references/feature-map-example/search.md`
 
@@ -129,5 +129,5 @@ Upstream commit: `df581122cde17e6e27686b5a448bde23e4ad4318`. SHA-256: `6e87b9e7f
 
 Disposition: `runtime`. Aggregate adaptation status: `unchanged-reviewed`.
 
-- chatgpt: `blocked`. Tested release evidence: [docs/parity/evidence/chatgpt/real-app-contract.json](../parity/evidence/chatgpt/real-app-contract.json).
-- codex: `blocked`. Tested release evidence: [docs/parity/evidence/codex/real-app-contract.json](../parity/evidence/codex/real-app-contract.json).
+- chatgpt: `not-run`. Tested release evidence: [docs/parity/evidence/chatgpt/real-app-contract.json](../parity/evidence/chatgpt/real-app-contract.json).
+- codex: `not-run`. Tested release evidence: [docs/parity/evidence/codex/real-app-contract.json](../parity/evidence/codex/real-app-contract.json).

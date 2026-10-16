@@ -1450,7 +1450,7 @@
       "sourcePath": ".cursor-plugin/plugin.json",
       "sourceSha256": "7bc736c60985805f70465e044e5adc7028663f72a73deea7fa3e95e52d70dc8e",
       "destinationPath": "plugin.json",
-      "destinationSha256": "fcf5290db3a0eb3d63716d077181beb9e116ddcbd29585c4a588b659135ea4ba",
+      "destinationSha256": "e41a0d5d9eb5449843a8586067b68ce0f9d361061e8e3d16b5104394b4c40a5e",
       "kind": "support",
       "packageDependencies": [
         "assets/logo.png"
@@ -8183,7 +8183,7 @@
       "sourcePath": "skills/poteto-mode/playbooks/worktree-cleanup.md",
       "sourceSha256": "fc464dc4121926df1704f483c5feca83717c0a40b4651d3e11bd3aedd89441b6",
       "destinationPath": "skills/poteto-mode/playbooks/worktree-cleanup.md",
-      "destinationSha256": "0954f4047c81bac8db2df6611f841fcec2171a8cbb48164917ba48d526701792",
+      "destinationSha256": "610f822cc78a222f6cf8c6cf980436e36ff58b72c820b36c840461375bb8ed10",
       "kind": "playbook",
       "packageDependencies": [
         "skills/poteto-mode/scripts/worktree-audit.sh",

@@ -88,8 +88,8 @@ Upstream commit: `df581122cde17e6e27686b5a448bde23e4ad4318`. SHA-256: `28f9e6171
 
 Disposition: `runtime`. Aggregate adaptation status: `adapted-reviewed`.
 
-- chatgpt: `blocked`. Tested release evidence: [docs/parity/evidence/chatgpt/package-discovery.json](../parity/evidence/chatgpt/package-discovery.json), [docs/parity/evidence/chatgpt/typed-boundary.json](../parity/evidence/chatgpt/typed-boundary.json).
-- codex: `blocked`. Tested release evidence: [docs/parity/evidence/codex/package-discovery.json](../parity/evidence/codex/package-discovery.json), [docs/parity/evidence/codex/typed-boundary.json](../parity/evidence/codex/typed-boundary.json).
+- chatgpt: `not-run`. Tested release evidence: [docs/parity/evidence/chatgpt/package-discovery.json](../parity/evidence/chatgpt/package-discovery.json), [docs/parity/evidence/chatgpt/typed-boundary.json](../parity/evidence/chatgpt/typed-boundary.json).
+- codex: `not-run`. Tested release evidence: [docs/parity/evidence/codex/package-discovery.json](../parity/evidence/codex/package-discovery.json), [docs/parity/evidence/codex/typed-boundary.json](../parity/evidence/codex/typed-boundary.json).
 
 ### `skills/typescript-best-practices/references/patterns.md`
 
@@ -99,5 +99,5 @@ Upstream commit: `df581122cde17e6e27686b5a448bde23e4ad4318`. SHA-256: `faa136205
 
 Disposition: `runtime`. Aggregate adaptation status: `unchanged-reviewed`.
 
-- chatgpt: `blocked`. Tested release evidence: [docs/parity/evidence/chatgpt/typed-boundary.json](../parity/evidence/chatgpt/typed-boundary.json).
-- codex: `blocked`. Tested release evidence: [docs/parity/evidence/codex/typed-boundary.json](../parity/evidence/codex/typed-boundary.json).
+- chatgpt: `not-run`. Tested release evidence: [docs/parity/evidence/chatgpt/typed-boundary.json](../parity/evidence/chatgpt/typed-boundary.json).
+- codex: `not-run`. Tested release evidence: [docs/parity/evidence/codex/typed-boundary.json](../parity/evidence/codex/typed-boundary.json).

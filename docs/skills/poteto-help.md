@@ -128,8 +128,8 @@ Upstream commit: `df581122cde17e6e27686b5a448bde23e4ad4318`. SHA-256: `ea71bcb15
 
 Disposition: `runtime`. Aggregate adaptation status: `adapted-reviewed`.
 
-- chatgpt: `blocked`. Tested release evidence: [docs/parity/evidence/chatgpt/package-discovery.json](../parity/evidence/chatgpt/package-discovery.json), [docs/parity/evidence/chatgpt/route-recipe.json](../parity/evidence/chatgpt/route-recipe.json).
-- codex: `blocked`. Tested release evidence: [docs/parity/evidence/codex/package-discovery.json](../parity/evidence/codex/package-discovery.json), [docs/parity/evidence/codex/route-recipe.json](../parity/evidence/codex/route-recipe.json).
+- chatgpt: `not-run`. Tested release evidence: [docs/parity/evidence/chatgpt/package-discovery.json](../parity/evidence/chatgpt/package-discovery.json), [docs/parity/evidence/chatgpt/route-recipe.json](../parity/evidence/chatgpt/route-recipe.json).
+- codex: `not-run`. Tested release evidence: [docs/parity/evidence/codex/package-discovery.json](../parity/evidence/codex/package-discovery.json), [docs/parity/evidence/codex/route-recipe.json](../parity/evidence/codex/route-recipe.json).
 
 ### `skills/poteto-help/references/prompting.md`
 
@@ -139,8 +139,8 @@ Upstream commit: `df581122cde17e6e27686b5a448bde23e4ad4318`. SHA-256: `463f450c4
 
 Disposition: `runtime`. Aggregate adaptation status: `adapted-reviewed`.
 
-- chatgpt: `blocked`. Tested release evidence: [docs/parity/evidence/chatgpt/route-recipe.json](../parity/evidence/chatgpt/route-recipe.json).
-- codex: `blocked`. Tested release evidence: [docs/parity/evidence/codex/route-recipe.json](../parity/evidence/codex/route-recipe.json).
+- chatgpt: `not-run`. Tested release evidence: [docs/parity/evidence/chatgpt/route-recipe.json](../parity/evidence/chatgpt/route-recipe.json).
+- codex: `not-run`. Tested release evidence: [docs/parity/evidence/codex/route-recipe.json](../parity/evidence/codex/route-recipe.json).
 
 ### `skills/poteto-help/references/recipes.md`
 
@@ -150,5 +150,5 @@ Upstream commit: `df581122cde17e6e27686b5a448bde23e4ad4318`. SHA-256: `187232341
 
 Disposition: `runtime`. Aggregate adaptation status: `adapted-reviewed`.
 
-- chatgpt: `blocked`. Tested release evidence: [docs/parity/evidence/chatgpt/route-recipe.json](../parity/evidence/chatgpt/route-recipe.json).
-- codex: `blocked`. Tested release evidence: [docs/parity/evidence/codex/route-recipe.json](../parity/evidence/codex/route-recipe.json).
+- chatgpt: `not-run`. Tested release evidence: [docs/parity/evidence/chatgpt/route-recipe.json](../parity/evidence/chatgpt/route-recipe.json).
+- codex: `not-run`. Tested release evidence: [docs/parity/evidence/codex/route-recipe.json](../parity/evidence/codex/route-recipe.json).

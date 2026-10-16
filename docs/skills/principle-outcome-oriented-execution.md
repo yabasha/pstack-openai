@@ -81,5 +81,5 @@ Upstream commit: `df581122cde17e6e27686b5a448bde23e4ad4318`. SHA-256: `10eb91633
 
 Disposition: `runtime`. Aggregate adaptation status: `adapted-reviewed`.
 
-- chatgpt: `blocked`. Tested release evidence: [docs/parity/evidence/chatgpt/migration-end-state.json](../parity/evidence/chatgpt/migration-end-state.json), [docs/parity/evidence/chatgpt/package-discovery.json](../parity/evidence/chatgpt/package-discovery.json).
-- codex: `blocked`. Tested release evidence: [docs/parity/evidence/codex/migration-end-state.json](../parity/evidence/codex/migration-end-state.json), [docs/parity/evidence/codex/package-discovery.json](../parity/evidence/codex/package-discovery.json).
+- chatgpt: `not-run`. Tested release evidence: [docs/parity/evidence/chatgpt/migration-end-state.json](../parity/evidence/chatgpt/migration-end-state.json), [docs/parity/evidence/chatgpt/package-discovery.json](../parity/evidence/chatgpt/package-discovery.json).
+- codex: `not-run`. Tested release evidence: [docs/parity/evidence/codex/migration-end-state.json](../parity/evidence/codex/migration-end-state.json), [docs/parity/evidence/codex/package-discovery.json](../parity/evidence/codex/package-discovery.json).
