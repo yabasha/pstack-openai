@@ -301,6 +301,13 @@ class PackageTests(unittest.TestCase):
         self.write('skills/benny/SKILL.md', '---\nname: benny\n---\n')
         self.fails('skills/benny/SKILL.md')
 
+    def test_nested_skill_filename_is_rejected_even_outside_root_directory(self):
+        path = 'automations/benny/skills/setup-benny/SKILL.md'
+        file = self.write(path, '---\nname: setup-benny\n---\nDirect operational instructions.\n')
+        self.assertTrue(any(path in error and 'discovery' in error for error in validate_package(self.root, self.rows)))
+        file.rename(file.with_name('REFERENCE.md'))
+        self.assertEqual([], validate_package(self.root, self.rows))
+
     def test_deferred_reference_blocks_full_acceptance(self):
         self.write('skills/demo/SKILL.md', '[pending](../../references/pending.md)')
         self.rows.append(record('references/pending.md', 'pending'))

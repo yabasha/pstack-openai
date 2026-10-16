@@ -316,6 +316,12 @@ def inspect_package(root: Path, inventory: list[dict], scope=None):
             names[key] = relative
         if file.parent.name == 'benny' or (name and name[1].strip() == 'benny'):
             errors.append(f'{relative}: benny must stay outside registered root skills')
+    for file in sorted(root.rglob('SKILL.md')):
+        relative = file.relative_to(root).as_posix()
+        if relative.startswith(('.git/', '.superpowers/', '.upstream/')):
+            continue
+        if not re.fullmatch(r'skills/[^/]+/SKILL\.md', relative):
+            errors.append(f'{relative}: recursive discovery entrypoint must be a registered root skill; use a reference filename for support instructions')
     manifest = read_json(root/'plugin.json', None)
     if not isinstance(manifest, dict):
         errors.append('plugin.json: missing or invalid manifest')

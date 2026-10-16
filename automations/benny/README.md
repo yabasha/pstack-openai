@@ -2,7 +2,7 @@
 
 Benny provides two optional workflows for Slack issue reports. One triages each report. The other reproduces confirmed bugs, verifies existing fixes, and may prepare a bounded draft fix.
 
-The twelve files are dormant setup and operational sources. All three nested skills remain outside the registered root skills and discovery.
+The twelve files are dormant setup and operational sources. The three nested instruction references use `REFERENCE.md` filenames to stay outside recursive skill discovery.
 
 ## Set it up
 

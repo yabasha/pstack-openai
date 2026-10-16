@@ -28,7 +28,7 @@ i want two host-supported automations that work together in one slack issue chan
 - i want the source channel and root thread coordinates to stay immutable for the whole run.
 - i treat utility and debug bots as evidence, not delegation or fix ownership.
 - i allow subagents to help, but they cannot post to slack or receive slack credentials.
-- i want this entire pack committed at `automations/benny/` in the target repository. its `SKILL.md` files are direct automation instructions, not registered plugin skills.
+- i want this entire pack committed at `automations/benny/` in the target repository. its `REFERENCE.md` files are direct automation instructions, not registered plugin skills.
 - i want shared dependencies such as `how`, `why`, `tdd`, `unslop`, and the required principles verified in the target execution context through supported host capabilities. Host installation and settings changes need separate authorization.
 - i want each live automation prompt to read its committed operational file directly. i do not want plugin cache paths, copied excerpts, or slash-skill discovery.
 - i keep user-owned configuration, feature maps, routing maps, and secrets outside `automations/benny/` so pack refreshes cannot overwrite them.
@@ -61,8 +61,8 @@ the human enters setup by pointing the host at this file. do not look for or inv
 3. merge the entire source pack into `<target-repository>/automations/benny/`.
 4. preserve every destination-only file. never delete unrelated files or overwrite user-owned configuration, feature maps, or routing maps.
 5. when an existing destination file at a source-managed path differs, review the diff and merge without discarding local edits. if ownership is ambiguous, stop and ask before replacing it.
-6. verify that the copied `FOR_AGENTS.md` and `skills/setup-benny/SKILL.md` exist in the target repository.
-7. read and follow `automations/benny/skills/setup-benny/SKILL.md` directly from the target repository.
+6. verify that the copied `FOR_AGENTS.md` and `skills/setup-benny/REFERENCE.md` exist in the target repository.
+7. read and follow `automations/benny/skills/setup-benny/REFERENCE.md` directly from the target repository.
 
 Do not write host settings or enable plugins automatically. Verify the currently available project capability bindings. Missing project support is a setup block.
 
@@ -74,7 +74,7 @@ tell me that `automations/benny/` and any referenced secret-free configuration m
 
 For first-time creation, use an actually exposed, authorized automation creation capability once for triage and once for repro and fix. If the required channel event trigger is unsupported, stop with a setup block. Complete the draft review, approval, readiness check, and Automations editor handoff for the first automation before starting the second.
 
-paraphrase this intent and the finished configuration into each draft. the triage prompt must read and follow `automations/benny/skills/triage-issue-reports/SKILL.md`. the repro prompt must read and follow `automations/benny/skills/reproduce-and-fix-issues/SKILL.md`. use these repo-relative paths only after repository inspection confirms they are committed in the repository where the automation will run.
+paraphrase this intent and the finished configuration into each draft. the triage prompt must read and follow `automations/benny/skills/triage-issue-reports/REFERENCE.md`. the repro prompt must read and follow `automations/benny/skills/reproduce-and-fix-issues/REFERENCE.md`. use these repo-relative paths only after repository inspection confirms they are committed in the repository where the automation will run.
 
 For existing automations, use an exposed authorized inspect/update capability or the user editor. validate the configuration, then use the concise field checklist in the copied setup file so i can edit each automation directly in its editor. do not create duplicates.
 
