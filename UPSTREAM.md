@@ -51,3 +51,7 @@ Port 0.2.0 accepts official pstack 0.15.25 at `e5136d82418d2db3165ea1050d17577cd
 
 Candidate version 0.2.1. Archive SHA-256 5122bc6ef8d8f9a216915d90af410c987196e799e78974f14e7c7af5f3560088. Review SHA-256 805f692cc98d8679869f018b79b761706946e70f5313df2a822bdae0ce08bc7e.
 The inventory stages this candidate. The accepted baseline above remains historical evidence. Structural checks, helper regression tests, and affected host cases must run before separate acceptance.
+
+## Accepted source baseline, 2026-10-16
+
+Port 0.2.1 accepts official pstack 0.15.25 at `99743e9c151c8537cbbf1f98bb38f34ef3368453` after the user-authorized sync and reviewed validation. The [acceptance receipt](docs/parity/upstream-manifests/accepted.json) binds the exact manifest, applied package revision and [source validation evidence](docs/releases/0.2.1.md). Earlier candidate and acceptance sections retain their historical scope. Installed refresh and workflow behavior remain separate observations.
