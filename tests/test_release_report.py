@@ -12,6 +12,20 @@ ROOT = Path(__file__).resolve().parents[1]
 COMMIT = 'a' * 40
 
 
+class CheckedInProvenanceTests(unittest.TestCase):
+    def test_current_package_matches_its_tested_freeze(self):
+        from tools.sync_upstream import committed_tree, rollback_tested_commit
+
+        head = git(ROOT, 'rev-parse', 'HEAD')
+        inventory = json.loads((ROOT / 'docs/parity/inventory.json').read_text())
+        marker = json.loads((ROOT / 'docs/parity/tested-package.json').read_text())
+        manifest = json.loads((ROOT / 'plugin.json').read_text())
+        self.assertEqual(
+            rollback_tested_commit(ROOT, head, committed_tree(ROOT, head), inventory),
+            (marker['testedCommit'], manifest['version']),
+        )
+
+
 class ReleaseSummaryTests(unittest.TestCase):
     def test_not_run_is_not_coverage(self):
         result = summarize_release([], [{'status': 'not-run', 'packageCommit': COMMIT}], COMMIT)
