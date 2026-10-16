@@ -74,7 +74,7 @@ Forbidden claims:
 
 ## Source proof and release evidence
 
-The following statuses come from the current parity inventory. Pending aggregate review remains pending. Structural catalog checks do not establish host support.
+Current host statuses and release evidence: [current parity inventory](../parity/inventory.json), [chatgpt host report](../testing/chatgpt.md), and [codex host report](../testing/codex.md). These records can advance after the source freeze. Structural catalog checks do not establish host support.
 
 ### `skills/principle-subtract-before-you-add/SKILL.md`
 
@@ -83,6 +83,3 @@ Destination: [skills/principle-subtract-before-you-add/SKILL.md](../../skills/pr
 Upstream commit: `df581122cde17e6e27686b5a448bde23e4ad4318`. SHA-256: `a983a50e732c1ed315eba7aaf47a61329e31c4794eb1ab9d25d9945265b31e03`.
 
 Disposition: `runtime`. Aggregate adaptation status: `adapted-reviewed`.
-
-- chatgpt: `blocked`. Tested release evidence: [docs/parity/evidence/chatgpt/dead-path.json](../parity/evidence/chatgpt/dead-path.json), [docs/parity/evidence/chatgpt/package-discovery.json](../parity/evidence/chatgpt/package-discovery.json), [docs/parity/evidence/chatgpt/preserved-behavior.json](../parity/evidence/chatgpt/preserved-behavior.json).
-- codex: `blocked`. Tested release evidence: [docs/parity/evidence/codex/dead-path.json](../parity/evidence/codex/dead-path.json), [docs/parity/evidence/codex/package-discovery.json](../parity/evidence/codex/package-discovery.json), [docs/parity/evidence/codex/preserved-behavior.json](../parity/evidence/codex/preserved-behavior.json).

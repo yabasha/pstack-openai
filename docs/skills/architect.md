@@ -103,7 +103,7 @@ Forbidden claims:
 
 ## Source proof and release evidence
 
-The following statuses come from the current parity inventory. Pending aggregate review remains pending. Structural catalog checks do not establish host support.
+Current host statuses and release evidence: [current parity inventory](../parity/inventory.json), [chatgpt host report](../testing/chatgpt.md), and [codex host report](../testing/codex.md). These records can advance after the source freeze. Structural catalog checks do not establish host support.
 
 ### `skills/architect/SKILL.md`
 
@@ -113,9 +113,6 @@ Upstream commit: `df581122cde17e6e27686b5a448bde23e4ad4318`. SHA-256: `922238947
 
 Disposition: `runtime`. Aggregate adaptation status: `adapted-reviewed`.
 
-- chatgpt: `blocked`. Tested release evidence: [docs/parity/evidence/chatgpt/boundary-design.json](../parity/evidence/chatgpt/boundary-design.json), [docs/parity/evidence/chatgpt/comparable-revisions.json](../parity/evidence/chatgpt/comparable-revisions.json), [docs/parity/evidence/chatgpt/package-discovery.json](../parity/evidence/chatgpt/package-discovery.json), [docs/parity/evidence/chatgpt/preserved-behavior.json](../parity/evidence/chatgpt/preserved-behavior.json), [docs/parity/evidence/chatgpt/read-only-answer.json](../parity/evidence/chatgpt/read-only-answer.json), [docs/parity/evidence/chatgpt/reproduce-before-fix.json](../parity/evidence/chatgpt/reproduce-before-fix.json), [docs/parity/evidence/chatgpt/throwaway-probe.json](../parity/evidence/chatgpt/throwaway-probe.json), [docs/parity/evidence/chatgpt/verifiable-feature.json](../parity/evidence/chatgpt/verifiable-feature.json).
-- codex: `blocked`. Tested release evidence: [docs/parity/evidence/codex/boundary-design.json](../parity/evidence/codex/boundary-design.json), [docs/parity/evidence/codex/comparable-revisions.json](../parity/evidence/codex/comparable-revisions.json), [docs/parity/evidence/codex/package-discovery.json](../parity/evidence/codex/package-discovery.json), [docs/parity/evidence/codex/preserved-behavior.json](../parity/evidence/codex/preserved-behavior.json), [docs/parity/evidence/codex/read-only-answer.json](../parity/evidence/codex/read-only-answer.json), [docs/parity/evidence/codex/reproduce-before-fix.json](../parity/evidence/codex/reproduce-before-fix.json), [docs/parity/evidence/codex/throwaway-probe.json](../parity/evidence/codex/throwaway-probe.json), [docs/parity/evidence/codex/verifiable-feature.json](../parity/evidence/codex/verifiable-feature.json).
-
 ### `skills/architect/references/design-red-flags.md`
 
 Destination: [skills/architect/references/design-red-flags.md](../../skills/architect/references/design-red-flags.md).
@@ -123,9 +120,6 @@ Destination: [skills/architect/references/design-red-flags.md](../../skills/arch
 Upstream commit: `df581122cde17e6e27686b5a448bde23e4ad4318`. SHA-256: `d0e639e4cc588ec865f930d3a4111faad60987ae36925917e319d7ceca7c69ce`.
 
 Disposition: `runtime`. Aggregate adaptation status: `unchanged-reviewed`.
-
-- chatgpt: `blocked`. Tested release evidence: [docs/parity/evidence/chatgpt/boundary-design.json](../parity/evidence/chatgpt/boundary-design.json), [docs/parity/evidence/chatgpt/comparable-revisions.json](../parity/evidence/chatgpt/comparable-revisions.json), [docs/parity/evidence/chatgpt/preserved-behavior.json](../parity/evidence/chatgpt/preserved-behavior.json), [docs/parity/evidence/chatgpt/reproduce-before-fix.json](../parity/evidence/chatgpt/reproduce-before-fix.json), [docs/parity/evidence/chatgpt/throwaway-probe.json](../parity/evidence/chatgpt/throwaway-probe.json).
-- codex: `blocked`. Tested release evidence: [docs/parity/evidence/codex/boundary-design.json](../parity/evidence/codex/boundary-design.json), [docs/parity/evidence/codex/comparable-revisions.json](../parity/evidence/codex/comparable-revisions.json), [docs/parity/evidence/codex/preserved-behavior.json](../parity/evidence/codex/preserved-behavior.json), [docs/parity/evidence/codex/reproduce-before-fix.json](../parity/evidence/codex/reproduce-before-fix.json), [docs/parity/evidence/codex/throwaway-probe.json](../parity/evidence/codex/throwaway-probe.json).
 
 ### `skills/architect/references/rationale-template.md`
 
@@ -135,9 +129,6 @@ Upstream commit: `df581122cde17e6e27686b5a448bde23e4ad4318`. SHA-256: `0cedfccdc
 
 Disposition: `runtime`. Aggregate adaptation status: `unchanged-reviewed`.
 
-- chatgpt: `blocked`. Tested release evidence: [docs/parity/evidence/chatgpt/boundary-design.json](../parity/evidence/chatgpt/boundary-design.json), [docs/parity/evidence/chatgpt/comparable-revisions.json](../parity/evidence/chatgpt/comparable-revisions.json), [docs/parity/evidence/chatgpt/preserved-behavior.json](../parity/evidence/chatgpt/preserved-behavior.json), [docs/parity/evidence/chatgpt/reproduce-before-fix.json](../parity/evidence/chatgpt/reproduce-before-fix.json), [docs/parity/evidence/chatgpt/throwaway-probe.json](../parity/evidence/chatgpt/throwaway-probe.json), [docs/parity/evidence/chatgpt/verifiable-feature.json](../parity/evidence/chatgpt/verifiable-feature.json).
-- codex: `blocked`. Tested release evidence: [docs/parity/evidence/codex/boundary-design.json](../parity/evidence/codex/boundary-design.json), [docs/parity/evidence/codex/comparable-revisions.json](../parity/evidence/codex/comparable-revisions.json), [docs/parity/evidence/codex/preserved-behavior.json](../parity/evidence/codex/preserved-behavior.json), [docs/parity/evidence/codex/reproduce-before-fix.json](../parity/evidence/codex/reproduce-before-fix.json), [docs/parity/evidence/codex/throwaway-probe.json](../parity/evidence/codex/throwaway-probe.json), [docs/parity/evidence/codex/verifiable-feature.json](../parity/evidence/codex/verifiable-feature.json).
-
 ### `skills/architect/references/runner-prompt.md`
 
 Destination: [skills/architect/references/runner-prompt.md](../../skills/architect/references/runner-prompt.md).
@@ -145,6 +136,3 @@ Destination: [skills/architect/references/runner-prompt.md](../../skills/archite
 Upstream commit: `df581122cde17e6e27686b5a448bde23e4ad4318`. SHA-256: `21dd5314aab778c5007228027a4591d97693fbec6ab86524037772b63f40948e`.
 
 Disposition: `runtime`. Aggregate adaptation status: `adapted-reviewed`.
-
-- chatgpt: `blocked`. Tested release evidence: [docs/parity/evidence/chatgpt/boundary-design.json](../parity/evidence/chatgpt/boundary-design.json), [docs/parity/evidence/chatgpt/comparable-revisions.json](../parity/evidence/chatgpt/comparable-revisions.json), [docs/parity/evidence/chatgpt/preserved-behavior.json](../parity/evidence/chatgpt/preserved-behavior.json), [docs/parity/evidence/chatgpt/reproduce-before-fix.json](../parity/evidence/chatgpt/reproduce-before-fix.json), [docs/parity/evidence/chatgpt/throwaway-probe.json](../parity/evidence/chatgpt/throwaway-probe.json), [docs/parity/evidence/chatgpt/verifiable-feature.json](../parity/evidence/chatgpt/verifiable-feature.json).
-- codex: `blocked`. Tested release evidence: [docs/parity/evidence/codex/boundary-design.json](../parity/evidence/codex/boundary-design.json), [docs/parity/evidence/codex/comparable-revisions.json](../parity/evidence/codex/comparable-revisions.json), [docs/parity/evidence/codex/preserved-behavior.json](../parity/evidence/codex/preserved-behavior.json), [docs/parity/evidence/codex/reproduce-before-fix.json](../parity/evidence/codex/reproduce-before-fix.json), [docs/parity/evidence/codex/throwaway-probe.json](../parity/evidence/codex/throwaway-probe.json), [docs/parity/evidence/codex/verifiable-feature.json](../parity/evidence/codex/verifiable-feature.json).

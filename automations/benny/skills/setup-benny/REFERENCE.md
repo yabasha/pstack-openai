@@ -8,7 +8,7 @@ disable-model-invocation: true
 
 Benny ships as a dormant automation pack inside pstack. The plugin manifest exposes only pstack's normal skill root; this file and the two operational files are not slash skills.
 
-The human enters setup by pointing the host at the pack's `FOR_AGENTS.md`. The bootstrap flow copies the whole pack into the target repository, then reads this file directly at `automations/benny/skills/setup-benny/SKILL.md`.
+The human enters setup by pointing the host at the pack's `FOR_AGENTS.md`. The bootstrap flow copies the whole pack into the target repository, then reads this file directly at `automations/benny/skills/setup-benny/REFERENCE.md`.
 
 Benny needs external configuration and two live host-supported automations.
 
@@ -50,7 +50,7 @@ Do not count a skill loaded from the current session or a user-scoped plugin. Th
 
 If project-scoped plugin installation is unavailable or any shared dependency does not resolve, stop and explain the failure.
 
-The Benny files are read directly from `automations/benny/`. Do not add that directory to a plugin manifest or expect its `SKILL.md` files to appear in the slash-skill list.
+The Benny files are read directly from `automations/benny/`. Do not add that directory to a plugin manifest or expect its `REFERENCE.md` files to appear in the slash-skill list.
 
 Tell the user that `automations/benny/` and any referenced secret-free configuration must be committed before either automation is enabled. Do not commit them unless the user asks.
 
@@ -177,7 +177,7 @@ For each automation:
 Give the authorized host workflow this complete triage intent, filled from configuration:
 
 - Name `benny-triage`.
-- Read and follow `automations/benny/skills/triage-issue-reports/SKILL.md` for every run.
+- Read and follow `automations/benny/skills/triage-issue-reports/REFERENCE.md` for every run.
 - Trigger on each new top-level report in the configured source Slack channel.
 - Read the triggering thread and reply only inside it.
 - Use the configured issue-tracker integration.
@@ -188,7 +188,7 @@ Give the authorized host workflow this complete triage intent, filled from confi
 After the triage editor handoff is complete, give the authorized host workflow this complete repro and fix intent:
 
 - Name `benny-reproduce`.
-- Read and follow `automations/benny/skills/reproduce-and-fix-issues/SKILL.md` for every run.
+- Read and follow `automations/benny/skills/reproduce-and-fix-issues/REFERENCE.md` for every run.
 - Trigger on the same new top-level reports in the configured source Slack channel.
 - Use the configured repository and default branch.
 - Read the source thread and reply only inside it.
@@ -210,7 +210,7 @@ Finish configuration, routing, control-adapter, and feature-map validation. Then
 For the existing triage automation, update:
 
 - Name and description
-- Direct instruction to read `automations/benny/skills/triage-issue-reports/SKILL.md`
+- Direct instruction to read `automations/benny/skills/triage-issue-reports/REFERENCE.md`
 - New top-level Slack report trigger and source channel
 - Slack thread read and reply capabilities
 - Issue-tracker integration
@@ -219,7 +219,7 @@ For the existing triage automation, update:
 For the existing repro automation, update:
 
 - Name and description
-- Direct instruction to read `automations/benny/skills/reproduce-and-fix-issues/SKILL.md`
+- Direct instruction to read `automations/benny/skills/reproduce-and-fix-issues/REFERENCE.md`
 - Matching Slack trigger and source channel
 - Repository and default branch
 - Slack thread read and reply capabilities

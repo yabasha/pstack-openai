@@ -2,6 +2,7 @@ import importlib.util
 import json
 import os
 from pathlib import Path
+import shlex
 import subprocess
 import tempfile
 import unittest
@@ -87,6 +88,52 @@ class WorktreeAuditTests(unittest.TestCase):
         prs.write_text('[]')
         result = subprocess.run(['bash', str(HELPER.with_suffix('.sh')), '--repo', str(self.repo), '--base', 'base', '--history-map', str(history), '--pr-state', str(prs)], check=True, capture_output=True, text=True)
         self.assertEqual(json.loads(result.stdout)[0]['worktree'], str(path))
+
+    def test_documented_bun_wrapper_preserves_arguments_and_worktrees(self):
+        path = self.candidate()
+        note = path / 'precious notes.txt'
+        note.write_text('preserve this work\n')
+        history = Path(self.temp.name) / 'authorized history export.json'
+        prs = Path(self.temp.name) / 'authorized PR export.json'
+        history.write_text(json.dumps({str(path): None}))
+        prs.write_text('[]')
+        before = {
+            'worktrees': self.git('worktree', 'list', '--porcelain', '-z').stdout,
+            'primary_status': self.git('status', '--porcelain=v1', '-z').stdout,
+            'candidate_status': subprocess.run(
+                ['git', '-C', str(path), 'status', '--porcelain=v1', '-z'],
+                check=True, capture_output=True).stdout,
+            'note': note.read_bytes(),
+            'history': history.read_bytes(),
+            'prs': prs.read_bytes(),
+        }
+        playbook = ROOT / 'skills/poteto-mode/playbooks/worktree-cleanup.md'
+        documented = next(line.strip() for line in playbook.read_text().splitlines()
+                          if line.strip().startswith('bun --no-install -e '))
+        replacements = {
+            '<repository-path>': str(self.repo),
+            '<verified-local-base-ref>': self.git('rev-parse', 'base').stdout.decode().strip(),
+            '<authorized-history-export.json>': str(history),
+            '<authorized-pr-export.json>': str(prs),
+        }
+        command = [replacements.get(argument, argument) for argument in shlex.split(documented)]
+        result = subprocess.run(command, cwd=ROOT, capture_output=True, text=True)
+        self.assertEqual(result.returncode, 0, result.stderr)
+        rows = json.loads(result.stdout)
+        self.assertEqual(len(rows), 1)
+        self.assertEqual(rows[0]['worktree'], str(path))
+        self.assertIs(rows[0]['merged'], True)
+        self.assertEqual(rows[0]['bucket'], 'hold-wip')
+        self.assertEqual(rows[0]['pr'], [])
+        self.assertTrue(rows[0]['history_known'])
+        self.assertEqual(self.git('worktree', 'list', '--porcelain', '-z').stdout, before['worktrees'])
+        self.assertEqual(self.git('status', '--porcelain=v1', '-z').stdout, before['primary_status'])
+        self.assertEqual(subprocess.run(
+            ['git', '-C', str(path), 'status', '--porcelain=v1', '-z'],
+            check=True, capture_output=True).stdout, before['candidate_status'])
+        self.assertEqual(note.read_bytes(), before['note'])
+        self.assertEqual(history.read_bytes(), before['history'])
+        self.assertEqual(prs.read_bytes(), before['prs'])
 
     def test_explicit_merged_review(self):
         path = self.candidate()

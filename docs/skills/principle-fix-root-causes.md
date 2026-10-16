@@ -79,7 +79,7 @@ Forbidden claims:
 
 ## Source proof and release evidence
 
-The following statuses come from the current parity inventory. Pending aggregate review remains pending. Structural catalog checks do not establish host support.
+Current host statuses and release evidence: [current parity inventory](../parity/inventory.json), [chatgpt host report](../testing/chatgpt.md), and [codex host report](../testing/codex.md). These records can advance after the source freeze. Structural catalog checks do not establish host support.
 
 ### `skills/principle-fix-root-causes/SKILL.md`
 
@@ -88,6 +88,3 @@ Destination: [skills/principle-fix-root-causes/SKILL.md](../../skills/principle-
 Upstream commit: `df581122cde17e6e27686b5a448bde23e4ad4318`. SHA-256: `ba4cd38da1dcc8fe5432feb64457cba95594736a9b21b2ebf8f8c52aee068707`.
 
 Disposition: `runtime`. Aggregate adaptation status: `adapted-reviewed`.
-
-- chatgpt: `blocked`. Tested release evidence: [docs/parity/evidence/chatgpt/package-discovery.json](../parity/evidence/chatgpt/package-discovery.json), [docs/parity/evidence/chatgpt/symptom-repro.json](../parity/evidence/chatgpt/symptom-repro.json).
-- codex: `blocked`. Tested release evidence: [docs/parity/evidence/codex/package-discovery.json](../parity/evidence/codex/package-discovery.json), [docs/parity/evidence/codex/symptom-repro.json](../parity/evidence/codex/symptom-repro.json).

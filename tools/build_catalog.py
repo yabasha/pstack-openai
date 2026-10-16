@@ -107,7 +107,10 @@ def build_catalog(root: Path, inventory: list[dict], entries: list[dict]) -> dic
         lines += ['## Dependencies', '', bullets([link(path) for path in entry['dependencies']]) or 'No dependencies declared in the reviewed record.', '',
                   '## Host limits', '', bullets(entry['capabilityLimits']), '',
                   '## Source proof and release evidence', '',
-                  'The following statuses come from the current parity inventory. Pending aggregate review remains pending. Structural catalog checks do not establish host support.', '']
+                  f'Current host statuses and release evidence: {link("docs/parity/inventory.json", "current parity inventory")}, '
+                  f'{link("docs/testing/chatgpt.md", "chatgpt host report")}, and '
+                  f'{link("docs/testing/codex.md", "codex host report")}. '
+                  'These records can advance after the source freeze. Structural catalog checks do not establish host support.', '']
         for source_path in entry['sourcePaths']:
             if source_path not in sources:
                 raise ValueError(f'Uninventoried source {source_path}')
@@ -116,12 +119,6 @@ def build_catalog(root: Path, inventory: list[dict], entries: list[dict]) -> dic
                       f'Destination: {link(row["destinationPath"])}.', '',
                       f'Upstream commit: `{row["upstreamCommit"]}`. SHA-256: `{row["upstreamSha256"]}`.', '',
                       f'Disposition: `{row["disposition"]}`. Aggregate adaptation status: `{row["adaptationStatus"]}`.', '']
-            for host in ('chatgpt', 'codex'):
-                verification = row['verification'][host]
-                evidence = verification['evidence']
-                refs = ', '.join(link(path) for path in evidence) if evidence else 'none recorded'
-                lines += [f'- {host}: `{verification["status"]}`. Tested release evidence: {refs}.']
-            lines.append('')
         pages[destination] = '\n'.join(lines).rstrip() + '\n'
     for destination, title, selection in (
         ('docs/skills/README.md', 'Skill catalog', entries),

@@ -1450,7 +1450,7 @@
       "sourcePath": ".cursor-plugin/plugin.json",
       "sourceSha256": "7bc736c60985805f70465e044e5adc7028663f72a73deea7fa3e95e52d70dc8e",
       "destinationPath": "plugin.json",
-      "destinationSha256": "fcf5290db3a0eb3d63716d077181beb9e116ddcbd29585c4a588b659135ea4ba",
+      "destinationSha256": "6a4d33e5a6a9f8974f31b4233dcc0b9fa558599246436dd9a4a3aa8b4567f174",
       "kind": "support",
       "packageDependencies": [
         "assets/logo.png"
@@ -1799,7 +1799,7 @@
       "sourcePath": "automations/benny/FOR_AGENTS.md",
       "sourceSha256": "a125e317dec1b8731fdc71f404c669f1127a73af932f7a7b8b8744a5542328a7",
       "destinationPath": "automations/benny/FOR_AGENTS.md",
-      "destinationSha256": "bc352a78811661147cceff87f468d171b8c17629b61a959065d14668773bebf6",
+      "destinationSha256": "099ee5b792ce47957350f7e34c06f070038b36a4cca094539ba5950364c3d7e8",
       "kind": "support",
       "packageDependencies": [
         "references/host-capabilities.md",
@@ -1989,7 +1989,7 @@
       "sourcePath": "automations/benny/README.md",
       "sourceSha256": "ca3c42cbb7f0bf7068f7407eb355815e6c234d5c2786942f3cbe751a3690024b",
       "destinationPath": "automations/benny/README.md",
-      "destinationSha256": "c939765bd07551addd0bfa6b59b9ceed8b227272b717713c1fe15be7c3e1132c",
+      "destinationSha256": "dee82d2c8c2750a219be78ac7e67456dfe83ef86e14222411f82b908aba5af6d",
       "kind": "support",
       "packageDependencies": [
         "references/host-capabilities.md",
@@ -2077,7 +2077,7 @@
     {
       "sourcePath": "automations/benny/skills/reproduce-and-fix-issues/SKILL.md",
       "sourceSha256": "1363cc07343fe86aab42853b1bd4563288cbcbdf12f1c265b3b3b1afa25c09cb",
-      "destinationPath": "automations/benny/skills/reproduce-and-fix-issues/SKILL.md",
+      "destinationPath": "automations/benny/skills/reproduce-and-fix-issues/REFERENCE.md",
       "destinationSha256": "a80f670a073aa7a13e7501d22e346f2c6f34068073f540d1703ca1178dadd06b",
       "kind": "support",
       "packageDependencies": [
@@ -2472,8 +2472,8 @@
     {
       "sourcePath": "automations/benny/skills/setup-benny/SKILL.md",
       "sourceSha256": "5a3cbe63360c9f6373b6cb6c79a1eaf7e0eba181bfaa1577e2e6431af3407282",
-      "destinationPath": "automations/benny/skills/setup-benny/SKILL.md",
-      "destinationSha256": "84da53798da5478488767ac1abde00489cb87675626f5ad6fc8dbd16b8cd3eea",
+      "destinationPath": "automations/benny/skills/setup-benny/REFERENCE.md",
+      "destinationSha256": "7be95406bb1c43deeb2ef5fb5ef9dc4ac603db5cc62c85cc56d7dc7a3fe62378",
       "kind": "support",
       "packageDependencies": [
         "references/host-capabilities.md",
@@ -2762,7 +2762,7 @@
     {
       "sourcePath": "automations/benny/skills/triage-issue-reports/SKILL.md",
       "sourceSha256": "216a758b8711e64d19a55e6032c496527daac6364d010611040f3c04ef1a448f",
-      "destinationPath": "automations/benny/skills/triage-issue-reports/SKILL.md",
+      "destinationPath": "automations/benny/skills/triage-issue-reports/REFERENCE.md",
       "destinationSha256": "11d9e2e705a51d7cd6881ad2ba6344eaa9c3541c2e0abbe5418691dc08dc5e06",
       "kind": "support",
       "packageDependencies": [
@@ -3038,7 +3038,7 @@
       "sourcePath": "automations/benny/templates/reproduce-automation-prompt.md",
       "sourceSha256": "71ec574f1844e379394ae4ef14c48d7df10afbaa319d395c788d7f856f0e6899",
       "destinationPath": "automations/benny/templates/reproduce-automation-prompt.md",
-      "destinationSha256": "c624c2ab52acf8c15263e81d1178bed2c37c6e75eaeed867b2d636e3fbd69467",
+      "destinationSha256": "a81772aabac7fae0807aad4ad2e7722f1de59b280ba002e2a64d165bea0603aa",
       "kind": "support",
       "packageDependencies": [
         "references/host-capabilities.md",
@@ -3139,7 +3139,7 @@
       "sourcePath": "automations/benny/templates/triage-automation-prompt.md",
       "sourceSha256": "e0bba594547834f013ec805915610eb597e7929efe3ffbe85ae00339ee16d474",
       "destinationPath": "automations/benny/templates/triage-automation-prompt.md",
-      "destinationSha256": "94a9f191892ab4901da29a556a662bf6e85b0746ccb793adb07a53561f263f14",
+      "destinationSha256": "c1a330047485c3e9028428ed561e127d1875020ca2524f8c26c234dc4f05a70c",
       "kind": "support",
       "packageDependencies": [
         "references/host-capabilities.md",
@@ -8183,7 +8183,7 @@
       "sourcePath": "skills/poteto-mode/playbooks/worktree-cleanup.md",
       "sourceSha256": "fc464dc4121926df1704f483c5feca83717c0a40b4651d3e11bd3aedd89441b6",
       "destinationPath": "skills/poteto-mode/playbooks/worktree-cleanup.md",
-      "destinationSha256": "0954f4047c81bac8db2df6611f841fcec2171a8cbb48164917ba48d526701792",
+      "destinationSha256": "610f822cc78a222f6cf8c6cf980436e36ff58b72c820b36c840461375bb8ed10",
       "kind": "playbook",
       "packageDependencies": [
         "skills/poteto-mode/scripts/worktree-audit.sh",

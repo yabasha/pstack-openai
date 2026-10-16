@@ -84,7 +84,7 @@ Forbidden claims:
 
 ## Source proof and release evidence
 
-The following statuses come from the current parity inventory. Pending aggregate review remains pending. Structural catalog checks do not establish host support.
+Current host statuses and release evidence: [current parity inventory](../parity/inventory.json), [chatgpt host report](../testing/chatgpt.md), and [codex host report](../testing/codex.md). These records can advance after the source freeze. Structural catalog checks do not establish host support.
 
 ### `skills/no-comments/SKILL.md`
 
@@ -94,9 +94,6 @@ Upstream commit: `df581122cde17e6e27686b5a448bde23e4ad4318`. SHA-256: `5c5b08822
 
 Disposition: `runtime`. Aggregate adaptation status: `adapted-reviewed`.
 
-- chatgpt: `blocked`. Tested release evidence: [docs/parity/evidence/chatgpt/authorized-program.json](../parity/evidence/chatgpt/authorized-program.json), [docs/parity/evidence/chatgpt/draft-only-authorized.json](../parity/evidence/chatgpt/draft-only-authorized.json), [docs/parity/evidence/chatgpt/legal-header.json](../parity/evidence/chatgpt/legal-header.json), [docs/parity/evidence/chatgpt/package-discovery.json](../parity/evidence/chatgpt/package-discovery.json), [docs/parity/evidence/chatgpt/stack-resume.json](../parity/evidence/chatgpt/stack-resume.json), [docs/parity/evidence/chatgpt/units-and-proof.json](../parity/evidence/chatgpt/units-and-proof.json).
-- codex: `blocked`. Tested release evidence: [docs/parity/evidence/codex/authorized-program.json](../parity/evidence/codex/authorized-program.json), [docs/parity/evidence/codex/draft-only-authorized.json](../parity/evidence/codex/draft-only-authorized.json), [docs/parity/evidence/codex/legal-header.json](../parity/evidence/codex/legal-header.json), [docs/parity/evidence/codex/package-discovery.json](../parity/evidence/codex/package-discovery.json), [docs/parity/evidence/codex/stack-resume.json](../parity/evidence/codex/stack-resume.json), [docs/parity/evidence/codex/units-and-proof.json](../parity/evidence/codex/units-and-proof.json).
-
 ### `agents/comment-sicko.md`
 
 Destination: [references/agent-prompts/comment-sicko.md](../../references/agent-prompts/comment-sicko.md).
@@ -104,6 +101,3 @@ Destination: [references/agent-prompts/comment-sicko.md](../../references/agent-
 Upstream commit: `df581122cde17e6e27686b5a448bde23e4ad4318`. SHA-256: `c0fd0383008da45fc78cfac17b9007d62c42f87ad1c8d5c2fb658b1fd01f7c82`.
 
 Disposition: `relocated`. Aggregate adaptation status: `adapted-reviewed`.
-
-- chatgpt: `blocked`. Tested release evidence: [docs/parity/evidence/chatgpt/inherited-identical-models.json](../parity/evidence/chatgpt/inherited-identical-models.json), [docs/parity/evidence/chatgpt/legal-header.json](../parity/evidence/chatgpt/legal-header.json), [docs/parity/evidence/chatgpt/missing-model-enumeration.json](../parity/evidence/chatgpt/missing-model-enumeration.json), [docs/parity/evidence/chatgpt/unknown-actual-model.json](../parity/evidence/chatgpt/unknown-actual-model.json), [docs/parity/evidence/chatgpt/unsupported-selected-model.json](../parity/evidence/chatgpt/unsupported-selected-model.json).
-- codex: `blocked`. Tested release evidence: [docs/parity/evidence/codex/inherited-identical-models.json](../parity/evidence/codex/inherited-identical-models.json), [docs/parity/evidence/codex/legal-header.json](../parity/evidence/codex/legal-header.json), [docs/parity/evidence/codex/missing-model-enumeration.json](../parity/evidence/codex/missing-model-enumeration.json), [docs/parity/evidence/codex/unknown-actual-model.json](../parity/evidence/codex/unknown-actual-model.json), [docs/parity/evidence/codex/unsupported-selected-model.json](../parity/evidence/codex/unsupported-selected-model.json).

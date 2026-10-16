@@ -156,13 +156,15 @@ class DependencyTests(unittest.TestCase):
             self.assertTrue(dep["binding"]["paths"])
             self.assertEqual(dep["executionStatus"], "blocked")
 
-    def test_case_is_behavioral_and_blocked(self):
+    def test_case_is_behavioral_with_explicit_host_status(self):
         case = json.loads((ROOT / "docs/parity/cases/dependencies.json").read_text())
         registry = json.loads((ROOT / "docs/parity/case-registry.json").read_text())
         entry = next(e for e in registry["entries"] if e["caseId"] == case["id"])
         self.assertFalse(entry["structuralOnly"])
         self.assertEqual(entry["requiredHosts"], ["chatgpt", "codex"])
-        self.assertEqual(entry["hostStatus"], {"chatgpt": "blocked", "codex": "blocked"})
+        self.assertEqual(set(entry["hostStatus"]), {"chatgpt", "codex"})
+        self.assertTrue(all(status in {"not-run", "pass", "reduced-pass", "blocked", "fail"}
+                            for status in entry["hostStatus"].values()))
         self.assertEqual(entry["sourcePaths"], case["sourcePaths"])
         from tools.validate_package import schema_errors
         schema = json.loads((ROOT / "docs/parity/cases/schema.json").read_text())
@@ -173,9 +175,11 @@ class DependencyTests(unittest.TestCase):
         for host in ("chatgpt", "codex"):
             with self.subTest(host=host):
                 receipt = json.loads((ROOT / f"docs/parity/evidence/{host}/dependency-readiness.json").read_text())
-                self.assertEqual(receipt["status"], "blocked")
-                self.assertEqual(receipt["execution"], "unavailable")
-                self.assertEqual(receipt["successfulOperations"], [])
+                receipt.update(status="blocked", execution="unavailable", successfulOperations=[],
+                               nativeObservations=[], exposedTools=[],
+                               input="Synthetic dependency probe with no observed operations.",
+                               observedOutput="Synthetic blocked fixture; not a host result.",
+                               limits=["Synthetic fixture: required operations unavailable."])
                 self.assertEqual(validate_evidence(receipt, receipt["packageCommit"], ROOT), [])
                 for status in ("pass", "reduced-pass"):
                     promoted = copy.deepcopy(receipt)

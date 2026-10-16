@@ -109,6 +109,78 @@ class EvidenceTests(unittest.TestCase):
         self.record['successfulOperations'] = [x for x in self.record['successfulOperations'] if x['operation'] != 'inspect-result']
         self.assertTrue(self.check())
 
+    def test_uncertain_result_needs_measured_and_persisted_work(self):
+        registry = json.loads((self.root / 'docs/parity/case-registry.json').read_text())
+        self.record.update(caseId='uncertain-result', execution='direct',
+            sourcePaths=next(e['sourcePaths'] for e in registry['entries'] if e['caseId'] == 'uncertain-result'),
+            observedOutput='Synthetic review: measurement and saved trail remain unavailable.',
+            successfulOperations=[dict(operation='read', tool='observed.spawn', evidence='result.txt')],
+            nativeObservations=[dict(observation='review-outcome', evidence='result.txt', reviewedBy='synthetic-reviewer')])
+        self.record['permissions'].update(execution='denied', writes='denied')
+        self.assertTrue(self.check(), 'A reviewed plan without execution or a saved trail is not a full run')
+
+        self.record.update(status='reduced-pass', limits=['Execution and trail persistence denied; read-only investigation.'])
+        self.assertEqual([], self.check())
+
+        (self.root / 'measurement.txt').write_text('SYNTHETIC measurement receipt: baseline=10, revised=8; deployment INCONCLUSIVE')
+        (self.root / 'trail.tsv').write_text('SYNTHETIC persisted and read-back decision trail for validator tests')
+        self.record.update(status='pass', limits=['Deployment evidence remains inaccessible.'],
+            observedOutput='Synthetic measurement completed and trail saved; deployment remains INCONCLUSIVE.')
+        self.record['permissions'].update(execution='granted', writes='granted')
+        self.record['artifacts'] += ['measurement.txt', 'trail.tsv']
+        self.record['successfulOperations'] += [
+            dict(operation='execution', tool='observed.spawn', evidence='measurement.txt'),
+            dict(operation='persistence', tool='observed.spawn', evidence='trail.tsv')]
+        self.assertEqual([], self.check())
+        for missing in ('execution', 'persistence'):
+            with self.subTest(missing=missing):
+                operations = self.record['successfulOperations']
+                self.record['successfulOperations'] = [o for o in operations if o['operation'] != missing]
+                self.assertTrue(self.check(), 'A prose claim cannot replace the missing operation')
+                self.record['successfulOperations'] = operations
+        for denied in ('execution', 'writes'):
+            with self.subTest(denied=denied):
+                self.record['permissions'][denied] = 'denied'
+                self.assertTrue(self.check(), 'Observed work cannot replace its required authorization')
+                self.record['permissions'][denied] = 'granted'
+
+    def test_shared_path_full_run_requires_observed_independent_workers(self):
+        registry = json.loads((self.root / 'docs/parity/case-registry.json').read_text())
+        self.record.update(caseId='shared-path-conflict', execution='direct',
+            sourcePaths=next(e['sourcePaths'] for e in registry['entries'] if e['caseId'] == 'shared-path-conflict'),
+            successfulOperations=[dict(operation=o, tool='observed.spawn', evidence='result.txt')
+                                  for o in ('resolve-ownership', 'isolated-write', 'read')])
+        self.record['permissions']['execution'] = 'denied'
+        self.assertTrue(self.check(), 'One direct writer cannot establish worker ownership coordination')
+
+        self.record.update(status='reduced-pass', execution='sequential', limits=['No independent workers; one authorized writer.'])
+        self.assertEqual([], self.check())
+
+        self.record.update(status='pass', execution='workers', limits=[])
+        self.record['permissions']['execution'] = 'granted'
+        (self.root / 'ownership.txt').write_text('SYNTHETIC pre-dispatch allocation: worker-a -> a.txt; worker-b -> b.txt')
+        self.record['artifacts'].append('ownership.txt')
+        self.record['successfulOperations'] = [dict(operation='resolve-ownership', tool='observed.spawn', evidence='ownership.txt')]
+        for worker in ('a', 'b'):
+            output = f'{worker}.txt'
+            (self.root / output).write_text(f'SYNTHETIC completed output owned by worker-{worker}')
+            self.record['artifacts'].append(output)
+            self.record['successfulOperations'] += [
+                dict(operation=o, tool='observed.spawn', evidence=output, assignmentId=f'worker-{worker}')
+                for o in ('spawn', 'wait', 'isolated-write', 'inspect-result', 'read')]
+        self.assertEqual([], self.check())
+        for missing in ('spawn', 'wait', 'inspect-result'):
+            with self.subTest(missing=missing):
+                operations = self.record['successfulOperations']
+                self.record['successfulOperations'] = [o for o in operations if o['operation'] != missing]
+                self.assertTrue(self.check(), 'Worker completion needs dispatch, wait and inspected results')
+                self.record['successfulOperations'] = operations
+        self.record['permissions']['execution'] = 'denied'
+        self.assertTrue(self.check(), 'Worker dispatch requires execution permission')
+        self.record['permissions']['execution'] = 'granted'
+        self.record['execution'] = 'direct'
+        self.assertTrue(self.check(), 'Relabeling worker evidence direct cannot bypass the required method')
+
     def test_case_specific_full_observations_required(self):
         registry = json.loads((self.root / 'docs/parity/case-registry.json').read_text())
         for entry in registry['entries']:

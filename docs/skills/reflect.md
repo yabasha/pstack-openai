@@ -84,7 +84,7 @@ Forbidden claims:
 
 ## Source proof and release evidence
 
-The following statuses come from the current parity inventory. Pending aggregate review remains pending. Structural catalog checks do not establish host support.
+Current host statuses and release evidence: [current parity inventory](../parity/inventory.json), [chatgpt host report](../testing/chatgpt.md), and [codex host report](../testing/codex.md). These records can advance after the source freeze. Structural catalog checks do not establish host support.
 
 ### `skills/reflect/SKILL.md`
 
@@ -94,9 +94,6 @@ Upstream commit: `df581122cde17e6e27686b5a448bde23e4ad4318`. SHA-256: `31b8fb866
 
 Disposition: `runtime`. Aggregate adaptation status: `adapted-reviewed`.
 
-- chatgpt: `blocked`. Tested release evidence: [docs/parity/evidence/chatgpt/approval-before-edit.json](../parity/evidence/chatgpt/approval-before-edit.json), [docs/parity/evidence/chatgpt/dependency-readiness.json](../parity/evidence/chatgpt/dependency-readiness.json), [docs/parity/evidence/chatgpt/package-discovery.json](../parity/evidence/chatgpt/package-discovery.json).
-- codex: `blocked`. Tested release evidence: [docs/parity/evidence/codex/approval-before-edit.json](../parity/evidence/codex/approval-before-edit.json), [docs/parity/evidence/codex/dependency-readiness.json](../parity/evidence/codex/dependency-readiness.json), [docs/parity/evidence/codex/package-discovery.json](../parity/evidence/codex/package-discovery.json).
-
 ### `skills/reflect/references/divergent-reviewer.md`
 
 Destination: [skills/reflect/references/divergent-reviewer.md](../../skills/reflect/references/divergent-reviewer.md).
@@ -104,9 +101,6 @@ Destination: [skills/reflect/references/divergent-reviewer.md](../../skills/refl
 Upstream commit: `df581122cde17e6e27686b5a448bde23e4ad4318`. SHA-256: `221dfc0abf7cbcd25e1da3cd87323f5d1050fc3bf652e096d093584e183c98fb`.
 
 Disposition: `runtime`. Aggregate adaptation status: `adapted-reviewed`.
-
-- chatgpt: `blocked`. Tested release evidence: [docs/parity/evidence/chatgpt/approval-before-edit.json](../parity/evidence/chatgpt/approval-before-edit.json).
-- codex: `blocked`. Tested release evidence: [docs/parity/evidence/codex/approval-before-edit.json](../parity/evidence/codex/approval-before-edit.json).
 
 ### `skills/reflect/references/judgment-reviewer.md`
 
@@ -116,9 +110,6 @@ Upstream commit: `df581122cde17e6e27686b5a448bde23e4ad4318`. SHA-256: `a40ecb9b2
 
 Disposition: `runtime`. Aggregate adaptation status: `adapted-reviewed`.
 
-- chatgpt: `blocked`. Tested release evidence: [docs/parity/evidence/chatgpt/approval-before-edit.json](../parity/evidence/chatgpt/approval-before-edit.json).
-- codex: `blocked`. Tested release evidence: [docs/parity/evidence/codex/approval-before-edit.json](../parity/evidence/codex/approval-before-edit.json).
-
 ### `skills/reflect/references/synthesizer.md`
 
 Destination: [skills/reflect/references/synthesizer.md](../../skills/reflect/references/synthesizer.md).
@@ -127,9 +118,6 @@ Upstream commit: `df581122cde17e6e27686b5a448bde23e4ad4318`. SHA-256: `2f76c847e
 
 Disposition: `runtime`. Aggregate adaptation status: `adapted-reviewed`.
 
-- chatgpt: `blocked`. Tested release evidence: [docs/parity/evidence/chatgpt/approval-before-edit.json](../parity/evidence/chatgpt/approval-before-edit.json).
-- codex: `blocked`. Tested release evidence: [docs/parity/evidence/codex/approval-before-edit.json](../parity/evidence/codex/approval-before-edit.json).
-
 ### `skills/reflect/references/tooling-reviewer.md`
 
 Destination: [skills/reflect/references/tooling-reviewer.md](../../skills/reflect/references/tooling-reviewer.md).
@@ -137,6 +125,3 @@ Destination: [skills/reflect/references/tooling-reviewer.md](../../skills/reflec
 Upstream commit: `df581122cde17e6e27686b5a448bde23e4ad4318`. SHA-256: `bc49ced90fa81eaba3083b88aeb430d900a6d8f14ff40c1d6b52263bacfc77b6`.
 
 Disposition: `runtime`. Aggregate adaptation status: `adapted-reviewed`.
-
-- chatgpt: `blocked`. Tested release evidence: [docs/parity/evidence/chatgpt/approval-before-edit.json](../parity/evidence/chatgpt/approval-before-edit.json).
-- codex: `blocked`. Tested release evidence: [docs/parity/evidence/codex/approval-before-edit.json](../parity/evidence/codex/approval-before-edit.json).

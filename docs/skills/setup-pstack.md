@@ -79,7 +79,7 @@ Forbidden claims:
 
 ## Source proof and release evidence
 
-The following statuses come from the current parity inventory. Pending aggregate review remains pending. Structural catalog checks do not establish host support.
+Current host statuses and release evidence: [current parity inventory](../parity/inventory.json), [chatgpt host report](../testing/chatgpt.md), and [codex host report](../testing/codex.md). These records can advance after the source freeze. Structural catalog checks do not establish host support.
 
 ### `skills/setup-pstack/SKILL.md`
 
@@ -88,6 +88,3 @@ Destination: [skills/setup-pstack/SKILL.md](../../skills/setup-pstack/SKILL.md).
 Upstream commit: `df581122cde17e6e27686b5a448bde23e4ad4318`. SHA-256: `d61b47256a18155a81c8e5ef95e3cc6569ce8c18317c35c4dd9c8015cf68cb59`.
 
 Disposition: `runtime`. Aggregate adaptation status: `adapted-reviewed`.
-
-- chatgpt: `blocked`. Tested release evidence: [docs/parity/evidence/chatgpt/package-discovery.json](../parity/evidence/chatgpt/package-discovery.json), [docs/parity/evidence/chatgpt/unknown-model.json](../parity/evidence/chatgpt/unknown-model.json).
-- codex: `blocked`. Tested release evidence: [docs/parity/evidence/codex/package-discovery.json](../parity/evidence/codex/package-discovery.json), [docs/parity/evidence/codex/unknown-model.json](../parity/evidence/codex/unknown-model.json).

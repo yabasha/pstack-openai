@@ -1,32 +1,32 @@
 {
   "caseId": "repeated-failure",
-  "packageVersion": "0.1.0",
-  "packageCommit": "f4623636a287bea2aa79c4b2234a53d20a5f193c",
+  "packageVersion": "0.1.3",
+  "packageCommit": "51f209daf83cd97d64f89881d66533bb59dc57db",
   "host": "chatgpt",
-  "hostMode": "source-only provenance refresh; fresh installed-host case not run",
+  "hostMode": "Unattempted current candidate; historical 0.1.0 outcomes are kept separately",
   "date": "2026-10-16",
   "input": "Two fixes assume actor assignment is harmless, but both fail the same imbalance check. Before a third fix, apply Attack the Premise. Inspect actor counts across runs and consider both skewed and even census outcomes.",
-  "observedOutput": "Not run against frozen revision f4623636a287bea2aa79c4b2234a53d20a5f193c. The metadata and regression-test changes require a new freeze. Earlier observations remain in Git history under 5d05ab2458f4cd73c44b24265a3a1920b98b8cf4; none establishes installed discovery or behavioral support for this revision.",
-  "status": "blocked",
-  "execution": "unavailable",
+  "observedOutput": "Not run against this version 0.1.3 source freeze. Version 0.1.0 observations remain bound to f4623636a287bea2aa79c4b2234a53d20a5f193c and are not transferred.",
+  "status": "not-run",
+  "execution": "not-run",
   "sourcePaths": [
     "skills/principle-attack-the-premise/SKILL.md"
   ],
   "documentedCapabilities": [
-    "docs/maintenance/rollback.md requires immutable tested-package provenance and exact revision-bound observations."
+    "The immutable tested-package policy requires observations tied to this exact source freeze."
   ],
   "exposedTools": [],
   "artifacts": [
-    "docs/releases/remaining-controller-report.md"
+    "docs/testing/chatgpt.md",
+    "docs/releases/host-evaluation/chatgpt/repeated-failure.md"
   ],
   "limits": [
-    "No fresh installed-host discovery or case execution was observed for this frozen revision.",
-    "This record accounts for an unrun case; source checks cannot establish host behavior.",
-    "Historical observations for 5d05ab2458f4cd73c44b24265a3a1920b98b8cf4 remain in Git history and are not transferred."
+    "Fresh candidate verification is pending; this is an unrun record, not a claimed capability denial.",
+    "Historical baseline results, including failures and reduced outcomes, cannot qualify a different source freeze."
   ],
   "priorActionIdentities": [],
   "permissions": {
-    "execution": "unavailable",
+    "execution": "granted",
     "writes": "granted",
     "externalActions": "denied"
   },

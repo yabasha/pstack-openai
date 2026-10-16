@@ -86,7 +86,7 @@ Forbidden claims:
 
 ## Source proof and release evidence
 
-The following statuses come from the current parity inventory. Pending aggregate review remains pending. Structural catalog checks do not establish host support.
+Current host statuses and release evidence: [current parity inventory](../parity/inventory.json), [chatgpt host report](../testing/chatgpt.md), and [codex host report](../testing/codex.md). These records can advance after the source freeze. Structural catalog checks do not establish host support.
 
 ### `skills/create-verification-skill/SKILL.md`
 
@@ -96,9 +96,6 @@ Upstream commit: `df581122cde17e6e27686b5a448bde23e4ad4318`. SHA-256: `644f25514
 
 Disposition: `runtime`. Aggregate adaptation status: `adapted-reviewed`.
 
-- chatgpt: `blocked`. Tested release evidence: [docs/parity/evidence/chatgpt/package-discovery.json](../parity/evidence/chatgpt/package-discovery.json), [docs/parity/evidence/chatgpt/real-app-contract.json](../parity/evidence/chatgpt/real-app-contract.json).
-- codex: `blocked`. Tested release evidence: [docs/parity/evidence/codex/package-discovery.json](../parity/evidence/codex/package-discovery.json), [docs/parity/evidence/codex/real-app-contract.json](../parity/evidence/codex/real-app-contract.json).
-
 ### `skills/create-verification-skill/references/feature-map-example/README.md`
 
 Destination: [skills/create-verification-skill/references/feature-map-example/README.md](../../skills/create-verification-skill/references/feature-map-example/README.md).
@@ -106,9 +103,6 @@ Destination: [skills/create-verification-skill/references/feature-map-example/RE
 Upstream commit: `df581122cde17e6e27686b5a448bde23e4ad4318`. SHA-256: `cb7bd782cf89968a4ba3d58a5151db837430db92d19a6f52a906973b77b516ba`.
 
 Disposition: `runtime`. Aggregate adaptation status: `unchanged-reviewed`.
-
-- chatgpt: `blocked`. Tested release evidence: [docs/parity/evidence/chatgpt/real-app-contract.json](../parity/evidence/chatgpt/real-app-contract.json).
-- codex: `blocked`. Tested release evidence: [docs/parity/evidence/codex/real-app-contract.json](../parity/evidence/codex/real-app-contract.json).
 
 ### `skills/create-verification-skill/references/feature-map-example/create-note.md`
 
@@ -118,9 +112,6 @@ Upstream commit: `df581122cde17e6e27686b5a448bde23e4ad4318`. SHA-256: `644a44c74
 
 Disposition: `runtime`. Aggregate adaptation status: `unchanged-reviewed`.
 
-- chatgpt: `blocked`. Tested release evidence: [docs/parity/evidence/chatgpt/real-app-contract.json](../parity/evidence/chatgpt/real-app-contract.json).
-- codex: `blocked`. Tested release evidence: [docs/parity/evidence/codex/real-app-contract.json](../parity/evidence/codex/real-app-contract.json).
-
 ### `skills/create-verification-skill/references/feature-map-example/search.md`
 
 Destination: [skills/create-verification-skill/references/feature-map-example/search.md](../../skills/create-verification-skill/references/feature-map-example/search.md).
@@ -128,6 +119,3 @@ Destination: [skills/create-verification-skill/references/feature-map-example/se
 Upstream commit: `df581122cde17e6e27686b5a448bde23e4ad4318`. SHA-256: `6e87b9e7f2791a7776ba1bb83f371cd285c306c67f19d245cc4dd6ca3015c823`.
 
 Disposition: `runtime`. Aggregate adaptation status: `unchanged-reviewed`.
-
-- chatgpt: `blocked`. Tested release evidence: [docs/parity/evidence/chatgpt/real-app-contract.json](../parity/evidence/chatgpt/real-app-contract.json).
-- codex: `blocked`. Tested release evidence: [docs/parity/evidence/codex/real-app-contract.json](../parity/evidence/codex/real-app-contract.json).

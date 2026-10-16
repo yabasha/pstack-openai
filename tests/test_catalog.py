@@ -57,16 +57,13 @@ class CatalogTests(unittest.TestCase):
             rows = {row['upstreamPath']: row for row in inventory}
             for source in entry['sourcePaths']:
                 section = page.split(f'### `{source}`\n', 1)[1].split('### ', 1)[0]
-                for host in ('chatgpt', 'codex'):
-                    verification = rows[source]['verification'][host]
-                    prefix = f'- {host}: `{verification["status"]}`. Tested release evidence: '
-                    references = ', '.join(
-                        f'[{evidence}]({Path("..").joinpath(evidence.removeprefix("docs/")).as_posix()})'
-                        for evidence in verification['evidence']) or 'none recorded'
-                    self.assertIn(prefix + references + '.', section)
-                    for other in ('not-run', 'pass', 'reduced-pass', 'blocked', 'fail'):
-                        if other != verification['status']:
-                            self.assertNotIn(f'- {host}: `{other}`.', section)
+                self.assertIn(rows[source]['upstreamSha256'], section)
+                self.assertIn(rows[source]['disposition'], section)
+            self.assertIn('[current parity inventory](../parity/inventory.json)', page)
+            for host in ('chatgpt', 'codex'):
+                self.assertIn(f'[{host} host report](../testing/{host}.md)', page)
+            self.assertNotRegex(page, r'(?m)^- (?:chatgpt|codex): `(?:not-run|pass|reduced-pass|blocked|fail)`')
+            self.assertNotIn('Tested release evidence:', page)
         broken = copy.deepcopy(entries)
         broken[0]['name'] = '../escape'
         with self.assertRaises(ValueError):
@@ -75,6 +72,21 @@ class CatalogTests(unittest.TestCase):
         broken[0]['kind'] = 'other'
         with self.assertRaises(ValueError):
             build_catalog(ROOT, inventory, broken)
+
+    def test_verification_advancement_does_not_change_frozen_pages(self):
+        from tools.build_catalog import build_catalog
+        inventory, entries = inputs()
+        pages = build_catalog(ROOT, inventory, entries)
+        advanced = copy.deepcopy(inventory)
+        for row in advanced:
+            for host, verification in row['verification'].items():
+                verification['status'] = 'fail' if verification['status'] != 'fail' else 'pass'
+                verification['evidence'] = [f'docs/testing/{host}.md']
+        advanced_pages = build_catalog(ROOT, advanced, entries)
+        self.assertEqual(set(pages), set(advanced_pages))
+        changed = [path for path in pages
+                   if pages[path].encode() != advanced_pages[path].encode()]
+        self.assertEqual([], changed, 'Post-freeze verification must not change source-frozen catalog pages')
 
     def test_catalog_stale_generation(self):
         from tools.build_catalog import build_catalog, sync_catalog
@@ -93,16 +105,14 @@ class CatalogTests(unittest.TestCase):
             self.assertEqual(['docs/skills/architect.md'], sync_catalog(fixture, pages, check=True))
             self.assertEqual('stale', target.read_text())
             self.assertEqual('preserve me', sentinel.read_text())
-            files = {'docs/parity/inventory.json', 'docs/catalog/schema.json'}
+            files = {'docs/parity/inventory.json', 'docs/catalog/schema.json',
+                     'docs/testing/chatgpt.md', 'docs/testing/codex.md'}
             files.update(str(path.relative_to(ROOT)) for path in (ROOT / 'docs/parity/cases').rglob('*.json'))
             files.update(str(path.relative_to(ROOT)) for path in (ROOT / 'docs/catalog/skills').glob('*.json'))
             rows = {row['upstreamPath']: row for row in inventory}
             for entry in entries:
                 files.update(entry['dependencies'])
                 files.update(rows[source]['destinationPath'] for source in entry['sourcePaths'])
-                for source in entry['sourcePaths']:
-                    for verification in rows[source]['verification'].values():
-                        files.update(verification['evidence'])
             for source in files:
                 destination = fixture / source
                 destination.parent.mkdir(parents=True, exist_ok=True)

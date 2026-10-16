@@ -74,7 +74,7 @@ Forbidden claims:
 
 ## Source proof and release evidence
 
-The following statuses come from the current parity inventory. Pending aggregate review remains pending. Structural catalog checks do not establish host support.
+Current host statuses and release evidence: [current parity inventory](../parity/inventory.json), [chatgpt host report](../testing/chatgpt.md), and [codex host report](../testing/codex.md). These records can advance after the source freeze. Structural catalog checks do not establish host support.
 
 ### `skills/principle-prove-it-works/SKILL.md`
 
@@ -83,6 +83,3 @@ Destination: [skills/principle-prove-it-works/SKILL.md](../../skills/principle-p
 Upstream commit: `df581122cde17e6e27686b5a448bde23e4ad4318`. SHA-256: `ec79a15025bac8d33d62011c54f3b612733fd2a024e623b531b3637aa75070e2`.
 
 Disposition: `runtime`. Aggregate adaptation status: `adapted-reviewed`.
-
-- chatgpt: `blocked`. Tested release evidence: [docs/parity/evidence/chatgpt/authorized-program.json](../parity/evidence/chatgpt/authorized-program.json), [docs/parity/evidence/chatgpt/bounded-improvement.json](../parity/evidence/chatgpt/bounded-improvement.json), [docs/parity/evidence/chatgpt/false-success.json](../parity/evidence/chatgpt/false-success.json), [docs/parity/evidence/chatgpt/owned-safe-cleanup.json](../parity/evidence/chatgpt/owned-safe-cleanup.json), [docs/parity/evidence/chatgpt/package-discovery.json](../parity/evidence/chatgpt/package-discovery.json), [docs/parity/evidence/chatgpt/preserved-behavior.json](../parity/evidence/chatgpt/preserved-behavior.json), [docs/parity/evidence/chatgpt/resume-revision.json](../parity/evidence/chatgpt/resume-revision.json), [docs/parity/evidence/chatgpt/stack-resume.json](../parity/evidence/chatgpt/stack-resume.json), [docs/parity/evidence/chatgpt/units-and-proof.json](../parity/evidence/chatgpt/units-and-proof.json).
-- codex: `blocked`. Tested release evidence: [docs/parity/evidence/codex/authorized-program.json](../parity/evidence/codex/authorized-program.json), [docs/parity/evidence/codex/bounded-improvement.json](../parity/evidence/codex/bounded-improvement.json), [docs/parity/evidence/codex/false-success.json](../parity/evidence/codex/false-success.json), [docs/parity/evidence/codex/owned-safe-cleanup.json](../parity/evidence/codex/owned-safe-cleanup.json), [docs/parity/evidence/codex/package-discovery.json](../parity/evidence/codex/package-discovery.json), [docs/parity/evidence/codex/preserved-behavior.json](../parity/evidence/codex/preserved-behavior.json), [docs/parity/evidence/codex/resume-revision.json](../parity/evidence/codex/resume-revision.json), [docs/parity/evidence/codex/stack-resume.json](../parity/evidence/codex/stack-resume.json), [docs/parity/evidence/codex/units-and-proof.json](../parity/evidence/codex/units-and-proof.json).

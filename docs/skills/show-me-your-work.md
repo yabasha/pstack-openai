@@ -85,7 +85,7 @@ Forbidden claims:
 
 ## Source proof and release evidence
 
-The following statuses come from the current parity inventory. Pending aggregate review remains pending. Structural catalog checks do not establish host support.
+Current host statuses and release evidence: [current parity inventory](../parity/inventory.json), [chatgpt host report](../testing/chatgpt.md), and [codex host report](../testing/codex.md). These records can advance after the source freeze. Structural catalog checks do not establish host support.
 
 ### `skills/show-me-your-work/SKILL.md`
 
@@ -95,9 +95,6 @@ Upstream commit: `df581122cde17e6e27686b5a448bde23e4ad4318`. SHA-256: `bcff5f7f9
 
 Disposition: `runtime`. Aggregate adaptation status: `adapted-reviewed`.
 
-- chatgpt: `blocked`. Tested release evidence: [docs/parity/evidence/chatgpt/authorized-program.json](../parity/evidence/chatgpt/authorized-program.json), [docs/parity/evidence/chatgpt/bounded-improvement.json](../parity/evidence/chatgpt/bounded-improvement.json), [docs/parity/evidence/chatgpt/decision-trail.json](../parity/evidence/chatgpt/decision-trail.json), [docs/parity/evidence/chatgpt/interrupted-action.json](../parity/evidence/chatgpt/interrupted-action.json), [docs/parity/evidence/chatgpt/no-persistent-tool.json](../parity/evidence/chatgpt/no-persistent-tool.json), [docs/parity/evidence/chatgpt/package-discovery.json](../parity/evidence/chatgpt/package-discovery.json), [docs/parity/evidence/chatgpt/stack-resume.json](../parity/evidence/chatgpt/stack-resume.json), [docs/parity/evidence/chatgpt/unit-state.json](../parity/evidence/chatgpt/unit-state.json), [docs/parity/evidence/chatgpt/units-and-proof.json](../parity/evidence/chatgpt/units-and-proof.json).
-- codex: `blocked`. Tested release evidence: [docs/parity/evidence/codex/authorized-program.json](../parity/evidence/codex/authorized-program.json), [docs/parity/evidence/codex/bounded-improvement.json](../parity/evidence/codex/bounded-improvement.json), [docs/parity/evidence/codex/decision-trail.json](../parity/evidence/codex/decision-trail.json), [docs/parity/evidence/codex/interrupted-action.json](../parity/evidence/codex/interrupted-action.json), [docs/parity/evidence/codex/no-persistent-tool.json](../parity/evidence/codex/no-persistent-tool.json), [docs/parity/evidence/codex/package-discovery.json](../parity/evidence/codex/package-discovery.json), [docs/parity/evidence/codex/stack-resume.json](../parity/evidence/codex/stack-resume.json), [docs/parity/evidence/codex/unit-state.json](../parity/evidence/codex/unit-state.json), [docs/parity/evidence/codex/units-and-proof.json](../parity/evidence/codex/units-and-proof.json).
-
 ### `skills/show-me-your-work/references/decision-log-template.tsv`
 
 Destination: [skills/show-me-your-work/references/decision-log-template.tsv](../../skills/show-me-your-work/references/decision-log-template.tsv).
@@ -106,9 +103,6 @@ Upstream commit: `df581122cde17e6e27686b5a448bde23e4ad4318`. SHA-256: `677937800
 
 Disposition: `runtime`. Aggregate adaptation status: `unchanged-reviewed`.
 
-- chatgpt: `blocked`. Tested release evidence: [docs/parity/evidence/chatgpt/authorized-program.json](../parity/evidence/chatgpt/authorized-program.json), [docs/parity/evidence/chatgpt/bounded-improvement.json](../parity/evidence/chatgpt/bounded-improvement.json), [docs/parity/evidence/chatgpt/decision-trail.json](../parity/evidence/chatgpt/decision-trail.json), [docs/parity/evidence/chatgpt/interrupted-action.json](../parity/evidence/chatgpt/interrupted-action.json), [docs/parity/evidence/chatgpt/no-persistent-tool.json](../parity/evidence/chatgpt/no-persistent-tool.json), [docs/parity/evidence/chatgpt/stack-resume.json](../parity/evidence/chatgpt/stack-resume.json), [docs/parity/evidence/chatgpt/unit-state.json](../parity/evidence/chatgpt/unit-state.json).
-- codex: `blocked`. Tested release evidence: [docs/parity/evidence/codex/authorized-program.json](../parity/evidence/codex/authorized-program.json), [docs/parity/evidence/codex/bounded-improvement.json](../parity/evidence/codex/bounded-improvement.json), [docs/parity/evidence/codex/decision-trail.json](../parity/evidence/codex/decision-trail.json), [docs/parity/evidence/codex/interrupted-action.json](../parity/evidence/codex/interrupted-action.json), [docs/parity/evidence/codex/no-persistent-tool.json](../parity/evidence/codex/no-persistent-tool.json), [docs/parity/evidence/codex/stack-resume.json](../parity/evidence/codex/stack-resume.json), [docs/parity/evidence/codex/unit-state.json](../parity/evidence/codex/unit-state.json).
-
 ### `skills/show-me-your-work/scripts/log.sh`
 
 Destination: [skills/show-me-your-work/scripts/log.sh](../../skills/show-me-your-work/scripts/log.sh).
@@ -116,6 +110,3 @@ Destination: [skills/show-me-your-work/scripts/log.sh](../../skills/show-me-your
 Upstream commit: `df581122cde17e6e27686b5a448bde23e4ad4318`. SHA-256: `a65a4bc5fb7cdeadbdb7b7ff1ca4682f4d9c42420942b2977cd17b46c4ac338e`.
 
 Disposition: `runtime`. Aggregate adaptation status: `adapted-reviewed`.
-
-- chatgpt: `blocked`. Tested release evidence: [docs/parity/evidence/chatgpt/authorized-program.json](../parity/evidence/chatgpt/authorized-program.json), [docs/parity/evidence/chatgpt/bounded-improvement.json](../parity/evidence/chatgpt/bounded-improvement.json), [docs/parity/evidence/chatgpt/decision-trail.json](../parity/evidence/chatgpt/decision-trail.json), [docs/parity/evidence/chatgpt/interrupted-action.json](../parity/evidence/chatgpt/interrupted-action.json), [docs/parity/evidence/chatgpt/no-persistent-tool.json](../parity/evidence/chatgpt/no-persistent-tool.json), [docs/parity/evidence/chatgpt/stack-resume.json](../parity/evidence/chatgpt/stack-resume.json), [docs/parity/evidence/chatgpt/unit-state.json](../parity/evidence/chatgpt/unit-state.json).
-- codex: `blocked`. Tested release evidence: [docs/parity/evidence/codex/authorized-program.json](../parity/evidence/codex/authorized-program.json), [docs/parity/evidence/codex/bounded-improvement.json](../parity/evidence/codex/bounded-improvement.json), [docs/parity/evidence/codex/decision-trail.json](../parity/evidence/codex/decision-trail.json), [docs/parity/evidence/codex/interrupted-action.json](../parity/evidence/codex/interrupted-action.json), [docs/parity/evidence/codex/no-persistent-tool.json](../parity/evidence/codex/no-persistent-tool.json), [docs/parity/evidence/codex/stack-resume.json](../parity/evidence/codex/stack-resume.json), [docs/parity/evidence/codex/unit-state.json](../parity/evidence/codex/unit-state.json).

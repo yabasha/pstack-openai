@@ -1,14 +1,14 @@
 {
   "caseId": "contiguous-verified-stack",
-  "packageVersion": "0.1.0",
-  "packageCommit": "f4623636a287bea2aa79c4b2234a53d20a5f193c",
+  "packageVersion": "0.1.3",
+  "packageCommit": "51f209daf83cd97d64f89881d66533bb59dc57db",
   "host": "codex",
-  "hostMode": "source-only provenance refresh; fresh installed-host case not run",
+  "hostMode": "Unattempted current candidate; historical 0.1.0 outcomes are kept separately",
   "date": "2026-10-16",
   "input": "Use inert local fixtures for a frozen stack 101,102,103,104. Independent verifier A passes 101 and verifier B returns PASS+NOTES for 102; 103 lacks a verdict and 104 passes. Rebase 101 to exact current trunk, include a changed patch and a tests/docs/lint-only patch with noisy builds, deny comments and merge first, then model authorized one-at-a-time merging and frontier wake states. Do not contact a forge.",
-  "observedOutput": "Not run against frozen revision f4623636a287bea2aa79c4b2234a53d20a5f193c. The metadata and regression-test changes require a new freeze. Earlier observations remain in Git history under 5d05ab2458f4cd73c44b24265a3a1920b98b8cf4; none establishes installed discovery or behavioral support for this revision.",
-  "status": "blocked",
-  "execution": "unavailable",
+  "observedOutput": "Not run against this version 0.1.3 source freeze. Version 0.1.0 observations remain bound to f4623636a287bea2aa79c4b2234a53d20a5f193c and are not transferred.",
+  "status": "not-run",
+  "execution": "not-run",
   "sourcePaths": [
     "skills/poteto-mode/playbooks/shipping.md",
     "skills/poteto-mode/playbooks/babysit.md",
@@ -19,20 +19,20 @@
     "skills/poteto-mode/scripts/bootstrap.ts"
   ],
   "documentedCapabilities": [
-    "docs/maintenance/rollback.md requires immutable tested-package provenance and exact revision-bound observations."
+    "The immutable tested-package policy requires observations tied to this exact source freeze."
   ],
   "exposedTools": [],
   "artifacts": [
-    "docs/releases/remaining-controller-report.md"
+    "docs/testing/codex.md",
+    "docs/releases/host-evaluation/codex/contiguous-verified-stack.md"
   ],
   "limits": [
-    "No fresh installed-host discovery or case execution was observed for this frozen revision.",
-    "This record accounts for an unrun case; source checks cannot establish host behavior.",
-    "Historical observations for 5d05ab2458f4cd73c44b24265a3a1920b98b8cf4 remain in Git history and are not transferred."
+    "Fresh candidate verification is pending; this is an unrun record, not a claimed capability denial.",
+    "Historical baseline results, including failures and reduced outcomes, cannot qualify a different source freeze."
   ],
   "priorActionIdentities": [],
   "permissions": {
-    "execution": "unavailable",
+    "execution": "granted",
     "writes": "granted",
     "externalActions": "denied"
   },
