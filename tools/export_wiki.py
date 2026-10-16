@@ -12,7 +12,29 @@ from urllib.parse import unquote
 
 HERD = Path.home() / 'Herd'
 LINK = re.compile(r'(!?\[[^\]\n]*\]\()([^\s)]+)([^)]*\))')
-CODE = re.compile(r'(```.*?```|~~~.*?~~~|`+[^`\n]*`+)', re.S)
+CODE = re.compile(r'(`+[^`\n]*`+)')
+FENCE = re.compile(r'^ {0,3}(`{3,}|~{3,})(.*)$')
+
+
+def markdown_sections(text):
+    """Separate fenced data from prose without interpreting fence text inside data."""
+    offset, start, fence = 0, 0, None
+    for line in text.splitlines(keepends=True):
+        marker = FENCE.match(line.rstrip('\r\n'))
+        end = offset + len(line)
+        if marker:
+            token, rest = marker.groups()
+            if fence is None:
+                # CommonMark backtick info strings cannot contain backticks.
+                if token[0] != '`' or '`' not in rest:
+                    yield False, text[start:offset]
+                    start, fence = offset, token
+            elif token[0] == fence[0] and len(token) >= len(fence) and not rest.strip(' \t'):
+                yield True, text[start:end]
+                start, fence = end, None
+        offset = end
+    # An unclosed fence continues to the end of the document.
+    yield fence is not None, text[start:]
 
 
 def export_wiki(root: Path, output: Path) -> list[Path]:
@@ -94,7 +116,9 @@ def export_wiki(root: Path, output: Path) -> list[Path]:
             suffix = '.md' if match.group(1).startswith('!') and resolved.suffix == '.md' else ''
             return match.group(1) + name + suffix + (separator + anchor if separator else '') + match.group(3)
         tokens = re.compile(CODE.pattern + '|' + LINK.pattern, re.S)
-        content = tokens.sub(lambda token: token.group(0) if token.group(1) is not None else convert(LINK.fullmatch(token.group(0))), source.read_text())
+        content = ''.join(section if fenced else tokens.sub(
+            lambda token: token.group(0) if token.group(1) is not None else convert(LINK.fullmatch(token.group(0))), section)
+            for fenced, section in markdown_sections(source.read_text()))
         rendered[source] = (content.rstrip() + f'\n\nSource: `{source.relative_to(root).as_posix()}`. Package version: `{version}`. Package commit: `{commit}`.\n').encode()
     home = ['# pstack documentation', '', f'Package version: `{version}`. Package commit: `{commit}`.', '',
             'This export is derived from the local canonical documentation. Structural export checks do not establish host support.', '']
@@ -120,15 +144,9 @@ def export_wiki(root: Path, output: Path) -> list[Path]:
 
 def heading_ids(text):
     """IDs for generated ATX headings, excluding fenced examples."""
-    ids, fence = set(), None
-    for line in text.splitlines():
-        marker = re.match(r'^ {0,3}(`{3,}|~{3,})(.*)$',line)
-        if marker:
-            token, rest = marker.groups()
-            if fence is None: fence=token
-            elif token[0]==fence[0] and len(token)>=len(fence) and not rest.strip(): fence=None
-            continue
-        if fence is not None: continue
+    ids = set()
+    prose = '\n'.join(section for fenced, section in markdown_sections(text) if not fenced)
+    for line in prose.splitlines():
         heading=re.match(r'^ {0,3}#{1,6} +(.+?) *#*$',line)
         if not heading: continue
         title=re.sub(r'<[^>]*>','',heading.group(1))
@@ -145,7 +163,7 @@ def validate_links(payloads):
     errors = []
     for name, data in payloads.items():
         if not name.endswith('.md'): continue
-        text = CODE.sub('', data.decode())
+        text = '\n'.join(CODE.sub('', section) for fenced, section in markdown_sections(data.decode()) if not fenced)
         for match in LINK.finditer(text):
             target = match.group(2)
             if re.match(r'[a-zA-Z][a-zA-Z0-9+.-]*:', target) or target.startswith('//'): continue

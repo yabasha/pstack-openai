@@ -53,6 +53,8 @@ class FullPackageUpdateTests(unittest.TestCase):
 
     def prepare(self):
         old = sync.BASELINE
+        major, minor, patch_version = map(int, json.loads((self.root/'plugin.json').read_text())['version'].split('.'))
+        self.candidate_version = f'{major}.{minor}.{patch_version + 1}'
         responses = {
             sync.ARCHIVE+old: self.baseline_archive,
             sync.ARCHIVE+self.candidate: archive_bytes(self.proposed,self.candidate),
@@ -63,7 +65,7 @@ class FullPackageUpdateTests(unittest.TestCase):
         with patch.object(sync,'ARCHIVE_SHA256',self.baseline_hash):
             self.bundle=sync.build_review(self.root,self.candidate,'prepare',responses.__getitem__)
         self.review=self.root/'.upstream/reviews'/self.candidate
-        self.resolutions=dict(schemaVersion=2,kind=sync.RESOLUTION_KIND,candidate=self.candidate,packageCommit=self.bundle['packageCommit'],reviewSha256=digest((self.review/'report.json').read_bytes()),candidateVersion='0.1.1',entries=[])
+        self.resolutions=dict(schemaVersion=2,kind=sync.RESOLUTION_KIND,candidate=self.candidate,packageCommit=self.bundle['packageCommit'],reviewSha256=digest((self.review/'report.json').read_bytes()),candidateVersion=self.candidate_version,entries=[])
         for e in self.bundle['files']['changed']+self.bundle['files']['added']+self.bundle['files']['removed']:
             content='resolved/'+e['destinationPath'] if e['newSha256'] else None
             if content:
@@ -105,7 +107,7 @@ class FullPackageUpdateTests(unittest.TestCase):
         for e in registry['entries']:
             if not e['structuralOnly']: e['hostStatus']={h:'not-run' for h in ('chatgpt','codex')}
         policy=dict(schemaVersion=1,upstreamCommit=self.candidate,reviewRationale='Explicit synthetic review preserves current workflow membership.',**membership(inventory))
-        plugin=json.loads((self.root/'plugin.json').read_text());plugin['version']='0.1.1'
+        plugin=json.loads((self.root/'plugin.json').read_text());plugin['version']=self.candidate_version
         changed_bytes['plugin.json']=sync.json_bytes(plugin)
         audit=json.loads((self.root/'docs/parity/dependencies.json').read_text());audit['sourceCommit']=self.candidate
         rows={r['upstreamPath']:r for r in inventory}
@@ -114,7 +116,7 @@ class FullPackageUpdateTests(unittest.TestCase):
             a['destinationSha256']=digest(changed_bytes.get(r['destinationPath'],(self.root/r['destinationPath']).read_bytes()))
         files={'docs/parity/dependencies.json':sync.json_bytes(audit),'docs/parity/case-registry.json':sync.json_bytes(registry),'docs/parity/baseline-policy.json':sync.json_bytes(policy)}
         dispositions=json.loads((self.root/'docs/parity/remnant-dispositions.json').read_text())
-        upstream=(self.root/'UPSTREAM.md').read_bytes()+(f'\n## Unaccepted candidate {self.candidate}\n\nCandidate version 0.1.1. Archive SHA-256 {self.bundle["sourceIdentity"]["candidateArchiveSha256"]}. Review SHA-256 {self.resolutions["reviewSha256"]}.\nThe inventory stages this candidate. The accepted baseline above remains historical evidence. Structural checks, helper regression tests, and affected host cases must run before separate acceptance.\n').encode()
+        upstream=(self.root/'UPSTREAM.md').read_bytes()+(f'\n## Unaccepted candidate {self.candidate}\n\nCandidate version {self.candidate_version}. Archive SHA-256 {self.bundle["sourceIdentity"]["candidateArchiveSha256"]}. Review SHA-256 {self.resolutions["reviewSha256"]}.\nThe inventory stages this candidate. The accepted baseline above remains historical evidence. Structural checks, helper regression tests, and affected host cases must run before separate acceptance.\n').encode()
         for d in dispositions:
             if d['path']=='UPSTREAM.md': d['sha256']=digest(upstream)
         files['docs/parity/remnant-dispositions.json']=sync.json_bytes(dispositions)

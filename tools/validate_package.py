@@ -89,6 +89,105 @@ def quoted_regions(lines, *, fenced_only=False):
     return regions
 
 
+def unique_json_object(pairs):
+    """Reject ambiguous duplicate fields in report data and its membership marker."""
+    result = dict(pairs)
+    if len(result) != len(pairs):
+        raise ValueError('duplicate JSON object field')
+    return result
+
+
+def captured_report_paths(root):
+    """Read explicit report membership without asserting tested Git identity."""
+    path = root/'docs/parity/tested-package.json'
+    if not path.exists() and not path.is_symlink():
+        return None, []
+    try:
+        if contained(root, 'docs/parity/tested-package.json') is None or not path.is_file():
+            raise ValueError('unsafe or non-file marker')
+        marker = json.loads(path.read_text(), object_pairs_hook=unique_json_object)
+        if (not isinstance(marker, dict) or set(marker) != {'schemaVersion','kind','testedCommit','reportPaths'}
+                or type(marker['schemaVersion']) is not int or marker['schemaVersion'] != 1
+                or marker['kind'] != 'pstack-tested-package'
+                or not isinstance(marker['testedCommit'], str) or not re.fullmatch('[0-9a-f]{40}', marker['testedCommit'])
+                or not isinstance(marker['reportPaths'], list)
+                or any(not isinstance(p, str) or not p or '\\' in p or Path(p).is_absolute()
+                       or any(part in ('', '.', '..') for part in p.split('/')) for p in marker['reportPaths'])
+                or len(marker['reportPaths']) != len(set(marker['reportPaths']))):
+            raise ValueError('invalid report marker shape')
+        return set(marker['reportPaths']), []
+    except (OSError, ValueError, TypeError, KeyError) as error:
+        return set(), [f'docs/parity/tested-package.json: invalid report-data membership: {error}']
+
+
+def captured_report_regions(root, relative, lines, inventory, declared_paths):
+    """Classify only identity-bound closed workflow-report JSON as inert data.
+
+    The fixed path/envelope contract survives an updater removing its old marker.
+    This does not validate grades, host execution or immutable Git provenance.
+    Prose outside the JSON remains ordinary checked package documentation.
+    """
+    match = re.fullmatch(r'docs/releases/host-evaluation/(chatgpt|codex)/([a-z0-9]+(?:-[a-z0-9]+)*)\.md', relative)
+    if not match:
+        return [], []
+    error = lambda detail: ([], [f'{relative}: invalid captured workflow report: {detail}'])
+    rows = {row['upstreamPath']: row for row in inventory}
+    operative = {row['destinationPath'] for row in inventory}
+    operative.update(rows.get(dep, {}).get('destinationPath', dep) for row in inventory for dep in row.get('dependencies', []))
+    target = (root/relative).resolve()
+    if target.relative_to(root).as_posix() != relative:
+        return error('symlink aliases cannot classify operative content as report data')
+    if any(target == (root/path).resolve() or target.is_relative_to((root/path).resolve()) for path in operative):
+        return error('inventory destinations and dependencies are operative')
+    if declared_paths is not None and relative not in declared_paths:
+        return error('not explicitly listed in tested-package reportPaths')
+    fences = [(first, last) for first, last in quoted_regions(lines, fenced_only=True)
+              if re.fullmatch(r' {0,3}(?:`{3,}|~{3,})json[ \t]*', lines[first-2])]
+    if len(fences) != 1:
+        return error('exactly one closed JSON envelope required')
+    first, last = fences[0]
+    try:
+        data = json.loads('\n'.join(lines[first-1:last]), object_pairs_hook=unique_json_object)
+    except (ValueError, TypeError):
+        return error('malformed JSON envelope')
+    fields = {'schemaVersion','sourceFreeze','reportScope','host','caseId','acceptedStatus',
+              'acceptedAttemptId','acceptanceRule','casePrompt','caseDefinition','registry',
+              'attempts','artifactProjections','skippedManifest','globalLimits'}
+    statuses = {'pass','reduced-pass','blocked','fail','not-run'}
+    if (not isinstance(data, dict) or set(data) != fields
+            or type(data['schemaVersion']) is not int or data['schemaVersion'] != 1
+            or data['host'] != match[1] or data['caseId'] != match[2]
+            or not isinstance(data['sourceFreeze'], str) or not re.fullmatch('[0-9a-f]{40}', data['sourceFreeze'])
+            or any(not isinstance(data[k], str) or not data[k].strip()
+                   for k in ('reportScope','acceptedStatus','acceptanceRule','casePrompt'))
+            or data['acceptedStatus'] not in statuses | {'pending'}
+            or (data['acceptedStatus'] != 'pending' and (not isinstance(data['acceptedAttemptId'], str) or not data['acceptedAttemptId'].strip()))
+            or not isinstance(data['caseDefinition'], dict) or data['caseDefinition'].get('id') != data['caseId']
+            or data['caseDefinition'].get('prompt') != data['casePrompt']
+            or not isinstance(data['registry'], dict) or data['registry'].get('caseId') != data['caseId']
+            or any(not isinstance(data[k], list) for k in ('attempts','artifactProjections','skippedManifest','globalLimits'))
+            or not data['globalLimits']
+            or any(not isinstance(limit, str) or not limit.strip() for limit in data['globalLimits'])):
+        return error('envelope shape or identity differs from the report path')
+    if data['acceptedStatus'] == 'pending':
+        if data['acceptedAttemptId'] is not None or data['attempts']:
+            return error('pending reports cannot claim a selected or graded attempt')
+        return fences, []
+    ids = set()
+    for attempt in data['attempts']:
+        if (not isinstance(attempt, dict) or not isinstance(attempt.get('attemptId'), str)
+                or not attempt['attemptId'].strip() or attempt['attemptId'] in ids
+                or attempt.get('host') != data['host'] or attempt.get('caseId') != data['caseId']
+                or not isinstance(attempt.get('status'), str) or attempt['status'] not in statuses
+                or not isinstance(attempt.get('grade'), dict)):
+            return error('attempt identities must match the envelope')
+        ids.add(attempt['attemptId'])
+    selected = [a for a in data['attempts'] if a['attemptId'] == data['acceptedAttemptId']]
+    if len(selected) != 1 or selected[0]['status'] != data['acceptedStatus']:
+        return error('selected attempt identity or status differs')
+    return fences, []
+
+
 def mask_inline_code(text):
     """Mask matched backtick runs for link extraction, retaining line boundaries."""
     # Delimiters in separate blocks cannot form a code span. Treat block
@@ -238,6 +337,8 @@ def inspect_package(root: Path, inventory: list[dict], scope=None):
             errors.append(f'docs/parity/remnant-dispositions.json: invalid hash or token range {entry!r}')
         if not isinstance(entry, dict) or set(entry) != {'path', 'sha256', 'token', 'startLine', 'endLine', 'kind', 'rationale', 'reviewed'} or entry.get('reviewed') is not True or entry.get('kind') not in ('source-only', 'binding', 'historical') or not entry.get('rationale') or any(c in entry.get('path', '') for c in '*?[') or contained(root, entry.get('path', '')) is None:
             errors.append(f'docs/parity/remnant-dispositions.json: invalid narrow disposition {entry!r}')
+    declared_reports, report_errors = captured_report_paths(root)
+    errors += report_errors
     markdown = sorted(root.rglob('*.md')) if scope is None else [root/row['destinationPath'] for row in selected if row['destinationPath'].endswith('.md')]
     for file in markdown:
         relative = file.relative_to(root).as_posix()
@@ -250,6 +351,8 @@ def inspect_package(root: Path, inventory: list[dict], scope=None):
             continue
         content = file.read_text()
         lines = content.splitlines()
+        report_data, report_errors = captured_report_regions(root, relative, lines, rows, declared_reports)
+        errors += report_errors
         digest = hashlib.sha256(file.read_bytes()).hexdigest()
         approved = [entry for entry in dispositions if isinstance(entry, dict) and entry.get('path') == relative and entry.get('sha256') == digest and entry.get('reviewed') is True]
         valid = []
@@ -295,6 +398,8 @@ def inspect_package(root: Path, inventory: list[dict], scope=None):
                 normalized = resolved.relative_to(root).as_posix() if resolved.is_relative_to(root) else path
                 check(normalized, relative)
         for number, line in enumerate(content.splitlines(), 1):
+            if any(first <= number <= last for first, last in report_data):
+                continue
             for match in REMNANTS.finditer(line):
                 token = match[0]
                 if not any(entry.get('token') == token and isinstance(entry.get('startLine'), int) and isinstance(entry.get('endLine'), int) and entry['startLine'] <= number <= entry['endLine'] for entry in approved):
