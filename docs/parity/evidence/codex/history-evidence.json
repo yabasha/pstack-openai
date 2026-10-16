@@ -3,12 +3,12 @@
   "packageVersion": "0.1.3",
   "packageCommit": "51f209daf83cd97d64f89881d66533bb59dc57db",
   "host": "codex",
-  "hostMode": "Unattempted current candidate; historical 0.1.0 outcomes are kept separately",
+  "hostMode": "Native host workflow with independent retained-artifact review",
   "date": "2026-10-16",
   "input": "Why does this retry threshold exist? The code history records a change, a shared ticket states a customer constraint, telemetry correlates with the release, and chat is unavailable. Distinguish the evidence from inference.",
-  "observedOutput": "Not run against this version 0.1.3 source freeze. Version 0.1.0 observations remain bound to f4623636a287bea2aa79c4b2234a53d20a5f193c and are not transferred.",
-  "status": "not-run",
-  "execution": "not-run",
+  "observedOutput": "Independent source and ticket investigators plus a fresh citation-checking synthesizer execute against the exact fixture SHA. The eight-section rationale correctly rejects the scenario assertions, separates synthetic narratives from authentic history, preserves all confidence tiers and names seven-category access gaps. Genuine history, telemetry and connectors remain unavailable.",
+  "status": "reduced-pass",
+  "execution": "workers",
   "sourcePaths": [
     "skills/why/SKILL.md",
     "skills/why/references/epistemics.md",
@@ -25,16 +25,20 @@
     "skills/why/references/sources/incident-postmortem.md"
   ],
   "documentedCapabilities": [
-    "The immutable tested-package policy requires observations tied to this exact source freeze."
+    "Case-specific capability observations are retained in the independent review; no capability is inferred from package validation."
   ],
-  "exposedTools": [],
+  "exposedTools": [
+    "exec_command",
+    "collaboration.spawn_agent",
+    "collaboration.list_agents"
+  ],
   "artifacts": [
-    "docs/testing/codex.md",
     "docs/releases/host-evaluation/codex/history-evidence.md"
   ],
   "limits": [
-    "Fresh candidate verification is pending; this is an unrun record, not a claimed capability denial.",
-    "Historical baseline results, including failures and reduced outcomes, cannot qualify a different source freeze."
+    "All native observed children are gpt-6.1-sol medium. Roles provide no model diversity.",
+    "Protected dispatch messages are not decrypted; child current evidence and output establish their performed task.",
+    "Real threshold implementation, authentic customer record, telemetry and chat remain unknown; external reads withheld by policy."
   ],
   "priorActionIdentities": [],
   "permissions": {
@@ -43,8 +47,42 @@
     "externalActions": "denied"
   },
   "models": {
-    "requested": "unknown",
-    "actual": "unknown"
+    "requested": "inherit-parent",
+    "actual": "gpt-6.1-sol"
   },
-  "successfulOperations": []
+  "successfulOperations": [
+    {
+      "operation": "read",
+      "tool": "exec_command",
+      "evidence": "docs/releases/host-evaluation/codex/history-evidence.md"
+    },
+    {
+      "operation": "spawn",
+      "tool": "collaboration.spawn_agent",
+      "evidence": "docs/releases/host-evaluation/codex/history-evidence.md"
+    },
+    {
+      "operation": "inspect-result",
+      "tool": "exec_command",
+      "evidence": "docs/releases/host-evaluation/codex/history-evidence.md"
+    }
+  ],
+  "nativeObservations": [
+    {
+      "observation": "supplied-input",
+      "evidence": "docs/releases/host-evaluation/codex/history-evidence.md",
+      "reviewedBy": "grade_local_05_12"
+    },
+    {
+      "observation": "response",
+      "evidence": "docs/releases/host-evaluation/codex/history-evidence.md",
+      "reviewedBy": "grade_local_05_12"
+    },
+    {
+      "observation": "review-outcome",
+      "evidence": "docs/releases/host-evaluation/codex/history-evidence.md",
+      "reviewedBy": "grade_local_05_12"
+    }
+  ],
+  "inputRevision": "01e9ffb79144c95a1d64b8a03ea427ac97dd21f6"
 }

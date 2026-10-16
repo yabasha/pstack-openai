@@ -3,26 +3,35 @@
   "packageVersion": "0.1.3",
   "packageCommit": "51f209daf83cd97d64f89881d66533bb59dc57db",
   "host": "chatgpt",
-  "hostMode": "Unattempted current candidate; historical 0.1.0 outcomes are kept separately",
+  "hostMode": "Native web-host workflows; independent retained-artifact review",
   "date": "2026-10-16",
   "input": "Fix a bug with an obvious cheap local regression target using TDD. Show a real failing behavior test before fixing production code. Repeat with execution unavailable.",
-  "observedOutput": "Not run against this version 0.1.3 source freeze. Version 0.1.0 observations remain bound to f4623636a287bea2aa79c4b2234a53d20a5f193c and are not transferred.",
-  "status": "not-run",
-  "execution": "not-run",
+  "observedOutput": "Native literal CSV regression fails for missing escaping before production edit; same assertions pass after narrow quoting fix, with nearby empty/filter checks. Alternative denied-execution branch remains unrun proposal, not additional proof.",
+  "status": "pass",
+  "execution": "direct",
   "sourcePaths": [
     "skills/tdd/SKILL.md"
   ],
   "documentedCapabilities": [
-    "The immutable tested-package policy requires observations tied to this exact source freeze."
+    "Case-specific capability observations are retained in the independent review; no capability is inferred from package validation."
   ],
-  "exposedTools": [],
+  "exposedTools": [
+    "exec_command",
+    "apply_patch"
+  ],
   "artifacts": [
-    "docs/testing/chatgpt.md",
     "docs/releases/host-evaluation/chatgpt/red-green.md"
   ],
   "limits": [
-    "Fresh candidate verification is pending; this is an unrun record, not a claimed capability denial.",
-    "Historical baseline results, including failures and reduced outcomes, cannot qualify a different source freeze."
+    "Current installed version 0.1.3 and operative freeze 51f209daf83cd97d64f89881d66533bb59dc57db bound by external exact installed-file comparison; sandbox itself has no source Git identity.",
+    "Global current catalog lists 51 root skills; this does not upgrade case execution or reproduce unrun workflows.",
+    "Web TypeScript compiler and pinned helper dependencies absent; Bun transpilation/runtime tests never count as strict compilation.",
+    "Historical source content was accidentally read during setup, disclosed in archive limitations; no older result contributes to current grading.",
+    "Raw capture coverage and cooperative per-case clocks incomplete; unavailable/unstarted variants and failed attempts remain explicit.",
+    "Actual native models remain unknown unless independently observed; requested role/model names never become model-diversity proof.",
+    "Variants: normal failing-before/fixed-after runs executed on actual subject. Execution-unavailable branch is an unrun proposal only: add the same literal test, expect current bad CSV then apply quoting fix and rerun after execution is restored. No red or green claim applies to that restricted branch.",
+    "TypeScript compiler proof unverified; Bun transpilation is not compiler proof. No running application/browser proof.",
+    "Raw tool request/response files cover substantive operations. Logging calls do not recursively log themselves. Initial assignment discovery and rejected patch exact request remain native conversation only; rejected patch error summary is retained. This is not a complete native transcript."
   ],
   "priorActionIdentities": [],
   "permissions": {
@@ -31,8 +40,42 @@
     "externalActions": "denied"
   },
   "models": {
-    "requested": "unknown",
+    "requested": "inherit-parent",
     "actual": "unknown"
   },
-  "successfulOperations": []
+  "successfulOperations": [
+    {
+      "operation": "read",
+      "tool": "exec_command",
+      "evidence": "docs/releases/host-evaluation/chatgpt/red-green.md"
+    },
+    {
+      "operation": "isolated-write",
+      "tool": "apply_patch",
+      "evidence": "docs/releases/host-evaluation/chatgpt/red-green.md"
+    },
+    {
+      "operation": "execution",
+      "tool": "exec_command",
+      "evidence": "docs/releases/host-evaluation/chatgpt/red-green.md"
+    }
+  ],
+  "nativeObservations": [
+    {
+      "observation": "supplied-input",
+      "evidence": "docs/releases/host-evaluation/chatgpt/red-green.md",
+      "reviewedBy": "grade_local_repairs"
+    },
+    {
+      "observation": "response",
+      "evidence": "docs/releases/host-evaluation/chatgpt/red-green.md",
+      "reviewedBy": "grade_local_repairs"
+    },
+    {
+      "observation": "review-outcome",
+      "evidence": "docs/releases/host-evaluation/chatgpt/red-green.md",
+      "reviewedBy": "grade_local_repairs"
+    }
+  ],
+  "inputRevision": "9661bd48b9db55641157e36c716a1b368b1da66a"
 }

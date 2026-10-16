@@ -3,12 +3,12 @@
   "packageVersion": "0.1.3",
   "packageCommit": "51f209daf83cd97d64f89881d66533bb59dc57db",
   "host": "codex",
-  "hostMode": "Unattempted current candidate; historical 0.1.0 outcomes are kept separately",
+  "hostMode": "Native host workflow with independent retained-artifact review",
   "date": "2026-10-16",
   "input": "Use pstack in ordinary ChatGPT with supplied source but no execution.",
-  "observedOutput": "Not run against this version 0.1.3 source freeze. Version 0.1.0 observations remain bound to f4623636a287bea2aa79c4b2234a53d20a5f193c and are not transferred.",
-  "status": "not-run",
-  "execution": "not-run",
+  "observedOutput": "Source-grounded no-execution guidance preserves controller and permissions, but this local-host response does not exercise ordinary web-host loading or execution. Source reads and image opens are retained, and the response explicitly keeps executable proof blocked.",
+  "status": "reduced-pass",
+  "execution": "direct",
   "sourcePaths": [
     "docs/guide/01-setup.md",
     "docs/guide/02-poteto-mode.md",
@@ -29,16 +29,18 @@
     "docs/guide/images/verification.jpg"
   ],
   "documentedCapabilities": [
-    "The immutable tested-package policy requires observations tied to this exact source freeze."
+    "Case-specific capability observations are retained in the independent review; no capability is inferred from package validation."
   ],
-  "exposedTools": [],
+  "exposedTools": [
+    "exec_command"
+  ],
   "artifacts": [
-    "docs/testing/codex.md",
     "docs/releases/host-evaluation/codex/guides-ordinary-chatgpt.md"
   ],
   "limits": [
-    "Fresh candidate verification is pending; this is an unrun record, not a claimed capability denial.",
-    "Historical baseline results, including failures and reduced outcomes, cannot qualify a different source freeze."
+    "No ordinary web-host session was executed in this local case.",
+    "Startup capture preceded the case checklist; the report discloses that ordering.",
+    "Actual worker model is unknown; no worker independence claimed."
   ],
   "priorActionIdentities": [],
   "permissions": {
@@ -47,8 +49,32 @@
     "externalActions": "denied"
   },
   "models": {
-    "requested": "unknown",
-    "actual": "unknown"
+    "requested": "inherit-parent",
+    "actual": "gpt-6.1-sol"
   },
-  "successfulOperations": []
+  "successfulOperations": [
+    {
+      "operation": "read",
+      "tool": "exec_command",
+      "evidence": "docs/releases/host-evaluation/codex/guides-ordinary-chatgpt.md"
+    }
+  ],
+  "nativeObservations": [
+    {
+      "observation": "supplied-input",
+      "evidence": "docs/releases/host-evaluation/codex/guides-ordinary-chatgpt.md",
+      "reviewedBy": "grade_local_05_12"
+    },
+    {
+      "observation": "response",
+      "evidence": "docs/releases/host-evaluation/codex/guides-ordinary-chatgpt.md",
+      "reviewedBy": "grade_local_05_12"
+    },
+    {
+      "observation": "review-outcome",
+      "evidence": "docs/releases/host-evaluation/codex/guides-ordinary-chatgpt.md",
+      "reviewedBy": "grade_local_05_12"
+    }
+  ],
+  "inputRevision": "b9cda6904c034136850eeb38324b45ae15d3da1e"
 }

@@ -3,12 +3,12 @@
   "packageVersion": "0.1.3",
   "packageCommit": "51f209daf83cd97d64f89881d66533bb59dc57db",
   "host": "codex",
-  "hostMode": "Unattempted current candidate; historical 0.1.0 outcomes are kept separately",
+  "hostMode": "Native host workflow with independent retained-artifact review",
   "date": "2026-10-16",
   "input": "Diagnose supplied inert cpuprofile, compressed JSON trace, heap snapshot and spindump fixtures without rerunning their processes. Include exact artifact identities, original order, timestamps and symbols mapping to fixture source. Build an authorized sqlite query artifact and inspect hot frames, a retainer chain to a GC root or a stuck thread and wait reason. Compare a supplied before/after pair separately from an unpaired capture. Repeat with absent parser, denied derived writes, inaccessible artifact, unresolved symbols and unavailable workers. No installation, upload, live capture, external write or fix.",
-  "observedOutput": "Not run against this version 0.1.3 source freeze. Version 0.1.0 observations remain bound to f4623636a287bea2aa79c4b2234a53d20a5f193c and are not transferred.",
-  "status": "not-run",
-  "execution": "not-run",
+  "observedOutput": "All profiling inputs are absent from the selected mapping and targeted extension discovery. Parser/decompression/SQLite capabilities exist, but no capture is loaded or converted. The actor preserves every requested format, comparison and negative control as blocked instead of manufacturing source-linked rows, timing or diagnosis.",
+  "status": "blocked",
+  "execution": "direct",
   "sourcePaths": [
     "skills/poteto-mode/playbooks/trace-forensics.md",
     "skills/poteto-mode/SKILL.md",
@@ -19,16 +19,17 @@
     "skills/poteto-mode/playbooks/perf-issue.md"
   ],
   "documentedCapabilities": [
-    "The immutable tested-package policy requires observations tied to this exact source freeze."
+    "Case-specific capability observations are retained in the independent review; no capability is inferred from package validation."
   ],
-  "exposedTools": [],
+  "exposedTools": [
+    "exec_command"
+  ],
   "artifacts": [
-    "docs/testing/codex.md",
     "docs/releases/host-evaluation/codex/trace-provenance.md"
   ],
   "limits": [
-    "Fresh candidate verification is pending; this is an unrun record, not a claimed capability denial.",
-    "Historical baseline results, including failures and reduced outcomes, cannot qualify a different source freeze."
+    "No source-linked diagnosis, profile parse, timing, retainer, wait reason or confirmed regression.",
+    "No capture, rerun, installation, fix or upload occurred."
   ],
   "priorActionIdentities": [],
   "permissions": {
@@ -37,8 +38,32 @@
     "externalActions": "denied"
   },
   "models": {
-    "requested": "unknown",
-    "actual": "unknown"
+    "requested": "inherit-parent",
+    "actual": "gpt-6.1-sol"
   },
-  "successfulOperations": []
+  "successfulOperations": [
+    {
+      "operation": "read",
+      "tool": "exec_command",
+      "evidence": "docs/releases/host-evaluation/codex/trace-provenance.md"
+    }
+  ],
+  "nativeObservations": [
+    {
+      "observation": "supplied-input",
+      "evidence": "docs/releases/host-evaluation/codex/trace-provenance.md",
+      "reviewedBy": "grade_local_05_12"
+    },
+    {
+      "observation": "response",
+      "evidence": "docs/releases/host-evaluation/codex/trace-provenance.md",
+      "reviewedBy": "grade_local_05_12"
+    },
+    {
+      "observation": "review-outcome",
+      "evidence": "docs/releases/host-evaluation/codex/trace-provenance.md",
+      "reviewedBy": "grade_local_05_12"
+    }
+  ],
+  "inputRevision": "58d7f1d7b5659a283cce0daf0661a4b2abc53a67"
 }

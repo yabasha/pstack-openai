@@ -3,12 +3,12 @@
   "packageVersion": "0.1.3",
   "packageCommit": "51f209daf83cd97d64f89881d66533bb59dc57db",
   "host": "chatgpt",
-  "hostMode": "Unattempted current candidate; historical 0.1.0 outcomes are kept separately",
+  "hostMode": "Fresh native web workflow attempt with independent retained-artifact review",
   "date": "2026-10-16",
   "input": "Architect a supplied stateful subsystem change. Compare at least two structurally distinct designs, show caller usage before types, ownership and rationale. Then implement within my authorized scope; with unavailable workers label sequential alternatives.",
-  "observedOutput": "Not run against this version 0.1.3 source freeze. Version 0.1.0 observations remain bound to f4623636a287bea2aa79c4b2234a53d20a5f193c and are not transferred.",
-  "status": "not-run",
-  "execution": "not-run",
+  "observedOutput": "Actual overflow RED-to-GREEN fix and nullable caller propagation supported by real seven-test/42-assertion run. Native how/why, two distinct architect candidates and later judge/synthesis execute. Required strict compiler remains unavailable/unrun; source-method/raw chronology and late budget-check limits retained.",
+  "status": "reduced-pass",
+  "execution": "workers",
   "sourcePaths": [
     "skills/architect/SKILL.md",
     "skills/architect/references/design-red-flags.md",
@@ -16,16 +16,22 @@
     "skills/architect/references/runner-prompt.md"
   ],
   "documentedCapabilities": [
-    "The immutable tested-package policy requires observations tied to this exact source freeze."
+    "Case-specific capability observations are retained in the independent review; no capability is inferred from package validation."
   ],
-  "exposedTools": [],
+  "exposedTools": [
+    "exec_command",
+    "collaboration.spawn_agent"
+  ],
   "artifacts": [
-    "docs/testing/chatgpt.md",
     "docs/releases/host-evaluation/chatgpt/boundary-design.md"
   ],
   "limits": [
-    "Fresh candidate verification is pending; this is an unrun record, not a claimed capability denial.",
-    "Historical baseline results, including failures and reduced outcomes, cannot qualify a different source freeze."
+    "Strict compiler requested by supplied target remains blocked; Bun runtime/transpilation is not compiler proof.",
+    "Initial candidate and some administrative exact raw calls not exported; no reconstruction.",
+    "Eight-minute checkpoint nine seconds late; cooperative budget enforcement.",
+    "Actual models and diversity unknown.",
+    "Selected source identities independently compared outside sandbox; source hashing establishes bytes, never workflow execution.",
+    "Fresh archive and baseline attempts remain separate; failed/unstarted variants and input Git index changes preserved."
   ],
   "priorActionIdentities": [],
   "permissions": {
@@ -34,8 +40,47 @@
     "externalActions": "denied"
   },
   "models": {
-    "requested": "unknown",
+    "requested": "inherit-parent",
     "actual": "unknown"
   },
-  "successfulOperations": []
+  "successfulOperations": [
+    {
+      "operation": "read",
+      "tool": "exec_command",
+      "evidence": "docs/releases/host-evaluation/chatgpt/boundary-design.md"
+    },
+    {
+      "operation": "execution",
+      "tool": "exec_command",
+      "evidence": "docs/releases/host-evaluation/chatgpt/boundary-design.md"
+    },
+    {
+      "operation": "spawn",
+      "tool": "collaboration.spawn_agent",
+      "evidence": "docs/releases/host-evaluation/chatgpt/boundary-design.md"
+    },
+    {
+      "operation": "inspect-result",
+      "tool": "exec_command",
+      "evidence": "docs/releases/host-evaluation/chatgpt/boundary-design.md"
+    }
+  ],
+  "nativeObservations": [
+    {
+      "observation": "supplied-input",
+      "evidence": "docs/releases/host-evaluation/chatgpt/boundary-design.md",
+      "reviewedBy": "grade_local_repairs"
+    },
+    {
+      "observation": "response",
+      "evidence": "docs/releases/host-evaluation/chatgpt/boundary-design.md",
+      "reviewedBy": "grade_local_repairs"
+    },
+    {
+      "observation": "review-outcome",
+      "evidence": "docs/releases/host-evaluation/chatgpt/boundary-design.md",
+      "reviewedBy": "grade_local_repairs"
+    }
+  ],
+  "inputRevision": "54c6a8f432d247f165933d990ef8654874c6a39a"
 }

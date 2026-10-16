@@ -3,28 +3,41 @@
   "packageVersion": "0.1.3",
   "packageCommit": "51f209daf83cd97d64f89881d66533bb59dc57db",
   "host": "chatgpt",
-  "hostMode": "Unattempted current candidate; historical 0.1.0 outcomes are kept separately",
+  "hostMode": "Native web-host workflows; independent retained-artifact review",
   "date": "2026-10-16",
   "input": "Author or modify a skill with this playbook. Inspect the available authoring workflow and its validator. Preserve the skill voice, validate structural contracts, and report unknown trigger performance without assuming create-skill is installed or PR writes are authorized.",
-  "observedOutput": "Not run against this version 0.1.3 source freeze. Version 0.1.0 observations remain bound to f4623636a287bea2aa79c4b2234a53d20a5f193c and are not transferred.",
-  "status": "not-run",
-  "execution": "not-run",
+  "observedOutput": "Provisional skill/manual checklist retained under reviewed-edit gate; required create-skill absent and available skill-creator was not read/applied, so no supported authoring-validator loop or registration proof.",
+  "status": "reduced-pass",
+  "execution": "direct",
   "sourcePaths": [
     "skills/poteto-mode/playbooks/authoring-a-skill.md",
     "skills/poteto-mode/playbooks/opening-a-pr.md",
     "skills/principle-encode-lessons-in-structure/SKILL.md"
   ],
   "documentedCapabilities": [
-    "The immutable tested-package policy requires observations tied to this exact source freeze."
+    "Case-specific capability observations are retained in the independent review; no capability is inferred from package validation."
   ],
-  "exposedTools": [],
+  "exposedTools": [
+    "exec_command"
+  ],
   "artifacts": [
-    "docs/testing/chatgpt.md",
     "docs/releases/host-evaluation/chatgpt/supported-authoring.md"
   ],
   "limits": [
-    "Fresh candidate verification is pending; this is an unrun record, not a claimed capability denial.",
-    "Historical baseline results, including failures and reduced outcomes, cannot qualify a different source freeze."
+    "Current installed version 0.1.3 and operative freeze 51f209daf83cd97d64f89881d66533bb59dc57db bound by external exact installed-file comparison; sandbox itself has no source Git identity.",
+    "Global current catalog lists 51 root skills; this does not upgrade case execution or reproduce unrun workflows.",
+    "Web TypeScript compiler and pinned helper dependencies absent; Bun transpilation/runtime tests never count as strict compilation.",
+    "Historical source content was accidentally read during setup, disclosed in archive limitations; no older result contributes to current grading.",
+    "Raw capture coverage and cooperative per-case clocks incomplete; unavailable/unstarted variants and failed attempts remain explicit.",
+    "Actual native models remain unknown unless independently observed; requested role/model names never become model-diversity proof.",
+    "No grades assigned.",
+    "No real-surface driver supplied for app cases; source/tests do not establish UI proof.",
+    "No host loading or fresh-chat discovery observation.",
+    "Models unknown; no independent scenario workers or model diversity claimed.",
+    "Raw tool receipt timing gaps disclosed in receipt-limit.txt.",
+    "No external writes, installation, settings changes, push or scheduling performed.",
+    "Batch-interleaved case timing was not separately instrumented. Per-case 8-minute re-evaluation and 12-minute cap compliance cannot be asserted.",
+    "The finalize receipt additionally discloses a subsequent unlogged cat before receipt preservation."
   ],
   "priorActionIdentities": [],
   "permissions": {
@@ -33,8 +46,32 @@
     "externalActions": "denied"
   },
   "models": {
-    "requested": "unknown",
+    "requested": "inherit-parent",
     "actual": "unknown"
   },
-  "successfulOperations": []
+  "successfulOperations": [
+    {
+      "operation": "read",
+      "tool": "exec_command",
+      "evidence": "docs/releases/host-evaluation/chatgpt/supported-authoring.md"
+    }
+  ],
+  "nativeObservations": [
+    {
+      "observation": "supplied-input",
+      "evidence": "docs/releases/host-evaluation/chatgpt/supported-authoring.md",
+      "reviewedBy": "grade_local_repairs"
+    },
+    {
+      "observation": "response",
+      "evidence": "docs/releases/host-evaluation/chatgpt/supported-authoring.md",
+      "reviewedBy": "grade_local_repairs"
+    },
+    {
+      "observation": "review-outcome",
+      "evidence": "docs/releases/host-evaluation/chatgpt/supported-authoring.md",
+      "reviewedBy": "grade_local_repairs"
+    }
+  ],
+  "inputRevision": "9c7729e3067b71fcfed58893913d3cd67d256203"
 }

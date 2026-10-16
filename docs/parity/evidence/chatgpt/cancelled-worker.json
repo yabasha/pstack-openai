@@ -3,28 +3,38 @@
   "packageVersion": "0.1.3",
   "packageCommit": "51f209daf83cd97d64f89881d66533bb59dc57db",
   "host": "chatgpt",
-  "hostMode": "Unattempted current candidate; historical 0.1.0 outcomes are kept separately",
+  "hostMode": "Native host workflow with independent retained-artifact review",
   "date": "2026-10-16",
   "input": "A worker is cancelled after producing a partial artifact.",
-  "observedOutput": "Not run against this version 0.1.3 source freeze. Version 0.1.0 observations remain bound to f4623636a287bea2aa79c4b2234a53d20a5f193c and are not transferred.",
-  "status": "not-run",
-  "execution": "not-run",
+  "observedOutput": "Actual partial is inspected before interrupt; later native interrupted state is inspected separately. Byte-identical quarantine is excluded, and a separate fresh completed extraction is inspected and solely integrated. No process/thread destruction is claimed.",
+  "status": "pass",
+  "execution": "workers",
   "sourcePaths": [
     "skills/poteto-mode/SKILL.md",
     "skills/poteto-mode/playbooks/orchestrate.md",
     "agents/poteto-agent.md"
   ],
   "documentedCapabilities": [
-    "The immutable tested-package policy requires observations tied to this exact source freeze."
+    "Case-specific capability observations are retained in the independent review; no capability is inferred from package validation."
   ],
-  "exposedTools": [],
+  "exposedTools": [
+    "exec_command",
+    "collaboration.interrupt_agent",
+    "collaboration.list_agents",
+    "collaboration.spawn_agent"
+  ],
   "artifacts": [
-    "docs/testing/chatgpt.md",
     "docs/releases/host-evaluation/chatgpt/cancelled-worker.md"
   ],
   "limits": [
-    "Fresh candidate verification is pending; this is an unrun record, not a claimed capability denial.",
-    "Historical baseline results, including failures and reduced outcomes, cannot qualify a different source freeze."
+    "Initial participant local raw-capture gaps disclosed",
+    "Interrupted turn is not permanent agent/process termination",
+    "No package helper orchestration store claimed",
+    "No case grade",
+    "Independent assessment uses retained native artifacts and tool captures. Producer status is not a grade.",
+    "Source freeze is independently bound by root installed-byte comparison; sandbox has no source Git receipt.",
+    "Setup accidental historical-source search/read is disclosed globally and supplies no current outcomes. Setup global catalog/private context is excluded from public projections.",
+    "Raw captures are incomplete in places; original hashes and privacy filtering are preserved in projection manifests. Actual models remain unknown unless independently observed."
   ],
   "priorActionIdentities": [],
   "permissions": {
@@ -33,8 +43,57 @@
     "externalActions": "denied"
   },
   "models": {
-    "requested": "unknown",
+    "requested": "inherit-parent",
     "actual": "unknown"
   },
-  "successfulOperations": []
+  "successfulOperations": [
+    {
+      "operation": "read",
+      "tool": "exec_command",
+      "evidence": "docs/releases/host-evaluation/chatgpt/cancelled-worker.md"
+    },
+    {
+      "operation": "stop",
+      "tool": "collaboration.interrupt_agent",
+      "evidence": "docs/releases/host-evaluation/chatgpt/cancelled-worker.md"
+    },
+    {
+      "operation": "inspect-terminal",
+      "tool": "collaboration.list_agents",
+      "evidence": "docs/releases/host-evaluation/chatgpt/cancelled-worker.md"
+    },
+    {
+      "operation": "quarantine-artifacts",
+      "tool": "exec_command",
+      "evidence": "docs/releases/host-evaluation/chatgpt/cancelled-worker.md"
+    },
+    {
+      "operation": "inspect-result",
+      "tool": "exec_command",
+      "evidence": "docs/releases/host-evaluation/chatgpt/cancelled-worker.md"
+    },
+    {
+      "operation": "spawn",
+      "tool": "collaboration.spawn_agent",
+      "evidence": "docs/releases/host-evaluation/chatgpt/cancelled-worker.md"
+    }
+  ],
+  "nativeObservations": [
+    {
+      "observation": "supplied-input",
+      "evidence": "docs/releases/host-evaluation/chatgpt/cancelled-worker.md",
+      "reviewedBy": "web_baseline_first52_independent_judge"
+    },
+    {
+      "observation": "response",
+      "evidence": "docs/releases/host-evaluation/chatgpt/cancelled-worker.md",
+      "reviewedBy": "web_baseline_first52_independent_judge"
+    },
+    {
+      "observation": "review-outcome",
+      "evidence": "docs/releases/host-evaluation/chatgpt/cancelled-worker.md",
+      "reviewedBy": "web_baseline_first52_independent_judge"
+    }
+  ],
+  "inputRevision": "a583c85bffdf73022f55ad246f8d791b6bcda60b"
 }

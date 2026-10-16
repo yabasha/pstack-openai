@@ -3,12 +3,12 @@
   "packageVersion": "0.1.3",
   "packageCommit": "51f209daf83cd97d64f89881d66533bb59dc57db",
   "host": "chatgpt",
-  "hostMode": "Unattempted current candidate; historical 0.1.0 outcomes are kept separately",
+  "hostMode": "Fresh native web workflow attempt with independent retained-artifact review",
   "date": "2026-10-16",
   "input": "Hillclimb a fixture export latency using a fixed target and minimum iteration count. Supply contrasting realistic workloads, an exact baseline revision, a repeatable harness, error and completed-work counts, a green regression gate and candidate artifacts. Include an early lucky win, noise-sized improvement, changed workload, regression, plateau, worthwhile cheap remaining hypothesis and exhausted marginal ideas. Permit local measurement and edits but no commits, PR writes or recurring scheduling. Repeat with unavailable workers, denied execution and missing persistence. Compare every candidate using the same valid frozen metric and retain the stopping rule.",
-  "observedOutput": "Not run against this version 0.1.3 source freeze. Version 0.1.0 observations remain bound to f4623636a287bea2aa79c4b2234a53d20a5f193c and are not transferred.",
-  "status": "not-run",
-  "execution": "not-run",
+  "observedOutput": "Four real native-owner attempts with five alternating samples per side and helper trail support rejecting all treatments and retaining baseline. Target remains open. Two later treatment identities are uncommitted content/tree/patch hashes, not exact Git revisions; missing negative-capability observations, full audit and different-family review stay explicit.",
+  "status": "reduced-pass",
+  "execution": "workers",
   "sourcePaths": [
     "skills/poteto-mode/playbooks/hillclimb.md",
     "skills/poteto-mode/SKILL.md",
@@ -32,16 +32,23 @@
     "agents/poteto-agent.md"
   ],
   "documentedCapabilities": [
-    "The immutable tested-package policy requires observations tied to this exact source freeze."
+    "Case-specific capability observations are retained in the independent review; no capability is inferred from package validation."
   ],
-  "exposedTools": [],
+  "exposedTools": [
+    "exec_command",
+    "collaboration.spawn_agent"
+  ],
   "artifacts": [
-    "docs/testing/chatgpt.md",
     "docs/releases/host-evaluation/chatgpt/bounded-improvement.md"
   ],
   "limits": [
-    "Fresh candidate verification is pending; this is an unrun record, not a claimed capability denial.",
-    "Historical baseline results, including failures and reduced outcomes, cannot qualify a different source freeze."
+    "No accepted gain or target success; no claim ideas exhausted.",
+    "Attempts 3/4 have null treatment Git SHA; exact uncommitted bytes retained without relabeling baseline as treatment.",
+    "Conditional unavailable-worker/denied-execution/missing-persistence responses are policy branches, not observed native denials.",
+    "Early raw source reads incomplete; full transcript/different-family review unavailable; production tuning absent.",
+    "One supplied Git index changed; application inputs and HEAD unchanged, no byte-complete Git-internal immutability claim.",
+    "Selected source identities independently compared outside sandbox; source hashing establishes bytes, never workflow execution.",
+    "Fresh archive and baseline attempts remain separate; failed/unstarted variants and input Git index changes preserved."
   ],
   "priorActionIdentities": [],
   "permissions": {
@@ -50,8 +57,47 @@
     "externalActions": "denied"
   },
   "models": {
-    "requested": "unknown",
+    "requested": "inherit-parent",
     "actual": "unknown"
   },
-  "successfulOperations": []
+  "successfulOperations": [
+    {
+      "operation": "read",
+      "tool": "exec_command",
+      "evidence": "docs/releases/host-evaluation/chatgpt/bounded-improvement.md"
+    },
+    {
+      "operation": "execution",
+      "tool": "exec_command",
+      "evidence": "docs/releases/host-evaluation/chatgpt/bounded-improvement.md"
+    },
+    {
+      "operation": "spawn",
+      "tool": "collaboration.spawn_agent",
+      "evidence": "docs/releases/host-evaluation/chatgpt/bounded-improvement.md"
+    },
+    {
+      "operation": "inspect-result",
+      "tool": "exec_command",
+      "evidence": "docs/releases/host-evaluation/chatgpt/bounded-improvement.md"
+    }
+  ],
+  "nativeObservations": [
+    {
+      "observation": "supplied-input",
+      "evidence": "docs/releases/host-evaluation/chatgpt/bounded-improvement.md",
+      "reviewedBy": "grade_local_repairs"
+    },
+    {
+      "observation": "response",
+      "evidence": "docs/releases/host-evaluation/chatgpt/bounded-improvement.md",
+      "reviewedBy": "grade_local_repairs"
+    },
+    {
+      "observation": "review-outcome",
+      "evidence": "docs/releases/host-evaluation/chatgpt/bounded-improvement.md",
+      "reviewedBy": "grade_local_repairs"
+    }
+  ],
+  "inputRevision": "bc83cb8963fb770d5ff028fb56d93f9efa2a9b0e"
 }

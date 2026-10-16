@@ -3,26 +3,36 @@
   "packageVersion": "0.1.3",
   "packageCommit": "51f209daf83cd97d64f89881d66533bb59dc57db",
   "host": "chatgpt",
-  "hostMode": "Unattempted current candidate; historical 0.1.0 outcomes are kept separately",
+  "hostMode": "Native web-host workflows; independent retained-artifact review",
   "date": "2026-10-16",
   "input": "Start with an authorized disposable local artifact and exact input SHA. Follow README to Swarm and partition a three-file source review.",
-  "observedOutput": "Not run against this version 0.1.3 source freeze. Version 0.1.0 observations remain bound to f4623636a287bea2aa79c4b2234a53d20a5f193c and are not transferred.",
-  "status": "not-run",
-  "execution": "not-run",
+  "observedOutput": "Three retained source-slice outputs and real root inspection support a direct consolidated review. Native spawn-return captures and fresh README traversal are missing; independent Swarm execution remains unverified and full method claim withheld.",
+  "status": "reduced-pass",
+  "execution": "direct",
   "sourcePaths": [
     "skills/swarm/SKILL.md"
   ],
   "documentedCapabilities": [
-    "The immutable tested-package policy requires observations tied to this exact source freeze."
+    "Case-specific capability observations are retained in the independent review; no capability is inferred from package validation."
   ],
-  "exposedTools": [],
+  "exposedTools": [
+    "exec_command"
+  ],
   "artifacts": [
-    "docs/testing/chatgpt.md",
     "docs/releases/host-evaluation/chatgpt/swarm-walkthrough.md"
   ],
   "limits": [
-    "Fresh candidate verification is pending; this is an unrun record, not a claimed capability denial.",
-    "Historical baseline results, including failures and reduced outcomes, cannot qualify a different source freeze."
+    "Current installed version 0.1.3 and operative freeze 51f209daf83cd97d64f89881d66533bb59dc57db bound by external exact installed-file comparison; sandbox itself has no source Git identity.",
+    "Global current catalog lists 51 root skills; this does not upgrade case execution or reproduce unrun workflows.",
+    "Web TypeScript compiler and pinned helper dependencies absent; Bun transpilation/runtime tests never count as strict compilation.",
+    "Historical source content was accidentally read during setup, disclosed in archive limitations; no older result contributes to current grading.",
+    "Raw capture coverage and cooperative per-case clocks incomplete; unavailable/unstarted variants and failed attempts remain explicit.",
+    "Actual native models remain unknown unless independently observed; requested role/model names never become model-diversity proof.",
+    "Root native spawn requests visible in host transcript but immediate full local request-object captures missing",
+    "Actual models unknown",
+    "Authoritative freeze comparison external",
+    "README discovery link not freshly traversed; actual workflow and required contracts read",
+    "Retained case bundle lacks actual native spawn-return capture. Execution mode denotes supported direct coordinator text/artifact review only; independent worker lifecycle is unverified and no spawn operation is manufactured."
   ],
   "priorActionIdentities": [],
   "permissions": {
@@ -31,8 +41,32 @@
     "externalActions": "denied"
   },
   "models": {
-    "requested": "unknown",
+    "requested": "inherit-parent",
     "actual": "unknown"
   },
-  "successfulOperations": []
+  "successfulOperations": [
+    {
+      "operation": "read",
+      "tool": "exec_command",
+      "evidence": "docs/releases/host-evaluation/chatgpt/swarm-walkthrough.md"
+    }
+  ],
+  "nativeObservations": [
+    {
+      "observation": "supplied-input",
+      "evidence": "docs/releases/host-evaluation/chatgpt/swarm-walkthrough.md",
+      "reviewedBy": "grade_local_repairs"
+    },
+    {
+      "observation": "response",
+      "evidence": "docs/releases/host-evaluation/chatgpt/swarm-walkthrough.md",
+      "reviewedBy": "grade_local_repairs"
+    },
+    {
+      "observation": "review-outcome",
+      "evidence": "docs/releases/host-evaluation/chatgpt/swarm-walkthrough.md",
+      "reviewedBy": "grade_local_repairs"
+    }
+  ],
+  "inputRevision": "7cf3061abb5e1a49daeb7d3cc231c52888f1a3b6"
 }

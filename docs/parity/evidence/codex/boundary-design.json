@@ -3,12 +3,12 @@
   "packageVersion": "0.1.3",
   "packageCommit": "51f209daf83cd97d64f89881d66533bb59dc57db",
   "host": "codex",
-  "hostMode": "Unattempted current candidate; historical 0.1.0 outcomes are kept separately",
+  "hostMode": "Native host workflow with independent retained-artifact review",
   "date": "2026-10-16",
   "input": "Architect a supplied stateful subsystem change. Compare at least two structurally distinct designs, show caller usage before types, ownership and rationale. Then implement within my authorized scope; with unavailable workers label sequential alternatives.",
-  "observedOutput": "Not run against this version 0.1.3 source freeze. Version 0.1.0 observations remain bound to f4623636a287bea2aa79c4b2234a53d20a5f193c and are not transferred.",
-  "status": "not-run",
-  "execution": "not-run",
+  "observedOutput": "Actual overflow RED-to-GREEN repair, nullable callers and strict compilation are verified; two independent designs and later fresh judge retain complete rationale. Required supplementary design principle leaves were read after candidate dispatch, leaving source-order gate unmet.",
+  "status": "reduced-pass",
+  "execution": "workers",
   "sourcePaths": [
     "skills/architect/SKILL.md",
     "skills/architect/references/design-red-flags.md",
@@ -16,16 +16,19 @@
     "skills/architect/references/runner-prompt.md"
   ],
   "documentedCapabilities": [
-    "The immutable tested-package policy requires observations tied to this exact source freeze."
+    "Case-specific capability observations are retained in the independent review; no capability is inferred from package validation."
   ],
-  "exposedTools": [],
+  "exposedTools": [
+    "exec_command",
+    "collaboration.spawn_agent"
+  ],
   "artifacts": [
-    "docs/testing/codex.md",
     "docs/releases/host-evaluation/codex/boundary-design.md"
   ],
   "limits": [
-    "Fresh candidate verification is pending; this is an unrun record, not a claimed capability denial.",
-    "Historical baseline results, including failures and reduced outcomes, cannot qualify a different source freeze."
+    "Supplementary required principle leaves read after fanout; prior ordering cannot be reconstructed.",
+    "Some grounding assignments used provisional owners; exact native returned identities retained.",
+    "Actual models unknown; source freeze archive mapping independently compared but no installed Git HEAD."
   ],
   "priorActionIdentities": [],
   "permissions": {
@@ -34,8 +37,47 @@
     "externalActions": "denied"
   },
   "models": {
-    "requested": "unknown",
-    "actual": "unknown"
+    "requested": "inherit-parent",
+    "actual": "{\"coordinator\":\"gpt-6.1-sol\",\"workers\":\"unknown\"}"
   },
-  "successfulOperations": []
+  "successfulOperations": [
+    {
+      "operation": "read",
+      "tool": "exec_command",
+      "evidence": "docs/releases/host-evaluation/codex/boundary-design.md"
+    },
+    {
+      "operation": "inspect-result",
+      "tool": "exec_command",
+      "evidence": "docs/releases/host-evaluation/codex/boundary-design.md"
+    },
+    {
+      "operation": "execution",
+      "tool": "exec_command",
+      "evidence": "docs/releases/host-evaluation/codex/boundary-design.md"
+    },
+    {
+      "operation": "spawn",
+      "tool": "collaboration.spawn_agent",
+      "evidence": "docs/releases/host-evaluation/codex/boundary-design.md"
+    }
+  ],
+  "nativeObservations": [
+    {
+      "observation": "supplied-input",
+      "evidence": "docs/releases/host-evaluation/codex/boundary-design.md",
+      "reviewedBy": "grade_local_repairs"
+    },
+    {
+      "observation": "response",
+      "evidence": "docs/releases/host-evaluation/codex/boundary-design.md",
+      "reviewedBy": "grade_local_repairs"
+    },
+    {
+      "observation": "review-outcome",
+      "evidence": "docs/releases/host-evaluation/codex/boundary-design.md",
+      "reviewedBy": "grade_local_repairs"
+    }
+  ],
+  "inputRevision": "54c6a8f432d247f165933d990ef8654874c6a39a"
 }

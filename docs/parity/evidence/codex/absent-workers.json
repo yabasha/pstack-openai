@@ -3,28 +3,33 @@
   "packageVersion": "0.1.3",
   "packageCommit": "51f209daf83cd97d64f89881d66533bb59dc57db",
   "host": "codex",
-  "hostMode": "Unattempted current candidate; historical 0.1.0 outcomes are kept separately",
+  "hostMode": "Native host workflow with independent retained-artifact review",
   "date": "2026-10-16",
   "input": "No independent worker operation is available.",
-  "observedOutput": "Not run against this version 0.1.3 source freeze. Version 0.1.0 observations remain bound to f4623636a287bea2aa79c4b2234a53d20a5f193c and are not transferred.",
-  "status": "not-run",
-  "execution": "not-run",
+  "observedOutput": "Identity-only bootstrap, new immutable assignment to returned worker, accepted follow-up and terminal artifact inspection all observed at exact task SHA. Coordinator first response and worker bootstrap carry actual checklists; both persisted before task inventory/tracing. Actual independent Bun probes ground the explanation. Earlier limited attempts stay separate.",
+  "status": "pass",
+  "execution": "workers",
   "sourcePaths": [
     "skills/poteto-mode/SKILL.md",
     "skills/poteto-mode/playbooks/orchestrate.md",
     "agents/poteto-agent.md"
   ],
   "documentedCapabilities": [
-    "The immutable tested-package policy requires observations tied to this exact source freeze."
+    "Case-specific capability observations are retained in the independent review; no capability is inferred from package validation."
   ],
-  "exposedTools": [],
+  "exposedTools": [
+    "exec_command",
+    "collaboration.spawn_agent",
+    "collaboration.followup_task"
+  ],
   "artifacts": [
-    "docs/testing/codex.md",
     "docs/releases/host-evaluation/codex/absent-workers.md"
   ],
   "limits": [
-    "Fresh candidate verification is pending; this is an unrun record, not a claimed capability denial.",
-    "Historical baseline results, including failures and reduced outcomes, cannot qualify a different source freeze."
+    "Actual worker model and effort unknown.",
+    "First full broad discovery and first two worker commands lack separate raw copies; bounded actual rereads retained and transcript chronology available.",
+    "No-worker branch withheld by evaluation policy; no native operation denial claimed.",
+    "Frozen source Git mapping supplied by controller; actual source hashes and version observed."
   ],
   "priorActionIdentities": [],
   "permissions": {
@@ -33,8 +38,52 @@
     "externalActions": "denied"
   },
   "models": {
-    "requested": "unknown",
-    "actual": "unknown"
+    "requested": "inherit-parent",
+    "actual": "{\"coordinator\":\"gpt-6.1-sol\",\"workers\":\"unknown\"}"
   },
-  "successfulOperations": []
+  "successfulOperations": [
+    {
+      "operation": "read",
+      "tool": "exec_command",
+      "evidence": "docs/releases/host-evaluation/codex/absent-workers.md"
+    },
+    {
+      "operation": "spawn",
+      "tool": "collaboration.spawn_agent",
+      "evidence": "docs/releases/host-evaluation/codex/absent-workers.md"
+    },
+    {
+      "operation": "follow-up",
+      "tool": "collaboration.followup_task",
+      "evidence": "docs/releases/host-evaluation/codex/absent-workers.md"
+    },
+    {
+      "operation": "inspect-result",
+      "tool": "exec_command",
+      "evidence": "docs/releases/host-evaluation/codex/absent-workers.md"
+    },
+    {
+      "operation": "execution",
+      "tool": "exec_command",
+      "evidence": "docs/releases/host-evaluation/codex/absent-workers.md"
+    }
+  ],
+  "nativeObservations": [
+    {
+      "observation": "supplied-input",
+      "evidence": "docs/releases/host-evaluation/codex/absent-workers.md",
+      "reviewedBy": "grade_local_repairs"
+    },
+    {
+      "observation": "response",
+      "evidence": "docs/releases/host-evaluation/codex/absent-workers.md",
+      "reviewedBy": "grade_local_repairs"
+    },
+    {
+      "observation": "review-outcome",
+      "evidence": "docs/releases/host-evaluation/codex/absent-workers.md",
+      "reviewedBy": "grade_local_repairs"
+    }
+  ],
+  "inputRevision": "380fc527302a3c0cc2ba9d303492c5b0faddc678"
 }

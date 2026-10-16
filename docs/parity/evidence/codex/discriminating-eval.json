@@ -3,28 +3,33 @@
   "packageVersion": "0.1.3",
   "packageCommit": "51f209daf83cd97d64f89881d66533bb59dc57db",
   "host": "codex",
-  "hostMode": "Unattempted current candidate; historical 0.1.0 outcomes are kept separately",
+  "hostMode": "Native host workflow with independent retained-artifact review",
   "date": "2026-10-16",
   "input": "Evaluate whether a prompt variant improves agent behavior. Use supplied known good and known bad fixture outputs to check the rubric before trusting scores. Keep candidate context organic and blind. Work only in authorized isolated local paths; do not launch external services or publish.",
-  "observedOutput": "Not run against this version 0.1.3 source freeze. Version 0.1.0 observations remain bound to f4623636a287bea2aa79c4b2234a53d20a5f193c and are not transferred.",
-  "status": "not-run",
-  "execution": "not-run",
+  "observedOutput": "Actual independent organic participants and later blind reader/calibration execute. Known good/bad fixture outputs discriminate; scoped native reads and real CSV code/checks support equal 7/8 scores and no promotion. Strict generated-content word ban fails through ordinary regex .test calls, wider host context is not blind, and judge assignment inputRevision incorrectly holds package freeze rather than task input binding.",
+  "status": "reduced-pass",
+  "execution": "workers",
   "sourcePaths": [
     "skills/poteto-mode/playbooks/eval.md",
     "skills/arena/SKILL.md",
     "skills/unslop/SKILL.md"
   ],
   "documentedCapabilities": [
-    "The immutable tested-package policy requires observations tied to this exact source freeze."
+    "Case-specific capability observations are retained in the independent review; no capability is inferred from package validation."
   ],
-  "exposedTools": [],
+  "exposedTools": [
+    "exec_command",
+    "collaboration.spawn_agent"
+  ],
   "artifacts": [
-    "docs/testing/codex.md",
     "docs/releases/host-evaluation/codex/discriminating-eval.md"
   ],
   "limits": [
-    "Fresh candidate verification is pending; this is an unrun record, not a claimed capability denial.",
-    "Historical baseline results, including failures and reduced outcomes, cannot qualify a different source freeze."
+    "Generated app/table.mjs files contain regex .test calls, violating literal forbidden-word rule; original bytes preserved.",
+    "Global inherited host vocabulary prevents blanket blinding claim; observed reads do not access controller packets or sibling output.",
+    "Reader assignment binds declared package freeze, not the pair of task input revisions; preserved unchanged.",
+    "One pair with same actual model yields no reliable causal improvement evidence; no promotion.",
+    "Public projections exclude unrelated inherited user profile and complete native context; scoped command/model evidence retained."
   ],
   "priorActionIdentities": [],
   "permissions": {
@@ -33,8 +38,51 @@
     "externalActions": "denied"
   },
   "models": {
-    "requested": "unknown",
-    "actual": "unknown"
+    "requested": "inherit-parent",
+    "actual": "{\"coordinator\":\"gpt-6.1-sol\",\"participants\":[{\"label\":\"cedar\",\"actual\":\"gpt-6.1-sol\",\"effort\":\"medium\"},{\"label\":\"marsh\",\"actual\":\"gpt-6.1-sol\",\"effort\":\"medium\"}],\"reader\":{\"actual\":\"gpt-6.1-sol\",\"effort\":\"medium\"},\"diversity\":\"none\"}"
   },
-  "successfulOperations": []
+  "successfulOperations": [
+    {
+      "operation": "read",
+      "tool": "exec_command",
+      "evidence": "docs/releases/host-evaluation/codex/discriminating-eval.md"
+    },
+    {
+      "operation": "inspect-result",
+      "tool": "exec_command",
+      "evidence": "docs/releases/host-evaluation/codex/discriminating-eval.md"
+    },
+    {
+      "operation": "execution",
+      "tool": "exec_command",
+      "evidence": "docs/releases/host-evaluation/codex/discriminating-eval.md"
+    },
+    {
+      "operation": "isolated-write",
+      "tool": "exec_command",
+      "evidence": "docs/releases/host-evaluation/codex/discriminating-eval.md"
+    },
+    {
+      "operation": "spawn",
+      "tool": "collaboration.spawn_agent",
+      "evidence": "docs/releases/host-evaluation/codex/discriminating-eval.md"
+    }
+  ],
+  "nativeObservations": [
+    {
+      "observation": "supplied-input",
+      "evidence": "docs/releases/host-evaluation/codex/discriminating-eval.md",
+      "reviewedBy": "grade_local_repairs"
+    },
+    {
+      "observation": "response",
+      "evidence": "docs/releases/host-evaluation/codex/discriminating-eval.md",
+      "reviewedBy": "grade_local_repairs"
+    },
+    {
+      "observation": "review-outcome",
+      "evidence": "docs/releases/host-evaluation/codex/discriminating-eval.md",
+      "reviewedBy": "grade_local_repairs"
+    }
+  ]
 }

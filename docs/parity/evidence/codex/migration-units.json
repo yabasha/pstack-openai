@@ -3,26 +3,29 @@
   "packageVersion": "0.1.3",
   "packageCommit": "51f209daf83cd97d64f89881d66533bb59dc57db",
   "host": "codex",
-  "hostMode": "Unattempted current candidate; historical 0.1.0 outcomes are kept separately",
+  "hostMode": "Native host workflow with independent retained-artifact review",
   "date": "2026-10-16",
   "input": "Plan a multi-step schema migration and its commit delivery. Give each ordered unit a specific check, show when the next unit can begin, and handle an unavailable test runner or unauthorized Git operation.",
-  "observedOutput": "Not run against this version 0.1.3 source freeze. Version 0.1.0 observations remain bound to f4623636a287bea2aa79c4b2234a53d20a5f193c and are not transferred.",
-  "status": "not-run",
-  "execution": "not-run",
+  "observedOutput": "Fresh retry obeyed the narrow input scope and produced an eight-unit migration plan with concrete gates, baseline/scaffold ordering and independently green delivery prerequisites. Actual read-only Git baseline and original module check succeeded. Database checks remain unrun and Git writes unauthorized, as required by the reduced contract.",
+  "status": "reduced-pass",
+  "execution": "direct",
   "sourcePaths": [
     "skills/principle-sequence-verifiable-units/SKILL.md"
   ],
   "documentedCapabilities": [
-    "The immutable tested-package policy requires observations tied to this exact source freeze."
+    "Case-specific capability observations are retained in the independent review; no capability is inferred from package validation."
   ],
-  "exposedTools": [],
+  "exposedTools": [
+    "exec_command"
+  ],
   "artifacts": [
-    "docs/testing/codex.md",
     "docs/releases/host-evaluation/codex/migration-units.md"
   ],
   "limits": [
-    "Fresh candidate verification is pending; this is an unrun record, not a claimed capability denial.",
-    "Historical baseline results, including failures and reduced outcomes, cannot qualify a different source freeze."
+    "Schema target and database runner are absent from authorized slice; all schema checks remain unrun and unit 0 advancement is blocked.",
+    "Git writes and PR creation were explicitly unauthorized; no write attempt or observed tool denial is claimed.",
+    "Actual source freeze follows root installed-byte binding; the fixture Git SHA binds task inputs, not the installed plugin Git repository.",
+    "No independent landability or database correctness proof exists. Original lookupUser check verifies only its original found/missing behavior."
   ],
   "priorActionIdentities": [],
   "permissions": {
@@ -31,8 +34,42 @@
     "externalActions": "denied"
   },
   "models": {
-    "requested": "unknown",
-    "actual": "unknown"
+    "requested": "inherit-parent",
+    "actual": "{\"observed\":\"unknown\"}"
   },
-  "successfulOperations": []
+  "successfulOperations": [
+    {
+      "operation": "read",
+      "tool": "exec_command",
+      "evidence": "docs/releases/host-evaluation/codex/migration-units.md"
+    },
+    {
+      "operation": "execute",
+      "tool": "exec_command",
+      "evidence": "docs/releases/host-evaluation/codex/migration-units.md"
+    },
+    {
+      "operation": "inspect-result",
+      "tool": "exec_command",
+      "evidence": "docs/releases/host-evaluation/codex/migration-units.md"
+    }
+  ],
+  "nativeObservations": [
+    {
+      "observation": "supplied-input",
+      "evidence": "docs/releases/host-evaluation/codex/migration-units.md",
+      "reviewedBy": "local_input_gap_repair_independent_judge"
+    },
+    {
+      "observation": "response",
+      "evidence": "docs/releases/host-evaluation/codex/migration-units.md",
+      "reviewedBy": "local_input_gap_repair_independent_judge"
+    },
+    {
+      "observation": "review-outcome",
+      "evidence": "docs/releases/host-evaluation/codex/migration-units.md",
+      "reviewedBy": "local_input_gap_repair_independent_judge"
+    }
+  ],
+  "inputRevision": "6c28e8afebb9431b7ac0b7de664fcc868ccd2bdd"
 }

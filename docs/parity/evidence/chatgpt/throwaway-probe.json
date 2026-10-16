@@ -3,12 +3,12 @@
   "packageVersion": "0.1.3",
   "packageCommit": "51f209daf83cd97d64f89881d66533bb59dc57db",
   "host": "chatgpt",
-  "hostMode": "Unattempted current candidate; historical 0.1.0 outcomes are kept separately",
+  "hostMode": "Native web-host workflows; independent retained-artifact review",
   "date": "2026-10-16",
-  "input": "Decide whether a fixture filter should match literal substrings or whole words. Use a bounded throwaway probe on supplied fixture strings, compare labelled alternatives, and let observed output settle the behavior question. Separately compare 2-3 novel layout variants behind one switcher and capture each interaction and screenshot. Allow scratch writes and execution, forbid production and external writes. Repeat with execution unavailable, writes denied, visual controls absent, an open design direction requiring a moodboard, and no concrete decision.",
-  "observedOutput": "Not run against this version 0.1.3 source freeze. Version 0.1.0 observations remain bound to f4623636a287bea2aa79c4b2234a53d20a5f193c and are not transferred.",
-  "status": "not-run",
-  "execution": "not-run",
+  "input": "Product criterion: searching for the standalone tag cat must match \"cat\", \"Cat nap\", and \"the cat sleeps\", but must not match \"concatenate\" or \"bobcat\". Matching is case-insensitive and a whole word uses ASCII letter boundaries. Decide whether a literal substring or whole-word filter satisfies every expected result. Run both against these five strings; select only an algorithm whose observed outputs match all five expectations. Decide whether a fixture filter should match literal substrings or whole words. Use a bounded throwaway probe on these exact fixture strings, compare labelled alternatives, and let observed output settle the behavior question. Separately compare 2-3 novel layout variants behind one switcher and capture each interaction and screenshot. Allow scratch writes and execution, forbid production and external writes. Repeat with execution unavailable, writes denied, visual controls absent, an open design direction requiring a moodboard, and no concrete decision.",
+  "observedOutput": "Observed five-string fork supports whole-word ASCII matching; three real HTML layout sketches retained. Matching visual controls/screenshots, open-direction moodboard/user selection and some repeat branches remain blocked or text-only.",
+  "status": "reduced-pass",
+  "execution": "direct",
   "sourcePaths": [
     "skills/poteto-mode/playbooks/prototype.md",
     "skills/poteto-mode/SKILL.md",
@@ -23,16 +23,24 @@
     "skills/poteto-mode/playbooks/opening-a-pr.md"
   ],
   "documentedCapabilities": [
-    "The immutable tested-package policy requires observations tied to this exact source freeze."
+    "Case-specific capability observations are retained in the independent review; no capability is inferred from package validation."
   ],
-  "exposedTools": [],
+  "exposedTools": [
+    "exec_command"
+  ],
   "artifacts": [
-    "docs/testing/chatgpt.md",
     "docs/releases/host-evaluation/chatgpt/throwaway-probe.md"
   ],
   "limits": [
-    "Fresh candidate verification is pending; this is an unrun record, not a claimed capability denial.",
-    "Historical baseline results, including failures and reduced outcomes, cannot qualify a different source freeze."
+    "Current installed version 0.1.3 and operative freeze 51f209daf83cd97d64f89881d66533bb59dc57db bound by external exact installed-file comparison; sandbox itself has no source Git identity.",
+    "Global current catalog lists 51 root skills; this does not upgrade case execution or reproduce unrun workflows.",
+    "Web TypeScript compiler and pinned helper dependencies absent; Bun transpilation/runtime tests never count as strict compilation.",
+    "Historical source content was accidentally read during setup, disclosed in archive limitations; no older result contributes to current grading.",
+    "Raw capture coverage and cooperative per-case clocks incomplete; unavailable/unstarted variants and failed attempts remain explicit.",
+    "Actual native models remain unknown unless independently observed; requested role/model names never become model-diversity proof.",
+    "Variants attempted as scoped responses: normal local behavior executed; execution-unavailable branch returns the two algorithms as untested proposals and withholds empirical recommendation; writes-denied branch returns only text sketches and creates no variant scratch artifact; visual-controls-absent branch retains unverified HTML with no screenshots; open-design-direction branch stops before building a new direction because source-backed moodboard search and user direction selection were not authorized/completed; no-concrete-decision branch routes to Feature without a probe. No timing claims. Current opening-a-pr.md is present and read, despite contract wording about unavailable dependency. PR delivery remains blocked by external prohibition and unsatisfied companion/review gates. No installs, listener, CDN, production or external writes. Complete mode was re-read in two chunks after initial combined display truncation; source leaves retained in raw evidence. Local checklist is the reduced task-list binding.",
+    "TypeScript compiler proof unverified; Bun transpilation is not compiler proof. No running application/browser proof.",
+    "Raw tool request/response files cover substantive operations. Logging calls do not recursively log themselves. Initial assignment discovery and rejected patch exact request remain native conversation only; rejected patch error summary is retained. This is not a complete native transcript."
   ],
   "priorActionIdentities": [],
   "permissions": {
@@ -41,8 +49,32 @@
     "externalActions": "denied"
   },
   "models": {
-    "requested": "unknown",
+    "requested": "inherit-parent",
     "actual": "unknown"
   },
-  "successfulOperations": []
+  "successfulOperations": [
+    {
+      "operation": "read",
+      "tool": "exec_command",
+      "evidence": "docs/releases/host-evaluation/chatgpt/throwaway-probe.md"
+    }
+  ],
+  "nativeObservations": [
+    {
+      "observation": "supplied-input",
+      "evidence": "docs/releases/host-evaluation/chatgpt/throwaway-probe.md",
+      "reviewedBy": "grade_local_repairs"
+    },
+    {
+      "observation": "response",
+      "evidence": "docs/releases/host-evaluation/chatgpt/throwaway-probe.md",
+      "reviewedBy": "grade_local_repairs"
+    },
+    {
+      "observation": "review-outcome",
+      "evidence": "docs/releases/host-evaluation/chatgpt/throwaway-probe.md",
+      "reviewedBy": "grade_local_repairs"
+    }
+  ],
+  "inputRevision": "181b19083634922b1400b980da1c5ccf5e36b83f"
 }

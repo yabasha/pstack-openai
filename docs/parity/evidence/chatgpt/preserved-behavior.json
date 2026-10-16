@@ -3,12 +3,12 @@
   "packageVersion": "0.1.3",
   "packageCommit": "51f209daf83cd97d64f89881d66533bb59dc57db",
   "host": "chatgpt",
-  "hostMode": "Unattempted current candidate; historical 0.1.0 outcomes are kept separately",
+  "hostMode": "Native web-host workflows; independent retained-artifact review",
   "date": "2026-10-16",
   "input": "Refactor a fixture invoice formatter by removing a one-caller wrapper and consolidating duplicated state. Preserve literal formatted outputs, empty inputs, rounding and errors. Capture the current outputs before edits. Rename its internal API and migrate code, string references, docs and back-references together. One fixture exposes an unrelated bug, which must stay separate. A speculative abstraction adds reader load and must be reverted. Permit local edits and execution but no external writes. Repeat with workers unavailable, execution denied and behavior coverage absent. Return the changed structure, held pin, equivalence proof, reader-load delta, shipped and reverted work.",
-  "observedOutput": "Not run against this version 0.1.3 source freeze. Version 0.1.0 observations remain bound to f4623636a287bea2aa79c4b2234a53d20a5f193c and are not transferred.",
-  "status": "not-run",
-  "execution": "not-run",
+  "observedOutput": "Actual before-edit pins, isolated mechanical worker, staged subtraction/rename/speculation-revert and parent replay supported. Complete architect/fresh cross-judge and companion review methods remain unmet.",
+  "status": "reduced-pass",
+  "execution": "workers",
   "sourcePaths": [
     "skills/poteto-mode/playbooks/refactoring.md",
     "skills/poteto-mode/SKILL.md",
@@ -34,16 +34,25 @@
     "skills/architect/references/design-red-flags.md"
   ],
   "documentedCapabilities": [
-    "The immutable tested-package policy requires observations tied to this exact source freeze."
+    "Case-specific capability observations are retained in the independent review; no capability is inferred from package validation."
   ],
-  "exposedTools": [],
+  "exposedTools": [
+    "exec_command",
+    "collaboration.spawn_agent"
+  ],
   "artifacts": [
-    "docs/testing/chatgpt.md",
     "docs/releases/host-evaluation/chatgpt/preserved-behavior.md"
   ],
   "limits": [
-    "Fresh candidate verification is pending; this is an unrun record, not a claimed capability denial.",
-    "Historical baseline results, including failures and reduced outcomes, cannot qualify a different source freeze."
+    "Current installed version 0.1.3 and operative freeze 51f209daf83cd97d64f89881d66533bb59dc57db bound by external exact installed-file comparison; sandbox itself has no source Git identity.",
+    "Global current catalog lists 51 root skills; this does not upgrade case execution or reproduce unrun workflows.",
+    "Web TypeScript compiler and pinned helper dependencies absent; Bun transpilation/runtime tests never count as strict compilation.",
+    "Historical source content was accidentally read during setup, disclosed in archive limitations; no older result contributes to current grading.",
+    "Raw capture coverage and cooperative per-case clocks incomplete; unavailable/unstarted variants and failed attempts remain explicit.",
+    "Actual native models remain unknown unless independently observed; requested role/model names never become model-diversity proof.",
+    "Variants: normal independent mechanical owner executed with inspected artifacts. Workers-unavailable repeat performed separately in variants/no-workers using direct source edits and actual before/after pin replay, both exit0; no independence claimed there. Coverage-absent branch was actual initial fixture state: behavior harness was written and executed before structural moves. Execution-denied response stops structural edits at the missing executable pin and marks sequence unrun. Sequential pure-vs-class alternatives are not full architect parallel arena; fresh cross-judge, full how-worker separation, deslop and no-comments companion reviews remain unsatisfied. Actual model and effort unknown. Initial parent spawn request has a native-transcript reference rather than full local copy; worker first2readcalls/status and failed diff logging details are disclosed in worker-evidence/result.json. Reader time unmeasured.",
+    "TypeScript compiler proof unverified; Bun transpilation is not compiler proof. No running application/browser proof.",
+    "Raw tool request/response files cover substantive operations. Logging calls do not recursively log themselves. Initial assignment discovery and rejected patch exact request remain native conversation only; rejected patch error summary is retained. This is not a complete native transcript."
   ],
   "priorActionIdentities": [],
   "permissions": {
@@ -52,8 +61,42 @@
     "externalActions": "denied"
   },
   "models": {
-    "requested": "unknown",
+    "requested": "inherit-parent",
     "actual": "unknown"
   },
-  "successfulOperations": []
+  "successfulOperations": [
+    {
+      "operation": "read",
+      "tool": "exec_command",
+      "evidence": "docs/releases/host-evaluation/chatgpt/preserved-behavior.md"
+    },
+    {
+      "operation": "spawn",
+      "tool": "collaboration.spawn_agent",
+      "evidence": "docs/releases/host-evaluation/chatgpt/preserved-behavior.md"
+    },
+    {
+      "operation": "inspect-result",
+      "tool": "exec_command",
+      "evidence": "docs/releases/host-evaluation/chatgpt/preserved-behavior.md"
+    }
+  ],
+  "nativeObservations": [
+    {
+      "observation": "supplied-input",
+      "evidence": "docs/releases/host-evaluation/chatgpt/preserved-behavior.md",
+      "reviewedBy": "grade_local_repairs"
+    },
+    {
+      "observation": "response",
+      "evidence": "docs/releases/host-evaluation/chatgpt/preserved-behavior.md",
+      "reviewedBy": "grade_local_repairs"
+    },
+    {
+      "observation": "review-outcome",
+      "evidence": "docs/releases/host-evaluation/chatgpt/preserved-behavior.md",
+      "reviewedBy": "grade_local_repairs"
+    }
+  ],
+  "inputRevision": "0edd7dc5272e24f54d58bbacc63d59c516fde9c5"
 }
