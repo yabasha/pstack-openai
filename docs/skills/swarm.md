@@ -84,7 +84,7 @@ Forbidden claims:
 
 ## Source proof and release evidence
 
-The following statuses come from the current parity inventory. Pending aggregate review remains pending. Structural catalog checks do not establish host support.
+Current host statuses and release evidence: [current parity inventory](../parity/inventory.json), [chatgpt host report](../testing/chatgpt.md), and [codex host report](../testing/codex.md). These records can advance after the source freeze. Structural catalog checks do not establish host support.
 
 ### `skills/swarm/SKILL.md`
 
@@ -93,6 +93,3 @@ Destination: [skills/swarm/SKILL.md](../../skills/swarm/SKILL.md).
 Upstream commit: `df581122cde17e6e27686b5a448bde23e4ad4318`. SHA-256: `bdcee4168e22428036e93d7cdeec3f391dbc4132f927f6db2540328c22db0273`.
 
 Disposition: `runtime`. Aggregate adaptation status: `adapted-reviewed`.
-
-- chatgpt: `not-run`. Tested release evidence: [docs/parity/evidence/chatgpt/authorized-program.json](../parity/evidence/chatgpt/authorized-program.json), [docs/parity/evidence/chatgpt/package-discovery.json](../parity/evidence/chatgpt/package-discovery.json), [docs/parity/evidence/chatgpt/partition-and-race.json](../parity/evidence/chatgpt/partition-and-race.json), [docs/parity/evidence/chatgpt/stack-resume.json](../parity/evidence/chatgpt/stack-resume.json), [docs/parity/evidence/chatgpt/swarm-walkthrough.json](../parity/evidence/chatgpt/swarm-walkthrough.json), [docs/parity/evidence/chatgpt/units-and-proof.json](../parity/evidence/chatgpt/units-and-proof.json).
-- codex: `not-run`. Tested release evidence: [docs/parity/evidence/codex/authorized-program.json](../parity/evidence/codex/authorized-program.json), [docs/parity/evidence/codex/package-discovery.json](../parity/evidence/codex/package-discovery.json), [docs/parity/evidence/codex/partition-and-race.json](../parity/evidence/codex/partition-and-race.json), [docs/parity/evidence/codex/stack-resume.json](../parity/evidence/codex/stack-resume.json), [docs/parity/evidence/codex/swarm-walkthrough.json](../parity/evidence/codex/swarm-walkthrough.json), [docs/parity/evidence/codex/units-and-proof.json](../parity/evidence/codex/units-and-proof.json).

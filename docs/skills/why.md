@@ -96,7 +96,7 @@ Forbidden claims:
 
 ## Source proof and release evidence
 
-The following statuses come from the current parity inventory. Pending aggregate review remains pending. Structural catalog checks do not establish host support.
+Current host statuses and release evidence: [current parity inventory](../parity/inventory.json), [chatgpt host report](../testing/chatgpt.md), and [codex host report](../testing/codex.md). These records can advance after the source freeze. Structural catalog checks do not establish host support.
 
 ### `skills/why/references/investigator-prompt.md`
 
@@ -106,9 +106,6 @@ Upstream commit: `df581122cde17e6e27686b5a448bde23e4ad4318`. SHA-256: `6892956a7
 
 Disposition: `runtime`. Aggregate adaptation status: `unchanged-reviewed`.
 
-- chatgpt: `not-run`. Tested release evidence: [docs/parity/evidence/chatgpt/history-evidence.json](../parity/evidence/chatgpt/history-evidence.json), [docs/parity/evidence/chatgpt/read-only-answer.json](../parity/evidence/chatgpt/read-only-answer.json), [docs/parity/evidence/chatgpt/reproduce-before-fix.json](../parity/evidence/chatgpt/reproduce-before-fix.json).
-- codex: `not-run`. Tested release evidence: [docs/parity/evidence/codex/history-evidence.json](../parity/evidence/codex/history-evidence.json), [docs/parity/evidence/codex/read-only-answer.json](../parity/evidence/codex/read-only-answer.json), [docs/parity/evidence/codex/reproduce-before-fix.json](../parity/evidence/codex/reproduce-before-fix.json).
-
 ### `skills/why/references/epistemics.md`
 
 Destination: [skills/why/references/epistemics.md](../../skills/why/references/epistemics.md).
@@ -116,9 +113,6 @@ Destination: [skills/why/references/epistemics.md](../../skills/why/references/e
 Upstream commit: `df581122cde17e6e27686b5a448bde23e4ad4318`. SHA-256: `fcc0f559c072832c869a5ada72434b4849320a637ae63c09e8ee14f7ad787059`.
 
 Disposition: `runtime`. Aggregate adaptation status: `unchanged-reviewed`.
-
-- chatgpt: `not-run`. Tested release evidence: [docs/parity/evidence/chatgpt/history-evidence.json](../parity/evidence/chatgpt/history-evidence.json), [docs/parity/evidence/chatgpt/read-only-answer.json](../parity/evidence/chatgpt/read-only-answer.json), [docs/parity/evidence/chatgpt/reproduce-before-fix.json](../parity/evidence/chatgpt/reproduce-before-fix.json).
-- codex: `not-run`. Tested release evidence: [docs/parity/evidence/codex/history-evidence.json](../parity/evidence/codex/history-evidence.json), [docs/parity/evidence/codex/read-only-answer.json](../parity/evidence/codex/read-only-answer.json), [docs/parity/evidence/codex/reproduce-before-fix.json](../parity/evidence/codex/reproduce-before-fix.json).
 
 ### `skills/why/references/sources/incident-postmortem.md`
 
@@ -128,9 +122,6 @@ Upstream commit: `df581122cde17e6e27686b5a448bde23e4ad4318`. SHA-256: `a899470f0
 
 Disposition: `runtime`. Aggregate adaptation status: `adapted-reviewed`.
 
-- chatgpt: `not-run`. Tested release evidence: [docs/parity/evidence/chatgpt/history-evidence.json](../parity/evidence/chatgpt/history-evidence.json), [docs/parity/evidence/chatgpt/read-only-answer.json](../parity/evidence/chatgpt/read-only-answer.json), [docs/parity/evidence/chatgpt/reproduce-before-fix.json](../parity/evidence/chatgpt/reproduce-before-fix.json).
-- codex: `not-run`. Tested release evidence: [docs/parity/evidence/codex/history-evidence.json](../parity/evidence/codex/history-evidence.json), [docs/parity/evidence/codex/read-only-answer.json](../parity/evidence/codex/read-only-answer.json), [docs/parity/evidence/codex/reproduce-before-fix.json](../parity/evidence/codex/reproduce-before-fix.json).
-
 ### `skills/why/references/sources/slack.md`
 
 Destination: [skills/why/references/sources/slack.md](../../skills/why/references/sources/slack.md).
@@ -138,9 +129,6 @@ Destination: [skills/why/references/sources/slack.md](../../skills/why/reference
 Upstream commit: `df581122cde17e6e27686b5a448bde23e4ad4318`. SHA-256: `58fee61d024b3700b407e7acbed367944720ff05adfddb6954d36c88368f3ba7`.
 
 Disposition: `runtime`. Aggregate adaptation status: `adapted-reviewed`.
-
-- chatgpt: `not-run`. Tested release evidence: [docs/parity/evidence/chatgpt/history-evidence.json](../parity/evidence/chatgpt/history-evidence.json), [docs/parity/evidence/chatgpt/read-only-answer.json](../parity/evidence/chatgpt/read-only-answer.json), [docs/parity/evidence/chatgpt/reproduce-before-fix.json](../parity/evidence/chatgpt/reproduce-before-fix.json).
-- codex: `not-run`. Tested release evidence: [docs/parity/evidence/codex/history-evidence.json](../parity/evidence/codex/history-evidence.json), [docs/parity/evidence/codex/read-only-answer.json](../parity/evidence/codex/read-only-answer.json), [docs/parity/evidence/codex/reproduce-before-fix.json](../parity/evidence/codex/reproduce-before-fix.json).
 
 ### `skills/why/references/sources/datadog.md`
 
@@ -150,9 +138,6 @@ Upstream commit: `df581122cde17e6e27686b5a448bde23e4ad4318`. SHA-256: `ebe9c07ba
 
 Disposition: `runtime`. Aggregate adaptation status: `adapted-reviewed`.
 
-- chatgpt: `not-run`. Tested release evidence: [docs/parity/evidence/chatgpt/history-evidence.json](../parity/evidence/chatgpt/history-evidence.json), [docs/parity/evidence/chatgpt/read-only-answer.json](../parity/evidence/chatgpt/read-only-answer.json), [docs/parity/evidence/chatgpt/reproduce-before-fix.json](../parity/evidence/chatgpt/reproduce-before-fix.json).
-- codex: `not-run`. Tested release evidence: [docs/parity/evidence/codex/history-evidence.json](../parity/evidence/codex/history-evidence.json), [docs/parity/evidence/codex/read-only-answer.json](../parity/evidence/codex/read-only-answer.json), [docs/parity/evidence/codex/reproduce-before-fix.json](../parity/evidence/codex/reproduce-before-fix.json).
-
 ### `skills/why/references/sources/notion.md`
 
 Destination: [skills/why/references/sources/notion.md](../../skills/why/references/sources/notion.md).
@@ -160,9 +145,6 @@ Destination: [skills/why/references/sources/notion.md](../../skills/why/referenc
 Upstream commit: `df581122cde17e6e27686b5a448bde23e4ad4318`. SHA-256: `3bcfa695c49dfad4ac036d5d7181c12585f55ac04f1936198d16ab75a2788997`.
 
 Disposition: `runtime`. Aggregate adaptation status: `adapted-reviewed`.
-
-- chatgpt: `not-run`. Tested release evidence: [docs/parity/evidence/chatgpt/history-evidence.json](../parity/evidence/chatgpt/history-evidence.json), [docs/parity/evidence/chatgpt/read-only-answer.json](../parity/evidence/chatgpt/read-only-answer.json), [docs/parity/evidence/chatgpt/reproduce-before-fix.json](../parity/evidence/chatgpt/reproduce-before-fix.json).
-- codex: `not-run`. Tested release evidence: [docs/parity/evidence/codex/history-evidence.json](../parity/evidence/codex/history-evidence.json), [docs/parity/evidence/codex/read-only-answer.json](../parity/evidence/codex/read-only-answer.json), [docs/parity/evidence/codex/reproduce-before-fix.json](../parity/evidence/codex/reproduce-before-fix.json).
 
 ### `skills/why/references/sources/databricks.md`
 
@@ -172,9 +154,6 @@ Upstream commit: `df581122cde17e6e27686b5a448bde23e4ad4318`. SHA-256: `236ede7aa
 
 Disposition: `runtime`. Aggregate adaptation status: `adapted-reviewed`.
 
-- chatgpt: `not-run`. Tested release evidence: [docs/parity/evidence/chatgpt/history-evidence.json](../parity/evidence/chatgpt/history-evidence.json), [docs/parity/evidence/chatgpt/read-only-answer.json](../parity/evidence/chatgpt/read-only-answer.json), [docs/parity/evidence/chatgpt/reproduce-before-fix.json](../parity/evidence/chatgpt/reproduce-before-fix.json).
-- codex: `not-run`. Tested release evidence: [docs/parity/evidence/codex/history-evidence.json](../parity/evidence/codex/history-evidence.json), [docs/parity/evidence/codex/read-only-answer.json](../parity/evidence/codex/read-only-answer.json), [docs/parity/evidence/codex/reproduce-before-fix.json](../parity/evidence/codex/reproduce-before-fix.json).
-
 ### `skills/why/references/sources/sentry.md`
 
 Destination: [skills/why/references/sources/sentry.md](../../skills/why/references/sources/sentry.md).
@@ -182,9 +161,6 @@ Destination: [skills/why/references/sources/sentry.md](../../skills/why/referenc
 Upstream commit: `df581122cde17e6e27686b5a448bde23e4ad4318`. SHA-256: `6f292bc4fb1548e956f95e1900b9481abf5134254419f1cd9edec95428c82d73`.
 
 Disposition: `runtime`. Aggregate adaptation status: `adapted-reviewed`.
-
-- chatgpt: `not-run`. Tested release evidence: [docs/parity/evidence/chatgpt/history-evidence.json](../parity/evidence/chatgpt/history-evidence.json), [docs/parity/evidence/chatgpt/read-only-answer.json](../parity/evidence/chatgpt/read-only-answer.json), [docs/parity/evidence/chatgpt/reproduce-before-fix.json](../parity/evidence/chatgpt/reproduce-before-fix.json).
-- codex: `not-run`. Tested release evidence: [docs/parity/evidence/codex/history-evidence.json](../parity/evidence/codex/history-evidence.json), [docs/parity/evidence/codex/read-only-answer.json](../parity/evidence/codex/read-only-answer.json), [docs/parity/evidence/codex/reproduce-before-fix.json](../parity/evidence/codex/reproduce-before-fix.json).
 
 ### `skills/why/references/sources/linear.md`
 
@@ -194,9 +170,6 @@ Upstream commit: `df581122cde17e6e27686b5a448bde23e4ad4318`. SHA-256: `01304e7f1
 
 Disposition: `runtime`. Aggregate adaptation status: `adapted-reviewed`.
 
-- chatgpt: `not-run`. Tested release evidence: [docs/parity/evidence/chatgpt/history-evidence.json](../parity/evidence/chatgpt/history-evidence.json), [docs/parity/evidence/chatgpt/read-only-answer.json](../parity/evidence/chatgpt/read-only-answer.json), [docs/parity/evidence/chatgpt/reproduce-before-fix.json](../parity/evidence/chatgpt/reproduce-before-fix.json).
-- codex: `not-run`. Tested release evidence: [docs/parity/evidence/codex/history-evidence.json](../parity/evidence/codex/history-evidence.json), [docs/parity/evidence/codex/read-only-answer.json](../parity/evidence/codex/read-only-answer.json), [docs/parity/evidence/codex/reproduce-before-fix.json](../parity/evidence/codex/reproduce-before-fix.json).
-
 ### `skills/why/references/sources/code-archaeology.md`
 
 Destination: [skills/why/references/sources/code-archaeology.md](../../skills/why/references/sources/code-archaeology.md).
@@ -204,9 +177,6 @@ Destination: [skills/why/references/sources/code-archaeology.md](../../skills/wh
 Upstream commit: `df581122cde17e6e27686b5a448bde23e4ad4318`. SHA-256: `8c14aa382f0de40829b2668d43e3f54814480bb93a486c9282ada4003f6b9dbd`.
 
 Disposition: `runtime`. Aggregate adaptation status: `adapted-reviewed`.
-
-- chatgpt: `not-run`. Tested release evidence: [docs/parity/evidence/chatgpt/history-evidence.json](../parity/evidence/chatgpt/history-evidence.json), [docs/parity/evidence/chatgpt/read-only-answer.json](../parity/evidence/chatgpt/read-only-answer.json), [docs/parity/evidence/chatgpt/reproduce-before-fix.json](../parity/evidence/chatgpt/reproduce-before-fix.json).
-- codex: `not-run`. Tested release evidence: [docs/parity/evidence/codex/history-evidence.json](../parity/evidence/codex/history-evidence.json), [docs/parity/evidence/codex/read-only-answer.json](../parity/evidence/codex/read-only-answer.json), [docs/parity/evidence/codex/reproduce-before-fix.json](../parity/evidence/codex/reproduce-before-fix.json).
 
 ### `skills/why/references/synthesizer-prompt.md`
 
@@ -216,9 +186,6 @@ Upstream commit: `df581122cde17e6e27686b5a448bde23e4ad4318`. SHA-256: `733a3e9cf
 
 Disposition: `runtime`. Aggregate adaptation status: `adapted-reviewed`.
 
-- chatgpt: `not-run`. Tested release evidence: [docs/parity/evidence/chatgpt/history-evidence.json](../parity/evidence/chatgpt/history-evidence.json), [docs/parity/evidence/chatgpt/read-only-answer.json](../parity/evidence/chatgpt/read-only-answer.json), [docs/parity/evidence/chatgpt/reproduce-before-fix.json](../parity/evidence/chatgpt/reproduce-before-fix.json).
-- codex: `not-run`. Tested release evidence: [docs/parity/evidence/codex/history-evidence.json](../parity/evidence/codex/history-evidence.json), [docs/parity/evidence/codex/read-only-answer.json](../parity/evidence/codex/read-only-answer.json), [docs/parity/evidence/codex/reproduce-before-fix.json](../parity/evidence/codex/reproduce-before-fix.json).
-
 ### `skills/why/references/source-playbook.md`
 
 Destination: [skills/why/references/source-playbook.md](../../skills/why/references/source-playbook.md).
@@ -227,9 +194,6 @@ Upstream commit: `df581122cde17e6e27686b5a448bde23e4ad4318`. SHA-256: `9ae9dcb9d
 
 Disposition: `runtime`. Aggregate adaptation status: `unchanged-reviewed`.
 
-- chatgpt: `not-run`. Tested release evidence: [docs/parity/evidence/chatgpt/history-evidence.json](../parity/evidence/chatgpt/history-evidence.json), [docs/parity/evidence/chatgpt/read-only-answer.json](../parity/evidence/chatgpt/read-only-answer.json), [docs/parity/evidence/chatgpt/reproduce-before-fix.json](../parity/evidence/chatgpt/reproduce-before-fix.json).
-- codex: `not-run`. Tested release evidence: [docs/parity/evidence/codex/history-evidence.json](../parity/evidence/codex/history-evidence.json), [docs/parity/evidence/codex/read-only-answer.json](../parity/evidence/codex/read-only-answer.json), [docs/parity/evidence/codex/reproduce-before-fix.json](../parity/evidence/codex/reproduce-before-fix.json).
-
 ### `skills/why/SKILL.md`
 
 Destination: [skills/why/SKILL.md](../../skills/why/SKILL.md).
@@ -237,6 +201,3 @@ Destination: [skills/why/SKILL.md](../../skills/why/SKILL.md).
 Upstream commit: `df581122cde17e6e27686b5a448bde23e4ad4318`. SHA-256: `442215bf70e491d4d31bd200c197f2ec447445df38e074c40880fc4bf30a1f9e`.
 
 Disposition: `runtime`. Aggregate adaptation status: `adapted-reviewed`.
-
-- chatgpt: `not-run`. Tested release evidence: [docs/parity/evidence/chatgpt/history-evidence.json](../parity/evidence/chatgpt/history-evidence.json), [docs/parity/evidence/chatgpt/package-discovery.json](../parity/evidence/chatgpt/package-discovery.json), [docs/parity/evidence/chatgpt/read-only-answer.json](../parity/evidence/chatgpt/read-only-answer.json), [docs/parity/evidence/chatgpt/reproduce-before-fix.json](../parity/evidence/chatgpt/reproduce-before-fix.json).
-- codex: `not-run`. Tested release evidence: [docs/parity/evidence/codex/history-evidence.json](../parity/evidence/codex/history-evidence.json), [docs/parity/evidence/codex/package-discovery.json](../parity/evidence/codex/package-discovery.json), [docs/parity/evidence/codex/read-only-answer.json](../parity/evidence/codex/read-only-answer.json), [docs/parity/evidence/codex/reproduce-before-fix.json](../parity/evidence/codex/reproduce-before-fix.json).

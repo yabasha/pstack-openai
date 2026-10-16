@@ -78,7 +78,7 @@ Forbidden claims:
 
 ## Source proof and release evidence
 
-The following statuses come from the current parity inventory. Pending aggregate review remains pending. Structural catalog checks do not establish host support.
+Current host statuses and release evidence: [current parity inventory](../parity/inventory.json), [chatgpt host report](../testing/chatgpt.md), and [codex host report](../testing/codex.md). These records can advance after the source freeze. Structural catalog checks do not establish host support.
 
 ### `skills/typescript-best-practices/SKILL.md`
 
@@ -88,9 +88,6 @@ Upstream commit: `df581122cde17e6e27686b5a448bde23e4ad4318`. SHA-256: `28f9e6171
 
 Disposition: `runtime`. Aggregate adaptation status: `adapted-reviewed`.
 
-- chatgpt: `not-run`. Tested release evidence: [docs/parity/evidence/chatgpt/package-discovery.json](../parity/evidence/chatgpt/package-discovery.json), [docs/parity/evidence/chatgpt/typed-boundary.json](../parity/evidence/chatgpt/typed-boundary.json).
-- codex: `not-run`. Tested release evidence: [docs/parity/evidence/codex/package-discovery.json](../parity/evidence/codex/package-discovery.json), [docs/parity/evidence/codex/typed-boundary.json](../parity/evidence/codex/typed-boundary.json).
-
 ### `skills/typescript-best-practices/references/patterns.md`
 
 Destination: [skills/typescript-best-practices/references/patterns.md](../../skills/typescript-best-practices/references/patterns.md).
@@ -98,6 +95,3 @@ Destination: [skills/typescript-best-practices/references/patterns.md](../../ski
 Upstream commit: `df581122cde17e6e27686b5a448bde23e4ad4318`. SHA-256: `faa1362055374452efccac1b629677c61acfb0bcc6c4e3311836b5715638ee18`.
 
 Disposition: `runtime`. Aggregate adaptation status: `unchanged-reviewed`.
-
-- chatgpt: `not-run`. Tested release evidence: [docs/parity/evidence/chatgpt/typed-boundary.json](../parity/evidence/chatgpt/typed-boundary.json).
-- codex: `not-run`. Tested release evidence: [docs/parity/evidence/codex/typed-boundary.json](../parity/evidence/codex/typed-boundary.json).

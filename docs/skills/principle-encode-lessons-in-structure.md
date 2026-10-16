@@ -78,7 +78,7 @@ Forbidden claims:
 
 ## Source proof and release evidence
 
-The following statuses come from the current parity inventory. Pending aggregate review remains pending. Structural catalog checks do not establish host support.
+Current host statuses and release evidence: [current parity inventory](../parity/inventory.json), [chatgpt host report](../testing/chatgpt.md), and [codex host report](../testing/codex.md). These records can advance after the source freeze. Structural catalog checks do not establish host support.
 
 ### `skills/principle-encode-lessons-in-structure/SKILL.md`
 
@@ -87,6 +87,3 @@ Destination: [skills/principle-encode-lessons-in-structure/SKILL.md](../../skill
 Upstream commit: `df581122cde17e6e27686b5a448bde23e4ad4318`. SHA-256: `77044c83a9ac6df78fc643887ea5f1f11f082adaf14b717c060cdaed03cce863`.
 
 Disposition: `runtime`. Aggregate adaptation status: `adapted-reviewed`.
-
-- chatgpt: `not-run`. Tested release evidence: [docs/parity/evidence/chatgpt/owned-safe-cleanup.json](../parity/evidence/chatgpt/owned-safe-cleanup.json), [docs/parity/evidence/chatgpt/package-discovery.json](../parity/evidence/chatgpt/package-discovery.json), [docs/parity/evidence/chatgpt/repeated-rule.json](../parity/evidence/chatgpt/repeated-rule.json), [docs/parity/evidence/chatgpt/supported-authoring.json](../parity/evidence/chatgpt/supported-authoring.json), [docs/parity/evidence/chatgpt/unit-state.json](../parity/evidence/chatgpt/unit-state.json), [docs/parity/evidence/chatgpt/units-and-proof.json](../parity/evidence/chatgpt/units-and-proof.json).
-- codex: `not-run`. Tested release evidence: [docs/parity/evidence/codex/owned-safe-cleanup.json](../parity/evidence/codex/owned-safe-cleanup.json), [docs/parity/evidence/codex/package-discovery.json](../parity/evidence/codex/package-discovery.json), [docs/parity/evidence/codex/repeated-rule.json](../parity/evidence/codex/repeated-rule.json), [docs/parity/evidence/codex/supported-authoring.json](../parity/evidence/codex/supported-authoring.json), [docs/parity/evidence/codex/unit-state.json](../parity/evidence/codex/unit-state.json), [docs/parity/evidence/codex/units-and-proof.json](../parity/evidence/codex/units-and-proof.json).
