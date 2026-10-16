@@ -1,3 +1,838 @@
+# Current frozen host discovery, 16 October 2026
+
+Discovery passes for frozen source f4623636a287bea2aa79c4b2234a53d20a5f193c, version 0.1.0. This report supersedes earlier current-status statements below without transferring prior behavioral outcomes.
+
+A fresh isolated CLI app-server observed the pinned plugin installed and enabled. Both plugin/read and skills/list enumerated exactly 51 canonical roots and no nested Benny skills. Source export and installed cache matched all 726 frozen paths, bytes and modes.
+
+The observation labels are bound to the actual callable operations in the evidence record. The exact installed-copy receipt is stored at docs/parity/evidence/codex/authorization-capability-check.md. Source, installed identity and enumeration are independently checked. Full workflow coverage remains unverified.
+
+```json
+{
+  "initialized": {
+    "userAgent": "pstack-frozen-host-verification/0.162.1 (Mac OS 27.0.1; arm64) dumb (pstack-frozen-host-verification; 0.1.0)",
+    "codexHome": "/Users/digital-hawk/Herd/pstack-host-verification-20261016-f462363/runtime",
+    "platformFamily": "unix",
+    "platformOs": "macos"
+  },
+  "pluginId": "pstack-openai@pstack-frozen-verification",
+  "registeredSkills": [
+    {
+      "path": "/Users/digital-hawk/Herd/pstack-host-verification-20261016-f462363/runtime/plugins/cache/pstack-frozen-verification/pstack-openai/0.1.0/skills/make-bot-ui/SKILL.md",
+      "enabled": true,
+      "pluginId": "pstack-openai@pstack-frozen-verification"
+    },
+    {
+      "path": "/Users/digital-hawk/Herd/pstack-host-verification-20261016-f462363/runtime/plugins/cache/pstack-frozen-verification/pstack-openai/0.1.0/skills/poteto-mode/SKILL.md",
+      "enabled": true,
+      "pluginId": "pstack-openai@pstack-frozen-verification"
+    },
+    {
+      "path": "/Users/digital-hawk/Herd/pstack-host-verification-20261016-f462363/runtime/plugins/cache/pstack-frozen-verification/pstack-openai/0.1.0/skills/architect/SKILL.md",
+      "enabled": true,
+      "pluginId": "pstack-openai@pstack-frozen-verification"
+    },
+    {
+      "path": "/Users/digital-hawk/Herd/pstack-host-verification-20261016-f462363/runtime/plugins/cache/pstack-frozen-verification/pstack-openai/0.1.0/skills/arena/SKILL.md",
+      "enabled": true,
+      "pluginId": "pstack-openai@pstack-frozen-verification"
+    },
+    {
+      "path": "/Users/digital-hawk/Herd/pstack-host-verification-20261016-f462363/runtime/plugins/cache/pstack-frozen-verification/pstack-openai/0.1.0/skills/automate-me/SKILL.md",
+      "enabled": true,
+      "pluginId": "pstack-openai@pstack-frozen-verification"
+    },
+    {
+      "path": "/Users/digital-hawk/Herd/pstack-host-verification-20261016-f462363/runtime/plugins/cache/pstack-frozen-verification/pstack-openai/0.1.0/skills/benchmark-checklist/SKILL.md",
+      "enabled": true,
+      "pluginId": "pstack-openai@pstack-frozen-verification"
+    },
+    {
+      "path": "/Users/digital-hawk/Herd/pstack-host-verification-20261016-f462363/runtime/plugins/cache/pstack-frozen-verification/pstack-openai/0.1.0/skills/blast-radius/SKILL.md",
+      "enabled": true,
+      "pluginId": "pstack-openai@pstack-frozen-verification"
+    },
+    {
+      "path": "/Users/digital-hawk/Herd/pstack-host-verification-20261016-f462363/runtime/plugins/cache/pstack-frozen-verification/pstack-openai/0.1.0/skills/bro/SKILL.md",
+      "enabled": true,
+      "pluginId": "pstack-openai@pstack-frozen-verification"
+    },
+    {
+      "path": "/Users/digital-hawk/Herd/pstack-host-verification-20261016-f462363/runtime/plugins/cache/pstack-frozen-verification/pstack-openai/0.1.0/skills/correct/SKILL.md",
+      "enabled": true,
+      "pluginId": "pstack-openai@pstack-frozen-verification"
+    },
+    {
+      "path": "/Users/digital-hawk/Herd/pstack-host-verification-20261016-f462363/runtime/plugins/cache/pstack-frozen-verification/pstack-openai/0.1.0/skills/create-verification-skill/SKILL.md",
+      "enabled": true,
+      "pluginId": "pstack-openai@pstack-frozen-verification"
+    },
+    {
+      "path": "/Users/digital-hawk/Herd/pstack-host-verification-20261016-f462363/runtime/plugins/cache/pstack-frozen-verification/pstack-openai/0.1.0/skills/figure-it-out/SKILL.md",
+      "enabled": true,
+      "pluginId": "pstack-openai@pstack-frozen-verification"
+    },
+    {
+      "path": "/Users/digital-hawk/Herd/pstack-host-verification-20261016-f462363/runtime/plugins/cache/pstack-frozen-verification/pstack-openai/0.1.0/skills/how/SKILL.md",
+      "enabled": true,
+      "pluginId": "pstack-openai@pstack-frozen-verification"
+    },
+    {
+      "path": "/Users/digital-hawk/Herd/pstack-host-verification-20261016-f462363/runtime/plugins/cache/pstack-frozen-verification/pstack-openai/0.1.0/skills/interrogate/SKILL.md",
+      "enabled": true,
+      "pluginId": "pstack-openai@pstack-frozen-verification"
+    },
+    {
+      "path": "/Users/digital-hawk/Herd/pstack-host-verification-20261016-f462363/runtime/plugins/cache/pstack-frozen-verification/pstack-openai/0.1.0/skills/maintain-verification-skill/SKILL.md",
+      "enabled": true,
+      "pluginId": "pstack-openai@pstack-frozen-verification"
+    },
+    {
+      "path": "/Users/digital-hawk/Herd/pstack-host-verification-20261016-f462363/runtime/plugins/cache/pstack-frozen-verification/pstack-openai/0.1.0/skills/no-comments/SKILL.md",
+      "enabled": true,
+      "pluginId": "pstack-openai@pstack-frozen-verification"
+    },
+    {
+      "path": "/Users/digital-hawk/Herd/pstack-host-verification-20261016-f462363/runtime/plugins/cache/pstack-frozen-verification/pstack-openai/0.1.0/skills/poteto-help/SKILL.md",
+      "enabled": true,
+      "pluginId": "pstack-openai@pstack-frozen-verification"
+    },
+    {
+      "path": "/Users/digital-hawk/Herd/pstack-host-verification-20261016-f462363/runtime/plugins/cache/pstack-frozen-verification/pstack-openai/0.1.0/skills/principle-attack-the-premise/SKILL.md",
+      "enabled": true,
+      "pluginId": "pstack-openai@pstack-frozen-verification"
+    },
+    {
+      "path": "/Users/digital-hawk/Herd/pstack-host-verification-20261016-f462363/runtime/plugins/cache/pstack-frozen-verification/pstack-openai/0.1.0/skills/principle-boundary-discipline/SKILL.md",
+      "enabled": true,
+      "pluginId": "pstack-openai@pstack-frozen-verification"
+    },
+    {
+      "path": "/Users/digital-hawk/Herd/pstack-host-verification-20261016-f462363/runtime/plugins/cache/pstack-frozen-verification/pstack-openai/0.1.0/skills/principle-build-the-lever/SKILL.md",
+      "enabled": true,
+      "pluginId": "pstack-openai@pstack-frozen-verification"
+    },
+    {
+      "path": "/Users/digital-hawk/Herd/pstack-host-verification-20261016-f462363/runtime/plugins/cache/pstack-frozen-verification/pstack-openai/0.1.0/skills/principle-encode-lessons-in-structure/SKILL.md",
+      "enabled": true,
+      "pluginId": "pstack-openai@pstack-frozen-verification"
+    },
+    {
+      "path": "/Users/digital-hawk/Herd/pstack-host-verification-20261016-f462363/runtime/plugins/cache/pstack-frozen-verification/pstack-openai/0.1.0/skills/principle-exhaust-the-design-space/SKILL.md",
+      "enabled": true,
+      "pluginId": "pstack-openai@pstack-frozen-verification"
+    },
+    {
+      "path": "/Users/digital-hawk/Herd/pstack-host-verification-20261016-f462363/runtime/plugins/cache/pstack-frozen-verification/pstack-openai/0.1.0/skills/principle-experience-first/SKILL.md",
+      "enabled": true,
+      "pluginId": "pstack-openai@pstack-frozen-verification"
+    },
+    {
+      "path": "/Users/digital-hawk/Herd/pstack-host-verification-20261016-f462363/runtime/plugins/cache/pstack-frozen-verification/pstack-openai/0.1.0/skills/principle-explain-the-number/SKILL.md",
+      "enabled": true,
+      "pluginId": "pstack-openai@pstack-frozen-verification"
+    },
+    {
+      "path": "/Users/digital-hawk/Herd/pstack-host-verification-20261016-f462363/runtime/plugins/cache/pstack-frozen-verification/pstack-openai/0.1.0/skills/principle-fix-root-causes/SKILL.md",
+      "enabled": true,
+      "pluginId": "pstack-openai@pstack-frozen-verification"
+    },
+    {
+      "path": "/Users/digital-hawk/Herd/pstack-host-verification-20261016-f462363/runtime/plugins/cache/pstack-frozen-verification/pstack-openai/0.1.0/skills/principle-foundational-thinking/SKILL.md",
+      "enabled": true,
+      "pluginId": "pstack-openai@pstack-frozen-verification"
+    },
+    {
+      "path": "/Users/digital-hawk/Herd/pstack-host-verification-20261016-f462363/runtime/plugins/cache/pstack-frozen-verification/pstack-openai/0.1.0/skills/principle-guard-the-context-window/SKILL.md",
+      "enabled": true,
+      "pluginId": "pstack-openai@pstack-frozen-verification"
+    },
+    {
+      "path": "/Users/digital-hawk/Herd/pstack-host-verification-20261016-f462363/runtime/plugins/cache/pstack-frozen-verification/pstack-openai/0.1.0/skills/principle-laziness-protocol/SKILL.md",
+      "enabled": true,
+      "pluginId": "pstack-openai@pstack-frozen-verification"
+    },
+    {
+      "path": "/Users/digital-hawk/Herd/pstack-host-verification-20261016-f462363/runtime/plugins/cache/pstack-frozen-verification/pstack-openai/0.1.0/skills/principle-make-operations-idempotent/SKILL.md",
+      "enabled": true,
+      "pluginId": "pstack-openai@pstack-frozen-verification"
+    },
+    {
+      "path": "/Users/digital-hawk/Herd/pstack-host-verification-20261016-f462363/runtime/plugins/cache/pstack-frozen-verification/pstack-openai/0.1.0/skills/principle-migrate-callers-then-delete-legacy-apis/SKILL.md",
+      "enabled": true,
+      "pluginId": "pstack-openai@pstack-frozen-verification"
+    },
+    {
+      "path": "/Users/digital-hawk/Herd/pstack-host-verification-20261016-f462363/runtime/plugins/cache/pstack-frozen-verification/pstack-openai/0.1.0/skills/principle-minimize-reader-load/SKILL.md",
+      "enabled": true,
+      "pluginId": "pstack-openai@pstack-frozen-verification"
+    },
+    {
+      "path": "/Users/digital-hawk/Herd/pstack-host-verification-20261016-f462363/runtime/plugins/cache/pstack-frozen-verification/pstack-openai/0.1.0/skills/principle-model-the-domain/SKILL.md",
+      "enabled": true,
+      "pluginId": "pstack-openai@pstack-frozen-verification"
+    },
+    {
+      "path": "/Users/digital-hawk/Herd/pstack-host-verification-20261016-f462363/runtime/plugins/cache/pstack-frozen-verification/pstack-openai/0.1.0/skills/principle-never-block-on-the-human/SKILL.md",
+      "enabled": true,
+      "pluginId": "pstack-openai@pstack-frozen-verification"
+    },
+    {
+      "path": "/Users/digital-hawk/Herd/pstack-host-verification-20261016-f462363/runtime/plugins/cache/pstack-frozen-verification/pstack-openai/0.1.0/skills/principle-outcome-oriented-execution/SKILL.md",
+      "enabled": true,
+      "pluginId": "pstack-openai@pstack-frozen-verification"
+    },
+    {
+      "path": "/Users/digital-hawk/Herd/pstack-host-verification-20261016-f462363/runtime/plugins/cache/pstack-frozen-verification/pstack-openai/0.1.0/skills/principle-prove-it-works/SKILL.md",
+      "enabled": true,
+      "pluginId": "pstack-openai@pstack-frozen-verification"
+    },
+    {
+      "path": "/Users/digital-hawk/Herd/pstack-host-verification-20261016-f462363/runtime/plugins/cache/pstack-frozen-verification/pstack-openai/0.1.0/skills/principle-redesign-from-first-principles/SKILL.md",
+      "enabled": true,
+      "pluginId": "pstack-openai@pstack-frozen-verification"
+    },
+    {
+      "path": "/Users/digital-hawk/Herd/pstack-host-verification-20261016-f462363/runtime/plugins/cache/pstack-frozen-verification/pstack-openai/0.1.0/skills/principle-separate-before-serializing-shared-state/SKILL.md",
+      "enabled": true,
+      "pluginId": "pstack-openai@pstack-frozen-verification"
+    },
+    {
+      "path": "/Users/digital-hawk/Herd/pstack-host-verification-20261016-f462363/runtime/plugins/cache/pstack-frozen-verification/pstack-openai/0.1.0/skills/principle-sequence-verifiable-units/SKILL.md",
+      "enabled": true,
+      "pluginId": "pstack-openai@pstack-frozen-verification"
+    },
+    {
+      "path": "/Users/digital-hawk/Herd/pstack-host-verification-20261016-f462363/runtime/plugins/cache/pstack-frozen-verification/pstack-openai/0.1.0/skills/principle-subtract-before-you-add/SKILL.md",
+      "enabled": true,
+      "pluginId": "pstack-openai@pstack-frozen-verification"
+    },
+    {
+      "path": "/Users/digital-hawk/Herd/pstack-host-verification-20261016-f462363/runtime/plugins/cache/pstack-frozen-verification/pstack-openai/0.1.0/skills/principle-test-behavior-not-implementation/SKILL.md",
+      "enabled": true,
+      "pluginId": "pstack-openai@pstack-frozen-verification"
+    },
+    {
+      "path": "/Users/digital-hawk/Herd/pstack-host-verification-20261016-f462363/runtime/plugins/cache/pstack-frozen-verification/pstack-openai/0.1.0/skills/principle-type-system-discipline/SKILL.md",
+      "enabled": true,
+      "pluginId": "pstack-openai@pstack-frozen-verification"
+    },
+    {
+      "path": "/Users/digital-hawk/Herd/pstack-host-verification-20261016-f462363/runtime/plugins/cache/pstack-frozen-verification/pstack-openai/0.1.0/skills/recall/SKILL.md",
+      "enabled": true,
+      "pluginId": "pstack-openai@pstack-frozen-verification"
+    },
+    {
+      "path": "/Users/digital-hawk/Herd/pstack-host-verification-20261016-f462363/runtime/plugins/cache/pstack-frozen-verification/pstack-openai/0.1.0/skills/reflect/SKILL.md",
+      "enabled": true,
+      "pluginId": "pstack-openai@pstack-frozen-verification"
+    },
+    {
+      "path": "/Users/digital-hawk/Herd/pstack-host-verification-20261016-f462363/runtime/plugins/cache/pstack-frozen-verification/pstack-openai/0.1.0/skills/setup-pstack/SKILL.md",
+      "enabled": true,
+      "pluginId": "pstack-openai@pstack-frozen-verification"
+    },
+    {
+      "path": "/Users/digital-hawk/Herd/pstack-host-verification-20261016-f462363/runtime/plugins/cache/pstack-frozen-verification/pstack-openai/0.1.0/skills/show-me-your-work/SKILL.md",
+      "enabled": true,
+      "pluginId": "pstack-openai@pstack-frozen-verification"
+    },
+    {
+      "path": "/Users/digital-hawk/Herd/pstack-host-verification-20261016-f462363/runtime/plugins/cache/pstack-frozen-verification/pstack-openai/0.1.0/skills/swarm/SKILL.md",
+      "enabled": true,
+      "pluginId": "pstack-openai@pstack-frozen-verification"
+    },
+    {
+      "path": "/Users/digital-hawk/Herd/pstack-host-verification-20261016-f462363/runtime/plugins/cache/pstack-frozen-verification/pstack-openai/0.1.0/skills/tdd/SKILL.md",
+      "enabled": true,
+      "pluginId": "pstack-openai@pstack-frozen-verification"
+    },
+    {
+      "path": "/Users/digital-hawk/Herd/pstack-host-verification-20261016-f462363/runtime/plugins/cache/pstack-frozen-verification/pstack-openai/0.1.0/skills/teach/SKILL.md",
+      "enabled": true,
+      "pluginId": "pstack-openai@pstack-frozen-verification"
+    },
+    {
+      "path": "/Users/digital-hawk/Herd/pstack-host-verification-20261016-f462363/runtime/plugins/cache/pstack-frozen-verification/pstack-openai/0.1.0/skills/technical-writing/SKILL.md",
+      "enabled": true,
+      "pluginId": "pstack-openai@pstack-frozen-verification"
+    },
+    {
+      "path": "/Users/digital-hawk/Herd/pstack-host-verification-20261016-f462363/runtime/plugins/cache/pstack-frozen-verification/pstack-openai/0.1.0/skills/typescript-best-practices/SKILL.md",
+      "enabled": true,
+      "pluginId": "pstack-openai@pstack-frozen-verification"
+    },
+    {
+      "path": "/Users/digital-hawk/Herd/pstack-host-verification-20261016-f462363/runtime/plugins/cache/pstack-frozen-verification/pstack-openai/0.1.0/skills/unslop/SKILL.md",
+      "enabled": true,
+      "pluginId": "pstack-openai@pstack-frozen-verification"
+    },
+    {
+      "path": "/Users/digital-hawk/Herd/pstack-host-verification-20261016-f462363/runtime/plugins/cache/pstack-frozen-verification/pstack-openai/0.1.0/skills/why/SKILL.md",
+      "enabled": true,
+      "pluginId": "pstack-openai@pstack-frozen-verification"
+    }
+  ],
+  "comparisons": [
+    {
+      "path": "/Users/digital-hawk/Herd/pstack-host-verification-20261016-f462363/marketplace/pstack-openai",
+      "sourceFiles": 726,
+      "changedSourceFiles": [],
+      "modeChanges": [],
+      "generatedFiles": []
+    },
+    {
+      "path": "/Users/digital-hawk/Herd/pstack-host-verification-20261016-f462363/runtime/plugins/cache/pstack-frozen-verification/pstack-openai/0.1.0",
+      "sourceFiles": 726,
+      "changedSourceFiles": [],
+      "modeChanges": [],
+      "generatedFiles": []
+    }
+  ]
+}
+```
+
+## Previous receipt or support record preserved verbatim
+
+```text
+{
+  "schemaVersion": 1,
+  "kind": "pstack-package-discovery",
+  "host": "codex",
+  "packageCommit": "22ca2bd2077ab8628119d34477ad9f364e4f1211",
+  "packageVersion": "0.1.0",
+  "installedCopy": "/Users/digital-hawk/Herd/pstack-host-verification-20261016/runtime/plugins/cache/pstack-frozen-verification/pstack-openai/0.1.0",
+  "rootSkills": [
+    "architect",
+    "arena",
+    "automate-me",
+    "benchmark-checklist",
+    "blast-radius",
+    "bro",
+    "correct",
+    "create-verification-skill",
+    "figure-it-out",
+    "how",
+    "interrogate",
+    "maintain-verification-skill",
+    "make-bot-ui",
+    "no-comments",
+    "poteto-help",
+    "poteto-mode",
+    "principle-attack-the-premise",
+    "principle-boundary-discipline",
+    "principle-build-the-lever",
+    "principle-encode-lessons-in-structure",
+    "principle-exhaust-the-design-space",
+    "principle-experience-first",
+    "principle-explain-the-number",
+    "principle-fix-root-causes",
+    "principle-foundational-thinking",
+    "principle-guard-the-context-window",
+    "principle-laziness-protocol",
+    "principle-make-operations-idempotent",
+    "principle-migrate-callers-then-delete-legacy-apis",
+    "principle-minimize-reader-load",
+    "principle-model-the-domain",
+    "principle-never-block-on-the-human",
+    "principle-outcome-oriented-execution",
+    "principle-prove-it-works",
+    "principle-redesign-from-first-principles",
+    "principle-separate-before-serializing-shared-state",
+    "principle-sequence-verifiable-units",
+    "principle-subtract-before-you-add",
+    "principle-test-behavior-not-implementation",
+    "principle-type-system-discipline",
+    "recall",
+    "reflect",
+    "setup-pstack",
+    "show-me-your-work",
+    "swarm",
+    "tdd",
+    "teach",
+    "technical-writing",
+    "typescript-best-practices",
+    "unslop",
+    "why"
+  ],
+  "excludedSkills": [
+    "automations/benny/skills/reproduce-and-fix-issues/SKILL.md",
+    "automations/benny/skills/setup-benny/SKILL.md",
+    "automations/benny/skills/triage-issue-reports/SKILL.md"
+  ]
+}
+```
+
+## Preserved historical reports
+
+Historical current-status statements below apply to their named checkpoints.
+
+# Frozen CLI discovery verified, 16 October 2026
+
+Fresh isolated CLI discovery passed for freeze 22ca2bd2077ab8628119d34477ad9f364e4f1211, version 0.1.0. This is a CLI-only result; no desktop-window, ChatGPT or model behavior is inferred. The profile is /Users/digital-hawk/Herd/pstack-host-verification-20261016/runtime. The existing user-profile 0.2.0 installation was not replaced.
+
+The supported marketplace-add and plugin-add commands returned exit 0. A fresh app-server initialized, then processed plugin/read and skills/list with forceReload=true. Exact target registrations and observed host metadata follow. Unrelated skill entries are omitted; the target had no errors. The independent byte/mode comparison checked all 726 tracked paths in both source and installed cache against the frozen Git tree, including absence of extra files.
+
+```json
+{
+  "initialized": {
+    "userAgent": "pstack-frozen-host-verification/0.162.1 (Mac OS 27.0.1; arm64) dumb (pstack-frozen-host-verification; 0.1.0)",
+    "codexHome": "/Users/digital-hawk/Herd/pstack-host-verification-20261016/runtime",
+    "platformFamily": "unix",
+    "platformOs": "macos"
+  },
+  "marketplace": {
+    "marketplaceName": "pstack-frozen-verification",
+    "installedRoot": "/Users/digital-hawk/Herd/pstack-host-verification-20261016/marketplace",
+    "alreadyAdded": false
+  },
+  "installation": {
+    "pluginId": "pstack-openai@pstack-frozen-verification",
+    "name": "pstack-openai",
+    "marketplaceName": "pstack-frozen-verification",
+    "version": "0.1.0",
+    "installedPath": "/Users/digital-hawk/Herd/pstack-host-verification-20261016/runtime/plugins/cache/pstack-frozen-verification/pstack-openai/0.1.0",
+    "authPolicy": "ON_USE"
+  },
+  "observedPlugin": {
+    "id": "pstack-openai@pstack-frozen-verification",
+    "remotePluginId": null,
+    "version": null,
+    "localVersion": "0.1.0",
+    "name": "pstack-openai",
+    "shareContext": null,
+    "source": {
+      "type": "local",
+      "path": "/Users/digital-hawk/Herd/pstack-host-verification-20261016/marketplace/pstack-openai"
+    },
+    "installed": true,
+    "installedAt": null,
+    "enabled": true,
+    "installPolicy": "AVAILABLE",
+    "installPolicySource": null,
+    "mustShowInstallationInterstitial": null,
+    "authPolicy": "ON_USE",
+    "availability": "AVAILABLE",
+    "disabledReason": null,
+    "eligiblePlanTypes": null,
+    "interface": {
+      "displayName": "pstack-openai",
+      "shortDescription": "Engineering workflows and principles from pstack.",
+      "longDescription": null,
+      "developerName": "Lauren Tan",
+      "category": "Productivity",
+      "capabilities": [],
+      "websiteUrl": "https://github.com/cursor/plugins/blob/main/pstack/docs/guide/README.md",
+      "privacyPolicyUrl": null,
+      "termsOfServiceUrl": null,
+      "defaultPrompt": null,
+      "brandColor": null,
+      "composerIcon": null,
+      "composerIconUrl": null,
+      "logo": "/Users/digital-hawk/Herd/pstack-host-verification-20261016/marketplace/pstack-openai/assets/logo.png",
+      "logoDark": null,
+      "logoUrl": null,
+      "logoUrlDark": null,
+      "screenshots": [],
+      "screenshotUrls": []
+    },
+    "keywords": []
+  },
+  "registeredTargetSkills": [
+    {
+      "canonicalRoot": "architect",
+      "path": "/Users/digital-hawk/Herd/pstack-host-verification-20261016/runtime/plugins/cache/pstack-frozen-verification/pstack-openai/0.1.0/skills/architect/SKILL.md",
+      "enabled": true,
+      "pluginId": "pstack-openai@pstack-frozen-verification"
+    },
+    {
+      "canonicalRoot": "arena",
+      "path": "/Users/digital-hawk/Herd/pstack-host-verification-20261016/runtime/plugins/cache/pstack-frozen-verification/pstack-openai/0.1.0/skills/arena/SKILL.md",
+      "enabled": true,
+      "pluginId": "pstack-openai@pstack-frozen-verification"
+    },
+    {
+      "canonicalRoot": "automate-me",
+      "path": "/Users/digital-hawk/Herd/pstack-host-verification-20261016/runtime/plugins/cache/pstack-frozen-verification/pstack-openai/0.1.0/skills/automate-me/SKILL.md",
+      "enabled": true,
+      "pluginId": "pstack-openai@pstack-frozen-verification"
+    },
+    {
+      "canonicalRoot": "benchmark-checklist",
+      "path": "/Users/digital-hawk/Herd/pstack-host-verification-20261016/runtime/plugins/cache/pstack-frozen-verification/pstack-openai/0.1.0/skills/benchmark-checklist/SKILL.md",
+      "enabled": true,
+      "pluginId": "pstack-openai@pstack-frozen-verification"
+    },
+    {
+      "canonicalRoot": "blast-radius",
+      "path": "/Users/digital-hawk/Herd/pstack-host-verification-20261016/runtime/plugins/cache/pstack-frozen-verification/pstack-openai/0.1.0/skills/blast-radius/SKILL.md",
+      "enabled": true,
+      "pluginId": "pstack-openai@pstack-frozen-verification"
+    },
+    {
+      "canonicalRoot": "bro",
+      "path": "/Users/digital-hawk/Herd/pstack-host-verification-20261016/runtime/plugins/cache/pstack-frozen-verification/pstack-openai/0.1.0/skills/bro/SKILL.md",
+      "enabled": true,
+      "pluginId": "pstack-openai@pstack-frozen-verification"
+    },
+    {
+      "canonicalRoot": "correct",
+      "path": "/Users/digital-hawk/Herd/pstack-host-verification-20261016/runtime/plugins/cache/pstack-frozen-verification/pstack-openai/0.1.0/skills/correct/SKILL.md",
+      "enabled": true,
+      "pluginId": "pstack-openai@pstack-frozen-verification"
+    },
+    {
+      "canonicalRoot": "create-verification-skill",
+      "path": "/Users/digital-hawk/Herd/pstack-host-verification-20261016/runtime/plugins/cache/pstack-frozen-verification/pstack-openai/0.1.0/skills/create-verification-skill/SKILL.md",
+      "enabled": true,
+      "pluginId": "pstack-openai@pstack-frozen-verification"
+    },
+    {
+      "canonicalRoot": "figure-it-out",
+      "path": "/Users/digital-hawk/Herd/pstack-host-verification-20261016/runtime/plugins/cache/pstack-frozen-verification/pstack-openai/0.1.0/skills/figure-it-out/SKILL.md",
+      "enabled": true,
+      "pluginId": "pstack-openai@pstack-frozen-verification"
+    },
+    {
+      "canonicalRoot": "how",
+      "path": "/Users/digital-hawk/Herd/pstack-host-verification-20261016/runtime/plugins/cache/pstack-frozen-verification/pstack-openai/0.1.0/skills/how/SKILL.md",
+      "enabled": true,
+      "pluginId": "pstack-openai@pstack-frozen-verification"
+    },
+    {
+      "canonicalRoot": "interrogate",
+      "path": "/Users/digital-hawk/Herd/pstack-host-verification-20261016/runtime/plugins/cache/pstack-frozen-verification/pstack-openai/0.1.0/skills/interrogate/SKILL.md",
+      "enabled": true,
+      "pluginId": "pstack-openai@pstack-frozen-verification"
+    },
+    {
+      "canonicalRoot": "maintain-verification-skill",
+      "path": "/Users/digital-hawk/Herd/pstack-host-verification-20261016/runtime/plugins/cache/pstack-frozen-verification/pstack-openai/0.1.0/skills/maintain-verification-skill/SKILL.md",
+      "enabled": true,
+      "pluginId": "pstack-openai@pstack-frozen-verification"
+    },
+    {
+      "canonicalRoot": "make-bot-ui",
+      "path": "/Users/digital-hawk/Herd/pstack-host-verification-20261016/runtime/plugins/cache/pstack-frozen-verification/pstack-openai/0.1.0/skills/make-bot-ui/SKILL.md",
+      "enabled": true,
+      "pluginId": "pstack-openai@pstack-frozen-verification"
+    },
+    {
+      "canonicalRoot": "no-comments",
+      "path": "/Users/digital-hawk/Herd/pstack-host-verification-20261016/runtime/plugins/cache/pstack-frozen-verification/pstack-openai/0.1.0/skills/no-comments/SKILL.md",
+      "enabled": true,
+      "pluginId": "pstack-openai@pstack-frozen-verification"
+    },
+    {
+      "canonicalRoot": "poteto-help",
+      "path": "/Users/digital-hawk/Herd/pstack-host-verification-20261016/runtime/plugins/cache/pstack-frozen-verification/pstack-openai/0.1.0/skills/poteto-help/SKILL.md",
+      "enabled": true,
+      "pluginId": "pstack-openai@pstack-frozen-verification"
+    },
+    {
+      "canonicalRoot": "poteto-mode",
+      "path": "/Users/digital-hawk/Herd/pstack-host-verification-20261016/runtime/plugins/cache/pstack-frozen-verification/pstack-openai/0.1.0/skills/poteto-mode/SKILL.md",
+      "enabled": true,
+      "pluginId": "pstack-openai@pstack-frozen-verification"
+    },
+    {
+      "canonicalRoot": "principle-attack-the-premise",
+      "path": "/Users/digital-hawk/Herd/pstack-host-verification-20261016/runtime/plugins/cache/pstack-frozen-verification/pstack-openai/0.1.0/skills/principle-attack-the-premise/SKILL.md",
+      "enabled": true,
+      "pluginId": "pstack-openai@pstack-frozen-verification"
+    },
+    {
+      "canonicalRoot": "principle-boundary-discipline",
+      "path": "/Users/digital-hawk/Herd/pstack-host-verification-20261016/runtime/plugins/cache/pstack-frozen-verification/pstack-openai/0.1.0/skills/principle-boundary-discipline/SKILL.md",
+      "enabled": true,
+      "pluginId": "pstack-openai@pstack-frozen-verification"
+    },
+    {
+      "canonicalRoot": "principle-build-the-lever",
+      "path": "/Users/digital-hawk/Herd/pstack-host-verification-20261016/runtime/plugins/cache/pstack-frozen-verification/pstack-openai/0.1.0/skills/principle-build-the-lever/SKILL.md",
+      "enabled": true,
+      "pluginId": "pstack-openai@pstack-frozen-verification"
+    },
+    {
+      "canonicalRoot": "principle-encode-lessons-in-structure",
+      "path": "/Users/digital-hawk/Herd/pstack-host-verification-20261016/runtime/plugins/cache/pstack-frozen-verification/pstack-openai/0.1.0/skills/principle-encode-lessons-in-structure/SKILL.md",
+      "enabled": true,
+      "pluginId": "pstack-openai@pstack-frozen-verification"
+    },
+    {
+      "canonicalRoot": "principle-exhaust-the-design-space",
+      "path": "/Users/digital-hawk/Herd/pstack-host-verification-20261016/runtime/plugins/cache/pstack-frozen-verification/pstack-openai/0.1.0/skills/principle-exhaust-the-design-space/SKILL.md",
+      "enabled": true,
+      "pluginId": "pstack-openai@pstack-frozen-verification"
+    },
+    {
+      "canonicalRoot": "principle-experience-first",
+      "path": "/Users/digital-hawk/Herd/pstack-host-verification-20261016/runtime/plugins/cache/pstack-frozen-verification/pstack-openai/0.1.0/skills/principle-experience-first/SKILL.md",
+      "enabled": true,
+      "pluginId": "pstack-openai@pstack-frozen-verification"
+    },
+    {
+      "canonicalRoot": "principle-explain-the-number",
+      "path": "/Users/digital-hawk/Herd/pstack-host-verification-20261016/runtime/plugins/cache/pstack-frozen-verification/pstack-openai/0.1.0/skills/principle-explain-the-number/SKILL.md",
+      "enabled": true,
+      "pluginId": "pstack-openai@pstack-frozen-verification"
+    },
+    {
+      "canonicalRoot": "principle-fix-root-causes",
+      "path": "/Users/digital-hawk/Herd/pstack-host-verification-20261016/runtime/plugins/cache/pstack-frozen-verification/pstack-openai/0.1.0/skills/principle-fix-root-causes/SKILL.md",
+      "enabled": true,
+      "pluginId": "pstack-openai@pstack-frozen-verification"
+    },
+    {
+      "canonicalRoot": "principle-foundational-thinking",
+      "path": "/Users/digital-hawk/Herd/pstack-host-verification-20261016/runtime/plugins/cache/pstack-frozen-verification/pstack-openai/0.1.0/skills/principle-foundational-thinking/SKILL.md",
+      "enabled": true,
+      "pluginId": "pstack-openai@pstack-frozen-verification"
+    },
+    {
+      "canonicalRoot": "principle-guard-the-context-window",
+      "path": "/Users/digital-hawk/Herd/pstack-host-verification-20261016/runtime/plugins/cache/pstack-frozen-verification/pstack-openai/0.1.0/skills/principle-guard-the-context-window/SKILL.md",
+      "enabled": true,
+      "pluginId": "pstack-openai@pstack-frozen-verification"
+    },
+    {
+      "canonicalRoot": "principle-laziness-protocol",
+      "path": "/Users/digital-hawk/Herd/pstack-host-verification-20261016/runtime/plugins/cache/pstack-frozen-verification/pstack-openai/0.1.0/skills/principle-laziness-protocol/SKILL.md",
+      "enabled": true,
+      "pluginId": "pstack-openai@pstack-frozen-verification"
+    },
+    {
+      "canonicalRoot": "principle-make-operations-idempotent",
+      "path": "/Users/digital-hawk/Herd/pstack-host-verification-20261016/runtime/plugins/cache/pstack-frozen-verification/pstack-openai/0.1.0/skills/principle-make-operations-idempotent/SKILL.md",
+      "enabled": true,
+      "pluginId": "pstack-openai@pstack-frozen-verification"
+    },
+    {
+      "canonicalRoot": "principle-migrate-callers-then-delete-legacy-apis",
+      "path": "/Users/digital-hawk/Herd/pstack-host-verification-20261016/runtime/plugins/cache/pstack-frozen-verification/pstack-openai/0.1.0/skills/principle-migrate-callers-then-delete-legacy-apis/SKILL.md",
+      "enabled": true,
+      "pluginId": "pstack-openai@pstack-frozen-verification"
+    },
+    {
+      "canonicalRoot": "principle-minimize-reader-load",
+      "path": "/Users/digital-hawk/Herd/pstack-host-verification-20261016/runtime/plugins/cache/pstack-frozen-verification/pstack-openai/0.1.0/skills/principle-minimize-reader-load/SKILL.md",
+      "enabled": true,
+      "pluginId": "pstack-openai@pstack-frozen-verification"
+    },
+    {
+      "canonicalRoot": "principle-model-the-domain",
+      "path": "/Users/digital-hawk/Herd/pstack-host-verification-20261016/runtime/plugins/cache/pstack-frozen-verification/pstack-openai/0.1.0/skills/principle-model-the-domain/SKILL.md",
+      "enabled": true,
+      "pluginId": "pstack-openai@pstack-frozen-verification"
+    },
+    {
+      "canonicalRoot": "principle-never-block-on-the-human",
+      "path": "/Users/digital-hawk/Herd/pstack-host-verification-20261016/runtime/plugins/cache/pstack-frozen-verification/pstack-openai/0.1.0/skills/principle-never-block-on-the-human/SKILL.md",
+      "enabled": true,
+      "pluginId": "pstack-openai@pstack-frozen-verification"
+    },
+    {
+      "canonicalRoot": "principle-outcome-oriented-execution",
+      "path": "/Users/digital-hawk/Herd/pstack-host-verification-20261016/runtime/plugins/cache/pstack-frozen-verification/pstack-openai/0.1.0/skills/principle-outcome-oriented-execution/SKILL.md",
+      "enabled": true,
+      "pluginId": "pstack-openai@pstack-frozen-verification"
+    },
+    {
+      "canonicalRoot": "principle-prove-it-works",
+      "path": "/Users/digital-hawk/Herd/pstack-host-verification-20261016/runtime/plugins/cache/pstack-frozen-verification/pstack-openai/0.1.0/skills/principle-prove-it-works/SKILL.md",
+      "enabled": true,
+      "pluginId": "pstack-openai@pstack-frozen-verification"
+    },
+    {
+      "canonicalRoot": "principle-redesign-from-first-principles",
+      "path": "/Users/digital-hawk/Herd/pstack-host-verification-20261016/runtime/plugins/cache/pstack-frozen-verification/pstack-openai/0.1.0/skills/principle-redesign-from-first-principles/SKILL.md",
+      "enabled": true,
+      "pluginId": "pstack-openai@pstack-frozen-verification"
+    },
+    {
+      "canonicalRoot": "principle-separate-before-serializing-shared-state",
+      "path": "/Users/digital-hawk/Herd/pstack-host-verification-20261016/runtime/plugins/cache/pstack-frozen-verification/pstack-openai/0.1.0/skills/principle-separate-before-serializing-shared-state/SKILL.md",
+      "enabled": true,
+      "pluginId": "pstack-openai@pstack-frozen-verification"
+    },
+    {
+      "canonicalRoot": "principle-sequence-verifiable-units",
+      "path": "/Users/digital-hawk/Herd/pstack-host-verification-20261016/runtime/plugins/cache/pstack-frozen-verification/pstack-openai/0.1.0/skills/principle-sequence-verifiable-units/SKILL.md",
+      "enabled": true,
+      "pluginId": "pstack-openai@pstack-frozen-verification"
+    },
+    {
+      "canonicalRoot": "principle-subtract-before-you-add",
+      "path": "/Users/digital-hawk/Herd/pstack-host-verification-20261016/runtime/plugins/cache/pstack-frozen-verification/pstack-openai/0.1.0/skills/principle-subtract-before-you-add/SKILL.md",
+      "enabled": true,
+      "pluginId": "pstack-openai@pstack-frozen-verification"
+    },
+    {
+      "canonicalRoot": "principle-test-behavior-not-implementation",
+      "path": "/Users/digital-hawk/Herd/pstack-host-verification-20261016/runtime/plugins/cache/pstack-frozen-verification/pstack-openai/0.1.0/skills/principle-test-behavior-not-implementation/SKILL.md",
+      "enabled": true,
+      "pluginId": "pstack-openai@pstack-frozen-verification"
+    },
+    {
+      "canonicalRoot": "principle-type-system-discipline",
+      "path": "/Users/digital-hawk/Herd/pstack-host-verification-20261016/runtime/plugins/cache/pstack-frozen-verification/pstack-openai/0.1.0/skills/principle-type-system-discipline/SKILL.md",
+      "enabled": true,
+      "pluginId": "pstack-openai@pstack-frozen-verification"
+    },
+    {
+      "canonicalRoot": "recall",
+      "path": "/Users/digital-hawk/Herd/pstack-host-verification-20261016/runtime/plugins/cache/pstack-frozen-verification/pstack-openai/0.1.0/skills/recall/SKILL.md",
+      "enabled": true,
+      "pluginId": "pstack-openai@pstack-frozen-verification"
+    },
+    {
+      "canonicalRoot": "reflect",
+      "path": "/Users/digital-hawk/Herd/pstack-host-verification-20261016/runtime/plugins/cache/pstack-frozen-verification/pstack-openai/0.1.0/skills/reflect/SKILL.md",
+      "enabled": true,
+      "pluginId": "pstack-openai@pstack-frozen-verification"
+    },
+    {
+      "canonicalRoot": "setup-pstack",
+      "path": "/Users/digital-hawk/Herd/pstack-host-verification-20261016/runtime/plugins/cache/pstack-frozen-verification/pstack-openai/0.1.0/skills/setup-pstack/SKILL.md",
+      "enabled": true,
+      "pluginId": "pstack-openai@pstack-frozen-verification"
+    },
+    {
+      "canonicalRoot": "show-me-your-work",
+      "path": "/Users/digital-hawk/Herd/pstack-host-verification-20261016/runtime/plugins/cache/pstack-frozen-verification/pstack-openai/0.1.0/skills/show-me-your-work/SKILL.md",
+      "enabled": true,
+      "pluginId": "pstack-openai@pstack-frozen-verification"
+    },
+    {
+      "canonicalRoot": "swarm",
+      "path": "/Users/digital-hawk/Herd/pstack-host-verification-20261016/runtime/plugins/cache/pstack-frozen-verification/pstack-openai/0.1.0/skills/swarm/SKILL.md",
+      "enabled": true,
+      "pluginId": "pstack-openai@pstack-frozen-verification"
+    },
+    {
+      "canonicalRoot": "tdd",
+      "path": "/Users/digital-hawk/Herd/pstack-host-verification-20261016/runtime/plugins/cache/pstack-frozen-verification/pstack-openai/0.1.0/skills/tdd/SKILL.md",
+      "enabled": true,
+      "pluginId": "pstack-openai@pstack-frozen-verification"
+    },
+    {
+      "canonicalRoot": "teach",
+      "path": "/Users/digital-hawk/Herd/pstack-host-verification-20261016/runtime/plugins/cache/pstack-frozen-verification/pstack-openai/0.1.0/skills/teach/SKILL.md",
+      "enabled": true,
+      "pluginId": "pstack-openai@pstack-frozen-verification"
+    },
+    {
+      "canonicalRoot": "technical-writing",
+      "path": "/Users/digital-hawk/Herd/pstack-host-verification-20261016/runtime/plugins/cache/pstack-frozen-verification/pstack-openai/0.1.0/skills/technical-writing/SKILL.md",
+      "enabled": true,
+      "pluginId": "pstack-openai@pstack-frozen-verification"
+    },
+    {
+      "canonicalRoot": "typescript-best-practices",
+      "path": "/Users/digital-hawk/Herd/pstack-host-verification-20261016/runtime/plugins/cache/pstack-frozen-verification/pstack-openai/0.1.0/skills/typescript-best-practices/SKILL.md",
+      "enabled": true,
+      "pluginId": "pstack-openai@pstack-frozen-verification"
+    },
+    {
+      "canonicalRoot": "unslop",
+      "path": "/Users/digital-hawk/Herd/pstack-host-verification-20261016/runtime/plugins/cache/pstack-frozen-verification/pstack-openai/0.1.0/skills/unslop/SKILL.md",
+      "enabled": true,
+      "pluginId": "pstack-openai@pstack-frozen-verification"
+    },
+    {
+      "canonicalRoot": "why",
+      "path": "/Users/digital-hawk/Herd/pstack-host-verification-20261016/runtime/plugins/cache/pstack-frozen-verification/pstack-openai/0.1.0/skills/why/SKILL.md",
+      "enabled": true,
+      "pluginId": "pstack-openai@pstack-frozen-verification"
+    }
+  ],
+  "targetErrors": [],
+  "frozenByteAndModeCheck": {
+    "commit": "22ca2bd2077ab8628119d34477ad9f364e4f1211",
+    "files": 726,
+    "source": "identical",
+    "cache": "identical"
+  },
+  "rawCaptureLocation": "/Users/digital-hawk/Herd/pstack-host-verification-20261016/runtime-transcript.json"
+}
+```
+
+## Previous discovery receipt preserved verbatim
+
+This receipt belongs only to the earlier freeze. The current receipt replaces its active path; the original also remains in Git history.
+
+```json
+{
+  "schemaVersion": 1,
+  "kind": "pstack-package-discovery",
+  "host": "codex",
+  "packageCommit": "5d05ab2458f4cd73c44b24265a3a1920b98b8cf4",
+  "packageVersion": "0.1.0",
+  "installedCopy": "/Users/digital-hawk/.codex/plugins/cache/yabasha-local/pstack-openai/0.1.0",
+  "rootSkills": [
+    "architect",
+    "arena",
+    "automate-me",
+    "benchmark-checklist",
+    "blast-radius",
+    "bro",
+    "correct",
+    "create-verification-skill",
+    "figure-it-out",
+    "how",
+    "interrogate",
+    "maintain-verification-skill",
+    "make-bot-ui",
+    "no-comments",
+    "poteto-help",
+    "poteto-mode",
+    "principle-attack-the-premise",
+    "principle-boundary-discipline",
+    "principle-build-the-lever",
+    "principle-encode-lessons-in-structure",
+    "principle-exhaust-the-design-space",
+    "principle-experience-first",
+    "principle-explain-the-number",
+    "principle-fix-root-causes",
+    "principle-foundational-thinking",
+    "principle-guard-the-context-window",
+    "principle-laziness-protocol",
+    "principle-make-operations-idempotent",
+    "principle-migrate-callers-then-delete-legacy-apis",
+    "principle-minimize-reader-load",
+    "principle-model-the-domain",
+    "principle-never-block-on-the-human",
+    "principle-outcome-oriented-execution",
+    "principle-prove-it-works",
+    "principle-redesign-from-first-principles",
+    "principle-separate-before-serializing-shared-state",
+    "principle-sequence-verifiable-units",
+    "principle-subtract-before-you-add",
+    "principle-test-behavior-not-implementation",
+    "principle-type-system-discipline",
+    "recall",
+    "reflect",
+    "setup-pstack",
+    "show-me-your-work",
+    "swarm",
+    "tdd",
+    "teach",
+    "technical-writing",
+    "typescript-best-practices",
+    "unslop",
+    "why"
+  ],
+  "excludedSkills": [
+    "automations/benny/skills/reproduce-and-fix-issues/SKILL.md",
+    "automations/benny/skills/setup-benny/SKILL.md",
+    "automations/benny/skills/triage-issue-reports/SKILL.md"
+  ]
+}
+```
+
+## Preserved historical host reports
+
+The sections below describe earlier checkpoints. Their current-status statements apply to their named historical revisions.
+
 # Current frozen installation evidence
 
 Observed 2026-10-08, Asia/Amman. The separately approved personal skills-only installation of pstack-openai 0.1.0 used operative SHA 5d05ab2458f4cd73c44b24265a3a1920b98b8cf4 and codex-cli 0.161.0. The supported installation CLI completed successfully. Source export /Users/digital-hawk/.codex/plugins/yabasha-local/pstack-openai and installed cache /Users/digital-hawk/.codex/plugins/cache/yabasha-local/pstack-openai/0.1.0 each matched all 726 frozen paths, bytes and modes, with zero extras. Only the approved personal marketplace entry and target enablement changed semantically; no unrelated configuration or credentials were repaired.

@@ -1,12 +1,12 @@
 {
   "caseId": "reproduce-before-fix",
   "packageVersion": "0.1.0",
-  "packageCommit": "22ca2bd2077ab8628119d34477ad9f364e4f1211",
+  "packageCommit": "f4623636a287bea2aa79c4b2234a53d20a5f193c",
   "host": "chatgpt",
   "hostMode": "source-only provenance refresh; fresh installed-host case not run",
   "date": "2026-10-16",
   "input": "Fix a fixture dashboard defect where clearing its search field leaves the previous filtered rows visible. Use an isolated local repository and fixture data. Reproduce the exact symptom through matching browser controls before edits, investigate the mechanism, implement only the justified fix and repeat the original trigger afterward. Include a refuted cache hypothesis whose speculative patch must be reverted. Permit local reads, edits and execution but no external writes. Repeat with independent workers unavailable, browser execution denied, and a cheap local test absent. Return verbatim failing-before and passing-after output, root cause and the ordered delivery artifacts.",
-  "observedOutput": "Not run against frozen revision 22ca2bd2077ab8628119d34477ad9f364e4f1211. The metadata and regression-test changes require a new freeze. Earlier observations remain in Git history under 5d05ab2458f4cd73c44b24265a3a1920b98b8cf4; none establishes installed discovery or behavioral support for this revision.",
+  "observedOutput": "Not run against frozen revision f4623636a287bea2aa79c4b2234a53d20a5f193c. The metadata and regression-test changes require a new freeze. Earlier observations remain in Git history under 5d05ab2458f4cd73c44b24265a3a1920b98b8cf4; none establishes installed discovery or behavioral support for this revision.",
   "status": "blocked",
   "execution": "unavailable",
   "sourcePaths": [

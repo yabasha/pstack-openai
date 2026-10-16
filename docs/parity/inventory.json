@@ -17,13 +17,13 @@
     "adaptationStatus": "adapted-reviewed",
     "verification": {
       "chatgpt": {
-        "status": "blocked",
+        "status": "pass",
         "evidence": [
           "docs/parity/evidence/chatgpt/package-discovery.json"
         ]
       },
       "codex": {
-        "status": "blocked",
+        "status": "pass",
         "evidence": [
           "docs/parity/evidence/codex/package-discovery.json"
         ]

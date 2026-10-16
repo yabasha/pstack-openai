@@ -1,12 +1,12 @@
 {
   "caseId": "bounded-improvement",
   "packageVersion": "0.1.0",
-  "packageCommit": "22ca2bd2077ab8628119d34477ad9f364e4f1211",
+  "packageCommit": "f4623636a287bea2aa79c4b2234a53d20a5f193c",
   "host": "chatgpt",
   "hostMode": "source-only provenance refresh; fresh installed-host case not run",
   "date": "2026-10-16",
   "input": "Hillclimb a fixture export latency using a fixed target and minimum iteration count. Supply contrasting realistic workloads, an exact baseline revision, a repeatable harness, error and completed-work counts, a green regression gate and candidate artifacts. Include an early lucky win, noise-sized improvement, changed workload, regression, plateau, worthwhile cheap remaining hypothesis and exhausted marginal ideas. Permit local measurement and edits but no commits, PR writes or recurring scheduling. Repeat with unavailable workers, denied execution and missing persistence. Compare every candidate using the same valid frozen metric and retain the stopping rule.",
-  "observedOutput": "Not run against frozen revision 22ca2bd2077ab8628119d34477ad9f364e4f1211. The metadata and regression-test changes require a new freeze. Earlier observations remain in Git history under 5d05ab2458f4cd73c44b24265a3a1920b98b8cf4; none establishes installed discovery or behavioral support for this revision.",
+  "observedOutput": "Not run against frozen revision f4623636a287bea2aa79c4b2234a53d20a5f193c. The metadata and regression-test changes require a new freeze. Earlier observations remain in Git history under 5d05ab2458f4cd73c44b24265a3a1920b98b8cf4; none establishes installed discovery or behavioral support for this revision.",
   "status": "blocked",
   "execution": "unavailable",
   "sourcePaths": [

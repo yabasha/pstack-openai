@@ -1,3 +1,9 @@
+# Current host discovery results
+
+Frozen source f4623636a287bea2aa79c4b2234a53d20a5f193c: discovery passes independently in Codex CLI and personal ChatGPT web. Each host has one pass and 104 blocked workflow cases. Cloud host metadata normalization is disclosed in the current host report; broad workflow qualification remains unverified.
+
+See the [current controller report](../releases/remaining-controller-report.md) for exact identities and checks. All earlier sections are historical.
+
 # Current provenance refresh
 
 The operative freeze is `22ca2bd2077ab8628119d34477ad9f364e4f1211`, version 0.1.0. All 210 current host cases are blocked pending fresh installed-host observations. The earlier discovery pass is historical and does not transfer to this revision. See the [current repair report](../releases/remaining-controller-report.md) for the regression, verification and preserved history.

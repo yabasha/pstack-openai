@@ -1,12 +1,12 @@
 {
   "caseId": "read-only-answer",
   "packageVersion": "0.1.0",
-  "packageCommit": "22ca2bd2077ab8628119d34477ad9f364e4f1211",
+  "packageCommit": "f4623636a287bea2aa79c4b2234a53d20a5f193c",
   "host": "chatgpt",
   "hostMode": "source-only provenance refresh; fresh installed-host case not run",
   "date": "2026-10-16",
   "input": "Using read-only fixture source files and decision records, explain how an invoice formatter works, why a rounding boundary exists, whether the premise that all errors are swallowed is correct, and recommend one of two alternatives with tradeoffs. Permit fixture reads only. No product build, prototype, edits, commits or external writes. Repeat with independent workers unavailable, historical sources denied and all relevant source reads unavailable.",
-  "observedOutput": "Not run against frozen revision 22ca2bd2077ab8628119d34477ad9f364e4f1211. The metadata and regression-test changes require a new freeze. Earlier observations remain in Git history under 5d05ab2458f4cd73c44b24265a3a1920b98b8cf4; none establishes installed discovery or behavioral support for this revision.",
+  "observedOutput": "Not run against frozen revision f4623636a287bea2aa79c4b2234a53d20a5f193c. The metadata and regression-test changes require a new freeze. Earlier observations remain in Git history under 5d05ab2458f4cd73c44b24265a3a1920b98b8cf4; none establishes installed discovery or behavioral support for this revision.",
   "status": "blocked",
   "execution": "unavailable",
   "sourcePaths": [

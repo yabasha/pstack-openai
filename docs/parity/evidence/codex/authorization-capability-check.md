@@ -1,10 +1,8 @@
 {
   "schemaVersion": 1,
   "kind": "pstack-package-discovery",
-  "host": "codex",
-  "packageCommit": "5d05ab2458f4cd73c44b24265a3a1920b98b8cf4",
+  "packageCommit": "f4623636a287bea2aa79c4b2234a53d20a5f193c",
   "packageVersion": "0.1.0",
-  "installedCopy": "/Users/digital-hawk/.codex/plugins/cache/yabasha-local/pstack-openai/0.1.0",
   "rootSkills": [
     "architect",
     "arena",
@@ -62,5 +60,7 @@
     "automations/benny/skills/reproduce-and-fix-issues/SKILL.md",
     "automations/benny/skills/setup-benny/SKILL.md",
     "automations/benny/skills/triage-issue-reports/SKILL.md"
-  ]
+  ],
+  "host": "codex",
+  "installedCopy": "/Users/digital-hawk/Herd/pstack-host-verification-20261016-f462363/runtime/plugins/cache/pstack-frozen-verification/pstack-openai/0.1.0"
 }

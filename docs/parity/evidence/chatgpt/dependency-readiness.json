@@ -1,12 +1,12 @@
 {
   "caseId": "dependency-readiness",
   "packageVersion": "0.1.0",
-  "packageCommit": "22ca2bd2077ab8628119d34477ad9f364e4f1211",
+  "packageCommit": "f4623636a287bea2aa79c4b2234a53d20a5f193c",
   "host": "chatgpt",
   "hostMode": "source-only provenance refresh; fresh installed-host case not run",
   "date": "2026-10-16",
   "input": "Audit the current session before authoring a skill or verifying an app change. Use the dependency readiness records to name the selected authoring, review, control and repository-helper branches. Initially withhold control tools and installed helper metadata. Report what is blocked and what a local draft can establish. If the tester later supplies an authorized real driver and prepared helper copy, verify the exact caller contract and retain its action/result artifacts. Never install or enable a dependency to complete this case.",
-  "observedOutput": "Not run against frozen revision 22ca2bd2077ab8628119d34477ad9f364e4f1211. The metadata and regression-test changes require a new freeze. Earlier observations remain in Git history under 5d05ab2458f4cd73c44b24265a3a1920b98b8cf4; none establishes installed discovery or behavioral support for this revision.",
+  "observedOutput": "Not run against frozen revision f4623636a287bea2aa79c4b2234a53d20a5f193c. The metadata and regression-test changes require a new freeze. Earlier observations remain in Git history under 5d05ab2458f4cd73c44b24265a3a1920b98b8cf4; none establishes installed discovery or behavioral support for this revision.",
   "status": "blocked",
   "execution": "unavailable",
   "sourcePaths": [
