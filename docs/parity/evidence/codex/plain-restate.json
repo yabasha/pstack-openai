@@ -1,39 +1,33 @@
 {
   "caseId": "plain-restate",
   "packageVersion": "0.1.0",
-  "packageCommit": "5d05ab2458f4cd73c44b24265a3a1920b98b8cf4",
+  "packageCommit": "22ca2bd2077ab8628119d34477ad9f364e4f1211",
   "host": "codex",
-  "hostMode": "fresh ephemeral read-only installed CLI smoke observed; exact registered seeded-assistant acceptance case unrun",
-  "date": "2026-10-08",
+  "hostMode": "source-only provenance refresh; fresh installed-host case not run",
+  "date": "2026-10-16",
   "input": "Invoke bro.",
-  "observedOutput": "The separate installed bro smoke session read the registered cached SKILL.md and returned: \"If a request fails, the service tries again up to three times. Sending the same request more than once must never create more than one order.\" CLI exit was 0. This input was supplied inside the user prompt, not as the exact immediately preceding assistant turn required by docs/parity/cases/skills/bro.json. The registered plain-restate acceptance case was not run and cannot be promoted from this smoke result.",
+  "observedOutput": "Not run against frozen revision 22ca2bd2077ab8628119d34477ad9f364e4f1211. The metadata and regression-test changes require a new freeze. Earlier observations remain in Git history under 5d05ab2458f4cd73c44b24265a3a1920b98b8cf4; none establishes installed discovery or behavioral support for this revision.",
   "status": "blocked",
   "execution": "unavailable",
   "sourcePaths": [
     "skills/bro/SKILL.md"
   ],
   "documentedCapabilities": [
-    "docs/parity/cases/skills/bro.json requires the exact seeded immediately preceding assistant turn and a conversation artifact identifying it.",
-    "The installed bro skill retains disable-model-invocation: true; the smoke explicitly selected $pstack-openai:bro and read its registered installed SKILL.md."
+    "docs/maintenance/rollback.md requires immutable tested-package provenance and exact revision-bound observations."
   ],
-  "exposedTools": [
-    "tools.exec_command"
-  ],
+  "exposedTools": [],
   "artifacts": [
-    "docs/testing/codex.md",
-    "docs/parity/evidence/codex/authorization-capability-check.md"
+    "docs/releases/remaining-controller-report.md"
   ],
   "limits": [
-    "Package discovery and personal installation are now observed and separately authorized. The exact registered plain-restate case remains unrun because the saved smoke user input differs from its seeded preceding assistant-turn contract.",
-    "The smoke result establishes only the installed skill read and supplied retry-sentence restatement. It does not establish access to or faithful restatement of the registered previous assistant message, failure modes or broader workflow acceptance.",
-    "The smoke session was ephemeral and read-only, with no writes, helpers or workers in the model transcript. Automatic host Notion OAuth refresh nevertheless attempted external contact and failed twice with invalid_grant; no credentials were changed.",
-    "Requested and actual model identities are unknown; inherited model selection was recorded without a model identity.",
-    "ChatGPT ordinary Chat and Work behavior and desktop-window loading remain unobserved."
+    "No fresh installed-host discovery or case execution was observed for this frozen revision.",
+    "This record accounts for an unrun case; source checks cannot establish host behavior.",
+    "Historical observations for 5d05ab2458f4cd73c44b24265a3a1920b98b8cf4 remain in Git history and are not transferred."
   ],
   "priorActionIdentities": [],
   "permissions": {
-    "execution": "granted",
-    "writes": "denied",
+    "execution": "unavailable",
+    "writes": "granted",
     "externalActions": "denied"
   },
   "models": {

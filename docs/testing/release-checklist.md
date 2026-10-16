@@ -1,3 +1,9 @@
+# Current provenance refresh
+
+The operative freeze is `22ca2bd2077ab8628119d34477ad9f364e4f1211`, version 0.1.0. All 210 current host cases are blocked pending fresh installed-host observations. The earlier discovery pass is historical and does not transfer to this revision. See the [current repair report](../releases/remaining-controller-report.md) for the regression, verification and preserved history.
+
+The sections below describe prior checkpoints, not qualification of this new freeze.
+
 # Verified frozen installation and current limits
 
 The approved version 0.1.0 is installed and enabled through the supported personal marketplace. Operative source remains 5d05ab2458f4cd73c44b24265a3a1920b98b8cf4. Both the source export and installed cache match all 726 frozen files and permission modes, with no extra files. Only the target marketplace entry and plugin enablement were added; existing plugins were retained.

@@ -1,3 +1,25 @@
+# Provenance refresh, 16 October 2026
+
+The current operative freeze is `22ca2bd2077ab8628119d34477ad9f364e4f1211`, version 0.1.0. It includes the merged website and author metadata plus a regression check of the repository's actual tested-package marker. The former freeze `5d05ab2458f4cd73c44b24265a3a1920b98b8cf4` remains historical. The regression reproduced the merged-head failure: `Operative package differs from tested commit: tests/test_manifest.py`.
+
+All 210 current host records now describe unrun cases against this new revision: 105 blocked per host, zero passes, zero reduced passes and no successful host operations. The prior CLI discovery pass belongs only to its original freeze. Its receipts and original records remain available in Git history. The refreshed records cite this report solely as the reason for blocking; this report is not installed-host evidence. Inventory verification, registry status and generated catalogs already record blocked outcomes and require no operative changes.
+
+The marker retains the same exact report-path allowlist. No operative file is exempted. The first commit freezes the regression test; later commits change only reserved report data and the tested-package marker. Verification of that freeze and the final committed report head follows below. Release readiness remains false until fresh observations establish support. No installation, host configuration or published release is part of this repair.
+
+## Verification of the repair
+
+- The new checked-in provenance regression failed against merged revision `b5bf8b551c50eebbc3834a79579e0cc079e521e2` with `Operative package differs from tested commit: tests/test_manifest.py`.
+- All 210 offline maintenance tests passed in 331.358 seconds against report revision `bd1431d1c781269f8c4400cee646e7712023523b`, whose operative freeze is `22ca2bd2077ab8628119d34477ad9f364e4f1211`. These include the current repository's immutable-tree provenance regression.
+- Package structure, all 210 evidence records, generated catalog consistency and whitespace checks passed. The catalog remains 51 skills and 24 principles.
+- Direct committed-head identity validation passed for `bd1431d1c781269f8c4400cee646e7712023523b`. The release assessment found no stale evidence and exactly two blockers: actual package discovery and invocation missing for each host. Both hosts have 105 validated blocked cases and zero passes or reduced passes.
+- Independent read-only review found no actionable issues. Historical raw receipts, inventory, case registry and the exact 217-path report allowlist remain unchanged.
+
+The regression and provenance checks require Git history containing the frozen ancestor. Integration must preserve commit `22ca2bd2077ab8628119d34477ad9f364e4f1211` through a merge; squashing or rebasing these commits would require a new freeze and evidence refresh. Later reserved-report edits require their own committed-head identity check and do not require rerunning unchanged operative tests.
+
+## Preserved historical reports
+
+The sections below retain their original scope and freeze identities. Their statements about current status apply to those historical checkpoints.
+
 # Verified frozen installation and current limits
 
 The approved version 0.1.0 is installed and enabled through the supported personal marketplace. Operative source remains 5d05ab2458f4cd73c44b24265a3a1920b98b8cf4. Both the source export and installed cache match all 726 frozen files and permission modes, with no extra files. Only the target marketplace entry and plugin enablement were added; existing plugins were retained.
