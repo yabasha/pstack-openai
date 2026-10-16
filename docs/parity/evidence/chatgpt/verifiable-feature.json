@@ -1,0 +1,58 @@
+{
+  "caseId": "verifiable-feature",
+  "packageVersion": "0.1.0",
+  "packageCommit": "5d05ab2458f4cd73c44b24265a3a1920b98b8cf4",
+  "host": "chatgpt",
+  "hostMode": "personal ChatGPT not accessed; host mode unobserved",
+  "date": "2026-10-08",
+  "input": "Implement a CSV export for the currently filtered orders in a fixture dashboard. Exclude hidden orders, preserve displayed column order, escape commas and quotes, and show a useful empty-result message. Keep the design lead separate from the code owner. Compare two valid export designs through arena when the implementation shape is contested. Use an isolated local repository and fixture data. The first run permits local changes and independent workers but no push or PR creation. Repeat with worker operations unavailable and then with matching browser verification denied. Return the throughput checkpoint, ordered implementation units, evidence for the user outcome and open decisions.",
+  "observedOutput": "Not attempted. Inherited prerequisite block from package-discovery. No documented supported local plugin loading route is established for this personal ChatGPT context. No actual personal ChatGPT session or installed copy was accessed. No separate human authorization exists for loading, installation, enabling, settings changes or fresh host setup. Personal-host tool probing was not attempted. Current controller filesystem and tools are not personal ChatGPT tools.",
+  "status": "blocked",
+  "execution": "unavailable",
+  "sourcePaths": [
+    "skills/poteto-mode/playbooks/feature.md",
+    "skills/poteto-mode/SKILL.md",
+    "agents/poteto-agent.md",
+    "skills/poteto-mode/playbooks/opening-a-pr.md",
+    "skills/how/SKILL.md",
+    "skills/how/references/explorer-prompt.md",
+    "skills/how/references/explainer-prompt.md",
+    "skills/architect/SKILL.md",
+    "skills/architect/references/runner-prompt.md",
+    "skills/architect/references/rationale-template.md",
+    "skills/arena/SKILL.md",
+    "skills/interrogate/SKILL.md",
+    "skills/interrogate/references/reviewer-prompt.md",
+    "skills/interrogate/references/rubric.md",
+    "skills/principle-model-the-domain/SKILL.md",
+    "skills/principle-separate-before-serializing-shared-state/SKILL.md",
+    "skills/principle-sequence-verifiable-units/SKILL.md"
+  ],
+  "documentedCapabilities": [
+    "docs/setup/chatgpt.md leaves the personal loading route unsupported here; supplied source is reduced capability guidance only.",
+    "references/host-capabilities.md requires actual exposed and successful bindings."
+  ],
+  "exposedTools": [],
+  "artifacts": [
+    "docs/parity/evidence/chatgpt/authorization-support-check.md"
+  ],
+  "limits": [
+    "No documented supported local plugin loading route is established for this personal ChatGPT context. No actual personal ChatGPT session or installed copy was accessed. No separate human authorization exists for loading, installation, enabling, settings changes or fresh host setup. Personal-host tool probing was not attempted. Current controller filesystem and tools are not personal ChatGPT tools.",
+    "This case input was not submitted to personal ChatGPT; no model result or expected behavioral output was observed.",
+    "Full and reduced capability are not observed. Runtime cases were not run.",
+    "Exact installed-copy identity, all 51 root names and three canonical nested Benny exclusions remain unobserved.",
+    "No history access, privacy behavior, worker lifecycle, model choice, persistence, integration or negative runtime condition was exercised.",
+    "Local evidence validation checks accounting only. Codex capabilities and results do not transfer to ChatGPT."
+  ],
+  "priorActionIdentities": [],
+  "permissions": {
+    "execution": "unavailable",
+    "writes": "unknown",
+    "externalActions": "unknown"
+  },
+  "models": {
+    "requested": "unknown",
+    "actual": "unknown"
+  },
+  "successfulOperations": []
+}

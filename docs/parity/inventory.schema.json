@@ -1,0 +1,148 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Canonical source inventory",
+  "type": "array",
+  "items": {
+    "type": "object",
+    "additionalProperties": false,
+    "required": [
+      "upstreamPath",
+      "upstreamCommit",
+      "upstreamSha256",
+      "destinationPath",
+      "disposition",
+      "rationale",
+      "dependencies",
+      "licenseProvenance",
+      "adaptationStatus",
+      "verification"
+    ],
+    "properties": {
+      "upstreamPath": {
+        "type": "string",
+        "minLength": 1
+      },
+      "upstreamCommit": {
+        "type": "string",
+        "pattern": "^[a-f0-9]{40}$"
+      },
+      "upstreamSha256": {
+        "type": "string",
+        "pattern": "^[a-f0-9]{64}$"
+      },
+      "destinationPath": {
+        "type": "string",
+        "minLength": 1
+      },
+      "disposition": {
+        "enum": [
+          "runtime",
+          "reference-only",
+          "metadata-replaced",
+          "relocated"
+        ]
+      },
+      "rationale": {
+        "type": "string",
+        "minLength": 1
+      },
+      "dependencies": {
+        "type": "array",
+        "items": {
+          "type": "string",
+          "minLength": 1
+        }
+      },
+      "licenseProvenance": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "license",
+          "copyright",
+          "sourcePath"
+        ],
+        "properties": {
+          "license": {
+            "const": "MIT"
+          },
+          "copyright": {
+            "const": "Copyright (c) 2026 Lauren Tan"
+          },
+          "sourcePath": {
+            "const": "LICENSE"
+          }
+        }
+      },
+      "adaptationStatus": {
+        "enum": [
+          "pending",
+          "unchanged-reviewed",
+          "adapted-reviewed",
+          "reference-only-reviewed"
+        ]
+      },
+      "verification": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "chatgpt",
+          "codex"
+        ],
+        "properties": {
+          "chatgpt": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "status",
+              "evidence"
+            ],
+            "properties": {
+              "status": {
+                "enum": [
+                  "not-run",
+                  "pass",
+                  "reduced-pass",
+                  "blocked",
+                  "fail"
+                ]
+              },
+              "evidence": {
+                "type": "array",
+                "items": {
+                  "type": "string",
+                  "minLength": 1
+                }
+              }
+            }
+          },
+          "codex": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "status",
+              "evidence"
+            ],
+            "properties": {
+              "status": {
+                "enum": [
+                  "not-run",
+                  "pass",
+                  "reduced-pass",
+                  "blocked",
+                  "fail"
+                ]
+              },
+              "evidence": {
+                "type": "array",
+                "items": {
+                  "type": "string",
+                  "minLength": 1
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

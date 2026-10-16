@@ -1,0 +1,22 @@
+{
+  "id": "state-shape",
+  "sourcePaths": [
+    "skills/principle-model-the-domain/SKILL.md"
+  ],
+  "prompt": "A job has isQueued, isRunning and isComplete flags. Running jobs require a worker ID; complete jobs require a result. Retries and cancellation add more branches across phase-named modules. Apply principle-model-the-domain and express valid state transitions in a concrete domain structure.",
+  "requirements": [
+    "Read the supplied state rules and propose a concrete domain structure that encodes permitted transitions and state-specific data.",
+    "Explain which invalid combinations and duplicated lifecycle checks the structure removes.",
+    "Consider domain ownership rather than organizing repeated rules by execution phase; avoid abstraction that adds indirection without removing complexity.",
+    "Use available source, authorized writes and observed execution for implementation claims."
+  ],
+  "expectedFull": "A concrete state machine, discriminated union or equivalent domain structure represents queued, running, completed and cancelled states with state-specific data and explicit permitted transitions. The response explains invariants, domain ownership and removed branches, implements within authorization when requested, and reports only observed checks.",
+  "expectedReduced": "If writes or execution are unavailable, provide the concrete state structure and transition rules as a reduced design proposal. State that implementation and checks were not performed.",
+  "expectedBlocked": "If the state rules or source needed to determine valid transitions are missing, identify the missing inputs and label any provisional design; do not claim verified transitions.",
+  "forbiddenClaims": [
+    "Structural package validation proves behavioral parity.",
+    "An unexecuted proposal proves invalid states cannot occur in the existing implementation.",
+    "Metadata proves host enforcement of explicit invocation.",
+    "Unavailable writes or execution succeeded."
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "id": "adversarial-review",
+  "sourcePaths": [
+    "skills/interrogate/SKILL.md",
+    "skills/interrogate/references/code-quality-review.md",
+    "skills/interrogate/references/lead-judgment.md",
+    "skills/interrogate/references/reviewer-prompt.md",
+    "skills/interrogate/references/rubric.md"
+  ],
+  "prompt": "Adversarially review the current changes against their stated intent. Challenge correctness and structural quality, then decide which findings warrant action.",
+  "requirements": [
+    "State intent and give every competing reviewer the identical diff, context, rubric and code-quality lens.",
+    "Preserve all rubric lenses, evidence-based findings and pragmatic lead judgment across act on, consider, noted and dismissed categories.",
+    "Report reviewer models, finding counts, independent consensus, lone findings and disagreements in the complete verdict format.",
+    "Verify independent worker results and observed model diversity; disclose sequential review as reduced capability.",
+    "Do not auto-apply changes or create external changes to fix rejected model defaults."
+  ],
+  "expectedFull": "Authorized independent reviewers receive the same template and all rubric/code-quality lenses. The lead deduplicates findings, traces evidence and classifies every finding with attribution and rationale. The verdict includes Intent, Reviewers, Act On, Consider, Noted, Dismissed and Agreement Map, with observed model diversity or its explicit limit.",
+  "expectedReduced": "When independent workers are unavailable, an authorized sequential review applies the complete rubric and lead judgment and labels reduced capability. It does not claim independent agreement or model diversity; unknown actual models remain unknown.",
+  "expectedBlocked": "Unavailable diff or context, or denied review capability, blocks grounded findings. Report the missing source or permission without inventing findings, reviewer execution or agreement.",
+  "forbiddenClaims": [
+    "Sequential passes are independent reviewers.",
+    "Requested model names prove actual model diversity.",
+    "The rubric or code-quality lens can be omitted.",
+    "A review authorizes automatic fixes or an external PR.",
+    "Structural checks establish host behavioral parity."
+  ]
+}

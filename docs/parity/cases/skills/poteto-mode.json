@@ -1,0 +1,39 @@
+{
+  "id": "fresh-worker-mode",
+  "sourcePaths": [
+    "skills/poteto-mode/SKILL.md"
+  ],
+  "prompt": "Invoke /poteto-mode for a scoped nontrivial feature. Give a fresh worker this mode and require its chosen playbook, applied principle leaves, throughput checkpoint and evidence. Repeat with worker tools unavailable and with the mode or an applied leaf unavailable. Exercise the 23 playbook route contracts, a no-spawn worker, helper setup failure, a stale full head or missing artifact, and an authorized local checklist when no todo tool exists. Use fixtures for helper boundaries; do not contact a live forge or install dependencies.",
+  "requirements": [
+    "Observed read of the complete mode, chosen playbook and every applied principle leaf",
+    "Authorized independent worker spawn and inspected result for full behavior",
+    "Immutable scoped assignment, exact input revision, separate write ownership and requested versus observed model records",
+    "Four throughput checkpoint items and evidence attached to claims",
+    "User authorization and host permissions constrain all operations",
+    "Preserve all 23 playbook routes and 24 principle bindings with source-faithful aliases and meanings",
+    "No-spawn worker owns its scoped diff and returns it to the lead without nested waiting; required independent review stays explicit",
+    "Read real helper contracts before invocation; use exact log positional arguments, explicit outside-package store, watcher heads and finite budgets, and one check-plan positional path",
+    "Inspect watcher event kind, terminal and reason; status-only exit 0 and non-terminal queued waiting never prove merged state",
+    "Reject stale assignment identities or full input/current head revisions and missing artifacts before integration; ledger labels do not prove verification",
+    "Use verbatim chosen-playbook steps in todo tools or an authorized local checklist with a disclosed reduced binding",
+    "Local presence closes reference deferrals only; preserve companion, setup, review, external-action and independent-worker limits"
+  ],
+  "expectedFull": "A fresh worker reads the full mode and applied leaves, follows the selected playbook with verbatim step todos or explicit skips, and returns blocking first steps, independent workstreams, shared mutable state and smallest safe decomposition with reasons for any n/a item. The coordinator inspects artifacts and reports evidence, decisions, limitations and only principles read in this session. The no-spawn delegate returns its own scoped diff for lead review. The coordinator reads selected helper contracts and inspects actual receipts, validates assignment and current full head against existing artifacts, and preserves each playbook delivery exception. All 23 routes and 24 principle bindings remain available as instructions.",
+  "expectedReduced": "Without authorized independent workers, the same full reads and checkpoint apply to authorized sequential work. The result explicitly records reduced capability, unverified model diversity and absent independent review or background execution. Missing external companion skills are visible and their dependent gates remain blocked. Local checklist fallback retains verbatim steps and explicit skips. Inert helper fixtures support structural contracts only. An isolated snapshot run supports only its tested revision and never this caller or current host.",
+  "expectedBlocked": "If the mode, chosen playbook or applied principle leaf cannot be read, stop dependent work and name the missing reference. Denied execution or writes stay blocked; autonomy language grants no external permission, installation or controller takeover. Missing pinned dependencies stop dependency-backed helpers without install or bootstrap bypass. Stale identities, changed heads, missing artifacts, denied action permission or unknown interrupted outcome block affected integration or replay. Required independent review remains blocked even if a no-spawn worker can prepare a diff.",
+  "forbiddenClaims": [
+    "A summary substitutes for reading the complete mode or applied leaves",
+    "Sequential role switching is independent worker review",
+    "Requested models prove actual model identity or diversity",
+    "Metadata registers a custom agent, mode or supported host capability",
+    "Missing companion skills or pending helpers are silently satisfied",
+    "Upstream autonomy authorizes external writes or bypasses permissions",
+    "Structural validation proves host behavior",
+    "Bundled helper existence or isolated snapshot tests prove this caller executes on either host",
+    "Status-only exit 0, ledger labels or queued WAITING prove a merge or an independent verdict",
+    "Helper deadlines guarantee a strict wall-clock cutoff without observed host controls",
+    "Historical deferral prose excuses skipping a present required contract",
+    "The no-spawn worker exception waives required independent lead review",
+    "An audit bucket or a parked gate default authorizes deletion, setup or external writes"
+  ]
+}

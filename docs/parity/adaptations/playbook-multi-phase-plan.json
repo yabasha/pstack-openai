@@ -1,0 +1,54 @@
+[
+  {
+    "upstreamPath": "skills/poteto-mode/playbooks/multi-phase-plan.md",
+    "upstreamCommit": "df581122cde17e6e27686b5a448bde23e4ad4318",
+    "upstreamSha256": "27d310e3fc3937a60b8fcbe1318f9d249a7477a722907bf85b3e4eb3dc436b11",
+    "destinationPath": "skills/poteto-mode/playbooks/multi-phase-plan.md",
+    "disposition": "runtime",
+    "rationale": "Preserve plan-only purpose, aliases, ordered skeleton, prototype evidence, unit/live/performance proof and operator gates. Bind positional checker to Bun and actual capability evidence. Keep ten independent live lanes as full source expectation and explicit reduced or blocked limits. External operations require separate authorization; structural checks prove no host behavior. Deferred execution contracts remain dependencies for Task 24.",
+    "dependencies": [
+      "skills/poteto-mode/SKILL.md",
+      "skills/poteto-mode/scripts/check-plan.mjs",
+      "skills/poteto-mode/playbooks/prototype.md",
+      "skills/poteto-mode/playbooks/autopilot-full.md",
+      "skills/poteto-mode/playbooks/autopilot-stack.md",
+      "skills/poteto-mode/playbooks/orchestrate.md",
+      "skills/poteto-mode/playbooks/opening-a-pr.md",
+      "skills/poteto-mode/playbooks/shipping.md",
+      "skills/poteto-mode/references/bugbot-triage.md",
+      "skills/swarm/SKILL.md",
+      "skills/technical-writing/SKILL.md",
+      "skills/unslop/SKILL.md",
+      "references/workflow-ownership.md",
+      "references/host-capabilities.md",
+      "references/model-roles.md",
+      "references/agent-prompts/poteto-agent.md",
+      "references/orchestration-contract.md",
+      "skills/principle-never-block-on-the-human/SKILL.md",
+      "skills/principle-guard-the-context-window/SKILL.md",
+      "skills/principle-sequence-verifiable-units/SKILL.md",
+      "skills/principle-encode-lessons-in-structure/SKILL.md",
+      "skills/principle-prove-it-works/SKILL.md",
+      "skills/how/SKILL.md",
+      "skills/interrogate/SKILL.md",
+      "skills/show-me-your-work/SKILL.md",
+      "skills/no-comments/SKILL.md"
+    ],
+    "licenseProvenance": {
+      "license": "MIT",
+      "copyright": "Copyright (c) 2026 Lauren Tan",
+      "sourcePath": "LICENSE"
+    },
+    "adaptationStatus": "adapted-reviewed",
+    "verification": {
+      "chatgpt": {
+        "status": "not-run",
+        "evidence": []
+      },
+      "codex": {
+        "status": "not-run",
+        "evidence": []
+      }
+    }
+  }
+]

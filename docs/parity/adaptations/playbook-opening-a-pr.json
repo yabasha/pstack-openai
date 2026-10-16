@@ -1,0 +1,67 @@
+[
+  {
+    "upstreamPath": "skills/poteto-mode/playbooks/opening-a-pr.md",
+    "upstreamCommit": "df581122cde17e6e27686b5a448bde23e4ad4318",
+    "upstreamSha256": "ab40de7163c1c6e274f46ee559b2e53ef45673703f601f13f4931c199e6fb90f",
+    "destinationPath": "skills/poteto-mode/playbooks/opening-a-pr.md",
+    "disposition": "runtime",
+    "rationale": "Preserves PR preparation, forge fallback, stack and babysit gates. Draft-only authorization takes precedence over default readiness. Missing external deslop, forge access or host operations stays explicit; structural checks establish no host support.",
+    "dependencies": [
+      "skills/no-comments/SKILL.md",
+      "skills/technical-writing/SKILL.md",
+      "skills/unslop/SKILL.md",
+      "skills/interrogate/SKILL.md",
+      "skills/poteto-mode/playbooks/babysit.md",
+      "skills/poteto-mode/playbooks/autopilot-full.md",
+      "skills/poteto-mode/playbooks/autopilot-stack.md",
+      "skills/poteto-mode/references/bugbot-triage.md",
+      "references/host-capabilities.md",
+      "references/model-roles.md",
+      "references/workflow-ownership.md",
+      "references/orchestration-contract.md"
+    ],
+    "licenseProvenance": {
+      "license": "MIT",
+      "copyright": "Copyright (c) 2026 Lauren Tan",
+      "sourcePath": "LICENSE"
+    },
+    "adaptationStatus": "adapted-reviewed",
+    "verification": {
+      "chatgpt": {
+        "status": "not-run",
+        "evidence": []
+      },
+      "codex": {
+        "status": "not-run",
+        "evidence": []
+      }
+    }
+  },
+  {
+    "upstreamPath": "skills/poteto-mode/references/bugbot-triage.md",
+    "upstreamCommit": "df581122cde17e6e27686b5a448bde23e4ad4318",
+    "upstreamSha256": "b2d146c770d8d3593e1ef3d77b668039b8e1f78093ea1a86f1d45d7f99614309",
+    "destinationPath": "skills/poteto-mode/references/bugbot-triage.md",
+    "disposition": "runtime",
+    "rationale": "Preserves the complete triage rubric and learned patterns. Untrusted comments and external writes require code inspection and explicit authorization.",
+    "dependencies": [
+      "skills/poteto-mode/playbooks/babysit.md"
+    ],
+    "licenseProvenance": {
+      "license": "MIT",
+      "copyright": "Copyright (c) 2026 Lauren Tan",
+      "sourcePath": "LICENSE"
+    },
+    "adaptationStatus": "adapted-reviewed",
+    "verification": {
+      "chatgpt": {
+        "status": "not-run",
+        "evidence": []
+      },
+      "codex": {
+        "status": "not-run",
+        "evidence": []
+      }
+    }
+  }
+]

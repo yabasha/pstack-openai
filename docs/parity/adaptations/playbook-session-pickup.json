@@ -1,0 +1,34 @@
+[
+  {
+    "upstreamPath": "skills/poteto-mode/playbooks/session-pickup.md",
+    "upstreamCommit": "df581122cde17e6e27686b5a448bde23e4ad4318",
+    "upstreamSha256": "1604fb463f7c7410d43fa024ca76c1c1824c166a01fd69d61f073d06fdca2a47",
+    "destinationPath": "skills/poteto-mode/playbooks/session-pickup.md",
+    "disposition": "runtime",
+    "rationale": "Preserve the five-step scoped prior-trail pickup, authoritative decision reconstruction, done-versus-pending comparison, matching playbook/verdict routing, actual-artifact verification and all reply fields. Replace host-specific transcript discovery with explicitly scoped observed history access. Require live SHA and assignment reconciliation, protect private histories and concurrent work, block unknown-outcome replay, and retain authorization and idempotent recovery gates. Long-history sequential reduction and session-local handoff remain reduced capability. Missing history, artifact inspection, persistence or routed playbooks stay visible. Structural checks prove no host behavior.",
+    "dependencies": [
+      "skills/poteto-mode/SKILL.md",
+      "skills/principle-guard-the-context-window/SKILL.md",
+      "skills/principle-prove-it-works/SKILL.md",
+      "references/host-capabilities.md",
+      "references/orchestration-contract.md",
+      "references/model-roles.md"
+    ],
+    "licenseProvenance": {
+      "license": "MIT",
+      "copyright": "Copyright (c) 2026 Lauren Tan",
+      "sourcePath": "LICENSE"
+    },
+    "adaptationStatus": "adapted-reviewed",
+    "verification": {
+      "chatgpt": {
+        "status": "not-run",
+        "evidence": []
+      },
+      "codex": {
+        "status": "not-run",
+        "evidence": []
+      }
+    }
+  }
+]

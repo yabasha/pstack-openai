@@ -1,0 +1,42 @@
+[
+  {
+    "upstreamPath": "skills/poteto-mode/playbooks/autopilot-full.md",
+    "upstreamCommit": "df581122cde17e6e27686b5a448bde23e4ad4318",
+    "upstreamSha256": "05ca30a16242c19d0c78ba1e88cca66f858d75252cb154fd740099fe292de802",
+    "destinationPath": "skills/poteto-mode/playbooks/autopilot-full.md",
+    "disposition": "runtime",
+    "rationale": "Preserve one owner per PR, state-then-wait, operator items, early trails and ready PR, committed-head gates, independent swarm live and regression lanes, patch-id reuse, merge-prep drift checks, owner squash merge, root countersigns, hourly audit/stuck-child replacement, retro, post-merge sweep, instant zero-writes and full reply. Replace cloud workers and source loop with observed authorized bindings; retain deslop/control companion gaps. Missing persistent wake uses current-turn work and durable continuation without scheduling claims. Pending Bugbot, Babysit and Shipping contracts block dependent execution until Tasks 21 and 24 close them. Structural checks establish no host behavior.",
+    "dependencies": [
+      "skills/poteto-mode/SKILL.md",
+      "skills/poteto-mode/references/bugbot-triage.md",
+      "skills/poteto-mode/playbooks/babysit.md",
+      "skills/poteto-mode/playbooks/shipping.md",
+      "skills/swarm/SKILL.md",
+      "skills/no-comments/SKILL.md",
+      "skills/principle-prove-it-works/SKILL.md",
+      "skills/show-me-your-work/SKILL.md",
+      "skills/show-me-your-work/scripts/log.sh",
+      "skills/show-me-your-work/references/decision-log-template.tsv",
+      "references/host-capabilities.md",
+      "references/orchestration-contract.md",
+      "references/model-roles.md",
+      "references/agent-prompts/poteto-agent.md"
+    ],
+    "licenseProvenance": {
+      "license": "MIT",
+      "copyright": "Copyright (c) 2026 Lauren Tan",
+      "sourcePath": "LICENSE"
+    },
+    "adaptationStatus": "adapted-reviewed",
+    "verification": {
+      "chatgpt": {
+        "status": "not-run",
+        "evidence": []
+      },
+      "codex": {
+        "status": "not-run",
+        "evidence": []
+      }
+    }
+  }
+]

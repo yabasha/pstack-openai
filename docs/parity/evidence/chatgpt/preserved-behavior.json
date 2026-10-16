@@ -1,0 +1,63 @@
+{
+  "caseId": "preserved-behavior",
+  "packageVersion": "0.1.0",
+  "packageCommit": "5d05ab2458f4cd73c44b24265a3a1920b98b8cf4",
+  "host": "chatgpt",
+  "hostMode": "personal ChatGPT not accessed; host mode unobserved",
+  "date": "2026-10-08",
+  "input": "Refactor a fixture invoice formatter by removing a one-caller wrapper and consolidating duplicated state. Preserve literal formatted outputs, empty inputs, rounding and errors. Capture the current outputs before edits. Rename its internal API and migrate code, string references, docs and back-references together. One fixture exposes an unrelated bug, which must stay separate. A speculative abstraction adds reader load and must be reverted. Permit local edits and execution but no external writes. Repeat with workers unavailable, execution denied and behavior coverage absent. Return the changed structure, held pin, equivalence proof, reader-load delta, shipped and reverted work.",
+  "observedOutput": "Not attempted. Inherited prerequisite block from package-discovery. No documented supported local plugin loading route is established for this personal ChatGPT context. No actual personal ChatGPT session or installed copy was accessed. No separate human authorization exists for loading, installation, enabling, settings changes or fresh host setup. Personal-host tool probing was not attempted. Current controller filesystem and tools are not personal ChatGPT tools.",
+  "status": "blocked",
+  "execution": "unavailable",
+  "sourcePaths": [
+    "skills/poteto-mode/playbooks/refactoring.md",
+    "skills/poteto-mode/SKILL.md",
+    "agents/poteto-agent.md",
+    "skills/poteto-mode/playbooks/feature.md",
+    "skills/poteto-mode/playbooks/opening-a-pr.md",
+    "skills/how/SKILL.md",
+    "skills/figure-it-out/SKILL.md",
+    "skills/architect/SKILL.md",
+    "skills/principle-model-the-domain/SKILL.md",
+    "skills/principle-foundational-thinking/SKILL.md",
+    "skills/principle-redesign-from-first-principles/SKILL.md",
+    "skills/principle-subtract-before-you-add/SKILL.md",
+    "skills/principle-laziness-protocol/SKILL.md",
+    "skills/principle-migrate-callers-then-delete-legacy-apis/SKILL.md",
+    "skills/principle-prove-it-works/SKILL.md",
+    "skills/principle-minimize-reader-load/SKILL.md",
+    "skills/principle-sequence-verifiable-units/SKILL.md",
+    "skills/how/references/explorer-prompt.md",
+    "skills/how/references/explainer-prompt.md",
+    "skills/architect/references/runner-prompt.md",
+    "skills/architect/references/rationale-template.md",
+    "skills/architect/references/design-red-flags.md"
+  ],
+  "documentedCapabilities": [
+    "docs/setup/chatgpt.md leaves the personal loading route unsupported here; supplied source is reduced capability guidance only.",
+    "references/host-capabilities.md requires actual exposed and successful bindings."
+  ],
+  "exposedTools": [],
+  "artifacts": [
+    "docs/parity/evidence/chatgpt/authorization-support-check.md"
+  ],
+  "limits": [
+    "No documented supported local plugin loading route is established for this personal ChatGPT context. No actual personal ChatGPT session or installed copy was accessed. No separate human authorization exists for loading, installation, enabling, settings changes or fresh host setup. Personal-host tool probing was not attempted. Current controller filesystem and tools are not personal ChatGPT tools.",
+    "This case input was not submitted to personal ChatGPT; no model result or expected behavioral output was observed.",
+    "Full and reduced capability are not observed. Runtime cases were not run.",
+    "Exact installed-copy identity, all 51 root names and three canonical nested Benny exclusions remain unobserved.",
+    "No history access, privacy behavior, worker lifecycle, model choice, persistence, integration or negative runtime condition was exercised.",
+    "Local evidence validation checks accounting only. Codex capabilities and results do not transfer to ChatGPT."
+  ],
+  "priorActionIdentities": [],
+  "permissions": {
+    "execution": "unavailable",
+    "writes": "unknown",
+    "externalActions": "unknown"
+  },
+  "models": {
+    "requested": "unknown",
+    "actual": "unknown"
+  },
+  "successfulOperations": []
+}

@@ -1,0 +1,245 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Observed host evidence",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "caseId",
+    "packageVersion",
+    "packageCommit",
+    "host",
+    "hostMode",
+    "date",
+    "input",
+    "observedOutput",
+    "status",
+    "execution",
+    "sourcePaths",
+    "documentedCapabilities",
+    "exposedTools",
+    "artifacts",
+    "limits",
+    "priorActionIdentities",
+    "permissions",
+    "models",
+    "successfulOperations"
+  ],
+  "properties": {
+    "caseId": {
+      "type": "string",
+      "minLength": 1
+    },
+    "packageVersion": {
+      "type": "string",
+      "minLength": 1
+    },
+    "packageCommit": {
+      "type": "string",
+      "minLength": 1,
+      "pattern": "^[0-9a-f]{40}$"
+    },
+    "host": {
+      "enum": [
+        "chatgpt",
+        "codex"
+      ]
+    },
+    "hostMode": {
+      "type": "string",
+      "minLength": 1
+    },
+    "date": {
+      "type": "string",
+      "minLength": 1
+    },
+    "input": {
+      "type": "string",
+      "minLength": 1
+    },
+    "observedOutput": {
+      "type": "string",
+      "minLength": 1
+    },
+    "status": {
+      "enum": [
+        "not-run",
+        "pass",
+        "reduced-pass",
+        "blocked",
+        "fail"
+      ]
+    },
+    "execution": {
+      "enum": [
+        "direct",
+        "workers",
+        "sequential",
+        "unavailable",
+        "not-run"
+      ]
+    },
+    "sourcePaths": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1
+      },
+      "minItems": 1
+    },
+    "documentedCapabilities": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1
+      }
+    },
+    "exposedTools": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1
+      }
+    },
+    "artifacts": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1
+      }
+    },
+    "limits": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1
+      }
+    },
+    "priorActionIdentities": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1
+      }
+    },
+    "permissions": {
+      "type": "object",
+      "required": [
+        "execution",
+        "writes",
+        "externalActions"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "execution": {
+          "enum": [
+            "granted",
+            "denied",
+            "unavailable",
+            "unknown"
+          ]
+        },
+        "writes": {
+          "enum": [
+            "granted",
+            "denied",
+            "unavailable",
+            "unknown"
+          ]
+        },
+        "externalActions": {
+          "enum": [
+            "granted",
+            "denied",
+            "unavailable",
+            "unknown"
+          ]
+        }
+      }
+    },
+    "models": {
+      "type": "object",
+      "required": [
+        "requested",
+        "actual"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "requested": {
+          "type": "string",
+          "minLength": 1
+        },
+        "actual": {
+          "type": "string",
+          "minLength": 1
+        }
+      }
+    },
+    "successfulOperations": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "operation",
+          "tool",
+          "evidence"
+        ],
+        "additionalProperties": false,
+        "properties": {
+          "operation": {
+            "type": "string",
+            "minLength": 1
+          },
+          "tool": {
+            "type": "string",
+            "minLength": 1
+          },
+          "evidence": {
+            "type": "string",
+            "minLength": 1
+          },
+          "assignmentId": {
+            "type": "string",
+            "minLength": 1
+          }
+        }
+      }
+    },
+    "inputRevision": {
+      "type": "string",
+      "pattern": "^[0-9a-f]{40}$"
+    },
+    "methodReceipt": {
+      "type": "string",
+      "minLength": 1
+    },
+    "nativeObservations": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "observation",
+          "evidence",
+          "reviewedBy"
+        ],
+        "properties": {
+          "observation": {
+            "enum": [
+              "supplied-input",
+              "response",
+              "review-outcome"
+            ]
+          },
+          "evidence": {
+            "type": "string",
+            "minLength": 1
+          },
+          "reviewedBy": {
+            "type": "string",
+            "minLength": 1
+          }
+        }
+      }
+    }
+  }
+}

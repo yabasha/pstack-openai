@@ -1,0 +1,44 @@
+{
+  "name": "show-me-your-work",
+  "kind": "skill",
+  "purpose": "Keep a reviewable local decision trail for long-running or unattended work.",
+  "triggers": [
+    "/show-me-your-work",
+    "Autonomous or multi-phase runs",
+    "Work reviewed after a human steps away"
+  ],
+  "inputs": [
+    "Decisions and evidence pointers",
+    "Authorized local log path",
+    "This run transcript and reviewer capabilities"
+  ],
+  "outputs": [
+    "Append-only six-column TSV",
+    "Transcript audit with superseding corrections",
+    "Attention section with observed reviewer model and flags or explicit gaps"
+  ],
+  "ordinaryExample": "Record a verified checkpoint and a reverted decision, resolve their evidence, audit this run and request an independent different-family reviewer.",
+  "dependencies": [
+    "skills/show-me-your-work/references/decision-log-template.tsv",
+    "skills/show-me-your-work/scripts/log.sh",
+    "skills/unslop/SKILL.md",
+    "references/host-capabilities.md",
+    "references/model-roles.md",
+    "references/orchestration-contract.md"
+  ],
+  "capabilityLimits": [
+    "The logging helper is present and reviewed; authorized execution, local persistence and readback still require observed host capabilities.",
+    "History, durable write and readback, and independent different-family review require observed authorized bindings.",
+    "Sequential self-review does not satisfy cross-model review.",
+    "No secrets or unsupported completion claims; commits and external actions need explicit authorization.",
+    "Host behavior remains not-run; disable-model-invocation metadata does not prove host enforcement."
+  ],
+  "sourcePaths": [
+    "skills/show-me-your-work/SKILL.md",
+    "skills/show-me-your-work/references/decision-log-template.tsv",
+    "skills/show-me-your-work/scripts/log.sh"
+  ],
+  "caseIds": [
+    "decision-trail"
+  ]
+}

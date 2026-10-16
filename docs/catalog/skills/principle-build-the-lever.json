@@ -1,0 +1,39 @@
+{
+  "name": "principle-build-the-lever",
+  "kind": "principle",
+  "purpose": "Build the smallest rerunnable tool that performs or proves nontrivial work, making its result reviewable.",
+  "triggers": [
+    "Nontrivial edits, migrations, analyses or checks",
+    "Explicit principle-build-the-lever invocation"
+  ],
+  "inputs": [
+    "Authorized task and source",
+    "A hand-done first unit and its expected result",
+    "Available write, execution and worker capabilities"
+  ],
+  "outputs": [
+    "A safe rerunnable codemod, script, generator or shared delegate skill file",
+    "Observed rerun and diff proof, or an explicit reduced proposal and blocked proof"
+  ],
+  "ordinaryExample": "Migrate one file by hand, build an idempotent codemod, and rerun it on that file to compare the result before applying it to the remaining files.",
+  "dependencies": [
+    "skills/principle-laziness-protocol/SKILL.md",
+    "skills/principle-encode-lessons-in-structure/SKILL.md",
+    "skills/principle-prove-it-works/SKILL.md",
+    "references/host-capabilities.md",
+    "references/orchestration-contract.md",
+    "references/workflow-ownership.md"
+  ],
+  "capabilityLimits": [
+    "Writes and commits require authorization; proof requires observed execution and comparisons.",
+    "Delegation requires authorization and exposed independent workers; deterministic tools take priority.",
+    "No host behavior has been tested.",
+    "Preserve disable-model-invocation metadata without assuming host enforcement."
+  ],
+  "sourcePaths": [
+    "skills/principle-build-the-lever/SKILL.md"
+  ],
+  "caseIds": [
+    "repeatable-change"
+  ]
+}

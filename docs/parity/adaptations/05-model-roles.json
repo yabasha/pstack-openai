@@ -1,0 +1,61 @@
+[
+  {
+    "upstreamPath": "agents/comment-sicko.md",
+    "upstreamCommit": "df581122cde17e6e27686b5a448bde23e4ad4318",
+    "upstreamSha256": "c0fd0383008da45fc78cfac17b9007d62c42f87ad1c8d5c2fb658b1fd01f7c82",
+    "destinationPath": "references/agent-prompts/comment-sicko.md",
+    "disposition": "relocated",
+    "rationale": "Relocate comment role; preserve authorized scoped comment deletion, actual touched files and deletion counts, keep exceptions, investigation and in-scope MUST KILL flags; use explicit reduced proposals for unavailable or unauthorized writes and skip missing evidence. Never edit application code.",
+    "dependencies": [
+      "skills/how/SKILL.md",
+      "skills/why/SKILL.md",
+      "references/model-roles.md",
+      "references/host-capabilities.md"
+    ],
+    "licenseProvenance": {
+      "license": "MIT",
+      "copyright": "Copyright (c) 2026 Lauren Tan",
+      "sourcePath": "LICENSE"
+    },
+    "adaptationStatus": "adapted-reviewed",
+    "verification": {
+      "chatgpt": {
+        "status": "not-run",
+        "evidence": []
+      },
+      "codex": {
+        "status": "not-run",
+        "evidence": []
+      }
+    }
+  },
+  {
+    "upstreamPath": "agents/poteto-agent.md",
+    "upstreamCommit": "df581122cde17e6e27686b5a448bde23e4ad4318",
+    "upstreamSha256": "abe41c169ecbfe65641f1725f4188d568e046c0dec7fd2dc271abb594c299201",
+    "destinationPath": "references/agent-prompts/poteto-agent.md",
+    "disposition": "relocated",
+    "rationale": "Relocate portable role prompt; preserve complete mode and principle reads, fresh-task routing and strict resume rules; gate workers and model selection on session evidence.",
+    "dependencies": [
+      "skills/poteto-mode/SKILL.md",
+      "references/model-roles.md",
+      "references/host-capabilities.md"
+    ],
+    "licenseProvenance": {
+      "license": "MIT",
+      "copyright": "Copyright (c) 2026 Lauren Tan",
+      "sourcePath": "LICENSE"
+    },
+    "adaptationStatus": "adapted-reviewed",
+    "verification": {
+      "chatgpt": {
+        "status": "not-run",
+        "evidence": []
+      },
+      "codex": {
+        "status": "not-run",
+        "evidence": []
+      }
+    }
+  }
+]

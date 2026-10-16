@@ -1,0 +1,35 @@
+{
+  "name": "principle-minimize-reader-load",
+  "kind": "principle",
+  "purpose": "Reduce the layers readers trace and the hidden or mutable state they must hold to understand code.",
+  "triggers": [
+    "Reviewing or shaping code that is hard to trace",
+    "Considering another layer or piece of state"
+  ],
+  "inputs": [
+    "Concrete source path, caller evidence and mutable state",
+    "Authorized task and available session capabilities"
+  ],
+  "outputs": [
+    "Simpler trace path and smaller state scope with meaningful boundaries and invariants preserved",
+    "Source-grounded proposal and explicit missing checks when writes or execution are unavailable"
+  ],
+  "ordinaryExample": "Trace an invoice total through two one-caller pass-through wrappers, collapse them where they hide no decisions, and derive total from rows instead of synchronizing a cached module value.",
+  "dependencies": [
+    "references/host-capabilities.md",
+    "skills/principle-guard-the-context-window/SKILL.md"
+  ],
+  "capabilityLimits": [
+    "Concrete refactoring requires inspected source and caller evidence plus authorized writes; verification requires observed execution.",
+    "Missing writes or execution permit a reduced proposal; missing source or sufficient evidence blocks concrete refactoring claims.",
+    "The under-30-second reader test is a criterion unless measured.",
+    "Invocation metadata is preserved without assuming host enforcement.",
+    "Host behavior has not been tested."
+  ],
+  "sourcePaths": [
+    "skills/principle-minimize-reader-load/SKILL.md"
+  ],
+  "caseIds": [
+    "trace-load"
+  ]
+}

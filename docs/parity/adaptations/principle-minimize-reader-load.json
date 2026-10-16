@@ -1,0 +1,30 @@
+[
+  {
+    "upstreamPath": "skills/principle-minimize-reader-load/SKILL.md",
+    "upstreamCommit": "df581122cde17e6e27686b5a448bde23e4ad4318",
+    "upstreamSha256": "42551c5dc74cd578163c148da552db3ff67d29b78600ef216bfd311fb828fe69",
+    "destinationPath": "skills/principle-minimize-reader-load/SKILL.md",
+    "disposition": "runtime",
+    "rationale": "Preserve the complete canonical reader-load principle and invocation metadata; bind concrete refactoring to observed source, authorized writes and execution, with explicit reduced proposals and blocked claims. Comparison source adds no necessary fallback and is not incorporated.",
+    "dependencies": [
+      "references/host-capabilities.md",
+      "skills/principle-guard-the-context-window/SKILL.md"
+    ],
+    "licenseProvenance": {
+      "license": "MIT",
+      "copyright": "Copyright (c) 2026 Lauren Tan",
+      "sourcePath": "LICENSE"
+    },
+    "adaptationStatus": "adapted-reviewed",
+    "verification": {
+      "chatgpt": {
+        "status": "not-run",
+        "evidence": []
+      },
+      "codex": {
+        "status": "not-run",
+        "evidence": []
+      }
+    }
+  }
+]

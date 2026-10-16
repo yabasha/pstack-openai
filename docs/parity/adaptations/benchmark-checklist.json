@@ -1,0 +1,33 @@
+[
+  {
+    "upstreamPath": "skills/benchmark-checklist/SKILL.md",
+    "upstreamCommit": "df581122cde17e6e27686b5a448bde23e4ad4318",
+    "upstreamSha256": "6a767e788a60428fa14e645ee10fe2e49896e514ff654f668b1d824deb9038e8",
+    "destinationPath": "skills/benchmark-checklist/SKILL.md",
+    "disposition": "runtime",
+    "rationale": "Preserve the complete canonical seven-question checklist, metadata, numerical examples, one-run ballpark exception and reporting gates. Add capability/authorization checks and explicit workload, revision and sample records.",
+    "dependencies": [
+      "references/host-capabilities.md",
+      "skills/principle-explain-the-number/SKILL.md",
+      "skills/poteto-mode/playbooks/opening-a-pr.md",
+      "skills/poteto-mode/playbooks/perf-issue.md",
+      "skills/poteto-mode/playbooks/hillclimb.md"
+    ],
+    "licenseProvenance": {
+      "license": "MIT",
+      "copyright": "Copyright (c) 2026 Lauren Tan",
+      "sourcePath": "LICENSE"
+    },
+    "adaptationStatus": "adapted-reviewed",
+    "verification": {
+      "chatgpt": {
+        "status": "not-run",
+        "evidence": []
+      },
+      "codex": {
+        "status": "not-run",
+        "evidence": []
+      }
+    }
+  }
+]

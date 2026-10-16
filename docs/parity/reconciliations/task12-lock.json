@@ -1,0 +1,130 @@
+{
+  "schemaVersion": 1,
+  "kind": "reviewed-helper-metadata-recovery",
+  "aggregateBase": "259470236eff8038a70fd349d580651f2611a1fb",
+  "priorFragment": null,
+  "priorFragmentExplanation": "No task 12 adaptation fragment existed. Its original brief and reviewed five-file commit supplied runtime files, a test and setup documentation. The inventory rows remained pending. No historical unchanged-reviewed fragment is invented.",
+  "initialReviewCommit": "b68fae5b49571ad9b33f13d60f4ab5a287618922",
+  "lockIntegrationCommit": "2805c1eadec5906286a3ba129147ee1669052fe9",
+  "sourceCommit": "df581122cde17e6e27686b5a448bde23e4ad4318",
+  "originalLockSha256": "667d9cf7222e9aae3fa42a4be383e657784216e9df115da02227fbc5ac7bbe46",
+  "integratedLockSha256": "530b7fb6cba7f0b2a6cfc862dbcfe9020c333d45e7e0f448133006583ffdc1f2",
+  "originalReview": {
+    "lockDisposition": "unchanged source bytes",
+    "lockSha256": "667d9cf7222e9aae3fa42a4be383e657784216e9df115da02227fbc5ac7bbe46"
+  },
+  "changedWorkspaceRequests": {
+    "bun-types": {
+      "before": "latest",
+      "after": "1.3.14"
+    },
+    "typescript": {
+      "before": "latest",
+      "after": "7.0.2"
+    }
+  },
+  "preservedPackages": 25,
+  "packagesSectionSha256": "39ae51ba3048cae4b8275299ff7435c0b40de5acba61b87da47ad97e60659766",
+  "originalInventoryRows": [
+    {
+      "upstreamPath": "skills/poteto-mode/scripts/bootstrap.ts",
+      "upstreamCommit": "df581122cde17e6e27686b5a448bde23e4ad4318",
+      "upstreamSha256": "ccd2ed08fd9da9d0d942e5f2491cfc74bb92d8a08fa51755e0da1ac8de287361",
+      "destinationPath": "skills/poteto-mode/scripts/bootstrap.ts",
+      "disposition": "runtime",
+      "rationale": "Retain the canonical path; adaptation review remains pending.",
+      "dependencies": [],
+      "licenseProvenance": {
+        "license": "MIT",
+        "copyright": "Copyright (c) 2026 Lauren Tan",
+        "sourcePath": "LICENSE"
+      },
+      "adaptationStatus": "pending",
+      "verification": {
+        "chatgpt": {
+          "status": "not-run",
+          "evidence": []
+        },
+        "codex": {
+          "status": "not-run",
+          "evidence": []
+        }
+      }
+    },
+    {
+      "upstreamPath": "skills/poteto-mode/scripts/bun.lock",
+      "upstreamCommit": "df581122cde17e6e27686b5a448bde23e4ad4318",
+      "upstreamSha256": "667d9cf7222e9aae3fa42a4be383e657784216e9df115da02227fbc5ac7bbe46",
+      "destinationPath": "skills/poteto-mode/scripts/bun.lock",
+      "disposition": "runtime",
+      "rationale": "Retain the canonical path; adaptation review remains pending.",
+      "dependencies": [],
+      "licenseProvenance": {
+        "license": "MIT",
+        "copyright": "Copyright (c) 2026 Lauren Tan",
+        "sourcePath": "LICENSE"
+      },
+      "adaptationStatus": "pending",
+      "verification": {
+        "chatgpt": {
+          "status": "not-run",
+          "evidence": []
+        },
+        "codex": {
+          "status": "not-run",
+          "evidence": []
+        }
+      }
+    },
+    {
+      "upstreamPath": "skills/poteto-mode/scripts/package.json",
+      "upstreamCommit": "df581122cde17e6e27686b5a448bde23e4ad4318",
+      "upstreamSha256": "d1f815091209d49763775cc188e8e06ff32d5fec648bffd2272bc25a165e87c3",
+      "destinationPath": "skills/poteto-mode/scripts/package.json",
+      "disposition": "runtime",
+      "rationale": "Retain the canonical path; adaptation review remains pending.",
+      "dependencies": [],
+      "licenseProvenance": {
+        "license": "MIT",
+        "copyright": "Copyright (c) 2026 Lauren Tan",
+        "sourcePath": "LICENSE"
+      },
+      "adaptationStatus": "pending",
+      "verification": {
+        "chatgpt": {
+          "status": "not-run",
+          "evidence": []
+        },
+        "codex": {
+          "status": "not-run",
+          "evidence": []
+        }
+      }
+    }
+  ],
+  "currentFragment": "docs/parity/adaptations/12-bootstrap.json",
+  "currentFragmentSha256": "a5e92b9e78e691243a17a1a82855cc45a79dd7ce5fb5e7d0e4dab9a74fa1d6c2",
+  "reviewArtifacts": [
+    {
+      "path": ".superpowers/sdd/2026-10-07-pstack-openai/task-12-report.md",
+      "sha256": "2f3e6250b33d7ee9edf9da4dc2acf88f51ae1014e401ccc0742c64d2fbfb1964"
+    },
+    {
+      "path": ".superpowers/sdd/2026-10-07-pstack-openai/task-12-review.md",
+      "sha256": "3805197b0ccda57e0ac33529e77dca90cef606c5c80b0bd0da54a1df75207d69"
+    },
+    {
+      "path": ".superpowers/sdd/2026-10-07-pstack-openai/lock-integration-report.md",
+      "sha256": "ae77643b34444ca8f4e79272160e97bc168020ccf2b320f9de9efe168c7c086c"
+    },
+    {
+      "path": ".superpowers/sdd/2026-10-07-pstack-openai/lock-integration-review.md",
+      "sha256": "4c0c2204ef96e266369c1355d7d71c7c79433b47cbb4aa8e59367f0bcc502bc4"
+    }
+  ],
+  "limits": [
+    "Review metadata recovery changes no runtime bytes.",
+    "Isolated dependency verification at 37b68c8e842b275f310ead112c0ecb7fa0ade308 does not prove the operative candidate or host behavior.",
+    "Both hosts remain not-run."
+  ]
+}

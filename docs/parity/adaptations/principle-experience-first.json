@@ -1,0 +1,29 @@
+[
+  {
+    "upstreamPath": "skills/principle-experience-first/SKILL.md",
+    "upstreamCommit": "df581122cde17e6e27686b5a448bde23e4ad4318",
+    "upstreamSha256": "58903529d733b1c1a7c9ccf127d45ef3c7d0d9f0b81164a4dc6b80efe6f2912b",
+    "destinationPath": "skills/principle-experience-first/SKILL.md",
+    "disposition": "runtime",
+    "rationale": "Preserve the complete canonical principle and invocation metadata; add capability discovery, authorization boundaries and explicit reduced or blocked limits. No comparison content or personal preferences added.",
+    "dependencies": [
+      "references/host-capabilities.md"
+    ],
+    "licenseProvenance": {
+      "license": "MIT",
+      "copyright": "Copyright (c) 2026 Lauren Tan",
+      "sourcePath": "LICENSE"
+    },
+    "adaptationStatus": "adapted-reviewed",
+    "verification": {
+      "chatgpt": {
+        "status": "not-run",
+        "evidence": []
+      },
+      "codex": {
+        "status": "not-run",
+        "evidence": []
+      }
+    }
+  }
+]

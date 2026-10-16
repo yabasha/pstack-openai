@@ -1,0 +1,29 @@
+{
+  "id": "pstack-plan-format",
+  "sourcePaths": [
+    "skills/poteto-mode/scripts/check-plan.mjs",
+    "skills/poteto-mode/playbooks/multi-phase-plan.md"
+  ],
+  "prompt": "Check a pstack multi-phase plan by positional path. Include capability receipts, observed independent worker capacity, ordered live lanes with regression against trunk and head, performance evidence or justified non-applicability, and an independent review gate when workers are available. Also check a plan with no capability evidence, an unsupported ten-lane claim, a checked live box without receipts, and a Superpowers implementation plan. Do not rewrite any input.",
+  "requirements": [
+    "Run the adapted helper through Bun with --no-install against an explicitly owned local fixture.",
+    "Keep usage and missing-file exit 2, plan errors exit 1, and structurally valid pstack plans exit 0.",
+    "Declare Independent workers, Live control, Scheduling, Remote, and Model selection available or unavailable with an evidence reference. Available independent workers declare observed capacity.",
+    "Preserve ordered PR blocks and live lanes. Checked live boxes require observed head and a nonempty existing receipt.",
+    "Keep blocked and reduced verification visible. A justified performance non-applicability record is separate from success boxes.",
+    "Independent review remains required when independent workers are available. Interaction changes require operator screenshot and video review.",
+    "Every review gate declares Interaction applicable. or Interaction not applicable. with separate reason and evidence. Applicable interactions require operator screenshot and video review; None. cannot bypass either this gate or unavailable-worker reduced-review evidence."
+  ],
+  "expectedFull": "A valid pstack plan passes structural checks without requiring a fixed model, scheduler, remote VM, or ten lanes. Actual host execution and independent review are proven separately at the recorded head. A structural pass alone proves neither.",
+  "expectedReduced": "Sequential verification explicitly declares reduced live status with reason and evidence. Reduced review records unavailable workers. The checker can accept this honest plan without implying full runtime success.",
+  "expectedBlocked": "Unavailable live control records blocked status, reason and evidence. Checked blocked live success boxes fail. Missing runtime prevents execution and remains blocked. A non-pstack implementation plan returns a plan-format error and remains unchanged.",
+  "forbiddenClaims": [
+    "A checked box alone proves live verification.",
+    "Ten independent lanes ran when capacity or independence is unavailable.",
+    "Reduced or blocked live verification is full success.",
+    "Performance non-applicability is a measured performance pass.",
+    "A structural fixture pass proves host runtime parity or Node compatibility.",
+    "Superpowers implementation plans must adopt pstack headings.",
+    "Omitting interaction applicability or using None. silently removes required review gates."
+  ]
+}

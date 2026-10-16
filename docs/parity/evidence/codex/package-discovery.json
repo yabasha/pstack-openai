@@ -1,0 +1,115 @@
+{
+  "caseId": "package-discovery",
+  "packageVersion": "0.1.0",
+  "packageCommit": "5d05ab2458f4cd73c44b24265a3a1920b98b8cf4",
+  "host": "codex",
+  "hostMode": "fresh local CLI app-server stdio discovery after separately approved supported personal installation; codex-cli 0.161.0",
+  "date": "2026-10-08",
+  "input": "In each fresh host, after separately authorized supported package loading, inspect the actual installed copy and enumerate its registered root skills. Preserve the exact final frozen package identity and distinguish an unavailable discovery operation from readable local source.",
+  "observedOutput": "The supported CLI installed pstack-openai@yabasha-local version 0.1.0. Fresh plugin/read observed installed=true, enabled=true, localVersion=0.1.0 and 51 source-path skill identities. Fresh skills/list with forceReload=true observed exactly 51 enabled registered root skills at the actual versioned cache, all with pluginId pstack-openai@yabasha-local, and no targetErrors. Both path sets match the frozen canonical roots and exclude all three nested Benny skills. The complete exact installed-copy JSON receipt binds the approved freeze, version and actual cache. Independent read-only installation review matched all 726 source/cache bytes and modes.",
+  "status": "pass",
+  "execution": "direct",
+  "sourcePaths": [
+    ".cursor-plugin/plugin.json",
+    "automations/benny/skills/reproduce-and-fix-issues/SKILL.md",
+    "automations/benny/skills/setup-benny/SKILL.md",
+    "automations/benny/skills/triage-issue-reports/SKILL.md",
+    "skills/architect/SKILL.md",
+    "skills/arena/SKILL.md",
+    "skills/automate-me/SKILL.md",
+    "skills/benchmark-checklist/SKILL.md",
+    "skills/blast-radius/SKILL.md",
+    "skills/bro/SKILL.md",
+    "skills/correct/SKILL.md",
+    "skills/create-verification-skill/SKILL.md",
+    "skills/figure-it-out/SKILL.md",
+    "skills/how/SKILL.md",
+    "skills/interrogate/SKILL.md",
+    "skills/maintain-verification-skill/SKILL.md",
+    "skills/make-bot-ui/SKILL.md",
+    "skills/no-comments/SKILL.md",
+    "skills/poteto-help/SKILL.md",
+    "skills/poteto-mode/SKILL.md",
+    "skills/principle-attack-the-premise/SKILL.md",
+    "skills/principle-boundary-discipline/SKILL.md",
+    "skills/principle-build-the-lever/SKILL.md",
+    "skills/principle-encode-lessons-in-structure/SKILL.md",
+    "skills/principle-exhaust-the-design-space/SKILL.md",
+    "skills/principle-experience-first/SKILL.md",
+    "skills/principle-explain-the-number/SKILL.md",
+    "skills/principle-fix-root-causes/SKILL.md",
+    "skills/principle-foundational-thinking/SKILL.md",
+    "skills/principle-guard-the-context-window/SKILL.md",
+    "skills/principle-laziness-protocol/SKILL.md",
+    "skills/principle-make-operations-idempotent/SKILL.md",
+    "skills/principle-migrate-callers-then-delete-legacy-apis/SKILL.md",
+    "skills/principle-minimize-reader-load/SKILL.md",
+    "skills/principle-model-the-domain/SKILL.md",
+    "skills/principle-never-block-on-the-human/SKILL.md",
+    "skills/principle-outcome-oriented-execution/SKILL.md",
+    "skills/principle-prove-it-works/SKILL.md",
+    "skills/principle-redesign-from-first-principles/SKILL.md",
+    "skills/principle-separate-before-serializing-shared-state/SKILL.md",
+    "skills/principle-sequence-verifiable-units/SKILL.md",
+    "skills/principle-subtract-before-you-add/SKILL.md",
+    "skills/principle-test-behavior-not-implementation/SKILL.md",
+    "skills/principle-type-system-discipline/SKILL.md",
+    "skills/recall/SKILL.md",
+    "skills/reflect/SKILL.md",
+    "skills/setup-pstack/SKILL.md",
+    "skills/show-me-your-work/SKILL.md",
+    "skills/swarm/SKILL.md",
+    "skills/tdd/SKILL.md",
+    "skills/teach/SKILL.md",
+    "skills/technical-writing/SKILL.md",
+    "skills/typescript-best-practices/SKILL.md",
+    "skills/unslop/SKILL.md",
+    "skills/why/SKILL.md"
+  ],
+  "documentedCapabilities": [
+    "docs/parity/cases/package-discovery.json requires actual supported discovery, exact registered roots and an installed-copy receipt.",
+    "Observation labels bind to exposed tools.exec_command operations invoking the supported CLI and fresh app-server stdio capture; they are not callable discovery APIs."
+  ],
+  "exposedTools": [
+    "tools.exec_command"
+  ],
+  "artifacts": [
+    "docs/parity/evidence/codex/authorization-capability-check.md",
+    "docs/testing/codex.md"
+  ],
+  "limits": [
+    "Only this installed discovery case is accepted. The independent installation review did not establish full host parity or broader workflow behavior.",
+    "Codex desktop-window loading and ChatGPT ordinary Chat and Work loading remain unobserved after CUA app access refusal. Shared configuration and cache bytes do not prove ChatGPT runtime discovery.",
+    "Initial proxy initialize timed out; fresh stdio discovery succeeded. Pre-existing mcpServers was ignored, and local telemetry exports timed out. No unrelated configuration was repaired.",
+    "Discovery is read-only after the separately authorized installation. The later smoke model executed only the installed skill read, but host background Notion OAuth refresh attempted external contact and failed. No credentials were changed.",
+    "Requested and actual model identities are unknown. No workers were used for discovery.",
+    "Release bookkeeping limitation: codex: source verification lacks matching linked evidence: .cursor-plugin/plugin.json. The frozen inventory still records blocked verification for its sole now-passing discovery link. This source-ledger mismatch does not negate actual installed discovery, and the report unit changes no inventory or validator."
+  ],
+  "priorActionIdentities": [],
+  "permissions": {
+    "execution": "granted",
+    "writes": "denied",
+    "externalActions": "denied"
+  },
+  "models": {
+    "requested": "unknown",
+    "actual": "unknown"
+  },
+  "successfulOperations": [
+    {
+      "operation": "discover-package",
+      "tool": "tools.exec_command",
+      "evidence": "docs/testing/codex.md"
+    },
+    {
+      "operation": "enumerate-skills",
+      "tool": "tools.exec_command",
+      "evidence": "docs/testing/codex.md"
+    },
+    {
+      "operation": "inspect-installed-copy",
+      "tool": "tools.exec_command",
+      "evidence": "docs/parity/evidence/codex/authorization-capability-check.md"
+    }
+  ]
+}

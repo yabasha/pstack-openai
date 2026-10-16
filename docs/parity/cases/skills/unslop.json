@@ -1,0 +1,20 @@
+{
+  "id": "prose-rewrite",
+  "sourcePaths": [
+    "skills/unslop/SKILL.md"
+  ],
+  "prompt": "Apply unslop to this draft: Great question! The loader serves as the central figure, highlighting its vibrant paradigm. Not just fast, but crucial. In order to utilize it, the file is parsed by the loader. Rewrite the supplied prose without changing its meaning or adding facts. Also inspect the canonical examples for every numbered rule, including stable numbering gaps.",
+  "requirements": [
+    "Access to the supplied draft and the complete unslop pattern list.",
+    "Preserve intended meaning and tone, stable rule IDs, and all original pattern examples in the skill.",
+    "Remove applicable upstream pattern examples from rewritten prose without adding sources, metrics, mechanisms, or outcomes."
+  ],
+  "expectedFull": "Return plain prose that removes chatbot praise, fancy substitutes for is, superficial -ing phrases, AI vocabulary, contrast framing, filler, jargon, and unnecessary passive voice while retaining supported meaning. Apply all applicable numbered rules through 33, including dense sentences, adverbs, mannered prose, and over-compression.",
+  "expectedReduced": "If only part of the draft is accessible, rewrite that part and state the scope limit. Lack of file-write permission still permits an in-chat rewrite; do not claim a saved edit.",
+  "expectedBlocked": "If the draft is absent or unreadable, request the actual text and do not invent a rewrite or claim completion.",
+  "forbiddenClaims": [
+    "New facts, invented citations, measured deltas, or mechanisms absent from the draft.",
+    "A file was edited without an observed authorized write.",
+    "Host enforcement of disable-model-invocation or host behavioral parity based on structural checks."
+  ]
+}

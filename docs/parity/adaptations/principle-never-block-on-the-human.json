@@ -1,0 +1,29 @@
+[
+  {
+    "upstreamPath": "skills/principle-never-block-on-the-human/SKILL.md",
+    "upstreamCommit": "df581122cde17e6e27686b5a448bde23e4ad4318",
+    "upstreamSha256": "f2764bb9338cbfc788c903cf4b9cd0a5f4042d3a04dd6d59cbd525d9beaadd0a",
+    "destinationPath": "skills/principle-never-block-on-the-human/SKILL.md",
+    "disposition": "runtime",
+    "rationale": "Preserve the complete canonical principle and invocation metadata; append authorization, explicit review-gate and session-capability boundaries so authorized reversible work proceeds and denied writes remain visible. No comparison content or personal preferences added.",
+    "dependencies": [
+      "references/host-capabilities.md"
+    ],
+    "licenseProvenance": {
+      "license": "MIT",
+      "copyright": "Copyright (c) 2026 Lauren Tan",
+      "sourcePath": "LICENSE"
+    },
+    "adaptationStatus": "adapted-reviewed",
+    "verification": {
+      "chatgpt": {
+        "status": "not-run",
+        "evidence": []
+      },
+      "codex": {
+        "status": "not-run",
+        "evidence": []
+      }
+    }
+  }
+]

@@ -1,0 +1,55 @@
+{
+  "caseId": "supported-authoring",
+  "packageVersion": "0.1.0",
+  "packageCommit": "5d05ab2458f4cd73c44b24265a3a1920b98b8cf4",
+  "host": "codex",
+  "hostMode": "existing delegated local implementation session; installed-plugin testing unavailable",
+  "date": "2026-10-08",
+  "input": "Author or modify a skill with this playbook. Inspect the available authoring workflow and its validator. Preserve the skill voice, validate structural contracts, and report unknown trigger performance without assuming create-skill is installed or PR writes are authorized.",
+  "observedOutput": "Not attempted. Inherited prerequisite block from package-discovery. Installed-copy discovery is unobserved for this frozen candidate. No separate human authorization exists for package loading, installation, enabling, settings changes or a fresh host setup. The current session exposes source reads and local command execution, but no actual installed pstack copy identity or complete 51-root/3-exclusion discovery receipt was observed. Source reads cannot establish installed discovery.",
+  "status": "blocked",
+  "execution": "unavailable",
+  "sourcePaths": [
+    "skills/poteto-mode/playbooks/authoring-a-skill.md",
+    "skills/poteto-mode/playbooks/opening-a-pr.md",
+    "skills/principle-encode-lessons-in-structure/SKILL.md"
+  ],
+  "documentedCapabilities": [
+    "references/host-capabilities.md defines observations, not callable APIs.",
+    "docs/setup/codex.md requires separate loading authorization and actual installed-copy discovery."
+  ],
+  "exposedTools": [
+    "functions.exec",
+    "functions.wait",
+    "tools.exec_command",
+    "tools.clock__curr_time",
+    "collaboration.spawn_agent",
+    "collaboration.followup_task",
+    "collaboration.send_message",
+    "collaboration.wait_agent",
+    "collaboration.interrupt_agent",
+    "collaboration.list_agents",
+    "mcp__cua_repl.js",
+    "mcp__cua_repl.js_reset"
+  ],
+  "artifacts": [
+    "docs/parity/evidence/codex/authorization-capability-check.md"
+  ],
+  "limits": [
+    "Installed-copy discovery is unobserved for this frozen candidate. No separate human authorization exists for package loading, installation, enabling, settings changes or a fresh host setup. The current session exposes source reads and local command execution, but no actual installed pstack copy identity or complete 51-root/3-exclusion discovery receipt was observed. Source reads cannot establish installed discovery.",
+    "This case was not attempted; its failure modes and expected outputs were not observed.",
+    "No requested model, case model output, worker independence or fresh loaded session was observed.",
+    "Local structural validation does not establish host behavior."
+  ],
+  "priorActionIdentities": [],
+  "permissions": {
+    "execution": "unavailable",
+    "writes": "granted",
+    "externalActions": "unknown"
+  },
+  "models": {
+    "requested": "unknown",
+    "actual": "unknown"
+  },
+  "successfulOperations": []
+}

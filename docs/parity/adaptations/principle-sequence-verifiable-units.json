@@ -1,0 +1,32 @@
+[
+  {
+    "upstreamPath": "skills/principle-sequence-verifiable-units/SKILL.md",
+    "upstreamCommit": "df581122cde17e6e27686b5a448bde23e4ad4318",
+    "upstreamSha256": "2ccbbacc56ace5afdfb8670cef19d7bd009fb2a0033b9a741cbdf2b6baf72187",
+    "destinationPath": "skills/principle-sequence-verifiable-units/SKILL.md",
+    "disposition": "runtime",
+    "rationale": "Preserve the complete canonical sequencing principle and invocation metadata; bind verification and Git operations to observed capabilities, ownership and authorization. No comparison content or personal preferences added.",
+    "dependencies": [
+      "skills/principle-prove-it-works/SKILL.md",
+      "skills/principle-build-the-lever/SKILL.md",
+      "references/host-capabilities.md",
+      "references/orchestration-contract.md"
+    ],
+    "licenseProvenance": {
+      "license": "MIT",
+      "copyright": "Copyright (c) 2026 Lauren Tan",
+      "sourcePath": "LICENSE"
+    },
+    "adaptationStatus": "adapted-reviewed",
+    "verification": {
+      "chatgpt": {
+        "status": "not-run",
+        "evidence": []
+      },
+      "codex": {
+        "status": "not-run",
+        "evidence": []
+      }
+    }
+  }
+]

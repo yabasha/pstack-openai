@@ -1,0 +1,52 @@
+[
+  {
+    "upstreamPath": "skills/poteto-mode/playbooks/investigation.md",
+    "upstreamCommit": "df581122cde17e6e27686b5a448bde23e4ad4318",
+    "upstreamSha256": "dc66bcf6af3a074fc7f67aa5e12b93ef571a4fb4d8e17f2f1af5ae5359f42e46",
+    "destinationPath": "skills/poteto-mode/playbooks/investigation.md",
+    "disposition": "runtime",
+    "rationale": "Preserve all four Investigation steps, answer ownership, read-only cited explanation or recommendation, how and conditional why routing, exact checkpoint, output sections or tradeoffs table, unslop, no PR or babysit, architect exception and user handoff to Bug fix or Feature, real judgment and premise pushback. Bind reads, delegated roles and selection to actual capabilities and permissions. Direct script helpers are absent. Structural checks are not host behavior; inaccessible evidence and independent workers remain runtime limits. Task 24 must integrate this fragment and caller registry; both hosts remain not-run.",
+    "dependencies": [
+      "skills/poteto-mode/SKILL.md",
+      "references/host-capabilities.md",
+      "references/model-roles.md",
+      "references/orchestration-contract.md",
+      "skills/how/SKILL.md",
+      "skills/how/references/explorer-prompt.md",
+      "skills/how/references/explainer-prompt.md",
+      "skills/why/SKILL.md",
+      "skills/why/references/epistemics.md",
+      "skills/why/references/investigator-prompt.md",
+      "skills/why/references/source-playbook.md",
+      "skills/why/references/synthesizer-prompt.md",
+      "skills/why/references/sources/code-archaeology.md",
+      "skills/why/references/sources/linear.md",
+      "skills/why/references/sources/notion.md",
+      "skills/why/references/sources/slack.md",
+      "skills/why/references/sources/datadog.md",
+      "skills/why/references/sources/sentry.md",
+      "skills/why/references/sources/databricks.md",
+      "skills/why/references/sources/incident-postmortem.md",
+      "skills/unslop/SKILL.md",
+      "skills/architect/SKILL.md",
+      "skills/poteto-mode/playbooks/bug-fix.md",
+      "skills/poteto-mode/playbooks/feature.md"
+    ],
+    "licenseProvenance": {
+      "license": "MIT",
+      "copyright": "Copyright (c) 2026 Lauren Tan",
+      "sourcePath": "LICENSE"
+    },
+    "adaptationStatus": "adapted-reviewed",
+    "verification": {
+      "chatgpt": {
+        "status": "not-run",
+        "evidence": []
+      },
+      "codex": {
+        "status": "not-run",
+        "evidence": []
+      }
+    }
+  }
+]

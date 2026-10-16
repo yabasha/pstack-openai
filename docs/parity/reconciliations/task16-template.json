@@ -1,0 +1,73 @@
+{
+  "schemaVersion": 1,
+  "kind": "duplicate-owner-reconciliation",
+  "aggregateBase": "259470236eff8038a70fd349d580651f2611a1fb",
+  "sourcePath": "skills/show-me-your-work/references/decision-log-template.tsv",
+  "retainedOwner": "docs/parity/adaptations/show-me-your-work.json",
+  "retainedOwnerCommit": "13556bbdc1de51233f7135920147557d418cc399",
+  "retainedRow": {
+    "upstreamPath": "skills/show-me-your-work/references/decision-log-template.tsv",
+    "upstreamCommit": "df581122cde17e6e27686b5a448bde23e4ad4318",
+    "upstreamSha256": "6779378006a2f5225e8c06deb84f1d913fb532041ebbb6e50d94600bfe3f4b76",
+    "destinationPath": "skills/show-me-your-work/references/decision-log-template.tsv",
+    "disposition": "runtime",
+    "rationale": "Preserve the canonical six-column TSV header byte-for-byte.",
+    "dependencies": [],
+    "licenseProvenance": {
+      "license": "MIT",
+      "copyright": "Copyright (c) 2026 Lauren Tan",
+      "sourcePath": "LICENSE"
+    },
+    "adaptationStatus": "unchanged-reviewed",
+    "verification": {
+      "chatgpt": {
+        "status": "not-run",
+        "evidence": []
+      },
+      "codex": {
+        "status": "not-run",
+        "evidence": []
+      }
+    }
+  },
+  "formerDuplicateOwner": "docs/parity/adaptations/16-decision-log.json",
+  "formerDuplicateCommit": "37b68c8e842b275f310ead112c0ecb7fa0ade308",
+  "removedRow": {
+    "upstreamPath": "skills/show-me-your-work/references/decision-log-template.tsv",
+    "upstreamCommit": "df581122cde17e6e27686b5a448bde23e4ad4318",
+    "upstreamSha256": "6779378006a2f5225e8c06deb84f1d913fb532041ebbb6e50d94600bfe3f4b76",
+    "destinationPath": "skills/show-me-your-work/references/decision-log-template.tsv",
+    "disposition": "runtime",
+    "rationale": "Task 16 reconfirms the canonical six-column TSV template unchanged. Task 11 provenance remains in show-me-your-work.json.",
+    "dependencies": [],
+    "licenseProvenance": {
+      "license": "MIT",
+      "copyright": "Copyright (c) 2026 Lauren Tan",
+      "sourcePath": "LICENSE"
+    },
+    "adaptationStatus": "unchanged-reviewed",
+    "verification": {
+      "chatgpt": {
+        "status": "not-run",
+        "evidence": []
+      },
+      "codex": {
+        "status": "not-run",
+        "evidence": []
+      }
+    }
+  },
+  "beforeSha256": "a796a1c589fc90e602115dd4f8bdafe716b66ca649918ab6d03dd16ad2071c84",
+  "afterSha256": "a949086b64a20419a4e93918c0d6918b684b5fd90d32791d237370e9269846dc",
+  "rationale": "Both independently reviewed rows refer to identical canonical bytes, source identity, destination, disposition, dependencies, license and host status. Only their descriptive rationale differs. Keep the original current owner and remove the later reconfirmation row; preserve both rows and their Git history here. No runtime file changed.",
+  "reviewArtifacts": [
+    {
+      "path": ".superpowers/sdd/2026-10-07-pstack-openai/task-11-show-me-your-work-review.md",
+      "sha256": "4291110e5c8c99bef73f344c8eefa85289ebf57866972270191b583be8ad30bc"
+    },
+    {
+      "path": ".superpowers/sdd/2026-10-07-pstack-openai/task-16-review.md",
+      "sha256": "ccf41b82ddfa85bd44c1d79c9667203a0796605a5d312cb8688e4f0924da28f5"
+    }
+  ]
+}

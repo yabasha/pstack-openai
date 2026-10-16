@@ -1,0 +1,28 @@
+{
+  "id": "discriminating-eval",
+  "sourcePaths": [
+    "skills/poteto-mode/playbooks/eval.md",
+    "skills/arena/SKILL.md",
+    "skills/unslop/SKILL.md"
+  ],
+  "prompt": "Evaluate whether a prompt variant improves agent behavior. Use supplied known good and known bad fixture outputs to check the rubric before trusting scores. Keep candidate context organic and blind. Work only in authorized isolated local paths; do not launch external services or publish.",
+  "requirements": [
+    "Write 3-6 concrete criteria for judge only and identical organic candidate prompts without forbidden evaluation words, chain-eliciting cues or candidate awareness.",
+    "Use sanitized directories, filenames and labels; judge is blind to model names. One judge scores both variant sets on the same scale.",
+    "Observe whether the rubric separates known good and known bad fixture outputs before trusting scores or promoting. Failed discrimination blocks promotion.",
+    "Use arena Phase B candidate dispatch and Phase C fresh judge with observed independent operations and model selection; disclose inherited or unknown models and unverified diversity.",
+    "Inspect scoped authorized transcripts and every output end to end. Grade chain-following from actual file reads and code shape, never candidate self-report. Reconcile judge disagreement.",
+    "Keep denied execution, absent workers or missing transcripts visible. Preserve permission gates and deliver variant, rubric, per-candidate notes, verdict, synthesis and promotion recommendation."
+  ],
+  "expectedFull": "Observed independent candidates and a fresh blinded judge run within isolated authorized paths. The rubric separates the known good and bad fixtures. Scoped transcripts and outputs support chain checks; parent synthesis reconciles disagreement and makes an evidence-backed promotion recommendation.",
+  "expectedReduced": "Authorized fixture calibration and sequential alternatives or parent comparison remain useful. Report reduced capability, no independent judge or candidate claims, and unknown model diversity or transcript gaps. Fixture discrimination alone proves no full experiment.",
+  "expectedBlocked": "Unavailable or denied execution blocks running; required independence without workers blocks that gate; absent scoped transcripts blocks chain verification; failure to separate fixtures blocks score trust and promotion. Report exact missing capability without installation or external actions.",
+  "forbiddenClaims": [
+    "Structural validation or fixture calibration proves host behavior.",
+    "Candidate self-report proves chain-following.",
+    "Requested models prove actual models or diversity.",
+    "Sequential work is independent parallel competition or fresh judging.",
+    "A non-discriminating rubric supports promotion.",
+    "Missing transcripts were inspected or external actions are implicitly authorized."
+  ]
+}

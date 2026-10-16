@@ -1,0 +1,38 @@
+[
+  {
+    "upstreamPath": "skills/no-comments/SKILL.md",
+    "upstreamCommit": "df581122cde17e6e27686b5a448bde23e4ad4318",
+    "upstreamSha256": "5c5b0882297d704c3a9720c52b7a793c68b013eaf717989f0945624efdfe2b05",
+    "destinationPath": "skills/no-comments/SKILL.md",
+    "disposition": "runtime",
+    "rationale": "Preserve the full canonical workflow, metadata and invocation aliases. Replace the source Task/custom-agent binding with discovered independent-worker tools and the portable Comment Sicko role. Keep authorized comment deletion, coordinator fixes, all review and exception rules, encoding approval and full report output. Label sequential review reduced; denied writes permit authorized proposals with zero actual deletions or block required edits. Missing investigative evidence stays explicit. Host behavior remains not-run.",
+    "dependencies": [
+      "references/agent-prompts/comment-sicko.md",
+      "references/host-capabilities.md",
+      "references/model-roles.md",
+      "references/orchestration-contract.md",
+      "references/workflow-ownership.md",
+      "skills/how/SKILL.md",
+      "skills/why/SKILL.md",
+      "skills/architect/SKILL.md",
+      "skills/principle-fix-root-causes/SKILL.md",
+      "skills/principle-redesign-from-first-principles/SKILL.md"
+    ],
+    "licenseProvenance": {
+      "license": "MIT",
+      "copyright": "Copyright (c) 2026 Lauren Tan",
+      "sourcePath": "LICENSE"
+    },
+    "adaptationStatus": "adapted-reviewed",
+    "verification": {
+      "chatgpt": {
+        "status": "not-run",
+        "evidence": []
+      },
+      "codex": {
+        "status": "not-run",
+        "evidence": []
+      }
+    }
+  }
+]

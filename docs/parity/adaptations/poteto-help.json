@@ -1,0 +1,125 @@
+[
+  {
+    "upstreamPath": "skills/poteto-help/SKILL.md",
+    "upstreamCommit": "df581122cde17e6e27686b5a448bde23e4ad4318",
+    "upstreamSha256": "ea71bcb15c023a5d9cc70686e4812144687ffe03bf80d85cc480af3e0b181d1e",
+    "destinationPath": "skills/poteto-help/SKILL.md",
+    "disposition": "runtime",
+    "rationale": "Preserve the complete help routing, metadata, source invocation aliases, prompting advice and recipes. Bind source-host setup, persistence, models, workers and loop behavior to observed portable capabilities and explicit authorization. Pending local destinations remain visible. Explain source customization options before baseline acceptance, but gate acting on personal-mode drafting and custom skill edits on complete reviewed baseline dispositions and per-host supported-behavior evidence or explicit blocks, independently of authorization.",
+    "dependencies": [
+      "skills/poteto-mode/SKILL.md",
+      "references/host-capabilities.md",
+      "references/model-roles.md",
+      "skills/setup-pstack/SKILL.md",
+      "README.md",
+      "docs/guide/01-setup.md",
+      "skills/poteto-help/references/prompting.md",
+      "docs/guide/02-poteto-mode.md",
+      "references/agent-prompts/poteto-agent.md",
+      "references/orchestration-contract.md",
+      "skills/how/SKILL.md",
+      "skills/why/SKILL.md",
+      "skills/teach/SKILL.md",
+      "skills/recall/SKILL.md",
+      "skills/blast-radius/SKILL.md",
+      "skills/architect/SKILL.md",
+      "skills/arena/SKILL.md",
+      "skills/swarm/SKILL.md",
+      "skills/interrogate/SKILL.md",
+      "skills/tdd/SKILL.md",
+      "skills/typescript-best-practices/SKILL.md",
+      "skills/no-comments/SKILL.md",
+      "skills/unslop/SKILL.md",
+      "skills/technical-writing/SKILL.md",
+      "skills/bro/SKILL.md",
+      "skills/create-verification-skill/SKILL.md",
+      "skills/maintain-verification-skill/SKILL.md",
+      "skills/benchmark-checklist/SKILL.md",
+      "skills/figure-it-out/SKILL.md",
+      "skills/show-me-your-work/SKILL.md",
+      "skills/automate-me/SKILL.md",
+      "skills/reflect/SKILL.md",
+      "skills/correct/SKILL.md",
+      "skills/make-bot-ui/SKILL.md",
+      "docs/guide/06-verify-and-ship.md",
+      "skills/poteto-mode/playbooks/multi-phase-plan.md",
+      "docs/guide/08-principles.md",
+      "docs/guide/07-overnight.md",
+      "docs/guide/10-recipes-and-pitfalls.md",
+      "docs/guide/09-make-it-yours.md",
+      "skills/poteto-help/references/recipes.md"
+    ],
+    "licenseProvenance": {
+      "license": "MIT",
+      "copyright": "Copyright (c) 2026 Lauren Tan",
+      "sourcePath": "LICENSE"
+    },
+    "adaptationStatus": "adapted-reviewed",
+    "verification": {
+      "chatgpt": {
+        "status": "not-run",
+        "evidence": []
+      },
+      "codex": {
+        "status": "not-run",
+        "evidence": []
+      }
+    }
+  },
+  {
+    "upstreamPath": "skills/poteto-help/references/prompting.md",
+    "upstreamCommit": "df581122cde17e6e27686b5a448bde23e4ad4318",
+    "upstreamSha256": "463f450c44a60afd001a2f69fdf8a5dea174351f339369b12ec3c41515e564d3",
+    "destinationPath": "skills/poteto-help/references/prompting.md",
+    "disposition": "runtime",
+    "rationale": "Preserve the complete help routing, metadata, source invocation aliases, prompting advice and recipes. Bind source-host setup, persistence, models, workers and loop behavior to observed portable capabilities and explicit authorization. Pending local destinations remain visible. Explain source customization options before baseline acceptance, but gate acting on personal-mode drafting and custom skill edits on complete reviewed baseline dispositions and per-host supported-behavior evidence or explicit blocks, independently of authorization.",
+    "dependencies": [
+      "references/host-capabilities.md",
+      "references/workflow-ownership.md"
+    ],
+    "licenseProvenance": {
+      "license": "MIT",
+      "copyright": "Copyright (c) 2026 Lauren Tan",
+      "sourcePath": "LICENSE"
+    },
+    "adaptationStatus": "adapted-reviewed",
+    "verification": {
+      "chatgpt": {
+        "status": "not-run",
+        "evidence": []
+      },
+      "codex": {
+        "status": "not-run",
+        "evidence": []
+      }
+    }
+  },
+  {
+    "upstreamPath": "skills/poteto-help/references/recipes.md",
+    "upstreamCommit": "df581122cde17e6e27686b5a448bde23e4ad4318",
+    "upstreamSha256": "1872323419a3e5c7783b1933f7a180ca26c25a6e1f4ec83bd65e091ebbfb812b",
+    "destinationPath": "skills/poteto-help/references/recipes.md",
+    "disposition": "runtime",
+    "rationale": "Preserve the complete help routing, metadata, source invocation aliases, prompting advice and recipes. Bind source-host setup, persistence, models, workers and loop behavior to observed portable capabilities and explicit authorization. Pending local destinations remain visible. Explain source customization options before baseline acceptance, but gate acting on personal-mode drafting and custom skill edits on complete reviewed baseline dispositions and per-host supported-behavior evidence or explicit blocks, independently of authorization.",
+    "dependencies": [
+      "references/host-capabilities.md",
+      "references/workflow-ownership.md"
+    ],
+    "licenseProvenance": {
+      "license": "MIT",
+      "copyright": "Copyright (c) 2026 Lauren Tan",
+      "sourcePath": "LICENSE"
+    },
+    "adaptationStatus": "adapted-reviewed",
+    "verification": {
+      "chatgpt": {
+        "status": "not-run",
+        "evidence": []
+      },
+      "codex": {
+        "status": "not-run",
+        "evidence": []
+      }
+    }
+  }
+]

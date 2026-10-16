@@ -1,0 +1,63 @@
+{
+  "name": "why",
+  "kind": "workflow",
+  "purpose": "Investigate historical motivation, design rationale, regressions, postmortems and data-backed thresholds with cited confidence tiers.",
+  "triggers": [
+    "why does X work this way",
+    "why we picked Y",
+    "Design rationale, regressions, postmortems or threshold origins"
+  ],
+  "inputs": [
+    "Question and code target",
+    "Files, symbols, commits, PRs and ticket leads",
+    "Available authorized source reads and worker capabilities"
+  ],
+  "outputs": [
+    "The Question, The Code in Question, What We Found, What We Can Reasonably Infer, Competing Hypotheses, What We Don’t Know, Sources Consulted, Confidence Summary",
+    "Seven-category coverage, exact queries, citations, contradictions and explicit gaps",
+    "Preserve / Change / Avoid / Risk constraints when a code change is contemplated"
+  ],
+  "ordinaryExample": "Trace a retry threshold through git history, PR discussion, a linked ticket and release telemetry, separating stated rationale from correlation.",
+  "dependencies": [
+    "skills/why/references/investigator-prompt.md",
+    "skills/why/references/epistemics.md",
+    "skills/why/references/sources/incident-postmortem.md",
+    "skills/why/references/sources/slack.md",
+    "skills/why/references/sources/datadog.md",
+    "skills/why/references/sources/notion.md",
+    "skills/why/references/sources/databricks.md",
+    "skills/why/references/sources/sentry.md",
+    "skills/why/references/sources/linear.md",
+    "skills/why/references/sources/code-archaeology.md",
+    "skills/why/references/synthesizer-prompt.md",
+    "skills/why/references/source-playbook.md",
+    "references/host-capabilities.md",
+    "references/model-roles.md",
+    "references/orchestration-contract.md"
+  ],
+  "capabilityLimits": [
+    "Missing connectors and authenticated PR reads remain explicit gaps.",
+    "Unavailable independent workers require disclosed sequential reduced capability.",
+    "Read-only investigation preserves private-record visibility and requires separate authorization for external writes.",
+    "Invocation metadata is preserved without assuming host enforcement.",
+    "Host behavior has not been tested."
+  ],
+  "sourcePaths": [
+    "skills/why/references/investigator-prompt.md",
+    "skills/why/references/epistemics.md",
+    "skills/why/references/sources/incident-postmortem.md",
+    "skills/why/references/sources/slack.md",
+    "skills/why/references/sources/datadog.md",
+    "skills/why/references/sources/notion.md",
+    "skills/why/references/sources/databricks.md",
+    "skills/why/references/sources/sentry.md",
+    "skills/why/references/sources/linear.md",
+    "skills/why/references/sources/code-archaeology.md",
+    "skills/why/references/synthesizer-prompt.md",
+    "skills/why/references/source-playbook.md",
+    "skills/why/SKILL.md"
+  ],
+  "caseIds": [
+    "history-evidence"
+  ]
+}

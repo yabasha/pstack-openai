@@ -1,0 +1,60 @@
+[
+  {
+    "upstreamPath": "skills/typescript-best-practices/SKILL.md",
+    "upstreamCommit": "df581122cde17e6e27686b5a448bde23e4ad4318",
+    "upstreamSha256": "28f9e61710e205f6f3c5476f333483cff0e988f6a5b639e2faad536344b40c5e",
+    "destinationPath": "skills/typescript-best-practices/SKILL.md",
+    "disposition": "runtime",
+    "rationale": "Preserve complete canonical metadata, rules, examples reference and prerequisite principles. Add session read, write and execution boundaries with explicit partial, unsaved and unperformed outcomes. No source typing practice changes.",
+    "dependencies": [
+      "skills/typescript-best-practices/references/patterns.md",
+      "skills/principle-type-system-discipline/SKILL.md",
+      "skills/principle-boundary-discipline/SKILL.md",
+      "references/host-capabilities.md"
+    ],
+    "licenseProvenance": {
+      "license": "MIT",
+      "copyright": "Copyright (c) 2026 Lauren Tan",
+      "sourcePath": "LICENSE"
+    },
+    "adaptationStatus": "adapted-reviewed",
+    "verification": {
+      "chatgpt": {
+        "status": "not-run",
+        "evidence": []
+      },
+      "codex": {
+        "status": "not-run",
+        "evidence": []
+      }
+    }
+  },
+  {
+    "upstreamPath": "skills/typescript-best-practices/references/patterns.md",
+    "upstreamCommit": "df581122cde17e6e27686b5a448bde23e4ad4318",
+    "upstreamSha256": "faa1362055374452efccac1b629677c61acfb0bcc6c4e3311836b5715638ee18",
+    "destinationPath": "skills/typescript-best-practices/references/patterns.md",
+    "disposition": "runtime",
+    "rationale": "Retain the complete canonical TypeScript patterns reference byte-for-byte, including all concrete examples and exceptions, for the typed-boundary caller.",
+    "dependencies": [
+      "skills/principle-type-system-discipline/SKILL.md",
+      "skills/principle-boundary-discipline/SKILL.md"
+    ],
+    "licenseProvenance": {
+      "license": "MIT",
+      "copyright": "Copyright (c) 2026 Lauren Tan",
+      "sourcePath": "LICENSE"
+    },
+    "adaptationStatus": "unchanged-reviewed",
+    "verification": {
+      "chatgpt": {
+        "status": "not-run",
+        "evidence": []
+      },
+      "codex": {
+        "status": "not-run",
+        "evidence": []
+      }
+    }
+  }
+]

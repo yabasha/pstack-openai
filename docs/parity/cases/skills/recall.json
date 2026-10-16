@@ -1,0 +1,27 @@
+{
+  "id": "scoped-history",
+  "sourcePaths": [
+    "skills/recall/SKILL.md"
+  ],
+  "prompt": "Recall my work on the cache subsystem in the active workspace over the last seven days. I supply a complete state capsule with paths, branch and change. Check current state independently. Repeat without the capsule, with three relevant chats, a shipped then reverted fix, unavailable error tracking, and one current PR status that contradicts history. Also distinguish a partial capsule, a single-session pickup, pure activity recall and an explicit all-history request.",
+  "requirements": [
+    "Authorized scoped history and shared-record reads",
+    "Independent workers for parallel mining when exposed and authorized",
+    "Independent live file, git, PR and ticket state reads"
+  ],
+  "expectedFull": "State topic, workspace and exact time range before search; default recent to seven days and preserve explicit all. A complete supplied capsule skips mining, but named-target shared-record sweep and independent current-state checks still apply. A partial capsule cannot justify skipping needed history. For three chats, partition parallel investigators by real modification time, match topic and relevant regions, exclude current and noisy chats, return each chat schema with UUID citations and keep raw transcripts out of the parent. Sweep named targets through why source investigators concurrently, distinguish unavailable from searched-empty sources, and inspect full transcripts when actual agent actions matter. Report capsule of at most five bullets, every thread with one exact permitted status tag, at most five recurring problems including reverted fixes, and one concrete next move. Route one prior session to session-pickup, habits to automate-me and human-readable work summaries separately. Pure activity recall skips the shared-record sweep.",
+  "expectedReduced": "When independent workers are unavailable, use authorized sequential scoped history and source passes and disclose reduced capability. A complete capsule still avoids mining. Missing history or live access remains explicit; historical claims do not establish current status. Cite retrieved UUIDs or observed host record identifiers and shared sources, preserve output caps, private visibility and exact status tags without inventing verification.",
+  "expectedBlocked": "Denied or unavailable required history, shared source or live reads block the affected conclusion. Report gaps and what the supplied capsule supports, without claiming mined history, checked current state, independence or a completed thread. An unknown status cannot receive an invented done tag.",
+  "forbiddenClaims": [
+    "A complete capsule proves current state or permits skipping a named-target shared-record sweep",
+    "A partial capsule is complete",
+    "Sequential passes are independent parallel workers",
+    "Unavailable sources are searched-empty results",
+    "Transcript UUID ordering proves recency",
+    "History proves a PR remains open or merged today",
+    "All history silently means recent N",
+    "Other-workspace history access without authorization",
+    "Requested models prove observed models",
+    "Missing evidence warrants verified uncommitted or merged status"
+  ]
+}

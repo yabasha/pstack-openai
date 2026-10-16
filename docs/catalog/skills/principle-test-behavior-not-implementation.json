@@ -1,0 +1,31 @@
+{
+  "name": "principle-test-behavior-not-implementation",
+  "kind": "principle",
+  "purpose": "Keep tests that observe user-visible behavior and catch defects instead of asserting implementation details.",
+  "triggers": [
+    "When writing, changing or keeping a test"
+  ],
+  "inputs": [
+    "Test code, subject code and observable results",
+    "Available file access, test execution and permissions"
+  ],
+  "outputs": [
+    "Concrete-input assertions against literal output or observable effects",
+    "Rewritten or deleted weak tests, with table relation and compile-time checks retained"
+  ],
+  "ordinaryExample": "Call slugify with Hello, World! and assert hello-world; confirm that an empty function fails the assertion when execution is available.",
+  "dependencies": [
+    "references/host-capabilities.md"
+  ],
+  "capabilityLimits": [
+    "Missing execution leaves the proposed empty-function check unverified.",
+    "Preserve disable-model-invocation metadata without assuming host enforcement.",
+    "Host behavior has not been tested."
+  ],
+  "sourcePaths": [
+    "skills/principle-test-behavior-not-implementation/SKILL.md"
+  ],
+  "caseIds": [
+    "empty-function"
+  ]
+}

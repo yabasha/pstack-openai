@@ -1,0 +1,47 @@
+{
+  "caseId": "accessible-trace",
+  "packageVersion": "0.1.0",
+  "packageCommit": "5d05ab2458f4cd73c44b24265a3a1920b98b8cf4",
+  "host": "chatgpt",
+  "hostMode": "personal ChatGPT not accessed; host mode unobserved",
+  "date": "2026-10-08",
+  "input": "Diagnose a fixture process with idle CPU spin, a leak or a visual glitch using matching accessible runtime telemetry. Retain a CPU profile, heap snapshot or CDP trace and map the reduced finding to fixture source. Exercise authorized live diagnostic instrumentation separately from read-only permission. Repeat with supplied telemetry only, an inaccessible artifact, absent controls, denied live mutation and unavailable workers. Use inert fixtures, no external writes or installation, and return a cited diagnosis without a fix.",
+  "observedOutput": "Not attempted. Inherited prerequisite block from package-discovery. No documented supported local plugin loading route is established for this personal ChatGPT context. No actual personal ChatGPT session or installed copy was accessed. No separate human authorization exists for loading, installation, enabling, settings changes or fresh host setup. Personal-host tool probing was not attempted. Current controller filesystem and tools are not personal ChatGPT tools.",
+  "status": "blocked",
+  "execution": "unavailable",
+  "sourcePaths": [
+    "skills/poteto-mode/playbooks/runtime-forensics.md",
+    "skills/poteto-mode/SKILL.md",
+    "agents/poteto-agent.md",
+    "skills/principle-guard-the-context-window/SKILL.md",
+    "skills/poteto-mode/playbooks/bug-fix.md",
+    "skills/poteto-mode/playbooks/perf-issue.md"
+  ],
+  "documentedCapabilities": [
+    "docs/setup/chatgpt.md leaves the personal loading route unsupported here; supplied source is reduced capability guidance only.",
+    "references/host-capabilities.md requires actual exposed and successful bindings."
+  ],
+  "exposedTools": [],
+  "artifacts": [
+    "docs/parity/evidence/chatgpt/authorization-support-check.md"
+  ],
+  "limits": [
+    "No documented supported local plugin loading route is established for this personal ChatGPT context. No actual personal ChatGPT session or installed copy was accessed. No separate human authorization exists for loading, installation, enabling, settings changes or fresh host setup. Personal-host tool probing was not attempted. Current controller filesystem and tools are not personal ChatGPT tools.",
+    "This case input was not submitted to personal ChatGPT; no model result or expected behavioral output was observed.",
+    "Full and reduced capability are not observed. Runtime cases were not run.",
+    "Exact installed-copy identity, all 51 root names and three canonical nested Benny exclusions remain unobserved.",
+    "No history access, privacy behavior, worker lifecycle, model choice, persistence, integration or negative runtime condition was exercised.",
+    "Local evidence validation checks accounting only. Codex capabilities and results do not transfer to ChatGPT."
+  ],
+  "priorActionIdentities": [],
+  "permissions": {
+    "execution": "unavailable",
+    "writes": "unknown",
+    "externalActions": "unknown"
+  },
+  "models": {
+    "requested": "unknown",
+    "actual": "unknown"
+  },
+  "successfulOperations": []
+}

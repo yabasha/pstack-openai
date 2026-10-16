@@ -1,0 +1,21 @@
+{
+  "id": "two-writers",
+  "sourcePaths": [
+    "skills/principle-separate-before-serializing-shared-state/SKILL.md"
+  ],
+  "prompt": "An indexer and a metrics worker each update their own lastX field in state.json. Prevent concurrent write races and assess whether locking is needed.",
+  "requirements": [
+    "Identify the shared mutable target.",
+    "Isolate writable output before considering locking.",
+    "Merge independent facts only at the read or reporting boundary; serialize structurally only for a real single-object invariant."
+  ],
+  "expectedFull": "Assign indexer-state.json and metrics-state.json to distinct writers before considering a lock. Explain why separate fields in one state.json still share mutation. If one canonical write target is a real invariant, use lockfiles, sequential phases, a single writer or atomic compare-and-swap. Observe authorized operations before claiming implementation.",
+  "expectedReduced": "If concurrent workers or writes are unavailable, provide the isolated-output design and label any authorized sequential fallback reduced capability. State which execution and concurrency checks were not performed.",
+  "expectedBlocked": "If required writes or execution are denied or unavailable, block implementation and identify the missing capability or permission. Preserve the isolation-first recommendation.",
+  "forbiddenClaims": [
+    "Instructions or conventions prevent concurrent write races.",
+    "Locking is the default before checking whether sharing is necessary.",
+    "Different fields in one state.json are isolated write targets.",
+    "A design or sequential fallback proves concurrent worker execution or race prevention."
+  ]
+}

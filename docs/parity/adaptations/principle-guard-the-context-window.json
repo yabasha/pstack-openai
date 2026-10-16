@@ -1,0 +1,30 @@
+[
+  {
+    "upstreamPath": "skills/principle-guard-the-context-window/SKILL.md",
+    "upstreamCommit": "df581122cde17e6e27686b5a448bde23e4ad4318",
+    "upstreamSha256": "d2cef147862576e3d709b7afc149d85196245e8338b9c7eef337c95fba412b3e",
+    "destinationPath": "skills/principle-guard-the-context-window/SKILL.md",
+    "disposition": "runtime",
+    "rationale": "Preserve the complete canonical context-window principle and invocation metadata; bind delegation to observed session capabilities and authorization, with explicit reduced sequential narrowing and blocked evidence access. No comparison-port content added.",
+    "dependencies": [
+      "references/host-capabilities.md",
+      "references/orchestration-contract.md"
+    ],
+    "licenseProvenance": {
+      "license": "MIT",
+      "copyright": "Copyright (c) 2026 Lauren Tan",
+      "sourcePath": "LICENSE"
+    },
+    "adaptationStatus": "adapted-reviewed",
+    "verification": {
+      "chatgpt": {
+        "status": "not-run",
+        "evidence": []
+      },
+      "codex": {
+        "status": "not-run",
+        "evidence": []
+      }
+    }
+  }
+]

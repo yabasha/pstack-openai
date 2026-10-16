@@ -1,0 +1,33 @@
+{
+  "name": "tdd",
+  "kind": "skill",
+  "purpose": "Make broken behavior executable before fixing a bug with a clear cheap test path, then prove the focused regression test passes.",
+  "triggers": [
+    "User explicitly asks for TDD, a failing test, or a regression test.",
+    "A bug has an obvious cheap local test target; skip unclear, expensive, integration-heavy or unrequested test paths."
+  ],
+  "inputs": [
+    "Intended and current bug behavior, affected code path, smallest reproduction, and available tests.",
+    "Session file/write/execution capabilities and authorization."
+  ],
+  "outputs": [
+    "Focused regression test and smallest production fix when practical.",
+    "Evidence report naming failing-before and passing-after checks, failure output, nearby validation, or why failure evidence could not be demonstrated."
+  ],
+  "ordinaryExample": "For an incorrect empty-input result with an existing local unit test, add the intended-behavior assertion, run it and observe the failure, fix the implementation, then run the same test and report the passing result.",
+  "dependencies": [
+    "references/host-capabilities.md"
+  ],
+  "capabilityLimits": [
+    "Unavailable or denied execution leaves the proposed red-green sequence unrun.",
+    "Impractical tests use the closest useful regression check; do not force broad setup or brittle mocks.",
+    "Preserve disable-model-invocation metadata without assuming host enforcement.",
+    "Host behavior has not been tested."
+  ],
+  "sourcePaths": [
+    "skills/tdd/SKILL.md"
+  ],
+  "caseIds": [
+    "red-green"
+  ]
+}

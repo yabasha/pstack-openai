@@ -1,0 +1,78 @@
+{
+  "name": "poteto-help",
+  "kind": "skill",
+  "purpose": "Answer pstack setup and workflow questions with one usable prompt and its source.",
+  "triggers": [
+    "/poteto-help",
+    "A question about pstack setup, skills, playbooks, principles or run recovery"
+  ],
+  "inputs": [
+    "User question and conversation context",
+    "Selected local route and observed host capabilities"
+  ],
+  "outputs": [
+    "Direct answer",
+    "At most one example prompt and a source link",
+    "Explicit missing or pending capability and dependency limits"
+  ],
+  "ordinaryExample": "For a question about reproducing an app bug, read the Bug fix playbook, provide its reproduction and verification recipe, and disclose missing app verification support without starting work.",
+  "dependencies": [
+    "skills/poteto-mode/SKILL.md",
+    "references/host-capabilities.md",
+    "references/model-roles.md",
+    "skills/setup-pstack/SKILL.md",
+    "README.md",
+    "docs/guide/01-setup.md",
+    "skills/poteto-help/references/prompting.md",
+    "docs/guide/02-poteto-mode.md",
+    "references/agent-prompts/poteto-agent.md",
+    "references/orchestration-contract.md",
+    "skills/how/SKILL.md",
+    "skills/why/SKILL.md",
+    "skills/teach/SKILL.md",
+    "skills/recall/SKILL.md",
+    "skills/blast-radius/SKILL.md",
+    "skills/architect/SKILL.md",
+    "skills/arena/SKILL.md",
+    "skills/swarm/SKILL.md",
+    "skills/interrogate/SKILL.md",
+    "skills/tdd/SKILL.md",
+    "skills/typescript-best-practices/SKILL.md",
+    "skills/no-comments/SKILL.md",
+    "skills/unslop/SKILL.md",
+    "skills/technical-writing/SKILL.md",
+    "skills/bro/SKILL.md",
+    "skills/create-verification-skill/SKILL.md",
+    "skills/maintain-verification-skill/SKILL.md",
+    "skills/benchmark-checklist/SKILL.md",
+    "skills/figure-it-out/SKILL.md",
+    "skills/show-me-your-work/SKILL.md",
+    "skills/automate-me/SKILL.md",
+    "skills/reflect/SKILL.md",
+    "skills/correct/SKILL.md",
+    "skills/make-bot-ui/SKILL.md",
+    "docs/guide/06-verify-and-ship.md",
+    "skills/poteto-mode/playbooks/multi-phase-plan.md",
+    "docs/guide/08-principles.md",
+    "docs/guide/07-overnight.md",
+    "docs/guide/10-recipes-and-pitfalls.md",
+    "docs/guide/09-make-it-yours.md",
+    "skills/poteto-help/references/recipes.md"
+  ],
+  "capabilityLimits": [
+    "Pending playbooks require final integration review.",
+    "Cursor installation, modes, rule files and loop facilities do not register portable runtime behavior.",
+    "Workers, model panels, history and proof require observed support.",
+    "Help questions do not authorize execution.",
+    "Both hosts remain not-run.",
+    "Explain source customization options when asked, but do not act on personal-mode drafting or custom skill edits until every baseline inventory disposition is reviewed and each host has observed evidence for supported behavior or an explicit block. User authorization is a separate requirement and does not satisfy this baseline prerequisite."
+  ],
+  "sourcePaths": [
+    "skills/poteto-help/SKILL.md",
+    "skills/poteto-help/references/prompting.md",
+    "skills/poteto-help/references/recipes.md"
+  ],
+  "caseIds": [
+    "route-recipe"
+  ]
+}

@@ -1,0 +1,115 @@
+# how
+
+Generated from the reviewed catalog record. Regenerate with `python3 -B tools/build_catalog.py --root .`.
+
+Catalog record: [docs/catalog/skills/how.json](../catalog/skills/how.json).
+
+Skill: [skills/how/SKILL.md](../../skills/how/SKILL.md). Kind: workflow.
+
+## Purpose
+
+Explain subsystem architecture and runtime flow for a senior engineer using inspected code.
+
+## Triggers
+
+- how does X work
+- Code walkthrough before a change
+- Placement, ownership and layering questions
+
+## Required input
+
+- Question and codebase
+- Supplied execution path or subsystem scope
+- Available read-only worker and source tools
+
+## Output contract
+
+- Overview, Key Concepts, How It Works, Where Things Live and Gotchas as applicable
+- Actual files and functions, data flow, boundaries, diagrams when useful and explicit open questions
+
+## Ordinary example
+
+Trace an API request from its route through its service calls and storage layer, citing the files read.
+
+The linked cases define acceptance observations. Their prompts and expected results are not execution evidence.
+
+### Case [trace-path](../parity/cases/skills/how.json)
+
+Explain how a supplied request execution path works, from entry point through its downstream calls. Cite actual files and disclose whether explorers ran independently.
+
+Full capability expectation:
+
+Choose the simple or complex path. Complex work uses 2 to 4 distinct read-only explorers and one explainer; simple work uses one read-only explainer. Cite actual read files, functions, data flow and relevant line numbers; reconcile conflicting findings against code and retain open questions.
+
+Reduced capability expectation:
+
+When workers are absent, disclose reduced capability and sequential exploration. Apply the same explorer and explainer roles in sequence, cite actual files along the supplied path, and retain unknown links without claiming independent workers.
+
+Blocked capability expectation:
+
+When required source cannot be read or permission is denied, identify the unavailable path and explain the resulting gap without inventing execution flow.
+
+Required observations:
+
+- Readable supplied codebase and execution path
+- Observed worker operations for independent exploration and synthesis
+
+Forbidden claims:
+
+- Independent explorers without observed spawn and result inspection
+- Runtime behavior inferred only from names
+- Actual model selection or host pass without evidence
+- Complete flow when source links remain untraced
+
+## Dependencies
+
+- [skills/how/references/explorer-prompt.md](../../skills/how/references/explorer-prompt.md)
+- [skills/how/references/explainer-prompt.md](../../skills/how/references/explainer-prompt.md)
+- [references/host-capabilities.md](../../references/host-capabilities.md)
+- [references/model-roles.md](../../references/model-roles.md)
+- [references/orchestration-contract.md](../../references/orchestration-contract.md)
+
+## Host limits
+
+- Absent workers require disclosed sequential exploration with reduced capability.
+- Unavailable source leaves explicit gaps.
+- Model selection follows observed session support; source-host defaults are not portable.
+- Invocation metadata is preserved without claiming host enforcement.
+- Host behavior has not been tested.
+
+## Source proof and release evidence
+
+The following statuses come from the current parity inventory. Pending aggregate review remains pending. Structural catalog checks do not establish host support.
+
+### `skills/how/SKILL.md`
+
+Destination: [skills/how/SKILL.md](../../skills/how/SKILL.md).
+
+Upstream commit: `df581122cde17e6e27686b5a448bde23e4ad4318`. SHA-256: `7e0d902484a90eba73dcf518bff478dc5b962b456d23c3d0a188c2ce36b236d8`.
+
+Disposition: `runtime`. Aggregate adaptation status: `adapted-reviewed`.
+
+- chatgpt: `blocked`. Tested release evidence: [docs/parity/evidence/chatgpt/bounded-improvement.json](../parity/evidence/chatgpt/bounded-improvement.json), [docs/parity/evidence/chatgpt/comparable-revisions.json](../parity/evidence/chatgpt/comparable-revisions.json), [docs/parity/evidence/chatgpt/package-discovery.json](../parity/evidence/chatgpt/package-discovery.json), [docs/parity/evidence/chatgpt/preserved-behavior.json](../parity/evidence/chatgpt/preserved-behavior.json), [docs/parity/evidence/chatgpt/read-only-answer.json](../parity/evidence/chatgpt/read-only-answer.json), [docs/parity/evidence/chatgpt/reproduce-before-fix.json](../parity/evidence/chatgpt/reproduce-before-fix.json), [docs/parity/evidence/chatgpt/trace-path.json](../parity/evidence/chatgpt/trace-path.json), [docs/parity/evidence/chatgpt/units-and-proof.json](../parity/evidence/chatgpt/units-and-proof.json), [docs/parity/evidence/chatgpt/verifiable-feature.json](../parity/evidence/chatgpt/verifiable-feature.json).
+- codex: `blocked`. Tested release evidence: [docs/parity/evidence/codex/bounded-improvement.json](../parity/evidence/codex/bounded-improvement.json), [docs/parity/evidence/codex/comparable-revisions.json](../parity/evidence/codex/comparable-revisions.json), [docs/parity/evidence/codex/package-discovery.json](../parity/evidence/codex/package-discovery.json), [docs/parity/evidence/codex/preserved-behavior.json](../parity/evidence/codex/preserved-behavior.json), [docs/parity/evidence/codex/read-only-answer.json](../parity/evidence/codex/read-only-answer.json), [docs/parity/evidence/codex/reproduce-before-fix.json](../parity/evidence/codex/reproduce-before-fix.json), [docs/parity/evidence/codex/trace-path.json](../parity/evidence/codex/trace-path.json), [docs/parity/evidence/codex/units-and-proof.json](../parity/evidence/codex/units-and-proof.json), [docs/parity/evidence/codex/verifiable-feature.json](../parity/evidence/codex/verifiable-feature.json).
+
+### `skills/how/references/explainer-prompt.md`
+
+Destination: [skills/how/references/explainer-prompt.md](../../skills/how/references/explainer-prompt.md).
+
+Upstream commit: `df581122cde17e6e27686b5a448bde23e4ad4318`. SHA-256: `ddb89cebefc24e2b54517a331aedfe045b6971e101f45c71b8cef4cccff45bff`.
+
+Disposition: `runtime`. Aggregate adaptation status: `adapted-reviewed`.
+
+- chatgpt: `blocked`. Tested release evidence: [docs/parity/evidence/chatgpt/bounded-improvement.json](../parity/evidence/chatgpt/bounded-improvement.json), [docs/parity/evidence/chatgpt/comparable-revisions.json](../parity/evidence/chatgpt/comparable-revisions.json), [docs/parity/evidence/chatgpt/preserved-behavior.json](../parity/evidence/chatgpt/preserved-behavior.json), [docs/parity/evidence/chatgpt/read-only-answer.json](../parity/evidence/chatgpt/read-only-answer.json), [docs/parity/evidence/chatgpt/reproduce-before-fix.json](../parity/evidence/chatgpt/reproduce-before-fix.json), [docs/parity/evidence/chatgpt/trace-path.json](../parity/evidence/chatgpt/trace-path.json), [docs/parity/evidence/chatgpt/verifiable-feature.json](../parity/evidence/chatgpt/verifiable-feature.json).
+- codex: `blocked`. Tested release evidence: [docs/parity/evidence/codex/bounded-improvement.json](../parity/evidence/codex/bounded-improvement.json), [docs/parity/evidence/codex/comparable-revisions.json](../parity/evidence/codex/comparable-revisions.json), [docs/parity/evidence/codex/preserved-behavior.json](../parity/evidence/codex/preserved-behavior.json), [docs/parity/evidence/codex/read-only-answer.json](../parity/evidence/codex/read-only-answer.json), [docs/parity/evidence/codex/reproduce-before-fix.json](../parity/evidence/codex/reproduce-before-fix.json), [docs/parity/evidence/codex/trace-path.json](../parity/evidence/codex/trace-path.json), [docs/parity/evidence/codex/verifiable-feature.json](../parity/evidence/codex/verifiable-feature.json).
+
+### `skills/how/references/explorer-prompt.md`
+
+Destination: [skills/how/references/explorer-prompt.md](../../skills/how/references/explorer-prompt.md).
+
+Upstream commit: `df581122cde17e6e27686b5a448bde23e4ad4318`. SHA-256: `a3b44a6e5bb16a6d4d1cac19db8ed5322ffd5f5f5d45baca4e73990ca096f8be`.
+
+Disposition: `runtime`. Aggregate adaptation status: `adapted-reviewed`.
+
+- chatgpt: `blocked`. Tested release evidence: [docs/parity/evidence/chatgpt/bounded-improvement.json](../parity/evidence/chatgpt/bounded-improvement.json), [docs/parity/evidence/chatgpt/comparable-revisions.json](../parity/evidence/chatgpt/comparable-revisions.json), [docs/parity/evidence/chatgpt/preserved-behavior.json](../parity/evidence/chatgpt/preserved-behavior.json), [docs/parity/evidence/chatgpt/read-only-answer.json](../parity/evidence/chatgpt/read-only-answer.json), [docs/parity/evidence/chatgpt/reproduce-before-fix.json](../parity/evidence/chatgpt/reproduce-before-fix.json), [docs/parity/evidence/chatgpt/trace-path.json](../parity/evidence/chatgpt/trace-path.json), [docs/parity/evidence/chatgpt/verifiable-feature.json](../parity/evidence/chatgpt/verifiable-feature.json).
+- codex: `blocked`. Tested release evidence: [docs/parity/evidence/codex/bounded-improvement.json](../parity/evidence/codex/bounded-improvement.json), [docs/parity/evidence/codex/comparable-revisions.json](../parity/evidence/codex/comparable-revisions.json), [docs/parity/evidence/codex/preserved-behavior.json](../parity/evidence/codex/preserved-behavior.json), [docs/parity/evidence/codex/read-only-answer.json](../parity/evidence/codex/read-only-answer.json), [docs/parity/evidence/codex/reproduce-before-fix.json](../parity/evidence/codex/reproduce-before-fix.json), [docs/parity/evidence/codex/trace-path.json](../parity/evidence/codex/trace-path.json), [docs/parity/evidence/codex/verifiable-feature.json](../parity/evidence/codex/verifiable-feature.json).

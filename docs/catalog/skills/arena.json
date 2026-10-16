@@ -1,0 +1,45 @@
+{
+  "name": "arena",
+  "kind": "workflow",
+  "purpose": "Compare isolated attempts at the same artifact, pick a maintainable base, graft the strongest rejected-candidate ideas coherently and verify the synthesis.",
+  "triggers": [
+    "/arena",
+    "arena this",
+    "throw it in the arena",
+    "one attempt at a non-trivial artifact would lock in the wrong shape"
+  ],
+  "inputs": [
+    "Authorized artifact task and shared grounding",
+    "Parent-only 3-6 criterion rubric",
+    "Runner and cross-judge preferences, observed capabilities and isolated output paths"
+  ],
+  "outputs": [
+    "One synthesized artifact",
+    "Adjacent synthesis note with base, judge verdict, graft sources, rejections, dropouts and verification"
+  ],
+  "ordinaryExample": "Compare two cache API designs in isolated directories, judge completed candidates, select the cleaner boundary and adapt one useful idea from the other design.",
+  "dependencies": [
+    "references/host-capabilities.md",
+    "references/model-roles.md",
+    "references/orchestration-contract.md",
+    "references/workflow-ownership.md",
+    "skills/principle-separate-before-serializing-shared-state/SKILL.md",
+    "skills/principle-laziness-protocol/SKILL.md",
+    "skills/principle-redesign-from-first-principles/SKILL.md",
+    "skills/principle-prove-it-works/SKILL.md",
+    "skills/unslop/SKILL.md"
+  ],
+  "capabilityLimits": [
+    "Independent candidates and fresh judging require exposed authorized workers and inspected artifacts.",
+    "Sequential alternatives are reduced capability; one survivor is incomplete competition.",
+    "Requested models do not prove actual model diversity.",
+    "Required missing capabilities or denied writes block their gates.",
+    "Host behavior has not been tested."
+  ],
+  "sourcePaths": [
+    "skills/arena/SKILL.md"
+  ],
+  "caseIds": [
+    "candidate-cross-review"
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "id": "empty-function",
+  "sourcePaths": [
+    "skills/principle-test-behavior-not-implementation/SKILL.md"
+  ],
+  "prompt": "Review a slugify test that only checks its mock was called. Rewrite it to call slugify with Hello, World! and check its literal output. Replace slugify with a function that returns nothing and determine whether the test catches the defect. Also review absence-only assertions, self-referential expectations, constant pins and fixture-only assertions, while preserving table relation and compile-time checks.",
+  "requirements": [
+    "Call the subject inside the test body with concrete input and assert a literal observable output or effect.",
+    "The rewritten test fails when the function returns nothing.",
+    "For absence assertions, assert presence on another input in the same test; test the mechanism reading a constant instead of pinning it.",
+    "For mocks, assert the received payload or resulting state; delete tests without a meaningful behavior assertion.",
+    "Keep table relation tests and compile-time checks in *.test-d.ts files."
+  ],
+  "expectedFull": "With authorized test access and execution, rewrite the assertion as expect(slugify(\"Hello, World!\")).toBe(\"hello-world\"). Run it against the working subject and against an empty function; the empty function fails. Identify and repair or delete the five weak test shapes while preserving the stated exceptions.",
+  "expectedReduced": "If execution is unavailable, provide the rewritten test and explain why undefined differs from the literal expected output. State that the empty-function failure has not been observed.",
+  "expectedBlocked": "If the test or subject cannot be inspected, identify the missing access or permission and request the relevant code. Do not claim a rewrite or execution result.",
+  "forbiddenClaims": [
+    "Mock call counts alone prove user-visible behavior.",
+    "A test that still passes with an empty subject catches that defect.",
+    "Static review or a proposed assertion proves a test ran and failed.",
+    "Every table relation or compile-time test must be deleted."
+  ]
+}

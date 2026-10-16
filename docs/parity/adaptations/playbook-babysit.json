@@ -1,0 +1,42 @@
+[
+  {
+    "upstreamPath": "skills/poteto-mode/playbooks/babysit.md",
+    "upstreamCommit": "df581122cde17e6e27686b5a448bde23e4ad4318",
+    "upstreamSha256": "a0346c37c2313f36a863b80f66ee7b98059c2242adf74fc7b3e48abdb9ec6f5a",
+    "destinationPath": "skills/poteto-mode/playbooks/babysit.md",
+    "disposition": "runtime",
+    "rationale": "Preserves mode aliases, frontier order, frozen queue, triage and shipping boundary. Replaces host loop assumptions with observed capabilities and bounded polling, exact watcher revision pins, setup and action permission gates. Host behavior remains not-run.",
+    "dependencies": [
+      "skills/poteto-mode/playbooks/shipping.md",
+      "skills/poteto-mode/playbooks/autopilot-full.md",
+      "skills/poteto-mode/playbooks/autopilot-stack.md",
+      "skills/poteto-mode/references/bugbot-triage.md",
+      "skills/poteto-mode/scripts/watch-pr/watch-pr",
+      "skills/poteto-mode/scripts/watch-pr/cli.ts",
+      "skills/poteto-mode/scripts/watch-pr/policy.ts",
+      "skills/poteto-mode/scripts/watch-pr/types.ts",
+      "skills/poteto-mode/scripts/watch-pr/render.ts",
+      "skills/poteto-mode/scripts/watch-pr/github.ts",
+      "skills/poteto-mode/scripts/bootstrap.ts",
+      "references/host-capabilities.md",
+      "references/orchestration-contract.md",
+      "docs/testing/helper-setup.md"
+    ],
+    "licenseProvenance": {
+      "license": "MIT",
+      "copyright": "Copyright (c) 2026 Lauren Tan",
+      "sourcePath": "LICENSE"
+    },
+    "adaptationStatus": "adapted-reviewed",
+    "verification": {
+      "chatgpt": {
+        "status": "not-run",
+        "evidence": []
+      },
+      "codex": {
+        "status": "not-run",
+        "evidence": []
+      }
+    }
+  }
+]

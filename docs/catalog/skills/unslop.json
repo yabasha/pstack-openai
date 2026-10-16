@@ -1,0 +1,29 @@
+{
+  "name": "unslop",
+  "kind": "skill",
+  "purpose": "Remove AI writing patterns while preserving meaning and intended tone.",
+  "triggers": [
+    "Invoke unslop to edit prose; the source description says it must always apply."
+  ],
+  "inputs": [
+    "The actual text to rewrite.",
+    "The complete numbered pattern list."
+  ],
+  "outputs": [
+    "Rewritten text that preserves meaning and intended tone."
+  ],
+  "ordinaryExample": "Rewrite a supplied paragraph to remove chatbot praise, filler, jargon, and unnecessary passive voice without adding facts.",
+  "dependencies": [],
+  "capabilityLimits": [
+    "Missing text prevents a faithful rewrite; partial access limits scope.",
+    "Saving edits requires available file tools and user authorization; an in-chat rewrite needs no file tools.",
+    "Preserve disable-model-invocation metadata without assuming host enforcement.",
+    "Host behavior has not been tested."
+  ],
+  "sourcePaths": [
+    "skills/unslop/SKILL.md"
+  ],
+  "caseIds": [
+    "prose-rewrite"
+  ]
+}

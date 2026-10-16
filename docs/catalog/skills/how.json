@@ -1,0 +1,42 @@
+{
+  "name": "how",
+  "kind": "workflow",
+  "purpose": "Explain subsystem architecture and runtime flow for a senior engineer using inspected code.",
+  "triggers": [
+    "how does X work",
+    "Code walkthrough before a change",
+    "Placement, ownership and layering questions"
+  ],
+  "inputs": [
+    "Question and codebase",
+    "Supplied execution path or subsystem scope",
+    "Available read-only worker and source tools"
+  ],
+  "outputs": [
+    "Overview, Key Concepts, How It Works, Where Things Live and Gotchas as applicable",
+    "Actual files and functions, data flow, boundaries, diagrams when useful and explicit open questions"
+  ],
+  "ordinaryExample": "Trace an API request from its route through its service calls and storage layer, citing the files read.",
+  "dependencies": [
+    "skills/how/references/explorer-prompt.md",
+    "skills/how/references/explainer-prompt.md",
+    "references/host-capabilities.md",
+    "references/model-roles.md",
+    "references/orchestration-contract.md"
+  ],
+  "capabilityLimits": [
+    "Absent workers require disclosed sequential exploration with reduced capability.",
+    "Unavailable source leaves explicit gaps.",
+    "Model selection follows observed session support; source-host defaults are not portable.",
+    "Invocation metadata is preserved without claiming host enforcement.",
+    "Host behavior has not been tested."
+  ],
+  "sourcePaths": [
+    "skills/how/SKILL.md",
+    "skills/how/references/explainer-prompt.md",
+    "skills/how/references/explorer-prompt.md"
+  ],
+  "caseIds": [
+    "trace-path"
+  ]
+}

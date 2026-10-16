@@ -1,0 +1,11 @@
+# Dependency working copies and local operating-system data.
+node_modules/
+.DS_Store
+
+# Downloaded source archives and explicitly task-owned temporary data.
+/.upstream/
+/.bun-cache/
+/.task-tmp/
+/.superpowers/sdd/2026-10-07-pstack-openai/task-*-fixtures/
+
+# Preserve provenance, evidence and logs as reviewable package material.

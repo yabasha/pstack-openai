@@ -1,0 +1,37 @@
+[
+  {
+    "upstreamPath": "skills/arena/SKILL.md",
+    "upstreamCommit": "df581122cde17e6e27686b5a448bde23e4ad4318",
+    "upstreamSha256": "6e17736b5228b661569c3af054f8302c55cf9bf1649447652d53705cce38bed6",
+    "destinationPath": "skills/arena/SKILL.md",
+    "disposition": "runtime",
+    "rationale": "Preserve six arena phases, withheld 3-6 criterion rubric, isolated candidates and rationales, delayed fresh readonly cross-judge, parent selection, hand-adapted grafts and verification. Replace source-host runner defaults, worker flags and paths with observed authorized capabilities; record dropouts and incomplete one-survivor competition. Sequential alternatives remain reduced capability.",
+    "dependencies": [
+      "references/host-capabilities.md",
+      "references/model-roles.md",
+      "references/orchestration-contract.md",
+      "references/workflow-ownership.md",
+      "skills/principle-separate-before-serializing-shared-state/SKILL.md",
+      "skills/principle-laziness-protocol/SKILL.md",
+      "skills/principle-redesign-from-first-principles/SKILL.md",
+      "skills/principle-prove-it-works/SKILL.md",
+      "skills/unslop/SKILL.md"
+    ],
+    "licenseProvenance": {
+      "license": "MIT",
+      "copyright": "Copyright (c) 2026 Lauren Tan",
+      "sourcePath": "LICENSE"
+    },
+    "adaptationStatus": "adapted-reviewed",
+    "verification": {
+      "chatgpt": {
+        "status": "not-run",
+        "evidence": []
+      },
+      "codex": {
+        "status": "not-run",
+        "evidence": []
+      }
+    }
+  }
+]

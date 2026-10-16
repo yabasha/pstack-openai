@@ -1,0 +1,22 @@
+{
+  "id": "trace-path",
+  "sourcePaths": [
+    "skills/how/SKILL.md",
+    "skills/how/references/explorer-prompt.md",
+    "skills/how/references/explainer-prompt.md"
+  ],
+  "prompt": "Explain how a supplied request execution path works, from entry point through its downstream calls. Cite actual files and disclose whether explorers ran independently.",
+  "requirements": [
+    "Readable supplied codebase and execution path",
+    "Observed worker operations for independent exploration and synthesis"
+  ],
+  "expectedFull": "Choose the simple or complex path. Complex work uses 2 to 4 distinct read-only explorers and one explainer; simple work uses one read-only explainer. Cite actual read files, functions, data flow and relevant line numbers; reconcile conflicting findings against code and retain open questions.",
+  "expectedReduced": "When workers are absent, disclose reduced capability and sequential exploration. Apply the same explorer and explainer roles in sequence, cite actual files along the supplied path, and retain unknown links without claiming independent workers.",
+  "expectedBlocked": "When required source cannot be read or permission is denied, identify the unavailable path and explain the resulting gap without inventing execution flow.",
+  "forbiddenClaims": [
+    "Independent explorers without observed spawn and result inspection",
+    "Runtime behavior inferred only from names",
+    "Actual model selection or host pass without evidence",
+    "Complete flow when source links remain untraced"
+  ]
+}

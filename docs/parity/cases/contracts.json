@@ -1,0 +1,134 @@
+[
+  {
+    "id": "absent-workers",
+    "sourcePaths": [
+      "skills/poteto-mode/SKILL.md",
+      "skills/poteto-mode/playbooks/orchestrate.md",
+      "agents/poteto-agent.md"
+    ],
+    "prompt": "No independent worker operation is available.",
+    "requirements": [
+      "Record unavailable workers; use authorized sequential work only.",
+      "Capture exact input revision, explicit permissions and observed operation evidence."
+    ],
+    "expectedFull": "A discovered spawn operation and result inspection support independent workers after capability becomes available.",
+    "expectedReduced": "Complete authorized sequential work and label it reduced-pass; report absent workers.",
+    "expectedBlocked": "Workers are required and unavailable; record blocked without launching invented operations.",
+    "forbiddenClaims": [
+      "Case definition or fixture test proves host support.",
+      "Independent workers without a successful exposed spawn operation.",
+      "Full pass for sequential fallback.",
+      "Retry external action without permission and prior action inspection."
+    ]
+  },
+  {
+    "id": "denied-writes",
+    "sourcePaths": [
+      "skills/poteto-mode/SKILL.md",
+      "skills/poteto-mode/playbooks/orchestrate.md",
+      "agents/poteto-agent.md"
+    ],
+    "prompt": "A host denies the assigned isolated write.",
+    "requirements": [
+      "Preserve the denial and stop dependent writes.",
+      "Capture exact input revision, explicit permissions and observed operation evidence."
+    ],
+    "expectedFull": "Observed permission grants and isolated write/readback support the assigned output.",
+    "expectedReduced": "Return authorized read-only findings with denied writes recorded as a limit.",
+    "expectedBlocked": "Write permission is denied; stop dependent output and integration.",
+    "forbiddenClaims": [
+      "Case definition or fixture test proves host support.",
+      "Independent workers without a successful exposed spawn operation.",
+      "Full pass for sequential fallback.",
+      "Retry external action without permission and prior action inspection."
+    ]
+  },
+  {
+    "id": "shared-path-conflict",
+    "sourcePaths": [
+      "skills/poteto-mode/SKILL.md",
+      "skills/poteto-mode/playbooks/orchestrate.md",
+      "agents/poteto-agent.md"
+    ],
+    "prompt": "Two workers request the same output path.",
+    "requirements": [
+      "Coordinator assigns distinct paths before either writes.",
+      "Capture exact input revision, explicit permissions and observed operation evidence."
+    ],
+    "expectedFull": "Coordinator resolves ownership into distinct paths before observed workers write.",
+    "expectedReduced": "One authorized sequential writer produces output; worker independence is unclaimed.",
+    "expectedBlocked": "Overlapping ownership remains unresolved; neither worker writes the contested path.",
+    "forbiddenClaims": [
+      "Case definition or fixture test proves host support.",
+      "Independent workers without a successful exposed spawn operation.",
+      "Full pass for sequential fallback.",
+      "Retry external action without permission and prior action inspection."
+    ]
+  },
+  {
+    "id": "cancelled-worker",
+    "sourcePaths": [
+      "skills/poteto-mode/SKILL.md",
+      "skills/poteto-mode/playbooks/orchestrate.md",
+      "agents/poteto-agent.md"
+    ],
+    "prompt": "A worker is cancelled after producing a partial artifact.",
+    "requirements": [
+      "Stop and quarantine partial output; inspect before integration.",
+      "Capture exact input revision, explicit permissions and observed operation evidence."
+    ],
+    "expectedFull": "Observe stop and terminal cancellation; quarantine partial output and integrate only a separately reviewed completed assignment.",
+    "expectedReduced": "Unavailable stop operation permits only local artifact inspection; record unconfirmed termination.",
+    "expectedBlocked": "Cancellation outcome or artifact ownership cannot be established; block integration.",
+    "forbiddenClaims": [
+      "Case definition or fixture test proves host support.",
+      "Independent workers without a successful exposed spawn operation.",
+      "Full pass for sequential fallback.",
+      "Retry external action without permission and prior action inspection."
+    ]
+  },
+  {
+    "id": "interrupted-external-write",
+    "sourcePaths": [
+      "skills/poteto-mode/SKILL.md",
+      "skills/poteto-mode/playbooks/orchestrate.md",
+      "agents/poteto-agent.md"
+    ],
+    "prompt": "An authorized external write is interrupted after dispatch.",
+    "requirements": [
+      "Inspect prior action identity and remote result before any retry.",
+      "Capture exact input revision, explicit permissions and observed operation evidence."
+    ],
+    "expectedFull": "Inspect prior action identity and destination outcome; use explicitly authorized idempotent recovery without duplicate action.",
+    "expectedReduced": "Produce a local handoff describing the unknown external outcome; claim no completed external write.",
+    "expectedBlocked": "Outcome or permission is unknown; block replay until inspection and authorization are available.",
+    "forbiddenClaims": [
+      "Case definition or fixture test proves host support.",
+      "Independent workers without a successful exposed spawn operation.",
+      "Full pass for sequential fallback.",
+      "Retry external action without permission and prior action inspection."
+    ]
+  },
+  {
+    "id": "unavailable-persistence",
+    "sourcePaths": [
+      "skills/poteto-mode/SKILL.md",
+      "skills/poteto-mode/playbooks/orchestrate.md",
+      "agents/poteto-agent.md"
+    ],
+    "prompt": "Durable session persistence is unavailable.",
+    "requirements": [
+      "Declare unavailable persistence and provide an authorized local handoff if possible.",
+      "Capture exact input revision, explicit permissions and observed operation evidence."
+    ],
+    "expectedFull": "Observe durable write/readback after persistence becomes available; link assignment history.",
+    "expectedReduced": "Deliver an authorized local handoff and record unavailable cross-session persistence.",
+    "expectedBlocked": "Required durable state is unavailable and no authorized handoff exists; block continuation.",
+    "forbiddenClaims": [
+      "Case definition or fixture test proves host support.",
+      "Independent workers without a successful exposed spawn operation.",
+      "Full pass for sequential fallback.",
+      "Retry external action without permission and prior action inspection."
+    ]
+  }
+]

@@ -1,0 +1,39 @@
+{
+  "name": "maintain-verification-skill",
+  "kind": "skill",
+  "purpose": "Keep a project verification skill and feature map honest through source review and live coverage of every feature.",
+  "triggers": [
+    "/maintain-verification-skill",
+    "audit the verify skill"
+  ],
+  "inputs": [
+    "Existing verification skill and feature map",
+    "Supplied changed app contract, repository source and recent churn",
+    "Observed host capabilities and authorization"
+  ],
+  "outputs": [
+    "Clean, changed or blocked outcome with honest coverage",
+    "At most one authorized PR of proven skill, harness or map corrections",
+    "Scratch run notes with coverage, prerequisites and confirmed drift"
+  ],
+  "ordinaryExample": "Audit a save feature that now requires entitlement and asynchronous completion; reconcile source and live proof, update confirmed doc drift, and report product regressions without changing product code.",
+  "dependencies": [
+    "references/host-capabilities.md",
+    "references/orchestration-contract.md",
+    "references/workflow-ownership.md",
+    "skills/create-verification-skill/SKILL.md"
+  ],
+  "capabilityLimits": [
+    "Missing independent workers permits serial source review only as reduced capability.",
+    "Missing execution or app driving leaves live verification not-run and coverage blocked.",
+    "Missing writes permits recommendations only; shipping requires explicit authorization.",
+    "The canonical inventory and local dependencies are structurally reconciled; registered cases still require actual per-host observations.",
+    "Both hosts remain not-run; structural checks do not prove behavior."
+  ],
+  "sourcePaths": [
+    "skills/maintain-verification-skill/SKILL.md"
+  ],
+  "caseIds": [
+    "stale-feature-map"
+  ]
+}

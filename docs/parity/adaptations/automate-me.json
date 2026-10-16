@@ -1,0 +1,34 @@
+[
+  {
+    "upstreamPath": "skills/automate-me/SKILL.md",
+    "upstreamCommit": "df581122cde17e6e27686b5a448bde23e4ad4318",
+    "upstreamSha256": "1510979b0b71b54284427a19c09918f8b1fdfc168f9b7f9e30098793a5ec88ef",
+    "destinationPath": "skills/automate-me/SKILL.md",
+    "disposition": "runtime",
+    "rationale": "Preserve the entire guided personal-mode workflow, invocation metadata, existing-preference rules, evidence threshold, workspace privacy and draft feedback. Bind source APIs and paths to observed host capabilities, declare reduced authoring and mining, gate personalization on complete baseline acceptance, and separate local approval from shipping authorization.",
+    "dependencies": [
+      "skills/unslop/SKILL.md",
+      "skills/poteto-mode/SKILL.md",
+      "skills/poteto-mode/playbooks/authoring-a-skill.md",
+      "references/host-capabilities.md",
+      "references/workflow-ownership.md",
+      "references/orchestration-contract.md"
+    ],
+    "licenseProvenance": {
+      "license": "MIT",
+      "copyright": "Copyright (c) 2026 Lauren Tan",
+      "sourcePath": "LICENSE"
+    },
+    "adaptationStatus": "adapted-reviewed",
+    "verification": {
+      "chatgpt": {
+        "status": "not-run",
+        "evidence": []
+      },
+      "codex": {
+        "status": "not-run",
+        "evidence": []
+      }
+    }
+  }
+]

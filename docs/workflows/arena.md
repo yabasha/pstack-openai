@@ -1,0 +1,14 @@
+# Arena walkthrough
+
+Start with an authorized disposable directory outside the package and an exact full input SHA. The example prompt is: "Arena two Markdown proposals for a cache API using the supplied fixture. Write isolated candidate files, choose a maintainable base, graft useful ideas and verify the synthesis. No external actions."
+
+Read the full [Arena skill](../../skills/arena/SKILL.md), [capabilities](../../references/host-capabilities.md), [roles](../../references/model-roles.md), [assignments](../../references/orchestration-contract.md) and [ownership](../../references/workflow-ownership.md). Read each applied principle leaf in full. Aliases are invocation guidance, not registered commands.
+
+1. Frame the artifact and a parent-only rubric of 3-6 gradeable criteria. For this fixture, assess caller clarity, state ownership, failure handling and extension cost. Open the six phase todos. An authorized local checklist is a disclosed reduced todo binding.
+2. Fan out two authorized independent candidates with the same task and grounding, without the rubric. Give each a distinct owned output directory and immutable assignment identity, full SHA, role and append-only attempt history. Default requests inherit the parent. Record actual model and effort only if observed.
+3. Wait for every candidate to reach terminal state. Inspect each complete artifact and rationale. One surviving candidate means incomplete competition. Zero blocks synthesis. Do not integrate cancelled partial output.
+4. After candidates stop writing, launch a fresh read-only judge with the rubric and completed paths. The parent reads every candidate and scores each criterion while the judge reviews. Keep rejected model choices and disclosed fallbacks. Unknown models leave diversity unverified.
+5. Compare rationales, select the base a maintainer can extend safely, and record disagreement. Re-read losing candidates. Adapt useful grafts coherently and record their sources, rejections and dropouts. Convergence may require no graft. Wild divergence requires reframing.
+6. Verify the synthesized proposal against the same rubric and actual fixture. Return the artifact and adjacent synthesis note with the base, judge verdict, grafts and verification evidence. Apply [unslop](../../skills/unslop/SKILL.md).
+
+Expected visible artifacts are two inspected candidates, a fresh judge result, one synthesis and its note. If workers are unavailable, sequential alternatives and parent comparison are reduced capability. Required independence remains blocked. Denied writes permit only a read-only proposal; absent grounding blocks dependent judgment. No link check proves this walkthrough ran. [Case](../parity/cases/documentation-walkthroughs.json), [catalog entry](../skills/arena.md), [troubleshooting](../troubleshooting.md).
