@@ -1,12 +1,12 @@
 {
   "caseId": "fresh-worker-mode",
   "packageVersion": "0.1.0",
-  "packageCommit": "22ca2bd2077ab8628119d34477ad9f364e4f1211",
+  "packageCommit": "f4623636a287bea2aa79c4b2234a53d20a5f193c",
   "host": "codex",
   "hostMode": "source-only provenance refresh; fresh installed-host case not run",
   "date": "2026-10-16",
   "input": "Invoke /poteto-mode for a scoped nontrivial feature. Give a fresh worker this mode and require its chosen playbook, applied principle leaves, throughput checkpoint and evidence. Repeat with worker tools unavailable and with the mode or an applied leaf unavailable. Exercise the 23 playbook route contracts, a no-spawn worker, helper setup failure, a stale full head or missing artifact, and an authorized local checklist when no todo tool exists. Use fixtures for helper boundaries; do not contact a live forge or install dependencies.",
-  "observedOutput": "Not run against frozen revision 22ca2bd2077ab8628119d34477ad9f364e4f1211. The metadata and regression-test changes require a new freeze. Earlier observations remain in Git history under 5d05ab2458f4cd73c44b24265a3a1920b98b8cf4; none establishes installed discovery or behavioral support for this revision.",
+  "observedOutput": "Not run against frozen revision f4623636a287bea2aa79c4b2234a53d20a5f193c. The metadata and regression-test changes require a new freeze. Earlier observations remain in Git history under 5d05ab2458f4cd73c44b24265a3a1920b98b8cf4; none establishes installed discovery or behavioral support for this revision.",
   "status": "blocked",
   "execution": "unavailable",
   "sourcePaths": [

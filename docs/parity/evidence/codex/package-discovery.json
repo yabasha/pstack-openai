@@ -1,14 +1,14 @@
 {
   "caseId": "package-discovery",
   "packageVersion": "0.1.0",
-  "packageCommit": "22ca2bd2077ab8628119d34477ad9f364e4f1211",
+  "packageCommit": "f4623636a287bea2aa79c4b2234a53d20a5f193c",
   "host": "codex",
-  "hostMode": "source-only provenance refresh; fresh installed-host case not run",
+  "hostMode": "fresh isolated CLI 0.162.1 app-server stdio",
   "date": "2026-10-16",
   "input": "In each fresh host, after separately authorized supported package loading, inspect the actual installed copy and enumerate its registered root skills. Preserve the exact final frozen package identity and distinguish an unavailable discovery operation from readable local source.",
-  "observedOutput": "Not run against frozen revision 22ca2bd2077ab8628119d34477ad9f364e4f1211. The metadata and regression-test changes require a new freeze. Earlier observations remain in Git history under 5d05ab2458f4cd73c44b24265a3a1920b98b8cf4; none establishes installed discovery or behavioral support for this revision.",
-  "status": "blocked",
-  "execution": "unavailable",
+  "observedOutput": "A fresh isolated CLI app-server observed the pinned plugin installed and enabled. Both plugin/read and skills/list enumerated exactly 51 canonical roots and no nested Benny skills. Source export and installed cache matched all 726 frozen paths, bytes and modes.",
+  "status": "pass",
+  "execution": "direct",
   "sourcePaths": [
     ".cursor-plugin/plugin.json",
     "automations/benny/skills/reproduce-and-fix-issues/SKILL.md",
@@ -67,20 +67,22 @@
     "skills/why/SKILL.md"
   ],
   "documentedCapabilities": [
-    "docs/maintenance/rollback.md requires immutable tested-package provenance and exact revision-bound observations."
+    "docs/parity/cases/package-discovery.json requires exact source freeze, observed installed-copy identity, all 51 roots and three nested Benny exclusions."
   ],
-  "exposedTools": [],
+  "exposedTools": [
+    "tools.exec_command"
+  ],
   "artifacts": [
-    "docs/releases/remaining-controller-report.md"
+    "docs/parity/evidence/codex/authorization-capability-check.md",
+    "docs/testing/codex.md"
   ],
   "limits": [
-    "No fresh installed-host discovery or case execution was observed for this frozen revision.",
-    "This record accounts for an unrun case; source checks cannot establish host behavior.",
-    "Historical observations for 5d05ab2458f4cd73c44b24265a3a1920b98b8cf4 remain in Git history and are not transferred."
+    "Discovery verified only in the isolated CLI profile. The existing personal 0.2.0 installation was not replaced.",
+    "No desktop-window observation, model invocation or broader workflow acceptance is inferred."
   ],
   "priorActionIdentities": [],
   "permissions": {
-    "execution": "unavailable",
+    "execution": "granted",
     "writes": "granted",
     "externalActions": "denied"
   },
@@ -88,5 +90,21 @@
     "requested": "unknown",
     "actual": "unknown"
   },
-  "successfulOperations": []
+  "successfulOperations": [
+    {
+      "operation": "discover-package",
+      "tool": "tools.exec_command",
+      "evidence": "docs/testing/codex.md"
+    },
+    {
+      "operation": "enumerate-skills",
+      "tool": "tools.exec_command",
+      "evidence": "docs/testing/codex.md"
+    },
+    {
+      "operation": "inspect-installed-copy",
+      "tool": "tools.exec_command",
+      "evidence": "docs/parity/evidence/codex/authorization-capability-check.md"
+    }
+  ]
 }

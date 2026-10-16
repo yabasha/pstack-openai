@@ -1,12 +1,12 @@
 {
   "caseId": "typed-boundary",
   "packageVersion": "0.1.0",
-  "packageCommit": "22ca2bd2077ab8628119d34477ad9f364e4f1211",
+  "packageCommit": "f4623636a287bea2aa79c4b2234a53d20a5f193c",
   "host": "chatgpt",
   "hostMode": "source-only provenance refresh; fresh installed-host case not run",
   "date": "2026-10-16",
   "input": "Review and refactor this TypeScript using the repository existing Zod schemas. UserSchema owns id and name, and ChecksMessage is a generated schema type. Code: type State = { loading: boolean; user?: User; error?: string }; const user = JSON.parse(payload) as User; function newest(xs: Session[]): Session { return xs.at(0)!; } function sum(xs: number[]) { return xs.reduce((a,b)=>a+b,0); } const config = { theme: \"dark\", cols: 3 } as Config; function isUser(x: unknown): x is User { return typeof x === \"object\" && x !== null && \"id\" in x; } Read patterns.md and explain additional source practices applicable to typed boundaries, generated types, guards, variant handling, hot paths, real tests, and telemetry.",
-  "observedOutput": "Not run against frozen revision 22ca2bd2077ab8628119d34477ad9f364e4f1211. The metadata and regression-test changes require a new freeze. Earlier observations remain in Git history under 5d05ab2458f4cd73c44b24265a3a1920b98b8cf4; none establishes installed discovery or behavioral support for this revision.",
+  "observedOutput": "Not run against frozen revision f4623636a287bea2aa79c4b2234a53d20a5f193c. The metadata and regression-test changes require a new freeze. Earlier observations remain in Git history under 5d05ab2458f4cd73c44b24265a3a1920b98b8cf4; none establishes installed discovery or behavioral support for this revision.",
   "status": "blocked",
   "execution": "unavailable",
   "sourcePaths": [
