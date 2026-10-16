@@ -1,12 +1,12 @@
 {
   "caseId": "read-only-answer",
   "packageVersion": "0.1.0",
-  "packageCommit": "5d05ab2458f4cd73c44b24265a3a1920b98b8cf4",
+  "packageCommit": "22ca2bd2077ab8628119d34477ad9f364e4f1211",
   "host": "chatgpt",
-  "hostMode": "personal ChatGPT not accessed; host mode unobserved",
-  "date": "2026-10-08",
+  "hostMode": "source-only provenance refresh; fresh installed-host case not run",
+  "date": "2026-10-16",
   "input": "Using read-only fixture source files and decision records, explain how an invoice formatter works, why a rounding boundary exists, whether the premise that all errors are swallowed is correct, and recommend one of two alternatives with tradeoffs. Permit fixture reads only. No product build, prototype, edits, commits or external writes. Repeat with independent workers unavailable, historical sources denied and all relevant source reads unavailable.",
-  "observedOutput": "Not attempted. Inherited prerequisite block from package-discovery. No documented supported local plugin loading route is established for this personal ChatGPT context. No actual personal ChatGPT session or installed copy was accessed. No separate human authorization exists for loading, installation, enabling, settings changes or fresh host setup. Personal-host tool probing was not attempted. Current controller filesystem and tools are not personal ChatGPT tools.",
+  "observedOutput": "Not run against frozen revision 22ca2bd2077ab8628119d34477ad9f364e4f1211. The metadata and regression-test changes require a new freeze. Earlier observations remain in Git history under 5d05ab2458f4cd73c44b24265a3a1920b98b8cf4; none establishes installed discovery or behavioral support for this revision.",
   "status": "blocked",
   "execution": "unavailable",
   "sourcePaths": [
@@ -34,26 +34,22 @@
     "skills/poteto-mode/playbooks/feature.md"
   ],
   "documentedCapabilities": [
-    "docs/setup/chatgpt.md leaves the personal loading route unsupported here; supplied source is reduced capability guidance only.",
-    "references/host-capabilities.md requires actual exposed and successful bindings."
+    "docs/maintenance/rollback.md requires immutable tested-package provenance and exact revision-bound observations."
   ],
   "exposedTools": [],
   "artifacts": [
-    "docs/parity/evidence/chatgpt/authorization-support-check.md"
+    "docs/releases/remaining-controller-report.md"
   ],
   "limits": [
-    "No documented supported local plugin loading route is established for this personal ChatGPT context. No actual personal ChatGPT session or installed copy was accessed. No separate human authorization exists for loading, installation, enabling, settings changes or fresh host setup. Personal-host tool probing was not attempted. Current controller filesystem and tools are not personal ChatGPT tools.",
-    "This case input was not submitted to personal ChatGPT; no model result or expected behavioral output was observed.",
-    "Full and reduced capability are not observed. Runtime cases were not run.",
-    "Exact installed-copy identity, all 51 root names and three canonical nested Benny exclusions remain unobserved.",
-    "No history access, privacy behavior, worker lifecycle, model choice, persistence, integration or negative runtime condition was exercised.",
-    "Local evidence validation checks accounting only. Codex capabilities and results do not transfer to ChatGPT."
+    "No fresh installed-host discovery or case execution was observed for this frozen revision.",
+    "This record accounts for an unrun case; source checks cannot establish host behavior.",
+    "Historical observations for 5d05ab2458f4cd73c44b24265a3a1920b98b8cf4 remain in Git history and are not transferred."
   ],
   "priorActionIdentities": [],
   "permissions": {
     "execution": "unavailable",
-    "writes": "unknown",
-    "externalActions": "unknown"
+    "writes": "granted",
+    "externalActions": "denied"
   },
   "models": {
     "requested": "unknown",

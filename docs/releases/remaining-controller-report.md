@@ -1,3 +1,15 @@
+# Provenance refresh, 16 October 2026
+
+The current operative freeze is `22ca2bd2077ab8628119d34477ad9f364e4f1211`, version 0.1.0. It includes the merged website and author metadata plus a regression check of the repository's actual tested-package marker. The former freeze `5d05ab2458f4cd73c44b24265a3a1920b98b8cf4` remains historical. The regression reproduced the merged-head failure: `Operative package differs from tested commit: tests/test_manifest.py`.
+
+All 210 current host records now describe unrun cases against this new revision: 105 blocked per host, zero passes, zero reduced passes and no successful host operations. The prior CLI discovery pass belongs only to its original freeze. Its receipts and original records remain available in Git history. The refreshed records cite this report solely as the reason for blocking; this report is not installed-host evidence. Inventory verification, registry status and generated catalogs already record blocked outcomes and require no operative changes.
+
+The marker retains the same exact report-path allowlist. No operative file is exempted. The first commit freezes the regression test; later commits change only reserved report data and the tested-package marker. Verification of that freeze and the final committed report head follows below. Release readiness remains false until fresh observations establish support. No installation, host configuration or published release is part of this repair.
+
+## Preserved historical reports
+
+The sections below retain their original scope and freeze identities. Their statements about current status apply to those historical checkpoints.
+
 # Verified frozen installation and current limits
 
 The approved version 0.1.0 is installed and enabled through the supported personal marketplace. Operative source remains 5d05ab2458f4cd73c44b24265a3a1920b98b8cf4. Both the source export and installed cache match all 726 frozen files and permission modes, with no extra files. Only the target marketplace entry and plugin enablement were added; existing plugins were retained.

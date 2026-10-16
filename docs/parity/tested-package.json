@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "kind": "pstack-tested-package",
-  "testedCommit": "5d05ab2458f4cd73c44b24265a3a1920b98b8cf4",
+  "testedCommit": "22ca2bd2077ab8628119d34477ad9f364e4f1211",
   "reportPaths": [
     "docs/parity/evidence/chatgpt/absent-workers.json",
     "docs/parity/evidence/chatgpt/accessible-trace.json",
