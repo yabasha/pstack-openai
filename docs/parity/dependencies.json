@@ -1450,7 +1450,7 @@
       "sourcePath": ".cursor-plugin/plugin.json",
       "sourceSha256": "7bc736c60985805f70465e044e5adc7028663f72a73deea7fa3e95e52d70dc8e",
       "destinationPath": "plugin.json",
-      "destinationSha256": "2e6a17cd9cc208df923c63942712d0b7f9402a347c2b4b6898bedfc67be6f2d6",
+      "destinationSha256": "fcf5290db3a0eb3d63716d077181beb9e116ddcbd29585c4a588b659135ea4ba",
       "kind": "support",
       "packageDependencies": [
         "assets/logo.png"
