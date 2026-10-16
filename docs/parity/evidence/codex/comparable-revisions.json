@@ -1,12 +1,12 @@
 {
   "caseId": "comparable-revisions",
-  "packageVersion": "0.1.1",
-  "packageCommit": "e84370aad95301edd65cd0348ed703de716861c4",
+  "packageVersion": "0.1.3",
+  "packageCommit": "51f209daf83cd97d64f89881d66533bb59dc57db",
   "host": "codex",
   "hostMode": "Unattempted current candidate; historical 0.1.0 outcomes are kept separately",
   "date": "2026-10-16",
   "input": "Improve a fixture export CLI against a stated latency target. Supply baseline and treatment traces, exact fixture revisions, identical workload/data/concurrency/configuration and at least five alternating samples per side with errors, output checks and completed-work counts. Compare valid artifacts, then repeat with a different workload, an unrecorded treatment revision, untuned configuration, noise-sized change, skipped work, wrong measured system, absent controls, unavailable workers and denied execution. Permit local inspection and edits but no external writes. Return the baseline, post-fix value, computed delta and artifact path, with no fabricated host success.",
-  "observedOutput": "Not run against this version 0.1.1 source freeze. Version 0.1.0 observations remain bound to f4623636a287bea2aa79c4b2234a53d20a5f193c and are not transferred.",
+  "observedOutput": "Not run against this version 0.1.3 source freeze. Version 0.1.0 observations remain bound to f4623636a287bea2aa79c4b2234a53d20a5f193c and are not transferred.",
   "status": "not-run",
   "execution": "not-run",
   "sourcePaths": [

@@ -15,7 +15,7 @@ The fenced JSON contains the actual prompt, retained response, full independent 
   "caseId": "typed-boundary",
   "acceptedStatus": "reduced-pass",
   "acceptedAttemptId": "grades-native-05.json#4",
-  "acceptanceRule": "Latest graded attempt in deterministic baseline -> rerun01..04 -> durable00..05 order, never best status",
+  "acceptanceRule": "Latest graded attempt in deterministic baseline -> rerun01..06 -> durable00..05 order, never best status",
   "casePrompt": "Review and refactor this TypeScript using the repository existing Zod schemas. UserSchema owns id and name, and ChecksMessage is a generated schema type. Code: type State = { loading: boolean; user?: User; error?: string }; const user = JSON.parse(payload) as User; function newest(xs: Session[]): Session { return xs.at(0)!; } function sum(xs: number[]) { return xs.reduce((a,b)=>a+b,0); } const config = { theme: \"dark\", cols: 3 } as Config; function isUser(x: unknown): x is User { return typeof x === \"object\" && x !== null && \"id\" in x; } Read patterns.md and explain additional source practices applicable to typed boundaries, generated types, guards, variant handling, hot paths, real tests, and telemetry.",
   "caseDefinition": {
     "id": "typed-boundary",
@@ -391,7 +391,7 @@ The fenced JSON contains the actual prompt, retained response, full independent 
     "Cloud UI corroborates native dispatch/read/command activity in specified turns, not every exact argument, raw output, exit code or model-captured receipt. Early raw capture gaps and truncation remain explicit.",
     "The two invented cloud timestamps remain retained errors despite appended correction.",
     "Native event metadata proves retained trace identity and locators; per-case independent grade determines qualitative result. File counts, test selfgrades and proxy scripts never generate grades.",
-    "Task Git revisions, observed actual models, persistence, external service, scheduler and live-surface proof remain exactly as limited in each attempt.",
+    "Input Git revisions, observed actual models, persistence, external service, scheduler and live-surface proof remain exactly as limited in each attempt.",
     "Implementation/test/log projections are source/artifact bytes for review, not independent runtime confirmation. Copied source skill blobs, inputs/before/dependencies/Git and binary files are omitted; each text file is capped at 1 MiB with explicit skip entries.",
     "Existing historical report contents are not imported. Root may append them separately."
   ]

@@ -15,7 +15,7 @@ The fenced JSON contains the actual prompt, retained response, full independent 
   "caseId": "resume-revision",
   "acceptedStatus": "blocked",
   "acceptedAttemptId": "grades-chatgpt-01-04.json#27",
-  "acceptanceRule": "Latest graded attempt in deterministic baseline -> rerun01..04 -> durable00..05 order, never best status",
+  "acceptanceRule": "Latest graded attempt in deterministic baseline -> rerun01..06 -> durable00..05 order, never best status",
   "casePrompt": "Resume from the supplied scoped continuation trail. Its completed unit refers to a recorded base and full SHA; the current worktree has a later revision and concurrent changes. History includes a long transcript and an interrupted external action whose outcome is unknown. Compare actual state before acting, preserve finished work and identify the routed resume point.",
   "caseDefinition": {
     "id": "resume-revision",
@@ -296,7 +296,7 @@ The fenced JSON contains the actual prompt, retained response, full independent 
     "Cloud UI corroborates native dispatch/read/command activity in specified turns, not every exact argument, raw output, exit code or model-captured receipt. Early raw capture gaps and truncation remain explicit.",
     "The two invented cloud timestamps remain retained errors despite appended correction.",
     "Native event metadata proves retained trace identity and locators; per-case independent grade determines qualitative result. File counts, test selfgrades and proxy scripts never generate grades.",
-    "Task Git revisions, observed actual models, persistence, external service, scheduler and live-surface proof remain exactly as limited in each attempt.",
+    "Input Git revisions, observed actual models, persistence, external service, scheduler and live-surface proof remain exactly as limited in each attempt.",
     "Implementation/test/log projections are source/artifact bytes for review, not independent runtime confirmation. Copied source skill blobs, inputs/before/dependencies/Git and binary files are omitted; each text file is capped at 1 MiB with explicit skip entries.",
     "Existing historical report contents are not imported. Root may append them separately."
   ]

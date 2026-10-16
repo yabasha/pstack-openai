@@ -1,14 +1,14 @@
 {
   "caseId": "package-discovery",
-  "packageVersion": "0.1.1",
-  "packageCommit": "e84370aad95301edd65cd0348ed703de716861c4",
+  "packageVersion": "0.1.3",
+  "packageCommit": "51f209daf83cd97d64f89881d66533bb59dc57db",
   "host": "chatgpt",
-  "hostMode": "Unattempted current candidate; historical 0.1.0 outcomes are kept separately",
+  "hostMode": "fresh personal ChatGPT web Work session",
   "date": "2026-10-16",
   "input": "In each fresh host, after separately authorized supported package loading, inspect the actual installed copy and enumerate its registered root skills. Preserve the exact final frozen package identity and distinguish an unavailable discovery operation from readable local source.",
-  "observedOutput": "Not run against this version 0.1.1 source freeze. Version 0.1.0 observations remain bound to f4623636a287bea2aa79c4b2234a53d20a5f193c and are not transferred.",
-  "status": "not-run",
-  "execution": "not-run",
+  "observedOutput": "Fresh private plugin UI lists51skills/version0.1.3. Native Work source reads and returned receipt are corroborated by current release archive:933 unchanged source files match bytes and Git executable modes; root manifest metadata is normalized and one compatibility manifest is added.",
+  "status": "pass",
+  "execution": "direct",
   "sourcePaths": [
     ".cursor-plugin/plugin.json",
     "automations/benny/skills/reproduce-and-fix-issues/SKILL.md",
@@ -67,15 +67,19 @@
     "skills/why/SKILL.md"
   ],
   "documentedCapabilities": [
-    "The immutable tested-package policy requires observations tied to this exact source freeze."
+    "Exact frozen installation,51root skills and three nested Benny exclusions. Workflow outcomes remain independently unrun on this new freeze."
   ],
-  "exposedTools": [],
+  "exposedTools": [
+    "mcp__cua_repl.js",
+    "tools.exec_command"
+  ],
   "artifacts": [
+    "docs/parity/evidence/chatgpt/authorization-support-check.md",
     "docs/testing/chatgpt.md"
   ],
   "limits": [
-    "Fresh candidate verification is pending; this is an unrun record, not a claimed capability denial.",
-    "Historical baseline results, including failures and reduced outcomes, cannot qualify a different source freeze."
+    "Publisher metadata normalization changes plugin.json and adds .codex-plugin/plugin.json; preserved933other files verified independently.",
+    "This web observation does not establish desktop availability or104new-freeze workflow outcomes."
   ],
   "priorActionIdentities": [],
   "permissions": {
@@ -87,5 +91,21 @@
     "requested": "unknown",
     "actual": "unknown"
   },
-  "successfulOperations": []
+  "successfulOperations": [
+    {
+      "operation": "discover-package",
+      "tool": "mcp__cua_repl.js",
+      "evidence": "docs/testing/chatgpt.md"
+    },
+    {
+      "operation": "enumerate-skills",
+      "tool": "mcp__cua_repl.js",
+      "evidence": "docs/testing/chatgpt.md"
+    },
+    {
+      "operation": "inspect-installed-copy",
+      "tool": "tools.exec_command",
+      "evidence": "docs/parity/evidence/chatgpt/authorization-support-check.md"
+    }
+  ]
 }

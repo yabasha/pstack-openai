@@ -15,7 +15,7 @@ The fenced JSON contains the actual prompt, retained response, full independent 
   "caseId": "throwaway-probe",
   "acceptedStatus": "blocked",
   "acceptedAttemptId": "grades-chatgpt-09-12.json#21",
-  "acceptanceRule": "Latest graded attempt in deterministic baseline -> rerun01..04 -> durable00..05 order, never best status",
+  "acceptanceRule": "Latest graded attempt in deterministic baseline -> rerun01..06 -> durable00..05 order, never best status",
   "casePrompt": "Product criterion: searching for the standalone tag cat must match \"cat\", \"Cat nap\", and \"the cat sleeps\", but must not match \"concatenate\" or \"bobcat\". Matching is case-insensitive and a whole word uses ASCII letter boundaries. Decide whether a literal substring or whole-word filter satisfies every expected result. Run both against these five strings; select only an algorithm whose observed outputs match all five expectations. Decide whether a fixture filter should match literal substrings or whole words. Use a bounded throwaway probe on these exact fixture strings, compare labelled alternatives, and let observed output settle the behavior question. Separately compare 2-3 novel layout variants behind one switcher and capture each interaction and screenshot. Allow scratch writes and execution, forbid production and external writes. Repeat with execution unavailable, writes denied, visual controls absent, an open design direction requiring a moodboard, and no concrete decision.",
   "caseDefinition": {
     "id": "throwaway-probe",
@@ -331,7 +331,7 @@ The fenced JSON contains the actual prompt, retained response, full independent 
     "Cloud UI corroborates native dispatch/read/command activity in specified turns, not every exact argument, raw output, exit code or model-captured receipt. Early raw capture gaps and truncation remain explicit.",
     "The two invented cloud timestamps remain retained errors despite appended correction.",
     "Native event metadata proves retained trace identity and locators; per-case independent grade determines qualitative result. File counts, test selfgrades and proxy scripts never generate grades.",
-    "Task Git revisions, observed actual models, persistence, external service, scheduler and live-surface proof remain exactly as limited in each attempt.",
+    "Input Git revisions, observed actual models, persistence, external service, scheduler and live-surface proof remain exactly as limited in each attempt.",
     "Implementation/test/log projections are source/artifact bytes for review, not independent runtime confirmation. Copied source skill blobs, inputs/before/dependencies/Git and binary files are omitted; each text file is capped at 1 MiB with explicit skip entries.",
     "Existing historical report contents are not imported. Root may append them separately."
   ]

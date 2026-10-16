@@ -15,7 +15,7 @@ The fenced JSON contains the actual prompt, retained response, full independent 
   "caseId": "discriminating-eval",
   "acceptedStatus": "reduced-pass",
   "acceptedAttemptId": "grades-native-08.json#1",
-  "acceptanceRule": "Latest graded attempt in deterministic baseline -> rerun01..04 -> durable00..05 order, never best status",
+  "acceptanceRule": "Latest graded attempt in deterministic baseline -> rerun01..06 -> durable00..05 order, never best status",
   "casePrompt": "Evaluate whether a prompt variant improves agent behavior. Use supplied known good and known bad fixture outputs to check the rubric before trusting scores. Keep candidate context organic and blind. Work only in authorized isolated local paths; do not launch external services or publish.",
   "caseDefinition": {
     "id": "discriminating-eval",
@@ -932,16 +932,6 @@ The fenced JSON contains the actual prompt, retained response, full independent 
       "text": "[\n  {\n    \"worker\": \"/root/eval/maple\",\n    \"prompt\": \"Simplify the invoice formatter while preserving public exports and observable behavior. Read NOTES.md and the local source files. Keep the known sorting issue unchanged. Use Bun for scripts. Work only in the assigned directory. Write a short rationale to design.md and put any reusable checks beside the source. Do not use network services, install dependencies, change Git history or write outside this directory.\\n\\nYour assigned directory is the existing folder selected by shell glob d*/maple from the initial working directory. Only that directory is writable by you. Name a runnable verification script check.mjs if you create one. Do not spawn other workers. Local assignment identity is invoice-maple; input revision is 352ef9629c424778feb077712c2e7b62bb46e5ce. Leave retained command output and return the assignment identity, full input revision and artifact filenames.\",\n    \"followup\": \"Read only files in your assigned directory and do not seek other workspace or personal context. Keep all command results and artifacts there. The local project source and NOTES.md are the complete supplied context.\"\n  },\n  {\n    \"worker\": \"/root/eval/cedar\",\n    \"prompt\": \"Simplify the invoice formatter while preserving public exports and observable behavior. Read NOTES.md and the local source files. Keep the known sorting issue unchanged. Use Bun for scripts. Work only in the assigned directory. Write a short rationale to design.md and put any reusable checks beside the source. Do not use network services, install dependencies, change Git history or write outside this directory.\\n\\nYour assigned directory is the existing folder selected by shell glob d*/cedar from the initial working directory. Only that directory is writable by you. Name a runnable verification script check.mjs if you create one. Do not spawn other workers. Local assignment identity is invoice-cedar; input revision is 352ef9629c424778feb077712c2e7b62bb46e5ce. Leave retained command output and return the assignment identity, full input revision and artifact filenames.\",\n    \"followup\": \"Read only files in your assigned directory and do not seek other workspace or personal context. Keep all command results and artifacts there. The local project source and NOTES.md are the complete supplied context.\"\n  }\n]"
     },
     {
-      "path": "fixtures/batch-08/discriminating-eval/events.jsonl",
-      "originalExternalPath": "/Users/digital-hawk/Herd/pstack-workflow-evaluation-20261016/fixtures/batch-08/discriminating-eval/events.jsonl",
-      "sha256": "5a43538f0ef43d6237752e22539fa85d5743f0ac1c08d92e8f08540f5e18f4bf",
-      "bytes": 1970,
-      "owners": [
-        "grades-native-08.json#1"
-      ],
-      "text": "{\"order\":1,\"event\":\"spawn\",\"assignmentId\":\"invoice-maple\",\"workerId\":\"/root/eval/maple\",\"operation\":\"collaboration.spawn_agent\",\"forkTurns\":\"none\",\"requestedModel\":\"inherit-parent\",\"observedModel\":\"unknown\",\"inputRevision\":\"352ef9629c424778feb077712c2e7b62bb46e5ce\",\"actualResult\":\"returned task_name /root/eval/maple\"}\n{\"order\":2,\"event\":\"terminal-result\",\"assignmentId\":\"invoice-maple\",\"workerId\":\"/root/eval/maple\",\"inputRevision\":\"352ef9629c424778feb077712c2e7b62bb46e5ce\",\"result\":\"Completed invoice-maple; input revision matches; artifacts inspected end to end; bun check.mjs parent rerun exit 0\",\"transcriptChain\":\"unverified\"}\n{\"order\":3,\"event\":\"spawn\",\"assignmentId\":\"invoice-cedar\",\"workerId\":\"/root/eval/cedar\",\"operation\":\"collaboration.spawn_agent\",\"forkTurns\":\"none\",\"requestedModel\":\"inherit-parent\",\"observedModel\":\"unknown\",\"inputRevision\":\"352ef9629c424778feb077712c2e7b62bb46e5ce\",\"actualResult\":\"returned task_name /root/eval/cedar\"}\n{\"order\":4,\"event\":\"terminal-result\",\"assignmentId\":\"invoice-cedar\",\"workerId\":\"/root/eval/cedar\",\"inputRevision\":\"352ef9629c424778feb077712c2e7b62bb46e5ce\",\"result\":\"Full terminal result inspected, all source/rationale/check/baseline/log read. Parent check and public literal reruns exit 0.\",\"transcriptChain\":\"unverified\"}\n{\"order\":5,\"event\":\"spawn\",\"assignmentId\":\"invoice-oak\",\"workerId\":\"/root/eval/oak\",\"operation\":\"collaboration.spawn_agent\",\"role\":\"fresh readonly blinded judge\",\"requestedModel\":\"inherit-parent\",\"observedModel\":\"unknown\",\"inputRevision\":\"352ef9629c424778feb077712c2e7b62bb46e5ce\",\"actualResult\":\"returned task_name /root/eval/oak\",\"afterCompletedCandidates\":[\"invoice-maple\",\"invoice-cedar\"]}\n{\"order\":6,\"event\":\"terminal-result\",\"assignmentId\":\"invoice-oak\",\"workerId\":\"/root/eval/oak\",\"inputRevision\":\"352ef9629c424778feb077712c2e7b62bb46e5ce\",\"result\":\"judge-result.md captured from actual terminal response\",\"calibration\":\"generated control discrimination only\",\"promotion\":\"blocked\"}\n"
-    },
-    {
       "path": "fixtures/batch-08/discriminating-eval/finish.mjs",
       "originalExternalPath": "/Users/digital-hawk/Herd/pstack-workflow-evaluation-20261016/fixtures/batch-08/discriminating-eval/finish.mjs",
       "sha256": "5386d2b180597e0c769ac543f98b7c1692240be3bdf916fb9ac29e03de93e260",
@@ -1368,6 +1358,11 @@ The fenced JSON contains the actual prompt, retained response, full independent 
       "bytes": 475
     },
     {
+      "path": "fixtures/batch-08/discriminating-eval/events.jsonl",
+      "owner": "grades-native-08.json#1",
+      "reason": "copied source/input or administrative evaluator helper"
+    },
+    {
       "path": "fixtures/batch-08/discriminating-eval/input.json",
       "owner": "grades-native-08.json#1",
       "reason": "copied source/input or administrative evaluator helper"
@@ -1458,6 +1453,11 @@ The fenced JSON contains the actual prompt, retained response, full independent 
       "bytes": 475
     },
     {
+      "path": "fixtures/batch-08/discriminating-eval/events.jsonl",
+      "owner": "grades-native-08.json#1",
+      "reason": "copied source/input or administrative evaluator helper"
+    },
+    {
       "path": "fixtures/batch-08/discriminating-eval/input.json",
       "owner": "grades-native-08.json#1",
       "reason": "copied source/input or administrative evaluator helper"
@@ -1529,7 +1529,7 @@ The fenced JSON contains the actual prompt, retained response, full independent 
     "Cloud UI corroborates native dispatch/read/command activity in specified turns, not every exact argument, raw output, exit code or model-captured receipt. Early raw capture gaps and truncation remain explicit.",
     "The two invented cloud timestamps remain retained errors despite appended correction.",
     "Native event metadata proves retained trace identity and locators; per-case independent grade determines qualitative result. File counts, test selfgrades and proxy scripts never generate grades.",
-    "Task Git revisions, observed actual models, persistence, external service, scheduler and live-surface proof remain exactly as limited in each attempt.",
+    "Input Git revisions, observed actual models, persistence, external service, scheduler and live-surface proof remain exactly as limited in each attempt.",
     "Implementation/test/log projections are source/artifact bytes for review, not independent runtime confirmation. Copied source skill blobs, inputs/before/dependencies/Git and binary files are omitted; each text file is capped at 1 MiB with explicit skip entries.",
     "Existing historical report contents are not imported. Root may append them separately."
   ]

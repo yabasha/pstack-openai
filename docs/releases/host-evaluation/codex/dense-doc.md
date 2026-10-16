@@ -15,7 +15,7 @@ The fenced JSON contains the actual prompt, retained response, full independent 
   "caseId": "dense-doc",
   "acceptedStatus": "pass",
   "acceptedAttemptId": "grades-native-00-01.json#14",
-  "acceptanceRule": "Latest graded attempt in deterministic baseline -> rerun01..04 -> durable00..05 order, never best status",
+  "acceptanceRule": "Latest graded attempt in deterministic baseline -> rerun01..06 -> durable00..05 order, never best status",
   "casePrompt": "Rewrite this how-to without changing behavior: In order to configure the proto import ratchet budget script parameters, use budget.json. It is important to note that budget.mjs counts files that import protos. If the count exceeds the budget, CI fails. Run budget.mjs --write only when lowering the budget.",
   "caseDefinition": {
     "id": "dense-doc",
@@ -253,16 +253,6 @@ The fenced JSON contains the actual prompt, retained response, full independent 
       "text": "{\n  \"caseId\": \"dense-doc\",\n  \"caseFile\": \"docs/parity/cases/skills/technical-writing.json\",\n  \"sourcePaths\": [\n    \"skills/technical-writing/SKILL.md\"\n  ],\n  \"requiredHosts\": [\n    \"chatgpt\",\n    \"codex\"\n  ],\n  \"structuralOnly\": false,\n  \"hostStatus\": {\n    \"chatgpt\": \"blocked\",\n    \"codex\": \"blocked\"\n  },\n  \"requiredObservations\": {\n    \"pass\": [\n      \"supplied-input\",\n      \"response\",\n      \"review-outcome\"\n    ],\n    \"reduced-pass\": [\n      \"supplied-input\",\n      \"response\",\n      \"review-outcome\"\n    ]\n  },\n  \"executionModes\": {\n    \"pass\": [\n      \"direct\",\n      \"workers\"\n    ],\n    \"reduced-pass\": [\n      \"direct\",\n      \"sequential\",\n      \"workers\"\n    ]\n  },\n  \"requiredPermissions\": {\n    \"pass\": [],\n    \"reduced-pass\": []\n  }\n}\n"
     },
     {
-      "path": "fixtures/batch-01/dense-doc/registered-input.json",
-      "originalExternalPath": "/Users/digital-hawk/Herd/pstack-workflow-evaluation-20261016/fixtures/batch-01/dense-doc/registered-input.json",
-      "sha256": "463b55469b57a23ef1ae3891743ac127b44edbedf9816648441c669a3d3f8a63",
-      "bytes": 1809,
-      "owners": [
-        "grades-native-00-01.json#14"
-      ],
-      "text": "{\n  \"id\": \"dense-doc\",\n  \"sourcePaths\": [\n    \"skills/technical-writing/SKILL.md\"\n  ],\n  \"prompt\": \"Rewrite this how-to without changing behavior: In order to configure the proto import ratchet budget script parameters, use budget.json. It is important to note that budget.mjs counts files that import protos. If the count exceeds the budget, CI fails. Run budget.mjs --write only when lowering the budget.\",\n  \"requirements\": [\n    \"Read the supplied document and preserve its how-to purpose.\",\n    \"Preserve budget.mjs, budget.json, --write, CI, the count condition, and the lower-only restriction.\",\n    \"Apply all four layers and the unslop skill; do not invent facts.\"\n  ],\n  \"expectedFull\": \"Remove filler, retain every named symbol and condition, and keep a clear how-to purpose. Apply Diátaxis, reader-directed sentences, STE rules, Global English, and unslop. Provide the rewrite or authorized document edit; propose any new abstract-metaphor offender with a diff without editing unslop.\",\n  \"expectedReduced\": \"If required source text is incomplete or unslop is unavailable, identify the missing input or dependency and label the review partial. Returning the requested supplied-text rewrite in conversation is full direct completion; a specifically requested saved edit still requires an observed authorized write.\",\n  \"expectedBlocked\": \"If no document text can be read or supplied, state the missing input and do not invent a rewrite or claim review completion.\",\n  \"forbiddenClaims\": [\n    \"Changing real symbol names or lower-only --write behavior.\",\n    \"Claiming unslop was applied without reading it.\",\n    \"Claiming edits were saved without observed authorized writes.\",\n    \"Claiming host enforcement of disable-model-invocation metadata or host parity from structural validation.\"\n  ]\n}\n"
-    },
-    {
       "path": "fixtures/batch-01/dense-doc/rewrite.md",
       "originalExternalPath": "/Users/digital-hawk/Herd/pstack-workflow-evaluation-20261016/fixtures/batch-01/dense-doc/rewrite.md",
       "sha256": "a40e9a619be387ca485a90ecf33150b6d4a281f18630cb2aeccdb8ac8099ae17",
@@ -300,6 +290,14 @@ The fenced JSON contains the actual prompt, retained response, full independent 
       "reason": "copied source/input or administrative evaluator helper"
     },
     {
+      "path": "fixtures/batch-01/dense-doc/registered-input.json",
+      "originalExternalPath": "/Users/digital-hawk/Herd/pstack-workflow-evaluation-20261016/fixtures/batch-01/dense-doc/registered-input.json",
+      "sha256": "463b55469b57a23ef1ae3891743ac127b44edbedf9816648441c669a3d3f8a63",
+      "bytes": 1809,
+      "owner": "grades-native-00-01.json#14",
+      "reason": "Source-read capture hash retained; pinned source text is reconstructible and not duplicated"
+    },
+    {
       "path": "fixtures/batch-01/dense-doc/source",
       "owner": "grades-native-00-01.json#14",
       "reason": "input/source/before/support/dependency/Git tree omitted"
@@ -313,6 +311,14 @@ The fenced JSON contains the actual prompt, retained response, full independent 
       "path": "fixtures/batch-01/dense-doc/input.json",
       "owner": "grades-native-00-01.json#14",
       "reason": "copied source/input or administrative evaluator helper"
+    },
+    {
+      "path": "fixtures/batch-01/dense-doc/registered-input.json",
+      "originalExternalPath": "/Users/digital-hawk/Herd/pstack-workflow-evaluation-20261016/fixtures/batch-01/dense-doc/registered-input.json",
+      "sha256": "463b55469b57a23ef1ae3891743ac127b44edbedf9816648441c669a3d3f8a63",
+      "bytes": 1809,
+      "owner": "grades-native-00-01.json#14",
+      "reason": "Source-read capture hash retained; pinned source text is reconstructible and not duplicated"
     },
     {
       "path": "fixtures/batch-01/dense-doc/source",
@@ -330,7 +336,7 @@ The fenced JSON contains the actual prompt, retained response, full independent 
     "Cloud UI corroborates native dispatch/read/command activity in specified turns, not every exact argument, raw output, exit code or model-captured receipt. Early raw capture gaps and truncation remain explicit.",
     "The two invented cloud timestamps remain retained errors despite appended correction.",
     "Native event metadata proves retained trace identity and locators; per-case independent grade determines qualitative result. File counts, test selfgrades and proxy scripts never generate grades.",
-    "Task Git revisions, observed actual models, persistence, external service, scheduler and live-surface proof remain exactly as limited in each attempt.",
+    "Input Git revisions, observed actual models, persistence, external service, scheduler and live-surface proof remain exactly as limited in each attempt.",
     "Implementation/test/log projections are source/artifact bytes for review, not independent runtime confirmation. Copied source skill blobs, inputs/before/dependencies/Git and binary files are omitted; each text file is capped at 1 MiB with explicit skip entries.",
     "Existing historical report contents are not imported. Root may append them separately."
   ]

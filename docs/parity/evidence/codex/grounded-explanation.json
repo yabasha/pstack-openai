@@ -1,12 +1,12 @@
 {
   "caseId": "grounded-explanation",
-  "packageVersion": "0.1.1",
-  "packageCommit": "e84370aad95301edd65cd0348ed703de716861c4",
+  "packageVersion": "0.1.3",
+  "packageCommit": "51f209daf83cd97d64f89881d66533bb59dc57db",
   "host": "codex",
   "hostMode": "Unattempted current candidate; historical 0.1.0 outcomes are kept separately",
   "date": "2026-10-16",
   "input": "Teach me the supplied subsystem so I understand what it is, how it works and why it was built this way. Use its real names and inspected files. Begin with the smallest complete explanation and deepen it only as the conversation calls for it.",
-  "observedOutput": "Not run against this version 0.1.1 source freeze. Version 0.1.0 observations remain bound to f4623636a287bea2aa79c4b2234a53d20a5f193c and are not transferred.",
+  "observedOutput": "Not run against this version 0.1.3 source freeze. Version 0.1.0 observations remain bound to f4623636a287bea2aa79c4b2234a53d20a5f193c and are not transferred.",
   "status": "not-run",
   "execution": "not-run",
   "sourcePaths": [
