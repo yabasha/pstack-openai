@@ -82,7 +82,7 @@ The following statuses come from the current parity inventory. Pending aggregate
 
 Destination: [skills/principle-minimize-reader-load/SKILL.md](../../skills/principle-minimize-reader-load/SKILL.md).
 
-Upstream commit: `e5136d82418d2db3165ea1050d17577cd618cc05`. SHA-256: `1ea2b7fef2391cae5844c4efdbd59031f775e8a52d06b7495d707229a200dcca`.
+Upstream commit: `99743e9c151c8537cbbf1f98bb38f34ef3368453`. SHA-256: `1ea2b7fef2391cae5844c4efdbd59031f775e8a52d06b7495d707229a200dcca`.
 
 Disposition: `runtime`. Aggregate adaptation status: `adapted-reviewed`.
 

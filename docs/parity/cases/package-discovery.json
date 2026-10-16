@@ -4,7 +4,7 @@
   "expectedReduced": "A missing independent orchestration requirement in a larger task may be disclosed as reduced, but this discovery gate still requires the complete installed-copy receipt and three actual observations. Merely choosing direct discovery is full completion.",
   "forbiddenClaims": [
     "Direct source-file reads or a local source directory prove installed discovery.",
-    "A receipt is complete with fewer than 51 root skills or with any Benny root registration.",
+    "A receipt is complete with fewer than 54 root skills or with any Benny root registration.",
     "Observation labels are exposed tool names by definition.",
     "Sequential roles prove independent workers.",
     "Historical or differently frozen evidence proves the current installed package."

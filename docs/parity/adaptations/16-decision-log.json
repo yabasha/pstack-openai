@@ -12,7 +12,7 @@
       "sourcePath": "LICENSE"
     },
     "rationale": "Preserve the six positional arguments, UTC timestamp, TSV fields, append-only writes and spreadsheet formula protection. Require an explicit nonempty owned output path and reject record separators before any filesystem write. Caller authorization and secret limits remain mandatory.",
-    "upstreamCommit": "e5136d82418d2db3165ea1050d17577cd618cc05",
+    "upstreamCommit": "99743e9c151c8537cbbf1f98bb38f34ef3368453",
     "upstreamPath": "skills/show-me-your-work/scripts/log.sh",
     "upstreamSha256": "a65a4bc5fb7cdeadbdb7b7ff1ca4682f4d9c42420942b2977cd17b46c4ac338e",
     "verification": {

@@ -55,7 +55,7 @@
     "skills/principle-test-behavior-not-implementation/SKILL.md",
     "skills/principle-type-system-discipline/SKILL.md"
   ],
-  "reviewRationale": "One-time reviewed update to official 0.15.25; retain host adaptations and stronger safeguards, add three native text skills and fence regressions.",
+  "reviewRationale": "Review all five editorial changes at official 0.15.25; preserve portable host bindings and unchanged 54-root membership.",
   "rootSkills": [
     "skills/architect/SKILL.md",
     "skills/arena/SKILL.md",
@@ -284,5 +284,5 @@
     "skills/why/references/sources/slack.md",
     "skills/why/references/synthesizer-prompt.md"
   ],
-  "upstreamCommit": "e5136d82418d2db3165ea1050d17577cd618cc05"
+  "upstreamCommit": "99743e9c151c8537cbbf1f98bb38f34ef3368453"
 }

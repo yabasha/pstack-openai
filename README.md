@@ -2,7 +2,7 @@
 
 An unofficial port of Lauren Tan's pstack v0.15.25. The pinned baseline includes 54 root skills, 24 principles, 23 playbooks and 169 source files. Read [UPSTREAM.md](UPSTREAM.md), [NOTICE.md](NOTICE.md) and [LICENSE](LICENSE) for lineage and attribution.
 
-Port candidate 0.2.0 includes ketchup, sharpen and in-your-own-words. The implementation is a candidate awaiting aggregate review, frozen-package discovery and fresh host observations. Both hosts remain unverified. A local file read does not prove installed discovery. See [compatibility](docs/compatibility.md) before relying on a workflow.
+Port 0.2.1 incorporates the latest upstream editorial changes at `99743e9c151c8537cbbf1f98bb38f34ef3368453`. It includes ketchup, sharpen and in-your-own-words. Source validation and installed discovery are tracked separately from full workflow behavior. See the [0.2.1 validation and refresh record](docs/releases/0.2.1.md) for observed results and remaining limits. See [compatibility](docs/compatibility.md) before relying on a workflow.
 
 ## Start here
 

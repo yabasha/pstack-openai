@@ -12,7 +12,7 @@
       "sourcePath": "LICENSE"
     },
     "rationale": "Preserve the full canonical principle and invocation metadata. Add capability discovery, permission boundaries and explicit reduced or blocked migration limits.",
-    "upstreamCommit": "e5136d82418d2db3165ea1050d17577cd618cc05",
+    "upstreamCommit": "99743e9c151c8537cbbf1f98bb38f34ef3368453",
     "upstreamPath": "skills/principle-outcome-oriented-execution/SKILL.md",
     "upstreamSha256": "10eb91633aa570355ba4bb37088fcade2b22e498df7a58edc749e65bc5a78e2d",
     "verification": {

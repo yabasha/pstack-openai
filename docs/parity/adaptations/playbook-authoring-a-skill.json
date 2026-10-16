@@ -15,7 +15,7 @@
       "sourcePath": "LICENSE"
     },
     "rationale": "Preserve authoring and modification purpose, voice ownership, structural validation, structural-only tests, Opening a PR handoff, concise decision-changing prose, scope-matched tone, structural-source pointers, skill path delegation, recurring-workflow proposals and reply artifacts. Discover a supported authoring workflow and inspect its validator without inventing the absent create-skill implementation. Missing authoring remains blocked or a provisional reduced draft; unknown trigger performance stays unverified. Opening a PR is deferred to task 21 and task 24 integration. Writes, execution and external delivery follow actual capability and authorization. Structural checks prove no host runtime pass.",
-    "upstreamCommit": "e5136d82418d2db3165ea1050d17577cd618cc05",
+    "upstreamCommit": "99743e9c151c8537cbbf1f98bb38f34ef3368453",
     "upstreamPath": "skills/poteto-mode/playbooks/authoring-a-skill.md",
     "upstreamSha256": "f6a13a445c360b48d6cd72780ac01955f45b82826476efe0e67c7559329407aa",
     "verification": {

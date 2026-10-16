@@ -12,7 +12,7 @@
       "sourcePath": "LICENSE"
     },
     "rationale": "Preserve the complete canonical principle and invocation metadata; add session capability discovery, authorization boundaries and explicit reduced or blocked limits. No comparison-port content or personal preferences added.",
-    "upstreamCommit": "e5136d82418d2db3165ea1050d17577cd618cc05",
+    "upstreamCommit": "99743e9c151c8537cbbf1f98bb38f34ef3368453",
     "upstreamPath": "skills/principle-foundational-thinking/SKILL.md",
     "upstreamSha256": "864b827e8199d946ce58beca0f89c4ed4099ed6e426fb698a3aaa45de2a9eea2",
     "verification": {

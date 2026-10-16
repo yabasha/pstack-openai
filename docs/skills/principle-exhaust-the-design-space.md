@@ -81,7 +81,7 @@ The following statuses come from the current parity inventory. Pending aggregate
 
 Destination: [skills/principle-exhaust-the-design-space/SKILL.md](../../skills/principle-exhaust-the-design-space/SKILL.md).
 
-Upstream commit: `e5136d82418d2db3165ea1050d17577cd618cc05`. SHA-256: `2de83d99f93f60ec6313455b0bc9aa9f0bfb93dd59f414f403691322db00d4db`.
+Upstream commit: `99743e9c151c8537cbbf1f98bb38f34ef3368453`. SHA-256: `2de83d99f93f60ec6313455b0bc9aa9f0bfb93dd59f414f403691322db00d4db`.
 
 Disposition: `runtime`. Aggregate adaptation status: `adapted-reviewed`.
 

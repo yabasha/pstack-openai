@@ -15,7 +15,7 @@
       "sourcePath": "LICENSE"
     },
     "rationale": "Canonical identifier case change has no registered portable agent equivalent. Retain role prompt and existing host-neutral binding.",
-    "upstreamCommit": "e5136d82418d2db3165ea1050d17577cd618cc05",
+    "upstreamCommit": "99743e9c151c8537cbbf1f98bb38f34ef3368453",
     "upstreamPath": "agents/comment-sicko.md",
     "upstreamSha256": "3e239e40b7b4b9beb2cf7f3ccc57f2388eb8b69bd1ba8ae888ef87ef6e0e2116",
     "verification": {
@@ -44,7 +44,7 @@
       "sourcePath": "LICENSE"
     },
     "rationale": "Delegate-only ownership and exact mode read while preserving portable package discovery and missing dependency behavior.",
-    "upstreamCommit": "e5136d82418d2db3165ea1050d17577cd618cc05",
+    "upstreamCommit": "99743e9c151c8537cbbf1f98bb38f34ef3368453",
     "upstreamPath": "agents/poteto-agent.md",
     "upstreamSha256": "979f18abd000d185a0b4c41a2a4111c0910596a7f5c81cbb571885bc721b2bf7",
     "verification": {

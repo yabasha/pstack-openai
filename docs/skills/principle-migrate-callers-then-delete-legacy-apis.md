@@ -82,7 +82,7 @@ The following statuses come from the current parity inventory. Pending aggregate
 
 Destination: [skills/principle-migrate-callers-then-delete-legacy-apis/SKILL.md](../../skills/principle-migrate-callers-then-delete-legacy-apis/SKILL.md).
 
-Upstream commit: `e5136d82418d2db3165ea1050d17577cd618cc05`. SHA-256: `09978915a4a11990cf0a9a02d9c08cc59e0b7a04c5c24b83aa560fbe4146f75b`.
+Upstream commit: `99743e9c151c8537cbbf1f98bb38f34ef3368453`. SHA-256: `580ad9bb1a0994ecb924321ba49efc38a2f85c64e22c76fb133f57a78272a2e6`.
 
 Disposition: `runtime`. Aggregate adaptation status: `adapted-reviewed`.
 

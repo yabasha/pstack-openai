@@ -915,18 +915,8 @@
     "path": "UPSTREAM.md",
     "rationale": "Exact quoted canonical metadata filename identifies source lineage; operative package uses the reviewed root manifest. No runtime source-host binding is introduced.",
     "reviewed": true,
-    "sha256": "d1d7d7536ed7f86f9877a9bc30888411548bbc6e14bdd730784120bcc46246e9",
+    "sha256": "cc686d46e4c152bac886cbd4cc41fab2980589c9ec3b8a5ea0e1d86bbc5a568f",
     "startLine": 23,
-    "token": ".cursor-plugin/plugin.json"
-  },
-  {
-    "endLine": 29,
-    "kind": "source-only",
-    "path": "docs/parity/support-map.md",
-    "rationale": "Exact quoted canonical metadata filename identifies source lineage; operative package uses the reviewed root manifest. No runtime source-host binding is introduced.",
-    "reviewed": true,
-    "sha256": "721cecc4d4b3a03ad47941dfff81a6ec9f57729edbc9eea13587b08d688ff7fb",
-    "startLine": 29,
     "token": ".cursor-plugin/plugin.json"
   },
   {
@@ -935,7 +925,7 @@
     "path": "docs/parity/support-map.md",
     "rationale": "Quoted source metadata identity; the operative package uses its portable manifest.",
     "reviewed": true,
-    "sha256": "4bb0a37639a88098f2f13c928e20667f73372c9de83bffa340d33d6934e03c03",
+    "sha256": "8355fd3a10393f0dcd22b4a5846a5490ffa6fcb4522e361c2f1b3a615e0f50ac",
     "startLine": 11,
     "token": ".cursor-plugin/plugin.json"
   }

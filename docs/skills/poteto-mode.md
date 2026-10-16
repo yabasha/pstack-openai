@@ -181,7 +181,7 @@ The following statuses come from the current parity inventory. Pending aggregate
 
 Destination: [skills/poteto-mode/SKILL.md](../../skills/poteto-mode/SKILL.md).
 
-Upstream commit: `e5136d82418d2db3165ea1050d17577cd618cc05`. SHA-256: `c5e6b605f46e5d9fbab31afa7a99d3d50680f2180d1fdfae3a924901bc52d99a`.
+Upstream commit: `99743e9c151c8537cbbf1f98bb38f34ef3368453`. SHA-256: `c5e6b605f46e5d9fbab31afa7a99d3d50680f2180d1fdfae3a924901bc52d99a`.
 
 Disposition: `runtime`. Aggregate adaptation status: `adapted-reviewed`.
 

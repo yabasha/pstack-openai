@@ -16,7 +16,7 @@
       "sourcePath": "LICENSE"
     },
     "rationale": "Port gh/origin discovery fixtures; retain local store, lock and path safety tests. Cover open-plus-closed reused branches, ambiguous open/history rows on both forges, capped head/child discovery and unchanged frontier bytes on rejection.",
-    "upstreamCommit": "e5136d82418d2db3165ea1050d17577cd618cc05",
+    "upstreamCommit": "99743e9c151c8537cbbf1f98bb38f34ef3368453",
     "upstreamPath": "skills/poteto-mode/scripts/orch/orch.test.ts",
     "upstreamSha256": "5e80b416bdcd68e4067690ce857345852fd2e0db3dcf3e25607999cd55b963d2",
     "verification": {
@@ -47,7 +47,7 @@
       "sourcePath": "LICENSE"
     },
     "rationale": "Port gh/origin forge option and PR base-chain command wording; retain local store ownership and Bun CLI behavior.",
-    "upstreamCommit": "e5136d82418d2db3165ea1050d17577cd618cc05",
+    "upstreamCommit": "99743e9c151c8537cbbf1f98bb38f34ef3368453",
     "upstreamPath": "skills/poteto-mode/scripts/orch/orch.ts",
     "upstreamSha256": "47c92c57e8276616d8de94665a126bd832e748036afa8d0ffdbacb7946decb5c",
     "verification": {
@@ -78,7 +78,7 @@
       "sourcePath": "LICENSE"
     },
     "rationale": "Port forge PR base-chain discovery while retaining canonical external store, inbox symlink and stale-lock safeguards. Bound gh discovery to 300 rows and reject cap saturation before frontier writes. Prefer a unique open PR over stale branch history and reject multiple open or ambiguous historical PRs.",
-    "upstreamCommit": "e5136d82418d2db3165ea1050d17577cd618cc05",
+    "upstreamCommit": "99743e9c151c8537cbbf1f98bb38f34ef3368453",
     "upstreamPath": "skills/poteto-mode/scripts/orch/store.ts",
     "upstreamSha256": "558cfda533e1ebe7c8d7842604f07e0be7618759cf129b4c2397a8e29516ecea",
     "verification": {

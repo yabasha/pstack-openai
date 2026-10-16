@@ -1,5 +1,7 @@
 # Verified frozen installation and current limits
 
+Current package: v0.2.1, with 54 root skills. See the [current validation and refresh record](../releases/0.2.1.md). The records below describe earlier package revisions; their 51-skill counts, dates and host results are historical and do not establish current workflow behavior.
+
 The approved version 0.1.0 is installed and enabled through the supported personal marketplace. Operative source remains 5d05ab2458f4cd73c44b24265a3a1920b98b8cf4. Both the source export and installed cache match all 726 frozen files and permission modes, with no extra files. Only the target marketplace entry and plugin enablement were added; existing plugins were retained.
 
 Independent installation review confirmed the frozen copies, actual fresh local runtime discovery of all 51 root skills, exclusion of the three nested Benny skills, and a fresh installed bro smoke invocation. Independent review of the complete report integration range 2103cf63676fab6a49682b8f292786e816641577..955191e370f3fc6fc69ca04e4018b45147ab0768 passed spec compliance and data quality with zero findings. Review SHA-256 is 337fbb66fc441d390675be848e65e51fff2871d430c11494d924d86887db4419. The reviewed committed-HEAD identity and rollback-provenance proof passed, with digest 205c4c9c0bd40cf6e4a1f0434e3e1cca66394aa334eba7fa396c797e955391b4. This later report-only revision requires its own actual-HEAD check; the approved installed copies are not refreshed by report changes.

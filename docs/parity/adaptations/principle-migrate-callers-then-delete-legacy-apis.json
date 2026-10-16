@@ -11,10 +11,10 @@
       "license": "MIT",
       "sourcePath": "LICENSE"
     },
-    "rationale": "Preserve the complete canonical caller migration principle and invocation metadata. Add session capability discovery, authorized write boundaries and explicit reduced or blocked outcomes. Comparison source has no necessary fallback and is not incorporated.",
-    "upstreamCommit": "e5136d82418d2db3165ea1050d17577cd618cc05",
+    "rationale": "Reviewed upstream editorial update; retain portable identity for README and host capability boundaries for adapted skills.",
+    "upstreamCommit": "99743e9c151c8537cbbf1f98bb38f34ef3368453",
     "upstreamPath": "skills/principle-migrate-callers-then-delete-legacy-apis/SKILL.md",
-    "upstreamSha256": "09978915a4a11990cf0a9a02d9c08cc59e0b7a04c5c24b83aa560fbe4146f75b",
+    "upstreamSha256": "580ad9bb1a0994ecb924321ba49efc38a2f85c64e22c76fb133f57a78272a2e6",
     "verification": {
       "chatgpt": {
         "evidence": [],

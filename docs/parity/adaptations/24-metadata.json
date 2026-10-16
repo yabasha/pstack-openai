@@ -10,7 +10,7 @@
       "sourcePath": "LICENSE"
     },
     "rationale": "Preserve dependency and OS-data exclusions; add root upstream downloads, task-local cache and explicitly named temporary/fixture directories. Remove the canonical blanket log exclusion so provenance and evidence logs remain eligible for version control.",
-    "upstreamCommit": "e5136d82418d2db3165ea1050d17577cd618cc05",
+    "upstreamCommit": "99743e9c151c8537cbbf1f98bb38f34ef3368453",
     "upstreamPath": ".gitignore",
     "upstreamSha256": "8ffe9de56bd30c1a95cd945262d6e3ac355ada4111551dde41f67851b9f1fc55",
     "verification": {
@@ -35,7 +35,7 @@
       "sourcePath": "LICENSE"
     },
     "rationale": "Retain the complete canonical MIT license byte-for-byte, including Copyright (c) 2026 Lauren Tan and the full permission and warranty notice.",
-    "upstreamCommit": "e5136d82418d2db3165ea1050d17577cd618cc05",
+    "upstreamCommit": "99743e9c151c8537cbbf1f98bb38f34ef3368453",
     "upstreamPath": "LICENSE",
     "upstreamSha256": "bc957ca6bee02792566a1a028d105e02e247c6e77cf057061674273da77b200e",
     "verification": {
@@ -68,10 +68,10 @@
       "license": "MIT",
       "sourcePath": "LICENSE"
     },
-    "rationale": "Update candidate lineage and catalog counts while preserving the documented host verification limits and permission boundaries.",
-    "upstreamCommit": "e5136d82418d2db3165ea1050d17577cd618cc05",
+    "rationale": "Reviewed upstream editorial update; retain portable identity for README and host capability boundaries for adapted skills.",
+    "upstreamCommit": "99743e9c151c8537cbbf1f98bb38f34ef3368453",
     "upstreamPath": "README.md",
-    "upstreamSha256": "e5c8a28b8fb9dc3a8075030b45ed60681af9628628c59b17554f4f5cb775cd52",
+    "upstreamSha256": "98b107ff8b5e0468dfefbd4c9892a09b7b372958c4131bc7e2d7b4d4182aaa75",
     "verification": {
       "chatgpt": {
         "evidence": [],

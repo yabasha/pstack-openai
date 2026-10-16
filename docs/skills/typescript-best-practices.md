@@ -84,7 +84,7 @@ The following statuses come from the current parity inventory. Pending aggregate
 
 Destination: [skills/typescript-best-practices/SKILL.md](../../skills/typescript-best-practices/SKILL.md).
 
-Upstream commit: `e5136d82418d2db3165ea1050d17577cd618cc05`. SHA-256: `28f9e61710e205f6f3c5476f333483cff0e988f6a5b639e2faad536344b40c5e`.
+Upstream commit: `99743e9c151c8537cbbf1f98bb38f34ef3368453`. SHA-256: `28f9e61710e205f6f3c5476f333483cff0e988f6a5b639e2faad536344b40c5e`.
 
 Disposition: `runtime`. Aggregate adaptation status: `adapted-reviewed`.
 
@@ -95,7 +95,7 @@ Disposition: `runtime`. Aggregate adaptation status: `adapted-reviewed`.
 
 Destination: [skills/typescript-best-practices/references/patterns.md](../../skills/typescript-best-practices/references/patterns.md).
 
-Upstream commit: `e5136d82418d2db3165ea1050d17577cd618cc05`. SHA-256: `faa1362055374452efccac1b629677c61acfb0bcc6c4e3311836b5715638ee18`.
+Upstream commit: `99743e9c151c8537cbbf1f98bb38f34ef3368453`. SHA-256: `faa1362055374452efccac1b629677c61acfb0bcc6c4e3311836b5715638ee18`.
 
 Disposition: `runtime`. Aggregate adaptation status: `unchanged-reviewed`.
 

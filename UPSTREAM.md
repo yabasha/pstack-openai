@@ -14,7 +14,7 @@ Import inspection date: 2026-10-07, Asia/Amman.
 
 Both downloaded archives matched the approved digests before extraction. Extraction rejected absolute paths, parent traversal, links, and non-regular members. Source files were read as data; downloaded scripts were not executed.
 
-The [baseline paths](docs/parity/baseline-paths.txt) record all 164 canonical files, including 51 root skills, 24 principle leaves, 23 poteto playbooks and three nested Benny skills. Principles are included in the root count; all 113 other files, including playbooks, remain accounted for. The [inventory](docs/parity/inventory.json) retains every original file digest and records its reviewed destination and dependencies. Both host verification statuses remain not-run. Local structural closure does not establish installed discovery, worker support or workflow behavior.
+The [baseline paths](docs/parity/baseline-paths.txt) record all 169 current source files, including 54 root skills, 24 principle leaves, 23 poteto playbooks and three nested Benny skills. Principles are included in the root count; all 115 other files, including playbooks, remain accounted for. The [inventory](docs/parity/inventory.json) retains every current source file digest and records its reviewed destination and dependencies. Both host verification statuses remain not-run. Local structural closure does not establish installed discovery, worker support or workflow behavior.
 
 The comparison port contains 26 root skills and remains a reference. Its archive and notice informed lineage checks; reviewed adaptations preserve the complete canonical baseline. See [NOTICE.md](NOTICE.md) and the [support map](docs/parity/support-map.md) for retained attribution and additional port-file provenance.
 
@@ -46,3 +46,8 @@ The inventory stages this candidate. The accepted baseline above remains histori
 ## Accepted source baseline, 2026-10-15
 
 Port 0.2.0 accepts official pstack 0.15.25 at `e5136d82418d2db3165ea1050d17577cd618cc05` after user authorization and reviewed validation. The [acceptance receipt](docs/parity/upstream-manifests/accepted.json) binds the exact manifest and [source acceptance evidence](docs/releases/0.2.0.md). Installed-host and workflow evidence remain separate. The unaccepted-candidate section above records the earlier staging event.
+
+## Unaccepted candidate 99743e9c151c8537cbbf1f98bb38f34ef3368453
+
+Candidate version 0.2.1. Archive SHA-256 5122bc6ef8d8f9a216915d90af410c987196e799e78974f14e7c7af5f3560088. Review SHA-256 805f692cc98d8679869f018b79b761706946e70f5313df2a822bdae0ce08bc7e.
+The inventory stages this candidate. The accepted baseline above remains historical evidence. Structural checks, helper regression tests, and affected host cases must run before separate acceptance.

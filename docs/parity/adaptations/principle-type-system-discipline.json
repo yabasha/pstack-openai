@@ -14,10 +14,10 @@
       "license": "MIT",
       "sourcePath": "LICENSE"
     },
-    "rationale": "Retain complete current host adaptation; upstream prose consolidation does not add substantive required behavior.",
-    "upstreamCommit": "e5136d82418d2db3165ea1050d17577cd618cc05",
+    "rationale": "Reviewed upstream editorial update; retain portable identity for README and host capability boundaries for adapted skills.",
+    "upstreamCommit": "99743e9c151c8537cbbf1f98bb38f34ef3368453",
     "upstreamPath": "skills/principle-type-system-discipline/SKILL.md",
-    "upstreamSha256": "2e492cef34bb25a20b9115df61f9ef3a9837e3fda144ffda8079e5f45a1b72e8",
+    "upstreamSha256": "5cdaf79785e3c12b2592b9469ee8c272143eb86ab7a18d8382197cea5fd30106",
     "verification": {
       "chatgpt": {
         "evidence": [],

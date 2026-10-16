@@ -10,7 +10,7 @@
       "sourcePath": "LICENSE"
     },
     "rationale": "Retain equivalent complete prose rules and always-apply user preference; upstream edits are editorial and remove that invocation preference.",
-    "upstreamCommit": "e5136d82418d2db3165ea1050d17577cd618cc05",
+    "upstreamCommit": "99743e9c151c8537cbbf1f98bb38f34ef3368453",
     "upstreamPath": "skills/unslop/SKILL.md",
     "upstreamSha256": "ccab208e315ce05e2fab8eeee2f7879f1289b5c6844840b2d307adf31c79144f",
     "verification": {

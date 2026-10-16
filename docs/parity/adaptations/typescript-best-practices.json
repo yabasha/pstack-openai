@@ -15,7 +15,7 @@
       "sourcePath": "LICENSE"
     },
     "rationale": "Preserve complete canonical metadata, rules, examples reference and prerequisite principles. Add session read, write and execution boundaries with explicit partial, unsaved and unperformed outcomes. No source typing practice changes.",
-    "upstreamCommit": "e5136d82418d2db3165ea1050d17577cd618cc05",
+    "upstreamCommit": "99743e9c151c8537cbbf1f98bb38f34ef3368453",
     "upstreamPath": "skills/typescript-best-practices/SKILL.md",
     "upstreamSha256": "28f9e61710e205f6f3c5476f333483cff0e988f6a5b639e2faad536344b40c5e",
     "verification": {
@@ -43,7 +43,7 @@
       "sourcePath": "LICENSE"
     },
     "rationale": "Retain the complete canonical TypeScript patterns reference byte-for-byte, including all concrete examples and exceptions, for the typed-boundary caller.",
-    "upstreamCommit": "e5136d82418d2db3165ea1050d17577cd618cc05",
+    "upstreamCommit": "99743e9c151c8537cbbf1f98bb38f34ef3368453",
     "upstreamPath": "skills/typescript-best-practices/references/patterns.md",
     "upstreamSha256": "faa1362055374452efccac1b629677c61acfb0bcc6c4e3311836b5715638ee18",
     "verification": {

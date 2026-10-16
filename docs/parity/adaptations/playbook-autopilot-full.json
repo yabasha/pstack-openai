@@ -26,7 +26,7 @@
       "sourcePath": "LICENSE"
     },
     "rationale": "Adopt bounded review cadence, explicit leases, trunk impact checks, durable root-readable records, gate countersigns and ketchup reporting without waiving independent or installation/merge gates.",
-    "upstreamCommit": "e5136d82418d2db3165ea1050d17577cd618cc05",
+    "upstreamCommit": "99743e9c151c8537cbbf1f98bb38f34ef3368453",
     "upstreamPath": "skills/poteto-mode/playbooks/autopilot-full.md",
     "upstreamSha256": "acf4f4a58c11045f9d3e8807d907a877e61ca6432b079f1087d7d30fc931566f",
     "verification": {

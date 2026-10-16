@@ -1,5 +1,5 @@
 {
-  "auditedPackageCommit": "9b01be00ed5d4c14105432b165ad8a93853d2aca",
+  "auditedPackageCommit": "f3c76a83068ac2bcff11deb9ea2900534ea39b72",
   "counts": {
     "files": 169,
     "playbooks": 23,
@@ -1460,7 +1460,7 @@
         "workers-models"
       ],
       "destinationPath": "plugin.json",
-      "destinationSha256": "82ca2881f648fb65777c545da8a9fd3792caa5091f25a4ae6478f7e47f6d6e6c",
+      "destinationSha256": "409ca795f6cec4360d0c029d4bfcf42fe853daff8166130696ef610aab9a6aa1",
       "kind": "support",
       "packageDependencies": [
         "assets/logo.png"
@@ -1542,7 +1542,7 @@
         "repository-access"
       ],
       "destinationPath": "README.md",
-      "destinationSha256": "30f948cf4a5f3fecd88fa09619204bca6d7355c0e87e265e76a3d3f47420c1aa",
+      "destinationSha256": "d6968ffdf6dbc6019824e5613ca1b2e8c7078d914cbf91c0f4730c332aac47ec",
       "kind": "support",
       "packageDependencies": [
         "UPSTREAM.md",
@@ -1647,7 +1647,7 @@
         }
       ],
       "sourcePath": "README.md",
-      "sourceSha256": "e5c8a28b8fb9dc3a8075030b45ed60681af9628628c59b17554f4f5cb775cd52"
+      "sourceSha256": "98b107ff8b5e0468dfefbd4c9892a09b7b372958c4131bc7e2d7b4d4182aaa75"
     },
     {
       "dependencyIds": [
@@ -4936,12 +4936,12 @@
     {
       "dependencyIds": [],
       "destinationPath": "skills/interrogate/references/lead-judgment.md",
-      "destinationSha256": "6e5bdf5670eb34017692e9b6c546f36ac7552e6bb9f3f2f3429164fcc46a9361",
+      "destinationSha256": "355f5195a76bc75a655125292369f2a8231a2b61fabe5188d8f1386060922b87",
       "kind": "support",
       "packageDependencies": [],
       "references": [],
       "sourcePath": "skills/interrogate/references/lead-judgment.md",
-      "sourceSha256": "6e5bdf5670eb34017692e9b6c546f36ac7552e6bb9f3f2f3429164fcc46a9361"
+      "sourceSha256": "355f5195a76bc75a655125292369f2a8231a2b61fabe5188d8f1386060922b87"
     },
     {
       "dependencyIds": [
@@ -8925,14 +8925,14 @@
     {
       "dependencyIds": [],
       "destinationPath": "skills/principle-migrate-callers-then-delete-legacy-apis/SKILL.md",
-      "destinationSha256": "70153623b1512cfcdb15a0cdda9e0514fe036cf580f588443925635fc57b0ba7",
+      "destinationSha256": "6c5ee040a496d1961f7b1b0cb35f1dd3973e9847405dd0e099bc8f44cc98afd9",
       "kind": "root-skill",
       "packageDependencies": [
         "references/host-capabilities.md"
       ],
       "references": [],
       "sourcePath": "skills/principle-migrate-callers-then-delete-legacy-apis/SKILL.md",
-      "sourceSha256": "09978915a4a11990cf0a9a02d9c08cc59e0b7a04c5c24b83aa560fbe4146f75b"
+      "sourceSha256": "580ad9bb1a0994ecb924321ba49efc38a2f85c64e22c76fb133f57a78272a2e6"
     },
     {
       "dependencyIds": [
@@ -9147,7 +9147,7 @@
         "workers-models"
       ],
       "destinationPath": "skills/principle-type-system-discipline/SKILL.md",
-      "destinationSha256": "65649b9c31d43b481ab4cf299ce51441b5077d2cfb964369b151df0889b484e9",
+      "destinationSha256": "b2bdbfba8e1b448a3d3e3eb9036f0e6a1bea757b43c05e6c67bedcc2b11a45ba",
       "kind": "root-skill",
       "packageDependencies": [
         "references/host-capabilities.md",
@@ -9158,14 +9158,12 @@
       "references": [
         {
           "dependencyId": "workers-models",
-          "destinationLines": [
-            37
-          ],
+          "destinationLines": [],
           "sourceLines": []
         }
       ],
       "sourcePath": "skills/principle-type-system-discipline/SKILL.md",
-      "sourceSha256": "2e492cef34bb25a20b9115df61f9ef3a9837e3fda144ffda8079e5f45a1b72e8"
+      "sourceSha256": "5cdaf79785e3c12b2592b9469ee8c272143eb86ab7a18d8382197cea5fd30106"
     },
     {
       "dependencyIds": [
@@ -9752,7 +9750,7 @@
         "history-persistence"
       ],
       "destinationPath": "skills/swarm/SKILL.md",
-      "destinationSha256": "d58ab96ae605d49ff034e96416807ba11be9997368e18c1700c00e4bb0fd74f8",
+      "destinationSha256": "e47828ec28c6d0e204a03e75dda5a3c9065b84cd3d59cefefe4ccdd32a46e919",
       "kind": "root-skill",
       "packageDependencies": [
         "references/host-capabilities.md",
@@ -9762,29 +9760,17 @@
       "references": [
         {
           "dependencyId": "workers-models",
-          "destinationLines": [
-            15,
-            27,
-            28,
-            32,
-            34,
-            36,
-            42,
-            44,
-            50
-          ],
+          "destinationLines": [],
           "sourceLines": []
         },
         {
           "dependencyId": "history-persistence",
-          "destinationLines": [
-            46
-          ],
+          "destinationLines": [],
           "sourceLines": []
         }
       ],
       "sourcePath": "skills/swarm/SKILL.md",
-      "sourceSha256": "c8fe1b28282e7a051a4041a146a11f076e0fd95252bb010106a58209805303d5"
+      "sourceSha256": "031657cb81e490f9aed5c75d6ff2a4fda35ccafbaf72be604e59481cc4080cdc"
     },
     {
       "dependencyIds": [
@@ -10456,5 +10442,5 @@
       "sourceSha256": "11c62671aa7b7a6e3d36929ffe2b59bf95e6ca664eee4d93e6ee527dd3390ddb"
     }
   ],
-  "sourceCommit": "e5136d82418d2db3165ea1050d17577cd618cc05"
+  "sourceCommit": "99743e9c151c8537cbbf1f98bb38f34ef3368453"
 }

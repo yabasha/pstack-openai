@@ -85,7 +85,7 @@ The following statuses come from the current parity inventory. Pending aggregate
 
 Destination: [skills/how/SKILL.md](../../skills/how/SKILL.md).
 
-Upstream commit: `e5136d82418d2db3165ea1050d17577cd618cc05`. SHA-256: `08a00079bb15b4258874ac3ff62d4ca7e94350ffedb521d0fd296dc9dd21904e`.
+Upstream commit: `99743e9c151c8537cbbf1f98bb38f34ef3368453`. SHA-256: `08a00079bb15b4258874ac3ff62d4ca7e94350ffedb521d0fd296dc9dd21904e`.
 
 Disposition: `runtime`. Aggregate adaptation status: `adapted-reviewed`.
 
@@ -96,7 +96,7 @@ Disposition: `runtime`. Aggregate adaptation status: `adapted-reviewed`.
 
 Destination: [skills/how/references/explainer-prompt.md](../../skills/how/references/explainer-prompt.md).
 
-Upstream commit: `e5136d82418d2db3165ea1050d17577cd618cc05`. SHA-256: `ddb89cebefc24e2b54517a331aedfe045b6971e101f45c71b8cef4cccff45bff`.
+Upstream commit: `99743e9c151c8537cbbf1f98bb38f34ef3368453`. SHA-256: `ddb89cebefc24e2b54517a331aedfe045b6971e101f45c71b8cef4cccff45bff`.
 
 Disposition: `runtime`. Aggregate adaptation status: `adapted-reviewed`.
 
@@ -107,7 +107,7 @@ Disposition: `runtime`. Aggregate adaptation status: `adapted-reviewed`.
 
 Destination: [skills/how/references/explorer-prompt.md](../../skills/how/references/explorer-prompt.md).
 
-Upstream commit: `e5136d82418d2db3165ea1050d17577cd618cc05`. SHA-256: `6300128385ee940fd42ecb84b0e623435440a2dc283eae54ee4a52ba56947ba1`.
+Upstream commit: `99743e9c151c8537cbbf1f98bb38f34ef3368453`. SHA-256: `6300128385ee940fd42ecb84b0e623435440a2dc283eae54ee4a52ba56947ba1`.
 
 Disposition: `runtime`. Aggregate adaptation status: `adapted-reviewed`.
 

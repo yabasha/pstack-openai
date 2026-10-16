@@ -1,6 +1,6 @@
 # Choose a workflow
 
-Read the [51-skill catalog](../skills/README.md) for complete triggers, inputs, outputs, dependencies and cases. The [24 principles](../principles/README.md) support decisions inside workflows. A workflow summary does not replace reading its full skill and required contracts.
+Read the [54-skill catalog](../skills/README.md) for complete triggers, inputs, outputs, dependencies and cases. The [24 principles](../principles/README.md) support decisions inside workflows. A workflow summary does not replace reading its full skill and required contracts.
 
 | Request | Start with | Expected artifact |
 | --- | --- | --- |

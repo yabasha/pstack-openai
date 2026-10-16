@@ -81,7 +81,7 @@ The following statuses come from the current parity inventory. Pending aggregate
 
 Destination: [skills/principle-laziness-protocol/SKILL.md](../../skills/principle-laziness-protocol/SKILL.md).
 
-Upstream commit: `e5136d82418d2db3165ea1050d17577cd618cc05`. SHA-256: `1be6e7a435f26a75a76eb848b9c3d611b9977d0f5822361753244da25ca3ca45`.
+Upstream commit: `99743e9c151c8537cbbf1f98bb38f34ef3368453`. SHA-256: `1be6e7a435f26a75a76eb848b9c3d611b9977d0f5822361753244da25ca3ca45`.
 
 Disposition: `runtime`. Aggregate adaptation status: `adapted-reviewed`.
 

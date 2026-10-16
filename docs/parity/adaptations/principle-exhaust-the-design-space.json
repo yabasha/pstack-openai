@@ -12,7 +12,7 @@
       "sourcePath": "LICENSE"
     },
     "rationale": "Retain complete independently invocable procedure and port limits; upstream centralization into poteto-mode removes meaningful standalone instructions.",
-    "upstreamCommit": "e5136d82418d2db3165ea1050d17577cd618cc05",
+    "upstreamCommit": "99743e9c151c8537cbbf1f98bb38f34ef3368453",
     "upstreamPath": "skills/principle-exhaust-the-design-space/SKILL.md",
     "upstreamSha256": "2de83d99f93f60ec6313455b0bc9aa9f0bfb93dd59f414f403691322db00d4db",
     "verification": {
