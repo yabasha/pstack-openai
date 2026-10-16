@@ -1,32 +1,32 @@
 {
   "caseId": "scoped-history",
-  "packageVersion": "0.1.0",
-  "packageCommit": "f4623636a287bea2aa79c4b2234a53d20a5f193c",
+  "packageVersion": "0.1.1",
+  "packageCommit": "e84370aad95301edd65cd0348ed703de716861c4",
   "host": "codex",
-  "hostMode": "source-only provenance refresh; fresh installed-host case not run",
+  "hostMode": "Unattempted current candidate; historical 0.1.0 outcomes are kept separately",
   "date": "2026-10-16",
   "input": "Recall my work on the cache subsystem in the active workspace over the last seven days. I supply a complete state capsule with paths, branch and change. Check current state independently. Repeat without the capsule, with three relevant chats, a shipped then reverted fix, unavailable error tracking, and one current PR status that contradicts history. Also distinguish a partial capsule, a single-session pickup, pure activity recall and an explicit all-history request.",
-  "observedOutput": "Not run against frozen revision f4623636a287bea2aa79c4b2234a53d20a5f193c. The metadata and regression-test changes require a new freeze. Earlier observations remain in Git history under 5d05ab2458f4cd73c44b24265a3a1920b98b8cf4; none establishes installed discovery or behavioral support for this revision.",
-  "status": "blocked",
-  "execution": "unavailable",
+  "observedOutput": "Not run against this version 0.1.1 source freeze. Version 0.1.0 observations remain bound to f4623636a287bea2aa79c4b2234a53d20a5f193c and are not transferred.",
+  "status": "not-run",
+  "execution": "not-run",
   "sourcePaths": [
     "skills/recall/SKILL.md"
   ],
   "documentedCapabilities": [
-    "docs/maintenance/rollback.md requires immutable tested-package provenance and exact revision-bound observations."
+    "The immutable tested-package policy requires observations tied to this exact source freeze."
   ],
   "exposedTools": [],
   "artifacts": [
-    "docs/releases/remaining-controller-report.md"
+    "docs/testing/codex.md",
+    "docs/releases/host-evaluation/codex/scoped-history.md"
   ],
   "limits": [
-    "No fresh installed-host discovery or case execution was observed for this frozen revision.",
-    "This record accounts for an unrun case; source checks cannot establish host behavior.",
-    "Historical observations for 5d05ab2458f4cd73c44b24265a3a1920b98b8cf4 remain in Git history and are not transferred."
+    "Fresh candidate verification is pending; this is an unrun record, not a claimed capability denial.",
+    "Historical baseline results, including failures and reduced outcomes, cannot qualify a different source freeze."
   ],
   "priorActionIdentities": [],
   "permissions": {
-    "execution": "unavailable",
+    "execution": "granted",
     "writes": "granted",
     "externalActions": "denied"
   },

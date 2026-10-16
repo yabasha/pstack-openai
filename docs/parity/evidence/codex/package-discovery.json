@@ -1,14 +1,14 @@
 {
   "caseId": "package-discovery",
-  "packageVersion": "0.1.0",
-  "packageCommit": "f4623636a287bea2aa79c4b2234a53d20a5f193c",
+  "packageVersion": "0.1.1",
+  "packageCommit": "e84370aad95301edd65cd0348ed703de716861c4",
   "host": "codex",
-  "hostMode": "fresh isolated CLI 0.162.1 app-server stdio",
+  "hostMode": "Unattempted current candidate; historical 0.1.0 outcomes are kept separately",
   "date": "2026-10-16",
   "input": "In each fresh host, after separately authorized supported package loading, inspect the actual installed copy and enumerate its registered root skills. Preserve the exact final frozen package identity and distinguish an unavailable discovery operation from readable local source.",
-  "observedOutput": "A fresh isolated CLI app-server observed the pinned plugin installed and enabled. Both plugin/read and skills/list enumerated exactly 51 canonical roots and no nested Benny skills. Source export and installed cache matched all 726 frozen paths, bytes and modes.",
-  "status": "pass",
-  "execution": "direct",
+  "observedOutput": "Not run against this version 0.1.1 source freeze. Version 0.1.0 observations remain bound to f4623636a287bea2aa79c4b2234a53d20a5f193c and are not transferred.",
+  "status": "not-run",
+  "execution": "not-run",
   "sourcePaths": [
     ".cursor-plugin/plugin.json",
     "automations/benny/skills/reproduce-and-fix-issues/SKILL.md",
@@ -67,18 +67,15 @@
     "skills/why/SKILL.md"
   ],
   "documentedCapabilities": [
-    "docs/parity/cases/package-discovery.json requires exact source freeze, observed installed-copy identity, all 51 roots and three nested Benny exclusions."
+    "The immutable tested-package policy requires observations tied to this exact source freeze."
   ],
-  "exposedTools": [
-    "tools.exec_command"
-  ],
+  "exposedTools": [],
   "artifacts": [
-    "docs/parity/evidence/codex/authorization-capability-check.md",
     "docs/testing/codex.md"
   ],
   "limits": [
-    "Discovery verified only in the isolated CLI profile. The existing personal 0.2.0 installation was not replaced.",
-    "No desktop-window observation, model invocation or broader workflow acceptance is inferred."
+    "Fresh candidate verification is pending; this is an unrun record, not a claimed capability denial.",
+    "Historical baseline results, including failures and reduced outcomes, cannot qualify a different source freeze."
   ],
   "priorActionIdentities": [],
   "permissions": {
@@ -90,21 +87,5 @@
     "requested": "unknown",
     "actual": "unknown"
   },
-  "successfulOperations": [
-    {
-      "operation": "discover-package",
-      "tool": "tools.exec_command",
-      "evidence": "docs/testing/codex.md"
-    },
-    {
-      "operation": "enumerate-skills",
-      "tool": "tools.exec_command",
-      "evidence": "docs/testing/codex.md"
-    },
-    {
-      "operation": "inspect-installed-copy",
-      "tool": "tools.exec_command",
-      "evidence": "docs/parity/evidence/codex/authorization-capability-check.md"
-    }
-  ]
+  "successfulOperations": []
 }

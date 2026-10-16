@@ -1,3 +1,9 @@
+# Current candidate 0.1.1, verification pending
+
+The operative source freeze is `e84370aad95301edd65cd0348ed703de716861c4`. Current candidate cases are explicitly not run until fresh observations exist. Historical version 0.1.0 results name `f4623636a287bea2aa79c4b2234a53d20a5f193c`; no outcomes transfer between them. The current candidate is not fully qualified for release.
+
+## Historical checklist
+
 # Current host discovery results
 
 Frozen source f4623636a287bea2aa79c4b2234a53d20a5f193c: discovery passes independently in Codex CLI and personal ChatGPT web. Each host has one pass and 104 blocked workflow cases. Cloud host metadata normalization is disclosed in the current host report; broad workflow qualification remains unverified.

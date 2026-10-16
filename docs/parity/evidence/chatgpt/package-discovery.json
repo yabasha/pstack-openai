@@ -1,14 +1,14 @@
 {
   "caseId": "package-discovery",
-  "packageVersion": "0.1.0",
-  "packageCommit": "f4623636a287bea2aa79c4b2234a53d20a5f193c",
+  "packageVersion": "0.1.1",
+  "packageCommit": "e84370aad95301edd65cd0348ed703de716861c4",
   "host": "chatgpt",
-  "hostMode": "signed-in personal ChatGPT web; private cloud plugin; fresh selected-plugin conversation",
+  "hostMode": "Unattempted current candidate; historical 0.1.0 outcomes are kept separately",
   "date": "2026-10-16",
   "input": "In each fresh host, after separately authorized supported package loading, inspect the actual installed copy and enumerate its registered root skills. Preserve the exact final frozen package identity and distinguish an unavailable discovery operation from readable local source.",
-  "observedOutput": "The signed-in personal ChatGPT plugin page showed the installed private plugin, version 0.1.0, and all 51 registered skills. Expanded UI enumeration matched every canonical root after the two display-name mappings, with no nested Benny skills. The private cloud release is bound to the exact uploaded frozen archive digest. Its downloaded archive preserves 725 source files exactly, rewrites only plugin.json publisher/interface metadata, and adds a host-generated compatibility manifest. A fresh chat selected the plugin and returned the recorded smoke response; this is not a separate behavioral case pass.",
-  "status": "pass",
-  "execution": "direct",
+  "observedOutput": "Not run against this version 0.1.1 source freeze. Version 0.1.0 observations remain bound to f4623636a287bea2aa79c4b2234a53d20a5f193c and are not transferred.",
+  "status": "not-run",
+  "execution": "not-run",
   "sourcePaths": [
     ".cursor-plugin/plugin.json",
     "automations/benny/skills/reproduce-and-fix-issues/SKILL.md",
@@ -67,48 +67,25 @@
     "skills/why/SKILL.md"
   ],
   "documentedCapabilities": [
-    "docs/parity/cases/package-discovery.json requires exact source freeze, observed installed-copy identity, all 51 roots and three nested Benny exclusions."
+    "The immutable tested-package policy requires observations tied to this exact source freeze."
   ],
-  "exposedTools": [
-    "mcp__cua_repl.js",
-    "mcp__codex_apps__plugin_creator_get_owned_plugin_archive",
-    "tools.exec_command"
-  ],
+  "exposedTools": [],
   "artifacts": [
-    "docs/parity/evidence/chatgpt/authorization-support-check.md",
     "docs/testing/chatgpt.md"
   ],
   "limits": [
-    "Cloud import normalizes publisher and interface metadata and generates .codex-plugin/plugin.json. The cloud copy is not byte-identical to the source manifest.",
-    "The source freeze is bound by the exact uploaded archive digest and the observed private plugin/release IDs.",
-    "Only discovery passes. The smoke response is recorded separately and does not establish the registered plain-restate acceptance case or broad host parity.",
-    "Desktop access remains denied by the computer-use tool. This is independent web-host verification."
+    "Fresh candidate verification is pending; this is an unrun record, not a claimed capability denial.",
+    "Historical baseline results, including failures and reduced outcomes, cannot qualify a different source freeze."
   ],
   "priorActionIdentities": [],
   "permissions": {
     "execution": "granted",
     "writes": "granted",
-    "externalActions": "granted"
+    "externalActions": "denied"
   },
   "models": {
     "requested": "unknown",
     "actual": "unknown"
   },
-  "successfulOperations": [
-    {
-      "operation": "discover-package",
-      "tool": "mcp__cua_repl.js",
-      "evidence": "docs/testing/chatgpt.md"
-    },
-    {
-      "operation": "enumerate-skills",
-      "tool": "mcp__cua_repl.js",
-      "evidence": "docs/testing/chatgpt.md"
-    },
-    {
-      "operation": "inspect-installed-copy",
-      "tool": "tools.exec_command",
-      "evidence": "docs/parity/evidence/chatgpt/authorization-support-check.md"
-    }
-  ]
+  "successfulOperations": []
 }
