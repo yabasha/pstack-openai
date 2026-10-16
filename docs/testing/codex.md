@@ -38,8 +38,8 @@ Frozen source: f4623636a287bea2aa79c4b2234a53d20a5f193c. Coverage: **104/104 gra
     "graded": 104,
     "missing": 0,
     "pass": 27,
-    "reduced-pass": 57,
-    "blocked": 20,
+    "reduced-pass": 59,
+    "blocked": 18,
     "fail": 0
   },
   "complete": true,
@@ -54,7 +54,7 @@ All responses, reviews, variants, limits, historical failures and case-owned tex
 | Case | Accepted result | Latest graded attempt | Attempts |
 |---|---|---|---|
 | [absent-workers](../releases/host-evaluation/codex/absent-workers.md) | pass | grades-native-durable-00.json#0 | 2 |
-| [accessible-trace](../releases/host-evaluation/codex/accessible-trace.md) | reduced-pass | grades-native-06.json#3 | 1 |
+| [accessible-trace](../releases/host-evaluation/codex/accessible-trace.md) | reduced-pass | grades-native-durable-04.json#0 | 2 |
 | [adversarial-review](../releases/host-evaluation/codex/adversarial-review.md) | reduced-pass | grades-native-durable-01.json#0 | 2 |
 | [alternatives](../releases/host-evaluation/codex/alternatives.md) | pass | grades-native-00-01.json#0 | 1 |
 | [approval-before-edit](../releases/host-evaluation/codex/approval-before-edit.md) | reduced-pass | grades-native-durable-01.json#1 | 2 |
@@ -69,14 +69,14 @@ All responses, reviews, variants, limits, historical failures and case-owned tex
 | [benny-unsupported-trigger](../releases/host-evaluation/codex/benny-unsupported-trigger.md) | reduced-pass | grades-native-00-01.json#5 | 1 |
 | [benny-untrusted-marker](../releases/host-evaluation/codex/benny-untrusted-marker.md) | reduced-pass | grades-native-00-01.json#8 | 1 |
 | [boundary-design](../releases/host-evaluation/codex/boundary-design.md) | pass | grades-native-durable-02.json#1 | 2 |
-| [bounded-improvement](../releases/host-evaluation/codex/bounded-improvement.md) | blocked | grades-native-07.json#1 | 1 |
+| [bounded-improvement](../releases/host-evaluation/codex/bounded-improvement.md) | reduced-pass | grades-native-durable-04.json#1 | 2 |
 | [bounded-poll](../releases/host-evaluation/codex/bounded-poll.md) | blocked | grades-native-rerun-04.json#0 | 2 |
 | [caller-migration](../releases/host-evaluation/codex/caller-migration.md) | pass | grades-native-rerun-01.json#0 | 2 |
 | [cancelled-worker](../releases/host-evaluation/codex/cancelled-worker.md) | reduced-pass | grades-native-durable-00.json#2 | 2 |
 | [candidate-cross-review](../releases/host-evaluation/codex/candidate-cross-review.md) | pass | grades-native-durable-02.json#2 | 2 |
 | [chatgpt-setup-from-readme](../releases/host-evaluation/codex/chatgpt-setup-from-readme.md) | reduced-pass | grades-native-00-01.json#10 | 1 |
 | [codex-setup-from-readme](../releases/host-evaluation/codex/codex-setup-from-readme.md) | reduced-pass | grades-native-00-01.json#11 | 1 |
-| [comparable-revisions](../releases/host-evaluation/codex/comparable-revisions.md) | blocked | grades-native-07.json#5 | 1 |
+| [comparable-revisions](../releases/host-evaluation/codex/comparable-revisions.md) | reduced-pass | grades-native-durable-04.json#2 | 2 |
 | [contiguous-verified-stack](../releases/host-evaluation/codex/contiguous-verified-stack.md) | blocked | grades-native-durable-03.json#2 | 2 |
 | [dead-path](../releases/host-evaluation/codex/dead-path.md) | pass | grades-native-rerun-01.json#1 | 2 |
 | [decision-trail](../releases/host-evaluation/codex/decision-trail.md) | reduced-pass | grades-native-durable-01.json#2 | 2 |

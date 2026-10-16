@@ -10,9 +10,11 @@ The evaluation exposed insufficient execution/persistence gates for uncertain re
 
 Fresh 0.1.2 web discovery disproved the earlier page-level exclusion assumption:51 cloud roots but54 executor entries. Version 0.1.3 renames the 3 nested helper destinations to REFERENCE.md, updates operational paths/mappings and removes the obsolete cloud files. The source identities remain canonical and unchanged.
 
-Focused regression, full-package mapping/update and independent review checks passed. The final committed-tree offline suite is pending.
+The final offline suite passed: 229 tests in 331.408 seconds. The controller report records source bindings and retained outputs.
 
-Independent reviews used the available same-family runtime; different-family review remains unverified. Requested roles are not proof of model diversity.
+The installed test archives were exported from the operative freeze and retain its pre-observation report metadata. Later repository report commits carry current observations. A future publication should export a report commit after its immutable-source check passes. This discovery proof does not qualify embedded historical reports or current workflows.
+
+Earlier independent reviews did not establish different-family diversity. The final trail reviewer completed the review, but its actual model was not exposed; different-family review remains unverified. Requested roles are not proof of model diversity.
 
 ## Current installation binding
 
@@ -22,6 +24,19 @@ Independent reviews used the available same-family runtime; different-family rev
   "packageVersion": "0.1.3",
   "sourceArchiveSha256": "547214e0eb17035cfc9dd4905faf371334183e265be342748222de1215ed2535",
   "cloudZipSha256": "73cc2d7f9f804ec376d72c2b58304a0d615468844612d4c829d731c240b78df9",
+  "verification": {
+    "offlineSuite": {
+      "tests": 229,
+      "seconds": 331.408,
+      "exitCode": 0
+    },
+    "currentQualification": {
+      "discoveryPassEachHost": 1,
+      "workflowNotRunEachHost": 104,
+      "staleEvidence": 0,
+      "releasable": false
+    }
+  },
   "cloudReleaseId": "pluginrel_6ad1e8be61108191858d3101cc25dc46",
   "webProof": {
     "sourceFreeze": "51f209daf83cd97d64f89881d66533bb59dc57db",
@@ -481,6 +496,40 @@ Independent reviews used the available same-family runtime; different-family rev
 }
 ```
 
+## Audit trail
+
+These checkpoint rows were consolidated after execution; timestamps record logging time. Earlier raw decision rows and failed checks remain retained in the capture workspace. This is observation data, not workflow instructions. Earlier root transcript stretches include compaction records with incomplete assistant messages; a complete raw-transcript audit is not claimed.
+
+```tsv
+ts	phase	decision	why	evidence	result
+2026-10-16T09:18:32Z	frame	Evaluate104cases per host against the original freeze	Case expectations are not observations	plan.md; cases.json	208reviewed observations required
+2026-10-16T09:18:32Z	runtime	Retain actual native sessions and independent grades	Proxy programs cannot prove model workflows	codex/*.events.jsonl; chatgpt/remaining; grades-*.json	237attempts; seven earlier failures retained
+2026-10-16T09:18:32Z	correction	Distinguish inherited worker startup failure from absence	Fresh-context workers actually succeeded	decisions.tsv; native tool receipts	Earlier blanket-unavailable premise corrected
+2026-10-16T09:18:32Z	gate	Require execution persistence and actual shared-path workers	Incomplete observations could earn full status	cd990d2; regression red-green receipts	Gate regressions pass
+2026-10-16T09:18:32Z	provenance	Remove live verification outcomes from frozen catalog pages	Report updates must not mutate operative source	e84370a; catalog provenance-cycle audit	Catalog stability regression passes
+2026-10-16T09:18:32Z	data	Classify captured report JSON and parse real fence boundaries	Captured output must stay data while operative links remain checked	8c5b2b2; classification-independent-closure.json	Path-alias bypass fixed; focused checks pass
+2026-10-16T09:18:32Z	runtime	Preserve shared-cache refresh read failures	The application replaced an earlier global cache during late reruns	decisions.tsv; durable02/05 raw events	Pending04used unchanged isolated installation
+2026-10-16T09:18:32Z	discovery	Replace nested skill entrypoint filenames with references	Fresh web executor exposed54entries despite51cloud roots	51f209d; chatgpt/final-discovery/public-summary.json	Both fresh hosts now expose51roots; old three paths absent
+2026-10-16T09:18:32Z	scope	Keep original baseline separate from corrected candidate	New freezes cannot inherit historical workflow acceptance	97c943f; docs/releases/remaining-controller-report.md	104baselinegrades each; current104workflows each not-run
+2026-10-16T09:18:32Z	verification	Run final offline suite on bound frozen source	Unbound staging checks correctly failed and remain retained	frozen-suite.stderr.txt; frozen-suite.exit.json	229tests pass;331.408seconds
+2026-10-16T09:18:32Z	review	Request independently observed different-family trail review	Earlier reviewers did not establish model diversity	trail-review.json pending	Pending actual model/result inspection
+2026-10-16T09:18:32Z	audit	Retain limited root transcript coverage	Current transcript begins after earlier context was summarized	root transcript01a1434a-7f33-7e40-8ac0-f50a83f8cf10; decisions.tsv	No complete earlier raw-transcript audit claimed
+2026-10-16T09:23:53Z	correction	Supersede the discovery result evidence in the earlier discovery row	The earlier0.1.2receipt proves the blocker, not its closure	chatgpt/discovery-0.1.3/independent-verification.json; /Users/digital-hawk/Herd/pstack-host-verification-20261016-51f209d/runtime-discovery.json	Both actual current inventories51; six returned reads match; old three paths absent
+2026-10-16T09:23:53Z	correction	Preserve malformed earlier decisions as raw historical data	decisions.tsv has inconsistent columns and is not canonical	decisions.tsv; audit-trail.tsv	This six-column helper-written trail is the canonical reconstruction; logging timestamps are retrospective
+2026-10-16T09:23:53Z	correction	Record the cleanup fix and concrete regression pointers	Earlier combined gate row compressed distinct work	/Users/digital-hawk/Herd/pstack-provenance-fix/tests/test_worktree_audit.py; /Users/digital-hawk/Herd/pstack-provenance-fix/skills/poteto-mode/playbooks/worktree-cleanup.md	The documented repository argument now passes the real command boundary; read-only behavior checked
+2026-10-16T09:23:53Z	correction	Retain intermediate candidate progression and failed checks	Private0.1.1was updated before full suite completion; subsequent fixes required0.1.2then0.1.3	full-suite.stderr.txt; full-suite-v2.stderr.txt; full-suite-final.stderr.txt; frozen-suite.stderr.txt	Intermediate failures retained; corrected frozen source229tests pass
+2026-10-16T09:23:53Z	evidence	Resolve vague earlier runtime and source-audit pointers	Earlier rows name artifact groups rather than single files	codex/batch-00.events.jsonl; codex/durable-04.events.jsonl; native-10-11-tool-receipts.json; catalog-provenance-cycle-audit.json; classification-independent-closure.json	Per-case capture manifests retain exact remaining artifact pointers
+2026-10-16T09:23:53Z	review	Inspect the independent trail reviewer result	Requested model selection did not expose actual reviewer model	trail-review.json	Review completed; actual model and effort unknown; different-family diversity unverified
+2026-10-16T09:23:53Z	audit	Correct the transcript coverage explanation	Incomplete assistant messages are explicitly marked by compaction	trail-review.json; supplied root transcript identified in review	Earlier stretches are not fully raw-audited; no complete transcript audit claimed
+2026-10-16T09:23:53Z	verification	Require final committed report identity before PR creation	The full source suite predates final report-only copies	docs/releases/remaining-controller-report.md; frozen-suite.exit.json	Next mandatory gate: committed-HEAD provenance plus report export validation
+```
+
+## Audit review
+
+reviewed by unknown
+
+The independent trail review flagged a stale discovery-proof pointer, incomplete evidence pointers and missing detail about intermediate fixes. Append-only correction rows above resolve those documentation issues. Its required actual-HEAD check runs after the final report commit and before PR creation. Reviewer model identity, different-family diversity and complete earlier raw-transcript coverage remain unverified.
+
 ## Discovery regression retained
 
 The following 0.1.2 observation is a rejected discovery checkpoint, not acceptance of 0.1.3.
@@ -568,8 +617,8 @@ All 104 expected cases have independent grades on both hosts. No result here est
       "graded": 104,
       "missing": 0,
       "pass": 27,
-      "reduced-pass": 57,
-      "blocked": 20,
+      "reduced-pass": 59,
+      "blocked": 18,
       "fail": 0
     },
     "chatgpt": {
@@ -941,6 +990,18 @@ All 104 expected cases have independent grades on both hosts. No result here est
       ]
     },
     {
+      "path": "grades-native-durable-04.json",
+      "originalExternalPath": "/Users/digital-hawk/Herd/pstack-workflow-evaluation-20261016/grades-native-durable-04.json",
+      "sha256": "7e79c04b55a7c0d8f60f2fa9f6819e75e335a9d2ee4832a6e49e05bdc281928c",
+      "bytes": 15565,
+      "order": 204,
+      "rows": 3,
+      "gradingNotes": [
+        "Independently reviewed complete contracts, actual raw top-level stream and retained source/worker/measurement artifacts. Full qualitative gates prevail over self-reported completion; no new workflow or benchmark executed for grading.",
+        "Operative requested source is isolated f462 installation. Ancillary successful Unslop0.2.1 read is an explicit deviation, not rewritten to0.1.0."
+      ]
+    },
+    {
       "path": "grades-native-durable-05.json",
       "originalExternalPath": "/Users/digital-hawk/Herd/pstack-workflow-evaluation-20261016/grades-native-durable-05.json",
       "sha256": "ddfa555a9153aff8778fcb83fbb1b923a5cccbe0261c53559e4567749f9d2916",
@@ -985,13 +1046,21 @@ All 104 expected cases have independent grades on both hosts. No result here est
       "sourceFreeze": "f4623636a287bea2aa79c4b2234a53d20a5f193c",
       "reportPath": "docs/releases/host-evaluation/codex/accessible-trace.md",
       "acceptedStatus": "reduced-pass",
-      "acceptedAttemptId": "grades-native-06.json#3",
+      "acceptedAttemptId": "grades-native-durable-04.json#0",
       "attempts": [
         {
           "attemptId": "grades-native-06.json#3",
           "status": "reduced-pass",
           "order": 0,
           "gradeFile": "grades-native-06.json",
+          "nestedRejected": false,
+          "fullGradeResponseArtifactBytesAt": "docs/releases/host-evaluation/codex/accessible-trace.md"
+        },
+        {
+          "attemptId": "grades-native-durable-04.json#0",
+          "status": "reduced-pass",
+          "order": 204,
+          "gradeFile": "grades-native-durable-04.json",
           "nestedRejected": false,
           "fullGradeResponseArtifactBytesAt": "docs/releases/host-evaluation/codex/accessible-trace.md"
         }
@@ -1286,14 +1355,22 @@ All 104 expected cases have independent grades on both hosts. No result here est
       "caseId": "bounded-improvement",
       "sourceFreeze": "f4623636a287bea2aa79c4b2234a53d20a5f193c",
       "reportPath": "docs/releases/host-evaluation/codex/bounded-improvement.md",
-      "acceptedStatus": "blocked",
-      "acceptedAttemptId": "grades-native-07.json#1",
+      "acceptedStatus": "reduced-pass",
+      "acceptedAttemptId": "grades-native-durable-04.json#1",
       "attempts": [
         {
           "attemptId": "grades-native-07.json#1",
           "status": "blocked",
           "order": 0,
           "gradeFile": "grades-native-07.json",
+          "nestedRejected": false,
+          "fullGradeResponseArtifactBytesAt": "docs/releases/host-evaluation/codex/bounded-improvement.md"
+        },
+        {
+          "attemptId": "grades-native-durable-04.json#1",
+          "status": "reduced-pass",
+          "order": 204,
+          "gradeFile": "grades-native-durable-04.json",
           "nestedRejected": false,
           "fullGradeResponseArtifactBytesAt": "docs/releases/host-evaluation/codex/bounded-improvement.md"
         }
@@ -1444,14 +1521,22 @@ All 104 expected cases have independent grades on both hosts. No result here est
       "caseId": "comparable-revisions",
       "sourceFreeze": "f4623636a287bea2aa79c4b2234a53d20a5f193c",
       "reportPath": "docs/releases/host-evaluation/codex/comparable-revisions.md",
-      "acceptedStatus": "blocked",
-      "acceptedAttemptId": "grades-native-07.json#5",
+      "acceptedStatus": "reduced-pass",
+      "acceptedAttemptId": "grades-native-durable-04.json#2",
       "attempts": [
         {
           "attemptId": "grades-native-07.json#5",
           "status": "blocked",
           "order": 0,
           "gradeFile": "grades-native-07.json",
+          "nestedRejected": false,
+          "fullGradeResponseArtifactBytesAt": "docs/releases/host-evaluation/codex/comparable-revisions.md"
+        },
+        {
+          "attemptId": "grades-native-durable-04.json#2",
+          "status": "reduced-pass",
+          "order": 204,
+          "gradeFile": "grades-native-durable-04.json",
           "nestedRejected": false,
           "fullGradeResponseArtifactBytesAt": "docs/releases/host-evaluation/codex/comparable-revisions.md"
         }
@@ -4909,20 +4994,21 @@ All 104 expected cases have independent grades on both hosts. No result here est
   "artifactContentPolicy": "Full case-owned artifact text occurs in its case page; unchanged shared fixture text occurs only in this controller report. No repeated full response/grade/artifact bodies in this compact index.",
   "projectionSummary": {
     "casePages": 208,
-    "projectedTextFiles": 2359,
-    "skippedEntries": 3212,
+    "projectedTextFiles": 2620,
+    "skippedEntries": 3295,
     "skippedByReason": {
-      "copied source/input or administrative evaluator helper": 532,
-      "over 1 MiB per-file cap": 8,
+      "copied source/input or administrative evaluator helper": 549,
+      "over 1 MiB per-file cap": 60,
       "input/source/before/support/dependency/Git tree omitted": 319,
-      "Unchanged shared synthetic fixture text included once in controller report": 2321,
-      "Source-read capture hash retained; pinned source text is reconstructible and not duplicated": 18,
-      "binary or invalid UTF-8": 12,
+      "Unchanged shared synthetic fixture text included once in controller report": 2330,
+      "Source-read capture hash retained; pinned source text is reconstructible and not duplicated": 22,
+      "binary or invalid UTF-8": 13,
       "binary NUL": 2
     },
     "perFileCapBytes": 1048576
   },
   "globalLimits": [
+    "Orchestrator receipt durations can include controller pauses; they are not inferred native case execution times or benchmark measurements.",
     "Only the supplied frozen f462 source is bound by this reviewed baseline; no later operative tree or current release acceptance is established.",
     "Cloud UI corroborates native dispatch/read/command activity in specified turns, not every exact argument, raw output, exit code or model-captured receipt. Early raw capture gaps and truncation remain explicit.",
     "The two invented cloud timestamps remain retained errors despite appended correction.",
@@ -5296,6 +5382,18 @@ Original external capture paths and SHA-256 identities are listed here. Per-even
     ]
   },
   {
+    "path": "grades-native-durable-04.json",
+    "originalExternalPath": "/Users/digital-hawk/Herd/pstack-workflow-evaluation-20261016/grades-native-durable-04.json",
+    "sha256": "7e79c04b55a7c0d8f60f2fa9f6819e75e335a9d2ee4832a6e49e05bdc281928c",
+    "bytes": 15565,
+    "order": 204,
+    "rows": 3,
+    "gradingNotes": [
+      "Independently reviewed complete contracts, actual raw top-level stream and retained source/worker/measurement artifacts. Full qualitative gates prevail over self-reported completion; no new workflow or benchmark executed for grading.",
+      "Operative requested source is isolated f462 installation. Ancillary successful Unslop0.2.1 read is an explicit deviation, not rewritten to0.1.0."
+    ]
+  },
+  {
     "path": "grades-native-durable-05.json",
     "originalExternalPath": "/Users/digital-hawk/Herd/pstack-workflow-evaluation-20261016/grades-native-durable-05.json",
     "sha256": "ddfa555a9153aff8778fcb83fbb1b923a5cccbe0261c53559e4567749f9d2916",
@@ -5353,6 +5451,72 @@ Original external capture paths and SHA-256 identities are listed here. Per-even
     "originalExternalPath": "/Users/digital-hawk/Herd/pstack-workflow-evaluation-20261016/fixtures/batch-06/accessible-trace.result.md",
     "sha256": "53559da569cae40ff125d68627115dffe6b336d5716097b04cb172b8d54b77d1",
     "bytes": 6914
+  },
+  {
+    "path": "codex/durable-04.events.jsonl",
+    "originalExternalPath": "/Users/digital-hawk/Herd/pstack-workflow-evaluation-20261016/codex/durable-04.events.jsonl",
+    "sha256": "6906b14b6016bdae66578b701fbccbf8bae753b072ca6e9fc95c0aa60e594fbe",
+    "bytes": 1092628
+  },
+  {
+    "path": "fixtures/durable-04/source-freeze-verification.json",
+    "originalExternalPath": "/Users/digital-hawk/Herd/pstack-workflow-evaluation-20261016/fixtures/durable-04/source-freeze-verification.json",
+    "sha256": "dcac422b17b8a59ed8964bedc0fd53eeca414ba2f00ae588d200663f239748e3",
+    "bytes": 11184
+  },
+  {
+    "path": "fixtures/durable-04/accessible-trace/evidence/capture-raw.json",
+    "originalExternalPath": "/Users/digital-hawk/Herd/pstack-workflow-evaluation-20261016/fixtures/durable-04/accessible-trace/evidence/capture-raw.json",
+    "sha256": "10e05a7295a5494b18f23af6407dd8705b6603ce830baf0a8c7148142207c1c7",
+    "bytes": 5383
+  },
+  {
+    "path": "fixtures/durable-04/accessible-trace/evidence/root-inspection.json",
+    "originalExternalPath": "/Users/digital-hawk/Herd/pstack-workflow-evaluation-20261016/fixtures/durable-04/accessible-trace/evidence/root-inspection.json",
+    "sha256": "6eeab9d9c53c92e3f9852a025b4b445ae9b11ff5b64759659c99efeb89c1daf7",
+    "bytes": 1066
+  },
+  {
+    "path": "fixtures/durable-04/accessible-trace/parser/reduction.json",
+    "originalExternalPath": "/Users/digital-hawk/Herd/pstack-workflow-evaluation-20261016/fixtures/durable-04/accessible-trace/parser/reduction.json",
+    "sha256": "831e292aebb3450ab9f6cad7c2a6167febe29f1daba8302fa4cc067fb9fda27b",
+    "bytes": 5614
+  },
+  {
+    "path": "fixtures/durable-04/accessible-trace/parser-fine/reduction.json",
+    "originalExternalPath": "/Users/digital-hawk/Herd/pstack-workflow-evaluation-20261016/fixtures/durable-04/accessible-trace/parser-fine/reduction.json",
+    "sha256": "d95d9bf837141a1ace4664157313a763525856c992749b046e2663090efa5b25",
+    "bytes": 7049
+  },
+  {
+    "path": "fixtures/durable-04/accessible-trace/evidence/fine-parser-spawn-native.json",
+    "originalExternalPath": "/Users/digital-hawk/Herd/pstack-workflow-evaluation-20261016/fixtures/durable-04/accessible-trace/evidence/fine-parser-spawn-native.json",
+    "sha256": "fcfd68ed6671822f65f50b21f012c1e6ab0bae5303ab3e0c167e4dba17e0763d",
+    "bytes": 567
+  },
+  {
+    "path": "fixtures/durable-04/independent-root-inspection.json",
+    "originalExternalPath": "/Users/digital-hawk/Herd/pstack-workflow-evaluation-20261016/fixtures/durable-04/independent-root-inspection.json",
+    "sha256": "0629a3babb154339fc6403dd496be9a986413ba74f917a840e509faa59f1fc12",
+    "bytes": 7548
+  },
+  {
+    "path": "fixtures/durable-04/review-swarm/accessible-trace/result.md",
+    "originalExternalPath": "/Users/digital-hawk/Herd/pstack-workflow-evaluation-20261016/fixtures/durable-04/review-swarm/accessible-trace/result.md",
+    "sha256": "56d3b87c6051c28e8cec5a87025292ae4b9660864810ca12eaee6eb2749fef86",
+    "bytes": 2840
+  },
+  {
+    "path": "fixtures/durable-04/native-threads/index.json",
+    "originalExternalPath": "/Users/digital-hawk/Herd/pstack-workflow-evaluation-20261016/fixtures/durable-04/native-threads/index.json",
+    "sha256": "c2776366e1ac92d5986c489f19a764edee22863d0f00181bacc364d6ec08a195",
+    "bytes": 4836
+  },
+  {
+    "path": "fixtures/durable-04/accessible-trace/accessible-trace.result.md",
+    "originalExternalPath": "/Users/digital-hawk/Herd/pstack-workflow-evaluation-20261016/fixtures/durable-04/accessible-trace/accessible-trace.result.md",
+    "sha256": "8d3b01f0ca6e7c42c9d264733e1dfc86934ea0036817758a88a308691d92493c",
+    "bytes": 10931
   },
   {
     "path": "fixtures/batch-06/adversarial-review.result.md",
@@ -5619,6 +5783,42 @@ Original external capture paths and SHA-256 identities are listed here. Per-even
     "bytes": 8203
   },
   {
+    "path": "fixtures/durable-04/bounded-improvement/final.json",
+    "originalExternalPath": "/Users/digital-hawk/Herd/pstack-workflow-evaluation-20261016/fixtures/durable-04/bounded-improvement/final.json",
+    "sha256": "de4cd0ee49a06cd6951965b85d7784bce8f381a56632d976ce213d0577655c17",
+    "bytes": 9005
+  },
+  {
+    "path": "fixtures/durable-04/bounded-improvement/attempt11.json",
+    "originalExternalPath": "/Users/digital-hawk/Herd/pstack-workflow-evaluation-20261016/fixtures/durable-04/bounded-improvement/attempt11.json",
+    "sha256": "ecdc115d5ee6359a288e0c818ce6c19a29c8d4d7f40ddead9e410bcf52a09d58",
+    "bytes": 8960
+  },
+  {
+    "path": "fixtures/durable-04/bounded-improvement/decision.tsv",
+    "originalExternalPath": "/Users/digital-hawk/Herd/pstack-workflow-evaluation-20261016/fixtures/durable-04/bounded-improvement/decision.tsv",
+    "sha256": "f5abf4f58c721be50860c3de0a268b49710837d82d057461e394d0fe7a280bf2",
+    "bytes": 4225
+  },
+  {
+    "path": "fixtures/durable-04/bounded-improvement/candidate01/result.json",
+    "originalExternalPath": "/Users/digital-hawk/Herd/pstack-workflow-evaluation-20261016/fixtures/durable-04/bounded-improvement/candidate01/result.json",
+    "sha256": "956c67b70ff969a405dc26207cb5f74dbcfaf2040c6ae5c0f40e86ebf5b34697",
+    "bytes": 2061
+  },
+  {
+    "path": "fixtures/durable-04/review-swarm/bounded-improvement/result.md",
+    "originalExternalPath": "/Users/digital-hawk/Herd/pstack-workflow-evaluation-20261016/fixtures/durable-04/review-swarm/bounded-improvement/result.md",
+    "sha256": "add0043ed16ffc8801d60ef3d9d75175b4ac4b6a662ab8053a567603b88e07b2",
+    "bytes": 4667
+  },
+  {
+    "path": "fixtures/durable-04/bounded-improvement/bounded-improvement.result.md",
+    "originalExternalPath": "/Users/digital-hawk/Herd/pstack-workflow-evaluation-20261016/fixtures/durable-04/bounded-improvement/bounded-improvement.result.md",
+    "sha256": "eaf3f5c1f081d5bdea033f84b55c23230092d485fc21d9ffcaca4f35ed51c9f9",
+    "bytes": 38127
+  },
+  {
     "path": "fixtures/batch-07/bounded-poll.result.md",
     "originalExternalPath": "/Users/digital-hawk/Herd/pstack-workflow-evaluation-20261016/fixtures/batch-07/bounded-poll.result.md",
     "sha256": "eda238acb8872581a4fd842fed266ecc5c0fa408808709e81b942525da10c8b0",
@@ -5809,6 +6009,54 @@ Original external capture paths and SHA-256 identities are listed here. Per-even
     "originalExternalPath": "/Users/digital-hawk/Herd/pstack-workflow-evaluation-20261016/fixtures/batch-07/comparable-revisions.result.md",
     "sha256": "88ccb3e989868ffb0bda7ddd352aa3e3a3b5fdb4f6c174e4fc251ed3b6b50bff",
     "bytes": 7867
+  },
+  {
+    "path": "fixtures/durable-04/comparable-revisions/treatment-final.json",
+    "originalExternalPath": "/Users/digital-hawk/Herd/pstack-workflow-evaluation-20261016/fixtures/durable-04/comparable-revisions/treatment-final.json",
+    "sha256": "8b8358b5b70422f17ce2dfde5b6385c2a08f464cfa602322c67eaf1e38e0976c",
+    "bytes": 9180
+  },
+  {
+    "path": "fixtures/durable-04/comparable-revisions/implementation/result.json",
+    "originalExternalPath": "/Users/digital-hawk/Herd/pstack-workflow-evaluation-20261016/fixtures/durable-04/comparable-revisions/implementation/result.json",
+    "sha256": "e699bdbb60730822eea1a64ab1ee588b77c1fdcf0aa6d69582d630fcb69f13da",
+    "bytes": 1067
+  },
+  {
+    "path": "fixtures/durable-04/comparable-revisions/implementation-spawn-raw.json",
+    "originalExternalPath": "/Users/digital-hawk/Herd/pstack-workflow-evaluation-20261016/fixtures/durable-04/comparable-revisions/implementation-spawn-raw.json",
+    "sha256": "0278d1d17d9758682a7be73ffb43babc7f2867a7e922ba73647a3d5dad0b078b",
+    "bytes": 77
+  },
+  {
+    "path": "fixtures/durable-04/comparable-revisions/regression.json",
+    "originalExternalPath": "/Users/digital-hawk/Herd/pstack-workflow-evaluation-20261016/fixtures/durable-04/comparable-revisions/regression.json",
+    "sha256": "b59cd4dd6000fa1af0aa770d5aa3cfeb5b903a2e11a6e38e733926efc15f8011",
+    "bytes": 148
+  },
+  {
+    "path": "fixtures/durable-04/comparable-revisions/trace-comparison.json",
+    "originalExternalPath": "/Users/digital-hawk/Herd/pstack-workflow-evaluation-20261016/fixtures/durable-04/comparable-revisions/trace-comparison.json",
+    "sha256": "97f56e88155155a70ee2988edf397a9996e5b5785182d1368469cac94e6fa67b",
+    "bytes": 3291
+  },
+  {
+    "path": "fixtures/durable-04/comparable-revisions/profile-reduction.json",
+    "originalExternalPath": "/Users/digital-hawk/Herd/pstack-workflow-evaluation-20261016/fixtures/durable-04/comparable-revisions/profile-reduction.json",
+    "sha256": "edb3770db1105932d631357424c8f033df22d0de27ab856140b41c8b7f7d71b6",
+    "bytes": 3299
+  },
+  {
+    "path": "fixtures/durable-04/review-swarm/comparable-revisions/result.md",
+    "originalExternalPath": "/Users/digital-hawk/Herd/pstack-workflow-evaluation-20261016/fixtures/durable-04/review-swarm/comparable-revisions/result.md",
+    "sha256": "9f0aaf776f3bcd93e66550dbe5f0347b430c697c8d4e896cb2528a657e3f0982",
+    "bytes": 8086
+  },
+  {
+    "path": "fixtures/durable-04/comparable-revisions/comparable-revisions.result.md",
+    "originalExternalPath": "/Users/digital-hawk/Herd/pstack-workflow-evaluation-20261016/fixtures/durable-04/comparable-revisions/comparable-revisions.result.md",
+    "sha256": "472c2eb6797797935f1c86b0e16b2a9f76fbab1806ff31b329e4463a6c565e6a",
+    "bytes": 15785
   },
   {
     "path": "fixtures/batch-07/contiguous-verified-stack.result.md",

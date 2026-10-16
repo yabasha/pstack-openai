@@ -10,9 +10,11 @@ The evaluation exposed insufficient execution/persistence gates for uncertain re
 
 Fresh 0.1.2 web discovery disproved the earlier page-level exclusion assumption:51 cloud roots but54 executor entries. Version 0.1.3 renames the 3 nested helper destinations to REFERENCE.md, updates operational paths/mappings and removes the obsolete cloud files. The source identities remain canonical and unchanged.
 
-Focused regression, full-package mapping/update and independent review checks passed. The final committed-tree offline suite is pending.
+The final offline suite passed: 229 tests in 331.408 seconds. The controller report records source bindings and retained outputs.
 
-Independent reviews used the available same-family runtime; different-family review remains unverified. Requested roles are not proof of model diversity.
+The installed test archives were exported from the operative freeze and retain its pre-observation report metadata. Later repository report commits carry current observations. A future publication should export a report commit after its immutable-source check passes. This discovery proof does not qualify embedded historical reports or current workflows.
+
+Earlier independent reviews did not establish different-family diversity. The final trail reviewer completed the review, but its actual model was not exposed; different-family review remains unverified. Requested roles are not proof of model diversity.
 
 ## Acceptance gates
 

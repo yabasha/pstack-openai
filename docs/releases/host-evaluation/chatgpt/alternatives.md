@@ -260,6 +260,7 @@ The fenced JSON contains the actual prompt, retained response, full independent 
   "artifactProjections": [],
   "skippedManifest": [],
   "globalLimits": [
+    "Orchestrator receipt durations can include controller pauses; they are not inferred native case execution times or benchmark measurements.",
     "Only the supplied frozen f462 source is bound by this reviewed baseline; no later operative tree or current release acceptance is established.",
     "Cloud UI corroborates native dispatch/read/command activity in specified turns, not every exact argument, raw output, exit code or model-captured receipt. Early raw capture gaps and truncation remain explicit.",
     "The two invented cloud timestamps remain retained errors despite appended correction.",
