@@ -25,7 +25,10 @@ class ManifestTests(unittest.TestCase):
         self.assertNotIn('skills', manifest)
         self.assertNotIn('skills', manifest['extensions']['com.openai'])
         self.assertNotIn('interface', manifest)
-        self.assertNotIn('homepage', manifest)
+        self.assertEqual(manifest['homepage'], 'https://github.com/cursor/plugins/blob/main/pstack/docs/guide/README.md')
+        self.assertEqual(manifest['author'], {'name': 'Lauren Tan', 'url': 'https://x.com/poteto'})
+        self.assertEqual(interface['websiteURL'], manifest['homepage'])
+        self.assertEqual(interface['developerName'], manifest['author']['name'])
         self.assertNotIn('repository', manifest)
         asset = interface['logo']
         self.assertEqual(asset, './assets/logo.png')
