@@ -6,6 +6,16 @@ All 210 current host records now describe unrun cases against this new revision:
 
 The marker retains the same exact report-path allowlist. No operative file is exempted. The first commit freezes the regression test; later commits change only reserved report data and the tested-package marker. Verification of that freeze and the final committed report head follows below. Release readiness remains false until fresh observations establish support. No installation, host configuration or published release is part of this repair.
 
+## Verification of the repair
+
+- The new checked-in provenance regression failed against merged revision `b5bf8b551c50eebbc3834a79579e0cc079e521e2` with `Operative package differs from tested commit: tests/test_manifest.py`.
+- All 210 offline maintenance tests passed in 331.358 seconds against report revision `bd1431d1c781269f8c4400cee646e7712023523b`, whose operative freeze is `22ca2bd2077ab8628119d34477ad9f364e4f1211`. These include the current repository's immutable-tree provenance regression.
+- Package structure, all 210 evidence records, generated catalog consistency and whitespace checks passed. The catalog remains 51 skills and 24 principles.
+- Direct committed-head identity validation passed for `bd1431d1c781269f8c4400cee646e7712023523b`. The release assessment found no stale evidence and exactly two blockers: actual package discovery and invocation missing for each host. Both hosts have 105 validated blocked cases and zero passes or reduced passes.
+- Independent read-only review found no actionable issues. Historical raw receipts, inventory, case registry and the exact 217-path report allowlist remain unchanged.
+
+The regression and provenance checks require Git history containing the frozen ancestor. Integration must preserve commit `22ca2bd2077ab8628119d34477ad9f364e4f1211` through a merge; squashing or rebasing these commits would require a new freeze and evidence refresh. Later reserved-report edits require their own committed-head identity check and do not require rerunning unchanged operative tests.
+
 ## Preserved historical reports
 
 The sections below retain their original scope and freeze identities. Their statements about current status apply to those historical checkpoints.
