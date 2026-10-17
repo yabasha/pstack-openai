@@ -5,7 +5,7 @@
     "upstreamSha256": "bdcee4168e22428036e93d7cdeec3f391dbc4132f927f6db2540328c22db0273",
     "destinationPath": "skills/swarm/SKILL.md",
     "disposition": "runtime",
-    "rationale": "Preserve partition/race declaration, exact revisions and measurement methods, one evidence retry, dropout and coverage reporting. Bind worker dispatch, models, isolation, cancellation and persistence to observed host capabilities and authorization; sequential fallback remains reduced capability.",
+    "rationale": "Preserve partition/race declaration, exact revisions and measurement methods, one evidence retry, dropout and coverage reporting. Bind worker dispatch, models, isolation, cancellation and persistence to observed host capabilities and authorization; sequential fallback remains reduced capability. Candidate remediation replaces an execution-style evidence retry with one bounded metadata-only reporting correction. It preserves the same assignment owner and immutable output while retaining separate coordinator-owned raw returns. A second miss leaves a gap. Substantive retries require fresh linked assignments and distinct owners and paths. Bootstrap-only identity observation precedes immutable dispatch. This candidate delta describes source changes and controlled source validation only. Historical verification records remain unchanged. It does not qualify installed hosts or the current freeze. The changed operative bytes require a new frozen revision and fresh release qualification.",
     "dependencies": [
       "references/host-capabilities.md",
       "references/model-roles.md",

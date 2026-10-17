@@ -921,7 +921,7 @@
   },
   {
     "path": "docs/parity/support-map.md",
-    "sha256": "d72db93967adc27874be7489ea185d5d3f7b3d0dd077becb48a2207c6c46dae7",
+    "sha256": "e0055de835203de67a1e5f30e29a9fc1fb88da3c156dea124470fcd3536ca9f9",
     "token": ".cursor-plugin/plugin.json",
     "startLine": 29,
     "endLine": 29,

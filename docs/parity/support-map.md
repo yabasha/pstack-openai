@@ -976,6 +976,8 @@ These exact package-owned paths are additional port material, outside the 164 ca
 | [docs/releases/host-evaluation/chatgpt/verifiable-feature.md](../releases/host-evaluation/chatgpt/verifiable-feature.md) | Port-authored historical version 0.1.0 host observation and artifact projection; frozen identity and limits are explicit, and no version 0.1.1 qualification transfers. |
 | [docs/releases/host-evaluation/chatgpt/dependency-readiness.md](../releases/host-evaluation/chatgpt/dependency-readiness.md) | Port-authored historical version 0.1.0 host observation and artifact projection; frozen identity and limits are explicit, and no version 0.1.1 qualification transfers. |
 
+| [skills/poteto-mode/scripts/watch-pr/deadline.test.ts](../../skills/poteto-mode/scripts/watch-pr/deadline.test.ts) | Port-authored controlled-clock deadline regression tests; local helper checks do not establish installed host parity |
+
 ## Reserved report-only paths
 
 These exact optional paths are planned and are not present or verified at F2. Their reservation provides provenance for later report-only writes, not execution evidence or permission to change operative files. Unknown future paths remain outside this reservation.
