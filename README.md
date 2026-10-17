@@ -1,12 +1,12 @@
 # pstack portable package
 
-An unofficial port of Lauren Tan's pstack v0.15.25. The candidate inventory includes 54 root skills, 24 principles, 23 playbooks and 170 source files. Read [UPSTREAM.md](UPSTREAM.md), [NOTICE.md](NOTICE.md) and [LICENSE](LICENSE) for lineage and attribution.
+An unofficial port of Lauren Tan's pstack v0.15.25. The source inventory includes 54 root skills, 24 principles, 23 playbooks and 170 source files. Read [UPSTREAM.md](UPSTREAM.md), [NOTICE.md](NOTICE.md) and [LICENSE](LICENSE) for lineage and attribution.
 
-Candidate port 0.2.2 stages upstream source `182f2ce414e83224915c190d2f63239c1608d0a5`. The accepted source baseline remains `99743e9c151c8537cbbf1f98bb38f34ef3368453` until separate review and acceptance.
+Port 0.2.2 accepts upstream source `182f2ce414e83224915c190d2f63239c1608d0a5` after reviewed source validation and explicit user authorization.
 
 Upstream adds Claude Code packaging; this port retains its shared portable runtime and records the Claude adapter as a quoted reference only.
 
-It includes ketchup, sharpen and in-your-own-words. Source validation and installed discovery are tracked separately from full workflow behavior. The [0.2.1 validation and refresh record](docs/releases/0.2.1.md) retains historical results and does not verify this candidate. See [compatibility](docs/compatibility.md) before relying on a workflow.
+It includes ketchup, sharpen and in-your-own-words. Source validation and installed discovery are tracked separately from full workflow behavior. The [0.2.2 source validation record](docs/releases/0.2.2.md) identifies the reviewed snapshot, checks and remaining host limits. Earlier release records retain their historical scope. See [compatibility](docs/compatibility.md) before relying on a workflow.
 
 ## Start here
 

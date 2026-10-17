@@ -1542,7 +1542,7 @@
         "repository-access"
       ],
       "destinationPath": "README.md",
-      "destinationSha256": "3a88bdafa14a521ccfd3a61bda4d73dcbadc0246339416db27326c6cbc672181",
+      "destinationSha256": "1c46d7d7dba493ba4329deddfe31afee0d7e20d42c2b81ffb23249ac982b84d5",
       "kind": "support",
       "packageDependencies": [
         "UPSTREAM.md",
