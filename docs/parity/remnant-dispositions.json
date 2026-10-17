@@ -915,7 +915,7 @@
     "path": "UPSTREAM.md",
     "rationale": "Explicit quoted upstream source identity or Claude-only source reference; it supplies no current host binding.",
     "reviewed": true,
-    "sha256": "2dc2c816205b670ff7414e2c109bdc52433184282279dd78d036b8b8438a0002",
+    "sha256": "308b297165df2e0f9d9c12658440b71457c12fa8c45e51aa1a70c6b146b34d8f",
     "startLine": 23,
     "token": ".cursor-plugin/plugin.json"
   },
