@@ -1,6 +1,6 @@
 # Codex setup
 
-Starting state for `codex-setup-from-readme` is a fresh chat without approved pstack loading. This route is documented, unverified for this package and blocked until exact setup authorization and fresh discovery evidence exist.
+This guide covers installation in a new environment. Version 0.1.3 has retained discovery evidence at its historical frozen revision; see [compatibility](../compatibility.md). That evidence does not install the edited publication candidate or establish discovery in another chat.
 
 Current official guidance describes local marketplace installation. A repo marketplace uses `.agents/plugins/marketplace.json` and a relative `source.path` inside its marketplace root. Restart the Codex desktop app, select that source in the Plugins Directory, install, then start a new enabled chat. The host loads a cached installed copy. Refresh can replace that copy; disabling does not remove it. Follow the current removal control and inspect its result before claiming removal. Source edits alone do not refresh a chat. This saved source review covers the Codex desktop Plugins Directory. Other clients remain unverified. These are documentation facts, not observed access in this account. Checked 2026-10-08. [Official packaging](https://developers.openai.com/plugins/build/plugins).
 

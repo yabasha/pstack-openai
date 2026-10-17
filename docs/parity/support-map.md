@@ -200,6 +200,9 @@ These exact package-owned paths are additional port material, outside the 164 ca
 
 | Additional path | Provenance and role |
 | --- | --- |
+| [CHANGELOG.md](../../CHANGELOG.md) | Port-authored release history and publication preparation notes |
+| [docs/publication.md](../publication.md) | Port-authored listing requirements, remaining publication facts, and archive instructions |
+| [tools/package_release.mjs](../../tools/package_release.mjs) | Port-authored candidate ZIP builder with inventory, integrity, and credential-pattern checks |
 | [NOTICE.md](../../NOTICE.md) | Port-authored package metadata and attribution |
 | [UPSTREAM.md](../../UPSTREAM.md) | Port-authored package metadata and attribution |
 | [docs/catalog/schema.json](../catalog/schema.json) | Reviewed port catalog records and schema |
