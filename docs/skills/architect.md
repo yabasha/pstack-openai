@@ -109,7 +109,7 @@ The following statuses come from the current parity inventory. Pending aggregate
 
 Destination: [skills/architect/SKILL.md](../../skills/architect/SKILL.md).
 
-Upstream commit: `99743e9c151c8537cbbf1f98bb38f34ef3368453`. SHA-256: `31f8e97a52bfa5432edd61f68ade2a8632ef0bacbc2d2a6802d7a0e6821944ac`.
+Upstream commit: `182f2ce414e83224915c190d2f63239c1608d0a5`. SHA-256: `31f8e97a52bfa5432edd61f68ade2a8632ef0bacbc2d2a6802d7a0e6821944ac`.
 
 Disposition: `runtime`. Aggregate adaptation status: `adapted-reviewed`.
 
@@ -120,7 +120,7 @@ Disposition: `runtime`. Aggregate adaptation status: `adapted-reviewed`.
 
 Destination: [skills/architect/references/design-red-flags.md](../../skills/architect/references/design-red-flags.md).
 
-Upstream commit: `99743e9c151c8537cbbf1f98bb38f34ef3368453`. SHA-256: `d0e639e4cc588ec865f930d3a4111faad60987ae36925917e319d7ceca7c69ce`.
+Upstream commit: `182f2ce414e83224915c190d2f63239c1608d0a5`. SHA-256: `d0e639e4cc588ec865f930d3a4111faad60987ae36925917e319d7ceca7c69ce`.
 
 Disposition: `runtime`. Aggregate adaptation status: `unchanged-reviewed`.
 
@@ -131,7 +131,7 @@ Disposition: `runtime`. Aggregate adaptation status: `unchanged-reviewed`.
 
 Destination: [skills/architect/references/rationale-template.md](../../skills/architect/references/rationale-template.md).
 
-Upstream commit: `99743e9c151c8537cbbf1f98bb38f34ef3368453`. SHA-256: `0cedfccdc7b47fc881febd5a8293eecbc542c20f8df825639904a8102d2eb5d3`.
+Upstream commit: `182f2ce414e83224915c190d2f63239c1608d0a5`. SHA-256: `0cedfccdc7b47fc881febd5a8293eecbc542c20f8df825639904a8102d2eb5d3`.
 
 Disposition: `runtime`. Aggregate adaptation status: `unchanged-reviewed`.
 
@@ -142,7 +142,7 @@ Disposition: `runtime`. Aggregate adaptation status: `unchanged-reviewed`.
 
 Destination: [skills/architect/references/runner-prompt.md](../../skills/architect/references/runner-prompt.md).
 
-Upstream commit: `99743e9c151c8537cbbf1f98bb38f34ef3368453`. SHA-256: `21dd5314aab778c5007228027a4591d97693fbec6ab86524037772b63f40948e`.
+Upstream commit: `182f2ce414e83224915c190d2f63239c1608d0a5`. SHA-256: `21dd5314aab778c5007228027a4591d97693fbec6ab86524037772b63f40948e`.
 
 Disposition: `runtime`. Aggregate adaptation status: `adapted-reviewed`.
 

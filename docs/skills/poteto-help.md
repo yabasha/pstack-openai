@@ -124,7 +124,7 @@ The following statuses come from the current parity inventory. Pending aggregate
 
 Destination: [skills/poteto-help/SKILL.md](../../skills/poteto-help/SKILL.md).
 
-Upstream commit: `99743e9c151c8537cbbf1f98bb38f34ef3368453`. SHA-256: `1b0645c25200a19e5863583e117bad684b1b79ba8434823ebf4f6bbcc61e8a75`.
+Upstream commit: `182f2ce414e83224915c190d2f63239c1608d0a5`. SHA-256: `1b0645c25200a19e5863583e117bad684b1b79ba8434823ebf4f6bbcc61e8a75`.
 
 Disposition: `runtime`. Aggregate adaptation status: `adapted-reviewed`.
 
@@ -135,7 +135,7 @@ Disposition: `runtime`. Aggregate adaptation status: `adapted-reviewed`.
 
 Destination: [skills/poteto-help/references/prompting.md](../../skills/poteto-help/references/prompting.md).
 
-Upstream commit: `99743e9c151c8537cbbf1f98bb38f34ef3368453`. SHA-256: `463f450c44a60afd001a2f69fdf8a5dea174351f339369b12ec3c41515e564d3`.
+Upstream commit: `182f2ce414e83224915c190d2f63239c1608d0a5`. SHA-256: `463f450c44a60afd001a2f69fdf8a5dea174351f339369b12ec3c41515e564d3`.
 
 Disposition: `runtime`. Aggregate adaptation status: `adapted-reviewed`.
 
@@ -146,7 +146,7 @@ Disposition: `runtime`. Aggregate adaptation status: `adapted-reviewed`.
 
 Destination: [skills/poteto-help/references/recipes.md](../../skills/poteto-help/references/recipes.md).
 
-Upstream commit: `99743e9c151c8537cbbf1f98bb38f34ef3368453`. SHA-256: `5fb97a805976a82db0aba5cc8943e88d0cb38b17a0d6b8e89a44633677febb1a`.
+Upstream commit: `182f2ce414e83224915c190d2f63239c1608d0a5`. SHA-256: `5fb97a805976a82db0aba5cc8943e88d0cb38b17a0d6b8e89a44633677febb1a`.
 
 Disposition: `runtime`. Aggregate adaptation status: `adapted-reviewed`.
 

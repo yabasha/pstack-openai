@@ -1,6 +1,6 @@
 # Source and support reconciliation
 
-The candidate records 169 source files at `99743e9c151c8537cbbf1f98bb38f34ef3368453`, including 54 root skills, 24 principles and 23 playbooks. The three nested Benny skills remain outside root discovery. Exact source hashes and reviewed destinations are in [inventory.json](inventory.json).
+The candidate records 170 source files at `182f2ce414e83224915c190d2f63239c1608d0a5`, including 54 root skills, 24 principles and 23 playbooks. The three nested Benny skills remain outside root discovery. Exact source hashes and reviewed destinations are in [inventory.json](inventory.json).
 
 The registry contains 112 cases. Candidate host statuses are not-run. Case definitions and structural tests are acceptance instructions and checks, not observed installed-host behavior.
 
@@ -181,6 +181,10 @@ The historical canonical manifest and prior evidence remain preserved. This cand
 | `skills/why/references/sources/slack.md` | [skills/why/references/sources/slack.md](../../skills/why/references/sources/slack.md) | runtime / adapted-reviewed | [docs/parity/adaptations/why.json](adaptations/why.json) | `history-evidence`, `read-only-answer`, `reproduce-before-fix` |
 | `skills/why/references/synthesizer-prompt.md` | [skills/why/references/synthesizer-prompt.md](../../skills/why/references/synthesizer-prompt.md) | runtime / adapted-reviewed | [docs/parity/adaptations/why.json](adaptations/why.json) | `history-evidence`, `read-only-answer`, `reproduce-before-fix` |
 
+> | `docs/harness/claude-code.md` | [docs/harness/claude-code.md](../harness/claude-code.md) | reference-only / reference-only-reviewed | [docs/parity/adaptations/harness-adapter.json](adaptations/harness-adapter.json) | `package-support-contracts` |
+
+
+
 ## Additional port-file provenance
 
 | Path | Provenance |
@@ -268,6 +272,7 @@ The historical canonical manifest and prior evidence remain preserved. This cand
 | [docs/parity/adaptations/create-verification-skill.json](adaptations/create-verification-skill.json) | Port-authored metadata, adapted contract, documentation, maintenance helper, test or retained historical provenance. It supplies no current host behavior evidence by itself. |
 | [docs/parity/adaptations/figure-it-out.json](adaptations/figure-it-out.json) | Port-authored metadata, adapted contract, documentation, maintenance helper, test or retained historical provenance. It supplies no current host behavior evidence by itself. |
 | [docs/parity/adaptations/guides.json](adaptations/guides.json) | Port-authored metadata, adapted contract, documentation, maintenance helper, test or retained historical provenance. It supplies no current host behavior evidence by itself. |
+| [docs/parity/adaptations/harness-adapter.json](adaptations/harness-adapter.json) | Port-authored metadata, adapted contract, documentation, maintenance helper, test or retained historical provenance. It supplies no current host behavior evidence by itself. |
 | [docs/parity/adaptations/how.json](adaptations/how.json) | Port-authored metadata, adapted contract, documentation, maintenance helper, test or retained historical provenance. It supplies no current host behavior evidence by itself. |
 | [docs/parity/adaptations/interrogate.json](adaptations/interrogate.json) | Port-authored metadata, adapted contract, documentation, maintenance helper, test or retained historical provenance. It supplies no current host behavior evidence by itself. |
 | [docs/parity/adaptations/maintain-verification-skill.json](adaptations/maintain-verification-skill.json) | Port-authored metadata, adapted contract, documentation, maintenance helper, test or retained historical provenance. It supplies no current host behavior evidence by itself. |
@@ -647,13 +652,17 @@ The historical canonical manifest and prior evidence remain preserved. This cand
 | [docs/parity/reconciliations/task16-template.json](reconciliations/task16-template.json) | Port-authored metadata, adapted contract, documentation, maintenance helper, test or retained historical provenance. It supplies no current host behavior evidence by itself. |
 | [docs/parity/remnant-dispositions.json](remnant-dispositions.json) | Port-authored metadata, adapted contract, documentation, maintenance helper, test or retained historical provenance. It supplies no current host behavior evidence by itself. |
 | [docs/parity/support-map.md](support-map.md) | Port-authored metadata, adapted contract, documentation, maintenance helper, test or retained historical provenance. It supplies no current host behavior evidence by itself. |
+| [docs/parity/upstream-manifests/182f2ce414e83224915c190d2f63239c1608d0a5.json](upstream-manifests/182f2ce414e83224915c190d2f63239c1608d0a5.json) | Port-authored metadata, adapted contract, documentation, maintenance helper, test or retained historical provenance. It supplies no current host behavior evidence by itself. |
+| [docs/parity/upstream-manifests/99743e9c151c8537cbbf1f98bb38f34ef3368453.apply.json](upstream-manifests/99743e9c151c8537cbbf1f98bb38f34ef3368453.apply.json) | Port-authored metadata, adapted contract, documentation, maintenance helper, test or retained historical provenance. It supplies no current host behavior evidence by itself. |
 | [docs/parity/upstream-manifests/99743e9c151c8537cbbf1f98bb38f34ef3368453.json](upstream-manifests/99743e9c151c8537cbbf1f98bb38f34ef3368453.json) | Port-authored metadata, adapted contract, documentation, maintenance helper, test or retained historical provenance. It supplies no current host behavior evidence by itself. |
+| [docs/parity/upstream-manifests/99743e9c151c8537cbbf1f98bb38f34ef3368453.previous-fragments.json](upstream-manifests/99743e9c151c8537cbbf1f98bb38f34ef3368453.previous-fragments.json) | Port-authored metadata, adapted contract, documentation, maintenance helper, test or retained historical provenance. It supplies no current host behavior evidence by itself. |
 | [docs/parity/upstream-manifests/df581122cde17e6e27686b5a448bde23e4ad4318.json](upstream-manifests/df581122cde17e6e27686b5a448bde23e4ad4318.json) | Port-authored metadata, adapted contract, documentation, maintenance helper, test or retained historical provenance. It supplies no current host behavior evidence by itself. |
 | [docs/parity/upstream-manifests/e5136d82418d2db3165ea1050d17577cd618cc05.apply.json](upstream-manifests/e5136d82418d2db3165ea1050d17577cd618cc05.apply.json) | Port-authored metadata, adapted contract, documentation, maintenance helper, test or retained historical provenance. It supplies no current host behavior evidence by itself. |
 | [docs/parity/upstream-manifests/e5136d82418d2db3165ea1050d17577cd618cc05.json](upstream-manifests/e5136d82418d2db3165ea1050d17577cd618cc05.json) | Port-authored metadata, adapted contract, documentation, maintenance helper, test or retained historical provenance. It supplies no current host behavior evidence by itself. |
 | [docs/parity/upstream-manifests/e5136d82418d2db3165ea1050d17577cd618cc05.previous-fragments.json](upstream-manifests/e5136d82418d2db3165ea1050d17577cd618cc05.previous-fragments.json) | Port-authored metadata, adapted contract, documentation, maintenance helper, test or retained historical provenance. It supplies no current host behavior evidence by itself. |
 | [docs/principles/README.md](../principles/README.md) | Port-authored metadata, adapted contract, documentation, maintenance helper, test or retained historical provenance. It supplies no current host behavior evidence by itself. |
 | [docs/releases/0.2.0.md](../releases/0.2.0.md) | Port-authored metadata, adapted contract, documentation, maintenance helper, test or retained historical provenance. It supplies no current host behavior evidence by itself. |
+| [docs/releases/0.2.1.md](../releases/0.2.1.md) | Port-authored metadata, adapted contract, documentation, maintenance helper, test or retained historical provenance. It supplies no current host behavior evidence by itself. |
 | [docs/setup/chatgpt.md](../setup/chatgpt.md) | Port-authored metadata, adapted contract, documentation, maintenance helper, test or retained historical provenance. It supplies no current host behavior evidence by itself. |
 | [docs/setup/codex.md](../setup/codex.md) | Port-authored metadata, adapted contract, documentation, maintenance helper, test or retained historical provenance. It supplies no current host behavior evidence by itself. |
 | [docs/skills/README.md](../skills/README.md) | Port-authored metadata, adapted contract, documentation, maintenance helper, test or retained historical provenance. It supplies no current host behavior evidence by itself. |
@@ -766,8 +775,8 @@ These paths record the current apply and separate source acceptance. Previous tr
 
 | Path | Role |
 | --- | --- |
-| `docs/parity/upstream-manifests/99743e9c151c8537cbbf1f98bb38f34ef3368453.apply.json` | Current source-update transaction or acceptance receipt; workflow evidence remains separate |
-| `docs/parity/upstream-manifests/99743e9c151c8537cbbf1f98bb38f34ef3368453.previous-fragments.json` | Current source-update transaction or acceptance receipt; workflow evidence remains separate |
+| `docs/parity/upstream-manifests/182f2ce414e83224915c190d2f63239c1608d0a5.apply.json` | Current source-update transaction or acceptance receipt; workflow evidence remains separate |
+| `docs/parity/upstream-manifests/182f2ce414e83224915c190d2f63239c1608d0a5.previous-fragments.json` | Current source-update transaction or acceptance receipt; workflow evidence remains separate |
 | `docs/parity/upstream-manifests/accepted.json` | Current source-update transaction or acceptance receipt; workflow evidence remains separate |
 
 ## Reserved report-only paths
@@ -778,6 +787,6 @@ These exact optional report paths belong to the original release and current pac
 | --- | --- |
 | `docs/parity/tested-package.json` | Reserved report-only evidence path |
 | `docs/releases/0.1.0.md` | Reserved report-only evidence path |
-| `docs/releases/0.2.1.md` | Reserved report-only evidence path |
+| `docs/releases/0.2.2.md` | Reserved report-only evidence path |
 | `docs/releases/remaining-controller-report.md` | Reserved report-only evidence path |
 | `docs/testing/release-checklist.md` | Reserved report-only evidence path |

@@ -82,7 +82,7 @@
       "sourcePath": "LICENSE"
     },
     "rationale": "Adopt receiving-chat ownership, exact mode paths and supported task-based effort/speed; preserve host permissions and disclose actual capabilities. Align frontier prose to proposed forge helper.",
-    "upstreamCommit": "99743e9c151c8537cbbf1f98bb38f34ef3368453",
+    "upstreamCommit": "182f2ce414e83224915c190d2f63239c1608d0a5",
     "upstreamPath": "skills/poteto-mode/SKILL.md",
     "upstreamSha256": "c5e6b605f46e5d9fbab31afa7a99d3d50680f2180d1fdfae3a924901bc52d99a",
     "verification": {

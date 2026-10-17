@@ -33,7 +33,7 @@
       "sourcePath": "LICENSE"
     },
     "rationale": "Replace Graphite-specific frontier contract with proposed forge-based --forge gh|origin helper and explicit topology ownership, retaining local ref pinning and all authorization/evidence boundaries.",
-    "upstreamCommit": "99743e9c151c8537cbbf1f98bb38f34ef3368453",
+    "upstreamCommit": "182f2ce414e83224915c190d2f63239c1608d0a5",
     "upstreamPath": "skills/poteto-mode/playbooks/orchestrate.md",
     "upstreamSha256": "08dce6c9e7be1d13bc6944ab9b51665f935c531437f5e088bc53d2a62099ef05",
     "verification": {

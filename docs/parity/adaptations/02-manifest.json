@@ -12,7 +12,7 @@
       "sourcePath": "LICENSE"
     },
     "rationale": "Preserve portable identity and complete adapted navigation or principles; upstream source identity is recorded independently.",
-    "upstreamCommit": "99743e9c151c8537cbbf1f98bb38f34ef3368453",
+    "upstreamCommit": "182f2ce414e83224915c190d2f63239c1608d0a5",
     "upstreamPath": ".cursor-plugin/plugin.json",
     "upstreamSha256": "b75609951c8a558e74f1eb20e15493933754eb2695fd2059d7f435f913889bb3",
     "verification": {
@@ -37,7 +37,7 @@
       "sourcePath": "LICENSE"
     },
     "rationale": "Copy the canonical logo unchanged for package presentation. This asset establishes no runtime workflow capability.",
-    "upstreamCommit": "99743e9c151c8537cbbf1f98bb38f34ef3368453",
+    "upstreamCommit": "182f2ce414e83224915c190d2f63239c1608d0a5",
     "upstreamPath": "assets/logo.png",
     "upstreamSha256": "672f6791589ef758b0ced2c4c477913fa2758623c438e265639a0d539ce90695",
     "verification": {

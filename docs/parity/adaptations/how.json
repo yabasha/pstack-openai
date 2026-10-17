@@ -16,7 +16,7 @@
       "sourcePath": "LICENSE"
     },
     "rationale": "Retain reviewed host capability, assignment, ownership and model-selection adaptations; upstream changes are editorial or introduce Cursor-specific delegation controls.",
-    "upstreamCommit": "99743e9c151c8537cbbf1f98bb38f34ef3368453",
+    "upstreamCommit": "182f2ce414e83224915c190d2f63239c1608d0a5",
     "upstreamPath": "skills/how/SKILL.md",
     "upstreamSha256": "08a00079bb15b4258874ac3ff62d4ca7e94350ffedb521d0fd296dc9dd21904e",
     "verification": {
@@ -41,7 +41,7 @@
       "sourcePath": "LICENSE"
     },
     "rationale": "Preserve canonical how architecture, read-only exploration and explanation roles, factual source tracing, output sections and evidence gaps. Replace source-host worker and model bindings with observed session capabilities and explicit sequential reduced capability.",
-    "upstreamCommit": "99743e9c151c8537cbbf1f98bb38f34ef3368453",
+    "upstreamCommit": "182f2ce414e83224915c190d2f63239c1608d0a5",
     "upstreamPath": "skills/how/references/explainer-prompt.md",
     "upstreamSha256": "ddb89cebefc24e2b54517a331aedfe045b6971e101f45c71b8cef4cccff45bff",
     "verification": {
@@ -66,7 +66,7 @@
       "sourcePath": "LICENSE"
     },
     "rationale": "Retain complete tracing and evidence-quality guidance; upstream shortening removes useful standalone instructions or source-specific cautions.",
-    "upstreamCommit": "99743e9c151c8537cbbf1f98bb38f34ef3368453",
+    "upstreamCommit": "182f2ce414e83224915c190d2f63239c1608d0a5",
     "upstreamPath": "skills/how/references/explorer-prompt.md",
     "upstreamSha256": "6300128385ee940fd42ecb84b0e623435440a2dc283eae54ee4a52ba56947ba1",
     "verification": {

@@ -76,7 +76,7 @@ The following statuses come from the current parity inventory. Pending aggregate
 
 Destination: [skills/ketchup/SKILL.md](../../skills/ketchup/SKILL.md).
 
-Upstream commit: `99743e9c151c8537cbbf1f98bb38f34ef3368453`. SHA-256: `47b3fb0d5626a40fcb3bd016e68f1cb3d2d313351183e8f6c05d4c7abd76e665`.
+Upstream commit: `182f2ce414e83224915c190d2f63239c1608d0a5`. SHA-256: `47b3fb0d5626a40fcb3bd016e68f1cb3d2d313351183e8f6c05d4c7abd76e665`.
 
 Disposition: `runtime`. Aggregate adaptation status: `adapted-reviewed`.
 

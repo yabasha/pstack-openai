@@ -13,7 +13,7 @@
       "sourcePath": "LICENSE"
     },
     "rationale": "Preserve the complete canonical principle and invocation metadata. Bind concurrent writes to observed session capabilities, distinct ownership and authorization. No comparison-port additions.",
-    "upstreamCommit": "99743e9c151c8537cbbf1f98bb38f34ef3368453",
+    "upstreamCommit": "182f2ce414e83224915c190d2f63239c1608d0a5",
     "upstreamPath": "skills/principle-separate-before-serializing-shared-state/SKILL.md",
     "upstreamSha256": "05294b40448e927c5da1c7b6f5c6b9fed3744637e3833d2d948b9154a9dd00bb",
     "verification": {

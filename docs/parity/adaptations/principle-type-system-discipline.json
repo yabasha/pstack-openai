@@ -15,7 +15,7 @@
       "sourcePath": "LICENSE"
     },
     "rationale": "Reviewed upstream editorial update; retain portable identity for README and host capability boundaries for adapted skills.",
-    "upstreamCommit": "99743e9c151c8537cbbf1f98bb38f34ef3368453",
+    "upstreamCommit": "182f2ce414e83224915c190d2f63239c1608d0a5",
     "upstreamPath": "skills/principle-type-system-discipline/SKILL.md",
     "upstreamSha256": "5cdaf79785e3c12b2592b9469ee8c272143eb86ab7a18d8382197cea5fd30106",
     "verification": {

@@ -16,7 +16,7 @@
       "sourcePath": "LICENSE"
     },
     "rationale": "Generalize actor-census-only diagnosis into falsifiable shared-premise testing; adapt capability limits to the general check.",
-    "upstreamCommit": "99743e9c151c8537cbbf1f98bb38f34ef3368453",
+    "upstreamCommit": "182f2ce414e83224915c190d2f63239c1608d0a5",
     "upstreamPath": "skills/principle-attack-the-premise/SKILL.md",
     "upstreamSha256": "6a932884daad4aa189e9b5d1665226bbc75621d4d2a398fd4003bebd382f4599",
     "verification": {

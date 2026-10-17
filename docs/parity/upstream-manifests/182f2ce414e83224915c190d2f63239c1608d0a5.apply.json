@@ -1,0 +1,90 @@
+{
+  "acceptanceReady": false,
+  "candidate": "182f2ce414e83224915c190d2f63239c1608d0a5",
+  "checks": {
+    "affectedHostCases": {
+      "chatgpt": "not-run",
+      "codex": "not-run"
+    },
+    "helperRegression": "not-run",
+    "structural": "not-run"
+  },
+  "invalidatedSources": [
+    "README.md",
+    "docs/guide/01-setup.md",
+    "docs/guide/02-poteto-mode.md",
+    "docs/guide/03-understand.md",
+    "docs/guide/04-design.md",
+    "docs/guide/05-build-and-clean.md",
+    "docs/guide/06-verify-and-ship.md",
+    "docs/guide/07-overnight.md",
+    "docs/guide/08-principles.md",
+    "docs/guide/09-make-it-yours.md",
+    "docs/guide/10-recipes-and-pitfalls.md",
+    "docs/guide/README.md",
+    "docs/harness/claude-code.md",
+    "skills/poteto-help/SKILL.md"
+  ],
+  "packageCommit": "e30f1aa6a2abf88c89aee3163a51f80e845aeaa9",
+  "releasable": false,
+  "resolutions": {
+    "candidate": "182f2ce414e83224915c190d2f63239c1608d0a5",
+    "candidateVersion": "0.2.2",
+    "entries": [
+      {
+        "adaptedSha256": null,
+        "contentPath": "resolved/content/docs/harness/claude-code.md",
+        "dependencies": [],
+        "dependentCallers": [],
+        "destinationPath": "docs/harness/claude-code.md",
+        "disposition": "reference-only",
+        "newSha256": "cbf1dc0dfb4a4e3c254eb5362bfb1c9db04517a4b4eec1b3315973f5bbd8325a",
+        "oldSha256": null,
+        "path": "docs/harness/claude-code.md",
+        "rationale": "Preserve the complete Claude Code adapter inside a quoted source fence for provenance only; no mappings, installer instructions or host claims are operative on ChatGPT or Codex.",
+        "resolution": "required",
+        "reviewedCallers": [],
+        "reviewedSha256": "6655a98ba0194f2b808d84421ae79b84fc2ba60e9ade14efee6f925225678df6"
+      },
+      {
+        "adaptedSha256": "d6968ffdf6dbc6019824e5613ca1b2e8c7078d914cbf91c0f4730c332aac47ec",
+        "contentPath": "resolved/content/README.md",
+        "dependencies": [
+          "UPSTREAM.md",
+          "NOTICE.md",
+          "LICENSE",
+          "docs/skills/README.md",
+          "docs/principles/README.md",
+          "docs/guide/README.md",
+          "docs/compatibility.md",
+          "docs/parity/case-registry.json"
+        ],
+        "dependentCallers": [
+          "skills/poteto-help/SKILL.md"
+        ],
+        "destinationPath": "README.md",
+        "disposition": "adapt-manually",
+        "newSha256": "af549c7ebae71851fb17a676ebc50e67ada9e5578119c8f4ff4b7a01a4f66f45",
+        "oldSha256": "98b107ff8b5e0468dfefbd4c9892a09b7b372958c4131bc7e2d7b4d4182aaa75",
+        "path": "README.md",
+        "rationale": "Stage the reviewed packaging-only source update while preserving portable identity, setup routes, shared runtime, historical evidence and separate baseline acceptance.",
+        "resolution": "required",
+        "reviewedCallers": [
+          "skills/poteto-help/SKILL.md"
+        ],
+        "reviewedSha256": "3a88bdafa14a521ccfd3a61bda4d73dcbadc0246339416db27326c6cbc672181"
+      }
+    ],
+    "kind": "pstack-upstream-resolutions",
+    "packageCommit": "e30f1aa6a2abf88c89aee3163a51f80e845aeaa9",
+    "packageMetadata": {
+      "contentPath": "resolved/package-metadata.json",
+      "reviewedSha256": "6b85cc0ac99b7bda54675fe981bed3de6de69cabd525569dafdd7d8aeacf19ef"
+    },
+    "reviewSha256": "b16809c21461cd7fcf5223a99e6e5fa6c338db0438b36b6dfc677b9310b85c41",
+    "schemaVersion": 2
+  },
+  "resolutionsSha256": "1bb56cf34b2bb2cf2d81f35702adf63a270ed3c053bb2e38c075526b1eb5fe10",
+  "reviewSha256": "b16809c21461cd7fcf5223a99e6e5fa6c338db0438b36b6dfc677b9310b85c41",
+  "schemaVersion": 1
+}

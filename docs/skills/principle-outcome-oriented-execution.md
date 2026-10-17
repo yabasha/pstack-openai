@@ -77,7 +77,7 @@ The following statuses come from the current parity inventory. Pending aggregate
 
 Destination: [skills/principle-outcome-oriented-execution/SKILL.md](../../skills/principle-outcome-oriented-execution/SKILL.md).
 
-Upstream commit: `99743e9c151c8537cbbf1f98bb38f34ef3368453`. SHA-256: `10eb91633aa570355ba4bb37088fcade2b22e498df7a58edc749e65bc5a78e2d`.
+Upstream commit: `182f2ce414e83224915c190d2f63239c1608d0a5`. SHA-256: `10eb91633aa570355ba4bb37088fcade2b22e498df7a58edc749e65bc5a78e2d`.
 
 Disposition: `runtime`. Aggregate adaptation status: `adapted-reviewed`.
 

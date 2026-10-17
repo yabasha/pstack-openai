@@ -1,0 +1,27 @@
+[
+  {
+    "adaptationStatus": "reference-only-reviewed",
+    "dependencies": [],
+    "destinationPath": "docs/harness/claude-code.md",
+    "disposition": "reference-only",
+    "licenseProvenance": {
+      "copyright": "Copyright (c) 2026 Lauren Tan",
+      "license": "MIT",
+      "sourcePath": "LICENSE"
+    },
+    "rationale": "Preserve the complete Claude Code adapter inside a quoted source fence for provenance only; no mappings, installer instructions or host claims are operative on ChatGPT or Codex.",
+    "upstreamCommit": "182f2ce414e83224915c190d2f63239c1608d0a5",
+    "upstreamPath": "docs/harness/claude-code.md",
+    "upstreamSha256": "cbf1dc0dfb4a4e3c254eb5362bfb1c9db04517a4b4eec1b3315973f5bbd8325a",
+    "verification": {
+      "chatgpt": {
+        "evidence": [],
+        "status": "not-run"
+      },
+      "codex": {
+        "evidence": [],
+        "status": "not-run"
+      }
+    }
+  }
+]

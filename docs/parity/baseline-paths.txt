@@ -34,6 +34,7 @@ docs/guide/images/recipes.jpg
 docs/guide/images/router.jpg
 docs/guide/images/understanding.jpg
 docs/guide/images/verification.jpg
+docs/harness/claude-code.md
 plugin.json
 skills/architect/SKILL.md
 skills/architect/references/design-red-flags.md

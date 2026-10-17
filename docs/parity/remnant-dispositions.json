@@ -913,20 +913,150 @@
     "endLine": 23,
     "kind": "source-only",
     "path": "UPSTREAM.md",
-    "rationale": "Exact quoted canonical metadata filename identifies source lineage; operative package uses the reviewed root manifest. No runtime source-host binding is introduced.",
+    "rationale": "Explicit quoted upstream source identity or Claude-only source reference; it supplies no current host binding.",
     "reviewed": true,
-    "sha256": "de816bf6b742745b1871027a769ac500668b073bc74ff5372990660db771397c",
+    "sha256": "2dc2c816205b670ff7414e2c109bdc52433184282279dd78d036b8b8438a0002",
     "startLine": 23,
     "token": ".cursor-plugin/plugin.json"
+  },
+  {
+    "endLine": 5,
+    "kind": "source-only",
+    "path": "docs/harness/claude-code.md",
+    "rationale": "Explicit quoted upstream source identity or Claude-only source reference; it supplies no current host binding.",
+    "reviewed": true,
+    "sha256": "6655a98ba0194f2b808d84421ae79b84fc2ba60e9ade14efee6f925225678df6",
+    "startLine": 5,
+    "token": "claude-code.md"
+  },
+  {
+    "endLine": 18,
+    "kind": "source-only",
+    "path": "docs/harness/claude-code.md",
+    "rationale": "Explicit quoted upstream source identity or Claude-only source reference; it supplies no current host binding.",
+    "reviewed": true,
+    "sha256": "6655a98ba0194f2b808d84421ae79b84fc2ba60e9ade14efee6f925225678df6",
+    "startLine": 18,
+    "token": "Task"
+  },
+  {
+    "endLine": 19,
+    "kind": "source-only",
+    "path": "docs/harness/claude-code.md",
+    "rationale": "Explicit quoted upstream source identity or Claude-only source reference; it supplies no current host binding.",
+    "reviewed": true,
+    "sha256": "6655a98ba0194f2b808d84421ae79b84fc2ba60e9ade14efee6f925225678df6",
+    "startLine": 19,
+    "token": "AskQuestion"
+  },
+  {
+    "endLine": 43,
+    "kind": "source-only",
+    "path": "docs/harness/claude-code.md",
+    "rationale": "Explicit quoted upstream source identity or Claude-only source reference; it supplies no current host binding.",
+    "reviewed": true,
+    "sha256": "6655a98ba0194f2b808d84421ae79b84fc2ba60e9ade14efee6f925225678df6",
+    "startLine": 43,
+    "token": "claude-<family>-<version>-<effort>[-fast"
+  },
+  {
+    "endLine": 43,
+    "kind": "source-only",
+    "path": "docs/harness/claude-code.md",
+    "rationale": "Explicit quoted upstream source identity or Claude-only source reference; it supplies no current host binding.",
+    "reviewed": true,
+    "sha256": "6655a98ba0194f2b808d84421ae79b84fc2ba60e9ade14efee6f925225678df6",
+    "startLine": 43,
+    "token": "claude-opus-5-5-xhigh"
+  },
+  {
+    "endLine": 52,
+    "kind": "source-only",
+    "path": "docs/harness/claude-code.md",
+    "rationale": "Explicit quoted upstream source identity or Claude-only source reference; it supplies no current host binding.",
+    "reviewed": true,
+    "sha256": "6655a98ba0194f2b808d84421ae79b84fc2ba60e9ade14efee6f925225678df6",
+    "startLine": 52,
+    "token": ".cursor/skills/"
+  },
+  {
+    "endLine": 53,
+    "kind": "source-only",
+    "path": "docs/harness/claude-code.md",
+    "rationale": "Explicit quoted upstream source identity or Claude-only source reference; it supplies no current host binding.",
+    "reviewed": true,
+    "sha256": "6655a98ba0194f2b808d84421ae79b84fc2ba60e9ade14efee6f925225678df6",
+    "startLine": 53,
+    "token": ".cursor-plugin/plugin.json"
+  },
+  {
+    "endLine": 53,
+    "kind": "source-only",
+    "path": "docs/harness/claude-code.md",
+    "rationale": "Explicit quoted upstream source identity or Claude-only source reference; it supplies no current host binding.",
+    "reviewed": true,
+    "sha256": "6655a98ba0194f2b808d84421ae79b84fc2ba60e9ade14efee6f925225678df6",
+    "startLine": 53,
+    "token": ".cursor/plugins/"
+  },
+  {
+    "endLine": 53,
+    "kind": "source-only",
+    "path": "docs/harness/claude-code.md",
+    "rationale": "Explicit quoted upstream source identity or Claude-only source reference; it supplies no current host binding.",
+    "reviewed": true,
+    "sha256": "6655a98ba0194f2b808d84421ae79b84fc2ba60e9ade14efee6f925225678df6",
+    "startLine": 53,
+    "token": "claude-plugin/plugin.json"
+  },
+  {
+    "endLine": 54,
+    "kind": "source-only",
+    "path": "docs/harness/claude-code.md",
+    "rationale": "Explicit quoted upstream source identity or Claude-only source reference; it supplies no current host binding.",
+    "reviewed": true,
+    "sha256": "6655a98ba0194f2b808d84421ae79b84fc2ba60e9ade14efee6f925225678df6",
+    "startLine": 54,
+    "token": ".cursor/rules/"
+  },
+  {
+    "endLine": 55,
+    "kind": "source-only",
+    "path": "docs/harness/claude-code.md",
+    "rationale": "Explicit quoted upstream source identity or Claude-only source reference; it supplies no current host binding.",
+    "reviewed": true,
+    "sha256": "6655a98ba0194f2b808d84421ae79b84fc2ba60e9ade14efee6f925225678df6",
+    "startLine": 55,
+    "token": ".cursor/projects/"
   },
   {
     "endLine": 11,
     "kind": "source-only",
     "path": "docs/parity/support-map.md",
-    "rationale": "Quoted source metadata identity; the operative package uses its portable manifest.",
+    "rationale": "Explicit quoted upstream source identity or Claude-only source reference; it supplies no current host binding.",
     "reviewed": true,
-    "sha256": "8355fd3a10393f0dcd22b4a5846a5490ffa6fcb4522e361c2f1b3a615e0f50ac",
+    "sha256": "d64577dd52fd1786081d457d9d33658e52ce00a7d5ef3b8f284d57aed6a56f33",
     "startLine": 11,
     "token": ".cursor-plugin/plugin.json"
+  },
+  {
+    "endLine": 184,
+    "kind": "source-only",
+    "path": "docs/parity/support-map.md",
+    "rationale": "Explicit quoted upstream source identity or Claude-only source reference; it supplies no current host binding.",
+    "reviewed": true,
+    "sha256": "d64577dd52fd1786081d457d9d33658e52ce00a7d5ef3b8f284d57aed6a56f33",
+    "startLine": 184,
+    "token": "claude-code.md"
+  },
+  {
+    "endLine": 184,
+    "kind": "source-only",
+    "path": "docs/parity/support-map.md",
+    "rationale": "Explicit quoted upstream source identity or Claude-only source reference; it supplies no current host binding.",
+    "reviewed": true,
+    "sha256": "d64577dd52fd1786081d457d9d33658e52ce00a7d5ef3b8f284d57aed6a56f33",
+    "startLine": 184,
+    "token": "claude-code.md](../harness/claude-code.md"
   }
 ]

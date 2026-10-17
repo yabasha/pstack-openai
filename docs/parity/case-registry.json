@@ -3067,6 +3067,7 @@
         "LICENSE",
         "README.md",
         "assets/logo.png",
+        "docs/harness/claude-code.md",
         "skills/poteto-mode/scripts/watch-pr/tsconfig.json",
         "skills/poteto-mode/scripts/watch-pr/types.compile.ts"
       ],

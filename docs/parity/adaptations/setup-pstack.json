@@ -15,7 +15,7 @@
       "sourcePath": "LICENSE"
     },
     "rationale": "Preserve model discovery, current-state loading, effort budgets, complete role labels and panel semantics, confirmation, validation, idempotent replacement and optional verification offer. Replace source-specific rule persistence with an explicitly authorized verified host mechanism; inherited defaults and session-only reduced capability preserve unknown-model safety. Adapt discovery metadata to conditional model verification and authorized persistence while retaining purpose and invocation aliases.",
-    "upstreamCommit": "99743e9c151c8537cbbf1f98bb38f34ef3368453",
+    "upstreamCommit": "182f2ce414e83224915c190d2f63239c1608d0a5",
     "upstreamPath": "skills/setup-pstack/SKILL.md",
     "upstreamSha256": "d61b47256a18155a81c8e5ef95e3cc6569ce8c18317c35c4dd9c8015cf68cb59",
     "verification": {

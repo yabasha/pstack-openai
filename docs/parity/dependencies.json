@@ -1,10 +1,10 @@
 {
-  "auditedPackageCommit": "f3c76a83068ac2bcff11deb9ea2900534ea39b72",
+  "auditedPackageCommit": "e30f1aa6a2abf88c89aee3163a51f80e845aeaa9",
   "counts": {
-    "files": 169,
+    "files": 170,
     "playbooks": 23,
     "rootSkills": 54,
-    "supportIncludingPlaybooks": 115
+    "supportIncludingPlaybooks": 116
   },
   "dependencies": [
     {
@@ -1460,7 +1460,7 @@
         "workers-models"
       ],
       "destinationPath": "plugin.json",
-      "destinationSha256": "409ca795f6cec4360d0c029d4bfcf42fe853daff8166130696ef610aab9a6aa1",
+      "destinationSha256": "d5d56ce52ce988113d1743a8afc81ead9271c0816fa24c0c81a549d27cb80476",
       "kind": "support",
       "packageDependencies": [
         "assets/logo.png"
@@ -1542,7 +1542,7 @@
         "repository-access"
       ],
       "destinationPath": "README.md",
-      "destinationSha256": "d6968ffdf6dbc6019824e5613ca1b2e8c7078d914cbf91c0f4730c332aac47ec",
+      "destinationSha256": "3a88bdafa14a521ccfd3a61bda4d73dcbadc0246339416db27326c6cbc672181",
       "kind": "support",
       "packageDependencies": [
         "UPSTREAM.md",
@@ -1647,7 +1647,7 @@
         }
       ],
       "sourcePath": "README.md",
-      "sourceSha256": "98b107ff8b5e0468dfefbd4c9892a09b7b372958c4131bc7e2d7b4d4182aaa75"
+      "sourceSha256": "af549c7ebae71851fb17a676ebc50e67ada9e5578119c8f4ff4b7a01a4f66f45"
     },
     {
       "dependencyIds": [
@@ -4170,6 +4170,16 @@
       "references": [],
       "sourcePath": "docs/guide/images/verification.jpg",
       "sourceSha256": "2a76b52007a1cd2866ba67fd47d7d9ef3e1118bb5a09c4665eee8c3f161bd09a"
+    },
+    {
+      "dependencyIds": [],
+      "destinationPath": "docs/harness/claude-code.md",
+      "destinationSha256": "6655a98ba0194f2b808d84421ae79b84fc2ba60e9ade14efee6f925225678df6",
+      "kind": "support",
+      "packageDependencies": [],
+      "references": [],
+      "sourcePath": "docs/harness/claude-code.md",
+      "sourceSha256": "cbf1dc0dfb4a4e3c254eb5362bfb1c9db04517a4b4eec1b3315973f5bbd8325a"
     },
     {
       "dependencyIds": [],
@@ -10442,5 +10452,5 @@
       "sourceSha256": "11c62671aa7b7a6e3d36929ffe2b59bf95e6ca664eee4d93e6ee527dd3390ddb"
     }
   ],
-  "sourceCommit": "99743e9c151c8537cbbf1f98bb38f34ef3368453"
+  "sourceCommit": "182f2ce414e83224915c190d2f63239c1608d0a5"
 }
