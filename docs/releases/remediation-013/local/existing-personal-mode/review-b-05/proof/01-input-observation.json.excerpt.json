@@ -1,0 +1,15 @@
+{
+  "kind": "selected-fixture-result-fields",
+  "caseId": "existing-personal-mode",
+  "attemptId": "review-b-05",
+  "originalLocator": "remaining-local/cases/existing-personal-mode/outputs/input-observation.json",
+  "sourceSha256": "63ceef6877abeef202f04f821c175a12e1567670845509d14dc0d57a34846a4b",
+  "sourceBytes": 19619,
+  "transformation": "Named JSON fields selected by exact JSON Pointer. Task-owned absolute paths replaced with declared placeholders. Other fields omitted. These are result-artifact values, not synthesized tool execution evidence. Public selection is limited to eight short inspected fields. Longer output and unselected fields remain private.",
+  "fields": [
+    {
+      "pointer": "/inputRevision",
+      "value": "7d7330bf7fe5a32cc5ef2a120a492217fa2ff4e1"
+    }
+  ]
+}

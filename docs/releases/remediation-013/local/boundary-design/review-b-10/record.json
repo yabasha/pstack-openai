@@ -1,0 +1,68 @@
+{
+  "caseId": "boundary-design",
+  "packageVersion": "0.1.3",
+  "packageCommit": "51f209daf83cd97d64f89881d66533bb59dc57db",
+  "host": "codex",
+  "hostMode": "Historical native Local task-scoped fixture observation",
+  "date": "2026-10-17",
+  "input": "Historical fixture at 931f3a170b4f7d4b46cc2e1442d5d4268e3d1a7d. Independent assessment review-b-10.",
+  "observedOutput": "Only corrected current task931f3a170b4f7d4b46cc2e1442d5d4268e3d1a7d is accepted. Earlier wrong migration task and inherited-context designs remain rejected. The immutable literal repro digest is c3b7bfef1bee77733e19fcec4ba960597d623baadbb1c2bafbcc3c060f852353. Actual untouched runtime and nullable compiler red precede the repair. Two clean no-history item/collection whole-shape candidates finish before a fresh clean judge. The parent compares both and synthesizes after judgment. The synthesis places caller usage before types, covers every rationale section, interface depth and all eight red flags, and names base/graft/rejections. The implementation changes only batch/consumer behavior/types. Domain total(order):number, input acceptance, HTTP and exports are preserved. Actual literal/working runtime green, strict nullable compilation, legacy specified-case parity and independent diff review are retained. This reviewer independently verified immutable repro and protected bytes.",
+  "status": "reduced-pass",
+  "execution": "workers",
+  "inputRevision": "931f3a170b4f7d4b46cc2e1442d5d4268e3d1a7d",
+  "sourcePaths": [
+    "skills/architect/SKILL.md",
+    "skills/architect/references/design-red-flags.md",
+    "skills/architect/references/rationale-template.md",
+    "skills/architect/references/runner-prompt.md"
+  ],
+  "documentedCapabilities": [
+    "Frozen source instructions only. Current-main qualification is not established."
+  ],
+  "exposedTools": [
+    "exec"
+  ],
+  "artifacts": [
+    "docs/releases/remediation-013/local/boundary-design/review-b-10/assessment.json",
+    "docs/releases/remediation-013/local/boundary-design/review-b-10/proof/01-replacement-assignments.json.excerpt.json",
+    "docs/releases/remediation-013/local/boundary-design/review-b-10/proof/02-method-receipt.json.excerpt.json",
+    "docs/releases/remediation-013/local/boundary-design/review-b-10/proof/03-verification-receipt.json.excerpt.json",
+    "docs/releases/remediation-013/local/boundary-design/review-b-10/proof/native-source-read.json",
+    "docs/releases/remediation-013/local/boundary-design/review-b-10/proof/task-result-prefix.json",
+    "docs/releases/remediation-013/local/boundary-design/review-b-10/proof/fixture/working/batch.ts",
+    "docs/releases/remediation-013/local/boundary-design/review-b-10/proof/fixture/working/consumer.ts",
+    "docs/releases/remediation-013/local/boundary-design/review-b-10/proof/fixture/evidence/verification-receipt.json"
+  ],
+  "limits": [
+    "The saved Arena receipt and returned method metadata do not meet the exact structured contract. declaredOrder is an array, outputPath names directories, role values differ from candidate/judge, method.order is an array and resultMethod is a string rather than the exact declared method object. Extra fields also violate validate_method exact shape.",
+    "Prospective replacement assignments lack the exact structured measurement method later inserted in the receipt. Real phase chronology cannot repair missing prospective/returned exact method fields.",
+    "The public source excerpt covers the listed matched paths only. Other source reads assessed independently remain outside this narrow public excerpt.",
+    "Only the actual operations listed in this record have narrow public bindings. Other operations from the independent assessment remain unprojected. No missing operation is invented.",
+    "The exposed tool name exec is retained from the actual scoped native custom-tool call. The nested tools.exec_command call matches this public command event. command_execution remains an event type only.",
+    "Selected fixture code and prior check receipts are included for review. They are fragments of the actual owned fixture, not a newly run or self-contained build. The curation did not re-execute workflow tests."
+  ],
+  "priorActionIdentities": [],
+  "permissions": {
+    "execution": "granted",
+    "writes": "granted",
+    "externalActions": "denied"
+  },
+  "models": {
+    "requested": "inherit-parent",
+    "actual": "unknown"
+  },
+  "successfulOperations": [
+    {
+      "operation": "read",
+      "tool": "exec",
+      "evidence": "docs/releases/remediation-013/local/boundary-design/review-b-10/proof/native-source-read.json"
+    }
+  ],
+  "nativeObservations": [
+    {
+      "observation": "review-outcome",
+      "evidence": "docs/releases/remediation-013/local/boundary-design/review-b-10/assessment.json",
+      "reviewedBy": "/root/grade_remediation_local_b"
+    }
+  ]
+}

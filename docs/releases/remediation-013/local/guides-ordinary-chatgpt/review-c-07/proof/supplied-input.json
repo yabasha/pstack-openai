@@ -1,0 +1,10 @@
+{
+  "kind": "supplied-fixture-input-excerpt",
+  "caseId": "guides-ordinary-chatgpt",
+  "inputRevision": "b11706abb67a1fb2ad00ac1fac7518370bcc1e9f",
+  "originalLocator": "remaining-local/cases/guides-ordinary-chatgpt/task-contract.json",
+  "sourceSha256": "28dda7406998fbc20bc07224f7b9b923e5eb4267de73a5b79e71dc40d85e9b07",
+  "pointer": "/case/prompt",
+  "suppliedPrompt": "Use pstack in ordinary ChatGPT with supplied source but no execution.",
+  "transformation": "Only the exact supplied case prompt is projected. Fixture data and arbitrary surrounding contract fields are omitted. This is supplied input, not a native successful tool operation."
+}

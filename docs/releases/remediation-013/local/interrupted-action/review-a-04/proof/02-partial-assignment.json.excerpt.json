@@ -1,0 +1,23 @@
+{
+  "kind": "selected-fixture-result-fields",
+  "caseId": "interrupted-action",
+  "attemptId": "review-a-04",
+  "originalLocator": "remaining-local/cases/interrupted-action/outputs/partial-assignment.json",
+  "sourceSha256": "e4d7467e93071ed25e3d1b327ef8fc1caf34e4784bede9ac8bd84437ce8331f4",
+  "sourceBytes": 717,
+  "transformation": "Named JSON fields selected by exact JSON Pointer. Task-owned absolute paths replaced with declared placeholders. Other fields omitted. These are result-artifact values, not synthesized tool execution evidence. Public selection is limited to eight short inspected fields. Longer output and unselected fields remain private.",
+  "fields": [
+    {
+      "pointer": "/inputRevision",
+      "value": "ef268eed777693deda8eae320c492e0730631dce"
+    },
+    {
+      "pointer": "/requestedModel",
+      "value": "inherit-parent"
+    },
+    {
+      "pointer": "/observedModel",
+      "value": "unknown"
+    }
+  ]
+}

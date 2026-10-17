@@ -1,0 +1,144 @@
+{
+  "schemaVersion": 1,
+  "kind": "historical-independent-assessment-projection",
+  "caseId": "partition-and-race",
+  "attemptId": "review-c-04",
+  "startingMain": "4138e161c27cafffd2baaab6bf4ca53e86a57433",
+  "packageCommit": "51f209daf83cd97d64f89881d66533bb59dc57db",
+  "packageVersion": "0.1.3",
+  "inputRevision": "e1dbf216744c45345acecf367b2b449bbc9fa75f",
+  "originalProposedStatus": "reduced",
+  "evidenceStatus": "reduced-pass",
+  "qualifiesCurrentMain": false,
+  "sourceReview": {
+    "originalLocator": "grades/grade_remediation_local_c/result.json",
+    "sourceSha256": "2582d82fe0ad256da816b168e5b242a713d134d62af8657c4f7bc255d3a7ceba",
+    "jsonPointer": "/cases/3",
+    "reviewer": "/root/grade_remediation_local_c",
+    "requestedModel": "inherit-parent",
+    "actualModel": "unknown"
+  },
+  "findings": [
+    "Actual independent operations include a later concurrent C/D first-pass race, one rejected metadata-missing result, a disclosed task dropout, and stop followed by terminal inspection and artifact quarantine. Orders/runtime required coverage, one retry and its second invalid return remain absent. Structured receipts retain invalid roles and incomplete assignments."
+  ],
+  "limits": [
+    "Orders/runtime required partition coverage",
+    "A real bounded second invalid return",
+    "Canonical partition/race roles and complete receipt shape",
+    "Source retry versus fresh-worker ownership contradiction"
+  ],
+  "chronology": [],
+  "predicate": "Combined Swarm expectedFull and structured receipt require complete partition, declared race, exhausted bounded retry and cancellation evidence.",
+  "sourceArtifactBindings": [
+    {
+      "originalLocator": "remaining-local/cases/partition-and-race/task-contract.json",
+      "sourceSha256": "5bd81b9ebe4d2085918b1d1bd7d2ed2d4691262925457203069a20422ae6de1f",
+      "expectedSha256": "5bd81b9ebe4d2085918b1d1bd7d2ed2d4691262925457203069a20422ae6de1f",
+      "expectedHashMatches": true,
+      "bytes": 3297,
+      "publication": "omitted",
+      "reason": "Only a narrow inspected projection may be included. Private original remains unchanged."
+    },
+    {
+      "originalLocator": "remaining-local/cases/partition-and-race/outputs/partition-and-race.result.md",
+      "sourceSha256": "9e09a1417ca2f88eea479882669b6973911363f902e3f3cebcfc32e298b86ca3",
+      "expectedSha256": "9e09a1417ca2f88eea479882669b6973911363f902e3f3cebcfc32e298b86ca3",
+      "expectedHashMatches": true,
+      "bytes": 38501,
+      "publication": "omitted",
+      "reason": "Only a narrow inspected projection may be included. Private original remains unchanged."
+    },
+    {
+      "originalLocator": "remaining-local/cases/partition-and-race/outputs/completion.json",
+      "sourceSha256": "f5418ce677e80949ecba7c9a6b9def8cf69220fb9423a80a4bc79a97a114a70e",
+      "expectedSha256": "f5418ce677e80949ecba7c9a6b9def8cf69220fb9423a80a4bc79a97a114a70e",
+      "expectedHashMatches": true,
+      "bytes": 57913,
+      "publication": "omitted",
+      "reason": "Raw/native context, broad discovery, completion dump, or bulk source manifest is excluded. No protected payload is decoded."
+    },
+    {
+      "originalLocator": "remaining-local/cases/partition-and-race/outputs/swarm-events.jsonl",
+      "sourceSha256": "473a88eb59910e4436ffc40e06d6be29396ef8f19e478a05c6afbc9a5c70c872",
+      "expectedSha256": "473a88eb59910e4436ffc40e06d6be29396ef8f19e478a05c6afbc9a5c70c872",
+      "expectedHashMatches": true,
+      "bytes": 8555,
+      "publication": "omitted",
+      "reason": "Only a narrow inspected projection may be included. Private original remains unchanged."
+    },
+    {
+      "originalLocator": "remaining-local/cases/partition-and-race/outputs/method-receipt.json",
+      "sourceSha256": "929c2ed4298f6d86607faca4618f9c7a5e8ca66dcd39451dff42446e53f2a37f",
+      "expectedSha256": "929c2ed4298f6d86607faca4618f9c7a5e8ca66dcd39451dff42446e53f2a37f",
+      "expectedHashMatches": true,
+      "bytes": 6933,
+      "publication": "projected-fields",
+      "reason": "Only a narrow inspected projection may be included. Private original remains unchanged.",
+      "projectedPath": "docs/releases/remediation-013/local/partition-and-race/review-c-04/proof/01-method-receipt.json.excerpt.json",
+      "projectedSha256": "dc0944f725daf698f772dccba34efc097ab3d4339131f8f5ce9ba22d34c68d1d"
+    },
+    {
+      "originalLocator": "remaining-local/cases/partition-and-race/outputs/later-available-method-receipt.json",
+      "sourceSha256": "c41a565bbaafcb299b22c430b236b9e2aff52a96734f0e62ac93e08edd870c70",
+      "expectedSha256": "c41a565bbaafcb299b22c430b236b9e2aff52a96734f0e62ac93e08edd870c70",
+      "expectedHashMatches": true,
+      "bytes": 3547,
+      "publication": "projected-fields",
+      "reason": "Only a narrow inspected projection may be included. Private original remains unchanged.",
+      "projectedPath": "docs/releases/remediation-013/local/partition-and-race/review-c-04/proof/02-later-available-method-receipt.json.excerpt.json",
+      "projectedSha256": "0d2ce695aa9494e2895140f7edd0969a3fe1121ff212c59a9cf1dc7f9bddf6c0"
+    },
+    {
+      "originalLocator": "remaining-local/cases/partition-and-race/outputs/parent-review.md",
+      "sourceSha256": "0012f5f8bad8d7d70cc054c704c0821a1402bad16b4e00dfa03e56a61f3c0a94",
+      "expectedSha256": "0012f5f8bad8d7d70cc054c704c0821a1402bad16b4e00dfa03e56a61f3c0a94",
+      "expectedHashMatches": true,
+      "bytes": 2607,
+      "publication": "omitted",
+      "reason": "Only a narrow inspected projection may be included. Private original remains unchanged."
+    },
+    {
+      "originalLocator": "remaining-local/cases/partition-and-race/outputs/workers/race_c/result.json",
+      "sourceSha256": "df221c523cb8dde9b022351c9893c8e8b8bfdef60309f951899c43cd278738e9",
+      "expectedSha256": "df221c523cb8dde9b022351c9893c8e8b8bfdef60309f951899c43cd278738e9",
+      "expectedHashMatches": true,
+      "bytes": 1752,
+      "publication": "projected-fields",
+      "reason": "Only a narrow inspected projection may be included. Private original remains unchanged.",
+      "projectedPath": "docs/releases/remediation-013/local/partition-and-race/review-c-04/proof/03-result.json.excerpt.json",
+      "projectedSha256": "32d2c735d480ba6c6cbb7466e2bf13c637bcc08c48ee768b89cf794387587183"
+    },
+    {
+      "originalLocator": "remaining-local/cases/partition-and-race/outputs/workers/race_d/result.json",
+      "sourceSha256": "d7dc66c6cd08084e12bd58792e6f0edf5b3ee00a03e2cb89475848845ed47960",
+      "expectedSha256": "d7dc66c6cd08084e12bd58792e6f0edf5b3ee00a03e2cb89475848845ed47960",
+      "expectedHashMatches": true,
+      "bytes": 2106,
+      "publication": "projected-fields",
+      "reason": "Only a narrow inspected projection may be included. Private original remains unchanged.",
+      "projectedPath": "docs/releases/remediation-013/local/partition-and-race/review-c-04/proof/04-result.json.excerpt.json",
+      "projectedSha256": "588d14ec784ec3221dc15cfd3066a850ab00f120dee28ece5692957ad8421bdb"
+    },
+    {
+      "originalLocator": "remaining-local/cases/partition-and-race/outputs/quarantine/cancel/partial.json",
+      "sourceSha256": "c235a9f9e5c3cc466de631d33ac78ae37ec57e579a7e6e98266729354368f8f0",
+      "expectedSha256": "c235a9f9e5c3cc466de631d33ac78ae37ec57e579a7e6e98266729354368f8f0",
+      "expectedHashMatches": true,
+      "bytes": 594,
+      "publication": "projected-fields",
+      "reason": "Only a narrow inspected projection may be included. Private original remains unchanged.",
+      "projectedPath": "docs/releases/remediation-013/local/partition-and-race/review-c-04/proof/05-partial.json.excerpt.json",
+      "projectedSha256": "4e926418c65b3052e5e9f7bd2835d62781e2a6a45aec41749b82fd60612d7a71"
+    }
+  ],
+  "projectionLimits": [
+    "This file projects the existing independent assessment and does not regrade the case.",
+    "Private source artifacts and omitted native operations remain private. Source digests bind originals, not transformed bytes.",
+    "Historical 0.1.3 observations do not qualify current main or a modified candidate."
+  ],
+  "statusMapping": {
+    "originalProposedStatus": "reduced",
+    "canonicalStatus": "reduced-pass",
+    "rule": "The original reviewer uses reduced. The evidence schema names this display alias reduced-pass. The original proposed grade remains unchanged."
+  }
+}

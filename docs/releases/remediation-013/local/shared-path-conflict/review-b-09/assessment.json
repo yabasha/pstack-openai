@@ -1,0 +1,137 @@
+{
+  "schemaVersion": 1,
+  "kind": "historical-independent-assessment-projection",
+  "caseId": "shared-path-conflict",
+  "attemptId": "review-b-09",
+  "startingMain": "4138e161c27cafffd2baaab6bf4ca53e86a57433",
+  "packageCommit": "51f209daf83cd97d64f89881d66533bb59dc57db",
+  "packageVersion": "0.1.3",
+  "inputRevision": "5c68f1fe4b29243ed37889507222cb408af2bfef",
+  "originalProposedStatus": "reduced-pass",
+  "evidenceStatus": "reduced-pass",
+  "qualifiesCurrentMain": false,
+  "sourceReview": {
+    "originalLocator": "grades/grade_remediation_local_b/result.json",
+    "sourceSha256": "d837b0c7cdea4be245b4a86ca593038cbe8b1596662a82fe6554e9d96444abd6",
+    "jsonPointer": "/rows/8",
+    "reviewer": "/root/grade_remediation_local_b",
+    "requestedModel": "inherit-parent",
+    "actualModel": "unknown"
+  },
+  "findings": [
+    "The colliding output request is recorded and two exclusive paths are resolved before either actual worker writes.",
+    "Two actual independent workers return exact current task revision5c68f1fe4b29243ed37889507222cb408af2bfef and inspected reports. Both report digests match.",
+    "The contested shared-review.txt is absent, and no observed worker operation writes it."
+  ],
+  "limits": [
+    "The immutable ownership-resolution uses prospective-worker-A/B rather than actual canonical output owners before dispatch. Actual identities are mapped after spawn. This violates the assignment requirement in the supplied execution scope.",
+    "The optional Swarm-labelled receipt is not validator-compatible and cannot establish full Swarm method evidence. The registry does not itself require Swarm for this ownership case."
+  ],
+  "chronology": [
+    "Native A spawn precedes its terminal inspection, and B starts afterward. Paths were resolved before A spawn. Post-spawn identity mapping is not retroactive prospective ownership."
+  ],
+  "predicate": [
+    {
+      "index": 1,
+      "text": "Coordinator assigns distinct paths before either writes.",
+      "status": "satisfied",
+      "assessment": "Detailed evidence and qualifying limits are in the exact satisfied/unmet/notApplicable predicates below."
+    },
+    {
+      "index": 2,
+      "text": "Capture exact input revision, explicit permissions and observed operation evidence.",
+      "status": "satisfied",
+      "assessment": "Detailed evidence and qualifying limits are in the exact satisfied/unmet/notApplicable predicates below."
+    }
+  ],
+  "sourceArtifactBindings": [
+    {
+      "originalLocator": "cross-host-extra/local/projects/shared-path-conflict/outputs/shared-path-conflict.result.md",
+      "sourceSha256": "d6760f00bea764061cf888790090da0bf2ea54e1682fd871de7ecc9f99e33167",
+      "expectedSha256": "d6760f00bea764061cf888790090da0bf2ea54e1682fd871de7ecc9f99e33167",
+      "expectedHashMatches": true,
+      "bytes": 22795,
+      "publication": "omitted",
+      "reason": "Only a narrow inspected projection may be included. Private original remains unchanged."
+    },
+    {
+      "originalLocator": "cross-host-extra/local/projects/shared-path-conflict/outputs/ownership-proposals.json",
+      "sourceSha256": "251d342f12f8c2e599288096a5efa041bb5ad5097348670819f3d09b7a22b93a",
+      "expectedSha256": "251d342f12f8c2e599288096a5efa041bb5ad5097348670819f3d09b7a22b93a",
+      "expectedHashMatches": true,
+      "bytes": 386,
+      "publication": "projected-fields",
+      "reason": "Only a narrow inspected projection may be included. Private original remains unchanged.",
+      "projectedPath": "docs/releases/remediation-013/local/shared-path-conflict/review-b-09/proof/01-ownership-proposals.json.excerpt.json",
+      "projectedSha256": "9dfd6d8012686384519871176f290aa5971bbe76b0a11a12423706caf5f79e55"
+    },
+    {
+      "originalLocator": "cross-host-extra/local/projects/shared-path-conflict/outputs/ownership-resolution.json",
+      "sourceSha256": "b84cf77189a964a342fb5c239f766fdaa51d682bf3ba31b9b2160338cbe6bcf1",
+      "expectedSha256": "b84cf77189a964a342fb5c239f766fdaa51d682bf3ba31b9b2160338cbe6bcf1",
+      "expectedHashMatches": true,
+      "bytes": 1274,
+      "publication": "projected-fields",
+      "reason": "Only a narrow inspected projection may be included. Private original remains unchanged.",
+      "projectedPath": "docs/releases/remediation-013/local/shared-path-conflict/review-b-09/proof/02-ownership-resolution.json.excerpt.json",
+      "projectedSha256": "436ffb13d53e5ab2bd584e174f8dccc84015c0f24a48f832537e835a6dba57e8"
+    },
+    {
+      "originalLocator": "cross-host-extra/local/projects/shared-path-conflict/outputs/assignment-events.jsonl",
+      "sourceSha256": "5f3acd5257bc593928d9b7259f14c48cd27ebc170e80181a74680b5c0af05f0a",
+      "expectedSha256": "5f3acd5257bc593928d9b7259f14c48cd27ebc170e80181a74680b5c0af05f0a",
+      "expectedHashMatches": true,
+      "bytes": 1245,
+      "publication": "omitted",
+      "reason": "Only a narrow inspected projection may be included. Private original remains unchanged."
+    },
+    {
+      "originalLocator": "cross-host-extra/local/projects/shared-path-conflict/outputs/method-receipt.json",
+      "sourceSha256": "cab2fcc1aa6aa55178a815bea8ad17976ab0af433c4fe36accdc814ae9427114",
+      "expectedSha256": "cab2fcc1aa6aa55178a815bea8ad17976ab0af433c4fe36accdc814ae9427114",
+      "expectedHashMatches": true,
+      "bytes": 3184,
+      "publication": "projected-fields",
+      "reason": "Only a narrow inspected projection may be included. Private original remains unchanged.",
+      "projectedPath": "docs/releases/remediation-013/local/shared-path-conflict/review-b-09/proof/03-method-receipt.json.excerpt.json",
+      "projectedSha256": "a957dc533581a961d6b3e3b28870b4fd8ab647fbed11476f559dfceeec807897"
+    },
+    {
+      "originalLocator": "cross-host-extra/local/projects/shared-path-conflict/outputs/worker-A/calculator-review.txt",
+      "sourceSha256": "be83fbca25c37057a98436e56c475f5dcc1df7c51383dc003d50b4693b45e70d",
+      "expectedSha256": "be83fbca25c37057a98436e56c475f5dcc1df7c51383dc003d50b4693b45e70d",
+      "expectedHashMatches": true,
+      "bytes": 4678,
+      "publication": "omitted",
+      "reason": "Only a narrow inspected projection may be included. Private original remains unchanged."
+    },
+    {
+      "originalLocator": "cross-host-extra/local/projects/shared-path-conflict/outputs/worker-B/formatter-review.txt",
+      "sourceSha256": "b0e190878d2c3c0e8c0ec0d5dd56cbfe99bab2dba518b413b1f4a5246dfe8b36",
+      "expectedSha256": "b0e190878d2c3c0e8c0ec0d5dd56cbfe99bab2dba518b413b1f4a5246dfe8b36",
+      "expectedHashMatches": true,
+      "bytes": 5705,
+      "publication": "omitted",
+      "reason": "Only a narrow inspected projection may be included. Private original remains unchanged."
+    },
+    {
+      "originalLocator": "native-captures-sanitized-v2/cross-host-0/index.json",
+      "sourceSha256": "3bb4db78a8fd056ac164ea338c51fb8f67c4c7a9f6a2986e8a10b287d97edc65",
+      "expectedSha256": "3bb4db78a8fd056ac164ea338c51fb8f67c4c7a9f6a2986e8a10b287d97edc65",
+      "expectedHashMatches": true,
+      "bytes": 6766,
+      "publication": "omitted",
+      "reason": "Raw/native context, broad discovery, completion dump, or bulk source manifest is excluded. No protected payload is decoded."
+    }
+  ],
+  "projectionLimits": [
+    "This file projects the existing independent assessment and does not regrade the case.",
+    "Private source artifacts and omitted native operations remain private. Source digests bind originals, not transformed bytes.",
+    "Historical 0.1.3 observations do not qualify current main or a modified candidate."
+  ],
+  "statusMapping": {
+    "originalProposedStatus": "reduced-pass",
+    "canonicalStatus": "reduced-pass",
+    "rule": "No status alias is applied."
+  }
+}

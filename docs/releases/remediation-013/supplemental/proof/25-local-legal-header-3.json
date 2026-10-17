@@ -1,0 +1,23 @@
+{
+  "kind": "historical-proof-selection",
+  "source": {
+    "path": "<private-run>/remaining-local/cases/legal-header/outputs/legal-header.result.md",
+    "sha256": "cb7e5608151238ecdd3791ecf04c20ace6a6f9bfdc7c02ebc71d129f35f956c0",
+    "bytes": 5476
+  },
+  "selection": [
+    {
+      "locator": {
+        "textCodeUnits": [
+          0,
+          2300
+        ]
+      },
+      "value": "# legal-header actual attempt\n\nAll three requested branches were exercised in separate disposable output copies. This report supplies observations for independent outcome review, not a producer grade. Current assigned HEAD was independently verified as c9cc306fcf163e5cc8fa9e215af35751bc3a4f0b. The historical original revision was not locally resolvable. Full supplied input, contracts and exact ORIGINAL fixture text are in completion.json. Input and source digests are in input-hashes.json and source-hashes.json.\n\n## Authorized worker branch\n\nFirst worker /root/comments/sicko actually returned a three-comment diff. Coordinator inspected and rejected its report for global compiler use, an unobserved startup-gate claim and unsupported code-guilt flags. Raw artifacts remain in worker/. The retry reset used a new disjoint copy of exact original bytes. The rejected candidate stayed unchanged; no in-place revert occurred. The single fresh retry /root/comments/retry returned, and its actual report, exact diff and checks were inspected. Accepted retry deletes exactly three comments and retains the SPDX header and justified public API contract. It changes no application statements. No second report was rejected, so no further retry was used.\n\nThe native simple how method used fresh read-only explainer /root/comments/how. Its exact returned output is how/native-result.md. It establishes integer validation and unchanged return, but no real caller rounding or upstream client contract. These are skips, not proof of guilty code. The unused suppression is the accepted trivial finding, resolved by comment deletion. No remaining accepted application-code fix needs a shape, so architect was not invoked and no sketch or code refactor was fabricated.\n\n## Missing-worker variant\n\nWorkers were deliberately POLICY withheld despite exposed tools. The authorized sequential role performed its own source inspection, native reduced how explanation and compiler audit. sequential/source.mjs deletes exactly three comments. Application text and both protected comments remain unchanged. This branch claims no independent perspective. Its report and coordinator correction keep missing caller/client claims open.\n\n## Denied-write variant\n\nTarget writes were deliberately POLICY denied. Read-only revi"
+    }
+  ],
+  "limits": [
+    "Selections preserve the exact source value at each locator. Truncated strings carry explicit code-unit bounds.",
+    "A producer-captured return is not a recovered native parent envelope. Missing call IDs, original capture defects and unknown model observations remain missing."
+  ]
+}

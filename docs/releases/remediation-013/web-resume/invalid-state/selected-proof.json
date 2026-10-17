@@ -1,0 +1,431 @@
+{
+  "documentType": "selected-original-proof",
+  "caseId": "invalid-state",
+  "selections": [
+    {
+      "origin": {
+        "path": "web-checkpoint-4/units/invalid-state/outputs/invalid-state/verification-v2/evidence/compiler-results.json",
+        "sha256": "9fbe33fb3aa1859886ace61ec06d13dabcf45049d1fddfa33004a6584f7aa578",
+        "bytes": 11056,
+        "pointers": [
+          ""
+        ]
+      },
+      "selections": [
+        {
+          "pointer": "",
+          "value": [
+            {
+              "id": "positive",
+              "expectExit": 0,
+              "exitCode": 0,
+              "stdout": "",
+              "stderr": "",
+              "endedAt": "2026-10-17T08:09:26.733Z",
+              "request": {
+                "argv": [
+                  "/mnt/data/pstack-013-evaluation/runtime/bun-linux-x64/bun",
+                  "--no-install",
+                  "/mnt/data/pstack-remediation-20261017/runtime/package-main-4138e16/skills/poteto-mode/scripts/node_modules/typescript/bin/tsc",
+                  "--project",
+                  "/mnt/data/pstack-remediation-20261017/attempts-18/outputs/invalid-state/verification-v2/proofs/positive.tsconfig.json"
+                ],
+                "cwd": "/mnt/data/pstack-remediation-20261017/attempts-18/outputs/invalid-state/verification-v2/proofs",
+                "startedAt": "2026-10-17T08:09:25.941Z"
+              }
+            },
+            {
+              "id": "baseline-contradiction",
+              "expectExit": 0,
+              "exitCode": 0,
+              "stdout": "",
+              "stderr": "",
+              "endedAt": "2026-10-17T08:09:27.530Z",
+              "request": {
+                "argv": [
+                  "/mnt/data/pstack-013-evaluation/runtime/bun-linux-x64/bun",
+                  "--no-install",
+                  "/mnt/data/pstack-remediation-20261017/runtime/package-main-4138e16/skills/poteto-mode/scripts/node_modules/typescript/bin/tsc",
+                  "--project",
+                  "/mnt/data/pstack-remediation-20261017/attempts-18/outputs/invalid-state/verification-v2/proofs/baseline-contradiction.tsconfig.json"
+                ],
+                "cwd": "/mnt/data/pstack-remediation-20261017/attempts-18/outputs/invalid-state/verification-v2/proofs",
+                "startedAt": "2026-10-17T08:09:26.733Z"
+              }
+            },
+            {
+              "id": "done-missing-date",
+              "expectExit": 1,
+              "exitCode": 1,
+              "stdout": "done-missing-date.ts(1,44): error TS2322: Type '{ kind: \"done\"; }' is not assignable to type 'Task'.\n  Property 'at' is missing in type '{ kind: \"done\"; }' but required in type '{ readonly kind: \"done\"; readonly at: Date; }'.\n",
+              "stderr": "",
+              "endedAt": "2026-10-17T08:09:28.282Z",
+              "request": {
+                "argv": [
+                  "/mnt/data/pstack-013-evaluation/runtime/bun-linux-x64/bun",
+                  "--no-install",
+                  "/mnt/data/pstack-remediation-20261017/runtime/package-main-4138e16/skills/poteto-mode/scripts/node_modules/typescript/bin/tsc",
+                  "--project",
+                  "/mnt/data/pstack-remediation-20261017/attempts-18/outputs/invalid-state/verification-v2/proofs/done-missing-date.tsconfig.json"
+                ],
+                "cwd": "/mnt/data/pstack-remediation-20261017/attempts-18/outputs/invalid-state/verification-v2/proofs",
+                "startedAt": "2026-10-17T08:09:27.531Z"
+              }
+            },
+            {
+              "id": "open-with-date",
+              "expectExit": 1,
+              "exitCode": 1,
+              "stdout": "open-with-date.ts(1,44): error TS2322: Type '{ kind: \"open\"; at: Date; }' is not assignable to type 'Task'.\n  Types of property 'at' are incompatible.\n    Type 'Date' is not assignable to type 'undefined'.\n",
+              "stderr": "",
+              "endedAt": "2026-10-17T08:09:28.861Z",
+              "request": {
+                "argv": [
+                  "/mnt/data/pstack-013-evaluation/runtime/bun-linux-x64/bun",
+                  "--no-install",
+                  "/mnt/data/pstack-remediation-20261017/runtime/package-main-4138e16/skills/poteto-mode/scripts/node_modules/typescript/bin/tsc",
+                  "--project",
+                  "/mnt/data/pstack-remediation-20261017/attempts-18/outputs/invalid-state/verification-v2/proofs/open-with-date.tsconfig.json"
+                ],
+                "cwd": "/mnt/data/pstack-remediation-20261017/attempts-18/outputs/invalid-state/verification-v2/proofs",
+                "startedAt": "2026-10-17T08:09:28.282Z"
+              }
+            },
+            {
+              "id": "open-undefined-date",
+              "expectExit": 1,
+              "exitCode": 1,
+              "stdout": "open-undefined-date.ts(1,44): error TS2375: Type '{ kind: \"open\"; at: undefined; }' is not assignable to type 'Task' with 'exactOptionalPropertyTypes: true'. Consider adding 'undefined' to the types of the target's properties.\n  Type '{ kind: \"open\"; at: undefined; }' is not assignable to type '{ readonly kind: \"open\"; readonly at?: never; }' with 'exactOptionalPropertyTypes: true'. Consider adding 'undefined' to the types of the target's properties.\n    Types of property 'at' are incompatible.\n      Type 'undefined' is not assignable to type 'never'.\n",
+              "stderr": "",
+              "endedAt": "2026-10-17T08:09:29.328Z",
+              "request": {
+                "argv": [
+                  "/mnt/data/pstack-013-evaluation/runtime/bun-linux-x64/bun",
+                  "--no-install",
+                  "/mnt/data/pstack-remediation-20261017/runtime/package-main-4138e16/skills/poteto-mode/scripts/node_modules/typescript/bin/tsc",
+                  "--project",
+                  "/mnt/data/pstack-remediation-20261017/attempts-18/outputs/invalid-state/verification-v2/proofs/open-undefined-date.tsconfig.json"
+                ],
+                "cwd": "/mnt/data/pstack-remediation-20261017/attempts-18/outputs/invalid-state/verification-v2/proofs",
+                "startedAt": "2026-10-17T08:09:28.861Z"
+              }
+            },
+            {
+              "id": "mixed-ids",
+              "expectExit": 1,
+              "exitCode": 1,
+              "stdout": "mixed-ids.ts(1,81): error TS2322: Type 'OrderId' is not assignable to type 'UserId'.\n  Type 'OrderId' is not assignable to type '{ readonly __brand: \"UserId\"; }'.\n    Types of property '__brand' are incompatible.\n      Type '\"OrderId\"' is not assignable to type '\"UserId\"'.\nmixed-ids.ts(1,109): error TS2322: Type 'UserId' is not assignable to type 'OrderId'.\n  Type 'UserId' is not assignable to type '{ readonly __brand: \"OrderId\"; }'.\n    Types of property '__brand' are incompatible.\n      Type '\"UserId\"' is not assignable to type '\"OrderId\"'.\n",
+              "stderr": "",
+              "endedAt": "2026-10-17T08:09:30.160Z",
+              "request": {
+                "argv": [
+                  "/mnt/data/pstack-013-evaluation/runtime/bun-linux-x64/bun",
+                  "--no-install",
+                  "/mnt/data/pstack-remediation-20261017/runtime/package-main-4138e16/skills/poteto-mode/scripts/node_modules/typescript/bin/tsc",
+                  "--project",
+                  "/mnt/data/pstack-remediation-20261017/attempts-18/outputs/invalid-state/verification-v2/proofs/mixed-ids.tsconfig.json"
+                ],
+                "cwd": "/mnt/data/pstack-remediation-20261017/attempts-18/outputs/invalid-state/verification-v2/proofs",
+                "startedAt": "2026-10-17T08:09:29.328Z"
+              }
+            },
+            {
+              "id": "raw-id",
+              "expectExit": 1,
+              "exitCode": 1,
+              "stdout": "raw-id.ts(1,46): error TS2322: Type 'string' is not assignable to type 'UserId'.\n  Type 'string' is not assignable to type '{ readonly __brand: \"UserId\"; }'.\n",
+              "stderr": "",
+              "endedAt": "2026-10-17T08:09:30.675Z",
+              "request": {
+                "argv": [
+                  "/mnt/data/pstack-013-evaluation/runtime/bun-linux-x64/bun",
+                  "--no-install",
+                  "/mnt/data/pstack-remediation-20261017/runtime/package-main-4138e16/skills/poteto-mode/scripts/node_modules/typescript/bin/tsc",
+                  "--project",
+                  "/mnt/data/pstack-remediation-20261017/attempts-18/outputs/invalid-state/verification-v2/proofs/raw-id.tsconfig.json"
+                ],
+                "cwd": "/mnt/data/pstack-remediation-20261017/attempts-18/outputs/invalid-state/verification-v2/proofs",
+                "startedAt": "2026-10-17T08:09:30.160Z"
+              }
+            },
+            {
+              "id": "empty-head",
+              "expectExit": 1,
+              "exitCode": 1,
+              "stdout": "empty-head.ts(1,38): error TS2345: Argument of type '[]' is not assignable to parameter of type 'NonEmpty<unknown>'.\n  Source has 0 element(s) but target requires 1.\n",
+              "stderr": "",
+              "endedAt": "2026-10-17T08:09:31.300Z",
+              "request": {
+                "argv": [
+                  "/mnt/data/pstack-013-evaluation/runtime/bun-linux-x64/bun",
+                  "--no-install",
+                  "/mnt/data/pstack-remediation-20261017/runtime/package-main-4138e16/skills/poteto-mode/scripts/node_modules/typescript/bin/tsc",
+                  "--project",
+                  "/mnt/data/pstack-remediation-20261017/attempts-18/outputs/invalid-state/verification-v2/proofs/empty-head.tsconfig.json"
+                ],
+                "cwd": "/mnt/data/pstack-remediation-20261017/attempts-18/outputs/invalid-state/verification-v2/proofs",
+                "startedAt": "2026-10-17T08:09:30.675Z"
+              }
+            },
+            {
+              "id": "missing-variant",
+              "expectExit": 1,
+              "exitCode": 1,
+              "stdout": "missing-variant.ts(1,229): error TS2322: Type '{ kind: \"archived\"; }' is not assignable to type 'never'.\n",
+              "stderr": "",
+              "endedAt": "2026-10-17T08:09:31.841Z",
+              "request": {
+                "argv": [
+                  "/mnt/data/pstack-013-evaluation/runtime/bun-linux-x64/bun",
+                  "--no-install",
+                  "/mnt/data/pstack-remediation-20261017/runtime/package-main-4138e16/skills/poteto-mode/scripts/node_modules/typescript/bin/tsc",
+                  "--project",
+                  "/mnt/data/pstack-remediation-20261017/attempts-18/outputs/invalid-state/verification-v2/proofs/missing-variant.tsconfig.json"
+                ],
+                "cwd": "/mnt/data/pstack-remediation-20261017/attempts-18/outputs/invalid-state/verification-v2/proofs",
+                "startedAt": "2026-10-17T08:09:31.301Z"
+              }
+            },
+            {
+              "id": "language-limit-invalid-date",
+              "expectExit": 0,
+              "exitCode": 0,
+              "stdout": "",
+              "stderr": "",
+              "endedAt": "2026-10-17T08:09:32.280Z",
+              "request": {
+                "argv": [
+                  "/mnt/data/pstack-013-evaluation/runtime/bun-linux-x64/bun",
+                  "--no-install",
+                  "/mnt/data/pstack-remediation-20261017/runtime/package-main-4138e16/skills/poteto-mode/scripts/node_modules/typescript/bin/tsc",
+                  "--project",
+                  "/mnt/data/pstack-remediation-20261017/attempts-18/outputs/invalid-state/verification-v2/proofs/language-limit-invalid-date.tsconfig.json"
+                ],
+                "cwd": "/mnt/data/pstack-remediation-20261017/attempts-18/outputs/invalid-state/verification-v2/proofs",
+                "startedAt": "2026-10-17T08:09:31.841Z"
+              }
+            },
+            {
+              "id": "language-limit-assertion-bypass",
+              "expectExit": 0,
+              "exitCode": 0,
+              "stdout": "",
+              "stderr": "",
+              "endedAt": "2026-10-17T08:09:33.062Z",
+              "request": {
+                "argv": [
+                  "/mnt/data/pstack-013-evaluation/runtime/bun-linux-x64/bun",
+                  "--no-install",
+                  "/mnt/data/pstack-remediation-20261017/runtime/package-main-4138e16/skills/poteto-mode/scripts/node_modules/typescript/bin/tsc",
+                  "--project",
+                  "/mnt/data/pstack-remediation-20261017/attempts-18/outputs/invalid-state/verification-v2/proofs/language-limit-assertion-bypass.tsconfig.json"
+                ],
+                "cwd": "/mnt/data/pstack-remediation-20261017/attempts-18/outputs/invalid-state/verification-v2/proofs",
+                "startedAt": "2026-10-17T08:09:32.281Z"
+              }
+            },
+            {
+              "id": "language-limit-structural-extra",
+              "expectExit": 0,
+              "exitCode": 0,
+              "stdout": "",
+              "stderr": "",
+              "endedAt": "2026-10-17T08:09:34.002Z",
+              "request": {
+                "argv": [
+                  "/mnt/data/pstack-013-evaluation/runtime/bun-linux-x64/bun",
+                  "--no-install",
+                  "/mnt/data/pstack-remediation-20261017/runtime/package-main-4138e16/skills/poteto-mode/scripts/node_modules/typescript/bin/tsc",
+                  "--project",
+                  "/mnt/data/pstack-remediation-20261017/attempts-18/outputs/invalid-state/verification-v2/proofs/language-limit-structural-extra.tsconfig.json"
+                ],
+                "cwd": "/mnt/data/pstack-remediation-20261017/attempts-18/outputs/invalid-state/verification-v2/proofs",
+                "startedAt": "2026-10-17T08:09:33.062Z"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "origin": {
+        "path": "web-checkpoint-4/units/invalid-state/outputs/invalid-state/verification-v2/evidence/runtime-results.json",
+        "sha256": "941a7f454904e53d2e76d67f756198cdc297ad0cb31730e9ebb60464874206e4",
+        "bytes": 4145,
+        "pointers": [
+          ""
+        ]
+      },
+      "selections": [
+        {
+          "pointer": "",
+          "value": [
+            {
+              "id": "parse-open",
+              "startedAt": "2026-10-17T08:09:34.002Z",
+              "endedAt": "2026-10-17T08:09:34.003Z",
+              "returned": {
+                "kind": "open"
+              },
+              "outcome": "assertions-held"
+            },
+            {
+              "id": "parse-done",
+              "startedAt": "2026-10-17T08:09:34.003Z",
+              "endedAt": "2026-10-17T08:09:34.003Z",
+              "returned": {
+                "kind": "done",
+                "at": "2026-10-17T00:00:00.000Z"
+              },
+              "outcome": "assertions-held"
+            },
+            {
+              "id": "reject-{",
+              "startedAt": "2026-10-17T08:09:34.003Z",
+              "endedAt": "2026-10-17T08:09:34.003Z",
+              "returned": {
+                "input": "{",
+                "error": "SyntaxError: JSON Parse error: Expected '}'"
+              },
+              "outcome": "assertions-held"
+            },
+            {
+              "id": "reject-null",
+              "startedAt": "2026-10-17T08:09:34.003Z",
+              "endedAt": "2026-10-17T08:09:34.003Z",
+              "returned": {
+                "input": "null",
+                "error": "Error: invalid task"
+              },
+              "outcome": "assertions-held"
+            },
+            {
+              "id": "reject-[]",
+              "startedAt": "2026-10-17T08:09:34.003Z",
+              "endedAt": "2026-10-17T08:09:34.003Z",
+              "returned": {
+                "input": "[]",
+                "error": "Error: invalid task"
+              },
+              "outcome": "assertions-held"
+            },
+            {
+              "id": "reject-{}",
+              "startedAt": "2026-10-17T08:09:34.003Z",
+              "endedAt": "2026-10-17T08:09:34.003Z",
+              "returned": {
+                "input": "{}",
+                "error": "Error: invalid task"
+              },
+              "outcome": "assertions-held"
+            },
+            {
+              "id": "reject-{\"kind\":\"done\"}",
+              "startedAt": "2026-10-17T08:09:34.003Z",
+              "endedAt": "2026-10-17T08:09:34.003Z",
+              "returned": {
+                "input": "{\"kind\":\"done\"}",
+                "error": "Error: done task needs date string"
+              },
+              "outcome": "assertions-held"
+            },
+            {
+              "id": "reject-{\"kind\":\"done\",\"at\":\"not-a-date\"}",
+              "startedAt": "2026-10-17T08:09:34.003Z",
+              "endedAt": "2026-10-17T08:09:34.003Z",
+              "returned": {
+                "input": "{\"kind\":\"done\",\"at\":\"not-a-date\"}",
+                "error": "Error: invalid completion date"
+              },
+              "outcome": "assertions-held"
+            },
+            {
+              "id": "reject-{\"kind\":\"done\",\"at\":0}",
+              "startedAt": "2026-10-17T08:09:34.003Z",
+              "endedAt": "2026-10-17T08:09:34.003Z",
+              "returned": {
+                "input": "{\"kind\":\"done\",\"at\":0}",
+                "error": "Error: done task needs date string"
+              },
+              "outcome": "assertions-held"
+            },
+            {
+              "id": "reject-{\"kind\":\"open\",\"at\":\"2026-10-17\"}",
+              "startedAt": "2026-10-17T08:09:34.003Z",
+              "endedAt": "2026-10-17T08:09:34.003Z",
+              "returned": {
+                "input": "{\"kind\":\"open\",\"at\":\"2026-10-17\"}",
+                "error": "Error: open task cannot have at"
+              },
+              "outcome": "assertions-held"
+            },
+            {
+              "id": "reject-{\"kind\":\"archived\"}",
+              "startedAt": "2026-10-17T08:09:34.003Z",
+              "endedAt": "2026-10-17T08:09:34.003Z",
+              "returned": {
+                "input": "{\"kind\":\"archived\"}",
+                "error": "Error: unknown task state"
+              },
+              "outcome": "assertions-held"
+            },
+            {
+              "id": "reject-{\"completed\":true}",
+              "startedAt": "2026-10-17T08:09:34.003Z",
+              "endedAt": "2026-10-17T08:09:34.003Z",
+              "returned": {
+                "input": "{\"completed\":true}",
+                "error": "Error: invalid task"
+              },
+              "outcome": "assertions-held"
+            },
+            {
+              "id": "local-schema-derived",
+              "startedAt": "2026-10-17T08:09:34.003Z",
+              "endedAt": "2026-10-17T08:09:34.003Z",
+              "returned": {
+                "kind": "open"
+              },
+              "outcome": "assertions-held"
+            },
+            {
+              "id": "ids",
+              "startedAt": "2026-10-17T08:09:34.003Z",
+              "endedAt": "2026-10-17T08:09:34.003Z",
+              "returned": {
+                "result": "u1/o1",
+                "rejected": [
+                  "",
+                  " ",
+                  1,
+                  null
+                ]
+              },
+              "outcome": "assertions-held"
+            },
+            {
+              "id": "lists",
+              "startedAt": "2026-10-17T08:09:34.003Z",
+              "endedAt": "2026-10-17T08:09:34.003Z",
+              "returned": {
+                "head": 7,
+                "emptySum": 0,
+                "sum": 6
+              },
+              "outcome": "assertions-held"
+            },
+            {
+              "id": "date-language-limit",
+              "startedAt": "2026-10-17T08:09:34.003Z",
+              "endedAt": "2026-10-17T08:09:34.003Z",
+              "returned": {
+                "invalidDateRepresentable": true
+              },
+              "outcome": "assertions-held"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

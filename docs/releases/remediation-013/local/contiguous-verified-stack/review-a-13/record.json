@@ -1,0 +1,63 @@
+{
+  "caseId": "contiguous-verified-stack",
+  "packageVersion": "0.1.3",
+  "packageCommit": "51f209daf83cd97d64f89881d66533bb59dc57db",
+  "host": "codex",
+  "hostMode": "Historical native Local task-scoped fixture observation",
+  "date": "2026-10-17",
+  "input": "Historical fixture at 4a7dde94ab2778837e4c932e53cc3484d2e74dfd. Independent assessment review-a-13.",
+  "observedOutput": "Independent non-author verifiers inspected exact parent/head CLI artifacts. The local prefix was 101 and 102; missing 103 prevented 104 bypass. PASS+NOTES was accepted. Changed substantive 101 invalidated its old verdict and received a fresh independent verifier. Actual local Git squash model merged only one bottom at a time, fetched local trunk and checked merged inclusion before the next preparation. No live merge or forge outcome is claimed. Actual PTY watcher observations distinguish WAITING, ADVANCE, COMPLETE and terminal budget exhaustion. Active simulated forge state was re-read instead of equating READY with merge. The alleged built lanes do not build app.ts. build-fixture.ts writes a build.ts whose bundle.txt is the literal stable application payload. Nonce and revision fields exercise noise classification but cannot prove what the app lane built. Affected original verdict PR102 is 732415de4d6377848b3c2df8b7246f48a5fdaef8; current docs/lint/test variant is 77a896a2783783ffdbee2372144e58ddb1506e14. Both cli-build and alternate-build retain this constant-payload defect.",
+  "status": "reduced-pass",
+  "execution": "workers",
+  "inputRevision": "4a7dde94ab2778837e4c932e53cc3484d2e74dfd",
+  "sourcePaths": [
+    "skills/poteto-mode/playbooks/shipping.md",
+    "skills/poteto-mode/playbooks/babysit.md",
+    "skills/poteto-mode/playbooks/opening-a-pr.md",
+    "skills/poteto-mode/scripts/watch-pr/watch-pr",
+    "skills/poteto-mode/scripts/watch-pr/cli.ts",
+    "skills/poteto-mode/scripts/watch-pr/types.ts",
+    "skills/poteto-mode/scripts/bootstrap.ts"
+  ],
+  "documentedCapabilities": [
+    "Frozen source instructions only. Current-main qualification is not established."
+  ],
+  "exposedTools": [],
+  "artifacts": [
+    "docs/releases/remediation-013/local/contiguous-verified-stack/review-a-13/assessment.json",
+    "docs/releases/remediation-013/local/contiguous-verified-stack/review-a-13/proof/01-result.json.excerpt.json",
+    "docs/releases/remediation-013/local/contiguous-verified-stack/review-a-13/proof/02-noise-report.json.excerpt.json",
+    "docs/releases/remediation-013/local/contiguous-verified-stack/review-a-13/proof/03-merge-raw.json.excerpt.json",
+    "docs/releases/remediation-013/local/contiguous-verified-stack/review-a-13/proof/04-result.json.excerpt.json",
+    "docs/releases/remediation-013/local/contiguous-verified-stack/review-a-13/proof/05-pty-raw.json.excerpt.json",
+    "docs/releases/remediation-013/local/contiguous-verified-stack/review-a-13/proof/06-result.json.excerpt.json",
+    "docs/releases/remediation-013/local/contiguous-verified-stack/review-a-13/proof/07-pty.json.excerpt.json",
+    "docs/releases/remediation-013/local/contiguous-verified-stack/review-a-13/proof/08-result.json.excerpt.json",
+    "docs/releases/remediation-013/local/contiguous-verified-stack/review-a-13/proof/native-source-read.json"
+  ],
+  "limits": [
+    "Actual local Git squash model merged only one bottom at a time, fetched local trunk and checked merged inclusion before the next preparation. No live merge or forge outcome is claimed.",
+    "The alleged built lanes do not build app.ts. build-fixture.ts writes a build.ts whose bundle.txt is the literal stable application payload. Nonce and revision fields exercise noise classification but cannot prove what the app lane built.",
+    "The public source excerpt covers the listed matched paths only. Other source reads assessed independently remain outside this narrow public excerpt.",
+    "Only the actual operations listed in this record have narrow public bindings. Other operations from the independent assessment remain unprojected. No missing operation is invented.",
+    "This public command event is retained as an observed event. Its exact exposed callable binding could not be corroborated from the permitted scoped capture. It is not claimed as a successfulOperations binding."
+  ],
+  "priorActionIdentities": [],
+  "permissions": {
+    "execution": "granted",
+    "writes": "granted",
+    "externalActions": "denied"
+  },
+  "models": {
+    "requested": "inherit-parent",
+    "actual": "gpt-6.1-sol"
+  },
+  "successfulOperations": [],
+  "nativeObservations": [
+    {
+      "observation": "review-outcome",
+      "evidence": "docs/releases/remediation-013/local/contiguous-verified-stack/review-a-13/assessment.json",
+      "reviewedBy": "/root/grade_remediation_local_a"
+    }
+  ]
+}

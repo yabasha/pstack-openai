@@ -1,0 +1,255 @@
+{
+  "kind": "historical-independent-assessment-extract",
+  "qualification": {
+    "inputRevision": "4138e161c27cafffd2baaab6bf4ca53e86a57433",
+    "sourceFreeze": "51f209daf83cd97d64f89881d66533bb59dc57db",
+    "packageVersion": "0.1.3",
+    "currentSourceQualified": false
+  },
+  "source": {
+    "path": "<private-run>/grades/grade_remediation_web_a/result.json",
+    "sha256": "df360dccda8481a1da9971827c165c8de58b134b6d27fe248e9604c1428b3f52",
+    "locator": {
+      "jsonPointer": "/cases/0"
+    }
+  },
+  "originalAssessment": {
+    "caseId": "supported-authoring",
+    "host": "chatgpt",
+    "originalMainStatus": "reduced-pass",
+    "proposedStatus": "pass",
+    "gradeScope": "Exact registered case behavior only, not complete Poteto Mode compliance or release parity",
+    "executionForCase": "direct",
+    "sourceContract": {
+      "path": "<private-run>/runtime/package-main-4138e16/docs/parity/cases/playbooks/authoring-a-skill.json",
+      "sha256": "3a0d33a73880007ac571daa0bfc7220f628955ab8c04909e805a68e5149a7d1b",
+      "locator": null
+    },
+    "nativeCaseOwner": "/root/r18_authoring",
+    "requestedModel": "inherit-parent",
+    "actualModel": "unknown",
+    "predicates": [
+      {
+        "id": "supported-workflow-and-validator-inspected",
+        "state": "satisfied",
+        "finding": "Native successful read returns contain the actual host skill-creator instructions and quick_validate.py before the edit and validator execution. create-skill is correctly absent.",
+        "source": {
+          "path": "<private-run>/runtime/package-main-4138e16/skills/poteto-mode/playbooks/authoring-a-skill.md",
+          "sha256": "cf113c443f9c5bdeac0d10d7dfec49eee05dc9da5528e56944d44b68911f9b27",
+          "locator": "step 1"
+        },
+        "evidence": [
+          {
+            "path": "<private-run>/web-checkpoint-1/units/supported-authoring/outputs/supported-authoring/host-workflow-full.raw.json",
+            "sha256": "a8ccfae6a0dd80ea82776f7a415b30da16df1682a674bca8e614988bc105891e",
+            "locator": null
+          },
+          {
+            "path": "<private-run>/web-checkpoint-1/units/supported-authoring/outputs/supported-authoring/source-read.raw.json",
+            "sha256": "c9db98db676172d80c61cb71f155ca9b1cd1309881d587b9e749120d468bbaef",
+            "locator": null
+          },
+          {
+            "path": "<private-run>/web-checkpoint-1/units/supported-authoring/outputs/supported-authoring/capability-discovery.json",
+            "sha256": "ca12dec2a3d06681aa97e7b8e62e113ebc3f76fb819d25094fee3c64d1722067",
+            "locator": null
+          },
+          {
+            "path": "<private-run>/web-checkpoint-1/units/supported-authoring/outputs/supported-authoring/edit.raw.json",
+            "sha256": "f17fd09f799d217759e4c96d9adc0086567b5e697865e45c90d54813ae7b88ef",
+            "locator": null
+          }
+        ]
+      },
+      {
+        "id": "bounded-authored-artifact-and-voice",
+        "state": "satisfied",
+        "finding": "The actual artifact has nonempty name and description, direct scoped prose, a single format reference, separate known/pending/unknown states, and no execution or external destination expansion. Existing reference bytes are preserved.",
+        "source": {
+          "path": "<private-run>/runtime/package-main-4138e16/skills/poteto-mode/playbooks/authoring-a-skill.md",
+          "sha256": "cf113c443f9c5bdeac0d10d7dfec49eee05dc9da5528e56944d44b68911f9b27",
+          "locator": "voice guidance"
+        },
+        "evidence": [
+          {
+            "path": "<private-run>/web-checkpoint-1/units/supported-authoring/outputs/supported-authoring/outputs/skill/build-checkpoint/SKILL.md",
+            "sha256": "d32e332ecb494e6f4fc64929f9fc06ddc056a040379054689148898c9ed5cf20",
+            "locator": null
+          },
+          {
+            "path": "<private-run>/web-checkpoint-1/units/supported-authoring/outputs/supported-authoring/outputs/skill/build-checkpoint/references/checkpoint-format.md",
+            "sha256": "3f97a5116339304203a122fe1b668d78c1b9961c99eee5444c7aa98ad4e607fa",
+            "locator": null
+          },
+          {
+            "path": "<private-run>/web-checkpoint-1/units/supported-authoring/outputs/supported-authoring/task-input/seed/references/checkpoint-format.md",
+            "sha256": "3f97a5116339304203a122fe1b668d78c1b9961c99eee5444c7aa98ad4e607fa",
+            "locator": null
+          },
+          {
+            "path": "<private-run>/web-checkpoint-1/units/supported-authoring/outputs/supported-authoring/edit.raw.json",
+            "sha256": "f17fd09f799d217759e4c96d9adc0086567b5e697865e45c90d54813ae7b88ef",
+            "locator": null
+          }
+        ]
+      },
+      {
+        "id": "actual-positive-and-negative-structural-validation",
+        "state": "satisfied",
+        "finding": "Native Bun-launched Python validator accepted authored artifact and rejected missing-name, invalid-name, missing-description, and TODO-description drafts. Empty-name and empty-description acceptance is recorded as a validator limitation, not a passing negative assertion.",
+        "source": {
+          "path": "<private-run>/runtime/package-main-4138e16/skills/poteto-mode/playbooks/authoring-a-skill.md",
+          "sha256": "cf113c443f9c5bdeac0d10d7dfec49eee05dc9da5528e56944d44b68911f9b27",
+          "locator": "steps 2 and 3"
+        },
+        "evidence": [
+          {
+            "path": "<private-run>/web-checkpoint-1/units/supported-authoring/outputs/supported-authoring/validation.raw.json",
+            "sha256": "da60adcfa163a0a411dbdb82872e392781f80fc645ec0362417a29625f2e6dd0",
+            "locator": null
+          },
+          {
+            "path": "<private-run>/web-checkpoint-1/units/supported-authoring/outputs/supported-authoring/validator-results.json",
+            "sha256": "ed3c2e2566464078e639cdac7a7e101813929b94dfdcd55287ab1b080816ebb0",
+            "locator": null
+          },
+          {
+            "path": "<private-run>/web-checkpoint-1/units/supported-authoring/reviews/supported-authoring/checks.raw.json",
+            "sha256": "83d39fa5941d4b12bdd177f2415796670af99ea9def35be830213409b2dfd480",
+            "locator": null
+          }
+        ]
+      },
+      {
+        "id": "references-and-cross-skill-boundaries",
+        "state": "satisfied",
+        "finding": "The local format reference exists and matches the seed. The missing-reference fixture is detected by the separate link check. The artifact has zero cross-skill links, so no cross-skill resolution or path-delegated worker success is asserted.",
+        "source": {
+          "path": "<private-run>/runtime/package-main-4138e16/skills/poteto-mode/playbooks/authoring-a-skill.md",
+          "sha256": "cf113c443f9c5bdeac0d10d7dfec49eee05dc9da5528e56944d44b68911f9b27",
+          "locator": "steps 2 and 3"
+        },
+        "evidence": [
+          {
+            "path": "<private-run>/web-checkpoint-1/units/supported-authoring/outputs/supported-authoring/link-results.json",
+            "sha256": "5e77ab6a50ed35ccadadd6783754dff6ea399c88b9af135405dbddff9d8bedba",
+            "locator": null
+          },
+          {
+            "path": "<private-run>/web-checkpoint-1/units/supported-authoring/outputs/supported-authoring/structural-checks.js",
+            "sha256": "09e3fc21b00148426b9a081de3c5f8515ac0c5941915b6dd94e8e48c772508a3",
+            "locator": null
+          },
+          {
+            "path": "<private-run>/web-checkpoint-1/units/supported-authoring/reviews/supported-authoring/checks.raw.json",
+            "sha256": "83d39fa5941d4b12bdd177f2415796670af99ea9def35be830213409b2dfd480",
+            "locator": null
+          }
+        ]
+      },
+      {
+        "id": "subjective-trigger-and-delivery-boundaries",
+        "state": "satisfied",
+        "finding": "Actual report skips subjective testing, keeps trigger performance unknown, retains the validated artifact and explicitly defers fixture PR delivery. Exact expectedFull permits explicit deferral. No created PR is claimed.",
+        "source": {
+          "path": "<private-run>/runtime/package-main-4138e16/docs/parity/cases/playbooks/authoring-a-skill.json",
+          "sha256": "3a0d33a73880007ac571daa0bfc7220f628955ab8c04909e805a68e5149a7d1b",
+          "locator": "expectedFull"
+        },
+        "evidence": [
+          {
+            "path": "<private-run>/web-checkpoint-1/units/supported-authoring/outputs/supported-authoring/supported-authoring.result.md",
+            "sha256": "6e40f710a1bee99ff60fc806e0bb48a4f2c488e82e7756a48e7cbc7e89728c3f",
+            "locator": null
+          },
+          {
+            "path": "<private-run>/web-checkpoint-1/units/supported-authoring/outputs/supported-authoring/task-input/TASK.md",
+            "sha256": "491252468095eba84a61a2bcff99bb3214c136c3dba032922230d285826b2962",
+            "locator": null
+          }
+        ]
+      },
+      {
+        "id": "authorized-replacement-review",
+        "state": "satisfied",
+        "finding": "A distinct native reviewer produced a read-only diff review, reran the structural cases and supplied a report whose bytes match its result digest. This satisfies the authorized replacement only. Named deslop and Comment Sicko did not run.",
+        "source": {
+          "path": "<private-run>/runtime/package-main-4138e16/skills/poteto-mode/playbooks/opening-a-pr.md",
+          "sha256": "4198f32b22cf1d8ff367deee1dbfea805e6eecdd7ff1da3409ae7c0b07fb1c59",
+          "locator": "review gate plus user scoped replacement"
+        },
+        "evidence": [
+          {
+            "path": "<private-run>/web-checkpoint-1/units/supported-authoring/assignments/supported-authoring.review.json",
+            "sha256": "c8794e651953436f1a3fa8c6e99b1c794cb24b2059a1ddf2c2a7286c4ecf312e",
+            "locator": null
+          },
+          {
+            "path": "<private-run>/web-checkpoint-1/units/supported-authoring/reviews/supported-authoring/result.json",
+            "sha256": "891ab06b1e3d380d347fa43c25e471d171c714624e73d9c317ffaeda78ba4510",
+            "locator": null
+          },
+          {
+            "path": "<private-run>/web-checkpoint-1/units/supported-authoring/reviews/supported-authoring/report.md",
+            "sha256": "3c88591d08a93476af8d03c1009ec5c25004231031a04ef95f88b8749f80c18c",
+            "locator": null
+          },
+          {
+            "path": "<private-run>/web-checkpoint-1/units/supported-authoring/reviews/supported-authoring/checks.raw.json",
+            "sha256": "83d39fa5941d4b12bdd177f2415796670af99ea9def35be830213409b2dfd480",
+            "locator": null
+          },
+          {
+            "path": "<private-run>/web-checkpoint-1/units/supported-authoring/outputs/supported-authoring/coordinator-review-receipt.json",
+            "sha256": "0bd711f9d954ca01914e2e78ba86cba46e9dd0f8aef5083b9422ca0bbe62f103",
+            "locator": null
+          }
+        ]
+      }
+    ],
+    "operationMetadata": [
+      {
+        "tool": "functions.exec / tools.exec_command",
+        "operation": "native execution",
+        "evidence": {
+          "path": "<private-run>/web-checkpoint-1/units/supported-authoring/outputs/supported-authoring/validation.raw.json",
+          "sha256": "da60adcfa163a0a411dbdb82872e392781f80fc645ec0362417a29625f2e6dd0",
+          "locator": null
+        },
+        "startedAt": "2026-10-17T06:40:21.260Z",
+        "returnedAt": "2026-10-17T06:40:21.642Z",
+        "runtime": "Existing absolute Bun Linux runtime, --no-install; Python -B, PYTHONDONTWRITEBYTECODE=1",
+        "outcomes": [
+          0,
+          1,
+          1,
+          1,
+          1,
+          0,
+          0
+        ]
+      }
+    ],
+    "limits": [
+      "Exact native tool ordering is retained through saved request/results, but not every early read has a separate timestamp or complete native transcript capture.",
+      "No actual model identity was exposed. Independence of the native diff reviewer is supported by distinct assignment and inspected result artifacts; model diversity remains unknown.",
+      "Missing create-skill is not treated as missing supported workflow because the case expressly allows the observed host alternative.",
+      "A supported authoring case pass is not a claim of skill trigger performance or whole-mode completion. Original producer result remains pending, with later independent review appended rather than overwritten."
+    ],
+    "historyRetained": [
+      "Original speculative read paths failed and were followed by correct full reads.",
+      "Original pending reviewer fields remain in producer result; later actual review appears in coordinator-review-receipt.json."
+    ],
+    "inputRevision": "ef92e5298ecae2709a9350cdf57d32e76c4d35a9"
+  },
+  "selectedProof": [
+    "proof/30-web-supported-authoring-1.json",
+    "proof/30-web-supported-authoring-2.json",
+    "proof/30-web-supported-authoring-3.json"
+  ],
+  "publicationStatus": "proposal-only; no canonical host evidence record is constructed",
+  "publicationGaps": [
+    "This assessment format is not the canonical evidence schema. Root-relative operation bindings and any required structured method receipt require separate complete validation.",
+    "Original assessment limitations, invalid receipts and capture gaps are preserved. A behavioral pass does not qualify a different package revision."
+  ]
+}

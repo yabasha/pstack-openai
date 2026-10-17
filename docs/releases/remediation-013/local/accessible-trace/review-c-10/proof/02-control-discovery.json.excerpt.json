@@ -1,0 +1,19 @@
+{
+  "kind": "selected-fixture-result-fields",
+  "caseId": "accessible-trace",
+  "attemptId": "review-c-10",
+  "originalLocator": "remaining-local/cases/accessible-trace/outputs/control-discovery.json",
+  "sourceSha256": "862f74cb14b5b6357edd8bfbda78246f9e1a514bd5b381370a2963cd5368a58e",
+  "sourceBytes": 1348,
+  "transformation": "Named JSON fields selected by exact JSON Pointer. Task-owned absolute paths replaced with declared placeholders. Other fields omitted. These are result-artifact values, not synthesized tool execution evidence. Public selection is limited to eight short inspected fields. Longer output and unselected fields remain private.",
+  "fields": [
+    {
+      "pointer": "/limits",
+      "value": [
+        "Successful CLI interaction does not prove profiling.",
+        "Source freeze is user-supplied provenance. Actual file byte hashes are retained separately.",
+        "No named companion execution is claimed."
+      ]
+    }
+  ]
+}

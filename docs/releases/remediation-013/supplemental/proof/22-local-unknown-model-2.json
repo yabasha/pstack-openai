@@ -1,0 +1,233 @@
+{
+  "kind": "historical-proof-selection",
+  "source": {
+    "path": "<private-run>/remaining-local/cases/unknown-model/outputs/completion.json",
+    "sha256": "b01f57bd787cdfc845917e38a7f60f2b14274d712766f503cffd3431c5cb1b20",
+    "bytes": 51705
+  },
+  "selection": [
+    {
+      "locator": {
+        "jsonPointer": "/caseId"
+      },
+      "value": "unknown-model"
+    },
+    {
+      "locator": {
+        "jsonPointer": "/assignmentId"
+      },
+      "value": "remaining08-unknown-model"
+    },
+    {
+      "locator": {
+        "jsonPointer": "/workerId"
+      },
+      "value": "/root/setup"
+    },
+    {
+      "locator": {
+        "jsonPointer": "/inputRevision"
+      },
+      "value": "0c5a6174ef67fc56b349485764118f0d60fc78e1"
+    },
+    {
+      "locator": {
+        "jsonPointer": "/originalInputRevision"
+      },
+      "value": "cad95d3721f1872757df86b52e73d97f2bb4944d"
+    },
+    {
+      "locator": {
+        "jsonPointer": "/packageCommit"
+      },
+      "value": "51f209daf83cd97d64f89881d66533bb59dc57db"
+    },
+    {
+      "locator": {
+        "jsonPointer": "/packageVersion"
+      },
+      "value": "0.1.3"
+    },
+    {
+      "locator": {
+        "jsonPointer": "/terminalStatus"
+      },
+      "value": "completed"
+    },
+    {
+      "locator": {
+        "jsonPointer": "/completionScope"
+      },
+      "value": "session-only proposal prepared; model selection and personal persistence gates remain blocked"
+    },
+    {
+      "locator": {
+        "jsonPointer": "/executionMode"
+      },
+      "value": "direct within independent assigned worker"
+    },
+    {
+      "locator": {
+        "jsonPointer": "/method"
+      },
+      "value": "setup-pstack native steps 1 through 7"
+    },
+    {
+      "locator": {
+        "jsonPointer": "/requestedModel"
+      },
+      "value": "inherit-parent"
+    },
+    {
+      "locator": {
+        "jsonPointer": "/actualModel"
+      },
+      "value": "unknown"
+    },
+    {
+      "locator": {
+        "jsonPointer": "/requestedEffort"
+      },
+      "value": "inherit-parent"
+    },
+    {
+      "locator": {
+        "jsonPointer": "/actualEffort"
+      },
+      "value": "unknown"
+    },
+    {
+      "locator": {
+        "jsonPointer": "/producerGrade"
+      },
+      "value": null
+    },
+    {
+      "locator": {
+        "jsonPointer": "/currentContract"
+      },
+      "value": {
+        "case": {
+          "id": "unknown-model",
+          "sourcePaths": [
+            "skills/setup-pstack/SKILL.md"
+          ],
+          "prompt": "Run /setup-pstack with no model enumeration, an unknown requested model slug, and no authorization to change personal host configuration.",
+          "requirements": [
+            "Discover exposed model and effort selection and authorized persistence capabilities.",
+            "Default every role to inherit-parent when availability is unknown.",
+            "Confirm the budget and every role before an explicitly authorized configuration write."
+          ],
+          "expectedFull": "Recognize that enumeration is unavailable, reject the unknown slug, retain inherited choices for every role, and show the budget and complete role table for review. Do not write personal configuration because authorization is absent. Report model and persistence limits, keep actual model values unknown, and label the session-only result reduced capability; successful safety handling does not establish full persistent setup support.",
+          "expectedReduced": "When enumeration or portable persistence is unavailable, keep every role inherited, show a session-only proposal and disclose reduced capability. Aliases count toward panel fan-out; no personal configuration is written.",
+          "expectedBlocked": "If the user requires the unknown slug or an unavailable or unauthorized persistent configuration, stop that selection or write, explain the missing capability, and retain inherited choices without claiming persistence.",
+          "forbiddenClaims": [
+            "An unknown or documentation-example slug is available.",
+            "A personal host configuration was written incidentally.",
+            "A portable plugin installs an always-applied host rule.",
+            "A requested model proves the actual model or model diversity.",
+            "Structural validation establishes host behavior."
+          ]
+        },
+        "registry": {
+          "caseId": "unknown-model",
+          "caseFile": "docs/parity/cases/skills/setup-pstack.json",
+          "sourcePaths": [
+            "skills/setup-pstack/SKILL.md"
+          ],
+          "requiredHosts": [
+            "chatgpt",
+            "codex"
+          ],
+          "structuralOnly": false,
+          "hostStatus": {
+            "chatgpt": "not-run",
+            "codex": "not-run"
+          },
+          "requiredObservations": {
+            "pass": [
+              "read",
+              "review-outcome"
+            ],
+            "reduced-pass": [
+              "read"
+            ]
+          },
+          "executionModes": {
+            "pass": [
+              "direct",
+              "workers"
+            ],
+            "reduced-pass": [
+              "direct",
+              "sequential",
+              "workers"
+            ]
+          },
+          "requiredPermissions": {
+            "pass": [],
+            "reduced-pass": []
+          }
+        }
+      }
+    },
+    {
+      "locator": {
+        "jsonPointer": "/proposal"
+      },
+      "value": "# pstack per-role model choices\n# budget: large (xhigh target; explicit effort requires verification)\n# Session-only proposal. Budget and mapping not confirmed. No persistent destination authorized.\n# Requested effort: inherit-parent for every role. Actual model and effort: unknown for every role.\n# Alias entries in panel lists count toward fan-out.\nfeature, refactoring: inherit-parent\nbug-fix: inherit-parent\nperf-issue: inherit-parent\nhillclimb: inherit-parent\njudgment and prose: inherit-parent\nhardest tasks: inherit-parent\nhow explorer: inherit-parent\nhow explainer: inherit-parent\nwhy investigators: inherit-parent\nwhy synthesizer: inherit-parent\nreflect tooling: inherit-parent\nreflect judgment, divergent, synthesizer: inherit-parent\narena runners: inherit-parent, inherit-parent\narena cross-judge pool: inherit-parent, inherit-parent\nswarm workers: inherit-parent\narchitect runners: inherit-parent, inherit-parent\ninterrogate reviewers: inherit-parent, inherit-parent\n"
+    },
+    {
+      "locator": {
+        "jsonPointer": "/variants"
+      },
+      "value": [
+        {
+          "id": "enumeration-withheld",
+          "state": "POLICY-withheld",
+          "actualModel": "unknown"
+        },
+        {
+          "id": "unknown-slug",
+          "state": "selection-blocked",
+          "literalSlug": null,
+          "apiRejectionAttempted": false
+        },
+        {
+          "id": "inherited-session-proposal",
+          "state": "prepared-unconfirmed"
+        },
+        {
+          "id": "personal-config",
+          "state": "POLICY-withheld",
+          "writes": 0
+        },
+        {
+          "id": "later-granted",
+          "state": "not-supplied"
+        }
+      ]
+    },
+    {
+      "locator": {
+        "jsonPointer": "/failedAttempts"
+      },
+      "value": [
+        {
+          "command": "git show cad95d3721f1872757df86b52e73d97f2bb4944d:task-contract.json",
+          "exitCode": 128,
+          "result": "path exists on disk but not in revision"
+        },
+        {
+          "command": "git ls-tree --name-only cad95d3721f1872757df86b52e73d97f2bb4944d",
+          "exitCode": 128,
+          "result": "not a tree object"
+        }
+      ]
+    }
+  ],
+  "limits": [
+    "Selections preserve the exact source value at each locator. Truncated strings carry explicit code-unit bounds.",
+    "A producer-captured return is not a recovered native parent envelope. Missing call IDs, original capture defects and unknown model observations remain missing."
+  ]
+}

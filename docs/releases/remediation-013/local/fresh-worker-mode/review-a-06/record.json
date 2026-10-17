@@ -1,0 +1,68 @@
+{
+  "caseId": "fresh-worker-mode",
+  "packageVersion": "0.1.3",
+  "packageCommit": "51f209daf83cd97d64f89881d66533bb59dc57db",
+  "host": "codex",
+  "hostMode": "Historical native Local task-scoped fixture observation",
+  "date": "2026-10-17",
+  "input": "Invoke /poteto-mode for a scoped nontrivial feature. Give a fresh worker this mode and require its chosen playbook, applied principle leaves, throughput checkpoint and evidence. Repeat with worker tools unavailable and with the mode or an applied leaf unavailable. Exercise the 23 playbook route contracts, a no-spawn worker, helper setup failure, a stale full head or missing artifact, and an authorized local checklist when no todo tool exists. Use fixtures for helper boundaries; do not contact a live forge or install dependencies. Actual task fixture revision de083c0cb5a8bc8e952f02eb63c0df968cb9e8bc.",
+  "observedOutput": "Fresh independent workers, isolated outputs, source reads and helper-boundary observations exist. A later serializer implementation has real literal tests, mutation failures, independent review and PTY proof. The initial no-spawn serializer accepts Symbol where original interpolation throws. That rejected snapshot remains distinct from the later corrected implementation. Initial and second-round Arena method.order values were integers and roles were specialized names. Actual returns preserved those invalid methods. They cannot be normalized retrospectively. A new prospective round three uses exact candidate/judge roles and string method.order. The frozen validator returned no method errors, and actual assignment/result fields match. It is later design-only evidence and cannot establish before-implementation chronology. Initial generic checklists, late throughput checkpoint and the first how worker lacking a complete mode-read proof prevent an unqualified full mode workflow result.",
+  "status": "reduced-pass",
+  "execution": "workers",
+  "inputRevision": "de083c0cb5a8bc8e952f02eb63c0df968cb9e8bc",
+  "sourcePaths": [
+    "skills/poteto-mode/SKILL.md"
+  ],
+  "documentedCapabilities": [
+    "Frozen source instructions only. Current-main qualification is not established."
+  ],
+  "exposedTools": [
+    "exec"
+  ],
+  "artifacts": [
+    "docs/releases/remediation-013/local/fresh-worker-mode/review-a-06/assessment.json",
+    "docs/releases/remediation-013/local/fresh-worker-mode/review-a-06/proof/01-lead-initial-review.json.excerpt.json",
+    "docs/releases/remediation-013/local/fresh-worker-mode/review-a-06/proof/02-lead-method-validation.json.excerpt.json",
+    "docs/releases/remediation-013/local/fresh-worker-mode/review-a-06/proof/03-arena-round3.method-receipt.json.excerpt.json",
+    "docs/releases/remediation-013/local/fresh-worker-mode/review-a-06/proof/supplied-input.json",
+    "docs/releases/remediation-013/local/fresh-worker-mode/review-a-06/proof/native-source-read.json",
+    "docs/releases/remediation-013/local/fresh-worker-mode/review-a-06/proof/task-result-prefix.json"
+  ],
+  "limits": [
+    "The initial no-spawn serializer accepts Symbol where original interpolation throws. That rejected snapshot remains distinct from the later corrected implementation.",
+    "Initial and second-round Arena method.order values were integers and roles were specialized names. Actual returns preserved those invalid methods. They cannot be normalized retrospectively.",
+    "A new prospective round three uses exact candidate/judge roles and string method.order. The frozen validator returned no method errors, and actual assignment/result fields match. It is later design-only evidence and cannot establish before-implementation chronology.",
+    "The public source excerpt covers the listed matched paths only. Other source reads assessed independently remain outside this narrow public excerpt.",
+    "Only the actual operations listed in this record have narrow public bindings. Other operations from the independent assessment remain unprojected. No missing operation is invented.",
+    "The exposed tool name exec is retained from the actual scoped native custom-tool call. The nested tools.exec_command call matches this public command event. command_execution remains an event type only."
+  ],
+  "priorActionIdentities": [],
+  "permissions": {
+    "execution": "granted",
+    "writes": "granted",
+    "externalActions": "denied"
+  },
+  "models": {
+    "requested": "inherit-parent",
+    "actual": "gpt-6.1-sol"
+  },
+  "successfulOperations": [
+    {
+      "operation": "read",
+      "tool": "exec",
+      "evidence": "docs/releases/remediation-013/local/fresh-worker-mode/review-a-06/proof/native-source-read.json"
+    }
+  ],
+  "nativeObservations": [
+    {
+      "observation": "review-outcome",
+      "evidence": "docs/releases/remediation-013/local/fresh-worker-mode/review-a-06/assessment.json",
+      "reviewedBy": "/root/grade_remediation_local_a"
+    },
+    {
+      "observation": "supplied-input",
+      "evidence": "docs/releases/remediation-013/local/fresh-worker-mode/review-a-06/proof/supplied-input.json",
+      "reviewedBy": "/root/project_historical_local"
+    }
+  ]
+}

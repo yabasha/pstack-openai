@@ -1,0 +1,15 @@
+{
+  "kind": "selected-fixture-result-fields",
+  "caseId": "contiguous-verified-stack",
+  "attemptId": "review-b-14",
+  "originalLocator": "work/repair_real_builds/post-final101/actual-pty-tool.json",
+  "sourceSha256": "5603c17708bcae39fb6d31941e59b2c37cd6e090b5572b7e275796e7be17a088",
+  "sourceBytes": 940,
+  "transformation": "Named JSON fields selected by exact JSON Pointer. Task-owned absolute paths replaced with declared placeholders. Other fields omitted. These are result-artifact values, not synthesized tool execution evidence. Public selection is limited to eight short inspected fields. Longer output and unselected fields remain private.",
+  "fields": [
+    {
+      "pointer": "/result/exit_code",
+      "value": 0
+    }
+  ]
+}

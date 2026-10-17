@@ -1,0 +1,43 @@
+{
+  "kind": "selected-fixture-result-fields",
+  "caseId": "history-evidence",
+  "attemptId": "review-c-09",
+  "originalLocator": "remaining-local/cases/history-evidence/outputs/actions.json",
+  "sourceSha256": "80a629f3f830d6c8a358783754b200347bf8b9313ed343578084e8ac46533548",
+  "sourceBytes": 6237,
+  "transformation": "Named JSON fields selected by exact JSON Pointer. Task-owned absolute paths replaced with declared placeholders. Other fields omitted. These are result-artifact values, not synthesized tool execution evidence. Public selection is limited to eight short inspected fields. Longer output and unselected fields remain private.",
+  "fields": [
+    {
+      "pointer": "/0/exitCode",
+      "value": 0
+    },
+    {
+      "pointer": "/0/stdout",
+      "value": "97c14cafd67603ef8ed7f26727503c1310e7034f\n"
+    },
+    {
+      "pointer": "/0/stderr",
+      "value": ""
+    },
+    {
+      "pointer": "/1/exitCode",
+      "value": 0
+    },
+    {
+      "pointer": "/1/stdout",
+      "value": ""
+    },
+    {
+      "pointer": "/1/stderr",
+      "value": ""
+    },
+    {
+      "pointer": "/2/exitCode",
+      "value": 128
+    },
+    {
+      "pointer": "/2/stdout",
+      "value": ""
+    }
+  ]
+}

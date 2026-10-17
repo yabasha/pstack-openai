@@ -1,0 +1,54 @@
+{
+  "kind": "historical-proof-selection",
+  "source": {
+    "path": "<private-run>/cross-host-extra/local/projects/unknown-actual-model/outputs/verification.json",
+    "sha256": "d31169afb8f81349ee3be03c42cc5c4682fa43a5ed5ea58dac1c715a029b9c64",
+    "bytes": 927
+  },
+  "selection": [
+    {
+      "locator": {
+        "jsonPointer": "/checks"
+      },
+      "value": {
+        "assignmentIdentity": true,
+        "actualOwner": true,
+        "revision": true,
+        "reportDigest": true,
+        "requestedModelKeptSeparate": true,
+        "requestedEffortKeptSeparate": true,
+        "noApplicationEdits": true,
+        "sourceUnchanged:<frozen-host-fixture>/runtime/plugins/cache/pstack-frozen-verification/pstack-openai/0.1.3/references/agent-prompts/poteto-agent.md": true,
+        "sourceUnchanged:<frozen-host-fixture>/runtime/plugins/cache/pstack-frozen-verification/pstack-openai/0.1.3/references/agent-prompts/comment-sicko.md": true
+      }
+    },
+    {
+      "locator": {
+        "jsonPointer": "/reportSha256"
+      },
+      "value": "6454b009c9c46881d25cac0380d3af2607c8078892a31fd0d590d0144a2288c0"
+    },
+    {
+      "locator": {
+        "jsonPointer": "/currentHead"
+      },
+      "value": "6f0a50d5a15999f6f06352cef0fa7a7df3bfd7d5"
+    },
+    {
+      "locator": {
+        "jsonPointer": "/exitCode"
+      },
+      "value": 0
+    },
+    {
+      "locator": {
+        "jsonPointer": "/scope"
+      },
+      "value": "Artifact identity and unknown-metadata checks only. No behavioral grade or model-diversity claim."
+    }
+  ],
+  "limits": [
+    "Selections preserve the exact source value at each locator. Truncated strings carry explicit code-unit bounds.",
+    "A producer-captured return is not a recovered native parent envelope. Missing call IDs, original capture defects and unknown model observations remain missing."
+  ]
+}

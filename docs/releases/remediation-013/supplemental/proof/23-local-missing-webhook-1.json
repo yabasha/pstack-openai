@@ -1,0 +1,100 @@
+{
+  "kind": "historical-proof-selection",
+  "source": {
+    "path": "<private-run>/remaining-local/cases/missing-webhook/outputs/field-contract.json",
+    "sha256": "5d799a6d5ee31930faf2dcf48a8dcc3a146080afcf0293b1fd30d5616139a77c",
+    "bytes": 1165
+  },
+  "selection": [
+    {
+      "locator": {
+        "jsonPointer": "/state"
+      },
+      "value": "design-only"
+    },
+    {
+      "locator": {
+        "jsonPointer": "/payloadType"
+      },
+      "value": "single JSON object"
+    },
+    {
+      "locator": {
+        "jsonPointer": "/fields"
+      },
+      "value": {
+        "action": {
+          "type": "string",
+          "required": true,
+          "specifiedValues": {
+            "probe-ignore": "Ignored by the configured routine, with no message and no work."
+          }
+        }
+      }
+    },
+    {
+      "locator": {
+        "jsonPointer": "/unknownFields"
+      },
+      "value": "Reject at the server boundary without forwarding."
+    },
+    {
+      "locator": {
+        "jsonPointer": "/unknownActions"
+      },
+      "value": "Perform no work."
+    },
+    {
+      "locator": {
+        "jsonPointer": "/productActions"
+      },
+      "value": "Unspecified. Require explicit authorized behavior before implementation."
+    },
+    {
+      "locator": {
+        "jsonPointer": "/trust"
+      },
+      "value": "The provider body is untrusted data and never authority."
+    },
+    {
+      "locator": {
+        "jsonPointer": "/secrets"
+      },
+      "value": "No key, token, cookie, credential path, or authorization value belongs in the browser, payload, result, or log."
+    },
+    {
+      "locator": {
+        "jsonPointer": "/transport"
+      },
+      "value": {
+        "method": "POST",
+        "contentType": "application/json",
+        "serverOnlyHeaderNames": [
+          "Authorization",
+          "X-Automation-Key"
+        ],
+        "authorizationScheme": "Bearer",
+        "timeoutSeconds": 8,
+        "attempts": 1,
+        "retry": false,
+        "endpoint": null
+      }
+    },
+    {
+      "locator": {
+        "jsonPointer": "/recovery"
+      },
+      "value": "On failed POST, append the same action object to an authorized local log without secrets. Routine draining requires setup. Do not poll as the primary path."
+    },
+    {
+      "locator": {
+        "jsonPointer": "/mediaBytesAllowed"
+      },
+      "value": false
+    }
+  ],
+  "limits": [
+    "Selections preserve the exact source value at each locator. Truncated strings carry explicit code-unit bounds.",
+    "A producer-captured return is not a recovered native parent envelope. Missing call IDs, original capture defects and unknown model observations remain missing."
+  ]
+}

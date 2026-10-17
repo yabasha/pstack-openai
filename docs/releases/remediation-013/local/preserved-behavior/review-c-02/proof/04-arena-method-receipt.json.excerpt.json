@@ -1,0 +1,26 @@
+{
+  "kind": "selected-fixture-result-fields",
+  "caseId": "preserved-behavior",
+  "attemptId": "review-c-02",
+  "originalLocator": "remaining-local/cases/preserved-behavior/outputs/arena-method-receipt.json",
+  "sourceSha256": "3d165086f614cf04d3c5080701253938f7bc146a4e8c02f785617169ede0293a",
+  "sourceBytes": 7142,
+  "transformation": "Named JSON fields selected by exact JSON Pointer. Task-owned absolute paths replaced with declared placeholders. Other fields omitted. These are result-artifact values, not synthesized tool execution evidence. Public selection is limited to eight short inspected fields. Longer output and unselected fields remain private.",
+  "fields": [
+    {
+      "pointer": "/inputRevision",
+      "value": "1b69f163da7e4648e691c8b26cac8465ec1b596f"
+    },
+    {
+      "pointer": "/limits",
+      "value": [
+        "Method object was declared in a separate prospective artifact, not embedded in each immutable candidate assignment.",
+        "Judge structured method was returned, not prospectively specified. It is not post-hoc copied into assignment method.",
+        "Candidate and judge boot/checklist timing deviations remain in actual results.",
+        "Actual model/effort unobserved; no model diversity claim.",
+        "This receipt retains actual operations and limitations. No validator success or host grade claimed.",
+        "Candidate A read complete supplied current/task contracts and B read portions. These contain expected-outcome and forbidden-claim language. Private rubric stayed withheld, but blind evaluation is not established. No retrospective repair."
+      ]
+    }
+  ]
+}

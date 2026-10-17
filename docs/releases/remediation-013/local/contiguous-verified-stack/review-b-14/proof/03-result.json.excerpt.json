@@ -1,0 +1,48 @@
+{
+  "kind": "selected-fixture-result-fields",
+  "caseId": "contiguous-verified-stack",
+  "attemptId": "review-b-14",
+  "originalLocator": "work/repair_real_builds/pr102/result.json",
+  "sourceSha256": "c24db2166cccb01e40eda90eefb4412d88aae5b96aadb3c994bbec78c93f7cb2",
+  "sourceBytes": 2754,
+  "transformation": "Named JSON fields selected by exact JSON Pointer. Task-owned absolute paths replaced with declared placeholders. Other fields omitted. These are result-artifact values, not synthesized tool execution evidence. Public selection is limited to eight short inspected fields. Longer output and unselected fields remain private.",
+  "fields": [
+    {
+      "pointer": "/assignmentId",
+      "value": "real-build-independent-pr102-01"
+    },
+    {
+      "pointer": "/inputRevision",
+      "value": "4a7dde94ab2778837e4c932e53cc3484d2e74dfd"
+    },
+    {
+      "pointer": "/requestedModel",
+      "value": "inherit-parent"
+    },
+    {
+      "pointer": "/actualModel",
+      "value": "unknown"
+    },
+    {
+      "pointer": "/verdict",
+      "value": "PASS+NOTES"
+    },
+    {
+      "pointer": "/findings",
+      "value": [
+        "Original build.ts does not bundle app.ts and is rejected as app-build proof.",
+        "Real bun and node target builds are stable within each lane, with no current-versus-verdict emitted differences. No noise is injected or needs exemption.",
+        "README text matches actual doubler. test.txt is inert documentation, not an executed test. lint.json is configuration, no lint runner is supplied. Fresh literal source/bundle checks executed instead."
+      ]
+    },
+    {
+      "pointer": "/limits",
+      "value": [
+        "Inert local fixture only. No live CI, forge, comments, push, retarget, merge or production verification.",
+        "Node-target bundle executed with Bun under user Bun-only preference. This verifies emitted node-target bytes and Bun runtime behavior, not native Node runtime compatibility.",
+        "Named deslop, control-cli, no-comments and create-skill companions did not run. Independent review and inherited actual PTY are scoped authorized replacements.",
+        "Observed model unavailable, diversity unverified."
+      ]
+    }
+  ]
+}

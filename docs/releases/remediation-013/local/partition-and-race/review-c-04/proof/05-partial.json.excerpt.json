@@ -1,0 +1,27 @@
+{
+  "kind": "selected-fixture-result-fields",
+  "caseId": "partition-and-race",
+  "attemptId": "review-c-04",
+  "originalLocator": "remaining-local/cases/partition-and-race/outputs/quarantine/cancel/partial.json",
+  "sourceSha256": "c235a9f9e5c3cc466de631d33ac78ae37ec57e579a7e6e98266729354368f8f0",
+  "sourceBytes": 594,
+  "transformation": "Named JSON fields selected by exact JSON Pointer. Task-owned absolute paths replaced with declared placeholders. Other fields omitted. These are result-artifact values, not synthesized tool execution evidence. Public selection is limited to eight short inspected fields. Longer output and unselected fields remain private.",
+  "fields": [
+    {
+      "pointer": "/assignmentId",
+      "value": "cancel"
+    },
+    {
+      "pointer": "/inputRevision",
+      "value": "e1dbf216744c45345acecf367b2b449bbc9fa75f"
+    },
+    {
+      "pointer": "/requestedModel",
+      "value": "inherit-parent"
+    },
+    {
+      "pointer": "/actualModel",
+      "value": "unknown"
+    }
+  ]
+}

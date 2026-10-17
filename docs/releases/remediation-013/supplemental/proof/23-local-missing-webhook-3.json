@@ -1,0 +1,23 @@
+{
+  "kind": "historical-proof-selection",
+  "source": {
+    "path": "<private-run>/remaining-local/cases/missing-webhook/outputs/missing-webhook.result.md",
+    "sha256": "13068cb9a877f0534982ee6b97bf0a6d649b0f39ab84f824bbf90cdd6c400ccc",
+    "bytes": 31335
+  },
+  "selection": [
+    {
+      "locator": {
+        "textCodeUnits": [
+          0,
+          2039
+        ]
+      },
+      "value": "# missing-webhook attempt\n\nLocal design artifacts were saved. Live webhook and tailnet operation remain blocked. This is reduced capability with no producer quality grade.\n\nThe native make-bot-ui workflow stopped at its setup check. The provider, secure secret channel, and network setup are withheld by case policy. This does not establish tool absence. No later grant variant was supplied.\n\nThe proposed design is in ui-design.md. Its only specified button is a disabled connection probe. Product actions remain unspecified. field-contract.json describes a single action object and a harmless ignored probe. setup-checklist.md preserves the secure setup, timeout, header, recovery, and tailnet verification requirements.\n\nExact input HEAD was independently observed as 4c62021fe49757fcac72d1b1abdf3bc3da98b3c0. Requested model and effort are inherit-parent. Observed model and effort remain unknown. Source freeze is package 0.1.3 at 51f209daf83cd97d64f89881d66533bb59dc57db. All inspected source bytes are hashed in read-source-hashes.json.\n\nThe supplied ORIGINAL contents were read from task-contract.json and supplied-input.json. The ORIGINAL Git revision is not an available tree in this repository. Two failed lookup observations remain in failed-observations.json. No fixture inputs were selected for this case.\n\nOnly task-owned outputs were written. No listener, routine, credential operation, network request, tailnet command, schedule, configuration change, commit, or external write occurred. There is no routine URL, sender key, secret path, tailnet hostname, IP address, or live page result to report.\n\nProve It Works changed the completion claim. I read the actual local files and checked their JSON and digests. These checks establish saved local designs only. Live behavior and plugin loading remain unverified. No independent how review, named create-skill companion, or control-ui execution is claimed.\n\n## Full supplied input\n\n```json\n{\n  \"current\": {\n    \"case\": {\n      \"id\": \"missing-webhook\",\n      \"sourcePaths\": ["
+    }
+  ],
+  "limits": [
+    "Selections preserve the exact source value at each locator. Truncated strings carry explicit code-unit bounds.",
+    "A producer-captured return is not a recovered native parent envelope. Missing call IDs, original capture defects and unknown model observations remain missing."
+  ]
+}

@@ -1,0 +1,42 @@
+{
+  "kind": "historical-proof-selection",
+  "source": {
+    "path": "<private-run>/web-checkpoint-2/units/unknown-model/outputs/unknown-model/localrawcaptures/005-revision-writing.json",
+    "sha256": "8cbc07e2eb13ec5b3f01314681eb2243ebc28df3a48ab4c3f749a2c3dbe458e5",
+    "bytes": 11346
+  },
+  "selection": [
+    {
+      "locator": {
+        "jsonPointer": "/request/cmd"
+      },
+      "value": "git -C /mnt/data/pstack-remediation-20261017/attempts-18/outputs/unknown-model/task-input rev-parse HEAD && cat /root/.codex/plugins/cache/created-by-me-remote/pstack-openai/0.1.3/skills/technical-writing/SKILL.md && date -u +%Y-%m-%dT%H:%M:%SZ"
+    },
+    {
+      "locator": {
+        "jsonPointer": "/returnedObject/exit_code"
+      },
+      "value": 0
+    },
+    {
+      "locator": {
+        "jsonPointer": "/returnedObject/chunk_id"
+      },
+      "value": "12f71a"
+    },
+    {
+      "locator": {
+        "jsonPointer": "/returnedObject/output",
+        "stringCodeUnits": [
+          0,
+          1400
+        ]
+      },
+      "value": "9e2a8312d7ca3baba8bebf96fa928bc22ac4aaca\n---\nname: technical-writing\ndescription: \"Layered technical-writing standard: Diátaxis structure, Google developer style sentences, STE instruction rules, Global English syntax. Use for /technical-writing or when writing or reviewing docs, RFCs, readmes, PR descriptions, or commit messages.\"\ndisable-model-invocation: true\n---\n\n# Technical writing\n\nThe goal is writing a tired engineer understands on the first read. Four layers get you there, one question each: what kind of document is this, how do sentences address the reader, how much does each sentence carry, and can any sentence be read two ways. Apply all four.\n\nThree rules sit above the layers:\n\n- **Cut every word that does no work.** If the sentence survives without a word, the word goes. \"In order to\" is \"to\". \"It is important to note that\" is nothing.\n- **Use the short, everyday word.** \"Use\", not \"utilize\". \"Help\", not \"facilitate\". \"Do\", not \"perform\". A long word has to buy its length with precision.\n- **When a rule makes a sentence worse, fix the sentence another way or leave it alone.** The rules serve the reader. A sentence that follows every rule and sounds like a machine wrote it has failed.\n\nThe codebase is the word list. Write the real symbol, file, flag, or command name, not a synonym or a description of it.\n\nDon't invent jargon. Use the words a developer would say out "
+    }
+  ],
+  "limits": [
+    "Selections preserve the exact source value at each locator. Truncated strings carry explicit code-unit bounds.",
+    "A producer-captured return is not a recovered native parent envelope. Missing call IDs, original capture defects and unknown model observations remain missing."
+  ]
+}

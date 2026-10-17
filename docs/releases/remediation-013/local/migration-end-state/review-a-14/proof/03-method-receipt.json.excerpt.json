@@ -1,0 +1,23 @@
+{
+  "kind": "selected-fixture-result-fields",
+  "caseId": "migration-end-state",
+  "attemptId": "review-a-14",
+  "originalLocator": "work/local_compiler_cases/projects/pricing-domain/deliverables/method-receipt.json",
+  "sourceSha256": "454bff6b83ed826ee135d49b50462bdaafa8a83e8fb6c8e41ff4a3db10cc5603",
+  "sourceBytes": 4228,
+  "transformation": "Named JSON fields selected by exact JSON Pointer. Task-owned absolute paths replaced with declared placeholders. Other fields omitted. These are result-artifact values, not synthesized tool execution evidence. Public selection is limited to eight short inspected fields. Longer output and unselected fields remain private.",
+  "fields": [
+    {
+      "pointer": "/inputRevision",
+      "value": "044264355914b6d5644c74a3f8f8ed4cb2c9781f"
+    },
+    {
+      "pointer": "/limitations",
+      "value": [
+        "Actual worker models unknown; model diversity unverified",
+        "Judge first-read ordering failure retained in failures.md",
+        "No claim of parity-schema validation or release approval"
+      ]
+    }
+  ]
+}

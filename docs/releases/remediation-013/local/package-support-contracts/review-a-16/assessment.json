@@ -1,0 +1,513 @@
+{
+  "schemaVersion": 1,
+  "kind": "historical-independent-assessment-projection",
+  "caseId": "package-support-contracts",
+  "attemptId": "review-a-16",
+  "startingMain": "4138e161c27cafffd2baaab6bf4ca53e86a57433",
+  "packageCommit": "51f209daf83cd97d64f89881d66533bb59dc57db",
+  "packageVersion": "0.1.3",
+  "inputRevision": "0b333d66d5b80d0621802a1ba5e7c4f938b8f214",
+  "originalProposedStatus": "pass",
+  "evidenceStatus": "pass",
+  "qualifiesCurrentMain": false,
+  "sourceReview": {
+    "originalLocator": "grades/grade_remediation_local_a/result.json",
+    "sourceSha256": "9cc1f7ebfcf0f02bdaaabc03a16ca8ef1a0dcc165259e873d7be84affe57bc2f",
+    "jsonPointer": "/cases/15",
+    "reviewer": "/root/grade_remediation_local_a",
+    "requestedModel": "inherit-parent",
+    "actualModel": "unknown"
+  },
+  "findings": [
+    "The actual installed frozen copy, source archive and separately owned verification copy matched 934 files. Licensing/attribution and README local destinations were inspected.",
+    "An actual view_image call emitted the canonical installed logo. The native raw operation exists separately from the file-existence/hash claims.",
+    "Actual Git --no-index ignore queries confirm seven ignored and eight eligible cases with retained rule output, plus tracked evidence/log eligibility.",
+    "The exact original strict watcher command used the approved byte-matching helper snapshot and pinned dependencies. This reviewer independently repeated the strict compile successfully.",
+    "Compilation qualifies the fixture only. Installed dependencies, fresh host loading/discovery and live watcher readiness are not implied."
+  ],
+  "limits": [
+    "Compilation qualifies the fixture only. Installed dependencies, fresh host loading/discovery and live watcher readiness are not implied."
+  ],
+  "chronology": {
+    "preserveAllEarlierAttempts": true,
+    "methodConformanceClaim": false,
+    "notes": []
+  },
+  "predicate": [
+    {
+      "id": 1,
+      "text": "Read the actual installed-copy identity and bind it to the exact frozen SHA and package version. Preserve byte identity when preparing any authorized writable verification copy; no source-only copy is installed evidence.",
+      "status": "satisfied",
+      "basis": [
+        "The actual installed frozen copy, source archive and separately owned verification copy matched 934 files. Licensing/attribution and README local destinations were inspected.",
+        "An actual view_image call emitted the canonical installed logo. The native raw operation exists separately from the file-existence/hash claims.",
+        "Actual Git --no-index ignore queries confirm seven ignored and eight eligible cases with retained rule output, plus tracked evidence/log eligibility.",
+        "The exact original strict watcher command used the approved byte-matching helper snapshot and pinned dependencies. This reviewer independently repeated the strict compile successfully.",
+        "Compilation qualifies the fixture only. Installed dependencies, fresh host loading/discovery and live watcher readiness are not implied."
+      ],
+      "source": "docs/parity/cases/package-support.json",
+      "evidence": [
+        {
+          "path": "<private-run>/work/local_compiler_cases/projects/package-support/deliverables/installed-copy-manifest.json",
+          "line": 1,
+          "sha256": "8d6cbe1283b00ee4f086c4da5079566ddf5bb440e96587c90fba88a25ae87062"
+        },
+        {
+          "path": "<private-run>/work/local_compiler_cases/projects/package-support/deliverables/helper-identity.json",
+          "line": 1,
+          "sha256": "53508254370636559016abc494e60cf28bd89a6458cdda0ae5c20c7a0669de29"
+        },
+        {
+          "path": "<private-run>/work/local_compiler_cases/projects/package-support/deliverables/readme-navigation.json",
+          "line": 1,
+          "sha256": "5fbab9f014d31630fb382da6874520e8a064f0705ed599679352903fe0f4af86"
+        },
+        {
+          "path": "<private-run>/work/local_compiler_cases/projects/package-support/deliverables/ignore-checks.json",
+          "line": 1,
+          "sha256": "946d7dcc97815ab8e88ada44ab368f12094aaee11121141221475a67830e21e4"
+        },
+        {
+          "path": "<private-run>/work/local_compiler_cases/projects/package-support/deliverables/compiler-checks.json",
+          "line": 1,
+          "sha256": "7215bdd92a0d9d3c10a8f6efd39d17144f18172dbd48f129c8480754e64324d8"
+        },
+        {
+          "path": "<private-run>/work/local_compiler_cases/projects/package-support/deliverables/logo-render.md",
+          "line": 1,
+          "sha256": "ac09817384856c4dcfa4720c754331073b1f3655592180390dd4257e87bd04ac"
+        },
+        {
+          "path": "<private-run>/work/local_compiler_cases/projects/package-support/deliverables/final-check.json",
+          "line": 1,
+          "sha256": "36bc6b61284c04dec78b534dd57144d1aef8f6dcd4618a80875b1e2c3514c049"
+        },
+        {
+          "path": "<private-run>/work/local_compiler_cases/projects/package-support/deliverables/review.md",
+          "line": 1,
+          "sha256": "8d7874ce02635f6f47438cdd3557b5d6bbb9e37acf899dbc17313e70621a6633"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "text": "Read the complete MIT license and Lauren Tan attribution. Follow README navigation to actual local destinations and distinguish setup guidance from supported loading observations.",
+      "status": "satisfied",
+      "basis": [
+        "The actual installed frozen copy, source archive and separately owned verification copy matched 934 files. Licensing/attribution and README local destinations were inspected.",
+        "An actual view_image call emitted the canonical installed logo. The native raw operation exists separately from the file-existence/hash claims.",
+        "Actual Git --no-index ignore queries confirm seven ignored and eight eligible cases with retained rule output, plus tracked evidence/log eligibility.",
+        "The exact original strict watcher command used the approved byte-matching helper snapshot and pinned dependencies. This reviewer independently repeated the strict compile successfully.",
+        "Compilation qualifies the fixture only. Installed dependencies, fresh host loading/discovery and live watcher readiness are not implied."
+      ],
+      "source": "docs/parity/cases/package-support.json",
+      "evidence": [
+        {
+          "path": "<private-run>/work/local_compiler_cases/projects/package-support/deliverables/installed-copy-manifest.json",
+          "line": 1,
+          "sha256": "8d6cbe1283b00ee4f086c4da5079566ddf5bb440e96587c90fba88a25ae87062"
+        },
+        {
+          "path": "<private-run>/work/local_compiler_cases/projects/package-support/deliverables/helper-identity.json",
+          "line": 1,
+          "sha256": "53508254370636559016abc494e60cf28bd89a6458cdda0ae5c20c7a0669de29"
+        },
+        {
+          "path": "<private-run>/work/local_compiler_cases/projects/package-support/deliverables/readme-navigation.json",
+          "line": 1,
+          "sha256": "5fbab9f014d31630fb382da6874520e8a064f0705ed599679352903fe0f4af86"
+        },
+        {
+          "path": "<private-run>/work/local_compiler_cases/projects/package-support/deliverables/ignore-checks.json",
+          "line": 1,
+          "sha256": "946d7dcc97815ab8e88ada44ab368f12094aaee11121141221475a67830e21e4"
+        },
+        {
+          "path": "<private-run>/work/local_compiler_cases/projects/package-support/deliverables/compiler-checks.json",
+          "line": 1,
+          "sha256": "7215bdd92a0d9d3c10a8f6efd39d17144f18172dbd48f129c8480754e64324d8"
+        },
+        {
+          "path": "<private-run>/work/local_compiler_cases/projects/package-support/deliverables/logo-render.md",
+          "line": 1,
+          "sha256": "ac09817384856c4dcfa4720c754331073b1f3655592180390dd4257e87bd04ac"
+        },
+        {
+          "path": "<private-run>/work/local_compiler_cases/projects/package-support/deliverables/final-check.json",
+          "line": 1,
+          "sha256": "36bc6b61284c04dec78b534dd57144d1aef8f6dcd4618a80875b1e2c3514c049"
+        },
+        {
+          "path": "<private-run>/work/local_compiler_cases/projects/package-support/deliverables/review.md",
+          "line": 1,
+          "sha256": "8d7874ce02635f6f47438cdd3557b5d6bbb9e37acf899dbc17313e70621a6633"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "text": "Inspect assets/logo.png against its canonical digest and retain an actual rendering observation when image display is available. File existence alone does not prove rendering.",
+      "status": "satisfied",
+      "basis": [
+        "The actual installed frozen copy, source archive and separately owned verification copy matched 934 files. Licensing/attribution and README local destinations were inspected.",
+        "An actual view_image call emitted the canonical installed logo. The native raw operation exists separately from the file-existence/hash claims.",
+        "Actual Git --no-index ignore queries confirm seven ignored and eight eligible cases with retained rule output, plus tracked evidence/log eligibility.",
+        "The exact original strict watcher command used the approved byte-matching helper snapshot and pinned dependencies. This reviewer independently repeated the strict compile successfully.",
+        "Compilation qualifies the fixture only. Installed dependencies, fresh host loading/discovery and live watcher readiness are not implied."
+      ],
+      "source": "docs/parity/cases/package-support.json",
+      "evidence": [
+        {
+          "path": "<private-run>/work/local_compiler_cases/projects/package-support/deliverables/installed-copy-manifest.json",
+          "line": 1,
+          "sha256": "8d6cbe1283b00ee4f086c4da5079566ddf5bb440e96587c90fba88a25ae87062"
+        },
+        {
+          "path": "<private-run>/work/local_compiler_cases/projects/package-support/deliverables/helper-identity.json",
+          "line": 1,
+          "sha256": "53508254370636559016abc494e60cf28bd89a6458cdda0ae5c20c7a0669de29"
+        },
+        {
+          "path": "<private-run>/work/local_compiler_cases/projects/package-support/deliverables/readme-navigation.json",
+          "line": 1,
+          "sha256": "5fbab9f014d31630fb382da6874520e8a064f0705ed599679352903fe0f4af86"
+        },
+        {
+          "path": "<private-run>/work/local_compiler_cases/projects/package-support/deliverables/ignore-checks.json",
+          "line": 1,
+          "sha256": "946d7dcc97815ab8e88ada44ab368f12094aaee11121141221475a67830e21e4"
+        },
+        {
+          "path": "<private-run>/work/local_compiler_cases/projects/package-support/deliverables/compiler-checks.json",
+          "line": 1,
+          "sha256": "7215bdd92a0d9d3c10a8f6efd39d17144f18172dbd48f129c8480754e64324d8"
+        },
+        {
+          "path": "<private-run>/work/local_compiler_cases/projects/package-support/deliverables/logo-render.md",
+          "line": 1,
+          "sha256": "ac09817384856c4dcfa4720c754331073b1f3655592180390dd4257e87bd04ac"
+        },
+        {
+          "path": "<private-run>/work/local_compiler_cases/projects/package-support/deliverables/final-check.json",
+          "line": 1,
+          "sha256": "36bc6b61284c04dec78b534dd57144d1aef8f6dcd4618a80875b1e2c3514c049"
+        },
+        {
+          "path": "<private-run>/work/local_compiler_cases/projects/package-support/deliverables/review.md",
+          "line": 1,
+          "sha256": "8d7874ce02635f6f47438cdd3557b5d6bbb9e37acf899dbc17313e70621a6633"
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "text": "Check .gitignore with actual Git ignore queries in the authorized verification copy: upstream downloads, node_modules and named temporary data are ignored; tracked provenance and evidence, including logs, remain eligible. Do not alter the installed package.",
+      "status": "satisfied",
+      "basis": [
+        "The actual installed frozen copy, source archive and separately owned verification copy matched 934 files. Licensing/attribution and README local destinations were inspected.",
+        "An actual view_image call emitted the canonical installed logo. The native raw operation exists separately from the file-existence/hash claims.",
+        "Actual Git --no-index ignore queries confirm seven ignored and eight eligible cases with retained rule output, plus tracked evidence/log eligibility.",
+        "The exact original strict watcher command used the approved byte-matching helper snapshot and pinned dependencies. This reviewer independently repeated the strict compile successfully.",
+        "Compilation qualifies the fixture only. Installed dependencies, fresh host loading/discovery and live watcher readiness are not implied."
+      ],
+      "source": "docs/parity/cases/package-support.json",
+      "evidence": [
+        {
+          "path": "<private-run>/work/local_compiler_cases/projects/package-support/deliverables/installed-copy-manifest.json",
+          "line": 1,
+          "sha256": "8d6cbe1283b00ee4f086c4da5079566ddf5bb440e96587c90fba88a25ae87062"
+        },
+        {
+          "path": "<private-run>/work/local_compiler_cases/projects/package-support/deliverables/helper-identity.json",
+          "line": 1,
+          "sha256": "53508254370636559016abc494e60cf28bd89a6458cdda0ae5c20c7a0669de29"
+        },
+        {
+          "path": "<private-run>/work/local_compiler_cases/projects/package-support/deliverables/readme-navigation.json",
+          "line": 1,
+          "sha256": "5fbab9f014d31630fb382da6874520e8a064f0705ed599679352903fe0f4af86"
+        },
+        {
+          "path": "<private-run>/work/local_compiler_cases/projects/package-support/deliverables/ignore-checks.json",
+          "line": 1,
+          "sha256": "946d7dcc97815ab8e88ada44ab368f12094aaee11121141221475a67830e21e4"
+        },
+        {
+          "path": "<private-run>/work/local_compiler_cases/projects/package-support/deliverables/compiler-checks.json",
+          "line": 1,
+          "sha256": "7215bdd92a0d9d3c10a8f6efd39d17144f18172dbd48f129c8480754e64324d8"
+        },
+        {
+          "path": "<private-run>/work/local_compiler_cases/projects/package-support/deliverables/logo-render.md",
+          "line": 1,
+          "sha256": "ac09817384856c4dcfa4720c754331073b1f3655592180390dd4257e87bd04ac"
+        },
+        {
+          "path": "<private-run>/work/local_compiler_cases/projects/package-support/deliverables/final-check.json",
+          "line": 1,
+          "sha256": "36bc6b61284c04dec78b534dd57144d1aef8f6dcd4618a80875b1e2c3514c049"
+        },
+        {
+          "path": "<private-run>/work/local_compiler_cases/projects/package-support/deliverables/review.md",
+          "line": 1,
+          "sha256": "8d7874ce02635f6f47438cdd3557b5d6bbb9e37acf899dbc17313e70621a6633"
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "text": "Read the complete watcher tsconfig and types.compile fixture. With the exact existing pinned dependencies and approved execution, run the documented strict no-emit compiler command from skills/poteto-mode/scripts through Bun --no-install using the local TypeScript executable, --project watch-pr/tsconfig.json --noEmit --strict. Retain the actual invocation, runtime/version, exit status and output. Preserve positive READY typing and all four negative @ts-expect-error assertions.",
+      "status": "satisfied",
+      "basis": [
+        "The actual installed frozen copy, source archive and separately owned verification copy matched 934 files. Licensing/attribution and README local destinations were inspected.",
+        "An actual view_image call emitted the canonical installed logo. The native raw operation exists separately from the file-existence/hash claims.",
+        "Actual Git --no-index ignore queries confirm seven ignored and eight eligible cases with retained rule output, plus tracked evidence/log eligibility.",
+        "The exact original strict watcher command used the approved byte-matching helper snapshot and pinned dependencies. This reviewer independently repeated the strict compile successfully.",
+        "Compilation qualifies the fixture only. Installed dependencies, fresh host loading/discovery and live watcher readiness are not implied."
+      ],
+      "source": "docs/parity/cases/package-support.json",
+      "evidence": [
+        {
+          "path": "<private-run>/work/local_compiler_cases/projects/package-support/deliverables/installed-copy-manifest.json",
+          "line": 1,
+          "sha256": "8d6cbe1283b00ee4f086c4da5079566ddf5bb440e96587c90fba88a25ae87062"
+        },
+        {
+          "path": "<private-run>/work/local_compiler_cases/projects/package-support/deliverables/helper-identity.json",
+          "line": 1,
+          "sha256": "53508254370636559016abc494e60cf28bd89a6458cdda0ae5c20c7a0669de29"
+        },
+        {
+          "path": "<private-run>/work/local_compiler_cases/projects/package-support/deliverables/readme-navigation.json",
+          "line": 1,
+          "sha256": "5fbab9f014d31630fb382da6874520e8a064f0705ed599679352903fe0f4af86"
+        },
+        {
+          "path": "<private-run>/work/local_compiler_cases/projects/package-support/deliverables/ignore-checks.json",
+          "line": 1,
+          "sha256": "946d7dcc97815ab8e88ada44ab368f12094aaee11121141221475a67830e21e4"
+        },
+        {
+          "path": "<private-run>/work/local_compiler_cases/projects/package-support/deliverables/compiler-checks.json",
+          "line": 1,
+          "sha256": "7215bdd92a0d9d3c10a8f6efd39d17144f18172dbd48f129c8480754e64324d8"
+        },
+        {
+          "path": "<private-run>/work/local_compiler_cases/projects/package-support/deliverables/logo-render.md",
+          "line": 1,
+          "sha256": "ac09817384856c4dcfa4720c754331073b1f3655592180390dd4257e87bd04ac"
+        },
+        {
+          "path": "<private-run>/work/local_compiler_cases/projects/package-support/deliverables/final-check.json",
+          "line": 1,
+          "sha256": "36bc6b61284c04dec78b534dd57144d1aef8f6dcd4618a80875b1e2c3514c049"
+        },
+        {
+          "path": "<private-run>/work/local_compiler_cases/projects/package-support/deliverables/review.md",
+          "line": 1,
+          "sha256": "8d7874ce02635f6f47438cdd3557b5d6bbb9e37acf899dbc17313e70621a6633"
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "text": "read, inspect-installed-copy, inspect-support-contracts, render-logo, check-ignore and compile-proof are observation labels tied to actually exposed operations and retained artifacts, never invented APIs.",
+      "status": "satisfied",
+      "basis": [
+        "The actual installed frozen copy, source archive and separately owned verification copy matched 934 files. Licensing/attribution and README local destinations were inspected.",
+        "An actual view_image call emitted the canonical installed logo. The native raw operation exists separately from the file-existence/hash claims.",
+        "Actual Git --no-index ignore queries confirm seven ignored and eight eligible cases with retained rule output, plus tracked evidence/log eligibility.",
+        "The exact original strict watcher command used the approved byte-matching helper snapshot and pinned dependencies. This reviewer independently repeated the strict compile successfully.",
+        "Compilation qualifies the fixture only. Installed dependencies, fresh host loading/discovery and live watcher readiness are not implied."
+      ],
+      "source": "docs/parity/cases/package-support.json",
+      "evidence": [
+        {
+          "path": "<private-run>/work/local_compiler_cases/projects/package-support/deliverables/installed-copy-manifest.json",
+          "line": 1,
+          "sha256": "8d6cbe1283b00ee4f086c4da5079566ddf5bb440e96587c90fba88a25ae87062"
+        },
+        {
+          "path": "<private-run>/work/local_compiler_cases/projects/package-support/deliverables/helper-identity.json",
+          "line": 1,
+          "sha256": "53508254370636559016abc494e60cf28bd89a6458cdda0ae5c20c7a0669de29"
+        },
+        {
+          "path": "<private-run>/work/local_compiler_cases/projects/package-support/deliverables/readme-navigation.json",
+          "line": 1,
+          "sha256": "5fbab9f014d31630fb382da6874520e8a064f0705ed599679352903fe0f4af86"
+        },
+        {
+          "path": "<private-run>/work/local_compiler_cases/projects/package-support/deliverables/ignore-checks.json",
+          "line": 1,
+          "sha256": "946d7dcc97815ab8e88ada44ab368f12094aaee11121141221475a67830e21e4"
+        },
+        {
+          "path": "<private-run>/work/local_compiler_cases/projects/package-support/deliverables/compiler-checks.json",
+          "line": 1,
+          "sha256": "7215bdd92a0d9d3c10a8f6efd39d17144f18172dbd48f129c8480754e64324d8"
+        },
+        {
+          "path": "<private-run>/work/local_compiler_cases/projects/package-support/deliverables/logo-render.md",
+          "line": 1,
+          "sha256": "ac09817384856c4dcfa4720c754331073b1f3655592180390dd4257e87bd04ac"
+        },
+        {
+          "path": "<private-run>/work/local_compiler_cases/projects/package-support/deliverables/final-check.json",
+          "line": 1,
+          "sha256": "36bc6b61284c04dec78b534dd57144d1aef8f6dcd4618a80875b1e2c3514c049"
+        },
+        {
+          "path": "<private-run>/work/local_compiler_cases/projects/package-support/deliverables/review.md",
+          "line": 1,
+          "sha256": "8d7874ce02635f6f47438cdd3557b5d6bbb9e37acf899dbc17313e70621a6633"
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "text": "A reduced read-based report explicitly lists unexecuted compile, rendering and ignore-query branches. Missing dependencies block compiler proof; no installation, network, live forge operation or setup permission follows from this case.",
+      "status": "satisfied",
+      "basis": [
+        "The actual installed frozen copy, source archive and separately owned verification copy matched 934 files. Licensing/attribution and README local destinations were inspected.",
+        "An actual view_image call emitted the canonical installed logo. The native raw operation exists separately from the file-existence/hash claims.",
+        "Actual Git --no-index ignore queries confirm seven ignored and eight eligible cases with retained rule output, plus tracked evidence/log eligibility.",
+        "The exact original strict watcher command used the approved byte-matching helper snapshot and pinned dependencies. This reviewer independently repeated the strict compile successfully.",
+        "Compilation qualifies the fixture only. Installed dependencies, fresh host loading/discovery and live watcher readiness are not implied."
+      ],
+      "source": "docs/parity/cases/package-support.json",
+      "evidence": [
+        {
+          "path": "<private-run>/work/local_compiler_cases/projects/package-support/deliverables/installed-copy-manifest.json",
+          "line": 1,
+          "sha256": "8d6cbe1283b00ee4f086c4da5079566ddf5bb440e96587c90fba88a25ae87062"
+        },
+        {
+          "path": "<private-run>/work/local_compiler_cases/projects/package-support/deliverables/helper-identity.json",
+          "line": 1,
+          "sha256": "53508254370636559016abc494e60cf28bd89a6458cdda0ae5c20c7a0669de29"
+        },
+        {
+          "path": "<private-run>/work/local_compiler_cases/projects/package-support/deliverables/readme-navigation.json",
+          "line": 1,
+          "sha256": "5fbab9f014d31630fb382da6874520e8a064f0705ed599679352903fe0f4af86"
+        },
+        {
+          "path": "<private-run>/work/local_compiler_cases/projects/package-support/deliverables/ignore-checks.json",
+          "line": 1,
+          "sha256": "946d7dcc97815ab8e88ada44ab368f12094aaee11121141221475a67830e21e4"
+        },
+        {
+          "path": "<private-run>/work/local_compiler_cases/projects/package-support/deliverables/compiler-checks.json",
+          "line": 1,
+          "sha256": "7215bdd92a0d9d3c10a8f6efd39d17144f18172dbd48f129c8480754e64324d8"
+        },
+        {
+          "path": "<private-run>/work/local_compiler_cases/projects/package-support/deliverables/logo-render.md",
+          "line": 1,
+          "sha256": "ac09817384856c4dcfa4720c754331073b1f3655592180390dd4257e87bd04ac"
+        },
+        {
+          "path": "<private-run>/work/local_compiler_cases/projects/package-support/deliverables/final-check.json",
+          "line": 1,
+          "sha256": "36bc6b61284c04dec78b534dd57144d1aef8f6dcd4618a80875b1e2c3514c049"
+        },
+        {
+          "path": "<private-run>/work/local_compiler_cases/projects/package-support/deliverables/review.md",
+          "line": 1,
+          "sha256": "8d7874ce02635f6f47438cdd3557b5d6bbb9e37acf899dbc17313e70621a6633"
+        }
+      ]
+    }
+  ],
+  "sourceArtifactBindings": [
+    {
+      "originalLocator": "work/local_compiler_cases/projects/package-support/deliverables/installed-copy-manifest.json",
+      "sourceSha256": "8d6cbe1283b00ee4f086c4da5079566ddf5bb440e96587c90fba88a25ae87062",
+      "expectedSha256": "8d6cbe1283b00ee4f086c4da5079566ddf5bb440e96587c90fba88a25ae87062",
+      "expectedHashMatches": true,
+      "bytes": 170773,
+      "publication": "omitted",
+      "reason": "Raw/native context, broad discovery, completion dump, or bulk source manifest is excluded. No protected payload is decoded."
+    },
+    {
+      "originalLocator": "work/local_compiler_cases/projects/package-support/deliverables/helper-identity.json",
+      "sourceSha256": "53508254370636559016abc494e60cf28bd89a6458cdda0ae5c20c7a0669de29",
+      "expectedSha256": "53508254370636559016abc494e60cf28bd89a6458cdda0ae5c20c7a0669de29",
+      "expectedHashMatches": true,
+      "bytes": 3036,
+      "publication": "omitted",
+      "reason": "Only a narrow inspected projection may be included. Private original remains unchanged."
+    },
+    {
+      "originalLocator": "work/local_compiler_cases/projects/package-support/deliverables/readme-navigation.json",
+      "sourceSha256": "5fbab9f014d31630fb382da6874520e8a064f0705ed599679352903fe0f4af86",
+      "expectedSha256": "5fbab9f014d31630fb382da6874520e8a064f0705ed599679352903fe0f4af86",
+      "expectedHashMatches": true,
+      "bytes": 51614,
+      "publication": "omitted",
+      "reason": "Raw/native context, broad discovery, completion dump, or bulk source manifest is excluded. No protected payload is decoded."
+    },
+    {
+      "originalLocator": "work/local_compiler_cases/projects/package-support/deliverables/ignore-checks.json",
+      "sourceSha256": "946d7dcc97815ab8e88ada44ab368f12094aaee11121141221475a67830e21e4",
+      "expectedSha256": "946d7dcc97815ab8e88ada44ab368f12094aaee11121141221475a67830e21e4",
+      "expectedHashMatches": true,
+      "bytes": 7410,
+      "publication": "projected-fields",
+      "reason": "Only a narrow inspected projection may be included. Private original remains unchanged.",
+      "projectedPath": "docs/releases/remediation-013/local/package-support-contracts/review-a-16/proof/01-ignore-checks.json.excerpt.json",
+      "projectedSha256": "b5a6a9922f02ca22572d222620b7e0dbdd06d7838db89b5fcd0a4796e8b96511"
+    },
+    {
+      "originalLocator": "work/local_compiler_cases/projects/package-support/deliverables/compiler-checks.json",
+      "sourceSha256": "7215bdd92a0d9d3c10a8f6efd39d17144f18172dbd48f129c8480754e64324d8",
+      "expectedSha256": "7215bdd92a0d9d3c10a8f6efd39d17144f18172dbd48f129c8480754e64324d8",
+      "expectedHashMatches": true,
+      "bytes": 1330,
+      "publication": "projected-fields",
+      "reason": "Only a narrow inspected projection may be included. Private original remains unchanged.",
+      "projectedPath": "docs/releases/remediation-013/local/package-support-contracts/review-a-16/proof/02-compiler-checks.json.excerpt.json",
+      "projectedSha256": "8b074b7be1c9bb36b1abf04c574f26cffbee4e8e2ecf3ffd858bc99ed85234b0"
+    },
+    {
+      "originalLocator": "work/local_compiler_cases/projects/package-support/deliverables/logo-render.md",
+      "sourceSha256": "ac09817384856c4dcfa4720c754331073b1f3655592180390dd4257e87bd04ac",
+      "expectedSha256": "ac09817384856c4dcfa4720c754331073b1f3655592180390dd4257e87bd04ac",
+      "expectedHashMatches": true,
+      "bytes": 890,
+      "publication": "omitted",
+      "reason": "Only a narrow inspected projection may be included. Private original remains unchanged."
+    },
+    {
+      "originalLocator": "work/local_compiler_cases/projects/package-support/deliverables/final-check.json",
+      "sourceSha256": "36bc6b61284c04dec78b534dd57144d1aef8f6dcd4618a80875b1e2c3514c049",
+      "expectedSha256": "36bc6b61284c04dec78b534dd57144d1aef8f6dcd4618a80875b1e2c3514c049",
+      "expectedHashMatches": true,
+      "bytes": 548,
+      "publication": "projected-fields",
+      "reason": "Only a narrow inspected projection may be included. Private original remains unchanged.",
+      "projectedPath": "docs/releases/remediation-013/local/package-support-contracts/review-a-16/proof/03-final-check.json.excerpt.json",
+      "projectedSha256": "153e4a5750483a183a3781ae2740f94d995d2d6291d6c7c8d23b9e30a85631fc"
+    },
+    {
+      "originalLocator": "work/local_compiler_cases/projects/package-support/deliverables/review.md",
+      "sourceSha256": "8d7874ce02635f6f47438cdd3557b5d6bbb9e37acf899dbc17313e70621a6633",
+      "expectedSha256": "8d7874ce02635f6f47438cdd3557b5d6bbb9e37acf899dbc17313e70621a6633",
+      "expectedHashMatches": true,
+      "bytes": 2270,
+      "publication": "omitted",
+      "reason": "Only a narrow inspected projection may be included. Private original remains unchanged."
+    }
+  ],
+  "projectionLimits": [
+    "This file projects the existing independent assessment and does not regrade the case.",
+    "Private source artifacts and omitted native operations remain private. Source digests bind originals, not transformed bytes.",
+    "Historical 0.1.3 observations do not qualify current main or a modified candidate."
+  ],
+  "statusMapping": {
+    "originalProposedStatus": "pass",
+    "canonicalStatus": "pass",
+    "rule": "No status alias is applied."
+  }
+}

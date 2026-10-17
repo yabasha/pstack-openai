@@ -1,0 +1,32 @@
+{
+  "kind": "historical-proof-selection",
+  "source": {
+    "path": "<private-run>/web-checkpoint-3/units/repeated-rule/outputs/repeated-rule/grounding-readback.raw.json",
+    "sha256": "cd064512a6e6fb090d8dc44646ad31dff1b1b65b782efcdcf93383e922d3d184",
+    "bytes": 2697
+  },
+  "selection": [
+    {
+      "locator": {
+        "jsonPointer": "/request/cmd"
+      },
+      "value": "cat /mnt/data/pstack-remediation-20261017/attempts-18/outputs/repeated-rule/grounding.md /mnt/data/pstack-remediation-20261017/attempts-18/outputs/repeated-rule/identity.json\ngit -C /mnt/data/pstack-remediation-20261017/attempts-18/outputs/repeated-rule/working status --short"
+    },
+    {
+      "locator": {
+        "jsonPointer": "/result"
+      },
+      "value": {
+        "chunk_id": "34583f",
+        "wall_time_seconds": 0.000028317,
+        "exit_code": 0,
+        "original_token_count": 554,
+        "output": "# Release generator grounding\n\nThis newly authored inert fixture has one release generator and one regression caller. It supplies no production history. The input SHA is 63b1c3a33583a4e688ecaa34099383ccddf5169d.\n\nThe caller passes an object with version and sourceRevision to generateRelease in domain/release.mjs. The generator currently returns an object containing only version. No publishing operation exists in the inspected caller set. The regression test proves that the returned record loses caller identity.\n\nThe authored acceptance defines the record shape. Version is a nonempty string. sourceRevision is a string matching /^[0-9a-f]{40}$/. The current JavaScript function has no type-checking build or CI configuration. A runtime boundary check can reject external malformed values before a record exists.\n\nConcrete implementation todo, pending required method coordination, is to validate both fields inside the canonical generateRelease entry point, throw TypeError before returning on invalid input, return both fields, expand release regression coverage, and wire that test into the default package test command. Replace repeated release-policy warnings only after the regression checks demonstrate enforcement. This is a recurring correction routed to a canonical validator and regression test, rather than a one-off brain note or a change to the general principle.\n\nThe strongest proposed feasible mechanism is the canonical generator with runtime parsing and a default test gate. Compile-time unrepresentability would require adding a typed build while still failing to reject untrusted runtime input. No existing CI or banned API mechanism was found. A standalone lint of source text would not establish returned-record behavior. Do not claim CI enforcement without CI integration.\n\nMethod status remains pending root capacity. This grounding is the case owner's direct source trace, not an independent how explainer or architect competition.\n{\n  \"native_identity\": \"/root/r18_repeated\",\n  \"task_name\": \"r18_repeated\",\n  \"observed_model_metadata\": \"unknown\",\n  \"phase\": \"identity_bootstrap\",\n  \"owned_output_directory\": \"/mnt/data/pstack-remediation-20261017/attempts-18/outputs/repeated-rule\"\n}\n"
+      }
+    }
+  ],
+  "limits": [
+    "Selections preserve the exact source value at each locator. Truncated strings carry explicit code-unit bounds.",
+    "A producer-captured return is not a recovered native parent envelope. Missing call IDs, original capture defects and unknown model observations remain missing."
+  ]
+}

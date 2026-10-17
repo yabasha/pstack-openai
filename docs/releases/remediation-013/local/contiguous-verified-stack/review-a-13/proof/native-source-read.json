@@ -1,0 +1,27 @@
+{
+  "schemaVersion": 1,
+  "kind": "native-command-event-excerpt",
+  "caseId": "contiguous-verified-stack",
+  "attemptId": "review-a-13",
+  "inputRevision": "4a7dde94ab2778837e4c932e53cc3484d2e74dfd",
+  "originalLocator": "work/helper_workflow_reruns/actors/contiguous-verified-stack/events.jsonl",
+  "sourceSha256": "afba4703ec74031a82998545baaee8ece42dd3372c93a727b6a01b00c79f1430",
+  "itemId": "item_8",
+  "startedLine": 14,
+  "completedLine": 15,
+  "originalEventType": "item.completed",
+  "observedOperationType": "command_execution",
+  "command": "/bin/zsh -lc 'B=<installed-frozen-package>\nfor f in references/workflow-ownership.md references/host-capabilities.md references/orchestration-contract.md references/model-roles.md references/agent-prompts/poteto-agent.md skills/poteto-mode/playbooks/shipping.md skills/poteto-mode/playbooks/babysit.md skills/poteto-mode/playbooks/opening-a-pr.md; do echo \"FILE $f\"; cat \"$B/$f\"; done'",
+  "aggregatedOutputPrefix": "FILE references/workflow-ownership.md\n# Workflow ownership\n\nAn explicit pstack invocation gives pstack ownership of that workflow. An explicit Superpowers invocation gives Superpowers ownership. Do not run both controllers over the same assignment or let one silently replace the other's plan, review, or integration decisions.\n\nFor an unqualified request, D1 retains the already active workflow. With no active workflow, use host defaults and do not activate either orchestration mode automatically. If both pstack and Superpowers are explicitly requested, clarify ownership before launching workers",
+  "originalAggregatedOutputCharacters": 50135,
+  "exitCode": 0,
+  "status": "completed",
+  "scope": "This is a source read in the independently reviewed case actor.",
+  "clock": "The public event has no timestamp. Line order is retained. No duration or clock interval is inferred.",
+  "transformation": "Exact event fields selected. Absolute task and installed-package paths are replaced with declared placeholders. Output is a prefix, not the complete source read. No other event or browser context is included. Only these literal or explicitly loop-listed registered source names are matched. This does not prove every registered source path was read.",
+  "sourceScopeMatchedByCommand": [
+    "skills/poteto-mode/playbooks/shipping.md",
+    "skills/poteto-mode/playbooks/babysit.md",
+    "skills/poteto-mode/playbooks/opening-a-pr.md"
+  ]
+}

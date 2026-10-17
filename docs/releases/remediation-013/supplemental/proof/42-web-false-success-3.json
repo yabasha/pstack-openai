@@ -1,0 +1,54 @@
+{
+  "kind": "historical-proof-selection",
+  "source": {
+    "path": "<private-run>/web-checkpoint-3/units/false-success/outputs/false-success/browser-exact-pid-cleanup.json",
+    "sha256": "2119b76ee087426906a4ad91778ef218f04d351116be73b22c7296d7f51b6ab5",
+    "bytes": 414
+  },
+  "selection": [
+    {
+      "locator": {
+        "jsonPointer": "/observedAt"
+      },
+      "value": "2026-10-17T07:48:49.424Z"
+    },
+    {
+      "locator": {
+        "jsonPointer": "/pids"
+      },
+      "value": [
+        40
+      ]
+    },
+    {
+      "locator": {
+        "jsonPointer": "/cleanup"
+      },
+      "value": [
+        {
+          "pid": 40,
+          "request": [
+            "kill",
+            "-0",
+            "40"
+          ],
+          "returned": {
+            "exitCode": 1,
+            "stdout": "",
+            "stderr": "kill: (40): No such process\n"
+          }
+        }
+      ]
+    },
+    {
+      "locator": {
+        "jsonPointer": "/noBroadKill"
+      },
+      "value": true
+    }
+  ],
+  "limits": [
+    "Selections preserve the exact source value at each locator. Truncated strings carry explicit code-unit bounds.",
+    "A producer-captured return is not a recovered native parent envelope. Missing call IDs, original capture defects and unknown model observations remain missing."
+  ]
+}

@@ -1,0 +1,216 @@
+{
+  "schemaVersion": 1,
+  "kind": "historical-independent-assessment-projection",
+  "caseId": "contiguous-verified-stack",
+  "attemptId": "review-b-14",
+  "startingMain": "4138e161c27cafffd2baaab6bf4ca53e86a57433",
+  "packageCommit": "51f209daf83cd97d64f89881d66533bb59dc57db",
+  "packageVersion": "0.1.3",
+  "inputRevision": "4a7dde94ab2778837e4c932e53cc3484d2e74dfd",
+  "originalProposedStatus": "pass",
+  "evidenceStatus": "pass",
+  "qualifiesCurrentMain": false,
+  "sourceReview": {
+    "originalLocator": "grades/grade_remediation_local_b/result.json",
+    "sourceSha256": "d837b0c7cdea4be245b4a86ca593038cbe8b1596662a82fe6554e9d96444abd6",
+    "jsonPointer": "/rows/13",
+    "reviewer": "/root/grade_remediation_local_b",
+    "requestedModel": "inherit-parent",
+    "actualModel": "unknown"
+  },
+  "findings": [
+    "Fresh actual non-author per-PR101/102 reviewers inspect exact parent/head source, stable patch IDs and genuine Bun-emitted app bundles through actual inherited PTY.",
+    "Both verdict build repeats and refreshed current bundles are byte-identical within each target. Bun and Node target formats are distinguished from runtime; all execution uses Bun.",
+    "Changed multiplier3 source returns21 for7 and cannot reuse the multiplier2 verdict. Tests/docs/lint current changes preserve actual payload bytes. Same-SHA controls do not justify filtering meaningful bytes.",
+    "The final PR101 independent verdict at07:23:50 precedes refreshed current builds at07:24:59, actual PTY at07:25:04 and local application at07:25:23. Early provisional evidence remains rejected.",
+    "Only101 then102 are applied in an owned local model and fetched back. Stable patch checks and literal behavior survive. The ceiling is102;103 remains the first intentional gap and104 cannot bypass it.",
+    "Original unchanged watcher actually runs through a labelled inert gh adapter with pins, finite budgets, schemaVersion1 events and current-frontier per-wake inspection. No READY/autoMergeRequest is treated as merged."
+  ],
+  "limits": [],
+  "chronology": [
+    "The original constant-payload attempt is invalid for build reuse and remains unchanged. Only the fresh linked follow-up supports genuine build predicates.",
+    "Post-final101 timing repairs freshness prospectively before the new local application. It does not repair the earlier provisional verdict or original model."
+  ],
+  "predicate": [
+    {
+      "index": 1,
+      "text": "Record exact verdict head SHA, base SHA, stable patch-id, independent non-author verifier identity and parent-versus-head real-surface artifacts per PR.",
+      "status": "satisfied",
+      "assessment": "Detailed evidence and qualifying limits are in the exact satisfied/unmet/notApplicable predicates below."
+    },
+    {
+      "index": 2,
+      "text": "Ceiling is PR 102; 104 cannot bypass 103. PASS+NOTES passes; CI and bot approvals do not.",
+      "status": "satisfied",
+      "assessment": "Detailed evidence and qualifying limits are in the exact satisfied/unmet/notApplicable predicates below."
+    },
+    {
+      "index": 3,
+      "text": "Changed substantive patch requires re-verification. Unchanged patch retains code verdict but refreshes CI and mergeability at current head.",
+      "status": "satisfied",
+      "assessment": "Detailed evidence and qualifying limits are in the exact satisfied/unmet/notApplicable predicates below."
+    },
+    {
+      "index": 4,
+      "text": "For tests/docs/lint-only differences build each lane twice at verdict SHA and once at current head; classify each noise kind with files, refresh checks and review; dev-server lanes without build output rerun.",
+      "status": "satisfied",
+      "assessment": "Detailed evidence and qualifying limits are in the exact satisfied/unmet/notApplicable predicates below."
+    },
+    {
+      "index": 5,
+      "text": "Prepare only bottom against exact fetched trunk, use built-in retarget tool if exposed, recheck after push, then squash or arm only explicitly authorized bottom and await confirmed merge.",
+      "status": "satisfied",
+      "assessment": "Detailed evidence and qualifying limits are in the exact satisfied/unmet/notApplicable predicates below."
+    },
+    {
+      "index": 6,
+      "text": "Read active-forge state after every wake; READY and autoMergeRequest never prove merge. Preserve pending BLOCKED, closed-unmerged and failed/cancelled required checks or UNSTABLE/DIRTY with no auto-merge pending distinctions.",
+      "status": "satisfied",
+      "assessment": "Detailed evidence and qualifying limits are in the exact satisfied/unmet/notApplicable predicates below."
+    },
+    {
+      "index": 7,
+      "text": "After merge fetch trunk, confirm merged SHA present, recompute base/head/checks/patch-id and ceiling, never assume automatic retarget.",
+      "status": "satisfied",
+      "assessment": "Detailed evidence and qualifying limits are in the exact satisfied/unmet/notApplicable predicates below."
+    },
+    {
+      "index": 8,
+      "text": "Use actual watcher pins, finite budgets, schemaVersion 1 events and separate setup gate; stop safely on missing capability, user stop or exhaustion.",
+      "status": "satisfied",
+      "assessment": "Detailed evidence and qualifying limits are in the exact satisfied/unmet/notApplicable predicates below."
+    }
+  ],
+  "sourceArtifactBindings": [
+    {
+      "originalLocator": "work/repair_real_builds/result.json",
+      "sourceSha256": "fd9eb0743f014addcac97354ce13f89c6c445209d50c97c15ff77c6d282bb4d0",
+      "expectedSha256": "fd9eb0743f014addcac97354ce13f89c6c445209d50c97c15ff77c6d282bb4d0",
+      "expectedHashMatches": true,
+      "bytes": 6212,
+      "publication": "projected-fields",
+      "reason": "Only a narrow inspected projection may be included. Private original remains unchanged.",
+      "projectedPath": "docs/releases/remediation-013/local/contiguous-verified-stack/review-b-14/proof/01-result.json.excerpt.json",
+      "projectedSha256": "7097fab68e65bd9c15f0be81e07ec84b7ab0693534443a9315d3b57fd7fbbc17"
+    },
+    {
+      "originalLocator": "work/repair_real_builds/REPORT.md",
+      "sourceSha256": "cf483afd819908cd4b05843a90bf80a6befea83de3265efec502a5b7892dd362",
+      "expectedSha256": "cf483afd819908cd4b05843a90bf80a6befea83de3265efec502a5b7892dd362",
+      "expectedHashMatches": true,
+      "bytes": 3213,
+      "publication": "omitted",
+      "reason": "Only a narrow inspected projection may be included. Private original remains unchanged."
+    },
+    {
+      "originalLocator": "work/repair_real_builds/pr101/result.json",
+      "sourceSha256": "1c623f06349abdf6f7f5c7854399320a9f70489f549a6d9cf6b95502265d8a39",
+      "expectedSha256": "1c623f06349abdf6f7f5c7854399320a9f70489f549a6d9cf6b95502265d8a39",
+      "expectedHashMatches": true,
+      "bytes": 10948,
+      "publication": "projected-fields",
+      "reason": "Only a narrow inspected projection may be included. Private original remains unchanged.",
+      "projectedPath": "docs/releases/remediation-013/local/contiguous-verified-stack/review-b-14/proof/02-result.json.excerpt.json",
+      "projectedSha256": "2f3c31d1c9c65e573892f1c8b53a8b44f8b1040c7046d3e14d7b0a0f2622ade0"
+    },
+    {
+      "originalLocator": "work/repair_real_builds/pr102/result.json",
+      "sourceSha256": "c24db2166cccb01e40eda90eefb4412d88aae5b96aadb3c994bbec78c93f7cb2",
+      "expectedSha256": "c24db2166cccb01e40eda90eefb4412d88aae5b96aadb3c994bbec78c93f7cb2",
+      "expectedHashMatches": true,
+      "bytes": 2754,
+      "publication": "projected-fields",
+      "reason": "Only a narrow inspected projection may be included. Private original remains unchanged.",
+      "projectedPath": "docs/releases/remediation-013/local/contiguous-verified-stack/review-b-14/proof/03-result.json.excerpt.json",
+      "projectedSha256": "5ec79fcbb72a719910f8a3ee39c724c367817ebf14ac282c2823d853f6ed4769"
+    },
+    {
+      "originalLocator": "work/repair_real_builds/post-final101/verified.json",
+      "sourceSha256": "5fa24d4b1713c127c0f8d36deeb6375e1236cafaae131727444d57ce6fddeff4",
+      "expectedSha256": "5fa24d4b1713c127c0f8d36deeb6375e1236cafaae131727444d57ce6fddeff4",
+      "expectedHashMatches": true,
+      "bytes": 735,
+      "publication": "omitted",
+      "reason": "No short selected result fields remain. The original stays private with its digest."
+    },
+    {
+      "originalLocator": "work/repair_real_builds/post-final101/actual-pty-tool.json",
+      "sourceSha256": "5603c17708bcae39fb6d31941e59b2c37cd6e090b5572b7e275796e7be17a088",
+      "expectedSha256": "5603c17708bcae39fb6d31941e59b2c37cd6e090b5572b7e275796e7be17a088",
+      "expectedHashMatches": true,
+      "bytes": 940,
+      "publication": "projected-fields",
+      "reason": "Only a narrow inspected projection may be included. Private original remains unchanged.",
+      "projectedPath": "docs/releases/remediation-013/local/contiguous-verified-stack/review-b-14/proof/05-actual-pty-tool.json.excerpt.json",
+      "projectedSha256": "605257b1221e8bc6968a8e6b9ac9f05121351a6e073a8933449eb0447676aca9"
+    },
+    {
+      "originalLocator": "work/repair_real_builds/model101-commands.json",
+      "sourceSha256": "b3a05d6ad2e8a8ee4cf3c97ea58de715983140b9bac94433ac5dbffd5e4f0c8c",
+      "expectedSha256": "b3a05d6ad2e8a8ee4cf3c97ea58de715983140b9bac94433ac5dbffd5e4f0c8c",
+      "expectedHashMatches": true,
+      "bytes": 3821,
+      "publication": "omitted",
+      "reason": "Raw/native context, broad discovery, completion dump, or bulk source manifest is excluded. No protected payload is decoded."
+    },
+    {
+      "originalLocator": "work/repair_real_builds/model102-commands.json",
+      "sourceSha256": "0d996f26b58c38a563a18e3705f654216ad0b4985a895ccc2dbdaf39bd2a5d37",
+      "expectedSha256": "0d996f26b58c38a563a18e3705f654216ad0b4985a895ccc2dbdaf39bd2a5d37",
+      "expectedHashMatches": true,
+      "bytes": 2840,
+      "publication": "omitted",
+      "reason": "Raw/native context, broad discovery, completion dump, or bulk source manifest is excluded. No protected payload is decoded."
+    },
+    {
+      "originalLocator": "work/repair_real_builds/model102.json",
+      "sourceSha256": "e65b54b65a1643bb1f70321826a0e111ed596ce8a41cc5116c2bbbc038548cea",
+      "expectedSha256": "e65b54b65a1643bb1f70321826a0e111ed596ce8a41cc5116c2bbbc038548cea",
+      "expectedHashMatches": true,
+      "bytes": 790,
+      "publication": "omitted",
+      "reason": "Only a narrow inspected projection may be included. Private original remains unchanged."
+    },
+    {
+      "originalLocator": "work/repair_real_builds/patches.json",
+      "sourceSha256": "8d8b54263ca86e6529c4109331c9a2fcbd883a2446d7eab6dc51888969869744",
+      "expectedSha256": "8d8b54263ca86e6529c4109331c9a2fcbd883a2446d7eab6dc51888969869744",
+      "expectedHashMatches": true,
+      "bytes": 2815,
+      "publication": "projected-fields",
+      "reason": "Only a narrow inspected projection may be included. Private original remains unchanged.",
+      "projectedPath": "docs/releases/remediation-013/local/contiguous-verified-stack/review-b-14/proof/06-patches.json.excerpt.json",
+      "projectedSha256": "f1d7c69c3c213d2a1a4435ca4e45460aac83bbf00b78d9298fe6aebd67e28e3c"
+    },
+    {
+      "originalLocator": "work/helper_workflow_reruns/projects/release-stack/deliverables/watcher-final/observed-events.json",
+      "sourceSha256": "4728ee949ec253027b1bb77b0132aeb54ef781d098dae1baf2f9c82a5117f9e4",
+      "expectedSha256": "4728ee949ec253027b1bb77b0132aeb54ef781d098dae1baf2f9c82a5117f9e4",
+      "expectedHashMatches": true,
+      "bytes": 13180,
+      "publication": "omitted",
+      "reason": "Only a narrow inspected projection may be included. Private original remains unchanged."
+    },
+    {
+      "originalLocator": "work/helper_workflow_reruns/projects/release-stack/deliverables/watcher-final/result.json",
+      "sourceSha256": "2be29a1343c716bcf424e03bf29ee17430320fc9a3e6dfaa92696bb564dc8910",
+      "expectedSha256": "2be29a1343c716bcf424e03bf29ee17430320fc9a3e6dfaa92696bb564dc8910",
+      "expectedHashMatches": true,
+      "bytes": 2566,
+      "publication": "projected-fields",
+      "reason": "Only a narrow inspected projection may be included. Private original remains unchanged.",
+      "projectedPath": "docs/releases/remediation-013/local/contiguous-verified-stack/review-b-14/proof/07-result.json.excerpt.json",
+      "projectedSha256": "bac2e4b4815884847b543969f12cf9e96819e795afc0a69a00288fd615d95e46"
+    }
+  ],
+  "projectionLimits": [
+    "This file projects the existing independent assessment and does not regrade the case.",
+    "Private source artifacts and omitted native operations remain private. Source digests bind originals, not transformed bytes.",
+    "Historical 0.1.3 observations do not qualify current main or a modified candidate."
+  ],
+  "statusMapping": {
+    "originalProposedStatus": "pass",
+    "canonicalStatus": "pass",
+    "rule": "No status alias is applied."
+  }
+}

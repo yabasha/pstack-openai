@@ -1,0 +1,18 @@
+{
+  "kind": "selected-fixture-result-fields",
+  "caseId": "supported-authoring",
+  "attemptId": "review-b-11",
+  "originalLocator": "authoring/local/outputs/evidence/artifact-checks.json",
+  "sourceSha256": "37a636bab75c205f61e770dd21528c64e866f3fd335851131f9dd8a579076272",
+  "sourceBytes": 8742,
+  "transformation": "Named JSON fields selected by exact JSON Pointer. Task-owned absolute paths replaced with declared placeholders. Other fields omitted. These are result-artifact values, not synthesized tool execution evidence. Public selection is limited to eight short inspected fields. Longer output and unselected fields remain private.",
+  "fields": [
+    {
+      "pointer": "/limitations",
+      "value": [
+        "Simple inline Markdown link syntax only; no generic Markdown parser, anchor or URL validation.",
+        "Structural checks do not evaluate agent decisions, voice quality, trigger performance, or behavioral parity."
+      ]
+    }
+  ]
+}

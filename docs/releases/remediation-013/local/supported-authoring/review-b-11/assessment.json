@@ -1,0 +1,167 @@
+{
+  "schemaVersion": 1,
+  "kind": "historical-independent-assessment-projection",
+  "caseId": "supported-authoring",
+  "attemptId": "review-b-11",
+  "startingMain": "4138e161c27cafffd2baaab6bf4ca53e86a57433",
+  "packageCommit": "51f209daf83cd97d64f89881d66533bb59dc57db",
+  "packageVersion": "0.1.3",
+  "inputRevision": "ef92e5298ecae2709a9350cdf57d32e76c4d35a9",
+  "originalProposedStatus": "pass",
+  "evidenceStatus": "pass",
+  "qualifiesCurrentMain": false,
+  "sourceReview": {
+    "originalLocator": "grades/grade_remediation_local_b/result.json",
+    "sourceSha256": "d837b0c7cdea4be245b4a86ca593038cbe8b1596662a82fe6554e9d96444abd6",
+    "jsonPointer": "/rows/10",
+    "reviewer": "/root/grade_remediation_local_b",
+    "requestedModel": "inherit-parent",
+    "actualModel": "unknown"
+  },
+  "findings": [
+    "The actual skill-creator instructions and quick_validate.py are inspected before authoring/validation. Missing create-skill is explicitly distinguished.",
+    "The final skill preserves the direct seed voice and byte-identical checkpoint-format reference, separates saved claims/current Git facts, and blocks unsafe replay suggestions.",
+    "Actual approved PyYAML-backed validator rejects the original name and TODO description and accepts the final skill.",
+    "Fifteen literal structural validator probes and four link existence probes execute. Supplemental final checks cover empty-value/dangling-link validator limitations.",
+    "Subjective tests are skipped; trigger quality and host registration remain unknown. The fixture explicitly defers PR delivery and no external operation occurs."
+  ],
+  "limits": [],
+  "chronology": [
+    "Task HEAD ef92e5298ecae2709a9350cdf57d32e76c4d35a9 is verified. First task write is its checklist. Native author and later identity-inspector operations are observed."
+  ],
+  "predicate": [
+    {
+      "index": 1,
+      "text": "Inspect exposed capabilities and the available authoring workflow instructions and actual validator before use; identify the missing create-skill dependency.",
+      "status": "satisfied",
+      "assessment": "Detailed evidence and qualifying limits are in the exact satisfied/unmet/notApplicable predicates below."
+    },
+    {
+      "index": 2,
+      "text": "Preserve voice ownership, decision-changing prose, confusing-rule explanations, scope-matched tone, structural-source pointers, path delegation and proposals for recurring uncaptured workflows.",
+      "status": "satisfied",
+      "assessment": "Detailed evidence and qualifying limits are in the exact satisfied/unmet/notApplicable predicates below."
+    },
+    {
+      "index": 3,
+      "text": "Check name and description frontmatter, referenced files and cross-skill links; run structural test cases with fixtures and skip subjective tests.",
+      "status": "satisfied",
+      "assessment": "Detailed evidence and qualifying limits are in the exact satisfied/unmet/notApplicable predicates below."
+    },
+    {
+      "index": 4,
+      "text": "Apply Opening a PR only when its dependency, capabilities and authorization permit; preserve the skill artifact when PR delivery is deferred.",
+      "status": "satisfied",
+      "assessment": "Detailed evidence and qualifying limits are in the exact satisfied/unmet/notApplicable predicates below."
+    },
+    {
+      "index": 5,
+      "text": "Reply with skill summary, key design decisions and validation notes; distinguish observed results from unknown trigger performance.",
+      "status": "satisfied",
+      "assessment": "Detailed evidence and qualifying limits are in the exact satisfied/unmet/notApplicable predicates below."
+    }
+  ],
+  "sourceArtifactBindings": [
+    {
+      "originalLocator": "authoring/local/outputs/result.md",
+      "sourceSha256": "729ca26f187de7691faeb4c4557dad6b1fd808a1ed6f1c5e70c2f1f093eef888",
+      "expectedSha256": "729ca26f187de7691faeb4c4557dad6b1fd808a1ed6f1c5e70c2f1f093eef888",
+      "expectedHashMatches": true,
+      "bytes": 9011,
+      "publication": "omitted",
+      "reason": "Only a narrow inspected projection may be included. Private original remains unchanged."
+    },
+    {
+      "originalLocator": "authoring/local/outputs/evidence/final-validation.json",
+      "sourceSha256": "2fbf38ac7373718edb300a5e33cb2212e09335cbc72dd6f093337635cac1a681",
+      "expectedSha256": "2fbf38ac7373718edb300a5e33cb2212e09335cbc72dd6f093337635cac1a681",
+      "expectedHashMatches": true,
+      "bytes": 452,
+      "publication": "projected-fields",
+      "reason": "Only a narrow inspected projection may be included. Private original remains unchanged.",
+      "projectedPath": "docs/releases/remediation-013/local/supported-authoring/review-b-11/proof/01-final-validation.json.excerpt.json",
+      "projectedSha256": "117048b1834527b8030c7f5ce6c4ed9677f1f6dbe5f83abfde1ec54835dd38d6"
+    },
+    {
+      "originalLocator": "authoring/local/outputs/evidence/validator-probes.json",
+      "sourceSha256": "0a2ef8e0f894d50ef79af4e5c01e6ff7bf14a4c590735c35b0c075a3fccd73f0",
+      "expectedSha256": "0a2ef8e0f894d50ef79af4e5c01e6ff7bf14a4c590735c35b0c075a3fccd73f0",
+      "expectedHashMatches": true,
+      "bytes": 9993,
+      "publication": "projected-fields",
+      "reason": "Only a narrow inspected projection may be included. Private original remains unchanged.",
+      "projectedPath": "docs/releases/remediation-013/local/supported-authoring/review-b-11/proof/02-validator-probes.json.excerpt.json",
+      "projectedSha256": "5c20d7c89bdaf523755bc137e34ab267eb8f9433e90dd4a0e501dfa2bbbc05d1"
+    },
+    {
+      "originalLocator": "authoring/local/outputs/evidence/link-probes.json",
+      "sourceSha256": "c1c6a485162c9eacee1d70f430fd131de6ef449bc77c9073c15630d69a45cf86",
+      "expectedSha256": "c1c6a485162c9eacee1d70f430fd131de6ef449bc77c9073c15630d69a45cf86",
+      "expectedHashMatches": true,
+      "bytes": 2074,
+      "publication": "projected-fields",
+      "reason": "Only a narrow inspected projection may be included. Private original remains unchanged.",
+      "projectedPath": "docs/releases/remediation-013/local/supported-authoring/review-b-11/proof/03-link-probes.json.excerpt.json",
+      "projectedSha256": "3cdd8334144194355cc675515b2fa0d583986146d421fb04a374bac8dfcabd65"
+    },
+    {
+      "originalLocator": "authoring/local/outputs/evidence/artifact-checks.json",
+      "sourceSha256": "37a636bab75c205f61e770dd21528c64e866f3fd335851131f9dd8a579076272",
+      "expectedSha256": "37a636bab75c205f61e770dd21528c64e866f3fd335851131f9dd8a579076272",
+      "expectedHashMatches": true,
+      "bytes": 8742,
+      "publication": "projected-fields",
+      "reason": "Only a narrow inspected projection may be included. Private original remains unchanged.",
+      "projectedPath": "docs/releases/remediation-013/local/supported-authoring/review-b-11/proof/04-artifact-checks.json.excerpt.json",
+      "projectedSha256": "33071439fee9f796493541eb60a06c3d5a647aabc10601d72e2c0faa95d86f1f"
+    },
+    {
+      "originalLocator": "authoring/local/outputs/skill/SKILL.md",
+      "sourceSha256": "e6f08811a9069200ffddeb1158c6c9103f96c19ee4272a978257478f1d43a0ca",
+      "expectedSha256": "e6f08811a9069200ffddeb1158c6c9103f96c19ee4272a978257478f1d43a0ca",
+      "expectedHashMatches": true,
+      "bytes": 1568,
+      "publication": "omitted",
+      "reason": "Only a narrow inspected projection may be included. Private original remains unchanged."
+    },
+    {
+      "originalLocator": "authoring/local/outputs/assignment-events.jsonl",
+      "sourceSha256": "791e8ca8a1a1bd09b2b969cf819b8e79801f478e520a28d17eb209b189ada556",
+      "expectedSha256": "791e8ca8a1a1bd09b2b969cf819b8e79801f478e520a28d17eb209b189ada556",
+      "expectedHashMatches": true,
+      "bytes": 1663,
+      "publication": "omitted",
+      "reason": "Only a narrow inspected projection may be included. Private original remains unchanged."
+    },
+    {
+      "originalLocator": "authoring/local/outputs/receipt/receipt.json",
+      "sourceSha256": "b0dbe6d96dd521006f2c054790a8d347b4067cf87df4f55865a7d3798dad5fb0",
+      "expectedSha256": "b0dbe6d96dd521006f2c054790a8d347b4067cf87df4f55865a7d3798dad5fb0",
+      "expectedHashMatches": true,
+      "bytes": 11539,
+      "publication": "projected-fields",
+      "reason": "Only a narrow inspected projection may be included. Private original remains unchanged.",
+      "projectedPath": "docs/releases/remediation-013/local/supported-authoring/review-b-11/proof/05-receipt.json.excerpt.json",
+      "projectedSha256": "9ca01abae32015199a3940c483a30f997876a7f053e3ca5b3c8b590171fcff19"
+    },
+    {
+      "originalLocator": "native-captures-sanitized-v2/supported-authoring/index.json",
+      "sourceSha256": "5a3dd7edc4f8ea9d0b835c6428b91557c83bf0039fecb15da4099f899ce3da69",
+      "expectedSha256": "5a3dd7edc4f8ea9d0b835c6428b91557c83bf0039fecb15da4099f899ce3da69",
+      "expectedHashMatches": true,
+      "bytes": 2746,
+      "publication": "omitted",
+      "reason": "Raw/native context, broad discovery, completion dump, or bulk source manifest is excluded. No protected payload is decoded."
+    }
+  ],
+  "projectionLimits": [
+    "This file projects the existing independent assessment and does not regrade the case.",
+    "Private source artifacts and omitted native operations remain private. Source digests bind originals, not transformed bytes.",
+    "Historical 0.1.3 observations do not qualify current main or a modified candidate."
+  ],
+  "statusMapping": {
+    "originalProposedStatus": "pass",
+    "canonicalStatus": "pass",
+    "rule": "No status alias is applied."
+  }
+}

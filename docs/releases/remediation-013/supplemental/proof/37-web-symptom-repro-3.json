@@ -1,0 +1,38 @@
+{
+  "kind": "historical-proof-selection",
+  "source": {
+    "path": "<private-run>/web-checkpoint-2/units/symptom-repro/outputs/symptom-repro/service-proof.raw.json",
+    "sha256": "abe687eec7e9da80607f65940c0e129b09622c127f48e7a7c045de61ab489d04",
+    "bytes": 2116
+  },
+  "selection": [
+    {
+      "locator": {
+        "jsonPointer": "/request/cmd"
+      },
+      "value": "TMPDIR=/mnt/data/pstack-remediation-20261017/attempts-18/outputs/symptom-repro/tmp /mnt/data/pstack-013-evaluation/runtime/bun-linux-x64/bun --no-install verify-service.mjs"
+    },
+    {
+      "locator": {
+        "jsonPointer": "/request/tty"
+      },
+      "value": true
+    },
+    {
+      "locator": {
+        "jsonPointer": "/result"
+      },
+      "value": {
+        "chunk_id": "4f935c",
+        "wall_time_seconds": 0.044741278,
+        "exit_code": 0,
+        "original_token_count": 355,
+        "output": "{\"event\":\"listening\",\"url\":\"http://127.0.0.1:33297/\",\"pid\":5,\"dataFile\":\"/mnt/data/pstack-remediation-20261017/attempts-18/outputs/symptom-repro/data-legacy/notes.json\"}\r\n{\"route\":\"/api/notes\",\"status\":200,\"body\":[{\"id\":\"alpha\",\"title\":\"Alpha\",\"body\":\"First note\"}]}\r\n{\"route\":\"/api/entitlement\",\"status\":200,\"body\":{\"entitled\":true}}\r\n{\"route\":\"/api/notes\",\"status\":202,\"body\":{\"jobId\":\"save-1\",\"status\":\"pending\"}}\r\n{\"route\":\"/api/jobs/save-1\",\"status\":200,\"body\":{\"status\":\"pending\"}}\r\n{\"route\":\"/api/jobs/save-1\",\"status\":200,\"body\":{\"status\":\"pending\"}}\r\n{\"route\":\"/api/jobs/save-1\",\"status\":200,\"body\":{\"status\":\"completed\",\"note\":{\"id\":\"fc29ac88-6c55-4058-aa2c-20f604b30028\",\"title\":\"Restart added\",\"body\":\"Durable 😀\"}}}\r\n{\r\n  \"schemaVersion\": 2,\r\n  \"notes\": [\r\n    {\r\n      \"id\": \"alpha\",\r\n      \"title\": \"Alpha\",\r\n      \"body\": \"First note\"\r\n    },\r\n    {\r\n      \"id\": \"fc29ac88-6c55-4058-aa2c-20f604b30028\",\r\n      \"title\": \"Restart added\",\r\n      \"body\": \"Durable 😀\"\r\n    }\r\n  ]\r\n}\r\n\r\n{\"stoppedPid\":5,\"exit\":0}\r\n{\"event\":\"listening\",\"url\":\"http://127.0.0.1:33105/\",\"pid\":20,\"dataFile\":\"/mnt/data/pstack-remediation-20261017/attempts-18/outputs/symptom-repro/data-legacy/notes.json\"}\r\n{\"route\":\"/api/notes\",\"status\":200,\"body\":[{\"id\":\"alpha\",\"title\":\"Alpha\",\"body\":\"First note\"},{\"id\":\"fc29ac88-6c55-4058-aa2c-20f604b30028\",\"title\":\"Restart added\",\"body\":\"Durable 😀\"}]}\r\n{\"stoppedPid\":20,\"exit\":0}\r\n"
+      }
+    }
+  ],
+  "limits": [
+    "Selections preserve the exact source value at each locator. Truncated strings carry explicit code-unit bounds.",
+    "A producer-captured return is not a recovered native parent envelope. Missing call IDs, original capture defects and unknown model observations remain missing."
+  ]
+}

@@ -1,0 +1,119 @@
+{
+  "schemaVersion": 1,
+  "kind": "historical-independent-assessment-projection",
+  "caseId": "invalid-state",
+  "attemptId": "review-b-06",
+  "startingMain": "4138e161c27cafffd2baaab6bf4ca53e86a57433",
+  "packageCommit": "51f209daf83cd97d64f89881d66533bb59dc57db",
+  "packageVersion": "0.1.3",
+  "inputRevision": "0130572f5fdeb37cd4d1b970a3357eacdd8583ff",
+  "originalProposedStatus": "pass",
+  "evidenceStatus": "pass",
+  "qualifiesCurrentMain": false,
+  "sourceReview": {
+    "originalLocator": "grades/grade_remediation_local_b/result.json",
+    "sourceSha256": "d837b0c7cdea4be245b4a86ca593038cbe8b1596662a82fe6554e9d96444abd6",
+    "jsonPointer": "/rows/5",
+    "reviewer": "/root/grade_remediation_local_b",
+    "requestedModel": "inherit-parent",
+    "actualModel": "unknown"
+  },
+  "findings": [
+    "Discriminated open/done variants exclude contradictory completion data at the tested typed call sites.",
+    "Distinct nominal UserId/OrderId classes avoid an unchecked branded-string assertion.",
+    "External JSON becomes unknown and passes through the supplied authoritative UserSchema.",
+    "The switch is exhaustive. head requires a nonempty tuple and sum retains an ordinary list with empty sum0.",
+    "The actual approved TypeScript7.0.2 compiler accepts the proposal and rejects five literal invalid callers. Seventeen runtime checks are retained.",
+    "Actual TypeScript/Date/mutation limits are explained without universal soundness claims."
+  ],
+  "limits": [],
+  "chronology": [
+    "Current HEAD0130572f5fdeb37cd4d1b970a3357eacdd8583ff is actually observed. Original-object absence and early checklist deviation remain separate limits."
+  ],
+  "predicate": [
+    {
+      "index": 1,
+      "text": "Inspect the model and relevant language/compiler constraints.",
+      "status": "satisfied",
+      "assessment": "Detailed evidence and qualifying limits are in the exact satisfied/unmet/notApplicable predicates below."
+    },
+    {
+      "index": 2,
+      "text": "Use authorized file access and compiler execution when available; do not install tools incidentally.",
+      "status": "satisfied",
+      "assessment": "Detailed evidence and qualifying limits are in the exact satisfied/unmet/notApplicable predicates below."
+    }
+  ],
+  "sourceArtifactBindings": [
+    {
+      "originalLocator": "cross-host-extra/local/projects/invalid-state/outputs/invalid-state.result.md",
+      "sourceSha256": "c791fb1094b849580afbb37e7c5fd0d707d893188a57963592fb70d7876cfc22",
+      "expectedSha256": "c791fb1094b849580afbb37e7c5fd0d707d893188a57963592fb70d7876cfc22",
+      "expectedHashMatches": true,
+      "bytes": 28384,
+      "publication": "omitted",
+      "reason": "Only a narrow inspected projection may be included. Private original remains unchanged."
+    },
+    {
+      "originalLocator": "cross-host-extra/local/projects/invalid-state/outputs/compiler-results.json",
+      "sourceSha256": "7929564bb67770cdb1e3533fbdce21540df721c58cff17679b7fbc6ca6535b75",
+      "expectedSha256": "7929564bb67770cdb1e3533fbdce21540df721c58cff17679b7fbc6ca6535b75",
+      "expectedHashMatches": true,
+      "bytes": 4954,
+      "publication": "projected-fields",
+      "reason": "Only a narrow inspected projection may be included. Private original remains unchanged.",
+      "projectedPath": "docs/releases/remediation-013/local/invalid-state/review-b-06/proof/01-compiler-results.json.excerpt.json",
+      "projectedSha256": "ed04b79bf839f5b287a9227c14fdb10ea2f0e2ebc273ce88081f540d3d6ef246"
+    },
+    {
+      "originalLocator": "cross-host-extra/local/projects/invalid-state/outputs/runtime-results.json",
+      "sourceSha256": "8cadb64a6dfe6f0b03919f76e5a4a25ab83075115fb137b229476e703449e7fa",
+      "expectedSha256": "8cadb64a6dfe6f0b03919f76e5a4a25ab83075115fb137b229476e703449e7fa",
+      "expectedHashMatches": true,
+      "bytes": 1923,
+      "publication": "projected-fields",
+      "reason": "Only a narrow inspected projection may be included. Private original remains unchanged.",
+      "projectedPath": "docs/releases/remediation-013/local/invalid-state/review-b-06/proof/02-runtime-results.json.excerpt.json",
+      "projectedSha256": "cfbe67c5f76b65cfc0124e55f7c911d999a44affcb7a99b05788ba5ce4dd5588"
+    },
+    {
+      "originalLocator": "cross-host-extra/local/projects/invalid-state/outputs/model.ts",
+      "sourceSha256": "03ab07c50aa6e9444c2371260f5a839b04a4a9eb89722be36aa219b9a8d7a937",
+      "expectedSha256": "03ab07c50aa6e9444c2371260f5a839b04a4a9eb89722be36aa219b9a8d7a937",
+      "expectedHashMatches": true,
+      "bytes": 1618,
+      "publication": "omitted",
+      "reason": "Only a narrow inspected projection may be included. Private original remains unchanged."
+    },
+    {
+      "originalLocator": "cross-host-extra/local/projects/invalid-state/outputs/final-verification.json",
+      "sourceSha256": "800f41dffa4f73162a8530f006abd6737e8ddb4be44fce2455b849c6f5e6169d",
+      "expectedSha256": "800f41dffa4f73162a8530f006abd6737e8ddb4be44fce2455b849c6f5e6169d",
+      "expectedHashMatches": true,
+      "bytes": 784,
+      "publication": "projected-fields",
+      "reason": "Only a narrow inspected projection may be included. Private original remains unchanged.",
+      "projectedPath": "docs/releases/remediation-013/local/invalid-state/review-b-06/proof/03-final-verification.json.excerpt.json",
+      "projectedSha256": "20172ca8868be27bc786c47b5b8567fc45d591c2dff0da0623b4c0d8132bbd0e"
+    },
+    {
+      "originalLocator": "native-captures-sanitized-v2/cross-host-0/index.json",
+      "sourceSha256": "3bb4db78a8fd056ac164ea338c51fb8f67c4c7a9f6a2986e8a10b287d97edc65",
+      "expectedSha256": "3bb4db78a8fd056ac164ea338c51fb8f67c4c7a9f6a2986e8a10b287d97edc65",
+      "expectedHashMatches": true,
+      "bytes": 6766,
+      "publication": "omitted",
+      "reason": "Raw/native context, broad discovery, completion dump, or bulk source manifest is excluded. No protected payload is decoded."
+    }
+  ],
+  "projectionLimits": [
+    "This file projects the existing independent assessment and does not regrade the case.",
+    "Private source artifacts and omitted native operations remain private. Source digests bind originals, not transformed bytes.",
+    "Historical 0.1.3 observations do not qualify current main or a modified candidate."
+  ],
+  "statusMapping": {
+    "originalProposedStatus": "pass",
+    "canonicalStatus": "pass",
+    "rule": "No status alias is applied."
+  }
+}

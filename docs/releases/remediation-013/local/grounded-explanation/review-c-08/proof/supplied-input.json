@@ -1,0 +1,10 @@
+{
+  "kind": "supplied-fixture-input-excerpt",
+  "caseId": "grounded-explanation",
+  "inputRevision": "fa0bdcdb3d4dd4fbe56b63229d52d4bfc4aa6fad",
+  "originalLocator": "remaining-local/cases/grounded-explanation/task-contract.json",
+  "sourceSha256": "96d368f28afb406357ecdd0f3c74dc4df26b1e617f2dbd731ab1daab70e82991",
+  "pointer": "/case/prompt",
+  "suppliedPrompt": "Teach me the supplied subsystem so I understand what it is, how it works and why it was built this way. Use its real names and inspected files. Begin with the smallest complete explanation and deepen it only as the conversation calls for it.",
+  "transformation": "Only the exact supplied case prompt is projected. Fixture data and arbitrary surrounding contract fields are omitted. This is supplied input, not a native successful tool operation."
+}

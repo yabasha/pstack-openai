@@ -1,0 +1,15 @@
+{
+  "kind": "selected-fixture-result-fields",
+  "caseId": "stale-feature-map",
+  "attemptId": "review-a-17",
+  "originalLocator": "work/notes_workflow_reruns/projects/stale-feature-map/outputs/post-cleanup-result.json",
+  "sourceSha256": "d0a7b18635a5f971974d9603a211b3bd899b85a71c8be55666f242ff22f86941",
+  "sourceBytes": 562,
+  "transformation": "Named JSON fields selected by exact JSON Pointer. Task-owned absolute paths replaced with declared placeholders. Other fields omitted. These are result-artifact values, not synthesized tool execution evidence. Public selection is limited to eight short inspected fields. Longer output and unselected fields remain private.",
+  "fields": [
+    {
+      "pointer": "/status",
+      "value": "pass"
+    }
+  ]
+}

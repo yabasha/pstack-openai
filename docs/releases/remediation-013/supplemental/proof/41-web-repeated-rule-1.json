@@ -1,0 +1,32 @@
+{
+  "kind": "historical-proof-selection",
+  "source": {
+    "path": "<private-run>/web-checkpoint-3/units/repeated-rule/outputs/repeated-rule/final-state.raw.json",
+    "sha256": "99019ce0fe704cfd7c1fc3bd7aa3ddf5957fb747fe79fb2c7df8e0e42b81c92f",
+    "bytes": 671
+  },
+  "selection": [
+    {
+      "locator": {
+        "jsonPointer": "/request/cmd"
+      },
+      "value": "git -C /mnt/data/pstack-remediation-20261017/attempts-18/outputs/repeated-rule/working rev-parse HEAD\ngit -C /mnt/data/pstack-remediation-20261017/attempts-18/outputs/repeated-rule/working status --porcelain\ngit -C /mnt/data/pstack-remediation-20261017/attempts-18/outputs/repeated-rule/task-input rev-parse HEAD\ngit -C /mnt/data/pstack-remediation-20261017/attempts-18/outputs/repeated-rule/task-input status --porcelain"
+    },
+    {
+      "locator": {
+        "jsonPointer": "/result"
+      },
+      "value": {
+        "chunk_id": "c72b17",
+        "wall_time_seconds": 0.000040993,
+        "exit_code": 0,
+        "original_token_count": 21,
+        "output": "63b1c3a33583a4e688ecaa34099383ccddf5169d\n63b1c3a33583a4e688ecaa34099383ccddf5169d\n"
+      }
+    }
+  ],
+  "limits": [
+    "Selections preserve the exact source value at each locator. Truncated strings carry explicit code-unit bounds.",
+    "A producer-captured return is not a recovered native parent envelope. Missing call IDs, original capture defects and unknown model observations remain missing."
+  ]
+}

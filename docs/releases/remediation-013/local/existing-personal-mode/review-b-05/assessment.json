@@ -1,0 +1,119 @@
+{
+  "schemaVersion": 1,
+  "kind": "historical-independent-assessment-projection",
+  "caseId": "existing-personal-mode",
+  "attemptId": "review-b-05",
+  "startingMain": "4138e161c27cafffd2baaab6bf4ca53e86a57433",
+  "packageCommit": "51f209daf83cd97d64f89881d66533bb59dc57db",
+  "packageVersion": "0.1.3",
+  "inputRevision": "7d7330bf7fe5a32cc5ef2a120a492217fa2ff4e1",
+  "originalProposedStatus": "blocked",
+  "evidenceStatus": "blocked",
+  "qualifiesCurrentMain": false,
+  "sourceReview": {
+    "originalLocator": "grades/grade_remediation_local_b/result.json",
+    "sourceSha256": "d837b0c7cdea4be245b4a86ca593038cbe8b1596662a82fe6554e9d96444abd6",
+    "jsonPointer": "/rows/4",
+    "reviewer": "/root/grade_remediation_local_b",
+    "requestedModel": "inherit-parent",
+    "actualModel": "unknown"
+  },
+  "findings": [
+    "The existing synthetic mode and its last-edit boundary are inspected.",
+    "Existing preferences remain unchanged.",
+    "The response explains the missing complete baseline disposition/per-host evidence prerequisite and makes no personal draft, edit, schedule or remote write."
+  ],
+  "limits": [
+    "Complete reviewed baseline dispositions and per-host observed support or explicit blocks were not supplied. Both expectedFull and expectedReduced require that prerequisite before drafting."
+  ],
+  "chronology": [
+    "Coordinator and case-owner early read/checklist deviations are retained."
+  ],
+  "predicate": [
+    {
+      "index": 1,
+      "text": "Read the existing mode and its last-edit boundary",
+      "status": "satisfied",
+      "assessment": "Detailed evidence and qualifying limits are in the exact satisfied/unmet/notApplicable predicates below."
+    },
+    {
+      "index": 2,
+      "text": "Baseline reviewed dispositions and per-host supported behavior evidence or explicit blocks precede personal-mode drafting or edits, separately from authorization",
+      "status": "unmet",
+      "assessment": "Detailed evidence and qualifying limits are in the exact satisfied/unmet/notApplicable predicates below."
+    },
+    {
+      "index": 3,
+      "text": "Workspace-scoped history and explicit user answers",
+      "status": "satisfied",
+      "assessment": "Detailed evidence and qualifying limits are in the exact satisfied/unmet/notApplicable predicates below."
+    },
+    {
+      "index": 4,
+      "text": "Observed authoring, question, history and worker capabilities; declared missing companions",
+      "status": "satisfied",
+      "assessment": "Detailed evidence and qualifying limits are in the exact satisfied/unmet/notApplicable predicates below."
+    }
+  ],
+  "sourceArtifactBindings": [
+    {
+      "originalLocator": "remaining-local/cases/existing-personal-mode/outputs/existing-personal-mode.result.md",
+      "sourceSha256": "d8f4037811dc8d5aeab30ab5bbb7038ffac16b058a6ea94a27005a3e3b8aa071",
+      "expectedSha256": "d8f4037811dc8d5aeab30ab5bbb7038ffac16b058a6ea94a27005a3e3b8aa071",
+      "expectedHashMatches": true,
+      "bytes": 9812,
+      "publication": "omitted",
+      "reason": "Only a narrow inspected projection may be included. Private original remains unchanged."
+    },
+    {
+      "originalLocator": "remaining-local/cases/existing-personal-mode/outputs/input-observation.json",
+      "sourceSha256": "63ceef6877abeef202f04f821c175a12e1567670845509d14dc0d57a34846a4b",
+      "expectedSha256": "63ceef6877abeef202f04f821c175a12e1567670845509d14dc0d57a34846a4b",
+      "expectedHashMatches": true,
+      "bytes": 19619,
+      "publication": "projected-fields",
+      "reason": "Only a narrow inspected projection may be included. Private original remains unchanged.",
+      "projectedPath": "docs/releases/remediation-013/local/existing-personal-mode/review-b-05/proof/01-input-observation.json.excerpt.json",
+      "projectedSha256": "8d980de8cbf20728c494b0cbda85180f869f4347c14e37295afe9037ec65e240"
+    },
+    {
+      "originalLocator": "remaining-local/cases/existing-personal-mode/outputs/completion.json",
+      "sourceSha256": "e7dc7455b386fa74f97191f9a2082a58e5ba16326247cd9d3a193f9da9fb495f",
+      "expectedSha256": "e7dc7455b386fa74f97191f9a2082a58e5ba16326247cd9d3a193f9da9fb495f",
+      "expectedHashMatches": true,
+      "bytes": 51617,
+      "publication": "omitted",
+      "reason": "Raw/native context, broad discovery, completion dump, or bulk source manifest is excluded. No protected payload is decoded."
+    },
+    {
+      "originalLocator": "remaining-local/cases/existing-personal-mode/outputs/coordinator-review.json",
+      "sourceSha256": "03e6662d93ef6bec10341f0bdf3e023cd4ddff2dff0009e05580b9cf4d44b287",
+      "expectedSha256": "03e6662d93ef6bec10341f0bdf3e023cd4ddff2dff0009e05580b9cf4d44b287",
+      "expectedHashMatches": true,
+      "bytes": 1583,
+      "publication": "projected-fields",
+      "reason": "Only a narrow inspected projection may be included. Private original remains unchanged.",
+      "projectedPath": "docs/releases/remediation-013/local/existing-personal-mode/review-b-05/proof/02-coordinator-review.json.excerpt.json",
+      "projectedSha256": "c122f002c0650ffd99ffa701d4a211e4454255baf6798072e49303a38682dc77"
+    },
+    {
+      "originalLocator": "native-captures-sanitized-v2/remaining-02/index.json",
+      "sourceSha256": "ed8f512b2ee492d54986d3f259fa216be0b13190b8d2ebf2bca4ca8a4324dfbc",
+      "expectedSha256": "ed8f512b2ee492d54986d3f259fa216be0b13190b8d2ebf2bca4ca8a4324dfbc",
+      "expectedHashMatches": true,
+      "bytes": 11523,
+      "publication": "omitted",
+      "reason": "Raw/native context, broad discovery, completion dump, or bulk source manifest is excluded. No protected payload is decoded."
+    }
+  ],
+  "projectionLimits": [
+    "This file projects the existing independent assessment and does not regrade the case.",
+    "Private source artifacts and omitted native operations remain private. Source digests bind originals, not transformed bytes.",
+    "Historical 0.1.3 observations do not qualify current main or a modified candidate."
+  ],
+  "statusMapping": {
+    "originalProposedStatus": "blocked",
+    "canonicalStatus": "blocked",
+    "rule": "No status alias is applied."
+  }
+}

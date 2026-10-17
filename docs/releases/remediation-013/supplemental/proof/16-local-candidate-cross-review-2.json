@@ -1,0 +1,23 @@
+{
+  "kind": "historical-proof-selection",
+  "source": {
+    "path": "<private-run>/remaining-local/cases/candidate-cross-review/outputs/synthesis/synthesis-note.md",
+    "sha256": "957325ab31e3f9a452a23877004a513918334942020778e82866657854f7932a",
+    "bytes": 1559
+  },
+  "selection": [
+    {
+      "locator": {
+        "textCodeUnits": [
+          0,
+          1559
+        ]
+      },
+      "value": "# Synthesis decision\n\nBase is candidate A. Parent scores are A 20 and B 19 across the five declared criteria. The fresh readonly judge independently returned the same criterion scores and base recommendation. Both rationales and complete code/check artifacts were read before selection. There is no disagreement to resolve. Model families were not exposed, so agreement is not evidence of model diversity.\n\nB's explicit asynchronous reporter discussion was hand-adapted into rationale.md. This clarifies A's synchronous-only reporting contract. No asynchronous implementation was grafted. The task has no async reporter requirement, and copying await into A would introduce new release semantics.\n\nRejected B's cache dependency on the pinned disposer and its retained mounted value after completion. Preserve A's generic cache boundary, exact entry identity, value clearing, and optional per-mount value. Both converge on instance Maps, unique entries, a shared completion per teardown, and identity-checked deletion. They diverge on the scheduling owner and reporter settlement. No reframe is needed for the supplied synchronous task.\n\nThe main trial has two inspected completed candidates. Dropout and unavailable-worker trials are separate and cannot establish full competition. No cancelled partial artifact enters this synthesis.\n\nVerification is performed against this exact synthesis using verify.mjs. The unchanged original baseline failure remains part of the evidence. No external publication, commit, source edit or companion execution is claimed.\n"
+    }
+  ],
+  "limits": [
+    "Selections preserve the exact source value at each locator. Truncated strings carry explicit code-unit bounds.",
+    "A producer-captured return is not a recovered native parent envelope. Missing call IDs, original capture defects and unknown model observations remain missing."
+  ]
+}

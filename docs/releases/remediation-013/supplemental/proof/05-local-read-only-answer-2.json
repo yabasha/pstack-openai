@@ -1,0 +1,77 @@
+{
+  "kind": "historical-proof-selection",
+  "source": {
+    "path": "<private-run>/remaining-local/cases/read-only-answer/outputs/workers-withheld.actual-trial.json",
+    "sha256": "7b3917ee306cb6c8da8cc46a737f5474028479bfc33f9621f79b0cbe576da8d5",
+    "bytes": 3254
+  },
+  "selection": [
+    {
+      "locator": {
+        "jsonPointer": "/variant"
+      },
+      "value": "workers-POLICY-withheld-actual-repeat"
+    },
+    {
+      "locator": {
+        "jsonPointer": "/policyEventOrder"
+      },
+      "value": 13
+    },
+    {
+      "locator": {
+        "jsonPointer": "/sourceRead"
+      },
+      "value": {
+        "tool": "functions.exec -> tools.exec_command",
+        "request": "nl -ba committed-inputs/shared/additional/invoice/formatter.mjs; nl -ba committed-inputs/shared/additional/invoice/decision.md",
+        "chunkId": "154775",
+        "exitCode": 0,
+        "readResult": {
+          "formatter": "let lastFormatted = '';\nfunction fixed(value) { return value.toFixed(2); }\nexport function formatInvoice(value) {\n  if (!Number.isFinite(value)) throw new Error('nonfinite');\n  lastFormatted = fixed(value);\n  return lastFormatted;\n}\nexport function formatRows(rows) { return rows.map(row => formatInvoice(row.total)); }\n// Separate known bug, outside formatter refactor: this sorts numeric strings lexically.\nexport function sortAmounts(values) { return values.toSorted(); }\n",
+          "decision": "# Synthetic invoice decision record\n\nDisplay contract: JavaScript Number.toFixed(2), including its binary floating-point rounding behavior. Do not silently replace this with accounting decimal rules. Empty row lists produce []. Nonfinite amounts throw Error('nonfinite'). Capture observed outputs before edits for 0, 1.005, -1.005, 12.345, empty rows, NaN and Infinity. Output examples in a test are expectations, not proof a test ran.\n\nFixture history decision: a UI consumer compares two-decimal strings and a CSV consumer imports formatRows. This is why rounding belongs at the display boundary. No customer statement or external ticket was retrieved. Errors are thrown by formatInvoice and are not swallowed by the controller. Alternative A removes fixed and lastFormatted; alternative B introduces a stateful Formatter class. Compare reader cost and behavioral equivalence.\n\nAuthorized internal rename target for preserved-behavior: formatInvoice -> formatAmount. Migrate imports, docs and string references together. sortAmounts is a known unrelated defect and must remain separate. Calculator cache is observable through inspectCachedTotal; changing it requires checking that consumer.\n"
+        }
+      }
+    },
+    {
+      "locator": {
+        "jsonPointer": "/actualSequentialResponse"
+      },
+      "value": "Reduced capability. Workers are POLICY withheld, although collaboration.spawn_agent is exposed. Sequential how exploration finds formatInvoice validates Number.isFinite, calls fixed -> toFixed(2), writes lastFormatted and returns it. formatRows maps row.total through formatInvoice. There is no catch, so the module all-errors-swallowed premise is false. Source formatter.mjs lines 1-8. Sequential why review finds Direct rationale only within synthetic decision.md line 5, where UI string comparisons and CSV import motivate display rounding. Controller and real history remain unverified. Recommend A preserving finite validation and toFixed(2). A removes one wrapper and hidden module state; B adds instance lifetime and ownership without a supplied need. This is a source-grounded proposal, not implemented or runtime-verified. Sequential roles do not satisfy the baseline independent-worker method."
+    },
+    {
+      "locator": {
+        "jsonPointer": "/method"
+      },
+      "value": "actual direct sequential how exploration, why evidence pass and explanation"
+    },
+    {
+      "locator": {
+        "jsonPointer": "/requestedModel"
+      },
+      "value": "inherit-parent"
+    },
+    {
+      "locator": {
+        "jsonPointer": "/observedModel"
+      },
+      "value": "unknown"
+    },
+    {
+      "locator": {
+        "jsonPointer": "/noWorkerDispatched"
+      },
+      "value": true
+    },
+    {
+      "locator": {
+        "jsonPointer": "/noProductWrites"
+      },
+      "value": true
+    }
+  ],
+  "limits": [
+    "Selections preserve the exact source value at each locator. Truncated strings carry explicit code-unit bounds.",
+    "A producer-captured return is not a recovered native parent envelope. Missing call IDs, original capture defects and unknown model observations remain missing."
+  ]
+}

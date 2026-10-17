@@ -1,0 +1,23 @@
+{
+  "kind": "historical-proof-selection",
+  "source": {
+    "path": "<private-run>/remaining-local/cases/codex-setup-from-readme/outputs/codex-setup-from-readme.result.md",
+    "sha256": "2f9811483ed82ca3d74d7429ce9cbd5fa66920ffffbe83baed8f28926c59cad1",
+    "bytes": 7318
+  },
+  "selection": [
+    {
+      "locator": {
+        "textCodeUnits": [
+          0,
+          2294
+        ]
+      },
+      "value": "# Setup walkthrough receipt\n\nThe documented marketplace route is readable. Loading and installed discovery remain blocked by policy. This attempt produced read-only guidance and task-owned evidence only. No host pass is claimed.\n\nthroughput checkpoint: n/a, read-only investigation\n\nThe input HEAD is independently observed as `19e678ddde52904601c1b877f9565b158ca2d436`. The requested ORIGINAL object `fdbcada96209264f96aa8b881106d743b487645c` is unavailable. `git cat-file -t` exited 128. Its contents were not reconstructed.\n\nThe supplied package identity is `51f209daf83cd97d64f89881d66533bb59dc57db`. The manifest reports version `0.1.3`. The frozen cache has no Git metadata, so this attempt cannot independently resolve its commit identity. Actual inspected source bytes and SHA-256 values are retained in `source-readback.json`. They establish exact file observations, not host installed-copy identity.\n\n## Actual response\n\nREADME links `docs/setup/codex.md`, and the destination exists. The linked guide describes `.agents/plugins/marketplace.json` with a relative `source.path`. It then describes restarting the desktop app, selecting the source in Plugins Directory, installing, and starting a fresh enabled chat. These are inspected documentation claims. No live marketplace action ran.\n\nThe guide requires separate approval for the exact package copy, marketplace, cache, settings, restart, install and enable scope. That authorization is absent and expressly withheld in this attempt. It does not follow from the package's installation path, owner record, or upstream autonomy language.\n\nAfter an authorized future loading operation, the guide requires actual `discover-package`, `enumerate-skills` and `inspect-installed-copy` observations. The reference catalog lists 51 roots. The three nested Benny inputs map to `REFERENCE.md` and are excluded from root registration. `benny-exclusions.json` retains those exact mappings. Neither catalog reading nor this mapping proves host enumeration.\n\nThe consumer gets a concrete setup boundary and avoids mistaking source access for registration. The maintainer gets exact input and source digests and explicit unfinished steps.\n\n## Branches and observations\n\n| Branch | Actual operation | Observed result and limit |\n| --- | --- | --- |"
+    }
+  ],
+  "limits": [
+    "Selections preserve the exact source value at each locator. Truncated strings carry explicit code-unit bounds.",
+    "A producer-captured return is not a recovered native parent envelope. Missing call IDs, original capture defects and unknown model observations remain missing."
+  ]
+}

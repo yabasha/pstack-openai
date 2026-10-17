@@ -1,0 +1,82 @@
+{
+  "caseId": "guides-ordinary-chatgpt",
+  "packageVersion": "0.1.3",
+  "packageCommit": "51f209daf83cd97d64f89881d66533bb59dc57db",
+  "host": "codex",
+  "hostMode": "Historical native Local task-scoped fixture observation",
+  "date": "2026-10-17",
+  "input": "Use pstack in ordinary ChatGPT with supplied source but no execution. Actual task fixture revision b11706abb67a1fb2ad00ac1fac7518370bcc1e9f.",
+  "observedOutput": "The supplied-source, no-execution scenario produced a grounded explanation and preserved active-controller and authorization boundaries. Independent execution, runtime proof and supported host loading were not exercised.",
+  "status": "reduced-pass",
+  "execution": "workers",
+  "inputRevision": "b11706abb67a1fb2ad00ac1fac7518370bcc1e9f",
+  "sourcePaths": [
+    "docs/guide/01-setup.md",
+    "docs/guide/02-poteto-mode.md",
+    "docs/guide/03-understand.md",
+    "docs/guide/04-design.md",
+    "docs/guide/05-build-and-clean.md",
+    "docs/guide/06-verify-and-ship.md",
+    "docs/guide/07-overnight.md",
+    "docs/guide/08-principles.md",
+    "docs/guide/09-make-it-yours.md",
+    "docs/guide/10-recipes-and-pitfalls.md",
+    "docs/guide/README.md",
+    "docs/guide/images/design.jpg",
+    "docs/guide/images/overnight.jpg",
+    "docs/guide/images/recipes.jpg",
+    "docs/guide/images/router.jpg",
+    "docs/guide/images/understanding.jpg",
+    "docs/guide/images/verification.jpg"
+  ],
+  "documentedCapabilities": [
+    "Frozen source instructions only. Current-main qualification is not established."
+  ],
+  "exposedTools": [
+    "exec"
+  ],
+  "artifacts": [
+    "docs/releases/remediation-013/local/guides-ordinary-chatgpt/review-c-07/assessment.json",
+    "docs/releases/remediation-013/local/guides-ordinary-chatgpt/review-c-07/proof/01-hashes-and-checks.json.excerpt.json",
+    "docs/releases/remediation-013/local/guides-ordinary-chatgpt/review-c-07/proof/supplied-input.json",
+    "docs/releases/remediation-013/local/guides-ordinary-chatgpt/review-c-07/proof/native-source-read.json",
+    "docs/releases/remediation-013/local/guides-ordinary-chatgpt/review-c-07/proof/task-result-prefix.json"
+  ],
+  "limits": [
+    "Scenario runtime and worker execution are policy withheld",
+    "Supported loading is outside this source-only observation",
+    "The public source excerpt covers the listed matched paths only. Other source reads assessed independently remain outside this narrow public excerpt.",
+    "Only the actual operations listed in this record have narrow public bindings. Other operations from the independent assessment remain unprojected. No missing operation is invented.",
+    "Original independent proposed grade is reduced. reduced-pass is its declared evidence-schema alias.",
+    "The exposed tool name exec is retained from the actual scoped native custom-tool call. The nested tools.exec_command call matches this public command event. command_execution remains an event type only."
+  ],
+  "priorActionIdentities": [],
+  "permissions": {
+    "execution": "granted",
+    "writes": "granted",
+    "externalActions": "denied"
+  },
+  "models": {
+    "requested": "inherit-parent",
+    "actual": "unknown"
+  },
+  "successfulOperations": [
+    {
+      "operation": "read",
+      "tool": "exec",
+      "evidence": "docs/releases/remediation-013/local/guides-ordinary-chatgpt/review-c-07/proof/native-source-read.json"
+    }
+  ],
+  "nativeObservations": [
+    {
+      "observation": "review-outcome",
+      "evidence": "docs/releases/remediation-013/local/guides-ordinary-chatgpt/review-c-07/assessment.json",
+      "reviewedBy": "/root/grade_remediation_local_c"
+    },
+    {
+      "observation": "supplied-input",
+      "evidence": "docs/releases/remediation-013/local/guides-ordinary-chatgpt/review-c-07/proof/supplied-input.json",
+      "reviewedBy": "/root/project_historical_local"
+    }
+  ]
+}

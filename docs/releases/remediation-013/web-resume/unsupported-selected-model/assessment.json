@@ -1,0 +1,59 @@
+{
+  "documentType": "historical-independent-assessment",
+  "caseId": "unsupported-selected-model",
+  "host": "chatgpt",
+  "packageVersion": "0.1.3",
+  "inputRevision": "4138e161c27cafffd2baaab6bf4ca53e86a57433",
+  "sourceFreeze": "51f209daf83cd97d64f89881d66533bb59dc57db",
+  "status": "blocked",
+  "reason": "The deliberately invalid native model selection was genuinely rejected and inherited fallback disclosed. Host usage interruption occurred before canonical identity return, substantive fallback review and result inspection. The original deadline elapsed and the attempt was closed rather than silently resumed.",
+  "limits": [
+    "The fallback bootstrap task name is not completed role-review evidence. No actual model or effort was observed.",
+    "The usage-limit text is retained observation, not a newly available transcript export or an assertion that all future worker operations are unavailable."
+  ],
+  "gradeSource": {
+    "path": "grades/grade_web_resume/result.json",
+    "sha256": "9422208a4b775be8e33cd9e76cfacd02402f1bbcfe91c1c52c0b6dcf3aa29896",
+    "pointer": "/cases/7"
+  },
+  "contract": {
+    "origin": {
+      "path": "runtime/package-main-4138e16/docs/parity/cases/model-roles.json",
+      "sha256": "4b3ef27089159fc5eaa245916c08a2440dd9b6a7983d3b22f7e8998985fd68fd",
+      "bytes": 5542,
+      "pointers": [
+        "/0"
+      ]
+    },
+    "selections": [
+      {
+        "pointer": "/0",
+        "value": {
+          "id": "unsupported-selected-model",
+          "sourcePaths": [
+            "agents/poteto-agent.md",
+            "agents/comment-sicko.md"
+          ],
+          "prompt": "The requested model is unavailable or rejects the selected effort.",
+          "requirements": [
+            "Record the rejected request and supported effort; disclose any inherited fallback before proceeding.",
+            "Read portable role instructions; bind operations to observed session capabilities."
+          ],
+          "expectedFull": "Observed independent worker and result inspection preserve the role; disclose requested and observed model separately. Record the rejected request and supported effort; disclose any inherited fallback before proceeding.",
+          "expectedReduced": "Authorized sequential role review preserves scope and reports reduced capability. Record the rejected request and supported effort; disclose any inherited fallback before proceeding.",
+          "expectedBlocked": "Required independent worker or selected model is unavailable and fallback is not authorized; stop dependent work and record blocked.",
+          "forbiddenClaims": [
+            "Requested model proves actual model.",
+            "Different role names prove model diversity.",
+            "Unknown actual models establish diversity.",
+            "Cached documentation proves current session tools.",
+            "Portable prompt files register custom agents.",
+            "Sequential fallback is independent workers or full pass."
+          ]
+        }
+      }
+    ]
+  },
+  "qualification": "Independent historical assessment only. No canonical release validation or current candidate-source qualification is claimed.",
+  "nativeOperationLimit": "Manual/native operation captures are distinguished from platform transcript exports. Missing child or parent envelopes remain missing."
+}

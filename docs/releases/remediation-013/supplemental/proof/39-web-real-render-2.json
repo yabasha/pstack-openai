@@ -1,0 +1,38 @@
+{
+  "kind": "historical-proof-selection",
+  "source": {
+    "path": "<private-run>/web-checkpoint-3/units/real-render/outputs/real-render/004-browser-http-loopback.raw.json",
+    "sha256": "6c652799c912e225696f4539610b1f7d152b955615fd1d07004f3363503d7696",
+    "bytes": 636
+  },
+  "selection": [
+    {
+      "locator": {
+        "jsonPointer": "/returnedScopedExact"
+      },
+      "value": "Browser Use cannot open http://127.0.0.1:45415 in tab 3. Browser reported: net::ERR_CONNECTION_REFUSED"
+    },
+    {
+      "locator": {
+        "jsonPointer": "/wallTimeSeconds"
+      },
+      "value": 352.8501
+    },
+    {
+      "locator": {
+        "jsonPointer": "/capturedAt"
+      },
+      "value": "2026-10-17T06:55:27.701Z"
+    },
+    {
+      "locator": {
+        "jsonPointer": "/limits"
+      },
+      "value": "No screenshot/click/image diff occurred. HTTP allowed scheme tested; no policy bypass or unrelated site. Blocking browser call prevented timely updates and consumed cooperative case budget; not a full timeout result."
+    }
+  ],
+  "limits": [
+    "Selections preserve the exact source value at each locator. Truncated strings carry explicit code-unit bounds.",
+    "A producer-captured return is not a recovered native parent envelope. Missing call IDs, original capture defects and unknown model observations remain missing."
+  ]
+}

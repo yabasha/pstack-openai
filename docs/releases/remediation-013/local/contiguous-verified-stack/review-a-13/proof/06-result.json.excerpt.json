@@ -1,0 +1,37 @@
+{
+  "kind": "selected-fixture-result-fields",
+  "caseId": "contiguous-verified-stack",
+  "attemptId": "review-a-13",
+  "originalLocator": "work/helper_workflow_reruns/projects/release-stack/deliverables/verifier-b/result.json",
+  "sourceSha256": "34a355831066e912d1d90f32290b79ef53491505ff8ba1f2f5f2647fa650242e",
+  "sourceBytes": 2806,
+  "transformation": "Named JSON fields selected by exact JSON Pointer. Task-owned absolute paths replaced with declared placeholders. Other fields omitted. These are result-artifact values, not synthesized tool execution evidence. Public selection is limited to eight short inspected fields. Longer output and unselected fields remain private.",
+  "fields": [
+    {
+      "pointer": "/assignmentId",
+      "value": "verify-102-B-0"
+    },
+    {
+      "pointer": "/inputRevision",
+      "value": "4a7dde94ab2778837e4c932e53cc3484d2e74dfd"
+    },
+    {
+      "pointer": "/requestedModel",
+      "value": "inherit-parent"
+    },
+    {
+      "pointer": "/actualModel",
+      "value": "unknown"
+    },
+    {
+      "pointer": "/verdict",
+      "value": "PASS+NOTES"
+    },
+    {
+      "pointer": "/errors",
+      "value": [
+        "Initial combined full-read tool output was truncated. Individual model roles, host capabilities and Babysit were reread."
+      ]
+    }
+  ]
+}

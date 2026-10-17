@@ -1,0 +1,132 @@
+{
+  "schemaVersion": 1,
+  "kind": "historical-independent-assessment-projection",
+  "caseId": "history-evidence",
+  "attemptId": "review-c-09",
+  "startingMain": "4138e161c27cafffd2baaab6bf4ca53e86a57433",
+  "packageCommit": "51f209daf83cd97d64f89881d66533bb59dc57db",
+  "packageVersion": "0.1.3",
+  "inputRevision": "97c14cafd67603ef8ed7f26727503c1310e7034f",
+  "originalProposedStatus": "reduced",
+  "evidenceStatus": "reduced-pass",
+  "qualifiesCurrentMain": false,
+  "sourceReview": {
+    "originalLocator": "grades/grade_remediation_local_c/result.json",
+    "sourceSha256": "2582d82fe0ad256da816b168e5b242a713d134d62af8657c4f7bc255d3a7ceba",
+    "jsonPointer": "/cases/8",
+    "reviewer": "/root/grade_remediation_local_c",
+    "requestedModel": "inherit-parent",
+    "actualModel": "unknown"
+  },
+  "findings": [
+    "An actual independent source-control investigator and fresh citation-checking synthesizer returned an eight-section assessment. The accessible synthetic record contradicts the stated telemetry/customer premise. Other categories remain denied, unavailable or local coordinator passes. Confidence tiers and source gaps are preserved."
+  ],
+  "limits": [
+    "Real retry implementation and engineering history",
+    "Authorized category searches and corresponding records",
+    "Actual telemetry and customer constraint evidence"
+  ],
+  "chronology": [],
+  "predicate": "Why expectedReduced permits available-history assessment with missing connectors; expectedFull independent category findings and actual historical/ticket/telemetry distinction remain unmet.",
+  "sourceArtifactBindings": [
+    {
+      "originalLocator": "remaining-local/cases/history-evidence/task-contract.json",
+      "sourceSha256": "4f5ca50791ba71c4499ec2b4721ae09aec3eca503a77dbff1510e0b9a8a039a4",
+      "expectedSha256": "4f5ca50791ba71c4499ec2b4721ae09aec3eca503a77dbff1510e0b9a8a039a4",
+      "expectedHashMatches": true,
+      "bytes": 6655,
+      "publication": "omitted",
+      "reason": "Only a narrow inspected projection may be included. Private original remains unchanged."
+    },
+    {
+      "originalLocator": "remaining-local/cases/history-evidence/outputs/history-evidence.result.md",
+      "sourceSha256": "e46f0698c4164c0b588934658e9c8db03acd75885d2633e72dfb20fd4607ab78",
+      "expectedSha256": "e46f0698c4164c0b588934658e9c8db03acd75885d2633e72dfb20fd4607ab78",
+      "expectedHashMatches": true,
+      "bytes": 10028,
+      "publication": "omitted",
+      "reason": "Only a narrow inspected projection may be included. Private original remains unchanged."
+    },
+    {
+      "originalLocator": "remaining-local/cases/history-evidence/outputs/completion.json",
+      "sourceSha256": "7ac432e0d32c98318b375a4e6a55477ffa9cce543f4c474b7fb7bc41af3359a0",
+      "expectedSha256": "7ac432e0d32c98318b375a4e6a55477ffa9cce543f4c474b7fb7bc41af3359a0",
+      "expectedHashMatches": true,
+      "bytes": 40920,
+      "publication": "omitted",
+      "reason": "Raw/native context, broad discovery, completion dump, or bulk source manifest is excluded. No protected payload is decoded."
+    },
+    {
+      "originalLocator": "remaining-local/cases/history-evidence/outputs/worker-events.json",
+      "sourceSha256": "25de44142977ce7116e53c4b8010bc0f2a38280e570e6ce13db9cf7dd6e47f69",
+      "expectedSha256": "25de44142977ce7116e53c4b8010bc0f2a38280e570e6ce13db9cf7dd6e47f69",
+      "expectedHashMatches": true,
+      "bytes": 2983,
+      "publication": "projected-fields",
+      "reason": "Only a narrow inspected projection may be included. Private original remains unchanged.",
+      "projectedPath": "docs/releases/remediation-013/local/history-evidence/review-c-09/proof/01-worker-events.json.excerpt.json",
+      "projectedSha256": "45a70c03f373dcacf1c5b248b63fce432a7ce6c396e8cdecf590c5c61c89526e"
+    },
+    {
+      "originalLocator": "remaining-local/cases/history-evidence/outputs/source-control-investigator.md",
+      "sourceSha256": "80373e9587130140ad4319c36edf0fad35ed4c9ff212eb4dbd6b38b730cb7db1",
+      "expectedSha256": "80373e9587130140ad4319c36edf0fad35ed4c9ff212eb4dbd6b38b730cb7db1",
+      "expectedHashMatches": true,
+      "bytes": 7687,
+      "publication": "omitted",
+      "reason": "Only a narrow inspected projection may be included. Private original remains unchanged."
+    },
+    {
+      "originalLocator": "remaining-local/cases/history-evidence/outputs/synthesizer.md",
+      "sourceSha256": "2e9f32620de9e960cd4e5c62ea08a319ec80c0861c193002afff1d97b1fb1d85",
+      "expectedSha256": "2e9f32620de9e960cd4e5c62ea08a319ec80c0861c193002afff1d97b1fb1d85",
+      "expectedHashMatches": true,
+      "bytes": 7110,
+      "publication": "omitted",
+      "reason": "Only a narrow inspected projection may be included. Private original remains unchanged."
+    },
+    {
+      "originalLocator": "remaining-local/cases/history-evidence/outputs/coverage.json",
+      "sourceSha256": "623c4168cbe5e6ab3511f4857acbcc021db01646c8f693f3bd46362f7118781e",
+      "expectedSha256": "623c4168cbe5e6ab3511f4857acbcc021db01646c8f693f3bd46362f7118781e",
+      "expectedHashMatches": true,
+      "bytes": 1863,
+      "publication": "projected-fields",
+      "reason": "Only a narrow inspected projection may be included. Private original remains unchanged.",
+      "projectedPath": "docs/releases/remediation-013/local/history-evidence/review-c-09/proof/02-coverage.json.excerpt.json",
+      "projectedSha256": "46262a5a39a081d5bbacd079087f049def757a5d1047b17ae4e52b7d331ca261"
+    },
+    {
+      "originalLocator": "remaining-local/cases/history-evidence/outputs/actions.json",
+      "sourceSha256": "80a629f3f830d6c8a358783754b200347bf8b9313ed343578084e8ac46533548",
+      "expectedSha256": "80a629f3f830d6c8a358783754b200347bf8b9313ed343578084e8ac46533548",
+      "expectedHashMatches": true,
+      "bytes": 6237,
+      "publication": "projected-fields",
+      "reason": "Only a narrow inspected projection may be included. Private original remains unchanged.",
+      "projectedPath": "docs/releases/remediation-013/local/history-evidence/review-c-09/proof/03-actions.json.excerpt.json",
+      "projectedSha256": "fea439a87f1ebf86f986ea7a25f421adcb92d4462df7d80682d71b696e362c68"
+    },
+    {
+      "originalLocator": "remaining-local/cases/history-evidence/outputs/verification.json",
+      "sourceSha256": "14d00604be509544a173317a66d9f702dad95fd3483722d86463047d6a918065",
+      "expectedSha256": "14d00604be509544a173317a66d9f702dad95fd3483722d86463047d6a918065",
+      "expectedHashMatches": true,
+      "bytes": 8179,
+      "publication": "projected-fields",
+      "reason": "Only a narrow inspected projection may be included. Private original remains unchanged.",
+      "projectedPath": "docs/releases/remediation-013/local/history-evidence/review-c-09/proof/04-verification.json.excerpt.json",
+      "projectedSha256": "7bee9224869cc936b30f11f69e828459c162b3e1c73393220d2c0da3e50d5dd5"
+    }
+  ],
+  "projectionLimits": [
+    "This file projects the existing independent assessment and does not regrade the case.",
+    "Private source artifacts and omitted native operations remain private. Source digests bind originals, not transformed bytes.",
+    "Historical 0.1.3 observations do not qualify current main or a modified candidate."
+  ],
+  "statusMapping": {
+    "originalProposedStatus": "reduced",
+    "canonicalStatus": "reduced-pass",
+    "rule": "The original reviewer uses reduced. The evidence schema names this display alias reduced-pass. The original proposed grade remains unchanged."
+  }
+}

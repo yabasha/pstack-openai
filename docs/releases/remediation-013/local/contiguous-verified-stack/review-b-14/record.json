@@ -1,0 +1,60 @@
+{
+  "caseId": "contiguous-verified-stack",
+  "packageVersion": "0.1.3",
+  "packageCommit": "51f209daf83cd97d64f89881d66533bb59dc57db",
+  "host": "codex",
+  "hostMode": "Historical native Local task-scoped fixture observation",
+  "date": "2026-10-17",
+  "input": "Historical fixture at 4a7dde94ab2778837e4c932e53cc3484d2e74dfd. Independent assessment review-b-14.",
+  "observedOutput": "Fresh actual non-author per-PR101/102 reviewers inspect exact parent/head source, stable patch IDs and genuine Bun-emitted app bundles through actual inherited PTY. Both verdict build repeats and refreshed current bundles are byte-identical within each target. Bun and Node target formats are distinguished from runtime; all execution uses Bun. Changed multiplier3 source returns21 for7 and cannot reuse the multiplier2 verdict. Tests/docs/lint current changes preserve actual payload bytes. Same-SHA controls do not justify filtering meaningful bytes. The final PR101 independent verdict at07:23:50 precedes refreshed current builds at07:24:59, actual PTY at07:25:04 and local application at07:25:23. Early provisional evidence remains rejected. Only101 then102 are applied in an owned local model and fetched back. Stable patch checks and literal behavior survive. The ceiling is102;103 remains the first intentional gap and104 cannot bypass it. Original unchanged watcher actually runs through a labelled inert gh adapter with pins, finite budgets, schemaVersion1 events and current-frontier per-wake inspection. No READY/autoMergeRequest is treated as merged.",
+  "status": "pass",
+  "execution": "workers",
+  "inputRevision": "4a7dde94ab2778837e4c932e53cc3484d2e74dfd",
+  "sourcePaths": [
+    "skills/poteto-mode/playbooks/shipping.md",
+    "skills/poteto-mode/playbooks/babysit.md",
+    "skills/poteto-mode/playbooks/opening-a-pr.md",
+    "skills/poteto-mode/scripts/watch-pr/watch-pr",
+    "skills/poteto-mode/scripts/watch-pr/cli.ts",
+    "skills/poteto-mode/scripts/watch-pr/types.ts",
+    "skills/poteto-mode/scripts/bootstrap.ts"
+  ],
+  "documentedCapabilities": [
+    "Frozen source instructions only. Current-main qualification is not established."
+  ],
+  "exposedTools": [],
+  "artifacts": [
+    "docs/releases/remediation-013/local/contiguous-verified-stack/review-b-14/assessment.json",
+    "docs/releases/remediation-013/local/contiguous-verified-stack/review-b-14/proof/01-result.json.excerpt.json",
+    "docs/releases/remediation-013/local/contiguous-verified-stack/review-b-14/proof/02-result.json.excerpt.json",
+    "docs/releases/remediation-013/local/contiguous-verified-stack/review-b-14/proof/03-result.json.excerpt.json",
+    "docs/releases/remediation-013/local/contiguous-verified-stack/review-b-14/proof/05-actual-pty-tool.json.excerpt.json",
+    "docs/releases/remediation-013/local/contiguous-verified-stack/review-b-14/proof/06-patches.json.excerpt.json",
+    "docs/releases/remediation-013/local/contiguous-verified-stack/review-b-14/proof/07-result.json.excerpt.json",
+    "docs/releases/remediation-013/local/contiguous-verified-stack/review-b-14/proof/native-source-read.json",
+    "docs/releases/remediation-013/local/contiguous-verified-stack/review-b-14/proof/task-result-prefix.json"
+  ],
+  "limits": [
+    "The public source excerpt covers the listed matched paths only. Other source reads assessed independently remain outside this narrow public excerpt.",
+    "Only the actual operations listed in this record have narrow public bindings. Other operations from the independent assessment remain unprojected. No missing operation is invented.",
+    "This public command event is retained as an observed event. Its exact exposed callable binding could not be corroborated from the permitted scoped capture. It is not claimed as a successfulOperations binding."
+  ],
+  "priorActionIdentities": [],
+  "permissions": {
+    "execution": "granted",
+    "writes": "granted",
+    "externalActions": "denied"
+  },
+  "models": {
+    "requested": "inherit-parent",
+    "actual": "unknown"
+  },
+  "successfulOperations": [],
+  "nativeObservations": [
+    {
+      "observation": "review-outcome",
+      "evidence": "docs/releases/remediation-013/local/contiguous-verified-stack/review-b-14/assessment.json",
+      "reviewedBy": "/root/grade_remediation_local_b"
+    }
+  ]
+}

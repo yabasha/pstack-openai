@@ -1,0 +1,36 @@
+{
+  "kind": "historical-proof-selection",
+  "source": {
+    "path": "<private-run>/web-checkpoint-1/units/supported-authoring/reviews/supported-authoring/checks.raw.json",
+    "sha256": "83d39fa5941d4b12bdd177f2415796670af99ea9def35be830213409b2dfd480",
+    "bytes": 13340
+  },
+  "selection": [
+    {
+      "locator": {
+        "jsonPointer": "/response/exit_code"
+      },
+      "value": 0
+    },
+    {
+      "locator": {
+        "jsonPointer": "/response/chunk_id"
+      },
+      "value": "122b54"
+    },
+    {
+      "locator": {
+        "jsonPointer": "/response/output",
+        "stringCodeUnits": [
+          0,
+          1400
+        ]
+      },
+      "value": "{\n  \"validators\": [\n    {\n      \"name\": \"authored\",\n      \"request\": [\n        \"/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3\",\n        \"-B\",\n        \"/root/.codex/skills/.system/skill-creator/scripts/quick_validate.py\",\n        \"/mnt/data/pstack-remediation-20261017/attempts-18/outputs/supported-authoring/outputs/skill/build-checkpoint\"\n      ],\n      \"exitCode\": 0,\n      \"stdout\": \"Skill is valid!\\n\",\n      \"stderr\": \"\"\n    },\n    {\n      \"name\": \"missing-name\",\n      \"request\": [\n        \"/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3\",\n        \"-B\",\n        \"/root/.codex/skills/.system/skill-creator/scripts/quick_validate.py\",\n        \"/mnt/data/pstack-remediation-20261017/attempts-18/outputs/supported-authoring/fixtures/missing-name\"\n      ],\n      \"exitCode\": 1,\n      \"stdout\": \"Missing 'name' in frontmatter\\n\",\n      \"stderr\": \"\"\n    },\n    {\n      \"name\": \"invalid-name\",\n      \"request\": [\n        \"/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3\",\n        \"-B\",\n        \"/root/.codex/skills/.system/skill-creator/scripts/quick_validate.py\",\n        \"/mnt/data/pstack-remediation-20261017/attempts-18/outputs/supported-authoring/fixtures/invalid-name\"\n      ],\n      \"exitCode\": 1,\n      \"stdout\": \"Name 'Build Checkpoint' should be hyphen-case (lowercase letters, digits, and hyphens only)\\n\",\n   "
+    }
+  ],
+  "limits": [
+    "Selections preserve the exact source value at each locator. Truncated strings carry explicit code-unit bounds.",
+    "A producer-captured return is not a recovered native parent envelope. Missing call IDs, original capture defects and unknown model observations remain missing."
+  ]
+}

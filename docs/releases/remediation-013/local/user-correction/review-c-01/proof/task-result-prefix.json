@@ -1,0 +1,16 @@
+{
+  "kind": "task-result-file-excerpt",
+  "caseId": "user-correction",
+  "attemptId": "review-c-01",
+  "inputRevision": "65d08a5efc7d5758c8537040f113e53cedf4b272",
+  "originalLocator": "remaining-local/cases/user-correction/outputs/user-correction.result.md",
+  "sourceSha256": "ce4b4a44436db56176ec04db9da63e0e6d897265f2ff3c40047d9ca1a09ca97f",
+  "sourceWasDirectlyListedByIndependentGrade": true,
+  "characterRange": {
+    "start": 0,
+    "endExclusive": 776,
+    "total": 7921
+  },
+  "content": "# user-correction actual attempt\n\nThe supplied synthetic digest shows one repeated mistake class. It does not establish a repeated mistake in a real repository. The reader gets a concrete enforcement proposal and a rule table. The maintainer inherits no changed skills, instructions, production code, or delivery state.\n\nThe complete supplied case request and original fixture content are retained in `supplied-input.json`. The parent also retained `full-supplied-request.txt`. The full role is in `full-role.md`. Exact input and source file identities are in `identities.json`. The immutable prospective assignment is `assignment.json`.\n\n## Evidence and selected enforcement\n\n| Class | Evidence and count | Selected level | Why a higher level did not work | Remaining proof |",
+  "transformation": "An inspected prefix of the actual task-result file is projected. Task-owned absolute paths use declared placeholders. The prefix may omit later qualifications. The independent assessment and its limits govern the proposed grade. This is neither a new grade nor a native callable-operation claim."
+}

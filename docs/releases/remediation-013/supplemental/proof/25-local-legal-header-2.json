@@ -1,0 +1,23 @@
+{
+  "kind": "historical-proof-selection",
+  "source": {
+    "path": "<private-run>/remaining-local/cases/legal-header/outputs/worker/report.md",
+    "sha256": "2dd44926df4de37040138e34d4a97eb1cb9585702cbb8948fcd61d27a80fd42a",
+    "bytes": 4667
+  },
+  "selection": [
+    {
+      "locator": {
+        "textCodeUnits": [
+          0,
+          2300
+        ]
+      },
+      "value": "# Comment review report\n\nAssignment `legal-sicko-1` was executed by `/root/comments/sicko` against verified full HEAD `c9cc306fcf163e5cc8fa9e215af35751bc3a4f0b`.\n\nRequested model and effort were inherit-parent. Actual model and effort are unknown. No nested workers ran. The first bootstrap output was the exact role gate, followed by the worker ID. After receiving the substantive assignment, the role gate was repeated before tools. An initial cwd revision lookup failed because the actor directory is not a repository. The assigned case repository then supplied the matching full HEAD before edits.\n\n## Edits\n\nTouched application artifact `outputs/worker/source.mjs` only. Actual deletions are 3 whole comment lines. No application statements changed. The SPDX license header and public API contract comment survive unchanged. No comments were restored. No rejected-review retry has occurred.\n\nDeleted the redundant integer-check narration, the unproved IMPORTANT reconciliation explanation, and the unused `@ts-expect-error` directive. Exact changes are saved in `outputs/worker/source.diff`.\n\n## MUST KILL flags\n\n- `cents` MUST KILL the unexplained tax-boundary claim by choosing a name or explicit contract for its observed validate-and-return behavior. The caller's tax and reconciliation behavior is unknown. This flag does not call the intentional integer check or unchanged return value incorrect.\n- `legacyClient` MUST KILL reliance on an unused correctness directive and an untyped `api` parameter. The directive was deleted. An actual client contract is required before any type or API fix. No missing upstream member or client upgrade is proven.\n\n## Investigation and checks\n\nRead the complete frozen mode, Principles index, no-comments role and skill, how skill and its explainer prompt, workflow ownership, host capabilities, model roles, and orchestration contract. Read the Laziness Protocol, Prove It Works, Build the Lever and Unslop leaves in full. Laziness Protocol limited the diff to comment deletion. Prove It Works required inspecting the actual edited artifact. Build the Lever supplied the rerunnable `verify.mjs` artifact. Unslop shaped this report.\n\nApplied the authorized sequential how explainer to the nearby symbols. `how-sequential.md` records its evidence and miss"
+    }
+  ],
+  "limits": [
+    "Selections preserve the exact source value at each locator. Truncated strings carry explicit code-unit bounds.",
+    "A producer-captured return is not a recovered native parent envelope. Missing call IDs, original capture defects and unknown model observations remain missing."
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "kind": "task-result-file-excerpt",
+  "caseId": "supported-authoring",
+  "attemptId": "review-b-11",
+  "inputRevision": "ef92e5298ecae2709a9350cdf57d32e76c4d35a9",
+  "originalLocator": "authoring/local/outputs/result.md",
+  "sourceSha256": "729ca26f187de7691faeb4c4557dad6b1fd808a1ed6f1c5e70c2f1f093eef888",
+  "sourceWasDirectlyListedByIndependentGrade": true,
+  "characterRange": {
+    "start": 0,
+    "endExclusive": 739,
+    "total": 9011
+  },
+  "content": "# Supported authoring result\n\nThe local artifact is `outputs/skill/SKILL.md`. It summarizes an interrupted build from the named checkpoint and current repository revision and status. It attributes saved claims, separates pending work, and blocks a suggested retry until the interrupted action's outcome is known. It does not resume the build.\n\nThe task HEAD was verified before task reads as `ef92e5298ecae2709a9350cdf57d32e76c4d35a9`. The first task write created `outputs/checklist.md`. The full contract and TASK were read. All three sourcePaths were resolved through the installed frozen inventory before authoring. See `outputs/evidence/source-resolution.json` and the captured reads under `outputs/reads` and `outputs/author/reads`.\n",
+  "transformation": "An inspected prefix of the actual task-result file is projected. Task-owned absolute paths use declared placeholders. The prefix may omit later qualifications. The independent assessment and its limits govern the proposed grade. This is neither a new grade nor a native callable-operation claim."
+}

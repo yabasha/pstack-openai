@@ -1,0 +1,37 @@
+{
+  "kind": "selected-fixture-result-fields",
+  "caseId": "unavailable-persistence",
+  "attemptId": "review-a-02",
+  "originalLocator": "remaining-local/cases/unavailable-persistence/outputs/later-unit-read.raw.json",
+  "sourceSha256": "e5e55daf962bf78fe3c35d17e53f22685d0a7757024e5d63352f0c9705df779a",
+  "sourceBytes": 854,
+  "transformation": "Named JSON fields selected by exact JSON Pointer. Task-owned absolute paths replaced with declared placeholders. Other fields omitted. These are result-artifact values, not synthesized tool execution evidence. Public selection is limited to eight short inspected fields. Longer output and unselected fields remain private.",
+  "fields": [
+    {
+      "pointer": "/name",
+      "value": "later-unit-read"
+    },
+    {
+      "pointer": "/argv",
+      "value": [
+        "bun",
+        "--no-install",
+        "<starting-main-package>/skills/poteto-mode/scripts/orch/orch.ts",
+        "--store",
+        "<private-run>/remaining-local/cases/unavailable-persistence/outputs/orchestrate/persistence-local",
+        "--json",
+        "unit",
+        "get",
+        "attempt-unavailable-persistence"
+      ]
+    },
+    {
+      "pointer": "/exitCode",
+      "value": 0
+    },
+    {
+      "pointer": "/stderr",
+      "value": ""
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "kind": "task-result-file-excerpt",
+  "caseId": "preserved-behavior",
+  "attemptId": "review-c-02",
+  "inputRevision": "1b69f163da7e4648e691c8b26cac8465ec1b596f",
+  "originalLocator": "remaining-local/cases/preserved-behavior/outputs/preserved-behavior.result.md",
+  "sourceSha256": "4bba76c68342167d51b3e92d1989abb7cba66a39ab6f00cf84a4f1d95b76db20",
+  "sourceWasDirectlyListedByIndependentGrade": true,
+  "characterRange": {
+    "start": 0,
+    "endExclusive": 417,
+    "total": 10466
+  },
+  "content": "# Preserved behavior actual attempt\n\nThe supplied synthetic invoice fixture was refactored in isolated local copies. The selected display path now calls `formatAmount` directly, without `fixed` or private result state. `formatRows` and the CSV caller retain their existing operations. The final formatter and symbol strings were inspected. The retired scalar API is absent from final fixture code, strings and prose.\n",
+  "transformation": "An inspected prefix of the actual task-result file is projected. Task-owned absolute paths use declared placeholders. The prefix may omit later qualifications. The independent assessment and its limits govern the proposed grade. This is neither a new grade nor a native callable-operation claim."
+}

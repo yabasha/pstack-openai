@@ -1,0 +1,23 @@
+{
+  "kind": "historical-proof-selection",
+  "source": {
+    "path": "<private-run>/remaining-local/cases/benny-missing-adapter/outputs/benny-missing-adapter.result.md",
+    "sha256": "33929a07876a54ce3b4500d146748c2f1a6c155dca9696af6f987dc6877212ea",
+    "bytes": 8692
+  },
+  "selection": [
+    {
+      "locator": {
+        "textCodeUnits": [
+          0,
+          2300
+        ]
+      },
+      "value": "# Benny missing adapter actual attempt\n\nRepro setup is blocked. No UI reproduction or authored fix occurred. This is an observed local prerequisite attempt against input revision `828d1651aa9f747b67dbddf97d8b197ea8139b6f`, not a host pass or a simulated success.\n\nThe complete supplied request is retained byte for byte in [supplied-request.txt](./supplied-request.txt). The complete original task contract and current contract are retained in [supplied-contracts.json](./supplied-contracts.json). The original input revision `9e80eb1e2033542bb8cb45ed292f1e81c4a64eb7` is inaccessible in this repository. The actual object probe failed. The visible unchanged committed fixture bytes were read; their ancestry to that inaccessible revision remains unverified.\n\n## Actual response\n\nThe scenario says that a channel and trusted marker exist. The ORIGINAL shared forge fixture supplies only `fixture://channel/thread/1`, actor `trusted-triage`, marker `[benny:bug]`, existing issue `FIX-1`, existing PR `fixture-pr-1`, and a human fix ownership claim. Those are synthetic evidence, not real channel coordinates, current parent preflight, live permissions, or actual destination observations. No report symptom, app revision, completed feature map, configured adapter, real source channel ID, root timestamp, or triage user ID is supplied.\n\nKeep the source coordinates immutable if an actual event is later supplied. Do not substitute the synthetic URI, a reply timestamp, or an operations timestamp. Do not create another ticket, repeat a verdict, or post a source root message. The existing issue requires dedupe before any future ticket write. The human ownership claim independently stops competing fix work. The synthetic existing PR independently requires verify-only handling if later qualified with a concrete artifact. No live ownership or fix success is inferred from either field.\n\nThe setup source is `automations/benny/skills/setup-benny/REFERENCE.md`. Its steps 3 and 6 require explicit configuration, a named control adapter, and a completed feature map. The repro source is `automations/benny/skills/reproduce-and-fix-issues/REFERENCE.md`. Its load gate fails closed before step 1 because those inputs are absent. Its step 5 requires all seven adapter capabilities, and the adapter setup c"
+    }
+  ],
+  "limits": [
+    "Selections preserve the exact source value at each locator. Truncated strings carry explicit code-unit bounds.",
+    "A producer-captured return is not a recovered native parent envelope. Missing call IDs, original capture defects and unknown model observations remain missing."
+  ]
+}

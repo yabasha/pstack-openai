@@ -1,0 +1,16 @@
+{
+  "kind": "task-result-file-excerpt",
+  "caseId": "no-persistent-tool",
+  "attemptId": "review-a-08",
+  "inputRevision": "f36c417e21ceff238395512138441a4c222eaa25",
+  "originalLocator": "remaining-local/cases/no-persistent-tool/outputs/no-persistent-tool.result.md",
+  "sourceSha256": "388ff5542e6a0d8e8995e4bf750981cc6a35fd17d272a4edff9e0380117923e8",
+  "sourceWasDirectlyListedByIndependentGrade": false,
+  "characterRange": {
+    "start": 0,
+    "endExclusive": 695,
+    "total": 9017
+  },
+  "content": "# no-persistent-tool actual attempt\n\nThe predicate remains open after one useful authorized implementation iteration. No work after this turn is promised.\n\n## Full supplied input\n\nThe complete batch request is retained verbatim in supplied-request.txt. The exact case request and contract follow.\n\n```json\n{\n  \"case\": {\n    \"id\": \"no-persistent-tool\",\n    \"sourcePaths\": [\n      \"skills/poteto-mode/playbooks/autonomous-run.md\",\n      \"skills/poteto-mode/SKILL.md\",\n      \"skills/principle-sequence-verifiable-units/SKILL.md\",\n      \"skills/show-me-your-work/SKILL.md\",\n      \"skills/show-me-your-work/scripts/log.sh\",\n      \"skills/show-me-your-work/references/decision-log-template.tsv\"\n    ],",
+  "transformation": "An inspected prefix of the actual task-result file is projected. Task-owned absolute paths use declared placeholders. The prefix may omit later qualifications. The independent assessment and its limits govern the proposed grade. This is neither a new grade nor a native callable-operation claim."
+}

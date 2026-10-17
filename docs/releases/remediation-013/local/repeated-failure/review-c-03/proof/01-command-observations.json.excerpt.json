@@ -1,0 +1,43 @@
+{
+  "kind": "selected-fixture-result-fields",
+  "caseId": "repeated-failure",
+  "attemptId": "review-c-03",
+  "originalLocator": "remaining-local/cases/repeated-failure/outputs/command-observations.json",
+  "sourceSha256": "10152f86a35dda57cffe8b41e096f7d9815ce386ff381043c6cf9caedab446f0",
+  "sourceBytes": 7045,
+  "transformation": "Named JSON fields selected by exact JSON Pointer. Task-owned absolute paths replaced with declared placeholders. Other fields omitted. These are result-artifact values, not synthesized tool execution evidence. Public selection is limited to eight short inspected fields. Longer output and unselected fields remain private.",
+  "fields": [
+    {
+      "pointer": "/0/exitCode",
+      "value": 0
+    },
+    {
+      "pointer": "/0/stdout",
+      "value": "25513453054f9ce79354b7ae6c17a3db80dd8012\n"
+    },
+    {
+      "pointer": "/0/stderr",
+      "value": ""
+    },
+    {
+      "pointer": "/1/exitCode",
+      "value": 128
+    },
+    {
+      "pointer": "/1/stdout",
+      "value": ""
+    },
+    {
+      "pointer": "/1/stderr",
+      "value": "fatal: git cat-file: could not get object info\n"
+    },
+    {
+      "pointer": "/2/exitCode",
+      "value": 0
+    },
+    {
+      "pointer": "/2/stderr",
+      "value": ""
+    }
+  ]
+}

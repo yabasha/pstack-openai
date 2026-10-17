@@ -1,0 +1,19 @@
+{
+  "kind": "selected-fixture-result-fields",
+  "caseId": "bounded-improvement",
+  "attemptId": "review-b-02",
+  "originalLocator": "remaining-local/cases/bounded-improvement/outputs/coordinator-review.json",
+  "sourceSha256": "c1dc767135c6fca7be57a988b8d53e86af7270f0d1688f06c559dfe008a56017",
+  "sourceBytes": 6449,
+  "transformation": "Named JSON fields selected by exact JSON Pointer. Task-owned absolute paths replaced with declared placeholders. Other fields omitted. These are result-artifact values, not synthesized tool execution evidence. Public selection is limited to eight short inspected fields. Longer output and unselected fields remain private.",
+  "fields": [
+    {
+      "pointer": "/assignmentId",
+      "value": "bounded-improvement-attempt-1"
+    },
+    {
+      "pointer": "/inputRevision",
+      "value": "eaeece4e22e2d3fabe2b83e54116b323a32ee94e"
+    }
+  ]
+}

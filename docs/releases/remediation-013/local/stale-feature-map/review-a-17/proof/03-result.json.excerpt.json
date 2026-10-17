@@ -1,0 +1,36 @@
+{
+  "kind": "selected-fixture-result-fields",
+  "caseId": "stale-feature-map",
+  "attemptId": "review-a-17",
+  "originalLocator": "work/notes_workflow_reruns/projects/stale-feature-map/outputs/final-review/result.json",
+  "sourceSha256": "8070007060a25ef02b6d6b6343e912ba33cb11c6e7c0334cf2cffea3d594b9c4",
+  "sourceBytes": 752,
+  "transformation": "Named JSON fields selected by exact JSON Pointer. Task-owned absolute paths replaced with declared placeholders. Other fields omitted. These are result-artifact values, not synthesized tool execution evidence. Public selection is limited to eight short inspected fields. Longer output and unselected fields remain private.",
+  "fields": [
+    {
+      "pointer": "/assignmentId",
+      "value": "docs-review-2"
+    },
+    {
+      "pointer": "/inputRevision",
+      "value": "63b1c3a33583a4e688ecaa34099383ccddf5169d"
+    },
+    {
+      "pointer": "/requestedModel",
+      "value": "inherit-parent"
+    },
+    {
+      "pointer": "/actualModel",
+      "value": "unknown"
+    },
+    {
+      "pointer": "/findings",
+      "value": [
+        "No remaining documentation defect found",
+        "Search proof preserved",
+        "Visible Saving unverified",
+        "Final teardown, readback and report pending at reviewer inspection"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,50 @@
+{
+  "kind": "selected-fixture-result-fields",
+  "caseId": "partition-and-race",
+  "attemptId": "review-c-04",
+  "originalLocator": "remaining-local/cases/partition-and-race/outputs/workers/race_d/result.json",
+  "sourceSha256": "d7dc66c6cd08084e12bd58792e6f0edf5b3ee00a03e2cb89475848845ed47960",
+  "sourceBytes": 2106,
+  "transformation": "Named JSON fields selected by exact JSON Pointer. Task-owned absolute paths replaced with declared placeholders. Other fields omitted. These are result-artifact values, not synthesized tool execution evidence. Public selection is limited to eight short inspected fields. Longer output and unselected fields remain private.",
+  "fields": [
+    {
+      "pointer": "/assignmentId",
+      "value": "race_d"
+    },
+    {
+      "pointer": "/status",
+      "value": "completed"
+    },
+    {
+      "pointer": "/inputRevision",
+      "value": "e1dbf216744c45345acecf367b2b449bbc9fa75f"
+    },
+    {
+      "pointer": "/sourceSha256",
+      "value": "64adb438025e87e8e1a9d217d26ea510fdd11a8c7e27f25b74de70481396d1d8"
+    },
+    {
+      "pointer": "/requestedModel",
+      "value": "inherit-parent"
+    },
+    {
+      "pointer": "/actualModel",
+      "value": "unknown"
+    },
+    {
+      "pointer": "/findings",
+      "value": [
+        "The complete 371-byte fixture matches its committed blob at the verified HEAD.",
+        "The literal source exports calculate, adapter, facade, controller, and format.",
+        "calculate reduces qty times unitPrice; adapter, facade, and controller wrap the calculation; format contains a finite-number guard and toFixed(2). These are source contents only."
+      ]
+    },
+    {
+      "pointer": "/limits",
+      "value": [
+        "Static identity audit only. The fixture was not imported or executed.",
+        "No behavior, performance, model diversity, or case grade is established."
+      ]
+    }
+  ]
+}

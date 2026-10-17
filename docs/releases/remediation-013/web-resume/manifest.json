@@ -1,0 +1,643 @@
+{
+  "documentType": "historical-projection-manifest",
+  "owner": "/root/curate_web_resume",
+  "inputRevision": "4138e161c27cafffd2baaab6bf4ca53e86a57433",
+  "sourceFreeze": "51f209daf83cd97d64f89881d66533bb59dc57db",
+  "counts": {
+    "pass": 3,
+    "reduced-pass": 3,
+    "blocked": 2
+  },
+  "ungradedObservations": 1,
+  "items": [
+    {
+      "id": "measurement-method",
+      "status": "pass",
+      "assessment": "docs/releases/remediation-013/web-resume/measurement-method/assessment.json",
+      "proof": "docs/releases/remediation-013/web-resume/measurement-method/selected-proof.json"
+    },
+    {
+      "id": "plain-restate",
+      "status": "blocked",
+      "assessment": "docs/releases/remediation-013/web-resume/plain-restate/assessment.json",
+      "proof": "docs/releases/remediation-013/web-resume/plain-restate/selected-proof.json"
+    },
+    {
+      "id": "scoped-history",
+      "status": "reduced-pass",
+      "assessment": "docs/releases/remediation-013/web-resume/scoped-history/assessment.json",
+      "proof": "docs/releases/remediation-013/web-resume/scoped-history/selected-proof.json"
+    },
+    {
+      "id": "invalid-state",
+      "status": "pass",
+      "assessment": "docs/releases/remediation-013/web-resume/invalid-state/assessment.json",
+      "proof": "docs/releases/remediation-013/web-resume/invalid-state/selected-proof.json"
+    },
+    {
+      "id": "approval-before-edit",
+      "status": "reduced-pass",
+      "assessment": "docs/releases/remediation-013/web-resume/approval-before-edit/assessment.json",
+      "proof": "docs/releases/remediation-013/web-resume/approval-before-edit/selected-proof.json"
+    },
+    {
+      "id": "dependent-caller",
+      "status": "pass",
+      "assessment": "docs/releases/remediation-013/web-resume/dependent-caller/assessment.json",
+      "proof": "docs/releases/remediation-013/web-resume/dependent-caller/selected-proof.json"
+    },
+    {
+      "id": "shared-path-conflict",
+      "status": "reduced-pass",
+      "assessment": "docs/releases/remediation-013/web-resume/shared-path-conflict/assessment.json",
+      "proof": "docs/releases/remediation-013/web-resume/shared-path-conflict/selected-proof.json"
+    },
+    {
+      "id": "unsupported-selected-model",
+      "status": "blocked",
+      "assessment": "docs/releases/remediation-013/web-resume/unsupported-selected-model/assessment.json",
+      "proof": "docs/releases/remediation-013/web-resume/unsupported-selected-model/selected-proof.json"
+    },
+    {
+      "id": "local-project-discovery",
+      "status": "ungraded-capability-observation",
+      "proof": "docs/releases/remediation-013/web-resume/local-project-discovery/observation.json"
+    }
+  ],
+  "files": [
+    {
+      "path": "docs/releases/remediation-013/web-resume/measurement-method/assessment.json",
+      "bytes": 4335,
+      "sha256": "83d85169076009250107ff4544289d3527e8ab3a206d130105d7f74fed5c5359",
+      "origins": [
+        {
+          "path": "grades/grade_web_resume/result.json",
+          "sha256": "9422208a4b775be8e33cd9e76cfacd02402f1bbcfe91c1c52c0b6dcf3aa29896",
+          "pointer": "/cases/0"
+        },
+        {
+          "path": "runtime/package-main-4138e16/docs/parity/cases/skills/benchmark-checklist.json",
+          "sha256": "e16b84704a98c6bd2c93b7037f5fd79ab4b78840547f18fcfb3b47e07ccc89e5",
+          "bytes": 2197,
+          "pointers": [
+            ""
+          ]
+        }
+      ]
+    },
+    {
+      "path": "docs/releases/remediation-013/web-resume/measurement-method/selected-proof.json",
+      "bytes": 13740,
+      "sha256": "2f5ced98db817545df47e4bd1e3ff7baa666caab710e40b89133efd860792a97",
+      "origins": [
+        {
+          "path": "web-checkpoint-4/units/measurement-method/outputs/measurement-method/samples.json",
+          "sha256": "94fe0b3b4d502c0e973592f57342e6dfba8b6f948f4b4379199004af52606b70",
+          "bytes": 8940,
+          "pointers": [
+            "/0",
+            "/1",
+            "/2",
+            "/3",
+            "/4",
+            "/5",
+            "/6",
+            "/7",
+            "/8",
+            "/9",
+            "/10",
+            "/11"
+          ]
+        },
+        {
+          "path": "web-checkpoint-4/units/measurement-method/outputs/measurement-method/baseline-profile-command.json",
+          "sha256": "44bc58fc56a78c895085c1f9b4d0988f37ae67bf2fc4385065e0335399f7605a",
+          "bytes": 1034,
+          "pointers": [
+            "/request",
+            "/exit"
+          ]
+        },
+        {
+          "path": "web-checkpoint-4/units/measurement-method/outputs/measurement-method/treatment-profile-command.json",
+          "sha256": "924ffa545530e2841793b50c57f6871b6084000606cd9894cb62e849d3633006",
+          "bytes": 1078,
+          "pointers": [
+            "/request",
+            "/exit"
+          ]
+        }
+      ]
+    },
+    {
+      "path": "docs/releases/remediation-013/web-resume/plain-restate/assessment.json",
+      "bytes": 3339,
+      "sha256": "d2c08221ebd0bbfa08ac6cdde58799b584498239e47c2fdb3b8b227997c9ae1f",
+      "origins": [
+        {
+          "path": "grades/grade_web_resume/result.json",
+          "sha256": "9422208a4b775be8e33cd9e76cfacd02402f1bbcfe91c1c52c0b6dcf3aa29896",
+          "pointer": "/cases/1"
+        },
+        {
+          "path": "runtime/package-main-4138e16/docs/parity/cases/skills/bro.json",
+          "sha256": "58d8c5b26756be43f95eed51954c189b8b325412ed588a65185392e8ee669aa6",
+          "bytes": 1492,
+          "pointers": [
+            ""
+          ]
+        }
+      ]
+    },
+    {
+      "path": "docs/releases/remediation-013/web-resume/plain-restate/selected-proof.json",
+      "bytes": 3708,
+      "sha256": "e356d72c26d21ff3b1e955cabd77219597f45e609a92a076454c40ce8a76364f",
+      "origins": [
+        {
+          "path": "web-checkpoint-4/units/plain-restate/outputs/plain-restate/result.json",
+          "sha256": "2655f9c1ca1469f4255a62fb893de170eaba72e71cfd3e2212f09bef355726bb",
+          "bytes": 3097,
+          "pointers": [
+            "/inputRevision",
+            "/observations",
+            "/runtimeMetadata",
+            "/bindingStatus",
+            "/orderingDefect",
+            "/limitations"
+          ]
+        }
+      ]
+    },
+    {
+      "path": "docs/releases/remediation-013/web-resume/scoped-history/assessment.json",
+      "bytes": 5220,
+      "sha256": "e81c3ac3dfe79033d0425cb2254da25dcf7f184f82581a030b62585178ce49f4",
+      "origins": [
+        {
+          "path": "grades/grade_web_resume/result.json",
+          "sha256": "9422208a4b775be8e33cd9e76cfacd02402f1bbcfe91c1c52c0b6dcf3aa29896",
+          "pointer": "/cases/2"
+        },
+        {
+          "path": "runtime/package-main-4138e16/docs/parity/cases/skills/recall.json",
+          "sha256": "8ec860fc5fdbf01ce1c505ff1bbc07ea6d56e1a4328e7ec05570342840638f3e",
+          "bytes": 3254,
+          "pointers": [
+            ""
+          ]
+        }
+      ]
+    },
+    {
+      "path": "docs/releases/remediation-013/web-resume/scoped-history/selected-proof.json",
+      "bytes": 9750,
+      "sha256": "ba72c4a4ada77ec91c5ef6863480ee919fe115be7020b758ce0d855cf789f5a7",
+      "origins": [
+        {
+          "path": "web-checkpoint-4/units/scoped-history/outputs/scoped-history/variants.json",
+          "sha256": "9e0bd2a8e317c58ddb9a90bfa6816fd77faddfaefbcdd8507fbbbf5d500d322e",
+          "bytes": 2588,
+          "pointers": [
+            ""
+          ]
+        },
+        {
+          "path": "web-checkpoint-4/units/scoped-history/outputs/scoped-history/terminal-inspection.json",
+          "sha256": "f0638299818149464553d792b9d14d5d947e661946171ee2e1568db6287ea2b0",
+          "bytes": 668,
+          "pointers": [
+            ""
+          ]
+        },
+        {
+          "path": "web-checkpoint-4/units/scoped-history/outputs/scoped-history/local-state.result.raw.json",
+          "sha256": "26cdaf0a6db88c7c080b7fb2271c80b3af0dcf7559d88aec1ebcd559c8dc21a2",
+          "bytes": 3571,
+          "pointers": [
+            ""
+          ]
+        }
+      ]
+    },
+    {
+      "path": "docs/releases/remediation-013/web-resume/invalid-state/assessment.json",
+      "bytes": 3917,
+      "sha256": "0278f2cc88621bc58ad61583046c4467d516bd82e050825c9c416433221d8dad",
+      "origins": [
+        {
+          "path": "grades/grade_web_resume/result.json",
+          "sha256": "9422208a4b775be8e33cd9e76cfacd02402f1bbcfe91c1c52c0b6dcf3aa29896",
+          "pointer": "/cases/3"
+        },
+        {
+          "path": "runtime/package-main-4138e16/docs/parity/cases/skills/principle-type-system-discipline.json",
+          "sha256": "fd5996e95441e4fb2ed2e546a225513bed60d5f7a2d123431e8c8b5a00d3f6a7",
+          "bytes": 1997,
+          "pointers": [
+            ""
+          ]
+        }
+      ]
+    },
+    {
+      "path": "docs/releases/remediation-013/web-resume/invalid-state/selected-proof.json",
+      "bytes": 20058,
+      "sha256": "ec6c20c13bc2fc7bfee922c6c15d0dadf261549f4b3485461e85d2724e73ff16",
+      "origins": [
+        {
+          "path": "web-checkpoint-4/units/invalid-state/outputs/invalid-state/verification-v2/evidence/compiler-results.json",
+          "sha256": "9fbe33fb3aa1859886ace61ec06d13dabcf45049d1fddfa33004a6584f7aa578",
+          "bytes": 11056,
+          "pointers": [
+            ""
+          ]
+        },
+        {
+          "path": "web-checkpoint-4/units/invalid-state/outputs/invalid-state/verification-v2/evidence/runtime-results.json",
+          "sha256": "941a7f454904e53d2e76d67f756198cdc297ad0cb31730e9ebb60464874206e4",
+          "bytes": 4145,
+          "pointers": [
+            ""
+          ]
+        }
+      ]
+    },
+    {
+      "path": "docs/releases/remediation-013/web-resume/approval-before-edit/assessment.json",
+      "bytes": 4867,
+      "sha256": "679c8490a29d6b2719dc16a71818964c565861240a71a2b855bd96fb4907f0d9",
+      "origins": [
+        {
+          "path": "grades/grade_web_resume/result.json",
+          "sha256": "9422208a4b775be8e33cd9e76cfacd02402f1bbcfe91c1c52c0b6dcf3aa29896",
+          "pointer": "/cases/4"
+        },
+        {
+          "path": "runtime/package-main-4138e16/docs/parity/cases/skills/reflect.json",
+          "sha256": "6d87d6e1a6c8fd790d26b53be7f38ffb49810ea8933212c8097df9136629ffcd",
+          "bytes": 2809,
+          "pointers": [
+            ""
+          ]
+        }
+      ]
+    },
+    {
+      "path": "docs/releases/remediation-013/web-resume/approval-before-edit/selected-proof.json",
+      "bytes": 4398,
+      "sha256": "3ca3695640040a2f7bc08487b54370466029387434da889153fe8dc2e326cfbb",
+      "origins": [
+        {
+          "path": "web-checkpoint-4/units/approval-before-edit/outputs/approval-before-edit/synthesizer/result.json",
+          "sha256": "b97fad4826772c2639bbf84dc48618dd432cc82aa1af4a442e38663efe0b9534",
+          "bytes": 1109,
+          "pointers": [
+            ""
+          ]
+        },
+        {
+          "path": "web-checkpoint-4/units/approval-before-edit/outputs/approval-before-edit/synthesizer/result.md",
+          "sha256": "86075e7e5ad755f7c7708431f7935e92e9612a332c70834ecdef8de1ff6cee30",
+          "bytes": 1033,
+          "pointers": [
+            ""
+          ]
+        },
+        {
+          "path": "web-checkpoint-4/units/approval-before-edit/outputs/approval-before-edit/evidence/synthesizer-inspected.json",
+          "sha256": "09c01d7b473516b1e55080984af0028a56d7e8af3339150ba9f5709e622a6d36",
+          "bytes": 1563,
+          "pointers": [
+            "/nativeCaptureAvailable",
+            "/rawEnvelopeLimit",
+            "/contentInspection"
+          ]
+        }
+      ]
+    },
+    {
+      "path": "docs/releases/remediation-013/web-resume/dependent-caller/assessment.json",
+      "bytes": 4437,
+      "sha256": "bbd1c0e3364bb066c61efebf74d230fd3673b2a52d739f3073773082627f292c",
+      "origins": [
+        {
+          "path": "grades/grade_web_resume/result.json",
+          "sha256": "9422208a4b775be8e33cd9e76cfacd02402f1bbcfe91c1c52c0b6dcf3aa29896",
+          "pointer": "/cases/5"
+        },
+        {
+          "path": "runtime/package-main-4138e16/docs/parity/cases/skills/blast-radius.json",
+          "sha256": "1267469c5bf20ae5fe8434a6971eb6ecc1da82f8289ddefa5ecf5fc9960c5bc6",
+          "bytes": 2549,
+          "pointers": [
+            ""
+          ]
+        }
+      ]
+    },
+    {
+      "path": "docs/releases/remediation-013/web-resume/dependent-caller/selected-proof.json",
+      "bytes": 7673,
+      "sha256": "a60e35b4bc45c3502504542f5a42f4b7a82894a1c63075f125adafa6b9bfbfe5",
+      "origins": [
+        {
+          "path": "web-checkpoint-4/units/dependent-caller/outputs/dependent-caller/evidence/run-summary.json",
+          "sha256": "6971c982b0e0f3fc4aa6b9e9c41f95f61d6715221e89ea8e2ff610b853a8874f",
+          "bytes": 1071,
+          "pointers": [
+            ""
+          ]
+        },
+        {
+          "path": "web-checkpoint-4/units/dependent-caller/outputs/dependent-caller/task-input/committed-inputs/shared/additional/cache/caller.mjs",
+          "sha256": "9566a520d6763d359c4b43cd5705df6333c8bf4a4afb96aec7ac3ca2e2145490",
+          "bytes": 309,
+          "pointers": [
+            ""
+          ]
+        },
+        {
+          "path": "web-checkpoint-4/units/dependent-caller/outputs/dependent-caller/task-input/committed-inputs/shared/additional/cache/vendor/disposer-v1.mjs",
+          "sha256": "d33e8d36600ad5df008657e478e39f9100a347098b4176f37923e5056cb3427f",
+          "bytes": 196,
+          "pointers": [
+            ""
+          ]
+        },
+        {
+          "path": "web-checkpoint-4/units/dependent-caller/outputs/dependent-caller/evidence/operations.jsonl",
+          "sha256": "1549ac9d9cb133d3e2b5cc03e106d8bc8219ea08a50e6d2e962004cdfe5ecafe",
+          "bytes": 4141,
+          "pointers": [
+            "line:1",
+            "line:2",
+            "line:7",
+            "line:8",
+            "line:9",
+            "line:10",
+            "line:11",
+            "line:12"
+          ]
+        }
+      ]
+    },
+    {
+      "path": "docs/releases/remediation-013/web-resume/shared-path-conflict/assessment.json",
+      "bytes": 3212,
+      "sha256": "79abff15c90fc3ad54dcc2591316226ea35aa4153e8bd36417aecf004531fa30",
+      "origins": [
+        {
+          "path": "grades/grade_web_resume/result.json",
+          "sha256": "9422208a4b775be8e33cd9e76cfacd02402f1bbcfe91c1c52c0b6dcf3aa29896",
+          "pointer": "/cases/6"
+        },
+        {
+          "path": "runtime/package-main-4138e16/docs/parity/cases/contracts.json",
+          "sha256": "780a524aa106768e1854ae13514867b38db52de42f6a912aa913be01b641bf3a",
+          "bytes": 6575,
+          "pointers": [
+            "/2"
+          ]
+        }
+      ]
+    },
+    {
+      "path": "docs/releases/remediation-013/web-resume/shared-path-conflict/selected-proof.json",
+      "bytes": 12679,
+      "sha256": "383af0e31eb6a9891331b0898133700150a7b41ef3f783fd45992bd87f868b74",
+      "origins": [
+        {
+          "path": "web-checkpoint-4/units/shared-path-conflict/outputs/shared-path-conflict/evidence/ownership-and-checkpoint.json",
+          "sha256": "68ca5383f6ed3d5146d176e74fd996e75421b83435c7878552f9ff2b8202e656",
+          "bytes": 1017,
+          "pointers": [
+            ""
+          ]
+        },
+        {
+          "path": "web-checkpoint-4/units/shared-path-conflict/outputs/shared-path-conflict/evidence/method-receipt.json",
+          "sha256": "cfbc6e339f14d9b37119cb1622e61055018dd97e782016552fdaca09683fe0a5",
+          "bytes": 3298,
+          "pointers": [
+            ""
+          ]
+        },
+        {
+          "path": "web-checkpoint-4/units/shared-path-conflict/outputs/shared-path-conflict/evidence/result-A.native.json",
+          "sha256": "ed0a534ec4221b79d7c9863ea43e9656c1ab4d81f8fdb075e9597306b90cf686",
+          "bytes": 1067,
+          "pointers": [
+            ""
+          ]
+        },
+        {
+          "path": "web-checkpoint-4/units/shared-path-conflict/outputs/shared-path-conflict/evidence/result-B.native.json",
+          "sha256": "6c5899a90a1646a27046df0398f35a9c04c93d5f21994956be38493baa8eb6b4",
+          "bytes": 1014,
+          "pointers": [
+            ""
+          ]
+        },
+        {
+          "path": "web-checkpoint-4/units/shared-path-conflict/outputs/shared-path-conflict/evidence/dispatch-A.actual-request.json",
+          "sha256": "07fb5c87bcc7f870ed4afd079183c91e0976043d5009ced175490e48b1526a3a",
+          "bytes": 814,
+          "pointers": [
+            ""
+          ]
+        },
+        {
+          "path": "web-checkpoint-4/units/shared-path-conflict/outputs/shared-path-conflict/evidence/dispatch-B.actual-request.json",
+          "sha256": "0f20a48296b2fe6478461da81085966e5412589de2f6baa4a614dbe2e7406bf4",
+          "bytes": 813,
+          "pointers": [
+            ""
+          ]
+        }
+      ]
+    },
+    {
+      "path": "docs/releases/remediation-013/web-resume/unsupported-selected-model/assessment.json",
+      "bytes": 3327,
+      "sha256": "495e942e1f5748e75820364e37880f0f6f824f738a2a9f5ba293bed7ee57c0ba",
+      "origins": [
+        {
+          "path": "grades/grade_web_resume/result.json",
+          "sha256": "9422208a4b775be8e33cd9e76cfacd02402f1bbcfe91c1c52c0b6dcf3aa29896",
+          "pointer": "/cases/7"
+        },
+        {
+          "path": "runtime/package-main-4138e16/docs/parity/cases/model-roles.json",
+          "sha256": "4b3ef27089159fc5eaa245916c08a2440dd9b6a7983d3b22f7e8998985fd68fd",
+          "bytes": 5542,
+          "pointers": [
+            "/0"
+          ]
+        }
+      ]
+    },
+    {
+      "path": "docs/releases/remediation-013/web-resume/unsupported-selected-model/selected-proof.json",
+      "bytes": 5498,
+      "sha256": "d9a910048c1c5182920934ec77f3c80247ff3a5153c5d9b74a9a6af5ecc88119",
+      "origins": [
+        {
+          "path": "web-checkpoint-4/units/unsupported-selected-model/outputs/unsupported-selected-model/invalid-request.json",
+          "sha256": "23b3b87ccfab5ca74f7c3aecb793b14d00a56cffe8c4618a1824e0bf8e2ed653",
+          "bytes": 243,
+          "pointers": [
+            ""
+          ]
+        },
+        {
+          "path": "web-checkpoint-4/units/unsupported-selected-model/outputs/unsupported-selected-model/invalid-result.txt",
+          "sha256": "4e7417af5972ec385bafed93486a32ce2655ce49ad38e776bb9b268f8866ff58",
+          "bytes": 150,
+          "pointers": [
+            ""
+          ]
+        },
+        {
+          "path": "web-checkpoint-4/units/unsupported-selected-model/outputs/unsupported-selected-model/fallback-disclosure.txt",
+          "sha256": "c9ebe556123c8c982fdb95c685cda1faa0ca80860fa21d6ad7d02468c59ad337",
+          "bytes": 354,
+          "pointers": [
+            ""
+          ]
+        },
+        {
+          "path": "web-checkpoint-4/units/unsupported-selected-model/outputs/unsupported-selected-model/fallback-bootstrap-request.json",
+          "sha256": "e2166a76d42802db5428978c6e5ce5d6db17a350af2694609898f3dd82885f76",
+          "bytes": 210,
+          "pointers": [
+            ""
+          ]
+        },
+        {
+          "path": "web-checkpoint-4/units/unsupported-selected-model/outputs/unsupported-selected-model/fallback-bootstrap-result.json",
+          "sha256": "96b7f76e2cb5e15e1f4bde2fc089718b384529565c0b57cec10ca9ec65266b43",
+          "bytes": 59,
+          "pointers": [
+            ""
+          ]
+        },
+        {
+          "path": "web-checkpoint-4/units/unsupported-selected-model/outputs/unsupported-selected-model/result.json",
+          "sha256": "84140625c1c8157aab0cfb8d19b798302cac22ba21d193856e6bedf281f7b43a",
+          "bytes": 4017,
+          "pointers": [
+            "/terminalStatus",
+            "/inputRevision",
+            "/actualModel",
+            "/observedAt",
+            "/variants",
+            "/limitations"
+          ]
+        }
+      ]
+    },
+    {
+      "path": "docs/releases/remediation-013/web-resume/independent-checks.json",
+      "bytes": 27714,
+      "sha256": "8edced992d0cf1ffc039f9b971dc77b0d98d981da01e69fe9cb489213468adcb",
+      "origins": [
+        {
+          "path": "grades/grade_web_resume/own-checks.json",
+          "sha256": "a57589c5b4428114aea6101322a34cc320a75322cfc22aa116d5de6a2415ae94",
+          "bytes": 11169,
+          "pointers": [
+            "/hashManifests",
+            "/sourceCopies",
+            "/methodChecks",
+            "/measurement",
+            "/compiler",
+            "/parentReceipts"
+          ]
+        },
+        {
+          "path": "grades/grade_web_resume/replay-results.json",
+          "sha256": "b462b414da012232d3b9c5727df8065afd363636dd05725031cecf24030c600c",
+          "bytes": 158994,
+          "pointers": [
+            "/compiler",
+            "/runtime",
+            "/cache"
+          ]
+        },
+        {
+          "path": "grades/grade_web_resume/replay-results-initial-overbroad.json",
+          "sha256": "9c7ae909cdbcacf531d9c316ead3d34aefca5c43e84da7422cc3e1443a74f3f5",
+          "bytes": 136976,
+          "pointers": [
+            "/sourceHashes"
+          ]
+        }
+      ]
+    },
+    {
+      "path": "docs/releases/remediation-013/web-resume/local-project-discovery/observation.json",
+      "bytes": 17799,
+      "sha256": "7c44e3a0a071978c8967c3355c5e59f4e8d5760769744e445b783205083cc37e",
+      "origins": [
+        {
+          "path": "work/notes_workflow_reruns/proposals/project-discovery/native-project-catalog-observation.json",
+          "sha256": "e0343b8bd102ec23ecc3bb0fbdf48b3e7adca7436e3529b6b7b16c44f3115c2a",
+          "bytes": 2089,
+          "pointers": [
+            "/startedAt",
+            "/finishedAt",
+            "/args",
+            "/processPid",
+            "/inputRevision",
+            "/requests",
+            "/initializeResponseSha256",
+            "/skillsResponseSha256",
+            "/selection",
+            "/matches",
+            "/sourceSha256",
+            "/discoveryObserved",
+            "/scopeLimit",
+            "/cleanup"
+          ]
+        },
+        {
+          "path": "work/notes_workflow_reruns/proposals/project-discovery/parent-preparation.json",
+          "sha256": "43391d4dc8dc3a765c6a78587f068e353df9919c87659ab35f228dc2ff06bec7",
+          "pointer": ""
+        },
+        {
+          "path": "work/notes_workflow_reruns/proposals/project-discovery/fresh-observation/owned-startup-catalog-observation.json",
+          "sha256": "e2ecb65bace4a4769eb70d6b67bb04b2f827da4bb401af1d161e570c0491c415",
+          "bytes": 541,
+          "pointers": [
+            "/threadId",
+            "/actualModel",
+            "/effort",
+            "/sourceSha256",
+            "/scope",
+            "/matches",
+            "/discoveryObserved",
+            "/originalDeniedAttemptUnchanged"
+          ]
+        },
+        {
+          "path": "work/notes_workflow_reruns/proposals/project-discovery/fresh-observation/owned-startup-catalog-observation-supplement.json",
+          "sha256": "42da857a043a1e76240e0c2410432700a70fef4f9277d5d653e8652a1a4b9bb3",
+          "bytes": 204,
+          "pointers": [
+            ""
+          ]
+        }
+      ]
+    },
+    {
+      "path": "docs/releases/remediation-013/web-resume/README.md",
+      "bytes": 2207,
+      "sha256": "aff58cbae995afda03bbc4d90d13946716e17884989e2ce6bbb5e3a5eed51d7d",
+      "origins": []
+    }
+  ],
+  "transforms": "Original grade rows and selected JSON-pointer values are preserved. Generated datasets, raw catalogs, usage-account text, and unrelated state are excluded. Measurement top-level timing fields are omitted from selected samples. No schema-shaped canonical evidence record is emitted.",
+  "publicationTransform": "Coordinator replaced task-owned and user-home paths with declared placeholders. Original source digests and exact selection pointers remain unchanged. See ../privacy-projection.json."
+}

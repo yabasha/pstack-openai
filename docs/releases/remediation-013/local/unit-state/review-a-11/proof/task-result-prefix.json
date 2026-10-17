@@ -1,0 +1,16 @@
+{
+  "kind": "task-result-file-excerpt",
+  "caseId": "unit-state",
+  "attemptId": "review-a-11",
+  "inputRevision": "4a7dde94ab2778837e4c932e53cc3484d2e74dfd",
+  "originalLocator": "work/helper_workflow_reruns/projects/release-program/deliverables/audit/report.md",
+  "sourceSha256": "56f8f8125bb92c33164baa5d2921ab9b8d1b49e38b2926e76a9d7acbe4d6fcbf",
+  "sourceWasDirectlyListedByIndependentGrade": true,
+  "characterRange": {
+    "start": 0,
+    "endExclusive": 555,
+    "total": 4926
+  },
+  "content": "# Evidence review\n\nReviewed by unknown. This independent agent is /root/audit, assignment audit-0, retry0. Actual model and model family are not exposed. This review supplies no case grade and does not clear cross-model review.\n\nThe two source units have inspected successful native commands at input 4a7dde94ab2778837e4c932e53cc3484d2e74dfd. Alpha hashes README.md and beta hashes input/scenarios.json. Their reported hashes agree with distinct verifier receipts. The initial alpha assignment-ID typo is disclosed and the corrected result names alpha-0.\n",
+  "transformation": "An inspected prefix of the actual task-result file is projected. Task-owned absolute paths use declared placeholders. The prefix may omit later qualifications. The independent assessment and its limits govern the proposed grade. This is neither a new grade nor a native callable-operation claim."
+}

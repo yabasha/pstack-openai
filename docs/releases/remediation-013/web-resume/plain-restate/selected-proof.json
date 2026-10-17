@@ -1,0 +1,85 @@
+{
+  "documentType": "selected-original-proof",
+  "caseId": "plain-restate",
+  "selections": [
+    {
+      "origin": {
+        "path": "web-checkpoint-4/units/plain-restate/outputs/plain-restate/result.json",
+        "sha256": "2655f9c1ca1469f4255a62fb893de170eaba72e71cfd3e2212f09bef355726bb",
+        "bytes": 3097,
+        "pointers": [
+          "/inputRevision",
+          "/observations",
+          "/runtimeMetadata",
+          "/bindingStatus",
+          "/orderingDefect",
+          "/limitations"
+        ]
+      },
+      "selections": [
+        {
+          "pointer": "/inputRevision",
+          "value": "2fd4578c898fce1ba4322e0bb97d395d367167d1"
+        },
+        {
+          "pointer": "/observations",
+          "value": [
+            {
+              "order": 1,
+              "kind": "assistant-seed",
+              "actualRole": "assistant",
+              "channel": "final",
+              "text": "We should serialize mutations to the shared state to prevent concurrent writers from clobbering each other."
+            },
+            {
+              "order": 2,
+              "kind": "invocation",
+              "actualBinding": "parent task-message in analysis channel",
+              "messageType": "NEW_TASK",
+              "sender": "/root",
+              "payload": "Invoke bro.",
+              "actualUserRole": false
+            },
+            {
+              "order": 3,
+              "kind": "assistant-response",
+              "actualRole": "assistant",
+              "channel": "final",
+              "text": "We should make changes to the shared data one at a time so writers don’t overwrite each other’s changes.\n\nThe invocation arrived as a parent task message, not a user-role message."
+            }
+          ]
+        },
+        {
+          "pointer": "/runtimeMetadata",
+          "value": {
+            "sourceDisableModelInvocation": true,
+            "runtimeEnforcementObserved": false,
+            "limit": "Source frontmatter is observable. Runtime enforcement of disable-model-invocation is not observable here."
+          }
+        },
+        {
+          "pointer": "/bindingStatus",
+          "value": "Positive two-turn binding remains blocked. Invocation was not an actual user-role turn."
+        },
+        {
+          "pointer": "/orderingDefect",
+          "value": "Assignment was persisted before identity bootstrap returned. Actual identity was bound only prospectively by substantive setup dispatch. The original defect remains."
+        },
+        {
+          "pointer": "/limitations",
+          "value": [
+            "No native transcript export or envelope inspection API was used. This records visible observations only and does not reconstruct missing native envelopes.",
+            "The first response contains the requested simplification and an additional role-binding disclosure.",
+            "Actual model and effort metadata are unknown.",
+            "Bun was unavailable in the shell, with exit 127. No package helper scripts or installs ran.",
+            "Initial checklist persistence used inline Python despite Bun-only script instruction. This deviation remains recorded.",
+            "Initial filename discovery was broader than case relevance inside assigned input and installed exact version. No unrelated content or history was read.",
+            "Initial combined output truncated. Entire mode was subsequently read in two bounded chunks.",
+            "Exact native tool requests and results remain in the conversation. Local files do not pretend to be an independent raw native transcript export.",
+            "No grading or host-wide behavioral verification is claimed."
+          ]
+        }
+      ]
+    }
+  ]
+}

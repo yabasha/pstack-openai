@@ -1,0 +1,41 @@
+{
+  "kind": "historical-independent-assessment-extract",
+  "qualification": {
+    "inputRevision": "4138e161c27cafffd2baaab6bf4ca53e86a57433",
+    "sourceFreeze": "51f209daf83cd97d64f89881d66533bb59dc57db",
+    "packageVersion": "0.1.3",
+    "currentSourceQualified": false
+  },
+  "source": {
+    "path": "<private-run>/grades/grade_remediation_local_e/result.json",
+    "sha256": "eb72e37bdf092ce8de310380a4483bdd54b15a64257160dab117ccde7a987c57",
+    "locator": {
+      "jsonPointer": "/cases/0"
+    }
+  },
+  "originalAssessment": {
+    "caseId": "stack-resume",
+    "proposedStatus": "blocked",
+    "inputRevision": "0d7c8207fe8f08c2fc230cf7cc54f271e368f70d",
+    "reason": "Only two symbolic PR records exist. No third PR, exact head/base/parent pins, stack-bound interrupted action destination, or independent live verification exists. Real continuation readback and zero-write handling do not complete the requested stack reconciliation.",
+    "evidence": [
+      "<private-run>/remaining-local/cases/stack-resume/outputs/stack-resume.result.md",
+      "<private-run>/remaining-local/cases/stack-resume/outputs/continuation.json",
+      "<private-run>/remaining-local/cases/stack-resume/committed-inputs/shared/forge.json"
+    ],
+    "limits": [
+      "Original Git object inaccessible. Current copied fixture bytes have no established original ancestry.",
+      "No live forge readiness, delivery, scheduled wake or automatic pickup."
+    ]
+  },
+  "selectedProof": [
+    "proof/13-local-stack-resume-1.json",
+    "proof/13-local-stack-resume-2.json",
+    "proof/13-local-stack-resume-3.json"
+  ],
+  "publicationStatus": "proposal-only; no canonical host evidence record is constructed",
+  "publicationGaps": [
+    "This assessment format is not the canonical evidence schema. Root-relative operation bindings and any required structured method receipt require separate complete validation.",
+    "Original assessment limitations, invalid receipts and capture gaps are preserved. A behavioral pass does not qualify a different package revision."
+  ]
+}

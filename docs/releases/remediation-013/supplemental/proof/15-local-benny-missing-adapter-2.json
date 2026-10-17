@@ -1,0 +1,91 @@
+{
+  "kind": "historical-proof-selection",
+  "source": {
+    "path": "<private-run>/remaining-local/cases/benny-missing-adapter/outputs/check-results.json",
+    "sha256": "e325ab8a3005ed7607e5a3d9f106dc70394d36edbe281c14dae33bd22ba5bd94",
+    "bytes": 6311
+  },
+  "selection": [
+    {
+      "locator": {
+        "jsonPointer": "/observedAt"
+      },
+      "value": "2026-10-17T07:36:48.864Z"
+    },
+    {
+      "locator": {
+        "jsonPointer": "/packageCommit"
+      },
+      "value": "51f209daf83cd97d64f89881d66533bb59dc57db"
+    },
+    {
+      "locator": {
+        "jsonPointer": "/packageVersion"
+      },
+      "value": "0.1.3"
+    },
+    {
+      "locator": {
+        "jsonPointer": "/inputRevision"
+      },
+      "value": "828d1651aa9f747b67dbddf97d8b197ea8139b6f"
+    },
+    {
+      "locator": {
+        "jsonPointer": "/originalRevisionProbe"
+      },
+      "value": {
+        "exitCode": 128,
+        "stdout": "",
+        "stderr": "fatal: git cat-file: could not get object info\n"
+      }
+    },
+    {
+      "locator": {
+        "jsonPointer": "/missingContractPaths"
+      },
+      "value": [
+        "automations/benny/skills/reproduce-and-fix-issues/SKILL.md",
+        "automations/benny/skills/setup-benny/SKILL.md",
+        "automations/benny/skills/triage-issue-reports/SKILL.md"
+      ]
+    },
+    {
+      "locator": {
+        "jsonPointer": "/inputs"
+      },
+      "value": [
+        {
+          "path": "task-contract.json",
+          "sha256": "5c7cc5cd4d47dbee2b9868698b7c964b080954388a4a852c0d7a7d51564e9018"
+        },
+        {
+          "path": "current-contract.json",
+          "sha256": "bc88e80674de2cd1f2286f41f3875f78782f7af2189e70139e13d7b8d408e9b1"
+        },
+        {
+          "path": "README.md",
+          "sha256": "ad07f6a02c080f9b16f036bf67d8bda34a6cdeda9ac06ca07c65c635813c8ccf"
+        },
+        {
+          "path": "committed-inputs/shared/README.md",
+          "sha256": "6a86b0cdce3f70255382d1e42e9f7e8e2d2ff47116cb30e608136429f1e5b58a"
+        },
+        {
+          "path": "committed-inputs/shared/forge.json",
+          "sha256": "0eb3d994dc21b2fb0874b09d581f88e8d5cdd3a2364e9040263c64c7b801250c"
+        }
+      ]
+    },
+    {
+      "locator": {
+        "jsonPointer": "/sourceManifestScope"
+      },
+      "value": "Only exact operative files compared. Historical outcomes excluded."
+    }
+  ],
+  "limits": [
+    "Selections preserve the exact source value at each locator. Truncated strings carry explicit code-unit bounds.",
+    "A producer-captured return is not a recovered native parent envelope. Missing call IDs, original capture defects and unknown model observations remain missing."
+  ]
+}

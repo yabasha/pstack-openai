@@ -1,0 +1,42 @@
+{
+  "kind": "historical-proof-selection",
+  "source": {
+    "path": "<private-run>/web-checkpoint-2/units/symptom-repro/outputs/symptom-repro/green-tests-diff.raw.json",
+    "sha256": "f7a8b08a6aa3f86540f3048abde8e862f203203df9082f474d32085da3611e34",
+    "bytes": 4385
+  },
+  "selection": [
+    {
+      "locator": {
+        "jsonPointer": "/request/cmd"
+      },
+      "value": "TMPDIR=/mnt/data/pstack-remediation-20261017/attempts-18/outputs/symptom-repro/tmp /mnt/data/pstack-013-evaluation/runtime/bun-linux-x64/bun --no-install test tests/restart-regression.test.mjs tests/healthy.test.mjs && git diff -- store.mjs domain/legacy-state.mjs && git diff --no-index /dev/null domain/storage.mjs"
+    },
+    {
+      "locator": {
+        "jsonPointer": "/result/exit_code"
+      },
+      "value": 1
+    },
+    {
+      "locator": {
+        "jsonPointer": "/result/chunk_id"
+      },
+      "value": "7deb03"
+    },
+    {
+      "locator": {
+        "jsonPointer": "/result/output",
+        "stringCodeUnits": [
+          0,
+          1400
+        ]
+      },
+      "value": "bun test v1.4.2 (744846f84)\n\ntests/healthy.test.mjs:\n(pass) a note is durable and query matching is caller-visible [17.47ms]\n(pass) pricing caller keeps tax and rounding behavior [0.20ms]\n(pass) schema reader preserves required fields [0.04ms]\n(pass) export completes all requested work before returning [7.33ms]\n\ntests/restart-regression.test.mjs:\n(pass) restart reads prior schema without losing a note [1.44ms]\n\n 5 pass\n 0 fail\n 11 expect() calls\nRan 5 tests across 2 files. [36.00ms]\ndiff --git a/domain/legacy-state.mjs b/domain/legacy-state.mjs\nindex 0b59fb7..235be17 100644\n--- a/domain/legacy-state.mjs\n+++ b/domain/legacy-state.mjs\n@@ -1 +1,2 @@\n-export function readLegacyState(serialized){const value=JSON.parse(serialized);return value.items.map(item=>item.title);}\n+import {decodeNotes} from './storage.mjs';\n+export function readLegacyState(serialized){return decodeNotes(serialized).notes.map(note=>note.title);}\ndiff --git a/store.mjs b/store.mjs\nindex 4ab3870..e3f0a46 100644\n--- a/store.mjs\n+++ b/store.mjs\n@@ -1,9 +1,11 @@\n import {mkdir,readFile,writeFile,rename} from 'node:fs/promises';\n import path from 'node:path';\n+import {decodeNotes,serializeNotes} from './domain/storage.mjs';\n export class NoteStore {\n  constructor(directory){this.directory=directory;this.file=path.join(directory,'notes.json');this.state=null;this.pending=Promise.resolve();}\n- async open(){await mkdi"
+    }
+  ],
+  "limits": [
+    "Selections preserve the exact source value at each locator. Truncated strings carry explicit code-unit bounds.",
+    "A producer-captured return is not a recovered native parent envelope. Missing call IDs, original capture defects and unknown model observations remain missing."
+  ]
+}

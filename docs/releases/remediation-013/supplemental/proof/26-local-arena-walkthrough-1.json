@@ -1,0 +1,23 @@
+{
+  "kind": "historical-proof-selection",
+  "source": {
+    "path": "<private-run>/remaining-local/cases/arena-walkthrough/outputs/synthesis/note.md",
+    "sha256": "d227ebf7eff6281fd98988eb64d5a5e94079be37c60350a468ef292bed7de3b8",
+    "bytes": 2395
+  },
+  "selection": [
+    {
+      "locator": {
+        "textCodeUnits": [
+          0,
+          2300
+        ]
+      },
+      "value": "# Synthesis evidence note\n\nB is the base. Each createCache owns a private Map. Each mount owns a distinct record and passes its value directly into disposal. Identity-checked deletion prevents an older mount from invalidating a replacement. There is no module-global mutable cache.\n\nThe fresh read-only judge scored A9 and B10. Parent initially preferred A but accepted the judge extension-cost argument after re-reading both rationales. B accepts arbitrary values without changing callback signatures. Parent comparison and disagreement are retained in ../parent-comparison.md.\n\nA supplied the single finally cleanup structure and the explicit reentrant promise test. Reject A fixed ready-only value, freezing policy and public lifecycle reads. Reject timer restoration and raw put/get/invalidate coordination. No candidates dropped out. Both were terminal and fully inspected before the judge.\n\nEight tests with 30 assertions pass. verification.json retains command, exit and output. Checks cover deferred value visibility, same-key replacement, owner isolation, throwing and rejecting callbacks, repeated/reentrant disposal, asynchronous settlement, undefined values and invalid callback input. The original probe failure remains in ../baseline.json and both candidate packages.\n\nThe API sketch remains candidate-b/shape.md with implementation here. Callback values are references, not snapshots. Never-settling callbacks retain values. A callback must not await its own release promise. Synchronous scheduler-failure handling exists but the exact vendor cannot inject that branch.\n\nProve It Works required executing real candidate and synthesis checks. Separate Before Serializing Shared State assigned distinct directories. Model the Domain required per-mount record ownership. Laziness Protocol kept one owner API. Redesign from First Principles kept grafts inside the selected ownership model. All named leaves were read from frozen version0.1.3.\n\nLimits remain explicit. Installed plugin discovery is unverified. Package freeze is supplied and recorded in invocation; cache has no .git. ORIGINAL provenance object is absent. Requested inherited models/efforts remain unknown as observed. Full HOW/WHY independent methods and cross-model trail review remain blocked or reduced. No named compan"
+    }
+  ],
+  "limits": [
+    "Selections preserve the exact source value at each locator. Truncated strings carry explicit code-unit bounds.",
+    "A producer-captured return is not a recovered native parent envelope. Missing call IDs, original capture defects and unknown model observations remain missing."
+  ]
+}

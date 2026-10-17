@@ -1,0 +1,82 @@
+{
+  "kind": "historical-proof-selection",
+  "source": {
+    "path": "<private-run>/work/notes_workflow_reruns/projects/symptom-repro/outputs/evidence/final-checks.json",
+    "sha256": "e1ec75c81054d1f7ab1daf702a535e708a3f193bffa0da2dfdb369efe27054ca",
+    "bytes": 851
+  },
+  "selection": [
+    {
+      "locator": {
+        "jsonPointer": "/originalUnchanged"
+      },
+      "value": true
+    },
+    {
+      "locator": {
+        "jsonPointer": "/originalSha256"
+      },
+      "value": "6d29ff03bcd7ec42ec2c78ad087d9e8c564dbacd24706475ac2938459e91c25a"
+    },
+    {
+      "locator": {
+        "jsonPointer": "/preservedAlpha"
+      },
+      "value": {
+        "id": "alpha",
+        "title": "Alpha",
+        "body": "First note"
+      }
+    },
+    {
+      "locator": {
+        "jsonPointer": "/savedRecord"
+      },
+      "value": {
+        "id": "b258b460-5a18-4fee-9592-a27d4b5abeec",
+        "title": "Restart proof",
+        "body": "Saved after legacy migration"
+      }
+    },
+    {
+      "locator": {
+        "jsonPointer": "/restartBytesUnchanged"
+      },
+      "value": true
+    },
+    {
+      "locator": {
+        "jsonPointer": "/closed"
+      },
+      "value": [
+        {
+          "port": 62991,
+          "error": "ConnectionRefused"
+        },
+        {
+          "port": 62992,
+          "error": "ConnectionRefused"
+        },
+        {
+          "port": 62993,
+          "error": "ConnectionRefused"
+        }
+      ]
+    },
+    {
+      "locator": {
+        "jsonPointer": "/ownedTerminalEvidence"
+      },
+      "value": [
+        "outputs/evidence/processes.json",
+        "outputs/evidence/invalid-writer-process.jsonl",
+        "outputs/evidence/migrated-first-process.jsonl",
+        "outputs/evidence/migrated-restart-process.jsonl"
+      ]
+    }
+  ],
+  "limits": [
+    "Selections preserve the exact source value at each locator. Truncated strings carry explicit code-unit bounds.",
+    "A producer-captured return is not a recovered native parent envelope. Missing call IDs, original capture defects and unknown model observations remain missing."
+  ]
+}

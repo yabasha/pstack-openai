@@ -1,0 +1,75 @@
+{
+  "caseId": "authorized-program",
+  "packageVersion": "0.1.3",
+  "packageCommit": "51f209daf83cd97d64f89881d66533bb59dc57db",
+  "host": "codex",
+  "hostMode": "Historical native Local task-scoped fixture observation",
+  "date": "2026-10-17",
+  "input": "State full autopilot for this independent PR queue and wait for my go. I retain one named PR. After my go, run authorized owners through verified merge, with real durable status. Do not invent an hourly scheduler if persistent wake is unavailable. Actual task fixture revision 66a96016bb748e93157c484234f2035d49ccb38a.",
+  "observedOutput": "The actor stated the full-autopilot protocol and withheld execution because no subsequent explicit go or real PR coordinates were supplied. Local receipt persistence is observed, but no PR lifecycle, owner/swarm lane, countersign, forge outcome or wake registration occurred.",
+  "status": "blocked",
+  "execution": "workers",
+  "inputRevision": "66a96016bb748e93157c484234f2035d49ccb38a",
+  "sourcePaths": [
+    "skills/poteto-mode/playbooks/autopilot-full.md",
+    "skills/poteto-mode/SKILL.md",
+    "skills/poteto-mode/references/bugbot-triage.md",
+    "skills/poteto-mode/playbooks/babysit.md",
+    "skills/poteto-mode/playbooks/shipping.md",
+    "skills/swarm/SKILL.md",
+    "skills/no-comments/SKILL.md",
+    "skills/principle-prove-it-works/SKILL.md",
+    "skills/show-me-your-work/SKILL.md",
+    "skills/show-me-your-work/scripts/log.sh",
+    "skills/show-me-your-work/references/decision-log-template.tsv"
+  ],
+  "documentedCapabilities": [
+    "Frozen source instructions only. Current-main qualification is not established."
+  ],
+  "exposedTools": [
+    "exec"
+  ],
+  "artifacts": [
+    "docs/releases/remediation-013/local/authorized-program/review-c-06/assessment.json",
+    "docs/releases/remediation-013/local/authorized-program/review-c-06/proof/supplied-input.json",
+    "docs/releases/remediation-013/local/authorized-program/review-c-06/proof/native-source-read.json",
+    "docs/releases/remediation-013/local/authorized-program/review-c-06/proof/task-result-prefix.json"
+  ],
+  "limits": [
+    "Explicit go for actual lifecycle scope",
+    "Real authorized PR coordinates and operator-retained item",
+    "Actual owner/swarm, forge and wake observations",
+    "The public source excerpt covers the listed matched paths only. Other source reads assessed independently remain outside this narrow public excerpt.",
+    "Only the actual operations listed in this record have narrow public bindings. Other operations from the independent assessment remain unprojected. No missing operation is invented.",
+    "The exposed tool name exec is retained from the actual scoped native custom-tool call. The nested tools.exec_command call matches this public command event. command_execution remains an event type only."
+  ],
+  "priorActionIdentities": [],
+  "permissions": {
+    "execution": "granted",
+    "writes": "granted",
+    "externalActions": "denied"
+  },
+  "models": {
+    "requested": "inherit-parent",
+    "actual": "unknown"
+  },
+  "successfulOperations": [
+    {
+      "operation": "read",
+      "tool": "exec",
+      "evidence": "docs/releases/remediation-013/local/authorized-program/review-c-06/proof/native-source-read.json"
+    }
+  ],
+  "nativeObservations": [
+    {
+      "observation": "review-outcome",
+      "evidence": "docs/releases/remediation-013/local/authorized-program/review-c-06/assessment.json",
+      "reviewedBy": "/root/grade_remediation_local_c"
+    },
+    {
+      "observation": "supplied-input",
+      "evidence": "docs/releases/remediation-013/local/authorized-program/review-c-06/proof/supplied-input.json",
+      "reviewedBy": "/root/project_historical_local"
+    }
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "kind": "selected-fixture-result-fields",
+  "caseId": "absent-workers",
+  "attemptId": "review-c-11",
+  "originalLocator": "cross-host-extra/local/projects/absent-workers/outputs/original-no-worker.json",
+  "sourceSha256": "cece2d1c98ffd3aefdcd0c4d720668cf4468f0a0766a3ced93bc1f06b08c1474",
+  "sourceBytes": 934,
+  "transformation": "Named JSON fields selected by exact JSON Pointer. Task-owned absolute paths replaced with declared placeholders. Other fields omitted. These are result-artifact values, not synthesized tool execution evidence. Public selection is limited to eight short inspected fields. Longer output and unselected fields remain private.",
+  "fields": [
+    {
+      "pointer": "/caseId",
+      "value": "absent-workers"
+    },
+    {
+      "pointer": "/inputRevision",
+      "value": "13f21dbe51d5506c2547ac03f50d2cd73a59b413"
+    }
+  ]
+}

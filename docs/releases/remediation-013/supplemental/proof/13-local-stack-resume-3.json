@@ -1,0 +1,23 @@
+{
+  "kind": "historical-proof-selection",
+  "source": {
+    "path": "<private-run>/remaining-local/cases/stack-resume/outputs/stack-resume.result.md",
+    "sha256": "0c0b5f9d37c4da68f919cb422e6ad394d8fa2a679a1df9998c844e1ddde66273",
+    "bytes": 78077
+  },
+  "selection": [
+    {
+      "locator": {
+        "textCodeUnits": [
+          0,
+          2300
+        ]
+      },
+      "value": "# Stack resume actual attempt\n\nThe stack remains blocked before another stack write. This is a factual read-only attempt, not a host grade. The fixture supplies two symbolic PR records and lacks the third PR, exact revisions, continuation brief, verdicts and destination receipts required by the request. No forge action, branch mutation, schedule, configuration change, merge, closure or auto-merge occurred.\n\nThe independent case coordinator is `/root/stack_resume`. Its prospective assignment is `remaining05-stack`, owned output is this directory, and requested model and effort are `inherit-parent`. Actual model and effort are unknown. The parent owns the actual spawn receipt and must inspect this terminal result before accepting it. No PR owners or verification lanes were dispatched because there are no valid exact PR revisions to assign.\n\n## Inputs and source boundary\n\nThe observed case HEAD is `0d7c8207fe8f08c2fc230cf7cc54f271e368f70d`. It matched before dependent work and again during capture. The working tree was clean. The case repository has no remote. `git cat-file -t febb864b44d58e943ef5aff51be36d7a22d7e308` exited 128 because that original revision object is unavailable. The supplied copied ORIGINAL inputs were read and hashed. Historical identity with the unavailable object is unverified.\n\nOnly the frozen package at `<frozen-host-fixture>/runtime/plugins/cache/pstack-frozen-verification/pstack-openai/0.1.3` supplied workflow instructions. Its manifest reports `0.1.3`. The requested source freeze is `51f209daf83cd97d64f89881d66533bb59dc57db`. This extracted package has no Git metadata, so that commit is user-supplied provenance rather than a locally resolved package HEAD. Individual operative file hashes are in `source-hashes.json`. Reading these files does not prove installed discovery.\n\nThe full role, full mode with Principles, all supplied operative source files, model roles, host capabilities, assignment contract and workflow ownership were read. The selected Autopilot-stack steps were copied verbatim into `checklist.md`. All explicitly named adapted contracts exist and were read. The narrative says one adapted dependency is unavailable but does not identify it. The dependency-withheld branch therefore p"
+    }
+  ],
+  "limits": [
+    "Selections preserve the exact source value at each locator. Truncated strings carry explicit code-unit bounds.",
+    "A producer-captured return is not a recovered native parent envelope. Missing call IDs, original capture defects and unknown model observations remain missing."
+  ]
+}

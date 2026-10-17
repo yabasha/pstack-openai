@@ -1,0 +1,64 @@
+{
+  "kind": "historical-proof-selection",
+  "source": {
+    "path": "<private-run>/remaining-local/cases/candidate-cross-review/outputs/synthesis/verification.json",
+    "sha256": "2761ebb63daa2828453acd5615bbc096e9662db5f7cd0da234843bbeda2d1925",
+    "bytes": 819
+  },
+  "selection": [
+    {
+      "locator": {
+        "jsonPointer": "/inputRevision"
+      },
+      "value": "8ad91868ca4f45baa985d4500d7a30824c7043cf"
+    },
+    {
+      "locator": {
+        "jsonPointer": "/vendorHash"
+      },
+      "value": "d33e8d36600ad5df008657e478e39f9100a347098b4176f37923e5056cb3427f"
+    },
+    {
+      "locator": {
+        "jsonPointer": "/baselineExpectedFailure"
+      },
+      "value": true
+    },
+    {
+      "locator": {
+        "jsonPointer": "/records"
+      },
+      "value": [
+        {
+          "command": [
+            "git",
+            "rev-parse",
+            "HEAD"
+          ],
+          "exitCode": 0,
+          "stdout": "8ad91868ca4f45baa985d4500d7a30824c7043cf\n",
+          "stderr": ""
+        },
+        {
+          "command": [
+            "/opt/homebrew/Cellar/bun/1.4.2/bin/bun",
+            "<private-run>/remaining-local/cases/candidate-cross-review/committed-inputs/shared/additional/cache/probe.mjs"
+          ],
+          "exitCode": 1,
+          "stdout": "teardown error: TypeError: undefined is not an object (evaluating 'get(key).ready')\n",
+          "stderr": ""
+        }
+      ]
+    },
+    {
+      "locator": {
+        "jsonPointer": "/behavioralChecks"
+      },
+      "value": 10
+    }
+  ],
+  "limits": [
+    "Selections preserve the exact source value at each locator. Truncated strings carry explicit code-unit bounds.",
+    "A producer-captured return is not a recovered native parent envelope. Missing call IDs, original capture defects and unknown model observations remain missing."
+  ]
+}

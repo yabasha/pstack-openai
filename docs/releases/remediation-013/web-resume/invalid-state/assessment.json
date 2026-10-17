@@ -1,0 +1,56 @@
+{
+  "documentType": "historical-independent-assessment",
+  "caseId": "invalid-state",
+  "host": "chatgpt",
+  "packageVersion": "0.1.3",
+  "inputRevision": "4138e161c27cafffd2baaab6bf4ca53e86a57433",
+  "sourceFreeze": "51f209daf83cd97d64f89881d66533bb59dc57db",
+  "status": "pass",
+  "reason": "The constructive model, semantic ID brands, parsing boundary, exhaustive switch and list distinction are backed by actual compiler and runtime outputs. Independent replay matches all twelve expected compiler exits, including seven invalid probes, and literal runtime checks.",
+  "limits": [
+    "TypeScript structural extra fields, assertion bypass, mutable Date validity and erased brands are explicitly limited. The model is an owned proof fixture, not an edit to production source.",
+    "The original wrong compiler-exit expectation and two input hash bookkeeping errors remain preserved."
+  ],
+  "gradeSource": {
+    "path": "grades/grade_web_resume/result.json",
+    "sha256": "9422208a4b775be8e33cd9e76cfacd02402f1bbcfe91c1c52c0b6dcf3aa29896",
+    "pointer": "/cases/3"
+  },
+  "contract": {
+    "origin": {
+      "path": "runtime/package-main-4138e16/docs/parity/cases/skills/principle-type-system-discipline.json",
+      "sha256": "fd5996e95441e4fb2ed2e546a225513bed60d5f7a2d123431e8c8b5a00d3f6a7",
+      "bytes": 1997,
+      "pointers": [
+        ""
+      ]
+    },
+    "selections": [
+      {
+        "pointer": "",
+        "value": {
+          "id": "invalid-state",
+          "sourcePaths": [
+            "skills/principle-type-system-discipline/SKILL.md"
+          ],
+          "prompt": "Review a typed task model { completed: boolean; completedAt?: Date }, interchangeable UserId and OrderId strings, an unchecked JSON payload, and a switch over task states. Make invalid typed states unrepresentable or identify the actual language limit. Explain where a non-empty list is needed for head and why sum can keep a plain list.",
+          "requirements": [
+            "Inspect the model and relevant language/compiler constraints.",
+            "Use authorized file access and compiler execution when available; do not install tools incidentally."
+          ],
+          "expectedFull": "Replace contradictory optional fields with explicit open and done variants or one authoritative completion value. Construct constrained values, brand semantic IDs, parse external data at boundaries, avoid unsupported casts, require exhaustive handling, and derive types from owned schemas where available. Strengthen types where an operation is partial, keeping total sum on plain lists. Verify with the available compiler that an invalid state or missing variant fails, or identify the actual language limit and the remaining validation requirement.",
+          "expectedReduced": "When source, writes, or compiler execution are unavailable, provide the proposed typed model and explain actual language limits. State which invalid states the construction excludes, which checks remain runtime checks, and which edits or compiler checks were not performed.",
+          "expectedBlocked": "If the relevant language or source cannot be established sufficiently to assess the invariant, report the missing inputs or denied capability and leave the result unverified.",
+          "forbiddenClaims": [
+            "An unchecked cast proves validity.",
+            "Every language can encode every invariant.",
+            "A proposed type model or structural package check proves compiler rejection or host behavior.",
+            "Unavailable writes or checks succeeded."
+          ]
+        }
+      }
+    ]
+  },
+  "qualification": "Independent historical assessment only. No canonical release validation or current candidate-source qualification is claimed.",
+  "nativeOperationLimit": "Manual/native operation captures are distinguished from platform transcript exports. Missing child or parent envelopes remain missing."
+}

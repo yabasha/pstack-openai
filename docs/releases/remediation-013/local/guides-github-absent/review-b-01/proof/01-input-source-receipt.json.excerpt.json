@@ -1,0 +1,15 @@
+{
+  "kind": "selected-fixture-result-fields",
+  "caseId": "guides-github-absent",
+  "attemptId": "review-b-01",
+  "originalLocator": "remaining-local/cases/guides-github-absent/outputs/input-source-receipt.json",
+  "sourceSha256": "e1b6f04ae1dccb9119a949311c5bb75045687698081ec7de16d6b59b70cc37ba",
+  "sourceBytes": 26605,
+  "transformation": "Named JSON fields selected by exact JSON Pointer. Task-owned absolute paths replaced with declared placeholders. Other fields omitted. These are result-artifact values, not synthesized tool execution evidence. Public selection is limited to eight short inspected fields. Longer output and unselected fields remain private.",
+  "fields": [
+    {
+      "pointer": "/caseId",
+      "value": "guides-github-absent"
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "kind": "historical-proof-selection",
+  "source": {
+    "path": "<private-run>/cross-host-extra/local/projects/typed-boundary/outputs/independent-review.md",
+    "sha256": "8aee50a7b775345834f040ed7e18cb4ea1c25815fb88264796bce00cb43f9553",
+    "bytes": 4303
+  },
+  "selection": [
+    {
+      "locator": {
+        "textCodeUnits": [
+          0,
+          2300
+        ]
+      },
+      "value": "# Fresh independent diff and comment review\n\nAssignment `typed-review-v2-1` completed as a fresh, independent, read-only review.\n\nIndependently observed HEAD matches the assigned input revision exactly: `9d876955f79e272f7edc5a1c34a6b52764eede12`. Requested model and effort were inherit-parent. Actual model and effort remain unknown.\n\nReviewed originals under `committed-inputs/shared/additional/types/`: `context.ts`, `boundary.ts`, and `README.md`. Reviewed complete v2 source, runtime tests, compile-only tests, `checks.json`, and `report.md`, plus `outputs/method-limits.md` and `outputs/practices-review.md`.\n\nNo actionable source or test findings within the assigned scope.\n\n- All exported helpers use object arguments. `hasUser(candidate)` retains the wrapper and declares the exact predicate `candidate is { user: User }`. The compile-only fixture verifies access to `candidate.user` after narrowing.\n- `decode` treats JSON output as `unknown` and delegates validation and projection to the existing `UserSchema`. `User` remains derived from that schema. No duplicate validator or invented Zod integration appears.\n- `hasUser` checks the actual schema through its parser. This is valid for the inspected non-coercing, non-defaulting fixture on stable inputs. Arbitrary getters, proxies, later mutation, and future transforming schemas remain limitations explicitly documented by the producer.\n- `summarizeChecks` derives its input with `Pick<ChecksMessage, 'revision' | 'checks'>`. It does not invent `totalCount` or duplicate the generated shape.\n- `newest` preserves first-element selection and exposes the empty result through `Session | undefined`. `sum` keeps plain `number[]` and preserves `sum([]) === 0`.\n- State variants carry their own payloads, and `stateText` includes the inline exhaustive `never` check.\n- Runtime tests exercise real exports with literal outcomes, invalid inputs, throwing accessors, empty collections, first-item identity, and each state variant. The test suite would fail if the imported functions returned `undefined`.\n\nComment actions:\n\n- Proposed deletions: zero.\n- Keep `boundary.test-d.ts:5`, the `@ts-expect-error` negative compiler assertion. It deliberately tests that `unknown` cannot satisfy `User` before the guard. It is compile-only proof, not a"
+    }
+  ],
+  "limits": [
+    "Selections preserve the exact source value at each locator. Truncated strings carry explicit code-unit bounds.",
+    "A producer-captured return is not a recovered native parent envelope. Missing call IDs, original capture defects and unknown model observations remain missing."
+  ]
+}

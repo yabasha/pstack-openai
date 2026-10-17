@@ -1,0 +1,31 @@
+{
+  "kind": "selected-fixture-result-fields",
+  "caseId": "migration-end-state",
+  "attemptId": "review-a-14",
+  "originalLocator": "work/local_compiler_cases/projects/pricing-domain/deliverables/implementation/phase2.json",
+  "sourceSha256": "12a025fe5f7a595455aff4e73e155b1245d4d4206c7a94f2bdb4fbc90c0cc10f",
+  "sourceBytes": 289,
+  "transformation": "Named JSON fields selected by exact JSON Pointer. Task-owned absolute paths replaced with declared placeholders. Other fields omitted. These are result-artifact values, not synthesized tool execution evidence. Public selection is limited to eight short inspected fields. Longer output and unselected fields remain private.",
+  "fields": [
+    {
+      "pointer": "/command",
+      "value": [
+        "bun",
+        "--no-install",
+        "<private-run>/work/local_compiler_cases/projects/pricing-domain/deliverables/implementation/domain-check.mjs"
+      ]
+    },
+    {
+      "pointer": "/status",
+      "value": 0
+    },
+    {
+      "pointer": "/stdout",
+      "value": "isolated domain arithmetic passed\n"
+    },
+    {
+      "pointer": "/stderr",
+      "value": ""
+    }
+  ]
+}

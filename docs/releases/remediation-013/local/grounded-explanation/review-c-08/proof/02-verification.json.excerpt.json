@@ -1,0 +1,36 @@
+{
+  "kind": "selected-fixture-result-fields",
+  "caseId": "grounded-explanation",
+  "attemptId": "review-c-08",
+  "originalLocator": "remaining-local/cases/grounded-explanation/outputs/verification.json",
+  "sourceSha256": "d63ed9042f5951890e54f48964a82a6fc1af151922dc9c3cfcffa701bf6635cd",
+  "sourceBytes": 11862,
+  "transformation": "Named JSON fields selected by exact JSON Pointer. Task-owned absolute paths replaced with declared placeholders. Other fields omitted. These are result-artifact values, not synthesized tool execution evidence. Public selection is limited to eight short inspected fields. Longer output and unselected fields remain private.",
+  "fields": [
+    {
+      "pointer": "/inputRevision",
+      "value": "fa0bdcdb3d4dd4fbe56b63229d52d4bfc4aa6fad"
+    },
+    {
+      "pointer": "/status/command",
+      "value": [
+        "git",
+        "status",
+        "--short",
+        "--untracked-files=no"
+      ]
+    },
+    {
+      "pointer": "/status/exitCode",
+      "value": 0
+    },
+    {
+      "pointer": "/status/stdout",
+      "value": ""
+    },
+    {
+      "pointer": "/status/stderr",
+      "value": ""
+    }
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "kind": "selected-fixture-result-fields",
+  "caseId": "supported-authoring",
+  "attemptId": "review-b-11",
+  "originalLocator": "authoring/local/outputs/evidence/link-probes.json",
+  "sourceSha256": "c1c6a485162c9eacee1d70f430fd131de6ef449bc77c9073c15630d69a45cf86",
+  "sourceBytes": 2074,
+  "transformation": "Named JSON fields selected by exact JSON Pointer. Task-owned absolute paths replaced with declared placeholders. Other fields omitted. These are result-artifact values, not synthesized tool execution evidence. Public selection is limited to eight short inspected fields. Longer output and unselected fields remain private.",
+  "fields": [
+    {
+      "pointer": "/0/expected",
+      "value": true
+    },
+    {
+      "pointer": "/1/expected",
+      "value": false
+    },
+    {
+      "pointer": "/2/expected",
+      "value": true
+    },
+    {
+      "pointer": "/3/expected",
+      "value": false
+    }
+  ]
+}

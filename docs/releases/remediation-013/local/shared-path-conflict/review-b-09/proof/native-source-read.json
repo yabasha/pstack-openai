@@ -1,0 +1,34 @@
+{
+  "schemaVersion": 1,
+  "kind": "native-command-event-excerpt",
+  "caseId": "shared-path-conflict",
+  "attemptId": "review-b-09",
+  "inputRevision": "5c68f1fe4b29243ed37889507222cb408af2bfef",
+  "originalLocator": "cross-host-extra/local/actors/cross-host-0/events.jsonl",
+  "sourceSha256": "bf9146e030e58849657800703173e0efa6cc4f1c4850c83f5862e3b735a2eb95",
+  "itemId": "item_5",
+  "startedLine": 9,
+  "completedLine": 10,
+  "originalEventType": "item.completed",
+  "observedOperationType": "command_execution",
+  "command": "/bin/zsh -lc 'cat <installed-frozen-package>/skills/poteto-mode/SKILL.md'",
+  "aggregatedOutputPrefix": "---\nname: Poteto Mode\ndescription: poteto's agent style for concise, detailed responses, deliberate subagents, unslopped prose, simple code, and verified work. Use for poteto, /poteto-mode, or requests to work in this style.\ndisable-model-invocation: true\nmode: true\nicon: crown\ncolor: yellow\nreminder: New task? Playbook match or rigor needed -> apply /poteto-mode. Casual turn or user opts out -> don't.\n---\n\n# Poteto mode\n\n## Portable activation and boot\n\nExplicit invocation by poteto, /poteto-mode, or a request for this style activates this workflow subject to [workflow ownership](../../refere",
+  "originalAggregatedOutputCharacters": 32329,
+  "exitCode": 0,
+  "status": "completed",
+  "scope": "This is a source read by the case batch coordinator. It is not represented as a child worker read or as proof of all child instructions.",
+  "clock": "The public event has no timestamp. Line order is retained. No duration or clock interval is inferred.",
+  "transformation": "Exact event fields selected. Absolute task and installed-package paths are replaced with declared placeholders. Output is a prefix, not the complete source read. No other event or browser context is included. Only these literal or explicitly loop-listed registered source names are matched. This does not prove every registered source path was read. Native callable metadata is corroborated against a scoped private callsite. Protected or unrelated payload contents are not copied or decoded.",
+  "sourceScopeMatchedByCommand": [
+    "skills/poteto-mode/SKILL.md"
+  ],
+  "nativeCallBinding": {
+    "originalLocator": "native-captures-sanitized-v2/cross-host-0/01a148b5-fd72-7933-a40b-6e09f507e992.jsonl",
+    "sourceSha256": "aa6df00aa06b1294a21208d9d35dc5ac2d8bae026bb788d43791a30d1115e83d",
+    "line": 3,
+    "callId": "call_e3608fba86ce40f4beadf7c5d9cb7823",
+    "observedToolName": "exec",
+    "observedNestedCallsite": "tools.exec_command",
+    "corroboration": "The actual scoped native custom-tool call invokes tools.exec_command with the exact command parsed from this public command_execution event. Only the callable identity and locator are projected. Its surrounding payload remains private."
+  }
+}

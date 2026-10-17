@@ -1,0 +1,80 @@
+{
+  "scope": "Publication and source checks; no workflow or release qualification",
+  "originalSuite": {
+    "sourceSha256": "14ccf7c4a82b9135ad7fb594dca038ebfabc047f44cbbcffc5a76c49cbe4ad3e",
+    "args": [
+      "/opt/homebrew/bin/python3",
+      "-B",
+      "-m",
+      "unittest",
+      "discover",
+      "-s",
+      "tests"
+    ],
+    "startedAt": "2026-10-17T15:46:52.791Z",
+    "finishedAt": "2026-10-17T15:53:45.920Z",
+    "exitCode": 1,
+    "tests": 235,
+    "passed": 232,
+    "errors": 3,
+    "errorDisposition": [
+      "Two report-only remnant errors corrected through publication-adjustments.json; affected110 tests rerun green",
+      "Old-freeze provenance error retained: operative package differs in inventory identity"
+    ]
+  },
+  "correctedAffectedChecks": {
+    "at": "2026-10-17T15:56:11.825Z",
+    "checks": [
+      {
+        "args": [
+          "/opt/homebrew/bin/python3",
+          "-B",
+          "-m",
+          "unittest",
+          "tests.test_full_package_update",
+          "tests.test_dependencies",
+          "tests.test_source_inventory",
+          "tests.test_inventory_closed",
+          "tests.test_validate_package",
+          "tests.test_catalog",
+          "tests.test_validate_evidence"
+        ],
+        "startedAt": "2026-10-17T15:55:22.149Z",
+        "finishedAt": "2026-10-17T15:56:08.455Z",
+        "exitCode": 0,
+        "stdout": "",
+        "stderr": "..............................................................................................................\n----------------------------------------------------------------------\nRan 110 tests in 46.076s\n\nOK\n"
+      },
+      {
+        "args": [
+          "/opt/homebrew/bin/python3",
+          "-B",
+          "tools/validate_package.py",
+          "--root",
+          ".",
+          "--inventory",
+          "docs/parity/inventory.json"
+        ],
+        "startedAt": "2026-10-17T15:56:08.455Z",
+        "finishedAt": "2026-10-17T15:56:11.807Z",
+        "exitCode": 0,
+        "stdout": "Package structural checks passed; host behavior remains unverified.\n",
+        "stderr": ""
+      },
+      {
+        "args": [
+          "git",
+          "diff",
+          "--check"
+        ],
+        "startedAt": "2026-10-17T15:56:11.807Z",
+        "finishedAt": "2026-10-17T15:56:11.825Z",
+        "exitCode": 0,
+        "stdout": "",
+        "stderr": ""
+      }
+    ],
+    "supersedes": "full-suite.json2reportremnant errors fixed by explicit narrative adjustments and manifest refresh; original235test run remains retained. Old-freeze provenance rejection unresolved."
+  },
+  "releaseQualified": false
+}

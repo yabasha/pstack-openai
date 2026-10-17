@@ -1,0 +1,41 @@
+{
+  "kind": "selected-fixture-result-fields",
+  "caseId": "contiguous-verified-stack",
+  "attemptId": "review-b-14",
+  "originalLocator": "work/repair_real_builds/pr101/result.json",
+  "sourceSha256": "1c623f06349abdf6f7f5c7854399320a9f70489f549a6d9cf6b95502265d8a39",
+  "sourceBytes": 10948,
+  "transformation": "Named JSON fields selected by exact JSON Pointer. Task-owned absolute paths replaced with declared placeholders. Other fields omitted. These are result-artifact values, not synthesized tool execution evidence. Public selection is limited to eight short inspected fields. Longer output and unselected fields remain private.",
+  "fields": [
+    {
+      "pointer": "/assignmentId",
+      "value": "real-build-independent-pr101-01"
+    },
+    {
+      "pointer": "/inputRevision",
+      "value": "4a7dde94ab2778837e4c932e53cc3484d2e74dfd"
+    },
+    {
+      "pointer": "/requestedModel",
+      "value": "inherit-parent"
+    },
+    {
+      "pointer": "/observedModel",
+      "value": "unknown"
+    },
+    {
+      "pointer": "/verdict",
+      "value": "PASS+NOTES"
+    },
+    {
+      "pointer": "/changed/verdict",
+      "value": null
+    },
+    {
+      "pointer": "/errors",
+      "value": [
+        "Initial root-level playbooks/shipping.md path absent; corrected complete nested playbook read before dependent actions."
+      ]
+    }
+  ]
+}

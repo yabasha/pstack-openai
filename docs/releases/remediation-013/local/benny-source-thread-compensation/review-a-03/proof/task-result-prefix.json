@@ -1,0 +1,16 @@
+{
+  "kind": "task-result-file-excerpt",
+  "caseId": "benny-source-thread-compensation",
+  "attemptId": "review-a-03",
+  "inputRevision": "0c3afc8dce70e6475ac0eb91fb3cd1e794129476",
+  "originalLocator": "remaining-local/cases/benny-source-thread-compensation/outputs/benny-source-thread-compensation.result.md",
+  "sourceSha256": "06b1812f1a2635c65ba3696b326dc8d152d060619a5c5da183c78cfa51ef00d7",
+  "sourceWasDirectlyListedByIndependentGrade": false,
+  "characterRange": {
+    "start": 0,
+    "endExclusive": 536,
+    "total": 53828
+  },
+  "content": "# Benny source-thread compensation attempt\n\nThe supplied synthetic ticket was created and its source verdict is missing. Compensation remains blocked. No source message, tracker mutation, retry, competing fix, PR, automation, or schedule was attempted.\n\nFor the operator, this preserves the failed handoff without duplicating the ticket or posting a root message. The next owner receives the exact supplied action identity, fixture state, source snapshots, hashes, binding metadata, and unresolved gates.\n\n## Inputs and source boundary\n",
+  "transformation": "An inspected prefix of the actual task-result file is projected. Task-owned absolute paths use declared placeholders. The prefix may omit later qualifications. The independent assessment and its limits govern the proposed grade. This is neither a new grade nor a native callable-operation claim."
+}

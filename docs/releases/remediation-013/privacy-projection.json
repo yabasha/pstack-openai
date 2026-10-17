@@ -1,0 +1,1194 @@
+{
+  "kind": "coordinator-publication-path-projection",
+  "at": "2026-10-17T15:55:04.211Z",
+  "sourceFixCommit": "cf96c2dcbaea2bb8c07b649a47b5c66c51f63c13",
+  "placeholders": {
+    "<private-run>": "Task-owned Local remediation run directory",
+    "<frozen-host-fixture>": "Task-owned frozen instruction-host fixture",
+    "<private-native-history>": "Private native transcript directory",
+    "<local-user>": "Local user home"
+  },
+  "files": [
+    {
+      "path": "docs/releases/remediation-013/web-resume/local-project-discovery/observation.json",
+      "curatorOrPriorProjectionSha256": "fdcc98a0109a3a4aab72f58db56f2986e3198346262e9fbd30403fe781a516c0",
+      "publishedSha256": "7c44e3a0a071978c8967c3355c5e59f4e8d5760769744e445b783205083cc37e",
+      "bytes": 17799,
+      "transformation": "Replace only declared local path prefixes; refresh derived projected-file manifest digests where applicable. Original private source hashes and qualitative grades are unchanged."
+    },
+    {
+      "path": "docs/releases/remediation-013/web-resume/independent-checks.json",
+      "curatorOrPriorProjectionSha256": "a11a1bcc85a44f80e22f8f8a72f876c5c3ae29038a668a10da95fdc56983874a",
+      "publishedSha256": "8edced992d0cf1ffc039f9b971dc77b0d98d981da01e69fe9cb489213468adcb",
+      "bytes": 27714,
+      "transformation": "Replace only declared local path prefixes; refresh derived projected-file manifest digests where applicable. Original private source hashes and qualitative grades are unchanged."
+    },
+    {
+      "path": "docs/releases/remediation-013/supplemental/proof/11-local-symptom-repro-1.json",
+      "curatorOrPriorProjectionSha256": "03dab116359927a5d8201ab2c031f2d5ec06cf1b607cc37f0284cd41540117e8",
+      "publishedSha256": "54264b150637b7db0ba6f8df48038e50b1fa83fa7100f14ae1512f91780e4725",
+      "bytes": 2025,
+      "transformation": "Replace only declared local path prefixes; refresh derived projected-file manifest digests where applicable. Original private source hashes and qualitative grades are unchanged."
+    },
+    {
+      "path": "docs/releases/remediation-013/supplemental/proof/09-local-typed-boundary-1.json",
+      "curatorOrPriorProjectionSha256": "52b7df0a5aa8941475648058ce29a56f70d53eeeb0f1cd3d08b06e8bf5cb61cb",
+      "publishedSha256": "133c704aaa986a711b02765106363bd7d72c819a8011226d18ece2f2e7a0c468",
+      "bytes": 1463,
+      "transformation": "Replace only declared local path prefixes; refresh derived projected-file manifest digests where applicable. Original private source hashes and qualitative grades are unchanged."
+    },
+    {
+      "path": "docs/releases/remediation-013/supplemental/proof/44-web-contiguous-verified-stack-3.json",
+      "curatorOrPriorProjectionSha256": "939df3bb244dd25ed986fd4072242c2d351bdf82a7bf15253048c9c4d21b2d57",
+      "publishedSha256": "49c17d4967ed14166ea4793d18fd72f40664908e05ff5b389879fe4b8cd8f5cb",
+      "bytes": 2373,
+      "transformation": "Replace only declared local path prefixes; refresh derived projected-file manifest digests where applicable. Original private source hashes and qualitative grades are unchanged."
+    },
+    {
+      "path": "docs/releases/remediation-013/supplemental/proof/20-local-unsupported-selected-model-1.json",
+      "curatorOrPriorProjectionSha256": "e5cffdd37cf8b0cea3ea1fe2e3964a1463c7a7d208b65cff4e719664fe1c8497",
+      "publishedSha256": "5b62f739b05fd62578ae2b47c98cc1f4f67e412053633ae9ef9a4ca795220459",
+      "bytes": 1892,
+      "transformation": "Replace only declared local path prefixes; refresh derived projected-file manifest digests where applicable. Original private source hashes and qualitative grades are unchanged."
+    },
+    {
+      "path": "docs/releases/remediation-013/supplemental/proof/31-web-invalid-input-1.json",
+      "curatorOrPriorProjectionSha256": "c32aedf1c3656009af3588dca6f20e7d0e839de0ed3ae11d5ca94b41adddcea1",
+      "publishedSha256": "0944271f2bad39413a5421583699a10443a76b76d03fccdf460c770c64f6d7f4",
+      "bytes": 1282,
+      "transformation": "Replace only declared local path prefixes; refresh derived projected-file manifest digests where applicable. Original private source hashes and qualitative grades are unchanged."
+    },
+    {
+      "path": "docs/releases/remediation-013/supplemental/proof/39-web-real-render-3.json",
+      "curatorOrPriorProjectionSha256": "5546aa585e04323b04ac3019c27e2d1d30fd594e0a7a09b65fb9911aed0c4f34",
+      "publishedSha256": "759852c1612835f8aec0d126a7ac31450c16a1ab957733959a48c5ee9f385093",
+      "bytes": 2765,
+      "transformation": "Replace only declared local path prefixes; refresh derived projected-file manifest digests where applicable. Original private source hashes and qualitative grades are unchanged."
+    },
+    {
+      "path": "docs/releases/remediation-013/supplemental/proof/32-web-package-support-contracts-2.json",
+      "curatorOrPriorProjectionSha256": "442cec41af565a6dd8b56485658da6dc2bbdc5b47d26b7df2214c0f93939d956",
+      "publishedSha256": "c66b5a87edd28d53eb226084aef38a7d032367634769dfdbfd331b4baa443ed4",
+      "bytes": 1409,
+      "transformation": "Replace only declared local path prefixes; refresh derived projected-file manifest digests where applicable. Original private source hashes and qualitative grades are unchanged."
+    },
+    {
+      "path": "docs/releases/remediation-013/supplemental/proof/07-local-resume-revision-1.json",
+      "curatorOrPriorProjectionSha256": "2e03fc9cb67a660bc026ed1a7e5f24e5e56b0bd56271e223f90daffd7feaf8e0",
+      "publishedSha256": "77239df4eaf6b3db184b315d2d437898500506f93c4bfca381bd72d296c7d799",
+      "bytes": 4320,
+      "transformation": "Replace only declared local path prefixes; refresh derived projected-file manifest digests where applicable. Original private source hashes and qualitative grades are unchanged."
+    },
+    {
+      "path": "docs/releases/remediation-013/supplemental/proof/25-local-legal-header-1.json",
+      "curatorOrPriorProjectionSha256": "ae4bca0a20479bb6cfc389557ce5fee72536ac402efbe028e3c3a9cc8dc98743",
+      "publishedSha256": "611ccdcdd28ef2260481cd61e764ff6193eb092c41e4089e2ff281ef3fe6f83a",
+      "bytes": 1415,
+      "transformation": "Replace only declared local path prefixes; refresh derived projected-file manifest digests where applicable. Original private source hashes and qualitative grades are unchanged."
+    },
+    {
+      "path": "docs/releases/remediation-013/supplemental/proof/13-local-stack-resume-1.json",
+      "curatorOrPriorProjectionSha256": "76ee6c1dabefc7b59c7790d789804466b002caa7e4aa2e17db486fade3a5714e",
+      "publishedSha256": "a59c93764bf972648349c3e78fe3618702ec70a2dae1fe3a7aafd1d9a12ff33b",
+      "bytes": 2258,
+      "transformation": "Replace only declared local path prefixes; refresh derived projected-file manifest digests where applicable. Original private source hashes and qualitative grades are unchanged."
+    },
+    {
+      "path": "docs/releases/remediation-013/supplemental/proof/36-web-unknown-model-2.json",
+      "curatorOrPriorProjectionSha256": "9dbd858a265c060a11ba1768d9ae5bf3f2a74c4e5e8f3d1fcb75dc0b10183ed2",
+      "publishedSha256": "4a4dd0783e4d5687fb597f6f4f17b5992ff9dbe7da99a90251651c24d3a28855",
+      "bytes": 2740,
+      "transformation": "Replace only declared local path prefixes; refresh derived projected-file manifest digests where applicable. Original private source hashes and qualitative grades are unchanged."
+    },
+    {
+      "path": "docs/releases/remediation-013/supplemental/proof/33-web-missing-webhook-2.json",
+      "curatorOrPriorProjectionSha256": "abf04c3cd4490fe76a7591203e7a90f27827ceb7fc1bb09cb1fbf6cb2f8171f4",
+      "publishedSha256": "2c618f8696b017524702bfcfaafadc5c9138a5b8dcbf51f6a8fe28621d6ca37b",
+      "bytes": 7450,
+      "transformation": "Replace only declared local path prefixes; refresh derived projected-file manifest digests where applicable. Original private source hashes and qualitative grades are unchanged."
+    },
+    {
+      "path": "docs/releases/remediation-013/supplemental/proof/40-web-smaller-solution-1.json",
+      "curatorOrPriorProjectionSha256": "cefd44034aa98977cb8f24d8bf57a343fd8255c78336b14bb103e624b8460e57",
+      "publishedSha256": "726590152880eddf8481827aebbf1ced170de091d001fc2ec16c3fe60a2303ca",
+      "bytes": 3226,
+      "transformation": "Replace only declared local path prefixes; refresh derived projected-file manifest digests where applicable. Original private source hashes and qualitative grades are unchanged."
+    },
+    {
+      "path": "docs/releases/remediation-013/supplemental/proof/35-web-unknown-actual-model-1.json",
+      "curatorOrPriorProjectionSha256": "2d75c80a913f88bcff96dbd0999d555a8ccfb25bf43b402f629f1385aadeeef6",
+      "publishedSha256": "01b5fdcc14ab47ef1b028ce3425fb5bb6d736869262ef27243aa57815799f31b",
+      "bytes": 1624,
+      "transformation": "Replace only declared local path prefixes; refresh derived projected-file manifest digests where applicable. Original private source hashes and qualitative grades are unchanged."
+    },
+    {
+      "path": "docs/releases/remediation-013/supplemental/proof/33-web-missing-webhook-3.json",
+      "curatorOrPriorProjectionSha256": "aa43ace8eab3854ffd15cfa3ed58eab0398e15f3243fc2ccde0b957ff7d11c7c",
+      "publishedSha256": "b2ae6873b8b6f9fc97a1cba08a715f7f1a095ea1799548ce8c5ef528ff1bbfaf",
+      "bytes": 3550,
+      "transformation": "Replace only declared local path prefixes; refresh derived projected-file manifest digests where applicable. Original private source hashes and qualitative grades are unchanged."
+    },
+    {
+      "path": "docs/releases/remediation-013/supplemental/proof/36-web-unknown-model-3.json",
+      "curatorOrPriorProjectionSha256": "b9a8a4f4bfdd2caba40ce03e0e69d3056a8b1daae134a028b72e01fd3ebe7858",
+      "publishedSha256": "5eac849cb82608499b8c421a76435e66880bb689c9d062d5b49b30b51a2ed408",
+      "bytes": 2798,
+      "transformation": "Replace only declared local path prefixes; refresh derived projected-file manifest digests where applicable. Original private source hashes and qualitative grades are unchanged."
+    },
+    {
+      "path": "docs/releases/remediation-013/supplemental/proof/30-web-supported-authoring-1.json",
+      "curatorOrPriorProjectionSha256": "6e0c97f786740bab6bfe9ed7a0ebf0c4bcb86bba5d7fa26ce63dbdb3fee3e4d3",
+      "publishedSha256": "e0e8f6da660a88c538efc15b3472f569b24216fbc36d90771f4381f1c22a1ea1",
+      "bytes": 846,
+      "transformation": "Replace only declared local path prefixes; refresh derived projected-file manifest digests where applicable. Original private source hashes and qualitative grades are unchanged."
+    },
+    {
+      "path": "docs/releases/remediation-013/supplemental/proof/32-web-package-support-contracts-3.json",
+      "curatorOrPriorProjectionSha256": "002c4c81dc027c0aa5f09023259ccad3d2fad1df9bb3ae22221bc49d4652419c",
+      "publishedSha256": "7cea75fc14bcdb58e518c937290684d8958f79d381a598d8a1cb475f65cc48c8",
+      "bytes": 1435,
+      "transformation": "Replace only declared local path prefixes; refresh derived projected-file manifest digests where applicable. Original private source hashes and qualitative grades are unchanged."
+    },
+    {
+      "path": "docs/releases/remediation-013/supplemental/proof/39-web-real-render-2.json",
+      "curatorOrPriorProjectionSha256": "e553e1b461f344f872999f0ba1289bd20f39695e89bffd11529a451853af8f98",
+      "publishedSha256": "3139c07aee77b324f749fe52034b0a827f94ea61a2e81ab3850bd3f7908f1277",
+      "bytes": 1346,
+      "transformation": "Replace only declared local path prefixes; refresh derived projected-file manifest digests where applicable. Original private source hashes and qualitative grades are unchanged."
+    },
+    {
+      "path": "docs/releases/remediation-013/supplemental/proof/10-local-unknown-actual-model-1.json",
+      "curatorOrPriorProjectionSha256": "69e9b40dfd388b175a5dc6600b36439bdafad253d46ee2e0ea893a433f671534",
+      "publishedSha256": "58634f848cad5272946154b611651bce6cdaf6474ef8b33d4617e49a649dc19b",
+      "bytes": 1848,
+      "transformation": "Replace only declared local path prefixes; refresh derived projected-file manifest digests where applicable. Original private source hashes and qualitative grades are unchanged."
+    },
+    {
+      "path": "docs/releases/remediation-013/supplemental/proof/44-web-contiguous-verified-stack-2.json",
+      "curatorOrPriorProjectionSha256": "9264f14d4ce20060990f173ce390591d0c22a5a1c8a522a2e99e5ef4d27fadbf",
+      "publishedSha256": "1f82612fd588a78c427d6846bd299487d8b9a8d44879aaa106536afcefe7f777",
+      "bytes": 1566,
+      "transformation": "Replace only declared local path prefixes; refresh derived projected-file manifest digests where applicable. Original private source hashes and qualitative grades are unchanged."
+    },
+    {
+      "path": "docs/releases/remediation-013/supplemental/proof/17-local-swarm-walkthrough-2.json",
+      "curatorOrPriorProjectionSha256": "5e7402f58df472b79a48af8e7744ba95b432afbd5e713d11fa1913de81265d1f",
+      "publishedSha256": "150c1ac1ff91f62a81117de5e2e79e1dd814418d329d841ddbf2ceb0f3c8b62f",
+      "bytes": 3024,
+      "transformation": "Replace only declared local path prefixes; refresh derived projected-file manifest digests where applicable. Original private source hashes and qualitative grades are unchanged."
+    },
+    {
+      "path": "docs/releases/remediation-013/supplemental/proof/29-local-repeated-rule-1.json",
+      "curatorOrPriorProjectionSha256": "5d43fd862a44f7eab8884334e56059f302a9d2859f18b1b5ce196849c2201c93",
+      "publishedSha256": "729c168a6ac4d2b6a5753a57c5447b921964b8102ee853cef8fe4d551616598d",
+      "bytes": 1169,
+      "transformation": "Replace only declared local path prefixes; refresh derived projected-file manifest digests where applicable. Original private source hashes and qualitative grades are unchanged."
+    },
+    {
+      "path": "docs/releases/remediation-013/supplemental/proof/08-local-trace-path-2.json",
+      "curatorOrPriorProjectionSha256": "1e3fd38dd55b6e6f671640c3e3b5db105a15d34bd22b6eae8257a8418cc0f34a",
+      "publishedSha256": "502c67c8c7001acef9be7c18c621228aaca2a93c2adf1ec1debf4655d0de78a0",
+      "bytes": 2491,
+      "transformation": "Replace only declared local path prefixes; refresh derived projected-file manifest digests where applicable. Original private source hashes and qualitative grades are unchanged."
+    },
+    {
+      "path": "docs/releases/remediation-013/supplemental/proof/05-local-read-only-answer-2.json",
+      "curatorOrPriorProjectionSha256": "14ab093fd0d85f1d1bd3c6ae74e91b375061dd77c323b5fe6e42b6288a7ba6fe",
+      "publishedSha256": "147b85beb32a2763871a7361d2f1b9c3a7e0c21e39a47f3ffbb57eabdfb2ee65",
+      "bytes": 4569,
+      "transformation": "Replace only declared local path prefixes; refresh derived projected-file manifest digests where applicable. Original private source hashes and qualitative grades are unchanged."
+    },
+    {
+      "path": "docs/releases/remediation-013/supplemental/proof/24-local-decision-trail-2.json",
+      "curatorOrPriorProjectionSha256": "446addb78cd76188a84e4cf6ee210c61a6d782a8db5bf7ab2eeae4494b12b48f",
+      "publishedSha256": "3fc0dfdb6637c9ebc2a822deb94c9abe30fa577596036c2f0a2f251b924ad450",
+      "bytes": 2734,
+      "transformation": "Replace only declared local path prefixes; refresh derived projected-file manifest digests where applicable. Original private source hashes and qualitative grades are unchanged."
+    },
+    {
+      "path": "docs/releases/remediation-013/supplemental/proof/23-local-missing-webhook-1.json",
+      "curatorOrPriorProjectionSha256": "ee58237b52481cc8c3e4bb4a143e6fb796f453a23d5e19c3b688f26463b207f9",
+      "publishedSha256": "16d2cc0e284316b98bbfdf032076f1aee24093e3528ee9494328964f2ba62ed8",
+      "bytes": 2677,
+      "transformation": "Replace only declared local path prefixes; refresh derived projected-file manifest digests where applicable. Original private source hashes and qualitative grades are unchanged."
+    },
+    {
+      "path": "docs/releases/remediation-013/supplemental/proof/18-local-shape-first-2.json",
+      "curatorOrPriorProjectionSha256": "02865d7e5a72eed6f5e13021cff42387f9b10ded81254a9c93686ca2ececdad6",
+      "publishedSha256": "c6ca9dec373db9cdfacbd59d70f67969fdbe522231448dc85d4e6088d3d753c7",
+      "bytes": 1764,
+      "transformation": "Replace only declared local path prefixes; refresh derived projected-file manifest digests where applicable. Original private source hashes and qualitative grades are unchanged."
+    },
+    {
+      "path": "docs/releases/remediation-013/supplemental/proof/21-local-guides-local-codex-2.json",
+      "curatorOrPriorProjectionSha256": "45703711fe83d9a4bb80b587a530b916a58f28fa016a01c774da3f7359dc138b",
+      "publishedSha256": "1270f000ea38a726eaa00ff2d3dcbb9e4ec8fede4f4849ef5bc754daec0cd4a6",
+      "bytes": 2991,
+      "transformation": "Replace only declared local path prefixes; refresh derived projected-file manifest digests where applicable. Original private source hashes and qualitative grades are unchanged."
+    },
+    {
+      "path": "docs/releases/remediation-013/supplemental/proof/02-local-dependency-readiness-1.json",
+      "curatorOrPriorProjectionSha256": "096afacebc082279d94760ac613c44ccc7ec450002ec5969b3fce13a538bfa61",
+      "publishedSha256": "abc37f52dc88df3cebc54c84e17c1eb9fc38d6c0eef9c0462f9fd02ef4411b49",
+      "bytes": 2335,
+      "transformation": "Replace only declared local path prefixes; refresh derived projected-file manifest digests where applicable. Original private source hashes and qualitative grades are unchanged."
+    },
+    {
+      "path": "docs/releases/remediation-013/supplemental/proof/26-local-arena-walkthrough-1.json",
+      "curatorOrPriorProjectionSha256": "a73df41d3fb9adbadd3de7ba30a37c8de0a3ee41002b470ccfaf2c5355c03ae1",
+      "publishedSha256": "bafec319ee24c5942827c10743b15a53e3c99e70818d4dcd5abcf675640db745",
+      "bytes": 3019,
+      "transformation": "Replace only declared local path prefixes; refresh derived projected-file manifest digests where applicable. Original private source hashes and qualitative grades are unchanged."
+    },
+    {
+      "path": "docs/releases/remediation-013/supplemental/proof/38-web-migration-units-3.json",
+      "curatorOrPriorProjectionSha256": "89e8f7c603b361d8f803c544f4a7361b1c1e64233fb6b1cfbb26487f29e69bf6",
+      "publishedSha256": "eda395e099d1c56e9f96e67ab07caf8032b397fe47d232c0e6695a0dd98cc551",
+      "bytes": 762,
+      "transformation": "Replace only declared local path prefixes; refresh derived projected-file manifest digests where applicable. Original private source hashes and qualitative grades are unchanged."
+    },
+    {
+      "path": "docs/releases/remediation-013/supplemental/proof/22-local-unknown-model-2.json",
+      "curatorOrPriorProjectionSha256": "03a8fe992e9bb138c01a9fe49ccda989a1925bc1870a4385a0b390eb6c1c14f5",
+      "publishedSha256": "c1f8df4520271fbf21b49e112e9e47436894dc11daa6747f189560a95e55dee0",
+      "bytes": 7943,
+      "transformation": "Replace only declared local path prefixes; refresh derived projected-file manifest digests where applicable. Original private source hashes and qualitative grades are unchanged."
+    },
+    {
+      "path": "docs/releases/remediation-013/supplemental/proof/34-web-denied-writes-1.json",
+      "curatorOrPriorProjectionSha256": "80bb22da88361f26def4c5e82e09ba7098541f745b7b94667a52925a7287fceb",
+      "publishedSha256": "f1524690b632cd22fbaa0d1e333cb4823711fe735c459a28a94d9afa20330602",
+      "bytes": 1062,
+      "transformation": "Replace only declared local path prefixes; refresh derived projected-file manifest digests where applicable. Original private source hashes and qualitative grades are unchanged."
+    },
+    {
+      "path": "docs/releases/remediation-013/supplemental/proof/42-web-false-success-1.json",
+      "curatorOrPriorProjectionSha256": "43f1e1f26fab30efa18b26f127c7bec6c0416b2a5e96c706adc593838c77acef",
+      "publishedSha256": "07d854289e97f3027f2d1f19de8c4f4990db2dfeecc93e484c40d4cc148ca847",
+      "bytes": 2512,
+      "transformation": "Replace only declared local path prefixes; refresh derived projected-file manifest digests where applicable. Original private source hashes and qualitative grades are unchanged."
+    },
+    {
+      "path": "docs/releases/remediation-013/supplemental/proof/28-local-denied-writes-3.json",
+      "curatorOrPriorProjectionSha256": "b83217265c73bf4452a9dd4e5f465b906d9576c54b795378b2abc31cba702d32",
+      "publishedSha256": "49eb1811c422f2c38dd53511c5cb4e994dba733c1ec80aa2775696400990e555",
+      "bytes": 2096,
+      "transformation": "Replace only declared local path prefixes; refresh derived projected-file manifest digests where applicable. Original private source hashes and qualitative grades are unchanged."
+    },
+    {
+      "path": "docs/releases/remediation-013/supplemental/proof/03-local-benny-untrusted-marker-1.json",
+      "curatorOrPriorProjectionSha256": "b2006ac4f963cf0e1339fd16fbf2b16c5f6a020a5dfd8a86e6804e1a7be23565",
+      "publishedSha256": "b446ec9ed86d92eecea02a6f63c8b700f56861a7b22f38b8be73dba93251b5c3",
+      "bytes": 7725,
+      "transformation": "Replace only declared local path prefixes; refresh derived projected-file manifest digests where applicable. Original private source hashes and qualitative grades are unchanged."
+    },
+    {
+      "path": "docs/releases/remediation-013/supplemental/proof/01-local-user-tradeoff-1.json",
+      "curatorOrPriorProjectionSha256": "eec684266be059488293b9c507a561d13083f82344902df7eb33c74c36261c2f",
+      "publishedSha256": "352c440d06e0f27e18ee0b16cad58676437ea04aa80836c1f70385a325a1ffc0",
+      "bytes": 2603,
+      "transformation": "Replace only declared local path prefixes; refresh derived projected-file manifest digests where applicable. Original private source hashes and qualitative grades are unchanged."
+    },
+    {
+      "path": "docs/releases/remediation-013/supplemental/proof/19-local-smaller-solution-2.json",
+      "curatorOrPriorProjectionSha256": "29992ff47d9785dcd37fedcdd6efc01c3af99a4c2f9a91d3be017cc98f213dab",
+      "publishedSha256": "aa003cddce7c834572ff32c1b9d85f5f8c58aa28c96ebf786f41c83290e5427e",
+      "bytes": 1392,
+      "transformation": "Replace only declared local path prefixes; refresh derived projected-file manifest digests where applicable. Original private source hashes and qualitative grades are unchanged."
+    },
+    {
+      "path": "docs/releases/remediation-013/supplemental/proof/15-local-benny-missing-adapter-1.json",
+      "curatorOrPriorProjectionSha256": "d2180fae2efdef5bbda02cbaf6c415e11e5a07af4dd8d2dd19352fc50b950595",
+      "publishedSha256": "af68d30a6c1d4e425c83a819188ee78151880799c3cd3d4d00c2dce9bcd397d5",
+      "bytes": 2267,
+      "transformation": "Replace only declared local path prefixes; refresh derived projected-file manifest digests where applicable. Original private source hashes and qualitative grades are unchanged."
+    },
+    {
+      "path": "docs/releases/remediation-013/supplemental/proof/41-web-repeated-rule-2.json",
+      "curatorOrPriorProjectionSha256": "314d74f14732a31f57ba2a4e5892df9c422db325e5db7dcffa5724ce8259d5ff",
+      "publishedSha256": "cd229dc3df3fc454728a8c660c5a8f7a28a03fed7b4e5b09a609fcc7b3b15722",
+      "bytes": 2045,
+      "transformation": "Replace only declared local path prefixes; refresh derived projected-file manifest digests where applicable. Original private source hashes and qualitative grades are unchanged."
+    },
+    {
+      "path": "docs/releases/remediation-013/supplemental/proof/04-local-codex-setup-from-readme-1.json",
+      "curatorOrPriorProjectionSha256": "da713a9b9baa166bbd6eeb596f29698e868bc91b23022c1b02040020c19f296e",
+      "publishedSha256": "eac9b7629d741446d4a38fc69336d5ae81c83bef67ddd9bf588d7ad2f1637ac7",
+      "bytes": 3044,
+      "transformation": "Replace only declared local path prefixes; refresh derived projected-file manifest digests where applicable. Original private source hashes and qualitative grades are unchanged."
+    },
+    {
+      "path": "docs/releases/remediation-013/supplemental/proof/41-web-repeated-rule-3.json",
+      "curatorOrPriorProjectionSha256": "33398403f8b7a4048c9fade48fe0058ef4823e270cd365f139f741e7a30423bf",
+      "publishedSha256": "c7282f2342d0163903706aed2d10fe7b12a3be49e695543a1828a72c3d8aacc7",
+      "bytes": 3485,
+      "transformation": "Replace only declared local path prefixes; refresh derived projected-file manifest digests where applicable. Original private source hashes and qualitative grades are unchanged."
+    },
+    {
+      "path": "docs/releases/remediation-013/supplemental/proof/19-local-smaller-solution-3.json",
+      "curatorOrPriorProjectionSha256": "ab3fccc88bdf116fc8830716bfe7d4663008f6049d61903a35146d306d20b7bd",
+      "publishedSha256": "9a607323ea9a13a0cb461ab5ed30db2ea66120608d03d09cadcaf1ba442e84b1",
+      "bytes": 2018,
+      "transformation": "Replace only declared local path prefixes; refresh derived projected-file manifest digests where applicable. Original private source hashes and qualitative grades are unchanged."
+    },
+    {
+      "path": "docs/releases/remediation-013/supplemental/proof/37-web-symptom-repro-1.json",
+      "curatorOrPriorProjectionSha256": "3c7d0f2a397dfa25d38aa216941d6d75a2d91a7a29c7ec8846c6766510401536",
+      "publishedSha256": "2ba0524f7aad010ad30c4f149d8ca1b9af58726708ce2b6df2ff368a1af41fdf",
+      "bytes": 2332,
+      "transformation": "Replace only declared local path prefixes; refresh derived projected-file manifest digests where applicable. Original private source hashes and qualitative grades are unchanged."
+    },
+    {
+      "path": "docs/releases/remediation-013/supplemental/proof/16-local-candidate-cross-review-1.json",
+      "curatorOrPriorProjectionSha256": "cf559fbbf76eeef663e6f6aed7626b3ff5dbaa50f7efd6b3babc3b1c922e7bad",
+      "publishedSha256": "4565b0992b09c82cc5a0d9aeabaa5b7b0bc996d86ec8709e9eb4fdd6f9ec78bf",
+      "bytes": 1832,
+      "transformation": "Replace only declared local path prefixes; refresh derived projected-file manifest digests where applicable. Original private source hashes and qualitative grades are unchanged."
+    },
+    {
+      "path": "docs/releases/remediation-013/supplemental/proof/28-local-denied-writes-2.json",
+      "curatorOrPriorProjectionSha256": "77d2ccf8acf3fccf59108c732d2d58f8bd79c26ee0959e88529ec2616c7ba049",
+      "publishedSha256": "901d3201ff94804e060409e29d4ec7f85da485f59481687d319733de0bae5e99",
+      "bytes": 5330,
+      "transformation": "Replace only declared local path prefixes; refresh derived projected-file manifest digests where applicable. Original private source hashes and qualitative grades are unchanged."
+    },
+    {
+      "path": "docs/releases/remediation-013/supplemental/proof/14-local-poteto-walkthrough-2.json",
+      "curatorOrPriorProjectionSha256": "2dfeea0a63966c025cbbc76a3f37ef81918e3d78734442dbb55ad97487263a53",
+      "publishedSha256": "9ea8d5a29ff6a0ee2552a2be946b00de8368124a2246bbf7f01d7ee08b83c1e3",
+      "bytes": 3039,
+      "transformation": "Replace only declared local path prefixes; refresh derived projected-file manifest digests where applicable. Original private source hashes and qualitative grades are unchanged."
+    },
+    {
+      "path": "docs/releases/remediation-013/supplemental/proof/38-web-migration-units-2.json",
+      "curatorOrPriorProjectionSha256": "968ff5199f380c07286e7d64bb658179fc474e609d10627430555c1074679fee",
+      "publishedSha256": "5db4db98a4f6d6306bba56a9b60f66f05a92c23c7f9dfbdb9bdfea7414486da3",
+      "bytes": 1643,
+      "transformation": "Replace only declared local path prefixes; refresh derived projected-file manifest digests where applicable. Original private source hashes and qualitative grades are unchanged."
+    },
+    {
+      "path": "docs/releases/remediation-013/supplemental/proof/27-local-interrupted-external-write-1.json",
+      "curatorOrPriorProjectionSha256": "e454f9c3c937dd30fe17d080a747620633b21c23ccdcb99985c18fd0a477d3b0",
+      "publishedSha256": "d989262978aa2449d91dacd4013a51aaa5ca2761b78dcb9d523267ef5a7fbdf4",
+      "bytes": 3933,
+      "transformation": "Replace only declared local path prefixes; refresh derived projected-file manifest digests where applicable. Original private source hashes and qualitative grades are unchanged."
+    },
+    {
+      "path": "docs/releases/remediation-013/supplemental/proof/18-local-shape-first-3.json",
+      "curatorOrPriorProjectionSha256": "c3ae2b9b7da29e5d1300e94e872bc2fd798a7266f5b85933479a78dc5faece42",
+      "publishedSha256": "359dc44999a44a1eb2b4d8a41af028aa903bb3d739bc9c61d9d90190ba98b270",
+      "bytes": 2811,
+      "transformation": "Replace only declared local path prefixes; refresh derived projected-file manifest digests where applicable. Original private source hashes and qualitative grades are unchanged."
+    },
+    {
+      "path": "docs/releases/remediation-013/supplemental/proof/24-local-decision-trail-3.json",
+      "curatorOrPriorProjectionSha256": "ff4ab419d67603a61d5142f411f35fa41c13c460e97eb4e577c39a168b33b25b",
+      "publishedSha256": "7ec629a0fbee8877ff4fa22382c38b792890a06018e488f82bf732effcb3d86a",
+      "bytes": 2775,
+      "transformation": "Replace only declared local path prefixes; refresh derived projected-file manifest digests where applicable. Original private source hashes and qualitative grades are unchanged."
+    },
+    {
+      "path": "docs/releases/remediation-013/supplemental/proof/43-web-no-persistent-tool-1.json",
+      "curatorOrPriorProjectionSha256": "162ef09397a5b77e7e8e48bde9c00eb8fc8324af2d4d34ea16d3dbf0d86cb489",
+      "publishedSha256": "812796d37846a19a66cfe82e5d4ad8cf9039bb090a55f916cc1215e87fdc454a",
+      "bytes": 1240,
+      "transformation": "Replace only declared local path prefixes; refresh derived projected-file manifest digests where applicable. Original private source hashes and qualitative grades are unchanged."
+    },
+    {
+      "path": "docs/releases/remediation-013/supplemental/proof/08-local-trace-path-3.json",
+      "curatorOrPriorProjectionSha256": "ea97ed39cf26b765d0a618a1833b3687ce42e0b075ea1e57d0310650e76e5550",
+      "publishedSha256": "bd19f483e81803a69cceb1c63f41364dc2eedf0785aa1c6d50c596998a9025f5",
+      "bytes": 2907,
+      "transformation": "Replace only declared local path prefixes; refresh derived projected-file manifest digests where applicable. Original private source hashes and qualitative grades are unchanged."
+    },
+    {
+      "path": "docs/releases/remediation-013/supplemental/proof/05-local-read-only-answer-3.json",
+      "curatorOrPriorProjectionSha256": "b15a5d1e75aa0b4f14ad114a51713a22af84717b981a1c195b6c9cfd376548ab",
+      "publishedSha256": "6f18fed70d3a377eec75d20e0ca976d85e1920ea32420e57c3948c6cd895d9ee",
+      "bytes": 2796,
+      "transformation": "Replace only declared local path prefixes; refresh derived projected-file manifest digests where applicable. Original private source hashes and qualitative grades are unchanged."
+    },
+    {
+      "path": "docs/releases/remediation-013/supplemental/proof/12-local-plain-restate-linked-1.json",
+      "curatorOrPriorProjectionSha256": "ad87e02f28ba062a9d7b70fb214b64154cbf3e989468de00fee1caf199119048",
+      "publishedSha256": "6290e9fb96e267f1c8eac6eb20faf0c2432055931fe5da21391a343993e878fa",
+      "bytes": 1991,
+      "transformation": "Replace only declared local path prefixes; refresh derived projected-file manifest digests where applicable. Original private source hashes and qualitative grades are unchanged."
+    },
+    {
+      "path": "docs/releases/remediation-013/supplemental/proof/42-web-false-success-3.json",
+      "curatorOrPriorProjectionSha256": "b8f8f07fe5ed0543a042c33735e44e27b77215144e55eb9bf438c6dcfb872a06",
+      "publishedSha256": "e5eecf3ce75d1f23ad814617bf01ad256c9f3927b7225ffc641354041cfebf01",
+      "bytes": 1306,
+      "transformation": "Replace only declared local path prefixes; refresh derived projected-file manifest digests where applicable. Original private source hashes and qualitative grades are unchanged."
+    },
+    {
+      "path": "docs/releases/remediation-013/supplemental/proof/34-web-denied-writes-3.json",
+      "curatorOrPriorProjectionSha256": "55c7eae00d4ec5c316dbf8c8c298b5cec579d50e6ab36d34a076adcbdbe80604",
+      "publishedSha256": "89e31650067bda84c87665fc8a9c5228cd2af96c3bdbbd910405a37b4898ec97",
+      "bytes": 883,
+      "transformation": "Replace only declared local path prefixes; refresh derived projected-file manifest digests where applicable. Original private source hashes and qualitative grades are unchanged."
+    },
+    {
+      "path": "docs/releases/remediation-013/supplemental/proof/38-web-migration-units-1.json",
+      "curatorOrPriorProjectionSha256": "f758fbcab7b603feb0312f580d12e1fcb5f2f0e221b0c0531e00a4906c142a12",
+      "publishedSha256": "c1722746574f401f0d53c5c6c80e83d945611798785bd3c3e8991d65ce2087d0",
+      "bytes": 1452,
+      "transformation": "Replace only declared local path prefixes; refresh derived projected-file manifest digests where applicable. Original private source hashes and qualitative grades are unchanged."
+    },
+    {
+      "path": "docs/releases/remediation-013/supplemental/proof/27-local-interrupted-external-write-2.json",
+      "curatorOrPriorProjectionSha256": "a05f967aed21059d651f9c80cfef4359a9baeb6faf808db98d1ceb7109028235",
+      "publishedSha256": "8d7e6b36da1869f3a9047ca7f05510825a0ac86275f592b04c6a97c489b37dec",
+      "bytes": 3052,
+      "transformation": "Replace only declared local path prefixes; refresh derived projected-file manifest digests where applicable. Original private source hashes and qualitative grades are unchanged."
+    },
+    {
+      "path": "docs/releases/remediation-013/supplemental/proof/14-local-poteto-walkthrough-1.json",
+      "curatorOrPriorProjectionSha256": "a232b617157baa599658121173f7a9fce2353f94ce21e76c152ddb8e9c35b754",
+      "publishedSha256": "69e2c39050ee6ff27b7f79de63e35af1e3167b8bdab82eadd1d115dc519995ea",
+      "bytes": 4839,
+      "transformation": "Replace only declared local path prefixes; refresh derived projected-file manifest digests where applicable. Original private source hashes and qualitative grades are unchanged."
+    },
+    {
+      "path": "docs/releases/remediation-013/supplemental/proof/23-local-missing-webhook-3.json",
+      "curatorOrPriorProjectionSha256": "6d0df7861b8261cc36d91c5fe38bfecedf2486cf5634abd2d0340d3dec9c79e9",
+      "publishedSha256": "c498dd1f6b2923eb5c9408d43af56a6b69c741f04fd8f0634b631a7ba6503477",
+      "bytes": 2784,
+      "transformation": "Replace only declared local path prefixes; refresh derived projected-file manifest digests where applicable. Original private source hashes and qualitative grades are unchanged."
+    },
+    {
+      "path": "docs/releases/remediation-013/supplemental/proof/43-web-no-persistent-tool-2.json",
+      "curatorOrPriorProjectionSha256": "5f9fd8b594c11c867dc62f91b6d4ea8d7c67bee499f1219384aea1132a3887c8",
+      "publishedSha256": "30b48386ca0f0c422a2be0a206ad89e686891cf7480447fc4933cd878ca8b766",
+      "bytes": 1354,
+      "transformation": "Replace only declared local path prefixes; refresh derived projected-file manifest digests where applicable. Original private source hashes and qualitative grades are unchanged."
+    },
+    {
+      "path": "docs/releases/remediation-013/supplemental/proof/29-local-repeated-rule-3.json",
+      "curatorOrPriorProjectionSha256": "5d37a44768d7c7f7b77543e04e93c5d47a653c12fb09a64183600de56ecd4a49",
+      "publishedSha256": "7cf219ad0dbcd8bf6321724f8225ee7fb8f44a7c33c7322f84bc4d3edaf7ed8d",
+      "bytes": 1507,
+      "transformation": "Replace only declared local path prefixes; refresh derived projected-file manifest digests where applicable. Original private source hashes and qualitative grades are unchanged."
+    },
+    {
+      "path": "docs/releases/remediation-013/supplemental/proof/12-local-plain-restate-linked-2.json",
+      "curatorOrPriorProjectionSha256": "6a35da5af22edb2edc0ed1c9d58ca9f051ea1b38a0c0e0cd73c895ebef6bd17f",
+      "publishedSha256": "7f47154a872c24d10152c13f4d9529015e4e0599c9fde959998dd0f7d55526ca",
+      "bytes": 754,
+      "transformation": "Replace only declared local path prefixes; refresh derived projected-file manifest digests where applicable. Original private source hashes and qualitative grades are unchanged."
+    },
+    {
+      "path": "docs/releases/remediation-013/supplemental/proof/04-local-codex-setup-from-readme-2.json",
+      "curatorOrPriorProjectionSha256": "f1740346f1e1b997a87717bb2c5c9875406f6a7447c64336a6b617d14e92ca23",
+      "publishedSha256": "04385db2eba69033560ccd068f2c264644d68c6d6d0792d4228f51d193933e59",
+      "bytes": 8251,
+      "transformation": "Replace only declared local path prefixes; refresh derived projected-file manifest digests where applicable. Original private source hashes and qualitative grades are unchanged."
+    },
+    {
+      "path": "docs/releases/remediation-013/supplemental/proof/15-local-benny-missing-adapter-3.json",
+      "curatorOrPriorProjectionSha256": "ef331141de7ce2098f9fa42ba67667856bbd894b0b8084595a6eeb4ab1e06f5e",
+      "publishedSha256": "e606eb460bf8cda39def2014ee7534d6211983b89373cef1fbb2c3e0071ad3a3",
+      "bytes": 3035,
+      "transformation": "Replace only declared local path prefixes; refresh derived projected-file manifest digests where applicable. Original private source hashes and qualitative grades are unchanged."
+    },
+    {
+      "path": "docs/releases/remediation-013/supplemental/proof/37-web-symptom-repro-2.json",
+      "curatorOrPriorProjectionSha256": "1c890c60aab8aaeda154b81a8593096274ec81ed28a5d1b6081222c2ea608a41",
+      "publishedSha256": "7a989f372f336f5a32cf805aa2881e70746e56916960308a515c2694a55eb311",
+      "bytes": 2821,
+      "transformation": "Replace only declared local path prefixes; refresh derived projected-file manifest digests where applicable. Original private source hashes and qualitative grades are unchanged."
+    },
+    {
+      "path": "docs/releases/remediation-013/supplemental/proof/28-local-denied-writes-1.json",
+      "curatorOrPriorProjectionSha256": "d8639920eb5d5349681bd7405c35659afa906176cbf99b2e86ee5544b95d8584",
+      "publishedSha256": "409b4c6e1ff8ffaa1852551decb436057e7e19935ca29e6a71cf03e0f8d62854",
+      "bytes": 2614,
+      "transformation": "Replace only declared local path prefixes; refresh derived projected-file manifest digests where applicable. Original private source hashes and qualitative grades are unchanged."
+    },
+    {
+      "path": "docs/releases/remediation-013/supplemental/proof/16-local-candidate-cross-review-2.json",
+      "curatorOrPriorProjectionSha256": "d11430fcf7bb9de6964c9b0a71b147c2ae493f32fda4b74f4a8ca9c9b0b4485b",
+      "publishedSha256": "c39756396cf09c3be841889e48df1d92db03143b3f4d8931b20bbb391b806c3f",
+      "bytes": 2290,
+      "transformation": "Replace only declared local path prefixes; refresh derived projected-file manifest digests where applicable. Original private source hashes and qualitative grades are unchanged."
+    },
+    {
+      "path": "docs/releases/remediation-013/supplemental/proof/03-local-benny-untrusted-marker-2.json",
+      "curatorOrPriorProjectionSha256": "3fd26130e67cb6117fe842902cb647d5f3805bd5eea5de808fd269313108091b",
+      "publishedSha256": "c4943ca87c58b97906ca2606258b381b89ca9670b4f0f84fce299df95e6bfe4f",
+      "bytes": 1998,
+      "transformation": "Replace only declared local path prefixes; refresh derived projected-file manifest digests where applicable. Original private source hashes and qualitative grades are unchanged."
+    },
+    {
+      "path": "docs/releases/remediation-013/supplemental/proof/01-local-user-tradeoff-2.json",
+      "curatorOrPriorProjectionSha256": "c4f10baa1db32e618622c83754eca3c22678c8c01a2e5561484f8ef92d59ad72",
+      "publishedSha256": "2be8957ec7b0de9d44be5954ce259771e8938a265baa2c15989c53fde8ca065f",
+      "bytes": 4023,
+      "transformation": "Replace only declared local path prefixes; refresh derived projected-file manifest digests where applicable. Original private source hashes and qualitative grades are unchanged."
+    },
+    {
+      "path": "docs/releases/remediation-013/supplemental/proof/37-web-symptom-repro-3.json",
+      "curatorOrPriorProjectionSha256": "3d4259e608134d67ec35680423123aa764f67b579f588302d3f93f1e2d474c15",
+      "publishedSha256": "e5ffd6aa56740048ccd38bd28a6a63e4803f378032994d2db5996423954b109e",
+      "bytes": 2882,
+      "transformation": "Replace only declared local path prefixes; refresh derived projected-file manifest digests where applicable. Original private source hashes and qualitative grades are unchanged."
+    },
+    {
+      "path": "docs/releases/remediation-013/supplemental/proof/19-local-smaller-solution-1.json",
+      "curatorOrPriorProjectionSha256": "85fed69e81c94eea2b5c5f74e3364b905265ef5424caf55b668e8a3d4fb6302a",
+      "publishedSha256": "d0c6ea34dd7d96a436c2464b95b3315c66ae4763016f649cd62a54470dba116f",
+      "bytes": 1064,
+      "transformation": "Replace only declared local path prefixes; refresh derived projected-file manifest digests where applicable. Original private source hashes and qualitative grades are unchanged."
+    },
+    {
+      "path": "docs/releases/remediation-013/supplemental/proof/15-local-benny-missing-adapter-2.json",
+      "curatorOrPriorProjectionSha256": "45a4311212a4c85e0b3089c70fb45043c3cdb94dcf83f370a8f51e784fd70e11",
+      "publishedSha256": "e21341b3db3b021892adb10bd74e2e9fe6d8bc22cdc15bcfe2e76ad3a7c9c267",
+      "bytes": 2658,
+      "transformation": "Replace only declared local path prefixes; refresh derived projected-file manifest digests where applicable. Original private source hashes and qualitative grades are unchanged."
+    },
+    {
+      "path": "docs/releases/remediation-013/supplemental/proof/06-local-plain-restate-1.json",
+      "curatorOrPriorProjectionSha256": "3460b9c69e6b02877f0c53737a225001fef984118e028f25c129fe14c4ad7d6c",
+      "publishedSha256": "6f2172a3511cf489fd47fb33805b71c46556c51019743d2c8c398d6a17fbd2fb",
+      "bytes": 777,
+      "transformation": "Replace only declared local path prefixes; refresh derived projected-file manifest digests where applicable. Original private source hashes and qualitative grades are unchanged."
+    },
+    {
+      "path": "docs/releases/remediation-013/supplemental/proof/41-web-repeated-rule-1.json",
+      "curatorOrPriorProjectionSha256": "3c43422d07886e4faf5bf1e8c691319b84796374ea707c059e202d47ea44170d",
+      "publishedSha256": "93720b1a7ab9dea24b5a6eb690fec3c0861e529bda5f92eeb5df110894eaf3ec",
+      "bytes": 1451,
+      "transformation": "Replace only declared local path prefixes; refresh derived projected-file manifest digests where applicable. Original private source hashes and qualitative grades are unchanged."
+    },
+    {
+      "path": "docs/releases/remediation-013/supplemental/proof/17-local-swarm-walkthrough-1.json",
+      "curatorOrPriorProjectionSha256": "8dc36bfa72dc341c4bccdd310854da687f0b828f90e14799263d9de7925ae86f",
+      "publishedSha256": "d0fdb687a086dae8a83be5406c1224e62e9a9b804b1b7bd1ca96b141ed3e9792",
+      "bytes": 4210,
+      "transformation": "Replace only declared local path prefixes; refresh derived projected-file manifest digests where applicable. Original private source hashes and qualitative grades are unchanged."
+    },
+    {
+      "path": "docs/releases/remediation-013/supplemental/proof/12-local-plain-restate-linked-3.json",
+      "curatorOrPriorProjectionSha256": "0f2d3b07337fe8283ee4645c25b4a58270546ff36ffd3e5a34f5b06054b6e856",
+      "publishedSha256": "4b6566a7da101cec4097473495effec4c37892b5c77d6ff15ddd964dff9ab631",
+      "bytes": 787,
+      "transformation": "Replace only declared local path prefixes; refresh derived projected-file manifest digests where applicable. Original private source hashes and qualitative grades are unchanged."
+    },
+    {
+      "path": "docs/releases/remediation-013/supplemental/proof/29-local-repeated-rule-2.json",
+      "curatorOrPriorProjectionSha256": "d88ac1739cbdd159cbb98270467df6e3a26f0fcb29d04a2c1bf642a38767d95c",
+      "publishedSha256": "86eca778ec262491dd1feee60c64e6d5377355fb406a548f992e09b959f3269d",
+      "bytes": 1732,
+      "transformation": "Replace only declared local path prefixes; refresh derived projected-file manifest digests where applicable. Original private source hashes and qualitative grades are unchanged."
+    },
+    {
+      "path": "docs/releases/remediation-013/supplemental/proof/05-local-read-only-answer-1.json",
+      "curatorOrPriorProjectionSha256": "db51a49f034a05e3479312cf5174eacab88c3c79eb0405fc9c7165d8badd14da",
+      "publishedSha256": "0daa5be58c89426d2fb79011473b771d21ec958ba2a2d8cbf0baaf09b50b3f2e",
+      "bytes": 2923,
+      "transformation": "Replace only declared local path prefixes; refresh derived projected-file manifest digests where applicable. Original private source hashes and qualitative grades are unchanged."
+    },
+    {
+      "path": "docs/releases/remediation-013/supplemental/proof/08-local-trace-path-1.json",
+      "curatorOrPriorProjectionSha256": "ac57bb4db4bcf9c192078cb621eeaa18c525eea523e24ce2d114d2982a461d3e",
+      "publishedSha256": "103287c7f450efc0db2303454144ab12c13e38c5ee5159b132366832c3fe3768",
+      "bytes": 1678,
+      "transformation": "Replace only declared local path prefixes; refresh derived projected-file manifest digests where applicable. Original private source hashes and qualitative grades are unchanged."
+    },
+    {
+      "path": "docs/releases/remediation-013/supplemental/proof/43-web-no-persistent-tool-3.json",
+      "curatorOrPriorProjectionSha256": "8159abe76a5354f10b9a7e2eac652662028ecc704f2f58425035ed31cf59c9da",
+      "publishedSha256": "16bf89576c65f77875536104201afa49b42a7d417e3628746779216a8f375946",
+      "bytes": 1396,
+      "transformation": "Replace only declared local path prefixes; refresh derived projected-file manifest digests where applicable. Original private source hashes and qualitative grades are unchanged."
+    },
+    {
+      "path": "docs/releases/remediation-013/supplemental/proof/24-local-decision-trail-1.json",
+      "curatorOrPriorProjectionSha256": "825baad7785ca9fb907ad2407d5df1cc5b35b2af59364ab3f3442045fb2a01fe",
+      "publishedSha256": "b1546eb6076f61f81d27621fae4c81dcd57b3339af158b11bbbcf22e290f95cc",
+      "bytes": 2815,
+      "transformation": "Replace only declared local path prefixes; refresh derived projected-file manifest digests where applicable. Original private source hashes and qualitative grades are unchanged."
+    },
+    {
+      "path": "docs/releases/remediation-013/supplemental/proof/21-local-guides-local-codex-1.json",
+      "curatorOrPriorProjectionSha256": "fbf03d0fcbc19aec448a39a8c8fdb6bd2da5a548973499b83f394df12b881717",
+      "publishedSha256": "f86cad34e8b31383098a8dc52c89c4c33287ad23bfe63c6cd177d27d83650dfa",
+      "bytes": 1498,
+      "transformation": "Replace only declared local path prefixes; refresh derived projected-file manifest digests where applicable. Original private source hashes and qualitative grades are unchanged."
+    },
+    {
+      "path": "docs/releases/remediation-013/supplemental/proof/23-local-missing-webhook-2.json",
+      "curatorOrPriorProjectionSha256": "c4a87bb295d3844df90f07287bed236bfe92a4b7e7f9de73cab26f132c3c6bf2",
+      "publishedSha256": "d83ee031aa3558424984b109226cdf7d6c92ca85858470a1d8549feb30a22202",
+      "bytes": 2820,
+      "transformation": "Replace only declared local path prefixes; refresh derived projected-file manifest digests where applicable. Original private source hashes and qualitative grades are unchanged."
+    },
+    {
+      "path": "docs/releases/remediation-013/supplemental/proof/18-local-shape-first-1.json",
+      "curatorOrPriorProjectionSha256": "139b4a62269de5efc76b1cbfe0030e5162c7413ce8c08006d2f6309cea2078bf",
+      "publishedSha256": "659b590f7b71d36adf888b2a38a6231005b0caecc5617ba302b9fd15c5e397df",
+      "bytes": 4970,
+      "transformation": "Replace only declared local path prefixes; refresh derived projected-file manifest digests where applicable. Original private source hashes and qualitative grades are unchanged."
+    },
+    {
+      "path": "docs/releases/remediation-013/supplemental/proof/02-local-dependency-readiness-2.json",
+      "curatorOrPriorProjectionSha256": "c0376818da260d4dbf796cf65a3f02bf396269bc2a41c5484a201cd06c6e505d",
+      "publishedSha256": "6ad8821912081a193c25b87538e38653295a3407e065911cadf526e4dfd84e23",
+      "bytes": 3033,
+      "transformation": "Replace only declared local path prefixes; refresh derived projected-file manifest digests where applicable. Original private source hashes and qualitative grades are unchanged."
+    },
+    {
+      "path": "docs/releases/remediation-013/supplemental/proof/27-local-interrupted-external-write-3.json",
+      "curatorOrPriorProjectionSha256": "9ad3e99557b54bfccaa255d87df4632b9899fc3120c9abb79325fe241f845c21",
+      "publishedSha256": "795079aad92540ba516cdf5c6047a0d45b2d964163c4cf4c9319bd4c414beaca",
+      "bytes": 7253,
+      "transformation": "Replace only declared local path prefixes; refresh derived projected-file manifest digests where applicable. Original private source hashes and qualitative grades are unchanged."
+    },
+    {
+      "path": "docs/releases/remediation-013/supplemental/proof/22-local-unknown-model-1.json",
+      "curatorOrPriorProjectionSha256": "ce59f45a6470c5ce8c93a39d25b5c6d64923fe6fc80e63f009b4b4b43aee342a",
+      "publishedSha256": "604bf78aa45757de97d0d3daf79a6a27599010c6126226f47fb5fcc0befa3380",
+      "bytes": 2812,
+      "transformation": "Replace only declared local path prefixes; refresh derived projected-file manifest digests where applicable. Original private source hashes and qualitative grades are unchanged."
+    },
+    {
+      "path": "docs/releases/remediation-013/supplemental/proof/34-web-denied-writes-2.json",
+      "curatorOrPriorProjectionSha256": "bef71677f97bcadc2d020656261f47846c1c15e72e871f43db98d2d77e368ce2",
+      "publishedSha256": "95357ec4e7b3d42e1eb61f7f98b041faea1911d7b7d036a1160c20bacd5ae977",
+      "bytes": 1103,
+      "transformation": "Replace only declared local path prefixes; refresh derived projected-file manifest digests where applicable. Original private source hashes and qualitative grades are unchanged."
+    },
+    {
+      "path": "docs/releases/remediation-013/supplemental/proof/42-web-false-success-2.json",
+      "curatorOrPriorProjectionSha256": "cb7e5084189b51bb3774c74982112471cab08ee50d2ac446ba92499d1d8a6796",
+      "publishedSha256": "8b800785eadf48448bd604e10db59a07e247a3ab24dcca7fead45f6ab78ddd15",
+      "bytes": 3609,
+      "transformation": "Replace only declared local path prefixes; refresh derived projected-file manifest digests where applicable. Original private source hashes and qualitative grades are unchanged."
+    },
+    {
+      "path": "docs/releases/remediation-013/supplemental/proof/07-local-resume-revision-3.json",
+      "curatorOrPriorProjectionSha256": "cdb0e09aec53c2f34dce9787f75125bbf80a29cb6bd4eca4bb6dcf37198ec745",
+      "publishedSha256": "f87bd0f81cfc46f1f70768ca1f874d62d128f1e8ac450c9ff41c206775d395b7",
+      "bytes": 1175,
+      "transformation": "Replace only declared local path prefixes; refresh derived projected-file manifest digests where applicable. Original private source hashes and qualitative grades are unchanged."
+    },
+    {
+      "path": "docs/releases/remediation-013/supplemental/proof/39-web-real-render-1.json",
+      "curatorOrPriorProjectionSha256": "977d01d87832e68427bf856901f7cbcb7c169336a52f8e144ec6e7b475eeb23b",
+      "publishedSha256": "1ed68769535dee991e75962a4d30c141f2d3b9b537d2d735fc9b113843d4e4a9",
+      "bytes": 1293,
+      "transformation": "Replace only declared local path prefixes; refresh derived projected-file manifest digests where applicable. Original private source hashes and qualitative grades are unchanged."
+    },
+    {
+      "path": "docs/releases/remediation-013/supplemental/proof/31-web-invalid-input-3.json",
+      "curatorOrPriorProjectionSha256": "134a87365ae69f8d5c376d27fa82e27627fffe4a3b4566e9065be685491a2712",
+      "publishedSha256": "7d2f23aa059f07b436c6d78e86e908ae6b70532429e4befbac28d2a25d4dfedf",
+      "bytes": 1505,
+      "transformation": "Replace only declared local path prefixes; refresh derived projected-file manifest digests where applicable. Original private source hashes and qualitative grades are unchanged."
+    },
+    {
+      "path": "docs/releases/remediation-013/supplemental/proof/10-local-unknown-actual-model-2.json",
+      "curatorOrPriorProjectionSha256": "363b5a2bd9b6c519e33c14631d9ddf13d855c9b6152dc93512b040050ba75b65",
+      "publishedSha256": "8f5990dcad271080a19094ed5a1f1d8b391badca31a08744d68335c108016ce7",
+      "bytes": 2072,
+      "transformation": "Replace only declared local path prefixes; refresh derived projected-file manifest digests where applicable. Original private source hashes and qualitative grades are unchanged."
+    },
+    {
+      "path": "docs/releases/remediation-013/supplemental/proof/20-local-unsupported-selected-model-3.json",
+      "curatorOrPriorProjectionSha256": "4aada1e887debb265590b04212642fd0ad559147e6ed6d532da9d57d04a1011a",
+      "publishedSha256": "0d34ba5ec2fa2e52f5a758cf187276c17b02795dfc039f33fce7cbb6b487cf2a",
+      "bytes": 8191,
+      "transformation": "Replace only declared local path prefixes; refresh derived projected-file manifest digests where applicable. Original private source hashes and qualitative grades are unchanged."
+    },
+    {
+      "path": "docs/releases/remediation-013/supplemental/proof/09-local-typed-boundary-3.json",
+      "curatorOrPriorProjectionSha256": "f4f1825009a63c06041813a6670e9669c8e624c2d6c89da21f676185ef85bb27",
+      "publishedSha256": "23db429c8e004084ad9784001ba5c88f53c471319674dda673729563cfcfe7b4",
+      "bytes": 3037,
+      "transformation": "Replace only declared local path prefixes; refresh derived projected-file manifest digests where applicable. Original private source hashes and qualitative grades are unchanged."
+    },
+    {
+      "path": "docs/releases/remediation-013/supplemental/proof/44-web-contiguous-verified-stack-1.json",
+      "curatorOrPriorProjectionSha256": "2db77e042b508720b4c3355dd0fa66024f03066ad264a7fe4f2582e6a95356f0",
+      "publishedSha256": "bc179b02a79ffc3397e38925018b6eff2d634518fd2548761399a1c4a43b35a0",
+      "bytes": 4936,
+      "transformation": "Replace only declared local path prefixes; refresh derived projected-file manifest digests where applicable. Original private source hashes and qualitative grades are unchanged."
+    },
+    {
+      "path": "docs/releases/remediation-013/supplemental/proof/11-local-symptom-repro-3.json",
+      "curatorOrPriorProjectionSha256": "ef16f1b7ae15cff93ae15c59e933c19408c700b37c7fa0707d7d55b786750d9d",
+      "publishedSha256": "cab72d13f2bcad163e32cbd8db96554e172637ac800e4c515179a4f112f09cdc",
+      "bytes": 2444,
+      "transformation": "Replace only declared local path prefixes; refresh derived projected-file manifest digests where applicable. Original private source hashes and qualitative grades are unchanged."
+    },
+    {
+      "path": "docs/releases/remediation-013/supplemental/proof/35-web-unknown-actual-model-2.json",
+      "curatorOrPriorProjectionSha256": "fff704fe7e7827336b045f83e7ce997242eeba199dd917ef50fbced1431dc5f9",
+      "publishedSha256": "1b741e3253f2e86a3754adfaf8af76d15874b477c418742df15b41476811a4c1",
+      "bytes": 3024,
+      "transformation": "Replace only declared local path prefixes; refresh derived projected-file manifest digests where applicable. Original private source hashes and qualitative grades are unchanged."
+    },
+    {
+      "path": "docs/releases/remediation-013/supplemental/proof/40-web-smaller-solution-3.json",
+      "curatorOrPriorProjectionSha256": "df6a1f61c1e13c1ebde35d4fe5c73c058f7bf215b85806e03f14752fb66c6fcd",
+      "publishedSha256": "07d153f81e808237fa7dbce30bc45297d1f9f8f1bdaae4a080491e569ed6c25d",
+      "bytes": 2999,
+      "transformation": "Replace only declared local path prefixes; refresh derived projected-file manifest digests where applicable. Original private source hashes and qualitative grades are unchanged."
+    },
+    {
+      "path": "docs/releases/remediation-013/supplemental/proof/13-local-stack-resume-3.json",
+      "curatorOrPriorProjectionSha256": "4358b59fc1606c8927d8ddcdd90c17f7d446a8c8422f29a3a1c24aa9bac6aa4c",
+      "publishedSha256": "497e56b30414a5e8cc0857c8cd8b7c72a8f8cef4d9e803b27c51edade78d2482",
+      "bytes": 2973,
+      "transformation": "Replace only declared local path prefixes; refresh derived projected-file manifest digests where applicable. Original private source hashes and qualitative grades are unchanged."
+    },
+    {
+      "path": "docs/releases/remediation-013/supplemental/proof/30-web-supported-authoring-2.json",
+      "curatorOrPriorProjectionSha256": "518dc5d4c62e375f4ae385ff791d303bf21f2ade4fe27b318589a3e4dcb2cb79",
+      "publishedSha256": "c12b8bea3ddebc76ea6670d9660cf9258caed29a522530671e5fc95365fa03af",
+      "bytes": 2494,
+      "transformation": "Replace only declared local path prefixes; refresh derived projected-file manifest digests where applicable. Original private source hashes and qualitative grades are unchanged."
+    },
+    {
+      "path": "docs/releases/remediation-013/supplemental/proof/25-local-legal-header-3.json",
+      "curatorOrPriorProjectionSha256": "5d746ceb9a377456d7f9780fc0ce98f2fac2bf062c4f8e15922b6ca81a3aeb50",
+      "publishedSha256": "e9581a03d55225fb88e49048bcf1b450c8bd153c2ec7825e8e715409ec8014c6",
+      "bytes": 3021,
+      "transformation": "Replace only declared local path prefixes; refresh derived projected-file manifest digests where applicable. Original private source hashes and qualitative grades are unchanged."
+    },
+    {
+      "path": "docs/releases/remediation-013/supplemental/proof/25-local-legal-header-2.json",
+      "curatorOrPriorProjectionSha256": "e164d02bf39ec582d227a5a72ed3c5b31b83ff49ae24a1132105c9ba598c4615",
+      "publishedSha256": "2437ad225d8ac12f4f817cb03f3758d01c2aa057b68fb3ab42a5b06cb9d03628",
+      "bytes": 3020,
+      "transformation": "Replace only declared local path prefixes; refresh derived projected-file manifest digests where applicable. Original private source hashes and qualitative grades are unchanged."
+    },
+    {
+      "path": "docs/releases/remediation-013/supplemental/proof/30-web-supported-authoring-3.json",
+      "curatorOrPriorProjectionSha256": "0a3fb948c442f80a5420cc5a30b39cd8567f38a224f0a137ee18aa04f1833adf",
+      "publishedSha256": "b47f2ce0f07618ab016d1cae494efa32d8ac00c861baef60ff405fbb11c8e649",
+      "bytes": 2493,
+      "transformation": "Replace only declared local path prefixes; refresh derived projected-file manifest digests where applicable. Original private source hashes and qualitative grades are unchanged."
+    },
+    {
+      "path": "docs/releases/remediation-013/supplemental/proof/13-local-stack-resume-2.json",
+      "curatorOrPriorProjectionSha256": "c4ac6eec3eaff3a99c19ad944aa75b51d4381b5fc4f9ca8a82d04ba1105d359f",
+      "publishedSha256": "db1efb88e922d4d069ff1d5888c05fcdd4b1cb5ece64d115269b75d4a2188d6b",
+      "bytes": 6325,
+      "transformation": "Replace only declared local path prefixes; refresh derived projected-file manifest digests where applicable. Original private source hashes and qualitative grades are unchanged."
+    },
+    {
+      "path": "docs/releases/remediation-013/supplemental/proof/36-web-unknown-model-1.json",
+      "curatorOrPriorProjectionSha256": "c1691788ba33e6b509e4da80feb55ed4406011bda429623ad89b5f64230fd12e",
+      "publishedSha256": "d6534618747550eeebd967c1fe6d6998f2c9340673a24c63f8d413af98474b00",
+      "bytes": 1302,
+      "transformation": "Replace only declared local path prefixes; refresh derived projected-file manifest digests where applicable. Original private source hashes and qualitative grades are unchanged."
+    },
+    {
+      "path": "docs/releases/remediation-013/supplemental/proof/40-web-smaller-solution-2.json",
+      "curatorOrPriorProjectionSha256": "8ef30a617598cc4f542db1acb8b5c07e1729bf186790d6249b7bb7d26bf202e7",
+      "publishedSha256": "2ef9b9dc1592f22b0f88e7a142d6c6b9c90aad624815da7161fd16ee5d04b410",
+      "bytes": 3045,
+      "transformation": "Replace only declared local path prefixes; refresh derived projected-file manifest digests where applicable. Original private source hashes and qualitative grades are unchanged."
+    },
+    {
+      "path": "docs/releases/remediation-013/supplemental/proof/33-web-missing-webhook-1.json",
+      "curatorOrPriorProjectionSha256": "d53030a77856d3c5db193c04edb82005f23d7e80a86153512f78a7431f83f812",
+      "publishedSha256": "e4dd71a29b42f9a6bf061e98062e61422ea565cf75398355e38592f6f6742eda",
+      "bytes": 1618,
+      "transformation": "Replace only declared local path prefixes; refresh derived projected-file manifest digests where applicable. Original private source hashes and qualitative grades are unchanged."
+    },
+    {
+      "path": "docs/releases/remediation-013/supplemental/proof/35-web-unknown-actual-model-3.json",
+      "curatorOrPriorProjectionSha256": "acad2e7957df9da06e67b5738c4f192ba442c88107cc0e85b6001e39ae83e463",
+      "publishedSha256": "dc8addf1c5e6f558cd99454d756319bcb8a0003b95db1fbc9a21263abc323339",
+      "bytes": 2931,
+      "transformation": "Replace only declared local path prefixes; refresh derived projected-file manifest digests where applicable. Original private source hashes and qualitative grades are unchanged."
+    },
+    {
+      "path": "docs/releases/remediation-013/supplemental/proof/11-local-symptom-repro-2.json",
+      "curatorOrPriorProjectionSha256": "1c8ce5444bf34d8ed13a62c52d538c5b793e13d38fd0d5fc66dab95e9f33bafb",
+      "publishedSha256": "75116e272f8cad958bf592d8396ef3567875cb9a3f3b8c6baa465234ef81a84a",
+      "bytes": 2083,
+      "transformation": "Replace only declared local path prefixes; refresh derived projected-file manifest digests where applicable. Original private source hashes and qualitative grades are unchanged."
+    },
+    {
+      "path": "docs/releases/remediation-013/supplemental/proof/20-local-unsupported-selected-model-2.json",
+      "curatorOrPriorProjectionSha256": "0669a0080684828005f6586d9b24c4445700da69cc1fc9a72f97da36dc6eea9a",
+      "publishedSha256": "352f7d5f9201e26f9c82782a4d4b7d9de8e355068715c2a2e6832b93d61db8d5",
+      "bytes": 2961,
+      "transformation": "Replace only declared local path prefixes; refresh derived projected-file manifest digests where applicable. Original private source hashes and qualitative grades are unchanged."
+    },
+    {
+      "path": "docs/releases/remediation-013/supplemental/proof/09-local-typed-boundary-2.json",
+      "curatorOrPriorProjectionSha256": "9b810e780657b3792cb69df5e3ab18ffe51714609e5b33b8f7dc2bbe9c52b26d",
+      "publishedSha256": "8d1e75bf3007f35ecce51fdadf92bcd35c3d723c3c9a96ff8b0e48d5bc12c8c9",
+      "bytes": 2974,
+      "transformation": "Replace only declared local path prefixes; refresh derived projected-file manifest digests where applicable. Original private source hashes and qualitative grades are unchanged."
+    },
+    {
+      "path": "docs/releases/remediation-013/supplemental/proof/10-local-unknown-actual-model-3.json",
+      "curatorOrPriorProjectionSha256": "cff53337691047aa683d2e843434d772c89a26fb8f7ad7552a43a541b203e961",
+      "publishedSha256": "6fa86e0525841f6b14bbc1ba859d207bc27f6263440e93ca3cc47b5d831e8608",
+      "bytes": 5544,
+      "transformation": "Replace only declared local path prefixes; refresh derived projected-file manifest digests where applicable. Original private source hashes and qualitative grades are unchanged."
+    },
+    {
+      "path": "docs/releases/remediation-013/supplemental/proof/31-web-invalid-input-2.json",
+      "curatorOrPriorProjectionSha256": "c4298f933b42762da7754d3a1410d32be175047085393e2a89a1264eae0cde2d",
+      "publishedSha256": "d59eeb1537442df5de939bd7c80af63d6890e3fb0ecda3a239c09bcf06adee35",
+      "bytes": 3738,
+      "transformation": "Replace only declared local path prefixes; refresh derived projected-file manifest digests where applicable. Original private source hashes and qualitative grades are unchanged."
+    },
+    {
+      "path": "docs/releases/remediation-013/supplemental/proof/32-web-package-support-contracts-1.json",
+      "curatorOrPriorProjectionSha256": "0515499bebff6345a274601df7ef9c86af7d83c749859820c1d3d99449d737fd",
+      "publishedSha256": "30fb24880e82cb80a00b8b4e6acf461db114d173897ca66d8068e8d74b82f271",
+      "bytes": 1289,
+      "transformation": "Replace only declared local path prefixes; refresh derived projected-file manifest digests where applicable. Original private source hashes and qualitative grades are unchanged."
+    },
+    {
+      "path": "docs/releases/remediation-013/supplemental/proof/07-local-resume-revision-2.json",
+      "curatorOrPriorProjectionSha256": "5a6a9580ed27947ecdee4b6fd30a5b67b2cd77a1f477ccf9f812d5662a378556",
+      "publishedSha256": "e6be1d371cf37899f1941755a95ad4e2a86690ba9e85da0ae74d4c253c8cbe25",
+      "bytes": 1328,
+      "transformation": "Replace only declared local path prefixes; refresh derived projected-file manifest digests where applicable. Original private source hashes and qualitative grades are unchanged."
+    },
+    {
+      "path": "docs/releases/remediation-013/supplemental/assessments/21-local-guides-local-codex.json",
+      "curatorOrPriorProjectionSha256": "25850b2db9fd3fb30e10316bfaecf3e284c8c1bcc24ff6fa4125d4bdd12a71bd",
+      "publishedSha256": "2e3388ec4fbe6ad2acd06625a2b7c6c40dc4bac3b679c21e1089e6e0397ab1ff",
+      "bytes": 1939,
+      "transformation": "Replace only declared local path prefixes; refresh derived projected-file manifest digests where applicable. Original private source hashes and qualitative grades are unchanged."
+    },
+    {
+      "path": "docs/releases/remediation-013/supplemental/assessments/40-web-smaller-solution.json",
+      "curatorOrPriorProjectionSha256": "cff119842a9891306a12e85b58646cbc9ec5ecc10dd6f2f110722aa6396903aa",
+      "publishedSha256": "ce13f2be8bcd7d72aaf6f75a8c186b780eb6e8fdc95335963eba87cf58f52cde",
+      "bytes": 2757,
+      "transformation": "Replace only declared local path prefixes; refresh derived projected-file manifest digests where applicable. Original private source hashes and qualitative grades are unchanged."
+    },
+    {
+      "path": "docs/releases/remediation-013/supplemental/assessments/12-local-plain-restate-linked.json",
+      "curatorOrPriorProjectionSha256": "f3920e7d24203cb1785069dbce8768283a44ef7e7c62941eef4ea82239a41551",
+      "publishedSha256": "2b13ca8e2d22f020186415554236f31b46581ba1addb1cb6068fe7b91f9da23b",
+      "bytes": 5062,
+      "transformation": "Replace only declared local path prefixes; refresh derived projected-file manifest digests where applicable. Original private source hashes and qualitative grades are unchanged."
+    },
+    {
+      "path": "docs/releases/remediation-013/supplemental/assessments/05-local-read-only-answer.json",
+      "curatorOrPriorProjectionSha256": "9082adbae2cc9ee461c3d9214471aaae36aed0b2628dae1ee11ef5df0ca745dc",
+      "publishedSha256": "acd07c6e2c464336349bec0af464242b41657fad3b800ffae6b5c90352f95628",
+      "bytes": 3192,
+      "transformation": "Replace only declared local path prefixes; refresh derived projected-file manifest digests where applicable. Original private source hashes and qualitative grades are unchanged."
+    },
+    {
+      "path": "docs/releases/remediation-013/supplemental/assessments/32-web-package-support-contracts.json",
+      "curatorOrPriorProjectionSha256": "00d45c042fb0f22d6a469338870e28649a46779c1938efe7be0d417c005c7a13",
+      "publishedSha256": "65dd1a2a68a079679d9451ec6a45966380f2326822af2ebeac6d55a682f0882c",
+      "bytes": 14614,
+      "transformation": "Replace only declared local path prefixes; refresh derived projected-file manifest digests where applicable. Original private source hashes and qualitative grades are unchanged."
+    },
+    {
+      "path": "docs/releases/remediation-013/supplemental/assessments/33-web-missing-webhook.json",
+      "curatorOrPriorProjectionSha256": "2a7cb6fb7042ab970bc6a0510d8984ae78d2a5990092c8fbfe7b7b3d0db0ab98",
+      "publishedSha256": "f3a85f2f6b422af6a690174084dfc037b1e3013c40c1be3d88d54d0f7aca0a31",
+      "bytes": 5202,
+      "transformation": "Replace only declared local path prefixes; refresh derived projected-file manifest digests where applicable. Original private source hashes and qualitative grades are unchanged."
+    },
+    {
+      "path": "docs/releases/remediation-013/supplemental/assessments/24-local-decision-trail.json",
+      "curatorOrPriorProjectionSha256": "7d6d101041dec3dc1493b9aeef8f7c97e6b8c7a7a17eda2c58f0120ff9dfb15b",
+      "publishedSha256": "59ae7a72e5b85dbe8c275920dc255c5d4e073ad9e0d535afa2056a143e922593",
+      "bytes": 2285,
+      "transformation": "Replace only declared local path prefixes; refresh derived projected-file manifest digests where applicable. Original private source hashes and qualitative grades are unchanged."
+    },
+    {
+      "path": "docs/releases/remediation-013/supplemental/assessments/17-local-swarm-walkthrough.json",
+      "curatorOrPriorProjectionSha256": "2d7db6771e4ec3e5cb47142b46ce65db778033ddffc4f2e3c8f768ef6098f286",
+      "publishedSha256": "ede017294d8ebd541abddcd2eb21eb16a0f575123cba483b150c6f746b000827",
+      "bytes": 2273,
+      "transformation": "Replace only declared local path prefixes; refresh derived projected-file manifest digests where applicable. Original private source hashes and qualitative grades are unchanged."
+    },
+    {
+      "path": "docs/releases/remediation-013/supplemental/assessments/09-local-typed-boundary.json",
+      "curatorOrPriorProjectionSha256": "6cf8cc99ed8ff7ff9329d0aaa4f1ec57e0f190161c45f74d35d3e7cad6c1e9b5",
+      "publishedSha256": "42cff38154f8910b3f02f5478b453c37fb040f0df0f15972d6fba81279c5d0f9",
+      "bytes": 3258,
+      "transformation": "Replace only declared local path prefixes; refresh derived projected-file manifest digests where applicable. Original private source hashes and qualitative grades are unchanged."
+    },
+    {
+      "path": "docs/releases/remediation-013/supplemental/assessments/15-local-benny-missing-adapter.json",
+      "curatorOrPriorProjectionSha256": "88ad173a3d06b2df2adf5773c085e4078fe3983910353f2f062d1232d837d59b",
+      "publishedSha256": "68f3c96de42830218ce1f8e41e7ad40aaf084919b1faf422f7e422606b375519",
+      "bytes": 2230,
+      "transformation": "Replace only declared local path prefixes; refresh derived projected-file manifest digests where applicable. Original private source hashes and qualitative grades are unchanged."
+    },
+    {
+      "path": "docs/releases/remediation-013/supplemental/assessments/41-web-repeated-rule.json",
+      "curatorOrPriorProjectionSha256": "39ebf2b1d4125079b5be43e53a1235383bc51ba56809097b2f43d0495b56be04",
+      "publishedSha256": "ded154adc975c134475cba825a8df289e2564552285746510abfad25fc277895",
+      "bytes": 2803,
+      "transformation": "Replace only declared local path prefixes; refresh derived projected-file manifest digests where applicable. Original private source hashes and qualitative grades are unchanged."
+    },
+    {
+      "path": "docs/releases/remediation-013/supplemental/assessments/42-web-false-success.json",
+      "curatorOrPriorProjectionSha256": "3e284a4f7e35563eeb99b361af316c38b743d124141b367928f3a9614f80ebd5",
+      "publishedSha256": "0956060281ec02c8e25ba2c0d16eb307d48f375b8a43e49ecb1b5dd0ac0a874d",
+      "bytes": 3192,
+      "transformation": "Replace only declared local path prefixes; refresh derived projected-file manifest digests where applicable. Original private source hashes and qualitative grades are unchanged."
+    },
+    {
+      "path": "docs/releases/remediation-013/supplemental/assessments/23-local-missing-webhook.json",
+      "curatorOrPriorProjectionSha256": "334ff0775df44b0037bc0373e914823ce46908e962482ba495848a9d593f31ca",
+      "publishedSha256": "926a69e4550f2f16a307a6cb2c0ae2c2ff0b8f627d06f3b2db2acaa06f2b54c3",
+      "bytes": 2024,
+      "transformation": "Replace only declared local path prefixes; refresh derived projected-file manifest digests where applicable. Original private source hashes and qualitative grades are unchanged."
+    },
+    {
+      "path": "docs/releases/remediation-013/supplemental/assessments/39-web-real-render.json",
+      "curatorOrPriorProjectionSha256": "5e8d4f1d7309734b04cc684bc86cea55f3d6bb08233bb2d0d673961befcc953d",
+      "publishedSha256": "b184ca538209e461ef99be4f99024f63f5889bb1ad6edd24c7f7dab00338693c",
+      "bytes": 2142,
+      "transformation": "Replace only declared local path prefixes; refresh derived projected-file manifest digests where applicable. Original private source hashes and qualitative grades are unchanged."
+    },
+    {
+      "path": "docs/releases/remediation-013/supplemental/assessments/35-web-unknown-actual-model.json",
+      "curatorOrPriorProjectionSha256": "8b9d19e930cdda4cbb3d68345ca731b564bd7f85aba3da3b0e8488669dc69439",
+      "publishedSha256": "0b037f067f5924aa45545eeb725c132a987aacf77d08d61fcdd33a06d85f2e22",
+      "bytes": 5972,
+      "transformation": "Replace only declared local path prefixes; refresh derived projected-file manifest digests where applicable. Original private source hashes and qualitative grades are unchanged."
+    },
+    {
+      "path": "docs/releases/remediation-013/supplemental/assessments/10-local-unknown-actual-model.json",
+      "curatorOrPriorProjectionSha256": "b996e8f9dae8e0a3531afd2e6e0cca10cc7d60b8225d4d7618bf71e37e6b0f57",
+      "publishedSha256": "d313985c0fad848ce95831e5b50ac8e3554fc9a596cef2f6cc9d4d1ef2555c9e",
+      "bytes": 2939,
+      "transformation": "Replace only declared local path prefixes; refresh derived projected-file manifest digests where applicable. Original private source hashes and qualitative grades are unchanged."
+    },
+    {
+      "path": "docs/releases/remediation-013/supplemental/assessments/44-web-contiguous-verified-stack.json",
+      "curatorOrPriorProjectionSha256": "dcd1c322e9b54467e35c2cc508725d4d384b727fe1ece7712b804271f4f2acc1",
+      "publishedSha256": "09809f3b6c602ea7bdeaa17413baac95c7d57451544107bf4d5454e0455ca217",
+      "bytes": 4226,
+      "transformation": "Replace only declared local path prefixes; refresh derived projected-file manifest digests where applicable. Original private source hashes and qualitative grades are unchanged."
+    },
+    {
+      "path": "docs/releases/remediation-013/supplemental/assessments/19-local-smaller-solution.json",
+      "curatorOrPriorProjectionSha256": "47e3bdbe71c02ced7945f04eeadbcceb65721120821af99939af8a4a1fc4da4d",
+      "publishedSha256": "90d42b857a526b5067d36c46bc4998b4a0503f3b1510cba95a2941b882434d0b",
+      "bytes": 2770,
+      "transformation": "Replace only declared local path prefixes; refresh derived projected-file manifest digests where applicable. Original private source hashes and qualitative grades are unchanged."
+    },
+    {
+      "path": "docs/releases/remediation-013/supplemental/assessments/31-web-invalid-input.json",
+      "curatorOrPriorProjectionSha256": "bf8f24d1078b3ec43805e90e1a7debad70c90226412485e49051e5cb05b6fede",
+      "publishedSha256": "673912efda0d3cdd206c0dba3ce2e94b793bc26885dae554df31ce299cd1add3",
+      "bytes": 13311,
+      "transformation": "Replace only declared local path prefixes; refresh derived projected-file manifest digests where applicable. Original private source hashes and qualitative grades are unchanged."
+    },
+    {
+      "path": "docs/releases/remediation-013/supplemental/assessments/34-web-denied-writes.json",
+      "curatorOrPriorProjectionSha256": "6b2c1455bb631934b94d6ef0a5475a878123fccd1c24ec4f017ffea34a06285a",
+      "publishedSha256": "908aaad50a32995f3251f976ee292d7f9ff7901e51750d5df9e7f52431ce4085",
+      "bytes": 5772,
+      "transformation": "Replace only declared local path prefixes; refresh derived projected-file manifest digests where applicable. Original private source hashes and qualitative grades are unchanged."
+    },
+    {
+      "path": "docs/releases/remediation-013/supplemental/assessments/27-local-interrupted-external-write.json",
+      "curatorOrPriorProjectionSha256": "f71ba4b74f2b982dc683eb88b8d712996c8a2ad34dcb0a7523a458b85f51f720",
+      "publishedSha256": "6821c614f3f62b500e720415a4ef72f6f0134cacd495d98482d0b6c03e797ee7",
+      "bytes": 2108,
+      "transformation": "Replace only declared local path prefixes; refresh derived projected-file manifest digests where applicable. Original private source hashes and qualitative grades are unchanged."
+    },
+    {
+      "path": "docs/releases/remediation-013/supplemental/assessments/18-local-shape-first.json",
+      "curatorOrPriorProjectionSha256": "ba7858f3627a34d1709cceb0a5e1a2f28884c8e3a72bacf7e78fd3be848bbcaa",
+      "publishedSha256": "294c214d8c5c6d63b48a1c7fe8e5733cb13477bbae885e3ced6e3ae8db746eba",
+      "bytes": 2961,
+      "transformation": "Replace only declared local path prefixes; refresh derived projected-file manifest digests where applicable. Original private source hashes and qualitative grades are unchanged."
+    },
+    {
+      "path": "docs/releases/remediation-013/supplemental/assessments/30-web-supported-authoring.json",
+      "curatorOrPriorProjectionSha256": "58c49e82c0321d1afe78a5000bbf82f38839ba5c3298a4dcd1347b13b9e875cb",
+      "publishedSha256": "47983c214872705f66af5b8d987fcf94462ad77d62877e6412de9370bc7fa177",
+      "bytes": 13369,
+      "transformation": "Replace only declared local path prefixes; refresh derived projected-file manifest digests where applicable. Original private source hashes and qualitative grades are unchanged."
+    },
+    {
+      "path": "docs/releases/remediation-013/supplemental/assessments/38-web-migration-units.json",
+      "curatorOrPriorProjectionSha256": "3b8a96619ae8b8fec0a213246a7210c1d38f975f25296507504984e180c6df94",
+      "publishedSha256": "73a33ba883c4839c3086999ba7827871105863d7f5b8a8ffd8a4faff6abbaf5c",
+      "bytes": 2625,
+      "transformation": "Replace only declared local path prefixes; refresh derived projected-file manifest digests where applicable. Original private source hashes and qualitative grades are unchanged."
+    },
+    {
+      "path": "docs/releases/remediation-013/supplemental/assessments/22-local-unknown-model.json",
+      "curatorOrPriorProjectionSha256": "36395d233115c39c871542cc8469dba4b3f14d045971ab962351be90763f6e55",
+      "publishedSha256": "7d1f82327809ce7557268710827465490c0fdeb34ae8d5a2a91d234861ce3d73",
+      "bytes": 2004,
+      "transformation": "Replace only declared local path prefixes; refresh derived projected-file manifest digests where applicable. Original private source hashes and qualitative grades are unchanged."
+    },
+    {
+      "path": "docs/releases/remediation-013/supplemental/assessments/43-web-no-persistent-tool.json",
+      "curatorOrPriorProjectionSha256": "6271aa5790648cf25920c675604377829483ef77ecc0e76329c030b982ce3312",
+      "publishedSha256": "9db1bd8bd9b16efb2c381963813a34091a3d5f90e3b2edffc5362b6fc020e7a8",
+      "bytes": 2968,
+      "transformation": "Replace only declared local path prefixes; refresh derived projected-file manifest digests where applicable. Original private source hashes and qualitative grades are unchanged."
+    },
+    {
+      "path": "docs/releases/remediation-013/supplemental/assessments/36-web-unknown-model.json",
+      "curatorOrPriorProjectionSha256": "b8db87b3bfce09b78afbc94eeaf0e05f3e49f5ea65e238c07cca6b9e51989c03",
+      "publishedSha256": "fc13ed34e436d5f6bb88d264837037b65649c238d3f3288eaa54ad4eb0c3fb84",
+      "bytes": 5703,
+      "transformation": "Replace only declared local path prefixes; refresh derived projected-file manifest digests where applicable. Original private source hashes and qualitative grades are unchanged."
+    },
+    {
+      "path": "docs/releases/remediation-013/supplemental/assessments/37-web-symptom-repro.json",
+      "curatorOrPriorProjectionSha256": "c504d01abc3ddcdde132cc0447fe212e282a7e26aa6c4ed0245ad63bd335eff0",
+      "publishedSha256": "69a4fdadf4d6fb8297b35197dd8998788db541f154d4f910189c72879699c249",
+      "bytes": 9682,
+      "transformation": "Replace only declared local path prefixes; refresh derived projected-file manifest digests where applicable. Original private source hashes and qualitative grades are unchanged."
+    },
+    {
+      "path": "docs/releases/remediation-013/supplemental/assessments/03-local-benny-untrusted-marker.json",
+      "curatorOrPriorProjectionSha256": "ee5da382f91c28053e6d6aa9a3ad7ce3838a69ee302a4bfbf9991810a2f32838",
+      "publishedSha256": "c4b72eee53de0c5bc303eece4c7944d6a6fda847b378d3d42ba58044703f3acc",
+      "bytes": 2180,
+      "transformation": "Replace only declared local path prefixes; refresh derived projected-file manifest digests where applicable. Original private source hashes and qualitative grades are unchanged."
+    },
+    {
+      "path": "docs/releases/remediation-013/supplemental/assessments/26-local-arena-walkthrough.json",
+      "curatorOrPriorProjectionSha256": "01bb6dff760d702d6d6337be3fc031c7b519fc1d13853848c3df94ab4959a964",
+      "publishedSha256": "e316c3d2e753ea1f9ce114b2680630a35bc08c2101163a8f726b3785b7d4b2ae",
+      "bytes": 2533,
+      "transformation": "Replace only declared local path prefixes; refresh derived projected-file manifest digests where applicable. Original private source hashes and qualitative grades are unchanged."
+    },
+    {
+      "path": "docs/releases/remediation-013/supplemental/assessments/08-local-trace-path.json",
+      "curatorOrPriorProjectionSha256": "af8d50c2ed92a0d208ddbf8b989793f191e7ae3ac68831156796e9f69f444269",
+      "publishedSha256": "525be5fe2d7d2acc02cd904fbcaa3743ad6f96bbc21c476abf005eec8a3f0f9f",
+      "bytes": 2540,
+      "transformation": "Replace only declared local path prefixes; refresh derived projected-file manifest digests where applicable. Original private source hashes and qualitative grades are unchanged."
+    },
+    {
+      "path": "docs/releases/remediation-013/supplemental/assessments/20-local-unsupported-selected-model.json",
+      "curatorOrPriorProjectionSha256": "7b5658257f97641cba37f7f1601f8dd02d1f15411c1645b0bd6120d85661a782",
+      "publishedSha256": "4d3dcdd50bdaaa941b55d953c592aa16a414edb8002d41f4c70be60c4e290ee0",
+      "bytes": 2578,
+      "transformation": "Replace only declared local path prefixes; refresh derived projected-file manifest digests where applicable. Original private source hashes and qualitative grades are unchanged."
+    },
+    {
+      "path": "docs/releases/remediation-013/supplemental/assessments/07-local-resume-revision.json",
+      "curatorOrPriorProjectionSha256": "13b70d00a145819ef2122e9d86963890013e18cf5aa1fbf2926ca0cc51d76d3d",
+      "publishedSha256": "8de1a0040e2b8bf1f5576156c93a166a84166012c5df68d64f64ac6485419bac",
+      "bytes": 2959,
+      "transformation": "Replace only declared local path prefixes; refresh derived projected-file manifest digests where applicable. Original private source hashes and qualitative grades are unchanged."
+    },
+    {
+      "path": "docs/releases/remediation-013/supplemental/assessments/29-local-repeated-rule.json",
+      "curatorOrPriorProjectionSha256": "ea1fd97d7f0ac655b5621e547960e407a49f3343d3752791c5642d741fb43a9a",
+      "publishedSha256": "ecd683705ccd9679abd5bcae0899571fa819b47ccca3e0638ab15c11e2c46d4c",
+      "bytes": 2677,
+      "transformation": "Replace only declared local path prefixes; refresh derived projected-file manifest digests where applicable. Original private source hashes and qualitative grades are unchanged."
+    },
+    {
+      "path": "docs/releases/remediation-013/supplemental/assessments/16-local-candidate-cross-review.json",
+      "curatorOrPriorProjectionSha256": "5837c418170ee108e4a5d3504c0ef3bb622ec0b09e7720f16b1f1f3ba19ccc24",
+      "publishedSha256": "29ca3b322fa0466d19fea266e7d6e960d73f3244df40b04d9bb93009acefdfcf",
+      "bytes": 2466,
+      "transformation": "Replace only declared local path prefixes; refresh derived projected-file manifest digests where applicable. Original private source hashes and qualitative grades are unchanged."
+    },
+    {
+      "path": "docs/releases/remediation-013/supplemental/assessments/11-local-symptom-repro.json",
+      "curatorOrPriorProjectionSha256": "2331f1a0e131fc8fd5906e22de126165a0dbd233864732ccf2a843bfcbd8b268",
+      "publishedSha256": "8d5f74e69fac153b6cb2e3d52f42e18241569c23932dba5b546d465635762c4e",
+      "bytes": 3435,
+      "transformation": "Replace only declared local path prefixes; refresh derived projected-file manifest digests where applicable. Original private source hashes and qualitative grades are unchanged."
+    },
+    {
+      "path": "docs/releases/remediation-013/supplemental/assessments/06-local-plain-restate.json",
+      "curatorOrPriorProjectionSha256": "9e4652ac489a18bb1a41eb5b629a97fd9dda32cb13846217ed8fa0dea291cb41",
+      "publishedSha256": "ed932572041d9056d4f2f9d9b2343148cb93dbb93d5e7cb2d2e8b99f116b3db7",
+      "bytes": 2179,
+      "transformation": "Replace only declared local path prefixes; refresh derived projected-file manifest digests where applicable. Original private source hashes and qualitative grades are unchanged."
+    },
+    {
+      "path": "docs/releases/remediation-013/supplemental/assessments/14-local-poteto-walkthrough.json",
+      "curatorOrPriorProjectionSha256": "ebd3946c9849ad4e42b4facfed800aa0c037125bbd6f82fa360bdc16688c9d59",
+      "publishedSha256": "1a25f8ddc63c4f0d38d053fb7c7a346cf22d59d2c9a7837ee66e39f0e53c881d",
+      "bytes": 1900,
+      "transformation": "Replace only declared local path prefixes; refresh derived projected-file manifest digests where applicable. Original private source hashes and qualitative grades are unchanged."
+    },
+    {
+      "path": "docs/releases/remediation-013/supplemental/assessments/01-local-user-tradeoff.json",
+      "curatorOrPriorProjectionSha256": "7b1608db256e37a5b48ae2700f417263458e5c34d2f4db6b411928bd279cf01b",
+      "publishedSha256": "fa4ed59055ad60f6f22c9e9a8015ecd138e8af793fdb8afb312243f89a7bc45f",
+      "bytes": 2505,
+      "transformation": "Replace only declared local path prefixes; refresh derived projected-file manifest digests where applicable. Original private source hashes and qualitative grades are unchanged."
+    },
+    {
+      "path": "docs/releases/remediation-013/supplemental/assessments/13-local-stack-resume.json",
+      "curatorOrPriorProjectionSha256": "ff922cfb7f184aac9c8a8aaeb078e079e403d2196ececd71e932d8dc50d61c4c",
+      "publishedSha256": "cf25ed23c587a75e723655c784be313c2580cc0386dd6d6b5a000e4667dab16b",
+      "bytes": 2058,
+      "transformation": "Replace only declared local path prefixes; refresh derived projected-file manifest digests where applicable. Original private source hashes and qualitative grades are unchanged."
+    },
+    {
+      "path": "docs/releases/remediation-013/supplemental/assessments/28-local-denied-writes.json",
+      "curatorOrPriorProjectionSha256": "2b1ad773307aca74319b95138931a58b38c78a1f60231c70e761d8215b5bcd13",
+      "publishedSha256": "941c289ec9850a6b4093a009f624f7e27b1bb548f65e3b926a376c898023a1be",
+      "bytes": 2216,
+      "transformation": "Replace only declared local path prefixes; refresh derived projected-file manifest digests where applicable. Original private source hashes and qualitative grades are unchanged."
+    },
+    {
+      "path": "docs/releases/remediation-013/supplemental/assessments/25-local-legal-header.json",
+      "curatorOrPriorProjectionSha256": "a156a26bd3ae36545a0e4b24a63725997131b9c168faac5787bf02ef36fb3e45",
+      "publishedSha256": "08cb1ee736d22ce4d36eaf5d1004a84709a6d023fa278fd3fd0c1876365cb4b1",
+      "bytes": 2412,
+      "transformation": "Replace only declared local path prefixes; refresh derived projected-file manifest digests where applicable. Original private source hashes and qualitative grades are unchanged."
+    },
+    {
+      "path": "docs/releases/remediation-013/supplemental/assessments/02-local-dependency-readiness.json",
+      "curatorOrPriorProjectionSha256": "e47e8825b8cb399bb25d4afa932d93fac1a9485f0bf67a2c36770b7a8fceb2e0",
+      "publishedSha256": "a048a62021630e41efed6624be84fcd52e7624dd597e97290f33f7bebbfc72d9",
+      "bytes": 2326,
+      "transformation": "Replace only declared local path prefixes; refresh derived projected-file manifest digests where applicable. Original private source hashes and qualitative grades are unchanged."
+    },
+    {
+      "path": "docs/releases/remediation-013/supplemental/assessments/04-local-codex-setup-from-readme.json",
+      "curatorOrPriorProjectionSha256": "e3e724ccd99506bbf1cd63df5a9969488538f8c81edf1ce2a3156fd93dafa088",
+      "publishedSha256": "dfb2bfccb1a7be80f7b31bcd7edf1c370bf5a5cf574977e137e138ed6b8de946",
+      "bytes": 2255,
+      "transformation": "Replace only declared local path prefixes; refresh derived projected-file manifest digests where applicable. Original private source hashes and qualitative grades are unchanged."
+    },
+    {
+      "path": "docs/releases/remediation-013/supplemental/manifest.json",
+      "curatorOrPriorProjectionSha256": "95d9e5f16da7c85a6c8c8d4223b968b99e4aced22e00438e0201f108275ee498",
+      "publishedSha256": "23c45c7e5bbc770dee1edc2c89e049a4c2b9175ccc1f0f528011a7659653f701",
+      "bytes": 166524,
+      "transformation": "Replace only declared local path prefixes; refresh derived projected-file manifest digests where applicable. Original private source hashes and qualitative grades are unchanged."
+    },
+    {
+      "path": "docs/releases/remediation-013/web-resume/manifest.json",
+      "curatorOrPriorProjectionSha256": "679cbd0f6414659b7981254b73a8443a56a92193bf642eae879e11a99e645c45",
+      "publishedSha256": "3dadb2888a6fc45d4be0d4aed75c4053826acdd88490364bbb6d6036d4205983",
+      "bytes": 23738,
+      "transformation": "Replace only declared local path prefixes; refresh derived projected-file manifest digests where applicable. Original private source hashes and qualitative grades are unchanged."
+    },
+    {
+      "path": "docs/releases/remediation-013/local/artifact-manifest.json",
+      "curatorOrPriorProjectionSha256": "946979f7308967af9934859743fd810f957d83e0114ae6c18dee53c09271ae53",
+      "publishedSha256": "c1a71aa1ccbfa8d76e562e13ededcb35c78b88e30ccf25c9b258c1adeabb6ad7",
+      "bytes": 260804,
+      "transformation": "Replace only declared local path prefixes; refresh derived projected-file manifest digests where applicable. Original private source hashes and qualitative grades are unchanged."
+    }
+  ],
+  "limits": [
+    "This is an explicit further transformation of curated projections, not a rewrite of producer evidence or independent grades.",
+    "Original unmodified curator proposals and raw source bytes remain retained privately.",
+    "Path normalization does not supply missing method or native execution evidence."
+  ]
+}

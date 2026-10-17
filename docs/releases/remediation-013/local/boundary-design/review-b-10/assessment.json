@@ -1,0 +1,195 @@
+{
+  "schemaVersion": 1,
+  "kind": "historical-independent-assessment-projection",
+  "caseId": "boundary-design",
+  "attemptId": "review-b-10",
+  "startingMain": "4138e161c27cafffd2baaab6bf4ca53e86a57433",
+  "packageCommit": "51f209daf83cd97d64f89881d66533bb59dc57db",
+  "packageVersion": "0.1.3",
+  "inputRevision": "931f3a170b4f7d4b46cc2e1442d5d4268e3d1a7d",
+  "originalProposedStatus": "reduced-pass",
+  "evidenceStatus": "reduced-pass",
+  "qualifiesCurrentMain": false,
+  "sourceReview": {
+    "originalLocator": "grades/grade_remediation_local_b/result.json",
+    "sourceSha256": "d837b0c7cdea4be245b4a86ca593038cbe8b1596662a82fe6554e9d96444abd6",
+    "jsonPointer": "/rows/9",
+    "reviewer": "/root/grade_remediation_local_b",
+    "requestedModel": "inherit-parent",
+    "actualModel": "unknown"
+  },
+  "findings": [
+    "Only corrected current task931f3a170b4f7d4b46cc2e1442d5d4268e3d1a7d is accepted. Earlier wrong migration task and inherited-context designs remain rejected.",
+    "The immutable literal repro digest is c3b7bfef1bee77733e19fcec4ba960597d623baadbb1c2bafbcc3c060f852353. Actual untouched runtime and nullable compiler red precede the repair.",
+    "Two clean no-history item/collection whole-shape candidates finish before a fresh clean judge. The parent compares both and synthesizes after judgment.",
+    "The synthesis places caller usage before types, covers every rationale section, interface depth and all eight red flags, and names base/graft/rejections.",
+    "The implementation changes only batch/consumer behavior/types. Domain total(order):number, input acceptance, HTTP and exports are preserved.",
+    "Actual literal/working runtime green, strict nullable compilation, legacy specified-case parity and independent diff review are retained. This reviewer independently verified immutable repro and protected bytes."
+  ],
+  "limits": [
+    "The saved Arena receipt and returned method metadata do not meet the exact structured contract. declaredOrder is an array, outputPath names directories, role values differ from candidate/judge, method.order is an array and resultMethod is a string rather than the exact declared method object. Extra fields also violate validate_method exact shape.",
+    "Prospective replacement assignments lack the exact structured measurement method later inserted in the receipt. Real phase chronology cannot repair missing prospective/returned exact method fields."
+  ],
+  "chronology": [
+    "Rejected inherited-context candidates are quarantined. Accepted clean candidate read chains include required runner leaves before source inspection.",
+    "Native accepted dispatch/completion orders11/12 then13/14 precede fresh judge15/16, then synthesis and implementation. Capture timestamps are not event occurrence estimates."
+  ],
+  "predicate": [
+    {
+      "index": 1,
+      "text": "Ground with how and why when ownership or layering changes; skip only genuine greenfield.",
+      "status": "satisfied",
+      "assessment": "Detailed evidence and qualifying limits are in the exact satisfied/unmet/notApplicable predicates below."
+    },
+    {
+      "index": 2,
+      "text": "Use arena to compare at least two whole-shape candidates, screen all eight design red flags and judge interface depth.",
+      "status": "partial",
+      "assessment": "Detailed evidence and qualifying limits are in the exact satisfied/unmet/notApplicable predicates below."
+    },
+    {
+      "index": 3,
+      "text": "Preserve caller-first usage, type sketch, module ownership and every rationale-template section, including synthesis and rejected alternatives.",
+      "status": "satisfied",
+      "assessment": "Detailed evidence and qualifying limits are in the exact satisfied/unmet/notApplicable predicates below."
+    },
+    {
+      "index": 4,
+      "text": "Honor opt-in checkpoint, authorized implementation, deviation signals and scrap/reground/re-explore cycle.",
+      "status": "satisfied",
+      "assessment": "Detailed evidence and qualifying limits are in the exact satisfied/unmet/notApplicable predicates below."
+    },
+    {
+      "index": 5,
+      "text": "Observe independent workers and actual model diversity or disclose their limits; preserve model selection rejections and aliases.",
+      "status": "satisfied",
+      "assessment": "Detailed evidence and qualifying limits are in the exact satisfied/unmet/notApplicable predicates below."
+    }
+  ],
+  "sourceArtifactBindings": [
+    {
+      "originalLocator": "work/local_compiler_cases/projects/pricing-compatibility-corrected/deliverables/report.md",
+      "sourceSha256": "779e60bd190c93c82a7faf4361cae10b97513a23b81f3274288c7441a3a0364a",
+      "expectedSha256": "779e60bd190c93c82a7faf4361cae10b97513a23b81f3274288c7441a3a0364a",
+      "expectedHashMatches": true,
+      "bytes": 19187,
+      "publication": "omitted",
+      "reason": "Only a narrow inspected projection may be included. Private original remains unchanged."
+    },
+    {
+      "originalLocator": "work/local_compiler_cases/projects/pricing-compatibility-corrected/deliverables/replacement-assignments.json",
+      "sourceSha256": "8606b038bfef39e2921cde023d6555c7173e1890c71da9e77be5d6373c7bf840",
+      "expectedSha256": "8606b038bfef39e2921cde023d6555c7173e1890c71da9e77be5d6373c7bf840",
+      "expectedHashMatches": true,
+      "bytes": 2627,
+      "publication": "projected-fields",
+      "reason": "Only a narrow inspected projection may be included. Private original remains unchanged.",
+      "projectedPath": "docs/releases/remediation-013/local/boundary-design/review-b-10/proof/01-replacement-assignments.json.excerpt.json",
+      "projectedSha256": "3441f0520da0dabaa894470302eac6df8a09ca33a7f5332957b71a16262060af"
+    },
+    {
+      "originalLocator": "work/local_compiler_cases/projects/pricing-compatibility-corrected/deliverables/method-receipt.json",
+      "sourceSha256": "a8b302ddd5f487106c499c5a43c83c61f8dae3fa16a452afc0bdad50a1fb75b2",
+      "expectedSha256": "a8b302ddd5f487106c499c5a43c83c61f8dae3fa16a452afc0bdad50a1fb75b2",
+      "expectedHashMatches": true,
+      "bytes": 6367,
+      "publication": "projected-fields",
+      "reason": "Only a narrow inspected projection may be included. Private original remains unchanged.",
+      "projectedPath": "docs/releases/remediation-013/local/boundary-design/review-b-10/proof/02-method-receipt.json.excerpt.json",
+      "projectedSha256": "0bd8a752a44d1033d95d415faec6c7ea4780f44db0cf6fc1589e11fdbe43b910"
+    },
+    {
+      "originalLocator": "work/local_compiler_cases/projects/pricing-compatibility-corrected/deliverables/assignment-events.ndjson",
+      "sourceSha256": "0052fa9c81c53422d87b8211c60908886bc3163f52cabcca9fd7d925454e2d81",
+      "expectedSha256": "0052fa9c81c53422d87b8211c60908886bc3163f52cabcca9fd7d925454e2d81",
+      "expectedHashMatches": true,
+      "bytes": 8179,
+      "publication": "omitted",
+      "reason": "Only a narrow inspected projection may be included. Private original remains unchanged."
+    },
+    {
+      "originalLocator": "work/local_compiler_cases/projects/pricing-compatibility-corrected/deliverables/workers/design_item/read-record.md",
+      "sourceSha256": "7aa5c23a1de531e3730d4e0412f0842a351fd041c1efe84dd579f0e94fb87229",
+      "expectedSha256": "7aa5c23a1de531e3730d4e0412f0842a351fd041c1efe84dd579f0e94fb87229",
+      "expectedHashMatches": true,
+      "bytes": 8981,
+      "publication": "omitted",
+      "reason": "Only a narrow inspected projection may be included. Private original remains unchanged."
+    },
+    {
+      "originalLocator": "work/local_compiler_cases/projects/pricing-compatibility-corrected/deliverables/workers/design_collection/method.md",
+      "sourceSha256": "62ed9101acacfccf568863497d6ef9b9da6f25ff632112439335aebb04b50268",
+      "expectedSha256": "62ed9101acacfccf568863497d6ef9b9da6f25ff632112439335aebb04b50268",
+      "expectedHashMatches": true,
+      "bytes": 7258,
+      "publication": "omitted",
+      "reason": "Only a narrow inspected projection may be included. Private original remains unchanged."
+    },
+    {
+      "originalLocator": "work/local_compiler_cases/projects/pricing-compatibility-corrected/deliverables/workers/judge_clean/judgment.md",
+      "sourceSha256": "2af696fd0567f05068bc97a9d8ba75bb64d7d64fcb4a1cd6262d96b6916c873b",
+      "expectedSha256": "2af696fd0567f05068bc97a9d8ba75bb64d7d64fcb4a1cd6262d96b6916c873b",
+      "expectedHashMatches": true,
+      "bytes": 19452,
+      "publication": "omitted",
+      "reason": "Only a narrow inspected projection may be included. Private original remains unchanged."
+    },
+    {
+      "originalLocator": "work/local_compiler_cases/projects/pricing-compatibility-corrected/deliverables/synthesized-design.md",
+      "sourceSha256": "8b23068de25419b3e288bd108cca14147d5c1cdf4c1b73fa448e9b219bf1b30e",
+      "expectedSha256": "8b23068de25419b3e288bd108cca14147d5c1cdf4c1b73fa448e9b219bf1b30e",
+      "expectedHashMatches": true,
+      "bytes": 8484,
+      "publication": "omitted",
+      "reason": "Only a narrow inspected projection may be included. Private original remains unchanged."
+    },
+    {
+      "originalLocator": "work/local_compiler_cases/projects/pricing-compatibility-corrected/deliverables/evidence/verification-receipt.json",
+      "sourceSha256": "1eefbc593dadcdee040393aa456f0e0d4d4ebbfb4fe65f4c2b2194fdec4ff78e",
+      "expectedSha256": "1eefbc593dadcdee040393aa456f0e0d4d4ebbfb4fe65f4c2b2194fdec4ff78e",
+      "expectedHashMatches": true,
+      "bytes": 2538,
+      "publication": "projected-fields",
+      "reason": "Only a narrow inspected projection may be included. Private original remains unchanged.",
+      "projectedPath": "docs/releases/remediation-013/local/boundary-design/review-b-10/proof/03-verification-receipt.json.excerpt.json",
+      "projectedSha256": "d88d0e1f58deb11d4052a302a47941eab0be8fbe604cd6fc3ab995a05d79c72d"
+    },
+    {
+      "originalLocator": "work/local_compiler_cases/projects/pricing-compatibility-corrected/deliverables/working/batch.ts",
+      "sourceSha256": "13fb1540a006bd8ea8cbfa3ba0096ad1b72db9df7eac265dfe0d474651b6ad14",
+      "expectedSha256": "13fb1540a006bd8ea8cbfa3ba0096ad1b72db9df7eac265dfe0d474651b6ad14",
+      "expectedHashMatches": true,
+      "bytes": 311,
+      "publication": "omitted",
+      "reason": "Only a narrow inspected projection may be included. Private original remains unchanged."
+    },
+    {
+      "originalLocator": "work/local_compiler_cases/projects/pricing-compatibility-corrected/deliverables/working/consumer.ts",
+      "sourceSha256": "aab57ed07de2879c106024b047013e177ac193a80ba5c73e7c6a3e3d7b539a98",
+      "expectedSha256": "aab57ed07de2879c106024b047013e177ac193a80ba5c73e7c6a3e3d7b539a98",
+      "expectedHashMatches": true,
+      "bytes": 240,
+      "publication": "omitted",
+      "reason": "Only a narrow inspected projection may be included. Private original remains unchanged."
+    },
+    {
+      "originalLocator": "work/local_compiler_cases/actors/boundary-design-compatibility-corrected/native-scoped.jsonl",
+      "sourceSha256": "66420151fedcb90e16820ebeacbc80e224bb6f9db0883cddf74c3c2853457e49",
+      "expectedSha256": "66420151fedcb90e16820ebeacbc80e224bb6f9db0883cddf74c3c2853457e49",
+      "expectedHashMatches": true,
+      "bytes": 676519,
+      "publication": "omitted",
+      "reason": "Raw/native context, broad discovery, completion dump, or bulk source manifest is excluded. No protected payload is decoded."
+    }
+  ],
+  "projectionLimits": [
+    "This file projects the existing independent assessment and does not regrade the case.",
+    "Private source artifacts and omitted native operations remain private. Source digests bind originals, not transformed bytes.",
+    "Historical 0.1.3 observations do not qualify current main or a modified candidate."
+  ],
+  "statusMapping": {
+    "originalProposedStatus": "reduced-pass",
+    "canonicalStatus": "reduced-pass",
+    "rule": "No status alias is applied."
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "kind": "task-result-file-excerpt",
+  "caseId": "dependent-caller",
+  "attemptId": "review-b-08",
+  "inputRevision": "1adddb23d5a03b964e957118fab19000e2a1ae63",
+  "originalLocator": "cross-host-extra/local/projects/dependent-caller/outputs/dependent-caller.result.md",
+  "sourceSha256": "a4ded320bfee3f7254bc7203c4f5c3e1275895bd9227bcbc44fb90adb50fc032",
+  "sourceWasDirectlyListedByIndependentGrade": true,
+  "characterRange": {
+    "start": 0,
+    "endExclusive": 429,
+    "total": 26239
+  },
+  "content": "# dependent-caller actual attempt\n\nThe synchronous invalidation change breaks teardown in the exact supplied local fixture. The actual after-state probe exits 1 with a TypeError. Restoring the removed timer line in an isolated before-state copy produces `disposed ready: true` and exits 0. This is runtime evidence for the local vendored implementation, not evidence for a public package or running application.\n\n## What it does\n",
+  "transformation": "An inspected prefix of the actual task-result file is projected. Task-owned absolute paths use declared placeholders. The prefix may omit later qualifications. The independent assessment and its limits govern the proposed grade. This is neither a new grade nor a native callable-operation claim."
+}

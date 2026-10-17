@@ -1,0 +1,70 @@
+{
+  "caseId": "guides-worker-chatgpt",
+  "packageVersion": "0.1.3",
+  "packageCommit": "51f209daf83cd97d64f89881d66533bb59dc57db",
+  "host": "codex",
+  "hostMode": "Historical native Local task-scoped fixture observation",
+  "date": "2026-10-17",
+  "input": "Use pstack in worker-enabled ChatGPT. Actual task fixture revision 5425d22370d70584a3beead899cf6547be44cf9e.",
+  "observedOutput": "A real independent guide_owner read the guide and image assets, executed scoped invoice checks, and returned inspected artifacts. It preserved active-controller and permission limits, reported requested versus unknown actual models, and claimed no host loading. The native capture subsequently observes the worker model.",
+  "status": "pass",
+  "execution": "workers",
+  "inputRevision": "5425d22370d70584a3beead899cf6547be44cf9e",
+  "sourcePaths": [
+    "docs/guide/01-setup.md",
+    "docs/guide/02-poteto-mode.md",
+    "docs/guide/03-understand.md",
+    "docs/guide/04-design.md",
+    "docs/guide/05-build-and-clean.md",
+    "docs/guide/06-verify-and-ship.md",
+    "docs/guide/07-overnight.md",
+    "docs/guide/08-principles.md",
+    "docs/guide/09-make-it-yours.md",
+    "docs/guide/10-recipes-and-pitfalls.md",
+    "docs/guide/README.md",
+    "docs/guide/images/design.jpg",
+    "docs/guide/images/overnight.jpg",
+    "docs/guide/images/recipes.jpg",
+    "docs/guide/images/router.jpg",
+    "docs/guide/images/understanding.jpg",
+    "docs/guide/images/verification.jpg"
+  ],
+  "documentedCapabilities": [
+    "Frozen source instructions only. Current-main qualification is not established."
+  ],
+  "exposedTools": [],
+  "artifacts": [
+    "docs/releases/remediation-013/local/guides-worker-chatgpt/review-c-12/assessment.json",
+    "docs/releases/remediation-013/local/guides-worker-chatgpt/review-c-12/proof/01-guide_owner.assignment.json.excerpt.json",
+    "docs/releases/remediation-013/local/guides-worker-chatgpt/review-c-12/proof/02-guide_owner.inspection.json.excerpt.json",
+    "docs/releases/remediation-013/local/guides-worker-chatgpt/review-c-12/proof/supplied-input.json",
+    "docs/releases/remediation-013/local/guides-worker-chatgpt/review-c-12/proof/task-result-prefix.json"
+  ],
+  "limits": [
+    "Only the actual operations listed in this record have narrow public bindings. Other operations from the independent assessment remain unprojected. No missing operation is invented.",
+    "No qualifying callable native-operation excerpt was selected for this attempt. Result fields and independent review remain available, but do not substitute for missing operation proof."
+  ],
+  "priorActionIdentities": [],
+  "permissions": {
+    "execution": "granted",
+    "writes": "granted",
+    "externalActions": "denied"
+  },
+  "models": {
+    "requested": "inherit-parent",
+    "actual": "unknown"
+  },
+  "successfulOperations": [],
+  "nativeObservations": [
+    {
+      "observation": "review-outcome",
+      "evidence": "docs/releases/remediation-013/local/guides-worker-chatgpt/review-c-12/assessment.json",
+      "reviewedBy": "/root/grade_remediation_local_c"
+    },
+    {
+      "observation": "supplied-input",
+      "evidence": "docs/releases/remediation-013/local/guides-worker-chatgpt/review-c-12/proof/supplied-input.json",
+      "reviewedBy": "/root/project_historical_local"
+    }
+  ]
+}

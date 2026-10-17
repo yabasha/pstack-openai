@@ -1,0 +1,23 @@
+{
+  "kind": "historical-proof-selection",
+  "source": {
+    "path": "<private-run>/remaining-local/cases/poteto-walkthrough/outputs/poteto-walkthrough.result.md",
+    "sha256": "fa0e9749ee95b80c75385e5fbc38ed0f7efbe1185231388293a05088aac58b49",
+    "bytes": 6181
+  },
+  "selection": [
+    {
+      "locator": {
+        "textCodeUnits": [
+          0,
+          2300
+        ]
+      },
+      "value": "# Poteto walkthrough attempt\n\nThe read-only architecture explanation is blocked. The supplied case does not identify a concrete architecture question, its source target, or a named scenario active controller. The current fixture has no accessible object for original input revision b4a233815b91fb55d85383f0a7216b68090e6e65. No unrelated shared fixture was selected as a substitute.\n\n## Actual response\n\nThe frozen package README links docs/workflows/poteto-mode.md, and that complete destination is readable. The route selects Investigation for read-only architecture questions. Investigation routes through How, preserves read-only source and worker access, and ends with a cited answer. No PR or babysit follows. This explains the inspected workflow only. It does not answer an invented product question or establish installed host discovery.\n\nthroughput checkpoint: n/a, read-only investigation\n\n## Ownership and revision\n\nThe outer case is explicitly assigned to /root/poteto_walkthrough as remaining05-poteto. That assignment authorizes evidence outputs. It is separate from the missing scenario controller and grants no takeover of another controller. The independently observed fixture HEAD is a4df84ebab84f61ac6194ceb0ea810e6093e8112. No inner investigator was dispatched.\n\nThe package manifest reports version 0.1.3. The supplied frozen package commit is 51f209daf83cd97d64f89881d66533bb59dc57db. The installed snapshot has no Git metadata, so its commit identity is supplied, not independently derived from that directory. Exact SHA-256 digests of inspected files are in source-hashes.json. No other package version was used.\n\n## Attempts and gates\n\n| Branch | Actual action and result | Remaining gate |\n| --- | --- | --- |\n| Frozen README route | Read README, followed actual Poteto link, read complete workflow and dependent contracts. | Installed host discovery remains unverified. Direct filesystem reads do not establish it. |\n| Full Investigation | Verified input SHA and resolved outer owner. Inspected supplied contract and fixture maps. | Missing concrete question, target, and scenario controller block dependent worker dispatch and answer. |\n| Reduced foreground Investigation | Retained checklist, source inspection, workflow explanation, exact checkpoint, and explicit skips. "
+    }
+  ],
+  "limits": [
+    "Selections preserve the exact source value at each locator. Truncated strings carry explicit code-unit bounds.",
+    "A producer-captured return is not a recovered native parent envelope. Missing call IDs, original capture defects and unknown model observations remain missing."
+  ]
+}

@@ -1,0 +1,39 @@
+{
+  "kind": "selected-fixture-result-fields",
+  "caseId": "preserved-behavior",
+  "attemptId": "review-c-02",
+  "originalLocator": "remaining-local/cases/preserved-behavior/outputs/primary-owner-equivalence.receipt.json",
+  "sourceSha256": "3e528ab8303c709bd617bd3f9fca9f9b9119c2e865208b82266523cb2cbef30d",
+  "sourceBytes": 2673,
+  "transformation": "Named JSON fields selected by exact JSON Pointer. Task-owned absolute paths replaced with declared placeholders. Other fields omitted. These are result-artifact values, not synthesized tool execution evidence. Public selection is limited to eight short inspected fields. Longer output and unselected fields remain private.",
+  "fields": [
+    {
+      "pointer": "/name",
+      "value": "primary-owner-equivalence"
+    },
+    {
+      "pointer": "/command",
+      "value": [
+        "bun",
+        "--no-install",
+        "outputs/behavior.mjs",
+        "outputs/workers/mechanical_01/primary/invoice",
+        "formatAmount",
+        "check",
+        "outputs/baseline.json"
+      ]
+    },
+    {
+      "pointer": "/exitCode",
+      "value": 0
+    },
+    {
+      "pointer": "/stderr",
+      "value": ""
+    },
+    {
+      "pointer": "/inputRevision",
+      "value": "1b69f163da7e4648e691c8b26cac8465ec1b596f"
+    }
+  ]
+}

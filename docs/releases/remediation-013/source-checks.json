@@ -1,0 +1,373 @@
+{
+  "kind": "focused-source-candidate-verification",
+  "sourceFixCommit": "cf96c2dcbaea2bb8c07b649a47b5c66c51f63c13",
+  "base": "bf91f1c00991fb2eda7541c45b6f0be08ac89be3",
+  "qualifiesPackage": false,
+  "workflowCasesAdded": 0,
+  "receipts": [
+    {
+      "sourceLocator": "source-checkpoint-validation-final.json",
+      "sourceSha256": "80be6c7a9f5fb50410dab90d34d12efd45280b53c52041559da44e5e50db9a6b",
+      "at": null,
+      "supersedes": null,
+      "checks": [
+        {
+          "sourcePointer": "",
+          "args": [
+            "/opt/homebrew/bin/python3",
+            "-B",
+            "-m",
+            "unittest",
+            "tests.test_full_package_update",
+            "tests.test_dependencies",
+            "tests.test_source_inventory",
+            "tests.test_inventory_closed",
+            "tests.test_validate_package",
+            "tests.test_catalog",
+            "tests.test_validate_evidence"
+          ],
+          "exitCode": 0,
+          "startedAt": "2026-10-17T15:21:36.812Z",
+          "finishedAt": "2026-10-17T15:22:11.778Z",
+          "stdout": {
+            "complete": true,
+            "value": ""
+          },
+          "stderr": {
+            "complete": true,
+            "value": "..............................................................................................................\n----------------------------------------------------------------------\nRan 110 tests in 34.791s\n\nOK\n"
+          }
+        }
+      ]
+    },
+    {
+      "sourceLocator": "source-checkpoint-metadata-checks.json",
+      "sourceSha256": "0902088a48342dbc1006487ff77f124efd607b1a6d56a20fbdcbc2f16ad39c76",
+      "at": null,
+      "supersedes": null,
+      "checks": [
+        {
+          "sourcePointer": "/checks/0",
+          "args": [
+            "/opt/homebrew/bin/python3",
+            "-B",
+            "-m",
+            "unittest",
+            "tests.test_dependencies",
+            "tests.test_source_inventory",
+            "tests.test_inventory_closed",
+            "tests.test_validate_package",
+            "tests.test_catalog"
+          ],
+          "exitCode": 0,
+          "startedAt": "2026-10-17T15:21:15.034Z",
+          "finishedAt": "2026-10-17T15:21:18.053Z",
+          "stdout": {
+            "complete": true,
+            "value": ""
+          },
+          "stderr": {
+            "complete": true,
+            "value": "........................................................................\n----------------------------------------------------------------------\nRan 72 tests in 2.856s\n\nOK\n"
+          }
+        },
+        {
+          "sourcePointer": "/checks/1",
+          "args": [
+            "/opt/homebrew/bin/python3",
+            "-B",
+            "tools/validate_package.py",
+            "--root",
+            ".",
+            "--inventory",
+            "docs/parity/inventory.json"
+          ],
+          "exitCode": 0,
+          "startedAt": "2026-10-17T15:21:18.053Z",
+          "finishedAt": "2026-10-17T15:21:21.433Z",
+          "stdout": {
+            "complete": true,
+            "value": "Package structural checks passed; host behavior remains unverified.\n"
+          },
+          "stderr": {
+            "complete": true,
+            "value": ""
+          }
+        }
+      ]
+    },
+    {
+      "sourceLocator": "source-checkpoint-helper-checks-corrected.json",
+      "sourceSha256": "b9d3641cf61edd50ccf81c27a31f709dc32cb2c109530fbb80e5c35e844b0339",
+      "at": "2026-10-17T15:22:21.669Z",
+      "supersedes": "source-checkpoint-helper-checks.json incorrectly omitted existing isolated dependency binding and set ORCH_TEST_ROOT inside package; original retained",
+      "checks": [
+        {
+          "sourcePointer": "/checks/0",
+          "args": [
+            "bun",
+            "--no-install",
+            "test",
+            "skills/poteto-mode/scripts"
+          ],
+          "exitCode": 0,
+          "startedAt": null,
+          "finishedAt": null,
+          "stdout": {
+            "complete": true,
+            "value": "bun test v1.4.2 (50a8a8387)\n"
+          },
+          "stderr": {
+            "complete": false,
+            "originalCharacters": 18354,
+            "head": {
+              "start": 0,
+              "end": 400,
+              "value": "\nskills/poteto-mode/scripts/bootstrap.test.ts:\n(pass) missing_dependencies_do_not_install [5.80ms]\n(pass) mismatched_lock_does_not_restart [8.33ms]\n(pass) read_only_package_does_not_write [4.43ms]\n(pass) mismatched_installed_version_requires_setup [5.57ms]\n(pass) matching_metadata_succeeds_without_writes [5.33ms]\n\nskills/poteto-mode/scripts/watch-pr/policy.test.ts:\n(pass) readiness truth table > c"
+            },
+            "tail": {
+              "start": 16554,
+              "end": 18354,
+              "value": "cks, and summarizes typed ledger verdicts [7.93ms]\n(pass) Store > pushes, peeks, and atomically drains inbox pointers [7.71ms]\n(pass) Store > requires explicit reviewed force to replace a stale lock [13.76ms]\n(pass) Store > blocks a writer and steals the pid lock only with force [6.21ms]\n(pass) Store > parks gates, stores standing orders, and renders status [9.28ms]\n(pass) Store > resolves the ordered Graphite frontier and validates an optional pin [1188.61ms]\n(pass) Store > rejects unparseable Graphite output loudly [606.09ms]\n(pass) Store > rejects malformed TSV, verdict, frontier, and inbox data [6.34ms]\n(pass) Store > rejects operations after close [4.13ms]\n(pass) orch CLI > prints commander help and rejects invalid parsing with exit 1 [71.75ms]\n(pass) orch CLI > accepts ORCH_STORE and emits complete JSON [52.87ms]\n(pass) orch CLI > maps user and not-found outcomes to the preserved exit codes [135.78ms]\n(pass) portable bookkeeping boundaries > rejects a preexisting inbox symlink before initialization [1.57ms]\n(pass) portable bookkeeping boundaries > rejects a replaced inbox symlink before pointer writes or drain [7.10ms]\n(pass) portable bookkeeping boundaries > explicit_writable_store [5.02ms]\n(pass) portable bookkeeping boundaries > two_isolated_assignments [10.81ms]\n(pass) portable bookkeeping boundaries > stale_lock_requires_review [14.48ms]\n(pass) portable bookkeeping boundaries > invalid_revision_cannot_pass [5.98ms]\n(pass) portable bookkeeping boundaries > crash_preserves_last_valid_record [26.98ms]\n(pass) orch CLI portable boundaries > owned init JSON leaves the package tree unchanged [373.37ms]\n(pass) orch CLI portable boundaries > stale lock requires review in CLI output [34.05ms]\n\n 183 pass\n 0 fail\n 597 expect() calls\nRan 183 tests across 6 files. [2.69s]\n"
+            },
+            "omission": "Middle omitted; original source digest binds the full receipt."
+          }
+        },
+        {
+          "sourcePointer": "/checks/1",
+          "args": [
+            "bun",
+            "--no-install",
+            "<private-run>-worktree/skills/poteto-mode/scripts/node_modules/typescript/bin/tsc",
+            "--project",
+            "skills/poteto-mode/scripts/watch-pr/tsconfig.json",
+            "--noEmit",
+            "--strict"
+          ],
+          "exitCode": 0,
+          "startedAt": null,
+          "finishedAt": null,
+          "stdout": {
+            "complete": true,
+            "value": ""
+          },
+          "stderr": {
+            "complete": true,
+            "value": ""
+          }
+        }
+      ]
+    },
+    {
+      "sourceLocator": "source-checkpoint-provenance-gate.json",
+      "sourceSha256": "46ee4cf3247b2a812ae3c3527d55d3210dca213dbde730bbd7a95321dbca40f9",
+      "at": "2026-10-17T15:24:14.457Z",
+      "supersedes": null,
+      "checks": [
+        {
+          "sourcePointer": "",
+          "args": [
+            "/opt/homebrew/bin/python3",
+            "-B",
+            "-m",
+            "unittest",
+            "tests.test_release_report.CheckedInProvenanceTests"
+          ],
+          "exitCode": 1,
+          "startedAt": null,
+          "finishedAt": null,
+          "stdout": {
+            "complete": true,
+            "value": ""
+          },
+          "stderr": {
+            "complete": true,
+            "value": "E\n======================================================================\nERROR: test_current_package_matches_its_tested_freeze (tests.test_release_report.CheckedInProvenanceTests.test_current_package_matches_its_tested_freeze)\n----------------------------------------------------------------------\nTraceback (most recent call last):\n  File \"<private-run>-worktree/tests/test_release_report.py\", line 24, in test_current_package_matches_its_tested_freeze\n    rollback_tested_commit(ROOT, head, committed_tree(ROOT, head), inventory),\n    ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"<private-run>-worktree/tools/sync_upstream.py\", line 714, in rollback_tested_commit\n    raise ValueError('Operative package differs in inventory identity')\nValueError: Operative package differs in inventory identity\n\n----------------------------------------------------------------------\nRan 1 test in 44.410s\n\nFAILED (errors=1)\n"
+          }
+        }
+      ]
+    },
+    {
+      "sourceLocator": "source-checkpoint-python-checks.json",
+      "sourceSha256": "f05e16b365ee2449f292ac00fde6679f2c5fd7a410ce87418a11abee9ab79184",
+      "at": null,
+      "supersedes": null,
+      "checks": [
+        {
+          "sourcePointer": "",
+          "args": [
+            "/opt/homebrew/bin/python3",
+            "-B",
+            "-m",
+            "unittest",
+            "tests.test_full_package_update",
+            "tests.test_dependency_integrity",
+            "tests.test_validate_evidence"
+          ],
+          "exitCode": 1,
+          "startedAt": "2026-10-17T15:20:29.826Z",
+          "finishedAt": "2026-10-17T15:21:05.842Z",
+          "stdout": {
+            "complete": true,
+            "value": ""
+          },
+          "stderr": {
+            "complete": true,
+            "value": "....E..................................\n======================================================================\nERROR: test_dependency_integrity (unittest.loader._FailedTest.test_dependency_integrity)\n----------------------------------------------------------------------\nImportError: Failed to import test module: test_dependency_integrity\nTraceback (most recent call last):\n  File \"/opt/homebrew/Cellar/python@3.14/3.14.8/Frameworks/Python.framework/Versions/3.14/lib/python3.14/unittest/loader.py\", line 141, in loadTestsFromName\n    module = __import__(module_name)\nModuleNotFoundError: No module named 'tests.test_dependency_integrity'\n\n\n----------------------------------------------------------------------\nRan 39 tests in 35.817s\n\nFAILED (errors=1)\n"
+          }
+        }
+      ]
+    },
+    {
+      "sourceLocator": "source-checkpoint-helper-checks.json",
+      "sourceSha256": "285a696537fa5e215ca549c7d2c13d9306aba8626d863d28ffe4008d4e8d0e60",
+      "at": "2026-10-17T15:21:50.236Z",
+      "supersedes": null,
+      "checks": [
+        {
+          "sourcePointer": "/checks/0",
+          "args": [
+            "bun",
+            "--no-install",
+            "test",
+            "skills/poteto-mode/scripts"
+          ],
+          "exitCode": 1,
+          "startedAt": null,
+          "finishedAt": null,
+          "stdout": {
+            "complete": true,
+            "value": "bun test v1.4.2 (50a8a8387)\n"
+          },
+          "stderr": {
+            "complete": false,
+            "originalCharacters": 39221,
+            "head": {
+              "start": 0,
+              "end": 400,
+              "value": "\nskills/poteto-mode/scripts/bootstrap.test.ts:\n(pass) missing_dependencies_do_not_install [9.67ms]\n(pass) mismatched_lock_does_not_restart [6.52ms]\n(pass) read_only_package_does_not_write [3.09ms]\n(pass) mismatched_installed_version_requires_setup [5.76ms]\n(pass) matching_metadata_succeeds_without_writes [5.95ms]\n\nskills/poteto-mode/scripts/watch-pr/policy.test.ts:\n(pass) readiness truth table > c"
+            },
+            "tail": {
+              "start": 37421,
+              "end": 39221,
+              "value": "s, and summarizes typed ledger verdicts [0.56ms]\n(fail) Store > pushes, peeks, and atomically drains inbox pointers [0.51ms]\n(fail) Store > requires explicit reviewed force to replace a stale lock [0.57ms]\n(fail) Store > blocks a writer and steals the pid lock only with force [0.52ms]\n(fail) Store > parks gates, stores standing orders, and renders status [0.51ms]\n(fail) Store > resolves the ordered Graphite frontier and validates an optional pin [0.42ms]\n(fail) Store > rejects unparseable Graphite output loudly [0.44ms]\n(fail) Store > rejects malformed TSV, verdict, frontier, and inbox data [0.43ms]\n(fail) Store > rejects operations after close [0.39ms]\n(fail) orch CLI > prints commander help and rejects invalid parsing with exit 1 [17.53ms]\n(fail) orch CLI > accepts ORCH_STORE and emits complete JSON [15.07ms]\n(fail) orch CLI > maps user and not-found outcomes to the preserved exit codes [15.71ms]\n(fail) portable bookkeeping boundaries > rejects a preexisting inbox symlink before initialization [1.28ms]\n(fail) portable bookkeeping boundaries > rejects a replaced inbox symlink before pointer writes or drain [0.59ms]\n(fail) portable bookkeeping boundaries > explicit_writable_store [0.97ms]\n(fail) portable bookkeeping boundaries > two_isolated_assignments [0.53ms]\n(fail) portable bookkeeping boundaries > stale_lock_requires_review [0.53ms]\n(fail) portable bookkeeping boundaries > invalid_revision_cannot_pass [0.52ms]\n(fail) portable bookkeeping boundaries > crash_preserves_last_valid_record [0.54ms]\n(fail) orch CLI portable boundaries > owned init JSON leaves the package tree unchanged [262.76ms]\n(fail) orch CLI portable boundaries > stale lock requires review in CLI output [0.65ms]\n\n 149 pass\n 24 fail\n 1 error\n 441 expect() calls\nRan 173 tests across 6 files. [400.00ms]\n"
+            },
+            "omission": "Middle omitted; original source digest binds the full receipt."
+          }
+        },
+        {
+          "sourcePointer": "/checks/1",
+          "args": [
+            "bun",
+            "--no-install",
+            "<private-run>-worktree/skills/poteto-mode/scripts/node_modules/typescript/bin/tsc",
+            "--project",
+            "skills/poteto-mode/scripts/watch-pr/tsconfig.json",
+            "--noEmit",
+            "--strict"
+          ],
+          "exitCode": 1,
+          "startedAt": null,
+          "finishedAt": null,
+          "stdout": {
+            "complete": true,
+            "value": ""
+          },
+          "stderr": {
+            "complete": true,
+            "value": "error: Module not found \"<private-run>-worktree/skills/poteto-mode/scripts/node_modules/typescript/bin/tsc\"\n"
+          }
+        }
+      ]
+    }
+  ],
+  "webDeadline": {
+    "sourceLocator": "web-checkpoint-3/checkpoints/20261017T0758/deadline-observed-checks.json",
+    "sourceSha256": "20b6ce7ff81aa87ca111a8d4fcb1022390b159fe0821d1ce8c09816d5b6284a7",
+    "selectedFields": {
+      "clock": "2026-10-17T07:53:54.284Z",
+      "checks": [
+        {
+          "file": "010-original-red-explicit.raw.json",
+          "exitCode": 1,
+          "counts": [
+            "6 pass",
+            "6 fail",
+            "30 expect() calls"
+          ],
+          "bytes": 25817,
+          "sha256": "a59f8bbcf94be4efde2cd103325584bd2f3cf18b580af582dbe169358ff79b3a"
+        },
+        {
+          "file": "013-watcher.raw.json",
+          "exitCode": 0,
+          "counts": [
+            "155 pass",
+            "0 fail",
+            "469 expect() calls"
+          ],
+          "bytes": 16898,
+          "sha256": "193947c3d3d5944f088b4ee148c0b5e86d2a8dea7f5e2c9e43e1f4752f9f5186"
+        },
+        {
+          "file": "014-original-plus-cli.raw.json",
+          "exitCode": 0,
+          "counts": [
+            "27 pass",
+            "0 fail",
+            "120 expect() calls"
+          ],
+          "bytes": 27207,
+          "sha256": "4d6c70ea0eb3c090234b384c3873b54ea436d539e8b83f4cf1e141f43b1c959b"
+        },
+        {
+          "file": "015-all-helper.raw.json",
+          "exitCode": null,
+          "counts": null,
+          "bytes": 2841,
+          "sha256": "dda1063af611c979f955403e240a115c6ab9a7ce690e0cf7d596a63aa495ce31"
+        },
+        {
+          "file": "016-all-helper-terminal.raw.json",
+          "exitCode": 0,
+          "counts": [
+            "183 pass",
+            "0 fail",
+            "597 expect() calls"
+          ],
+          "bytes": 16971,
+          "sha256": "1b4f97e6d0298c15c43b5e7935e6381c9551c3bae00ca3b52abafd4435e59200"
+        },
+        {
+          "file": "017-strict-compiler.raw.json",
+          "exitCode": 0,
+          "counts": null,
+          "bytes": 540,
+          "sha256": "cba510e5b2e50e29bf6a97998b40628428ff0fba9e1fc70a1857eb10b953f13f"
+        }
+      ],
+      "scope": "Separate candidate verification; not87 qualification. Full raw files retained. Controlled reader/clock; no live forge or release claim.",
+      "limitations": "Initial wrong test selector, late checklist/source reads, missing early captures and incomplete original-tree identity retained in report."
+    }
+  },
+  "limits": [
+    "Controlled reader and clock tests do not prove live forge readiness.",
+    "The unchanged old-freeze provenance gate remains red; no marker or historical evidence was changed.",
+    "Failed harness invocations remain retained with separately named corrected receipts.",
+    "Public path placeholders describe actual prior arguments and are not executable substitutions."
+  ],
+  "receiptAliasRegression": [
+    {
+      "sourceLocator": "receipt-repair/project/.receipt-evidence/frozen-original-red.txt",
+      "sourceSha256": "a42cddf4d8149ecf80a4c58221e50170866f26b4808c12b88981dfeb31a301aa",
+      "transformation": "Complete task-owned test output with private-run root path replaced; original hash preserved",
+      "output": "[\"python3\",\"-B\",\".receipt-evidence/frozen-regression.py\"]\ntest_two_returns_cannot_share_one_artifact (__main__.OriginalAliasingRegression.test_two_returns_cannot_share_one_artifact) ... FAIL\ntest_rejected_return_cannot_alias_final_summary (__main__.OriginalAliasingRegression.test_rejected_return_cannot_alias_final_summary) ... FAIL\n\n======================================================================\nFAIL: test_two_returns_cannot_share_one_artifact (__main__.OriginalAliasingRegression.test_two_returns_cannot_share_one_artifact)\n----------------------------------------------------------------------\nTraceback (most recent call last):\n  File \"<private-run>/receipt-repair/project/.receipt-evidence/frozen-regression.py\", line 19, in test_two_returns_cannot_share_one_artifact\n    self.assertTrue(self.check(), 'Two rejected attempts alias the same final summary but validator accepts them')\n    ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError: [] is not true : Two rejected attempts alias the same final summary but validator accepts them\n\n======================================================================\nFAIL: test_rejected_return_cannot_alias_final_summary (__main__.OriginalAliasingRegression.test_rejected_return_cannot_alias_final_summary)\n----------------------------------------------------------------------\nTraceback (most recent call last):\n  File \"<private-run>/receipt-repair/project/.receipt-evidence/frozen-regression.py\", line 25, in test_rejected_return_cannot_alias_final_summary\n    self.assertTrue(self.check(), 'Rejected return aliases final summary but validator accepts it')\n    ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError: [] is not true : Rejected return aliases final summary but validator accepts it\n\n----------------------------------------------------------------------\nRan 2 tests in 0.037s\n\nFAILED (failures=2)\n\nexitCode=1\n"
+    },
+    {
+      "sourceLocator": "receipt-repair/project/.receipt-evidence/frozen-original-green.txt",
+      "sourceSha256": "0d07107cf053ff474fab76a211306aebd5220925577f9499a62154b8add499d4",
+      "transformation": "Complete task-owned test output with private-run root path replaced; original hash preserved",
+      "output": "[\"python3\",\"-B\",\".receipt-evidence/frozen-regression.py\"]\ntest_two_returns_cannot_share_one_artifact (__main__.OriginalAliasingRegression.test_two_returns_cannot_share_one_artifact) ... ok\ntest_rejected_return_cannot_alias_final_summary (__main__.OriginalAliasingRegression.test_rejected_return_cannot_alias_final_summary) ... ok\n\n----------------------------------------------------------------------\nRan 2 tests in 0.041s\n\nOK\n\nexitCode=0\n"
+    }
+  ]
+}

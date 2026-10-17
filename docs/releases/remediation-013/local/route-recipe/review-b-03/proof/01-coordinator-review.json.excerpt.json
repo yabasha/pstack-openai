@@ -1,0 +1,27 @@
+{
+  "kind": "selected-fixture-result-fields",
+  "caseId": "route-recipe",
+  "attemptId": "review-b-03",
+  "originalLocator": "remaining-local/cases/route-recipe/outputs/coordinator-review.json",
+  "sourceSha256": "7917874ed9d803c37404810dc8d27d3aa24c19ef13845948b9835bd9d683fa1d",
+  "sourceBytes": 1661,
+  "transformation": "Named JSON fields selected by exact JSON Pointer. Task-owned absolute paths replaced with declared placeholders. Other fields omitted. These are result-artifact values, not synthesized tool execution evidence. Public selection is limited to eight short inspected fields. Longer output and unselected fields remain private.",
+  "fields": [
+    {
+      "pointer": "/assignmentId",
+      "value": "route-recipe-attempt-1"
+    },
+    {
+      "pointer": "/inputRevision",
+      "value": "8ad10cb42cc9e0a09f6eb9239b2909203a7f9a3e"
+    },
+    {
+      "pointer": "/limits",
+      "value": [
+        "Actual model unknown.",
+        "No second-host execution.",
+        "No app target or app action."
+      ]
+    }
+  ]
+}

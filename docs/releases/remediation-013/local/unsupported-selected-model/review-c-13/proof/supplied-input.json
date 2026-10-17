@@ -1,0 +1,10 @@
+{
+  "kind": "supplied-fixture-input-excerpt",
+  "caseId": "unsupported-selected-model",
+  "inputRevision": "a770be5d7e6b2d8d9ce776bf3258ae9f6f4ba24b",
+  "originalLocator": "cross-host-extra/local/projects/unsupported-selected-model/task-contract.json",
+  "sourceSha256": "3ea6c1311ddf8f74acb7548791ab1eef115ad4466fe01f0b1efea92bf72613cf",
+  "pointer": "/case/prompt",
+  "suppliedPrompt": "The requested model is unavailable or rejects the selected effort.",
+  "transformation": "Only the exact supplied case prompt is projected. Fixture data and arbitrary surrounding contract fields are omitted. This is supplied input, not a native successful tool operation."
+}

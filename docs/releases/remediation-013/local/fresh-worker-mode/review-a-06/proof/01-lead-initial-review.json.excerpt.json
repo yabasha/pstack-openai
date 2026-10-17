@@ -1,0 +1,31 @@
+{
+  "kind": "selected-fixture-result-fields",
+  "caseId": "fresh-worker-mode",
+  "attemptId": "review-a-06",
+  "originalLocator": "remaining-local/cases/fresh-worker-mode/outputs/lead-initial-review.json",
+  "sourceSha256": "486c3304afcca40955476ea6d6093540e1a73909e5075c536f1dcfa59480d39e",
+  "sourceBytes": 920,
+  "transformation": "Named JSON fields selected by exact JSON Pointer. Task-owned absolute paths replaced with declared placeholders. Other fields omitted. These are result-artifact values, not synthesized tool execution evidence. Public selection is limited to eight short inspected fields. Longer output and unselected fields remain private.",
+  "fields": [
+    {
+      "pointer": "/assignmentId",
+      "value": "remaining01-fresh-no-spawn-1"
+    },
+    {
+      "pointer": "/inputRevision",
+      "value": "de083c0cb5a8bc8e952f02eb63c0df968cb9e8bc"
+    },
+    {
+      "pointer": "/currentHead",
+      "value": "de083c0cb5a8bc8e952f02eb63c0df968cb9e8bc"
+    },
+    {
+      "pointer": "/findings",
+      "value": [
+        "Injected watcher fixtures establish no real forge merge or readiness.",
+        "Stale/missing integration fixtures are distinct from actual child acceptance.",
+        "No-spawn review observed separately; independent full architecture is a later attempt."
+      ]
+    }
+  ]
+}

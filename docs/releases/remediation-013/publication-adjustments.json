@@ -1,0 +1,22 @@
+{
+  "kind": "explicit-coordinator-narrative-adjustments",
+  "changes": [
+    {
+      "path": "docs/releases/remediation-013/local/README.md",
+      "priorProjectionSha256": "284532329611b29f4b3426b2b441b97e764fc437d51ab8a2ba080eb00f406d91",
+      "publishedSha256": "8e3d225419603e033ee05a36b671d5202f191d925b7d11bdebebc4a1b5e8ee16",
+      "reason": "Avoid an accidental capitalized legacy tool-token false positive in a prose description; meaning unchanged",
+      "independentGradeChanged": false,
+      "originalSourceHashesChanged": false
+    },
+    {
+      "path": "docs/releases/remediation-013/local/inherited-identical-models/review-c-14/review.md",
+      "priorProjectionSha256": "7d1f3c0c1174d69424b26f4281746172fdb62ffd638debe236f1443a72af47ce",
+      "publishedSha256": "997a299f4cbd8ab35c7d17416fed9b328f5ff9a3bfee5d3dfe40538cc79ce90d",
+      "reason": "Keep exact observed model identifier in the linked hash-bound assessment data; Markdown remains a report and introduces no operative model-routing instruction",
+      "independentGradeChanged": false,
+      "originalSourceHashesChanged": false
+    }
+  ],
+  "scope": "Original curator artifacts and source proof remain privately unchanged. Exact actual model value remains in assessment JSON."
+}

@@ -1,0 +1,47 @@
+{
+  "kind": "historical-proof-selection",
+  "source": {
+    "path": "<private-run>/web-checkpoint-1/units/package-support-contracts/outputs/package-support-contracts/008-bootstrap.raw.json",
+    "sha256": "e476c0652f826467653af10f252b48f0c194e27ac175e699f72a864bd69326c5",
+    "bytes": 468
+  },
+  "selection": [
+    {
+      "locator": {
+        "jsonPointer": "/clock"
+      },
+      "value": "2026-10-17T06:46:49.071Z"
+    },
+    {
+      "locator": {
+        "jsonPointer": "/request/command"
+      },
+      "value": [
+        "/mnt/data/pstack-013-evaluation/runtime/bun-linux-x64/bun",
+        "--no-install",
+        "-e",
+        "import {ensureDependenciesInstalled} from \"./bootstrap.ts\"; ensureDependenciesInstalled()"
+      ]
+    },
+    {
+      "locator": {
+        "jsonPointer": "/request/cwd"
+      },
+      "value": "/mnt/data/pstack-remediation-20261017/runtime/package-main-4138e16/skills/poteto-mode/scripts"
+    },
+    {
+      "locator": {
+        "jsonPointer": "/returned"
+      },
+      "value": {
+        "exitCode": 0,
+        "stdout": "",
+        "stderr": ""
+      }
+    }
+  ],
+  "limits": [
+    "Selections preserve the exact source value at each locator. Truncated strings carry explicit code-unit bounds.",
+    "A producer-captured return is not a recovered native parent envelope. Missing call IDs, original capture defects and unknown model observations remain missing."
+  ]
+}

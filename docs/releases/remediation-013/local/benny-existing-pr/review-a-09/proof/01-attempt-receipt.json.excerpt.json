@@ -1,0 +1,43 @@
+{
+  "kind": "selected-fixture-result-fields",
+  "caseId": "benny-existing-pr",
+  "attemptId": "review-a-09",
+  "originalLocator": "remaining-local/cases/benny-existing-pr/outputs/attempt-receipt.json",
+  "sourceSha256": "a64ff8432d2e88e818ba01919c7fd51001bb945398cdb43c0c81e7b07fea9f43",
+  "sourceBytes": 50701,
+  "transformation": "Named JSON fields selected by exact JSON Pointer. Task-owned absolute paths replaced with declared placeholders. Other fields omitted. These are result-artifact values, not synthesized tool execution evidence. Public selection is limited to eight short inspected fields. Longer output and unselected fields remain private.",
+  "fields": [
+    {
+      "pointer": "/caseId",
+      "value": "benny-existing-pr"
+    },
+    {
+      "pointer": "/assignmentId",
+      "value": "remaining01-benny-existing-pr-0"
+    },
+    {
+      "pointer": "/inputRevision",
+      "value": "9ec21d40fe60c794e1127957595734eeea25138c"
+    },
+    {
+      "pointer": "/requestedModel",
+      "value": "inherit-parent"
+    },
+    {
+      "pointer": "/actualModel",
+      "value": "unknown"
+    },
+    {
+      "pointer": "/checks/0/exitCode",
+      "value": 0
+    },
+    {
+      "pointer": "/checks/0/stdout",
+      "value": "9ec21d40fe60c794e1127957595734eeea25138c\n"
+    },
+    {
+      "pointer": "/checks/0/stderr",
+      "value": ""
+    }
+  ]
+}

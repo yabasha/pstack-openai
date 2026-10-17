@@ -1,0 +1,23 @@
+{
+  "kind": "historical-proof-selection",
+  "source": {
+    "path": "<private-run>/web-checkpoint-3/units/smaller-solution/outputs/smaller-solution/pricing-observable-probes.mjs",
+    "sha256": "c0e49c588a599310d1cf3f7168e37681f03b89886abd0798bba0fb80a72325f7",
+    "bytes": 3636
+  },
+  "selection": [
+    {
+      "locator": {
+        "textCodeUnits": [
+          0,
+          2300
+        ]
+      },
+      "value": "import assert from 'node:assert/strict';\nimport {PriceService,PriceAdapter,PriceFacade,quote} from './task-input/domain/pricing.mjs';\nconst observations=[];\nconst probe=(name,run)=>{const observed=run();observations.push({name,observed});};\nprobe('literal quote rounding and tax',()=>{assert.equal(quote(100,500),105);assert.equal(quote(101,500),106);assert.equal(quote(1,5000),2);return [105,106,2];});\nprobe('prototype own quote methods',()=>{for(const Type of [PriceService,PriceAdapter,PriceFacade])assert.equal(Object.hasOwn(Type.prototype,'quote'),true);return ['PriceService','PriceAdapter','PriceFacade'];});\nprobe('instance collaborator structure',()=>{const adapter=new PriceAdapter();const facade=new PriceFacade();assert.equal(adapter.service instanceof PriceService,true);assert.equal(facade.adapter instanceof PriceAdapter,true);assert.equal(facade.adapter.service instanceof PriceService,true);return {adapterOwnKeys:Object.keys(adapter),facadeOwnKeys:Object.keys(facade),nestedService:true};});\nprobe('adapter collaborator replacement remains observable',()=>{const adapter=new PriceAdapter();adapter.service={quote:(net,tax)=>{assert.equal(net,100);assert.equal(tax,500);return 701;}};assert.equal(adapter.quote(100,500),701);return 701;});\nprobe('facade collaborator replacement remains observable',()=>{const facade=new PriceFacade();facade.adapter={quote:(net,tax)=>{assert.equal(net,101);assert.equal(tax,500);return 702;}};assert.equal(facade.quote(101,500),702);return 702;});\nprobe('entry point observes facade prototype replacement',()=>{const original=PriceFacade.prototype.quote;try{PriceFacade.prototype.quote=function(net,tax){assert.equal(net,100);assert.equal(tax,500);return 703;};assert.equal(quote(100,500),703);return 703;}finally{PriceFacade.prototype.quote=original;}});\nprobe('facade observes adapter prototype replacement',()=>{const original=PriceAdapter.prototype.quote;try{PriceAdapter.prototype.quote=()=>704;assert.equal(new PriceFacade().quote(100,500),704);return 704;}finally{PriceAdapter.prototype.quote=original;}});\nprobe('service remains policy owner',()=>{for(const Type of [PriceService,PriceAdapter,PriceFacade]){assert.equal(new Type().quote(101,500),106);assert.throws(()=>new Type().quote(-1,500),{message:'Invalid price'});}assert.equal(quote"
+    }
+  ],
+  "limits": [
+    "Selections preserve the exact source value at each locator. Truncated strings carry explicit code-unit bounds.",
+    "A producer-captured return is not a recovered native parent envelope. Missing call IDs, original capture defects and unknown model observations remain missing."
+  ]
+}

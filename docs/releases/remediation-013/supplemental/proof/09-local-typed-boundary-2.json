@@ -1,0 +1,23 @@
+{
+  "kind": "historical-proof-selection",
+  "source": {
+    "path": "<private-run>/cross-host-extra/local/projects/typed-boundary/outputs/method-limits.md",
+    "sha256": "d07c3e441579f3311341cc6731dabdffc2ad3b05fb01670724d8ad074cdc2ec6",
+    "bytes": 2246
+  },
+  "selection": [
+    {
+      "locator": {
+        "textCodeUnits": [
+          0,
+          2246
+        ]
+      },
+      "value": "# Method limits\n\nThe initial how worker dispatch failed with `collab spawn failed: agent thread limit reached`. A fresh later assignment returned a real worker identity and completed. The failed attempt remains failed.\n\nThe initial second design dispatch also failed with that thread-limit message. A distinct later assignment `typed-design-b2` returned a real identity. It ran while candidate A was still active. The earlier failed dispatch is not counted as a worker.\n\nCandidate A returned a full SHA, artifact digest and actual method prose. It did not return the required native structured method object. A parent interpretation previously placed a resultMethod object in the local event capture. The later correction event explicitly supersedes that interpretation. It is not accepted method evidence. No formal Arena receipt can use it.\n\nCandidate B's structured result arrived in its actual terminal response after a scoped in-flight request. Its original immutable assignment and dispatch order remain unchanged. This does not repair candidate A.\n\nBoth design candidates used fork-none and were told not to read the comparison rubric or other candidate. Their shared task also pointed to supplied-request.json, which includes the supplied contract's expected-outcome text. The record therefore does not claim a completely blind candidate input. The separate rubric file was withheld by instruction. Access to the supplied contract limits a stricter blindness claim.\n\nA fresh read-only judge inspected both completed artifacts and original code, chose the direct decoder, and explicitly permitted a reduced output-copy implementation. That qualitative design judgment does not waive the failed formal method gate or establish host parity.\n\nRequested models and efforts are inherit-parent. Actual models and efforts were not exposed. No model enumeration occurred. Model diversity and different-family trail review remain unverified. No unsupported-model rejection is invented.\n\nThe historical originalInputRevision object is absent in the local repository. The selected ORIGINAL fixture files were read in full at the supplied independently verified current input revision. No equality claim to the inaccessible historical object is made.\n"
+    }
+  ],
+  "limits": [
+    "Selections preserve the exact source value at each locator. Truncated strings carry explicit code-unit bounds.",
+    "A producer-captured return is not a recovered native parent envelope. Missing call IDs, original capture defects and unknown model observations remain missing."
+  ]
+}

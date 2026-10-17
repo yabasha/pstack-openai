@@ -1,0 +1,98 @@
+{
+  "schemaVersion": 1,
+  "kind": "historical-independent-assessment-projection",
+  "caseId": "user-correction",
+  "attemptId": "review-c-01",
+  "startingMain": "4138e161c27cafffd2baaab6bf4ca53e86a57433",
+  "packageCommit": "51f209daf83cd97d64f89881d66533bb59dc57db",
+  "packageVersion": "0.1.3",
+  "inputRevision": "65d08a5efc7d5758c8537040f113e53cedf4b272",
+  "originalProposedStatus": "reduced",
+  "evidenceStatus": "reduced-pass",
+  "qualifiesCurrentMain": false,
+  "sourceReview": {
+    "originalLocator": "grades/grade_remediation_local_c/result.json",
+    "sourceSha256": "2582d82fe0ad256da816b168e5b242a713d134d62af8657c4f7bc255d3a7ceba",
+    "jsonPointer": "/cases/0",
+    "reviewer": "/root/grade_remediation_local_c",
+    "requestedModel": "inherit-parent",
+    "actualModel": "unknown"
+  },
+  "findings": [
+    "The accessible synthetic digest supports exactly one repeated unsupported-delivery class and a source-grounded enforcement table. The historical executable mistakes, implementation target and CI are absent. No enforcement was implemented or proved against real past mistakes."
+  ],
+  "limits": [
+    "Real historical mistakes and an actual reporting producer",
+    "Implemented enforcement with historical failing proof and local/CI parity"
+  ],
+  "chronology": [],
+  "predicate": "correct expectedFull fix-and-prove versus expectedReduced scoped findings and proposed enforcement.",
+  "sourceArtifactBindings": [
+    {
+      "originalLocator": "remaining-local/cases/user-correction/task-contract.json",
+      "sourceSha256": "acb5f2f3a652842d08177577bf63ca1e068db04acb21e521d5b7d9e169bce657",
+      "expectedSha256": "acb5f2f3a652842d08177577bf63ca1e068db04acb21e521d5b7d9e169bce657",
+      "expectedHashMatches": true,
+      "bytes": 3042,
+      "publication": "omitted",
+      "reason": "Only a narrow inspected projection may be included. Private original remains unchanged."
+    },
+    {
+      "originalLocator": "remaining-local/cases/user-correction/outputs/user-correction.result.md",
+      "sourceSha256": "ce4b4a44436db56176ec04db9da63e0e6d897265f2ff3c40047d9ca1a09ca97f",
+      "expectedSha256": "ce4b4a44436db56176ec04db9da63e0e6d897265f2ff3c40047d9ca1a09ca97f",
+      "expectedHashMatches": true,
+      "bytes": 7921,
+      "publication": "omitted",
+      "reason": "Only a narrow inspected projection may be included. Private original remains unchanged."
+    },
+    {
+      "originalLocator": "remaining-local/cases/user-correction/outputs/completion.json",
+      "sourceSha256": "e776a78ad26a0837f148b0eb4c830fa611b13dc5dc93a1c35db3ac6ae63af205",
+      "expectedSha256": "e776a78ad26a0837f148b0eb4c830fa611b13dc5dc93a1c35db3ac6ae63af205",
+      "expectedHashMatches": true,
+      "bytes": 4025,
+      "publication": "omitted",
+      "reason": "Raw/native context, broad discovery, completion dump, or bulk source manifest is excluded. No protected payload is decoded."
+    },
+    {
+      "originalLocator": "remaining-local/cases/user-correction/outputs/checks.json",
+      "sourceSha256": "cd18c13ddd0db7b51d2a2505a676742f9a05f98b36aee7d602316ddf32d6b00e",
+      "expectedSha256": "cd18c13ddd0db7b51d2a2505a676742f9a05f98b36aee7d602316ddf32d6b00e",
+      "expectedHashMatches": true,
+      "bytes": 1118,
+      "publication": "omitted",
+      "reason": "Only a narrow inspected projection may be included. Private original remains unchanged."
+    },
+    {
+      "originalLocator": "remaining-local/cases/user-correction/outputs/identities.json",
+      "sourceSha256": "481a31bb833307ab21f8b80dd5bbdba6a33e7d1ffbb7f42bbf0beb0b5dfe2c06",
+      "expectedSha256": "481a31bb833307ab21f8b80dd5bbdba6a33e7d1ffbb7f42bbf0beb0b5dfe2c06",
+      "expectedHashMatches": true,
+      "bytes": 5613,
+      "publication": "omitted",
+      "reason": "Raw/native context, broad discovery, completion dump, or bulk source manifest is excluded. No protected payload is decoded."
+    },
+    {
+      "originalLocator": "remaining-local/cases/user-correction/outputs/parent-inspection.json",
+      "sourceSha256": "5c3ce28c6a9fdf8ea01a60d7a85a5078859828360c7703002980a3d758838c0a",
+      "expectedSha256": "5c3ce28c6a9fdf8ea01a60d7a85a5078859828360c7703002980a3d758838c0a",
+      "expectedHashMatches": true,
+      "bytes": 666,
+      "publication": "projected-fields",
+      "reason": "Only a narrow inspected projection may be included. Private original remains unchanged.",
+      "projectedPath": "docs/releases/remediation-013/local/user-correction/review-c-01/proof/01-parent-inspection.json.excerpt.json",
+      "projectedSha256": "a8a34c1fcdbe0a7b8a6ead1f5e5227596ca8ca31805b16b4a944d2dea3a3dd8c"
+    }
+  ],
+  "projectionLimits": [
+    "This file projects the existing independent assessment and does not regrade the case.",
+    "Private source artifacts and omitted native operations remain private. Source digests bind originals, not transformed bytes.",
+    "Historical 0.1.3 observations do not qualify current main or a modified candidate."
+  ],
+  "statusMapping": {
+    "originalProposedStatus": "reduced",
+    "canonicalStatus": "reduced-pass",
+    "rule": "The original reviewer uses reduced. The evidence schema names this display alias reduced-pass. The original proposed grade remains unchanged."
+  }
+}

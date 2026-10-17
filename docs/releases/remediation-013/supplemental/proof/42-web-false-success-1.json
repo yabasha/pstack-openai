@@ -1,0 +1,109 @@
+{
+  "kind": "historical-proof-selection",
+  "source": {
+    "path": "<private-run>/web-checkpoint-3/units/false-success/outputs/false-success/ui-result.json",
+    "sha256": "5f8b23a3ee9f5278dfb31f1944d38f048128be93584b620d32de187da4de61d7",
+    "bytes": 818
+  },
+  "selection": [
+    {
+      "locator": {
+        "jsonPointer": "/status"
+      },
+      "value": "observed-ui-and-data"
+    },
+    {
+      "locator": {
+        "jsonPointer": "/browserVersion"
+      },
+      "value": "151.0.7922.34"
+    },
+    {
+      "locator": {
+        "jsonPointer": "/serverPid"
+      },
+      "value": 23
+    },
+    {
+      "locator": {
+        "jsonPointer": "/url"
+      },
+      "value": "http://127.0.0.1:41725/"
+    },
+    {
+      "locator": {
+        "jsonPointer": "/deniedSave"
+      },
+      "value": "Entitlement required"
+    },
+    {
+      "locator": {
+        "jsonPointer": "/deniedStoredCount"
+      },
+      "value": 0
+    },
+    {
+      "locator": {
+        "jsonPointer": "/visibleNotes"
+      },
+      "value": [
+        "Native UI persisted note"
+      ]
+    },
+    {
+      "locator": {
+        "jsonPointer": "/stored"
+      },
+      "value": {
+        "schemaVersion": 2,
+        "notes": [
+          {
+            "id": "8c97aa6d-ac6e-4e8e-b677-d8590abc351d",
+            "title": "Native UI persisted note",
+            "body": "Verified through the browser"
+          }
+        ]
+      }
+    },
+    {
+      "locator": {
+        "jsonPointer": "/domId"
+      },
+      "value": "8c97aa6d-ac6e-4e8e-b677-d8590abc351d"
+    },
+    {
+      "locator": {
+        "jsonPointer": "/loopbackPolicy"
+      },
+      "value": "Only exact127.0.0.1port HTTP continued; allotherrequests abort; WebSockets denied; serviceworkers blocked"
+    },
+    {
+      "locator": {
+        "jsonPointer": "/sandboxDisabledOnlyForThisBrowser"
+      },
+      "value": true
+    },
+    {
+      "locator": {
+        "jsonPointer": "/originalSandboxFailurePreserved"
+      },
+      "value": true
+    },
+    {
+      "locator": {
+        "jsonPointer": "/actualModel"
+      },
+      "value": "unknown"
+    },
+    {
+      "locator": {
+        "jsonPointer": "/finishedAt"
+      },
+      "value": "2026-10-17T07:48:49.416Z"
+    }
+  ],
+  "limits": [
+    "Selections preserve the exact source value at each locator. Truncated strings carry explicit code-unit bounds.",
+    "A producer-captured return is not a recovered native parent envelope. Missing call IDs, original capture defects and unknown model observations remain missing."
+  ]
+}

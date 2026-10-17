@@ -1,0 +1,727 @@
+{
+  "schemaVersion": 1,
+  "kind": "historical-independent-assessment-projection",
+  "caseId": "fresh-worker-mode",
+  "attemptId": "review-a-06",
+  "startingMain": "4138e161c27cafffd2baaab6bf4ca53e86a57433",
+  "packageCommit": "51f209daf83cd97d64f89881d66533bb59dc57db",
+  "packageVersion": "0.1.3",
+  "inputRevision": "de083c0cb5a8bc8e952f02eb63c0df968cb9e8bc",
+  "originalProposedStatus": "reduced-pass",
+  "evidenceStatus": "reduced-pass",
+  "qualifiesCurrentMain": false,
+  "sourceReview": {
+    "originalLocator": "grades/grade_remediation_local_a/result.json",
+    "sourceSha256": "9cc1f7ebfcf0f02bdaaabc03a16ca8ef1a0dcc165259e873d7be84affe57bc2f",
+    "jsonPointer": "/cases/5",
+    "reviewer": "/root/grade_remediation_local_a",
+    "requestedModel": "inherit-parent",
+    "actualModel": "unknown"
+  },
+  "findings": [
+    "Fresh independent workers, isolated outputs, source reads and helper-boundary observations exist. A later serializer implementation has real literal tests, mutation failures, independent review and PTY proof.",
+    "The initial no-spawn serializer accepts Symbol where original interpolation throws. That rejected snapshot remains distinct from the later corrected implementation.",
+    "Initial and second-round Arena method.order values were integers and roles were specialized names. Actual returns preserved those invalid methods. They cannot be normalized retrospectively.",
+    "A new prospective round three uses exact candidate/judge roles and string method.order. The frozen validator returned no method errors, and actual assignment/result fields match. It is later design-only evidence and cannot establish before-implementation chronology.",
+    "Initial generic checklists, late throughput checkpoint and the first how worker lacking a complete mode-read proof prevent an unqualified full mode workflow result."
+  ],
+  "limits": [
+    "The initial no-spawn serializer accepts Symbol where original interpolation throws. That rejected snapshot remains distinct from the later corrected implementation.",
+    "Initial and second-round Arena method.order values were integers and roles were specialized names. Actual returns preserved those invalid methods. They cannot be normalized retrospectively.",
+    "A new prospective round three uses exact candidate/judge roles and string method.order. The frozen validator returned no method errors, and actual assignment/result fields match. It is later design-only evidence and cannot establish before-implementation chronology."
+  ],
+  "chronology": {
+    "preserveAllEarlierAttempts": true,
+    "methodConformanceClaim": false,
+    "notes": [
+      "Fresh independent workers, isolated outputs, source reads and helper-boundary observations exist. A later serializer implementation has real literal tests, mutation failures, independent review and PTY proof.",
+      "The initial no-spawn serializer accepts Symbol where original interpolation throws. That rejected snapshot remains distinct from the later corrected implementation.",
+      "Initial and second-round Arena method.order values were integers and roles were specialized names. Actual returns preserved those invalid methods. They cannot be normalized retrospectively.",
+      "A new prospective round three uses exact candidate/judge roles and string method.order. The frozen validator returned no method errors, and actual assignment/result fields match. It is later design-only evidence and cannot establish before-implementation chronology.",
+      "Initial generic checklists, late throughput checkpoint and the first how worker lacking a complete mode-read proof prevent an unqualified full mode workflow result."
+    ]
+  },
+  "predicate": [
+    {
+      "id": 1,
+      "text": "Observed read of the complete mode, chosen playbook and every applied principle leaf",
+      "status": "unmet",
+      "basis": [
+        "Fresh independent workers, isolated outputs, source reads and helper-boundary observations exist. A later serializer implementation has real literal tests, mutation failures, independent review and PTY proof.",
+        "The initial no-spawn serializer accepts Symbol where original interpolation throws. That rejected snapshot remains distinct from the later corrected implementation.",
+        "Initial and second-round Arena method.order values were integers and roles were specialized names. Actual returns preserved those invalid methods. They cannot be normalized retrospectively.",
+        "A new prospective round three uses exact candidate/judge roles and string method.order. The frozen validator returned no method errors, and actual assignment/result fields match. It is later design-only evidence and cannot establish before-implementation chronology.",
+        "Initial generic checklists, late throughput checkpoint and the first how worker lacking a complete mode-read proof prevent an unqualified full mode workflow result."
+      ],
+      "source": "docs/parity/cases/skills/poteto-mode.json",
+      "evidence": [
+        {
+          "path": "<private-run>/remaining-local/cases/fresh-worker-mode/outputs/completion.json",
+          "line": 1,
+          "sha256": "be2fc01cce374856d4fc3538817a0eb51e0fbc1e9db7b7dfc29303789ce1c87e"
+        },
+        {
+          "path": "<private-run>/remaining-local/cases/fresh-worker-mode/outputs/lead-initial-review.json",
+          "line": 1,
+          "sha256": "486c3304afcca40955476ea6d6093540e1a73909e5075c536f1dcfa59480d39e"
+        },
+        {
+          "path": "<private-run>/remaining-local/cases/fresh-worker-mode/outputs/lead-full-feature-review.md",
+          "line": 1,
+          "sha256": "062c376abfaf0841b863105438e9efb8109285c37f160c404168b84c8f162024"
+        },
+        {
+          "path": "<private-run>/remaining-local/cases/fresh-worker-mode/outputs/lead-method-validation.json",
+          "line": 1,
+          "sha256": "ed6058c7f1c84ccfe71d469f3b1e2e8d893b1f1947d6c2a606afc0bf35c0f695"
+        },
+        {
+          "path": "<private-run>/remaining-local/cases/fresh-worker-mode/outputs/lead-raw-method-comparison.json",
+          "line": 1,
+          "sha256": "085fe0f0d1e5ccc6f602071690710c53ec60a6ac65efab20b5785aaf8f0bb88c"
+        },
+        {
+          "path": "<private-run>/remaining-local/cases/fresh-worker-mode/outputs/full-feature/method-contract-failure.md",
+          "line": 1,
+          "sha256": "c828c8a086b6dfbfcc45e8b39ac4038ce968e5d3b0c1bd224ce33b8b841a8d54"
+        },
+        {
+          "path": "<private-run>/remaining-local/cases/fresh-worker-mode/outputs/full-feature/arena-round3.method-receipt.json",
+          "line": 1,
+          "sha256": "6670499aa64e91b40a3669c8e83f6af4125dbe59a3a6682244838735b6173f92"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "text": "Authorized independent worker spawn and inspected result for full behavior",
+      "status": "satisfied",
+      "basis": [
+        "Fresh independent workers, isolated outputs, source reads and helper-boundary observations exist. A later serializer implementation has real literal tests, mutation failures, independent review and PTY proof.",
+        "The initial no-spawn serializer accepts Symbol where original interpolation throws. That rejected snapshot remains distinct from the later corrected implementation.",
+        "Initial and second-round Arena method.order values were integers and roles were specialized names. Actual returns preserved those invalid methods. They cannot be normalized retrospectively.",
+        "A new prospective round three uses exact candidate/judge roles and string method.order. The frozen validator returned no method errors, and actual assignment/result fields match. It is later design-only evidence and cannot establish before-implementation chronology.",
+        "Initial generic checklists, late throughput checkpoint and the first how worker lacking a complete mode-read proof prevent an unqualified full mode workflow result."
+      ],
+      "source": "docs/parity/cases/skills/poteto-mode.json",
+      "evidence": [
+        {
+          "path": "<private-run>/remaining-local/cases/fresh-worker-mode/outputs/completion.json",
+          "line": 1,
+          "sha256": "be2fc01cce374856d4fc3538817a0eb51e0fbc1e9db7b7dfc29303789ce1c87e"
+        },
+        {
+          "path": "<private-run>/remaining-local/cases/fresh-worker-mode/outputs/lead-initial-review.json",
+          "line": 1,
+          "sha256": "486c3304afcca40955476ea6d6093540e1a73909e5075c536f1dcfa59480d39e"
+        },
+        {
+          "path": "<private-run>/remaining-local/cases/fresh-worker-mode/outputs/lead-full-feature-review.md",
+          "line": 1,
+          "sha256": "062c376abfaf0841b863105438e9efb8109285c37f160c404168b84c8f162024"
+        },
+        {
+          "path": "<private-run>/remaining-local/cases/fresh-worker-mode/outputs/lead-method-validation.json",
+          "line": 1,
+          "sha256": "ed6058c7f1c84ccfe71d469f3b1e2e8d893b1f1947d6c2a606afc0bf35c0f695"
+        },
+        {
+          "path": "<private-run>/remaining-local/cases/fresh-worker-mode/outputs/lead-raw-method-comparison.json",
+          "line": 1,
+          "sha256": "085fe0f0d1e5ccc6f602071690710c53ec60a6ac65efab20b5785aaf8f0bb88c"
+        },
+        {
+          "path": "<private-run>/remaining-local/cases/fresh-worker-mode/outputs/full-feature/method-contract-failure.md",
+          "line": 1,
+          "sha256": "c828c8a086b6dfbfcc45e8b39ac4038ce968e5d3b0c1bd224ce33b8b841a8d54"
+        },
+        {
+          "path": "<private-run>/remaining-local/cases/fresh-worker-mode/outputs/full-feature/arena-round3.method-receipt.json",
+          "line": 1,
+          "sha256": "6670499aa64e91b40a3669c8e83f6af4125dbe59a3a6682244838735b6173f92"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "text": "Immutable scoped assignment, exact input revision, separate write ownership and requested versus observed model records",
+      "status": "unmet",
+      "basis": [
+        "Fresh independent workers, isolated outputs, source reads and helper-boundary observations exist. A later serializer implementation has real literal tests, mutation failures, independent review and PTY proof.",
+        "The initial no-spawn serializer accepts Symbol where original interpolation throws. That rejected snapshot remains distinct from the later corrected implementation.",
+        "Initial and second-round Arena method.order values were integers and roles were specialized names. Actual returns preserved those invalid methods. They cannot be normalized retrospectively.",
+        "A new prospective round three uses exact candidate/judge roles and string method.order. The frozen validator returned no method errors, and actual assignment/result fields match. It is later design-only evidence and cannot establish before-implementation chronology.",
+        "Initial generic checklists, late throughput checkpoint and the first how worker lacking a complete mode-read proof prevent an unqualified full mode workflow result."
+      ],
+      "source": "docs/parity/cases/skills/poteto-mode.json",
+      "evidence": [
+        {
+          "path": "<private-run>/remaining-local/cases/fresh-worker-mode/outputs/completion.json",
+          "line": 1,
+          "sha256": "be2fc01cce374856d4fc3538817a0eb51e0fbc1e9db7b7dfc29303789ce1c87e"
+        },
+        {
+          "path": "<private-run>/remaining-local/cases/fresh-worker-mode/outputs/lead-initial-review.json",
+          "line": 1,
+          "sha256": "486c3304afcca40955476ea6d6093540e1a73909e5075c536f1dcfa59480d39e"
+        },
+        {
+          "path": "<private-run>/remaining-local/cases/fresh-worker-mode/outputs/lead-full-feature-review.md",
+          "line": 1,
+          "sha256": "062c376abfaf0841b863105438e9efb8109285c37f160c404168b84c8f162024"
+        },
+        {
+          "path": "<private-run>/remaining-local/cases/fresh-worker-mode/outputs/lead-method-validation.json",
+          "line": 1,
+          "sha256": "ed6058c7f1c84ccfe71d469f3b1e2e8d893b1f1947d6c2a606afc0bf35c0f695"
+        },
+        {
+          "path": "<private-run>/remaining-local/cases/fresh-worker-mode/outputs/lead-raw-method-comparison.json",
+          "line": 1,
+          "sha256": "085fe0f0d1e5ccc6f602071690710c53ec60a6ac65efab20b5785aaf8f0bb88c"
+        },
+        {
+          "path": "<private-run>/remaining-local/cases/fresh-worker-mode/outputs/full-feature/method-contract-failure.md",
+          "line": 1,
+          "sha256": "c828c8a086b6dfbfcc45e8b39ac4038ce968e5d3b0c1bd224ce33b8b841a8d54"
+        },
+        {
+          "path": "<private-run>/remaining-local/cases/fresh-worker-mode/outputs/full-feature/arena-round3.method-receipt.json",
+          "line": 1,
+          "sha256": "6670499aa64e91b40a3669c8e83f6af4125dbe59a3a6682244838735b6173f92"
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "text": "Four throughput checkpoint items and evidence attached to claims",
+      "status": "unmet",
+      "basis": [
+        "Fresh independent workers, isolated outputs, source reads and helper-boundary observations exist. A later serializer implementation has real literal tests, mutation failures, independent review and PTY proof.",
+        "The initial no-spawn serializer accepts Symbol where original interpolation throws. That rejected snapshot remains distinct from the later corrected implementation.",
+        "Initial and second-round Arena method.order values were integers and roles were specialized names. Actual returns preserved those invalid methods. They cannot be normalized retrospectively.",
+        "A new prospective round three uses exact candidate/judge roles and string method.order. The frozen validator returned no method errors, and actual assignment/result fields match. It is later design-only evidence and cannot establish before-implementation chronology.",
+        "Initial generic checklists, late throughput checkpoint and the first how worker lacking a complete mode-read proof prevent an unqualified full mode workflow result."
+      ],
+      "source": "docs/parity/cases/skills/poteto-mode.json",
+      "evidence": [
+        {
+          "path": "<private-run>/remaining-local/cases/fresh-worker-mode/outputs/completion.json",
+          "line": 1,
+          "sha256": "be2fc01cce374856d4fc3538817a0eb51e0fbc1e9db7b7dfc29303789ce1c87e"
+        },
+        {
+          "path": "<private-run>/remaining-local/cases/fresh-worker-mode/outputs/lead-initial-review.json",
+          "line": 1,
+          "sha256": "486c3304afcca40955476ea6d6093540e1a73909e5075c536f1dcfa59480d39e"
+        },
+        {
+          "path": "<private-run>/remaining-local/cases/fresh-worker-mode/outputs/lead-full-feature-review.md",
+          "line": 1,
+          "sha256": "062c376abfaf0841b863105438e9efb8109285c37f160c404168b84c8f162024"
+        },
+        {
+          "path": "<private-run>/remaining-local/cases/fresh-worker-mode/outputs/lead-method-validation.json",
+          "line": 1,
+          "sha256": "ed6058c7f1c84ccfe71d469f3b1e2e8d893b1f1947d6c2a606afc0bf35c0f695"
+        },
+        {
+          "path": "<private-run>/remaining-local/cases/fresh-worker-mode/outputs/lead-raw-method-comparison.json",
+          "line": 1,
+          "sha256": "085fe0f0d1e5ccc6f602071690710c53ec60a6ac65efab20b5785aaf8f0bb88c"
+        },
+        {
+          "path": "<private-run>/remaining-local/cases/fresh-worker-mode/outputs/full-feature/method-contract-failure.md",
+          "line": 1,
+          "sha256": "c828c8a086b6dfbfcc45e8b39ac4038ce968e5d3b0c1bd224ce33b8b841a8d54"
+        },
+        {
+          "path": "<private-run>/remaining-local/cases/fresh-worker-mode/outputs/full-feature/arena-round3.method-receipt.json",
+          "line": 1,
+          "sha256": "6670499aa64e91b40a3669c8e83f6af4125dbe59a3a6682244838735b6173f92"
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "text": "User authorization and host permissions constrain all operations",
+      "status": "satisfied",
+      "basis": [
+        "Fresh independent workers, isolated outputs, source reads and helper-boundary observations exist. A later serializer implementation has real literal tests, mutation failures, independent review and PTY proof.",
+        "The initial no-spawn serializer accepts Symbol where original interpolation throws. That rejected snapshot remains distinct from the later corrected implementation.",
+        "Initial and second-round Arena method.order values were integers and roles were specialized names. Actual returns preserved those invalid methods. They cannot be normalized retrospectively.",
+        "A new prospective round three uses exact candidate/judge roles and string method.order. The frozen validator returned no method errors, and actual assignment/result fields match. It is later design-only evidence and cannot establish before-implementation chronology.",
+        "Initial generic checklists, late throughput checkpoint and the first how worker lacking a complete mode-read proof prevent an unqualified full mode workflow result."
+      ],
+      "source": "docs/parity/cases/skills/poteto-mode.json",
+      "evidence": [
+        {
+          "path": "<private-run>/remaining-local/cases/fresh-worker-mode/outputs/completion.json",
+          "line": 1,
+          "sha256": "be2fc01cce374856d4fc3538817a0eb51e0fbc1e9db7b7dfc29303789ce1c87e"
+        },
+        {
+          "path": "<private-run>/remaining-local/cases/fresh-worker-mode/outputs/lead-initial-review.json",
+          "line": 1,
+          "sha256": "486c3304afcca40955476ea6d6093540e1a73909e5075c536f1dcfa59480d39e"
+        },
+        {
+          "path": "<private-run>/remaining-local/cases/fresh-worker-mode/outputs/lead-full-feature-review.md",
+          "line": 1,
+          "sha256": "062c376abfaf0841b863105438e9efb8109285c37f160c404168b84c8f162024"
+        },
+        {
+          "path": "<private-run>/remaining-local/cases/fresh-worker-mode/outputs/lead-method-validation.json",
+          "line": 1,
+          "sha256": "ed6058c7f1c84ccfe71d469f3b1e2e8d893b1f1947d6c2a606afc0bf35c0f695"
+        },
+        {
+          "path": "<private-run>/remaining-local/cases/fresh-worker-mode/outputs/lead-raw-method-comparison.json",
+          "line": 1,
+          "sha256": "085fe0f0d1e5ccc6f602071690710c53ec60a6ac65efab20b5785aaf8f0bb88c"
+        },
+        {
+          "path": "<private-run>/remaining-local/cases/fresh-worker-mode/outputs/full-feature/method-contract-failure.md",
+          "line": 1,
+          "sha256": "c828c8a086b6dfbfcc45e8b39ac4038ce968e5d3b0c1bd224ce33b8b841a8d54"
+        },
+        {
+          "path": "<private-run>/remaining-local/cases/fresh-worker-mode/outputs/full-feature/arena-round3.method-receipt.json",
+          "line": 1,
+          "sha256": "6670499aa64e91b40a3669c8e83f6af4125dbe59a3a6682244838735b6173f92"
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "text": "Preserve all 23 playbook routes and 24 principle bindings with source-faithful aliases and meanings",
+      "status": "satisfied",
+      "basis": [
+        "Fresh independent workers, isolated outputs, source reads and helper-boundary observations exist. A later serializer implementation has real literal tests, mutation failures, independent review and PTY proof.",
+        "The initial no-spawn serializer accepts Symbol where original interpolation throws. That rejected snapshot remains distinct from the later corrected implementation.",
+        "Initial and second-round Arena method.order values were integers and roles were specialized names. Actual returns preserved those invalid methods. They cannot be normalized retrospectively.",
+        "A new prospective round three uses exact candidate/judge roles and string method.order. The frozen validator returned no method errors, and actual assignment/result fields match. It is later design-only evidence and cannot establish before-implementation chronology.",
+        "Initial generic checklists, late throughput checkpoint and the first how worker lacking a complete mode-read proof prevent an unqualified full mode workflow result."
+      ],
+      "source": "docs/parity/cases/skills/poteto-mode.json",
+      "evidence": [
+        {
+          "path": "<private-run>/remaining-local/cases/fresh-worker-mode/outputs/completion.json",
+          "line": 1,
+          "sha256": "be2fc01cce374856d4fc3538817a0eb51e0fbc1e9db7b7dfc29303789ce1c87e"
+        },
+        {
+          "path": "<private-run>/remaining-local/cases/fresh-worker-mode/outputs/lead-initial-review.json",
+          "line": 1,
+          "sha256": "486c3304afcca40955476ea6d6093540e1a73909e5075c536f1dcfa59480d39e"
+        },
+        {
+          "path": "<private-run>/remaining-local/cases/fresh-worker-mode/outputs/lead-full-feature-review.md",
+          "line": 1,
+          "sha256": "062c376abfaf0841b863105438e9efb8109285c37f160c404168b84c8f162024"
+        },
+        {
+          "path": "<private-run>/remaining-local/cases/fresh-worker-mode/outputs/lead-method-validation.json",
+          "line": 1,
+          "sha256": "ed6058c7f1c84ccfe71d469f3b1e2e8d893b1f1947d6c2a606afc0bf35c0f695"
+        },
+        {
+          "path": "<private-run>/remaining-local/cases/fresh-worker-mode/outputs/lead-raw-method-comparison.json",
+          "line": 1,
+          "sha256": "085fe0f0d1e5ccc6f602071690710c53ec60a6ac65efab20b5785aaf8f0bb88c"
+        },
+        {
+          "path": "<private-run>/remaining-local/cases/fresh-worker-mode/outputs/full-feature/method-contract-failure.md",
+          "line": 1,
+          "sha256": "c828c8a086b6dfbfcc45e8b39ac4038ce968e5d3b0c1bd224ce33b8b841a8d54"
+        },
+        {
+          "path": "<private-run>/remaining-local/cases/fresh-worker-mode/outputs/full-feature/arena-round3.method-receipt.json",
+          "line": 1,
+          "sha256": "6670499aa64e91b40a3669c8e83f6af4125dbe59a3a6682244838735b6173f92"
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "text": "No-spawn worker owns its scoped diff and returns it to the lead without nested waiting; required independent review stays explicit",
+      "status": "satisfied",
+      "basis": [
+        "Fresh independent workers, isolated outputs, source reads and helper-boundary observations exist. A later serializer implementation has real literal tests, mutation failures, independent review and PTY proof.",
+        "The initial no-spawn serializer accepts Symbol where original interpolation throws. That rejected snapshot remains distinct from the later corrected implementation.",
+        "Initial and second-round Arena method.order values were integers and roles were specialized names. Actual returns preserved those invalid methods. They cannot be normalized retrospectively.",
+        "A new prospective round three uses exact candidate/judge roles and string method.order. The frozen validator returned no method errors, and actual assignment/result fields match. It is later design-only evidence and cannot establish before-implementation chronology.",
+        "Initial generic checklists, late throughput checkpoint and the first how worker lacking a complete mode-read proof prevent an unqualified full mode workflow result."
+      ],
+      "source": "docs/parity/cases/skills/poteto-mode.json",
+      "evidence": [
+        {
+          "path": "<private-run>/remaining-local/cases/fresh-worker-mode/outputs/completion.json",
+          "line": 1,
+          "sha256": "be2fc01cce374856d4fc3538817a0eb51e0fbc1e9db7b7dfc29303789ce1c87e"
+        },
+        {
+          "path": "<private-run>/remaining-local/cases/fresh-worker-mode/outputs/lead-initial-review.json",
+          "line": 1,
+          "sha256": "486c3304afcca40955476ea6d6093540e1a73909e5075c536f1dcfa59480d39e"
+        },
+        {
+          "path": "<private-run>/remaining-local/cases/fresh-worker-mode/outputs/lead-full-feature-review.md",
+          "line": 1,
+          "sha256": "062c376abfaf0841b863105438e9efb8109285c37f160c404168b84c8f162024"
+        },
+        {
+          "path": "<private-run>/remaining-local/cases/fresh-worker-mode/outputs/lead-method-validation.json",
+          "line": 1,
+          "sha256": "ed6058c7f1c84ccfe71d469f3b1e2e8d893b1f1947d6c2a606afc0bf35c0f695"
+        },
+        {
+          "path": "<private-run>/remaining-local/cases/fresh-worker-mode/outputs/lead-raw-method-comparison.json",
+          "line": 1,
+          "sha256": "085fe0f0d1e5ccc6f602071690710c53ec60a6ac65efab20b5785aaf8f0bb88c"
+        },
+        {
+          "path": "<private-run>/remaining-local/cases/fresh-worker-mode/outputs/full-feature/method-contract-failure.md",
+          "line": 1,
+          "sha256": "c828c8a086b6dfbfcc45e8b39ac4038ce968e5d3b0c1bd224ce33b8b841a8d54"
+        },
+        {
+          "path": "<private-run>/remaining-local/cases/fresh-worker-mode/outputs/full-feature/arena-round3.method-receipt.json",
+          "line": 1,
+          "sha256": "6670499aa64e91b40a3669c8e83f6af4125dbe59a3a6682244838735b6173f92"
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "text": "Read real helper contracts before invocation; use exact log positional arguments, explicit outside-package store, watcher heads and finite budgets, and one check-plan positional path",
+      "status": "satisfied",
+      "basis": [
+        "Fresh independent workers, isolated outputs, source reads and helper-boundary observations exist. A later serializer implementation has real literal tests, mutation failures, independent review and PTY proof.",
+        "The initial no-spawn serializer accepts Symbol where original interpolation throws. That rejected snapshot remains distinct from the later corrected implementation.",
+        "Initial and second-round Arena method.order values were integers and roles were specialized names. Actual returns preserved those invalid methods. They cannot be normalized retrospectively.",
+        "A new prospective round three uses exact candidate/judge roles and string method.order. The frozen validator returned no method errors, and actual assignment/result fields match. It is later design-only evidence and cannot establish before-implementation chronology.",
+        "Initial generic checklists, late throughput checkpoint and the first how worker lacking a complete mode-read proof prevent an unqualified full mode workflow result."
+      ],
+      "source": "docs/parity/cases/skills/poteto-mode.json",
+      "evidence": [
+        {
+          "path": "<private-run>/remaining-local/cases/fresh-worker-mode/outputs/completion.json",
+          "line": 1,
+          "sha256": "be2fc01cce374856d4fc3538817a0eb51e0fbc1e9db7b7dfc29303789ce1c87e"
+        },
+        {
+          "path": "<private-run>/remaining-local/cases/fresh-worker-mode/outputs/lead-initial-review.json",
+          "line": 1,
+          "sha256": "486c3304afcca40955476ea6d6093540e1a73909e5075c536f1dcfa59480d39e"
+        },
+        {
+          "path": "<private-run>/remaining-local/cases/fresh-worker-mode/outputs/lead-full-feature-review.md",
+          "line": 1,
+          "sha256": "062c376abfaf0841b863105438e9efb8109285c37f160c404168b84c8f162024"
+        },
+        {
+          "path": "<private-run>/remaining-local/cases/fresh-worker-mode/outputs/lead-method-validation.json",
+          "line": 1,
+          "sha256": "ed6058c7f1c84ccfe71d469f3b1e2e8d893b1f1947d6c2a606afc0bf35c0f695"
+        },
+        {
+          "path": "<private-run>/remaining-local/cases/fresh-worker-mode/outputs/lead-raw-method-comparison.json",
+          "line": 1,
+          "sha256": "085fe0f0d1e5ccc6f602071690710c53ec60a6ac65efab20b5785aaf8f0bb88c"
+        },
+        {
+          "path": "<private-run>/remaining-local/cases/fresh-worker-mode/outputs/full-feature/method-contract-failure.md",
+          "line": 1,
+          "sha256": "c828c8a086b6dfbfcc45e8b39ac4038ce968e5d3b0c1bd224ce33b8b841a8d54"
+        },
+        {
+          "path": "<private-run>/remaining-local/cases/fresh-worker-mode/outputs/full-feature/arena-round3.method-receipt.json",
+          "line": 1,
+          "sha256": "6670499aa64e91b40a3669c8e83f6af4125dbe59a3a6682244838735b6173f92"
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "text": "Inspect watcher event kind, terminal and reason; status-only exit 0 and non-terminal queued waiting never prove merged state",
+      "status": "satisfied",
+      "basis": [
+        "Fresh independent workers, isolated outputs, source reads and helper-boundary observations exist. A later serializer implementation has real literal tests, mutation failures, independent review and PTY proof.",
+        "The initial no-spawn serializer accepts Symbol where original interpolation throws. That rejected snapshot remains distinct from the later corrected implementation.",
+        "Initial and second-round Arena method.order values were integers and roles were specialized names. Actual returns preserved those invalid methods. They cannot be normalized retrospectively.",
+        "A new prospective round three uses exact candidate/judge roles and string method.order. The frozen validator returned no method errors, and actual assignment/result fields match. It is later design-only evidence and cannot establish before-implementation chronology.",
+        "Initial generic checklists, late throughput checkpoint and the first how worker lacking a complete mode-read proof prevent an unqualified full mode workflow result."
+      ],
+      "source": "docs/parity/cases/skills/poteto-mode.json",
+      "evidence": [
+        {
+          "path": "<private-run>/remaining-local/cases/fresh-worker-mode/outputs/completion.json",
+          "line": 1,
+          "sha256": "be2fc01cce374856d4fc3538817a0eb51e0fbc1e9db7b7dfc29303789ce1c87e"
+        },
+        {
+          "path": "<private-run>/remaining-local/cases/fresh-worker-mode/outputs/lead-initial-review.json",
+          "line": 1,
+          "sha256": "486c3304afcca40955476ea6d6093540e1a73909e5075c536f1dcfa59480d39e"
+        },
+        {
+          "path": "<private-run>/remaining-local/cases/fresh-worker-mode/outputs/lead-full-feature-review.md",
+          "line": 1,
+          "sha256": "062c376abfaf0841b863105438e9efb8109285c37f160c404168b84c8f162024"
+        },
+        {
+          "path": "<private-run>/remaining-local/cases/fresh-worker-mode/outputs/lead-method-validation.json",
+          "line": 1,
+          "sha256": "ed6058c7f1c84ccfe71d469f3b1e2e8d893b1f1947d6c2a606afc0bf35c0f695"
+        },
+        {
+          "path": "<private-run>/remaining-local/cases/fresh-worker-mode/outputs/lead-raw-method-comparison.json",
+          "line": 1,
+          "sha256": "085fe0f0d1e5ccc6f602071690710c53ec60a6ac65efab20b5785aaf8f0bb88c"
+        },
+        {
+          "path": "<private-run>/remaining-local/cases/fresh-worker-mode/outputs/full-feature/method-contract-failure.md",
+          "line": 1,
+          "sha256": "c828c8a086b6dfbfcc45e8b39ac4038ce968e5d3b0c1bd224ce33b8b841a8d54"
+        },
+        {
+          "path": "<private-run>/remaining-local/cases/fresh-worker-mode/outputs/full-feature/arena-round3.method-receipt.json",
+          "line": 1,
+          "sha256": "6670499aa64e91b40a3669c8e83f6af4125dbe59a3a6682244838735b6173f92"
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "text": "Reject stale assignment identities or full input/current head revisions and missing artifacts before integration; ledger labels do not prove verification",
+      "status": "satisfied",
+      "basis": [
+        "Fresh independent workers, isolated outputs, source reads and helper-boundary observations exist. A later serializer implementation has real literal tests, mutation failures, independent review and PTY proof.",
+        "The initial no-spawn serializer accepts Symbol where original interpolation throws. That rejected snapshot remains distinct from the later corrected implementation.",
+        "Initial and second-round Arena method.order values were integers and roles were specialized names. Actual returns preserved those invalid methods. They cannot be normalized retrospectively.",
+        "A new prospective round three uses exact candidate/judge roles and string method.order. The frozen validator returned no method errors, and actual assignment/result fields match. It is later design-only evidence and cannot establish before-implementation chronology.",
+        "Initial generic checklists, late throughput checkpoint and the first how worker lacking a complete mode-read proof prevent an unqualified full mode workflow result."
+      ],
+      "source": "docs/parity/cases/skills/poteto-mode.json",
+      "evidence": [
+        {
+          "path": "<private-run>/remaining-local/cases/fresh-worker-mode/outputs/completion.json",
+          "line": 1,
+          "sha256": "be2fc01cce374856d4fc3538817a0eb51e0fbc1e9db7b7dfc29303789ce1c87e"
+        },
+        {
+          "path": "<private-run>/remaining-local/cases/fresh-worker-mode/outputs/lead-initial-review.json",
+          "line": 1,
+          "sha256": "486c3304afcca40955476ea6d6093540e1a73909e5075c536f1dcfa59480d39e"
+        },
+        {
+          "path": "<private-run>/remaining-local/cases/fresh-worker-mode/outputs/lead-full-feature-review.md",
+          "line": 1,
+          "sha256": "062c376abfaf0841b863105438e9efb8109285c37f160c404168b84c8f162024"
+        },
+        {
+          "path": "<private-run>/remaining-local/cases/fresh-worker-mode/outputs/lead-method-validation.json",
+          "line": 1,
+          "sha256": "ed6058c7f1c84ccfe71d469f3b1e2e8d893b1f1947d6c2a606afc0bf35c0f695"
+        },
+        {
+          "path": "<private-run>/remaining-local/cases/fresh-worker-mode/outputs/lead-raw-method-comparison.json",
+          "line": 1,
+          "sha256": "085fe0f0d1e5ccc6f602071690710c53ec60a6ac65efab20b5785aaf8f0bb88c"
+        },
+        {
+          "path": "<private-run>/remaining-local/cases/fresh-worker-mode/outputs/full-feature/method-contract-failure.md",
+          "line": 1,
+          "sha256": "c828c8a086b6dfbfcc45e8b39ac4038ce968e5d3b0c1bd224ce33b8b841a8d54"
+        },
+        {
+          "path": "<private-run>/remaining-local/cases/fresh-worker-mode/outputs/full-feature/arena-round3.method-receipt.json",
+          "line": 1,
+          "sha256": "6670499aa64e91b40a3669c8e83f6af4125dbe59a3a6682244838735b6173f92"
+        }
+      ]
+    },
+    {
+      "id": 11,
+      "text": "Use verbatim chosen-playbook steps in todo tools or an authorized local checklist with a disclosed reduced binding",
+      "status": "unmet",
+      "basis": [
+        "Fresh independent workers, isolated outputs, source reads and helper-boundary observations exist. A later serializer implementation has real literal tests, mutation failures, independent review and PTY proof.",
+        "The initial no-spawn serializer accepts Symbol where original interpolation throws. That rejected snapshot remains distinct from the later corrected implementation.",
+        "Initial and second-round Arena method.order values were integers and roles were specialized names. Actual returns preserved those invalid methods. They cannot be normalized retrospectively.",
+        "A new prospective round three uses exact candidate/judge roles and string method.order. The frozen validator returned no method errors, and actual assignment/result fields match. It is later design-only evidence and cannot establish before-implementation chronology.",
+        "Initial generic checklists, late throughput checkpoint and the first how worker lacking a complete mode-read proof prevent an unqualified full mode workflow result."
+      ],
+      "source": "docs/parity/cases/skills/poteto-mode.json",
+      "evidence": [
+        {
+          "path": "<private-run>/remaining-local/cases/fresh-worker-mode/outputs/completion.json",
+          "line": 1,
+          "sha256": "be2fc01cce374856d4fc3538817a0eb51e0fbc1e9db7b7dfc29303789ce1c87e"
+        },
+        {
+          "path": "<private-run>/remaining-local/cases/fresh-worker-mode/outputs/lead-initial-review.json",
+          "line": 1,
+          "sha256": "486c3304afcca40955476ea6d6093540e1a73909e5075c536f1dcfa59480d39e"
+        },
+        {
+          "path": "<private-run>/remaining-local/cases/fresh-worker-mode/outputs/lead-full-feature-review.md",
+          "line": 1,
+          "sha256": "062c376abfaf0841b863105438e9efb8109285c37f160c404168b84c8f162024"
+        },
+        {
+          "path": "<private-run>/remaining-local/cases/fresh-worker-mode/outputs/lead-method-validation.json",
+          "line": 1,
+          "sha256": "ed6058c7f1c84ccfe71d469f3b1e2e8d893b1f1947d6c2a606afc0bf35c0f695"
+        },
+        {
+          "path": "<private-run>/remaining-local/cases/fresh-worker-mode/outputs/lead-raw-method-comparison.json",
+          "line": 1,
+          "sha256": "085fe0f0d1e5ccc6f602071690710c53ec60a6ac65efab20b5785aaf8f0bb88c"
+        },
+        {
+          "path": "<private-run>/remaining-local/cases/fresh-worker-mode/outputs/full-feature/method-contract-failure.md",
+          "line": 1,
+          "sha256": "c828c8a086b6dfbfcc45e8b39ac4038ce968e5d3b0c1bd224ce33b8b841a8d54"
+        },
+        {
+          "path": "<private-run>/remaining-local/cases/fresh-worker-mode/outputs/full-feature/arena-round3.method-receipt.json",
+          "line": 1,
+          "sha256": "6670499aa64e91b40a3669c8e83f6af4125dbe59a3a6682244838735b6173f92"
+        }
+      ]
+    },
+    {
+      "id": 12,
+      "text": "Local presence closes reference deferrals only; preserve companion, setup, review, external-action and independent-worker limits",
+      "status": "satisfied",
+      "basis": [
+        "Fresh independent workers, isolated outputs, source reads and helper-boundary observations exist. A later serializer implementation has real literal tests, mutation failures, independent review and PTY proof.",
+        "The initial no-spawn serializer accepts Symbol where original interpolation throws. That rejected snapshot remains distinct from the later corrected implementation.",
+        "Initial and second-round Arena method.order values were integers and roles were specialized names. Actual returns preserved those invalid methods. They cannot be normalized retrospectively.",
+        "A new prospective round three uses exact candidate/judge roles and string method.order. The frozen validator returned no method errors, and actual assignment/result fields match. It is later design-only evidence and cannot establish before-implementation chronology.",
+        "Initial generic checklists, late throughput checkpoint and the first how worker lacking a complete mode-read proof prevent an unqualified full mode workflow result."
+      ],
+      "source": "docs/parity/cases/skills/poteto-mode.json",
+      "evidence": [
+        {
+          "path": "<private-run>/remaining-local/cases/fresh-worker-mode/outputs/completion.json",
+          "line": 1,
+          "sha256": "be2fc01cce374856d4fc3538817a0eb51e0fbc1e9db7b7dfc29303789ce1c87e"
+        },
+        {
+          "path": "<private-run>/remaining-local/cases/fresh-worker-mode/outputs/lead-initial-review.json",
+          "line": 1,
+          "sha256": "486c3304afcca40955476ea6d6093540e1a73909e5075c536f1dcfa59480d39e"
+        },
+        {
+          "path": "<private-run>/remaining-local/cases/fresh-worker-mode/outputs/lead-full-feature-review.md",
+          "line": 1,
+          "sha256": "062c376abfaf0841b863105438e9efb8109285c37f160c404168b84c8f162024"
+        },
+        {
+          "path": "<private-run>/remaining-local/cases/fresh-worker-mode/outputs/lead-method-validation.json",
+          "line": 1,
+          "sha256": "ed6058c7f1c84ccfe71d469f3b1e2e8d893b1f1947d6c2a606afc0bf35c0f695"
+        },
+        {
+          "path": "<private-run>/remaining-local/cases/fresh-worker-mode/outputs/lead-raw-method-comparison.json",
+          "line": 1,
+          "sha256": "085fe0f0d1e5ccc6f602071690710c53ec60a6ac65efab20b5785aaf8f0bb88c"
+        },
+        {
+          "path": "<private-run>/remaining-local/cases/fresh-worker-mode/outputs/full-feature/method-contract-failure.md",
+          "line": 1,
+          "sha256": "c828c8a086b6dfbfcc45e8b39ac4038ce968e5d3b0c1bd224ce33b8b841a8d54"
+        },
+        {
+          "path": "<private-run>/remaining-local/cases/fresh-worker-mode/outputs/full-feature/arena-round3.method-receipt.json",
+          "line": 1,
+          "sha256": "6670499aa64e91b40a3669c8e83f6af4125dbe59a3a6682244838735b6173f92"
+        }
+      ]
+    }
+  ],
+  "sourceArtifactBindings": [
+    {
+      "originalLocator": "remaining-local/cases/fresh-worker-mode/outputs/completion.json",
+      "sourceSha256": "be2fc01cce374856d4fc3538817a0eb51e0fbc1e9db7b7dfc29303789ce1c87e",
+      "expectedSha256": "be2fc01cce374856d4fc3538817a0eb51e0fbc1e9db7b7dfc29303789ce1c87e",
+      "expectedHashMatches": true,
+      "bytes": 39804,
+      "publication": "omitted",
+      "reason": "Raw/native context, broad discovery, completion dump, or bulk source manifest is excluded. No protected payload is decoded."
+    },
+    {
+      "originalLocator": "remaining-local/cases/fresh-worker-mode/outputs/lead-initial-review.json",
+      "sourceSha256": "486c3304afcca40955476ea6d6093540e1a73909e5075c536f1dcfa59480d39e",
+      "expectedSha256": "486c3304afcca40955476ea6d6093540e1a73909e5075c536f1dcfa59480d39e",
+      "expectedHashMatches": true,
+      "bytes": 920,
+      "publication": "projected-fields",
+      "reason": "Only a narrow inspected projection may be included. Private original remains unchanged.",
+      "projectedPath": "docs/releases/remediation-013/local/fresh-worker-mode/review-a-06/proof/01-lead-initial-review.json.excerpt.json",
+      "projectedSha256": "3dffcb4396d033ce274e3276e7bfd91dd27ffdbc1e6c277b975abb6ec3310795"
+    },
+    {
+      "originalLocator": "remaining-local/cases/fresh-worker-mode/outputs/lead-full-feature-review.md",
+      "sourceSha256": "062c376abfaf0841b863105438e9efb8109285c37f160c404168b84c8f162024",
+      "expectedSha256": "062c376abfaf0841b863105438e9efb8109285c37f160c404168b84c8f162024",
+      "expectedHashMatches": true,
+      "bytes": 4723,
+      "publication": "omitted",
+      "reason": "Only a narrow inspected projection may be included. Private original remains unchanged."
+    },
+    {
+      "originalLocator": "remaining-local/cases/fresh-worker-mode/outputs/lead-method-validation.json",
+      "sourceSha256": "ed6058c7f1c84ccfe71d469f3b1e2e8d893b1f1947d6c2a606afc0bf35c0f695",
+      "expectedSha256": "ed6058c7f1c84ccfe71d469f3b1e2e8d893b1f1947d6c2a606afc0bf35c0f695",
+      "expectedHashMatches": true,
+      "bytes": 1785,
+      "publication": "projected-fields",
+      "reason": "Only a narrow inspected projection may be included. Private original remains unchanged.",
+      "projectedPath": "docs/releases/remediation-013/local/fresh-worker-mode/review-a-06/proof/02-lead-method-validation.json.excerpt.json",
+      "projectedSha256": "4e6897fd698ce0915c9e8436f884362287f23a25e53b2df5dc76a56669302b9f"
+    },
+    {
+      "originalLocator": "remaining-local/cases/fresh-worker-mode/outputs/lead-raw-method-comparison.json",
+      "sourceSha256": "085fe0f0d1e5ccc6f602071690710c53ec60a6ac65efab20b5785aaf8f0bb88c",
+      "expectedSha256": "085fe0f0d1e5ccc6f602071690710c53ec60a6ac65efab20b5785aaf8f0bb88c",
+      "expectedHashMatches": true,
+      "bytes": 849,
+      "publication": "omitted",
+      "reason": "Only a narrow inspected projection may be included. Private original remains unchanged."
+    },
+    {
+      "originalLocator": "remaining-local/cases/fresh-worker-mode/outputs/full-feature/method-contract-failure.md",
+      "sourceSha256": "c828c8a086b6dfbfcc45e8b39ac4038ce968e5d3b0c1bd224ce33b8b841a8d54",
+      "expectedSha256": "c828c8a086b6dfbfcc45e8b39ac4038ce968e5d3b0c1bd224ce33b8b841a8d54",
+      "expectedHashMatches": true,
+      "bytes": 1237,
+      "publication": "omitted",
+      "reason": "Only a narrow inspected projection may be included. Private original remains unchanged."
+    },
+    {
+      "originalLocator": "remaining-local/cases/fresh-worker-mode/outputs/full-feature/arena-round3.method-receipt.json",
+      "sourceSha256": "6670499aa64e91b40a3669c8e83f6af4125dbe59a3a6682244838735b6173f92",
+      "expectedSha256": "6670499aa64e91b40a3669c8e83f6af4125dbe59a3a6682244838735b6173f92",
+      "expectedHashMatches": true,
+      "bytes": 4332,
+      "publication": "projected-fields",
+      "reason": "Only a narrow inspected projection may be included. Private original remains unchanged.",
+      "projectedPath": "docs/releases/remediation-013/local/fresh-worker-mode/review-a-06/proof/03-arena-round3.method-receipt.json.excerpt.json",
+      "projectedSha256": "0fd5e2d39a71859b5fe0a83b61c974503511666a683a37a6769b42bded9b5569"
+    }
+  ],
+  "projectionLimits": [
+    "This file projects the existing independent assessment and does not regrade the case.",
+    "Private source artifacts and omitted native operations remain private. Source digests bind originals, not transformed bytes.",
+    "Historical 0.1.3 observations do not qualify current main or a modified candidate."
+  ],
+  "statusMapping": {
+    "originalProposedStatus": "reduced-pass",
+    "canonicalStatus": "reduced-pass",
+    "rule": "No status alias is applied."
+  }
+}

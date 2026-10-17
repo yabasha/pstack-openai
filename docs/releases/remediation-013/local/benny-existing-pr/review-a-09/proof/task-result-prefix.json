@@ -1,0 +1,16 @@
+{
+  "kind": "task-result-file-excerpt",
+  "caseId": "benny-existing-pr",
+  "attemptId": "review-a-09",
+  "inputRevision": "9ec21d40fe60c794e1127957595734eeea25138c",
+  "originalLocator": "remaining-local/cases/benny-existing-pr/outputs/benny-existing-pr.result.md",
+  "sourceSha256": "04ff228f77a548cb7057d75c0f22e9b0bc5e558f517f443d2b3227c1b5243e5c",
+  "sourceWasDirectlyListedByIndependentGrade": false,
+  "characterRange": {
+    "start": 0,
+    "endExclusive": 547,
+    "total": 6817
+  },
+  "content": "# Existing PR verification attempt\n\nVerification is blocked. No baseline or patched UI result was observed. This is a factual attempt receipt, with no producer grade.\n\n## Overview\n\nThe request was \"An open PR plausibly fixes the reported symptom.\" The current contract requires isolated baseline and patched builds, two repetitions each through the same UI path, and retained screenshot, recording, and state evidence. The full supplied case contract, original source-file list and synthetic fixture record are retained in `attempt-receipt.json`.\n",
+  "transformation": "An inspected prefix of the actual task-result file is projected. Task-owned absolute paths use declared placeholders. The prefix may omit later qualifications. The independent assessment and its limits govern the proposed grade. This is neither a new grade nor a native callable-operation claim."
+}

@@ -1,0 +1,16 @@
+{
+  "kind": "task-result-file-excerpt",
+  "caseId": "owned-safe-cleanup",
+  "attemptId": "review-a-05",
+  "inputRevision": "a3f750ffbad49a7db1ac4808e6e4fdcacfb9413e",
+  "originalLocator": "remaining-local/cases/owned-safe-cleanup/outputs/owned-safe-cleanup.result.md",
+  "sourceSha256": "5758a7aa5537a73e9b6d93e358ecc7765dcb9c2b3b8b8af49c243b929786dd14",
+  "sourceWasDirectlyListedByIndependentGrade": false,
+  "characterRange": {
+    "start": 0,
+    "endExclusive": 640,
+    "total": 7500
+  },
+  "content": "# Owned safe cleanup attempt\n\nThe authorized read-only fixture audit executed. Cleanup and the later exact deletion-decision branch remain blocked. No worktree was removed. No reclaimed space was demonstrated. This is a factual attempt receipt, not a producer grade.\n\n## Input and source\n\nThe case HEAD was independently checked before work and remains a3f750ffbad49a7db1ac4808e6e4fdcacfb9413e. The frozen package path ends in pstack-openai/0.1.3 and the requested source freeze is 51f209daf83cd97d64f89881d66533bb59dc57db. The source files were read and hashed in hashes.json. Source Git commit provenance was not inferred from that path.\n",
+  "transformation": "An inspected prefix of the actual task-result file is projected. Task-owned absolute paths use declared placeholders. The prefix may omit later qualifications. The independent assessment and its limits govern the proposed grade. This is neither a new grade nor a native callable-operation claim."
+}

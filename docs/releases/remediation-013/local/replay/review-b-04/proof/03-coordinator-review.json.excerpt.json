@@ -1,0 +1,34 @@
+{
+  "kind": "selected-fixture-result-fields",
+  "caseId": "replay",
+  "attemptId": "review-b-04",
+  "originalLocator": "remaining-local/cases/replay/outputs/coordinator-review.json",
+  "sourceSha256": "7e6cc9ec8d9a66a4ecf5a926967c37ab1d21f4182076eb07ea1831a6d1c299fd",
+  "sourceBytes": 2084,
+  "transformation": "Named JSON fields selected by exact JSON Pointer. Task-owned absolute paths replaced with declared placeholders. Other fields omitted. These are result-artifact values, not synthesized tool execution evidence. Public selection is limited to eight short inspected fields. Longer output and unselected fields remain private.",
+  "fields": [
+    {
+      "pointer": "/assignmentId",
+      "value": "replay-dispatch-1"
+    },
+    {
+      "pointer": "/inputRevision",
+      "value": "f7e6173423ad93c29d7a0b352c9f9b29d9f25976"
+    },
+    {
+      "pointer": "/limits",
+      "value": [
+        "No producer selfgrade. Coordinator review remains separate.",
+        "Actual models and efforts unknown; no diversity claim.",
+        "Installed frozen package is not a Git checkout. Declared provenance is separate from observed file hashes.",
+        "Coordinator pre-checklist chronology deviation retained. Owner also read sources before copying matched playbook steps; no retrospective compliance claim.",
+        "Native tool call locator is this owner invocation transcript. No protected payload extraction performed.",
+        "No payment identity, destination, outcome, lock/session state or recovery code supplied.",
+        "No destination-specific technical contract established. Design is conditional, not implemented.",
+        "No live recovery, repeated-run convergence, crash injection, unattended execution or payment-state durability observed.",
+        "create-skill companion is not exposed by that name and did not run. No personal skill authored.",
+        "Source read success does not prove host loading or either required host acceptance."
+      ]
+    }
+  ]
+}

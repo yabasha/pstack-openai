@@ -1,0 +1,210 @@
+{
+  "kind": "historical-proof-selection",
+  "source": {
+    "path": "<private-run>/cross-host-extra/local/projects/unknown-actual-model/outputs/worker-role/receipt.json",
+    "sha256": "a8ebe7dbefaec142a4155604fe5e6f49ca7ed1f70c5b6c600bcc23ee24e1c462",
+    "bytes": 2952
+  },
+  "selection": [
+    {
+      "locator": {
+        "jsonPointer": "/assignmentId"
+      },
+      "value": "unknown-model-role-01"
+    },
+    {
+      "locator": {
+        "jsonPointer": "/inputRevision"
+      },
+      "value": "6f0a50d5a15999f6f06352cef0fa7a7df3bfd7d5"
+    },
+    {
+      "locator": {
+        "jsonPointer": "/originalInputRevision"
+      },
+      "value": "97fac478ecd41ba4aeb599c8299022a100d36ea6"
+    },
+    {
+      "locator": {
+        "jsonPointer": "/role"
+      },
+      "value": "comment-sicko with full poteto role boot"
+    },
+    {
+      "locator": {
+        "jsonPointer": "/workerId"
+      },
+      "value": "/root/unknown_model_role"
+    },
+    {
+      "locator": {
+        "jsonPointer": "/outputOwner"
+      },
+      "value": "/root/unknown_model_role"
+    },
+    {
+      "locator": {
+        "jsonPointer": "/terminalStatus"
+      },
+      "value": "completed"
+    },
+    {
+      "locator": {
+        "jsonPointer": "/requestedModel"
+      },
+      "value": "inherit-parent"
+    },
+    {
+      "locator": {
+        "jsonPointer": "/requestedEffort"
+      },
+      "value": "inherit-parent"
+    },
+    {
+      "locator": {
+        "jsonPointer": "/actualModel"
+      },
+      "value": "unknown"
+    },
+    {
+      "locator": {
+        "jsonPointer": "/actualEffort"
+      },
+      "value": "unknown"
+    },
+    {
+      "locator": {
+        "jsonPointer": "/observedModel"
+      },
+      "value": "unknown"
+    },
+    {
+      "locator": {
+        "jsonPointer": "/observedEffort"
+      },
+      "value": "unknown"
+    },
+    {
+      "locator": {
+        "jsonPointer": "/supportedEffortValues"
+      },
+      "value": "inherit-parent policy used; no explicit selection attempted"
+    },
+    {
+      "locator": {
+        "jsonPointer": "/supportedEffortSource"
+      },
+      "value": "Current collaboration tool documentation; no invocation made by this worker"
+    },
+    {
+      "locator": {
+        "jsonPointer": "/fallbackDisclosure"
+      },
+      "value": "Nested how explanation performed sequentially; no nested independent review"
+    },
+    {
+      "locator": {
+        "jsonPointer": "/touchedFiles"
+      },
+      "value": []
+    },
+    {
+      "locator": {
+        "jsonPointer": "/ownedOutputFiles"
+      },
+      "value": [
+        "checklist.md",
+        "report.md",
+        "receipt.json",
+        "verify.ts",
+        "verification.json"
+      ]
+    },
+    {
+      "locator": {
+        "jsonPointer": "/deletionCount"
+      },
+      "value": 0
+    },
+    {
+      "locator": {
+        "jsonPointer": "/proposedDeletions"
+      },
+      "value": []
+    },
+    {
+      "locator": {
+        "jsonPointer": "/mustKill"
+      },
+      "value": []
+    },
+    {
+      "locator": {
+        "jsonPointer": "/skips"
+      },
+      "value": [
+        "Application comment correctness and deletion work absent application code",
+        "Parent spawn result and result inspection not visible to worker",
+        "No create-skill companion invoked"
+      ]
+    },
+    {
+      "locator": {
+        "jsonPointer": "/sourceSha256"
+      },
+      "value": {
+        "<frozen-host-fixture>/runtime/plugins/cache/pstack-frozen-verification/pstack-openai/0.1.3/references/agent-prompts/poteto-agent.md": "9839239c6ebc72de8165f8a6fa4a6326fea7293e15a47d24f98396df2a61b3fb",
+        "<frozen-host-fixture>/runtime/plugins/cache/pstack-frozen-verification/pstack-openai/0.1.3/references/agent-prompts/comment-sicko.md": "5d119d21ad7184209fd6d375d3232acf468e2c8700d186934f8f24ca5c7e668e"
+      }
+    },
+    {
+      "locator": {
+        "jsonPointer": "/reportSha256"
+      },
+      "value": "6454b009c9c46881d25cac0380d3af2607c8078892a31fd0d590d0144a2288c0"
+    },
+    {
+      "locator": {
+        "jsonPointer": "/bindings"
+      },
+      "value": [
+        {
+          "operation": "read",
+          "tool": "tools.exec_command via functions.exec",
+          "exposed": true,
+          "succeeded": true,
+          "evidence": "Observed cat and git-show output",
+          "limits": "Initial wrong-cwd reads failed and were corrected"
+        },
+        {
+          "operation": "execution",
+          "tool": "tools.exec_command via functions.exec",
+          "exposed": true,
+          "succeeded": true,
+          "evidence": "HEAD command exit 0 and Bun writer execution",
+          "limits": "No spawn result metadata exposed"
+        },
+        {
+          "operation": "isolated-write",
+          "tool": "tools.exec_command via functions.exec",
+          "exposed": true,
+          "succeeded": true,
+          "evidence": "Owned checklist, report and receipt writes",
+          "limits": "Only owned output authorized"
+        },
+        {
+          "operation": "coordinator-message",
+          "tool": "collaboration.send_message",
+          "exposed": true,
+          "succeeded": true,
+          "evidence": "Host accepted queued parent message",
+          "limits": "No model metadata returned"
+        }
+      ]
+    }
+  ],
+  "limits": [
+    "Selections preserve the exact source value at each locator. Truncated strings carry explicit code-unit bounds.",
+    "A producer-captured return is not a recovered native parent envelope. Missing call IDs, original capture defects and unknown model observations remain missing."
+  ]
+}

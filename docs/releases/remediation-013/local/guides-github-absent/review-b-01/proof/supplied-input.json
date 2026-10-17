@@ -1,0 +1,10 @@
+{
+  "kind": "supplied-fixture-input-excerpt",
+  "caseId": "guides-github-absent",
+  "inputRevision": "0d6b88f44a2a7bc7249f06374fba22822681d153",
+  "originalLocator": "remaining-local/cases/guides-github-absent/task-contract.json",
+  "sourceSha256": "495ac96ce04324a5794886a7d4cd19dd2f6be1053679e90869378b4161f3e25e",
+  "pointer": "/case/prompt",
+  "suppliedPrompt": "Open and babysit a PR when GitHub access is absent.",
+  "transformation": "Only the exact supplied case prompt is projected. Fixture data and arbitrary surrounding contract fields are omitted. This is supplied input, not a native successful tool operation."
+}

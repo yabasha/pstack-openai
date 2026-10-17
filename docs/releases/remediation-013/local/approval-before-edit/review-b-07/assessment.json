@@ -1,0 +1,153 @@
+{
+  "schemaVersion": 1,
+  "kind": "historical-independent-assessment-projection",
+  "caseId": "approval-before-edit",
+  "attemptId": "review-b-07",
+  "startingMain": "4138e161c27cafffd2baaab6bf4ca53e86a57433",
+  "packageCommit": "51f209daf83cd97d64f89881d66533bb59dc57db",
+  "packageVersion": "0.1.3",
+  "inputRevision": "e825c96ed4f21308367ff4105a21d257d80c55e0",
+  "originalProposedStatus": "pass",
+  "evidenceStatus": "pass",
+  "qualifiesCurrentMain": false,
+  "sourceReview": {
+    "originalLocator": "grades/grade_remediation_local_b/result.json",
+    "sourceSha256": "d837b0c7cdea4be245b4a86ca593038cbe8b1596662a82fe6554e9d96444abd6",
+    "jsonPointer": "/rows/6",
+    "reviewer": "/root/grade_remediation_local_b",
+    "requestedModel": "inherit-parent",
+    "actualModel": "unknown"
+  },
+  "findings": [
+    "The supplied active-session boundary is verified against the owned invocation and prompt; capture gaps are disclosed. Synthetic incidents are not asserted as real history.",
+    "Three fresh no-history judgment/tooling/divergent reviewers actually spawn and read their complete respective templates.",
+    "All three complete outputs arrive before the fresh synthesizer is spawned. The synthesizer actually reads all three outputs and its full template.",
+    "The full Accepted/Rejected/Backlog result is presented. Accepted is empty, already-covered guidance is rejected and the structural mechanism remains unfiled Backlog.",
+    "No skill, tracker or external write occurs without approval."
+  ],
+  "limits": [],
+  "chronology": [
+    "Native reviewer spawns at07:19:25,07:19:45 and07:20:04 precede the synthesizer at07:21:39. Child source/read chains corroborate prompt contracts despite redacted dispatch message bodies.",
+    "Parent checklist/trail were late; this is retained without inventing an extra case acceptance condition."
+  ],
+  "predicate": [
+    {
+      "index": 1,
+      "text": "Authorized active-session history or an explicitly limited digest",
+      "status": "satisfied",
+      "assessment": "Detailed evidence and qualifying limits are in the exact satisfied/unmet/notApplicable predicates below."
+    },
+    {
+      "index": 2,
+      "text": "Independent reviewers and synthesizer with observed spawn and result inspection for full behavior",
+      "status": "satisfied",
+      "assessment": "Detailed evidence and qualifying limits are in the exact satisfied/unmet/notApplicable predicates below."
+    },
+    {
+      "index": 3,
+      "text": "Read access to referenced context and target skills",
+      "status": "satisfied",
+      "assessment": "Detailed evidence and qualifying limits are in the exact satisfied/unmet/notApplicable predicates below."
+    },
+    {
+      "index": 4,
+      "text": "Explicit user approval of the Accepted subset before skill changes",
+      "status": "not-applicable",
+      "assessment": "Detailed evidence and qualifying limits are in the exact satisfied/unmet/notApplicable predicates below."
+    },
+    {
+      "index": 5,
+      "text": "Authorized writes and available authoring/validation workflow for approved substantive edits",
+      "status": "not-applicable",
+      "assessment": "Detailed evidence and qualifying limits are in the exact satisfied/unmet/notApplicable predicates below."
+    }
+  ],
+  "sourceArtifactBindings": [
+    {
+      "originalLocator": "cross-host-extra/local/projects/approval-before-edit/outputs/approval-before-edit.result.md",
+      "sourceSha256": "7ab787cefcfe772a9047603c72520356a15cb34b91e0ca3fa820a47e3c10e232",
+      "expectedSha256": "7ab787cefcfe772a9047603c72520356a15cb34b91e0ca3fa820a47e3c10e232",
+      "expectedHashMatches": true,
+      "bytes": 26036,
+      "publication": "omitted",
+      "reason": "Only a narrow inspected projection may be included. Private original remains unchanged."
+    },
+    {
+      "originalLocator": "cross-host-extra/local/projects/approval-before-edit/outputs/review-order.json",
+      "sourceSha256": "4a25b9383730c707461a4554de476414dad2931d042c4afe6fb7dc8c64a244fe",
+      "expectedSha256": "4a25b9383730c707461a4554de476414dad2931d042c4afe6fb7dc8c64a244fe",
+      "expectedHashMatches": true,
+      "bytes": 441,
+      "publication": "projected-fields",
+      "reason": "Only a narrow inspected projection may be included. Private original remains unchanged.",
+      "projectedPath": "docs/releases/remediation-013/local/approval-before-edit/review-b-07/proof/01-review-order.json.excerpt.json",
+      "projectedSha256": "5a7f88892b61a5baae2ef5d369cdcaf29d83b5c5bff975a41ef6cd4f21066241"
+    },
+    {
+      "originalLocator": "cross-host-extra/local/projects/approval-before-edit/outputs/active-session-source.json",
+      "sourceSha256": "e05ae4d926fd5f2718947f7a68d69aed50e7adb24b55841257f78daa0cce5374",
+      "expectedSha256": "e05ae4d926fd5f2718947f7a68d69aed50e7adb24b55841257f78daa0cce5374",
+      "expectedHashMatches": true,
+      "bytes": 822,
+      "publication": "projected-fields",
+      "reason": "Only a narrow inspected projection may be included. Private original remains unchanged.",
+      "projectedPath": "docs/releases/remediation-013/local/approval-before-edit/review-b-07/proof/02-active-session-source.json.excerpt.json",
+      "projectedSha256": "c5963ea1fae7d49159ed7e7f57334d3c5e2b05460ca604c627c707c8051938ce"
+    },
+    {
+      "originalLocator": "cross-host-extra/local/projects/approval-before-edit/outputs/judgment.result.md",
+      "sourceSha256": "0dc5c325790216e17e24852fe6b78c569eaa506982b4cbebbb459be5e2d0006e",
+      "expectedSha256": "0dc5c325790216e17e24852fe6b78c569eaa506982b4cbebbb459be5e2d0006e",
+      "expectedHashMatches": true,
+      "bytes": 601,
+      "publication": "omitted",
+      "reason": "Only a narrow inspected projection may be included. Private original remains unchanged."
+    },
+    {
+      "originalLocator": "cross-host-extra/local/projects/approval-before-edit/outputs/tooling.result.md",
+      "sourceSha256": "e64308f40357072229b6fa2dd858159874b6d9ad2ac34bcf03e06aa53c1cfb7b",
+      "expectedSha256": "e64308f40357072229b6fa2dd858159874b6d9ad2ac34bcf03e06aa53c1cfb7b",
+      "expectedHashMatches": true,
+      "bytes": 998,
+      "publication": "omitted",
+      "reason": "Only a narrow inspected projection may be included. Private original remains unchanged."
+    },
+    {
+      "originalLocator": "cross-host-extra/local/projects/approval-before-edit/outputs/divergent.result.md",
+      "sourceSha256": "a63bc3eabf4edfa7657bfdea0bca21cb9c2e336cb969df4113ec38afaf1d8bb3",
+      "expectedSha256": "a63bc3eabf4edfa7657bfdea0bca21cb9c2e336cb969df4113ec38afaf1d8bb3",
+      "expectedHashMatches": true,
+      "bytes": 1208,
+      "publication": "omitted",
+      "reason": "Only a narrow inspected projection may be included. Private original remains unchanged."
+    },
+    {
+      "originalLocator": "cross-host-extra/local/projects/approval-before-edit/outputs/synthesizer.result.md",
+      "sourceSha256": "3338c08debdf4c164a065fa352bf83fa91a88a07a929b51c404910385e988120",
+      "expectedSha256": "3338c08debdf4c164a065fa352bf83fa91a88a07a929b51c404910385e988120",
+      "expectedHashMatches": true,
+      "bytes": 1080,
+      "publication": "omitted",
+      "reason": "Only a narrow inspected projection may be included. Private original remains unchanged."
+    },
+    {
+      "originalLocator": "native-captures-sanitized-v2/cross-host-0/index.json",
+      "sourceSha256": "3bb4db78a8fd056ac164ea338c51fb8f67c4c7a9f6a2986e8a10b287d97edc65",
+      "expectedSha256": "3bb4db78a8fd056ac164ea338c51fb8f67c4c7a9f6a2986e8a10b287d97edc65",
+      "expectedHashMatches": true,
+      "bytes": 6766,
+      "publication": "omitted",
+      "reason": "Raw/native context, broad discovery, completion dump, or bulk source manifest is excluded. No protected payload is decoded."
+    }
+  ],
+  "projectionLimits": [
+    "This file projects the existing independent assessment and does not regrade the case.",
+    "Private source artifacts and omitted native operations remain private. Source digests bind originals, not transformed bytes.",
+    "Historical 0.1.3 observations do not qualify current main or a modified candidate."
+  ],
+  "statusMapping": {
+    "originalProposedStatus": "pass",
+    "canonicalStatus": "pass",
+    "rule": "No status alias is applied."
+  }
+}

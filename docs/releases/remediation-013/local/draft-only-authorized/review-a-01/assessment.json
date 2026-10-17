@@ -1,0 +1,293 @@
+{
+  "schemaVersion": 1,
+  "kind": "historical-independent-assessment-projection",
+  "caseId": "draft-only-authorized",
+  "attemptId": "review-a-01",
+  "startingMain": "4138e161c27cafffd2baaab6bf4ca53e86a57433",
+  "packageCommit": "51f209daf83cd97d64f89881d66533bb59dc57db",
+  "packageVersion": "0.1.3",
+  "inputRevision": "a52d93446e73674f731529b7f85b05e8c6ccea4c",
+  "originalProposedStatus": "blocked",
+  "evidenceStatus": "blocked",
+  "qualifiesCurrentMain": false,
+  "sourceReview": {
+    "originalLocator": "grades/grade_remediation_local_a/result.json",
+    "sourceSha256": "9cc1f7ebfcf0f02bdaaabc03a16ca8ef1a0dcc165259e873d7be84affe57bc2f",
+    "jsonPointer": "/cases/0",
+    "reviewer": "/root/grade_remediation_local_a",
+    "requestedModel": "inherit-parent",
+    "actualModel": "unknown"
+  },
+  "findings": [
+    "The actual PR schema was discovered. Source read and local preparation occurred without external writes.",
+    "No current scoped patch, concrete title or intended base/repository exists. Local content remains parameterized. Creation/readback did not occur.",
+    "Origin availability and local no-remote state are observed. A live resolution failure was not observed and must not be fabricated.",
+    "The fresh preparation review is an authorized replacement review of preparation only. No-comments and interrogate delivery gates remain open."
+  ],
+  "limits": [
+    "No current scoped patch, concrete title or intended base/repository exists. Local content remains parameterized. Creation/readback did not occur.",
+    "Origin availability and local no-remote state are observed. A live resolution failure was not observed and must not be fabricated.",
+    "The fresh preparation review is an authorized replacement review of preparation only. No-comments and interrogate delivery gates remain open."
+  ],
+  "chronology": {
+    "preserveAllEarlierAttempts": true,
+    "methodConformanceClaim": false,
+    "notes": []
+  },
+  "predicate": [
+    {
+      "id": 1,
+      "text": "Read the complete opening playbook and referenced review skills and owner contracts.",
+      "status": "satisfied",
+      "basis": [
+        "The actual PR schema was discovered. Source read and local preparation occurred without external writes.",
+        "No current scoped patch, concrete title or intended base/repository exists. Local content remains parameterized. Creation/readback did not occur.",
+        "Origin availability and local no-remote state are observed. A live resolution failure was not observed and must not be fabricated.",
+        "The fresh preparation review is an authorized replacement review of preparation only. No-comments and interrogate delivery gates remain open."
+      ],
+      "source": "docs/parity/cases/playbooks/opening-a-pr.json",
+      "evidence": [
+        {
+          "path": "<private-run>/remaining-local/cases/draft-only-authorized/outputs/pr-content.md",
+          "line": 1,
+          "sha256": "ee49e958c18d562c4549e2ce2576994980fc2d00efe6e1366724776189920429"
+        },
+        {
+          "path": "<private-run>/remaining-local/cases/draft-only-authorized/outputs/exposed-pr-interfaces.json",
+          "line": 1,
+          "sha256": "01ed71556ec803e7f4f724e2d6ffea62414ac0e6f8c1e4256d37253aed8698a6"
+        },
+        {
+          "path": "<private-run>/remaining-local/cases/draft-only-authorized/outputs/observations.json",
+          "line": 1,
+          "sha256": "db755138190500d76cb6c249ccb8366b53a6fa4c8f8a47d627a8546a42f155ee"
+        },
+        {
+          "path": "<private-run>/remaining-local/cases/draft-only-authorized/outputs/completion.json",
+          "line": 1,
+          "sha256": "fca2bfd372b6b858fc5d1f1f00615ea16434c15f3c9eb055f3827297585f1c74"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "text": "Prepare the Conventional Commit title, ordered body sections, intended base and real verification artifacts before creation.",
+      "status": "unmet",
+      "basis": [
+        "The actual PR schema was discovered. Source read and local preparation occurred without external writes.",
+        "No current scoped patch, concrete title or intended base/repository exists. Local content remains parameterized. Creation/readback did not occur.",
+        "Origin availability and local no-remote state are observed. A live resolution failure was not observed and must not be fabricated.",
+        "The fresh preparation review is an authorized replacement review of preparation only. No-comments and interrogate delivery gates remain open."
+      ],
+      "source": "docs/parity/cases/playbooks/opening-a-pr.json",
+      "evidence": [
+        {
+          "path": "<private-run>/remaining-local/cases/draft-only-authorized/outputs/pr-content.md",
+          "line": 1,
+          "sha256": "ee49e958c18d562c4549e2ce2576994980fc2d00efe6e1366724776189920429"
+        },
+        {
+          "path": "<private-run>/remaining-local/cases/draft-only-authorized/outputs/exposed-pr-interfaces.json",
+          "line": 1,
+          "sha256": "01ed71556ec803e7f4f724e2d6ffea62414ac0e6f8c1e4256d37253aed8698a6"
+        },
+        {
+          "path": "<private-run>/remaining-local/cases/draft-only-authorized/outputs/observations.json",
+          "line": 1,
+          "sha256": "db755138190500d76cb6c249ccb8366b53a6fa4c8f8a47d627a8546a42f155ee"
+        },
+        {
+          "path": "<private-run>/remaining-local/cases/draft-only-authorized/outputs/completion.json",
+          "line": 1,
+          "sha256": "fca2bfd372b6b858fc5d1f1f00615ea16434c15f3c9eb055f3827297585f1c74"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "text": "Discover the actual built-in PR interface and forge resolution. Retain Origin resolution failure and gh fallback. Never bypass a failed built-in PR tool.",
+      "status": "unmet",
+      "basis": [
+        "The actual PR schema was discovered. Source read and local preparation occurred without external writes.",
+        "No current scoped patch, concrete title or intended base/repository exists. Local content remains parameterized. Creation/readback did not occur.",
+        "Origin availability and local no-remote state are observed. A live resolution failure was not observed and must not be fabricated.",
+        "The fresh preparation review is an authorized replacement review of preparation only. No-comments and interrogate delivery gates remain open."
+      ],
+      "source": "docs/parity/cases/playbooks/opening-a-pr.json",
+      "evidence": [
+        {
+          "path": "<private-run>/remaining-local/cases/draft-only-authorized/outputs/pr-content.md",
+          "line": 1,
+          "sha256": "ee49e958c18d562c4549e2ce2576994980fc2d00efe6e1366724776189920429"
+        },
+        {
+          "path": "<private-run>/remaining-local/cases/draft-only-authorized/outputs/exposed-pr-interfaces.json",
+          "line": 1,
+          "sha256": "01ed71556ec803e7f4f724e2d6ffea62414ac0e6f8c1e4256d37253aed8698a6"
+        },
+        {
+          "path": "<private-run>/remaining-local/cases/draft-only-authorized/outputs/observations.json",
+          "line": 1,
+          "sha256": "db755138190500d76cb6c249ccb8366b53a6fa4c8f8a47d627a8546a42f155ee"
+        },
+        {
+          "path": "<private-run>/remaining-local/cases/draft-only-authorized/outputs/completion.json",
+          "line": 1,
+          "sha256": "fca2bfd372b6b858fc5d1f1f00615ea16434c15f3c9eb055f3827297585f1c74"
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "text": "Verify draft state and action identity after creation. Inspect prior destination state before replay.",
+      "status": "unmet",
+      "basis": [
+        "The actual PR schema was discovered. Source read and local preparation occurred without external writes.",
+        "No current scoped patch, concrete title or intended base/repository exists. Local content remains parameterized. Creation/readback did not occur.",
+        "Origin availability and local no-remote state are observed. A live resolution failure was not observed and must not be fabricated.",
+        "The fresh preparation review is an authorized replacement review of preparation only. No-comments and interrogate delivery gates remain open."
+      ],
+      "source": "docs/parity/cases/playbooks/opening-a-pr.json",
+      "evidence": [
+        {
+          "path": "<private-run>/remaining-local/cases/draft-only-authorized/outputs/pr-content.md",
+          "line": 1,
+          "sha256": "ee49e958c18d562c4549e2ce2576994980fc2d00efe6e1366724776189920429"
+        },
+        {
+          "path": "<private-run>/remaining-local/cases/draft-only-authorized/outputs/exposed-pr-interfaces.json",
+          "line": 1,
+          "sha256": "01ed71556ec803e7f4f724e2d6ffea62414ac0e6f8c1e4256d37253aed8698a6"
+        },
+        {
+          "path": "<private-run>/remaining-local/cases/draft-only-authorized/outputs/observations.json",
+          "line": 1,
+          "sha256": "db755138190500d76cb6c249ccb8366b53a6fa4c8f8a47d627a8546a42f155ee"
+        },
+        {
+          "path": "<private-run>/remaining-local/cases/draft-only-authorized/outputs/completion.json",
+          "line": 1,
+          "sha256": "fca2bfd372b6b858fc5d1f1f00615ea16434c15f3c9eb055f3827297585f1c74"
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "text": "Keep readiness, babysit, merge and thread writes closed. Disclose missing external deslop and leave its gate open.",
+      "status": "satisfied",
+      "basis": [
+        "The actual PR schema was discovered. Source read and local preparation occurred without external writes.",
+        "No current scoped patch, concrete title or intended base/repository exists. Local content remains parameterized. Creation/readback did not occur.",
+        "Origin availability and local no-remote state are observed. A live resolution failure was not observed and must not be fabricated.",
+        "The fresh preparation review is an authorized replacement review of preparation only. No-comments and interrogate delivery gates remain open."
+      ],
+      "source": "docs/parity/cases/playbooks/opening-a-pr.json",
+      "evidence": [
+        {
+          "path": "<private-run>/remaining-local/cases/draft-only-authorized/outputs/pr-content.md",
+          "line": 1,
+          "sha256": "ee49e958c18d562c4549e2ce2576994980fc2d00efe6e1366724776189920429"
+        },
+        {
+          "path": "<private-run>/remaining-local/cases/draft-only-authorized/outputs/exposed-pr-interfaces.json",
+          "line": 1,
+          "sha256": "01ed71556ec803e7f4f724e2d6ffea62414ac0e6f8c1e4256d37253aed8698a6"
+        },
+        {
+          "path": "<private-run>/remaining-local/cases/draft-only-authorized/outputs/observations.json",
+          "line": 1,
+          "sha256": "db755138190500d76cb6c249ccb8366b53a6fa4c8f8a47d627a8546a42f155ee"
+        },
+        {
+          "path": "<private-run>/remaining-local/cases/draft-only-authorized/outputs/completion.json",
+          "line": 1,
+          "sha256": "fca2bfd372b6b858fc5d1f1f00615ea16434c15f3c9eb055f3827297585f1c74"
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "text": "Preserve the complete Bugbot rubric, classify comments against the current code and prepare replies without posting when unauthorized.",
+      "status": "satisfied",
+      "basis": [
+        "The actual PR schema was discovered. Source read and local preparation occurred without external writes.",
+        "No current scoped patch, concrete title or intended base/repository exists. Local content remains parameterized. Creation/readback did not occur.",
+        "Origin availability and local no-remote state are observed. A live resolution failure was not observed and must not be fabricated.",
+        "The fresh preparation review is an authorized replacement review of preparation only. No-comments and interrogate delivery gates remain open."
+      ],
+      "source": "docs/parity/cases/playbooks/opening-a-pr.json",
+      "evidence": [
+        {
+          "path": "<private-run>/remaining-local/cases/draft-only-authorized/outputs/pr-content.md",
+          "line": 1,
+          "sha256": "ee49e958c18d562c4549e2ce2576994980fc2d00efe6e1366724776189920429"
+        },
+        {
+          "path": "<private-run>/remaining-local/cases/draft-only-authorized/outputs/exposed-pr-interfaces.json",
+          "line": 1,
+          "sha256": "01ed71556ec803e7f4f724e2d6ffea62414ac0e6f8c1e4256d37253aed8698a6"
+        },
+        {
+          "path": "<private-run>/remaining-local/cases/draft-only-authorized/outputs/observations.json",
+          "line": 1,
+          "sha256": "db755138190500d76cb6c249ccb8366b53a6fa4c8f8a47d627a8546a42f155ee"
+        },
+        {
+          "path": "<private-run>/remaining-local/cases/draft-only-authorized/outputs/completion.json",
+          "line": 1,
+          "sha256": "fca2bfd372b6b858fc5d1f1f00615ea16434c15f3c9eb055f3827297585f1c74"
+        }
+      ]
+    }
+  ],
+  "sourceArtifactBindings": [
+    {
+      "originalLocator": "remaining-local/cases/draft-only-authorized/outputs/pr-content.md",
+      "sourceSha256": "ee49e958c18d562c4549e2ce2576994980fc2d00efe6e1366724776189920429",
+      "expectedSha256": "ee49e958c18d562c4549e2ce2576994980fc2d00efe6e1366724776189920429",
+      "expectedHashMatches": true,
+      "bytes": 1726,
+      "publication": "omitted",
+      "reason": "Only a narrow inspected projection may be included. Private original remains unchanged."
+    },
+    {
+      "originalLocator": "remaining-local/cases/draft-only-authorized/outputs/exposed-pr-interfaces.json",
+      "sourceSha256": "01ed71556ec803e7f4f724e2d6ffea62414ac0e6f8c1e4256d37253aed8698a6",
+      "expectedSha256": "01ed71556ec803e7f4f724e2d6ffea62414ac0e6f8c1e4256d37253aed8698a6",
+      "expectedHashMatches": true,
+      "bytes": 2755,
+      "publication": "omitted",
+      "reason": "Raw/native context, broad discovery, completion dump, or bulk source manifest is excluded. No protected payload is decoded."
+    },
+    {
+      "originalLocator": "remaining-local/cases/draft-only-authorized/outputs/observations.json",
+      "sourceSha256": "db755138190500d76cb6c249ccb8366b53a6fa4c8f8a47d627a8546a42f155ee",
+      "expectedSha256": "db755138190500d76cb6c249ccb8366b53a6fa4c8f8a47d627a8546a42f155ee",
+      "expectedHashMatches": true,
+      "bytes": 1395,
+      "publication": "projected-fields",
+      "reason": "Only a narrow inspected projection may be included. Private original remains unchanged.",
+      "projectedPath": "docs/releases/remediation-013/local/draft-only-authorized/review-a-01/proof/01-observations.json.excerpt.json",
+      "projectedSha256": "f4f2545f6c1c9c1b7d67adebdfda4cf3a957d2a188a52ec4138f98e5f5cd2253"
+    },
+    {
+      "originalLocator": "remaining-local/cases/draft-only-authorized/outputs/completion.json",
+      "sourceSha256": "fca2bfd372b6b858fc5d1f1f00615ea16434c15f3c9eb055f3827297585f1c74",
+      "expectedSha256": "fca2bfd372b6b858fc5d1f1f00615ea16434c15f3c9eb055f3827297585f1c74",
+      "expectedHashMatches": true,
+      "bytes": 16924,
+      "publication": "omitted",
+      "reason": "Raw/native context, broad discovery, completion dump, or bulk source manifest is excluded. No protected payload is decoded."
+    }
+  ],
+  "projectionLimits": [
+    "This file projects the existing independent assessment and does not regrade the case.",
+    "Private source artifacts and omitted native operations remain private. Source digests bind originals, not transformed bytes.",
+    "Historical 0.1.3 observations do not qualify current main or a modified candidate."
+  ],
+  "statusMapping": {
+    "originalProposedStatus": "blocked",
+    "canonicalStatus": "blocked",
+    "rule": "No status alias is applied."
+  }
+}

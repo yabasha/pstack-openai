@@ -1,0 +1,421 @@
+{
+  "schemaVersion": 1,
+  "kind": "historical-independent-assessment-projection",
+  "caseId": "no-persistent-tool",
+  "attemptId": "review-a-08",
+  "startingMain": "4138e161c27cafffd2baaab6bf4ca53e86a57433",
+  "packageCommit": "51f209daf83cd97d64f89881d66533bb59dc57db",
+  "packageVersion": "0.1.3",
+  "inputRevision": "f36c417e21ceff238395512138441a4c222eaa25",
+  "originalProposedStatus": "reduced-pass",
+  "evidenceStatus": "reduced-pass",
+  "qualifiesCurrentMain": false,
+  "sourceReview": {
+    "originalLocator": "grades/grade_remediation_local_a/result.json",
+    "sourceSha256": "9cc1f7ebfcf0f02bdaaabc03a16ca8ef1a0dcc165259e873d7be84affe57bc2f",
+    "jsonPointer": "/cases/7",
+    "reviewer": "/root/grade_remediation_local_a",
+    "requestedModel": "inherit-parent",
+    "actualModel": "unknown"
+  },
+  "findings": [
+    "The unchanged whole-suite predicate preceded the iteration. Actual baseline was zero passes/two failures, and the retained local negative-count repair produced one pass/one failure.",
+    "Wake, heartbeat, independent watcher and worker controls are policy-withheld for this scenario, not proven absent on the host.",
+    "Actual log-helper receipts, saved continuation and readback preserve the remaining formatter failure, exact revision, accepted change and next check.",
+    "No promise of work after the turn, schedule or full completion was made. A separate full persistent-wake scenario did not run."
+  ],
+  "limits": [
+    "Wake, heartbeat, independent watcher and worker controls are policy-withheld for this scenario, not proven absent on the host.",
+    "Actual log-helper receipts, saved continuation and readback preserve the remaining formatter failure, exact revision, accepted change and next check.",
+    "No promise of work after the turn, schedule or full completion was made. A separate full persistent-wake scenario did not run."
+  ],
+  "chronology": {
+    "preserveAllEarlierAttempts": true,
+    "methodConformanceClaim": false,
+    "notes": [
+      "The unchanged whole-suite predicate preceded the iteration. Actual baseline was zero passes/two failures, and the retained local negative-count repair produced one pass/one failure."
+    ]
+  },
+  "predicate": [
+    {
+      "id": 1,
+      "text": "State a checkable exit predicate before the first iteration and retain it unchanged.",
+      "status": "satisfied",
+      "basis": [
+        "The unchanged whole-suite predicate preceded the iteration. Actual baseline was zero passes/two failures, and the retained local negative-count repair produced one pass/one failure.",
+        "Wake, heartbeat, independent watcher and worker controls are policy-withheld for this scenario, not proven absent on the host.",
+        "Actual log-helper receipts, saved continuation and readback preserve the remaining formatter failure, exact revision, accepted change and next check.",
+        "No promise of work after the turn, schedule or full completion was made. A separate full persistent-wake scenario did not run."
+      ],
+      "source": "docs/parity/cases/playbooks/autonomous-run.json",
+      "evidence": [
+        {
+          "path": "<private-run>/remaining-local/cases/no-persistent-tool/outputs/baseline.json",
+          "line": 1,
+          "sha256": "e7577a7326439ef9a08a31d263457c2a962eb336fe07a9f85749ff6c1f7c28d9"
+        },
+        {
+          "path": "<private-run>/remaining-local/cases/no-persistent-tool/outputs/after.json",
+          "line": 1,
+          "sha256": "369a20927357c9d8f1c3237be06fcc260591065914f803b82bb111517e3cbcf6"
+        },
+        {
+          "path": "<private-run>/remaining-local/cases/no-persistent-tool/outputs/unit-negative.json",
+          "line": 1,
+          "sha256": "7120a512d47c3fded5624d1571e97b0958db503ad65b9eaaf5ddb4d1d1137843"
+        },
+        {
+          "path": "<private-run>/remaining-local/cases/no-persistent-tool/outputs/continuation.md",
+          "line": 1,
+          "sha256": "cfddfd742c51ef058371c15ecf5f59dec1b237aa769fb6b4b9ead2f72d177011"
+        },
+        {
+          "path": "<private-run>/remaining-local/cases/no-persistent-tool/outputs/decisions.tsv",
+          "line": 1,
+          "sha256": "90d415dcdb1d469dbefcdf85bbb2943688df40616b8683892b860c8bda503d0e"
+        },
+        {
+          "path": "<private-run>/remaining-local/cases/no-persistent-tool/outputs/hashes.json",
+          "line": 1,
+          "sha256": "d89053fa199cc9f3e08177969e5491d56c3ae2e4841ae9ecb73ec3077d805d59"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "text": "Use fixture-only checks, smallest justified iterations, per-unit verification and owned-change keep/revert decisions.",
+      "status": "satisfied",
+      "basis": [
+        "The unchanged whole-suite predicate preceded the iteration. Actual baseline was zero passes/two failures, and the retained local negative-count repair produced one pass/one failure.",
+        "Wake, heartbeat, independent watcher and worker controls are policy-withheld for this scenario, not proven absent on the host.",
+        "Actual log-helper receipts, saved continuation and readback preserve the remaining formatter failure, exact revision, accepted change and next check.",
+        "No promise of work after the turn, schedule or full completion was made. A separate full persistent-wake scenario did not run."
+      ],
+      "source": "docs/parity/cases/playbooks/autonomous-run.json",
+      "evidence": [
+        {
+          "path": "<private-run>/remaining-local/cases/no-persistent-tool/outputs/baseline.json",
+          "line": 1,
+          "sha256": "e7577a7326439ef9a08a31d263457c2a962eb336fe07a9f85749ff6c1f7c28d9"
+        },
+        {
+          "path": "<private-run>/remaining-local/cases/no-persistent-tool/outputs/after.json",
+          "line": 1,
+          "sha256": "369a20927357c9d8f1c3237be06fcc260591065914f803b82bb111517e3cbcf6"
+        },
+        {
+          "path": "<private-run>/remaining-local/cases/no-persistent-tool/outputs/unit-negative.json",
+          "line": 1,
+          "sha256": "7120a512d47c3fded5624d1571e97b0958db503ad65b9eaaf5ddb4d1d1137843"
+        },
+        {
+          "path": "<private-run>/remaining-local/cases/no-persistent-tool/outputs/continuation.md",
+          "line": 1,
+          "sha256": "cfddfd742c51ef058371c15ecf5f59dec1b237aa769fb6b4b9ead2f72d177011"
+        },
+        {
+          "path": "<private-run>/remaining-local/cases/no-persistent-tool/outputs/decisions.tsv",
+          "line": 1,
+          "sha256": "90d415dcdb1d469dbefcdf85bbb2943688df40616b8683892b860c8bda503d0e"
+        },
+        {
+          "path": "<private-run>/remaining-local/cases/no-persistent-tool/outputs/hashes.json",
+          "line": 1,
+          "sha256": "d89053fa199cc9f3e08177969e5491d56c3ae2e4841ae9ecb73ec3077d805d59"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "text": "Record wake, heartbeat, worker and control capabilities as unavailable without inventing APIs or models.",
+      "status": "unmet",
+      "basis": [
+        "The unchanged whole-suite predicate preceded the iteration. Actual baseline was zero passes/two failures, and the retained local negative-count repair produced one pass/one failure.",
+        "Wake, heartbeat, independent watcher and worker controls are policy-withheld for this scenario, not proven absent on the host.",
+        "Actual log-helper receipts, saved continuation and readback preserve the remaining formatter failure, exact revision, accepted change and next check.",
+        "No promise of work after the turn, schedule or full completion was made. A separate full persistent-wake scenario did not run."
+      ],
+      "source": "docs/parity/cases/playbooks/autonomous-run.json",
+      "evidence": [
+        {
+          "path": "<private-run>/remaining-local/cases/no-persistent-tool/outputs/baseline.json",
+          "line": 1,
+          "sha256": "e7577a7326439ef9a08a31d263457c2a962eb336fe07a9f85749ff6c1f7c28d9"
+        },
+        {
+          "path": "<private-run>/remaining-local/cases/no-persistent-tool/outputs/after.json",
+          "line": 1,
+          "sha256": "369a20927357c9d8f1c3237be06fcc260591065914f803b82bb111517e3cbcf6"
+        },
+        {
+          "path": "<private-run>/remaining-local/cases/no-persistent-tool/outputs/unit-negative.json",
+          "line": 1,
+          "sha256": "7120a512d47c3fded5624d1571e97b0958db503ad65b9eaaf5ddb4d1d1137843"
+        },
+        {
+          "path": "<private-run>/remaining-local/cases/no-persistent-tool/outputs/continuation.md",
+          "line": 1,
+          "sha256": "cfddfd742c51ef058371c15ecf5f59dec1b237aa769fb6b4b9ead2f72d177011"
+        },
+        {
+          "path": "<private-run>/remaining-local/cases/no-persistent-tool/outputs/decisions.tsv",
+          "line": 1,
+          "sha256": "90d415dcdb1d469dbefcdf85bbb2943688df40616b8683892b860c8bda503d0e"
+        },
+        {
+          "path": "<private-run>/remaining-local/cases/no-persistent-tool/outputs/hashes.json",
+          "line": 1,
+          "sha256": "d89053fa199cc9f3e08177969e5491d56c3ae2e4841ae9ecb73ec3077d805d59"
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "text": "Apply poteto-mode to authorized side fixes, retaining separate PR and irreversible-action gates.",
+      "status": "satisfied",
+      "basis": [
+        "The unchanged whole-suite predicate preceded the iteration. Actual baseline was zero passes/two failures, and the retained local negative-count repair produced one pass/one failure.",
+        "Wake, heartbeat, independent watcher and worker controls are policy-withheld for this scenario, not proven absent on the host.",
+        "Actual log-helper receipts, saved continuation and readback preserve the remaining formatter failure, exact revision, accepted change and next check.",
+        "No promise of work after the turn, schedule or full completion was made. A separate full persistent-wake scenario did not run."
+      ],
+      "source": "docs/parity/cases/playbooks/autonomous-run.json",
+      "evidence": [
+        {
+          "path": "<private-run>/remaining-local/cases/no-persistent-tool/outputs/baseline.json",
+          "line": 1,
+          "sha256": "e7577a7326439ef9a08a31d263457c2a962eb336fe07a9f85749ff6c1f7c28d9"
+        },
+        {
+          "path": "<private-run>/remaining-local/cases/no-persistent-tool/outputs/after.json",
+          "line": 1,
+          "sha256": "369a20927357c9d8f1c3237be06fcc260591065914f803b82bb111517e3cbcf6"
+        },
+        {
+          "path": "<private-run>/remaining-local/cases/no-persistent-tool/outputs/unit-negative.json",
+          "line": 1,
+          "sha256": "7120a512d47c3fded5624d1571e97b0958db503ad65b9eaaf5ddb4d1d1137843"
+        },
+        {
+          "path": "<private-run>/remaining-local/cases/no-persistent-tool/outputs/continuation.md",
+          "line": 1,
+          "sha256": "cfddfd742c51ef058371c15ecf5f59dec1b237aa769fb6b4b9ead2f72d177011"
+        },
+        {
+          "path": "<private-run>/remaining-local/cases/no-persistent-tool/outputs/decisions.tsv",
+          "line": 1,
+          "sha256": "90d415dcdb1d469dbefcdf85bbb2943688df40616b8683892b860c8bda503d0e"
+        },
+        {
+          "path": "<private-run>/remaining-local/cases/no-persistent-tool/outputs/hashes.json",
+          "line": 1,
+          "sha256": "d89053fa199cc9f3e08177969e5491d56c3ae2e4841ae9ecb73ec3077d805d59"
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "text": "Checkpoint each iteration using the referenced decision-log helper and preserve transcript audit and independent cross-model review limits.",
+      "status": "satisfied",
+      "basis": [
+        "The unchanged whole-suite predicate preceded the iteration. Actual baseline was zero passes/two failures, and the retained local negative-count repair produced one pass/one failure.",
+        "Wake, heartbeat, independent watcher and worker controls are policy-withheld for this scenario, not proven absent on the host.",
+        "Actual log-helper receipts, saved continuation and readback preserve the remaining formatter failure, exact revision, accepted change and next check.",
+        "No promise of work after the turn, schedule or full completion was made. A separate full persistent-wake scenario did not run."
+      ],
+      "source": "docs/parity/cases/playbooks/autonomous-run.json",
+      "evidence": [
+        {
+          "path": "<private-run>/remaining-local/cases/no-persistent-tool/outputs/baseline.json",
+          "line": 1,
+          "sha256": "e7577a7326439ef9a08a31d263457c2a962eb336fe07a9f85749ff6c1f7c28d9"
+        },
+        {
+          "path": "<private-run>/remaining-local/cases/no-persistent-tool/outputs/after.json",
+          "line": 1,
+          "sha256": "369a20927357c9d8f1c3237be06fcc260591065914f803b82bb111517e3cbcf6"
+        },
+        {
+          "path": "<private-run>/remaining-local/cases/no-persistent-tool/outputs/unit-negative.json",
+          "line": 1,
+          "sha256": "7120a512d47c3fded5624d1571e97b0958db503ad65b9eaaf5ddb4d1d1137843"
+        },
+        {
+          "path": "<private-run>/remaining-local/cases/no-persistent-tool/outputs/continuation.md",
+          "line": 1,
+          "sha256": "cfddfd742c51ef058371c15ecf5f59dec1b237aa769fb6b4b9ead2f72d177011"
+        },
+        {
+          "path": "<private-run>/remaining-local/cases/no-persistent-tool/outputs/decisions.tsv",
+          "line": 1,
+          "sha256": "90d415dcdb1d469dbefcdf85bbb2943688df40616b8683892b860c8bda503d0e"
+        },
+        {
+          "path": "<private-run>/remaining-local/cases/no-persistent-tool/outputs/hashes.json",
+          "line": 1,
+          "sha256": "d89053fa199cc9f3e08177969e5491d56c3ae2e4841ae9ecb73ec3077d805d59"
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "text": "Save a continuation brief to an authorized owned local path and read it back before claiming persistence; include predicate, iteration count, revision, verification, trail, accepted/discarded changes, gates, action identities/outcomes and next check.",
+      "status": "satisfied",
+      "basis": [
+        "The unchanged whole-suite predicate preceded the iteration. Actual baseline was zero passes/two failures, and the retained local negative-count repair produced one pass/one failure.",
+        "Wake, heartbeat, independent watcher and worker controls are policy-withheld for this scenario, not proven absent on the host.",
+        "Actual log-helper receipts, saved continuation and readback preserve the remaining formatter failure, exact revision, accepted change and next check.",
+        "No promise of work after the turn, schedule or full completion was made. A separate full persistent-wake scenario did not run."
+      ],
+      "source": "docs/parity/cases/playbooks/autonomous-run.json",
+      "evidence": [
+        {
+          "path": "<private-run>/remaining-local/cases/no-persistent-tool/outputs/baseline.json",
+          "line": 1,
+          "sha256": "e7577a7326439ef9a08a31d263457c2a962eb336fe07a9f85749ff6c1f7c28d9"
+        },
+        {
+          "path": "<private-run>/remaining-local/cases/no-persistent-tool/outputs/after.json",
+          "line": 1,
+          "sha256": "369a20927357c9d8f1c3237be06fcc260591065914f803b82bb111517e3cbcf6"
+        },
+        {
+          "path": "<private-run>/remaining-local/cases/no-persistent-tool/outputs/unit-negative.json",
+          "line": 1,
+          "sha256": "7120a512d47c3fded5624d1571e97b0958db503ad65b9eaaf5ddb4d1d1137843"
+        },
+        {
+          "path": "<private-run>/remaining-local/cases/no-persistent-tool/outputs/continuation.md",
+          "line": 1,
+          "sha256": "cfddfd742c51ef058371c15ecf5f59dec1b237aa769fb6b4b9ead2f72d177011"
+        },
+        {
+          "path": "<private-run>/remaining-local/cases/no-persistent-tool/outputs/decisions.tsv",
+          "line": 1,
+          "sha256": "90d415dcdb1d469dbefcdf85bbb2943688df40616b8683892b860c8bda503d0e"
+        },
+        {
+          "path": "<private-run>/remaining-local/cases/no-persistent-tool/outputs/hashes.json",
+          "line": 1,
+          "sha256": "d89053fa199cc9f3e08177969e5491d56c3ae2e4841ae9ecb73ec3077d805d59"
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "text": "If persistence is unavailable or denied, return the brief inline and disclose no durable save.",
+      "status": "satisfied",
+      "basis": [
+        "The unchanged whole-suite predicate preceded the iteration. Actual baseline was zero passes/two failures, and the retained local negative-count repair produced one pass/one failure.",
+        "Wake, heartbeat, independent watcher and worker controls are policy-withheld for this scenario, not proven absent on the host.",
+        "Actual log-helper receipts, saved continuation and readback preserve the remaining formatter failure, exact revision, accepted change and next check.",
+        "No promise of work after the turn, schedule or full completion was made. A separate full persistent-wake scenario did not run."
+      ],
+      "source": "docs/parity/cases/playbooks/autonomous-run.json",
+      "evidence": [
+        {
+          "path": "<private-run>/remaining-local/cases/no-persistent-tool/outputs/baseline.json",
+          "line": 1,
+          "sha256": "e7577a7326439ef9a08a31d263457c2a962eb336fe07a9f85749ff6c1f7c28d9"
+        },
+        {
+          "path": "<private-run>/remaining-local/cases/no-persistent-tool/outputs/after.json",
+          "line": 1,
+          "sha256": "369a20927357c9d8f1c3237be06fcc260591065914f803b82bb111517e3cbcf6"
+        },
+        {
+          "path": "<private-run>/remaining-local/cases/no-persistent-tool/outputs/unit-negative.json",
+          "line": 1,
+          "sha256": "7120a512d47c3fded5624d1571e97b0958db503ad65b9eaaf5ddb4d1d1137843"
+        },
+        {
+          "path": "<private-run>/remaining-local/cases/no-persistent-tool/outputs/continuation.md",
+          "line": 1,
+          "sha256": "cfddfd742c51ef058371c15ecf5f59dec1b237aa769fb6b4b9ead2f72d177011"
+        },
+        {
+          "path": "<private-run>/remaining-local/cases/no-persistent-tool/outputs/decisions.tsv",
+          "line": 1,
+          "sha256": "90d415dcdb1d469dbefcdf85bbb2943688df40616b8683892b860c8bda503d0e"
+        },
+        {
+          "path": "<private-run>/remaining-local/cases/no-persistent-tool/outputs/hashes.json",
+          "line": 1,
+          "sha256": "d89053fa199cc9f3e08177969e5491d56c3ae2e4841ae9ecb73ec3077d805d59"
+        }
+      ]
+    }
+  ],
+  "sourceArtifactBindings": [
+    {
+      "originalLocator": "remaining-local/cases/no-persistent-tool/outputs/baseline.json",
+      "sourceSha256": "e7577a7326439ef9a08a31d263457c2a962eb336fe07a9f85749ff6c1f7c28d9",
+      "expectedSha256": "e7577a7326439ef9a08a31d263457c2a962eb336fe07a9f85749ff6c1f7c28d9",
+      "expectedHashMatches": true,
+      "bytes": 620,
+      "publication": "projected-fields",
+      "reason": "Only a narrow inspected projection may be included. Private original remains unchanged.",
+      "projectedPath": "docs/releases/remediation-013/local/no-persistent-tool/review-a-08/proof/01-baseline.json.excerpt.json",
+      "projectedSha256": "9a70ca5f8c5df182dbdf17f2af1df72c157838e75855e873466c6b2c6133e31d"
+    },
+    {
+      "originalLocator": "remaining-local/cases/no-persistent-tool/outputs/after.json",
+      "sourceSha256": "369a20927357c9d8f1c3237be06fcc260591065914f803b82bb111517e3cbcf6",
+      "expectedSha256": "369a20927357c9d8f1c3237be06fcc260591065914f803b82bb111517e3cbcf6",
+      "expectedHashMatches": true,
+      "bytes": 409,
+      "publication": "projected-fields",
+      "reason": "Only a narrow inspected projection may be included. Private original remains unchanged.",
+      "projectedPath": "docs/releases/remediation-013/local/no-persistent-tool/review-a-08/proof/02-after.json.excerpt.json",
+      "projectedSha256": "bba9cd98a635c1bab2be6995559ddf1a0c144a58d94a9ef25fb3b3831c122bfb"
+    },
+    {
+      "originalLocator": "remaining-local/cases/no-persistent-tool/outputs/unit-negative.json",
+      "sourceSha256": "7120a512d47c3fded5624d1571e97b0958db503ad65b9eaaf5ddb4d1d1137843",
+      "expectedSha256": "7120a512d47c3fded5624d1571e97b0958db503ad65b9eaaf5ddb4d1d1137843",
+      "expectedHashMatches": true,
+      "bytes": 355,
+      "publication": "projected-fields",
+      "reason": "Only a narrow inspected projection may be included. Private original remains unchanged.",
+      "projectedPath": "docs/releases/remediation-013/local/no-persistent-tool/review-a-08/proof/03-unit-negative.json.excerpt.json",
+      "projectedSha256": "99842e9033b412d0e6e2f8e4625c8748badecd476245fe2ffc82ac7c261d0456"
+    },
+    {
+      "originalLocator": "remaining-local/cases/no-persistent-tool/outputs/continuation.md",
+      "sourceSha256": "cfddfd742c51ef058371c15ecf5f59dec1b237aa769fb6b4b9ead2f72d177011",
+      "expectedSha256": "cfddfd742c51ef058371c15ecf5f59dec1b237aa769fb6b4b9ead2f72d177011",
+      "expectedHashMatches": true,
+      "bytes": 2285,
+      "publication": "omitted",
+      "reason": "Only a narrow inspected projection may be included. Private original remains unchanged."
+    },
+    {
+      "originalLocator": "remaining-local/cases/no-persistent-tool/outputs/decisions.tsv",
+      "sourceSha256": "90d415dcdb1d469dbefcdf85bbb2943688df40616b8683892b860c8bda503d0e",
+      "expectedSha256": "90d415dcdb1d469dbefcdf85bbb2943688df40616b8683892b860c8bda503d0e",
+      "expectedHashMatches": true,
+      "bytes": 305,
+      "publication": "omitted",
+      "reason": "Only a narrow inspected projection may be included. Private original remains unchanged."
+    },
+    {
+      "originalLocator": "remaining-local/cases/no-persistent-tool/outputs/hashes.json",
+      "sourceSha256": "d89053fa199cc9f3e08177969e5491d56c3ae2e4841ae9ecb73ec3077d805d59",
+      "expectedSha256": "d89053fa199cc9f3e08177969e5491d56c3ae2e4841ae9ecb73ec3077d805d59",
+      "expectedHashMatches": true,
+      "bytes": 22881,
+      "publication": "omitted",
+      "reason": "Only a narrow inspected projection may be included. Private original remains unchanged."
+    }
+  ],
+  "projectionLimits": [
+    "This file projects the existing independent assessment and does not regrade the case.",
+    "Private source artifacts and omitted native operations remain private. Source digests bind originals, not transformed bytes.",
+    "Historical 0.1.3 observations do not qualify current main or a modified candidate."
+  ],
+  "statusMapping": {
+    "originalProposedStatus": "reduced-pass",
+    "canonicalStatus": "reduced-pass",
+    "rule": "No status alias is applied."
+  }
+}

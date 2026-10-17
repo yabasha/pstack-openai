@@ -1,0 +1,109 @@
+{
+  "schemaVersion": 1,
+  "kind": "historical-independent-assessment-projection",
+  "caseId": "guides-github-absent",
+  "attemptId": "review-b-01",
+  "startingMain": "4138e161c27cafffd2baaab6bf4ca53e86a57433",
+  "packageCommit": "51f209daf83cd97d64f89881d66533bb59dc57db",
+  "packageVersion": "0.1.3",
+  "inputRevision": "0d6b88f44a2a7bc7249f06374fba22822681d153",
+  "originalProposedStatus": "reduced-pass",
+  "evidenceStatus": "reduced-pass",
+  "qualifiesCurrentMain": false,
+  "sourceReview": {
+    "originalLocator": "grades/grade_remediation_local_b/result.json",
+    "sourceSha256": "d837b0c7cdea4be245b4a86ca593038cbe8b1596662a82fe6554e9d96444abd6",
+    "jsonPointer": "/rows/0",
+    "reviewer": "/root/grade_remediation_local_b",
+    "requestedModel": "inherit-parent",
+    "actualModel": "unknown"
+  },
+  "findings": [
+    "Matching guide, complete Opening and Babysit reads and source hashes are observed.",
+    "Local handoff preserves unknown repository, branch, head and product-change inputs.",
+    "Actual executable discoveries are distinguished from POLICY-withheld GitHub access. No external operation or watcher outcome is invented."
+  ],
+  "limits": [
+    "The exact case expectedReduced applies. Real PR delivery and babysitting remain unavailable under the withheld access scenario."
+  ],
+  "chronology": [
+    "Coordinator first-action checklist deviation remains retained. It does not invalidate the narrow source-grounded handoff predicate."
+  ],
+  "predicate": [
+    {
+      "index": 1,
+      "text": "Read the matching guide and host capability contract.",
+      "status": "satisfied",
+      "assessment": "Detailed evidence and qualifying limits are in the exact satisfied/unmet/notApplicable predicates below."
+    },
+    {
+      "index": 2,
+      "text": "Preserve the active controller and explicit permission gates.",
+      "status": "satisfied",
+      "assessment": "Detailed evidence and qualifying limits are in the exact satisfied/unmet/notApplicable predicates below."
+    }
+  ],
+  "sourceArtifactBindings": [
+    {
+      "originalLocator": "remaining-local/cases/guides-github-absent/outputs/guides-github-absent.result.md",
+      "sourceSha256": "e5b05c4ac3441af1954cba0fd5a04a5a7e0fe8dcb47c44ee79da259a228f3ae2",
+      "expectedSha256": "e5b05c4ac3441af1954cba0fd5a04a5a7e0fe8dcb47c44ee79da259a228f3ae2",
+      "expectedHashMatches": true,
+      "bytes": 11514,
+      "publication": "omitted",
+      "reason": "Only a narrow inspected projection may be included. Private original remains unchanged."
+    },
+    {
+      "originalLocator": "remaining-local/cases/guides-github-absent/outputs/input-source-receipt.json",
+      "sourceSha256": "e1b6f04ae1dccb9119a949311c5bb75045687698081ec7de16d6b59b70cc37ba",
+      "expectedSha256": "e1b6f04ae1dccb9119a949311c5bb75045687698081ec7de16d6b59b70cc37ba",
+      "expectedHashMatches": true,
+      "bytes": 26605,
+      "publication": "projected-fields",
+      "reason": "Only a narrow inspected projection may be included. Private original remains unchanged.",
+      "projectedPath": "docs/releases/remediation-013/local/guides-github-absent/review-b-01/proof/01-input-source-receipt.json.excerpt.json",
+      "projectedSha256": "29ccdcd2702f929e5a39819414a57b7e2a859565f05c4b346b9fccb500249967"
+    },
+    {
+      "originalLocator": "remaining-local/cases/guides-github-absent/outputs/verification.json",
+      "sourceSha256": "a040a1b5190ed462e9265e811bb8fd031c84b2a9756daee784363b3cd84b1820",
+      "expectedSha256": "a040a1b5190ed462e9265e811bb8fd031c84b2a9756daee784363b3cd84b1820",
+      "expectedHashMatches": true,
+      "bytes": 1866,
+      "publication": "projected-fields",
+      "reason": "Only a narrow inspected projection may be included. Private original remains unchanged.",
+      "projectedPath": "docs/releases/remediation-013/local/guides-github-absent/review-b-01/proof/02-verification.json.excerpt.json",
+      "projectedSha256": "31bf8ad0ab2272deceed2c342b13466f86c75053a14ef95f54e8946c677e047a"
+    },
+    {
+      "originalLocator": "remaining-local/cases/guides-github-absent/outputs/coordinator-review.json",
+      "sourceSha256": "8a5f9f0c7c47e1dd6769e481b3db94ab89daaf3ce318e5e8b877de0043784f2f",
+      "expectedSha256": "8a5f9f0c7c47e1dd6769e481b3db94ab89daaf3ce318e5e8b877de0043784f2f",
+      "expectedHashMatches": true,
+      "bytes": 1807,
+      "publication": "projected-fields",
+      "reason": "Only a narrow inspected projection may be included. Private original remains unchanged.",
+      "projectedPath": "docs/releases/remediation-013/local/guides-github-absent/review-b-01/proof/03-coordinator-review.json.excerpt.json",
+      "projectedSha256": "f0e6e16ae969dbab67e02c389185fd9442095d5609f41f7c9dc8bc0f5bc83cb1"
+    },
+    {
+      "originalLocator": "native-captures-sanitized-v2/remaining-02/index.json",
+      "sourceSha256": "ed8f512b2ee492d54986d3f259fa216be0b13190b8d2ebf2bca4ca8a4324dfbc",
+      "expectedSha256": "ed8f512b2ee492d54986d3f259fa216be0b13190b8d2ebf2bca4ca8a4324dfbc",
+      "expectedHashMatches": true,
+      "bytes": 11523,
+      "publication": "omitted",
+      "reason": "Raw/native context, broad discovery, completion dump, or bulk source manifest is excluded. No protected payload is decoded."
+    }
+  ],
+  "projectionLimits": [
+    "This file projects the existing independent assessment and does not regrade the case.",
+    "Private source artifacts and omitted native operations remain private. Source digests bind originals, not transformed bytes.",
+    "Historical 0.1.3 observations do not qualify current main or a modified candidate."
+  ],
+  "statusMapping": {
+    "originalProposedStatus": "reduced-pass",
+    "canonicalStatus": "reduced-pass",
+    "rule": "No status alias is applied."
+  }
+}

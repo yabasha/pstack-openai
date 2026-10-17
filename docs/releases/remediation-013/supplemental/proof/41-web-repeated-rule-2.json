@@ -1,0 +1,26 @@
+{
+  "kind": "historical-proof-selection",
+  "source": {
+    "path": "<private-run>/web-checkpoint-3/units/repeated-rule/outputs/repeated-rule/baseline.raw.json",
+    "sha256": "7e0fb4ab2014d92d3d714e3578e26ac6471c3294c4a11ca8d8102d089aa6aa20",
+    "bytes": 2549
+  },
+  "selection": [
+    {
+      "locator": {
+        "jsonPointer": "/result"
+      },
+      "value": {
+        "chunk_id": "fd5f64",
+        "wall_time_seconds": 0.000037337,
+        "exit_code": 1,
+        "original_token_count": 292,
+        "output": "Cloning into '/mnt/data/pstack-remediation-20261017/attempts-18/outputs/repeated-rule/working'...\ndone.\nbun test v1.4.2 (744846f84)\n\ntests/release-regression.test.mjs:\n1 | import {test,expect} from 'bun:test';import {generateRelease} from '../domain/release.mjs';\n2 | test('release keeps caller source identity and rejects missing identity',()=>{expect(generateRelease({version:'1.0.0',sourceRevision:'a'.repeat(40)})).toEqual({version:'1.0.0',sourceRevision:'a'.repeat(40)});expect(()=>generateRelease({version:'1.0.0'})).toThrow();});\n                                                                                                                                                           ^\nerror: expect(received).toEqual(expected)\n\n  {\n-   \"sourceRevision\": \"aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa\",\n    \"version\": \"1.0.0\",\n  }\n\n- Expected  - 1\n+ Received  + 0\n\n      at <anonymous> (/mnt/data/pstack-remediation-20261017/attempts-18/outputs/repeated-rule/task-input/tests/release-regression.test.mjs:2:152)\n(fail) release keeps caller source identity and rejects missing identity [0.40ms]\n\n 0 pass\n 1 fail\n 1 expect() calls\nRan 1 test across 1 file. [4.00ms]\n"
+      }
+    }
+  ],
+  "limits": [
+    "Selections preserve the exact source value at each locator. Truncated strings carry explicit code-unit bounds.",
+    "A producer-captured return is not a recovered native parent envelope. Missing call IDs, original capture defects and unknown model observations remain missing."
+  ]
+}

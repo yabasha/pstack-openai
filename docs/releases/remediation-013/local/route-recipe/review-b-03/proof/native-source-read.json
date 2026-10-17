@@ -1,0 +1,34 @@
+{
+  "schemaVersion": 1,
+  "kind": "native-command-event-excerpt",
+  "caseId": "route-recipe",
+  "attemptId": "review-b-03",
+  "inputRevision": "8ad10cb42cc9e0a09f6eb9239b2909203a7f9a3e",
+  "originalLocator": "remaining-local/actors/remaining-02/events.jsonl",
+  "sourceSha256": "c345328d63867893f4034f5adc3ba29a6ffa73d42710d637d058dd1874eda68a",
+  "itemId": "item_32",
+  "startedLine": 60,
+  "completedLine": 61,
+  "originalEventType": "item.completed",
+  "observedOperationType": "command_execution",
+  "command": "/bin/zsh -lc 'cat <installed-frozen-package>/skills/poteto-help/references/recipes.md; cat <installed-frozen-package>/skills/poteto-mode/playbooks/bug-fix.md'",
+  "aggregatedOutputPrefix": "# Prompts worth copying\n\nSwap in the real paths, skills, and done checks. Informal wording works.\n\n## Understand\n\n- `/poteto-mode read <thread>. restate the underlying issue in your own words, in plain english.`\n- `/poteto-mode investigate why <symptom>. give me what we know, what data you used, and your best hypotheses. don't change any code yet.`\n- `use /how to understand <subsystem>. then use /why to find out why it broke recently.`\n- `/recall my work on <topic> from last week, then read <issue>.`\n- `/teach me why you implemented it this way and not <other way>. what did you trade off?`\n- `",
+  "originalAggregatedOutputCharacters": 9777,
+  "exitCode": 0,
+  "status": "completed",
+  "scope": "This is a source read by the case batch coordinator. It is not represented as a child worker read or as proof of all child instructions.",
+  "clock": "The public event has no timestamp. Line order is retained. No duration or clock interval is inferred.",
+  "transformation": "Exact event fields selected. Absolute task and installed-package paths are replaced with declared placeholders. Output is a prefix, not the complete source read. No other event or browser context is included. Only these literal or explicitly loop-listed registered source names are matched. This does not prove every registered source path was read. Native callable metadata is corroborated against a scoped private callsite. Protected or unrelated payload contents are not copied or decoded.",
+  "sourceScopeMatchedByCommand": [
+    "skills/poteto-help/references/recipes.md"
+  ],
+  "nativeCallBinding": {
+    "originalLocator": "native-captures-sanitized-v2/remaining-02/01a1489f-461a-77f0-b656-a818db38ab80.jsonl",
+    "sourceSha256": "05281e4dadcf4bc00588c748ce75d5a83f509483f7a7a00317e40c644dfb6a50",
+    "line": 78,
+    "callId": "call_6a3457dbe429466caa67f8b8c2fab306",
+    "observedToolName": "exec",
+    "observedNestedCallsite": "tools.exec_command",
+    "corroboration": "The actual scoped native custom-tool call invokes tools.exec_command with the exact command parsed from this public command_execution event. Only the callable identity and locator are projected. Its surrounding payload remains private."
+  }
+}

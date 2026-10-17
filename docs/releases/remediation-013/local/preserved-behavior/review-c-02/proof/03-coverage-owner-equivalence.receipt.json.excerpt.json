@@ -1,0 +1,39 @@
+{
+  "kind": "selected-fixture-result-fields",
+  "caseId": "preserved-behavior",
+  "attemptId": "review-c-02",
+  "originalLocator": "remaining-local/cases/preserved-behavior/outputs/coverage-owner-equivalence.receipt.json",
+  "sourceSha256": "9f49c8d5acd124f8137e58ad41b7dedf22b88b3101adc750bb3e9e3864aa3bac",
+  "sourceBytes": 2690,
+  "transformation": "Named JSON fields selected by exact JSON Pointer. Task-owned absolute paths replaced with declared placeholders. Other fields omitted. These are result-artifact values, not synthesized tool execution evidence. Public selection is limited to eight short inspected fields. Longer output and unselected fields remain private.",
+  "fields": [
+    {
+      "pointer": "/name",
+      "value": "coverage-owner-equivalence"
+    },
+    {
+      "pointer": "/command",
+      "value": [
+        "bun",
+        "--no-install",
+        "outputs/behavior.mjs",
+        "outputs/workers/mechanical_01/coverage-absent/invoice",
+        "formatAmount",
+        "check",
+        "outputs/baseline.json"
+      ]
+    },
+    {
+      "pointer": "/exitCode",
+      "value": 0
+    },
+    {
+      "pointer": "/stderr",
+      "value": ""
+    },
+    {
+      "pointer": "/inputRevision",
+      "value": "1b69f163da7e4648e691c8b26cac8465ec1b596f"
+    }
+  ]
+}

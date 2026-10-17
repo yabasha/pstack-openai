@@ -1,0 +1,16 @@
+{
+  "kind": "task-result-file-excerpt",
+  "caseId": "fresh-worker-mode",
+  "attemptId": "review-a-06",
+  "inputRevision": "de083c0cb5a8bc8e952f02eb63c0df968cb9e8bc",
+  "originalLocator": "remaining-local/cases/fresh-worker-mode/outputs/fresh-worker-mode.result.md",
+  "sourceSha256": "44482e89538d48d20196a7717153c90562c98c3b477038a0a9f8b730c4ea609a",
+  "sourceWasDirectlyListedByIndependentGrade": false,
+  "characterRange": {
+    "start": 0,
+    "endExclusive": 789,
+    "total": 12171
+  },
+  "content": "# fresh-worker-mode integrated factual attempt\n\nThe later local serializer passes 23 behavior checks and the independent root PTY probe. The separate corrected Arena receipt passed the canonical method function with exit 0 and no structural errors. Full Feature workflow compliance remains blocked by the earlier method mismatches and missing full-mode-read proof from the first how worker. No producer grade or host pass is assigned.\n\n## Full supplied request and inputs\n\nThe complete supplied request and role remain verbatim in completion.json fullRequest and fullRole. The original case contract, selected synthetic fixture contents, source hashes and full input revision remain in that receipt. The exact current contract follows.\n\n```json\n{\n  \"case\": {\n    \"id\": \"fresh-worker-mode\",",
+  "transformation": "An inspected prefix of the actual task-result file is projected. Task-owned absolute paths use declared placeholders. The prefix may omit later qualifications. The independent assessment and its limits govern the proposed grade. This is neither a new grade nor a native callable-operation claim."
+}

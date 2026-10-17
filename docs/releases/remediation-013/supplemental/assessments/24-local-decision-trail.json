@@ -1,0 +1,40 @@
+{
+  "kind": "historical-independent-assessment-extract",
+  "qualification": {
+    "inputRevision": "4138e161c27cafffd2baaab6bf4ca53e86a57433",
+    "sourceFreeze": "51f209daf83cd97d64f89881d66533bb59dc57db",
+    "packageVersion": "0.1.3",
+    "currentSourceQualified": false
+  },
+  "source": {
+    "path": "<private-run>/grades/grade_local_resume/result.json",
+    "sha256": "8f492a452ef4e160f619772022157e7600e78034d11b1e7f16d1d3f1499875a2",
+    "locator": {
+      "jsonPointer": "/cases/3"
+    }
+  },
+  "originalAssessment": {
+    "caseId": "decision-trail",
+    "proposedStatus": "reduced-pass",
+    "reason": "One canonical six-column saved trail retains its original seven data rows and append-only coordinator corrections. Independent replay verifies three separator rejections leave bytes unchanged and four formula prefixes are protected.",
+    "evidence": [
+      "<private-run>/remaining-local/cases/decision-trail/outputs/decisions.tsv",
+      "<private-run>/remaining-local/cases/decision-trail/outputs/decisions.producer-original.tsv",
+      "<private-run>/remaining-local/cases/decision-trail/outputs/coordinator-addendum.json",
+      "<private-run>/grades/grade_local_resume/own-checks.json"
+    ],
+    "limits": [
+      "The complete producer transcript and an observed different model family were not available to the original review. Current captures observe gpt-6.1-sol for both producer and reviewer, which confirms same-model review rather than different-family review. Raw returned method chronology differs from actual helper order and is preserved, with correction appended rather than overwritten. A full trail audit remains unsatisfied."
+    ]
+  },
+  "selectedProof": [
+    "proof/24-local-decision-trail-1.json",
+    "proof/24-local-decision-trail-2.json",
+    "proof/24-local-decision-trail-3.json"
+  ],
+  "publicationStatus": "proposal-only; no canonical host evidence record is constructed",
+  "publicationGaps": [
+    "This assessment format is not the canonical evidence schema. Root-relative operation bindings and any required structured method receipt require separate complete validation.",
+    "Original assessment limitations, invalid receipts and capture gaps are preserved. A behavioral pass does not qualify a different package revision."
+  ]
+}

@@ -1,0 +1,34 @@
+{
+  "schemaVersion": 1,
+  "kind": "native-command-event-excerpt",
+  "caseId": "invalid-input",
+  "attemptId": "review-a-15",
+  "inputRevision": "be8f71ddae4c194ec08c22188718639fcceb7183",
+  "originalLocator": "work/local_compiler_cases/actors/invalid-input/events.jsonl",
+  "sourceSha256": "bf23229ef8d491906a9fa1a41b1ed1f6343299699b8f92ec69b9f7887c7bfebe",
+  "itemId": "item_7",
+  "startedLine": 13,
+  "completedLine": 14,
+  "originalEventType": "item.completed",
+  "observedOperationType": "command_execution",
+  "command": "/bin/zsh -lc 'cat <installed-frozen-package>/skills/principle-boundary-discipline/SKILL.md <installed-frozen-package>/references/workflow-ownership.md <installed-frozen-package>/references/host-capabilities.md <installed-frozen-package>/references/model-roles.md <installed-frozen-package>/skills/poteto-mode/playbooks/refactoring.md'",
+  "aggregatedOutputPrefix": "---\nname: principle-boundary-discipline\ndescription: \"Apply when wiring validation, error handling, or framework adapters. Concentrate guards at system boundaries (CLI, config, network, external APIs); trust internal types and keep business logic in pure functions.\"\ndisable-model-invocation: true\n---\n\n# Boundary Discipline\n\nPlace validation, type narrowing, and error handling at system boundaries. Trust internal code unconditionally. Business logic lives in pure functions. The shell is thin and mechanical.\n\n**Why:** Scattered validation is noisy, redundant, and gives a false sense of safety. K",
+  "originalAggregatedOutputCharacters": 19565,
+  "exitCode": 0,
+  "status": "completed",
+  "scope": "This is a source read in the independently reviewed case actor.",
+  "clock": "The public event has no timestamp. Line order is retained. No duration or clock interval is inferred.",
+  "transformation": "Exact event fields selected. Absolute task and installed-package paths are replaced with declared placeholders. Output is a prefix, not the complete source read. No other event or browser context is included. Only these literal or explicitly loop-listed registered source names are matched. This does not prove every registered source path was read. Native callable metadata is corroborated against a scoped private callsite. Protected or unrelated payload contents are not copied or decoded.",
+  "sourceScopeMatchedByCommand": [
+    "skills/principle-boundary-discipline/SKILL.md"
+  ],
+  "nativeCallBinding": {
+    "originalLocator": "work/local_compiler_cases/actors/invalid-input/native-scoped.jsonl",
+    "sourceSha256": "5bec89ce09792cd9290cd55115b6148eecb44a1b839988422b97db076b0b6527",
+    "line": 5,
+    "callId": "call_a5c751ad8d1843c4a658f153d6439506",
+    "observedToolName": "exec",
+    "observedNestedCallsite": "tools.exec_command",
+    "corroboration": "The actual scoped native custom-tool call invokes tools.exec_command with the exact command parsed from this public command_execution event. Only the callable identity and locator are projected. Its surrounding payload remains private."
+  }
+}
