@@ -38,13 +38,11 @@ if (!Array.isArray(prompts) || prompts.length < 1 || prompts.length > 3 ||
   throw new Error("Invalid listing starter prompts.");
 }
 
-run(["python3", "-B", "tools/validate_package.py", "--root", root, "--inventory", "docs/parity/inventory.json"]);
-
 // New preparation files are explicit so unrelated untracked files never enter a release.
 const additions = ["CHANGELOG.md", "docs/publication.md", "tools/package_release.mjs"];
 const tracked = run(["git", "ls-files", "-z"]).toString().split("\0").filter(Boolean);
 const paths = [...new Set([...tracked, ...additions])].filter((path) =>
-  !path.startsWith(".superpowers/") && path !== ".gitignore"
+  !path.startsWith(".superpowers/")
 ).sort();
 const entries = [];
 for (const path of paths) {
@@ -86,6 +84,11 @@ try {
   const archive = join(staging, `${manifest.name}-${manifest.version}-candidate.zip`);
   run(["zip", "-X", "-q", archive, "-@"], { stdin: new TextEncoder().encode(paths.join("\n") + "\n") });
   run(["unzip", "-tqq", archive]);
+  const packageRoot = join(staging, "package");
+  mkdirSync(packageRoot);
+  run(["unzip", "-q", archive, "-d", packageRoot]);
+  run(["python3", "-B", join(packageRoot, "tools/validate_package.py"), "--root", packageRoot,
+    "--inventory", join(packageRoot, "docs/parity/inventory.json")]);
   const archived = run(["unzip", "-Z1", archive]).toString().trim().split("\n").sort();
   if (JSON.stringify(archived) !== JSON.stringify(paths)) throw new Error("Archive inventory mismatch");
   const packagedManifest = JSON.parse(run(["unzip", "-p", archive, "plugin.json"]).toString());
