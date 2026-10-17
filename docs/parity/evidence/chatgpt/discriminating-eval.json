@@ -3,28 +3,35 @@
   "packageVersion": "0.1.3",
   "packageCommit": "51f209daf83cd97d64f89881d66533bb59dc57db",
   "host": "chatgpt",
-  "hostMode": "Unattempted current candidate; historical 0.1.0 outcomes are kept separately",
+  "hostMode": "Fresh native web workflow attempt with independent retained-artifact review",
   "date": "2026-10-16",
   "input": "Evaluate whether a prompt variant improves agent behavior. Use supplied known good and known bad fixture outputs to check the rubric before trusting scores. Keep candidate context organic and blind. Work only in authorized isolated local paths; do not launch external services or publish.",
-  "observedOutput": "Not run against this version 0.1.3 source freeze. Version 0.1.0 observations remain bound to f4623636a287bea2aa79c4b2234a53d20a5f193c and are not transferred.",
-  "status": "not-run",
-  "execution": "not-run",
+  "observedOutput": "Two actual independent organic repair tasks and later calibrated blind judge execute. Known fixtures discriminate and actual checks pass; judge correctly leaves read-chain unknown and ties supported criteria at 6/6, with no full /8 total or promotion. Scoped child read transcripts absent, so self-reports cannot establish chain following.",
+  "status": "reduced-pass",
+  "execution": "workers",
   "sourcePaths": [
     "skills/poteto-mode/playbooks/eval.md",
     "skills/arena/SKILL.md",
     "skills/unslop/SKILL.md"
   ],
   "documentedCapabilities": [
-    "The immutable tested-package policy requires observations tied to this exact source freeze."
+    "Case-specific capability observations are retained in the independent review; no capability is inferred from package validation."
   ],
-  "exposedTools": [],
+  "exposedTools": [
+    "exec_command",
+    "collaboration.spawn_agent"
+  ],
   "artifacts": [
-    "docs/testing/chatgpt.md",
     "docs/releases/host-evaluation/chatgpt/discriminating-eval.md"
   ],
   "limits": [
-    "Fresh candidate verification is pending; this is an unrun record, not a claimed capability denial.",
-    "Historical baseline results, including failures and reduced outcomes, cannot qualify a different source freeze."
+    "No full candidate read transcripts; read-chain unverified, no schema-valid full Arena claim.",
+    "Host-global catalogs/shared filesystem visibility uncontrolled; actual models unknown.",
+    "One sample per variant cannot establish reliable guidance improvement; no promotion.",
+    "Judge gate waiting exceeded original 180-second target; explicit continuation retained.",
+    "Both outputs alter Symbol-note coercion outside specified policy domain; difference disclosed rather than scored as invented defect.",
+    "Selected source identities independently compared outside sandbox; source hashing establishes bytes, never workflow execution.",
+    "Fresh archive and baseline attempts remain separate; failed/unstarted variants and input Git index changes preserved."
   ],
   "priorActionIdentities": [],
   "permissions": {
@@ -33,8 +40,46 @@
     "externalActions": "denied"
   },
   "models": {
-    "requested": "unknown",
+    "requested": "inherit-parent",
     "actual": "unknown"
   },
-  "successfulOperations": []
+  "successfulOperations": [
+    {
+      "operation": "read",
+      "tool": "exec_command",
+      "evidence": "docs/releases/host-evaluation/chatgpt/discriminating-eval.md"
+    },
+    {
+      "operation": "execution",
+      "tool": "exec_command",
+      "evidence": "docs/releases/host-evaluation/chatgpt/discriminating-eval.md"
+    },
+    {
+      "operation": "spawn",
+      "tool": "collaboration.spawn_agent",
+      "evidence": "docs/releases/host-evaluation/chatgpt/discriminating-eval.md"
+    },
+    {
+      "operation": "inspect-result",
+      "tool": "exec_command",
+      "evidence": "docs/releases/host-evaluation/chatgpt/discriminating-eval.md"
+    }
+  ],
+  "nativeObservations": [
+    {
+      "observation": "supplied-input",
+      "evidence": "docs/releases/host-evaluation/chatgpt/discriminating-eval.md",
+      "reviewedBy": "grade_local_repairs"
+    },
+    {
+      "observation": "response",
+      "evidence": "docs/releases/host-evaluation/chatgpt/discriminating-eval.md",
+      "reviewedBy": "grade_local_repairs"
+    },
+    {
+      "observation": "review-outcome",
+      "evidence": "docs/releases/host-evaluation/chatgpt/discriminating-eval.md",
+      "reviewedBy": "grade_local_repairs"
+    }
+  ]
 }

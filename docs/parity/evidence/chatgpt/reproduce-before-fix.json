@@ -3,12 +3,12 @@
   "packageVersion": "0.1.3",
   "packageCommit": "51f209daf83cd97d64f89881d66533bb59dc57db",
   "host": "chatgpt",
-  "hostMode": "Unattempted current candidate; historical 0.1.0 outcomes are kept separately",
+  "hostMode": "Native web-host workflows; independent retained-artifact review",
   "date": "2026-10-16",
   "input": "Fix a fixture dashboard defect where clearing its search field leaves the previous filtered rows visible. Use an isolated local repository and fixture data. Reproduce the exact symptom through matching browser controls before edits, investigate the mechanism, implement only the justified fix and repeat the original trigger afterward. Include a refuted cache hypothesis whose speculative patch must be reverted. Permit local reads, edits and execution but no external writes. Repeat with independent workers unavailable, browser execution denied, and a cheap local test absent. Return verbatim failing-before and passing-after output, root cause and the ordered delivery artifacts.",
-  "observedOutput": "Not run against this version 0.1.3 source freeze. Version 0.1.0 observations remain bound to f4623636a287bea2aa79c4b2234a53d20a5f193c and are not transferred.",
-  "status": "not-run",
-  "execution": "not-run",
+  "observedOutput": "Fixture has no search UI/browser launch/controller for clearing-search symptom. Stops before edits; no matching-surface repro, root-cause proof or before/after browser output fabricated.",
+  "status": "blocked",
+  "execution": "direct",
   "sourcePaths": [
     "skills/poteto-mode/playbooks/bug-fix.md",
     "skills/poteto-mode/SKILL.md",
@@ -43,16 +43,29 @@
     "skills/poteto-mode/playbooks/opening-a-pr.md"
   ],
   "documentedCapabilities": [
-    "The immutable tested-package policy requires observations tied to this exact source freeze."
+    "Case-specific capability observations are retained in the independent review; no capability is inferred from package validation."
   ],
-  "exposedTools": [],
+  "exposedTools": [
+    "exec_command"
+  ],
   "artifacts": [
-    "docs/testing/chatgpt.md",
     "docs/releases/host-evaluation/chatgpt/reproduce-before-fix.md"
   ],
   "limits": [
-    "Fresh candidate verification is pending; this is an unrun record, not a claimed capability denial.",
-    "Historical baseline results, including failures and reduced outcomes, cannot qualify a different source freeze."
+    "Current installed version 0.1.3 and operative freeze 51f209daf83cd97d64f89881d66533bb59dc57db bound by external exact installed-file comparison; sandbox itself has no source Git identity.",
+    "Global current catalog lists 51 root skills; this does not upgrade case execution or reproduce unrun workflows.",
+    "Web TypeScript compiler and pinned helper dependencies absent; Bun transpilation/runtime tests never count as strict compilation.",
+    "Historical source content was accidentally read during setup, disclosed in archive limitations; no older result contributes to current grading.",
+    "Raw capture coverage and cooperative per-case clocks incomplete; unavailable/unstarted variants and failed attempts remain explicit.",
+    "Actual native models remain unknown unless independently observed; requested role/model names never become model-diversity proof.",
+    "No grades assigned.",
+    "No real-surface driver supplied for app cases; source/tests do not establish UI proof.",
+    "No host loading or fresh-chat discovery observation.",
+    "Models unknown; no independent scenario workers or model diversity claimed.",
+    "Raw tool receipt timing gaps disclosed in receipt-limit.txt.",
+    "No external writes, installation, settings changes, push or scheduling performed.",
+    "Batch-interleaved case timing was not separately instrumented. Per-case 8-minute re-evaluation and 12-minute cap compliance cannot be asserted.",
+    "The finalize receipt additionally discloses a subsequent unlogged cat before receipt preservation."
   ],
   "priorActionIdentities": [],
   "permissions": {
@@ -61,8 +74,32 @@
     "externalActions": "denied"
   },
   "models": {
-    "requested": "unknown",
+    "requested": "inherit-parent",
     "actual": "unknown"
   },
-  "successfulOperations": []
+  "successfulOperations": [
+    {
+      "operation": "read",
+      "tool": "exec_command",
+      "evidence": "docs/releases/host-evaluation/chatgpt/reproduce-before-fix.md"
+    }
+  ],
+  "nativeObservations": [
+    {
+      "observation": "supplied-input",
+      "evidence": "docs/releases/host-evaluation/chatgpt/reproduce-before-fix.md",
+      "reviewedBy": "grade_local_repairs"
+    },
+    {
+      "observation": "response",
+      "evidence": "docs/releases/host-evaluation/chatgpt/reproduce-before-fix.md",
+      "reviewedBy": "grade_local_repairs"
+    },
+    {
+      "observation": "review-outcome",
+      "evidence": "docs/releases/host-evaluation/chatgpt/reproduce-before-fix.md",
+      "reviewedBy": "grade_local_repairs"
+    }
+  ],
+  "inputRevision": "55c4b5509dc3dc7f26889cda956e0c2191b177f1"
 }

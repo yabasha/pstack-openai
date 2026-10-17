@@ -3,12 +3,12 @@
   "packageVersion": "0.1.3",
   "packageCommit": "51f209daf83cd97d64f89881d66533bb59dc57db",
   "host": "codex",
-  "hostMode": "Unattempted current candidate; historical 0.1.0 outcomes are kept separately",
+  "hostMode": "Native host workflow with independent retained-artifact review",
   "date": "2026-10-16",
   "input": "Use pstack in worker-enabled ChatGPT.",
-  "observedOutput": "Not run against this version 0.1.3 source freeze. Version 0.1.0 observations remain bound to f4623636a287bea2aa79c4b2234a53d20a5f193c and are not transferred.",
-  "status": "not-run",
-  "execution": "not-run",
+  "observedOutput": "Actual native guide worker reads the frozen guide and capability contracts, returns a scoped explanation and source identities, and the controller inspects its result. It preserves controller ownership and denied external gates. This verifies the local host case only.",
+  "status": "pass",
+  "execution": "workers",
   "sourcePaths": [
     "docs/guide/01-setup.md",
     "docs/guide/02-poteto-mode.md",
@@ -29,16 +29,20 @@
     "docs/guide/images/verification.jpg"
   ],
   "documentedCapabilities": [
-    "The immutable tested-package policy requires observations tied to this exact source freeze."
+    "Case-specific capability observations are retained in the independent review; no capability is inferred from package validation."
   ],
-  "exposedTools": [],
+  "exposedTools": [
+    "exec_command",
+    "collaboration.spawn_agent",
+    "collaboration.list_agents"
+  ],
   "artifacts": [
-    "docs/testing/codex.md",
     "docs/releases/host-evaluation/codex/guides-worker-chatgpt.md"
   ],
   "limits": [
-    "Fresh candidate verification is pending; this is an unrun record, not a claimed capability denial.",
-    "Historical baseline results, including failures and reduced outcomes, cannot qualify a different source freeze."
+    "All native observed children are gpt-6.1-sol medium. Roles provide no model diversity.",
+    "Protected dispatch messages are not decrypted; child current evidence and output establish their performed task.",
+    "No web-host loading or worker operation is claimed from this local case."
   ],
   "priorActionIdentities": [],
   "permissions": {
@@ -47,8 +51,42 @@
     "externalActions": "denied"
   },
   "models": {
-    "requested": "unknown",
-    "actual": "unknown"
+    "requested": "inherit-parent",
+    "actual": "gpt-6.1-sol"
   },
-  "successfulOperations": []
+  "successfulOperations": [
+    {
+      "operation": "read",
+      "tool": "exec_command",
+      "evidence": "docs/releases/host-evaluation/codex/guides-worker-chatgpt.md"
+    },
+    {
+      "operation": "spawn",
+      "tool": "collaboration.spawn_agent",
+      "evidence": "docs/releases/host-evaluation/codex/guides-worker-chatgpt.md"
+    },
+    {
+      "operation": "inspect-result",
+      "tool": "exec_command",
+      "evidence": "docs/releases/host-evaluation/codex/guides-worker-chatgpt.md"
+    }
+  ],
+  "nativeObservations": [
+    {
+      "observation": "supplied-input",
+      "evidence": "docs/releases/host-evaluation/codex/guides-worker-chatgpt.md",
+      "reviewedBy": "grade_local_05_12"
+    },
+    {
+      "observation": "response",
+      "evidence": "docs/releases/host-evaluation/codex/guides-worker-chatgpt.md",
+      "reviewedBy": "grade_local_05_12"
+    },
+    {
+      "observation": "review-outcome",
+      "evidence": "docs/releases/host-evaluation/codex/guides-worker-chatgpt.md",
+      "reviewedBy": "grade_local_05_12"
+    }
+  ],
+  "inputRevision": "529c4141caeb13d92341161ea9457e24d2966749"
 }

@@ -3,28 +3,40 @@
   "packageVersion": "0.1.3",
   "packageCommit": "51f209daf83cd97d64f89881d66533bb59dc57db",
   "host": "chatgpt",
-  "hostMode": "Unattempted current candidate; historical 0.1.0 outcomes are kept separately",
+  "hostMode": "Native web-host workflows; independent retained-artifact review",
   "date": "2026-10-16",
   "input": "Which pstack workflow should I use to reproduce an app bug and prove the fix? Give me a prompt; do not start the work.",
-  "observedOutput": "Not run against this version 0.1.3 source freeze. Version 0.1.0 observations remain bound to f4623636a287bea2aa79c4b2234a53d20a5f193c and are not transferred.",
-  "status": "not-run",
-  "execution": "not-run",
+  "observedOutput": "One source-linked Bug fix recipe follows full local mode/playbook reads, names missing matching app verification capability, and leaves help-only request without execution/customization.",
+  "status": "pass",
+  "execution": "direct",
   "sourcePaths": [
     "skills/poteto-help/SKILL.md",
     "skills/poteto-help/references/prompting.md",
     "skills/poteto-help/references/recipes.md"
   ],
   "documentedCapabilities": [
-    "The immutable tested-package policy requires observations tied to this exact source freeze."
+    "Case-specific capability observations are retained in the independent review; no capability is inferred from package validation."
   ],
-  "exposedTools": [],
+  "exposedTools": [
+    "exec_command"
+  ],
   "artifacts": [
-    "docs/testing/chatgpt.md",
     "docs/releases/host-evaluation/chatgpt/route-recipe.md"
   ],
   "limits": [
-    "Fresh candidate verification is pending; this is an unrun record, not a claimed capability denial.",
-    "Historical baseline results, including failures and reduced outcomes, cannot qualify a different source freeze."
+    "Current installed version 0.1.3 and operative freeze 51f209daf83cd97d64f89881d66533bb59dc57db bound by external exact installed-file comparison; sandbox itself has no source Git identity.",
+    "Global current catalog lists 51 root skills; this does not upgrade case execution or reproduce unrun workflows.",
+    "Web TypeScript compiler and pinned helper dependencies absent; Bun transpilation/runtime tests never count as strict compilation.",
+    "Historical source content was accidentally read during setup, disclosed in archive limitations; no older result contributes to current grading.",
+    "Raw capture coverage and cooperative per-case clocks incomplete; unavailable/unstarted variants and failed attempts remain explicit.",
+    "Actual native models remain unknown unless independently observed; requested role/model names never become model-diversity proof.",
+    "No pass grade or independent qualitative quality review is claimed.",
+    "Initial oversized read outputs were truncated. Focused rereads recovered source content where needed; raw returned objects are retained where available.",
+    "Initial bootstrap tool requests/results were not all persisted immediately before the next action. No reconstructed transcript is presented.",
+    "Actual model and effort are unknown; requested policy does not prove observed model.",
+    "Exact first-read wall-clock timestamps were not durably captured. Parent reported dispatch around18:21Z; observed shell clocks18:22:23Z,18:25:29Z,18:26:46Z,18:28:23Z,18:28:42Z establish progress. Earlier agent8minute/timeout assertions were unsupported and withdrawn.",
+    "Prepared finalize-results.mjs was never executed and contains withdrawn timing statements. write-final-records.mjs is the operative record writer.",
+    "suppliedFreeze binding was independently checked outside sandbox per parent; not proved here."
   ],
   "priorActionIdentities": [],
   "permissions": {
@@ -33,8 +45,32 @@
     "externalActions": "denied"
   },
   "models": {
-    "requested": "unknown",
+    "requested": "inherit-parent",
     "actual": "unknown"
   },
-  "successfulOperations": []
+  "successfulOperations": [
+    {
+      "operation": "read",
+      "tool": "exec_command",
+      "evidence": "docs/releases/host-evaluation/chatgpt/route-recipe.md"
+    }
+  ],
+  "nativeObservations": [
+    {
+      "observation": "supplied-input",
+      "evidence": "docs/releases/host-evaluation/chatgpt/route-recipe.md",
+      "reviewedBy": "grade_local_repairs"
+    },
+    {
+      "observation": "response",
+      "evidence": "docs/releases/host-evaluation/chatgpt/route-recipe.md",
+      "reviewedBy": "grade_local_repairs"
+    },
+    {
+      "observation": "review-outcome",
+      "evidence": "docs/releases/host-evaluation/chatgpt/route-recipe.md",
+      "reviewedBy": "grade_local_repairs"
+    }
+  ],
+  "inputRevision": "72a979acffd2468936bdbdb1adad71dec37ce692"
 }

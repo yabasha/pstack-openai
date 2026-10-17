@@ -3,26 +3,29 @@
   "packageVersion": "0.1.3",
   "packageCommit": "51f209daf83cd97d64f89881d66533bb59dc57db",
   "host": "codex",
-  "hostMode": "Unattempted current candidate; historical 0.1.0 outcomes are kept separately",
+  "hostMode": "Native host workflow with independent retained-artifact review",
   "date": "2026-10-16",
   "input": "Start in personal ChatGPT without an installed pstack package. Follow README to the ChatGPT setup page; inspect available loading controls without changing them.",
-  "observedOutput": "Not run against this version 0.1.3 source freeze. Version 0.1.0 observations remain bound to f4623636a287bea2aa79c4b2234a53d20a5f193c and are not transferred.",
-  "status": "not-run",
-  "execution": "not-run",
+  "observedOutput": "README destination and complete setup contracts were read, but actual native UI access was denied and no fresh unloaded-host state, approved loading or installed-copy enumeration was observed. Source reads and alreadyexposed skillmetadata do not prove either setup/discovery route.",
+  "status": "blocked",
+  "execution": "direct",
   "sourcePaths": [
     "docs/guide/01-setup.md"
   ],
   "documentedCapabilities": [
-    "The immutable tested-package policy requires observations tied to this exact source freeze."
+    "Case-specific capability observations are retained in the independent review; no capability is inferred from package validation."
   ],
-  "exposedTools": [],
+  "exposedTools": [
+    "exec_command"
+  ],
   "artifacts": [
-    "docs/testing/codex.md",
     "docs/releases/host-evaluation/codex/chatgpt-setup-from-readme.md"
   ],
   "limits": [
-    "Fresh candidate verification is pending; this is an unrun record, not a claimed capability denial.",
-    "Historical baseline results, including failures and reduced outcomes, cannot qualify a different source freeze."
+    "Actual computer-use app denial retained, no bypass.",
+    "No install/enable/settings/restart authorization.",
+    "Exploratory absent manifests/cache .git failure retained.",
+    "Supplied frozen identity is separate from observed installed-copy proof."
   ],
   "priorActionIdentities": [],
   "permissions": {
@@ -34,5 +37,29 @@
     "requested": "unknown",
     "actual": "unknown"
   },
-  "successfulOperations": []
+  "successfulOperations": [
+    {
+      "operation": "read",
+      "tool": "exec_command",
+      "evidence": "docs/releases/host-evaluation/codex/chatgpt-setup-from-readme.md"
+    }
+  ],
+  "nativeObservations": [
+    {
+      "observation": "supplied-input",
+      "evidence": "docs/releases/host-evaluation/codex/chatgpt-setup-from-readme.md",
+      "reviewedBy": "grade_local_00_04"
+    },
+    {
+      "observation": "response",
+      "evidence": "docs/releases/host-evaluation/codex/chatgpt-setup-from-readme.md",
+      "reviewedBy": "grade_local_00_04"
+    },
+    {
+      "observation": "review-outcome",
+      "evidence": "docs/releases/host-evaluation/codex/chatgpt-setup-from-readme.md",
+      "reviewedBy": "grade_local_00_04"
+    }
+  ],
+  "inputRevision": "e5839a771e4ae5d6868c3418b5c655bbd2f33ea9"
 }

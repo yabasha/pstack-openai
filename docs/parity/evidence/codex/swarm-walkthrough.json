@@ -3,26 +3,31 @@
   "packageVersion": "0.1.3",
   "packageCommit": "51f209daf83cd97d64f89881d66533bb59dc57db",
   "host": "codex",
-  "hostMode": "Unattempted current candidate; historical 0.1.0 outcomes are kept separately",
+  "hostMode": "Native host workflow with independent retained-artifact review",
   "date": "2026-10-16",
   "input": "Start with an authorized disposable local artifact and exact input SHA. Follow README to Swarm and partition a three-file source review.",
-  "observedOutput": "Not run against this version 0.1.3 source freeze. Version 0.1.0 observations remain bound to f4623636a287bea2aa79c4b2234a53d20a5f193c and are not transferred.",
-  "status": "not-run",
-  "execution": "not-run",
+  "observedOutput": "Three native readers are actually dispatched before completion inspection at the same input SHA with distinct prebound owned outputs. All three complete assigned-file reviews, controller inspects their actual findings, revisions, methods and byte hashes, and full required partition coverage is present. The independent frozen evidence validator including registered three-slice method returns zero errors on byte-identical original artifacts. Publication qualification: the frozen 0.1.3 support-map permits no new standalone method paths, and its full-pass schema requires a standalone parseable receipt with bound artifacts. Original full native method proof remains captured, but cannot be presented as a schema-valid full published pass under unchanged source/path accounting.",
+  "status": "reduced-pass",
+  "execution": "workers",
   "sourcePaths": [
     "skills/swarm/SKILL.md"
   ],
   "documentedCapabilities": [
-    "The immutable tested-package policy requires observations tied to this exact source freeze."
+    "Case-specific capability observations are retained in the independent review; no capability is inferred from package validation."
   ],
-  "exposedTools": [],
+  "exposedTools": [
+    "exec_command",
+    "collaboration.spawn_agent"
+  ],
   "artifacts": [
-    "docs/testing/codex.md",
     "docs/releases/host-evaluation/codex/swarm-walkthrough.md"
   ],
   "limits": [
-    "Fresh candidate verification is pending; this is an unrun record, not a claimed capability denial.",
-    "Historical baseline results, including failures and reduced outcomes, cannot qualify a different source freeze."
+    "Invoice initial output strings were reconstructed from unchanged readback bytes and explicitly disclosed; static source review remains actual and complete.",
+    "Protected dispatch payloads are omitted, not decrypted.",
+    "No race or cancellation exercise is required for this partition-only walkthrough.",
+    "Frozen full validator success establishes evidence relationships; actual native method and qualitative findings are independently reviewed separately.",
+    "Independent publication review reduces the same execution to reduced-pass solely for the frozen standalone-publication/path-accounting limitation. Original native pass grade and original method proof remain retained unchanged; no new execution, behavioral failure, model inference or missing-worker claim."
   ],
   "priorActionIdentities": [],
   "permissions": {
@@ -31,8 +36,109 @@
     "externalActions": "denied"
   },
   "models": {
-    "requested": "unknown",
-    "actual": "unknown"
+    "requested": "inherit-parent",
+    "actual": "gpt-6.1-sol"
   },
-  "successfulOperations": []
+  "successfulOperations": [
+    {
+      "operation": "read",
+      "tool": "exec_command",
+      "evidence": "docs/releases/host-evaluation/codex/swarm-walkthrough.md"
+    },
+    {
+      "operation": "inspect-method",
+      "tool": "exec_command",
+      "evidence": "docs/releases/host-evaluation/codex/swarm-walkthrough.md"
+    },
+    {
+      "operation": "spawn",
+      "tool": "collaboration.spawn_agent",
+      "evidence": "docs/releases/host-evaluation/codex/swarm-walkthrough.md",
+      "assignmentId": "swarm-dashboard"
+    },
+    {
+      "operation": "inspect-result",
+      "tool": "exec_command",
+      "evidence": "docs/releases/host-evaluation/codex/swarm-walkthrough.md",
+      "assignmentId": "swarm-dashboard"
+    },
+    {
+      "operation": "isolated-write",
+      "tool": "exec_command",
+      "evidence": "docs/releases/host-evaluation/codex/swarm-walkthrough.md",
+      "assignmentId": "swarm-dashboard"
+    },
+    {
+      "operation": "spawn",
+      "tool": "collaboration.spawn_agent",
+      "evidence": "docs/releases/host-evaluation/codex/swarm-walkthrough.md",
+      "assignmentId": "swarm-invoice"
+    },
+    {
+      "operation": "inspect-result",
+      "tool": "exec_command",
+      "evidence": "docs/releases/host-evaluation/codex/swarm-walkthrough.md",
+      "assignmentId": "swarm-invoice"
+    },
+    {
+      "operation": "isolated-write",
+      "tool": "exec_command",
+      "evidence": "docs/releases/host-evaluation/codex/swarm-walkthrough.md",
+      "assignmentId": "swarm-invoice"
+    },
+    {
+      "operation": "spawn",
+      "tool": "collaboration.spawn_agent",
+      "evidence": "docs/releases/host-evaluation/codex/swarm-walkthrough.md",
+      "assignmentId": "swarm-runtime"
+    },
+    {
+      "operation": "inspect-result",
+      "tool": "exec_command",
+      "evidence": "docs/releases/host-evaluation/codex/swarm-walkthrough.md",
+      "assignmentId": "swarm-runtime"
+    },
+    {
+      "operation": "isolated-write",
+      "tool": "exec_command",
+      "evidence": "docs/releases/host-evaluation/codex/swarm-walkthrough.md",
+      "assignmentId": "swarm-runtime"
+    },
+    {
+      "operation": "spawn",
+      "tool": "collaboration.spawn_agent",
+      "evidence": "docs/releases/host-evaluation/codex/swarm-walkthrough.md",
+      "assignmentId": "swarm-dashboard"
+    },
+    {
+      "operation": "spawn",
+      "tool": "collaboration.spawn_agent",
+      "evidence": "docs/releases/host-evaluation/codex/swarm-walkthrough.md",
+      "assignmentId": "swarm-invoice"
+    },
+    {
+      "operation": "spawn",
+      "tool": "collaboration.spawn_agent",
+      "evidence": "docs/releases/host-evaluation/codex/swarm-walkthrough.md",
+      "assignmentId": "swarm-runtime"
+    }
+  ],
+  "nativeObservations": [
+    {
+      "observation": "supplied-input",
+      "evidence": "docs/releases/host-evaluation/codex/swarm-walkthrough.md",
+      "reviewedBy": "grade_local_05_12"
+    },
+    {
+      "observation": "response",
+      "evidence": "docs/releases/host-evaluation/codex/swarm-walkthrough.md",
+      "reviewedBy": "grade_local_05_12"
+    },
+    {
+      "observation": "review-outcome",
+      "evidence": "docs/releases/host-evaluation/codex/swarm-walkthrough.md",
+      "reviewedBy": "grade_local_05_12"
+    }
+  ],
+  "inputRevision": "3fd9b38b3236e0a1d234f0080488bee876e051eb"
 }

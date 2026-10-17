@@ -3,12 +3,12 @@
   "packageVersion": "0.1.3",
   "packageCommit": "51f209daf83cd97d64f89881d66533bb59dc57db",
   "host": "codex",
-  "hostMode": "Unattempted current candidate; historical 0.1.0 outcomes are kept separately",
+  "hostMode": "Native host workflow with independent retained-artifact review",
   "date": "2026-10-16",
   "input": "Implement a CSV export for the currently filtered orders in a fixture dashboard. Exclude hidden orders, preserve displayed column order, escape commas and quotes, and show a useful empty-result message. Keep the design lead separate from the code owner. Compare two valid export designs through arena when the implementation shape is contested. Use an isolated local repository and fixture data. The first run permits local changes and independent workers but no push or PR creation. Repeat with worker operations unavailable and then with matching browser verification denied. Return the throughput checkpoint, ordered implementation units, evidence for the user outcome and open decisions.",
-  "observedOutput": "Not run against this version 0.1.3 source freeze. Version 0.1.0 observations remain bound to f4623636a287bea2aa79c4b2234a53d20a5f193c and are not transferred.",
-  "status": "not-run",
-  "execution": "not-run",
+  "observedOutput": "Loading-state defect is closed by a separate worker's exact two-edit repair and actual matching browser checks. Ready/filter/empty/error behavior and downloaded literal CSV now verified. Full Feature method remains incomplete: original prospective checklist, initial full-role dispatch, companion/review ordering and negative-variant limits remain; this narrow follow-up cannot upgrade the full case to pass.",
+  "status": "reduced-pass",
+  "execution": "workers",
   "sourcePaths": [
     "skills/poteto-mode/playbooks/feature.md",
     "skills/poteto-mode/SKILL.md",
@@ -29,16 +29,25 @@
     "skills/principle-sequence-verifiable-units/SKILL.md"
   ],
   "documentedCapabilities": [
-    "The immutable tested-package policy requires observations tied to this exact source freeze."
+    "Case-specific capability observations are retained in the independent review; no capability is inferred from package validation."
   ],
-  "exposedTools": [],
+  "exposedTools": [
+    "exec_command",
+    "collaboration.spawn_agent",
+    "mcp__cua_repl.js"
+  ],
   "artifacts": [
-    "docs/testing/codex.md",
     "docs/releases/host-evaluation/codex/verifiable-feature.md"
   ],
   "limits": [
-    "Fresh candidate verification is pending; this is an unrun record, not a claimed capability denial.",
-    "Historical baseline results, including failures and reduced outcomes, cannot qualify a different source freeze."
+    "Narrow functional follow-up, not a fresh complete Feature playbook run; prior initial grade remains separately retained.",
+    "Full original method deviations persist: prospective checklist timing, exact first role delivery and companion/review ordering.",
+    "Negative workers-unavailable/browser-denied variants were initial replay/policy reductions and were not freshly rerun here.",
+    "First probe encountered server idle timeout; original failed harness receipts retained. Corrected server sets idleTimeout:0.",
+    "First download comparison mistakenly expected a terminal CRLF; failed comparison retained and corrected against unchanged serializer contract, with no application change for that correction.",
+    "Worker static checks alone do not prove UI behavior; root actual browser receipts separately establish the current user behavior.",
+    "Fixture UI only; no production dashboard parity, complete Bugfix method, commit or PR delivery claim.",
+    "Native spawn is observed, but protected dispatch payload remains omitted and undecrypted; exact full dispatched role text is not established by this capture."
   ],
   "priorActionIdentities": [],
   "permissions": {
@@ -47,8 +56,57 @@
     "externalActions": "denied"
   },
   "models": {
-    "requested": "unknown",
-    "actual": "unknown"
+    "requested": "inherit-parent",
+    "actual": "gpt-6.1-sol"
   },
-  "successfulOperations": []
+  "successfulOperations": [
+    {
+      "operation": "spawn",
+      "tool": "collaboration.spawn_agent",
+      "evidence": "docs/releases/host-evaluation/codex/verifiable-feature.md"
+    },
+    {
+      "operation": "inspect-result",
+      "tool": "exec_command",
+      "evidence": "docs/releases/host-evaluation/codex/verifiable-feature.md"
+    },
+    {
+      "operation": "execution",
+      "tool": "exec_command",
+      "evidence": "docs/releases/host-evaluation/codex/verifiable-feature.md"
+    },
+    {
+      "operation": "browser-interaction",
+      "tool": "mcp__cua_repl.js",
+      "evidence": "docs/releases/host-evaluation/codex/verifiable-feature.md"
+    },
+    {
+      "operation": "download",
+      "tool": "mcp__cua_repl.js",
+      "evidence": "docs/releases/host-evaluation/codex/verifiable-feature.md"
+    },
+    {
+      "operation": "read",
+      "tool": "exec_command",
+      "evidence": "docs/releases/host-evaluation/codex/verifiable-feature.md"
+    }
+  ],
+  "nativeObservations": [
+    {
+      "observation": "supplied-input",
+      "evidence": "docs/releases/host-evaluation/codex/verifiable-feature.md",
+      "reviewedBy": "grade_local_05_12"
+    },
+    {
+      "observation": "response",
+      "evidence": "docs/releases/host-evaluation/codex/verifiable-feature.md",
+      "reviewedBy": "grade_local_05_12"
+    },
+    {
+      "observation": "review-outcome",
+      "evidence": "docs/releases/host-evaluation/codex/verifiable-feature.md",
+      "reviewedBy": "grade_local_05_12"
+    }
+  ],
+  "inputRevision": "c11649e571ac6b85d4952a532bdee95d38a38f0a"
 }
