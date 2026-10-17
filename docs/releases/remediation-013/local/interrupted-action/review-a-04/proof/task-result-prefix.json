@@ -1,0 +1,16 @@
+{
+  "kind": "task-result-file-excerpt",
+  "caseId": "interrupted-action",
+  "attemptId": "review-a-04",
+  "inputRevision": "ef268eed777693deda8eae320c492e0730631dce",
+  "originalLocator": "remaining-local/cases/interrupted-action/outputs/interrupted-action.result.md",
+  "sourceSha256": "679530642465c7a35d36a8421441184c9a0505a430ad4a9c67755a945b3b338a",
+  "sourceWasDirectlyListedByIndependentGrade": false,
+  "characterRange": {
+    "start": 0,
+    "endExclusive": 783,
+    "total": 44787
+  },
+  "content": "# Interrupted-action attempt receipt\n\nThe fixture run is paused. The initial POLICY-withheld stop scenario remains unresolved. In the separate exposed-stop variant, a real partial-result worker was interrupted and its state was inspected as interrupted. Its outputs stay quarantined in place and were not integrated. The fixture action fixture-action-pause-1 still has an unknown destination outcome. No replay or recovery occurred. No commit was made. HEAD remains ef268eed777693deda8eae320c492e0730631dce on main. Tracked diffs are empty; ignored outputs remain on disk. Resume from outputs/resume.md by inspecting current worker and destination state before any restart or recovery.\n\n## Actual observations\n\n- Exact input SHA independently verified before work and child dispatch.",
+  "transformation": "An inspected prefix of the actual task-result file is projected. Task-owned absolute paths use declared placeholders. The prefix may omit later qualifications. The independent assessment and its limits govern the proposed grade. This is neither a new grade nor a native callable-operation claim."
+}

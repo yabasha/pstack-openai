@@ -220,7 +220,7 @@ def validate_method(record, kind, root, artifact, required_slice_count=None):
             cancelled = {a['id'] for a in assignments if a['status'] == 'cancelled'}
             require(bool(cancelled) and set(receipt['cancelled']) == cancelled and set(receipt['quarantined']) == cancelled, 'cancellation exercise requires observed stop, terminal inspection and quarantine')
             exercises = receipt['failureExercises']
-            rejected, dropouts = {}, set()
+            rejected, dropouts, rejected_paths = {}, set(), set()
             require(isinstance(exercises,list), 'failure exercise records required')
             for event in exercises:
                 require(set(event) == {'assignmentId','kind','attempt','order','reason','evidence'}, 'failure exercise shape invalid')
@@ -231,12 +231,17 @@ def validate_method(record, kind, root, artifact, required_slice_count=None):
                 require(any(o.get('assignmentId')==a['id'] and o['operation']==operation and o['evidence']==event['evidence'] for o in operations), 'failure exercise lacks bound inspection')
                 if event['kind']=='rejected':
                     require(event['reason'] in ('missing-revision','missing-method'), 'rejection must identify missing required evidence')
+                    rejected_path = (root / event['evidence']).resolve()
+                    require(rejected_path not in rejected_paths, 'rejected attempts must use distinct resolved artifacts')
+                    require(rejected_path not in outputs, 'rejected attempt cannot alias a final output')
+                    rejected_paths.add(rejected_path)
                     rejected.setdefault(a['id'],[]).append(event)
                 elif event['kind']=='dropout':
                     require(a['status'] in ('failed','blocked') and event['attempt']==a['retryCount'], 'dropout must have a non-success terminal result')
                     dropouts.add(a['id'])
                 else: require(False,'unknown failure exercise kind')
             require(bool(rejected) and bool(dropouts), 'combined case requires rejected evidence, exhausted retry and dropout exercises')
+            require(not set(rejected) & dropouts, 'dropout assignment must be separate from rejected assignments')
             for identity, events in rejected.items():
                 require([e['attempt'] for e in events]==[0,1] and events[0]['order']<events[1]['order'] and by_id[identity]['retryCount']==1 and by_id[identity]['status'] in ('failed','blocked'), 'second invalid result exhausts the one retry and must remain a gap')
             used = set(partition['results'].values()) | {race['winner']}

@@ -1,0 +1,80 @@
+{
+  "schemaVersion": 1,
+  "kind": "historical-independent-assessment-projection",
+  "caseId": "guides-ordinary-chatgpt",
+  "attemptId": "review-c-07",
+  "startingMain": "4138e161c27cafffd2baaab6bf4ca53e86a57433",
+  "packageCommit": "51f209daf83cd97d64f89881d66533bb59dc57db",
+  "packageVersion": "0.1.3",
+  "inputRevision": "b11706abb67a1fb2ad00ac1fac7518370bcc1e9f",
+  "originalProposedStatus": "reduced",
+  "evidenceStatus": "reduced-pass",
+  "qualifiesCurrentMain": false,
+  "sourceReview": {
+    "originalLocator": "grades/grade_remediation_local_c/result.json",
+    "sourceSha256": "2582d82fe0ad256da816b168e5b242a713d134d62af8657c4f7bc255d3a7ceba",
+    "jsonPointer": "/cases/6",
+    "reviewer": "/root/grade_remediation_local_c",
+    "requestedModel": "inherit-parent",
+    "actualModel": "unknown"
+  },
+  "findings": [
+    "The supplied-source, no-execution scenario produced a grounded explanation and preserved active-controller and authorization boundaries. Independent execution, runtime proof and supported host loading were not exercised."
+  ],
+  "limits": [
+    "Scenario runtime and worker execution are policy withheld",
+    "Supported loading is outside this source-only observation"
+  ],
+  "chronology": [],
+  "predicate": "The guide case expectedReduced expressly describes source-grounded explanation with executable proof blocked.",
+  "sourceArtifactBindings": [
+    {
+      "originalLocator": "remaining-local/cases/guides-ordinary-chatgpt/task-contract.json",
+      "sourceSha256": "28dda7406998fbc20bc07224f7b9b923e5eb4267de73a5b79e71dc40d85e9b07",
+      "expectedSha256": "28dda7406998fbc20bc07224f7b9b923e5eb4267de73a5b79e71dc40d85e9b07",
+      "expectedHashMatches": true,
+      "bytes": 6015,
+      "publication": "omitted",
+      "reason": "Only a narrow inspected projection may be included. Private original remains unchanged."
+    },
+    {
+      "originalLocator": "remaining-local/cases/guides-ordinary-chatgpt/outputs/guides-ordinary-chatgpt.result.md",
+      "sourceSha256": "801c131150f8d6a92dbf74c15cd2c2aac3964e8360a1a673eb4c83c2d1192a1d",
+      "expectedSha256": "801c131150f8d6a92dbf74c15cd2c2aac3964e8360a1a673eb4c83c2d1192a1d",
+      "expectedHashMatches": true,
+      "bytes": 55426,
+      "publication": "omitted",
+      "reason": "Only a narrow inspected projection may be included. Private original remains unchanged."
+    },
+    {
+      "originalLocator": "remaining-local/cases/guides-ordinary-chatgpt/outputs/completion.json",
+      "sourceSha256": "0b0fd6d83aa16ad9bdea6adfd60933a556864e8a8c2352929996891f1d020771",
+      "expectedSha256": "0b0fd6d83aa16ad9bdea6adfd60933a556864e8a8c2352929996891f1d020771",
+      "expectedHashMatches": true,
+      "bytes": 51452,
+      "publication": "omitted",
+      "reason": "Raw/native context, broad discovery, completion dump, or bulk source manifest is excluded. No protected payload is decoded."
+    },
+    {
+      "originalLocator": "remaining-local/cases/guides-ordinary-chatgpt/outputs/hashes-and-checks.json",
+      "sourceSha256": "4ae264ef97243862ba067f3aa36046d6e79c432fe04e19904b2013facaad8fdb",
+      "expectedSha256": "4ae264ef97243862ba067f3aa36046d6e79c432fe04e19904b2013facaad8fdb",
+      "expectedHashMatches": true,
+      "bytes": 26091,
+      "publication": "projected-fields",
+      "reason": "Only a narrow inspected projection may be included. Private original remains unchanged.",
+      "projectedPath": "docs/releases/remediation-013/local/guides-ordinary-chatgpt/review-c-07/proof/01-hashes-and-checks.json.excerpt.json",
+      "projectedSha256": "38ab1f89032284743fd3d56421cf46fda7840f8fa87005d48bc153bcb9c7140f"
+    }
+  ],
+  "projectionLimits": [
+    "This file projects the existing independent assessment and does not regrade the case.",
+    "Private source artifacts and omitted native operations remain private. Source digests bind originals, not transformed bytes.",
+    "Historical 0.1.3 observations do not qualify current main or a modified candidate."
+  ],
+  "statusMapping": {
+    "originalProposedStatus": "reduced",
+    "canonicalStatus": "reduced-pass",
+    "rule": "The original reviewer uses reduced. The evidence schema names this display alias reduced-pass. The original proposed grade remains unchanged."
+  }
+}

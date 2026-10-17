@@ -1,0 +1,298 @@
+{
+  "kind": "historical-proof-selection",
+  "source": {
+    "path": "<private-run>/model-rejection/local/fallback/result.json",
+    "sha256": "c7de69bb8db6966c3ae4bd41d43642825712b963ec5575b32de9f1e5c244f347",
+    "bytes": 5653
+  },
+  "selection": [
+    {
+      "locator": {
+        "jsonPointer": "/assignmentId"
+      },
+      "value": "unsupported-selected-model-fallback-local"
+    },
+    {
+      "locator": {
+        "jsonPointer": "/workerId"
+      },
+      "value": "/root/model_rejection_fallback"
+    },
+    {
+      "locator": {
+        "jsonPointer": "/outputOwner"
+      },
+      "value": "/root/model_rejection_fallback"
+    },
+    {
+      "locator": {
+        "jsonPointer": "/inputRevision"
+      },
+      "value": "a770be5d7e6b2d8d9ce776bf3258ae9f6f4ba24b"
+    },
+    {
+      "locator": {
+        "jsonPointer": "/resultRevision"
+      },
+      "value": "a770be5d7e6b2d8d9ce776bf3258ae9f6f4ba24b"
+    },
+    {
+      "locator": {
+        "jsonPointer": "/method"
+      },
+      "value": {
+        "sampleCount": 1,
+        "sampleDefinition": "One exact fixture source comment review after actual rejected model request and disclosed inherited fallback",
+        "order": "Read full mode/role/source, verify input HEAD, inspect comments against source context, write readonly findings and exact assignment result metadata"
+      }
+    },
+    {
+      "locator": {
+        "jsonPointer": "/resultMethod"
+      },
+      "value": {
+        "sampleCount": 1,
+        "sampleDefinition": "One exact fixture source comment review after actual rejected model request and disclosed inherited fallback",
+        "order": "Read full mode/role/source, verify input HEAD, inspect comments against source context, write readonly findings and exact assignment result metadata"
+      }
+    },
+    {
+      "locator": {
+        "jsonPointer": "/status"
+      },
+      "value": "completed"
+    },
+    {
+      "locator": {
+        "jsonPointer": "/requestedModel"
+      },
+      "value": "inherit-parent after observed fixture-model rejection"
+    },
+    {
+      "locator": {
+        "jsonPointer": "/actualModel"
+      },
+      "value": "unknown"
+    },
+    {
+      "locator": {
+        "jsonPointer": "/observedModel"
+      },
+      "value": "unknown"
+    },
+    {
+      "locator": {
+        "jsonPointer": "/requestedEffort"
+      },
+      "value": "inherit-parent"
+    },
+    {
+      "locator": {
+        "jsonPointer": "/actualEffort"
+      },
+      "value": "unknown"
+    },
+    {
+      "locator": {
+        "jsonPointer": "/observedEffort"
+      },
+      "value": "unknown"
+    },
+    {
+      "locator": {
+        "jsonPointer": "/supportedEffort"
+      },
+      "value": "medium documented for inherited default family; actual remains separately observed"
+    },
+    {
+      "locator": {
+        "jsonPointer": "/supportedEffortSource"
+      },
+      "value": "assignment.json documents medium for the inherited default family. Actual inherited model and effort were not exposed to this worker."
+    },
+    {
+      "locator": {
+        "jsonPointer": "/fallback"
+      },
+      "value": {
+        "rejectedModel": "pstack-eval-intentionally-unavailable",
+        "rejectionEvidence": "Parent assignment reports native Unknown model rejection. Native envelope was not inspected by this worker.",
+        "replacementPolicy": "inherit-parent",
+        "explicitModelOmitted": true,
+        "explicitEffortOmitted": true,
+        "diversity": "unverified"
+      }
+    },
+    {
+      "locator": {
+        "jsonPointer": "/reviewedFiles"
+      },
+      "value": [
+        {
+          "path": "committed-inputs/shared/additional/legal-header/source.mjs",
+          "sha256": "7579a6b456d0cd513fd8f55d69096119304833f0dc5dfca7f66c727ec002df91",
+          "lines": 12,
+          "matchesCommittedInput": true
+        },
+        {
+          "path": "committed-inputs/shared/additional/legal-header/source.diff",
+          "sha256": "da37375054eb4140f6b2ba19dac4c5de3846183029177d58473b38d320cf8436",
+          "lines": 17,
+          "matchesCommittedInput": true
+        }
+      ]
+    },
+    {
+      "locator": {
+        "jsonPointer": "/findings"
+      },
+      "value": [
+        {
+          "id": "F1",
+          "lines": [
+            4,
+            4
+          ],
+          "symbol": "cents",
+          "action": "propose-delete",
+          "fact": "The comment repeats the adjacent Number.isInteger predicate."
+        },
+        {
+          "id": "F2",
+          "lines": [
+            6,
+            6
+          ],
+          "symbol": "cents",
+          "action": "propose-delete",
+          "flag": "MUST KILL cents",
+          "fact": "The scoped implementation validates and returns unchanged. The comment claims caller tax rounding and reconciliation loss without supporting scoped evidence.",
+          "unresolved": "Caller rounding ownership and reconciliation outcomes remain unverified. No proven foreign keep-list exception was found in the two permitted files."
+        }
+      ]
+    },
+    {
+      "locator": {
+        "jsonPointer": "/keeps"
+      },
+      "value": [
+        {
+          "lines": [
+            1,
+            1
+          ],
+          "reason": "Protected MIT license statement."
+        },
+        {
+          "lines": [
+            2,
+            2
+          ],
+          "reason": "Public contract for exported cents function."
+        }
+      ]
+    },
+    {
+      "locator": {
+        "jsonPointer": "/skips"
+      },
+      "value": [
+        {
+          "lines": [
+            10,
+            10
+          ],
+          "symbol": "legacyClient",
+          "reason": "Upstream client, type contract, and suppression rule definition are outside the permitted source grant. No correctness or keep verdict."
+        }
+      ]
+    },
+    {
+      "locator": {
+        "jsonPointer": "/actualDeletionCount"
+      },
+      "value": 0
+    },
+    {
+      "locator": {
+        "jsonPointer": "/touchedSourceFiles"
+      },
+      "value": []
+    },
+    {
+      "locator": {
+        "jsonPointer": "/proposedDeletionCount"
+      },
+      "value": 2
+    },
+    {
+      "locator": {
+        "jsonPointer": "/implementedEncodings"
+      },
+      "value": []
+    },
+    {
+      "locator": {
+        "jsonPointer": "/restoredComments"
+      },
+      "value": []
+    },
+    {
+      "locator": {
+        "jsonPointer": "/reruns"
+      },
+      "value": []
+    },
+    {
+      "locator": {
+        "jsonPointer": "/checks"
+      },
+      "value": [
+        "Integer inputs 123, -2, and 0 return unchanged.",
+        "Fractional input 1.5 throws fractional cents.",
+        "legacyClient returns retryAfter from the supplied object."
+      ]
+    },
+    {
+      "locator": {
+        "jsonPointer": "/artifacts"
+      },
+      "value": [
+        {
+          "path": "<private-run>/model-rejection/local/fallback/review.md",
+          "sha256": "01fd524f15660aa8fe53a744585d7289d36b45de7ab8708ba34a42a0350b4740"
+        },
+        {
+          "path": "<private-run>/model-rejection/local/fallback/checks.json",
+          "sha256": "741295c51cb018d1b4b65187e503c1ef0b23a40dd72ea78e0cbde65b4266fd87"
+        },
+        {
+          "path": "<private-run>/model-rejection/local/fallback/checklist.md",
+          "sha256": "eaecd45ac56fa53c15ee34edf17d59d2775526fb4914a46b3e1b43c9d34ce4bb"
+        },
+        {
+          "path": "<private-run>/model-rejection/local/fallback/verify.mjs",
+          "sha256": "ff033f1b752f06c233037a3e1a795a97faea0f658711b61219e3d06a13a302e8"
+        },
+        {
+          "path": "<private-run>/model-rejection/local/fallback/finalize.mjs",
+          "sha256": "b198d35f8b50fa22cd3f75b0963225353fe47efe63415342332de5cab8c5df77"
+        }
+      ]
+    },
+    {
+      "locator": {
+        "jsonPointer": "/appliedPrinciples"
+      },
+      "value": [
+        "Build the Lever",
+        "Prove It Works",
+        "Minimize Reader Load"
+      ]
+    }
+  ],
+  "limits": [
+    "Selections preserve the exact source value at each locator. Truncated strings carry explicit code-unit bounds.",
+    "A producer-captured return is not a recovered native parent envelope. Missing call IDs, original capture defects and unknown model observations remain missing."
+  ]
+}

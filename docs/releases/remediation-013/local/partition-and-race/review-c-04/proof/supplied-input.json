@@ -1,0 +1,10 @@
+{
+  "kind": "supplied-fixture-input-excerpt",
+  "caseId": "partition-and-race",
+  "inputRevision": "e1dbf216744c45345acecf367b2b449bbc9fa75f",
+  "originalLocator": "remaining-local/cases/partition-and-race/task-contract.json",
+  "sourceSha256": "5bd81b9ebe4d2085918b1d1bd7d2ed2d4691262925457203069a20422ae6de1f",
+  "pointer": "/case/prompt",
+  "suppliedPrompt": "Run a swarm with coverage slices and a race. Declare the slices and race selection rule before dispatch. Verify exact revisions with a declared sampling method; inject one result missing required evidence, a repeated miss, and a dropout, then cancel one assignment.",
+  "transformation": "Only the exact supplied case prompt is projected. Fixture data and arbitrary surrounding contract fields are omitted. This is supplied input, not a native successful tool operation."
+}

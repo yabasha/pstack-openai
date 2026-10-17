@@ -1,0 +1,10 @@
+{
+  "kind": "supplied-fixture-input-excerpt",
+  "caseId": "preserved-behavior",
+  "inputRevision": "1b69f163da7e4648e691c8b26cac8465ec1b596f",
+  "originalLocator": "remaining-local/cases/preserved-behavior/task-contract.json",
+  "sourceSha256": "d3f47b22c2fd80cee4808cb2c8f54f97e5aa77bf8158272d5cb69773d9b95db8",
+  "pointer": "/case/prompt",
+  "suppliedPrompt": "Refactor a fixture invoice formatter by removing a one-caller wrapper and consolidating duplicated state. Preserve literal formatted outputs, empty inputs, rounding and errors. Capture the current outputs before edits. Rename its internal API and migrate code, string references, docs and back-references together. One fixture exposes an unrelated bug, which must stay separate. A speculative abstraction adds reader load and must be reverted. Permit local edits and execution but no external writes. Repeat with workers unavailable, execution denied and behavior coverage absent. Return the changed structure, held pin, equivalence proof, reader-load delta, shipped and reverted work.",
+  "transformation": "Only the exact supplied case prompt is projected. Fixture data and arbitrary surrounding contract fields are omitted. This is supplied input, not a native successful tool operation."
+}

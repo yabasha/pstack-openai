@@ -1,0 +1,32 @@
+{
+  "kind": "historical-proof-selection",
+  "source": {
+    "path": "<private-run>/web-checkpoint-2/units/unknown-actual-model/outputs/unknown-actual-model/clone.raw.json",
+    "sha256": "42074fffd4fa9a64b582f414237e155fded3581c2266b96e8f7078a8525d298d",
+    "bytes": 862
+  },
+  "selection": [
+    {
+      "locator": {
+        "jsonPointer": "/request/cmd"
+      },
+      "value": "git clone --no-checkout /mnt/data/pstack-remediation-20261017/inputs/remaining-original67/unknown-actual-model/input.bundle /mnt/data/pstack-remediation-20261017/attempts-18/outputs/unknown-actual-model/task && git -C /mnt/data/pstack-remediation-20261017/attempts-18/outputs/unknown-actual-model/task checkout --detach 5124c0c509be4c88b0b0f6bc0d4c41be0fd56dce && git -C /mnt/data/pstack-remediation-20261017/attempts-18/outputs/unknown-actual-model/task rev-parse HEAD"
+    },
+    {
+      "locator": {
+        "jsonPointer": "/returned"
+      },
+      "value": {
+        "chunk_id": "fa7235",
+        "wall_time_seconds": 0.000030977,
+        "exit_code": 0,
+        "original_token_count": 50,
+        "output": "Cloning into '/mnt/data/pstack-remediation-20261017/attempts-18/outputs/unknown-actual-model/task'...\nHEAD is now at 5124c0c Prepare original scenario inputs\n5124c0c509be4c88b0b0f6bc0d4c41be0fd56dce\n"
+      }
+    }
+  ],
+  "limits": [
+    "Selections preserve the exact source value at each locator. Truncated strings carry explicit code-unit bounds.",
+    "A producer-captured return is not a recovered native parent envelope. Missing call IDs, original capture defects and unknown model observations remain missing."
+  ]
+}

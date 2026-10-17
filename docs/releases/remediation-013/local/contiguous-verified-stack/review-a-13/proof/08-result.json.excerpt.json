@@ -1,0 +1,38 @@
+{
+  "kind": "selected-fixture-result-fields",
+  "caseId": "contiguous-verified-stack",
+  "attemptId": "review-a-13",
+  "originalLocator": "work/helper_workflow_reruns/projects/release-stack/deliverables/verifier-d/result.json",
+  "sourceSha256": "669a9a7128098b5fa57733a6bf377d086ee9888393613542bfa6af01462aa8e1",
+  "sourceBytes": 1698,
+  "transformation": "Named JSON fields selected by exact JSON Pointer. Task-owned absolute paths replaced with declared placeholders. Other fields omitted. These are result-artifact values, not synthesized tool execution evidence. Public selection is limited to eight short inspected fields. Longer output and unselected fields remain private.",
+  "fields": [
+    {
+      "pointer": "/assignmentId",
+      "value": "verify-101-changed-D-0"
+    },
+    {
+      "pointer": "/inputRevision",
+      "value": "4a7dde94ab2778837e4c932e53cc3484d2e74dfd"
+    },
+    {
+      "pointer": "/verdict",
+      "value": "PASS"
+    },
+    {
+      "pointer": "/requestedModel",
+      "value": "inherit-parent"
+    },
+    {
+      "pointer": "/actualModel",
+      "value": "unknown"
+    },
+    {
+      "pointer": "/limitations",
+      "value": [
+        "Named control-cli companion absent. Actual PTY reduced CLI observations only. No host pass or case self-grade.",
+        "No forge contact, comments, merge or Git writes."
+      ]
+    }
+  ]
+}

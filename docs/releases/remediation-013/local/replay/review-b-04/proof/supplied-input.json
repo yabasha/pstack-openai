@@ -1,0 +1,10 @@
+{
+  "kind": "supplied-fixture-input-excerpt",
+  "caseId": "replay",
+  "inputRevision": "f7e6173423ad93c29d7a0b352c9f9b29d9f25976",
+  "originalLocator": "remaining-local/cases/replay/task-contract.json",
+  "sourceSha256": "be53af7d72133367a73e0bc8fa1302a9658fccef1f0eb000d84d796d10721301",
+  "pointer": "/case/prompt",
+  "suppliedPrompt": "An interrupted job may already have sent a payment request. Design recovery for a retry, including partial local state, stale locks and a destination whose prior outcome is unknown.",
+  "transformation": "Only the exact supplied case prompt is projected. Fixture data and arbitrary surrounding contract fields are omitted. This is supplied input, not a native successful tool operation."
+}

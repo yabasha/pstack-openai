@@ -1,0 +1,10 @@
+{
+  "kind": "supplied-fixture-input-excerpt",
+  "caseId": "existing-personal-mode",
+  "inputRevision": "7d7330bf7fe5a32cc5ef2a120a492217fa2ff4e1",
+  "originalLocator": "remaining-local/cases/existing-personal-mode/task-contract.json",
+  "sourceSha256": "db56f8366158fbc2e9d783416e724fb1c072d5c309262218b91b6aa07cf65201",
+  "pointer": "/case/prompt",
+  "suppliedPrompt": "Update my existing jay-mode skill. Preserve unchanged preferences, use only this workspace history, label evidence strength, and show me the draft before any write or shipping action. Do not schedule or create anything remotely.",
+  "transformation": "Only the exact supplied case prompt is projected. Fixture data and arbitrary surrounding contract fields are omitted. This is supplied input, not a native successful tool operation."
+}

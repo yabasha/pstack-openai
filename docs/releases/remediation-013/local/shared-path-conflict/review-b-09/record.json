@@ -1,0 +1,69 @@
+{
+  "caseId": "shared-path-conflict",
+  "packageVersion": "0.1.3",
+  "packageCommit": "51f209daf83cd97d64f89881d66533bb59dc57db",
+  "host": "codex",
+  "hostMode": "Historical native Local task-scoped fixture observation",
+  "date": "2026-10-17",
+  "input": "Two workers request the same output path. Actual task fixture revision 5c68f1fe4b29243ed37889507222cb408af2bfef.",
+  "observedOutput": "The colliding output request is recorded and two exclusive paths are resolved before either actual worker writes. Two actual independent workers return exact current task revision5c68f1fe4b29243ed37889507222cb408af2bfef and inspected reports. Both report digests match. The contested shared-review.txt is absent, and no observed worker operation writes it.",
+  "status": "reduced-pass",
+  "execution": "workers",
+  "inputRevision": "5c68f1fe4b29243ed37889507222cb408af2bfef",
+  "sourcePaths": [
+    "skills/poteto-mode/SKILL.md",
+    "skills/poteto-mode/playbooks/orchestrate.md",
+    "agents/poteto-agent.md"
+  ],
+  "documentedCapabilities": [
+    "Frozen source instructions only. Current-main qualification is not established."
+  ],
+  "exposedTools": [
+    "exec"
+  ],
+  "artifacts": [
+    "docs/releases/remediation-013/local/shared-path-conflict/review-b-09/assessment.json",
+    "docs/releases/remediation-013/local/shared-path-conflict/review-b-09/proof/01-ownership-proposals.json.excerpt.json",
+    "docs/releases/remediation-013/local/shared-path-conflict/review-b-09/proof/02-ownership-resolution.json.excerpt.json",
+    "docs/releases/remediation-013/local/shared-path-conflict/review-b-09/proof/03-method-receipt.json.excerpt.json",
+    "docs/releases/remediation-013/local/shared-path-conflict/review-b-09/proof/supplied-input.json",
+    "docs/releases/remediation-013/local/shared-path-conflict/review-b-09/proof/native-source-read.json",
+    "docs/releases/remediation-013/local/shared-path-conflict/review-b-09/proof/task-result-prefix.json"
+  ],
+  "limits": [
+    "The immutable ownership-resolution uses prospective-worker-A/B rather than actual canonical output owners before dispatch. Actual identities are mapped after spawn. This violates the assignment requirement in the supplied execution scope.",
+    "The optional Swarm-labelled receipt is not validator-compatible and cannot establish full Swarm method evidence. The registry does not itself require Swarm for this ownership case.",
+    "The public source excerpt covers the listed matched paths only. Other source reads assessed independently remain outside this narrow public excerpt.",
+    "Only the actual operations listed in this record have narrow public bindings. Other operations from the independent assessment remain unprojected. No missing operation is invented.",
+    "The exposed tool name exec is retained from the actual scoped native custom-tool call. The nested tools.exec_command call matches this public command event. command_execution remains an event type only."
+  ],
+  "priorActionIdentities": [],
+  "permissions": {
+    "execution": "granted",
+    "writes": "granted",
+    "externalActions": "denied"
+  },
+  "models": {
+    "requested": "inherit-parent",
+    "actual": "unknown"
+  },
+  "successfulOperations": [
+    {
+      "operation": "read",
+      "tool": "exec",
+      "evidence": "docs/releases/remediation-013/local/shared-path-conflict/review-b-09/proof/native-source-read.json"
+    }
+  ],
+  "nativeObservations": [
+    {
+      "observation": "review-outcome",
+      "evidence": "docs/releases/remediation-013/local/shared-path-conflict/review-b-09/assessment.json",
+      "reviewedBy": "/root/grade_remediation_local_b"
+    },
+    {
+      "observation": "supplied-input",
+      "evidence": "docs/releases/remediation-013/local/shared-path-conflict/review-b-09/proof/supplied-input.json",
+      "reviewedBy": "/root/project_historical_local"
+    }
+  ]
+}

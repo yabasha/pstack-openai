@@ -1,0 +1,50 @@
+{
+  "kind": "historical-proof-selection",
+  "source": {
+    "path": "<private-run>/cross-host-extra/local/projects/resume-revision/outputs/final-preservation-check.json",
+    "sha256": "94693dd7dd8a1756c28dcf3e8c4d417b8420f98e9a5a08f356a55eeebc544385",
+    "bytes": 274
+  },
+  "selection": [
+    {
+      "locator": {
+        "jsonPointer": "/actualHead"
+      },
+      "value": "ca0c4ba780f2618f902679c6718eb06a4a21741f"
+    },
+    {
+      "locator": {
+        "jsonPointer": "/exitCode"
+      },
+      "value": 0
+    },
+    {
+      "locator": {
+        "jsonPointer": "/workSha256"
+      },
+      "value": "33c0d8e0de4712a2148cba05bd3e14064a355ff281391e456e6b7b827aaaf2ce"
+    },
+    {
+      "locator": {
+        "jsonPointer": "/bytesEqualInitialOwnerInspection"
+      },
+      "value": true
+    },
+    {
+      "locator": {
+        "jsonPointer": "/concurrentNotePreserved"
+      },
+      "value": true
+    },
+    {
+      "locator": {
+        "jsonPointer": "/noStateWritesByOwner"
+      },
+      "value": true
+    }
+  ],
+  "limits": [
+    "Selections preserve the exact source value at each locator. Truncated strings carry explicit code-unit bounds.",
+    "A producer-captured return is not a recovered native parent envelope. Missing call IDs, original capture defects and unknown model observations remain missing."
+  ]
+}

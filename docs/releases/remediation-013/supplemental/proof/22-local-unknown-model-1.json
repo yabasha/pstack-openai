@@ -1,0 +1,23 @@
+{
+  "kind": "historical-proof-selection",
+  "source": {
+    "path": "<private-run>/remaining-local/cases/unknown-model/outputs/unknown-model.result.md",
+    "sha256": "0253105de4476a2db1a00c83610392abe20a5dea120aa7369d4879d6c7308a45",
+    "bytes": 6982
+  },
+  "selection": [
+    {
+      "locator": {
+        "textCodeUnits": [
+          0,
+          2082
+        ]
+      },
+      "value": "# unknown-model actual attempt\n\nThe native setup-pstack workflow produced a session-only inherited proposal. Model availability and persistent setup remain unverified. No personal configuration was read or written.\n\nThe active controller is pstack. This is an independent assigned worker, /root/setup, executing setup directly. Requested model and effort are inherit-parent. Actual model and effort are unknown. This report contains observations and proposals, not a producer grade.\n\n## Actual native response\n\nThe recorded budget is the source default `large`, with an `xhigh` target. This is an unconfirmed proposal. Other source budget labels are unlimited with max target, medium with high target, and small with medium target. Those targets do not establish supported host efforts. Every role requests inherit-parent effort, so no explicit effort override is applied.\n\nModel enumeration is withheld by scenario POLICY. Current tool documentation exposes explicit model and effort overrides, but this branch does not use them to substitute for the stipulated unknown enumeration. The supplied input says an unknown requested slug exists but gives no literal slug. That real selection is not accepted. No API rejection was attempted or invented. If the exact unverified selection is required, selection remains blocked.\n\nNo current supported override was identified or supplied. No retired role lines were supplied, so there are no removed retired lines. The whole proposal is below. Its only destination is the authorized case output artifact, not personal host configuration.\n\n# pstack per-role model choices\n# budget: large (xhigh target; explicit effort requires verification)\n# Session-only proposal. Budget and mapping not confirmed. No persistent destination authorized.\n# Requested effort: inherit-parent for every role. Actual model and effort: unknown for every role.\n# Alias entries in panel lists count toward fan-out.\nfeature, refactoring: inherit-parent\nbug-fix: inherit-parent\nperf-issue: inherit-parent\nhillclimb: inherit-parent\njudgment and prose: inherit-parent"
+    }
+  ],
+  "limits": [
+    "Selections preserve the exact source value at each locator. Truncated strings carry explicit code-unit bounds.",
+    "A producer-captured return is not a recovered native parent envelope. Missing call IDs, original capture defects and unknown model observations remain missing."
+  ]
+}

@@ -1,0 +1,32 @@
+{
+  "kind": "selected-fixture-result-fields",
+  "caseId": "benny-existing-pr",
+  "attemptId": "review-a-09",
+  "originalLocator": "remaining-local/cases/benny-existing-pr/outputs/lead-review.json",
+  "sourceSha256": "feb7412453e17eb80fdf940ec5ef927a085ca8ce12d67f2ee2af8071a47b9e41",
+  "sourceBytes": 859,
+  "transformation": "Named JSON fields selected by exact JSON Pointer. Task-owned absolute paths replaced with declared placeholders. Other fields omitted. These are result-artifact values, not synthesized tool execution evidence. Public selection is limited to eight short inspected fields. Longer output and unselected fields remain private.",
+  "fields": [
+    {
+      "pointer": "/assignmentId",
+      "value": "remaining01-benny-existing-pr-0"
+    },
+    {
+      "pointer": "/inputRevision",
+      "value": "9ec21d40fe60c794e1127957595734eeea25138c"
+    },
+    {
+      "pointer": "/currentHead",
+      "value": "9ec21d40fe60c794e1127957595734eeea25138c"
+    },
+    {
+      "pointer": "/findings",
+      "value": [
+        "Blocked UI records are prerequisite failures rather than four observed UI executions.",
+        "fixture-pr-1 and fixture source URL do not qualify as actual PR or source parent.",
+        "No competing implementation or external action observed in scoped artifacts.",
+        "Generic-first checklist chronology deviation preserved, not repaired."
+      ]
+    }
+  ]
+}

@@ -1,0 +1,454 @@
+{
+  "qualification": {
+    "inputRevision": "4138e161c27cafffd2baaab6bf4ca53e86a57433",
+    "sourceFreeze": "51f209daf83cd97d64f89881d66533bb59dc57db",
+    "packageVersion": "0.1.3"
+  },
+  "counts": {
+    "pass": 19,
+    "reduced-pass": 19,
+    "blocked": 6
+  },
+  "rows": [
+    {
+      "id": "01-local-user-tradeoff",
+      "caseId": "user-tradeoff",
+      "host": "codex",
+      "status": "pass",
+      "linkedAttempt": false,
+      "assessment": "assessments/01-local-user-tradeoff.json",
+      "selectedProof": 2,
+      "originalReferenceCount": 3
+    },
+    {
+      "id": "02-local-dependency-readiness",
+      "caseId": "dependency-readiness",
+      "host": "codex",
+      "status": "reduced-pass",
+      "linkedAttempt": false,
+      "assessment": "assessments/02-local-dependency-readiness.json",
+      "selectedProof": 2,
+      "originalReferenceCount": 2
+    },
+    {
+      "id": "03-local-benny-untrusted-marker",
+      "caseId": "benny-untrusted-marker",
+      "host": "codex",
+      "status": "blocked",
+      "linkedAttempt": false,
+      "assessment": "assessments/03-local-benny-untrusted-marker.json",
+      "selectedProof": 2,
+      "originalReferenceCount": 2
+    },
+    {
+      "id": "04-local-codex-setup-from-readme",
+      "caseId": "codex-setup-from-readme",
+      "host": "codex",
+      "status": "reduced-pass",
+      "linkedAttempt": false,
+      "assessment": "assessments/04-local-codex-setup-from-readme.json",
+      "selectedProof": 2,
+      "originalReferenceCount": 2
+    },
+    {
+      "id": "05-local-read-only-answer",
+      "caseId": "read-only-answer",
+      "host": "codex",
+      "status": "pass",
+      "linkedAttempt": false,
+      "assessment": "assessments/05-local-read-only-answer.json",
+      "selectedProof": 3,
+      "originalReferenceCount": 5
+    },
+    {
+      "id": "06-local-plain-restate",
+      "caseId": "plain-restate",
+      "host": "codex",
+      "status": "blocked",
+      "linkedAttempt": false,
+      "assessment": "assessments/06-local-plain-restate.json",
+      "selectedProof": 1,
+      "originalReferenceCount": 2
+    },
+    {
+      "id": "07-local-resume-revision",
+      "caseId": "resume-revision",
+      "host": "codex",
+      "status": "pass",
+      "linkedAttempt": false,
+      "assessment": "assessments/07-local-resume-revision.json",
+      "selectedProof": 3,
+      "originalReferenceCount": 4
+    },
+    {
+      "id": "08-local-trace-path",
+      "caseId": "trace-path",
+      "host": "codex",
+      "status": "reduced-pass",
+      "linkedAttempt": false,
+      "assessment": "assessments/08-local-trace-path.json",
+      "selectedProof": 3,
+      "originalReferenceCount": 3
+    },
+    {
+      "id": "09-local-typed-boundary",
+      "caseId": "typed-boundary",
+      "host": "codex",
+      "status": "reduced-pass",
+      "linkedAttempt": false,
+      "assessment": "assessments/09-local-typed-boundary.json",
+      "selectedProof": 3,
+      "originalReferenceCount": 5
+    },
+    {
+      "id": "10-local-unknown-actual-model",
+      "caseId": "unknown-actual-model",
+      "host": "codex",
+      "status": "pass",
+      "linkedAttempt": false,
+      "assessment": "assessments/10-local-unknown-actual-model.json",
+      "selectedProof": 3,
+      "originalReferenceCount": 4
+    },
+    {
+      "id": "11-local-symptom-repro",
+      "caseId": "symptom-repro",
+      "host": "codex",
+      "status": "pass",
+      "linkedAttempt": false,
+      "assessment": "assessments/11-local-symptom-repro.json",
+      "selectedProof": 3,
+      "originalReferenceCount": 5
+    },
+    {
+      "id": "12-local-plain-restate-linked",
+      "caseId": "plain-restate",
+      "host": "codex",
+      "status": "pass",
+      "linkedAttempt": true,
+      "assessment": "assessments/12-local-plain-restate-linked.json",
+      "selectedProof": 3,
+      "originalReferenceCount": 11
+    },
+    {
+      "id": "13-local-stack-resume",
+      "caseId": "stack-resume",
+      "host": "codex",
+      "status": "blocked",
+      "linkedAttempt": false,
+      "assessment": "assessments/13-local-stack-resume.json",
+      "selectedProof": 3,
+      "originalReferenceCount": 3
+    },
+    {
+      "id": "14-local-poteto-walkthrough",
+      "caseId": "poteto-walkthrough",
+      "host": "codex",
+      "status": "blocked",
+      "linkedAttempt": false,
+      "assessment": "assessments/14-local-poteto-walkthrough.json",
+      "selectedProof": 2,
+      "originalReferenceCount": 2
+    },
+    {
+      "id": "15-local-benny-missing-adapter",
+      "caseId": "benny-missing-adapter",
+      "host": "codex",
+      "status": "pass",
+      "linkedAttempt": false,
+      "assessment": "assessments/15-local-benny-missing-adapter.json",
+      "selectedProof": 3,
+      "originalReferenceCount": 3
+    },
+    {
+      "id": "16-local-candidate-cross-review",
+      "caseId": "candidate-cross-review",
+      "host": "codex",
+      "status": "reduced-pass",
+      "linkedAttempt": false,
+      "assessment": "assessments/16-local-candidate-cross-review.json",
+      "selectedProof": 2,
+      "originalReferenceCount": 4
+    },
+    {
+      "id": "17-local-swarm-walkthrough",
+      "caseId": "swarm-walkthrough",
+      "host": "codex",
+      "status": "reduced-pass",
+      "linkedAttempt": false,
+      "assessment": "assessments/17-local-swarm-walkthrough.json",
+      "selectedProof": 2,
+      "originalReferenceCount": 4
+    },
+    {
+      "id": "18-local-shape-first",
+      "caseId": "shape-first",
+      "host": "codex",
+      "status": "pass",
+      "linkedAttempt": false,
+      "assessment": "assessments/18-local-shape-first.json",
+      "selectedProof": 3,
+      "originalReferenceCount": 6
+    },
+    {
+      "id": "19-local-smaller-solution",
+      "caseId": "smaller-solution",
+      "host": "codex",
+      "status": "pass",
+      "linkedAttempt": false,
+      "assessment": "assessments/19-local-smaller-solution.json",
+      "selectedProof": 3,
+      "originalReferenceCount": 7
+    },
+    {
+      "id": "20-local-unsupported-selected-model",
+      "caseId": "unsupported-selected-model",
+      "host": "codex",
+      "status": "pass",
+      "linkedAttempt": false,
+      "assessment": "assessments/20-local-unsupported-selected-model.json",
+      "selectedProof": 3,
+      "originalReferenceCount": 6
+    },
+    {
+      "id": "21-local-guides-local-codex",
+      "caseId": "guides-local-codex",
+      "host": "codex",
+      "status": "reduced-pass",
+      "linkedAttempt": false,
+      "assessment": "assessments/21-local-guides-local-codex.json",
+      "selectedProof": 2,
+      "originalReferenceCount": 3
+    },
+    {
+      "id": "22-local-unknown-model",
+      "caseId": "unknown-model",
+      "host": "codex",
+      "status": "pass",
+      "linkedAttempt": false,
+      "assessment": "assessments/22-local-unknown-model.json",
+      "selectedProof": 2,
+      "originalReferenceCount": 3
+    },
+    {
+      "id": "23-local-missing-webhook",
+      "caseId": "missing-webhook",
+      "host": "codex",
+      "status": "reduced-pass",
+      "linkedAttempt": false,
+      "assessment": "assessments/23-local-missing-webhook.json",
+      "selectedProof": 3,
+      "originalReferenceCount": 4
+    },
+    {
+      "id": "24-local-decision-trail",
+      "caseId": "decision-trail",
+      "host": "codex",
+      "status": "reduced-pass",
+      "linkedAttempt": false,
+      "assessment": "assessments/24-local-decision-trail.json",
+      "selectedProof": 3,
+      "originalReferenceCount": 4
+    },
+    {
+      "id": "25-local-legal-header",
+      "caseId": "legal-header",
+      "host": "codex",
+      "status": "reduced-pass",
+      "linkedAttempt": false,
+      "assessment": "assessments/25-local-legal-header.json",
+      "selectedProof": 3,
+      "originalReferenceCount": 5
+    },
+    {
+      "id": "26-local-arena-walkthrough",
+      "caseId": "arena-walkthrough",
+      "host": "codex",
+      "status": "reduced-pass",
+      "linkedAttempt": false,
+      "assessment": "assessments/26-local-arena-walkthrough.json",
+      "selectedProof": 1,
+      "originalReferenceCount": 5
+    },
+    {
+      "id": "27-local-interrupted-external-write",
+      "caseId": "interrupted-external-write",
+      "host": "codex",
+      "status": "reduced-pass",
+      "linkedAttempt": false,
+      "assessment": "assessments/27-local-interrupted-external-write.json",
+      "selectedProof": 3,
+      "originalReferenceCount": 3
+    },
+    {
+      "id": "28-local-denied-writes",
+      "caseId": "denied-writes",
+      "host": "codex",
+      "status": "pass",
+      "linkedAttempt": false,
+      "assessment": "assessments/28-local-denied-writes.json",
+      "selectedProof": 3,
+      "originalReferenceCount": 5
+    },
+    {
+      "id": "29-local-repeated-rule",
+      "caseId": "repeated-rule",
+      "host": "codex",
+      "status": "pass",
+      "linkedAttempt": false,
+      "assessment": "assessments/29-local-repeated-rule.json",
+      "selectedProof": 3,
+      "originalReferenceCount": 6
+    },
+    {
+      "id": "30-web-supported-authoring",
+      "caseId": "supported-authoring",
+      "host": "chatgpt",
+      "status": "pass",
+      "linkedAttempt": false,
+      "assessment": "assessments/30-web-supported-authoring.json",
+      "selectedProof": 3,
+      "originalReferenceCount": 21
+    },
+    {
+      "id": "31-web-invalid-input",
+      "caseId": "invalid-input",
+      "host": "chatgpt",
+      "status": "pass",
+      "linkedAttempt": false,
+      "assessment": "assessments/31-web-invalid-input.json",
+      "selectedProof": 3,
+      "originalReferenceCount": 24
+    },
+    {
+      "id": "32-web-package-support-contracts",
+      "caseId": "package-support-contracts",
+      "host": "chatgpt",
+      "status": "reduced-pass",
+      "linkedAttempt": false,
+      "assessment": "assessments/32-web-package-support-contracts.json",
+      "selectedProof": 3,
+      "originalReferenceCount": 19
+    },
+    {
+      "id": "33-web-missing-webhook",
+      "caseId": "missing-webhook",
+      "host": "chatgpt",
+      "status": "blocked",
+      "linkedAttempt": false,
+      "assessment": "assessments/33-web-missing-webhook.json",
+      "selectedProof": 3,
+      "originalReferenceCount": 8
+    },
+    {
+      "id": "34-web-denied-writes",
+      "caseId": "denied-writes",
+      "host": "chatgpt",
+      "status": "reduced-pass",
+      "linkedAttempt": false,
+      "assessment": "assessments/34-web-denied-writes.json",
+      "selectedProof": 3,
+      "originalReferenceCount": 11
+    },
+    {
+      "id": "35-web-unknown-actual-model",
+      "caseId": "unknown-actual-model",
+      "host": "chatgpt",
+      "status": "reduced-pass",
+      "linkedAttempt": false,
+      "assessment": "assessments/35-web-unknown-actual-model.json",
+      "selectedProof": 3,
+      "originalReferenceCount": 10
+    },
+    {
+      "id": "36-web-unknown-model",
+      "caseId": "unknown-model",
+      "host": "chatgpt",
+      "status": "pass",
+      "linkedAttempt": false,
+      "assessment": "assessments/36-web-unknown-model.json",
+      "selectedProof": 3,
+      "originalReferenceCount": 9
+    },
+    {
+      "id": "37-web-symptom-repro",
+      "caseId": "symptom-repro",
+      "host": "chatgpt",
+      "status": "reduced-pass",
+      "linkedAttempt": false,
+      "assessment": "assessments/37-web-symptom-repro.json",
+      "selectedProof": 3,
+      "originalReferenceCount": 19
+    },
+    {
+      "id": "38-web-migration-units",
+      "caseId": "migration-units",
+      "host": "chatgpt",
+      "status": "pass",
+      "linkedAttempt": false,
+      "assessment": "assessments/38-web-migration-units.json",
+      "selectedProof": 3,
+      "originalReferenceCount": 5
+    },
+    {
+      "id": "39-web-real-render",
+      "caseId": "real-render",
+      "host": "chatgpt",
+      "status": "blocked",
+      "linkedAttempt": false,
+      "assessment": "assessments/39-web-real-render.json",
+      "selectedProof": 3,
+      "originalReferenceCount": 4
+    },
+    {
+      "id": "40-web-smaller-solution",
+      "caseId": "smaller-solution",
+      "host": "chatgpt",
+      "status": "reduced-pass",
+      "linkedAttempt": false,
+      "assessment": "assessments/40-web-smaller-solution.json",
+      "selectedProof": 3,
+      "originalReferenceCount": 5
+    },
+    {
+      "id": "41-web-repeated-rule",
+      "caseId": "repeated-rule",
+      "host": "chatgpt",
+      "status": "pass",
+      "linkedAttempt": false,
+      "assessment": "assessments/41-web-repeated-rule.json",
+      "selectedProof": 3,
+      "originalReferenceCount": 5
+    },
+    {
+      "id": "42-web-false-success",
+      "caseId": "false-success",
+      "host": "chatgpt",
+      "status": "pass",
+      "linkedAttempt": false,
+      "assessment": "assessments/42-web-false-success.json",
+      "selectedProof": 3,
+      "originalReferenceCount": 9
+    },
+    {
+      "id": "43-web-no-persistent-tool",
+      "caseId": "no-persistent-tool",
+      "host": "chatgpt",
+      "status": "reduced-pass",
+      "linkedAttempt": false,
+      "assessment": "assessments/43-web-no-persistent-tool.json",
+      "selectedProof": 3,
+      "originalReferenceCount": 9
+    },
+    {
+      "id": "44-web-contiguous-verified-stack",
+      "caseId": "contiguous-verified-stack",
+      "host": "chatgpt",
+      "status": "reduced-pass",
+      "linkedAttempt": false,
+      "assessment": "assessments/44-web-contiguous-verified-stack.json",
+      "selectedProof": 3,
+      "originalReferenceCount": 10
+    }
+  ]
+}

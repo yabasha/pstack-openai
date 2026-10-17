@@ -1,0 +1,18 @@
+{
+  "kind": "selected-fixture-result-fields",
+  "caseId": "owned-safe-cleanup",
+  "attemptId": "review-a-05",
+  "originalLocator": "remaining-local/cases/owned-safe-cleanup/outputs/usage-export.json",
+  "sourceSha256": "e329351359088848d5b1fb40c7dbfe36b687c424b8acaa8f8bdc02fe9401fd49",
+  "sourceBytes": 1058,
+  "transformation": "Named JSON fields selected by exact JSON Pointer. Task-owned absolute paths replaced with declared placeholders. Other fields omitted. These are result-artifact values, not synthesized tool execution evidence. Public selection is limited to eight short inspected fields. Longer output and unselected fields remain private.",
+  "fields": [
+    {
+      "pointer": "/limitations",
+      "value": [
+        "Does not establish real host inactivity.",
+        "No genuine historical transcript is supplied."
+      ]
+    }
+  ]
+}

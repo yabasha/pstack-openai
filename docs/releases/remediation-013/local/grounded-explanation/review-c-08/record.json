@@ -1,0 +1,57 @@
+{
+  "caseId": "grounded-explanation",
+  "packageVersion": "0.1.3",
+  "packageCommit": "51f209daf83cd97d64f89881d66533bb59dc57db",
+  "host": "codex",
+  "hostMode": "Historical native Local task-scoped fixture observation",
+  "date": "2026-10-17",
+  "input": "Teach me the supplied subsystem so I understand what it is, how it works and why it was built this way. Use its real names and inspected files. Begin with the smallest complete explanation and deepen it only as the conversation calls for it. Actual task fixture revision fa0bdcdb3d4dd4fbe56b63229d52d4bfc4aa6fad.",
+  "observedOutput": "The two-sentence teaching answer names the actual invoice functions, preserves direct synthetic rationale and unknown layer/cache origin, and combines actual overlapping independent How/Why investigations with a fresh citation-checking synthesis. Direct skill invocation was unavailable and full workflows were followed as the explicitly reduced path.",
+  "status": "reduced-pass",
+  "execution": "workers",
+  "inputRevision": "fa0bdcdb3d4dd4fbe56b63229d52d4bfc4aa6fad",
+  "sourcePaths": [
+    "skills/teach/SKILL.md"
+  ],
+  "documentedCapabilities": [
+    "Frozen source instructions only. Current-main qualification is not established."
+  ],
+  "exposedTools": [],
+  "artifacts": [
+    "docs/releases/remediation-013/local/grounded-explanation/review-c-08/assessment.json",
+    "docs/releases/remediation-013/local/grounded-explanation/review-c-08/proof/01-worker-events.json.excerpt.json",
+    "docs/releases/remediation-013/local/grounded-explanation/review-c-08/proof/02-verification.json.excerpt.json",
+    "docs/releases/remediation-013/local/grounded-explanation/review-c-08/proof/supplied-input.json",
+    "docs/releases/remediation-013/local/grounded-explanation/review-c-08/proof/task-result-prefix.json"
+  ],
+  "limits": [
+    "Direct skill invocation was not observed",
+    "Original rationale remains only supplied synthetic evidence",
+    "Only the actual operations listed in this record have narrow public bindings. Other operations from the independent assessment remain unprojected. No missing operation is invented.",
+    "Original independent proposed grade is reduced. reduced-pass is its declared evidence-schema alias.",
+    "No qualifying callable native-operation excerpt was selected for this attempt. Result fields and independent review remain available, but do not substitute for missing operation proof."
+  ],
+  "priorActionIdentities": [],
+  "permissions": {
+    "execution": "granted",
+    "writes": "granted",
+    "externalActions": "denied"
+  },
+  "models": {
+    "requested": "inherit-parent",
+    "actual": "unknown"
+  },
+  "successfulOperations": [],
+  "nativeObservations": [
+    {
+      "observation": "review-outcome",
+      "evidence": "docs/releases/remediation-013/local/grounded-explanation/review-c-08/assessment.json",
+      "reviewedBy": "/root/grade_remediation_local_c"
+    },
+    {
+      "observation": "supplied-input",
+      "evidence": "docs/releases/remediation-013/local/grounded-explanation/review-c-08/proof/supplied-input.json",
+      "reviewedBy": "/root/project_historical_local"
+    }
+  ]
+}

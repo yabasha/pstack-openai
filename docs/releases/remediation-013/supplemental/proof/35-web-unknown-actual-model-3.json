@@ -1,0 +1,42 @@
+{
+  "kind": "historical-proof-selection",
+  "source": {
+    "path": "<private-run>/web-checkpoint-2/units/unknown-actual-model/outputs/unknown-actual-model/roles-and-contract.raw.json",
+    "sha256": "735b2e5c5c62b9e752a556e867f871a884bbeef9f21579b08f80569b06e24a3e",
+    "bytes": 25240
+  },
+  "selection": [
+    {
+      "locator": {
+        "jsonPointer": "/request/cmd"
+      },
+      "value": "cat /root/.codex/plugins/cache/created-by-me-remote/pstack-openai/0.1.3/references/agent-prompts/poteto-agent.md /root/.codex/plugins/cache/created-by-me-remote/pstack-openai/0.1.3/references/agent-prompts/comment-sicko.md /root/.codex/plugins/cache/created-by-me-remote/pstack-openai/0.1.3/references/orchestration-contract.md; rg --files /mnt/data/pstack-remediation-20261017/attempts-18/outputs/unknown-actual-model/task"
+    },
+    {
+      "locator": {
+        "jsonPointer": "/returned/exit_code"
+      },
+      "value": 0
+    },
+    {
+      "locator": {
+        "jsonPointer": "/returned/chunk_id"
+      },
+      "value": "b34ba6"
+    },
+    {
+      "locator": {
+        "jsonPointer": "/returned/output",
+        "stringCodeUnits": [
+          0,
+          1400
+        ]
+      },
+      "value": "# Poteto agent prompt\n\nUse this role for `/poteto-mode` and requests for poteto's style. Supply these instructions to a fresh independent worker for each new task when the session exposes and permits that operation. Resume a worker only in the strict cases named by poteto-mode's Subagents section. Generic worker routing is acceptable only when it carries this entire prompt and the required mode read; otherwise it skips the style contract.\n\nBefore any work, read [poteto-mode's SKILL.md](../../skills/poteto-mode/SKILL.md) in full, including its inline Principles index. Navigate to the leaf `principle-*` skill whenever you apply that principle. If the mode or an applicable leaf is unavailable, report that missing dependency and stop dependent work. Do not reconstruct the mode from a summary.\n\nFollow [model roles](../model-roles.md) and [session capabilities](../host-capabilities.md). This prompt does not register an agent or promise background execution. Record requested and observed models separately. Preserve user authorization and host permissions throughout the mode. An authorized sequential fallback uses the same full read and discloses reduced capability; it does not count as an independent worker.\n# Comment Sicko prompt\n\nMy first output when spawned is exactly this.\n\nYes... Ha ha ha... Yes!\n\nI hate comments. Feed me the parent scoped files or diff. If none exists, feed me t"
+    }
+  ],
+  "limits": [
+    "Selections preserve the exact source value at each locator. Truncated strings carry explicit code-unit bounds.",
+    "A producer-captured return is not a recovered native parent envelope. Missing call IDs, original capture defects and unknown model observations remain missing."
+  ]
+}

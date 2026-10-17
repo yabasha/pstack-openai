@@ -1,0 +1,65 @@
+{
+  "kind": "selected-fixture-result-fields",
+  "caseId": "invalid-state",
+  "attemptId": "review-b-06",
+  "originalLocator": "cross-host-extra/local/projects/invalid-state/outputs/compiler-results.json",
+  "sourceSha256": "7929564bb67770cdb1e3533fbdce21540df721c58cff17679b7fbc6ca6535b75",
+  "sourceBytes": 4954,
+  "transformation": "Named JSON fields selected by exact JSON Pointer. Task-owned absolute paths replaced with declared placeholders. Other fields omitted. These are result-artifact values, not synthesized tool execution evidence. Public selection is limited to eight short inspected fields. Longer output and unselected fields remain private.",
+  "fields": [
+    {
+      "pointer": "/0/argv",
+      "value": [
+        "bun",
+        "--no-install",
+        "<starting-main-package>/skills/poteto-mode/scripts/node_modules/typescript/bin/tsc",
+        "--version"
+      ]
+    },
+    {
+      "pointer": "/0/exitCode",
+      "value": 0
+    },
+    {
+      "pointer": "/0/stdout",
+      "value": "Version 7.0.2\n"
+    },
+    {
+      "pointer": "/0/stderr",
+      "value": ""
+    },
+    {
+      "pointer": "/1/argv",
+      "value": [
+        "bun",
+        "--no-install",
+        "<starting-main-package>/skills/poteto-mode/scripts/node_modules/typescript/bin/tsc",
+        "--noEmit",
+        "--strict",
+        "--exactOptionalPropertyTypes",
+        "--noUncheckedIndexedAccess",
+        "--target",
+        "ES2022",
+        "--module",
+        "ESNext",
+        "--moduleResolution",
+        "Bundler",
+        "--skipLibCheck",
+        "--ignoreConfig",
+        "outputs/model.ts"
+      ]
+    },
+    {
+      "pointer": "/1/exitCode",
+      "value": 0
+    },
+    {
+      "pointer": "/1/stdout",
+      "value": ""
+    },
+    {
+      "pointer": "/1/stderr",
+      "value": ""
+    }
+  ]
+}

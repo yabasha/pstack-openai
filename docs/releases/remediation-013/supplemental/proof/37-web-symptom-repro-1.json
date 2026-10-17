@@ -1,0 +1,38 @@
+{
+  "kind": "historical-proof-selection",
+  "source": {
+    "path": "<private-run>/web-checkpoint-2/units/symptom-repro/outputs/symptom-repro/red-pty.raw.json",
+    "sha256": "ddeb717de5f1b69cd41cbb1934f676941e5eab5f6b9785847d15d34cd54a82af",
+    "bytes": 1559
+  },
+  "selection": [
+    {
+      "locator": {
+        "jsonPointer": "/request/cmd"
+      },
+      "value": "NOTES_DATA=/mnt/data/pstack-remediation-20261017/attempts-18/outputs/symptom-repro/data-legacy TMPDIR=/mnt/data/pstack-remediation-20261017/attempts-18/outputs/symptom-repro/tmp PORT=0 /mnt/data/pstack-013-evaluation/runtime/bun-linux-x64/bun --no-install server.mjs"
+    },
+    {
+      "locator": {
+        "jsonPointer": "/request/tty"
+      },
+      "value": true
+    },
+    {
+      "locator": {
+        "jsonPointer": "/result"
+      },
+      "value": {
+        "chunk_id": "4286c9",
+        "wall_time_seconds": 0.000057478,
+        "exit_code": 1,
+        "original_token_count": 252,
+        "output": "1 | import {mkdir,readFile,writeFile,rename} from 'node:fs/promises';\r\n2 | import path from 'node:path';\r\n3 | export class NoteStore {\r\n4 |  constructor(directory){this.directory=directory;this.file=path.join(directory,'notes.json');this.state=null;this.pending=Promise.resolve();}\r\n5 |  async open(){await mkdir(this.directory,{recursive:true});try{this.state=JSON.parse(await readFile(this.file,'utf8'));}catch(e){if(e.code!=='ENOENT')throw e;this.state={schemaVersion:2,notes:[]};await this.persist();}this.state.notes.map(note=>note.id);return this;}\r\n                                                                                                                                                                                                                                         ^\r\nTypeError: undefined is not an object (evaluating 'this.state.notes.map')\r\n      at open (/mnt/data/pstack-remediation-20261017/attempts-18/outputs/symptom-repro/working/store.mjs:5:230)\r\n\r\nBun v1.4.2 (Linux x64)\r\n"
+      }
+    }
+  ],
+  "limits": [
+    "Selections preserve the exact source value at each locator. Truncated strings carry explicit code-unit bounds.",
+    "A producer-captured return is not a recovered native parent envelope. Missing call IDs, original capture defects and unknown model observations remain missing."
+  ]
+}

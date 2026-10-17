@@ -1,0 +1,28 @@
+{
+  "kind": "selected-fixture-result-fields",
+  "caseId": "units-and-proof",
+  "attemptId": "review-a-07",
+  "originalLocator": "remaining-local/cases/units-and-proof/outputs/checker-main.json",
+  "sourceSha256": "6a5cc7e539a31e39b32ab17a83e796c4bb7305a78d60e017ae55cfc79815e855",
+  "sourceBytes": 860,
+  "transformation": "Named JSON fields selected by exact JSON Pointer. Task-owned absolute paths replaced with declared placeholders. Other fields omitted. These are result-artifact values, not synthesized tool execution evidence. Public selection is limited to eight short inspected fields. Longer output and unselected fields remain private.",
+  "fields": [
+    {
+      "pointer": "/command",
+      "value": [
+        "bun",
+        "--no-install",
+        "<starting-main-package>/skills/poteto-mode/scripts/check-plan.mjs",
+        "outputs/export-selected-orders.plan.md"
+      ]
+    },
+    {
+      "pointer": "/exitCode",
+      "value": 0
+    },
+    {
+      "pointer": "/stderr",
+      "value": ""
+    }
+  ]
+}

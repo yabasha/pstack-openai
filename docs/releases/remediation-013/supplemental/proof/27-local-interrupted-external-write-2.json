@@ -1,0 +1,23 @@
+{
+  "kind": "historical-proof-selection",
+  "source": {
+    "path": "<private-run>/remaining-local/cases/interrupted-external-write/outputs/interrupted-external-write.result.md",
+    "sha256": "9d2d81a371e8774624d6d6a6036026996ac0dd7594b067d5cd0a0ccec44b199d",
+    "bytes": 22584
+  },
+  "selection": [
+    {
+      "locator": {
+        "textCodeUnits": [
+          0,
+          2300
+        ]
+      },
+      "value": "# Interrupted external write attempt\n\nReplay remains blocked. The actual external outcome is unknown. No external action was dispatched during this attempt.\n\nWorker `/root/interrupted_case` executed assignment `interrupted-case-1` at verified input revision `4e9a836414015096add8542c4bb5a543b94ce449`. The package version is `0.1.3`. The supplied freeze identity is `51f209daf83cd97d64f89881d66533bb59dc57db`.\n\nThe original input object lookup failed. The current committed ORIGINAL fixture bytes are preserved in `inputs/` and hashed in `hashes.json`.\n\nThe supplied forge fixture identifies `fixture-ticket-create-1`, a synthetic `ticket-create` action. It says `created` and names synthetic ticket `FIX-1` with `sourceVerdictMissing` set to true. Those fields are not observations of a real service. The supplied history has no external actions and omits private unrelated history.\n\nThe current authorization forbids external writes and messages. That is POLICY withholding, not evidence that the host lacks tools. No actual destination or real interrupted dispatch record was supplied. Destination inspection and idempotent recovery cannot proceed.\n\nThe authorized branch produced this local handoff. `full-request.txt` contains the complete supplied request. `inputs/current-contract.json` and `inputs/task-contract.json` preserve both complete contracts. `operation-receipt.json` records observed command results, fixture bytes and missing real observations. `completion.json` records every branch and metadata.\n\nMake Operations Idempotent changed the replay decision. Missing destination inspection blocks replay. Prove It Works changed verification. The local bytes are read back, while the real outcome remains unknown. Sequence Work into Verifiable Units kept input verification ahead of the recovery decision. The frozen unslop and technical-writing skills shaped this factual reference document.\n\nOrchestrate Frame uses its small-task collapse. Store initialization, pilot, queue, landing and wake registration do not run. There are no PRs, stacks, ledger rows, or external frontier in this local case. Missing real inputs remain the next dependency. No private history or unrelated files were requested.\n\nIndependent review belongs to the parent. This producer assigns no pass grade. Full"
+    }
+  ],
+  "limits": [
+    "Selections preserve the exact source value at each locator. Truncated strings carry explicit code-unit bounds.",
+    "A producer-captured return is not a recovered native parent envelope. Missing call IDs, original capture defects and unknown model observations remain missing."
+  ]
+}

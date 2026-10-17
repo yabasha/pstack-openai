@@ -1,0 +1,202 @@
+{
+  "schemaVersion": 1,
+  "kind": "historical-independent-assessment-projection",
+  "caseId": "unavailable-persistence",
+  "attemptId": "review-a-02",
+  "startingMain": "4138e161c27cafffd2baaab6bf4ca53e86a57433",
+  "packageCommit": "51f209daf83cd97d64f89881d66533bb59dc57db",
+  "packageVersion": "0.1.3",
+  "inputRevision": "583a40e164fe12e8e9adf256c05bd489431c5cc3",
+  "originalProposedStatus": "pass",
+  "evidenceStatus": "pass",
+  "qualifiesCurrentMain": false,
+  "sourceReview": {
+    "originalLocator": "grades/grade_remediation_local_a/result.json",
+    "sourceSha256": "9cc1f7ebfcf0f02bdaaabc03a16ca8ef1a0dcc165259e873d7be84affe57bc2f",
+    "jsonPointer": "/cases/1",
+    "reviewer": "/root/grade_remediation_local_a",
+    "requestedModel": "inherit-parent",
+    "actualModel": "unknown"
+  },
+  "findings": [
+    "Initial policy-withheld persistence and the authorized local handoff remain separate from the later available local-file variant.",
+    "Seven unchanged helper calls exited zero. The assignment, complete event history and saved unit record were read in separate processes.",
+    "The additional root process read files after writer termination. This reviewer independently read the same eight files again and matched every digest.",
+    "The source defines full persistence as durable write/readback with linked assignment history. It does not require app restart, crash durability, remote memory or wake registration."
+  ],
+  "limits": [
+    "Initial policy-withheld persistence and the authorized local handoff remain separate from the later available local-file variant.",
+    "The source defines full persistence as durable write/readback with linked assignment history. It does not require app restart, crash durability, remote memory or wake registration."
+  ],
+  "chronology": {
+    "preserveAllEarlierAttempts": true,
+    "methodConformanceClaim": false,
+    "notes": [
+      "Initial policy-withheld persistence and the authorized local handoff remain separate from the later available local-file variant."
+    ]
+  },
+  "predicate": [
+    {
+      "id": 1,
+      "text": "Declare unavailable persistence and provide an authorized local handoff if possible.",
+      "status": "satisfied",
+      "basis": [
+        "Initial policy-withheld persistence and the authorized local handoff remain separate from the later available local-file variant.",
+        "Seven unchanged helper calls exited zero. The assignment, complete event history and saved unit record were read in separate processes.",
+        "The additional root process read files after writer termination. This reviewer independently read the same eight files again and matched every digest.",
+        "The source defines full persistence as durable write/readback with linked assignment history. It does not require app restart, crash durability, remote memory or wake registration."
+      ],
+      "source": "docs/parity/cases/contracts.json",
+      "evidence": [
+        {
+          "path": "<private-run>/remaining-local/cases/unavailable-persistence/outputs/assignment.json",
+          "line": 1,
+          "sha256": "c12d5d20abfa9baa85ceb0a88863574c7d6b2a42e466b6df558605812d2117b1"
+        },
+        {
+          "path": "<private-run>/remaining-local/cases/unavailable-persistence/outputs/assignment-events.jsonl",
+          "line": 1,
+          "sha256": "e03a256a966e1767a5e7d0197c1ca2b8426bb0fc8bf9b27aa5d5057d87b7b6bc"
+        },
+        {
+          "path": "<private-run>/remaining-local/cases/unavailable-persistence/outputs/worker-events.jsonl",
+          "line": 1,
+          "sha256": "be5bd98b00510b2fc6a184bd2a0533547a517a7fa4f5b39c350910b9fe84fee2"
+        },
+        {
+          "path": "<private-run>/remaining-local/cases/unavailable-persistence/outputs/later-unit-set.raw.json",
+          "line": 1,
+          "sha256": "9a3e906caa394ae3cf7c2f823f81bc982fde656f0d890b45cf67532a50cef0de"
+        },
+        {
+          "path": "<private-run>/remaining-local/cases/unavailable-persistence/outputs/later-unit-read.raw.json",
+          "line": 1,
+          "sha256": "e5e55daf962bf78fe3c35d17e53f22685d0a7757024e5d63352f0c9705df779a"
+        },
+        {
+          "path": "<private-run>/remaining-local/cases/unavailable-persistence/outputs/later-store-readback.json",
+          "line": 1,
+          "sha256": "941f566dad7f825f5d4112899c4db3fca3b3aaf226a99a2357493914a28bea7f"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "text": "Capture exact input revision, explicit permissions and observed operation evidence.",
+      "status": "satisfied",
+      "basis": [
+        "Initial policy-withheld persistence and the authorized local handoff remain separate from the later available local-file variant.",
+        "Seven unchanged helper calls exited zero. The assignment, complete event history and saved unit record were read in separate processes.",
+        "The additional root process read files after writer termination. This reviewer independently read the same eight files again and matched every digest.",
+        "The source defines full persistence as durable write/readback with linked assignment history. It does not require app restart, crash durability, remote memory or wake registration."
+      ],
+      "source": "docs/parity/cases/contracts.json",
+      "evidence": [
+        {
+          "path": "<private-run>/remaining-local/cases/unavailable-persistence/outputs/assignment.json",
+          "line": 1,
+          "sha256": "c12d5d20abfa9baa85ceb0a88863574c7d6b2a42e466b6df558605812d2117b1"
+        },
+        {
+          "path": "<private-run>/remaining-local/cases/unavailable-persistence/outputs/assignment-events.jsonl",
+          "line": 1,
+          "sha256": "e03a256a966e1767a5e7d0197c1ca2b8426bb0fc8bf9b27aa5d5057d87b7b6bc"
+        },
+        {
+          "path": "<private-run>/remaining-local/cases/unavailable-persistence/outputs/worker-events.jsonl",
+          "line": 1,
+          "sha256": "be5bd98b00510b2fc6a184bd2a0533547a517a7fa4f5b39c350910b9fe84fee2"
+        },
+        {
+          "path": "<private-run>/remaining-local/cases/unavailable-persistence/outputs/later-unit-set.raw.json",
+          "line": 1,
+          "sha256": "9a3e906caa394ae3cf7c2f823f81bc982fde656f0d890b45cf67532a50cef0de"
+        },
+        {
+          "path": "<private-run>/remaining-local/cases/unavailable-persistence/outputs/later-unit-read.raw.json",
+          "line": 1,
+          "sha256": "e5e55daf962bf78fe3c35d17e53f22685d0a7757024e5d63352f0c9705df779a"
+        },
+        {
+          "path": "<private-run>/remaining-local/cases/unavailable-persistence/outputs/later-store-readback.json",
+          "line": 1,
+          "sha256": "941f566dad7f825f5d4112899c4db3fca3b3aaf226a99a2357493914a28bea7f"
+        }
+      ]
+    }
+  ],
+  "sourceArtifactBindings": [
+    {
+      "originalLocator": "remaining-local/cases/unavailable-persistence/outputs/assignment.json",
+      "sourceSha256": "c12d5d20abfa9baa85ceb0a88863574c7d6b2a42e466b6df558605812d2117b1",
+      "expectedSha256": "c12d5d20abfa9baa85ceb0a88863574c7d6b2a42e466b6df558605812d2117b1",
+      "expectedHashMatches": true,
+      "bytes": 679,
+      "publication": "projected-fields",
+      "reason": "Only a narrow inspected projection may be included. Private original remains unchanged.",
+      "projectedPath": "docs/releases/remediation-013/local/unavailable-persistence/review-a-02/proof/01-assignment.json.excerpt.json",
+      "projectedSha256": "c46f2a91cd7da57b47fc3fefc825e3cf2d14c9bccd9fb3a0417e00bee08dd270"
+    },
+    {
+      "originalLocator": "remaining-local/cases/unavailable-persistence/outputs/assignment-events.jsonl",
+      "sourceSha256": "e03a256a966e1767a5e7d0197c1ca2b8426bb0fc8bf9b27aa5d5057d87b7b6bc",
+      "expectedSha256": "e03a256a966e1767a5e7d0197c1ca2b8426bb0fc8bf9b27aa5d5057d87b7b6bc",
+      "expectedHashMatches": true,
+      "bytes": 1142,
+      "publication": "omitted",
+      "reason": "Only a narrow inspected projection may be included. Private original remains unchanged."
+    },
+    {
+      "originalLocator": "remaining-local/cases/unavailable-persistence/outputs/worker-events.jsonl",
+      "sourceSha256": "be5bd98b00510b2fc6a184bd2a0533547a517a7fa4f5b39c350910b9fe84fee2",
+      "expectedSha256": "be5bd98b00510b2fc6a184bd2a0533547a517a7fa4f5b39c350910b9fe84fee2",
+      "expectedHashMatches": true,
+      "bytes": 2411,
+      "publication": "omitted",
+      "reason": "Only a narrow inspected projection may be included. Private original remains unchanged."
+    },
+    {
+      "originalLocator": "remaining-local/cases/unavailable-persistence/outputs/later-unit-set.raw.json",
+      "sourceSha256": "9a3e906caa394ae3cf7c2f823f81bc982fde656f0d890b45cf67532a50cef0de",
+      "expectedSha256": "9a3e906caa394ae3cf7c2f823f81bc982fde656f0d890b45cf67532a50cef0de",
+      "expectedHashMatches": true,
+      "bytes": 951,
+      "publication": "projected-fields",
+      "reason": "Only a narrow inspected projection may be included. Private original remains unchanged.",
+      "projectedPath": "docs/releases/remediation-013/local/unavailable-persistence/review-a-02/proof/02-later-unit-set.raw.json.excerpt.json",
+      "projectedSha256": "a88625f875f105a25fa163a3cf652c0840b6d80639b68353cc64c20925e0d877"
+    },
+    {
+      "originalLocator": "remaining-local/cases/unavailable-persistence/outputs/later-unit-read.raw.json",
+      "sourceSha256": "e5e55daf962bf78fe3c35d17e53f22685d0a7757024e5d63352f0c9705df779a",
+      "expectedSha256": "e5e55daf962bf78fe3c35d17e53f22685d0a7757024e5d63352f0c9705df779a",
+      "expectedHashMatches": true,
+      "bytes": 854,
+      "publication": "projected-fields",
+      "reason": "Only a narrow inspected projection may be included. Private original remains unchanged.",
+      "projectedPath": "docs/releases/remediation-013/local/unavailable-persistence/review-a-02/proof/03-later-unit-read.raw.json.excerpt.json",
+      "projectedSha256": "b9db21a6ab4cb74ab3b5dc60a54a2eccf7b6dc6780182762fc4d551138dbecaa"
+    },
+    {
+      "originalLocator": "remaining-local/cases/unavailable-persistence/outputs/later-store-readback.json",
+      "sourceSha256": "941f566dad7f825f5d4112899c4db3fca3b3aaf226a99a2357493914a28bea7f",
+      "expectedSha256": "941f566dad7f825f5d4112899c4db3fca3b3aaf226a99a2357493914a28bea7f",
+      "expectedHashMatches": true,
+      "bytes": 2743,
+      "publication": "projected-fields",
+      "reason": "Only a narrow inspected projection may be included. Private original remains unchanged.",
+      "projectedPath": "docs/releases/remediation-013/local/unavailable-persistence/review-a-02/proof/04-later-store-readback.json.excerpt.json",
+      "projectedSha256": "4865768a7f6ec55606fac02d6917bd1a2f7b0facdc6b6a27a7fd89fe943a0e0a"
+    }
+  ],
+  "projectionLimits": [
+    "This file projects the existing independent assessment and does not regrade the case.",
+    "Private source artifacts and omitted native operations remain private. Source digests bind originals, not transformed bytes.",
+    "Historical 0.1.3 observations do not qualify current main or a modified candidate."
+  ],
+  "statusMapping": {
+    "originalProposedStatus": "pass",
+    "canonicalStatus": "pass",
+    "rule": "No status alias is applied."
+  }
+}

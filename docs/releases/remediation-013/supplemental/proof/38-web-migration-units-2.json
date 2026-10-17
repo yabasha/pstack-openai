@@ -1,0 +1,33 @@
+{
+  "kind": "historical-proof-selection",
+  "source": {
+    "path": "<private-run>/web-checkpoint-3/units/migration-units/outputs/migration-units/plan-check.json",
+    "sha256": "44998d990598f479e49162157832a5e7385b19884dd8e38342137c1ff2d52dfe",
+    "bytes": 891
+  },
+  "selection": [
+    {
+      "locator": {
+        "jsonPointer": "/request/argv"
+      },
+      "value": [
+        "sh",
+        "/mnt/data/pstack-remediation-20261017/attempts-18/outputs/migration-units/verify-plan.sh"
+      ]
+    },
+    {
+      "locator": {
+        "jsonPointer": "/return"
+      },
+      "value": {
+        "stdout": "Capture compatibility expectations (C1)  boxes=5  files=1 build=1 you-see=1 verify-unit=1 verify-live=0 verify-perf=0 review-gate=0 merge=1\nIntroduce the compatible category reader (C2)  boxes=5  files=1 build=1 you-see=1 verify-unit=1 verify-live=0 verify-perf=0 review-gate=0 merge=1\nMigrate callers and remove compatibility (C3)  boxes=5  files=1 build=1 you-see=1 verify-unit=1 verify-live=0 verify-perf=0 review-gate=0 merge=1\n3 PR sections, 0 problems\nbun test v1.4.2 (744846f84)\n",
+        "stderr": "\ntests/healthy.test.mjs:\n(pass) schema reader preserves required fields [0.06ms]\n\n 1 pass\n 3 filtered out\n 0 fail\n 2 expect() calls\nRan 1 test across 1 file. [9.00ms]\n",
+        "exitCode": 0
+      }
+    }
+  ],
+  "limits": [
+    "Selections preserve the exact source value at each locator. Truncated strings carry explicit code-unit bounds.",
+    "A producer-captured return is not a recovered native parent envelope. Missing call IDs, original capture defects and unknown model observations remain missing."
+  ]
+}

@@ -1,0 +1,97 @@
+{
+  "kind": "historical-proof-selection",
+  "source": {
+    "path": "<private-run>/web-checkpoint-3/units/contiguous-verified-stack/outputs/contiguous-verified-stack-real-build/contiguous-local-model.json",
+    "sha256": "0ceb1f27ef6c397ab8d6fc3efab6558205f7a6ff3aed62cace51385171cac6f9",
+    "bytes": 835
+  },
+  "selection": [
+    {
+      "locator": {
+        "jsonPointer": "/scope"
+      },
+      "value": "INERT LOCAL RECOMMENDATION ONLY, no forge reads or merges"
+    },
+    {
+      "locator": {
+        "jsonPointer": "/observedAt"
+      },
+      "value": "2026-10-17T07:45:43.033Z"
+    },
+    {
+      "locator": {
+        "jsonPointer": "/frozenOrder"
+      },
+      "value": [
+        101,
+        102,
+        103,
+        104
+      ]
+    },
+    {
+      "locator": {
+        "jsonPointer": "/observedWorkflowVerdicts"
+      },
+      "value": {
+        "101": {
+          "verifier": "/root/r87_stack_verify101",
+          "verdict": "PASS+NOTES"
+        },
+        "102": {
+          "verifier": "/root/r87_stack_verify102",
+          "verdict": "PASS+NOTES"
+        }
+      }
+    },
+    {
+      "locator": {
+        "jsonPointer": "/localModelPrefix"
+      },
+      "value": [
+        101,
+        102
+      ]
+    },
+    {
+      "locator": {
+        "jsonPointer": "/localModelCeiling"
+      },
+      "value": 102
+    },
+    {
+      "locator": {
+        "jsonPointer": "/nextGap"
+      },
+      "value": 103
+    },
+    {
+      "locator": {
+        "jsonPointer": "/reason"
+      },
+      "value": "No new native verdict for103;104 cannot bypass gap and any supplied historical104 verdict remains input data."
+    },
+    {
+      "locator": {
+        "jsonPointer": "/landingPerformed"
+      },
+      "value": false
+    },
+    {
+      "locator": {
+        "jsonPointer": "/liveCIAndMergeability"
+      },
+      "value": "unobserved, outside authorized no-forge scope"
+    },
+    {
+      "locator": {
+        "jsonPointer": "/completeMethod"
+      },
+      "value": "unmet due guidance and raw-capture defects; model is not a landable full-run claim"
+    }
+  ],
+  "limits": [
+    "Selections preserve the exact source value at each locator. Truncated strings carry explicit code-unit bounds.",
+    "A producer-captured return is not a recovered native parent envelope. Missing call IDs, original capture defects and unknown model observations remain missing."
+  ]
+}

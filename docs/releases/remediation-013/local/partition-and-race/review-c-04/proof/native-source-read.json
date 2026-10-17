@@ -1,0 +1,34 @@
+{
+  "schemaVersion": 1,
+  "kind": "native-command-event-excerpt",
+  "caseId": "partition-and-race",
+  "attemptId": "review-c-04",
+  "inputRevision": "e1dbf216744c45345acecf367b2b449bbc9fa75f",
+  "originalLocator": "remaining-local/actors/remaining-03/events.jsonl",
+  "sourceSha256": "13886d3e013552a2e7b6f8c2ebd14d65dca369b726a26585073e5f5872141b0b",
+  "itemId": "item_30",
+  "startedLine": 55,
+  "completedLine": 56,
+  "originalEventType": "item.completed",
+  "observedOperationType": "command_execution",
+  "command": "/bin/zsh -lc 'cat <installed-frozen-package>/skills/poteto-mode/playbooks/trace-forensics.md; cat <installed-frozen-package>/skills/swarm/SKILL.md'",
+  "aggregatedOutputPrefix": "### Trace forensics\n\nYou own the diagnosis from the artifact. Load it, shape it, narrow to the cause, attribute to source.\n\nDistinct from [Runtime forensics](runtime-forensics.md), which instruments the live process. Here the capture already exists. The artifact is a fixed dataset. Read it, don't re-run it. Keep tooling generic so the playbook stays portable. Use an available DevTools or trace parser for cpuprofile and `.json.gz`, a text editor for a spindump, and heap tooling for a heapsnapshot.\n\nRead the complete [poteto mode](../SKILL.md), [session capabilities](../../../references/host-cap",
+  "originalAggregatedOutputCharacters": 9947,
+  "exitCode": 0,
+  "status": "completed",
+  "scope": "This is a source read by the case batch coordinator. It is not represented as a child worker read or as proof of all child instructions.",
+  "clock": "The public event has no timestamp. Line order is retained. No duration or clock interval is inferred.",
+  "transformation": "Exact event fields selected. Absolute task and installed-package paths are replaced with declared placeholders. Output is a prefix, not the complete source read. No other event or browser context is included. Only these literal or explicitly loop-listed registered source names are matched. This does not prove every registered source path was read. Native callable metadata is corroborated against a scoped private callsite. Protected or unrelated payload contents are not copied or decoded.",
+  "sourceScopeMatchedByCommand": [
+    "skills/swarm/SKILL.md"
+  ],
+  "nativeCallBinding": {
+    "originalLocator": "native-captures-v3/remaining-03/01a148b1-18ce-74a0-a291-3b0ccae3f040.jsonl",
+    "sourceSha256": "f75051b0c83fefaa56bc9c1099166ed4d8fc3b82cff1bef11f96499e03b07f9a",
+    "line": 95,
+    "callId": "call_43a57ae096714340b6ee844d05842780",
+    "observedToolName": "exec",
+    "observedNestedCallsite": "tools.exec_command",
+    "corroboration": "The actual scoped native custom-tool call invokes tools.exec_command with the exact command parsed from this public command_execution event. Only the callable identity and locator are projected. Its surrounding payload remains private."
+  }
+}

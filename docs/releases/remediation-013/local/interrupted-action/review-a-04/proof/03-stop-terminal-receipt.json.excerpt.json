@@ -1,0 +1,31 @@
+{
+  "kind": "selected-fixture-result-fields",
+  "caseId": "interrupted-action",
+  "attemptId": "review-a-04",
+  "originalLocator": "remaining-local/cases/interrupted-action/outputs/stop-terminal-receipt.json",
+  "sourceSha256": "40d5ffcf590b00e44bf6b875b9c8c2c1630f30d46c55c3f9636614bf1e73e79b",
+  "sourceBytes": 1342,
+  "transformation": "Named JSON fields selected by exact JSON Pointer. Task-owned absolute paths replaced with declared placeholders. Other fields omitted. These are result-artifact values, not synthesized tool execution evidence. Public selection is limited to eight short inspected fields. Longer output and unselected fields remain private.",
+  "fields": [
+    {
+      "pointer": "/assignmentId",
+      "value": "pause-partial-exposed-1"
+    },
+    {
+      "pointer": "/inputRevision",
+      "value": "ef268eed777693deda8eae320c492e0730631dce"
+    },
+    {
+      "pointer": "/observedState",
+      "value": "interrupted"
+    },
+    {
+      "pointer": "/limits",
+      "value": "This confirms interrupted worker turn after a real stop. It does not claim permanent destruction of worker identity or unattended cancellation support."
+    },
+    {
+      "pointer": "/observedModel",
+      "value": "unknown"
+    }
+  ]
+}

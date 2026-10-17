@@ -1,0 +1,23 @@
+{
+  "kind": "historical-proof-selection",
+  "source": {
+    "path": "<private-run>/cross-host-extra/local/projects/plain-restate/outputs/response.txt",
+    "sha256": "774af44849b6266dd571f006e85ac36d457b5364691dbc312b5f613a3ceb25e4",
+    "bytes": 74
+  },
+  "selection": [
+    {
+      "locator": {
+        "textCodeUnits": [
+          0,
+          74
+        ]
+      },
+      "value": "I can't see my previous message, so I can't restate it. Send me the text.\n"
+    }
+  ],
+  "limits": [
+    "Selections preserve the exact source value at each locator. Truncated strings carry explicit code-unit bounds.",
+    "A producer-captured return is not a recovered native parent envelope. Missing call IDs, original capture defects and unknown model observations remain missing."
+  ]
+}

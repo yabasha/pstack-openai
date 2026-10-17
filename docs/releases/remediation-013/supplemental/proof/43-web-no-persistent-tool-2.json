@@ -1,0 +1,38 @@
+{
+  "kind": "historical-proof-selection",
+  "source": {
+    "path": "<private-run>/web-checkpoint-3/units/no-persistent-tool/outputs/no-persistent-tool/after.json",
+    "sha256": "14413bf377adeabc931a1248f07a70f5f172aeaded25a28aed9b7912255479b6",
+    "bytes": 696
+  },
+  "selection": [
+    {
+      "locator": {
+        "jsonPointer": "/cwd"
+      },
+      "value": "/mnt/data/pstack-remediation-20261017/attempts-18/outputs/no-persistent-tool/work"
+    },
+    {
+      "locator": {
+        "jsonPointer": "/exitCode"
+      },
+      "value": 1
+    },
+    {
+      "locator": {
+        "jsonPointer": "/stdout"
+      },
+      "value": "bun test v1.4.2 (744846f84)\n"
+    },
+    {
+      "locator": {
+        "jsonPointer": "/stderr"
+      },
+      "value": "\ncommitted-inputs/domain.test.mjs:\n(pass) negative counts rejected [0.16ms]\nerror: expect(received).toBe(expected)\n\nExpected: \"1.50\"\nReceived: \"1.5\"\n\n(fail) totals fixed to two decimals [0.19ms]\n\n 1 pass\n 1 fail\n 2 expect() calls\nRan 2 tests across 1 file. [3.00ms]\n"
+    }
+  ],
+  "limits": [
+    "Selections preserve the exact source value at each locator. Truncated strings carry explicit code-unit bounds.",
+    "A producer-captured return is not a recovered native parent envelope. Missing call IDs, original capture defects and unknown model observations remain missing."
+  ]
+}

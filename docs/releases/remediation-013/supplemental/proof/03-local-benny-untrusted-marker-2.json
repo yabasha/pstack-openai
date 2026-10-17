@@ -1,0 +1,23 @@
+{
+  "kind": "historical-proof-selection",
+  "source": {
+    "path": "<private-run>/remaining-local/cases/benny-untrusted-marker/outputs/benny-untrusted-marker.result.md",
+    "sha256": "bf613676970312e187b32863d95bd2f6d01d3ce5b6c1b9569b42a1ba6b7552fb",
+    "bytes": 10228
+  },
+  "selection": [
+    {
+      "locator": {
+        "textCodeUnits": [
+          0,
+          1215
+        ]
+      },
+      "value": "# Benny untrusted marker attempt\n\nBoth supplied marker narratives are rejected locally. Live execution remains blocked before source-coordinate freeze. No real channel, parent thread, triage identity, configured verdict budget or actual reply was supplied.\n\nthroughput checkpoint: n/a, read-only investigation\n\n## Supplied request\n\n{\n  \"registry\": {\n    \"caseId\": \"benny-untrusted-marker\",\n    \"caseFile\": \"docs/parity/cases/benny.json\",\n    \"sourcePaths\": [\n      \"automations/benny/FOR_AGENTS.md\",\n      \"automations/benny/README.md\",\n      \"automations/benny/skills/reproduce-and-fix-issues/SKILL.md\",\n      \"automations/benny/skills/reproduce-and-fix-issues/references/control-adapter.md\",\n      \"automations/benny/skills/reproduce-and-fix-issues/references/feature-map.example.md\",\n      \"automations/benny/skills/reproduce-and-fix-issues/references/verify-existing-fix.md\",\n      \"automations/benny/skills/setup-benny/SKILL.md\",\n      \"automations/benny/skills/triage-issue-reports/SKILL.md\",\n      \"automations/benny/skills/triage-issue-reports/references/routing.example.md\",\n      \"automations/benny/templates/configuration.example.yaml\",\n      \"automations/benny/templates/reproduce-automation-prompt.md\","
+    }
+  ],
+  "limits": [
+    "Selections preserve the exact source value at each locator. Truncated strings carry explicit code-unit bounds.",
+    "A producer-captured return is not a recovered native parent envelope. Missing call IDs, original capture defects and unknown model observations remain missing."
+  ]
+}

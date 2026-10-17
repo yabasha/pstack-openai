@@ -1,0 +1,115 @@
+{
+  "schemaVersion": 1,
+  "kind": "historical-independent-assessment-projection",
+  "caseId": "authorized-program",
+  "attemptId": "review-c-06",
+  "startingMain": "4138e161c27cafffd2baaab6bf4ca53e86a57433",
+  "packageCommit": "51f209daf83cd97d64f89881d66533bb59dc57db",
+  "packageVersion": "0.1.3",
+  "inputRevision": "66a96016bb748e93157c484234f2035d49ccb38a",
+  "originalProposedStatus": "blocked",
+  "evidenceStatus": "blocked",
+  "qualifiesCurrentMain": false,
+  "sourceReview": {
+    "originalLocator": "grades/grade_remediation_local_c/result.json",
+    "sourceSha256": "2582d82fe0ad256da816b168e5b242a713d134d62af8657c4f7bc255d3a7ceba",
+    "jsonPointer": "/cases/5",
+    "reviewer": "/root/grade_remediation_local_c",
+    "requestedModel": "inherit-parent",
+    "actualModel": "unknown"
+  },
+  "findings": [
+    "The actor stated the full-autopilot protocol and withheld execution because no subsequent explicit go or real PR coordinates were supplied. Local receipt persistence is observed, but no PR lifecycle, owner/swarm lane, countersign, forge outcome or wake registration occurred."
+  ],
+  "limits": [
+    "Explicit go for actual lifecycle scope",
+    "Real authorized PR coordinates and operator-retained item",
+    "Actual owner/swarm, forge and wake observations"
+  ],
+  "chronology": [],
+  "predicate": "Autopilot-full step 1 state-then-wait and case expectedFull after explicit go govern this positive lifecycle case. A safe stop does not prove post-go capability.",
+  "sourceArtifactBindings": [
+    {
+      "originalLocator": "remaining-local/cases/authorized-program/task-contract.json",
+      "sourceSha256": "a591738302be664adf825212db7545a0143353907f83068d7a9c7e2e33aba2bd",
+      "expectedSha256": "a591738302be664adf825212db7545a0143353907f83068d7a9c7e2e33aba2bd",
+      "expectedHashMatches": true,
+      "bytes": 6845,
+      "publication": "omitted",
+      "reason": "Only a narrow inspected projection may be included. Private original remains unchanged."
+    },
+    {
+      "originalLocator": "remaining-local/cases/authorized-program/outputs/authorized-program.result.md",
+      "sourceSha256": "441ea0982f736f74a90ba909c6442031f8c684649c33bb4cb5f4e3279645e796",
+      "expectedSha256": "441ea0982f736f74a90ba909c6442031f8c684649c33bb4cb5f4e3279645e796",
+      "expectedHashMatches": true,
+      "bytes": 7114,
+      "publication": "omitted",
+      "reason": "Only a narrow inspected projection may be included. Private original remains unchanged."
+    },
+    {
+      "originalLocator": "remaining-local/cases/authorized-program/outputs/completion.json",
+      "sourceSha256": "a4ffe5e55180b744e40766645a048af73a2503f0e8ce7f3a2e6e3a9cb990eb9c",
+      "expectedSha256": "a4ffe5e55180b744e40766645a048af73a2503f0e8ce7f3a2e6e3a9cb990eb9c",
+      "expectedHashMatches": true,
+      "bytes": 48278,
+      "publication": "omitted",
+      "reason": "Raw/native context, broad discovery, completion dump, or bulk source manifest is excluded. No protected payload is decoded."
+    },
+    {
+      "originalLocator": "remaining-local/cases/authorized-program/outputs/first-response.txt",
+      "sourceSha256": "54a881b57e0bfc5949bcfdaa4a1a4f27b65b770ee8744d7092e47b39fc6de422",
+      "expectedSha256": "54a881b57e0bfc5949bcfdaa4a1a4f27b65b770ee8744d7092e47b39fc6de422",
+      "expectedHashMatches": true,
+      "bytes": 300,
+      "publication": "omitted",
+      "reason": "Only a narrow inspected projection may be included. Private original remains unchanged."
+    },
+    {
+      "originalLocator": "remaining-local/cases/authorized-program/outputs/verification.json",
+      "sourceSha256": "f3e31f6ca2844bdf0d8c7b48537f249e334d24f1d44af23ad117ac57b4540dc9",
+      "expectedSha256": "f3e31f6ca2844bdf0d8c7b48537f249e334d24f1d44af23ad117ac57b4540dc9",
+      "expectedHashMatches": true,
+      "bytes": 6122,
+      "publication": "omitted",
+      "reason": "Only a narrow inspected projection may be included. Private original remains unchanged."
+    },
+    {
+      "originalLocator": "remaining-local/cases/authorized-program/outputs/variants.json",
+      "sourceSha256": "b89f9f63a31d45ade50374cb02c499a9b1f6174390b87ac193da55a38ec0a3d4",
+      "expectedSha256": "b89f9f63a31d45ade50374cb02c499a9b1f6174390b87ac193da55a38ec0a3d4",
+      "expectedHashMatches": true,
+      "bytes": 3842,
+      "publication": "omitted",
+      "reason": "Only a narrow inspected projection may be included. Private original remains unchanged."
+    },
+    {
+      "originalLocator": "remaining-local/cases/authorized-program/outputs/continuation.md",
+      "sourceSha256": "374bfa607b12565f73124902f71dacf8c8f5d59069bed241475ed888d6fa17fc",
+      "expectedSha256": "374bfa607b12565f73124902f71dacf8c8f5d59069bed241475ed888d6fa17fc",
+      "expectedHashMatches": true,
+      "bytes": 926,
+      "publication": "omitted",
+      "reason": "Only a narrow inspected projection may be included. Private original remains unchanged."
+    },
+    {
+      "originalLocator": "remaining-local/cases/authorized-program/outputs/decisions.tsv",
+      "sourceSha256": "baaaf8c0a88c79a0c2ab60399aa05839edad8c2053351913c4ddc0420410130e",
+      "expectedSha256": "baaaf8c0a88c79a0c2ab60399aa05839edad8c2053351913c4ddc0420410130e",
+      "expectedHashMatches": true,
+      "bytes": 315,
+      "publication": "omitted",
+      "reason": "Only a narrow inspected projection may be included. Private original remains unchanged."
+    }
+  ],
+  "projectionLimits": [
+    "This file projects the existing independent assessment and does not regrade the case.",
+    "Private source artifacts and omitted native operations remain private. Source digests bind originals, not transformed bytes.",
+    "Historical 0.1.3 observations do not qualify current main or a modified candidate."
+  ],
+  "statusMapping": {
+    "originalProposedStatus": "blocked",
+    "canonicalStatus": "blocked",
+    "rule": "No status alias is applied."
+  }
+}

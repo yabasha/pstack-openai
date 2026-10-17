@@ -1,0 +1,92 @@
+{
+  "documentType": "selected-original-proof",
+  "caseId": "approval-before-edit",
+  "selections": [
+    {
+      "origin": {
+        "path": "web-checkpoint-4/units/approval-before-edit/outputs/approval-before-edit/synthesizer/result.json",
+        "sha256": "b97fad4826772c2639bbf84dc48618dd432cc82aa1af4a442e38663efe0b9534",
+        "bytes": 1109,
+        "pointers": [
+          ""
+        ]
+      },
+      "selections": [
+        {
+          "pointer": "",
+          "value": {
+            "id": "approval-synthesizer-0",
+            "workerId": "/root/r87_approval_edit/synthesizer",
+            "inputRevision": "8aea51d6b26c5374561c4b69ea8bf06af367a2aa",
+            "outputOwner": "/root/r87_approval_edit/synthesizer",
+            "outputPath": "synthesizer/result.md",
+            "role": "synthesizer",
+            "status": "completed",
+            "startedOrder": 7,
+            "completedOrder": 0,
+            "requestedModel": "inherit-parent",
+            "actualModel": "unknown",
+            "retryCount": 0,
+            "method": {
+              "sampleCount": 1,
+              "sampleDefinition": "One fresh independent synthesis over all three full reviewer outputs",
+              "order": "After three terminal results were fully inspected"
+            },
+            "taskArtifact": "evidence/synthesizer.task.md",
+            "rubricProvided": true,
+            "resultRevision": "8aea51d6b26c5374561c4b69ea8bf06af367a2aa",
+            "resultMethod": {
+              "sampleCount": 1,
+              "sampleDefinition": "One fresh independent synthesis over all three full reviewer outputs",
+              "order": "After three terminal results were fully inspected"
+            },
+            "outputSha256": "86075e7e5ad755f7c7708431f7935e92e9612a332c70834ecdef8de1ff6cee30",
+            "assignmentId": "approval-synthesizer-0"
+          }
+        }
+      ]
+    },
+    {
+      "origin": {
+        "path": "web-checkpoint-4/units/approval-before-edit/outputs/approval-before-edit/synthesizer/result.md",
+        "sha256": "86075e7e5ad755f7c7708431f7935e92e9612a332c70834ecdef8de1ff6cee30",
+        "bytes": 1033,
+        "pointers": [
+          ""
+        ]
+      },
+      "selections": [
+        {
+          "pointer": "",
+          "value": "## Accepted\n\n| Problem | Proposal | Routing |\n|---|---|---|\n\n## Rejected\n\n- Principle: Report change status only to the extent supported by observed artifacts, as the repeated unsupported shipment claims in fixture-events-04 and -06 demonstrate.\n- Reason: skill-not-used\n\n- Principle: Preserve the supplied Bun preference and proposal-before-application requirement without treating them as evidence of a durable tooling discovery or skill gap.\n- Reason: decision-changing\n\n- Principle: Establish actual target use or a visible missed trigger before routing a proposed skill edit or description change.\n- Reason: skill-not-used\n\n- Principle: Retrieve referenced context independently when an authorized source is supplied, but this digest supplies no retrievable hand-off establishing a self-sufficiency failure.\n- Reason: specificity\n\n## Backlog\n\nNone established: the supplied synthetic digest records unsupported status claims but no observed tooling mechanism or artifact transition sufficient to propose structural enforcement.\n"
+        }
+      ]
+    },
+    {
+      "origin": {
+        "path": "web-checkpoint-4/units/approval-before-edit/outputs/approval-before-edit/evidence/synthesizer-inspected.json",
+        "sha256": "09c01d7b473516b1e55080984af0028a56d7e8af3339150ba9f5709e622a6d36",
+        "bytes": 1563,
+        "pointers": [
+          "/nativeCaptureAvailable",
+          "/rawEnvelopeLimit",
+          "/contentInspection"
+        ]
+      },
+      "selections": [
+        {
+          "pointer": "/nativeCaptureAvailable",
+          "value": false
+        },
+        {
+          "pointer": "/rawEnvelopeLimit",
+          "value": "Worker result JSON includes extra assignmentId and retains completedOrder 0. Raw bytes preserved. Coordinator capture gives observed terminal event order separately; original immutable assignment unchanged."
+        },
+        {
+          "pointer": "/contentInspection",
+          "value": "Read full synthesis and checked all reviewer inputs, rejection reasons, empty Accepted, structural Backlog check and approval gate."
+        }
+      ]
+    }
+  ]
+}

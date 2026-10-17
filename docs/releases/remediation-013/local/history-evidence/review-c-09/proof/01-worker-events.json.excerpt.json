@@ -1,0 +1,43 @@
+{
+  "kind": "selected-fixture-result-fields",
+  "caseId": "history-evidence",
+  "attemptId": "review-c-09",
+  "originalLocator": "remaining-local/cases/history-evidence/outputs/worker-events.json",
+  "sourceSha256": "25de44142977ce7116e53c4b8010bc0f2a38280e570e6ce13db9cf7dd6e47f69",
+  "sourceBytes": 2983,
+  "transformation": "Named JSON fields selected by exact JSON Pointer. Task-owned absolute paths replaced with declared placeholders. Other fields omitted. These are result-artifact values, not synthesized tool execution evidence. Public selection is limited to eight short inspected fields. Longer output and unselected fields remain private.",
+  "fields": [
+    {
+      "pointer": "/0/assignmentId",
+      "value": "history-evidence-source-control-01"
+    },
+    {
+      "pointer": "/0/inputRevision",
+      "value": "97c14cafd67603ef8ed7f26727503c1310e7034f"
+    },
+    {
+      "pointer": "/1/assignmentId",
+      "value": "history-evidence-source-control-01"
+    },
+    {
+      "pointer": "/1/requestedModel",
+      "value": "inherit-parent"
+    },
+    {
+      "pointer": "/1/actualModel",
+      "value": "unknown"
+    },
+    {
+      "pointer": "/2/assignmentId",
+      "value": "history-evidence-source-control-01"
+    },
+    {
+      "pointer": "/2/sha256",
+      "value": "80373e9587130140ad4319c36edf0fad35ed4c9ff212eb4dbd6b38b730cb7db1"
+    },
+    {
+      "pointer": "/3/assignmentId",
+      "value": "history-evidence-synthesizer-01"
+    }
+  ]
+}

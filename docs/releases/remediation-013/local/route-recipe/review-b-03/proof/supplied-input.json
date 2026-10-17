@@ -1,0 +1,10 @@
+{
+  "kind": "supplied-fixture-input-excerpt",
+  "caseId": "route-recipe",
+  "inputRevision": "8ad10cb42cc9e0a09f6eb9239b2909203a7f9a3e",
+  "originalLocator": "remaining-local/cases/route-recipe/task-contract.json",
+  "sourceSha256": "149742a64d666007161a39bb19471172b3d67d9d167e01eaded437feefa5d534",
+  "pointer": "/case/prompt",
+  "suppliedPrompt": "Which pstack workflow should I use to reproduce an app bug and prove the fix? Give me a prompt; do not start the work.",
+  "transformation": "Only the exact supplied case prompt is projected. Fixture data and arbitrary surrounding contract fields are omitted. This is supplied input, not a native successful tool operation."
+}

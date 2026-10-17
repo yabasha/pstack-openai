@@ -1,0 +1,31 @@
+{
+  "kind": "selected-fixture-result-fields",
+  "caseId": "dependent-caller",
+  "attemptId": "review-b-08",
+  "originalLocator": "cross-host-extra/local/projects/dependent-caller/outputs/after-probe-receipt.json",
+  "sourceSha256": "d9bd116bad554eaecd6581d8dce0e0eb5848e49ad9cdb372b421ef5ff49ee025",
+  "sourceBytes": 377,
+  "transformation": "Named JSON fields selected by exact JSON Pointer. Task-owned absolute paths replaced with declared placeholders. Other fields omitted. These are result-artifact values, not synthesized tool execution evidence. Public selection is limited to eight short inspected fields. Longer output and unselected fields remain private.",
+  "fields": [
+    {
+      "pointer": "/command",
+      "value": "bun --no-install committed-inputs/shared/additional/cache/probe.mjs"
+    },
+    {
+      "pointer": "/exitCode",
+      "value": 1
+    },
+    {
+      "pointer": "/stdout",
+      "value": "teardown error: TypeError: undefined is not an object (evaluating 'get(key).ready')\n"
+    },
+    {
+      "pointer": "/stderr",
+      "value": ""
+    },
+    {
+      "pointer": "/inputRevision",
+      "value": "1adddb23d5a03b964e957118fab19000e2a1ae63"
+    }
+  ]
+}

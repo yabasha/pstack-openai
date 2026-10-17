@@ -1,0 +1,159 @@
+{
+  "kind": "historical-proof-selection",
+  "source": {
+    "path": "<private-run>/remaining-local/cases/swarm-walkthrough/outputs/batch-2/slice-2/result.json",
+    "sha256": "124cddb1afd79d6ec70f938da91b296bfd179ffcf67ba78fecda34ed481ee711",
+    "bytes": 2236
+  },
+  "selection": [
+    {
+      "locator": {
+        "jsonPointer": "/assignmentId"
+      },
+      "value": "batch2-slice-2"
+    },
+    {
+      "locator": {
+        "jsonPointer": "/outputOwner"
+      },
+      "value": "/root/swarm_batch2_2"
+    },
+    {
+      "locator": {
+        "jsonPointer": "/workerId"
+      },
+      "value": "/root/swarm_batch2_2"
+    },
+    {
+      "locator": {
+        "jsonPointer": "/scope"
+      },
+      "value": "committed-inputs/shared/dashboard.mjs"
+    },
+    {
+      "locator": {
+        "jsonPointer": "/inputRevision"
+      },
+      "value": "c73ca04e9faddbc2f88c796576c3c8dc30c70a22"
+    },
+    {
+      "locator": {
+        "jsonPointer": "/resultRevision"
+      },
+      "value": "c73ca04e9faddbc2f88c796576c3c8dc30c70a22"
+    },
+    {
+      "locator": {
+        "jsonPointer": "/resultMethod"
+      },
+      "value": "swarm-partition"
+    },
+    {
+      "locator": {
+        "jsonPointer": "/method"
+      },
+      "value": {
+        "sampleCount": 1,
+        "sampleDefinition": "one complete assigned source file review with bounded executable behavior check when relevant",
+        "order": "source read then behavior check then report"
+      }
+    },
+    {
+      "locator": {
+        "jsonPointer": "/reportLabel"
+      },
+      "value": "ISSUES"
+    },
+    {
+      "locator": {
+        "jsonPointer": "/terminalStatus"
+      },
+      "value": "completed"
+    },
+    {
+      "locator": {
+        "jsonPointer": "/requestedModel"
+      },
+      "value": "inherit-parent"
+    },
+    {
+      "locator": {
+        "jsonPointer": "/actualModel"
+      },
+      "value": "unknown"
+    },
+    {
+      "locator": {
+        "jsonPointer": "/requestedEffort"
+      },
+      "value": "inherit-parent"
+    },
+    {
+      "locator": {
+        "jsonPointer": "/actualEffort"
+      },
+      "value": "unknown"
+    },
+    {
+      "locator": {
+        "jsonPointer": "/retryCount"
+      },
+      "value": 0
+    },
+    {
+      "locator": {
+        "jsonPointer": "/packageCommit"
+      },
+      "value": "51f209daf83cd97d64f89881d66533bb59dc57db"
+    },
+    {
+      "locator": {
+        "jsonPointer": "/issues"
+      },
+      "value": [
+        {
+          "source": "committed-inputs/shared/dashboard.mjs",
+          "line": 2,
+          "severity": "P2",
+          "summary": "CSV customer fields are not escaped for commas or quotes; both appear in committed orders."
+        }
+      ]
+    },
+    {
+      "locator": {
+        "jsonPointer": "/check"
+      },
+      "value": {
+        "command": "bun --no-install <private-run>/remaining-local/cases/swarm-walkthrough/outputs/batch-2/slice-2/check.mjs",
+        "exitCode": 0,
+        "interpretation": "Defect reproduction assertions succeeded. Expected correct CSV comparison fails and is retained."
+      }
+    },
+    {
+      "locator": {
+        "jsonPointer": "/artifacts"
+      },
+      "value": [
+        "<private-run>/remaining-local/cases/swarm-walkthrough/outputs/batch-2/slice-2/checklist.md",
+        "<private-run>/remaining-local/cases/swarm-walkthrough/outputs/batch-2/slice-2/review.md",
+        "<private-run>/remaining-local/cases/swarm-walkthrough/outputs/batch-2/slice-2/check.mjs",
+        "<private-run>/remaining-local/cases/swarm-walkthrough/outputs/batch-2/slice-2/check-output.txt",
+        "<private-run>/remaining-local/cases/swarm-walkthrough/outputs/batch-2/slice-2/result.json"
+      ]
+    },
+    {
+      "locator": {
+        "jsonPointer": "/limits"
+      },
+      "value": [
+        "No nested worker or no-comments companion ran.",
+        "Actual model and effort unknown.",
+        "No host workflow grade."
+      ]
+    }
+  ],
+  "limits": [
+    "Selections preserve the exact source value at each locator. Truncated strings carry explicit code-unit bounds.",
+    "A producer-captured return is not a recovered native parent envelope. Missing call IDs, original capture defects and unknown model observations remain missing."
+  ]
+}

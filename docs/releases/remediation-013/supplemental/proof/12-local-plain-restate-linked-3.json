@@ -1,0 +1,23 @@
+{
+  "kind": "historical-proof-selection",
+  "source": {
+    "path": "<private-run>/seeded-restatement/local/seed.response.txt",
+    "sha256": "f9a75fa52228c3d5fc68ca43f6a7054263ad037227e2fcbad31390554d4367a8",
+    "bytes": 107
+  },
+  "selection": [
+    {
+      "locator": {
+        "textCodeUnits": [
+          0,
+          107
+        ]
+      },
+      "value": "We should serialize mutations to the shared state to prevent concurrent writers from clobbering each other."
+    }
+  ],
+  "limits": [
+    "Selections preserve the exact source value at each locator. Truncated strings carry explicit code-unit bounds.",
+    "A producer-captured return is not a recovered native parent envelope. Missing call IDs, original capture defects and unknown model observations remain missing."
+  ]
+}

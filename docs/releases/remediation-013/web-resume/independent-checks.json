@@ -1,0 +1,770 @@
+{
+  "documentType": "historical-independent-checks",
+  "own": {
+    "origin": {
+      "path": "grades/grade_web_resume/own-checks.json",
+      "sha256": "a57589c5b4428114aea6101322a34cc320a75322cfc22aa116d5de6a2415ae94",
+      "bytes": 11169,
+      "pointers": [
+        "/hashManifests",
+        "/sourceCopies",
+        "/methodChecks",
+        "/measurement",
+        "/compiler",
+        "/parentReceipts"
+      ]
+    },
+    "selections": [
+      {
+        "pointer": "/hashManifests",
+        "value": [
+          {
+            "id": "measurement-method",
+            "name": "measurement-method.hashes.json",
+            "total": 190,
+            "good": 188,
+            "missing": [
+              "outputs/measurement-method/working/.git",
+              "outputs/measurement-method/task-input/.git"
+            ],
+            "bad": []
+          },
+          {
+            "id": "plain-restate",
+            "name": "plain-restate.r87.hashes.json",
+            "total": 107,
+            "good": 107,
+            "missing": [],
+            "bad": []
+          },
+          {
+            "id": "scoped-history",
+            "name": "scoped-history.r87.hashes.json",
+            "total": 136,
+            "good": 136,
+            "missing": [],
+            "bad": []
+          },
+          {
+            "id": "invalid-state",
+            "name": "invalid-state.r87.hashes.json",
+            "total": 228,
+            "good": 228,
+            "missing": [],
+            "bad": []
+          },
+          {
+            "id": "approval-before-edit",
+            "name": "approval-before-edit.r87.hashes.json",
+            "total": 129,
+            "good": 129,
+            "missing": [],
+            "bad": []
+          },
+          {
+            "id": "dependent-caller",
+            "name": "dependent-caller.r87.hashes.json",
+            "total": 115,
+            "good": 115,
+            "missing": [],
+            "bad": []
+          },
+          {
+            "id": "shared-path-conflict",
+            "name": "shared-path-conflict.r87.hashes.json",
+            "total": 135,
+            "good": 135,
+            "missing": [],
+            "bad": []
+          },
+          {
+            "id": "unsupported-selected-model",
+            "name": "unsupported-selected-model.r87.hashes.json",
+            "total": 104,
+            "good": 104,
+            "missing": [],
+            "bad": []
+          }
+        ]
+      },
+      {
+        "pointer": "/sourceCopies",
+        "value": [
+          {
+            "id": "scoped-history",
+            "path": "source-snapshots/references/workflow-ownership.md",
+            "match": true
+          },
+          {
+            "id": "scoped-history",
+            "path": "source-snapshots/references/host-capabilities.md",
+            "match": true
+          },
+          {
+            "id": "scoped-history",
+            "path": "source-snapshots/references/model-roles.md",
+            "match": true
+          },
+          {
+            "id": "scoped-history",
+            "path": "source-snapshots/references/orchestration-contract.md",
+            "match": true
+          },
+          {
+            "id": "scoped-history",
+            "path": "source-snapshots/references/agent-prompts/poteto-agent.md",
+            "match": true
+          },
+          {
+            "id": "scoped-history",
+            "path": "source-snapshots/skills/why/SKILL.md",
+            "match": true
+          },
+          {
+            "id": "scoped-history",
+            "path": "source-snapshots/skills/principle-build-the-lever/SKILL.md",
+            "match": true
+          },
+          {
+            "id": "scoped-history",
+            "path": "source-snapshots/skills/poteto-mode/SKILL.md",
+            "match": true
+          },
+          {
+            "id": "scoped-history",
+            "path": "source-snapshots/skills/recall/SKILL.md",
+            "match": true
+          },
+          {
+            "id": "scoped-history",
+            "path": "source-snapshots/skills/unslop/SKILL.md",
+            "match": true
+          },
+          {
+            "id": "scoped-history",
+            "path": "source-snapshots/skills/principle-prove-it-works/SKILL.md",
+            "match": true
+          }
+        ]
+      },
+      {
+        "pointer": "/methodChecks",
+        "value": [
+          {
+            "caseId": "shared-path-conflict",
+            "id": "shared-path-A-0",
+            "ownerMatch": true,
+            "methodMatch": true,
+            "rawMethodMatch": true,
+            "rawOwner": "/root/r87_shared_path/calculator",
+            "hashMatch": true,
+            "orderValid": true,
+            "fieldCount": 18
+          },
+          {
+            "caseId": "shared-path-conflict",
+            "id": "shared-path-B-0",
+            "ownerMatch": true,
+            "methodMatch": true,
+            "rawMethodMatch": true,
+            "rawOwner": null,
+            "hashMatch": true,
+            "orderValid": true,
+            "fieldCount": 18
+          }
+        ]
+      },
+      {
+        "pointer": "/measurement",
+        "value": [
+          {
+            "name": "sample-A-1",
+            "rowCount": 60000,
+            "mismatches": 0,
+            "bytes": 5186671,
+            "digest": "915ec50bca3a66b6394c67d7a11b569f43f80c0f24846fdabe4d869ac4940810",
+            "digestMatches": true,
+            "exit": 0,
+            "completedRows": 60000,
+            "errors": 0,
+            "revision": "63b1c3a33583a4e688ecaa34099383ccddf5169d",
+            "elapsedMsMatches": true
+          },
+          {
+            "name": "sample-B-1",
+            "rowCount": 60000,
+            "mismatches": 0,
+            "bytes": 5186671,
+            "digest": "915ec50bca3a66b6394c67d7a11b569f43f80c0f24846fdabe4d869ac4940810",
+            "digestMatches": true,
+            "exit": 0,
+            "completedRows": 60000,
+            "errors": 0,
+            "revision": "f2312f141ab907d6d37844f7cdba2c5e2a8d5146",
+            "elapsedMsMatches": true
+          },
+          {
+            "name": "sample-A-2",
+            "rowCount": 60000,
+            "mismatches": 0,
+            "bytes": 5186671,
+            "digest": "915ec50bca3a66b6394c67d7a11b569f43f80c0f24846fdabe4d869ac4940810",
+            "digestMatches": true,
+            "exit": 0,
+            "completedRows": 60000,
+            "errors": 0,
+            "revision": "63b1c3a33583a4e688ecaa34099383ccddf5169d",
+            "elapsedMsMatches": true
+          },
+          {
+            "name": "sample-B-2",
+            "rowCount": 60000,
+            "mismatches": 0,
+            "bytes": 5186671,
+            "digest": "915ec50bca3a66b6394c67d7a11b569f43f80c0f24846fdabe4d869ac4940810",
+            "digestMatches": true,
+            "exit": 0,
+            "completedRows": 60000,
+            "errors": 0,
+            "revision": "f2312f141ab907d6d37844f7cdba2c5e2a8d5146",
+            "elapsedMsMatches": true
+          },
+          {
+            "name": "sample-A-3",
+            "rowCount": 60000,
+            "mismatches": 0,
+            "bytes": 5186671,
+            "digest": "915ec50bca3a66b6394c67d7a11b569f43f80c0f24846fdabe4d869ac4940810",
+            "digestMatches": true,
+            "exit": 0,
+            "completedRows": 60000,
+            "errors": 0,
+            "revision": "63b1c3a33583a4e688ecaa34099383ccddf5169d",
+            "elapsedMsMatches": true
+          },
+          {
+            "name": "sample-B-3",
+            "rowCount": 60000,
+            "mismatches": 0,
+            "bytes": 5186671,
+            "digest": "915ec50bca3a66b6394c67d7a11b569f43f80c0f24846fdabe4d869ac4940810",
+            "digestMatches": true,
+            "exit": 0,
+            "completedRows": 60000,
+            "errors": 0,
+            "revision": "f2312f141ab907d6d37844f7cdba2c5e2a8d5146",
+            "elapsedMsMatches": true
+          },
+          {
+            "name": "sample-A-4",
+            "rowCount": 60000,
+            "mismatches": 0,
+            "bytes": 5186671,
+            "digest": "915ec50bca3a66b6394c67d7a11b569f43f80c0f24846fdabe4d869ac4940810",
+            "digestMatches": true,
+            "exit": 0,
+            "completedRows": 60000,
+            "errors": 0,
+            "revision": "63b1c3a33583a4e688ecaa34099383ccddf5169d",
+            "elapsedMsMatches": true
+          },
+          {
+            "name": "sample-B-4",
+            "rowCount": 60000,
+            "mismatches": 0,
+            "bytes": 5186671,
+            "digest": "915ec50bca3a66b6394c67d7a11b569f43f80c0f24846fdabe4d869ac4940810",
+            "digestMatches": true,
+            "exit": 0,
+            "completedRows": 60000,
+            "errors": 0,
+            "revision": "f2312f141ab907d6d37844f7cdba2c5e2a8d5146",
+            "elapsedMsMatches": true
+          },
+          {
+            "name": "sample-A-5",
+            "rowCount": 60000,
+            "mismatches": 0,
+            "bytes": 5186671,
+            "digest": "915ec50bca3a66b6394c67d7a11b569f43f80c0f24846fdabe4d869ac4940810",
+            "digestMatches": true,
+            "exit": 0,
+            "completedRows": 60000,
+            "errors": 0,
+            "revision": "63b1c3a33583a4e688ecaa34099383ccddf5169d",
+            "elapsedMsMatches": true
+          },
+          {
+            "name": "sample-B-5",
+            "rowCount": 60000,
+            "mismatches": 0,
+            "bytes": 5186671,
+            "digest": "915ec50bca3a66b6394c67d7a11b569f43f80c0f24846fdabe4d869ac4940810",
+            "digestMatches": true,
+            "exit": 0,
+            "completedRows": 60000,
+            "errors": 0,
+            "revision": "f2312f141ab907d6d37844f7cdba2c5e2a8d5146",
+            "elapsedMsMatches": true
+          }
+        ]
+      },
+      {
+        "pointer": "/compiler",
+        "value": {
+          "type": "array",
+          "count": 12,
+          "summary": [
+            {
+              "id": "positive",
+              "exit": 0,
+              "keys": [
+                "id",
+                "expectExit",
+                "exitCode",
+                "stdout",
+                "stderr",
+                "endedAt",
+                "request"
+              ]
+            },
+            {
+              "id": "baseline-contradiction",
+              "exit": 0,
+              "keys": [
+                "id",
+                "expectExit",
+                "exitCode",
+                "stdout",
+                "stderr",
+                "endedAt",
+                "request"
+              ]
+            },
+            {
+              "id": "done-missing-date",
+              "exit": 1,
+              "keys": [
+                "id",
+                "expectExit",
+                "exitCode",
+                "stdout",
+                "stderr",
+                "endedAt",
+                "request"
+              ]
+            },
+            {
+              "id": "open-with-date",
+              "exit": 1,
+              "keys": [
+                "id",
+                "expectExit",
+                "exitCode",
+                "stdout",
+                "stderr",
+                "endedAt",
+                "request"
+              ]
+            },
+            {
+              "id": "open-undefined-date",
+              "exit": 1,
+              "keys": [
+                "id",
+                "expectExit",
+                "exitCode",
+                "stdout",
+                "stderr",
+                "endedAt",
+                "request"
+              ]
+            },
+            {
+              "id": "mixed-ids",
+              "exit": 1,
+              "keys": [
+                "id",
+                "expectExit",
+                "exitCode",
+                "stdout",
+                "stderr",
+                "endedAt",
+                "request"
+              ]
+            },
+            {
+              "id": "raw-id",
+              "exit": 1,
+              "keys": [
+                "id",
+                "expectExit",
+                "exitCode",
+                "stdout",
+                "stderr",
+                "endedAt",
+                "request"
+              ]
+            },
+            {
+              "id": "empty-head",
+              "exit": 1,
+              "keys": [
+                "id",
+                "expectExit",
+                "exitCode",
+                "stdout",
+                "stderr",
+                "endedAt",
+                "request"
+              ]
+            },
+            {
+              "id": "missing-variant",
+              "exit": 1,
+              "keys": [
+                "id",
+                "expectExit",
+                "exitCode",
+                "stdout",
+                "stderr",
+                "endedAt",
+                "request"
+              ]
+            },
+            {
+              "id": "language-limit-invalid-date",
+              "exit": 0,
+              "keys": [
+                "id",
+                "expectExit",
+                "exitCode",
+                "stdout",
+                "stderr",
+                "endedAt",
+                "request"
+              ]
+            },
+            {
+              "id": "language-limit-assertion-bypass",
+              "exit": 0,
+              "keys": [
+                "id",
+                "expectExit",
+                "exitCode",
+                "stdout",
+                "stderr",
+                "endedAt",
+                "request"
+              ]
+            },
+            {
+              "id": "language-limit-structural-extra",
+              "exit": 0,
+              "keys": [
+                "id",
+                "expectExit",
+                "exitCode",
+                "stdout",
+                "stderr",
+                "endedAt",
+                "request"
+              ]
+            }
+          ],
+          "runtimeCount": 16
+        }
+      },
+      {
+        "pointer": "/parentReceipts",
+        "value": [
+          {
+            "name": "134-invalid-export-shared-assignment.raw.json",
+            "sha256": "cde923236d1118c8c2f21cf95b51c7c0d94458e106eff2d229fd69befbb59dfe",
+            "keys": [
+              "request",
+              "result",
+              "clock"
+            ]
+          },
+          {
+            "name": "141-dependent-export-model-assignment.raw.json",
+            "sha256": "29ce47f5d8c4f84dd5044618ca394e8db2e468c28261acff8cce8972e7d9fbc0",
+            "keys": [
+              "request",
+              "result",
+              "clock"
+            ]
+          },
+          {
+            "name": "150-measurement-and-shared-proof.raw.json",
+            "sha256": "873a2323acd536d33fc2223e8d3f3619410b7a682fdcbcd38d0fdb4765eca43b",
+            "keys": [
+              "request",
+              "result",
+              "clock"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "replay": {
+    "origin": {
+      "path": "grades/grade_web_resume/replay-results.json",
+      "sha256": "b462b414da012232d3b9c5727df8065afd363636dd05725031cecf24030c600c",
+      "bytes": 158994,
+      "pointers": [
+        "/compiler",
+        "/runtime",
+        "/cache"
+      ]
+    },
+    "selections": [
+      {
+        "pointer": "/compiler",
+        "value": [
+          {
+            "id": "positive",
+            "args": [
+              "/opt/homebrew/Cellar/bun/1.4.2/bin/bun",
+              "--no-install",
+              "<private-run>/runtime/package-main-4138e16/skills/poteto-mode/scripts/node_modules/typescript/bin/tsc",
+              "--project",
+              "<private-run>/web-checkpoint-4/units/invalid-state/outputs/invalid-state/verification-v2/proofs/positive.tsconfig.json"
+            ],
+            "exitCode": 0,
+            "expected": 0,
+            "match": true,
+            "stdout": "",
+            "stderr": ""
+          },
+          {
+            "id": "baseline-contradiction",
+            "args": [
+              "/opt/homebrew/Cellar/bun/1.4.2/bin/bun",
+              "--no-install",
+              "<private-run>/runtime/package-main-4138e16/skills/poteto-mode/scripts/node_modules/typescript/bin/tsc",
+              "--project",
+              "<private-run>/web-checkpoint-4/units/invalid-state/outputs/invalid-state/verification-v2/proofs/baseline-contradiction.tsconfig.json"
+            ],
+            "exitCode": 0,
+            "expected": 0,
+            "match": true,
+            "stdout": "",
+            "stderr": ""
+          },
+          {
+            "id": "done-missing-date",
+            "args": [
+              "/opt/homebrew/Cellar/bun/1.4.2/bin/bun",
+              "--no-install",
+              "<private-run>/runtime/package-main-4138e16/skills/poteto-mode/scripts/node_modules/typescript/bin/tsc",
+              "--project",
+              "<private-run>/web-checkpoint-4/units/invalid-state/outputs/invalid-state/verification-v2/proofs/done-missing-date.tsconfig.json"
+            ],
+            "exitCode": 1,
+            "expected": 1,
+            "match": true,
+            "stdout": "../pstack-remediation-20261017/web-checkpoint-4/units/invalid-state/outputs/invalid-state/verification-v2/proofs/done-missing-date.ts(1,44): error TS2322: Type '{ kind: \"done\"; }' is not assignable to type 'Task'.\n  Property 'at' is missing in type '{ kind: \"done\"; }' but required in type '{ readonly kind: \"done\"; readonly at: Date; }'.\n",
+            "stderr": ""
+          },
+          {
+            "id": "open-with-date",
+            "args": [
+              "/opt/homebrew/Cellar/bun/1.4.2/bin/bun",
+              "--no-install",
+              "<private-run>/runtime/package-main-4138e16/skills/poteto-mode/scripts/node_modules/typescript/bin/tsc",
+              "--project",
+              "<private-run>/web-checkpoint-4/units/invalid-state/outputs/invalid-state/verification-v2/proofs/open-with-date.tsconfig.json"
+            ],
+            "exitCode": 1,
+            "expected": 1,
+            "match": true,
+            "stdout": "../pstack-remediation-20261017/web-checkpoint-4/units/invalid-state/outputs/invalid-state/verification-v2/proofs/open-with-date.ts(1,44): error TS2322: Type '{ kind: \"open\"; at: Date; }' is not assignable to type 'Task'.\n  Types of property 'at' are incompatible.\n    Type 'Date' is not assignable to type 'undefined'.\n",
+            "stderr": ""
+          },
+          {
+            "id": "open-undefined-date",
+            "args": [
+              "/opt/homebrew/Cellar/bun/1.4.2/bin/bun",
+              "--no-install",
+              "<private-run>/runtime/package-main-4138e16/skills/poteto-mode/scripts/node_modules/typescript/bin/tsc",
+              "--project",
+              "<private-run>/web-checkpoint-4/units/invalid-state/outputs/invalid-state/verification-v2/proofs/open-undefined-date.tsconfig.json"
+            ],
+            "exitCode": 1,
+            "expected": 1,
+            "match": true,
+            "stdout": "../pstack-remediation-20261017/web-checkpoint-4/units/invalid-state/outputs/invalid-state/verification-v2/proofs/open-undefined-date.ts(1,44): error TS2375: Type '{ kind: \"open\"; at: undefined; }' is not assignable to type 'Task' with 'exactOptionalPropertyTypes: true'. Consider adding 'undefined' to the types of the target's properties.\n  Type '{ kind: \"open\"; at: undefined; }' is not assignable to type '{ readonly kind: \"open\"; readonly at?: never; }' with 'exactOptionalPropertyTypes: true'. Consider adding 'undefined' to the types of the target's properties.\n    Types of property 'at' are incompatible.\n      Type 'undefined' is not assignable to type 'never'.\n",
+            "stderr": ""
+          },
+          {
+            "id": "mixed-ids",
+            "args": [
+              "/opt/homebrew/Cellar/bun/1.4.2/bin/bun",
+              "--no-install",
+              "<private-run>/runtime/package-main-4138e16/skills/poteto-mode/scripts/node_modules/typescript/bin/tsc",
+              "--project",
+              "<private-run>/web-checkpoint-4/units/invalid-state/outputs/invalid-state/verification-v2/proofs/mixed-ids.tsconfig.json"
+            ],
+            "exitCode": 1,
+            "expected": 1,
+            "match": true,
+            "stdout": "../pstack-remediation-20261017/web-checkpoint-4/units/invalid-state/outputs/invalid-state/verification-v2/proofs/mixed-ids.ts(1,81): error TS2322: Type 'OrderId' is not assignable to type 'UserId'.\n  Type 'OrderId' is not assignable to type '{ readonly __brand: \"UserId\"; }'.\n    Types of property '__brand' are incompatible.\n      Type '\"OrderId\"' is not assignable to type '\"UserId\"'.\n../pstack-remediation-20261017/web-checkpoint-4/units/invalid-state/outputs/invalid-state/verification-v2/proofs/mixed-ids.ts(1,109): error TS2322: Type 'UserId' is not assignable to type 'OrderId'.\n  Type 'UserId' is not assignable to type '{ readonly __brand: \"OrderId\"; }'.\n    Types of property '__brand' are incompatible.\n      Type '\"UserId\"' is not assignable to type '\"OrderId\"'.\n",
+            "stderr": ""
+          },
+          {
+            "id": "raw-id",
+            "args": [
+              "/opt/homebrew/Cellar/bun/1.4.2/bin/bun",
+              "--no-install",
+              "<private-run>/runtime/package-main-4138e16/skills/poteto-mode/scripts/node_modules/typescript/bin/tsc",
+              "--project",
+              "<private-run>/web-checkpoint-4/units/invalid-state/outputs/invalid-state/verification-v2/proofs/raw-id.tsconfig.json"
+            ],
+            "exitCode": 1,
+            "expected": 1,
+            "match": true,
+            "stdout": "../pstack-remediation-20261017/web-checkpoint-4/units/invalid-state/outputs/invalid-state/verification-v2/proofs/raw-id.ts(1,46): error TS2322: Type 'string' is not assignable to type 'UserId'.\n  Type 'string' is not assignable to type '{ readonly __brand: \"UserId\"; }'.\n",
+            "stderr": ""
+          },
+          {
+            "id": "empty-head",
+            "args": [
+              "/opt/homebrew/Cellar/bun/1.4.2/bin/bun",
+              "--no-install",
+              "<private-run>/runtime/package-main-4138e16/skills/poteto-mode/scripts/node_modules/typescript/bin/tsc",
+              "--project",
+              "<private-run>/web-checkpoint-4/units/invalid-state/outputs/invalid-state/verification-v2/proofs/empty-head.tsconfig.json"
+            ],
+            "exitCode": 1,
+            "expected": 1,
+            "match": true,
+            "stdout": "../pstack-remediation-20261017/web-checkpoint-4/units/invalid-state/outputs/invalid-state/verification-v2/proofs/empty-head.ts(1,38): error TS2345: Argument of type '[]' is not assignable to parameter of type 'NonEmpty<unknown>'.\n  Source has 0 element(s) but target requires 1.\n",
+            "stderr": ""
+          },
+          {
+            "id": "missing-variant",
+            "args": [
+              "/opt/homebrew/Cellar/bun/1.4.2/bin/bun",
+              "--no-install",
+              "<private-run>/runtime/package-main-4138e16/skills/poteto-mode/scripts/node_modules/typescript/bin/tsc",
+              "--project",
+              "<private-run>/web-checkpoint-4/units/invalid-state/outputs/invalid-state/verification-v2/proofs/missing-variant.tsconfig.json"
+            ],
+            "exitCode": 1,
+            "expected": 1,
+            "match": true,
+            "stdout": "../pstack-remediation-20261017/web-checkpoint-4/units/invalid-state/outputs/invalid-state/verification-v2/proofs/missing-variant.ts(1,229): error TS2322: Type '{ kind: \"archived\"; }' is not assignable to type 'never'.\n",
+            "stderr": ""
+          },
+          {
+            "id": "language-limit-invalid-date",
+            "args": [
+              "/opt/homebrew/Cellar/bun/1.4.2/bin/bun",
+              "--no-install",
+              "<private-run>/runtime/package-main-4138e16/skills/poteto-mode/scripts/node_modules/typescript/bin/tsc",
+              "--project",
+              "<private-run>/web-checkpoint-4/units/invalid-state/outputs/invalid-state/verification-v2/proofs/language-limit-invalid-date.tsconfig.json"
+            ],
+            "exitCode": 0,
+            "expected": 0,
+            "match": true,
+            "stdout": "",
+            "stderr": ""
+          },
+          {
+            "id": "language-limit-assertion-bypass",
+            "args": [
+              "/opt/homebrew/Cellar/bun/1.4.2/bin/bun",
+              "--no-install",
+              "<private-run>/runtime/package-main-4138e16/skills/poteto-mode/scripts/node_modules/typescript/bin/tsc",
+              "--project",
+              "<private-run>/web-checkpoint-4/units/invalid-state/outputs/invalid-state/verification-v2/proofs/language-limit-assertion-bypass.tsconfig.json"
+            ],
+            "exitCode": 0,
+            "expected": 0,
+            "match": true,
+            "stdout": "",
+            "stderr": ""
+          },
+          {
+            "id": "language-limit-structural-extra",
+            "args": [
+              "/opt/homebrew/Cellar/bun/1.4.2/bin/bun",
+              "--no-install",
+              "<private-run>/runtime/package-main-4138e16/skills/poteto-mode/scripts/node_modules/typescript/bin/tsc",
+              "--project",
+              "<private-run>/web-checkpoint-4/units/invalid-state/outputs/invalid-state/verification-v2/proofs/language-limit-structural-extra.tsconfig.json"
+            ],
+            "exitCode": 0,
+            "expected": 0,
+            "match": true,
+            "stdout": "",
+            "stderr": ""
+          }
+        ]
+      },
+      {
+        "pointer": "/runtime",
+        "value": {
+          "passed": true,
+          "rejectedInputs": 8,
+          "head": 7,
+          "emptySum": 0,
+          "sum": 6
+        }
+      },
+      {
+        "pointer": "/cache",
+        "value": [
+          {
+            "variant": "after",
+            "args": [
+              "/opt/homebrew/Cellar/bun/1.4.2/bin/bun",
+              "--no-install",
+              "<private-run>/web-checkpoint-4/units/dependent-caller/outputs/dependent-caller/task-input/committed-inputs/shared/additional/cache/probe.mjs"
+            ],
+            "exitCode": 1,
+            "expected": 1,
+            "match": true,
+            "stdout": "teardown error: TypeError: undefined is not an object (evaluating 'get(key).ready')\n",
+            "stderr": ""
+          },
+          {
+            "variant": "before",
+            "args": [
+              "/opt/homebrew/Cellar/bun/1.4.2/bin/bun",
+              "--no-install",
+              "<private-run>/web-checkpoint-4/units/dependent-caller/outputs/dependent-caller/evidence/before/probe.mjs"
+            ],
+            "exitCode": 0,
+            "expected": 0,
+            "match": true,
+            "stdout": "disposed ready: true\nteardown completed\n",
+            "stderr": ""
+          }
+        ]
+      }
+    ]
+  },
+  "originalFailedWholeInstallAssertion": {
+    "origin": {
+      "path": "grades/grade_web_resume/replay-results-initial-overbroad.json",
+      "sha256": "9c7ae909cdbcacf531d9c316ead3d34aefca5c43e84da7422cc3e1443a74f3f5",
+      "bytes": 136976,
+      "pointers": [
+        "/sourceHashes"
+      ]
+    },
+    "mismatchCount": 428,
+    "statement": "Whole-install equality failed. The corrected check distinguishes 177 matching operative entries from plugin.json and 427 documentation differences. Original failed output is preserved in its private source artifact."
+  },
+  "limits": [
+    "All 1142 present export manifest entries match. Two measurement .git pointer entries remain omitted.",
+    "The grader checked all 600000 sampled output rows. No new timing experiments ran during grading or curation.",
+    "The Web installed directory is not identical to the prepared tree. Shared context and actual model identity remain limited.",
+    "Excerpts do not supply missing native envelopes or canonical publication acceptance."
+  ]
+}

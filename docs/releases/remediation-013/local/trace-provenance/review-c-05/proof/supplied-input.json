@@ -1,0 +1,10 @@
+{
+  "kind": "supplied-fixture-input-excerpt",
+  "caseId": "trace-provenance",
+  "inputRevision": "e7380379bf90fb5a31131ef56640fde3fd2f4016",
+  "originalLocator": "remaining-local/cases/trace-provenance/task-contract.json",
+  "sourceSha256": "e06a86f1278f47d0d3c04b71e756d4a1720970f81f8b3ec8f54b62b3a7f55d31",
+  "pointer": "/case/prompt",
+  "suppliedPrompt": "Diagnose supplied inert cpuprofile, compressed JSON trace, heap snapshot and spindump fixtures without rerunning their processes. Include exact artifact identities, original order, timestamps and symbols mapping to fixture source. Build an authorized sqlite query artifact and inspect hot frames, a retainer chain to a GC root or a stuck thread and wait reason. Compare a supplied before/after pair separately from an unpaired capture. Repeat with absent parser, denied derived writes, inaccessible artifact, unresolved symbols and unavailable workers. No installation, upload, live capture, external write or fix.",
+  "transformation": "Only the exact supplied case prompt is projected. Fixture data and arbitrary surrounding contract fields are omitted. This is supplied input, not a native successful tool operation."
+}

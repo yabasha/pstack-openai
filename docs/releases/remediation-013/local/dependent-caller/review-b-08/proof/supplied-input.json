@@ -1,0 +1,10 @@
+{
+  "kind": "supplied-fixture-input-excerpt",
+  "caseId": "dependent-caller",
+  "inputRevision": "1adddb23d5a03b964e957118fab19000e2a1ae63",
+  "originalLocator": "cross-host-extra/local/projects/dependent-caller/task-contract.json",
+  "sourceSha256": "95259fe2bb1783e36a0efbf449da029d43152197fbd908ba9d7feceb77f9c814",
+  "pointer": "/case/prompt",
+  "suppliedPrompt": "Review a cache invalidation diff. Trace a dependent caller outside the diff, including its pinned dependency and teardown timing, and prove or mark unproven the runtime consequence of the one fact the change relies on.",
+  "transformation": "Only the exact supplied case prompt is projected. Fixture data and arbitrary surrounding contract fields are omitted. This is supplied input, not a native successful tool operation."
+}

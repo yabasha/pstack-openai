@@ -36,6 +36,8 @@ The N candidates will receive the same prompt, so the prompt is the contract.
 
 Dispatch all N independent candidates together through the exposed worker operation, using observed background execution when available. Give each the same task, shared grounding path, its isolated output path, and instructions to produce both the artifact and a short rationale. Withhold the rubric from candidates. Inspect terminal results and artifact paths before accepting completion; a wait notification alone is insufficient.
 
+A fresh worker can still inherit the parent's conversation, including its rubric. Use an exposed context-isolation setting for blind candidates, such as `fork_turns: "none"` where the host documents it, and inspect that dispatch setting. Asking a worker to ignore inherited grading cues does not remove exposure. If isolation is unavailable, disclose that limit and withhold the blind comparison claim. Quarantine exposed attempts rather than relabeling them as blind; any replacement gets a new immutable assignment and its own output path.
+
 Each rationale names the alternatives the candidate considered and what it rejected.
 
 If a candidate fails to produce output, proceed with N-1 and note the dropout in the synthesis record. One survivor means incomplete competition, even if its artifact is useful. Zero survivors blocks synthesis. Never integrate partial or cancelled artifacts as completed candidates.

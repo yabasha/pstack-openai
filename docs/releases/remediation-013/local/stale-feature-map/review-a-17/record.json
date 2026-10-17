@@ -1,0 +1,55 @@
+{
+  "caseId": "stale-feature-map",
+  "packageVersion": "0.1.3",
+  "packageCommit": "51f209daf83cd97d64f89881d66533bb59dc57db",
+  "host": "codex",
+  "hostMode": "Historical native Local task-scoped fixture observation",
+  "date": "2026-10-17",
+  "input": "Historical fixture at 63b1c3a33583a4e688ecaa34099383ccddf5169d. Independent assessment review-a-17.",
+  "observedOutput": "Three actual read-only source readers covered create/search/export; returned citations were inspected and the index/churn sweep added missing source-backed export and CLI routes. Actual browser create denied entitlement, enabled it and observed Saved/new row. PTY HTTP observed 202, pending and completed jobs, exact persisted body/id and restart durability. Search clear/whitespace failed and remains a product gap, not weakened expected behavior. Every mapped feature received an actual drive. The source explicitly makes the feature, not each sentence, the rigor unit. Missing brief visible Saving is retained as an unverified recipe predicate, rather than a fabricated success or automatic whole-feature nonexecution. Doctor/reset, final exact PTY stops, failed connections and 55 preserved proof files are recorded. An early second listener before first teardown was a sequencing defect; later terminal/readback proof does not erase it. The initial real validator failed on missing PyYAML; the supplemental coordinator invocation with the approved isolated PyYAML exited zero after actor terminal. Registration and trigger behavior remain unproven. Independent diff review found missing CLI routes, followed by corrections and actual re-drives. Local proven corrections remain shipping-blocked; no fixture PR was authorized or created.",
+  "status": "reduced-pass",
+  "execution": "workers",
+  "inputRevision": "63b1c3a33583a4e688ecaa34099383ccddf5169d",
+  "sourcePaths": [
+    "skills/maintain-verification-skill/SKILL.md"
+  ],
+  "documentedCapabilities": [
+    "Frozen source instructions only. Current-main qualification is not established."
+  ],
+  "exposedTools": [],
+  "artifacts": [
+    "docs/releases/remediation-013/local/stale-feature-map/review-a-17/assessment.json",
+    "docs/releases/remediation-013/local/stale-feature-map/review-a-17/proof/01-process-events-final.json.excerpt.json",
+    "docs/releases/remediation-013/local/stale-feature-map/review-a-17/proof/02-post-cleanup-result.json.excerpt.json",
+    "docs/releases/remediation-013/local/stale-feature-map/review-a-17/proof/03-result.json.excerpt.json",
+    "docs/releases/remediation-013/local/stale-feature-map/review-a-17/proof/task-result-prefix.json"
+  ],
+  "limits": [
+    "Three actual read-only source readers covered create/search/export; returned citations were inspected and the index/churn sweep added missing source-backed export and CLI routes.",
+    "Actual browser create denied entitlement, enabled it and observed Saved/new row. PTY HTTP observed 202, pending and completed jobs, exact persisted body/id and restart durability. Search clear/whitespace failed and remains a product gap, not weakened expected behavior.",
+    "Every mapped feature received an actual drive. The source explicitly makes the feature, not each sentence, the rigor unit. Missing brief visible Saving is retained as an unverified recipe predicate, rather than a fabricated success or automatic whole-feature nonexecution.",
+    "Doctor/reset, final exact PTY stops, failed connections and 55 preserved proof files are recorded. An early second listener before first teardown was a sequencing defect; later terminal/readback proof does not erase it.",
+    "The initial real validator failed on missing PyYAML; the supplemental coordinator invocation with the approved isolated PyYAML exited zero after actor terminal. Registration and trigger behavior remain unproven.",
+    "Independent diff review found missing CLI routes, followed by corrections and actual re-drives. Local proven corrections remain shipping-blocked; no fixture PR was authorized or created.",
+    "Only the actual operations listed in this record have narrow public bindings. Other operations from the independent assessment remain unprojected. No missing operation is invented.",
+    "No qualifying callable native-operation excerpt was selected for this attempt. Result fields and independent review remain available, but do not substitute for missing operation proof."
+  ],
+  "priorActionIdentities": [],
+  "permissions": {
+    "execution": "granted",
+    "writes": "granted",
+    "externalActions": "denied"
+  },
+  "models": {
+    "requested": "inherit-parent",
+    "actual": "gpt-6.1-sol"
+  },
+  "successfulOperations": [],
+  "nativeObservations": [
+    {
+      "observation": "review-outcome",
+      "evidence": "docs/releases/remediation-013/local/stale-feature-map/review-a-17/assessment.json",
+      "reviewedBy": "/root/grade_remediation_local_a"
+    }
+  ]
+}

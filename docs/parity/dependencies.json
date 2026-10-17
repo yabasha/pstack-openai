@@ -1450,7 +1450,7 @@
       "sourcePath": ".cursor-plugin/plugin.json",
       "sourceSha256": "7bc736c60985805f70465e044e5adc7028663f72a73deea7fa3e95e52d70dc8e",
       "destinationPath": "plugin.json",
-      "destinationSha256": "6a4d33e5a6a9f8974f31b4233dcc0b9fa558599246436dd9a4a3aa8b4567f174",
+      "destinationSha256": "509871a98f0bbdc4c21991ee396331424208e308f40df21d15c1fcb27bfdf456",
       "kind": "support",
       "packageDependencies": [
         "assets/logo.png"
@@ -1473,7 +1473,9 @@
           "sourceLines": [
             19
           ],
-          "destinationLines": []
+          "destinationLines": [
+            12
+          ]
         }
       ]
     },
@@ -1521,7 +1523,7 @@
       "sourcePath": "README.md",
       "sourceSha256": "7f39feae81103e18b567e1fa5075cba86425cf4697a01be66a7422ef93c2c855",
       "destinationPath": "README.md",
-      "destinationSha256": "4deaad036e82484f1eccce2b06abec11d868efa8a816af873b93abc8d1e34712",
+      "destinationSha256": "ff0af2bb8c979fccf2a217ad517b1fc5bf55e418c3b86d5488dec42d34e71f14",
       "kind": "support",
       "packageDependencies": [
         "UPSTREAM.md",
@@ -1592,9 +1594,7 @@
         {
           "dependencyId": "python-runtime",
           "sourceLines": [],
-          "destinationLines": [
-            19
-          ]
+          "destinationLines": []
         },
         {
           "dependencyId": "shell-runtime",
@@ -1628,7 +1628,12 @@
             224,
             229
           ],
-          "destinationLines": []
+          "destinationLines": [
+            14,
+            19,
+            69,
+            87
+          ]
         },
         {
           "dependencyId": "history-persistence",
@@ -1637,7 +1642,9 @@
             116,
             253
           ],
-          "destinationLines": []
+          "destinationLines": [
+            19
+          ]
         },
         {
           "dependencyId": "loop-scheduler",
@@ -1648,7 +1655,7 @@
             263
           ],
           "destinationLines": [
-            25
+            87
           ]
         },
         {
@@ -1658,7 +1665,10 @@
             115,
             261
           ],
-          "destinationLines": []
+          "destinationLines": [
+            19,
+            87
+          ]
         },
         {
           "dependencyId": "repository-gates",
@@ -1670,7 +1680,11 @@
             231,
             263
           ],
-          "destinationLines": []
+          "destinationLines": [
+            32,
+            33,
+            55
+          ]
         },
         {
           "dependencyId": "profile-trace-sqlite",
@@ -1707,7 +1721,7 @@
             263
           ],
           "destinationLines": [
-            16
+            81
           ]
         },
         {
@@ -4392,7 +4406,7 @@
       "sourcePath": "skills/arena/SKILL.md",
       "sourceSha256": "6e17736b5228b661569c3af054f8302c55cf9bf1649447652d53705cce38bed6",
       "destinationPath": "skills/arena/SKILL.md",
-      "destinationSha256": "28ecec523bed9d58bc044fe5abc549fc18a7c9de8e5ee6a124f7331fb0200cad",
+      "destinationSha256": "a2f87d1e10a9c8a894e5f43109993589a08f72b4a1813a6ccfc16196e90e8859",
       "kind": "root-skill",
       "packageDependencies": [
         "references/host-capabilities.md",
@@ -4431,13 +4445,20 @@
           ],
           "destinationLines": [
             3,
+            9,
             11,
             13,
+            28,
             31,
             32,
+            33,
             37,
-            45,
-            47
+            39,
+            43,
+            47,
+            49,
+            55,
+            59
           ]
         }
       ]
@@ -5689,7 +5710,7 @@
       "sourcePath": "skills/poteto-mode/SKILL.md",
       "sourceSha256": "31cd02290360ce63564ef22b74d69fc6d90e62181d05a644cbed8f6c47cc9412",
       "destinationPath": "skills/poteto-mode/SKILL.md",
-      "destinationSha256": "cb03eedb91cea96b570af30a7af317c6aae6a47a321cff2e82af656141ab0f14",
+      "destinationSha256": "22cccae02d199ab02268e6c8e1a4aebd8e6997f8df3ed8022dbda941286c3aea",
       "kind": "root-skill",
       "packageDependencies": [
         "skills/poteto-mode/playbooks/prototype.md",
@@ -5798,8 +5819,8 @@
             26
           ],
           "destinationLines": [
-            34,
-            138
+            54,
+            246
           ]
         },
         {
@@ -5808,8 +5829,8 @@
             28
           ],
           "destinationLines": [
-            36,
-            138
+            56,
+            246
           ]
         },
         {
@@ -5818,7 +5839,7 @@
             30
           ],
           "destinationLines": [
-            38
+            58
           ]
         },
         {
@@ -5827,7 +5848,7 @@
             30
           ],
           "destinationLines": [
-            38
+            58
           ]
         },
         {
@@ -5839,17 +5860,27 @@
             146
           ],
           "destinationLines": [
-            38,
-            113,
-            145,
-            185
+            58,
+            60,
+            62,
+            64,
+            66
           ]
         },
         {
           "dependencyId": "orch",
           "sourceLines": [],
           "destinationLines": [
-            132
+            192,
+            194,
+            198,
+            202,
+            204,
+            206,
+            208,
+            210,
+            212,
+            214
           ]
         },
         {
@@ -5858,61 +5889,83 @@
             99
           ],
           "destinationLines": [
-            113,
-            133
+            215,
+            217,
+            219,
+            221,
+            223,
+            225,
+            227,
+            229,
+            231,
+            233,
+            235,
+            237,
+            239,
+            241
           ]
         },
         {
           "dependencyId": "check-plan",
           "sourceLines": [],
           "destinationLines": [
-            131
+            181,
+            183,
+            185,
+            187,
+            189,
+            191
           ]
         },
         {
           "dependencyId": "worktree-audit",
           "sourceLines": [],
           "destinationLines": [
-            134
+            242
           ]
         },
         {
           "dependencyId": "decision-log",
           "sourceLines": [],
           "destinationLines": [
-            130
+            170,
+            172,
+            174,
+            176,
+            178,
+            180
           ]
         },
         {
           "dependencyId": "helper-packages",
           "sourceLines": [],
           "destinationLines": [
-            136
+            244
           ]
         },
         {
           "dependencyId": "bun-runtime",
           "sourceLines": [],
           "destinationLines": [
-            131,
-            132,
-            133,
-            136
+            181,
+            194,
+            217,
+            244
           ]
         },
         {
           "dependencyId": "python-runtime",
           "sourceLines": [],
           "destinationLines": [
-            134
+            242
           ]
         },
         {
           "dependencyId": "shell-runtime",
           "sourceLines": [],
           "destinationLines": [
-            130,
-            134
+            170,
+            242
           ]
         },
         {
@@ -5921,8 +5974,9 @@
             146
           ],
           "destinationLines": [
-            132,
-            185
+            133,
+            210,
+            242
           ]
         },
         {
@@ -5932,7 +5986,10 @@
             138
           ],
           "destinationLines": [
-            177
+            215,
+            217,
+            241,
+            285
           ]
         },
         {
@@ -5941,15 +5998,16 @@
             138
           ],
           "destinationLines": [
-            133,
-            177
+            241,
+            285
           ]
         },
         {
           "dependencyId": "graphite-cli",
           "sourceLines": [],
           "destinationLines": [
-            132
+            210,
+            212
           ]
         },
         {
@@ -5974,27 +6032,27 @@
           ],
           "destinationLines": [
             3,
-            8,
-            28,
-            43,
-            44,
-            74,
-            82,
-            99,
-            101,
-            103,
-            105,
-            107,
-            109,
-            111,
-            113,
-            122,
-            128,
-            136,
+            17,
+            19,
+            50,
+            51,
+            52,
+            80,
+            81,
+            141,
+            143,
+            145,
+            147,
+            149,
+            151,
+            153,
             160,
-            162,
+            164,
             178,
-            179
+            187,
+            204,
+            206,
+            246
           ]
         },
         {
@@ -6005,11 +6063,18 @@
             144
           ],
           "destinationLines": [
-            130,
-            132,
-            149,
-            182,
-            183
+            143,
+            153,
+            164,
+            170,
+            174,
+            178,
+            180,
+            198,
+            204,
+            208,
+            214,
+            242
           ]
         },
         {
@@ -6019,8 +6084,14 @@
             139
           ],
           "destinationLines": [
-            44,
-            178
+            84,
+            135,
+            206,
+            237,
+            239,
+            284,
+            286,
+            287
           ]
         },
         {
@@ -6031,8 +6102,7 @@
             142
           ],
           "destinationLines": [
-            103,
-            181
+            131
           ]
         },
         {
@@ -6042,8 +6112,17 @@
             137
           ],
           "destinationLines": [
-            87,
-            176
+            81,
+            82,
+            149,
+            187,
+            198,
+            204,
+            217,
+            227,
+            229,
+            242,
+            246
           ]
         },
         {
@@ -6052,7 +6131,8 @@
             130
           ],
           "destinationLines": [
-            169
+            276,
+            277
           ]
         },
         {
@@ -6061,7 +6141,7 @@
             134
           ],
           "destinationLines": [
-            173
+            281
           ]
         }
       ]
@@ -9427,7 +9507,7 @@
       "sourcePath": "skills/poteto-mode/scripts/watch-pr/policy.test.ts",
       "sourceSha256": "a9fedb25feefd1f57ef6a662f80c99018690170a3a8070773a08eaf694d1d3d9",
       "destinationPath": "skills/poteto-mode/scripts/watch-pr/policy.test.ts",
-      "destinationSha256": "b377f82cd332fd5e24be6bfe0087d7307d39c1eb27ca61dbc4b52970f41f5da6",
+      "destinationSha256": "4d1a6978639c582bbd4aa88191c50c70223350c2dad921dce1dcd3eb43405197",
       "kind": "support",
       "packageDependencies": [
         "skills/poteto-mode/scripts/bootstrap.ts",
@@ -9449,7 +9529,13 @@
           ],
           "destinationLines": [
             2,
-            270
+            3,
+            14,
+            98,
+            432,
+            442,
+            454,
+            502
           ]
         },
         {
@@ -9470,10 +9556,36 @@
             154
           ],
           "destinationLines": [
-            74,
-            88,
-            109,
-            158
+            76,
+            78,
+            79,
+            80,
+            90,
+            93,
+            99,
+            101,
+            111,
+            120,
+            131,
+            160,
+            163,
+            164,
+            442,
+            450,
+            454,
+            466,
+            474,
+            480,
+            484,
+            489,
+            495,
+            520,
+            530,
+            532,
+            534,
+            538,
+            539,
+            540
           ]
         }
       ]
@@ -9482,7 +9594,7 @@
       "sourcePath": "skills/poteto-mode/scripts/watch-pr/policy.ts",
       "sourceSha256": "68d240505852cf23c9b2dea463342e9e61243f486b3cc86c735d140f9ee7be49",
       "destinationPath": "skills/poteto-mode/scripts/watch-pr/policy.ts",
-      "destinationSha256": "6a89a4698138ce64cf5285b67ff92750cdc2a3f8ba48946fa202678c72ac37a4",
+      "destinationSha256": "52e46d779b5ba2429ae5be293e7eeb9be7ca1fced5b97a73e5545ac3c231a16c",
       "kind": "support",
       "packageDependencies": [
         "skills/poteto-mode/scripts/bootstrap.ts",
@@ -9505,12 +9617,19 @@
           ],
           "destinationLines": [
             1,
-            69,
-            73,
-            75,
-            138,
-            293,
-            397
+            56,
+            148,
+            229,
+            248,
+            277,
+            298,
+            341,
+            383,
+            442,
+            583,
+            603,
+            676,
+            740
           ]
         },
         {
@@ -9523,11 +9642,27 @@
             131
           ],
           "destinationLines": [
-            49,
-            52,
-            53,
-            145,
-            148
+            277,
+            353,
+            356,
+            363,
+            370,
+            383,
+            397,
+            408,
+            409,
+            425,
+            436,
+            438,
+            530,
+            532,
+            533,
+            583,
+            714,
+            754,
+            814,
+            848,
+            873
           ]
         },
         {
@@ -9556,27 +9691,35 @@
             686
           ],
           "destinationLines": [
-            92,
-            94,
-            95,
-            110,
-            112,
-            118,
-            120,
-            126,
-            128,
-            130,
-            144,
-            170,
+            4,
+            64,
+            68,
+            74,
+            75,
+            76,
+            82,
+            87,
+            106,
+            116,
+            124,
+            139,
+            148,
+            155,
+            162,
             171,
+            172,
+            173,
+            179,
             192,
-            208,
-            223,
-            243,
-            244,
-            265,
-            269,
-            716
+            210,
+            217,
+            229,
+            248,
+            324,
+            341,
+            392,
+            396,
+            714
           ]
         }
       ]
@@ -11333,7 +11476,7 @@
       "sourcePath": "skills/swarm/SKILL.md",
       "sourceSha256": "bdcee4168e22428036e93d7cdeec3f391dbc4132f927f6db2540328c22db0273",
       "destinationPath": "skills/swarm/SKILL.md",
-      "destinationSha256": "d58ab96ae605d49ff034e96416807ba11be9997368e18c1700c00e4bb0fd74f8",
+      "destinationSha256": "1cbc23295c26a6beab94fc9d49bce22f2b87180127e3926bf80993bdf0d8d71e",
       "kind": "root-skill",
       "packageDependencies": [
         "references/host-capabilities.md",
@@ -11357,14 +11500,20 @@
             40
           ],
           "destinationLines": [
-            15,
+            3,
+            9,
+            11,
+            25,
+            26,
             27,
             28,
             32,
             34,
             36,
+            38,
             42,
             44,
+            46,
             50
           ]
         },
@@ -11372,6 +11521,8 @@
           "dependencyId": "history-persistence",
           "sourceLines": [],
           "destinationLines": [
+            28,
+            42,
             46
           ]
         }
@@ -12161,5 +12312,40 @@
         }
       ]
     }
-  ]
+  ],
+  "workingTreeRefresh": {
+    "baseRevision": "bf91f1c00991fb2eda7541c45b6f0be08ac89be3",
+    "status": "uncommitted-candidate-source-audit",
+    "note": "The historical auditedPackageCommit and canonical upstream source provenance above are unchanged. This separate refresh verifies seven current destination byte hashes and inspected destination line anchors in a working tree based on baseRevision. It does not identify this uncommitted tree as a commit, transfer historical grades, or establish installed-host qualification. A new frozen revision and fresh qualification are required before release.",
+    "destinations": [
+      {
+        "path": "plugin.json",
+        "sha256": "509871a98f0bbdc4c21991ee396331424208e308f40df21d15c1fcb27bfdf456"
+      },
+      {
+        "path": "README.md",
+        "sha256": "ff0af2bb8c979fccf2a217ad517b1fc5bf55e418c3b86d5488dec42d34e71f14"
+      },
+      {
+        "path": "skills/arena/SKILL.md",
+        "sha256": "a2f87d1e10a9c8a894e5f43109993589a08f72b4a1813a6ccfc16196e90e8859"
+      },
+      {
+        "path": "skills/poteto-mode/SKILL.md",
+        "sha256": "22cccae02d199ab02268e6c8e1a4aebd8e6997f8df3ed8022dbda941286c3aea"
+      },
+      {
+        "path": "skills/poteto-mode/scripts/watch-pr/policy.test.ts",
+        "sha256": "4d1a6978639c582bbd4aa88191c50c70223350c2dad921dce1dcd3eb43405197"
+      },
+      {
+        "path": "skills/poteto-mode/scripts/watch-pr/policy.ts",
+        "sha256": "52e46d779b5ba2429ae5be293e7eeb9be7ca1fced5b97a73e5545ac3c231a16c"
+      },
+      {
+        "path": "skills/swarm/SKILL.md",
+        "sha256": "1cbc23295c26a6beab94fc9d49bce22f2b87180127e3926bf80993bdf0d8d71e"
+      }
+    ]
+  }
 }

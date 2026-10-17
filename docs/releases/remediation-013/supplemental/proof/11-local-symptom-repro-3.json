@@ -1,0 +1,90 @@
+{
+  "kind": "historical-proof-selection",
+  "source": {
+    "path": "<private-run>/work/notes_workflow_reruns/projects/symptom-repro/outputs/evidence/browser-migrated-first.json",
+    "sha256": "edb979bb48e8103ecd7ace7231aeb3abd22a23af80c751783094452e0d0ec393",
+    "bytes": 925
+  },
+  "selection": [
+    {
+      "locator": {
+        "jsonPointer": "/phase"
+      },
+      "value": "migrated-first"
+    },
+    {
+      "locator": {
+        "jsonPointer": "/driver"
+      },
+      "value": "mcp__cua_repl.js native Comet"
+    },
+    {
+      "locator": {
+        "jsonPointer": "/pid"
+      },
+      "value": 52540
+    },
+    {
+      "locator": {
+        "jsonPointer": "/url"
+      },
+      "value": "http://127.0.0.1:62992/"
+    },
+    {
+      "locator": {
+        "jsonPointer": "/sourceHashes"
+      },
+      "value": "outputs/evidence/treatment-source-hashes.json"
+    },
+    {
+      "locator": {
+        "jsonPointer": "/actions"
+      },
+      "value": [
+        "Reload attempt rejected because native app changed",
+        "Refresh AX state",
+        "Open new owned tab at local URL",
+        "Observe Alpha and Ready",
+        "Set Title Restart proof and Body Saved after legacy migration",
+        "Click Save note",
+        "Observe Entitlement required",
+        "Click Enable fixture entitlement",
+        "Observe Entitlement enabled",
+        "Click Save note",
+        "Observe Saved and rows Alpha, Restart proof"
+      ]
+    },
+    {
+      "locator": {
+        "jsonPointer": "/observedStates"
+      },
+      "value": [
+        "Notes",
+        "Alpha",
+        "Ready",
+        "Entitlement required",
+        "Entitlement enabled",
+        "Saved",
+        "Restart proof"
+      ]
+    },
+    {
+      "locator": {
+        "jsonPointer": "/unobservedStates"
+      },
+      "value": [
+        "Transient Saving was not captured"
+      ]
+    },
+    {
+      "locator": {
+        "jsonPointer": "/sideEffects"
+      },
+      "value": "New task-owned browser tab after original tab was no longer available. Only local fixture entitlement and one new note were written. Migrated disk snapshot retained outside DATA."
+    }
+  ],
+  "limits": [
+    "Selections preserve the exact source value at each locator. Truncated strings carry explicit code-unit bounds.",
+    "A producer-captured return is not a recovered native parent envelope. Missing call IDs, original capture defects and unknown model observations remain missing."
+  ]
+}

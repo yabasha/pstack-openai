@@ -1,0 +1,19 @@
+{
+  "kind": "selected-fixture-result-fields",
+  "caseId": "interrupted-action",
+  "attemptId": "review-a-04",
+  "originalLocator": "remaining-local/cases/interrupted-action/outputs/checkpoint-readback.json",
+  "sourceSha256": "905e3b43893e6efdd1868d2003bf8294b72c206bb88e482caf1eb9fe62075068",
+  "sourceBytes": 312,
+  "transformation": "Named JSON fields selected by exact JSON Pointer. Task-owned absolute paths replaced with declared placeholders. Other fields omitted. These are result-artifact values, not synthesized tool execution evidence. Public selection is limited to eight short inspected fields. Longer output and unselected fields remain private.",
+  "fields": [
+    {
+      "pointer": "/sha256",
+      "value": "3b2aafa12d8e785f9d734293a7c005bd5e72de38619d683c7dce4ae00d6073b8"
+    },
+    {
+      "pointer": "/inputRevision",
+      "value": "ef268eed777693deda8eae320c492e0730631dce"
+    }
+  ]
+}

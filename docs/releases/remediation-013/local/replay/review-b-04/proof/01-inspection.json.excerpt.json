@@ -1,0 +1,23 @@
+{
+  "kind": "selected-fixture-result-fields",
+  "caseId": "replay",
+  "attemptId": "review-b-04",
+  "originalLocator": "remaining-local/cases/replay/outputs/inspection.json",
+  "sourceSha256": "b041351fe607881e595e119fd3fea07767c0f05d231f1eea06fdaaecced7914b",
+  "sourceBytes": 14183,
+  "transformation": "Named JSON fields selected by exact JSON Pointer. Task-owned absolute paths replaced with declared placeholders. Other fields omitted. These are result-artifact values, not synthesized tool execution evidence. Public selection is limited to eight short inspected fields. Longer output and unselected fields remain private.",
+  "fields": [
+    {
+      "pointer": "/caseId",
+      "value": "replay"
+    },
+    {
+      "pointer": "/requestedModel",
+      "value": "inherit-parent"
+    },
+    {
+      "pointer": "/actualModel",
+      "value": "unknown"
+    }
+  ]
+}

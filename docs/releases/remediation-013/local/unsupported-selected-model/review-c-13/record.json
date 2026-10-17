@@ -1,0 +1,56 @@
+{
+  "caseId": "unsupported-selected-model",
+  "packageVersion": "0.1.3",
+  "packageCommit": "51f209daf83cd97d64f89881d66533bb59dc57db",
+  "host": "codex",
+  "hostMode": "Historical native Local task-scoped fixture observation",
+  "date": "2026-10-17",
+  "input": "The requested model is unavailable or rejects the selected effort. Actual task fixture revision a770be5d7e6b2d8d9ce776bf3258ae9f6f4ba24b.",
+  "observedOutput": "Inherited workers performed genuine source/runtime and comment reviews. No concrete rejected model/effort request or native rejection was supplied or observed. Those reviews cannot exercise rejection or prove a disclosed fallback from it.",
+  "status": "blocked",
+  "execution": "workers",
+  "inputRevision": "a770be5d7e6b2d8d9ce776bf3258ae9f6f4ba24b",
+  "sourcePaths": [
+    "agents/poteto-agent.md",
+    "agents/comment-sicko.md"
+  ],
+  "documentedCapabilities": [
+    "Frozen source instructions only. Current-main qualification is not established."
+  ],
+  "exposedTools": [],
+  "artifacts": [
+    "docs/releases/remediation-013/local/unsupported-selected-model/review-c-13/assessment.json",
+    "docs/releases/remediation-013/local/unsupported-selected-model/review-c-13/proof/01-unsupported_owner.assignment.json.excerpt.json",
+    "docs/releases/remediation-013/local/unsupported-selected-model/review-c-13/proof/supplied-input.json",
+    "docs/releases/remediation-013/local/unsupported-selected-model/review-c-13/proof/task-result-prefix.json"
+  ],
+  "limits": [
+    "Concrete selected model/effort and native rejection result",
+    "Supported-effort disclosure and authorized fallback transition",
+    "Only the actual operations listed in this record have narrow public bindings. Other operations from the independent assessment remain unprojected. No missing operation is invented.",
+    "No qualifying callable native-operation excerpt was selected for this attempt. Result fields and independent review remain available, but do not substitute for missing operation proof."
+  ],
+  "priorActionIdentities": [],
+  "permissions": {
+    "execution": "granted",
+    "writes": "granted",
+    "externalActions": "denied"
+  },
+  "models": {
+    "requested": "inherit-parent",
+    "actual": "unknown"
+  },
+  "successfulOperations": [],
+  "nativeObservations": [
+    {
+      "observation": "review-outcome",
+      "evidence": "docs/releases/remediation-013/local/unsupported-selected-model/review-c-13/assessment.json",
+      "reviewedBy": "/root/grade_remediation_local_c"
+    },
+    {
+      "observation": "supplied-input",
+      "evidence": "docs/releases/remediation-013/local/unsupported-selected-model/review-c-13/proof/supplied-input.json",
+      "reviewedBy": "/root/project_historical_local"
+    }
+  ]
+}

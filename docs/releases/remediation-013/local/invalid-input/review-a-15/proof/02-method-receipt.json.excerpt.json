@@ -1,0 +1,25 @@
+{
+  "kind": "selected-fixture-result-fields",
+  "caseId": "invalid-input",
+  "attemptId": "review-a-15",
+  "originalLocator": "work/local_compiler_cases/projects/order-boundary/deliverables/method-receipt.json",
+  "sourceSha256": "7014348e0b14848e999eac1016df5e53e6338b4a5c1352dce0c366006f05367b",
+  "sourceBytes": 7047,
+  "transformation": "Named JSON fields selected by exact JSON Pointer. Task-owned absolute paths replaced with declared placeholders. Other fields omitted. These are result-artifact values, not synthesized tool execution evidence. Public selection is limited to eight short inspected fields. Longer output and unselected fields remain private.",
+  "fields": [
+    {
+      "pointer": "/inputRevision",
+      "value": "be8f71ddae4c194ec08c22188718639fcceb7183"
+    },
+    {
+      "pointer": "/limits",
+      "value": [
+        "Actual models and efforts unknown; diversity unverified",
+        "Checklist-first ordering deviations in coordinator, A and judge",
+        "Event capture is causal sequence, not independently measured timestamps",
+        "Judge independently saw completed status while running; pre-spawn sequence observed by coordinator",
+        "No schema-validator run or cross-host conformance claim"
+      ]
+    }
+  ]
+}

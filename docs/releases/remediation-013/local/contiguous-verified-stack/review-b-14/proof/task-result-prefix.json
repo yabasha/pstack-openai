@@ -1,0 +1,16 @@
+{
+  "kind": "task-result-file-excerpt",
+  "caseId": "contiguous-verified-stack",
+  "attemptId": "review-b-14",
+  "inputRevision": "4a7dde94ab2778837e4c932e53cc3484d2e74dfd",
+  "originalLocator": "work/repair_real_builds/REPORT.md",
+  "sourceSha256": "cf483afd819908cd4b05843a90bf80a6befea83de3265efec502a5b7892dd362",
+  "sourceWasDirectlyListedByIndependentGrade": true,
+  "characterRange": {
+    "start": 0,
+    "endExclusive": 598,
+    "total": 3213
+  },
+  "content": "# Actual app build follow-up\n\nThe old build.ts never compiled app.ts. It wrote a constant bundle.txt, a random nonce, and a revision string. Those outputs and the old verdicts remain historical. Their original hashes still match.\n\nFresh non-author reviewers independently verified PR101 and PR102. Each produced ten genuine Bun builds across Bun and Node target formats. They exercised the source and actual emitted bundles through inherited PTY controls. Literal arguments7, -3, and0 produced the expected results. Native Node runtime compatibility is unverified because all scripts ran with Bun.\n",
+  "transformation": "An inspected prefix of the actual task-result file is projected. Task-owned absolute paths use declared placeholders. The prefix may omit later qualifications. The independent assessment and its limits govern the proposed grade. This is neither a new grade nor a native callable-operation claim."
+}

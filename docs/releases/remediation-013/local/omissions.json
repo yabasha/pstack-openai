@@ -1,0 +1,1702 @@
+{
+  "kind": "historical-projection-omissions",
+  "packageCommit": "51f209daf83cd97d64f89881d66533bb59dc57db",
+  "excludedClasses": [
+    "Raw native capture dumps and root tool dumps",
+    "Protected opaque tokens, reasoning, and private messages",
+    "Unrelated browser tabs, app inventory, private URLs, account data, and credentials",
+    "Screenshots not visually reviewed for task-only pixels",
+    "Environment maps and broad completion or source-manifest dumps"
+  ],
+  "policy": "A pattern scan alone does not authorize publication. Only the inspected case-scoped field, command-event, result-prefix, and fixture-source selections are proposed. No protected payload is decoded.",
+  "omittedArtifacts": [
+    {
+      "caseId": "draft-only-authorized",
+      "attemptId": "review-a-01",
+      "originalLocator": "remaining-local/cases/draft-only-authorized/outputs/pr-content.md",
+      "sourceSha256": "ee49e958c18d562c4549e2ce2576994980fc2d00efe6e1366724776189920429",
+      "bytes": 1726,
+      "reason": "Only a narrow inspected projection may be included. Private original remains unchanged."
+    },
+    {
+      "caseId": "draft-only-authorized",
+      "attemptId": "review-a-01",
+      "originalLocator": "remaining-local/cases/draft-only-authorized/outputs/exposed-pr-interfaces.json",
+      "sourceSha256": "01ed71556ec803e7f4f724e2d6ffea62414ac0e6f8c1e4256d37253aed8698a6",
+      "bytes": 2755,
+      "reason": "Raw/native context, broad discovery, completion dump, or bulk source manifest is excluded. No protected payload is decoded."
+    },
+    {
+      "caseId": "draft-only-authorized",
+      "attemptId": "review-a-01",
+      "originalLocator": "remaining-local/cases/draft-only-authorized/outputs/completion.json",
+      "sourceSha256": "fca2bfd372b6b858fc5d1f1f00615ea16434c15f3c9eb055f3827297585f1c74",
+      "bytes": 16924,
+      "reason": "Raw/native context, broad discovery, completion dump, or bulk source manifest is excluded. No protected payload is decoded."
+    },
+    {
+      "caseId": "unavailable-persistence",
+      "attemptId": "review-a-02",
+      "originalLocator": "remaining-local/cases/unavailable-persistence/outputs/assignment-events.jsonl",
+      "sourceSha256": "e03a256a966e1767a5e7d0197c1ca2b8426bb0fc8bf9b27aa5d5057d87b7b6bc",
+      "bytes": 1142,
+      "reason": "Only a narrow inspected projection may be included. Private original remains unchanged."
+    },
+    {
+      "caseId": "unavailable-persistence",
+      "attemptId": "review-a-02",
+      "originalLocator": "remaining-local/cases/unavailable-persistence/outputs/worker-events.jsonl",
+      "sourceSha256": "be5bd98b00510b2fc6a184bd2a0533547a517a7fa4f5b39c350910b9fe84fee2",
+      "bytes": 2411,
+      "reason": "Only a narrow inspected projection may be included. Private original remains unchanged."
+    },
+    {
+      "caseId": "benny-source-thread-compensation",
+      "attemptId": "review-a-03",
+      "originalLocator": "remaining-local/cases/benny-source-thread-compensation/outputs/exposed-tools.raw.json",
+      "sourceSha256": "4cfacacdbc838fa5013149adef868c98d394db87f90ad9d4e12c6aff479556b4",
+      "bytes": 9544,
+      "reason": "Raw/native context, broad discovery, completion dump, or bulk source manifest is excluded. No protected payload is decoded."
+    },
+    {
+      "caseId": "benny-source-thread-compensation",
+      "attemptId": "review-a-03",
+      "originalLocator": "remaining-local/cases/benny-source-thread-compensation/outputs/completion.json",
+      "sourceSha256": "99c3ade93f913c8c01195032875a3c0a3499d2df4409fcb89a31b30e19350b1a",
+      "bytes": 115930,
+      "reason": "Raw/native context, broad discovery, completion dump, or bulk source manifest is excluded. No protected payload is decoded."
+    },
+    {
+      "caseId": "interrupted-action",
+      "attemptId": "review-a-04",
+      "originalLocator": "remaining-local/cases/interrupted-action/outputs/fixture/prior-action.json",
+      "sourceSha256": "a568b270dae654a25ee9479abab15854d369d37e44e0ac96167f826e2ce640d1",
+      "bytes": 443,
+      "reason": "Only a narrow inspected projection may be included. Private original remains unchanged."
+    },
+    {
+      "caseId": "interrupted-action",
+      "attemptId": "review-a-04",
+      "originalLocator": "remaining-local/cases/interrupted-action/outputs/fixture/destination-state.json",
+      "sourceSha256": "2255f2345cf4e42d1c3264ee50d006c3c18f8534c16d32ac7fa4697df13dc312",
+      "bytes": 149,
+      "reason": "Only a narrow inspected projection may be included. Private original remains unchanged."
+    },
+    {
+      "caseId": "interrupted-action",
+      "attemptId": "review-a-04",
+      "originalLocator": "remaining-local/cases/interrupted-action/outputs/resume.md",
+      "sourceSha256": "3b2aafa12d8e785f9d734293a7c005bd5e72de38619d683c7dce4ae00d6073b8",
+      "bytes": 3678,
+      "reason": "Only a narrow inspected projection may be included. Private original remains unchanged."
+    },
+    {
+      "caseId": "interrupted-action",
+      "attemptId": "review-a-04",
+      "originalLocator": "remaining-local/cases/interrupted-action/outputs/final-verification.json",
+      "sourceSha256": "2213978447e6760013e166bf1a1fb435b99f8e09b11bea6aaea951335a8425e1",
+      "bytes": 748,
+      "reason": "Only a narrow inspected projection may be included. Private original remains unchanged."
+    },
+    {
+      "caseId": "owned-safe-cleanup",
+      "attemptId": "review-a-05",
+      "originalLocator": "remaining-local/cases/owned-safe-cleanup/outputs/commands.json",
+      "sourceSha256": "5e2cd3670b449d49f388d064d34cbaa737ccd570f8455898b323fb8310853e43",
+      "bytes": 45229,
+      "reason": "Raw/native context, broad discovery, completion dump, or bulk source manifest is excluded. No protected payload is decoded."
+    },
+    {
+      "caseId": "owned-safe-cleanup",
+      "attemptId": "review-a-05",
+      "originalLocator": "remaining-local/cases/owned-safe-cleanup/outputs/audit-raw.json",
+      "sourceSha256": "4d2f90c1db3dbe6e183a677678f1b05cdfb1dfeeb4fd3a6fe21674d314f1a184",
+      "bytes": 3792,
+      "reason": "Only a narrow inspected projection may be included. Private original remains unchanged."
+    },
+    {
+      "caseId": "owned-safe-cleanup",
+      "attemptId": "review-a-05",
+      "originalLocator": "remaining-local/cases/owned-safe-cleanup/outputs/audit-missing-exports.json",
+      "sourceSha256": "851b9df86a3a955c91e7ada55fc12fe9f022f61a3c1064f22b9034606cb956cf",
+      "bytes": 3591,
+      "reason": "Only a narrow inspected projection may be included. Private original remains unchanged."
+    },
+    {
+      "caseId": "owned-safe-cleanup",
+      "attemptId": "review-a-05",
+      "originalLocator": "remaining-local/cases/owned-safe-cleanup/outputs/completion.json",
+      "sourceSha256": "9530f75bd84ad5fecfb0c9082d0b99d3ed7f4022249cac5277fc937b4e7ee20d",
+      "bytes": 4187,
+      "reason": "Raw/native context, broad discovery, completion dump, or bulk source manifest is excluded. No protected payload is decoded."
+    },
+    {
+      "caseId": "fresh-worker-mode",
+      "attemptId": "review-a-06",
+      "originalLocator": "remaining-local/cases/fresh-worker-mode/outputs/completion.json",
+      "sourceSha256": "be2fc01cce374856d4fc3538817a0eb51e0fbc1e9db7b7dfc29303789ce1c87e",
+      "bytes": 39804,
+      "reason": "Raw/native context, broad discovery, completion dump, or bulk source manifest is excluded. No protected payload is decoded."
+    },
+    {
+      "caseId": "fresh-worker-mode",
+      "attemptId": "review-a-06",
+      "originalLocator": "remaining-local/cases/fresh-worker-mode/outputs/lead-full-feature-review.md",
+      "sourceSha256": "062c376abfaf0841b863105438e9efb8109285c37f160c404168b84c8f162024",
+      "bytes": 4723,
+      "reason": "Only a narrow inspected projection may be included. Private original remains unchanged."
+    },
+    {
+      "caseId": "fresh-worker-mode",
+      "attemptId": "review-a-06",
+      "originalLocator": "remaining-local/cases/fresh-worker-mode/outputs/lead-raw-method-comparison.json",
+      "sourceSha256": "085fe0f0d1e5ccc6f602071690710c53ec60a6ac65efab20b5785aaf8f0bb88c",
+      "bytes": 849,
+      "reason": "Only a narrow inspected projection may be included. Private original remains unchanged."
+    },
+    {
+      "caseId": "fresh-worker-mode",
+      "attemptId": "review-a-06",
+      "originalLocator": "remaining-local/cases/fresh-worker-mode/outputs/full-feature/method-contract-failure.md",
+      "sourceSha256": "c828c8a086b6dfbfcc45e8b39ac4038ce968e5d3b0c1bd224ce33b8b841a8d54",
+      "bytes": 1237,
+      "reason": "Only a narrow inspected projection may be included. Private original remains unchanged."
+    },
+    {
+      "caseId": "units-and-proof",
+      "attemptId": "review-a-07",
+      "originalLocator": "remaining-local/cases/units-and-proof/outputs/export-selected-orders.plan.md",
+      "sourceSha256": "4a114094916cfb8dd5345a26415d99bd4b0b00b3907ebc3d4a95f52ab8d10ff1",
+      "bytes": 23439,
+      "reason": "Only a narrow inspected projection may be included. Private original remains unchanged."
+    },
+    {
+      "caseId": "units-and-proof",
+      "attemptId": "review-a-07",
+      "originalLocator": "remaining-local/cases/units-and-proof/outputs/capabilities.json",
+      "sourceSha256": "40d84a1e4a3e570bc1b5c6ed2c8b1b9e14c7468e83066fe5079e1b53b6a4592a",
+      "bytes": 4006,
+      "reason": "Only a narrow inspected projection may be included. Private original remains unchanged."
+    },
+    {
+      "caseId": "units-and-proof",
+      "attemptId": "review-a-07",
+      "originalLocator": "remaining-local/cases/units-and-proof/outputs/denied-writes-response.txt",
+      "sourceSha256": "ec2095c12f4255e768d575f89abc2d0ce9fc374086e8980aaf28f642d427e06f",
+      "bytes": 23599,
+      "reason": "Only a narrow inspected projection may be included. Private original remains unchanged."
+    },
+    {
+      "caseId": "units-and-proof",
+      "attemptId": "review-a-07",
+      "originalLocator": "remaining-local/cases/units-and-proof/outputs/prototype.json",
+      "sourceSha256": "7e5084c16ed3880f393a8be4fe7553f63a73a09c6492c4082875db675524f6cf",
+      "bytes": 185,
+      "reason": "Only a narrow inspected projection may be included. Private original remains unchanged."
+    },
+    {
+      "caseId": "no-persistent-tool",
+      "attemptId": "review-a-08",
+      "originalLocator": "remaining-local/cases/no-persistent-tool/outputs/continuation.md",
+      "sourceSha256": "cfddfd742c51ef058371c15ecf5f59dec1b237aa769fb6b4b9ead2f72d177011",
+      "bytes": 2285,
+      "reason": "Only a narrow inspected projection may be included. Private original remains unchanged."
+    },
+    {
+      "caseId": "no-persistent-tool",
+      "attemptId": "review-a-08",
+      "originalLocator": "remaining-local/cases/no-persistent-tool/outputs/decisions.tsv",
+      "sourceSha256": "90d415dcdb1d469dbefcdf85bbb2943688df40616b8683892b860c8bda503d0e",
+      "bytes": 305,
+      "reason": "Only a narrow inspected projection may be included. Private original remains unchanged."
+    },
+    {
+      "caseId": "no-persistent-tool",
+      "attemptId": "review-a-08",
+      "originalLocator": "remaining-local/cases/no-persistent-tool/outputs/hashes.json",
+      "sourceSha256": "d89053fa199cc9f3e08177969e5491d56c3ae2e4841ae9ecb73ec3077d805d59",
+      "bytes": 22881,
+      "reason": "Only a narrow inspected projection may be included. Private original remains unchanged."
+    },
+    {
+      "caseId": "benny-existing-pr",
+      "attemptId": "review-a-09",
+      "originalLocator": "remaining-local/cases/benny-existing-pr/outputs/completion.json",
+      "sourceSha256": "39333a9335fbbb646c8994577564695f0ed58ee9479678201e31e8582cef01d0",
+      "bytes": 88190,
+      "reason": "Raw/native context, broad discovery, completion dump, or bulk source manifest is excluded. No protected payload is decoded."
+    },
+    {
+      "caseId": "benny-unsupported-trigger",
+      "attemptId": "review-a-10",
+      "originalLocator": "remaining-local/cases/benny-unsupported-trigger/outputs/local-drafts.md",
+      "sourceSha256": "92d3a893f9b115f12b513b59bcae2aa606df27ce766a5fc4439b424945d0b487",
+      "bytes": 3823,
+      "reason": "Only a narrow inspected projection may be included. Private original remains unchanged."
+    },
+    {
+      "caseId": "benny-unsupported-trigger",
+      "attemptId": "review-a-10",
+      "originalLocator": "remaining-local/cases/benny-unsupported-trigger/outputs/worker-exposed-descriptions.json",
+      "sourceSha256": "a467a9b47020179d21a73a81b2d126d8244477388ad23d4b8f394ea840a84e59",
+      "bytes": 7308,
+      "reason": "Raw/native context, broad discovery, completion dump, or bulk source manifest is excluded. No protected payload is decoded."
+    },
+    {
+      "caseId": "benny-unsupported-trigger",
+      "attemptId": "review-a-10",
+      "originalLocator": "remaining-local/cases/benny-unsupported-trigger/outputs/input-and-source-hashes.json",
+      "sourceSha256": "272369c333a9ab79567ed50207f0555f80af797f3fd5ff28502d3bc9b37fc2eb",
+      "bytes": 9739,
+      "reason": "Only a narrow inspected projection may be included. Private original remains unchanged."
+    },
+    {
+      "caseId": "benny-unsupported-trigger",
+      "attemptId": "review-a-10",
+      "originalLocator": "remaining-local/cases/benny-unsupported-trigger/outputs/completion.json",
+      "sourceSha256": "e231164dcea6e7955ecd7347c8642ca6eb69b7bbc157c2c3fdf91c210be4898d",
+      "bytes": 58370,
+      "reason": "Raw/native context, broad discovery, completion dump, or bulk source manifest is excluded. No protected payload is decoded."
+    },
+    {
+      "caseId": "unit-state",
+      "attemptId": "review-a-11",
+      "originalLocator": "work/helper_workflow_reruns/projects/release-program/deliverables/native-errors.md",
+      "sourceSha256": "ad95729d7bd6c5d7838682b3e5c29ef618fa31c6953ffafcd4fcbe473e4dcdb4",
+      "bytes": 3483,
+      "reason": "Only a narrow inspected projection may be included. Private original remains unchanged."
+    },
+    {
+      "caseId": "unit-state",
+      "attemptId": "review-a-11",
+      "originalLocator": "work/helper_workflow_reruns/projects/release-program/deliverables/audit/report.md",
+      "sourceSha256": "56f8f8125bb92c33164baa5d2921ab9b8d1b49e38b2926e76a9d7acbe4d6fcbf",
+      "bytes": 4926,
+      "reason": "Only a narrow inspected projection may be included. Private original remains unchanged."
+    },
+    {
+      "caseId": "unit-state",
+      "attemptId": "review-a-11",
+      "originalLocator": "work/helper_workflow_reruns/projects/release-program/deliverables/receipts/real-frontier.stderr",
+      "sourceSha256": "3b059e8e4cba127aa3df53365faf46b8ec04a695fde67d8f28ac7e050e80a743",
+      "bytes": 209,
+      "reason": "Only a narrow inspected projection may be included. Private original remains unchanged."
+    },
+    {
+      "caseId": "unit-state",
+      "attemptId": "review-a-11",
+      "originalLocator": "work/helper_workflow_reruns/projects/release-program/deliverables/orchestrate/release/units.tsv",
+      "sourceSha256": "fb0b48c1a3c2cb456d3569f5495a5899b7dd21aa4b7fd9ae8f0f7a83472089bd",
+      "bytes": 2096,
+      "reason": "Only a narrow inspected projection may be included. Private original remains unchanged."
+    },
+    {
+      "caseId": "unit-state",
+      "attemptId": "review-a-11",
+      "originalLocator": "work/helper_workflow_reruns/projects/release-program/deliverables/orchestrate/release/ledger.tsv",
+      "sourceSha256": "8408f52cd8e2a58c3bf04cfc0f484dcd855dfcd1e30b62ba9efada125e85d8de",
+      "bytes": 1018,
+      "reason": "Only a narrow inspected projection may be included. Private original remains unchanged."
+    },
+    {
+      "caseId": "bounded-poll",
+      "attemptId": "review-a-12",
+      "originalLocator": "work/helper_workflow_reruns/projects/release-watch/deliverables/watch/attempt2/stdout.txt",
+      "sourceSha256": "e9f98677462840958bf1e6c3c1ea199ace9bfbc416a7fe79e5b7238438cbb516",
+      "bytes": 891,
+      "reason": "Only a narrow inspected projection may be included. Private original remains unchanged."
+    },
+    {
+      "caseId": "contiguous-verified-stack",
+      "attemptId": "review-a-13",
+      "originalLocator": "work/helper_workflow_reruns/projects/release-stack/deliverables/builder/build-fixture.ts",
+      "sourceSha256": "8ff70765ad106dff32d9ce55f47fbe89d81323deb29370f95118017e38e5ff52",
+      "bytes": 4145,
+      "reason": "Only a narrow inspected projection may be included. Private original remains unchanged."
+    },
+    {
+      "caseId": "contiguous-verified-stack",
+      "attemptId": "review-a-13",
+      "originalLocator": "work/helper_workflow_reruns/projects/release-stack/deliverables/builder/merge-model.json",
+      "sourceSha256": "cd204166657b650b9baf78b9a701d19fdb26e8a8f480abe50f11908c460b96bd",
+      "bytes": 4407,
+      "reason": "Only a narrow inspected projection may be included. Private original remains unchanged."
+    },
+    {
+      "caseId": "contiguous-verified-stack",
+      "attemptId": "review-a-13",
+      "originalLocator": "work/helper_workflow_reruns/projects/release-stack/deliverables/watcher-final/observed-events.json",
+      "sourceSha256": "4728ee949ec253027b1bb77b0132aeb54ef781d098dae1baf2f9c82a5117f9e4",
+      "bytes": 13180,
+      "reason": "Only a narrow inspected projection may be included. Private original remains unchanged."
+    },
+    {
+      "caseId": "migration-end-state",
+      "attemptId": "review-a-14",
+      "originalLocator": "work/local_compiler_cases/projects/pricing-domain/deliverables/working/domain/order.ts",
+      "sourceSha256": "65d16c203daf9b6609a19a2abc3af7c9583c388fae5d47c0da9dbb839df7fe78",
+      "bytes": 153,
+      "reason": "Only a narrow inspected projection may be included. Private original remains unchanged."
+    },
+    {
+      "caseId": "migration-end-state",
+      "attemptId": "review-a-14",
+      "originalLocator": "work/local_compiler_cases/projects/pricing-domain/deliverables/working/adapters/http.ts",
+      "sourceSha256": "909e7e2806bbf29df8a13e898dfedde47e6c71a2b793ed9c44d318d585c852b7",
+      "bytes": 771,
+      "reason": "Only a narrow inspected projection may be included. Private original remains unchanged."
+    },
+    {
+      "caseId": "migration-end-state",
+      "attemptId": "review-a-14",
+      "originalLocator": "work/local_compiler_cases/projects/pricing-domain/deliverables/working/batch.ts",
+      "sourceSha256": "d0c41db0c09b2a4c7e7df9ec8ee30e4438bf95143f79cf547333b4bf95339f72",
+      "bytes": 362,
+      "reason": "Only a narrow inspected projection may be included. Private original remains unchanged."
+    },
+    {
+      "caseId": "migration-end-state",
+      "attemptId": "review-a-14",
+      "originalLocator": "work/local_compiler_cases/projects/pricing-domain/deliverables/working/index.ts",
+      "sourceSha256": "036b056369ffc6d579e467551a379d5bab485b4d55f2f10f8b3850a857e8167e",
+      "bytes": 123,
+      "reason": "Only a narrow inspected projection may be included. Private original remains unchanged."
+    },
+    {
+      "caseId": "migration-end-state",
+      "attemptId": "review-a-14",
+      "originalLocator": "work/local_compiler_cases/projects/pricing-domain/deliverables/working/consumer.ts",
+      "sourceSha256": "27703d12d60a3ae36818a71cf4242f585eb1a1950f57525c4580f34fba547842",
+      "bytes": 228,
+      "reason": "Only a narrow inspected projection may be included. Private original remains unchanged."
+    },
+    {
+      "caseId": "migration-end-state",
+      "attemptId": "review-a-14",
+      "originalLocator": "work/local_compiler_cases/projects/pricing-domain/deliverables/final-equivalence.log",
+      "sourceSha256": "aadbf42f7f23f54271cd49af4ee3531af74c5cc480f565b2b52f42f790e4939c",
+      "bytes": 724,
+      "reason": "Only a narrow inspected projection may be included. Private original remains unchanged."
+    },
+    {
+      "caseId": "migration-end-state",
+      "attemptId": "review-a-14",
+      "originalLocator": "work/local_compiler_cases/projects/pricing-domain/deliverables/failures.md",
+      "sourceSha256": "9d896961f016e017a570d18faf883025a86493aa798442a4af9e1d922a49c907",
+      "bytes": 2739,
+      "reason": "Only a narrow inspected projection may be included. Private original remains unchanged."
+    },
+    {
+      "caseId": "invalid-input",
+      "attemptId": "review-a-15",
+      "originalLocator": "work/local_compiler_cases/projects/order-boundary/deliverables/working/adapter.ts",
+      "sourceSha256": "0fef504f9d0916bf57036b5ed0f6361edec754e8defd60f16f784f0dcd5c6b56",
+      "bytes": 729,
+      "reason": "Only a narrow inspected projection may be included. Private original remains unchanged."
+    },
+    {
+      "caseId": "invalid-input",
+      "attemptId": "review-a-15",
+      "originalLocator": "work/local_compiler_cases/projects/order-boundary/deliverables/working/domain.ts",
+      "sourceSha256": "cc98570b0d00b254c8aed8850beb28a108d4f0b97766481f96de951f0196b9c7",
+      "bytes": 212,
+      "reason": "Only a narrow inspected projection may be included. Private original remains unchanged."
+    },
+    {
+      "caseId": "invalid-input",
+      "attemptId": "review-a-15",
+      "originalLocator": "work/local_compiler_cases/projects/order-boundary/deliverables/working/internal-caller.ts",
+      "sourceSha256": "4c2426e15dc0b31efb85e7d6ee77ec771fcf667daaca1de0b9342d454f8100cf",
+      "bytes": 163,
+      "reason": "Only a narrow inspected projection may be included. Private original remains unchanged."
+    },
+    {
+      "caseId": "invalid-input",
+      "attemptId": "review-a-15",
+      "originalLocator": "work/local_compiler_cases/projects/order-boundary/deliverables/working/boundary.test.mjs",
+      "sourceSha256": "ca2e9f05654c50e4a74ce55f94339fba563d909148121940f489498baa68e324",
+      "bytes": 893,
+      "reason": "Only a narrow inspected projection may be included. Private original remains unchanged."
+    },
+    {
+      "caseId": "invalid-input",
+      "attemptId": "review-a-15",
+      "originalLocator": "work/local_compiler_cases/projects/order-boundary/deliverables/working/domain.test.mjs",
+      "sourceSha256": "d579ce4029c409f5b099ca1c594ecaf91b601293762c897811a18de7b883c3f0",
+      "bytes": 343,
+      "reason": "Only a narrow inspected projection may be included. Private original remains unchanged."
+    },
+    {
+      "caseId": "invalid-input",
+      "attemptId": "review-a-15",
+      "originalLocator": "work/local_compiler_cases/projects/order-boundary/deliverables/execution-notes.md",
+      "sourceSha256": "045a54fa5bcee9f414b8a43c319e59853df254db4f73e30661047464c8fba888",
+      "bytes": 4721,
+      "reason": "Only a narrow inspected projection may be included. Private original remains unchanged."
+    },
+    {
+      "caseId": "package-support-contracts",
+      "attemptId": "review-a-16",
+      "originalLocator": "work/local_compiler_cases/projects/package-support/deliverables/installed-copy-manifest.json",
+      "sourceSha256": "8d6cbe1283b00ee4f086c4da5079566ddf5bb440e96587c90fba88a25ae87062",
+      "bytes": 170773,
+      "reason": "Raw/native context, broad discovery, completion dump, or bulk source manifest is excluded. No protected payload is decoded."
+    },
+    {
+      "caseId": "package-support-contracts",
+      "attemptId": "review-a-16",
+      "originalLocator": "work/local_compiler_cases/projects/package-support/deliverables/helper-identity.json",
+      "sourceSha256": "53508254370636559016abc494e60cf28bd89a6458cdda0ae5c20c7a0669de29",
+      "bytes": 3036,
+      "reason": "Only a narrow inspected projection may be included. Private original remains unchanged."
+    },
+    {
+      "caseId": "package-support-contracts",
+      "attemptId": "review-a-16",
+      "originalLocator": "work/local_compiler_cases/projects/package-support/deliverables/readme-navigation.json",
+      "sourceSha256": "5fbab9f014d31630fb382da6874520e8a064f0705ed599679352903fe0f4af86",
+      "bytes": 51614,
+      "reason": "Raw/native context, broad discovery, completion dump, or bulk source manifest is excluded. No protected payload is decoded."
+    },
+    {
+      "caseId": "package-support-contracts",
+      "attemptId": "review-a-16",
+      "originalLocator": "work/local_compiler_cases/projects/package-support/deliverables/logo-render.md",
+      "sourceSha256": "ac09817384856c4dcfa4720c754331073b1f3655592180390dd4257e87bd04ac",
+      "bytes": 890,
+      "reason": "Only a narrow inspected projection may be included. Private original remains unchanged."
+    },
+    {
+      "caseId": "package-support-contracts",
+      "attemptId": "review-a-16",
+      "originalLocator": "work/local_compiler_cases/projects/package-support/deliverables/review.md",
+      "sourceSha256": "8d7874ce02635f6f47438cdd3557b5d6bbb9e37acf899dbc17313e70621a6633",
+      "bytes": 2270,
+      "reason": "Only a narrow inspected projection may be included. Private original remains unchanged."
+    },
+    {
+      "caseId": "stale-feature-map",
+      "attemptId": "review-a-17",
+      "originalLocator": "work/notes_workflow_reruns/projects/stale-feature-map/deliverables/report.md",
+      "sourceSha256": "3da5a69f76504521d6c765f566f2093f1f90c39ef625e9cf16ef44919a018679",
+      "bytes": 11195,
+      "reason": "Only a narrow inspected projection may be included. Private original remains unchanged."
+    },
+    {
+      "caseId": "stale-feature-map",
+      "attemptId": "review-a-17",
+      "originalLocator": "work/notes_workflow_reruns/projects/stale-feature-map/outputs/assignment-events.ndjson",
+      "sourceSha256": "015483690887141d291c0d2c5eb6cbacef72bb717d49b5b6aaafc560494f2152",
+      "bytes": 1004,
+      "reason": "Only a narrow inspected projection may be included. Private original remains unchanged."
+    },
+    {
+      "caseId": "stale-feature-map",
+      "attemptId": "review-a-17",
+      "originalLocator": "work/notes_workflow_reruns/projects/stale-feature-map/outputs/evidence/async-pty.ndjson",
+      "sourceSha256": "d7e3d9f094150c05912e67653a98d3e67b6965be83f91e305a2d9dca06cd1840",
+      "bytes": 638,
+      "reason": "Only a narrow inspected projection may be included. Private original remains unchanged."
+    },
+    {
+      "caseId": "stale-feature-map",
+      "attemptId": "review-a-17",
+      "originalLocator": "work/notes_workflow_reruns/projects/stale-feature-map/outputs/evidence/create-saved.ax.txt",
+      "sourceSha256": "36378b1f7fd35edfec110518984e0f72c49d2f30b2a214ef43aead96e1d91eeb",
+      "bytes": 551,
+      "reason": "Only a narrow inspected projection may be included. Private original remains unchanged."
+    },
+    {
+      "caseId": "stale-feature-map",
+      "attemptId": "review-a-17",
+      "originalLocator": "work/notes_workflow_reruns/projects/stale-feature-map/outputs/evidence/search-clear.ax.txt",
+      "sourceSha256": "b58045ba287ae2667df39d236790b8c865eff2e5f707a491ace3c760714c3e6b",
+      "bytes": 360,
+      "reason": "Only a narrow inspected projection may be included. Private original remains unchanged."
+    },
+    {
+      "caseId": "stale-feature-map",
+      "attemptId": "review-a-17",
+      "originalLocator": "work/notes_workflow_reruns/projects/stale-feature-map/outputs/evidence/search-regression.txt",
+      "sourceSha256": "10ec0d65c9a6aaedad8482a26fc50d754c515f0584c42d15428ade3c87032841",
+      "bytes": 1344,
+      "reason": "Only a narrow inspected projection may be included. Private original remains unchanged."
+    },
+    {
+      "caseId": "stale-feature-map",
+      "attemptId": "review-a-17",
+      "originalLocator": "work/notes_workflow_reruns/projects/stale-feature-map/docs/verify/features/README.md",
+      "sourceSha256": "6807591485cd83c41b33590ddbcd7058a4053efac4a68c0c992e9b64959c9322",
+      "bytes": 838,
+      "reason": "Only a narrow inspected projection may be included. Private original remains unchanged."
+    },
+    {
+      "caseId": "stale-feature-map",
+      "attemptId": "review-a-17",
+      "originalLocator": "work/notes_workflow_reruns/projects/stale-feature-map/docs/verify/features/create-note.md",
+      "sourceSha256": "6e4d83dadae43971b80f17e06578f664f95ba8b819d66ad9ded266415ec68bb4",
+      "bytes": 2314,
+      "reason": "Only a narrow inspected projection may be included. Private original remains unchanged."
+    },
+    {
+      "caseId": "stale-feature-map",
+      "attemptId": "review-a-17",
+      "originalLocator": "work/notes_workflow_reruns/projects/stale-feature-map/docs/verify/features/search.md",
+      "sourceSha256": "d553ed040fc0abf6f633762dfbce42fafb3167ea7aaf1ccf85910cafa03be0b9",
+      "bytes": 1639,
+      "reason": "Only a narrow inspected projection may be included. Private original remains unchanged."
+    },
+    {
+      "caseId": "stale-feature-map",
+      "attemptId": "review-a-17",
+      "originalLocator": "work/notes_workflow_reruns/projects/stale-feature-map/docs/verify/features/export.md",
+      "sourceSha256": "4c90cc652f600877c77d5be18faa87a1fa77bb138e23076edf9cc01bed6af8c0",
+      "bytes": 1513,
+      "reason": "Only a narrow inspected projection may be included. Private original remains unchanged."
+    },
+    {
+      "caseId": "guides-github-absent",
+      "attemptId": "review-b-01",
+      "originalLocator": "remaining-local/cases/guides-github-absent/outputs/guides-github-absent.result.md",
+      "sourceSha256": "e5b05c4ac3441af1954cba0fd5a04a5a7e0fe8dcb47c44ee79da259a228f3ae2",
+      "bytes": 11514,
+      "reason": "Only a narrow inspected projection may be included. Private original remains unchanged."
+    },
+    {
+      "caseId": "guides-github-absent",
+      "attemptId": "review-b-01",
+      "originalLocator": "native-captures-sanitized-v2/remaining-02/index.json",
+      "sourceSha256": "ed8f512b2ee492d54986d3f259fa216be0b13190b8d2ebf2bca4ca8a4324dfbc",
+      "bytes": 11523,
+      "reason": "Raw/native context, broad discovery, completion dump, or bulk source manifest is excluded. No protected payload is decoded."
+    },
+    {
+      "caseId": "bounded-improvement",
+      "attemptId": "review-b-02",
+      "originalLocator": "remaining-local/cases/bounded-improvement/outputs/bounded-improvement.result.md",
+      "sourceSha256": "002b4bbf7d9aeaab4b39707475fb0c1400d11e1626cd58c3c8bed06c1782c4f1",
+      "bytes": 23660,
+      "reason": "Only a narrow inspected projection may be included. Private original remains unchanged."
+    },
+    {
+      "caseId": "bounded-improvement",
+      "attemptId": "review-b-02",
+      "originalLocator": "remaining-local/cases/bounded-improvement/outputs/completion.json",
+      "sourceSha256": "d6e8aec630f2f3dc7f096197e4932985d264a748e213f4ee28987d47835749e8",
+      "bytes": 144297,
+      "reason": "Raw/native context, broad discovery, completion dump, or bulk source manifest is excluded. No protected payload is decoded."
+    },
+    {
+      "caseId": "bounded-improvement",
+      "attemptId": "review-b-02",
+      "originalLocator": "remaining-local/cases/bounded-improvement/outputs/artifact-verification.json",
+      "sourceSha256": "309d2bc045175de5b3272816b0e965812089e8849db116d88b33d7bb0711f65a",
+      "bytes": 2865,
+      "reason": "Only a narrow inspected projection may be included. Private original remains unchanged."
+    },
+    {
+      "caseId": "bounded-improvement",
+      "attemptId": "review-b-02",
+      "originalLocator": "native-captures-sanitized-v2/remaining-02/index.json",
+      "sourceSha256": "ed8f512b2ee492d54986d3f259fa216be0b13190b8d2ebf2bca4ca8a4324dfbc",
+      "bytes": 11523,
+      "reason": "Raw/native context, broad discovery, completion dump, or bulk source manifest is excluded. No protected payload is decoded."
+    },
+    {
+      "caseId": "route-recipe",
+      "attemptId": "review-b-03",
+      "originalLocator": "remaining-local/cases/route-recipe/outputs/route-recipe.result.md",
+      "sourceSha256": "153affbe580e822b8ccd2fa95c4f07673189eabdb14b5d1709f6271edd1ca202",
+      "bytes": 7556,
+      "reason": "Only a narrow inspected projection may be included. Private original remains unchanged."
+    },
+    {
+      "caseId": "route-recipe",
+      "attemptId": "review-b-03",
+      "originalLocator": "remaining-local/cases/route-recipe/outputs/completion.json",
+      "sourceSha256": "4add95bcbcffe3c2737511e7a662019256a53003e0b8ecb88acdcf6d5a4933c4",
+      "bytes": 54449,
+      "reason": "Raw/native context, broad discovery, completion dump, or bulk source manifest is excluded. No protected payload is decoded."
+    },
+    {
+      "caseId": "route-recipe",
+      "attemptId": "review-b-03",
+      "originalLocator": "native-captures-sanitized-v2/remaining-02/index.json",
+      "sourceSha256": "ed8f512b2ee492d54986d3f259fa216be0b13190b8d2ebf2bca4ca8a4324dfbc",
+      "bytes": 11523,
+      "reason": "Raw/native context, broad discovery, completion dump, or bulk source manifest is excluded. No protected payload is decoded."
+    },
+    {
+      "caseId": "replay",
+      "attemptId": "review-b-04",
+      "originalLocator": "remaining-local/cases/replay/outputs/replay.result.md",
+      "sourceSha256": "36f335b7a79ee4f7a11d967127e6f565566c101019b462160c27e40fa8bafe4e",
+      "bytes": 63689,
+      "reason": "Only a narrow inspected projection may be included. Private original remains unchanged."
+    },
+    {
+      "caseId": "replay",
+      "attemptId": "review-b-04",
+      "originalLocator": "remaining-local/cases/replay/outputs/completion.json",
+      "sourceSha256": "5a074a29e13802203d946e6d885211bba39ffeb08e693e115b4e651573ab1643",
+      "bytes": 74683,
+      "reason": "Raw/native context, broad discovery, completion dump, or bulk source manifest is excluded. No protected payload is decoded."
+    },
+    {
+      "caseId": "replay",
+      "attemptId": "review-b-04",
+      "originalLocator": "native-captures-sanitized-v2/remaining-02/index.json",
+      "sourceSha256": "ed8f512b2ee492d54986d3f259fa216be0b13190b8d2ebf2bca4ca8a4324dfbc",
+      "bytes": 11523,
+      "reason": "Raw/native context, broad discovery, completion dump, or bulk source manifest is excluded. No protected payload is decoded."
+    },
+    {
+      "caseId": "existing-personal-mode",
+      "attemptId": "review-b-05",
+      "originalLocator": "remaining-local/cases/existing-personal-mode/outputs/existing-personal-mode.result.md",
+      "sourceSha256": "d8f4037811dc8d5aeab30ab5bbb7038ffac16b058a6ea94a27005a3e3b8aa071",
+      "bytes": 9812,
+      "reason": "Only a narrow inspected projection may be included. Private original remains unchanged."
+    },
+    {
+      "caseId": "existing-personal-mode",
+      "attemptId": "review-b-05",
+      "originalLocator": "remaining-local/cases/existing-personal-mode/outputs/completion.json",
+      "sourceSha256": "e7dc7455b386fa74f97191f9a2082a58e5ba16326247cd9d3a193f9da9fb495f",
+      "bytes": 51617,
+      "reason": "Raw/native context, broad discovery, completion dump, or bulk source manifest is excluded. No protected payload is decoded."
+    },
+    {
+      "caseId": "existing-personal-mode",
+      "attemptId": "review-b-05",
+      "originalLocator": "native-captures-sanitized-v2/remaining-02/index.json",
+      "sourceSha256": "ed8f512b2ee492d54986d3f259fa216be0b13190b8d2ebf2bca4ca8a4324dfbc",
+      "bytes": 11523,
+      "reason": "Raw/native context, broad discovery, completion dump, or bulk source manifest is excluded. No protected payload is decoded."
+    },
+    {
+      "caseId": "invalid-state",
+      "attemptId": "review-b-06",
+      "originalLocator": "cross-host-extra/local/projects/invalid-state/outputs/invalid-state.result.md",
+      "sourceSha256": "c791fb1094b849580afbb37e7c5fd0d707d893188a57963592fb70d7876cfc22",
+      "bytes": 28384,
+      "reason": "Only a narrow inspected projection may be included. Private original remains unchanged."
+    },
+    {
+      "caseId": "invalid-state",
+      "attemptId": "review-b-06",
+      "originalLocator": "cross-host-extra/local/projects/invalid-state/outputs/model.ts",
+      "sourceSha256": "03ab07c50aa6e9444c2371260f5a839b04a4a9eb89722be36aa219b9a8d7a937",
+      "bytes": 1618,
+      "reason": "Only a narrow inspected projection may be included. Private original remains unchanged."
+    },
+    {
+      "caseId": "invalid-state",
+      "attemptId": "review-b-06",
+      "originalLocator": "native-captures-sanitized-v2/cross-host-0/index.json",
+      "sourceSha256": "3bb4db78a8fd056ac164ea338c51fb8f67c4c7a9f6a2986e8a10b287d97edc65",
+      "bytes": 6766,
+      "reason": "Raw/native context, broad discovery, completion dump, or bulk source manifest is excluded. No protected payload is decoded."
+    },
+    {
+      "caseId": "approval-before-edit",
+      "attemptId": "review-b-07",
+      "originalLocator": "cross-host-extra/local/projects/approval-before-edit/outputs/approval-before-edit.result.md",
+      "sourceSha256": "7ab787cefcfe772a9047603c72520356a15cb34b91e0ca3fa820a47e3c10e232",
+      "bytes": 26036,
+      "reason": "Only a narrow inspected projection may be included. Private original remains unchanged."
+    },
+    {
+      "caseId": "approval-before-edit",
+      "attemptId": "review-b-07",
+      "originalLocator": "cross-host-extra/local/projects/approval-before-edit/outputs/judgment.result.md",
+      "sourceSha256": "0dc5c325790216e17e24852fe6b78c569eaa506982b4cbebbb459be5e2d0006e",
+      "bytes": 601,
+      "reason": "Only a narrow inspected projection may be included. Private original remains unchanged."
+    },
+    {
+      "caseId": "approval-before-edit",
+      "attemptId": "review-b-07",
+      "originalLocator": "cross-host-extra/local/projects/approval-before-edit/outputs/tooling.result.md",
+      "sourceSha256": "e64308f40357072229b6fa2dd858159874b6d9ad2ac34bcf03e06aa53c1cfb7b",
+      "bytes": 998,
+      "reason": "Only a narrow inspected projection may be included. Private original remains unchanged."
+    },
+    {
+      "caseId": "approval-before-edit",
+      "attemptId": "review-b-07",
+      "originalLocator": "cross-host-extra/local/projects/approval-before-edit/outputs/divergent.result.md",
+      "sourceSha256": "a63bc3eabf4edfa7657bfdea0bca21cb9c2e336cb969df4113ec38afaf1d8bb3",
+      "bytes": 1208,
+      "reason": "Only a narrow inspected projection may be included. Private original remains unchanged."
+    },
+    {
+      "caseId": "approval-before-edit",
+      "attemptId": "review-b-07",
+      "originalLocator": "cross-host-extra/local/projects/approval-before-edit/outputs/synthesizer.result.md",
+      "sourceSha256": "3338c08debdf4c164a065fa352bf83fa91a88a07a929b51c404910385e988120",
+      "bytes": 1080,
+      "reason": "Only a narrow inspected projection may be included. Private original remains unchanged."
+    },
+    {
+      "caseId": "approval-before-edit",
+      "attemptId": "review-b-07",
+      "originalLocator": "native-captures-sanitized-v2/cross-host-0/index.json",
+      "sourceSha256": "3bb4db78a8fd056ac164ea338c51fb8f67c4c7a9f6a2986e8a10b287d97edc65",
+      "bytes": 6766,
+      "reason": "Raw/native context, broad discovery, completion dump, or bulk source manifest is excluded. No protected payload is decoded."
+    },
+    {
+      "caseId": "dependent-caller",
+      "attemptId": "review-b-08",
+      "originalLocator": "cross-host-extra/local/projects/dependent-caller/outputs/dependent-caller.result.md",
+      "sourceSha256": "a4ded320bfee3f7254bc7203c4f5c3e1275895bd9227bcbc44fb90adb50fc032",
+      "bytes": 26239,
+      "reason": "Only a narrow inspected projection may be included. Private original remains unchanged."
+    },
+    {
+      "caseId": "dependent-caller",
+      "attemptId": "review-b-08",
+      "originalLocator": "cross-host-extra/local/projects/dependent-caller/outputs/cache-verification.json",
+      "sourceSha256": "1ef5db1b4bfe1d967d49d286f296c00875489d2a3ea55669a8ad73130abda250",
+      "bytes": 1644,
+      "reason": "Only a narrow inspected projection may be included. Private original remains unchanged."
+    },
+    {
+      "caseId": "dependent-caller",
+      "attemptId": "review-b-08",
+      "originalLocator": "cross-host-extra/local/projects/dependent-caller/outputs/verify-cache.mjs",
+      "sourceSha256": "f8835ebf170c12e06c829237a56ea4133c9ce04bdb657ad3e264a65795e60533",
+      "bytes": 2805,
+      "reason": "Only a narrow inspected projection may be included. Private original remains unchanged."
+    },
+    {
+      "caseId": "dependent-caller",
+      "attemptId": "review-b-08",
+      "originalLocator": "native-captures-sanitized-v2/cross-host-0/index.json",
+      "sourceSha256": "3bb4db78a8fd056ac164ea338c51fb8f67c4c7a9f6a2986e8a10b287d97edc65",
+      "bytes": 6766,
+      "reason": "Raw/native context, broad discovery, completion dump, or bulk source manifest is excluded. No protected payload is decoded."
+    },
+    {
+      "caseId": "shared-path-conflict",
+      "attemptId": "review-b-09",
+      "originalLocator": "cross-host-extra/local/projects/shared-path-conflict/outputs/shared-path-conflict.result.md",
+      "sourceSha256": "d6760f00bea764061cf888790090da0bf2ea54e1682fd871de7ecc9f99e33167",
+      "bytes": 22795,
+      "reason": "Only a narrow inspected projection may be included. Private original remains unchanged."
+    },
+    {
+      "caseId": "shared-path-conflict",
+      "attemptId": "review-b-09",
+      "originalLocator": "cross-host-extra/local/projects/shared-path-conflict/outputs/assignment-events.jsonl",
+      "sourceSha256": "5f3acd5257bc593928d9b7259f14c48cd27ebc170e80181a74680b5c0af05f0a",
+      "bytes": 1245,
+      "reason": "Only a narrow inspected projection may be included. Private original remains unchanged."
+    },
+    {
+      "caseId": "shared-path-conflict",
+      "attemptId": "review-b-09",
+      "originalLocator": "cross-host-extra/local/projects/shared-path-conflict/outputs/worker-A/calculator-review.txt",
+      "sourceSha256": "be83fbca25c37057a98436e56c475f5dcc1df7c51383dc003d50b4693b45e70d",
+      "bytes": 4678,
+      "reason": "Only a narrow inspected projection may be included. Private original remains unchanged."
+    },
+    {
+      "caseId": "shared-path-conflict",
+      "attemptId": "review-b-09",
+      "originalLocator": "cross-host-extra/local/projects/shared-path-conflict/outputs/worker-B/formatter-review.txt",
+      "sourceSha256": "b0e190878d2c3c0e8c0ec0d5dd56cbfe99bab2dba518b413b1f4a5246dfe8b36",
+      "bytes": 5705,
+      "reason": "Only a narrow inspected projection may be included. Private original remains unchanged."
+    },
+    {
+      "caseId": "shared-path-conflict",
+      "attemptId": "review-b-09",
+      "originalLocator": "native-captures-sanitized-v2/cross-host-0/index.json",
+      "sourceSha256": "3bb4db78a8fd056ac164ea338c51fb8f67c4c7a9f6a2986e8a10b287d97edc65",
+      "bytes": 6766,
+      "reason": "Raw/native context, broad discovery, completion dump, or bulk source manifest is excluded. No protected payload is decoded."
+    },
+    {
+      "caseId": "boundary-design",
+      "attemptId": "review-b-10",
+      "originalLocator": "work/local_compiler_cases/projects/pricing-compatibility-corrected/deliverables/report.md",
+      "sourceSha256": "779e60bd190c93c82a7faf4361cae10b97513a23b81f3274288c7441a3a0364a",
+      "bytes": 19187,
+      "reason": "Only a narrow inspected projection may be included. Private original remains unchanged."
+    },
+    {
+      "caseId": "boundary-design",
+      "attemptId": "review-b-10",
+      "originalLocator": "work/local_compiler_cases/projects/pricing-compatibility-corrected/deliverables/assignment-events.ndjson",
+      "sourceSha256": "0052fa9c81c53422d87b8211c60908886bc3163f52cabcca9fd7d925454e2d81",
+      "bytes": 8179,
+      "reason": "Only a narrow inspected projection may be included. Private original remains unchanged."
+    },
+    {
+      "caseId": "boundary-design",
+      "attemptId": "review-b-10",
+      "originalLocator": "work/local_compiler_cases/projects/pricing-compatibility-corrected/deliverables/workers/design_item/read-record.md",
+      "sourceSha256": "7aa5c23a1de531e3730d4e0412f0842a351fd041c1efe84dd579f0e94fb87229",
+      "bytes": 8981,
+      "reason": "Only a narrow inspected projection may be included. Private original remains unchanged."
+    },
+    {
+      "caseId": "boundary-design",
+      "attemptId": "review-b-10",
+      "originalLocator": "work/local_compiler_cases/projects/pricing-compatibility-corrected/deliverables/workers/design_collection/method.md",
+      "sourceSha256": "62ed9101acacfccf568863497d6ef9b9da6f25ff632112439335aebb04b50268",
+      "bytes": 7258,
+      "reason": "Only a narrow inspected projection may be included. Private original remains unchanged."
+    },
+    {
+      "caseId": "boundary-design",
+      "attemptId": "review-b-10",
+      "originalLocator": "work/local_compiler_cases/projects/pricing-compatibility-corrected/deliverables/workers/judge_clean/judgment.md",
+      "sourceSha256": "2af696fd0567f05068bc97a9d8ba75bb64d7d64fcb4a1cd6262d96b6916c873b",
+      "bytes": 19452,
+      "reason": "Only a narrow inspected projection may be included. Private original remains unchanged."
+    },
+    {
+      "caseId": "boundary-design",
+      "attemptId": "review-b-10",
+      "originalLocator": "work/local_compiler_cases/projects/pricing-compatibility-corrected/deliverables/synthesized-design.md",
+      "sourceSha256": "8b23068de25419b3e288bd108cca14147d5c1cdf4c1b73fa448e9b219bf1b30e",
+      "bytes": 8484,
+      "reason": "Only a narrow inspected projection may be included. Private original remains unchanged."
+    },
+    {
+      "caseId": "boundary-design",
+      "attemptId": "review-b-10",
+      "originalLocator": "work/local_compiler_cases/projects/pricing-compatibility-corrected/deliverables/working/batch.ts",
+      "sourceSha256": "13fb1540a006bd8ea8cbfa3ba0096ad1b72db9df7eac265dfe0d474651b6ad14",
+      "bytes": 311,
+      "reason": "Only a narrow inspected projection may be included. Private original remains unchanged."
+    },
+    {
+      "caseId": "boundary-design",
+      "attemptId": "review-b-10",
+      "originalLocator": "work/local_compiler_cases/projects/pricing-compatibility-corrected/deliverables/working/consumer.ts",
+      "sourceSha256": "aab57ed07de2879c106024b047013e177ac193a80ba5c73e7c6a3e3d7b539a98",
+      "bytes": 240,
+      "reason": "Only a narrow inspected projection may be included. Private original remains unchanged."
+    },
+    {
+      "caseId": "boundary-design",
+      "attemptId": "review-b-10",
+      "originalLocator": "work/local_compiler_cases/actors/boundary-design-compatibility-corrected/native-scoped.jsonl",
+      "sourceSha256": "66420151fedcb90e16820ebeacbc80e224bb6f9db0883cddf74c3c2853457e49",
+      "bytes": 676519,
+      "reason": "Raw/native context, broad discovery, completion dump, or bulk source manifest is excluded. No protected payload is decoded."
+    },
+    {
+      "caseId": "supported-authoring",
+      "attemptId": "review-b-11",
+      "originalLocator": "authoring/local/outputs/result.md",
+      "sourceSha256": "729ca26f187de7691faeb4c4557dad6b1fd808a1ed6f1c5e70c2f1f093eef888",
+      "bytes": 9011,
+      "reason": "Only a narrow inspected projection may be included. Private original remains unchanged."
+    },
+    {
+      "caseId": "supported-authoring",
+      "attemptId": "review-b-11",
+      "originalLocator": "authoring/local/outputs/skill/SKILL.md",
+      "sourceSha256": "e6f08811a9069200ffddeb1158c6c9103f96c19ee4272a978257478f1d43a0ca",
+      "bytes": 1568,
+      "reason": "Only a narrow inspected projection may be included. Private original remains unchanged."
+    },
+    {
+      "caseId": "supported-authoring",
+      "attemptId": "review-b-11",
+      "originalLocator": "authoring/local/outputs/assignment-events.jsonl",
+      "sourceSha256": "791e8ca8a1a1bd09b2b969cf819b8e79801f478e520a28d17eb209b189ada556",
+      "bytes": 1663,
+      "reason": "Only a narrow inspected projection may be included. Private original remains unchanged."
+    },
+    {
+      "caseId": "supported-authoring",
+      "attemptId": "review-b-11",
+      "originalLocator": "native-captures-sanitized-v2/supported-authoring/index.json",
+      "sourceSha256": "5a3dd7edc4f8ea9d0b835c6428b91557c83bf0039fecb15da4099f899ce3da69",
+      "bytes": 2746,
+      "reason": "Raw/native context, broad discovery, completion dump, or bulk source manifest is excluded. No protected payload is decoded."
+    },
+    {
+      "caseId": "real-app-contract",
+      "attemptId": "review-b-12",
+      "originalLocator": "work/notes_workflow_reruns/projects/real-app-contract/deliverables/report.md",
+      "sourceSha256": "4e82ec698923621e08b9a68f248f157c86fc76bee640917402f2661701a08f35",
+      "bytes": 15034,
+      "reason": "Only a narrow inspected projection may be included. Private original remains unchanged."
+    },
+    {
+      "caseId": "real-app-contract",
+      "attemptId": "review-b-12",
+      "originalLocator": "work/notes_workflow_reruns/projects/real-app-contract/deliverables/verify-notes/SKILL.md",
+      "sourceSha256": "f388127abd403f414848477165f7d1b218a3680aa1085e19bc51976aab4b87bc",
+      "bytes": 4969,
+      "reason": "Only a narrow inspected projection may be included. Private original remains unchanged."
+    },
+    {
+      "caseId": "real-app-contract",
+      "attemptId": "review-b-12",
+      "originalLocator": "work/notes_workflow_reruns/projects/real-app-contract/deliverables/verify-notes/features/README.md",
+      "sourceSha256": "c1e50e6f38485dd0b45836356d451ae9ae7e61e2d2c8d2331a85a3dd60748608",
+      "bytes": 1431,
+      "reason": "Only a narrow inspected projection may be included. Private original remains unchanged."
+    },
+    {
+      "caseId": "real-app-contract",
+      "attemptId": "review-b-12",
+      "originalLocator": "work/notes_workflow_reruns/projects/real-app-contract/outputs/discovery-before.json",
+      "sourceSha256": "088a610afc2335ada4f60771e11056ec4750d3609bc705a5a41efe8b31c843f1",
+      "bytes": 1026,
+      "reason": "Raw/native context, broad discovery, completion dump, or bulk source manifest is excluded. No protected payload is decoded."
+    },
+    {
+      "caseId": "real-app-contract",
+      "attemptId": "review-b-12",
+      "originalLocator": "work/notes_workflow_reruns/projects/real-app-contract/outputs/discovery-before-attempt2.json",
+      "sourceSha256": "21d4bddf38f2c3d2199e916e80c060335b9df0421c89dd8254493c467870e1f4",
+      "bytes": 1026,
+      "reason": "Raw/native context, broad discovery, completion dump, or bulk source manifest is excluded. No protected payload is decoded."
+    },
+    {
+      "caseId": "real-app-contract",
+      "attemptId": "review-b-12",
+      "originalLocator": "work/notes_workflow_reruns/projects/real-app-contract/outputs/final-audit.json",
+      "sourceSha256": "7ca33bc94229d437bd53057a04305cff1640ba83328b216aabe980441cdebe51",
+      "bytes": 335,
+      "reason": "Only a narrow inspected projection may be included. Private original remains unchanged."
+    },
+    {
+      "caseId": "real-app-contract",
+      "attemptId": "review-b-12",
+      "originalLocator": "work/notes_workflow_reruns/actors/real-app-contract/native-scoped.jsonl",
+      "sourceSha256": "9576d1fc84d5514a6cc78de70bddb337bf10cd83ca5a054b4aa32fa6cfc09fb8",
+      "bytes": 864040,
+      "reason": "Raw/native context, broad discovery, completion dump, or bulk source manifest is excluded. No protected payload is decoded."
+    },
+    {
+      "caseId": "reproduce-before-fix",
+      "attemptId": "review-b-13",
+      "originalLocator": "work/notes_workflow_reruns/projects/reproduce-before-fix/deliverables/report.md",
+      "sourceSha256": "3c8d8d9417cddf60621db2fd43ced2cafa975e876e88412f0c3033b6028ac664",
+      "bytes": 19940,
+      "reason": "Only a narrow inspected projection may be included. Private original remains unchanged."
+    },
+    {
+      "caseId": "reproduce-before-fix",
+      "attemptId": "review-b-13",
+      "originalLocator": "work/notes_workflow_reruns/projects/reproduce-before-fix/deliverables/01-failing-regression.patch",
+      "sourceSha256": "a2fbf3947417d91ad6164e3360509441e2cf8f13aeadf011d38e7be0832054cc",
+      "bytes": 1085,
+      "reason": "Only a narrow inspected projection may be included. Private original remains unchanged."
+    },
+    {
+      "caseId": "reproduce-before-fix",
+      "attemptId": "review-b-13",
+      "originalLocator": "work/notes_workflow_reruns/projects/reproduce-before-fix/deliverables/02-fix.patch",
+      "sourceSha256": "f171ebb22ef0ec0e0464884774213ce2d76e81be9d349ab61d536f84bb359edb",
+      "bytes": 509,
+      "reason": "Only a narrow inspected projection may be included. Private original remains unchanged."
+    },
+    {
+      "caseId": "reproduce-before-fix",
+      "attemptId": "review-b-13",
+      "originalLocator": "work/notes_workflow_reruns/projects/reproduce-before-fix/outputs/runtime-final.json",
+      "sourceSha256": "bfe063e59cec65f3319998d4df63dfdf88e397e4cff3f8e2df86abe57a6e1623",
+      "bytes": 747,
+      "reason": "Only a narrow inspected projection may be included. Private original remains unchanged."
+    },
+    {
+      "caseId": "reproduce-before-fix",
+      "attemptId": "review-b-13",
+      "originalLocator": "work/notes_workflow_reruns/projects/reproduce-before-fix/outputs/ui-cache-diagnostic-receipt.json",
+      "sourceSha256": "3b7832916450511cc61d6ba72fcea97dc690a79c3b0231206441ab675896bcbb",
+      "bytes": 505,
+      "reason": "Only a narrow inspected projection may be included. Private original remains unchanged."
+    },
+    {
+      "caseId": "reproduce-before-fix",
+      "attemptId": "review-b-13",
+      "originalLocator": "work/notes_workflow_reruns/projects/reproduce-before-fix/outputs/ui-after-fix-receipt.json",
+      "sourceSha256": "7c2a6bb2ee272ebe7bfe56bcde4c853f9e83dde2b32e3aa191c3dfb34ff8ec2b",
+      "bytes": 626,
+      "reason": "Only a narrow inspected projection may be included. Private original remains unchanged."
+    },
+    {
+      "caseId": "reproduce-before-fix",
+      "attemptId": "review-b-13",
+      "originalLocator": "work/notes_workflow_reruns/projects/reproduce-before-fix/outputs/git-denied.txt",
+      "sourceSha256": "fcc671d095eda380e7f8104e69b5f88152a48d2834b1e2679f71621bacc710c5",
+      "bytes": 982,
+      "reason": "Only a narrow inspected projection may be included. Private original remains unchanged."
+    },
+    {
+      "caseId": "reproduce-before-fix",
+      "attemptId": "review-b-13",
+      "originalLocator": "work/notes_workflow_reruns/projects/reproduce-before-fix/outputs/process-terminal.json",
+      "sourceSha256": "49d0ec03ed0c8f3000ceae117ed9756eba1b60f3735ed366597a0aa3aa12416c",
+      "bytes": 771,
+      "reason": "Only a narrow inspected projection may be included. Private original remains unchanged."
+    },
+    {
+      "caseId": "reproduce-before-fix",
+      "attemptId": "review-b-13",
+      "originalLocator": "work/notes_workflow_reruns/actors/reproduce-before-fix/native-scoped.jsonl",
+      "sourceSha256": "434d06ba5664d8a479db75d8e3160ae677c0f0b3a2e7cf39710d41de3ae5ab66",
+      "bytes": 594850,
+      "reason": "Raw/native context, broad discovery, completion dump, or bulk source manifest is excluded. No protected payload is decoded."
+    },
+    {
+      "caseId": "contiguous-verified-stack",
+      "attemptId": "review-b-14",
+      "originalLocator": "work/repair_real_builds/REPORT.md",
+      "sourceSha256": "cf483afd819908cd4b05843a90bf80a6befea83de3265efec502a5b7892dd362",
+      "bytes": 3213,
+      "reason": "Only a narrow inspected projection may be included. Private original remains unchanged."
+    },
+    {
+      "caseId": "contiguous-verified-stack",
+      "attemptId": "review-b-14",
+      "originalLocator": "work/repair_real_builds/post-final101/verified.json",
+      "sourceSha256": "5fa24d4b1713c127c0f8d36deeb6375e1236cafaae131727444d57ce6fddeff4",
+      "bytes": 735,
+      "reason": "No short selected result fields remain. The original stays private with its digest."
+    },
+    {
+      "caseId": "contiguous-verified-stack",
+      "attemptId": "review-b-14",
+      "originalLocator": "work/repair_real_builds/model101-commands.json",
+      "sourceSha256": "b3a05d6ad2e8a8ee4cf3c97ea58de715983140b9bac94433ac5dbffd5e4f0c8c",
+      "bytes": 3821,
+      "reason": "Raw/native context, broad discovery, completion dump, or bulk source manifest is excluded. No protected payload is decoded."
+    },
+    {
+      "caseId": "contiguous-verified-stack",
+      "attemptId": "review-b-14",
+      "originalLocator": "work/repair_real_builds/model102-commands.json",
+      "sourceSha256": "0d996f26b58c38a563a18e3705f654216ad0b4985a895ccc2dbdaf39bd2a5d37",
+      "bytes": 2840,
+      "reason": "Raw/native context, broad discovery, completion dump, or bulk source manifest is excluded. No protected payload is decoded."
+    },
+    {
+      "caseId": "contiguous-verified-stack",
+      "attemptId": "review-b-14",
+      "originalLocator": "work/repair_real_builds/model102.json",
+      "sourceSha256": "e65b54b65a1643bb1f70321826a0e111ed596ce8a41cc5116c2bbbc038548cea",
+      "bytes": 790,
+      "reason": "Only a narrow inspected projection may be included. Private original remains unchanged."
+    },
+    {
+      "caseId": "contiguous-verified-stack",
+      "attemptId": "review-b-14",
+      "originalLocator": "work/helper_workflow_reruns/projects/release-stack/deliverables/watcher-final/observed-events.json",
+      "sourceSha256": "4728ee949ec253027b1bb77b0132aeb54ef781d098dae1baf2f9c82a5117f9e4",
+      "bytes": 13180,
+      "reason": "Only a narrow inspected projection may be included. Private original remains unchanged."
+    },
+    {
+      "caseId": "user-correction",
+      "attemptId": "review-c-01",
+      "originalLocator": "remaining-local/cases/user-correction/task-contract.json",
+      "sourceSha256": "acb5f2f3a652842d08177577bf63ca1e068db04acb21e521d5b7d9e169bce657",
+      "bytes": 3042,
+      "reason": "Only a narrow inspected projection may be included. Private original remains unchanged."
+    },
+    {
+      "caseId": "user-correction",
+      "attemptId": "review-c-01",
+      "originalLocator": "remaining-local/cases/user-correction/outputs/user-correction.result.md",
+      "sourceSha256": "ce4b4a44436db56176ec04db9da63e0e6d897265f2ff3c40047d9ca1a09ca97f",
+      "bytes": 7921,
+      "reason": "Only a narrow inspected projection may be included. Private original remains unchanged."
+    },
+    {
+      "caseId": "user-correction",
+      "attemptId": "review-c-01",
+      "originalLocator": "remaining-local/cases/user-correction/outputs/completion.json",
+      "sourceSha256": "e776a78ad26a0837f148b0eb4c830fa611b13dc5dc93a1c35db3ac6ae63af205",
+      "bytes": 4025,
+      "reason": "Raw/native context, broad discovery, completion dump, or bulk source manifest is excluded. No protected payload is decoded."
+    },
+    {
+      "caseId": "user-correction",
+      "attemptId": "review-c-01",
+      "originalLocator": "remaining-local/cases/user-correction/outputs/checks.json",
+      "sourceSha256": "cd18c13ddd0db7b51d2a2505a676742f9a05f98b36aee7d602316ddf32d6b00e",
+      "bytes": 1118,
+      "reason": "Only a narrow inspected projection may be included. Private original remains unchanged."
+    },
+    {
+      "caseId": "user-correction",
+      "attemptId": "review-c-01",
+      "originalLocator": "remaining-local/cases/user-correction/outputs/identities.json",
+      "sourceSha256": "481a31bb833307ab21f8b80dd5bbdba6a33e7d1ffbb7f42bbf0beb0b5dfe2c06",
+      "bytes": 5613,
+      "reason": "Raw/native context, broad discovery, completion dump, or bulk source manifest is excluded. No protected payload is decoded."
+    },
+    {
+      "caseId": "preserved-behavior",
+      "attemptId": "review-c-02",
+      "originalLocator": "remaining-local/cases/preserved-behavior/task-contract.json",
+      "sourceSha256": "d3f47b22c2fd80cee4808cb2c8f54f97e5aa77bf8158272d5cb69773d9b95db8",
+      "bytes": 12657,
+      "reason": "Only a narrow inspected projection may be included. Private original remains unchanged."
+    },
+    {
+      "caseId": "preserved-behavior",
+      "attemptId": "review-c-02",
+      "originalLocator": "remaining-local/cases/preserved-behavior/outputs/preserved-behavior.result.md",
+      "sourceSha256": "4bba76c68342167d51b3e92d1989abb7cba66a39ab6f00cf84a4f1d95b76db20",
+      "bytes": 10466,
+      "reason": "Only a narrow inspected projection may be included. Private original remains unchanged."
+    },
+    {
+      "caseId": "preserved-behavior",
+      "attemptId": "review-c-02",
+      "originalLocator": "remaining-local/cases/preserved-behavior/outputs/completion.json",
+      "sourceSha256": "1989d5292e3d2d950737d5e9184b381a0366a4cae85c8088eaf74efa49764f41",
+      "bytes": 100541,
+      "reason": "Raw/native context, broad discovery, completion dump, or bulk source manifest is excluded. No protected payload is decoded."
+    },
+    {
+      "caseId": "preserved-behavior",
+      "attemptId": "review-c-02",
+      "originalLocator": "remaining-local/cases/preserved-behavior/outputs/baseline.json",
+      "sourceSha256": "68d2de7b1168caad8120fa08191622ed713d02846475da19d988968e77dbfbca",
+      "bytes": 1537,
+      "reason": "Only a narrow inspected projection may be included. Private original remains unchanged."
+    },
+    {
+      "caseId": "preserved-behavior",
+      "attemptId": "review-c-02",
+      "originalLocator": "remaining-local/cases/preserved-behavior/outputs/workers/mechanical_01/steps.json",
+      "sourceSha256": "e125bd86ae7460033ca15a90a4cb60e70d79e8b2e702803514223cc2bd7f4866",
+      "bytes": 11038,
+      "reason": "Only a narrow inspected projection may be included. Private original remains unchanged."
+    },
+    {
+      "caseId": "preserved-behavior",
+      "attemptId": "review-c-02",
+      "originalLocator": "remaining-local/cases/preserved-behavior/outputs/workers/diff_review_01/report.md",
+      "sourceSha256": "6292a64772fc6456a565558d5b353f38776c21e47b6ed7180fc96a8ad6f18c43",
+      "bytes": 5375,
+      "reason": "Only a narrow inspected projection may be included. Private original remains unchanged."
+    },
+    {
+      "caseId": "preserved-behavior",
+      "attemptId": "review-c-02",
+      "originalLocator": "remaining-local/cases/preserved-behavior/outputs/independent-review-fixes.md",
+      "sourceSha256": "44be76a003f0dc4d69274e7e23fd5c6688e96e7e3f0dbbbadd1361baba4bdcb5",
+      "bytes": 1036,
+      "reason": "Only a narrow inspected projection may be included. Private original remains unchanged."
+    },
+    {
+      "caseId": "repeated-failure",
+      "attemptId": "review-c-03",
+      "originalLocator": "remaining-local/cases/repeated-failure/task-contract.json",
+      "sourceSha256": "2ab067f4fa81df64dbf695ff6e8bdbea85eb305bf9eb180d44de010cb2b9603c",
+      "bytes": 2752,
+      "reason": "Only a narrow inspected projection may be included. Private original remains unchanged."
+    },
+    {
+      "caseId": "repeated-failure",
+      "attemptId": "review-c-03",
+      "originalLocator": "remaining-local/cases/repeated-failure/outputs/repeated-failure.result.md",
+      "sourceSha256": "f7565606495ab9fa121300824e812bfafb9c93c106aac67451a59c7ec394a313",
+      "bytes": 3320,
+      "reason": "Only a narrow inspected projection may be included. Private original remains unchanged."
+    },
+    {
+      "caseId": "repeated-failure",
+      "attemptId": "review-c-03",
+      "originalLocator": "remaining-local/cases/repeated-failure/outputs/completion.json",
+      "sourceSha256": "70dc997c3ddd252f251ced5a6f7af56d71a0d38b50e746c46d3a319779a0bfbd",
+      "bytes": 14772,
+      "reason": "Raw/native context, broad discovery, completion dump, or bulk source manifest is excluded. No protected payload is decoded."
+    },
+    {
+      "caseId": "repeated-failure",
+      "attemptId": "review-c-03",
+      "originalLocator": "remaining-local/cases/repeated-failure/outputs/source-input-hashes.json",
+      "sourceSha256": "1cc8a3b9049a4060277cc8b27bf8455223d9592ad4b375e36947a03eeccd1c91",
+      "bytes": 22329,
+      "reason": "Raw/native context, broad discovery, completion dump, or bulk source manifest is excluded. No protected payload is decoded."
+    },
+    {
+      "caseId": "partition-and-race",
+      "attemptId": "review-c-04",
+      "originalLocator": "remaining-local/cases/partition-and-race/task-contract.json",
+      "sourceSha256": "5bd81b9ebe4d2085918b1d1bd7d2ed2d4691262925457203069a20422ae6de1f",
+      "bytes": 3297,
+      "reason": "Only a narrow inspected projection may be included. Private original remains unchanged."
+    },
+    {
+      "caseId": "partition-and-race",
+      "attemptId": "review-c-04",
+      "originalLocator": "remaining-local/cases/partition-and-race/outputs/partition-and-race.result.md",
+      "sourceSha256": "9e09a1417ca2f88eea479882669b6973911363f902e3f3cebcfc32e298b86ca3",
+      "bytes": 38501,
+      "reason": "Only a narrow inspected projection may be included. Private original remains unchanged."
+    },
+    {
+      "caseId": "partition-and-race",
+      "attemptId": "review-c-04",
+      "originalLocator": "remaining-local/cases/partition-and-race/outputs/completion.json",
+      "sourceSha256": "f5418ce677e80949ecba7c9a6b9def8cf69220fb9423a80a4bc79a97a114a70e",
+      "bytes": 57913,
+      "reason": "Raw/native context, broad discovery, completion dump, or bulk source manifest is excluded. No protected payload is decoded."
+    },
+    {
+      "caseId": "partition-and-race",
+      "attemptId": "review-c-04",
+      "originalLocator": "remaining-local/cases/partition-and-race/outputs/swarm-events.jsonl",
+      "sourceSha256": "473a88eb59910e4436ffc40e06d6be29396ef8f19e478a05c6afbc9a5c70c872",
+      "bytes": 8555,
+      "reason": "Only a narrow inspected projection may be included. Private original remains unchanged."
+    },
+    {
+      "caseId": "partition-and-race",
+      "attemptId": "review-c-04",
+      "originalLocator": "remaining-local/cases/partition-and-race/outputs/parent-review.md",
+      "sourceSha256": "0012f5f8bad8d7d70cc054c704c0821a1402bad16b4e00dfa03e56a61f3c0a94",
+      "bytes": 2607,
+      "reason": "Only a narrow inspected projection may be included. Private original remains unchanged."
+    },
+    {
+      "caseId": "trace-provenance",
+      "attemptId": "review-c-05",
+      "originalLocator": "remaining-local/cases/trace-provenance/task-contract.json",
+      "sourceSha256": "e06a86f1278f47d0d3c04b71e756d4a1720970f81f8b3ec8f54b62b3a7f55d31",
+      "bytes": 7362,
+      "reason": "Only a narrow inspected projection may be included. Private original remains unchanged."
+    },
+    {
+      "caseId": "trace-provenance",
+      "attemptId": "review-c-05",
+      "originalLocator": "remaining-local/cases/trace-provenance/outputs/trace-provenance.result.md",
+      "sourceSha256": "355312771f87647749a2f03f9fd01d93938c4079742f8c824d05368debd5e159",
+      "bytes": 5138,
+      "reason": "Only a narrow inspected projection may be included. Private original remains unchanged."
+    },
+    {
+      "caseId": "trace-provenance",
+      "attemptId": "review-c-05",
+      "originalLocator": "remaining-local/cases/trace-provenance/outputs/completion.json",
+      "sourceSha256": "8a2d668c36b31123099d54d658027a63ad7df8bae04eb2d78004c6e6f5635377",
+      "bytes": 86552,
+      "reason": "Raw/native context, broad discovery, completion dump, or bulk source manifest is excluded. No protected payload is decoded."
+    },
+    {
+      "caseId": "trace-provenance",
+      "attemptId": "review-c-05",
+      "originalLocator": "remaining-local/cases/trace-provenance/outputs/variants.json",
+      "sourceSha256": "29dc96be0faeb42bde2cc18d5d115972a68239c5ca27aff1f8ca2f46fedc5ebe",
+      "bytes": 4426,
+      "reason": "Only a narrow inspected projection may be included. Private original remains unchanged."
+    },
+    {
+      "caseId": "authorized-program",
+      "attemptId": "review-c-06",
+      "originalLocator": "remaining-local/cases/authorized-program/task-contract.json",
+      "sourceSha256": "a591738302be664adf825212db7545a0143353907f83068d7a9c7e2e33aba2bd",
+      "bytes": 6845,
+      "reason": "Only a narrow inspected projection may be included. Private original remains unchanged."
+    },
+    {
+      "caseId": "authorized-program",
+      "attemptId": "review-c-06",
+      "originalLocator": "remaining-local/cases/authorized-program/outputs/authorized-program.result.md",
+      "sourceSha256": "441ea0982f736f74a90ba909c6442031f8c684649c33bb4cb5f4e3279645e796",
+      "bytes": 7114,
+      "reason": "Only a narrow inspected projection may be included. Private original remains unchanged."
+    },
+    {
+      "caseId": "authorized-program",
+      "attemptId": "review-c-06",
+      "originalLocator": "remaining-local/cases/authorized-program/outputs/completion.json",
+      "sourceSha256": "a4ffe5e55180b744e40766645a048af73a2503f0e8ce7f3a2e6e3a9cb990eb9c",
+      "bytes": 48278,
+      "reason": "Raw/native context, broad discovery, completion dump, or bulk source manifest is excluded. No protected payload is decoded."
+    },
+    {
+      "caseId": "authorized-program",
+      "attemptId": "review-c-06",
+      "originalLocator": "remaining-local/cases/authorized-program/outputs/first-response.txt",
+      "sourceSha256": "54a881b57e0bfc5949bcfdaa4a1a4f27b65b770ee8744d7092e47b39fc6de422",
+      "bytes": 300,
+      "reason": "Only a narrow inspected projection may be included. Private original remains unchanged."
+    },
+    {
+      "caseId": "authorized-program",
+      "attemptId": "review-c-06",
+      "originalLocator": "remaining-local/cases/authorized-program/outputs/verification.json",
+      "sourceSha256": "f3e31f6ca2844bdf0d8c7b48537f249e334d24f1d44af23ad117ac57b4540dc9",
+      "bytes": 6122,
+      "reason": "Only a narrow inspected projection may be included. Private original remains unchanged."
+    },
+    {
+      "caseId": "authorized-program",
+      "attemptId": "review-c-06",
+      "originalLocator": "remaining-local/cases/authorized-program/outputs/variants.json",
+      "sourceSha256": "b89f9f63a31d45ade50374cb02c499a9b1f6174390b87ac193da55a38ec0a3d4",
+      "bytes": 3842,
+      "reason": "Only a narrow inspected projection may be included. Private original remains unchanged."
+    },
+    {
+      "caseId": "authorized-program",
+      "attemptId": "review-c-06",
+      "originalLocator": "remaining-local/cases/authorized-program/outputs/continuation.md",
+      "sourceSha256": "374bfa607b12565f73124902f71dacf8c8f5d59069bed241475ed888d6fa17fc",
+      "bytes": 926,
+      "reason": "Only a narrow inspected projection may be included. Private original remains unchanged."
+    },
+    {
+      "caseId": "authorized-program",
+      "attemptId": "review-c-06",
+      "originalLocator": "remaining-local/cases/authorized-program/outputs/decisions.tsv",
+      "sourceSha256": "baaaf8c0a88c79a0c2ab60399aa05839edad8c2053351913c4ddc0420410130e",
+      "bytes": 315,
+      "reason": "Only a narrow inspected projection may be included. Private original remains unchanged."
+    },
+    {
+      "caseId": "guides-ordinary-chatgpt",
+      "attemptId": "review-c-07",
+      "originalLocator": "remaining-local/cases/guides-ordinary-chatgpt/task-contract.json",
+      "sourceSha256": "28dda7406998fbc20bc07224f7b9b923e5eb4267de73a5b79e71dc40d85e9b07",
+      "bytes": 6015,
+      "reason": "Only a narrow inspected projection may be included. Private original remains unchanged."
+    },
+    {
+      "caseId": "guides-ordinary-chatgpt",
+      "attemptId": "review-c-07",
+      "originalLocator": "remaining-local/cases/guides-ordinary-chatgpt/outputs/guides-ordinary-chatgpt.result.md",
+      "sourceSha256": "801c131150f8d6a92dbf74c15cd2c2aac3964e8360a1a673eb4c83c2d1192a1d",
+      "bytes": 55426,
+      "reason": "Only a narrow inspected projection may be included. Private original remains unchanged."
+    },
+    {
+      "caseId": "guides-ordinary-chatgpt",
+      "attemptId": "review-c-07",
+      "originalLocator": "remaining-local/cases/guides-ordinary-chatgpt/outputs/completion.json",
+      "sourceSha256": "0b0fd6d83aa16ad9bdea6adfd60933a556864e8a8c2352929996891f1d020771",
+      "bytes": 51452,
+      "reason": "Raw/native context, broad discovery, completion dump, or bulk source manifest is excluded. No protected payload is decoded."
+    },
+    {
+      "caseId": "grounded-explanation",
+      "attemptId": "review-c-08",
+      "originalLocator": "remaining-local/cases/grounded-explanation/task-contract.json",
+      "sourceSha256": "96d368f28afb406357ecdd0f3c74dc4df26b1e617f2dbd731ab1daab70e82991",
+      "bytes": 3526,
+      "reason": "Only a narrow inspected projection may be included. Private original remains unchanged."
+    },
+    {
+      "caseId": "grounded-explanation",
+      "attemptId": "review-c-08",
+      "originalLocator": "remaining-local/cases/grounded-explanation/outputs/grounded-explanation.result.md",
+      "sourceSha256": "383df2b0cc1bab9d92630651383828d6d825199fd326d45f5e99e63d2ccbdd27",
+      "bytes": 32385,
+      "reason": "Only a narrow inspected projection may be included. Private original remains unchanged."
+    },
+    {
+      "caseId": "grounded-explanation",
+      "attemptId": "review-c-08",
+      "originalLocator": "remaining-local/cases/grounded-explanation/outputs/completion.json",
+      "sourceSha256": "22446e768e703135e3f7117550204117e4254f62bb292c2f7362faa16aff0ed0",
+      "bytes": 57048,
+      "reason": "Raw/native context, broad discovery, completion dump, or bulk source manifest is excluded. No protected payload is decoded."
+    },
+    {
+      "caseId": "grounded-explanation",
+      "attemptId": "review-c-08",
+      "originalLocator": "remaining-local/cases/grounded-explanation/outputs/how.returned.md",
+      "sourceSha256": "eed3f1f91a891e661ec3e38ae45ade113b5653a597dbfb8361d29b03feaeee5b",
+      "bytes": 8100,
+      "reason": "Only a narrow inspected projection may be included. Private original remains unchanged."
+    },
+    {
+      "caseId": "grounded-explanation",
+      "attemptId": "review-c-08",
+      "originalLocator": "remaining-local/cases/grounded-explanation/outputs/why.returned.md",
+      "sourceSha256": "da0314f51a64ac9b38637678624371b09934585ea15f661f516de94b439db79c",
+      "bytes": 11313,
+      "reason": "Only a narrow inspected projection may be included. Private original remains unchanged."
+    },
+    {
+      "caseId": "grounded-explanation",
+      "attemptId": "review-c-08",
+      "originalLocator": "remaining-local/cases/grounded-explanation/outputs/synthesizer.returned.md",
+      "sourceSha256": "3956a5f8624eff28ee18b761dbef29e5256e23d6d83b4db85db9ce79abc5dc4a",
+      "bytes": 8911,
+      "reason": "Only a narrow inspected projection may be included. Private original remains unchanged."
+    },
+    {
+      "caseId": "history-evidence",
+      "attemptId": "review-c-09",
+      "originalLocator": "remaining-local/cases/history-evidence/task-contract.json",
+      "sourceSha256": "4f5ca50791ba71c4499ec2b4721ae09aec3eca503a77dbff1510e0b9a8a039a4",
+      "bytes": 6655,
+      "reason": "Only a narrow inspected projection may be included. Private original remains unchanged."
+    },
+    {
+      "caseId": "history-evidence",
+      "attemptId": "review-c-09",
+      "originalLocator": "remaining-local/cases/history-evidence/outputs/history-evidence.result.md",
+      "sourceSha256": "e46f0698c4164c0b588934658e9c8db03acd75885d2633e72dfb20fd4607ab78",
+      "bytes": 10028,
+      "reason": "Only a narrow inspected projection may be included. Private original remains unchanged."
+    },
+    {
+      "caseId": "history-evidence",
+      "attemptId": "review-c-09",
+      "originalLocator": "remaining-local/cases/history-evidence/outputs/completion.json",
+      "sourceSha256": "7ac432e0d32c98318b375a4e6a55477ffa9cce543f4c474b7fb7bc41af3359a0",
+      "bytes": 40920,
+      "reason": "Raw/native context, broad discovery, completion dump, or bulk source manifest is excluded. No protected payload is decoded."
+    },
+    {
+      "caseId": "history-evidence",
+      "attemptId": "review-c-09",
+      "originalLocator": "remaining-local/cases/history-evidence/outputs/source-control-investigator.md",
+      "sourceSha256": "80373e9587130140ad4319c36edf0fad35ed4c9ff212eb4dbd6b38b730cb7db1",
+      "bytes": 7687,
+      "reason": "Only a narrow inspected projection may be included. Private original remains unchanged."
+    },
+    {
+      "caseId": "history-evidence",
+      "attemptId": "review-c-09",
+      "originalLocator": "remaining-local/cases/history-evidence/outputs/synthesizer.md",
+      "sourceSha256": "2e9f32620de9e960cd4e5c62ea08a319ec80c0861c193002afff1d97b1fb1d85",
+      "bytes": 7110,
+      "reason": "Only a narrow inspected projection may be included. Private original remains unchanged."
+    },
+    {
+      "caseId": "accessible-trace",
+      "attemptId": "review-c-10",
+      "originalLocator": "remaining-local/cases/accessible-trace/task-contract.json",
+      "sourceSha256": "07365aa287c322237a1a0dba6971f08c3b6b6bd34ff6f41b2246ddbc907c4d07",
+      "bytes": 6284,
+      "reason": "Only a narrow inspected projection may be included. Private original remains unchanged."
+    },
+    {
+      "caseId": "accessible-trace",
+      "attemptId": "review-c-10",
+      "originalLocator": "remaining-local/cases/accessible-trace/outputs/accessible-trace.result.md",
+      "sourceSha256": "9b7f7a8bc8e8c120e7a05998c6de85460d2449e6cd393f52c1c525500e44bd22",
+      "bytes": 5037,
+      "reason": "Only a narrow inspected projection may be included. Private original remains unchanged."
+    },
+    {
+      "caseId": "accessible-trace",
+      "attemptId": "review-c-10",
+      "originalLocator": "remaining-local/cases/accessible-trace/outputs/completion.json",
+      "sourceSha256": "44d74e1b0640eeed86ca902e2e83b1483ae9317dd1fe26c46c144b6fd353a56e",
+      "bytes": 26841,
+      "reason": "Raw/native context, broad discovery, completion dump, or bulk source manifest is excluded. No protected payload is decoded."
+    },
+    {
+      "caseId": "absent-workers",
+      "attemptId": "review-c-11",
+      "originalLocator": "cross-host-extra/local/projects/absent-workers/task-contract.json",
+      "sourceSha256": "d861525c044c45f69bed1f02b85c30dc0d33d0aeda2e87eee10394d9f54fe58a",
+      "bytes": 2522,
+      "reason": "Only a narrow inspected projection may be included. Private original remains unchanged."
+    },
+    {
+      "caseId": "absent-workers",
+      "attemptId": "review-c-11",
+      "originalLocator": "cross-host-extra/local/projects/absent-workers/outputs/absent-workers.result.md",
+      "sourceSha256": "c2ab9899ccc535b208dcb7252106eca0f5117dabff056480d2ca5b3aee545492",
+      "bytes": 27329,
+      "reason": "Only a narrow inspected projection may be included. Private original remains unchanged."
+    },
+    {
+      "caseId": "absent-workers",
+      "attemptId": "review-c-11",
+      "originalLocator": "cross-host-extra/local/projects/absent-workers/outputs/completion.json",
+      "sourceSha256": "bf93a9bd0e9b95482df1a9effc7085bcdce1bd5957416e86a65225a246091ec8",
+      "bytes": 200825,
+      "reason": "Raw/native context, broad discovery, completion dump, or bulk source manifest is excluded. No protected payload is decoded."
+    },
+    {
+      "caseId": "absent-workers",
+      "attemptId": "review-c-11",
+      "originalLocator": "cross-host-extra/local/projects/absent-workers/outputs/invoice_trace.events.jsonl",
+      "sourceSha256": "5709ab62b433fafa6ad846d87360105e0229602fb70316f37890a351476a0ed5",
+      "bytes": 1140,
+      "reason": "Only a narrow inspected projection may be included. Private original remains unchanged."
+    },
+    {
+      "caseId": "absent-workers",
+      "attemptId": "review-c-11",
+      "originalLocator": "cross-host-extra/local/projects/absent-workers/outputs/invoice_trace/result.md",
+      "sourceSha256": "0d01ff0c267908423966c87ac34d0b65e2a770f8118b649fff4d2ec6e741d1b9",
+      "bytes": 5670,
+      "reason": "Only a narrow inspected projection may be included. Private original remains unchanged."
+    },
+    {
+      "caseId": "absent-workers",
+      "attemptId": "review-c-11",
+      "originalLocator": "cross-host-extra/local/projects/absent-workers/outputs/invoice_trace/completion.json",
+      "sourceSha256": "67ae8ebf9a404e873848407fe6e81684ce0dfccf037a3a3633c822bb0190a82a",
+      "bytes": 37192,
+      "reason": "Raw/native context, broad discovery, completion dump, or bulk source manifest is excluded. No protected payload is decoded."
+    },
+    {
+      "caseId": "guides-worker-chatgpt",
+      "attemptId": "review-c-12",
+      "originalLocator": "cross-host-extra/local/projects/guides-worker-chatgpt/task-contract.json",
+      "sourceSha256": "b97c4fdde9880882946d5185868589cc9bb378bb10e5639a24d834519b607428",
+      "bytes": 6003,
+      "reason": "Only a narrow inspected projection may be included. Private original remains unchanged."
+    },
+    {
+      "caseId": "guides-worker-chatgpt",
+      "attemptId": "review-c-12",
+      "originalLocator": "cross-host-extra/local/projects/guides-worker-chatgpt/outputs/guides-worker-chatgpt.result.md",
+      "sourceSha256": "9d8fd0176e938f61375961b1426389015e0f1e5bba0b2f7d9e2b3bb8b32fda89",
+      "bytes": 27434,
+      "reason": "Only a narrow inspected projection may be included. Private original remains unchanged."
+    },
+    {
+      "caseId": "guides-worker-chatgpt",
+      "attemptId": "review-c-12",
+      "originalLocator": "cross-host-extra/local/projects/guides-worker-chatgpt/outputs/completion.json",
+      "sourceSha256": "048e6941f5d5fb4d742cc0012e6eb65b86eaa2002a0bde562e176a80d1824d73",
+      "bytes": 182655,
+      "reason": "Raw/native context, broad discovery, completion dump, or bulk source manifest is excluded. No protected payload is decoded."
+    },
+    {
+      "caseId": "guides-worker-chatgpt",
+      "attemptId": "review-c-12",
+      "originalLocator": "cross-host-extra/local/projects/guides-worker-chatgpt/outputs/guide_owner.events.jsonl",
+      "sourceSha256": "b940049f8aa2e62f72c9f83475d40befc31f08092cf13bce7f7e2a7cae42c8af",
+      "bytes": 1151,
+      "reason": "Only a narrow inspected projection may be included. Private original remains unchanged."
+    },
+    {
+      "caseId": "guides-worker-chatgpt",
+      "attemptId": "review-c-12",
+      "originalLocator": "cross-host-extra/local/projects/guides-worker-chatgpt/outputs/guide_owner/result.md",
+      "sourceSha256": "2e9cebd88a14d58ca77a3910ef873ac34961bbab252267deee59f034c5641220",
+      "bytes": 6597,
+      "reason": "Only a narrow inspected projection may be included. Private original remains unchanged."
+    },
+    {
+      "caseId": "guides-worker-chatgpt",
+      "attemptId": "review-c-12",
+      "originalLocator": "cross-host-extra/local/projects/guides-worker-chatgpt/outputs/guide_owner/completion.json",
+      "sourceSha256": "f1386fa903470c1a40d29d4a00f81fc0e1ad5edabe6ce2b5706a672b2e9465f1",
+      "bytes": 6170,
+      "reason": "Raw/native context, broad discovery, completion dump, or bulk source manifest is excluded. No protected payload is decoded."
+    },
+    {
+      "caseId": "unsupported-selected-model",
+      "attemptId": "review-c-13",
+      "originalLocator": "cross-host-extra/local/projects/unsupported-selected-model/task-contract.json",
+      "sourceSha256": "3ea6c1311ddf8f74acb7548791ab1eef115ad4466fe01f0b1efea92bf72613cf",
+      "bytes": 2631,
+      "reason": "Only a narrow inspected projection may be included. Private original remains unchanged."
+    },
+    {
+      "caseId": "unsupported-selected-model",
+      "attemptId": "review-c-13",
+      "originalLocator": "cross-host-extra/local/projects/unsupported-selected-model/outputs/unsupported-selected-model.result.md",
+      "sourceSha256": "7c9129fb42c2f4f0412254e9ad0ac47351821271178f43116fd9dfcad8e083b5",
+      "bytes": 30129,
+      "reason": "Only a narrow inspected projection may be included. Private original remains unchanged."
+    },
+    {
+      "caseId": "unsupported-selected-model",
+      "attemptId": "review-c-13",
+      "originalLocator": "cross-host-extra/local/projects/unsupported-selected-model/outputs/completion.json",
+      "sourceSha256": "2568dc29b261b7fa88fedec955fee6a6215ecbf6479749cdf7cf725bfc8174fd",
+      "bytes": 204051,
+      "reason": "Raw/native context, broad discovery, completion dump, or bulk source manifest is excluded. No protected payload is decoded."
+    },
+    {
+      "caseId": "unsupported-selected-model",
+      "attemptId": "review-c-13",
+      "originalLocator": "cross-host-extra/local/projects/unsupported-selected-model/outputs/unsupported_owner.events.jsonl",
+      "sourceSha256": "b2d352f0e1cc9c73b66e5c96dad6c100ca823fedfbf1dd248834d5cf8501ff84",
+      "bytes": 1272,
+      "reason": "Only a narrow inspected projection may be included. Private original remains unchanged."
+    },
+    {
+      "caseId": "unsupported-selected-model",
+      "attemptId": "review-c-13",
+      "originalLocator": "cross-host-extra/local/projects/unsupported-selected-model/outputs/unsupported_owner/result.md",
+      "sourceSha256": "4975c903555ab83dfc637291153e3c7dadfa382309094b19d984fcdd940ce004",
+      "bytes": 22362,
+      "reason": "Only a narrow inspected projection may be included. Private original remains unchanged."
+    },
+    {
+      "caseId": "unsupported-selected-model",
+      "attemptId": "review-c-13",
+      "originalLocator": "cross-host-extra/local/projects/unsupported-selected-model/outputs/unsupported_comments/result.md",
+      "sourceSha256": "2b85a8ea290a6a093333ab18e137bf90d2e26da2b4ade0c2af7eff47469f39f1",
+      "bytes": 3127,
+      "reason": "Only a narrow inspected projection may be included. Private original remains unchanged."
+    },
+    {
+      "caseId": "inherited-identical-models",
+      "attemptId": "review-c-14",
+      "originalLocator": "cross-host-extra/local/projects/inherited-identical-models/task-contract.json",
+      "sourceSha256": "a483414eb20a5fe4984476832c595b22a3a2e3564e91fcea11cdc1988c9bb094",
+      "bytes": 2581,
+      "reason": "Only a narrow inspected projection may be included. Private original remains unchanged."
+    },
+    {
+      "caseId": "inherited-identical-models",
+      "attemptId": "review-c-14",
+      "originalLocator": "cross-host-extra/local/projects/inherited-identical-models/outputs/inherited-identical-models.result.md",
+      "sourceSha256": "34fbad0c96cba679e55820847c9eb3fb87f125812a9cfc5dd79810c15430d33f",
+      "bytes": 26333,
+      "reason": "Only a narrow inspected projection may be included. Private original remains unchanged."
+    },
+    {
+      "caseId": "inherited-identical-models",
+      "attemptId": "review-c-14",
+      "originalLocator": "cross-host-extra/local/projects/inherited-identical-models/outputs/completion.json",
+      "sourceSha256": "bb9f574824463fb7e28fe55bc6a366c16559feda00b45bef678bfb2c53475564",
+      "bytes": 230362,
+      "reason": "Raw/native context, broad discovery, completion dump, or bulk source manifest is excluded. No protected payload is decoded."
+    },
+    {
+      "caseId": "inherited-identical-models",
+      "attemptId": "review-c-14",
+      "originalLocator": "cross-host-extra/local/projects/inherited-identical-models/outputs/inherited_owner.events.jsonl",
+      "sourceSha256": "94cc10222598f54c13c10181b39b96dac66e5affbd5499aeca35f8c5ee358882",
+      "bytes": 1260,
+      "reason": "Only a narrow inspected projection may be included. Private original remains unchanged."
+    },
+    {
+      "caseId": "inherited-identical-models",
+      "attemptId": "review-c-14",
+      "originalLocator": "cross-host-extra/local/projects/inherited-identical-models/outputs/inherited_owner/result.md",
+      "sourceSha256": "1cef5d45e34837a3ba602843a94f258d3bfc4370dc842880e1410d8054ebf98d",
+      "bytes": 19341,
+      "reason": "Only a narrow inspected projection may be included. Private original remains unchanged."
+    },
+    {
+      "caseId": "inherited-identical-models",
+      "attemptId": "review-c-14",
+      "originalLocator": "cross-host-extra/local/projects/inherited-identical-models/outputs/inherited_comments.events.jsonl",
+      "sourceSha256": "907dc9622097a8ed8006ede9bebe0887762f36bbf36f77d36273e5531751d6b5",
+      "bytes": 1109,
+      "reason": "Only a narrow inspected projection may be included. Private original remains unchanged."
+    },
+    {
+      "caseId": "inherited-identical-models",
+      "attemptId": "review-c-14",
+      "originalLocator": "cross-host-extra/local/projects/inherited-identical-models/outputs/inherited_comments/result.md",
+      "sourceSha256": "7f7f71721bfd9a6cec266a58ab463e6bed29bb3e605348d424bf9d7bd4de9d5c",
+      "bytes": 2563,
+      "reason": "Only a narrow inspected projection may be included. Private original remains unchanged."
+    }
+  ]
+}

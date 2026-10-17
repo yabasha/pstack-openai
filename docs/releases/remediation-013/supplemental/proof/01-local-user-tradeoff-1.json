@@ -1,0 +1,78 @@
+{
+  "kind": "historical-proof-selection",
+  "source": {
+    "path": "<private-run>/remaining-local/cases/user-tradeoff/outputs/independent-review.json",
+    "sha256": "d330b76b34ef6e3e57cca9771b9a16acaf4a5260337d57f6b84fd1db0ef82cfd",
+    "bytes": 1389
+  },
+  "selection": [
+    {
+      "locator": {
+        "jsonPointer": "/reviewer"
+      },
+      "value": "/root"
+    },
+    {
+      "locator": {
+        "jsonPointer": "/kind"
+      },
+      "value": "authorized independent source/diff review replacement for missing deslop"
+    },
+    {
+      "locator": {
+        "jsonPointer": "/artifact"
+      },
+      "value": "<private-run>/remaining-local/cases/user-tradeoff/outputs/import-prototype.html"
+    },
+    {
+      "locator": {
+        "jsonPointer": "/sha256"
+      },
+      "value": "de062919c1df4579aed22be421537946f0cacaf4f54b670148c6b5a7a023e1d0"
+    },
+    {
+      "locator": {
+        "jsonPointer": "/findings"
+      },
+      "value": [
+        {
+          "severity": "limitation",
+          "finding": "Static file chooser does not parse selected CSV. Progress, completed and unknown outcomes are illustrative states shown together inside a disclosure.",
+          "disposition": "Retain explicit static-only limitation; cannot establish import execution or state transition correctness."
+        },
+        {
+          "severity": "limitation",
+          "finding": "Three named stages are a recommended workflow, not three fully implemented functional controls.",
+          "disposition": "Recommendation is provisional. Production implementation requires real schema, row-volume, partial-import and duplicate policies."
+        }
+      ]
+    },
+    {
+      "locator": {
+        "jsonPointer": "/sourceChecks"
+      },
+      "value": {
+        "noExternalDependencies": true,
+        "statesExplicitlySynthetic": true,
+        "importDisabled": true,
+        "reducedMotion": true
+      }
+    },
+    {
+      "locator": {
+        "jsonPointer": "/result"
+      },
+      "value": "Reviewed source artifact. No blocking correction for throwaway design comparison. No UI behavior independently verified by this reviewer. Missing named companion remains absent."
+    },
+    {
+      "locator": {
+        "jsonPointer": "/at"
+      },
+      "value": "2026-10-17T07:35:30.091Z"
+    }
+  ],
+  "limits": [
+    "Selections preserve the exact source value at each locator. Truncated strings carry explicit code-unit bounds.",
+    "A producer-captured return is not a recovered native parent envelope. Missing call IDs, original capture defects and unknown model observations remain missing."
+  ]
+}

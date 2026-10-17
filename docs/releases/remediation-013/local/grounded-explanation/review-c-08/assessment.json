@@ -1,0 +1,118 @@
+{
+  "schemaVersion": 1,
+  "kind": "historical-independent-assessment-projection",
+  "caseId": "grounded-explanation",
+  "attemptId": "review-c-08",
+  "startingMain": "4138e161c27cafffd2baaab6bf4ca53e86a57433",
+  "packageCommit": "51f209daf83cd97d64f89881d66533bb59dc57db",
+  "packageVersion": "0.1.3",
+  "inputRevision": "fa0bdcdb3d4dd4fbe56b63229d52d4bfc4aa6fad",
+  "originalProposedStatus": "reduced",
+  "evidenceStatus": "reduced-pass",
+  "qualifiesCurrentMain": false,
+  "sourceReview": {
+    "originalLocator": "grades/grade_remediation_local_c/result.json",
+    "sourceSha256": "2582d82fe0ad256da816b168e5b242a713d134d62af8657c4f7bc255d3a7ceba",
+    "jsonPointer": "/cases/7",
+    "reviewer": "/root/grade_remediation_local_c",
+    "requestedModel": "inherit-parent",
+    "actualModel": "unknown"
+  },
+  "findings": [
+    "The two-sentence teaching answer names the actual invoice functions, preserves direct synthetic rationale and unknown layer/cache origin, and combines actual overlapping independent How/Why investigations with a fresh citation-checking synthesis. Direct skill invocation was unavailable and full workflows were followed as the explicitly reduced path."
+  ],
+  "limits": [
+    "Direct skill invocation was not observed",
+    "Original rationale remains only supplied synthetic evidence"
+  ],
+  "chronology": [],
+  "predicate": "Teach expectedReduced explicitly treats read-and-follow fallback as reduced invocation even with independent workers.",
+  "sourceArtifactBindings": [
+    {
+      "originalLocator": "remaining-local/cases/grounded-explanation/task-contract.json",
+      "sourceSha256": "96d368f28afb406357ecdd0f3c74dc4df26b1e617f2dbd731ab1daab70e82991",
+      "expectedSha256": "96d368f28afb406357ecdd0f3c74dc4df26b1e617f2dbd731ab1daab70e82991",
+      "expectedHashMatches": true,
+      "bytes": 3526,
+      "publication": "omitted",
+      "reason": "Only a narrow inspected projection may be included. Private original remains unchanged."
+    },
+    {
+      "originalLocator": "remaining-local/cases/grounded-explanation/outputs/grounded-explanation.result.md",
+      "sourceSha256": "383df2b0cc1bab9d92630651383828d6d825199fd326d45f5e99e63d2ccbdd27",
+      "expectedSha256": "383df2b0cc1bab9d92630651383828d6d825199fd326d45f5e99e63d2ccbdd27",
+      "expectedHashMatches": true,
+      "bytes": 32385,
+      "publication": "omitted",
+      "reason": "Only a narrow inspected projection may be included. Private original remains unchanged."
+    },
+    {
+      "originalLocator": "remaining-local/cases/grounded-explanation/outputs/completion.json",
+      "sourceSha256": "22446e768e703135e3f7117550204117e4254f62bb292c2f7362faa16aff0ed0",
+      "expectedSha256": "22446e768e703135e3f7117550204117e4254f62bb292c2f7362faa16aff0ed0",
+      "expectedHashMatches": true,
+      "bytes": 57048,
+      "publication": "omitted",
+      "reason": "Raw/native context, broad discovery, completion dump, or bulk source manifest is excluded. No protected payload is decoded."
+    },
+    {
+      "originalLocator": "remaining-local/cases/grounded-explanation/outputs/how.returned.md",
+      "sourceSha256": "eed3f1f91a891e661ec3e38ae45ade113b5653a597dbfb8361d29b03feaeee5b",
+      "expectedSha256": "eed3f1f91a891e661ec3e38ae45ade113b5653a597dbfb8361d29b03feaeee5b",
+      "expectedHashMatches": true,
+      "bytes": 8100,
+      "publication": "omitted",
+      "reason": "Only a narrow inspected projection may be included. Private original remains unchanged."
+    },
+    {
+      "originalLocator": "remaining-local/cases/grounded-explanation/outputs/why.returned.md",
+      "sourceSha256": "da0314f51a64ac9b38637678624371b09934585ea15f661f516de94b439db79c",
+      "expectedSha256": "da0314f51a64ac9b38637678624371b09934585ea15f661f516de94b439db79c",
+      "expectedHashMatches": true,
+      "bytes": 11313,
+      "publication": "omitted",
+      "reason": "Only a narrow inspected projection may be included. Private original remains unchanged."
+    },
+    {
+      "originalLocator": "remaining-local/cases/grounded-explanation/outputs/synthesizer.returned.md",
+      "sourceSha256": "3956a5f8624eff28ee18b761dbef29e5256e23d6d83b4db85db9ce79abc5dc4a",
+      "expectedSha256": "3956a5f8624eff28ee18b761dbef29e5256e23d6d83b4db85db9ce79abc5dc4a",
+      "expectedHashMatches": true,
+      "bytes": 8911,
+      "publication": "omitted",
+      "reason": "Only a narrow inspected projection may be included. Private original remains unchanged."
+    },
+    {
+      "originalLocator": "remaining-local/cases/grounded-explanation/outputs/worker-events.json",
+      "sourceSha256": "35ae07d4506bec08f28177a906951b56f412ae548819bdfd3320bb933664dd3b",
+      "expectedSha256": "35ae07d4506bec08f28177a906951b56f412ae548819bdfd3320bb933664dd3b",
+      "expectedHashMatches": true,
+      "bytes": 3008,
+      "publication": "projected-fields",
+      "reason": "Only a narrow inspected projection may be included. Private original remains unchanged.",
+      "projectedPath": "docs/releases/remediation-013/local/grounded-explanation/review-c-08/proof/01-worker-events.json.excerpt.json",
+      "projectedSha256": "1aacfade2cb1cc002bb2912f8380f1279aaba271d603d9bfcc9f2f20eab0604e"
+    },
+    {
+      "originalLocator": "remaining-local/cases/grounded-explanation/outputs/verification.json",
+      "sourceSha256": "d63ed9042f5951890e54f48964a82a6fc1af151922dc9c3cfcffa701bf6635cd",
+      "expectedSha256": "d63ed9042f5951890e54f48964a82a6fc1af151922dc9c3cfcffa701bf6635cd",
+      "expectedHashMatches": true,
+      "bytes": 11862,
+      "publication": "projected-fields",
+      "reason": "Only a narrow inspected projection may be included. Private original remains unchanged.",
+      "projectedPath": "docs/releases/remediation-013/local/grounded-explanation/review-c-08/proof/02-verification.json.excerpt.json",
+      "projectedSha256": "239157b0034a33e65b88bbea9661d2cff9ae259dae7f8d6a00bc910e563d74c0"
+    }
+  ],
+  "projectionLimits": [
+    "This file projects the existing independent assessment and does not regrade the case.",
+    "Private source artifacts and omitted native operations remain private. Source digests bind originals, not transformed bytes.",
+    "Historical 0.1.3 observations do not qualify current main or a modified candidate."
+  ],
+  "statusMapping": {
+    "originalProposedStatus": "reduced",
+    "canonicalStatus": "reduced-pass",
+    "rule": "The original reviewer uses reduced. The evidence schema names this display alias reduced-pass. The original proposed grade remains unchanged."
+  }
+}

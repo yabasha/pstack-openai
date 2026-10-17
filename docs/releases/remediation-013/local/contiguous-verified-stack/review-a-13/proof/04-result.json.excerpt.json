@@ -1,0 +1,27 @@
+{
+  "kind": "selected-fixture-result-fields",
+  "caseId": "contiguous-verified-stack",
+  "attemptId": "review-a-13",
+  "originalLocator": "work/helper_workflow_reruns/projects/release-stack/deliverables/verifier-a/result.json",
+  "sourceSha256": "33515a3a43c303a82091321879579389aef7a3cd952d97320a6e4668d06f17e2",
+  "sourceBytes": 2743,
+  "transformation": "Named JSON fields selected by exact JSON Pointer. Task-owned absolute paths replaced with declared placeholders. Other fields omitted. These are result-artifact values, not synthesized tool execution evidence. Public selection is limited to eight short inspected fields. Longer output and unselected fields remain private.",
+  "fields": [
+    {
+      "pointer": "/inputRevision",
+      "value": "4a7dde94ab2778837e4c932e53cc3484d2e74dfd"
+    },
+    {
+      "pointer": "/verdict",
+      "value": "PASS"
+    },
+    {
+      "pointer": "/requestedModel",
+      "value": "inherit-parent"
+    },
+    {
+      "pointer": "/observedModel",
+      "value": "unknown"
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "kind": "selected-fixture-result-fields",
+  "caseId": "guides-worker-chatgpt",
+  "attemptId": "review-c-12",
+  "originalLocator": "cross-host-extra/local/projects/guides-worker-chatgpt/outputs/guide_owner.assignment.json",
+  "sourceSha256": "c07f7e6f9b9c15a35c171a0276e2d40d72d57cf1f22d0ea2d2b4944caa316193",
+  "sourceBytes": 2335,
+  "transformation": "Named JSON fields selected by exact JSON Pointer. Task-owned absolute paths replaced with declared placeholders. Other fields omitted. These are result-artifact values, not synthesized tool execution evidence. Public selection is limited to eight short inspected fields. Longer output and unselected fields remain private.",
+  "fields": [
+    {
+      "pointer": "/inputRevision",
+      "value": "5425d22370d70584a3beead899cf6547be44cf9e"
+    },
+    {
+      "pointer": "/requestedModel",
+      "value": "inherit-parent"
+    },
+    {
+      "pointer": "/actualModel",
+      "value": "unknown"
+    }
+  ]
+}

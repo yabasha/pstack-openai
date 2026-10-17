@@ -1,0 +1,23 @@
+{
+  "kind": "historical-proof-selection",
+  "source": {
+    "path": "<private-run>/work/notes_workflow_reruns/projects/repeated-rule/tests/release-regression.test.mjs",
+    "sha256": "b832796ccb402ebfbbcbc7fed8178a636d2aa90d627d1a16c21ed3f8a8d56a04",
+    "bytes": 1607
+  },
+  "selection": [
+    {
+      "locator": {
+        "textCodeUnits": [
+          0,
+          981
+        ]
+      },
+      "value": "import { test, expect } from 'bun:test';\nimport { generateRelease } from '../domain/release.mjs';\n\nconst revision = '0123456789abcdef0123456789abcdef01234567';\n\ntest('release retains exact valid caller strings', () => {\n  expect(generateRelease({ version: ' 1.0.0\\n', sourceRevision: revision })).toEqual({\n    version: ' 1.0.0\\n',\n    sourceRevision: '0123456789abcdef0123456789abcdef01234567',\n  });\n  expect(generateRelease({ version: '1.0.0', sourceRevision: 'a'.repeat(40) })).toEqual({\n    version: '1.0.0',\n    sourceRevision: 'aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa',\n  });\n});\n\nconst invalidVersions = [\n  ['absent', {}],\n  ...[undefined, null, 1, false, {}, [], new String('1.0.0'), '', ' ', '\\t\\r\\n', '\\u00a0'].map(version => [String(version), { version }]),\n];\nfor (const [label, input] of invalidVersions) {\n  test('release rejects invalid version ' + label, () => {\n    expect(() => generateRelease({ ...input, sourceRevision: revision })).toThrow(TypeError);\n  });"
+    }
+  ],
+  "limits": [
+    "Selections preserve the exact source value at each locator. Truncated strings carry explicit code-unit bounds.",
+    "A producer-captured return is not a recovered native parent envelope. Missing call IDs, original capture defects and unknown model observations remain missing."
+  ]
+}

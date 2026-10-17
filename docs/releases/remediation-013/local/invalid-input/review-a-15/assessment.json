@@ -1,0 +1,346 @@
+{
+  "schemaVersion": 1,
+  "kind": "historical-independent-assessment-projection",
+  "caseId": "invalid-input",
+  "attemptId": "review-a-15",
+  "startingMain": "4138e161c27cafffd2baaab6bf4ca53e86a57433",
+  "packageCommit": "51f209daf83cd97d64f89881d66533bb59dc57db",
+  "packageVersion": "0.1.3",
+  "inputRevision": "be8f71ddae4c194ec08c22188718639fcceb7183",
+  "originalProposedStatus": "pass",
+  "evidenceStatus": "pass",
+  "qualifiesCurrentMain": false,
+  "sourceReview": {
+    "originalLocator": "grades/grade_remediation_local_a/result.json",
+    "sourceSha256": "9cc1f7ebfcf0f02bdaaabc03a16ca8ef1a0dcc165259e873d7be84affe57bc2f",
+    "jsonPointer": "/cases/14",
+    "reviewer": "/root/grade_remediation_local_a",
+    "requestedModel": "inherit-parent",
+    "actualModel": "unknown"
+  },
+  "findings": [
+    "The real HTTP adapter narrows unknown JSON and rejects malformed shape/missing/invalid quantity before constructing domain Order.",
+    "Pure subtotal/priceOrder accept trusted required types and contain no redundant nil/quantity guard. Public domain types do not expose transport representation.",
+    "Strict compile and literal adapter/internal tests passed. This reviewer independently repeated compilation and seven runtime tests with 1065 assertions.",
+    "Checklist-after-read, one candidate incorrect companion discovery and judge chronology limits remain preserved. They do not invent a missing boundary behavior or a typecheck failure."
+  ],
+  "limits": [
+    "The real HTTP adapter narrows unknown JSON and rejects malformed shape/missing/invalid quantity before constructing domain Order.",
+    "Pure subtotal/priceOrder accept trusted required types and contain no redundant nil/quantity guard. Public domain types do not expose transport representation.",
+    "Checklist-after-read, one candidate incorrect companion discovery and judge chronology limits remain preserved. They do not invent a missing boundary behavior or a typecheck failure."
+  ],
+  "chronology": {
+    "preserveAllEarlierAttempts": true,
+    "methodConformanceClaim": false,
+    "notes": [
+      "The real HTTP adapter narrows unknown JSON and rejects malformed shape/missing/invalid quantity before constructing domain Order.",
+      "Checklist-after-read, one candidate incorrect companion discovery and judge chronology limits remain preserved. They do not invent a missing boundary behavior or a typecheck failure."
+    ]
+  },
+  "predicate": [
+    {
+      "id": 1,
+      "text": "Validate external input at its boundary without duplicating internal guards.",
+      "status": "satisfied",
+      "basis": [
+        "The real HTTP adapter narrows unknown JSON and rejects malformed shape/missing/invalid quantity before constructing domain Order.",
+        "Pure subtotal/priceOrder accept trusted required types and contain no redundant nil/quantity guard. Public domain types do not expose transport representation.",
+        "Strict compile and literal adapter/internal tests passed. This reviewer independently repeated compilation and seven runtime tests with 1065 assertions.",
+        "Checklist-after-read, one candidate incorrect companion discovery and judge chronology limits remain preserved. They do not invent a missing boundary behavior or a typecheck failure."
+      ],
+      "source": "docs/parity/cases/skills/principle-boundary-discipline.json",
+      "evidence": [
+        {
+          "path": "<private-run>/work/local_compiler_cases/projects/order-boundary/deliverables/working/adapter.ts",
+          "line": 1,
+          "sha256": "0fef504f9d0916bf57036b5ed0f6361edec754e8defd60f16f784f0dcd5c6b56"
+        },
+        {
+          "path": "<private-run>/work/local_compiler_cases/projects/order-boundary/deliverables/working/domain.ts",
+          "line": 1,
+          "sha256": "cc98570b0d00b254c8aed8850beb28a108d4f0b97766481f96de951f0196b9c7"
+        },
+        {
+          "path": "<private-run>/work/local_compiler_cases/projects/order-boundary/deliverables/working/internal-caller.ts",
+          "line": 1,
+          "sha256": "4c2426e15dc0b31efb85e7d6ee77ec771fcf667daaca1de0b9342d454f8100cf"
+        },
+        {
+          "path": "<private-run>/work/local_compiler_cases/projects/order-boundary/deliverables/working/boundary.test.mjs",
+          "line": 1,
+          "sha256": "ca2e9f05654c50e4a74ce55f94339fba563d909148121940f489498baa68e324"
+        },
+        {
+          "path": "<private-run>/work/local_compiler_cases/projects/order-boundary/deliverables/working/domain.test.mjs",
+          "line": 1,
+          "sha256": "d579ce4029c409f5b099ca1c594ecaf91b601293762c897811a18de7b883c3f0"
+        },
+        {
+          "path": "<private-run>/work/local_compiler_cases/projects/order-boundary/deliverables/checks.json",
+          "line": 1,
+          "sha256": "50e2c68dcf059cc86ba6bf038fcef573a9e173f75dab9894a81d009fe78f658a"
+        },
+        {
+          "path": "<private-run>/work/local_compiler_cases/projects/order-boundary/deliverables/execution-notes.md",
+          "line": 1,
+          "sha256": "045a54fa5bcee9f414b8a43c319e59853df254db4f73e30661047464c8fba888"
+        },
+        {
+          "path": "<private-run>/work/local_compiler_cases/projects/order-boundary/deliverables/method-receipt.json",
+          "line": 1,
+          "sha256": "7014348e0b14848e999eac1016df5e53e6338b4a5c1352dce0c366006f05367b"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "text": "Parse raw input into domain types and propagate errors internally; keep business logic in pure functions and framework wiring thin.",
+      "status": "satisfied",
+      "basis": [
+        "The real HTTP adapter narrows unknown JSON and rejects malformed shape/missing/invalid quantity before constructing domain Order.",
+        "Pure subtotal/priceOrder accept trusted required types and contain no redundant nil/quantity guard. Public domain types do not expose transport representation.",
+        "Strict compile and literal adapter/internal tests passed. This reviewer independently repeated compilation and seven runtime tests with 1065 assertions.",
+        "Checklist-after-read, one candidate incorrect companion discovery and judge chronology limits remain preserved. They do not invent a missing boundary behavior or a typecheck failure."
+      ],
+      "source": "docs/parity/cases/skills/principle-boundary-discipline.json",
+      "evidence": [
+        {
+          "path": "<private-run>/work/local_compiler_cases/projects/order-boundary/deliverables/working/adapter.ts",
+          "line": 1,
+          "sha256": "0fef504f9d0916bf57036b5ed0f6361edec754e8defd60f16f784f0dcd5c6b56"
+        },
+        {
+          "path": "<private-run>/work/local_compiler_cases/projects/order-boundary/deliverables/working/domain.ts",
+          "line": 1,
+          "sha256": "cc98570b0d00b254c8aed8850beb28a108d4f0b97766481f96de951f0196b9c7"
+        },
+        {
+          "path": "<private-run>/work/local_compiler_cases/projects/order-boundary/deliverables/working/internal-caller.ts",
+          "line": 1,
+          "sha256": "4c2426e15dc0b31efb85e7d6ee77ec771fcf667daaca1de0b9342d454f8100cf"
+        },
+        {
+          "path": "<private-run>/work/local_compiler_cases/projects/order-boundary/deliverables/working/boundary.test.mjs",
+          "line": 1,
+          "sha256": "ca2e9f05654c50e4a74ce55f94339fba563d909148121940f489498baa68e324"
+        },
+        {
+          "path": "<private-run>/work/local_compiler_cases/projects/order-boundary/deliverables/working/domain.test.mjs",
+          "line": 1,
+          "sha256": "d579ce4029c409f5b099ca1c594ecaf91b601293762c897811a18de7b883c3f0"
+        },
+        {
+          "path": "<private-run>/work/local_compiler_cases/projects/order-boundary/deliverables/checks.json",
+          "line": 1,
+          "sha256": "50e2c68dcf059cc86ba6bf038fcef573a9e173f75dab9894a81d009fe78f658a"
+        },
+        {
+          "path": "<private-run>/work/local_compiler_cases/projects/order-boundary/deliverables/execution-notes.md",
+          "line": 1,
+          "sha256": "045a54fa5bcee9f414b8a43c319e59853df254db4f73e30661047464c8fba888"
+        },
+        {
+          "path": "<private-run>/work/local_compiler_cases/projects/order-boundary/deliverables/method-receipt.json",
+          "line": 1,
+          "sha256": "7014348e0b14848e999eac1016df5e53e6338b4a5c1352dce0c366006f05367b"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "text": "Expose domain concepts rather than transport, storage, framework or wire types; keep general-purpose mechanism inside and special-purpose policy at the edge.",
+      "status": "satisfied",
+      "basis": [
+        "The real HTTP adapter narrows unknown JSON and rejects malformed shape/missing/invalid quantity before constructing domain Order.",
+        "Pure subtotal/priceOrder accept trusted required types and contain no redundant nil/quantity guard. Public domain types do not expose transport representation.",
+        "Strict compile and literal adapter/internal tests passed. This reviewer independently repeated compilation and seven runtime tests with 1065 assertions.",
+        "Checklist-after-read, one candidate incorrect companion discovery and judge chronology limits remain preserved. They do not invent a missing boundary behavior or a typecheck failure."
+      ],
+      "source": "docs/parity/cases/skills/principle-boundary-discipline.json",
+      "evidence": [
+        {
+          "path": "<private-run>/work/local_compiler_cases/projects/order-boundary/deliverables/working/adapter.ts",
+          "line": 1,
+          "sha256": "0fef504f9d0916bf57036b5ed0f6361edec754e8defd60f16f784f0dcd5c6b56"
+        },
+        {
+          "path": "<private-run>/work/local_compiler_cases/projects/order-boundary/deliverables/working/domain.ts",
+          "line": 1,
+          "sha256": "cc98570b0d00b254c8aed8850beb28a108d4f0b97766481f96de951f0196b9c7"
+        },
+        {
+          "path": "<private-run>/work/local_compiler_cases/projects/order-boundary/deliverables/working/internal-caller.ts",
+          "line": 1,
+          "sha256": "4c2426e15dc0b31efb85e7d6ee77ec771fcf667daaca1de0b9342d454f8100cf"
+        },
+        {
+          "path": "<private-run>/work/local_compiler_cases/projects/order-boundary/deliverables/working/boundary.test.mjs",
+          "line": 1,
+          "sha256": "ca2e9f05654c50e4a74ce55f94339fba563d909148121940f489498baa68e324"
+        },
+        {
+          "path": "<private-run>/work/local_compiler_cases/projects/order-boundary/deliverables/working/domain.test.mjs",
+          "line": 1,
+          "sha256": "d579ce4029c409f5b099ca1c594ecaf91b601293762c897811a18de7b883c3f0"
+        },
+        {
+          "path": "<private-run>/work/local_compiler_cases/projects/order-boundary/deliverables/checks.json",
+          "line": 1,
+          "sha256": "50e2c68dcf059cc86ba6bf038fcef573a9e173f75dab9894a81d009fe78f658a"
+        },
+        {
+          "path": "<private-run>/work/local_compiler_cases/projects/order-boundary/deliverables/execution-notes.md",
+          "line": 1,
+          "sha256": "045a54fa5bcee9f414b8a43c319e59853df254db4f73e30661047464c8fba888"
+        },
+        {
+          "path": "<private-run>/work/local_compiler_cases/projects/order-boundary/deliverables/method-receipt.json",
+          "line": 1,
+          "sha256": "7014348e0b14848e999eac1016df5e53e6338b4a5c1352dce0c366006f05367b"
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "text": "Report implementation and checks only when writes and execution are authorized and observed.",
+      "status": "satisfied",
+      "basis": [
+        "The real HTTP adapter narrows unknown JSON and rejects malformed shape/missing/invalid quantity before constructing domain Order.",
+        "Pure subtotal/priceOrder accept trusted required types and contain no redundant nil/quantity guard. Public domain types do not expose transport representation.",
+        "Strict compile and literal adapter/internal tests passed. This reviewer independently repeated compilation and seven runtime tests with 1065 assertions.",
+        "Checklist-after-read, one candidate incorrect companion discovery and judge chronology limits remain preserved. They do not invent a missing boundary behavior or a typecheck failure."
+      ],
+      "source": "docs/parity/cases/skills/principle-boundary-discipline.json",
+      "evidence": [
+        {
+          "path": "<private-run>/work/local_compiler_cases/projects/order-boundary/deliverables/working/adapter.ts",
+          "line": 1,
+          "sha256": "0fef504f9d0916bf57036b5ed0f6361edec754e8defd60f16f784f0dcd5c6b56"
+        },
+        {
+          "path": "<private-run>/work/local_compiler_cases/projects/order-boundary/deliverables/working/domain.ts",
+          "line": 1,
+          "sha256": "cc98570b0d00b254c8aed8850beb28a108d4f0b97766481f96de951f0196b9c7"
+        },
+        {
+          "path": "<private-run>/work/local_compiler_cases/projects/order-boundary/deliverables/working/internal-caller.ts",
+          "line": 1,
+          "sha256": "4c2426e15dc0b31efb85e7d6ee77ec771fcf667daaca1de0b9342d454f8100cf"
+        },
+        {
+          "path": "<private-run>/work/local_compiler_cases/projects/order-boundary/deliverables/working/boundary.test.mjs",
+          "line": 1,
+          "sha256": "ca2e9f05654c50e4a74ce55f94339fba563d909148121940f489498baa68e324"
+        },
+        {
+          "path": "<private-run>/work/local_compiler_cases/projects/order-boundary/deliverables/working/domain.test.mjs",
+          "line": 1,
+          "sha256": "d579ce4029c409f5b099ca1c594ecaf91b601293762c897811a18de7b883c3f0"
+        },
+        {
+          "path": "<private-run>/work/local_compiler_cases/projects/order-boundary/deliverables/checks.json",
+          "line": 1,
+          "sha256": "50e2c68dcf059cc86ba6bf038fcef573a9e173f75dab9894a81d009fe78f658a"
+        },
+        {
+          "path": "<private-run>/work/local_compiler_cases/projects/order-boundary/deliverables/execution-notes.md",
+          "line": 1,
+          "sha256": "045a54fa5bcee9f414b8a43c319e59853df254db4f73e30661047464c8fba888"
+        },
+        {
+          "path": "<private-run>/work/local_compiler_cases/projects/order-boundary/deliverables/method-receipt.json",
+          "line": 1,
+          "sha256": "7014348e0b14848e999eac1016df5e53e6338b4a5c1352dce0c366006f05367b"
+        }
+      ]
+    }
+  ],
+  "sourceArtifactBindings": [
+    {
+      "originalLocator": "work/local_compiler_cases/projects/order-boundary/deliverables/working/adapter.ts",
+      "sourceSha256": "0fef504f9d0916bf57036b5ed0f6361edec754e8defd60f16f784f0dcd5c6b56",
+      "expectedSha256": "0fef504f9d0916bf57036b5ed0f6361edec754e8defd60f16f784f0dcd5c6b56",
+      "expectedHashMatches": true,
+      "bytes": 729,
+      "publication": "omitted",
+      "reason": "Only a narrow inspected projection may be included. Private original remains unchanged."
+    },
+    {
+      "originalLocator": "work/local_compiler_cases/projects/order-boundary/deliverables/working/domain.ts",
+      "sourceSha256": "cc98570b0d00b254c8aed8850beb28a108d4f0b97766481f96de951f0196b9c7",
+      "expectedSha256": "cc98570b0d00b254c8aed8850beb28a108d4f0b97766481f96de951f0196b9c7",
+      "expectedHashMatches": true,
+      "bytes": 212,
+      "publication": "omitted",
+      "reason": "Only a narrow inspected projection may be included. Private original remains unchanged."
+    },
+    {
+      "originalLocator": "work/local_compiler_cases/projects/order-boundary/deliverables/working/internal-caller.ts",
+      "sourceSha256": "4c2426e15dc0b31efb85e7d6ee77ec771fcf667daaca1de0b9342d454f8100cf",
+      "expectedSha256": "4c2426e15dc0b31efb85e7d6ee77ec771fcf667daaca1de0b9342d454f8100cf",
+      "expectedHashMatches": true,
+      "bytes": 163,
+      "publication": "omitted",
+      "reason": "Only a narrow inspected projection may be included. Private original remains unchanged."
+    },
+    {
+      "originalLocator": "work/local_compiler_cases/projects/order-boundary/deliverables/working/boundary.test.mjs",
+      "sourceSha256": "ca2e9f05654c50e4a74ce55f94339fba563d909148121940f489498baa68e324",
+      "expectedSha256": "ca2e9f05654c50e4a74ce55f94339fba563d909148121940f489498baa68e324",
+      "expectedHashMatches": true,
+      "bytes": 893,
+      "publication": "omitted",
+      "reason": "Only a narrow inspected projection may be included. Private original remains unchanged."
+    },
+    {
+      "originalLocator": "work/local_compiler_cases/projects/order-boundary/deliverables/working/domain.test.mjs",
+      "sourceSha256": "d579ce4029c409f5b099ca1c594ecaf91b601293762c897811a18de7b883c3f0",
+      "expectedSha256": "d579ce4029c409f5b099ca1c594ecaf91b601293762c897811a18de7b883c3f0",
+      "expectedHashMatches": true,
+      "bytes": 343,
+      "publication": "omitted",
+      "reason": "Only a narrow inspected projection may be included. Private original remains unchanged."
+    },
+    {
+      "originalLocator": "work/local_compiler_cases/projects/order-boundary/deliverables/checks.json",
+      "sourceSha256": "50e2c68dcf059cc86ba6bf038fcef573a9e173f75dab9894a81d009fe78f658a",
+      "expectedSha256": "50e2c68dcf059cc86ba6bf038fcef573a9e173f75dab9894a81d009fe78f658a",
+      "expectedHashMatches": true,
+      "bytes": 1754,
+      "publication": "projected-fields",
+      "reason": "Only a narrow inspected projection may be included. Private original remains unchanged.",
+      "projectedPath": "docs/releases/remediation-013/local/invalid-input/review-a-15/proof/01-checks.json.excerpt.json",
+      "projectedSha256": "363f6b4475c02f4b9729508368414915e4cb04fae637055fa9e66432e001dd4f"
+    },
+    {
+      "originalLocator": "work/local_compiler_cases/projects/order-boundary/deliverables/execution-notes.md",
+      "sourceSha256": "045a54fa5bcee9f414b8a43c319e59853df254db4f73e30661047464c8fba888",
+      "expectedSha256": "045a54fa5bcee9f414b8a43c319e59853df254db4f73e30661047464c8fba888",
+      "expectedHashMatches": true,
+      "bytes": 4721,
+      "publication": "omitted",
+      "reason": "Only a narrow inspected projection may be included. Private original remains unchanged."
+    },
+    {
+      "originalLocator": "work/local_compiler_cases/projects/order-boundary/deliverables/method-receipt.json",
+      "sourceSha256": "7014348e0b14848e999eac1016df5e53e6338b4a5c1352dce0c366006f05367b",
+      "expectedSha256": "7014348e0b14848e999eac1016df5e53e6338b4a5c1352dce0c366006f05367b",
+      "expectedHashMatches": true,
+      "bytes": 7047,
+      "publication": "projected-fields",
+      "reason": "Only a narrow inspected projection may be included. Private original remains unchanged.",
+      "projectedPath": "docs/releases/remediation-013/local/invalid-input/review-a-15/proof/02-method-receipt.json.excerpt.json",
+      "projectedSha256": "94023cb0e2e877707a2245e199722f03bf913c858b3faaa4430561b3f5cfbf56"
+    }
+  ],
+  "projectionLimits": [
+    "This file projects the existing independent assessment and does not regrade the case.",
+    "Private source artifacts and omitted native operations remain private. Source digests bind originals, not transformed bytes.",
+    "Historical 0.1.3 observations do not qualify current main or a modified candidate."
+  ],
+  "statusMapping": {
+    "originalProposedStatus": "pass",
+    "canonicalStatus": "pass",
+    "rule": "No status alias is applied."
+  }
+}

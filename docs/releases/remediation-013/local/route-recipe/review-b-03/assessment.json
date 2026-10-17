@@ -1,0 +1,108 @@
+{
+  "schemaVersion": 1,
+  "kind": "historical-independent-assessment-projection",
+  "caseId": "route-recipe",
+  "attemptId": "review-b-03",
+  "startingMain": "4138e161c27cafffd2baaab6bf4ca53e86a57433",
+  "packageCommit": "51f209daf83cd97d64f89881d66533bb59dc57db",
+  "packageVersion": "0.1.3",
+  "inputRevision": "8ad10cb42cc9e0a09f6eb9239b2909203a7f9a3e",
+  "originalProposedStatus": "reduced-pass",
+  "evidenceStatus": "reduced-pass",
+  "qualifiesCurrentMain": false,
+  "sourceReview": {
+    "originalLocator": "grades/grade_remediation_local_b/result.json",
+    "sourceSha256": "d837b0c7cdea4be245b4a86ca593038cbe8b1596662a82fe6554e9d96444abd6",
+    "jsonPointer": "/rows/2",
+    "reviewer": "/root/grade_remediation_local_b",
+    "requestedModel": "inherit-parent",
+    "actualModel": "unknown"
+  },
+  "findings": [
+    "The existing local Bug fix playbook and help leaf were read.",
+    "The response contains one concrete reproduction/fix/repeat prompt and pinned source links.",
+    "The response starts no bug work, promises no video or downstream independent workers and preserves customization prerequisites."
+  ],
+  "limits": [
+    "No target app or verify-app driver is supplied. The exact expectedReduced branch applies when app verification is unavailable."
+  ],
+  "chronology": [
+    "First-action checklist deviation remains in batch history. No unsupported behavioral proof is inferred from the recipe."
+  ],
+  "predicate": [
+    {
+      "index": 1,
+      "text": "Read the selected local leaf and Bug fix playbook before recommending their details.",
+      "status": "satisfied",
+      "assessment": "Detailed evidence and qualifying limits are in the exact satisfied/unmet/notApplicable predicates below."
+    },
+    {
+      "index": 2,
+      "text": "Provide at most one concrete prompt, the source link, and the relevant verification requirement.",
+      "status": "satisfied",
+      "assessment": "Detailed evidence and qualifying limits are in the exact satisfied/unmet/notApplicable predicates below."
+    },
+    {
+      "index": 3,
+      "text": "Check whether the referenced playbook and app verification tool exist; disclose pending or missing dependencies.",
+      "status": "satisfied",
+      "assessment": "Detailed evidence and qualifying limits are in the exact satisfied/unmet/notApplicable predicates below."
+    },
+    {
+      "index": 4,
+      "text": "For any customization follow-up, explain source options but gate personal-mode drafting and custom skill edits on reviewed dispositions for the complete baseline and observed supported behavior or explicit blocks for each host, independently of authorization.",
+      "status": "not-applicable",
+      "assessment": "Detailed evidence and qualifying limits are in the exact satisfied/unmet/notApplicable predicates below."
+    }
+  ],
+  "sourceArtifactBindings": [
+    {
+      "originalLocator": "remaining-local/cases/route-recipe/outputs/route-recipe.result.md",
+      "sourceSha256": "153affbe580e822b8ccd2fa95c4f07673189eabdb14b5d1709f6271edd1ca202",
+      "expectedSha256": "153affbe580e822b8ccd2fa95c4f07673189eabdb14b5d1709f6271edd1ca202",
+      "expectedHashMatches": true,
+      "bytes": 7556,
+      "publication": "omitted",
+      "reason": "Only a narrow inspected projection may be included. Private original remains unchanged."
+    },
+    {
+      "originalLocator": "remaining-local/cases/route-recipe/outputs/completion.json",
+      "sourceSha256": "4add95bcbcffe3c2737511e7a662019256a53003e0b8ecb88acdcf6d5a4933c4",
+      "expectedSha256": "4add95bcbcffe3c2737511e7a662019256a53003e0b8ecb88acdcf6d5a4933c4",
+      "expectedHashMatches": true,
+      "bytes": 54449,
+      "publication": "omitted",
+      "reason": "Raw/native context, broad discovery, completion dump, or bulk source manifest is excluded. No protected payload is decoded."
+    },
+    {
+      "originalLocator": "remaining-local/cases/route-recipe/outputs/coordinator-review.json",
+      "sourceSha256": "7917874ed9d803c37404810dc8d27d3aa24c19ef13845948b9835bd9d683fa1d",
+      "expectedSha256": "7917874ed9d803c37404810dc8d27d3aa24c19ef13845948b9835bd9d683fa1d",
+      "expectedHashMatches": true,
+      "bytes": 1661,
+      "publication": "projected-fields",
+      "reason": "Only a narrow inspected projection may be included. Private original remains unchanged.",
+      "projectedPath": "docs/releases/remediation-013/local/route-recipe/review-b-03/proof/01-coordinator-review.json.excerpt.json",
+      "projectedSha256": "d32b2f2efbbe45f30b7b97fccbf28f5829a0fd60afdd06d23cf5c3b218a6f002"
+    },
+    {
+      "originalLocator": "native-captures-sanitized-v2/remaining-02/index.json",
+      "sourceSha256": "ed8f512b2ee492d54986d3f259fa216be0b13190b8d2ebf2bca4ca8a4324dfbc",
+      "expectedSha256": "ed8f512b2ee492d54986d3f259fa216be0b13190b8d2ebf2bca4ca8a4324dfbc",
+      "expectedHashMatches": true,
+      "bytes": 11523,
+      "publication": "omitted",
+      "reason": "Raw/native context, broad discovery, completion dump, or bulk source manifest is excluded. No protected payload is decoded."
+    }
+  ],
+  "projectionLimits": [
+    "This file projects the existing independent assessment and does not regrade the case.",
+    "Private source artifacts and omitted native operations remain private. Source digests bind originals, not transformed bytes.",
+    "Historical 0.1.3 observations do not qualify current main or a modified candidate."
+  ],
+  "statusMapping": {
+    "originalProposedStatus": "reduced-pass",
+    "canonicalStatus": "reduced-pass",
+    "rule": "No status alias is applied."
+  }
+}

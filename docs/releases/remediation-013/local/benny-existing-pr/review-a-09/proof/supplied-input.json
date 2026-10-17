@@ -1,0 +1,10 @@
+{
+  "kind": "supplied-fixture-input-excerpt",
+  "caseId": "benny-existing-pr",
+  "inputRevision": "9ec21d40fe60c794e1127957595734eeea25138c",
+  "originalLocator": "remaining-local/cases/benny-existing-pr/task-contract.json",
+  "sourceSha256": "c052bcbf0478a67c9361e6b2ae11e1c74ec173afb004894e92c725c7988dd6c8",
+  "pointer": "/case/prompt",
+  "suppliedPrompt": "An open PR plausibly fixes the reported symptom.",
+  "transformation": "Only the exact supplied case prompt is projected. Fixture data and arbitrary surrounding contract fields are omitted. This is supplied input, not a native successful tool operation."
+}

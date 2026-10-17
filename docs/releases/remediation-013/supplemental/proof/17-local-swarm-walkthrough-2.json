@@ -1,0 +1,23 @@
+{
+  "kind": "historical-proof-selection",
+  "source": {
+    "path": "<private-run>/remaining-local/cases/swarm-walkthrough/outputs/batch-2/aggregate.md",
+    "sha256": "0fb700b61246a84eb3e6c62cf490a01c87540f4d1c6534191e417db6679db7a1",
+    "bytes": 6299
+  },
+  "selection": [
+    {
+      "locator": {
+        "textCodeUnits": [
+          0,
+          2300
+        ]
+      },
+      "value": "# Swarm walkthrough actual attempt\n\nThree independent workers completed the three-file source review at exact input SHA c73ca04e9faddbc2f88c796576c3c8dc30c70a22. The coordinator read each complete report, check script and raw result and matched every returned revision and exact method. Dashboard has one reproduced CSV escaping defect. No provable defect was found in invoice or runtime within the supplied contract. No source was changed. This report assigns no producer host grade.\n\n| Slice | Actual worker | Report | Evidence and limit |\n| --- | --- | --- | --- |\n| invoice.mjs | /root/swarm_batch2_1 | PASS | Exported behavior checked with literal assertions. No business schema, rounding or caller contract supplied. |\n| dashboard.mjs | /root/swarm_batch2_2 | ISSUES | Line 2 exports Ada, Inc. as four fields under a three-column header and does not escape the quotation-bearing customer. Filtering controls passed. |\n| runtime.mjs | /root/swarm_batch2_3 | PASS | Actual bounded Bun run emitted completed 100000 and sum 499950000 with exit 0 and empty stderr. No performance claim. |\n\nPASS is a source-review label, not a host grade or a proof of unspecified business behavior. Dashboard's check exits 0 because its assertions reproduce the defect. It does not mean the exporter is correct. No fixes were authorized by this read-only review.\n\n## Separate attempts and chronology\n\nThe first trial used three actual isolated workers around occupied concurrency slots. All source results were inspected and their raw methods/revisions match. Its predeclared seat counters did not accurately represent the observed interleaving, because slice 1 finished before slices 2 and 3 were dispatched. first-trial-inspections.json retains that strict chronology limitation and actual event sequence. It is not repaired or normalized into the later receipt.\n\nA separate fresh batch used /root/swarm_batch2_1, /root/swarm_batch2_2 and /root/swarm_batch2_3. Its declaration event 1 preceded all dispatches. Actual dispatch events 2, 3 and 4 were appended immediately before the corresponding native spawn calls. All three spawns returned before any terminal result. The native completion messages arrived in order 1, 2, 3 and were inspected as events 5, 6, 7. The coordinator aggregated afterward. batch-2/meth"
+    }
+  ],
+  "limits": [
+    "Selections preserve the exact source value at each locator. Truncated strings carry explicit code-unit bounds.",
+    "A producer-captured return is not a recovered native parent envelope. Missing call IDs, original capture defects and unknown model observations remain missing."
+  ]
+}

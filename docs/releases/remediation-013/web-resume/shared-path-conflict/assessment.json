@@ -1,0 +1,59 @@
+{
+  "documentType": "historical-independent-assessment",
+  "caseId": "shared-path-conflict",
+  "host": "chatgpt",
+  "packageVersion": "0.1.3",
+  "inputRevision": "4138e161c27cafffd2baaab6bf4ca53e86a57433",
+  "sourceFreeze": "51f209daf83cd97d64f89881d66533bb59dc57db",
+  "status": "reduced-pass",
+  "reason": "Prospective distinct ownership, canonical identities, completed separate output files and matching structured method/revision/digests are supported. Full assignment-bound isolated-write observations remain incomplete because the child-native execution/write envelopes were not exported; only worker prose and manual native interface captures are available.",
+  "limits": [
+    "The supplied final receipt has eighteen keys, integer observed orders, canonical ownership, existing file paths and matching method objects. It was not repaired by this grader.",
+    "Raw formatter result omits outputOwner and other coordinator fields. Assignment-derived coordinator metadata is distinguished from raw returned fields.",
+    "Transient contested-path writes cannot be excluded by point-in-time absence checks. No model diversity or complete release evidence record is claimed."
+  ],
+  "gradeSource": {
+    "path": "grades/grade_web_resume/result.json",
+    "sha256": "9422208a4b775be8e33cd9e76cfacd02402f1bbcfe91c1c52c0b6dcf3aa29896",
+    "pointer": "/cases/6"
+  },
+  "contract": {
+    "origin": {
+      "path": "runtime/package-main-4138e16/docs/parity/cases/contracts.json",
+      "sha256": "780a524aa106768e1854ae13514867b38db52de42f6a912aa913be01b641bf3a",
+      "bytes": 6575,
+      "pointers": [
+        "/2"
+      ]
+    },
+    "selections": [
+      {
+        "pointer": "/2",
+        "value": {
+          "id": "shared-path-conflict",
+          "sourcePaths": [
+            "skills/poteto-mode/SKILL.md",
+            "skills/poteto-mode/playbooks/orchestrate.md",
+            "agents/poteto-agent.md"
+          ],
+          "prompt": "Two workers request the same output path.",
+          "requirements": [
+            "Coordinator assigns distinct paths before either writes.",
+            "Capture exact input revision, explicit permissions and observed operation evidence."
+          ],
+          "expectedFull": "Coordinator resolves ownership into distinct paths before observed workers write.",
+          "expectedReduced": "One authorized sequential writer produces output; worker independence is unclaimed.",
+          "expectedBlocked": "Overlapping ownership remains unresolved; neither worker writes the contested path.",
+          "forbiddenClaims": [
+            "Case definition or fixture test proves host support.",
+            "Independent workers without a successful exposed spawn operation.",
+            "Full pass for sequential fallback.",
+            "Retry external action without permission and prior action inspection."
+          ]
+        }
+      }
+    ]
+  },
+  "qualification": "Independent historical assessment only. No canonical release validation or current candidate-source qualification is claimed.",
+  "nativeOperationLimit": "Manual/native operation captures are distinguished from platform transcript exports. Missing child or parent envelopes remain missing."
+}

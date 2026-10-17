@@ -1,0 +1,23 @@
+{
+  "kind": "historical-proof-selection",
+  "source": {
+    "path": "<private-run>/cross-host-extra/local/projects/trace-path/outputs/explainer-return.md",
+    "sha256": "2861bb5f6f5f8295c6a2518d59d6085b5bfdb0e5cf963be5b109ce3adfbfae53",
+    "bytes": 5673
+  },
+  "selection": [
+    {
+      "locator": {
+        "textCodeUnits": [
+          0,
+          2300
+        ]
+      },
+      "value": "### Overview\n\n`invoiceController(invoice)` calculates an invoice total through four synchronous functions and returns `{ total: result }`. The supplied code has no HTTP handler or framework integration. Its traced boundary begins when a caller invokes `invoiceController` and ends with the returned object.\n\nThis used the simple route: I worked as one independent, read-only how explainer and traced the original source myself. No explorers ran, and no explorer findings were supplied. The explanation describes inspected source behavior; I did not execute the invoice functions.\n\n### Key concepts\n\n- `invoice` passes unchanged through the controller and facade.\n- `invoiceAdapter` extracts `invoice.rows`.\n- `calculate` sums `row.qty * row.unitPrice`, starting at zero.\n- `cachedTotal` stores the latest successfully calculated total in module state. `inspectCachedTotal()` exposes that value.\n\n### How it works\n\nThe controller imports `invoiceFacade` on line 1. On line 2, `invoiceController(invoice)` calls `invoiceFacade(invoice)`, puts its return value in the `total` property, and returns the object. See [controller.mjs:2](<private-run>/cross-host-extra/local/projects/trace-path/committed-inputs/shared/additional/invoice/controller.mjs:2).\n\nThe facade imports `invoiceAdapter` on line 1. Its line 2 passes the same invoice to `invoiceAdapter(invoice)` and returns the adapter's result unchanged. See [facade.mjs:2](<private-run>/cross-host-extra/local/projects/trace-path/committed-inputs/shared/additional/invoice/facade.mjs:2).\n\nThe adapter imports `calculate` on line 1. Its line 2 reads `invoice.rows`, calls `calculate(invoice.rows)`, and returns that result unchanged. See [adapter.mjs:2](<private-run>/cross-host-extra/local/projects/trace-path/committed-inputs/shared/additional/invoice/adapter.mjs:2).\n\n`calculate(rows)` reduces the rows on line 3. Each step adds `row.qty * row.unitPrice` to the running total, whose initial value is `0`. It assigns the completed result to `cachedTotal` and returns it on line 4. That value returns through the adapter and facade before the controller wraps it. See [calculator.mjs:2](<local-user>/Herd/pstack-remediation-2"
+    }
+  ],
+  "limits": [
+    "Selections preserve the exact source value at each locator. Truncated strings carry explicit code-unit bounds.",
+    "A producer-captured return is not a recovered native parent envelope. Missing call IDs, original capture defects and unknown model observations remain missing."
+  ]
+}

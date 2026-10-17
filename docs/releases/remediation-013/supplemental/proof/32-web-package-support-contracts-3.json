@@ -1,0 +1,50 @@
+{
+  "kind": "historical-proof-selection",
+  "source": {
+    "path": "<private-run>/web-checkpoint-1/units/package-support-contracts/outputs/package-support-contracts/009-strict-compile.raw.json",
+    "sha256": "39071c5f6b4e174c7ecb7f110ae84d8196e897a1704a0370f664d2d338d5f9c1",
+    "bytes": 483
+  },
+  "selection": [
+    {
+      "locator": {
+        "jsonPointer": "/clock"
+      },
+      "value": "2026-10-17T06:46:49.389Z"
+    },
+    {
+      "locator": {
+        "jsonPointer": "/request/command"
+      },
+      "value": [
+        "/mnt/data/pstack-013-evaluation/runtime/bun-linux-x64/bun",
+        "--no-install",
+        "node_modules/typescript/bin/tsc",
+        "--project",
+        "watch-pr/tsconfig.json",
+        "--noEmit",
+        "--strict"
+      ]
+    },
+    {
+      "locator": {
+        "jsonPointer": "/request/cwd"
+      },
+      "value": "/mnt/data/pstack-remediation-20261017/runtime/package-main-4138e16/skills/poteto-mode/scripts"
+    },
+    {
+      "locator": {
+        "jsonPointer": "/returned"
+      },
+      "value": {
+        "exitCode": 0,
+        "stdout": "",
+        "stderr": ""
+      }
+    }
+  ],
+  "limits": [
+    "Selections preserve the exact source value at each locator. Truncated strings carry explicit code-unit bounds.",
+    "A producer-captured return is not a recovered native parent envelope. Missing call IDs, original capture defects and unknown model observations remain missing."
+  ]
+}

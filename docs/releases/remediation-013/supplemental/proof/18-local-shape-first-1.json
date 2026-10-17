@@ -1,0 +1,163 @@
+{
+  "kind": "historical-proof-selection",
+  "source": {
+    "path": "<private-run>/work/notes_workflow_reruns/projects/shape-first/outputs/final-verification.json",
+    "sha256": "855939d922e3db7f5219bca22618608f7f45b98a1e39e98ca67e7c0df5d44190",
+    "bytes": 3106
+  },
+  "selection": [
+    {
+      "locator": {
+        "jsonPointer": "/revision"
+      },
+      "value": "63b1c3a33583a4e688ecaa34099383ccddf5169d"
+    },
+    {
+      "locator": {
+        "jsonPointer": "/sourceState"
+      },
+      "value": "uncommitted reviewed diff"
+    },
+    {
+      "locator": {
+        "jsonPointer": "/runtime"
+      },
+      "value": {
+        "version": "1.4.2",
+        "execPath": "/opt/homebrew/Cellar/bun/1.4.2/bin/bun",
+        "which": "/opt/homebrew/bin/bun",
+        "time": "2026-10-17T07:53:48.376Z"
+      }
+    },
+    {
+      "locator": {
+        "jsonPointer": "/files"
+      },
+      "value": {
+        "domain/jobs.mjs": "c8037927543df6ac0c01a935f826f7ae69ec21281e15af24b8052da1809a02dc",
+        "tests/jobs-regression.test.mjs": "01789a9a78c08364c25f68ec31f80d694444910bf5133d956176be81dbf36eb9",
+        "tests/jobs-edge.test.mjs": "6d64637908c2cf0d30959cefc5551fe7219b801f423c7f66e3c932c6e2635714",
+        "outputs/queue-pty.mjs": "47085fb7185e58d7e177f5446665d73f7e72953389001c05bb3e567b49dbac76",
+        "outputs/additional-caller.mjs": "347732346ab3d3b25964fdca0e9f234c4b7144b6daab1ef63873c82db58980a8",
+        "outputs/implementation2-a/jobs.mjs": "c8037927543df6ac0c01a935f826f7ae69ec21281e15af24b8052da1809a02dc",
+        "outputs/implementation2-judge/verdict.md": "3359820b3fa30861056bc64ac1a652f68e3e03549a852636b5fced6f2d231aec",
+        "outputs/comment2/report.md": "ccaafc72e4011f89d076ec977e339ffc68230146fb8464eafc2adbbbe2162462"
+      }
+    },
+    {
+      "locator": {
+        "jsonPointer": "/runs"
+      },
+      "value": {
+        "final-jobs": {
+          "exitCode": 0,
+          "artifact": "outputs/runs/final-jobs.json",
+          "sourceSha256": "c8037927543df6ac0c01a935f826f7ae69ec21281e15af24b8052da1809a02dc"
+        },
+        "final-edges": {
+          "exitCode": 0,
+          "artifact": "outputs/runs/final-edges.json",
+          "sourceSha256": "c8037927543df6ac0c01a935f826f7ae69ec21281e15af24b8052da1809a02dc"
+        },
+        "final-healthy": {
+          "exitCode": 0,
+          "artifact": "outputs/runs/final-healthy.json",
+          "sourceSha256": "c8037927543df6ac0c01a935f826f7ae69ec21281e15af24b8052da1809a02dc"
+        },
+        "final-extra": {
+          "exitCode": 0,
+          "artifact": "outputs/runs/final-extra.json",
+          "sourceSha256": "c8037927543df6ac0c01a935f826f7ae69ec21281e15af24b8052da1809a02dc"
+        },
+        "final-diff-whitespace": {
+          "exitCode": 0,
+          "artifact": "outputs/runs/final-diff-whitespace.json",
+          "sourceSha256": "c8037927543df6ac0c01a935f826f7ae69ec21281e15af24b8052da1809a02dc"
+        },
+        "final-pty-readback": {
+          "exitCode": 0,
+          "artifact": "outputs/runs/final-pty-readback.json",
+          "sourceSha256": "c8037927543df6ac0c01a935f826f7ae69ec21281e15af24b8052da1809a02dc"
+        }
+      }
+    },
+    {
+      "locator": {
+        "jsonPointer": "/tests"
+      },
+      "value": {
+        "jobs": 1,
+        "edges": 12,
+        "healthy": 4,
+        "total": 17
+      }
+    },
+    {
+      "locator": {
+        "jsonPointer": "/additionalCaller"
+      },
+      "value": "passed"
+    },
+    {
+      "locator": {
+        "jsonPointer": "/pty"
+      },
+      "value": {
+        "pid": 31114,
+        "sessionId": 55517,
+        "observedTerminalExitCode": 0,
+        "pidProbe": "ESRCH",
+        "sourceSha256": "c8037927543df6ac0c01a935f826f7ae69ec21281e15af24b8052da1809a02dc",
+        "states": [
+          "queued",
+          "running",
+          "completed"
+        ],
+        "wrongOwnerRejected": true,
+        "secondClaim": null,
+        "assertions": "passed"
+      }
+    },
+    {
+      "locator": {
+        "jsonPointer": "/browser"
+      },
+      "value": {
+        "pid": 76068,
+        "status": {
+          "code": "ESRCH",
+          "message": "kill() failed: ESRCH: No such process"
+        },
+        "ptyExitCode": 1
+      }
+    },
+    {
+      "locator": {
+        "jsonPointer": "/startedAt"
+      },
+      "value": "2026-10-17T07:33:19.853Z"
+    },
+    {
+      "locator": {
+        "jsonPointer": "/verifiedAt"
+      },
+      "value": "2026-10-17T07:55:49.570Z"
+    },
+    {
+      "locator": {
+        "jsonPointer": "/elapsedSinceChecklistMs"
+      },
+      "value": 1349717
+    },
+    {
+      "locator": {
+        "jsonPointer": "/budgetMs"
+      },
+      "value": 1800000
+    }
+  ],
+  "limits": [
+    "Selections preserve the exact source value at each locator. Truncated strings carry explicit code-unit bounds.",
+    "A producer-captured return is not a recovered native parent envelope. Missing call IDs, original capture defects and unknown model observations remain missing."
+  ]
+}

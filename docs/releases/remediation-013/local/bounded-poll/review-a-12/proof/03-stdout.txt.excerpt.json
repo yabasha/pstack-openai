@@ -1,0 +1,19 @@
+{
+  "kind": "selected-fixture-result-fields",
+  "caseId": "bounded-poll",
+  "attemptId": "review-a-12",
+  "originalLocator": "work/helper_workflow_reruns/projects/release-watch/deliverables/watch/attempt1/stdout.txt",
+  "sourceSha256": "f74236c37844f9abf2565e73fc885249d96dbd1d86baef1ffe220359d1cfdc72",
+  "sourceBytes": 1831,
+  "transformation": "Named JSON fields selected by exact JSON Pointer. Task-owned absolute paths replaced with declared placeholders. Other fields omitted. These are result-artifact values, not synthesized tool execution evidence. Public selection is limited to eight short inspected fields. Longer output and unselected fields remain private.",
+  "fields": [
+    {
+      "pointer": "/exitCode",
+      "value": 0
+    },
+    {
+      "pointer": "/reason",
+      "value": "status-only"
+    }
+  ]
+}

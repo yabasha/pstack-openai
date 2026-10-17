@@ -1,0 +1,35 @@
+{
+  "schemaVersion": 1,
+  "kind": "native-command-event-excerpt",
+  "caseId": "boundary-design",
+  "attemptId": "review-b-10",
+  "inputRevision": "931f3a170b4f7d4b46cc2e1442d5d4268e3d1a7d",
+  "originalLocator": "work/local_compiler_cases/actors/boundary-design-compatibility-corrected/events.jsonl",
+  "sourceSha256": "89e7da1bc804fd3e6be0a4ac97ecf6ae4a3da7c0e86c8f86d0a73797176c20b3",
+  "itemId": "item_5",
+  "startedLine": 9,
+  "completedLine": 10,
+  "originalEventType": "item.completed",
+  "observedOperationType": "command_execution",
+  "command": "/bin/zsh -lc 'cat <installed-frozen-package>/skills/poteto-mode/playbooks/bug-fix.md <installed-frozen-package>/skills/architect/SKILL.md <installed-frozen-package>/skills/architect/references/runner-prompt.md'",
+  "aggregatedOutputPrefix": "### Bug fix\n\n**You own this task. Plan, review, verify.** Delegate investigation and the fix to subagents, stay in the lead. Read the complete [mode](../SKILL.md), applied principle leaves and routed skills. Record these six steps before task-specific todos.\n\nUse [session capabilities](../../../references/host-capabilities.md), [model roles](../../../references/model-roles.md) and the [assignment contract](../../../references/orchestration-contract.md). Supply the complete [poteto role prompt](../../../references/agent-prompts/poteto-agent.md) to ad-hoc investigators and code delegates; routed",
+  "originalAggregatedOutputCharacters": 16474,
+  "exitCode": 0,
+  "status": "completed",
+  "scope": "This is a source read in the independently reviewed case actor.",
+  "clock": "The public event has no timestamp. Line order is retained. No duration or clock interval is inferred.",
+  "transformation": "Exact event fields selected. Absolute task and installed-package paths are replaced with declared placeholders. Output is a prefix, not the complete source read. No other event or browser context is included. Only these literal or explicitly loop-listed registered source names are matched. This does not prove every registered source path was read. Native callable metadata is corroborated against a scoped private callsite. Protected or unrelated payload contents are not copied or decoded.",
+  "sourceScopeMatchedByCommand": [
+    "skills/architect/SKILL.md",
+    "skills/architect/references/runner-prompt.md"
+  ],
+  "nativeCallBinding": {
+    "originalLocator": "work/local_compiler_cases/actors/boundary-design-compatibility-corrected/native-scoped.jsonl",
+    "sourceSha256": "66420151fedcb90e16820ebeacbc80e224bb6f9db0883cddf74c3c2853457e49",
+    "line": 5,
+    "callId": "call_1b7e8add8f5e4087afc10bd7500833eb",
+    "observedToolName": "exec",
+    "observedNestedCallsite": "tools.exec_command",
+    "corroboration": "The actual scoped native custom-tool call invokes tools.exec_command with the exact command parsed from this public command_execution event. Only the callable identity and locator are projected. Its surrounding payload remains private."
+  }
+}

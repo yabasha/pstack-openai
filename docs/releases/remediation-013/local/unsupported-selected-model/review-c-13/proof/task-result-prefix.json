@@ -1,0 +1,16 @@
+{
+  "kind": "task-result-file-excerpt",
+  "caseId": "unsupported-selected-model",
+  "attemptId": "review-c-13",
+  "inputRevision": "a770be5d7e6b2d8d9ce776bf3258ae9f6f4ba24b",
+  "originalLocator": "cross-host-extra/local/projects/unsupported-selected-model/outputs/unsupported-selected-model.result.md",
+  "sourceSha256": "7c9129fb42c2f4f0412254e9ad0ac47351821271178f43116fd9dfcad8e083b5",
+  "sourceWasDirectlyListedByIndependentGrade": true,
+  "characterRange": {
+    "start": 0,
+    "endExclusive": 501,
+    "total": 30129
+  },
+  "content": "# unsupported-selected-model actual attempt\n\nFresh Poteto and Comment Sicko workers ran with inherit-parent requests and unknown observed models. Invoice total and cache 10.75 were observed. The comment review proposed deleting formatter.mjs line 9 and flagged MUST KILL sortAmounts. Actual deletions are zero. No concrete selected model, selected effort, rejected request or rejection result was available.\n\nNo producer grade is assigned. The factual method receipts and blocked claims are separate.\n",
+  "transformation": "An inspected prefix of the actual task-result file is projected. Task-owned absolute paths use declared placeholders. The prefix may omit later qualifications. The independent assessment and its limits govern the proposed grade. This is neither a new grade nor a native callable-operation claim."
+}

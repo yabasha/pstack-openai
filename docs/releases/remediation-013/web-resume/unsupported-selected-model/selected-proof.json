@@ -1,0 +1,148 @@
+{
+  "documentType": "selected-original-proof",
+  "caseId": "unsupported-selected-model",
+  "selections": [
+    {
+      "origin": {
+        "path": "web-checkpoint-4/units/unsupported-selected-model/outputs/unsupported-selected-model/invalid-request.json",
+        "sha256": "23b3b87ccfab5ca74f7c3aecb793b14d00a56cffe8c4618a1824e0bf8e2ed653",
+        "bytes": 243,
+        "pointers": [
+          ""
+        ]
+      },
+      "selections": [
+        {
+          "pointer": "",
+          "value": {
+            "task_name": "unavailable_model_probe",
+            "fork_turns": "none",
+            "model": "pstack-eval-intentionally-unavailable",
+            "message": "Identity bootstrap only. Return canonical worker ID and actual model metadata if exposed, otherwise unknown. No task work."
+          }
+        }
+      ]
+    },
+    {
+      "origin": {
+        "path": "web-checkpoint-4/units/unsupported-selected-model/outputs/unsupported-selected-model/invalid-result.txt",
+        "sha256": "4e7417af5972ec385bafed93486a32ce2655ce49ad38e776bb9b268f8866ff58",
+        "bytes": 150,
+        "pointers": [
+          ""
+        ]
+      },
+      "selections": [
+        {
+          "pointer": "",
+          "value": "Unknown model `pstack-eval-intentionally-unavailable` for spawn_agent. Available models: gpt-6.1-sol, gpt-6-astra, gpt-6-sol, gpt-6-luna, gpt-5.6-sol\n"
+        }
+      ]
+    },
+    {
+      "origin": {
+        "path": "web-checkpoint-4/units/unsupported-selected-model/outputs/unsupported-selected-model/fallback-disclosure.txt",
+        "sha256": "c9ebe556123c8c982fdb95c685cda1faa0ca80860fa21d6ad7d02468c59ad337",
+        "bytes": 354,
+        "pointers": [
+          ""
+        ]
+      },
+      "selections": [
+        {
+          "pointer": "",
+          "value": "The native spawn operation rejected pstack-eval-intentionally-unavailable. I will use the authorized inherited parent selection for one independent read-only invoice review. The actual model and effort remain unknown unless exposed by the worker operation. This fallback does not satisfy the unavailable selected-model gate or establish model diversity.\n"
+        }
+      ]
+    },
+    {
+      "origin": {
+        "path": "web-checkpoint-4/units/unsupported-selected-model/outputs/unsupported-selected-model/fallback-bootstrap-request.json",
+        "sha256": "e2166a76d42802db5428978c6e5ce5d6db17a350af2694609898f3dd82885f76",
+        "bytes": 210,
+        "pointers": [
+          ""
+        ]
+      },
+      "selections": [
+        {
+          "pointer": "",
+          "value": {
+            "task_name": "invoice_review",
+            "message": "Identity bootstrap only. No task work or reads. Return canonical worker ID and actual model/effort metadata if exposed, otherwise unknown. Await immutable assignment."
+          }
+        }
+      ]
+    },
+    {
+      "origin": {
+        "path": "web-checkpoint-4/units/unsupported-selected-model/outputs/unsupported-selected-model/fallback-bootstrap-result.json",
+        "sha256": "96b7f76e2cb5e15e1f4bde2fc089718b384529565c0b57cec10ca9ec65266b43",
+        "bytes": 59,
+        "pointers": [
+          ""
+        ]
+      },
+      "selections": [
+        {
+          "pointer": "",
+          "value": {
+            "task_name": "/root/r87_unsupported_model/invoice_review"
+          }
+        }
+      ]
+    },
+    {
+      "origin": {
+        "path": "web-checkpoint-4/units/unsupported-selected-model/outputs/unsupported-selected-model/result.json",
+        "sha256": "84140625c1c8157aab0cfb8d19b798302cac22ba21d193856e6bedf281f7b43a",
+        "bytes": 4017,
+        "pointers": [
+          "/terminalStatus",
+          "/inputRevision",
+          "/actualModel",
+          "/observedAt",
+          "/variants",
+          "/limitations"
+        ]
+      },
+      "selections": [
+        {
+          "pointer": "/terminalStatus",
+          "value": "partial-host-usage-limit-and-expired-budget"
+        },
+        {
+          "pointer": "/inputRevision",
+          "value": "61917ff8b7c46138bd578fba3b13c48205c73c0a"
+        },
+        {
+          "pointer": "/actualModel",
+          "value": "unknown"
+        },
+        {
+          "pointer": "/observedAt",
+          "value": "2026-10-17T15:22:36.181Z"
+        },
+        {
+          "pointer": "/variants",
+          "value": {
+            "unsupportedSelection": "actual native rejection retained",
+            "inheritedFallback": "disclosed before bootstrap; substantive review unstarted",
+            "exactSelectedModel": "unavailable"
+          }
+        },
+        {
+          "pointer": "/limitations",
+          "value": [
+            "Parent actor returned an actual host usage-limit error; notification is retained as observed text, not platform transcript export.",
+            "Fallback bootstrap returned a task name but no returned canonical identity or substantive assignment/review artifacts were found.",
+            "No successful independent fallback review claimed.",
+            "Original deadline08:43:54.690Z elapsed during interruption. Cooperative budget enforcement; no hard-stop binding or exact process-stop time observed.",
+            "Native tool/collaboration capture incomplete; source read hashes absent for this interrupted actor. Existing exact0.1.3 root source reads and batch byte preflight are separate evidence.",
+            "All old registry agents are absent from current registry, not assumed to have survived or completed."
+          ]
+        }
+      ]
+    }
+  ]
+}

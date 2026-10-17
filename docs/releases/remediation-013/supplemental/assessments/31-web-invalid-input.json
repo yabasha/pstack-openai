@@ -1,0 +1,252 @@
+{
+  "kind": "historical-independent-assessment-extract",
+  "qualification": {
+    "inputRevision": "4138e161c27cafffd2baaab6bf4ca53e86a57433",
+    "sourceFreeze": "51f209daf83cd97d64f89881d66533bb59dc57db",
+    "packageVersion": "0.1.3",
+    "currentSourceQualified": false
+  },
+  "source": {
+    "path": "<private-run>/grades/grade_remediation_web_a/result.json",
+    "sha256": "df360dccda8481a1da9971827c165c8de58b134b6d27fe248e9604c1428b3f52",
+    "locator": {
+      "jsonPointer": "/cases/1"
+    }
+  },
+  "originalAssessment": {
+    "caseId": "invalid-input",
+    "host": "chatgpt",
+    "originalMainStatus": "reduced-pass",
+    "proposedStatus": "pass",
+    "gradeScope": "Exact registered case behavior only, not complete Poteto Mode compliance or release parity",
+    "executionForCase": "direct",
+    "sourceContract": {
+      "path": "<private-run>/runtime/package-main-4138e16/docs/parity/cases/skills/principle-boundary-discipline.json",
+      "sha256": "fe2041c21e73e3fed80297c18eea8d02ec1ab6c7d7ed71fb4bf2a4032e71d957",
+      "locator": null
+    },
+    "nativeCaseOwner": "/root/r18_invalid",
+    "requestedModel": "inherit-parent",
+    "actualModel": "unknown",
+    "predicates": [
+      {
+        "id": "external-boundary-validation-and-domain-shape",
+        "state": "satisfied",
+        "finding": "The exported adapter narrows unknown JSON quantity before constructing required Order.quantity:number. Missing and invalid quantities are rejected at the adapter. Domain functions contain arithmetic with no duplicate nil/type/range guards. The supplied internal caller uses the final type.",
+        "source": {
+          "path": "<private-run>/runtime/package-main-4138e16/skills/principle-boundary-discipline/SKILL.md",
+          "sha256": "ab5026ed8a938bc1bb06e69f4fe536736e2939787f0c6f629bf0360b24988d80",
+          "locator": "pattern and applications"
+        },
+        "evidence": [
+          {
+            "path": "<private-run>/web-checkpoint-1/units/invalid-input/outputs/invalid-input/task-input/deliverables/working/adapter.ts",
+            "sha256": "3d890bea9ed0970e7f6cca21502bbe6e7b7c963ab007f48dd1dceb898ed67037",
+            "locator": null
+          },
+          {
+            "path": "<private-run>/web-checkpoint-1/units/invalid-input/outputs/invalid-input/task-input/deliverables/working/domain.ts",
+            "sha256": "fbb5b54cf6c7348f7dd16f00663c0c2fd1e7b6b46413b2ba82004a291187cd4c",
+            "locator": null
+          },
+          {
+            "path": "<private-run>/web-checkpoint-1/units/invalid-input/outputs/invalid-input/task-input/deliverables/working/internal-caller.ts",
+            "sha256": "146a86077d349e7f4edf97d95342224ae2c9bc9854dc474b2662ff83cdecdfea",
+            "locator": null
+          },
+          {
+            "path": "<private-run>/web-checkpoint-1/units/invalid-input/outputs/invalid-input/check-2.raw.json",
+            "sha256": "9abdfa5a5138ba32c55145fcb5d94798f704782762a7284c71e91f1791531c26",
+            "locator": null
+          }
+        ]
+      },
+      {
+        "id": "literal-runtime-and-error-preservation",
+        "state": "satisfied",
+        "finding": "Native Bun tests passed 5 tests and 20 assertions. Existing malformed JSON, non-object and invalid-quantity responses are literal assertions. The original boundary test bytes are preserved. Extra booleans, arrays, objects and infinity are rejected; valid quantities retain integer-cent totals.",
+        "source": {
+          "path": "<private-run>/runtime/package-main-4138e16/docs/parity/cases/skills/principle-boundary-discipline.json",
+          "sha256": "fe2041c21e73e3fed80297c18eea8d02ec1ab6c7d7ed71fb4bf2a4032e71d957",
+          "locator": "expectedFull"
+        },
+        "evidence": [
+          {
+            "path": "<private-run>/web-checkpoint-1/units/invalid-input/outputs/invalid-input/check-1.raw.json",
+            "sha256": "21fc0f5631bd2e057c14e8da9e463ce28fa484e8adffd4e2c0c7d7473eb31865",
+            "locator": null
+          },
+          {
+            "path": "<private-run>/web-checkpoint-1/units/invalid-input/outputs/invalid-input/task-input/deliverables/working/boundary.test.mjs",
+            "sha256": "ca2e9f05654c50e4a74ce55f94339fba563d909148121940f489498baa68e324",
+            "locator": null
+          },
+          {
+            "path": "<private-run>/web-checkpoint-1/units/invalid-input/outputs/invalid-input/task-input/input/boundary.test.mjs",
+            "sha256": "ca2e9f05654c50e4a74ce55f94339fba563d909148121940f489498baa68e324",
+            "locator": null
+          },
+          {
+            "path": "<private-run>/web-checkpoint-1/units/invalid-input/outputs/invalid-input/variant-results.json",
+            "sha256": "701b1363a8c515d5887b915257eba7c6a3cc358e72f50c9bb451b61b26a145cf",
+            "locator": null
+          },
+          {
+            "path": "<private-run>/web-checkpoint-1/units/invalid-input/outputs/invalid-input/variants.raw.json",
+            "sha256": "edc4344cbe3ea52848ae1491ddd6db357bab3410ea883c53510c3884b30ea8d6",
+            "locator": null
+          }
+        ]
+      },
+      {
+        "id": "strict-compile-and-input-binding",
+        "state": "satisfied",
+        "finding": "The native exact helper TypeScript compiler ran --project, --noEmit and --strict with exit 0. Native HEAD matches the immutable input assignment and git diff --exit-code -- input returned 0. Exported pristine hashes and actual source bytes are retained.",
+        "source": {
+          "path": "<private-run>/runtime/package-main-4138e16/docs/parity/cases/skills/principle-boundary-discipline.json",
+          "sha256": "fe2041c21e73e3fed80297c18eea8d02ec1ab6c7d7ed71fb4bf2a4032e71d957",
+          "locator": "observed implementation and checks"
+        },
+        "evidence": [
+          {
+            "path": "<private-run>/web-checkpoint-1/units/invalid-input/outputs/invalid-input/check-0.raw.json",
+            "sha256": "ca23dea5890e6ace918e4ecea0aaaf7ff22babd3bef9e42d8c82cb6a3d441acd",
+            "locator": null
+          },
+          {
+            "path": "<private-run>/web-checkpoint-1/units/invalid-input/outputs/invalid-input/provenance-1.raw.json",
+            "sha256": "19411103fd6a3b95b4585d0b1251ee93b226c73e35cafd58cb70e89539f5af94",
+            "locator": null
+          },
+          {
+            "path": "<private-run>/web-checkpoint-1/units/invalid-input/outputs/invalid-input/provenance-4.raw.json",
+            "sha256": "dc574c33835830cd692c0f7f75a40ac9db331ae14b68baacb4747afab5437166",
+            "locator": null
+          },
+          {
+            "path": "<private-run>/web-checkpoint-1/units/invalid-input/outputs/invalid-input/pristine-input-digests.json",
+            "sha256": "743ac0b4013e4a08ffef7085a2ee71522c6b4fbc6c9366cd31799b5cc8569e9f",
+            "locator": null
+          },
+          {
+            "path": "<private-run>/web-checkpoint-1/units/invalid-input/assignments/invalid-input.json",
+            "sha256": "d1c6a8b0b7026ab305c66d9679e8d9deede2ad6eeb6dfe4855a9ccbe50f08edd",
+            "locator": null
+          }
+        ]
+      },
+      {
+        "id": "qualitative-review-and-replacement-diff-review",
+        "state": "satisfied",
+        "finding": "Distinct native reviewer inspected the final diff, reran runtime and strict compiler, confirmed original boundary test preservation and reported no concrete fixture defect. The report hash matches the independent result.",
+        "source": {
+          "path": "<private-run>/runtime/package-main-4138e16/docs/parity/cases/skills/principle-boundary-discipline.json",
+          "sha256": "fe2041c21e73e3fed80297c18eea8d02ec1ab6c7d7ed71fb4bf2a4032e71d957",
+          "locator": "expectedFull and registry review-outcome"
+        },
+        "evidence": [
+          {
+            "path": "<private-run>/web-checkpoint-1/units/invalid-input/reviews/invalid-input/report.md",
+            "sha256": "27c00862cb84f88e44e4664bd627eee3ea135c57fbf60dbf6dbca17f72168e8d",
+            "locator": null
+          },
+          {
+            "path": "<private-run>/web-checkpoint-1/units/invalid-input/reviews/invalid-input/result.json",
+            "sha256": "f06c0e81e63d6679bed58d20bc9a4e5771d8f6babb23162f6b950b9f9a846e66",
+            "locator": null
+          },
+          {
+            "path": "<private-run>/web-checkpoint-1/units/invalid-input/reviews/invalid-input/check-0.raw.json",
+            "sha256": "4fb35b09c2bc4ed10ae39e9bb9902e9ce2970a467f59415730213204944317c9",
+            "locator": null
+          },
+          {
+            "path": "<private-run>/web-checkpoint-1/units/invalid-input/reviews/invalid-input/check-1.raw.json",
+            "sha256": "804e36d0f08d9cb03ff197c6fffefaba62595146aa74928453bd166927baef1a",
+            "locator": null
+          },
+          {
+            "path": "<private-run>/web-checkpoint-1/units/invalid-input/reviews/invalid-input/check-2.raw.json",
+            "sha256": "7f431c717da66de9909b442859a4819c1357a1904475f7e629189b7b870316a3",
+            "locator": null
+          },
+          {
+            "path": "<private-run>/web-checkpoint-1/units/invalid-input/outputs/invalid-input/coordinator-review-receipt.json",
+            "sha256": "c04732c672f6abddf356684666f005810e7bdd672a462f73e86aafa1bcdf8971",
+            "locator": null
+          }
+        ]
+      },
+      {
+        "id": "whole-mode-preimplementation-method",
+        "state": "unmet-outside-case-grade",
+        "finding": "The producer explicitly did not run the full how/architect/Arena preimplementation method. Later sequential how in the independent review does not repair that chronology. This leaf case has no requiredMethod registry entry, so its behavioral pass must not be reported as a complete mode pass.",
+        "source": {
+          "path": "<private-run>/runtime/package-main-4138e16/skills/poteto-mode/SKILL.md",
+          "sha256": "cb03eedb91cea96b570af30a7af317c6aae6a47a321cff2e82af656141ab0f14",
+          "locator": "non-negotiables"
+        },
+        "evidence": [
+          {
+            "path": "<private-run>/web-checkpoint-1/units/invalid-input/outputs/invalid-input/result.json",
+            "sha256": "d8ca155b4edfc82122034b162c5fc8923810e0e5c3ee8dbff0064885de59dc2d",
+            "locator": null
+          },
+          {
+            "path": "<private-run>/web-checkpoint-1/units/invalid-input/reviews/invalid-input/report.md",
+            "sha256": "27c00862cb84f88e44e4664bd627eee3ea135c57fbf60dbf6dbca17f72168e8d",
+            "locator": null
+          }
+        ]
+      }
+    ],
+    "operationMetadata": [
+      {
+        "tool": "functions.exec / tools.exec_command",
+        "operation": "strict compile",
+        "evidence": {
+          "path": "<private-run>/web-checkpoint-1/units/invalid-input/outputs/invalid-input/check-0.raw.json",
+          "sha256": "ca23dea5890e6ace918e4ecea0aaaf7ff22babd3bef9e42d8c82cb6a3d441acd",
+          "locator": null
+        },
+        "startedAt": "2026-10-17T06:40:15.654458+00:00",
+        "returnedAt": "2026-10-17T06:40:15.742028+00:00",
+        "exit": 0
+      },
+      {
+        "tool": "functions.exec / tools.exec_command",
+        "operation": "runtime tests",
+        "evidence": {
+          "path": "<private-run>/web-checkpoint-1/units/invalid-input/outputs/invalid-input/check-1.raw.json",
+          "sha256": "21fc0f5631bd2e057c14e8da9e463ce28fa484e8adffd4e2c0c7d7473eb31865",
+          "locator": null
+        },
+        "startedAt": "2026-10-17T06:40:15.742364+00:00",
+        "returnedAt": "2026-10-17T06:40:15.750277+00:00",
+        "exit": 0,
+        "tests": 5,
+        "assertions": 20
+      }
+    ],
+    "limits": [
+      "Installed instruction package lacks Git metadata. Independent local digest comparison binds the relevant operative instruction bytes to Git51, not the changed installed manifest metadata.",
+      "Native saved source-read request used a direct Python heredoc rather than Bun. This violates the task script-routing preference and is retained as a procedural defect; native runtime and compiler checks themselves used the assigned Bun.",
+      "Whole-mode design chronology is incomplete. No cross-host, whole-mode or current publication main claim follows from this targeted case pass.",
+      "The native actual model remains unknown. Initial review raw-capture gaps stay explicit."
+    ],
+    "historyRetained": [
+      "Original result claimed inputPreservation git diff exit0 while the working-vs-pristine diff correctly exits1. Distinct provenance-4 raw exit0 proves pristine input preservation; check-2 exit1 is the expected implemented diff, not a failed preservation check."
+    ],
+    "inputRevision": "be8f71ddae4c194ec08c22188718639fcceb7183"
+  },
+  "selectedProof": [
+    "proof/31-web-invalid-input-1.json",
+    "proof/31-web-invalid-input-2.json",
+    "proof/31-web-invalid-input-3.json"
+  ],
+  "publicationStatus": "proposal-only; no canonical host evidence record is constructed",
+  "publicationGaps": [
+    "This assessment format is not the canonical evidence schema. Root-relative operation bindings and any required structured method receipt require separate complete validation.",
+    "Original assessment limitations, invalid receipts and capture gaps are preserved. A behavioral pass does not qualify a different package revision."
+  ]
+}

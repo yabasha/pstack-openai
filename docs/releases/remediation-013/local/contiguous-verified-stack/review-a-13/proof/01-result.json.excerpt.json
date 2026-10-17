@@ -1,0 +1,19 @@
+{
+  "kind": "selected-fixture-result-fields",
+  "caseId": "contiguous-verified-stack",
+  "attemptId": "review-a-13",
+  "originalLocator": "work/helper_workflow_reruns/projects/release-stack/deliverables/result.json",
+  "sourceSha256": "e7da8bd42e3a01b45f5502a4f7a4cdd05285acad106e6350f440e1eab99192be",
+  "sourceBytes": 17987,
+  "transformation": "Named JSON fields selected by exact JSON Pointer. Task-owned absolute paths replaced with declared placeholders. Other fields omitted. These are result-artifact values, not synthesized tool execution evidence. Public selection is limited to eight short inspected fields. Longer output and unselected fields remain private.",
+  "fields": [
+    {
+      "pointer": "/caseId",
+      "value": "contiguous-verified-stack"
+    },
+    {
+      "pointer": "/inputRevision",
+      "value": "4a7dde94ab2778837e4c932e53cc3484d2e74dfd"
+    }
+  ]
+}

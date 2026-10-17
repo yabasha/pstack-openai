@@ -1,0 +1,16 @@
+{
+  "kind": "task-result-file-excerpt",
+  "caseId": "bounded-improvement",
+  "attemptId": "review-b-02",
+  "inputRevision": "eaeece4e22e2d3fabe2b83e54116b323a32ee94e",
+  "originalLocator": "remaining-local/cases/bounded-improvement/outputs/bounded-improvement.result.md",
+  "sourceSha256": "002b4bbf7d9aeaab4b39707475fb0c1400d11e1626cd58c3c8bed06c1782c4f1",
+  "sourceWasDirectlyListedByIndependentGrade": true,
+  "characterRange": {
+    "start": 0,
+    "endExclusive": 443,
+    "total": 23660
+  },
+  "content": "# Bounded improvement actual attempt\n\nNo optimization was accepted. Five independent candidates completed fifty measured samples and ten warmups before the measurement deadline. All active candidate source files were restored to the exact baseline bytes. Measured commits and raw artifacts remain retained. The 50 percent target and ten-attempt floor remain open. This is an attempt receipt, not a producer grade.\n\n## Metric and stopping rule\n",
+  "transformation": "An inspected prefix of the actual task-result file is projected. Task-owned absolute paths use declared placeholders. The prefix may omit later qualifications. The independent assessment and its limits govern the proposed grade. This is neither a new grade nor a native callable-operation claim."
+}

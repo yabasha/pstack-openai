@@ -1,0 +1,189 @@
+{
+  "kind": "historical-proof-selection",
+  "source": {
+    "path": "<private-run>/remaining-local/cases/stack-resume/outputs/continuation.json",
+    "sha256": "715820b45ce9e9417384a02bf2947668465e7fb5d27eb65f8ab234c8fe806349",
+    "bytes": 4376
+  },
+  "selection": [
+    {
+      "locator": {
+        "jsonPointer": "/inputRevision"
+      },
+      "value": "0d7c8207fe8f08c2fc230cf7cc54f271e368f70d"
+    },
+    {
+      "locator": {
+        "jsonPointer": "/packageCommit"
+      },
+      "value": "51f209daf83cd97d64f89881d66533bb59dc57db"
+    },
+    {
+      "locator": {
+        "jsonPointer": "/queue"
+      },
+      "value": [
+        {
+          "pr": 1,
+          "owner": "fixture",
+          "base": "main",
+          "headSymbol": "fixture-base",
+          "headSHA": null,
+          "baseSHA": null,
+          "intendedParent": null,
+          "verdictHead": null,
+          "verdictBase": null,
+          "stablePatchId": null,
+          "checks": "SUCCESS",
+          "checksHead": null,
+          "mergeability": null,
+          "decision": "BLOCKED. Symbolic head and unpinned checks cannot prove current readiness."
+        },
+        {
+          "pr": 2,
+          "owner": "unknown",
+          "base": "fixture-base",
+          "headSymbol": "fixture-head",
+          "headSHA": null,
+          "baseSHA": null,
+          "intendedParent": null,
+          "verdictHead": null,
+          "verdictBase": null,
+          "stablePatchId": null,
+          "checks": "FAILURE",
+          "checksHead": null,
+          "mergeability": null,
+          "decision": "BLOCKED. Symbolic head and unpinned checks cannot prove current readiness."
+        },
+        {
+          "pr": null,
+          "ordinal": 3,
+          "decision": "BLOCKED. Third PR not supplied.",
+          "headSHA": null,
+          "baseSHA": null,
+          "intendedParent": null,
+          "verdictHead": null,
+          "verdictBase": null,
+          "stablePatchId": null,
+          "checks": null,
+          "mergeability": null
+        }
+      ]
+    },
+    {
+      "locator": {
+        "jsonPointer": "/ownership"
+      },
+      "value": {
+        "root": "/root/stack_resume",
+        "branches": "unknown; no branch writers dispatched"
+      }
+    },
+    {
+      "locator": {
+        "jsonPointer": "/pendingActions"
+      },
+      "value": {
+        "priorFixtureActions": [
+          {
+            "id": "fixture-ticket-create-1",
+            "kind": "ticket-create",
+            "outcome": "created",
+            "destinationState": {
+              "ticketId": "FIX-1",
+              "sourceVerdictMissing": true
+            }
+          }
+        ],
+        "cacheCapsuleAction": {
+          "id": "fixture-verdict-post-1",
+          "outcome": "unknown",
+          "authorizationToReplay": false
+        },
+        "narratedStackRetarget": {
+          "stableId": null,
+          "outcome": "Narrative says completed. Destination receipt absent.",
+          "replayed": false
+        },
+        "narratedStackVerdictPost": {
+          "stableId": null,
+          "outcome": "unknown",
+          "replayed": false
+        },
+        "safeRecovery": {
+          "authorized": false,
+          "performed": false
+        }
+      }
+    },
+    {
+      "locator": {
+        "jsonPointer": "/decisionTrail"
+      },
+      "value": "outputs/decisions.tsv"
+    },
+    {
+      "locator": {
+        "jsonPointer": "/childrenTrail"
+      },
+      "value": "outputs/children.tsv"
+    },
+    {
+      "locator": {
+        "jsonPointer": "/countersigns"
+      },
+      "value": "not supplied; none granted"
+    },
+    {
+      "locator": {
+        "jsonPointer": "/operatorGates"
+      },
+      "value": "read-only fixtures, stop variant, no external writes"
+    },
+    {
+      "locator": {
+        "jsonPointer": "/blockers"
+      },
+      "value": [
+        "No three-PR continuation brief, decisions, children, assignment attempts, countersigns or operator-gate records supplied.",
+        "No exact current PR heads or bases, intended parent pins, base-to-head patches, stable patch IDs, mergeability or SHA-bound CI receipts supplied.",
+        "Narrated completed retarget has no stable action identity or destination state. Withhold replay.",
+        "Narrated unknown stack verdict post has no stable stack-bound identity or destination state. Withhold replay.",
+        "Cache-only capsule has fixture-verdict-post-1 with unknown outcome and authorizationToReplay false. Its unrelated cache scope cannot establish a stack action.",
+        "Original input revision object is unavailable in the case checkout. Current copied ORIGINAL fixture contents are read and hashed without a historical equivalence claim.",
+        "Missing adapted dependency is unnamed in scenario. All explicitly supplied adapted source files exist. Preserve unspecified dependency as POLICY withholding, never claim false absence.",
+        "Persistent wake is POLICY withheld. No schedule or autonomous pickup exists.",
+        "No verified different model family for cross-model trail review.",
+        "No exact task code revisions or real application for live lane, independent focused diff lanes, gates, trunk regression, build-noise comparison or fix-forward."
+      ]
+    },
+    {
+      "locator": {
+        "jsonPointer": "/nextChecks"
+      },
+      "value": [
+        "Obtain only task-supplied complete stack brief and exact PR fixtures. Do not request unrelated private history.",
+        "Read current heads, bases and intended parents for every queue member.",
+        "Inspect prior action stable identities and actual destinations before replay.",
+        "Read back operator go and writer ownership. Stop holds until released.",
+        "Only then dispatch exact-revision independent lanes and preserve all round gates."
+      ]
+    },
+    {
+      "locator": {
+        "jsonPointer": "/wakeRegistered"
+      },
+      "value": false
+    },
+    {
+      "locator": {
+        "jsonPointer": "/automaticPickup"
+      },
+      "value": false
+    }
+  ],
+  "limits": [
+    "Selections preserve the exact source value at each locator. Truncated strings carry explicit code-unit bounds.",
+    "A producer-captured return is not a recovered native parent envelope. Missing call IDs, original capture defects and unknown model observations remain missing."
+  ]
+}

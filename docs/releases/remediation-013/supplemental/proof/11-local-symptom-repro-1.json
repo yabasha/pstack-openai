@@ -1,0 +1,75 @@
+{
+  "kind": "historical-proof-selection",
+  "source": {
+    "path": "<private-run>/work/notes_workflow_reruns/projects/symptom-repro/outputs/evidence/browser-migrated-restart.json",
+    "sha256": "be5ec8025f3962471b00b33b07465acfa95b66da6d91b1a4baa4bbdbb9d19ada",
+    "bytes": 663
+  },
+  "selection": [
+    {
+      "locator": {
+        "jsonPointer": "/phase"
+      },
+      "value": "migrated-restart"
+    },
+    {
+      "locator": {
+        "jsonPointer": "/driver"
+      },
+      "value": "mcp__cua_repl.js native Comet"
+    },
+    {
+      "locator": {
+        "jsonPointer": "/pid"
+      },
+      "value": 56901
+    },
+    {
+      "locator": {
+        "jsonPointer": "/url"
+      },
+      "value": "http://127.0.0.1:62992/"
+    },
+    {
+      "locator": {
+        "jsonPointer": "/sourceHashes"
+      },
+      "value": "outputs/evidence/treatment-source-hashes.json"
+    },
+    {
+      "locator": {
+        "jsonPointer": "/actions"
+      },
+      "value": [
+        "Refresh AX state",
+        "Select exact existing task-owned Qualification Notes tab",
+        "Reload with super+r",
+        "Observe Alpha, Restart proof and Ready",
+        "Fill title Rejected after restart and body Should not persist",
+        "Click Save note",
+        "Observe Entitlement required with unchanged visible rows"
+      ]
+    },
+    {
+      "locator": {
+        "jsonPointer": "/observedStates"
+      },
+      "value": [
+        "Alpha",
+        "Restart proof",
+        "Ready",
+        "Entitlement required"
+      ]
+    },
+    {
+      "locator": {
+        "jsonPointer": "/sideEffects"
+      },
+      "value": "Rejected save, no new record. Browser focus had changed; exact owned tab was reselected before input."
+    }
+  ],
+  "limits": [
+    "Selections preserve the exact source value at each locator. Truncated strings carry explicit code-unit bounds.",
+    "A producer-captured return is not a recovered native parent envelope. Missing call IDs, original capture defects and unknown model observations remain missing."
+  ]
+}

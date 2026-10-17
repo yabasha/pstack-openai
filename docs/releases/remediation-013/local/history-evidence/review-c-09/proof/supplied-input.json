@@ -1,0 +1,10 @@
+{
+  "kind": "supplied-fixture-input-excerpt",
+  "caseId": "history-evidence",
+  "inputRevision": "97c14cafd67603ef8ed7f26727503c1310e7034f",
+  "originalLocator": "remaining-local/cases/history-evidence/task-contract.json",
+  "sourceSha256": "4f5ca50791ba71c4499ec2b4721ae09aec3eca503a77dbff1510e0b9a8a039a4",
+  "pointer": "/case/prompt",
+  "suppliedPrompt": "Why does this retry threshold exist? The code history records a change, a shared ticket states a customer constraint, telemetry correlates with the release, and chat is unavailable. Distinguish the evidence from inference.",
+  "transformation": "Only the exact supplied case prompt is projected. Fixture data and arbitrary surrounding contract fields are omitted. This is supplied input, not a native successful tool operation."
+}

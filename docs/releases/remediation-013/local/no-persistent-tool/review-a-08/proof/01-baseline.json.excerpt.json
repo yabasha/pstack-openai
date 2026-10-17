@@ -1,0 +1,19 @@
+{
+  "kind": "selected-fixture-result-fields",
+  "caseId": "no-persistent-tool",
+  "attemptId": "review-a-08",
+  "originalLocator": "remaining-local/cases/no-persistent-tool/outputs/baseline.json",
+  "sourceSha256": "e7577a7326439ef9a08a31d263457c2a962eb336fe07a9f85749ff6c1f7c28d9",
+  "sourceBytes": 620,
+  "transformation": "Named JSON fields selected by exact JSON Pointer. Task-owned absolute paths replaced with declared placeholders. Other fields omitted. These are result-artifact values, not synthesized tool execution evidence. Public selection is limited to eight short inspected fields. Longer output and unselected fields remain private.",
+  "fields": [
+    {
+      "pointer": "/exitCode",
+      "value": 1
+    },
+    {
+      "pointer": "/stdout",
+      "value": "bun test v1.4.2 (50a8a8387)\n"
+    }
+  ]
+}

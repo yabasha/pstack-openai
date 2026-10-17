@@ -1,0 +1,60 @@
+{
+  "kind": "selected-fixture-result-fields",
+  "caseId": "migration-end-state",
+  "attemptId": "review-a-14",
+  "originalLocator": "work/local_compiler_cases/projects/pricing-domain/deliverables/check-results.json",
+  "sourceSha256": "2496979c54bf9bb8c196fe2832b3123dc451bd304133887558a5330ce773cfed",
+  "sourceBytes": 835,
+  "transformation": "Named JSON fields selected by exact JSON Pointer. Task-owned absolute paths replaced with declared placeholders. Other fields omitted. These are result-artifact values, not synthesized tool execution evidence. Public selection is limited to eight short inspected fields. Longer output and unselected fields remain private.",
+  "fields": [
+    {
+      "pointer": "/0/name",
+      "value": "static"
+    },
+    {
+      "pointer": "/0/command",
+      "value": [
+        "bun",
+        "--no-install",
+        "<starting-main-package>/skills/poteto-mode/scripts/node_modules/typescript/bin/tsc",
+        "--project",
+        "deliverables/working/tsconfig.json",
+        "--noEmit",
+        "--strict"
+      ]
+    },
+    {
+      "pointer": "/0/exitCode",
+      "value": 0
+    },
+    {
+      "pointer": "/1/name",
+      "value": "runtime"
+    },
+    {
+      "pointer": "/1/command",
+      "value": [
+        "bun",
+        "--no-install",
+        "test",
+        "./deliverables/working/contract.test.mjs"
+      ]
+    },
+    {
+      "pointer": "/1/exitCode",
+      "value": 0
+    },
+    {
+      "pointer": "/2/name",
+      "value": "equivalence"
+    },
+    {
+      "pointer": "/2/command",
+      "value": [
+        "bun",
+        "--no-install",
+        "deliverables/verify.mjs"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,84 @@
+{
+  "kind": "historical-proof-selection",
+  "source": {
+    "path": "<private-run>/work/notes_workflow_reruns/projects/smaller-solution/outputs/review/inspection.json",
+    "sha256": "aa6969b42cd9c3a41075de1049a82aace21d62377a18d5933b349235daf72538",
+    "bytes": 571
+  },
+  "selection": [
+    {
+      "locator": {
+        "jsonPointer": "/event"
+      },
+      "value": "result-inspected"
+    },
+    {
+      "locator": {
+        "jsonPointer": "/id"
+      },
+      "value": "pricing-diff-review-1"
+    },
+    {
+      "locator": {
+        "jsonPointer": "/workerId"
+      },
+      "value": "/root/diff_review"
+    },
+    {
+      "locator": {
+        "jsonPointer": "/inputRevision"
+      },
+      "value": "63b1c3a33583a4e688ecaa34099383ccddf5169d"
+    },
+    {
+      "locator": {
+        "jsonPointer": "/outputPath"
+      },
+      "value": "outputs/review/result.md"
+    },
+    {
+      "locator": {
+        "jsonPointer": "/outputSha256"
+      },
+      "value": "6276ce43fe5254a3fb53b85054cb0ea47e72f689b62f53566226c953c28227fe"
+    },
+    {
+      "locator": {
+        "jsonPointer": "/status"
+      },
+      "value": "completed"
+    },
+    {
+      "locator": {
+        "jsonPointer": "/requestedModel"
+      },
+      "value": "inherit-parent"
+    },
+    {
+      "locator": {
+        "jsonPointer": "/actualModel"
+      },
+      "value": "unknown"
+    },
+    {
+      "locator": {
+        "jsonPointer": "/accepted"
+      },
+      "value": true
+    },
+    {
+      "locator": {
+        "jsonPointer": "/limitations"
+      },
+      "value": [
+        "Unknown external consumers are outside supplied fixture scope.",
+        "Named companions did not run.",
+        "Model diversity unverified."
+      ]
+    }
+  ],
+  "limits": [
+    "Selections preserve the exact source value at each locator. Truncated strings carry explicit code-unit bounds.",
+    "A producer-captured return is not a recovered native parent envelope. Missing call IDs, original capture defects and unknown model observations remain missing."
+  ]
+}

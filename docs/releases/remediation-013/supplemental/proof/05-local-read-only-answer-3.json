@@ -1,0 +1,23 @@
+{
+  "kind": "historical-proof-selection",
+  "source": {
+    "path": "<private-run>/remaining-local/cases/read-only-answer/outputs/why-synthesizer.native.md",
+    "sha256": "b34b9a8e3526b0d2da13a557745619b7c35b27a5d42721cf72fb0d8d913e5d23",
+    "bytes": 4784
+  },
+  "selection": [
+    {
+      "locator": {
+        "textCodeUnits": [
+          0,
+          2300
+        ]
+      },
+      "value": "### The Question\n\nWhy does rounding belong at the display boundary? Is the premise that all errors are swallowed correct?\n\n### The Code in Question\n\n[<private-run>/remaining-local/cases/read-only-answer/committed-inputs/shared/additional/invoice/formatter.mjs](<private-run>/remaining-local/cases/read-only-answer/committed-inputs/shared/additional/invoice/formatter.mjs:1), lines 1 through 10.\n\nThe relevant symbols are `fixed`, `formatInvoice`, and `formatRows`.\n\n### What We Found\n\n- **[Direct within synthetic scope]** The supplied decision record explicitly places rounding at the display boundary because a UI consumer compares two-decimal strings and a CSV consumer imports `formatRows`. This is the recorded rationale, rather than motivation inferred from the code. See [<private-run>/remaining-local/cases/read-only-answer/committed-inputs/shared/additional/invoice/decision.md:5](<private-run>/remaining-local/cases/read-only-answer/committed-inputs/shared/additional/invoice/decision.md:5).\n\n- **[Direct within synthetic scope]** The all-errors-swallowed premise conflicts with the decision record. It explicitly states that `formatInvoice` throws errors and the controller does not swallow them. Actual controller behavior remains unverified because its implementation was not supplied. See [decision.md:5](<private-run>/remaining-local/cases/read-only-answer/committed-inputs/shared/additional/invoice/decision.md:5).\n\n- **[Direct within synthetic scope]** The documented display contract preserves `Number.toFixed(2)`, including binary floating-point rounding behavior. It expressly rejects silently substituting accounting decimal rules and specifies an error for nonfinite amounts. See [decision.md:3](<private-run>/remaining-local/cases/read-only-answer/committed-inputs/shared/additional/invoice/decision.md:3).\n\n- **[Direct static observation]** The code contains `toFixed(2)` at line 2, a nonfinite guard that throws at line 4, and `formatRows` delegation to `formatInvoice` at line 8. These mechanics agree with the supplied record. They establi"
+    }
+  ],
+  "limits": [
+    "Selections preserve the exact source value at each locator. Truncated strings carry explicit code-unit bounds.",
+    "A producer-captured return is not a recovered native parent envelope. Missing call IDs, original capture defects and unknown model observations remain missing."
+  ]
+}

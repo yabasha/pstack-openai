@@ -1,0 +1,74 @@
+{
+  "kind": "historical-proof-selection",
+  "source": {
+    "path": "<private-run>/seeded-restatement/local/native-conversation-observation.json",
+    "sha256": "ee8a32d000156c897dca38d7acf4cd702c8c508bc594f7e9e2fbca096082cc48",
+    "bytes": 946
+  },
+  "selection": [
+    {
+      "locator": {
+        "jsonPointer": "/thread"
+      },
+      "value": "01a148d7-2651-7d53-b4fb-9944f76155d0"
+    },
+    {
+      "locator": {
+        "jsonPointer": "/queryScope"
+      },
+      "value": "Exact observed owned two-turn thread only"
+    },
+    {
+      "locator": {
+        "jsonPointer": "/model"
+      },
+      "value": "gpt-6.1-sol"
+    },
+    {
+      "locator": {
+        "jsonPointer": "/effort"
+      },
+      "value": "medium"
+    },
+    {
+      "locator": {
+        "jsonPointer": "/turns"
+      },
+      "value": [
+        {
+          "timestamp": "2026-10-17T07:50:41.212Z",
+          "role": "assistant",
+          "phase": "final_answer",
+          "text": "We should serialize mutations to the shared state to prevent concurrent writers from clobbering each other."
+        },
+        {
+          "timestamp": "2026-10-17T07:50:49.617Z",
+          "role": "user",
+          "text": "Invoke bro."
+        },
+        {
+          "timestamp": "2026-10-17T07:50:51.774Z",
+          "role": "assistant",
+          "phase": "final_answer",
+          "text": "We should make changes one at a time so they don’t overwrite each other."
+        }
+      ]
+    },
+    {
+      "locator": {
+        "jsonPointer": "/seedMatches"
+      },
+      "value": true
+    },
+    {
+      "locator": {
+        "jsonPointer": "/nativeActorPriorHistoryNotSynthesized"
+      },
+      "value": true
+    }
+  ],
+  "limits": [
+    "Selections preserve the exact source value at each locator. Truncated strings carry explicit code-unit bounds.",
+    "A producer-captured return is not a recovered native parent envelope. Missing call IDs, original capture defects and unknown model observations remain missing."
+  ]
+}

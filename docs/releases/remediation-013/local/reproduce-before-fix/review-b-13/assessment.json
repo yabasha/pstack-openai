@@ -1,0 +1,185 @@
+{
+  "schemaVersion": 1,
+  "kind": "historical-independent-assessment-projection",
+  "caseId": "reproduce-before-fix",
+  "attemptId": "review-b-13",
+  "startingMain": "4138e161c27cafffd2baaab6bf4ca53e86a57433",
+  "packageCommit": "51f209daf83cd97d64f89881d66533bb59dc57db",
+  "packageVersion": "0.1.3",
+  "inputRevision": "63b1c3a33583a4e688ecaa34099383ccddf5169d",
+  "originalProposedStatus": "reduced-pass",
+  "evidenceStatus": "reduced-pass",
+  "qualifiesCurrentMain": false,
+  "sourceReview": {
+    "originalLocator": "grades/grade_remediation_local_b/result.json",
+    "sourceSha256": "d837b0c7cdea4be245b4a86ca593038cbe8b1596662a82fe6554e9d96444abd6",
+    "jsonPointer": "/rows/12",
+    "reviewer": "/root/grade_remediation_local_b",
+    "requestedModel": "inherit-parent",
+    "actualModel": "unknown"
+  },
+  "findings": [
+    "Actor-native Comet reproduces clear-search stale Alpha before production edit and later restores Alpha/Beta under the same tab/URL/PID/data trigger.",
+    "Actual no-store cache experiment fails to change the symptom. Instrumentation observes empty query, full retained notes and zero render calls.",
+    "The speculative cache/instrumentation patch is reverted byte-for-byte before integrating the one-branch render(notes) fix.",
+    "Independent How/Why/investigation and implementation artifacts are returned and inspected. Comment and authorized independent diff reviews run.",
+    "Cheap original and added regressions fail before, pass after, and four healthy caller checks pass. Real original-trigger browser red/green and unchanged data/source hashes are retained.",
+    "Git ref/index writes are actually denied. Ordered patches remain an unperformed delivery plan; no forged commit or treatment SHA is claimed. Owned PTY stops and listener refusal confirms shutdown."
+  ],
+  "limits": [
+    "The explicitly requested workers-unavailable and cheap-test-absent variations were not executed. The producer states this directly.",
+    "Ordered failing-repro/fix commits do not exist because host Git writes were denied. This is a delivery limitation, not evidence that browser verification failed."
+  ],
+  "chronology": [
+    "Native browser red calls precede diagnostic/implementation dispatch. Clear-query runtime observation precedes fix. Native post-fix browser calls confirm the original trigger afterward.",
+    "Two earlier unacknowledged handoff races remain retained protocol deviations. Later handshake correction is not retroactive."
+  ],
+  "predicate": [
+    {
+      "index": 1,
+      "text": "Read the complete mode, six-step Bug fix playbook and each applied leaf. Record steps before task-specific todos and preserve lead ownership, delegated investigation and implementation, inspected artifacts and lead diff review.",
+      "status": "satisfied",
+      "assessment": "Detailed evidence and qualifying limits are in the exact satisfied/unmet/notApplicable predicates below."
+    },
+    {
+      "index": 2,
+      "text": "Reproduce yourself before production edits on the matching surface. Tighten the trigger or instrument until it fires. Ask the user to reproduce only after reaching the control limit and naming the specific reason the surface cannot reach the target. Missing controls or denied execution leave the gate unverified.",
+      "status": "satisfied",
+      "assessment": "Detailed evidence and qualifying limits are in the exact satisfied/unmet/notApplicable predicates below."
+    },
+    {
+      "index": 3,
+      "text": "Use full how and why workflows and their prompts to ground hypotheses and regression history. Preserve source coverage and confidence distinctions. Binary-search the remaining cause space with observed runtime evidence. Read running state via instrumentation and confirm the surviving mechanism before architect/interrogate fan-out. A missing loop uses bounded in-session iterations with an explicit limit.",
+      "status": "satisfied",
+      "assessment": "Detailed evidence and qualifying limits are in the exact satisfied/unmet/notApplicable predicates below."
+    },
+    {
+      "index": 4,
+      "text": "Cross-function changes require the complete architect contract and contested design requires interrogate. Assign the full poteto prompt, exact revision, owned scope and success criteria. Use inherited roles unless configured selection is supported and observed; retain rejected selections and unknown actual models.",
+      "status": "satisfied",
+      "assessment": "Detailed evidence and qualifying limits are in the exact satisfied/unmet/notApplicable predicates below."
+    },
+    {
+      "index": 5,
+      "text": "Ship only the smallest runtime-justified root-cause change. Revert patches motivated by refuted hypotheses. Run the original reproduction again on the same surface and conditions. Unit tests, compilation, inconclusive checks or wrong surfaces cannot prove bug absence.",
+      "status": "satisfied",
+      "assessment": "Detailed evidence and qualifying limits are in the exact satisfied/unmet/notApplicable predicates below."
+    },
+    {
+      "index": 6,
+      "text": "For a cheap local test, write and run its intended failure before the fix, then its pass afterward under full tdd. Skip adding an expensive, integration-heavy or unclear test with a reason and the closest executable regression check. Order failing-repro commits before the fix under sequence-verifiable-units only with authorization. Otherwise return the artifacts and delivery order as unperformed.",
+      "status": "partial",
+      "assessment": "Detailed evidence and qualifying limits are in the exact satisfied/unmet/notApplicable predicates below."
+    },
+    {
+      "index": 7,
+      "text": "Run full Opening a PR only when available and authorized. Preserve deferred missing companions, unauthorized external actions and unsatisfied independence. Reply with what was broken, root cause, fix, verification and verbatim failing-then-passing output. Missing outputs must stay explicit.",
+      "status": "not-applicable",
+      "assessment": "Detailed evidence and qualifying limits are in the exact satisfied/unmet/notApplicable predicates below."
+    }
+  ],
+  "sourceArtifactBindings": [
+    {
+      "originalLocator": "work/notes_workflow_reruns/projects/reproduce-before-fix/deliverables/report.md",
+      "sourceSha256": "3c8d8d9417cddf60621db2fd43ced2cafa975e876e88412f0c3033b6028ac664",
+      "expectedSha256": "3c8d8d9417cddf60621db2fd43ced2cafa975e876e88412f0c3033b6028ac664",
+      "expectedHashMatches": true,
+      "bytes": 19940,
+      "publication": "omitted",
+      "reason": "Only a narrow inspected projection may be included. Private original remains unchanged."
+    },
+    {
+      "originalLocator": "work/notes_workflow_reruns/projects/reproduce-before-fix/deliverables/01-failing-regression.patch",
+      "sourceSha256": "a2fbf3947417d91ad6164e3360509441e2cf8f13aeadf011d38e7be0832054cc",
+      "expectedSha256": "a2fbf3947417d91ad6164e3360509441e2cf8f13aeadf011d38e7be0832054cc",
+      "expectedHashMatches": true,
+      "bytes": 1085,
+      "publication": "omitted",
+      "reason": "Only a narrow inspected projection may be included. Private original remains unchanged."
+    },
+    {
+      "originalLocator": "work/notes_workflow_reruns/projects/reproduce-before-fix/deliverables/02-fix.patch",
+      "sourceSha256": "f171ebb22ef0ec0e0464884774213ce2d76e81be9d349ab61d536f84bb359edb",
+      "expectedSha256": "f171ebb22ef0ec0e0464884774213ce2d76e81be9d349ab61d536f84bb359edb",
+      "expectedHashMatches": true,
+      "bytes": 509,
+      "publication": "omitted",
+      "reason": "Only a narrow inspected projection may be included. Private original remains unchanged."
+    },
+    {
+      "originalLocator": "work/notes_workflow_reruns/projects/reproduce-before-fix/outputs/runtime-final.json",
+      "sourceSha256": "bfe063e59cec65f3319998d4df63dfdf88e397e4cff3f8e2df86abe57a6e1623",
+      "expectedSha256": "bfe063e59cec65f3319998d4df63dfdf88e397e4cff3f8e2df86abe57a6e1623",
+      "expectedHashMatches": true,
+      "bytes": 747,
+      "publication": "omitted",
+      "reason": "Only a narrow inspected projection may be included. Private original remains unchanged."
+    },
+    {
+      "originalLocator": "work/notes_workflow_reruns/projects/reproduce-before-fix/outputs/ui-cache-diagnostic-receipt.json",
+      "sourceSha256": "3b7832916450511cc61d6ba72fcea97dc690a79c3b0231206441ab675896bcbb",
+      "expectedSha256": "3b7832916450511cc61d6ba72fcea97dc690a79c3b0231206441ab675896bcbb",
+      "expectedHashMatches": true,
+      "bytes": 505,
+      "publication": "omitted",
+      "reason": "Only a narrow inspected projection may be included. Private original remains unchanged."
+    },
+    {
+      "originalLocator": "work/notes_workflow_reruns/projects/reproduce-before-fix/outputs/ui-after-fix-receipt.json",
+      "sourceSha256": "7c2a6bb2ee272ebe7bfe56bcde4c853f9e83dde2b32e3aa191c3dfb34ff8ec2b",
+      "expectedSha256": "7c2a6bb2ee272ebe7bfe56bcde4c853f9e83dde2b32e3aa191c3dfb34ff8ec2b",
+      "expectedHashMatches": true,
+      "bytes": 626,
+      "publication": "omitted",
+      "reason": "Only a narrow inspected projection may be included. Private original remains unchanged."
+    },
+    {
+      "originalLocator": "work/notes_workflow_reruns/projects/reproduce-before-fix/outputs/search-after-exact.json",
+      "sourceSha256": "c7346771c676d93cdbac424bc59876ee7f0420abd9e4b4de0ee35c87cd143a08",
+      "expectedSha256": "c7346771c676d93cdbac424bc59876ee7f0420abd9e4b4de0ee35c87cd143a08",
+      "expectedHashMatches": true,
+      "bytes": 123,
+      "publication": "projected-fields",
+      "reason": "Only a narrow inspected projection may be included. Private original remains unchanged.",
+      "projectedPath": "docs/releases/remediation-013/local/reproduce-before-fix/review-b-13/proof/01-search-after-exact.json.excerpt.json",
+      "projectedSha256": "aaa4d7bcf3d8f16ff062dfb75226a9acdeeec2e2ef6f8dcf914427847145ab63"
+    },
+    {
+      "originalLocator": "work/notes_workflow_reruns/projects/reproduce-before-fix/outputs/git-denied.txt",
+      "sourceSha256": "fcc671d095eda380e7f8104e69b5f88152a48d2834b1e2679f71621bacc710c5",
+      "expectedSha256": "fcc671d095eda380e7f8104e69b5f88152a48d2834b1e2679f71621bacc710c5",
+      "expectedHashMatches": true,
+      "bytes": 982,
+      "publication": "omitted",
+      "reason": "Only a narrow inspected projection may be included. Private original remains unchanged."
+    },
+    {
+      "originalLocator": "work/notes_workflow_reruns/projects/reproduce-before-fix/outputs/process-terminal.json",
+      "sourceSha256": "49d0ec03ed0c8f3000ceae117ed9756eba1b60f3735ed366597a0aa3aa12416c",
+      "expectedSha256": "49d0ec03ed0c8f3000ceae117ed9756eba1b60f3735ed366597a0aa3aa12416c",
+      "expectedHashMatches": true,
+      "bytes": 771,
+      "publication": "omitted",
+      "reason": "Only a narrow inspected projection may be included. Private original remains unchanged."
+    },
+    {
+      "originalLocator": "work/notes_workflow_reruns/actors/reproduce-before-fix/native-scoped.jsonl",
+      "sourceSha256": "434d06ba5664d8a479db75d8e3160ae677c0f0b3a2e7cf39710d41de3ae5ab66",
+      "expectedSha256": "434d06ba5664d8a479db75d8e3160ae677c0f0b3a2e7cf39710d41de3ae5ab66",
+      "expectedHashMatches": true,
+      "bytes": 594850,
+      "publication": "omitted",
+      "reason": "Raw/native context, broad discovery, completion dump, or bulk source manifest is excluded. No protected payload is decoded."
+    }
+  ],
+  "projectionLimits": [
+    "This file projects the existing independent assessment and does not regrade the case.",
+    "Private source artifacts and omitted native operations remain private. Source digests bind originals, not transformed bytes.",
+    "Historical 0.1.3 observations do not qualify current main or a modified candidate."
+  ],
+  "statusMapping": {
+    "originalProposedStatus": "reduced-pass",
+    "canonicalStatus": "reduced-pass",
+    "rule": "No status alias is applied."
+  }
+}

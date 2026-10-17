@@ -1,0 +1,27 @@
+{
+  "kind": "selected-fixture-result-fields",
+  "caseId": "guides-github-absent",
+  "attemptId": "review-b-01",
+  "originalLocator": "remaining-local/cases/guides-github-absent/outputs/coordinator-review.json",
+  "sourceSha256": "8a5f9f0c7c47e1dd6769e481b3db94ab89daaf3ce318e5e8b877de0043784f2f",
+  "sourceBytes": 1807,
+  "transformation": "Named JSON fields selected by exact JSON Pointer. Task-owned absolute paths replaced with declared placeholders. Other fields omitted. These are result-artifact values, not synthesized tool execution evidence. Public selection is limited to eight short inspected fields. Longer output and unselected fields remain private.",
+  "fields": [
+    {
+      "pointer": "/assignmentId",
+      "value": "guides-github-absent-attempt-1"
+    },
+    {
+      "pointer": "/inputRevision",
+      "value": "0d6b88f44a2a7bc7249f06374fba22822681d153"
+    },
+    {
+      "pointer": "/limits",
+      "value": [
+        "No external action or second-host execution.",
+        "Actual model unknown.",
+        "Source/hash and fixture verification do not establish supported host loading."
+      ]
+    }
+  ]
+}

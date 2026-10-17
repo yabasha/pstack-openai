@@ -1,0 +1,23 @@
+{
+  "kind": "historical-proof-selection",
+  "source": {
+    "path": "<private-run>/remaining-local/cases/guides-local-codex/outputs/guides-local-codex.result.md",
+    "sha256": "cbf5a6469f16107a90508599080c86fd8c3af8074bf72f2353d847d659d07511",
+    "bytes": 31351
+  },
+  "selection": [
+    {
+      "locator": {
+        "textCodeUnits": [
+          0,
+          2300
+        ]
+      },
+      "value": "# Local guide attempt\n\nThe assigned local attempt produced observed file reads, an isolated write with readback, and command execution. Supported host plugin loading, registration, and slash invocation remain unverified. This is a factual attempt receipt, not a producer grade.\n\n## Supplied request and inputs\n\nThe request is \"Use pstack in local Codex with authorized repository access.\" The complete current and ORIGINAL supplied contract content is retained in `supplied-input.json` and embedded in `completion.json`. The input repository independently returned `5121e077a8035896fa8266714b2ea3fbd8da578c` before work and again after the probe. The requested original provenance revision is `e70f4ed9904143f3820d1376e70ab5ff69e9f12c`. That historical object is unavailable in this disposable repository. `git cat-file -t` failed, and no historical content was invented. This case selects no fixture files. Unrelated shared fixture content was not used.\n\nThe operative package path is `<frozen-host-fixture>/runtime/plugins/cache/pstack-frozen-verification/pstack-openai/0.1.3`. The caller identifies its freeze as `51f209daf83cd97d64f89881d66533bb59dc57db`. Source and supplied input byte hashes are in `source-input-hashes.json`. No other plugin version was read or executed.\n\n## Actual method and actions\n\nThe canonical worker owner is `/root/guides`. Bootstrap returned that identity before the immutable substantive assignment. Assignment `remaining08-guides-local-codex` owns only this outputs directory. The parent remains coordinator. Pstack remains the active controller. No second controller was activated.\n\nRead all eleven matching guide Markdown files, the complete frozen Poteto Mode including its Principles index, poteto-agent role, host capabilities, model roles, workflow ownership, orchestration contract, host matrix, and operative writing and verification leaves. Read the frozen evidence validator before constructing this receipt. No Arena or Swarm receipt is asserted for this native guide case.\n\nViewed all six original supplied images through the image viewer. `design.jpg` depicts competing bridge proposals and a reviewer. `overnight.jpg` depicts a decision log and build loop. `recipes.jpg` depicts recipe cards. `router.jpg` "
+    }
+  ],
+  "limits": [
+    "Selections preserve the exact source value at each locator. Truncated strings carry explicit code-unit bounds.",
+    "A producer-captured return is not a recovered native parent envelope. Missing call IDs, original capture defects and unknown model observations remain missing."
+  ]
+}

@@ -1,0 +1,43 @@
+{
+  "kind": "selected-fixture-result-fields",
+  "caseId": "invalid-state",
+  "attemptId": "review-b-06",
+  "originalLocator": "cross-host-extra/local/projects/invalid-state/outputs/runtime-results.json",
+  "sourceSha256": "8cadb64a6dfe6f0b03919f76e5a4a25ab83075115fb137b229476e703449e7fa",
+  "sourceBytes": 1923,
+  "transformation": "Named JSON fields selected by exact JSON Pointer. Task-owned absolute paths replaced with declared placeholders. Other fields omitted. These are result-artifact values, not synthesized tool execution evidence. Public selection is limited to eight short inspected fields. Longer output and unselected fields remain private.",
+  "fields": [
+    {
+      "pointer": "/0/name",
+      "value": "original unchecked decode accepts missing name"
+    },
+    {
+      "pointer": "/1/name",
+      "value": "original newest returns undefined on empty list"
+    },
+    {
+      "pointer": "/1/actual",
+      "value": true
+    },
+    {
+      "pointer": "/1/expected",
+      "value": true
+    },
+    {
+      "pointer": "/2/name",
+      "value": "original incomplete guard accepts wrong id type"
+    },
+    {
+      "pointer": "/2/actual",
+      "value": true
+    },
+    {
+      "pointer": "/2/expected",
+      "value": true
+    },
+    {
+      "pointer": "/3/name",
+      "value": "schema decode rejects missing name"
+    }
+  ]
+}

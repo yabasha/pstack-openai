@@ -1,0 +1,44 @@
+{
+  "kind": "selected-fixture-result-fields",
+  "caseId": "contiguous-verified-stack",
+  "attemptId": "review-b-14",
+  "originalLocator": "work/helper_workflow_reruns/projects/release-stack/deliverables/watcher-final/result.json",
+  "sourceSha256": "2be29a1343c716bcf424e03bf29ee17430320fc9a3e6dfaa92696bb564dc8910",
+  "sourceBytes": 2566,
+  "transformation": "Named JSON fields selected by exact JSON Pointer. Task-owned absolute paths replaced with declared placeholders. Other fields omitted. These are result-artifact values, not synthesized tool execution evidence. Public selection is limited to eight short inspected fields. Longer output and unselected fields remain private.",
+  "fields": [
+    {
+      "pointer": "/assignmentId",
+      "value": "watcher-current-frontier-final-0"
+    },
+    {
+      "pointer": "/inputRevision",
+      "value": "4a7dde94ab2778837e4c932e53cc3484d2e74dfd"
+    },
+    {
+      "pointer": "/requestedModel",
+      "value": "inherit-parent"
+    },
+    {
+      "pointer": "/actualModel",
+      "value": "unknown"
+    },
+    {
+      "pointer": "/limits",
+      "value": [
+        "No named control-cli companion",
+        "No live forge or Origin proof",
+        "No authoritative gt frontier",
+        "No external merge/comment/push/retarget authorization",
+        "Reduced sequential design alternatives; no nested workers"
+      ]
+    },
+    {
+      "pointer": "/errors",
+      "value": [
+        "Empty misplaced deliverables/watcher-final-setup.tmp created then removed before implementation; no substantive content",
+        "First new run observed genuine head-changed due transition racing next snapshot; attempt-first-error preserves original raw. Increased only owned interval to0.15; new finite run observed ADVANCE and exhaustion."
+      ]
+    }
+  ]
+}

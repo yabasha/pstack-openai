@@ -1,0 +1,23 @@
+{
+  "kind": "selected-fixture-result-fields",
+  "caseId": "inherited-identical-models",
+  "attemptId": "review-c-14",
+  "originalLocator": "cross-host-extra/local/projects/inherited-identical-models/outputs/inherited_owner.assignment.json",
+  "sourceSha256": "964dd6420b6102543452a072ea6a957283f9ffe0f0d8ed49be1b3a3b5175e089",
+  "sourceBytes": 2371,
+  "transformation": "Named JSON fields selected by exact JSON Pointer. Task-owned absolute paths replaced with declared placeholders. Other fields omitted. These are result-artifact values, not synthesized tool execution evidence. Public selection is limited to eight short inspected fields. Longer output and unselected fields remain private.",
+  "fields": [
+    {
+      "pointer": "/inputRevision",
+      "value": "19a60cb93e2dff5ad0240a2df847e49cc6a52aa2"
+    },
+    {
+      "pointer": "/requestedModel",
+      "value": "inherit-parent"
+    },
+    {
+      "pointer": "/actualModel",
+      "value": "unknown"
+    }
+  ]
+}

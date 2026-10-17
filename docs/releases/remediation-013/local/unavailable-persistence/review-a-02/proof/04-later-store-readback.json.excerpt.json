@@ -1,0 +1,25 @@
+{
+  "kind": "selected-fixture-result-fields",
+  "caseId": "unavailable-persistence",
+  "attemptId": "review-a-02",
+  "originalLocator": "remaining-local/cases/unavailable-persistence/outputs/later-store-readback.json",
+  "sourceSha256": "941f566dad7f825f5d4112899c4db3fca3b3aaf226a99a2357493914a28bea7f",
+  "sourceBytes": 2743,
+  "transformation": "Named JSON fields selected by exact JSON Pointer. Task-owned absolute paths replaced with declared placeholders. Other fields omitted. These are result-artifact values, not synthesized tool execution evidence. Public selection is limited to eight short inspected fields. Longer output and unselected fields remain private.",
+  "fields": [
+    {
+      "pointer": "/assignmentId",
+      "value": "attempt-unavailable-persistence"
+    },
+    {
+      "pointer": "/limits",
+      "value": [
+        "Separate processes read actual local store bytes.",
+        "No restart, cross-session or crash-durability test.",
+        "No inbox pointers created or drained.",
+        "No ledger verdict or PR created.",
+        "Empty initialized frontier is bookkeeping, not discovered stack evidence."
+      ]
+    }
+  ]
+}

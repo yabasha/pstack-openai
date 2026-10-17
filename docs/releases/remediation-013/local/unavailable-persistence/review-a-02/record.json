@@ -1,0 +1,77 @@
+{
+  "caseId": "unavailable-persistence",
+  "packageVersion": "0.1.3",
+  "packageCommit": "51f209daf83cd97d64f89881d66533bb59dc57db",
+  "host": "codex",
+  "hostMode": "Historical native Local task-scoped fixture observation",
+  "date": "2026-10-17",
+  "input": "Durable session persistence is unavailable. Actual task fixture revision 583a40e164fe12e8e9adf256c05bd489431c5cc3.",
+  "observedOutput": "Initial policy-withheld persistence and the authorized local handoff remain separate from the later available local-file variant. Seven unchanged helper calls exited zero. The assignment, complete event history and saved unit record were read in separate processes. The additional root process read files after writer termination. This reviewer independently read the same eight files again and matched every digest. The source defines full persistence as durable write/readback with linked assignment history. It does not require app restart, crash durability, remote memory or wake registration.",
+  "status": "pass",
+  "execution": "direct",
+  "inputRevision": "583a40e164fe12e8e9adf256c05bd489431c5cc3",
+  "sourcePaths": [
+    "skills/poteto-mode/SKILL.md",
+    "skills/poteto-mode/playbooks/orchestrate.md",
+    "agents/poteto-agent.md"
+  ],
+  "documentedCapabilities": [
+    "Frozen source instructions only. Current-main qualification is not established."
+  ],
+  "exposedTools": [
+    "exec"
+  ],
+  "artifacts": [
+    "docs/releases/remediation-013/local/unavailable-persistence/review-a-02/assessment.json",
+    "docs/releases/remediation-013/local/unavailable-persistence/review-a-02/proof/01-assignment.json.excerpt.json",
+    "docs/releases/remediation-013/local/unavailable-persistence/review-a-02/proof/02-later-unit-set.raw.json.excerpt.json",
+    "docs/releases/remediation-013/local/unavailable-persistence/review-a-02/proof/03-later-unit-read.raw.json.excerpt.json",
+    "docs/releases/remediation-013/local/unavailable-persistence/review-a-02/proof/04-later-store-readback.json.excerpt.json",
+    "docs/releases/remediation-013/local/unavailable-persistence/review-a-02/proof/supplied-input.json",
+    "docs/releases/remediation-013/local/unavailable-persistence/review-a-02/proof/native-source-read.json",
+    "docs/releases/remediation-013/local/unavailable-persistence/review-a-02/proof/native-persistence-readback.json",
+    "docs/releases/remediation-013/local/unavailable-persistence/review-a-02/proof/task-result-prefix.json"
+  ],
+  "limits": [
+    "Initial policy-withheld persistence and the authorized local handoff remain separate from the later available local-file variant.",
+    "The source defines full persistence as durable write/readback with linked assignment history. It does not require app restart, crash durability, remote memory or wake registration.",
+    "The public source excerpt covers the listed matched paths only. Other source reads assessed independently remain outside this narrow public excerpt.",
+    "Only the actual operations listed in this record have narrow public bindings. Other operations from the independent assessment remain unprojected. No missing operation is invented.",
+    "The exposed tool name exec is retained from the actual scoped native custom-tool call. The nested tools.exec_command call matches this public command event. command_execution remains an event type only.",
+    "The exposed tool name exec is retained from the actual scoped native custom-tool call. The nested tools.exec_command call matches this public command event. command_execution remains an event type only."
+  ],
+  "priorActionIdentities": [],
+  "permissions": {
+    "execution": "granted",
+    "writes": "granted",
+    "externalActions": "denied"
+  },
+  "models": {
+    "requested": "inherit-parent",
+    "actual": "gpt-6.1-sol"
+  },
+  "successfulOperations": [
+    {
+      "operation": "read",
+      "tool": "exec",
+      "evidence": "docs/releases/remediation-013/local/unavailable-persistence/review-a-02/proof/native-source-read.json"
+    },
+    {
+      "operation": "persistence",
+      "tool": "exec",
+      "evidence": "docs/releases/remediation-013/local/unavailable-persistence/review-a-02/proof/native-persistence-readback.json"
+    }
+  ],
+  "nativeObservations": [
+    {
+      "observation": "review-outcome",
+      "evidence": "docs/releases/remediation-013/local/unavailable-persistence/review-a-02/assessment.json",
+      "reviewedBy": "/root/grade_remediation_local_a"
+    },
+    {
+      "observation": "supplied-input",
+      "evidence": "docs/releases/remediation-013/local/unavailable-persistence/review-a-02/proof/supplied-input.json",
+      "reviewedBy": "/root/project_historical_local"
+    }
+  ]
+}

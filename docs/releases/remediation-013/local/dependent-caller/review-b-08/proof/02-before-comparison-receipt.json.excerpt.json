@@ -1,0 +1,31 @@
+{
+  "kind": "selected-fixture-result-fields",
+  "caseId": "dependent-caller",
+  "attemptId": "review-b-08",
+  "originalLocator": "cross-host-extra/local/projects/dependent-caller/outputs/before-comparison-receipt.json",
+  "sourceSha256": "b9acc72c95e5b9a2dc888c6a113981cb3987400cc4e4c1c983fe47159dae208c",
+  "sourceBytes": 350,
+  "transformation": "Named JSON fields selected by exact JSON Pointer. Task-owned absolute paths replaced with declared placeholders. Other fields omitted. These are result-artifact values, not synthesized tool execution evidence. Public selection is limited to eight short inspected fields. Longer output and unselected fields remain private.",
+  "fields": [
+    {
+      "pointer": "/command",
+      "value": [
+        "bun",
+        "--no-install",
+        "<private-run>/cross-host-extra/local/projects/dependent-caller/outputs/before-state/probe.mjs"
+      ]
+    },
+    {
+      "pointer": "/exitCode",
+      "value": 0
+    },
+    {
+      "pointer": "/stdout",
+      "value": "disposed ready: true\nteardown completed\n"
+    },
+    {
+      "pointer": "/stderr",
+      "value": ""
+    }
+  ]
+}

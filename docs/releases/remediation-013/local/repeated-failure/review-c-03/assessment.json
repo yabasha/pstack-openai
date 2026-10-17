@@ -1,0 +1,89 @@
+{
+  "schemaVersion": 1,
+  "kind": "historical-independent-assessment-projection",
+  "caseId": "repeated-failure",
+  "attemptId": "review-c-03",
+  "startingMain": "4138e161c27cafffd2baaab6bf4ca53e86a57433",
+  "packageCommit": "51f209daf83cd97d64f89881d66533bb59dc57db",
+  "packageVersion": "0.1.3",
+  "inputRevision": "25513453054f9ce79354b7ae6c17a3db80dd8012",
+  "originalProposedStatus": "blocked",
+  "evidenceStatus": "blocked",
+  "qualifiesCurrentMain": false,
+  "sourceReview": {
+    "originalLocator": "grades/grade_remediation_local_c/result.json",
+    "sourceSha256": "2582d82fe0ad256da816b168e5b242a713d134d62af8657c4f7bc255d3a7ceba",
+    "jsonPointer": "/cases/2",
+    "reviewer": "/root/grade_remediation_local_c",
+    "requestedModel": "inherit-parent",
+    "actualModel": "unknown"
+  },
+  "findings": [
+    "Failed-check outputs and actor-level counts are not supplied. The actor wrote the shared premise and stopped. No census, skew conclusion, assignment fix or even-census diagnosis was invented."
+  ],
+  "limits": [
+    "Both failed-check outputs and corresponding fix revisions",
+    "Actor-level imbalance records and role-assignment implementation"
+  ],
+  "chronology": [],
+  "predicate": "Attack the Premise expectedBlocked explicitly requires stopping when failed-check or actor evidence is unavailable.",
+  "sourceArtifactBindings": [
+    {
+      "originalLocator": "remaining-local/cases/repeated-failure/task-contract.json",
+      "sourceSha256": "2ab067f4fa81df64dbf695ff6e8bdbea85eb305bf9eb180d44de010cb2b9603c",
+      "expectedSha256": "2ab067f4fa81df64dbf695ff6e8bdbea85eb305bf9eb180d44de010cb2b9603c",
+      "expectedHashMatches": true,
+      "bytes": 2752,
+      "publication": "omitted",
+      "reason": "Only a narrow inspected projection may be included. Private original remains unchanged."
+    },
+    {
+      "originalLocator": "remaining-local/cases/repeated-failure/outputs/repeated-failure.result.md",
+      "sourceSha256": "f7565606495ab9fa121300824e812bfafb9c93c106aac67451a59c7ec394a313",
+      "expectedSha256": "f7565606495ab9fa121300824e812bfafb9c93c106aac67451a59c7ec394a313",
+      "expectedHashMatches": true,
+      "bytes": 3320,
+      "publication": "omitted",
+      "reason": "Only a narrow inspected projection may be included. Private original remains unchanged."
+    },
+    {
+      "originalLocator": "remaining-local/cases/repeated-failure/outputs/completion.json",
+      "sourceSha256": "70dc997c3ddd252f251ced5a6f7af56d71a0d38b50e746c46d3a319779a0bfbd",
+      "expectedSha256": "70dc997c3ddd252f251ced5a6f7af56d71a0d38b50e746c46d3a319779a0bfbd",
+      "expectedHashMatches": true,
+      "bytes": 14772,
+      "publication": "omitted",
+      "reason": "Raw/native context, broad discovery, completion dump, or bulk source manifest is excluded. No protected payload is decoded."
+    },
+    {
+      "originalLocator": "remaining-local/cases/repeated-failure/outputs/command-observations.json",
+      "sourceSha256": "10152f86a35dda57cffe8b41e096f7d9815ce386ff381043c6cf9caedab446f0",
+      "expectedSha256": "10152f86a35dda57cffe8b41e096f7d9815ce386ff381043c6cf9caedab446f0",
+      "expectedHashMatches": true,
+      "bytes": 7045,
+      "publication": "projected-fields",
+      "reason": "Only a narrow inspected projection may be included. Private original remains unchanged.",
+      "projectedPath": "docs/releases/remediation-013/local/repeated-failure/review-c-03/proof/01-command-observations.json.excerpt.json",
+      "projectedSha256": "0d96f69a2d0d5b3df522eb5f1a8d290070fe96f9332144f47f8c6380d298cce7"
+    },
+    {
+      "originalLocator": "remaining-local/cases/repeated-failure/outputs/source-input-hashes.json",
+      "sourceSha256": "1cc8a3b9049a4060277cc8b27bf8455223d9592ad4b375e36947a03eeccd1c91",
+      "expectedSha256": "1cc8a3b9049a4060277cc8b27bf8455223d9592ad4b375e36947a03eeccd1c91",
+      "expectedHashMatches": true,
+      "bytes": 22329,
+      "publication": "omitted",
+      "reason": "Raw/native context, broad discovery, completion dump, or bulk source manifest is excluded. No protected payload is decoded."
+    }
+  ],
+  "projectionLimits": [
+    "This file projects the existing independent assessment and does not regrade the case.",
+    "Private source artifacts and omitted native operations remain private. Source digests bind originals, not transformed bytes.",
+    "Historical 0.1.3 observations do not qualify current main or a modified candidate."
+  ],
+  "statusMapping": {
+    "originalProposedStatus": "blocked",
+    "canonicalStatus": "blocked",
+    "rule": "No status alias is applied."
+  }
+}

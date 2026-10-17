@@ -1,0 +1,58 @@
+{
+  "kind": "historical-proof-selection",
+  "source": {
+    "path": "<private-run>/web-checkpoint-3/units/false-success/outputs/false-success/ui-execution.raw.json",
+    "sha256": "3c0e63c9db29b022b7db8973ebee530c61a8993c07160bbbffed7c49df95f553",
+    "bytes": 5579
+  },
+  "selection": [
+    {
+      "locator": {
+        "jsonPointer": "/startedAt"
+      },
+      "value": "2026-10-17T07:48:46.828Z"
+    },
+    {
+      "locator": {
+        "jsonPointer": "/finishedAt"
+      },
+      "value": "2026-10-17T07:48:49.421Z"
+    },
+    {
+      "locator": {
+        "jsonPointer": "/request/args"
+      },
+      "value": [
+        "/mnt/data/pstack-013-evaluation/runtime/bun-linux-x64/bun",
+        "--no-install",
+        "/mnt/data/pstack-remediation-20261017/attempts-18/outputs/false-success/ui-proof.mjs"
+      ]
+    },
+    {
+      "locator": {
+        "jsonPointer": "/returned/exitCode"
+      },
+      "value": 0
+    },
+    {
+      "locator": {
+        "jsonPointer": "/returned/stdout"
+      },
+      "value": "{\"status\":\"observed-ui-and-data\",\"browserVersion\":\"151.0.7922.34\",\"serverPid\":23,\"url\":\"http://127.0.0.1:41725/\",\"deniedSave\":\"Entitlement required\",\"deniedStoredCount\":0,\"visibleNotes\":[\"Native UI persisted note\"],\"stored\":{\"schemaVersion\":2,\"notes\":[{\"id\":\"8c97aa6d-ac6e-4e8e-b677-d8590abc351d\",\"title\":\"Native UI persisted note\",\"body\":\"Verified through the browser\"}]},\"domId\":\"8c97aa6d-ac6e-4e8e-b677-d8590abc351d\",\"loopbackPolicy\":\"Only exact127.0.0.1port HTTP continued; allotherrequests abort; WebSockets denied; serviceworkers blocked\",\"sandboxDisabledOnlyForThisBrowser\":true,\"originalSandboxFailurePreserved\":true,\"actualModel\":\"unknown\"}\n"
+    },
+    {
+      "locator": {
+        "jsonPointer": "/returned/stderr",
+        "stringCodeUnits": [
+          0,
+          1400
+        ]
+      },
+      "value": "2026-10-17T07:48:47.647Z pw:browser <launching> /mnt/data/pstack-remediation-20261017/runtime/playwright-browsers-1.62.1/chromium_headless_shell-1234/chrome-headless-shell-linux64/chrome-headless-shell --disable-field-trial-config --disable-background-networking --disable-background-timer-throttling --disable-backgrounding-occluded-windows --disable-back-forward-cache --disable-breakpad --disable-client-side-phishing-detection --disable-component-extensions-with-background-pages --disable-component-update --no-default-browser-check --disable-default-apps --disable-dev-shm-usage --disable-edgeupdater --disable-extensions --disable-features=AvoidUnnecessaryBeforeUnloadCheckSync,BoundaryEventDispatchTracksNodeRemoval,DestroyProfileOnBrowserClose,DialMediaRouteProvider,GlobalMediaControls,HttpsUpgrades,LensOverlay,MediaRouter,PaintHolding,ThirdPartyStoragePartitioning,BlockOriginHeaderModificationOnRedirect,Translate,AutoDeElevate,OptimizationHints,msForceBrowserSignIn,msEdgeUpdateLaunchServicesPreferredVersion --enable-features=CDPScreenshotNewSurface --allow-pre-commit-input --disable-hang-monitor --disable-ipc-flooding-protection --disable-popup-blocking --disable-prompt-on-repost --disable-renderer-backgrounding --disable-updater-scheduler --force-color-profile=srgb --metrics-recording-only --no-first-run --password-store=basic --use-mock-keychain --no-service-autorun --export-"
+    }
+  ],
+  "limits": [
+    "Selections preserve the exact source value at each locator. Truncated strings carry explicit code-unit bounds.",
+    "A producer-captured return is not a recovered native parent envelope. Missing call IDs, original capture defects and unknown model observations remain missing."
+  ]
+}

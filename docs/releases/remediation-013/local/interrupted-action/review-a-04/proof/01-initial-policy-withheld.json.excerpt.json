@@ -1,0 +1,18 @@
+{
+  "kind": "selected-fixture-result-fields",
+  "caseId": "interrupted-action",
+  "attemptId": "review-a-04",
+  "originalLocator": "remaining-local/cases/interrupted-action/outputs/initial-policy-withheld.json",
+  "sourceSha256": "0d82393693d4efd9705128eb6d89cddb8f2505dc4dc434b81985dc843db6b14e",
+  "sourceBytes": 546,
+  "transformation": "Named JSON fields selected by exact JSON Pointer. Task-owned absolute paths replaced with declared placeholders. Other fields omitted. These are result-artifact values, not synthesized tool execution evidence. Public selection is limited to eight short inspected fields. Longer output and unselected fields remain private.",
+  "fields": [
+    {
+      "pointer": "/limitations",
+      "value": [
+        "No original nested worker identity or partial bytes were supplied; do not invent them.",
+        "Separate exposed-stop variant does not repair this scenario."
+      ]
+    }
+  ]
+}

@@ -1,0 +1,57 @@
+{
+  "documentType": "historical-independent-assessment",
+  "caseId": "plain-restate",
+  "host": "chatgpt",
+  "packageVersion": "0.1.3",
+  "inputRevision": "4138e161c27cafffd2baaab6bf4ca53e86a57433",
+  "sourceFreeze": "51f209daf83cd97d64f89881d66533bb59dc57db",
+  "status": "blocked",
+  "reason": "The restatement is semantically appropriate, but Invoke bro arrived as a parent NEW_TASK analysis message rather than the required actual user-role invocation. The positive two-turn gate is unproven. The response also adds role-binding disclosure beyond the seed.",
+  "limits": [
+    "The source metadata is preserved. Actual user-role invocation and native exported conversation envelopes are absent.",
+    "Initial setup used a non-Bun persistence fallback and assignment preceded identity return. No retrospective repair was accepted."
+  ],
+  "gradeSource": {
+    "path": "grades/grade_web_resume/result.json",
+    "sha256": "9422208a4b775be8e33cd9e76cfacd02402f1bbcfe91c1c52c0b6dcf3aa29896",
+    "pointer": "/cases/1"
+  },
+  "contract": {
+    "origin": {
+      "path": "runtime/package-main-4138e16/docs/parity/cases/skills/bro.json",
+      "sha256": "58d8c5b26756be43f95eed51954c189b8b325412ed588a65185392e8ee669aa6",
+      "bytes": 1492,
+      "pointers": [
+        ""
+      ]
+    },
+    "selections": [
+      {
+        "pointer": "",
+        "value": {
+          "id": "plain-restate",
+          "sourcePaths": [
+            "skills/bro/SKILL.md"
+          ],
+          "prompt": "Invoke bro.",
+          "requirements": [
+            "Before invocation, seed this exact sentence as the immediately preceding ASSISTANT turn: We should serialize mutations to the shared state to prevent concurrent writers from clobbering each other.",
+            "Preserve a conversation artifact identifying the seeded assistant turn and its exact text; do not substitute an assertion about prior text inside the user invocation.",
+            "Access to the actual previous assistant message.",
+            "User invocation of bro; preserve disable-model-invocation metadata."
+          ],
+          "expectedFull": "Restates the actual immediately preceding assistant message in plain, coherent, concise language without adding claims. For the seeded assistant turn, explains that changes should happen one at a time so writers do not overwrite each other.",
+          "expectedReduced": "If only an excerpt of the previous message is available, restates that excerpt and names the context limit without claiming it is the complete message.",
+          "expectedBlocked": "If the previous assistant message is unavailable, says it cannot restate the message and requests the missing text without inventing its contents.",
+          "forbiddenClaims": [
+            "New facts, advice, promises, or outcomes absent from the previous message.",
+            "Claims that unavailable conversation history was read.",
+            "Claims of host behavioral verification from structural validation."
+          ]
+        }
+      }
+    ]
+  },
+  "qualification": "Independent historical assessment only. No canonical release validation or current candidate-source qualification is claimed.",
+  "nativeOperationLimit": "Manual/native operation captures are distinguished from platform transcript exports. Missing child or parent envelopes remain missing."
+}

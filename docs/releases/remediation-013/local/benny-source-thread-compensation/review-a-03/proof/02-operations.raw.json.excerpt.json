@@ -1,0 +1,52 @@
+{
+  "kind": "selected-fixture-result-fields",
+  "caseId": "benny-source-thread-compensation",
+  "attemptId": "review-a-03",
+  "originalLocator": "remaining-local/cases/benny-source-thread-compensation/outputs/operations.raw.json",
+  "sourceSha256": "1afd8f97f0a51e82a7e6ba95151a5c21f0baec4d027fd78f3d580b3bff195a45",
+  "sourceBytes": 1042,
+  "transformation": "Named JSON fields selected by exact JSON Pointer. Task-owned absolute paths replaced with declared placeholders. Other fields omitted. These are result-artifact values, not synthesized tool execution evidence. Public selection is limited to eight short inspected fields. Longer output and unselected fields remain private.",
+  "fields": [
+    {
+      "pointer": "/0/request",
+      "value": [
+        "git",
+        "rev-parse",
+        "HEAD"
+      ]
+    },
+    {
+      "pointer": "/0/exitCode",
+      "value": 0
+    },
+    {
+      "pointer": "/0/stdout",
+      "value": "0c3afc8dce70e6475ac0eb91fb3cd1e794129476\n"
+    },
+    {
+      "pointer": "/0/stderr",
+      "value": ""
+    },
+    {
+      "pointer": "/1/request",
+      "value": [
+        "git",
+        "cat-file",
+        "-t",
+        "1ab7a58f948e86a2fe923e96e6b4a8edf615c6a7"
+      ]
+    },
+    {
+      "pointer": "/1/exitCode",
+      "value": 128
+    },
+    {
+      "pointer": "/1/stdout",
+      "value": ""
+    },
+    {
+      "pointer": "/1/stderr",
+      "value": "fatal: git cat-file: could not get object info\n"
+    }
+  ]
+}

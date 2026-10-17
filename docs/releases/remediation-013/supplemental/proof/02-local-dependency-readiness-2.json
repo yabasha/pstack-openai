@@ -1,0 +1,23 @@
+{
+  "kind": "historical-proof-selection",
+  "source": {
+    "path": "<private-run>/remaining-local/cases/dependency-readiness/outputs/dependency-readiness.result.md",
+    "sha256": "20776bdf1569a851c328971b8d8f8e2a707c1957cf5d650df055ce0e9a450c7e",
+    "bytes": 69433
+  },
+  "selection": [
+    {
+      "locator": {
+        "textCodeUnits": [
+          0,
+          2300
+        ]
+      },
+      "value": "The session supports a local dependency audit and an authorized supported skill-authoring alternative. It does not establish readiness for personal-mode changes, real application verification, live PR watching, or either host's complete behavior.\n\n| Branch | Observed result | Remaining gate |\n| --- | --- | --- |\n| Initial controls | POLICY withheld. No driver ran during this trial. | Real verification blocked in that trial. The exposed PTY tool was not falsely called absent. |\n| Initial helper metadata | POLICY withheld. Helper execution stopped. | No initial execution claim. |\n| Later authoring | Read the supported skill-creator instructions and actual quick_validate.py. Wrote one disposable nonpersonal audit skill. The validator exited 0 with `Skill is valid!`. | Named create-skill did not run. Trigger behavior and subjective approval remain unknown. No references were added, so link resolution is vacuous. |\n| Automate-me | Read its complete current caller. | Baseline inventory and both-host dispositions are incomplete. No personal-mode draft or personal configuration edit began. No private history was requested. |\n| Reflect | Read its complete current caller. | No Accepted list or explicit application approval was supplied. No Reflect edit or required draft/test/iterate loop is claimed. This audit is not a Reflect invocation. |\n| Review | The parent independently inspected the skill draft and observed artifacts as the explicitly authorized missing-deslop replacement. | No named deslop execution. The review found an incomplete PTY receipt, which remains retained. A fresh attempt captured actual commands and results and received an inspected addendum. |\n| Later terminal control | Actual PTY typing drove the real prepared orch CLI. Init created an owned store. Add created a readiness unit. Get returned that unit. The shell exited 0. | Per-command exit codes were not echoed in the PTY. Browser/UI controls, a real consuming application, media and the nine-step Benny adapter check remain unverified. |\n| Later helper runtime | Prepared bootstrap accepted exact pins. Observed commander 14.0.0, bun-types 1.3.14 and TypeScript 7.0.2. Core helper files matched frozen bytes before execution. | This says nothing about a previous historical snapshot or full package prove"
+    }
+  ],
+  "limits": [
+    "Selections preserve the exact source value at each locator. Truncated strings carry explicit code-unit bounds.",
+    "A producer-captured return is not a recovered native parent envelope. Missing call IDs, original capture defects and unknown model observations remain missing."
+  ]
+}

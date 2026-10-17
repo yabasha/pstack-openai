@@ -1,0 +1,15 @@
+{
+  "kind": "selected-fixture-result-fields",
+  "caseId": "contiguous-verified-stack",
+  "attemptId": "review-a-13",
+  "originalLocator": "work/helper_workflow_reruns/projects/release-stack/deliverables/builder/noise-report.json",
+  "sourceSha256": "a002ff3938866884cab7a96a8da7758f7593de75e47d5deda1961ce895f7676a",
+  "sourceBytes": 4474,
+  "transformation": "Named JSON fields selected by exact JSON Pointer. Task-owned absolute paths replaced with declared placeholders. Other fields omitted. These are result-artifact values, not synthesized tool execution evidence. Public selection is limited to eight short inspected fields. Longer output and unselected fields remain private.",
+  "fields": [
+    {
+      "pointer": "/2/stdout",
+      "value": "{\"input\":7,\"result\":14}\n"
+    }
+  ]
+}

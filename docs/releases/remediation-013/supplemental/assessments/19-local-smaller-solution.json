@@ -1,0 +1,46 @@
+{
+  "kind": "historical-independent-assessment-extract",
+  "qualification": {
+    "inputRevision": "4138e161c27cafffd2baaab6bf4ca53e86a57433",
+    "sourceFreeze": "51f209daf83cd97d64f89881d66533bb59dc57db",
+    "packageVersion": "0.1.3",
+    "currentSourceQualified": false
+  },
+  "source": {
+    "path": "<private-run>/grades/grade_remediation_local_e/result.json",
+    "sha256": "eb72e37bdf092ce8de310380a4483bdd54b15a64257160dab117ccde7a987c57",
+    "locator": {
+      "jsonPointer": "/cases/6"
+    }
+  },
+  "originalAssessment": {
+    "caseId": "smaller-solution",
+    "proposedStatus": "pass",
+    "inputRevision": "63b1c3a33583a4e688ecaa34099383ccddf5169d",
+    "reason": "Source and all supplied callers were inspected before deleting two unused forwarding classes. The meaningful service implementation and numeric validation/rounding remain byte-identical. One-file diff is minimal. Fresh reviewer literals, 808 baseline/treatment grid comparisons, invalid-input checks and four healthy caller tests passed.",
+    "evidence": [
+      "<private-run>/work/notes_workflow_reruns/projects/smaller-solution/domain/pricing.mjs",
+      "<private-run>/work/notes_workflow_reruns/projects/smaller-solution/outputs/baseline/pricing.mjs",
+      "<private-run>/work/notes_workflow_reruns/projects/smaller-solution/outputs/review/result.md",
+      "<private-run>/work/notes_workflow_reruns/projects/smaller-solution/outputs/review/inspection.json",
+      "<private-run>/work/notes_workflow_reruns/projects/smaller-solution/deliverables/report.md",
+      "<private-run>/grades/grade_remediation_local_e/smaller-solution-tests.txt",
+      "<private-run>/grades/grade_remediation_local_e/checks.json"
+    ],
+    "limits": [
+      "Private authored fixture has no supplied external users of removed exports. Such consumers would break and are outside this claim.",
+      "Uncommitted local diff only. Independent diff review is the expressly authorized deslop replacement. No named companion execution, Arena or visual parity is claimed.",
+      "Unrelated UI transient and generic mode-method gaps do not replace the exact laziness leaf predicate."
+    ]
+  },
+  "selectedProof": [
+    "proof/19-local-smaller-solution-1.json",
+    "proof/19-local-smaller-solution-2.json",
+    "proof/19-local-smaller-solution-3.json"
+  ],
+  "publicationStatus": "proposal-only; no canonical host evidence record is constructed",
+  "publicationGaps": [
+    "This assessment format is not the canonical evidence schema. Root-relative operation bindings and any required structured method receipt require separate complete validation.",
+    "Original assessment limitations, invalid receipts and capture gaps are preserved. A behavioral pass does not qualify a different package revision."
+  ]
+}

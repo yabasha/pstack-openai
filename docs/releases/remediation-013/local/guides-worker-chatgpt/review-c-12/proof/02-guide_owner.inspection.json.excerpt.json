@@ -1,0 +1,43 @@
+{
+  "kind": "selected-fixture-result-fields",
+  "caseId": "guides-worker-chatgpt",
+  "attemptId": "review-c-12",
+  "originalLocator": "cross-host-extra/local/projects/guides-worker-chatgpt/outputs/guide_owner.inspection.json",
+  "sourceSha256": "0b68d90c56584da0a82e4490a441665ac8744cf1e349f371dd3b5bc98a55359d",
+  "sourceBytes": 869,
+  "transformation": "Named JSON fields selected by exact JSON Pointer. Task-owned absolute paths replaced with declared placeholders. Other fields omitted. These are result-artifact values, not synthesized tool execution evidence. Public selection is limited to eight short inspected fields. Longer output and unselected fields remain private.",
+  "fields": [
+    {
+      "pointer": "/assignmentId",
+      "value": "guides-worker-chatgpt-guide_owner-0"
+    },
+    {
+      "pointer": "/inputRevision",
+      "value": "5425d22370d70584a3beead899cf6547be44cf9e"
+    },
+    {
+      "pointer": "/currentHead",
+      "value": "5425d22370d70584a3beead899cf6547be44cf9e"
+    },
+    {
+      "pointer": "/observedTerminal",
+      "value": "completed"
+    },
+    {
+      "pointer": "/terminalEvidence",
+      "value": "collaboration FINAL_ANSWER notification"
+    },
+    {
+      "pointer": "/hashCount",
+      "value": 143
+    },
+    {
+      "pointer": "/hashMismatches",
+      "value": []
+    },
+    {
+      "pointer": "/modelObserved",
+      "value": "unknown"
+    }
+  ]
+}

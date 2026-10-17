@@ -1,0 +1,23 @@
+{
+  "kind": "historical-proof-selection",
+  "source": {
+    "path": "<private-run>/remaining-local/cases/legal-header/outputs/constraint-offer.md",
+    "sha256": "a43b18eeeab05cdb3ebad20450ea986f76e574c1110017a6ecf485409085039b",
+    "bytes": 713
+  },
+  "selection": [
+    {
+      "locator": {
+        "textCodeUnits": [
+          0,
+          713
+        ]
+      },
+      "value": "# Constraint encoding offer awaiting approval\nOffer the smallest scoped characterization test for cents integer identity and fractional rejection. A separate caller-level tax reconciliation test requires the actual caller and authoritative rounding contract, neither supplied. No test/CI/type/runtime encoding has been added to the fixture. Approval is absent. Unprotected IMPORTANT prose has been deleted only in authorized comment-write copies, while the asserted business constraint remains open. The first worker produced a verification artifact for review, not integrated product tests; it is retained as rejected-attempt evidence. No application code change is justified by missing client type information.\n"
+    }
+  ],
+  "limits": [
+    "Selections preserve the exact source value at each locator. Truncated strings carry explicit code-unit bounds.",
+    "A producer-captured return is not a recovered native parent envelope. Missing call IDs, original capture defects and unknown model observations remain missing."
+  ]
+}

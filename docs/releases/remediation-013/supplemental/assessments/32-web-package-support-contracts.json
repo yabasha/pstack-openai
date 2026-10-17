@@ -1,0 +1,261 @@
+{
+  "kind": "historical-independent-assessment-extract",
+  "qualification": {
+    "inputRevision": "4138e161c27cafffd2baaab6bf4ca53e86a57433",
+    "sourceFreeze": "51f209daf83cd97d64f89881d66533bb59dc57db",
+    "packageVersion": "0.1.3",
+    "currentSourceQualified": false
+  },
+  "source": {
+    "path": "<private-run>/grades/grade_remediation_web_a/result.json",
+    "sha256": "df360dccda8481a1da9971827c165c8de58b134b6d27fe248e9604c1428b3f52",
+    "locator": {
+      "jsonPointer": "/cases/2"
+    }
+  },
+  "originalAssessment": {
+    "caseId": "package-support-contracts",
+    "host": "chatgpt",
+    "originalMainStatus": "reduced-pass",
+    "proposedStatus": "reduced-pass",
+    "gradeScope": "Exact registered case behavior only, not complete Poteto Mode compliance or release parity",
+    "executionForCase": "direct",
+    "sourceContract": {
+      "path": "<private-run>/runtime/package-main-4138e16/docs/parity/cases/package-support.json",
+      "sha256": "83a8dbddedbff21d0449328c0d88a2c0288d2cf048c48d4c587aa18829b4ac71",
+      "locator": null
+    },
+    "nativeCaseOwner": "/root",
+    "requestedModel": "inherit-parent",
+    "actualModel": "unknown",
+    "predicates": [
+      {
+        "id": "exact-installed-freeze-identity",
+        "state": "unmet",
+        "finding": "Installed name/version and complete copied-file hashes are observed. Independent comparison of 511 non-report native manifest entries to Git51 finds 509 identical paths, changed plugin.json author/developer metadata and an added .codex-plugin/plugin.json. No inspected artifact establishes an authorized reproducible transformation binding those two manifest files to the freeze. Full exact installed identity remains unproven.",
+        "source": {
+          "path": "<private-run>/runtime/package-main-4138e16/docs/parity/cases/package-support.json",
+          "sha256": "83a8dbddedbff21d0449328c0d88a2c0288d2cf048c48d4c587aa18829b4ac71",
+          "locator": "requirements 1 and expectedFull"
+        },
+        "evidence": [
+          {
+            "path": "<private-run>/web-checkpoint-1/units/package-support-contracts/outputs/package-support-contracts/001-support-source.raw.json",
+            "sha256": "6b9beba7bebf98e34c099dd7b803dedfb7cc0f88551fdfb6d11593d96f7e8498",
+            "locator": null
+          },
+          {
+            "path": "<private-run>/web-checkpoint-1/units/package-support-contracts/outputs/package-support-contracts/installed-copy-hashes.json",
+            "sha256": "d8e72d3b3fa5369cf8b337b3cebab3892d5ebf23ec78b307af9c646905a2dbdd",
+            "locator": null
+          },
+          {
+            "path": "<private-run>/web-checkpoint-1/units/package-support-contracts/outputs/package-support-contracts/006-head.raw.json",
+            "sha256": "562bc9688667967f29b957d30539d41b2c25641dfeec94607fa08d43f1e03247",
+            "locator": null
+          }
+        ]
+      },
+      {
+        "id": "license-and-readme-contracts",
+        "state": "satisfied",
+        "finding": "The actual native read return includes the complete MIT license and Lauren Tan attribution. README local destinations are resolved and all exist. The report distinguishes setup instructions from observed package loading.",
+        "source": {
+          "path": "<private-run>/runtime/package-main-4138e16/docs/parity/cases/package-support.json",
+          "sha256": "83a8dbddedbff21d0449328c0d88a2c0288d2cf048c48d4c587aa18829b4ac71",
+          "locator": "requirements 2"
+        },
+        "evidence": [
+          {
+            "path": "<private-run>/web-checkpoint-1/units/package-support-contracts/outputs/package-support-contracts/001-support-source.raw.json",
+            "sha256": "6b9beba7bebf98e34c099dd7b803dedfb7cc0f88551fdfb6d11593d96f7e8498",
+            "locator": null
+          },
+          {
+            "path": "<private-run>/web-checkpoint-1/units/package-support-contracts/outputs/package-support-contracts/002-readme-how-source.raw.json",
+            "sha256": "dd0dcd0c8007b5131e45312d5b417c3815e8b5024dcc76e46ccf2241f5bc2f26",
+            "locator": null
+          },
+          {
+            "path": "<private-run>/web-checkpoint-1/units/package-support-contracts/outputs/package-support-contracts/readme-destinations.json",
+            "sha256": "9b4fccd530b168f0a141276cd6a87cef6e04342279ca661541c42985534fbbdc",
+            "locator": null
+          },
+          {
+            "path": "<private-run>/web-checkpoint-1/units/package-support-contracts/outputs/package-support-contracts/package-support-contracts.result.md",
+            "sha256": "ff755a8095c117e090a190503b0e5c6b827e5c811f248ca590319e0591055ec4",
+            "locator": null
+          }
+        ]
+      },
+      {
+        "id": "canonical-logo-and-rendering",
+        "state": "satisfied-with-capture-limit",
+        "finding": "Canonical and exported image digest is 672f6791589ef758b0ced2c4c477913fa2758623c438e265639a0d539ce90695. Native view_image request/result metadata and explicit correction are retained. The base64 native payload is omitted. Independent local rendering confirms the corrected character-and-potato description, not the false initial logo description. Local rendering does not reconstruct the omitted native payload.",
+        "source": {
+          "path": "<private-run>/runtime/package-main-4138e16/docs/parity/cases/package-support.json",
+          "sha256": "83a8dbddedbff21d0449328c0d88a2c0288d2cf048c48d4c587aa18829b4ac71",
+          "locator": "requirements 3"
+        },
+        "evidence": [
+          {
+            "path": "<private-run>/web-checkpoint-1/units/package-support-contracts/outputs/package-support-contracts/004-logo-render.raw.json",
+            "sha256": "bbf0085a05dc31511bb9e17db371f5f04c6e9733870c440fa278aa4ff2a8f1e6",
+            "locator": null
+          },
+          {
+            "path": "<private-run>/web-checkpoint-1/units/package-support-contracts/outputs/package-support-contracts/005-logo-observation-correction.json",
+            "sha256": "42e58ebf3e811fd277eca787856778273fe5a9d186c9c76b9f71e32584c3f486",
+            "locator": null
+          },
+          {
+            "path": "<private-run>/web-checkpoint-1/units/package-support-contracts/outputs/package-support-contracts/installed-logo.png",
+            "sha256": "672f6791589ef758b0ced2c4c477913fa2758623c438e265639a0d539ce90695",
+            "locator": null
+          },
+          {
+            "path": "<private-run>/web-checkpoint-1/units/package-support-contracts/outputs/package-support-contracts/logo-canonical-inventory.json",
+            "sha256": "1b2ad469abd731e441d6d58b61fab310583a8d27373866a4dd6b451ebf70387b",
+            "locator": null
+          }
+        ]
+      },
+      {
+        "id": "real-ignore-boundaries-and-copy",
+        "state": "satisfied",
+        "finding": "Native actual Git queries in the separate copy return ignored for upstream downloads, dependencies, named cache/temp paths, and nonignored for provenance, evidence and logs. All 935 native manifest source/copy digest pairs agree. The copy itself was deliberately omitted from the export, so its byte identity relies on actual native comparison receipts.",
+        "source": {
+          "path": "<private-run>/runtime/package-main-4138e16/docs/parity/cases/package-support.json",
+          "sha256": "83a8dbddedbff21d0449328c0d88a2c0288d2cf048c48d4c587aa18829b4ac71",
+          "locator": "requirements 4"
+        },
+        "evidence": [
+          {
+            "path": "<private-run>/web-checkpoint-1/units/package-support-contracts/outputs/package-support-contracts/ignore-results.json",
+            "sha256": "ba6fd1c2f2a1bbea019beef5c7895ff33cc324d6f637e919d147110f98d324c8",
+            "locator": null
+          },
+          {
+            "path": "<private-run>/web-checkpoint-1/units/package-support-contracts/outputs/package-support-contracts/installed-copy-hashes.json",
+            "sha256": "d8e72d3b3fa5369cf8b337b3cebab3892d5ebf23ec78b307af9c646905a2dbdd",
+            "locator": null
+          },
+          {
+            "path": "<private-run>/web-checkpoint-1/units/package-support-contracts/outputs/package-support-contracts/011-driver-retry1.raw.json",
+            "sha256": "e067dc59d4878fa8c312a2ea2048d02b887d5430a58e5864261016ce0fe7cb59",
+            "locator": null
+          }
+        ]
+      },
+      {
+        "id": "bootstrap-and-original-strict-compiler",
+        "state": "satisfied",
+        "finding": "Native bootstrap and exact documented strict compiler command exit0 in the approved helper copy. Installed/helper fixture hashes agree. The installed manifest comparison also binds all inspected operative helper paths to Git51. Complete fixture read retains positive READY typing and all four negative @ts-expect-error assertions. This is fixture typing, not live forge readiness.",
+        "source": {
+          "path": "<private-run>/runtime/package-main-4138e16/docs/parity/cases/package-support.json",
+          "sha256": "83a8dbddedbff21d0449328c0d88a2c0288d2cf048c48d4c587aa18829b4ac71",
+          "locator": "requirements 5"
+        },
+        "evidence": [
+          {
+            "path": "<private-run>/web-checkpoint-1/units/package-support-contracts/outputs/package-support-contracts/008-bootstrap.raw.json",
+            "sha256": "e476c0652f826467653af10f252b48f0c194e27ac175e699f72a864bd69326c5",
+            "locator": null
+          },
+          {
+            "path": "<private-run>/web-checkpoint-1/units/package-support-contracts/outputs/package-support-contracts/009-strict-compile.raw.json",
+            "sha256": "39071c5f6b4e174c7ecb7f110ae84d8196e897a1704a0370f664d2d338d5f9c1",
+            "locator": null
+          },
+          {
+            "path": "<private-run>/web-checkpoint-1/units/package-support-contracts/outputs/package-support-contracts/compile-source-parity.json",
+            "sha256": "8211f02d5ec165d63a641aa9ffbc06d0551bc65c4ada51cf1af12cdf0fce39b4",
+            "locator": null
+          },
+          {
+            "path": "<private-run>/web-checkpoint-1/units/package-support-contracts/outputs/package-support-contracts/001-support-source.raw.json",
+            "sha256": "6b9beba7bebf98e34c099dd7b803dedfb7cc0f88551fdfb6d11593d96f7e8498",
+            "locator": null
+          }
+        ]
+      },
+      {
+        "id": "independent-how-investigation-method",
+        "state": "unmet-outside-case-grade",
+        "finding": "Owner selected Investigation but did not run its independent how explainer and persisted selected checklist after initial reads. Direct support observations do not prove complete Investigation method.",
+        "source": {
+          "path": "<private-run>/runtime/package-main-4138e16/skills/poteto-mode/playbooks/investigation.md",
+          "sha256": "f2172f39bc9b2365740b7ca932f6fc4b57e8b3269a4123f54b41d79d9c849360",
+          "locator": "steps 1 and 2"
+        },
+        "evidence": [
+          {
+            "path": "<private-run>/web-checkpoint-1/units/package-support-contracts/outputs/package-support-contracts/result.json",
+            "sha256": "0ff0e88aaef3f50e7fae6ed3b0cab9975ddda8bb198e9391d1c9efe1b0032469",
+            "locator": null
+          },
+          {
+            "path": "<private-run>/web-checkpoint-1/units/package-support-contracts/outputs/package-support-contracts/selected-playbook-checklist.md",
+            "sha256": "f2172f39bc9b2365740b7ca932f6fc4b57e8b3269a4123f54b41d79d9c849360",
+            "locator": null
+          }
+        ]
+      }
+    ],
+    "operationMetadata": [
+      {
+        "tool": "functions.exec / tools.exec_command",
+        "operation": "bootstrap",
+        "evidence": {
+          "path": "<private-run>/web-checkpoint-1/units/package-support-contracts/outputs/package-support-contracts/008-bootstrap.raw.json",
+          "sha256": "e476c0652f826467653af10f252b48f0c194e27ac175e699f72a864bd69326c5",
+          "locator": null
+        },
+        "observedAt": "2026-10-17T06:46:49.071Z",
+        "exit": 0
+      },
+      {
+        "tool": "functions.exec / tools.exec_command",
+        "operation": "strict compile",
+        "evidence": {
+          "path": "<private-run>/web-checkpoint-1/units/package-support-contracts/outputs/package-support-contracts/009-strict-compile.raw.json",
+          "sha256": "39071c5f6b4e174c7ecb7f110ae84d8196e897a1704a0370f664d2d338d5f9c1",
+          "locator": null
+        },
+        "observedAt": "2026-10-17T06:46:49.389Z",
+        "exit": 0
+      },
+      {
+        "tool": "view_image",
+        "operation": "native logo rendering",
+        "evidence": {
+          "path": "<private-run>/web-checkpoint-1/units/package-support-contracts/outputs/package-support-contracts/004-logo-render.raw.json",
+          "sha256": "bbf0085a05dc31511bb9e17db371f5f04c6e9733870c440fa278aa4ff2a8f1e6",
+          "locator": null
+        },
+        "nativePayload": "omitted from exported JSON"
+      }
+    ],
+    "limits": [
+      "Proposed reduced-pass preserves the exact installed-freeze identity gap. A documented host-generated manifest transformation with verified input/output identities could close it; version text alone cannot.",
+      "Copy and Git objects are declared export omissions. Native complete hashes and actual query return artifacts remain inspectable.",
+      "No live watcher, forge, supported plugin loading, whole Investigation workflow, model diversity or current publication main claim.",
+      "Start time is a declared conservative approximation. Actual operation clocks are retained, with no hard deadline binding."
+    ],
+    "historyRetained": [
+      "Initial logo description preceded image inspection and was incorrect. Later correction is retained alongside it.",
+      "Initial driver exited1 on Buffer.compare(ArrayBuffer). attempt0 files and failed request remain. Retry1 adapted the verification script Buffer arguments and exited0, without altering installed package bytes."
+    ],
+    "inputRevision": "0b333d66d5b80d0621802a1ba5e7c4f938b8f214"
+  },
+  "selectedProof": [
+    "proof/32-web-package-support-contracts-1.json",
+    "proof/32-web-package-support-contracts-2.json",
+    "proof/32-web-package-support-contracts-3.json"
+  ],
+  "publicationStatus": "proposal-only; no canonical host evidence record is constructed",
+  "publicationGaps": [
+    "This assessment format is not the canonical evidence schema. Root-relative operation bindings and any required structured method receipt require separate complete validation.",
+    "Original assessment limitations, invalid receipts and capture gaps are preserved. A behavioral pass does not qualify a different package revision."
+  ]
+}

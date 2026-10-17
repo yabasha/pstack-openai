@@ -1,0 +1,61 @@
+{
+  "kind": "selected-fixture-result-fields",
+  "caseId": "boundary-design",
+  "attemptId": "review-b-10",
+  "originalLocator": "work/local_compiler_cases/projects/pricing-compatibility-corrected/deliverables/evidence/verification-receipt.json",
+  "sourceSha256": "1eefbc593dadcdee040393aa456f0e0d4d4ebbfb4fe65f4c2b2194fdec4ff78e",
+  "sourceBytes": 2538,
+  "transformation": "Named JSON fields selected by exact JSON Pointer. Task-owned absolute paths replaced with declared placeholders. Other fields omitted. These are result-artifact values, not synthesized tool execution evidence. Public selection is limited to eight short inspected fields. Longer output and unselected fields remain private.",
+  "fields": [
+    {
+      "pointer": "/checks/0/name",
+      "value": "green-literal"
+    },
+    {
+      "pointer": "/checks/0/command",
+      "value": [
+        "bun",
+        "--no-install",
+        "test",
+        "deliverables/runtime/literal-overflow.test.mjs"
+      ]
+    },
+    {
+      "pointer": "/checks/0/status",
+      "value": 0
+    },
+    {
+      "pointer": "/checks/1/name",
+      "value": "green-runtime"
+    },
+    {
+      "pointer": "/checks/1/command",
+      "value": [
+        "bun",
+        "--no-install",
+        "test",
+        "deliverables/working"
+      ]
+    },
+    {
+      "pointer": "/checks/1/status",
+      "value": 0
+    },
+    {
+      "pointer": "/checks/2/name",
+      "value": "green-compiler"
+    },
+    {
+      "pointer": "/checks/2/command",
+      "value": [
+        "bun",
+        "--no-install",
+        "<starting-main-package>/skills/poteto-mode/scripts/node_modules/typescript/bin/tsc",
+        "--project",
+        "deliverables/working/tsconfig.json",
+        "--noEmit",
+        "--strict"
+      ]
+    }
+  ]
+}

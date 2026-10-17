@@ -1,0 +1,16 @@
+{
+  "kind": "task-result-file-excerpt",
+  "caseId": "existing-personal-mode",
+  "attemptId": "review-b-05",
+  "inputRevision": "7d7330bf7fe5a32cc5ef2a120a492217fa2ff4e1",
+  "originalLocator": "remaining-local/cases/existing-personal-mode/outputs/existing-personal-mode.result.md",
+  "sourceSha256": "d8f4037811dc8d5aeab30ab5bbb7038ffac16b058a6ea94a27005a3e3b8aa071",
+  "sourceWasDirectlyListedByIndependentGrade": true,
+  "characterRange": {
+    "start": 0,
+    "endExclusive": 782,
+    "total": 9812
+  },
+  "content": "# Existing personal mode attempt\n\nThe jay-mode update is blocked before drafting. The supplied history states that baseline acceptance was not supplied. The current contract lists both required hosts as not-run. The complete baseline inventory needs reviewed dispositions, with observed supported behavior or an explicit block for each host. Authorization alone does not meet that prerequisite.\n\nI read the existing synthetic mode and its declared fixture-event-02 boundary. Its Bun, draft-review, concurrent-change and external-action preferences remain unchanged. The supplied digest is synthetic, scoped to additional/cache only, and has no actual transcript UUIDs or historical git commits. I did not mine unrelated history or elevate fixture events into real user preferences.\n",
+  "transformation": "An inspected prefix of the actual task-result file is projected. Task-owned absolute paths use declared placeholders. The prefix may omit later qualifications. The independent assessment and its limits govern the proposed grade. This is neither a new grade nor a native callable-operation claim."
+}

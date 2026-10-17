@@ -1,0 +1,42 @@
+{
+  "kind": "historical-independent-assessment-extract",
+  "qualification": {
+    "inputRevision": "4138e161c27cafffd2baaab6bf4ca53e86a57433",
+    "sourceFreeze": "51f209daf83cd97d64f89881d66533bb59dc57db",
+    "packageVersion": "0.1.3",
+    "currentSourceQualified": false
+  },
+  "source": {
+    "path": "<private-run>/grades/grade_remediation_local_e/result.json",
+    "sha256": "eb72e37bdf092ce8de310380a4483bdd54b15a64257160dab117ccde7a987c57",
+    "locator": {
+      "jsonPointer": "/cases/4"
+    }
+  },
+  "originalAssessment": {
+    "caseId": "swarm-walkthrough",
+    "proposedStatus": "reduced-pass",
+    "inputRevision": "c73ca04e9faddbc2f88c796576c3c8dc30c70a22",
+    "reason": "The fresh batch has three actual fork-none workers, complete inspected reports for the declared three files, integer chronology and a consolidated reproduced CSV defect. All three supplied receipt assignments have string resultMethod unequal to assignment.method, so the full required structured partition method is not accepted.",
+    "evidence": [
+      "<private-run>/remaining-local/cases/swarm-walkthrough/outputs/batch-2/method-receipt.json",
+      "<private-run>/remaining-local/cases/swarm-walkthrough/outputs/batch-2/aggregate.md",
+      "<private-run>/remaining-local/cases/swarm-walkthrough/outputs/batch-2/slice-2/result.json",
+      "<private-run>/grades/grade_remediation_local_e/checks.json"
+    ],
+    "limits": [
+      "First staggered trial chronology remains rejected and separate. No retrospective metadata repair.",
+      "No unrelated race or cancellation requirement was imposed on this partition-only walkthrough.",
+      "Source route does not establish installed discovery."
+    ]
+  },
+  "selectedProof": [
+    "proof/17-local-swarm-walkthrough-1.json",
+    "proof/17-local-swarm-walkthrough-2.json"
+  ],
+  "publicationStatus": "proposal-only; no canonical host evidence record is constructed",
+  "publicationGaps": [
+    "This assessment format is not the canonical evidence schema. Root-relative operation bindings and any required structured method receipt require separate complete validation.",
+    "Original assessment limitations, invalid receipts and capture gaps are preserved. A behavioral pass does not qualify a different package revision."
+  ]
+}

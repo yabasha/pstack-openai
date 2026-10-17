@@ -1,0 +1,36 @@
+{
+  "kind": "historical-proof-selection",
+  "source": {
+    "path": "<private-run>/web-checkpoint-1/units/supported-authoring/outputs/supported-authoring/validation.raw.json",
+    "sha256": "da60adcfa163a0a411dbdb82872e392781f80fc645ec0362417a29625f2e6dd0",
+    "bytes": 9262
+  },
+  "selection": [
+    {
+      "locator": {
+        "jsonPointer": "/r/exit_code"
+      },
+      "value": 0
+    },
+    {
+      "locator": {
+        "jsonPointer": "/r/chunk_id"
+      },
+      "value": "0f974f"
+    },
+    {
+      "locator": {
+        "jsonPointer": "/r/output",
+        "stringCodeUnits": [
+          0,
+          1400
+        ]
+      },
+      "value": "{\n  \"validator\": [\n    {\n      \"name\": \"authored\",\n      \"request\": [\n        \"/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3\",\n        \"-B\",\n        \"/root/.codex/skills/.system/skill-creator/scripts/quick_validate.py\",\n        \"/mnt/data/pstack-remediation-20261017/attempts-18/outputs/supported-authoring/outputs/skill/build-checkpoint\"\n      ],\n      \"start\": \"2026-10-17T06:40:21.260Z\",\n      \"end\": \"2026-10-17T06:40:21.321Z\",\n      \"exitCode\": 0,\n      \"stdout\": \"Skill is valid!\\n\",\n      \"stderr\": \"\",\n      \"expected\": 0,\n      \"matched\": true\n    },\n    {\n      \"name\": \"missing-name\",\n      \"request\": [\n        \"/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3\",\n        \"-B\",\n        \"/root/.codex/skills/.system/skill-creator/scripts/quick_validate.py\",\n        \"/mnt/data/pstack-remediation-20261017/attempts-18/outputs/supported-authoring/fixtures/missing-name\"\n      ],\n      \"start\": \"2026-10-17T06:40:21.322Z\",\n      \"end\": \"2026-10-17T06:40:21.399Z\",\n      \"exitCode\": 1,\n      \"stdout\": \"Missing 'name' in frontmatter\\n\",\n      \"stderr\": \"\",\n      \"expected\": 1,\n      \"matched\": true\n    },\n    {\n      \"name\": \"invalid-name\",\n      \"request\": [\n        \"/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3\",\n        \"-B\",\n        \"/root/.codex/skills/.system/skill-creator/scripts/quick_validate.py\",\n "
+    }
+  ],
+  "limits": [
+    "Selections preserve the exact source value at each locator. Truncated strings carry explicit code-unit bounds.",
+    "A producer-captured return is not a recovered native parent envelope. Missing call IDs, original capture defects and unknown model observations remain missing."
+  ]
+}

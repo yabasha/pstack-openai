@@ -1,0 +1,16 @@
+{
+  "kind": "task-result-file-excerpt",
+  "caseId": "trace-provenance",
+  "attemptId": "review-c-05",
+  "inputRevision": "e7380379bf90fb5a31131ef56640fde3fd2f4016",
+  "originalLocator": "remaining-local/cases/trace-provenance/outputs/trace-provenance.result.md",
+  "sourceSha256": "355312771f87647749a2f03f9fd01d93938c4079742f8c824d05368debd5e159",
+  "sourceWasDirectlyListedByIndependentGrade": true,
+  "characterRange": {
+    "start": 0,
+    "endExclusive": 543,
+    "total": 5138
+  },
+  "content": "# Trace provenance attempt\n\nThe diagnosis is blocked. No inert CPU profile, compressed JSON trace, heap snapshot, or spindump was supplied in the case repository. No source-linked diagnosis or paired-capture confirmation is possible.\n\nThe case owner independently observed HEAD `e7380379bf90fb5a31131ef56640fde3fd2f4016` before work. The attempted original revision `58d7f1d7b5659a283cce0daf0661a4b2abc53a67` is absent. `git cat-file -t` exited 128. No alternate original fixture root was supplied. The local source fixtures remain unchanged.\n",
+  "transformation": "An inspected prefix of the actual task-result file is projected. Task-owned absolute paths use declared placeholders. The prefix may omit later qualifications. The independent assessment and its limits govern the proposed grade. This is neither a new grade nor a native callable-operation claim."
+}

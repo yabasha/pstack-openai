@@ -1,0 +1,37 @@
+[
+  {
+    "name": "static",
+    "command": [
+      "bun",
+      "--no-install",
+      "<starting-main-package>/skills/poteto-mode/scripts/node_modules/typescript/bin/tsc",
+      "--project",
+      "deliverables/working/tsconfig.json",
+      "--noEmit",
+      "--strict"
+    ],
+    "exitCode": 0,
+    "outputPath": "deliverables/final-static.log"
+  },
+  {
+    "name": "runtime",
+    "command": [
+      "bun",
+      "--no-install",
+      "test",
+      "./deliverables/working/contract.test.mjs"
+    ],
+    "exitCode": 0,
+    "outputPath": "deliverables/final-runtime.log"
+  },
+  {
+    "name": "equivalence",
+    "command": [
+      "bun",
+      "--no-install",
+      "deliverables/verify.mjs"
+    ],
+    "exitCode": 0,
+    "outputPath": "deliverables/final-equivalence.log"
+  }
+]

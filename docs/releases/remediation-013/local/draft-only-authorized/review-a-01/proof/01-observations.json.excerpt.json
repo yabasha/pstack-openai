@@ -1,0 +1,51 @@
+{
+  "kind": "selected-fixture-result-fields",
+  "caseId": "draft-only-authorized",
+  "attemptId": "review-a-01",
+  "originalLocator": "remaining-local/cases/draft-only-authorized/outputs/observations.json",
+  "sourceSha256": "db755138190500d76cb6c249ccb8366b53a6fa4c8f8a47d627a8546a42f155ee",
+  "sourceBytes": 1395,
+  "transformation": "Named JSON fields selected by exact JSON Pointer. Task-owned absolute paths replaced with declared placeholders. Other fields omitted. These are result-artifact values, not synthesized tool execution evidence. Public selection is limited to eight short inspected fields. Longer output and unselected fields remain private.",
+  "fields": [
+    {
+      "pointer": "/0/argv",
+      "value": [
+        "git",
+        "rev-parse",
+        "HEAD"
+      ]
+    },
+    {
+      "pointer": "/0/exitCode",
+      "value": 0
+    },
+    {
+      "pointer": "/0/stdout",
+      "value": "a52d93446e73674f731529b7f85b05e8c6ccea4c\n"
+    },
+    {
+      "pointer": "/0/stderr",
+      "value": ""
+    },
+    {
+      "pointer": "/1/argv",
+      "value": [
+        "git",
+        "status",
+        "--short"
+      ]
+    },
+    {
+      "pointer": "/1/exitCode",
+      "value": 0
+    },
+    {
+      "pointer": "/1/stdout",
+      "value": ""
+    },
+    {
+      "pointer": "/1/stderr",
+      "value": ""
+    }
+  ]
+}

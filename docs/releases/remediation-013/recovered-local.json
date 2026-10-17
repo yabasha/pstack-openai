@@ -1,0 +1,1752 @@
+{
+  "kind": "independent-historical-recovered-local-assessments",
+  "startingMain": "4138e161c27cafffd2baaab6bf4ca53e86a57433",
+  "packageCommit": "51f209daf83cd97d64f89881d66533bb59dc57db",
+  "qualifiesChangedSource": false,
+  "canonicalEvidenceAccepted": false,
+  "counts": {
+    "pass": 1,
+    "reduced-pass": 4,
+    "blocked": 1
+  },
+  "inputs": [
+    {
+      "sourceLocator": "grades/grade_local_recovered/result.json",
+      "sourceSha256": "3b1d66dd9b9c225f551d08347ccbed4a161b1453af07d6a65ddfcfc47bcec45e",
+      "selection": [
+        ""
+      ],
+      "transformation": "Selected owned independent review fields and exact functional check output; replace declared Local path prefixes only. No native private capture copied.",
+      "value": {
+        "assignmentId": "grade-local-recovered",
+        "owner": "/root/grade_local_recovered",
+        "inputRevision": "4138e161c27cafffd2baaab6bf4ca53e86a57433",
+        "sourceFreeze": "51f209daf83cd97d64f89881d66533bb59dc57db",
+        "host": "codex",
+        "method": {
+          "sampleCount": 6,
+          "sampleDefinition": "Six Local outcomes with completed and explicitly interrupted native attempts preserved separately",
+          "order": "Read exact frozen case contracts, inspect source/operations/outputs and terminal limits, independently check actual proof, propose precise grades with no after-the-fact method repair"
+        },
+        "resultMethod": {
+          "sampleCount": 6,
+          "sampleDefinition": "Six Local outcomes with completed and explicitly interrupted native attempts preserved separately",
+          "order": "Read exact frozen case contracts, inspect source/operations/outputs and terminal limits, independently check actual proof, propose precise grades with no after-the-fact method repair"
+        },
+        "requestedModel": "inherit-parent",
+        "actualModel": "unknown",
+        "cases": [
+          {
+            "caseId": "uncertain-result",
+            "proposedStatus": "reduced-pass",
+            "reason": "The current local migration predicate is independently verified. Framing, quantified scope, five phases, baseline, ordered experiment checks, durable decision rows and concrete INCONCLUSIVE deployment/measurement limits are retained. The full audit-trail method is incomplete.",
+            "evidence": [
+              "<private-run>/remaining-local/cases/uncertain-result/outputs/playbook.md",
+              "<private-run>/remaining-local/cases/uncertain-result/outputs/decisions.tsv",
+              "<private-run>/remaining-local/cases/uncertain-result/outputs/independent-investigator/result.md",
+              "<private-run>/remaining-local/cases/uncertain-result/outputs/independent-verifier/result.md",
+              "<private-run>/remaining-local/cases/uncertain-result/outputs/parent-review.json",
+              "<private-run>/grades/grade_local_recovered/ownchecks.json"
+            ],
+            "limits": [
+              "Full transcript audit and different-model-family trail review are unverified. Observed captured reviewers use the same model, so reviewer count is not diversity.",
+              "Initial no-comments-before-review ordering was missed. A later separately observed comment pass does not repair chronology.",
+              "Some baseline/unit receipts lack contemporaneous source digests. Current hashes and replay establish current local behavior only.",
+              "Original historical Git object remains unavailable. Deployment and initial measurement remain INCONCLUSIVE, as required, rather than failed local migration predicates.",
+              "The containing original batch exited 1. Individual completed artifacts remain inspected partial-batch evidence, not a successful batch claim."
+            ]
+          },
+          {
+            "caseId": "benny-missing-coordinates",
+            "proposedStatus": "pass",
+            "reason": "The exact negative leaf is satisfied. Missing immutable source channel and root timestamp block triage/reproduction before any post, tracker write or UI work. The native worker declared this gate before its substantive case read.",
+            "evidence": [
+              "<private-run>/remaining-local/cases/benny-missing-coordinates/outputs/benny-missing-coordinates.result.md",
+              "<private-run>/remaining-local/cases/benny-missing-coordinates/outputs/observations.json",
+              "<private-run>/remaining-local/cases/benny-missing-coordinates/outputs/parent-review.json",
+              "<private-run>/native-captures-linked/remaining-07/index.json"
+            ],
+            "limits": [
+              "This is a fail-closed missing-input pass, not live connector, app, trigger, tracker or UI readiness.",
+              "Original historical object is absent. Prepared current HEAD matches the assignment.",
+              "Checklist headings were copied after preflight. That process deviation remains visible; it did not result in a dependent live action.",
+              "No strict Arena or Swarm method is required by this leaf. Original completion has no resultMethod object; no field was fabricated.",
+              "Containing batch was interrupted. No aggregate exit-0 claim is made."
+            ]
+          },
+          {
+            "caseId": "scoped-history",
+            "proposedStatus": "reduced-pass",
+            "reason": "The source-scoped brief correctly separates synthetic narratives, independently observed local Git/files, unavailable sources and unresolved historical/PR states. The actual first substantive response states topic, exact workspace and time range before its case tools. Real multi-chat history and live target state are missing.",
+            "evidence": [
+              "<private-run>/remaining-local/cases/scoped-history/outputs/scoped-history.result.md",
+              "<private-run>/remaining-local/cases/scoped-history/outputs/local-observations.json",
+              "<private-run>/remaining-local/cases/scoped-history/outputs/parent-review.json",
+              "<private-run>/remaining-local/cases/scoped-history/outputs/independent-investigator/result.md",
+              "<private-run>/remaining-local/cases/scoped-history/outputs/independent-synthesis/result.md",
+              "<private-run>/native-captures-linked/remaining-07/index.json"
+            ],
+            "limits": [
+              "No complete capsule, actual chat UUIDs/modification timestamps/full transcripts, current PR observation or live ticket source was supplied. Missing history and current-state conclusions remain blocked.",
+              "Three synthetic chat summaries cannot prove real time-partitioned parallel mining. No unsupported permitted completion tag is assigned.",
+              "The first incorrectly routed source-control worker is preserved as failed; later corrected worker is a separate assignment.",
+              "Parent modified an unsupported BLOCKED tag phrase with original producer response retained. This is not retrospective method repair.",
+              "Original completion has no resultMethod object. No canonical Arena/Swarm receipt is claimed."
+            ]
+          },
+          {
+            "caseId": "verifiable-feature",
+            "proposedStatus": "reduced-pass",
+            "reason": "The fresh interrupted attempt has useful implementation and literal CSV evidence. Independent replay passes three tests and six literal assertions for filtered visible rows, displayed column order, quoting and empty-result value. Design and code actors actually ran, but the complete feature method and matching browser outcome are unverified.",
+            "evidence": [
+              "<private-run>/recovery/local/projects/verifiable-feature/outputs/implementation/orders-view.mjs",
+              "<private-run>/recovery/local/projects/verifiable-feature/outputs/implementation/orders-view.test.mjs",
+              "<private-run>/recovery/local/projects/verifiable-feature/outputs/checkpoint.md",
+              "<private-run>/recovery/local/projects/verifiable-feature/outputs/limits.md",
+              "<private-run>/recovery/local/projects/verifiable-feature/outputs/arena-order.json",
+              "<private-run>/recovery/local/actors/verifiable-feature/exit.json",
+              "<private-run>/grades/grade_local_recovered/ownchecks.json"
+            ],
+            "limits": [
+              "Fresh native process exited 1 after its remaining budget. No final complete actor result or complete delivery claim exists.",
+              "Server launch failed EADDRINUSE. Subsequent browser clicks and empty-state text were observed on port 4187, but endpoint process/source ownership was not verified. Those observations cannot qualify this implementation UI. A later lack of listener cannot repair that binding.",
+              "Candidate immutable assignments were written after spawn. Judge started before all required terminal chronology was established. Full Arena receipt is unsatisfied.",
+              "Independent how grounding, second contested-design reviewer, no-comments and complete review separation remain incomplete.",
+              "Candidate B and captured judge return real resultMethod objects, but this does not supply missing prospective assignment/chronology evidence. No post-hoc normalization is performed.",
+              "No push or PR was authorized for the case."
+            ]
+          },
+          {
+            "caseId": "throwaway-probe",
+            "proposedStatus": "reduced-pass",
+            "reason": "The actual bounded behavioral probe selects ASCII whole-word matching from retained outputs for all five exact strings. Independent replay reproduces true,true,true,false,false for whole-word and five true values for substring. Three labelled layout sketches share a switcher, but visual verification is blocked.",
+            "evidence": [
+              "<private-run>/recovery/local/projects/throwaway-probe/outputs/throwaway-probe.result.md",
+              "<private-run>/recovery/local/projects/throwaway-probe/outputs/behavior-observed.json",
+              "<private-run>/recovery/local/projects/throwaway-probe/outputs/control-receipt.json",
+              "<private-run>/recovery/local/projects/throwaway-probe/outputs/variants.json",
+              "<private-run>/recovery/local/projects/throwaway-probe/outputs/completion.json",
+              "<private-run>/grades/grade_local_recovered/ownchecks.json",
+              "<private-run>/grades/grade_local_recovered/hashchecks.json"
+            ],
+            "limits": [
+              "Browser creation failed and observed browser inventory was empty. No screenshots or driven variant interactions were retained.",
+              "Open-direction moodboard proposals are unsupported by searched references and user selection remains unresolved. No direction selection was invented.",
+              "Execution-denied, writes-denied and controls-withheld variants remain separate policy restrictions. Main probe success does not override those variants.",
+              "Fresh assignment/result method objects, revision and canonical owner match exactly. Original historical Git object remains unavailable.",
+              "This is a throwaway behavioral decision, not production-ready code or visual-parity proof."
+            ]
+          },
+          {
+            "caseId": "benny-duplicate-report",
+            "proposedStatus": "blocked",
+            "reason": "A safe no-write stop was actually performed, but the positive duplicate-detection predicate cannot be verified. No actual linked source permalink, tracker issue, prior verdict content or configured immutable source coordinates was supplied to read.",
+            "evidence": [
+              "<private-run>/recovery/local/projects/benny-duplicate-report/outputs/benny-duplicate-report.result.md",
+              "<private-run>/recovery/local/projects/benny-duplicate-report/outputs/actions.json",
+              "<private-run>/recovery/local/projects/benny-duplicate-report/outputs/supplied-case.json",
+              "<private-run>/recovery/local/projects/benny-duplicate-report/outputs/completion.json",
+              "<private-run>/grades/grade_local_recovered/hashchecks.json"
+            ],
+            "limits": [
+              "The generic case premise is not an inspected existing issue or prior verdict. Zero writes by this attempt do not establish remote dedupe totals.",
+              "Live preflight, confident recurrence update and reproduction remain blocked by missing scoped configuration/evidence and action authorization. No unrelated history was queried.",
+              "Fresh assignment/result method objects, revision and canonical owner match exactly. No metadata repair was needed.",
+              "Actual exposed operations were distinguished from case readiness. Worker isolation from external posting tools was not established, so local explanation stayed sequential."
+            ]
+          }
+        ],
+        "checks": {
+          "functionalReplays": 4,
+          "functionalExitFailures": 0,
+          "sourceInputHashChecks": 154,
+          "sourceInputHashMismatches": 0,
+          "nativeCaptureHashChecks": 30,
+          "nativeCaptureHashMismatches": 0,
+          "fixtureHeadChecks": 6,
+          "fixtureHeadMismatches": 0
+        },
+        "limits": [
+          "Historical source 4138 / freeze 51 only. No result qualifies current cf96 source or version 0.2.2.",
+          "No raw or sanitized native dump is publication approved. Any public projection needs narrow selection and privacy review.",
+          "Initial reviewer checklist was recorded after initial reads. Own script first used a wrong relative base for six input paths; the initial failure record is preserved and corrected local path checks match.",
+          "No producer, assignment, original result or source file was modified by this reviewer."
+        ]
+      }
+    },
+    {
+      "sourceLocator": "grades/grade_local_recovered/ownchecks.json",
+      "sourceSha256": "2508877ae5de24790ecd3be343f2ebd0e17eec85b8735294bcb85a36009b84ae",
+      "selection": [
+        "/checks",
+        "/captureHashChecks",
+        "/privacy"
+      ],
+      "transformation": "Selected owned independent review fields and exact functional check output; replace declared Local path prefixes only. No native private capture copied.",
+      "value": {
+        "checks": [
+          {
+            "label": "feature-literal",
+            "args": [
+              "bun",
+              "--no-install",
+              "test",
+              "<private-run>/recovery/local/projects/verifiable-feature/outputs/implementation/orders-view.test.mjs"
+            ],
+            "cwd": "<private-run>/grades/grade_local_recovered",
+            "exitCode": 0,
+            "stdout": "bun test v1.4.2 (50a8a8387)\n",
+            "stderr": "\n../../recovery/local/projects/verifiable-feature/outputs/implementation/orders-view.test.mjs:\n(pass) current open view and always quoted CSV agree [0.34ms]\n(pass) hidden IDs and reordered columns select once [0.04ms]\n(pass) empty filters return feedback and multiline cells retain content [0.02ms]\n\n 3 pass\n 0 fail\n 6 expect() calls\nRan 3 tests across 1 file. [5.00ms]\n"
+          },
+          {
+            "label": "prototype-observation",
+            "args": [
+              "bun",
+              "--no-install",
+              "<private-run>/recovery/local/projects/throwaway-probe/outputs/throwaway/probe.mjs"
+            ],
+            "cwd": "<private-run>/grades/grade_local_recovered",
+            "exitCode": 0,
+            "stdout": "{\n  \"label\": \"throwaway fixture behavior observation\",\n  \"observations\": [\n    {\n      \"text\": \"cat\",\n      \"expected\": true,\n      \"substring\": true,\n      \"wholeWord\": true\n    },\n    {\n      \"text\": \"Cat nap\",\n      \"expected\": true,\n      \"substring\": true,\n      \"wholeWord\": true\n    },\n    {\n      \"text\": \"the cat sleeps\",\n      \"expected\": true,\n      \"substring\": true,\n      \"wholeWord\": true\n    },\n    {\n      \"text\": \"concatenate\",\n      \"expected\": false,\n      \"substring\": true,\n      \"wholeWord\": false\n    },\n    {\n      \"text\": \"bobcat\",\n      \"expected\": false,\n      \"substring\": true,\n      \"wholeWord\": false\n    }\n  ]\n}\n",
+            "stderr": ""
+          },
+          {
+            "label": "migration-runtime",
+            "args": [
+              "bun",
+              "--no-install",
+              "test",
+              "contract.test.mjs"
+            ],
+            "cwd": "<private-run>/remaining-local/cases/uncertain-result/outputs/local-migration",
+            "exitCode": 0,
+            "stdout": "bun test v1.4.2 (50a8a8387)\n",
+            "stderr": "\ncontract.test.mjs:\n(pass) stable HTTP success and error contract [0.19ms]\n(pass) private batch and consumer contracts [0.10ms]\n\n 2 pass\n 0 fail\n 9 expect() calls\nRan 2 tests across 1 file. [6.00ms]\n"
+          },
+          {
+            "label": "migration-strict",
+            "args": [
+              "bun",
+              "--no-install",
+              "<private-run>/runtime/package-main-4138e16/skills/poteto-mode/scripts/node_modules/typescript/bin/tsc",
+              "-p",
+              "tsconfig.json"
+            ],
+            "cwd": "<private-run>/remaining-local/cases/uncertain-result/outputs/local-migration",
+            "exitCode": 0,
+            "stdout": "",
+            "stderr": ""
+          }
+        ],
+        "captureHashChecks": [
+          {
+            "path": "<private-run>/native-captures-linked/remaining-07/01a148d8-5cc0-7f12-ba55-4a22e8ec2d47.jsonl",
+            "sha256": "37a45aeb131ef6a987d30a5d8d1b2925890abaf611a7ac06465201ba4d1cf9a7",
+            "expectedSha256": "37a45aeb131ef6a987d30a5d8d1b2925890abaf611a7ac06465201ba4d1cf9a7",
+            "hashMatch": true
+          },
+          {
+            "path": "<private-run>/native-captures-linked/remaining-07/01a148d8-d1e4-7b51-949c-5c1a8998fc75.jsonl",
+            "sha256": "d22ae1cc4a066b37b9cfc5d5aca4f92896e81a86ecf79c5fd0bdcb1f03dbdd32",
+            "expectedSha256": "d22ae1cc4a066b37b9cfc5d5aca4f92896e81a86ecf79c5fd0bdcb1f03dbdd32",
+            "hashMatch": true
+          },
+          {
+            "path": "<private-run>/native-captures-linked/remaining-07/01a148d8-dfb3-7681-956b-40f1bc78eb71.jsonl",
+            "sha256": "36357fcba8945251caf91ab9388ebef80949b33da2c14c3c3a0f04e0f5c2b0ef",
+            "expectedSha256": "36357fcba8945251caf91ab9388ebef80949b33da2c14c3c3a0f04e0f5c2b0ef",
+            "hashMatch": true
+          },
+          {
+            "path": "<private-run>/native-captures-linked/remaining-07/01a148d8-e8c2-7c73-a368-c44886fc9c04.jsonl",
+            "sha256": "9c55201026d50989f0c0bbf17ed0a0e60c4446c1dafa8d9c12efc48d4dbc66e1",
+            "expectedSha256": "9c55201026d50989f0c0bbf17ed0a0e60c4446c1dafa8d9c12efc48d4dbc66e1",
+            "hashMatch": true
+          },
+          {
+            "path": "<private-run>/native-captures-linked/remaining-07/01a148db-abf7-7dc2-b781-952c6540f1f9.jsonl",
+            "sha256": "3199ad894a4a7d3819a2055f201929d3fb0a87c31572b677eedd662a42f9e173",
+            "expectedSha256": "3199ad894a4a7d3819a2055f201929d3fb0a87c31572b677eedd662a42f9e173",
+            "hashMatch": true
+          },
+          {
+            "path": "<private-run>/native-captures-linked/remaining-07/01a148dc-0171-7c20-98d2-c570c6b2a3d9.jsonl",
+            "sha256": "49f0eceec036ce66c5297f04565189f41638016a90437e9e5b51dbb325fd82b5",
+            "expectedSha256": "49f0eceec036ce66c5297f04565189f41638016a90437e9e5b51dbb325fd82b5",
+            "hashMatch": true
+          },
+          {
+            "path": "<private-run>/native-captures-linked/remaining-07/01a148dc-ee3c-7e43-b2e4-28202e7cc823.jsonl",
+            "sha256": "d7154b67419fa7c157a006c77558778997d0ee9ba83d8b219b1ef658f4fd938b",
+            "expectedSha256": "d7154b67419fa7c157a006c77558778997d0ee9ba83d8b219b1ef658f4fd938b",
+            "hashMatch": true
+          },
+          {
+            "path": "<private-run>/native-captures-linked/remaining-07/01a148dd-7869-7d40-9156-2d05e1b61e11.jsonl",
+            "sha256": "17a6e631eaed0c423114c9d4ebbd3caed411bddd8cf5733d9e5e924b3b9f4962",
+            "expectedSha256": "17a6e631eaed0c423114c9d4ebbd3caed411bddd8cf5733d9e5e924b3b9f4962",
+            "hashMatch": true
+          },
+          {
+            "path": "<private-run>/native-captures-linked/remaining-07/01a148dd-842d-7821-b2bb-503eab4ea77f.jsonl",
+            "sha256": "1b26cb1d7012e6e5ac9430ba4f96f13bc98a74cf342615bb32fbb1e362f6932f",
+            "expectedSha256": "1b26cb1d7012e6e5ac9430ba4f96f13bc98a74cf342615bb32fbb1e362f6932f",
+            "hashMatch": true
+          },
+          {
+            "path": "<private-run>/native-captures-linked/remaining-07/01a148e8-0244-70f2-a694-9f3fde9b3dc1.jsonl",
+            "sha256": "c4e19acfb329f334680085b9a027e64255ea59b7b3f63d67e2115445d356ad66",
+            "expectedSha256": "c4e19acfb329f334680085b9a027e64255ea59b7b3f63d67e2115445d356ad66",
+            "hashMatch": true
+          },
+          {
+            "path": "<private-run>/native-captures-linked/remaining-07/01a148e9-8042-7572-af01-041c2513c7f1.jsonl",
+            "sha256": "652b8a70845dc37d883c290e2a2eeb6522d0b95cff90602fb547b3cc60542d7b",
+            "expectedSha256": "652b8a70845dc37d883c290e2a2eeb6522d0b95cff90602fb547b3cc60542d7b",
+            "hashMatch": true
+          },
+          {
+            "path": "<private-run>/native-captures-linked/remaining-07/01a148df-6d79-7aa2-b929-6ef3f015bb8d.jsonl",
+            "sha256": "403a3ed1518d6bc6bb898bb8389ed5462c043e0b8245032623523883d7bee6eb",
+            "expectedSha256": "403a3ed1518d6bc6bb898bb8389ed5462c043e0b8245032623523883d7bee6eb",
+            "hashMatch": true
+          },
+          {
+            "path": "<private-run>/native-captures-linked/remaining-07/01a148df-cba7-7980-a4f6-a1c91fd4c5c9.jsonl",
+            "sha256": "6569ff5c45b6666db3ef12830102a20b1c702b3e7313aa9d71b8b10ae98e0fb0",
+            "expectedSha256": "6569ff5c45b6666db3ef12830102a20b1c702b3e7313aa9d71b8b10ae98e0fb0",
+            "hashMatch": true
+          },
+          {
+            "path": "<private-run>/native-captures-linked/remaining-07/01a148df-f548-7a21-8b2b-5e37557e4aa6.jsonl",
+            "sha256": "fbeeea3e3310d4928df1f6b2a4f3fbba5db91ef27937312cfac901b1d951ecdb",
+            "expectedSha256": "fbeeea3e3310d4928df1f6b2a4f3fbba5db91ef27937312cfac901b1d951ecdb",
+            "hashMatch": true
+          },
+          {
+            "path": "<private-run>/native-captures-linked/remaining-07/01a148e3-95fc-7020-a45e-25df89c7a694.jsonl",
+            "sha256": "a9c294a681a6a27765f171c10edc130d11e8a5b26a6606923eeff0c26adc2651",
+            "expectedSha256": "a9c294a681a6a27765f171c10edc130d11e8a5b26a6606923eeff0c26adc2651",
+            "hashMatch": true
+          },
+          {
+            "path": "<private-run>/native-captures-linked/remaining-07/01a148e3-ec71-7e83-983e-8670e5b0d260.jsonl",
+            "sha256": "56a97ff80e5b783eb4cc11d228c57827ecc8585100e80fde9baf46419fe69c65",
+            "expectedSha256": "56a97ff80e5b783eb4cc11d228c57827ecc8585100e80fde9baf46419fe69c65",
+            "hashMatch": true
+          },
+          {
+            "path": "<private-run>/native-captures-linked/remaining-07/01a148e4-17f5-7f00-a3c6-5f67dc7c1adf.jsonl",
+            "sha256": "f9cbffcc6af3c91a9eed2c285167bbcf42f463ee4898a0336e29977967f35bc9",
+            "expectedSha256": "f9cbffcc6af3c91a9eed2c285167bbcf42f463ee4898a0336e29977967f35bc9",
+            "hashMatch": true
+          },
+          {
+            "path": "<private-run>/native-captures-linked/remaining-07/01a148e7-8ad7-7052-97b0-c645a3011de6.jsonl",
+            "sha256": "f4801126c85ae479aa5bf0ecc170eedfee0e63996ccaf86358f22ebd56b7cbe9",
+            "expectedSha256": "f4801126c85ae479aa5bf0ecc170eedfee0e63996ccaf86358f22ebd56b7cbe9",
+            "hashMatch": true
+          },
+          {
+            "path": "<private-run>/native-captures-linked/remaining-07/01a148e9-600f-79c1-8721-d1129d830509.jsonl",
+            "sha256": "c7fd8920782db79c027c47d26e896a1944a4b278790aa9787849b79853bbfcda",
+            "expectedSha256": "c7fd8920782db79c027c47d26e896a1944a4b278790aa9787849b79853bbfcda",
+            "hashMatch": true
+          },
+          {
+            "path": "<private-run>/native-captures-linked/remaining-07/01a148ea-e72b-75a1-9722-539f2b798cfb.jsonl",
+            "sha256": "f7b363f256e9ae0ed6dde9fe0a2eeb43b1493f1076c519abccc90e2c5f17ca14",
+            "expectedSha256": "f7b363f256e9ae0ed6dde9fe0a2eeb43b1493f1076c519abccc90e2c5f17ca14",
+            "hashMatch": true
+          },
+          {
+            "path": "<private-run>/native-captures-linked/remaining-07/01a148ec-c8fd-7601-8eec-a09fc3854e9e.jsonl",
+            "sha256": "32c89444c9284b16d39036b00170ae9941141e783e29d1e00a53b7e4d03a2524",
+            "expectedSha256": "32c89444c9284b16d39036b00170ae9941141e783e29d1e00a53b7e4d03a2524",
+            "hashMatch": true
+          },
+          {
+            "path": "<private-run>/native-captures-linked/remaining-07/01a148ec-d260-7a60-b796-c997b4f82f7a.jsonl",
+            "sha256": "3aee6e3536161ffef10ef7d5efc6dbe665816204f3a252014afc13d337ae26a4",
+            "expectedSha256": "3aee6e3536161ffef10ef7d5efc6dbe665816204f3a252014afc13d337ae26a4",
+            "hashMatch": true
+          },
+          {
+            "path": "<private-run>/native-captures-linked/verifiable-feature/01a14a7c-5084-7481-a0fb-c126679635ac.jsonl",
+            "sha256": "a8c8fc42faabf1808febf7265dcdff6d9f42d20219bea4aa2d0f66da8900e50f",
+            "expectedSha256": "a8c8fc42faabf1808febf7265dcdff6d9f42d20219bea4aa2d0f66da8900e50f",
+            "hashMatch": true
+          },
+          {
+            "path": "<private-run>/native-captures-linked/verifiable-feature/01a14a7d-b5f7-7f42-bdc8-7f98e0160ea3.jsonl",
+            "sha256": "1c9483cb92b88559b1d6b83437360e7d82ce50a524b2a020d38f3acd50f833ee",
+            "expectedSha256": "1c9483cb92b88559b1d6b83437360e7d82ce50a524b2a020d38f3acd50f833ee",
+            "hashMatch": true
+          },
+          {
+            "path": "<private-run>/native-captures-linked/verifiable-feature/01a14a7d-e016-70f1-bed9-cbe07bd079e8.jsonl",
+            "sha256": "de36a97c3a9ade901e871263a6539749896a64150d61c50ae81fa250248e4396",
+            "expectedSha256": "de36a97c3a9ade901e871263a6539749896a64150d61c50ae81fa250248e4396",
+            "hashMatch": true
+          },
+          {
+            "path": "<private-run>/native-captures-linked/verifiable-feature/01a14a7f-5e8b-77b2-b614-339c4861458d.jsonl",
+            "sha256": "7e449f0748f19e99e4a800ce994cdafb64ca2aa2224fb3b6a4e3d62435ee00b2",
+            "expectedSha256": "7e449f0748f19e99e4a800ce994cdafb64ca2aa2224fb3b6a4e3d62435ee00b2",
+            "hashMatch": true
+          },
+          {
+            "path": "<private-run>/native-captures-linked/verifiable-feature/01a14a7f-f000-7d91-a373-c842d4c9f9e6.jsonl",
+            "sha256": "c3ec9e429fc02e5908a8dbc4ceda0ab7fb789167904ddd4fea2b90bd96596b46",
+            "expectedSha256": "c3ec9e429fc02e5908a8dbc4ceda0ab7fb789167904ddd4fea2b90bd96596b46",
+            "hashMatch": true
+          },
+          {
+            "path": "<private-run>/native-captures-linked/verifiable-feature/01a14a80-e7c2-75e0-8410-fd930cbbbc75.jsonl",
+            "sha256": "d09c7c6d1b1f0a26982af068be9147a073a532da16303d211c26059aeb9994c6",
+            "expectedSha256": "d09c7c6d1b1f0a26982af068be9147a073a532da16303d211c26059aeb9994c6",
+            "hashMatch": true
+          },
+          {
+            "path": "<private-run>/native-captures-linked/throwaway-probe/01a14a7d-0af5-7a31-be75-3924b3477dc4.jsonl",
+            "sha256": "9c2f755838768ecd1a780aa5aabaa7c286828112fe38ab360305ce5b385f5aaf",
+            "expectedSha256": "9c2f755838768ecd1a780aa5aabaa7c286828112fe38ab360305ce5b385f5aaf",
+            "hashMatch": true
+          },
+          {
+            "path": "<private-run>/native-captures-linked/benny-duplicate-report/01a14a80-25e8-7d91-8ac7-9fa119c5fb1b.jsonl",
+            "sha256": "194616ee1f5f11d7c8171dc2cb51b2468571af9fbd266509187871107b01c3f5",
+            "expectedSha256": "194616ee1f5f11d7c8171dc2cb51b2468571af9fbd266509187871107b01c3f5",
+            "hashMatch": true
+          }
+        ],
+        "privacy": "Native excerpts remain private. No raw captures are publication approved."
+      }
+    },
+    {
+      "sourceLocator": "grades/grade_local_recovered/hashchecks.json",
+      "sourceSha256": "83d15386cd927ad45f1969f478e40520fb7b2501800e77e59caa870b3cf6ef81",
+      "selection": [
+        ""
+      ],
+      "transformation": "Selected owned independent review fields and exact functional check output; replace declared Local path prefixes only. No native private capture copied.",
+      "value": {
+        "checks": [
+          {
+            "caseId": "uncertain-result",
+            "manifest": "remaining-local/cases/uncertain-result/outputs/source-input-hashes.json",
+            "path": "<frozen-host-fixture>/runtime/plugins/cache/pstack-frozen-verification/pstack-openai/0.1.3/skills/poteto-mode/SKILL.md",
+            "expected": "cb03eedb91cea96b570af30a7af317c6aae6a47a321cff2e82af656141ab0f14",
+            "actual": "cb03eedb91cea96b570af30a7af317c6aae6a47a321cff2e82af656141ab0f14",
+            "match": true
+          },
+          {
+            "caseId": "uncertain-result",
+            "manifest": "remaining-local/cases/uncertain-result/outputs/source-input-hashes.json",
+            "path": "<frozen-host-fixture>/runtime/plugins/cache/pstack-frozen-verification/pstack-openai/0.1.3/references/agent-prompts/poteto-agent.md",
+            "expected": "9839239c6ebc72de8165f8a6fa4a6326fea7293e15a47d24f98396df2a61b3fb",
+            "actual": "9839239c6ebc72de8165f8a6fa4a6326fea7293e15a47d24f98396df2a61b3fb",
+            "match": true
+          },
+          {
+            "caseId": "uncertain-result",
+            "manifest": "remaining-local/cases/uncertain-result/outputs/source-input-hashes.json",
+            "path": "<frozen-host-fixture>/runtime/plugins/cache/pstack-frozen-verification/pstack-openai/0.1.3/references/host-capabilities.md",
+            "expected": "f0f09ce28b6feca4d72694d5687204dc074aa58dade9a0ab59656da3bfa1bd20",
+            "actual": "f0f09ce28b6feca4d72694d5687204dc074aa58dade9a0ab59656da3bfa1bd20",
+            "match": true
+          },
+          {
+            "caseId": "uncertain-result",
+            "manifest": "remaining-local/cases/uncertain-result/outputs/source-input-hashes.json",
+            "path": "<frozen-host-fixture>/runtime/plugins/cache/pstack-frozen-verification/pstack-openai/0.1.3/references/model-roles.md",
+            "expected": "c86696b6c568b7db80a7e339856986e64482ce6a418bb91946ce3a3b772f79a1",
+            "actual": "c86696b6c568b7db80a7e339856986e64482ce6a418bb91946ce3a3b772f79a1",
+            "match": true
+          },
+          {
+            "caseId": "uncertain-result",
+            "manifest": "remaining-local/cases/uncertain-result/outputs/source-input-hashes.json",
+            "path": "<frozen-host-fixture>/runtime/plugins/cache/pstack-frozen-verification/pstack-openai/0.1.3/references/orchestration-contract.md",
+            "expected": "5dd740ad66d992df252754d189d0dc207900023372392a0db4309b85eb5e4ec5",
+            "actual": "5dd740ad66d992df252754d189d0dc207900023372392a0db4309b85eb5e4ec5",
+            "match": true
+          },
+          {
+            "caseId": "uncertain-result",
+            "manifest": "remaining-local/cases/uncertain-result/outputs/source-input-hashes.json",
+            "path": "<frozen-host-fixture>/runtime/plugins/cache/pstack-frozen-verification/pstack-openai/0.1.3/references/workflow-ownership.md",
+            "expected": "50644b3a9a3dfd5651382eaca1d3a2728af0b3157d6d66b730930370a64bb03c",
+            "actual": "50644b3a9a3dfd5651382eaca1d3a2728af0b3157d6d66b730930370a64bb03c",
+            "match": true
+          },
+          {
+            "caseId": "uncertain-result",
+            "manifest": "remaining-local/cases/uncertain-result/outputs/source-input-hashes.json",
+            "path": "<frozen-host-fixture>/runtime/plugins/cache/pstack-frozen-verification/pstack-openai/0.1.3/skills/figure-it-out/SKILL.md",
+            "expected": "d139b438205b09e5ffa5e0af12ef61485965eab4e6322a5a23b97b98e220e33a",
+            "actual": "d139b438205b09e5ffa5e0af12ef61485965eab4e6322a5a23b97b98e220e33a",
+            "match": true
+          },
+          {
+            "caseId": "uncertain-result",
+            "manifest": "remaining-local/cases/uncertain-result/outputs/source-input-hashes.json",
+            "path": "<frozen-host-fixture>/runtime/plugins/cache/pstack-frozen-verification/pstack-openai/0.1.3/skills/how/SKILL.md",
+            "expected": "bca7b43af6d6d0089d20edb2ec2178d681d589357c20ea345eddbf81ce87f7e8",
+            "actual": "bca7b43af6d6d0089d20edb2ec2178d681d589357c20ea345eddbf81ce87f7e8",
+            "match": true
+          },
+          {
+            "caseId": "uncertain-result",
+            "manifest": "remaining-local/cases/uncertain-result/outputs/source-input-hashes.json",
+            "path": "<frozen-host-fixture>/runtime/plugins/cache/pstack-frozen-verification/pstack-openai/0.1.3/skills/how/references/explorer-prompt.md",
+            "expected": "5a799584adc07c774c4870846e34f0a8f8c82a75d151721d1aa225bb983523d2",
+            "actual": "5a799584adc07c774c4870846e34f0a8f8c82a75d151721d1aa225bb983523d2",
+            "match": true
+          },
+          {
+            "caseId": "uncertain-result",
+            "manifest": "remaining-local/cases/uncertain-result/outputs/source-input-hashes.json",
+            "path": "<frozen-host-fixture>/runtime/plugins/cache/pstack-frozen-verification/pstack-openai/0.1.3/skills/how/references/explainer-prompt.md",
+            "expected": "08618881df380b5c74a030d6a577fd07f0fc6a3a91b4d0ec1795da3c6350c9b1",
+            "actual": "08618881df380b5c74a030d6a577fd07f0fc6a3a91b4d0ec1795da3c6350c9b1",
+            "match": true
+          },
+          {
+            "caseId": "uncertain-result",
+            "manifest": "remaining-local/cases/uncertain-result/outputs/source-input-hashes.json",
+            "path": "<frozen-host-fixture>/runtime/plugins/cache/pstack-frozen-verification/pstack-openai/0.1.3/skills/architect/SKILL.md",
+            "expected": "af93988bb4eec01a50f1caf71fd196a01f5affd56d2dcb36fe70d1735fa28f78",
+            "actual": "af93988bb4eec01a50f1caf71fd196a01f5affd56d2dcb36fe70d1735fa28f78",
+            "match": true
+          },
+          {
+            "caseId": "uncertain-result",
+            "manifest": "remaining-local/cases/uncertain-result/outputs/source-input-hashes.json",
+            "path": "<frozen-host-fixture>/runtime/plugins/cache/pstack-frozen-verification/pstack-openai/0.1.3/skills/architect/references/runner-prompt.md",
+            "expected": "f5b4eab549743b873594ff0c98430564c11e607d6fa0f27275b281ae59d46942",
+            "actual": "f5b4eab549743b873594ff0c98430564c11e607d6fa0f27275b281ae59d46942",
+            "match": true
+          },
+          {
+            "caseId": "uncertain-result",
+            "manifest": "remaining-local/cases/uncertain-result/outputs/source-input-hashes.json",
+            "path": "<frozen-host-fixture>/runtime/plugins/cache/pstack-frozen-verification/pstack-openai/0.1.3/skills/architect/references/rationale-template.md",
+            "expected": "0cedfccdc7b47fc881febd5a8293eecbc542c20f8df825639904a8102d2eb5d3",
+            "actual": "0cedfccdc7b47fc881febd5a8293eecbc542c20f8df825639904a8102d2eb5d3",
+            "match": true
+          },
+          {
+            "caseId": "uncertain-result",
+            "manifest": "remaining-local/cases/uncertain-result/outputs/source-input-hashes.json",
+            "path": "<frozen-host-fixture>/runtime/plugins/cache/pstack-frozen-verification/pstack-openai/0.1.3/skills/architect/references/design-red-flags.md",
+            "expected": "d0e639e4cc588ec865f930d3a4111faad60987ae36925917e319d7ceca7c69ce",
+            "actual": "d0e639e4cc588ec865f930d3a4111faad60987ae36925917e319d7ceca7c69ce",
+            "match": true
+          },
+          {
+            "caseId": "uncertain-result",
+            "manifest": "remaining-local/cases/uncertain-result/outputs/source-input-hashes.json",
+            "path": "<frozen-host-fixture>/runtime/plugins/cache/pstack-frozen-verification/pstack-openai/0.1.3/skills/show-me-your-work/SKILL.md",
+            "expected": "3c4f05ffecc162b6ae376b7adcf4e7d030c8dfc65a7f26f8519f2c1544c3b98b",
+            "actual": "3c4f05ffecc162b6ae376b7adcf4e7d030c8dfc65a7f26f8519f2c1544c3b98b",
+            "match": true
+          },
+          {
+            "caseId": "uncertain-result",
+            "manifest": "remaining-local/cases/uncertain-result/outputs/source-input-hashes.json",
+            "path": "<frozen-host-fixture>/runtime/plugins/cache/pstack-frozen-verification/pstack-openai/0.1.3/skills/show-me-your-work/scripts/log.sh",
+            "expected": "fb47611cbb75ea17aa80cb4f8dbfc7978b8844450b0ce702961bdef65cbb1342",
+            "actual": "fb47611cbb75ea17aa80cb4f8dbfc7978b8844450b0ce702961bdef65cbb1342",
+            "match": true
+          },
+          {
+            "caseId": "uncertain-result",
+            "manifest": "remaining-local/cases/uncertain-result/outputs/source-input-hashes.json",
+            "path": "<frozen-host-fixture>/runtime/plugins/cache/pstack-frozen-verification/pstack-openai/0.1.3/skills/show-me-your-work/references/decision-log-template.tsv",
+            "expected": "6779378006a2f5225e8c06deb84f1d913fb532041ebbb6e50d94600bfe3f4b76",
+            "actual": "6779378006a2f5225e8c06deb84f1d913fb532041ebbb6e50d94600bfe3f4b76",
+            "match": true
+          },
+          {
+            "caseId": "uncertain-result",
+            "manifest": "remaining-local/cases/uncertain-result/outputs/source-input-hashes.json",
+            "path": "<frozen-host-fixture>/runtime/plugins/cache/pstack-frozen-verification/pstack-openai/0.1.3/skills/unslop/SKILL.md",
+            "expected": "195411d320b5b328f9f642baf59757ed19aaf0931c0838740e0aca273d538dc1",
+            "actual": "195411d320b5b328f9f642baf59757ed19aaf0931c0838740e0aca273d538dc1",
+            "match": true
+          },
+          {
+            "caseId": "uncertain-result",
+            "manifest": "remaining-local/cases/uncertain-result/outputs/source-input-hashes.json",
+            "path": "<frozen-host-fixture>/runtime/plugins/cache/pstack-frozen-verification/pstack-openai/0.1.3/skills/technical-writing/SKILL.md",
+            "expected": "409a010a405d3ea3e4c2386e2a5ce5fa7cc64dffd8304feb99282a5e099564f6",
+            "actual": "409a010a405d3ea3e4c2386e2a5ce5fa7cc64dffd8304feb99282a5e099564f6",
+            "match": true
+          },
+          {
+            "caseId": "uncertain-result",
+            "manifest": "remaining-local/cases/uncertain-result/outputs/source-input-hashes.json",
+            "path": "<frozen-host-fixture>/runtime/plugins/cache/pstack-frozen-verification/pstack-openai/0.1.3/skills/typescript-best-practices/SKILL.md",
+            "expected": "c9495954ee2ce4462d10a8b1aa2d82e1b80167449fe9dc0ccee6b41c184f8983",
+            "actual": "c9495954ee2ce4462d10a8b1aa2d82e1b80167449fe9dc0ccee6b41c184f8983",
+            "match": true
+          },
+          {
+            "caseId": "uncertain-result",
+            "manifest": "remaining-local/cases/uncertain-result/outputs/source-input-hashes.json",
+            "path": "<frozen-host-fixture>/runtime/plugins/cache/pstack-frozen-verification/pstack-openai/0.1.3/skills/typescript-best-practices/references/patterns.md",
+            "expected": "faa1362055374452efccac1b629677c61acfb0bcc6c4e3311836b5715638ee18",
+            "actual": "faa1362055374452efccac1b629677c61acfb0bcc6c4e3311836b5715638ee18",
+            "match": true
+          },
+          {
+            "caseId": "uncertain-result",
+            "manifest": "remaining-local/cases/uncertain-result/outputs/source-input-hashes.json",
+            "path": "<frozen-host-fixture>/runtime/plugins/cache/pstack-frozen-verification/pstack-openai/0.1.3/skills/poteto-mode/playbooks/opening-a-pr.md",
+            "expected": "4198f32b22cf1d8ff367deee1dbfea805e6eecdd7ff1da3409ae7c0b07fb1c59",
+            "actual": "4198f32b22cf1d8ff367deee1dbfea805e6eecdd7ff1da3409ae7c0b07fb1c59",
+            "match": true
+          },
+          {
+            "caseId": "uncertain-result",
+            "manifest": "remaining-local/cases/uncertain-result/outputs/source-input-hashes.json",
+            "path": "<frozen-host-fixture>/runtime/plugins/cache/pstack-frozen-verification/pstack-openai/0.1.3/skills/principle-prove-it-works/SKILL.md",
+            "expected": "a78cfdebd9dccfba5f6d69bbd74379924769d769e4b3e2f514846fc7bdd56edc",
+            "actual": "a78cfdebd9dccfba5f6d69bbd74379924769d769e4b3e2f514846fc7bdd56edc",
+            "match": true
+          },
+          {
+            "caseId": "uncertain-result",
+            "manifest": "remaining-local/cases/uncertain-result/outputs/source-input-hashes.json",
+            "path": "<frozen-host-fixture>/runtime/plugins/cache/pstack-frozen-verification/pstack-openai/0.1.3/skills/principle-foundational-thinking/SKILL.md",
+            "expected": "65b82007ebfa7230bbce99831a2c21430ea2ad388ed528c38292dd2b308c5200",
+            "actual": "65b82007ebfa7230bbce99831a2c21430ea2ad388ed528c38292dd2b308c5200",
+            "match": true
+          },
+          {
+            "caseId": "uncertain-result",
+            "manifest": "remaining-local/cases/uncertain-result/outputs/source-input-hashes.json",
+            "path": "<frozen-host-fixture>/runtime/plugins/cache/pstack-frozen-verification/pstack-openai/0.1.3/skills/principle-model-the-domain/SKILL.md",
+            "expected": "05c073621ec18b442ecd7487dc6136bddb6a842f2bd537cb73567de7088a6b0e",
+            "actual": "05c073621ec18b442ecd7487dc6136bddb6a842f2bd537cb73567de7088a6b0e",
+            "match": true
+          },
+          {
+            "caseId": "uncertain-result",
+            "manifest": "remaining-local/cases/uncertain-result/outputs/source-input-hashes.json",
+            "path": "<frozen-host-fixture>/runtime/plugins/cache/pstack-frozen-verification/pstack-openai/0.1.3/skills/principle-boundary-discipline/SKILL.md",
+            "expected": "ab5026ed8a938bc1bb06e69f4fe536736e2939787f0c6f629bf0360b24988d80",
+            "actual": "ab5026ed8a938bc1bb06e69f4fe536736e2939787f0c6f629bf0360b24988d80",
+            "match": true
+          },
+          {
+            "caseId": "uncertain-result",
+            "manifest": "remaining-local/cases/uncertain-result/outputs/source-input-hashes.json",
+            "path": "<frozen-host-fixture>/runtime/plugins/cache/pstack-frozen-verification/pstack-openai/0.1.3/skills/principle-type-system-discipline/SKILL.md",
+            "expected": "65649b9c31d43b481ab4cf299ce51441b5077d2cfb964369b151df0889b484e9",
+            "actual": "65649b9c31d43b481ab4cf299ce51441b5077d2cfb964369b151df0889b484e9",
+            "match": true
+          },
+          {
+            "caseId": "uncertain-result",
+            "manifest": "remaining-local/cases/uncertain-result/outputs/source-input-hashes.json",
+            "path": "<frozen-host-fixture>/runtime/plugins/cache/pstack-frozen-verification/pstack-openai/0.1.3/skills/principle-sequence-verifiable-units/SKILL.md",
+            "expected": "5818e68d1e41af2143362a3126b36ea6c15596b28a6e3a3235390c73cf4398a3",
+            "actual": "5818e68d1e41af2143362a3126b36ea6c15596b28a6e3a3235390c73cf4398a3",
+            "match": true
+          },
+          {
+            "caseId": "uncertain-result",
+            "manifest": "remaining-local/cases/uncertain-result/outputs/source-input-hashes.json",
+            "path": "<frozen-host-fixture>/runtime/plugins/cache/pstack-frozen-verification/pstack-openai/0.1.3/skills/principle-separate-before-serializing-shared-state/SKILL.md",
+            "expected": "9ef714543b16665c68182e1b66beb22829fbc4b68e2ceb138db9858384c598ce",
+            "actual": "9ef714543b16665c68182e1b66beb22829fbc4b68e2ceb138db9858384c598ce",
+            "match": true
+          },
+          {
+            "caseId": "uncertain-result",
+            "manifest": "remaining-local/cases/uncertain-result/outputs/source-input-hashes.json",
+            "path": "<frozen-host-fixture>/runtime/plugins/cache/pstack-frozen-verification/pstack-openai/0.1.3/skills/principle-laziness-protocol/SKILL.md",
+            "expected": "0c5116c90901bb8efc6e7b44f170bc9b7dd1a55b6cb2fa9f3abfd600d5c905fe",
+            "actual": "0c5116c90901bb8efc6e7b44f170bc9b7dd1a55b6cb2fa9f3abfd600d5c905fe",
+            "match": true
+          },
+          {
+            "caseId": "uncertain-result",
+            "manifest": "remaining-local/cases/uncertain-result/outputs/source-input-hashes.json",
+            "path": "<frozen-host-fixture>/runtime/plugins/cache/pstack-frozen-verification/pstack-openai/0.1.3/skills/principle-outcome-oriented-execution/SKILL.md",
+            "expected": "b8b44780268daf392f20ef328077d8669ed2b1005fcac67047c3f4b0bd1ffe3e",
+            "actual": "b8b44780268daf392f20ef328077d8669ed2b1005fcac67047c3f4b0bd1ffe3e",
+            "match": true
+          },
+          {
+            "caseId": "uncertain-result",
+            "manifest": "remaining-local/cases/uncertain-result/outputs/source-input-hashes.json",
+            "path": "<frozen-host-fixture>/runtime/plugins/cache/pstack-frozen-verification/pstack-openai/0.1.3/skills/principle-migrate-callers-then-delete-legacy-apis/SKILL.md",
+            "expected": "70153623b1512cfcdb15a0cdda9e0514fe036cf580f588443925635fc57b0ba7",
+            "actual": "70153623b1512cfcdb15a0cdda9e0514fe036cf580f588443925635fc57b0ba7",
+            "match": true
+          },
+          {
+            "caseId": "uncertain-result",
+            "manifest": "remaining-local/cases/uncertain-result/outputs/source-input-hashes.json",
+            "path": "<frozen-host-fixture>/runtime/plugins/cache/pstack-frozen-verification/pstack-openai/0.1.3/skills/principle-never-block-on-the-human/SKILL.md",
+            "expected": "c925976d4cc452beb927bece57870e4dad9d88f746920f4e0a6d112591c71d68",
+            "actual": "c925976d4cc452beb927bece57870e4dad9d88f746920f4e0a6d112591c71d68",
+            "match": true
+          },
+          {
+            "caseId": "uncertain-result",
+            "manifest": "remaining-local/cases/uncertain-result/outputs/source-input-hashes.json",
+            "path": "<private-run>/remaining-local/cases/uncertain-result/outputs/../current-contract.json",
+            "expected": "4331b16f95a47cb3c6704c98cd3abc84727736cb17143861830228d67a5dab73",
+            "actual": "4331b16f95a47cb3c6704c98cd3abc84727736cb17143861830228d67a5dab73",
+            "match": true
+          },
+          {
+            "caseId": "uncertain-result",
+            "manifest": "remaining-local/cases/uncertain-result/outputs/source-input-hashes.json",
+            "path": "<private-run>/remaining-local/cases/uncertain-result/outputs/../task-contract.json",
+            "expected": "a39b27d7670734dc87142c203b312c568278996255f850fbf3a50c71bebd1aaf",
+            "actual": "a39b27d7670734dc87142c203b312c568278996255f850fbf3a50c71bebd1aaf",
+            "match": true
+          },
+          {
+            "caseId": "uncertain-result",
+            "manifest": "remaining-local/cases/uncertain-result/outputs/source-input-hashes.json",
+            "path": "<private-run>/remaining-local/cases/uncertain-result/outputs/../outputs/assignment.json",
+            "expected": "d315007d7460d728fc9a1a7d3a7ce3dae1ee54aeefd903ed1f432b8affb567a0",
+            "actual": "d315007d7460d728fc9a1a7d3a7ce3dae1ee54aeefd903ed1f432b8affb567a0",
+            "match": true
+          },
+          {
+            "caseId": "uncertain-result",
+            "manifest": "remaining-local/cases/uncertain-result/outputs/source-input-hashes.json",
+            "path": "<private-run>/remaining-local/cases/uncertain-result/outputs/../outputs/supplied-request.json",
+            "expected": "5bc986be3c512324494f427227f412840ec5293036f1a6b3b86d7008f151f2a3",
+            "actual": "5bc986be3c512324494f427227f412840ec5293036f1a6b3b86d7008f151f2a3",
+            "match": true
+          },
+          {
+            "caseId": "uncertain-result",
+            "manifest": "remaining-local/cases/uncertain-result/outputs/source-input-hashes.json",
+            "path": "<private-run>/remaining-local/cases/uncertain-result/outputs/pristine/target.md",
+            "expected": "2dac75262c7caf2410ec9b92002827fe54a0a2906ffa10df3f3293bab7a5c8fc",
+            "actual": "2dac75262c7caf2410ec9b92002827fe54a0a2906ffa10df3f3293bab7a5c8fc",
+            "match": true
+          },
+          {
+            "caseId": "uncertain-result",
+            "manifest": "remaining-local/cases/uncertain-result/outputs/source-input-hashes.json",
+            "path": "<private-run>/remaining-local/cases/uncertain-result/outputs/pristine/consumer.ts",
+            "expected": "8d8643c6ed3d985fa737fd32d45f2ef8b633233fefb28e61c695e6f76621f42a",
+            "actual": "8d8643c6ed3d985fa737fd32d45f2ef8b633233fefb28e61c695e6f76621f42a",
+            "match": true
+          },
+          {
+            "caseId": "uncertain-result",
+            "manifest": "remaining-local/cases/uncertain-result/outputs/source-input-hashes.json",
+            "path": "<private-run>/remaining-local/cases/uncertain-result/outputs/pristine/contract.test.mjs",
+            "expected": "b4c462080c43283cdc7b8ba9d10a9abccd9a7847c9c7950ea1cb06d56bfacfdc",
+            "actual": "b4c462080c43283cdc7b8ba9d10a9abccd9a7847c9c7950ea1cb06d56bfacfdc",
+            "match": true
+          },
+          {
+            "caseId": "uncertain-result",
+            "manifest": "remaining-local/cases/uncertain-result/outputs/source-input-hashes.json",
+            "path": "<private-run>/remaining-local/cases/uncertain-result/outputs/pristine/tsconfig.json",
+            "expected": "1f03f1a88cd4309c2b648faa3c2a0a0495a06a77b00b742669bc8f52295d6c0e",
+            "actual": "1f03f1a88cd4309c2b648faa3c2a0a0495a06a77b00b742669bc8f52295d6c0e",
+            "match": true
+          },
+          {
+            "caseId": "uncertain-result",
+            "manifest": "remaining-local/cases/uncertain-result/outputs/source-input-hashes.json",
+            "path": "<private-run>/remaining-local/cases/uncertain-result/outputs/pristine/index.ts",
+            "expected": "bb735ce533faf28a4e7dee68defc6f82ab620def17d5860c61717ed5a70bdfd3",
+            "actual": "bb735ce533faf28a4e7dee68defc6f82ab620def17d5860c61717ed5a70bdfd3",
+            "match": true
+          },
+          {
+            "caseId": "uncertain-result",
+            "manifest": "remaining-local/cases/uncertain-result/outputs/source-input-hashes.json",
+            "path": "<private-run>/remaining-local/cases/uncertain-result/outputs/pristine/legacy.ts",
+            "expected": "82a0d9fcad0c89d4f1dc1ad5887479b227c618b39670afff65e9d31c48d3d8d8",
+            "actual": "82a0d9fcad0c89d4f1dc1ad5887479b227c618b39670afff65e9d31c48d3d8d8",
+            "match": true
+          },
+          {
+            "caseId": "benny-missing-coordinates",
+            "manifest": "remaining-local/cases/benny-missing-coordinates/outputs/observations.json",
+            "path": "<frozen-host-fixture>/runtime/plugins/cache/pstack-frozen-verification/pstack-openai/0.1.3/automations/benny/FOR_AGENTS.md",
+            "expected": "099ee5b792ce47957350f7e34c06f070038b36a4cca094539ba5950364c3d7e8",
+            "actual": "099ee5b792ce47957350f7e34c06f070038b36a4cca094539ba5950364c3d7e8",
+            "match": true
+          },
+          {
+            "caseId": "benny-missing-coordinates",
+            "manifest": "remaining-local/cases/benny-missing-coordinates/outputs/observations.json",
+            "path": "<frozen-host-fixture>/runtime/plugins/cache/pstack-frozen-verification/pstack-openai/0.1.3/automations/benny/README.md",
+            "expected": "dee82d2c8c2750a219be78ac7e67456dfe83ef86e14222411f82b908aba5af6d",
+            "actual": "dee82d2c8c2750a219be78ac7e67456dfe83ef86e14222411f82b908aba5af6d",
+            "match": true
+          },
+          {
+            "caseId": "benny-missing-coordinates",
+            "manifest": "remaining-local/cases/benny-missing-coordinates/outputs/observations.json",
+            "path": "<frozen-host-fixture>/runtime/plugins/cache/pstack-frozen-verification/pstack-openai/0.1.3/automations/benny/skills/reproduce-and-fix-issues/REFERENCE.md",
+            "expected": "a80f670a073aa7a13e7501d22e346f2c6f34068073f540d1703ca1178dadd06b",
+            "actual": "a80f670a073aa7a13e7501d22e346f2c6f34068073f540d1703ca1178dadd06b",
+            "match": true
+          },
+          {
+            "caseId": "benny-missing-coordinates",
+            "manifest": "remaining-local/cases/benny-missing-coordinates/outputs/observations.json",
+            "path": "<frozen-host-fixture>/runtime/plugins/cache/pstack-frozen-verification/pstack-openai/0.1.3/automations/benny/skills/reproduce-and-fix-issues/references/control-adapter.md",
+            "expected": "883b3c86f51df2b45547647fd2d409a3ec7678dd72b41454e0002d37763f9c02",
+            "actual": "883b3c86f51df2b45547647fd2d409a3ec7678dd72b41454e0002d37763f9c02",
+            "match": true
+          },
+          {
+            "caseId": "benny-missing-coordinates",
+            "manifest": "remaining-local/cases/benny-missing-coordinates/outputs/observations.json",
+            "path": "<frozen-host-fixture>/runtime/plugins/cache/pstack-frozen-verification/pstack-openai/0.1.3/automations/benny/skills/reproduce-and-fix-issues/references/feature-map.example.md",
+            "expected": "84223bc5c35ff789024e6d93748c3287a9a042e078ebc4a187f086dd0a96d28f",
+            "actual": "84223bc5c35ff789024e6d93748c3287a9a042e078ebc4a187f086dd0a96d28f",
+            "match": true
+          },
+          {
+            "caseId": "benny-missing-coordinates",
+            "manifest": "remaining-local/cases/benny-missing-coordinates/outputs/observations.json",
+            "path": "<frozen-host-fixture>/runtime/plugins/cache/pstack-frozen-verification/pstack-openai/0.1.3/automations/benny/skills/reproduce-and-fix-issues/references/verify-existing-fix.md",
+            "expected": "084509e52c5533a4527659a3aaf5311cc5b151846b1457bb39c8d16a847c02fc",
+            "actual": "084509e52c5533a4527659a3aaf5311cc5b151846b1457bb39c8d16a847c02fc",
+            "match": true
+          },
+          {
+            "caseId": "benny-missing-coordinates",
+            "manifest": "remaining-local/cases/benny-missing-coordinates/outputs/observations.json",
+            "path": "<frozen-host-fixture>/runtime/plugins/cache/pstack-frozen-verification/pstack-openai/0.1.3/automations/benny/skills/setup-benny/REFERENCE.md",
+            "expected": "7be95406bb1c43deeb2ef5fb5ef9dc4ac603db5cc62c85cc56d7dc7a3fe62378",
+            "actual": "7be95406bb1c43deeb2ef5fb5ef9dc4ac603db5cc62c85cc56d7dc7a3fe62378",
+            "match": true
+          },
+          {
+            "caseId": "benny-missing-coordinates",
+            "manifest": "remaining-local/cases/benny-missing-coordinates/outputs/observations.json",
+            "path": "<frozen-host-fixture>/runtime/plugins/cache/pstack-frozen-verification/pstack-openai/0.1.3/automations/benny/skills/triage-issue-reports/REFERENCE.md",
+            "expected": "11d9e2e705a51d7cd6881ad2ba6344eaa9c3541c2e0abbe5418691dc08dc5e06",
+            "actual": "11d9e2e705a51d7cd6881ad2ba6344eaa9c3541c2e0abbe5418691dc08dc5e06",
+            "match": true
+          },
+          {
+            "caseId": "benny-missing-coordinates",
+            "manifest": "remaining-local/cases/benny-missing-coordinates/outputs/observations.json",
+            "path": "<frozen-host-fixture>/runtime/plugins/cache/pstack-frozen-verification/pstack-openai/0.1.3/automations/benny/skills/triage-issue-reports/references/routing.example.md",
+            "expected": "ce156a0ef1f6d0d4c95dbeaaec1a0b0efd5e7b8d9aa13240ba5918d89010bb4f",
+            "actual": "ce156a0ef1f6d0d4c95dbeaaec1a0b0efd5e7b8d9aa13240ba5918d89010bb4f",
+            "match": true
+          },
+          {
+            "caseId": "benny-missing-coordinates",
+            "manifest": "remaining-local/cases/benny-missing-coordinates/outputs/observations.json",
+            "path": "<frozen-host-fixture>/runtime/plugins/cache/pstack-frozen-verification/pstack-openai/0.1.3/automations/benny/templates/configuration.example.yaml",
+            "expected": "90451f9a168430b82aee659d0f66b32c846218945032f619f0af264c2f887803",
+            "actual": "90451f9a168430b82aee659d0f66b32c846218945032f619f0af264c2f887803",
+            "match": true
+          },
+          {
+            "caseId": "benny-missing-coordinates",
+            "manifest": "remaining-local/cases/benny-missing-coordinates/outputs/observations.json",
+            "path": "<frozen-host-fixture>/runtime/plugins/cache/pstack-frozen-verification/pstack-openai/0.1.3/automations/benny/templates/reproduce-automation-prompt.md",
+            "expected": "a81772aabac7fae0807aad4ad2e7722f1de59b280ba002e2a64d165bea0603aa",
+            "actual": "a81772aabac7fae0807aad4ad2e7722f1de59b280ba002e2a64d165bea0603aa",
+            "match": true
+          },
+          {
+            "caseId": "benny-missing-coordinates",
+            "manifest": "remaining-local/cases/benny-missing-coordinates/outputs/observations.json",
+            "path": "<frozen-host-fixture>/runtime/plugins/cache/pstack-frozen-verification/pstack-openai/0.1.3/automations/benny/templates/triage-automation-prompt.md",
+            "expected": "c1a330047485c3e9028428ed561e127d1875020ca2524f8c26c234dc4f05a70c",
+            "actual": "c1a330047485c3e9028428ed561e127d1875020ca2524f8c26c234dc4f05a70c",
+            "match": true
+          },
+          {
+            "caseId": "benny-missing-coordinates",
+            "manifest": "remaining-local/cases/benny-missing-coordinates/outputs/observations.json",
+            "path": "<frozen-host-fixture>/runtime/plugins/cache/pstack-frozen-verification/pstack-openai/0.1.3/skills/poteto-mode/SKILL.md",
+            "expected": "cb03eedb91cea96b570af30a7af317c6aae6a47a321cff2e82af656141ab0f14",
+            "actual": "cb03eedb91cea96b570af30a7af317c6aae6a47a321cff2e82af656141ab0f14",
+            "match": true
+          },
+          {
+            "caseId": "benny-missing-coordinates",
+            "manifest": "remaining-local/cases/benny-missing-coordinates/outputs/observations.json",
+            "path": "<frozen-host-fixture>/runtime/plugins/cache/pstack-frozen-verification/pstack-openai/0.1.3/references/agent-prompts/poteto-agent.md",
+            "expected": "9839239c6ebc72de8165f8a6fa4a6326fea7293e15a47d24f98396df2a61b3fb",
+            "actual": "9839239c6ebc72de8165f8a6fa4a6326fea7293e15a47d24f98396df2a61b3fb",
+            "match": true
+          },
+          {
+            "caseId": "benny-missing-coordinates",
+            "manifest": "remaining-local/cases/benny-missing-coordinates/outputs/observations.json",
+            "path": "<frozen-host-fixture>/runtime/plugins/cache/pstack-frozen-verification/pstack-openai/0.1.3/references/model-roles.md",
+            "expected": "c86696b6c568b7db80a7e339856986e64482ce6a418bb91946ce3a3b772f79a1",
+            "actual": "c86696b6c568b7db80a7e339856986e64482ce6a418bb91946ce3a3b772f79a1",
+            "match": true
+          },
+          {
+            "caseId": "benny-missing-coordinates",
+            "manifest": "remaining-local/cases/benny-missing-coordinates/outputs/observations.json",
+            "path": "<frozen-host-fixture>/runtime/plugins/cache/pstack-frozen-verification/pstack-openai/0.1.3/references/host-capabilities.md",
+            "expected": "f0f09ce28b6feca4d72694d5687204dc074aa58dade9a0ab59656da3bfa1bd20",
+            "actual": "f0f09ce28b6feca4d72694d5687204dc074aa58dade9a0ab59656da3bfa1bd20",
+            "match": true
+          },
+          {
+            "caseId": "benny-missing-coordinates",
+            "manifest": "remaining-local/cases/benny-missing-coordinates/outputs/observations.json",
+            "path": "<frozen-host-fixture>/runtime/plugins/cache/pstack-frozen-verification/pstack-openai/0.1.3/references/orchestration-contract.md",
+            "expected": "5dd740ad66d992df252754d189d0dc207900023372392a0db4309b85eb5e4ec5",
+            "actual": "5dd740ad66d992df252754d189d0dc207900023372392a0db4309b85eb5e4ec5",
+            "match": true
+          },
+          {
+            "caseId": "benny-missing-coordinates",
+            "manifest": "remaining-local/cases/benny-missing-coordinates/outputs/observations.json",
+            "path": "<frozen-host-fixture>/runtime/plugins/cache/pstack-frozen-verification/pstack-openai/0.1.3/references/workflow-ownership.md",
+            "expected": "50644b3a9a3dfd5651382eaca1d3a2728af0b3157d6d66b730930370a64bb03c",
+            "actual": "50644b3a9a3dfd5651382eaca1d3a2728af0b3157d6d66b730930370a64bb03c",
+            "match": true
+          },
+          {
+            "caseId": "benny-missing-coordinates",
+            "manifest": "remaining-local/cases/benny-missing-coordinates/outputs/observations.json",
+            "path": "<frozen-host-fixture>/runtime/plugins/cache/pstack-frozen-verification/pstack-openai/0.1.3/skills/unslop/SKILL.md",
+            "expected": "195411d320b5b328f9f642baf59757ed19aaf0931c0838740e0aca273d538dc1",
+            "actual": "195411d320b5b328f9f642baf59757ed19aaf0931c0838740e0aca273d538dc1",
+            "match": true
+          },
+          {
+            "caseId": "benny-missing-coordinates",
+            "manifest": "remaining-local/cases/benny-missing-coordinates/outputs/observations.json",
+            "path": "<frozen-host-fixture>/runtime/plugins/cache/pstack-frozen-verification/pstack-openai/0.1.3/skills/technical-writing/SKILL.md",
+            "expected": "409a010a405d3ea3e4c2386e2a5ce5fa7cc64dffd8304feb99282a5e099564f6",
+            "actual": "409a010a405d3ea3e4c2386e2a5ce5fa7cc64dffd8304feb99282a5e099564f6",
+            "match": true
+          },
+          {
+            "caseId": "benny-missing-coordinates",
+            "manifest": "remaining-local/cases/benny-missing-coordinates/outputs/observations.json",
+            "path": "<frozen-host-fixture>/runtime/plugins/cache/pstack-frozen-verification/pstack-openai/0.1.3/skills/principle-prove-it-works/SKILL.md",
+            "expected": "a78cfdebd9dccfba5f6d69bbd74379924769d769e4b3e2f514846fc7bdd56edc",
+            "actual": "a78cfdebd9dccfba5f6d69bbd74379924769d769e4b3e2f514846fc7bdd56edc",
+            "match": true
+          },
+          {
+            "caseId": "benny-missing-coordinates",
+            "manifest": "remaining-local/cases/benny-missing-coordinates/outputs/observations.json",
+            "path": "<frozen-host-fixture>/runtime/plugins/cache/pstack-frozen-verification/pstack-openai/0.1.3/skills/principle-separate-before-serializing-shared-state/SKILL.md",
+            "expected": "9ef714543b16665c68182e1b66beb22829fbc4b68e2ceb138db9858384c598ce",
+            "actual": "9ef714543b16665c68182e1b66beb22829fbc4b68e2ceb138db9858384c598ce",
+            "match": true
+          },
+          {
+            "caseId": "benny-missing-coordinates",
+            "manifest": "remaining-local/cases/benny-missing-coordinates/outputs/observations.json",
+            "path": "<frozen-host-fixture>/runtime/plugins/cache/pstack-frozen-verification/pstack-openai/0.1.3/skills/principle-minimize-reader-load/SKILL.md",
+            "expected": "8684154522048e9e5723f559a5ba9ecfcca87d551a76b9cd2ecd8668b48ccf90",
+            "actual": "8684154522048e9e5723f559a5ba9ecfcca87d551a76b9cd2ecd8668b48ccf90",
+            "match": true
+          },
+          {
+            "caseId": "scoped-history",
+            "manifest": "remaining-local/cases/scoped-history/outputs/source-manifest.json",
+            "path": "<frozen-host-fixture>/runtime/plugins/cache/pstack-frozen-verification/pstack-openai/0.1.3/skills/poteto-mode/SKILL.md",
+            "expected": "cb03eedb91cea96b570af30a7af317c6aae6a47a321cff2e82af656141ab0f14",
+            "actual": "cb03eedb91cea96b570af30a7af317c6aae6a47a321cff2e82af656141ab0f14",
+            "match": true
+          },
+          {
+            "caseId": "scoped-history",
+            "manifest": "remaining-local/cases/scoped-history/outputs/source-manifest.json",
+            "path": "<frozen-host-fixture>/runtime/plugins/cache/pstack-frozen-verification/pstack-openai/0.1.3/references/agent-prompts/poteto-agent.md",
+            "expected": "9839239c6ebc72de8165f8a6fa4a6326fea7293e15a47d24f98396df2a61b3fb",
+            "actual": "9839239c6ebc72de8165f8a6fa4a6326fea7293e15a47d24f98396df2a61b3fb",
+            "match": true
+          },
+          {
+            "caseId": "scoped-history",
+            "manifest": "remaining-local/cases/scoped-history/outputs/source-manifest.json",
+            "path": "<frozen-host-fixture>/runtime/plugins/cache/pstack-frozen-verification/pstack-openai/0.1.3/references/model-roles.md",
+            "expected": "c86696b6c568b7db80a7e339856986e64482ce6a418bb91946ce3a3b772f79a1",
+            "actual": "c86696b6c568b7db80a7e339856986e64482ce6a418bb91946ce3a3b772f79a1",
+            "match": true
+          },
+          {
+            "caseId": "scoped-history",
+            "manifest": "remaining-local/cases/scoped-history/outputs/source-manifest.json",
+            "path": "<frozen-host-fixture>/runtime/plugins/cache/pstack-frozen-verification/pstack-openai/0.1.3/references/host-capabilities.md",
+            "expected": "f0f09ce28b6feca4d72694d5687204dc074aa58dade9a0ab59656da3bfa1bd20",
+            "actual": "f0f09ce28b6feca4d72694d5687204dc074aa58dade9a0ab59656da3bfa1bd20",
+            "match": true
+          },
+          {
+            "caseId": "scoped-history",
+            "manifest": "remaining-local/cases/scoped-history/outputs/source-manifest.json",
+            "path": "<frozen-host-fixture>/runtime/plugins/cache/pstack-frozen-verification/pstack-openai/0.1.3/references/orchestration-contract.md",
+            "expected": "5dd740ad66d992df252754d189d0dc207900023372392a0db4309b85eb5e4ec5",
+            "actual": "5dd740ad66d992df252754d189d0dc207900023372392a0db4309b85eb5e4ec5",
+            "match": true
+          },
+          {
+            "caseId": "scoped-history",
+            "manifest": "remaining-local/cases/scoped-history/outputs/source-manifest.json",
+            "path": "<frozen-host-fixture>/runtime/plugins/cache/pstack-frozen-verification/pstack-openai/0.1.3/references/workflow-ownership.md",
+            "expected": "50644b3a9a3dfd5651382eaca1d3a2728af0b3157d6d66b730930370a64bb03c",
+            "actual": "50644b3a9a3dfd5651382eaca1d3a2728af0b3157d6d66b730930370a64bb03c",
+            "match": true
+          },
+          {
+            "caseId": "scoped-history",
+            "manifest": "remaining-local/cases/scoped-history/outputs/source-manifest.json",
+            "path": "<frozen-host-fixture>/runtime/plugins/cache/pstack-frozen-verification/pstack-openai/0.1.3/skills/recall/SKILL.md",
+            "expected": "4046233fd9688b1ce1113845540be3ca6215bb856e01ca894cdb4880dfbb4490",
+            "actual": "4046233fd9688b1ce1113845540be3ca6215bb856e01ca894cdb4880dfbb4490",
+            "match": true
+          },
+          {
+            "caseId": "scoped-history",
+            "manifest": "remaining-local/cases/scoped-history/outputs/source-manifest.json",
+            "path": "<frozen-host-fixture>/runtime/plugins/cache/pstack-frozen-verification/pstack-openai/0.1.3/skills/why/SKILL.md",
+            "expected": "4e735ba6b56448f788ca210dacd41f569b204beff61b21c64576f8b0bb582b6f",
+            "actual": "4e735ba6b56448f788ca210dacd41f569b204beff61b21c64576f8b0bb582b6f",
+            "match": true
+          },
+          {
+            "caseId": "scoped-history",
+            "manifest": "remaining-local/cases/scoped-history/outputs/source-manifest.json",
+            "path": "<frozen-host-fixture>/runtime/plugins/cache/pstack-frozen-verification/pstack-openai/0.1.3/skills/why/references/epistemics.md",
+            "expected": "fcc0f559c072832c869a5ada72434b4849320a637ae63c09e8ee14f7ad787059",
+            "actual": "fcc0f559c072832c869a5ada72434b4849320a637ae63c09e8ee14f7ad787059",
+            "match": true
+          },
+          {
+            "caseId": "scoped-history",
+            "manifest": "remaining-local/cases/scoped-history/outputs/source-manifest.json",
+            "path": "<frozen-host-fixture>/runtime/plugins/cache/pstack-frozen-verification/pstack-openai/0.1.3/skills/why/references/investigator-prompt.md",
+            "expected": "6892956a7ab0b5ee6c4babaf4f793703abe89b350ea7cb9463b4a56eea1c8266",
+            "actual": "6892956a7ab0b5ee6c4babaf4f793703abe89b350ea7cb9463b4a56eea1c8266",
+            "match": true
+          },
+          {
+            "caseId": "scoped-history",
+            "manifest": "remaining-local/cases/scoped-history/outputs/source-manifest.json",
+            "path": "<frozen-host-fixture>/runtime/plugins/cache/pstack-frozen-verification/pstack-openai/0.1.3/skills/why/references/source-playbook.md",
+            "expected": "9ae9dcb9d09111c9facc68510331c5aba4aed9b1b057314ff1fc0e166ad3993a",
+            "actual": "9ae9dcb9d09111c9facc68510331c5aba4aed9b1b057314ff1fc0e166ad3993a",
+            "match": true
+          },
+          {
+            "caseId": "scoped-history",
+            "manifest": "remaining-local/cases/scoped-history/outputs/source-manifest.json",
+            "path": "<frozen-host-fixture>/runtime/plugins/cache/pstack-frozen-verification/pstack-openai/0.1.3/skills/why/references/sources/code-archaeology.md",
+            "expected": "8248a2dd584fca9904d8f7f19477ce3cc7f90a36606be10079121ca000e5fe5e",
+            "actual": "8248a2dd584fca9904d8f7f19477ce3cc7f90a36606be10079121ca000e5fe5e",
+            "match": true
+          },
+          {
+            "caseId": "scoped-history",
+            "manifest": "remaining-local/cases/scoped-history/outputs/source-manifest.json",
+            "path": "<frozen-host-fixture>/runtime/plugins/cache/pstack-frozen-verification/pstack-openai/0.1.3/skills/why/references/synthesizer-prompt.md",
+            "expected": "8b9491295ca3ba8c9d3c736beff62fc6c8375f352ca6e12ec04650495c35f49a",
+            "actual": "8b9491295ca3ba8c9d3c736beff62fc6c8375f352ca6e12ec04650495c35f49a",
+            "match": true
+          },
+          {
+            "caseId": "scoped-history",
+            "manifest": "remaining-local/cases/scoped-history/outputs/source-manifest.json",
+            "path": "<frozen-host-fixture>/runtime/plugins/cache/pstack-frozen-verification/pstack-openai/0.1.3/skills/how/SKILL.md",
+            "expected": "bca7b43af6d6d0089d20edb2ec2178d681d589357c20ea345eddbf81ce87f7e8",
+            "actual": "bca7b43af6d6d0089d20edb2ec2178d681d589357c20ea345eddbf81ce87f7e8",
+            "match": true
+          },
+          {
+            "caseId": "scoped-history",
+            "manifest": "remaining-local/cases/scoped-history/outputs/source-manifest.json",
+            "path": "<frozen-host-fixture>/runtime/plugins/cache/pstack-frozen-verification/pstack-openai/0.1.3/skills/how/references/explorer-prompt.md",
+            "expected": "5a799584adc07c774c4870846e34f0a8f8c82a75d151721d1aa225bb983523d2",
+            "actual": "5a799584adc07c774c4870846e34f0a8f8c82a75d151721d1aa225bb983523d2",
+            "match": true
+          },
+          {
+            "caseId": "scoped-history",
+            "manifest": "remaining-local/cases/scoped-history/outputs/source-manifest.json",
+            "path": "<frozen-host-fixture>/runtime/plugins/cache/pstack-frozen-verification/pstack-openai/0.1.3/skills/how/references/explainer-prompt.md",
+            "expected": "08618881df380b5c74a030d6a577fd07f0fc6a3a91b4d0ec1795da3c6350c9b1",
+            "actual": "08618881df380b5c74a030d6a577fd07f0fc6a3a91b4d0ec1795da3c6350c9b1",
+            "match": true
+          },
+          {
+            "caseId": "scoped-history",
+            "manifest": "remaining-local/cases/scoped-history/outputs/source-manifest.json",
+            "path": "<frozen-host-fixture>/runtime/plugins/cache/pstack-frozen-verification/pstack-openai/0.1.3/skills/unslop/SKILL.md",
+            "expected": "195411d320b5b328f9f642baf59757ed19aaf0931c0838740e0aca273d538dc1",
+            "actual": "195411d320b5b328f9f642baf59757ed19aaf0931c0838740e0aca273d538dc1",
+            "match": true
+          },
+          {
+            "caseId": "scoped-history",
+            "manifest": "remaining-local/cases/scoped-history/outputs/source-manifest.json",
+            "path": "<frozen-host-fixture>/runtime/plugins/cache/pstack-frozen-verification/pstack-openai/0.1.3/skills/poteto-mode/playbooks/investigation.md",
+            "expected": "f2172f39bc9b2365740b7ca932f6fc4b57e8b3269a4123f54b41d79d9c849360",
+            "actual": "f2172f39bc9b2365740b7ca932f6fc4b57e8b3269a4123f54b41d79d9c849360",
+            "match": true
+          },
+          {
+            "caseId": "scoped-history",
+            "manifest": "remaining-local/cases/scoped-history/outputs/source-manifest.json",
+            "path": "<frozen-host-fixture>/runtime/plugins/cache/pstack-frozen-verification/pstack-openai/0.1.3/skills/poteto-mode/playbooks/session-pickup.md",
+            "expected": "d378f43d865432b76d875b40ce3d7ed9290c35336e9d765e37ad1ffc302c4f70",
+            "actual": "d378f43d865432b76d875b40ce3d7ed9290c35336e9d765e37ad1ffc302c4f70",
+            "match": true
+          },
+          {
+            "caseId": "scoped-history",
+            "manifest": "remaining-local/cases/scoped-history/outputs/source-manifest.json",
+            "path": "<frozen-host-fixture>/runtime/plugins/cache/pstack-frozen-verification/pstack-openai/0.1.3/skills/automate-me/SKILL.md",
+            "expected": "a2fe9fd57d77c06ccff53bfcc35d01449d6d08fd5ee41660837fb8a94e55c903",
+            "actual": "a2fe9fd57d77c06ccff53bfcc35d01449d6d08fd5ee41660837fb8a94e55c903",
+            "match": true
+          },
+          {
+            "caseId": "scoped-history",
+            "manifest": "remaining-local/cases/scoped-history/outputs/source-manifest.json",
+            "path": "<frozen-host-fixture>/runtime/plugins/cache/pstack-frozen-verification/pstack-openai/0.1.3/skills/principle-prove-it-works/SKILL.md",
+            "expected": "a78cfdebd9dccfba5f6d69bbd74379924769d769e4b3e2f514846fc7bdd56edc",
+            "actual": "a78cfdebd9dccfba5f6d69bbd74379924769d769e4b3e2f514846fc7bdd56edc",
+            "match": true
+          },
+          {
+            "caseId": "scoped-history",
+            "manifest": "remaining-local/cases/scoped-history/outputs/source-manifest.json",
+            "path": "<frozen-host-fixture>/runtime/plugins/cache/pstack-frozen-verification/pstack-openai/0.1.3/skills/principle-build-the-lever/SKILL.md",
+            "expected": "483e5d66b0ec7fcbf98fe7175c20d60109f6a35c3c7fc8cc34771f42fee20083",
+            "actual": "483e5d66b0ec7fcbf98fe7175c20d60109f6a35c3c7fc8cc34771f42fee20083",
+            "match": true
+          },
+          {
+            "caseId": "scoped-history",
+            "manifest": "remaining-local/cases/scoped-history/outputs/source-manifest.json",
+            "path": "<frozen-host-fixture>/runtime/plugins/cache/pstack-frozen-verification/pstack-openai/0.1.3/skills/principle-laziness-protocol/SKILL.md",
+            "expected": "0c5116c90901bb8efc6e7b44f170bc9b7dd1a55b6cb2fa9f3abfd600d5c905fe",
+            "actual": "0c5116c90901bb8efc6e7b44f170bc9b7dd1a55b6cb2fa9f3abfd600d5c905fe",
+            "match": true
+          },
+          {
+            "caseId": "verifiable-feature",
+            "manifest": "recovery/local/projects/verifiable-feature/outputs/input-hashes.json",
+            "path": "<frozen-host-fixture>/runtime/plugins/cache/pstack-frozen-verification/pstack-openai/0.1.3/skills/poteto-mode/playbooks/feature.md",
+            "expected": "5ab43bd1145f1a4b059c0faa1ff6c97adb80c0f8b14f2d499a7fe5fbbea0170c",
+            "actual": "5ab43bd1145f1a4b059c0faa1ff6c97adb80c0f8b14f2d499a7fe5fbbea0170c",
+            "match": true
+          },
+          {
+            "caseId": "verifiable-feature",
+            "manifest": "recovery/local/projects/verifiable-feature/outputs/input-hashes.json",
+            "path": "<frozen-host-fixture>/runtime/plugins/cache/pstack-frozen-verification/pstack-openai/0.1.3/skills/poteto-mode/SKILL.md",
+            "expected": "cb03eedb91cea96b570af30a7af317c6aae6a47a321cff2e82af656141ab0f14",
+            "actual": "cb03eedb91cea96b570af30a7af317c6aae6a47a321cff2e82af656141ab0f14",
+            "match": true
+          },
+          {
+            "caseId": "verifiable-feature",
+            "manifest": "recovery/local/projects/verifiable-feature/outputs/input-hashes.json",
+            "path": "<frozen-host-fixture>/runtime/plugins/cache/pstack-frozen-verification/pstack-openai/0.1.3/references/agent-prompts/poteto-agent.md",
+            "expected": "9839239c6ebc72de8165f8a6fa4a6326fea7293e15a47d24f98396df2a61b3fb",
+            "actual": "9839239c6ebc72de8165f8a6fa4a6326fea7293e15a47d24f98396df2a61b3fb",
+            "match": true
+          },
+          {
+            "caseId": "verifiable-feature",
+            "manifest": "recovery/local/projects/verifiable-feature/outputs/input-hashes.json",
+            "path": "<frozen-host-fixture>/runtime/plugins/cache/pstack-frozen-verification/pstack-openai/0.1.3/skills/poteto-mode/playbooks/opening-a-pr.md",
+            "expected": "4198f32b22cf1d8ff367deee1dbfea805e6eecdd7ff1da3409ae7c0b07fb1c59",
+            "actual": "4198f32b22cf1d8ff367deee1dbfea805e6eecdd7ff1da3409ae7c0b07fb1c59",
+            "match": true
+          },
+          {
+            "caseId": "verifiable-feature",
+            "manifest": "recovery/local/projects/verifiable-feature/outputs/input-hashes.json",
+            "path": "<frozen-host-fixture>/runtime/plugins/cache/pstack-frozen-verification/pstack-openai/0.1.3/skills/how/SKILL.md",
+            "expected": "bca7b43af6d6d0089d20edb2ec2178d681d589357c20ea345eddbf81ce87f7e8",
+            "actual": "bca7b43af6d6d0089d20edb2ec2178d681d589357c20ea345eddbf81ce87f7e8",
+            "match": true
+          },
+          {
+            "caseId": "verifiable-feature",
+            "manifest": "recovery/local/projects/verifiable-feature/outputs/input-hashes.json",
+            "path": "<frozen-host-fixture>/runtime/plugins/cache/pstack-frozen-verification/pstack-openai/0.1.3/skills/how/references/explorer-prompt.md",
+            "expected": "5a799584adc07c774c4870846e34f0a8f8c82a75d151721d1aa225bb983523d2",
+            "actual": "5a799584adc07c774c4870846e34f0a8f8c82a75d151721d1aa225bb983523d2",
+            "match": true
+          },
+          {
+            "caseId": "verifiable-feature",
+            "manifest": "recovery/local/projects/verifiable-feature/outputs/input-hashes.json",
+            "path": "<frozen-host-fixture>/runtime/plugins/cache/pstack-frozen-verification/pstack-openai/0.1.3/skills/how/references/explainer-prompt.md",
+            "expected": "08618881df380b5c74a030d6a577fd07f0fc6a3a91b4d0ec1795da3c6350c9b1",
+            "actual": "08618881df380b5c74a030d6a577fd07f0fc6a3a91b4d0ec1795da3c6350c9b1",
+            "match": true
+          },
+          {
+            "caseId": "verifiable-feature",
+            "manifest": "recovery/local/projects/verifiable-feature/outputs/input-hashes.json",
+            "path": "<frozen-host-fixture>/runtime/plugins/cache/pstack-frozen-verification/pstack-openai/0.1.3/skills/architect/SKILL.md",
+            "expected": "af93988bb4eec01a50f1caf71fd196a01f5affd56d2dcb36fe70d1735fa28f78",
+            "actual": "af93988bb4eec01a50f1caf71fd196a01f5affd56d2dcb36fe70d1735fa28f78",
+            "match": true
+          },
+          {
+            "caseId": "verifiable-feature",
+            "manifest": "recovery/local/projects/verifiable-feature/outputs/input-hashes.json",
+            "path": "<frozen-host-fixture>/runtime/plugins/cache/pstack-frozen-verification/pstack-openai/0.1.3/skills/architect/references/runner-prompt.md",
+            "expected": "f5b4eab549743b873594ff0c98430564c11e607d6fa0f27275b281ae59d46942",
+            "actual": "f5b4eab549743b873594ff0c98430564c11e607d6fa0f27275b281ae59d46942",
+            "match": true
+          },
+          {
+            "caseId": "verifiable-feature",
+            "manifest": "recovery/local/projects/verifiable-feature/outputs/input-hashes.json",
+            "path": "<frozen-host-fixture>/runtime/plugins/cache/pstack-frozen-verification/pstack-openai/0.1.3/skills/architect/references/rationale-template.md",
+            "expected": "0cedfccdc7b47fc881febd5a8293eecbc542c20f8df825639904a8102d2eb5d3",
+            "actual": "0cedfccdc7b47fc881febd5a8293eecbc542c20f8df825639904a8102d2eb5d3",
+            "match": true
+          },
+          {
+            "caseId": "verifiable-feature",
+            "manifest": "recovery/local/projects/verifiable-feature/outputs/input-hashes.json",
+            "path": "<frozen-host-fixture>/runtime/plugins/cache/pstack-frozen-verification/pstack-openai/0.1.3/skills/arena/SKILL.md",
+            "expected": "28ecec523bed9d58bc044fe5abc549fc18a7c9de8e5ee6a124f7331fb0200cad",
+            "actual": "28ecec523bed9d58bc044fe5abc549fc18a7c9de8e5ee6a124f7331fb0200cad",
+            "match": true
+          },
+          {
+            "caseId": "verifiable-feature",
+            "manifest": "recovery/local/projects/verifiable-feature/outputs/input-hashes.json",
+            "path": "<frozen-host-fixture>/runtime/plugins/cache/pstack-frozen-verification/pstack-openai/0.1.3/skills/interrogate/SKILL.md",
+            "expected": "7a6714b0bfea7c2eb4a533f95873c80e17b7b6f9ef6314c0c42e8947602ad11b",
+            "actual": "7a6714b0bfea7c2eb4a533f95873c80e17b7b6f9ef6314c0c42e8947602ad11b",
+            "match": true
+          },
+          {
+            "caseId": "verifiable-feature",
+            "manifest": "recovery/local/projects/verifiable-feature/outputs/input-hashes.json",
+            "path": "<frozen-host-fixture>/runtime/plugins/cache/pstack-frozen-verification/pstack-openai/0.1.3/skills/interrogate/references/reviewer-prompt.md",
+            "expected": "e0598e254792b56de39bb16b1e6db559b03a522fdc54b98f942d254090920ae6",
+            "actual": "e0598e254792b56de39bb16b1e6db559b03a522fdc54b98f942d254090920ae6",
+            "match": true
+          },
+          {
+            "caseId": "verifiable-feature",
+            "manifest": "recovery/local/projects/verifiable-feature/outputs/input-hashes.json",
+            "path": "<frozen-host-fixture>/runtime/plugins/cache/pstack-frozen-verification/pstack-openai/0.1.3/skills/interrogate/references/rubric.md",
+            "expected": "a85aa801abbaf14434f00579440abc0d8e2723227ba8bf57de7cca8d6e7d2f25",
+            "actual": "a85aa801abbaf14434f00579440abc0d8e2723227ba8bf57de7cca8d6e7d2f25",
+            "match": true
+          },
+          {
+            "caseId": "verifiable-feature",
+            "manifest": "recovery/local/projects/verifiable-feature/outputs/input-hashes.json",
+            "path": "<frozen-host-fixture>/runtime/plugins/cache/pstack-frozen-verification/pstack-openai/0.1.3/skills/principle-model-the-domain/SKILL.md",
+            "expected": "05c073621ec18b442ecd7487dc6136bddb6a842f2bd537cb73567de7088a6b0e",
+            "actual": "05c073621ec18b442ecd7487dc6136bddb6a842f2bd537cb73567de7088a6b0e",
+            "match": true
+          },
+          {
+            "caseId": "verifiable-feature",
+            "manifest": "recovery/local/projects/verifiable-feature/outputs/input-hashes.json",
+            "path": "<frozen-host-fixture>/runtime/plugins/cache/pstack-frozen-verification/pstack-openai/0.1.3/skills/principle-separate-before-serializing-shared-state/SKILL.md",
+            "expected": "9ef714543b16665c68182e1b66beb22829fbc4b68e2ceb138db9858384c598ce",
+            "actual": "9ef714543b16665c68182e1b66beb22829fbc4b68e2ceb138db9858384c598ce",
+            "match": true
+          },
+          {
+            "caseId": "verifiable-feature",
+            "manifest": "recovery/local/projects/verifiable-feature/outputs/input-hashes.json",
+            "path": "<frozen-host-fixture>/runtime/plugins/cache/pstack-frozen-verification/pstack-openai/0.1.3/skills/principle-sequence-verifiable-units/SKILL.md",
+            "expected": "5818e68d1e41af2143362a3126b36ea6c15596b28a6e3a3235390c73cf4398a3",
+            "actual": "5818e68d1e41af2143362a3126b36ea6c15596b28a6e3a3235390c73cf4398a3",
+            "match": true
+          },
+          {
+            "caseId": "verifiable-feature",
+            "manifest": "recovery/local/projects/verifiable-feature/outputs/input-hashes.json",
+            "path": "<private-run>/recovery/local/projects/verifiable-feature/current-contract.json",
+            "expected": "6f1bcc3c47d929d5d68f653bdb739ad607cf037845406d2a918b2d9a8fb8af06",
+            "actual": "6f1bcc3c47d929d5d68f653bdb739ad607cf037845406d2a918b2d9a8fb8af06",
+            "match": true
+          },
+          {
+            "caseId": "verifiable-feature",
+            "manifest": "recovery/local/projects/verifiable-feature/outputs/input-hashes.json",
+            "path": "<private-run>/recovery/local/projects/verifiable-feature/task-contract.json",
+            "expected": "fdc518663b92b00a575294046c92fdcd74ce19dd09216994ca08b01ad2c9feee",
+            "actual": "fdc518663b92b00a575294046c92fdcd74ce19dd09216994ca08b01ad2c9feee",
+            "match": true
+          },
+          {
+            "caseId": "verifiable-feature",
+            "manifest": "recovery/local/projects/verifiable-feature/outputs/input-hashes.json",
+            "path": "<private-run>/recovery/local/projects/verifiable-feature/committed-inputs/shared/dashboard.mjs",
+            "expected": "34ce510c07f0391617a02e552ef0e184b1fa9d0cf718c72dfd23d67b6fd2a1b9",
+            "actual": "34ce510c07f0391617a02e552ef0e184b1fa9d0cf718c72dfd23d67b6fd2a1b9",
+            "match": true
+          },
+          {
+            "caseId": "verifiable-feature",
+            "manifest": "recovery/local/projects/verifiable-feature/outputs/input-hashes.json",
+            "path": "<private-run>/recovery/local/projects/verifiable-feature/committed-inputs/shared/orders.json",
+            "expected": "561bca1cb0c759f9785ae826d8285fab84f0d419760917709a7f44968d10ee93",
+            "actual": "561bca1cb0c759f9785ae826d8285fab84f0d419760917709a7f44968d10ee93",
+            "match": true
+          },
+          {
+            "caseId": "throwaway-probe",
+            "manifest": "recovery/local/projects/throwaway-probe/outputs/input-receipt.json",
+            "path": "<private-run>/recovery/local/projects/throwaway-probe/current-contract.json",
+            "expected": "e40fd64f375cc38b812157cd08d8cca0e3a54293a296027a3f7dd923d10f54e1",
+            "actual": "e40fd64f375cc38b812157cd08d8cca0e3a54293a296027a3f7dd923d10f54e1",
+            "match": true
+          },
+          {
+            "caseId": "throwaway-probe",
+            "manifest": "recovery/local/projects/throwaway-probe/outputs/input-receipt.json",
+            "path": "<private-run>/recovery/local/projects/throwaway-probe/task-contract.json",
+            "expected": "283e5aa51dc21f48334569d0148f2e3c3a03094504a44f4f5b6d1835bb8dec8b",
+            "actual": "283e5aa51dc21f48334569d0148f2e3c3a03094504a44f4f5b6d1835bb8dec8b",
+            "match": true
+          },
+          {
+            "caseId": "throwaway-probe",
+            "manifest": "recovery/local/projects/throwaway-probe/outputs/input-receipt.json",
+            "path": "<frozen-host-fixture>/runtime/plugins/cache/pstack-frozen-verification/pstack-openai/0.1.3/skills/poteto-mode/playbooks/prototype.md",
+            "expected": "f0674795fdb6e88af83945a518582763067e1efe2525ef5b1af4810db33e1d79",
+            "actual": "f0674795fdb6e88af83945a518582763067e1efe2525ef5b1af4810db33e1d79",
+            "match": true
+          },
+          {
+            "caseId": "throwaway-probe",
+            "manifest": "recovery/local/projects/throwaway-probe/outputs/input-receipt.json",
+            "path": "<frozen-host-fixture>/runtime/plugins/cache/pstack-frozen-verification/pstack-openai/0.1.3/skills/poteto-mode/SKILL.md",
+            "expected": "cb03eedb91cea96b570af30a7af317c6aae6a47a321cff2e82af656141ab0f14",
+            "actual": "cb03eedb91cea96b570af30a7af317c6aae6a47a321cff2e82af656141ab0f14",
+            "match": true
+          },
+          {
+            "caseId": "throwaway-probe",
+            "manifest": "recovery/local/projects/throwaway-probe/outputs/input-receipt.json",
+            "path": "<frozen-host-fixture>/runtime/plugins/cache/pstack-frozen-verification/pstack-openai/0.1.3/references/agent-prompts/poteto-agent.md",
+            "expected": "9839239c6ebc72de8165f8a6fa4a6326fea7293e15a47d24f98396df2a61b3fb",
+            "actual": "9839239c6ebc72de8165f8a6fa4a6326fea7293e15a47d24f98396df2a61b3fb",
+            "match": true
+          },
+          {
+            "caseId": "throwaway-probe",
+            "manifest": "recovery/local/projects/throwaway-probe/outputs/input-receipt.json",
+            "path": "<frozen-host-fixture>/runtime/plugins/cache/pstack-frozen-verification/pstack-openai/0.1.3/skills/principle-exhaust-the-design-space/SKILL.md",
+            "expected": "7dfbe3694a6caf349d2a5ed77667ebb647031a3516603bea43e3cbe709875a6a",
+            "actual": "7dfbe3694a6caf349d2a5ed77667ebb647031a3516603bea43e3cbe709875a6a",
+            "match": true
+          },
+          {
+            "caseId": "throwaway-probe",
+            "manifest": "recovery/local/projects/throwaway-probe/outputs/input-receipt.json",
+            "path": "<frozen-host-fixture>/runtime/plugins/cache/pstack-frozen-verification/pstack-openai/0.1.3/skills/poteto-mode/playbooks/feature.md",
+            "expected": "5ab43bd1145f1a4b059c0faa1ff6c97adb80c0f8b14f2d499a7fe5fbbea0170c",
+            "actual": "5ab43bd1145f1a4b059c0faa1ff6c97adb80c0f8b14f2d499a7fe5fbbea0170c",
+            "match": true
+          },
+          {
+            "caseId": "throwaway-probe",
+            "manifest": "recovery/local/projects/throwaway-probe/outputs/input-receipt.json",
+            "path": "<frozen-host-fixture>/runtime/plugins/cache/pstack-frozen-verification/pstack-openai/0.1.3/skills/architect/SKILL.md",
+            "expected": "af93988bb4eec01a50f1caf71fd196a01f5affd56d2dcb36fe70d1735fa28f78",
+            "actual": "af93988bb4eec01a50f1caf71fd196a01f5affd56d2dcb36fe70d1735fa28f78",
+            "match": true
+          },
+          {
+            "caseId": "throwaway-probe",
+            "manifest": "recovery/local/projects/throwaway-probe/outputs/input-receipt.json",
+            "path": "<frozen-host-fixture>/runtime/plugins/cache/pstack-frozen-verification/pstack-openai/0.1.3/skills/architect/references/runner-prompt.md",
+            "expected": "f5b4eab549743b873594ff0c98430564c11e607d6fa0f27275b281ae59d46942",
+            "actual": "f5b4eab549743b873594ff0c98430564c11e607d6fa0f27275b281ae59d46942",
+            "match": true
+          },
+          {
+            "caseId": "throwaway-probe",
+            "manifest": "recovery/local/projects/throwaway-probe/outputs/input-receipt.json",
+            "path": "<frozen-host-fixture>/runtime/plugins/cache/pstack-frozen-verification/pstack-openai/0.1.3/skills/architect/references/rationale-template.md",
+            "expected": "0cedfccdc7b47fc881febd5a8293eecbc542c20f8df825639904a8102d2eb5d3",
+            "actual": "0cedfccdc7b47fc881febd5a8293eecbc542c20f8df825639904a8102d2eb5d3",
+            "match": true
+          },
+          {
+            "caseId": "throwaway-probe",
+            "manifest": "recovery/local/projects/throwaway-probe/outputs/input-receipt.json",
+            "path": "<frozen-host-fixture>/runtime/plugins/cache/pstack-frozen-verification/pstack-openai/0.1.3/skills/architect/references/design-red-flags.md",
+            "expected": "d0e639e4cc588ec865f930d3a4111faad60987ae36925917e319d7ceca7c69ce",
+            "actual": "d0e639e4cc588ec865f930d3a4111faad60987ae36925917e319d7ceca7c69ce",
+            "match": true
+          },
+          {
+            "caseId": "throwaway-probe",
+            "manifest": "recovery/local/projects/throwaway-probe/outputs/input-receipt.json",
+            "path": "<frozen-host-fixture>/runtime/plugins/cache/pstack-frozen-verification/pstack-openai/0.1.3/skills/benchmark-checklist/SKILL.md",
+            "expected": "81ecaa398ff10882a1e1050c529c04c3a678eecc03e36ad24549379c3776d106",
+            "actual": "81ecaa398ff10882a1e1050c529c04c3a678eecc03e36ad24549379c3776d106",
+            "match": true
+          },
+          {
+            "caseId": "throwaway-probe",
+            "manifest": "recovery/local/projects/throwaway-probe/outputs/input-receipt.json",
+            "path": "<frozen-host-fixture>/runtime/plugins/cache/pstack-frozen-verification/pstack-openai/0.1.3/skills/poteto-mode/playbooks/opening-a-pr.md",
+            "expected": "4198f32b22cf1d8ff367deee1dbfea805e6eecdd7ff1da3409ae7c0b07fb1c59",
+            "actual": "4198f32b22cf1d8ff367deee1dbfea805e6eecdd7ff1da3409ae7c0b07fb1c59",
+            "match": true
+          },
+          {
+            "caseId": "benny-duplicate-report",
+            "manifest": "recovery/local/projects/benny-duplicate-report/outputs/source-manifest.json",
+            "path": "<frozen-host-fixture>/runtime/plugins/cache/pstack-frozen-verification/pstack-openai/0.1.3/automations/benny/FOR_AGENTS.md",
+            "expected": "099ee5b792ce47957350f7e34c06f070038b36a4cca094539ba5950364c3d7e8",
+            "actual": "099ee5b792ce47957350f7e34c06f070038b36a4cca094539ba5950364c3d7e8",
+            "match": true
+          },
+          {
+            "caseId": "benny-duplicate-report",
+            "manifest": "recovery/local/projects/benny-duplicate-report/outputs/source-manifest.json",
+            "path": "<frozen-host-fixture>/runtime/plugins/cache/pstack-frozen-verification/pstack-openai/0.1.3/automations/benny/README.md",
+            "expected": "dee82d2c8c2750a219be78ac7e67456dfe83ef86e14222411f82b908aba5af6d",
+            "actual": "dee82d2c8c2750a219be78ac7e67456dfe83ef86e14222411f82b908aba5af6d",
+            "match": true
+          },
+          {
+            "caseId": "benny-duplicate-report",
+            "manifest": "recovery/local/projects/benny-duplicate-report/outputs/source-manifest.json",
+            "path": "<frozen-host-fixture>/runtime/plugins/cache/pstack-frozen-verification/pstack-openai/0.1.3/automations/benny/skills/reproduce-and-fix-issues/REFERENCE.md",
+            "expected": "a80f670a073aa7a13e7501d22e346f2c6f34068073f540d1703ca1178dadd06b",
+            "actual": "a80f670a073aa7a13e7501d22e346f2c6f34068073f540d1703ca1178dadd06b",
+            "match": true
+          },
+          {
+            "caseId": "benny-duplicate-report",
+            "manifest": "recovery/local/projects/benny-duplicate-report/outputs/source-manifest.json",
+            "path": "<frozen-host-fixture>/runtime/plugins/cache/pstack-frozen-verification/pstack-openai/0.1.3/automations/benny/skills/reproduce-and-fix-issues/references/control-adapter.md",
+            "expected": "883b3c86f51df2b45547647fd2d409a3ec7678dd72b41454e0002d37763f9c02",
+            "actual": "883b3c86f51df2b45547647fd2d409a3ec7678dd72b41454e0002d37763f9c02",
+            "match": true
+          },
+          {
+            "caseId": "benny-duplicate-report",
+            "manifest": "recovery/local/projects/benny-duplicate-report/outputs/source-manifest.json",
+            "path": "<frozen-host-fixture>/runtime/plugins/cache/pstack-frozen-verification/pstack-openai/0.1.3/automations/benny/skills/reproduce-and-fix-issues/references/feature-map.example.md",
+            "expected": "84223bc5c35ff789024e6d93748c3287a9a042e078ebc4a187f086dd0a96d28f",
+            "actual": "84223bc5c35ff789024e6d93748c3287a9a042e078ebc4a187f086dd0a96d28f",
+            "match": true
+          },
+          {
+            "caseId": "benny-duplicate-report",
+            "manifest": "recovery/local/projects/benny-duplicate-report/outputs/source-manifest.json",
+            "path": "<frozen-host-fixture>/runtime/plugins/cache/pstack-frozen-verification/pstack-openai/0.1.3/automations/benny/skills/reproduce-and-fix-issues/references/verify-existing-fix.md",
+            "expected": "084509e52c5533a4527659a3aaf5311cc5b151846b1457bb39c8d16a847c02fc",
+            "actual": "084509e52c5533a4527659a3aaf5311cc5b151846b1457bb39c8d16a847c02fc",
+            "match": true
+          },
+          {
+            "caseId": "benny-duplicate-report",
+            "manifest": "recovery/local/projects/benny-duplicate-report/outputs/source-manifest.json",
+            "path": "<frozen-host-fixture>/runtime/plugins/cache/pstack-frozen-verification/pstack-openai/0.1.3/automations/benny/skills/setup-benny/REFERENCE.md",
+            "expected": "7be95406bb1c43deeb2ef5fb5ef9dc4ac603db5cc62c85cc56d7dc7a3fe62378",
+            "actual": "7be95406bb1c43deeb2ef5fb5ef9dc4ac603db5cc62c85cc56d7dc7a3fe62378",
+            "match": true
+          },
+          {
+            "caseId": "benny-duplicate-report",
+            "manifest": "recovery/local/projects/benny-duplicate-report/outputs/source-manifest.json",
+            "path": "<frozen-host-fixture>/runtime/plugins/cache/pstack-frozen-verification/pstack-openai/0.1.3/automations/benny/skills/triage-issue-reports/REFERENCE.md",
+            "expected": "11d9e2e705a51d7cd6881ad2ba6344eaa9c3541c2e0abbe5418691dc08dc5e06",
+            "actual": "11d9e2e705a51d7cd6881ad2ba6344eaa9c3541c2e0abbe5418691dc08dc5e06",
+            "match": true
+          },
+          {
+            "caseId": "benny-duplicate-report",
+            "manifest": "recovery/local/projects/benny-duplicate-report/outputs/source-manifest.json",
+            "path": "<frozen-host-fixture>/runtime/plugins/cache/pstack-frozen-verification/pstack-openai/0.1.3/automations/benny/skills/triage-issue-reports/references/routing.example.md",
+            "expected": "ce156a0ef1f6d0d4c95dbeaaec1a0b0efd5e7b8d9aa13240ba5918d89010bb4f",
+            "actual": "ce156a0ef1f6d0d4c95dbeaaec1a0b0efd5e7b8d9aa13240ba5918d89010bb4f",
+            "match": true
+          },
+          {
+            "caseId": "benny-duplicate-report",
+            "manifest": "recovery/local/projects/benny-duplicate-report/outputs/source-manifest.json",
+            "path": "<frozen-host-fixture>/runtime/plugins/cache/pstack-frozen-verification/pstack-openai/0.1.3/automations/benny/templates/configuration.example.yaml",
+            "expected": "90451f9a168430b82aee659d0f66b32c846218945032f619f0af264c2f887803",
+            "actual": "90451f9a168430b82aee659d0f66b32c846218945032f619f0af264c2f887803",
+            "match": true
+          },
+          {
+            "caseId": "benny-duplicate-report",
+            "manifest": "recovery/local/projects/benny-duplicate-report/outputs/source-manifest.json",
+            "path": "<frozen-host-fixture>/runtime/plugins/cache/pstack-frozen-verification/pstack-openai/0.1.3/automations/benny/templates/reproduce-automation-prompt.md",
+            "expected": "a81772aabac7fae0807aad4ad2e7722f1de59b280ba002e2a64d165bea0603aa",
+            "actual": "a81772aabac7fae0807aad4ad2e7722f1de59b280ba002e2a64d165bea0603aa",
+            "match": true
+          },
+          {
+            "caseId": "benny-duplicate-report",
+            "manifest": "recovery/local/projects/benny-duplicate-report/outputs/source-manifest.json",
+            "path": "<frozen-host-fixture>/runtime/plugins/cache/pstack-frozen-verification/pstack-openai/0.1.3/automations/benny/templates/triage-automation-prompt.md",
+            "expected": "c1a330047485c3e9028428ed561e127d1875020ca2524f8c26c234dc4f05a70c",
+            "actual": "c1a330047485c3e9028428ed561e127d1875020ca2524f8c26c234dc4f05a70c",
+            "match": true
+          },
+          {
+            "caseId": "benny-duplicate-report",
+            "manifest": "recovery/local/projects/benny-duplicate-report/outputs/source-manifest.json",
+            "path": "<frozen-host-fixture>/runtime/plugins/cache/pstack-frozen-verification/pstack-openai/0.1.3/references/agent-prompts/poteto-agent.md",
+            "expected": "9839239c6ebc72de8165f8a6fa4a6326fea7293e15a47d24f98396df2a61b3fb",
+            "actual": "9839239c6ebc72de8165f8a6fa4a6326fea7293e15a47d24f98396df2a61b3fb",
+            "match": true
+          },
+          {
+            "caseId": "benny-duplicate-report",
+            "manifest": "recovery/local/projects/benny-duplicate-report/outputs/source-manifest.json",
+            "path": "<frozen-host-fixture>/runtime/plugins/cache/pstack-frozen-verification/pstack-openai/0.1.3/references/model-roles.md",
+            "expected": "c86696b6c568b7db80a7e339856986e64482ce6a418bb91946ce3a3b772f79a1",
+            "actual": "c86696b6c568b7db80a7e339856986e64482ce6a418bb91946ce3a3b772f79a1",
+            "match": true
+          },
+          {
+            "caseId": "benny-duplicate-report",
+            "manifest": "recovery/local/projects/benny-duplicate-report/outputs/source-manifest.json",
+            "path": "<frozen-host-fixture>/runtime/plugins/cache/pstack-frozen-verification/pstack-openai/0.1.3/references/host-capabilities.md",
+            "expected": "f0f09ce28b6feca4d72694d5687204dc074aa58dade9a0ab59656da3bfa1bd20",
+            "actual": "f0f09ce28b6feca4d72694d5687204dc074aa58dade9a0ab59656da3bfa1bd20",
+            "match": true
+          },
+          {
+            "caseId": "benny-duplicate-report",
+            "manifest": "recovery/local/projects/benny-duplicate-report/outputs/source-manifest.json",
+            "path": "<frozen-host-fixture>/runtime/plugins/cache/pstack-frozen-verification/pstack-openai/0.1.3/references/orchestration-contract.md",
+            "expected": "5dd740ad66d992df252754d189d0dc207900023372392a0db4309b85eb5e4ec5",
+            "actual": "5dd740ad66d992df252754d189d0dc207900023372392a0db4309b85eb5e4ec5",
+            "match": true
+          },
+          {
+            "caseId": "benny-duplicate-report",
+            "manifest": "recovery/local/projects/benny-duplicate-report/outputs/source-manifest.json",
+            "path": "<frozen-host-fixture>/runtime/plugins/cache/pstack-frozen-verification/pstack-openai/0.1.3/references/workflow-ownership.md",
+            "expected": "50644b3a9a3dfd5651382eaca1d3a2728af0b3157d6d66b730930370a64bb03c",
+            "actual": "50644b3a9a3dfd5651382eaca1d3a2728af0b3157d6d66b730930370a64bb03c",
+            "match": true
+          },
+          {
+            "caseId": "benny-duplicate-report",
+            "manifest": "recovery/local/projects/benny-duplicate-report/outputs/source-manifest.json",
+            "path": "<frozen-host-fixture>/runtime/plugins/cache/pstack-frozen-verification/pstack-openai/0.1.3/skills/poteto-mode/SKILL.md",
+            "expected": "cb03eedb91cea96b570af30a7af317c6aae6a47a321cff2e82af656141ab0f14",
+            "actual": "cb03eedb91cea96b570af30a7af317c6aae6a47a321cff2e82af656141ab0f14",
+            "match": true
+          },
+          {
+            "caseId": "benny-duplicate-report",
+            "manifest": "recovery/local/projects/benny-duplicate-report/outputs/source-manifest.json",
+            "path": "<frozen-host-fixture>/runtime/plugins/cache/pstack-frozen-verification/pstack-openai/0.1.3/skills/poteto-mode/playbooks/investigation.md",
+            "expected": "f2172f39bc9b2365740b7ca932f6fc4b57e8b3269a4123f54b41d79d9c849360",
+            "actual": "f2172f39bc9b2365740b7ca932f6fc4b57e8b3269a4123f54b41d79d9c849360",
+            "match": true
+          },
+          {
+            "caseId": "benny-duplicate-report",
+            "manifest": "recovery/local/projects/benny-duplicate-report/outputs/source-manifest.json",
+            "path": "<frozen-host-fixture>/runtime/plugins/cache/pstack-frozen-verification/pstack-openai/0.1.3/skills/poteto-mode/playbooks/authoring-a-skill.md",
+            "expected": "cf113c443f9c5bdeac0d10d7dfec49eee05dc9da5528e56944d44b68911f9b27",
+            "actual": "cf113c443f9c5bdeac0d10d7dfec49eee05dc9da5528e56944d44b68911f9b27",
+            "match": true
+          },
+          {
+            "caseId": "benny-duplicate-report",
+            "manifest": "recovery/local/projects/benny-duplicate-report/outputs/source-manifest.json",
+            "path": "<frozen-host-fixture>/runtime/plugins/cache/pstack-frozen-verification/pstack-openai/0.1.3/skills/how/SKILL.md",
+            "expected": "bca7b43af6d6d0089d20edb2ec2178d681d589357c20ea345eddbf81ce87f7e8",
+            "actual": "bca7b43af6d6d0089d20edb2ec2178d681d589357c20ea345eddbf81ce87f7e8",
+            "match": true
+          },
+          {
+            "caseId": "benny-duplicate-report",
+            "manifest": "recovery/local/projects/benny-duplicate-report/outputs/source-manifest.json",
+            "path": "<frozen-host-fixture>/runtime/plugins/cache/pstack-frozen-verification/pstack-openai/0.1.3/skills/how/references/explainer-prompt.md",
+            "expected": "08618881df380b5c74a030d6a577fd07f0fc6a3a91b4d0ec1795da3c6350c9b1",
+            "actual": "08618881df380b5c74a030d6a577fd07f0fc6a3a91b4d0ec1795da3c6350c9b1",
+            "match": true
+          },
+          {
+            "caseId": "benny-duplicate-report",
+            "manifest": "recovery/local/projects/benny-duplicate-report/outputs/source-manifest.json",
+            "path": "<frozen-host-fixture>/runtime/plugins/cache/pstack-frozen-verification/pstack-openai/0.1.3/skills/unslop/SKILL.md",
+            "expected": "195411d320b5b328f9f642baf59757ed19aaf0931c0838740e0aca273d538dc1",
+            "actual": "195411d320b5b328f9f642baf59757ed19aaf0931c0838740e0aca273d538dc1",
+            "match": true
+          },
+          {
+            "caseId": "benny-duplicate-report",
+            "manifest": "recovery/local/projects/benny-duplicate-report/outputs/source-manifest.json",
+            "path": "<frozen-host-fixture>/runtime/plugins/cache/pstack-frozen-verification/pstack-openai/0.1.3/skills/technical-writing/SKILL.md",
+            "expected": "409a010a405d3ea3e4c2386e2a5ce5fa7cc64dffd8304feb99282a5e099564f6",
+            "actual": "409a010a405d3ea3e4c2386e2a5ce5fa7cc64dffd8304feb99282a5e099564f6",
+            "match": true
+          },
+          {
+            "caseId": "benny-duplicate-report",
+            "manifest": "recovery/local/projects/benny-duplicate-report/outputs/source-manifest.json",
+            "path": "<frozen-host-fixture>/runtime/plugins/cache/pstack-frozen-verification/pstack-openai/0.1.3/skills/principle-prove-it-works/SKILL.md",
+            "expected": "a78cfdebd9dccfba5f6d69bbd74379924769d769e4b3e2f514846fc7bdd56edc",
+            "actual": "a78cfdebd9dccfba5f6d69bbd74379924769d769e4b3e2f514846fc7bdd56edc",
+            "match": true
+          },
+          {
+            "caseId": "benny-duplicate-report",
+            "manifest": "recovery/local/projects/benny-duplicate-report/outputs/source-manifest.json",
+            "path": "<frozen-host-fixture>/runtime/plugins/cache/pstack-frozen-verification/pstack-openai/0.1.3/skills/principle-separate-before-serializing-shared-state/SKILL.md",
+            "expected": "9ef714543b16665c68182e1b66beb22829fbc4b68e2ceb138db9858384c598ce",
+            "actual": "9ef714543b16665c68182e1b66beb22829fbc4b68e2ceb138db9858384c598ce",
+            "match": true
+          },
+          {
+            "caseId": "benny-duplicate-report",
+            "manifest": "recovery/local/projects/benny-duplicate-report/outputs/source-manifest.json",
+            "path": "<frozen-host-fixture>/runtime/plugins/cache/pstack-frozen-verification/pstack-openai/0.1.3/skills/principle-minimize-reader-load/SKILL.md",
+            "expected": "8684154522048e9e5723f559a5ba9ecfcca87d551a76b9cd2ecd8668b48ccf90",
+            "actual": "8684154522048e9e5723f559a5ba9ecfcca87d551a76b9cd2ecd8668b48ccf90",
+            "match": true
+          },
+          {
+            "caseId": "benny-duplicate-report",
+            "manifest": "recovery/local/projects/benny-duplicate-report/outputs/source-manifest.json",
+            "path": "<frozen-host-fixture>/runtime/plugins/cache/pstack-frozen-verification/pstack-openai/0.1.3/skills/principle-build-the-lever/SKILL.md",
+            "expected": "483e5d66b0ec7fcbf98fe7175c20d60109f6a35c3c7fc8cc34771f42fee20083",
+            "actual": "483e5d66b0ec7fcbf98fe7175c20d60109f6a35c3c7fc8cc34771f42fee20083",
+            "match": true
+          },
+          {
+            "caseId": "benny-duplicate-report",
+            "manifest": "recovery/local/projects/benny-duplicate-report/outputs/source-manifest.json",
+            "path": "<frozen-host-fixture>/runtime/plugins/cache/pstack-frozen-verification/pstack-openai/0.1.3/skills/principle-model-the-domain/SKILL.md",
+            "expected": "05c073621ec18b442ecd7487dc6136bddb6a842f2bd537cb73567de7088a6b0e",
+            "actual": "05c073621ec18b442ecd7487dc6136bddb6a842f2bd537cb73567de7088a6b0e",
+            "match": true
+          },
+          {
+            "caseId": "benny-duplicate-report",
+            "manifest": "recovery/local/projects/benny-duplicate-report/outputs/source-manifest.json",
+            "path": "<frozen-host-fixture>/runtime/plugins/cache/pstack-frozen-verification/pstack-openai/0.1.3/skills/principle-laziness-protocol/SKILL.md",
+            "expected": "0c5116c90901bb8efc6e7b44f170bc9b7dd1a55b6cb2fa9f3abfd600d5c905fe",
+            "actual": "0c5116c90901bb8efc6e7b44f170bc9b7dd1a55b6cb2fa9f3abfd600d5c905fe",
+            "match": true
+          },
+          {
+            "caseId": "benny-duplicate-report",
+            "manifest": "recovery/local/projects/benny-duplicate-report/outputs/source-manifest.json",
+            "path": "<frozen-host-fixture>/runtime/plugins/cache/pstack-frozen-verification/pstack-openai/0.1.3/docs/parity/cases/benny.json",
+            "expected": "085dd1d6cc1ce1133c601bc936a65947824855405068bd0161904b8572354953",
+            "actual": "085dd1d6cc1ce1133c601bc936a65947824855405068bd0161904b8572354953",
+            "match": true
+          }
+        ],
+        "methods": [
+          {
+            "caseId": "throwaway-probe",
+            "assignmentId": "recovery-throwaway-probe",
+            "resultAssignmentId": "recovery-throwaway-probe",
+            "method": {
+              "sampleCount": 1,
+              "sampleDefinition": "One fresh linked native workflow case on its original pristine fixture inputs",
+              "order": "Successful bootstrap, immutable assignment to observed native session, full frozen source reads, actual case execution, terminal inspection"
+            },
+            "resultMethod": {
+              "sampleCount": 1,
+              "sampleDefinition": "One fresh linked native workflow case on its original pristine fixture inputs",
+              "order": "Successful bootstrap, immutable assignment to observed native session, full frozen source reads, actual case execution, terminal inspection"
+            },
+            "methodMatch": true,
+            "revisionMatch": true,
+            "ownerMatch": true
+          },
+          {
+            "caseId": "benny-duplicate-report",
+            "assignmentId": "recovery-benny-duplicate-report",
+            "resultAssignmentId": "recovery-benny-duplicate-report",
+            "method": {
+              "sampleCount": 1,
+              "sampleDefinition": "One fresh linked native workflow case on its original pristine fixture inputs",
+              "order": "Successful bootstrap, immutable assignment to observed native session, full frozen source reads, actual case execution, terminal inspection"
+            },
+            "resultMethod": {
+              "sampleCount": 1,
+              "sampleDefinition": "One fresh linked native workflow case on its original pristine fixture inputs",
+              "order": "Successful bootstrap, immutable assignment to observed native session, full frozen source reads, actual case execution, terminal inspection"
+            },
+            "methodMatch": true,
+            "revisionMatch": true,
+            "ownerMatch": true
+          }
+        ],
+        "heads": [
+          {
+            "caseId": "uncertain-result",
+            "cwd": "<private-run>/remaining-local/cases/uncertain-result",
+            "exitCode": 0,
+            "head": "f9e9fc7a541991d42bb32509a7c1441b5f7e735a"
+          },
+          {
+            "caseId": "benny-missing-coordinates",
+            "cwd": "<private-run>/remaining-local/cases/benny-missing-coordinates",
+            "exitCode": 0,
+            "head": "5cc0b72d4cefe10d8f112d0fb6f63e723311ac03"
+          },
+          {
+            "caseId": "scoped-history",
+            "cwd": "<private-run>/remaining-local/cases/scoped-history",
+            "exitCode": 0,
+            "head": "064241450f5012ecb2bf46042120c2aa95c2ecab"
+          },
+          {
+            "caseId": "verifiable-feature",
+            "cwd": "<private-run>/recovery/local/projects/verifiable-feature",
+            "exitCode": 0,
+            "head": "4e009410c1d413c6cd8a99c262b078dc3cf791f8"
+          },
+          {
+            "caseId": "throwaway-probe",
+            "cwd": "<private-run>/recovery/local/projects/throwaway-probe",
+            "exitCode": 0,
+            "head": "37651df93e527c9caf487d92b88a273ac72f95d9"
+          },
+          {
+            "caseId": "benny-duplicate-report",
+            "cwd": "<private-run>/recovery/local/projects/benny-duplicate-report",
+            "exitCode": 0,
+            "head": "df4811ec1a26ec6dd333849d9b5b6a8a291b834c"
+          }
+        ]
+      }
+    }
+  ],
+  "limits": [
+    "Interrupted feature retains real literal tests but no accepted owned browser endpoint.",
+    "Old batch07 missing returned method metadata remains missing.",
+    "Duplicate case lacks actual issue and prior-verdict content; an invented premise cannot satisfy detection."
+  ]
+}

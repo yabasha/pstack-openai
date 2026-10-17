@@ -1,0 +1,729 @@
+{
+  "schemaVersion": 1,
+  "kind": "historical-independent-assessment-projection",
+  "caseId": "contiguous-verified-stack",
+  "attemptId": "review-a-13",
+  "startingMain": "4138e161c27cafffd2baaab6bf4ca53e86a57433",
+  "packageCommit": "51f209daf83cd97d64f89881d66533bb59dc57db",
+  "packageVersion": "0.1.3",
+  "inputRevision": "4a7dde94ab2778837e4c932e53cc3484d2e74dfd",
+  "originalProposedStatus": "reduced-pass",
+  "evidenceStatus": "reduced-pass",
+  "qualifiesCurrentMain": false,
+  "sourceReview": {
+    "originalLocator": "grades/grade_remediation_local_a/result.json",
+    "sourceSha256": "9cc1f7ebfcf0f02bdaaabc03a16ca8ef1a0dcc165259e873d7be84affe57bc2f",
+    "jsonPointer": "/cases/12",
+    "reviewer": "/root/grade_remediation_local_a",
+    "requestedModel": "inherit-parent",
+    "actualModel": "unknown"
+  },
+  "findings": [
+    "Independent non-author verifiers inspected exact parent/head CLI artifacts. The local prefix was 101 and 102; missing 103 prevented 104 bypass. PASS+NOTES was accepted. Changed substantive 101 invalidated its old verdict and received a fresh independent verifier.",
+    "Actual local Git squash model merged only one bottom at a time, fetched local trunk and checked merged inclusion before the next preparation. No live merge or forge outcome is claimed.",
+    "Actual PTY watcher observations distinguish WAITING, ADVANCE, COMPLETE and terminal budget exhaustion. Active simulated forge state was re-read instead of equating READY with merge.",
+    "The alleged built lanes do not build app.ts. build-fixture.ts writes a build.ts whose bundle.txt is the literal stable application payload. Nonce and revision fields exercise noise classification but cannot prove what the app lane built.",
+    "Affected original verdict PR102 is 732415de4d6377848b3c2df8b7246f48a5fdaef8; current docs/lint/test variant is 77a896a2783783ffdbee2372144e58ddb1506e14. Both cli-build and alternate-build retain this constant-payload defect."
+  ],
+  "limits": [
+    "Actual local Git squash model merged only one bottom at a time, fetched local trunk and checked merged inclusion before the next preparation. No live merge or forge outcome is claimed.",
+    "The alleged built lanes do not build app.ts. build-fixture.ts writes a build.ts whose bundle.txt is the literal stable application payload. Nonce and revision fields exercise noise classification but cannot prove what the app lane built."
+  ],
+  "chronology": {
+    "preserveAllEarlierAttempts": true,
+    "methodConformanceClaim": false,
+    "notes": [
+      "Actual local Git squash model merged only one bottom at a time, fetched local trunk and checked merged inclusion before the next preparation. No live merge or forge outcome is claimed.",
+      "Actual PTY watcher observations distinguish WAITING, ADVANCE, COMPLETE and terminal budget exhaustion. Active simulated forge state was re-read instead of equating READY with merge."
+    ]
+  },
+  "predicate": [
+    {
+      "id": 1,
+      "text": "Record exact verdict head SHA, base SHA, stable patch-id, independent non-author verifier identity and parent-versus-head real-surface artifacts per PR.",
+      "status": "satisfied",
+      "basis": [
+        "Independent non-author verifiers inspected exact parent/head CLI artifacts. The local prefix was 101 and 102; missing 103 prevented 104 bypass. PASS+NOTES was accepted. Changed substantive 101 invalidated its old verdict and received a fresh independent verifier.",
+        "Actual local Git squash model merged only one bottom at a time, fetched local trunk and checked merged inclusion before the next preparation. No live merge or forge outcome is claimed.",
+        "Actual PTY watcher observations distinguish WAITING, ADVANCE, COMPLETE and terminal budget exhaustion. Active simulated forge state was re-read instead of equating READY with merge.",
+        "The alleged built lanes do not build app.ts. build-fixture.ts writes a build.ts whose bundle.txt is the literal stable application payload. Nonce and revision fields exercise noise classification but cannot prove what the app lane built.",
+        "Affected original verdict PR102 is 732415de4d6377848b3c2df8b7246f48a5fdaef8; current docs/lint/test variant is 77a896a2783783ffdbee2372144e58ddb1506e14. Both cli-build and alternate-build retain this constant-payload defect."
+      ],
+      "source": "docs/parity/cases/playbooks/shipping.json",
+      "evidence": [
+        {
+          "path": "<private-run>/work/helper_workflow_reruns/projects/release-stack/deliverables/result.json",
+          "line": 1,
+          "sha256": "e7da8bd42e3a01b45f5502a4f7a4cdd05285acad106e6350f440e1eab99192be"
+        },
+        {
+          "path": "<private-run>/work/helper_workflow_reruns/projects/release-stack/deliverables/builder/build-fixture.ts",
+          "line": 1,
+          "sha256": "8ff70765ad106dff32d9ce55f47fbe89d81323deb29370f95118017e38e5ff52"
+        },
+        {
+          "path": "<private-run>/work/helper_workflow_reruns/projects/release-stack/deliverables/builder/noise-report.json",
+          "line": 1,
+          "sha256": "a002ff3938866884cab7a96a8da7758f7593de75e47d5deda1961ce895f7676a"
+        },
+        {
+          "path": "<private-run>/work/helper_workflow_reruns/projects/release-stack/deliverables/builder/merge-model.json",
+          "line": 1,
+          "sha256": "cd204166657b650b9baf78b9a701d19fdb26e8a8f480abe50f11908c460b96bd"
+        },
+        {
+          "path": "<private-run>/work/helper_workflow_reruns/projects/release-stack/deliverables/builder/merge-raw.json",
+          "line": 1,
+          "sha256": "4ca86f3844287686e7e1bd9c3a537c1a92e2dd855b15a61f6669cd743cabda85"
+        },
+        {
+          "path": "<private-run>/work/helper_workflow_reruns/projects/release-stack/deliverables/verifier-a/result.json",
+          "line": 1,
+          "sha256": "33515a3a43c303a82091321879579389aef7a3cd952d97320a6e4668d06f17e2"
+        },
+        {
+          "path": "<private-run>/work/helper_workflow_reruns/projects/release-stack/deliverables/verifier-a/pty-raw.json",
+          "line": 1,
+          "sha256": "c0cb78413b8220ab444055bb8fdc03c61bae339a2b256a14a7683f5a4cb6fa71"
+        },
+        {
+          "path": "<private-run>/work/helper_workflow_reruns/projects/release-stack/deliverables/verifier-b/result.json",
+          "line": 1,
+          "sha256": "34a355831066e912d1d90f32290b79ef53491505ff8ba1f2f5f2647fa650242e"
+        },
+        {
+          "path": "<private-run>/work/helper_workflow_reruns/projects/release-stack/deliverables/verifier-b/pty.json",
+          "line": 1,
+          "sha256": "54208d3fa344527041f4d6fef4079b4297a939992d597870b8e805e3944a7284"
+        },
+        {
+          "path": "<private-run>/work/helper_workflow_reruns/projects/release-stack/deliverables/verifier-d/result.json",
+          "line": 1,
+          "sha256": "669a9a7128098b5fa57733a6bf377d086ee9888393613542bfa6af01462aa8e1"
+        },
+        {
+          "path": "<private-run>/work/helper_workflow_reruns/projects/release-stack/deliverables/watcher-final/observed-events.json",
+          "line": 1,
+          "sha256": "4728ee949ec253027b1bb77b0132aeb54ef781d098dae1baf2f9c82a5117f9e4"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "text": "Ceiling is PR 102; 104 cannot bypass 103. PASS+NOTES passes; CI and bot approvals do not.",
+      "status": "satisfied",
+      "basis": [
+        "Independent non-author verifiers inspected exact parent/head CLI artifacts. The local prefix was 101 and 102; missing 103 prevented 104 bypass. PASS+NOTES was accepted. Changed substantive 101 invalidated its old verdict and received a fresh independent verifier.",
+        "Actual local Git squash model merged only one bottom at a time, fetched local trunk and checked merged inclusion before the next preparation. No live merge or forge outcome is claimed.",
+        "Actual PTY watcher observations distinguish WAITING, ADVANCE, COMPLETE and terminal budget exhaustion. Active simulated forge state was re-read instead of equating READY with merge.",
+        "The alleged built lanes do not build app.ts. build-fixture.ts writes a build.ts whose bundle.txt is the literal stable application payload. Nonce and revision fields exercise noise classification but cannot prove what the app lane built.",
+        "Affected original verdict PR102 is 732415de4d6377848b3c2df8b7246f48a5fdaef8; current docs/lint/test variant is 77a896a2783783ffdbee2372144e58ddb1506e14. Both cli-build and alternate-build retain this constant-payload defect."
+      ],
+      "source": "docs/parity/cases/playbooks/shipping.json",
+      "evidence": [
+        {
+          "path": "<private-run>/work/helper_workflow_reruns/projects/release-stack/deliverables/result.json",
+          "line": 1,
+          "sha256": "e7da8bd42e3a01b45f5502a4f7a4cdd05285acad106e6350f440e1eab99192be"
+        },
+        {
+          "path": "<private-run>/work/helper_workflow_reruns/projects/release-stack/deliverables/builder/build-fixture.ts",
+          "line": 1,
+          "sha256": "8ff70765ad106dff32d9ce55f47fbe89d81323deb29370f95118017e38e5ff52"
+        },
+        {
+          "path": "<private-run>/work/helper_workflow_reruns/projects/release-stack/deliverables/builder/noise-report.json",
+          "line": 1,
+          "sha256": "a002ff3938866884cab7a96a8da7758f7593de75e47d5deda1961ce895f7676a"
+        },
+        {
+          "path": "<private-run>/work/helper_workflow_reruns/projects/release-stack/deliverables/builder/merge-model.json",
+          "line": 1,
+          "sha256": "cd204166657b650b9baf78b9a701d19fdb26e8a8f480abe50f11908c460b96bd"
+        },
+        {
+          "path": "<private-run>/work/helper_workflow_reruns/projects/release-stack/deliverables/builder/merge-raw.json",
+          "line": 1,
+          "sha256": "4ca86f3844287686e7e1bd9c3a537c1a92e2dd855b15a61f6669cd743cabda85"
+        },
+        {
+          "path": "<private-run>/work/helper_workflow_reruns/projects/release-stack/deliverables/verifier-a/result.json",
+          "line": 1,
+          "sha256": "33515a3a43c303a82091321879579389aef7a3cd952d97320a6e4668d06f17e2"
+        },
+        {
+          "path": "<private-run>/work/helper_workflow_reruns/projects/release-stack/deliverables/verifier-a/pty-raw.json",
+          "line": 1,
+          "sha256": "c0cb78413b8220ab444055bb8fdc03c61bae339a2b256a14a7683f5a4cb6fa71"
+        },
+        {
+          "path": "<private-run>/work/helper_workflow_reruns/projects/release-stack/deliverables/verifier-b/result.json",
+          "line": 1,
+          "sha256": "34a355831066e912d1d90f32290b79ef53491505ff8ba1f2f5f2647fa650242e"
+        },
+        {
+          "path": "<private-run>/work/helper_workflow_reruns/projects/release-stack/deliverables/verifier-b/pty.json",
+          "line": 1,
+          "sha256": "54208d3fa344527041f4d6fef4079b4297a939992d597870b8e805e3944a7284"
+        },
+        {
+          "path": "<private-run>/work/helper_workflow_reruns/projects/release-stack/deliverables/verifier-d/result.json",
+          "line": 1,
+          "sha256": "669a9a7128098b5fa57733a6bf377d086ee9888393613542bfa6af01462aa8e1"
+        },
+        {
+          "path": "<private-run>/work/helper_workflow_reruns/projects/release-stack/deliverables/watcher-final/observed-events.json",
+          "line": 1,
+          "sha256": "4728ee949ec253027b1bb77b0132aeb54ef781d098dae1baf2f9c82a5117f9e4"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "text": "Changed substantive patch requires re-verification. Unchanged patch retains code verdict but refreshes CI and mergeability at current head.",
+      "status": "satisfied",
+      "basis": [
+        "Independent non-author verifiers inspected exact parent/head CLI artifacts. The local prefix was 101 and 102; missing 103 prevented 104 bypass. PASS+NOTES was accepted. Changed substantive 101 invalidated its old verdict and received a fresh independent verifier.",
+        "Actual local Git squash model merged only one bottom at a time, fetched local trunk and checked merged inclusion before the next preparation. No live merge or forge outcome is claimed.",
+        "Actual PTY watcher observations distinguish WAITING, ADVANCE, COMPLETE and terminal budget exhaustion. Active simulated forge state was re-read instead of equating READY with merge.",
+        "The alleged built lanes do not build app.ts. build-fixture.ts writes a build.ts whose bundle.txt is the literal stable application payload. Nonce and revision fields exercise noise classification but cannot prove what the app lane built.",
+        "Affected original verdict PR102 is 732415de4d6377848b3c2df8b7246f48a5fdaef8; current docs/lint/test variant is 77a896a2783783ffdbee2372144e58ddb1506e14. Both cli-build and alternate-build retain this constant-payload defect."
+      ],
+      "source": "docs/parity/cases/playbooks/shipping.json",
+      "evidence": [
+        {
+          "path": "<private-run>/work/helper_workflow_reruns/projects/release-stack/deliverables/result.json",
+          "line": 1,
+          "sha256": "e7da8bd42e3a01b45f5502a4f7a4cdd05285acad106e6350f440e1eab99192be"
+        },
+        {
+          "path": "<private-run>/work/helper_workflow_reruns/projects/release-stack/deliverables/builder/build-fixture.ts",
+          "line": 1,
+          "sha256": "8ff70765ad106dff32d9ce55f47fbe89d81323deb29370f95118017e38e5ff52"
+        },
+        {
+          "path": "<private-run>/work/helper_workflow_reruns/projects/release-stack/deliverables/builder/noise-report.json",
+          "line": 1,
+          "sha256": "a002ff3938866884cab7a96a8da7758f7593de75e47d5deda1961ce895f7676a"
+        },
+        {
+          "path": "<private-run>/work/helper_workflow_reruns/projects/release-stack/deliverables/builder/merge-model.json",
+          "line": 1,
+          "sha256": "cd204166657b650b9baf78b9a701d19fdb26e8a8f480abe50f11908c460b96bd"
+        },
+        {
+          "path": "<private-run>/work/helper_workflow_reruns/projects/release-stack/deliverables/builder/merge-raw.json",
+          "line": 1,
+          "sha256": "4ca86f3844287686e7e1bd9c3a537c1a92e2dd855b15a61f6669cd743cabda85"
+        },
+        {
+          "path": "<private-run>/work/helper_workflow_reruns/projects/release-stack/deliverables/verifier-a/result.json",
+          "line": 1,
+          "sha256": "33515a3a43c303a82091321879579389aef7a3cd952d97320a6e4668d06f17e2"
+        },
+        {
+          "path": "<private-run>/work/helper_workflow_reruns/projects/release-stack/deliverables/verifier-a/pty-raw.json",
+          "line": 1,
+          "sha256": "c0cb78413b8220ab444055bb8fdc03c61bae339a2b256a14a7683f5a4cb6fa71"
+        },
+        {
+          "path": "<private-run>/work/helper_workflow_reruns/projects/release-stack/deliverables/verifier-b/result.json",
+          "line": 1,
+          "sha256": "34a355831066e912d1d90f32290b79ef53491505ff8ba1f2f5f2647fa650242e"
+        },
+        {
+          "path": "<private-run>/work/helper_workflow_reruns/projects/release-stack/deliverables/verifier-b/pty.json",
+          "line": 1,
+          "sha256": "54208d3fa344527041f4d6fef4079b4297a939992d597870b8e805e3944a7284"
+        },
+        {
+          "path": "<private-run>/work/helper_workflow_reruns/projects/release-stack/deliverables/verifier-d/result.json",
+          "line": 1,
+          "sha256": "669a9a7128098b5fa57733a6bf377d086ee9888393613542bfa6af01462aa8e1"
+        },
+        {
+          "path": "<private-run>/work/helper_workflow_reruns/projects/release-stack/deliverables/watcher-final/observed-events.json",
+          "line": 1,
+          "sha256": "4728ee949ec253027b1bb77b0132aeb54ef781d098dae1baf2f9c82a5117f9e4"
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "text": "For tests/docs/lint-only differences build each lane twice at verdict SHA and once at current head; classify each noise kind with files, refresh checks and review; dev-server lanes without build output rerun.",
+      "status": "unmet",
+      "basis": [
+        "Independent non-author verifiers inspected exact parent/head CLI artifacts. The local prefix was 101 and 102; missing 103 prevented 104 bypass. PASS+NOTES was accepted. Changed substantive 101 invalidated its old verdict and received a fresh independent verifier.",
+        "Actual local Git squash model merged only one bottom at a time, fetched local trunk and checked merged inclusion before the next preparation. No live merge or forge outcome is claimed.",
+        "Actual PTY watcher observations distinguish WAITING, ADVANCE, COMPLETE and terminal budget exhaustion. Active simulated forge state was re-read instead of equating READY with merge.",
+        "The alleged built lanes do not build app.ts. build-fixture.ts writes a build.ts whose bundle.txt is the literal stable application payload. Nonce and revision fields exercise noise classification but cannot prove what the app lane built.",
+        "Affected original verdict PR102 is 732415de4d6377848b3c2df8b7246f48a5fdaef8; current docs/lint/test variant is 77a896a2783783ffdbee2372144e58ddb1506e14. Both cli-build and alternate-build retain this constant-payload defect."
+      ],
+      "source": "docs/parity/cases/playbooks/shipping.json",
+      "evidence": [
+        {
+          "path": "<private-run>/work/helper_workflow_reruns/projects/release-stack/deliverables/result.json",
+          "line": 1,
+          "sha256": "e7da8bd42e3a01b45f5502a4f7a4cdd05285acad106e6350f440e1eab99192be"
+        },
+        {
+          "path": "<private-run>/work/helper_workflow_reruns/projects/release-stack/deliverables/builder/build-fixture.ts",
+          "line": 1,
+          "sha256": "8ff70765ad106dff32d9ce55f47fbe89d81323deb29370f95118017e38e5ff52"
+        },
+        {
+          "path": "<private-run>/work/helper_workflow_reruns/projects/release-stack/deliverables/builder/noise-report.json",
+          "line": 1,
+          "sha256": "a002ff3938866884cab7a96a8da7758f7593de75e47d5deda1961ce895f7676a"
+        },
+        {
+          "path": "<private-run>/work/helper_workflow_reruns/projects/release-stack/deliverables/builder/merge-model.json",
+          "line": 1,
+          "sha256": "cd204166657b650b9baf78b9a701d19fdb26e8a8f480abe50f11908c460b96bd"
+        },
+        {
+          "path": "<private-run>/work/helper_workflow_reruns/projects/release-stack/deliverables/builder/merge-raw.json",
+          "line": 1,
+          "sha256": "4ca86f3844287686e7e1bd9c3a537c1a92e2dd855b15a61f6669cd743cabda85"
+        },
+        {
+          "path": "<private-run>/work/helper_workflow_reruns/projects/release-stack/deliverables/verifier-a/result.json",
+          "line": 1,
+          "sha256": "33515a3a43c303a82091321879579389aef7a3cd952d97320a6e4668d06f17e2"
+        },
+        {
+          "path": "<private-run>/work/helper_workflow_reruns/projects/release-stack/deliverables/verifier-a/pty-raw.json",
+          "line": 1,
+          "sha256": "c0cb78413b8220ab444055bb8fdc03c61bae339a2b256a14a7683f5a4cb6fa71"
+        },
+        {
+          "path": "<private-run>/work/helper_workflow_reruns/projects/release-stack/deliverables/verifier-b/result.json",
+          "line": 1,
+          "sha256": "34a355831066e912d1d90f32290b79ef53491505ff8ba1f2f5f2647fa650242e"
+        },
+        {
+          "path": "<private-run>/work/helper_workflow_reruns/projects/release-stack/deliverables/verifier-b/pty.json",
+          "line": 1,
+          "sha256": "54208d3fa344527041f4d6fef4079b4297a939992d597870b8e805e3944a7284"
+        },
+        {
+          "path": "<private-run>/work/helper_workflow_reruns/projects/release-stack/deliverables/verifier-d/result.json",
+          "line": 1,
+          "sha256": "669a9a7128098b5fa57733a6bf377d086ee9888393613542bfa6af01462aa8e1"
+        },
+        {
+          "path": "<private-run>/work/helper_workflow_reruns/projects/release-stack/deliverables/watcher-final/observed-events.json",
+          "line": 1,
+          "sha256": "4728ee949ec253027b1bb77b0132aeb54ef781d098dae1baf2f9c82a5117f9e4"
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "text": "Prepare only bottom against exact fetched trunk, use built-in retarget tool if exposed, recheck after push, then squash or arm only explicitly authorized bottom and await confirmed merge.",
+      "status": "satisfied",
+      "basis": [
+        "Independent non-author verifiers inspected exact parent/head CLI artifacts. The local prefix was 101 and 102; missing 103 prevented 104 bypass. PASS+NOTES was accepted. Changed substantive 101 invalidated its old verdict and received a fresh independent verifier.",
+        "Actual local Git squash model merged only one bottom at a time, fetched local trunk and checked merged inclusion before the next preparation. No live merge or forge outcome is claimed.",
+        "Actual PTY watcher observations distinguish WAITING, ADVANCE, COMPLETE and terminal budget exhaustion. Active simulated forge state was re-read instead of equating READY with merge.",
+        "The alleged built lanes do not build app.ts. build-fixture.ts writes a build.ts whose bundle.txt is the literal stable application payload. Nonce and revision fields exercise noise classification but cannot prove what the app lane built.",
+        "Affected original verdict PR102 is 732415de4d6377848b3c2df8b7246f48a5fdaef8; current docs/lint/test variant is 77a896a2783783ffdbee2372144e58ddb1506e14. Both cli-build and alternate-build retain this constant-payload defect."
+      ],
+      "source": "docs/parity/cases/playbooks/shipping.json",
+      "evidence": [
+        {
+          "path": "<private-run>/work/helper_workflow_reruns/projects/release-stack/deliverables/result.json",
+          "line": 1,
+          "sha256": "e7da8bd42e3a01b45f5502a4f7a4cdd05285acad106e6350f440e1eab99192be"
+        },
+        {
+          "path": "<private-run>/work/helper_workflow_reruns/projects/release-stack/deliverables/builder/build-fixture.ts",
+          "line": 1,
+          "sha256": "8ff70765ad106dff32d9ce55f47fbe89d81323deb29370f95118017e38e5ff52"
+        },
+        {
+          "path": "<private-run>/work/helper_workflow_reruns/projects/release-stack/deliverables/builder/noise-report.json",
+          "line": 1,
+          "sha256": "a002ff3938866884cab7a96a8da7758f7593de75e47d5deda1961ce895f7676a"
+        },
+        {
+          "path": "<private-run>/work/helper_workflow_reruns/projects/release-stack/deliverables/builder/merge-model.json",
+          "line": 1,
+          "sha256": "cd204166657b650b9baf78b9a701d19fdb26e8a8f480abe50f11908c460b96bd"
+        },
+        {
+          "path": "<private-run>/work/helper_workflow_reruns/projects/release-stack/deliverables/builder/merge-raw.json",
+          "line": 1,
+          "sha256": "4ca86f3844287686e7e1bd9c3a537c1a92e2dd855b15a61f6669cd743cabda85"
+        },
+        {
+          "path": "<private-run>/work/helper_workflow_reruns/projects/release-stack/deliverables/verifier-a/result.json",
+          "line": 1,
+          "sha256": "33515a3a43c303a82091321879579389aef7a3cd952d97320a6e4668d06f17e2"
+        },
+        {
+          "path": "<private-run>/work/helper_workflow_reruns/projects/release-stack/deliverables/verifier-a/pty-raw.json",
+          "line": 1,
+          "sha256": "c0cb78413b8220ab444055bb8fdc03c61bae339a2b256a14a7683f5a4cb6fa71"
+        },
+        {
+          "path": "<private-run>/work/helper_workflow_reruns/projects/release-stack/deliverables/verifier-b/result.json",
+          "line": 1,
+          "sha256": "34a355831066e912d1d90f32290b79ef53491505ff8ba1f2f5f2647fa650242e"
+        },
+        {
+          "path": "<private-run>/work/helper_workflow_reruns/projects/release-stack/deliverables/verifier-b/pty.json",
+          "line": 1,
+          "sha256": "54208d3fa344527041f4d6fef4079b4297a939992d597870b8e805e3944a7284"
+        },
+        {
+          "path": "<private-run>/work/helper_workflow_reruns/projects/release-stack/deliverables/verifier-d/result.json",
+          "line": 1,
+          "sha256": "669a9a7128098b5fa57733a6bf377d086ee9888393613542bfa6af01462aa8e1"
+        },
+        {
+          "path": "<private-run>/work/helper_workflow_reruns/projects/release-stack/deliverables/watcher-final/observed-events.json",
+          "line": 1,
+          "sha256": "4728ee949ec253027b1bb77b0132aeb54ef781d098dae1baf2f9c82a5117f9e4"
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "text": "Read active-forge state after every wake; READY and autoMergeRequest never prove merge. Preserve pending BLOCKED, closed-unmerged and failed/cancelled required checks or UNSTABLE/DIRTY with no auto-merge pending distinctions.",
+      "status": "satisfied",
+      "basis": [
+        "Independent non-author verifiers inspected exact parent/head CLI artifacts. The local prefix was 101 and 102; missing 103 prevented 104 bypass. PASS+NOTES was accepted. Changed substantive 101 invalidated its old verdict and received a fresh independent verifier.",
+        "Actual local Git squash model merged only one bottom at a time, fetched local trunk and checked merged inclusion before the next preparation. No live merge or forge outcome is claimed.",
+        "Actual PTY watcher observations distinguish WAITING, ADVANCE, COMPLETE and terminal budget exhaustion. Active simulated forge state was re-read instead of equating READY with merge.",
+        "The alleged built lanes do not build app.ts. build-fixture.ts writes a build.ts whose bundle.txt is the literal stable application payload. Nonce and revision fields exercise noise classification but cannot prove what the app lane built.",
+        "Affected original verdict PR102 is 732415de4d6377848b3c2df8b7246f48a5fdaef8; current docs/lint/test variant is 77a896a2783783ffdbee2372144e58ddb1506e14. Both cli-build and alternate-build retain this constant-payload defect."
+      ],
+      "source": "docs/parity/cases/playbooks/shipping.json",
+      "evidence": [
+        {
+          "path": "<private-run>/work/helper_workflow_reruns/projects/release-stack/deliverables/result.json",
+          "line": 1,
+          "sha256": "e7da8bd42e3a01b45f5502a4f7a4cdd05285acad106e6350f440e1eab99192be"
+        },
+        {
+          "path": "<private-run>/work/helper_workflow_reruns/projects/release-stack/deliverables/builder/build-fixture.ts",
+          "line": 1,
+          "sha256": "8ff70765ad106dff32d9ce55f47fbe89d81323deb29370f95118017e38e5ff52"
+        },
+        {
+          "path": "<private-run>/work/helper_workflow_reruns/projects/release-stack/deliverables/builder/noise-report.json",
+          "line": 1,
+          "sha256": "a002ff3938866884cab7a96a8da7758f7593de75e47d5deda1961ce895f7676a"
+        },
+        {
+          "path": "<private-run>/work/helper_workflow_reruns/projects/release-stack/deliverables/builder/merge-model.json",
+          "line": 1,
+          "sha256": "cd204166657b650b9baf78b9a701d19fdb26e8a8f480abe50f11908c460b96bd"
+        },
+        {
+          "path": "<private-run>/work/helper_workflow_reruns/projects/release-stack/deliverables/builder/merge-raw.json",
+          "line": 1,
+          "sha256": "4ca86f3844287686e7e1bd9c3a537c1a92e2dd855b15a61f6669cd743cabda85"
+        },
+        {
+          "path": "<private-run>/work/helper_workflow_reruns/projects/release-stack/deliverables/verifier-a/result.json",
+          "line": 1,
+          "sha256": "33515a3a43c303a82091321879579389aef7a3cd952d97320a6e4668d06f17e2"
+        },
+        {
+          "path": "<private-run>/work/helper_workflow_reruns/projects/release-stack/deliverables/verifier-a/pty-raw.json",
+          "line": 1,
+          "sha256": "c0cb78413b8220ab444055bb8fdc03c61bae339a2b256a14a7683f5a4cb6fa71"
+        },
+        {
+          "path": "<private-run>/work/helper_workflow_reruns/projects/release-stack/deliverables/verifier-b/result.json",
+          "line": 1,
+          "sha256": "34a355831066e912d1d90f32290b79ef53491505ff8ba1f2f5f2647fa650242e"
+        },
+        {
+          "path": "<private-run>/work/helper_workflow_reruns/projects/release-stack/deliverables/verifier-b/pty.json",
+          "line": 1,
+          "sha256": "54208d3fa344527041f4d6fef4079b4297a939992d597870b8e805e3944a7284"
+        },
+        {
+          "path": "<private-run>/work/helper_workflow_reruns/projects/release-stack/deliverables/verifier-d/result.json",
+          "line": 1,
+          "sha256": "669a9a7128098b5fa57733a6bf377d086ee9888393613542bfa6af01462aa8e1"
+        },
+        {
+          "path": "<private-run>/work/helper_workflow_reruns/projects/release-stack/deliverables/watcher-final/observed-events.json",
+          "line": 1,
+          "sha256": "4728ee949ec253027b1bb77b0132aeb54ef781d098dae1baf2f9c82a5117f9e4"
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "text": "After merge fetch trunk, confirm merged SHA present, recompute base/head/checks/patch-id and ceiling, never assume automatic retarget.",
+      "status": "satisfied",
+      "basis": [
+        "Independent non-author verifiers inspected exact parent/head CLI artifacts. The local prefix was 101 and 102; missing 103 prevented 104 bypass. PASS+NOTES was accepted. Changed substantive 101 invalidated its old verdict and received a fresh independent verifier.",
+        "Actual local Git squash model merged only one bottom at a time, fetched local trunk and checked merged inclusion before the next preparation. No live merge or forge outcome is claimed.",
+        "Actual PTY watcher observations distinguish WAITING, ADVANCE, COMPLETE and terminal budget exhaustion. Active simulated forge state was re-read instead of equating READY with merge.",
+        "The alleged built lanes do not build app.ts. build-fixture.ts writes a build.ts whose bundle.txt is the literal stable application payload. Nonce and revision fields exercise noise classification but cannot prove what the app lane built.",
+        "Affected original verdict PR102 is 732415de4d6377848b3c2df8b7246f48a5fdaef8; current docs/lint/test variant is 77a896a2783783ffdbee2372144e58ddb1506e14. Both cli-build and alternate-build retain this constant-payload defect."
+      ],
+      "source": "docs/parity/cases/playbooks/shipping.json",
+      "evidence": [
+        {
+          "path": "<private-run>/work/helper_workflow_reruns/projects/release-stack/deliverables/result.json",
+          "line": 1,
+          "sha256": "e7da8bd42e3a01b45f5502a4f7a4cdd05285acad106e6350f440e1eab99192be"
+        },
+        {
+          "path": "<private-run>/work/helper_workflow_reruns/projects/release-stack/deliverables/builder/build-fixture.ts",
+          "line": 1,
+          "sha256": "8ff70765ad106dff32d9ce55f47fbe89d81323deb29370f95118017e38e5ff52"
+        },
+        {
+          "path": "<private-run>/work/helper_workflow_reruns/projects/release-stack/deliverables/builder/noise-report.json",
+          "line": 1,
+          "sha256": "a002ff3938866884cab7a96a8da7758f7593de75e47d5deda1961ce895f7676a"
+        },
+        {
+          "path": "<private-run>/work/helper_workflow_reruns/projects/release-stack/deliverables/builder/merge-model.json",
+          "line": 1,
+          "sha256": "cd204166657b650b9baf78b9a701d19fdb26e8a8f480abe50f11908c460b96bd"
+        },
+        {
+          "path": "<private-run>/work/helper_workflow_reruns/projects/release-stack/deliverables/builder/merge-raw.json",
+          "line": 1,
+          "sha256": "4ca86f3844287686e7e1bd9c3a537c1a92e2dd855b15a61f6669cd743cabda85"
+        },
+        {
+          "path": "<private-run>/work/helper_workflow_reruns/projects/release-stack/deliverables/verifier-a/result.json",
+          "line": 1,
+          "sha256": "33515a3a43c303a82091321879579389aef7a3cd952d97320a6e4668d06f17e2"
+        },
+        {
+          "path": "<private-run>/work/helper_workflow_reruns/projects/release-stack/deliverables/verifier-a/pty-raw.json",
+          "line": 1,
+          "sha256": "c0cb78413b8220ab444055bb8fdc03c61bae339a2b256a14a7683f5a4cb6fa71"
+        },
+        {
+          "path": "<private-run>/work/helper_workflow_reruns/projects/release-stack/deliverables/verifier-b/result.json",
+          "line": 1,
+          "sha256": "34a355831066e912d1d90f32290b79ef53491505ff8ba1f2f5f2647fa650242e"
+        },
+        {
+          "path": "<private-run>/work/helper_workflow_reruns/projects/release-stack/deliverables/verifier-b/pty.json",
+          "line": 1,
+          "sha256": "54208d3fa344527041f4d6fef4079b4297a939992d597870b8e805e3944a7284"
+        },
+        {
+          "path": "<private-run>/work/helper_workflow_reruns/projects/release-stack/deliverables/verifier-d/result.json",
+          "line": 1,
+          "sha256": "669a9a7128098b5fa57733a6bf377d086ee9888393613542bfa6af01462aa8e1"
+        },
+        {
+          "path": "<private-run>/work/helper_workflow_reruns/projects/release-stack/deliverables/watcher-final/observed-events.json",
+          "line": 1,
+          "sha256": "4728ee949ec253027b1bb77b0132aeb54ef781d098dae1baf2f9c82a5117f9e4"
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "text": "Use actual watcher pins, finite budgets, schemaVersion 1 events and separate setup gate; stop safely on missing capability, user stop or exhaustion.",
+      "status": "satisfied",
+      "basis": [
+        "Independent non-author verifiers inspected exact parent/head CLI artifacts. The local prefix was 101 and 102; missing 103 prevented 104 bypass. PASS+NOTES was accepted. Changed substantive 101 invalidated its old verdict and received a fresh independent verifier.",
+        "Actual local Git squash model merged only one bottom at a time, fetched local trunk and checked merged inclusion before the next preparation. No live merge or forge outcome is claimed.",
+        "Actual PTY watcher observations distinguish WAITING, ADVANCE, COMPLETE and terminal budget exhaustion. Active simulated forge state was re-read instead of equating READY with merge.",
+        "The alleged built lanes do not build app.ts. build-fixture.ts writes a build.ts whose bundle.txt is the literal stable application payload. Nonce and revision fields exercise noise classification but cannot prove what the app lane built.",
+        "Affected original verdict PR102 is 732415de4d6377848b3c2df8b7246f48a5fdaef8; current docs/lint/test variant is 77a896a2783783ffdbee2372144e58ddb1506e14. Both cli-build and alternate-build retain this constant-payload defect."
+      ],
+      "source": "docs/parity/cases/playbooks/shipping.json",
+      "evidence": [
+        {
+          "path": "<private-run>/work/helper_workflow_reruns/projects/release-stack/deliverables/result.json",
+          "line": 1,
+          "sha256": "e7da8bd42e3a01b45f5502a4f7a4cdd05285acad106e6350f440e1eab99192be"
+        },
+        {
+          "path": "<private-run>/work/helper_workflow_reruns/projects/release-stack/deliverables/builder/build-fixture.ts",
+          "line": 1,
+          "sha256": "8ff70765ad106dff32d9ce55f47fbe89d81323deb29370f95118017e38e5ff52"
+        },
+        {
+          "path": "<private-run>/work/helper_workflow_reruns/projects/release-stack/deliverables/builder/noise-report.json",
+          "line": 1,
+          "sha256": "a002ff3938866884cab7a96a8da7758f7593de75e47d5deda1961ce895f7676a"
+        },
+        {
+          "path": "<private-run>/work/helper_workflow_reruns/projects/release-stack/deliverables/builder/merge-model.json",
+          "line": 1,
+          "sha256": "cd204166657b650b9baf78b9a701d19fdb26e8a8f480abe50f11908c460b96bd"
+        },
+        {
+          "path": "<private-run>/work/helper_workflow_reruns/projects/release-stack/deliverables/builder/merge-raw.json",
+          "line": 1,
+          "sha256": "4ca86f3844287686e7e1bd9c3a537c1a92e2dd855b15a61f6669cd743cabda85"
+        },
+        {
+          "path": "<private-run>/work/helper_workflow_reruns/projects/release-stack/deliverables/verifier-a/result.json",
+          "line": 1,
+          "sha256": "33515a3a43c303a82091321879579389aef7a3cd952d97320a6e4668d06f17e2"
+        },
+        {
+          "path": "<private-run>/work/helper_workflow_reruns/projects/release-stack/deliverables/verifier-a/pty-raw.json",
+          "line": 1,
+          "sha256": "c0cb78413b8220ab444055bb8fdc03c61bae339a2b256a14a7683f5a4cb6fa71"
+        },
+        {
+          "path": "<private-run>/work/helper_workflow_reruns/projects/release-stack/deliverables/verifier-b/result.json",
+          "line": 1,
+          "sha256": "34a355831066e912d1d90f32290b79ef53491505ff8ba1f2f5f2647fa650242e"
+        },
+        {
+          "path": "<private-run>/work/helper_workflow_reruns/projects/release-stack/deliverables/verifier-b/pty.json",
+          "line": 1,
+          "sha256": "54208d3fa344527041f4d6fef4079b4297a939992d597870b8e805e3944a7284"
+        },
+        {
+          "path": "<private-run>/work/helper_workflow_reruns/projects/release-stack/deliverables/verifier-d/result.json",
+          "line": 1,
+          "sha256": "669a9a7128098b5fa57733a6bf377d086ee9888393613542bfa6af01462aa8e1"
+        },
+        {
+          "path": "<private-run>/work/helper_workflow_reruns/projects/release-stack/deliverables/watcher-final/observed-events.json",
+          "line": 1,
+          "sha256": "4728ee949ec253027b1bb77b0132aeb54ef781d098dae1baf2f9c82a5117f9e4"
+        }
+      ]
+    }
+  ],
+  "sourceArtifactBindings": [
+    {
+      "originalLocator": "work/helper_workflow_reruns/projects/release-stack/deliverables/result.json",
+      "sourceSha256": "e7da8bd42e3a01b45f5502a4f7a4cdd05285acad106e6350f440e1eab99192be",
+      "expectedSha256": "e7da8bd42e3a01b45f5502a4f7a4cdd05285acad106e6350f440e1eab99192be",
+      "expectedHashMatches": true,
+      "bytes": 17987,
+      "publication": "projected-fields",
+      "reason": "Only a narrow inspected projection may be included. Private original remains unchanged.",
+      "projectedPath": "docs/releases/remediation-013/local/contiguous-verified-stack/review-a-13/proof/01-result.json.excerpt.json",
+      "projectedSha256": "cfec6374763758a1e1ddcf98f07fc8ecb47a3d3cfeb6f8e920bce505c37ec9e5"
+    },
+    {
+      "originalLocator": "work/helper_workflow_reruns/projects/release-stack/deliverables/builder/build-fixture.ts",
+      "sourceSha256": "8ff70765ad106dff32d9ce55f47fbe89d81323deb29370f95118017e38e5ff52",
+      "expectedSha256": "8ff70765ad106dff32d9ce55f47fbe89d81323deb29370f95118017e38e5ff52",
+      "expectedHashMatches": true,
+      "bytes": 4145,
+      "publication": "omitted",
+      "reason": "Only a narrow inspected projection may be included. Private original remains unchanged."
+    },
+    {
+      "originalLocator": "work/helper_workflow_reruns/projects/release-stack/deliverables/builder/noise-report.json",
+      "sourceSha256": "a002ff3938866884cab7a96a8da7758f7593de75e47d5deda1961ce895f7676a",
+      "expectedSha256": "a002ff3938866884cab7a96a8da7758f7593de75e47d5deda1961ce895f7676a",
+      "expectedHashMatches": true,
+      "bytes": 4474,
+      "publication": "projected-fields",
+      "reason": "Only a narrow inspected projection may be included. Private original remains unchanged.",
+      "projectedPath": "docs/releases/remediation-013/local/contiguous-verified-stack/review-a-13/proof/02-noise-report.json.excerpt.json",
+      "projectedSha256": "118f15115b99f83ad7ce959360ded921f58e178fbdc1e32ca646da6da57fa0bb"
+    },
+    {
+      "originalLocator": "work/helper_workflow_reruns/projects/release-stack/deliverables/builder/merge-model.json",
+      "sourceSha256": "cd204166657b650b9baf78b9a701d19fdb26e8a8f480abe50f11908c460b96bd",
+      "expectedSha256": "cd204166657b650b9baf78b9a701d19fdb26e8a8f480abe50f11908c460b96bd",
+      "expectedHashMatches": true,
+      "bytes": 4407,
+      "publication": "omitted",
+      "reason": "Only a narrow inspected projection may be included. Private original remains unchanged."
+    },
+    {
+      "originalLocator": "work/helper_workflow_reruns/projects/release-stack/deliverables/builder/merge-raw.json",
+      "sourceSha256": "4ca86f3844287686e7e1bd9c3a537c1a92e2dd855b15a61f6669cd743cabda85",
+      "expectedSha256": "4ca86f3844287686e7e1bd9c3a537c1a92e2dd855b15a61f6669cd743cabda85",
+      "expectedHashMatches": true,
+      "bytes": 21604,
+      "publication": "projected-fields",
+      "reason": "Only a narrow inspected projection may be included. Private original remains unchanged.",
+      "projectedPath": "docs/releases/remediation-013/local/contiguous-verified-stack/review-a-13/proof/03-merge-raw.json.excerpt.json",
+      "projectedSha256": "8ecd5f527b14fa9779000c582b548b47e71d5562bf4e47ec06c1410516d19b8b"
+    },
+    {
+      "originalLocator": "work/helper_workflow_reruns/projects/release-stack/deliverables/verifier-a/result.json",
+      "sourceSha256": "33515a3a43c303a82091321879579389aef7a3cd952d97320a6e4668d06f17e2",
+      "expectedSha256": "33515a3a43c303a82091321879579389aef7a3cd952d97320a6e4668d06f17e2",
+      "expectedHashMatches": true,
+      "bytes": 2743,
+      "publication": "projected-fields",
+      "reason": "Only a narrow inspected projection may be included. Private original remains unchanged.",
+      "projectedPath": "docs/releases/remediation-013/local/contiguous-verified-stack/review-a-13/proof/04-result.json.excerpt.json",
+      "projectedSha256": "9a2670c3a56eb9d7684683e69d7d3acb8f3fb33a34d7d4c8e8665d53278c3ba4"
+    },
+    {
+      "originalLocator": "work/helper_workflow_reruns/projects/release-stack/deliverables/verifier-a/pty-raw.json",
+      "sourceSha256": "c0cb78413b8220ab444055bb8fdc03c61bae339a2b256a14a7683f5a4cb6fa71",
+      "expectedSha256": "c0cb78413b8220ab444055bb8fdc03c61bae339a2b256a14a7683f5a4cb6fa71",
+      "expectedHashMatches": true,
+      "bytes": 3777,
+      "publication": "projected-fields",
+      "reason": "Only a narrow inspected projection may be included. Private original remains unchanged.",
+      "projectedPath": "docs/releases/remediation-013/local/contiguous-verified-stack/review-a-13/proof/05-pty-raw.json.excerpt.json",
+      "projectedSha256": "461f9cdefff3c07f7b5d60f77f1a2b6ae988d1ef0f00288fe31b67e829115a60"
+    },
+    {
+      "originalLocator": "work/helper_workflow_reruns/projects/release-stack/deliverables/verifier-b/result.json",
+      "sourceSha256": "34a355831066e912d1d90f32290b79ef53491505ff8ba1f2f5f2647fa650242e",
+      "expectedSha256": "34a355831066e912d1d90f32290b79ef53491505ff8ba1f2f5f2647fa650242e",
+      "expectedHashMatches": true,
+      "bytes": 2806,
+      "publication": "projected-fields",
+      "reason": "Only a narrow inspected projection may be included. Private original remains unchanged.",
+      "projectedPath": "docs/releases/remediation-013/local/contiguous-verified-stack/review-a-13/proof/06-result.json.excerpt.json",
+      "projectedSha256": "e3e3d60b0341f790d27879950362e1c3696ce23914067bdc0f2984e81bafebcf"
+    },
+    {
+      "originalLocator": "work/helper_workflow_reruns/projects/release-stack/deliverables/verifier-b/pty.json",
+      "sourceSha256": "54208d3fa344527041f4d6fef4079b4297a939992d597870b8e805e3944a7284",
+      "expectedSha256": "54208d3fa344527041f4d6fef4079b4297a939992d597870b8e805e3944a7284",
+      "expectedHashMatches": true,
+      "bytes": 636,
+      "publication": "projected-fields",
+      "reason": "Only a narrow inspected projection may be included. Private original remains unchanged.",
+      "projectedPath": "docs/releases/remediation-013/local/contiguous-verified-stack/review-a-13/proof/07-pty.json.excerpt.json",
+      "projectedSha256": "8a81a8a0cfb813bcec9a89a266a922fdc29ed25ded1a03bd2b83d081eb510a93"
+    },
+    {
+      "originalLocator": "work/helper_workflow_reruns/projects/release-stack/deliverables/verifier-d/result.json",
+      "sourceSha256": "669a9a7128098b5fa57733a6bf377d086ee9888393613542bfa6af01462aa8e1",
+      "expectedSha256": "669a9a7128098b5fa57733a6bf377d086ee9888393613542bfa6af01462aa8e1",
+      "expectedHashMatches": true,
+      "bytes": 1698,
+      "publication": "projected-fields",
+      "reason": "Only a narrow inspected projection may be included. Private original remains unchanged.",
+      "projectedPath": "docs/releases/remediation-013/local/contiguous-verified-stack/review-a-13/proof/08-result.json.excerpt.json",
+      "projectedSha256": "50065c5199bbe3844bccf013b4e6172e5f26c6d4824ee267682b3b563876b3ad"
+    },
+    {
+      "originalLocator": "work/helper_workflow_reruns/projects/release-stack/deliverables/watcher-final/observed-events.json",
+      "sourceSha256": "4728ee949ec253027b1bb77b0132aeb54ef781d098dae1baf2f9c82a5117f9e4",
+      "expectedSha256": "4728ee949ec253027b1bb77b0132aeb54ef781d098dae1baf2f9c82a5117f9e4",
+      "expectedHashMatches": true,
+      "bytes": 13180,
+      "publication": "omitted",
+      "reason": "Only a narrow inspected projection may be included. Private original remains unchanged."
+    }
+  ],
+  "projectionLimits": [
+    "This file projects the existing independent assessment and does not regrade the case.",
+    "Private source artifacts and omitted native operations remain private. Source digests bind originals, not transformed bytes.",
+    "Historical 0.1.3 observations do not qualify current main or a modified candidate."
+  ],
+  "statusMapping": {
+    "originalProposedStatus": "reduced-pass",
+    "canonicalStatus": "reduced-pass",
+    "rule": "No status alias is applied."
+  }
+}

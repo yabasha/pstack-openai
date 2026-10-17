@@ -1,0 +1,16 @@
+{
+  "kind": "task-result-file-excerpt",
+  "caseId": "unavailable-persistence",
+  "attemptId": "review-a-02",
+  "inputRevision": "583a40e164fe12e8e9adf256c05bd489431c5cc3",
+  "originalLocator": "remaining-local/cases/unavailable-persistence/outputs/unavailable-persistence.result.md",
+  "sourceSha256": "b468e4e8574ef444add96e4d63b0e82f3c1e14d5a0790317ea6145ad3cd692ab",
+  "sourceWasDirectlyListedByIndependentGrade": false,
+  "characterRange": {
+    "start": 0,
+    "endExclusive": 358,
+    "total": 6041
+  },
+  "content": "# unavailable-persistence actual attempt\n\nThe initial durable-session persistence condition remains blocked by policy. An authorized local handoff was written and read back. A separate later-available local-store variant executed the actual approved orch helper and read the saved assignment record back in later processes.\n\n## Supplied request and revision\n",
+  "transformation": "An inspected prefix of the actual task-result file is projected. Task-owned absolute paths use declared placeholders. The prefix may omit later qualifications. The independent assessment and its limits govern the proposed grade. This is neither a new grade nor a native callable-operation claim."
+}

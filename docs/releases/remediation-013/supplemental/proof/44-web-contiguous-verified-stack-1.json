@@ -1,0 +1,172 @@
+{
+  "kind": "historical-proof-selection",
+  "source": {
+    "path": "<private-run>/web-checkpoint-3/units/contiguous-verified-stack/outputs/contiguous-verified-stack-real-build/root-build-audit.json",
+    "sha256": "4d540368ee7c86f6d7a7a6684e746935118b9facdf659c83c4803a865aa81a1c",
+    "bytes": 12846
+  },
+  "selection": [
+    {
+      "locator": {
+        "jsonPointer": "/clock"
+      },
+      "value": "2026-10-17T07:44:13.575Z"
+    },
+    {
+      "locator": {
+        "jsonPointer": "/checks/0/pr"
+      },
+      "value": 101
+    },
+    {
+      "locator": {
+        "jsonPointer": "/checks/0/assignmentId"
+      },
+      "value": "r87-stack-review101-0"
+    },
+    {
+      "locator": {
+        "jsonPointer": "/checks/0/workerId"
+      },
+      "value": "/root/r87_stack_verify101"
+    },
+    {
+      "locator": {
+        "jsonPointer": "/checks/0/reportDigestVerified"
+      },
+      "value": "8ed3a08f0998ebac9ab22d36d2c416bacb7b8bc3b4f5f8dd7b7e83f33e325d66"
+    },
+    {
+      "locator": {
+        "jsonPointer": "/checks/0/actualBuildCommands"
+      },
+      "value": 10
+    },
+    {
+      "locator": {
+        "jsonPointer": "/checks/0/actualPTYCommands"
+      },
+      "value": 13
+    },
+    {
+      "locator": {
+        "jsonPointer": "/checks/0/allPTYBoundAndLiteral"
+      },
+      "value": true
+    },
+    {
+      "locator": {
+        "jsonPointer": "/checks/1/pr"
+      },
+      "value": 102
+    },
+    {
+      "locator": {
+        "jsonPointer": "/checks/1/assignmentId"
+      },
+      "value": "r87-stack-review102-0"
+    },
+    {
+      "locator": {
+        "jsonPointer": "/checks/1/workerId"
+      },
+      "value": "/root/r87_stack_verify102"
+    },
+    {
+      "locator": {
+        "jsonPointer": "/checks/1/reportDigestVerified"
+      },
+      "value": "cd6e978fd662ba9841e1da4f37341705fe72530ff424dc73b67dce5cb56682c4"
+    },
+    {
+      "locator": {
+        "jsonPointer": "/checks/1/actualBuildCommands"
+      },
+      "value": 10
+    },
+    {
+      "locator": {
+        "jsonPointer": "/checks/1/actualPTYCommands"
+      },
+      "value": 13
+    },
+    {
+      "locator": {
+        "jsonPointer": "/checks/1/allPTYBoundAndLiteral"
+      },
+      "value": true
+    },
+    {
+      "locator": {
+        "jsonPointer": "/helperHashes"
+      },
+      "value": [
+        {
+          "path": "bootstrap.ts",
+          "bytes": 1353,
+          "sha256": "307cdd435542b6adb719e885b08028fbb0a1467a6dcfbb1297392af475abe03f",
+          "matchesInstalledOperativeBytes": true
+        },
+        {
+          "path": "watch-pr/watch-pr",
+          "bytes": 227,
+          "sha256": "5d30c476658fe73baa013aeab37d4c88302f1d4ad9ab7f8407d97ac982ee6e8d",
+          "matchesInstalledOperativeBytes": true
+        },
+        {
+          "path": "watch-pr/cli.ts",
+          "bytes": 8271,
+          "sha256": "af2dd3a1f2da4af5680954a69f16e2a5a41bafea13c52267a7c99a083436a878",
+          "matchesInstalledOperativeBytes": true
+        },
+        {
+          "path": "watch-pr/types.ts",
+          "bytes": 12700,
+          "sha256": "951ba0fc933b215757c6a1eeca6b71801eb52247eb97a24bb9d585a6d301f834",
+          "matchesInstalledOperativeBytes": true
+        },
+        {
+          "path": "watch-pr/policy.ts",
+          "bytes": 27961,
+          "sha256": "6a89a4698138ce64cf5285b67ff92750cdc2a3f8ba48946fa202678c72ac37a4",
+          "matchesInstalledOperativeBytes": true
+        },
+        {
+          "path": "watch-pr/github.ts",
+          "bytes": 27579,
+          "sha256": "d286c466014df5c21a98cab4d0aa4bebe22dd1295cbe27419b52ecc478892e8b",
+          "matchesInstalledOperativeBytes": true
+        },
+        {
+          "path": "watch-pr/render.ts",
+          "bytes": 7117,
+          "sha256": "edb559abd29395cd684a60265e29ba9859ce266edd2762d23af7b4cb3f5dd434",
+          "matchesInstalledOperativeBytes": true
+        }
+      ]
+    },
+    {
+      "locator": {
+        "jsonPointer": "/changed101"
+      },
+      "value": {
+        "sourceRevision": "14e530634d637586b39007c552ae69a5f528a474",
+        "base": "97388c27171358c70111e90f6c40e36bfb8f2590",
+        "patchId": "78ec535c30556500c2884c800b4f900dbbd426c5",
+        "verdictReuse": "invalidated; substantive n*3 differs from n*2",
+        "sourcePath": "/mnt/data/pstack-remediation-20261017/attempts-18/outputs/contiguous-verified-stack-real-build/changed101/app.ts",
+        "sourceSha256": "980819fea1b88b4baf1f9c075dcc5de3f340c9c97b6b829c285853e8627d788b"
+      }
+    },
+    {
+      "locator": {
+        "jsonPointer": "/literalRuntimeNext"
+      },
+      "value": "Actual PTY changed101 expects input7 result21; not yet executed in this audit"
+    }
+  ],
+  "limits": [
+    "Selections preserve the exact source value at each locator. Truncated strings carry explicit code-unit bounds.",
+    "A producer-captured return is not a recovered native parent envelope. Missing call IDs, original capture defects and unknown model observations remain missing."
+  ]
+}

@@ -1,0 +1,35 @@
+{
+  "kind": "selected-fixture-result-fields",
+  "caseId": "stale-feature-map",
+  "attemptId": "review-a-17",
+  "originalLocator": "work/notes_workflow_reruns/projects/stale-feature-map/outputs/evidence/process-events-final.json",
+  "sourceSha256": "90a8e428c10a1f471b2cb7c5db4bfe43ac3611500f3f9d5b2a04a3336157d0d8",
+  "sourceBytes": 1116,
+  "transformation": "Named JSON fields selected by exact JSON Pointer. Task-owned absolute paths replaced with declared placeholders. Other fields omitted. These are result-artifact values, not synthesized tool execution evidence. Public selection is limited to eight short inspected fields. Longer output and unselected fields remain private.",
+  "fields": [
+    {
+      "pointer": "/0/result",
+      "value": "listening"
+    },
+    {
+      "pointer": "/1/result",
+      "value": "operation not permitted"
+    },
+    {
+      "pointer": "/2/result",
+      "value": "operation not permitted"
+    },
+    {
+      "pointer": "/3/result",
+      "value": "listening; no application drives or writes; sequencing error"
+    },
+    {
+      "pointer": "/4/result",
+      "value": "terminal exit"
+    },
+    {
+      "pointer": "/5/result",
+      "value": "terminal exit"
+    }
+  ]
+}

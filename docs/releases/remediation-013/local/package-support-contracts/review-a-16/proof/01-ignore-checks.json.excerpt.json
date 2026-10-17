@@ -1,0 +1,49 @@
+{
+  "kind": "selected-fixture-result-fields",
+  "caseId": "package-support-contracts",
+  "attemptId": "review-a-16",
+  "originalLocator": "work/local_compiler_cases/projects/package-support/deliverables/ignore-checks.json",
+  "sourceSha256": "946d7dcc97815ab8e88ada44ab368f12094aaee11121141221475a67830e21e4",
+  "sourceBytes": 7410,
+  "transformation": "Named JSON fields selected by exact JSON Pointer. Task-owned absolute paths replaced with declared placeholders. Other fields omitted. These are result-artifact values, not synthesized tool execution evidence. Public selection is limited to eight short inspected fields. Longer output and unselected fields remain private.",
+  "fields": [
+    {
+      "pointer": "/0/command",
+      "value": [
+        "bun",
+        "--version"
+      ]
+    },
+    {
+      "pointer": "/0/exitCode",
+      "value": 0
+    },
+    {
+      "pointer": "/0/stdout",
+      "value": "1.4.2\n"
+    },
+    {
+      "pointer": "/0/stderr",
+      "value": ""
+    },
+    {
+      "pointer": "/1/command",
+      "value": [
+        "bun",
+        "--revision"
+      ]
+    },
+    {
+      "pointer": "/1/exitCode",
+      "value": 0
+    },
+    {
+      "pointer": "/1/stdout",
+      "value": "1.4.2+50a8a8387\n"
+    },
+    {
+      "pointer": "/1/stderr",
+      "value": ""
+    }
+  ]
+}

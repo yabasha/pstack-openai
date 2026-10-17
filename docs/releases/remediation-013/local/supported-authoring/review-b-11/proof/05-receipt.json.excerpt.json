@@ -1,0 +1,39 @@
+{
+  "kind": "selected-fixture-result-fields",
+  "caseId": "supported-authoring",
+  "attemptId": "review-b-11",
+  "originalLocator": "authoring/local/outputs/receipt/receipt.json",
+  "sourceSha256": "b0dbe6d96dd521006f2c054790a8d347b4067cf87df4f55865a7d3798dad5fb0",
+  "sourceBytes": 11539,
+  "transformation": "Named JSON fields selected by exact JSON Pointer. Task-owned absolute paths replaced with declared placeholders. Other fields omitted. These are result-artifact values, not synthesized tool execution evidence. Public selection is limited to eight short inspected fields. Longer output and unselected fields remain private.",
+  "fields": [
+    {
+      "pointer": "/assignmentId",
+      "value": "supported-authoring-receipt-1"
+    },
+    {
+      "pointer": "/inputRevision",
+      "value": "ef92e5298ecae2709a9350cdf57d32e76c4d35a9"
+    },
+    {
+      "pointer": "/requestedModel",
+      "value": "inherit-parent"
+    },
+    {
+      "pointer": "/observedModel",
+      "value": "unknown"
+    },
+    {
+      "pointer": "/limits",
+      "value": [
+        "Identity and byte inspection only. This worker did not perform the original authoring.",
+        "No skill quality evaluation, subjective tests, trigger testing or self-grading.",
+        "No validator invocation or claim of validator execution by this worker. Coordinator owns validator and structural check evidence.",
+        "Original author worker identity supplied by coordinator; original report lacks workerId and has the explicit assignment discrepancy above.",
+        "Observed model and effort unavailable. No diversity claim.",
+        "No installs, fetch, external writes, commits, source/cache/configuration edits or skill edits.",
+        "PR delivery remains explicitly deferred. Missing create-skill identity remains a dependency limit of the original workflow."
+      ]
+    }
+  ]
+}

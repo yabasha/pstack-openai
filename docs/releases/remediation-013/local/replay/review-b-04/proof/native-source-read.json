@@ -1,0 +1,34 @@
+{
+  "schemaVersion": 1,
+  "kind": "native-command-event-excerpt",
+  "caseId": "replay",
+  "attemptId": "review-b-04",
+  "inputRevision": "f7e6173423ad93c29d7a0b352c9f9b29d9f25976",
+  "originalLocator": "remaining-local/actors/remaining-02/events.jsonl",
+  "sourceSha256": "c345328d63867893f4034f5adc3ba29a6ffa73d42710d637d058dd1874eda68a",
+  "itemId": "item_72",
+  "startedLine": 132,
+  "completedLine": 133,
+  "originalEventType": "item.completed",
+  "observedOperationType": "command_execution",
+  "command": "/bin/zsh -lc 'cat <installed-frozen-package>/skills/principle-make-operations-idempotent/SKILL.md'",
+  "aggregatedOutputPrefix": "---\nname: principle-make-operations-idempotent\ndescription: \"Apply when designing commands, lifecycle steps, or processing loops that run amid crashes, restarts, and retries. Converge to the same end state regardless of partial prior runs.\"\ndisable-model-invocation: true\n---\n\n# Make Operations Idempotent\n\nDesign operations so they converge to the correct state regardless of how many times they run or where they start from. Every state-mutating operation should answer: \"What happens if this runs twice? What happens if the previous run crashed halfway?\"\n\n**Why:** Commands, lifecycle operations, ",
+  "originalAggregatedOutputCharacters": 2642,
+  "exitCode": 0,
+  "status": "completed",
+  "scope": "This is a source read by the case batch coordinator. It is not represented as a child worker read or as proof of all child instructions.",
+  "clock": "The public event has no timestamp. Line order is retained. No duration or clock interval is inferred.",
+  "transformation": "Exact event fields selected. Absolute task and installed-package paths are replaced with declared placeholders. Output is a prefix, not the complete source read. No other event or browser context is included. Only these literal or explicitly loop-listed registered source names are matched. This does not prove every registered source path was read. Native callable metadata is corroborated against a scoped private callsite. Protected or unrelated payload contents are not copied or decoded.",
+  "sourceScopeMatchedByCommand": [
+    "skills/principle-make-operations-idempotent/SKILL.md"
+  ],
+  "nativeCallBinding": {
+    "originalLocator": "native-captures-sanitized-v2/remaining-02/01a1489f-461a-77f0-b656-a818db38ab80.jsonl",
+    "sourceSha256": "05281e4dadcf4bc00588c748ce75d5a83f509483f7a7a00317e40c644dfb6a50",
+    "line": 214,
+    "callId": "call_92bc2aa279bc4ac8beae64b026a383e5",
+    "observedToolName": "exec",
+    "observedNestedCallsite": "tools.exec_command",
+    "corroboration": "The actual scoped native custom-tool call invokes tools.exec_command with the exact command parsed from this public command_execution event. Only the callable identity and locator are projected. Its surrounding payload remains private."
+  }
+}

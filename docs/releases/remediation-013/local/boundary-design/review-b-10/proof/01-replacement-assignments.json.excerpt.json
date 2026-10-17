@@ -1,0 +1,43 @@
+{
+  "kind": "selected-fixture-result-fields",
+  "caseId": "boundary-design",
+  "attemptId": "review-b-10",
+  "originalLocator": "work/local_compiler_cases/projects/pricing-compatibility-corrected/deliverables/replacement-assignments.json",
+  "sourceSha256": "8606b038bfef39e2921cde023d6555c7173e1890c71da9e77be5d6373c7bf840",
+  "sourceBytes": 2627,
+  "transformation": "Named JSON fields selected by exact JSON Pointer. Task-owned absolute paths replaced with declared placeholders. Other fields omitted. These are result-artifact values, not synthesized tool execution evidence. Public selection is limited to eight short inspected fields. Longer output and unselected fields remain private.",
+  "fields": [
+    {
+      "pointer": "/0/name",
+      "value": "design_item"
+    },
+    {
+      "pointer": "/0/inputRevision",
+      "value": "931f3a170b4f7d4b46cc2e1442d5d4268e3d1a7d"
+    },
+    {
+      "pointer": "/0/requestedModel",
+      "value": "inherit-parent"
+    },
+    {
+      "pointer": "/0/actualModel",
+      "value": "unknown"
+    },
+    {
+      "pointer": "/1/name",
+      "value": "design_collection"
+    },
+    {
+      "pointer": "/1/inputRevision",
+      "value": "931f3a170b4f7d4b46cc2e1442d5d4268e3d1a7d"
+    },
+    {
+      "pointer": "/1/requestedModel",
+      "value": "inherit-parent"
+    },
+    {
+      "pointer": "/1/actualModel",
+      "value": "unknown"
+    }
+  ]
+}

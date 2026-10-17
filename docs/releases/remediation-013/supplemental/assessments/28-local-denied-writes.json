@@ -1,0 +1,41 @@
+{
+  "kind": "historical-independent-assessment-extract",
+  "qualification": {
+    "inputRevision": "4138e161c27cafffd2baaab6bf4ca53e86a57433",
+    "sourceFreeze": "51f209daf83cd97d64f89881d66533bb59dc57db",
+    "packageVersion": "0.1.3",
+    "currentSourceQualified": false
+  },
+  "source": {
+    "path": "<private-run>/grades/grade_local_resume/result.json",
+    "sha256": "8f492a452ef4e160f619772022157e7600e78034d11b1e7f16d1d3f1499875a2",
+    "locator": {
+      "jsonPointer": "/cases/7"
+    }
+  },
+  "originalAssessment": {
+    "caseId": "denied-writes",
+    "proposedStatus": "pass",
+    "reason": "The separately prospective later-granted local variant created and durably read back the exact 124-byte assigned output after recording its limited grant transition. This satisfies the explicit positive grant/write/readback branch while preserving the initial denied branch.",
+    "evidence": [
+      "<private-run>/remaining-local/cases/denied-writes/outputs/initial-policy-denied.json",
+      "<private-run>/remaining-local/cases/denied-writes/outputs/grant-transition.json",
+      "<private-run>/remaining-local/cases/denied-writes/outputs/granted-write-readback.json",
+      "<private-run>/remaining-local/cases/denied-writes/outputs/native-operation-receipts.json",
+      "<private-run>/grades/grade_local_resume/own-checks.json"
+    ],
+    "limits": [
+      "The initial denial is POLICY withholding, not an observed host enforcement error. No permission configuration change or external write occurred. The initial denied branch remains blocked and is not replaced by the later grant."
+    ]
+  },
+  "selectedProof": [
+    "proof/28-local-denied-writes-1.json",
+    "proof/28-local-denied-writes-2.json",
+    "proof/28-local-denied-writes-3.json"
+  ],
+  "publicationStatus": "proposal-only; no canonical host evidence record is constructed",
+  "publicationGaps": [
+    "This assessment format is not the canonical evidence schema. Root-relative operation bindings and any required structured method receipt require separate complete validation.",
+    "Original assessment limitations, invalid receipts and capture gaps are preserved. A behavioral pass does not qualify a different package revision."
+  ]
+}

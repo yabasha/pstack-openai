@@ -1,0 +1,43 @@
+{
+  "kind": "historical-proof-selection",
+  "source": {
+    "path": "<private-run>/web-checkpoint-3/units/migration-units/outputs/migration-units/baseline-check.json",
+    "sha256": "20886fd34102301ea0e41e55760e3d187867fea949fb5808238459fa0b66cc7c",
+    "bytes": 606
+  },
+  "selection": [
+    {
+      "locator": {
+        "jsonPointer": "/request/argv"
+      },
+      "value": [
+        "/mnt/data/pstack-013-evaluation/runtime/bun-linux-x64/bun",
+        "--no-install",
+        "test",
+        "tests/healthy.test.mjs",
+        "--test-name-pattern",
+        "schema reader"
+      ]
+    },
+    {
+      "locator": {
+        "jsonPointer": "/request/cwd"
+      },
+      "value": "/mnt/data/pstack-remediation-20261017/attempts-18/outputs/migration-units/task-input"
+    },
+    {
+      "locator": {
+        "jsonPointer": "/return"
+      },
+      "value": {
+        "exitCode": 0,
+        "stdout": "bun test v1.4.2 (744846f84)\n",
+        "stderr": "\ntests/healthy.test.mjs:\n(pass) schema reader preserves required fields [1.02ms]\n\n 1 pass\n 3 filtered out\n 0 fail\n 2 expect() calls\nRan 1 test across 1 file. [12.00ms]\n"
+      }
+    }
+  ],
+  "limits": [
+    "Selections preserve the exact source value at each locator. Truncated strings carry explicit code-unit bounds.",
+    "A producer-captured return is not a recovered native parent envelope. Missing call IDs, original capture defects and unknown model observations remain missing."
+  ]
+}

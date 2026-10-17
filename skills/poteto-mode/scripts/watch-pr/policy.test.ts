@@ -506,7 +506,7 @@ it("unknown forge state retries to clean and times out honestly", async () => {
     const clean = fakeReader();
     const events: ProgressVerdict[] = [];
     const result = await runSimple({contexts: [context(1)], mode: "single", statusOnly: false,
-      options: {...options, timeout: 60}, dependencies: {
+      options: {...options, timeout: forever ? 60 : 61}, dependencies: {
         reader: {...clean, pullRequest: requested => (forever || ticks === 0 ? unknown : clean).pullRequest(requested)},
         clock: {now: () => ticks, observedAt: () => "synthetic", sleep: async seconds => {ticks += seconds;}},
         emit: event => events.push(event),

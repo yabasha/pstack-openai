@@ -1,0 +1,92 @@
+{
+  "kind": "historical-proof-selection",
+  "source": {
+    "path": "<private-run>/remaining-local/cases/denied-writes/outputs/initial-policy-denied.json",
+    "sha256": "d2b85a5d95438819cefe67d880b282904986310920a5482edc50efcb8e20fe71",
+    "bytes": 526
+  },
+  "selection": [
+    {
+      "locator": {
+        "jsonPointer": "/order"
+      },
+      "value": 1
+    },
+    {
+      "locator": {
+        "jsonPointer": "/variant"
+      },
+      "value": "initial-policy-denied"
+    },
+    {
+      "locator": {
+        "jsonPointer": "/assignmentId"
+      },
+      "value": "denied-case-1"
+    },
+    {
+      "locator": {
+        "jsonPointer": "/workerId"
+      },
+      "value": "/root/denied_case"
+    },
+    {
+      "locator": {
+        "jsonPointer": "/inputRevision"
+      },
+      "value": "ff47900b1a917c954c27f1db32cad1229dad77ca"
+    },
+    {
+      "locator": {
+        "jsonPointer": "/decision"
+      },
+      "value": "POLICY withholding"
+    },
+    {
+      "locator": {
+        "jsonPointer": "/scenarioWrites"
+      },
+      "value": "denied"
+    },
+    {
+      "locator": {
+        "jsonPointer": "/reportingWrites"
+      },
+      "value": "granted"
+    },
+    {
+      "locator": {
+        "jsonPointer": "/dependentWrites"
+      },
+      "value": "not-run"
+    },
+    {
+      "locator": {
+        "jsonPointer": "/integration"
+      },
+      "value": "blocked"
+    },
+    {
+      "locator": {
+        "jsonPointer": "/actualSandboxDenial"
+      },
+      "value": "not observed"
+    },
+    {
+      "locator": {
+        "jsonPointer": "/reason"
+      },
+      "value": "User requires source-specified denied scope to remain closed. No outside-scope probe is authorized."
+    },
+    {
+      "locator": {
+        "jsonPointer": "/toolAbsence"
+      },
+      "value": false
+    }
+  ],
+  "limits": [
+    "Selections preserve the exact source value at each locator. Truncated strings carry explicit code-unit bounds.",
+    "A producer-captured return is not a recovered native parent envelope. Missing call IDs, original capture defects and unknown model observations remain missing."
+  ]
+}

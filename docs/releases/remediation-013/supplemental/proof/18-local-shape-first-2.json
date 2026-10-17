@@ -1,0 +1,23 @@
+{
+  "kind": "historical-proof-selection",
+  "source": {
+    "path": "<private-run>/work/notes_workflow_reruns/projects/shape-first/domain/jobs.mjs",
+    "sha256": "c8037927543df6ac0c01a935f826f7ae69ec21281e15af24b8052da1809a02dc",
+    "bytes": 3319
+  },
+  "selection": [
+    {
+      "locator": {
+        "textCodeUnits": [
+          0,
+          1038
+        ]
+      },
+      "value": "const retainedPrototypes = new Set([\n  Object.prototype, Array.prototype, Map.prototype, Set.prototype,\n  Date.prototype, RegExp.prototype, ArrayBuffer.prototype,\n  Error.prototype, EvalError.prototype, RangeError.prototype,\n  ReferenceError.prototype, SyntaxError.prototype, TypeError.prototype,\n  URIError.prototype, AggregateError.prototype,\n]);\n\nfunction snapshot(value) {\n  const copy = structuredClone(value);\n  const visited = new Set();\n  const pending = [copy];\n  while (pending.length) {\n    const current = pending.pop();\n    if (current === null || typeof current !== 'object' || visited.has(current)) continue;\n    visited.add(current);\n    if (current instanceof SharedArrayBuffer) throw new TypeError('Shared storage is unsupported');\n    if (ArrayBuffer.isView(current)) {\n      pending.push(current.buffer);\n    } else {\n      const prototype = Object.getPrototypeOf(current);\n      if (prototype !== null && !retainedPrototypes.has(prototype)) {\n        throw new TypeError('Unsupported retained object family');\n      }"
+    }
+  ],
+  "limits": [
+    "Selections preserve the exact source value at each locator. Truncated strings carry explicit code-unit bounds.",
+    "A producer-captured return is not a recovered native parent envelope. Missing call IDs, original capture defects and unknown model observations remain missing."
+  ]
+}

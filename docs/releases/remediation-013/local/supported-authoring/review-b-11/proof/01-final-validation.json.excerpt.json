@@ -1,0 +1,28 @@
+{
+  "kind": "selected-fixture-result-fields",
+  "caseId": "supported-authoring",
+  "attemptId": "review-b-11",
+  "originalLocator": "authoring/local/outputs/evidence/final-validation.json",
+  "sourceSha256": "2fbf38ac7373718edb300a5e33cb2212e09335cbc72dd6f093337635cac1a681",
+  "sourceBytes": 452,
+  "transformation": "Named JSON fields selected by exact JSON Pointer. Task-owned absolute paths replaced with declared placeholders. Other fields omitted. These are result-artifact values, not synthesized tool execution evidence. Public selection is limited to eight short inspected fields. Longer output and unselected fields remain private.",
+  "fields": [
+    {
+      "pointer": "/argv",
+      "value": [
+        "/opt/homebrew/bin/python3",
+        "-B",
+        "<local-user>/.codex/skills/.system/skill-creator/scripts/quick_validate.py",
+        "<private-run>/authoring/local/outputs/skill"
+      ]
+    },
+    {
+      "pointer": "/stdout",
+      "value": "Skill is valid!\n"
+    },
+    {
+      "pointer": "/stderr",
+      "value": ""
+    }
+  ]
+}

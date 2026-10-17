@@ -1,0 +1,10 @@
+{
+  "kind": "supplied-fixture-input-excerpt",
+  "caseId": "fresh-worker-mode",
+  "inputRevision": "de083c0cb5a8bc8e952f02eb63c0df968cb9e8bc",
+  "originalLocator": "remaining-local/cases/fresh-worker-mode/task-contract.json",
+  "sourceSha256": "cdd28123949fba401199ea944b0df9b262cc4a75dd11373d68d01e4fed48de75",
+  "pointer": "/case/prompt",
+  "suppliedPrompt": "Invoke /poteto-mode for a scoped nontrivial feature. Give a fresh worker this mode and require its chosen playbook, applied principle leaves, throughput checkpoint and evidence. Repeat with worker tools unavailable and with the mode or an applied leaf unavailable. Exercise the 23 playbook route contracts, a no-spawn worker, helper setup failure, a stale full head or missing artifact, and an authorized local checklist when no todo tool exists. Use fixtures for helper boundaries; do not contact a live forge or install dependencies.",
+  "transformation": "Only the exact supplied case prompt is projected. Fixture data and arbitrary surrounding contract fields are omitted. This is supplied input, not a native successful tool operation."
+}

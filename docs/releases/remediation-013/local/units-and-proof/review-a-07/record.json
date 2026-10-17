@@ -1,0 +1,93 @@
+{
+  "caseId": "units-and-proof",
+  "packageVersion": "0.1.3",
+  "packageCommit": "51f209daf83cd97d64f89881d66533bb59dc57db",
+  "host": "codex",
+  "hostMode": "Historical native Local task-scoped fixture observation",
+  "date": "2026-10-17",
+  "input": "Write a multi-phase pstack plan for a two-PR change. Name file ownership and dependencies, unit tests, live regression against trunk and head, interaction review media, and applicable performance evidence. Run the adapted pstack checker. Repeat with unavailable workers, controls, scheduling, remote setup, model selection and denied writes. Actual task fixture revision a02b520ef6361724f19f1af96b42dd70cd8fcf9f.",
+  "observedOutput": "The saved two-PR planning artifact preserves ordered program/PR/close/appendix sections, exact file ownership and dependencies, unit predicates, ten named future scenarios per PR, baseline/head regression and performance budgets. All five capability declarations have evidence. Zero executable live lanes are declared because no runnable app or spare nested capacity exists. Omitted scenarios remain explicit. Interaction screenshot/video approval and independent review remain gates. Implementation waits for explicit go. No proposed media path is claimed as an existing proof. Actual checker initially rejected the plan, then accepted the corrected plan and policy variants. This reviewer independently reran the read-only checker and obtained two PR sections, zero problems with identical before/after bytes. The denied-write variant returns unsaved text captured separately by the authorized evidence owner. It does not claim an OS denial. The case explicitly permits a structurally valid plan with blocked execution to pass. This is a full planning-deliverable qualification, not implementation, UI or performance completion.",
+  "status": "pass",
+  "execution": "direct",
+  "inputRevision": "a02b520ef6361724f19f1af96b42dd70cd8fcf9f",
+  "sourcePaths": [
+    "skills/poteto-mode/playbooks/multi-phase-plan.md",
+    "agents/poteto-agent.md",
+    "skills/poteto-mode/SKILL.md",
+    "skills/poteto-mode/scripts/check-plan.mjs",
+    "skills/poteto-mode/playbooks/prototype.md",
+    "skills/poteto-mode/playbooks/autopilot-full.md",
+    "skills/poteto-mode/playbooks/autopilot-stack.md",
+    "skills/poteto-mode/playbooks/orchestrate.md",
+    "skills/poteto-mode/playbooks/opening-a-pr.md",
+    "skills/poteto-mode/playbooks/shipping.md",
+    "skills/poteto-mode/references/bugbot-triage.md",
+    "skills/swarm/SKILL.md",
+    "skills/technical-writing/SKILL.md",
+    "skills/unslop/SKILL.md",
+    "skills/principle-never-block-on-the-human/SKILL.md",
+    "skills/principle-guard-the-context-window/SKILL.md",
+    "skills/principle-sequence-verifiable-units/SKILL.md",
+    "skills/principle-encode-lessons-in-structure/SKILL.md",
+    "skills/principle-prove-it-works/SKILL.md",
+    "skills/how/SKILL.md",
+    "skills/interrogate/SKILL.md",
+    "skills/show-me-your-work/SKILL.md",
+    "skills/no-comments/SKILL.md"
+  ],
+  "documentedCapabilities": [
+    "Frozen source instructions only. Current-main qualification is not established."
+  ],
+  "exposedTools": [
+    "exec"
+  ],
+  "artifacts": [
+    "docs/releases/remediation-013/local/units-and-proof/review-a-07/assessment.json",
+    "docs/releases/remediation-013/local/units-and-proof/review-a-07/proof/01-variants.json.excerpt.json",
+    "docs/releases/remediation-013/local/units-and-proof/review-a-07/proof/02-checker-main-initial.json.excerpt.json",
+    "docs/releases/remediation-013/local/units-and-proof/review-a-07/proof/03-checker-main.json.excerpt.json",
+    "docs/releases/remediation-013/local/units-and-proof/review-a-07/proof/04-final-checks.json.excerpt.json",
+    "docs/releases/remediation-013/local/units-and-proof/review-a-07/proof/supplied-input.json",
+    "docs/releases/remediation-013/local/units-and-proof/review-a-07/proof/native-source-read.json",
+    "docs/releases/remediation-013/local/units-and-proof/review-a-07/proof/task-result-prefix.json"
+  ],
+  "limits": [
+    "All five capability declarations have evidence. Zero executable live lanes are declared because no runnable app or spare nested capacity exists. Omitted scenarios remain explicit.",
+    "Interaction screenshot/video approval and independent review remain gates. Implementation waits for explicit go. No proposed media path is claimed as an existing proof.",
+    "Actual checker initially rejected the plan, then accepted the corrected plan and policy variants. This reviewer independently reran the read-only checker and obtained two PR sections, zero problems with identical before/after bytes.",
+    "The denied-write variant returns unsaved text captured separately by the authorized evidence owner. It does not claim an OS denial.",
+    "The case explicitly permits a structurally valid plan with blocked execution to pass. This is a full planning-deliverable qualification, not implementation, UI or performance completion.",
+    "The public source excerpt covers the listed matched paths only. Other source reads assessed independently remain outside this narrow public excerpt.",
+    "Only the actual operations listed in this record have narrow public bindings. Other operations from the independent assessment remain unprojected. No missing operation is invented.",
+    "The exposed tool name exec is retained from the actual scoped native custom-tool call. The nested tools.exec_command call matches this public command event. command_execution remains an event type only."
+  ],
+  "priorActionIdentities": [],
+  "permissions": {
+    "execution": "granted",
+    "writes": "granted",
+    "externalActions": "denied"
+  },
+  "models": {
+    "requested": "inherit-parent",
+    "actual": "gpt-6.1-sol"
+  },
+  "successfulOperations": [
+    {
+      "operation": "read",
+      "tool": "exec",
+      "evidence": "docs/releases/remediation-013/local/units-and-proof/review-a-07/proof/native-source-read.json"
+    }
+  ],
+  "nativeObservations": [
+    {
+      "observation": "review-outcome",
+      "evidence": "docs/releases/remediation-013/local/units-and-proof/review-a-07/assessment.json",
+      "reviewedBy": "/root/grade_remediation_local_a"
+    },
+    {
+      "observation": "supplied-input",
+      "evidence": "docs/releases/remediation-013/local/units-and-proof/review-a-07/proof/supplied-input.json",
+      "reviewedBy": "/root/project_historical_local"
+    }
+  ]
+}

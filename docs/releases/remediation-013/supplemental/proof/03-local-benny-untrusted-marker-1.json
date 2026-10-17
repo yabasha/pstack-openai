@@ -1,0 +1,215 @@
+{
+  "kind": "historical-proof-selection",
+  "source": {
+    "path": "<private-run>/remaining-local/cases/benny-untrusted-marker/outputs/completion.json",
+    "sha256": "f82a2216c551228404df8f061fadc454d5029e29bc67df69e92ea7030e4d8bed",
+    "bytes": 5905
+  },
+  "selection": [
+    {
+      "locator": {
+        "jsonPointer": "/caseId"
+      },
+      "value": "benny-untrusted-marker"
+    },
+    {
+      "locator": {
+        "jsonPointer": "/assignmentId"
+      },
+      "value": "remaining06-benny-untrusted-marker"
+    },
+    {
+      "locator": {
+        "jsonPointer": "/owner"
+      },
+      "value": "/root/benny_untrusted_marker"
+    },
+    {
+      "locator": {
+        "jsonPointer": "/terminalStatus"
+      },
+      "value": "blocked"
+    },
+    {
+      "locator": {
+        "jsonPointer": "/inputRevision"
+      },
+      "value": "7efe67e748b2598bc44d528437b8adc86d16a2b7"
+    },
+    {
+      "locator": {
+        "jsonPointer": "/originalInputRevision"
+      },
+      "value": "82c341ad0f9d29f69858348ab7df45c3766dea59"
+    },
+    {
+      "locator": {
+        "jsonPointer": "/packageVersion"
+      },
+      "value": "0.1.3"
+    },
+    {
+      "locator": {
+        "jsonPointer": "/packageCommitSupplied"
+      },
+      "value": "51f209daf83cd97d64f89881d66533bb59dc57db"
+    },
+    {
+      "locator": {
+        "jsonPointer": "/requestedModel"
+      },
+      "value": "inherit-parent"
+    },
+    {
+      "locator": {
+        "jsonPointer": "/observedModel"
+      },
+      "value": "unknown"
+    },
+    {
+      "locator": {
+        "jsonPointer": "/requestedEffort"
+      },
+      "value": "inherit-parent"
+    },
+    {
+      "locator": {
+        "jsonPointer": "/observedEffort"
+      },
+      "value": "unknown"
+    },
+    {
+      "locator": {
+        "jsonPointer": "/variants"
+      },
+      "value": [
+        {
+          "id": "unrelated-author",
+          "suppliedNarrative": "An unrelated user posts [benny:bug]",
+          "localDecision": "Reject as untrusted. An unrelated author cannot satisfy configured triage identity.",
+          "liveStatus": "blocked",
+          "observation": "No actual author, configured identity, source channel, parent timestamp or event supplied. No live thread read or wait performed."
+        },
+        {
+          "id": "conflicting-markers",
+          "suppliedNarrative": "one reply has conflicting markers",
+          "localDecision": "Reject because exactly one configured marker is required.",
+          "liveStatus": "blocked",
+          "observation": "No actual conflicting reply, coordinates, configuration or verdict budget supplied. Marker bytes beyond the narrative were not invented. No live thread read or wait performed."
+        }
+      ]
+    },
+    {
+      "locator": {
+        "jsonPointer": "/bindings"
+      },
+      "value": [
+        {
+          "operation": "read",
+          "tool": "functions.exec -> tools.exec_command",
+          "exposed": true,
+          "succeeded": true,
+          "evidence": "Native output chunks e01443, 71b4a4, 24ba8a, d8d90c, 708fd7; source-hashes.json",
+          "limits": "Local source and contract reads only."
+        },
+        {
+          "operation": "isolated-write",
+          "tool": "functions.exec -> tools.exec_command / tools.apply_patch",
+          "exposed": true,
+          "succeeded": true,
+          "evidence": "Checklist write chunk 4ae936 and this script execution plus parent readback.",
+          "limits": "Assigned outputs only. No source or configuration changes."
+        },
+        {
+          "operation": "channel-thread-read",
+          "tool": "mcp__codex_apps__slack_slack_read_thread",
+          "exposed": true,
+          "succeeded": false,
+          "evidence": "functions.exec ALL_TOOLS metadata discovery in this worker invocation.",
+          "limits": "POLICY withholding. No real scope coordinates or authorized private-history request. Tool presence is not connector readiness."
+        },
+        {
+          "operation": "external-write",
+          "tool": "mcp__codex_apps__slack_slack_send_message",
+          "exposed": true,
+          "succeeded": false,
+          "evidence": "functions.exec ALL_TOOLS metadata discovery.",
+          "limits": "POLICY withholding. User prohibits external messages. Never called."
+        },
+        {
+          "operation": "trigger",
+          "tool": null,
+          "exposed": false,
+          "succeeded": false,
+          "evidence": "Available metadata lists page automation creation, not an observed Slack event trigger.",
+          "limits": "No actual channel-event schema, trigger payload or configured binding supplied. No lifecycle call or schedule."
+        },
+        {
+          "operation": "control",
+          "tool": "mcp__cua_repl.js",
+          "exposed": true,
+          "succeeded": false,
+          "evidence": "Current tool declaration.",
+          "limits": "No target app, completed feature map or authorized repro after accepted verdict. Withheld, not falsely absent."
+        }
+      ]
+    },
+    {
+      "locator": {
+        "jsonPointer": "/limits"
+      },
+      "value": [
+        "ORIGINAL input commit unavailable in this case git object database. git show and git cat-file failures retained.",
+        "Frozen package has no .git repository. git rev-parse failed. Package commit is supplied identity, not independently derived Git HEAD. Version 0.1.3 observed in plugin.json; exact operative file hashes retained.",
+        "Three sourcePaths naming nested SKILL.md do not exist. Actual operative REFERENCE.md sourceFiles were read. No wrapper or discovery claim.",
+        "No target configuration, source coordinates, parent preflight, real thread, triage identity, report attachments or configured wait budget.",
+        "No live bounded wait, marker arrival, connector readiness, UI reproduction, code, triage verdict, tracker action, draft PR, automation or host parity observed.",
+        "Independent worker created by parent. This worker did not spawn children. Actual model and effort remain unknown. No model-diversity claim.",
+        "Parent checklist acknowledges inventory before checklist. Worker first call inspected case inventory before completing full mode read. No chronology repair claimed.",
+        "Investigation/how independent explainer was not dispatched. The operational route is blocked at source-coordinate freeze, before cause tracing. No how-worker completion claimed.",
+        "Full setup and control sources were read as contracts, not applied as authorization. No setup was attempted.",
+        "No producer self-grade. This is a blocked attempt receipt and local source-grounded rejection, not a host pass."
+      ]
+    },
+    {
+      "locator": {
+        "jsonPointer": "/suppliedInput"
+      },
+      "value": "outputs/supplied-input.json"
+    },
+    {
+      "locator": {
+        "jsonPointer": "/hashes"
+      },
+      "value": "outputs/source-hashes.json"
+    },
+    {
+      "locator": {
+        "jsonPointer": "/result"
+      },
+      "value": "outputs/benny-untrusted-marker.result.md"
+    },
+    {
+      "locator": {
+        "jsonPointer": "/actualExternalActions"
+      },
+      "value": []
+    },
+    {
+      "locator": {
+        "jsonPointer": "/actualSourceChanges"
+      },
+      "value": []
+    },
+    {
+      "locator": {
+        "jsonPointer": "/fullBatchRequestArtifact"
+      },
+      "value": "outputs/full-batch-request.txt"
+    }
+  ],
+  "limits": [
+    "Selections preserve the exact source value at each locator. Truncated strings carry explicit code-unit bounds.",
+    "A producer-captured return is not a recovered native parent envelope. Missing call IDs, original capture defects and unknown model observations remain missing."
+  ]
+}

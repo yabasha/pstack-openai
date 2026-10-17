@@ -1,0 +1,16 @@
+{
+  "kind": "task-result-file-excerpt",
+  "caseId": "shared-path-conflict",
+  "attemptId": "review-b-09",
+  "inputRevision": "5c68f1fe4b29243ed37889507222cb408af2bfef",
+  "originalLocator": "cross-host-extra/local/projects/shared-path-conflict/outputs/shared-path-conflict.result.md",
+  "sourceSha256": "d6760f00bea764061cf888790090da0bf2ea54e1682fd871de7ecc9f99e33167",
+  "sourceWasDirectlyListedByIndependentGrade": true,
+  "characterRange": {
+    "start": 0,
+    "endExclusive": 701,
+    "total": 22795
+  },
+  "content": "# Shared path coordinator summary\n\nBoth actual independent workers returned at the exact assigned revision 5c68f1fe4b29243ed37889507222cb408af2bfef. The two colliding requests were recorded at order 1 and resolved at order 2 before dispatch. Worker A owns worker-A/calculator-review.txt. Worker B owns worker-B/formatter-review.txt. Only this coordinator owns this integrated summary. The small-task collapse in Orchestrate Frame avoided program stores, PRs, and schedules.\n\nWorker A's actual public API probe confirmed module-level cachedTotal replacement, with observed values 0, 6, and 4. Its five assertions exited 0. This is shared module state, not evidence of a production concurrency failure.\n",
+  "transformation": "An inspected prefix of the actual task-result file is projected. Task-owned absolute paths use declared placeholders. The prefix may omit later qualifications. The independent assessment and its limits govern the proposed grade. This is neither a new grade nor a native callable-operation claim."
+}

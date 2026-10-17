@@ -1,0 +1,58 @@
+{
+  "kind": "selected-fixture-result-fields",
+  "caseId": "supported-authoring",
+  "attemptId": "review-b-11",
+  "originalLocator": "authoring/local/outputs/evidence/validator-probes.json",
+  "sourceSha256": "0a2ef8e0f894d50ef79af4e5c01e6ff7bf14a4c590735c35b0c075a3fccd73f0",
+  "sourceBytes": 9993,
+  "transformation": "Named JSON fields selected by exact JSON Pointer. Task-owned absolute paths replaced with declared placeholders. Other fields omitted. These are result-artifact values, not synthesized tool execution evidence. Public selection is limited to eight short inspected fields. Longer output and unselected fields remain private.",
+  "fields": [
+    {
+      "pointer": "/0/argv",
+      "value": [
+        "/opt/homebrew/bin/python3",
+        "-B",
+        "<local-user>/.codex/skills/.system/skill-creator/scripts/quick_validate.py",
+        "<private-run>/authoring/local/outputs/probes/valid"
+      ]
+    },
+    {
+      "pointer": "/0/stdout",
+      "value": "Skill is valid!\n"
+    },
+    {
+      "pointer": "/0/stderr",
+      "value": ""
+    },
+    {
+      "pointer": "/1/argv",
+      "value": [
+        "/opt/homebrew/bin/python3",
+        "-B",
+        "<local-user>/.codex/skills/.system/skill-creator/scripts/quick_validate.py",
+        "<private-run>/authoring/local/outputs/probes/missing-skill"
+      ]
+    },
+    {
+      "pointer": "/1/stdout",
+      "value": "SKILL.md not found\n"
+    },
+    {
+      "pointer": "/1/stderr",
+      "value": ""
+    },
+    {
+      "pointer": "/2/argv",
+      "value": [
+        "/opt/homebrew/bin/python3",
+        "-B",
+        "<local-user>/.codex/skills/.system/skill-creator/scripts/quick_validate.py",
+        "<private-run>/authoring/local/outputs/probes/no-frontmatter"
+      ]
+    },
+    {
+      "pointer": "/2/stdout",
+      "value": "No YAML frontmatter found\n"
+    }
+  ]
+}

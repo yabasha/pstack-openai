@@ -1,0 +1,269 @@
+{
+  "documentType": "selected-original-proof",
+  "caseId": "shared-path-conflict",
+  "selections": [
+    {
+      "origin": {
+        "path": "web-checkpoint-4/units/shared-path-conflict/outputs/shared-path-conflict/evidence/ownership-and-checkpoint.json",
+        "sha256": "68ca5383f6ed3d5146d176e74fd996e75421b83435c7878552f9ff2b8202e656",
+        "bytes": 1017,
+        "pointers": [
+          ""
+        ]
+      },
+      "selections": [
+        {
+          "pointer": "",
+          "value": {
+            "declaredOrder": 1,
+            "proposals": [
+              {
+                "worker": "A",
+                "requestedOutput": "outputs/shared-review.txt"
+              },
+              {
+                "worker": "B",
+                "requestedOutput": "outputs/shared-review.txt"
+              }
+            ],
+            "resolution": {
+              "A": "outputs/worker-A/calculator-review.txt",
+              "B": "outputs/worker-B/formatter-review.txt",
+              "coordinator": "outputs/coordinator/summary.md"
+            },
+            "contestedPathPolicy": "No writer is assigned outputs/shared-review.txt. It must remain absent.",
+            "checkpoint": {
+              "blockingFirstSteps": "Read contracts, verify task SHA, bootstrap identities, bind immutable ownership before dispatch.",
+              "independentWorkstreams": "Calculator state review and formatter behavior review.",
+              "sharedMutableState": "Eliminated by separate owned directories. Coordinator owns integration only.",
+              "smallestSafeDecomposition": "Two independent participants required by contract."
+            },
+            "mode": "Orchestrate Frame collapse to plain workers, no store machinery for this bounded task.",
+            "phases": [
+              "Frame",
+              "Fan out",
+              "Aggregate",
+              "Report"
+            ],
+            "capture": "Manual interface capture, not platform transcript export."
+          }
+        }
+      ]
+    },
+    {
+      "origin": {
+        "path": "web-checkpoint-4/units/shared-path-conflict/outputs/shared-path-conflict/evidence/method-receipt.json",
+        "sha256": "cfbc6e339f14d9b37119cb1622e61055018dd97e782016552fdaca09683fe0a5",
+        "bytes": 3298,
+        "pointers": [
+          ""
+        ]
+      },
+      "selections": [
+        {
+          "pointer": "",
+          "value": {
+            "schemaVersion": 1,
+            "kind": "swarm",
+            "inputRevision": "872553da6dd66b27e5b3059639d39a850e977b77",
+            "assignments": [
+              {
+                "id": "shared-path-A-0",
+                "workerId": "/root/r87_shared_path/calculator",
+                "inputRevision": "872553da6dd66b27e5b3059639d39a850e977b77",
+                "outputOwner": "/root/r87_shared_path/calculator",
+                "outputPath": "outputs/worker-A/calculator-review.txt",
+                "role": "poteto-agent calculator reviewer",
+                "status": "completed",
+                "startedOrder": 2,
+                "completedOrder": 4,
+                "requestedModel": "inherit-parent",
+                "actualModel": "unknown",
+                "retryCount": 0,
+                "method": {
+                  "sampleCount": 1,
+                  "sampleDefinition": "One source-grounded review of calculator.mjs with observed behavior checks using Bun",
+                  "order": "Verify full task HEAD, read required contracts and source, run checks, write exclusive review, return digest and method."
+                },
+                "taskArtifact": "evidence/brief-A.txt",
+                "rubricProvided": false,
+                "resultRevision": "872553da6dd66b27e5b3059639d39a850e977b77",
+                "resultMethod": {
+                  "sampleCount": 1,
+                  "sampleDefinition": "One source-grounded review of calculator.mjs with observed behavior checks using Bun",
+                  "order": "Verify full task HEAD, read required contracts and source, run checks, write exclusive review, return digest and method."
+                },
+                "outputSha256": "c0c6a0ad865145664392df40ded83eaa7fe76668689b13ef1c7b0026f72fc9d2"
+              },
+              {
+                "id": "shared-path-B-0",
+                "workerId": "/root/r87_shared_path/formatter",
+                "inputRevision": "872553da6dd66b27e5b3059639d39a850e977b77",
+                "outputOwner": "/root/r87_shared_path/formatter",
+                "outputPath": "outputs/worker-B/formatter-review.txt",
+                "role": "poteto-agent formatter reviewer",
+                "status": "completed",
+                "startedOrder": 3,
+                "completedOrder": 5,
+                "requestedModel": "inherit-parent",
+                "actualModel": "unknown",
+                "retryCount": 0,
+                "method": {
+                  "sampleCount": 1,
+                  "sampleDefinition": "One source-grounded review of formatter.mjs with observed behavior checks using Bun",
+                  "order": "Verify full task HEAD, read required contracts and source, run checks, write exclusive review, return digest and method."
+                },
+                "taskArtifact": "evidence/brief-B.txt",
+                "rubricProvided": false,
+                "resultRevision": "872553da6dd66b27e5b3059639d39a850e977b77",
+                "resultMethod": {
+                  "sampleCount": 1,
+                  "sampleDefinition": "One source-grounded review of formatter.mjs with observed behavior checks using Bun",
+                  "order": "Verify full task HEAD, read required contracts and source, run checks, write exclusive review, return digest and method."
+                },
+                "outputSha256": "a5c095238cc38c33bf55c9059406d97717c69405f503f55c6199cc6d2f88f19f"
+              }
+            ],
+            "reviewArtifact": "outputs/coordinator/summary.md",
+            "reviewedBy": "/root/r87_shared_path",
+            "declaredOrder": 1,
+            "partition": {
+              "requiredSlices": [
+                "calculator-state",
+                "formatter-behavior"
+              ],
+              "results": {
+                "calculator-state": "shared-path-A-0",
+                "formatter-behavior": "shared-path-B-0"
+              },
+              "gaps": []
+            },
+            "race": null,
+            "cancelled": [],
+            "quarantined": [],
+            "failureExercises": []
+          }
+        }
+      ]
+    },
+    {
+      "origin": {
+        "path": "web-checkpoint-4/units/shared-path-conflict/outputs/shared-path-conflict/evidence/result-A.native.json",
+        "sha256": "ed0a534ec4221b79d7c9863ea43e9656c1ab4d81f8fdb075e9597306b90cf686",
+        "bytes": 1067,
+        "pointers": [
+          ""
+        ]
+      },
+      "selections": [
+        {
+          "pointer": "",
+          "value": {
+            "id": "shared-path-A-0",
+            "workerId": "/root/r87_shared_path/calculator",
+            "status": "completed",
+            "inputRevision": "872553da6dd66b27e5b3059639d39a850e977b77",
+            "resultRevision": "872553da6dd66b27e5b3059639d39a850e977b77",
+            "requestedModel": "inherit-parent",
+            "actualModel": "unknown",
+            "outputOwner": "/root/r87_shared_path/calculator",
+            "outputPath": "/mnt/data/pstack-remediation-20261017/attempts-18/outputs/shared-path-conflict/outputs/worker-A/calculator-review.txt",
+            "outputSha256": "c0c6a0ad865145664392df40ded83eaa7fe76668689b13ef1c7b0026f72fc9d2",
+            "method": {
+              "sampleCount": 1,
+              "sampleDefinition": "One source-grounded review of calculator.mjs with observed behavior checks using Bun",
+              "order": "Verify full task HEAD, read required contracts and source, run checks, write exclusive review, return digest and method."
+            },
+            "resultMethod": {
+              "sampleCount": 1,
+              "sampleDefinition": "One source-grounded review of calculator.mjs with observed behavior checks using Bun",
+              "order": "Verify full task HEAD, read required contracts and source, run checks, write exclusive review, return digest and method."
+            }
+          }
+        }
+      ]
+    },
+    {
+      "origin": {
+        "path": "web-checkpoint-4/units/shared-path-conflict/outputs/shared-path-conflict/evidence/result-B.native.json",
+        "sha256": "6c5899a90a1646a27046df0398f35a9c04c93d5f21994956be38493baa8eb6b4",
+        "bytes": 1014,
+        "pointers": [
+          ""
+        ]
+      },
+      "selections": [
+        {
+          "pointer": "",
+          "value": {
+            "id": "shared-path-B-0",
+            "workerId": "/root/r87_shared_path/formatter",
+            "status": "completed",
+            "inputRevision": "872553da6dd66b27e5b3059639d39a850e977b77",
+            "resultRevision": "872553da6dd66b27e5b3059639d39a850e977b77",
+            "requestedModel": "inherit-parent",
+            "actualModel": "unknown",
+            "outputPath": "/mnt/data/pstack-remediation-20261017/attempts-18/outputs/shared-path-conflict/outputs/worker-B/formatter-review.txt",
+            "outputSha256": "a5c095238cc38c33bf55c9059406d97717c69405f503f55c6199cc6d2f88f19f",
+            "method": {
+              "sampleCount": 1,
+              "sampleDefinition": "One source-grounded review of formatter.mjs with observed behavior checks using Bun",
+              "order": "Verify full task HEAD, read required contracts and source, run checks, write exclusive review, return digest and method."
+            },
+            "resultMethod": {
+              "sampleCount": 1,
+              "sampleDefinition": "One source-grounded review of formatter.mjs with observed behavior checks using Bun",
+              "order": "Verify full task HEAD, read required contracts and source, run checks, write exclusive review, return digest and method."
+            }
+          }
+        }
+      ]
+    },
+    {
+      "origin": {
+        "path": "web-checkpoint-4/units/shared-path-conflict/outputs/shared-path-conflict/evidence/dispatch-A.actual-request.json",
+        "sha256": "07fb5c87bcc7f870ed4afd079183c91e0976043d5009ced175490e48b1526a3a",
+        "bytes": 814,
+        "pointers": [
+          ""
+        ]
+      },
+      "selections": [
+        {
+          "pointer": "",
+          "value": {
+            "tool": "collaboration.followup_task",
+            "request": {
+              "target": "/root/r87_shared_path/calculator",
+              "message": "Execute immutable assignment /mnt/data/pstack-remediation-20261017/attempts-18/outputs/shared-path-conflict/evidence/assignment-A.json. Entire full role prompt and standalone brief are in verified readable local /mnt/data/pstack-remediation-20261017/attempts-18/outputs/shared-path-conflict/evidence/brief-A.txt. Read both fully first, then complete all read chains before method. Full standing orders at /mnt/data/pstack-remediation-20261017/attempts-18/batch15-standing-orders.md apply. SHA verified immediately before this dispatch 872553da6dd66b27e5b3059639d39a850e977b77. Exclusive file only. No nested workers. Return real bytes digest, full structured method and exact revision."
+            },
+            "returnedContent": ""
+          }
+        }
+      ]
+    },
+    {
+      "origin": {
+        "path": "web-checkpoint-4/units/shared-path-conflict/outputs/shared-path-conflict/evidence/dispatch-B.actual-request.json",
+        "sha256": "0f20a48296b2fe6478461da81085966e5412589de2f6baa4a614dbe2e7406bf4",
+        "bytes": 813,
+        "pointers": [
+          ""
+        ]
+      },
+      "selections": [
+        {
+          "pointer": "",
+          "value": {
+            "tool": "collaboration.followup_task",
+            "request": {
+              "target": "/root/r87_shared_path/formatter",
+              "message": "Execute immutable assignment /mnt/data/pstack-remediation-20261017/attempts-18/outputs/shared-path-conflict/evidence/assignment-B.json. Entire full role prompt and standalone brief are in verified readable local /mnt/data/pstack-remediation-20261017/attempts-18/outputs/shared-path-conflict/evidence/brief-B.txt. Read both fully first, then complete all read chains before method. Full standing orders at /mnt/data/pstack-remediation-20261017/attempts-18/batch15-standing-orders.md apply. SHA verified immediately before this dispatch 872553da6dd66b27e5b3059639d39a850e977b77. Exclusive file only. No nested workers. Return real bytes digest, full structured method and exact revision."
+            },
+            "returnedContent": ""
+          }
+        }
+      ]
+    }
+  ]
+}

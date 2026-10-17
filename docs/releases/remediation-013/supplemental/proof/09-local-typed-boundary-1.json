@@ -1,0 +1,23 @@
+{
+  "kind": "historical-proof-selection",
+  "source": {
+    "path": "<private-run>/cross-host-extra/local/projects/typed-boundary/outputs/refactor-v2/boundary.ts",
+    "sha256": "939d0f7b1e2bc95ce5d5df066b556eb5e3ffc11fccd68747af62893839d313c8",
+    "bytes": 1322
+  },
+  "selection": [
+    {
+      "locator": {
+        "textCodeUnits": [
+          0,
+          723
+        ]
+      },
+      "value": "import { UserSchema } from './context';\nimport type { ChecksMessage, Config, Session, User } from './context';\n\nexport type State =\n  | { kind: 'loading' }\n  | { kind: 'ready'; user: User }\n  | { kind: 'error'; error: string };\n\nexport function decode({ payload }: { payload: string }): User {\n  const value: unknown = JSON.parse(payload);\n  return UserSchema.parse(value);\n}\n\nexport function newest({ xs }: { xs: Session[] }): Session | undefined {\n  return xs.at(0);\n}\n\nexport function sum({ xs }: { xs: number[] }): number {\n  return xs.reduce((a, b) => a + b, 0);\n}\n\nexport const config = { theme: 'dark', cols: 3 } satisfies Config;\n\nexport function hasUser(candidate: { user: unknown }): candidate is { user: User } {"
+    }
+  ],
+  "limits": [
+    "Selections preserve the exact source value at each locator. Truncated strings carry explicit code-unit bounds.",
+    "A producer-captured return is not a recovered native parent envelope. Missing call IDs, original capture defects and unknown model observations remain missing."
+  ]
+}

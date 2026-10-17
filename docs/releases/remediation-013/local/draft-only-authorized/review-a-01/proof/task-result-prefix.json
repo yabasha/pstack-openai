@@ -1,0 +1,16 @@
+{
+  "kind": "task-result-file-excerpt",
+  "caseId": "draft-only-authorized",
+  "attemptId": "review-a-01",
+  "inputRevision": "a52d93446e73674f731529b7f85b05e8c6ccea4c",
+  "originalLocator": "remaining-local/cases/draft-only-authorized/outputs/draft-only-authorized.result.md",
+  "sourceSha256": "063a0b0ab7b4275a85d950f342dd791be3b8a0601527ce31ae37e74d2d55efd6",
+  "sourceWasDirectlyListedByIndependentGrade": false,
+  "characterRange": {
+    "start": 0,
+    "endExclusive": 725,
+    "total": 6954
+  },
+  "content": "# Draft-only authorized attempt\n\nPR creation is blocked. Local preparation artifacts exist. No created PR URL or draft state is claimed.\n\nThe exact current input is `a52d93446e73674f731529b7f85b05e8c6ccea4c`. This owner verified it independently before task execution. The supplied historical original revision is `5ec24f60313dda8fbc1a74a3257d82a44e966229`. Its object is absent from this repository. The original lookup failures are retained in `observations.json` and this worker's native invocation history. No network retrieval was attempted.\n\nThe full case request and contract are preserved in `input-snapshot/current-contract.json` and `input-snapshot/task-contract.json`. The case prompt is reproduced exactly below.\n",
+  "transformation": "An inspected prefix of the actual task-result file is projected. Task-owned absolute paths use declared placeholders. The prefix may omit later qualifications. The independent assessment and its limits govern the proposed grade. This is neither a new grade nor a native callable-operation claim."
+}

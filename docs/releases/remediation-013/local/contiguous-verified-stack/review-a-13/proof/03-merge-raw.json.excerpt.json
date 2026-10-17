@@ -1,0 +1,43 @@
+{
+  "kind": "selected-fixture-result-fields",
+  "caseId": "contiguous-verified-stack",
+  "attemptId": "review-a-13",
+  "originalLocator": "work/helper_workflow_reruns/projects/release-stack/deliverables/builder/merge-raw.json",
+  "sourceSha256": "4ca86f3844287686e7e1bd9c3a537c1a92e2dd855b15a61f6669cd743cabda85",
+  "sourceBytes": 21604,
+  "transformation": "Named JSON fields selected by exact JSON Pointer. Task-owned absolute paths replaced with declared placeholders. Other fields omitted. These are result-artifact values, not synthesized tool execution evidence. Public selection is limited to eight short inspected fields. Longer output and unselected fields remain private.",
+  "fields": [
+    {
+      "pointer": "/0/stdout",
+      "value": ""
+    },
+    {
+      "pointer": "/0/stderr",
+      "value": "Previous HEAD position was 77a896a docs(fixture): clarify CLI invocation\nSwitched to branch 'trunk'\n"
+    },
+    {
+      "pointer": "/1/stdout",
+      "value": ""
+    },
+    {
+      "pointer": "/1/stderr",
+      "value": "From <private-run>/work/helper_workflow_reruns/projects/release-stack/deliverables/builder/repo\n * branch            trunk      -> FETCH_HEAD\n"
+    },
+    {
+      "pointer": "/2/stdout",
+      "value": "97388c27171358c70111e90f6c40e36bfb8f2590\n"
+    },
+    {
+      "pointer": "/2/stderr",
+      "value": ""
+    },
+    {
+      "pointer": "/3/stdout",
+      "value": ""
+    },
+    {
+      "pointer": "/3/stderr",
+      "value": "Switched to a new branch 'land-101'\n"
+    }
+  ]
+}

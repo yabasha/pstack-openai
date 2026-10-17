@@ -1,0 +1,23 @@
+{
+  "kind": "historical-proof-selection",
+  "source": {
+    "path": "<private-run>/cross-host-extra/local/projects/trace-path/outputs/verify.mjs",
+    "sha256": "1ca68409cb2248d1a17b441122f34b39782ef94e53a96dc1ac14b582c332546f",
+    "bytes": 949
+  },
+  "selection": [
+    {
+      "locator": {
+        "textCodeUnits": [
+          0,
+          949
+        ]
+      },
+      "value": "import assert from \"node:assert/strict\";\nimport { invoiceController } from \"../committed-inputs/shared/additional/invoice/controller.mjs\";\nimport { inspectCachedTotal } from \"../committed-inputs/shared/additional/invoice/calculator.mjs\";\nassert.equal(inspectCachedTotal(), 0);\nassert.deepEqual(invoiceController({ rows: [{ qty: 2, unitPrice: 5 }, { qty: 3, unitPrice: 4 }] }), { total: 22 });\nassert.equal(inspectCachedTotal(), 22);\nassert.deepEqual(invoiceController({ rows: [] }), { total: 0 });\nassert.equal(inspectCachedTotal(), 0);\nassert.throws(() => invoiceController({}), TypeError);\nconsole.log(JSON.stringify({ checks: [\"initial cache equals 0\", \"controller returns literal expected total 22\", \"cache equals last total 22\", \"empty rows return 0 and replace cache\", \"missing rows throws TypeError\"], result: \"all assertions held\", sideEffects: \"calculate assigned module-local cachedTotal inside this disposable process only\" }, null, 2));\n"
+    }
+  ],
+  "limits": [
+    "Selections preserve the exact source value at each locator. Truncated strings carry explicit code-unit bounds.",
+    "A producer-captured return is not a recovered native parent envelope. Missing call IDs, original capture defects and unknown model observations remain missing."
+  ]
+}

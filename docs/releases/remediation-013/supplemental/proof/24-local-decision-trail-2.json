@@ -1,0 +1,23 @@
+{
+  "kind": "historical-proof-selection",
+  "source": {
+    "path": "<private-run>/remaining-local/cases/decision-trail/outputs/decisions.producer-original.tsv",
+    "sha256": "64a389411e911c44ff6e92746b8e71c2e6955f2ebcd2cea3f0f61f8cf2b43d95",
+    "bytes": 2243
+  },
+  "selection": [
+    {
+      "locator": {
+        "textCodeUnits": [
+          0,
+          2243
+        ]
+      },
+      "value": "ts\tphase\tdecision\twhy\tevidence\tresult\n2026-10-17T07:50:45Z\tstart\tStarted run /root/trail; prior timestamp range none\tThis run creates the canonical local log\t<private-run>/remaining-local/cases/decision-trail/outputs/run-boundary.json\topen\n2026-10-17T07:50:45Z\tfixture\tDELIBERATELY WRONG EXERCISE CLAIM: the synthetic cache change shipped\tExercise append-only correction; this is not a live outcome claim\t<private-run>/remaining-local/cases/decision-trail/committed-inputs/shared/additional/history/history.json\twrong claim; superseded by next row\n2026-10-17T07:50:45Z\tcorrection\tSupersedes row 3: the supplied cache change is a local draft, not shipped\tFixture event 05 corrects event 04; fixture is synthetic evidence\t<private-run>/remaining-local/cases/decision-trail/committed-inputs/shared/additional/history/history.json\tcorrected; no live shipping outcome observed\n2026-10-17T07:50:45Z\t'=formula exercise\t'+Literal decision sample\t'-Literal reason sample\t<private-run>/remaining-local/cases/decision-trail/outputs/native-exercise.mjs\t'@literal result sample\n2026-10-17T07:51:22Z\tvalidation\tObserved invalid separator rejection and formula protection\tUse actual helper bytes and results instead of static inspection\t<private-run>/remaining-local/cases/decision-trail/outputs/helper-raw.json\t3 invalid attempts rejected unchanged; 4 valid rows saved\n2026-10-17T07:51:22Z\taudit\tRead all current rows and resolve local evidence; full transcript audit unavailable\tSynthetic history and parent-only locator cannot prove this worker complete history\t<private-run>/remaining-local/cases/decision-trail/outputs/limits.json\tlocal artifact audit only; complete transcript audit blocked\n2026-10-17T07:51:22Z\treview\tRequested independent different-family review; actual family unknown\tInherited selection and missing model observations cannot establish different families\t<private-run>/remaining-local/cases/decision-trail/outputs/limits.json\tfull cross-family review blocked\n"
+    }
+  ],
+  "limits": [
+    "Selections preserve the exact source value at each locator. Truncated strings carry explicit code-unit bounds.",
+    "A producer-captured return is not a recovered native parent envelope. Missing call IDs, original capture defects and unknown model observations remain missing."
+  ]
+}

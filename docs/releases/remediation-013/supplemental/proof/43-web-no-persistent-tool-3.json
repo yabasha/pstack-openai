@@ -1,0 +1,23 @@
+{
+  "kind": "historical-proof-selection",
+  "source": {
+    "path": "<private-run>/web-checkpoint-3/units/no-persistent-tool/outputs/no-persistent-tool/trail-readback.txt",
+    "sha256": "4b8a9fd1df6ad95335da23d6c299e7613f029b014bf54ce67529d3a1abf5bc45",
+    "bytes": 653
+  },
+  "selection": [
+    {
+      "locator": {
+        "textCodeUnits": [
+          0,
+          653
+        ]
+      },
+      "value": "ts\tphase\tdecision\twhy\tevidence\tresult\n2026-10-17T07:43:57Z\titeration-1\tKeep the negative-count repair locally\tThe reproduced count failure is fixed; formatting remains a separate open unit\t/mnt/data/pstack-remediation-20261017/attempts-18/outputs/no-persistent-tool/after.json\topen; negative-count test passes; formatting fails\n2026-10-17T07:44:26Z\taudit\tRetain the open predicate and save a continuation brief\tOne allowed repair is verified; formatting and independent review remain open\t/mnt/data/pstack-remediation-20261017/attempts-18/outputs/no-persistent-tool/continuation.md\topen; native transcript capture incomplete; independent review blocked\n"
+    }
+  ],
+  "limits": [
+    "Selections preserve the exact source value at each locator. Truncated strings carry explicit code-unit bounds.",
+    "A producer-captured return is not a recovered native parent envelope. Missing call IDs, original capture defects and unknown model observations remain missing."
+  ]
+}
