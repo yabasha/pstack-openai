@@ -1450,7 +1450,7 @@
       "sourcePath": ".cursor-plugin/plugin.json",
       "sourceSha256": "7bc736c60985805f70465e044e5adc7028663f72a73deea7fa3e95e52d70dc8e",
       "destinationPath": "plugin.json",
-      "destinationSha256": "509871a98f0bbdc4c21991ee396331424208e308f40df21d15c1fcb27bfdf456",
+      "destinationSha256": "6cf28833e14a8f0a3bb1747a8b8b58b7605642bac1680446bae45f8fdb1d2ec5",
       "kind": "support",
       "packageDependencies": [
         "assets/logo.png"
@@ -12347,5 +12347,17 @@
         "sha256": "1cbc23295c26a6beab94fc9d49bce22f2b87180127e3926bf80993bdf0d8d71e"
       }
     ]
+  },
+  "versionRefresh": {
+    "baseRevision": "1efa29c8e2aa25cb9019185733e14104f37fd4d6",
+    "version": "0.1.5",
+    "destinations": [
+      {
+        "path": "plugin.json",
+        "before": "509871a98f0bbdc4c21991ee396331424208e308f40df21d15c1fcb27bfdf456",
+        "after": "6cf28833e14a8f0a3bb1747a8b8b58b7605642bac1680446bae45f8fdb1d2ec5"
+      }
+    ],
+    "note": "Refresh only the changed portable manifest byte digest. Canonical upstream identities, dependency bindings and all workflow execution statuses stay unchanged. Host qualification is recorded separately after the next immutable freeze."
   }
 }

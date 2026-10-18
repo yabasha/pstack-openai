@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "kind": "pstack-tested-package",
-  "testedCommit": "51f209daf83cd97d64f89881d66533bb59dc57db",
+  "testedCommit": "4513f3d706e6dfe9e396c80a74c490c3ebcec7a6",
   "reportPaths": [
     "docs/parity/evidence/chatgpt/absent-workers.json",
     "docs/parity/evidence/chatgpt/accessible-trace.json",
@@ -216,6 +216,10 @@
     "docs/parity/evidence/codex/user-tradeoff.json",
     "docs/parity/evidence/codex/verifiable-feature.json",
     "docs/releases/0.1.0.md",
+    "docs/releases/discovery-014.json",
+    "docs/releases/discovery-015.json",
+    "docs/releases/historical-discovery-013.json",
+    "docs/releases/historical-discovery-014.json",
     "docs/releases/host-evaluation/chatgpt/absent-workers.md",
     "docs/releases/host-evaluation/chatgpt/accessible-trace.md",
     "docs/releases/host-evaluation/chatgpt/adversarial-review.md",
@@ -424,6 +428,8 @@
     "docs/releases/host-evaluation/codex/user-correction.md",
     "docs/releases/host-evaluation/codex/user-tradeoff.md",
     "docs/releases/host-evaluation/codex/verifiable-feature.md",
+    "docs/releases/provenance-014.json",
+    "docs/releases/provenance-015.json",
     "docs/releases/remaining-controller-report.md",
     "docs/testing/chatgpt.md",
     "docs/testing/codex.md",
