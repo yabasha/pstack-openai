@@ -38,7 +38,14 @@
     "reason": "Initial test invocation omitted required ORCH_TEST_ROOT;160passed,1failed,1error. Corrected task-owned scratch binding produced183pass,597assertions and strict typecheck0. Prior failure retained outside package."
   },
   "offlineSuite": {
-    "status": "pending-final-committed-report-check"
+    "status": "passed",
+    "tests": 235,
+    "exitCode": 0,
+    "validatedReportCommit": "430f5f11ae941ed63d12694ff99d77db6d10339c",
+    "startedAt": "2026-10-18T07:19:22.691Z",
+    "finishedAt": "2026-10-18T07:26:14.716Z",
+    "receiptSha256": "3c3173dcb388360b1a0d5566c8ba04375a1cf11fa0ab1c66643c0498e1d9fe59",
+    "outputTail": "...........................................................................................................................................................................................................................................\n----------------------------------------------------------------------\nRan 235 tests in 411.805s\n\nOK\n"
   },
   "remainingBlockers": [
     "Historical workflow records remain on0.1.3/older source identities; they are not valid current-freeze workflow evidence.",
@@ -62,5 +69,69 @@
     "version": "0.1.4",
     "report": "docs/releases/provenance-014.json",
     "offlineSuite": "235tests,4failures,4errors; corrected bookkeeping and temporary fixture contamination before0.1.5freeze"
-  }
+  },
+  "discoveryAndProvenanceGates": {
+    "freeze": "4513f3d706e6dfe9e396c80a74c490c3ebcec7a6",
+    "version": "0.1.5",
+    "reportCommit": "430f5f11ae941ed63d12694ff99d77db6d10339c",
+    "provenance": true,
+    "byHost": {
+      "codex": {
+        "errors": [],
+        "discoveryReceiptComplete": true
+      },
+      "chatgpt": {
+        "errors": [],
+        "discoveryReceiptComplete": true
+      }
+    },
+    "fullReleaseQualified": false,
+    "releaseDiscovery": {
+      "chatgpt": true,
+      "codex": true
+    },
+    "staleWorkflowEvidence": 208,
+    "remainingBlockerCount": 2140,
+    "remainingBlockerSample": [
+      "mixed package versions",
+      "stale evidence cannot transfer to the requested commit",
+      "('chatgpt', 'absent-workers'): packageCommit: must match exact tested package revision",
+      "('chatgpt', 'absent-workers'): packageVersion differs from requested version",
+      "('chatgpt', 'accessible-trace'): packageCommit: must match exact tested package revision"
+    ],
+    "exitCode": 0,
+    "receiptSha256": "44add7dfa939dd5d28afe468b0159c6a01e9a0970a017f41ab5fd5c6f544eb64",
+    "startedAt": "2026-10-18T07:19:22.692Z",
+    "finishedAt": "2026-10-18T07:20:22.217Z"
+  },
+  "independentReview": {
+    "base": "d103d371d962909a308c9df5e62d57c90a76722c",
+    "target": "430f5f11ae941ed63d12694ff99d77db6d10339c",
+    "axes": [
+      {
+        "axis": "Standards",
+        "findings": [],
+        "receiptSha256": "7062e9910d77646d6aeed68e2194c3131213570b85f326ddccc2e5e011008f1a",
+        "limitations": [
+          "Read-only review of exact committed source and metadata; host execution not independently repeated.",
+          "Workflow reruns remain paused.",
+          "Final receipt-only delta excluded and reserved for parent review."
+        ]
+      },
+      {
+        "axis": "Spec",
+        "findings": [],
+        "receiptSha256": "5ce92a09745878d95374ad2f83f2c3acf6773bb7cb532ed4e8583ff1fabd3ed2",
+        "limitations": [
+          "Final235offline suite receipt pending parent-owned run; no current suite success inferred.",
+          "PR creation is parent-owned and not verified here.",
+          "No workflows, tests, installations, UI operations, network calls or Git mutations performed.",
+          "Backend archive verification receipt inspected; archive decompression not independently repeated.",
+          "Prior submission ZIP and dirty worktree preservation not independently audited."
+        ]
+      }
+    ]
+  },
+  "finalDeltaScope": "Only this named provenance report adds actual completed check/review receipts after the reviewed commit. Parent reviews the delta and rechecks strict provenance/discovery on the final commit; no operative source changes.",
+  "dependencyRefreshClarification": "dependencies.versionRefresh.destinations.before records the stale stored audit digest being corrected, not the manifest byte digest at baseRevision. The after digest is the exact 0.1.5 manifest digest; canonical source pins remain unchanged."
 }
