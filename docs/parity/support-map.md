@@ -1553,6 +1553,10 @@ These exact package-owned paths are additional port material, outside the 164 ca
 | [docs/releases/remediation-013/publication-checks.json](../releases/remediation-013/publication-checks.json) | Port-authored historical version 0.1.3 remediation observation or narrowly projected proof; exact tested identity and publication limits remain explicit; no current-main qualification transfers |
 | [docs/releases/remediation-013/web-candidate-check.json](../releases/remediation-013/web-candidate-check.json) | Port-authored historical version 0.1.3 remediation observation or narrowly projected proof; exact tested identity and publication limits remain explicit; no current-main qualification transfers |
 
+| [docs/releases/provenance-014.json](../releases/provenance-014.json) | Port-authored version 0.1.4 provenance or discovery observation, or byte-preserved historical discovery record. Reports never transfer workflow grades or exempt operative source. |
+| [docs/releases/discovery-014.json](../releases/discovery-014.json) | Port-authored version 0.1.4 provenance or discovery observation, or byte-preserved historical discovery record. Reports never transfer workflow grades or exempt operative source. |
+| [docs/releases/historical-discovery-013.json](../releases/historical-discovery-013.json) | Port-authored version 0.1.4 provenance or discovery observation, or byte-preserved historical discovery record. Reports never transfer workflow grades or exempt operative source. |
+
 ## Reserved report-only paths
 
 These exact optional paths are planned and are not present or verified at F2. Their reservation provides provenance for later report-only writes, not execution evidence or permission to change operative files. Unknown future paths remain outside this reservation.

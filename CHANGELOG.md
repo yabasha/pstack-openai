@@ -2,6 +2,10 @@
 
 ## Unreleased
 
+## 0.1.4
+
+Prepare a new immutable source freeze after the watcher and evidence-ownership fixes. Verify package provenance and the 51 root skills independently in both hosts. Workflow reruns remain paused; historical 0.1.3 outcomes retain their original revision and do not qualify this version. The private host update preserves its existing audience and presentation.
+
 Publication preparation for the 0.1.3 candidate:
 
 - Rewrite the README with task examples, skill navigation, compatibility results, and setup links.
