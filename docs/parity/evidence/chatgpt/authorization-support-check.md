@@ -1,8 +1,10 @@
 {
   "schemaVersion": 1,
   "kind": "pstack-package-discovery",
-  "packageCommit": "51f209daf83cd97d64f89881d66533bb59dc57db",
-  "packageVersion": "0.1.3",
+  "host": "chatgpt",
+  "packageCommit": "5f1c072e594bb1271139a58ed739878c3d89484c",
+  "packageVersion": "0.1.4",
+  "installedCopy": "/root/.codex/plugins/cache/created-by-me-remote/pstack-openai/0.1.4; private release pluginrel_6ad46cdfc6148191a73654dcdf3f986e",
   "rootSkills": [
     "architect",
     "arena",
@@ -60,7 +62,5 @@
     "automations/benny/skills/reproduce-and-fix-issues/REFERENCE.md",
     "automations/benny/skills/setup-benny/REFERENCE.md",
     "automations/benny/skills/triage-issue-reports/REFERENCE.md"
-  ],
-  "host": "chatgpt",
-  "installedCopy": "private plugin plugins_6ad1c78a493c819197a589eb7a55361b release pluginrel_6ad1e8be61108191858d3101cc25dc46"
+  ]
 }

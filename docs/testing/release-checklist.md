@@ -1,3 +1,9 @@
+# Current candidate 0.1.4
+
+Candidate source freeze: `5f1c072e594bb1271139a58ed739878c3d89484c`. The strict immutable-source provenance check and both native discovery checks are evaluated separately from workflow qualification. See [provenance](../releases/provenance-014.json) and [discovery](../releases/discovery-014.json). No historical workflow grade transfers. Workflow reruns remain paused and full release qualification remains blocked.
+
+## Historical 0.1.3 record
+
 # Corrected candidate 0.1.3
 
 Operative source freeze: `51f209daf83cd97d64f89881d66533bb59dc57db`. Local CLI discovery passes with 51 roots; fresh web cloud and executor discovery both pass with 51 roots. The three Benny helpers are preserved as reference documents, not skill entrypoints.

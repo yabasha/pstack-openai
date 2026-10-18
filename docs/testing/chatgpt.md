@@ -1,3 +1,7 @@
+# Current 0.1.4 discovery
+
+Exact candidate freeze `5f1c072e594bb1271139a58ed739878c3d89484c` has fresh discovery-only proof in [discovery-014.json](../releases/discovery-014.json). Both hosts expose all51 canonical roots with the three Benny helpers excluded. Version0.1.4 historical workflow qualification remains absent; reruns stay paused. Earlier results below retain their original version and SHA.
+
 # Reviewed workflow results
 
 Version 0.1.3, operative freeze 51f209daf83cd97d64f89881d66533bb59dc57db. All 104 workflow cases have retained independent reviews. Coverage does not mean full success.
