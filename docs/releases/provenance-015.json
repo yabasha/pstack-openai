@@ -1,6 +1,66 @@
 {
   "schemaVersion": 1,
-  "status": "pending-observation",
-  "scope": "Reserved before corrected freeze; no grade claimed",
-  "workflowReruns": "paused"
+  "sourceFreeze": "4513f3d706e6dfe9e396c80a74c490c3ebcec7a6",
+  "base": "d103d371d962909a308c9df5e62d57c90a76722c",
+  "packageVersion": "0.1.5",
+  "scope": "Immutable source provenance, offline tests and discovery only",
+  "priorTestedFreeze": "5f1c072e594bb1271139a58ed739878c3d89484c",
+  "priorDiscoveryArchive": "docs/releases/historical-discovery-014.json",
+  "workflowReruns": "paused",
+  "workflowGradesTransferred": 0,
+  "fullReleaseQualified": false,
+  "markerChange": "Current candidate source freeze replaces the stale marker only after real fresh host observations; existing strict byte/mode/inventory policy is unchanged.",
+  "helperChecks": [
+    {
+      "args": [
+        "bun",
+        "test"
+      ],
+      "exitCode": 0,
+      "startedAt": "2026-10-18T07:16:05.670Z",
+      "finishedAt": "2026-10-18T07:16:08.155Z",
+      "outputTail": "s]\n(pass) parseArgs > parses a frozen queued stack bottom-to-top [0.25ms]\n(pass) parseArgs > rejects every invalid mode and numeric shape as usage [1.55ms]\n(pass) rendering > emits compact valid JSON by default [0.03ms]\n(pass) rendering > renders the Markdown table from the same verdict only [0.02ms]\n(pass) main > requires explicit repository and head pins before reads [0.08ms]\n(pass) main > returns EX_USAGE 64 and writes usage errors only to stderr [0.05ms]\n(pass) main > bypasses the queue machine for queued-stack status-only [0.18ms]\n(pass) main > returns exit 6 for a forge merge refusal [0.15ms]\n(pass) main > shows help without touching the reader [2.10ms]\n(pass) main > head_changes_invalidate_verdict [0.17ms]\n\n 183 pass\n 0 fail\n 597 expect() calls\nRan 183 tests across 6 files. [2.48s]\n"
+    },
+    {
+      "args": [
+        "bun",
+        "run",
+        "typecheck"
+      ],
+      "exitCode": 0,
+      "startedAt": "2026-10-18T07:16:08.155Z",
+      "finishedAt": "2026-10-18T07:16:08.422Z",
+      "outputTail": "$ tsc --project watch-pr/tsconfig.json --noEmit --strict\n"
+    }
+  ],
+  "harnessFailure": {
+    "receiptSha256": "97ade19ae11a4b78d42d388c6f99187811467cdef7988284d451445cdbc53a8a",
+    "reason": "Initial test invocation omitted required ORCH_TEST_ROOT;160passed,1failed,1error. Corrected task-owned scratch binding produced183pass,597assertions and strict typecheck0. Prior failure retained outside package."
+  },
+  "offlineSuite": {
+    "status": "pending-final-committed-report-check"
+  },
+  "remainingBlockers": [
+    "Historical workflow records remain on0.1.3/older source identities; they are not valid current-freeze workflow evidence.",
+    "Full release assessment must remain false while current workflow reruns are paused."
+  ],
+  "helperCopySourceCheck": {
+    "checked": 23,
+    "mismatches": [],
+    "fixtureLayout": "Package-relative source paths preserved; dependencies only outside Git worktree"
+  },
+  "helperCopyHarnessFailure": {
+    "receiptSha256": "eb52cd7d42ca73bfaefd9374e9dc6660f1ae740a57da6a5badbd9ffc94e3f260",
+    "reason": "Flattened helper-only copy changed inferred package root, so22 store tests rejected the scratch directory. Preserving package-relative layout resolved it;183passed,597assertions and strict typecheck0. Prior failed receipt retained."
+  },
+  "preflight": {
+    "tests": 27,
+    "exitCode": 0,
+    "receiptSha256": "38b7287441cb590930afc198fea7aa1fe92ea96db8188d38b9a65f4508750652"
+  },
+  "previousAttempt": {
+    "version": "0.1.4",
+    "report": "docs/releases/provenance-014.json",
+    "offlineSuite": "235tests,4failures,4errors; corrected bookkeeping and temporary fixture contamination before0.1.5freeze"
+  }
 }

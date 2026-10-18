@@ -1,3 +1,9 @@
+# Current candidate 0.1.5
+
+Candidate source freeze: `4513f3d706e6dfe9e396c80a74c490c3ebcec7a6`. The strict immutable-source provenance check and both native discovery checks are evaluated separately from workflow qualification. See [provenance](../releases/provenance-015.json) and [discovery](../releases/discovery-015.json). No historical workflow grade transfers. Workflow reruns remain paused and full release qualification remains blocked.
+
+## Historical 0.1.3 record
+
 # Current candidate 0.1.4
 
 Candidate source freeze: `5f1c072e594bb1271139a58ed739878c3d89484c`. The strict immutable-source provenance check and both native discovery checks are evaluated separately from workflow qualification. See [provenance](../releases/provenance-014.json) and [discovery](../releases/discovery-014.json). No historical workflow grade transfers. Workflow reruns remain paused and full release qualification remains blocked.

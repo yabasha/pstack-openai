@@ -2,9 +2,9 @@
   "schemaVersion": 1,
   "kind": "pstack-package-discovery",
   "host": "codex",
-  "packageCommit": "5f1c072e594bb1271139a58ed739878c3d89484c",
-  "packageVersion": "0.1.4",
-  "installedCopy": "/Users/digital-hawk/Herd/pstack-provenance-20261018/runtime/plugins/cache/pstack-provenance-014/pstack-openai/0.1.4",
+  "packageCommit": "4513f3d706e6dfe9e396c80a74c490c3ebcec7a6",
+  "packageVersion": "0.1.5",
+  "installedCopy": "/Users/digital-hawk/Herd/pstack-provenance-20261018/015/runtime/plugins/cache/pstack-provenance-015/pstack-openai/0.1.5",
   "rootSkills": [
     "architect",
     "arena",

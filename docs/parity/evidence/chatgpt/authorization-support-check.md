@@ -2,9 +2,9 @@
   "schemaVersion": 1,
   "kind": "pstack-package-discovery",
   "host": "chatgpt",
-  "packageCommit": "5f1c072e594bb1271139a58ed739878c3d89484c",
-  "packageVersion": "0.1.4",
-  "installedCopy": "/root/.codex/plugins/cache/created-by-me-remote/pstack-openai/0.1.4; private release pluginrel_6ad46cdfc6148191a73654dcdf3f986e",
+  "packageCommit": "4513f3d706e6dfe9e396c80a74c490c3ebcec7a6",
+  "packageVersion": "0.1.5",
+  "installedCopy": "/root/.codex/plugins/cache/created-by-me-remote/pstack-openai/0.1.5; private release pluginrel_6ad471bc2de88191843f08a862a05a80",
   "rootSkills": [
     "architect",
     "arena",

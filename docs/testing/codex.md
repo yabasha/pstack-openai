@@ -1,3 +1,7 @@
+# Current 0.1.5 discovery
+
+Exact candidate freeze `4513f3d706e6dfe9e396c80a74c490c3ebcec7a6` has fresh discovery-only proof in [discovery-015.json](../releases/discovery-015.json). Both hosts expose all51 canonical roots with the three Benny helpers excluded. Version0.1.5 historical workflow qualification remains absent; reruns stay paused. Earlier results below retain their original version and SHA.
+
 # Current 0.1.4 discovery
 
 Exact candidate freeze `5f1c072e594bb1271139a58ed739878c3d89484c` has fresh discovery-only proof in [discovery-014.json](../releases/discovery-014.json). Both hosts expose all51 canonical roots with the three Benny helpers excluded. Version0.1.4 historical workflow qualification remains absent; reruns stay paused. Earlier results below retain their original version and SHA.
