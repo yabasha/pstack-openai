@@ -1557,6 +1557,10 @@ These exact package-owned paths are additional port material, outside the 164 ca
 | [docs/releases/discovery-014.json](../releases/discovery-014.json) | Port-authored version 0.1.4 provenance or discovery observation, or byte-preserved historical discovery record. Reports never transfer workflow grades or exempt operative source. |
 | [docs/releases/historical-discovery-013.json](../releases/historical-discovery-013.json) | Port-authored version 0.1.4 provenance or discovery observation, or byte-preserved historical discovery record. Reports never transfer workflow grades or exempt operative source. |
 
+| [docs/releases/provenance-015.json](../releases/provenance-015.json) | Port-authored version 0.1.5 provenance or discovery observation, or byte-preserved historical discovery record. Reports never transfer workflow grades or exempt operative source. |
+| [docs/releases/discovery-015.json](../releases/discovery-015.json) | Port-authored version 0.1.5 provenance or discovery observation, or byte-preserved historical discovery record. Reports never transfer workflow grades or exempt operative source. |
+| [docs/releases/historical-discovery-014.json](../releases/historical-discovery-014.json) | Port-authored version 0.1.5 provenance or discovery observation, or byte-preserved historical discovery record. Reports never transfer workflow grades or exempt operative source. |
+
 ## Reserved report-only paths
 
 These exact optional paths are planned and are not present or verified at F2. Their reservation provides provenance for later report-only writes, not execution evidence or permission to change operative files. Unknown future paths remain outside this reservation.

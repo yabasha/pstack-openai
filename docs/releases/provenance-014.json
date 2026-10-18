@@ -38,7 +38,15 @@
     "reason": "Initial test invocation omitted required ORCH_TEST_ROOT;160passed,1failed,1error. Corrected task-owned scratch binding produced183pass,597assertions and strict typecheck0. Prior failure retained outside package."
   },
   "offlineSuite": {
-    "status": "pending-final-committed-report-check"
+    "status": "failed",
+    "exitCode": 1,
+    "tests": 235,
+    "failures": 4,
+    "errors": 4,
+    "receiptSha256": "4862cf0e789a3ea4527380f2a65f14d51f52c9ab753900b8d6fa307735229545",
+    "cause": "Six failures/errors are the temporary dependency symlink harness contamination; two are the stale manifest audit digest and obsolete0.1.3 exact-version assertion. The original receipt and source freeze remain retained.",
+    "startedAt": "2026-10-18T07:01:45.958Z",
+    "finishedAt": "2026-10-18T07:07:50.553Z"
   },
   "remainingBlockers": [
     "Historical workflow records remain on0.1.3/older source identities; they are not valid current-freeze workflow evidence.",
