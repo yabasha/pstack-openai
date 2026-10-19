@@ -13,4 +13,4 @@ Current official guidance describes local marketplace installation. A repo marke
 
 Use the [helper guide](../testing/helper-setup.md) only for separately authorized development validation. Missing dependencies block helper-backed work. No dependency install, integration, MCP, lifecycle hook or model persistence is needed merely to read the catalog.
 
-Expected visible result is a host-observed installed package with all 54 roots and exact identity, followed by inspected walkthrough artifacts. Without it, loading and discovery remain blocked or not-run. Supplied-source explanations are reduced capability and prove no registration. [Test matrix](../testing/host-matrix.md) defines later host evidence; [troubleshooting](../troubleshooting.md) bounds failures.
+Expected visible result is a host-observed installed package with all 56 roots and exact identity, followed by inspected walkthrough artifacts. Without it, loading and discovery remain blocked or not-run. Supplied-source explanations are reduced capability and prove no registration. [Test matrix](../testing/host-matrix.md) defines later host evidence; [troubleshooting](../troubleshooting.md) bounds failures.

@@ -1,9 +1,9 @@
 {
-  "auditedPackageCommit": "e30f1aa6a2abf88c89aee3163a51f80e845aeaa9",
+  "auditedPackageCommit": "29b27f67fabc1859b5a29d715010f472645c0dc0",
   "counts": {
-    "files": 170,
+    "files": 172,
     "playbooks": 23,
-    "rootSkills": 54,
+    "rootSkills": 56,
     "supportIncludingPlaybooks": 116
   },
   "dependencies": [
@@ -601,8 +601,10 @@
         "skills/architect/references/runner-prompt.md",
         "skills/arena/SKILL.md",
         "skills/automate-me/SKILL.md",
+        "skills/create-formal-verification-skill/SKILL.md",
         "skills/create-verification-skill/SKILL.md",
         "skills/interrogate/SKILL.md",
+        "skills/maintain-formal-verification-skill/SKILL.md",
         "skills/poteto-mode/SKILL.md",
         "skills/poteto-mode/playbooks/autopilot-full.md",
         "skills/poteto-mode/playbooks/autopilot-stack.md",
@@ -833,6 +835,7 @@
         "skills/automate-me/SKILL.md",
         "skills/blast-radius/SKILL.md",
         "skills/correct/SKILL.md",
+        "skills/create-formal-verification-skill/SKILL.md",
         "skills/create-verification-skill/SKILL.md",
         "skills/figure-it-out/SKILL.md",
         "skills/how/SKILL.md",
@@ -840,6 +843,7 @@
         "skills/how/references/explorer-prompt.md",
         "skills/interrogate/SKILL.md",
         "skills/interrogate/references/reviewer-prompt.md",
+        "skills/maintain-formal-verification-skill/SKILL.md",
         "skills/maintain-verification-skill/SKILL.md",
         "skills/no-comments/SKILL.md",
         "skills/poteto-help/SKILL.md",
@@ -935,8 +939,10 @@
         "docs/guide/09-make-it-yours.md",
         "skills/automate-me/SKILL.md",
         "skills/correct/SKILL.md",
+        "skills/create-formal-verification-skill/SKILL.md",
         "skills/create-verification-skill/SKILL.md",
         "skills/ketchup/SKILL.md",
+        "skills/maintain-formal-verification-skill/SKILL.md",
         "skills/poteto-help/SKILL.md",
         "skills/poteto-mode/SKILL.md",
         "skills/poteto-mode/playbooks/autonomous-run.md",
@@ -1127,9 +1133,11 @@
         "docs/guide/10-recipes-and-pitfalls.md",
         "skills/automate-me/SKILL.md",
         "skills/correct/SKILL.md",
+        "skills/create-formal-verification-skill/SKILL.md",
         "skills/create-verification-skill/SKILL.md",
         "skills/figure-it-out/SKILL.md",
         "skills/interrogate/references/rubric.md",
+        "skills/maintain-formal-verification-skill/SKILL.md",
         "skills/no-comments/SKILL.md",
         "skills/poteto-mode/SKILL.md",
         "skills/poteto-mode/playbooks/autonomous-run.md",
@@ -1425,6 +1433,24 @@
       "id": "example-controls",
       "requiredProof": "Replace example app commands with the real discovered app driver and completed feature map, then capture the actual user-path evidence.",
       "setupEffects": "No example command execution, app installation or generated verification skill placement by default."
+    },
+    {
+      "binding": null,
+      "blockedReason": "No bundled verifier or observed tool installation. Discover an authorized local model checker, prover, code-level verifier or honestly labelled testing fallback.",
+      "callers": [
+        "skills/create-formal-verification-skill/SKILL.md",
+        "skills/maintain-formal-verification-skill/SKILL.md"
+      ],
+      "evidence": [
+        {
+          "kind": "contract-only",
+          "path": "references/host-capabilities.md"
+        }
+      ],
+      "executionStatus": "blocked",
+      "id": "formal-verifier",
+      "requiredProof": "Run the chosen check with tool version and bounds, catch an isolated broken variant, restore and rerun; keep evidence. Testing is not formal proof.",
+      "setupEffects": "Installation or downloads require applicable authorization. No product changes, personal configuration, external writes or schedules by default."
     }
   ],
   "historicalSetup": {
@@ -1460,7 +1486,7 @@
         "workers-models"
       ],
       "destinationPath": "plugin.json",
-      "destinationSha256": "d5d56ce52ce988113d1743a8afc81ead9271c0816fa24c0c81a549d27cb80476",
+      "destinationSha256": "b74599c33127852132af8078fdd3198c9088f56ccdc6f1ba48029d4d2f73be59",
       "kind": "support",
       "packageDependencies": [
         "assets/logo.png"
@@ -1478,7 +1504,7 @@
         }
       ],
       "sourcePath": ".cursor-plugin/plugin.json",
-      "sourceSha256": "b75609951c8a558e74f1eb20e15493933754eb2695fd2059d7f435f913889bb3"
+      "sourceSha256": "884a2b21bd0cee611e6f469d139f33a0d2eb0be67d9f4ee388c683434ad995df"
     },
     {
       "dependencyIds": [
@@ -1542,7 +1568,7 @@
         "repository-access"
       ],
       "destinationPath": "README.md",
-      "destinationSha256": "1c46d7d7dba493ba4329deddfe31afee0d7e20d42c2b81ffb23249ac982b84d5",
+      "destinationSha256": "50f5347312173d6b819a7a98c0268ba02661a0d1997fc8ec46821331c435b2ed",
       "kind": "support",
       "packageDependencies": [
         "UPSTREAM.md",
@@ -1647,7 +1673,7 @@
         }
       ],
       "sourcePath": "README.md",
-      "sourceSha256": "af549c7ebae71851fb17a676ebc50e67ada9e5578119c8f4ff4b7a01a4f66f45"
+      "sourceSha256": "90de91beb5655913705e0107740b0b4c735032c53582a3ceaae7c007530047fd"
     },
     {
       "dependencyIds": [
@@ -3166,7 +3192,7 @@
         "example-controls"
       ],
       "destinationPath": "docs/guide/01-setup.md",
-      "destinationSha256": "5e824e4a10faa4bab62c1d9a75337567204aaddd97accc4f6acb0cb19987ee73",
+      "destinationSha256": "d2166f56fc035ca3dc25bb6c862c0bd45ff08c0e8351514a2ceee648977ebad1",
       "kind": "support",
       "packageDependencies": [
         "docs/guide/02-poteto-mode.md",
@@ -3183,61 +3209,37 @@
       "references": [
         {
           "dependencyId": "watch-pr",
-          "destinationLines": [
-            29
-          ],
+          "destinationLines": [],
           "sourceLines": []
         },
         {
           "dependencyId": "helper-packages",
-          "destinationLines": [
-            29
-          ],
+          "destinationLines": [],
           "sourceLines": []
         },
         {
           "dependencyId": "bun-runtime",
-          "destinationLines": [
-            29,
-            31
-          ],
+          "destinationLines": [],
           "sourceLines": []
         },
         {
           "dependencyId": "workers-models",
-          "destinationLines": [
-            6,
-            15,
-            19,
-            31,
-            37
-          ],
-          "sourceLines": [
-            3,
-            29,
-            43,
-            47,
-            50
-          ]
+          "destinationLines": [],
+          "sourceLines": []
         },
         {
           "dependencyId": "loop-scheduler",
-          "destinationLines": [
-            43
-          ],
+          "destinationLines": [],
           "sourceLines": []
         },
         {
           "dependencyId": "example-controls",
           "destinationLines": [],
-          "sourceLines": [
-            33,
-            35
-          ]
+          "sourceLines": []
         }
       ],
       "sourcePath": "docs/guide/01-setup.md",
-      "sourceSha256": "86d0330f245d16254a2069955f993c15d96cf29cd1a73690a0164074b7ac1190"
+      "sourceSha256": "384655bdecc713122ca69a485723c58462002a1d512415e94e48597d0dce2fa5"
     },
     {
       "dependencyIds": [
@@ -3245,7 +3247,7 @@
         "history-persistence"
       ],
       "destinationPath": "docs/guide/02-poteto-mode.md",
-      "destinationSha256": "49c8d94e9f89039de969450fed1b9843461e8c10abdf6088cd6828a0db83f95c",
+      "destinationSha256": "8d24f59020690ee4f426455921a132201a8d6296de1139a02dfe71e46a5da36f",
       "kind": "support",
       "packageDependencies": [
         "LICENSE",
@@ -3269,41 +3271,17 @@
       "references": [
         {
           "dependencyId": "workers-models",
-          "destinationLines": [
-            6,
-            21,
-            93,
-            95,
-            97,
-            100,
-            103,
-            114,
-            117
-          ],
-          "sourceLines": [
-            13,
-            85,
-            87,
-            89,
-            92,
-            95,
-            99,
-            104,
-            107
-          ]
+          "destinationLines": [],
+          "sourceLines": []
         },
         {
           "dependencyId": "history-persistence",
-          "destinationLines": [
-            36
-          ],
-          "sourceLines": [
-            28
-          ]
+          "destinationLines": [],
+          "sourceLines": []
         }
       ],
       "sourcePath": "docs/guide/02-poteto-mode.md",
-      "sourceSha256": "979f61ca3d44cb8e68affda40327d32797e93fa9cc53ced7444c15e2600897e1"
+      "sourceSha256": "1a0a5b9c88bf325f108cfda3b81b38c7eb936f6b30a2d2bb651d834a5c8dac2a"
     },
     {
       "dependencyIds": [
@@ -3313,7 +3291,7 @@
         "repository-access"
       ],
       "destinationPath": "docs/guide/03-understand.md",
-      "destinationSha256": "1c035fb8a4f650063395c5f0817800c8e9c0417e0ed6b807811b8b231e45e994",
+      "destinationSha256": "ca99c6d8ad9dbbbfb89a3a57156463540c7277adb049967048f78cd218a949f6",
       "kind": "support",
       "packageDependencies": [
         "LICENSE",
@@ -3336,48 +3314,27 @@
       "references": [
         {
           "dependencyId": "workers-models",
-          "destinationLines": [
-            6,
-            25
-          ],
-          "sourceLines": [
-            17
-          ]
+          "destinationLines": [],
+          "sourceLines": []
         },
         {
           "dependencyId": "history-persistence",
-          "destinationLines": [
-            73,
-            75,
-            83
-          ],
-          "sourceLines": [
-            65,
-            67,
-            75
-          ]
+          "destinationLines": [],
+          "sourceLines": []
         },
         {
           "dependencyId": "integrations",
-          "destinationLines": [
-            41
-          ],
-          "sourceLines": [
-            33
-          ]
+          "destinationLines": [],
+          "sourceLines": []
         },
         {
           "dependencyId": "repository-access",
-          "destinationLines": [
-            41
-          ],
-          "sourceLines": [
-            33
-          ]
+          "destinationLines": [],
+          "sourceLines": []
         }
       ],
       "sourcePath": "docs/guide/03-understand.md",
-      "sourceSha256": "0090afa9b8670adf175466a2a973ff4349e95ed67d2aa8cebdfc55ff4b7382c9"
+      "sourceSha256": "1ac97cbad51c15c18b3aade8634d81c8bbe50d2b3135c75c113ddb2a6dcb7af0"
     },
     {
       "dependencyIds": [
@@ -3388,7 +3345,7 @@
         "webhook-secrets"
       ],
       "destinationPath": "docs/guide/04-design.md",
-      "destinationSha256": "8ab5097f86427bf3b4b854bae24a8c2bf3f75b3d133d88301090176c24d16193",
+      "destinationSha256": "85a831b31d59b2f78c77bca511f451d4effb2294844a38349e21c94b17dbe43f",
       "kind": "support",
       "packageDependencies": [
         "LICENSE",
@@ -3412,67 +3369,32 @@
       "references": [
         {
           "dependencyId": "shell-runtime",
-          "destinationLines": [
-            64
-          ],
-          "sourceLines": [
-            56
-          ]
+          "destinationLines": [],
+          "sourceLines": []
         },
         {
           "dependencyId": "workers-models",
-          "destinationLines": [
-            6,
-            39,
-            43,
-            55,
-            64,
-            67,
-            69,
-            77,
-            127
-          ],
-          "sourceLines": [
-            31,
-            35,
-            47,
-            56,
-            59,
-            61,
-            69,
-            119
-          ]
+          "destinationLines": [],
+          "sourceLines": []
         },
         {
           "dependencyId": "repository-gates",
-          "destinationLines": [
-            117
-          ],
-          "sourceLines": [
-            109
-          ]
+          "destinationLines": [],
+          "sourceLines": []
         },
         {
           "dependencyId": "image-diff",
-          "destinationLines": [
-            122
-          ],
-          "sourceLines": [
-            114
-          ]
+          "destinationLines": [],
+          "sourceLines": []
         },
         {
           "dependencyId": "webhook-secrets",
-          "destinationLines": [
-            94
-          ],
-          "sourceLines": [
-            86
-          ]
+          "destinationLines": [],
+          "sourceLines": []
         }
       ],
       "sourcePath": "docs/guide/04-design.md",
-      "sourceSha256": "31f2abe6e9b29feafd1a9eece8f4fe21992f86b8c19ab2e9b5c11a20f36587e7"
+      "sourceSha256": "cff616278303b533e617c5c4408af6d28895edbb8687d6ce99bb5dd1f6644a6c"
     },
     {
       "dependencyIds": [
@@ -3482,7 +3404,7 @@
         "profile-trace-sqlite"
       ],
       "destinationPath": "docs/guide/05-build-and-clean.md",
-      "destinationSha256": "62ca0f31ce74cb0d5356bf2a95332602a1edcf0a38e5f496b7bdef46d48b91c5",
+      "destinationSha256": "30822027f2049194bf98461964bdae6eee02c8253870894cd45b1d916d4d7086",
       "kind": "support",
       "packageDependencies": [
         "docs/guide/06-verify-and-ship.md",
@@ -3509,50 +3431,27 @@
       "references": [
         {
           "dependencyId": "deslop",
-          "destinationLines": [
-            67,
-            87,
-            89
-          ],
-          "sourceLines": [
-            59,
-            79,
-            81
-          ]
+          "destinationLines": [],
+          "sourceLines": []
         },
         {
           "dependencyId": "workers-models",
-          "destinationLines": [
-            6,
-            11,
-            63
-          ],
-          "sourceLines": [
-            3,
-            55
-          ]
+          "destinationLines": [],
+          "sourceLines": []
         },
         {
           "dependencyId": "repository-gates",
-          "destinationLines": [
-            85
-          ],
-          "sourceLines": [
-            77
-          ]
+          "destinationLines": [],
+          "sourceLines": []
         },
         {
           "dependencyId": "profile-trace-sqlite",
-          "destinationLines": [
-            48
-          ],
-          "sourceLines": [
-            40
-          ]
+          "destinationLines": [],
+          "sourceLines": []
         }
       ],
       "sourcePath": "docs/guide/05-build-and-clean.md",
-      "sourceSha256": "a93cc7771f7b35c7b54d0120b6f66e8367794ce6791237e889a30e7585c190fa"
+      "sourceSha256": "1284e80595ae4f214dfa7c5c5f7758ff90a47b3273aa7b8142e51e574f5c5290"
     },
     {
       "dependencyIds": [
@@ -3565,7 +3464,7 @@
         "example-controls"
       ],
       "destinationPath": "docs/guide/06-verify-and-ship.md",
-      "destinationSha256": "162c170c25cc3b65a7aba2159ee13fc52a847a838951f2e94ef0c88a029c4648",
+      "destinationSha256": "08ab73d09470d4c4f948d01149715a145042f3291683a5256be9f2f983d5daba",
       "kind": "support",
       "packageDependencies": [
         "LICENSE",
@@ -3594,72 +3493,42 @@
       "references": [
         {
           "dependencyId": "app-driver",
-          "destinationLines": [
-            67
-          ],
-          "sourceLines": [
-            59
-          ]
+          "destinationLines": [],
+          "sourceLines": []
         },
         {
           "dependencyId": "watch-pr",
-          "destinationLines": [
-            120
-          ],
-          "sourceLines": [
-            112
-          ]
+          "destinationLines": [],
+          "sourceLines": []
         },
         {
           "dependencyId": "origin-cli",
-          "destinationLines": [
-            136
-          ],
-          "sourceLines": [
-            128
-          ]
+          "destinationLines": [],
+          "sourceLines": []
         },
         {
           "dependencyId": "workers-models",
-          "destinationLines": [
-            6
-          ],
+          "destinationLines": [],
           "sourceLines": []
         },
         {
           "dependencyId": "loop-scheduler",
-          "destinationLines": [
-            96
-          ],
-          "sourceLines": [
-            88
-          ]
+          "destinationLines": [],
+          "sourceLines": []
         },
         {
           "dependencyId": "repository-gates",
-          "destinationLines": [
-            120
-          ],
-          "sourceLines": [
-            112
-          ]
+          "destinationLines": [],
+          "sourceLines": []
         },
         {
           "dependencyId": "example-controls",
-          "destinationLines": [
-            69,
-            74,
-            78
-          ],
-          "sourceLines": [
-            61,
-            66,
-            70
-          ]
+          "destinationLines": [],
+          "sourceLines": []
         }
       ],
       "sourcePath": "docs/guide/06-verify-and-ship.md",
-      "sourceSha256": "3ef0eed5ea084dfbbaf1b1ae9e08d84f2c8a2b536ffb3ef5226710bf105f70e6"
+      "sourceSha256": "5c16c88bf377bf5ea5ffd4cd9dc1a83f19a0415090cc4645865d16a5500d1cab"
     },
     {
       "dependencyIds": [
@@ -3674,7 +3543,7 @@
         "benny-enablement"
       ],
       "destinationPath": "docs/guide/07-overnight.md",
-      "destinationSha256": "b9f08b2b6891cb21fa686f11c0781d920912310070288a895ffa512af5677c9f",
+      "destinationSha256": "9215cd9f33066c5912803c651cdad7cc4c0b358e176388d5e3d9de3657059495",
       "kind": "support",
       "packageDependencies": [
         "LICENSE",
@@ -3701,112 +3570,52 @@
       "references": [
         {
           "dependencyId": "decision-log",
-          "destinationLines": [
-            68
-          ],
+          "destinationLines": [],
           "sourceLines": []
         },
         {
           "dependencyId": "shell-runtime",
-          "destinationLines": [
-            68
-          ],
+          "destinationLines": [],
           "sourceLines": []
         },
         {
           "dependencyId": "workers-models",
-          "destinationLines": [
-            6,
-            11,
-            19,
-            68,
-            76,
-            78,
-            80,
-            94,
-            107
-          ],
-          "sourceLines": [
-            3,
-            11,
-            60,
-            68,
-            70,
-            72,
-            86,
-            94
-          ]
+          "destinationLines": [],
+          "sourceLines": []
         },
         {
           "dependencyId": "history-persistence",
-          "destinationLines": [
-            22,
-            48,
-            68,
-            76
-          ],
-          "sourceLines": [
-            14,
-            40,
-            68
-          ]
+          "destinationLines": [],
+          "sourceLines": []
         },
         {
           "dependencyId": "loop-scheduler",
-          "destinationLines": [
-            43,
-            119,
-            124
-          ],
-          "sourceLines": [
-            26,
-            35,
-            111,
-            116,
-            118
-          ]
+          "destinationLines": [],
+          "sourceLines": []
         },
         {
           "dependencyId": "integrations",
-          "destinationLines": [
-            88,
-            124
-          ],
-          "sourceLines": [
-            80,
-            116
-          ]
+          "destinationLines": [],
+          "sourceLines": []
         },
         {
           "dependencyId": "repository-gates",
-          "destinationLines": [
-            124
-          ],
-          "sourceLines": [
-            116
-          ]
+          "destinationLines": [],
+          "sourceLines": []
         },
         {
           "dependencyId": "profile-trace-sqlite",
-          "destinationLines": [
-            20
-          ],
-          "sourceLines": [
-            12
-          ]
+          "destinationLines": [],
+          "sourceLines": []
         },
         {
           "dependencyId": "benny-enablement",
-          "destinationLines": [
-            124
-          ],
-          "sourceLines": [
-            116
-          ]
+          "destinationLines": [],
+          "sourceLines": []
         }
       ],
       "sourcePath": "docs/guide/07-overnight.md",
-      "sourceSha256": "d7bd33a3d880768688dff4c1c2b5481ca9f0f194f5d97e44b65c9f96624d3ff0"
+      "sourceSha256": "b767a5dc5d7257efdb5cc8cfac92acfbb18fe8e023a3438339f4b45ce4a9264a"
     },
     {
       "dependencyIds": [
@@ -3814,7 +3623,7 @@
         "repository-gates"
       ],
       "destinationPath": "docs/guide/08-principles.md",
-      "destinationSha256": "67c2fca0f82d0357f73247ccf2feb66310fc6c09ff1e170c54945a6816935c30",
+      "destinationSha256": "1e55de1b8dee2966fa12e1d7fed2931de0b4c9640c39def9822e041442f7f426",
       "kind": "support",
       "packageDependencies": [
         "docs/guide/09-make-it-yours.md",
@@ -3853,23 +3662,17 @@
       "references": [
         {
           "dependencyId": "workers-models",
-          "destinationLines": [
-            6,
-            11,
-            71
-          ],
+          "destinationLines": [],
           "sourceLines": []
         },
         {
           "dependencyId": "repository-gates",
-          "destinationLines": [
-            76
-          ],
+          "destinationLines": [],
           "sourceLines": []
         }
       ],
       "sourcePath": "docs/guide/08-principles.md",
-      "sourceSha256": "cffa270108189345351aab16835e95540ba3c765bb5f1b8c1de843a96a212421"
+      "sourceSha256": "0b26b85292f0c09768abe727c9e92987dbf81f5b439a4871034c2fd1c4cb1723"
     },
     {
       "dependencyIds": [
@@ -3881,7 +3684,7 @@
         "tailscale"
       ],
       "destinationPath": "docs/guide/09-make-it-yours.md",
-      "destinationSha256": "4e52d21eb5e8917a679e3091865f261645d2d1eab32200ec5d6bea6b25caefb6",
+      "destinationSha256": "943f8b51d0223a6665474b5879fd100bf0972794b2809049f75a48d4ed6f15ad",
       "kind": "support",
       "packageDependencies": [
         "docs/guide/06-verify-and-ship.md",
@@ -3906,74 +3709,37 @@
       "references": [
         {
           "dependencyId": "create-skill",
-          "destinationLines": [
-            21,
-            68
-          ],
-          "sourceLines": [
-            13,
-            60
-          ]
+          "destinationLines": [],
+          "sourceLines": []
         },
         {
           "dependencyId": "workers-models",
-          "destinationLines": [
-            6,
-            33,
-            87,
-            90,
-            98,
-            106
-          ],
-          "sourceLines": [
-            25,
-            79,
-            82,
-            90,
-            98
-          ]
+          "destinationLines": [],
+          "sourceLines": []
         },
         {
           "dependencyId": "history-persistence",
-          "destinationLines": [
-            21,
-            39
-          ],
-          "sourceLines": [
-            13,
-            31
-          ]
+          "destinationLines": [],
+          "sourceLines": []
         },
         {
           "dependencyId": "repository-gates",
-          "destinationLines": [
-            46
-          ],
-          "sourceLines": [
-            38
-          ]
+          "destinationLines": [],
+          "sourceLines": []
         },
         {
           "dependencyId": "webhook-secrets",
-          "destinationLines": [
-            104
-          ],
-          "sourceLines": [
-            96
-          ]
+          "destinationLines": [],
+          "sourceLines": []
         },
         {
           "dependencyId": "tailscale",
-          "destinationLines": [
-            104
-          ],
-          "sourceLines": [
-            96
-          ]
+          "destinationLines": [],
+          "sourceLines": []
         }
       ],
       "sourcePath": "docs/guide/09-make-it-yours.md",
-      "sourceSha256": "157e0c20ad3c657857c2fbbea3afd26895b71b8f68475bc56f4c382dcdd0e118"
+      "sourceSha256": "50642f7f894988f7c263700f46478e7aed7eb94a257683350d91a9a0d70dc141"
     },
     {
       "dependencyIds": [
@@ -3984,7 +3750,7 @@
         "example-controls"
       ],
       "destinationPath": "docs/guide/10-recipes-and-pitfalls.md",
-      "destinationSha256": "4be34d37aa0dce687d7bcf13951369f9c9bd320a58391474f511cf9afd00b1f8",
+      "destinationSha256": "59a156857a119b7ae812f47bbd1014466a76700d56b6c6d0bf54319b4b70c670",
       "kind": "support",
       "packageDependencies": [
         "LICENSE",
@@ -4005,61 +3771,32 @@
       "references": [
         {
           "dependencyId": "shell-runtime",
-          "destinationLines": [
-            58
-          ],
-          "sourceLines": [
-            50
-          ]
+          "destinationLines": [],
+          "sourceLines": []
         },
         {
           "dependencyId": "workers-models",
-          "destinationLines": [
-            6,
-            58,
-            61,
-            117,
-            158,
-            162
-          ],
-          "sourceLines": [
-            50,
-            53,
-            109,
-            144,
-            150,
-            154
-          ]
+          "destinationLines": [],
+          "sourceLines": []
         },
         {
           "dependencyId": "loop-scheduler",
           "destinationLines": [],
-          "sourceLines": [
-            5,
-            140
-          ]
+          "sourceLines": []
         },
         {
           "dependencyId": "repository-gates",
-          "destinationLines": [
-            101
-          ],
-          "sourceLines": [
-            93
-          ]
+          "destinationLines": [],
+          "sourceLines": []
         },
         {
           "dependencyId": "example-controls",
-          "destinationLines": [
-            82
-          ],
-          "sourceLines": [
-            74
-          ]
+          "destinationLines": [],
+          "sourceLines": []
         }
       ],
       "sourcePath": "docs/guide/10-recipes-and-pitfalls.md",
-      "sourceSha256": "c652474764b08da4a6364d85f5d03cf1fc1cf35e9d7c549348fb66e2d09f7b1f"
+      "sourceSha256": "1a583bad627b61e4ec4f996acdb1bc4772e0fad4d6c8769c9787dfd157396f47"
     },
     {
       "dependencyIds": [
@@ -4067,7 +3804,7 @@
         "loop-scheduler"
       ],
       "destinationPath": "docs/guide/README.md",
-      "destinationSha256": "9688f32b8fb309eabce81d4b66be3ecfafb8427a1c3c140d08560842e160d51a",
+      "destinationSha256": "2f4324686d228506b79bbf9060884e68b723c30b7efb43fad85dc8624a85a30d",
       "kind": "support",
       "packageDependencies": [
         "docs/guide/01-setup.md",
@@ -4090,26 +3827,17 @@
       "references": [
         {
           "dependencyId": "workers-models",
-          "destinationLines": [
-            6,
-            22
-          ],
-          "sourceLines": [
-            14
-          ]
+          "destinationLines": [],
+          "sourceLines": []
         },
         {
           "dependencyId": "loop-scheduler",
-          "destinationLines": [
-            21
-          ],
-          "sourceLines": [
-            13
-          ]
+          "destinationLines": [],
+          "sourceLines": []
         }
       ],
       "sourcePath": "docs/guide/README.md",
-      "sourceSha256": "49d92cfe91e01c04bd1150e5b000ee4fd4dfda8ce789b66a9dda98f7e5456e00"
+      "sourceSha256": "5c888d034d38f380789fad57c2c6fa7307ace803a0622cdde9e57fa2afe182de"
     },
     {
       "dependencyIds": [],
@@ -4174,22 +3902,22 @@
     {
       "dependencyIds": [],
       "destinationPath": "docs/harness/claude-code.md",
-      "destinationSha256": "6655a98ba0194f2b808d84421ae79b84fc2ba60e9ade14efee6f925225678df6",
+      "destinationSha256": "6ba070bc09723d9973147b4240e464b264926b8661be61fe764a78fee678d953",
       "kind": "support",
       "packageDependencies": [],
       "references": [],
       "sourcePath": "docs/harness/claude-code.md",
-      "sourceSha256": "cbf1dc0dfb4a4e3c254eb5362bfb1c9db04517a4b4eec1b3315973f5bbd8325a"
+      "sourceSha256": "c79e2283d3a83c6be3dd1cac33f9c074067c95e610ae6e0a16d9fdee84058927"
     },
     {
       "dependencyIds": [],
       "destinationPath": "references/upstream-metadata/plugin.json",
-      "destinationSha256": "68f0ddbdda23d1e663b48c881f1b896305a3dcdc320ff83c65dd24cd9ac6850f",
+      "destinationSha256": "ce66690a6352aa6b28b2f9b184125f37be43958fed97e27ff630ac845354b734",
       "kind": "support",
       "packageDependencies": [],
       "references": [],
       "sourcePath": "plugin.json",
-      "sourceSha256": "68f0ddbdda23d1e663b48c881f1b896305a3dcdc320ff83c65dd24cd9ac6850f"
+      "sourceSha256": "ce66690a6352aa6b28b2f9b184125f37be43958fed97e27ff630ac845354b734"
     },
     {
       "dependencyIds": [
@@ -5015,7 +4743,7 @@
         "history-persistence"
       ],
       "destinationPath": "skills/ketchup/SKILL.md",
-      "destinationSha256": "01c01b6ea2058298c76119512b3b826a92cbd5d84f1c59c157c3b0fc265b7201",
+      "destinationSha256": "851e0a16d22c1f129470e167016f75242859e1eda771259066db4bd390d6f169",
       "kind": "root-skill",
       "packageDependencies": [
         "skills/bro/SKILL.md",
@@ -5034,7 +4762,7 @@
         }
       ],
       "sourcePath": "skills/ketchup/SKILL.md",
-      "sourceSha256": "47b3fb0d5626a40fcb3bd016e68f1cb3d2d313351183e8f6c05d4c7abd76e665"
+      "sourceSha256": "f2923ffd14f6fc778f75a47aaed1f317fb5fd00b5701ca769d6446c74106dead"
     },
     {
       "dependencyIds": [
@@ -5089,7 +4817,7 @@
         "tailscale"
       ],
       "destinationPath": "skills/make-bot-ui/SKILL.md",
-      "destinationSha256": "988aca737cdbd2016b60ade8d1411c77e21baafdc7454d0388d0f3bedbd7c043",
+      "destinationSha256": "35b66f3f6b4eab8b6daefe254df00fb0b82d93ca6410cf90de91917519a5589f",
       "kind": "root-skill",
       "packageDependencies": [
         "references/host-capabilities.md",
@@ -5098,115 +4826,32 @@
       "references": [
         {
           "dependencyId": "node-runtime",
-          "destinationLines": [
-            45,
-            50,
-            52
-          ],
-          "sourceLines": [
-            77,
-            79,
-            92,
-            100
-          ]
+          "destinationLines": [],
+          "sourceLines": []
         },
         {
           "dependencyId": "shell-runtime",
-          "destinationLines": [
-            29
-          ],
-          "sourceLines": [
-            37,
-            89
-          ]
+          "destinationLines": [],
+          "sourceLines": []
         },
         {
           "dependencyId": "loop-scheduler",
-          "destinationLines": [
-            29,
-            39
-          ],
-          "sourceLines": [
-            37,
-            64
-          ]
+          "destinationLines": [],
+          "sourceLines": []
         },
         {
           "dependencyId": "webhook-secrets",
-          "destinationLines": [
-            5,
-            11,
-            15,
-            17,
-            19,
-            21,
-            23,
-            25,
-            29,
-            31,
-            37,
-            41,
-            54,
-            56,
-            58
-          ],
-          "sourceLines": [
-            5,
-            11,
-            13,
-            15,
-            17,
-            20,
-            23,
-            25,
-            27,
-            33,
-            34,
-            35,
-            37,
-            39,
-            41,
-            44,
-            45,
-            46,
-            55,
-            59,
-            73,
-            105,
-            107,
-            112,
-            113
-          ]
+          "destinationLines": [],
+          "sourceLines": []
         },
         {
           "dependencyId": "tailscale",
-          "destinationLines": [
-            6,
-            37,
-            43,
-            45,
-            47,
-            50,
-            52
-          ],
-          "sourceLines": [
-            6,
-            57,
-            75,
-            77,
-            79,
-            81,
-            86,
-            89,
-            95,
-            98,
-            100,
-            103
-          ]
+          "destinationLines": [],
+          "sourceLines": []
         }
       ],
       "sourcePath": "skills/make-bot-ui/SKILL.md",
-      "sourceSha256": "3624c8ef16cf2e48deb2a4049e72c6962a9431c8d6c6af90e7bd7ea0375224ec"
+      "sourceSha256": "ad19d0bc6764287ec08c2521701974e7dac941f72e4d0fe81a24f4614494586f"
     },
     {
       "dependencyIds": [
@@ -5265,7 +4910,7 @@
         "example-controls"
       ],
       "destinationPath": "skills/poteto-help/SKILL.md",
-      "destinationSha256": "d8b93b8cd75b73b05257a7ed22ccffd114f4a69911bb9872cc292bf129f910af",
+      "destinationSha256": "cdc8910f127471ac42295c1db39765fdae3dca524cb34fae94f2e24c971f78a4",
       "kind": "root-skill",
       "packageDependencies": [
         "skills/poteto-mode/SKILL.md",
@@ -5311,7 +4956,9 @@
         "skills/poteto-help/references/recipes.md",
         "skills/in-your-own-words/SKILL.md",
         "skills/sharpen/SKILL.md",
-        "skills/ketchup/SKILL.md"
+        "skills/ketchup/SKILL.md",
+        "skills/create-formal-verification-skill/SKILL.md",
+        "skills/maintain-formal-verification-skill/SKILL.md"
       ],
       "references": [
         {
@@ -5366,7 +5013,7 @@
         }
       ],
       "sourcePath": "skills/poteto-help/SKILL.md",
-      "sourceSha256": "1b0645c25200a19e5863583e117bad684b1b79ba8434823ebf4f6bbcc61e8a75"
+      "sourceSha256": "e0938291e8b82db4f8d35bdbb0ac3ae2a4c76fcb3607f91a4cc7aabfff3a4823"
     },
     {
       "dependencyIds": [
@@ -5413,7 +5060,7 @@
         "example-controls"
       ],
       "destinationPath": "skills/poteto-help/references/recipes.md",
-      "destinationSha256": "55502ac6b7f97772a8fe37851f39c9b48bfb5e745f8d2d8520ccdca9f0533a96",
+      "destinationSha256": "cc520bb1877f688c26b919b0f81b994a50626ef3a2b0d226444791b30d2a012d",
       "kind": "support",
       "packageDependencies": [
         "references/host-capabilities.md",
@@ -5437,7 +5084,7 @@
         }
       ],
       "sourcePath": "skills/poteto-help/references/recipes.md",
-      "sourceSha256": "5fb97a805976a82db0aba5cc8943e88d0cb38b17a0d6b8e89a44633677febb1a"
+      "sourceSha256": "a69696c4496bed3e852e7c4527071989e2e6d99937ba7f984ed188eb8dd8aff0"
     },
     {
       "dependencyIds": [
@@ -5468,7 +5115,7 @@
         "image-diff"
       ],
       "destinationPath": "skills/poteto-mode/SKILL.md",
-      "destinationSha256": "a1594944b7f010c2af4f11faf79723928ad4a09a0a5c2831a935826bb5c36983",
+      "destinationSha256": "4403c185075f2439575b99c80ffe77999fdc2c42350abc892d0b0130384b8244",
       "kind": "root-skill",
       "packageDependencies": [
         "skills/poteto-mode/playbooks/prototype.md",
@@ -5671,7 +5318,7 @@
         }
       ],
       "sourcePath": "skills/poteto-mode/SKILL.md",
-      "sourceSha256": "c5e6b605f46e5d9fbab31afa7a99d3d50680f2180d1fdfae3a924901bc52d99a"
+      "sourceSha256": "2755f102e7a6d0496b429d1031a22fb353e1f3d523543367caeaae5c4ed6f544"
     },
     {
       "dependencyIds": [
@@ -9576,58 +9223,47 @@
         "example-controls"
       ],
       "destinationPath": "skills/setup-pstack/SKILL.md",
-      "destinationSha256": "2387b1c59c1573d68e6defbb0b07ca2f18d008cd3a45ef50ad8a884e38ccea7e",
+      "destinationSha256": "374d9b034bfedbedc2d96171a36fa25a0dddc9649b7b844af68a53e2a2bade54",
       "kind": "root-skill",
       "packageDependencies": [
         "references/host-capabilities.md",
         "references/model-roles.md",
         "references/orchestration-contract.md",
-        "skills/create-verification-skill/SKILL.md"
+        "skills/create-verification-skill/SKILL.md",
+        "skills/create-formal-verification-skill/SKILL.md",
+        "skills/maintain-formal-verification-skill/SKILL.md"
       ],
       "references": [
         {
           "dependencyId": "workers-models",
-          "destinationLines": [
-            14,
-            35
-          ],
-          "sourceLines": [
-            14,
-            31,
-            47
-          ]
+          "destinationLines": [],
+          "sourceLines": []
         },
         {
           "dependencyId": "history-persistence",
-          "destinationLines": [
-            10
-          ],
+          "destinationLines": [],
           "sourceLines": []
         },
         {
           "dependencyId": "example-controls",
-          "destinationLines": [
-            79
-          ],
-          "sourceLines": [
-            74
-          ]
+          "destinationLines": [],
+          "sourceLines": []
         }
       ],
       "sourcePath": "skills/setup-pstack/SKILL.md",
-      "sourceSha256": "d61b47256a18155a81c8e5ef95e3cc6569ce8c18317c35c4dd9c8015cf68cb59"
+      "sourceSha256": "b45512f6ca5e96e81681984683b7472bfe892581da3a89a73cca4159438f29ed"
     },
     {
       "dependencyIds": [],
       "destinationPath": "skills/sharpen/SKILL.md",
-      "destinationSha256": "bfdea0dfd347bad81963d911404a5e5435db03c17566412e8a92e8888b398c44",
+      "destinationSha256": "84c6a515289cdd70d35fa2173616e5b169f836c2fb304ab9f3b92e231a6e5bb4",
       "kind": "root-skill",
       "packageDependencies": [
         "references/host-capabilities.md"
       ],
       "references": [],
       "sourcePath": "skills/sharpen/SKILL.md",
-      "sourceSha256": "6bcd73916696eb9c5b79b6f960983760c34bcc28937c11142dd8d86b5107aa46"
+      "sourceSha256": "d895695fcc29b832bf118b842c1d7cf356a69622d63c9d49b40a0c97d8496c80"
     },
     {
       "dependencyIds": [
@@ -9889,7 +9525,7 @@
     {
       "dependencyIds": [],
       "destinationPath": "skills/typescript-best-practices/SKILL.md",
-      "destinationSha256": "c9495954ee2ce4462d10a8b1aa2d82e1b80167449fe9dc0ccee6b41c184f8983",
+      "destinationSha256": "480f0360b36da4cf9c2be8569a872fe02f1d71e39ca1d70a5624393c91b97b85",
       "kind": "root-skill",
       "packageDependencies": [
         "skills/typescript-best-practices/references/patterns.md",
@@ -9899,12 +9535,12 @@
       ],
       "references": [],
       "sourcePath": "skills/typescript-best-practices/SKILL.md",
-      "sourceSha256": "28f9e61710e205f6f3c5476f333483cff0e988f6a5b639e2faad536344b40c5e"
+      "sourceSha256": "ec1dac086d3708e5940d45d250c30a37dd953b4e3cb2ca0692f5851d7a039e27"
     },
     {
       "dependencyIds": [],
       "destinationPath": "skills/typescript-best-practices/references/patterns.md",
-      "destinationSha256": "faa1362055374452efccac1b629677c61acfb0bcc6c4e3311836b5715638ee18",
+      "destinationSha256": "12e70c9419a8b3f5d6a1ab80e272c1f00a43ac0b3bbf72d68199033570e5de77",
       "kind": "support",
       "packageDependencies": [
         "skills/principle-type-system-discipline/SKILL.md",
@@ -9912,7 +9548,7 @@
       ],
       "references": [],
       "sourcePath": "skills/typescript-best-practices/references/patterns.md",
-      "sourceSha256": "faa1362055374452efccac1b629677c61acfb0bcc6c4e3311836b5715638ee18"
+      "sourceSha256": "12e70c9419a8b3f5d6a1ab80e272c1f00a43ac0b3bbf72d68199033570e5de77"
     },
     {
       "dependencyIds": [
@@ -10450,7 +10086,103 @@
       ],
       "sourcePath": "skills/why/references/synthesizer-prompt.md",
       "sourceSha256": "11c62671aa7b7a6e3d36929ffe2b59bf95e6ca664eee4d93e6ee527dd3390ddb"
+    },
+    {
+      "dependencyIds": [
+        "formal-verifier",
+        "git",
+        "workers-models",
+        "history-persistence",
+        "repository-gates"
+      ],
+      "destinationPath": "skills/create-formal-verification-skill/SKILL.md",
+      "destinationSha256": "35942ca148f00968065b8eeeffcb24432c81bb531a6de7369a737cd7f1d36bab",
+      "kind": "root-skill",
+      "packageDependencies": [
+        "references/host-capabilities.md",
+        "references/workflow-ownership.md",
+        "references/model-roles.md",
+        "references/orchestration-contract.md",
+        "skills/maintain-formal-verification-skill/SKILL.md"
+      ],
+      "references": [
+        {
+          "dependencyId": "formal-verifier",
+          "destinationLines": [],
+          "sourceLines": []
+        },
+        {
+          "dependencyId": "git",
+          "destinationLines": [],
+          "sourceLines": []
+        },
+        {
+          "dependencyId": "workers-models",
+          "destinationLines": [],
+          "sourceLines": []
+        },
+        {
+          "dependencyId": "history-persistence",
+          "destinationLines": [],
+          "sourceLines": []
+        },
+        {
+          "dependencyId": "repository-gates",
+          "destinationLines": [],
+          "sourceLines": []
+        }
+      ],
+      "sourcePath": "skills/create-formal-verification-skill/SKILL.md",
+      "sourceSha256": "6c934cd15a9583533ff9b7a9cad62775d7e80402d26d3ba7f74f79ea21a1d8eb"
+    },
+    {
+      "dependencyIds": [
+        "formal-verifier",
+        "git",
+        "workers-models",
+        "history-persistence",
+        "repository-gates"
+      ],
+      "destinationPath": "skills/maintain-formal-verification-skill/SKILL.md",
+      "destinationSha256": "997f8f06669e9321e3b0302ed2c70ea2c7d98f4bbf8c2a2720eb564c9bdf42be",
+      "kind": "root-skill",
+      "packageDependencies": [
+        "references/host-capabilities.md",
+        "references/workflow-ownership.md",
+        "references/model-roles.md",
+        "references/orchestration-contract.md",
+        "skills/create-formal-verification-skill/SKILL.md"
+      ],
+      "references": [
+        {
+          "dependencyId": "formal-verifier",
+          "destinationLines": [],
+          "sourceLines": []
+        },
+        {
+          "dependencyId": "git",
+          "destinationLines": [],
+          "sourceLines": []
+        },
+        {
+          "dependencyId": "workers-models",
+          "destinationLines": [],
+          "sourceLines": []
+        },
+        {
+          "dependencyId": "history-persistence",
+          "destinationLines": [],
+          "sourceLines": []
+        },
+        {
+          "dependencyId": "repository-gates",
+          "destinationLines": [],
+          "sourceLines": []
+        }
+      ],
+      "sourcePath": "skills/maintain-formal-verification-skill/SKILL.md",
+      "sourceSha256": "0c96f54293542d3818b68754562b338073958781a9684454611dca37592e2d2c"
     }
   ],
-  "sourceCommit": "182f2ce414e83224915c190d2f63239c1608d0a5"
+  "sourceCommit": "d457567332aa6989e753ea289f30ea2bfbc80bc0"
 }

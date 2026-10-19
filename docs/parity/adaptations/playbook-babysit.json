@@ -25,7 +25,7 @@
       "sourcePath": "LICENSE"
     },
     "rationale": "Upstream changes are editorial compression or delegate-effort reminders already governed by shared mode policy. Retain explicit local host, offline audit, authorization and evidence bindings.",
-    "upstreamCommit": "182f2ce414e83224915c190d2f63239c1608d0a5",
+    "upstreamCommit": "d457567332aa6989e753ea289f30ea2bfbc80bc0",
     "upstreamPath": "skills/poteto-mode/playbooks/babysit.md",
     "upstreamSha256": "e261c1ff5581e0f8fc6c686f34de4b535f87473e77beabea7dd8323021214610",
     "verification": {

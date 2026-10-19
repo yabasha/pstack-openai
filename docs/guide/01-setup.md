@@ -43,3 +43,7 @@ Choose a smaller supported budget, inherited roles or shorter panels through the
 The matched Feature playbook supplies the checklist. A skipped step stays visible with skip and a reason. Use the host's supported invocation mechanism; a persistent mode or recurring attachment must be observed and authorized. If none exists, re-invoke explicitly on later turns.
 
 Next: [Route work through poteto-mode](./02-poteto-mode.md).
+
+## Optional formal verification
+
+Setup also offers once to generate a project-local property check with [/create-formal-verification-skill](../../skills/create-formal-verification-skill/SKILL.md), unless one already exists. Say yes to invoke it or decline without changing setup. It selects a costly failure that tests rarely reach, states its bounds, and proves the check can fail. Generated-input tests are a fallback, not formal proof. Missing execution leaves a draft. After covered-code changes, use [/maintain-formal-verification-skill](../../skills/maintain-formal-verification-skill/SKILL.md). Tool installation and project writes keep their separate authorization requirements.

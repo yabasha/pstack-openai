@@ -1,0 +1,33 @@
+[
+  {
+    "adaptationStatus": "adapted-reviewed",
+    "dependencies": [
+      "references/host-capabilities.md",
+      "references/workflow-ownership.md",
+      "references/model-roles.md",
+      "references/orchestration-contract.md",
+      "skills/maintain-formal-verification-skill/SKILL.md"
+    ],
+    "destinationPath": "skills/create-formal-verification-skill/SKILL.md",
+    "disposition": "runtime",
+    "licenseProvenance": {
+      "copyright": "Copyright (c) 2026 Lauren Tan",
+      "license": "MIT",
+      "sourcePath": "LICENSE"
+    },
+    "rationale": "Adopt bounded verification and drift maintenance with capability discovery, real-code testing fallback labels, isolated negative controls and explicit blocked execution.",
+    "upstreamCommit": "d457567332aa6989e753ea289f30ea2bfbc80bc0",
+    "upstreamPath": "skills/create-formal-verification-skill/SKILL.md",
+    "upstreamSha256": "6c934cd15a9583533ff9b7a9cad62775d7e80402d26d3ba7f74f79ea21a1d8eb",
+    "verification": {
+      "chatgpt": {
+        "evidence": [],
+        "status": "not-run"
+      },
+      "codex": {
+        "evidence": [],
+        "status": "not-run"
+      }
+    }
+  }
+]

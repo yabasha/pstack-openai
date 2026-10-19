@@ -45,7 +45,9 @@
       "skills/poteto-help/references/recipes.md",
       "skills/in-your-own-words/SKILL.md",
       "skills/sharpen/SKILL.md",
-      "skills/ketchup/SKILL.md"
+      "skills/ketchup/SKILL.md",
+      "skills/create-formal-verification-skill/SKILL.md",
+      "skills/maintain-formal-verification-skill/SKILL.md"
     ],
     "destinationPath": "skills/poteto-help/SKILL.md",
     "disposition": "runtime",
@@ -54,10 +56,10 @@
       "license": "MIT",
       "sourcePath": "LICENSE"
     },
-    "rationale": "Add reviewed new routes and recall/ketchup boundary while retaining portable invocation and model contracts.",
-    "upstreamCommit": "182f2ce414e83224915c190d2f63239c1608d0a5",
+    "rationale": "Review cumulative canonical change against accepted 0.2.2; retain portable host, model, permission and evidence contracts.",
+    "upstreamCommit": "d457567332aa6989e753ea289f30ea2bfbc80bc0",
     "upstreamPath": "skills/poteto-help/SKILL.md",
-    "upstreamSha256": "1b0645c25200a19e5863583e117bad684b1b79ba8434823ebf4f6bbcc61e8a75",
+    "upstreamSha256": "e0938291e8b82db4f8d35bdbb0ac3ae2a4c76fcb3607f91a4cc7aabfff3a4823",
     "verification": {
       "chatgpt": {
         "evidence": [],
@@ -83,7 +85,7 @@
       "sourcePath": "LICENSE"
     },
     "rationale": "Preserve the complete help routing, metadata, source invocation aliases, prompting advice and recipes. Bind source-host setup, persistence, models, workers and loop behavior to observed portable capabilities and explicit authorization. Pending local destinations remain visible. Explain source customization options before baseline acceptance, but gate acting on personal-mode drafting and custom skill edits on complete reviewed baseline dispositions and per-host supported-behavior evidence or explicit blocks, independently of authorization.",
-    "upstreamCommit": "182f2ce414e83224915c190d2f63239c1608d0a5",
+    "upstreamCommit": "d457567332aa6989e753ea289f30ea2bfbc80bc0",
     "upstreamPath": "skills/poteto-help/references/prompting.md",
     "upstreamSha256": "463f450c44a60afd001a2f69fdf8a5dea174351f339369b12ec3c41515e564d3",
     "verification": {
@@ -110,10 +112,10 @@
       "license": "MIT",
       "sourcePath": "LICENSE"
     },
-    "rationale": "Add new restatement and sharpen recipes without changing existing host-specific caveats.",
-    "upstreamCommit": "182f2ce414e83224915c190d2f63239c1608d0a5",
+    "rationale": "Review cumulative canonical change against accepted 0.2.2; retain portable host, model, permission and evidence contracts.",
+    "upstreamCommit": "d457567332aa6989e753ea289f30ea2bfbc80bc0",
     "upstreamPath": "skills/poteto-help/references/recipes.md",
-    "upstreamSha256": "5fb97a805976a82db0aba5cc8943e88d0cb38b17a0d6b8e89a44633677febb1a",
+    "upstreamSha256": "a69696c4496bed3e852e7c4527071989e2e6d99937ba7f984ed188eb8dd8aff0",
     "verification": {
       "chatgpt": {
         "evidence": [],

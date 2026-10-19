@@ -21,7 +21,7 @@
       "sourcePath": "LICENSE"
     },
     "rationale": "Preserve all six Prototype steps, design ownership, no-decision Feature routing, open-design moodboard and direction gate, isolated throwaway code, labelled switcher alternatives, matching-surface observations and decision plus artifact handoff. Adapt only actual controls, execution, inherited model roles and permission boundaries. No script helper is directly invoked. Missing control-ui companion blocks visual verification; denied execution blocks empirical conclusions. Opening a PR remains deferred for Task 21 and Task 24 integration. Both host statuses remain not-run; structural validation proves no runtime behavior.",
-    "upstreamCommit": "182f2ce414e83224915c190d2f63239c1608d0a5",
+    "upstreamCommit": "d457567332aa6989e753ea289f30ea2bfbc80bc0",
     "upstreamPath": "skills/poteto-mode/playbooks/prototype.md",
     "upstreamSha256": "7aa1f52c691c3d46d5afc527b23f90977fce869ce33573c73c81a4c7f0cde962",
     "verification": {

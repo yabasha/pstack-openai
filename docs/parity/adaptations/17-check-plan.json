@@ -14,7 +14,7 @@
       "sourcePath": "LICENSE"
     },
     "rationale": "Port CommonMark fence parsing; preserve local capability, evidence and applicability rules.",
-    "upstreamCommit": "182f2ce414e83224915c190d2f63239c1608d0a5",
+    "upstreamCommit": "d457567332aa6989e753ea289f30ea2bfbc80bc0",
     "upstreamPath": "skills/poteto-mode/scripts/check-plan.mjs",
     "upstreamSha256": "e58c3d871b09d477be00628d69dd23ffa6c2e3a1728f5b867a841baa8e90278b",
     "verification": {

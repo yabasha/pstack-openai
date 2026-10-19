@@ -9,10 +9,10 @@
       "license": "MIT",
       "sourcePath": "LICENSE"
     },
-    "rationale": "Preserve the complete Claude Code adapter inside a quoted source fence for provenance only; no mappings, installer instructions or host claims are operative on ChatGPT or Codex.",
-    "upstreamCommit": "182f2ce414e83224915c190d2f63239c1608d0a5",
+    "rationale": "Refresh quoted upstream Claude adapter as reference-only; do not transfer skip, model, worktree or configuration semantics into runtime.",
+    "upstreamCommit": "d457567332aa6989e753ea289f30ea2bfbc80bc0",
     "upstreamPath": "docs/harness/claude-code.md",
-    "upstreamSha256": "cbf1dc0dfb4a4e3c254eb5362bfb1c9db04517a4b4eec1b3315973f5bbd8325a",
+    "upstreamSha256": "c79e2283d3a83c6be3dd1cac33f9c074067c95e610ae6e0a16d9fdee84058927",
     "verification": {
       "chatgpt": {
         "evidence": [],

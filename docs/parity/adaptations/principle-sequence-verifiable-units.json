@@ -15,7 +15,7 @@
       "sourcePath": "LICENSE"
     },
     "rationale": "Preserve the complete canonical sequencing principle and invocation metadata; bind verification and Git operations to observed capabilities, ownership and authorization. No comparison content or personal preferences added.",
-    "upstreamCommit": "182f2ce414e83224915c190d2f63239c1608d0a5",
+    "upstreamCommit": "d457567332aa6989e753ea289f30ea2bfbc80bc0",
     "upstreamPath": "skills/principle-sequence-verifiable-units/SKILL.md",
     "upstreamSha256": "2ccbbacc56ace5afdfb8670cef19d7bd009fb2a0033b9a741cbdf2b6baf72187",
     "verification": {

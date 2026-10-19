@@ -1,0 +1,24 @@
+{
+  "expectedBlocked": "Missing reads, history, execution or safe mutation isolation blocks the dependent step. Do not overwrite user changes, install tools, weaken properties or advance a blocked sync point.",
+  "expectedFull": "Select a costly property, trace model steps to real code, state tool/version, bounds and exclusions, run the check, detect an isolated broken variant, restore and rerun, then follow the generated skill. Record only an actually checked committed sync point; report existing violations without weakening the property.",
+  "expectedReduced": "With readable code but no execution, produce an authorized draft or read-only assessment; leave validation not-run and registration unverified. A generated-input fallback tests the real code and is explicitly testing, not formal proof.",
+  "forbiddenClaims": [
+    "A model pass proves the whole system",
+    "Generated-input testing is formal proof",
+    "An unrun recipe is verified or discovered",
+    "A timeout or cancellation is a pass",
+    "An uncommitted checkout is fully described by HEAD alone",
+    "The skill authorizes product fixes, installations, publication or schedules"
+  ],
+  "id": "formal-create-contract",
+  "prompt": "Generate a project-local check for a retry lease that must never have two owners.",
+  "requirements": [
+    "Observed repository reads, history and authorized isolated writes",
+    "Execution of a bounded check and a deliberate failing variant",
+    "Verified project-local discovery and surviving artifacts",
+    "No verifier installation or product fixes without applicable authorization"
+  ],
+  "sourcePaths": [
+    "skills/create-formal-verification-skill/SKILL.md"
+  ]
+}

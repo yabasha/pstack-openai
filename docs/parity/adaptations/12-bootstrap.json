@@ -14,7 +14,7 @@
       "sourcePath": "LICENSE"
     },
     "rationale": "Reviewed in b68fae5b49571ad9b33f13d60f4ab5a287618922. Preserve ensureDependenciesInstalled(): void as a read-only check of exact manifest, lock and installed package identities. Missing or mismatched dependencies throw setup-required before dependent imports; no install, restart, subprocess or cache write. Both host workflows remain untested. See docs/parity/reconciliations/task12-lock.json.",
-    "upstreamCommit": "182f2ce414e83224915c190d2f63239c1608d0a5",
+    "upstreamCommit": "d457567332aa6989e753ea289f30ea2bfbc80bc0",
     "upstreamPath": "skills/poteto-mode/scripts/bootstrap.ts",
     "upstreamSha256": "ccd2ed08fd9da9d0d942e5f2491cfc74bb92d8a08fa51755e0da1ac8de287361",
     "verification": {
@@ -42,7 +42,7 @@
       "sourcePath": "LICENSE"
     },
     "rationale": "Initially copied unchanged in b68fae5b49571ad9b33f13d60f4ab5a287618922; separately reviewed integration 2805c1eadec5906286a3ba129147ee1669052fe9 pins only the two workspace latest requests to bun-types 1.3.14 and TypeScript 7.0.2. All 25 package resolution and integrity records remain byte-identical. Canonical source digest remains unchanged. See docs/parity/reconciliations/task12-lock.json. No operative dependency installation or host pass.",
-    "upstreamCommit": "182f2ce414e83224915c190d2f63239c1608d0a5",
+    "upstreamCommit": "d457567332aa6989e753ea289f30ea2bfbc80bc0",
     "upstreamPath": "skills/poteto-mode/scripts/bun.lock",
     "upstreamSha256": "667d9cf7222e9aae3fa42a4be383e657784216e9df115da02227fbc5ac7bbe46",
     "verification": {
@@ -70,7 +70,7 @@
       "sourcePath": "LICENSE"
     },
     "rationale": "Add adapted check-plan regressions to test script; preserve dependency versions.",
-    "upstreamCommit": "182f2ce414e83224915c190d2f63239c1608d0a5",
+    "upstreamCommit": "d457567332aa6989e753ea289f30ea2bfbc80bc0",
     "upstreamPath": "skills/poteto-mode/scripts/package.json",
     "upstreamSha256": "fd511a0c01f522e0c781ddd8eccea0e91697a0856c6e6a3261de78a6a0287c72",
     "verification": {

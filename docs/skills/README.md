@@ -1,6 +1,6 @@
 # Skill catalog
 
-Generated from 54 reviewed leaf records, including 24 principles. No additional root skill is registered.
+Generated from 56 reviewed leaf records, including 24 principles. No additional root skill is registered.
 
 Host support depends on capabilities, permissions and observed evidence. Inventory review may remain pending, and a not-run result remains untested.
 
@@ -15,12 +15,14 @@ Source inventory: [docs/parity/inventory.json](../parity/inventory.json). Catalo
 | [blast-radius](blast-radius.md) | Find what a change can break outside the diff and prove the safety fact by running real code. |
 | [bro](bro.md) | Restate the previous assistant message in plain, coherent, concise language without jargon. |
 | [correct](correct.md) | Find repeated repository mistake classes and prevent recurrence through architecture, types, lint or CI, tests, then judgment rules. |
+| [create-formal-verification-skill](create-formal-verification-skill.md) | Generate a bounded, reproducible property check and a project-local rerun skill. |
 | [create-verification-skill](create-verification-skill.md) | Generate a project-local verification skill grounded in the real app and prove one mapped user-facing feature. |
 | [figure-it-out](figure-it-out.md) | Design and execute an auditable playbook when no narrower workflow fits, with task-scaled rigor and hypothesis loops. |
 | [how](how.md) | Explain subsystem architecture and runtime flow for a senior engineer using inspected code. |
 | [in-your-own-words](in-your-own-words.md) | Restate the user goals and problem while keeping assumptions explicit. |
 | [interrogate](interrogate.md) | Adversarially review changes through competing reviewers and pragmatic lead judgment without automatically applying changes. |
 | [ketchup](ketchup.md) | Catch up on changes in this chat since the previous user message, with checked status and existing evidence. |
+| [maintain-formal-verification-skill](maintain-formal-verification-skill.md) | Keep a property check aligned with covered code and distinguish stale verification from product bugs. |
 | [maintain-verification-skill](maintain-verification-skill.md) | Keep a project verification skill and feature map honest through source review and live coverage of every feature. |
 | [make-bot-ui](make-bot-ui.md) | Build a custom page whose local server wakes a bot routine over a webhook and optionally serves it on Tailscale. |
 | [no-comments](no-comments.md) | Spawn Comment Sicko, fix accepted findings, and offer encodings for claimed constraints. |

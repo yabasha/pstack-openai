@@ -77,3 +77,7 @@ Report whether the result is a session-only proposal or a verified saved overrid
 ## 7. Offer a verification skill
 
 Check whether the project already has a `verify-*` skill or a harness that can drive the real app. If neither exists, offer once to generate a project-local verification skill with `/create-verification-skill`. Invoke it only on yes; on no, continue without pressing. Its [leaf](../create-verification-skill/SKILL.md) is a deferred local dependency until its assigned port lands. Missing support stays visible; do not claim app verification from the model table.
+
+## 8. Offer a formal verification skill
+
+Inspect project-local skills and existing checks by behavior for a model checker, proof or code-level property verifier. If no formal-verification skill exists, offer once to generate one with [/create-formal-verification-skill](../create-formal-verification-skill/SKILL.md). Invoke only on yes; on no, continue without pressing. The offer grants no dependency installation, personal settings, external writes or recurring schedule permission. Existing checks may still verify properties without a skill. Missing execution leaves a draft, not a proof.

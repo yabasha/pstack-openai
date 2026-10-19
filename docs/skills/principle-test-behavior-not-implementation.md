@@ -79,7 +79,7 @@ The following statuses come from the current parity inventory. Pending aggregate
 
 Destination: [skills/principle-test-behavior-not-implementation/SKILL.md](../../skills/principle-test-behavior-not-implementation/SKILL.md).
 
-Upstream commit: `182f2ce414e83224915c190d2f63239c1608d0a5`. SHA-256: `f7223698623b6a26fea49c751e466b38e6691b1f32ce841d3983e7ffbe2b74a6`.
+Upstream commit: `d457567332aa6989e753ea289f30ea2bfbc80bc0`. SHA-256: `f7223698623b6a26fea49c751e466b38e6691b1f32ce841d3983e7ffbe2b74a6`.
 
 Disposition: `runtime`. Aggregate adaptation status: `adapted-reviewed`.
 

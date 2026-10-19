@@ -1,19 +1,19 @@
 # pstack portable package
 
-An unofficial port of Lauren Tan's pstack v0.15.25. The source inventory includes 54 root skills, 24 principles, 23 playbooks and 170 source files. Read [UPSTREAM.md](UPSTREAM.md), [NOTICE.md](NOTICE.md) and [LICENSE](LICENSE) for lineage and attribution.
+An unofficial port of Lauren Tan's pstack v0.15.28. The source inventory includes 56 root skills, 24 principles, 23 playbooks and 172 source files. Read [UPSTREAM.md](UPSTREAM.md), [NOTICE.md](NOTICE.md) and [LICENSE](LICENSE) for lineage and attribution.
 
-Port 0.2.2 accepts upstream source `182f2ce414e83224915c190d2f63239c1608d0a5` after reviewed source validation and explicit user authorization.
+Port 0.2.3 is an unaccepted candidate for upstream `d457567332aa6989e753ea289f30ea2bfbc80bc0`. The accepted source remains 0.2.2 at `182f2ce414e83224915c190d2f63239c1608d0a5` until separate reviewed acceptance.
 
 Upstream adds Claude Code packaging; this port retains its shared portable runtime and records the Claude adapter as a quoted reference only.
 
-It includes ketchup, sharpen and in-your-own-words. Source validation and installed discovery are tracked separately from full workflow behavior. The [0.2.2 source validation record](docs/releases/0.2.2.md) identifies the reviewed snapshot, checks and remaining host limits. Earlier release records retain their historical scope. See [compatibility](docs/compatibility.md) before relying on a workflow.
+It adds create-formal-verification-skill and maintain-formal-verification-skill, including bounded claims, safe mutation trials and explicit testing fallbacks. Source validation and installed discovery are tracked separately from full workflow behavior. The [0.2.2 source validation record](docs/releases/0.2.2.md) identifies the reviewed snapshot, checks and remaining host limits. Earlier release records retain their historical scope. See [compatibility](docs/compatibility.md) before relying on a workflow.
 
 ## Start here
 
 - [Personal ChatGPT setup and blocked route](docs/setup/chatgpt.md).
 - [Codex setup and unverified documented route](docs/setup/codex.md).
 - [Choose a workflow](docs/workflows/choosing-a-workflow.md).
-- [All 54 skills](docs/skills/README.md) and [all 24 principles](docs/principles/README.md).
+- [All 56 skills](docs/skills/README.md) and [all 24 principles](docs/principles/README.md).
 - [Preserved guide](docs/guide/README.md).
 - [Arena walkthrough](docs/workflows/arena.md), [Swarm walkthrough](docs/workflows/swarm.md) and [Poteto mode walkthrough](docs/workflows/poteto-mode.md).
 - [Troubleshooting](docs/troubleshooting.md) and [host test matrix](docs/testing/host-matrix.md).

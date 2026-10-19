@@ -1,6 +1,6 @@
 # Optional Wiki export
 
-Repository documentation remains canonical. The exporter derives Wiki pages and copies their linked local support files. It includes all 54 skill pages, the 24 principles within that catalog, both host setup guides, workflows, troubleshooting, maintenance, compatibility and a Home page. Each Markdown page records its source path, package version and actual local package commit. Uncommitted documentation changes are included, so review the source tree before exporting a release snapshot.
+Repository documentation remains canonical. The exporter derives Wiki pages and copies their linked local support files. It includes all 56 skill pages, the 24 principles within that catalog, both host setup guides, workflows, troubleshooting, maintenance, compatibility and a Home page. Each Markdown page records its source path, package version and actual local package commit. Uncommitted documentation changes are included, so review the source tree before exporting a release snapshot.
 
 Create an explicitly task-owned empty directory under `/Users/digital-hawk/Herd`, outside the package source tree. Run the exporter from the package root through Bun:
 

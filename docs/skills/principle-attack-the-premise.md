@@ -82,7 +82,7 @@ The following statuses come from the current parity inventory. Pending aggregate
 
 Destination: [skills/principle-attack-the-premise/SKILL.md](../../skills/principle-attack-the-premise/SKILL.md).
 
-Upstream commit: `182f2ce414e83224915c190d2f63239c1608d0a5`. SHA-256: `6a932884daad4aa189e9b5d1665226bbc75621d4d2a398fd4003bebd382f4599`.
+Upstream commit: `d457567332aa6989e753ea289f30ea2bfbc80bc0`. SHA-256: `6a932884daad4aa189e9b5d1665226bbc75621d4d2a398fd4003bebd382f4599`.
 
 Disposition: `runtime`. Aggregate adaptation status: `adapted-reviewed`.
 

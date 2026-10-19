@@ -78,7 +78,7 @@ The following statuses come from the current parity inventory. Pending aggregate
 
 Destination: [skills/principle-boundary-discipline/SKILL.md](../../skills/principle-boundary-discipline/SKILL.md).
 
-Upstream commit: `182f2ce414e83224915c190d2f63239c1608d0a5`. SHA-256: `62ac2862c2caa22dd14531f51c9c6bb445ceb198ca98a687e25b4d47c1f10a28`.
+Upstream commit: `d457567332aa6989e753ea289f30ea2bfbc80bc0`. SHA-256: `62ac2862c2caa22dd14531f51c9c6bb445ceb198ca98a687e25b4d47c1f10a28`.
 
 Disposition: `runtime`. Aggregate adaptation status: `adapted-reviewed`.
 

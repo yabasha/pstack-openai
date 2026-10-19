@@ -64,3 +64,8 @@ The inventory stages this candidate. The accepted baseline above remains histori
 ## Accepted source baseline, 2026-10-17
 
 Port 0.2.2 accepts official pstack 0.15.25 at `182f2ce414e83224915c190d2f63239c1608d0a5` after explicit user acceptance of the reviewed minimal sync. The [acceptance receipt](docs/parity/upstream-manifests/accepted.json) binds the exact source manifest, package identity and [source validation record](docs/releases/0.2.2.md). The Claude adapter remains quoted reference-only source; portable runtime behavior is unchanged. Prior candidate and acceptance sections retain their historical scope. Integration, installed refresh and skill discovery are recorded separately in task-owned artifacts and do not establish full workflow support.
+
+## Unaccepted candidate d457567332aa6989e753ea289f30ea2bfbc80bc0
+
+Candidate version 0.2.3. Archive SHA-256 aabcbe225ee504014ba4931908357889d9b34f28b0afb050ae84ad19f3daa101. Review SHA-256 45c2ce6d09b6bd414d878e3e9a801fc2dddba1d98a56f3184c04a941ab222954.
+The inventory stages this candidate. The accepted baseline above remains historical evidence. Structural checks, helper regression tests, and affected host cases must run before separate acceptance.

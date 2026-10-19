@@ -15,7 +15,7 @@
       "sourcePath": "LICENSE"
     },
     "rationale": "Preserve the full upkeep loop, metadata, invocation aliases, feature-level source and live coverage, proof invariants and scoped triage; bind discovery, readers and shipping to observed capabilities and authorization.",
-    "upstreamCommit": "182f2ce414e83224915c190d2f63239c1608d0a5",
+    "upstreamCommit": "d457567332aa6989e753ea289f30ea2bfbc80bc0",
     "upstreamPath": "skills/maintain-verification-skill/SKILL.md",
     "upstreamSha256": "515c0eaa054b3f6be1b1fb06f2c2f173c80fddb58bbcac57576f89c479bc68e8",
     "verification": {

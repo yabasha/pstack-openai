@@ -78,7 +78,7 @@ The following statuses come from the current parity inventory. Pending aggregate
 
 Destination: [skills/tdd/SKILL.md](../../skills/tdd/SKILL.md).
 
-Upstream commit: `182f2ce414e83224915c190d2f63239c1608d0a5`. SHA-256: `eeb868e2dfebee528d730a67d7b17498fac4bb85dec2e38bc5c5176aca4d5d2f`.
+Upstream commit: `d457567332aa6989e753ea289f30ea2bfbc80bc0`. SHA-256: `eeb868e2dfebee528d730a67d7b17498fac4bb85dec2e38bc5c5176aca4d5d2f`.
 
 Disposition: `runtime`. Aggregate adaptation status: `adapted-reviewed`.
 
