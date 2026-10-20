@@ -79,7 +79,7 @@ The following statuses come from the current parity inventory. Pending aggregate
 
 Destination: [skills/principle-redesign-from-first-principles/SKILL.md](../../skills/principle-redesign-from-first-principles/SKILL.md).
 
-Upstream commit: `d457567332aa6989e753ea289f30ea2bfbc80bc0`. SHA-256: `170e0a658783e43fee8ec5a8c2422a4abb8f69cef621dd1819a95910b8207034`.
+Upstream commit: `88d47514b82e7c44f00f2b2a72ff6dd12158038c`. SHA-256: `170e0a658783e43fee8ec5a8c2422a4abb8f69cef621dd1819a95910b8207034`.
 
 Disposition: `runtime`. Aggregate adaptation status: `adapted-reviewed`.
 

@@ -17,7 +17,7 @@
       "sourcePath": "LICENSE"
     },
     "rationale": "Retain complete current host adaptation; upstream prose consolidation does not add substantive required behavior.",
-    "upstreamCommit": "d457567332aa6989e753ea289f30ea2bfbc80bc0",
+    "upstreamCommit": "88d47514b82e7c44f00f2b2a72ff6dd12158038c",
     "upstreamPath": "skills/principle-build-the-lever/SKILL.md",
     "upstreamSha256": "3434b0ad0c640c6f1d7960be7a8986c3bcdc14e26060360dec29903df60074ff",
     "verification": {

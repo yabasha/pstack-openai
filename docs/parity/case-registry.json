@@ -4329,13 +4329,10 @@
       "caseId": "task-sharpen",
       "executionModes": {
         "pass": [
-          "direct",
-          "workers"
+          "direct"
         ],
         "reduced-pass": [
-          "direct",
-          "sequential",
-          "workers"
+          "direct"
         ]
       },
       "hostStatus": {
@@ -5222,6 +5219,126 @@
       },
       "sourcePaths": [
         "skills/maintain-formal-verification-skill/SKILL.md"
+      ],
+      "structuralOnly": false
+    },
+    {
+      "caseFile": "docs/parity/cases/skills/sharpen-unavailable-tools.json",
+      "caseId": "sharpen-unavailable-tools",
+      "executionModes": {
+        "pass": [
+          "direct"
+        ],
+        "reduced-pass": [
+          "direct"
+        ]
+      },
+      "hostStatus": {
+        "chatgpt": "not-run",
+        "codex": "not-run"
+      },
+      "requiredHosts": [
+        "chatgpt",
+        "codex"
+      ],
+      "requiredObservations": {
+        "pass": [
+          "supplied-input",
+          "response",
+          "review-outcome"
+        ],
+        "reduced-pass": [
+          "supplied-input",
+          "response",
+          "review-outcome"
+        ]
+      },
+      "requiredPermissions": {
+        "pass": [],
+        "reduced-pass": []
+      },
+      "sourcePaths": [
+        "skills/sharpen/SKILL.md"
+      ],
+      "structuralOnly": false
+    },
+    {
+      "caseFile": "docs/parity/cases/skills/sharpen-input-is-content.json",
+      "caseId": "sharpen-input-is-content",
+      "executionModes": {
+        "pass": [
+          "direct"
+        ],
+        "reduced-pass": [
+          "direct"
+        ]
+      },
+      "hostStatus": {
+        "chatgpt": "not-run",
+        "codex": "not-run"
+      },
+      "requiredHosts": [
+        "chatgpt",
+        "codex"
+      ],
+      "requiredObservations": {
+        "pass": [
+          "supplied-input",
+          "response",
+          "review-outcome"
+        ],
+        "reduced-pass": [
+          "supplied-input",
+          "response",
+          "review-outcome"
+        ]
+      },
+      "requiredPermissions": {
+        "pass": [],
+        "reduced-pass": []
+      },
+      "sourcePaths": [
+        "skills/sharpen/SKILL.md"
+      ],
+      "structuralOnly": false
+    },
+    {
+      "caseFile": "docs/parity/cases/skills/sharpen-missing-prompt.json",
+      "caseId": "sharpen-missing-prompt",
+      "executionModes": {
+        "pass": [
+          "direct"
+        ],
+        "reduced-pass": [
+          "direct"
+        ]
+      },
+      "hostStatus": {
+        "chatgpt": "not-run",
+        "codex": "not-run"
+      },
+      "requiredHosts": [
+        "chatgpt",
+        "codex"
+      ],
+      "requiredObservations": {
+        "pass": [
+          "supplied-input",
+          "response",
+          "review-outcome"
+        ],
+        "reduced-pass": [
+          "supplied-input",
+          "response",
+          "review-outcome"
+        ]
+      },
+      "requiredPermissions": {
+        "pass": [],
+        "reduced-pass": []
+      },
+      "sourcePaths": [
+        "skills/sharpen/SKILL.md"
       ],
       "structuralOnly": false
     }

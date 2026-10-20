@@ -87,7 +87,7 @@ The following statuses come from the current parity inventory. Pending aggregate
 
 Destination: [skills/maintain-formal-verification-skill/SKILL.md](../../skills/maintain-formal-verification-skill/SKILL.md).
 
-Upstream commit: `d457567332aa6989e753ea289f30ea2bfbc80bc0`. SHA-256: `0c96f54293542d3818b68754562b338073958781a9684454611dca37592e2d2c`.
+Upstream commit: `88d47514b82e7c44f00f2b2a72ff6dd12158038c`. SHA-256: `0c96f54293542d3818b68754562b338073958781a9684454611dca37592e2d2c`.
 
 Disposition: `runtime`. Aggregate adaptation status: `adapted-reviewed`.
 

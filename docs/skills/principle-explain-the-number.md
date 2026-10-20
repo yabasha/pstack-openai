@@ -83,7 +83,7 @@ The following statuses come from the current parity inventory. Pending aggregate
 
 Destination: [skills/principle-explain-the-number/SKILL.md](../../skills/principle-explain-the-number/SKILL.md).
 
-Upstream commit: `d457567332aa6989e753ea289f30ea2bfbc80bc0`. SHA-256: `cd5a25f9e7cf023627ccb470dc5faa97542f29b4319496a32b839a8e1e988047`.
+Upstream commit: `88d47514b82e7c44f00f2b2a72ff6dd12158038c`. SHA-256: `cd5a25f9e7cf023627ccb470dc5faa97542f29b4319496a32b839a8e1e988047`.
 
 Disposition: `runtime`. Aggregate adaptation status: `adapted-reviewed`.
 

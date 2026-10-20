@@ -1,5 +1,5 @@
 {
-  "auditedPackageCommit": "29b27f67fabc1859b5a29d715010f472645c0dc0",
+  "auditedPackageCommit": "7e4e3454813408edbaf07f50493441725b06a3ef",
   "counts": {
     "files": 172,
     "playbooks": 23,
@@ -1504,7 +1504,7 @@
         }
       ],
       "sourcePath": ".cursor-plugin/plugin.json",
-      "sourceSha256": "884a2b21bd0cee611e6f469d139f33a0d2eb0be67d9f4ee388c683434ad995df"
+      "sourceSha256": "079de0bc2c331df98ecf388b84c938a3a61910f49a1cc37e680d9e2ca9bcd324"
     },
     {
       "dependencyIds": [
@@ -1568,7 +1568,7 @@
         "repository-access"
       ],
       "destinationPath": "README.md",
-      "destinationSha256": "50f5347312173d6b819a7a98c0268ba02661a0d1997fc8ec46821331c435b2ed",
+      "destinationSha256": "2cd36095564c8ed1338291394de6bc5c3744e836a09e098ad17cce731d5c8095",
       "kind": "support",
       "packageDependencies": [
         "UPSTREAM.md",
@@ -1673,7 +1673,7 @@
         }
       ],
       "sourcePath": "README.md",
-      "sourceSha256": "90de91beb5655913705e0107740b0b4c735032c53582a3ceaae7c007530047fd"
+      "sourceSha256": "b928886260bd551b0c8f3e58617a5dc3ad8dfc1293d096b1ef81b84007532486"
     },
     {
       "dependencyIds": [
@@ -3247,7 +3247,7 @@
         "history-persistence"
       ],
       "destinationPath": "docs/guide/02-poteto-mode.md",
-      "destinationSha256": "8d24f59020690ee4f426455921a132201a8d6296de1139a02dfe71e46a5da36f",
+      "destinationSha256": "ae11258ba7163be1fe3deda580aadd074c86abc29236ad19e2729c58d0720732",
       "kind": "support",
       "packageDependencies": [
         "LICENSE",
@@ -3281,7 +3281,7 @@
         }
       ],
       "sourcePath": "docs/guide/02-poteto-mode.md",
-      "sourceSha256": "1a0a5b9c88bf325f108cfda3b81b38c7eb936f6b30a2d2bb651d834a5c8dac2a"
+      "sourceSha256": "d168829def6c410b1afd87d1a6eb297df385f89faa9b31260684074e9e4eb52a"
     },
     {
       "dependencyIds": [
@@ -3750,7 +3750,7 @@
         "example-controls"
       ],
       "destinationPath": "docs/guide/10-recipes-and-pitfalls.md",
-      "destinationSha256": "59a156857a119b7ae812f47bbd1014466a76700d56b6c6d0bf54319b4b70c670",
+      "destinationSha256": "6a2c12f1e926d515e7f0f29d654f6a29043e8e7a8d0a12d19621578186a45338",
       "kind": "support",
       "packageDependencies": [
         "LICENSE",
@@ -3796,7 +3796,7 @@
         }
       ],
       "sourcePath": "docs/guide/10-recipes-and-pitfalls.md",
-      "sourceSha256": "1a583bad627b61e4ec4f996acdb1bc4772e0fad4d6c8769c9787dfd157396f47"
+      "sourceSha256": "006d8282db567aeae57398d5de1f3a802af2e3ac1a1f564198c384183fca3f92"
     },
     {
       "dependencyIds": [
@@ -3912,12 +3912,12 @@
     {
       "dependencyIds": [],
       "destinationPath": "references/upstream-metadata/plugin.json",
-      "destinationSha256": "ce66690a6352aa6b28b2f9b184125f37be43958fed97e27ff630ac845354b734",
+      "destinationSha256": "8a5811042556a0a981e9fdd08a2c726be76458833d64b484acaa611291308c2a",
       "kind": "support",
       "packageDependencies": [],
       "references": [],
       "sourcePath": "plugin.json",
-      "sourceSha256": "ce66690a6352aa6b28b2f9b184125f37be43958fed97e27ff630ac845354b734"
+      "sourceSha256": "8a5811042556a0a981e9fdd08a2c726be76458833d64b484acaa611291308c2a"
     },
     {
       "dependencyIds": [
@@ -4910,7 +4910,7 @@
         "example-controls"
       ],
       "destinationPath": "skills/poteto-help/SKILL.md",
-      "destinationSha256": "cdc8910f127471ac42295c1db39765fdae3dca524cb34fae94f2e24c971f78a4",
+      "destinationSha256": "8e6a2147ca9a72ca2e64b8f4d4af702edc0bab3c8073f80aa5af3566897d1609",
       "kind": "root-skill",
       "packageDependencies": [
         "skills/poteto-mode/SKILL.md",
@@ -5013,7 +5013,7 @@
         }
       ],
       "sourcePath": "skills/poteto-help/SKILL.md",
-      "sourceSha256": "e0938291e8b82db4f8d35bdbb0ac3ae2a4c76fcb3607f91a4cc7aabfff3a4823"
+      "sourceSha256": "67c77ee5e91c19809b01d08cc73cc2870a52fb95fc64dc33328bf8ff9e49891c"
     },
     {
       "dependencyIds": [
@@ -5060,7 +5060,7 @@
         "example-controls"
       ],
       "destinationPath": "skills/poteto-help/references/recipes.md",
-      "destinationSha256": "cc520bb1877f688c26b919b0f81b994a50626ef3a2b0d226444791b30d2a012d",
+      "destinationSha256": "1a20a050a0e6e39c2895732ec7971fc8ceae579c3217de994fc072f43f15a06c",
       "kind": "support",
       "packageDependencies": [
         "references/host-capabilities.md",
@@ -5084,7 +5084,7 @@
         }
       ],
       "sourcePath": "skills/poteto-help/references/recipes.md",
-      "sourceSha256": "a69696c4496bed3e852e7c4527071989e2e6d99937ba7f984ed188eb8dd8aff0"
+      "sourceSha256": "f2d573014f72f7c798b1998b45f4360a8a83e7b8026c4ed9074e56c5a9d49338"
     },
     {
       "dependencyIds": [
@@ -9256,14 +9256,14 @@
     {
       "dependencyIds": [],
       "destinationPath": "skills/sharpen/SKILL.md",
-      "destinationSha256": "84c6a515289cdd70d35fa2173616e5b169f836c2fb304ab9f3b92e231a6e5bb4",
+      "destinationSha256": "717b4703eb1367cdb50137b0cd2b02a39f61f71a332e8066f3818728b25ae6d4",
       "kind": "root-skill",
       "packageDependencies": [
         "references/host-capabilities.md"
       ],
       "references": [],
       "sourcePath": "skills/sharpen/SKILL.md",
-      "sourceSha256": "d895695fcc29b832bf118b842c1d7cf356a69622d63c9d49b40a0c97d8496c80"
+      "sourceSha256": "563dfc460c605d311e650726288e2f1cbd61eab817db178d6e7e29643e07e7a2"
     },
     {
       "dependencyIds": [
@@ -10184,5 +10184,5 @@
       "sourceSha256": "0c96f54293542d3818b68754562b338073958781a9684454611dca37592e2d2c"
     }
   ],
-  "sourceCommit": "d457567332aa6989e753ea289f30ea2bfbc80bc0"
+  "sourceCommit": "88d47514b82e7c44f00f2b2a72ff6dd12158038c"
 }

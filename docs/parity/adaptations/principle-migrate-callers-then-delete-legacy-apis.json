@@ -12,7 +12,7 @@
       "sourcePath": "LICENSE"
     },
     "rationale": "Reviewed upstream editorial update; retain portable identity for README and host capability boundaries for adapted skills.",
-    "upstreamCommit": "d457567332aa6989e753ea289f30ea2bfbc80bc0",
+    "upstreamCommit": "88d47514b82e7c44f00f2b2a72ff6dd12158038c",
     "upstreamPath": "skills/principle-migrate-callers-then-delete-legacy-apis/SKILL.md",
     "upstreamSha256": "580ad9bb1a0994ecb924321ba49efc38a2f85c64e22c76fb133f57a78272a2e6",
     "verification": {

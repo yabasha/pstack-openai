@@ -77,7 +77,7 @@ The following statuses come from the current parity inventory. Pending aggregate
 
 Destination: [skills/principle-make-operations-idempotent/SKILL.md](../../skills/principle-make-operations-idempotent/SKILL.md).
 
-Upstream commit: `d457567332aa6989e753ea289f30ea2bfbc80bc0`. SHA-256: `7aa9327cf1f1aa057e95d47a0a78bd88a8f9d556b608866fee939d455a53a019`.
+Upstream commit: `88d47514b82e7c44f00f2b2a72ff6dd12158038c`. SHA-256: `7aa9327cf1f1aa057e95d47a0a78bd88a8f9d556b608866fee939d455a53a019`.
 
 Disposition: `runtime`. Aggregate adaptation status: `adapted-reviewed`.
 

@@ -10,7 +10,7 @@
       "sourcePath": "LICENSE"
     },
     "rationale": "Refresh quoted upstream Claude adapter as reference-only; do not transfer skip, model, worktree or configuration semantics into runtime.",
-    "upstreamCommit": "d457567332aa6989e753ea289f30ea2bfbc80bc0",
+    "upstreamCommit": "88d47514b82e7c44f00f2b2a72ff6dd12158038c",
     "upstreamPath": "docs/harness/claude-code.md",
     "upstreamSha256": "c79e2283d3a83c6be3dd1cac33f9c074067c95e610ae6e0a16d9fdee84058927",
     "verification": {

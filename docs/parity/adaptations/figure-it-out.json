@@ -25,7 +25,7 @@
       "sourcePath": "LICENSE"
     },
     "rationale": "Retain reviewed host capability, assignment, ownership and model-selection adaptations; upstream changes are editorial or introduce Cursor-specific delegation controls.",
-    "upstreamCommit": "d457567332aa6989e753ea289f30ea2bfbc80bc0",
+    "upstreamCommit": "88d47514b82e7c44f00f2b2a72ff6dd12158038c",
     "upstreamPath": "skills/figure-it-out/SKILL.md",
     "upstreamSha256": "bdb23cdbd82a1e6af094b495691c832a6f7f3ab9706ba9edbeb664ef51a726e1",
     "verification": {

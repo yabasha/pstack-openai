@@ -915,7 +915,7 @@
     "path": "UPSTREAM.md",
     "rationale": "Explicit quoted upstream source identity or Claude-only source reference; it supplies no current host binding.",
     "reviewed": true,
-    "sha256": "af2498a48f88f967003da210f41bc852d6dd7105aa280a8297bd9a1ef487329f",
+    "sha256": "52e7c0d66fdfb1972724ac72b913da0862964db3852c64ac3e0060c818734764",
     "startLine": 23,
     "token": ".cursor-plugin/plugin.json"
   },
@@ -1063,9 +1063,9 @@
     "endLine": 9,
     "kind": "source-only",
     "path": "docs/parity/support-map.md",
-    "rationale": "Quoted canonical metadata identity only; no host binding.",
+    "rationale": "Quoted canonical source identity only; not a host binding.",
     "reviewed": true,
-    "sha256": "add7d21cc513499f8141066c23ad1b9b7797bacd941468045560aca4f6ea51fb",
+    "sha256": "e47b57ff4d703f354f4f639a652202fbc1c0b0ca1c7637a76cbf7016a882e99f",
     "startLine": 9,
     "token": ".cursor-plugin/plugin.json"
   },
@@ -1073,9 +1073,9 @@
     "endLine": 48,
     "kind": "source-only",
     "path": "docs/parity/support-map.md",
-    "rationale": "Quoted canonical metadata identity only; no host binding.",
+    "rationale": "Quoted canonical source identity only; not a host binding.",
     "reviewed": true,
-    "sha256": "add7d21cc513499f8141066c23ad1b9b7797bacd941468045560aca4f6ea51fb",
+    "sha256": "e47b57ff4d703f354f4f639a652202fbc1c0b0ca1c7637a76cbf7016a882e99f",
     "startLine": 48,
     "token": "claude-code.md"
   },
@@ -1083,9 +1083,9 @@
     "endLine": 48,
     "kind": "source-only",
     "path": "docs/parity/support-map.md",
-    "rationale": "Quoted canonical metadata identity only; no host binding.",
+    "rationale": "Quoted canonical source identity only; not a host binding.",
     "reviewed": true,
-    "sha256": "add7d21cc513499f8141066c23ad1b9b7797bacd941468045560aca4f6ea51fb",
+    "sha256": "e47b57ff4d703f354f4f639a652202fbc1c0b0ca1c7637a76cbf7016a882e99f",
     "startLine": 48,
     "token": "claude-code.md](../../docs/harness/claude-code.md"
   }

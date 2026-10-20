@@ -1,0 +1,46 @@
+{
+  "accepted": false,
+  "acceptedBaseline": {
+    "canonicalManifestSha256": "b28816da61e6844890b7cf41ae9597c854e39332818dad6abc9cae9f0167c437",
+    "commit": "182f2ce414e83224915c190d2f63239c1608d0a5",
+    "manifestPath": "docs/parity/upstream-manifests/182f2ce414e83224915c190d2f63239c1608d0a5.json",
+    "manifestSha256": "110d4ea749f9dfa5eb69a4978ed125765218492764198b4de1020976ea962384",
+    "receipt": {
+      "commit": "182f2ce414e83224915c190d2f63239c1608d0a5",
+      "evidencePath": "docs/releases/0.2.2.md",
+      "evidenceSha256": "5780e374f94a8ce6982107252d4aed1c1a142e58d2f635e0944c3d6ef9d88bbf",
+      "kind": "pstack-accepted-baseline",
+      "manifestPath": "docs/parity/upstream-manifests/182f2ce414e83224915c190d2f63239c1608d0a5.json",
+      "manifestSha256": "110d4ea749f9dfa5eb69a4978ed125765218492764198b4de1020976ea962384",
+      "packageCommit": "a254a54cb716511d7438520fcb38fa693108edba",
+      "schemaVersion": 1
+    },
+    "receiptSha256": "f4feb12f1a8053319e5bd46af6cc7bac367333137799016a839578d0610a6639"
+  },
+  "archiveSha256": "df98989c5e6b3128ce3633eb68b4e31a79aabfe415c79d5e37f9b4906f94d2d9",
+  "candidateSource": "88d47514b82e7c44f00f2b2a72ff6dd12158038c",
+  "candidateVersion": "0.2.3",
+  "changedCanonicalFiles": [
+    ".cursor-plugin/plugin.json",
+    "README.md",
+    "docs/guide/02-poteto-mode.md",
+    "docs/guide/10-recipes-and-pitfalls.md",
+    "plugin.json",
+    "skills/poteto-help/SKILL.md",
+    "skills/poteto-help/references/recipes.md",
+    "skills/sharpen/SKILL.md"
+  ],
+  "checks": {
+    "hostWorkflows": {
+      "chatgpt": "not-run",
+      "codex": "not-run"
+    }
+  },
+  "fullUpdaterApplyInvoked": false,
+  "kind": "pstack-unaccepted-candidate-amendment",
+  "manifestSha256": "662f61ecc4a0d8cc513f2a1e6d4a06a4f4364c49dd483d9b1fec5993bdd50344",
+  "packageCommit": "7e4e3454813408edbaf07f50493441725b06a3ef",
+  "previousSource": "d457567332aa6989e753ea289f30ea2bfbc80bc0",
+  "refreshed": false,
+  "schemaVersion": 1
+}

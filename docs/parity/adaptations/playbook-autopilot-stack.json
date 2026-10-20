@@ -28,7 +28,7 @@
       "sourcePath": "LICENSE"
     },
     "rationale": "Adopt dependency branching, root-only topology, explicit lease handoff, shared review cadence, frozen landing chain and ketchup without granting merge authority.",
-    "upstreamCommit": "d457567332aa6989e753ea289f30ea2bfbc80bc0",
+    "upstreamCommit": "88d47514b82e7c44f00f2b2a72ff6dd12158038c",
     "upstreamPath": "skills/poteto-mode/playbooks/autopilot-stack.md",
     "upstreamSha256": "c6bcb18b2ce605e77a2a2225854590a4b9a687911f79331746d91a4fe9a52e60",
     "verification": {

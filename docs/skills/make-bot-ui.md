@@ -85,7 +85,7 @@ The following statuses come from the current parity inventory. Pending aggregate
 
 Destination: [skills/make-bot-ui/SKILL.md](../../skills/make-bot-ui/SKILL.md).
 
-Upstream commit: `d457567332aa6989e753ea289f30ea2bfbc80bc0`. SHA-256: `ad19d0bc6764287ec08c2521701974e7dac941f72e4d0fe81a24f4614494586f`.
+Upstream commit: `88d47514b82e7c44f00f2b2a72ff6dd12158038c`. SHA-256: `ad19d0bc6764287ec08c2521701974e7dac941f72e4d0fe81a24f4614494586f`.
 
 Disposition: `runtime`. Aggregate adaptation status: `adapted-reviewed`.
 

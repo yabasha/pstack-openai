@@ -18,7 +18,7 @@
       "sourcePath": "LICENSE"
     },
     "rationale": "Preserve explicit-only clean stop and keep-going aliases, four atomic-boundary, no-irreversible-action, wip durability and off-context resume-note steps, existing trail routing and all reply fields. Bind stop, terminal inspection, quarantine, persistence and interrupted-action recovery to observed capabilities. Unknown stop retains ownership without competing writers; unknown side-effect completion blocks replay. Commits and external actions retain authorization and review gates. Host behavior remains untested.",
-    "upstreamCommit": "d457567332aa6989e753ea289f30ea2bfbc80bc0",
+    "upstreamCommit": "88d47514b82e7c44f00f2b2a72ff6dd12158038c",
     "upstreamPath": "skills/poteto-mode/playbooks/pause-safely.md",
     "upstreamSha256": "77968cfe5f4a71a8cd33e0ae8ffcdbd88dd693a212c240457773e6c40c96c21d",
     "verification": {

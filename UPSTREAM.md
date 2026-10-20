@@ -69,3 +69,7 @@ Port 0.2.2 accepts official pstack 0.15.25 at `182f2ce414e83224915c190d2f63239c1
 
 Candidate version 0.2.3. Archive SHA-256 aabcbe225ee504014ba4931908357889d9b34f28b0afb050ae84ad19f3daa101. Review SHA-256 45c2ce6d09b6bd414d878e3e9a801fc2dddba1d98a56f3184c04a941ab222954.
 The inventory stages this candidate. The accepted baseline above remains historical evidence. Structural checks, helper regression tests, and affected host cases must run before separate acceptance.
+
+## Unaccepted 0.2.3 amendment: PR #729
+
+Source `d457567332aa6989e753ea289f30ea2bfbc80bc0` is superseded for this unaccepted candidate by `88d47514b82e7c44f00f2b2a72ff6dd12158038c`, upstream 0.15.29. The package version remains 0.2.3. All 172 canonical files were archive/tree verified; archive SHA-256 `df98989c5e6b3128ce3633eb68b4e31a79aabfe415c79d5e37f9b4906f94d2d9`. Eight canonical files changed, with no membership change. Sharpen now returns expert framing and a rewrite, without executing the input task. The accepted receipt remains `182f2ce414e83224915c190d2f63239c1608d0a5`. This is an explicitly requested candidate amendment, not source acceptance, plugin refresh or another invocation of the full update apply command.

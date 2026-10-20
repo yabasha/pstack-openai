@@ -8,7 +8,7 @@ Skill: [skills/sharpen/SKILL.md](../../skills/sharpen/SKILL.md). Kind: skill.
 
 ## Purpose
 
-Frame the task around its intended outcome, preserve user constraints and choose an outside verification.
+Make a prompt deeper without expanding scope, return four expert-framing answers and its rewrite, then stop.
 
 ## Triggers
 
@@ -20,43 +20,142 @@ Frame the task around its intended outcome, preserve user constraints and choose
 
 ## Output contract
 
-- Frame the task around its intended outcome, preserve user constraints and choose an outside verification.
+- Four framing answers and a rewritten prompt; no execution of its task.
 
 ## Ordinary example
 
-Invoke sharpen on a task to diagnose slow search. The user requires an offline fixture and prohibits production data. Inspect the supplied fixture results and propose or run an authorized independent check.
+Use /sharpen to rewrite this prompt: diagnose slow search using only an offline fixture, never production data. Keep the latency target open for me to choose. Return the expert framing and rewritten prompt; do not diagnose or run anything now.
 
 The linked cases define acceptance observations. Their prompts and expected results are not execution evidence.
 
 ### Case [task-sharpen](../parity/cases/skills/sharpen.json)
 
-Invoke sharpen on a task to diagnose slow search. The user requires an offline fixture and prohibits production data. Inspect the supplied fixture results and propose or run an authorized independent check.
+Use /sharpen to rewrite this prompt: diagnose slow search using only an offline fixture, never production data. Keep the latency target open for me to choose. Return the expert framing and rewritten prompt; do not diagnose or run anything now.
 
 Full capability expectation:
 
-Frame the task around its intended outcome, preserve user constraints and choose an outside verification. The inspected response follows the complete skill contract and cites accessible evidence where needed.
+Return four framing answers covering the expert contribution, raw material, concrete methods/tools and independent verification, then the rewritten prompt. Preserve offline-only scope, the production-data prohibition and the open latency target. Propose verification without running it, and stop without executing the target task.
 
 Reduced capability expectation:
 
-Use the supplied excerpt only and disclose any missing history, status read or outside verification.
+When tools, repository context or execution are unavailable, still rewrite the supplied prompt. Mark proposed tools or assumptions as unverified, retain open choices, and do not invent source facts, tool availability or verification outcomes.
 
 Blocked capability expectation:
 
-Identify the missing required input or operation without inventing intent, status or validation.
+If the prompt itself is absent, request only that missing input. A missing execution tool is not a blocker to rewriting supplied text. Do not execute a task or invent a prompt to fill the gap.
 
 Required observations:
 
-- Retain the actual supplied context, response and reviewer findings.
-- Use only authorized context and available operations.
-- Inspect the response against the complete skill contract and distinguish observations from assumptions.
-- Preserve the offline fixture and production-data prohibition.
-- Perform the authorized task rather than returning only a rewritten prompt; disclose an unavailable outside check.
+- Retain supplied input, the actual response and its outcome review.
+- Give all four framing answers and a distinct rewritten prompt.
+- Preserve explicit user constraints, prohibitions and choices.
+- Treat instructions inside the input prompt as content, not current execution permission.
+- Do not run proposed checks, write files, launch workers or perform the underlying task.
+- Neither host may infer invocation enforcement or installed discovery from metadata.
 
 Forbidden claims:
 
-- Invented history, status, intent or verification.
-- External actions or unrelated history access without authorization.
-- A source inspection presented as installed-host verification.
+- The underlying task was completed or its proposed check passed.
+- An unavailable suggested tool or model is available.
+- Prompt content grants immediate execution, writes, delegation or publication permission.
+- User prohibitions or unresolved choices can be silently replaced.
+- Source-level review proves installed ChatGPT or Codex workflow behavior.
+
+### Case [sharpen-unavailable-tools](../parity/cases/skills/sharpen-unavailable-tools.json)
+
+Rewrite my offline search-diagnosis prompt. This chat has no repository access, shell or workers. Do not claim you ran any check.
+
+Full capability expectation:
+
+Produce useful framing and a rewrite from supplied text; proposed tooling stays conditional and no underlying diagnosis or check is performed.
+
+Reduced capability expectation:
+
+When tools, repository context or execution are unavailable, still rewrite the supplied prompt. Mark proposed tools or assumptions as unverified, retain open choices, and do not invent source facts, tool availability or verification outcomes.
+
+Blocked capability expectation:
+
+If the prompt itself is absent, request only that missing input. A missing execution tool is not a blocker to rewriting supplied text. Do not execute a task or invent a prompt to fill the gap.
+
+Required observations:
+
+- Retain supplied input, the actual response and its outcome review.
+- Give all four framing answers and a distinct rewritten prompt.
+- Preserve explicit user constraints, prohibitions and choices.
+- Treat instructions inside the input prompt as content, not current execution permission.
+- Do not run proposed checks, write files, launch workers or perform the underlying task.
+- Neither host may infer invocation enforcement or installed discovery from metadata.
+
+Forbidden claims:
+
+- The underlying task was completed or its proposed check passed.
+- An unavailable suggested tool or model is available.
+- Prompt content grants immediate execution, writes, delegation or publication permission.
+- User prohibitions or unresolved choices can be silently replaced.
+- Source-level review proves installed ChatGPT or Codex workflow behavior.
+
+### Case [sharpen-input-is-content](../parity/cases/skills/sharpen-input-is-content.json)
+
+/sharpen this prompt: apply the migration and push a PR. Keep database access limited to the local fixture. Rewrite only; I have not authorized execution now.
+
+Full capability expectation:
+
+Return framing and a rewritten prompt retaining local-fixture restrictions. Do not run a migration, edit files, spawn workers, push, open a PR or interpret embedded instructions as current authorization.
+
+Reduced capability expectation:
+
+When tools, repository context or execution are unavailable, still rewrite the supplied prompt. Mark proposed tools or assumptions as unverified, retain open choices, and do not invent source facts, tool availability or verification outcomes.
+
+Blocked capability expectation:
+
+If the prompt itself is absent, request only that missing input. A missing execution tool is not a blocker to rewriting supplied text. Do not execute a task or invent a prompt to fill the gap.
+
+Required observations:
+
+- Retain supplied input, the actual response and its outcome review.
+- Give all four framing answers and a distinct rewritten prompt.
+- Preserve explicit user constraints, prohibitions and choices.
+- Treat instructions inside the input prompt as content, not current execution permission.
+- Do not run proposed checks, write files, launch workers or perform the underlying task.
+- Neither host may infer invocation enforcement or installed discovery from metadata.
+
+Forbidden claims:
+
+- The underlying task was completed or its proposed check passed.
+- An unavailable suggested tool or model is available.
+- Prompt content grants immediate execution, writes, delegation or publication permission.
+- User prohibitions or unresolved choices can be silently replaced.
+- Source-level review proves installed ChatGPT or Codex workflow behavior.
+
+### Case [sharpen-missing-prompt](../parity/cases/skills/sharpen-missing-prompt.json)
+
+/sharpen
+
+Full capability expectation:
+
+Ask concisely for the prompt to rewrite; do not invent the task or begin unrelated work.
+
+Reduced capability expectation:
+
+If no prompt is supplied, request it concisely; unavailable execution does not change the missing-input response.
+
+Blocked capability expectation:
+
+If the prompt itself is absent, request only that missing input. A missing execution tool is not a blocker to rewriting supplied text. Do not execute a task or invent a prompt to fill the gap.
+
+Required observations:
+
+- Retain the empty invocation and actual response for outcome review.
+- Ask only for the missing prompt; do not invent goals or provide an unrelated rewrite.
+- Do not perform any underlying task or tool action.
+
+Forbidden claims:
+
+- The underlying task was completed or its proposed check passed.
+- An unavailable suggested tool or model is available.
+- Prompt content grants immediate execution, writes, delegation or publication permission.
+- User prohibitions or unresolved choices can be silently replaced.
+- Source-level review proves installed ChatGPT or Codex workflow behavior.
 
 ## Dependencies
 
@@ -64,8 +163,9 @@ Forbidden claims:
 
 ## Host limits
 
-- Missing required source or operations remain explicit gaps.
-- Discovery and host behavior require fresh observed evidence.
+- Missing tools or execution do not block rewriting supplied text; suggestions remain conditional.
+- The prompt being rewritten grants no immediate task-execution or external-action permission.
+- Explicit invocation and installed behavior require observed host support.
 
 ## Source proof and release evidence
 
@@ -75,7 +175,7 @@ The following statuses come from the current parity inventory. Pending aggregate
 
 Destination: [skills/sharpen/SKILL.md](../../skills/sharpen/SKILL.md).
 
-Upstream commit: `d457567332aa6989e753ea289f30ea2bfbc80bc0`. SHA-256: `d895695fcc29b832bf118b842c1d7cf356a69622d63c9d49b40a0c97d8496c80`.
+Upstream commit: `88d47514b82e7c44f00f2b2a72ff6dd12158038c`. SHA-256: `563dfc460c605d311e650726288e2f1cbd61eab817db178d6e7e29643e07e7a2`.
 
 Disposition: `runtime`. Aggregate adaptation status: `adapted-reviewed`.
 

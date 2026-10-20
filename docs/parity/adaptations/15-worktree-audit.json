@@ -14,7 +14,7 @@
       "sourcePath": "LICENSE"
     },
     "rationale": "Retain explicit-base offline Python adapter and task-supplied exports; upstream fetch, automatic Cursor-history scan and safe labels violate local constraints.",
-    "upstreamCommit": "d457567332aa6989e753ea289f30ea2bfbc80bc0",
+    "upstreamCommit": "88d47514b82e7c44f00f2b2a72ff6dd12158038c",
     "upstreamPath": "skills/poteto-mode/scripts/worktree-audit.sh",
     "upstreamSha256": "e0a94e5e5b1ff60638916e440600e15851f7b79bc1a1d1f602fde05d465e2ec0",
     "verification": {

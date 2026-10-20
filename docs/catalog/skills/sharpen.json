@@ -1,10 +1,14 @@
 {
   "capabilityLimits": [
-    "Missing required source or operations remain explicit gaps.",
-    "Discovery and host behavior require fresh observed evidence."
+    "Missing tools or execution do not block rewriting supplied text; suggestions remain conditional.",
+    "The prompt being rewritten grants no immediate task-execution or external-action permission.",
+    "Explicit invocation and installed behavior require observed host support."
   ],
   "caseIds": [
-    "task-sharpen"
+    "task-sharpen",
+    "sharpen-unavailable-tools",
+    "sharpen-input-is-content",
+    "sharpen-missing-prompt"
   ],
   "dependencies": [
     "references/host-capabilities.md"
@@ -14,11 +18,11 @@
   ],
   "kind": "skill",
   "name": "sharpen",
-  "ordinaryExample": "Invoke sharpen on a task to diagnose slow search. The user requires an offline fixture and prohibits production data. Inspect the supplied fixture results and propose or run an authorized independent check.",
+  "ordinaryExample": "Use /sharpen to rewrite this prompt: diagnose slow search using only an offline fixture, never production data. Keep the latency target open for me to choose. Return the expert framing and rewritten prompt; do not diagnose or run anything now.",
   "outputs": [
-    "Frame the task around its intended outcome, preserve user constraints and choose an outside verification."
+    "Four framing answers and a rewritten prompt; no execution of its task."
   ],
-  "purpose": "Frame the task around its intended outcome, preserve user constraints and choose an outside verification.",
+  "purpose": "Make a prompt deeper without expanding scope, return four expert-framing answers and its rewrite, then stop.",
   "sourcePaths": [
     "skills/sharpen/SKILL.md"
   ],

@@ -1,8 +1,8 @@
 # Source and support reconciliation
 
-The unaccepted candidate records 172 source files at `d457567332aa6989e753ea289f30ea2bfbc80bc0`, including 56 root skills, 24 principles and 23 playbooks. The accepted baseline remains 0.2.2. Source membership, installed discovery and host workflow qualification are separate.
+The unaccepted 0.2.3 candidate records 172 source files at `88d47514b82e7c44f00f2b2a72ff6dd12158038c`, upstream 0.15.29, including 56 root skills, 24 principles and 23 playbooks. The accepted baseline remains 0.2.2. Source membership, installed discovery and host workflow support are separate.
 
-The registry contains 114 cases. Both hosts remain not-run. No prior host observations transfer to this candidate.
+The registry contains 117 cases. Both hosts remain not-run. Prior installed observations do not transfer.
 
 ## Exact canonical source map
 
@@ -29,7 +29,7 @@ The registry contains 114 cases. Both hosts remain not-run. No prior host observ
 | `automations/benny/templates/reproduce-automation-prompt.md` | [automations/benny/templates/reproduce-automation-prompt.md](../../automations/benny/templates/reproduce-automation-prompt.md) | runtime / adapted-reviewed | [docs/parity/adaptations/benny.json](adaptations/benny.json) | `benny-duplicate-report`, `benny-existing-fix-ownership`, `benny-existing-pr`, `benny-missing-adapter`, `benny-missing-coordinates`, `benny-source-thread-compensation`, `benny-unsupported-trigger`, `benny-untrusted-marker` |
 | `automations/benny/templates/triage-automation-prompt.md` | [automations/benny/templates/triage-automation-prompt.md](../../automations/benny/templates/triage-automation-prompt.md) | runtime / adapted-reviewed | [docs/parity/adaptations/benny.json](adaptations/benny.json) | `benny-duplicate-report`, `benny-existing-fix-ownership`, `benny-existing-pr`, `benny-missing-adapter`, `benny-missing-coordinates`, `benny-source-thread-compensation`, `benny-unsupported-trigger`, `benny-untrusted-marker` |
 | `docs/guide/01-setup.md` | [docs/guide/01-setup.md](../../docs/guide/01-setup.md) | reference-only / reference-only-reviewed | [docs/parity/adaptations/guides.json](adaptations/guides.json) | `chatgpt-setup-from-readme`, `codex-setup-from-readme`, `guides-github-absent`, `guides-local-codex`, `guides-optional-setup-skipped`, `guides-ordinary-chatgpt`, `guides-worker-chatgpt` |
-| `docs/guide/02-poteto-mode.md` | [docs/guide/02-poteto-mode.md](../../docs/guide/02-poteto-mode.md) | reference-only / reference-only-reviewed | [docs/parity/adaptations/guides.json](adaptations/guides.json) | `guides-github-absent`, `guides-local-codex`, `guides-optional-setup-skipped`, `guides-ordinary-chatgpt`, `guides-worker-chatgpt` |
+| `docs/guide/02-poteto-mode.md` | [docs/guide/02-poteto-mode.md](../../docs/guide/02-poteto-mode.md) | reference-only / adapted-reviewed | [docs/parity/adaptations/guides.json](adaptations/guides.json) | `guides-github-absent`, `guides-local-codex`, `guides-optional-setup-skipped`, `guides-ordinary-chatgpt`, `guides-worker-chatgpt` |
 | `docs/guide/03-understand.md` | [docs/guide/03-understand.md](../../docs/guide/03-understand.md) | reference-only / reference-only-reviewed | [docs/parity/adaptations/guides.json](adaptations/guides.json) | `guides-github-absent`, `guides-local-codex`, `guides-optional-setup-skipped`, `guides-ordinary-chatgpt`, `guides-worker-chatgpt` |
 | `docs/guide/04-design.md` | [docs/guide/04-design.md](../../docs/guide/04-design.md) | reference-only / reference-only-reviewed | [docs/parity/adaptations/guides.json](adaptations/guides.json) | `guides-github-absent`, `guides-local-codex`, `guides-optional-setup-skipped`, `guides-ordinary-chatgpt`, `guides-worker-chatgpt` |
 | `docs/guide/05-build-and-clean.md` | [docs/guide/05-build-and-clean.md](../../docs/guide/05-build-and-clean.md) | reference-only / reference-only-reviewed | [docs/parity/adaptations/guides.json](adaptations/guides.json) | `guides-github-absent`, `guides-local-codex`, `guides-optional-setup-skipped`, `guides-ordinary-chatgpt`, `guides-worker-chatgpt` |
@@ -37,7 +37,7 @@ The registry contains 114 cases. Both hosts remain not-run. No prior host observ
 | `docs/guide/07-overnight.md` | [docs/guide/07-overnight.md](../../docs/guide/07-overnight.md) | reference-only / reference-only-reviewed | [docs/parity/adaptations/guides.json](adaptations/guides.json) | `guides-github-absent`, `guides-local-codex`, `guides-optional-setup-skipped`, `guides-ordinary-chatgpt`, `guides-worker-chatgpt` |
 | `docs/guide/08-principles.md` | [docs/guide/08-principles.md](../../docs/guide/08-principles.md) | reference-only / reference-only-reviewed | [docs/parity/adaptations/guides.json](adaptations/guides.json) | `guides-github-absent`, `guides-local-codex`, `guides-optional-setup-skipped`, `guides-ordinary-chatgpt`, `guides-worker-chatgpt` |
 | `docs/guide/09-make-it-yours.md` | [docs/guide/09-make-it-yours.md](../../docs/guide/09-make-it-yours.md) | reference-only / reference-only-reviewed | [docs/parity/adaptations/guides.json](adaptations/guides.json) | `guides-github-absent`, `guides-local-codex`, `guides-optional-setup-skipped`, `guides-ordinary-chatgpt`, `guides-worker-chatgpt` |
-| `docs/guide/10-recipes-and-pitfalls.md` | [docs/guide/10-recipes-and-pitfalls.md](../../docs/guide/10-recipes-and-pitfalls.md) | reference-only / reference-only-reviewed | [docs/parity/adaptations/guides.json](adaptations/guides.json) | `guides-github-absent`, `guides-local-codex`, `guides-optional-setup-skipped`, `guides-ordinary-chatgpt`, `guides-worker-chatgpt` |
+| `docs/guide/10-recipes-and-pitfalls.md` | [docs/guide/10-recipes-and-pitfalls.md](../../docs/guide/10-recipes-and-pitfalls.md) | reference-only / adapted-reviewed | [docs/parity/adaptations/guides.json](adaptations/guides.json) | `guides-github-absent`, `guides-local-codex`, `guides-optional-setup-skipped`, `guides-ordinary-chatgpt`, `guides-worker-chatgpt` |
 | `docs/guide/README.md` | [docs/guide/README.md](../../docs/guide/README.md) | reference-only / reference-only-reviewed | [docs/parity/adaptations/guides.json](adaptations/guides.json) | `guides-github-absent`, `guides-local-codex`, `guides-optional-setup-skipped`, `guides-ordinary-chatgpt`, `guides-worker-chatgpt` |
 | `docs/guide/images/design.jpg` | [docs/guide/images/design.jpg](../../docs/guide/images/design.jpg) | reference-only / unchanged-reviewed | [docs/parity/adaptations/guides.json](adaptations/guides.json) | `guides-github-absent`, `guides-local-codex`, `guides-optional-setup-skipped`, `guides-ordinary-chatgpt`, `guides-worker-chatgpt` |
 | `docs/guide/images/overnight.jpg` | [docs/guide/images/overnight.jpg](../../docs/guide/images/overnight.jpg) | reference-only / unchanged-reviewed | [docs/parity/adaptations/guides.json](adaptations/guides.json) | `guides-github-absent`, `guides-local-codex`, `guides-optional-setup-skipped`, `guides-ordinary-chatgpt`, `guides-worker-chatgpt` |
@@ -46,7 +46,7 @@ The registry contains 114 cases. Both hosts remain not-run. No prior host observ
 | `docs/guide/images/understanding.jpg` | [docs/guide/images/understanding.jpg](../../docs/guide/images/understanding.jpg) | reference-only / unchanged-reviewed | [docs/parity/adaptations/guides.json](adaptations/guides.json) | `guides-github-absent`, `guides-local-codex`, `guides-optional-setup-skipped`, `guides-ordinary-chatgpt`, `guides-worker-chatgpt` |
 | `docs/guide/images/verification.jpg` | [docs/guide/images/verification.jpg](../../docs/guide/images/verification.jpg) | reference-only / unchanged-reviewed | [docs/parity/adaptations/guides.json](adaptations/guides.json) | `guides-github-absent`, `guides-local-codex`, `guides-optional-setup-skipped`, `guides-ordinary-chatgpt`, `guides-worker-chatgpt` |
 > | `docs/harness/claude-code.md` | [docs/harness/claude-code.md](../../docs/harness/claude-code.md) | reference-only / reference-only-reviewed | [docs/parity/adaptations/harness-adapter.json](adaptations/harness-adapter.json) | `package-support-contracts` |
-| `plugin.json` | [references/upstream-metadata/plugin.json](../../references/upstream-metadata/plugin.json) | reference-only / reference-only-reviewed | [docs/parity/adaptations/update-0-2-0.json](adaptations/update-0-2-0.json) | `candidate-support-review` |
+| `plugin.json` | [references/upstream-metadata/plugin.json](../../references/upstream-metadata/plugin.json) | reference-only / adapted-reviewed | [docs/parity/adaptations/update-0-2-0.json](adaptations/update-0-2-0.json) | `candidate-support-review` |
 | `skills/architect/SKILL.md` | [skills/architect/SKILL.md](../../skills/architect/SKILL.md) | runtime / adapted-reviewed | [docs/parity/adaptations/architect.json](adaptations/architect.json) | `boundary-design`, `comparable-revisions`, `package-discovery`, `preserved-behavior`, `read-only-answer`, `reproduce-before-fix`, `throwaway-probe`, `verifiable-feature` |
 | `skills/architect/references/design-red-flags.md` | [skills/architect/references/design-red-flags.md](../../skills/architect/references/design-red-flags.md) | runtime / unchanged-reviewed | [docs/parity/adaptations/architect.json](adaptations/architect.json) | `boundary-design`, `comparable-revisions`, `preserved-behavior`, `reproduce-before-fix`, `throwaway-probe` |
 | `skills/architect/references/rationale-template.md` | [skills/architect/references/rationale-template.md](../../skills/architect/references/rationale-template.md) | runtime / unchanged-reviewed | [docs/parity/adaptations/architect.json](adaptations/architect.json) | `boundary-design`, `comparable-revisions`, `preserved-behavior`, `reproduce-before-fix`, `throwaway-probe`, `verifiable-feature` |
@@ -157,7 +157,7 @@ The registry contains 114 cases. Both hosts remain not-run. No prior host observ
 | `skills/reflect/references/synthesizer.md` | [skills/reflect/references/synthesizer.md](../../skills/reflect/references/synthesizer.md) | runtime / adapted-reviewed | [docs/parity/adaptations/reflect.json](adaptations/reflect.json) | `approval-before-edit` |
 | `skills/reflect/references/tooling-reviewer.md` | [skills/reflect/references/tooling-reviewer.md](../../skills/reflect/references/tooling-reviewer.md) | runtime / adapted-reviewed | [docs/parity/adaptations/reflect.json](adaptations/reflect.json) | `approval-before-edit` |
 | `skills/setup-pstack/SKILL.md` | [skills/setup-pstack/SKILL.md](../../skills/setup-pstack/SKILL.md) | runtime / adapted-reviewed | [docs/parity/adaptations/setup-pstack.json](adaptations/setup-pstack.json) | `package-discovery`, `unknown-model` |
-| `skills/sharpen/SKILL.md` | [skills/sharpen/SKILL.md](../../skills/sharpen/SKILL.md) | runtime / adapted-reviewed | [docs/parity/adaptations/update-0-2-0.json](adaptations/update-0-2-0.json) | `package-discovery`, `task-sharpen` |
+| `skills/sharpen/SKILL.md` | [skills/sharpen/SKILL.md](../../skills/sharpen/SKILL.md) | runtime / adapted-reviewed | [docs/parity/adaptations/update-0-2-0.json](adaptations/update-0-2-0.json) | `package-discovery`, `sharpen-input-is-content`, `sharpen-missing-prompt`, `sharpen-unavailable-tools`, `task-sharpen` |
 | `skills/show-me-your-work/SKILL.md` | [skills/show-me-your-work/SKILL.md](../../skills/show-me-your-work/SKILL.md) | runtime / adapted-reviewed | [docs/parity/adaptations/show-me-your-work.json](adaptations/show-me-your-work.json) | `authorized-program`, `bounded-improvement`, `decision-trail`, `interrupted-action`, `no-persistent-tool`, `package-discovery`, `stack-resume`, `unit-state`, `units-and-proof` |
 | `skills/show-me-your-work/references/decision-log-template.tsv` | [skills/show-me-your-work/references/decision-log-template.tsv](../../skills/show-me-your-work/references/decision-log-template.tsv) | runtime / unchanged-reviewed | [docs/parity/adaptations/show-me-your-work.json](adaptations/show-me-your-work.json) | `authorized-program`, `bounded-improvement`, `decision-trail`, `interrupted-action`, `no-persistent-tool`, `stack-resume`, `unit-state` |
 | `skills/show-me-your-work/scripts/log.sh` | [skills/show-me-your-work/scripts/log.sh](../../skills/show-me-your-work/scripts/log.sh) | runtime / adapted-reviewed | [docs/parity/adaptations/16-decision-log.json](adaptations/16-decision-log.json) | `authorized-program`, `bounded-improvement`, `decision-trail`, `interrupted-action`, `no-persistent-tool`, `stack-resume`, `unit-state` |
@@ -184,611 +184,616 @@ The registry contains 114 cases. Both hosts remain not-run. No prior host observ
 
 ## Additional port-file provenance
 
-These files are port-authored contracts, maintenance, tests or retained historical provenance. They supply no current host behavior evidence.
-
 | Path | Role |
 | --- | --- |
-| [NOTICE.md](../../NOTICE.md) | Port-authored contract, documentation, test or retained provenance |
-| [UPSTREAM.md](../../UPSTREAM.md) | Port-authored contract, documentation, test or retained provenance |
-| [docs/catalog/schema.json](../../docs/catalog/schema.json) | Port-authored contract, documentation, test or retained provenance |
-| [docs/catalog/skills/architect.json](../../docs/catalog/skills/architect.json) | Port-authored contract, documentation, test or retained provenance |
-| [docs/catalog/skills/arena.json](../../docs/catalog/skills/arena.json) | Port-authored contract, documentation, test or retained provenance |
-| [docs/catalog/skills/automate-me.json](../../docs/catalog/skills/automate-me.json) | Port-authored contract, documentation, test or retained provenance |
-| [docs/catalog/skills/benchmark-checklist.json](../../docs/catalog/skills/benchmark-checklist.json) | Port-authored contract, documentation, test or retained provenance |
-| [docs/catalog/skills/blast-radius.json](../../docs/catalog/skills/blast-radius.json) | Port-authored contract, documentation, test or retained provenance |
-| [docs/catalog/skills/bro.json](../../docs/catalog/skills/bro.json) | Port-authored contract, documentation, test or retained provenance |
-| [docs/catalog/skills/correct.json](../../docs/catalog/skills/correct.json) | Port-authored contract, documentation, test or retained provenance |
-| [docs/catalog/skills/create-formal-verification-skill.json](../../docs/catalog/skills/create-formal-verification-skill.json) | Port-authored contract, documentation, test or retained provenance |
-| [docs/catalog/skills/create-verification-skill.json](../../docs/catalog/skills/create-verification-skill.json) | Port-authored contract, documentation, test or retained provenance |
-| [docs/catalog/skills/figure-it-out.json](../../docs/catalog/skills/figure-it-out.json) | Port-authored contract, documentation, test or retained provenance |
-| [docs/catalog/skills/how.json](../../docs/catalog/skills/how.json) | Port-authored contract, documentation, test or retained provenance |
-| [docs/catalog/skills/in-your-own-words.json](../../docs/catalog/skills/in-your-own-words.json) | Port-authored contract, documentation, test or retained provenance |
-| [docs/catalog/skills/interrogate.json](../../docs/catalog/skills/interrogate.json) | Port-authored contract, documentation, test or retained provenance |
-| [docs/catalog/skills/ketchup.json](../../docs/catalog/skills/ketchup.json) | Port-authored contract, documentation, test or retained provenance |
-| [docs/catalog/skills/maintain-formal-verification-skill.json](../../docs/catalog/skills/maintain-formal-verification-skill.json) | Port-authored contract, documentation, test or retained provenance |
-| [docs/catalog/skills/maintain-verification-skill.json](../../docs/catalog/skills/maintain-verification-skill.json) | Port-authored contract, documentation, test or retained provenance |
-| [docs/catalog/skills/make-bot-ui.json](../../docs/catalog/skills/make-bot-ui.json) | Port-authored contract, documentation, test or retained provenance |
-| [docs/catalog/skills/no-comments.json](../../docs/catalog/skills/no-comments.json) | Port-authored contract, documentation, test or retained provenance |
-| [docs/catalog/skills/poteto-help.json](../../docs/catalog/skills/poteto-help.json) | Port-authored contract, documentation, test or retained provenance |
-| [docs/catalog/skills/poteto-mode.json](../../docs/catalog/skills/poteto-mode.json) | Port-authored contract, documentation, test or retained provenance |
-| [docs/catalog/skills/principle-attack-the-premise.json](../../docs/catalog/skills/principle-attack-the-premise.json) | Port-authored contract, documentation, test or retained provenance |
-| [docs/catalog/skills/principle-boundary-discipline.json](../../docs/catalog/skills/principle-boundary-discipline.json) | Port-authored contract, documentation, test or retained provenance |
-| [docs/catalog/skills/principle-build-the-lever.json](../../docs/catalog/skills/principle-build-the-lever.json) | Port-authored contract, documentation, test or retained provenance |
-| [docs/catalog/skills/principle-encode-lessons-in-structure.json](../../docs/catalog/skills/principle-encode-lessons-in-structure.json) | Port-authored contract, documentation, test or retained provenance |
-| [docs/catalog/skills/principle-exhaust-the-design-space.json](../../docs/catalog/skills/principle-exhaust-the-design-space.json) | Port-authored contract, documentation, test or retained provenance |
-| [docs/catalog/skills/principle-experience-first.json](../../docs/catalog/skills/principle-experience-first.json) | Port-authored contract, documentation, test or retained provenance |
-| [docs/catalog/skills/principle-explain-the-number.json](../../docs/catalog/skills/principle-explain-the-number.json) | Port-authored contract, documentation, test or retained provenance |
-| [docs/catalog/skills/principle-fix-root-causes.json](../../docs/catalog/skills/principle-fix-root-causes.json) | Port-authored contract, documentation, test or retained provenance |
-| [docs/catalog/skills/principle-foundational-thinking.json](../../docs/catalog/skills/principle-foundational-thinking.json) | Port-authored contract, documentation, test or retained provenance |
-| [docs/catalog/skills/principle-guard-the-context-window.json](../../docs/catalog/skills/principle-guard-the-context-window.json) | Port-authored contract, documentation, test or retained provenance |
-| [docs/catalog/skills/principle-laziness-protocol.json](../../docs/catalog/skills/principle-laziness-protocol.json) | Port-authored contract, documentation, test or retained provenance |
-| [docs/catalog/skills/principle-make-operations-idempotent.json](../../docs/catalog/skills/principle-make-operations-idempotent.json) | Port-authored contract, documentation, test or retained provenance |
-| [docs/catalog/skills/principle-migrate-callers-then-delete-legacy-apis.json](../../docs/catalog/skills/principle-migrate-callers-then-delete-legacy-apis.json) | Port-authored contract, documentation, test or retained provenance |
-| [docs/catalog/skills/principle-minimize-reader-load.json](../../docs/catalog/skills/principle-minimize-reader-load.json) | Port-authored contract, documentation, test or retained provenance |
-| [docs/catalog/skills/principle-model-the-domain.json](../../docs/catalog/skills/principle-model-the-domain.json) | Port-authored contract, documentation, test or retained provenance |
-| [docs/catalog/skills/principle-never-block-on-the-human.json](../../docs/catalog/skills/principle-never-block-on-the-human.json) | Port-authored contract, documentation, test or retained provenance |
-| [docs/catalog/skills/principle-outcome-oriented-execution.json](../../docs/catalog/skills/principle-outcome-oriented-execution.json) | Port-authored contract, documentation, test or retained provenance |
-| [docs/catalog/skills/principle-prove-it-works.json](../../docs/catalog/skills/principle-prove-it-works.json) | Port-authored contract, documentation, test or retained provenance |
-| [docs/catalog/skills/principle-redesign-from-first-principles.json](../../docs/catalog/skills/principle-redesign-from-first-principles.json) | Port-authored contract, documentation, test or retained provenance |
-| [docs/catalog/skills/principle-separate-before-serializing-shared-state.json](../../docs/catalog/skills/principle-separate-before-serializing-shared-state.json) | Port-authored contract, documentation, test or retained provenance |
-| [docs/catalog/skills/principle-sequence-verifiable-units.json](../../docs/catalog/skills/principle-sequence-verifiable-units.json) | Port-authored contract, documentation, test or retained provenance |
-| [docs/catalog/skills/principle-subtract-before-you-add.json](../../docs/catalog/skills/principle-subtract-before-you-add.json) | Port-authored contract, documentation, test or retained provenance |
-| [docs/catalog/skills/principle-test-behavior-not-implementation.json](../../docs/catalog/skills/principle-test-behavior-not-implementation.json) | Port-authored contract, documentation, test or retained provenance |
-| [docs/catalog/skills/principle-type-system-discipline.json](../../docs/catalog/skills/principle-type-system-discipline.json) | Port-authored contract, documentation, test or retained provenance |
-| [docs/catalog/skills/recall.json](../../docs/catalog/skills/recall.json) | Port-authored contract, documentation, test or retained provenance |
-| [docs/catalog/skills/reflect.json](../../docs/catalog/skills/reflect.json) | Port-authored contract, documentation, test or retained provenance |
-| [docs/catalog/skills/setup-pstack.json](../../docs/catalog/skills/setup-pstack.json) | Port-authored contract, documentation, test or retained provenance |
-| [docs/catalog/skills/sharpen.json](../../docs/catalog/skills/sharpen.json) | Port-authored contract, documentation, test or retained provenance |
-| [docs/catalog/skills/show-me-your-work.json](../../docs/catalog/skills/show-me-your-work.json) | Port-authored contract, documentation, test or retained provenance |
-| [docs/catalog/skills/swarm.json](../../docs/catalog/skills/swarm.json) | Port-authored contract, documentation, test or retained provenance |
-| [docs/catalog/skills/tdd.json](../../docs/catalog/skills/tdd.json) | Port-authored contract, documentation, test or retained provenance |
-| [docs/catalog/skills/teach.json](../../docs/catalog/skills/teach.json) | Port-authored contract, documentation, test or retained provenance |
-| [docs/catalog/skills/technical-writing.json](../../docs/catalog/skills/technical-writing.json) | Port-authored contract, documentation, test or retained provenance |
-| [docs/catalog/skills/typescript-best-practices.json](../../docs/catalog/skills/typescript-best-practices.json) | Port-authored contract, documentation, test or retained provenance |
-| [docs/catalog/skills/unslop.json](../../docs/catalog/skills/unslop.json) | Port-authored contract, documentation, test or retained provenance |
-| [docs/catalog/skills/why.json](../../docs/catalog/skills/why.json) | Port-authored contract, documentation, test or retained provenance |
-| [docs/compatibility.md](../../docs/compatibility.md) | Port-authored contract, documentation, test or retained provenance |
-| [docs/maintenance/customization-boundary.md](../../docs/maintenance/customization-boundary.md) | Port-authored contract, documentation, test or retained provenance |
-| [docs/maintenance/rollback.md](../../docs/maintenance/rollback.md) | Port-authored contract, documentation, test or retained provenance |
-| [docs/maintenance/update-resolutions.example.json](../../docs/maintenance/update-resolutions.example.json) | Port-authored contract, documentation, test or retained provenance |
-| [docs/maintenance/upstream-updates.md](../../docs/maintenance/upstream-updates.md) | Port-authored contract, documentation, test or retained provenance |
-| [docs/maintenance/wiki-publication.md](../../docs/maintenance/wiki-publication.md) | Port-authored contract, documentation, test or retained provenance |
-| [docs/parity/adaptations/02-manifest.json](../../docs/parity/adaptations/02-manifest.json) | Port-authored contract, documentation, test or retained provenance |
-| [docs/parity/adaptations/05-model-roles.json](../../docs/parity/adaptations/05-model-roles.json) | Port-authored contract, documentation, test or retained provenance |
-| [docs/parity/adaptations/12-bootstrap.json](../../docs/parity/adaptations/12-bootstrap.json) | Port-authored contract, documentation, test or retained provenance |
-| [docs/parity/adaptations/13-orch-bookkeeping.json](../../docs/parity/adaptations/13-orch-bookkeeping.json) | Port-authored contract, documentation, test or retained provenance |
-| [docs/parity/adaptations/14-watch-pr.json](../../docs/parity/adaptations/14-watch-pr.json) | Port-authored contract, documentation, test or retained provenance |
-| [docs/parity/adaptations/15-worktree-audit.json](../../docs/parity/adaptations/15-worktree-audit.json) | Port-authored contract, documentation, test or retained provenance |
-| [docs/parity/adaptations/16-decision-log.json](../../docs/parity/adaptations/16-decision-log.json) | Port-authored contract, documentation, test or retained provenance |
-| [docs/parity/adaptations/17-check-plan.json](../../docs/parity/adaptations/17-check-plan.json) | Port-authored contract, documentation, test or retained provenance |
-| [docs/parity/adaptations/24-metadata.json](../../docs/parity/adaptations/24-metadata.json) | Port-authored contract, documentation, test or retained provenance |
-| [docs/parity/adaptations/architect.json](../../docs/parity/adaptations/architect.json) | Port-authored contract, documentation, test or retained provenance |
-| [docs/parity/adaptations/arena.json](../../docs/parity/adaptations/arena.json) | Port-authored contract, documentation, test or retained provenance |
-| [docs/parity/adaptations/automate-me.json](../../docs/parity/adaptations/automate-me.json) | Port-authored contract, documentation, test or retained provenance |
-| [docs/parity/adaptations/benchmark-checklist.json](../../docs/parity/adaptations/benchmark-checklist.json) | Port-authored contract, documentation, test or retained provenance |
-| [docs/parity/adaptations/benny.json](../../docs/parity/adaptations/benny.json) | Port-authored contract, documentation, test or retained provenance |
-| [docs/parity/adaptations/blast-radius.json](../../docs/parity/adaptations/blast-radius.json) | Port-authored contract, documentation, test or retained provenance |
-| [docs/parity/adaptations/bro.json](../../docs/parity/adaptations/bro.json) | Port-authored contract, documentation, test or retained provenance |
-| [docs/parity/adaptations/correct.json](../../docs/parity/adaptations/correct.json) | Port-authored contract, documentation, test or retained provenance |
-| [docs/parity/adaptations/create-formal-verification-skill.json](../../docs/parity/adaptations/create-formal-verification-skill.json) | Port-authored contract, documentation, test or retained provenance |
-| [docs/parity/adaptations/create-verification-skill.json](../../docs/parity/adaptations/create-verification-skill.json) | Port-authored contract, documentation, test or retained provenance |
-| [docs/parity/adaptations/figure-it-out.json](../../docs/parity/adaptations/figure-it-out.json) | Port-authored contract, documentation, test or retained provenance |
-| [docs/parity/adaptations/guides.json](../../docs/parity/adaptations/guides.json) | Port-authored contract, documentation, test or retained provenance |
-| [docs/parity/adaptations/harness-adapter.json](../../docs/parity/adaptations/harness-adapter.json) | Port-authored contract, documentation, test or retained provenance |
-| [docs/parity/adaptations/how.json](../../docs/parity/adaptations/how.json) | Port-authored contract, documentation, test or retained provenance |
-| [docs/parity/adaptations/interrogate.json](../../docs/parity/adaptations/interrogate.json) | Port-authored contract, documentation, test or retained provenance |
-| [docs/parity/adaptations/maintain-formal-verification-skill.json](../../docs/parity/adaptations/maintain-formal-verification-skill.json) | Port-authored contract, documentation, test or retained provenance |
-| [docs/parity/adaptations/maintain-verification-skill.json](../../docs/parity/adaptations/maintain-verification-skill.json) | Port-authored contract, documentation, test or retained provenance |
-| [docs/parity/adaptations/make-bot-ui.json](../../docs/parity/adaptations/make-bot-ui.json) | Port-authored contract, documentation, test or retained provenance |
-| [docs/parity/adaptations/no-comments.json](../../docs/parity/adaptations/no-comments.json) | Port-authored contract, documentation, test or retained provenance |
-| [docs/parity/adaptations/playbook-authoring-a-skill.json](../../docs/parity/adaptations/playbook-authoring-a-skill.json) | Port-authored contract, documentation, test or retained provenance |
-| [docs/parity/adaptations/playbook-autonomous-run.json](../../docs/parity/adaptations/playbook-autonomous-run.json) | Port-authored contract, documentation, test or retained provenance |
-| [docs/parity/adaptations/playbook-autopilot-full.json](../../docs/parity/adaptations/playbook-autopilot-full.json) | Port-authored contract, documentation, test or retained provenance |
-| [docs/parity/adaptations/playbook-autopilot-stack.json](../../docs/parity/adaptations/playbook-autopilot-stack.json) | Port-authored contract, documentation, test or retained provenance |
-| [docs/parity/adaptations/playbook-babysit.json](../../docs/parity/adaptations/playbook-babysit.json) | Port-authored contract, documentation, test or retained provenance |
-| [docs/parity/adaptations/playbook-bug-fix.json](../../docs/parity/adaptations/playbook-bug-fix.json) | Port-authored contract, documentation, test or retained provenance |
-| [docs/parity/adaptations/playbook-eval.json](../../docs/parity/adaptations/playbook-eval.json) | Port-authored contract, documentation, test or retained provenance |
-| [docs/parity/adaptations/playbook-feature.json](../../docs/parity/adaptations/playbook-feature.json) | Port-authored contract, documentation, test or retained provenance |
-| [docs/parity/adaptations/playbook-hillclimb.json](../../docs/parity/adaptations/playbook-hillclimb.json) | Port-authored contract, documentation, test or retained provenance |
-| [docs/parity/adaptations/playbook-investigation.json](../../docs/parity/adaptations/playbook-investigation.json) | Port-authored contract, documentation, test or retained provenance |
-| [docs/parity/adaptations/playbook-multi-phase-plan.json](../../docs/parity/adaptations/playbook-multi-phase-plan.json) | Port-authored contract, documentation, test or retained provenance |
-| [docs/parity/adaptations/playbook-opening-a-pr.json](../../docs/parity/adaptations/playbook-opening-a-pr.json) | Port-authored contract, documentation, test or retained provenance |
-| [docs/parity/adaptations/playbook-orchestrate.json](../../docs/parity/adaptations/playbook-orchestrate.json) | Port-authored contract, documentation, test or retained provenance |
-| [docs/parity/adaptations/playbook-pause-safely.json](../../docs/parity/adaptations/playbook-pause-safely.json) | Port-authored contract, documentation, test or retained provenance |
-| [docs/parity/adaptations/playbook-perf-issue.json](../../docs/parity/adaptations/playbook-perf-issue.json) | Port-authored contract, documentation, test or retained provenance |
-| [docs/parity/adaptations/playbook-prototype.json](../../docs/parity/adaptations/playbook-prototype.json) | Port-authored contract, documentation, test or retained provenance |
-| [docs/parity/adaptations/playbook-refactoring.json](../../docs/parity/adaptations/playbook-refactoring.json) | Port-authored contract, documentation, test or retained provenance |
-| [docs/parity/adaptations/playbook-runtime-forensics.json](../../docs/parity/adaptations/playbook-runtime-forensics.json) | Port-authored contract, documentation, test or retained provenance |
-| [docs/parity/adaptations/playbook-session-pickup.json](../../docs/parity/adaptations/playbook-session-pickup.json) | Port-authored contract, documentation, test or retained provenance |
-| [docs/parity/adaptations/playbook-shipping.json](../../docs/parity/adaptations/playbook-shipping.json) | Port-authored contract, documentation, test or retained provenance |
-| [docs/parity/adaptations/playbook-trace-forensics.json](../../docs/parity/adaptations/playbook-trace-forensics.json) | Port-authored contract, documentation, test or retained provenance |
-| [docs/parity/adaptations/playbook-visual-parity.json](../../docs/parity/adaptations/playbook-visual-parity.json) | Port-authored contract, documentation, test or retained provenance |
-| [docs/parity/adaptations/playbook-worktree-cleanup.json](../../docs/parity/adaptations/playbook-worktree-cleanup.json) | Port-authored contract, documentation, test or retained provenance |
-| [docs/parity/adaptations/poteto-help.json](../../docs/parity/adaptations/poteto-help.json) | Port-authored contract, documentation, test or retained provenance |
-| [docs/parity/adaptations/poteto-mode.json](../../docs/parity/adaptations/poteto-mode.json) | Port-authored contract, documentation, test or retained provenance |
-| [docs/parity/adaptations/principle-attack-the-premise.json](../../docs/parity/adaptations/principle-attack-the-premise.json) | Port-authored contract, documentation, test or retained provenance |
-| [docs/parity/adaptations/principle-boundary-discipline.json](../../docs/parity/adaptations/principle-boundary-discipline.json) | Port-authored contract, documentation, test or retained provenance |
-| [docs/parity/adaptations/principle-build-the-lever.json](../../docs/parity/adaptations/principle-build-the-lever.json) | Port-authored contract, documentation, test or retained provenance |
-| [docs/parity/adaptations/principle-encode-lessons-in-structure.json](../../docs/parity/adaptations/principle-encode-lessons-in-structure.json) | Port-authored contract, documentation, test or retained provenance |
-| [docs/parity/adaptations/principle-exhaust-the-design-space.json](../../docs/parity/adaptations/principle-exhaust-the-design-space.json) | Port-authored contract, documentation, test or retained provenance |
-| [docs/parity/adaptations/principle-experience-first.json](../../docs/parity/adaptations/principle-experience-first.json) | Port-authored contract, documentation, test or retained provenance |
-| [docs/parity/adaptations/principle-explain-the-number.json](../../docs/parity/adaptations/principle-explain-the-number.json) | Port-authored contract, documentation, test or retained provenance |
-| [docs/parity/adaptations/principle-fix-root-causes.json](../../docs/parity/adaptations/principle-fix-root-causes.json) | Port-authored contract, documentation, test or retained provenance |
-| [docs/parity/adaptations/principle-foundational-thinking.json](../../docs/parity/adaptations/principle-foundational-thinking.json) | Port-authored contract, documentation, test or retained provenance |
-| [docs/parity/adaptations/principle-guard-the-context-window.json](../../docs/parity/adaptations/principle-guard-the-context-window.json) | Port-authored contract, documentation, test or retained provenance |
-| [docs/parity/adaptations/principle-laziness-protocol.json](../../docs/parity/adaptations/principle-laziness-protocol.json) | Port-authored contract, documentation, test or retained provenance |
-| [docs/parity/adaptations/principle-make-operations-idempotent.json](../../docs/parity/adaptations/principle-make-operations-idempotent.json) | Port-authored contract, documentation, test or retained provenance |
-| [docs/parity/adaptations/principle-migrate-callers-then-delete-legacy-apis.json](../../docs/parity/adaptations/principle-migrate-callers-then-delete-legacy-apis.json) | Port-authored contract, documentation, test or retained provenance |
-| [docs/parity/adaptations/principle-minimize-reader-load.json](../../docs/parity/adaptations/principle-minimize-reader-load.json) | Port-authored contract, documentation, test or retained provenance |
-| [docs/parity/adaptations/principle-model-the-domain.json](../../docs/parity/adaptations/principle-model-the-domain.json) | Port-authored contract, documentation, test or retained provenance |
-| [docs/parity/adaptations/principle-never-block-on-the-human.json](../../docs/parity/adaptations/principle-never-block-on-the-human.json) | Port-authored contract, documentation, test or retained provenance |
-| [docs/parity/adaptations/principle-outcome-oriented-execution.json](../../docs/parity/adaptations/principle-outcome-oriented-execution.json) | Port-authored contract, documentation, test or retained provenance |
-| [docs/parity/adaptations/principle-prove-it-works.json](../../docs/parity/adaptations/principle-prove-it-works.json) | Port-authored contract, documentation, test or retained provenance |
-| [docs/parity/adaptations/principle-redesign-from-first-principles.json](../../docs/parity/adaptations/principle-redesign-from-first-principles.json) | Port-authored contract, documentation, test or retained provenance |
-| [docs/parity/adaptations/principle-separate-before-serializing-shared-state.json](../../docs/parity/adaptations/principle-separate-before-serializing-shared-state.json) | Port-authored contract, documentation, test or retained provenance |
-| [docs/parity/adaptations/principle-sequence-verifiable-units.json](../../docs/parity/adaptations/principle-sequence-verifiable-units.json) | Port-authored contract, documentation, test or retained provenance |
-| [docs/parity/adaptations/principle-subtract-before-you-add.json](../../docs/parity/adaptations/principle-subtract-before-you-add.json) | Port-authored contract, documentation, test or retained provenance |
-| [docs/parity/adaptations/principle-test-behavior-not-implementation.json](../../docs/parity/adaptations/principle-test-behavior-not-implementation.json) | Port-authored contract, documentation, test or retained provenance |
-| [docs/parity/adaptations/principle-type-system-discipline.json](../../docs/parity/adaptations/principle-type-system-discipline.json) | Port-authored contract, documentation, test or retained provenance |
-| [docs/parity/adaptations/recall.json](../../docs/parity/adaptations/recall.json) | Port-authored contract, documentation, test or retained provenance |
-| [docs/parity/adaptations/reflect.json](../../docs/parity/adaptations/reflect.json) | Port-authored contract, documentation, test or retained provenance |
-| [docs/parity/adaptations/setup-pstack.json](../../docs/parity/adaptations/setup-pstack.json) | Port-authored contract, documentation, test or retained provenance |
-| [docs/parity/adaptations/show-me-your-work.json](../../docs/parity/adaptations/show-me-your-work.json) | Port-authored contract, documentation, test or retained provenance |
-| [docs/parity/adaptations/swarm.json](../../docs/parity/adaptations/swarm.json) | Port-authored contract, documentation, test or retained provenance |
-| [docs/parity/adaptations/tdd.json](../../docs/parity/adaptations/tdd.json) | Port-authored contract, documentation, test or retained provenance |
-| [docs/parity/adaptations/teach.json](../../docs/parity/adaptations/teach.json) | Port-authored contract, documentation, test or retained provenance |
-| [docs/parity/adaptations/technical-writing.json](../../docs/parity/adaptations/technical-writing.json) | Port-authored contract, documentation, test or retained provenance |
-| [docs/parity/adaptations/typescript-best-practices.json](../../docs/parity/adaptations/typescript-best-practices.json) | Port-authored contract, documentation, test or retained provenance |
-| [docs/parity/adaptations/unslop.json](../../docs/parity/adaptations/unslop.json) | Port-authored contract, documentation, test or retained provenance |
-| [docs/parity/adaptations/update-0-2-0.json](../../docs/parity/adaptations/update-0-2-0.json) | Port-authored contract, documentation, test or retained provenance |
-| [docs/parity/adaptations/why.json](../../docs/parity/adaptations/why.json) | Port-authored contract, documentation, test or retained provenance |
-| [docs/parity/baseline-paths.txt](../../docs/parity/baseline-paths.txt) | Port-authored contract, documentation, test or retained provenance |
-| [docs/parity/baseline-policy.json](../../docs/parity/baseline-policy.json) | Port-authored contract, documentation, test or retained provenance |
-| [docs/parity/case-registry.json](../../docs/parity/case-registry.json) | Port-authored contract, documentation, test or retained provenance |
-| [docs/parity/cases/README.md](../../docs/parity/cases/README.md) | Port-authored contract, documentation, test or retained provenance |
-| [docs/parity/cases/benny.json](../../docs/parity/cases/benny.json) | Port-authored contract, documentation, test or retained provenance |
-| [docs/parity/cases/candidate-support-review.json](../../docs/parity/cases/candidate-support-review.json) | Port-authored contract, documentation, test or retained provenance |
-| [docs/parity/cases/contracts.json](../../docs/parity/cases/contracts.json) | Port-authored contract, documentation, test or retained provenance |
-| [docs/parity/cases/dependencies.json](../../docs/parity/cases/dependencies.json) | Port-authored contract, documentation, test or retained provenance |
-| [docs/parity/cases/documentation-walkthroughs.json](../../docs/parity/cases/documentation-walkthroughs.json) | Port-authored contract, documentation, test or retained provenance |
-| [docs/parity/cases/guides.json](../../docs/parity/cases/guides.json) | Port-authored contract, documentation, test or retained provenance |
-| [docs/parity/cases/model-roles.json](../../docs/parity/cases/model-roles.json) | Port-authored contract, documentation, test or retained provenance |
-| [docs/parity/cases/package-discovery.json](../../docs/parity/cases/package-discovery.json) | Port-authored contract, documentation, test or retained provenance |
-| [docs/parity/cases/package-support.json](../../docs/parity/cases/package-support.json) | Port-authored contract, documentation, test or retained provenance |
-| [docs/parity/cases/playbooks/authoring-a-skill.json](../../docs/parity/cases/playbooks/authoring-a-skill.json) | Port-authored contract, documentation, test or retained provenance |
-| [docs/parity/cases/playbooks/autonomous-run.json](../../docs/parity/cases/playbooks/autonomous-run.json) | Port-authored contract, documentation, test or retained provenance |
-| [docs/parity/cases/playbooks/autopilot-full.json](../../docs/parity/cases/playbooks/autopilot-full.json) | Port-authored contract, documentation, test or retained provenance |
-| [docs/parity/cases/playbooks/autopilot-stack.json](../../docs/parity/cases/playbooks/autopilot-stack.json) | Port-authored contract, documentation, test or retained provenance |
-| [docs/parity/cases/playbooks/babysit.json](../../docs/parity/cases/playbooks/babysit.json) | Port-authored contract, documentation, test or retained provenance |
-| [docs/parity/cases/playbooks/bug-fix.json](../../docs/parity/cases/playbooks/bug-fix.json) | Port-authored contract, documentation, test or retained provenance |
-| [docs/parity/cases/playbooks/eval.json](../../docs/parity/cases/playbooks/eval.json) | Port-authored contract, documentation, test or retained provenance |
-| [docs/parity/cases/playbooks/feature.json](../../docs/parity/cases/playbooks/feature.json) | Port-authored contract, documentation, test or retained provenance |
-| [docs/parity/cases/playbooks/hillclimb.json](../../docs/parity/cases/playbooks/hillclimb.json) | Port-authored contract, documentation, test or retained provenance |
-| [docs/parity/cases/playbooks/investigation.json](../../docs/parity/cases/playbooks/investigation.json) | Port-authored contract, documentation, test or retained provenance |
-| [docs/parity/cases/playbooks/multi-phase-plan.json](../../docs/parity/cases/playbooks/multi-phase-plan.json) | Port-authored contract, documentation, test or retained provenance |
-| [docs/parity/cases/playbooks/opening-a-pr.json](../../docs/parity/cases/playbooks/opening-a-pr.json) | Port-authored contract, documentation, test or retained provenance |
-| [docs/parity/cases/playbooks/orchestrate.json](../../docs/parity/cases/playbooks/orchestrate.json) | Port-authored contract, documentation, test or retained provenance |
-| [docs/parity/cases/playbooks/pause-safely.json](../../docs/parity/cases/playbooks/pause-safely.json) | Port-authored contract, documentation, test or retained provenance |
-| [docs/parity/cases/playbooks/perf-issue.json](../../docs/parity/cases/playbooks/perf-issue.json) | Port-authored contract, documentation, test or retained provenance |
-| [docs/parity/cases/playbooks/prototype.json](../../docs/parity/cases/playbooks/prototype.json) | Port-authored contract, documentation, test or retained provenance |
-| [docs/parity/cases/playbooks/refactoring.json](../../docs/parity/cases/playbooks/refactoring.json) | Port-authored contract, documentation, test or retained provenance |
-| [docs/parity/cases/playbooks/runtime-forensics.json](../../docs/parity/cases/playbooks/runtime-forensics.json) | Port-authored contract, documentation, test or retained provenance |
-| [docs/parity/cases/playbooks/session-pickup.json](../../docs/parity/cases/playbooks/session-pickup.json) | Port-authored contract, documentation, test or retained provenance |
-| [docs/parity/cases/playbooks/shipping.json](../../docs/parity/cases/playbooks/shipping.json) | Port-authored contract, documentation, test or retained provenance |
-| [docs/parity/cases/playbooks/trace-forensics.json](../../docs/parity/cases/playbooks/trace-forensics.json) | Port-authored contract, documentation, test or retained provenance |
-| [docs/parity/cases/playbooks/visual-parity.json](../../docs/parity/cases/playbooks/visual-parity.json) | Port-authored contract, documentation, test or retained provenance |
-| [docs/parity/cases/playbooks/worktree-cleanup.json](../../docs/parity/cases/playbooks/worktree-cleanup.json) | Port-authored contract, documentation, test or retained provenance |
-| [docs/parity/cases/pstack-plan-format.json](../../docs/parity/cases/pstack-plan-format.json) | Port-authored contract, documentation, test or retained provenance |
-| [docs/parity/cases/schema.json](../../docs/parity/cases/schema.json) | Port-authored contract, documentation, test or retained provenance |
-| [docs/parity/cases/skills/architect.json](../../docs/parity/cases/skills/architect.json) | Port-authored contract, documentation, test or retained provenance |
-| [docs/parity/cases/skills/arena.json](../../docs/parity/cases/skills/arena.json) | Port-authored contract, documentation, test or retained provenance |
-| [docs/parity/cases/skills/automate-me.json](../../docs/parity/cases/skills/automate-me.json) | Port-authored contract, documentation, test or retained provenance |
-| [docs/parity/cases/skills/benchmark-checklist.json](../../docs/parity/cases/skills/benchmark-checklist.json) | Port-authored contract, documentation, test or retained provenance |
-| [docs/parity/cases/skills/blast-radius.json](../../docs/parity/cases/skills/blast-radius.json) | Port-authored contract, documentation, test or retained provenance |
-| [docs/parity/cases/skills/bro.json](../../docs/parity/cases/skills/bro.json) | Port-authored contract, documentation, test or retained provenance |
-| [docs/parity/cases/skills/correct.json](../../docs/parity/cases/skills/correct.json) | Port-authored contract, documentation, test or retained provenance |
-| [docs/parity/cases/skills/create-formal-verification-skill.json](../../docs/parity/cases/skills/create-formal-verification-skill.json) | Port-authored contract, documentation, test or retained provenance |
-| [docs/parity/cases/skills/create-verification-skill.json](../../docs/parity/cases/skills/create-verification-skill.json) | Port-authored contract, documentation, test or retained provenance |
-| [docs/parity/cases/skills/figure-it-out.json](../../docs/parity/cases/skills/figure-it-out.json) | Port-authored contract, documentation, test or retained provenance |
-| [docs/parity/cases/skills/how.json](../../docs/parity/cases/skills/how.json) | Port-authored contract, documentation, test or retained provenance |
-| [docs/parity/cases/skills/in-your-own-words.json](../../docs/parity/cases/skills/in-your-own-words.json) | Port-authored contract, documentation, test or retained provenance |
-| [docs/parity/cases/skills/interrogate.json](../../docs/parity/cases/skills/interrogate.json) | Port-authored contract, documentation, test or retained provenance |
-| [docs/parity/cases/skills/ketchup.json](../../docs/parity/cases/skills/ketchup.json) | Port-authored contract, documentation, test or retained provenance |
-| [docs/parity/cases/skills/maintain-formal-verification-skill.json](../../docs/parity/cases/skills/maintain-formal-verification-skill.json) | Port-authored contract, documentation, test or retained provenance |
-| [docs/parity/cases/skills/maintain-verification-skill.json](../../docs/parity/cases/skills/maintain-verification-skill.json) | Port-authored contract, documentation, test or retained provenance |
-| [docs/parity/cases/skills/make-bot-ui.json](../../docs/parity/cases/skills/make-bot-ui.json) | Port-authored contract, documentation, test or retained provenance |
-| [docs/parity/cases/skills/no-comments.json](../../docs/parity/cases/skills/no-comments.json) | Port-authored contract, documentation, test or retained provenance |
-| [docs/parity/cases/skills/poteto-help.json](../../docs/parity/cases/skills/poteto-help.json) | Port-authored contract, documentation, test or retained provenance |
-| [docs/parity/cases/skills/poteto-mode.json](../../docs/parity/cases/skills/poteto-mode.json) | Port-authored contract, documentation, test or retained provenance |
-| [docs/parity/cases/skills/principle-attack-the-premise.json](../../docs/parity/cases/skills/principle-attack-the-premise.json) | Port-authored contract, documentation, test or retained provenance |
-| [docs/parity/cases/skills/principle-boundary-discipline.json](../../docs/parity/cases/skills/principle-boundary-discipline.json) | Port-authored contract, documentation, test or retained provenance |
-| [docs/parity/cases/skills/principle-build-the-lever.json](../../docs/parity/cases/skills/principle-build-the-lever.json) | Port-authored contract, documentation, test or retained provenance |
-| [docs/parity/cases/skills/principle-encode-lessons-in-structure.json](../../docs/parity/cases/skills/principle-encode-lessons-in-structure.json) | Port-authored contract, documentation, test or retained provenance |
-| [docs/parity/cases/skills/principle-exhaust-the-design-space.json](../../docs/parity/cases/skills/principle-exhaust-the-design-space.json) | Port-authored contract, documentation, test or retained provenance |
-| [docs/parity/cases/skills/principle-experience-first.json](../../docs/parity/cases/skills/principle-experience-first.json) | Port-authored contract, documentation, test or retained provenance |
-| [docs/parity/cases/skills/principle-explain-the-number.json](../../docs/parity/cases/skills/principle-explain-the-number.json) | Port-authored contract, documentation, test or retained provenance |
-| [docs/parity/cases/skills/principle-fix-root-causes.json](../../docs/parity/cases/skills/principle-fix-root-causes.json) | Port-authored contract, documentation, test or retained provenance |
-| [docs/parity/cases/skills/principle-foundational-thinking.json](../../docs/parity/cases/skills/principle-foundational-thinking.json) | Port-authored contract, documentation, test or retained provenance |
-| [docs/parity/cases/skills/principle-guard-the-context-window.json](../../docs/parity/cases/skills/principle-guard-the-context-window.json) | Port-authored contract, documentation, test or retained provenance |
-| [docs/parity/cases/skills/principle-laziness-protocol.json](../../docs/parity/cases/skills/principle-laziness-protocol.json) | Port-authored contract, documentation, test or retained provenance |
-| [docs/parity/cases/skills/principle-make-operations-idempotent.json](../../docs/parity/cases/skills/principle-make-operations-idempotent.json) | Port-authored contract, documentation, test or retained provenance |
-| [docs/parity/cases/skills/principle-migrate-callers-then-delete-legacy-apis.json](../../docs/parity/cases/skills/principle-migrate-callers-then-delete-legacy-apis.json) | Port-authored contract, documentation, test or retained provenance |
-| [docs/parity/cases/skills/principle-minimize-reader-load.json](../../docs/parity/cases/skills/principle-minimize-reader-load.json) | Port-authored contract, documentation, test or retained provenance |
-| [docs/parity/cases/skills/principle-model-the-domain.json](../../docs/parity/cases/skills/principle-model-the-domain.json) | Port-authored contract, documentation, test or retained provenance |
-| [docs/parity/cases/skills/principle-never-block-on-the-human.json](../../docs/parity/cases/skills/principle-never-block-on-the-human.json) | Port-authored contract, documentation, test or retained provenance |
-| [docs/parity/cases/skills/principle-outcome-oriented-execution.json](../../docs/parity/cases/skills/principle-outcome-oriented-execution.json) | Port-authored contract, documentation, test or retained provenance |
-| [docs/parity/cases/skills/principle-prove-it-works.json](../../docs/parity/cases/skills/principle-prove-it-works.json) | Port-authored contract, documentation, test or retained provenance |
-| [docs/parity/cases/skills/principle-redesign-from-first-principles.json](../../docs/parity/cases/skills/principle-redesign-from-first-principles.json) | Port-authored contract, documentation, test or retained provenance |
-| [docs/parity/cases/skills/principle-separate-before-serializing-shared-state.json](../../docs/parity/cases/skills/principle-separate-before-serializing-shared-state.json) | Port-authored contract, documentation, test or retained provenance |
-| [docs/parity/cases/skills/principle-sequence-verifiable-units.json](../../docs/parity/cases/skills/principle-sequence-verifiable-units.json) | Port-authored contract, documentation, test or retained provenance |
-| [docs/parity/cases/skills/principle-subtract-before-you-add.json](../../docs/parity/cases/skills/principle-subtract-before-you-add.json) | Port-authored contract, documentation, test or retained provenance |
-| [docs/parity/cases/skills/principle-test-behavior-not-implementation.json](../../docs/parity/cases/skills/principle-test-behavior-not-implementation.json) | Port-authored contract, documentation, test or retained provenance |
-| [docs/parity/cases/skills/principle-type-system-discipline.json](../../docs/parity/cases/skills/principle-type-system-discipline.json) | Port-authored contract, documentation, test or retained provenance |
-| [docs/parity/cases/skills/recall.json](../../docs/parity/cases/skills/recall.json) | Port-authored contract, documentation, test or retained provenance |
-| [docs/parity/cases/skills/reflect.json](../../docs/parity/cases/skills/reflect.json) | Port-authored contract, documentation, test or retained provenance |
-| [docs/parity/cases/skills/setup-pstack.json](../../docs/parity/cases/skills/setup-pstack.json) | Port-authored contract, documentation, test or retained provenance |
-| [docs/parity/cases/skills/sharpen.json](../../docs/parity/cases/skills/sharpen.json) | Port-authored contract, documentation, test or retained provenance |
-| [docs/parity/cases/skills/show-me-your-work.json](../../docs/parity/cases/skills/show-me-your-work.json) | Port-authored contract, documentation, test or retained provenance |
-| [docs/parity/cases/skills/swarm.json](../../docs/parity/cases/skills/swarm.json) | Port-authored contract, documentation, test or retained provenance |
-| [docs/parity/cases/skills/tdd.json](../../docs/parity/cases/skills/tdd.json) | Port-authored contract, documentation, test or retained provenance |
-| [docs/parity/cases/skills/teach.json](../../docs/parity/cases/skills/teach.json) | Port-authored contract, documentation, test or retained provenance |
-| [docs/parity/cases/skills/technical-writing.json](../../docs/parity/cases/skills/technical-writing.json) | Port-authored contract, documentation, test or retained provenance |
-| [docs/parity/cases/skills/typescript-best-practices.json](../../docs/parity/cases/skills/typescript-best-practices.json) | Port-authored contract, documentation, test or retained provenance |
-| [docs/parity/cases/skills/unslop.json](../../docs/parity/cases/skills/unslop.json) | Port-authored contract, documentation, test or retained provenance |
-| [docs/parity/cases/skills/why.json](../../docs/parity/cases/skills/why.json) | Port-authored contract, documentation, test or retained provenance |
-| [docs/parity/cases/upstream-update.json](../../docs/parity/cases/upstream-update.json) | Port-authored contract, documentation, test or retained provenance |
-| [docs/parity/dependencies.json](../../docs/parity/dependencies.json) | Port-authored contract, documentation, test or retained provenance |
-| [docs/parity/evidence.schema.json](../../docs/parity/evidence.schema.json) | Port-authored contract, documentation, test or retained provenance |
-| [docs/parity/evidence/chatgpt/absent-workers.json](../../docs/parity/evidence/chatgpt/absent-workers.json) | Port-authored contract, documentation, test or retained provenance |
-| [docs/parity/evidence/chatgpt/accessible-trace.json](../../docs/parity/evidence/chatgpt/accessible-trace.json) | Port-authored contract, documentation, test or retained provenance |
-| [docs/parity/evidence/chatgpt/adversarial-review.json](../../docs/parity/evidence/chatgpt/adversarial-review.json) | Port-authored contract, documentation, test or retained provenance |
-| [docs/parity/evidence/chatgpt/alternatives.json](../../docs/parity/evidence/chatgpt/alternatives.json) | Port-authored contract, documentation, test or retained provenance |
-| [docs/parity/evidence/chatgpt/approval-before-edit.json](../../docs/parity/evidence/chatgpt/approval-before-edit.json) | Port-authored contract, documentation, test or retained provenance |
-| [docs/parity/evidence/chatgpt/arena-walkthrough.json](../../docs/parity/evidence/chatgpt/arena-walkthrough.json) | Port-authored contract, documentation, test or retained provenance |
-| [docs/parity/evidence/chatgpt/authorization-support-check.md](../../docs/parity/evidence/chatgpt/authorization-support-check.md) | Port-authored contract, documentation, test or retained provenance |
-| [docs/parity/evidence/chatgpt/authorized-program.json](../../docs/parity/evidence/chatgpt/authorized-program.json) | Port-authored contract, documentation, test or retained provenance |
-| [docs/parity/evidence/chatgpt/benny-duplicate-report.json](../../docs/parity/evidence/chatgpt/benny-duplicate-report.json) | Port-authored contract, documentation, test or retained provenance |
-| [docs/parity/evidence/chatgpt/benny-existing-fix-ownership.json](../../docs/parity/evidence/chatgpt/benny-existing-fix-ownership.json) | Port-authored contract, documentation, test or retained provenance |
-| [docs/parity/evidence/chatgpt/benny-existing-pr.json](../../docs/parity/evidence/chatgpt/benny-existing-pr.json) | Port-authored contract, documentation, test or retained provenance |
-| [docs/parity/evidence/chatgpt/benny-missing-adapter.json](../../docs/parity/evidence/chatgpt/benny-missing-adapter.json) | Port-authored contract, documentation, test or retained provenance |
-| [docs/parity/evidence/chatgpt/benny-missing-coordinates.json](../../docs/parity/evidence/chatgpt/benny-missing-coordinates.json) | Port-authored contract, documentation, test or retained provenance |
-| [docs/parity/evidence/chatgpt/benny-source-thread-compensation.json](../../docs/parity/evidence/chatgpt/benny-source-thread-compensation.json) | Port-authored contract, documentation, test or retained provenance |
-| [docs/parity/evidence/chatgpt/benny-unsupported-trigger.json](../../docs/parity/evidence/chatgpt/benny-unsupported-trigger.json) | Port-authored contract, documentation, test or retained provenance |
-| [docs/parity/evidence/chatgpt/benny-untrusted-marker.json](../../docs/parity/evidence/chatgpt/benny-untrusted-marker.json) | Port-authored contract, documentation, test or retained provenance |
-| [docs/parity/evidence/chatgpt/boundary-design.json](../../docs/parity/evidence/chatgpt/boundary-design.json) | Port-authored contract, documentation, test or retained provenance |
-| [docs/parity/evidence/chatgpt/bounded-improvement.json](../../docs/parity/evidence/chatgpt/bounded-improvement.json) | Port-authored contract, documentation, test or retained provenance |
-| [docs/parity/evidence/chatgpt/bounded-poll.json](../../docs/parity/evidence/chatgpt/bounded-poll.json) | Port-authored contract, documentation, test or retained provenance |
-| [docs/parity/evidence/chatgpt/caller-migration.json](../../docs/parity/evidence/chatgpt/caller-migration.json) | Port-authored contract, documentation, test or retained provenance |
-| [docs/parity/evidence/chatgpt/cancelled-worker.json](../../docs/parity/evidence/chatgpt/cancelled-worker.json) | Port-authored contract, documentation, test or retained provenance |
-| [docs/parity/evidence/chatgpt/candidate-cross-review.json](../../docs/parity/evidence/chatgpt/candidate-cross-review.json) | Port-authored contract, documentation, test or retained provenance |
-| [docs/parity/evidence/chatgpt/chatgpt-setup-from-readme.json](../../docs/parity/evidence/chatgpt/chatgpt-setup-from-readme.json) | Port-authored contract, documentation, test or retained provenance |
-| [docs/parity/evidence/chatgpt/codex-setup-from-readme.json](../../docs/parity/evidence/chatgpt/codex-setup-from-readme.json) | Port-authored contract, documentation, test or retained provenance |
-| [docs/parity/evidence/chatgpt/comparable-revisions.json](../../docs/parity/evidence/chatgpt/comparable-revisions.json) | Port-authored contract, documentation, test or retained provenance |
-| [docs/parity/evidence/chatgpt/contiguous-verified-stack.json](../../docs/parity/evidence/chatgpt/contiguous-verified-stack.json) | Port-authored contract, documentation, test or retained provenance |
-| [docs/parity/evidence/chatgpt/dead-path.json](../../docs/parity/evidence/chatgpt/dead-path.json) | Port-authored contract, documentation, test or retained provenance |
-| [docs/parity/evidence/chatgpt/decision-trail.json](../../docs/parity/evidence/chatgpt/decision-trail.json) | Port-authored contract, documentation, test or retained provenance |
-| [docs/parity/evidence/chatgpt/denied-writes.json](../../docs/parity/evidence/chatgpt/denied-writes.json) | Port-authored contract, documentation, test or retained provenance |
-| [docs/parity/evidence/chatgpt/dense-doc.json](../../docs/parity/evidence/chatgpt/dense-doc.json) | Port-authored contract, documentation, test or retained provenance |
-| [docs/parity/evidence/chatgpt/dependency-readiness.json](../../docs/parity/evidence/chatgpt/dependency-readiness.json) | Port-authored contract, documentation, test or retained provenance |
-| [docs/parity/evidence/chatgpt/dependent-caller.json](../../docs/parity/evidence/chatgpt/dependent-caller.json) | Port-authored contract, documentation, test or retained provenance |
-| [docs/parity/evidence/chatgpt/discriminating-eval.json](../../docs/parity/evidence/chatgpt/discriminating-eval.json) | Port-authored contract, documentation, test or retained provenance |
-| [docs/parity/evidence/chatgpt/draft-only-authorized.json](../../docs/parity/evidence/chatgpt/draft-only-authorized.json) | Port-authored contract, documentation, test or retained provenance |
-| [docs/parity/evidence/chatgpt/empty-function.json](../../docs/parity/evidence/chatgpt/empty-function.json) | Port-authored contract, documentation, test or retained provenance |
-| [docs/parity/evidence/chatgpt/existing-personal-mode.json](../../docs/parity/evidence/chatgpt/existing-personal-mode.json) | Port-authored contract, documentation, test or retained provenance |
-| [docs/parity/evidence/chatgpt/false-success.json](../../docs/parity/evidence/chatgpt/false-success.json) | Port-authored contract, documentation, test or retained provenance |
-| [docs/parity/evidence/chatgpt/fresh-worker-mode.json](../../docs/parity/evidence/chatgpt/fresh-worker-mode.json) | Port-authored contract, documentation, test or retained provenance |
-| [docs/parity/evidence/chatgpt/grounded-explanation.json](../../docs/parity/evidence/chatgpt/grounded-explanation.json) | Port-authored contract, documentation, test or retained provenance |
-| [docs/parity/evidence/chatgpt/guides-github-absent.json](../../docs/parity/evidence/chatgpt/guides-github-absent.json) | Port-authored contract, documentation, test or retained provenance |
-| [docs/parity/evidence/chatgpt/guides-local-codex.json](../../docs/parity/evidence/chatgpt/guides-local-codex.json) | Port-authored contract, documentation, test or retained provenance |
-| [docs/parity/evidence/chatgpt/guides-optional-setup-skipped.json](../../docs/parity/evidence/chatgpt/guides-optional-setup-skipped.json) | Port-authored contract, documentation, test or retained provenance |
-| [docs/parity/evidence/chatgpt/guides-ordinary-chatgpt.json](../../docs/parity/evidence/chatgpt/guides-ordinary-chatgpt.json) | Port-authored contract, documentation, test or retained provenance |
-| [docs/parity/evidence/chatgpt/guides-worker-chatgpt.json](../../docs/parity/evidence/chatgpt/guides-worker-chatgpt.json) | Port-authored contract, documentation, test or retained provenance |
-| [docs/parity/evidence/chatgpt/history-evidence.json](../../docs/parity/evidence/chatgpt/history-evidence.json) | Port-authored contract, documentation, test or retained provenance |
-| [docs/parity/evidence/chatgpt/inherited-identical-models.json](../../docs/parity/evidence/chatgpt/inherited-identical-models.json) | Port-authored contract, documentation, test or retained provenance |
-| [docs/parity/evidence/chatgpt/interrupted-action.json](../../docs/parity/evidence/chatgpt/interrupted-action.json) | Port-authored contract, documentation, test or retained provenance |
-| [docs/parity/evidence/chatgpt/interrupted-external-write.json](../../docs/parity/evidence/chatgpt/interrupted-external-write.json) | Port-authored contract, documentation, test or retained provenance |
-| [docs/parity/evidence/chatgpt/invalid-input.json](../../docs/parity/evidence/chatgpt/invalid-input.json) | Port-authored contract, documentation, test or retained provenance |
-| [docs/parity/evidence/chatgpt/invalid-state.json](../../docs/parity/evidence/chatgpt/invalid-state.json) | Port-authored contract, documentation, test or retained provenance |
-| [docs/parity/evidence/chatgpt/large-corpus.json](../../docs/parity/evidence/chatgpt/large-corpus.json) | Port-authored contract, documentation, test or retained provenance |
-| [docs/parity/evidence/chatgpt/legal-header.json](../../docs/parity/evidence/chatgpt/legal-header.json) | Port-authored contract, documentation, test or retained provenance |
-| [docs/parity/evidence/chatgpt/measurement-method.json](../../docs/parity/evidence/chatgpt/measurement-method.json) | Port-authored contract, documentation, test or retained provenance |
-| [docs/parity/evidence/chatgpt/migration-end-state.json](../../docs/parity/evidence/chatgpt/migration-end-state.json) | Port-authored contract, documentation, test or retained provenance |
-| [docs/parity/evidence/chatgpt/migration-units.json](../../docs/parity/evidence/chatgpt/migration-units.json) | Port-authored contract, documentation, test or retained provenance |
-| [docs/parity/evidence/chatgpt/misleading-speedup.json](../../docs/parity/evidence/chatgpt/misleading-speedup.json) | Port-authored contract, documentation, test or retained provenance |
-| [docs/parity/evidence/chatgpt/missing-model-enumeration.json](../../docs/parity/evidence/chatgpt/missing-model-enumeration.json) | Port-authored contract, documentation, test or retained provenance |
-| [docs/parity/evidence/chatgpt/missing-webhook.json](../../docs/parity/evidence/chatgpt/missing-webhook.json) | Port-authored contract, documentation, test or retained provenance |
-| [docs/parity/evidence/chatgpt/new-requirement.json](../../docs/parity/evidence/chatgpt/new-requirement.json) | Port-authored contract, documentation, test or retained provenance |
-| [docs/parity/evidence/chatgpt/no-persistent-tool.json](../../docs/parity/evidence/chatgpt/no-persistent-tool.json) | Port-authored contract, documentation, test or retained provenance |
-| [docs/parity/evidence/chatgpt/owned-safe-cleanup.json](../../docs/parity/evidence/chatgpt/owned-safe-cleanup.json) | Port-authored contract, documentation, test or retained provenance |
-| [docs/parity/evidence/chatgpt/package-discovery.json](../../docs/parity/evidence/chatgpt/package-discovery.json) | Port-authored contract, documentation, test or retained provenance |
-| [docs/parity/evidence/chatgpt/package-support-contracts.json](../../docs/parity/evidence/chatgpt/package-support-contracts.json) | Port-authored contract, documentation, test or retained provenance |
-| [docs/parity/evidence/chatgpt/partition-and-race.json](../../docs/parity/evidence/chatgpt/partition-and-race.json) | Port-authored contract, documentation, test or retained provenance |
-| [docs/parity/evidence/chatgpt/plain-restate.json](../../docs/parity/evidence/chatgpt/plain-restate.json) | Port-authored contract, documentation, test or retained provenance |
-| [docs/parity/evidence/chatgpt/poteto-walkthrough.json](../../docs/parity/evidence/chatgpt/poteto-walkthrough.json) | Port-authored contract, documentation, test or retained provenance |
-| [docs/parity/evidence/chatgpt/preserved-behavior.json](../../docs/parity/evidence/chatgpt/preserved-behavior.json) | Port-authored contract, documentation, test or retained provenance |
-| [docs/parity/evidence/chatgpt/prose-rewrite.json](../../docs/parity/evidence/chatgpt/prose-rewrite.json) | Port-authored contract, documentation, test or retained provenance |
-| [docs/parity/evidence/chatgpt/read-only-answer.json](../../docs/parity/evidence/chatgpt/read-only-answer.json) | Port-authored contract, documentation, test or retained provenance |
-| [docs/parity/evidence/chatgpt/real-app-contract.json](../../docs/parity/evidence/chatgpt/real-app-contract.json) | Port-authored contract, documentation, test or retained provenance |
-| [docs/parity/evidence/chatgpt/real-render.json](../../docs/parity/evidence/chatgpt/real-render.json) | Port-authored contract, documentation, test or retained provenance |
-| [docs/parity/evidence/chatgpt/red-green.json](../../docs/parity/evidence/chatgpt/red-green.json) | Port-authored contract, documentation, test or retained provenance |
-| [docs/parity/evidence/chatgpt/repeatable-change.json](../../docs/parity/evidence/chatgpt/repeatable-change.json) | Port-authored contract, documentation, test or retained provenance |
-| [docs/parity/evidence/chatgpt/repeated-failure.json](../../docs/parity/evidence/chatgpt/repeated-failure.json) | Port-authored contract, documentation, test or retained provenance |
-| [docs/parity/evidence/chatgpt/repeated-rule.json](../../docs/parity/evidence/chatgpt/repeated-rule.json) | Port-authored contract, documentation, test or retained provenance |
-| [docs/parity/evidence/chatgpt/replay.json](../../docs/parity/evidence/chatgpt/replay.json) | Port-authored contract, documentation, test or retained provenance |
-| [docs/parity/evidence/chatgpt/reproduce-before-fix.json](../../docs/parity/evidence/chatgpt/reproduce-before-fix.json) | Port-authored contract, documentation, test or retained provenance |
-| [docs/parity/evidence/chatgpt/resume-revision.json](../../docs/parity/evidence/chatgpt/resume-revision.json) | Port-authored contract, documentation, test or retained provenance |
-| [docs/parity/evidence/chatgpt/reversible-step.json](../../docs/parity/evidence/chatgpt/reversible-step.json) | Port-authored contract, documentation, test or retained provenance |
-| [docs/parity/evidence/chatgpt/route-recipe.json](../../docs/parity/evidence/chatgpt/route-recipe.json) | Port-authored contract, documentation, test or retained provenance |
-| [docs/parity/evidence/chatgpt/scoped-history.json](../../docs/parity/evidence/chatgpt/scoped-history.json) | Port-authored contract, documentation, test or retained provenance |
-| [docs/parity/evidence/chatgpt/shape-first.json](../../docs/parity/evidence/chatgpt/shape-first.json) | Port-authored contract, documentation, test or retained provenance |
-| [docs/parity/evidence/chatgpt/shared-path-conflict.json](../../docs/parity/evidence/chatgpt/shared-path-conflict.json) | Port-authored contract, documentation, test or retained provenance |
-| [docs/parity/evidence/chatgpt/smaller-solution.json](../../docs/parity/evidence/chatgpt/smaller-solution.json) | Port-authored contract, documentation, test or retained provenance |
-| [docs/parity/evidence/chatgpt/stack-resume.json](../../docs/parity/evidence/chatgpt/stack-resume.json) | Port-authored contract, documentation, test or retained provenance |
-| [docs/parity/evidence/chatgpt/stale-feature-map.json](../../docs/parity/evidence/chatgpt/stale-feature-map.json) | Port-authored contract, documentation, test or retained provenance |
-| [docs/parity/evidence/chatgpt/state-shape.json](../../docs/parity/evidence/chatgpt/state-shape.json) | Port-authored contract, documentation, test or retained provenance |
-| [docs/parity/evidence/chatgpt/supported-authoring.json](../../docs/parity/evidence/chatgpt/supported-authoring.json) | Port-authored contract, documentation, test or retained provenance |
-| [docs/parity/evidence/chatgpt/swarm-walkthrough.json](../../docs/parity/evidence/chatgpt/swarm-walkthrough.json) | Port-authored contract, documentation, test or retained provenance |
-| [docs/parity/evidence/chatgpt/symptom-repro.json](../../docs/parity/evidence/chatgpt/symptom-repro.json) | Port-authored contract, documentation, test or retained provenance |
-| [docs/parity/evidence/chatgpt/throwaway-probe.json](../../docs/parity/evidence/chatgpt/throwaway-probe.json) | Port-authored contract, documentation, test or retained provenance |
-| [docs/parity/evidence/chatgpt/trace-load.json](../../docs/parity/evidence/chatgpt/trace-load.json) | Port-authored contract, documentation, test or retained provenance |
-| [docs/parity/evidence/chatgpt/trace-path.json](../../docs/parity/evidence/chatgpt/trace-path.json) | Port-authored contract, documentation, test or retained provenance |
-| [docs/parity/evidence/chatgpt/trace-provenance.json](../../docs/parity/evidence/chatgpt/trace-provenance.json) | Port-authored contract, documentation, test or retained provenance |
-| [docs/parity/evidence/chatgpt/two-writers.json](../../docs/parity/evidence/chatgpt/two-writers.json) | Port-authored contract, documentation, test or retained provenance |
-| [docs/parity/evidence/chatgpt/typed-boundary.json](../../docs/parity/evidence/chatgpt/typed-boundary.json) | Port-authored contract, documentation, test or retained provenance |
-| [docs/parity/evidence/chatgpt/unavailable-persistence.json](../../docs/parity/evidence/chatgpt/unavailable-persistence.json) | Port-authored contract, documentation, test or retained provenance |
-| [docs/parity/evidence/chatgpt/uncertain-result.json](../../docs/parity/evidence/chatgpt/uncertain-result.json) | Port-authored contract, documentation, test or retained provenance |
-| [docs/parity/evidence/chatgpt/unit-state.json](../../docs/parity/evidence/chatgpt/unit-state.json) | Port-authored contract, documentation, test or retained provenance |
-| [docs/parity/evidence/chatgpt/units-and-proof.json](../../docs/parity/evidence/chatgpt/units-and-proof.json) | Port-authored contract, documentation, test or retained provenance |
-| [docs/parity/evidence/chatgpt/unknown-actual-model.json](../../docs/parity/evidence/chatgpt/unknown-actual-model.json) | Port-authored contract, documentation, test or retained provenance |
-| [docs/parity/evidence/chatgpt/unknown-model.json](../../docs/parity/evidence/chatgpt/unknown-model.json) | Port-authored contract, documentation, test or retained provenance |
-| [docs/parity/evidence/chatgpt/unsupported-selected-model.json](../../docs/parity/evidence/chatgpt/unsupported-selected-model.json) | Port-authored contract, documentation, test or retained provenance |
-| [docs/parity/evidence/chatgpt/user-correction.json](../../docs/parity/evidence/chatgpt/user-correction.json) | Port-authored contract, documentation, test or retained provenance |
-| [docs/parity/evidence/chatgpt/user-tradeoff.json](../../docs/parity/evidence/chatgpt/user-tradeoff.json) | Port-authored contract, documentation, test or retained provenance |
-| [docs/parity/evidence/chatgpt/verifiable-feature.json](../../docs/parity/evidence/chatgpt/verifiable-feature.json) | Port-authored contract, documentation, test or retained provenance |
-| [docs/parity/evidence/codex/absent-workers.json](../../docs/parity/evidence/codex/absent-workers.json) | Port-authored contract, documentation, test or retained provenance |
-| [docs/parity/evidence/codex/accessible-trace.json](../../docs/parity/evidence/codex/accessible-trace.json) | Port-authored contract, documentation, test or retained provenance |
-| [docs/parity/evidence/codex/adversarial-review.json](../../docs/parity/evidence/codex/adversarial-review.json) | Port-authored contract, documentation, test or retained provenance |
-| [docs/parity/evidence/codex/alternatives.json](../../docs/parity/evidence/codex/alternatives.json) | Port-authored contract, documentation, test or retained provenance |
-| [docs/parity/evidence/codex/approval-before-edit.json](../../docs/parity/evidence/codex/approval-before-edit.json) | Port-authored contract, documentation, test or retained provenance |
-| [docs/parity/evidence/codex/arena-walkthrough.json](../../docs/parity/evidence/codex/arena-walkthrough.json) | Port-authored contract, documentation, test or retained provenance |
-| [docs/parity/evidence/codex/authorization-capability-check.md](../../docs/parity/evidence/codex/authorization-capability-check.md) | Port-authored contract, documentation, test or retained provenance |
-| [docs/parity/evidence/codex/authorized-program.json](../../docs/parity/evidence/codex/authorized-program.json) | Port-authored contract, documentation, test or retained provenance |
-| [docs/parity/evidence/codex/benny-duplicate-report.json](../../docs/parity/evidence/codex/benny-duplicate-report.json) | Port-authored contract, documentation, test or retained provenance |
-| [docs/parity/evidence/codex/benny-existing-fix-ownership.json](../../docs/parity/evidence/codex/benny-existing-fix-ownership.json) | Port-authored contract, documentation, test or retained provenance |
-| [docs/parity/evidence/codex/benny-existing-pr.json](../../docs/parity/evidence/codex/benny-existing-pr.json) | Port-authored contract, documentation, test or retained provenance |
-| [docs/parity/evidence/codex/benny-missing-adapter.json](../../docs/parity/evidence/codex/benny-missing-adapter.json) | Port-authored contract, documentation, test or retained provenance |
-| [docs/parity/evidence/codex/benny-missing-coordinates.json](../../docs/parity/evidence/codex/benny-missing-coordinates.json) | Port-authored contract, documentation, test or retained provenance |
-| [docs/parity/evidence/codex/benny-source-thread-compensation.json](../../docs/parity/evidence/codex/benny-source-thread-compensation.json) | Port-authored contract, documentation, test or retained provenance |
-| [docs/parity/evidence/codex/benny-unsupported-trigger.json](../../docs/parity/evidence/codex/benny-unsupported-trigger.json) | Port-authored contract, documentation, test or retained provenance |
-| [docs/parity/evidence/codex/benny-untrusted-marker.json](../../docs/parity/evidence/codex/benny-untrusted-marker.json) | Port-authored contract, documentation, test or retained provenance |
-| [docs/parity/evidence/codex/boundary-design.json](../../docs/parity/evidence/codex/boundary-design.json) | Port-authored contract, documentation, test or retained provenance |
-| [docs/parity/evidence/codex/bounded-improvement.json](../../docs/parity/evidence/codex/bounded-improvement.json) | Port-authored contract, documentation, test or retained provenance |
-| [docs/parity/evidence/codex/bounded-poll.json](../../docs/parity/evidence/codex/bounded-poll.json) | Port-authored contract, documentation, test or retained provenance |
-| [docs/parity/evidence/codex/caller-migration.json](../../docs/parity/evidence/codex/caller-migration.json) | Port-authored contract, documentation, test or retained provenance |
-| [docs/parity/evidence/codex/cancelled-worker.json](../../docs/parity/evidence/codex/cancelled-worker.json) | Port-authored contract, documentation, test or retained provenance |
-| [docs/parity/evidence/codex/candidate-cross-review.json](../../docs/parity/evidence/codex/candidate-cross-review.json) | Port-authored contract, documentation, test or retained provenance |
-| [docs/parity/evidence/codex/chatgpt-setup-from-readme.json](../../docs/parity/evidence/codex/chatgpt-setup-from-readme.json) | Port-authored contract, documentation, test or retained provenance |
-| [docs/parity/evidence/codex/codex-setup-from-readme.json](../../docs/parity/evidence/codex/codex-setup-from-readme.json) | Port-authored contract, documentation, test or retained provenance |
-| [docs/parity/evidence/codex/comparable-revisions.json](../../docs/parity/evidence/codex/comparable-revisions.json) | Port-authored contract, documentation, test or retained provenance |
-| [docs/parity/evidence/codex/contiguous-verified-stack.json](../../docs/parity/evidence/codex/contiguous-verified-stack.json) | Port-authored contract, documentation, test or retained provenance |
-| [docs/parity/evidence/codex/dead-path.json](../../docs/parity/evidence/codex/dead-path.json) | Port-authored contract, documentation, test or retained provenance |
-| [docs/parity/evidence/codex/decision-trail.json](../../docs/parity/evidence/codex/decision-trail.json) | Port-authored contract, documentation, test or retained provenance |
-| [docs/parity/evidence/codex/denied-writes.json](../../docs/parity/evidence/codex/denied-writes.json) | Port-authored contract, documentation, test or retained provenance |
-| [docs/parity/evidence/codex/dense-doc.json](../../docs/parity/evidence/codex/dense-doc.json) | Port-authored contract, documentation, test or retained provenance |
-| [docs/parity/evidence/codex/dependency-readiness.json](../../docs/parity/evidence/codex/dependency-readiness.json) | Port-authored contract, documentation, test or retained provenance |
-| [docs/parity/evidence/codex/dependent-caller.json](../../docs/parity/evidence/codex/dependent-caller.json) | Port-authored contract, documentation, test or retained provenance |
-| [docs/parity/evidence/codex/discriminating-eval.json](../../docs/parity/evidence/codex/discriminating-eval.json) | Port-authored contract, documentation, test or retained provenance |
-| [docs/parity/evidence/codex/draft-only-authorized.json](../../docs/parity/evidence/codex/draft-only-authorized.json) | Port-authored contract, documentation, test or retained provenance |
-| [docs/parity/evidence/codex/empty-function.json](../../docs/parity/evidence/codex/empty-function.json) | Port-authored contract, documentation, test or retained provenance |
-| [docs/parity/evidence/codex/existing-personal-mode.json](../../docs/parity/evidence/codex/existing-personal-mode.json) | Port-authored contract, documentation, test or retained provenance |
-| [docs/parity/evidence/codex/false-success.json](../../docs/parity/evidence/codex/false-success.json) | Port-authored contract, documentation, test or retained provenance |
-| [docs/parity/evidence/codex/fresh-worker-mode.json](../../docs/parity/evidence/codex/fresh-worker-mode.json) | Port-authored contract, documentation, test or retained provenance |
-| [docs/parity/evidence/codex/grounded-explanation.json](../../docs/parity/evidence/codex/grounded-explanation.json) | Port-authored contract, documentation, test or retained provenance |
-| [docs/parity/evidence/codex/guides-github-absent.json](../../docs/parity/evidence/codex/guides-github-absent.json) | Port-authored contract, documentation, test or retained provenance |
-| [docs/parity/evidence/codex/guides-local-codex.json](../../docs/parity/evidence/codex/guides-local-codex.json) | Port-authored contract, documentation, test or retained provenance |
-| [docs/parity/evidence/codex/guides-optional-setup-skipped.json](../../docs/parity/evidence/codex/guides-optional-setup-skipped.json) | Port-authored contract, documentation, test or retained provenance |
-| [docs/parity/evidence/codex/guides-ordinary-chatgpt.json](../../docs/parity/evidence/codex/guides-ordinary-chatgpt.json) | Port-authored contract, documentation, test or retained provenance |
-| [docs/parity/evidence/codex/guides-worker-chatgpt.json](../../docs/parity/evidence/codex/guides-worker-chatgpt.json) | Port-authored contract, documentation, test or retained provenance |
-| [docs/parity/evidence/codex/history-evidence.json](../../docs/parity/evidence/codex/history-evidence.json) | Port-authored contract, documentation, test or retained provenance |
-| [docs/parity/evidence/codex/inherited-identical-models.json](../../docs/parity/evidence/codex/inherited-identical-models.json) | Port-authored contract, documentation, test or retained provenance |
-| [docs/parity/evidence/codex/interrupted-action.json](../../docs/parity/evidence/codex/interrupted-action.json) | Port-authored contract, documentation, test or retained provenance |
-| [docs/parity/evidence/codex/interrupted-external-write.json](../../docs/parity/evidence/codex/interrupted-external-write.json) | Port-authored contract, documentation, test or retained provenance |
-| [docs/parity/evidence/codex/invalid-input.json](../../docs/parity/evidence/codex/invalid-input.json) | Port-authored contract, documentation, test or retained provenance |
-| [docs/parity/evidence/codex/invalid-state.json](../../docs/parity/evidence/codex/invalid-state.json) | Port-authored contract, documentation, test or retained provenance |
-| [docs/parity/evidence/codex/large-corpus.json](../../docs/parity/evidence/codex/large-corpus.json) | Port-authored contract, documentation, test or retained provenance |
-| [docs/parity/evidence/codex/legal-header.json](../../docs/parity/evidence/codex/legal-header.json) | Port-authored contract, documentation, test or retained provenance |
-| [docs/parity/evidence/codex/measurement-method.json](../../docs/parity/evidence/codex/measurement-method.json) | Port-authored contract, documentation, test or retained provenance |
-| [docs/parity/evidence/codex/migration-end-state.json](../../docs/parity/evidence/codex/migration-end-state.json) | Port-authored contract, documentation, test or retained provenance |
-| [docs/parity/evidence/codex/migration-units.json](../../docs/parity/evidence/codex/migration-units.json) | Port-authored contract, documentation, test or retained provenance |
-| [docs/parity/evidence/codex/misleading-speedup.json](../../docs/parity/evidence/codex/misleading-speedup.json) | Port-authored contract, documentation, test or retained provenance |
-| [docs/parity/evidence/codex/missing-model-enumeration.json](../../docs/parity/evidence/codex/missing-model-enumeration.json) | Port-authored contract, documentation, test or retained provenance |
-| [docs/parity/evidence/codex/missing-webhook.json](../../docs/parity/evidence/codex/missing-webhook.json) | Port-authored contract, documentation, test or retained provenance |
-| [docs/parity/evidence/codex/new-requirement.json](../../docs/parity/evidence/codex/new-requirement.json) | Port-authored contract, documentation, test or retained provenance |
-| [docs/parity/evidence/codex/no-persistent-tool.json](../../docs/parity/evidence/codex/no-persistent-tool.json) | Port-authored contract, documentation, test or retained provenance |
-| [docs/parity/evidence/codex/owned-safe-cleanup.json](../../docs/parity/evidence/codex/owned-safe-cleanup.json) | Port-authored contract, documentation, test or retained provenance |
-| [docs/parity/evidence/codex/package-discovery.json](../../docs/parity/evidence/codex/package-discovery.json) | Port-authored contract, documentation, test or retained provenance |
-| [docs/parity/evidence/codex/package-support-contracts.json](../../docs/parity/evidence/codex/package-support-contracts.json) | Port-authored contract, documentation, test or retained provenance |
-| [docs/parity/evidence/codex/partition-and-race.json](../../docs/parity/evidence/codex/partition-and-race.json) | Port-authored contract, documentation, test or retained provenance |
-| [docs/parity/evidence/codex/plain-restate.json](../../docs/parity/evidence/codex/plain-restate.json) | Port-authored contract, documentation, test or retained provenance |
-| [docs/parity/evidence/codex/poteto-walkthrough.json](../../docs/parity/evidence/codex/poteto-walkthrough.json) | Port-authored contract, documentation, test or retained provenance |
-| [docs/parity/evidence/codex/preserved-behavior.json](../../docs/parity/evidence/codex/preserved-behavior.json) | Port-authored contract, documentation, test or retained provenance |
-| [docs/parity/evidence/codex/prose-rewrite.json](../../docs/parity/evidence/codex/prose-rewrite.json) | Port-authored contract, documentation, test or retained provenance |
-| [docs/parity/evidence/codex/read-only-answer.json](../../docs/parity/evidence/codex/read-only-answer.json) | Port-authored contract, documentation, test or retained provenance |
-| [docs/parity/evidence/codex/real-app-contract.json](../../docs/parity/evidence/codex/real-app-contract.json) | Port-authored contract, documentation, test or retained provenance |
-| [docs/parity/evidence/codex/real-render.json](../../docs/parity/evidence/codex/real-render.json) | Port-authored contract, documentation, test or retained provenance |
-| [docs/parity/evidence/codex/red-green.json](../../docs/parity/evidence/codex/red-green.json) | Port-authored contract, documentation, test or retained provenance |
-| [docs/parity/evidence/codex/repeatable-change.json](../../docs/parity/evidence/codex/repeatable-change.json) | Port-authored contract, documentation, test or retained provenance |
-| [docs/parity/evidence/codex/repeated-failure.json](../../docs/parity/evidence/codex/repeated-failure.json) | Port-authored contract, documentation, test or retained provenance |
-| [docs/parity/evidence/codex/repeated-rule.json](../../docs/parity/evidence/codex/repeated-rule.json) | Port-authored contract, documentation, test or retained provenance |
-| [docs/parity/evidence/codex/replay.json](../../docs/parity/evidence/codex/replay.json) | Port-authored contract, documentation, test or retained provenance |
-| [docs/parity/evidence/codex/reproduce-before-fix.json](../../docs/parity/evidence/codex/reproduce-before-fix.json) | Port-authored contract, documentation, test or retained provenance |
-| [docs/parity/evidence/codex/resume-revision.json](../../docs/parity/evidence/codex/resume-revision.json) | Port-authored contract, documentation, test or retained provenance |
-| [docs/parity/evidence/codex/reversible-step.json](../../docs/parity/evidence/codex/reversible-step.json) | Port-authored contract, documentation, test or retained provenance |
-| [docs/parity/evidence/codex/route-recipe.json](../../docs/parity/evidence/codex/route-recipe.json) | Port-authored contract, documentation, test or retained provenance |
-| [docs/parity/evidence/codex/scoped-history.json](../../docs/parity/evidence/codex/scoped-history.json) | Port-authored contract, documentation, test or retained provenance |
-| [docs/parity/evidence/codex/shape-first.json](../../docs/parity/evidence/codex/shape-first.json) | Port-authored contract, documentation, test or retained provenance |
-| [docs/parity/evidence/codex/shared-path-conflict.json](../../docs/parity/evidence/codex/shared-path-conflict.json) | Port-authored contract, documentation, test or retained provenance |
-| [docs/parity/evidence/codex/smaller-solution.json](../../docs/parity/evidence/codex/smaller-solution.json) | Port-authored contract, documentation, test or retained provenance |
-| [docs/parity/evidence/codex/stack-resume.json](../../docs/parity/evidence/codex/stack-resume.json) | Port-authored contract, documentation, test or retained provenance |
-| [docs/parity/evidence/codex/stale-feature-map.json](../../docs/parity/evidence/codex/stale-feature-map.json) | Port-authored contract, documentation, test or retained provenance |
-| [docs/parity/evidence/codex/state-shape.json](../../docs/parity/evidence/codex/state-shape.json) | Port-authored contract, documentation, test or retained provenance |
-| [docs/parity/evidence/codex/supported-authoring.json](../../docs/parity/evidence/codex/supported-authoring.json) | Port-authored contract, documentation, test or retained provenance |
-| [docs/parity/evidence/codex/swarm-walkthrough.json](../../docs/parity/evidence/codex/swarm-walkthrough.json) | Port-authored contract, documentation, test or retained provenance |
-| [docs/parity/evidence/codex/symptom-repro.json](../../docs/parity/evidence/codex/symptom-repro.json) | Port-authored contract, documentation, test or retained provenance |
-| [docs/parity/evidence/codex/throwaway-probe.json](../../docs/parity/evidence/codex/throwaway-probe.json) | Port-authored contract, documentation, test or retained provenance |
-| [docs/parity/evidence/codex/trace-load.json](../../docs/parity/evidence/codex/trace-load.json) | Port-authored contract, documentation, test or retained provenance |
-| [docs/parity/evidence/codex/trace-path.json](../../docs/parity/evidence/codex/trace-path.json) | Port-authored contract, documentation, test or retained provenance |
-| [docs/parity/evidence/codex/trace-provenance.json](../../docs/parity/evidence/codex/trace-provenance.json) | Port-authored contract, documentation, test or retained provenance |
-| [docs/parity/evidence/codex/two-writers.json](../../docs/parity/evidence/codex/two-writers.json) | Port-authored contract, documentation, test or retained provenance |
-| [docs/parity/evidence/codex/typed-boundary.json](../../docs/parity/evidence/codex/typed-boundary.json) | Port-authored contract, documentation, test or retained provenance |
-| [docs/parity/evidence/codex/unavailable-persistence.json](../../docs/parity/evidence/codex/unavailable-persistence.json) | Port-authored contract, documentation, test or retained provenance |
-| [docs/parity/evidence/codex/uncertain-result.json](../../docs/parity/evidence/codex/uncertain-result.json) | Port-authored contract, documentation, test or retained provenance |
-| [docs/parity/evidence/codex/unit-state.json](../../docs/parity/evidence/codex/unit-state.json) | Port-authored contract, documentation, test or retained provenance |
-| [docs/parity/evidence/codex/units-and-proof.json](../../docs/parity/evidence/codex/units-and-proof.json) | Port-authored contract, documentation, test or retained provenance |
-| [docs/parity/evidence/codex/unknown-actual-model.json](../../docs/parity/evidence/codex/unknown-actual-model.json) | Port-authored contract, documentation, test or retained provenance |
-| [docs/parity/evidence/codex/unknown-model.json](../../docs/parity/evidence/codex/unknown-model.json) | Port-authored contract, documentation, test or retained provenance |
-| [docs/parity/evidence/codex/unsupported-selected-model.json](../../docs/parity/evidence/codex/unsupported-selected-model.json) | Port-authored contract, documentation, test or retained provenance |
-| [docs/parity/evidence/codex/user-correction.json](../../docs/parity/evidence/codex/user-correction.json) | Port-authored contract, documentation, test or retained provenance |
-| [docs/parity/evidence/codex/user-tradeoff.json](../../docs/parity/evidence/codex/user-tradeoff.json) | Port-authored contract, documentation, test or retained provenance |
-| [docs/parity/evidence/codex/verifiable-feature.json](../../docs/parity/evidence/codex/verifiable-feature.json) | Port-authored contract, documentation, test or retained provenance |
-| [docs/parity/inventory.json](../../docs/parity/inventory.json) | Port-authored contract, documentation, test or retained provenance |
-| [docs/parity/inventory.schema.json](../../docs/parity/inventory.schema.json) | Port-authored contract, documentation, test or retained provenance |
-| [docs/parity/reconciliations/task12-lock.json](../../docs/parity/reconciliations/task12-lock.json) | Port-authored contract, documentation, test or retained provenance |
-| [docs/parity/reconciliations/task16-template.json](../../docs/parity/reconciliations/task16-template.json) | Port-authored contract, documentation, test or retained provenance |
-| [docs/parity/remnant-dispositions.json](../../docs/parity/remnant-dispositions.json) | Port-authored contract, documentation, test or retained provenance |
-| [docs/parity/support-map.md](../../docs/parity/support-map.md) | Port-authored contract, documentation, test or retained provenance |
-| [docs/parity/upstream-manifests/182f2ce414e83224915c190d2f63239c1608d0a5.apply.json](../../docs/parity/upstream-manifests/182f2ce414e83224915c190d2f63239c1608d0a5.apply.json) | Port-authored contract, documentation, test or retained provenance |
-| [docs/parity/upstream-manifests/182f2ce414e83224915c190d2f63239c1608d0a5.json](../../docs/parity/upstream-manifests/182f2ce414e83224915c190d2f63239c1608d0a5.json) | Port-authored contract, documentation, test or retained provenance |
-| [docs/parity/upstream-manifests/182f2ce414e83224915c190d2f63239c1608d0a5.previous-fragments.json](../../docs/parity/upstream-manifests/182f2ce414e83224915c190d2f63239c1608d0a5.previous-fragments.json) | Port-authored contract, documentation, test or retained provenance |
-| [docs/parity/upstream-manifests/99743e9c151c8537cbbf1f98bb38f34ef3368453.apply.json](../../docs/parity/upstream-manifests/99743e9c151c8537cbbf1f98bb38f34ef3368453.apply.json) | Port-authored contract, documentation, test or retained provenance |
-| [docs/parity/upstream-manifests/99743e9c151c8537cbbf1f98bb38f34ef3368453.json](../../docs/parity/upstream-manifests/99743e9c151c8537cbbf1f98bb38f34ef3368453.json) | Port-authored contract, documentation, test or retained provenance |
-| [docs/parity/upstream-manifests/99743e9c151c8537cbbf1f98bb38f34ef3368453.previous-fragments.json](../../docs/parity/upstream-manifests/99743e9c151c8537cbbf1f98bb38f34ef3368453.previous-fragments.json) | Port-authored contract, documentation, test or retained provenance |
-| [docs/parity/upstream-manifests/d457567332aa6989e753ea289f30ea2bfbc80bc0.json](../../docs/parity/upstream-manifests/d457567332aa6989e753ea289f30ea2bfbc80bc0.json) | Port-authored contract, documentation, test or retained provenance |
-| [docs/parity/upstream-manifests/df581122cde17e6e27686b5a448bde23e4ad4318.json](../../docs/parity/upstream-manifests/df581122cde17e6e27686b5a448bde23e4ad4318.json) | Port-authored contract, documentation, test or retained provenance |
-| [docs/parity/upstream-manifests/e5136d82418d2db3165ea1050d17577cd618cc05.apply.json](../../docs/parity/upstream-manifests/e5136d82418d2db3165ea1050d17577cd618cc05.apply.json) | Port-authored contract, documentation, test or retained provenance |
-| [docs/parity/upstream-manifests/e5136d82418d2db3165ea1050d17577cd618cc05.json](../../docs/parity/upstream-manifests/e5136d82418d2db3165ea1050d17577cd618cc05.json) | Port-authored contract, documentation, test or retained provenance |
-| [docs/parity/upstream-manifests/e5136d82418d2db3165ea1050d17577cd618cc05.previous-fragments.json](../../docs/parity/upstream-manifests/e5136d82418d2db3165ea1050d17577cd618cc05.previous-fragments.json) | Port-authored contract, documentation, test or retained provenance |
-| [docs/principles/README.md](../../docs/principles/README.md) | Port-authored contract, documentation, test or retained provenance |
-| [docs/releases/0.2.0.md](../../docs/releases/0.2.0.md) | Port-authored contract, documentation, test or retained provenance |
-| [docs/releases/0.2.1.md](../../docs/releases/0.2.1.md) | Port-authored contract, documentation, test or retained provenance |
-| [docs/releases/0.2.2.md](../../docs/releases/0.2.2.md) | Port-authored contract, documentation, test or retained provenance |
-| [docs/setup/chatgpt.md](../../docs/setup/chatgpt.md) | Port-authored contract, documentation, test or retained provenance |
-| [docs/setup/codex.md](../../docs/setup/codex.md) | Port-authored contract, documentation, test or retained provenance |
-| [docs/skills/README.md](../../docs/skills/README.md) | Port-authored contract, documentation, test or retained provenance |
-| [docs/skills/architect.md](../../docs/skills/architect.md) | Port-authored contract, documentation, test or retained provenance |
-| [docs/skills/arena.md](../../docs/skills/arena.md) | Port-authored contract, documentation, test or retained provenance |
-| [docs/skills/automate-me.md](../../docs/skills/automate-me.md) | Port-authored contract, documentation, test or retained provenance |
-| [docs/skills/benchmark-checklist.md](../../docs/skills/benchmark-checklist.md) | Port-authored contract, documentation, test or retained provenance |
-| [docs/skills/blast-radius.md](../../docs/skills/blast-radius.md) | Port-authored contract, documentation, test or retained provenance |
-| [docs/skills/bro.md](../../docs/skills/bro.md) | Port-authored contract, documentation, test or retained provenance |
-| [docs/skills/correct.md](../../docs/skills/correct.md) | Port-authored contract, documentation, test or retained provenance |
-| [docs/skills/create-formal-verification-skill.md](../../docs/skills/create-formal-verification-skill.md) | Port-authored contract, documentation, test or retained provenance |
-| [docs/skills/create-verification-skill.md](../../docs/skills/create-verification-skill.md) | Port-authored contract, documentation, test or retained provenance |
-| [docs/skills/figure-it-out.md](../../docs/skills/figure-it-out.md) | Port-authored contract, documentation, test or retained provenance |
-| [docs/skills/how.md](../../docs/skills/how.md) | Port-authored contract, documentation, test or retained provenance |
-| [docs/skills/in-your-own-words.md](../../docs/skills/in-your-own-words.md) | Port-authored contract, documentation, test or retained provenance |
-| [docs/skills/interrogate.md](../../docs/skills/interrogate.md) | Port-authored contract, documentation, test or retained provenance |
-| [docs/skills/ketchup.md](../../docs/skills/ketchup.md) | Port-authored contract, documentation, test or retained provenance |
-| [docs/skills/maintain-formal-verification-skill.md](../../docs/skills/maintain-formal-verification-skill.md) | Port-authored contract, documentation, test or retained provenance |
-| [docs/skills/maintain-verification-skill.md](../../docs/skills/maintain-verification-skill.md) | Port-authored contract, documentation, test or retained provenance |
-| [docs/skills/make-bot-ui.md](../../docs/skills/make-bot-ui.md) | Port-authored contract, documentation, test or retained provenance |
-| [docs/skills/no-comments.md](../../docs/skills/no-comments.md) | Port-authored contract, documentation, test or retained provenance |
-| [docs/skills/poteto-help.md](../../docs/skills/poteto-help.md) | Port-authored contract, documentation, test or retained provenance |
-| [docs/skills/poteto-mode.md](../../docs/skills/poteto-mode.md) | Port-authored contract, documentation, test or retained provenance |
-| [docs/skills/principle-attack-the-premise.md](../../docs/skills/principle-attack-the-premise.md) | Port-authored contract, documentation, test or retained provenance |
-| [docs/skills/principle-boundary-discipline.md](../../docs/skills/principle-boundary-discipline.md) | Port-authored contract, documentation, test or retained provenance |
-| [docs/skills/principle-build-the-lever.md](../../docs/skills/principle-build-the-lever.md) | Port-authored contract, documentation, test or retained provenance |
-| [docs/skills/principle-encode-lessons-in-structure.md](../../docs/skills/principle-encode-lessons-in-structure.md) | Port-authored contract, documentation, test or retained provenance |
-| [docs/skills/principle-exhaust-the-design-space.md](../../docs/skills/principle-exhaust-the-design-space.md) | Port-authored contract, documentation, test or retained provenance |
-| [docs/skills/principle-experience-first.md](../../docs/skills/principle-experience-first.md) | Port-authored contract, documentation, test or retained provenance |
-| [docs/skills/principle-explain-the-number.md](../../docs/skills/principle-explain-the-number.md) | Port-authored contract, documentation, test or retained provenance |
-| [docs/skills/principle-fix-root-causes.md](../../docs/skills/principle-fix-root-causes.md) | Port-authored contract, documentation, test or retained provenance |
-| [docs/skills/principle-foundational-thinking.md](../../docs/skills/principle-foundational-thinking.md) | Port-authored contract, documentation, test or retained provenance |
-| [docs/skills/principle-guard-the-context-window.md](../../docs/skills/principle-guard-the-context-window.md) | Port-authored contract, documentation, test or retained provenance |
-| [docs/skills/principle-laziness-protocol.md](../../docs/skills/principle-laziness-protocol.md) | Port-authored contract, documentation, test or retained provenance |
-| [docs/skills/principle-make-operations-idempotent.md](../../docs/skills/principle-make-operations-idempotent.md) | Port-authored contract, documentation, test or retained provenance |
-| [docs/skills/principle-migrate-callers-then-delete-legacy-apis.md](../../docs/skills/principle-migrate-callers-then-delete-legacy-apis.md) | Port-authored contract, documentation, test or retained provenance |
-| [docs/skills/principle-minimize-reader-load.md](../../docs/skills/principle-minimize-reader-load.md) | Port-authored contract, documentation, test or retained provenance |
-| [docs/skills/principle-model-the-domain.md](../../docs/skills/principle-model-the-domain.md) | Port-authored contract, documentation, test or retained provenance |
-| [docs/skills/principle-never-block-on-the-human.md](../../docs/skills/principle-never-block-on-the-human.md) | Port-authored contract, documentation, test or retained provenance |
-| [docs/skills/principle-outcome-oriented-execution.md](../../docs/skills/principle-outcome-oriented-execution.md) | Port-authored contract, documentation, test or retained provenance |
-| [docs/skills/principle-prove-it-works.md](../../docs/skills/principle-prove-it-works.md) | Port-authored contract, documentation, test or retained provenance |
-| [docs/skills/principle-redesign-from-first-principles.md](../../docs/skills/principle-redesign-from-first-principles.md) | Port-authored contract, documentation, test or retained provenance |
-| [docs/skills/principle-separate-before-serializing-shared-state.md](../../docs/skills/principle-separate-before-serializing-shared-state.md) | Port-authored contract, documentation, test or retained provenance |
-| [docs/skills/principle-sequence-verifiable-units.md](../../docs/skills/principle-sequence-verifiable-units.md) | Port-authored contract, documentation, test or retained provenance |
-| [docs/skills/principle-subtract-before-you-add.md](../../docs/skills/principle-subtract-before-you-add.md) | Port-authored contract, documentation, test or retained provenance |
-| [docs/skills/principle-test-behavior-not-implementation.md](../../docs/skills/principle-test-behavior-not-implementation.md) | Port-authored contract, documentation, test or retained provenance |
-| [docs/skills/principle-type-system-discipline.md](../../docs/skills/principle-type-system-discipline.md) | Port-authored contract, documentation, test or retained provenance |
-| [docs/skills/recall.md](../../docs/skills/recall.md) | Port-authored contract, documentation, test or retained provenance |
-| [docs/skills/reflect.md](../../docs/skills/reflect.md) | Port-authored contract, documentation, test or retained provenance |
-| [docs/skills/setup-pstack.md](../../docs/skills/setup-pstack.md) | Port-authored contract, documentation, test or retained provenance |
-| [docs/skills/sharpen.md](../../docs/skills/sharpen.md) | Port-authored contract, documentation, test or retained provenance |
-| [docs/skills/show-me-your-work.md](../../docs/skills/show-me-your-work.md) | Port-authored contract, documentation, test or retained provenance |
-| [docs/skills/swarm.md](../../docs/skills/swarm.md) | Port-authored contract, documentation, test or retained provenance |
-| [docs/skills/tdd.md](../../docs/skills/tdd.md) | Port-authored contract, documentation, test or retained provenance |
-| [docs/skills/teach.md](../../docs/skills/teach.md) | Port-authored contract, documentation, test or retained provenance |
-| [docs/skills/technical-writing.md](../../docs/skills/technical-writing.md) | Port-authored contract, documentation, test or retained provenance |
-| [docs/skills/typescript-best-practices.md](../../docs/skills/typescript-best-practices.md) | Port-authored contract, documentation, test or retained provenance |
-| [docs/skills/unslop.md](../../docs/skills/unslop.md) | Port-authored contract, documentation, test or retained provenance |
-| [docs/skills/why.md](../../docs/skills/why.md) | Port-authored contract, documentation, test or retained provenance |
-| [docs/superpowers/plans/2026-10-07-pstack-openai.md](../../docs/superpowers/plans/2026-10-07-pstack-openai.md) | Port-authored contract, documentation, test or retained provenance |
-| [docs/superpowers/specs/2026-10-07-pstack-openai-design.md](../../docs/superpowers/specs/2026-10-07-pstack-openai-design.md) | Port-authored contract, documentation, test or retained provenance |
-| [docs/testing/benny-readiness.md](../../docs/testing/benny-readiness.md) | Port-authored contract, documentation, test or retained provenance |
-| [docs/testing/chatgpt.md](../../docs/testing/chatgpt.md) | Port-authored contract, documentation, test or retained provenance |
-| [docs/testing/codex.md](../../docs/testing/codex.md) | Port-authored contract, documentation, test or retained provenance |
-| [docs/testing/dependency-readiness.md](../../docs/testing/dependency-readiness.md) | Port-authored contract, documentation, test or retained provenance |
-| [docs/testing/helper-setup.md](../../docs/testing/helper-setup.md) | Port-authored contract, documentation, test or retained provenance |
-| [docs/testing/host-matrix.md](../../docs/testing/host-matrix.md) | Port-authored contract, documentation, test or retained provenance |
-| [docs/troubleshooting.md](../../docs/troubleshooting.md) | Port-authored contract, documentation, test or retained provenance |
-| [docs/workflows/arena.md](../../docs/workflows/arena.md) | Port-authored contract, documentation, test or retained provenance |
-| [docs/workflows/choosing-a-workflow.md](../../docs/workflows/choosing-a-workflow.md) | Port-authored contract, documentation, test or retained provenance |
-| [docs/workflows/poteto-mode.md](../../docs/workflows/poteto-mode.md) | Port-authored contract, documentation, test or retained provenance |
-| [docs/workflows/swarm.md](../../docs/workflows/swarm.md) | Port-authored contract, documentation, test or retained provenance |
-| [references/host-capabilities.md](../../references/host-capabilities.md) | Port-authored contract, documentation, test or retained provenance |
-| [references/model-roles.md](../../references/model-roles.md) | Port-authored contract, documentation, test or retained provenance |
-| [references/orchestration-contract.md](../../references/orchestration-contract.md) | Port-authored contract, documentation, test or retained provenance |
-| [references/workflow-ownership.md](../../references/workflow-ownership.md) | Port-authored contract, documentation, test or retained provenance |
-| [skills/poteto-mode/scripts/bootstrap.test.ts](../../skills/poteto-mode/scripts/bootstrap.test.ts) | Port-authored contract, documentation, test or retained provenance |
-| [skills/poteto-mode/scripts/worktree-audit.py](../../skills/poteto-mode/scripts/worktree-audit.py) | Port-authored contract, documentation, test or retained provenance |
-| [tests/__init__.py](../../tests/__init__.py) | Port-authored contract, documentation, test or retained provenance |
-| [tests/evidence_fixtures.py](../../tests/evidence_fixtures.py) | Port-authored contract, documentation, test or retained provenance |
-| [tests/fixture_paths.py](../../tests/fixture_paths.py) | Port-authored contract, documentation, test or retained provenance |
-| [tests/test_catalog.py](../../tests/test_catalog.py) | Port-authored contract, documentation, test or retained provenance |
-| [tests/test_decision_log.py](../../tests/test_decision_log.py) | Port-authored contract, documentation, test or retained provenance |
-| [tests/test_dependencies.py](../../tests/test_dependencies.py) | Port-authored contract, documentation, test or retained provenance |
-| [tests/test_full_package_update.py](../../tests/test_full_package_update.py) | Port-authored contract, documentation, test or retained provenance |
-| [tests/test_inventory_closed.py](../../tests/test_inventory_closed.py) | Port-authored contract, documentation, test or retained provenance |
-| [tests/test_manifest.py](../../tests/test_manifest.py) | Port-authored contract, documentation, test or retained provenance |
-| [tests/test_pstack_plan_check.py](../../tests/test_pstack_plan_check.py) | Port-authored contract, documentation, test or retained provenance |
-| [tests/test_release_report.py](../../tests/test_release_report.py) | Port-authored contract, documentation, test or retained provenance |
-| [tests/test_source_inventory.py](../../tests/test_source_inventory.py) | Port-authored contract, documentation, test or retained provenance |
-| [tests/test_update_regression.py](../../tests/test_update_regression.py) | Port-authored contract, documentation, test or retained provenance |
-| [tests/test_upstream_apply.py](../../tests/test_upstream_apply.py) | Port-authored contract, documentation, test or retained provenance |
-| [tests/test_upstream_check.py](../../tests/test_upstream_check.py) | Port-authored contract, documentation, test or retained provenance |
-| [tests/test_validate_evidence.py](../../tests/test_validate_evidence.py) | Port-authored contract, documentation, test or retained provenance |
-| [tests/test_validate_package.py](../../tests/test_validate_package.py) | Port-authored contract, documentation, test or retained provenance |
-| [tests/test_wiki_export.py](../../tests/test_wiki_export.py) | Port-authored contract, documentation, test or retained provenance |
-| [tests/test_worktree_audit.py](../../tests/test_worktree_audit.py) | Port-authored contract, documentation, test or retained provenance |
-| [tools/baseline_policy.py](../../tools/baseline_policy.py) | Port-authored contract, documentation, test or retained provenance |
-| [tools/build_catalog.py](../../tools/build_catalog.py) | Port-authored contract, documentation, test or retained provenance |
-| [tools/compare_upstream.py](../../tools/compare_upstream.py) | Port-authored contract, documentation, test or retained provenance |
-| [tools/export_wiki.py](../../tools/export_wiki.py) | Port-authored contract, documentation, test or retained provenance |
-| [tools/release_report.py](../../tools/release_report.py) | Port-authored contract, documentation, test or retained provenance |
-| [tools/source_inventory.py](../../tools/source_inventory.py) | Port-authored contract, documentation, test or retained provenance |
-| [tools/sync_upstream.py](../../tools/sync_upstream.py) | Port-authored contract, documentation, test or retained provenance |
-| [tools/update_metadata.py](../../tools/update_metadata.py) | Port-authored contract, documentation, test or retained provenance |
-| [tools/validate_evidence.py](../../tools/validate_evidence.py) | Port-authored contract, documentation, test or retained provenance |
-| [tools/validate_package.py](../../tools/validate_package.py) | Port-authored contract, documentation, test or retained provenance |
+| [NOTICE.md](../../NOTICE.md) | Port-authored contract, test, candidate-amendment record or retained provenance |
+| [UPSTREAM.md](../../UPSTREAM.md) | Port-authored contract, test, candidate-amendment record or retained provenance |
+| [docs/catalog/schema.json](../../docs/catalog/schema.json) | Port-authored contract, test, candidate-amendment record or retained provenance |
+| [docs/catalog/skills/architect.json](../../docs/catalog/skills/architect.json) | Port-authored contract, test, candidate-amendment record or retained provenance |
+| [docs/catalog/skills/arena.json](../../docs/catalog/skills/arena.json) | Port-authored contract, test, candidate-amendment record or retained provenance |
+| [docs/catalog/skills/automate-me.json](../../docs/catalog/skills/automate-me.json) | Port-authored contract, test, candidate-amendment record or retained provenance |
+| [docs/catalog/skills/benchmark-checklist.json](../../docs/catalog/skills/benchmark-checklist.json) | Port-authored contract, test, candidate-amendment record or retained provenance |
+| [docs/catalog/skills/blast-radius.json](../../docs/catalog/skills/blast-radius.json) | Port-authored contract, test, candidate-amendment record or retained provenance |
+| [docs/catalog/skills/bro.json](../../docs/catalog/skills/bro.json) | Port-authored contract, test, candidate-amendment record or retained provenance |
+| [docs/catalog/skills/correct.json](../../docs/catalog/skills/correct.json) | Port-authored contract, test, candidate-amendment record or retained provenance |
+| [docs/catalog/skills/create-formal-verification-skill.json](../../docs/catalog/skills/create-formal-verification-skill.json) | Port-authored contract, test, candidate-amendment record or retained provenance |
+| [docs/catalog/skills/create-verification-skill.json](../../docs/catalog/skills/create-verification-skill.json) | Port-authored contract, test, candidate-amendment record or retained provenance |
+| [docs/catalog/skills/figure-it-out.json](../../docs/catalog/skills/figure-it-out.json) | Port-authored contract, test, candidate-amendment record or retained provenance |
+| [docs/catalog/skills/how.json](../../docs/catalog/skills/how.json) | Port-authored contract, test, candidate-amendment record or retained provenance |
+| [docs/catalog/skills/in-your-own-words.json](../../docs/catalog/skills/in-your-own-words.json) | Port-authored contract, test, candidate-amendment record or retained provenance |
+| [docs/catalog/skills/interrogate.json](../../docs/catalog/skills/interrogate.json) | Port-authored contract, test, candidate-amendment record or retained provenance |
+| [docs/catalog/skills/ketchup.json](../../docs/catalog/skills/ketchup.json) | Port-authored contract, test, candidate-amendment record or retained provenance |
+| [docs/catalog/skills/maintain-formal-verification-skill.json](../../docs/catalog/skills/maintain-formal-verification-skill.json) | Port-authored contract, test, candidate-amendment record or retained provenance |
+| [docs/catalog/skills/maintain-verification-skill.json](../../docs/catalog/skills/maintain-verification-skill.json) | Port-authored contract, test, candidate-amendment record or retained provenance |
+| [docs/catalog/skills/make-bot-ui.json](../../docs/catalog/skills/make-bot-ui.json) | Port-authored contract, test, candidate-amendment record or retained provenance |
+| [docs/catalog/skills/no-comments.json](../../docs/catalog/skills/no-comments.json) | Port-authored contract, test, candidate-amendment record or retained provenance |
+| [docs/catalog/skills/poteto-help.json](../../docs/catalog/skills/poteto-help.json) | Port-authored contract, test, candidate-amendment record or retained provenance |
+| [docs/catalog/skills/poteto-mode.json](../../docs/catalog/skills/poteto-mode.json) | Port-authored contract, test, candidate-amendment record or retained provenance |
+| [docs/catalog/skills/principle-attack-the-premise.json](../../docs/catalog/skills/principle-attack-the-premise.json) | Port-authored contract, test, candidate-amendment record or retained provenance |
+| [docs/catalog/skills/principle-boundary-discipline.json](../../docs/catalog/skills/principle-boundary-discipline.json) | Port-authored contract, test, candidate-amendment record or retained provenance |
+| [docs/catalog/skills/principle-build-the-lever.json](../../docs/catalog/skills/principle-build-the-lever.json) | Port-authored contract, test, candidate-amendment record or retained provenance |
+| [docs/catalog/skills/principle-encode-lessons-in-structure.json](../../docs/catalog/skills/principle-encode-lessons-in-structure.json) | Port-authored contract, test, candidate-amendment record or retained provenance |
+| [docs/catalog/skills/principle-exhaust-the-design-space.json](../../docs/catalog/skills/principle-exhaust-the-design-space.json) | Port-authored contract, test, candidate-amendment record or retained provenance |
+| [docs/catalog/skills/principle-experience-first.json](../../docs/catalog/skills/principle-experience-first.json) | Port-authored contract, test, candidate-amendment record or retained provenance |
+| [docs/catalog/skills/principle-explain-the-number.json](../../docs/catalog/skills/principle-explain-the-number.json) | Port-authored contract, test, candidate-amendment record or retained provenance |
+| [docs/catalog/skills/principle-fix-root-causes.json](../../docs/catalog/skills/principle-fix-root-causes.json) | Port-authored contract, test, candidate-amendment record or retained provenance |
+| [docs/catalog/skills/principle-foundational-thinking.json](../../docs/catalog/skills/principle-foundational-thinking.json) | Port-authored contract, test, candidate-amendment record or retained provenance |
+| [docs/catalog/skills/principle-guard-the-context-window.json](../../docs/catalog/skills/principle-guard-the-context-window.json) | Port-authored contract, test, candidate-amendment record or retained provenance |
+| [docs/catalog/skills/principle-laziness-protocol.json](../../docs/catalog/skills/principle-laziness-protocol.json) | Port-authored contract, test, candidate-amendment record or retained provenance |
+| [docs/catalog/skills/principle-make-operations-idempotent.json](../../docs/catalog/skills/principle-make-operations-idempotent.json) | Port-authored contract, test, candidate-amendment record or retained provenance |
+| [docs/catalog/skills/principle-migrate-callers-then-delete-legacy-apis.json](../../docs/catalog/skills/principle-migrate-callers-then-delete-legacy-apis.json) | Port-authored contract, test, candidate-amendment record or retained provenance |
+| [docs/catalog/skills/principle-minimize-reader-load.json](../../docs/catalog/skills/principle-minimize-reader-load.json) | Port-authored contract, test, candidate-amendment record or retained provenance |
+| [docs/catalog/skills/principle-model-the-domain.json](../../docs/catalog/skills/principle-model-the-domain.json) | Port-authored contract, test, candidate-amendment record or retained provenance |
+| [docs/catalog/skills/principle-never-block-on-the-human.json](../../docs/catalog/skills/principle-never-block-on-the-human.json) | Port-authored contract, test, candidate-amendment record or retained provenance |
+| [docs/catalog/skills/principle-outcome-oriented-execution.json](../../docs/catalog/skills/principle-outcome-oriented-execution.json) | Port-authored contract, test, candidate-amendment record or retained provenance |
+| [docs/catalog/skills/principle-prove-it-works.json](../../docs/catalog/skills/principle-prove-it-works.json) | Port-authored contract, test, candidate-amendment record or retained provenance |
+| [docs/catalog/skills/principle-redesign-from-first-principles.json](../../docs/catalog/skills/principle-redesign-from-first-principles.json) | Port-authored contract, test, candidate-amendment record or retained provenance |
+| [docs/catalog/skills/principle-separate-before-serializing-shared-state.json](../../docs/catalog/skills/principle-separate-before-serializing-shared-state.json) | Port-authored contract, test, candidate-amendment record or retained provenance |
+| [docs/catalog/skills/principle-sequence-verifiable-units.json](../../docs/catalog/skills/principle-sequence-verifiable-units.json) | Port-authored contract, test, candidate-amendment record or retained provenance |
+| [docs/catalog/skills/principle-subtract-before-you-add.json](../../docs/catalog/skills/principle-subtract-before-you-add.json) | Port-authored contract, test, candidate-amendment record or retained provenance |
+| [docs/catalog/skills/principle-test-behavior-not-implementation.json](../../docs/catalog/skills/principle-test-behavior-not-implementation.json) | Port-authored contract, test, candidate-amendment record or retained provenance |
+| [docs/catalog/skills/principle-type-system-discipline.json](../../docs/catalog/skills/principle-type-system-discipline.json) | Port-authored contract, test, candidate-amendment record or retained provenance |
+| [docs/catalog/skills/recall.json](../../docs/catalog/skills/recall.json) | Port-authored contract, test, candidate-amendment record or retained provenance |
+| [docs/catalog/skills/reflect.json](../../docs/catalog/skills/reflect.json) | Port-authored contract, test, candidate-amendment record or retained provenance |
+| [docs/catalog/skills/setup-pstack.json](../../docs/catalog/skills/setup-pstack.json) | Port-authored contract, test, candidate-amendment record or retained provenance |
+| [docs/catalog/skills/sharpen.json](../../docs/catalog/skills/sharpen.json) | Port-authored contract, test, candidate-amendment record or retained provenance |
+| [docs/catalog/skills/show-me-your-work.json](../../docs/catalog/skills/show-me-your-work.json) | Port-authored contract, test, candidate-amendment record or retained provenance |
+| [docs/catalog/skills/swarm.json](../../docs/catalog/skills/swarm.json) | Port-authored contract, test, candidate-amendment record or retained provenance |
+| [docs/catalog/skills/tdd.json](../../docs/catalog/skills/tdd.json) | Port-authored contract, test, candidate-amendment record or retained provenance |
+| [docs/catalog/skills/teach.json](../../docs/catalog/skills/teach.json) | Port-authored contract, test, candidate-amendment record or retained provenance |
+| [docs/catalog/skills/technical-writing.json](../../docs/catalog/skills/technical-writing.json) | Port-authored contract, test, candidate-amendment record or retained provenance |
+| [docs/catalog/skills/typescript-best-practices.json](../../docs/catalog/skills/typescript-best-practices.json) | Port-authored contract, test, candidate-amendment record or retained provenance |
+| [docs/catalog/skills/unslop.json](../../docs/catalog/skills/unslop.json) | Port-authored contract, test, candidate-amendment record or retained provenance |
+| [docs/catalog/skills/why.json](../../docs/catalog/skills/why.json) | Port-authored contract, test, candidate-amendment record or retained provenance |
+| [docs/compatibility.md](../../docs/compatibility.md) | Port-authored contract, test, candidate-amendment record or retained provenance |
+| [docs/maintenance/customization-boundary.md](../../docs/maintenance/customization-boundary.md) | Port-authored contract, test, candidate-amendment record or retained provenance |
+| [docs/maintenance/rollback.md](../../docs/maintenance/rollback.md) | Port-authored contract, test, candidate-amendment record or retained provenance |
+| [docs/maintenance/update-resolutions.example.json](../../docs/maintenance/update-resolutions.example.json) | Port-authored contract, test, candidate-amendment record or retained provenance |
+| [docs/maintenance/upstream-updates.md](../../docs/maintenance/upstream-updates.md) | Port-authored contract, test, candidate-amendment record or retained provenance |
+| [docs/maintenance/wiki-publication.md](../../docs/maintenance/wiki-publication.md) | Port-authored contract, test, candidate-amendment record or retained provenance |
+| [docs/parity/adaptations/02-manifest.json](../../docs/parity/adaptations/02-manifest.json) | Port-authored contract, test, candidate-amendment record or retained provenance |
+| [docs/parity/adaptations/05-model-roles.json](../../docs/parity/adaptations/05-model-roles.json) | Port-authored contract, test, candidate-amendment record or retained provenance |
+| [docs/parity/adaptations/12-bootstrap.json](../../docs/parity/adaptations/12-bootstrap.json) | Port-authored contract, test, candidate-amendment record or retained provenance |
+| [docs/parity/adaptations/13-orch-bookkeeping.json](../../docs/parity/adaptations/13-orch-bookkeeping.json) | Port-authored contract, test, candidate-amendment record or retained provenance |
+| [docs/parity/adaptations/14-watch-pr.json](../../docs/parity/adaptations/14-watch-pr.json) | Port-authored contract, test, candidate-amendment record or retained provenance |
+| [docs/parity/adaptations/15-worktree-audit.json](../../docs/parity/adaptations/15-worktree-audit.json) | Port-authored contract, test, candidate-amendment record or retained provenance |
+| [docs/parity/adaptations/16-decision-log.json](../../docs/parity/adaptations/16-decision-log.json) | Port-authored contract, test, candidate-amendment record or retained provenance |
+| [docs/parity/adaptations/17-check-plan.json](../../docs/parity/adaptations/17-check-plan.json) | Port-authored contract, test, candidate-amendment record or retained provenance |
+| [docs/parity/adaptations/24-metadata.json](../../docs/parity/adaptations/24-metadata.json) | Port-authored contract, test, candidate-amendment record or retained provenance |
+| [docs/parity/adaptations/architect.json](../../docs/parity/adaptations/architect.json) | Port-authored contract, test, candidate-amendment record or retained provenance |
+| [docs/parity/adaptations/arena.json](../../docs/parity/adaptations/arena.json) | Port-authored contract, test, candidate-amendment record or retained provenance |
+| [docs/parity/adaptations/automate-me.json](../../docs/parity/adaptations/automate-me.json) | Port-authored contract, test, candidate-amendment record or retained provenance |
+| [docs/parity/adaptations/benchmark-checklist.json](../../docs/parity/adaptations/benchmark-checklist.json) | Port-authored contract, test, candidate-amendment record or retained provenance |
+| [docs/parity/adaptations/benny.json](../../docs/parity/adaptations/benny.json) | Port-authored contract, test, candidate-amendment record or retained provenance |
+| [docs/parity/adaptations/blast-radius.json](../../docs/parity/adaptations/blast-radius.json) | Port-authored contract, test, candidate-amendment record or retained provenance |
+| [docs/parity/adaptations/bro.json](../../docs/parity/adaptations/bro.json) | Port-authored contract, test, candidate-amendment record or retained provenance |
+| [docs/parity/adaptations/correct.json](../../docs/parity/adaptations/correct.json) | Port-authored contract, test, candidate-amendment record or retained provenance |
+| [docs/parity/adaptations/create-formal-verification-skill.json](../../docs/parity/adaptations/create-formal-verification-skill.json) | Port-authored contract, test, candidate-amendment record or retained provenance |
+| [docs/parity/adaptations/create-verification-skill.json](../../docs/parity/adaptations/create-verification-skill.json) | Port-authored contract, test, candidate-amendment record or retained provenance |
+| [docs/parity/adaptations/figure-it-out.json](../../docs/parity/adaptations/figure-it-out.json) | Port-authored contract, test, candidate-amendment record or retained provenance |
+| [docs/parity/adaptations/guides.json](../../docs/parity/adaptations/guides.json) | Port-authored contract, test, candidate-amendment record or retained provenance |
+| [docs/parity/adaptations/harness-adapter.json](../../docs/parity/adaptations/harness-adapter.json) | Port-authored contract, test, candidate-amendment record or retained provenance |
+| [docs/parity/adaptations/how.json](../../docs/parity/adaptations/how.json) | Port-authored contract, test, candidate-amendment record or retained provenance |
+| [docs/parity/adaptations/interrogate.json](../../docs/parity/adaptations/interrogate.json) | Port-authored contract, test, candidate-amendment record or retained provenance |
+| [docs/parity/adaptations/maintain-formal-verification-skill.json](../../docs/parity/adaptations/maintain-formal-verification-skill.json) | Port-authored contract, test, candidate-amendment record or retained provenance |
+| [docs/parity/adaptations/maintain-verification-skill.json](../../docs/parity/adaptations/maintain-verification-skill.json) | Port-authored contract, test, candidate-amendment record or retained provenance |
+| [docs/parity/adaptations/make-bot-ui.json](../../docs/parity/adaptations/make-bot-ui.json) | Port-authored contract, test, candidate-amendment record or retained provenance |
+| [docs/parity/adaptations/no-comments.json](../../docs/parity/adaptations/no-comments.json) | Port-authored contract, test, candidate-amendment record or retained provenance |
+| [docs/parity/adaptations/playbook-authoring-a-skill.json](../../docs/parity/adaptations/playbook-authoring-a-skill.json) | Port-authored contract, test, candidate-amendment record or retained provenance |
+| [docs/parity/adaptations/playbook-autonomous-run.json](../../docs/parity/adaptations/playbook-autonomous-run.json) | Port-authored contract, test, candidate-amendment record or retained provenance |
+| [docs/parity/adaptations/playbook-autopilot-full.json](../../docs/parity/adaptations/playbook-autopilot-full.json) | Port-authored contract, test, candidate-amendment record or retained provenance |
+| [docs/parity/adaptations/playbook-autopilot-stack.json](../../docs/parity/adaptations/playbook-autopilot-stack.json) | Port-authored contract, test, candidate-amendment record or retained provenance |
+| [docs/parity/adaptations/playbook-babysit.json](../../docs/parity/adaptations/playbook-babysit.json) | Port-authored contract, test, candidate-amendment record or retained provenance |
+| [docs/parity/adaptations/playbook-bug-fix.json](../../docs/parity/adaptations/playbook-bug-fix.json) | Port-authored contract, test, candidate-amendment record or retained provenance |
+| [docs/parity/adaptations/playbook-eval.json](../../docs/parity/adaptations/playbook-eval.json) | Port-authored contract, test, candidate-amendment record or retained provenance |
+| [docs/parity/adaptations/playbook-feature.json](../../docs/parity/adaptations/playbook-feature.json) | Port-authored contract, test, candidate-amendment record or retained provenance |
+| [docs/parity/adaptations/playbook-hillclimb.json](../../docs/parity/adaptations/playbook-hillclimb.json) | Port-authored contract, test, candidate-amendment record or retained provenance |
+| [docs/parity/adaptations/playbook-investigation.json](../../docs/parity/adaptations/playbook-investigation.json) | Port-authored contract, test, candidate-amendment record or retained provenance |
+| [docs/parity/adaptations/playbook-multi-phase-plan.json](../../docs/parity/adaptations/playbook-multi-phase-plan.json) | Port-authored contract, test, candidate-amendment record or retained provenance |
+| [docs/parity/adaptations/playbook-opening-a-pr.json](../../docs/parity/adaptations/playbook-opening-a-pr.json) | Port-authored contract, test, candidate-amendment record or retained provenance |
+| [docs/parity/adaptations/playbook-orchestrate.json](../../docs/parity/adaptations/playbook-orchestrate.json) | Port-authored contract, test, candidate-amendment record or retained provenance |
+| [docs/parity/adaptations/playbook-pause-safely.json](../../docs/parity/adaptations/playbook-pause-safely.json) | Port-authored contract, test, candidate-amendment record or retained provenance |
+| [docs/parity/adaptations/playbook-perf-issue.json](../../docs/parity/adaptations/playbook-perf-issue.json) | Port-authored contract, test, candidate-amendment record or retained provenance |
+| [docs/parity/adaptations/playbook-prototype.json](../../docs/parity/adaptations/playbook-prototype.json) | Port-authored contract, test, candidate-amendment record or retained provenance |
+| [docs/parity/adaptations/playbook-refactoring.json](../../docs/parity/adaptations/playbook-refactoring.json) | Port-authored contract, test, candidate-amendment record or retained provenance |
+| [docs/parity/adaptations/playbook-runtime-forensics.json](../../docs/parity/adaptations/playbook-runtime-forensics.json) | Port-authored contract, test, candidate-amendment record or retained provenance |
+| [docs/parity/adaptations/playbook-session-pickup.json](../../docs/parity/adaptations/playbook-session-pickup.json) | Port-authored contract, test, candidate-amendment record or retained provenance |
+| [docs/parity/adaptations/playbook-shipping.json](../../docs/parity/adaptations/playbook-shipping.json) | Port-authored contract, test, candidate-amendment record or retained provenance |
+| [docs/parity/adaptations/playbook-trace-forensics.json](../../docs/parity/adaptations/playbook-trace-forensics.json) | Port-authored contract, test, candidate-amendment record or retained provenance |
+| [docs/parity/adaptations/playbook-visual-parity.json](../../docs/parity/adaptations/playbook-visual-parity.json) | Port-authored contract, test, candidate-amendment record or retained provenance |
+| [docs/parity/adaptations/playbook-worktree-cleanup.json](../../docs/parity/adaptations/playbook-worktree-cleanup.json) | Port-authored contract, test, candidate-amendment record or retained provenance |
+| [docs/parity/adaptations/poteto-help.json](../../docs/parity/adaptations/poteto-help.json) | Port-authored contract, test, candidate-amendment record or retained provenance |
+| [docs/parity/adaptations/poteto-mode.json](../../docs/parity/adaptations/poteto-mode.json) | Port-authored contract, test, candidate-amendment record or retained provenance |
+| [docs/parity/adaptations/principle-attack-the-premise.json](../../docs/parity/adaptations/principle-attack-the-premise.json) | Port-authored contract, test, candidate-amendment record or retained provenance |
+| [docs/parity/adaptations/principle-boundary-discipline.json](../../docs/parity/adaptations/principle-boundary-discipline.json) | Port-authored contract, test, candidate-amendment record or retained provenance |
+| [docs/parity/adaptations/principle-build-the-lever.json](../../docs/parity/adaptations/principle-build-the-lever.json) | Port-authored contract, test, candidate-amendment record or retained provenance |
+| [docs/parity/adaptations/principle-encode-lessons-in-structure.json](../../docs/parity/adaptations/principle-encode-lessons-in-structure.json) | Port-authored contract, test, candidate-amendment record or retained provenance |
+| [docs/parity/adaptations/principle-exhaust-the-design-space.json](../../docs/parity/adaptations/principle-exhaust-the-design-space.json) | Port-authored contract, test, candidate-amendment record or retained provenance |
+| [docs/parity/adaptations/principle-experience-first.json](../../docs/parity/adaptations/principle-experience-first.json) | Port-authored contract, test, candidate-amendment record or retained provenance |
+| [docs/parity/adaptations/principle-explain-the-number.json](../../docs/parity/adaptations/principle-explain-the-number.json) | Port-authored contract, test, candidate-amendment record or retained provenance |
+| [docs/parity/adaptations/principle-fix-root-causes.json](../../docs/parity/adaptations/principle-fix-root-causes.json) | Port-authored contract, test, candidate-amendment record or retained provenance |
+| [docs/parity/adaptations/principle-foundational-thinking.json](../../docs/parity/adaptations/principle-foundational-thinking.json) | Port-authored contract, test, candidate-amendment record or retained provenance |
+| [docs/parity/adaptations/principle-guard-the-context-window.json](../../docs/parity/adaptations/principle-guard-the-context-window.json) | Port-authored contract, test, candidate-amendment record or retained provenance |
+| [docs/parity/adaptations/principle-laziness-protocol.json](../../docs/parity/adaptations/principle-laziness-protocol.json) | Port-authored contract, test, candidate-amendment record or retained provenance |
+| [docs/parity/adaptations/principle-make-operations-idempotent.json](../../docs/parity/adaptations/principle-make-operations-idempotent.json) | Port-authored contract, test, candidate-amendment record or retained provenance |
+| [docs/parity/adaptations/principle-migrate-callers-then-delete-legacy-apis.json](../../docs/parity/adaptations/principle-migrate-callers-then-delete-legacy-apis.json) | Port-authored contract, test, candidate-amendment record or retained provenance |
+| [docs/parity/adaptations/principle-minimize-reader-load.json](../../docs/parity/adaptations/principle-minimize-reader-load.json) | Port-authored contract, test, candidate-amendment record or retained provenance |
+| [docs/parity/adaptations/principle-model-the-domain.json](../../docs/parity/adaptations/principle-model-the-domain.json) | Port-authored contract, test, candidate-amendment record or retained provenance |
+| [docs/parity/adaptations/principle-never-block-on-the-human.json](../../docs/parity/adaptations/principle-never-block-on-the-human.json) | Port-authored contract, test, candidate-amendment record or retained provenance |
+| [docs/parity/adaptations/principle-outcome-oriented-execution.json](../../docs/parity/adaptations/principle-outcome-oriented-execution.json) | Port-authored contract, test, candidate-amendment record or retained provenance |
+| [docs/parity/adaptations/principle-prove-it-works.json](../../docs/parity/adaptations/principle-prove-it-works.json) | Port-authored contract, test, candidate-amendment record or retained provenance |
+| [docs/parity/adaptations/principle-redesign-from-first-principles.json](../../docs/parity/adaptations/principle-redesign-from-first-principles.json) | Port-authored contract, test, candidate-amendment record or retained provenance |
+| [docs/parity/adaptations/principle-separate-before-serializing-shared-state.json](../../docs/parity/adaptations/principle-separate-before-serializing-shared-state.json) | Port-authored contract, test, candidate-amendment record or retained provenance |
+| [docs/parity/adaptations/principle-sequence-verifiable-units.json](../../docs/parity/adaptations/principle-sequence-verifiable-units.json) | Port-authored contract, test, candidate-amendment record or retained provenance |
+| [docs/parity/adaptations/principle-subtract-before-you-add.json](../../docs/parity/adaptations/principle-subtract-before-you-add.json) | Port-authored contract, test, candidate-amendment record or retained provenance |
+| [docs/parity/adaptations/principle-test-behavior-not-implementation.json](../../docs/parity/adaptations/principle-test-behavior-not-implementation.json) | Port-authored contract, test, candidate-amendment record or retained provenance |
+| [docs/parity/adaptations/principle-type-system-discipline.json](../../docs/parity/adaptations/principle-type-system-discipline.json) | Port-authored contract, test, candidate-amendment record or retained provenance |
+| [docs/parity/adaptations/recall.json](../../docs/parity/adaptations/recall.json) | Port-authored contract, test, candidate-amendment record or retained provenance |
+| [docs/parity/adaptations/reflect.json](../../docs/parity/adaptations/reflect.json) | Port-authored contract, test, candidate-amendment record or retained provenance |
+| [docs/parity/adaptations/setup-pstack.json](../../docs/parity/adaptations/setup-pstack.json) | Port-authored contract, test, candidate-amendment record or retained provenance |
+| [docs/parity/adaptations/show-me-your-work.json](../../docs/parity/adaptations/show-me-your-work.json) | Port-authored contract, test, candidate-amendment record or retained provenance |
+| [docs/parity/adaptations/swarm.json](../../docs/parity/adaptations/swarm.json) | Port-authored contract, test, candidate-amendment record or retained provenance |
+| [docs/parity/adaptations/tdd.json](../../docs/parity/adaptations/tdd.json) | Port-authored contract, test, candidate-amendment record or retained provenance |
+| [docs/parity/adaptations/teach.json](../../docs/parity/adaptations/teach.json) | Port-authored contract, test, candidate-amendment record or retained provenance |
+| [docs/parity/adaptations/technical-writing.json](../../docs/parity/adaptations/technical-writing.json) | Port-authored contract, test, candidate-amendment record or retained provenance |
+| [docs/parity/adaptations/typescript-best-practices.json](../../docs/parity/adaptations/typescript-best-practices.json) | Port-authored contract, test, candidate-amendment record or retained provenance |
+| [docs/parity/adaptations/unslop.json](../../docs/parity/adaptations/unslop.json) | Port-authored contract, test, candidate-amendment record or retained provenance |
+| [docs/parity/adaptations/update-0-2-0.json](../../docs/parity/adaptations/update-0-2-0.json) | Port-authored contract, test, candidate-amendment record or retained provenance |
+| [docs/parity/adaptations/why.json](../../docs/parity/adaptations/why.json) | Port-authored contract, test, candidate-amendment record or retained provenance |
+| [docs/parity/baseline-paths.txt](../../docs/parity/baseline-paths.txt) | Port-authored contract, test, candidate-amendment record or retained provenance |
+| [docs/parity/baseline-policy.json](../../docs/parity/baseline-policy.json) | Port-authored contract, test, candidate-amendment record or retained provenance |
+| [docs/parity/case-registry.json](../../docs/parity/case-registry.json) | Port-authored contract, test, candidate-amendment record or retained provenance |
+| [docs/parity/cases/README.md](../../docs/parity/cases/README.md) | Port-authored contract, test, candidate-amendment record or retained provenance |
+| [docs/parity/cases/benny.json](../../docs/parity/cases/benny.json) | Port-authored contract, test, candidate-amendment record or retained provenance |
+| [docs/parity/cases/candidate-support-review.json](../../docs/parity/cases/candidate-support-review.json) | Port-authored contract, test, candidate-amendment record or retained provenance |
+| [docs/parity/cases/contracts.json](../../docs/parity/cases/contracts.json) | Port-authored contract, test, candidate-amendment record or retained provenance |
+| [docs/parity/cases/dependencies.json](../../docs/parity/cases/dependencies.json) | Port-authored contract, test, candidate-amendment record or retained provenance |
+| [docs/parity/cases/documentation-walkthroughs.json](../../docs/parity/cases/documentation-walkthroughs.json) | Port-authored contract, test, candidate-amendment record or retained provenance |
+| [docs/parity/cases/guides.json](../../docs/parity/cases/guides.json) | Port-authored contract, test, candidate-amendment record or retained provenance |
+| [docs/parity/cases/model-roles.json](../../docs/parity/cases/model-roles.json) | Port-authored contract, test, candidate-amendment record or retained provenance |
+| [docs/parity/cases/package-discovery.json](../../docs/parity/cases/package-discovery.json) | Port-authored contract, test, candidate-amendment record or retained provenance |
+| [docs/parity/cases/package-support.json](../../docs/parity/cases/package-support.json) | Port-authored contract, test, candidate-amendment record or retained provenance |
+| [docs/parity/cases/playbooks/authoring-a-skill.json](../../docs/parity/cases/playbooks/authoring-a-skill.json) | Port-authored contract, test, candidate-amendment record or retained provenance |
+| [docs/parity/cases/playbooks/autonomous-run.json](../../docs/parity/cases/playbooks/autonomous-run.json) | Port-authored contract, test, candidate-amendment record or retained provenance |
+| [docs/parity/cases/playbooks/autopilot-full.json](../../docs/parity/cases/playbooks/autopilot-full.json) | Port-authored contract, test, candidate-amendment record or retained provenance |
+| [docs/parity/cases/playbooks/autopilot-stack.json](../../docs/parity/cases/playbooks/autopilot-stack.json) | Port-authored contract, test, candidate-amendment record or retained provenance |
+| [docs/parity/cases/playbooks/babysit.json](../../docs/parity/cases/playbooks/babysit.json) | Port-authored contract, test, candidate-amendment record or retained provenance |
+| [docs/parity/cases/playbooks/bug-fix.json](../../docs/parity/cases/playbooks/bug-fix.json) | Port-authored contract, test, candidate-amendment record or retained provenance |
+| [docs/parity/cases/playbooks/eval.json](../../docs/parity/cases/playbooks/eval.json) | Port-authored contract, test, candidate-amendment record or retained provenance |
+| [docs/parity/cases/playbooks/feature.json](../../docs/parity/cases/playbooks/feature.json) | Port-authored contract, test, candidate-amendment record or retained provenance |
+| [docs/parity/cases/playbooks/hillclimb.json](../../docs/parity/cases/playbooks/hillclimb.json) | Port-authored contract, test, candidate-amendment record or retained provenance |
+| [docs/parity/cases/playbooks/investigation.json](../../docs/parity/cases/playbooks/investigation.json) | Port-authored contract, test, candidate-amendment record or retained provenance |
+| [docs/parity/cases/playbooks/multi-phase-plan.json](../../docs/parity/cases/playbooks/multi-phase-plan.json) | Port-authored contract, test, candidate-amendment record or retained provenance |
+| [docs/parity/cases/playbooks/opening-a-pr.json](../../docs/parity/cases/playbooks/opening-a-pr.json) | Port-authored contract, test, candidate-amendment record or retained provenance |
+| [docs/parity/cases/playbooks/orchestrate.json](../../docs/parity/cases/playbooks/orchestrate.json) | Port-authored contract, test, candidate-amendment record or retained provenance |
+| [docs/parity/cases/playbooks/pause-safely.json](../../docs/parity/cases/playbooks/pause-safely.json) | Port-authored contract, test, candidate-amendment record or retained provenance |
+| [docs/parity/cases/playbooks/perf-issue.json](../../docs/parity/cases/playbooks/perf-issue.json) | Port-authored contract, test, candidate-amendment record or retained provenance |
+| [docs/parity/cases/playbooks/prototype.json](../../docs/parity/cases/playbooks/prototype.json) | Port-authored contract, test, candidate-amendment record or retained provenance |
+| [docs/parity/cases/playbooks/refactoring.json](../../docs/parity/cases/playbooks/refactoring.json) | Port-authored contract, test, candidate-amendment record or retained provenance |
+| [docs/parity/cases/playbooks/runtime-forensics.json](../../docs/parity/cases/playbooks/runtime-forensics.json) | Port-authored contract, test, candidate-amendment record or retained provenance |
+| [docs/parity/cases/playbooks/session-pickup.json](../../docs/parity/cases/playbooks/session-pickup.json) | Port-authored contract, test, candidate-amendment record or retained provenance |
+| [docs/parity/cases/playbooks/shipping.json](../../docs/parity/cases/playbooks/shipping.json) | Port-authored contract, test, candidate-amendment record or retained provenance |
+| [docs/parity/cases/playbooks/trace-forensics.json](../../docs/parity/cases/playbooks/trace-forensics.json) | Port-authored contract, test, candidate-amendment record or retained provenance |
+| [docs/parity/cases/playbooks/visual-parity.json](../../docs/parity/cases/playbooks/visual-parity.json) | Port-authored contract, test, candidate-amendment record or retained provenance |
+| [docs/parity/cases/playbooks/worktree-cleanup.json](../../docs/parity/cases/playbooks/worktree-cleanup.json) | Port-authored contract, test, candidate-amendment record or retained provenance |
+| [docs/parity/cases/pstack-plan-format.json](../../docs/parity/cases/pstack-plan-format.json) | Port-authored contract, test, candidate-amendment record or retained provenance |
+| [docs/parity/cases/schema.json](../../docs/parity/cases/schema.json) | Port-authored contract, test, candidate-amendment record or retained provenance |
+| [docs/parity/cases/skills/architect.json](../../docs/parity/cases/skills/architect.json) | Port-authored contract, test, candidate-amendment record or retained provenance |
+| [docs/parity/cases/skills/arena.json](../../docs/parity/cases/skills/arena.json) | Port-authored contract, test, candidate-amendment record or retained provenance |
+| [docs/parity/cases/skills/automate-me.json](../../docs/parity/cases/skills/automate-me.json) | Port-authored contract, test, candidate-amendment record or retained provenance |
+| [docs/parity/cases/skills/benchmark-checklist.json](../../docs/parity/cases/skills/benchmark-checklist.json) | Port-authored contract, test, candidate-amendment record or retained provenance |
+| [docs/parity/cases/skills/blast-radius.json](../../docs/parity/cases/skills/blast-radius.json) | Port-authored contract, test, candidate-amendment record or retained provenance |
+| [docs/parity/cases/skills/bro.json](../../docs/parity/cases/skills/bro.json) | Port-authored contract, test, candidate-amendment record or retained provenance |
+| [docs/parity/cases/skills/correct.json](../../docs/parity/cases/skills/correct.json) | Port-authored contract, test, candidate-amendment record or retained provenance |
+| [docs/parity/cases/skills/create-formal-verification-skill.json](../../docs/parity/cases/skills/create-formal-verification-skill.json) | Port-authored contract, test, candidate-amendment record or retained provenance |
+| [docs/parity/cases/skills/create-verification-skill.json](../../docs/parity/cases/skills/create-verification-skill.json) | Port-authored contract, test, candidate-amendment record or retained provenance |
+| [docs/parity/cases/skills/figure-it-out.json](../../docs/parity/cases/skills/figure-it-out.json) | Port-authored contract, test, candidate-amendment record or retained provenance |
+| [docs/parity/cases/skills/how.json](../../docs/parity/cases/skills/how.json) | Port-authored contract, test, candidate-amendment record or retained provenance |
+| [docs/parity/cases/skills/in-your-own-words.json](../../docs/parity/cases/skills/in-your-own-words.json) | Port-authored contract, test, candidate-amendment record or retained provenance |
+| [docs/parity/cases/skills/interrogate.json](../../docs/parity/cases/skills/interrogate.json) | Port-authored contract, test, candidate-amendment record or retained provenance |
+| [docs/parity/cases/skills/ketchup.json](../../docs/parity/cases/skills/ketchup.json) | Port-authored contract, test, candidate-amendment record or retained provenance |
+| [docs/parity/cases/skills/maintain-formal-verification-skill.json](../../docs/parity/cases/skills/maintain-formal-verification-skill.json) | Port-authored contract, test, candidate-amendment record or retained provenance |
+| [docs/parity/cases/skills/maintain-verification-skill.json](../../docs/parity/cases/skills/maintain-verification-skill.json) | Port-authored contract, test, candidate-amendment record or retained provenance |
+| [docs/parity/cases/skills/make-bot-ui.json](../../docs/parity/cases/skills/make-bot-ui.json) | Port-authored contract, test, candidate-amendment record or retained provenance |
+| [docs/parity/cases/skills/no-comments.json](../../docs/parity/cases/skills/no-comments.json) | Port-authored contract, test, candidate-amendment record or retained provenance |
+| [docs/parity/cases/skills/poteto-help.json](../../docs/parity/cases/skills/poteto-help.json) | Port-authored contract, test, candidate-amendment record or retained provenance |
+| [docs/parity/cases/skills/poteto-mode.json](../../docs/parity/cases/skills/poteto-mode.json) | Port-authored contract, test, candidate-amendment record or retained provenance |
+| [docs/parity/cases/skills/principle-attack-the-premise.json](../../docs/parity/cases/skills/principle-attack-the-premise.json) | Port-authored contract, test, candidate-amendment record or retained provenance |
+| [docs/parity/cases/skills/principle-boundary-discipline.json](../../docs/parity/cases/skills/principle-boundary-discipline.json) | Port-authored contract, test, candidate-amendment record or retained provenance |
+| [docs/parity/cases/skills/principle-build-the-lever.json](../../docs/parity/cases/skills/principle-build-the-lever.json) | Port-authored contract, test, candidate-amendment record or retained provenance |
+| [docs/parity/cases/skills/principle-encode-lessons-in-structure.json](../../docs/parity/cases/skills/principle-encode-lessons-in-structure.json) | Port-authored contract, test, candidate-amendment record or retained provenance |
+| [docs/parity/cases/skills/principle-exhaust-the-design-space.json](../../docs/parity/cases/skills/principle-exhaust-the-design-space.json) | Port-authored contract, test, candidate-amendment record or retained provenance |
+| [docs/parity/cases/skills/principle-experience-first.json](../../docs/parity/cases/skills/principle-experience-first.json) | Port-authored contract, test, candidate-amendment record or retained provenance |
+| [docs/parity/cases/skills/principle-explain-the-number.json](../../docs/parity/cases/skills/principle-explain-the-number.json) | Port-authored contract, test, candidate-amendment record or retained provenance |
+| [docs/parity/cases/skills/principle-fix-root-causes.json](../../docs/parity/cases/skills/principle-fix-root-causes.json) | Port-authored contract, test, candidate-amendment record or retained provenance |
+| [docs/parity/cases/skills/principle-foundational-thinking.json](../../docs/parity/cases/skills/principle-foundational-thinking.json) | Port-authored contract, test, candidate-amendment record or retained provenance |
+| [docs/parity/cases/skills/principle-guard-the-context-window.json](../../docs/parity/cases/skills/principle-guard-the-context-window.json) | Port-authored contract, test, candidate-amendment record or retained provenance |
+| [docs/parity/cases/skills/principle-laziness-protocol.json](../../docs/parity/cases/skills/principle-laziness-protocol.json) | Port-authored contract, test, candidate-amendment record or retained provenance |
+| [docs/parity/cases/skills/principle-make-operations-idempotent.json](../../docs/parity/cases/skills/principle-make-operations-idempotent.json) | Port-authored contract, test, candidate-amendment record or retained provenance |
+| [docs/parity/cases/skills/principle-migrate-callers-then-delete-legacy-apis.json](../../docs/parity/cases/skills/principle-migrate-callers-then-delete-legacy-apis.json) | Port-authored contract, test, candidate-amendment record or retained provenance |
+| [docs/parity/cases/skills/principle-minimize-reader-load.json](../../docs/parity/cases/skills/principle-minimize-reader-load.json) | Port-authored contract, test, candidate-amendment record or retained provenance |
+| [docs/parity/cases/skills/principle-model-the-domain.json](../../docs/parity/cases/skills/principle-model-the-domain.json) | Port-authored contract, test, candidate-amendment record or retained provenance |
+| [docs/parity/cases/skills/principle-never-block-on-the-human.json](../../docs/parity/cases/skills/principle-never-block-on-the-human.json) | Port-authored contract, test, candidate-amendment record or retained provenance |
+| [docs/parity/cases/skills/principle-outcome-oriented-execution.json](../../docs/parity/cases/skills/principle-outcome-oriented-execution.json) | Port-authored contract, test, candidate-amendment record or retained provenance |
+| [docs/parity/cases/skills/principle-prove-it-works.json](../../docs/parity/cases/skills/principle-prove-it-works.json) | Port-authored contract, test, candidate-amendment record or retained provenance |
+| [docs/parity/cases/skills/principle-redesign-from-first-principles.json](../../docs/parity/cases/skills/principle-redesign-from-first-principles.json) | Port-authored contract, test, candidate-amendment record or retained provenance |
+| [docs/parity/cases/skills/principle-separate-before-serializing-shared-state.json](../../docs/parity/cases/skills/principle-separate-before-serializing-shared-state.json) | Port-authored contract, test, candidate-amendment record or retained provenance |
+| [docs/parity/cases/skills/principle-sequence-verifiable-units.json](../../docs/parity/cases/skills/principle-sequence-verifiable-units.json) | Port-authored contract, test, candidate-amendment record or retained provenance |
+| [docs/parity/cases/skills/principle-subtract-before-you-add.json](../../docs/parity/cases/skills/principle-subtract-before-you-add.json) | Port-authored contract, test, candidate-amendment record or retained provenance |
+| [docs/parity/cases/skills/principle-test-behavior-not-implementation.json](../../docs/parity/cases/skills/principle-test-behavior-not-implementation.json) | Port-authored contract, test, candidate-amendment record or retained provenance |
+| [docs/parity/cases/skills/principle-type-system-discipline.json](../../docs/parity/cases/skills/principle-type-system-discipline.json) | Port-authored contract, test, candidate-amendment record or retained provenance |
+| [docs/parity/cases/skills/recall.json](../../docs/parity/cases/skills/recall.json) | Port-authored contract, test, candidate-amendment record or retained provenance |
+| [docs/parity/cases/skills/reflect.json](../../docs/parity/cases/skills/reflect.json) | Port-authored contract, test, candidate-amendment record or retained provenance |
+| [docs/parity/cases/skills/setup-pstack.json](../../docs/parity/cases/skills/setup-pstack.json) | Port-authored contract, test, candidate-amendment record or retained provenance |
+| [docs/parity/cases/skills/sharpen-input-is-content.json](../../docs/parity/cases/skills/sharpen-input-is-content.json) | Port-authored contract, test, candidate-amendment record or retained provenance |
+| [docs/parity/cases/skills/sharpen-missing-prompt.json](../../docs/parity/cases/skills/sharpen-missing-prompt.json) | Port-authored contract, test, candidate-amendment record or retained provenance |
+| [docs/parity/cases/skills/sharpen-unavailable-tools.json](../../docs/parity/cases/skills/sharpen-unavailable-tools.json) | Port-authored contract, test, candidate-amendment record or retained provenance |
+| [docs/parity/cases/skills/sharpen.json](../../docs/parity/cases/skills/sharpen.json) | Port-authored contract, test, candidate-amendment record or retained provenance |
+| [docs/parity/cases/skills/show-me-your-work.json](../../docs/parity/cases/skills/show-me-your-work.json) | Port-authored contract, test, candidate-amendment record or retained provenance |
+| [docs/parity/cases/skills/swarm.json](../../docs/parity/cases/skills/swarm.json) | Port-authored contract, test, candidate-amendment record or retained provenance |
+| [docs/parity/cases/skills/tdd.json](../../docs/parity/cases/skills/tdd.json) | Port-authored contract, test, candidate-amendment record or retained provenance |
+| [docs/parity/cases/skills/teach.json](../../docs/parity/cases/skills/teach.json) | Port-authored contract, test, candidate-amendment record or retained provenance |
+| [docs/parity/cases/skills/technical-writing.json](../../docs/parity/cases/skills/technical-writing.json) | Port-authored contract, test, candidate-amendment record or retained provenance |
+| [docs/parity/cases/skills/typescript-best-practices.json](../../docs/parity/cases/skills/typescript-best-practices.json) | Port-authored contract, test, candidate-amendment record or retained provenance |
+| [docs/parity/cases/skills/unslop.json](../../docs/parity/cases/skills/unslop.json) | Port-authored contract, test, candidate-amendment record or retained provenance |
+| [docs/parity/cases/skills/why.json](../../docs/parity/cases/skills/why.json) | Port-authored contract, test, candidate-amendment record or retained provenance |
+| [docs/parity/cases/upstream-update.json](../../docs/parity/cases/upstream-update.json) | Port-authored contract, test, candidate-amendment record or retained provenance |
+| [docs/parity/dependencies.json](../../docs/parity/dependencies.json) | Port-authored contract, test, candidate-amendment record or retained provenance |
+| [docs/parity/evidence.schema.json](../../docs/parity/evidence.schema.json) | Port-authored contract, test, candidate-amendment record or retained provenance |
+| [docs/parity/evidence/chatgpt/absent-workers.json](../../docs/parity/evidence/chatgpt/absent-workers.json) | Port-authored contract, test, candidate-amendment record or retained provenance |
+| [docs/parity/evidence/chatgpt/accessible-trace.json](../../docs/parity/evidence/chatgpt/accessible-trace.json) | Port-authored contract, test, candidate-amendment record or retained provenance |
+| [docs/parity/evidence/chatgpt/adversarial-review.json](../../docs/parity/evidence/chatgpt/adversarial-review.json) | Port-authored contract, test, candidate-amendment record or retained provenance |
+| [docs/parity/evidence/chatgpt/alternatives.json](../../docs/parity/evidence/chatgpt/alternatives.json) | Port-authored contract, test, candidate-amendment record or retained provenance |
+| [docs/parity/evidence/chatgpt/approval-before-edit.json](../../docs/parity/evidence/chatgpt/approval-before-edit.json) | Port-authored contract, test, candidate-amendment record or retained provenance |
+| [docs/parity/evidence/chatgpt/arena-walkthrough.json](../../docs/parity/evidence/chatgpt/arena-walkthrough.json) | Port-authored contract, test, candidate-amendment record or retained provenance |
+| [docs/parity/evidence/chatgpt/authorization-support-check.md](../../docs/parity/evidence/chatgpt/authorization-support-check.md) | Port-authored contract, test, candidate-amendment record or retained provenance |
+| [docs/parity/evidence/chatgpt/authorized-program.json](../../docs/parity/evidence/chatgpt/authorized-program.json) | Port-authored contract, test, candidate-amendment record or retained provenance |
+| [docs/parity/evidence/chatgpt/benny-duplicate-report.json](../../docs/parity/evidence/chatgpt/benny-duplicate-report.json) | Port-authored contract, test, candidate-amendment record or retained provenance |
+| [docs/parity/evidence/chatgpt/benny-existing-fix-ownership.json](../../docs/parity/evidence/chatgpt/benny-existing-fix-ownership.json) | Port-authored contract, test, candidate-amendment record or retained provenance |
+| [docs/parity/evidence/chatgpt/benny-existing-pr.json](../../docs/parity/evidence/chatgpt/benny-existing-pr.json) | Port-authored contract, test, candidate-amendment record or retained provenance |
+| [docs/parity/evidence/chatgpt/benny-missing-adapter.json](../../docs/parity/evidence/chatgpt/benny-missing-adapter.json) | Port-authored contract, test, candidate-amendment record or retained provenance |
+| [docs/parity/evidence/chatgpt/benny-missing-coordinates.json](../../docs/parity/evidence/chatgpt/benny-missing-coordinates.json) | Port-authored contract, test, candidate-amendment record or retained provenance |
+| [docs/parity/evidence/chatgpt/benny-source-thread-compensation.json](../../docs/parity/evidence/chatgpt/benny-source-thread-compensation.json) | Port-authored contract, test, candidate-amendment record or retained provenance |
+| [docs/parity/evidence/chatgpt/benny-unsupported-trigger.json](../../docs/parity/evidence/chatgpt/benny-unsupported-trigger.json) | Port-authored contract, test, candidate-amendment record or retained provenance |
+| [docs/parity/evidence/chatgpt/benny-untrusted-marker.json](../../docs/parity/evidence/chatgpt/benny-untrusted-marker.json) | Port-authored contract, test, candidate-amendment record or retained provenance |
+| [docs/parity/evidence/chatgpt/boundary-design.json](../../docs/parity/evidence/chatgpt/boundary-design.json) | Port-authored contract, test, candidate-amendment record or retained provenance |
+| [docs/parity/evidence/chatgpt/bounded-improvement.json](../../docs/parity/evidence/chatgpt/bounded-improvement.json) | Port-authored contract, test, candidate-amendment record or retained provenance |
+| [docs/parity/evidence/chatgpt/bounded-poll.json](../../docs/parity/evidence/chatgpt/bounded-poll.json) | Port-authored contract, test, candidate-amendment record or retained provenance |
+| [docs/parity/evidence/chatgpt/caller-migration.json](../../docs/parity/evidence/chatgpt/caller-migration.json) | Port-authored contract, test, candidate-amendment record or retained provenance |
+| [docs/parity/evidence/chatgpt/cancelled-worker.json](../../docs/parity/evidence/chatgpt/cancelled-worker.json) | Port-authored contract, test, candidate-amendment record or retained provenance |
+| [docs/parity/evidence/chatgpt/candidate-cross-review.json](../../docs/parity/evidence/chatgpt/candidate-cross-review.json) | Port-authored contract, test, candidate-amendment record or retained provenance |
+| [docs/parity/evidence/chatgpt/chatgpt-setup-from-readme.json](../../docs/parity/evidence/chatgpt/chatgpt-setup-from-readme.json) | Port-authored contract, test, candidate-amendment record or retained provenance |
+| [docs/parity/evidence/chatgpt/codex-setup-from-readme.json](../../docs/parity/evidence/chatgpt/codex-setup-from-readme.json) | Port-authored contract, test, candidate-amendment record or retained provenance |
+| [docs/parity/evidence/chatgpt/comparable-revisions.json](../../docs/parity/evidence/chatgpt/comparable-revisions.json) | Port-authored contract, test, candidate-amendment record or retained provenance |
+| [docs/parity/evidence/chatgpt/contiguous-verified-stack.json](../../docs/parity/evidence/chatgpt/contiguous-verified-stack.json) | Port-authored contract, test, candidate-amendment record or retained provenance |
+| [docs/parity/evidence/chatgpt/dead-path.json](../../docs/parity/evidence/chatgpt/dead-path.json) | Port-authored contract, test, candidate-amendment record or retained provenance |
+| [docs/parity/evidence/chatgpt/decision-trail.json](../../docs/parity/evidence/chatgpt/decision-trail.json) | Port-authored contract, test, candidate-amendment record or retained provenance |
+| [docs/parity/evidence/chatgpt/denied-writes.json](../../docs/parity/evidence/chatgpt/denied-writes.json) | Port-authored contract, test, candidate-amendment record or retained provenance |
+| [docs/parity/evidence/chatgpt/dense-doc.json](../../docs/parity/evidence/chatgpt/dense-doc.json) | Port-authored contract, test, candidate-amendment record or retained provenance |
+| [docs/parity/evidence/chatgpt/dependency-readiness.json](../../docs/parity/evidence/chatgpt/dependency-readiness.json) | Port-authored contract, test, candidate-amendment record or retained provenance |
+| [docs/parity/evidence/chatgpt/dependent-caller.json](../../docs/parity/evidence/chatgpt/dependent-caller.json) | Port-authored contract, test, candidate-amendment record or retained provenance |
+| [docs/parity/evidence/chatgpt/discriminating-eval.json](../../docs/parity/evidence/chatgpt/discriminating-eval.json) | Port-authored contract, test, candidate-amendment record or retained provenance |
+| [docs/parity/evidence/chatgpt/draft-only-authorized.json](../../docs/parity/evidence/chatgpt/draft-only-authorized.json) | Port-authored contract, test, candidate-amendment record or retained provenance |
+| [docs/parity/evidence/chatgpt/empty-function.json](../../docs/parity/evidence/chatgpt/empty-function.json) | Port-authored contract, test, candidate-amendment record or retained provenance |
+| [docs/parity/evidence/chatgpt/existing-personal-mode.json](../../docs/parity/evidence/chatgpt/existing-personal-mode.json) | Port-authored contract, test, candidate-amendment record or retained provenance |
+| [docs/parity/evidence/chatgpt/false-success.json](../../docs/parity/evidence/chatgpt/false-success.json) | Port-authored contract, test, candidate-amendment record or retained provenance |
+| [docs/parity/evidence/chatgpt/fresh-worker-mode.json](../../docs/parity/evidence/chatgpt/fresh-worker-mode.json) | Port-authored contract, test, candidate-amendment record or retained provenance |
+| [docs/parity/evidence/chatgpt/grounded-explanation.json](../../docs/parity/evidence/chatgpt/grounded-explanation.json) | Port-authored contract, test, candidate-amendment record or retained provenance |
+| [docs/parity/evidence/chatgpt/guides-github-absent.json](../../docs/parity/evidence/chatgpt/guides-github-absent.json) | Port-authored contract, test, candidate-amendment record or retained provenance |
+| [docs/parity/evidence/chatgpt/guides-local-codex.json](../../docs/parity/evidence/chatgpt/guides-local-codex.json) | Port-authored contract, test, candidate-amendment record or retained provenance |
+| [docs/parity/evidence/chatgpt/guides-optional-setup-skipped.json](../../docs/parity/evidence/chatgpt/guides-optional-setup-skipped.json) | Port-authored contract, test, candidate-amendment record or retained provenance |
+| [docs/parity/evidence/chatgpt/guides-ordinary-chatgpt.json](../../docs/parity/evidence/chatgpt/guides-ordinary-chatgpt.json) | Port-authored contract, test, candidate-amendment record or retained provenance |
+| [docs/parity/evidence/chatgpt/guides-worker-chatgpt.json](../../docs/parity/evidence/chatgpt/guides-worker-chatgpt.json) | Port-authored contract, test, candidate-amendment record or retained provenance |
+| [docs/parity/evidence/chatgpt/history-evidence.json](../../docs/parity/evidence/chatgpt/history-evidence.json) | Port-authored contract, test, candidate-amendment record or retained provenance |
+| [docs/parity/evidence/chatgpt/inherited-identical-models.json](../../docs/parity/evidence/chatgpt/inherited-identical-models.json) | Port-authored contract, test, candidate-amendment record or retained provenance |
+| [docs/parity/evidence/chatgpt/interrupted-action.json](../../docs/parity/evidence/chatgpt/interrupted-action.json) | Port-authored contract, test, candidate-amendment record or retained provenance |
+| [docs/parity/evidence/chatgpt/interrupted-external-write.json](../../docs/parity/evidence/chatgpt/interrupted-external-write.json) | Port-authored contract, test, candidate-amendment record or retained provenance |
+| [docs/parity/evidence/chatgpt/invalid-input.json](../../docs/parity/evidence/chatgpt/invalid-input.json) | Port-authored contract, test, candidate-amendment record or retained provenance |
+| [docs/parity/evidence/chatgpt/invalid-state.json](../../docs/parity/evidence/chatgpt/invalid-state.json) | Port-authored contract, test, candidate-amendment record or retained provenance |
+| [docs/parity/evidence/chatgpt/large-corpus.json](../../docs/parity/evidence/chatgpt/large-corpus.json) | Port-authored contract, test, candidate-amendment record or retained provenance |
+| [docs/parity/evidence/chatgpt/legal-header.json](../../docs/parity/evidence/chatgpt/legal-header.json) | Port-authored contract, test, candidate-amendment record or retained provenance |
+| [docs/parity/evidence/chatgpt/measurement-method.json](../../docs/parity/evidence/chatgpt/measurement-method.json) | Port-authored contract, test, candidate-amendment record or retained provenance |
+| [docs/parity/evidence/chatgpt/migration-end-state.json](../../docs/parity/evidence/chatgpt/migration-end-state.json) | Port-authored contract, test, candidate-amendment record or retained provenance |
+| [docs/parity/evidence/chatgpt/migration-units.json](../../docs/parity/evidence/chatgpt/migration-units.json) | Port-authored contract, test, candidate-amendment record or retained provenance |
+| [docs/parity/evidence/chatgpt/misleading-speedup.json](../../docs/parity/evidence/chatgpt/misleading-speedup.json) | Port-authored contract, test, candidate-amendment record or retained provenance |
+| [docs/parity/evidence/chatgpt/missing-model-enumeration.json](../../docs/parity/evidence/chatgpt/missing-model-enumeration.json) | Port-authored contract, test, candidate-amendment record or retained provenance |
+| [docs/parity/evidence/chatgpt/missing-webhook.json](../../docs/parity/evidence/chatgpt/missing-webhook.json) | Port-authored contract, test, candidate-amendment record or retained provenance |
+| [docs/parity/evidence/chatgpt/new-requirement.json](../../docs/parity/evidence/chatgpt/new-requirement.json) | Port-authored contract, test, candidate-amendment record or retained provenance |
+| [docs/parity/evidence/chatgpt/no-persistent-tool.json](../../docs/parity/evidence/chatgpt/no-persistent-tool.json) | Port-authored contract, test, candidate-amendment record or retained provenance |
+| [docs/parity/evidence/chatgpt/owned-safe-cleanup.json](../../docs/parity/evidence/chatgpt/owned-safe-cleanup.json) | Port-authored contract, test, candidate-amendment record or retained provenance |
+| [docs/parity/evidence/chatgpt/package-discovery.json](../../docs/parity/evidence/chatgpt/package-discovery.json) | Port-authored contract, test, candidate-amendment record or retained provenance |
+| [docs/parity/evidence/chatgpt/package-support-contracts.json](../../docs/parity/evidence/chatgpt/package-support-contracts.json) | Port-authored contract, test, candidate-amendment record or retained provenance |
+| [docs/parity/evidence/chatgpt/partition-and-race.json](../../docs/parity/evidence/chatgpt/partition-and-race.json) | Port-authored contract, test, candidate-amendment record or retained provenance |
+| [docs/parity/evidence/chatgpt/plain-restate.json](../../docs/parity/evidence/chatgpt/plain-restate.json) | Port-authored contract, test, candidate-amendment record or retained provenance |
+| [docs/parity/evidence/chatgpt/poteto-walkthrough.json](../../docs/parity/evidence/chatgpt/poteto-walkthrough.json) | Port-authored contract, test, candidate-amendment record or retained provenance |
+| [docs/parity/evidence/chatgpt/preserved-behavior.json](../../docs/parity/evidence/chatgpt/preserved-behavior.json) | Port-authored contract, test, candidate-amendment record or retained provenance |
+| [docs/parity/evidence/chatgpt/prose-rewrite.json](../../docs/parity/evidence/chatgpt/prose-rewrite.json) | Port-authored contract, test, candidate-amendment record or retained provenance |
+| [docs/parity/evidence/chatgpt/read-only-answer.json](../../docs/parity/evidence/chatgpt/read-only-answer.json) | Port-authored contract, test, candidate-amendment record or retained provenance |
+| [docs/parity/evidence/chatgpt/real-app-contract.json](../../docs/parity/evidence/chatgpt/real-app-contract.json) | Port-authored contract, test, candidate-amendment record or retained provenance |
+| [docs/parity/evidence/chatgpt/real-render.json](../../docs/parity/evidence/chatgpt/real-render.json) | Port-authored contract, test, candidate-amendment record or retained provenance |
+| [docs/parity/evidence/chatgpt/red-green.json](../../docs/parity/evidence/chatgpt/red-green.json) | Port-authored contract, test, candidate-amendment record or retained provenance |
+| [docs/parity/evidence/chatgpt/repeatable-change.json](../../docs/parity/evidence/chatgpt/repeatable-change.json) | Port-authored contract, test, candidate-amendment record or retained provenance |
+| [docs/parity/evidence/chatgpt/repeated-failure.json](../../docs/parity/evidence/chatgpt/repeated-failure.json) | Port-authored contract, test, candidate-amendment record or retained provenance |
+| [docs/parity/evidence/chatgpt/repeated-rule.json](../../docs/parity/evidence/chatgpt/repeated-rule.json) | Port-authored contract, test, candidate-amendment record or retained provenance |
+| [docs/parity/evidence/chatgpt/replay.json](../../docs/parity/evidence/chatgpt/replay.json) | Port-authored contract, test, candidate-amendment record or retained provenance |
+| [docs/parity/evidence/chatgpt/reproduce-before-fix.json](../../docs/parity/evidence/chatgpt/reproduce-before-fix.json) | Port-authored contract, test, candidate-amendment record or retained provenance |
+| [docs/parity/evidence/chatgpt/resume-revision.json](../../docs/parity/evidence/chatgpt/resume-revision.json) | Port-authored contract, test, candidate-amendment record or retained provenance |
+| [docs/parity/evidence/chatgpt/reversible-step.json](../../docs/parity/evidence/chatgpt/reversible-step.json) | Port-authored contract, test, candidate-amendment record or retained provenance |
+| [docs/parity/evidence/chatgpt/route-recipe.json](../../docs/parity/evidence/chatgpt/route-recipe.json) | Port-authored contract, test, candidate-amendment record or retained provenance |
+| [docs/parity/evidence/chatgpt/scoped-history.json](../../docs/parity/evidence/chatgpt/scoped-history.json) | Port-authored contract, test, candidate-amendment record or retained provenance |
+| [docs/parity/evidence/chatgpt/shape-first.json](../../docs/parity/evidence/chatgpt/shape-first.json) | Port-authored contract, test, candidate-amendment record or retained provenance |
+| [docs/parity/evidence/chatgpt/shared-path-conflict.json](../../docs/parity/evidence/chatgpt/shared-path-conflict.json) | Port-authored contract, test, candidate-amendment record or retained provenance |
+| [docs/parity/evidence/chatgpt/smaller-solution.json](../../docs/parity/evidence/chatgpt/smaller-solution.json) | Port-authored contract, test, candidate-amendment record or retained provenance |
+| [docs/parity/evidence/chatgpt/stack-resume.json](../../docs/parity/evidence/chatgpt/stack-resume.json) | Port-authored contract, test, candidate-amendment record or retained provenance |
+| [docs/parity/evidence/chatgpt/stale-feature-map.json](../../docs/parity/evidence/chatgpt/stale-feature-map.json) | Port-authored contract, test, candidate-amendment record or retained provenance |
+| [docs/parity/evidence/chatgpt/state-shape.json](../../docs/parity/evidence/chatgpt/state-shape.json) | Port-authored contract, test, candidate-amendment record or retained provenance |
+| [docs/parity/evidence/chatgpt/supported-authoring.json](../../docs/parity/evidence/chatgpt/supported-authoring.json) | Port-authored contract, test, candidate-amendment record or retained provenance |
+| [docs/parity/evidence/chatgpt/swarm-walkthrough.json](../../docs/parity/evidence/chatgpt/swarm-walkthrough.json) | Port-authored contract, test, candidate-amendment record or retained provenance |
+| [docs/parity/evidence/chatgpt/symptom-repro.json](../../docs/parity/evidence/chatgpt/symptom-repro.json) | Port-authored contract, test, candidate-amendment record or retained provenance |
+| [docs/parity/evidence/chatgpt/throwaway-probe.json](../../docs/parity/evidence/chatgpt/throwaway-probe.json) | Port-authored contract, test, candidate-amendment record or retained provenance |
+| [docs/parity/evidence/chatgpt/trace-load.json](../../docs/parity/evidence/chatgpt/trace-load.json) | Port-authored contract, test, candidate-amendment record or retained provenance |
+| [docs/parity/evidence/chatgpt/trace-path.json](../../docs/parity/evidence/chatgpt/trace-path.json) | Port-authored contract, test, candidate-amendment record or retained provenance |
+| [docs/parity/evidence/chatgpt/trace-provenance.json](../../docs/parity/evidence/chatgpt/trace-provenance.json) | Port-authored contract, test, candidate-amendment record or retained provenance |
+| [docs/parity/evidence/chatgpt/two-writers.json](../../docs/parity/evidence/chatgpt/two-writers.json) | Port-authored contract, test, candidate-amendment record or retained provenance |
+| [docs/parity/evidence/chatgpt/typed-boundary.json](../../docs/parity/evidence/chatgpt/typed-boundary.json) | Port-authored contract, test, candidate-amendment record or retained provenance |
+| [docs/parity/evidence/chatgpt/unavailable-persistence.json](../../docs/parity/evidence/chatgpt/unavailable-persistence.json) | Port-authored contract, test, candidate-amendment record or retained provenance |
+| [docs/parity/evidence/chatgpt/uncertain-result.json](../../docs/parity/evidence/chatgpt/uncertain-result.json) | Port-authored contract, test, candidate-amendment record or retained provenance |
+| [docs/parity/evidence/chatgpt/unit-state.json](../../docs/parity/evidence/chatgpt/unit-state.json) | Port-authored contract, test, candidate-amendment record or retained provenance |
+| [docs/parity/evidence/chatgpt/units-and-proof.json](../../docs/parity/evidence/chatgpt/units-and-proof.json) | Port-authored contract, test, candidate-amendment record or retained provenance |
+| [docs/parity/evidence/chatgpt/unknown-actual-model.json](../../docs/parity/evidence/chatgpt/unknown-actual-model.json) | Port-authored contract, test, candidate-amendment record or retained provenance |
+| [docs/parity/evidence/chatgpt/unknown-model.json](../../docs/parity/evidence/chatgpt/unknown-model.json) | Port-authored contract, test, candidate-amendment record or retained provenance |
+| [docs/parity/evidence/chatgpt/unsupported-selected-model.json](../../docs/parity/evidence/chatgpt/unsupported-selected-model.json) | Port-authored contract, test, candidate-amendment record or retained provenance |
+| [docs/parity/evidence/chatgpt/user-correction.json](../../docs/parity/evidence/chatgpt/user-correction.json) | Port-authored contract, test, candidate-amendment record or retained provenance |
+| [docs/parity/evidence/chatgpt/user-tradeoff.json](../../docs/parity/evidence/chatgpt/user-tradeoff.json) | Port-authored contract, test, candidate-amendment record or retained provenance |
+| [docs/parity/evidence/chatgpt/verifiable-feature.json](../../docs/parity/evidence/chatgpt/verifiable-feature.json) | Port-authored contract, test, candidate-amendment record or retained provenance |
+| [docs/parity/evidence/codex/absent-workers.json](../../docs/parity/evidence/codex/absent-workers.json) | Port-authored contract, test, candidate-amendment record or retained provenance |
+| [docs/parity/evidence/codex/accessible-trace.json](../../docs/parity/evidence/codex/accessible-trace.json) | Port-authored contract, test, candidate-amendment record or retained provenance |
+| [docs/parity/evidence/codex/adversarial-review.json](../../docs/parity/evidence/codex/adversarial-review.json) | Port-authored contract, test, candidate-amendment record or retained provenance |
+| [docs/parity/evidence/codex/alternatives.json](../../docs/parity/evidence/codex/alternatives.json) | Port-authored contract, test, candidate-amendment record or retained provenance |
+| [docs/parity/evidence/codex/approval-before-edit.json](../../docs/parity/evidence/codex/approval-before-edit.json) | Port-authored contract, test, candidate-amendment record or retained provenance |
+| [docs/parity/evidence/codex/arena-walkthrough.json](../../docs/parity/evidence/codex/arena-walkthrough.json) | Port-authored contract, test, candidate-amendment record or retained provenance |
+| [docs/parity/evidence/codex/authorization-capability-check.md](../../docs/parity/evidence/codex/authorization-capability-check.md) | Port-authored contract, test, candidate-amendment record or retained provenance |
+| [docs/parity/evidence/codex/authorized-program.json](../../docs/parity/evidence/codex/authorized-program.json) | Port-authored contract, test, candidate-amendment record or retained provenance |
+| [docs/parity/evidence/codex/benny-duplicate-report.json](../../docs/parity/evidence/codex/benny-duplicate-report.json) | Port-authored contract, test, candidate-amendment record or retained provenance |
+| [docs/parity/evidence/codex/benny-existing-fix-ownership.json](../../docs/parity/evidence/codex/benny-existing-fix-ownership.json) | Port-authored contract, test, candidate-amendment record or retained provenance |
+| [docs/parity/evidence/codex/benny-existing-pr.json](../../docs/parity/evidence/codex/benny-existing-pr.json) | Port-authored contract, test, candidate-amendment record or retained provenance |
+| [docs/parity/evidence/codex/benny-missing-adapter.json](../../docs/parity/evidence/codex/benny-missing-adapter.json) | Port-authored contract, test, candidate-amendment record or retained provenance |
+| [docs/parity/evidence/codex/benny-missing-coordinates.json](../../docs/parity/evidence/codex/benny-missing-coordinates.json) | Port-authored contract, test, candidate-amendment record or retained provenance |
+| [docs/parity/evidence/codex/benny-source-thread-compensation.json](../../docs/parity/evidence/codex/benny-source-thread-compensation.json) | Port-authored contract, test, candidate-amendment record or retained provenance |
+| [docs/parity/evidence/codex/benny-unsupported-trigger.json](../../docs/parity/evidence/codex/benny-unsupported-trigger.json) | Port-authored contract, test, candidate-amendment record or retained provenance |
+| [docs/parity/evidence/codex/benny-untrusted-marker.json](../../docs/parity/evidence/codex/benny-untrusted-marker.json) | Port-authored contract, test, candidate-amendment record or retained provenance |
+| [docs/parity/evidence/codex/boundary-design.json](../../docs/parity/evidence/codex/boundary-design.json) | Port-authored contract, test, candidate-amendment record or retained provenance |
+| [docs/parity/evidence/codex/bounded-improvement.json](../../docs/parity/evidence/codex/bounded-improvement.json) | Port-authored contract, test, candidate-amendment record or retained provenance |
+| [docs/parity/evidence/codex/bounded-poll.json](../../docs/parity/evidence/codex/bounded-poll.json) | Port-authored contract, test, candidate-amendment record or retained provenance |
+| [docs/parity/evidence/codex/caller-migration.json](../../docs/parity/evidence/codex/caller-migration.json) | Port-authored contract, test, candidate-amendment record or retained provenance |
+| [docs/parity/evidence/codex/cancelled-worker.json](../../docs/parity/evidence/codex/cancelled-worker.json) | Port-authored contract, test, candidate-amendment record or retained provenance |
+| [docs/parity/evidence/codex/candidate-cross-review.json](../../docs/parity/evidence/codex/candidate-cross-review.json) | Port-authored contract, test, candidate-amendment record or retained provenance |
+| [docs/parity/evidence/codex/chatgpt-setup-from-readme.json](../../docs/parity/evidence/codex/chatgpt-setup-from-readme.json) | Port-authored contract, test, candidate-amendment record or retained provenance |
+| [docs/parity/evidence/codex/codex-setup-from-readme.json](../../docs/parity/evidence/codex/codex-setup-from-readme.json) | Port-authored contract, test, candidate-amendment record or retained provenance |
+| [docs/parity/evidence/codex/comparable-revisions.json](../../docs/parity/evidence/codex/comparable-revisions.json) | Port-authored contract, test, candidate-amendment record or retained provenance |
+| [docs/parity/evidence/codex/contiguous-verified-stack.json](../../docs/parity/evidence/codex/contiguous-verified-stack.json) | Port-authored contract, test, candidate-amendment record or retained provenance |
+| [docs/parity/evidence/codex/dead-path.json](../../docs/parity/evidence/codex/dead-path.json) | Port-authored contract, test, candidate-amendment record or retained provenance |
+| [docs/parity/evidence/codex/decision-trail.json](../../docs/parity/evidence/codex/decision-trail.json) | Port-authored contract, test, candidate-amendment record or retained provenance |
+| [docs/parity/evidence/codex/denied-writes.json](../../docs/parity/evidence/codex/denied-writes.json) | Port-authored contract, test, candidate-amendment record or retained provenance |
+| [docs/parity/evidence/codex/dense-doc.json](../../docs/parity/evidence/codex/dense-doc.json) | Port-authored contract, test, candidate-amendment record or retained provenance |
+| [docs/parity/evidence/codex/dependency-readiness.json](../../docs/parity/evidence/codex/dependency-readiness.json) | Port-authored contract, test, candidate-amendment record or retained provenance |
+| [docs/parity/evidence/codex/dependent-caller.json](../../docs/parity/evidence/codex/dependent-caller.json) | Port-authored contract, test, candidate-amendment record or retained provenance |
+| [docs/parity/evidence/codex/discriminating-eval.json](../../docs/parity/evidence/codex/discriminating-eval.json) | Port-authored contract, test, candidate-amendment record or retained provenance |
+| [docs/parity/evidence/codex/draft-only-authorized.json](../../docs/parity/evidence/codex/draft-only-authorized.json) | Port-authored contract, test, candidate-amendment record or retained provenance |
+| [docs/parity/evidence/codex/empty-function.json](../../docs/parity/evidence/codex/empty-function.json) | Port-authored contract, test, candidate-amendment record or retained provenance |
+| [docs/parity/evidence/codex/existing-personal-mode.json](../../docs/parity/evidence/codex/existing-personal-mode.json) | Port-authored contract, test, candidate-amendment record or retained provenance |
+| [docs/parity/evidence/codex/false-success.json](../../docs/parity/evidence/codex/false-success.json) | Port-authored contract, test, candidate-amendment record or retained provenance |
+| [docs/parity/evidence/codex/fresh-worker-mode.json](../../docs/parity/evidence/codex/fresh-worker-mode.json) | Port-authored contract, test, candidate-amendment record or retained provenance |
+| [docs/parity/evidence/codex/grounded-explanation.json](../../docs/parity/evidence/codex/grounded-explanation.json) | Port-authored contract, test, candidate-amendment record or retained provenance |
+| [docs/parity/evidence/codex/guides-github-absent.json](../../docs/parity/evidence/codex/guides-github-absent.json) | Port-authored contract, test, candidate-amendment record or retained provenance |
+| [docs/parity/evidence/codex/guides-local-codex.json](../../docs/parity/evidence/codex/guides-local-codex.json) | Port-authored contract, test, candidate-amendment record or retained provenance |
+| [docs/parity/evidence/codex/guides-optional-setup-skipped.json](../../docs/parity/evidence/codex/guides-optional-setup-skipped.json) | Port-authored contract, test, candidate-amendment record or retained provenance |
+| [docs/parity/evidence/codex/guides-ordinary-chatgpt.json](../../docs/parity/evidence/codex/guides-ordinary-chatgpt.json) | Port-authored contract, test, candidate-amendment record or retained provenance |
+| [docs/parity/evidence/codex/guides-worker-chatgpt.json](../../docs/parity/evidence/codex/guides-worker-chatgpt.json) | Port-authored contract, test, candidate-amendment record or retained provenance |
+| [docs/parity/evidence/codex/history-evidence.json](../../docs/parity/evidence/codex/history-evidence.json) | Port-authored contract, test, candidate-amendment record or retained provenance |
+| [docs/parity/evidence/codex/inherited-identical-models.json](../../docs/parity/evidence/codex/inherited-identical-models.json) | Port-authored contract, test, candidate-amendment record or retained provenance |
+| [docs/parity/evidence/codex/interrupted-action.json](../../docs/parity/evidence/codex/interrupted-action.json) | Port-authored contract, test, candidate-amendment record or retained provenance |
+| [docs/parity/evidence/codex/interrupted-external-write.json](../../docs/parity/evidence/codex/interrupted-external-write.json) | Port-authored contract, test, candidate-amendment record or retained provenance |
+| [docs/parity/evidence/codex/invalid-input.json](../../docs/parity/evidence/codex/invalid-input.json) | Port-authored contract, test, candidate-amendment record or retained provenance |
+| [docs/parity/evidence/codex/invalid-state.json](../../docs/parity/evidence/codex/invalid-state.json) | Port-authored contract, test, candidate-amendment record or retained provenance |
+| [docs/parity/evidence/codex/large-corpus.json](../../docs/parity/evidence/codex/large-corpus.json) | Port-authored contract, test, candidate-amendment record or retained provenance |
+| [docs/parity/evidence/codex/legal-header.json](../../docs/parity/evidence/codex/legal-header.json) | Port-authored contract, test, candidate-amendment record or retained provenance |
+| [docs/parity/evidence/codex/measurement-method.json](../../docs/parity/evidence/codex/measurement-method.json) | Port-authored contract, test, candidate-amendment record or retained provenance |
+| [docs/parity/evidence/codex/migration-end-state.json](../../docs/parity/evidence/codex/migration-end-state.json) | Port-authored contract, test, candidate-amendment record or retained provenance |
+| [docs/parity/evidence/codex/migration-units.json](../../docs/parity/evidence/codex/migration-units.json) | Port-authored contract, test, candidate-amendment record or retained provenance |
+| [docs/parity/evidence/codex/misleading-speedup.json](../../docs/parity/evidence/codex/misleading-speedup.json) | Port-authored contract, test, candidate-amendment record or retained provenance |
+| [docs/parity/evidence/codex/missing-model-enumeration.json](../../docs/parity/evidence/codex/missing-model-enumeration.json) | Port-authored contract, test, candidate-amendment record or retained provenance |
+| [docs/parity/evidence/codex/missing-webhook.json](../../docs/parity/evidence/codex/missing-webhook.json) | Port-authored contract, test, candidate-amendment record or retained provenance |
+| [docs/parity/evidence/codex/new-requirement.json](../../docs/parity/evidence/codex/new-requirement.json) | Port-authored contract, test, candidate-amendment record or retained provenance |
+| [docs/parity/evidence/codex/no-persistent-tool.json](../../docs/parity/evidence/codex/no-persistent-tool.json) | Port-authored contract, test, candidate-amendment record or retained provenance |
+| [docs/parity/evidence/codex/owned-safe-cleanup.json](../../docs/parity/evidence/codex/owned-safe-cleanup.json) | Port-authored contract, test, candidate-amendment record or retained provenance |
+| [docs/parity/evidence/codex/package-discovery.json](../../docs/parity/evidence/codex/package-discovery.json) | Port-authored contract, test, candidate-amendment record or retained provenance |
+| [docs/parity/evidence/codex/package-support-contracts.json](../../docs/parity/evidence/codex/package-support-contracts.json) | Port-authored contract, test, candidate-amendment record or retained provenance |
+| [docs/parity/evidence/codex/partition-and-race.json](../../docs/parity/evidence/codex/partition-and-race.json) | Port-authored contract, test, candidate-amendment record or retained provenance |
+| [docs/parity/evidence/codex/plain-restate.json](../../docs/parity/evidence/codex/plain-restate.json) | Port-authored contract, test, candidate-amendment record or retained provenance |
+| [docs/parity/evidence/codex/poteto-walkthrough.json](../../docs/parity/evidence/codex/poteto-walkthrough.json) | Port-authored contract, test, candidate-amendment record or retained provenance |
+| [docs/parity/evidence/codex/preserved-behavior.json](../../docs/parity/evidence/codex/preserved-behavior.json) | Port-authored contract, test, candidate-amendment record or retained provenance |
+| [docs/parity/evidence/codex/prose-rewrite.json](../../docs/parity/evidence/codex/prose-rewrite.json) | Port-authored contract, test, candidate-amendment record or retained provenance |
+| [docs/parity/evidence/codex/read-only-answer.json](../../docs/parity/evidence/codex/read-only-answer.json) | Port-authored contract, test, candidate-amendment record or retained provenance |
+| [docs/parity/evidence/codex/real-app-contract.json](../../docs/parity/evidence/codex/real-app-contract.json) | Port-authored contract, test, candidate-amendment record or retained provenance |
+| [docs/parity/evidence/codex/real-render.json](../../docs/parity/evidence/codex/real-render.json) | Port-authored contract, test, candidate-amendment record or retained provenance |
+| [docs/parity/evidence/codex/red-green.json](../../docs/parity/evidence/codex/red-green.json) | Port-authored contract, test, candidate-amendment record or retained provenance |
+| [docs/parity/evidence/codex/repeatable-change.json](../../docs/parity/evidence/codex/repeatable-change.json) | Port-authored contract, test, candidate-amendment record or retained provenance |
+| [docs/parity/evidence/codex/repeated-failure.json](../../docs/parity/evidence/codex/repeated-failure.json) | Port-authored contract, test, candidate-amendment record or retained provenance |
+| [docs/parity/evidence/codex/repeated-rule.json](../../docs/parity/evidence/codex/repeated-rule.json) | Port-authored contract, test, candidate-amendment record or retained provenance |
+| [docs/parity/evidence/codex/replay.json](../../docs/parity/evidence/codex/replay.json) | Port-authored contract, test, candidate-amendment record or retained provenance |
+| [docs/parity/evidence/codex/reproduce-before-fix.json](../../docs/parity/evidence/codex/reproduce-before-fix.json) | Port-authored contract, test, candidate-amendment record or retained provenance |
+| [docs/parity/evidence/codex/resume-revision.json](../../docs/parity/evidence/codex/resume-revision.json) | Port-authored contract, test, candidate-amendment record or retained provenance |
+| [docs/parity/evidence/codex/reversible-step.json](../../docs/parity/evidence/codex/reversible-step.json) | Port-authored contract, test, candidate-amendment record or retained provenance |
+| [docs/parity/evidence/codex/route-recipe.json](../../docs/parity/evidence/codex/route-recipe.json) | Port-authored contract, test, candidate-amendment record or retained provenance |
+| [docs/parity/evidence/codex/scoped-history.json](../../docs/parity/evidence/codex/scoped-history.json) | Port-authored contract, test, candidate-amendment record or retained provenance |
+| [docs/parity/evidence/codex/shape-first.json](../../docs/parity/evidence/codex/shape-first.json) | Port-authored contract, test, candidate-amendment record or retained provenance |
+| [docs/parity/evidence/codex/shared-path-conflict.json](../../docs/parity/evidence/codex/shared-path-conflict.json) | Port-authored contract, test, candidate-amendment record or retained provenance |
+| [docs/parity/evidence/codex/smaller-solution.json](../../docs/parity/evidence/codex/smaller-solution.json) | Port-authored contract, test, candidate-amendment record or retained provenance |
+| [docs/parity/evidence/codex/stack-resume.json](../../docs/parity/evidence/codex/stack-resume.json) | Port-authored contract, test, candidate-amendment record or retained provenance |
+| [docs/parity/evidence/codex/stale-feature-map.json](../../docs/parity/evidence/codex/stale-feature-map.json) | Port-authored contract, test, candidate-amendment record or retained provenance |
+| [docs/parity/evidence/codex/state-shape.json](../../docs/parity/evidence/codex/state-shape.json) | Port-authored contract, test, candidate-amendment record or retained provenance |
+| [docs/parity/evidence/codex/supported-authoring.json](../../docs/parity/evidence/codex/supported-authoring.json) | Port-authored contract, test, candidate-amendment record or retained provenance |
+| [docs/parity/evidence/codex/swarm-walkthrough.json](../../docs/parity/evidence/codex/swarm-walkthrough.json) | Port-authored contract, test, candidate-amendment record or retained provenance |
+| [docs/parity/evidence/codex/symptom-repro.json](../../docs/parity/evidence/codex/symptom-repro.json) | Port-authored contract, test, candidate-amendment record or retained provenance |
+| [docs/parity/evidence/codex/throwaway-probe.json](../../docs/parity/evidence/codex/throwaway-probe.json) | Port-authored contract, test, candidate-amendment record or retained provenance |
+| [docs/parity/evidence/codex/trace-load.json](../../docs/parity/evidence/codex/trace-load.json) | Port-authored contract, test, candidate-amendment record or retained provenance |
+| [docs/parity/evidence/codex/trace-path.json](../../docs/parity/evidence/codex/trace-path.json) | Port-authored contract, test, candidate-amendment record or retained provenance |
+| [docs/parity/evidence/codex/trace-provenance.json](../../docs/parity/evidence/codex/trace-provenance.json) | Port-authored contract, test, candidate-amendment record or retained provenance |
+| [docs/parity/evidence/codex/two-writers.json](../../docs/parity/evidence/codex/two-writers.json) | Port-authored contract, test, candidate-amendment record or retained provenance |
+| [docs/parity/evidence/codex/typed-boundary.json](../../docs/parity/evidence/codex/typed-boundary.json) | Port-authored contract, test, candidate-amendment record or retained provenance |
+| [docs/parity/evidence/codex/unavailable-persistence.json](../../docs/parity/evidence/codex/unavailable-persistence.json) | Port-authored contract, test, candidate-amendment record or retained provenance |
+| [docs/parity/evidence/codex/uncertain-result.json](../../docs/parity/evidence/codex/uncertain-result.json) | Port-authored contract, test, candidate-amendment record or retained provenance |
+| [docs/parity/evidence/codex/unit-state.json](../../docs/parity/evidence/codex/unit-state.json) | Port-authored contract, test, candidate-amendment record or retained provenance |
+| [docs/parity/evidence/codex/units-and-proof.json](../../docs/parity/evidence/codex/units-and-proof.json) | Port-authored contract, test, candidate-amendment record or retained provenance |
+| [docs/parity/evidence/codex/unknown-actual-model.json](../../docs/parity/evidence/codex/unknown-actual-model.json) | Port-authored contract, test, candidate-amendment record or retained provenance |
+| [docs/parity/evidence/codex/unknown-model.json](../../docs/parity/evidence/codex/unknown-model.json) | Port-authored contract, test, candidate-amendment record or retained provenance |
+| [docs/parity/evidence/codex/unsupported-selected-model.json](../../docs/parity/evidence/codex/unsupported-selected-model.json) | Port-authored contract, test, candidate-amendment record or retained provenance |
+| [docs/parity/evidence/codex/user-correction.json](../../docs/parity/evidence/codex/user-correction.json) | Port-authored contract, test, candidate-amendment record or retained provenance |
+| [docs/parity/evidence/codex/user-tradeoff.json](../../docs/parity/evidence/codex/user-tradeoff.json) | Port-authored contract, test, candidate-amendment record or retained provenance |
+| [docs/parity/evidence/codex/verifiable-feature.json](../../docs/parity/evidence/codex/verifiable-feature.json) | Port-authored contract, test, candidate-amendment record or retained provenance |
+| [docs/parity/inventory.json](../../docs/parity/inventory.json) | Port-authored contract, test, candidate-amendment record or retained provenance |
+| [docs/parity/inventory.schema.json](../../docs/parity/inventory.schema.json) | Port-authored contract, test, candidate-amendment record or retained provenance |
+| [docs/parity/reconciliations/task12-lock.json](../../docs/parity/reconciliations/task12-lock.json) | Port-authored contract, test, candidate-amendment record or retained provenance |
+| [docs/parity/reconciliations/task16-template.json](../../docs/parity/reconciliations/task16-template.json) | Port-authored contract, test, candidate-amendment record or retained provenance |
+| [docs/parity/remnant-dispositions.json](../../docs/parity/remnant-dispositions.json) | Port-authored contract, test, candidate-amendment record or retained provenance |
+| [docs/parity/support-map.md](../../docs/parity/support-map.md) | Port-authored contract, test, candidate-amendment record or retained provenance |
+| [docs/parity/upstream-manifests/182f2ce414e83224915c190d2f63239c1608d0a5.apply.json](../../docs/parity/upstream-manifests/182f2ce414e83224915c190d2f63239c1608d0a5.apply.json) | Port-authored contract, test, candidate-amendment record or retained provenance |
+| [docs/parity/upstream-manifests/182f2ce414e83224915c190d2f63239c1608d0a5.json](../../docs/parity/upstream-manifests/182f2ce414e83224915c190d2f63239c1608d0a5.json) | Port-authored contract, test, candidate-amendment record or retained provenance |
+| [docs/parity/upstream-manifests/182f2ce414e83224915c190d2f63239c1608d0a5.previous-fragments.json](../../docs/parity/upstream-manifests/182f2ce414e83224915c190d2f63239c1608d0a5.previous-fragments.json) | Port-authored contract, test, candidate-amendment record or retained provenance |
+| [docs/parity/upstream-manifests/88d47514b82e7c44f00f2b2a72ff6dd12158038c.amendment.json](../../docs/parity/upstream-manifests/88d47514b82e7c44f00f2b2a72ff6dd12158038c.amendment.json) | Port-authored contract, test, candidate-amendment record or retained provenance |
+| [docs/parity/upstream-manifests/88d47514b82e7c44f00f2b2a72ff6dd12158038c.json](../../docs/parity/upstream-manifests/88d47514b82e7c44f00f2b2a72ff6dd12158038c.json) | Port-authored contract, test, candidate-amendment record or retained provenance |
+| [docs/parity/upstream-manifests/99743e9c151c8537cbbf1f98bb38f34ef3368453.apply.json](../../docs/parity/upstream-manifests/99743e9c151c8537cbbf1f98bb38f34ef3368453.apply.json) | Port-authored contract, test, candidate-amendment record or retained provenance |
+| [docs/parity/upstream-manifests/99743e9c151c8537cbbf1f98bb38f34ef3368453.json](../../docs/parity/upstream-manifests/99743e9c151c8537cbbf1f98bb38f34ef3368453.json) | Port-authored contract, test, candidate-amendment record or retained provenance |
+| [docs/parity/upstream-manifests/99743e9c151c8537cbbf1f98bb38f34ef3368453.previous-fragments.json](../../docs/parity/upstream-manifests/99743e9c151c8537cbbf1f98bb38f34ef3368453.previous-fragments.json) | Port-authored contract, test, candidate-amendment record or retained provenance |
+| [docs/parity/upstream-manifests/d457567332aa6989e753ea289f30ea2bfbc80bc0.apply.json](../../docs/parity/upstream-manifests/d457567332aa6989e753ea289f30ea2bfbc80bc0.apply.json) | Port-authored contract, test, candidate-amendment record or retained provenance |
+| [docs/parity/upstream-manifests/d457567332aa6989e753ea289f30ea2bfbc80bc0.json](../../docs/parity/upstream-manifests/d457567332aa6989e753ea289f30ea2bfbc80bc0.json) | Port-authored contract, test, candidate-amendment record or retained provenance |
+| [docs/parity/upstream-manifests/d457567332aa6989e753ea289f30ea2bfbc80bc0.previous-fragments.json](../../docs/parity/upstream-manifests/d457567332aa6989e753ea289f30ea2bfbc80bc0.previous-fragments.json) | Port-authored contract, test, candidate-amendment record or retained provenance |
+| [docs/parity/upstream-manifests/df581122cde17e6e27686b5a448bde23e4ad4318.json](../../docs/parity/upstream-manifests/df581122cde17e6e27686b5a448bde23e4ad4318.json) | Port-authored contract, test, candidate-amendment record or retained provenance |
+| [docs/parity/upstream-manifests/e5136d82418d2db3165ea1050d17577cd618cc05.apply.json](../../docs/parity/upstream-manifests/e5136d82418d2db3165ea1050d17577cd618cc05.apply.json) | Port-authored contract, test, candidate-amendment record or retained provenance |
+| [docs/parity/upstream-manifests/e5136d82418d2db3165ea1050d17577cd618cc05.json](../../docs/parity/upstream-manifests/e5136d82418d2db3165ea1050d17577cd618cc05.json) | Port-authored contract, test, candidate-amendment record or retained provenance |
+| [docs/parity/upstream-manifests/e5136d82418d2db3165ea1050d17577cd618cc05.previous-fragments.json](../../docs/parity/upstream-manifests/e5136d82418d2db3165ea1050d17577cd618cc05.previous-fragments.json) | Port-authored contract, test, candidate-amendment record or retained provenance |
+| [docs/principles/README.md](../../docs/principles/README.md) | Port-authored contract, test, candidate-amendment record or retained provenance |
+| [docs/releases/0.2.0.md](../../docs/releases/0.2.0.md) | Port-authored contract, test, candidate-amendment record or retained provenance |
+| [docs/releases/0.2.1.md](../../docs/releases/0.2.1.md) | Port-authored contract, test, candidate-amendment record or retained provenance |
+| [docs/releases/0.2.2.md](../../docs/releases/0.2.2.md) | Port-authored contract, test, candidate-amendment record or retained provenance |
+| [docs/setup/chatgpt.md](../../docs/setup/chatgpt.md) | Port-authored contract, test, candidate-amendment record or retained provenance |
+| [docs/setup/codex.md](../../docs/setup/codex.md) | Port-authored contract, test, candidate-amendment record or retained provenance |
+| [docs/skills/README.md](../../docs/skills/README.md) | Port-authored contract, test, candidate-amendment record or retained provenance |
+| [docs/skills/architect.md](../../docs/skills/architect.md) | Port-authored contract, test, candidate-amendment record or retained provenance |
+| [docs/skills/arena.md](../../docs/skills/arena.md) | Port-authored contract, test, candidate-amendment record or retained provenance |
+| [docs/skills/automate-me.md](../../docs/skills/automate-me.md) | Port-authored contract, test, candidate-amendment record or retained provenance |
+| [docs/skills/benchmark-checklist.md](../../docs/skills/benchmark-checklist.md) | Port-authored contract, test, candidate-amendment record or retained provenance |
+| [docs/skills/blast-radius.md](../../docs/skills/blast-radius.md) | Port-authored contract, test, candidate-amendment record or retained provenance |
+| [docs/skills/bro.md](../../docs/skills/bro.md) | Port-authored contract, test, candidate-amendment record or retained provenance |
+| [docs/skills/correct.md](../../docs/skills/correct.md) | Port-authored contract, test, candidate-amendment record or retained provenance |
+| [docs/skills/create-formal-verification-skill.md](../../docs/skills/create-formal-verification-skill.md) | Port-authored contract, test, candidate-amendment record or retained provenance |
+| [docs/skills/create-verification-skill.md](../../docs/skills/create-verification-skill.md) | Port-authored contract, test, candidate-amendment record or retained provenance |
+| [docs/skills/figure-it-out.md](../../docs/skills/figure-it-out.md) | Port-authored contract, test, candidate-amendment record or retained provenance |
+| [docs/skills/how.md](../../docs/skills/how.md) | Port-authored contract, test, candidate-amendment record or retained provenance |
+| [docs/skills/in-your-own-words.md](../../docs/skills/in-your-own-words.md) | Port-authored contract, test, candidate-amendment record or retained provenance |
+| [docs/skills/interrogate.md](../../docs/skills/interrogate.md) | Port-authored contract, test, candidate-amendment record or retained provenance |
+| [docs/skills/ketchup.md](../../docs/skills/ketchup.md) | Port-authored contract, test, candidate-amendment record or retained provenance |
+| [docs/skills/maintain-formal-verification-skill.md](../../docs/skills/maintain-formal-verification-skill.md) | Port-authored contract, test, candidate-amendment record or retained provenance |
+| [docs/skills/maintain-verification-skill.md](../../docs/skills/maintain-verification-skill.md) | Port-authored contract, test, candidate-amendment record or retained provenance |
+| [docs/skills/make-bot-ui.md](../../docs/skills/make-bot-ui.md) | Port-authored contract, test, candidate-amendment record or retained provenance |
+| [docs/skills/no-comments.md](../../docs/skills/no-comments.md) | Port-authored contract, test, candidate-amendment record or retained provenance |
+| [docs/skills/poteto-help.md](../../docs/skills/poteto-help.md) | Port-authored contract, test, candidate-amendment record or retained provenance |
+| [docs/skills/poteto-mode.md](../../docs/skills/poteto-mode.md) | Port-authored contract, test, candidate-amendment record or retained provenance |
+| [docs/skills/principle-attack-the-premise.md](../../docs/skills/principle-attack-the-premise.md) | Port-authored contract, test, candidate-amendment record or retained provenance |
+| [docs/skills/principle-boundary-discipline.md](../../docs/skills/principle-boundary-discipline.md) | Port-authored contract, test, candidate-amendment record or retained provenance |
+| [docs/skills/principle-build-the-lever.md](../../docs/skills/principle-build-the-lever.md) | Port-authored contract, test, candidate-amendment record or retained provenance |
+| [docs/skills/principle-encode-lessons-in-structure.md](../../docs/skills/principle-encode-lessons-in-structure.md) | Port-authored contract, test, candidate-amendment record or retained provenance |
+| [docs/skills/principle-exhaust-the-design-space.md](../../docs/skills/principle-exhaust-the-design-space.md) | Port-authored contract, test, candidate-amendment record or retained provenance |
+| [docs/skills/principle-experience-first.md](../../docs/skills/principle-experience-first.md) | Port-authored contract, test, candidate-amendment record or retained provenance |
+| [docs/skills/principle-explain-the-number.md](../../docs/skills/principle-explain-the-number.md) | Port-authored contract, test, candidate-amendment record or retained provenance |
+| [docs/skills/principle-fix-root-causes.md](../../docs/skills/principle-fix-root-causes.md) | Port-authored contract, test, candidate-amendment record or retained provenance |
+| [docs/skills/principle-foundational-thinking.md](../../docs/skills/principle-foundational-thinking.md) | Port-authored contract, test, candidate-amendment record or retained provenance |
+| [docs/skills/principle-guard-the-context-window.md](../../docs/skills/principle-guard-the-context-window.md) | Port-authored contract, test, candidate-amendment record or retained provenance |
+| [docs/skills/principle-laziness-protocol.md](../../docs/skills/principle-laziness-protocol.md) | Port-authored contract, test, candidate-amendment record or retained provenance |
+| [docs/skills/principle-make-operations-idempotent.md](../../docs/skills/principle-make-operations-idempotent.md) | Port-authored contract, test, candidate-amendment record or retained provenance |
+| [docs/skills/principle-migrate-callers-then-delete-legacy-apis.md](../../docs/skills/principle-migrate-callers-then-delete-legacy-apis.md) | Port-authored contract, test, candidate-amendment record or retained provenance |
+| [docs/skills/principle-minimize-reader-load.md](../../docs/skills/principle-minimize-reader-load.md) | Port-authored contract, test, candidate-amendment record or retained provenance |
+| [docs/skills/principle-model-the-domain.md](../../docs/skills/principle-model-the-domain.md) | Port-authored contract, test, candidate-amendment record or retained provenance |
+| [docs/skills/principle-never-block-on-the-human.md](../../docs/skills/principle-never-block-on-the-human.md) | Port-authored contract, test, candidate-amendment record or retained provenance |
+| [docs/skills/principle-outcome-oriented-execution.md](../../docs/skills/principle-outcome-oriented-execution.md) | Port-authored contract, test, candidate-amendment record or retained provenance |
+| [docs/skills/principle-prove-it-works.md](../../docs/skills/principle-prove-it-works.md) | Port-authored contract, test, candidate-amendment record or retained provenance |
+| [docs/skills/principle-redesign-from-first-principles.md](../../docs/skills/principle-redesign-from-first-principles.md) | Port-authored contract, test, candidate-amendment record or retained provenance |
+| [docs/skills/principle-separate-before-serializing-shared-state.md](../../docs/skills/principle-separate-before-serializing-shared-state.md) | Port-authored contract, test, candidate-amendment record or retained provenance |
+| [docs/skills/principle-sequence-verifiable-units.md](../../docs/skills/principle-sequence-verifiable-units.md) | Port-authored contract, test, candidate-amendment record or retained provenance |
+| [docs/skills/principle-subtract-before-you-add.md](../../docs/skills/principle-subtract-before-you-add.md) | Port-authored contract, test, candidate-amendment record or retained provenance |
+| [docs/skills/principle-test-behavior-not-implementation.md](../../docs/skills/principle-test-behavior-not-implementation.md) | Port-authored contract, test, candidate-amendment record or retained provenance |
+| [docs/skills/principle-type-system-discipline.md](../../docs/skills/principle-type-system-discipline.md) | Port-authored contract, test, candidate-amendment record or retained provenance |
+| [docs/skills/recall.md](../../docs/skills/recall.md) | Port-authored contract, test, candidate-amendment record or retained provenance |
+| [docs/skills/reflect.md](../../docs/skills/reflect.md) | Port-authored contract, test, candidate-amendment record or retained provenance |
+| [docs/skills/setup-pstack.md](../../docs/skills/setup-pstack.md) | Port-authored contract, test, candidate-amendment record or retained provenance |
+| [docs/skills/sharpen.md](../../docs/skills/sharpen.md) | Port-authored contract, test, candidate-amendment record or retained provenance |
+| [docs/skills/show-me-your-work.md](../../docs/skills/show-me-your-work.md) | Port-authored contract, test, candidate-amendment record or retained provenance |
+| [docs/skills/swarm.md](../../docs/skills/swarm.md) | Port-authored contract, test, candidate-amendment record or retained provenance |
+| [docs/skills/tdd.md](../../docs/skills/tdd.md) | Port-authored contract, test, candidate-amendment record or retained provenance |
+| [docs/skills/teach.md](../../docs/skills/teach.md) | Port-authored contract, test, candidate-amendment record or retained provenance |
+| [docs/skills/technical-writing.md](../../docs/skills/technical-writing.md) | Port-authored contract, test, candidate-amendment record or retained provenance |
+| [docs/skills/typescript-best-practices.md](../../docs/skills/typescript-best-practices.md) | Port-authored contract, test, candidate-amendment record or retained provenance |
+| [docs/skills/unslop.md](../../docs/skills/unslop.md) | Port-authored contract, test, candidate-amendment record or retained provenance |
+| [docs/skills/why.md](../../docs/skills/why.md) | Port-authored contract, test, candidate-amendment record or retained provenance |
+| [docs/superpowers/plans/2026-10-07-pstack-openai.md](../../docs/superpowers/plans/2026-10-07-pstack-openai.md) | Port-authored contract, test, candidate-amendment record or retained provenance |
+| [docs/superpowers/specs/2026-10-07-pstack-openai-design.md](../../docs/superpowers/specs/2026-10-07-pstack-openai-design.md) | Port-authored contract, test, candidate-amendment record or retained provenance |
+| [docs/testing/benny-readiness.md](../../docs/testing/benny-readiness.md) | Port-authored contract, test, candidate-amendment record or retained provenance |
+| [docs/testing/chatgpt.md](../../docs/testing/chatgpt.md) | Port-authored contract, test, candidate-amendment record or retained provenance |
+| [docs/testing/codex.md](../../docs/testing/codex.md) | Port-authored contract, test, candidate-amendment record or retained provenance |
+| [docs/testing/dependency-readiness.md](../../docs/testing/dependency-readiness.md) | Port-authored contract, test, candidate-amendment record or retained provenance |
+| [docs/testing/helper-setup.md](../../docs/testing/helper-setup.md) | Port-authored contract, test, candidate-amendment record or retained provenance |
+| [docs/testing/host-matrix.md](../../docs/testing/host-matrix.md) | Port-authored contract, test, candidate-amendment record or retained provenance |
+| [docs/troubleshooting.md](../../docs/troubleshooting.md) | Port-authored contract, test, candidate-amendment record or retained provenance |
+| [docs/workflows/arena.md](../../docs/workflows/arena.md) | Port-authored contract, test, candidate-amendment record or retained provenance |
+| [docs/workflows/choosing-a-workflow.md](../../docs/workflows/choosing-a-workflow.md) | Port-authored contract, test, candidate-amendment record or retained provenance |
+| [docs/workflows/poteto-mode.md](../../docs/workflows/poteto-mode.md) | Port-authored contract, test, candidate-amendment record or retained provenance |
+| [docs/workflows/swarm.md](../../docs/workflows/swarm.md) | Port-authored contract, test, candidate-amendment record or retained provenance |
+| [references/host-capabilities.md](../../references/host-capabilities.md) | Port-authored contract, test, candidate-amendment record or retained provenance |
+| [references/model-roles.md](../../references/model-roles.md) | Port-authored contract, test, candidate-amendment record or retained provenance |
+| [references/orchestration-contract.md](../../references/orchestration-contract.md) | Port-authored contract, test, candidate-amendment record or retained provenance |
+| [references/workflow-ownership.md](../../references/workflow-ownership.md) | Port-authored contract, test, candidate-amendment record or retained provenance |
+| [skills/poteto-mode/scripts/bootstrap.test.ts](../../skills/poteto-mode/scripts/bootstrap.test.ts) | Port-authored contract, test, candidate-amendment record or retained provenance |
+| [skills/poteto-mode/scripts/worktree-audit.py](../../skills/poteto-mode/scripts/worktree-audit.py) | Port-authored contract, test, candidate-amendment record or retained provenance |
+| [tests/__init__.py](../../tests/__init__.py) | Port-authored contract, test, candidate-amendment record or retained provenance |
+| [tests/evidence_fixtures.py](../../tests/evidence_fixtures.py) | Port-authored contract, test, candidate-amendment record or retained provenance |
+| [tests/fixture_paths.py](../../tests/fixture_paths.py) | Port-authored contract, test, candidate-amendment record or retained provenance |
+| [tests/test_catalog.py](../../tests/test_catalog.py) | Port-authored contract, test, candidate-amendment record or retained provenance |
+| [tests/test_decision_log.py](../../tests/test_decision_log.py) | Port-authored contract, test, candidate-amendment record or retained provenance |
+| [tests/test_dependencies.py](../../tests/test_dependencies.py) | Port-authored contract, test, candidate-amendment record or retained provenance |
+| [tests/test_full_package_update.py](../../tests/test_full_package_update.py) | Port-authored contract, test, candidate-amendment record or retained provenance |
+| [tests/test_inventory_closed.py](../../tests/test_inventory_closed.py) | Port-authored contract, test, candidate-amendment record or retained provenance |
+| [tests/test_manifest.py](../../tests/test_manifest.py) | Port-authored contract, test, candidate-amendment record or retained provenance |
+| [tests/test_pstack_plan_check.py](../../tests/test_pstack_plan_check.py) | Port-authored contract, test, candidate-amendment record or retained provenance |
+| [tests/test_release_report.py](../../tests/test_release_report.py) | Port-authored contract, test, candidate-amendment record or retained provenance |
+| [tests/test_source_inventory.py](../../tests/test_source_inventory.py) | Port-authored contract, test, candidate-amendment record or retained provenance |
+| [tests/test_update_regression.py](../../tests/test_update_regression.py) | Port-authored contract, test, candidate-amendment record or retained provenance |
+| [tests/test_upstream_apply.py](../../tests/test_upstream_apply.py) | Port-authored contract, test, candidate-amendment record or retained provenance |
+| [tests/test_upstream_check.py](../../tests/test_upstream_check.py) | Port-authored contract, test, candidate-amendment record or retained provenance |
+| [tests/test_validate_evidence.py](../../tests/test_validate_evidence.py) | Port-authored contract, test, candidate-amendment record or retained provenance |
+| [tests/test_validate_package.py](../../tests/test_validate_package.py) | Port-authored contract, test, candidate-amendment record or retained provenance |
+| [tests/test_wiki_export.py](../../tests/test_wiki_export.py) | Port-authored contract, test, candidate-amendment record or retained provenance |
+| [tests/test_worktree_audit.py](../../tests/test_worktree_audit.py) | Port-authored contract, test, candidate-amendment record or retained provenance |
+| [tools/baseline_policy.py](../../tools/baseline_policy.py) | Port-authored contract, test, candidate-amendment record or retained provenance |
+| [tools/build_catalog.py](../../tools/build_catalog.py) | Port-authored contract, test, candidate-amendment record or retained provenance |
+| [tools/compare_upstream.py](../../tools/compare_upstream.py) | Port-authored contract, test, candidate-amendment record or retained provenance |
+| [tools/export_wiki.py](../../tools/export_wiki.py) | Port-authored contract, test, candidate-amendment record or retained provenance |
+| [tools/release_report.py](../../tools/release_report.py) | Port-authored contract, test, candidate-amendment record or retained provenance |
+| [tools/source_inventory.py](../../tools/source_inventory.py) | Port-authored contract, test, candidate-amendment record or retained provenance |
+| [tools/sync_upstream.py](../../tools/sync_upstream.py) | Port-authored contract, test, candidate-amendment record or retained provenance |
+| [tools/update_metadata.py](../../tools/update_metadata.py) | Port-authored contract, test, candidate-amendment record or retained provenance |
+| [tools/validate_evidence.py](../../tools/validate_evidence.py) | Port-authored contract, test, candidate-amendment record or retained provenance |
+| [tools/validate_package.py](../../tools/validate_package.py) | Port-authored contract, test, candidate-amendment record or retained provenance |
 
 ## Transaction-generated paths
 
-Current candidate transaction paths are reserved for an explicitly approved apply. The acceptance receipt remains unchanged.
+The amendment retains prior fragments here. No full updater apply was invoked for PR #729; its apply path is reserved, not an existing approval or execution receipt. The separate amendment record documents the actual operation. Acceptance is unchanged.
 
 | Path | Role |
 | --- | --- |
-| `docs/parity/upstream-manifests/accepted.json` | Update transaction or separately reviewed acceptance receipt |
-| `docs/parity/upstream-manifests/d457567332aa6989e753ea289f30ea2bfbc80bc0.apply.json` | Update transaction or separately reviewed acceptance receipt |
-| `docs/parity/upstream-manifests/d457567332aa6989e753ea289f30ea2bfbc80bc0.previous-fragments.json` | Update transaction or separately reviewed acceptance receipt |
+| `docs/parity/upstream-manifests/88d47514b82e7c44f00f2b2a72ff6dd12158038c.apply.json` | Prior-fragment record, unchanged acceptance receipt, or reserved full-apply path |
+| `docs/parity/upstream-manifests/88d47514b82e7c44f00f2b2a72ff6dd12158038c.previous-fragments.json` | Prior-fragment record, unchanged acceptance receipt, or reserved full-apply path |
+| `docs/parity/upstream-manifests/accepted.json` | Prior-fragment record, unchanged acceptance receipt, or reserved full-apply path |
 
 ## Reserved report-only paths
 

@@ -55,7 +55,7 @@ Source inventory: [docs/parity/inventory.json](../parity/inventory.json). Catalo
 | [recall](recall.md) | Reconstruct scoped recent working context from history, shared records and independently checked live state. |
 | [reflect](reflect.md) | Mine an active session for durable learnings and route them into explicitly approved skill edits. |
 | [setup-pstack](setup-pstack.md) | Configure pstack model choices per role and reasoning budget with confirmed availability and an explicit persistence gate. |
-| [sharpen](sharpen.md) | Frame the task around its intended outcome, preserve user constraints and choose an outside verification. |
+| [sharpen](sharpen.md) | Make a prompt deeper without expanding scope, return four expert-framing answers and its rewrite, then stop. |
 | [show-me-your-work](show-me-your-work.md) | Keep a reviewable local decision trail for long-running or unattended work. |
 | [swarm](swarm.md) | Fan out N workers over slices, identical race briefs or a mixture, then return one evidenced report. |
 | [tdd](tdd.md) | Make broken behavior executable before fixing a bug with a clear cheap test path, then prove the focused regression test passes. |

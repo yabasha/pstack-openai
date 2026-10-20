@@ -11,10 +11,10 @@
       "license": "MIT",
       "sourcePath": "LICENSE"
     },
-    "rationale": "Retain portable package identity and navigation; upstream Cursor configuration is not an OpenAI runtime mapping.",
-    "upstreamCommit": "d457567332aa6989e753ea289f30ea2bfbc80bc0",
+    "rationale": "Amend unaccepted 0.2.3 for PR #729: adopt explicit rewrite-only sharpen, align caller docs and cases, preserve portable identity and permission boundaries.",
+    "upstreamCommit": "88d47514b82e7c44f00f2b2a72ff6dd12158038c",
     "upstreamPath": ".cursor-plugin/plugin.json",
-    "upstreamSha256": "884a2b21bd0cee611e6f469d139f33a0d2eb0be67d9f4ee388c683434ad995df",
+    "upstreamSha256": "079de0bc2c331df98ecf388b84c938a3a61910f49a1cc37e680d9e2ca9bcd324",
     "verification": {
       "chatgpt": {
         "evidence": [],
@@ -37,7 +37,7 @@
       "sourcePath": "LICENSE"
     },
     "rationale": "Copy the canonical logo unchanged for package presentation. This asset establishes no runtime workflow capability.",
-    "upstreamCommit": "d457567332aa6989e753ea289f30ea2bfbc80bc0",
+    "upstreamCommit": "88d47514b82e7c44f00f2b2a72ff6dd12158038c",
     "upstreamPath": "assets/logo.png",
     "upstreamSha256": "672f6791589ef758b0ced2c4c477913fa2758623c438e265639a0d539ce90695",
     "verification": {

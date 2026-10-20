@@ -83,7 +83,7 @@ The following statuses come from the current parity inventory. Pending aggregate
 
 Destination: [skills/principle-never-block-on-the-human/SKILL.md](../../skills/principle-never-block-on-the-human/SKILL.md).
 
-Upstream commit: `d457567332aa6989e753ea289f30ea2bfbc80bc0`. SHA-256: `05030a7a083c337676f793881b4e93cd218e8f1dd676529f56e6ac1d3efb8d1f`.
+Upstream commit: `88d47514b82e7c44f00f2b2a72ff6dd12158038c`. SHA-256: `05030a7a083c337676f793881b4e93cd218e8f1dd676529f56e6ac1d3efb8d1f`.
 
 Disposition: `runtime`. Aggregate adaptation status: `adapted-reviewed`.
 

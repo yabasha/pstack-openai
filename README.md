@@ -1,12 +1,12 @@
 # pstack portable package
 
-An unofficial port of Lauren Tan's pstack v0.15.28. The source inventory includes 56 root skills, 24 principles, 23 playbooks and 172 source files. Read [UPSTREAM.md](UPSTREAM.md), [NOTICE.md](NOTICE.md) and [LICENSE](LICENSE) for lineage and attribution.
+An unofficial port of Lauren Tan's pstack v0.15.29. The source inventory includes 56 root skills, 24 principles, 23 playbooks and 172 source files. Read [UPSTREAM.md](UPSTREAM.md), [NOTICE.md](NOTICE.md) and [LICENSE](LICENSE) for lineage and attribution.
 
-Port 0.2.3 is an unaccepted candidate for upstream `d457567332aa6989e753ea289f30ea2bfbc80bc0`. The accepted source remains 0.2.2 at `182f2ce414e83224915c190d2f63239c1608d0a5` until separate reviewed acceptance.
+Port 0.2.3 is an unaccepted candidate for upstream `88d47514b82e7c44f00f2b2a72ff6dd12158038c`. The accepted source remains 0.2.2 at `182f2ce414e83224915c190d2f63239c1608d0a5` until separate reviewed acceptance.
 
 Upstream adds Claude Code packaging; this port retains its shared portable runtime and records the Claude adapter as a quoted reference only.
 
-It adds create-formal-verification-skill and maintain-formal-verification-skill, including bounded claims, safe mutation trials and explicit testing fallbacks. Source validation and installed discovery are tracked separately from full workflow behavior. The [0.2.2 source validation record](docs/releases/0.2.2.md) identifies the reviewed snapshot, checks and remaining host limits. Earlier release records retain their historical scope. See [compatibility](docs/compatibility.md) before relying on a workflow.
+It also makes `/sharpen` return four framing answers and a rewritten prompt without executing its task. It adds create-formal-verification-skill and maintain-formal-verification-skill, including bounded claims, safe mutation trials and explicit testing fallbacks. Source validation and installed discovery are tracked separately from full workflow behavior. The [0.2.2 source validation record](docs/releases/0.2.2.md) identifies the reviewed snapshot, checks and remaining host limits. Earlier release records retain their historical scope. See [compatibility](docs/compatibility.md) before relying on a workflow.
 
 ## Start here
 

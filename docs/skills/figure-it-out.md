@@ -98,7 +98,7 @@ The following statuses come from the current parity inventory. Pending aggregate
 
 Destination: [skills/figure-it-out/SKILL.md](../../skills/figure-it-out/SKILL.md).
 
-Upstream commit: `d457567332aa6989e753ea289f30ea2bfbc80bc0`. SHA-256: `bdb23cdbd82a1e6af094b495691c832a6f7f3ab9706ba9edbeb664ef51a726e1`.
+Upstream commit: `88d47514b82e7c44f00f2b2a72ff6dd12158038c`. SHA-256: `bdb23cdbd82a1e6af094b495691c832a6f7f3ab9706ba9edbeb664ef51a726e1`.
 
 Disposition: `runtime`. Aggregate adaptation status: `adapted-reviewed`.
 

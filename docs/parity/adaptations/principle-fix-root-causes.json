@@ -12,7 +12,7 @@
       "sourcePath": "LICENSE"
     },
     "rationale": "Distinguish legitimate states requiring guards from invalid state producers; retain authorization for persistent-state changes.",
-    "upstreamCommit": "d457567332aa6989e753ea289f30ea2bfbc80bc0",
+    "upstreamCommit": "88d47514b82e7c44f00f2b2a72ff6dd12158038c",
     "upstreamPath": "skills/principle-fix-root-causes/SKILL.md",
     "upstreamSha256": "8df3c8c3fe57eb0055a5c8efab8ab144557fdf301da70b1cdc77a3a3ef3f3052",
     "verification": {

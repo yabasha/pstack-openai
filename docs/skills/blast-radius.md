@@ -92,7 +92,7 @@ The following statuses come from the current parity inventory. Pending aggregate
 
 Destination: [skills/blast-radius/SKILL.md](../../skills/blast-radius/SKILL.md).
 
-Upstream commit: `d457567332aa6989e753ea289f30ea2bfbc80bc0`. SHA-256: `2e10745b97f5862323dcda3b29ca60d56b5c3c98e37020085d26b48efbe0a436`.
+Upstream commit: `88d47514b82e7c44f00f2b2a72ff6dd12158038c`. SHA-256: `2e10745b97f5862323dcda3b29ca60d56b5c3c98e37020085d26b48efbe0a436`.
 
 Disposition: `runtime`. Aggregate adaptation status: `adapted-reviewed`.
 

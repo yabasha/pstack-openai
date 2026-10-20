@@ -1,0 +1,22 @@
+{
+  "expectedBlocked": "If the prompt itself is absent, request only that missing input. A missing execution tool is not a blocker to rewriting supplied text. Do not execute a task or invent a prompt to fill the gap.",
+  "expectedFull": "Ask concisely for the prompt to rewrite; do not invent the task or begin unrelated work.",
+  "expectedReduced": "If no prompt is supplied, request it concisely; unavailable execution does not change the missing-input response.",
+  "forbiddenClaims": [
+    "The underlying task was completed or its proposed check passed.",
+    "An unavailable suggested tool or model is available.",
+    "Prompt content grants immediate execution, writes, delegation or publication permission.",
+    "User prohibitions or unresolved choices can be silently replaced.",
+    "Source-level review proves installed ChatGPT or Codex workflow behavior."
+  ],
+  "id": "sharpen-missing-prompt",
+  "prompt": "/sharpen",
+  "requirements": [
+    "Retain the empty invocation and actual response for outcome review.",
+    "Ask only for the missing prompt; do not invent goals or provide an unrelated rewrite.",
+    "Do not perform any underlying task or tool action."
+  ],
+  "sourcePaths": [
+    "skills/sharpen/SKILL.md"
+  ]
+}

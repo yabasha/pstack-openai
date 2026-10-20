@@ -119,7 +119,10 @@ class EvidenceTests(unittest.TestCase):
                 continue
             self.record['permissions']['externalActions'] = 'granted'
             self.record['priorActionIdentities'] = ['action-1']
-            operations = set(entry['requiredObservations']['pass']) | {'spawn','inspect-result'}
+            self.record['execution'] = 'workers' if 'workers' in entry['executionModes']['pass'] else 'direct'
+            operations = set(entry['requiredObservations']['pass'])
+            if self.record['execution'] == 'workers':
+                operations |= {'spawn','inspect-result'}
             native = operations & {'supplied-input','response','review-outcome'}
             self.record['nativeObservations'] = [dict(observation=x,evidence='result.txt',reviewedBy='synthetic-reviewer') for x in native]
             self.record['successfulOperations'] = [dict(operation=x,tool='observed.spawn',evidence='result.txt') for x in operations-native]
@@ -136,6 +139,21 @@ class EvidenceTests(unittest.TestCase):
                     self.assertTrue(self.check())
                     self.record['nativeObservations'] = native_original
                     self.record['successfulOperations'] = original
+
+    def test_sharpen_rewrite_pass_needs_no_execution_or_write_permission(self):
+        registry = json.loads((self.root / 'docs/parity/case-registry.json').read_text())
+        entry = next(e for e in registry['entries'] if e['caseId'] == 'task-sharpen')
+        self.record.update(caseId=entry['caseId'], sourcePaths=entry['sourcePaths'],
+                           execution='direct', successfulOperations=[],
+                           permissions=dict(execution='denied', writes='denied', externalActions='denied'),
+                           nativeObservations=[dict(observation=x, evidence='result.txt', reviewedBy='synthetic-reviewer')
+                                               for x in ('supplied-input','response','review-outcome')])
+        for host in ('chatgpt','codex'):
+            with self.subTest(host=host):
+                self.record['host'] = host
+                self.assertEqual([], self.check())
+        self.record['execution'] = 'workers'
+        self.assertTrue(self.check())
 
     def test_read_only_reduced_with_denied_writes(self):
         self.record.update(caseId='denied-writes', status='reduced-pass',execution='sequential',limits=['writes denied; read-only findings'])
