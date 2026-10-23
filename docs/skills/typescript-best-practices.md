@@ -84,7 +84,7 @@ Current host statuses and release evidence: [current parity inventory](../parity
 
 Destination: [skills/typescript-best-practices/SKILL.md](../../skills/typescript-best-practices/SKILL.md).
 
-Upstream commit: `df581122cde17e6e27686b5a448bde23e4ad4318`. SHA-256: `28f9e61710e205f6f3c5476f333483cff0e988f6a5b639e2faad536344b40c5e`.
+Upstream commit: `4ec7ffa173eaa70d3d9467a627baf0954645a353`. SHA-256: `ec1dac086d3708e5940d45d250c30a37dd953b4e3cb2ca0692f5851d7a039e27`.
 
 Disposition: `runtime`. Aggregate adaptation status: `adapted-reviewed`.
 
@@ -92,6 +92,6 @@ Disposition: `runtime`. Aggregate adaptation status: `adapted-reviewed`.
 
 Destination: [skills/typescript-best-practices/references/patterns.md](../../skills/typescript-best-practices/references/patterns.md).
 
-Upstream commit: `df581122cde17e6e27686b5a448bde23e4ad4318`. SHA-256: `faa1362055374452efccac1b629677c61acfb0bcc6c4e3311836b5715638ee18`.
+Upstream commit: `4ec7ffa173eaa70d3d9467a627baf0954645a353`. SHA-256: `12e70c9419a8b3f5d6a1ab80e272c1f00a43ac0b3bbf72d68199033570e5de77`.
 
-Disposition: `runtime`. Aggregate adaptation status: `unchanged-reviewed`.
+Disposition: `runtime`. Aggregate adaptation status: `adapted-reviewed`.

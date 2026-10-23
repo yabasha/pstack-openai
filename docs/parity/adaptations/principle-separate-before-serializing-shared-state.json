@@ -1,29 +1,29 @@
 [
   {
-    "upstreamPath": "skills/principle-separate-before-serializing-shared-state/SKILL.md",
-    "upstreamCommit": "df581122cde17e6e27686b5a448bde23e4ad4318",
-    "upstreamSha256": "05294b40448e927c5da1c7b6f5c6b9fed3744637e3833d2d948b9154a9dd00bb",
-    "destinationPath": "skills/principle-separate-before-serializing-shared-state/SKILL.md",
-    "disposition": "runtime",
-    "rationale": "Preserve the complete canonical principle and invocation metadata. Bind concurrent writes to observed session capabilities, distinct ownership and authorization. No comparison-port additions.",
+    "adaptationStatus": "adapted-reviewed",
     "dependencies": [
       "references/host-capabilities.md",
       "references/orchestration-contract.md"
     ],
+    "destinationPath": "skills/principle-separate-before-serializing-shared-state/SKILL.md",
+    "disposition": "runtime",
     "licenseProvenance": {
-      "license": "MIT",
       "copyright": "Copyright (c) 2026 Lauren Tan",
+      "license": "MIT",
       "sourcePath": "LICENSE"
     },
-    "adaptationStatus": "adapted-reviewed",
+    "rationale": "Preserve the complete canonical principle and invocation metadata. Bind concurrent writes to observed session capabilities, distinct ownership and authorization. No comparison-port additions.",
+    "upstreamCommit": "4ec7ffa173eaa70d3d9467a627baf0954645a353",
+    "upstreamPath": "skills/principle-separate-before-serializing-shared-state/SKILL.md",
+    "upstreamSha256": "05294b40448e927c5da1c7b6f5c6b9fed3744637e3833d2d948b9154a9dd00bb",
     "verification": {
       "chatgpt": {
-        "status": "not-run",
-        "evidence": []
+        "evidence": [],
+        "status": "not-run"
       },
       "codex": {
-        "status": "not-run",
-        "evidence": []
+        "evidence": [],
+        "status": "not-run"
       }
     }
   }

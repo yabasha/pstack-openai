@@ -1,11 +1,6 @@
 [
   {
-    "upstreamPath": "skills/principle-attack-the-premise/SKILL.md",
-    "upstreamCommit": "df581122cde17e6e27686b5a448bde23e4ad4318",
-    "upstreamSha256": "c87bd7536f772f8a403ad8155535ee17a1bbec9a353156693eb3bb1520c87ae3",
-    "destinationPath": "skills/principle-attack-the-premise/SKILL.md",
-    "disposition": "runtime",
-    "rationale": "Preserve the complete canonical principle and invocation metadata; add observed session capabilities, authorization boundaries and reduced or blocked census limits. No comparison content or personal preferences added.",
+    "adaptationStatus": "adapted-reviewed",
     "dependencies": [
       "references/host-capabilities.md",
       "skills/principle-build-the-lever/SKILL.md",
@@ -13,20 +8,25 @@
       "skills/principle-laziness-protocol/SKILL.md",
       "skills/principle-redesign-from-first-principles/SKILL.md"
     ],
+    "destinationPath": "skills/principle-attack-the-premise/SKILL.md",
+    "disposition": "runtime",
     "licenseProvenance": {
-      "license": "MIT",
       "copyright": "Copyright (c) 2026 Lauren Tan",
+      "license": "MIT",
       "sourcePath": "LICENSE"
     },
-    "adaptationStatus": "adapted-reviewed",
+    "rationale": "Generalize actor-census-only diagnosis into falsifiable shared-premise testing; adapt capability limits to the general check.",
+    "upstreamCommit": "4ec7ffa173eaa70d3d9467a627baf0954645a353",
+    "upstreamPath": "skills/principle-attack-the-premise/SKILL.md",
+    "upstreamSha256": "6a932884daad4aa189e9b5d1665226bbc75621d4d2a398fd4003bebd382f4599",
     "verification": {
       "chatgpt": {
-        "status": "not-run",
-        "evidence": []
+        "evidence": [],
+        "status": "not-run"
       },
       "codex": {
-        "status": "not-run",
-        "evidence": []
+        "evidence": [],
+        "status": "not-run"
       }
     }
   }

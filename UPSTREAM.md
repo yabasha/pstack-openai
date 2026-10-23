@@ -14,7 +14,7 @@ Import inspection date: 2026-10-07, Asia/Amman.
 
 Both downloaded archives matched the approved digests before extraction. Extraction rejected absolute paths, parent traversal, links, and non-regular members. Source files were read as data; downloaded scripts were not executed.
 
-The [baseline paths](docs/parity/baseline-paths.txt) record all 164 canonical files, including 51 root skills, 24 principle leaves, 23 poteto playbooks and three nested Benny skills. Principles are included in the root count; all 113 other files, including playbooks, remain accounted for. The [inventory](docs/parity/inventory.json) retains every original file digest and records its reviewed destination and dependencies. Both host verification statuses remain not-run. Local structural closure does not establish installed discovery, worker support or workflow behavior.
+The [baseline paths](docs/parity/baseline-paths.txt) record all 169 current source files, including 54 root skills, 24 principle leaves, 23 poteto playbooks and three nested Benny skills. Principles are included in the root count; all 115 other files, including playbooks, remain accounted for. The [inventory](docs/parity/inventory.json) retains every current source file digest and records its reviewed destination and dependencies. Both host verification statuses remain not-run. Local structural closure does not establish installed discovery, worker support or workflow behavior.
 
 The comparison port contains 26 root skills and remains a reference. Its archive and notice informed lineage checks; reviewed adaptations preserve the complete canonical baseline. See [NOTICE.md](NOTICE.md) and the [support map](docs/parity/support-map.md) for retained attribution and additional port-file provenance.
 
@@ -37,3 +37,47 @@ The [helper reconciliation](docs/parity/reconciliations/task12-lock.json) record
 The [template reconciliation](docs/parity/reconciliations/task16-template.json) retains both historical rows and assigns the unchanged decision-log template to its original single current owner. The [support map](docs/parity/support-map.md) also records the relocated orchestration prompt dependency and local dependency closure. Historical fragment rationales retain the implementation-time limits; the map distinguishes closed local paths from current runtime limits.
 
 The operative copy has no installed helper dependencies. Historical isolated tests at `37b68c8e842b275f310ead112c0ecb7fa0ade308` do not prove this candidate or either host. No host installation or loading follows from the metadata reconciliation.
+
+## Unaccepted candidate e5136d82418d2db3165ea1050d17577cd618cc05
+
+Candidate version 0.2.0. Archive SHA-256 30d6c97a55e4b08f6f75d6314b465bb3fe8c9a118149fc17fb1713bd7827014e. Review SHA-256 b9a52e1464c4738c53166f71cf6567dff260a035a4908b97ccfa4eb0a43330dc.
+The inventory stages this candidate. The accepted baseline above remains historical evidence. Structural checks, helper regression tests, and affected host cases must run before separate acceptance.
+
+## Accepted source baseline, 2026-10-15
+
+Port 0.2.0 accepts official pstack 0.15.25 at `e5136d82418d2db3165ea1050d17577cd618cc05` after user authorization and reviewed validation. The [acceptance receipt](docs/parity/upstream-manifests/accepted.json) binds the exact manifest and [source acceptance evidence](docs/releases/0.2.0.md). Installed-host and workflow evidence remain separate. The unaccepted-candidate section above records the earlier staging event.
+
+## Unaccepted candidate 99743e9c151c8537cbbf1f98bb38f34ef3368453
+
+Candidate version 0.2.1. Archive SHA-256 5122bc6ef8d8f9a216915d90af410c987196e799e78974f14e7c7af5f3560088. Review SHA-256 805f692cc98d8679869f018b79b761706946e70f5313df2a822bdae0ce08bc7e.
+The inventory stages this candidate. The accepted baseline above remains historical evidence. Structural checks, helper regression tests, and affected host cases must run before separate acceptance.
+
+## Accepted source baseline, 2026-10-16
+
+Port 0.2.1 accepts official pstack 0.15.25 at `99743e9c151c8537cbbf1f98bb38f34ef3368453` after the user-authorized sync and reviewed validation. The [acceptance receipt](docs/parity/upstream-manifests/accepted.json) binds the exact manifest, applied package revision and [source validation evidence](docs/releases/0.2.1.md). Earlier candidate and acceptance sections retain their historical scope. Installed refresh and workflow behavior remain separate observations.
+
+## Unaccepted candidate 182f2ce414e83224915c190d2f63239c1608d0a5
+
+Candidate version 0.2.2. Archive SHA-256 d56799a571f6e624f501568dc768fe31a41b691403525c872d41daae41b25417. Review SHA-256 b16809c21461cd7fcf5223a99e6e5fa6c338db0438b36b6dfc677b9310b85c41.
+The inventory stages this candidate. The accepted baseline above remains historical evidence. Structural checks, helper regression tests, and affected host cases must run before separate acceptance.
+
+## Accepted source baseline, 2026-10-17
+
+Port 0.2.2 accepts official pstack 0.15.25 at `182f2ce414e83224915c190d2f63239c1608d0a5` after explicit user acceptance of the reviewed minimal sync. The [acceptance receipt](docs/parity/upstream-manifests/accepted.json) binds the exact source manifest, package identity and [source validation record](docs/releases/0.2.2.md). The Claude adapter remains quoted reference-only source; portable runtime behavior is unchanged. Prior candidate and acceptance sections retain their historical scope. Integration, installed refresh and skill discovery are recorded separately in task-owned artifacts and do not establish full workflow support.
+
+## Unaccepted candidate d457567332aa6989e753ea289f30ea2bfbc80bc0
+
+Candidate version 0.2.3. Archive SHA-256 aabcbe225ee504014ba4931908357889d9b34f28b0afb050ae84ad19f3daa101. Review SHA-256 45c2ce6d09b6bd414d878e3e9a801fc2dddba1d98a56f3184c04a941ab222954.
+The inventory stages this candidate. The accepted baseline above remains historical evidence. Structural checks, helper regression tests, and affected host cases must run before separate acceptance.
+
+## Unaccepted 0.2.3 amendment: PR #729
+
+Source `d457567332aa6989e753ea289f30ea2bfbc80bc0` is superseded for this unaccepted candidate by `88d47514b82e7c44f00f2b2a72ff6dd12158038c`, upstream 0.15.29. The package version remains 0.2.3. All 172 canonical files were archive/tree verified; archive SHA-256 `df98989c5e6b3128ce3633eb68b4e31a79aabfe415c79d5e37f9b4906f94d2d9`. Eight canonical files changed, with no membership change. Sharpen now returns expert framing and a rewrite, without executing the input task. The accepted receipt remains `182f2ce414e83224915c190d2f63239c1608d0a5`. This is an explicitly requested candidate amendment, not source acceptance, plugin refresh or another invocation of the full update apply command.
+
+## Statechart candidate amendment
+
+PRs #741, #776 and #779 amend the unaccepted 0.2.3 source to `4ec7ffa173eaa70d3d9467a627baf0954645a353`, upstream 0.15.30. All 184 canonical files were archive/tree verified, including 57 root skills, 24 principles and 23 playbooks. The PR729 sharpen amendment remains included. The final statechart implementation includes the six correctness fixes. Rendering uses an explicitly selected reviewed local executable; subprocesses are bounded. The generated Claude tree remains derived and its adapter stays reference-only. The accepted 0.2.2 receipt is unchanged; no acceptance, integration or refresh occurred. See the amendment manifest and [statechart execution](skills/statechart/references/execution.md).
+
+## Source acceptance for 0.2.3
+
+The user explicitly accepted source `4ec7ffa173eaa70d3d9467a627baf0954645a353` on 2026-10-23, Asia/Amman. The [immutable source evidence](docs/releases/0.2.3.md) and strict accepted receipt bind the reviewed manifest and package ancestor. This supersedes the earlier unaccepted-candidate status while preserving its history. Linux PID-namespace coverage and full ChatGPT candidate loading/workflow verification remain incomplete. Integration, refresh and installed discovery are observed separately.

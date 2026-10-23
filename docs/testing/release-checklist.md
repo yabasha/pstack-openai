@@ -1,6 +1,8 @@
 # Current candidate 0.1.5
 
-Candidate source freeze: `4513f3d706e6dfe9e396c80a74c490c3ebcec7a6`. The strict immutable-source provenance check and both native discovery checks are evaluated separately from workflow qualification. See [provenance](../releases/provenance-015.json) and [discovery](../releases/discovery-015.json). No historical workflow grade transfers. Workflow reruns remain paused and full release qualification remains blocked.
+Current package: v0.2.1, with 54 root skills. See the [current validation and refresh record](../releases/0.2.1.md). The records below describe earlier package revisions; their 51-skill counts, dates and host results are historical and do not establish current workflow behavior.
+
+The approved version 0.1.0 is installed and enabled through the supported personal marketplace. Operative source remains 5d05ab2458f4cd73c44b24265a3a1920b98b8cf4. Both the source export and installed cache match all 726 frozen files and permission modes, with no extra files. Only the target marketplace entry and plugin enablement were added; existing plugins were retained.
 
 ## Historical 0.1.3 record
 

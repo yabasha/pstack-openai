@@ -83,6 +83,6 @@ Current host statuses and release evidence: [current parity inventory](../parity
 
 Destination: [skills/principle-foundational-thinking/SKILL.md](../../skills/principle-foundational-thinking/SKILL.md).
 
-Upstream commit: `df581122cde17e6e27686b5a448bde23e4ad4318`. SHA-256: `864b827e8199d946ce58beca0f89c4ed4099ed6e426fb698a3aaa45de2a9eea2`.
+Upstream commit: `4ec7ffa173eaa70d3d9467a627baf0954645a353`. SHA-256: `864b827e8199d946ce58beca0f89c4ed4099ed6e426fb698a3aaa45de2a9eea2`.
 
 Disposition: `runtime`. Aggregate adaptation status: `adapted-reviewed`.

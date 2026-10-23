@@ -83,6 +83,6 @@ Current host statuses and release evidence: [current parity inventory](../parity
 
 Destination: [skills/principle-never-block-on-the-human/SKILL.md](../../skills/principle-never-block-on-the-human/SKILL.md).
 
-Upstream commit: `df581122cde17e6e27686b5a448bde23e4ad4318`. SHA-256: `f2764bb9338cbfc788c903cf4b9cd0a5f4042d3a04dd6d59cbd525d9beaadd0a`.
+Upstream commit: `4ec7ffa173eaa70d3d9467a627baf0954645a353`. SHA-256: `05030a7a083c337676f793881b4e93cd218e8f1dd676529f56e6ac1d3efb8d1f`.
 
 Disposition: `runtime`. Aggregate adaptation status: `adapted-reviewed`.

@@ -1,13 +1,17 @@
 {
-  "id": "package-support-contracts",
-  "sourcePaths": [
-    ".gitignore",
-    "LICENSE",
-    "README.md",
-    "assets/logo.png",
-    "skills/poteto-mode/scripts/watch-pr/tsconfig.json",
-    "skills/poteto-mode/scripts/watch-pr/types.compile.ts"
+  "expectedBlocked": "Unavailable installed-copy identity, inaccessible support files, denied execution or missing dependencies blocks the affected operation. Report precise limits; preserve files and perform no setup. Source-only inspection remains structural and cannot stand in for installed support behavior.",
+  "expectedFull": "Actual read and inspected installed-copy identity, resolved README links, full license attribution, canonical logo rendering, observed ignore checks and successful strict compile fixture output support this support-contract case. Worker execution meets the existing spawn/result requirements if claimed. Compilation proves the fixture contract only, not live watcher or forge behavior.",
+  "expectedReduced": "Inspect the accessible actual installed support files through authorized sequential reads and report exact observations. Keep absent compilation, rendering or Git execution explicitly unproven. Read-based reduction proves no compiler execution, logo rendering, installed dependency availability, worker independence or live watcher behavior.",
+  "forbiddenClaims": [
+    "Source bytes alone prove installed support behavior.",
+    "Reading types.compile.ts is a compiler pass.",
+    "File existence is rendered-logo proof.",
+    "Structural fixtures prove live watcher readiness.",
+    "Missing dependencies permit implicit installation.",
+    "Reduced read observations prove any unexecuted branch.",
+    "The quoted Claude adapter configures ChatGPT or Codex."
   ],
+  "id": "package-support-contracts",
   "prompt": "Inspect the support contracts of the actual installed frozen package. Read its attribution and entry-point links, inspect its canonical logo, verify ignore boundaries in a separately authorized owned copy, and exercise the watcher compile fixture only with existing approved dependencies and execution.",
   "requirements": [
     "Read the actual installed-copy identity and bind it to the exact frozen SHA and package version. Preserve byte identity when preparing any authorized writable verification copy; no source-only copy is installed evidence.",
@@ -16,17 +20,16 @@
     "Check .gitignore with actual Git ignore queries in the authorized verification copy: upstream downloads, node_modules and named temporary data are ignored; tracked provenance and evidence, including logs, remain eligible. Do not alter the installed package.",
     "Read the complete watcher tsconfig and types.compile fixture. With the exact existing pinned dependencies and approved execution, run the documented strict no-emit compiler command from skills/poteto-mode/scripts through Bun --no-install using the local TypeScript executable, --project watch-pr/tsconfig.json --noEmit --strict. Retain the actual invocation, runtime/version, exit status and output. Preserve positive READY typing and all four negative @ts-expect-error assertions.",
     "read, inspect-installed-copy, inspect-support-contracts, render-logo, check-ignore and compile-proof are observation labels tied to actually exposed operations and retained artifacts, never invented APIs.",
-    "A reduced read-based report explicitly lists unexecuted compile, rendering and ignore-query branches. Missing dependencies block compiler proof; no installation, network, live forge operation or setup permission follows from this case."
+    "A reduced read-based report explicitly lists unexecuted compile, rendering and ignore-query branches. Missing dependencies block compiler proof; no installation, network, live forge operation or setup permission follows from this case.",
+    "Inspect docs/harness/claude-code.md as a fenced source reference. Verify its reference-only disposition and source identity; do not use its Claude tool names, paths, model choices or setup rules as host bindings. Reading the reference does not prove host loading or compatibility."
   ],
-  "expectedFull": "Actual read and inspected installed-copy identity, resolved README links, full license attribution, canonical logo rendering, observed ignore checks and successful strict compile fixture output support this support-contract case. Worker execution meets the existing spawn/result requirements if claimed. Compilation proves the fixture contract only, not live watcher or forge behavior.",
-  "expectedReduced": "Inspect the accessible actual installed support files through authorized sequential reads and report exact observations. Keep absent compilation, rendering or Git execution explicitly unproven. Read-based reduction proves no compiler execution, logo rendering, installed dependency availability, worker independence or live watcher behavior.",
-  "expectedBlocked": "Unavailable installed-copy identity, inaccessible support files, denied execution or missing dependencies blocks the affected operation. Report precise limits; preserve files and perform no setup. Source-only inspection remains structural and cannot stand in for installed support behavior.",
-  "forbiddenClaims": [
-    "Source bytes alone prove installed support behavior.",
-    "Reading types.compile.ts is a compiler pass.",
-    "File existence is rendered-logo proof.",
-    "Structural fixtures prove live watcher readiness.",
-    "Missing dependencies permit implicit installation.",
-    "Reduced read observations prove any unexecuted branch."
+  "sourcePaths": [
+    ".gitignore",
+    "LICENSE",
+    "README.md",
+    "assets/logo.png",
+    "docs/harness/claude-code.md",
+    "skills/poteto-mode/scripts/watch-pr/tsconfig.json",
+    "skills/poteto-mode/scripts/watch-pr/types.compile.ts"
   ]
 }

@@ -1,11 +1,6 @@
 [
   {
-    "upstreamPath": "skills/poteto-mode/playbooks/eval.md",
-    "upstreamCommit": "df581122cde17e6e27686b5a448bde23e4ad4318",
-    "upstreamSha256": "b862bfa2fae2399abf047a8e80d3e3dddb64003af96fb1cebb625216131e36bb",
-    "destinationPath": "skills/poteto-mode/playbooks/eval.md",
-    "disposition": "runtime",
-    "rationale": "Preserve blinded experiment design, arena candidate and judge phases, transcript verification and synthesis. Replace source-host transcript and model assumptions with observed capability bindings and permission gates. Discriminating calibration is the assigned caller acceptance gate. Worker independence, model diversity, authorized isolated execution and transcript availability remain runtime limits; structural checks do not establish them.",
+    "adaptationStatus": "adapted-reviewed",
     "dependencies": [
       "skills/arena/SKILL.md",
       "skills/unslop/SKILL.md",
@@ -14,20 +9,25 @@
       "references/orchestration-contract.md",
       "references/workflow-ownership.md"
     ],
+    "destinationPath": "skills/poteto-mode/playbooks/eval.md",
+    "disposition": "runtime",
     "licenseProvenance": {
-      "license": "MIT",
       "copyright": "Copyright (c) 2026 Lauren Tan",
+      "license": "MIT",
       "sourcePath": "LICENSE"
     },
-    "adaptationStatus": "adapted-reviewed",
+    "rationale": "Upstream changes are editorial compression or delegate-effort reminders already governed by shared mode policy. Retain explicit local host, offline audit, authorization and evidence bindings.",
+    "upstreamCommit": "4ec7ffa173eaa70d3d9467a627baf0954645a353",
+    "upstreamPath": "skills/poteto-mode/playbooks/eval.md",
+    "upstreamSha256": "a93d449a908236afa6645179651844094b1547dbab4e484cffcdda630e4b90bf",
     "verification": {
       "chatgpt": {
-        "status": "not-run",
-        "evidence": []
+        "evidence": [],
+        "status": "not-run"
       },
       "codex": {
-        "status": "not-run",
-        "evidence": []
+        "evidence": [],
+        "status": "not-run"
       }
     }
   }

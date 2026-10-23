@@ -1,0 +1,132 @@
+[
+  {
+    "adaptationStatus": "adapted-reviewed",
+    "dependencies": [],
+    "destinationPath": "references/upstream-metadata/plugin.json",
+    "disposition": "reference-only",
+    "licenseProvenance": {
+      "copyright": "Copyright (c) 2026 Lauren Tan",
+      "license": "MIT",
+      "sourcePath": "LICENSE"
+    },
+    "rationale": "Amend unaccepted 0.2.3 for PR #729: adopt explicit rewrite-only sharpen, align caller docs and cases, preserve portable identity and permission boundaries. Reviewed 0.15.30 statechart routing and provenance while preserving the port manifest and host contracts.",
+    "upstreamCommit": "4ec7ffa173eaa70d3d9467a627baf0954645a353",
+    "upstreamPath": "plugin.json",
+    "upstreamSha256": "b17556047a5df5fd2c42550af8d965ece3c2e55aa68082def5951e09f4788ae1",
+    "verification": {
+      "chatgpt": {
+        "evidence": [],
+        "status": "not-run"
+      },
+      "codex": {
+        "evidence": [],
+        "status": "not-run"
+      }
+    }
+  },
+  {
+    "adaptationStatus": "adapted-reviewed",
+    "dependencies": [],
+    "destinationPath": "skills/in-your-own-words/SKILL.md",
+    "disposition": "runtime",
+    "licenseProvenance": {
+      "copyright": "Copyright (c) 2026 Lauren Tan",
+      "license": "MIT",
+      "sourcePath": "LICENSE"
+    },
+    "rationale": "Add reviewed upstream native-text workflow with explicit scope, capability and authorization limits; invocation metadata is not host enforcement.",
+    "upstreamCommit": "4ec7ffa173eaa70d3d9467a627baf0954645a353",
+    "upstreamPath": "skills/in-your-own-words/SKILL.md",
+    "upstreamSha256": "fa8ba74e27d7be371dc270ec78bbf816411477d0dfab185356c861ac8dd413ad",
+    "verification": {
+      "chatgpt": {
+        "evidence": [],
+        "status": "not-run"
+      },
+      "codex": {
+        "evidence": [],
+        "status": "not-run"
+      }
+    }
+  },
+  {
+    "adaptationStatus": "adapted-reviewed",
+    "dependencies": [
+      "skills/bro/SKILL.md",
+      "references/host-capabilities.md"
+    ],
+    "destinationPath": "skills/ketchup/SKILL.md",
+    "disposition": "runtime",
+    "licenseProvenance": {
+      "copyright": "Copyright (c) 2026 Lauren Tan",
+      "license": "MIT",
+      "sourcePath": "LICENSE"
+    },
+    "rationale": "Review cumulative canonical change against accepted 0.2.2; retain portable host, model, permission and evidence contracts.",
+    "upstreamCommit": "4ec7ffa173eaa70d3d9467a627baf0954645a353",
+    "upstreamPath": "skills/ketchup/SKILL.md",
+    "upstreamSha256": "f2923ffd14f6fc778f75a47aaed1f317fb5fd00b5701ca769d6446c74106dead",
+    "verification": {
+      "chatgpt": {
+        "evidence": [],
+        "status": "not-run"
+      },
+      "codex": {
+        "evidence": [],
+        "status": "not-run"
+      }
+    }
+  },
+  {
+    "adaptationStatus": "adapted-reviewed",
+    "dependencies": [],
+    "destinationPath": "skills/poteto-mode/scripts/check-plan.test.ts",
+    "disposition": "runtime",
+    "licenseProvenance": {
+      "copyright": "Copyright (c) 2026 Lauren Tan",
+      "license": "MIT",
+      "sourcePath": "LICENSE"
+    },
+    "rationale": "Adapt fence regressions to local valid-plan contract and Bun execution.",
+    "upstreamCommit": "4ec7ffa173eaa70d3d9467a627baf0954645a353",
+    "upstreamPath": "skills/poteto-mode/scripts/check-plan.test.ts",
+    "upstreamSha256": "c80f3ea043b81f219b92c4c8a3af6bdd4f8d32ea596ec15b5b9e0252645f2ae8",
+    "verification": {
+      "chatgpt": {
+        "evidence": [],
+        "status": "not-run"
+      },
+      "codex": {
+        "evidence": [],
+        "status": "not-run"
+      }
+    }
+  },
+  {
+    "adaptationStatus": "adapted-reviewed",
+    "dependencies": [
+      "references/host-capabilities.md"
+    ],
+    "destinationPath": "skills/sharpen/SKILL.md",
+    "disposition": "runtime",
+    "licenseProvenance": {
+      "copyright": "Copyright (c) 2026 Lauren Tan",
+      "license": "MIT",
+      "sourcePath": "LICENSE"
+    },
+    "rationale": "Amend unaccepted 0.2.3 for PR #729: adopt explicit rewrite-only sharpen, align caller docs and cases, preserve portable identity and permission boundaries.",
+    "upstreamCommit": "4ec7ffa173eaa70d3d9467a627baf0954645a353",
+    "upstreamPath": "skills/sharpen/SKILL.md",
+    "upstreamSha256": "563dfc460c605d311e650726288e2f1cbd61eab817db178d6e7e29643e07e7a2",
+    "verification": {
+      "chatgpt": {
+        "evidence": [],
+        "status": "not-run"
+      },
+      "codex": {
+        "evidence": [],
+        "status": "not-run"
+      }
+    }
+  }
+]

@@ -1,11 +1,6 @@
 [
   {
-    "upstreamPath": "skills/poteto-mode/playbooks/perf-issue.md",
-    "upstreamCommit": "df581122cde17e6e27686b5a448bde23e4ad4318",
-    "upstreamSha256": "2b88ad0f880e4d4d755ac19fe52414d6631d6baa816d060f53cf0a7429d7e14a",
-    "destinationPath": "skills/poteto-mode/playbooks/perf-issue.md",
-    "disposition": "runtime",
-    "rationale": "Preserve all six Perf issue steps, measurement ownership, baseline and post-fix matching traces, all seven ordered mantras and earliest-success stop rule, how grounding, architect boundary trigger, reviewed implementation delegation, per-attempt verification, parsed comparison artifacts, inconclusive/wrong-surface rejection, cited PR measurement and all four reply items. Bind models, controls, execution, artifacts and delivery to actual capabilities and permissions. Canonical grok-4.7-xhigh-fast is historical provenance only. This caller invokes no script helper directly. Hillclimb and Opening a PR remain deferred to tasks 18 and 21 and task 24 integration. Structural checks provide no runtime host evidence.",
+    "adaptationStatus": "adapted-reviewed",
     "dependencies": [
       "skills/poteto-mode/SKILL.md",
       "references/host-capabilities.md",
@@ -20,20 +15,25 @@
       "skills/poteto-mode/playbooks/hillclimb.md",
       "skills/poteto-mode/playbooks/opening-a-pr.md"
     ],
+    "destinationPath": "skills/poteto-mode/playbooks/perf-issue.md",
+    "disposition": "runtime",
     "licenseProvenance": {
-      "license": "MIT",
       "copyright": "Copyright (c) 2026 Lauren Tan",
+      "license": "MIT",
       "sourcePath": "LICENSE"
     },
-    "adaptationStatus": "adapted-reviewed",
+    "rationale": "Upstream changes are editorial compression or delegate-effort reminders already governed by shared mode policy. Retain explicit local host, offline audit, authorization and evidence bindings.",
+    "upstreamCommit": "4ec7ffa173eaa70d3d9467a627baf0954645a353",
+    "upstreamPath": "skills/poteto-mode/playbooks/perf-issue.md",
+    "upstreamSha256": "c12aa2f82de7651a11676a3d5fea168f539b7f0faaa3a501d279255dd2a469c8",
     "verification": {
       "chatgpt": {
-        "status": "not-run",
-        "evidence": []
+        "evidence": [],
+        "status": "not-run"
       },
       "codex": {
-        "status": "not-run",
-        "evidence": []
+        "evidence": [],
+        "status": "not-run"
       }
     }
   }

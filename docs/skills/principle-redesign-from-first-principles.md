@@ -79,6 +79,6 @@ Current host statuses and release evidence: [current parity inventory](../parity
 
 Destination: [skills/principle-redesign-from-first-principles/SKILL.md](../../skills/principle-redesign-from-first-principles/SKILL.md).
 
-Upstream commit: `df581122cde17e6e27686b5a448bde23e4ad4318`. SHA-256: `a1c7fd0a96b40e12a74bceb0e6bb20a9666dd844dcabfb624acb27da23b929fe`.
+Upstream commit: `4ec7ffa173eaa70d3d9467a627baf0954645a353`. SHA-256: `170e0a658783e43fee8ec5a8c2422a4abb8f69cef621dd1819a95910b8207034`.
 
 Disposition: `runtime`. Aggregate adaptation status: `adapted-reviewed`.

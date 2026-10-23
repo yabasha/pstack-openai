@@ -1,0 +1,386 @@
+[
+  {
+    "adaptationStatus": "adapted-reviewed",
+    "dependencies": [
+      "references/host-capabilities.md",
+      "references/workflow-ownership.md",
+      "references/model-roles.md",
+      "references/orchestration-contract.md",
+      "skills/statechart/references/execution.md",
+      "skills/statechart/scripts/statechart.mjs"
+    ],
+    "destinationPath": "skills/statechart/SKILL.md",
+    "disposition": "runtime",
+    "licenseProvenance": {
+      "copyright": "Copyright (c) 2026 Lauren Tan",
+      "license": "MIT",
+      "sourcePath": "LICENSE"
+    },
+    "rationale": "Adopt final statechart and six correctness fixes; preserve code traceability, checked-rule scope and counterexamples. Adapt host capabilities, explicit local renderer, bounded subprocesses and isolated authorized outputs. Local tests are not host evidence.",
+    "upstreamCommit": "4ec7ffa173eaa70d3d9467a627baf0954645a353",
+    "upstreamPath": "skills/statechart/SKILL.md",
+    "upstreamSha256": "9b2a6dccf86286646cffb3bd00f7ee060d6c26983e566c766d4be53aa56f9445",
+    "verification": {
+      "chatgpt": {
+        "evidence": [],
+        "status": "not-run"
+      },
+      "codex": {
+        "evidence": [],
+        "status": "not-run"
+      }
+    }
+  },
+  {
+    "adaptationStatus": "adapted-reviewed",
+    "dependencies": [
+      "references/host-capabilities.md",
+      "references/workflow-ownership.md",
+      "references/model-roles.md",
+      "references/orchestration-contract.md",
+      "skills/statechart/references/execution.md",
+      "skills/statechart/scripts/host-runtime.mjs",
+      "skills/statechart/scripts/lib.mjs"
+    ],
+    "destinationPath": "skills/statechart/scripts/chart-to-tla.mjs",
+    "disposition": "runtime",
+    "licenseProvenance": {
+      "copyright": "Copyright (c) 2026 Lauren Tan",
+      "license": "MIT",
+      "sourcePath": "LICENSE"
+    },
+    "rationale": "Adopt final statechart and six correctness fixes; preserve code traceability, checked-rule scope and counterexamples. Adapt host capabilities, explicit local renderer, bounded subprocesses and isolated authorized outputs. Local tests are not host evidence.",
+    "upstreamCommit": "4ec7ffa173eaa70d3d9467a627baf0954645a353",
+    "upstreamPath": "skills/statechart/scripts/chart-to-tla.mjs",
+    "upstreamSha256": "9f794e273d0729ae874d68a67bfa1df4ebddc12420b7ab5081fdf58dceb729e4",
+    "verification": {
+      "chatgpt": {
+        "evidence": [],
+        "status": "not-run"
+      },
+      "codex": {
+        "evidence": [],
+        "status": "not-run"
+      }
+    }
+  },
+  {
+    "adaptationStatus": "adapted-reviewed",
+    "dependencies": [
+      "references/host-capabilities.md",
+      "references/workflow-ownership.md",
+      "references/model-roles.md",
+      "references/orchestration-contract.md",
+      "skills/statechart/references/execution.md",
+      "skills/statechart/scripts/host-runtime.mjs",
+      "skills/statechart/scripts/lib.mjs"
+    ],
+    "destinationPath": "skills/statechart/scripts/compare-charts.mjs",
+    "disposition": "runtime",
+    "licenseProvenance": {
+      "copyright": "Copyright (c) 2026 Lauren Tan",
+      "license": "MIT",
+      "sourcePath": "LICENSE"
+    },
+    "rationale": "Adopt final statechart and six correctness fixes; preserve code traceability, checked-rule scope and counterexamples. Adapt host capabilities, explicit local renderer, bounded subprocesses and isolated authorized outputs. Local tests are not host evidence.",
+    "upstreamCommit": "4ec7ffa173eaa70d3d9467a627baf0954645a353",
+    "upstreamPath": "skills/statechart/scripts/compare-charts.mjs",
+    "upstreamSha256": "12f4dc4700093156978ef1785b92739c8cf1e8375b8d13201fcdc2006a20c43b",
+    "verification": {
+      "chatgpt": {
+        "evidence": [],
+        "status": "not-run"
+      },
+      "codex": {
+        "evidence": [],
+        "status": "not-run"
+      }
+    }
+  },
+  {
+    "adaptationStatus": "unchanged-reviewed",
+    "dependencies": [
+      "references/host-capabilities.md",
+      "references/workflow-ownership.md",
+      "references/model-roles.md",
+      "references/orchestration-contract.md",
+      "skills/statechart/references/execution.md",
+      "skills/statechart/scripts/host-runtime.mjs"
+    ],
+    "destinationPath": "skills/statechart/scripts/lib.mjs",
+    "disposition": "runtime",
+    "licenseProvenance": {
+      "copyright": "Copyright (c) 2026 Lauren Tan",
+      "license": "MIT",
+      "sourcePath": "LICENSE"
+    },
+    "rationale": "Adopt final statechart and six correctness fixes; preserve code traceability, checked-rule scope and counterexamples. Adapt host capabilities, explicit local renderer, bounded subprocesses and isolated authorized outputs. Local tests are not host evidence.",
+    "upstreamCommit": "4ec7ffa173eaa70d3d9467a627baf0954645a353",
+    "upstreamPath": "skills/statechart/scripts/lib.mjs",
+    "upstreamSha256": "941280e42b9dbfd2b40116287a2ebbc6e391b826876a001b1ba7aff365c1e41d",
+    "verification": {
+      "chatgpt": {
+        "evidence": [],
+        "status": "not-run"
+      },
+      "codex": {
+        "evidence": [],
+        "status": "not-run"
+      }
+    }
+  },
+  {
+    "adaptationStatus": "unchanged-reviewed",
+    "dependencies": [
+      "references/host-capabilities.md",
+      "references/workflow-ownership.md",
+      "references/model-roles.md",
+      "references/orchestration-contract.md",
+      "skills/statechart/references/execution.md"
+    ],
+    "destinationPath": "skills/statechart/scripts/model/OutputFolder.cfg",
+    "disposition": "runtime",
+    "licenseProvenance": {
+      "copyright": "Copyright (c) 2026 Lauren Tan",
+      "license": "MIT",
+      "sourcePath": "LICENSE"
+    },
+    "rationale": "Adopt final statechart and six correctness fixes; preserve code traceability, checked-rule scope and counterexamples. Adapt host capabilities, explicit local renderer, bounded subprocesses and isolated authorized outputs. Local tests are not host evidence.",
+    "upstreamCommit": "4ec7ffa173eaa70d3d9467a627baf0954645a353",
+    "upstreamPath": "skills/statechart/scripts/model/OutputFolder.cfg",
+    "upstreamSha256": "8b9662ab7d51de9d54f84abab02888822da9c01ce4f1b86a6453a8a513773995",
+    "verification": {
+      "chatgpt": {
+        "evidence": [],
+        "status": "not-run"
+      },
+      "codex": {
+        "evidence": [],
+        "status": "not-run"
+      }
+    }
+  },
+  {
+    "adaptationStatus": "unchanged-reviewed",
+    "dependencies": [
+      "references/host-capabilities.md",
+      "references/workflow-ownership.md",
+      "references/model-roles.md",
+      "references/orchestration-contract.md",
+      "skills/statechart/references/execution.md",
+      "skills/statechart/scripts/host-runtime.mjs"
+    ],
+    "destinationPath": "skills/statechart/scripts/model/OutputFolder.map.mjs",
+    "disposition": "runtime",
+    "licenseProvenance": {
+      "copyright": "Copyright (c) 2026 Lauren Tan",
+      "license": "MIT",
+      "sourcePath": "LICENSE"
+    },
+    "rationale": "Adopt final statechart and six correctness fixes; preserve code traceability, checked-rule scope and counterexamples. Adapt host capabilities, explicit local renderer, bounded subprocesses and isolated authorized outputs. Local tests are not host evidence.",
+    "upstreamCommit": "4ec7ffa173eaa70d3d9467a627baf0954645a353",
+    "upstreamPath": "skills/statechart/scripts/model/OutputFolder.map.mjs",
+    "upstreamSha256": "33f2ef1c2ba397573206640843fffbc228d066e53fe5ced779d82f99600f3fd8",
+    "verification": {
+      "chatgpt": {
+        "evidence": [],
+        "status": "not-run"
+      },
+      "codex": {
+        "evidence": [],
+        "status": "not-run"
+      }
+    }
+  },
+  {
+    "adaptationStatus": "unchanged-reviewed",
+    "dependencies": [
+      "references/host-capabilities.md",
+      "references/workflow-ownership.md",
+      "references/model-roles.md",
+      "references/orchestration-contract.md",
+      "skills/statechart/references/execution.md"
+    ],
+    "destinationPath": "skills/statechart/scripts/model/OutputFolder.tla",
+    "disposition": "runtime",
+    "licenseProvenance": {
+      "copyright": "Copyright (c) 2026 Lauren Tan",
+      "license": "MIT",
+      "sourcePath": "LICENSE"
+    },
+    "rationale": "Adopt final statechart and six correctness fixes; preserve code traceability, checked-rule scope and counterexamples. Adapt host capabilities, explicit local renderer, bounded subprocesses and isolated authorized outputs. Local tests are not host evidence.",
+    "upstreamCommit": "4ec7ffa173eaa70d3d9467a627baf0954645a353",
+    "upstreamPath": "skills/statechart/scripts/model/OutputFolder.tla",
+    "upstreamSha256": "75bef6811d9a8e56bd702fd8d782e52101918c8dc05c6cc9dc43d02b9fe1b56f",
+    "verification": {
+      "chatgpt": {
+        "evidence": [],
+        "status": "not-run"
+      },
+      "codex": {
+        "evidence": [],
+        "status": "not-run"
+      }
+    }
+  },
+  {
+    "adaptationStatus": "adapted-reviewed",
+    "dependencies": [
+      "references/host-capabilities.md",
+      "references/workflow-ownership.md",
+      "references/model-roles.md",
+      "references/orchestration-contract.md",
+      "skills/statechart/references/execution.md",
+      "skills/statechart/scripts/host-runtime.mjs",
+      "skills/statechart/scripts/lib.mjs"
+    ],
+    "destinationPath": "skills/statechart/scripts/statechart.mjs",
+    "disposition": "runtime",
+    "licenseProvenance": {
+      "copyright": "Copyright (c) 2026 Lauren Tan",
+      "license": "MIT",
+      "sourcePath": "LICENSE"
+    },
+    "rationale": "Adopt final statechart and six correctness fixes; preserve code traceability, checked-rule scope and counterexamples. Adapt host capabilities, explicit local renderer, bounded subprocesses and isolated authorized outputs. Local tests are not host evidence.",
+    "upstreamCommit": "4ec7ffa173eaa70d3d9467a627baf0954645a353",
+    "upstreamPath": "skills/statechart/scripts/statechart.mjs",
+    "upstreamSha256": "3c3ed2a29b9f0b2d037b434ef205f505939ac713c6a16f9a806844d513f957a0",
+    "verification": {
+      "chatgpt": {
+        "evidence": [],
+        "status": "not-run"
+      },
+      "codex": {
+        "evidence": [],
+        "status": "not-run"
+      }
+    }
+  },
+  {
+    "adaptationStatus": "adapted-reviewed",
+    "dependencies": [
+      "references/host-capabilities.md",
+      "references/workflow-ownership.md",
+      "references/model-roles.md",
+      "references/orchestration-contract.md",
+      "skills/statechart/references/execution.md",
+      "skills/statechart/scripts/lib.mjs"
+    ],
+    "destinationPath": "skills/statechart/scripts/test/statechart.test.mjs",
+    "disposition": "runtime",
+    "licenseProvenance": {
+      "copyright": "Copyright (c) 2026 Lauren Tan",
+      "license": "MIT",
+      "sourcePath": "LICENSE"
+    },
+    "rationale": "Adopt final statechart and six correctness fixes; preserve code traceability, checked-rule scope and counterexamples. Adapt host capabilities, explicit local renderer, bounded subprocesses and isolated authorized outputs. Local tests are not host evidence.",
+    "upstreamCommit": "4ec7ffa173eaa70d3d9467a627baf0954645a353",
+    "upstreamPath": "skills/statechart/scripts/test/statechart.test.mjs",
+    "upstreamSha256": "02302548c175f6bfc707aee30bd7ee81a2b1754eca6818c550bf20a68361e7cd",
+    "verification": {
+      "chatgpt": {
+        "evidence": [],
+        "status": "not-run"
+      },
+      "codex": {
+        "evidence": [],
+        "status": "not-run"
+      }
+    }
+  },
+  {
+    "adaptationStatus": "unchanged-reviewed",
+    "dependencies": [
+      "references/host-capabilities.md",
+      "references/workflow-ownership.md",
+      "references/model-roles.md",
+      "references/orchestration-contract.md",
+      "skills/statechart/references/execution.md"
+    ],
+    "destinationPath": "skills/statechart/scripts/test/sync.mmd",
+    "disposition": "runtime",
+    "licenseProvenance": {
+      "copyright": "Copyright (c) 2026 Lauren Tan",
+      "license": "MIT",
+      "sourcePath": "LICENSE"
+    },
+    "rationale": "Adopt final statechart and six correctness fixes; preserve code traceability, checked-rule scope and counterexamples. Adapt host capabilities, explicit local renderer, bounded subprocesses and isolated authorized outputs. Local tests are not host evidence.",
+    "upstreamCommit": "4ec7ffa173eaa70d3d9467a627baf0954645a353",
+    "upstreamPath": "skills/statechart/scripts/test/sync.mmd",
+    "upstreamSha256": "cb1f5387058a0f79d6187eb217690588a2e2d384637b4d53cbc4bb050c570757",
+    "verification": {
+      "chatgpt": {
+        "evidence": [],
+        "status": "not-run"
+      },
+      "codex": {
+        "evidence": [],
+        "status": "not-run"
+      }
+    }
+  },
+  {
+    "adaptationStatus": "unchanged-reviewed",
+    "dependencies": [
+      "references/host-capabilities.md",
+      "references/workflow-ownership.md",
+      "references/model-roles.md",
+      "references/orchestration-contract.md",
+      "skills/statechart/references/execution.md"
+    ],
+    "destinationPath": "skills/statechart/scripts/test/upload.mmd",
+    "disposition": "runtime",
+    "licenseProvenance": {
+      "copyright": "Copyright (c) 2026 Lauren Tan",
+      "license": "MIT",
+      "sourcePath": "LICENSE"
+    },
+    "rationale": "Adopt final statechart and six correctness fixes; preserve code traceability, checked-rule scope and counterexamples. Adapt host capabilities, explicit local renderer, bounded subprocesses and isolated authorized outputs. Local tests are not host evidence.",
+    "upstreamCommit": "4ec7ffa173eaa70d3d9467a627baf0954645a353",
+    "upstreamPath": "skills/statechart/scripts/test/upload.mmd",
+    "upstreamSha256": "bbc1fa70e26cbcbcc7cde5d8fb7eda26df34b6d973053bf13c40b18527ff0e76",
+    "verification": {
+      "chatgpt": {
+        "evidence": [],
+        "status": "not-run"
+      },
+      "codex": {
+        "evidence": [],
+        "status": "not-run"
+      }
+    }
+  },
+  {
+    "adaptationStatus": "adapted-reviewed",
+    "dependencies": [
+      "references/host-capabilities.md",
+      "references/workflow-ownership.md",
+      "references/model-roles.md",
+      "references/orchestration-contract.md",
+      "skills/statechart/references/execution.md",
+      "skills/statechart/scripts/host-runtime.mjs",
+      "skills/statechart/scripts/lib.mjs"
+    ],
+    "destinationPath": "skills/statechart/scripts/tlc-to-chart.mjs",
+    "disposition": "runtime",
+    "licenseProvenance": {
+      "copyright": "Copyright (c) 2026 Lauren Tan",
+      "license": "MIT",
+      "sourcePath": "LICENSE"
+    },
+    "rationale": "Adopt final statechart and six correctness fixes; preserve code traceability, checked-rule scope and counterexamples. Adapt host capabilities, explicit local renderer, bounded subprocesses and isolated authorized outputs. Local tests are not host evidence.",
+    "upstreamCommit": "4ec7ffa173eaa70d3d9467a627baf0954645a353",
+    "upstreamPath": "skills/statechart/scripts/tlc-to-chart.mjs",
+    "upstreamSha256": "77aa854918f9c5d04fd3ad8838da39f24d8e05a2217a5c3be039d678509c6ef2",
+    "verification": {
+      "chatgpt": {
+        "evidence": [],
+        "status": "not-run"
+      },
+      "codex": {
+        "evidence": [],
+        "status": "not-run"
+      }
+    }
+  }
+]

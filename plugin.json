@@ -1,41 +1,41 @@
 {
   "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
-  "name": "pstack-openai",
-  "version": "0.1.5",
-  "description": "Unofficial pstack port with 51 engineering skills, 24 principles, and 23 task playbooks. Published by yabasha; original skills and principles by Lauren Tan.",
-  "license": "MIT",
+  "author": {
+    "name": "yabasha"
+  },
+  "description": "Unofficial pstack port with 57 engineering skills, 24 principles, and 23 task playbooks. Published by yabasha; original skills and principles by Lauren Tan.",
   "extensions": {
     "com.openai": {
       "interface": {
-        "displayName": "pstack-openai",
-        "shortDescription": "Engineering skills and reviews",
-        "longDescription": "pstack-openai is an unofficial, skills-only port of Lauren Tan's pstack, maintained and published by yabasha. It packages 51 skills, including 24 engineering principles, and 23 task playbooks for planning, implementation, code review, explanation, and verification. Use poteto-mode to route a task, poteto-help to choose a workflow, how and why to inspect code and decisions, or unslop to improve prose. Arena and Swarm require host support for independent workers. Model selection, history, persistence, and integrations depend on exposed host capabilities and user authorization. Some workflows have reduced or blocked results; see the bundled compatibility documentation. The plugin bundles no MCP server or app connection. Original skills and principles are credited to Lauren Tan under the MIT License.",
-        "logo": "./assets/logo.png",
+        "category": "Developer Tools",
         "composerIcon": "./assets/logo.png",
-        "developerName": "yabasha",
         "defaultPrompt": [
           "Use poteto-help to choose an engineering workflow for my task.",
           "Use how to explain this codebase with references to the relevant files.",
           "Use blast-radius to review which callers and workflows this change could affect."
         ],
-        "websiteURL": "https://pstack-openai.abloommink3.chatgpt.site",
-        "supportURL": "https://pstack-openai.abloommink3.chatgpt.site/support/",
+        "developerName": "yabasha",
+        "displayName": "pstack-openai",
+        "logo": "./assets/logo.png",
+        "longDescription": "pstack-openai is an unofficial, skills-only port of Lauren Tan's pstack, maintained and published by yabasha. It packages 57 skills, including 24 engineering principles, and 23 task playbooks for planning, implementation, code review, explanation, and verification. Use poteto-mode to route a task, poteto-help to choose a workflow, how and why to inspect code and decisions, or unslop to improve prose. Arena and Swarm require host support for independent workers. Model selection, history, persistence, and integrations depend on exposed host capabilities and user authorization. Some workflows have reduced or blocked results; see the bundled compatibility documentation. The plugin bundles no MCP server or app connection. Original skills and principles are credited to Lauren Tan under the MIT License.",
         "privacyPolicyURL": "https://pstack-openai.abloommink3.chatgpt.site/privacy/",
+        "shortDescription": "Engineering skills and reviews",
+        "supportURL": "https://pstack-openai.abloommink3.chatgpt.site/support/",
         "termsOfServiceURL": "https://pstack-openai.abloommink3.chatgpt.site/terms/",
-        "category": "Developer Tools"
+        "websiteURL": "https://pstack-openai.abloommink3.chatgpt.site"
       },
       "publication": {
-        "release_notes": "Prepared the 0.1.3 publication candidate with a public documentation site, skill and principle examples, refreshed README, publisher attribution, and repeatable archive packaging. The plugin is free and targets all available countries. Historical host results remain bound to their tested revision.",
-        "countries": []
+        "countries": [],
+        "release_notes": "Accepted upstream 0.15.30 with 57 root skills, rewritten-prompt sharpening and portable statechart helpers. Historical host results retain their original tested identities; verification gaps remain explicit."
       },
       "review": {
         "commerce": false
       }
     }
   },
+  "homepage": "https://pstack-openai.abloommink3.chatgpt.site",
+  "license": "MIT",
+  "name": "pstack-openai",
   "repository": "https://github.com/yabasha/pstack-openai",
-  "author": {
-    "name": "yabasha"
-  },
-  "homepage": "https://pstack-openai.abloommink3.chatgpt.site"
+  "version": "0.2.3"
 }

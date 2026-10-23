@@ -1,8 +1,8 @@
 # Dependency readiness
 
-The [dependency audit](../parity/dependencies.json) accounts for all 164 canonical files at `df581122cde17e6e27686b5a448bde23e4ad4318`: 51 root skills and 113 support files. The 23 playbooks are included in those 113 support files. Each source record carries the verified canonical hash, the adapted destination hash, its complete inventory dependency list, and source/destination line references for discovered dependency groups.
+The [dependency audit](../parity/dependencies.json) accounts for all 169 current source files at `99743e9c151c8537cbbf1f98bb38f34ef3368453`: 54 root skills and 115 support files. The 23 playbooks are included in those 115 support files. Each source record carries the verified canonical hash, the adapted destination hash, its complete inventory dependency list, and source/destination line references for discovered dependency groups.
 
-The audit records 32 dependency groups and 573 caller/group references. It includes examples and descriptive mentions so source requirements do not disappear during adaptation. A reference does not imply that every caller must install that dependency. Read the caller's full contract to select the branch. Local package dependencies bind the caller to the actual referenced file or directory; a readable skill is instruction content, not an execution capability.
+The audit records 32 dependency groups and 582 caller/group references. It includes examples and descriptive mentions so source requirements do not disappear during adaptation. A reference does not imply that every caller must install that dependency. Read the caller's full contract to select the branch. Local package dependencies bind the caller to the actual referenced file or directory; a readable skill is instruction content, not an execution capability.
 
 ## Use at invocation
 

@@ -81,6 +81,6 @@ Current host statuses and release evidence: [current parity inventory](../parity
 
 Destination: [skills/principle-laziness-protocol/SKILL.md](../../skills/principle-laziness-protocol/SKILL.md).
 
-Upstream commit: `df581122cde17e6e27686b5a448bde23e4ad4318`. SHA-256: `9006579e9e3f33955d17569733db688ae65f22577dc3b21803d219a5a8445aff`.
+Upstream commit: `4ec7ffa173eaa70d3d9467a627baf0954645a353`. SHA-256: `1be6e7a435f26a75a76eb848b9c3d611b9977d0f5822361753244da25ca3ca45`.
 
 Disposition: `runtime`. Aggregate adaptation status: `adapted-reviewed`.

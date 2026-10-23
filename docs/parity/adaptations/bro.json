@@ -1,26 +1,26 @@
 [
   {
-    "upstreamPath": "skills/bro/SKILL.md",
-    "upstreamCommit": "df581122cde17e6e27686b5a448bde23e4ad4318",
-    "upstreamSha256": "aa329d0ceeeecb6822a7174ad76bb07a7826a3c52ceb6a588dec4138815084bb",
+    "adaptationStatus": "unchanged-reviewed",
+    "dependencies": [],
     "destinationPath": "skills/bro/SKILL.md",
     "disposition": "runtime",
-    "rationale": "Retain the complete canonical skill verbatim. Restatement needs only the previous assistant message; no host tool or API adaptation is required. Missing history is explicit in the acceptance case.",
-    "dependencies": [],
     "licenseProvenance": {
-      "license": "MIT",
       "copyright": "Copyright (c) 2026 Lauren Tan",
+      "license": "MIT",
       "sourcePath": "LICENSE"
     },
-    "adaptationStatus": "unchanged-reviewed",
+    "rationale": "Retain the complete canonical skill verbatim. Restatement needs only the previous assistant message; no host tool or API adaptation is required. Missing history is explicit in the acceptance case.",
+    "upstreamCommit": "4ec7ffa173eaa70d3d9467a627baf0954645a353",
+    "upstreamPath": "skills/bro/SKILL.md",
+    "upstreamSha256": "aa329d0ceeeecb6822a7174ad76bb07a7826a3c52ceb6a588dec4138815084bb",
     "verification": {
       "chatgpt": {
-        "status": "not-run",
-        "evidence": []
+        "evidence": [],
+        "status": "not-run"
       },
       "codex": {
-        "status": "not-run",
-        "evidence": []
+        "evidence": [],
+        "status": "not-run"
       }
     }
   }

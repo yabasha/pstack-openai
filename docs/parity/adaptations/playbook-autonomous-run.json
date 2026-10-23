@@ -1,11 +1,6 @@
 [
   {
-    "upstreamPath": "skills/poteto-mode/playbooks/autonomous-run.md",
-    "upstreamCommit": "df581122cde17e6e27686b5a448bde23e4ad4318",
-    "upstreamSha256": "15e54ad3ac92565613980772d8708de6e19cc4690bfd4bb3fb8836522407377b",
-    "destinationPath": "skills/poteto-mode/playbooks/autonomous-run.md",
-    "disposition": "runtime",
-    "rationale": "Preserve the six-step predicate-driven autonomous loop, event watcher with heartbeat fallback, smallest-change verification and commit/revert discipline, sequence-verifiable-units, poteto-mode side fixes with separate PRs, per-iteration show-me-your-work trail, plateau pivots, dead-end disclosure and all reply fields. Replace source built-in /loop with observed authorized wake bindings. Missing persistent wake, heartbeat, worker or control stays visible; save and read back a continuation brief as reduced capability without uninterrupted-autonomy or automatic-pickup claims. Commits, PRs, merges and schedules retain authorization and review gates. Missing history and independent cross-model review remain blocked. Opening a PR route remains deferred to Task 21 and Task 24 integration. Structural checks establish no host behavior.",
+    "adaptationStatus": "adapted-reviewed",
     "dependencies": [
       "skills/poteto-mode/SKILL.md",
       "skills/principle-sequence-verifiable-units/SKILL.md",
@@ -18,20 +13,25 @@
       "references/agent-prompts/poteto-agent.md",
       "skills/poteto-mode/playbooks/opening-a-pr.md"
     ],
+    "destinationPath": "skills/poteto-mode/playbooks/autonomous-run.md",
+    "disposition": "runtime",
     "licenseProvenance": {
-      "license": "MIT",
       "copyright": "Copyright (c) 2026 Lauren Tan",
+      "license": "MIT",
       "sourcePath": "LICENSE"
     },
-    "adaptationStatus": "adapted-reviewed",
+    "rationale": "Upstream changes are editorial compression or delegate-effort reminders already governed by shared mode policy. Retain explicit local host, offline audit, authorization and evidence bindings.",
+    "upstreamCommit": "4ec7ffa173eaa70d3d9467a627baf0954645a353",
+    "upstreamPath": "skills/poteto-mode/playbooks/autonomous-run.md",
+    "upstreamSha256": "6ac974fd2b09748add56493e89f578a35a6a9289e1026515878d81ef3cf129d1",
     "verification": {
       "chatgpt": {
-        "status": "not-run",
-        "evidence": []
+        "evidence": [],
+        "status": "not-run"
       },
       "codex": {
-        "status": "not-run",
-        "evidence": []
+        "evidence": [],
+        "status": "not-run"
       }
     }
   }

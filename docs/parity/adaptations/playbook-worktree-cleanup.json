@@ -1,11 +1,6 @@
 [
   {
-    "upstreamPath": "skills/poteto-mode/playbooks/worktree-cleanup.md",
-    "upstreamCommit": "df581122cde17e6e27686b5a448bde23e4ad4318",
-    "upstreamSha256": "fc464dc4121926df1704f483c5feca83717c0a40b4651d3e11bd3aedd89441b6",
-    "destinationPath": "skills/poteto-mode/playbooks/worktree-cleanup.md",
-    "disposition": "runtime",
-    "rationale": "Preserves worktree, simulator and cache cleanup, usage verification and measured reply artifacts. Binds the read-only audit JSON CLI, holds dirty/unrelated/unknown candidates, and gates every deletion on exact evidence and authorization. Missing workers, history, execution or platform tools stays explicit; structural validation proves no host cleanup.",
+    "adaptationStatus": "adapted-reviewed",
     "dependencies": [
       "skills/poteto-mode/scripts/worktree-audit.sh",
       "skills/poteto-mode/scripts/worktree-audit.py",
@@ -20,20 +15,25 @@
       "references/agent-prompts/poteto-agent.md",
       "references/model-roles.md"
     ],
+    "destinationPath": "skills/poteto-mode/playbooks/worktree-cleanup.md",
+    "disposition": "runtime",
     "licenseProvenance": {
-      "license": "MIT",
       "copyright": "Copyright (c) 2026 Lauren Tan",
+      "license": "MIT",
       "sourcePath": "LICENSE"
     },
-    "adaptationStatus": "adapted-reviewed",
+    "rationale": "Upstream changes are editorial compression or delegate-effort reminders already governed by shared mode policy. Retain explicit local host, offline audit, authorization and evidence bindings.",
+    "upstreamCommit": "4ec7ffa173eaa70d3d9467a627baf0954645a353",
+    "upstreamPath": "skills/poteto-mode/playbooks/worktree-cleanup.md",
+    "upstreamSha256": "be04ae0afe19d4a4da5bcc4e94455f68dbebd1cda6eb0f456ca0d358ecf76c00",
     "verification": {
       "chatgpt": {
-        "status": "not-run",
-        "evidence": []
+        "evidence": [],
+        "status": "not-run"
       },
       "codex": {
-        "status": "not-run",
-        "evidence": []
+        "evidence": [],
+        "status": "not-run"
       }
     }
   }

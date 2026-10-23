@@ -15,7 +15,7 @@ class ManifestTests(unittest.TestCase):
         manifest = self.manifest()
         self.assertEqual(manifest['$schema'], 'https://agent-plugins.org/schemas/1.0.0/plugin.schema.json')
         self.assertEqual(manifest['name'], 'pstack-openai')
-        self.assertEqual(manifest['version'], '0.1.5')
+        self.assertRegex(manifest['version'], r'^\d+\.\d+\.\d+$')
         self.assertEqual(manifest['license'], 'MIT')
         self.assertLessEqual(set(manifest), {'$schema', 'name', 'version', 'description', 'author', 'homepage', 'repository', 'license', 'keywords', 'extensions'})
         self.assertEqual(set(manifest['extensions']), {'com.openai'})

@@ -1,11 +1,6 @@
 [
   {
-    "upstreamPath": "skills/show-me-your-work/SKILL.md",
-    "upstreamCommit": "df581122cde17e6e27686b5a448bde23e4ad4318",
-    "upstreamSha256": "bcff5f7f9fd23f92c12b251f9cd6b947e9485e1055cfacb6fdd9cae0789d7550",
-    "destinationPath": "skills/show-me-your-work/SKILL.md",
-    "disposition": "runtime",
-    "rationale": "Preserve the canonical TSV trail, run boundaries, append-only corrections, transcript audit and cross-model review. Bind persistence, history, execution and reviewer selection to session contracts; enforce authorization and secret limits. Task 16 helper remains a deferred runtime dependency, not reference-only coverage.",
+    "adaptationStatus": "adapted-reviewed",
     "dependencies": [
       "skills/show-me-your-work/references/decision-log-template.tsv",
       "skills/show-me-your-work/scripts/log.sh",
@@ -14,45 +9,50 @@
       "references/model-roles.md",
       "references/orchestration-contract.md"
     ],
+    "destinationPath": "skills/show-me-your-work/SKILL.md",
+    "disposition": "runtime",
     "licenseProvenance": {
-      "license": "MIT",
       "copyright": "Copyright (c) 2026 Lauren Tan",
+      "license": "MIT",
       "sourcePath": "LICENSE"
     },
-    "adaptationStatus": "adapted-reviewed",
+    "rationale": "Retain reviewed host capability, assignment, ownership and model-selection adaptations; upstream changes are editorial or introduce Cursor-specific delegation controls.",
+    "upstreamCommit": "4ec7ffa173eaa70d3d9467a627baf0954645a353",
+    "upstreamPath": "skills/show-me-your-work/SKILL.md",
+    "upstreamSha256": "920a8217cbb62f92a2222fb81fc9eab17ecd554a0277e444a95a927195139bd1",
     "verification": {
       "chatgpt": {
-        "status": "not-run",
-        "evidence": []
+        "evidence": [],
+        "status": "not-run"
       },
       "codex": {
-        "status": "not-run",
-        "evidence": []
+        "evidence": [],
+        "status": "not-run"
       }
     }
   },
   {
-    "upstreamPath": "skills/show-me-your-work/references/decision-log-template.tsv",
-    "upstreamCommit": "df581122cde17e6e27686b5a448bde23e4ad4318",
-    "upstreamSha256": "6779378006a2f5225e8c06deb84f1d913fb532041ebbb6e50d94600bfe3f4b76",
+    "adaptationStatus": "unchanged-reviewed",
+    "dependencies": [],
     "destinationPath": "skills/show-me-your-work/references/decision-log-template.tsv",
     "disposition": "runtime",
-    "rationale": "Preserve the canonical six-column TSV header byte-for-byte.",
-    "dependencies": [],
     "licenseProvenance": {
-      "license": "MIT",
       "copyright": "Copyright (c) 2026 Lauren Tan",
+      "license": "MIT",
       "sourcePath": "LICENSE"
     },
-    "adaptationStatus": "unchanged-reviewed",
+    "rationale": "Preserve the canonical six-column TSV header byte-for-byte.",
+    "upstreamCommit": "4ec7ffa173eaa70d3d9467a627baf0954645a353",
+    "upstreamPath": "skills/show-me-your-work/references/decision-log-template.tsv",
+    "upstreamSha256": "6779378006a2f5225e8c06deb84f1d913fb532041ebbb6e50d94600bfe3f4b76",
     "verification": {
       "chatgpt": {
-        "status": "not-run",
-        "evidence": []
+        "evidence": [],
+        "status": "not-run"
       },
       "codex": {
-        "status": "not-run",
-        "evidence": []
+        "evidence": [],
+        "status": "not-run"
       }
     }
   }

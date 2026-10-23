@@ -1,11 +1,6 @@
 [
   {
-    "upstreamPath": "skills/benchmark-checklist/SKILL.md",
-    "upstreamCommit": "df581122cde17e6e27686b5a448bde23e4ad4318",
-    "upstreamSha256": "6a767e788a60428fa14e645ee10fe2e49896e514ff654f668b1d824deb9038e8",
-    "destinationPath": "skills/benchmark-checklist/SKILL.md",
-    "disposition": "runtime",
-    "rationale": "Preserve the complete canonical seven-question checklist, metadata, numerical examples, one-run ballpark exception and reporting gates. Add capability/authorization checks and explicit workload, revision and sample records.",
+    "adaptationStatus": "adapted-reviewed",
     "dependencies": [
       "references/host-capabilities.md",
       "skills/principle-explain-the-number/SKILL.md",
@@ -13,20 +8,25 @@
       "skills/poteto-mode/playbooks/perf-issue.md",
       "skills/poteto-mode/playbooks/hillclimb.md"
     ],
+    "destinationPath": "skills/benchmark-checklist/SKILL.md",
+    "disposition": "runtime",
     "licenseProvenance": {
-      "license": "MIT",
       "copyright": "Copyright (c) 2026 Lauren Tan",
+      "license": "MIT",
       "sourcePath": "LICENSE"
     },
-    "adaptationStatus": "adapted-reviewed",
+    "rationale": "Retain complete current host adaptation; upstream prose consolidation does not add substantive required behavior.",
+    "upstreamCommit": "4ec7ffa173eaa70d3d9467a627baf0954645a353",
+    "upstreamPath": "skills/benchmark-checklist/SKILL.md",
+    "upstreamSha256": "ba109e96c8f6c1c391baccf19e5d11e14370df7b3f2605e1572cd565a6c0fca0",
     "verification": {
       "chatgpt": {
-        "status": "not-run",
-        "evidence": []
+        "evidence": [],
+        "status": "not-run"
       },
       "codex": {
-        "status": "not-run",
-        "evidence": []
+        "evidence": [],
+        "status": "not-run"
       }
     }
   }

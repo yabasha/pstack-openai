@@ -1,25 +1,18 @@
 # Compatibility
 
-The repository retains reviewed version 0.1.3 evidence at frozen revision `51f209daf83cd97d64f89881d66533bb59dc57db`. Before publication preparation, the release report validated discovery and 104 workflow cases per host. This does not establish full behavioral parity. The edited publication candidate needs a new frozen identity and fresh discovery; historical results do not transfer automatically.
-
-| Frozen 0.1.3 workflow results | Passed | Reduced capability | Blocked |
-| --- | ---: | ---: | ---: |
-| Codex | 33 | 50 | 21 |
-| ChatGPT | 21 | 56 | 27 |
-
-Package discovery is a separate passing case on each host. See the [controller report](releases/remaining-controller-report.md) and the [publication checklist](publication.md) for the current preparation boundary. The table below describes capability limits; use the case indexes for exact observed outcomes.
+Current [inventory](parity/inventory.json) records per-workflow verification on both hosts as not-run. Source validation and local installation/discovery are recorded separately in the [0.2.1 refresh record](releases/0.2.1.md). Historical host observations do not transfer to this package. Local source inspection, schema checks and helper fixtures do not establish full workflow behavior.
 
 | Host or operation | Candidate status | Evidence needed |
 | --- | --- | --- |
-| ChatGPT loading | Discovery recorded at the frozen revision; other environments require their own supported route | Actual supported loading control, setup authorization and fresh complete discovery for the candidate |
-| Codex loading | Discovery recorded at the frozen revision | Actual installed-copy operation, full 51-root enumeration, version and final frozen SHA for the candidate |
-| Independent Arena or Swarm | Workflow outcomes include reduced capability; full orchestration depends on the case and host | Authorized observed spawn, terminal results and inspected artifacts |
+| Personal ChatGPT loading | Unsupported route, explicitly blocked | Actual supported loading control, exact separate setup authorization and fresh complete discovery |
+| Codex loading | Local refresh and discovery are tracked separately; full workflow cases remain not-run | Actual installed-copy operation, full 54-root enumeration, version and final frozen SHA |
+| Independent Arena or Swarm | Not-run on both hosts | Authorized observed spawn, terminal results and inspected artifacts |
 | Sequential supplied-source work | Possible reduced branch, not a recorded pass | Actual authorized reads and artifacts, required observations and complete discovery for package acceptance |
 | Dependency-backed helpers | Setup-required in operative candidate | Exact local dependency metadata and caller-specific execution evidence |
 | Historical helper validation | Passed only in isolated snapshot | [Helper guide](testing/helper-setup.md) identifies the exact tested source SHA and limits |
 | Optional integrations and Benny | Case-specific; unavailable adapters and integrations remain blocked | [Benny readiness](testing/benny-readiness.md), actual bindings and separate action permission |
 
-Use [host matrix](testing/host-matrix.md), [case registry](parity/case-registry.json), [case schema](parity/cases/schema.json) and [evidence schema](parity/evidence.schema.json). Required cases need actual host observations or explicit blocked records. Complete discovery needs the identical 51-root receipt in a direct pass, worker pass or validated sequential reduced-pass. Ordinary direct completion is full when it satisfies every case requirement. A reduction never proves worker independence or full orchestration.
+Use [host matrix](testing/host-matrix.md), [case registry](parity/case-registry.json), [case schema](parity/cases/schema.json) and [evidence schema](parity/evidence.schema.json). Required cases need actual host observations or explicit blocked records. Complete discovery needs the identical 54-root receipt in a direct pass, worker pass or validated sequential reduced-pass. Ordinary direct completion is full when it satisfies every case requirement. A reduction never proves worker independence or full orchestration.
 
 [Release report](../tools/release_report.py) checks actual root evidence and discovery. An empty evidence directory is not a pass. Regenerate or check this summary against the actual release report after host testing; retain missing, stale and blocked results.
 

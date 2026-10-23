@@ -90,6 +90,6 @@ Current host statuses and release evidence: [current parity inventory](../parity
 
 Destination: [skills/swarm/SKILL.md](../../skills/swarm/SKILL.md).
 
-Upstream commit: `df581122cde17e6e27686b5a448bde23e4ad4318`. SHA-256: `bdcee4168e22428036e93d7cdeec3f391dbc4132f927f6db2540328c22db0273`.
+Upstream commit: `4ec7ffa173eaa70d3d9467a627baf0954645a353`. SHA-256: `031657cb81e490f9aed5c75d6ff2a4fda35ccafbaf72be604e59481cc4080cdc`.
 
 Disposition: `runtime`. Aggregate adaptation status: `adapted-reviewed`.

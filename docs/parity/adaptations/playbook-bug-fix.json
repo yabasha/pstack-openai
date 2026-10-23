@@ -1,11 +1,6 @@
 [
   {
-    "upstreamPath": "skills/poteto-mode/playbooks/bug-fix.md",
-    "upstreamCommit": "df581122cde17e6e27686b5a448bde23e4ad4318",
-    "upstreamSha256": "018bbc146ae19145caa6c7e70591fee081b64447dda1c1c4b681c9974d928b13",
-    "destinationPath": "skills/poteto-mode/playbooks/bug-fix.md",
-    "disposition": "runtime",
-    "rationale": "Preserve all six Bug fix steps, lead ownership, scientific minimal scope, matching-surface reproduction before edits and afterward, binary-search hypotheses, running instrumentation, runtime mechanism confirmation before design fan-out, delegated scoped implementation, refuted-patch reversion, failing-repro-first delivery and verbatim reply evidence. Bind controls, loops, worker/model selection and writes to observed authorized capabilities. Historical grok-4.7-xhigh-fast is provenance only. Opening a PR is a deferred Task 21 dependency for Task 24 integration. This playbook directly invokes no script helper. Structural validation proves neither host behavior nor caller execution.",
+    "adaptationStatus": "adapted-reviewed",
     "dependencies": [
       "skills/poteto-mode/SKILL.md",
       "references/host-capabilities.md",
@@ -18,22 +13,28 @@
       "skills/interrogate/SKILL.md",
       "skills/tdd/SKILL.md",
       "skills/principle-sequence-verifiable-units/SKILL.md",
-      "skills/poteto-mode/playbooks/opening-a-pr.md"
+      "skills/poteto-mode/playbooks/opening-a-pr.md",
+      "skills/unslop/SKILL.md"
     ],
+    "destinationPath": "skills/poteto-mode/playbooks/bug-fix.md",
+    "disposition": "runtime",
     "licenseProvenance": {
-      "license": "MIT",
       "copyright": "Copyright (c) 2026 Lauren Tan",
+      "license": "MIT",
       "sourcePath": "LICENSE"
     },
-    "adaptationStatus": "adapted-reviewed",
+    "rationale": "Upstream changes are editorial compression or delegate-effort reminders already governed by shared mode policy. Retain explicit local host, offline audit, authorization and evidence bindings.",
+    "upstreamCommit": "4ec7ffa173eaa70d3d9467a627baf0954645a353",
+    "upstreamPath": "skills/poteto-mode/playbooks/bug-fix.md",
+    "upstreamSha256": "66e26542dad131cfd7df80ac0cdf81ed4d85e7b5e3f0eb65b933888760c4831f",
     "verification": {
       "chatgpt": {
-        "status": "not-run",
-        "evidence": []
+        "evidence": [],
+        "status": "not-run"
       },
       "codex": {
-        "status": "not-run",
-        "evidence": []
+        "evidence": [],
+        "status": "not-run"
       }
     }
   }

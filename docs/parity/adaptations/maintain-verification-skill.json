@@ -1,31 +1,31 @@
 [
   {
-    "upstreamPath": "skills/maintain-verification-skill/SKILL.md",
-    "upstreamCommit": "df581122cde17e6e27686b5a448bde23e4ad4318",
-    "upstreamSha256": "515c0eaa054b3f6be1b1fb06f2c2f173c80fddb58bbcac57576f89c479bc68e8",
-    "destinationPath": "skills/maintain-verification-skill/SKILL.md",
-    "disposition": "runtime",
-    "rationale": "Preserve the full upkeep loop, metadata, invocation aliases, feature-level source and live coverage, proof invariants and scoped triage; bind discovery, readers and shipping to observed capabilities and authorization.",
+    "adaptationStatus": "adapted-reviewed",
     "dependencies": [
       "references/host-capabilities.md",
       "references/orchestration-contract.md",
       "references/workflow-ownership.md",
       "skills/create-verification-skill/SKILL.md"
     ],
+    "destinationPath": "skills/maintain-verification-skill/SKILL.md",
+    "disposition": "runtime",
     "licenseProvenance": {
-      "license": "MIT",
       "copyright": "Copyright (c) 2026 Lauren Tan",
+      "license": "MIT",
       "sourcePath": "LICENSE"
     },
-    "adaptationStatus": "adapted-reviewed",
+    "rationale": "Preserve the full upkeep loop, metadata, invocation aliases, feature-level source and live coverage, proof invariants and scoped triage; bind discovery, readers and shipping to observed capabilities and authorization.",
+    "upstreamCommit": "4ec7ffa173eaa70d3d9467a627baf0954645a353",
+    "upstreamPath": "skills/maintain-verification-skill/SKILL.md",
+    "upstreamSha256": "515c0eaa054b3f6be1b1fb06f2c2f173c80fddb58bbcac57576f89c479bc68e8",
     "verification": {
       "chatgpt": {
-        "status": "not-run",
-        "evidence": []
+        "evidence": [],
+        "status": "not-run"
       },
       "codex": {
-        "status": "not-run",
-        "evidence": []
+        "evidence": [],
+        "status": "not-run"
       }
     }
   }

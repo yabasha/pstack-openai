@@ -1,0 +1,27 @@
+[
+  {
+    "adaptationStatus": "reference-only-reviewed",
+    "dependencies": [],
+    "destinationPath": "docs/harness/claude-code.md",
+    "disposition": "reference-only",
+    "licenseProvenance": {
+      "copyright": "Copyright (c) 2026 Lauren Tan",
+      "license": "MIT",
+      "sourcePath": "LICENSE"
+    },
+    "rationale": "Refresh quoted upstream Claude adapter as reference-only; do not transfer skip, model, worktree or configuration semantics into runtime.",
+    "upstreamCommit": "4ec7ffa173eaa70d3d9467a627baf0954645a353",
+    "upstreamPath": "docs/harness/claude-code.md",
+    "upstreamSha256": "c79e2283d3a83c6be3dd1cac33f9c074067c95e610ae6e0a16d9fdee84058927",
+    "verification": {
+      "chatgpt": {
+        "evidence": [],
+        "status": "not-run"
+      },
+      "codex": {
+        "evidence": [],
+        "status": "not-run"
+      }
+    }
+  }
+]

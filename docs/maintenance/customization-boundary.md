@@ -1,6 +1,6 @@
 # Personal customization boundary
 
-Preserve the complete shared baseline before adding personal customizations. The baseline is the canonical pstack v0.15.15 source pinned in [UPSTREAM.md](../../UPSTREAM.md), with 164 source files, 51 root skills, 24 principles, 113 support files and 23 playbooks. The principles are part of the root skills and the playbooks are part of the support files; these counts do not describe additional files.
+Preserve the complete shared baseline before adding personal customizations. The baseline is the accepted pstack v0.15.25 source pinned in [UPSTREAM.md](../../UPSTREAM.md), with 169 source files, 54 root skills, 24 principles, 115 support files and 23 playbooks. The principles are part of the root skills and the playbooks are part of the support files; these counts do not describe additional files.
 
 ## Baseline gate
 

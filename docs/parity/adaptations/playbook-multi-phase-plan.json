@@ -1,11 +1,6 @@
 [
   {
-    "upstreamPath": "skills/poteto-mode/playbooks/multi-phase-plan.md",
-    "upstreamCommit": "df581122cde17e6e27686b5a448bde23e4ad4318",
-    "upstreamSha256": "27d310e3fc3937a60b8fcbe1318f9d249a7477a722907bf85b3e4eb3dc436b11",
-    "destinationPath": "skills/poteto-mode/playbooks/multi-phase-plan.md",
-    "disposition": "runtime",
-    "rationale": "Preserve plan-only purpose, aliases, ordered skeleton, prototype evidence, unit/live/performance proof and operator gates. Bind positional checker to Bun and actual capability evidence. Keep ten independent live lanes as full source expectation and explicit reduced or blocked limits. External operations require separate authorization; structural checks prove no host behavior. Deferred execution contracts remain dependencies for Task 24.",
+    "adaptationStatus": "adapted-reviewed",
     "dependencies": [
       "skills/poteto-mode/SKILL.md",
       "skills/poteto-mode/scripts/check-plan.mjs",
@@ -34,20 +29,25 @@
       "skills/show-me-your-work/SKILL.md",
       "skills/no-comments/SKILL.md"
     ],
+    "destinationPath": "skills/poteto-mode/playbooks/multi-phase-plan.md",
+    "disposition": "runtime",
     "licenseProvenance": {
-      "license": "MIT",
       "copyright": "Copyright (c) 2026 Lauren Tan",
+      "license": "MIT",
       "sourcePath": "LICENSE"
     },
-    "adaptationStatus": "adapted-reviewed",
+    "rationale": "Reflect upstream full-swarm cadence in generated planning template without reducing real-artifact or independent review requirements.",
+    "upstreamCommit": "4ec7ffa173eaa70d3d9467a627baf0954645a353",
+    "upstreamPath": "skills/poteto-mode/playbooks/multi-phase-plan.md",
+    "upstreamSha256": "5f239457bfdec3345c92caa06c59bf0257c662b89353f25a1c02ea942dcd00b1",
     "verification": {
       "chatgpt": {
-        "status": "not-run",
-        "evidence": []
+        "evidence": [],
+        "status": "not-run"
       },
       "codex": {
-        "status": "not-run",
-        "evidence": []
+        "evidence": [],
+        "status": "not-run"
       }
     }
   }

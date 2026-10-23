@@ -1,0 +1,15 @@
+# Statechart execution
+
+Use an authorized scratch directory outside the product checkout. Copy the model, configuration and reviewed mapping into it. Record their hashes, covered source revision and exclusions. Each worker owns a different input and output directory. Keep artifacts outside temporary cleanup paths when the host supports persistence. Never overwrite user files or share an output folder across workers.
+
+Run helpers through Bun. Java 11 or later and a reviewed local `tla2tools.jar` are separate dependencies. Set `TLA2TOOLS` to the jar's absolute path and `JAVA` to the selected Java executable when needed. Record versions and the jar digest. No command in this skill installs these dependencies. If absent or denied, stop execution and retain a draft with verification not-run.
+
+For PNGs, set `STATECHART_MERMAID` to the absolute path of an already installed, reviewed `mmdc` executable or local wrapper. Inspect wrappers and their browser/configuration dependencies before authorization. The helper passes arguments directly, without a shell or package-manager download. Record renderer/browser versions. A missing renderer or failed render blocks visual completion; Mermaid text is a draft until every required PNG is inspected.
+
+Mappings are JavaScript modules imported by `statechart.mjs` and `tlc-to-chart.mjs`. They execute with the process's permissions. Review their contents and imports before running them, and use the host's available isolation. A mapping supplied by a repository or another agent is not inert data. Without authorized execution or isolation for untrusted code, leave that branch blocked.
+
+Subprocesses have a 120-second timeout and a 16 MiB captured-output limit. TLC has one worker and a 512 MiB Java heap. These bounds apply to each subprocess, not the entire multi-rule run or arbitrary mapping code. Use a host-level deadline and cancellation for the whole run; inspect remaining processes and quarantine partial artifacts after cancellation. A subprocess timeout, output-limit failure or resource failure is incomplete, never a pass. Do not silently increase limits or remove isolation to obtain a green chart.
+
+On ChatGPT, discover actual filesystem, execution, persistence and image tools. With readable source alone, return an unverified model/chart draft. On Codex, use exposed local execution and image tools within the authorized workspace; local helper tests do not prove plugin discovery or personal ChatGPT loading. Neither host needs a new model mapping or automatic worker fan-out.
+
+Read `summary.json` and `stories.md`, not only the exit code. Exit zero can mean the configured expected rules broke. A second model may leave a rule unchecked. TLC can report counterexamples before a reporting exception; retain the partial finding and disclose the incomplete graph. Temporal properties are checked separately and are not drawn. Timer/guard label text is not checked as elapsed time. A green chart means the modeled fix passed that check within its stated assumptions. Reproduce each story through real user/client entry points before claiming a product bug or fix is verified.

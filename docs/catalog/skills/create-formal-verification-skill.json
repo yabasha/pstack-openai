@@ -1,0 +1,38 @@
+{
+  "capabilityLimits": [
+    "No execution means no observed proof; unavailable persistence or discovery remains explicit.",
+    "Generated-input testing is not formal verification.",
+    "Negative controls require owned isolation and verified cleanup.",
+    "Tool installation, settings, product fixes and external actions require applicable authorization.",
+    "Both host workflows remain not-run until separately observed."
+  ],
+  "caseIds": [
+    "formal-create-contract"
+  ],
+  "dependencies": [
+    "references/host-capabilities.md",
+    "references/workflow-ownership.md",
+    "references/model-roles.md",
+    "references/orchestration-contract.md",
+    "skills/maintain-formal-verification-skill/SKILL.md"
+  ],
+  "inputs": [
+    "Actual covered source, repository history and current check results",
+    "Observed host capabilities and authorized isolated execution"
+  ],
+  "kind": "skill",
+  "name": "create-formal-verification-skill",
+  "ordinaryExample": "Verify a retry lease cannot have two owners, detect an isolated broken variant and report the bounds.",
+  "outputs": [
+    "Scoped check result, counterexample or explicit draft/blocker",
+    "Covered-code record, tool and bounds, surviving evidence and truthful sync point"
+  ],
+  "purpose": "Generate a bounded, reproducible property check and a project-local rerun skill.",
+  "sourcePaths": [
+    "skills/create-formal-verification-skill/SKILL.md"
+  ],
+  "triggers": [
+    "/create-formal-verification-skill",
+    "verify a costly race or invariant"
+  ]
+}

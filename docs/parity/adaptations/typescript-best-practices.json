@@ -1,59 +1,59 @@
 [
   {
-    "upstreamPath": "skills/typescript-best-practices/SKILL.md",
-    "upstreamCommit": "df581122cde17e6e27686b5a448bde23e4ad4318",
-    "upstreamSha256": "28f9e61710e205f6f3c5476f333483cff0e988f6a5b639e2faad536344b40c5e",
-    "destinationPath": "skills/typescript-best-practices/SKILL.md",
-    "disposition": "runtime",
-    "rationale": "Preserve complete canonical metadata, rules, examples reference and prerequisite principles. Add session read, write and execution boundaries with explicit partial, unsaved and unperformed outcomes. No source typing practice changes.",
+    "adaptationStatus": "adapted-reviewed",
     "dependencies": [
       "skills/typescript-best-practices/references/patterns.md",
       "skills/principle-type-system-discipline/SKILL.md",
       "skills/principle-boundary-discipline/SKILL.md",
       "references/host-capabilities.md"
     ],
+    "destinationPath": "skills/typescript-best-practices/SKILL.md",
+    "disposition": "runtime",
     "licenseProvenance": {
-      "license": "MIT",
       "copyright": "Copyright (c) 2026 Lauren Tan",
+      "license": "MIT",
       "sourcePath": "LICENSE"
     },
-    "adaptationStatus": "adapted-reviewed",
+    "rationale": "Review cumulative canonical change against accepted 0.2.2; retain portable host, model, permission and evidence contracts.",
+    "upstreamCommit": "4ec7ffa173eaa70d3d9467a627baf0954645a353",
+    "upstreamPath": "skills/typescript-best-practices/SKILL.md",
+    "upstreamSha256": "ec1dac086d3708e5940d45d250c30a37dd953b4e3cb2ca0692f5851d7a039e27",
     "verification": {
       "chatgpt": {
-        "status": "not-run",
-        "evidence": []
+        "evidence": [],
+        "status": "not-run"
       },
       "codex": {
-        "status": "not-run",
-        "evidence": []
+        "evidence": [],
+        "status": "not-run"
       }
     }
   },
   {
-    "upstreamPath": "skills/typescript-best-practices/references/patterns.md",
-    "upstreamCommit": "df581122cde17e6e27686b5a448bde23e4ad4318",
-    "upstreamSha256": "faa1362055374452efccac1b629677c61acfb0bcc6c4e3311836b5715638ee18",
-    "destinationPath": "skills/typescript-best-practices/references/patterns.md",
-    "disposition": "runtime",
-    "rationale": "Retain the complete canonical TypeScript patterns reference byte-for-byte, including all concrete examples and exceptions, for the typed-boundary caller.",
+    "adaptationStatus": "adapted-reviewed",
     "dependencies": [
       "skills/principle-type-system-discipline/SKILL.md",
       "skills/principle-boundary-discipline/SKILL.md"
     ],
+    "destinationPath": "skills/typescript-best-practices/references/patterns.md",
+    "disposition": "runtime",
     "licenseProvenance": {
-      "license": "MIT",
       "copyright": "Copyright (c) 2026 Lauren Tan",
+      "license": "MIT",
       "sourcePath": "LICENSE"
     },
-    "adaptationStatus": "unchanged-reviewed",
+    "rationale": "Review cumulative canonical change against accepted 0.2.2; retain portable host, model, permission and evidence contracts.",
+    "upstreamCommit": "4ec7ffa173eaa70d3d9467a627baf0954645a353",
+    "upstreamPath": "skills/typescript-best-practices/references/patterns.md",
+    "upstreamSha256": "12e70c9419a8b3f5d6a1ab80e272c1f00a43ac0b3bbf72d68199033570e5de77",
     "verification": {
       "chatgpt": {
-        "status": "not-run",
-        "evidence": []
+        "evidence": [],
+        "status": "not-run"
       },
       "codex": {
-        "status": "not-run",
-        "evidence": []
+        "evidence": [],
+        "status": "not-run"
       }
     }
   }

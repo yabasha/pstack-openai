@@ -1,11 +1,6 @@
 [
   {
-    "upstreamPath": "skills/poteto-mode/playbooks/refactoring.md",
-    "upstreamCommit": "df581122cde17e6e27686b5a448bde23e4ad4318",
-    "upstreamSha256": "50f4f7d3d301551f8b8a57c3303c99958c5ca630ae0d0051823b6987c0eb5b96",
-    "destinationPath": "skills/poteto-mode/playbooks/refactoring.md",
-    "disposition": "runtime",
-    "rationale": "Preserve all eight Refactoring steps, before-edit behavior pin, feature and bug separation, figure-it-out routing, target-shape exploration, subtraction, same-wave caller migration and API deletion, small green moves, real equivalence proof, reader-load revert gate, ordered commits and complete reply artifacts. Bind delegation, model selection, writes and delivery to reviewed observed session contracts. The canonical grok-4.7-xhigh-fast refactoring default is historical provenance, not host availability. Opening a PR is deferred to Task 21 and Task 24 integration. This caller directly invokes no script helper. Structural checks and isolated helper fixtures supply no host behavior evidence.",
+    "adaptationStatus": "adapted-reviewed",
     "dependencies": [
       "skills/poteto-mode/SKILL.md",
       "references/host-capabilities.md",
@@ -27,20 +22,25 @@
       "skills/poteto-mode/playbooks/feature.md",
       "skills/poteto-mode/playbooks/opening-a-pr.md"
     ],
+    "destinationPath": "skills/poteto-mode/playbooks/refactoring.md",
+    "disposition": "runtime",
     "licenseProvenance": {
-      "license": "MIT",
       "copyright": "Copyright (c) 2026 Lauren Tan",
+      "license": "MIT",
       "sourcePath": "LICENSE"
     },
-    "adaptationStatus": "adapted-reviewed",
+    "rationale": "Upstream changes are editorial compression or delegate-effort reminders already governed by shared mode policy. Retain explicit local host, offline audit, authorization and evidence bindings.",
+    "upstreamCommit": "4ec7ffa173eaa70d3d9467a627baf0954645a353",
+    "upstreamPath": "skills/poteto-mode/playbooks/refactoring.md",
+    "upstreamSha256": "0f5dd38113379ea8cf61e2182eca0a7478eea9a869eb40c2dddab3335aeca197",
     "verification": {
       "chatgpt": {
-        "status": "not-run",
-        "evidence": []
+        "evidence": [],
+        "status": "not-run"
       },
       "codex": {
-        "status": "not-run",
-        "evidence": []
+        "evidence": [],
+        "status": "not-run"
       }
     }
   }

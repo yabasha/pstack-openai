@@ -1,28 +1,28 @@
 [
   {
-    "upstreamPath": "skills/principle-outcome-oriented-execution/SKILL.md",
-    "upstreamCommit": "df581122cde17e6e27686b5a448bde23e4ad4318",
-    "upstreamSha256": "10eb91633aa570355ba4bb37088fcade2b22e498df7a58edc749e65bc5a78e2d",
-    "destinationPath": "skills/principle-outcome-oriented-execution/SKILL.md",
-    "disposition": "runtime",
-    "rationale": "Preserve the full canonical principle and invocation metadata. Add capability discovery, permission boundaries and explicit reduced or blocked migration limits.",
+    "adaptationStatus": "adapted-reviewed",
     "dependencies": [
       "references/host-capabilities.md"
     ],
+    "destinationPath": "skills/principle-outcome-oriented-execution/SKILL.md",
+    "disposition": "runtime",
     "licenseProvenance": {
-      "license": "MIT",
       "copyright": "Copyright (c) 2026 Lauren Tan",
+      "license": "MIT",
       "sourcePath": "LICENSE"
     },
-    "adaptationStatus": "adapted-reviewed",
+    "rationale": "Preserve the full canonical principle and invocation metadata. Add capability discovery, permission boundaries and explicit reduced or blocked migration limits.",
+    "upstreamCommit": "4ec7ffa173eaa70d3d9467a627baf0954645a353",
+    "upstreamPath": "skills/principle-outcome-oriented-execution/SKILL.md",
+    "upstreamSha256": "10eb91633aa570355ba4bb37088fcade2b22e498df7a58edc749e65bc5a78e2d",
     "verification": {
       "chatgpt": {
-        "status": "not-run",
-        "evidence": []
+        "evidence": [],
+        "status": "not-run"
       },
       "codex": {
-        "status": "not-run",
-        "evidence": []
+        "evidence": [],
+        "status": "not-run"
       }
     }
   }

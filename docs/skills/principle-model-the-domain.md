@@ -80,6 +80,6 @@ Current host statuses and release evidence: [current parity inventory](../parity
 
 Destination: [skills/principle-model-the-domain/SKILL.md](../../skills/principle-model-the-domain/SKILL.md).
 
-Upstream commit: `df581122cde17e6e27686b5a448bde23e4ad4318`. SHA-256: `bbadbb9a723fac3f76e782ae45665eb94058ec10993e4bae36d4dc6b0e4eac07`.
+Upstream commit: `4ec7ffa173eaa70d3d9467a627baf0954645a353`. SHA-256: `52c0d85e0c3827c41c18299b642657d7b47eaf77b7b31609e42e0df42b84c75f`.
 
 Disposition: `runtime`. Aggregate adaptation status: `adapted-reviewed`.

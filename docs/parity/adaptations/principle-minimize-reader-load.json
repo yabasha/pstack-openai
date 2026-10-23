@@ -1,29 +1,29 @@
 [
   {
-    "upstreamPath": "skills/principle-minimize-reader-load/SKILL.md",
-    "upstreamCommit": "df581122cde17e6e27686b5a448bde23e4ad4318",
-    "upstreamSha256": "42551c5dc74cd578163c148da552db3ff67d29b78600ef216bfd311fb828fe69",
-    "destinationPath": "skills/principle-minimize-reader-load/SKILL.md",
-    "disposition": "runtime",
-    "rationale": "Preserve the complete canonical reader-load principle and invocation metadata; bind concrete refactoring to observed source, authorized writes and execution, with explicit reduced proposals and blocked claims. Comparison source adds no necessary fallback and is not incorporated.",
+    "adaptationStatus": "adapted-reviewed",
     "dependencies": [
       "references/host-capabilities.md",
       "skills/principle-guard-the-context-window/SKILL.md"
     ],
+    "destinationPath": "skills/principle-minimize-reader-load/SKILL.md",
+    "disposition": "runtime",
     "licenseProvenance": {
-      "license": "MIT",
       "copyright": "Copyright (c) 2026 Lauren Tan",
+      "license": "MIT",
       "sourcePath": "LICENSE"
     },
-    "adaptationStatus": "adapted-reviewed",
+    "rationale": "Retain complete current host adaptation; upstream prose consolidation does not add substantive required behavior.",
+    "upstreamCommit": "4ec7ffa173eaa70d3d9467a627baf0954645a353",
+    "upstreamPath": "skills/principle-minimize-reader-load/SKILL.md",
+    "upstreamSha256": "1ea2b7fef2391cae5844c4efdbd59031f775e8a52d06b7495d707229a200dcca",
     "verification": {
       "chatgpt": {
-        "status": "not-run",
-        "evidence": []
+        "evidence": [],
+        "status": "not-run"
       },
       "codex": {
-        "status": "not-run",
-        "evidence": []
+        "evidence": [],
+        "status": "not-run"
       }
     }
   }

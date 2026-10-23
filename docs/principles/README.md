@@ -1,6 +1,6 @@
 # Principle catalog
 
-Generated from 51 reviewed leaf records, including 24 principles. No additional root skill is registered.
+Generated from 57 reviewed leaf records, including 24 principles. No additional root skill is registered.
 
 Host support depends on capabilities, permissions and observed evidence. Inventory review may remain pending, and a not-run result remains untested.
 

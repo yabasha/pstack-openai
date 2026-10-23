@@ -1,6 +1,8 @@
 # Current 0.1.5 discovery
 
-Exact candidate freeze `4513f3d706e6dfe9e396c80a74c490c3ebcec7a6` has fresh discovery-only proof in [discovery-015.json](../releases/discovery-015.json). Both hosts expose all51 canonical roots with the three Benny helpers excluded. Version0.1.5 historical workflow qualification remains absent; reruns stay paused. Earlier results below retain their original version and SHA.
+Current package: v0.2.1, with 54 root skills. See the [current validation and refresh record](../releases/0.2.1.md). The records below describe earlier package revisions; their 51-skill counts, dates and host results are historical and do not establish current workflow behavior.
+
+Observed 2026-10-08, Asia/Amman. The separately approved personal skills-only installation of pstack-openai 0.1.0 used operative SHA 5d05ab2458f4cd73c44b24265a3a1920b98b8cf4 and codex-cli 0.161.0. The supported installation CLI completed successfully. Source export /Users/digital-hawk/.codex/plugins/yabasha-local/pstack-openai and installed cache /Users/digital-hawk/.codex/plugins/cache/yabasha-local/pstack-openai/0.1.0 each matched all 726 frozen paths, bytes and modes, with zero extras. Only the approved personal marketplace entry and target enablement changed semantically; no unrelated configuration or credentials were repaired.
 
 # Current 0.1.4 discovery
 

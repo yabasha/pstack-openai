@@ -1,9 +1,14 @@
-"""Inert full-package update transaction, never a host or live upstream run."""
+"""Historical full-package migration fixture, never a host or live upstream run.
+
+Canonical source bytes stay pinned to df581122cde17e6e27686b5a448bde23e4ad4318.
+Package metadata comes from the distinct local PACKAGE_SNAPSHOT commit, so a
+new active baseline cannot mix with that historical 164-file source archive.
+Current imported tools still drive every transaction and validation assertion.
+"""
 import copy
 import hashlib
 import json
 from pathlib import Path
-import shutil
 import subprocess
 import tempfile
 import unittest
@@ -15,6 +20,7 @@ from tools import sync_upstream as sync
 from tools.validate_package import validate_package
 
 ROOT = Path(__file__).resolve().parents[1]
+PACKAGE_SNAPSHOT = '36547e7fec1b24b97e2c3391ea4758d8e9e6ad2b'
 
 
 class FullPackageUpdateTests(unittest.TestCase):
@@ -25,16 +31,17 @@ class FullPackageUpdateTests(unittest.TestCase):
     snapshot = apply_fixtures.UpstreamApplyTests.snapshot
 
     def setUp(self):
-        tmp = tempfile.TemporaryDirectory(prefix='pstack-full-update-',dir=ROOT.parent)
+        tmp = tempfile.TemporaryDirectory(prefix='pstack-full-update-',dir=Path.home()/'Herd')
         self.addCleanup(tmp.cleanup)
         self.container = Path(tmp.name)
         repo = self.container/'repository'; repo.mkdir()
-        paths = subprocess.check_output(['git','ls-files'],cwd=ROOT,text=True).splitlines()
-        paths += subprocess.check_output(['git','ls-files','--others','--exclude-standard'],cwd=ROOT,text=True).splitlines()
-        for name in set(paths):
-            if name.startswith('.superpowers/'): continue
-            target = repo/name; target.parent.mkdir(parents=True,exist_ok=True)
-            shutil.copy2(ROOT/name,target)
+        snapshot = subprocess.run(
+            ['git', 'archive', '--format=tar', PACKAGE_SNAPSHOT], cwd=ROOT,
+            capture_output=True)
+        if snapshot.returncode:
+            self.skipTest(f'Pinned local package snapshot {PACKAGE_SNAPSHOT} unavailable; no network lookup attempted.')
+        subprocess.run(['tar', '-xf', '-', '-C', str(repo)],
+                       input=snapshot.stdout, check=True)
         subprocess.run(['git','init','-q',str(repo)],check=True)
         self.root = repo
         self.git('add','.'); self.git('commit','-qm','complete synthetic package source')

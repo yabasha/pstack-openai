@@ -1,30 +1,30 @@
 [
   {
-    "upstreamPath": "skills/poteto-mode/scripts/worktree-audit.sh",
-    "upstreamCommit": "df581122cde17e6e27686b5a448bde23e4ad4318",
-    "upstreamSha256": "95b8530f3c0ccada8cabc4b0727c052fbc85c141531375aaace65c427af8aecc",
-    "destinationPath": "skills/poteto-mode/scripts/worktree-audit.sh",
-    "disposition": "runtime",
-    "rationale": "Preserve the read-only secondary-worktree audit, complete paths, size-descending ordering, commit age, ancestry, tracked/untracked counts, local remote-tracking state, PR records, latest scoped chat timestamp and review buckets. Replace fetch, origin/main assumption, gh query and private transcript scan with an explicit local base and optional validated user-scoped exports. Every dirty or unknown candidate is held. Age never permits disposal; CLOSED PRs do not imply merge. JSON fields use null for unavailable evidence and separate known absence from missing history/PR inputs. Python standard-library helper supplies the exact audit_worktrees API. Thirteen local fixture tests pass, including independent log and tracking-count failures held as unknown; adaptation status is a candidate for fresh source review, distinct from host behavior verification.",
+    "adaptationStatus": "adapted-reviewed",
     "dependencies": [
       "skills/poteto-mode/scripts/worktree-audit.py",
       "skills/poteto-mode/playbooks/worktree-cleanup.md",
       "skills/poteto-mode/SKILL.md"
     ],
+    "destinationPath": "skills/poteto-mode/scripts/worktree-audit.sh",
+    "disposition": "runtime",
     "licenseProvenance": {
-      "license": "MIT",
       "copyright": "Copyright (c) 2026 Lauren Tan",
+      "license": "MIT",
       "sourcePath": "LICENSE"
     },
-    "adaptationStatus": "adapted-reviewed",
+    "rationale": "Retain explicit-base offline Python adapter and task-supplied exports; upstream fetch, automatic Cursor-history scan and safe labels violate local constraints.",
+    "upstreamCommit": "4ec7ffa173eaa70d3d9467a627baf0954645a353",
+    "upstreamPath": "skills/poteto-mode/scripts/worktree-audit.sh",
+    "upstreamSha256": "e0a94e5e5b1ff60638916e440600e15851f7b79bc1a1d1f602fde05d465e2ec0",
     "verification": {
       "chatgpt": {
-        "status": "not-run",
-        "evidence": []
+        "evidence": [],
+        "status": "not-run"
       },
       "codex": {
-        "status": "not-run",
-        "evidence": []
+        "evidence": [],
+        "status": "not-run"
       }
     }
   }

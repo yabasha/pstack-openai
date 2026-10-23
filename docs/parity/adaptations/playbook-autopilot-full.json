@@ -1,11 +1,6 @@
 [
   {
-    "upstreamPath": "skills/poteto-mode/playbooks/autopilot-full.md",
-    "upstreamCommit": "df581122cde17e6e27686b5a448bde23e4ad4318",
-    "upstreamSha256": "05ca30a16242c19d0c78ba1e88cca66f858d75252cb154fd740099fe292de802",
-    "destinationPath": "skills/poteto-mode/playbooks/autopilot-full.md",
-    "disposition": "runtime",
-    "rationale": "Preserve one owner per PR, state-then-wait, operator items, early trails and ready PR, committed-head gates, independent swarm live and regression lanes, patch-id reuse, merge-prep drift checks, owner squash merge, root countersigns, hourly audit/stuck-child replacement, retro, post-merge sweep, instant zero-writes and full reply. Replace cloud workers and source loop with observed authorized bindings; retain deslop/control companion gaps. Missing persistent wake uses current-turn work and durable continuation without scheduling claims. Pending Bugbot, Babysit and Shipping contracts block dependent execution until Tasks 21 and 24 close them. Structural checks establish no host behavior.",
+    "adaptationStatus": "adapted-reviewed",
     "dependencies": [
       "skills/poteto-mode/SKILL.md",
       "skills/poteto-mode/references/bugbot-triage.md",
@@ -20,22 +15,28 @@
       "references/host-capabilities.md",
       "references/orchestration-contract.md",
       "references/model-roles.md",
-      "references/agent-prompts/poteto-agent.md"
+      "references/agent-prompts/poteto-agent.md",
+      "skills/ketchup/SKILL.md"
     ],
+    "destinationPath": "skills/poteto-mode/playbooks/autopilot-full.md",
+    "disposition": "runtime",
     "licenseProvenance": {
-      "license": "MIT",
       "copyright": "Copyright (c) 2026 Lauren Tan",
+      "license": "MIT",
       "sourcePath": "LICENSE"
     },
-    "adaptationStatus": "adapted-reviewed",
+    "rationale": "Adopt bounded review cadence, explicit leases, trunk impact checks, durable root-readable records, gate countersigns and ketchup reporting without waiving independent or installation/merge gates.",
+    "upstreamCommit": "4ec7ffa173eaa70d3d9467a627baf0954645a353",
+    "upstreamPath": "skills/poteto-mode/playbooks/autopilot-full.md",
+    "upstreamSha256": "acf4f4a58c11045f9d3e8807d907a877e61ca6432b079f1087d7d30fc931566f",
     "verification": {
       "chatgpt": {
-        "status": "not-run",
-        "evidence": []
+        "evidence": [],
+        "status": "not-run"
       },
       "codex": {
-        "status": "not-run",
-        "evidence": []
+        "evidence": [],
+        "status": "not-run"
       }
     }
   }

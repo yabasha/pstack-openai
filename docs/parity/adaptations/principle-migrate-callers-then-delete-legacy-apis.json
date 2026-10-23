@@ -1,28 +1,28 @@
 [
   {
-    "upstreamPath": "skills/principle-migrate-callers-then-delete-legacy-apis/SKILL.md",
-    "upstreamCommit": "df581122cde17e6e27686b5a448bde23e4ad4318",
-    "upstreamSha256": "09978915a4a11990cf0a9a02d9c08cc59e0b7a04c5c24b83aa560fbe4146f75b",
-    "destinationPath": "skills/principle-migrate-callers-then-delete-legacy-apis/SKILL.md",
-    "disposition": "runtime",
-    "rationale": "Preserve the complete canonical caller migration principle and invocation metadata. Add session capability discovery, authorized write boundaries and explicit reduced or blocked outcomes. Comparison source has no necessary fallback and is not incorporated.",
+    "adaptationStatus": "adapted-reviewed",
     "dependencies": [
       "references/host-capabilities.md"
     ],
+    "destinationPath": "skills/principle-migrate-callers-then-delete-legacy-apis/SKILL.md",
+    "disposition": "runtime",
     "licenseProvenance": {
-      "license": "MIT",
       "copyright": "Copyright (c) 2026 Lauren Tan",
+      "license": "MIT",
       "sourcePath": "LICENSE"
     },
-    "adaptationStatus": "adapted-reviewed",
+    "rationale": "Reviewed upstream editorial update; retain portable identity for README and host capability boundaries for adapted skills.",
+    "upstreamCommit": "4ec7ffa173eaa70d3d9467a627baf0954645a353",
+    "upstreamPath": "skills/principle-migrate-callers-then-delete-legacy-apis/SKILL.md",
+    "upstreamSha256": "580ad9bb1a0994ecb924321ba49efc38a2f85c64e22c76fb133f57a78272a2e6",
     "verification": {
       "chatgpt": {
-        "status": "not-run",
-        "evidence": []
+        "evidence": [],
+        "status": "not-run"
       },
       "codex": {
-        "status": "not-run",
-        "evidence": []
+        "evidence": [],
+        "status": "not-run"
       }
     }
   }

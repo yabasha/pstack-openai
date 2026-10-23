@@ -6,7 +6,7 @@ disable-model-invocation: true
 
 # Swarm
 
-Fan out N independent parallel workers. They may cover separate slices, race the same brief, or mix both. The parent waits, aggregates, and returns one report. Invocation metadata expresses upstream intent; do not assume the host enforces it.
+Invocation metadata expresses upstream intent; do not assume the host enforces it.
 
 Use [session capabilities](../../references/host-capabilities.md), [model roles](../../references/model-roles.md), and the [assignment contract](../../references/orchestration-contract.md). Discover exposed operations and confirm authorization before dispatch. Upstream cloud/background execution and cloud branch selection require corresponding observed host bindings. Do not create remote branches or install capabilities as an incidental step.
 
@@ -23,9 +23,8 @@ Open a task list with one entry per phase before launching anything. Use an in-c
 
 1. State the done predicate and the artifact or report the swarm must return.
 2. Choose the shape. Partition into slices, race N workers on identical briefs, or mix both. For a race or mixed shape, declare `first pass`, `rank all`, or `best-of` before spawning.
-3. Set N from the user or derive it from the shape. N is total workers, not the host concurrency limit.
-4. Select the swarm worker model through current exposed model capabilities and the user's selection. The canonical configured/default model policy is host-specific; do not assume its model slug is supported here. For `auto` or `inherit-parent`, omit explicit model selection where the operation supports inheritance. Disclose any rejection and replacement. Use a supported same-family alternative when available and authorized, otherwise inherited selection; block an arm that requires an unavailable exact model. For a model race, name each arm's requested model up front and record actual models only when observed. Unknown actual models leave diversity unverified.
-5. Give each worker its own writable output when it writes. When workers verify or measure commits, each brief names the exact full SHAs. A measurement brief also names the method, including sample count, what one sample is, and order. The worker records both in its result. Create immutable assignments and append-only attempt events under the assignment contract. Distinct output ownership applies even when race briefs are identical.
+3. Select the swarm worker model through current exposed model capabilities and the user's selection. The canonical configured/default model policy is host-specific; do not assume its model slug is supported here. For `auto` or `inherit-parent`, omit explicit model selection where the operation supports inheritance. Disclose any rejection and replacement. Use a supported same-family alternative when available and authorized, otherwise inherited selection; block an arm that requires an unavailable exact model. For a model race, name each arm's requested model up front and record actual models only when observed. Unknown actual models leave diversity unverified.
+4. Give each worker its own writable output when it writes. When workers verify or measure commits, each brief names the exact full SHAs. A measurement brief also names the method, including sample count, what one sample is, and order. The worker records both in its result. Create immutable assignments and append-only attempt events under the assignment contract. Distinct output ownership applies even when race briefs are identical.
 
 ## Phase B: Fan out
 
@@ -43,7 +42,7 @@ Wait for terminal results and inspect each result and its artifacts. Reject a re
 
 For coverage, every required slice needs a valid result. For a race, apply the selection rule declared up front. Use first pass, rank all, or best-of. Do not paste raw worker dumps. Selecting a winner does not hide gaps in required coverage.
 
-Keep a compact result table, one-line evidenced issues, and explicit gaps or dropouts. Cancel workers only through authorized exposed stop bindings. Inspect terminal state and quarantine partial artifacts from integration. If stopping cannot be observed, say termination is unverified. Cancellation never makes partial output a pass. Preserve durable assignment records with readback when available; missing persistence leaves recovery limits visible.
+Cancel workers only through authorized exposed stop bindings. Inspect terminal state and quarantine partial artifacts from integration. If stopping cannot be observed, say termination is unverified. Cancellation never makes partial output a pass. Preserve durable assignment records with readback when available; missing persistence leaves recovery limits visible.
 
 ## Phase D: Report
 

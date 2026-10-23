@@ -1,361 +1,361 @@
 [
   {
-    "upstreamPath": "skills/poteto-mode/scripts/watch-pr/cli.test.ts",
-    "upstreamCommit": "df581122cde17e6e27686b5a448bde23e4ad4318",
-    "upstreamSha256": "a35592b4c6da96caf8d47987e9cd503fab6c7774ab87d11a43f24b4b5df2a9d1",
+    "adaptationStatus": "adapted-reviewed",
+    "dependencies": [
+      "skills/poteto-mode/scripts/bootstrap.ts",
+      "skills/poteto-mode/scripts/package.json",
+      "skills/poteto-mode/scripts/bun.lock",
+      "skills/poteto-mode/SKILL.md"
+    ],
     "destinationPath": "skills/poteto-mode/scripts/watch-pr/cli.test.ts",
     "disposition": "runtime",
+    "licenseProvenance": {
+      "copyright": "Copyright (c) 2026 Lauren Tan",
+      "license": "MIT",
+      "sourcePath": "LICENSE"
+    },
     "rationale": "Preserve the complete read-only watcher, exported functions, CLI options, independent PR classification, tier-major stack policy and verified queue ordering. Require explicit repository and full 40-character expected head at the CLI and exported snapshot/runner boundaries before reads or successful verdicts, with full observed head equality and snapshot head revalidation, finite snapshot and pagination budgets, terminal authentication/transport failures and injected transport. The source has no merge, comment or push operation, so duplicate-action and unauthorized-merge checks assert that repeated reads emit no mutation commands. Wrapper runtime auto-install is disabled and bootstrap requires explicit setup. Local fake policy/transport tests pass 46 cases and 138 assertions after the exact-head correction; commander-dependent CLI tests and typecheck remain blocked by missing installed dependencies. Initial RED accidentally called real read-only gh commands before transport injection; this is recorded as a failed test-boundary check, not fake evidence. Self-review covers all source files and the exact-head correction. Adaptation status is a candidate for fresh independent source review. CLI and compile runtime checks remain dependency-blocked; host verification remains not-run. No host pass claimed.",
+    "upstreamCommit": "4ec7ffa173eaa70d3d9467a627baf0954645a353",
+    "upstreamPath": "skills/poteto-mode/scripts/watch-pr/cli.test.ts",
+    "upstreamSha256": "a35592b4c6da96caf8d47987e9cd503fab6c7774ab87d11a43f24b4b5df2a9d1",
+    "verification": {
+      "chatgpt": {
+        "evidence": [],
+        "status": "not-run"
+      },
+      "codex": {
+        "evidence": [],
+        "status": "not-run"
+      }
+    }
+  },
+  {
+    "adaptationStatus": "adapted-reviewed",
     "dependencies": [
       "skills/poteto-mode/scripts/bootstrap.ts",
       "skills/poteto-mode/scripts/package.json",
       "skills/poteto-mode/scripts/bun.lock",
       "skills/poteto-mode/SKILL.md"
     ],
-    "licenseProvenance": {
-      "license": "MIT",
-      "copyright": "Copyright (c) 2026 Lauren Tan",
-      "sourcePath": "LICENSE"
-    },
-    "adaptationStatus": "adapted-reviewed",
-    "verification": {
-      "chatgpt": {
-        "status": "not-run",
-        "evidence": []
-      },
-      "codex": {
-        "status": "not-run",
-        "evidence": []
-      }
-    }
-  },
-  {
-    "upstreamPath": "skills/poteto-mode/scripts/watch-pr/cli.ts",
-    "upstreamCommit": "df581122cde17e6e27686b5a448bde23e4ad4318",
-    "upstreamSha256": "89c08863089181a232be782c4b2ed90a1552f44aeecb0dcb7aac2c623620e680",
     "destinationPath": "skills/poteto-mode/scripts/watch-pr/cli.ts",
     "disposition": "runtime",
+    "licenseProvenance": {
+      "copyright": "Copyright (c) 2026 Lauren Tan",
+      "license": "MIT",
+      "sourcePath": "LICENSE"
+    },
     "rationale": "Preserve the complete read-only watcher, exported functions, CLI options, independent PR classification, tier-major stack policy and verified queue ordering. Require explicit repository and full 40-character expected head at the CLI and exported snapshot/runner boundaries before reads or successful verdicts, with full observed head equality and snapshot head revalidation, finite snapshot and pagination budgets, terminal authentication/transport failures and injected transport. The source has no merge, comment or push operation, so duplicate-action and unauthorized-merge checks assert that repeated reads emit no mutation commands. Wrapper runtime auto-install is disabled and bootstrap requires explicit setup. Local fake policy/transport tests pass 46 cases and 138 assertions after the exact-head correction; commander-dependent CLI tests and typecheck remain blocked by missing installed dependencies. Initial RED accidentally called real read-only gh commands before transport injection; this is recorded as a failed test-boundary check, not fake evidence. Self-review covers all source files and the exact-head correction. Adaptation status is a candidate for fresh independent source review. CLI and compile runtime checks remain dependency-blocked; host verification remains not-run. No host pass claimed.",
+    "upstreamCommit": "4ec7ffa173eaa70d3d9467a627baf0954645a353",
+    "upstreamPath": "skills/poteto-mode/scripts/watch-pr/cli.ts",
+    "upstreamSha256": "89c08863089181a232be782c4b2ed90a1552f44aeecb0dcb7aac2c623620e680",
+    "verification": {
+      "chatgpt": {
+        "evidence": [],
+        "status": "not-run"
+      },
+      "codex": {
+        "evidence": [],
+        "status": "not-run"
+      }
+    }
+  },
+  {
+    "adaptationStatus": "adapted-reviewed",
     "dependencies": [
       "skills/poteto-mode/scripts/bootstrap.ts",
       "skills/poteto-mode/scripts/package.json",
       "skills/poteto-mode/scripts/bun.lock",
       "skills/poteto-mode/SKILL.md"
     ],
-    "licenseProvenance": {
-      "license": "MIT",
-      "copyright": "Copyright (c) 2026 Lauren Tan",
-      "sourcePath": "LICENSE"
-    },
-    "adaptationStatus": "adapted-reviewed",
-    "verification": {
-      "chatgpt": {
-        "status": "not-run",
-        "evidence": []
-      },
-      "codex": {
-        "status": "not-run",
-        "evidence": []
-      }
-    }
-  },
-  {
-    "upstreamPath": "skills/poteto-mode/scripts/watch-pr/fakes.test-helper.ts",
-    "upstreamCommit": "df581122cde17e6e27686b5a448bde23e4ad4318",
-    "upstreamSha256": "e53e31b7f03068063f53a99a3591b052aaed66e4e2b196b3a364980f60324ab1",
     "destinationPath": "skills/poteto-mode/scripts/watch-pr/fakes.test-helper.ts",
     "disposition": "runtime",
-    "rationale": "Preserve the complete read-only watcher, exported functions, CLI options, independent PR classification, tier-major stack policy and verified queue ordering. Require explicit repository and full 40-character expected head at the CLI and exported snapshot/runner boundaries before reads or successful verdicts, with full observed head equality and snapshot head revalidation, finite snapshot and pagination budgets, terminal authentication/transport failures and injected transport. The source has no merge, comment or push operation, so duplicate-action and unauthorized-merge checks assert that repeated reads emit no mutation commands. Wrapper runtime auto-install is disabled and bootstrap requires explicit setup. Local fake policy/transport tests pass 46 cases and 138 assertions after the exact-head correction; commander-dependent CLI tests and typecheck remain blocked by missing installed dependencies. Initial RED accidentally called real read-only gh commands before transport injection; this is recorded as a failed test-boundary check, not fake evidence. Self-review covers all source files and the exact-head correction. Adaptation status is a candidate for fresh independent source review. CLI and compile runtime checks remain dependency-blocked; host verification remains not-run. No host pass claimed.",
+    "licenseProvenance": {
+      "copyright": "Copyright (c) 2026 Lauren Tan",
+      "license": "MIT",
+      "sourcePath": "LICENSE"
+    },
+    "rationale": "Retain reader interface and local complete-thread fixtures because current pagination already provides stronger validation.",
+    "upstreamCommit": "4ec7ffa173eaa70d3d9467a627baf0954645a353",
+    "upstreamPath": "skills/poteto-mode/scripts/watch-pr/fakes.test-helper.ts",
+    "upstreamSha256": "cf0c5ee61b4a73444c1b775cfb6c81a40d312e055dd21a1f5eae6276e54de13f",
+    "verification": {
+      "chatgpt": {
+        "evidence": [],
+        "status": "not-run"
+      },
+      "codex": {
+        "evidence": [],
+        "status": "not-run"
+      }
+    }
+  },
+  {
+    "adaptationStatus": "adapted-reviewed",
     "dependencies": [
       "skills/poteto-mode/scripts/bootstrap.ts",
       "skills/poteto-mode/scripts/package.json",
       "skills/poteto-mode/scripts/bun.lock",
       "skills/poteto-mode/SKILL.md"
     ],
-    "licenseProvenance": {
-      "license": "MIT",
-      "copyright": "Copyright (c) 2026 Lauren Tan",
-      "sourcePath": "LICENSE"
-    },
-    "adaptationStatus": "adapted-reviewed",
-    "verification": {
-      "chatgpt": {
-        "status": "not-run",
-        "evidence": []
-      },
-      "codex": {
-        "status": "not-run",
-        "evidence": []
-      }
-    }
-  },
-  {
-    "upstreamPath": "skills/poteto-mode/scripts/watch-pr/github.test.ts",
-    "upstreamCommit": "df581122cde17e6e27686b5a448bde23e4ad4318",
-    "upstreamSha256": "0cbce011050522938523e36bb42a260e92b812dcd2076930fa681672ad316b24",
     "destinationPath": "skills/poteto-mode/scripts/watch-pr/github.test.ts",
     "disposition": "runtime",
-    "rationale": "Preserve the complete read-only watcher, exported functions, CLI options, independent PR classification, tier-major stack policy and verified queue ordering. Require explicit repository and full 40-character expected head at the CLI and exported snapshot/runner boundaries before reads or successful verdicts, with full observed head equality and snapshot head revalidation, finite snapshot and pagination budgets, terminal authentication/transport failures and injected transport. The source has no merge, comment or push operation, so duplicate-action and unauthorized-merge checks assert that repeated reads emit no mutation commands. Wrapper runtime auto-install is disabled and bootstrap requires explicit setup. Local fake policy/transport tests pass 46 cases and 138 assertions after the exact-head correction; commander-dependent CLI tests and typecheck remain blocked by missing installed dependencies. Initial RED accidentally called real read-only gh commands before transport injection; this is recorded as a failed test-boundary check, not fake evidence. Self-review covers all source files and the exact-head correction. Adaptation status is a candidate for fresh independent source review. CLI and compile runtime checks remain dependency-blocked; host verification remains not-run. No host pass claimed.",
+    "licenseProvenance": {
+      "copyright": "Copyright (c) 2026 Lauren Tan",
+      "license": "MIT",
+      "sourcePath": "LICENSE"
+    },
+    "rationale": "Port ACTION_REQUIRED gate regressions; retain injected transport and stronger pagination tests.",
+    "upstreamCommit": "4ec7ffa173eaa70d3d9467a627baf0954645a353",
+    "upstreamPath": "skills/poteto-mode/scripts/watch-pr/github.test.ts",
+    "upstreamSha256": "70c9f03d8738228763846f2abdd8c7de7be68dba3035041482386a69cbf5639b",
+    "verification": {
+      "chatgpt": {
+        "evidence": [],
+        "status": "not-run"
+      },
+      "codex": {
+        "evidence": [],
+        "status": "not-run"
+      }
+    }
+  },
+  {
+    "adaptationStatus": "adapted-reviewed",
     "dependencies": [
       "skills/poteto-mode/scripts/bootstrap.ts",
       "skills/poteto-mode/scripts/package.json",
       "skills/poteto-mode/scripts/bun.lock",
       "skills/poteto-mode/SKILL.md"
     ],
-    "licenseProvenance": {
-      "license": "MIT",
-      "copyright": "Copyright (c) 2026 Lauren Tan",
-      "sourcePath": "LICENSE"
-    },
-    "adaptationStatus": "adapted-reviewed",
-    "verification": {
-      "chatgpt": {
-        "status": "not-run",
-        "evidence": []
-      },
-      "codex": {
-        "status": "not-run",
-        "evidence": []
-      }
-    }
-  },
-  {
-    "upstreamPath": "skills/poteto-mode/scripts/watch-pr/github.ts",
-    "upstreamCommit": "df581122cde17e6e27686b5a448bde23e4ad4318",
-    "upstreamSha256": "d1bbbafbe8e2c703c84da2029de7f2c4011412512f8cf65a42100f46bcb92c8a",
     "destinationPath": "skills/poteto-mode/scripts/watch-pr/github.ts",
     "disposition": "runtime",
-    "rationale": "Preserve the complete read-only watcher, exported functions, CLI options, independent PR classification, tier-major stack policy and verified queue ordering. Require explicit repository and full 40-character expected head at the CLI and exported snapshot/runner boundaries before reads or successful verdicts, with full observed head equality and snapshot head revalidation, finite snapshot and pagination budgets, terminal authentication/transport failures and injected transport. The source has no merge, comment or push operation, so duplicate-action and unauthorized-merge checks assert that repeated reads emit no mutation commands. Wrapper runtime auto-install is disabled and bootstrap requires explicit setup. Local fake policy/transport tests pass 46 cases and 138 assertions after the exact-head correction; commander-dependent CLI tests and typecheck remain blocked by missing installed dependencies. Initial RED accidentally called real read-only gh commands before transport injection; this is recorded as a failed test-boundary check, not fake evidence. Self-review covers all source files and the exact-head correction. Adaptation status is a candidate for fresh independent source review. CLI and compile runtime checks remain dependency-blocked; host verification remains not-run. No host pass claimed.",
+    "licenseProvenance": {
+      "copyright": "Copyright (c) 2026 Lauren Tan",
+      "license": "MIT",
+      "sourcePath": "LICENSE"
+    },
+    "rationale": "Port ACTION_REQUIRED Code Review Gate classification; preserve local injected transport, structured failures and bounded pagination.",
+    "upstreamCommit": "4ec7ffa173eaa70d3d9467a627baf0954645a353",
+    "upstreamPath": "skills/poteto-mode/scripts/watch-pr/github.ts",
+    "upstreamSha256": "a605b8531468dbe4c07b93663c0993a9c11dc7e9179adde970f5c740396451d9",
+    "verification": {
+      "chatgpt": {
+        "evidence": [],
+        "status": "not-run"
+      },
+      "codex": {
+        "evidence": [],
+        "status": "not-run"
+      }
+    }
+  },
+  {
+    "adaptationStatus": "adapted-reviewed",
     "dependencies": [
       "skills/poteto-mode/scripts/bootstrap.ts",
       "skills/poteto-mode/scripts/package.json",
       "skills/poteto-mode/scripts/bun.lock",
       "skills/poteto-mode/SKILL.md"
     ],
-    "licenseProvenance": {
-      "license": "MIT",
-      "copyright": "Copyright (c) 2026 Lauren Tan",
-      "sourcePath": "LICENSE"
-    },
-    "adaptationStatus": "adapted-reviewed",
-    "verification": {
-      "chatgpt": {
-        "status": "not-run",
-        "evidence": []
-      },
-      "codex": {
-        "status": "not-run",
-        "evidence": []
-      }
-    }
-  },
-  {
-    "upstreamPath": "skills/poteto-mode/scripts/watch-pr/policy.test.ts",
-    "upstreamCommit": "df581122cde17e6e27686b5a448bde23e4ad4318",
-    "upstreamSha256": "a9fedb25feefd1f57ef6a662f80c99018690170a3a8070773a08eaf694d1d3d9",
     "destinationPath": "skills/poteto-mode/scripts/watch-pr/policy.test.ts",
     "disposition": "runtime",
-    "rationale": "Preserve the complete read-only watcher, exported functions, CLI options, independent PR classification, tier-major stack policy and verified queue ordering. Require explicit repository and full 40-character expected head at the CLI and exported snapshot/runner boundaries before reads or successful verdicts, with full observed head equality and snapshot head revalidation, finite snapshot and pagination budgets, terminal authentication/transport failures and injected transport. The source has no merge, comment or push operation, so duplicate-action and unauthorized-merge checks assert that repeated reads emit no mutation commands. Wrapper runtime auto-install is disabled and bootstrap requires explicit setup. Local fake policy/transport tests pass 46 cases and 138 assertions after the exact-head correction; commander-dependent CLI tests and typecheck remain blocked by missing installed dependencies. Initial RED accidentally called real read-only gh commands before transport injection; this is recorded as a failed test-boundary check, not fake evidence. Self-review covers all source files and the exact-head correction. Adaptation status is a candidate for fresh independent source review. CLI and compile runtime checks remain dependency-blocked; host verification remains not-run. No host pass claimed. Candidate remediation gives the recoverable unknown-mergeability control a 61-second budget so its clean retry at second 60 occurs before expiry. The forever-unknown control retains its 60-second deadline and timeout assertion. The added port-authored deadline.test.ts provides separate focused regression coverage and has no canonical upstream inventory row. This candidate delta describes source changes and controlled source validation only. Historical verification records remain unchanged. It does not qualify installed hosts or the current freeze. The changed operative bytes require a new frozen revision and fresh release qualification.",
+    "licenseProvenance": {
+      "copyright": "Copyright (c) 2026 Lauren Tan",
+      "license": "MIT",
+      "sourcePath": "LICENSE"
+    },
+    "rationale": "Retain local complete-thread reader call expectations; upstream pagination-interface replacement is not adopted.",
+    "upstreamCommit": "4ec7ffa173eaa70d3d9467a627baf0954645a353",
+    "upstreamPath": "skills/poteto-mode/scripts/watch-pr/policy.test.ts",
+    "upstreamSha256": "146acabcfee9b6fa3342358eb0a9504aa65fd081bbc15b10adf9c1c5485067d2",
+    "verification": {
+      "chatgpt": {
+        "evidence": [],
+        "status": "not-run"
+      },
+      "codex": {
+        "evidence": [],
+        "status": "not-run"
+      }
+    }
+  },
+  {
+    "adaptationStatus": "adapted-reviewed",
     "dependencies": [
       "skills/poteto-mode/scripts/bootstrap.ts",
       "skills/poteto-mode/scripts/package.json",
       "skills/poteto-mode/scripts/bun.lock",
       "skills/poteto-mode/SKILL.md"
     ],
-    "licenseProvenance": {
-      "license": "MIT",
-      "copyright": "Copyright (c) 2026 Lauren Tan",
-      "sourcePath": "LICENSE"
-    },
-    "adaptationStatus": "adapted-reviewed",
-    "verification": {
-      "chatgpt": {
-        "status": "not-run",
-        "evidence": []
-      },
-      "codex": {
-        "status": "not-run",
-        "evidence": []
-      }
-    }
-  },
-  {
-    "upstreamPath": "skills/poteto-mode/scripts/watch-pr/policy.ts",
-    "upstreamCommit": "df581122cde17e6e27686b5a448bde23e4ad4318",
-    "upstreamSha256": "68d240505852cf23c9b2dea463342e9e61243f486b3cc86c735d140f9ee7be49",
     "destinationPath": "skills/poteto-mode/scripts/watch-pr/policy.ts",
     "disposition": "runtime",
-    "rationale": "Preserve the complete read-only watcher, exported functions, CLI options, independent PR classification, tier-major stack policy and verified queue ordering. Require explicit repository and full 40-character expected head at the CLI and exported snapshot/runner boundaries before reads or successful verdicts, with full observed head equality and snapshot head revalidation, finite snapshot and pagination budgets, terminal authentication/transport failures and injected transport. The source has no merge, comment or push operation, so duplicate-action and unauthorized-merge checks assert that repeated reads emit no mutation commands. Wrapper runtime auto-install is disabled and bootstrap requires explicit setup. Local fake policy/transport tests pass 46 cases and 138 assertions after the exact-head correction; commander-dependent CLI tests and typecheck remain blocked by missing installed dependencies. Initial RED accidentally called real read-only gh commands before transport injection; this is recorded as a failed test-boundary check, not fake evidence. Self-review covers all source files and the exact-head correction. Adaptation status is a candidate for fresh independent source review. CLI and compile runtime checks remain dependency-blocked; host verification remains not-run. No host pass claimed. Candidate remediation clamps retry delays and sleeps to the remaining finite timeout, checks deadlines before further polling work, and carries a timeout callback through sleep and continue outcomes. Queue timeouts count every unresolved member and identify the first unresolved frontier, including partial sweeps and frontier advances. Timeout zero retains unlimited-time behavior and poll-budget checks remain independent. In-flight queries are not cancelled by this deadline check. This candidate delta describes source changes and controlled source validation only. Historical verification records remain unchanged. It does not qualify installed hosts or the current freeze. The changed operative bytes require a new frozen revision and fresh release qualification.",
+    "licenseProvenance": {
+      "copyright": "Copyright (c) 2026 Lauren Tan",
+      "license": "MIT",
+      "sourcePath": "LICENSE"
+    },
+    "rationale": "Retain complete-thread readSnapshot integration with local reader and fail-closed behavior.",
+    "upstreamCommit": "4ec7ffa173eaa70d3d9467a627baf0954645a353",
+    "upstreamPath": "skills/poteto-mode/scripts/watch-pr/policy.ts",
+    "upstreamSha256": "f2a3e31223d05edc05e5473cc3f8f3cb9bd20c202c30c6abe7f21f0f7aee8fbb",
+    "verification": {
+      "chatgpt": {
+        "evidence": [],
+        "status": "not-run"
+      },
+      "codex": {
+        "evidence": [],
+        "status": "not-run"
+      }
+    }
+  },
+  {
+    "adaptationStatus": "adapted-reviewed",
     "dependencies": [
       "skills/poteto-mode/scripts/bootstrap.ts",
       "skills/poteto-mode/scripts/package.json",
       "skills/poteto-mode/scripts/bun.lock",
       "skills/poteto-mode/SKILL.md"
     ],
-    "licenseProvenance": {
-      "license": "MIT",
-      "copyright": "Copyright (c) 2026 Lauren Tan",
-      "sourcePath": "LICENSE"
-    },
-    "adaptationStatus": "adapted-reviewed",
-    "verification": {
-      "chatgpt": {
-        "status": "not-run",
-        "evidence": []
-      },
-      "codex": {
-        "status": "not-run",
-        "evidence": []
-      }
-    }
-  },
-  {
-    "upstreamPath": "skills/poteto-mode/scripts/watch-pr/render.ts",
-    "upstreamCommit": "df581122cde17e6e27686b5a448bde23e4ad4318",
-    "upstreamSha256": "2b709e86628d5b8fdb61f860e60ababc342b0626c67576305442cf548283a604",
     "destinationPath": "skills/poteto-mode/scripts/watch-pr/render.ts",
     "disposition": "runtime",
+    "licenseProvenance": {
+      "copyright": "Copyright (c) 2026 Lauren Tan",
+      "license": "MIT",
+      "sourcePath": "LICENSE"
+    },
     "rationale": "Preserve watcher presentation while rendering unknown mergeability and forge-blocked merge restrictions explicitly, without a positive Merge cell or an invented individual failed check.",
+    "upstreamCommit": "4ec7ffa173eaa70d3d9467a627baf0954645a353",
+    "upstreamPath": "skills/poteto-mode/scripts/watch-pr/render.ts",
+    "upstreamSha256": "2b709e86628d5b8fdb61f860e60ababc342b0626c67576305442cf548283a604",
+    "verification": {
+      "chatgpt": {
+        "evidence": [],
+        "status": "not-run"
+      },
+      "codex": {
+        "evidence": [],
+        "status": "not-run"
+      }
+    }
+  },
+  {
+    "adaptationStatus": "unchanged-reviewed",
     "dependencies": [
       "skills/poteto-mode/scripts/bootstrap.ts",
       "skills/poteto-mode/scripts/package.json",
       "skills/poteto-mode/scripts/bun.lock",
       "skills/poteto-mode/SKILL.md"
     ],
-    "licenseProvenance": {
-      "license": "MIT",
-      "copyright": "Copyright (c) 2026 Lauren Tan",
-      "sourcePath": "LICENSE"
-    },
-    "adaptationStatus": "adapted-reviewed",
-    "verification": {
-      "chatgpt": {
-        "status": "not-run",
-        "evidence": []
-      },
-      "codex": {
-        "status": "not-run",
-        "evidence": []
-      }
-    }
-  },
-  {
-    "upstreamPath": "skills/poteto-mode/scripts/watch-pr/tsconfig.json",
-    "upstreamCommit": "df581122cde17e6e27686b5a448bde23e4ad4318",
-    "upstreamSha256": "1ecccc72320b086c63ce3f73c959896fd747363e63553b3b1136296ea4069e45",
     "destinationPath": "skills/poteto-mode/scripts/watch-pr/tsconfig.json",
     "disposition": "runtime",
+    "licenseProvenance": {
+      "copyright": "Copyright (c) 2026 Lauren Tan",
+      "license": "MIT",
+      "sourcePath": "LICENSE"
+    },
     "rationale": "Preserve the complete read-only watcher, exported functions, CLI options, independent PR classification, tier-major stack policy and verified queue ordering. Require explicit repository and full 40-character expected head at the CLI and exported snapshot/runner boundaries before reads or successful verdicts, with full observed head equality and snapshot head revalidation, finite snapshot and pagination budgets, terminal authentication/transport failures and injected transport. The source has no merge, comment or push operation, so duplicate-action and unauthorized-merge checks assert that repeated reads emit no mutation commands. Wrapper runtime auto-install is disabled and bootstrap requires explicit setup. Local fake policy/transport tests pass 46 cases and 138 assertions after the exact-head correction; commander-dependent CLI tests and typecheck remain blocked by missing installed dependencies. Initial RED accidentally called real read-only gh commands before transport injection; this is recorded as a failed test-boundary check, not fake evidence. Self-review covers all source files and the exact-head correction. Adaptation status is a candidate for fresh independent source review. CLI and compile runtime checks remain dependency-blocked; host verification remains not-run. No host pass claimed.",
+    "upstreamCommit": "4ec7ffa173eaa70d3d9467a627baf0954645a353",
+    "upstreamPath": "skills/poteto-mode/scripts/watch-pr/tsconfig.json",
+    "upstreamSha256": "1ecccc72320b086c63ce3f73c959896fd747363e63553b3b1136296ea4069e45",
+    "verification": {
+      "chatgpt": {
+        "evidence": [],
+        "status": "not-run"
+      },
+      "codex": {
+        "evidence": [],
+        "status": "not-run"
+      }
+    }
+  },
+  {
+    "adaptationStatus": "unchanged-reviewed",
     "dependencies": [
       "skills/poteto-mode/scripts/bootstrap.ts",
       "skills/poteto-mode/scripts/package.json",
       "skills/poteto-mode/scripts/bun.lock",
       "skills/poteto-mode/SKILL.md"
     ],
-    "licenseProvenance": {
-      "license": "MIT",
-      "copyright": "Copyright (c) 2026 Lauren Tan",
-      "sourcePath": "LICENSE"
-    },
-    "adaptationStatus": "unchanged-reviewed",
-    "verification": {
-      "chatgpt": {
-        "status": "not-run",
-        "evidence": []
-      },
-      "codex": {
-        "status": "not-run",
-        "evidence": []
-      }
-    }
-  },
-  {
-    "upstreamPath": "skills/poteto-mode/scripts/watch-pr/types.compile.ts",
-    "upstreamCommit": "df581122cde17e6e27686b5a448bde23e4ad4318",
-    "upstreamSha256": "621af4c9a664fbf699a9737efccdc248abb416df8819c9dc5f824beae2b9b1d6",
     "destinationPath": "skills/poteto-mode/scripts/watch-pr/types.compile.ts",
     "disposition": "runtime",
+    "licenseProvenance": {
+      "copyright": "Copyright (c) 2026 Lauren Tan",
+      "license": "MIT",
+      "sourcePath": "LICENSE"
+    },
     "rationale": "Preserve the complete read-only watcher, exported functions, CLI options, independent PR classification, tier-major stack policy and verified queue ordering. Require explicit repository and full 40-character expected head at the CLI and exported snapshot/runner boundaries before reads or successful verdicts, with full observed head equality and snapshot head revalidation, finite snapshot and pagination budgets, terminal authentication/transport failures and injected transport. The source has no merge, comment or push operation, so duplicate-action and unauthorized-merge checks assert that repeated reads emit no mutation commands. Wrapper runtime auto-install is disabled and bootstrap requires explicit setup. Local fake policy/transport tests pass 46 cases and 138 assertions after the exact-head correction; commander-dependent CLI tests and typecheck remain blocked by missing installed dependencies. Initial RED accidentally called real read-only gh commands before transport injection; this is recorded as a failed test-boundary check, not fake evidence. Self-review covers all source files and the exact-head correction. Adaptation status is a candidate for fresh independent source review. CLI and compile runtime checks remain dependency-blocked; host verification remains not-run. No host pass claimed.",
+    "upstreamCommit": "4ec7ffa173eaa70d3d9467a627baf0954645a353",
+    "upstreamPath": "skills/poteto-mode/scripts/watch-pr/types.compile.ts",
+    "upstreamSha256": "621af4c9a664fbf699a9737efccdc248abb416df8819c9dc5f824beae2b9b1d6",
+    "verification": {
+      "chatgpt": {
+        "evidence": [],
+        "status": "not-run"
+      },
+      "codex": {
+        "evidence": [],
+        "status": "not-run"
+      }
+    }
+  },
+  {
+    "adaptationStatus": "adapted-reviewed",
     "dependencies": [
       "skills/poteto-mode/scripts/bootstrap.ts",
       "skills/poteto-mode/scripts/package.json",
       "skills/poteto-mode/scripts/bun.lock",
       "skills/poteto-mode/SKILL.md"
     ],
-    "licenseProvenance": {
-      "license": "MIT",
-      "copyright": "Copyright (c) 2026 Lauren Tan",
-      "sourcePath": "LICENSE"
-    },
-    "adaptationStatus": "unchanged-reviewed",
-    "verification": {
-      "chatgpt": {
-        "status": "not-run",
-        "evidence": []
-      },
-      "codex": {
-        "status": "not-run",
-        "evidence": []
-      }
-    }
-  },
-  {
-    "upstreamPath": "skills/poteto-mode/scripts/watch-pr/types.ts",
-    "upstreamCommit": "df581122cde17e6e27686b5a448bde23e4ad4318",
-    "upstreamSha256": "64ba6221e3bfe61bbb292337d199cdec6309455477280efb060203dba34e0e91",
     "destinationPath": "skills/poteto-mode/scripts/watch-pr/types.ts",
     "disposition": "runtime",
-    "rationale": "Preserve the complete read-only watcher, exported functions, CLI options, independent PR classification, tier-major stack policy and verified queue ordering. Require explicit repository and full 40-character expected head at the CLI and exported snapshot/runner boundaries before reads or successful verdicts, with full observed head equality and snapshot head revalidation, finite snapshot and pagination budgets, terminal authentication/transport failures and injected transport. The source has no merge, comment or push operation, so duplicate-action and unauthorized-merge checks assert that repeated reads emit no mutation commands. Wrapper runtime auto-install is disabled and bootstrap requires explicit setup. Local fake policy/transport tests pass 46 cases and 138 assertions after the exact-head correction; commander-dependent CLI tests and typecheck remain blocked by missing installed dependencies. Initial RED accidentally called real read-only gh commands before transport injection; this is recorded as a failed test-boundary check, not fake evidence. Self-review covers all source files and the exact-head correction. Adaptation status is a candidate for fresh independent source review. CLI and compile runtime checks remain dependency-blocked; host verification remains not-run. No host pass claimed.",
-    "dependencies": [
-      "skills/poteto-mode/scripts/bootstrap.ts",
-      "skills/poteto-mode/scripts/package.json",
-      "skills/poteto-mode/scripts/bun.lock",
-      "skills/poteto-mode/SKILL.md"
-    ],
     "licenseProvenance": {
-      "license": "MIT",
       "copyright": "Copyright (c) 2026 Lauren Tan",
+      "license": "MIT",
       "sourcePath": "LICENSE"
     },
-    "adaptationStatus": "adapted-reviewed",
+    "rationale": "Retain current GitHubReader interface; pagination remains encapsulated in validated local transport.",
+    "upstreamCommit": "4ec7ffa173eaa70d3d9467a627baf0954645a353",
+    "upstreamPath": "skills/poteto-mode/scripts/watch-pr/types.ts",
+    "upstreamSha256": "0cac435294dc85ce1ba755e8e67f6c5ab163dfa252f2722d6e3a2d68c58fec59",
     "verification": {
       "chatgpt": {
-        "status": "not-run",
-        "evidence": []
+        "evidence": [],
+        "status": "not-run"
       },
       "codex": {
-        "status": "not-run",
-        "evidence": []
+        "evidence": [],
+        "status": "not-run"
       }
     }
   },
   {
-    "upstreamPath": "skills/poteto-mode/scripts/watch-pr/watch-pr",
-    "upstreamCommit": "df581122cde17e6e27686b5a448bde23e4ad4318",
-    "upstreamSha256": "d955603be6cc0e8b8ffcec722f635192b2261410b1f2929abea94480e47eb5d4",
-    "destinationPath": "skills/poteto-mode/scripts/watch-pr/watch-pr",
-    "disposition": "runtime",
-    "rationale": "Preserve the complete read-only watcher, exported functions, CLI options, independent PR classification, tier-major stack policy and verified queue ordering. Require explicit repository and full 40-character expected head at the CLI and exported snapshot/runner boundaries before reads or successful verdicts, with full observed head equality and snapshot head revalidation, finite snapshot and pagination budgets, terminal authentication/transport failures and injected transport. The source has no merge, comment or push operation, so duplicate-action and unauthorized-merge checks assert that repeated reads emit no mutation commands. Wrapper runtime auto-install is disabled and bootstrap requires explicit setup. Local fake policy/transport tests pass 46 cases and 138 assertions after the exact-head correction; commander-dependent CLI tests and typecheck remain blocked by missing installed dependencies. Initial RED accidentally called real read-only gh commands before transport injection; this is recorded as a failed test-boundary check, not fake evidence. Self-review covers all source files and the exact-head correction. Adaptation status is a candidate for fresh independent source review. CLI and compile runtime checks remain dependency-blocked; host verification remains not-run. No host pass claimed.",
+    "adaptationStatus": "adapted-reviewed",
     "dependencies": [
       "skills/poteto-mode/scripts/bootstrap.ts",
       "skills/poteto-mode/scripts/package.json",
       "skills/poteto-mode/scripts/bun.lock",
       "skills/poteto-mode/SKILL.md"
     ],
+    "destinationPath": "skills/poteto-mode/scripts/watch-pr/watch-pr",
+    "disposition": "runtime",
     "licenseProvenance": {
-      "license": "MIT",
       "copyright": "Copyright (c) 2026 Lauren Tan",
+      "license": "MIT",
       "sourcePath": "LICENSE"
     },
-    "adaptationStatus": "adapted-reviewed",
+    "rationale": "Preserve the complete read-only watcher, exported functions, CLI options, independent PR classification, tier-major stack policy and verified queue ordering. Require explicit repository and full 40-character expected head at the CLI and exported snapshot/runner boundaries before reads or successful verdicts, with full observed head equality and snapshot head revalidation, finite snapshot and pagination budgets, terminal authentication/transport failures and injected transport. The source has no merge, comment or push operation, so duplicate-action and unauthorized-merge checks assert that repeated reads emit no mutation commands. Wrapper runtime auto-install is disabled and bootstrap requires explicit setup. Local fake policy/transport tests pass 46 cases and 138 assertions after the exact-head correction; commander-dependent CLI tests and typecheck remain blocked by missing installed dependencies. Initial RED accidentally called real read-only gh commands before transport injection; this is recorded as a failed test-boundary check, not fake evidence. Self-review covers all source files and the exact-head correction. Adaptation status is a candidate for fresh independent source review. CLI and compile runtime checks remain dependency-blocked; host verification remains not-run. No host pass claimed.",
+    "upstreamCommit": "4ec7ffa173eaa70d3d9467a627baf0954645a353",
+    "upstreamPath": "skills/poteto-mode/scripts/watch-pr/watch-pr",
+    "upstreamSha256": "d955603be6cc0e8b8ffcec722f635192b2261410b1f2929abea94480e47eb5d4",
     "verification": {
       "chatgpt": {
-        "status": "not-run",
-        "evidence": []
+        "evidence": [],
+        "status": "not-run"
       },
       "codex": {
-        "status": "not-run",
-        "evidence": []
+        "evidence": [],
+        "status": "not-run"
       }
     }
   }

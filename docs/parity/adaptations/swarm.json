@@ -1,30 +1,30 @@
 [
   {
-    "upstreamPath": "skills/swarm/SKILL.md",
-    "upstreamCommit": "df581122cde17e6e27686b5a448bde23e4ad4318",
-    "upstreamSha256": "bdcee4168e22428036e93d7cdeec3f391dbc4132f927f6db2540328c22db0273",
-    "destinationPath": "skills/swarm/SKILL.md",
-    "disposition": "runtime",
-    "rationale": "Preserve partition/race declaration, exact revisions and measurement methods, one evidence retry, dropout and coverage reporting. Bind worker dispatch, models, isolation, cancellation and persistence to observed host capabilities and authorization; sequential fallback remains reduced capability. Candidate remediation replaces an execution-style evidence retry with one bounded metadata-only reporting correction. It preserves the same assignment owner and immutable output while retaining separate coordinator-owned raw returns. A second miss leaves a gap. Substantive retries require fresh linked assignments and distinct owners and paths. Bootstrap-only identity observation precedes immutable dispatch. This candidate delta describes source changes and controlled source validation only. Historical verification records remain unchanged. It does not qualify installed hosts or the current freeze. The changed operative bytes require a new frozen revision and fresh release qualification.",
+    "adaptationStatus": "adapted-reviewed",
     "dependencies": [
       "references/host-capabilities.md",
       "references/model-roles.md",
       "references/orchestration-contract.md"
     ],
+    "destinationPath": "skills/swarm/SKILL.md",
+    "disposition": "runtime",
     "licenseProvenance": {
-      "license": "MIT",
       "copyright": "Copyright (c) 2026 Lauren Tan",
+      "license": "MIT",
       "sourcePath": "LICENSE"
     },
-    "adaptationStatus": "adapted-reviewed",
+    "rationale": "Reviewed upstream editorial update; retain portable identity for README and host capability boundaries for adapted skills.",
+    "upstreamCommit": "4ec7ffa173eaa70d3d9467a627baf0954645a353",
+    "upstreamPath": "skills/swarm/SKILL.md",
+    "upstreamSha256": "031657cb81e490f9aed5c75d6ff2a4fda35ccafbaf72be604e59481cc4080cdc",
     "verification": {
       "chatgpt": {
-        "status": "not-run",
-        "evidence": []
+        "evidence": [],
+        "status": "not-run"
       },
       "codex": {
-        "status": "not-run",
-        "evidence": []
+        "evidence": [],
+        "status": "not-run"
       }
     }
   }

@@ -90,7 +90,7 @@ Current host statuses and release evidence: [current parity inventory](../parity
 
 Destination: [skills/no-comments/SKILL.md](../../skills/no-comments/SKILL.md).
 
-Upstream commit: `df581122cde17e6e27686b5a448bde23e4ad4318`. SHA-256: `5c5b0882297d704c3a9720c52b7a793c68b013eaf717989f0945624efdfe2b05`.
+Upstream commit: `4ec7ffa173eaa70d3d9467a627baf0954645a353`. SHA-256: `078ecfe224eafbb017f6476870612838bf6dbe38c0b697e12f0c887d0313f17e`.
 
 Disposition: `runtime`. Aggregate adaptation status: `adapted-reviewed`.
 
@@ -98,6 +98,6 @@ Disposition: `runtime`. Aggregate adaptation status: `adapted-reviewed`.
 
 Destination: [references/agent-prompts/comment-sicko.md](../../references/agent-prompts/comment-sicko.md).
 
-Upstream commit: `df581122cde17e6e27686b5a448bde23e4ad4318`. SHA-256: `c0fd0383008da45fc78cfac17b9007d62c42f87ad1c8d5c2fb658b1fd01f7c82`.
+Upstream commit: `4ec7ffa173eaa70d3d9467a627baf0954645a353`. SHA-256: `3e239e40b7b4b9beb2cf7f3ccc57f2388eb8b69bd1ba8ae888ef87ef6e0e2116`.
 
 Disposition: `relocated`. Aggregate adaptation status: `adapted-reviewed`.

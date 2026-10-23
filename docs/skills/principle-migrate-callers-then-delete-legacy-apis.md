@@ -82,6 +82,6 @@ Current host statuses and release evidence: [current parity inventory](../parity
 
 Destination: [skills/principle-migrate-callers-then-delete-legacy-apis/SKILL.md](../../skills/principle-migrate-callers-then-delete-legacy-apis/SKILL.md).
 
-Upstream commit: `df581122cde17e6e27686b5a448bde23e4ad4318`. SHA-256: `09978915a4a11990cf0a9a02d9c08cc59e0b7a04c5c24b83aa560fbe4146f75b`.
+Upstream commit: `4ec7ffa173eaa70d3d9467a627baf0954645a353`. SHA-256: `580ad9bb1a0994ecb924321ba49efc38a2f85c64e22c76fb133f57a78272a2e6`.
 
 Disposition: `runtime`. Aggregate adaptation status: `adapted-reviewed`.

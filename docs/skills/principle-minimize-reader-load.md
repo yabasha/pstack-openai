@@ -82,6 +82,6 @@ Current host statuses and release evidence: [current parity inventory](../parity
 
 Destination: [skills/principle-minimize-reader-load/SKILL.md](../../skills/principle-minimize-reader-load/SKILL.md).
 
-Upstream commit: `df581122cde17e6e27686b5a448bde23e4ad4318`. SHA-256: `42551c5dc74cd578163c148da552db3ff67d29b78600ef216bfd311fb828fe69`.
+Upstream commit: `4ec7ffa173eaa70d3d9467a627baf0954645a353`. SHA-256: `1ea2b7fef2391cae5844c4efdbd59031f775e8a52d06b7495d707229a200dcca`.
 
 Disposition: `runtime`. Aggregate adaptation status: `adapted-reviewed`.

@@ -1,11 +1,6 @@
 [
   {
-    "upstreamPath": "skills/recall/SKILL.md",
-    "upstreamCommit": "df581122cde17e6e27686b5a448bde23e4ad4318",
-    "upstreamSha256": "d265b0e5b6dc5b89c0407f3387d24462c988e1990a37d5359735137908128c5a",
-    "destinationPath": "skills/recall/SKILL.md",
-    "disposition": "runtime",
-    "rationale": "Preserve routing, scope lock, complete-capsule mining shortcut, independent shared-record sweep and live verification, per-chat findings and capped brief. Replace source-host transcript assumptions and worker/model defaults with observed authorized history and execution bindings. Sequential passes remain reduced capability; inaccessible state remains blocked.",
+    "adaptationStatus": "adapted-reviewed",
     "dependencies": [
       "references/host-capabilities.md",
       "references/model-roles.md",
@@ -16,20 +11,25 @@
       "skills/poteto-mode/playbooks/session-pickup.md",
       "skills/automate-me/SKILL.md"
     ],
+    "destinationPath": "skills/recall/SKILL.md",
+    "disposition": "runtime",
     "licenseProvenance": {
-      "license": "MIT",
       "copyright": "Copyright (c) 2026 Lauren Tan",
+      "license": "MIT",
       "sourcePath": "LICENSE"
     },
-    "adaptationStatus": "adapted-reviewed",
+    "rationale": "Retain reviewed host capability, assignment, ownership and model-selection adaptations; upstream changes are editorial or introduce Cursor-specific delegation controls.",
+    "upstreamCommit": "4ec7ffa173eaa70d3d9467a627baf0954645a353",
+    "upstreamPath": "skills/recall/SKILL.md",
+    "upstreamSha256": "b0ceb996259c3404532f61e4b010df4e3d80d7ddbed85b3c302895723eb62a89",
     "verification": {
       "chatgpt": {
-        "status": "not-run",
-        "evidence": []
+        "evidence": [],
+        "status": "not-run"
       },
       "codex": {
-        "status": "not-run",
-        "evidence": []
+        "evidence": [],
+        "status": "not-run"
       }
     }
   }

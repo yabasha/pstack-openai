@@ -1,11 +1,6 @@
 [
   {
-    "upstreamPath": "skills/arena/SKILL.md",
-    "upstreamCommit": "df581122cde17e6e27686b5a448bde23e4ad4318",
-    "upstreamSha256": "6e17736b5228b661569c3af054f8302c55cf9bf1649447652d53705cce38bed6",
-    "destinationPath": "skills/arena/SKILL.md",
-    "disposition": "runtime",
-    "rationale": "Preserve six arena phases, withheld 3-6 criterion rubric, isolated candidates and rationales, delayed fresh readonly cross-judge, parent selection, hand-adapted grafts and verification. Replace source-host runner defaults, worker flags and paths with observed authorized capabilities; record dropouts and incomplete one-survivor competition. Sequential alternatives remain reduced capability. Candidate remediation requires inspected context isolation before blind dispatch, including an exposed fork_turns none setting where supported. Inherited rubric exposure remains disqualifying. Exposed attempts are quarantined and replacements receive fresh immutable assignments and output paths. This candidate delta describes source changes and controlled source validation only. Historical verification records remain unchanged. It does not qualify installed hosts or the current freeze. The changed operative bytes require a new frozen revision and fresh release qualification.",
+    "adaptationStatus": "adapted-reviewed",
     "dependencies": [
       "references/host-capabilities.md",
       "references/model-roles.md",
@@ -17,20 +12,25 @@
       "skills/principle-prove-it-works/SKILL.md",
       "skills/unslop/SKILL.md"
     ],
+    "destinationPath": "skills/arena/SKILL.md",
+    "disposition": "runtime",
     "licenseProvenance": {
-      "license": "MIT",
       "copyright": "Copyright (c) 2026 Lauren Tan",
+      "license": "MIT",
       "sourcePath": "LICENSE"
     },
-    "adaptationStatus": "adapted-reviewed",
+    "rationale": "Retain reviewed host capability, assignment, ownership and model-selection adaptations; upstream changes are editorial or introduce Cursor-specific delegation controls.",
+    "upstreamCommit": "4ec7ffa173eaa70d3d9467a627baf0954645a353",
+    "upstreamPath": "skills/arena/SKILL.md",
+    "upstreamSha256": "ed72f6c132b1ce3974d949581d0adc5dade424fe20793ac3b4c4fae22ecb9354",
     "verification": {
       "chatgpt": {
-        "status": "not-run",
-        "evidence": []
+        "evidence": [],
+        "status": "not-run"
       },
       "codex": {
-        "status": "not-run",
-        "evidence": []
+        "evidence": [],
+        "status": "not-run"
       }
     }
   }

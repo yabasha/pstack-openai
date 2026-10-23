@@ -1,0 +1,239 @@
+{
+  "acceptanceReady": false,
+  "candidate": "99743e9c151c8537cbbf1f98bb38f34ef3368453",
+  "checks": {
+    "affectedHostCases": {
+      "chatgpt": "not-run",
+      "codex": "not-run"
+    },
+    "helperRegression": "not-run",
+    "structural": "not-run"
+  },
+  "invalidatedSources": [
+    "README.md",
+    "agents/poteto-agent.md",
+    "docs/guide/01-setup.md",
+    "docs/guide/02-poteto-mode.md",
+    "docs/guide/03-understand.md",
+    "docs/guide/04-design.md",
+    "docs/guide/05-build-and-clean.md",
+    "docs/guide/06-verify-and-ship.md",
+    "docs/guide/07-overnight.md",
+    "docs/guide/08-principles.md",
+    "docs/guide/09-make-it-yours.md",
+    "docs/guide/10-recipes-and-pitfalls.md",
+    "docs/guide/README.md",
+    "skills/architect/SKILL.md",
+    "skills/architect/references/rationale-template.md",
+    "skills/architect/references/runner-prompt.md",
+    "skills/automate-me/SKILL.md",
+    "skills/benchmark-checklist/SKILL.md",
+    "skills/figure-it-out/SKILL.md",
+    "skills/interrogate/SKILL.md",
+    "skills/interrogate/references/lead-judgment.md",
+    "skills/no-comments/SKILL.md",
+    "skills/poteto-help/SKILL.md",
+    "skills/poteto-mode/SKILL.md",
+    "skills/poteto-mode/playbooks/authoring-a-skill.md",
+    "skills/poteto-mode/playbooks/autonomous-run.md",
+    "skills/poteto-mode/playbooks/autopilot-full.md",
+    "skills/poteto-mode/playbooks/autopilot-stack.md",
+    "skills/poteto-mode/playbooks/babysit.md",
+    "skills/poteto-mode/playbooks/bug-fix.md",
+    "skills/poteto-mode/playbooks/feature.md",
+    "skills/poteto-mode/playbooks/hillclimb.md",
+    "skills/poteto-mode/playbooks/investigation.md",
+    "skills/poteto-mode/playbooks/multi-phase-plan.md",
+    "skills/poteto-mode/playbooks/opening-a-pr.md",
+    "skills/poteto-mode/playbooks/orchestrate.md",
+    "skills/poteto-mode/playbooks/pause-safely.md",
+    "skills/poteto-mode/playbooks/perf-issue.md",
+    "skills/poteto-mode/playbooks/prototype.md",
+    "skills/poteto-mode/playbooks/refactoring.md",
+    "skills/poteto-mode/playbooks/runtime-forensics.md",
+    "skills/poteto-mode/playbooks/session-pickup.md",
+    "skills/poteto-mode/playbooks/shipping.md",
+    "skills/poteto-mode/playbooks/trace-forensics.md",
+    "skills/poteto-mode/playbooks/visual-parity.md",
+    "skills/poteto-mode/playbooks/worktree-cleanup.md",
+    "skills/poteto-mode/references/bugbot-triage.md",
+    "skills/poteto-mode/scripts/check-plan.mjs",
+    "skills/poteto-mode/scripts/orch/orch.test.ts",
+    "skills/poteto-mode/scripts/orch/orch.ts",
+    "skills/poteto-mode/scripts/orch/store.ts",
+    "skills/poteto-mode/scripts/watch-pr/cli.test.ts",
+    "skills/poteto-mode/scripts/watch-pr/cli.ts",
+    "skills/poteto-mode/scripts/watch-pr/fakes.test-helper.ts",
+    "skills/poteto-mode/scripts/watch-pr/github.test.ts",
+    "skills/poteto-mode/scripts/watch-pr/github.ts",
+    "skills/poteto-mode/scripts/watch-pr/policy.test.ts",
+    "skills/poteto-mode/scripts/watch-pr/policy.ts",
+    "skills/poteto-mode/scripts/watch-pr/render.ts",
+    "skills/poteto-mode/scripts/watch-pr/tsconfig.json",
+    "skills/poteto-mode/scripts/watch-pr/types.compile.ts",
+    "skills/poteto-mode/scripts/watch-pr/types.ts",
+    "skills/poteto-mode/scripts/watch-pr/watch-pr",
+    "skills/poteto-mode/scripts/worktree-audit.sh",
+    "skills/principle-explain-the-number/SKILL.md",
+    "skills/principle-migrate-callers-then-delete-legacy-apis/SKILL.md",
+    "skills/principle-type-system-discipline/SKILL.md",
+    "skills/recall/SKILL.md",
+    "skills/swarm/SKILL.md",
+    "skills/typescript-best-practices/SKILL.md",
+    "skills/typescript-best-practices/references/patterns.md"
+  ],
+  "packageCommit": "f3c76a83068ac2bcff11deb9ea2900534ea39b72",
+  "releasable": false,
+  "resolutions": {
+    "candidate": "99743e9c151c8537cbbf1f98bb38f34ef3368453",
+    "candidateVersion": "0.2.1",
+    "entries": [
+      {
+        "adaptedSha256": "30f948cf4a5f3fecd88fa09619204bca6d7355c0e87e265e76a3d3f47420c1aa",
+        "contentPath": "resolved/content/README.md",
+        "dependencies": [
+          "UPSTREAM.md",
+          "NOTICE.md",
+          "LICENSE",
+          "docs/skills/README.md",
+          "docs/principles/README.md",
+          "docs/guide/README.md",
+          "docs/compatibility.md",
+          "docs/parity/case-registry.json"
+        ],
+        "dependentCallers": [
+          "skills/poteto-help/SKILL.md"
+        ],
+        "destinationPath": "README.md",
+        "disposition": "retain-adaptation",
+        "newSha256": "98b107ff8b5e0468dfefbd4c9892a09b7b372958c4131bc7e2d7b4d4182aaa75",
+        "oldSha256": "e5c8a28b8fb9dc3a8075030b45ed60681af9628628c59b17554f4f5cb775cd52",
+        "path": "README.md",
+        "rationale": "Reviewed upstream editorial update; retain portable identity for README and host capability boundaries for adapted skills.",
+        "resolution": "required",
+        "reviewedCallers": [
+          "skills/poteto-help/SKILL.md"
+        ],
+        "reviewedSha256": "30f948cf4a5f3fecd88fa09619204bca6d7355c0e87e265e76a3d3f47420c1aa"
+      },
+      {
+        "adaptedSha256": "6e5bdf5670eb34017692e9b6c546f36ac7552e6bb9f3f2f3429164fcc46a9361",
+        "contentPath": "resolved/content/skills/interrogate/references/lead-judgment.md",
+        "dependencies": [],
+        "dependentCallers": [
+          "skills/interrogate/SKILL.md"
+        ],
+        "destinationPath": "skills/interrogate/references/lead-judgment.md",
+        "disposition": "adapt-manually",
+        "newSha256": "355f5195a76bc75a655125292369f2a8231a2b61fabe5188d8f1386060922b87",
+        "oldSha256": "6e5bdf5670eb34017692e9b6c546f36ac7552e6bb9f3f2f3429164fcc46a9361",
+        "path": "skills/interrogate/references/lead-judgment.md",
+        "rationale": "Reviewed upstream editorial update; retain portable identity for README and host capability boundaries for adapted skills.",
+        "resolution": "required",
+        "reviewedCallers": [
+          "skills/interrogate/SKILL.md"
+        ],
+        "reviewedSha256": "355f5195a76bc75a655125292369f2a8231a2b61fabe5188d8f1386060922b87"
+      },
+      {
+        "adaptedSha256": "70153623b1512cfcdb15a0cdda9e0514fe036cf580f588443925635fc57b0ba7",
+        "contentPath": "resolved/content/skills/principle-migrate-callers-then-delete-legacy-apis/SKILL.md",
+        "dependencies": [
+          "references/host-capabilities.md"
+        ],
+        "dependentCallers": [
+          "docs/guide/08-principles.md",
+          "skills/poteto-mode/SKILL.md",
+          "skills/poteto-mode/playbooks/refactoring.md"
+        ],
+        "destinationPath": "skills/principle-migrate-callers-then-delete-legacy-apis/SKILL.md",
+        "disposition": "adapt-manually",
+        "newSha256": "580ad9bb1a0994ecb924321ba49efc38a2f85c64e22c76fb133f57a78272a2e6",
+        "oldSha256": "09978915a4a11990cf0a9a02d9c08cc59e0b7a04c5c24b83aa560fbe4146f75b",
+        "path": "skills/principle-migrate-callers-then-delete-legacy-apis/SKILL.md",
+        "rationale": "Reviewed upstream editorial update; retain portable identity for README and host capability boundaries for adapted skills.",
+        "resolution": "required",
+        "reviewedCallers": [
+          "docs/guide/08-principles.md",
+          "skills/poteto-mode/SKILL.md",
+          "skills/poteto-mode/playbooks/refactoring.md"
+        ],
+        "reviewedSha256": "6c5ee040a496d1961f7b1b0cb35f1dd3973e9847405dd0e099bc8f44cc98afd9"
+      },
+      {
+        "adaptedSha256": "65649b9c31d43b481ab4cf299ce51441b5077d2cfb964369b151df0889b484e9",
+        "contentPath": "resolved/content/skills/principle-type-system-discipline/SKILL.md",
+        "dependencies": [
+          "references/host-capabilities.md",
+          "skills/typescript-best-practices/SKILL.md",
+          "skills/principle-boundary-discipline/SKILL.md",
+          "skills/principle-encode-lessons-in-structure/SKILL.md"
+        ],
+        "dependentCallers": [
+          "docs/guide/08-principles.md",
+          "skills/poteto-mode/SKILL.md",
+          "skills/typescript-best-practices/SKILL.md",
+          "skills/typescript-best-practices/references/patterns.md"
+        ],
+        "destinationPath": "skills/principle-type-system-discipline/SKILL.md",
+        "disposition": "adapt-manually",
+        "newSha256": "5cdaf79785e3c12b2592b9469ee8c272143eb86ab7a18d8382197cea5fd30106",
+        "oldSha256": "2e492cef34bb25a20b9115df61f9ef3a9837e3fda144ffda8079e5f45a1b72e8",
+        "path": "skills/principle-type-system-discipline/SKILL.md",
+        "rationale": "Reviewed upstream editorial update; retain portable identity for README and host capability boundaries for adapted skills.",
+        "resolution": "required",
+        "reviewedCallers": [
+          "docs/guide/08-principles.md",
+          "skills/poteto-mode/SKILL.md",
+          "skills/typescript-best-practices/SKILL.md",
+          "skills/typescript-best-practices/references/patterns.md"
+        ],
+        "reviewedSha256": "b2bdbfba8e1b448a3d3e3eb9036f0e6a1bea757b43c05e6c67bedcc2b11a45ba"
+      },
+      {
+        "adaptedSha256": "d58ab96ae605d49ff034e96416807ba11be9997368e18c1700c00e4bb0fd74f8",
+        "contentPath": "resolved/content/skills/swarm/SKILL.md",
+        "dependencies": [
+          "references/host-capabilities.md",
+          "references/model-roles.md",
+          "references/orchestration-contract.md"
+        ],
+        "dependentCallers": [
+          "docs/guide/04-design.md",
+          "docs/guide/06-verify-and-ship.md",
+          "skills/poteto-help/SKILL.md",
+          "skills/poteto-mode/playbooks/autopilot-full.md",
+          "skills/poteto-mode/playbooks/autopilot-stack.md",
+          "skills/poteto-mode/playbooks/multi-phase-plan.md"
+        ],
+        "destinationPath": "skills/swarm/SKILL.md",
+        "disposition": "adapt-manually",
+        "newSha256": "031657cb81e490f9aed5c75d6ff2a4fda35ccafbaf72be604e59481cc4080cdc",
+        "oldSha256": "c8fe1b28282e7a051a4041a146a11f076e0fd95252bb010106a58209805303d5",
+        "path": "skills/swarm/SKILL.md",
+        "rationale": "Reviewed upstream editorial update; retain portable identity for README and host capability boundaries for adapted skills.",
+        "resolution": "required",
+        "reviewedCallers": [
+          "docs/guide/04-design.md",
+          "docs/guide/06-verify-and-ship.md",
+          "skills/poteto-help/SKILL.md",
+          "skills/poteto-mode/playbooks/autopilot-full.md",
+          "skills/poteto-mode/playbooks/autopilot-stack.md",
+          "skills/poteto-mode/playbooks/multi-phase-plan.md"
+        ],
+        "reviewedSha256": "e47828ec28c6d0e204a03e75dda5a3c9065b84cd3d59cefefe4ccdd32a46e919"
+      }
+    ],
+    "kind": "pstack-upstream-resolutions",
+    "packageCommit": "f3c76a83068ac2bcff11deb9ea2900534ea39b72",
+    "packageMetadata": {
+      "contentPath": "resolved/package-metadata.json",
+      "reviewedSha256": "74bb2083feb664a67b605859cc1e1314836059437243a17f7193718c3bdcdab9"
+    },
+    "reviewSha256": "805f692cc98d8679869f018b79b761706946e70f5313df2a822bdae0ce08bc7e",
+    "schemaVersion": 2
+  },
+  "resolutionsSha256": "0c77f8da29769297c0d7de41e751a053c9838b155c748256deab3b13687933cd",
+  "reviewSha256": "805f692cc98d8679869f018b79b761706946e70f5313df2a822bdae0ce08bc7e",
+  "schemaVersion": 1
+}

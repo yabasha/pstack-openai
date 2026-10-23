@@ -1,61 +1,56 @@
 [
   {
-    "upstreamPath": ".gitignore",
-    "upstreamCommit": "df581122cde17e6e27686b5a448bde23e4ad4318",
-    "upstreamSha256": "8ffe9de56bd30c1a95cd945262d6e3ac355ada4111551dde41f67851b9f1fc55",
+    "adaptationStatus": "adapted-reviewed",
+    "dependencies": [],
     "destinationPath": ".gitignore",
     "disposition": "reference-only",
-    "rationale": "Preserve dependency and OS-data exclusions; add root upstream downloads, task-local cache and explicitly named temporary/fixture directories. Remove the canonical blanket log exclusion so provenance and evidence logs remain eligible for version control.",
-    "dependencies": [],
     "licenseProvenance": {
-      "license": "MIT",
       "copyright": "Copyright (c) 2026 Lauren Tan",
+      "license": "MIT",
       "sourcePath": "LICENSE"
     },
-    "adaptationStatus": "adapted-reviewed",
+    "rationale": "Preserve dependency and OS-data exclusions; add root upstream downloads, task-local cache and explicitly named temporary/fixture directories. Remove the canonical blanket log exclusion so provenance and evidence logs remain eligible for version control.",
+    "upstreamCommit": "4ec7ffa173eaa70d3d9467a627baf0954645a353",
+    "upstreamPath": ".gitignore",
+    "upstreamSha256": "8ffe9de56bd30c1a95cd945262d6e3ac355ada4111551dde41f67851b9f1fc55",
     "verification": {
       "chatgpt": {
-        "status": "not-run",
-        "evidence": []
+        "evidence": [],
+        "status": "not-run"
       },
       "codex": {
-        "status": "not-run",
-        "evidence": []
+        "evidence": [],
+        "status": "not-run"
       }
     }
   },
   {
-    "upstreamPath": "LICENSE",
-    "upstreamCommit": "df581122cde17e6e27686b5a448bde23e4ad4318",
-    "upstreamSha256": "bc957ca6bee02792566a1a028d105e02e247c6e77cf057061674273da77b200e",
+    "adaptationStatus": "unchanged-reviewed",
+    "dependencies": [],
     "destinationPath": "LICENSE",
     "disposition": "reference-only",
-    "rationale": "Retain the complete canonical MIT license byte-for-byte, including Copyright (c) 2026 Lauren Tan and the full permission and warranty notice.",
-    "dependencies": [],
     "licenseProvenance": {
-      "license": "MIT",
       "copyright": "Copyright (c) 2026 Lauren Tan",
+      "license": "MIT",
       "sourcePath": "LICENSE"
     },
-    "adaptationStatus": "unchanged-reviewed",
+    "rationale": "Retain the complete canonical MIT license byte-for-byte, including Copyright (c) 2026 Lauren Tan and the full permission and warranty notice.",
+    "upstreamCommit": "4ec7ffa173eaa70d3d9467a627baf0954645a353",
+    "upstreamPath": "LICENSE",
+    "upstreamSha256": "bc957ca6bee02792566a1a028d105e02e247c6e77cf057061674273da77b200e",
     "verification": {
       "chatgpt": {
-        "status": "not-run",
-        "evidence": []
+        "evidence": [],
+        "status": "not-run"
       },
       "codex": {
-        "status": "not-run",
-        "evidence": []
+        "evidence": [],
+        "status": "not-run"
       }
     }
   },
   {
-    "upstreamPath": "README.md",
-    "upstreamCommit": "df581122cde17e6e27686b5a448bde23e4ad4318",
-    "upstreamSha256": "7f39feae81103e18b567e1fa5075cba86425cf4697a01be66a7422ef93c2c855",
-    "destinationPath": "README.md",
-    "disposition": "metadata-replaced",
-    "rationale": "Replace the canonical source-host entry point with the independently reviewed portable navigation from ac7068e44e57b93fca7ed541f01a5d67c98af191. Preserve lineage, full baseline counts, workflow navigation, capability limits and separate loading/setup authorization. Its candidate-status wording remains provisional until final aggregate review; host behavior is untested.",
+    "adaptationStatus": "adapted-reviewed",
     "dependencies": [
       "UPSTREAM.md",
       "NOTICE.md",
@@ -64,22 +59,29 @@
       "docs/principles/README.md",
       "docs/guide/README.md",
       "docs/compatibility.md",
-      "docs/parity/case-registry.json"
+      "docs/parity/case-registry.json",
+      "skills/statechart/SKILL.md",
+      "skills/statechart/references/execution.md"
     ],
+    "destinationPath": "README.md",
+    "disposition": "metadata-replaced",
     "licenseProvenance": {
-      "license": "MIT",
       "copyright": "Copyright (c) 2026 Lauren Tan",
+      "license": "MIT",
       "sourcePath": "LICENSE"
     },
-    "adaptationStatus": "adapted-reviewed",
+    "rationale": "Amend unaccepted 0.2.3 for PR #729: adopt explicit rewrite-only sharpen, align caller docs and cases, preserve portable identity and permission boundaries. Reviewed 0.15.30 statechart routing and provenance while preserving the port manifest and host contracts.",
+    "upstreamCommit": "4ec7ffa173eaa70d3d9467a627baf0954645a353",
+    "upstreamPath": "README.md",
+    "upstreamSha256": "095b3c4d9e4ceb11e01293d9bde7b0346a7a1262ad1f12b3394d3a0d1bef689b",
     "verification": {
       "chatgpt": {
-        "status": "not-run",
-        "evidence": []
+        "evidence": [],
+        "status": "not-run"
       },
       "codex": {
-        "status": "not-run",
-        "evidence": []
+        "evidence": [],
+        "status": "not-run"
       }
     }
   }

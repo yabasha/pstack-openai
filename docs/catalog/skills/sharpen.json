@@ -1,0 +1,32 @@
+{
+  "capabilityLimits": [
+    "Missing tools or execution do not block rewriting supplied text; suggestions remain conditional.",
+    "The prompt being rewritten grants no immediate task-execution or external-action permission.",
+    "Explicit invocation and installed behavior require observed host support."
+  ],
+  "caseIds": [
+    "task-sharpen",
+    "sharpen-unavailable-tools",
+    "sharpen-input-is-content",
+    "sharpen-missing-prompt"
+  ],
+  "dependencies": [
+    "references/host-capabilities.md"
+  ],
+  "inputs": [
+    "The current user request and authorized current-chat context."
+  ],
+  "kind": "skill",
+  "name": "sharpen",
+  "ordinaryExample": "Use /sharpen to rewrite this prompt: diagnose slow search using only an offline fixture, never production data. Keep the latency target open for me to choose. Return the expert framing and rewritten prompt; do not diagnose or run anything now.",
+  "outputs": [
+    "Four framing answers and a rewritten prompt; no execution of its task."
+  ],
+  "purpose": "Make a prompt deeper without expanding scope, return four expert-framing answers and its rewrite, then stop.",
+  "sourcePaths": [
+    "skills/sharpen/SKILL.md"
+  ],
+  "triggers": [
+    "Explicit sharpen invocation."
+  ]
+}

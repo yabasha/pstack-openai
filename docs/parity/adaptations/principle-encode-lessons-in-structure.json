@@ -1,28 +1,28 @@
 [
   {
-    "upstreamPath": "skills/principle-encode-lessons-in-structure/SKILL.md",
-    "upstreamCommit": "df581122cde17e6e27686b5a448bde23e4ad4318",
-    "upstreamSha256": "77044c83a9ac6df78fc643887ea5f1f11f082adaf14b717c060cdaed03cce863",
-    "destinationPath": "skills/principle-encode-lessons-in-structure/SKILL.md",
-    "disposition": "runtime",
-    "rationale": "Preserve the complete canonical principle and invocation metadata; add session capability discovery, authorization boundaries, durable-note semantics and explicit reduced or blocked limits. No comparison-port content or personal preferences added.",
+    "adaptationStatus": "adapted-reviewed",
     "dependencies": [
       "references/host-capabilities.md"
     ],
+    "destinationPath": "skills/principle-encode-lessons-in-structure/SKILL.md",
+    "disposition": "runtime",
     "licenseProvenance": {
-      "license": "MIT",
       "copyright": "Copyright (c) 2026 Lauren Tan",
+      "license": "MIT",
       "sourcePath": "LICENSE"
     },
-    "adaptationStatus": "adapted-reviewed",
+    "rationale": "Retain complete independently invocable procedure and port limits; upstream centralization into poteto-mode removes meaningful standalone instructions.",
+    "upstreamCommit": "4ec7ffa173eaa70d3d9467a627baf0954645a353",
+    "upstreamPath": "skills/principle-encode-lessons-in-structure/SKILL.md",
+    "upstreamSha256": "228963799189f481827d6f28065f278bc2008ffa37030b1234cbd5814d36b9e9",
     "verification": {
       "chatgpt": {
-        "status": "not-run",
-        "evidence": []
+        "evidence": [],
+        "status": "not-run"
       },
       "codex": {
-        "status": "not-run",
-        "evidence": []
+        "evidence": [],
+        "status": "not-run"
       }
     }
   }

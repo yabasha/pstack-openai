@@ -1,11 +1,6 @@
 [
   {
-    "upstreamPath": "skills/poteto-mode/SKILL.md",
-    "upstreamCommit": "df581122cde17e6e27686b5a448bde23e4ad4318",
-    "upstreamSha256": "31cd02290360ce63564ef22b74d69fc6d90e62181d05a644cbed8f6c47cc9412",
-    "destinationPath": "skills/poteto-mode/SKILL.md",
-    "disposition": "runtime",
-    "rationale": "Preserve canonical metadata, aliases, all 24 principle meanings and ordered 23 playbook routes, fresh-worker and coordinator ownership, full reads, reply and comment contracts. Final caller integration closes the original 26 local-reference deferrals through present reviewed playbooks, Bugbot rubric and decision-trail contracts. Bind actual helper arguments and error boundaries, no-spawn worker exception, exact revisions and artifact checks, tasklist reduction, delivery exceptions and independent review gates. Record helper guarantee limits, dependency setup and snapshot boundaries explicitly. Structural closure establishes no model or host behavior. Candidate remediation separates identity-only bootstrap from substantive dispatch and permits one metadata-only reporting correction as continued inspection of an already-completed attempt. The correction preserves assignment identity, revision, method, owner, path and output bytes, with separate append-only raw returns. A second miss remains failed or blocked. New execution requires a fresh linked assignment with a distinct worker and output path. This candidate delta describes source changes and controlled source validation only. Historical verification records remain unchanged. It does not qualify installed hosts or the current freeze. The changed operative bytes require a new frozen revision and fresh release qualification.",
+    "adaptationStatus": "adapted-reviewed",
     "dependencies": [
       "skills/poteto-mode/playbooks/prototype.md",
       "skills/poteto-mode/playbooks/babysit.md",
@@ -79,20 +74,25 @@
       "skills/principle-never-block-on-the-human/SKILL.md",
       "skills/principle-encode-lessons-in-structure/SKILL.md"
     ],
+    "destinationPath": "skills/poteto-mode/SKILL.md",
+    "disposition": "runtime",
     "licenseProvenance": {
-      "license": "MIT",
       "copyright": "Copyright (c) 2026 Lauren Tan",
+      "license": "MIT",
       "sourcePath": "LICENSE"
     },
-    "adaptationStatus": "adapted-reviewed",
+    "rationale": "Review cumulative canonical change against accepted 0.2.2; retain portable host, model, permission and evidence contracts.",
+    "upstreamCommit": "4ec7ffa173eaa70d3d9467a627baf0954645a353",
+    "upstreamPath": "skills/poteto-mode/SKILL.md",
+    "upstreamSha256": "2755f102e7a6d0496b429d1031a22fb353e1f3d523543367caeaae5c4ed6f544",
     "verification": {
       "chatgpt": {
-        "status": "not-run",
-        "evidence": []
+        "evidence": [],
+        "status": "not-run"
       },
       "codex": {
-        "status": "not-run",
-        "evidence": []
+        "evidence": [],
+        "status": "not-run"
       }
     }
   }

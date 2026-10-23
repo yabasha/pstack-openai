@@ -84,6 +84,6 @@ Current host statuses and release evidence: [current parity inventory](../parity
 
 Destination: [skills/principle-build-the-lever/SKILL.md](../../skills/principle-build-the-lever/SKILL.md).
 
-Upstream commit: `df581122cde17e6e27686b5a448bde23e4ad4318`. SHA-256: `458b269eab8e95a1573276955312f7d2a13ae8599879a9efc748248f6bc34b56`.
+Upstream commit: `4ec7ffa173eaa70d3d9467a627baf0954645a353`. SHA-256: `3434b0ad0c640c6f1d7960be7a8986c3bcdc14e26060360dec29903df60074ff`.
 
 Disposition: `runtime`. Aggregate adaptation status: `adapted-reviewed`.

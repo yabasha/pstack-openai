@@ -85,6 +85,6 @@ Current host statuses and release evidence: [current parity inventory](../parity
 
 Destination: [skills/make-bot-ui/SKILL.md](../../skills/make-bot-ui/SKILL.md).
 
-Upstream commit: `df581122cde17e6e27686b5a448bde23e4ad4318`. SHA-256: `3624c8ef16cf2e48deb2a4049e72c6962a9431c8d6c6af90e7bd7ea0375224ec`.
+Upstream commit: `4ec7ffa173eaa70d3d9467a627baf0954645a353`. SHA-256: `ad19d0bc6764287ec08c2521701974e7dac941f72e4d0fe81a24f4614494586f`.
 
 Disposition: `runtime`. Aggregate adaptation status: `adapted-reviewed`.

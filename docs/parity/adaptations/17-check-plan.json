@@ -1,30 +1,30 @@
 [
   {
-    "upstreamPath": "skills/poteto-mode/scripts/check-plan.mjs",
-    "upstreamCommit": "df581122cde17e6e27686b5a448bde23e4ad4318",
-    "upstreamSha256": "4f9432d9989880b6afc2bdda503d5b12a9d07d357ecf31936b7ab5e83bc80523",
-    "destinationPath": "skills/poteto-mode/scripts/check-plan.mjs",
-    "disposition": "runtime",
-    "rationale": "Preserve positional read-only pstack plan validation, ordered verifiable units and review gates. Replace fixed ten-lane, model, scheduler and remote assumptions with declared capability evidence and observed capacity. Require checked live receipts and explicit reduced or blocked limits; record justified performance non-applicability separately. Bun fixture checks are structural only. Review gates require explicit interaction applicability and preserve operator media review when applicable. Unavailable workers require reduced-review reason and evidence even for a None. operator gate.",
+    "adaptationStatus": "adapted-reviewed",
     "dependencies": [
       "skills/poteto-mode/playbooks/multi-phase-plan.md",
       "references/host-capabilities.md",
       "references/orchestration-contract.md"
     ],
+    "destinationPath": "skills/poteto-mode/scripts/check-plan.mjs",
+    "disposition": "runtime",
     "licenseProvenance": {
-      "license": "MIT",
       "copyright": "Copyright (c) 2026 Lauren Tan",
+      "license": "MIT",
       "sourcePath": "LICENSE"
     },
-    "adaptationStatus": "adapted-reviewed",
+    "rationale": "Port CommonMark fence parsing; preserve local capability, evidence and applicability rules.",
+    "upstreamCommit": "4ec7ffa173eaa70d3d9467a627baf0954645a353",
+    "upstreamPath": "skills/poteto-mode/scripts/check-plan.mjs",
+    "upstreamSha256": "e58c3d871b09d477be00628d69dd23ffa6c2e3a1728f5b867a841baa8e90278b",
     "verification": {
       "chatgpt": {
-        "status": "not-run",
-        "evidence": []
+        "evidence": [],
+        "status": "not-run"
       },
       "codex": {
-        "status": "not-run",
-        "evidence": []
+        "evidence": [],
+        "status": "not-run"
       }
     }
   }

@@ -1,11 +1,6 @@
 [
   {
-    "upstreamPath": "skills/create-verification-skill/SKILL.md",
-    "upstreamCommit": "df581122cde17e6e27686b5a448bde23e4ad4318",
-    "upstreamSha256": "644f2551403c1bca01a2855b34611b6e7be0ce0dc5b204514c376c0f6a6e6ac4",
-    "destinationPath": "skills/create-verification-skill/SKILL.md",
-    "disposition": "runtime",
-    "rationale": "Preserve the complete generator, explicit invocation metadata, real-app proof and draft gates; bind project-local discovery and execution to observed host capabilities and authorization.",
+    "adaptationStatus": "adapted-reviewed",
     "dependencies": [
       "references/host-capabilities.md",
       "references/workflow-ownership.md",
@@ -14,104 +9,109 @@
       "skills/create-verification-skill/references/feature-map-example/create-note.md",
       "skills/create-verification-skill/references/feature-map-example/search.md"
     ],
+    "destinationPath": "skills/create-verification-skill/SKILL.md",
+    "disposition": "runtime",
     "licenseProvenance": {
-      "license": "MIT",
       "copyright": "Copyright (c) 2026 Lauren Tan",
+      "license": "MIT",
       "sourcePath": "LICENSE"
     },
-    "adaptationStatus": "adapted-reviewed",
+    "rationale": "Add usable empty-data initialization, seed-precondition failure and stand-in target gaps; preserve project-local and capability contracts.",
+    "upstreamCommit": "4ec7ffa173eaa70d3d9467a627baf0954645a353",
+    "upstreamPath": "skills/create-verification-skill/SKILL.md",
+    "upstreamSha256": "d353973547bf8ad8977eca645f4cd4feaed0d32f4b43d1448f906b0a76c4d694",
     "verification": {
       "chatgpt": {
-        "status": "not-run",
-        "evidence": []
+        "evidence": [],
+        "status": "not-run"
       },
       "codex": {
-        "status": "not-run",
-        "evidence": []
+        "evidence": [],
+        "status": "not-run"
       }
     }
   },
   {
-    "upstreamPath": "skills/create-verification-skill/references/feature-map-example/README.md",
-    "upstreamCommit": "df581122cde17e6e27686b5a448bde23e4ad4318",
-    "upstreamSha256": "cb7bd782cf89968a4ba3d58a5151db837430db92d19a6f52a906973b77b516ba",
-    "destinationPath": "skills/create-verification-skill/references/feature-map-example/README.md",
-    "disposition": "runtime",
-    "rationale": "Preserve the complete Notes feature-map example verbatim, including exact commands, user entry points, four-heading feature contracts and proof rules.",
+    "adaptationStatus": "unchanged-reviewed",
     "dependencies": [
       "skills/create-verification-skill/references/feature-map-example/create-note.md",
       "skills/create-verification-skill/references/feature-map-example/search.md"
     ],
+    "destinationPath": "skills/create-verification-skill/references/feature-map-example/README.md",
+    "disposition": "runtime",
     "licenseProvenance": {
-      "license": "MIT",
       "copyright": "Copyright (c) 2026 Lauren Tan",
+      "license": "MIT",
       "sourcePath": "LICENSE"
     },
-    "adaptationStatus": "unchanged-reviewed",
+    "rationale": "Preserve the complete Notes feature-map example verbatim, including exact commands, user entry points, four-heading feature contracts and proof rules.",
+    "upstreamCommit": "4ec7ffa173eaa70d3d9467a627baf0954645a353",
+    "upstreamPath": "skills/create-verification-skill/references/feature-map-example/README.md",
+    "upstreamSha256": "cb7bd782cf89968a4ba3d58a5151db837430db92d19a6f52a906973b77b516ba",
     "verification": {
       "chatgpt": {
-        "status": "not-run",
-        "evidence": []
+        "evidence": [],
+        "status": "not-run"
       },
       "codex": {
-        "status": "not-run",
-        "evidence": []
+        "evidence": [],
+        "status": "not-run"
       }
     }
   },
   {
-    "upstreamPath": "skills/create-verification-skill/references/feature-map-example/create-note.md",
-    "upstreamCommit": "df581122cde17e6e27686b5a448bde23e4ad4318",
-    "upstreamSha256": "644a44c74f35d38c2feb7cd05a0121fdebbb623e8dc376c185b565a581d1ccf7",
-    "destinationPath": "skills/create-verification-skill/references/feature-map-example/create-note.md",
-    "disposition": "runtime",
-    "rationale": "Preserve the complete Notes feature-map example verbatim, including exact commands, user entry points, four-heading feature contracts and proof rules.",
+    "adaptationStatus": "unchanged-reviewed",
     "dependencies": [
       "skills/create-verification-skill/references/feature-map-example/README.md",
       "skills/create-verification-skill/references/feature-map-example/search.md"
     ],
+    "destinationPath": "skills/create-verification-skill/references/feature-map-example/create-note.md",
+    "disposition": "runtime",
     "licenseProvenance": {
-      "license": "MIT",
       "copyright": "Copyright (c) 2026 Lauren Tan",
+      "license": "MIT",
       "sourcePath": "LICENSE"
     },
-    "adaptationStatus": "unchanged-reviewed",
+    "rationale": "Preserve the complete Notes feature-map example verbatim, including exact commands, user entry points, four-heading feature contracts and proof rules.",
+    "upstreamCommit": "4ec7ffa173eaa70d3d9467a627baf0954645a353",
+    "upstreamPath": "skills/create-verification-skill/references/feature-map-example/create-note.md",
+    "upstreamSha256": "644a44c74f35d38c2feb7cd05a0121fdebbb623e8dc376c185b565a581d1ccf7",
     "verification": {
       "chatgpt": {
-        "status": "not-run",
-        "evidence": []
+        "evidence": [],
+        "status": "not-run"
       },
       "codex": {
-        "status": "not-run",
-        "evidence": []
+        "evidence": [],
+        "status": "not-run"
       }
     }
   },
   {
-    "upstreamPath": "skills/create-verification-skill/references/feature-map-example/search.md",
-    "upstreamCommit": "df581122cde17e6e27686b5a448bde23e4ad4318",
-    "upstreamSha256": "6e87b9e7f2791a7776ba1bb83f371cd285c306c67f19d245cc4dd6ca3015c823",
-    "destinationPath": "skills/create-verification-skill/references/feature-map-example/search.md",
-    "disposition": "runtime",
-    "rationale": "Preserve the complete Notes feature-map example verbatim, including exact commands, user entry points, four-heading feature contracts and proof rules.",
+    "adaptationStatus": "unchanged-reviewed",
     "dependencies": [
       "skills/create-verification-skill/references/feature-map-example/README.md",
       "skills/create-verification-skill/references/feature-map-example/create-note.md"
     ],
+    "destinationPath": "skills/create-verification-skill/references/feature-map-example/search.md",
+    "disposition": "runtime",
     "licenseProvenance": {
-      "license": "MIT",
       "copyright": "Copyright (c) 2026 Lauren Tan",
+      "license": "MIT",
       "sourcePath": "LICENSE"
     },
-    "adaptationStatus": "unchanged-reviewed",
+    "rationale": "Preserve the complete Notes feature-map example verbatim, including exact commands, user entry points, four-heading feature contracts and proof rules.",
+    "upstreamCommit": "4ec7ffa173eaa70d3d9467a627baf0954645a353",
+    "upstreamPath": "skills/create-verification-skill/references/feature-map-example/search.md",
+    "upstreamSha256": "6e87b9e7f2791a7776ba1bb83f371cd285c306c67f19d245cc4dd6ca3015c823",
     "verification": {
       "chatgpt": {
-        "status": "not-run",
-        "evidence": []
+        "evidence": [],
+        "status": "not-run"
       },
       "codex": {
-        "status": "not-run",
-        "evidence": []
+        "evidence": [],
+        "status": "not-run"
       }
     }
   }

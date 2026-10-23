@@ -75,6 +75,6 @@ Current host statuses and release evidence: [current parity inventory](../parity
 
 Destination: [skills/bro/SKILL.md](../../skills/bro/SKILL.md).
 
-Upstream commit: `df581122cde17e6e27686b5a448bde23e4ad4318`. SHA-256: `aa329d0ceeeecb6822a7174ad76bb07a7826a3c52ceb6a588dec4138815084bb`.
+Upstream commit: `4ec7ffa173eaa70d3d9467a627baf0954645a353`. SHA-256: `aa329d0ceeeecb6822a7174ad76bb07a7826a3c52ceb6a588dec4138815084bb`.
 
 Disposition: `runtime`. Aggregate adaptation status: `unchanged-reviewed`.

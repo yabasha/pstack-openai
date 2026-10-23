@@ -1,11 +1,6 @@
 [
   {
-    "upstreamPath": "skills/poteto-mode/playbooks/trace-forensics.md",
-    "upstreamCommit": "df581122cde17e6e27686b5a448bde23e4ad4318",
-    "upstreamSha256": "137ce3984fb96e45971fdff4d3c79fa4ccc647c5b30ae4945783b9fb23f8cec7",
-    "destinationPath": "skills/poteto-mode/playbooks/trace-forensics.md",
-    "disposition": "runtime",
-    "rationale": "Preserve all six trace-forensics steps, fixed capture scope, generic format tooling, large-artifact worker parsing, sqlite query shape, hot-path/retainer/stuck-thread diagnosis, artifact-symbol mapping, paired-capture comparison, unpaired hypothesis, exact throughput line, five reply items and Bug fix/Perf handoff. Bind artifact reads, parsing, derived storage, workers and symbol resolution to actual capabilities and authorization. Preserve trace identity, order and source links. Missing parser, sqlite storage, workers or source mapping remain runtime limits; sequential parsing or accessible read-only query representation is reduced capability. No script helper is directly invoked and neither host ran.",
+    "adaptationStatus": "adapted-reviewed",
     "dependencies": [
       "skills/poteto-mode/SKILL.md",
       "references/host-capabilities.md",
@@ -17,20 +12,25 @@
       "skills/poteto-mode/playbooks/bug-fix.md",
       "skills/poteto-mode/playbooks/perf-issue.md"
     ],
+    "destinationPath": "skills/poteto-mode/playbooks/trace-forensics.md",
+    "disposition": "runtime",
     "licenseProvenance": {
-      "license": "MIT",
       "copyright": "Copyright (c) 2026 Lauren Tan",
+      "license": "MIT",
       "sourcePath": "LICENSE"
     },
-    "adaptationStatus": "adapted-reviewed",
+    "rationale": "Upstream changes are editorial compression or delegate-effort reminders already governed by shared mode policy. Retain explicit local host, offline audit, authorization and evidence bindings.",
+    "upstreamCommit": "4ec7ffa173eaa70d3d9467a627baf0954645a353",
+    "upstreamPath": "skills/poteto-mode/playbooks/trace-forensics.md",
+    "upstreamSha256": "ef0bbf79856a4ae1a8993d54c1a1da159cb97623941b652c0069cf75a017e0f5",
     "verification": {
       "chatgpt": {
-        "status": "not-run",
-        "evidence": []
+        "evidence": [],
+        "status": "not-run"
       },
       "codex": {
-        "status": "not-run",
-        "evidence": []
+        "evidence": [],
+        "status": "not-run"
       }
     }
   }
