@@ -1,0 +1,125 @@
+[
+  {
+    "id": "start-small",
+    "level": "Simple",
+    "title": "Start a small project from scratch",
+    "goal": "Build a personal reading list with one working user journey before adding accounts or integrations.",
+    "skills": ["sharpen", "poteto-mode", "principle-prove-it-works"],
+    "steps": [
+      {"title": "Sharpen the brief", "prompt": "Use sharpen on this brief: build a local reading-list app where I can add a URL, mark it read, and find it again. Keep the scope small. Leave framework and storage choices open. Return the four framing answers and a rewritten prompt, then stop.", "output": "A clearer brief. Sharpen does not create files or execute the project."},
+      {"title": "Build one complete journey", "prompt": "Use poteto-mode to implement the reading-list brief above in this empty project folder. Inspect available tools and agree any unresolved product choices first. Build add, list, mark-read, and search with browser-local storage. Keep this local. Use existing dependencies where possible; ask before installations or external actions.", "output": "A local app with a small, usable scope and a record of implementation choices."},
+      {"title": "Check the delivered app", "prompt": "Use principle-prove-it-works on the reading-list app. Add an item through the UI, mark it read, reload, and search for it. Check an empty list and invalid input. Report observed results and anything you could not run.", "output": "Evidence for the actual user journey, including persistence after reload."}
+    ],
+    "principle": "Prove it works: finishing the code is followed by exercising what the user receives.",
+    "done": "The core journey works locally and its checks are recorded. Deployment is a separate authorized action."
+  },
+  {
+    "id": "feature-small",
+    "level": "Simple",
+    "title": "Add a small feature to an existing app",
+    "goal": "Add a status filter to a task list without changing how tasks are stored.",
+    "skills": ["how", "blast-radius", "principle-prove-it-works"],
+    "steps": [
+      {"title": "Find the current behavior", "prompt": "Use how to trace this task list from its route through data loading to rendering. Identify status values, existing filter behavior, and relevant checks. Keep this read-only and cite the source files.", "output": "A short map of the code that owns the feature."},
+      {"title": "Implement the bounded change", "prompt": "Add an All / Open / Done filter to the existing task list. Follow its current UI conventions and preserve storage and API contracts. Handle empty filtered results. Use blast-radius to inspect affected callers and run the existing focused checks.", "output": "A focused change with caller impact and empty-state behavior checked."}
+    ],
+    "principle": "Subtract before you add: reuse the existing task status and filtering logic before introducing another representation.",
+    "done": "Each filter displays the right tasks, and clearing it restores the original list."
+  },
+  {
+    "id": "bug-local",
+    "level": "Simple",
+    "title": "Fix a reproducible bug",
+    "goal": "A whitespace-only search hides every result instead of showing the full list.",
+    "skills": ["tdd", "principle-fix-root-causes"],
+    "steps": [
+      {"title": "Reproduce and fix", "prompt": "Use tdd to fix this bug: a search containing only spaces hides all items; it should behave like an empty search. Find the existing cheap local test target, demonstrate the failure before the fix, trace the input-handling cause, then make the smallest correction and rerun the check. If the test path is unavailable, state that limit instead of inventing a result.", "output": "A failing-before and passing-after regression check, or an explicit account of the missing evidence."},
+      {"title": "Check neighboring behavior", "prompt": "Use principle-fix-root-causes to review the search fix. Check empty input, leading and trailing spaces, a real query, and no matches. Confirm that normalization happens at the correct boundary and report the checks actually run.", "output": "A verified correction with nearby behavior covered."}
+    ],
+    "principle": "Fix root causes: correct input handling where the bad state first enters the search flow.",
+    "done": "The original reproduction passes and normal search still works."
+  },
+  {
+    "id": "start-project",
+    "level": "Intermediate",
+    "title": "Start a project with a deliberate architecture",
+    "goal": "Create a small team issue tracker with clear ownership and a repeatable verification workflow.",
+    "skills": ["sharpen", "architect", "poteto-mode", "create-verification-skill"],
+    "steps": [
+      {"title": "Define a useful first release", "prompt": "Use sharpen on this project brief: a team issue tracker with project lists, issue creation, and status changes. Ask for evidence that the core journey works. Keep authentication provider, framework, hosting, and paid services as open choices. Rewrite the brief and stop.", "output": "A bounded first-release brief and explicit unresolved product choices."},
+      {"title": "Sketch the design before implementation", "prompt": "Use architect on the issue-tracker brief. Compare two ownership models for projects, issues, and memberships. Sketch caller usage, types, module boundaries, and allowed issue transitions. Read the available host contracts. Keep this design-only; do not install dependencies or implement yet.", "output": "A concrete design with tradeoffs and an implementation boundary."},
+      {"title": "Implement the selected slice", "prompt": "Use poteto-mode to implement the selected issue-tracker design. Start with create-project, create-issue, and change-status as one complete slice. Keep ownership and validation at explicit boundaries. Inspect existing tooling and obtain authorization before adding dependencies or services. Report deviations from the design.", "output": "A working first slice with scoped changes and observed checks."},
+      {"title": "Leave reusable checks", "prompt": "Use create-verification-skill for the issue tracker. Inspect the app's real commands and available browser/test tools. Define observable checks for issue creation, status changes, invalid input, and project separation. Run the supported checks and identify unavailable ones. Verify local skill discovery separately from writing the file.", "output": "A project-local verification workflow tied to real entry points."}
+    ],
+    "principle": "Model the domain: represent issue states and membership rules explicitly before wiring screens together.",
+    "done": "The first slice is usable, its boundaries are reviewable, and another agent can rerun the documented checks."
+  },
+  {
+    "id": "feature-boundary",
+    "level": "Intermediate",
+    "title": "Add a feature across UI and API boundaries",
+    "goal": "Add project-scoped CSV export without exposing another project's records.",
+    "skills": ["how", "architect", "blast-radius", "interrogate"],
+    "steps": [
+      {"title": "Trace access before adding output", "prompt": "Use how to trace project membership checks, list queries, and file responses in this app. Find the existing authorization boundary and cite its callers. Keep this read-only.", "output": "A map of the access rules the export must preserve."},
+      {"title": "Design and implement within scope", "prompt": "Use architect to compare synchronous and queued CSV export for the actual data sizes and existing infrastructure. State the tradeoffs, then implement the simplest supported design for project-scoped issue export. Reuse current membership checks, validate inputs, and handle an empty export. Do not add services or paid dependencies without approval.", "output": "An export implementation whose design matches observed needs."},
+      {"title": "Review the boundary", "prompt": "Use blast-radius to trace the export change's callers and authorization assumptions. Use interrogate for an adversarial review of cross-project access and malformed inputs. Exercise the real API with allowed and denied project access. If independent reviewers are unavailable, disclose reduced capability and keep review claims bounded.", "output": "Evidence for allowed exports and denied access, plus unresolved risks."}
+    ],
+    "principle": "Boundary discipline: enforce project access where data leaves the application, using the existing authorization contract.",
+    "done": "An authorized user can export their project's records; a user without access cannot."
+  },
+  {
+    "id": "bug-system",
+    "level": "Intermediate",
+    "title": "Diagnose a bug that spans several components",
+    "goal": "An issue looks updated in the UI but returns to its old status after a refresh.",
+    "skills": ["how", "poteto-mode", "blast-radius", "show-me-your-work"],
+    "steps": [
+      {"title": "Trace the failed journey", "prompt": "Use how to trace a status change through the UI, request, validation, database update, and cache refresh. Reproduce the stale-status bug through actual entry points where authorized. Separate observed behavior from hypotheses and retain relevant evidence without secrets.", "output": "A reproduction and a ranked account of where the state diverges."},
+      {"title": "Fix the owning component", "prompt": "Use poteto-mode to fix the reproduced stale-status bug at its root cause. Use show-me-your-work to retain a local decision trail. Avoid compensating UI changes if persistence is wrong. Add a focused regression check when practical, run blast-radius on the affected callers, and verify the status after a reload.", "output": "A scoped fix, an inspected user journey, and a reviewable local log."}
+    ],
+    "principle": "Attack the premise: if repeated fixes fail the same check, revisit the shared assumption before adding another patch.",
+    "done": "The updated status survives a reload, and the evidence identifies the component that caused the failure."
+  },
+  {
+    "id": "migration-workers",
+    "level": "Advanced",
+    "title": "Coordinate a migration with independent work",
+    "goal": "Move a legacy notification system behind one new interface while preserving existing callers.",
+    "skills": ["architect", "swarm", "blast-radius", "show-me-your-work"],
+    "steps": [
+      {"title": "Set ownership and migration order", "prompt": "Use architect to map notification callers and design the replacement interface from caller usage. Plan a migration that moves callers before deleting the old API. Identify independent slices, file ownership, integration order, and user-visible checks. Keep implementation paused until the design is reviewed.", "output": "A caller map, selected design, and conflict-aware work plan."},
+      {"title": "Execute isolated slices", "prompt": "Use swarm to implement the reviewed notification migration. Assign disjoint caller groups to isolated workers with explicit boundaries; keep one integration owner. Use show-me-your-work for decisions and inspect every worker's terminal result and artifact before integration. If workers or isolation are unavailable, disclose the limit and use a sequential plan without claiming independent execution.", "output": "Integrated changes with actual worker receipts, or an explicitly sequential result."},
+      {"title": "Remove the old path and verify", "prompt": "Use blast-radius to find remaining legacy notification callers. Remove the obsolete API only after callers have migrated. Run the checks that observe delivery, failure handling, and retries using isolated test data. Report any integration that could not be exercised.", "output": "A coherent migration with the old path removed and remaining gaps stated."}
+    ],
+    "principle": "Separate before serializing shared state: give workers isolated outputs and one explicit integration point.",
+    "done": "Callers use the selected interface, obsolete code is removed, and supported journeys pass the recorded checks."
+  },
+  {
+    "id": "formal-bug",
+    "level": "Advanced",
+    "title": "Investigate a retry or concurrency failure",
+    "goal": "Two retrying workers can process the same job and produce a duplicate result.",
+    "skills": ["create-formal-verification-skill", "statechart", "maintain-formal-verification-skill"],
+    "steps": [
+      {"title": "Check one important property", "prompt": "Use create-formal-verification-skill to investigate duplicate job completion under retries. Start from the real claim, lock, and completion code. Choose a suitable verifier, state the property and bounds, and cite the code each model action represents. Use an already authorized local toolchain; do not install tools implicitly. Run deliberate broken-code trials only in an owned disposable copy. If no verifier can run, label any generated-input testing as a testing fallback, not formal proof.", "output": "A bounded verification result or an explicit block, with a runnable local skill when supported."},
+      {"title": "Explain the failure as a user story", "prompt": "Use statechart on the job-processing model. Show states in terms of what the operator sees, retain invariants and code-guard citations, and turn each counterexample into a numbered story. Use an authorized local renderer and inspect every PNG. Replay the story through the real application's entry points; distinguish modeled behavior from reproduced behavior. Do not fix product code in this step.", "output": "Readable charts and bug stories with model scope and reproduction status separated."},
+      {"title": "Recheck after an authorized fix", "prompt": "After the job-processing fix is separately implemented and authorized, use maintain-formal-verification-skill to reconcile the verification with the changed code. Preserve the original property, inspect covered functions, rerun checks, demonstrate the check still detects a relevant broken variant in isolation, and advance the sync record only for code actually checked.", "output": "Verification that describes the current implementation, with explicit bounds and remaining findings."}
+    ],
+    "principle": "Explain the number: a model pass covers its stated bounds and assumptions; it is not a claim that the whole production system is correct.",
+    "done": "The model and real-code evidence are separately reviewable. Missing tools, citations, rendering, or reproduction leave the dependent result incomplete."
+  },
+  {
+    "id": "release-review",
+    "level": "Advanced",
+    "title": "Review a release before asking to publish",
+    "goal": "Assess an existing feature branch against its acceptance criteria and user journeys.",
+    "skills": ["interrogate", "blast-radius", "maintain-verification-skill", "technical-writing"],
+    "steps": [
+      {"title": "Challenge the completed change", "prompt": "Use interrogate and blast-radius to review this feature branch against the supplied acceptance criteria. Trace affected callers, challenge data and authorization assumptions, and distinguish confirmed defects from untested risks. Report actual reviewer independence and model identity only when observed.", "output": "A prioritized review tied to code and acceptance criteria."},
+      {"title": "Verify and prepare the handoff", "prompt": "Use maintain-verification-skill to check whether this project's verification workflow still matches its actual UI, API, and commands. Run the supported release checks. Use technical-writing to prepare release notes with changes, observed results, and unresolved gaps. Keep deployment and publication paused for explicit authorization.", "output": "A release handoff that states what is checked and what remains open."}
+    ],
+    "principle": "Outcome-oriented execution: the release decision follows the requested behavior and evidence, rather than a completed checklist alone.",
+    "done": "The user can review the release evidence and make a concrete publication decision."
+  }
+]
