@@ -1,6 +1,7 @@
 import {readFileSync, writeFileSync, existsSync} from 'node:fs';
 import {resolve} from 'node:path';
 import {createHash} from 'node:crypto';
+import {writeSiteFeed} from './build_site_feed.mjs';
 
 const root = resolve(import.meta.dir, '..');
 const workflows = JSON.parse(readFileSync(resolve(root, 'docs/workflows/examples.json'), 'utf8'));
@@ -47,3 +48,4 @@ if (process.argv.includes('--check')) {
   if (!existsSync(feedPath) || readFileSync(feedPath, 'utf8') !== feed) writeFileSync(feedPath, feed);
 }
 console.log(`${workflows.length} workflows match the README and site feed (${revision.slice(0, 7)}).`);
+writeSiteFeed(root,{workflows,readme:next},{check:process.argv.includes('--check')});
