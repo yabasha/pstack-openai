@@ -915,7 +915,7 @@
     "path": "UPSTREAM.md",
     "rationale": "Explicit quoted upstream source identity or Claude-only source reference; it supplies no current host binding.",
     "reviewed": true,
-    "sha256": "e0d87eb14b438bc53fa92dc280a72e981313f92aea4024d7f8cffda927154698",
+    "sha256": "9143d485107b2f4e464bcfbfa408707c79bb77b1f80f10217570dbd69217be1d",
     "startLine": 23,
     "token": ".cursor-plugin/plugin.json"
   },
@@ -1065,7 +1065,7 @@
     "path": "docs/parity/support-map.md",
     "rationale": "Quoted canonical source identity retained only for lineage; no host binding.",
     "reviewed": true,
-    "sha256": "8aeffd4ca4543cfcb89739ef15fdb11f088c4ea642c846bd59c452f1a0b83611",
+    "sha256": "b5528389f6e73326a1bfd3fabf96eb2f4e58116dd1e7880401a41a754cc09bc2",
     "startLine": 11,
     "token": ".cursor-plugin/plugin.json"
   },
@@ -1075,7 +1075,7 @@
     "path": "docs/parity/support-map.md",
     "rationale": "Quoted canonical source identity retained only for lineage; no host binding.",
     "reviewed": true,
-    "sha256": "8aeffd4ca4543cfcb89739ef15fdb11f088c4ea642c846bd59c452f1a0b83611",
+    "sha256": "b5528389f6e73326a1bfd3fabf96eb2f4e58116dd1e7880401a41a754cc09bc2",
     "startLine": 47,
     "token": "claude-code.md"
   },
@@ -1085,7 +1085,7 @@
     "path": "docs/parity/support-map.md",
     "rationale": "Quoted canonical source identity retained only for lineage; no host binding.",
     "reviewed": true,
-    "sha256": "8aeffd4ca4543cfcb89739ef15fdb11f088c4ea642c846bd59c452f1a0b83611",
+    "sha256": "b5528389f6e73326a1bfd3fabf96eb2f4e58116dd1e7880401a41a754cc09bc2",
     "startLine": 47,
     "token": "claude-code.md](../../docs/harness/claude-code.md"
   }

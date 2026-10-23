@@ -77,3 +77,7 @@ Source `d457567332aa6989e753ea289f30ea2bfbc80bc0` is superseded for this unaccep
 ## Statechart candidate amendment
 
 PRs #741, #776 and #779 amend the unaccepted 0.2.3 source to `4ec7ffa173eaa70d3d9467a627baf0954645a353`, upstream 0.15.30. All 184 canonical files were archive/tree verified, including 57 root skills, 24 principles and 23 playbooks. The PR729 sharpen amendment remains included. The final statechart implementation includes the six correctness fixes. Rendering uses an explicitly selected reviewed local executable; subprocesses are bounded. The generated Claude tree remains derived and its adapter stays reference-only. The accepted 0.2.2 receipt is unchanged; no acceptance, integration or refresh occurred. See the amendment manifest and [statechart execution](skills/statechart/references/execution.md).
+
+## Source acceptance for 0.2.3
+
+The user explicitly accepted source `4ec7ffa173eaa70d3d9467a627baf0954645a353` on 2026-10-23, Asia/Amman. The [immutable source evidence](docs/releases/0.2.3.md) and strict accepted receipt bind the reviewed manifest and package ancestor. This supersedes the earlier unaccepted-candidate status while preserving its history. Linux PID-namespace coverage and full ChatGPT candidate loading/workflow verification remain incomplete. Integration, refresh and installed discovery are observed separately.

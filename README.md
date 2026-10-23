@@ -2,7 +2,7 @@
 
 An unofficial port of Lauren Tan's pstack v0.15.30. The source inventory includes 57 root skills, 24 principles, 23 playbooks and 184 source files. Read [UPSTREAM.md](UPSTREAM.md), [NOTICE.md](NOTICE.md) and [LICENSE](LICENSE) for lineage and attribution.
 
-Port 0.2.3 is an unaccepted candidate for upstream `4ec7ffa173eaa70d3d9467a627baf0954645a353`. The accepted source remains 0.2.2 at `182f2ce414e83224915c190d2f63239c1608d0a5` until separate reviewed acceptance.
+Port 0.2.3 accepts upstream `4ec7ffa173eaa70d3d9467a627baf0954645a353` as its reviewed source baseline. See [source acceptance and verification limits](docs/releases/0.2.3.md). Installed discovery and workflow support remain separate gates.
 
 Upstream adds Claude Code packaging; this port retains its shared portable runtime and records the Claude adapter as a quoted reference only.
 

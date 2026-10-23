@@ -1,5 +1,5 @@
 {
-  "auditedPackageCommit": "56fe4587d30e1ebcc682c602a7fb5b34bb81079f",
+  "auditedPackageCommit": "eee141e69ca34ff4488d1835c638a5ceb76b1f8d",
   "counts": {
     "files": 184,
     "playbooks": 23,
@@ -1607,7 +1607,7 @@
         "statechart-runtime"
       ],
       "destinationPath": "README.md",
-      "destinationSha256": "cfe45a25cf9eb5722acbf8e15e7a9291c77740abfe01e85b447b35fd3731064c",
+      "destinationSha256": "317d8f3993ff3200e3383562e3373c043e1e3710a9977edab419e8f3d288345a",
       "kind": "support",
       "packageDependencies": [
         "UPSTREAM.md",

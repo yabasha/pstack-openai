@@ -1,6 +1,6 @@
 # Source and support reconciliation
 
-The unaccepted 0.2.3 candidate records 184 source files at `4ec7ffa173eaa70d3d9467a627baf0954645a353`, upstream 0.15.30, including 57 root skills, 24 principles and 23 playbooks. The accepted baseline remains 0.2.2. Source membership, installed discovery and host workflow support are separate.
+The accepted 0.2.3 source records 184 source files at `4ec7ffa173eaa70d3d9467a627baf0954645a353`, upstream 0.15.30, including 57 root skills, 24 principles and 23 playbooks. The accepted baseline is 0.2.3; see the separate receipt and verification limits. Source membership, installed discovery and host workflow support are separate.
 
 The registry contains 122 cases. Both hosts remain not-run. Prior installed observations do not transfer.
 
