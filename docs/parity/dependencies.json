@@ -1607,7 +1607,7 @@
         "statechart-runtime"
       ],
       "destinationPath": "README.md",
-      "destinationSha256": "0b98aee0fc55c5c1eb3fee119eefc0abd37f76ed6b53529db8991fe9e75adcf5",
+      "destinationSha256": "7c7a01ec52ea971708774227faaef9240ca3d5bc6738eb5f33b3e05fff989abd",
       "kind": "support",
       "packageDependencies": [
         "UPSTREAM.md",

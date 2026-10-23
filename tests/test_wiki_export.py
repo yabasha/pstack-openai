@@ -96,6 +96,12 @@ class WikiAnchorTests(unittest.TestCase):
             root = Path(directory) / 'source'
             (root / 'docs/skills').mkdir(parents=True)
             (root / 'plugin.json').write_text(json.dumps({'version': 'fixture'}))
+            policy = json.loads((ROOT / 'docs/parity/baseline-policy.json').read_text())
+            for relative in ('docs/parity/baseline-policy.json', 'docs/parity/inventory.json',
+                             f"docs/parity/upstream-manifests/{policy['upstreamCommit']}.json"):
+                target = root / relative
+                target.parent.mkdir(parents=True, exist_ok=True)
+                target.write_bytes((ROOT / relative).read_bytes())
             for source in (ROOT / 'docs/skills').glob('*.md'):
                 (root / 'docs/skills' / source.name).write_text('# Fixture\n')
             (root / 'docs/troubleshooting.md').write_text('# Fixture\n')

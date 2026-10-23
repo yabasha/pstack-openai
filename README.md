@@ -8,7 +8,7 @@ Upstream adds Claude Code packaging; this port retains its shared portable runti
 
 It also makes `/sharpen` return four framing answers and a rewritten prompt without executing its task. It adds create-formal-verification-skill and maintain-formal-verification-skill, including bounded claims, safe mutation trials and explicit testing fallbacks. Source validation and installed discovery are tracked separately from full workflow behavior. The [0.2.2 source validation record](docs/releases/0.2.2.md) identifies the reviewed snapshot, checks and remaining host limits. Earlier release records retain their historical scope. See [compatibility](docs/compatibility.md) before relying on a workflow.
 
-[Website and examples](https://pstack-openai.abloommink3.chatgpt.site) · [Get started](#get-started) · [Choose a skill](#choose-a-skill) · [Compatibility](#compatibility) · [Documentation](#documentation)
+[Website and examples](https://pstack-openai.abloommink3.chatgpt.site) · [Get started](docs/guide/01-setup.md) · [Choose a skill](docs/skills/README.md) · [Compatibility](docs/compatibility.md) · [Documentation](docs/guide/README.md)
 
 - [Personal ChatGPT setup and blocked route](docs/setup/chatgpt.md).
 - [Codex setup and unverified documented route](docs/setup/codex.md).

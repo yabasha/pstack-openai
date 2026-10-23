@@ -3972,7 +3972,6 @@
       "caseId": "shared-path-conflict",
       "executionModes": {
         "pass": [
-          "direct",
           "workers"
         ],
         "reduced-pass": [
@@ -4005,6 +4004,7 @@
       },
       "requiredPermissions": {
         "pass": [
+          "execution",
           "writes"
         ],
         "reduced-pass": [
