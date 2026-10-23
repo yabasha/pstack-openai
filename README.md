@@ -1,8 +1,8 @@
 # pstack portable package
 
-An unofficial port of Lauren Tan's pstack v0.15.29. The source inventory includes 56 root skills, 24 principles, 23 playbooks and 172 source files. Read [UPSTREAM.md](UPSTREAM.md), [NOTICE.md](NOTICE.md) and [LICENSE](LICENSE) for lineage and attribution.
+An unofficial port of Lauren Tan's pstack v0.15.30. The source inventory includes 57 root skills, 24 principles, 23 playbooks and 184 source files. Read [UPSTREAM.md](UPSTREAM.md), [NOTICE.md](NOTICE.md) and [LICENSE](LICENSE) for lineage and attribution.
 
-Port 0.2.3 is an unaccepted candidate for upstream `88d47514b82e7c44f00f2b2a72ff6dd12158038c`. The accepted source remains 0.2.2 at `182f2ce414e83224915c190d2f63239c1608d0a5` until separate reviewed acceptance.
+Port 0.2.3 is an unaccepted candidate for upstream `4ec7ffa173eaa70d3d9467a627baf0954645a353`. The accepted source remains 0.2.2 at `182f2ce414e83224915c190d2f63239c1608d0a5` until separate reviewed acceptance.
 
 Upstream adds Claude Code packaging; this port retains its shared portable runtime and records the Claude adapter as a quoted reference only.
 
@@ -13,7 +13,7 @@ It also makes `/sharpen` return four framing answers and a rewritten prompt with
 - [Personal ChatGPT setup and blocked route](docs/setup/chatgpt.md).
 - [Codex setup and unverified documented route](docs/setup/codex.md).
 - [Choose a workflow](docs/workflows/choosing-a-workflow.md).
-- [All 56 skills](docs/skills/README.md) and [all 24 principles](docs/principles/README.md).
+- [All 57 skills](docs/skills/README.md) and [all 24 principles](docs/principles/README.md).
 - [Preserved guide](docs/guide/README.md).
 - [Arena walkthrough](docs/workflows/arena.md), [Swarm walkthrough](docs/workflows/swarm.md) and [Poteto mode walkthrough](docs/workflows/poteto-mode.md).
 - [Troubleshooting](docs/troubleshooting.md) and [host test matrix](docs/testing/host-matrix.md).
@@ -30,3 +30,5 @@ It also makes `/sharpen` return four framing answers and a rewritten prompt with
 Instructions grant no installation, settings, integration, external write or recurring schedule permission. Development dependencies and host plugin loading are separate approvals. Models and workers require current exposed operations and actual observations.
 
 Candidate navigation is frozen with operative content. The final handoff must keep these bytes unchanged or explicitly refreeze and relink fresh blocked observations. Evidence/report commits can follow the tested commit only under the exact [tested-package marker contract](docs/maintenance/rollback.md). After blocked host records enter the inventory and regenerate the catalog, an explicit second freeze is required. Fresh blocked discovery records must then name that final SHA. No behavioral pass transfers between freezes.
+
+Use [`/statechart`](skills/statechart/SKILL.md) to turn a TLA+ model into user-facing charts or an agreed chart into a model. [Execution prerequisites](skills/statechart/references/execution.md) are explicit; unavailable tools leave verification blocked.

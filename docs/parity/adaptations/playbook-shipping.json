@@ -22,7 +22,7 @@
       "sourcePath": "LICENSE"
     },
     "rationale": "Adopt actual merged/trunk-base confirmation and exclusive post-merge child movement while preserving stronger bounded watches, exact revision checks and explicit external permissions.",
-    "upstreamCommit": "88d47514b82e7c44f00f2b2a72ff6dd12158038c",
+    "upstreamCommit": "4ec7ffa173eaa70d3d9467a627baf0954645a353",
     "upstreamPath": "skills/poteto-mode/playbooks/shipping.md",
     "upstreamSha256": "bf56339bdf7e0223bcff5abf4e8599e3f5b547b3fcc3b4ce9475e6e7dda14a9f",
     "verification": {

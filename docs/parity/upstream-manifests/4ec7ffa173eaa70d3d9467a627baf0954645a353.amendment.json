@@ -1,0 +1,55 @@
+{
+  "accepted": false,
+  "acceptedBaseline": {
+    "canonicalManifestSha256": "b28816da61e6844890b7cf41ae9597c854e39332818dad6abc9cae9f0167c437",
+    "commit": "182f2ce414e83224915c190d2f63239c1608d0a5",
+    "manifestPath": "docs/parity/upstream-manifests/182f2ce414e83224915c190d2f63239c1608d0a5.json",
+    "manifestSha256": "110d4ea749f9dfa5eb69a4978ed125765218492764198b4de1020976ea962384",
+    "receipt": {
+      "commit": "182f2ce414e83224915c190d2f63239c1608d0a5",
+      "evidencePath": "docs/releases/0.2.2.md",
+      "evidenceSha256": "5780e374f94a8ce6982107252d4aed1c1a142e58d2f635e0944c3d6ef9d88bbf",
+      "kind": "pstack-accepted-baseline",
+      "manifestPath": "docs/parity/upstream-manifests/182f2ce414e83224915c190d2f63239c1608d0a5.json",
+      "manifestSha256": "110d4ea749f9dfa5eb69a4978ed125765218492764198b4de1020976ea962384",
+      "packageCommit": "a254a54cb716511d7438520fcb38fa693108edba",
+      "schemaVersion": 1
+    },
+    "receiptSha256": "f4feb12f1a8053319e5bd46af6cc7bac367333137799016a839578d0610a6639"
+  },
+  "archiveSha256": "00afa0d6537ceca2f1ce61757bf51edea0e52d6fef728b5d9b1757d7a9694ab8",
+  "candidateSource": "4ec7ffa173eaa70d3d9467a627baf0954645a353",
+  "candidateVersion": "0.2.3",
+  "changedCanonicalFiles": [
+    ".cursor-plugin/plugin.json",
+    "README.md",
+    "docs/guide/06-verify-and-ship.md",
+    "plugin.json",
+    "skills/poteto-help/SKILL.md",
+    "skills/statechart/SKILL.md",
+    "skills/statechart/scripts/chart-to-tla.mjs",
+    "skills/statechart/scripts/compare-charts.mjs",
+    "skills/statechart/scripts/lib.mjs",
+    "skills/statechart/scripts/model/OutputFolder.cfg",
+    "skills/statechart/scripts/model/OutputFolder.map.mjs",
+    "skills/statechart/scripts/model/OutputFolder.tla",
+    "skills/statechart/scripts/statechart.mjs",
+    "skills/statechart/scripts/test/statechart.test.mjs",
+    "skills/statechart/scripts/test/sync.mmd",
+    "skills/statechart/scripts/test/upload.mmd",
+    "skills/statechart/scripts/tlc-to-chart.mjs"
+  ],
+  "checks": {
+    "hostWorkflows": {
+      "chatgpt": "not-run",
+      "codex": "not-run"
+    }
+  },
+  "fullUpdaterApplyInvoked": false,
+  "kind": "pstack-unaccepted-candidate-amendment",
+  "manifestSha256": "02c6312000ba84d07ac9d7ccd9fc936bb3571af2463555af7d27f0addd481d4a",
+  "packageCommit": "56fe4587d30e1ebcc682c602a7fb5b34bb81079f",
+  "previousSource": "88d47514b82e7c44f00f2b2a72ff6dd12158038c",
+  "refreshed": false,
+  "schemaVersion": 1
+}

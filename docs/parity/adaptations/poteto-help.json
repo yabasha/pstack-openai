@@ -47,7 +47,9 @@
       "skills/sharpen/SKILL.md",
       "skills/ketchup/SKILL.md",
       "skills/create-formal-verification-skill/SKILL.md",
-      "skills/maintain-formal-verification-skill/SKILL.md"
+      "skills/maintain-formal-verification-skill/SKILL.md",
+      "skills/statechart/SKILL.md",
+      "skills/statechart/references/execution.md"
     ],
     "destinationPath": "skills/poteto-help/SKILL.md",
     "disposition": "runtime",
@@ -56,10 +58,10 @@
       "license": "MIT",
       "sourcePath": "LICENSE"
     },
-    "rationale": "Amend unaccepted 0.2.3 for PR #729: adopt explicit rewrite-only sharpen, align caller docs and cases, preserve portable identity and permission boundaries.",
-    "upstreamCommit": "88d47514b82e7c44f00f2b2a72ff6dd12158038c",
+    "rationale": "Amend unaccepted 0.2.3 for PR #729: adopt explicit rewrite-only sharpen, align caller docs and cases, preserve portable identity and permission boundaries. Reviewed 0.15.30 statechart routing and provenance while preserving the port manifest and host contracts.",
+    "upstreamCommit": "4ec7ffa173eaa70d3d9467a627baf0954645a353",
     "upstreamPath": "skills/poteto-help/SKILL.md",
-    "upstreamSha256": "67c77ee5e91c19809b01d08cc73cc2870a52fb95fc64dc33328bf8ff9e49891c",
+    "upstreamSha256": "7022e2cd0d65d5964151444c4efa82a34792a6644210a0ba60d7d6cfa69c72b8",
     "verification": {
       "chatgpt": {
         "evidence": [],
@@ -85,7 +87,7 @@
       "sourcePath": "LICENSE"
     },
     "rationale": "Preserve the complete help routing, metadata, source invocation aliases, prompting advice and recipes. Bind source-host setup, persistence, models, workers and loop behavior to observed portable capabilities and explicit authorization. Pending local destinations remain visible. Explain source customization options before baseline acceptance, but gate acting on personal-mode drafting and custom skill edits on complete reviewed baseline dispositions and per-host supported-behavior evidence or explicit blocks, independently of authorization.",
-    "upstreamCommit": "88d47514b82e7c44f00f2b2a72ff6dd12158038c",
+    "upstreamCommit": "4ec7ffa173eaa70d3d9467a627baf0954645a353",
     "upstreamPath": "skills/poteto-help/references/prompting.md",
     "upstreamSha256": "463f450c44a60afd001a2f69fdf8a5dea174351f339369b12ec3c41515e564d3",
     "verification": {
@@ -113,7 +115,7 @@
       "sourcePath": "LICENSE"
     },
     "rationale": "Amend unaccepted 0.2.3 for PR #729: adopt explicit rewrite-only sharpen, align caller docs and cases, preserve portable identity and permission boundaries.",
-    "upstreamCommit": "88d47514b82e7c44f00f2b2a72ff6dd12158038c",
+    "upstreamCommit": "4ec7ffa173eaa70d3d9467a627baf0954645a353",
     "upstreamPath": "skills/poteto-help/references/recipes.md",
     "upstreamSha256": "f2d573014f72f7c798b1998b45f4360a8a83e7b8026c4ed9074e56c5a9d49338",
     "verification": {

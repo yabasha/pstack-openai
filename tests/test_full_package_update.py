@@ -31,7 +31,7 @@ class FullPackageUpdateTests(unittest.TestCase):
     snapshot = apply_fixtures.UpstreamApplyTests.snapshot
 
     def setUp(self):
-        tmp = tempfile.TemporaryDirectory(prefix='pstack-full-update-',dir=ROOT.parent)
+        tmp = tempfile.TemporaryDirectory(prefix='pstack-full-update-',dir=Path.home()/'Herd')
         self.addCleanup(tmp.cleanup)
         self.container = Path(tmp.name)
         repo = self.container/'repository'; repo.mkdir()

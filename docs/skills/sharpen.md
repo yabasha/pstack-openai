@@ -175,7 +175,7 @@ The following statuses come from the current parity inventory. Pending aggregate
 
 Destination: [skills/sharpen/SKILL.md](../../skills/sharpen/SKILL.md).
 
-Upstream commit: `88d47514b82e7c44f00f2b2a72ff6dd12158038c`. SHA-256: `563dfc460c605d311e650726288e2f1cbd61eab817db178d6e7e29643e07e7a2`.
+Upstream commit: `4ec7ffa173eaa70d3d9467a627baf0954645a353`. SHA-256: `563dfc460c605d311e650726288e2f1cbd61eab817db178d6e7e29643e07e7a2`.
 
 Disposition: `runtime`. Aggregate adaptation status: `adapted-reviewed`.
 

@@ -17,7 +17,7 @@
       "sourcePath": "LICENSE"
     },
     "rationale": "Add usable empty-data initialization, seed-precondition failure and stand-in target gaps; preserve project-local and capability contracts.",
-    "upstreamCommit": "88d47514b82e7c44f00f2b2a72ff6dd12158038c",
+    "upstreamCommit": "4ec7ffa173eaa70d3d9467a627baf0954645a353",
     "upstreamPath": "skills/create-verification-skill/SKILL.md",
     "upstreamSha256": "d353973547bf8ad8977eca645f4cd4feaed0d32f4b43d1448f906b0a76c4d694",
     "verification": {
@@ -45,7 +45,7 @@
       "sourcePath": "LICENSE"
     },
     "rationale": "Preserve the complete Notes feature-map example verbatim, including exact commands, user entry points, four-heading feature contracts and proof rules.",
-    "upstreamCommit": "88d47514b82e7c44f00f2b2a72ff6dd12158038c",
+    "upstreamCommit": "4ec7ffa173eaa70d3d9467a627baf0954645a353",
     "upstreamPath": "skills/create-verification-skill/references/feature-map-example/README.md",
     "upstreamSha256": "cb7bd782cf89968a4ba3d58a5151db837430db92d19a6f52a906973b77b516ba",
     "verification": {
@@ -73,7 +73,7 @@
       "sourcePath": "LICENSE"
     },
     "rationale": "Preserve the complete Notes feature-map example verbatim, including exact commands, user entry points, four-heading feature contracts and proof rules.",
-    "upstreamCommit": "88d47514b82e7c44f00f2b2a72ff6dd12158038c",
+    "upstreamCommit": "4ec7ffa173eaa70d3d9467a627baf0954645a353",
     "upstreamPath": "skills/create-verification-skill/references/feature-map-example/create-note.md",
     "upstreamSha256": "644a44c74f35d38c2feb7cd05a0121fdebbb623e8dc376c185b565a581d1ccf7",
     "verification": {
@@ -101,7 +101,7 @@
       "sourcePath": "LICENSE"
     },
     "rationale": "Preserve the complete Notes feature-map example verbatim, including exact commands, user entry points, four-heading feature contracts and proof rules.",
-    "upstreamCommit": "88d47514b82e7c44f00f2b2a72ff6dd12158038c",
+    "upstreamCommit": "4ec7ffa173eaa70d3d9467a627baf0954645a353",
     "upstreamPath": "skills/create-verification-skill/references/feature-map-example/search.md",
     "upstreamSha256": "6e87b9e7f2791a7776ba1bb83f371cd285c306c67f19d245cc4dd6ca3015c823",
     "verification": {

@@ -97,7 +97,7 @@ The following statuses come from the current parity inventory. Pending aggregate
 
 Destination: [skills/interrogate/SKILL.md](../../skills/interrogate/SKILL.md).
 
-Upstream commit: `88d47514b82e7c44f00f2b2a72ff6dd12158038c`. SHA-256: `a16dfe179005abc22a4651b82f25b0c8ab953284276efe4e6dc341958fb63647`.
+Upstream commit: `4ec7ffa173eaa70d3d9467a627baf0954645a353`. SHA-256: `a16dfe179005abc22a4651b82f25b0c8ab953284276efe4e6dc341958fb63647`.
 
 Disposition: `runtime`. Aggregate adaptation status: `adapted-reviewed`.
 
@@ -108,7 +108,7 @@ Disposition: `runtime`. Aggregate adaptation status: `adapted-reviewed`.
 
 Destination: [skills/interrogate/references/code-quality-review.md](../../skills/interrogate/references/code-quality-review.md).
 
-Upstream commit: `88d47514b82e7c44f00f2b2a72ff6dd12158038c`. SHA-256: `79162fda183eafd40d51661fbb5e151c7ba250f89e506ba17f5bd135dcbd50a8`.
+Upstream commit: `4ec7ffa173eaa70d3d9467a627baf0954645a353`. SHA-256: `79162fda183eafd40d51661fbb5e151c7ba250f89e506ba17f5bd135dcbd50a8`.
 
 Disposition: `runtime`. Aggregate adaptation status: `unchanged-reviewed`.
 
@@ -119,7 +119,7 @@ Disposition: `runtime`. Aggregate adaptation status: `unchanged-reviewed`.
 
 Destination: [skills/interrogate/references/reviewer-prompt.md](../../skills/interrogate/references/reviewer-prompt.md).
 
-Upstream commit: `88d47514b82e7c44f00f2b2a72ff6dd12158038c`. SHA-256: `f6005cc2b535006fca97a96c5bfda49df57312eedf1ffd8d1aaaf3eb33817c25`.
+Upstream commit: `4ec7ffa173eaa70d3d9467a627baf0954645a353`. SHA-256: `f6005cc2b535006fca97a96c5bfda49df57312eedf1ffd8d1aaaf3eb33817c25`.
 
 Disposition: `runtime`. Aggregate adaptation status: `adapted-reviewed`.
 
@@ -130,7 +130,7 @@ Disposition: `runtime`. Aggregate adaptation status: `adapted-reviewed`.
 
 Destination: [skills/interrogate/references/rubric.md](../../skills/interrogate/references/rubric.md).
 
-Upstream commit: `88d47514b82e7c44f00f2b2a72ff6dd12158038c`. SHA-256: `0f9c6bdb0b96e26dbde5f6407f417e0c02f54080e7a1268d8994f3c3ec6c5ac0`.
+Upstream commit: `4ec7ffa173eaa70d3d9467a627baf0954645a353`. SHA-256: `0f9c6bdb0b96e26dbde5f6407f417e0c02f54080e7a1268d8994f3c3ec6c5ac0`.
 
 Disposition: `runtime`. Aggregate adaptation status: `adapted-reviewed`.
 
@@ -141,7 +141,7 @@ Disposition: `runtime`. Aggregate adaptation status: `adapted-reviewed`.
 
 Destination: [skills/interrogate/references/lead-judgment.md](../../skills/interrogate/references/lead-judgment.md).
 
-Upstream commit: `88d47514b82e7c44f00f2b2a72ff6dd12158038c`. SHA-256: `355f5195a76bc75a655125292369f2a8231a2b61fabe5188d8f1386060922b87`.
+Upstream commit: `4ec7ffa173eaa70d3d9467a627baf0954645a353`. SHA-256: `355f5195a76bc75a655125292369f2a8231a2b61fabe5188d8f1386060922b87`.
 
 Disposition: `runtime`. Aggregate adaptation status: `unchanged-reviewed`.
 

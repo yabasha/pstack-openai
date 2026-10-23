@@ -15,7 +15,7 @@
       "sourcePath": "LICENSE"
     },
     "rationale": "Preserve the complete read-only watcher, exported functions, CLI options, independent PR classification, tier-major stack policy and verified queue ordering. Require explicit repository and full 40-character expected head at the CLI and exported snapshot/runner boundaries before reads or successful verdicts, with full observed head equality and snapshot head revalidation, finite snapshot and pagination budgets, terminal authentication/transport failures and injected transport. The source has no merge, comment or push operation, so duplicate-action and unauthorized-merge checks assert that repeated reads emit no mutation commands. Wrapper runtime auto-install is disabled and bootstrap requires explicit setup. Local fake policy/transport tests pass 46 cases and 138 assertions after the exact-head correction; commander-dependent CLI tests and typecheck remain blocked by missing installed dependencies. Initial RED accidentally called real read-only gh commands before transport injection; this is recorded as a failed test-boundary check, not fake evidence. Self-review covers all source files and the exact-head correction. Adaptation status is a candidate for fresh independent source review. CLI and compile runtime checks remain dependency-blocked; host verification remains not-run. No host pass claimed.",
-    "upstreamCommit": "88d47514b82e7c44f00f2b2a72ff6dd12158038c",
+    "upstreamCommit": "4ec7ffa173eaa70d3d9467a627baf0954645a353",
     "upstreamPath": "skills/poteto-mode/scripts/watch-pr/cli.test.ts",
     "upstreamSha256": "a35592b4c6da96caf8d47987e9cd503fab6c7774ab87d11a43f24b4b5df2a9d1",
     "verification": {
@@ -45,7 +45,7 @@
       "sourcePath": "LICENSE"
     },
     "rationale": "Preserve the complete read-only watcher, exported functions, CLI options, independent PR classification, tier-major stack policy and verified queue ordering. Require explicit repository and full 40-character expected head at the CLI and exported snapshot/runner boundaries before reads or successful verdicts, with full observed head equality and snapshot head revalidation, finite snapshot and pagination budgets, terminal authentication/transport failures and injected transport. The source has no merge, comment or push operation, so duplicate-action and unauthorized-merge checks assert that repeated reads emit no mutation commands. Wrapper runtime auto-install is disabled and bootstrap requires explicit setup. Local fake policy/transport tests pass 46 cases and 138 assertions after the exact-head correction; commander-dependent CLI tests and typecheck remain blocked by missing installed dependencies. Initial RED accidentally called real read-only gh commands before transport injection; this is recorded as a failed test-boundary check, not fake evidence. Self-review covers all source files and the exact-head correction. Adaptation status is a candidate for fresh independent source review. CLI and compile runtime checks remain dependency-blocked; host verification remains not-run. No host pass claimed.",
-    "upstreamCommit": "88d47514b82e7c44f00f2b2a72ff6dd12158038c",
+    "upstreamCommit": "4ec7ffa173eaa70d3d9467a627baf0954645a353",
     "upstreamPath": "skills/poteto-mode/scripts/watch-pr/cli.ts",
     "upstreamSha256": "89c08863089181a232be782c4b2ed90a1552f44aeecb0dcb7aac2c623620e680",
     "verification": {
@@ -75,7 +75,7 @@
       "sourcePath": "LICENSE"
     },
     "rationale": "Retain reader interface and local complete-thread fixtures because current pagination already provides stronger validation.",
-    "upstreamCommit": "88d47514b82e7c44f00f2b2a72ff6dd12158038c",
+    "upstreamCommit": "4ec7ffa173eaa70d3d9467a627baf0954645a353",
     "upstreamPath": "skills/poteto-mode/scripts/watch-pr/fakes.test-helper.ts",
     "upstreamSha256": "cf0c5ee61b4a73444c1b775cfb6c81a40d312e055dd21a1f5eae6276e54de13f",
     "verification": {
@@ -105,7 +105,7 @@
       "sourcePath": "LICENSE"
     },
     "rationale": "Port ACTION_REQUIRED gate regressions; retain injected transport and stronger pagination tests.",
-    "upstreamCommit": "88d47514b82e7c44f00f2b2a72ff6dd12158038c",
+    "upstreamCommit": "4ec7ffa173eaa70d3d9467a627baf0954645a353",
     "upstreamPath": "skills/poteto-mode/scripts/watch-pr/github.test.ts",
     "upstreamSha256": "70c9f03d8738228763846f2abdd8c7de7be68dba3035041482386a69cbf5639b",
     "verification": {
@@ -135,7 +135,7 @@
       "sourcePath": "LICENSE"
     },
     "rationale": "Port ACTION_REQUIRED Code Review Gate classification; preserve local injected transport, structured failures and bounded pagination.",
-    "upstreamCommit": "88d47514b82e7c44f00f2b2a72ff6dd12158038c",
+    "upstreamCommit": "4ec7ffa173eaa70d3d9467a627baf0954645a353",
     "upstreamPath": "skills/poteto-mode/scripts/watch-pr/github.ts",
     "upstreamSha256": "a605b8531468dbe4c07b93663c0993a9c11dc7e9179adde970f5c740396451d9",
     "verification": {
@@ -165,7 +165,7 @@
       "sourcePath": "LICENSE"
     },
     "rationale": "Retain local complete-thread reader call expectations; upstream pagination-interface replacement is not adopted.",
-    "upstreamCommit": "88d47514b82e7c44f00f2b2a72ff6dd12158038c",
+    "upstreamCommit": "4ec7ffa173eaa70d3d9467a627baf0954645a353",
     "upstreamPath": "skills/poteto-mode/scripts/watch-pr/policy.test.ts",
     "upstreamSha256": "146acabcfee9b6fa3342358eb0a9504aa65fd081bbc15b10adf9c1c5485067d2",
     "verification": {
@@ -195,7 +195,7 @@
       "sourcePath": "LICENSE"
     },
     "rationale": "Retain complete-thread readSnapshot integration with local reader and fail-closed behavior.",
-    "upstreamCommit": "88d47514b82e7c44f00f2b2a72ff6dd12158038c",
+    "upstreamCommit": "4ec7ffa173eaa70d3d9467a627baf0954645a353",
     "upstreamPath": "skills/poteto-mode/scripts/watch-pr/policy.ts",
     "upstreamSha256": "f2a3e31223d05edc05e5473cc3f8f3cb9bd20c202c30c6abe7f21f0f7aee8fbb",
     "verification": {
@@ -225,7 +225,7 @@
       "sourcePath": "LICENSE"
     },
     "rationale": "Preserve watcher presentation while rendering unknown mergeability and forge-blocked merge restrictions explicitly, without a positive Merge cell or an invented individual failed check.",
-    "upstreamCommit": "88d47514b82e7c44f00f2b2a72ff6dd12158038c",
+    "upstreamCommit": "4ec7ffa173eaa70d3d9467a627baf0954645a353",
     "upstreamPath": "skills/poteto-mode/scripts/watch-pr/render.ts",
     "upstreamSha256": "2b709e86628d5b8fdb61f860e60ababc342b0626c67576305442cf548283a604",
     "verification": {
@@ -255,7 +255,7 @@
       "sourcePath": "LICENSE"
     },
     "rationale": "Preserve the complete read-only watcher, exported functions, CLI options, independent PR classification, tier-major stack policy and verified queue ordering. Require explicit repository and full 40-character expected head at the CLI and exported snapshot/runner boundaries before reads or successful verdicts, with full observed head equality and snapshot head revalidation, finite snapshot and pagination budgets, terminal authentication/transport failures and injected transport. The source has no merge, comment or push operation, so duplicate-action and unauthorized-merge checks assert that repeated reads emit no mutation commands. Wrapper runtime auto-install is disabled and bootstrap requires explicit setup. Local fake policy/transport tests pass 46 cases and 138 assertions after the exact-head correction; commander-dependent CLI tests and typecheck remain blocked by missing installed dependencies. Initial RED accidentally called real read-only gh commands before transport injection; this is recorded as a failed test-boundary check, not fake evidence. Self-review covers all source files and the exact-head correction. Adaptation status is a candidate for fresh independent source review. CLI and compile runtime checks remain dependency-blocked; host verification remains not-run. No host pass claimed.",
-    "upstreamCommit": "88d47514b82e7c44f00f2b2a72ff6dd12158038c",
+    "upstreamCommit": "4ec7ffa173eaa70d3d9467a627baf0954645a353",
     "upstreamPath": "skills/poteto-mode/scripts/watch-pr/tsconfig.json",
     "upstreamSha256": "1ecccc72320b086c63ce3f73c959896fd747363e63553b3b1136296ea4069e45",
     "verification": {
@@ -285,7 +285,7 @@
       "sourcePath": "LICENSE"
     },
     "rationale": "Preserve the complete read-only watcher, exported functions, CLI options, independent PR classification, tier-major stack policy and verified queue ordering. Require explicit repository and full 40-character expected head at the CLI and exported snapshot/runner boundaries before reads or successful verdicts, with full observed head equality and snapshot head revalidation, finite snapshot and pagination budgets, terminal authentication/transport failures and injected transport. The source has no merge, comment or push operation, so duplicate-action and unauthorized-merge checks assert that repeated reads emit no mutation commands. Wrapper runtime auto-install is disabled and bootstrap requires explicit setup. Local fake policy/transport tests pass 46 cases and 138 assertions after the exact-head correction; commander-dependent CLI tests and typecheck remain blocked by missing installed dependencies. Initial RED accidentally called real read-only gh commands before transport injection; this is recorded as a failed test-boundary check, not fake evidence. Self-review covers all source files and the exact-head correction. Adaptation status is a candidate for fresh independent source review. CLI and compile runtime checks remain dependency-blocked; host verification remains not-run. No host pass claimed.",
-    "upstreamCommit": "88d47514b82e7c44f00f2b2a72ff6dd12158038c",
+    "upstreamCommit": "4ec7ffa173eaa70d3d9467a627baf0954645a353",
     "upstreamPath": "skills/poteto-mode/scripts/watch-pr/types.compile.ts",
     "upstreamSha256": "621af4c9a664fbf699a9737efccdc248abb416df8819c9dc5f824beae2b9b1d6",
     "verification": {
@@ -315,7 +315,7 @@
       "sourcePath": "LICENSE"
     },
     "rationale": "Retain current GitHubReader interface; pagination remains encapsulated in validated local transport.",
-    "upstreamCommit": "88d47514b82e7c44f00f2b2a72ff6dd12158038c",
+    "upstreamCommit": "4ec7ffa173eaa70d3d9467a627baf0954645a353",
     "upstreamPath": "skills/poteto-mode/scripts/watch-pr/types.ts",
     "upstreamSha256": "0cac435294dc85ce1ba755e8e67f6c5ab163dfa252f2722d6e3a2d68c58fec59",
     "verification": {
@@ -345,7 +345,7 @@
       "sourcePath": "LICENSE"
     },
     "rationale": "Preserve the complete read-only watcher, exported functions, CLI options, independent PR classification, tier-major stack policy and verified queue ordering. Require explicit repository and full 40-character expected head at the CLI and exported snapshot/runner boundaries before reads or successful verdicts, with full observed head equality and snapshot head revalidation, finite snapshot and pagination budgets, terminal authentication/transport failures and injected transport. The source has no merge, comment or push operation, so duplicate-action and unauthorized-merge checks assert that repeated reads emit no mutation commands. Wrapper runtime auto-install is disabled and bootstrap requires explicit setup. Local fake policy/transport tests pass 46 cases and 138 assertions after the exact-head correction; commander-dependent CLI tests and typecheck remain blocked by missing installed dependencies. Initial RED accidentally called real read-only gh commands before transport injection; this is recorded as a failed test-boundary check, not fake evidence. Self-review covers all source files and the exact-head correction. Adaptation status is a candidate for fresh independent source review. CLI and compile runtime checks remain dependency-blocked; host verification remains not-run. No host pass claimed.",
-    "upstreamCommit": "88d47514b82e7c44f00f2b2a72ff6dd12158038c",
+    "upstreamCommit": "4ec7ffa173eaa70d3d9467a627baf0954645a353",
     "upstreamPath": "skills/poteto-mode/scripts/watch-pr/watch-pr",
     "upstreamSha256": "d955603be6cc0e8b8ffcec722f635192b2261410b1f2929abea94480e47eb5d4",
     "verification": {

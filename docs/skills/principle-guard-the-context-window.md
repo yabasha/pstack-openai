@@ -85,7 +85,7 @@ The following statuses come from the current parity inventory. Pending aggregate
 
 Destination: [skills/principle-guard-the-context-window/SKILL.md](../../skills/principle-guard-the-context-window/SKILL.md).
 
-Upstream commit: `88d47514b82e7c44f00f2b2a72ff6dd12158038c`. SHA-256: `af0b9dd70b43628ce4a59a4d332e9d9ad055084e460f430e7a757495c627e81a`.
+Upstream commit: `4ec7ffa173eaa70d3d9467a627baf0954645a353`. SHA-256: `af0b9dd70b43628ce4a59a4d332e9d9ad055084e460f430e7a757495c627e81a`.
 
 Disposition: `runtime`. Aggregate adaptation status: `adapted-reviewed`.
 

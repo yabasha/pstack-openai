@@ -14,7 +14,7 @@
       "sourcePath": "LICENSE"
     },
     "rationale": "Retain complete current host adaptation; upstream prose consolidation does not add substantive required behavior.",
-    "upstreamCommit": "88d47514b82e7c44f00f2b2a72ff6dd12158038c",
+    "upstreamCommit": "4ec7ffa173eaa70d3d9467a627baf0954645a353",
     "upstreamPath": "skills/principle-explain-the-number/SKILL.md",
     "upstreamSha256": "cd5a25f9e7cf023627ccb470dc5faa97542f29b4319496a32b839a8e1e988047",
     "verification": {

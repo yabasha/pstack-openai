@@ -1,15 +1,14 @@
 # Source and support reconciliation
 
-The unaccepted 0.2.3 candidate records 172 source files at `88d47514b82e7c44f00f2b2a72ff6dd12158038c`, upstream 0.15.29, including 56 root skills, 24 principles and 23 playbooks. The accepted baseline remains 0.2.2. Source membership, installed discovery and host workflow support are separate.
+The unaccepted 0.2.3 candidate records 184 source files at `4ec7ffa173eaa70d3d9467a627baf0954645a353`, upstream 0.15.30, including 57 root skills, 24 principles and 23 playbooks. The accepted baseline remains 0.2.2. Source membership, installed discovery and host workflow support are separate.
 
-The registry contains 117 cases. Both hosts remain not-run. Prior installed observations do not transfer.
+The registry contains 122 cases. Both hosts remain not-run. Prior installed observations do not transfer.
 
 ## Exact canonical source map
 
-> Source metadata retained for lineage only: `.cursor-plugin/plugin.json`. Its destination is the portable plugin manifest.
-
 | Canonical source | Reviewed destination | Disposition / review | Current fragment | Behavioral caller cases |
 | --- | --- | --- | --- | --- |
+> | `.cursor-plugin/plugin.json` | [plugin.json](../../plugin.json) | metadata-replaced / adapted-reviewed | [docs/parity/adaptations/02-manifest.json](adaptations/02-manifest.json) | `package-discovery` |
 | `.gitignore` | [.gitignore](../../.gitignore) | reference-only / adapted-reviewed | [docs/parity/adaptations/24-metadata.json](adaptations/24-metadata.json) | `package-support-contracts` |
 | `LICENSE` | [LICENSE](../../LICENSE) | reference-only / unchanged-reviewed | [docs/parity/adaptations/24-metadata.json](adaptations/24-metadata.json) | `package-support-contracts`, `upstream-update`, `upstream-update-walkthrough` |
 | `README.md` | [README.md](../../README.md) | metadata-replaced / adapted-reviewed | [docs/parity/adaptations/24-metadata.json](adaptations/24-metadata.json) | `package-support-contracts` |
@@ -33,7 +32,7 @@ The registry contains 117 cases. Both hosts remain not-run. Prior installed obse
 | `docs/guide/03-understand.md` | [docs/guide/03-understand.md](../../docs/guide/03-understand.md) | reference-only / reference-only-reviewed | [docs/parity/adaptations/guides.json](adaptations/guides.json) | `guides-github-absent`, `guides-local-codex`, `guides-optional-setup-skipped`, `guides-ordinary-chatgpt`, `guides-worker-chatgpt` |
 | `docs/guide/04-design.md` | [docs/guide/04-design.md](../../docs/guide/04-design.md) | reference-only / reference-only-reviewed | [docs/parity/adaptations/guides.json](adaptations/guides.json) | `guides-github-absent`, `guides-local-codex`, `guides-optional-setup-skipped`, `guides-ordinary-chatgpt`, `guides-worker-chatgpt` |
 | `docs/guide/05-build-and-clean.md` | [docs/guide/05-build-and-clean.md](../../docs/guide/05-build-and-clean.md) | reference-only / reference-only-reviewed | [docs/parity/adaptations/guides.json](adaptations/guides.json) | `guides-github-absent`, `guides-local-codex`, `guides-optional-setup-skipped`, `guides-ordinary-chatgpt`, `guides-worker-chatgpt` |
-| `docs/guide/06-verify-and-ship.md` | [docs/guide/06-verify-and-ship.md](../../docs/guide/06-verify-and-ship.md) | reference-only / reference-only-reviewed | [docs/parity/adaptations/guides.json](adaptations/guides.json) | `guides-github-absent`, `guides-local-codex`, `guides-optional-setup-skipped`, `guides-ordinary-chatgpt`, `guides-worker-chatgpt` |
+| `docs/guide/06-verify-and-ship.md` | [docs/guide/06-verify-and-ship.md](../../docs/guide/06-verify-and-ship.md) | reference-only / adapted-reviewed | [docs/parity/adaptations/guides.json](adaptations/guides.json) | `guides-github-absent`, `guides-local-codex`, `guides-optional-setup-skipped`, `guides-ordinary-chatgpt`, `guides-worker-chatgpt` |
 | `docs/guide/07-overnight.md` | [docs/guide/07-overnight.md](../../docs/guide/07-overnight.md) | reference-only / reference-only-reviewed | [docs/parity/adaptations/guides.json](adaptations/guides.json) | `guides-github-absent`, `guides-local-codex`, `guides-optional-setup-skipped`, `guides-ordinary-chatgpt`, `guides-worker-chatgpt` |
 | `docs/guide/08-principles.md` | [docs/guide/08-principles.md](../../docs/guide/08-principles.md) | reference-only / reference-only-reviewed | [docs/parity/adaptations/guides.json](adaptations/guides.json) | `guides-github-absent`, `guides-local-codex`, `guides-optional-setup-skipped`, `guides-ordinary-chatgpt`, `guides-worker-chatgpt` |
 | `docs/guide/09-make-it-yours.md` | [docs/guide/09-make-it-yours.md](../../docs/guide/09-make-it-yours.md) | reference-only / reference-only-reviewed | [docs/parity/adaptations/guides.json](adaptations/guides.json) | `guides-github-absent`, `guides-local-codex`, `guides-optional-setup-skipped`, `guides-ordinary-chatgpt`, `guides-worker-chatgpt` |
@@ -161,6 +160,18 @@ The registry contains 117 cases. Both hosts remain not-run. Prior installed obse
 | `skills/show-me-your-work/SKILL.md` | [skills/show-me-your-work/SKILL.md](../../skills/show-me-your-work/SKILL.md) | runtime / adapted-reviewed | [docs/parity/adaptations/show-me-your-work.json](adaptations/show-me-your-work.json) | `authorized-program`, `bounded-improvement`, `decision-trail`, `interrupted-action`, `no-persistent-tool`, `package-discovery`, `stack-resume`, `unit-state`, `units-and-proof` |
 | `skills/show-me-your-work/references/decision-log-template.tsv` | [skills/show-me-your-work/references/decision-log-template.tsv](../../skills/show-me-your-work/references/decision-log-template.tsv) | runtime / unchanged-reviewed | [docs/parity/adaptations/show-me-your-work.json](adaptations/show-me-your-work.json) | `authorized-program`, `bounded-improvement`, `decision-trail`, `interrupted-action`, `no-persistent-tool`, `stack-resume`, `unit-state` |
 | `skills/show-me-your-work/scripts/log.sh` | [skills/show-me-your-work/scripts/log.sh](../../skills/show-me-your-work/scripts/log.sh) | runtime / adapted-reviewed | [docs/parity/adaptations/16-decision-log.json](adaptations/16-decision-log.json) | `authorized-program`, `bounded-improvement`, `decision-trail`, `interrupted-action`, `no-persistent-tool`, `stack-resume`, `unit-state` |
+| `skills/statechart/SKILL.md` | [skills/statechart/SKILL.md](../../skills/statechart/SKILL.md) | runtime / adapted-reviewed | [docs/parity/adaptations/statechart.json](adaptations/statechart.json) | `package-discovery`, `statechart-blocked-tools`, `statechart-execution-boundaries`, `statechart-from-chart`, `statechart-from-spec`, `statechart-result-scope` |
+| `skills/statechart/scripts/chart-to-tla.mjs` | [skills/statechart/scripts/chart-to-tla.mjs](../../skills/statechart/scripts/chart-to-tla.mjs) | runtime / adapted-reviewed | [docs/parity/adaptations/statechart.json](adaptations/statechart.json) | `statechart-blocked-tools`, `statechart-execution-boundaries`, `statechart-from-chart`, `statechart-from-spec`, `statechart-result-scope` |
+| `skills/statechart/scripts/compare-charts.mjs` | [skills/statechart/scripts/compare-charts.mjs](../../skills/statechart/scripts/compare-charts.mjs) | runtime / adapted-reviewed | [docs/parity/adaptations/statechart.json](adaptations/statechart.json) | `statechart-blocked-tools`, `statechart-execution-boundaries`, `statechart-from-chart`, `statechart-from-spec`, `statechart-result-scope` |
+| `skills/statechart/scripts/lib.mjs` | [skills/statechart/scripts/lib.mjs](../../skills/statechart/scripts/lib.mjs) | runtime / unchanged-reviewed | [docs/parity/adaptations/statechart.json](adaptations/statechart.json) | `statechart-blocked-tools`, `statechart-execution-boundaries`, `statechart-from-chart`, `statechart-from-spec`, `statechart-result-scope` |
+| `skills/statechart/scripts/model/OutputFolder.cfg` | [skills/statechart/scripts/model/OutputFolder.cfg](../../skills/statechart/scripts/model/OutputFolder.cfg) | runtime / unchanged-reviewed | [docs/parity/adaptations/statechart.json](adaptations/statechart.json) | `statechart-blocked-tools`, `statechart-execution-boundaries`, `statechart-from-chart`, `statechart-from-spec`, `statechart-result-scope` |
+| `skills/statechart/scripts/model/OutputFolder.map.mjs` | [skills/statechart/scripts/model/OutputFolder.map.mjs](../../skills/statechart/scripts/model/OutputFolder.map.mjs) | runtime / unchanged-reviewed | [docs/parity/adaptations/statechart.json](adaptations/statechart.json) | `statechart-blocked-tools`, `statechart-execution-boundaries`, `statechart-from-chart`, `statechart-from-spec`, `statechart-result-scope` |
+| `skills/statechart/scripts/model/OutputFolder.tla` | [skills/statechart/scripts/model/OutputFolder.tla](../../skills/statechart/scripts/model/OutputFolder.tla) | runtime / unchanged-reviewed | [docs/parity/adaptations/statechart.json](adaptations/statechart.json) | `statechart-blocked-tools`, `statechart-execution-boundaries`, `statechart-from-chart`, `statechart-from-spec`, `statechart-result-scope` |
+| `skills/statechart/scripts/statechart.mjs` | [skills/statechart/scripts/statechart.mjs](../../skills/statechart/scripts/statechart.mjs) | runtime / adapted-reviewed | [docs/parity/adaptations/statechart.json](adaptations/statechart.json) | `statechart-blocked-tools`, `statechart-execution-boundaries`, `statechart-from-chart`, `statechart-from-spec`, `statechart-result-scope` |
+| `skills/statechart/scripts/test/statechart.test.mjs` | [skills/statechart/scripts/test/statechart.test.mjs](../../skills/statechart/scripts/test/statechart.test.mjs) | runtime / adapted-reviewed | [docs/parity/adaptations/statechart.json](adaptations/statechart.json) | `statechart-blocked-tools`, `statechart-execution-boundaries`, `statechart-from-chart`, `statechart-from-spec`, `statechart-result-scope` |
+| `skills/statechart/scripts/test/sync.mmd` | [skills/statechart/scripts/test/sync.mmd](../../skills/statechart/scripts/test/sync.mmd) | runtime / unchanged-reviewed | [docs/parity/adaptations/statechart.json](adaptations/statechart.json) | `statechart-blocked-tools`, `statechart-execution-boundaries`, `statechart-from-chart`, `statechart-from-spec`, `statechart-result-scope` |
+| `skills/statechart/scripts/test/upload.mmd` | [skills/statechart/scripts/test/upload.mmd](../../skills/statechart/scripts/test/upload.mmd) | runtime / unchanged-reviewed | [docs/parity/adaptations/statechart.json](adaptations/statechart.json) | `statechart-blocked-tools`, `statechart-execution-boundaries`, `statechart-from-chart`, `statechart-from-spec`, `statechart-result-scope` |
+| `skills/statechart/scripts/tlc-to-chart.mjs` | [skills/statechart/scripts/tlc-to-chart.mjs](../../skills/statechart/scripts/tlc-to-chart.mjs) | runtime / adapted-reviewed | [docs/parity/adaptations/statechart.json](adaptations/statechart.json) | `statechart-blocked-tools`, `statechart-execution-boundaries`, `statechart-from-chart`, `statechart-from-spec`, `statechart-result-scope` |
 | `skills/swarm/SKILL.md` | [skills/swarm/SKILL.md](../../skills/swarm/SKILL.md) | runtime / adapted-reviewed | [docs/parity/adaptations/swarm.json](adaptations/swarm.json) | `authorized-program`, `package-discovery`, `partition-and-race`, `stack-resume`, `swarm-walkthrough`, `units-and-proof` |
 | `skills/tdd/SKILL.md` | [skills/tdd/SKILL.md](../../skills/tdd/SKILL.md) | runtime / adapted-reviewed | [docs/parity/adaptations/tdd.json](adaptations/tdd.json) | `package-discovery`, `red-green`, `reproduce-before-fix` |
 | `skills/teach/SKILL.md` | [skills/teach/SKILL.md](../../skills/teach/SKILL.md) | runtime / adapted-reviewed | [docs/parity/adaptations/teach.json](adaptations/teach.json) | `grounded-explanation`, `package-discovery` |
@@ -184,7 +195,9 @@ The registry contains 117 cases. Both hosts remain not-run. Prior installed obse
 
 ## Additional port-file provenance
 
-| Path | Role |
+These paths belong to the port, not the canonical source manifest. Contracts and synthetic fixtures do not establish installed discovery or host behavior. The retained Claude adapter remains a quoted reference.
+
+| Path | Ownership and purpose |
 | --- | --- |
 | [NOTICE.md](../../NOTICE.md) | Port-authored contract, test, candidate-amendment record or retained provenance |
 | [UPSTREAM.md](../../UPSTREAM.md) | Port-authored contract, test, candidate-amendment record or retained provenance |
@@ -238,6 +251,7 @@ The registry contains 117 cases. Both hosts remain not-run. Prior installed obse
 | [docs/catalog/skills/setup-pstack.json](../../docs/catalog/skills/setup-pstack.json) | Port-authored contract, test, candidate-amendment record or retained provenance |
 | [docs/catalog/skills/sharpen.json](../../docs/catalog/skills/sharpen.json) | Port-authored contract, test, candidate-amendment record or retained provenance |
 | [docs/catalog/skills/show-me-your-work.json](../../docs/catalog/skills/show-me-your-work.json) | Port-authored contract, test, candidate-amendment record or retained provenance |
+| [docs/catalog/skills/statechart.json](../../docs/catalog/skills/statechart.json) | Port-owned source, maintenance or contract record; no host support claim. |
 | [docs/catalog/skills/swarm.json](../../docs/catalog/skills/swarm.json) | Port-authored contract, test, candidate-amendment record or retained provenance |
 | [docs/catalog/skills/tdd.json](../../docs/catalog/skills/tdd.json) | Port-authored contract, test, candidate-amendment record or retained provenance |
 | [docs/catalog/skills/teach.json](../../docs/catalog/skills/teach.json) | Port-authored contract, test, candidate-amendment record or retained provenance |
@@ -332,6 +346,7 @@ The registry contains 117 cases. Both hosts remain not-run. Prior installed obse
 | [docs/parity/adaptations/reflect.json](../../docs/parity/adaptations/reflect.json) | Port-authored contract, test, candidate-amendment record or retained provenance |
 | [docs/parity/adaptations/setup-pstack.json](../../docs/parity/adaptations/setup-pstack.json) | Port-authored contract, test, candidate-amendment record or retained provenance |
 | [docs/parity/adaptations/show-me-your-work.json](../../docs/parity/adaptations/show-me-your-work.json) | Port-authored contract, test, candidate-amendment record or retained provenance |
+| [docs/parity/adaptations/statechart.json](../../docs/parity/adaptations/statechart.json) | Port-owned source, maintenance or contract record; no host support claim. |
 | [docs/parity/adaptations/swarm.json](../../docs/parity/adaptations/swarm.json) | Port-authored contract, test, candidate-amendment record or retained provenance |
 | [docs/parity/adaptations/tdd.json](../../docs/parity/adaptations/tdd.json) | Port-authored contract, test, candidate-amendment record or retained provenance |
 | [docs/parity/adaptations/teach.json](../../docs/parity/adaptations/teach.json) | Port-authored contract, test, candidate-amendment record or retained provenance |
@@ -430,6 +445,11 @@ The registry contains 117 cases. Both hosts remain not-run. Prior installed obse
 | [docs/parity/cases/skills/sharpen-unavailable-tools.json](../../docs/parity/cases/skills/sharpen-unavailable-tools.json) | Port-authored contract, test, candidate-amendment record or retained provenance |
 | [docs/parity/cases/skills/sharpen.json](../../docs/parity/cases/skills/sharpen.json) | Port-authored contract, test, candidate-amendment record or retained provenance |
 | [docs/parity/cases/skills/show-me-your-work.json](../../docs/parity/cases/skills/show-me-your-work.json) | Port-authored contract, test, candidate-amendment record or retained provenance |
+| [docs/parity/cases/skills/statechart-blocked-tools.json](../../docs/parity/cases/skills/statechart-blocked-tools.json) | Acceptance expectations requiring separate observed host evidence. |
+| [docs/parity/cases/skills/statechart-execution-boundaries.json](../../docs/parity/cases/skills/statechart-execution-boundaries.json) | Acceptance expectations requiring separate observed host evidence. |
+| [docs/parity/cases/skills/statechart-from-chart.json](../../docs/parity/cases/skills/statechart-from-chart.json) | Acceptance expectations requiring separate observed host evidence. |
+| [docs/parity/cases/skills/statechart-from-spec.json](../../docs/parity/cases/skills/statechart-from-spec.json) | Acceptance expectations requiring separate observed host evidence. |
+| [docs/parity/cases/skills/statechart-result-scope.json](../../docs/parity/cases/skills/statechart-result-scope.json) | Acceptance expectations requiring separate observed host evidence. |
 | [docs/parity/cases/skills/swarm.json](../../docs/parity/cases/skills/swarm.json) | Port-authored contract, test, candidate-amendment record or retained provenance |
 | [docs/parity/cases/skills/tdd.json](../../docs/parity/cases/skills/tdd.json) | Port-authored contract, test, candidate-amendment record or retained provenance |
 | [docs/parity/cases/skills/teach.json](../../docs/parity/cases/skills/teach.json) | Port-authored contract, test, candidate-amendment record or retained provenance |
@@ -661,8 +681,11 @@ The registry contains 117 cases. Both hosts remain not-run. Prior installed obse
 | [docs/parity/upstream-manifests/182f2ce414e83224915c190d2f63239c1608d0a5.apply.json](../../docs/parity/upstream-manifests/182f2ce414e83224915c190d2f63239c1608d0a5.apply.json) | Port-authored contract, test, candidate-amendment record or retained provenance |
 | [docs/parity/upstream-manifests/182f2ce414e83224915c190d2f63239c1608d0a5.json](../../docs/parity/upstream-manifests/182f2ce414e83224915c190d2f63239c1608d0a5.json) | Port-authored contract, test, candidate-amendment record or retained provenance |
 | [docs/parity/upstream-manifests/182f2ce414e83224915c190d2f63239c1608d0a5.previous-fragments.json](../../docs/parity/upstream-manifests/182f2ce414e83224915c190d2f63239c1608d0a5.previous-fragments.json) | Port-authored contract, test, candidate-amendment record or retained provenance |
+| [docs/parity/upstream-manifests/4ec7ffa173eaa70d3d9467a627baf0954645a353.amendment.json](../../docs/parity/upstream-manifests/4ec7ffa173eaa70d3d9467a627baf0954645a353.amendment.json) | Immutable source lineage or candidate amendment history; staging does not accept a baseline. |
+| [docs/parity/upstream-manifests/4ec7ffa173eaa70d3d9467a627baf0954645a353.json](../../docs/parity/upstream-manifests/4ec7ffa173eaa70d3d9467a627baf0954645a353.json) | Immutable source lineage or candidate amendment history; staging does not accept a baseline. |
 | [docs/parity/upstream-manifests/88d47514b82e7c44f00f2b2a72ff6dd12158038c.amendment.json](../../docs/parity/upstream-manifests/88d47514b82e7c44f00f2b2a72ff6dd12158038c.amendment.json) | Port-authored contract, test, candidate-amendment record or retained provenance |
 | [docs/parity/upstream-manifests/88d47514b82e7c44f00f2b2a72ff6dd12158038c.json](../../docs/parity/upstream-manifests/88d47514b82e7c44f00f2b2a72ff6dd12158038c.json) | Port-authored contract, test, candidate-amendment record or retained provenance |
+| [docs/parity/upstream-manifests/88d47514b82e7c44f00f2b2a72ff6dd12158038c.previous-fragments.json](../../docs/parity/upstream-manifests/88d47514b82e7c44f00f2b2a72ff6dd12158038c.previous-fragments.json) | Immutable source lineage or candidate amendment history; staging does not accept a baseline. |
 | [docs/parity/upstream-manifests/99743e9c151c8537cbbf1f98bb38f34ef3368453.apply.json](../../docs/parity/upstream-manifests/99743e9c151c8537cbbf1f98bb38f34ef3368453.apply.json) | Port-authored contract, test, candidate-amendment record or retained provenance |
 | [docs/parity/upstream-manifests/99743e9c151c8537cbbf1f98bb38f34ef3368453.json](../../docs/parity/upstream-manifests/99743e9c151c8537cbbf1f98bb38f34ef3368453.json) | Port-authored contract, test, candidate-amendment record or retained provenance |
 | [docs/parity/upstream-manifests/99743e9c151c8537cbbf1f98bb38f34ef3368453.previous-fragments.json](../../docs/parity/upstream-manifests/99743e9c151c8537cbbf1f98bb38f34ef3368453.previous-fragments.json) | Port-authored contract, test, candidate-amendment record or retained provenance |
@@ -729,6 +752,7 @@ The registry contains 117 cases. Both hosts remain not-run. Prior installed obse
 | [docs/skills/setup-pstack.md](../../docs/skills/setup-pstack.md) | Port-authored contract, test, candidate-amendment record or retained provenance |
 | [docs/skills/sharpen.md](../../docs/skills/sharpen.md) | Port-authored contract, test, candidate-amendment record or retained provenance |
 | [docs/skills/show-me-your-work.md](../../docs/skills/show-me-your-work.md) | Port-authored contract, test, candidate-amendment record or retained provenance |
+| [docs/skills/statechart.md](../../docs/skills/statechart.md) | Generated reviewed catalog page, not workflow evidence. |
 | [docs/skills/swarm.md](../../docs/skills/swarm.md) | Port-authored contract, test, candidate-amendment record or retained provenance |
 | [docs/skills/tdd.md](../../docs/skills/tdd.md) | Port-authored contract, test, candidate-amendment record or retained provenance |
 | [docs/skills/teach.md](../../docs/skills/teach.md) | Port-authored contract, test, candidate-amendment record or retained provenance |
@@ -755,6 +779,9 @@ The registry contains 117 cases. Both hosts remain not-run. Prior installed obse
 | [references/workflow-ownership.md](../../references/workflow-ownership.md) | Port-authored contract, test, candidate-amendment record or retained provenance |
 | [skills/poteto-mode/scripts/bootstrap.test.ts](../../skills/poteto-mode/scripts/bootstrap.test.ts) | Port-authored contract, test, candidate-amendment record or retained provenance |
 | [skills/poteto-mode/scripts/worktree-audit.py](../../skills/poteto-mode/scripts/worktree-audit.py) | Port-authored contract, test, candidate-amendment record or retained provenance |
+| [skills/statechart/references/execution.md](../../skills/statechart/references/execution.md) | Both-host tool, permission, isolation and evidence contract for statechart. |
+| [skills/statechart/scripts/host-runtime.mjs](../../skills/statechart/scripts/host-runtime.mjs) | Port adaptation for explicit local renderer selection and bounded subprocess options. |
+| [skills/statechart/scripts/test/host-runtime.test.mjs](../../skills/statechart/scripts/test/host-runtime.test.mjs) | Local structural or helper regression; not installed-host evidence. |
 | [tests/__init__.py](../../tests/__init__.py) | Port-authored contract, test, candidate-amendment record or retained provenance |
 | [tests/evidence_fixtures.py](../../tests/evidence_fixtures.py) | Port-authored contract, test, candidate-amendment record or retained provenance |
 | [tests/fixture_paths.py](../../tests/fixture_paths.py) | Port-authored contract, test, candidate-amendment record or retained provenance |
@@ -787,20 +814,18 @@ The registry contains 117 cases. Both hosts remain not-run. Prior installed obse
 
 ## Transaction-generated paths
 
-The amendment retains prior fragments here. No full updater apply was invoked for PR #729; its apply path is reserved, not an existing approval or execution receipt. The separate amendment record documents the actual operation. Acceptance is unchanged.
-
-| Path | Role |
+| Path | Ownership |
 | --- | --- |
-| `docs/parity/upstream-manifests/88d47514b82e7c44f00f2b2a72ff6dd12158038c.apply.json` | Prior-fragment record, unchanged acceptance receipt, or reserved full-apply path |
-| `docs/parity/upstream-manifests/88d47514b82e7c44f00f2b2a72ff6dd12158038c.previous-fragments.json` | Prior-fragment record, unchanged acceptance receipt, or reserved full-apply path |
-| `docs/parity/upstream-manifests/accepted.json` | Prior-fragment record, unchanged acceptance receipt, or reserved full-apply path |
+| `docs/parity/upstream-manifests/4ec7ffa173eaa70d3d9467a627baf0954645a353.apply.json` | Separate reviewed transaction or acceptance gate; absence is not completion. |
+| `docs/parity/upstream-manifests/4ec7ffa173eaa70d3d9467a627baf0954645a353.previous-fragments.json` | Separate reviewed transaction or acceptance gate; absence is not completion. |
+| `docs/parity/upstream-manifests/accepted.json` | Separate reviewed transaction or acceptance gate; absence is not completion. |
 
 ## Reserved report-only paths
 
-| Reserved path | Planned role |
+| Path | Ownership |
 | --- | --- |
-| `docs/parity/tested-package.json` | Reserved report-only evidence path |
-| `docs/releases/0.1.0.md` | Reserved report-only evidence path |
-| `docs/releases/0.2.3.md` | Reserved report-only evidence path |
-| `docs/releases/remaining-controller-report.md` | Reserved report-only evidence path |
-| `docs/testing/release-checklist.md` | Reserved report-only evidence path |
+| `docs/parity/tested-package.json` | Reserved report/evidence path, never automatic behavioral qualification. |
+| `docs/releases/0.1.0.md` | Reserved report/evidence path, never automatic behavioral qualification. |
+| `docs/releases/0.2.3.md` | Reserved report/evidence path, never automatic behavioral qualification. |
+| `docs/releases/remaining-controller-report.md` | Reserved report/evidence path, never automatic behavioral qualification. |
+| `docs/testing/release-checklist.md` | Reserved report/evidence path, never automatic behavioral qualification. |

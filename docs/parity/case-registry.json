@@ -3010,6 +3010,7 @@
         "skills/setup-pstack/SKILL.md",
         "skills/sharpen/SKILL.md",
         "skills/show-me-your-work/SKILL.md",
+        "skills/statechart/SKILL.md",
         "skills/swarm/SKILL.md",
         "skills/tdd/SKILL.md",
         "skills/teach/SKILL.md",
@@ -5339,6 +5340,271 @@
       },
       "sourcePaths": [
         "skills/sharpen/SKILL.md"
+      ],
+      "structuralOnly": false
+    },
+    {
+      "caseFile": "docs/parity/cases/skills/statechart-from-spec.json",
+      "caseId": "statechart-from-spec",
+      "executionModes": {
+        "pass": [
+          "direct"
+        ],
+        "reduced-pass": [
+          "direct"
+        ]
+      },
+      "hostStatus": {
+        "chatgpt": "not-run",
+        "codex": "not-run"
+      },
+      "requiredHosts": [
+        "chatgpt",
+        "codex"
+      ],
+      "requiredObservations": {
+        "pass": [
+          "read",
+          "execution",
+          "isolated-write",
+          "image-inspection",
+          "real-entrypoint-replay"
+        ],
+        "reduced-pass": [
+          "supplied-input",
+          "response",
+          "review-outcome"
+        ]
+      },
+      "requiredPermissions": {
+        "pass": [
+          "execution",
+          "writes"
+        ],
+        "reduced-pass": []
+      },
+      "sourcePaths": [
+        "skills/statechart/SKILL.md",
+        "skills/statechart/scripts/chart-to-tla.mjs",
+        "skills/statechart/scripts/compare-charts.mjs",
+        "skills/statechart/scripts/lib.mjs",
+        "skills/statechart/scripts/model/OutputFolder.cfg",
+        "skills/statechart/scripts/model/OutputFolder.map.mjs",
+        "skills/statechart/scripts/model/OutputFolder.tla",
+        "skills/statechart/scripts/statechart.mjs",
+        "skills/statechart/scripts/test/statechart.test.mjs",
+        "skills/statechart/scripts/test/sync.mmd",
+        "skills/statechart/scripts/test/upload.mmd",
+        "skills/statechart/scripts/tlc-to-chart.mjs"
+      ],
+      "structuralOnly": false
+    },
+    {
+      "caseFile": "docs/parity/cases/skills/statechart-from-chart.json",
+      "caseId": "statechart-from-chart",
+      "executionModes": {
+        "pass": [
+          "direct"
+        ],
+        "reduced-pass": [
+          "direct"
+        ]
+      },
+      "hostStatus": {
+        "chatgpt": "not-run",
+        "codex": "not-run"
+      },
+      "requiredHosts": [
+        "chatgpt",
+        "codex"
+      ],
+      "requiredObservations": {
+        "pass": [
+          "read",
+          "execution",
+          "isolated-write",
+          "image-inspection",
+          "real-entrypoint-replay"
+        ],
+        "reduced-pass": [
+          "supplied-input",
+          "response",
+          "review-outcome"
+        ]
+      },
+      "requiredPermissions": {
+        "pass": [
+          "execution",
+          "writes"
+        ],
+        "reduced-pass": []
+      },
+      "sourcePaths": [
+        "skills/statechart/SKILL.md",
+        "skills/statechart/scripts/chart-to-tla.mjs",
+        "skills/statechart/scripts/compare-charts.mjs",
+        "skills/statechart/scripts/lib.mjs",
+        "skills/statechart/scripts/model/OutputFolder.cfg",
+        "skills/statechart/scripts/model/OutputFolder.map.mjs",
+        "skills/statechart/scripts/model/OutputFolder.tla",
+        "skills/statechart/scripts/statechart.mjs",
+        "skills/statechart/scripts/test/statechart.test.mjs",
+        "skills/statechart/scripts/test/sync.mmd",
+        "skills/statechart/scripts/test/upload.mmd",
+        "skills/statechart/scripts/tlc-to-chart.mjs"
+      ],
+      "structuralOnly": false
+    },
+    {
+      "caseFile": "docs/parity/cases/skills/statechart-blocked-tools.json",
+      "caseId": "statechart-blocked-tools",
+      "executionModes": {
+        "pass": [
+          "direct"
+        ],
+        "reduced-pass": [
+          "direct"
+        ]
+      },
+      "hostStatus": {
+        "chatgpt": "not-run",
+        "codex": "not-run"
+      },
+      "requiredHosts": [
+        "chatgpt",
+        "codex"
+      ],
+      "requiredObservations": {
+        "pass": [
+          "supplied-input",
+          "response",
+          "review-outcome"
+        ],
+        "reduced-pass": [
+          "supplied-input",
+          "response",
+          "review-outcome"
+        ]
+      },
+      "requiredPermissions": {
+        "pass": [],
+        "reduced-pass": []
+      },
+      "sourcePaths": [
+        "skills/statechart/SKILL.md",
+        "skills/statechart/scripts/chart-to-tla.mjs",
+        "skills/statechart/scripts/compare-charts.mjs",
+        "skills/statechart/scripts/lib.mjs",
+        "skills/statechart/scripts/model/OutputFolder.cfg",
+        "skills/statechart/scripts/model/OutputFolder.map.mjs",
+        "skills/statechart/scripts/model/OutputFolder.tla",
+        "skills/statechart/scripts/statechart.mjs",
+        "skills/statechart/scripts/test/statechart.test.mjs",
+        "skills/statechart/scripts/test/sync.mmd",
+        "skills/statechart/scripts/test/upload.mmd",
+        "skills/statechart/scripts/tlc-to-chart.mjs"
+      ],
+      "structuralOnly": false
+    },
+    {
+      "caseFile": "docs/parity/cases/skills/statechart-execution-boundaries.json",
+      "caseId": "statechart-execution-boundaries",
+      "executionModes": {
+        "pass": [
+          "direct"
+        ],
+        "reduced-pass": [
+          "direct"
+        ]
+      },
+      "hostStatus": {
+        "chatgpt": "not-run",
+        "codex": "not-run"
+      },
+      "requiredHosts": [
+        "chatgpt",
+        "codex"
+      ],
+      "requiredObservations": {
+        "pass": [
+          "supplied-input",
+          "response",
+          "review-outcome"
+        ],
+        "reduced-pass": [
+          "supplied-input",
+          "response",
+          "review-outcome"
+        ]
+      },
+      "requiredPermissions": {
+        "pass": [],
+        "reduced-pass": []
+      },
+      "sourcePaths": [
+        "skills/statechart/SKILL.md",
+        "skills/statechart/scripts/chart-to-tla.mjs",
+        "skills/statechart/scripts/compare-charts.mjs",
+        "skills/statechart/scripts/lib.mjs",
+        "skills/statechart/scripts/model/OutputFolder.cfg",
+        "skills/statechart/scripts/model/OutputFolder.map.mjs",
+        "skills/statechart/scripts/model/OutputFolder.tla",
+        "skills/statechart/scripts/statechart.mjs",
+        "skills/statechart/scripts/test/statechart.test.mjs",
+        "skills/statechart/scripts/test/sync.mmd",
+        "skills/statechart/scripts/test/upload.mmd",
+        "skills/statechart/scripts/tlc-to-chart.mjs"
+      ],
+      "structuralOnly": false
+    },
+    {
+      "caseFile": "docs/parity/cases/skills/statechart-result-scope.json",
+      "caseId": "statechart-result-scope",
+      "executionModes": {
+        "pass": [
+          "direct"
+        ],
+        "reduced-pass": [
+          "direct"
+        ]
+      },
+      "hostStatus": {
+        "chatgpt": "not-run",
+        "codex": "not-run"
+      },
+      "requiredHosts": [
+        "chatgpt",
+        "codex"
+      ],
+      "requiredObservations": {
+        "pass": [
+          "supplied-input",
+          "response",
+          "review-outcome"
+        ],
+        "reduced-pass": [
+          "supplied-input",
+          "response",
+          "review-outcome"
+        ]
+      },
+      "requiredPermissions": {
+        "pass": [],
+        "reduced-pass": []
+      },
+      "sourcePaths": [
+        "skills/statechart/SKILL.md",
+        "skills/statechart/scripts/chart-to-tla.mjs",
+        "skills/statechart/scripts/compare-charts.mjs",
+        "skills/statechart/scripts/lib.mjs",
+        "skills/statechart/scripts/model/OutputFolder.cfg",
+        "skills/statechart/scripts/model/OutputFolder.map.mjs",
+        "skills/statechart/scripts/model/OutputFolder.tla",
+        "skills/statechart/scripts/statechart.mjs",
+        "skills/statechart/scripts/test/statechart.test.mjs",
+        "skills/statechart/scripts/test/sync.mmd",
+        "skills/statechart/scripts/test/upload.mmd",
+        "skills/statechart/scripts/tlc-to-chart.mjs"
       ],
       "structuralOnly": false
     }

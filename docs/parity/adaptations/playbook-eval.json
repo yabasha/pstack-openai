@@ -17,7 +17,7 @@
       "sourcePath": "LICENSE"
     },
     "rationale": "Upstream changes are editorial compression or delegate-effort reminders already governed by shared mode policy. Retain explicit local host, offline audit, authorization and evidence bindings.",
-    "upstreamCommit": "88d47514b82e7c44f00f2b2a72ff6dd12158038c",
+    "upstreamCommit": "4ec7ffa173eaa70d3d9467a627baf0954645a353",
     "upstreamPath": "skills/poteto-mode/playbooks/eval.md",
     "upstreamSha256": "a93d449a908236afa6645179651844094b1547dbab4e484cffcdda630e4b90bf",
     "verification": {

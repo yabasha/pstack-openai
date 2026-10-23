@@ -12,7 +12,7 @@
       "sourcePath": "LICENSE"
     },
     "rationale": "Preserve the complete canonical boundary principle and invocation metadata; add capability discovery, authorization limits and explicit reduced or blocked outcomes. No comparison content or personal preferences added.",
-    "upstreamCommit": "88d47514b82e7c44f00f2b2a72ff6dd12158038c",
+    "upstreamCommit": "4ec7ffa173eaa70d3d9467a627baf0954645a353",
     "upstreamPath": "skills/principle-boundary-discipline/SKILL.md",
     "upstreamSha256": "62ac2862c2caa22dd14531f51c9c6bb445ceb198ca98a687e25b4d47c1f10a28",
     "verification": {

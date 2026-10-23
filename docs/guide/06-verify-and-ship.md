@@ -160,3 +160,7 @@ The [Shipping playbook](../../skills/poteto-mode/playbooks/shipping.md) verifies
 Next: [Run work while you sleep](./07-overnight.md).
 
 Illustrations retain the canonical source bytes and alt text. Attribution: Copyright (c) 2026 Lauren Tan, MIT, from cursor/plugins pstack 0.15.15 at df581122cde17e6e27686b5a448bde23e4ad4318. See [license](../../LICENSE) and [lineage](../../UPSTREAM.md). The pictured workers, logs and controls are illustrative.
+
+## Explain modeled behavior with statechart
+
+Use [`/statechart`](../../skills/statechart/SKILL.md) when a reviewer needs user-facing states and numbered counterexamples, or wants to agree on a chart before modeling the implementation. Preserve existing spec rules, cite each code guard and check the comparison model with its own configuration. Review [execution prerequisites](../../skills/statechart/references/execution.md) first. A model result does not replace a test or reproduction through real user/client entry points. Without execution or image inspection, hand off an unverified draft and name the blocked steps.

@@ -83,7 +83,7 @@ The following statuses come from the current parity inventory. Pending aggregate
 
 Destination: [skills/principle-foundational-thinking/SKILL.md](../../skills/principle-foundational-thinking/SKILL.md).
 
-Upstream commit: `88d47514b82e7c44f00f2b2a72ff6dd12158038c`. SHA-256: `864b827e8199d946ce58beca0f89c4ed4099ed6e426fb698a3aaa45de2a9eea2`.
+Upstream commit: `4ec7ffa173eaa70d3d9467a627baf0954645a353`. SHA-256: `864b827e8199d946ce58beca0f89c4ed4099ed6e426fb698a3aaa45de2a9eea2`.
 
 Disposition: `runtime`. Aggregate adaptation status: `adapted-reviewed`.
 

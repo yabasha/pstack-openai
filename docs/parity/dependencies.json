@@ -1,10 +1,10 @@
 {
-  "auditedPackageCommit": "7e4e3454813408edbaf07f50493441725b06a3ef",
+  "auditedPackageCommit": "56fe4587d30e1ebcc682c602a7fb5b34bb81079f",
   "counts": {
-    "files": 172,
+    "files": 184,
     "playbooks": 23,
-    "rootSkills": 56,
-    "supportIncludingPlaybooks": 116
+    "rootSkills": 57,
+    "supportIncludingPlaybooks": 127
   },
   "dependencies": [
     {
@@ -1451,6 +1451,44 @@
       "id": "formal-verifier",
       "requiredProof": "Run the chosen check with tool version and bounds, catch an isolated broken variant, restore and rerun; keep evidence. Testing is not formal proof.",
       "setupEffects": "Installation or downloads require applicable authorization. No product changes, personal configuration, external writes or schedules by default."
+    },
+    {
+      "binding": {
+        "kind": "selected-runtime",
+        "paths": [
+          "skills/statechart/scripts/statechart.mjs",
+          "skills/statechart/scripts/host-runtime.mjs",
+          "skills/statechart/references/execution.md"
+        ]
+      },
+      "blockedReason": "No observed Java/TLC run, approved PNG renderer or both-host end-to-end verification for this candidate. Java/TLC are absent in this preparation environment.",
+      "callers": [
+        "README.md",
+        "docs/guide/06-verify-and-ship.md",
+        "skills/poteto-help/SKILL.md",
+        "skills/statechart/SKILL.md",
+        "skills/statechart/scripts/chart-to-tla.mjs",
+        "skills/statechart/scripts/compare-charts.mjs",
+        "skills/statechart/scripts/lib.mjs",
+        "skills/statechart/scripts/model/OutputFolder.cfg",
+        "skills/statechart/scripts/model/OutputFolder.map.mjs",
+        "skills/statechart/scripts/model/OutputFolder.tla",
+        "skills/statechart/scripts/statechart.mjs",
+        "skills/statechart/scripts/test/statechart.test.mjs",
+        "skills/statechart/scripts/test/sync.mmd",
+        "skills/statechart/scripts/test/upload.mmd",
+        "skills/statechart/scripts/tlc-to-chart.mjs"
+      ],
+      "evidence": [
+        {
+          "kind": "contract-only",
+          "path": "skills/statechart/references/execution.md"
+        }
+      ],
+      "executionStatus": "blocked",
+      "id": "statechart-runtime",
+      "requiredProof": "Record exact tool and jar versions/hashes; execute the bounded check, inspect every PNG and reproduce counterexamples through real entry points on each host. Distinguish expected failures, unchecked rules and partial output.",
+      "setupEffects": "No automatic install, network package acquisition, personal settings or product mutation. Mapping execution and scratch writes require authorization."
     }
   ],
   "historicalSetup": {
@@ -1504,7 +1542,7 @@
         }
       ],
       "sourcePath": ".cursor-plugin/plugin.json",
-      "sourceSha256": "079de0bc2c331df98ecf388b84c938a3a61910f49a1cc37e680d9e2ca9bcd324"
+      "sourceSha256": "fa7d12176796787ce8503adcbb740fb43f5476e3df3d5e829a7835b3a9c8297d"
     },
     {
       "dependencyIds": [
@@ -1565,10 +1603,11 @@
         "webhook-secrets",
         "tailscale",
         "benny-enablement",
-        "repository-access"
+        "repository-access",
+        "statechart-runtime"
       ],
       "destinationPath": "README.md",
-      "destinationSha256": "2cd36095564c8ed1338291394de6bc5c3744e836a09e098ad17cce731d5c8095",
+      "destinationSha256": "cfe45a25cf9eb5722acbf8e15e7a9291c77740abfe01e85b447b35fd3731064c",
       "kind": "support",
       "packageDependencies": [
         "UPSTREAM.md",
@@ -1578,7 +1617,9 @@
         "docs/principles/README.md",
         "docs/guide/README.md",
         "docs/compatibility.md",
-        "docs/parity/case-registry.json"
+        "docs/parity/case-registry.json",
+        "skills/statechart/SKILL.md",
+        "skills/statechart/references/execution.md"
       ],
       "references": [
         {
@@ -1670,10 +1711,15 @@
           "dependencyId": "repository-access",
           "destinationLines": [],
           "sourceLines": []
+        },
+        {
+          "dependencyId": "statechart-runtime",
+          "destinationLines": [],
+          "sourceLines": []
         }
       ],
       "sourcePath": "README.md",
-      "sourceSha256": "b928886260bd551b0c8f3e58617a5dc3ad8dfc1293d096b1ef81b84007532486"
+      "sourceSha256": "095b3c4d9e4ceb11e01293d9bde7b0346a7a1262ad1f12b3394d3a0d1bef689b"
     },
     {
       "dependencyIds": [
@@ -3461,10 +3507,11 @@
         "workers-models",
         "loop-scheduler",
         "repository-gates",
-        "example-controls"
+        "example-controls",
+        "statechart-runtime"
       ],
       "destinationPath": "docs/guide/06-verify-and-ship.md",
-      "destinationSha256": "08ab73d09470d4c4f948d01149715a145042f3291683a5256be9f2f983d5daba",
+      "destinationSha256": "4762eb313b41e5ec65a34d25fe93e38f598b6def2679d2c756f3ad2344d8ee01",
       "kind": "support",
       "packageDependencies": [
         "LICENSE",
@@ -3488,7 +3535,9 @@
         "skills/principle-build-the-lever/SKILL.md",
         "skills/principle-explain-the-number/SKILL.md",
         "skills/principle-prove-it-works/SKILL.md",
-        "skills/swarm/SKILL.md"
+        "skills/swarm/SKILL.md",
+        "skills/statechart/SKILL.md",
+        "skills/statechart/references/execution.md"
       ],
       "references": [
         {
@@ -3525,10 +3574,15 @@
           "dependencyId": "example-controls",
           "destinationLines": [],
           "sourceLines": []
+        },
+        {
+          "dependencyId": "statechart-runtime",
+          "destinationLines": [],
+          "sourceLines": []
         }
       ],
       "sourcePath": "docs/guide/06-verify-and-ship.md",
-      "sourceSha256": "5c16c88bf377bf5ea5ffd4cd9dc1a83f19a0415090cc4645865d16a5500d1cab"
+      "sourceSha256": "9276f7a20f72c115536e0a12f08aa2e9699fcd7498c217d9a02a7149c7d3a4a8"
     },
     {
       "dependencyIds": [
@@ -3912,12 +3966,12 @@
     {
       "dependencyIds": [],
       "destinationPath": "references/upstream-metadata/plugin.json",
-      "destinationSha256": "8a5811042556a0a981e9fdd08a2c726be76458833d64b484acaa611291308c2a",
+      "destinationSha256": "b17556047a5df5fd2c42550af8d965ece3c2e55aa68082def5951e09f4788ae1",
       "kind": "support",
       "packageDependencies": [],
       "references": [],
       "sourcePath": "plugin.json",
-      "sourceSha256": "8a5811042556a0a981e9fdd08a2c726be76458833d64b484acaa611291308c2a"
+      "sourceSha256": "b17556047a5df5fd2c42550af8d965ece3c2e55aa68082def5951e09f4788ae1"
     },
     {
       "dependencyIds": [
@@ -4300,6 +4354,54 @@
       ],
       "sourcePath": "skills/correct/SKILL.md",
       "sourceSha256": "e347045d00c967a0b831ef883cc6ac79d21329aa10b5968637df95de7febf0ba"
+    },
+    {
+      "dependencyIds": [
+        "formal-verifier",
+        "git",
+        "workers-models",
+        "history-persistence",
+        "repository-gates"
+      ],
+      "destinationPath": "skills/create-formal-verification-skill/SKILL.md",
+      "destinationSha256": "35942ca148f00968065b8eeeffcb24432c81bb531a6de7369a737cd7f1d36bab",
+      "kind": "root-skill",
+      "packageDependencies": [
+        "references/host-capabilities.md",
+        "references/workflow-ownership.md",
+        "references/model-roles.md",
+        "references/orchestration-contract.md",
+        "skills/maintain-formal-verification-skill/SKILL.md"
+      ],
+      "references": [
+        {
+          "dependencyId": "formal-verifier",
+          "destinationLines": [],
+          "sourceLines": []
+        },
+        {
+          "dependencyId": "git",
+          "destinationLines": [],
+          "sourceLines": []
+        },
+        {
+          "dependencyId": "workers-models",
+          "destinationLines": [],
+          "sourceLines": []
+        },
+        {
+          "dependencyId": "history-persistence",
+          "destinationLines": [],
+          "sourceLines": []
+        },
+        {
+          "dependencyId": "repository-gates",
+          "destinationLines": [],
+          "sourceLines": []
+        }
+      ],
+      "sourcePath": "skills/create-formal-verification-skill/SKILL.md",
+      "sourceSha256": "6c934cd15a9583533ff9b7a9cad62775d7e80402d26d3ba7f74f79ea21a1d8eb"
     },
     {
       "dependencyIds": [
@@ -4766,6 +4868,54 @@
     },
     {
       "dependencyIds": [
+        "formal-verifier",
+        "git",
+        "workers-models",
+        "history-persistence",
+        "repository-gates"
+      ],
+      "destinationPath": "skills/maintain-formal-verification-skill/SKILL.md",
+      "destinationSha256": "997f8f06669e9321e3b0302ed2c70ea2c7d98f4bbf8c2a2720eb564c9bdf42be",
+      "kind": "root-skill",
+      "packageDependencies": [
+        "references/host-capabilities.md",
+        "references/workflow-ownership.md",
+        "references/model-roles.md",
+        "references/orchestration-contract.md",
+        "skills/create-formal-verification-skill/SKILL.md"
+      ],
+      "references": [
+        {
+          "dependencyId": "formal-verifier",
+          "destinationLines": [],
+          "sourceLines": []
+        },
+        {
+          "dependencyId": "git",
+          "destinationLines": [],
+          "sourceLines": []
+        },
+        {
+          "dependencyId": "workers-models",
+          "destinationLines": [],
+          "sourceLines": []
+        },
+        {
+          "dependencyId": "history-persistence",
+          "destinationLines": [],
+          "sourceLines": []
+        },
+        {
+          "dependencyId": "repository-gates",
+          "destinationLines": [],
+          "sourceLines": []
+        }
+      ],
+      "sourcePath": "skills/maintain-formal-verification-skill/SKILL.md",
+      "sourceSha256": "0c96f54293542d3818b68754562b338073958781a9684454611dca37592e2d2c"
+    },
+    {
+      "dependencyIds": [
         "workers-models",
         "loop-scheduler",
         "example-controls"
@@ -4907,10 +5057,11 @@
         "history-persistence",
         "loop-scheduler",
         "webhook-secrets",
-        "example-controls"
+        "example-controls",
+        "statechart-runtime"
       ],
       "destinationPath": "skills/poteto-help/SKILL.md",
-      "destinationSha256": "8e6a2147ca9a72ca2e64b8f4d4af702edc0bab3c8073f80aa5af3566897d1609",
+      "destinationSha256": "762deaeb6feca1770e95b195daa3bb1bc8bfec0133a491039be9e05564cc13e2",
       "kind": "root-skill",
       "packageDependencies": [
         "skills/poteto-mode/SKILL.md",
@@ -4958,7 +5109,9 @@
         "skills/sharpen/SKILL.md",
         "skills/ketchup/SKILL.md",
         "skills/create-formal-verification-skill/SKILL.md",
-        "skills/maintain-formal-verification-skill/SKILL.md"
+        "skills/maintain-formal-verification-skill/SKILL.md",
+        "skills/statechart/SKILL.md",
+        "skills/statechart/references/execution.md"
       ],
       "references": [
         {
@@ -5010,10 +5163,15 @@
           "dependencyId": "example-controls",
           "destinationLines": [],
           "sourceLines": []
+        },
+        {
+          "dependencyId": "statechart-runtime",
+          "destinationLines": [],
+          "sourceLines": []
         }
       ],
       "sourcePath": "skills/poteto-help/SKILL.md",
-      "sourceSha256": "67c77ee5e91c19809b01d08cc73cc2870a52fb95fc64dc33328bf8ff9e49891c"
+      "sourceSha256": "7022e2cd0d65d5964151444c4efa82a34792a6644210a0ba60d7d6cfa69c72b8"
     },
     {
       "dependencyIds": [
@@ -9392,6 +9550,306 @@
     },
     {
       "dependencyIds": [
+        "statechart-runtime"
+      ],
+      "destinationPath": "skills/statechart/SKILL.md",
+      "destinationSha256": "8ae0aba30a5bbd2505302bc3137dd0726cb3297fe764140ad7f9fbebd86184e6",
+      "kind": "root-skill",
+      "packageDependencies": [
+        "references/host-capabilities.md",
+        "references/workflow-ownership.md",
+        "references/model-roles.md",
+        "references/orchestration-contract.md",
+        "skills/statechart/references/execution.md",
+        "skills/statechart/scripts/statechart.mjs"
+      ],
+      "references": [
+        {
+          "dependencyId": "statechart-runtime",
+          "destinationLines": [],
+          "sourceLines": []
+        }
+      ],
+      "sourcePath": "skills/statechart/SKILL.md",
+      "sourceSha256": "9b2a6dccf86286646cffb3bd00f7ee060d6c26983e566c766d4be53aa56f9445"
+    },
+    {
+      "dependencyIds": [
+        "statechart-runtime"
+      ],
+      "destinationPath": "skills/statechart/scripts/chart-to-tla.mjs",
+      "destinationSha256": "dd40d67d42986f44c4c43551a4c895fb8e3204b64500c7564a7e7e52927b364f",
+      "kind": "support",
+      "packageDependencies": [
+        "references/host-capabilities.md",
+        "references/workflow-ownership.md",
+        "references/model-roles.md",
+        "references/orchestration-contract.md",
+        "skills/statechart/references/execution.md",
+        "skills/statechart/scripts/host-runtime.mjs",
+        "skills/statechart/scripts/lib.mjs"
+      ],
+      "references": [
+        {
+          "dependencyId": "statechart-runtime",
+          "destinationLines": [],
+          "sourceLines": []
+        }
+      ],
+      "sourcePath": "skills/statechart/scripts/chart-to-tla.mjs",
+      "sourceSha256": "9f794e273d0729ae874d68a67bfa1df4ebddc12420b7ab5081fdf58dceb729e4"
+    },
+    {
+      "dependencyIds": [
+        "statechart-runtime"
+      ],
+      "destinationPath": "skills/statechart/scripts/compare-charts.mjs",
+      "destinationSha256": "f729858301ed12d3579212c8992e6d5068ffa7977f7501c660e05fe8bee26e97",
+      "kind": "support",
+      "packageDependencies": [
+        "references/host-capabilities.md",
+        "references/workflow-ownership.md",
+        "references/model-roles.md",
+        "references/orchestration-contract.md",
+        "skills/statechart/references/execution.md",
+        "skills/statechart/scripts/host-runtime.mjs",
+        "skills/statechart/scripts/lib.mjs"
+      ],
+      "references": [
+        {
+          "dependencyId": "statechart-runtime",
+          "destinationLines": [],
+          "sourceLines": []
+        }
+      ],
+      "sourcePath": "skills/statechart/scripts/compare-charts.mjs",
+      "sourceSha256": "12f4dc4700093156978ef1785b92739c8cf1e8375b8d13201fcdc2006a20c43b"
+    },
+    {
+      "dependencyIds": [
+        "statechart-runtime"
+      ],
+      "destinationPath": "skills/statechart/scripts/lib.mjs",
+      "destinationSha256": "941280e42b9dbfd2b40116287a2ebbc6e391b826876a001b1ba7aff365c1e41d",
+      "kind": "support",
+      "packageDependencies": [
+        "references/host-capabilities.md",
+        "references/workflow-ownership.md",
+        "references/model-roles.md",
+        "references/orchestration-contract.md",
+        "skills/statechart/references/execution.md",
+        "skills/statechart/scripts/host-runtime.mjs"
+      ],
+      "references": [
+        {
+          "dependencyId": "statechart-runtime",
+          "destinationLines": [],
+          "sourceLines": []
+        }
+      ],
+      "sourcePath": "skills/statechart/scripts/lib.mjs",
+      "sourceSha256": "941280e42b9dbfd2b40116287a2ebbc6e391b826876a001b1ba7aff365c1e41d"
+    },
+    {
+      "dependencyIds": [
+        "statechart-runtime"
+      ],
+      "destinationPath": "skills/statechart/scripts/model/OutputFolder.cfg",
+      "destinationSha256": "8b9662ab7d51de9d54f84abab02888822da9c01ce4f1b86a6453a8a513773995",
+      "kind": "support",
+      "packageDependencies": [
+        "references/host-capabilities.md",
+        "references/workflow-ownership.md",
+        "references/model-roles.md",
+        "references/orchestration-contract.md",
+        "skills/statechart/references/execution.md"
+      ],
+      "references": [
+        {
+          "dependencyId": "statechart-runtime",
+          "destinationLines": [],
+          "sourceLines": []
+        }
+      ],
+      "sourcePath": "skills/statechart/scripts/model/OutputFolder.cfg",
+      "sourceSha256": "8b9662ab7d51de9d54f84abab02888822da9c01ce4f1b86a6453a8a513773995"
+    },
+    {
+      "dependencyIds": [
+        "statechart-runtime"
+      ],
+      "destinationPath": "skills/statechart/scripts/model/OutputFolder.map.mjs",
+      "destinationSha256": "33f2ef1c2ba397573206640843fffbc228d066e53fe5ced779d82f99600f3fd8",
+      "kind": "support",
+      "packageDependencies": [
+        "references/host-capabilities.md",
+        "references/workflow-ownership.md",
+        "references/model-roles.md",
+        "references/orchestration-contract.md",
+        "skills/statechart/references/execution.md",
+        "skills/statechart/scripts/host-runtime.mjs"
+      ],
+      "references": [
+        {
+          "dependencyId": "statechart-runtime",
+          "destinationLines": [],
+          "sourceLines": []
+        }
+      ],
+      "sourcePath": "skills/statechart/scripts/model/OutputFolder.map.mjs",
+      "sourceSha256": "33f2ef1c2ba397573206640843fffbc228d066e53fe5ced779d82f99600f3fd8"
+    },
+    {
+      "dependencyIds": [
+        "statechart-runtime"
+      ],
+      "destinationPath": "skills/statechart/scripts/model/OutputFolder.tla",
+      "destinationSha256": "75bef6811d9a8e56bd702fd8d782e52101918c8dc05c6cc9dc43d02b9fe1b56f",
+      "kind": "support",
+      "packageDependencies": [
+        "references/host-capabilities.md",
+        "references/workflow-ownership.md",
+        "references/model-roles.md",
+        "references/orchestration-contract.md",
+        "skills/statechart/references/execution.md"
+      ],
+      "references": [
+        {
+          "dependencyId": "statechart-runtime",
+          "destinationLines": [],
+          "sourceLines": []
+        }
+      ],
+      "sourcePath": "skills/statechart/scripts/model/OutputFolder.tla",
+      "sourceSha256": "75bef6811d9a8e56bd702fd8d782e52101918c8dc05c6cc9dc43d02b9fe1b56f"
+    },
+    {
+      "dependencyIds": [
+        "statechart-runtime"
+      ],
+      "destinationPath": "skills/statechart/scripts/statechart.mjs",
+      "destinationSha256": "4f99d4df1fe39670495266a1c8b450916e9441821fb76449acd1fed890068569",
+      "kind": "support",
+      "packageDependencies": [
+        "references/host-capabilities.md",
+        "references/workflow-ownership.md",
+        "references/model-roles.md",
+        "references/orchestration-contract.md",
+        "skills/statechart/references/execution.md",
+        "skills/statechart/scripts/host-runtime.mjs",
+        "skills/statechart/scripts/lib.mjs"
+      ],
+      "references": [
+        {
+          "dependencyId": "statechart-runtime",
+          "destinationLines": [],
+          "sourceLines": []
+        }
+      ],
+      "sourcePath": "skills/statechart/scripts/statechart.mjs",
+      "sourceSha256": "3c3ed2a29b9f0b2d037b434ef205f505939ac713c6a16f9a806844d513f957a0"
+    },
+    {
+      "dependencyIds": [
+        "statechart-runtime"
+      ],
+      "destinationPath": "skills/statechart/scripts/test/statechart.test.mjs",
+      "destinationSha256": "c6423ac7fd8d5afe82bfa4ca1e60e273037d80a82e416e49b6adc20584fc4862",
+      "kind": "support",
+      "packageDependencies": [
+        "references/host-capabilities.md",
+        "references/workflow-ownership.md",
+        "references/model-roles.md",
+        "references/orchestration-contract.md",
+        "skills/statechart/references/execution.md",
+        "skills/statechart/scripts/lib.mjs"
+      ],
+      "references": [
+        {
+          "dependencyId": "statechart-runtime",
+          "destinationLines": [],
+          "sourceLines": []
+        }
+      ],
+      "sourcePath": "skills/statechart/scripts/test/statechart.test.mjs",
+      "sourceSha256": "02302548c175f6bfc707aee30bd7ee81a2b1754eca6818c550bf20a68361e7cd"
+    },
+    {
+      "dependencyIds": [
+        "statechart-runtime"
+      ],
+      "destinationPath": "skills/statechart/scripts/test/sync.mmd",
+      "destinationSha256": "cb1f5387058a0f79d6187eb217690588a2e2d384637b4d53cbc4bb050c570757",
+      "kind": "support",
+      "packageDependencies": [
+        "references/host-capabilities.md",
+        "references/workflow-ownership.md",
+        "references/model-roles.md",
+        "references/orchestration-contract.md",
+        "skills/statechart/references/execution.md"
+      ],
+      "references": [
+        {
+          "dependencyId": "statechart-runtime",
+          "destinationLines": [],
+          "sourceLines": []
+        }
+      ],
+      "sourcePath": "skills/statechart/scripts/test/sync.mmd",
+      "sourceSha256": "cb1f5387058a0f79d6187eb217690588a2e2d384637b4d53cbc4bb050c570757"
+    },
+    {
+      "dependencyIds": [
+        "statechart-runtime"
+      ],
+      "destinationPath": "skills/statechart/scripts/test/upload.mmd",
+      "destinationSha256": "bbc1fa70e26cbcbcc7cde5d8fb7eda26df34b6d973053bf13c40b18527ff0e76",
+      "kind": "support",
+      "packageDependencies": [
+        "references/host-capabilities.md",
+        "references/workflow-ownership.md",
+        "references/model-roles.md",
+        "references/orchestration-contract.md",
+        "skills/statechart/references/execution.md"
+      ],
+      "references": [
+        {
+          "dependencyId": "statechart-runtime",
+          "destinationLines": [],
+          "sourceLines": []
+        }
+      ],
+      "sourcePath": "skills/statechart/scripts/test/upload.mmd",
+      "sourceSha256": "bbc1fa70e26cbcbcc7cde5d8fb7eda26df34b6d973053bf13c40b18527ff0e76"
+    },
+    {
+      "dependencyIds": [
+        "statechart-runtime"
+      ],
+      "destinationPath": "skills/statechart/scripts/tlc-to-chart.mjs",
+      "destinationSha256": "8a55f81a9bcc2909192c6ebf297025ccae53c1f2702bedf7cb900e49587a2039",
+      "kind": "support",
+      "packageDependencies": [
+        "references/host-capabilities.md",
+        "references/workflow-ownership.md",
+        "references/model-roles.md",
+        "references/orchestration-contract.md",
+        "skills/statechart/references/execution.md",
+        "skills/statechart/scripts/host-runtime.mjs",
+        "skills/statechart/scripts/lib.mjs"
+      ],
+      "references": [
+        {
+          "dependencyId": "statechart-runtime",
+          "destinationLines": [],
+          "sourceLines": []
+        }
+      ],
+      "sourcePath": "skills/statechart/scripts/tlc-to-chart.mjs",
+      "sourceSha256": "77aa854918f9c5d04fd3ad8838da39f24d8e05a2217a5c3be039d678509c6ef2"
+    },
+    {
+      "dependencyIds": [
         "workers-models",
         "history-persistence"
       ],
@@ -10086,103 +10544,7 @@
       ],
       "sourcePath": "skills/why/references/synthesizer-prompt.md",
       "sourceSha256": "11c62671aa7b7a6e3d36929ffe2b59bf95e6ca664eee4d93e6ee527dd3390ddb"
-    },
-    {
-      "dependencyIds": [
-        "formal-verifier",
-        "git",
-        "workers-models",
-        "history-persistence",
-        "repository-gates"
-      ],
-      "destinationPath": "skills/create-formal-verification-skill/SKILL.md",
-      "destinationSha256": "35942ca148f00968065b8eeeffcb24432c81bb531a6de7369a737cd7f1d36bab",
-      "kind": "root-skill",
-      "packageDependencies": [
-        "references/host-capabilities.md",
-        "references/workflow-ownership.md",
-        "references/model-roles.md",
-        "references/orchestration-contract.md",
-        "skills/maintain-formal-verification-skill/SKILL.md"
-      ],
-      "references": [
-        {
-          "dependencyId": "formal-verifier",
-          "destinationLines": [],
-          "sourceLines": []
-        },
-        {
-          "dependencyId": "git",
-          "destinationLines": [],
-          "sourceLines": []
-        },
-        {
-          "dependencyId": "workers-models",
-          "destinationLines": [],
-          "sourceLines": []
-        },
-        {
-          "dependencyId": "history-persistence",
-          "destinationLines": [],
-          "sourceLines": []
-        },
-        {
-          "dependencyId": "repository-gates",
-          "destinationLines": [],
-          "sourceLines": []
-        }
-      ],
-      "sourcePath": "skills/create-formal-verification-skill/SKILL.md",
-      "sourceSha256": "6c934cd15a9583533ff9b7a9cad62775d7e80402d26d3ba7f74f79ea21a1d8eb"
-    },
-    {
-      "dependencyIds": [
-        "formal-verifier",
-        "git",
-        "workers-models",
-        "history-persistence",
-        "repository-gates"
-      ],
-      "destinationPath": "skills/maintain-formal-verification-skill/SKILL.md",
-      "destinationSha256": "997f8f06669e9321e3b0302ed2c70ea2c7d98f4bbf8c2a2720eb564c9bdf42be",
-      "kind": "root-skill",
-      "packageDependencies": [
-        "references/host-capabilities.md",
-        "references/workflow-ownership.md",
-        "references/model-roles.md",
-        "references/orchestration-contract.md",
-        "skills/create-formal-verification-skill/SKILL.md"
-      ],
-      "references": [
-        {
-          "dependencyId": "formal-verifier",
-          "destinationLines": [],
-          "sourceLines": []
-        },
-        {
-          "dependencyId": "git",
-          "destinationLines": [],
-          "sourceLines": []
-        },
-        {
-          "dependencyId": "workers-models",
-          "destinationLines": [],
-          "sourceLines": []
-        },
-        {
-          "dependencyId": "history-persistence",
-          "destinationLines": [],
-          "sourceLines": []
-        },
-        {
-          "dependencyId": "repository-gates",
-          "destinationLines": [],
-          "sourceLines": []
-        }
-      ],
-      "sourcePath": "skills/maintain-formal-verification-skill/SKILL.md",
-      "sourceSha256": "0c96f54293542d3818b68754562b338073958781a9684454611dca37592e2d2c"
     }
   ],
-  "sourceCommit": "88d47514b82e7c44f00f2b2a72ff6dd12158038c"
+  "sourceCommit": "4ec7ffa173eaa70d3d9467a627baf0954645a353"
 }

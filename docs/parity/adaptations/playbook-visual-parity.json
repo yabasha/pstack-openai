@@ -18,7 +18,7 @@
       "sourcePath": "LICENSE"
     },
     "rationale": "Preserve all five visual-parity steps, immutable baseline and harness, component ownership, shared-primitives first, zero-diff acceptance, repeated per-component verification, per-component or safe-batch PR delivery and all reply artifacts. Controls, actual rendering, execution, worker isolation and external delivery require observed capabilities and authorization. Missing controls block visual pass. Sequential migration and explicit repetition disclose reduced capability. Opening a PR is deferred to Task 21 and Task 24 integration. No host runtime test was performed.",
-    "upstreamCommit": "88d47514b82e7c44f00f2b2a72ff6dd12158038c",
+    "upstreamCommit": "4ec7ffa173eaa70d3d9467a627baf0954645a353",
     "upstreamPath": "skills/poteto-mode/playbooks/visual-parity.md",
     "upstreamSha256": "950ca51999a6454c98eee6bcbc3d1bbe501a4e3a5d5439b6f6ddc378991b256c",
     "verification": {

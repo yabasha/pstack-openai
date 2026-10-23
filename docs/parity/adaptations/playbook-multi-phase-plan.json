@@ -37,7 +37,7 @@
       "sourcePath": "LICENSE"
     },
     "rationale": "Reflect upstream full-swarm cadence in generated planning template without reducing real-artifact or independent review requirements.",
-    "upstreamCommit": "88d47514b82e7c44f00f2b2a72ff6dd12158038c",
+    "upstreamCommit": "4ec7ffa173eaa70d3d9467a627baf0954645a353",
     "upstreamPath": "skills/poteto-mode/playbooks/multi-phase-plan.md",
     "upstreamSha256": "5f239457bfdec3345c92caa06c59bf0257c662b89353f25a1c02ea942dcd00b1",
     "verification": {

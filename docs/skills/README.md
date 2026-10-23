@@ -1,6 +1,6 @@
 # Skill catalog
 
-Generated from 56 reviewed leaf records, including 24 principles. No additional root skill is registered.
+Generated from 57 reviewed leaf records, including 24 principles. No additional root skill is registered.
 
 Host support depends on capabilities, permissions and observed evidence. Inventory review may remain pending, and a not-run result remains untested.
 
@@ -57,6 +57,7 @@ Source inventory: [docs/parity/inventory.json](../parity/inventory.json). Catalo
 | [setup-pstack](setup-pstack.md) | Configure pstack model choices per role and reasoning budget with confirmed availability and an explicit persistence gate. |
 | [sharpen](sharpen.md) | Make a prompt deeper without expanding scope, return four expert-framing answers and its rewrite, then stop. |
 | [show-me-your-work](show-me-your-work.md) | Keep a reviewable local decision trail for long-running or unattended work. |
+| [statechart](statechart.md) | Draw user-facing charts and counterexample stories from a TLA+ model, or check an agreed chart. |
 | [swarm](swarm.md) | Fan out N workers over slices, identical race briefs or a mixture, then return one evidenced report. |
 | [tdd](tdd.md) | Make broken behavior executable before fixing a bug with a clear cheap test path, then prove the focused regression test passes. |
 | [teach](teach.md) | Explain what a body of work is, how it works and why it was built that way at the learner pace, grounded in inspected files. |

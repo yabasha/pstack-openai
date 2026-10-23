@@ -84,7 +84,7 @@ The following statuses come from the current parity inventory. Pending aggregate
 
 Destination: [skills/principle-build-the-lever/SKILL.md](../../skills/principle-build-the-lever/SKILL.md).
 
-Upstream commit: `88d47514b82e7c44f00f2b2a72ff6dd12158038c`. SHA-256: `3434b0ad0c640c6f1d7960be7a8986c3bcdc14e26060360dec29903df60074ff`.
+Upstream commit: `4ec7ffa173eaa70d3d9467a627baf0954645a353`. SHA-256: `3434b0ad0c640c6f1d7960be7a8986c3bcdc14e26060360dec29903df60074ff`.
 
 Disposition: `runtime`. Aggregate adaptation status: `adapted-reviewed`.
 

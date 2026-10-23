@@ -80,7 +80,7 @@ The following statuses come from the current parity inventory. Pending aggregate
 
 Destination: [skills/principle-separate-before-serializing-shared-state/SKILL.md](../../skills/principle-separate-before-serializing-shared-state/SKILL.md).
 
-Upstream commit: `88d47514b82e7c44f00f2b2a72ff6dd12158038c`. SHA-256: `05294b40448e927c5da1c7b6f5c6b9fed3744637e3833d2d948b9154a9dd00bb`.
+Upstream commit: `4ec7ffa173eaa70d3d9467a627baf0954645a353`. SHA-256: `05294b40448e927c5da1c7b6f5c6b9fed3744637e3833d2d948b9154a9dd00bb`.
 
 Disposition: `runtime`. Aggregate adaptation status: `adapted-reviewed`.
 

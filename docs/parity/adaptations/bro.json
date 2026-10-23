@@ -10,7 +10,7 @@
       "sourcePath": "LICENSE"
     },
     "rationale": "Retain the complete canonical skill verbatim. Restatement needs only the previous assistant message; no host tool or API adaptation is required. Missing history is explicit in the acceptance case.",
-    "upstreamCommit": "88d47514b82e7c44f00f2b2a72ff6dd12158038c",
+    "upstreamCommit": "4ec7ffa173eaa70d3d9467a627baf0954645a353",
     "upstreamPath": "skills/bro/SKILL.md",
     "upstreamSha256": "aa329d0ceeeecb6822a7174ad76bb07a7826a3c52ceb6a588dec4138815084bb",
     "verification": {

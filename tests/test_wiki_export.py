@@ -10,7 +10,7 @@ from unittest.mock import patch
 from tools.export_wiki import export_wiki
 
 ROOT = Path(__file__).resolve().parents[1]
-HERD = ROOT.parent
+HERD = Path.home() / 'Herd'
 
 
 class WikiExportTests(unittest.TestCase):

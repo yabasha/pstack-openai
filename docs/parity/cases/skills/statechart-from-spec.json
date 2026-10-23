@@ -1,0 +1,33 @@
+{
+  "expectedBlocked": "Missing authorization, tools, safe output ownership or required observations blocks the dependent step. Do not install dependencies, run unreviewed mappings, overwrite user files or report an incomplete check as passed.",
+  "expectedFull": "Trace guards to file:line and atomic code steps; preserve invariants and config selection, inspect every PNG and replay each counterexample through real user/client entry points. Report checked, unchecked, expected failures and partial traces separately.",
+  "expectedReduced": "Use supplied readable inputs for a labeled draft or partial assessment. Name every unexecuted check and missing artifact; do not infer a host pass.",
+  "forbiddenClaims": [
+    "Exit zero proves every rule or the production system.",
+    "A green chart proves the product fix.",
+    "A draft or helper test proves host discovery.",
+    "A missing renderer authorizes downloading one.",
+    "A reporting crash, timeout or cancellation is a complete pass."
+  ],
+  "id": "statechart-from-spec",
+  "prompt": "Chart this retry/payment model, compare its unchanged spec with its own config, and evaluate the proposed fix.",
+  "requirements": [
+    "Separate observations for ChatGPT and Codex with actual exposed tools and permissions.",
+    "Reviewed mappings, explicit dependency selection, output ownership and surviving evidence.",
+    "Report model bounds, reproduction and visual inspection separately."
+  ],
+  "sourcePaths": [
+    "skills/statechart/SKILL.md",
+    "skills/statechart/scripts/chart-to-tla.mjs",
+    "skills/statechart/scripts/compare-charts.mjs",
+    "skills/statechart/scripts/lib.mjs",
+    "skills/statechart/scripts/model/OutputFolder.cfg",
+    "skills/statechart/scripts/model/OutputFolder.map.mjs",
+    "skills/statechart/scripts/model/OutputFolder.tla",
+    "skills/statechart/scripts/statechart.mjs",
+    "skills/statechart/scripts/test/statechart.test.mjs",
+    "skills/statechart/scripts/test/sync.mmd",
+    "skills/statechart/scripts/test/upload.mmd",
+    "skills/statechart/scripts/tlc-to-chart.mjs"
+  ]
+}

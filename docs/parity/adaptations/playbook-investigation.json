@@ -35,7 +35,7 @@
       "sourcePath": "LICENSE"
     },
     "rationale": "Preserve all four Investigation steps, answer ownership, read-only cited explanation or recommendation, how and conditional why routing, exact checkpoint, output sections or tradeoffs table, unslop, no PR or babysit, architect exception and user handoff to Bug fix or Feature, real judgment and premise pushback. Bind reads, delegated roles and selection to actual capabilities and permissions. Direct script helpers are absent. Structural checks are not host behavior; inaccessible evidence and independent workers remain runtime limits. Task 24 must integrate this fragment and caller registry; both hosts remain not-run.",
-    "upstreamCommit": "88d47514b82e7c44f00f2b2a72ff6dd12158038c",
+    "upstreamCommit": "4ec7ffa173eaa70d3d9467a627baf0954645a353",
     "upstreamPath": "skills/poteto-mode/playbooks/investigation.md",
     "upstreamSha256": "dc66bcf6af3a074fc7f67aa5e12b93ef571a4fb4d8e17f2f1af5ae5359f42e46",
     "verification": {

@@ -73,3 +73,7 @@ The inventory stages this candidate. The accepted baseline above remains histori
 ## Unaccepted 0.2.3 amendment: PR #729
 
 Source `d457567332aa6989e753ea289f30ea2bfbc80bc0` is superseded for this unaccepted candidate by `88d47514b82e7c44f00f2b2a72ff6dd12158038c`, upstream 0.15.29. The package version remains 0.2.3. All 172 canonical files were archive/tree verified; archive SHA-256 `df98989c5e6b3128ce3633eb68b4e31a79aabfe415c79d5e37f9b4906f94d2d9`. Eight canonical files changed, with no membership change. Sharpen now returns expert framing and a rewrite, without executing the input task. The accepted receipt remains `182f2ce414e83224915c190d2f63239c1608d0a5`. This is an explicitly requested candidate amendment, not source acceptance, plugin refresh or another invocation of the full update apply command.
+
+## Statechart candidate amendment
+
+PRs #741, #776 and #779 amend the unaccepted 0.2.3 source to `4ec7ffa173eaa70d3d9467a627baf0954645a353`, upstream 0.15.30. All 184 canonical files were archive/tree verified, including 57 root skills, 24 principles and 23 playbooks. The PR729 sharpen amendment remains included. The final statechart implementation includes the six correctness fixes. Rendering uses an explicitly selected reviewed local executable; subprocesses are bounded. The generated Claude tree remains derived and its adapter stays reference-only. The accepted 0.2.2 receipt is unchanged; no acceptance, integration or refresh occurred. See the amendment manifest and [statechart execution](skills/statechart/references/execution.md).
