@@ -47,9 +47,13 @@
   },
   "fullUpdaterApplyInvoked": false,
   "kind": "pstack-unaccepted-candidate-amendment",
-  "manifestSha256": "02c6312000ba84d07ac9d7ccd9fc936bb3571af2463555af7d27f0addd481d4a",
+  "manifestSha256": "1b5d0f4dd1ef50c87d36a2eb07100a40184f125359ea324dbf3e3f9ab122a16c",
   "packageCommit": "56fe4587d30e1ebcc682c602a7fb5b34bb81079f",
   "previousSource": "88d47514b82e7c44f00f2b2a72ff6dd12158038c",
   "refreshed": false,
-  "schemaVersion": 1
+  "schemaVersion": 1,
+  "manifestNormalization": {
+    "previousManifestSha256": "02c6312000ba84d07ac9d7ccd9fc936bb3571af2463555af7d27f0addd481d4a",
+    "reason": "Normalize the upstream plugin.json destination to the reviewed references/upstream-metadata/plugin.json path; source revision, membership and all source hashes are unchanged."
+  }
 }

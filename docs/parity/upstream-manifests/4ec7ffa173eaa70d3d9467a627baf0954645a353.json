@@ -930,7 +930,7 @@
     {
       "adaptationStatus": "pending",
       "dependencies": [],
-      "destinationPath": "plugin.json",
+      "destinationPath": "references/upstream-metadata/plugin.json",
       "disposition": "runtime",
       "licenseProvenance": {
         "copyright": "Copyright (c) 2026 Lauren Tan",
