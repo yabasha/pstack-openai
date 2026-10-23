@@ -20,7 +20,7 @@ from tools import sync_upstream as sync
 from tools.validate_package import validate_package
 
 ROOT = Path(__file__).resolve().parents[1]
-PACKAGE_SNAPSHOT = '2bb99f1f83c25e253eac67ac6c78dea6544cf326'
+PACKAGE_SNAPSHOT = '36547e7fec1b24b97e2c3391ea4758d8e9e6ad2b'
 
 
 class FullPackageUpdateTests(unittest.TestCase):
