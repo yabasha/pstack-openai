@@ -20,6 +20,14 @@ def read(path):
 
 
 class InventoryClosedTests(unittest.TestCase):
+    def test_accepted_receipt_resolves_a_unique_source_manifest(self):
+        from tools.sync_upstream import accepted_baseline
+        manifest, selection = accepted_baseline(ROOT)
+        receipt = read('docs/parity/upstream-manifests/accepted.json')
+        self.assertEqual(selection['commit'], receipt['commit'])
+        self.assertEqual(manifest['commit'], receipt['commit'])
+        self.assertEqual(len({r['destinationPath'] for r in manifest['files']}), len(manifest['files']))
+
     def test_exact_reviewed_source_and_destination_ownership(self):
         rows = read('docs/parity/inventory.json')
         self.assertEqual([r['upstreamPath'] for r in rows],

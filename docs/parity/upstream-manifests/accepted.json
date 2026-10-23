@@ -3,8 +3,8 @@
   "kind": "pstack-accepted-baseline",
   "commit": "4ec7ffa173eaa70d3d9467a627baf0954645a353",
   "manifestPath": "docs/parity/upstream-manifests/4ec7ffa173eaa70d3d9467a627baf0954645a353.json",
-  "manifestSha256": "02c6312000ba84d07ac9d7ccd9fc936bb3571af2463555af7d27f0addd481d4a",
-  "packageCommit": "eee141e69ca34ff4488d1835c638a5ceb76b1f8d",
+  "manifestSha256": "1b5d0f4dd1ef50c87d36a2eb07100a40184f125359ea324dbf3e3f9ab122a16c",
+  "packageCommit": "bec3a17ea71b6bcfa6543817e40f07e64477cd1a",
   "evidencePath": "docs/releases/0.2.3.md",
-  "evidenceSha256": "ada85722d6f8c3d5de57fb6b1584e6ced31af45f9b63d4a45f437207564a1bf5"
+  "evidenceSha256": "89253f63efd35103096580e6031492c480c215b8e6bc173f9c52e020a952c713"
 }
