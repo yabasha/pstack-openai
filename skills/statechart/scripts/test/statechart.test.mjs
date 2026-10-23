@@ -31,7 +31,8 @@ const scripts = dirname(here);
 const fixture = (name) => readFileSync(join(here, name), "utf8");
 const edges = (r) => r.transitions.map((t) => `${t.from} -> ${t.to} : ${t.label}`).sort();
 const node = (script, args, cwd, env = {}) => {
-  const r = spawnSync(process.execPath, [join(scripts, script), ...args], {
+  const preload = env.STATECHART_RENAME_TEST ? ["--preload", env.STATECHART_RENAME_TEST] : [];
+  const r = spawnSync(process.execPath, [...preload, join(scripts, script), ...args], {
     cwd,
     encoding: "utf8",
     env: { ...process.env, STATECHART_MERMAID: "", ...env },
@@ -2937,40 +2938,34 @@ test(
   },
 );
 
-const failRenames = `#define _GNU_SOURCE
-#include <dlfcn.h>
-#include <errno.h>
-#include <stdlib.h>
-#include <string.h>
-#include <unistd.h>
-static size_t hits;
-int rename(const char *from, const char *to) {
-  static int (*real)(const char *, const char *);
-  if (!real) real = dlsym(RTLD_NEXT, "rename");
-  const char *base = strrchr(to, '/'), *fails = getenv("RENAME_FAILS");
-  const char *cannot = getenv("RENAME_CANNOT");
-  base = base ? base + 1 : to;
-  if (cannot && strstr(base, "shared")) {
-    errno = strcmp(cannot, "EXDEV") == 0 ? EXDEV : access(to, F_OK) == 0 ? EISDIR : ENOSYS;
-    return -1;
+const failRenames = `import fs from "node:fs";
+import path from "node:path";
+const rename = fs.renameSync;
+let hits = 0;
+fs.renameSync = (from, to) => {
+  const base = path.basename(to), fails = process.env.RENAME_FAILS;
+  const cannot = process.env.RENAME_CANNOT;
+  let code;
+  if (cannot && base.includes("shared"))
+    code = cannot === "EXDEV" ? "EXDEV" : fs.existsSync(to) ? "EISDIR" : "ENOSYS";
+  else if (fails && base === "shared" && hits < fails.length)
+    code = fails[hits++] === "N" ? "ENOTEMPTY" : "EIO";
+  if (code) {
+    if (process.env.RENAME_OBSERVED) fs.appendFileSync(process.env.RENAME_OBSERVED, code + "\\n");
+    throw Object.assign(new Error(code + ": injected rename failure, " + from + " to " + to), { code });
   }
-  if (fails && strcmp(base, "shared") == 0 && hits < strlen(fails)) {
-    errno = fails[hits++] == 'N' ? ENOTEMPTY : EIO;
-    return -1;
-  }
-  return real(from, to);
-}
+  return rename(from, to);
+};
 `;
 const failingRenames = (() => {
   const dir = mkdtempSync(join(tmpdir(), "statechart-preload-"));
-  writeFileSync(join(dir, "rename.c"), failRenames);
-  const so = join(dir, "rename.so");
-  const cc = spawnSync("cc", ["-shared", "-fPIC", "-o", so, join(dir, "rename.c"), "-ldl"]);
-  return cc.status === 0 ? so : null;
+  const file = join(dir, "rename.mjs");
+  writeFileSync(file, failRenames);
+  return file;
 })();
 test(
   "a run whose rename fails after it moves the output folder aside puts the folder back, or says where it is",
-  { skip: needsTlc.skip || (!failingRenames && "cannot compile a rename preload") },
+  needsTlc,
   () => {
     const dir = mkdtempSync(join(tmpdir(), "statechart-"));
     writeLamp(dir);
@@ -2980,7 +2975,7 @@ test(
     assert.equal(first.status, 0, first.stderr);
     const chart = readFileSync(join(shared, "chart.mmd"), "utf8");
     const run = (fails) =>
-      node("statechart.mjs", args, dir, { LD_PRELOAD: failingRenames, RENAME_FAILS: fails });
+      node("statechart.mjs", args, dir, { STATECHART_RENAME_TEST: failingRenames, RENAME_FAILS: fails });
 
     const back = run("NI");
     assert.equal(back.status, 2, back.stderr);
@@ -3006,7 +3001,7 @@ test(
 
 test(
   "a run on a filesystem that cannot rename copies its files into place",
-  { skip: needsTlc.skip || (!failingRenames && "cannot compile a rename preload") },
+  needsTlc,
   () => {
     const dir = mkdtempSync(join(tmpdir(), "statechart-"));
     writeLamp(dir);
@@ -3021,10 +3016,12 @@ test(
         `export const state = (v) => (v.on ? "On" : "Off");\nexport const step = () => "${label}";\n`,
       );
       const r = node("statechart.mjs", args, dir, {
-        LD_PRELOAD: failingRenames,
+        STATECHART_RENAME_TEST: failingRenames,
         RENAME_CANNOT: cannot,
+        RENAME_OBSERVED: join(dir, "rename-observed.txt"),
       });
       assert.equal(r.status, 0, r.stderr);
+      assert.match(readFileSync(join(dir, "rename-observed.txt"), "utf8"), new RegExp(cannot));
       assert.match(readFileSync(join(dir, "shared", "chart.mmd"), "utf8"), new RegExp(label));
       assert.deepEqual(staged(dir), []);
     }

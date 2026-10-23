@@ -1461,7 +1461,7 @@
           "skills/statechart/references/execution.md"
         ]
       },
-      "blockedReason": "No observed Java/TLC run, approved PNG renderer or both-host end-to-end verification for this candidate. Java/TLC are absent in this preparation environment.",
+      "blockedReason": "Isolated direct-source TLC and real renderer checks passed in the task-local toolchain. Full installed-plugin discovery and end-to-end qualification for both hosts remain unverified. Java/TLC, the renderer and browser are not bundled with the candidate; the toolchain results are retained outside the repository for review.",
       "callers": [
         "README.md",
         "docs/guide/06-verify-and-ship.md",
@@ -9754,7 +9754,7 @@
         "statechart-runtime"
       ],
       "destinationPath": "skills/statechart/scripts/test/statechart.test.mjs",
-      "destinationSha256": "c6423ac7fd8d5afe82bfa4ca1e60e273037d80a82e416e49b6adc20584fc4862",
+      "destinationSha256": "2619a484047833d05338e36a089caeea7fca139fdfe858be70e51ed3701db31c",
       "kind": "support",
       "packageDependencies": [
         "references/host-capabilities.md",
