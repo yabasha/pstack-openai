@@ -1,5 +1,6 @@
 import {readFileSync, writeFileSync, existsSync} from 'node:fs';
 import {resolve} from 'node:path';
+import {createHash} from 'node:crypto';
 
 const root = resolve(import.meta.dir, '..');
 const workflows = JSON.parse(readFileSync(resolve(root, 'docs/workflows/examples.json'), 'utf8'));
@@ -26,7 +27,7 @@ for (const level of levels) {
   }
 }
 if (ids.size !== workflows.length) throw new Error('Every workflow must have a supported difficulty level.');
-lines.push('The [website workflow section](https://pstack-openai.abloommink3.chatgpt.site/#workflows) uses the same [workflow source](docs/workflows/examples.json). After editing it, run `bun tools/render_workflow_examples.mjs` and refresh the site with its documented sync command. Use `bun tools/render_workflow_examples.mjs --check` to detect README drift.', '', end);
+lines.push('The [website workflow section](https://pstack-openai.abloommink3.chatgpt.site/#workflows) uses the same [workflow source](docs/workflows/examples.json). Changes pushed to `main` automatically regenerate this README and the site feed through [GitHub Actions](.github/workflows/sync-workflows.yml). The site loads that feed on page load and checks every five minutes while open. It keeps its published snapshot if the feed is unavailable. For local edits, run `bun tools/render_workflow_examples.mjs`; use `bun tools/render_workflow_examples.mjs --check` to detect drift. See [automatic sync](docs/workflows/automatic-sync.md) for scope and recovery.', '', end);
 const block = lines.join('\n');
 const path = resolve(root, 'README.md');
 const current = readFileSync(path, 'utf8');
@@ -34,7 +35,15 @@ const begin = current.indexOf(start);
 const finish = current.indexOf(end);
 if ((begin < 0) !== (finish < 0) || (begin >= 0 && finish < begin)) throw new Error('Invalid workflow markers.');
 const next = begin < 0 ? current.trimEnd() + '\n\n' + block + '\n' : current.slice(0, begin) + block + current.slice(finish + end.length);
+const payload = {schemaVersion: 1, workflows, readme: next};
+const revision = createHash('sha256').update(JSON.stringify(payload)).digest('hex');
+const feed = JSON.stringify({...payload, revision}, null, 2) + '\n';
+const feedPath = resolve(root, 'docs/workflows/site-feed.json');
 if (process.argv.includes('--check')) {
   if (next !== current) throw new Error('README workflows are stale. Run bun tools/render_workflow_examples.mjs.');
-} else if (next !== current) writeFileSync(path, next);
-console.log(`${workflows.length} workflows match the README.`);
+  if (!existsSync(feedPath) || readFileSync(feedPath, 'utf8') !== feed) throw new Error('Site feed is stale. Run bun tools/render_workflow_examples.mjs.');
+} else {
+  if (next !== current) writeFileSync(path, next);
+  if (!existsSync(feedPath) || readFileSync(feedPath, 'utf8') !== feed) writeFileSync(feedPath, feed);
+}
+console.log(`${workflows.length} workflows match the README and site feed (${revision.slice(0, 7)}).`);
