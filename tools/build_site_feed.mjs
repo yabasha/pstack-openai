@@ -6,6 +6,7 @@ export function buildSiteFeed(root,{workflows,readme}) {
   const read=path=>readFileSync(resolve(root,path),'utf8');
   const json=path=>JSON.parse(read(path));
   const manifest=json('plugin.json');
+  if(!/^\d+\.\d+\.\d+(?:[-+][a-zA-Z0-9.-]+)?$/.test(manifest.version))throw Error('Invalid package version.');
   const upstream=json('references/upstream-metadata/plugin.json');
   const inventory=json('docs/parity/inventory.json');
   const catalog=readdirSync(resolve(root,'skills'),{withFileTypes:true}).filter(d=>d.isDirectory()&&existsSync(resolve(root,'skills',d.name,'SKILL.md'))).map(d=>{

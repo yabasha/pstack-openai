@@ -40,6 +40,10 @@ test('a workflow edit regenerates both outputs, detects drift, and is idempotent
     expect(updated.catalog.find(c=>c.name==='principle-sync-probe').instructions).toContain('Changed source.');
     expect(updated.compatibility.guidance).toContain('No workflow pass is claimed.');
     expect(run('--check').exitCode).toBe(0);
+    rmSync(resolve(root,'skills/principle-sync-probe'),{recursive:true});
+    expect(run().exitCode).toBe(0);
+    expect(readSite().catalog.some(c=>c.name==='principle-sync-probe')).toBe(false);
+    expect(readSite().release.principleCount).toBe(prior.release.principleCount);
     expect(run().exitCode).toBe(0);
     const readme=readFileSync(resolve(root,'README.md'),'utf8');
     const feed=readFileSync(resolve(root,'docs/workflows/site-feed.json'),'utf8');
