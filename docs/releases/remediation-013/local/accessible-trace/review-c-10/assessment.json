@@ -1,0 +1,113 @@
+{
+  "schemaVersion": 1,
+  "kind": "historical-independent-assessment-projection",
+  "caseId": "accessible-trace",
+  "attemptId": "review-c-10",
+  "startingMain": "4138e161c27cafffd2baaab6bf4ca53e86a57433",
+  "packageCommit": "51f209daf83cd97d64f89881d66533bb59dc57db",
+  "packageVersion": "0.1.3",
+  "inputRevision": "db5054b6445dffbb69e84762b25d9f3e6d2980ba",
+  "originalProposedStatus": "blocked",
+  "evidenceStatus": "blocked",
+  "qualifiesCurrentMain": false,
+  "sourceReview": {
+    "originalLocator": "grades/grade_remediation_local_c/result.json",
+    "sourceSha256": "2582d82fe0ad256da816b168e5b242a713d134d62af8657c4f7bc255d3a7ceba",
+    "jsonPointer": "/cases/9",
+    "reviewer": "/root/grade_remediation_local_c",
+    "requestedModel": "inherit-parent",
+    "actualModel": "unknown"
+  },
+  "findings": [
+    "A real PTY executed the finite runtime fixture, but produced no profiling artifact or symptom reproduction. No live mechanism intervention or source-linked causal diagnosis occurred. Authorized PTY replacement does not itself supply a profiler."
+  ],
+  "limits": [
+    "Accessible runtime telemetry and matching capture operation",
+    "Reproduced symptom and authorized live mechanism intervention"
+  ],
+  "chronology": [],
+  "predicate": "Runtime forensics expectedFull requires actual captured signal and intervention proof; expectedBlocked covers inaccessible telemetry and absent matching capture operations.",
+  "sourceArtifactBindings": [
+    {
+      "originalLocator": "remaining-local/cases/accessible-trace/task-contract.json",
+      "sourceSha256": "07365aa287c322237a1a0dba6971f08c3b6b6bd34ff6f41b2246ddbc907c4d07",
+      "expectedSha256": "07365aa287c322237a1a0dba6971f08c3b6b6bd34ff6f41b2246ddbc907c4d07",
+      "expectedHashMatches": true,
+      "bytes": 6284,
+      "publication": "omitted",
+      "reason": "Only a narrow inspected projection may be included. Private original remains unchanged."
+    },
+    {
+      "originalLocator": "remaining-local/cases/accessible-trace/outputs/accessible-trace.result.md",
+      "sourceSha256": "9b7f7a8bc8e8c120e7a05998c6de85460d2449e6cd393f52c1c525500e44bd22",
+      "expectedSha256": "9b7f7a8bc8e8c120e7a05998c6de85460d2449e6cd393f52c1c525500e44bd22",
+      "expectedHashMatches": true,
+      "bytes": 5037,
+      "publication": "omitted",
+      "reason": "Only a narrow inspected projection may be included. Private original remains unchanged."
+    },
+    {
+      "originalLocator": "remaining-local/cases/accessible-trace/outputs/completion.json",
+      "sourceSha256": "44d74e1b0640eeed86ca902e2e83b1483ae9317dd1fe26c46c144b6fd353a56e",
+      "expectedSha256": "44d74e1b0640eeed86ca902e2e83b1483ae9317dd1fe26c46c144b6fd353a56e",
+      "expectedHashMatches": true,
+      "bytes": 26841,
+      "publication": "omitted",
+      "reason": "Raw/native context, broad discovery, completion dump, or bulk source manifest is excluded. No protected payload is decoded."
+    },
+    {
+      "originalLocator": "remaining-local/cases/accessible-trace/outputs/actions.json",
+      "sourceSha256": "625795127dde18e071c6887be77d787cafa79f7e65c62ba2ce71a9a23ca2c931",
+      "expectedSha256": "625795127dde18e071c6887be77d787cafa79f7e65c62ba2ce71a9a23ca2c931",
+      "expectedHashMatches": true,
+      "bytes": 2991,
+      "publication": "projected-fields",
+      "reason": "Only a narrow inspected projection may be included. Private original remains unchanged.",
+      "projectedPath": "docs/releases/remediation-013/local/accessible-trace/review-c-10/proof/01-actions.json.excerpt.json",
+      "projectedSha256": "d8fb0bd35bb74e5f47cdd1839948b46a126a9dc0b7ec8f52fa774bab572e6699"
+    },
+    {
+      "originalLocator": "remaining-local/cases/accessible-trace/outputs/control-discovery.json",
+      "sourceSha256": "862f74cb14b5b6357edd8bfbda78246f9e1a514bd5b381370a2963cd5368a58e",
+      "expectedSha256": "862f74cb14b5b6357edd8bfbda78246f9e1a514bd5b381370a2963cd5368a58e",
+      "expectedHashMatches": true,
+      "bytes": 1348,
+      "publication": "projected-fields",
+      "reason": "Only a narrow inspected projection may be included. Private original remains unchanged.",
+      "projectedPath": "docs/releases/remediation-013/local/accessible-trace/review-c-10/proof/02-control-discovery.json.excerpt.json",
+      "projectedSha256": "0873f1f435c2aa57e6c7d84c7243c73c916db562e8610a43123e4bb26f81a37a"
+    },
+    {
+      "originalLocator": "remaining-local/cases/accessible-trace/outputs/branches.json",
+      "sourceSha256": "c755b57d163ec431296cf69b49d338e5275e0b256b26ea0230d719af49222cd5",
+      "expectedSha256": "c755b57d163ec431296cf69b49d338e5275e0b256b26ea0230d719af49222cd5",
+      "expectedHashMatches": true,
+      "bytes": 4216,
+      "publication": "projected-fields",
+      "reason": "Only a narrow inspected projection may be included. Private original remains unchanged.",
+      "projectedPath": "docs/releases/remediation-013/local/accessible-trace/review-c-10/proof/03-branches.json.excerpt.json",
+      "projectedSha256": "da084ef81b49d9e9290dc0bc805883d75cfcd46fe3c3a4adbbfecc313fdfe075"
+    },
+    {
+      "originalLocator": "remaining-local/cases/accessible-trace/outputs/verification.json",
+      "sourceSha256": "6eac8ce35545eef373158b3f5deeed328ddead5509911e8ee9050c438e7ae2cd",
+      "expectedSha256": "6eac8ce35545eef373158b3f5deeed328ddead5509911e8ee9050c438e7ae2cd",
+      "expectedHashMatches": true,
+      "bytes": 31443,
+      "publication": "projected-fields",
+      "reason": "Only a narrow inspected projection may be included. Private original remains unchanged.",
+      "projectedPath": "docs/releases/remediation-013/local/accessible-trace/review-c-10/proof/04-verification.json.excerpt.json",
+      "projectedSha256": "15e4c7273eb1681eed6f96440c9bf6722834b295701f59ae22b663fe2702ce68"
+    }
+  ],
+  "projectionLimits": [
+    "This file projects the existing independent assessment and does not regrade the case.",
+    "Private source artifacts and omitted native operations remain private. Source digests bind originals, not transformed bytes.",
+    "Historical 0.1.3 observations do not qualify current main or a modified candidate."
+  ],
+  "statusMapping": {
+    "originalProposedStatus": "blocked",
+    "canonicalStatus": "blocked",
+    "rule": "No status alias is applied."
+  }
+}

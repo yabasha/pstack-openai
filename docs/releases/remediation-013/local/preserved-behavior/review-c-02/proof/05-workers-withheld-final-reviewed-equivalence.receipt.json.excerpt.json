@@ -1,0 +1,39 @@
+{
+  "kind": "selected-fixture-result-fields",
+  "caseId": "preserved-behavior",
+  "attemptId": "review-c-02",
+  "originalLocator": "remaining-local/cases/preserved-behavior/outputs/workers-withheld-final-reviewed-equivalence.receipt.json",
+  "sourceSha256": "47419b461ee2d022324fe7b3b3f029f7b146693db4c748caae6078105bc77958",
+  "sourceBytes": 2709,
+  "transformation": "Named JSON fields selected by exact JSON Pointer. Task-owned absolute paths replaced with declared placeholders. Other fields omitted. These are result-artifact values, not synthesized tool execution evidence. Public selection is limited to eight short inspected fields. Longer output and unselected fields remain private.",
+  "fields": [
+    {
+      "pointer": "/name",
+      "value": "workers-withheld-final-reviewed-equivalence"
+    },
+    {
+      "pointer": "/command",
+      "value": [
+        "bun",
+        "--no-install",
+        "outputs/behavior.mjs",
+        "outputs/variants/workers-withheld/invoice",
+        "formatAmount",
+        "check",
+        "outputs/variants/workers-withheld/baseline.json"
+      ]
+    },
+    {
+      "pointer": "/exitCode",
+      "value": 0
+    },
+    {
+      "pointer": "/stderr",
+      "value": ""
+    },
+    {
+      "pointer": "/inputRevision",
+      "value": "1b69f163da7e4648e691c8b26cac8465ec1b596f"
+    }
+  ]
+}

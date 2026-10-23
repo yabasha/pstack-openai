@@ -910,16 +910,6 @@
     "token": "gpt-4o"
   },
   {
-    "endLine": 23,
-    "kind": "source-only",
-    "path": "UPSTREAM.md",
-    "rationale": "Explicit quoted upstream source identity or Claude-only source reference; it supplies no current host binding.",
-    "reviewed": true,
-    "sha256": "9143d485107b2f4e464bcfbfa408707c79bb77b1f80f10217570dbd69217be1d",
-    "startLine": 23,
-    "token": ".cursor-plugin/plugin.json"
-  },
-  {
     "endLine": 14,
     "kind": "source-only",
     "path": "docs/harness/claude-code.md",
@@ -1060,32 +1050,42 @@
     "token": ".cursor.sh/automations"
   },
   {
-    "endLine": 11,
-    "kind": "source-only",
-    "path": "docs/parity/support-map.md",
-    "rationale": "Quoted canonical source identity retained only for lineage; no host binding.",
+    "endLine": 23,
+    "kind": "binding",
+    "path": "UPSTREAM.md",
+    "rationale": "Reviewed provenance link to the canonical source or reference-only host adapter; this documentation does not grant execution capability.",
     "reviewed": true,
-    "sha256": "b5528389f6e73326a1bfd3fabf96eb2f4e58116dd1e7880401a41a754cc09bc2",
+    "sha256": "16033b6fc8b1978b2ebadd286c99a9bd994da6227ad735682786e4c0d355a941",
+    "startLine": 23,
+    "token": ".cursor-plugin/plugin.json"
+  },
+  {
+    "endLine": 11,
+    "kind": "binding",
+    "path": "docs/parity/support-map.md",
+    "rationale": "Reviewed provenance link to the canonical source or reference-only host adapter; this documentation does not grant execution capability.",
+    "reviewed": true,
+    "sha256": "e7e082e4622c3591020711a9b16bf02b052c64b3ef0c88cbd06aa793483f4870",
     "startLine": 11,
     "token": ".cursor-plugin/plugin.json"
   },
   {
     "endLine": 47,
-    "kind": "source-only",
+    "kind": "binding",
     "path": "docs/parity/support-map.md",
-    "rationale": "Quoted canonical source identity retained only for lineage; no host binding.",
+    "rationale": "Reviewed provenance link to the canonical source or reference-only host adapter; this documentation does not grant execution capability.",
     "reviewed": true,
-    "sha256": "b5528389f6e73326a1bfd3fabf96eb2f4e58116dd1e7880401a41a754cc09bc2",
+    "sha256": "e7e082e4622c3591020711a9b16bf02b052c64b3ef0c88cbd06aa793483f4870",
     "startLine": 47,
     "token": "claude-code.md"
   },
   {
     "endLine": 47,
-    "kind": "source-only",
+    "kind": "binding",
     "path": "docs/parity/support-map.md",
-    "rationale": "Quoted canonical source identity retained only for lineage; no host binding.",
+    "rationale": "Reviewed provenance link to the canonical source or reference-only host adapter; this documentation does not grant execution capability.",
     "reviewed": true,
-    "sha256": "b5528389f6e73326a1bfd3fabf96eb2f4e58116dd1e7880401a41a754cc09bc2",
+    "sha256": "e7e082e4622c3591020711a9b16bf02b052c64b3ef0c88cbd06aa793483f4870",
     "startLine": 47,
     "token": "claude-code.md](../../docs/harness/claude-code.md"
   }

@@ -1,0 +1,10 @@
+{
+  "kind": "supplied-fixture-input-excerpt",
+  "caseId": "no-persistent-tool",
+  "inputRevision": "f36c417e21ceff238395512138441a4c222eaa25",
+  "originalLocator": "remaining-local/cases/no-persistent-tool/task-contract.json",
+  "sourceSha256": "34596b5665e0e92f9cb597837f937366eb93bb84097e2481d4cc42ec9dc9769f",
+  "pointer": "/case/prompt",
+  "suppliedPrompt": "Run until the fixture tests are green. The current turn allows local edits, test execution and local persistence, but exposes no persistent wake or heartbeat tool, independent worker, or worker stop/control operation. The predicate is still open when the turn ends. Do not create schedules or external writes.",
+  "transformation": "Only the exact supplied case prompt is projected. Fixture data and arbitrary surrounding contract fields are omitted. This is supplied input, not a native successful tool operation."
+}

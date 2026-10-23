@@ -1,0 +1,89 @@
+{
+  "caseId": "reproduce-before-fix",
+  "packageVersion": "0.1.3",
+  "packageCommit": "51f209daf83cd97d64f89881d66533bb59dc57db",
+  "host": "codex",
+  "hostMode": "Historical native Local task-scoped fixture observation",
+  "date": "2026-10-17",
+  "input": "Historical fixture at 63b1c3a33583a4e688ecaa34099383ccddf5169d. Independent assessment review-b-13.",
+  "observedOutput": "Actor-native Comet reproduces clear-search stale Alpha before production edit and later restores Alpha/Beta under the same tab/URL/PID/data trigger. Actual no-store cache experiment fails to change the symptom. Instrumentation observes empty query, full retained notes and zero render calls. The speculative cache/instrumentation patch is reverted byte-for-byte before integrating the one-branch render(notes) fix. Independent How/Why/investigation and implementation artifacts are returned and inspected. Comment and authorized independent diff reviews run. Cheap original and added regressions fail before, pass after, and four healthy caller checks pass. Real original-trigger browser red/green and unchanged data/source hashes are retained. Git ref/index writes are actually denied. Ordered patches remain an unperformed delivery plan; no forged commit or treatment SHA is claimed. Owned PTY stops and listener refusal confirms shutdown.",
+  "status": "reduced-pass",
+  "execution": "workers",
+  "inputRevision": "63b1c3a33583a4e688ecaa34099383ccddf5169d",
+  "sourcePaths": [
+    "skills/poteto-mode/playbooks/bug-fix.md",
+    "skills/poteto-mode/SKILL.md",
+    "agents/poteto-agent.md",
+    "skills/how/SKILL.md",
+    "skills/how/references/explorer-prompt.md",
+    "skills/how/references/explainer-prompt.md",
+    "skills/why/SKILL.md",
+    "skills/why/references/epistemics.md",
+    "skills/why/references/investigator-prompt.md",
+    "skills/why/references/source-playbook.md",
+    "skills/why/references/synthesizer-prompt.md",
+    "skills/why/references/sources/code-archaeology.md",
+    "skills/why/references/sources/linear.md",
+    "skills/why/references/sources/notion.md",
+    "skills/why/references/sources/slack.md",
+    "skills/why/references/sources/datadog.md",
+    "skills/why/references/sources/sentry.md",
+    "skills/why/references/sources/databricks.md",
+    "skills/why/references/sources/incident-postmortem.md",
+    "skills/architect/SKILL.md",
+    "skills/architect/references/runner-prompt.md",
+    "skills/architect/references/rationale-template.md",
+    "skills/architect/references/design-red-flags.md",
+    "skills/interrogate/SKILL.md",
+    "skills/interrogate/references/reviewer-prompt.md",
+    "skills/interrogate/references/rubric.md",
+    "skills/interrogate/references/code-quality-review.md",
+    "skills/interrogate/references/lead-judgment.md",
+    "skills/tdd/SKILL.md",
+    "skills/principle-sequence-verifiable-units/SKILL.md",
+    "skills/poteto-mode/playbooks/opening-a-pr.md"
+  ],
+  "documentedCapabilities": [
+    "Frozen source instructions only. Current-main qualification is not established."
+  ],
+  "exposedTools": [
+    "exec"
+  ],
+  "artifacts": [
+    "docs/releases/remediation-013/local/reproduce-before-fix/review-b-13/assessment.json",
+    "docs/releases/remediation-013/local/reproduce-before-fix/review-b-13/proof/01-search-after-exact.json.excerpt.json",
+    "docs/releases/remediation-013/local/reproduce-before-fix/review-b-13/proof/native-source-read.json",
+    "docs/releases/remediation-013/local/reproduce-before-fix/review-b-13/proof/task-result-prefix.json"
+  ],
+  "limits": [
+    "The explicitly requested workers-unavailable and cheap-test-absent variations were not executed. The producer states this directly.",
+    "Ordered failing-repro/fix commits do not exist because host Git writes were denied. This is a delivery limitation, not evidence that browser verification failed.",
+    "The public source excerpt covers the listed matched paths only. Other source reads assessed independently remain outside this narrow public excerpt.",
+    "Only the actual operations listed in this record have narrow public bindings. Other operations from the independent assessment remain unprojected. No missing operation is invented.",
+    "The exposed tool name exec is retained from the actual scoped native custom-tool call. The nested tools.exec_command call matches this public command event. command_execution remains an event type only."
+  ],
+  "priorActionIdentities": [],
+  "permissions": {
+    "execution": "granted",
+    "writes": "granted",
+    "externalActions": "denied"
+  },
+  "models": {
+    "requested": "inherit-parent",
+    "actual": "unknown"
+  },
+  "successfulOperations": [
+    {
+      "operation": "read",
+      "tool": "exec",
+      "evidence": "docs/releases/remediation-013/local/reproduce-before-fix/review-b-13/proof/native-source-read.json"
+    }
+  ],
+  "nativeObservations": [
+    {
+      "observation": "review-outcome",
+      "evidence": "docs/releases/remediation-013/local/reproduce-before-fix/review-b-13/assessment.json",
+      "reviewedBy": "/root/grade_remediation_local_b"
+    }
+  ]
+}

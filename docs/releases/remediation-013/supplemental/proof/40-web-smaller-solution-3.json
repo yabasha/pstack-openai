@@ -1,0 +1,35 @@
+{
+  "kind": "historical-proof-selection",
+  "source": {
+    "path": "<private-run>/web-checkpoint-3/units/smaller-solution/outputs/smaller-solution/callers.read.json",
+    "sha256": "ba81b543781179ddc2a678600669da56583bcee13dfd7a5f127e673c10f90360",
+    "bytes": 2238
+  },
+  "selection": [
+    {
+      "locator": {
+        "jsonPointer": "/request/argv"
+      },
+      "value": [
+        "rg",
+        "-n",
+        "PriceFacade|PriceAdapter|PriceService|pricing|quotePrice",
+        "/mnt/data/pstack-remediation-20261017/attempts-18/outputs/smaller-solution/task-input"
+      ]
+    },
+    {
+      "locator": {
+        "jsonPointer": "/return"
+      },
+      "value": {
+        "exitCode": 0,
+        "stdout": "/mnt/data/pstack-remediation-20261017/attempts-18/outputs/smaller-solution/task-input/docs/acceptance.md:13:Price quote inputs are integer cents and integer tax basis points. A 100-cent price at 500 basis points totals 105 cents. A 101-cent price at 500 basis points totals 106 cents. Negative or noninteger inputs reject. PriceFacade and PriceAdapter are intentional forwarding layers.\n/mnt/data/pstack-remediation-20261017/attempts-18/outputs/smaller-solution/task-input/domain/pricing.mjs:1:export class PriceService {quote(netCents,taxBasisPoints){if(!Number.isSafeInteger(netCents)||!Number.isSafeInteger(taxBasisPoints)||netCents<0||taxBasisPoints<0)throw new Error('Invalid price');return netCents+Math.round(netCents*taxBasisPoints/10000);}}\n/mnt/data/pstack-remediation-20261017/attempts-18/outputs/smaller-solution/task-input/domain/pricing.mjs:2:export class PriceAdapter {constructor(){this.service=new PriceService();}quote(netCents,taxBasisPoints){return this.service.quote(netCents,taxBasisPoints);}}\n/mnt/data/pstack-remediation-20261017/attempts-18/outputs/smaller-solution/task-input/domain/pricing.mjs:3:export class PriceFacade {constructor(){this.adapter=new PriceAdapter();}quote(netCents,taxBasisPoints){return this.adapter.quote(netCents,taxBasisPoints);}}\n/mnt/data/pstack-remediation-20261017/attempts-18/outputs/smaller-solution/task-input/domain/pricing.mjs:4:export const quote=(netCents,taxBasisPoints)=>new PriceFacade().quote(netCents,taxBasisPoints);\n/mnt/data/pstack-remediation-20261017/attempts-18/outputs/smaller-solution/task-input/tests/healthy.test.mjs:6:import {quote} from '../domain/pricing.mjs';\n/mnt/data/pstack-remediation-20261017/attempts-18/outputs/smaller-solution/task-input/tests/healthy.test.mjs:10:test('pricing caller keeps tax and rounding behavior',()=>{expect(quote(100,500)).toBe(105);expect(quote(101,500)).toBe(106);expect(()=>quote(-1,500)).toThrow('Invalid price');});\n",
+        "stderr": ""
+      }
+    }
+  ],
+  "limits": [
+    "Selections preserve the exact source value at each locator. Truncated strings carry explicit code-unit bounds.",
+    "A producer-captured return is not a recovered native parent envelope. Missing call IDs, original capture defects and unknown model observations remain missing."
+  ]
+}

@@ -1,0 +1,164 @@
+{
+  "schemaVersion": 1,
+  "kind": "historical-independent-assessment-projection",
+  "caseId": "benny-existing-pr",
+  "attemptId": "review-a-09",
+  "startingMain": "4138e161c27cafffd2baaab6bf4ca53e86a57433",
+  "packageCommit": "51f209daf83cd97d64f89881d66533bb59dc57db",
+  "packageVersion": "0.1.3",
+  "inputRevision": "9ec21d40fe60c794e1127957595734eeea25138c",
+  "originalProposedStatus": "blocked",
+  "evidenceStatus": "blocked",
+  "qualifiesCurrentMain": false,
+  "sourceReview": {
+    "originalLocator": "grades/grade_remediation_local_a/result.json",
+    "sourceSha256": "9cc1f7ebfcf0f02bdaaabc03a16ca8ef1a0dcc165259e873d7be84affe57bc2f",
+    "jsonPointer": "/cases/8",
+    "reviewer": "/root/grade_remediation_local_a",
+    "requestedModel": "inherit-parent",
+    "actualModel": "unknown"
+  },
+  "findings": [
+    "The existing-fix source contract requires a concrete PR/commit artifact, exact baseline/patched revisions and two same-path UI attempts per build.",
+    "The supplied fixture-pr-1 string is not a concrete qualifying patch. No app, completed map or discriminating report/build input was supplied. All four UI branches remain unrun.",
+    "No competing patch/PR, source message or tracker mutation was made. Discovered connector schemas do not prove configured access."
+  ],
+  "limits": [
+    "The supplied fixture-pr-1 string is not a concrete qualifying patch. No app, completed map or discriminating report/build input was supplied. All four UI branches remain unrun.",
+    "No competing patch/PR, source message or tracker mutation was made. Discovered connector schemas do not prove configured access."
+  ],
+  "chronology": {
+    "preserveAllEarlierAttempts": true,
+    "methodConformanceClaim": false,
+    "notes": []
+  },
+  "predicate": [
+    {
+      "id": 1,
+      "text": "Immutable channel and source-thread coordinates with fresh parent preflight.",
+      "status": "unmet",
+      "basis": [
+        "The existing-fix source contract requires a concrete PR/commit artifact, exact baseline/patched revisions and two same-path UI attempts per build.",
+        "The supplied fixture-pr-1 string is not a concrete qualifying patch. No app, completed map or discriminating report/build input was supplied. All four UI branches remain unrun.",
+        "No competing patch/PR, source message or tracker mutation was made. Discovered connector schemas do not prove configured access."
+      ],
+      "source": "docs/parity/cases/benny.json",
+      "evidence": [
+        {
+          "path": "<private-run>/remaining-local/cases/benny-existing-pr/outputs/attempt-receipt.json",
+          "line": 1,
+          "sha256": "a64ff8432d2e88e818ba01919c7fd51001bb945398cdb43c0c81e7b07fea9f43"
+        },
+        {
+          "path": "<private-run>/remaining-local/cases/benny-existing-pr/outputs/completion.json",
+          "line": 1,
+          "sha256": "39333a9335fbbb646c8994577564695f0ed58ee9479678201e31e8582cef01d0"
+        },
+        {
+          "path": "<private-run>/remaining-local/cases/benny-existing-pr/outputs/lead-review.json",
+          "line": 1,
+          "sha256": "feb7412453e17eb80fdf940ec5ef927a085ca8ce12d67f2ee2af8071a47b9e41"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "text": "Observed scoped connector and trigger capabilities, explicit authorization per external action.",
+      "status": "unmet",
+      "basis": [
+        "The existing-fix source contract requires a concrete PR/commit artifact, exact baseline/patched revisions and two same-path UI attempts per build.",
+        "The supplied fixture-pr-1 string is not a concrete qualifying patch. No app, completed map or discriminating report/build input was supplied. All four UI branches remain unrun.",
+        "No competing patch/PR, source message or tracker mutation was made. Discovered connector schemas do not prove configured access."
+      ],
+      "source": "docs/parity/cases/benny.json",
+      "evidence": [
+        {
+          "path": "<private-run>/remaining-local/cases/benny-existing-pr/outputs/attempt-receipt.json",
+          "line": 1,
+          "sha256": "a64ff8432d2e88e818ba01919c7fd51001bb945398cdb43c0c81e7b07fea9f43"
+        },
+        {
+          "path": "<private-run>/remaining-local/cases/benny-existing-pr/outputs/completion.json",
+          "line": 1,
+          "sha256": "39333a9335fbbb646c8994577564695f0ed58ee9479678201e31e8582cef01d0"
+        },
+        {
+          "path": "<private-run>/remaining-local/cases/benny-existing-pr/outputs/lead-review.json",
+          "line": 1,
+          "sha256": "feb7412453e17eb80fdf940ec5ef927a085ca8ce12d67f2ee2af8071a47b9e41"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "text": "Preserve exactly one triage verdict, at most one unprompted repro reply, ownership gates, duplicate suppression, bounded real UI proof, and draft-only PRs.",
+      "status": "satisfied",
+      "basis": [
+        "The existing-fix source contract requires a concrete PR/commit artifact, exact baseline/patched revisions and two same-path UI attempts per build.",
+        "The supplied fixture-pr-1 string is not a concrete qualifying patch. No app, completed map or discriminating report/build input was supplied. All four UI branches remain unrun.",
+        "No competing patch/PR, source message or tracker mutation was made. Discovered connector schemas do not prove configured access."
+      ],
+      "source": "docs/parity/cases/benny.json",
+      "evidence": [
+        {
+          "path": "<private-run>/remaining-local/cases/benny-existing-pr/outputs/attempt-receipt.json",
+          "line": 1,
+          "sha256": "a64ff8432d2e88e818ba01919c7fd51001bb945398cdb43c0c81e7b07fea9f43"
+        },
+        {
+          "path": "<private-run>/remaining-local/cases/benny-existing-pr/outputs/completion.json",
+          "line": 1,
+          "sha256": "39333a9335fbbb646c8994577564695f0ed58ee9479678201e31e8582cef01d0"
+        },
+        {
+          "path": "<private-run>/remaining-local/cases/benny-existing-pr/outputs/lead-review.json",
+          "line": 1,
+          "sha256": "feb7412453e17eb80fdf940ec5ef927a085ca8ce12d67f2ee2af8071a47b9e41"
+        }
+      ]
+    }
+  ],
+  "sourceArtifactBindings": [
+    {
+      "originalLocator": "remaining-local/cases/benny-existing-pr/outputs/attempt-receipt.json",
+      "sourceSha256": "a64ff8432d2e88e818ba01919c7fd51001bb945398cdb43c0c81e7b07fea9f43",
+      "expectedSha256": "a64ff8432d2e88e818ba01919c7fd51001bb945398cdb43c0c81e7b07fea9f43",
+      "expectedHashMatches": true,
+      "bytes": 50701,
+      "publication": "projected-fields",
+      "reason": "Only a narrow inspected projection may be included. Private original remains unchanged.",
+      "projectedPath": "docs/releases/remediation-013/local/benny-existing-pr/review-a-09/proof/01-attempt-receipt.json.excerpt.json",
+      "projectedSha256": "0c96cd9fd885b690c36c2ec1beb708f4d53d054937bf3410e3d7bf90800b60e0"
+    },
+    {
+      "originalLocator": "remaining-local/cases/benny-existing-pr/outputs/completion.json",
+      "sourceSha256": "39333a9335fbbb646c8994577564695f0ed58ee9479678201e31e8582cef01d0",
+      "expectedSha256": "39333a9335fbbb646c8994577564695f0ed58ee9479678201e31e8582cef01d0",
+      "expectedHashMatches": true,
+      "bytes": 88190,
+      "publication": "omitted",
+      "reason": "Raw/native context, broad discovery, completion dump, or bulk source manifest is excluded. No protected payload is decoded."
+    },
+    {
+      "originalLocator": "remaining-local/cases/benny-existing-pr/outputs/lead-review.json",
+      "sourceSha256": "feb7412453e17eb80fdf940ec5ef927a085ca8ce12d67f2ee2af8071a47b9e41",
+      "expectedSha256": "feb7412453e17eb80fdf940ec5ef927a085ca8ce12d67f2ee2af8071a47b9e41",
+      "expectedHashMatches": true,
+      "bytes": 859,
+      "publication": "projected-fields",
+      "reason": "Only a narrow inspected projection may be included. Private original remains unchanged.",
+      "projectedPath": "docs/releases/remediation-013/local/benny-existing-pr/review-a-09/proof/02-lead-review.json.excerpt.json",
+      "projectedSha256": "48190c387fa7dd6746fc0f0f951406d407dc88e8492a95e72854adc64619fb36"
+    }
+  ],
+  "projectionLimits": [
+    "This file projects the existing independent assessment and does not regrade the case.",
+    "Private source artifacts and omitted native operations remain private. Source digests bind originals, not transformed bytes.",
+    "Historical 0.1.3 observations do not qualify current main or a modified candidate."
+  ],
+  "statusMapping": {
+    "originalProposedStatus": "blocked",
+    "canonicalStatus": "blocked",
+    "rule": "No status alias is applied."
+  }
+}

@@ -1,0 +1,43 @@
+{
+  "kind": "selected-fixture-result-fields",
+  "caseId": "grounded-explanation",
+  "attemptId": "review-c-08",
+  "originalLocator": "remaining-local/cases/grounded-explanation/outputs/worker-events.json",
+  "sourceSha256": "35ae07d4506bec08f28177a906951b56f412ae548819bdfd3320bb933664dd3b",
+  "sourceBytes": 3008,
+  "transformation": "Named JSON fields selected by exact JSON Pointer. Task-owned absolute paths replaced with declared placeholders. Other fields omitted. These are result-artifact values, not synthesized tool execution evidence. Public selection is limited to eight short inspected fields. Longer output and unselected fields remain private.",
+  "fields": [
+    {
+      "pointer": "/0/assignmentId",
+      "value": "grounded-how-01"
+    },
+    {
+      "pointer": "/0/inputRevision",
+      "value": "fa0bdcdb3d4dd4fbe56b63229d52d4bfc4aa6fad"
+    },
+    {
+      "pointer": "/0/requestedModel",
+      "value": "inherit-parent"
+    },
+    {
+      "pointer": "/0/actualModel",
+      "value": "unknown"
+    },
+    {
+      "pointer": "/1/assignmentId",
+      "value": "grounded-why-source-01"
+    },
+    {
+      "pointer": "/1/inputRevision",
+      "value": "fa0bdcdb3d4dd4fbe56b63229d52d4bfc4aa6fad"
+    },
+    {
+      "pointer": "/1/requestedModel",
+      "value": "inherit-parent"
+    },
+    {
+      "pointer": "/1/actualModel",
+      "value": "unknown"
+    }
+  ]
+}

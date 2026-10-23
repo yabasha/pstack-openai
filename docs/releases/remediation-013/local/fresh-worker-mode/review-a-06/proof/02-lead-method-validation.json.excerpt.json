@@ -1,0 +1,30 @@
+{
+  "kind": "selected-fixture-result-fields",
+  "caseId": "fresh-worker-mode",
+  "attemptId": "review-a-06",
+  "originalLocator": "remaining-local/cases/fresh-worker-mode/outputs/lead-method-validation.json",
+  "sourceSha256": "ed6058c7f1c84ccfe71d469f3b1e2e8d893b1f1947d6c2a606afc0bf35c0f695",
+  "sourceBytes": 1785,
+  "transformation": "Named JSON fields selected by exact JSON Pointer. Task-owned absolute paths replaced with declared placeholders. Other fields omitted. These are result-artifact values, not synthesized tool execution evidence. Public selection is limited to eight short inspected fields. Longer output and unselected fields remain private.",
+  "fields": [
+    {
+      "pointer": "/command",
+      "value": [
+        "bun",
+        "/tmp/remaining01-method-check.mjs"
+      ]
+    },
+    {
+      "pointer": "/exitCode",
+      "value": 0
+    },
+    {
+      "pointer": "/stdout",
+      "value": "{\"errors\": [], \"scope\": \"canonical validate_method only; no case grade or host verdict\"}\n"
+    },
+    {
+      "pointer": "/stderr",
+      "value": ""
+    }
+  ]
+}

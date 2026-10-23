@@ -1,0 +1,43 @@
+{
+  "kind": "selected-fixture-result-fields",
+  "caseId": "accessible-trace",
+  "attemptId": "review-c-10",
+  "originalLocator": "remaining-local/cases/accessible-trace/outputs/actions.json",
+  "sourceSha256": "625795127dde18e071c6887be77d787cafa79f7e65c62ba2ce71a9a23ca2c931",
+  "sourceBytes": 2991,
+  "transformation": "Named JSON fields selected by exact JSON Pointer. Task-owned absolute paths replaced with declared placeholders. Other fields omitted. These are result-artifact values, not synthesized tool execution evidence. Public selection is limited to eight short inspected fields. Longer output and unselected fields remain private.",
+  "fields": [
+    {
+      "pointer": "/0/request",
+      "value": "git rev-parse HEAD; git status --porcelain"
+    },
+    {
+      "pointer": "/0/result/exitCode",
+      "value": 0
+    },
+    {
+      "pointer": "/1/request",
+      "value": "Read full frozen sources and case inputs."
+    },
+    {
+      "pointer": "/1/result",
+      "value": "Actual full text returned in native outputs 308b00, 0f2fba, 76c589, b89c2c, 5503aa and fd28ff."
+    },
+    {
+      "pointer": "/1/limits",
+      "value": "Original revision object is unavailable. git cat-file returned fatal: could not get object info. Current original fixture files were read without replacing them."
+    },
+    {
+      "pointer": "/2/request",
+      "value": "Bun wrote checklist with verbatim selected runtime-forensics steps."
+    },
+    {
+      "pointer": "/2/result/exitCode",
+      "value": 0
+    },
+    {
+      "pointer": "/3/request",
+      "value": "Filter ALL_TOOLS by control, CPU profile, heap snapshot, CDP, runtime eval and profiler terms."
+    }
+  ]
+}

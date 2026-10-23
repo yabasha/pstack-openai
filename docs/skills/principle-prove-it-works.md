@@ -74,7 +74,7 @@ Forbidden claims:
 
 ## Source proof and release evidence
 
-The following statuses come from the current parity inventory. Pending aggregate review remains pending. Structural catalog checks do not establish host support.
+Current host statuses and release evidence: [current parity inventory](../parity/inventory.json), [chatgpt host report](../testing/chatgpt.md), and [codex host report](../testing/codex.md). These records can advance after the source freeze. Structural catalog checks do not establish host support.
 
 ### `skills/principle-prove-it-works/SKILL.md`
 
@@ -83,6 +83,3 @@ Destination: [skills/principle-prove-it-works/SKILL.md](../../skills/principle-p
 Upstream commit: `4ec7ffa173eaa70d3d9467a627baf0954645a353`. SHA-256: `ec79a15025bac8d33d62011c54f3b612733fd2a024e623b531b3637aa75070e2`.
 
 Disposition: `runtime`. Aggregate adaptation status: `adapted-reviewed`.
-
-- chatgpt: `not-run`. Tested release evidence: none recorded.
-- codex: `not-run`. Tested release evidence: none recorded.

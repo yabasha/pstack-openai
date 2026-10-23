@@ -1,0 +1,43 @@
+{
+  "kind": "selected-fixture-result-fields",
+  "caseId": "contiguous-verified-stack",
+  "attemptId": "review-b-14",
+  "originalLocator": "work/repair_real_builds/patches.json",
+  "sourceSha256": "8d8b54263ca86e6529c4109331c9a2fcbd883a2446d7eab6dc51888969869744",
+  "sourceBytes": 2815,
+  "transformation": "Named JSON fields selected by exact JSON Pointer. Task-owned absolute paths replaced with declared placeholders. Other fields omitted. These are result-artifact values, not synthesized tool execution evidence. Public selection is limited to eight short inspected fields. Longer output and unselected fields remain private.",
+  "fields": [
+    {
+      "pointer": "/0/expected",
+      "value": "30df6fb55b8531655f6bf45a7473cca23dda32a9"
+    },
+    {
+      "pointer": "/0/actual",
+      "value": "30df6fb55b8531655f6bf45a7473cca23dda32a9"
+    },
+    {
+      "pointer": "/1/expected",
+      "value": "87996e85d4835a84b637b4e76cc23243ad9b4a94"
+    },
+    {
+      "pointer": "/1/actual",
+      "value": "87996e85d4835a84b637b4e76cc23243ad9b4a94"
+    },
+    {
+      "pointer": "/2/expected",
+      "value": "30df6fb55b8531655f6bf45a7473cca23dda32a9"
+    },
+    {
+      "pointer": "/2/actual",
+      "value": "30df6fb55b8531655f6bf45a7473cca23dda32a9"
+    },
+    {
+      "pointer": "/3/expected",
+      "value": "78ec535c30556500c2884c800b4f900dbbd426c5"
+    },
+    {
+      "pointer": "/3/actual",
+      "value": "78ec535c30556500c2884c800b4f900dbbd426c5"
+    }
+  ]
+}

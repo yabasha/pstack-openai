@@ -294,7 +294,7 @@
       "skills/principle-fix-root-causes/SKILL.md",
       "skills/principle-prove-it-works/SKILL.md"
     ],
-    "destinationPath": "automations/benny/skills/reproduce-and-fix-issues/SKILL.md",
+    "destinationPath": "automations/benny/skills/reproduce-and-fix-issues/REFERENCE.md",
     "disposition": "runtime",
     "licenseProvenance": {
       "copyright": "Copyright (c) 2026 Lauren Tan",
@@ -454,7 +454,7 @@
       "skills/principle-fix-root-causes/SKILL.md",
       "skills/principle-prove-it-works/SKILL.md"
     ],
-    "destinationPath": "automations/benny/skills/setup-benny/SKILL.md",
+    "destinationPath": "automations/benny/skills/setup-benny/REFERENCE.md",
     "disposition": "runtime",
     "licenseProvenance": {
       "copyright": "Copyright (c) 2026 Lauren Tan",
@@ -494,7 +494,7 @@
       "skills/principle-fix-root-causes/SKILL.md",
       "skills/principle-prove-it-works/SKILL.md"
     ],
-    "destinationPath": "automations/benny/skills/triage-issue-reports/SKILL.md",
+    "destinationPath": "automations/benny/skills/triage-issue-reports/REFERENCE.md",
     "disposition": "runtime",
     "licenseProvenance": {
       "copyright": "Copyright (c) 2026 Lauren Tan",

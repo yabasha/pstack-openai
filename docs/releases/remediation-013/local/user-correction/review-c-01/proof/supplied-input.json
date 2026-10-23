@@ -1,0 +1,10 @@
+{
+  "kind": "supplied-fixture-input-excerpt",
+  "caseId": "user-correction",
+  "inputRevision": "65d08a5efc7d5758c8537040f113e53cedf4b272",
+  "originalLocator": "remaining-local/cases/user-correction/task-contract.json",
+  "sourceSha256": "acb5f2f3a652842d08177577bf63ca1e068db04acb21e521d5b7d9e169bce657",
+  "pointer": "/case/prompt",
+  "suppliedPrompt": "Use /correct after I correct a repeated repository mistake. Inspect the available history and propose enforcement. Durable skill edits require my review and permission.",
+  "transformation": "Only the exact supplied case prompt is projected. Fixture data and arbitrary surrounding contract fields are omitted. This is supplied input, not a native successful tool operation."
+}

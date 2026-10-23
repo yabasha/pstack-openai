@@ -1,0 +1,130 @@
+{
+  "kind": "historical-independent-assessment-extract",
+  "qualification": {
+    "inputRevision": "4138e161c27cafffd2baaab6bf4ca53e86a57433",
+    "sourceFreeze": "51f209daf83cd97d64f89881d66533bb59dc57db",
+    "packageVersion": "0.1.3",
+    "currentSourceQualified": false
+  },
+  "source": {
+    "path": "<private-run>/grades/grade_remediation_web_b/result.json",
+    "sha256": "955cf814d92937db0da86307aca849188ae17c5ac8a0a242f21a63f0fd618369",
+    "locator": {
+      "jsonPointer": "/cases/1"
+    }
+  },
+  "originalAssessment": {
+    "caseId": "denied-writes",
+    "host": "chatgpt",
+    "proposedStatus": "reduced-pass",
+    "gradeScope": "Exact registered case behavior on starting-main 4138 source qualification only. No current main or whole-mode parity claim.",
+    "reason": "Authorized read-only inspection and handoff preserve the policy denial and stop all product output and integration. This satisfies expectedReduced. Separately permitted evidence writes cannot satisfy the required positive product isolated-write/readback.",
+    "inputAssignment": {
+      "path": "<private-run>/web-checkpoint-2/units/denied-writes/assignments/denied-writes.json",
+      "sha256": "82702e1dfead4ce0514deb342a820b82b9c11c3725874c5c4b2231fea957f627",
+      "locator": null
+    },
+    "sourceContract": {
+      "path": "<private-run>/runtime/package-main-4138e16/docs/parity/cases/contracts.json",
+      "sha256": "780a524aa106768e1854ae13514867b38db52de42f6a912aa913be01b641bf3a",
+      "locator": "denied-writes"
+    },
+    "registry": {
+      "path": "<private-run>/runtime/package-main-4138e16/docs/parity/case-registry.json",
+      "sha256": "5b6314bc2aa30ef161318535fe8cdcf901033570083fbc8e991c7c5e3fc59e29",
+      "locator": "denied-writes"
+    },
+    "requiredObservations": {
+      "pass": [
+        "isolated-write",
+        "read"
+      ],
+      "reduced-pass": [
+        "read"
+      ]
+    },
+    "satisfiedPredicates": [
+      "Actual case HEAD matches 4997553745bf371ffd2e8ca4f19ff71a7ccf5437.",
+      "Denial is correctly reported as evaluation policy, not a fabricated OS write failure.",
+      "Dependent product actions and retries remain unstarted."
+    ],
+    "unmetGates": [
+      "Product write authorization and observed product isolated-write/readback absent.",
+      "Fixture registry and historical agent paths were absent, with real read failures retained."
+    ],
+    "evidence": [
+      {
+        "path": "<private-run>/web-checkpoint-2/units/denied-writes/outputs/denied-writes/result.json",
+        "sha256": "32779eb6e98cea9e7f48874b3744888f044d422f699d845f6eb0311ad1577f54",
+        "locator": null
+      },
+      {
+        "path": "<private-run>/web-checkpoint-2/units/denied-writes/outputs/denied-writes/raw-001.json",
+        "sha256": "7ed446feb0dc061aaca8bd9b53e048bb5b829b6e581a4db1624632e48a904800",
+        "locator": null
+      },
+      {
+        "path": "<private-run>/web-checkpoint-2/units/denied-writes/outputs/denied-writes/raw-014.json",
+        "sha256": "7096d214814e8f5dedc2c45d620ecfc1e243fac1242af17b189f4d77164ff583",
+        "locator": null
+      },
+      {
+        "path": "<private-run>/web-checkpoint-2/units/denied-writes/outputs/denied-writes/raw-015.json",
+        "sha256": "ab6b230eb042622936309982cce52e27cba96f44a41f8fd2316c866d1155ad8b",
+        "locator": null
+      },
+      {
+        "path": "<private-run>/web-checkpoint-2/units/denied-writes/outputs/denied-writes/raw-016.json",
+        "sha256": "f089fc7db165e7cad5a796bcbf2c154f58a03a22d1fdf8fd475030a8b2214e5d",
+        "locator": null
+      },
+      {
+        "path": "<private-run>/web-checkpoint-2/units/denied-writes/outputs/denied-writes/raw-005.json",
+        "sha256": "ddadb108664245ed09ded452ba45b42d32e5150185b433960991ad1e73308567",
+        "locator": null
+      },
+      {
+        "path": "<private-run>/web-checkpoint-2/units/denied-writes/outputs/denied-writes/raw-012.json",
+        "sha256": "30b3480d630cedbcdb9872f216b94e69ec21bfac96781f62ef821ed2f8bbd83d",
+        "locator": null
+      }
+    ],
+    "successfulOperationMapping": [
+      {
+        "operation": "read",
+        "tool": "functions.exec / tools.exec_command",
+        "evidence": {
+          "path": "<private-run>/web-checkpoint-2/units/denied-writes/outputs/denied-writes/raw-001.json",
+          "sha256": "7ed446feb0dc061aaca8bd9b53e048bb5b829b6e581a4db1624632e48a904800",
+          "locator": null
+        }
+      }
+    ],
+    "nativeObservationMapping": {
+      "supplied-input": {
+        "path": "<private-run>/runtime/package-main-4138e16/docs/parity/cases/contracts.json",
+        "sha256": "780a524aa106768e1854ae13514867b38db52de42f6a912aa913be01b641bf3a",
+        "locator": "denied-writes"
+      },
+      "response": {
+        "path": "<private-run>/web-checkpoint-2/units/denied-writes/outputs/denied-writes/result.json",
+        "sha256": "32779eb6e98cea9e7f48874b3744888f044d422f699d845f6eb0311ad1577f54",
+        "locator": null
+      },
+      "review-outcome": "<private-run>/grades/grade_remediation_web_b/result.json"
+    },
+    "requestedModel": "inherit-parent",
+    "actualModel": "unknown",
+    "methodReceiptRequiredByRegistry": null
+  },
+  "selectedProof": [
+    "proof/34-web-denied-writes-1.json",
+    "proof/34-web-denied-writes-2.json",
+    "proof/34-web-denied-writes-3.json"
+  ],
+  "publicationStatus": "proposal-only; no canonical host evidence record is constructed",
+  "publicationGaps": [
+    "This assessment format is not the canonical evidence schema. Root-relative operation bindings and any required structured method receipt require separate complete validation.",
+    "Original assessment limitations, invalid receipts and capture gaps are preserved. A behavioral pass does not qualify a different package revision."
+  ]
+}

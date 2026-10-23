@@ -84,7 +84,7 @@ Forbidden claims:
 
 ## Source proof and release evidence
 
-The following statuses come from the current parity inventory. Pending aggregate review remains pending. Structural catalog checks do not establish host support.
+Current host statuses and release evidence: [current parity inventory](../parity/inventory.json), [chatgpt host report](../testing/chatgpt.md), and [codex host report](../testing/codex.md). These records can advance after the source freeze. Structural catalog checks do not establish host support.
 
 ### `skills/reflect/SKILL.md`
 
@@ -94,9 +94,6 @@ Upstream commit: `4ec7ffa173eaa70d3d9467a627baf0954645a353`. SHA-256: `1f5a8c246
 
 Disposition: `runtime`. Aggregate adaptation status: `adapted-reviewed`.
 
-- chatgpt: `not-run`. Tested release evidence: none recorded.
-- codex: `not-run`. Tested release evidence: none recorded.
-
 ### `skills/reflect/references/divergent-reviewer.md`
 
 Destination: [skills/reflect/references/divergent-reviewer.md](../../skills/reflect/references/divergent-reviewer.md).
@@ -104,9 +101,6 @@ Destination: [skills/reflect/references/divergent-reviewer.md](../../skills/refl
 Upstream commit: `4ec7ffa173eaa70d3d9467a627baf0954645a353`. SHA-256: `f6030d88e20e906ef5e2d9ba44cb013ce610c49c2fe2ef74c377d32e0dc9e939`.
 
 Disposition: `runtime`. Aggregate adaptation status: `adapted-reviewed`.
-
-- chatgpt: `not-run`. Tested release evidence: none recorded.
-- codex: `not-run`. Tested release evidence: none recorded.
 
 ### `skills/reflect/references/judgment-reviewer.md`
 
@@ -116,9 +110,6 @@ Upstream commit: `4ec7ffa173eaa70d3d9467a627baf0954645a353`. SHA-256: `38f917619
 
 Disposition: `runtime`. Aggregate adaptation status: `adapted-reviewed`.
 
-- chatgpt: `not-run`. Tested release evidence: none recorded.
-- codex: `not-run`. Tested release evidence: none recorded.
-
 ### `skills/reflect/references/synthesizer.md`
 
 Destination: [skills/reflect/references/synthesizer.md](../../skills/reflect/references/synthesizer.md).
@@ -127,9 +118,6 @@ Upstream commit: `4ec7ffa173eaa70d3d9467a627baf0954645a353`. SHA-256: `6af816963
 
 Disposition: `runtime`. Aggregate adaptation status: `adapted-reviewed`.
 
-- chatgpt: `not-run`. Tested release evidence: none recorded.
-- codex: `not-run`. Tested release evidence: none recorded.
-
 ### `skills/reflect/references/tooling-reviewer.md`
 
 Destination: [skills/reflect/references/tooling-reviewer.md](../../skills/reflect/references/tooling-reviewer.md).
@@ -137,6 +125,3 @@ Destination: [skills/reflect/references/tooling-reviewer.md](../../skills/reflec
 Upstream commit: `4ec7ffa173eaa70d3d9467a627baf0954645a353`. SHA-256: `f81b8697e7366fbbc18feba52c6e3253a101f751091364ebc4396a1d9b5753b4`.
 
 Disposition: `runtime`. Aggregate adaptation status: `adapted-reviewed`.
-
-- chatgpt: `not-run`. Tested release evidence: none recorded.
-- codex: `not-run`. Tested release evidence: none recorded.

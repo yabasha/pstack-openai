@@ -205,7 +205,7 @@ def discovery_receipt(root, record, inventory, commit, version):
     """Require the installed-copy observation to carry exact enumeration data."""
     names = sorted(Path(r['upstreamPath']).parent.name for r in inventory
                    if re.fullmatch(r'skills/[^/]+/SKILL\.md', r['upstreamPath']))
-    excluded = sorted(r['upstreamPath'] for r in inventory
+    excluded = sorted(r['destinationPath'] for r in inventory
                       if r['upstreamPath'].startswith('automations/benny/skills/')
                       and r['upstreamPath'].endswith('/SKILL.md'))
     for operation in record['successfulOperations']:

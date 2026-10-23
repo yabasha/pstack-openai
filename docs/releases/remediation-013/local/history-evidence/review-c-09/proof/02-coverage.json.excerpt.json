@@ -1,0 +1,43 @@
+{
+  "kind": "selected-fixture-result-fields",
+  "caseId": "history-evidence",
+  "attemptId": "review-c-09",
+  "originalLocator": "remaining-local/cases/history-evidence/outputs/coverage.json",
+  "sourceSha256": "623c4168cbe5e6ab3511f4857acbcc021db01646c8f693f3bd46362f7118781e",
+  "sourceBytes": 1863,
+  "transformation": "Named JSON fields selected by exact JSON Pointer. Task-owned absolute paths replaced with declared placeholders. Other fields omitted. These are result-artifact values, not synthesized tool execution evidence. Public selection is limited to eight short inspected fields. Longer output and unselected fields remain private.",
+  "fields": [
+    {
+      "pointer": "/0/status",
+      "value": "searched-local"
+    },
+    {
+      "pointer": "/0/result",
+      "value": "One actual fixture-import commit only. No retry module, engineering change commit, PR number, remote or source mapping supplied."
+    },
+    {
+      "pointer": "/1/status",
+      "value": "POLICY withheld external reads; synthetic shared record inspected"
+    },
+    {
+      "pointer": "/2/status",
+      "value": "POLICY withheld external/private reads"
+    },
+    {
+      "pointer": "/2/result",
+      "value": "No target-related document supplied. No search was run."
+    },
+    {
+      "pointer": "/3/status",
+      "value": "POLICY withheld; source-specified unavailable"
+    },
+    {
+      "pointer": "/3/result",
+      "value": "retryDecision.chat is unavailable. Unrelated cache chat slices do not establish retry rationale."
+    },
+    {
+      "pointer": "/4/status",
+      "value": "unavailable matching connector; missing input"
+    }
+  ]
+}

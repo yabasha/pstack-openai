@@ -1,0 +1,191 @@
+{
+  "kind": "historical-independent-assessment-extract",
+  "qualification": {
+    "inputRevision": "4138e161c27cafffd2baaab6bf4ca53e86a57433",
+    "sourceFreeze": "51f209daf83cd97d64f89881d66533bb59dc57db",
+    "packageVersion": "0.1.3",
+    "currentSourceQualified": false
+  },
+  "source": {
+    "path": "<private-run>/grades/grade_remediation_web_b/result.json",
+    "sha256": "955cf814d92937db0da86307aca849188ae17c5ac8a0a242f21a63f0fd618369",
+    "locator": {
+      "jsonPointer": "/cases/4"
+    }
+  },
+  "originalAssessment": {
+    "caseId": "symptom-repro",
+    "host": "chatgpt",
+    "proposedStatus": "reduced-pass",
+    "gradeScope": "Exact registered case behavior on starting-main 4138 source qualification only. No current main or whole-mode parity claim.",
+    "reason": "Actual PTY failure, causal stale-schema diagnosis, validated migration, related-reader fix and post-fix disk/restart checks establish a functional fixture fix. The exact expectedFull also requires investigating persistent state before code for restart symptoms. Exported numbered reads inspect store.mjs and related code before the actual legacy-state.json read. No earlier raw state-byte inspection is present, so that temporal predicate remains unproven.",
+    "inputAssignment": {
+      "path": "<private-run>/web-checkpoint-2/units/symptom-repro/assignments/symptom-repro.json",
+      "sha256": "89099e30680e72da9e2cb210db83af62b3e7fc6a02070e30150809a5d28dc0a8",
+      "locator": null
+    },
+    "sourceContract": {
+      "path": "<private-run>/runtime/package-main-4138e16/docs/parity/cases/skills/principle-fix-root-causes.json",
+      "sha256": "b2076faec13e7227d7ba44f243dea5c6fbf53bf680069a0a956cdf9c6daab3b2",
+      "locator": "symptom-repro"
+    },
+    "registry": {
+      "path": "<private-run>/runtime/package-main-4138e16/docs/parity/case-registry.json",
+      "sha256": "5b6314bc2aa30ef161318535fe8cdcf901033570083fbc8e991c7c5e3fc59e29",
+      "locator": "symptom-repro"
+    },
+    "requiredObservations": {
+      "pass": [
+        "read",
+        "review-outcome"
+      ],
+      "reduced-pass": [
+        "read"
+      ]
+    },
+    "satisfiedPredicates": [
+      "Preserved legacy state and actual PTY startup reproduce the missing notes.map failure before implementation.",
+      "The v1 items/text versus v2 notes/body mismatch explains the error. Shared pure decoder validates complete state and migrates without a nil-check workaround.",
+      "Actual pattern search finds the separate unsafe legacy reader. The final implementation uses the same decoder in both callers.",
+      "Native five tests pass with 11 assertions. Combined command exit1 comes from git diff --no-index and is not mislabeled as a test failure or overall command pass.",
+      "Ten variants retain malformed-state bytes and unpublished state on failed writes. Actual service proof creates a note, observes pending/completed, inspects disk, restarts the same DATA and reads both notes.",
+      "Original state digest retained. Failed cross-exec ConnectionRefused and the initial invalid judge remain visible."
+    ],
+    "unmetGates": [
+      "State-before-code inspection chronology not established. README/acceptance supplied the state contract first, but these are not actual state-byte inspection.",
+      "Browser actions, rename-failure injection, complete architectural chronology, full dispatch capture, named companion execution and external delivery remain unverified. These additional gaps are not substituted for the leaf grading reason."
+    ],
+    "evidence": [
+      {
+        "path": "<private-run>/web-checkpoint-2/units/symptom-repro/outputs/symptom-repro/result.json",
+        "sha256": "8bfe11b4de6944e66b31433949f8d4da82953a640e7cb1d74d4d49029a0af258",
+        "locator": null
+      },
+      {
+        "path": "<private-run>/web-checkpoint-2/units/symptom-repro/outputs/symptom-repro/preparation-result.md",
+        "sha256": "b306d61929c249eb72e2a509935d6d28ead4e5a398a82ce5e10cac2b2de4a96f",
+        "locator": null
+      },
+      {
+        "path": "<private-run>/web-checkpoint-2/units/symptom-repro/outputs/symptom-repro/source-0.raw.json",
+        "sha256": "93cd6ae4cd04de8d15e4297e16140ddfda553a27a03eb12231c12f70dbca7354",
+        "locator": null
+      },
+      {
+        "path": "<private-run>/web-checkpoint-2/units/symptom-repro/outputs/symptom-repro/source-7.raw.json",
+        "sha256": "8693484ff5796df831619e58aa966059cc081f632b4ee82742215fab161ecb15",
+        "locator": null
+      },
+      {
+        "path": "<private-run>/web-checkpoint-2/units/symptom-repro/outputs/symptom-repro/source-discovery.raw.json",
+        "sha256": "3b2ba2260105feba76f9ea66b044589a05e41910810dde834eff0b22122f5e9c",
+        "locator": null
+      },
+      {
+        "path": "<private-run>/web-checkpoint-2/units/symptom-repro/outputs/symptom-repro/preparation-state.raw.json",
+        "sha256": "91b558c2cf6c9c0522d1b69706c431e8ddba7e29e2126a907b1d6d4f9577aee0",
+        "locator": null
+      },
+      {
+        "path": "<private-run>/web-checkpoint-2/units/symptom-repro/outputs/symptom-repro/red-pty.raw.json",
+        "sha256": "ddeb717de5f1b69cd41cbb1934f676941e5eab5f6b9785847d15d34cd54a82af",
+        "locator": null
+      },
+      {
+        "path": "<private-run>/web-checkpoint-2/units/symptom-repro/outputs/symptom-repro/implementation-grounding.raw.json",
+        "sha256": "7bb3d77e00a325b109fc1ddd29fd2c7606f186e43b61b2a4a7cb29111b0095b8",
+        "locator": null
+      },
+      {
+        "path": "<private-run>/web-checkpoint-2/units/symptom-repro/outputs/symptom-repro/pending-fix.diff",
+        "sha256": "ae1c2ad6f98ece747a0033a25127dbb1c2f526d8c3c51ac92823cc8027a5a370",
+        "locator": null
+      },
+      {
+        "path": "<private-run>/web-checkpoint-2/units/symptom-repro/outputs/symptom-repro/green-tests-diff.raw.json",
+        "sha256": "f7a8b08a6aa3f86540f3048abde8e862f203203df9082f474d32085da3611e34",
+        "locator": null
+      },
+      {
+        "path": "<private-run>/web-checkpoint-2/units/symptom-repro/outputs/symptom-repro/variants.raw.json",
+        "sha256": "4f5ab222d62b2ec3a48e85f053506e064cbd0399cafd1711d4d0e14969c0079c",
+        "locator": null
+      },
+      {
+        "path": "<private-run>/web-checkpoint-2/units/symptom-repro/outputs/symptom-repro/service-proof.raw.json",
+        "sha256": "abe687eec7e9da80607f65940c0e129b09622c127f48e7a7c045de61ab489d04",
+        "locator": null
+      },
+      {
+        "path": "<private-run>/web-checkpoint-2/units/symptom-repro/outputs/symptom-repro/fix-pin.raw.json",
+        "sha256": "5892f3cef9dfc799f883240685a340f63af58ecec2d43e01ba6c2885b7dd67da",
+        "locator": null
+      },
+      {
+        "path": "<private-run>/web-checkpoint-2/units/symptom-repro/outputs/symptom-repro/working/domain/storage.mjs",
+        "sha256": "34502176a4e36014207244a14ce8cf28a85bda919625dc7c0c94ed213f8734f7",
+        "locator": null
+      },
+      {
+        "path": "<private-run>/web-checkpoint-2/units/symptom-repro/outputs/symptom-repro/working/domain/legacy-state.mjs",
+        "sha256": "dbe18204a1d53830bf578327d0a0a26098555a481beecd2a0aac58da7a884ede",
+        "locator": null
+      }
+    ],
+    "successfulOperationMapping": [
+      {
+        "operation": "read",
+        "tool": "functions.exec / tools.exec_command",
+        "evidence": {
+          "path": "<private-run>/web-checkpoint-2/units/symptom-repro/outputs/symptom-repro/preparation-state.raw.json",
+          "sha256": "91b558c2cf6c9c0522d1b69706c431e8ddba7e29e2126a907b1d6d4f9577aee0",
+          "locator": null
+        }
+      },
+      {
+        "operation": "execution",
+        "tool": "functions.exec / tools.exec_command",
+        "evidence": {
+          "path": "<private-run>/web-checkpoint-2/units/symptom-repro/outputs/symptom-repro/red-pty.raw.json",
+          "sha256": "ddeb717de5f1b69cd41cbb1934f676941e5eab5f6b9785847d15d34cd54a82af",
+          "locator": null
+        }
+      },
+      {
+        "operation": "execution",
+        "tool": "functions.exec / tools.exec_command",
+        "evidence": {
+          "path": "<private-run>/web-checkpoint-2/units/symptom-repro/outputs/symptom-repro/service-proof.raw.json",
+          "sha256": "abe687eec7e9da80607f65940c0e129b09622c127f48e7a7c045de61ab489d04",
+          "locator": null
+        }
+      }
+    ],
+    "nativeObservationMapping": {
+      "supplied-input": {
+        "path": "<private-run>/runtime/package-main-4138e16/docs/parity/cases/skills/principle-fix-root-causes.json",
+        "sha256": "b2076faec13e7227d7ba44f243dea5c6fbf53bf680069a0a956cdf9c6daab3b2",
+        "locator": "symptom-repro"
+      },
+      "response": {
+        "path": "<private-run>/web-checkpoint-2/units/symptom-repro/outputs/symptom-repro/result.json",
+        "sha256": "8bfe11b4de6944e66b31433949f8d4da82953a640e7cb1d74d4d49029a0af258",
+        "locator": null
+      },
+      "review-outcome": "<private-run>/grades/grade_remediation_web_b/result.json"
+    },
+    "requestedModel": "inherit-parent",
+    "actualModel": "unknown",
+    "methodReceiptRequiredByRegistry": null
+  },
+  "selectedProof": [
+    "proof/37-web-symptom-repro-1.json",
+    "proof/37-web-symptom-repro-2.json",
+    "proof/37-web-symptom-repro-3.json"
+  ],
+  "publicationStatus": "proposal-only; no canonical host evidence record is constructed",
+  "publicationGaps": [
+    "This assessment format is not the canonical evidence schema. Root-relative operation bindings and any required structured method receipt require separate complete validation.",
+    "Original assessment limitations, invalid receipts and capture gaps are preserved. A behavioral pass does not qualify a different package revision."
+  ]
+}

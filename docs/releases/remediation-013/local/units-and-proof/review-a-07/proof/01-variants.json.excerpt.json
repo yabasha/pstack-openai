@@ -1,0 +1,35 @@
+{
+  "kind": "selected-fixture-result-fields",
+  "caseId": "units-and-proof",
+  "attemptId": "review-a-07",
+  "originalLocator": "remaining-local/cases/units-and-proof/outputs/variants.json",
+  "sourceSha256": "89273e8d1c52d5c5228ad0a05be2a0f8af6f4d6b222b4c2f9cd9245bc4790835",
+  "sourceBytes": 2609,
+  "transformation": "Named JSON fields selected by exact JSON Pointer. Task-owned absolute paths replaced with declared placeholders. Other fields omitted. These are result-artifact values, not synthesized tool execution evidence. Public selection is limited to eight short inspected fields. Longer output and unselected fields remain private.",
+  "fields": [
+    {
+      "pointer": "/0/exitCode",
+      "value": 0
+    },
+    {
+      "pointer": "/1/exitCode",
+      "value": 0
+    },
+    {
+      "pointer": "/2/exitCode",
+      "value": 0
+    },
+    {
+      "pointer": "/3/exitCode",
+      "value": 0
+    },
+    {
+      "pointer": "/4/exitCode",
+      "value": 0
+    },
+    {
+      "pointer": "/5/limits",
+      "value": "No denied destination write was attempted. No OS denial is claimed. Full native response is embedded in the result."
+    }
+  ]
+}

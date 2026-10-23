@@ -1,0 +1,10 @@
+{
+  "kind": "supplied-fixture-input-excerpt",
+  "caseId": "bounded-improvement",
+  "inputRevision": "eaeece4e22e2d3fabe2b83e54116b323a32ee94e",
+  "originalLocator": "remaining-local/cases/bounded-improvement/task-contract.json",
+  "sourceSha256": "58928ff6e9e3928b1762842c200b961b923f39566281c4a1c99c1a9c3027521e",
+  "pointer": "/case/prompt",
+  "suppliedPrompt": "Hillclimb a fixture export latency using a fixed target and minimum iteration count. Supply contrasting realistic workloads, an exact baseline revision, a repeatable harness, error and completed-work counts, a green regression gate and candidate artifacts. Include an early lucky win, noise-sized improvement, changed workload, regression, plateau, worthwhile cheap remaining hypothesis and exhausted marginal ideas. Permit local measurement and edits but no commits, PR writes or recurring scheduling. Repeat with unavailable workers, denied execution and missing persistence. Compare every candidate using the same valid frozen metric and retain the stopping rule.",
+  "transformation": "Only the exact supplied case prompt is projected. Fixture data and arbitrary surrounding contract fields are omitted. This is supplied input, not a native successful tool operation."
+}

@@ -1,0 +1,20 @@
+{
+  "kind": "selected-fixture-result-fields",
+  "caseId": "approval-before-edit",
+  "attemptId": "review-b-07",
+  "originalLocator": "cross-host-extra/local/projects/approval-before-edit/outputs/active-session-source.json",
+  "sourceSha256": "e05ae4d926fd5f2718947f7a68d69aed50e7adb24b55841257f78daa0cce5374",
+  "sourceBytes": 822,
+  "transformation": "Named JSON fields selected by exact JSON Pointer. Task-owned absolute paths replaced with declared placeholders. Other fields omitted. These are result-artifact values, not synthesized tool execution evidence. Public selection is limited to eight short inspected fields. Longer output and unselected fields remain private.",
+  "fields": [
+    {
+      "pointer": "/limits",
+      "value": [
+        "Not a historical user session",
+        "Supplied synthetic history is separate data",
+        "No unrelated chats searched",
+        "No events after snapshot included"
+      ]
+    }
+  ]
+}

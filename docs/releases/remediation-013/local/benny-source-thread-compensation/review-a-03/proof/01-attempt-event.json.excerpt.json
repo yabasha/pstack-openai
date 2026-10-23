@@ -1,0 +1,27 @@
+{
+  "kind": "selected-fixture-result-fields",
+  "caseId": "benny-source-thread-compensation",
+  "attemptId": "review-a-03",
+  "originalLocator": "remaining-local/cases/benny-source-thread-compensation/outputs/attempt-event.json",
+  "sourceSha256": "1fba346b57d2fc6ee813c57812b238a53d2626f8c705bac648468a8afdddf21a",
+  "sourceBytes": 1477,
+  "transformation": "Named JSON fields selected by exact JSON Pointer. Task-owned absolute paths replaced with declared placeholders. Other fields omitted. These are result-artifact values, not synthesized tool execution evidence. Public selection is limited to eight short inspected fields. Longer output and unselected fields remain private.",
+  "fields": [
+    {
+      "pointer": "/assignmentId",
+      "value": "attempt-benny-source-thread-compensation"
+    },
+    {
+      "pointer": "/inputRevision",
+      "value": "0c3afc8dce70e6475ac0eb91fb3cd1e794129476"
+    },
+    {
+      "pointer": "/requestedModel",
+      "value": "inherit-parent"
+    },
+    {
+      "pointer": "/observedModel",
+      "value": "unknown"
+    }
+  ]
+}

@@ -360,19 +360,26 @@ export interface RunDependencies {
   readonly clock: WatchClock;
   readonly emit: (verdict: T.ProgressVerdict) => void;
 }
+const remainingSeconds = (
+  started: number,
+  options: T.PollingOptions,
+  now: number
+): number => options.timeout === 0
+  ? Infinity
+  : Math.max(0, options.timeout - (now - started));
 const deadlinePassed = (
   started: number,
   options: T.PollingOptions,
   now: number
-): boolean => options.timeout > 0 && now - started >= options.timeout;
+): boolean => remainingSeconds(started, options, now) === 0;
 type StepResult<V> =
   | { readonly kind: "terminal"; readonly verdict: V }
   | {
       readonly kind: "sleep";
       readonly seconds: number;
-      readonly onDeadline?: () => V;
+      readonly onDeadline: () => T.TimeoutVerdict;
     }
-  | { readonly kind: "continue" };
+  | { readonly kind: "continue"; readonly onDeadline: () => T.TimeoutVerdict };
 async function pollUntilTerminal<V>(args: {
   readonly dependencies: RunDependencies;
   readonly options: T.PollingOptions;
@@ -384,8 +391,11 @@ async function pollUntilTerminal<V>(args: {
   const maxPolls = args.options.maxPolls ?? 1000;
   if (!Number.isInteger(maxPolls) || maxPolls <= 0) return statusQueryVerdict(args.stamp, 0, {kind: "poll-budget", retryable: false, detail: "invalid poll budget"});
   let polls = 0;
+  let onDeadline: (() => T.TimeoutVerdict) | undefined;
   while (true) {
     if (++polls > maxPolls) return statusQueryVerdict(args.stamp, failures, {kind: "poll-budget", retryable: false, detail: "poll budget exhausted"});
+    if (onDeadline !== undefined && deadlinePassed(started, args.options, args.dependencies.clock.now()))
+      return onDeadline();
     let result: StepResult<V>;
     try {
       result = await args.step();
@@ -395,9 +405,10 @@ async function pollUntilTerminal<V>(args: {
       failures += 1;
       if (!error.failure.retryable || failures >= args.options.maxQueryErrors)
         return statusQueryVerdict(args.stamp, failures, error.failure);
-      const retryInSeconds = queryBackoffSeconds(
-        args.options.interval,
-        failures
+      const seconds = queryBackoffSeconds(args.options.interval, failures);
+      const retryInSeconds = Math.min(
+        seconds,
+        remainingSeconds(started, args.options, args.dependencies.clock.now())
       );
       args.dependencies.emit(
         args.stamp({
@@ -408,24 +419,23 @@ async function pollUntilTerminal<V>(args: {
           retryInSeconds,
         })
       );
-      if (deadlinePassed(started, args.options, args.dependencies.clock.now()))
-        return args.stamp({
+      result = {
+        kind: "sleep",
+        seconds,
+        onDeadline: () => args.stamp({
           kind: "TIMEOUT",
           terminal: true,
           exitCode: 5,
           reason: { kind: "status-unavailable", failure: error.failure },
-        });
-      await args.dependencies.clock.sleep(retryInSeconds);
-      continue;
+        }),
+      };
     }
     if (result.kind === "terminal") return result.verdict;
+    onDeadline = result.onDeadline;
     if (result.kind === "sleep") {
-      if (
-        result.onDeadline !== undefined &&
-        deadlinePassed(started, args.options, args.dependencies.clock.now())
-      )
-        return result.onDeadline();
-      await args.dependencies.clock.sleep(result.seconds);
+      const remaining = remainingSeconds(started, args.options, args.dependencies.clock.now());
+      if (remaining === 0) return onDeadline();
+      await args.dependencies.clock.sleep(Math.min(result.seconds, remaining));
     }
   }
 }
@@ -741,6 +751,19 @@ export async function runQueued(args: {
   args.dependencies.emit(
     stamp({ kind: "QUEUE", terminal: false, queue: args.contexts })
   );
+  const queuedTimeout = (): T.TimeoutVerdict => {
+    const unresolved = state.queue.filter(
+      context => state.snapshots.get(context.number)?.kind !== "merged"
+    );
+    const frontier = unresolved[0];
+    if (frontier === undefined) throw new Error("completed queue cannot time out");
+    return stamp({
+      kind: "TIMEOUT",
+      terminal: true,
+      exitCode: 5,
+      reason: { kind: "queued-stack", frontier, unmergedCount: unresolved.length },
+    });
+  };
   const step = async (): Promise<StepResult<T.QueueTerminalVerdict>> => {
     state = planQueue(state, args.dependencies.clock.now());
     if (state.work === null) {
@@ -788,7 +811,7 @@ export async function runQueued(args: {
           rows: applied.completedSweepRows,
         })
       );
-    if (state.work !== null) return { kind: "continue" };
+    if (state.work !== null) return { kind: "continue", onDeadline: queuedTimeout };
     const evaluation = evaluateQueue(
       state,
       args.dependencies.clock.now(),
@@ -822,7 +845,7 @@ export async function runQueued(args: {
             remaining: evaluation.remaining,
           })
         );
-        return { kind: "continue" };
+        return { kind: "continue", onDeadline: queuedTimeout };
       case "timeout":
         return {
           kind: "terminal",
@@ -847,7 +870,7 @@ export async function runQueued(args: {
               reason: evaluation.reason,
             })
           );
-        return { kind: "sleep", seconds: args.options.interval };
+        return { kind: "sleep", seconds: args.options.interval, onDeadline: queuedTimeout };
       default: {
         const exhaustive: never = evaluation;
         return exhaustive;

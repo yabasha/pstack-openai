@@ -1,0 +1,16 @@
+{
+  "kind": "task-result-file-excerpt",
+  "caseId": "route-recipe",
+  "attemptId": "review-b-03",
+  "inputRevision": "8ad10cb42cc9e0a09f6eb9239b2909203a7f9a3e",
+  "originalLocator": "remaining-local/cases/route-recipe/outputs/route-recipe.result.md",
+  "sourceSha256": "153affbe580e822b8ccd2fa95c4f07673189eabdb14b5d1709f6271edd1ca202",
+  "sourceWasDirectlyListedByIndependentGrade": true,
+  "characterRange": {
+    "start": 0,
+    "endExclusive": 581,
+    "total": 7556
+  },
+  "content": "# Route recipe actual attempt\n\nUse the Bug fix playbook under /poteto-mode. The frozen local playbook is present and was read.\n\n```text\n/poteto-mode Reproduce <symptom> in <app> before changing code, then fix the cause and rerun the same trigger under the same conditions. Use the project's verified app controls if available. Show the actual failing and passing actions, revision, output and side effects. If app controls are unavailable or the result is inconclusive, report that verification as blocked. Keep commits and external delivery pending my explicit authorization.\n```\n",
+  "transformation": "An inspected prefix of the actual task-result file is projected. Task-owned absolute paths use declared placeholders. The prefix may omit later qualifications. The independent assessment and its limits govern the proposed grade. This is neither a new grade nor a native callable-operation claim."
+}

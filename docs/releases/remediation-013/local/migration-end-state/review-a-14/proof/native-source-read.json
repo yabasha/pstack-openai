@@ -1,0 +1,34 @@
+{
+  "schemaVersion": 1,
+  "kind": "native-command-event-excerpt",
+  "caseId": "migration-end-state",
+  "attemptId": "review-a-14",
+  "inputRevision": "044264355914b6d5644c74a3f8f8ed4cb2c9781f",
+  "originalLocator": "work/local_compiler_cases/actors/migration-end-state/events.jsonl",
+  "sourceSha256": "af80155025cb99888c6d0ed8c6b975f1299d57aee6e84a1aef79b9cb4112b261",
+  "itemId": "item_7",
+  "startedLine": 13,
+  "completedLine": 14,
+  "originalEventType": "item.completed",
+  "observedOperationType": "command_execution",
+  "command": "/bin/zsh -lc 'P=<installed-frozen-package>; for f in references/workflow-ownership.md references/host-capabilities.md references/orchestration-contract.md references/model-roles.md references/agent-prompts/poteto-agent.md skills/poteto-mode/playbooks/refactoring.md skills/principle-outcome-oriented-execution/SKILL.md skills/how/SKILL.md skills/why/SKILL.md skills/architect/SKILL.md skills/arena/SKILL.md; do echo \"FILE $f\"; cat \"$P/$f\"; done'",
+  "aggregatedOutputPrefix": "FILE references/workflow-ownership.md\n# Workflow ownership\n\nAn explicit pstack invocation gives pstack ownership of that workflow. An explicit Superpowers invocation gives Superpowers ownership. Do not run both controllers over the same assignment or let one silently replace the other's plan, review, or integration decisions.\n\nFor an unqualified request, D1 retains the already active workflow. With no active workflow, use host defaults and do not activate either orchestration mode automatically. If both pstack and Superpowers are explicitly requested, clarify ownership before launching workers",
+  "originalAggregatedOutputCharacters": 57668,
+  "exitCode": 0,
+  "status": "completed",
+  "scope": "This is a source read in the independently reviewed case actor.",
+  "clock": "The public event has no timestamp. Line order is retained. No duration or clock interval is inferred.",
+  "transformation": "Exact event fields selected. Absolute task and installed-package paths are replaced with declared placeholders. Output is a prefix, not the complete source read. No other event or browser context is included. Only these literal or explicitly loop-listed registered source names are matched. This does not prove every registered source path was read. Native callable metadata is corroborated against a scoped private callsite. Protected or unrelated payload contents are not copied or decoded.",
+  "sourceScopeMatchedByCommand": [
+    "skills/principle-outcome-oriented-execution/SKILL.md"
+  ],
+  "nativeCallBinding": {
+    "originalLocator": "work/local_compiler_cases/actors/migration-end-state/native-scoped.jsonl",
+    "sourceSha256": "d1d2fc9b692b5e31813116fe99e9b7533928b1c4d33d0dcaaeae0e306fe412b6",
+    "line": 7,
+    "callId": "call_c1407c3a035e4cd3bbf6d30f7539c1f5",
+    "observedToolName": "exec",
+    "observedNestedCallsite": "tools.exec_command",
+    "corroboration": "The actual scoped native custom-tool call invokes tools.exec_command with the exact command parsed from this public command_execution event. Only the callable identity and locator are projected. Its surrounding payload remains private."
+  }
+}

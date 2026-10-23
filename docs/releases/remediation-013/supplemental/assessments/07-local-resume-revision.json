@@ -1,0 +1,56 @@
+{
+  "kind": "historical-independent-assessment-extract",
+  "qualification": {
+    "inputRevision": "4138e161c27cafffd2baaab6bf4ca53e86a57433",
+    "sourceFreeze": "51f209daf83cd97d64f89881d66533bb59dc57db",
+    "packageVersion": "0.1.3",
+    "currentSourceQualified": false
+  },
+  "source": {
+    "path": "<private-run>/grades/grade_remediation_local_d/result.json",
+    "sha256": "afa42b89936bc584048d79111f39c86ac5db54d0969424bc67d9db3281fb9083",
+    "locator": {
+      "jsonPointer": "/cases/6"
+    }
+  },
+  "originalAssessment": {
+    "caseId": "resume-revision",
+    "host": "codex",
+    "status": "pass",
+    "inputRevision": "064a2d063568aa5a9949c5aa52663d7fde648082",
+    "reason": "Actual Git inspection reconciles the recorded synthetic base with the later full HEAD and dirty concurrent work.md. A fresh independent reducer inspects the scoped long trail. The result names inherited versus redone work, safe resume point and Investigation route. Saved continuation is read back and matches its digest. Unknown external action remains unreplayed.",
+    "unmetOrLimitedPredicates": "The deliberately incomplete original capsule stays incomplete. The new owned Git model and long trail are synthetic qualification inputs, not recovered production history or unattended continuity. Null destination correctly prevents external recovery.",
+    "artifacts": [
+      {
+        "path": "<private-run>/cross-host-extra/local/projects/resume-revision/outputs/owner-state-inspection.json",
+        "sha256": "12e911aa82a069aba7bdfb948a3601f5fe598cb4851abe0a5a49f07d7820940d",
+        "bytes": 3034
+      },
+      {
+        "path": "<private-run>/cross-host-extra/local/projects/resume-revision/outputs/history-reducer.inspected.json",
+        "sha256": "498e5cbe9f3861b2d20c8c472a3114cb218a7f282fca653b3fbe3bf96516e920",
+        "bytes": 1536
+      },
+      {
+        "path": "<private-run>/cross-host-extra/local/projects/resume-revision/outputs/final-preservation-check.json",
+        "sha256": "94693dd7dd8a1756c28dcf3e8c4d417b8420f98e9a5a08f356a55eeebc544385",
+        "bytes": 274
+      },
+      {
+        "path": "<private-run>/cross-host-extra/local/projects/resume-revision/outputs/continuation.readback.json",
+        "sha256": "46b669077dcc8150f0cbf5e3b95d0561e694ce67577e4c3e091b75a3f8cc04c8",
+        "bytes": 200
+      }
+    ]
+  },
+  "selectedProof": [
+    "proof/07-local-resume-revision-1.json",
+    "proof/07-local-resume-revision-2.json",
+    "proof/07-local-resume-revision-3.json"
+  ],
+  "publicationStatus": "proposal-only; no canonical host evidence record is constructed",
+  "publicationGaps": [
+    "This assessment format is not the canonical evidence schema. Root-relative operation bindings and any required structured method receipt require separate complete validation.",
+    "Original assessment limitations, invalid receipts and capture gaps are preserved. A behavioral pass does not qualify a different package revision."
+  ]
+}

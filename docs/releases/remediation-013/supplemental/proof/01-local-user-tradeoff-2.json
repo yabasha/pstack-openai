@@ -1,0 +1,101 @@
+{
+  "kind": "historical-proof-selection",
+  "source": {
+    "path": "<private-run>/remaining-local/cases/user-tradeoff/outputs/action-receipt.json",
+    "sha256": "1ebd98a67e872fef9b4dae42fcfa168625bdb6a00db6b899c1494df127e1a230",
+    "bytes": 3331
+  },
+  "selection": [
+    {
+      "locator": {
+        "jsonPointer": "/actions"
+      },
+      "value": [
+        {
+          "order": 1,
+          "tool": "functions.exec -> tools.exec_command",
+          "action": "pwd, git rev-parse HEAD, git status --short, git ls-files",
+          "result": "Exact HEAD ccdb2e1604c63ac3bb6392101bb14aa1b404af8c. Tracked worktree unchanged."
+        },
+        {
+          "order": 2,
+          "tool": "functions.exec -> tools.exec_command",
+          "action": "Read full frozen mode, role, capabilities, model roles, assignment, prototype, principle leaves and writing contracts",
+          "result": "Contents inspected in native results; initial combined mode output truncation corrected by full dedicated mode read."
+        },
+        {
+          "order": 3,
+          "tool": "mcp__cua_repl.js",
+          "action": "await cua.getState()",
+          "result": "Native Comet app present. Browser inventory empty."
+        },
+        {
+          "order": 4,
+          "tool": "functions.exec -> tools.apply_patch",
+          "action": "Write outputs/import-prototype.html",
+          "result": "Throwaway local static alternatives created. No scripts or server."
+        },
+        {
+          "order": 5,
+          "tool": "mcp__cua_repl.js",
+          "action": "cua.createBrowserTab(\"iab\", local file URL, {visible:false})",
+          "result": "Browser is not available: iab",
+          "status": "blocked"
+        },
+        {
+          "order": 6,
+          "tool": "mcp__cua_repl.js",
+          "action": "cua.getApp(\"ai.perplexity.comet\"), super+t, type local file URL, Return, getAXState",
+          "result": "Created task-owned local tab. Native AX showed both variants, synthetic row error, disabled Import control."
+        },
+        {
+          "order": 7,
+          "tool": "mcp__cua_repl.js",
+          "action": "click guided anchor, getAXState, getScreenshot",
+          "result": "Observed #core URL and guided layout screenshot. Consistent fieldset alignment and row-local recovery instruction visible."
+        },
+        {
+          "order": 8,
+          "tool": "mcp__cua_repl.js",
+          "action": "click recovery disclosure, getAXState, scroll down, getAXState, getScreenshot",
+          "result": "Recovery disclosure expanded. AX showed progress, unknown connection outcome and completion as synthetic text. Screenshot showed dense ten-control variant."
+        },
+        {
+          "order": 9,
+          "tool": "mcp__cua_repl.js",
+          "action": "scroll up 0.55 pages, getAXState, getScreenshot",
+          "result": "Screenshot showed disabled import and expanded synthetic recovery text. No parser, backend or file upload executed."
+        },
+        {
+          "order": 10,
+          "tool": "mcp__cua_repl.js",
+          "action": "super+w",
+          "result": "Command returned success closing only task-created tab; destination after closing was not inspected to avoid capturing unrelated content."
+        }
+      ]
+    },
+    {
+      "locator": {
+        "jsonPointer": "/sideEffects"
+      },
+      "value": [
+        "Case-owned output files",
+        "One disposable native browser tab created then closed"
+      ]
+    },
+    {
+      "locator": {
+        "jsonPointer": "/notPerformed"
+      },
+      "value": [
+        "No import or upload",
+        "No network listener or install",
+        "No external write, config change, schedule or commit"
+      ]
+    }
+  ],
+  "limits": [
+    "Selections preserve the exact source value at each locator. Truncated strings carry explicit code-unit bounds.",
+    "A producer-captured return is not a recovered native parent envelope. Missing call IDs, original capture defects and unknown model observations remain missing."
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "kind": "task-result-file-excerpt",
+  "caseId": "stale-feature-map",
+  "attemptId": "review-a-17",
+  "inputRevision": "63b1c3a33583a4e688ecaa34099383ccddf5169d",
+  "originalLocator": "work/notes_workflow_reruns/projects/stale-feature-map/deliverables/report.md",
+  "sourceSha256": "3da5a69f76504521d6c765f566f2093f1f90c39ef625e9cf16ef44919a018679",
+  "sourceWasDirectlyListedByIndependentGrade": true,
+  "characterRange": {
+    "start": 0,
+    "endExclusive": 548,
+    "total": 11195
+  },
+  "content": "# Notes verification maintenance report\n\nOutcome is **blocked**, with locally repaired verification docs retained for review. Search remains a confirmed product gap. The visible `Saving` transition was not captured. Shipping was not authorized. No product source, branch, commit, PR, package, global setting, or external service was changed.\n\n## Revisions and scope\n\nThe task input and final HEAD are `63b1c3a33583a4e688ecaa34099383ccddf5169d`. History starts with fixture preparation. This run infers no production history or personal preference.\n",
+  "transformation": "An inspected prefix of the actual task-result file is projected. Task-owned absolute paths use declared placeholders. The prefix may omit later qualifications. The independent assessment and its limits govern the proposed grade. This is neither a new grade nor a native callable-operation claim."
+}

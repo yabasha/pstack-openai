@@ -103,7 +103,7 @@ Forbidden claims:
 
 ## Source proof and release evidence
 
-The following statuses come from the current parity inventory. Pending aggregate review remains pending. Structural catalog checks do not establish host support.
+Current host statuses and release evidence: [current parity inventory](../parity/inventory.json), [chatgpt host report](../testing/chatgpt.md), and [codex host report](../testing/codex.md). These records can advance after the source freeze. Structural catalog checks do not establish host support.
 
 ### `skills/architect/SKILL.md`
 
@@ -113,9 +113,6 @@ Upstream commit: `4ec7ffa173eaa70d3d9467a627baf0954645a353`. SHA-256: `31f8e97a5
 
 Disposition: `runtime`. Aggregate adaptation status: `adapted-reviewed`.
 
-- chatgpt: `not-run`. Tested release evidence: none recorded.
-- codex: `not-run`. Tested release evidence: none recorded.
-
 ### `skills/architect/references/design-red-flags.md`
 
 Destination: [skills/architect/references/design-red-flags.md](../../skills/architect/references/design-red-flags.md).
@@ -123,9 +120,6 @@ Destination: [skills/architect/references/design-red-flags.md](../../skills/arch
 Upstream commit: `4ec7ffa173eaa70d3d9467a627baf0954645a353`. SHA-256: `d0e639e4cc588ec865f930d3a4111faad60987ae36925917e319d7ceca7c69ce`.
 
 Disposition: `runtime`. Aggregate adaptation status: `unchanged-reviewed`.
-
-- chatgpt: `not-run`. Tested release evidence: none recorded.
-- codex: `not-run`. Tested release evidence: none recorded.
 
 ### `skills/architect/references/rationale-template.md`
 
@@ -135,9 +129,6 @@ Upstream commit: `4ec7ffa173eaa70d3d9467a627baf0954645a353`. SHA-256: `0cedfccdc
 
 Disposition: `runtime`. Aggregate adaptation status: `unchanged-reviewed`.
 
-- chatgpt: `not-run`. Tested release evidence: none recorded.
-- codex: `not-run`. Tested release evidence: none recorded.
-
 ### `skills/architect/references/runner-prompt.md`
 
 Destination: [skills/architect/references/runner-prompt.md](../../skills/architect/references/runner-prompt.md).
@@ -145,6 +136,3 @@ Destination: [skills/architect/references/runner-prompt.md](../../skills/archite
 Upstream commit: `4ec7ffa173eaa70d3d9467a627baf0954645a353`. SHA-256: `21dd5314aab778c5007228027a4591d97693fbec6ab86524037772b63f40948e`.
 
 Disposition: `runtime`. Aggregate adaptation status: `adapted-reviewed`.
-
-- chatgpt: `not-run`. Tested release evidence: none recorded.
-- codex: `not-run`. Tested release evidence: none recorded.

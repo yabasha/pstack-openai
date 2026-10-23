@@ -1,0 +1,137 @@
+{
+  "schemaVersion": 1,
+  "sourceFreeze": "4513f3d706e6dfe9e396c80a74c490c3ebcec7a6",
+  "base": "d103d371d962909a308c9df5e62d57c90a76722c",
+  "packageVersion": "0.1.5",
+  "scope": "Immutable source provenance, offline tests and discovery only",
+  "priorTestedFreeze": "5f1c072e594bb1271139a58ed739878c3d89484c",
+  "priorDiscoveryArchive": "docs/releases/historical-discovery-014.json",
+  "workflowReruns": "paused",
+  "workflowGradesTransferred": 0,
+  "fullReleaseQualified": false,
+  "markerChange": "Current candidate source freeze replaces the stale marker only after real fresh host observations; existing strict byte/mode/inventory policy is unchanged.",
+  "helperChecks": [
+    {
+      "args": [
+        "bun",
+        "test"
+      ],
+      "exitCode": 0,
+      "startedAt": "2026-10-18T07:16:05.670Z",
+      "finishedAt": "2026-10-18T07:16:08.155Z",
+      "outputTail": "s]\n(pass) parseArgs > parses a frozen queued stack bottom-to-top [0.25ms]\n(pass) parseArgs > rejects every invalid mode and numeric shape as usage [1.55ms]\n(pass) rendering > emits compact valid JSON by default [0.03ms]\n(pass) rendering > renders the Markdown table from the same verdict only [0.02ms]\n(pass) main > requires explicit repository and head pins before reads [0.08ms]\n(pass) main > returns EX_USAGE 64 and writes usage errors only to stderr [0.05ms]\n(pass) main > bypasses the queue machine for queued-stack status-only [0.18ms]\n(pass) main > returns exit 6 for a forge merge refusal [0.15ms]\n(pass) main > shows help without touching the reader [2.10ms]\n(pass) main > head_changes_invalidate_verdict [0.17ms]\n\n 183 pass\n 0 fail\n 597 expect() calls\nRan 183 tests across 6 files. [2.48s]\n"
+    },
+    {
+      "args": [
+        "bun",
+        "run",
+        "typecheck"
+      ],
+      "exitCode": 0,
+      "startedAt": "2026-10-18T07:16:08.155Z",
+      "finishedAt": "2026-10-18T07:16:08.422Z",
+      "outputTail": "$ tsc --project watch-pr/tsconfig.json --noEmit --strict\n"
+    }
+  ],
+  "harnessFailure": {
+    "receiptSha256": "97ade19ae11a4b78d42d388c6f99187811467cdef7988284d451445cdbc53a8a",
+    "reason": "Initial test invocation omitted required ORCH_TEST_ROOT;160passed,1failed,1error. Corrected task-owned scratch binding produced183pass,597assertions and strict typecheck0. Prior failure retained outside package."
+  },
+  "offlineSuite": {
+    "status": "passed",
+    "tests": 235,
+    "exitCode": 0,
+    "validatedReportCommit": "430f5f11ae941ed63d12694ff99d77db6d10339c",
+    "startedAt": "2026-10-18T07:19:22.691Z",
+    "finishedAt": "2026-10-18T07:26:14.716Z",
+    "receiptSha256": "3c3173dcb388360b1a0d5566c8ba04375a1cf11fa0ab1c66643c0498e1d9fe59",
+    "outputTail": "...........................................................................................................................................................................................................................................\n----------------------------------------------------------------------\nRan 235 tests in 411.805s\n\nOK\n"
+  },
+  "remainingBlockers": [
+    "Historical workflow records remain on0.1.3/older source identities; they are not valid current-freeze workflow evidence.",
+    "Full release assessment must remain false while current workflow reruns are paused."
+  ],
+  "helperCopySourceCheck": {
+    "checked": 23,
+    "mismatches": [],
+    "fixtureLayout": "Package-relative source paths preserved; dependencies only outside Git worktree"
+  },
+  "helperCopyHarnessFailure": {
+    "receiptSha256": "eb52cd7d42ca73bfaefd9374e9dc6660f1ae740a57da6a5badbd9ffc94e3f260",
+    "reason": "Flattened helper-only copy changed inferred package root, so22 store tests rejected the scratch directory. Preserving package-relative layout resolved it;183passed,597assertions and strict typecheck0. Prior failed receipt retained."
+  },
+  "preflight": {
+    "tests": 27,
+    "exitCode": 0,
+    "receiptSha256": "38b7287441cb590930afc198fea7aa1fe92ea96db8188d38b9a65f4508750652"
+  },
+  "previousAttempt": {
+    "version": "0.1.4",
+    "report": "docs/releases/provenance-014.json",
+    "offlineSuite": "235tests,4failures,4errors; corrected bookkeeping and temporary fixture contamination before0.1.5freeze"
+  },
+  "discoveryAndProvenanceGates": {
+    "freeze": "4513f3d706e6dfe9e396c80a74c490c3ebcec7a6",
+    "version": "0.1.5",
+    "reportCommit": "430f5f11ae941ed63d12694ff99d77db6d10339c",
+    "provenance": true,
+    "byHost": {
+      "codex": {
+        "errors": [],
+        "discoveryReceiptComplete": true
+      },
+      "chatgpt": {
+        "errors": [],
+        "discoveryReceiptComplete": true
+      }
+    },
+    "fullReleaseQualified": false,
+    "releaseDiscovery": {
+      "chatgpt": true,
+      "codex": true
+    },
+    "staleWorkflowEvidence": 208,
+    "remainingBlockerCount": 2140,
+    "remainingBlockerSample": [
+      "mixed package versions",
+      "stale evidence cannot transfer to the requested commit",
+      "('chatgpt', 'absent-workers'): packageCommit: must match exact tested package revision",
+      "('chatgpt', 'absent-workers'): packageVersion differs from requested version",
+      "('chatgpt', 'accessible-trace'): packageCommit: must match exact tested package revision"
+    ],
+    "exitCode": 0,
+    "receiptSha256": "44add7dfa939dd5d28afe468b0159c6a01e9a0970a017f41ab5fd5c6f544eb64",
+    "startedAt": "2026-10-18T07:19:22.692Z",
+    "finishedAt": "2026-10-18T07:20:22.217Z"
+  },
+  "independentReview": {
+    "base": "d103d371d962909a308c9df5e62d57c90a76722c",
+    "target": "430f5f11ae941ed63d12694ff99d77db6d10339c",
+    "axes": [
+      {
+        "axis": "Standards",
+        "findings": [],
+        "receiptSha256": "7062e9910d77646d6aeed68e2194c3131213570b85f326ddccc2e5e011008f1a",
+        "limitations": [
+          "Read-only review of exact committed source and metadata; host execution not independently repeated.",
+          "Workflow reruns remain paused.",
+          "Final receipt-only delta excluded and reserved for parent review."
+        ]
+      },
+      {
+        "axis": "Spec",
+        "findings": [],
+        "receiptSha256": "5ce92a09745878d95374ad2f83f2c3acf6773bb7cb532ed4e8583ff1fabd3ed2",
+        "limitations": [
+          "Final235offline suite receipt pending parent-owned run; no current suite success inferred.",
+          "PR creation is parent-owned and not verified here.",
+          "No workflows, tests, installations, UI operations, network calls or Git mutations performed.",
+          "Backend archive verification receipt inspected; archive decompression not independently repeated.",
+          "Prior submission ZIP and dirty worktree preservation not independently audited."
+        ]
+      }
+    ]
+  },
+  "finalDeltaScope": "Only this named provenance report adds actual completed check/review receipts after the reviewed commit. Parent reviews the delta and rechecks strict provenance/discovery on the final commit; no operative source changes.",
+  "dependencyRefreshClarification": "dependencies.versionRefresh.destinations.before records the stale stored audit digest being corrected, not the manifest byte digest at baseRevision. The after digest is the exact 0.1.5 manifest digest; canonical source pins remain unchanged."
+}

@@ -1,6 +1,6 @@
 # Benny readiness
 
-Benny is an optional operational pack. Read its [setup file](../../automations/benny/skills/setup-benny/SKILL.md) directly. Its three nested skills are outside root discovery. Missing configuration or connectors block only Benny. Both host workflows are not-run. No connector, automation, message, ticket, UI session, or PR was exercised during this port.
+Benny is an optional operational pack. Read its [setup reference](../../automations/benny/skills/setup-benny/REFERENCE.md) directly. Its three nested instruction references use non-discoverable filenames. Missing configuration or connectors block only Benny. Both host workflows are not-run. No connector, automation, message, ticket, UI session, or PR was exercised during this port.
 
 ## Read-only preflight
 

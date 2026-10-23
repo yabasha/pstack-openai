@@ -1,0 +1,104 @@
+{
+  "kind": "historical-proof-selection",
+  "source": {
+    "path": "<private-run>/remaining-local/cases/denied-writes/outputs/granted-write-readback.json",
+    "sha256": "26711a315034c14f287fc9ca8304a8df0ac337d3daef69d7f7e822a7076ad3ca",
+    "bytes": 891
+  },
+  "selection": [
+    {
+      "locator": {
+        "jsonPointer": "/order"
+      },
+      "value": 3
+    },
+    {
+      "locator": {
+        "jsonPointer": "/tool"
+      },
+      "value": "functions.exec -> tools.exec_command"
+    },
+    {
+      "locator": {
+        "jsonPointer": "/runtime"
+      },
+      "value": "bun --no-install"
+    },
+    {
+      "locator": {
+        "jsonPointer": "/variant"
+      },
+      "value": "separate-later-granted"
+    },
+    {
+      "locator": {
+        "jsonPointer": "/owner"
+      },
+      "value": "/root/denied_case"
+    },
+    {
+      "locator": {
+        "jsonPointer": "/inputRevision"
+      },
+      "value": "ff47900b1a917c954c27f1db32cad1229dad77ca"
+    },
+    {
+      "locator": {
+        "jsonPointer": "/outputPath"
+      },
+      "value": "outputs/granted-variant/assigned-output.txt"
+    },
+    {
+      "locator": {
+        "jsonPointer": "/bytesWritten"
+      },
+      "value": 124
+    },
+    {
+      "locator": {
+        "jsonPointer": "/bytesRead"
+      },
+      "value": 124
+    },
+    {
+      "locator": {
+        "jsonPointer": "/sha256"
+      },
+      "value": "9cacc5a2115b8bf448aae435c8d54212db74ee27f37fe6abfd62d51eeffa6584"
+    },
+    {
+      "locator": {
+        "jsonPointer": "/expectedContent"
+      },
+      "value": "denied-writes separate granted local variant\nowner=/root/denied_case\ninputRevision=ff47900b1a917c954c27f1db32cad1229dad77ca\n"
+    },
+    {
+      "locator": {
+        "jsonPointer": "/actualReadback"
+      },
+      "value": "denied-writes separate granted local variant\nowner=/root/denied_case\ninputRevision=ff47900b1a917c954c27f1db32cad1229dad77ca\n"
+    },
+    {
+      "locator": {
+        "jsonPointer": "/equal"
+      },
+      "value": true
+    },
+    {
+      "locator": {
+        "jsonPointer": "/sideEffect"
+      },
+      "value": "Created one disposable local file in owned granted-variant directory. No external side effect."
+    },
+    {
+      "locator": {
+        "jsonPointer": "/initialBranchRemains"
+      },
+      "value": "blocked"
+    }
+  ],
+  "limits": [
+    "Selections preserve the exact source value at each locator. Truncated strings carry explicit code-unit bounds.",
+    "A producer-captured return is not a recovered native parent envelope. Missing call IDs, original capture defects and unknown model observations remain missing."
+  ]
+}

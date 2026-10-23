@@ -1,0 +1,426 @@
+{
+  "schemaVersion": 1,
+  "kind": "historical-independent-assessment-projection",
+  "caseId": "bounded-poll",
+  "attemptId": "review-a-12",
+  "startingMain": "4138e161c27cafffd2baaab6bf4ca53e86a57433",
+  "packageCommit": "51f209daf83cd97d64f89881d66533bb59dc57db",
+  "packageVersion": "0.1.3",
+  "inputRevision": "4a7dde94ab2778837e4c932e53cc3484d2e74dfd",
+  "originalProposedStatus": "reduced-pass",
+  "evidenceStatus": "reduced-pass",
+  "qualifiesCurrentMain": false,
+  "sourceReview": {
+    "originalLocator": "grades/grade_remediation_local_a/result.json",
+    "sourceSha256": "9cc1f7ebfcf0f02bdaaabc03a16ca8ef1a0dcc165259e873d7be84affe57bc2f",
+    "jsonPointer": "/cases/11",
+    "reviewer": "/root/grade_remediation_local_a",
+    "requestedModel": "inherit-parent",
+    "actualModel": "unknown"
+  },
+  "findings": [
+    "Drive mode, fixed queue, exact pins and two total snapshots are recorded. Status-only exited zero with STATUS, and the second queued PTY invocation stopped at poll-budget with exit seven. No readiness was inferred.",
+    "The read-only frontier triage retains malicious comment refusal, third-pass/auth-data escalation, proposed fixes/replies and unknown live heads. No external fix wave, replies or wake registration occurred.",
+    "No reset of the two-attempt case budget was used. Separate later watcher diagnostics are not replacement case attempts.",
+    "A queued sweep could not finish with one remaining snapshot. Missing authoritative frontier metadata and the contradictory fixture trunk remain specific open dependencies."
+  ],
+  "limits": [
+    "Drive mode, fixed queue, exact pins and two total snapshots are recorded. Status-only exited zero with STATUS, and the second queued PTY invocation stopped at poll-budget with exit seven. No readiness was inferred.",
+    "The read-only frontier triage retains malicious comment refusal, third-pass/auth-data escalation, proposed fixes/replies and unknown live heads. No external fix wave, replies or wake registration occurred.",
+    "No reset of the two-attempt case budget was used. Separate later watcher diagnostics are not replacement case attempts.",
+    "A queued sweep could not finish with one remaining snapshot. Missing authoritative frontier metadata and the contradictory fixture trunk remain specific open dependencies."
+  ],
+  "chronology": {
+    "preserveAllEarlierAttempts": true,
+    "methodConformanceClaim": false,
+    "notes": [
+      "No reset of the two-attempt case budget was used. Separate later watcher diagnostics are not replacement case attempts."
+    ]
+  },
+  "predicate": [
+    {
+      "id": 1,
+      "text": "Declare drive, background, threads-only or check with source aliases before polling, resolve one forge and verify single ownership.",
+      "status": "satisfied",
+      "basis": [
+        "Drive mode, fixed queue, exact pins and two total snapshots are recorded. Status-only exited zero with STATUS, and the second queued PTY invocation stopped at poll-budget with exit seven. No readiness was inferred.",
+        "The read-only frontier triage retains malicious comment refusal, third-pass/auth-data escalation, proposed fixes/replies and unknown live heads. No external fix wave, replies or wake registration occurred.",
+        "No reset of the two-attempt case budget was used. Separate later watcher diagnostics are not replacement case attempts.",
+        "A queued sweep could not finish with one remaining snapshot. Missing authoritative frontier metadata and the contradictory fixture trunk remain specific open dependencies."
+      ],
+      "source": "docs/parity/cases/playbooks/babysit.json",
+      "evidence": [
+        {
+          "path": "<private-run>/work/helper_workflow_reruns/projects/release-watch/deliverables/result.json",
+          "line": 1,
+          "sha256": "d16ddf3114ff4fdda36a4f405a7669442b4d8eded2d46c2696c2f84426b2f8d3"
+        },
+        {
+          "path": "<private-run>/work/helper_workflow_reruns/projects/release-watch/deliverables/watch/attempt1/receipt.json",
+          "line": 1,
+          "sha256": "ea6784fdb9012f52e1775b704599755544bfcf9ab9966410727e38e187533bd0"
+        },
+        {
+          "path": "<private-run>/work/helper_workflow_reruns/projects/release-watch/deliverables/watch/attempt1/stdout.txt",
+          "line": 1,
+          "sha256": "f74236c37844f9abf2565e73fc885249d96dbd1d86baef1ffe220359d1cfdc72"
+        },
+        {
+          "path": "<private-run>/work/helper_workflow_reruns/projects/release-watch/deliverables/watch/attempt2/native-pty.json",
+          "line": 1,
+          "sha256": "065f2d88df9677ddfaee02c34d00a6b29f93aa839a05966d6d9eede90e953b9a"
+        },
+        {
+          "path": "<private-run>/work/helper_workflow_reruns/projects/release-watch/deliverables/watch/attempt2/stdout.txt",
+          "line": 1,
+          "sha256": "e9f98677462840958bf1e6c3c1ea199ace9bfbc416a7fe79e5b7238438cbb516"
+        },
+        {
+          "path": "<private-run>/work/helper_workflow_reruns/projects/release-watch/deliverables/native/log-triage.json",
+          "line": 1,
+          "sha256": "7f5f6f89b9206e74777de6b2f87fc384c04653de882bc466327dfe37e3287e3d"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "text": "Use current code evidence to classify fix, dismiss or ask; escalate high-risk findings and preserve red-first proof without unauthorized replies or fixes.",
+      "status": "unmet",
+      "basis": [
+        "Drive mode, fixed queue, exact pins and two total snapshots are recorded. Status-only exited zero with STATUS, and the second queued PTY invocation stopped at poll-budget with exit seven. No readiness was inferred.",
+        "The read-only frontier triage retains malicious comment refusal, third-pass/auth-data escalation, proposed fixes/replies and unknown live heads. No external fix wave, replies or wake registration occurred.",
+        "No reset of the two-attempt case budget was used. Separate later watcher diagnostics are not replacement case attempts.",
+        "A queued sweep could not finish with one remaining snapshot. Missing authoritative frontier metadata and the contradictory fixture trunk remain specific open dependencies."
+      ],
+      "source": "docs/parity/cases/playbooks/babysit.json",
+      "evidence": [
+        {
+          "path": "<private-run>/work/helper_workflow_reruns/projects/release-watch/deliverables/result.json",
+          "line": 1,
+          "sha256": "d16ddf3114ff4fdda36a4f405a7669442b4d8eded2d46c2696c2f84426b2f8d3"
+        },
+        {
+          "path": "<private-run>/work/helper_workflow_reruns/projects/release-watch/deliverables/watch/attempt1/receipt.json",
+          "line": 1,
+          "sha256": "ea6784fdb9012f52e1775b704599755544bfcf9ab9966410727e38e187533bd0"
+        },
+        {
+          "path": "<private-run>/work/helper_workflow_reruns/projects/release-watch/deliverables/watch/attempt1/stdout.txt",
+          "line": 1,
+          "sha256": "f74236c37844f9abf2565e73fc885249d96dbd1d86baef1ffe220359d1cfdc72"
+        },
+        {
+          "path": "<private-run>/work/helper_workflow_reruns/projects/release-watch/deliverables/watch/attempt2/native-pty.json",
+          "line": 1,
+          "sha256": "065f2d88df9677ddfaee02c34d00a6b29f93aa839a05966d6d9eede90e953b9a"
+        },
+        {
+          "path": "<private-run>/work/helper_workflow_reruns/projects/release-watch/deliverables/watch/attempt2/stdout.txt",
+          "line": 1,
+          "sha256": "e9f98677462840958bf1e6c3c1ea199ace9bfbc416a7fe79e5b7238438cbb516"
+        },
+        {
+          "path": "<private-run>/work/helper_workflow_reruns/projects/release-watch/deliverables/native/log-triage.json",
+          "line": 1,
+          "sha256": "7f5f6f89b9206e74777de6b2f87fc384c04653de882bc466327dfe37e3287e3d"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "text": "Work conflicts, frontier threads then CI; report a rebase and drift sweep rather than changing topology. Preserve frozen queue and sanctioned follow-up creation gate.",
+      "status": "unmet",
+      "basis": [
+        "Drive mode, fixed queue, exact pins and two total snapshots are recorded. Status-only exited zero with STATUS, and the second queued PTY invocation stopped at poll-budget with exit seven. No readiness was inferred.",
+        "The read-only frontier triage retains malicious comment refusal, third-pass/auth-data escalation, proposed fixes/replies and unknown live heads. No external fix wave, replies or wake registration occurred.",
+        "No reset of the two-attempt case budget was used. Separate later watcher diagnostics are not replacement case attempts.",
+        "A queued sweep could not finish with one remaining snapshot. Missing authoritative frontier metadata and the contradictory fixture trunk remain specific open dependencies."
+      ],
+      "source": "docs/parity/cases/playbooks/babysit.json",
+      "evidence": [
+        {
+          "path": "<private-run>/work/helper_workflow_reruns/projects/release-watch/deliverables/result.json",
+          "line": 1,
+          "sha256": "d16ddf3114ff4fdda36a4f405a7669442b4d8eded2d46c2696c2f84426b2f8d3"
+        },
+        {
+          "path": "<private-run>/work/helper_workflow_reruns/projects/release-watch/deliverables/watch/attempt1/receipt.json",
+          "line": 1,
+          "sha256": "ea6784fdb9012f52e1775b704599755544bfcf9ab9966410727e38e187533bd0"
+        },
+        {
+          "path": "<private-run>/work/helper_workflow_reruns/projects/release-watch/deliverables/watch/attempt1/stdout.txt",
+          "line": 1,
+          "sha256": "f74236c37844f9abf2565e73fc885249d96dbd1d86baef1ffe220359d1cfdc72"
+        },
+        {
+          "path": "<private-run>/work/helper_workflow_reruns/projects/release-watch/deliverables/watch/attempt2/native-pty.json",
+          "line": 1,
+          "sha256": "065f2d88df9677ddfaee02c34d00a6b29f93aa839a05966d6d9eede90e953b9a"
+        },
+        {
+          "path": "<private-run>/work/helper_workflow_reruns/projects/release-watch/deliverables/watch/attempt2/stdout.txt",
+          "line": 1,
+          "sha256": "e9f98677462840958bf1e6c3c1ea199ace9bfbc416a7fe79e5b7238438cbb516"
+        },
+        {
+          "path": "<private-run>/work/helper_workflow_reruns/projects/release-watch/deliverables/native/log-triage.json",
+          "line": 1,
+          "sha256": "7f5f6f89b9206e74777de6b2f87fc384c04653de882bc466327dfe37e3287e3d"
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "text": "Bind actual watcher flags, full head pins and explicit repository; retain setup-required and query failures. Never treat status-only exit 0 as READY.",
+      "status": "satisfied",
+      "basis": [
+        "Drive mode, fixed queue, exact pins and two total snapshots are recorded. Status-only exited zero with STATUS, and the second queued PTY invocation stopped at poll-budget with exit seven. No readiness was inferred.",
+        "The read-only frontier triage retains malicious comment refusal, third-pass/auth-data escalation, proposed fixes/replies and unknown live heads. No external fix wave, replies or wake registration occurred.",
+        "No reset of the two-attempt case budget was used. Separate later watcher diagnostics are not replacement case attempts.",
+        "A queued sweep could not finish with one remaining snapshot. Missing authoritative frontier metadata and the contradictory fixture trunk remain specific open dependencies."
+      ],
+      "source": "docs/parity/cases/playbooks/babysit.json",
+      "evidence": [
+        {
+          "path": "<private-run>/work/helper_workflow_reruns/projects/release-watch/deliverables/result.json",
+          "line": 1,
+          "sha256": "d16ddf3114ff4fdda36a4f405a7669442b4d8eded2d46c2696c2f84426b2f8d3"
+        },
+        {
+          "path": "<private-run>/work/helper_workflow_reruns/projects/release-watch/deliverables/watch/attempt1/receipt.json",
+          "line": 1,
+          "sha256": "ea6784fdb9012f52e1775b704599755544bfcf9ab9966410727e38e187533bd0"
+        },
+        {
+          "path": "<private-run>/work/helper_workflow_reruns/projects/release-watch/deliverables/watch/attempt1/stdout.txt",
+          "line": 1,
+          "sha256": "f74236c37844f9abf2565e73fc885249d96dbd1d86baef1ffe220359d1cfdc72"
+        },
+        {
+          "path": "<private-run>/work/helper_workflow_reruns/projects/release-watch/deliverables/watch/attempt2/native-pty.json",
+          "line": 1,
+          "sha256": "065f2d88df9677ddfaee02c34d00a6b29f93aa839a05966d6d9eede90e953b9a"
+        },
+        {
+          "path": "<private-run>/work/helper_workflow_reruns/projects/release-watch/deliverables/watch/attempt2/stdout.txt",
+          "line": 1,
+          "sha256": "e9f98677462840958bf1e6c3c1ea199ace9bfbc416a7fe79e5b7238438cbb516"
+        },
+        {
+          "path": "<private-run>/work/helper_workflow_reruns/projects/release-watch/deliverables/native/log-triage.json",
+          "line": 1,
+          "sha256": "7f5f6f89b9206e74777de6b2f87fc384c04653de882bc466327dfe37e3287e3d"
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "text": "Stop at supplied total budget across re-arms, report last observed state and unknowns, and register no background work when absent or denied.",
+      "status": "satisfied",
+      "basis": [
+        "Drive mode, fixed queue, exact pins and two total snapshots are recorded. Status-only exited zero with STATUS, and the second queued PTY invocation stopped at poll-budget with exit seven. No readiness was inferred.",
+        "The read-only frontier triage retains malicious comment refusal, third-pass/auth-data escalation, proposed fixes/replies and unknown live heads. No external fix wave, replies or wake registration occurred.",
+        "No reset of the two-attempt case budget was used. Separate later watcher diagnostics are not replacement case attempts.",
+        "A queued sweep could not finish with one remaining snapshot. Missing authoritative frontier metadata and the contradictory fixture trunk remain specific open dependencies."
+      ],
+      "source": "docs/parity/cases/playbooks/babysit.json",
+      "evidence": [
+        {
+          "path": "<private-run>/work/helper_workflow_reruns/projects/release-watch/deliverables/result.json",
+          "line": 1,
+          "sha256": "d16ddf3114ff4fdda36a4f405a7669442b4d8eded2d46c2696c2f84426b2f8d3"
+        },
+        {
+          "path": "<private-run>/work/helper_workflow_reruns/projects/release-watch/deliverables/watch/attempt1/receipt.json",
+          "line": 1,
+          "sha256": "ea6784fdb9012f52e1775b704599755544bfcf9ab9966410727e38e187533bd0"
+        },
+        {
+          "path": "<private-run>/work/helper_workflow_reruns/projects/release-watch/deliverables/watch/attempt1/stdout.txt",
+          "line": 1,
+          "sha256": "f74236c37844f9abf2565e73fc885249d96dbd1d86baef1ffe220359d1cfdc72"
+        },
+        {
+          "path": "<private-run>/work/helper_workflow_reruns/projects/release-watch/deliverables/watch/attempt2/native-pty.json",
+          "line": 1,
+          "sha256": "065f2d88df9677ddfaee02c34d00a6b29f93aa839a05966d6d9eede90e953b9a"
+        },
+        {
+          "path": "<private-run>/work/helper_workflow_reruns/projects/release-watch/deliverables/watch/attempt2/stdout.txt",
+          "line": 1,
+          "sha256": "e9f98677462840958bf1e6c3c1ea199ace9bfbc416a7fe79e5b7238438cbb516"
+        },
+        {
+          "path": "<private-run>/work/helper_workflow_reruns/projects/release-watch/deliverables/native/log-triage.json",
+          "line": 1,
+          "sha256": "7f5f6f89b9206e74777de6b2f87fc384c04653de882bc466327dfe37e3287e3d"
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "text": "Preserve forge-specific READY, merge-queue WAITING, ADVANCE and COMPLETE semantics and route authorized landing to Shipping.",
+      "status": "satisfied",
+      "basis": [
+        "Drive mode, fixed queue, exact pins and two total snapshots are recorded. Status-only exited zero with STATUS, and the second queued PTY invocation stopped at poll-budget with exit seven. No readiness was inferred.",
+        "The read-only frontier triage retains malicious comment refusal, third-pass/auth-data escalation, proposed fixes/replies and unknown live heads. No external fix wave, replies or wake registration occurred.",
+        "No reset of the two-attempt case budget was used. Separate later watcher diagnostics are not replacement case attempts.",
+        "A queued sweep could not finish with one remaining snapshot. Missing authoritative frontier metadata and the contradictory fixture trunk remain specific open dependencies."
+      ],
+      "source": "docs/parity/cases/playbooks/babysit.json",
+      "evidence": [
+        {
+          "path": "<private-run>/work/helper_workflow_reruns/projects/release-watch/deliverables/result.json",
+          "line": 1,
+          "sha256": "d16ddf3114ff4fdda36a4f405a7669442b4d8eded2d46c2696c2f84426b2f8d3"
+        },
+        {
+          "path": "<private-run>/work/helper_workflow_reruns/projects/release-watch/deliverables/watch/attempt1/receipt.json",
+          "line": 1,
+          "sha256": "ea6784fdb9012f52e1775b704599755544bfcf9ab9966410727e38e187533bd0"
+        },
+        {
+          "path": "<private-run>/work/helper_workflow_reruns/projects/release-watch/deliverables/watch/attempt1/stdout.txt",
+          "line": 1,
+          "sha256": "f74236c37844f9abf2565e73fc885249d96dbd1d86baef1ffe220359d1cfdc72"
+        },
+        {
+          "path": "<private-run>/work/helper_workflow_reruns/projects/release-watch/deliverables/watch/attempt2/native-pty.json",
+          "line": 1,
+          "sha256": "065f2d88df9677ddfaee02c34d00a6b29f93aa839a05966d6d9eede90e953b9a"
+        },
+        {
+          "path": "<private-run>/work/helper_workflow_reruns/projects/release-watch/deliverables/watch/attempt2/stdout.txt",
+          "line": 1,
+          "sha256": "e9f98677462840958bf1e6c3c1ea199ace9bfbc416a7fe79e5b7238438cbb516"
+        },
+        {
+          "path": "<private-run>/work/helper_workflow_reruns/projects/release-watch/deliverables/native/log-triage.json",
+          "line": 1,
+          "sha256": "7f5f6f89b9206e74777de6b2f87fc384c04653de882bc466327dfe37e3287e3d"
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "text": "Return mode, frontier, active-forge state, GitHub four-column table, fixed versus dismissed reasons, pending work and human decisions.",
+      "status": "satisfied",
+      "basis": [
+        "Drive mode, fixed queue, exact pins and two total snapshots are recorded. Status-only exited zero with STATUS, and the second queued PTY invocation stopped at poll-budget with exit seven. No readiness was inferred.",
+        "The read-only frontier triage retains malicious comment refusal, third-pass/auth-data escalation, proposed fixes/replies and unknown live heads. No external fix wave, replies or wake registration occurred.",
+        "No reset of the two-attempt case budget was used. Separate later watcher diagnostics are not replacement case attempts.",
+        "A queued sweep could not finish with one remaining snapshot. Missing authoritative frontier metadata and the contradictory fixture trunk remain specific open dependencies."
+      ],
+      "source": "docs/parity/cases/playbooks/babysit.json",
+      "evidence": [
+        {
+          "path": "<private-run>/work/helper_workflow_reruns/projects/release-watch/deliverables/result.json",
+          "line": 1,
+          "sha256": "d16ddf3114ff4fdda36a4f405a7669442b4d8eded2d46c2696c2f84426b2f8d3"
+        },
+        {
+          "path": "<private-run>/work/helper_workflow_reruns/projects/release-watch/deliverables/watch/attempt1/receipt.json",
+          "line": 1,
+          "sha256": "ea6784fdb9012f52e1775b704599755544bfcf9ab9966410727e38e187533bd0"
+        },
+        {
+          "path": "<private-run>/work/helper_workflow_reruns/projects/release-watch/deliverables/watch/attempt1/stdout.txt",
+          "line": 1,
+          "sha256": "f74236c37844f9abf2565e73fc885249d96dbd1d86baef1ffe220359d1cfdc72"
+        },
+        {
+          "path": "<private-run>/work/helper_workflow_reruns/projects/release-watch/deliverables/watch/attempt2/native-pty.json",
+          "line": 1,
+          "sha256": "065f2d88df9677ddfaee02c34d00a6b29f93aa839a05966d6d9eede90e953b9a"
+        },
+        {
+          "path": "<private-run>/work/helper_workflow_reruns/projects/release-watch/deliverables/watch/attempt2/stdout.txt",
+          "line": 1,
+          "sha256": "e9f98677462840958bf1e6c3c1ea199ace9bfbc416a7fe79e5b7238438cbb516"
+        },
+        {
+          "path": "<private-run>/work/helper_workflow_reruns/projects/release-watch/deliverables/native/log-triage.json",
+          "line": 1,
+          "sha256": "7f5f6f89b9206e74777de6b2f87fc384c04653de882bc466327dfe37e3287e3d"
+        }
+      ]
+    }
+  ],
+  "sourceArtifactBindings": [
+    {
+      "originalLocator": "work/helper_workflow_reruns/projects/release-watch/deliverables/result.json",
+      "sourceSha256": "d16ddf3114ff4fdda36a4f405a7669442b4d8eded2d46c2696c2f84426b2f8d3",
+      "expectedSha256": "d16ddf3114ff4fdda36a4f405a7669442b4d8eded2d46c2696c2f84426b2f8d3",
+      "expectedHashMatches": true,
+      "bytes": 42536,
+      "publication": "projected-fields",
+      "reason": "Only a narrow inspected projection may be included. Private original remains unchanged.",
+      "projectedPath": "docs/releases/remediation-013/local/bounded-poll/review-a-12/proof/01-result.json.excerpt.json",
+      "projectedSha256": "d3131187d82aaef107419f19cc20fbc62235f06ea84219186d26799b1f2fda12"
+    },
+    {
+      "originalLocator": "work/helper_workflow_reruns/projects/release-watch/deliverables/watch/attempt1/receipt.json",
+      "sourceSha256": "ea6784fdb9012f52e1775b704599755544bfcf9ab9966410727e38e187533bd0",
+      "expectedSha256": "ea6784fdb9012f52e1775b704599755544bfcf9ab9966410727e38e187533bd0",
+      "expectedHashMatches": true,
+      "bytes": 816,
+      "publication": "projected-fields",
+      "reason": "Only a narrow inspected projection may be included. Private original remains unchanged.",
+      "projectedPath": "docs/releases/remediation-013/local/bounded-poll/review-a-12/proof/02-receipt.json.excerpt.json",
+      "projectedSha256": "96c1e903f2930d659c388559af9f01fe9ab9bc35d7fb1f59181c073aeeddcd97"
+    },
+    {
+      "originalLocator": "work/helper_workflow_reruns/projects/release-watch/deliverables/watch/attempt1/stdout.txt",
+      "sourceSha256": "f74236c37844f9abf2565e73fc885249d96dbd1d86baef1ffe220359d1cfdc72",
+      "expectedSha256": "f74236c37844f9abf2565e73fc885249d96dbd1d86baef1ffe220359d1cfdc72",
+      "expectedHashMatches": true,
+      "bytes": 1831,
+      "publication": "projected-fields",
+      "reason": "Only a narrow inspected projection may be included. Private original remains unchanged.",
+      "projectedPath": "docs/releases/remediation-013/local/bounded-poll/review-a-12/proof/03-stdout.txt.excerpt.json",
+      "projectedSha256": "dc68db753c459fd1e887fa01327f4ddcad678f9e0aa1fe17a7f4df61a332cbfe"
+    },
+    {
+      "originalLocator": "work/helper_workflow_reruns/projects/release-watch/deliverables/watch/attempt2/native-pty.json",
+      "sourceSha256": "065f2d88df9677ddfaee02c34d00a6b29f93aa839a05966d6d9eede90e953b9a",
+      "expectedSha256": "065f2d88df9677ddfaee02c34d00a6b29f93aa839a05966d6d9eede90e953b9a",
+      "expectedHashMatches": true,
+      "bytes": 2537,
+      "publication": "projected-fields",
+      "reason": "Only a narrow inspected projection may be included. Private original remains unchanged.",
+      "projectedPath": "docs/releases/remediation-013/local/bounded-poll/review-a-12/proof/04-native-pty.json.excerpt.json",
+      "projectedSha256": "0c1492f35a713e90ced5101ca5533a4d8fb6bb2316e0c9dfc053f74c6056fe9e"
+    },
+    {
+      "originalLocator": "work/helper_workflow_reruns/projects/release-watch/deliverables/watch/attempt2/stdout.txt",
+      "sourceSha256": "e9f98677462840958bf1e6c3c1ea199ace9bfbc416a7fe79e5b7238438cbb516",
+      "expectedSha256": "e9f98677462840958bf1e6c3c1ea199ace9bfbc416a7fe79e5b7238438cbb516",
+      "expectedHashMatches": true,
+      "bytes": 891,
+      "publication": "omitted",
+      "reason": "Only a narrow inspected projection may be included. Private original remains unchanged."
+    },
+    {
+      "originalLocator": "work/helper_workflow_reruns/projects/release-watch/deliverables/native/log-triage.json",
+      "sourceSha256": "7f5f6f89b9206e74777de6b2f87fc384c04653de882bc466327dfe37e3287e3d",
+      "expectedSha256": "7f5f6f89b9206e74777de6b2f87fc384c04653de882bc466327dfe37e3287e3d",
+      "expectedHashMatches": true,
+      "bytes": 727,
+      "publication": "projected-fields",
+      "reason": "Only a narrow inspected projection may be included. Private original remains unchanged.",
+      "projectedPath": "docs/releases/remediation-013/local/bounded-poll/review-a-12/proof/05-log-triage.json.excerpt.json",
+      "projectedSha256": "87c29e7a3de19f21e663cf18c1d85cf7ff830db130bb015aa5a5683cb05a83b9"
+    }
+  ],
+  "projectionLimits": [
+    "This file projects the existing independent assessment and does not regrade the case.",
+    "Private source artifacts and omitted native operations remain private. Source digests bind originals, not transformed bytes.",
+    "Historical 0.1.3 observations do not qualify current main or a modified candidate."
+  ],
+  "statusMapping": {
+    "originalProposedStatus": "reduced-pass",
+    "canonicalStatus": "reduced-pass",
+    "rule": "No status alias is applied."
+  }
+}

@@ -55,6 +55,115 @@ class PackageTests(unittest.TestCase):
         self.assertTrue(any("remnant 'gpt-4'" in error for error in errors))
         self.assertFalse(any('missing path' in error or 'undefined Markdown' in error for error in errors))
 
+    def captured_report(self, *, response='Observed Task and gpt-4 names are historical data.'):
+        payload = dict(schemaVersion=1, sourceFreeze='a'*40, reportScope='Historical baseline only.',
+            host='codex', caseId='demo', acceptedStatus='reduced-pass', acceptedAttemptId='attempt-1',
+            acceptanceRule='Latest reviewed attempt.', casePrompt='Inspect the fixture.',
+            caseDefinition=dict(id='demo', prompt='Inspect the fixture.'), registry=dict(caseId='demo'),
+            attempts=[dict(attemptId='attempt-1', host='codex', caseId='demo', status='reduced-pass',
+                           grade=dict(host='codex', caseId='demo', status='reduced-pass'), response=response)],
+            artifactProjections=[], skippedManifest=[], globalLimits=['Baseline only; no current acceptance.'])
+        path = 'docs/releases/host-evaluation/codex/demo.md'
+        self.write(path, '# Historical baseline\n\n```json\n'+json.dumps(payload, indent=2)+'\n```\n')
+        return path, payload
+
+    def report_marker(self, paths):
+        self.write('docs/parity/tested-package.json', json.dumps(dict(schemaVersion=1,
+            kind='pstack-tested-package', testedCommit='b'*40, reportPaths=paths)))
+
+    def test_captured_report_updates_need_no_operative_remnant_hash(self):
+        path, _ = self.captured_report()
+        self.assertEqual([], validate_package(self.root, self.rows))
+        self.report_marker([path])
+        self.assertEqual([], validate_package(self.root, self.rows))
+        self.captured_report(response='Another captured Task call used gpt-6.1-sol; [literal](missing.md).')
+        self.assertEqual([], validate_package(self.root, self.rows))
+        (self.root/'docs/parity/tested-package.json').unlink()
+        self.assertEqual([], validate_package(self.root, self.rows), 'Updater candidates retain historical data without a marker')
+
+    def test_captured_report_does_not_hide_outside_instructions_or_links(self):
+        path, _ = self.captured_report()
+        with (self.root/path).open('a') as file:
+            file.write('\nUse Task now. [operative](gone.md) [operative][undefined]\n')
+        errors = validate_package(self.root, self.rows)
+        self.assertTrue(any("remnant 'Task'" in e for e in errors))
+        self.assertTrue(any('gone.md' in e for e in errors))
+        self.assertTrue(any('undefined Markdown reference' in e for e in errors))
+
+    def test_captured_report_rejects_forged_or_malformed_envelopes(self):
+        for field, value in (('host','chatgpt'), ('caseId','other'), ('sourceFreeze','short'),
+                             ('schemaVersion',2), ('extraField',True), ('acceptedAttemptId','missing')):
+            with self.subTest(field=field):
+                path, payload = self.captured_report()
+                payload[field] = value
+                self.write(path, '```json\n'+json.dumps(payload)+'\n```\n')
+                self.assertTrue(validate_package(self.root, self.rows))
+        path, _ = self.captured_report()
+        self.write(path, '```json\n{"response":"Task",broken}\n```\n')
+        self.assertTrue(validate_package(self.root, self.rows))
+        self.write(path, '```json\n{"response":"Task"}\n')
+        self.assertTrue(validate_package(self.root, self.rows))
+        path, payload = self.captured_report()
+        text = json.dumps(payload).replace('"host": "codex"', '"host": "chatgpt", "host": "codex"', 1)
+        self.write(path, '```json\n'+text+'\n```\n')
+        self.assertTrue(validate_package(self.root, self.rows))
+
+    def test_captured_report_requires_marker_membership_when_present(self):
+        self.captured_report()
+        self.report_marker([])
+        self.assertTrue(validate_package(self.root, self.rows))
+        self.report_marker(['docs/releases/host-evaluation/codex/demo.md'])
+        marker = self.root/'docs/parity/tested-package.json'
+        payload = json.loads(marker.read_text()); payload['testedCommit'] = 'short'
+        marker.write_text(json.dumps(payload))
+        self.assertTrue(validate_package(self.root, self.rows))
+
+    def test_captured_report_cannot_exempt_inventory_content(self):
+        path, _ = self.captured_report()
+        self.report_marker([path])
+        self.rows[0]['destinationPath'] = path
+        self.assertTrue(validate_package(self.root, self.rows))
+        self.rows[0]['destinationPath'] = 'skills/demo/SKILL.md'
+        self.rows[0]['dependencies'] = [path]
+        self.assertTrue(validate_package(self.root, self.rows))
+
+    def test_captured_report_cannot_exempt_operative_path_aliases(self):
+        path, _ = self.captured_report()
+        self.report_marker([path])
+        for alias in ('docs/releases/host-evaluation/codex/./demo.md',
+                      'docs/releases/host-evaluation/codex/../codex/demo.md'):
+            with self.subTest(alias=alias):
+                self.rows[0]['dependencies'] = [alias]
+                self.assertTrue(validate_package(self.root, self.rows))
+                self.rows[0]['dependencies'] = []
+                self.rows[0]['destinationPath'] = alias
+                self.assertTrue(validate_package(self.root, self.rows))
+                self.rows[0]['destinationPath'] = 'skills/demo/SKILL.md'
+
+    def test_captured_pending_report_does_not_claim_a_selected_attempt(self):
+        path, payload = self.captured_report()
+        payload.update(acceptedStatus='pending', acceptedAttemptId=None, attempts=[])
+        self.write(path, '```json\n'+json.dumps(payload)+'\n```\n')
+        self.assertEqual([], validate_package(self.root, self.rows))
+        payload['acceptedAttemptId'] = 'invented'
+        self.write(path, '```json\n'+json.dumps(payload)+'\n```\n')
+        self.assertTrue(validate_package(self.root, self.rows))
+
+    def test_captured_report_scope_cannot_hide_other_markdown(self):
+        path, _ = self.captured_report()
+        self.write('docs/releases/ordinary.md', (self.root/path).read_text())
+        self.assertTrue(any('ordinary.md' in e and "remnant 'Task'" in e for e in validate_package(self.root, self.rows)))
+
+    def test_captured_report_cannot_alias_operative_source(self):
+        path, _ = self.captured_report()
+        content = (self.root/path).read_text()
+        (self.root/path).unlink()
+        self.write('skills/demo/SKILL.md', content)
+        (self.root/path).symlink_to(self.root/'skills/demo/SKILL.md')
+        errors = validate_package(self.root, self.rows)
+        self.assertTrue(any('symlink aliases' in e for e in errors))
+        self.assertTrue(any('skills/demo/SKILL.md' in e and "remnant 'Task'" in e for e in errors))
+
     def test_actual_reflection_quote_requires_exact_hash_line_and_token(self):
         import hashlib
         path = 'skills/reflect/references/synthesizer.md'
@@ -191,6 +300,13 @@ class PackageTests(unittest.TestCase):
     def test_benny_not_registered(self):
         self.write('skills/benny/SKILL.md', '---\nname: benny\n---\n')
         self.fails('skills/benny/SKILL.md')
+
+    def test_nested_skill_filename_is_rejected_even_outside_root_directory(self):
+        path = 'automations/benny/skills/setup-benny/SKILL.md'
+        file = self.write(path, '---\nname: setup-benny\n---\nDirect operational instructions.\n')
+        self.assertTrue(any(path in error and 'discovery' in error for error in validate_package(self.root, self.rows)))
+        file.rename(file.with_name('REFERENCE.md'))
+        self.assertEqual([], validate_package(self.root, self.rows))
 
     def test_deferred_reference_blocks_full_acceptance(self):
         self.write('skills/demo/SKILL.md', '[pending](../../references/pending.md)')

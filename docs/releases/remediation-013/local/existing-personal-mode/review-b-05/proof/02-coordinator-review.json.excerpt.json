@@ -1,0 +1,31 @@
+{
+  "kind": "selected-fixture-result-fields",
+  "caseId": "existing-personal-mode",
+  "attemptId": "review-b-05",
+  "originalLocator": "remaining-local/cases/existing-personal-mode/outputs/coordinator-review.json",
+  "sourceSha256": "03e6662d93ef6bec10341f0bdf3e023cd4ddff2dff0009e05580b9cf4d44b287",
+  "sourceBytes": 1583,
+  "transformation": "Named JSON fields selected by exact JSON Pointer. Task-owned absolute paths replaced with declared placeholders. Other fields omitted. These are result-artifact values, not synthesized tool execution evidence. Public selection is limited to eight short inspected fields. Longer output and unselected fields remain private.",
+  "fields": [
+    {
+      "pointer": "/assignmentId",
+      "value": "existing-personal-mode-dispatch-1"
+    },
+    {
+      "pointer": "/inputRevision",
+      "value": "7d7330bf7fe5a32cc5ef2a120a492217fa2ff4e1"
+    },
+    {
+      "pointer": "/limits",
+      "value": [
+        "Baseline acceptance not supplied.",
+        "Both required hosts not-run in current contract.",
+        "No private or live history used.",
+        "No nested independent history cross-check performed.",
+        "No observed model identity or diversity.",
+        "Chronology deviations retained.",
+        "No producer grade or host pass."
+      ]
+    }
+  ]
+}

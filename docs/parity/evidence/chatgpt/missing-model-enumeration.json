@@ -1,43 +1,87 @@
 {
   "caseId": "missing-model-enumeration",
-  "packageVersion": "0.1.0",
-  "packageCommit": "5d05ab2458f4cd73c44b24265a3a1920b98b8cf4",
+  "packageVersion": "0.1.3",
+  "packageCommit": "51f209daf83cd97d64f89881d66533bb59dc57db",
   "host": "chatgpt",
-  "hostMode": "personal ChatGPT not accessed; host mode unobserved",
-  "date": "2026-10-08",
+  "hostMode": "Native web-host workflows; independent retained-artifact review",
+  "date": "2026-10-16",
   "input": "No exposed operation enumerates supported models or reasoning efforts.",
-  "observedOutput": "Not attempted. Inherited prerequisite block from package-discovery. No documented supported local plugin loading route is established for this personal ChatGPT context. No actual personal ChatGPT session or installed copy was accessed. No separate human authorization exists for loading, installation, enabling, settings changes or fresh host setup. Personal-host tool probing was not attempted. Current controller filesystem and tools are not personal ChatGPT tools.",
-  "status": "blocked",
-  "execution": "unavailable",
+  "observedOutput": "Actual fresh participant executes fixed runtime at assigned SHA and result inspected; inherited request remains distinct from unknown actual model/effort, with no invented enumeration or diversity.",
+  "status": "pass",
+  "execution": "workers",
   "sourcePaths": [
     "agents/poteto-agent.md",
     "agents/comment-sicko.md"
   ],
   "documentedCapabilities": [
-    "docs/setup/chatgpt.md leaves the personal loading route unsupported here; supplied source is reduced capability guidance only.",
-    "references/host-capabilities.md requires actual exposed and successful bindings."
+    "Case-specific capability observations are retained in the independent review; no capability is inferred from package validation."
   ],
-  "exposedTools": [],
+  "exposedTools": [
+    "exec_command",
+    "collaboration.spawn_agent"
+  ],
   "artifacts": [
-    "docs/parity/evidence/chatgpt/authorization-support-check.md"
+    "docs/releases/host-evaluation/chatgpt/missing-model-enumeration.md"
   ],
   "limits": [
-    "No documented supported local plugin loading route is established for this personal ChatGPT context. No actual personal ChatGPT session or installed copy was accessed. No separate human authorization exists for loading, installation, enabling, settings changes or fresh host setup. Personal-host tool probing was not attempted. Current controller filesystem and tools are not personal ChatGPT tools.",
-    "This case input was not submitted to personal ChatGPT; no model result or expected behavioral output was observed.",
-    "Full and reduced capability are not observed. Runtime cases were not run.",
-    "Exact installed-copy identity, all 51 root names and three canonical nested Benny exclusions remain unobserved.",
-    "No history access, privacy behavior, worker lifecycle, model choice, persistence, integration or negative runtime condition was exercised.",
-    "Local evidence validation checks accounting only. Codex capabilities and results do not transfer to ChatGPT."
+    "Current installed version 0.1.3 and operative freeze 51f209daf83cd97d64f89881d66533bb59dc57db bound by external exact installed-file comparison; sandbox itself has no source Git identity.",
+    "Global current catalog lists 51 root skills; this does not upgrade case execution or reproduce unrun workflows.",
+    "Web TypeScript compiler and pinned helper dependencies absent; Bun transpilation/runtime tests never count as strict compilation.",
+    "Historical source content was accidentally read during setup, disclosed in archive limitations; no older result contributes to current grading.",
+    "Raw capture coverage and cooperative per-case clocks incomplete; unavailable/unstarted variants and failed attempts remain explicit.",
+    "Actual native models remain unknown unless independently observed; requested role/model names never become model-diversity proof.",
+    "No pass grade or independent qualitative quality review is claimed.",
+    "Initial oversized read outputs were truncated. Focused rereads recovered source content where needed; raw returned objects are retained where available.",
+    "Initial bootstrap tool requests/results were not all persisted immediately before the next action. No reconstructed transcript is presented.",
+    "Actual model and effort are unknown; requested policy does not prove observed model.",
+    "Exact first-read wall-clock timestamps were not durably captured. Parent reported dispatch around18:21Z; observed shell clocks18:22:23Z,18:25:29Z,18:26:46Z,18:28:23Z,18:28:42Z establish progress. Earlier agent8minute/timeout assertions were unsupported and withdrawn.",
+    "Prepared finalize-results.mjs was never executed and contains withdrawn timing statements. write-final-records.mjs is the operative record writer.",
+    "suppliedFreeze binding was independently checked outside sandbox per parent; not proved here.",
+    "Early participant combined read was not fully retained; later reads do not repair capture ordering."
   ],
   "priorActionIdentities": [],
   "permissions": {
-    "execution": "unavailable",
-    "writes": "unknown",
-    "externalActions": "unknown"
+    "execution": "granted",
+    "writes": "granted",
+    "externalActions": "denied"
   },
   "models": {
-    "requested": "unknown",
+    "requested": "inherit-parent",
     "actual": "unknown"
   },
-  "successfulOperations": []
+  "successfulOperations": [
+    {
+      "operation": "read",
+      "tool": "exec_command",
+      "evidence": "docs/releases/host-evaluation/chatgpt/missing-model-enumeration.md"
+    },
+    {
+      "operation": "inspect-result",
+      "tool": "exec_command",
+      "evidence": "docs/releases/host-evaluation/chatgpt/missing-model-enumeration.md"
+    },
+    {
+      "operation": "spawn",
+      "tool": "collaboration.spawn_agent",
+      "evidence": "docs/releases/host-evaluation/chatgpt/missing-model-enumeration.md"
+    }
+  ],
+  "nativeObservations": [
+    {
+      "observation": "supplied-input",
+      "evidence": "docs/releases/host-evaluation/chatgpt/missing-model-enumeration.md",
+      "reviewedBy": "grade_local_repairs"
+    },
+    {
+      "observation": "response",
+      "evidence": "docs/releases/host-evaluation/chatgpt/missing-model-enumeration.md",
+      "reviewedBy": "grade_local_repairs"
+    },
+    {
+      "observation": "review-outcome",
+      "evidence": "docs/releases/host-evaluation/chatgpt/missing-model-enumeration.md",
+      "reviewedBy": "grade_local_repairs"
+    }
+  ],
+  "inputRevision": "022eba59ed131f9506c4febf606b117020fc7c3e"
 }

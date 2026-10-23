@@ -1,0 +1,219 @@
+{
+  "documentType": "selected-original-proof",
+  "caseId": "scoped-history",
+  "selections": [
+    {
+      "origin": {
+        "path": "web-checkpoint-4/units/scoped-history/outputs/scoped-history/variants.json",
+        "sha256": "9e0bd2a8e317c58ddb9a90bfa6816fd77faddfaefbcdd8507fbbbf5d500d322e",
+        "bytes": 2588,
+        "pointers": [
+          ""
+        ]
+      },
+      "selections": [
+        {
+          "pointer": "",
+          "value": [
+            {
+              "id": "complete-capsule",
+              "state": "unstarted",
+              "reason": "No complete capsule supplied. Only explicitly partial capsule exists. A genuine complete capsule would skip history mining while retaining named-target sweep and independent live checks."
+            },
+            {
+              "id": "no-capsule",
+              "state": "attempted-limited",
+              "reason": "Synthetic digest can be inspected; no scoped seven-day timestamps or actual transcripts exist."
+            },
+            {
+              "id": "three-relevant-chats",
+              "state": "attempted-limited",
+              "reason": "Three fixture chat slices exist, but modification-time partition and UUID citation are blocked by absent timestamps and UUIDs."
+            },
+            {
+              "id": "shipped-then-reverted",
+              "state": "attempted-limited",
+              "reason": "fixture-chat-B narrates shipment/reversion without independently verified commit or PR. No reverted tag justified."
+            },
+            {
+              "id": "unavailable-error-tracking",
+              "state": "attempted",
+              "reason": "history.json explicitly marks errorTracking unavailable. No query occurred; never searched-empty."
+            },
+            {
+              "id": "contradictory-current-pr",
+              "state": "unstarted",
+              "reason": "No live PR observation or PR number supplied. Contradiction cannot be exercised or resolved from history."
+            },
+            {
+              "id": "partial-capsule",
+              "state": "attempted",
+              "reason": "Capsule declares missing base SHA, independent current PR and actual scoped seven-day history. Supplied paths/change support local checks only."
+            },
+            {
+              "id": "single-session-pickup",
+              "state": "route-only",
+              "reason": "Routes to session-pickup. No specific full prior transcript supplied; prior action fixture-verdict-post-1 has unknown outcome and no replay authorization."
+            },
+            {
+              "id": "pure-activity-recall",
+              "state": "route-only",
+              "reason": "No named target would skip shared-record sweep. Synthetic digest lacks dates, so this week cannot be established."
+            },
+            {
+              "id": "explicit-all-history",
+              "state": "attempted-limited",
+              "reason": "All authorized supplied synthetic history, no recent-N truncation. No authorization to real or other-workspace history; complete historical coverage unavailable."
+            },
+            {
+              "id": "habit-capture",
+              "state": "route-only",
+              "reason": "Routes to automate-me. Fixture user statements support Bun preference and propose edits first; baseline acceptance missing, so no personal skill changes."
+            },
+            {
+              "id": "human-readable-summary",
+              "state": "route-only",
+              "reason": "Separate writing task. No status upgrade or current-state verification from summary."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "origin": {
+        "path": "web-checkpoint-4/units/scoped-history/outputs/scoped-history/terminal-inspection.json",
+        "sha256": "f0638299818149464553d792b9d14d5d947e661946171ee2e1568db6287ea2b0",
+        "bytes": 668,
+        "pointers": [
+          ""
+        ]
+      },
+      "selections": [
+        {
+          "pointer": "",
+          "value": {
+            "inspectedAt": "2026-10-17T07:56:53.406Z",
+            "rows": [
+              {
+                "file": "scoped-history.result.md",
+                "bytes": 7904,
+                "sha256": "8ad47e32d624a38fb7e9ba3ef41e8a3b14e2aac8d7f6def0b345f4671222b704"
+              },
+              {
+                "file": "result.json",
+                "bytes": 11186,
+                "sha256": "128d6fb6f950516f9290ad3807ed185bb139a43f06e8368d1d21d8ef7b6357aa"
+              },
+              {
+                "file": "variants.json",
+                "bytes": 2588,
+                "sha256": "9e0bd2a8e317c58ddb9a90bfa6816fd77faddfaefbcdd8507fbbbf5d500d322e"
+              },
+              {
+                "file": "verify-result.mjs",
+                "bytes": 767,
+                "sha256": "62385d540488130258a2bc8b191a84db1a3ccf88b38b97ff3a532683bd0d1d7c"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "origin": {
+        "path": "web-checkpoint-4/units/scoped-history/outputs/scoped-history/local-state.result.raw.json",
+        "sha256": "26cdaf0a6db88c7c080b7fb2271c80b3af0dcf7559d88aec1ebcd559c8dc21a2",
+        "bytes": 3571,
+        "pointers": [
+          ""
+        ]
+      },
+      "selections": [
+        {
+          "pointer": "",
+          "value": {
+            "commands": [
+              {
+                "argv": [
+                  "git",
+                  "-C",
+                  "/mnt/data/pstack-remediation-20261017/attempts-18/outputs/scoped-history/task-input",
+                  "rev-parse",
+                  "HEAD"
+                ],
+                "exit": 0,
+                "stdout": "278b459b0a54a42e17151174f2ca5097b7eb48b0\n",
+                "stderr": ""
+              },
+              {
+                "argv": [
+                  "git",
+                  "-C",
+                  "/mnt/data/pstack-remediation-20261017/attempts-18/outputs/scoped-history/task-input",
+                  "status",
+                  "--porcelain=v1"
+                ],
+                "exit": 0,
+                "stdout": "",
+                "stderr": ""
+              },
+              {
+                "argv": [
+                  "git",
+                  "-C",
+                  "/mnt/data/pstack-remediation-20261017/attempts-18/outputs/scoped-history/task-input",
+                  "branch",
+                  "--show-current"
+                ],
+                "exit": 0,
+                "stdout": "",
+                "stderr": ""
+              },
+              {
+                "argv": [
+                  "git",
+                  "-C",
+                  "/mnt/data/pstack-remediation-20261017/attempts-18/outputs/scoped-history/task-input",
+                  "log",
+                  "-5",
+                  "--format=%H %cI %s",
+                  "--",
+                  "committed-inputs/shared/additional/cache"
+                ],
+                "exit": 0,
+                "stdout": "278b459b0a54a42e17151174f2ca5097b7eb48b0 2026-10-17T09:43:45+03:00 Prepare original scenario inputs\n",
+                "stderr": ""
+              }
+            ],
+            "files": [
+              {
+                "path": "cache.mjs",
+                "content": "const entries = new Map();\nexport function put(key, value) { entries.set(key, value); }\nexport function get(key) { return entries.get(key); }\nexport function invalidate(key) { entries.delete(key); }\n"
+              },
+              {
+                "path": "caller.mjs",
+                "content": "import { createDisposer } from './vendor/disposer-v1.mjs';\nimport { get, put, invalidate } from './cache.mjs';\nexport function mount(key, report) {\n  put(key, { ready: true });\n  const subscription = createDisposer(() => report(get(key).ready));\n  return () => { subscription.dispose(); invalidate(key); };\n}\n"
+              },
+              {
+                "path": "vendor/disposer-v1.mjs",
+                "content": "// Exact vendored fixture dependency implementation, pinned by local SHA-256 in manifest.json.\nexport function createDisposer(onDispose) {\n  return { dispose: () => queueMicrotask(onDispose) };\n}\n"
+              },
+              {
+                "path": "invalidation.diff",
+                "content": "diff --git a/cache.mjs b/cache.mjs\n--- a/cache.mjs\n+++ b/cache.mjs\n@@ -1,4 +1,4 @@\n const entries = new Map();\n export function put(key, value) { entries.set(key, value); }\n export function get(key) { return entries.get(key); }\n-export function invalidate(key) { setTimeout(() => entries.delete(key), 0); }\n+export function invalidate(key) { entries.delete(key); }\n"
+              },
+              {
+                "path": "README.md",
+                "content": "Review invalidation.diff against the after-state cache.mjs and the real caller outside the diff. The vendored disposer is the exact locally pinned dependency, not a mock pretending to prove a public dependency. Determine whether synchronous invalidation races the deferred disposal callback. probe.mjs runs this actual supplied implementation and intentionally exits nonzero if teardown throws. A before-state copy may restore the removed setTimeout line to compare ordering. No execution result is supplied.\n"
+              },
+              {
+                "path": "manifest.json",
+                "content": "{\n  \"scope\": \"exact local vendored fixture only\",\n  \"dependency\": {\n    \"path\": \"vendor/disposer-v1.mjs\",\n    \"version\": \"fixture-v1\",\n    \"sha256\": \"d33e8d36600ad5df008657e478e39f9100a347098b4176f37923e5056cb3427f\"\n  },\n  \"publicPackageClaim\": false\n}\n"
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}

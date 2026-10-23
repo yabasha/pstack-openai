@@ -1,0 +1,15 @@
+{
+  "kind": "selected-fixture-result-fields",
+  "caseId": "user-correction",
+  "attemptId": "review-c-01",
+  "originalLocator": "remaining-local/cases/user-correction/outputs/parent-inspection.json",
+  "sourceSha256": "5c3ce28c6a9fdf8ea01a60d7a85a5078859828360c7703002980a3d758838c0a",
+  "sourceBytes": 666,
+  "transformation": "Named JSON fields selected by exact JSON Pointer. Task-owned absolute paths replaced with declared placeholders. Other fields omitted. These are result-artifact values, not synthesized tool execution evidence. Public selection is limited to eight short inspected fields. Longer output and unselected fields remain private.",
+  "fields": [
+    {
+      "pointer": "/inputRevision",
+      "value": "65d08a5efc7d5758c8537040f113e53cedf4b272"
+    }
+  ]
+}

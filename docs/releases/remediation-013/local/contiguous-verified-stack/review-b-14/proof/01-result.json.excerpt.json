@@ -1,0 +1,31 @@
+{
+  "kind": "selected-fixture-result-fields",
+  "caseId": "contiguous-verified-stack",
+  "attemptId": "review-b-14",
+  "originalLocator": "work/repair_real_builds/result.json",
+  "sourceSha256": "fd9eb0743f014addcac97354ce13f89c6c445209d50c97c15ff77c6d282bb4d0",
+  "sourceBytes": 6212,
+  "transformation": "Named JSON fields selected by exact JSON Pointer. Task-owned absolute paths replaced with declared placeholders. Other fields omitted. These are result-artifact values, not synthesized tool execution evidence. Public selection is limited to eight short inspected fields. Longer output and unselected fields remain private.",
+  "fields": [
+    {
+      "pointer": "/assignmentId",
+      "value": "repair-actual-lane-builds-01"
+    },
+    {
+      "pointer": "/inputRevision",
+      "value": "4a7dde94ab2778837e4c932e53cc3484d2e74dfd"
+    },
+    {
+      "pointer": "/requestedModel",
+      "value": "inherit-parent"
+    },
+    {
+      "pointer": "/actualModel",
+      "value": "unknown"
+    },
+    {
+      "pointer": "/runtime",
+      "value": "Bun for source and both emitted target formats. Native Node execution not claimed."
+    }
+  ]
+}

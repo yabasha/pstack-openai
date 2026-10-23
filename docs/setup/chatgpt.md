@@ -1,6 +1,6 @@
 # Personal ChatGPT setup
 
-Starting state for `chatgpt-setup-from-readme` is an ordinary personal ChatGPT conversation with no observed pstack loading. The personal route is unsupported here and explicitly blocked. Do not turn a local filesystem path into a universal ChatGPT installation step.
+This guide covers a conversation without observed pstack loading. Version 0.1.3 has retained ChatGPT discovery evidence at its historical frozen revision; see [compatibility](../compatibility.md). Availability still depends on the current host's plugin controls. Do not turn a local filesystem path into a universal ChatGPT installation step.
 
 Official guidance describes packaging a skills-only plugin, installing it from a local source and testing in a new enabled conversation. It does not establish that this personal conversation exposes that route. Checked 2026-10-08. [Official complete-plugin testing](https://developers.openai.com/plugins/deploy/connect-chatgpt).
 
@@ -10,6 +10,6 @@ Official guidance describes packaging a skills-only plugin, installing it from a
 4. If a supported route is later exposed and separately authorized, use the actual host controls and a fresh chat. Record `discover-package`, `enumerate-skills` and `inspect-installed-copy` with observed tool identifiers and artifact evidence. Require all 56 root names, exact installed-copy identity, package version and final frozen SHA, plus the three canonical nested Benny exclusions. Read [inventory](../parity/inventory.json) and [catalog](../skills/README.md) as comparison data only.
 5. Run the [six walkthrough cases](../parity/cases/documentation-walkthroughs.json) and record actual outputs under the [host contract](../../references/host-capabilities.md). Workers, execution, persistence, models and integrations need separate exposed and successful bindings. A conversation without them leaves dependent gates blocked.
 
-Expected visible result today is an explicit setup/discovery block and a bounded explanation if source is supplied. A future complete installed receipt can change that status only after fresh observations. The [Codex guide](codex.md) describes a different documented route. Its local path and cache rules do not establish personal ChatGPT support.
+Expected result is either a fresh installed-copy discovery receipt through supported controls or an explicit setup/discovery block. Supplying source permits a bounded explanation but does not establish installation. The [Codex guide](codex.md) describes a local route; its paths and cache rules do not establish support in an ordinary personal ChatGPT conversation.
 
 [Optional development dependencies](../testing/helper-setup.md) are separate from host installation. No generic setup permission follows from their historical snapshot approval. Refresh or removal requires an observed host control and exact authorization; neither source edits nor removing supplied text proves uninstall.

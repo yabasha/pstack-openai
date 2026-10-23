@@ -1,0 +1,16 @@
+{
+  "kind": "task-result-file-excerpt",
+  "caseId": "reproduce-before-fix",
+  "attemptId": "review-b-13",
+  "inputRevision": "63b1c3a33583a4e688ecaa34099383ccddf5169d",
+  "originalLocator": "work/notes_workflow_reruns/projects/reproduce-before-fix/deliverables/report.md",
+  "sourceSha256": "3c8d8d9417cddf60621db2fd43ced2cafa975e876e88412f0c3033b6028ac664",
+  "sourceWasDirectlyListedByIndependentGrade": true,
+  "characterRange": {
+    "start": 0,
+    "endExclusive": 622,
+    "total": 19940
+  },
+  "content": "# Notes search clearing fix\n\nClearing Search notes now restores Alpha and Beta. The original browser trigger failed before the edit and passed afterward on the same native Comet tab, URL, server process and unchanged fixture data. The production change adds `render(notes)` to the blank-query branch in `search-view.mjs`. Nonempty matching remains unchanged. The maintainer receives a focused caller regression, ordered patches and actual browser evidence.\n\n## Revisions and ownership\n\nThe task repository is `<private-run>/work/notes_workflow_reruns/projects/reproduce-before-fix`.\n",
+  "transformation": "An inspected prefix of the actual task-result file is projected. Task-owned absolute paths use declared placeholders. The prefix may omit later qualifications. The independent assessment and its limits govern the proposed grade. This is neither a new grade nor a native callable-operation claim."
+}

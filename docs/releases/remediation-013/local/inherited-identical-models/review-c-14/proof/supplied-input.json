@@ -1,0 +1,10 @@
+{
+  "kind": "supplied-fixture-input-excerpt",
+  "caseId": "inherited-identical-models",
+  "inputRevision": "19a60cb93e2dff5ad0240a2df847e49cc6a52aa2",
+  "originalLocator": "cross-host-extra/local/projects/inherited-identical-models/task-contract.json",
+  "sourceSha256": "a483414eb20a5fe4984476832c595b22a3a2e3564e91fcea11cdc1988c9bb094",
+  "pointer": "/case/prompt",
+  "suppliedPrompt": "Two roles inherit the same observed parent model.",
+  "transformation": "Only the exact supplied case prompt is projected. Fixture data and arbitrary surrounding contract fields are omitted. This is supplied input, not a native successful tool operation."
+}

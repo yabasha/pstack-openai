@@ -2,6 +2,8 @@
 
 pstack was created by Lauren Tan and is distributed under the MIT License. Copyright (c) 2026 Lauren Tan. The complete original permission and warranty notice remains unchanged in [LICENSE](LICENSE).
 
+yabasha maintains and publishes this unofficial port. Lauren Tan retains credit for the original pstack skills and principles. Port publisher metadata does not transfer authorship of that upstream work.
+
 This package accounts for all 164 canonical source files, including 51 root skills, 24 principles, 23 playbooks and 113 support files. The principles are included in the root-skill count; playbooks are included in support. Adapted files retain their original hashes and attribution in the [inventory](docs/parity/inventory.json). The [support map](docs/parity/support-map.md) distinguishes original source records from additional port files. Structural review does not establish host runtime parity.
 
 Canonical source: https://github.com/cursor/plugins/tree/df581122cde17e6e27686b5a448bde23e4ad4318/pstack

@@ -1,14 +1,14 @@
 {
   "caseId": "contiguous-verified-stack",
-  "packageVersion": "0.1.0",
-  "packageCommit": "5d05ab2458f4cd73c44b24265a3a1920b98b8cf4",
+  "packageVersion": "0.1.3",
+  "packageCommit": "51f209daf83cd97d64f89881d66533bb59dc57db",
   "host": "codex",
-  "hostMode": "existing delegated local implementation session; installed-plugin testing unavailable",
-  "date": "2026-10-08",
+  "hostMode": "Native host workflow with independent retained-artifact review",
+  "date": "2026-10-16",
   "input": "Use inert local fixtures for a frozen stack 101,102,103,104. Independent verifier A passes 101 and verifier B returns PASS+NOTES for 102; 103 lacks a verdict and 104 passes. Rebase 101 to exact current trunk, include a changed patch and a tests/docs/lint-only patch with noisy builds, deny comments and merge first, then model authorized one-at-a-time merging and frontier wake states. Do not contact a forge.",
-  "observedOutput": "Not attempted. Inherited prerequisite block from package-discovery. Installed-copy discovery is unobserved for this frozen candidate. No separate human authorization exists for package loading, installation, enabling, settings changes or a fresh host setup. The current session exposes source reads and local command execution, but no actual installed pstack copy identity or complete 51-root/3-exclusion discovery receipt was observed. Source reads cannot establish installed discovery.",
-  "status": "blocked",
-  "execution": "unavailable",
+  "observedOutput": "Real local Git revisions, independent non-author CLI verdicts, patch identity checks, docs-noise builds and one-at-a-time local simulator merges demonstrate bounded policy branches. The native watcher actually fails missing setup and no real forge/control state exists, so no landable real stack or live merge qualification follows.",
+  "status": "reduced-pass",
+  "execution": "workers",
   "sourcePaths": [
     "skills/poteto-mode/playbooks/shipping.md",
     "skills/poteto-mode/playbooks/babysit.md",
@@ -19,41 +19,64 @@
     "skills/poteto-mode/scripts/bootstrap.ts"
   ],
   "documentedCapabilities": [
-    "references/host-capabilities.md defines observations, not callable APIs.",
-    "docs/setup/codex.md requires separate loading authorization and actual installed-copy discovery."
+    "Case-specific capability observations are retained in the independent review; no capability is inferred from package validation."
   ],
   "exposedTools": [
-    "functions.exec",
-    "functions.wait",
-    "tools.exec_command",
-    "tools.clock__curr_time",
-    "collaboration.spawn_agent",
-    "collaboration.followup_task",
-    "collaboration.send_message",
-    "collaboration.wait_agent",
-    "collaboration.interrupt_agent",
-    "collaboration.list_agents",
-    "mcp__cua_repl.js",
-    "mcp__cua_repl.js_reset"
+    "exec_command",
+    "collaboration.spawn_agent"
   ],
   "artifacts": [
-    "docs/parity/evidence/codex/authorization-capability-check.md"
+    "docs/releases/host-evaluation/codex/contiguous-verified-stack.md"
   ],
   "limits": [
-    "Installed-copy discovery is unobserved for this frozen candidate. No separate human authorization exists for package loading, installation, enabling, settings changes or a fresh host setup. The current session exposes source reads and local command execution, but no actual installed pstack copy identity or complete 51-root/3-exclusion discovery receipt was observed. Source reads cannot establish installed discovery.",
-    "This case was not attempted; its failure modes and expected outputs were not observed.",
-    "No requested model, case model output, worker independence or fresh loaded session was observed.",
-    "Local structural validation does not establish host behavior."
+    "Local simulator events explicitly actualWatcherEvent false.",
+    "PR104 pass is supplied scenario data, not independent verdict.",
+    "Dev-server lane absent and not reused; docs treatment does not prove tests/lint-only variants.",
+    "Real forge controls, current CI/mergeability, setup and verdict103 remain unmet."
   ],
   "priorActionIdentities": [],
   "permissions": {
-    "execution": "unavailable",
+    "execution": "granted",
     "writes": "granted",
-    "externalActions": "unknown"
+    "externalActions": "denied"
   },
   "models": {
     "requested": "unknown",
     "actual": "unknown"
   },
-  "successfulOperations": []
+  "successfulOperations": [
+    {
+      "operation": "read",
+      "tool": "exec_command",
+      "evidence": "docs/releases/host-evaluation/codex/contiguous-verified-stack.md"
+    },
+    {
+      "operation": "spawn",
+      "tool": "collaboration.spawn_agent",
+      "evidence": "docs/releases/host-evaluation/codex/contiguous-verified-stack.md"
+    },
+    {
+      "operation": "inspect-result",
+      "tool": "exec_command",
+      "evidence": "docs/releases/host-evaluation/codex/contiguous-verified-stack.md"
+    }
+  ],
+  "nativeObservations": [
+    {
+      "observation": "supplied-input",
+      "evidence": "docs/releases/host-evaluation/codex/contiguous-verified-stack.md",
+      "reviewedBy": "grade_local_00_04"
+    },
+    {
+      "observation": "response",
+      "evidence": "docs/releases/host-evaluation/codex/contiguous-verified-stack.md",
+      "reviewedBy": "grade_local_00_04"
+    },
+    {
+      "observation": "review-outcome",
+      "evidence": "docs/releases/host-evaluation/codex/contiguous-verified-stack.md",
+      "reviewedBy": "grade_local_00_04"
+    }
+  ],
+  "inputRevision": "9184b85d1e0a921102fd5d47117ff7b6ed2edc3b"
 }

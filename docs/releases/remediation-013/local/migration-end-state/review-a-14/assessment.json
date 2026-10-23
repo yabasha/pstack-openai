@@ -1,0 +1,280 @@
+{
+  "schemaVersion": 1,
+  "kind": "historical-independent-assessment-projection",
+  "caseId": "migration-end-state",
+  "attemptId": "review-a-14",
+  "startingMain": "4138e161c27cafffd2baaab6bf4ca53e86a57433",
+  "packageCommit": "51f209daf83cd97d64f89881d66533bb59dc57db",
+  "packageVersion": "0.1.3",
+  "inputRevision": "044264355914b6d5644c74a3f8f8ed4cb2c9781f",
+  "originalProposedStatus": "pass",
+  "evidenceStatus": "pass",
+  "qualifiesCurrentMain": false,
+  "sourceReview": {
+    "originalLocator": "grades/grade_remediation_local_a/result.json",
+    "sourceSha256": "9cc1f7ebfcf0f02bdaaabc03a16ca8ef1a0dcc165259e873d7be84affe57bc2f",
+    "jsonPointer": "/cases/13",
+    "reviewer": "/root/grade_remediation_local_a",
+    "requestedModel": "inherit-parent",
+    "actualModel": "unknown"
+  },
+  "findings": [
+    "The supplied named target, complete consuming module and reversible pristine snapshot are present. The final domain owns Order and pure multiplication; HTTP and batch own their validation, and batch calls total directly.",
+    "Consumer/facade migrate together and legacy/RawOrder disappear. Planned intermediate breakage is restricted to the owned working copy and the phase-two domain check precedes boundary writes.",
+    "Actual strict static and runtime checks passed. This reviewer independently repeated strict compilation and the literal runtime contract with zero failures.",
+    "The finite-overflow batch difference is explicitly consistent with this target requiring direct totals. This case is not the excluded selected finite-overflow compatibility repair.",
+    "Judge first-read and template-checker failures remain workflow limitations. They do not negate this leaf case target/static/runtime predicates or establish perfect mode adherence."
+  ],
+  "limits": [
+    "The finite-overflow batch difference is explicitly consistent with this target requiring direct totals. This case is not the excluded selected finite-overflow compatibility repair.",
+    "Judge first-read and template-checker failures remain workflow limitations. They do not negate this leaf case target/static/runtime predicates or establish perfect mode adherence."
+  ],
+  "chronology": {
+    "preserveAllEarlierAttempts": true,
+    "methodConformanceClaim": false,
+    "notes": [
+      "Consumer/facade migrate together and legacy/RawOrder disappear. Planned intermediate breakage is restricted to the owned working copy and the phase-two domain check precedes boundary writes.",
+      "Judge first-read and template-checker failures remain workflow limitations. They do not negate this leaf case target/static/runtime predicates or establish perfect mode adherence."
+    ]
+  },
+  "predicate": [
+    {
+      "id": 1,
+      "text": "Named target architecture and explicit migration phase boundaries",
+      "status": "satisfied",
+      "basis": [
+        "The supplied named target, complete consuming module and reversible pristine snapshot are present. The final domain owns Order and pure multiplication; HTTP and batch own their validation, and batch calls total directly.",
+        "Consumer/facade migrate together and legacy/RawOrder disappear. Planned intermediate breakage is restricted to the owned working copy and the phase-two domain check precedes boundary writes.",
+        "Actual strict static and runtime checks passed. This reviewer independently repeated strict compilation and the literal runtime contract with zero failures.",
+        "The finite-overflow batch difference is explicitly consistent with this target requiring direct totals. This case is not the excluded selected finite-overflow compatibility repair.",
+        "Judge first-read and template-checker failures remain workflow limitations. They do not negate this leaf case target/static/runtime predicates or establish perfect mode adherence."
+      ],
+      "source": "docs/parity/cases/skills/principle-outcome-oriented-execution.json",
+      "evidence": [
+        {
+          "path": "<private-run>/work/local_compiler_cases/projects/pricing-domain/deliverables/working/domain/order.ts",
+          "line": 1,
+          "sha256": "65d16c203daf9b6609a19a2abc3af7c9583c388fae5d47c0da9dbb839df7fe78"
+        },
+        {
+          "path": "<private-run>/work/local_compiler_cases/projects/pricing-domain/deliverables/working/adapters/http.ts",
+          "line": 1,
+          "sha256": "909e7e2806bbf29df8a13e898dfedde47e6c71a2b793ed9c44d318d585c852b7"
+        },
+        {
+          "path": "<private-run>/work/local_compiler_cases/projects/pricing-domain/deliverables/working/batch.ts",
+          "line": 1,
+          "sha256": "d0c41db0c09b2a4c7e7df9ec8ee30e4438bf95143f79cf547333b4bf95339f72"
+        },
+        {
+          "path": "<private-run>/work/local_compiler_cases/projects/pricing-domain/deliverables/working/index.ts",
+          "line": 1,
+          "sha256": "036b056369ffc6d579e467551a379d5bab485b4d55f2f10f8b3850a857e8167e"
+        },
+        {
+          "path": "<private-run>/work/local_compiler_cases/projects/pricing-domain/deliverables/working/consumer.ts",
+          "line": 1,
+          "sha256": "27703d12d60a3ae36818a71cf4242f585eb1a1950f57525c4580f34fba547842"
+        },
+        {
+          "path": "<private-run>/work/local_compiler_cases/projects/pricing-domain/deliverables/implementation/phase2.json",
+          "line": 1,
+          "sha256": "12a025fe5f7a595455aff4e73e155b1245d4d4206c7a94f2bdb4fbc90c0cc10f"
+        },
+        {
+          "path": "<private-run>/work/local_compiler_cases/projects/pricing-domain/deliverables/check-results.json",
+          "line": 1,
+          "sha256": "2496979c54bf9bb8c196fe2832b3123dc451bd304133887558a5330ce773cfed"
+        },
+        {
+          "path": "<private-run>/work/local_compiler_cases/projects/pricing-domain/deliverables/final-equivalence.log",
+          "line": 1,
+          "sha256": "aadbf42f7f23f54271cd49af4ee3531af74c5cc480f565b2b52f42f790e4939c"
+        },
+        {
+          "path": "<private-run>/work/local_compiler_cases/projects/pricing-domain/deliverables/method-receipt.json",
+          "line": 1,
+          "sha256": "454bff6b83ed826ee135d49b50462bdaafa8a83e8fb6c8e41ff4a3db10cc5603"
+        },
+        {
+          "path": "<private-run>/work/local_compiler_cases/projects/pricing-domain/deliverables/failures.md",
+          "line": 1,
+          "sha256": "9d896961f016e017a570d18faf883025a86493aa798442a4af9e1d922a49c907"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "text": "Available source inspection, authorized scoped writes and command execution for full implementation",
+      "status": "satisfied",
+      "basis": [
+        "The supplied named target, complete consuming module and reversible pristine snapshot are present. The final domain owns Order and pure multiplication; HTTP and batch own their validation, and batch calls total directly.",
+        "Consumer/facade migrate together and legacy/RawOrder disappear. Planned intermediate breakage is restricted to the owned working copy and the phase-two domain check precedes boundary writes.",
+        "Actual strict static and runtime checks passed. This reviewer independently repeated strict compilation and the literal runtime contract with zero failures.",
+        "The finite-overflow batch difference is explicitly consistent with this target requiring direct totals. This case is not the excluded selected finite-overflow compatibility repair.",
+        "Judge first-read and template-checker failures remain workflow limitations. They do not negate this leaf case target/static/runtime predicates or establish perfect mode adherence."
+      ],
+      "source": "docs/parity/cases/skills/principle-outcome-oriented-execution.json",
+      "evidence": [
+        {
+          "path": "<private-run>/work/local_compiler_cases/projects/pricing-domain/deliverables/working/domain/order.ts",
+          "line": 1,
+          "sha256": "65d16c203daf9b6609a19a2abc3af7c9583c388fae5d47c0da9dbb839df7fe78"
+        },
+        {
+          "path": "<private-run>/work/local_compiler_cases/projects/pricing-domain/deliverables/working/adapters/http.ts",
+          "line": 1,
+          "sha256": "909e7e2806bbf29df8a13e898dfedde47e6c71a2b793ed9c44d318d585c852b7"
+        },
+        {
+          "path": "<private-run>/work/local_compiler_cases/projects/pricing-domain/deliverables/working/batch.ts",
+          "line": 1,
+          "sha256": "d0c41db0c09b2a4c7e7df9ec8ee30e4438bf95143f79cf547333b4bf95339f72"
+        },
+        {
+          "path": "<private-run>/work/local_compiler_cases/projects/pricing-domain/deliverables/working/index.ts",
+          "line": 1,
+          "sha256": "036b056369ffc6d579e467551a379d5bab485b4d55f2f10f8b3850a857e8167e"
+        },
+        {
+          "path": "<private-run>/work/local_compiler_cases/projects/pricing-domain/deliverables/working/consumer.ts",
+          "line": 1,
+          "sha256": "27703d12d60a3ae36818a71cf4242f585eb1a1950f57525c4580f34fba547842"
+        },
+        {
+          "path": "<private-run>/work/local_compiler_cases/projects/pricing-domain/deliverables/implementation/phase2.json",
+          "line": 1,
+          "sha256": "12a025fe5f7a595455aff4e73e155b1245d4d4206c7a94f2bdb4fbc90c0cc10f"
+        },
+        {
+          "path": "<private-run>/work/local_compiler_cases/projects/pricing-domain/deliverables/check-results.json",
+          "line": 1,
+          "sha256": "2496979c54bf9bb8c196fe2832b3123dc451bd304133887558a5330ce773cfed"
+        },
+        {
+          "path": "<private-run>/work/local_compiler_cases/projects/pricing-domain/deliverables/final-equivalence.log",
+          "line": 1,
+          "sha256": "aadbf42f7f23f54271cd49af4ee3531af74c5cc480f565b2b52f42f790e4939c"
+        },
+        {
+          "path": "<private-run>/work/local_compiler_cases/projects/pricing-domain/deliverables/method-receipt.json",
+          "line": 1,
+          "sha256": "454bff6b83ed826ee135d49b50462bdaafa8a83e8fb6c8e41ff4a3db10cc5603"
+        },
+        {
+          "path": "<private-run>/work/local_compiler_cases/projects/pricing-domain/deliverables/failures.md",
+          "line": 1,
+          "sha256": "9d896961f016e017a570d18faf883025a86493aa798442a4af9e1d922a49c907"
+        }
+      ]
+    }
+  ],
+  "sourceArtifactBindings": [
+    {
+      "originalLocator": "work/local_compiler_cases/projects/pricing-domain/deliverables/working/domain/order.ts",
+      "sourceSha256": "65d16c203daf9b6609a19a2abc3af7c9583c388fae5d47c0da9dbb839df7fe78",
+      "expectedSha256": "65d16c203daf9b6609a19a2abc3af7c9583c388fae5d47c0da9dbb839df7fe78",
+      "expectedHashMatches": true,
+      "bytes": 153,
+      "publication": "omitted",
+      "reason": "Only a narrow inspected projection may be included. Private original remains unchanged."
+    },
+    {
+      "originalLocator": "work/local_compiler_cases/projects/pricing-domain/deliverables/working/adapters/http.ts",
+      "sourceSha256": "909e7e2806bbf29df8a13e898dfedde47e6c71a2b793ed9c44d318d585c852b7",
+      "expectedSha256": "909e7e2806bbf29df8a13e898dfedde47e6c71a2b793ed9c44d318d585c852b7",
+      "expectedHashMatches": true,
+      "bytes": 771,
+      "publication": "omitted",
+      "reason": "Only a narrow inspected projection may be included. Private original remains unchanged."
+    },
+    {
+      "originalLocator": "work/local_compiler_cases/projects/pricing-domain/deliverables/working/batch.ts",
+      "sourceSha256": "d0c41db0c09b2a4c7e7df9ec8ee30e4438bf95143f79cf547333b4bf95339f72",
+      "expectedSha256": "d0c41db0c09b2a4c7e7df9ec8ee30e4438bf95143f79cf547333b4bf95339f72",
+      "expectedHashMatches": true,
+      "bytes": 362,
+      "publication": "omitted",
+      "reason": "Only a narrow inspected projection may be included. Private original remains unchanged."
+    },
+    {
+      "originalLocator": "work/local_compiler_cases/projects/pricing-domain/deliverables/working/index.ts",
+      "sourceSha256": "036b056369ffc6d579e467551a379d5bab485b4d55f2f10f8b3850a857e8167e",
+      "expectedSha256": "036b056369ffc6d579e467551a379d5bab485b4d55f2f10f8b3850a857e8167e",
+      "expectedHashMatches": true,
+      "bytes": 123,
+      "publication": "omitted",
+      "reason": "Only a narrow inspected projection may be included. Private original remains unchanged."
+    },
+    {
+      "originalLocator": "work/local_compiler_cases/projects/pricing-domain/deliverables/working/consumer.ts",
+      "sourceSha256": "27703d12d60a3ae36818a71cf4242f585eb1a1950f57525c4580f34fba547842",
+      "expectedSha256": "27703d12d60a3ae36818a71cf4242f585eb1a1950f57525c4580f34fba547842",
+      "expectedHashMatches": true,
+      "bytes": 228,
+      "publication": "omitted",
+      "reason": "Only a narrow inspected projection may be included. Private original remains unchanged."
+    },
+    {
+      "originalLocator": "work/local_compiler_cases/projects/pricing-domain/deliverables/implementation/phase2.json",
+      "sourceSha256": "12a025fe5f7a595455aff4e73e155b1245d4d4206c7a94f2bdb4fbc90c0cc10f",
+      "expectedSha256": "12a025fe5f7a595455aff4e73e155b1245d4d4206c7a94f2bdb4fbc90c0cc10f",
+      "expectedHashMatches": true,
+      "bytes": 289,
+      "publication": "projected-fields",
+      "reason": "Only a narrow inspected projection may be included. Private original remains unchanged.",
+      "projectedPath": "docs/releases/remediation-013/local/migration-end-state/review-a-14/proof/01-phase2.json.excerpt.json",
+      "projectedSha256": "b0bd643f1e2091a58e22bdaf08ce9e3431101d0e29167a7f50731cf978cbe0c1"
+    },
+    {
+      "originalLocator": "work/local_compiler_cases/projects/pricing-domain/deliverables/check-results.json",
+      "sourceSha256": "2496979c54bf9bb8c196fe2832b3123dc451bd304133887558a5330ce773cfed",
+      "expectedSha256": "2496979c54bf9bb8c196fe2832b3123dc451bd304133887558a5330ce773cfed",
+      "expectedHashMatches": true,
+      "bytes": 835,
+      "publication": "projected-fields",
+      "reason": "Only a narrow inspected projection may be included. Private original remains unchanged.",
+      "projectedPath": "docs/releases/remediation-013/local/migration-end-state/review-a-14/proof/02-check-results.json.excerpt.json",
+      "projectedSha256": "368d624305450f6d08bfec9187b573ed0e7cc88217384698c973aa53bdd73cbf"
+    },
+    {
+      "originalLocator": "work/local_compiler_cases/projects/pricing-domain/deliverables/final-equivalence.log",
+      "sourceSha256": "aadbf42f7f23f54271cd49af4ee3531af74c5cc480f565b2b52f42f790e4939c",
+      "expectedSha256": "aadbf42f7f23f54271cd49af4ee3531af74c5cc480f565b2b52f42f790e4939c",
+      "expectedHashMatches": true,
+      "bytes": 724,
+      "publication": "omitted",
+      "reason": "Only a narrow inspected projection may be included. Private original remains unchanged."
+    },
+    {
+      "originalLocator": "work/local_compiler_cases/projects/pricing-domain/deliverables/method-receipt.json",
+      "sourceSha256": "454bff6b83ed826ee135d49b50462bdaafa8a83e8fb6c8e41ff4a3db10cc5603",
+      "expectedSha256": "454bff6b83ed826ee135d49b50462bdaafa8a83e8fb6c8e41ff4a3db10cc5603",
+      "expectedHashMatches": true,
+      "bytes": 4228,
+      "publication": "projected-fields",
+      "reason": "Only a narrow inspected projection may be included. Private original remains unchanged.",
+      "projectedPath": "docs/releases/remediation-013/local/migration-end-state/review-a-14/proof/03-method-receipt.json.excerpt.json",
+      "projectedSha256": "38db4e3fc85502d6c820fd176a78b3839ace92ad30f8dac89d4c409f230bf0c7"
+    },
+    {
+      "originalLocator": "work/local_compiler_cases/projects/pricing-domain/deliverables/failures.md",
+      "sourceSha256": "9d896961f016e017a570d18faf883025a86493aa798442a4af9e1d922a49c907",
+      "expectedSha256": "9d896961f016e017a570d18faf883025a86493aa798442a4af9e1d922a49c907",
+      "expectedHashMatches": true,
+      "bytes": 2739,
+      "publication": "omitted",
+      "reason": "Only a narrow inspected projection may be included. Private original remains unchanged."
+    }
+  ],
+  "projectionLimits": [
+    "This file projects the existing independent assessment and does not regrade the case.",
+    "Private source artifacts and omitted native operations remain private. Source digests bind originals, not transformed bytes.",
+    "Historical 0.1.3 observations do not qualify current main or a modified candidate."
+  ],
+  "statusMapping": {
+    "originalProposedStatus": "pass",
+    "canonicalStatus": "pass",
+    "rule": "No status alias is applied."
+  }
+}

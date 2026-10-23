@@ -1,0 +1,16 @@
+{
+  "kind": "task-result-file-excerpt",
+  "caseId": "benny-unsupported-trigger",
+  "attemptId": "review-a-10",
+  "inputRevision": "d5b352ab0245b8d8b8cbc269c47b33557598faa2",
+  "originalLocator": "remaining-local/cases/benny-unsupported-trigger/outputs/benny-unsupported-trigger.result.md",
+  "sourceSha256": "0bcdca3ec64211f760d02f4305334b14a4ae4d8da75227824836e0db9feb7213",
+  "sourceWasDirectlyListedByIndependentGrade": false,
+  "characterRange": {
+    "start": 0,
+    "endExclusive": 388,
+    "total": 5453
+  },
+  "content": "# Benny unsupported-trigger actual attempt\n\nSetup is blocked. This case permits only a scheduled time trigger, which cannot implement Benny's channel-event trigger. The event capability is withheld by case policy, not proven absent from the host. Local triage and repro drafts remain disabled and incomplete. No replacement polling schedule or external action was performed.\n\n## Overview\n",
+  "transformation": "An inspected prefix of the actual task-result file is projected. Task-owned absolute paths use declared placeholders. The prefix may omit later qualifications. The independent assessment and its limits govern the proposed grade. This is neither a new grade nor a native callable-operation claim."
+}

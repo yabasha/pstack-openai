@@ -1,0 +1,40 @@
+{
+  "kind": "historical-proof-selection",
+  "source": {
+    "path": "<private-run>/web-checkpoint-3/units/smaller-solution/outputs/smaller-solution/pricing-observable-probes-final.command.json",
+    "sha256": "c8d50b72a3187164fdf0760f3d8cd07b16e140b342b9d83a9801fd0e844958b6",
+    "bytes": 2358
+  },
+  "selection": [
+    {
+      "locator": {
+        "jsonPointer": "/request/argv"
+      },
+      "value": [
+        "/mnt/data/pstack-013-evaluation/runtime/bun-linux-x64/bun",
+        "--no-install",
+        "/mnt/data/pstack-remediation-20261017/attempts-18/outputs/smaller-solution/pricing-observable-probes.mjs"
+      ]
+    },
+    {
+      "locator": {
+        "jsonPointer": "/request/cwd"
+      },
+      "value": "/mnt/data/pstack-remediation-20261017/attempts-18/outputs/smaller-solution"
+    },
+    {
+      "locator": {
+        "jsonPointer": "/return"
+      },
+      "value": {
+        "exitCode": 0,
+        "stdout": "{\n  \"probeCount\": 11,\n  \"observations\": [\n    {\n      \"name\": \"literal quote rounding and tax\",\n      \"observed\": [\n        105,\n        106,\n        2\n      ]\n    },\n    {\n      \"name\": \"prototype own quote methods\",\n      \"observed\": [\n        \"PriceService\",\n        \"PriceAdapter\",\n        \"PriceFacade\"\n      ]\n    },\n    {\n      \"name\": \"instance collaborator structure\",\n      \"observed\": {\n        \"adapterOwnKeys\": [\n          \"service\"\n        ],\n        \"facadeOwnKeys\": [\n          \"adapter\"\n        ],\n        \"nestedService\": true\n      }\n    },\n    {\n      \"name\": \"adapter collaborator replacement remains observable\",\n      \"observed\": 701\n    },\n    {\n      \"name\": \"facade collaborator replacement remains observable\",\n      \"observed\": 702\n    },\n    {\n      \"name\": \"entry point observes facade prototype replacement\",\n      \"observed\": 703\n    },\n    {\n      \"name\": \"facade observes adapter prototype replacement\",\n      \"observed\": 704\n    },\n    {\n      \"name\": \"service remains policy owner\",\n      \"observed\": {\n        \"rounded\": 106,\n        \"error\": \"Invalid price\"\n      }\n    },\n    {\n      \"name\": \"signed zero and high accepted values\",\n      \"observed\": {\n        \"negativeZeroWithPositiveTaxZero\": true,\n        \"bothNegativeZero\": false,\n        \"highUntaxed\": 9007199254740991,\n        \"highTaxed\": 18014398509481980\n      }\n    },\n    {\n      \"name\": \"inherited collaborator and method overrides\",\n      \"observed\": [\n        705,\n        706\n      ]\n    },\n    {\n      \"name\": \"arrow reflection and synchronous rejection\",\n      \"observed\": {\n        \"name\": \"quote\",\n        \"length\": 2,\n        \"ownPrototype\": false,\n        \"constructible\": false,\n        \"synchronousError\": \"Invalid price\"\n      }\n    }\n  ]\n}\n",
+        "stderr": ""
+      }
+    }
+  ],
+  "limits": [
+    "Selections preserve the exact source value at each locator. Truncated strings carry explicit code-unit bounds.",
+    "A producer-captured return is not a recovered native parent envelope. Missing call IDs, original capture defects and unknown model observations remain missing."
+  ]
+}

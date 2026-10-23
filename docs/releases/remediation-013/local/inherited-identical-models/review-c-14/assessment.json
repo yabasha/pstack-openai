@@ -1,0 +1,146 @@
+{
+  "schemaVersion": 1,
+  "kind": "historical-independent-assessment-projection",
+  "caseId": "inherited-identical-models",
+  "attemptId": "review-c-14",
+  "startingMain": "4138e161c27cafffd2baaab6bf4ca53e86a57433",
+  "packageCommit": "51f209daf83cd97d64f89881d66533bb59dc57db",
+  "packageVersion": "0.1.3",
+  "inputRevision": "19a60cb93e2dff5ad0240a2df847e49cc6a52aa2",
+  "originalProposedStatus": "pass",
+  "evidenceStatus": "pass",
+  "qualifiesCurrentMain": false,
+  "sourceReview": {
+    "originalLocator": "grades/grade_remediation_local_c/result.json",
+    "sourceSha256": "2582d82fe0ad256da816b168e5b242a713d134d62af8657c4f7bc255d3a7ceba",
+    "jsonPointer": "/cases/13",
+    "reviewer": "/root/grade_remediation_local_c",
+    "requestedModel": "inherit-parent",
+    "actualModel": "unknown"
+  },
+  "findings": [
+    "Two genuine independent Poteto and Comment Sicko roles returned inspected artifacts at the exact revision. Producer metadata remained unknown. The later scoped native capture separately observes gpt-6.1-sol for the root and both exact child threads, establishing equality without any diversity claim or rewriting old results."
+  ],
+  "limits": [],
+  "chronology": [],
+  "predicate": "Role case expectedFull requires independent role workers, result inspection and recorded identical observed models. Captured runtime model metadata supplies that observation.",
+  "sourceArtifactBindings": [
+    {
+      "originalLocator": "cross-host-extra/local/projects/inherited-identical-models/task-contract.json",
+      "sourceSha256": "a483414eb20a5fe4984476832c595b22a3a2e3564e91fcea11cdc1988c9bb094",
+      "expectedSha256": "a483414eb20a5fe4984476832c595b22a3a2e3564e91fcea11cdc1988c9bb094",
+      "expectedHashMatches": true,
+      "bytes": 2581,
+      "publication": "omitted",
+      "reason": "Only a narrow inspected projection may be included. Private original remains unchanged."
+    },
+    {
+      "originalLocator": "cross-host-extra/local/projects/inherited-identical-models/outputs/inherited-identical-models.result.md",
+      "sourceSha256": "34fbad0c96cba679e55820847c9eb3fb87f125812a9cfc5dd79810c15430d33f",
+      "expectedSha256": "34fbad0c96cba679e55820847c9eb3fb87f125812a9cfc5dd79810c15430d33f",
+      "expectedHashMatches": true,
+      "bytes": 26333,
+      "publication": "omitted",
+      "reason": "Only a narrow inspected projection may be included. Private original remains unchanged."
+    },
+    {
+      "originalLocator": "cross-host-extra/local/projects/inherited-identical-models/outputs/completion.json",
+      "sourceSha256": "bb9f574824463fb7e28fe55bc6a366c16559feda00b45bef678bfb2c53475564",
+      "expectedSha256": "bb9f574824463fb7e28fe55bc6a366c16559feda00b45bef678bfb2c53475564",
+      "expectedHashMatches": true,
+      "bytes": 230362,
+      "publication": "omitted",
+      "reason": "Raw/native context, broad discovery, completion dump, or bulk source manifest is excluded. No protected payload is decoded."
+    },
+    {
+      "originalLocator": "cross-host-extra/local/projects/inherited-identical-models/outputs/inherited_owner.assignment.json",
+      "sourceSha256": "964dd6420b6102543452a072ea6a957283f9ffe0f0d8ed49be1b3a3b5175e089",
+      "expectedSha256": "964dd6420b6102543452a072ea6a957283f9ffe0f0d8ed49be1b3a3b5175e089",
+      "expectedHashMatches": true,
+      "bytes": 2371,
+      "publication": "projected-fields",
+      "reason": "Only a narrow inspected projection may be included. Private original remains unchanged.",
+      "projectedPath": "docs/releases/remediation-013/local/inherited-identical-models/review-c-14/proof/01-inherited_owner.assignment.json.excerpt.json",
+      "projectedSha256": "f0fa989d9a5d7735267ad7c23f8a2663e182df851e0acf5b6f8c3fc98cc0b1e7"
+    },
+    {
+      "originalLocator": "cross-host-extra/local/projects/inherited-identical-models/outputs/inherited_owner.events.jsonl",
+      "sourceSha256": "94cc10222598f54c13c10181b39b96dac66e5affbd5499aeca35f8c5ee358882",
+      "expectedSha256": "94cc10222598f54c13c10181b39b96dac66e5affbd5499aeca35f8c5ee358882",
+      "expectedHashMatches": true,
+      "bytes": 1260,
+      "publication": "omitted",
+      "reason": "Only a narrow inspected projection may be included. Private original remains unchanged."
+    },
+    {
+      "originalLocator": "cross-host-extra/local/projects/inherited-identical-models/outputs/inherited_owner.inspection.json",
+      "sourceSha256": "e39b06224b24e5634f81e3fbb028dbf7aee63fc8bcfaeee681041708dc8e453b",
+      "expectedSha256": "e39b06224b24e5634f81e3fbb028dbf7aee63fc8bcfaeee681041708dc8e453b",
+      "expectedHashMatches": true,
+      "bytes": 978,
+      "publication": "projected-fields",
+      "reason": "Only a narrow inspected projection may be included. Private original remains unchanged.",
+      "projectedPath": "docs/releases/remediation-013/local/inherited-identical-models/review-c-14/proof/02-inherited_owner.inspection.json.excerpt.json",
+      "projectedSha256": "7cc1a768e41687d2c2564074286b23ccf0b491e08ed888aa989bcf92ed1892b7"
+    },
+    {
+      "originalLocator": "cross-host-extra/local/projects/inherited-identical-models/outputs/inherited_owner/result.md",
+      "sourceSha256": "1cef5d45e34837a3ba602843a94f258d3bfc4370dc842880e1410d8054ebf98d",
+      "expectedSha256": "1cef5d45e34837a3ba602843a94f258d3bfc4370dc842880e1410d8054ebf98d",
+      "expectedHashMatches": true,
+      "bytes": 19341,
+      "publication": "omitted",
+      "reason": "Only a narrow inspected projection may be included. Private original remains unchanged."
+    },
+    {
+      "originalLocator": "cross-host-extra/local/projects/inherited-identical-models/outputs/inherited_comments.assignment.json",
+      "sourceSha256": "bf47ecd36bec57146f37b4f7d379c44949431598ba2aec42b74c298d607da7d0",
+      "expectedSha256": "bf47ecd36bec57146f37b4f7d379c44949431598ba2aec42b74c298d607da7d0",
+      "expectedHashMatches": true,
+      "bytes": 6702,
+      "publication": "projected-fields",
+      "reason": "Only a narrow inspected projection may be included. Private original remains unchanged.",
+      "projectedPath": "docs/releases/remediation-013/local/inherited-identical-models/review-c-14/proof/03-inherited_comments.assignment.json.excerpt.json",
+      "projectedSha256": "d111e73da41432736115138176651110aee3d104e9e4826ad3a4942fba87c539"
+    },
+    {
+      "originalLocator": "cross-host-extra/local/projects/inherited-identical-models/outputs/inherited_comments.events.jsonl",
+      "sourceSha256": "907dc9622097a8ed8006ede9bebe0887762f36bbf36f77d36273e5531751d6b5",
+      "expectedSha256": "907dc9622097a8ed8006ede9bebe0887762f36bbf36f77d36273e5531751d6b5",
+      "expectedHashMatches": true,
+      "bytes": 1109,
+      "publication": "omitted",
+      "reason": "Only a narrow inspected projection may be included. Private original remains unchanged."
+    },
+    {
+      "originalLocator": "cross-host-extra/local/projects/inherited-identical-models/outputs/inherited_comments.inspection.json",
+      "sourceSha256": "20ec6a0d06e196a521f0c5bcc02c95ea681c33cfb41ccd0fe950a096b274f10a",
+      "expectedSha256": "20ec6a0d06e196a521f0c5bcc02c95ea681c33cfb41ccd0fe950a096b274f10a",
+      "expectedHashMatches": true,
+      "bytes": 801,
+      "publication": "projected-fields",
+      "reason": "Only a narrow inspected projection may be included. Private original remains unchanged.",
+      "projectedPath": "docs/releases/remediation-013/local/inherited-identical-models/review-c-14/proof/04-inherited_comments.inspection.json.excerpt.json",
+      "projectedSha256": "0b4cfc3a54f1dc132cbb51be86e32d4325829ef7eeaa1a2a278aae8207e3c049"
+    },
+    {
+      "originalLocator": "cross-host-extra/local/projects/inherited-identical-models/outputs/inherited_comments/result.md",
+      "sourceSha256": "7f7f71721bfd9a6cec266a58ab463e6bed29bb3e605348d424bf9d7bd4de9d5c",
+      "expectedSha256": "7f7f71721bfd9a6cec266a58ab463e6bed29bb3e605348d424bf9d7bd4de9d5c",
+      "expectedHashMatches": true,
+      "bytes": 2563,
+      "publication": "omitted",
+      "reason": "Only a narrow inspected projection may be included. Private original remains unchanged."
+    }
+  ],
+  "projectionLimits": [
+    "This file projects the existing independent assessment and does not regrade the case.",
+    "Private source artifacts and omitted native operations remain private. Source digests bind originals, not transformed bytes.",
+    "Historical 0.1.3 observations do not qualify current main or a modified candidate."
+  ],
+  "statusMapping": {
+    "originalProposedStatus": "pass",
+    "canonicalStatus": "pass",
+    "rule": "No status alias is applied."
+  }
+}

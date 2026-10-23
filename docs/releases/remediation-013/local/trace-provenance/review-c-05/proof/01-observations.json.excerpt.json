@@ -1,0 +1,37 @@
+{
+  "kind": "selected-fixture-result-fields",
+  "caseId": "trace-provenance",
+  "attemptId": "review-c-05",
+  "originalLocator": "remaining-local/cases/trace-provenance/outputs/observations.json",
+  "sourceSha256": "ca5b10bdf4f233a520b984f0be5f25b194cbe12d976b3be9803b220be3562d70",
+  "sourceBytes": 44416,
+  "transformation": "Named JSON fields selected by exact JSON Pointer. Task-owned absolute paths replaced with declared placeholders. Other fields omitted. These are result-artifact values, not synthesized tool execution evidence. Public selection is limited to eight short inspected fields. Longer output and unselected fields remain private.",
+  "fields": [
+    {
+      "pointer": "/caseId",
+      "value": "trace-provenance"
+    },
+    {
+      "pointer": "/requestedModel",
+      "value": "inherit-parent"
+    },
+    {
+      "pointer": "/actualModel",
+      "value": "unknown"
+    },
+    {
+      "pointer": "/inputRevision",
+      "value": "e7380379bf90fb5a31131ef56640fde3fd2f4016"
+    },
+    {
+      "pointer": "/limits",
+      "value": [
+        "No supplied trace identity, timestamp sequence, symbols, paired captures, or unpaired capture.",
+        "No input process was executed.",
+        "No parser or database conversion ran against a trace.",
+        "SQLite availability query is not a trace conversion.",
+        "No sub-worker spawned because no supplied artifact can be assigned. The case owner is an observed independent worker of the parent."
+      ]
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "kind": "historical-proof-selection",
+  "source": {
+    "path": "<private-run>/work/notes_workflow_reruns/projects/shape-first/outputs/grounding.md",
+    "sha256": "5b28c9a5383e02d8c4f2815d35e194765675dbe2e5aade0a7a8500e8e15e6951",
+    "bytes": 2088
+  },
+  "selection": [
+    {
+      "locator": {
+        "textCodeUnits": [
+          0,
+          2088
+        ]
+      },
+      "value": "# Queue grounding before logic\n\nInput revision is 63b1c3a33583a4e688ecaa34099383ccddf5169d. The stub is preserved in outputs/baseline/jobs.mjs.\n\nIdentity is an opaque, nonempty job ID allocated by the queue. Jobs have a payload and exactly one state. A queued job has no owner. A running job has the claiming worker ID. A completed job retains that owner and gains a result. Completion requires the running state and matching owner.\n\nProducers call enqueue(payload). Workers call claim(workerId), receive a queued job once, then call complete(jobId, workerId, result). Readers call list(state). The authored caller awaits successful calls but requires wrong-owner complete to throw synchronously. Two claim expressions inside Promise.all must yield exactly one owner for one job.\n\nThe class is only imported by tests/jobs-regression.test.mjs. server.mjs owns a separate HTTP save-job Map. No server, transport or UI integration is required for the new domain queue. No existing private/public jobs array consumer was found by rg.\n\nEach queue instance owns its records. Returned records, payloads and results must be detached snapshots. If another actor mutates a returned object, canonical state must remain unchanged. One canonical queue is necessary for claims; callers must never coordinate locks. Synchronous methods with no awaits make lookup and transition indivisible within one JavaScript event loop. This does not establish multi-process, shared-memory or durable queue semantics.\n\nChoose between a private insertion-ordered Map with derived state lists and an explicit pending queue plus registry/state indexes. Compare actual access paths, redundant state, copy failures and error contracts. Keep four existing public operations.\n\nDead code inspection found only the target placeholder bodies and unused public array. Replace those together with the selected complete abstraction. No unrelated fixture targets are obsolete. Existing bun:test infrastructure is sufficient; no packages, CI or lint setup is needed before checks. Add caller edge checks before replacing the stub.\n"
+    }
+  ],
+  "limits": [
+    "Selections preserve the exact source value at each locator. Truncated strings carry explicit code-unit bounds.",
+    "A producer-captured return is not a recovered native parent envelope. Missing call IDs, original capture defects and unknown model observations remain missing."
+  ]
+}

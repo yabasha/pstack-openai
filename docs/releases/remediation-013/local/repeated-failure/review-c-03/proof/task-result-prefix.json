@@ -1,0 +1,16 @@
+{
+  "kind": "task-result-file-excerpt",
+  "caseId": "repeated-failure",
+  "attemptId": "review-c-03",
+  "inputRevision": "25513453054f9ce79354b7ae6c17a3db80dd8012",
+  "originalLocator": "remaining-local/cases/repeated-failure/outputs/repeated-failure.result.md",
+  "sourceSha256": "f7565606495ab9fa121300824e812bfafb9c93c106aac67451a59c7ec394a313",
+  "sourceWasDirectlyListedByIndependentGrade": true,
+  "characterRange": {
+    "start": 0,
+    "endExclusive": 599,
+    "total": 3320
+  },
+  "content": "# repeated-failure actual attempt\n\nBlocked. The supplied narrative says both fixes assumed that actor assignment is harmless. That is the common premise, not a verified fact. No third fix was attempted.\n\nThe case repository HEAD is 25513453054f9ce79354b7ae6c17a3db80dd8012. The original revision d0c8f33c0843c5a107913c82e03a70386e7a3ed3 is not available as a Git object. The failed lookup and retained input inventory are in command-observations.json. All tracked input bytes and every read frozen operative source are hashed in source-input-hashes.json. No alternate ORIGINAL locator was supplied.\n",
+  "transformation": "An inspected prefix of the actual task-result file is projected. Task-owned absolute paths use declared placeholders. The prefix may omit later qualifications. The independent assessment and its limits govern the proposed grade. This is neither a new grade nor a native callable-operation claim."
+}

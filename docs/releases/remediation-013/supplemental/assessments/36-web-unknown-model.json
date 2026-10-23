@@ -1,0 +1,120 @@
+{
+  "kind": "historical-independent-assessment-extract",
+  "qualification": {
+    "inputRevision": "4138e161c27cafffd2baaab6bf4ca53e86a57433",
+    "sourceFreeze": "51f209daf83cd97d64f89881d66533bb59dc57db",
+    "packageVersion": "0.1.3",
+    "currentSourceQualified": false
+  },
+  "source": {
+    "path": "<private-run>/grades/grade_remediation_web_b/result.json",
+    "sha256": "955cf814d92937db0da86307aca849188ae17c5ac8a0a242f21a63f0fd618369",
+    "locator": {
+      "jsonPointer": "/cases/3"
+    }
+  },
+  "originalAssessment": {
+    "caseId": "unknown-model",
+    "host": "chatgpt",
+    "proposedStatus": "pass",
+    "gradeScope": "Exact registered case behavior on starting-main 4138 source qualification only. No current main or whole-mode parity claim.",
+    "reason": "The case explicitly defines full safety handling as rejecting the unknown slug, retaining inherited choices for every role, showing the complete budget/table and withholding personal configuration while labeling setup capability reduced. The returned proposal meets that negative predicate. This pass does not establish persistent setup support.",
+    "inputAssignment": {
+      "path": "<private-run>/web-checkpoint-2/units/unknown-model/assignments/unknown-model.json",
+      "sha256": "e392b536daa79304b35ccedfc3df83a891d1fbcfb4641edceda9997b8330c91e",
+      "locator": null
+    },
+    "sourceContract": {
+      "path": "<private-run>/runtime/package-main-4138e16/docs/parity/cases/skills/setup-pstack.json",
+      "sha256": "cc8b3a03da1ff9c1cece25ccebc2300f7fb92353d6d2b6e559c517dc8da4c9b1",
+      "locator": "unknown-model"
+    },
+    "registry": {
+      "path": "<private-run>/runtime/package-main-4138e16/docs/parity/case-registry.json",
+      "sha256": "5b6314bc2aa30ef161318535fe8cdcf901033570083fbc8e991c7c5e3fc59e29",
+      "locator": "unknown-model"
+    },
+    "requiredObservations": {
+      "pass": [
+        "read",
+        "review-outcome"
+      ],
+      "reduced-pass": [
+        "read"
+      ]
+    },
+    "satisfiedPredicates": [
+      "Enumeration is unavailable by supplied policy. No unknown literal slug is submitted or invented.",
+      "All 17 role entries retain inherited choices and unknown actual values. Panel aliases retain two entries and count toward potential fan-out.",
+      "Large budget and xhigh target are unconfirmed source defaults, not observed effort.",
+      "Scope and persistence limitations are explicit. No personal override, host registration or new-session behavior is claimed."
+    ],
+    "unmetGates": [
+      "Persistent setup and mapping/budget confirmation remain unperformed and are outside this safety-handling case pass."
+    ],
+    "evidence": [
+      {
+        "path": "<private-run>/web-checkpoint-2/units/unknown-model/outputs/unknown-model/result.json",
+        "sha256": "b34ee69de8012c45dcedaf053ed96668695e246e738327ca35e942eb8df3f875",
+        "locator": null
+      },
+      {
+        "path": "<private-run>/web-checkpoint-2/units/unknown-model/outputs/unknown-model/unknown-model.result.md",
+        "sha256": "8dc393af16a8f4e4a3c87d716469811047d637ed76d8e4726d5715232e58e62e",
+        "locator": null
+      },
+      {
+        "path": "<private-run>/web-checkpoint-2/units/unknown-model/outputs/unknown-model/localrawcaptures/003-setup-host.json",
+        "sha256": "baff68565efb2c717fe32b858c37144d3138182657e8094351db02a1e641e622",
+        "locator": null
+      },
+      {
+        "path": "<private-run>/web-checkpoint-2/units/unknown-model/outputs/unknown-model/localrawcaptures/005-revision-writing.json",
+        "sha256": "8cbc07e2eb13ec5b3f01314681eb2243ebc28df3a48ab4c3f749a2c3dbe458e5",
+        "locator": null
+      },
+      {
+        "path": "<private-run>/web-checkpoint-2/units/unknown-model/outputs/unknown-model/localrawcaptures/007-readback.json",
+        "sha256": "f97f936369369f5bc52ded0a6c56d586eebce66caf6b2c155fa7cfe428a8f6e9",
+        "locator": null
+      }
+    ],
+    "successfulOperationMapping": [
+      {
+        "operation": "read",
+        "tool": "functions.exec / tools.exec_command",
+        "evidence": {
+          "path": "<private-run>/web-checkpoint-2/units/unknown-model/outputs/unknown-model/localrawcaptures/003-setup-host.json",
+          "sha256": "baff68565efb2c717fe32b858c37144d3138182657e8094351db02a1e641e622",
+          "locator": null
+        }
+      }
+    ],
+    "nativeObservationMapping": {
+      "supplied-input": {
+        "path": "<private-run>/runtime/package-main-4138e16/docs/parity/cases/skills/setup-pstack.json",
+        "sha256": "cc8b3a03da1ff9c1cece25ccebc2300f7fb92353d6d2b6e559c517dc8da4c9b1",
+        "locator": "unknown-model"
+      },
+      "response": {
+        "path": "<private-run>/web-checkpoint-2/units/unknown-model/outputs/unknown-model/result.json",
+        "sha256": "b34ee69de8012c45dcedaf053ed96668695e246e738327ca35e942eb8df3f875",
+        "locator": null
+      },
+      "review-outcome": "<private-run>/grades/grade_remediation_web_b/result.json"
+    },
+    "requestedModel": "inherit-parent",
+    "actualModel": "unknown",
+    "methodReceiptRequiredByRegistry": null
+  },
+  "selectedProof": [
+    "proof/36-web-unknown-model-1.json",
+    "proof/36-web-unknown-model-2.json",
+    "proof/36-web-unknown-model-3.json"
+  ],
+  "publicationStatus": "proposal-only; no canonical host evidence record is constructed",
+  "publicationGaps": [
+    "This assessment format is not the canonical evidence schema. Root-relative operation bindings and any required structured method receipt require separate complete validation.",
+    "Original assessment limitations, invalid receipts and capture gaps are preserved. A behavioral pass does not qualify a different package revision."
+  ]
+}

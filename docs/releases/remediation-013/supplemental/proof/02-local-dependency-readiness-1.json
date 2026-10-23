@@ -1,0 +1,89 @@
+{
+  "kind": "historical-proof-selection",
+  "source": {
+    "path": "<private-run>/remaining-local/cases/dependency-readiness/outputs/pty-actions-repeat.json",
+    "sha256": "7c4e965da058c7204441832d8ecd53cb2df721c054cda2e91bb1a0bd0a8efa77",
+    "bytes": 7049
+  },
+  "selection": [
+    {
+      "locator": {
+        "jsonPointer": "/reason"
+      },
+      "value": "Independent reviewer found original receipt omitted write_stdin results. This is a fresh observed attempt, not retrospective repair. Prior incomplete receipt retained."
+    },
+    {
+      "locator": {
+        "jsonPointer": "/tools"
+      },
+      "value": [
+        "functions.exec_command",
+        "functions.write_stdin"
+      ]
+    },
+    {
+      "locator": {
+        "jsonPointer": "/inputRevision"
+      },
+      "value": "fa125800b602fe0063ef4e4c2db7b207dc144de0"
+    },
+    {
+      "locator": {
+        "jsonPointer": "/sourceFreeze"
+      },
+      "value": "51f209daf83cd97d64f89881d66533bb59dc57db"
+    },
+    {
+      "locator": {
+        "jsonPointer": "/scope"
+      },
+      "value": "prepared real orch CLI against disposable outputs/orch-pty-repeat store"
+    },
+    {
+      "locator": {
+        "jsonPointer": "/receipts/1/result/chunk_id"
+      },
+      "value": "fa4127"
+    },
+    {
+      "locator": {
+        "jsonPointer": "/receipts/1/result/session_id"
+      },
+      "value": 72923
+    },
+    {
+      "locator": {
+        "jsonPointer": "/receipts/2/result/chunk_id"
+      },
+      "value": "6b42a4"
+    },
+    {
+      "locator": {
+        "jsonPointer": "/receipts/2/result/session_id"
+      },
+      "value": 72923
+    },
+    {
+      "locator": {
+        "jsonPointer": "/receipts/3/result/chunk_id"
+      },
+      "value": "def9a6"
+    },
+    {
+      "locator": {
+        "jsonPointer": "/receipts/3/result/session_id"
+      },
+      "value": 72923
+    },
+    {
+      "locator": {
+        "jsonPointer": "/limits"
+      },
+      "value": "No browser, screenshot, recording or Benny adapter pass. Shell exited; store retained."
+    }
+  ],
+  "limits": [
+    "Selections preserve the exact source value at each locator. Truncated strings carry explicit code-unit bounds.",
+    "A producer-captured return is not a recovered native parent envelope. Missing call IDs, original capture defects and unknown model observations remain missing."
+  ]
+}

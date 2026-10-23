@@ -1,53 +1,74 @@
 {
   "caseId": "invalid-input",
-  "packageVersion": "0.1.0",
-  "packageCommit": "5d05ab2458f4cd73c44b24265a3a1920b98b8cf4",
+  "packageVersion": "0.1.3",
+  "packageCommit": "51f209daf83cd97d64f89881d66533bb59dc57db",
   "host": "codex",
-  "hostMode": "existing delegated local implementation session; installed-plugin testing unavailable",
-  "date": "2026-10-08",
+  "hostMode": "Native host workflow with independent retained-artifact review",
+  "date": "2026-10-16",
   "input": "Apply principle-boundary-discipline to an HTTP adapter that accepts raw order JSON and calls a typed pricing function. Reject a missing or invalid quantity at the adapter boundary. Internal functions currently repeat nil and quantity checks. Describe or implement the change within available authorization.",
-  "observedOutput": "Not attempted. Inherited prerequisite block from package-discovery. Installed-copy discovery is unobserved for this frozen candidate. No separate human authorization exists for package loading, installation, enabling, settings changes or a fresh host setup. The current session exposes source reads and local command execution, but no actual installed pstack copy identity or complete 51-root/3-exclusion discovery receipt was observed. Source reads cannot establish installed discovery.",
-  "status": "blocked",
-  "execution": "unavailable",
+  "observedOutput": "Actual adapter narrows raw quantity before constructing Order, retains necessary JSON/object guards and removes internal duplicate guards. The unchanged baseline boundary tests and added negative cases execute successfully; actual strict compilation rejects four invalid internal uses.",
+  "status": "pass",
+  "execution": "direct",
   "sourcePaths": [
     "skills/principle-boundary-discipline/SKILL.md"
   ],
   "documentedCapabilities": [
-    "references/host-capabilities.md defines observations, not callable APIs.",
-    "docs/setup/codex.md requires separate loading authorization and actual installed-copy discovery."
+    "Case-specific capability observations are retained in the independent review; no capability is inferred from package validation."
   ],
   "exposedTools": [
-    "functions.exec",
-    "functions.wait",
-    "tools.exec_command",
-    "tools.clock__curr_time",
-    "collaboration.spawn_agent",
-    "collaboration.followup_task",
-    "collaboration.send_message",
-    "collaboration.wait_agent",
-    "collaboration.interrupt_agent",
-    "collaboration.list_agents",
-    "mcp__cua_repl.js",
-    "mcp__cua_repl.js_reset"
+    "exec_command",
+    "apply_patch"
   ],
   "artifacts": [
-    "docs/parity/evidence/codex/authorization-capability-check.md"
+    "docs/releases/host-evaluation/codex/invalid-input.md"
   ],
   "limits": [
-    "Installed-copy discovery is unobserved for this frozen candidate. No separate human authorization exists for package loading, installation, enabling, settings changes or a fresh host setup. The current session exposes source reads and local command execution, but no actual installed pstack copy identity or complete 51-root/3-exclusion discovery receipt was observed. Source reads cannot establish installed discovery.",
-    "This case was not attempted; its failure modes and expected outputs were not observed.",
-    "No requested model, case model output, worker independence or fresh loaded session was observed.",
-    "Local structural validation does not establish host behavior."
+    "Number positivity and integrality remain runtime boundary invariants, not compile-time numeric refinements.",
+    "Initial bootstrap raw returns exist only in native transcript; no production or other-host claim."
   ],
   "priorActionIdentities": [],
   "permissions": {
-    "execution": "unavailable",
+    "execution": "granted",
     "writes": "granted",
-    "externalActions": "unknown"
+    "externalActions": "denied"
   },
   "models": {
-    "requested": "unknown",
-    "actual": "unknown"
+    "requested": "inherit-parent",
+    "actual": "gpt-6.1-sol"
   },
-  "successfulOperations": []
+  "successfulOperations": [
+    {
+      "operation": "read",
+      "tool": "exec_command",
+      "evidence": "docs/releases/host-evaluation/codex/invalid-input.md"
+    },
+    {
+      "operation": "execution",
+      "tool": "exec_command",
+      "evidence": "docs/releases/host-evaluation/codex/invalid-input.md"
+    },
+    {
+      "operation": "isolated-write",
+      "tool": "apply_patch",
+      "evidence": "docs/releases/host-evaluation/codex/invalid-input.md"
+    }
+  ],
+  "nativeObservations": [
+    {
+      "observation": "supplied-input",
+      "evidence": "docs/releases/host-evaluation/codex/invalid-input.md",
+      "reviewedBy": "grade_local_05_12"
+    },
+    {
+      "observation": "response",
+      "evidence": "docs/releases/host-evaluation/codex/invalid-input.md",
+      "reviewedBy": "grade_local_05_12"
+    },
+    {
+      "observation": "review-outcome",
+      "evidence": "docs/releases/host-evaluation/codex/invalid-input.md",
+      "reviewedBy": "grade_local_05_12"
+    }
+  ],
+  "inputRevision": "6c8622bde4170b75d0c4dbc5b1bdcacab57c0df0"
 }

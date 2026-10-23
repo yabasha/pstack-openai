@@ -3992,7 +3992,10 @@
       "requiredObservations": {
         "pass": [
           "resolve-ownership",
+          "spawn",
+          "wait",
           "isolated-write",
+          "inspect-result",
           "read"
         ],
         "reduced-pass": [
@@ -4020,7 +4023,6 @@
       "caseId": "smaller-solution",
       "executionModes": {
         "pass": [
-          "direct",
           "workers"
         ],
         "reduced-pass": [
@@ -4705,6 +4707,8 @@
       "requiredObservations": {
         "pass": [
           "read",
+          "execution",
+          "persistence",
           "review-outcome"
         ],
         "reduced-pass": [

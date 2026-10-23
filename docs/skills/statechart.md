@@ -201,7 +201,7 @@ Forbidden claims:
 
 ## Source proof and release evidence
 
-The following statuses come from the current parity inventory. Pending aggregate review remains pending. Structural catalog checks do not establish host support.
+Current host statuses and release evidence: [current parity inventory](../parity/inventory.json), [chatgpt host report](../testing/chatgpt.md), and [codex host report](../testing/codex.md). These records can advance after the source freeze. Structural catalog checks do not establish host support.
 
 ### `skills/statechart/SKILL.md`
 
@@ -211,9 +211,6 @@ Upstream commit: `4ec7ffa173eaa70d3d9467a627baf0954645a353`. SHA-256: `9b2a6dccf
 
 Disposition: `runtime`. Aggregate adaptation status: `adapted-reviewed`.
 
-- chatgpt: `not-run`. Tested release evidence: none recorded.
-- codex: `not-run`. Tested release evidence: none recorded.
-
 ### `skills/statechart/scripts/chart-to-tla.mjs`
 
 Destination: [skills/statechart/scripts/chart-to-tla.mjs](../../skills/statechart/scripts/chart-to-tla.mjs).
@@ -221,9 +218,6 @@ Destination: [skills/statechart/scripts/chart-to-tla.mjs](../../skills/statechar
 Upstream commit: `4ec7ffa173eaa70d3d9467a627baf0954645a353`. SHA-256: `9f794e273d0729ae874d68a67bfa1df4ebddc12420b7ab5081fdf58dceb729e4`.
 
 Disposition: `runtime`. Aggregate adaptation status: `adapted-reviewed`.
-
-- chatgpt: `not-run`. Tested release evidence: none recorded.
-- codex: `not-run`. Tested release evidence: none recorded.
 
 ### `skills/statechart/scripts/compare-charts.mjs`
 
@@ -233,9 +227,6 @@ Upstream commit: `4ec7ffa173eaa70d3d9467a627baf0954645a353`. SHA-256: `12f4dc470
 
 Disposition: `runtime`. Aggregate adaptation status: `adapted-reviewed`.
 
-- chatgpt: `not-run`. Tested release evidence: none recorded.
-- codex: `not-run`. Tested release evidence: none recorded.
-
 ### `skills/statechart/scripts/lib.mjs`
 
 Destination: [skills/statechart/scripts/lib.mjs](../../skills/statechart/scripts/lib.mjs).
@@ -243,9 +234,6 @@ Destination: [skills/statechart/scripts/lib.mjs](../../skills/statechart/scripts
 Upstream commit: `4ec7ffa173eaa70d3d9467a627baf0954645a353`. SHA-256: `941280e42b9dbfd2b40116287a2ebbc6e391b826876a001b1ba7aff365c1e41d`.
 
 Disposition: `runtime`. Aggregate adaptation status: `unchanged-reviewed`.
-
-- chatgpt: `not-run`. Tested release evidence: none recorded.
-- codex: `not-run`. Tested release evidence: none recorded.
 
 ### `skills/statechart/scripts/model/OutputFolder.cfg`
 
@@ -255,9 +243,6 @@ Upstream commit: `4ec7ffa173eaa70d3d9467a627baf0954645a353`. SHA-256: `8b9662ab7
 
 Disposition: `runtime`. Aggregate adaptation status: `unchanged-reviewed`.
 
-- chatgpt: `not-run`. Tested release evidence: none recorded.
-- codex: `not-run`. Tested release evidence: none recorded.
-
 ### `skills/statechart/scripts/model/OutputFolder.map.mjs`
 
 Destination: [skills/statechart/scripts/model/OutputFolder.map.mjs](../../skills/statechart/scripts/model/OutputFolder.map.mjs).
@@ -265,9 +250,6 @@ Destination: [skills/statechart/scripts/model/OutputFolder.map.mjs](../../skills
 Upstream commit: `4ec7ffa173eaa70d3d9467a627baf0954645a353`. SHA-256: `33f2ef1c2ba397573206640843fffbc228d066e53fe5ced779d82f99600f3fd8`.
 
 Disposition: `runtime`. Aggregate adaptation status: `unchanged-reviewed`.
-
-- chatgpt: `not-run`. Tested release evidence: none recorded.
-- codex: `not-run`. Tested release evidence: none recorded.
 
 ### `skills/statechart/scripts/model/OutputFolder.tla`
 
@@ -277,9 +259,6 @@ Upstream commit: `4ec7ffa173eaa70d3d9467a627baf0954645a353`. SHA-256: `75bef6811
 
 Disposition: `runtime`. Aggregate adaptation status: `unchanged-reviewed`.
 
-- chatgpt: `not-run`. Tested release evidence: none recorded.
-- codex: `not-run`. Tested release evidence: none recorded.
-
 ### `skills/statechart/scripts/statechart.mjs`
 
 Destination: [skills/statechart/scripts/statechart.mjs](../../skills/statechart/scripts/statechart.mjs).
@@ -287,9 +266,6 @@ Destination: [skills/statechart/scripts/statechart.mjs](../../skills/statechart/
 Upstream commit: `4ec7ffa173eaa70d3d9467a627baf0954645a353`. SHA-256: `3c3ed2a29b9f0b2d037b434ef205f505939ac713c6a16f9a806844d513f957a0`.
 
 Disposition: `runtime`. Aggregate adaptation status: `adapted-reviewed`.
-
-- chatgpt: `not-run`. Tested release evidence: none recorded.
-- codex: `not-run`. Tested release evidence: none recorded.
 
 ### `skills/statechart/scripts/test/statechart.test.mjs`
 
@@ -299,9 +275,6 @@ Upstream commit: `4ec7ffa173eaa70d3d9467a627baf0954645a353`. SHA-256: `02302548c
 
 Disposition: `runtime`. Aggregate adaptation status: `adapted-reviewed`.
 
-- chatgpt: `not-run`. Tested release evidence: none recorded.
-- codex: `not-run`. Tested release evidence: none recorded.
-
 ### `skills/statechart/scripts/test/sync.mmd`
 
 Destination: [skills/statechart/scripts/test/sync.mmd](../../skills/statechart/scripts/test/sync.mmd).
@@ -309,9 +282,6 @@ Destination: [skills/statechart/scripts/test/sync.mmd](../../skills/statechart/s
 Upstream commit: `4ec7ffa173eaa70d3d9467a627baf0954645a353`. SHA-256: `cb1f5387058a0f79d6187eb217690588a2e2d384637b4d53cbc4bb050c570757`.
 
 Disposition: `runtime`. Aggregate adaptation status: `unchanged-reviewed`.
-
-- chatgpt: `not-run`. Tested release evidence: none recorded.
-- codex: `not-run`. Tested release evidence: none recorded.
 
 ### `skills/statechart/scripts/test/upload.mmd`
 
@@ -321,9 +291,6 @@ Upstream commit: `4ec7ffa173eaa70d3d9467a627baf0954645a353`. SHA-256: `bbc1fa70e
 
 Disposition: `runtime`. Aggregate adaptation status: `unchanged-reviewed`.
 
-- chatgpt: `not-run`. Tested release evidence: none recorded.
-- codex: `not-run`. Tested release evidence: none recorded.
-
 ### `skills/statechart/scripts/tlc-to-chart.mjs`
 
 Destination: [skills/statechart/scripts/tlc-to-chart.mjs](../../skills/statechart/scripts/tlc-to-chart.mjs).
@@ -331,6 +298,3 @@ Destination: [skills/statechart/scripts/tlc-to-chart.mjs](../../skills/statechar
 Upstream commit: `4ec7ffa173eaa70d3d9467a627baf0954645a353`. SHA-256: `77aa854918f9c5d04fd3ad8838da39f24d8e05a2217a5c3be039d678509c6ef2`.
 
 Disposition: `runtime`. Aggregate adaptation status: `adapted-reviewed`.
-
-- chatgpt: `not-run`. Tested release evidence: none recorded.
-- codex: `not-run`. Tested release evidence: none recorded.

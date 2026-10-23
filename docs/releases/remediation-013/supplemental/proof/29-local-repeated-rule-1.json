@@ -1,0 +1,23 @@
+{
+  "kind": "historical-proof-selection",
+  "source": {
+    "path": "<private-run>/work/notes_workflow_reruns/projects/repeated-rule/domain/release.mjs",
+    "sha256": "4438b68bec075c92130e3a554d8bba16e004c69af7e17547dbc75346bd754bbe",
+    "bytes": 454
+  },
+  "selection": [
+    {
+      "locator": {
+        "textCodeUnits": [
+          0,
+          454
+        ]
+      },
+      "value": "export function generateRelease({ version, sourceRevision }) {\n  if (typeof version !== 'string' || version.trim().length === 0) {\n    throw new TypeError('version must be a nonblank string');\n  }\n  if (typeof sourceRevision !== 'string' || !/^[a-f0-9]{40}$/.test(sourceRevision) || sourceRevision.length !== 40) {\n    throw new TypeError('sourceRevision must be exactly 40 lowercase hexadecimal characters');\n  }\n  return { version, sourceRevision };\n}\n"
+    }
+  ],
+  "limits": [
+    "Selections preserve the exact source value at each locator. Truncated strings carry explicit code-unit bounds.",
+    "A producer-captured return is not a recovered native parent envelope. Missing call IDs, original capture defects and unknown model observations remain missing."
+  ]
+}

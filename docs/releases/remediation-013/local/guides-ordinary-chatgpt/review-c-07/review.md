@@ -1,0 +1,12 @@
+# guides-ordinary-chatgpt
+
+The independent reviewer proposed reduced for review-c-07. This observation uses version 0.1.3 at 51f209daf83cd97d64f89881d66533bb59dc57db. It does not qualify current main.
+
+The supplied-source, no-execution scenario produced a grounded explanation and preserved active-controller and authorization boundaries. Independent execution, runtime proof and supported host loading were not exercised.
+
+The separate assessment retains limitations and source-artifact digests. Selected JSON fields retain exact original pointers. These fields do not prove callable operations. The record keeps missing public operation bindings visible through the unchanged validator.
+
+The unchanged historical record validator reports the following publication gaps. These preserve the independent proposed grade.
+
+- execution: worker claim requires successful spawn operation.
+- execution: worker claim requires successful inspect-result operation.

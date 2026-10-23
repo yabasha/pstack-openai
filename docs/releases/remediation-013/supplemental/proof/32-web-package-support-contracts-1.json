@@ -1,0 +1,46 @@
+{
+  "kind": "historical-proof-selection",
+  "source": {
+    "path": "<private-run>/web-checkpoint-1/units/package-support-contracts/outputs/package-support-contracts/006-head.raw.json",
+    "sha256": "562bc9688667967f29b957d30539d41b2c25641dfeec94607fa08d43f1e03247",
+    "bytes": 355
+  },
+  "selection": [
+    {
+      "locator": {
+        "jsonPointer": "/clock"
+      },
+      "value": "2026-10-17T06:46:48.720Z"
+    },
+    {
+      "locator": {
+        "jsonPointer": "/request/command"
+      },
+      "value": [
+        "git",
+        "rev-parse",
+        "HEAD"
+      ]
+    },
+    {
+      "locator": {
+        "jsonPointer": "/request/cwd"
+      },
+      "value": "/mnt/data/pstack-remediation-20261017/attempts-18/outputs/package-support-contracts/task-input"
+    },
+    {
+      "locator": {
+        "jsonPointer": "/returned"
+      },
+      "value": {
+        "exitCode": 0,
+        "stdout": "0b333d66d5b80d0621802a1ba5e7c4f938b8f214\n",
+        "stderr": ""
+      }
+    }
+  ],
+  "limits": [
+    "Selections preserve the exact source value at each locator. Truncated strings carry explicit code-unit bounds.",
+    "A producer-captured return is not a recovered native parent envelope. Missing call IDs, original capture defects and unknown model observations remain missing."
+  ]
+}

@@ -1,0 +1,73 @@
+{
+  "caseId": "accessible-trace",
+  "packageVersion": "0.1.3",
+  "packageCommit": "51f209daf83cd97d64f89881d66533bb59dc57db",
+  "host": "codex",
+  "hostMode": "Historical native Local task-scoped fixture observation",
+  "date": "2026-10-17",
+  "input": "Diagnose a fixture process with idle CPU spin, a leak or a visual glitch using matching accessible runtime telemetry. Retain a CPU profile, heap snapshot or CDP trace and map the reduced finding to fixture source. Exercise authorized live diagnostic instrumentation separately from read-only permission. Repeat with supplied telemetry only, an inaccessible artifact, absent controls, denied live mutation and unavailable workers. Use inert fixtures, no external writes or installation, and return a cited diagnosis without a fix. Actual task fixture revision db5054b6445dffbb69e84762b25d9f3e6d2980ba.",
+  "observedOutput": "A real PTY executed the finite runtime fixture, but produced no profiling artifact or symptom reproduction. No live mechanism intervention or source-linked causal diagnosis occurred. Authorized PTY replacement does not itself supply a profiler.",
+  "status": "blocked",
+  "execution": "workers",
+  "inputRevision": "db5054b6445dffbb69e84762b25d9f3e6d2980ba",
+  "sourcePaths": [
+    "skills/poteto-mode/playbooks/runtime-forensics.md",
+    "skills/poteto-mode/SKILL.md",
+    "agents/poteto-agent.md",
+    "skills/principle-guard-the-context-window/SKILL.md",
+    "skills/poteto-mode/playbooks/bug-fix.md",
+    "skills/poteto-mode/playbooks/perf-issue.md"
+  ],
+  "documentedCapabilities": [
+    "Frozen source instructions only. Current-main qualification is not established."
+  ],
+  "exposedTools": [
+    "exec"
+  ],
+  "artifacts": [
+    "docs/releases/remediation-013/local/accessible-trace/review-c-10/assessment.json",
+    "docs/releases/remediation-013/local/accessible-trace/review-c-10/proof/01-actions.json.excerpt.json",
+    "docs/releases/remediation-013/local/accessible-trace/review-c-10/proof/02-control-discovery.json.excerpt.json",
+    "docs/releases/remediation-013/local/accessible-trace/review-c-10/proof/03-branches.json.excerpt.json",
+    "docs/releases/remediation-013/local/accessible-trace/review-c-10/proof/04-verification.json.excerpt.json",
+    "docs/releases/remediation-013/local/accessible-trace/review-c-10/proof/supplied-input.json",
+    "docs/releases/remediation-013/local/accessible-trace/review-c-10/proof/native-source-read.json",
+    "docs/releases/remediation-013/local/accessible-trace/review-c-10/proof/task-result-prefix.json"
+  ],
+  "limits": [
+    "Accessible runtime telemetry and matching capture operation",
+    "Reproduced symptom and authorized live mechanism intervention",
+    "The public source excerpt covers the listed matched paths only. Other source reads assessed independently remain outside this narrow public excerpt.",
+    "Only the actual operations listed in this record have narrow public bindings. Other operations from the independent assessment remain unprojected. No missing operation is invented.",
+    "The exposed tool name exec is retained from the actual scoped native custom-tool call. The nested tools.exec_command call matches this public command event. command_execution remains an event type only."
+  ],
+  "priorActionIdentities": [],
+  "permissions": {
+    "execution": "granted",
+    "writes": "granted",
+    "externalActions": "denied"
+  },
+  "models": {
+    "requested": "inherit-parent",
+    "actual": "unknown"
+  },
+  "successfulOperations": [
+    {
+      "operation": "read",
+      "tool": "exec",
+      "evidence": "docs/releases/remediation-013/local/accessible-trace/review-c-10/proof/native-source-read.json"
+    }
+  ],
+  "nativeObservations": [
+    {
+      "observation": "review-outcome",
+      "evidence": "docs/releases/remediation-013/local/accessible-trace/review-c-10/assessment.json",
+      "reviewedBy": "/root/grade_remediation_local_c"
+    },
+    {
+      "observation": "supplied-input",
+      "evidence": "docs/releases/remediation-013/local/accessible-trace/review-c-10/proof/supplied-input.json",
+      "reviewedBy": "/root/project_historical_local"
+    }
+  ]
+}

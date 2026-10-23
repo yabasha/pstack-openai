@@ -1,0 +1,35 @@
+{
+  "kind": "selected-fixture-result-fields",
+  "caseId": "accessible-trace",
+  "attemptId": "review-c-10",
+  "originalLocator": "remaining-local/cases/accessible-trace/outputs/branches.json",
+  "sourceSha256": "c755b57d163ec431296cf69b49d338e5275e0b256b26ea0230d719af49222cd5",
+  "sourceBytes": 4216,
+  "transformation": "Named JSON fields selected by exact JSON Pointer. Task-owned absolute paths replaced with declared placeholders. Other fields omitted. These are result-artifact values, not synthesized tool execution evidence. Public selection is limited to eight short inspected fields. Longer output and unselected fields remain private.",
+  "fields": [
+    {
+      "pointer": "/0/status",
+      "value": "blocked"
+    },
+    {
+      "pointer": "/1/status",
+      "value": "blocked"
+    },
+    {
+      "pointer": "/2/status",
+      "value": "blocked"
+    },
+    {
+      "pointer": "/3/status",
+      "value": "blocked"
+    },
+    {
+      "pointer": "/4/status",
+      "value": "blocked"
+    },
+    {
+      "pointer": "/5/status",
+      "value": "blocked"
+    }
+  ]
+}

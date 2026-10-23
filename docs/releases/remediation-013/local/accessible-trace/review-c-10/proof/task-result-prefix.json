@@ -1,0 +1,16 @@
+{
+  "kind": "task-result-file-excerpt",
+  "caseId": "accessible-trace",
+  "attemptId": "review-c-10",
+  "inputRevision": "db5054b6445dffbb69e84762b25d9f3e6d2980ba",
+  "originalLocator": "remaining-local/cases/accessible-trace/outputs/accessible-trace.result.md",
+  "sourceSha256": "9b7f7a8bc8e8c120e7a05998c6de85460d2449e6cd393f52c1c525500e44bd22",
+  "sourceWasDirectlyListedByIndependentGrade": true,
+  "characterRange": {
+    "start": 0,
+    "endExclusive": 670,
+    "total": 5037
+  },
+  "content": "# accessible-trace actual attempt\n\nThe runtime diagnosis is blocked. No accessible CPU profile, heap snapshot or CDP trace was supplied or captured. No live mechanism proof was observed. This is an actual independent case-owner attempt with a bounded negative result, not a producer acceptance grade.\n\nThe full request, current contract, task contract, supplemental task and full role are retained in request.json. The immutable parent assignment and actual dispatch receipt identify /root/accessible_trace at input db5054b6445dffbb69e84762b25d9f3e6d2980ba. The requested model and effort are inherit-parent. Actual model and effort are unknown.\n\n## Signal and evidence\n",
+  "transformation": "An inspected prefix of the actual task-result file is projected. Task-owned absolute paths use declared placeholders. The prefix may omit later qualifications. The independent assessment and its limits govern the proposed grade. This is neither a new grade nor a native callable-operation claim."
+}

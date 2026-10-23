@@ -1,53 +1,80 @@
 {
   "caseId": "arena-walkthrough",
-  "packageVersion": "0.1.0",
-  "packageCommit": "5d05ab2458f4cd73c44b24265a3a1920b98b8cf4",
+  "packageVersion": "0.1.3",
+  "packageCommit": "51f209daf83cd97d64f89881d66533bb59dc57db",
   "host": "codex",
-  "hostMode": "existing delegated local implementation session; installed-plugin testing unavailable",
-  "date": "2026-10-08",
+  "hostMode": "Native host workflow with independent retained-artifact review",
+  "date": "2026-10-16",
   "input": "Start with an authorized disposable local artifact and exact input SHA. Follow README to Arena and compare two proposals for a cache API.",
-  "observedOutput": "Not attempted. Inherited prerequisite block from package-discovery. Installed-copy discovery is unobserved for this frozen candidate. No separate human authorization exists for package loading, installation, enabling, settings changes or a fresh host setup. The current session exposes source reads and local command execution, but no actual installed pstack copy identity or complete 51-root/3-exclusion discovery receipt was observed. Source reads cannot establish installed discovery.",
-  "status": "blocked",
-  "execution": "unavailable",
+  "observedOutput": "Structured method metadata is now genuinely assigned and echoed, and the exact complete frozen validator reports no relationship errors. Two actual candidates, fresh later judge and verified synthesis execute. Requested preallocation-before-bootstrap order was violated and installed discovery remains unverified; those execution gaps are not erased by valid schema.",
+  "status": "reduced-pass",
+  "execution": "workers",
   "sourcePaths": [
     "skills/arena/SKILL.md"
   ],
   "documentedCapabilities": [
-    "references/host-capabilities.md defines observations, not callable APIs.",
-    "docs/setup/codex.md requires separate loading authorization and actual installed-copy discovery."
+    "Case-specific capability observations are retained in the independent review; no capability is inferred from package validation."
   ],
   "exposedTools": [
-    "functions.exec",
-    "functions.wait",
-    "tools.exec_command",
-    "tools.clock__curr_time",
-    "collaboration.spawn_agent",
-    "collaboration.followup_task",
-    "collaboration.send_message",
-    "collaboration.wait_agent",
-    "collaboration.interrupt_agent",
-    "collaboration.list_agents",
-    "mcp__cua_repl.js",
-    "mcp__cua_repl.js_reset"
+    "exec_command",
+    "collaboration.spawn_agent"
   ],
   "artifacts": [
-    "docs/parity/evidence/codex/authorization-capability-check.md"
+    "docs/releases/host-evaluation/codex/arena-walkthrough.md"
   ],
   "limits": [
-    "Installed-copy discovery is unobserved for this frozen candidate. No separate human authorization exists for package loading, installation, enabling, settings changes or a fresh host setup. The current session exposes source reads and local command execution, but no actual installed pstack copy identity or complete 51-root/3-exclusion discovery receipt was observed. Source reads cannot establish installed discovery.",
-    "This case was not attempted; its failure modes and expected outputs were not observed.",
-    "No requested model, case model output, worker independence or fresh loaded session was observed.",
-    "Local structural validation does not establish host behavior."
+    "Requested output preallocation before identity-only bootstrap was not followed; directories allocated before immutable assignments and task dispatch.",
+    "Installed discovery not exercised in this case; direct source reads are not discovery.",
+    "Actual models and full transcript audit unverified; historical package marker inadvertently read without old result reuse."
   ],
   "priorActionIdentities": [],
   "permissions": {
-    "execution": "unavailable",
+    "execution": "granted",
     "writes": "granted",
-    "externalActions": "unknown"
+    "externalActions": "denied"
   },
   "models": {
-    "requested": "unknown",
-    "actual": "unknown"
+    "requested": "inherit-parent",
+    "actual": "{\"coordinator\":\"gpt-6.1-sol\",\"workers\":\"unknown\"}"
   },
-  "successfulOperations": []
+  "successfulOperations": [
+    {
+      "operation": "read",
+      "tool": "exec_command",
+      "evidence": "docs/releases/host-evaluation/codex/arena-walkthrough.md"
+    },
+    {
+      "operation": "inspect-result",
+      "tool": "exec_command",
+      "evidence": "docs/releases/host-evaluation/codex/arena-walkthrough.md"
+    },
+    {
+      "operation": "execution",
+      "tool": "exec_command",
+      "evidence": "docs/releases/host-evaluation/codex/arena-walkthrough.md"
+    },
+    {
+      "operation": "spawn",
+      "tool": "collaboration.spawn_agent",
+      "evidence": "docs/releases/host-evaluation/codex/arena-walkthrough.md"
+    }
+  ],
+  "nativeObservations": [
+    {
+      "observation": "supplied-input",
+      "evidence": "docs/releases/host-evaluation/codex/arena-walkthrough.md",
+      "reviewedBy": "grade_local_repairs"
+    },
+    {
+      "observation": "response",
+      "evidence": "docs/releases/host-evaluation/codex/arena-walkthrough.md",
+      "reviewedBy": "grade_local_repairs"
+    },
+    {
+      "observation": "review-outcome",
+      "evidence": "docs/releases/host-evaluation/codex/arena-walkthrough.md",
+      "reviewedBy": "grade_local_repairs"
+    }
+  ],
+  "inputRevision": "441a80735dfdf631001d8020366a5db867ce0348"
 }

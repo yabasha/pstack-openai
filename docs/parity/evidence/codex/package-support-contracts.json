@@ -1,14 +1,14 @@
 {
   "caseId": "package-support-contracts",
-  "packageVersion": "0.1.0",
-  "packageCommit": "5d05ab2458f4cd73c44b24265a3a1920b98b8cf4",
+  "packageVersion": "0.1.3",
+  "packageCommit": "51f209daf83cd97d64f89881d66533bb59dc57db",
   "host": "codex",
-  "hostMode": "existing delegated local implementation session; installed-plugin testing unavailable",
-  "date": "2026-10-08",
+  "hostMode": "Native host workflow with independent retained-artifact review",
+  "date": "2026-10-16",
   "input": "Inspect the support contracts of the actual installed frozen package. Read its attribution and entry-point links, inspect its canonical logo, verify ignore boundaries in a separately authorized owned copy, and exercise the watcher compile fixture only with existing approved dependencies and execution.",
-  "observedOutput": "Not attempted. Inherited prerequisite block from package-discovery. Installed-copy discovery is unobserved for this frozen candidate. No separate human authorization exists for package loading, installation, enabling, settings changes or a fresh host setup. The current session exposes source reads and local command execution, but no actual installed pstack copy identity or complete 51-root/3-exclusion discovery receipt was observed. Source reads cannot establish installed discovery.",
-  "status": "blocked",
-  "execution": "unavailable",
+  "observedOutput": "Actual installed-copy support reads, equal-byte verification copy, logo rendering and Git ignore queries are observed. Exact dependency bootstrap fails with missing commander metadata, so strict watcher compile is correctly left unrun. Source identity is cross-checked by the controller separately, not inferred from the cache path.",
+  "status": "reduced-pass",
+  "execution": "direct",
   "sourcePaths": [
     ".gitignore",
     "LICENSE",
@@ -18,41 +18,72 @@
     "skills/poteto-mode/scripts/watch-pr/types.compile.ts"
   ],
   "documentedCapabilities": [
-    "references/host-capabilities.md defines observations, not callable APIs.",
-    "docs/setup/codex.md requires separate loading authorization and actual installed-copy discovery."
+    "Case-specific capability observations are retained in the independent review; no capability is inferred from package validation."
   ],
   "exposedTools": [
-    "functions.exec",
-    "functions.wait",
-    "tools.exec_command",
-    "tools.clock__curr_time",
-    "collaboration.spawn_agent",
-    "collaboration.followup_task",
-    "collaboration.send_message",
-    "collaboration.wait_agent",
-    "collaboration.interrupt_agent",
-    "collaboration.list_agents",
-    "mcp__cua_repl.js",
-    "mcp__cua_repl.js_reset"
+    "exec_command",
+    "view_image"
   ],
   "artifacts": [
-    "docs/parity/evidence/codex/authorization-capability-check.md"
+    "docs/releases/host-evaluation/codex/package-support-contracts.md"
   ],
   "limits": [
-    "Installed-copy discovery is unobserved for this frozen candidate. No separate human authorization exists for package loading, installation, enabling, settings changes or a fresh host setup. The current session exposes source reads and local command execution, but no actual installed pstack copy identity or complete 51-root/3-exclusion discovery receipt was observed. Source reads cannot establish installed discovery.",
-    "This case was not attempted; its failure modes and expected outputs were not observed.",
-    "No requested model, case model output, worker independence or fresh loaded session was observed.",
-    "Local structural validation does not establish host behavior."
+    "No strict compile or live watcher readiness proof.",
+    "Source/read identity does not prove supported loading; no host refresh operation was exercised."
   ],
   "priorActionIdentities": [],
   "permissions": {
-    "execution": "unavailable",
+    "execution": "granted",
     "writes": "granted",
-    "externalActions": "unknown"
+    "externalActions": "denied"
   },
   "models": {
-    "requested": "unknown",
-    "actual": "unknown"
+    "requested": "inherit-parent",
+    "actual": "gpt-6.1-sol"
   },
-  "successfulOperations": []
+  "successfulOperations": [
+    {
+      "operation": "read",
+      "tool": "exec_command",
+      "evidence": "docs/releases/host-evaluation/codex/package-support-contracts.md"
+    },
+    {
+      "operation": "inspect-installed-copy",
+      "tool": "exec_command",
+      "evidence": "docs/releases/host-evaluation/codex/package-support-contracts.md"
+    },
+    {
+      "operation": "inspect-support-contracts",
+      "tool": "exec_command",
+      "evidence": "docs/releases/host-evaluation/codex/package-support-contracts.md"
+    },
+    {
+      "operation": "render-logo",
+      "tool": "view_image",
+      "evidence": "docs/releases/host-evaluation/codex/package-support-contracts.md"
+    },
+    {
+      "operation": "check-ignore",
+      "tool": "exec_command",
+      "evidence": "docs/releases/host-evaluation/codex/package-support-contracts.md"
+    }
+  ],
+  "nativeObservations": [
+    {
+      "observation": "supplied-input",
+      "evidence": "docs/releases/host-evaluation/codex/package-support-contracts.md",
+      "reviewedBy": "grade_local_05_12"
+    },
+    {
+      "observation": "response",
+      "evidence": "docs/releases/host-evaluation/codex/package-support-contracts.md",
+      "reviewedBy": "grade_local_05_12"
+    },
+    {
+      "observation": "review-outcome",
+      "evidence": "docs/releases/host-evaluation/codex/package-support-contracts.md",
+      "reviewedBy": "grade_local_05_12"
+    }
+  ],
+  "inputRevision": "a45863208340f1a92b9b6aa636f538d0100fe0cc"
 }

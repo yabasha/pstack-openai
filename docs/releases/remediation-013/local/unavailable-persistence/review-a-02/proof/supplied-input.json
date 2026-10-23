@@ -1,0 +1,10 @@
+{
+  "kind": "supplied-fixture-input-excerpt",
+  "caseId": "unavailable-persistence",
+  "inputRevision": "583a40e164fe12e8e9adf256c05bd489431c5cc3",
+  "originalLocator": "remaining-local/cases/unavailable-persistence/task-contract.json",
+  "sourceSha256": "15fc7223b9562518eac065cffe0bfc39eaaea90ccfa612812adafee2d24f95ba",
+  "pointer": "/case/prompt",
+  "suppliedPrompt": "Durable session persistence is unavailable.",
+  "transformation": "Only the exact supplied case prompt is projected. Fixture data and arbitrary surrounding contract fields are omitted. This is supplied input, not a native successful tool operation."
+}

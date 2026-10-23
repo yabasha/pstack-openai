@@ -1,0 +1,1422 @@
+{
+  "schemaVersion": 1,
+  "scope": "Current candidate discovery only; no workflow qualification",
+  "sourceFreeze": "4513f3d706e6dfe9e396c80a74c490c3ebcec7a6",
+  "packageVersion": "0.1.5",
+  "date": "2026-10-18",
+  "workflowReruns": "paused",
+  "canonicalRootSkills": [
+    "architect",
+    "arena",
+    "automate-me",
+    "benchmark-checklist",
+    "blast-radius",
+    "bro",
+    "correct",
+    "create-verification-skill",
+    "figure-it-out",
+    "how",
+    "interrogate",
+    "maintain-verification-skill",
+    "make-bot-ui",
+    "no-comments",
+    "poteto-help",
+    "poteto-mode",
+    "principle-attack-the-premise",
+    "principle-boundary-discipline",
+    "principle-build-the-lever",
+    "principle-encode-lessons-in-structure",
+    "principle-exhaust-the-design-space",
+    "principle-experience-first",
+    "principle-explain-the-number",
+    "principle-fix-root-causes",
+    "principle-foundational-thinking",
+    "principle-guard-the-context-window",
+    "principle-laziness-protocol",
+    "principle-make-operations-idempotent",
+    "principle-migrate-callers-then-delete-legacy-apis",
+    "principle-minimize-reader-load",
+    "principle-model-the-domain",
+    "principle-never-block-on-the-human",
+    "principle-outcome-oriented-execution",
+    "principle-prove-it-works",
+    "principle-redesign-from-first-principles",
+    "principle-separate-before-serializing-shared-state",
+    "principle-sequence-verifiable-units",
+    "principle-subtract-before-you-add",
+    "principle-test-behavior-not-implementation",
+    "principle-type-system-discipline",
+    "recall",
+    "reflect",
+    "setup-pstack",
+    "show-me-your-work",
+    "swarm",
+    "tdd",
+    "teach",
+    "technical-writing",
+    "typescript-best-practices",
+    "unslop",
+    "why"
+  ],
+  "excludedSkills": [
+    "automations/benny/skills/reproduce-and-fix-issues/REFERENCE.md",
+    "automations/benny/skills/setup-benny/REFERENCE.md",
+    "automations/benny/skills/triage-issue-reports/REFERENCE.md"
+  ],
+  "checks": [
+    {
+      "name": "Local exact installed source",
+      "ok": true
+    },
+    {
+      "name": "Local actual discovery",
+      "ok": true
+    },
+    {
+      "name": "Web actual executor roots",
+      "ok": true
+    },
+    {
+      "name": "Web cloud matches executor names",
+      "ok": true
+    },
+    {
+      "name": "Web filesystem roots",
+      "ok": true
+    },
+    {
+      "name": "Benny references only",
+      "ok": true
+    },
+    {
+      "name": "Complete actual checksum output",
+      "ok": true
+    },
+    {
+      "name": "Observed checksum exit and stderr",
+      "ok": true
+    },
+    {
+      "name": "Expected list identity",
+      "ok": true
+    },
+    {
+      "name": "Guarded private release identity",
+      "ok": true
+    },
+    {
+      "name": "Actual complete source read skills/poteto-mode/scripts/watch-pr/policy.ts",
+      "ok": true
+    },
+    {
+      "name": "Actual complete source read skills/poteto-mode/SKILL.md",
+      "ok": true
+    },
+    {
+      "name": "Actual manifest read plugin.json",
+      "ok": true
+    },
+    {
+      "name": "Actual manifest read .codex-plugin/plugin.json",
+      "ok": true
+    },
+    {
+      "name": "Stored archive exact nonmanifest source",
+      "ok": true
+    }
+  ],
+  "local": {
+    "installedCopy": "/Users/digital-hawk/Herd/pstack-provenance-20261018/015/runtime/plugins/cache/pstack-provenance-015/pstack-openai/0.1.5",
+    "pluginId": "pstack-openai@pstack-provenance-015",
+    "version": "0.1.5",
+    "pluginReadResponseSha256": "6af67ad11c28aa2a0f99e0ccaadb679f3f43296cc430f4edb52715a6277ea175",
+    "skillsListResponseSha256": "a879eb14a98178a1f8b2d0fa098c579fcee8e11c4ddf508acacae83034db9979",
+    "registeredSkills": [
+      {
+        "name": "pstack-openai:Make Bot UI",
+        "relativePath": "skills/make-bot-ui/SKILL.md",
+        "enabled": true
+      },
+      {
+        "name": "pstack-openai:Poteto Mode",
+        "relativePath": "skills/poteto-mode/SKILL.md",
+        "enabled": true
+      },
+      {
+        "name": "pstack-openai:architect",
+        "relativePath": "skills/architect/SKILL.md",
+        "enabled": true
+      },
+      {
+        "name": "pstack-openai:arena",
+        "relativePath": "skills/arena/SKILL.md",
+        "enabled": true
+      },
+      {
+        "name": "pstack-openai:automate-me",
+        "relativePath": "skills/automate-me/SKILL.md",
+        "enabled": true
+      },
+      {
+        "name": "pstack-openai:benchmark-checklist",
+        "relativePath": "skills/benchmark-checklist/SKILL.md",
+        "enabled": true
+      },
+      {
+        "name": "pstack-openai:blast-radius",
+        "relativePath": "skills/blast-radius/SKILL.md",
+        "enabled": true
+      },
+      {
+        "name": "pstack-openai:bro",
+        "relativePath": "skills/bro/SKILL.md",
+        "enabled": true
+      },
+      {
+        "name": "pstack-openai:correct",
+        "relativePath": "skills/correct/SKILL.md",
+        "enabled": true
+      },
+      {
+        "name": "pstack-openai:create-verification-skill",
+        "relativePath": "skills/create-verification-skill/SKILL.md",
+        "enabled": true
+      },
+      {
+        "name": "pstack-openai:figure-it-out",
+        "relativePath": "skills/figure-it-out/SKILL.md",
+        "enabled": true
+      },
+      {
+        "name": "pstack-openai:how",
+        "relativePath": "skills/how/SKILL.md",
+        "enabled": true
+      },
+      {
+        "name": "pstack-openai:interrogate",
+        "relativePath": "skills/interrogate/SKILL.md",
+        "enabled": true
+      },
+      {
+        "name": "pstack-openai:maintain-verification-skill",
+        "relativePath": "skills/maintain-verification-skill/SKILL.md",
+        "enabled": true
+      },
+      {
+        "name": "pstack-openai:no-comments",
+        "relativePath": "skills/no-comments/SKILL.md",
+        "enabled": true
+      },
+      {
+        "name": "pstack-openai:poteto-help",
+        "relativePath": "skills/poteto-help/SKILL.md",
+        "enabled": true
+      },
+      {
+        "name": "pstack-openai:principle-attack-the-premise",
+        "relativePath": "skills/principle-attack-the-premise/SKILL.md",
+        "enabled": true
+      },
+      {
+        "name": "pstack-openai:principle-boundary-discipline",
+        "relativePath": "skills/principle-boundary-discipline/SKILL.md",
+        "enabled": true
+      },
+      {
+        "name": "pstack-openai:principle-build-the-lever",
+        "relativePath": "skills/principle-build-the-lever/SKILL.md",
+        "enabled": true
+      },
+      {
+        "name": "pstack-openai:principle-encode-lessons-in-structure",
+        "relativePath": "skills/principle-encode-lessons-in-structure/SKILL.md",
+        "enabled": true
+      },
+      {
+        "name": "pstack-openai:principle-exhaust-the-design-space",
+        "relativePath": "skills/principle-exhaust-the-design-space/SKILL.md",
+        "enabled": true
+      },
+      {
+        "name": "pstack-openai:principle-experience-first",
+        "relativePath": "skills/principle-experience-first/SKILL.md",
+        "enabled": true
+      },
+      {
+        "name": "pstack-openai:principle-explain-the-number",
+        "relativePath": "skills/principle-explain-the-number/SKILL.md",
+        "enabled": true
+      },
+      {
+        "name": "pstack-openai:principle-fix-root-causes",
+        "relativePath": "skills/principle-fix-root-causes/SKILL.md",
+        "enabled": true
+      },
+      {
+        "name": "pstack-openai:principle-foundational-thinking",
+        "relativePath": "skills/principle-foundational-thinking/SKILL.md",
+        "enabled": true
+      },
+      {
+        "name": "pstack-openai:principle-guard-the-context-window",
+        "relativePath": "skills/principle-guard-the-context-window/SKILL.md",
+        "enabled": true
+      },
+      {
+        "name": "pstack-openai:principle-laziness-protocol",
+        "relativePath": "skills/principle-laziness-protocol/SKILL.md",
+        "enabled": true
+      },
+      {
+        "name": "pstack-openai:principle-make-operations-idempotent",
+        "relativePath": "skills/principle-make-operations-idempotent/SKILL.md",
+        "enabled": true
+      },
+      {
+        "name": "pstack-openai:principle-migrate-callers-then-delete-legacy-apis",
+        "relativePath": "skills/principle-migrate-callers-then-delete-legacy-apis/SKILL.md",
+        "enabled": true
+      },
+      {
+        "name": "pstack-openai:principle-minimize-reader-load",
+        "relativePath": "skills/principle-minimize-reader-load/SKILL.md",
+        "enabled": true
+      },
+      {
+        "name": "pstack-openai:principle-model-the-domain",
+        "relativePath": "skills/principle-model-the-domain/SKILL.md",
+        "enabled": true
+      },
+      {
+        "name": "pstack-openai:principle-never-block-on-the-human",
+        "relativePath": "skills/principle-never-block-on-the-human/SKILL.md",
+        "enabled": true
+      },
+      {
+        "name": "pstack-openai:principle-outcome-oriented-execution",
+        "relativePath": "skills/principle-outcome-oriented-execution/SKILL.md",
+        "enabled": true
+      },
+      {
+        "name": "pstack-openai:principle-prove-it-works",
+        "relativePath": "skills/principle-prove-it-works/SKILL.md",
+        "enabled": true
+      },
+      {
+        "name": "pstack-openai:principle-redesign-from-first-principles",
+        "relativePath": "skills/principle-redesign-from-first-principles/SKILL.md",
+        "enabled": true
+      },
+      {
+        "name": "pstack-openai:principle-separate-before-serializing-shared-state",
+        "relativePath": "skills/principle-separate-before-serializing-shared-state/SKILL.md",
+        "enabled": true
+      },
+      {
+        "name": "pstack-openai:principle-sequence-verifiable-units",
+        "relativePath": "skills/principle-sequence-verifiable-units/SKILL.md",
+        "enabled": true
+      },
+      {
+        "name": "pstack-openai:principle-subtract-before-you-add",
+        "relativePath": "skills/principle-subtract-before-you-add/SKILL.md",
+        "enabled": true
+      },
+      {
+        "name": "pstack-openai:principle-test-behavior-not-implementation",
+        "relativePath": "skills/principle-test-behavior-not-implementation/SKILL.md",
+        "enabled": true
+      },
+      {
+        "name": "pstack-openai:principle-type-system-discipline",
+        "relativePath": "skills/principle-type-system-discipline/SKILL.md",
+        "enabled": true
+      },
+      {
+        "name": "pstack-openai:recall",
+        "relativePath": "skills/recall/SKILL.md",
+        "enabled": true
+      },
+      {
+        "name": "pstack-openai:reflect",
+        "relativePath": "skills/reflect/SKILL.md",
+        "enabled": true
+      },
+      {
+        "name": "pstack-openai:setup-pstack",
+        "relativePath": "skills/setup-pstack/SKILL.md",
+        "enabled": true
+      },
+      {
+        "name": "pstack-openai:show-me-your-work",
+        "relativePath": "skills/show-me-your-work/SKILL.md",
+        "enabled": true
+      },
+      {
+        "name": "pstack-openai:swarm",
+        "relativePath": "skills/swarm/SKILL.md",
+        "enabled": true
+      },
+      {
+        "name": "pstack-openai:tdd",
+        "relativePath": "skills/tdd/SKILL.md",
+        "enabled": true
+      },
+      {
+        "name": "pstack-openai:teach",
+        "relativePath": "skills/teach/SKILL.md",
+        "enabled": true
+      },
+      {
+        "name": "pstack-openai:technical-writing",
+        "relativePath": "skills/technical-writing/SKILL.md",
+        "enabled": true
+      },
+      {
+        "name": "pstack-openai:typescript-best-practices",
+        "relativePath": "skills/typescript-best-practices/SKILL.md",
+        "enabled": true
+      },
+      {
+        "name": "pstack-openai:unslop",
+        "relativePath": "skills/unslop/SKILL.md",
+        "enabled": true
+      },
+      {
+        "name": "pstack-openai:why",
+        "relativePath": "skills/why/SKILL.md",
+        "enabled": true
+      }
+    ],
+    "installedByteCheck": {
+      "checked": 1514,
+      "mismatches": []
+    },
+    "cleanup": {
+      "pid": 68672,
+      "exitCode": 0
+    },
+    "sourceReceiptSha256": "22154d42fb37a817f0890a982029de4bdbe660ad3d590e5068d5781d64bbeaae"
+  },
+  "web": {
+    "pluginId": "plugins_6ad1c78a493c819197a589eb7a55361b",
+    "releaseId": "pluginrel_6ad471bc2de88191843f08a862a05a80",
+    "version": "0.1.5",
+    "scope": "USER",
+    "discoverability": "PRIVATE",
+    "installedCopy": "/root/.codex/plugins/cache/created-by-me-remote/pstack-openai/0.1.5",
+    "executorRegistry": [
+      {
+        "authority": {
+          "kind": "executor",
+          "id": "pstack-openai@created-by-me-remote"
+        },
+        "name": "pstack-openai:Make Bot UI",
+        "main_resource": "skill://pstack-openai@created-by-me-remote/root/.codex/plugins/cache/created-by-me-remote/pstack-openai/0.1.5/skills/make-bot-ui/SKILL.md"
+      },
+      {
+        "authority": {
+          "kind": "executor",
+          "id": "pstack-openai@created-by-me-remote"
+        },
+        "name": "pstack-openai:Poteto Mode",
+        "main_resource": "skill://pstack-openai@created-by-me-remote/root/.codex/plugins/cache/created-by-me-remote/pstack-openai/0.1.5/skills/poteto-mode/SKILL.md"
+      },
+      {
+        "authority": {
+          "kind": "executor",
+          "id": "pstack-openai@created-by-me-remote"
+        },
+        "name": "pstack-openai:architect",
+        "main_resource": "skill://pstack-openai@created-by-me-remote/root/.codex/plugins/cache/created-by-me-remote/pstack-openai/0.1.5/skills/architect/SKILL.md"
+      },
+      {
+        "authority": {
+          "kind": "executor",
+          "id": "pstack-openai@created-by-me-remote"
+        },
+        "name": "pstack-openai:arena",
+        "main_resource": "skill://pstack-openai@created-by-me-remote/root/.codex/plugins/cache/created-by-me-remote/pstack-openai/0.1.5/skills/arena/SKILL.md"
+      },
+      {
+        "authority": {
+          "kind": "executor",
+          "id": "pstack-openai@created-by-me-remote"
+        },
+        "name": "pstack-openai:automate-me",
+        "main_resource": "skill://pstack-openai@created-by-me-remote/root/.codex/plugins/cache/created-by-me-remote/pstack-openai/0.1.5/skills/automate-me/SKILL.md"
+      },
+      {
+        "authority": {
+          "kind": "executor",
+          "id": "pstack-openai@created-by-me-remote"
+        },
+        "name": "pstack-openai:benchmark-checklist",
+        "main_resource": "skill://pstack-openai@created-by-me-remote/root/.codex/plugins/cache/created-by-me-remote/pstack-openai/0.1.5/skills/benchmark-checklist/SKILL.md"
+      },
+      {
+        "authority": {
+          "kind": "executor",
+          "id": "pstack-openai@created-by-me-remote"
+        },
+        "name": "pstack-openai:blast-radius",
+        "main_resource": "skill://pstack-openai@created-by-me-remote/root/.codex/plugins/cache/created-by-me-remote/pstack-openai/0.1.5/skills/blast-radius/SKILL.md"
+      },
+      {
+        "authority": {
+          "kind": "executor",
+          "id": "pstack-openai@created-by-me-remote"
+        },
+        "name": "pstack-openai:bro",
+        "main_resource": "skill://pstack-openai@created-by-me-remote/root/.codex/plugins/cache/created-by-me-remote/pstack-openai/0.1.5/skills/bro/SKILL.md"
+      },
+      {
+        "authority": {
+          "kind": "executor",
+          "id": "pstack-openai@created-by-me-remote"
+        },
+        "name": "pstack-openai:correct",
+        "main_resource": "skill://pstack-openai@created-by-me-remote/root/.codex/plugins/cache/created-by-me-remote/pstack-openai/0.1.5/skills/correct/SKILL.md"
+      },
+      {
+        "authority": {
+          "kind": "executor",
+          "id": "pstack-openai@created-by-me-remote"
+        },
+        "name": "pstack-openai:create-verification-skill",
+        "main_resource": "skill://pstack-openai@created-by-me-remote/root/.codex/plugins/cache/created-by-me-remote/pstack-openai/0.1.5/skills/create-verification-skill/SKILL.md"
+      },
+      {
+        "authority": {
+          "kind": "executor",
+          "id": "pstack-openai@created-by-me-remote"
+        },
+        "name": "pstack-openai:figure-it-out",
+        "main_resource": "skill://pstack-openai@created-by-me-remote/root/.codex/plugins/cache/created-by-me-remote/pstack-openai/0.1.5/skills/figure-it-out/SKILL.md"
+      },
+      {
+        "authority": {
+          "kind": "executor",
+          "id": "pstack-openai@created-by-me-remote"
+        },
+        "name": "pstack-openai:how",
+        "main_resource": "skill://pstack-openai@created-by-me-remote/root/.codex/plugins/cache/created-by-me-remote/pstack-openai/0.1.5/skills/how/SKILL.md"
+      },
+      {
+        "authority": {
+          "kind": "executor",
+          "id": "pstack-openai@created-by-me-remote"
+        },
+        "name": "pstack-openai:interrogate",
+        "main_resource": "skill://pstack-openai@created-by-me-remote/root/.codex/plugins/cache/created-by-me-remote/pstack-openai/0.1.5/skills/interrogate/SKILL.md"
+      },
+      {
+        "authority": {
+          "kind": "executor",
+          "id": "pstack-openai@created-by-me-remote"
+        },
+        "name": "pstack-openai:maintain-verification-skill",
+        "main_resource": "skill://pstack-openai@created-by-me-remote/root/.codex/plugins/cache/created-by-me-remote/pstack-openai/0.1.5/skills/maintain-verification-skill/SKILL.md"
+      },
+      {
+        "authority": {
+          "kind": "executor",
+          "id": "pstack-openai@created-by-me-remote"
+        },
+        "name": "pstack-openai:no-comments",
+        "main_resource": "skill://pstack-openai@created-by-me-remote/root/.codex/plugins/cache/created-by-me-remote/pstack-openai/0.1.5/skills/no-comments/SKILL.md"
+      },
+      {
+        "authority": {
+          "kind": "executor",
+          "id": "pstack-openai@created-by-me-remote"
+        },
+        "name": "pstack-openai:poteto-help",
+        "main_resource": "skill://pstack-openai@created-by-me-remote/root/.codex/plugins/cache/created-by-me-remote/pstack-openai/0.1.5/skills/poteto-help/SKILL.md"
+      },
+      {
+        "authority": {
+          "kind": "executor",
+          "id": "pstack-openai@created-by-me-remote"
+        },
+        "name": "pstack-openai:principle-attack-the-premise",
+        "main_resource": "skill://pstack-openai@created-by-me-remote/root/.codex/plugins/cache/created-by-me-remote/pstack-openai/0.1.5/skills/principle-attack-the-premise/SKILL.md"
+      },
+      {
+        "authority": {
+          "kind": "executor",
+          "id": "pstack-openai@created-by-me-remote"
+        },
+        "name": "pstack-openai:principle-boundary-discipline",
+        "main_resource": "skill://pstack-openai@created-by-me-remote/root/.codex/plugins/cache/created-by-me-remote/pstack-openai/0.1.5/skills/principle-boundary-discipline/SKILL.md"
+      },
+      {
+        "authority": {
+          "kind": "executor",
+          "id": "pstack-openai@created-by-me-remote"
+        },
+        "name": "pstack-openai:principle-build-the-lever",
+        "main_resource": "skill://pstack-openai@created-by-me-remote/root/.codex/plugins/cache/created-by-me-remote/pstack-openai/0.1.5/skills/principle-build-the-lever/SKILL.md"
+      },
+      {
+        "authority": {
+          "kind": "executor",
+          "id": "pstack-openai@created-by-me-remote"
+        },
+        "name": "pstack-openai:principle-encode-lessons-in-structure",
+        "main_resource": "skill://pstack-openai@created-by-me-remote/root/.codex/plugins/cache/created-by-me-remote/pstack-openai/0.1.5/skills/principle-encode-lessons-in-structure/SKILL.md"
+      },
+      {
+        "authority": {
+          "kind": "executor",
+          "id": "pstack-openai@created-by-me-remote"
+        },
+        "name": "pstack-openai:principle-exhaust-the-design-space",
+        "main_resource": "skill://pstack-openai@created-by-me-remote/root/.codex/plugins/cache/created-by-me-remote/pstack-openai/0.1.5/skills/principle-exhaust-the-design-space/SKILL.md"
+      },
+      {
+        "authority": {
+          "kind": "executor",
+          "id": "pstack-openai@created-by-me-remote"
+        },
+        "name": "pstack-openai:principle-experience-first",
+        "main_resource": "skill://pstack-openai@created-by-me-remote/root/.codex/plugins/cache/created-by-me-remote/pstack-openai/0.1.5/skills/principle-experience-first/SKILL.md"
+      },
+      {
+        "authority": {
+          "kind": "executor",
+          "id": "pstack-openai@created-by-me-remote"
+        },
+        "name": "pstack-openai:principle-explain-the-number",
+        "main_resource": "skill://pstack-openai@created-by-me-remote/root/.codex/plugins/cache/created-by-me-remote/pstack-openai/0.1.5/skills/principle-explain-the-number/SKILL.md"
+      },
+      {
+        "authority": {
+          "kind": "executor",
+          "id": "pstack-openai@created-by-me-remote"
+        },
+        "name": "pstack-openai:principle-fix-root-causes",
+        "main_resource": "skill://pstack-openai@created-by-me-remote/root/.codex/plugins/cache/created-by-me-remote/pstack-openai/0.1.5/skills/principle-fix-root-causes/SKILL.md"
+      },
+      {
+        "authority": {
+          "kind": "executor",
+          "id": "pstack-openai@created-by-me-remote"
+        },
+        "name": "pstack-openai:principle-foundational-thinking",
+        "main_resource": "skill://pstack-openai@created-by-me-remote/root/.codex/plugins/cache/created-by-me-remote/pstack-openai/0.1.5/skills/principle-foundational-thinking/SKILL.md"
+      },
+      {
+        "authority": {
+          "kind": "executor",
+          "id": "pstack-openai@created-by-me-remote"
+        },
+        "name": "pstack-openai:principle-guard-the-context-window",
+        "main_resource": "skill://pstack-openai@created-by-me-remote/root/.codex/plugins/cache/created-by-me-remote/pstack-openai/0.1.5/skills/principle-guard-the-context-window/SKILL.md"
+      },
+      {
+        "authority": {
+          "kind": "executor",
+          "id": "pstack-openai@created-by-me-remote"
+        },
+        "name": "pstack-openai:principle-laziness-protocol",
+        "main_resource": "skill://pstack-openai@created-by-me-remote/root/.codex/plugins/cache/created-by-me-remote/pstack-openai/0.1.5/skills/principle-laziness-protocol/SKILL.md"
+      },
+      {
+        "authority": {
+          "kind": "executor",
+          "id": "pstack-openai@created-by-me-remote"
+        },
+        "name": "pstack-openai:principle-make-operations-idempotent",
+        "main_resource": "skill://pstack-openai@created-by-me-remote/root/.codex/plugins/cache/created-by-me-remote/pstack-openai/0.1.5/skills/principle-make-operations-idempotent/SKILL.md"
+      },
+      {
+        "authority": {
+          "kind": "executor",
+          "id": "pstack-openai@created-by-me-remote"
+        },
+        "name": "pstack-openai:principle-migrate-callers-then-delete-legacy-apis",
+        "main_resource": "skill://pstack-openai@created-by-me-remote/root/.codex/plugins/cache/created-by-me-remote/pstack-openai/0.1.5/skills/principle-migrate-callers-then-delete-legacy-apis/SKILL.md"
+      },
+      {
+        "authority": {
+          "kind": "executor",
+          "id": "pstack-openai@created-by-me-remote"
+        },
+        "name": "pstack-openai:principle-minimize-reader-load",
+        "main_resource": "skill://pstack-openai@created-by-me-remote/root/.codex/plugins/cache/created-by-me-remote/pstack-openai/0.1.5/skills/principle-minimize-reader-load/SKILL.md"
+      },
+      {
+        "authority": {
+          "kind": "executor",
+          "id": "pstack-openai@created-by-me-remote"
+        },
+        "name": "pstack-openai:principle-model-the-domain",
+        "main_resource": "skill://pstack-openai@created-by-me-remote/root/.codex/plugins/cache/created-by-me-remote/pstack-openai/0.1.5/skills/principle-model-the-domain/SKILL.md"
+      },
+      {
+        "authority": {
+          "kind": "executor",
+          "id": "pstack-openai@created-by-me-remote"
+        },
+        "name": "pstack-openai:principle-never-block-on-the-human",
+        "main_resource": "skill://pstack-openai@created-by-me-remote/root/.codex/plugins/cache/created-by-me-remote/pstack-openai/0.1.5/skills/principle-never-block-on-the-human/SKILL.md"
+      },
+      {
+        "authority": {
+          "kind": "executor",
+          "id": "pstack-openai@created-by-me-remote"
+        },
+        "name": "pstack-openai:principle-outcome-oriented-execution",
+        "main_resource": "skill://pstack-openai@created-by-me-remote/root/.codex/plugins/cache/created-by-me-remote/pstack-openai/0.1.5/skills/principle-outcome-oriented-execution/SKILL.md"
+      },
+      {
+        "authority": {
+          "kind": "executor",
+          "id": "pstack-openai@created-by-me-remote"
+        },
+        "name": "pstack-openai:principle-prove-it-works",
+        "main_resource": "skill://pstack-openai@created-by-me-remote/root/.codex/plugins/cache/created-by-me-remote/pstack-openai/0.1.5/skills/principle-prove-it-works/SKILL.md"
+      },
+      {
+        "authority": {
+          "kind": "executor",
+          "id": "pstack-openai@created-by-me-remote"
+        },
+        "name": "pstack-openai:principle-redesign-from-first-principles",
+        "main_resource": "skill://pstack-openai@created-by-me-remote/root/.codex/plugins/cache/created-by-me-remote/pstack-openai/0.1.5/skills/principle-redesign-from-first-principles/SKILL.md"
+      },
+      {
+        "authority": {
+          "kind": "executor",
+          "id": "pstack-openai@created-by-me-remote"
+        },
+        "name": "pstack-openai:principle-separate-before-serializing-shared-state",
+        "main_resource": "skill://pstack-openai@created-by-me-remote/root/.codex/plugins/cache/created-by-me-remote/pstack-openai/0.1.5/skills/principle-separate-before-serializing-shared-state/SKILL.md"
+      },
+      {
+        "authority": {
+          "kind": "executor",
+          "id": "pstack-openai@created-by-me-remote"
+        },
+        "name": "pstack-openai:principle-sequence-verifiable-units",
+        "main_resource": "skill://pstack-openai@created-by-me-remote/root/.codex/plugins/cache/created-by-me-remote/pstack-openai/0.1.5/skills/principle-sequence-verifiable-units/SKILL.md"
+      },
+      {
+        "authority": {
+          "kind": "executor",
+          "id": "pstack-openai@created-by-me-remote"
+        },
+        "name": "pstack-openai:principle-subtract-before-you-add",
+        "main_resource": "skill://pstack-openai@created-by-me-remote/root/.codex/plugins/cache/created-by-me-remote/pstack-openai/0.1.5/skills/principle-subtract-before-you-add/SKILL.md"
+      },
+      {
+        "authority": {
+          "kind": "executor",
+          "id": "pstack-openai@created-by-me-remote"
+        },
+        "name": "pstack-openai:principle-test-behavior-not-implementation",
+        "main_resource": "skill://pstack-openai@created-by-me-remote/root/.codex/plugins/cache/created-by-me-remote/pstack-openai/0.1.5/skills/principle-test-behavior-not-implementation/SKILL.md"
+      },
+      {
+        "authority": {
+          "kind": "executor",
+          "id": "pstack-openai@created-by-me-remote"
+        },
+        "name": "pstack-openai:principle-type-system-discipline",
+        "main_resource": "skill://pstack-openai@created-by-me-remote/root/.codex/plugins/cache/created-by-me-remote/pstack-openai/0.1.5/skills/principle-type-system-discipline/SKILL.md"
+      },
+      {
+        "authority": {
+          "kind": "executor",
+          "id": "pstack-openai@created-by-me-remote"
+        },
+        "name": "pstack-openai:recall",
+        "main_resource": "skill://pstack-openai@created-by-me-remote/root/.codex/plugins/cache/created-by-me-remote/pstack-openai/0.1.5/skills/recall/SKILL.md"
+      },
+      {
+        "authority": {
+          "kind": "executor",
+          "id": "pstack-openai@created-by-me-remote"
+        },
+        "name": "pstack-openai:reflect",
+        "main_resource": "skill://pstack-openai@created-by-me-remote/root/.codex/plugins/cache/created-by-me-remote/pstack-openai/0.1.5/skills/reflect/SKILL.md"
+      },
+      {
+        "authority": {
+          "kind": "executor",
+          "id": "pstack-openai@created-by-me-remote"
+        },
+        "name": "pstack-openai:setup-pstack",
+        "main_resource": "skill://pstack-openai@created-by-me-remote/root/.codex/plugins/cache/created-by-me-remote/pstack-openai/0.1.5/skills/setup-pstack/SKILL.md"
+      },
+      {
+        "authority": {
+          "kind": "executor",
+          "id": "pstack-openai@created-by-me-remote"
+        },
+        "name": "pstack-openai:show-me-your-work",
+        "main_resource": "skill://pstack-openai@created-by-me-remote/root/.codex/plugins/cache/created-by-me-remote/pstack-openai/0.1.5/skills/show-me-your-work/SKILL.md"
+      },
+      {
+        "authority": {
+          "kind": "executor",
+          "id": "pstack-openai@created-by-me-remote"
+        },
+        "name": "pstack-openai:swarm",
+        "main_resource": "skill://pstack-openai@created-by-me-remote/root/.codex/plugins/cache/created-by-me-remote/pstack-openai/0.1.5/skills/swarm/SKILL.md"
+      },
+      {
+        "authority": {
+          "kind": "executor",
+          "id": "pstack-openai@created-by-me-remote"
+        },
+        "name": "pstack-openai:tdd",
+        "main_resource": "skill://pstack-openai@created-by-me-remote/root/.codex/plugins/cache/created-by-me-remote/pstack-openai/0.1.5/skills/tdd/SKILL.md"
+      },
+      {
+        "authority": {
+          "kind": "executor",
+          "id": "pstack-openai@created-by-me-remote"
+        },
+        "name": "pstack-openai:teach",
+        "main_resource": "skill://pstack-openai@created-by-me-remote/root/.codex/plugins/cache/created-by-me-remote/pstack-openai/0.1.5/skills/teach/SKILL.md"
+      },
+      {
+        "authority": {
+          "kind": "executor",
+          "id": "pstack-openai@created-by-me-remote"
+        },
+        "name": "pstack-openai:technical-writing",
+        "main_resource": "skill://pstack-openai@created-by-me-remote/root/.codex/plugins/cache/created-by-me-remote/pstack-openai/0.1.5/skills/technical-writing/SKILL.md"
+      },
+      {
+        "authority": {
+          "kind": "executor",
+          "id": "pstack-openai@created-by-me-remote"
+        },
+        "name": "pstack-openai:typescript-best-practices",
+        "main_resource": "skill://pstack-openai@created-by-me-remote/root/.codex/plugins/cache/created-by-me-remote/pstack-openai/0.1.5/skills/typescript-best-practices/SKILL.md"
+      },
+      {
+        "authority": {
+          "kind": "executor",
+          "id": "pstack-openai@created-by-me-remote"
+        },
+        "name": "pstack-openai:unslop",
+        "main_resource": "skill://pstack-openai@created-by-me-remote/root/.codex/plugins/cache/created-by-me-remote/pstack-openai/0.1.5/skills/unslop/SKILL.md"
+      },
+      {
+        "authority": {
+          "kind": "executor",
+          "id": "pstack-openai@created-by-me-remote"
+        },
+        "name": "pstack-openai:why",
+        "main_resource": "skill://pstack-openai@created-by-me-remote/root/.codex/plugins/cache/created-by-me-remote/pstack-openai/0.1.5/skills/why/SKILL.md"
+      }
+    ],
+    "cloudRegistry": [
+      {
+        "authority": {
+          "kind": "cloud"
+        },
+        "name": "pstack-openai:Make Bot UI",
+        "main_resource": "skill://plugins_6ad1c78a493c819197a589eb7a55361b/Make%20Bot%20UI/SKILL.md"
+      },
+      {
+        "authority": {
+          "kind": "cloud"
+        },
+        "name": "pstack-openai:Poteto Mode",
+        "main_resource": "skill://plugins_6ad1c78a493c819197a589eb7a55361b/Poteto%20Mode/SKILL.md"
+      },
+      {
+        "authority": {
+          "kind": "cloud"
+        },
+        "name": "pstack-openai:architect",
+        "main_resource": "skill://plugins_6ad1c78a493c819197a589eb7a55361b/architect/SKILL.md"
+      },
+      {
+        "authority": {
+          "kind": "cloud"
+        },
+        "name": "pstack-openai:arena",
+        "main_resource": "skill://plugins_6ad1c78a493c819197a589eb7a55361b/arena/SKILL.md"
+      },
+      {
+        "authority": {
+          "kind": "cloud"
+        },
+        "name": "pstack-openai:automate-me",
+        "main_resource": "skill://plugins_6ad1c78a493c819197a589eb7a55361b/automate-me/SKILL.md"
+      },
+      {
+        "authority": {
+          "kind": "cloud"
+        },
+        "name": "pstack-openai:benchmark-checklist",
+        "main_resource": "skill://plugins_6ad1c78a493c819197a589eb7a55361b/benchmark-checklist/SKILL.md"
+      },
+      {
+        "authority": {
+          "kind": "cloud"
+        },
+        "name": "pstack-openai:blast-radius",
+        "main_resource": "skill://plugins_6ad1c78a493c819197a589eb7a55361b/blast-radius/SKILL.md"
+      },
+      {
+        "authority": {
+          "kind": "cloud"
+        },
+        "name": "pstack-openai:bro",
+        "main_resource": "skill://plugins_6ad1c78a493c819197a589eb7a55361b/bro/SKILL.md"
+      },
+      {
+        "authority": {
+          "kind": "cloud"
+        },
+        "name": "pstack-openai:correct",
+        "main_resource": "skill://plugins_6ad1c78a493c819197a589eb7a55361b/correct/SKILL.md"
+      },
+      {
+        "authority": {
+          "kind": "cloud"
+        },
+        "name": "pstack-openai:create-verification-skill",
+        "main_resource": "skill://plugins_6ad1c78a493c819197a589eb7a55361b/create-verification-skill/SKILL.md"
+      },
+      {
+        "authority": {
+          "kind": "cloud"
+        },
+        "name": "pstack-openai:figure-it-out",
+        "main_resource": "skill://plugins_6ad1c78a493c819197a589eb7a55361b/figure-it-out/SKILL.md"
+      },
+      {
+        "authority": {
+          "kind": "cloud"
+        },
+        "name": "pstack-openai:how",
+        "main_resource": "skill://plugins_6ad1c78a493c819197a589eb7a55361b/how/SKILL.md"
+      },
+      {
+        "authority": {
+          "kind": "cloud"
+        },
+        "name": "pstack-openai:interrogate",
+        "main_resource": "skill://plugins_6ad1c78a493c819197a589eb7a55361b/interrogate/SKILL.md"
+      },
+      {
+        "authority": {
+          "kind": "cloud"
+        },
+        "name": "pstack-openai:maintain-verification-skill",
+        "main_resource": "skill://plugins_6ad1c78a493c819197a589eb7a55361b/maintain-verification-skill/SKILL.md"
+      },
+      {
+        "authority": {
+          "kind": "cloud"
+        },
+        "name": "pstack-openai:no-comments",
+        "main_resource": "skill://plugins_6ad1c78a493c819197a589eb7a55361b/no-comments/SKILL.md"
+      },
+      {
+        "authority": {
+          "kind": "cloud"
+        },
+        "name": "pstack-openai:poteto-help",
+        "main_resource": "skill://plugins_6ad1c78a493c819197a589eb7a55361b/poteto-help/SKILL.md"
+      },
+      {
+        "authority": {
+          "kind": "cloud"
+        },
+        "name": "pstack-openai:principle-attack-the-premise",
+        "main_resource": "skill://plugins_6ad1c78a493c819197a589eb7a55361b/principle-attack-the-premise/SKILL.md"
+      },
+      {
+        "authority": {
+          "kind": "cloud"
+        },
+        "name": "pstack-openai:principle-boundary-discipline",
+        "main_resource": "skill://plugins_6ad1c78a493c819197a589eb7a55361b/principle-boundary-discipline/SKILL.md"
+      },
+      {
+        "authority": {
+          "kind": "cloud"
+        },
+        "name": "pstack-openai:principle-build-the-lever",
+        "main_resource": "skill://plugins_6ad1c78a493c819197a589eb7a55361b/principle-build-the-lever/SKILL.md"
+      },
+      {
+        "authority": {
+          "kind": "cloud"
+        },
+        "name": "pstack-openai:principle-encode-lessons-in-structure",
+        "main_resource": "skill://plugins_6ad1c78a493c819197a589eb7a55361b/principle-encode-lessons-in-structure/SKILL.md"
+      },
+      {
+        "authority": {
+          "kind": "cloud"
+        },
+        "name": "pstack-openai:principle-exhaust-the-design-space",
+        "main_resource": "skill://plugins_6ad1c78a493c819197a589eb7a55361b/principle-exhaust-the-design-space/SKILL.md"
+      },
+      {
+        "authority": {
+          "kind": "cloud"
+        },
+        "name": "pstack-openai:principle-experience-first",
+        "main_resource": "skill://plugins_6ad1c78a493c819197a589eb7a55361b/principle-experience-first/SKILL.md"
+      },
+      {
+        "authority": {
+          "kind": "cloud"
+        },
+        "name": "pstack-openai:principle-explain-the-number",
+        "main_resource": "skill://plugins_6ad1c78a493c819197a589eb7a55361b/principle-explain-the-number/SKILL.md"
+      },
+      {
+        "authority": {
+          "kind": "cloud"
+        },
+        "name": "pstack-openai:principle-fix-root-causes",
+        "main_resource": "skill://plugins_6ad1c78a493c819197a589eb7a55361b/principle-fix-root-causes/SKILL.md"
+      },
+      {
+        "authority": {
+          "kind": "cloud"
+        },
+        "name": "pstack-openai:principle-foundational-thinking",
+        "main_resource": "skill://plugins_6ad1c78a493c819197a589eb7a55361b/principle-foundational-thinking/SKILL.md"
+      },
+      {
+        "authority": {
+          "kind": "cloud"
+        },
+        "name": "pstack-openai:principle-guard-the-context-window",
+        "main_resource": "skill://plugins_6ad1c78a493c819197a589eb7a55361b/principle-guard-the-context-window/SKILL.md"
+      },
+      {
+        "authority": {
+          "kind": "cloud"
+        },
+        "name": "pstack-openai:principle-laziness-protocol",
+        "main_resource": "skill://plugins_6ad1c78a493c819197a589eb7a55361b/principle-laziness-protocol/SKILL.md"
+      },
+      {
+        "authority": {
+          "kind": "cloud"
+        },
+        "name": "pstack-openai:principle-make-operations-idempotent",
+        "main_resource": "skill://plugins_6ad1c78a493c819197a589eb7a55361b/principle-make-operations-idempotent/SKILL.md"
+      },
+      {
+        "authority": {
+          "kind": "cloud"
+        },
+        "name": "pstack-openai:principle-migrate-callers-then-delete-legacy-apis",
+        "main_resource": "skill://plugins_6ad1c78a493c819197a589eb7a55361b/principle-migrate-callers-then-delete-legacy-apis/SKILL.md"
+      },
+      {
+        "authority": {
+          "kind": "cloud"
+        },
+        "name": "pstack-openai:principle-minimize-reader-load",
+        "main_resource": "skill://plugins_6ad1c78a493c819197a589eb7a55361b/principle-minimize-reader-load/SKILL.md"
+      },
+      {
+        "authority": {
+          "kind": "cloud"
+        },
+        "name": "pstack-openai:principle-model-the-domain",
+        "main_resource": "skill://plugins_6ad1c78a493c819197a589eb7a55361b/principle-model-the-domain/SKILL.md"
+      },
+      {
+        "authority": {
+          "kind": "cloud"
+        },
+        "name": "pstack-openai:principle-never-block-on-the-human",
+        "main_resource": "skill://plugins_6ad1c78a493c819197a589eb7a55361b/principle-never-block-on-the-human/SKILL.md"
+      },
+      {
+        "authority": {
+          "kind": "cloud"
+        },
+        "name": "pstack-openai:principle-outcome-oriented-execution",
+        "main_resource": "skill://plugins_6ad1c78a493c819197a589eb7a55361b/principle-outcome-oriented-execution/SKILL.md"
+      },
+      {
+        "authority": {
+          "kind": "cloud"
+        },
+        "name": "pstack-openai:principle-prove-it-works",
+        "main_resource": "skill://plugins_6ad1c78a493c819197a589eb7a55361b/principle-prove-it-works/SKILL.md"
+      },
+      {
+        "authority": {
+          "kind": "cloud"
+        },
+        "name": "pstack-openai:principle-redesign-from-first-principles",
+        "main_resource": "skill://plugins_6ad1c78a493c819197a589eb7a55361b/principle-redesign-from-first-principles/SKILL.md"
+      },
+      {
+        "authority": {
+          "kind": "cloud"
+        },
+        "name": "pstack-openai:principle-separate-before-serializing-shared-state",
+        "main_resource": "skill://plugins_6ad1c78a493c819197a589eb7a55361b/principle-separate-before-serializing-shared-state/SKILL.md"
+      },
+      {
+        "authority": {
+          "kind": "cloud"
+        },
+        "name": "pstack-openai:principle-sequence-verifiable-units",
+        "main_resource": "skill://plugins_6ad1c78a493c819197a589eb7a55361b/principle-sequence-verifiable-units/SKILL.md"
+      },
+      {
+        "authority": {
+          "kind": "cloud"
+        },
+        "name": "pstack-openai:principle-subtract-before-you-add",
+        "main_resource": "skill://plugins_6ad1c78a493c819197a589eb7a55361b/principle-subtract-before-you-add/SKILL.md"
+      },
+      {
+        "authority": {
+          "kind": "cloud"
+        },
+        "name": "pstack-openai:principle-test-behavior-not-implementation",
+        "main_resource": "skill://plugins_6ad1c78a493c819197a589eb7a55361b/principle-test-behavior-not-implementation/SKILL.md"
+      },
+      {
+        "authority": {
+          "kind": "cloud"
+        },
+        "name": "pstack-openai:principle-type-system-discipline",
+        "main_resource": "skill://plugins_6ad1c78a493c819197a589eb7a55361b/principle-type-system-discipline/SKILL.md"
+      },
+      {
+        "authority": {
+          "kind": "cloud"
+        },
+        "name": "pstack-openai:recall",
+        "main_resource": "skill://plugins_6ad1c78a493c819197a589eb7a55361b/recall/SKILL.md"
+      },
+      {
+        "authority": {
+          "kind": "cloud"
+        },
+        "name": "pstack-openai:reflect",
+        "main_resource": "skill://plugins_6ad1c78a493c819197a589eb7a55361b/reflect/SKILL.md"
+      },
+      {
+        "authority": {
+          "kind": "cloud"
+        },
+        "name": "pstack-openai:setup-pstack",
+        "main_resource": "skill://plugins_6ad1c78a493c819197a589eb7a55361b/setup-pstack/SKILL.md"
+      },
+      {
+        "authority": {
+          "kind": "cloud"
+        },
+        "name": "pstack-openai:show-me-your-work",
+        "main_resource": "skill://plugins_6ad1c78a493c819197a589eb7a55361b/show-me-your-work/SKILL.md"
+      },
+      {
+        "authority": {
+          "kind": "cloud"
+        },
+        "name": "pstack-openai:swarm",
+        "main_resource": "skill://plugins_6ad1c78a493c819197a589eb7a55361b/swarm/SKILL.md"
+      },
+      {
+        "authority": {
+          "kind": "cloud"
+        },
+        "name": "pstack-openai:tdd",
+        "main_resource": "skill://plugins_6ad1c78a493c819197a589eb7a55361b/tdd/SKILL.md"
+      },
+      {
+        "authority": {
+          "kind": "cloud"
+        },
+        "name": "pstack-openai:teach",
+        "main_resource": "skill://plugins_6ad1c78a493c819197a589eb7a55361b/teach/SKILL.md"
+      },
+      {
+        "authority": {
+          "kind": "cloud"
+        },
+        "name": "pstack-openai:technical-writing",
+        "main_resource": "skill://plugins_6ad1c78a493c819197a589eb7a55361b/technical-writing/SKILL.md"
+      },
+      {
+        "authority": {
+          "kind": "cloud"
+        },
+        "name": "pstack-openai:typescript-best-practices",
+        "main_resource": "skill://plugins_6ad1c78a493c819197a589eb7a55361b/typescript-best-practices/SKILL.md"
+      },
+      {
+        "authority": {
+          "kind": "cloud"
+        },
+        "name": "pstack-openai:unslop",
+        "main_resource": "skill://plugins_6ad1c78a493c819197a589eb7a55361b/unslop/SKILL.md"
+      },
+      {
+        "authority": {
+          "kind": "cloud"
+        },
+        "name": "pstack-openai:why",
+        "main_resource": "skill://plugins_6ad1c78a493c819197a589eb7a55361b/why/SKILL.md"
+      }
+    ],
+    "filesystemEntrypoints": {
+      "command": "find installed root -type f -name SKILL.md; find installed root/automations/benny/skills -type f matching REFERENCE.md or SKILL.md",
+      "cwd": "/root/.codex/plugins/cache/created-by-me-remote/pstack-openai/0.1.5",
+      "exitCode": 0,
+      "output": "skills/reflect/SKILL.md\nskills/principle-exhaust-the-design-space/SKILL.md\nskills/principle-type-system-discipline/SKILL.md\nskills/principle-minimize-reader-load/SKILL.md\nskills/principle-migrate-callers-then-delete-legacy-apis/SKILL.md\nskills/interrogate/SKILL.md\nskills/principle-redesign-from-first-principles/SKILL.md\nskills/benchmark-checklist/SKILL.md\nskills/automate-me/SKILL.md\nskills/make-bot-ui/SKILL.md\nskills/principle-test-behavior-not-implementation/SKILL.md\nskills/principle-experience-first/SKILL.md\nskills/unslop/SKILL.md\nskills/create-verification-skill/SKILL.md\nskills/arena/SKILL.md\nskills/how/SKILL.md\nskills/principle-fix-root-causes/SKILL.md\nskills/no-comments/SKILL.md\nskills/typescript-best-practices/SKILL.md\nskills/principle-attack-the-premise/SKILL.md\nskills/principle-separate-before-serializing-shared-state/SKILL.md\nskills/teach/SKILL.md\nskills/principle-sequence-verifiable-units/SKILL.md\nskills/principle-model-the-domain/SKILL.md\nskills/principle-never-block-on-the-human/SKILL.md\nskills/principle-explain-the-number/SKILL.md\nskills/maintain-verification-skill/SKILL.md\nskills/poteto-mode/SKILL.md\nskills/principle-prove-it-works/SKILL.md\nskills/architect/SKILL.md\nskills/setup-pstack/SKILL.md\nskills/why/SKILL.md\nskills/figure-it-out/SKILL.md\nskills/principle-make-operations-idempotent/SKILL.md\nskills/principle-foundational-thinking/SKILL.md\nskills/swarm/SKILL.md\nskills/principle-boundary-discipline/SKILL.md\nskills/principle-outcome-oriented-execution/SKILL.md\nskills/show-me-your-work/SKILL.md\nskills/recall/SKILL.md\nskills/principle-guard-the-context-window/SKILL.md\nskills/bro/SKILL.md\nskills/principle-laziness-protocol/SKILL.md\nskills/poteto-help/SKILL.md\nskills/blast-radius/SKILL.md\nskills/principle-encode-lessons-in-structure/SKILL.md\nskills/tdd/SKILL.md\nskills/technical-writing/SKILL.md\nskills/correct/SKILL.md\nskills/principle-subtract-before-you-add/SKILL.md\nskills/principle-build-the-lever/SKILL.md\nautomations/benny/skills/setup-benny/REFERENCE.md\nautomations/benny/skills/triage-issue-reports/REFERENCE.md\nautomations/benny/skills/reproduce-and-fix-issues/REFERENCE.md\n"
+    },
+    "checksum": {
+      "command": "sha256sum -c /workspace/scratch/2b49dfc4bbdc/shell-discovery/web-files.sha256.txt",
+      "cwd": "/root/.codex/plugins/cache/created-by-me-remote/pstack-openai/0.1.5",
+      "exitCode": 0,
+      "stdoutLines": 1513,
+      "stderrBytes": 0,
+      "checksumFileSha256": "c706dfd102f05d2ffd45b5a7f62c0497d6d64bc50355d118718eaf585ee51f19",
+      "stdoutSha256": "fab4839d57941d65b8c47bbfe8b1a6626b6a2c2e00ec607fbba1c77ac4f2eb4a",
+      "stdout": ".gitignore: OK\nCHANGELOG.md: OK\nLICENSE: OK\nNOTICE.md: OK\nREADME.md: OK\nUPSTREAM.md: OK\nassets/logo.png: OK\nautomations/benny/FOR_AGENTS.md: OK\nautomations/benny/README.md: OK\nautomations/benny/skills/reproduce-and-fix-issues/REFERENCE.md: OK\nautomations/benny/skills/reproduce-and-fix-issues/references/control-adapter.md: OK\nautomations/benny/skills/reproduce-and-fix-issues/references/feature-map.example.md: OK\nautomations/benny/skills/reproduce-and-fix-issues/references/verify-existing-fix.md: OK\nautomations/benny/skills/setup-benny/REFERENCE.md: OK\nautomations/benny/skills/triage-issue-reports/REFERENCE.md: OK\nautomations/benny/skills/triage-issue-reports/references/routing.example.md: OK\nautomations/benny/templates/configuration.example.yaml: OK\nautomations/benny/templates/reproduce-automation-prompt.md: OK\nautomations/benny/templates/triage-automation-prompt.md: OK\ndocs/catalog/schema.json: OK\ndocs/catalog/skills/architect.json: OK\ndocs/catalog/skills/arena.json: OK\ndocs/catalog/skills/automate-me.json: OK\ndocs/catalog/skills/benchmark-checklist.json: OK\ndocs/catalog/skills/blast-radius.json: OK\ndocs/catalog/skills/bro.json: OK\ndocs/catalog/skills/correct.json: OK\ndocs/catalog/skills/create-verification-skill.json: OK\ndocs/catalog/skills/figure-it-out.json: OK\ndocs/catalog/skills/how.json: OK\ndocs/catalog/skills/interrogate.json: OK\ndocs/catalog/skills/maintain-verification-skill.json: OK\ndocs/catalog/skills/make-bot-ui.json: OK\ndocs/catalog/skills/no-comments.json: OK\ndocs/catalog/skills/poteto-help.json: OK\ndocs/catalog/skills/poteto-mode.json: OK\ndocs/catalog/skills/principle-attack-the-premise.json: OK\ndocs/catalog/skills/principle-boundary-discipline.json: OK\ndocs/catalog/skills/principle-build-the-lever.json: OK\ndocs/catalog/skills/principle-encode-lessons-in-structure.json: OK\ndocs/catalog/skills/principle-exhaust-the-design-space.json: OK\ndocs/catalog/skills/principle-experience-first.json: OK\ndocs/catalog/skills/principle-explain-the-number.json: OK\ndocs/catalog/skills/principle-fix-root-causes.json: OK\ndocs/catalog/skills/principle-foundational-thinking.json: OK\ndocs/catalog/skills/principle-guard-the-context-window.json: OK\ndocs/catalog/skills/principle-laziness-protocol.json: OK\ndocs/catalog/skills/principle-make-operations-idempotent.json: OK\ndocs/catalog/skills/principle-migrate-callers-then-delete-legacy-apis.json: OK\ndocs/catalog/skills/principle-minimize-reader-load.json: OK\ndocs/catalog/skills/principle-model-the-domain.json: OK\ndocs/catalog/skills/principle-never-block-on-the-human.json: OK\ndocs/catalog/skills/principle-outcome-oriented-execution.json: OK\ndocs/catalog/skills/principle-prove-it-works.json: OK\ndocs/catalog/skills/principle-redesign-from-first-principles.json: OK\ndocs/catalog/skills/principle-separate-before-serializing-shared-state.json: OK\ndocs/catalog/skills/principle-sequence-verifiable-units.json: OK\ndocs/catalog/skills/principle-subtract-before-you-add.json: OK\ndocs/catalog/skills/principle-test-behavior-not-implementation.json: OK\ndocs/catalog/skills/principle-type-system-discipline.json: OK\ndocs/catalog/skills/recall.json: OK\ndocs/catalog/skills/reflect.json: OK\ndocs/catalog/skills/setup-pstack.json: OK\ndocs/catalog/skills/show-me-your-work.json: OK\ndocs/catalog/skills/swarm.json: OK\ndocs/catalog/skills/tdd.json: OK\ndocs/catalog/skills/teach.json: OK\ndocs/catalog/skills/technical-writing.json: OK\ndocs/catalog/skills/typescript-best-practices.json: OK\ndocs/catalog/skills/unslop.json: OK\ndocs/catalog/skills/why.json: OK\ndocs/compatibility.md: OK\ndocs/guide/01-setup.md: OK\ndocs/guide/02-poteto-mode.md: OK\ndocs/guide/03-understand.md: OK\ndocs/guide/04-design.md: OK\ndocs/guide/05-build-and-clean.md: OK\ndocs/guide/06-verify-and-ship.md: OK\ndocs/guide/07-overnight.md: OK\ndocs/guide/08-principles.md: OK\ndocs/guide/09-make-it-yours.md: OK\ndocs/guide/10-recipes-and-pitfalls.md: OK\ndocs/guide/README.md: OK\ndocs/guide/images/design.jpg: OK\ndocs/guide/images/overnight.jpg: OK\ndocs/guide/images/recipes.jpg: OK\ndocs/guide/images/router.jpg: OK\ndocs/guide/images/understanding.jpg: OK\ndocs/guide/images/verification.jpg: OK\ndocs/maintenance/customization-boundary.md: OK\ndocs/maintenance/rollback.md: OK\ndocs/maintenance/update-resolutions.example.json: OK\ndocs/maintenance/upstream-updates.md: OK\ndocs/maintenance/wiki-publication.md: OK\ndocs/parity/adaptations/02-manifest.json: OK\ndocs/parity/adaptations/05-model-roles.json: OK\ndocs/parity/adaptations/12-bootstrap.json: OK\ndocs/parity/adaptations/13-orch-bookkeeping.json: OK\ndocs/parity/adaptations/14-watch-pr.json: OK\ndocs/parity/adaptations/15-worktree-audit.json: OK\ndocs/parity/adaptations/16-decision-log.json: OK\ndocs/parity/adaptations/17-check-plan.json: OK\ndocs/parity/adaptations/24-metadata.json: OK\ndocs/parity/adaptations/architect.json: OK\ndocs/parity/adaptations/arena.json: OK\ndocs/parity/adaptations/automate-me.json: OK\ndocs/parity/adaptations/benchmark-checklist.json: OK\ndocs/parity/adaptations/benny.json: OK\ndocs/parity/adaptations/blast-radius.json: OK\ndocs/parity/adaptations/bro.json: OK\ndocs/parity/adaptations/correct.json: OK\ndocs/parity/adaptations/create-verification-skill.json: OK\ndocs/parity/adaptations/figure-it-out.json: OK\ndocs/parity/adaptations/guides.json: OK\ndocs/parity/adaptations/how.json: OK\ndocs/parity/adaptations/interrogate.json: OK\ndocs/parity/adaptations/maintain-verification-skill.json: OK\ndocs/parity/adaptations/make-bot-ui.json: OK\ndocs/parity/adaptations/no-comments.json: OK\ndocs/parity/adaptations/playbook-authoring-a-skill.json: OK\ndocs/parity/adaptations/playbook-autonomous-run.json: OK\ndocs/parity/adaptations/playbook-autopilot-full.json: OK\ndocs/parity/adaptations/playbook-autopilot-stack.json: OK\ndocs/parity/adaptations/playbook-babysit.json: OK\ndocs/parity/adaptations/playbook-bug-fix.json: OK\ndocs/parity/adaptations/playbook-eval.json: OK\ndocs/parity/adaptations/playbook-feature.json: OK\ndocs/parity/adaptations/playbook-hillclimb.json: OK\ndocs/parity/adaptations/playbook-investigation.json: OK\ndocs/parity/adaptations/playbook-multi-phase-plan.json: OK\ndocs/parity/adaptations/playbook-opening-a-pr.json: OK\ndocs/parity/adaptations/playbook-orchestrate.json: OK\ndocs/parity/adaptations/playbook-pause-safely.json: OK\ndocs/parity/adaptations/playbook-perf-issue.json: OK\ndocs/parity/adaptations/playbook-prototype.json: OK\ndocs/parity/adaptations/playbook-refactoring.json: OK\ndocs/parity/adaptations/playbook-runtime-forensics.json: OK\ndocs/parity/adaptations/playbook-session-pickup.json: OK\ndocs/parity/adaptations/playbook-shipping.json: OK\ndocs/parity/adaptations/playbook-trace-forensics.json: OK\ndocs/parity/adaptations/playbook-visual-parity.json: OK\ndocs/parity/adaptations/playbook-worktree-cleanup.json: OK\ndocs/parity/adaptations/poteto-help.json: OK\ndocs/parity/adaptations/poteto-mode.json: OK\ndocs/parity/adaptations/principle-attack-the-premise.json: OK\ndocs/parity/adaptations/principle-boundary-discipline.json: OK\ndocs/parity/adaptations/principle-build-the-lever.json: OK\ndocs/parity/adaptations/principle-encode-lessons-in-structure.json: OK\ndocs/parity/adaptations/principle-exhaust-the-design-space.json: OK\ndocs/parity/adaptations/principle-experience-first.json: OK\ndocs/parity/adaptations/principle-explain-the-number.json: OK\ndocs/parity/adaptations/principle-fix-root-causes.json: OK\ndocs/parity/adaptations/principle-foundational-thinking.json: OK\ndocs/parity/adaptations/principle-guard-the-context-window.json: OK\ndocs/parity/adaptations/principle-laziness-protocol.json: OK\ndocs/parity/adaptations/principle-make-operations-idempotent.json: OK\ndocs/parity/adaptations/principle-migrate-callers-then-delete-legacy-apis.json: OK\ndocs/parity/adaptations/principle-minimize-reader-load.json: OK\ndocs/parity/adaptations/principle-model-the-domain.json: OK\ndocs/parity/adaptations/principle-never-block-on-the-human.json: OK\ndocs/parity/adaptations/principle-outcome-oriented-execution.json: OK\ndocs/parity/adaptations/principle-prove-it-works.json: OK\ndocs/parity/adaptations/principle-redesign-from-first-principles.json: OK\ndocs/parity/adaptations/principle-separate-before-serializing-shared-state.json: OK\ndocs/parity/adaptations/principle-sequence-verifiable-units.json: OK\ndocs/parity/adaptations/principle-subtract-before-you-add.json: OK\ndocs/parity/adaptations/principle-test-behavior-not-implementation.json: OK\ndocs/parity/adaptations/principle-type-system-discipline.json: OK\ndocs/parity/adaptations/recall.json: OK\ndocs/parity/adaptations/reflect.json: OK\ndocs/parity/adaptations/setup-pstack.json: OK\ndocs/parity/adaptations/show-me-your-work.json: OK\ndocs/parity/adaptations/swarm.json: OK\ndocs/parity/adaptations/tdd.json: OK\ndocs/parity/adaptations/teach.json: OK\ndocs/parity/adaptations/technical-writing.json: OK\ndocs/parity/adaptations/typescript-best-practices.json: OK\ndocs/parity/adaptations/unslop.json: OK\ndocs/parity/adaptations/why.json: OK\ndocs/parity/baseline-paths.txt: OK\ndocs/parity/baseline-policy.json: OK\ndocs/parity/case-registry.json: OK\ndocs/parity/cases/README.md: OK\ndocs/parity/cases/benny.json: OK\ndocs/parity/cases/contracts.json: OK\ndocs/parity/cases/dependencies.json: OK\ndocs/parity/cases/documentation-walkthroughs.json: OK\ndocs/parity/cases/guides.json: OK\ndocs/parity/cases/model-roles.json: OK\ndocs/parity/cases/package-discovery.json: OK\ndocs/parity/cases/package-support.json: OK\ndocs/parity/cases/playbooks/authoring-a-skill.json: OK\ndocs/parity/cases/playbooks/autonomous-run.json: OK\ndocs/parity/cases/playbooks/autopilot-full.json: OK\ndocs/parity/cases/playbooks/autopilot-stack.json: OK\ndocs/parity/cases/playbooks/babysit.json: OK\ndocs/parity/cases/playbooks/bug-fix.json: OK\ndocs/parity/cases/playbooks/eval.json: OK\ndocs/parity/cases/playbooks/feature.json: OK\ndocs/parity/cases/playbooks/hillclimb.json: OK\ndocs/parity/cases/playbooks/investigation.json: OK\ndocs/parity/cases/playbooks/multi-phase-plan.json: OK\ndocs/parity/cases/playbooks/opening-a-pr.json: OK\ndocs/parity/cases/playbooks/orchestrate.json: OK\ndocs/parity/cases/playbooks/pause-safely.json: OK\ndocs/parity/cases/playbooks/perf-issue.json: OK\ndocs/parity/cases/playbooks/prototype.json: OK\ndocs/parity/cases/playbooks/refactoring.json: OK\ndocs/parity/cases/playbooks/runtime-forensics.json: OK\ndocs/parity/cases/playbooks/session-pickup.json: OK\ndocs/parity/cases/playbooks/shipping.json: OK\ndocs/parity/cases/playbooks/trace-forensics.json: OK\ndocs/parity/cases/playbooks/visual-parity.json: OK\ndocs/parity/cases/playbooks/worktree-cleanup.json: OK\ndocs/parity/cases/pstack-plan-format.json: OK\ndocs/parity/cases/schema.json: OK\ndocs/parity/cases/skills/architect.json: OK\ndocs/parity/cases/skills/arena.json: OK\ndocs/parity/cases/skills/automate-me.json: OK\ndocs/parity/cases/skills/benchmark-checklist.json: OK\ndocs/parity/cases/skills/blast-radius.json: OK\ndocs/parity/cases/skills/bro.json: OK\ndocs/parity/cases/skills/correct.json: OK\ndocs/parity/cases/skills/create-verification-skill.json: OK\ndocs/parity/cases/skills/figure-it-out.json: OK\ndocs/parity/cases/skills/how.json: OK\ndocs/parity/cases/skills/interrogate.json: OK\ndocs/parity/cases/skills/maintain-verification-skill.json: OK\ndocs/parity/cases/skills/make-bot-ui.json: OK\ndocs/parity/cases/skills/no-comments.json: OK\ndocs/parity/cases/skills/poteto-help.json: OK\ndocs/parity/cases/skills/poteto-mode.json: OK\ndocs/parity/cases/skills/principle-attack-the-premise.json: OK\ndocs/parity/cases/skills/principle-boundary-discipline.json: OK\ndocs/parity/cases/skills/principle-build-the-lever.json: OK\ndocs/parity/cases/skills/principle-encode-lessons-in-structure.json: OK\ndocs/parity/cases/skills/principle-exhaust-the-design-space.json: OK\ndocs/parity/cases/skills/principle-experience-first.json: OK\ndocs/parity/cases/skills/principle-explain-the-number.json: OK\ndocs/parity/cases/skills/principle-fix-root-causes.json: OK\ndocs/parity/cases/skills/principle-foundational-thinking.json: OK\ndocs/parity/cases/skills/principle-guard-the-context-window.json: OK\ndocs/parity/cases/skills/principle-laziness-protocol.json: OK\ndocs/parity/cases/skills/principle-make-operations-idempotent.json: OK\ndocs/parity/cases/skills/principle-migrate-callers-then-delete-legacy-apis.json: OK\ndocs/parity/cases/skills/principle-minimize-reader-load.json: OK\ndocs/parity/cases/skills/principle-model-the-domain.json: OK\ndocs/parity/cases/skills/principle-never-block-on-the-human.json: OK\ndocs/parity/cases/skills/principle-outcome-oriented-execution.json: OK\ndocs/parity/cases/skills/principle-prove-it-works.json: OK\ndocs/parity/cases/skills/principle-redesign-from-first-principles.json: OK\ndocs/parity/cases/skills/principle-separate-before-serializing-shared-state.json: OK\ndocs/parity/cases/skills/principle-sequence-verifiable-units.json: OK\ndocs/parity/cases/skills/principle-subtract-before-you-add.json: OK\ndocs/parity/cases/skills/principle-test-behavior-not-implementation.json: OK\ndocs/parity/cases/skills/principle-type-system-discipline.json: OK\ndocs/parity/cases/skills/recall.json: OK\ndocs/parity/cases/skills/reflect.json: OK\ndocs/parity/cases/skills/setup-pstack.json: OK\ndocs/parity/cases/skills/show-me-your-work.json: OK\ndocs/parity/cases/skills/swarm.json: OK\ndocs/parity/cases/skills/tdd.json: OK\ndocs/parity/cases/skills/teach.json: OK\ndocs/parity/cases/skills/technical-writing.json: OK\ndocs/parity/cases/skills/typescript-best-practices.json: OK\ndocs/parity/cases/skills/unslop.json: OK\ndocs/parity/cases/skills/why.json: OK\ndocs/parity/cases/upstream-update.json: OK\ndocs/parity/dependencies.json: OK\ndocs/parity/evidence.schema.json: OK\ndocs/parity/evidence/chatgpt/absent-workers.json: OK\ndocs/parity/evidence/chatgpt/accessible-trace.json: OK\ndocs/parity/evidence/chatgpt/adversarial-review.json: OK\ndocs/parity/evidence/chatgpt/alternatives.json: OK\ndocs/parity/evidence/chatgpt/approval-before-edit.json: OK\ndocs/parity/evidence/chatgpt/arena-walkthrough.json: OK\ndocs/parity/evidence/chatgpt/authorization-support-check.md: OK\ndocs/parity/evidence/chatgpt/authorized-program.json: OK\ndocs/parity/evidence/chatgpt/benny-duplicate-report.json: OK\ndocs/parity/evidence/chatgpt/benny-existing-fix-ownership.json: OK\ndocs/parity/evidence/chatgpt/benny-existing-pr.json: OK\ndocs/parity/evidence/chatgpt/benny-missing-adapter.json: OK\ndocs/parity/evidence/chatgpt/benny-missing-coordinates.json: OK\ndocs/parity/evidence/chatgpt/benny-source-thread-compensation.json: OK\ndocs/parity/evidence/chatgpt/benny-unsupported-trigger.json: OK\ndocs/parity/evidence/chatgpt/benny-untrusted-marker.json: OK\ndocs/parity/evidence/chatgpt/boundary-design.json: OK\ndocs/parity/evidence/chatgpt/bounded-improvement.json: OK\ndocs/parity/evidence/chatgpt/bounded-poll.json: OK\ndocs/parity/evidence/chatgpt/caller-migration.json: OK\ndocs/parity/evidence/chatgpt/cancelled-worker.json: OK\ndocs/parity/evidence/chatgpt/candidate-cross-review.json: OK\ndocs/parity/evidence/chatgpt/chatgpt-setup-from-readme.json: OK\ndocs/parity/evidence/chatgpt/codex-setup-from-readme.json: OK\ndocs/parity/evidence/chatgpt/comparable-revisions.json: OK\ndocs/parity/evidence/chatgpt/contiguous-verified-stack.json: OK\ndocs/parity/evidence/chatgpt/dead-path.json: OK\ndocs/parity/evidence/chatgpt/decision-trail.json: OK\ndocs/parity/evidence/chatgpt/denied-writes.json: OK\ndocs/parity/evidence/chatgpt/dense-doc.json: OK\ndocs/parity/evidence/chatgpt/dependency-readiness.json: OK\ndocs/parity/evidence/chatgpt/dependent-caller.json: OK\ndocs/parity/evidence/chatgpt/discriminating-eval.json: OK\ndocs/parity/evidence/chatgpt/draft-only-authorized.json: OK\ndocs/parity/evidence/chatgpt/empty-function.json: OK\ndocs/parity/evidence/chatgpt/existing-personal-mode.json: OK\ndocs/parity/evidence/chatgpt/false-success.json: OK\ndocs/parity/evidence/chatgpt/fresh-worker-mode.json: OK\ndocs/parity/evidence/chatgpt/grounded-explanation.json: OK\ndocs/parity/evidence/chatgpt/guides-github-absent.json: OK\ndocs/parity/evidence/chatgpt/guides-local-codex.json: OK\ndocs/parity/evidence/chatgpt/guides-optional-setup-skipped.json: OK\ndocs/parity/evidence/chatgpt/guides-ordinary-chatgpt.json: OK\ndocs/parity/evidence/chatgpt/guides-worker-chatgpt.json: OK\ndocs/parity/evidence/chatgpt/history-evidence.json: OK\ndocs/parity/evidence/chatgpt/inherited-identical-models.json: OK\ndocs/parity/evidence/chatgpt/interrupted-action.json: OK\ndocs/parity/evidence/chatgpt/interrupted-external-write.json: OK\ndocs/parity/evidence/chatgpt/invalid-input.json: OK\ndocs/parity/evidence/chatgpt/invalid-state.json: OK\ndocs/parity/evidence/chatgpt/large-corpus.json: OK\ndocs/parity/evidence/chatgpt/legal-header.json: OK\ndocs/parity/evidence/chatgpt/measurement-method.json: OK\ndocs/parity/evidence/chatgpt/migration-end-state.json: OK\ndocs/parity/evidence/chatgpt/migration-units.json: OK\ndocs/parity/evidence/chatgpt/misleading-speedup.json: OK\ndocs/parity/evidence/chatgpt/missing-model-enumeration.json: OK\ndocs/parity/evidence/chatgpt/missing-webhook.json: OK\ndocs/parity/evidence/chatgpt/new-requirement.json: OK\ndocs/parity/evidence/chatgpt/no-persistent-tool.json: OK\ndocs/parity/evidence/chatgpt/owned-safe-cleanup.json: OK\ndocs/parity/evidence/chatgpt/package-discovery.json: OK\ndocs/parity/evidence/chatgpt/package-support-contracts.json: OK\ndocs/parity/evidence/chatgpt/partition-and-race.json: OK\ndocs/parity/evidence/chatgpt/plain-restate.json: OK\ndocs/parity/evidence/chatgpt/poteto-walkthrough.json: OK\ndocs/parity/evidence/chatgpt/preserved-behavior.json: OK\ndocs/parity/evidence/chatgpt/prose-rewrite.json: OK\ndocs/parity/evidence/chatgpt/read-only-answer.json: OK\ndocs/parity/evidence/chatgpt/real-app-contract.json: OK\ndocs/parity/evidence/chatgpt/real-render.json: OK\ndocs/parity/evidence/chatgpt/red-green.json: OK\ndocs/parity/evidence/chatgpt/repeatable-change.json: OK\ndocs/parity/evidence/chatgpt/repeated-failure.json: OK\ndocs/parity/evidence/chatgpt/repeated-rule.json: OK\ndocs/parity/evidence/chatgpt/replay.json: OK\ndocs/parity/evidence/chatgpt/reproduce-before-fix.json: OK\ndocs/parity/evidence/chatgpt/resume-revision.json: OK\ndocs/parity/evidence/chatgpt/reversible-step.json: OK\ndocs/parity/evidence/chatgpt/route-recipe.json: OK\ndocs/parity/evidence/chatgpt/scoped-history.json: OK\ndocs/parity/evidence/chatgpt/shape-first.json: OK\ndocs/parity/evidence/chatgpt/shared-path-conflict.json: OK\ndocs/parity/evidence/chatgpt/smaller-solution.json: OK\ndocs/parity/evidence/chatgpt/stack-resume.json: OK\ndocs/parity/evidence/chatgpt/stale-feature-map.json: OK\ndocs/parity/evidence/chatgpt/state-shape.json: OK\ndocs/parity/evidence/chatgpt/supported-authoring.json: OK\ndocs/parity/evidence/chatgpt/swarm-walkthrough.json: OK\ndocs/parity/evidence/chatgpt/symptom-repro.json: OK\ndocs/parity/evidence/chatgpt/throwaway-probe.json: OK\ndocs/parity/evidence/chatgpt/trace-load.json: OK\ndocs/parity/evidence/chatgpt/trace-path.json: OK\ndocs/parity/evidence/chatgpt/trace-provenance.json: OK\ndocs/parity/evidence/chatgpt/two-writers.json: OK\ndocs/parity/evidence/chatgpt/typed-boundary.json: OK\ndocs/parity/evidence/chatgpt/unavailable-persistence.json: OK\ndocs/parity/evidence/chatgpt/uncertain-result.json: OK\ndocs/parity/evidence/chatgpt/unit-state.json: OK\ndocs/parity/evidence/chatgpt/units-and-proof.json: OK\ndocs/parity/evidence/chatgpt/unknown-actual-model.json: OK\ndocs/parity/evidence/chatgpt/unknown-model.json: OK\ndocs/parity/evidence/chatgpt/unsupported-selected-model.json: OK\ndocs/parity/evidence/chatgpt/user-correction.json: OK\ndocs/parity/evidence/chatgpt/user-tradeoff.json: OK\ndocs/parity/evidence/chatgpt/verifiable-feature.json: OK\ndocs/parity/evidence/codex/absent-workers.json: OK\ndocs/parity/evidence/codex/accessible-trace.json: OK\ndocs/parity/evidence/codex/adversarial-review.json: OK\ndocs/parity/evidence/codex/alternatives.json: OK\ndocs/parity/evidence/codex/approval-before-edit.json: OK\ndocs/parity/evidence/codex/arena-walkthrough.json: OK\ndocs/parity/evidence/codex/authorization-capability-check.md: OK\ndocs/parity/evidence/codex/authorized-program.json: OK\ndocs/parity/evidence/codex/benny-duplicate-report.json: OK\ndocs/parity/evidence/codex/benny-existing-fix-ownership.json: OK\ndocs/parity/evidence/codex/benny-existing-pr.json: OK\ndocs/parity/evidence/codex/benny-missing-adapter.json: OK\ndocs/parity/evidence/codex/benny-missing-coordinates.json: OK\ndocs/parity/evidence/codex/benny-source-thread-compensation.json: OK\ndocs/parity/evidence/codex/benny-unsupported-trigger.json: OK\ndocs/parity/evidence/codex/benny-untrusted-marker.json: OK\ndocs/parity/evidence/codex/boundary-design.json: OK\ndocs/parity/evidence/codex/bounded-improvement.json: OK\ndocs/parity/evidence/codex/bounded-poll.json: OK\ndocs/parity/evidence/codex/caller-migration.json: OK\ndocs/parity/evidence/codex/cancelled-worker.json: OK\ndocs/parity/evidence/codex/candidate-cross-review.json: OK\ndocs/parity/evidence/codex/chatgpt-setup-from-readme.json: OK\ndocs/parity/evidence/codex/codex-setup-from-readme.json: OK\ndocs/parity/evidence/codex/comparable-revisions.json: OK\ndocs/parity/evidence/codex/contiguous-verified-stack.json: OK\ndocs/parity/evidence/codex/dead-path.json: OK\ndocs/parity/evidence/codex/decision-trail.json: OK\ndocs/parity/evidence/codex/denied-writes.json: OK\ndocs/parity/evidence/codex/dense-doc.json: OK\ndocs/parity/evidence/codex/dependency-readiness.json: OK\ndocs/parity/evidence/codex/dependent-caller.json: OK\ndocs/parity/evidence/codex/discriminating-eval.json: OK\ndocs/parity/evidence/codex/draft-only-authorized.json: OK\ndocs/parity/evidence/codex/empty-function.json: OK\ndocs/parity/evidence/codex/existing-personal-mode.json: OK\ndocs/parity/evidence/codex/false-success.json: OK\ndocs/parity/evidence/codex/fresh-worker-mode.json: OK\ndocs/parity/evidence/codex/grounded-explanation.json: OK\ndocs/parity/evidence/codex/guides-github-absent.json: OK\ndocs/parity/evidence/codex/guides-local-codex.json: OK\ndocs/parity/evidence/codex/guides-optional-setup-skipped.json: OK\ndocs/parity/evidence/codex/guides-ordinary-chatgpt.json: OK\ndocs/parity/evidence/codex/guides-worker-chatgpt.json: OK\ndocs/parity/evidence/codex/history-evidence.json: OK\ndocs/parity/evidence/codex/inherited-identical-models.json: OK\ndocs/parity/evidence/codex/interrupted-action.json: OK\ndocs/parity/evidence/codex/interrupted-external-write.json: OK\ndocs/parity/evidence/codex/invalid-input.json: OK\ndocs/parity/evidence/codex/invalid-state.json: OK\ndocs/parity/evidence/codex/large-corpus.json: OK\ndocs/parity/evidence/codex/legal-header.json: OK\ndocs/parity/evidence/codex/measurement-method.json: OK\ndocs/parity/evidence/codex/migration-end-state.json: OK\ndocs/parity/evidence/codex/migration-units.json: OK\ndocs/parity/evidence/codex/misleading-speedup.json: OK\ndocs/parity/evidence/codex/missing-model-enumeration.json: OK\ndocs/parity/evidence/codex/missing-webhook.json: OK\ndocs/parity/evidence/codex/new-requirement.json: OK\ndocs/parity/evidence/codex/no-persistent-tool.json: OK\ndocs/parity/evidence/codex/owned-safe-cleanup.json: OK\ndocs/parity/evidence/codex/package-discovery.json: OK\ndocs/parity/evidence/codex/package-support-contracts.json: OK\ndocs/parity/evidence/codex/partition-and-race.json: OK\ndocs/parity/evidence/codex/plain-restate.json: OK\ndocs/parity/evidence/codex/poteto-walkthrough.json: OK\ndocs/parity/evidence/codex/preserved-behavior.json: OK\ndocs/parity/evidence/codex/prose-rewrite.json: OK\ndocs/parity/evidence/codex/read-only-answer.json: OK\ndocs/parity/evidence/codex/real-app-contract.json: OK\ndocs/parity/evidence/codex/real-render.json: OK\ndocs/parity/evidence/codex/red-green.json: OK\ndocs/parity/evidence/codex/repeatable-change.json: OK\ndocs/parity/evidence/codex/repeated-failure.json: OK\ndocs/parity/evidence/codex/repeated-rule.json: OK\ndocs/parity/evidence/codex/replay.json: OK\ndocs/parity/evidence/codex/reproduce-before-fix.json: OK\ndocs/parity/evidence/codex/resume-revision.json: OK\ndocs/parity/evidence/codex/reversible-step.json: OK\ndocs/parity/evidence/codex/route-recipe.json: OK\ndocs/parity/evidence/codex/scoped-history.json: OK\ndocs/parity/evidence/codex/shape-first.json: OK\ndocs/parity/evidence/codex/shared-path-conflict.json: OK\ndocs/parity/evidence/codex/smaller-solution.json: OK\ndocs/parity/evidence/codex/stack-resume.json: OK\ndocs/parity/evidence/codex/stale-feature-map.json: OK\ndocs/parity/evidence/codex/state-shape.json: OK\ndocs/parity/evidence/codex/supported-authoring.json: OK\ndocs/parity/evidence/codex/swarm-walkthrough.json: OK\ndocs/parity/evidence/codex/symptom-repro.json: OK\ndocs/parity/evidence/codex/throwaway-probe.json: OK\ndocs/parity/evidence/codex/trace-load.json: OK\ndocs/parity/evidence/codex/trace-path.json: OK\ndocs/parity/evidence/codex/trace-provenance.json: OK\ndocs/parity/evidence/codex/two-writers.json: OK\ndocs/parity/evidence/codex/typed-boundary.json: OK\ndocs/parity/evidence/codex/unavailable-persistence.json: OK\ndocs/parity/evidence/codex/uncertain-result.json: OK\ndocs/parity/evidence/codex/unit-state.json: OK\ndocs/parity/evidence/codex/units-and-proof.json: OK\ndocs/parity/evidence/codex/unknown-actual-model.json: OK\ndocs/parity/evidence/codex/unknown-model.json: OK\ndocs/parity/evidence/codex/unsupported-selected-model.json: OK\ndocs/parity/evidence/codex/user-correction.json: OK\ndocs/parity/evidence/codex/user-tradeoff.json: OK\ndocs/parity/evidence/codex/verifiable-feature.json: OK\ndocs/parity/inventory.json: OK\ndocs/parity/inventory.schema.json: OK\ndocs/parity/reconciliations/task12-lock.json: OK\ndocs/parity/reconciliations/task16-template.json: OK\ndocs/parity/remnant-dispositions.json: OK\ndocs/parity/support-map.md: OK\ndocs/parity/tested-package.json: OK\ndocs/parity/upstream-manifests/df581122cde17e6e27686b5a448bde23e4ad4318.json: OK\ndocs/principles/README.md: OK\ndocs/publication.md: OK\ndocs/releases/0.1.0.md: OK\ndocs/releases/discovery-014.json: OK\ndocs/releases/discovery-015.json: OK\ndocs/releases/historical-discovery-013.json: OK\ndocs/releases/historical-discovery-014.json: OK\ndocs/releases/host-evaluation/chatgpt/absent-workers.md: OK\ndocs/releases/host-evaluation/chatgpt/accessible-trace.md: OK\ndocs/releases/host-evaluation/chatgpt/adversarial-review.md: OK\ndocs/releases/host-evaluation/chatgpt/alternatives.md: OK\ndocs/releases/host-evaluation/chatgpt/approval-before-edit.md: OK\ndocs/releases/host-evaluation/chatgpt/arena-walkthrough.md: OK\ndocs/releases/host-evaluation/chatgpt/authorized-program.md: OK\ndocs/releases/host-evaluation/chatgpt/benny-duplicate-report.md: OK\ndocs/releases/host-evaluation/chatgpt/benny-existing-fix-ownership.md: OK\ndocs/releases/host-evaluation/chatgpt/benny-existing-pr.md: OK\ndocs/releases/host-evaluation/chatgpt/benny-missing-adapter.md: OK\ndocs/releases/host-evaluation/chatgpt/benny-missing-coordinates.md: OK\ndocs/releases/host-evaluation/chatgpt/benny-source-thread-compensation.md: OK\ndocs/releases/host-evaluation/chatgpt/benny-unsupported-trigger.md: OK\ndocs/releases/host-evaluation/chatgpt/benny-untrusted-marker.md: OK\ndocs/releases/host-evaluation/chatgpt/boundary-design.md: OK\ndocs/releases/host-evaluation/chatgpt/bounded-improvement.md: OK\ndocs/releases/host-evaluation/chatgpt/bounded-poll.md: OK\ndocs/releases/host-evaluation/chatgpt/caller-migration.md: OK\ndocs/releases/host-evaluation/chatgpt/cancelled-worker.md: OK\ndocs/releases/host-evaluation/chatgpt/candidate-cross-review.md: OK\ndocs/releases/host-evaluation/chatgpt/chatgpt-setup-from-readme.md: OK\ndocs/releases/host-evaluation/chatgpt/codex-setup-from-readme.md: OK\ndocs/releases/host-evaluation/chatgpt/comparable-revisions.md: OK\ndocs/releases/host-evaluation/chatgpt/contiguous-verified-stack.md: OK\ndocs/releases/host-evaluation/chatgpt/dead-path.md: OK\ndocs/releases/host-evaluation/chatgpt/decision-trail.md: OK\ndocs/releases/host-evaluation/chatgpt/denied-writes.md: OK\ndocs/releases/host-evaluation/chatgpt/dense-doc.md: OK\ndocs/releases/host-evaluation/chatgpt/dependency-readiness.md: OK\ndocs/releases/host-evaluation/chatgpt/dependent-caller.md: OK\ndocs/releases/host-evaluation/chatgpt/discriminating-eval.md: OK\ndocs/releases/host-evaluation/chatgpt/draft-only-authorized.md: OK\ndocs/releases/host-evaluation/chatgpt/empty-function.md: OK\ndocs/releases/host-evaluation/chatgpt/existing-personal-mode.md: OK\ndocs/releases/host-evaluation/chatgpt/false-success.md: OK\ndocs/releases/host-evaluation/chatgpt/fresh-worker-mode.md: OK\ndocs/releases/host-evaluation/chatgpt/grounded-explanation.md: OK\ndocs/releases/host-evaluation/chatgpt/guides-github-absent.md: OK\ndocs/releases/host-evaluation/chatgpt/guides-local-codex.md: OK\ndocs/releases/host-evaluation/chatgpt/guides-optional-setup-skipped.md: OK\ndocs/releases/host-evaluation/chatgpt/guides-ordinary-chatgpt.md: OK\ndocs/releases/host-evaluation/chatgpt/guides-worker-chatgpt.md: OK\ndocs/releases/host-evaluation/chatgpt/history-evidence.md: OK\ndocs/releases/host-evaluation/chatgpt/inherited-identical-models.md: OK\ndocs/releases/host-evaluation/chatgpt/interrupted-action.md: OK\ndocs/releases/host-evaluation/chatgpt/interrupted-external-write.md: OK\ndocs/releases/host-evaluation/chatgpt/invalid-input.md: OK\ndocs/releases/host-evaluation/chatgpt/invalid-state.md: OK\ndocs/releases/host-evaluation/chatgpt/large-corpus.md: OK\ndocs/releases/host-evaluation/chatgpt/legal-header.md: OK\ndocs/releases/host-evaluation/chatgpt/measurement-method.md: OK\ndocs/releases/host-evaluation/chatgpt/migration-end-state.md: OK\ndocs/releases/host-evaluation/chatgpt/migration-units.md: OK\ndocs/releases/host-evaluation/chatgpt/misleading-speedup.md: OK\ndocs/releases/host-evaluation/chatgpt/missing-model-enumeration.md: OK\ndocs/releases/host-evaluation/chatgpt/missing-webhook.md: OK\ndocs/releases/host-evaluation/chatgpt/new-requirement.md: OK\ndocs/releases/host-evaluation/chatgpt/no-persistent-tool.md: OK\ndocs/releases/host-evaluation/chatgpt/owned-safe-cleanup.md: OK\ndocs/releases/host-evaluation/chatgpt/package-support-contracts.md: OK\ndocs/releases/host-evaluation/chatgpt/partition-and-race.md: OK\ndocs/releases/host-evaluation/chatgpt/plain-restate.md: OK\ndocs/releases/host-evaluation/chatgpt/poteto-walkthrough.md: OK\ndocs/releases/host-evaluation/chatgpt/preserved-behavior.md: OK\ndocs/releases/host-evaluation/chatgpt/prose-rewrite.md: OK\ndocs/releases/host-evaluation/chatgpt/read-only-answer.md: OK\ndocs/releases/host-evaluation/chatgpt/real-app-contract.md: OK\ndocs/releases/host-evaluation/chatgpt/real-render.md: OK\ndocs/releases/host-evaluation/chatgpt/red-green.md: OK\ndocs/releases/host-evaluation/chatgpt/repeatable-change.md: OK\ndocs/releases/host-evaluation/chatgpt/repeated-failure.md: OK\ndocs/releases/host-evaluation/chatgpt/repeated-rule.md: OK\ndocs/releases/host-evaluation/chatgpt/replay.md: OK\ndocs/releases/host-evaluation/chatgpt/reproduce-before-fix.md: OK\ndocs/releases/host-evaluation/chatgpt/resume-revision.md: OK\ndocs/releases/host-evaluation/chatgpt/reversible-step.md: OK\ndocs/releases/host-evaluation/chatgpt/route-recipe.md: OK\ndocs/releases/host-evaluation/chatgpt/scoped-history.md: OK\ndocs/releases/host-evaluation/chatgpt/shape-first.md: OK\ndocs/releases/host-evaluation/chatgpt/shared-path-conflict.md: OK\ndocs/releases/host-evaluation/chatgpt/smaller-solution.md: OK\ndocs/releases/host-evaluation/chatgpt/stack-resume.md: OK\ndocs/releases/host-evaluation/chatgpt/stale-feature-map.md: OK\ndocs/releases/host-evaluation/chatgpt/state-shape.md: OK\ndocs/releases/host-evaluation/chatgpt/supported-authoring.md: OK\ndocs/releases/host-evaluation/chatgpt/swarm-walkthrough.md: OK\ndocs/releases/host-evaluation/chatgpt/symptom-repro.md: OK\ndocs/releases/host-evaluation/chatgpt/throwaway-probe.md: OK\ndocs/releases/host-evaluation/chatgpt/trace-load.md: OK\ndocs/releases/host-evaluation/chatgpt/trace-path.md: OK\ndocs/releases/host-evaluation/chatgpt/trace-provenance.md: OK\ndocs/releases/host-evaluation/chatgpt/two-writers.md: OK\ndocs/releases/host-evaluation/chatgpt/typed-boundary.md: OK\ndocs/releases/host-evaluation/chatgpt/unavailable-persistence.md: OK\ndocs/releases/host-evaluation/chatgpt/uncertain-result.md: OK\ndocs/releases/host-evaluation/chatgpt/unit-state.md: OK\ndocs/releases/host-evaluation/chatgpt/units-and-proof.md: OK\ndocs/releases/host-evaluation/chatgpt/unknown-actual-model.md: OK\ndocs/releases/host-evaluation/chatgpt/unknown-model.md: OK\ndocs/releases/host-evaluation/chatgpt/unsupported-selected-model.md: OK\ndocs/releases/host-evaluation/chatgpt/user-correction.md: OK\ndocs/releases/host-evaluation/chatgpt/user-tradeoff.md: OK\ndocs/releases/host-evaluation/chatgpt/verifiable-feature.md: OK\ndocs/releases/host-evaluation/codex/absent-workers.md: OK\ndocs/releases/host-evaluation/codex/accessible-trace.md: OK\ndocs/releases/host-evaluation/codex/adversarial-review.md: OK\ndocs/releases/host-evaluation/codex/alternatives.md: OK\ndocs/releases/host-evaluation/codex/approval-before-edit.md: OK\ndocs/releases/host-evaluation/codex/arena-walkthrough.md: OK\ndocs/releases/host-evaluation/codex/authorized-program.md: OK\ndocs/releases/host-evaluation/codex/benny-duplicate-report.md: OK\ndocs/releases/host-evaluation/codex/benny-existing-fix-ownership.md: OK\ndocs/releases/host-evaluation/codex/benny-existing-pr.md: OK\ndocs/releases/host-evaluation/codex/benny-missing-adapter.md: OK\ndocs/releases/host-evaluation/codex/benny-missing-coordinates.md: OK\ndocs/releases/host-evaluation/codex/benny-source-thread-compensation.md: OK\ndocs/releases/host-evaluation/codex/benny-unsupported-trigger.md: OK\ndocs/releases/host-evaluation/codex/benny-untrusted-marker.md: OK\ndocs/releases/host-evaluation/codex/boundary-design.md: OK\ndocs/releases/host-evaluation/codex/bounded-improvement.md: OK\ndocs/releases/host-evaluation/codex/bounded-poll.md: OK\ndocs/releases/host-evaluation/codex/caller-migration.md: OK\ndocs/releases/host-evaluation/codex/cancelled-worker.md: OK\ndocs/releases/host-evaluation/codex/candidate-cross-review.md: OK\ndocs/releases/host-evaluation/codex/chatgpt-setup-from-readme.md: OK\ndocs/releases/host-evaluation/codex/codex-setup-from-readme.md: OK\ndocs/releases/host-evaluation/codex/comparable-revisions.md: OK\ndocs/releases/host-evaluation/codex/contiguous-verified-stack.md: OK\ndocs/releases/host-evaluation/codex/dead-path.md: OK\ndocs/releases/host-evaluation/codex/decision-trail.md: OK\ndocs/releases/host-evaluation/codex/denied-writes.md: OK\ndocs/releases/host-evaluation/codex/dense-doc.md: OK\ndocs/releases/host-evaluation/codex/dependency-readiness.md: OK\ndocs/releases/host-evaluation/codex/dependent-caller.md: OK\ndocs/releases/host-evaluation/codex/discriminating-eval.md: OK\ndocs/releases/host-evaluation/codex/draft-only-authorized.md: OK\ndocs/releases/host-evaluation/codex/empty-function.md: OK\ndocs/releases/host-evaluation/codex/existing-personal-mode.md: OK\ndocs/releases/host-evaluation/codex/false-success.md: OK\ndocs/releases/host-evaluation/codex/fresh-worker-mode.md: OK\ndocs/releases/host-evaluation/codex/grounded-explanation.md: OK\ndocs/releases/host-evaluation/codex/guides-github-absent.md: OK\ndocs/releases/host-evaluation/codex/guides-local-codex.md: OK\ndocs/releases/host-evaluation/codex/guides-optional-setup-skipped.md: OK\ndocs/releases/host-evaluation/codex/guides-ordinary-chatgpt.md: OK\ndocs/releases/host-evaluation/codex/guides-worker-chatgpt.md: OK\ndocs/releases/host-evaluation/codex/history-evidence.md: OK\ndocs/releases/host-evaluation/codex/inherited-identical-models.md: OK\ndocs/releases/host-evaluation/codex/interrupted-action.md: OK\ndocs/releases/host-evaluation/codex/interrupted-external-write.md: OK\ndocs/releases/host-evaluation/codex/invalid-input.md: OK\ndocs/releases/host-evaluation/codex/invalid-state.md: OK\ndocs/releases/host-evaluation/codex/large-corpus.md: OK\ndocs/releases/host-evaluation/codex/legal-header.md: OK\ndocs/releases/host-evaluation/codex/measurement-method.md: OK\ndocs/releases/host-evaluation/codex/migration-end-state.md: OK\ndocs/releases/host-evaluation/codex/migration-units.md: OK\ndocs/releases/host-evaluation/codex/misleading-speedup.md: OK\ndocs/releases/host-evaluation/codex/missing-model-enumeration.md: OK\ndocs/releases/host-evaluation/codex/missing-webhook.md: OK\ndocs/releases/host-evaluation/codex/new-requirement.md: OK\ndocs/releases/host-evaluation/codex/no-persistent-tool.md: OK\ndocs/releases/host-evaluation/codex/owned-safe-cleanup.md: OK\ndocs/releases/host-evaluation/codex/package-support-contracts.md: OK\ndocs/releases/host-evaluation/codex/partition-and-race.md: OK\ndocs/releases/host-evaluation/codex/plain-restate.md: OK\ndocs/releases/host-evaluation/codex/poteto-walkthrough.md: OK\ndocs/releases/host-evaluation/codex/preserved-behavior.md: OK\ndocs/releases/host-evaluation/codex/prose-rewrite.md: OK\ndocs/releases/host-evaluation/codex/read-only-answer.md: OK\ndocs/releases/host-evaluation/codex/real-app-contract.md: OK\ndocs/releases/host-evaluation/codex/real-render.md: OK\ndocs/releases/host-evaluation/codex/red-green.md: OK\ndocs/releases/host-evaluation/codex/repeatable-change.md: OK\ndocs/releases/host-evaluation/codex/repeated-failure.md: OK\ndocs/releases/host-evaluation/codex/repeated-rule.md: OK\ndocs/releases/host-evaluation/codex/replay.md: OK\ndocs/releases/host-evaluation/codex/reproduce-before-fix.md: OK\ndocs/releases/host-evaluation/codex/resume-revision.md: OK\ndocs/releases/host-evaluation/codex/reversible-step.md: OK\ndocs/releases/host-evaluation/codex/route-recipe.md: OK\ndocs/releases/host-evaluation/codex/scoped-history.md: OK\ndocs/releases/host-evaluation/codex/shape-first.md: OK\ndocs/releases/host-evaluation/codex/shared-path-conflict.md: OK\ndocs/releases/host-evaluation/codex/smaller-solution.md: OK\ndocs/releases/host-evaluation/codex/stack-resume.md: OK\ndocs/releases/host-evaluation/codex/stale-feature-map.md: OK\ndocs/releases/host-evaluation/codex/state-shape.md: OK\ndocs/releases/host-evaluation/codex/supported-authoring.md: OK\ndocs/releases/host-evaluation/codex/swarm-walkthrough.md: OK\ndocs/releases/host-evaluation/codex/symptom-repro.md: OK\ndocs/releases/host-evaluation/codex/throwaway-probe.md: OK\ndocs/releases/host-evaluation/codex/trace-load.md: OK\ndocs/releases/host-evaluation/codex/trace-path.md: OK\ndocs/releases/host-evaluation/codex/trace-provenance.md: OK\ndocs/releases/host-evaluation/codex/two-writers.md: OK\ndocs/releases/host-evaluation/codex/typed-boundary.md: OK\ndocs/releases/host-evaluation/codex/unavailable-persistence.md: OK\ndocs/releases/host-evaluation/codex/uncertain-result.md: OK\ndocs/releases/host-evaluation/codex/unit-state.md: OK\ndocs/releases/host-evaluation/codex/units-and-proof.md: OK\ndocs/releases/host-evaluation/codex/unknown-actual-model.md: OK\ndocs/releases/host-evaluation/codex/unknown-model.md: OK\ndocs/releases/host-evaluation/codex/unsupported-selected-model.md: OK\ndocs/releases/host-evaluation/codex/user-correction.md: OK\ndocs/releases/host-evaluation/codex/user-tradeoff.md: OK\ndocs/releases/host-evaluation/codex/verifiable-feature.md: OK\ndocs/releases/provenance-014.json: OK\ndocs/releases/provenance-015.json: OK\ndocs/releases/remaining-controller-report.md: OK\ndocs/releases/remediation-013/README.md: OK\ndocs/releases/remediation-013/assessments.json: OK\ndocs/releases/remediation-013/coverage.json: OK\ndocs/releases/remediation-013/local/README.md: OK\ndocs/releases/remediation-013/local/absent-workers/review-c-11/assessment.json: OK\ndocs/releases/remediation-013/local/absent-workers/review-c-11/proof/01-original-no-worker.json.excerpt.json: OK\ndocs/releases/remediation-013/local/absent-workers/review-c-11/proof/02-sequential-execution.json.excerpt.json: OK\ndocs/releases/remediation-013/local/absent-workers/review-c-11/proof/03-invoice_trace.assignment.json.excerpt.json: OK\ndocs/releases/remediation-013/local/absent-workers/review-c-11/proof/04-invoice_trace.inspection.json.excerpt.json: OK\ndocs/releases/remediation-013/local/absent-workers/review-c-11/proof/supplied-input.json: OK\ndocs/releases/remediation-013/local/absent-workers/review-c-11/proof/task-result-prefix.json: OK\ndocs/releases/remediation-013/local/absent-workers/review-c-11/record.json: OK\ndocs/releases/remediation-013/local/absent-workers/review-c-11/review.md: OK\ndocs/releases/remediation-013/local/accessible-trace/review-c-10/assessment.json: OK\ndocs/releases/remediation-013/local/accessible-trace/review-c-10/proof/01-actions.json.excerpt.json: OK\ndocs/releases/remediation-013/local/accessible-trace/review-c-10/proof/02-control-discovery.json.excerpt.json: OK\ndocs/releases/remediation-013/local/accessible-trace/review-c-10/proof/03-branches.json.excerpt.json: OK\ndocs/releases/remediation-013/local/accessible-trace/review-c-10/proof/04-verification.json.excerpt.json: OK\ndocs/releases/remediation-013/local/accessible-trace/review-c-10/proof/native-source-read.json: OK\ndocs/releases/remediation-013/local/accessible-trace/review-c-10/proof/supplied-input.json: OK\ndocs/releases/remediation-013/local/accessible-trace/review-c-10/proof/task-result-prefix.json: OK\ndocs/releases/remediation-013/local/accessible-trace/review-c-10/record.json: OK\ndocs/releases/remediation-013/local/accessible-trace/review-c-10/review.md: OK\ndocs/releases/remediation-013/local/approval-before-edit/review-b-07/assessment.json: OK\ndocs/releases/remediation-013/local/approval-before-edit/review-b-07/proof/01-review-order.json.excerpt.json: OK\ndocs/releases/remediation-013/local/approval-before-edit/review-b-07/proof/02-active-session-source.json.excerpt.json: OK\ndocs/releases/remediation-013/local/approval-before-edit/review-b-07/proof/native-source-read.json: OK\ndocs/releases/remediation-013/local/approval-before-edit/review-b-07/proof/supplied-input.json: OK\ndocs/releases/remediation-013/local/approval-before-edit/review-b-07/proof/task-result-prefix.json: OK\ndocs/releases/remediation-013/local/approval-before-edit/review-b-07/record.json: OK\ndocs/releases/remediation-013/local/approval-before-edit/review-b-07/review.md: OK\ndocs/releases/remediation-013/local/artifact-manifest.json: OK\ndocs/releases/remediation-013/local/authorized-program/review-c-06/assessment.json: OK\ndocs/releases/remediation-013/local/authorized-program/review-c-06/proof/native-source-read.json: OK\ndocs/releases/remediation-013/local/authorized-program/review-c-06/proof/supplied-input.json: OK\ndocs/releases/remediation-013/local/authorized-program/review-c-06/proof/task-result-prefix.json: OK\ndocs/releases/remediation-013/local/authorized-program/review-c-06/record.json: OK\ndocs/releases/remediation-013/local/authorized-program/review-c-06/review.md: OK\ndocs/releases/remediation-013/local/benny-existing-pr/review-a-09/assessment.json: OK\ndocs/releases/remediation-013/local/benny-existing-pr/review-a-09/proof/01-attempt-receipt.json.excerpt.json: OK\ndocs/releases/remediation-013/local/benny-existing-pr/review-a-09/proof/02-lead-review.json.excerpt.json: OK\ndocs/releases/remediation-013/local/benny-existing-pr/review-a-09/proof/supplied-input.json: OK\ndocs/releases/remediation-013/local/benny-existing-pr/review-a-09/proof/task-result-prefix.json: OK\ndocs/releases/remediation-013/local/benny-existing-pr/review-a-09/record.json: OK\ndocs/releases/remediation-013/local/benny-existing-pr/review-a-09/review.md: OK\ndocs/releases/remediation-013/local/benny-source-thread-compensation/review-a-03/assessment.json: OK\ndocs/releases/remediation-013/local/benny-source-thread-compensation/review-a-03/proof/01-attempt-event.json.excerpt.json: OK\ndocs/releases/remediation-013/local/benny-source-thread-compensation/review-a-03/proof/02-operations.raw.json.excerpt.json: OK\ndocs/releases/remediation-013/local/benny-source-thread-compensation/review-a-03/proof/supplied-input.json: OK\ndocs/releases/remediation-013/local/benny-source-thread-compensation/review-a-03/proof/task-result-prefix.json: OK\ndocs/releases/remediation-013/local/benny-source-thread-compensation/review-a-03/record.json: OK\ndocs/releases/remediation-013/local/benny-source-thread-compensation/review-a-03/review.md: OK\ndocs/releases/remediation-013/local/benny-unsupported-trigger/review-a-10/assessment.json: OK\ndocs/releases/remediation-013/local/benny-unsupported-trigger/review-a-10/proof/supplied-input.json: OK\ndocs/releases/remediation-013/local/benny-unsupported-trigger/review-a-10/proof/task-result-prefix.json: OK\ndocs/releases/remediation-013/local/benny-unsupported-trigger/review-a-10/record.json: OK\ndocs/releases/remediation-013/local/benny-unsupported-trigger/review-a-10/review.md: OK\ndocs/releases/remediation-013/local/boundary-design/review-b-10/assessment.json: OK\ndocs/releases/remediation-013/local/boundary-design/review-b-10/proof/01-replacement-assignments.json.excerpt.json: OK\ndocs/releases/remediation-013/local/boundary-design/review-b-10/proof/02-method-receipt.json.excerpt.json: OK\ndocs/releases/remediation-013/local/boundary-design/review-b-10/proof/03-verification-receipt.json.excerpt.json: OK\ndocs/releases/remediation-013/local/boundary-design/review-b-10/proof/fixture/evidence/verification-receipt.json: OK\ndocs/releases/remediation-013/local/boundary-design/review-b-10/proof/fixture/working/batch.ts: OK\ndocs/releases/remediation-013/local/boundary-design/review-b-10/proof/fixture/working/consumer.ts: OK\ndocs/releases/remediation-013/local/boundary-design/review-b-10/proof/native-source-read.json: OK\ndocs/releases/remediation-013/local/boundary-design/review-b-10/proof/task-result-prefix.json: OK\ndocs/releases/remediation-013/local/boundary-design/review-b-10/record.json: OK\ndocs/releases/remediation-013/local/boundary-design/review-b-10/review.md: OK\ndocs/releases/remediation-013/local/bounded-improvement/review-b-02/assessment.json: OK\ndocs/releases/remediation-013/local/bounded-improvement/review-b-02/proof/01-design-method-receipt.json.excerpt.json: OK\ndocs/releases/remediation-013/local/bounded-improvement/review-b-02/proof/02-coordinator-review.json.excerpt.json: OK\ndocs/releases/remediation-013/local/bounded-improvement/review-b-02/proof/native-source-read.json: OK\ndocs/releases/remediation-013/local/bounded-improvement/review-b-02/proof/supplied-input.json: OK\ndocs/releases/remediation-013/local/bounded-improvement/review-b-02/proof/task-result-prefix.json: OK\ndocs/releases/remediation-013/local/bounded-improvement/review-b-02/record.json: OK\ndocs/releases/remediation-013/local/bounded-improvement/review-b-02/review.md: OK\ndocs/releases/remediation-013/local/bounded-poll/review-a-12/assessment.json: OK\ndocs/releases/remediation-013/local/bounded-poll/review-a-12/proof/01-result.json.excerpt.json: OK\ndocs/releases/remediation-013/local/bounded-poll/review-a-12/proof/02-receipt.json.excerpt.json: OK\ndocs/releases/remediation-013/local/bounded-poll/review-a-12/proof/03-stdout.txt.excerpt.json: OK\ndocs/releases/remediation-013/local/bounded-poll/review-a-12/proof/04-native-pty.json.excerpt.json: OK\ndocs/releases/remediation-013/local/bounded-poll/review-a-12/proof/05-log-triage.json.excerpt.json: OK\ndocs/releases/remediation-013/local/bounded-poll/review-a-12/record.json: OK\ndocs/releases/remediation-013/local/bounded-poll/review-a-12/review.md: OK\ndocs/releases/remediation-013/local/contiguous-verified-stack/review-a-13/assessment.json: OK\ndocs/releases/remediation-013/local/contiguous-verified-stack/review-a-13/proof/01-result.json.excerpt.json: OK\ndocs/releases/remediation-013/local/contiguous-verified-stack/review-a-13/proof/02-noise-report.json.excerpt.json: OK\ndocs/releases/remediation-013/local/contiguous-verified-stack/review-a-13/proof/03-merge-raw.json.excerpt.json: OK\ndocs/releases/remediation-013/local/contiguous-verified-stack/review-a-13/proof/04-result.json.excerpt.json: OK\ndocs/releases/remediation-013/local/contiguous-verified-stack/review-a-13/proof/05-pty-raw.json.excerpt.json: OK\ndocs/releases/remediation-013/local/contiguous-verified-stack/review-a-13/proof/06-result.json.excerpt.json: OK\ndocs/releases/remediation-013/local/contiguous-verified-stack/review-a-13/proof/07-pty.json.excerpt.json: OK\ndocs/releases/remediation-013/local/contiguous-verified-stack/review-a-13/proof/08-result.json.excerpt.json: OK\ndocs/releases/remediation-013/local/contiguous-verified-stack/review-a-13/proof/native-source-read.json: OK\ndocs/releases/remediation-013/local/contiguous-verified-stack/review-a-13/record.json: OK\ndocs/releases/remediation-013/local/contiguous-verified-stack/review-a-13/review.md: OK\ndocs/releases/remediation-013/local/contiguous-verified-stack/review-b-14/assessment.json: OK\ndocs/releases/remediation-013/local/contiguous-verified-stack/review-b-14/proof/01-result.json.excerpt.json: OK\ndocs/releases/remediation-013/local/contiguous-verified-stack/review-b-14/proof/02-result.json.excerpt.json: OK\ndocs/releases/remediation-013/local/contiguous-verified-stack/review-b-14/proof/03-result.json.excerpt.json: OK\ndocs/releases/remediation-013/local/contiguous-verified-stack/review-b-14/proof/05-actual-pty-tool.json.excerpt.json: OK\ndocs/releases/remediation-013/local/contiguous-verified-stack/review-b-14/proof/06-patches.json.excerpt.json: OK\ndocs/releases/remediation-013/local/contiguous-verified-stack/review-b-14/proof/07-result.json.excerpt.json: OK\ndocs/releases/remediation-013/local/contiguous-verified-stack/review-b-14/proof/native-source-read.json: OK\ndocs/releases/remediation-013/local/contiguous-verified-stack/review-b-14/proof/task-result-prefix.json: OK\ndocs/releases/remediation-013/local/contiguous-verified-stack/review-b-14/record.json: OK\ndocs/releases/remediation-013/local/contiguous-verified-stack/review-b-14/review.md: OK\ndocs/releases/remediation-013/local/dependent-caller/review-b-08/assessment.json: OK\ndocs/releases/remediation-013/local/dependent-caller/review-b-08/proof/01-after-probe-receipt.json.excerpt.json: OK\ndocs/releases/remediation-013/local/dependent-caller/review-b-08/proof/02-before-comparison-receipt.json.excerpt.json: OK\ndocs/releases/remediation-013/local/dependent-caller/review-b-08/proof/supplied-input.json: OK\ndocs/releases/remediation-013/local/dependent-caller/review-b-08/proof/task-result-prefix.json: OK\ndocs/releases/remediation-013/local/dependent-caller/review-b-08/record.json: OK\ndocs/releases/remediation-013/local/dependent-caller/review-b-08/review.md: OK\ndocs/releases/remediation-013/local/draft-only-authorized/review-a-01/assessment.json: OK\ndocs/releases/remediation-013/local/draft-only-authorized/review-a-01/proof/01-observations.json.excerpt.json: OK\ndocs/releases/remediation-013/local/draft-only-authorized/review-a-01/proof/supplied-input.json: OK\ndocs/releases/remediation-013/local/draft-only-authorized/review-a-01/proof/task-result-prefix.json: OK\ndocs/releases/remediation-013/local/draft-only-authorized/review-a-01/record.json: OK\ndocs/releases/remediation-013/local/draft-only-authorized/review-a-01/review.md: OK\ndocs/releases/remediation-013/local/existing-personal-mode/review-b-05/assessment.json: OK\ndocs/releases/remediation-013/local/existing-personal-mode/review-b-05/proof/01-input-observation.json.excerpt.json: OK\ndocs/releases/remediation-013/local/existing-personal-mode/review-b-05/proof/02-coordinator-review.json.excerpt.json: OK\ndocs/releases/remediation-013/local/existing-personal-mode/review-b-05/proof/native-source-read.json: OK\ndocs/releases/remediation-013/local/existing-personal-mode/review-b-05/proof/supplied-input.json: OK\ndocs/releases/remediation-013/local/existing-personal-mode/review-b-05/proof/task-result-prefix.json: OK\ndocs/releases/remediation-013/local/existing-personal-mode/review-b-05/record.json: OK\ndocs/releases/remediation-013/local/existing-personal-mode/review-b-05/review.md: OK\ndocs/releases/remediation-013/local/fresh-worker-mode/review-a-06/assessment.json: OK\ndocs/releases/remediation-013/local/fresh-worker-mode/review-a-06/proof/01-lead-initial-review.json.excerpt.json: OK\ndocs/releases/remediation-013/local/fresh-worker-mode/review-a-06/proof/02-lead-method-validation.json.excerpt.json: OK\ndocs/releases/remediation-013/local/fresh-worker-mode/review-a-06/proof/03-arena-round3.method-receipt.json.excerpt.json: OK\ndocs/releases/remediation-013/local/fresh-worker-mode/review-a-06/proof/native-source-read.json: OK\ndocs/releases/remediation-013/local/fresh-worker-mode/review-a-06/proof/supplied-input.json: OK\ndocs/releases/remediation-013/local/fresh-worker-mode/review-a-06/proof/task-result-prefix.json: OK\ndocs/releases/remediation-013/local/fresh-worker-mode/review-a-06/record.json: OK\ndocs/releases/remediation-013/local/fresh-worker-mode/review-a-06/review.md: OK\ndocs/releases/remediation-013/local/grounded-explanation/review-c-08/assessment.json: OK\ndocs/releases/remediation-013/local/grounded-explanation/review-c-08/proof/01-worker-events.json.excerpt.json: OK\ndocs/releases/remediation-013/local/grounded-explanation/review-c-08/proof/02-verification.json.excerpt.json: OK\ndocs/releases/remediation-013/local/grounded-explanation/review-c-08/proof/supplied-input.json: OK\ndocs/releases/remediation-013/local/grounded-explanation/review-c-08/proof/task-result-prefix.json: OK\ndocs/releases/remediation-013/local/grounded-explanation/review-c-08/record.json: OK\ndocs/releases/remediation-013/local/grounded-explanation/review-c-08/review.md: OK\ndocs/releases/remediation-013/local/guides-github-absent/review-b-01/assessment.json: OK\ndocs/releases/remediation-013/local/guides-github-absent/review-b-01/proof/01-input-source-receipt.json.excerpt.json: OK\ndocs/releases/remediation-013/local/guides-github-absent/review-b-01/proof/02-verification.json.excerpt.json: OK\ndocs/releases/remediation-013/local/guides-github-absent/review-b-01/proof/03-coordinator-review.json.excerpt.json: OK\ndocs/releases/remediation-013/local/guides-github-absent/review-b-01/proof/supplied-input.json: OK\ndocs/releases/remediation-013/local/guides-github-absent/review-b-01/proof/task-result-prefix.json: OK\ndocs/releases/remediation-013/local/guides-github-absent/review-b-01/record.json: OK\ndocs/releases/remediation-013/local/guides-github-absent/review-b-01/review.md: OK\ndocs/releases/remediation-013/local/guides-ordinary-chatgpt/review-c-07/assessment.json: OK\ndocs/releases/remediation-013/local/guides-ordinary-chatgpt/review-c-07/proof/01-hashes-and-checks.json.excerpt.json: OK\ndocs/releases/remediation-013/local/guides-ordinary-chatgpt/review-c-07/proof/native-source-read.json: OK\ndocs/releases/remediation-013/local/guides-ordinary-chatgpt/review-c-07/proof/supplied-input.json: OK\ndocs/releases/remediation-013/local/guides-ordinary-chatgpt/review-c-07/proof/task-result-prefix.json: OK\ndocs/releases/remediation-013/local/guides-ordinary-chatgpt/review-c-07/record.json: OK\ndocs/releases/remediation-013/local/guides-ordinary-chatgpt/review-c-07/review.md: OK\ndocs/releases/remediation-013/local/guides-worker-chatgpt/review-c-12/assessment.json: OK\ndocs/releases/remediation-013/local/guides-worker-chatgpt/review-c-12/proof/01-guide_owner.assignment.json.excerpt.json: OK\ndocs/releases/remediation-013/local/guides-worker-chatgpt/review-c-12/proof/02-guide_owner.inspection.json.excerpt.json: OK\ndocs/releases/remediation-013/local/guides-worker-chatgpt/review-c-12/proof/supplied-input.json: OK\ndocs/releases/remediation-013/local/guides-worker-chatgpt/review-c-12/proof/task-result-prefix.json: OK\ndocs/releases/remediation-013/local/guides-worker-chatgpt/review-c-12/record.json: OK\ndocs/releases/remediation-013/local/guides-worker-chatgpt/review-c-12/review.md: OK\ndocs/releases/remediation-013/local/history-evidence/review-c-09/assessment.json: OK\ndocs/releases/remediation-013/local/history-evidence/review-c-09/proof/01-worker-events.json.excerpt.json: OK\ndocs/releases/remediation-013/local/history-evidence/review-c-09/proof/02-coverage.json.excerpt.json: OK\ndocs/releases/remediation-013/local/history-evidence/review-c-09/proof/03-actions.json.excerpt.json: OK\ndocs/releases/remediation-013/local/history-evidence/review-c-09/proof/04-verification.json.excerpt.json: OK\ndocs/releases/remediation-013/local/history-evidence/review-c-09/proof/supplied-input.json: OK\ndocs/releases/remediation-013/local/history-evidence/review-c-09/proof/task-result-prefix.json: OK\ndocs/releases/remediation-013/local/history-evidence/review-c-09/record.json: OK\ndocs/releases/remediation-013/local/history-evidence/review-c-09/review.md: OK\ndocs/releases/remediation-013/local/inherited-identical-models/review-c-14/assessment.json: OK\ndocs/releases/remediation-013/local/inherited-identical-models/review-c-14/proof/01-inherited_owner.assignment.json.excerpt.json: OK\ndocs/releases/remediation-013/local/inherited-identical-models/review-c-14/proof/02-inherited_owner.inspection.json.excerpt.json: OK\ndocs/releases/remediation-013/local/inherited-identical-models/review-c-14/proof/03-inherited_comments.assignment.json.excerpt.json: OK\ndocs/releases/remediation-013/local/inherited-identical-models/review-c-14/proof/04-inherited_comments.inspection.json.excerpt.json: OK\ndocs/releases/remediation-013/local/inherited-identical-models/review-c-14/proof/supplied-input.json: OK\ndocs/releases/remediation-013/local/inherited-identical-models/review-c-14/proof/task-result-prefix.json: OK\ndocs/releases/remediation-013/local/inherited-identical-models/review-c-14/record.json: OK\ndocs/releases/remediation-013/local/inherited-identical-models/review-c-14/review.md: OK\ndocs/releases/remediation-013/local/interrupted-action/review-a-04/assessment.json: OK\ndocs/releases/remediation-013/local/interrupted-action/review-a-04/proof/01-initial-policy-withheld.json.excerpt.json: OK\ndocs/releases/remediation-013/local/interrupted-action/review-a-04/proof/02-partial-assignment.json.excerpt.json: OK\ndocs/releases/remediation-013/local/interrupted-action/review-a-04/proof/03-stop-terminal-receipt.json.excerpt.json: OK\ndocs/releases/remediation-013/local/interrupted-action/review-a-04/proof/04-quarantine-manifest.json.excerpt.json: OK\ndocs/releases/remediation-013/local/interrupted-action/review-a-04/proof/05-checkpoint-readback.json.excerpt.json: OK\ndocs/releases/remediation-013/local/interrupted-action/review-a-04/proof/native-source-read.json: OK\ndocs/releases/remediation-013/local/interrupted-action/review-a-04/proof/supplied-input.json: OK\ndocs/releases/remediation-013/local/interrupted-action/review-a-04/proof/task-result-prefix.json: OK\ndocs/releases/remediation-013/local/interrupted-action/review-a-04/record.json: OK\ndocs/releases/remediation-013/local/interrupted-action/review-a-04/review.md: OK\ndocs/releases/remediation-013/local/invalid-input/review-a-15/assessment.json: OK\ndocs/releases/remediation-013/local/invalid-input/review-a-15/proof/01-checks.json.excerpt.json: OK\ndocs/releases/remediation-013/local/invalid-input/review-a-15/proof/02-method-receipt.json.excerpt.json: OK\ndocs/releases/remediation-013/local/invalid-input/review-a-15/proof/fixture/checks.json: OK\ndocs/releases/remediation-013/local/invalid-input/review-a-15/proof/fixture/working/adapter.ts: OK\ndocs/releases/remediation-013/local/invalid-input/review-a-15/proof/fixture/working/boundary.test.mjs: OK\ndocs/releases/remediation-013/local/invalid-input/review-a-15/proof/fixture/working/domain.test.mjs: OK\ndocs/releases/remediation-013/local/invalid-input/review-a-15/proof/fixture/working/domain.ts: OK\ndocs/releases/remediation-013/local/invalid-input/review-a-15/proof/fixture/working/internal-caller.ts: OK\ndocs/releases/remediation-013/local/invalid-input/review-a-15/proof/native-source-read.json: OK\ndocs/releases/remediation-013/local/invalid-input/review-a-15/record.json: OK\ndocs/releases/remediation-013/local/invalid-input/review-a-15/review.md: OK\ndocs/releases/remediation-013/local/invalid-state/review-b-06/assessment.json: OK\ndocs/releases/remediation-013/local/invalid-state/review-b-06/proof/01-compiler-results.json.excerpt.json: OK\ndocs/releases/remediation-013/local/invalid-state/review-b-06/proof/02-runtime-results.json.excerpt.json: OK\ndocs/releases/remediation-013/local/invalid-state/review-b-06/proof/03-final-verification.json.excerpt.json: OK\ndocs/releases/remediation-013/local/invalid-state/review-b-06/proof/supplied-input.json: OK\ndocs/releases/remediation-013/local/invalid-state/review-b-06/proof/task-result-prefix.json: OK\ndocs/releases/remediation-013/local/invalid-state/review-b-06/record.json: OK\ndocs/releases/remediation-013/local/invalid-state/review-b-06/review.md: OK\ndocs/releases/remediation-013/local/migration-end-state/review-a-14/assessment.json: OK\ndocs/releases/remediation-013/local/migration-end-state/review-a-14/proof/01-phase2.json.excerpt.json: OK\ndocs/releases/remediation-013/local/migration-end-state/review-a-14/proof/02-check-results.json.excerpt.json: OK\ndocs/releases/remediation-013/local/migration-end-state/review-a-14/proof/03-method-receipt.json.excerpt.json: OK\ndocs/releases/remediation-013/local/migration-end-state/review-a-14/proof/fixture/check-results.json: OK\ndocs/releases/remediation-013/local/migration-end-state/review-a-14/proof/fixture/working/adapters/http.ts: OK\ndocs/releases/remediation-013/local/migration-end-state/review-a-14/proof/fixture/working/batch.ts: OK\ndocs/releases/remediation-013/local/migration-end-state/review-a-14/proof/fixture/working/consumer.ts: OK\ndocs/releases/remediation-013/local/migration-end-state/review-a-14/proof/fixture/working/domain/order.ts: OK\ndocs/releases/remediation-013/local/migration-end-state/review-a-14/proof/fixture/working/index.ts: OK\ndocs/releases/remediation-013/local/migration-end-state/review-a-14/proof/native-source-read.json: OK\ndocs/releases/remediation-013/local/migration-end-state/review-a-14/record.json: OK\ndocs/releases/remediation-013/local/migration-end-state/review-a-14/review.md: OK\ndocs/releases/remediation-013/local/no-persistent-tool/review-a-08/assessment.json: OK\ndocs/releases/remediation-013/local/no-persistent-tool/review-a-08/proof/01-baseline.json.excerpt.json: OK\ndocs/releases/remediation-013/local/no-persistent-tool/review-a-08/proof/02-after.json.excerpt.json: OK\ndocs/releases/remediation-013/local/no-persistent-tool/review-a-08/proof/03-unit-negative.json.excerpt.json: OK\ndocs/releases/remediation-013/local/no-persistent-tool/review-a-08/proof/native-source-read.json: OK\ndocs/releases/remediation-013/local/no-persistent-tool/review-a-08/proof/supplied-input.json: OK\ndocs/releases/remediation-013/local/no-persistent-tool/review-a-08/proof/task-result-prefix.json: OK\ndocs/releases/remediation-013/local/no-persistent-tool/review-a-08/record.json: OK\ndocs/releases/remediation-013/local/no-persistent-tool/review-a-08/review.md: OK\ndocs/releases/remediation-013/local/omissions.json: OK\ndocs/releases/remediation-013/local/owned-safe-cleanup/review-a-05/assessment.json: OK\ndocs/releases/remediation-013/local/owned-safe-cleanup/review-a-05/proof/01-usage-export.json.excerpt.json: OK\ndocs/releases/remediation-013/local/owned-safe-cleanup/review-a-05/proof/02-revalidation.json.excerpt.json: OK\ndocs/releases/remediation-013/local/owned-safe-cleanup/review-a-05/proof/native-source-read.json: OK\ndocs/releases/remediation-013/local/owned-safe-cleanup/review-a-05/proof/supplied-input.json: OK\ndocs/releases/remediation-013/local/owned-safe-cleanup/review-a-05/proof/task-result-prefix.json: OK\ndocs/releases/remediation-013/local/owned-safe-cleanup/review-a-05/record.json: OK\ndocs/releases/remediation-013/local/owned-safe-cleanup/review-a-05/review.md: OK\ndocs/releases/remediation-013/local/package-support-contracts/review-a-16/assessment.json: OK\ndocs/releases/remediation-013/local/package-support-contracts/review-a-16/proof/01-ignore-checks.json.excerpt.json: OK\ndocs/releases/remediation-013/local/package-support-contracts/review-a-16/proof/02-compiler-checks.json.excerpt.json: OK\ndocs/releases/remediation-013/local/package-support-contracts/review-a-16/proof/03-final-check.json.excerpt.json: OK\ndocs/releases/remediation-013/local/package-support-contracts/review-a-16/record.json: OK\ndocs/releases/remediation-013/local/package-support-contracts/review-a-16/review.md: OK\ndocs/releases/remediation-013/local/partition-and-race/review-c-04/assessment.json: OK\ndocs/releases/remediation-013/local/partition-and-race/review-c-04/proof/01-method-receipt.json.excerpt.json: OK\ndocs/releases/remediation-013/local/partition-and-race/review-c-04/proof/02-later-available-method-receipt.json.excerpt.json: OK\ndocs/releases/remediation-013/local/partition-and-race/review-c-04/proof/03-result.json.excerpt.json: OK\ndocs/releases/remediation-013/local/partition-and-race/review-c-04/proof/04-result.json.excerpt.json: OK\ndocs/releases/remediation-013/local/partition-and-race/review-c-04/proof/05-partial.json.excerpt.json: OK\ndocs/releases/remediation-013/local/partition-and-race/review-c-04/proof/native-source-read.json: OK\ndocs/releases/remediation-013/local/partition-and-race/review-c-04/proof/supplied-input.json: OK\ndocs/releases/remediation-013/local/partition-and-race/review-c-04/proof/task-result-prefix.json: OK\ndocs/releases/remediation-013/local/partition-and-race/review-c-04/record.json: OK\ndocs/releases/remediation-013/local/partition-and-race/review-c-04/review.md: OK\ndocs/releases/remediation-013/local/preserved-behavior/review-c-02/assessment.json: OK\ndocs/releases/remediation-013/local/preserved-behavior/review-c-02/proof/01-baseline.receipt.json.excerpt.json: OK\ndocs/releases/remediation-013/local/preserved-behavior/review-c-02/proof/02-primary-owner-equivalence.receipt.json.excerpt.json: OK\ndocs/releases/remediation-013/local/preserved-behavior/review-c-02/proof/03-coverage-owner-equivalence.receipt.json.excerpt.json: OK\ndocs/releases/remediation-013/local/preserved-behavior/review-c-02/proof/04-arena-method-receipt.json.excerpt.json: OK\ndocs/releases/remediation-013/local/preserved-behavior/review-c-02/proof/05-workers-withheld-final-reviewed-equivalence.receipt.json.excerpt.json: OK\ndocs/releases/remediation-013/local/preserved-behavior/review-c-02/proof/supplied-input.json: OK\ndocs/releases/remediation-013/local/preserved-behavior/review-c-02/proof/task-result-prefix.json: OK\ndocs/releases/remediation-013/local/preserved-behavior/review-c-02/record.json: OK\ndocs/releases/remediation-013/local/preserved-behavior/review-c-02/review.md: OK\ndocs/releases/remediation-013/local/publication-validation.json: OK\ndocs/releases/remediation-013/local/real-app-contract/review-b-12/assessment.json: OK\ndocs/releases/remediation-013/local/real-app-contract/review-b-12/proof/native-source-read.json: OK\ndocs/releases/remediation-013/local/real-app-contract/review-b-12/proof/task-result-prefix.json: OK\ndocs/releases/remediation-013/local/real-app-contract/review-b-12/record.json: OK\ndocs/releases/remediation-013/local/real-app-contract/review-b-12/review.md: OK\ndocs/releases/remediation-013/local/repeated-failure/review-c-03/assessment.json: OK\ndocs/releases/remediation-013/local/repeated-failure/review-c-03/proof/01-command-observations.json.excerpt.json: OK\ndocs/releases/remediation-013/local/repeated-failure/review-c-03/proof/supplied-input.json: OK\ndocs/releases/remediation-013/local/repeated-failure/review-c-03/proof/task-result-prefix.json: OK\ndocs/releases/remediation-013/local/repeated-failure/review-c-03/record.json: OK\ndocs/releases/remediation-013/local/repeated-failure/review-c-03/review.md: OK\ndocs/releases/remediation-013/local/replay/review-b-04/assessment.json: OK\ndocs/releases/remediation-013/local/replay/review-b-04/proof/01-inspection.json.excerpt.json: OK\ndocs/releases/remediation-013/local/replay/review-b-04/proof/02-how-assignment.json.excerpt.json: OK\ndocs/releases/remediation-013/local/replay/review-b-04/proof/03-coordinator-review.json.excerpt.json: OK\ndocs/releases/remediation-013/local/replay/review-b-04/proof/native-source-read.json: OK\ndocs/releases/remediation-013/local/replay/review-b-04/proof/supplied-input.json: OK\ndocs/releases/remediation-013/local/replay/review-b-04/proof/task-result-prefix.json: OK\ndocs/releases/remediation-013/local/replay/review-b-04/record.json: OK\ndocs/releases/remediation-013/local/replay/review-b-04/review.md: OK\ndocs/releases/remediation-013/local/reproduce-before-fix/review-b-13/assessment.json: OK\ndocs/releases/remediation-013/local/reproduce-before-fix/review-b-13/proof/01-search-after-exact.json.excerpt.json: OK\ndocs/releases/remediation-013/local/reproduce-before-fix/review-b-13/proof/native-source-read.json: OK\ndocs/releases/remediation-013/local/reproduce-before-fix/review-b-13/proof/task-result-prefix.json: OK\ndocs/releases/remediation-013/local/reproduce-before-fix/review-b-13/record.json: OK\ndocs/releases/remediation-013/local/reproduce-before-fix/review-b-13/review.md: OK\ndocs/releases/remediation-013/local/route-recipe/review-b-03/assessment.json: OK\ndocs/releases/remediation-013/local/route-recipe/review-b-03/proof/01-coordinator-review.json.excerpt.json: OK\ndocs/releases/remediation-013/local/route-recipe/review-b-03/proof/native-source-read.json: OK\ndocs/releases/remediation-013/local/route-recipe/review-b-03/proof/supplied-input.json: OK\ndocs/releases/remediation-013/local/route-recipe/review-b-03/proof/task-result-prefix.json: OK\ndocs/releases/remediation-013/local/route-recipe/review-b-03/record.json: OK\ndocs/releases/remediation-013/local/route-recipe/review-b-03/review.md: OK\ndocs/releases/remediation-013/local/shared-path-conflict/review-b-09/assessment.json: OK\ndocs/releases/remediation-013/local/shared-path-conflict/review-b-09/proof/01-ownership-proposals.json.excerpt.json: OK\ndocs/releases/remediation-013/local/shared-path-conflict/review-b-09/proof/02-ownership-resolution.json.excerpt.json: OK\ndocs/releases/remediation-013/local/shared-path-conflict/review-b-09/proof/03-method-receipt.json.excerpt.json: OK\ndocs/releases/remediation-013/local/shared-path-conflict/review-b-09/proof/native-source-read.json: OK\ndocs/releases/remediation-013/local/shared-path-conflict/review-b-09/proof/supplied-input.json: OK\ndocs/releases/remediation-013/local/shared-path-conflict/review-b-09/proof/task-result-prefix.json: OK\ndocs/releases/remediation-013/local/shared-path-conflict/review-b-09/record.json: OK\ndocs/releases/remediation-013/local/shared-path-conflict/review-b-09/review.md: OK\ndocs/releases/remediation-013/local/stale-feature-map/review-a-17/assessment.json: OK\ndocs/releases/remediation-013/local/stale-feature-map/review-a-17/proof/01-process-events-final.json.excerpt.json: OK\ndocs/releases/remediation-013/local/stale-feature-map/review-a-17/proof/02-post-cleanup-result.json.excerpt.json: OK\ndocs/releases/remediation-013/local/stale-feature-map/review-a-17/proof/03-result.json.excerpt.json: OK\ndocs/releases/remediation-013/local/stale-feature-map/review-a-17/proof/task-result-prefix.json: OK\ndocs/releases/remediation-013/local/stale-feature-map/review-a-17/record.json: OK\ndocs/releases/remediation-013/local/stale-feature-map/review-a-17/review.md: OK\ndocs/releases/remediation-013/local/supported-authoring/review-b-11/assessment.json: OK\ndocs/releases/remediation-013/local/supported-authoring/review-b-11/proof/01-final-validation.json.excerpt.json: OK\ndocs/releases/remediation-013/local/supported-authoring/review-b-11/proof/02-validator-probes.json.excerpt.json: OK\ndocs/releases/remediation-013/local/supported-authoring/review-b-11/proof/03-link-probes.json.excerpt.json: OK\ndocs/releases/remediation-013/local/supported-authoring/review-b-11/proof/04-artifact-checks.json.excerpt.json: OK\ndocs/releases/remediation-013/local/supported-authoring/review-b-11/proof/05-receipt.json.excerpt.json: OK\ndocs/releases/remediation-013/local/supported-authoring/review-b-11/proof/task-result-prefix.json: OK\ndocs/releases/remediation-013/local/supported-authoring/review-b-11/record.json: OK\ndocs/releases/remediation-013/local/supported-authoring/review-b-11/review.md: OK\ndocs/releases/remediation-013/local/trace-provenance/review-c-05/assessment.json: OK\ndocs/releases/remediation-013/local/trace-provenance/review-c-05/proof/01-observations.json.excerpt.json: OK\ndocs/releases/remediation-013/local/trace-provenance/review-c-05/proof/supplied-input.json: OK\ndocs/releases/remediation-013/local/trace-provenance/review-c-05/proof/task-result-prefix.json: OK\ndocs/releases/remediation-013/local/trace-provenance/review-c-05/record.json: OK\ndocs/releases/remediation-013/local/trace-provenance/review-c-05/review.md: OK\ndocs/releases/remediation-013/local/unavailable-persistence/review-a-02/assessment.json: OK\ndocs/releases/remediation-013/local/unavailable-persistence/review-a-02/proof/01-assignment.json.excerpt.json: OK\ndocs/releases/remediation-013/local/unavailable-persistence/review-a-02/proof/02-later-unit-set.raw.json.excerpt.json: OK\ndocs/releases/remediation-013/local/unavailable-persistence/review-a-02/proof/03-later-unit-read.raw.json.excerpt.json: OK\ndocs/releases/remediation-013/local/unavailable-persistence/review-a-02/proof/04-later-store-readback.json.excerpt.json: OK\ndocs/releases/remediation-013/local/unavailable-persistence/review-a-02/proof/native-persistence-readback.json: OK\ndocs/releases/remediation-013/local/unavailable-persistence/review-a-02/proof/native-source-read.json: OK\ndocs/releases/remediation-013/local/unavailable-persistence/review-a-02/proof/supplied-input.json: OK\ndocs/releases/remediation-013/local/unavailable-persistence/review-a-02/proof/task-result-prefix.json: OK\ndocs/releases/remediation-013/local/unavailable-persistence/review-a-02/record.json: OK\ndocs/releases/remediation-013/local/unavailable-persistence/review-a-02/review.md: OK\ndocs/releases/remediation-013/local/unit-state/review-a-11/assessment.json: OK\ndocs/releases/remediation-013/local/unit-state/review-a-11/proof/01-result.json.excerpt.json: OK\ndocs/releases/remediation-013/local/unit-state/review-a-11/proof/02-fixture-generation2.json.excerpt.json: OK\ndocs/releases/remediation-013/local/unit-state/review-a-11/proof/task-result-prefix.json: OK\ndocs/releases/remediation-013/local/unit-state/review-a-11/record.json: OK\ndocs/releases/remediation-013/local/unit-state/review-a-11/review.md: OK\ndocs/releases/remediation-013/local/units-and-proof/review-a-07/assessment.json: OK\ndocs/releases/remediation-013/local/units-and-proof/review-a-07/proof/01-variants.json.excerpt.json: OK\ndocs/releases/remediation-013/local/units-and-proof/review-a-07/proof/02-checker-main-initial.json.excerpt.json: OK\ndocs/releases/remediation-013/local/units-and-proof/review-a-07/proof/03-checker-main.json.excerpt.json: OK\ndocs/releases/remediation-013/local/units-and-proof/review-a-07/proof/04-final-checks.json.excerpt.json: OK\ndocs/releases/remediation-013/local/units-and-proof/review-a-07/proof/native-source-read.json: OK\ndocs/releases/remediation-013/local/units-and-proof/review-a-07/proof/supplied-input.json: OK\ndocs/releases/remediation-013/local/units-and-proof/review-a-07/proof/task-result-prefix.json: OK\ndocs/releases/remediation-013/local/units-and-proof/review-a-07/record.json: OK\ndocs/releases/remediation-013/local/units-and-proof/review-a-07/review.md: OK\ndocs/releases/remediation-013/local/unsupported-selected-model/review-c-13/assessment.json: OK\ndocs/releases/remediation-013/local/unsupported-selected-model/review-c-13/proof/01-unsupported_owner.assignment.json.excerpt.json: OK\ndocs/releases/remediation-013/local/unsupported-selected-model/review-c-13/proof/supplied-input.json: OK\ndocs/releases/remediation-013/local/unsupported-selected-model/review-c-13/proof/task-result-prefix.json: OK\ndocs/releases/remediation-013/local/unsupported-selected-model/review-c-13/record.json: OK\ndocs/releases/remediation-013/local/unsupported-selected-model/review-c-13/review.md: OK\ndocs/releases/remediation-013/local/user-correction/review-c-01/assessment.json: OK\ndocs/releases/remediation-013/local/user-correction/review-c-01/proof/01-parent-inspection.json.excerpt.json: OK\ndocs/releases/remediation-013/local/user-correction/review-c-01/proof/supplied-input.json: OK\ndocs/releases/remediation-013/local/user-correction/review-c-01/proof/task-result-prefix.json: OK\ndocs/releases/remediation-013/local/user-correction/review-c-01/record.json: OK\ndocs/releases/remediation-013/local/user-correction/review-c-01/review.md: OK\ndocs/releases/remediation-013/privacy-projection.json: OK\ndocs/releases/remediation-013/publication-adjustments.json: OK\ndocs/releases/remediation-013/publication-checks.json: OK\ndocs/releases/remediation-013/recovered-local.json: OK\ndocs/releases/remediation-013/source-checks.json: OK\ndocs/releases/remediation-013/supplemental/README.md: OK\ndocs/releases/remediation-013/supplemental/assessments/01-local-user-tradeoff.json: OK\ndocs/releases/remediation-013/supplemental/assessments/02-local-dependency-readiness.json: OK\ndocs/releases/remediation-013/supplemental/assessments/03-local-benny-untrusted-marker.json: OK\ndocs/releases/remediation-013/supplemental/assessments/04-local-codex-setup-from-readme.json: OK\ndocs/releases/remediation-013/supplemental/assessments/05-local-read-only-answer.json: OK\ndocs/releases/remediation-013/supplemental/assessments/06-local-plain-restate.json: OK\ndocs/releases/remediation-013/supplemental/assessments/07-local-resume-revision.json: OK\ndocs/releases/remediation-013/supplemental/assessments/08-local-trace-path.json: OK\ndocs/releases/remediation-013/supplemental/assessments/09-local-typed-boundary.json: OK\ndocs/releases/remediation-013/supplemental/assessments/10-local-unknown-actual-model.json: OK\ndocs/releases/remediation-013/supplemental/assessments/11-local-symptom-repro.json: OK\ndocs/releases/remediation-013/supplemental/assessments/12-local-plain-restate-linked.json: OK\ndocs/releases/remediation-013/supplemental/assessments/13-local-stack-resume.json: OK\ndocs/releases/remediation-013/supplemental/assessments/14-local-poteto-walkthrough.json: OK\ndocs/releases/remediation-013/supplemental/assessments/15-local-benny-missing-adapter.json: OK\ndocs/releases/remediation-013/supplemental/assessments/16-local-candidate-cross-review.json: OK\ndocs/releases/remediation-013/supplemental/assessments/17-local-swarm-walkthrough.json: OK\ndocs/releases/remediation-013/supplemental/assessments/18-local-shape-first.json: OK\ndocs/releases/remediation-013/supplemental/assessments/19-local-smaller-solution.json: OK\ndocs/releases/remediation-013/supplemental/assessments/20-local-unsupported-selected-model.json: OK\ndocs/releases/remediation-013/supplemental/assessments/21-local-guides-local-codex.json: OK\ndocs/releases/remediation-013/supplemental/assessments/22-local-unknown-model.json: OK\ndocs/releases/remediation-013/supplemental/assessments/23-local-missing-webhook.json: OK\ndocs/releases/remediation-013/supplemental/assessments/24-local-decision-trail.json: OK\ndocs/releases/remediation-013/supplemental/assessments/25-local-legal-header.json: OK\ndocs/releases/remediation-013/supplemental/assessments/26-local-arena-walkthrough.json: OK\ndocs/releases/remediation-013/supplemental/assessments/27-local-interrupted-external-write.json: OK\ndocs/releases/remediation-013/supplemental/assessments/28-local-denied-writes.json: OK\ndocs/releases/remediation-013/supplemental/assessments/29-local-repeated-rule.json: OK\ndocs/releases/remediation-013/supplemental/assessments/30-web-supported-authoring.json: OK\ndocs/releases/remediation-013/supplemental/assessments/31-web-invalid-input.json: OK\ndocs/releases/remediation-013/supplemental/assessments/32-web-package-support-contracts.json: OK\ndocs/releases/remediation-013/supplemental/assessments/33-web-missing-webhook.json: OK\ndocs/releases/remediation-013/supplemental/assessments/34-web-denied-writes.json: OK\ndocs/releases/remediation-013/supplemental/assessments/35-web-unknown-actual-model.json: OK\ndocs/releases/remediation-013/supplemental/assessments/36-web-unknown-model.json: OK\ndocs/releases/remediation-013/supplemental/assessments/37-web-symptom-repro.json: OK\ndocs/releases/remediation-013/supplemental/assessments/38-web-migration-units.json: OK\ndocs/releases/remediation-013/supplemental/assessments/39-web-real-render.json: OK\ndocs/releases/remediation-013/supplemental/assessments/40-web-smaller-solution.json: OK\ndocs/releases/remediation-013/supplemental/assessments/41-web-repeated-rule.json: OK\ndocs/releases/remediation-013/supplemental/assessments/42-web-false-success.json: OK\ndocs/releases/remediation-013/supplemental/assessments/43-web-no-persistent-tool.json: OK\ndocs/releases/remediation-013/supplemental/assessments/44-web-contiguous-verified-stack.json: OK\ndocs/releases/remediation-013/supplemental/index.json: OK\ndocs/releases/remediation-013/supplemental/manifest.json: OK\ndocs/releases/remediation-013/supplemental/proof/01-local-user-tradeoff-1.json: OK\ndocs/releases/remediation-013/supplemental/proof/01-local-user-tradeoff-2.json: OK\ndocs/releases/remediation-013/supplemental/proof/02-local-dependency-readiness-1.json: OK\ndocs/releases/remediation-013/supplemental/proof/02-local-dependency-readiness-2.json: OK\ndocs/releases/remediation-013/supplemental/proof/03-local-benny-untrusted-marker-1.json: OK\ndocs/releases/remediation-013/supplemental/proof/03-local-benny-untrusted-marker-2.json: OK\ndocs/releases/remediation-013/supplemental/proof/04-local-codex-setup-from-readme-1.json: OK\ndocs/releases/remediation-013/supplemental/proof/04-local-codex-setup-from-readme-2.json: OK\ndocs/releases/remediation-013/supplemental/proof/05-local-read-only-answer-1.json: OK\ndocs/releases/remediation-013/supplemental/proof/05-local-read-only-answer-2.json: OK\ndocs/releases/remediation-013/supplemental/proof/05-local-read-only-answer-3.json: OK\ndocs/releases/remediation-013/supplemental/proof/06-local-plain-restate-1.json: OK\ndocs/releases/remediation-013/supplemental/proof/07-local-resume-revision-1.json: OK\ndocs/releases/remediation-013/supplemental/proof/07-local-resume-revision-2.json: OK\ndocs/releases/remediation-013/supplemental/proof/07-local-resume-revision-3.json: OK\ndocs/releases/remediation-013/supplemental/proof/08-local-trace-path-1.json: OK\ndocs/releases/remediation-013/supplemental/proof/08-local-trace-path-2.json: OK\ndocs/releases/remediation-013/supplemental/proof/08-local-trace-path-3.json: OK\ndocs/releases/remediation-013/supplemental/proof/09-local-typed-boundary-1.json: OK\ndocs/releases/remediation-013/supplemental/proof/09-local-typed-boundary-2.json: OK\ndocs/releases/remediation-013/supplemental/proof/09-local-typed-boundary-3.json: OK\ndocs/releases/remediation-013/supplemental/proof/10-local-unknown-actual-model-1.json: OK\ndocs/releases/remediation-013/supplemental/proof/10-local-unknown-actual-model-2.json: OK\ndocs/releases/remediation-013/supplemental/proof/10-local-unknown-actual-model-3.json: OK\ndocs/releases/remediation-013/supplemental/proof/11-local-symptom-repro-1.json: OK\ndocs/releases/remediation-013/supplemental/proof/11-local-symptom-repro-2.json: OK\ndocs/releases/remediation-013/supplemental/proof/11-local-symptom-repro-3.json: OK\ndocs/releases/remediation-013/supplemental/proof/12-local-plain-restate-linked-1.json: OK\ndocs/releases/remediation-013/supplemental/proof/12-local-plain-restate-linked-2.json: OK\ndocs/releases/remediation-013/supplemental/proof/12-local-plain-restate-linked-3.json: OK\ndocs/releases/remediation-013/supplemental/proof/13-local-stack-resume-1.json: OK\ndocs/releases/remediation-013/supplemental/proof/13-local-stack-resume-2.json: OK\ndocs/releases/remediation-013/supplemental/proof/13-local-stack-resume-3.json: OK\ndocs/releases/remediation-013/supplemental/proof/14-local-poteto-walkthrough-1.json: OK\ndocs/releases/remediation-013/supplemental/proof/14-local-poteto-walkthrough-2.json: OK\ndocs/releases/remediation-013/supplemental/proof/15-local-benny-missing-adapter-1.json: OK\ndocs/releases/remediation-013/supplemental/proof/15-local-benny-missing-adapter-2.json: OK\ndocs/releases/remediation-013/supplemental/proof/15-local-benny-missing-adapter-3.json: OK\ndocs/releases/remediation-013/supplemental/proof/16-local-candidate-cross-review-1.json: OK\ndocs/releases/remediation-013/supplemental/proof/16-local-candidate-cross-review-2.json: OK\ndocs/releases/remediation-013/supplemental/proof/17-local-swarm-walkthrough-1.json: OK\ndocs/releases/remediation-013/supplemental/proof/17-local-swarm-walkthrough-2.json: OK\ndocs/releases/remediation-013/supplemental/proof/18-local-shape-first-1.json: OK\ndocs/releases/remediation-013/supplemental/proof/18-local-shape-first-2.json: OK\ndocs/releases/remediation-013/supplemental/proof/18-local-shape-first-3.json: OK\ndocs/releases/remediation-013/supplemental/proof/19-local-smaller-solution-1.json: OK\ndocs/releases/remediation-013/supplemental/proof/19-local-smaller-solution-2.json: OK\ndocs/releases/remediation-013/supplemental/proof/19-local-smaller-solution-3.json: OK\ndocs/releases/remediation-013/supplemental/proof/20-local-unsupported-selected-model-1.json: OK\ndocs/releases/remediation-013/supplemental/proof/20-local-unsupported-selected-model-2.json: OK\ndocs/releases/remediation-013/supplemental/proof/20-local-unsupported-selected-model-3.json: OK\ndocs/releases/remediation-013/supplemental/proof/21-local-guides-local-codex-1.json: OK\ndocs/releases/remediation-013/supplemental/proof/21-local-guides-local-codex-2.json: OK\ndocs/releases/remediation-013/supplemental/proof/22-local-unknown-model-1.json: OK\ndocs/releases/remediation-013/supplemental/proof/22-local-unknown-model-2.json: OK\ndocs/releases/remediation-013/supplemental/proof/23-local-missing-webhook-1.json: OK\ndocs/releases/remediation-013/supplemental/proof/23-local-missing-webhook-2.json: OK\ndocs/releases/remediation-013/supplemental/proof/23-local-missing-webhook-3.json: OK\ndocs/releases/remediation-013/supplemental/proof/24-local-decision-trail-1.json: OK\ndocs/releases/remediation-013/supplemental/proof/24-local-decision-trail-2.json: OK\ndocs/releases/remediation-013/supplemental/proof/24-local-decision-trail-3.json: OK\ndocs/releases/remediation-013/supplemental/proof/25-local-legal-header-1.json: OK\ndocs/releases/remediation-013/supplemental/proof/25-local-legal-header-2.json: OK\ndocs/releases/remediation-013/supplemental/proof/25-local-legal-header-3.json: OK\ndocs/releases/remediation-013/supplemental/proof/26-local-arena-walkthrough-1.json: OK\ndocs/releases/remediation-013/supplemental/proof/27-local-interrupted-external-write-1.json: OK\ndocs/releases/remediation-013/supplemental/proof/27-local-interrupted-external-write-2.json: OK\ndocs/releases/remediation-013/supplemental/proof/27-local-interrupted-external-write-3.json: OK\ndocs/releases/remediation-013/supplemental/proof/28-local-denied-writes-1.json: OK\ndocs/releases/remediation-013/supplemental/proof/28-local-denied-writes-2.json: OK\ndocs/releases/remediation-013/supplemental/proof/28-local-denied-writes-3.json: OK\ndocs/releases/remediation-013/supplemental/proof/29-local-repeated-rule-1.json: OK\ndocs/releases/remediation-013/supplemental/proof/29-local-repeated-rule-2.json: OK\ndocs/releases/remediation-013/supplemental/proof/29-local-repeated-rule-3.json: OK\ndocs/releases/remediation-013/supplemental/proof/30-web-supported-authoring-1.json: OK\ndocs/releases/remediation-013/supplemental/proof/30-web-supported-authoring-2.json: OK\ndocs/releases/remediation-013/supplemental/proof/30-web-supported-authoring-3.json: OK\ndocs/releases/remediation-013/supplemental/proof/31-web-invalid-input-1.json: OK\ndocs/releases/remediation-013/supplemental/proof/31-web-invalid-input-2.json: OK\ndocs/releases/remediation-013/supplemental/proof/31-web-invalid-input-3.json: OK\ndocs/releases/remediation-013/supplemental/proof/32-web-package-support-contracts-1.json: OK\ndocs/releases/remediation-013/supplemental/proof/32-web-package-support-contracts-2.json: OK\ndocs/releases/remediation-013/supplemental/proof/32-web-package-support-contracts-3.json: OK\ndocs/releases/remediation-013/supplemental/proof/33-web-missing-webhook-1.json: OK\ndocs/releases/remediation-013/supplemental/proof/33-web-missing-webhook-2.json: OK\ndocs/releases/remediation-013/supplemental/proof/33-web-missing-webhook-3.json: OK\ndocs/releases/remediation-013/supplemental/proof/34-web-denied-writes-1.json: OK\ndocs/releases/remediation-013/supplemental/proof/34-web-denied-writes-2.json: OK\ndocs/releases/remediation-013/supplemental/proof/34-web-denied-writes-3.json: OK\ndocs/releases/remediation-013/supplemental/proof/35-web-unknown-actual-model-1.json: OK\ndocs/releases/remediation-013/supplemental/proof/35-web-unknown-actual-model-2.json: OK\ndocs/releases/remediation-013/supplemental/proof/35-web-unknown-actual-model-3.json: OK\ndocs/releases/remediation-013/supplemental/proof/36-web-unknown-model-1.json: OK\ndocs/releases/remediation-013/supplemental/proof/36-web-unknown-model-2.json: OK\ndocs/releases/remediation-013/supplemental/proof/36-web-unknown-model-3.json: OK\ndocs/releases/remediation-013/supplemental/proof/37-web-symptom-repro-1.json: OK\ndocs/releases/remediation-013/supplemental/proof/37-web-symptom-repro-2.json: OK\ndocs/releases/remediation-013/supplemental/proof/37-web-symptom-repro-3.json: OK\ndocs/releases/remediation-013/supplemental/proof/38-web-migration-units-1.json: OK\ndocs/releases/remediation-013/supplemental/proof/38-web-migration-units-2.json: OK\ndocs/releases/remediation-013/supplemental/proof/38-web-migration-units-3.json: OK\ndocs/releases/remediation-013/supplemental/proof/39-web-real-render-1.json: OK\ndocs/releases/remediation-013/supplemental/proof/39-web-real-render-2.json: OK\ndocs/releases/remediation-013/supplemental/proof/39-web-real-render-3.json: OK\ndocs/releases/remediation-013/supplemental/proof/40-web-smaller-solution-1.json: OK\ndocs/releases/remediation-013/supplemental/proof/40-web-smaller-solution-2.json: OK\ndocs/releases/remediation-013/supplemental/proof/40-web-smaller-solution-3.json: OK\ndocs/releases/remediation-013/supplemental/proof/41-web-repeated-rule-1.json: OK\ndocs/releases/remediation-013/supplemental/proof/41-web-repeated-rule-2.json: OK\ndocs/releases/remediation-013/supplemental/proof/41-web-repeated-rule-3.json: OK\ndocs/releases/remediation-013/supplemental/proof/42-web-false-success-1.json: OK\ndocs/releases/remediation-013/supplemental/proof/42-web-false-success-2.json: OK\ndocs/releases/remediation-013/supplemental/proof/42-web-false-success-3.json: OK\ndocs/releases/remediation-013/supplemental/proof/43-web-no-persistent-tool-1.json: OK\ndocs/releases/remediation-013/supplemental/proof/43-web-no-persistent-tool-2.json: OK\ndocs/releases/remediation-013/supplemental/proof/43-web-no-persistent-tool-3.json: OK\ndocs/releases/remediation-013/supplemental/proof/44-web-contiguous-verified-stack-1.json: OK\ndocs/releases/remediation-013/supplemental/proof/44-web-contiguous-verified-stack-2.json: OK\ndocs/releases/remediation-013/supplemental/proof/44-web-contiguous-verified-stack-3.json: OK\ndocs/releases/remediation-013/supplemental/proof/web-false-success-saved.png: OK\ndocs/releases/remediation-013/web-candidate-check.json: OK\ndocs/releases/remediation-013/web-resume/README.md: OK\ndocs/releases/remediation-013/web-resume/approval-before-edit/assessment.json: OK\ndocs/releases/remediation-013/web-resume/approval-before-edit/selected-proof.json: OK\ndocs/releases/remediation-013/web-resume/dependent-caller/assessment.json: OK\ndocs/releases/remediation-013/web-resume/dependent-caller/selected-proof.json: OK\ndocs/releases/remediation-013/web-resume/independent-checks.json: OK\ndocs/releases/remediation-013/web-resume/invalid-state/assessment.json: OK\ndocs/releases/remediation-013/web-resume/invalid-state/selected-proof.json: OK\ndocs/releases/remediation-013/web-resume/local-project-discovery/observation.json: OK\ndocs/releases/remediation-013/web-resume/manifest.json: OK\ndocs/releases/remediation-013/web-resume/measurement-method/assessment.json: OK\ndocs/releases/remediation-013/web-resume/measurement-method/selected-proof.json: OK\ndocs/releases/remediation-013/web-resume/plain-restate/assessment.json: OK\ndocs/releases/remediation-013/web-resume/plain-restate/selected-proof.json: OK\ndocs/releases/remediation-013/web-resume/scoped-history/assessment.json: OK\ndocs/releases/remediation-013/web-resume/scoped-history/selected-proof.json: OK\ndocs/releases/remediation-013/web-resume/shared-path-conflict/assessment.json: OK\ndocs/releases/remediation-013/web-resume/shared-path-conflict/selected-proof.json: OK\ndocs/releases/remediation-013/web-resume/unsupported-selected-model/assessment.json: OK\ndocs/releases/remediation-013/web-resume/unsupported-selected-model/selected-proof.json: OK\ndocs/setup/chatgpt.md: OK\ndocs/setup/codex.md: OK\ndocs/skills/README.md: OK\ndocs/skills/architect.md: OK\ndocs/skills/arena.md: OK\ndocs/skills/automate-me.md: OK\ndocs/skills/benchmark-checklist.md: OK\ndocs/skills/blast-radius.md: OK\ndocs/skills/bro.md: OK\ndocs/skills/correct.md: OK\ndocs/skills/create-verification-skill.md: OK\ndocs/skills/figure-it-out.md: OK\ndocs/skills/how.md: OK\ndocs/skills/interrogate.md: OK\ndocs/skills/maintain-verification-skill.md: OK\ndocs/skills/make-bot-ui.md: OK\ndocs/skills/no-comments.md: OK\ndocs/skills/poteto-help.md: OK\ndocs/skills/poteto-mode.md: OK\ndocs/skills/principle-attack-the-premise.md: OK\ndocs/skills/principle-boundary-discipline.md: OK\ndocs/skills/principle-build-the-lever.md: OK\ndocs/skills/principle-encode-lessons-in-structure.md: OK\ndocs/skills/principle-exhaust-the-design-space.md: OK\ndocs/skills/principle-experience-first.md: OK\ndocs/skills/principle-explain-the-number.md: OK\ndocs/skills/principle-fix-root-causes.md: OK\ndocs/skills/principle-foundational-thinking.md: OK\ndocs/skills/principle-guard-the-context-window.md: OK\ndocs/skills/principle-laziness-protocol.md: OK\ndocs/skills/principle-make-operations-idempotent.md: OK\ndocs/skills/principle-migrate-callers-then-delete-legacy-apis.md: OK\ndocs/skills/principle-minimize-reader-load.md: OK\ndocs/skills/principle-model-the-domain.md: OK\ndocs/skills/principle-never-block-on-the-human.md: OK\ndocs/skills/principle-outcome-oriented-execution.md: OK\ndocs/skills/principle-prove-it-works.md: OK\ndocs/skills/principle-redesign-from-first-principles.md: OK\ndocs/skills/principle-separate-before-serializing-shared-state.md: OK\ndocs/skills/principle-sequence-verifiable-units.md: OK\ndocs/skills/principle-subtract-before-you-add.md: OK\ndocs/skills/principle-test-behavior-not-implementation.md: OK\ndocs/skills/principle-type-system-discipline.md: OK\ndocs/skills/recall.md: OK\ndocs/skills/reflect.md: OK\ndocs/skills/setup-pstack.md: OK\ndocs/skills/show-me-your-work.md: OK\ndocs/skills/swarm.md: OK\ndocs/skills/tdd.md: OK\ndocs/skills/teach.md: OK\ndocs/skills/technical-writing.md: OK\ndocs/skills/typescript-best-practices.md: OK\ndocs/skills/unslop.md: OK\ndocs/skills/why.md: OK\ndocs/superpowers/plans/2026-10-07-pstack-openai.md: OK\ndocs/superpowers/specs/2026-10-07-pstack-openai-design.md: OK\ndocs/testing/benny-readiness.md: OK\ndocs/testing/chatgpt.md: OK\ndocs/testing/codex.md: OK\ndocs/testing/dependency-readiness.md: OK\ndocs/testing/helper-setup.md: OK\ndocs/testing/host-matrix.md: OK\ndocs/testing/release-checklist.md: OK\ndocs/troubleshooting.md: OK\ndocs/workflows/arena.md: OK\ndocs/workflows/choosing-a-workflow.md: OK\ndocs/workflows/poteto-mode.md: OK\ndocs/workflows/swarm.md: OK\nreferences/agent-prompts/comment-sicko.md: OK\nreferences/agent-prompts/poteto-agent.md: OK\nreferences/host-capabilities.md: OK\nreferences/model-roles.md: OK\nreferences/orchestration-contract.md: OK\nreferences/workflow-ownership.md: OK\nskills/architect/SKILL.md: OK\nskills/architect/references/design-red-flags.md: OK\nskills/architect/references/rationale-template.md: OK\nskills/architect/references/runner-prompt.md: OK\nskills/arena/SKILL.md: OK\nskills/automate-me/SKILL.md: OK\nskills/benchmark-checklist/SKILL.md: OK\nskills/blast-radius/SKILL.md: OK\nskills/bro/SKILL.md: OK\nskills/correct/SKILL.md: OK\nskills/create-verification-skill/SKILL.md: OK\nskills/create-verification-skill/references/feature-map-example/README.md: OK\nskills/create-verification-skill/references/feature-map-example/create-note.md: OK\nskills/create-verification-skill/references/feature-map-example/search.md: OK\nskills/figure-it-out/SKILL.md: OK\nskills/how/SKILL.md: OK\nskills/how/references/explainer-prompt.md: OK\nskills/how/references/explorer-prompt.md: OK\nskills/interrogate/SKILL.md: OK\nskills/interrogate/references/code-quality-review.md: OK\nskills/interrogate/references/lead-judgment.md: OK\nskills/interrogate/references/reviewer-prompt.md: OK\nskills/interrogate/references/rubric.md: OK\nskills/maintain-verification-skill/SKILL.md: OK\nskills/make-bot-ui/SKILL.md: OK\nskills/no-comments/SKILL.md: OK\nskills/poteto-help/SKILL.md: OK\nskills/poteto-help/references/prompting.md: OK\nskills/poteto-help/references/recipes.md: OK\nskills/poteto-mode/SKILL.md: OK\nskills/poteto-mode/playbooks/authoring-a-skill.md: OK\nskills/poteto-mode/playbooks/autonomous-run.md: OK\nskills/poteto-mode/playbooks/autopilot-full.md: OK\nskills/poteto-mode/playbooks/autopilot-stack.md: OK\nskills/poteto-mode/playbooks/babysit.md: OK\nskills/poteto-mode/playbooks/bug-fix.md: OK\nskills/poteto-mode/playbooks/eval.md: OK\nskills/poteto-mode/playbooks/feature.md: OK\nskills/poteto-mode/playbooks/hillclimb.md: OK\nskills/poteto-mode/playbooks/investigation.md: OK\nskills/poteto-mode/playbooks/multi-phase-plan.md: OK\nskills/poteto-mode/playbooks/opening-a-pr.md: OK\nskills/poteto-mode/playbooks/orchestrate.md: OK\nskills/poteto-mode/playbooks/pause-safely.md: OK\nskills/poteto-mode/playbooks/perf-issue.md: OK\nskills/poteto-mode/playbooks/prototype.md: OK\nskills/poteto-mode/playbooks/refactoring.md: OK\nskills/poteto-mode/playbooks/runtime-forensics.md: OK\nskills/poteto-mode/playbooks/session-pickup.md: OK\nskills/poteto-mode/playbooks/shipping.md: OK\nskills/poteto-mode/playbooks/trace-forensics.md: OK\nskills/poteto-mode/playbooks/visual-parity.md: OK\nskills/poteto-mode/playbooks/worktree-cleanup.md: OK\nskills/poteto-mode/references/bugbot-triage.md: OK\nskills/poteto-mode/scripts/bootstrap.test.ts: OK\nskills/poteto-mode/scripts/bootstrap.ts: OK\nskills/poteto-mode/scripts/bun.lock: OK\nskills/poteto-mode/scripts/check-plan.mjs: OK\nskills/poteto-mode/scripts/orch/orch.test.ts: OK\nskills/poteto-mode/scripts/orch/orch.ts: OK\nskills/poteto-mode/scripts/orch/store.ts: OK\nskills/poteto-mode/scripts/package.json: OK\nskills/poteto-mode/scripts/watch-pr/cli.test.ts: OK\nskills/poteto-mode/scripts/watch-pr/cli.ts: OK\nskills/poteto-mode/scripts/watch-pr/deadline.test.ts: OK\nskills/poteto-mode/scripts/watch-pr/fakes.test-helper.ts: OK\nskills/poteto-mode/scripts/watch-pr/github.test.ts: OK\nskills/poteto-mode/scripts/watch-pr/github.ts: OK\nskills/poteto-mode/scripts/watch-pr/policy.test.ts: OK\nskills/poteto-mode/scripts/watch-pr/policy.ts: OK\nskills/poteto-mode/scripts/watch-pr/render.ts: OK\nskills/poteto-mode/scripts/watch-pr/tsconfig.json: OK\nskills/poteto-mode/scripts/watch-pr/types.compile.ts: OK\nskills/poteto-mode/scripts/watch-pr/types.ts: OK\nskills/poteto-mode/scripts/watch-pr/watch-pr: OK\nskills/poteto-mode/scripts/worktree-audit.py: OK\nskills/poteto-mode/scripts/worktree-audit.sh: OK\nskills/principle-attack-the-premise/SKILL.md: OK\nskills/principle-boundary-discipline/SKILL.md: OK\nskills/principle-build-the-lever/SKILL.md: OK\nskills/principle-encode-lessons-in-structure/SKILL.md: OK\nskills/principle-exhaust-the-design-space/SKILL.md: OK\nskills/principle-experience-first/SKILL.md: OK\nskills/principle-explain-the-number/SKILL.md: OK\nskills/principle-fix-root-causes/SKILL.md: OK\nskills/principle-foundational-thinking/SKILL.md: OK\nskills/principle-guard-the-context-window/SKILL.md: OK\nskills/principle-laziness-protocol/SKILL.md: OK\nskills/principle-make-operations-idempotent/SKILL.md: OK\nskills/principle-migrate-callers-then-delete-legacy-apis/SKILL.md: OK\nskills/principle-minimize-reader-load/SKILL.md: OK\nskills/principle-model-the-domain/SKILL.md: OK\nskills/principle-never-block-on-the-human/SKILL.md: OK\nskills/principle-outcome-oriented-execution/SKILL.md: OK\nskills/principle-prove-it-works/SKILL.md: OK\nskills/principle-redesign-from-first-principles/SKILL.md: OK\nskills/principle-separate-before-serializing-shared-state/SKILL.md: OK\nskills/principle-sequence-verifiable-units/SKILL.md: OK\nskills/principle-subtract-before-you-add/SKILL.md: OK\nskills/principle-test-behavior-not-implementation/SKILL.md: OK\nskills/principle-type-system-discipline/SKILL.md: OK\nskills/recall/SKILL.md: OK\nskills/reflect/SKILL.md: OK\nskills/reflect/references/divergent-reviewer.md: OK\nskills/reflect/references/judgment-reviewer.md: OK\nskills/reflect/references/synthesizer.md: OK\nskills/reflect/references/tooling-reviewer.md: OK\nskills/setup-pstack/SKILL.md: OK\nskills/show-me-your-work/SKILL.md: OK\nskills/show-me-your-work/references/decision-log-template.tsv: OK\nskills/show-me-your-work/scripts/log.sh: OK\nskills/swarm/SKILL.md: OK\nskills/tdd/SKILL.md: OK\nskills/teach/SKILL.md: OK\nskills/technical-writing/SKILL.md: OK\nskills/typescript-best-practices/SKILL.md: OK\nskills/typescript-best-practices/references/patterns.md: OK\nskills/unslop/SKILL.md: OK\nskills/why/SKILL.md: OK\nskills/why/references/epistemics.md: OK\nskills/why/references/investigator-prompt.md: OK\nskills/why/references/source-playbook.md: OK\nskills/why/references/sources/code-archaeology.md: OK\nskills/why/references/sources/databricks.md: OK\nskills/why/references/sources/datadog.md: OK\nskills/why/references/sources/incident-postmortem.md: OK\nskills/why/references/sources/linear.md: OK\nskills/why/references/sources/notion.md: OK\nskills/why/references/sources/sentry.md: OK\nskills/why/references/sources/slack.md: OK\nskills/why/references/synthesizer-prompt.md: OK\ntests/__init__.py: OK\ntests/evidence_fixtures.py: OK\ntests/fixture_paths.py: OK\ntests/test_catalog.py: OK\ntests/test_decision_log.py: OK\ntests/test_dependencies.py: OK\ntests/test_full_package_update.py: OK\ntests/test_inventory_closed.py: OK\ntests/test_manifest.py: OK\ntests/test_pstack_plan_check.py: OK\ntests/test_release_report.py: OK\ntests/test_source_inventory.py: OK\ntests/test_update_regression.py: OK\ntests/test_upstream_apply.py: OK\ntests/test_upstream_check.py: OK\ntests/test_validate_evidence.py: OK\ntests/test_validate_package.py: OK\ntests/test_wiki_export.py: OK\ntests/test_worktree_audit.py: OK\ntools/baseline_policy.py: OK\ntools/build_catalog.py: OK\ntools/compare_upstream.py: OK\ntools/export_wiki.py: OK\ntools/package_release.mjs: OK\ntools/release_report.py: OK\ntools/source_inventory.py: OK\ntools/sync_upstream.py: OK\ntools/update_metadata.py: OK\ntools/validate_evidence.py: OK\ntools/validate_package.py: OK\n"
+    },
+    "archiveReadback": {
+      "sourceFiles": 1514,
+      "releaseFiles": 1515,
+      "added": [
+        ".codex-plugin/plugin.json"
+      ],
+      "missing": [],
+      "byteDifferences": [
+        "plugin.json"
+      ],
+      "modeDifferences": [],
+      "nonManifestFilesChecked": 1513,
+      "rootVersion": "0.1.5",
+      "compatibilityVersion": "0.1.5"
+    },
+    "sourceReceiptSha256": "1d36daec70c4e542be7b4b0e373f7369e25216186930c7e022e93088b2da1c27",
+    "manifestSha256": {
+      "plugin.json": "2f84c8ac05715354e5550a298d3059dc124a7b932ed5c892dffc2a213b2fb37c",
+      ".codex-plugin/plugin.json": "9db3dda0805acec730a63ddd2c6c49c88f2cb931f393155635ddeabfd51f42c4"
+    },
+    "limits": [
+      "Commit and release IDs in request are supplied expectations, not independently established Git/release identity. Manifest and tested marker contents are observed file data.",
+      "Initial custom serialization was superseded by direct ordinary-shell file/checksum capture; registry observations retained."
+    ],
+    "parentCorroboration": "Supplied native Git/release IDs are independently bound by guarded release readback and archived1513-file source digest equality. Native source reads and checksum observations bind the actual executor copy. No native Git ancestry or full-manifest equality is claimed.",
+    "directShellCorroboration": {
+      "archiveSha256": "9cda015ed0524647c3996b9869cc04c94324c7ca3447acc6be739b5000f5a035",
+      "commandReceipt": "+ cd /root/.codex/plugins/cache/created-by-me-remote/pstack-openai/0.1.5\n+ printf 'cd.exit=%s\\n' 0\ncd.exit=0\n+ pwd -P\n+ printf 'pwd.exit=%s\\n' 0\npwd.exit=0\n+ sha256sum -c /workspace/scratch/2b49dfc4bbdc/shell-discovery/web-files.sha256.txt\n+ printf '%s\\n' 0\n+ sha256sum /workspace/scratch/2b49dfc4bbdc/shell-discovery/web-files.sha256.txt\n+ printf 'list-sha256.exit=%s\\n' 0\nlist-sha256.exit=0\n+ find /root/.codex/plugins/cache/created-by-me-remote/pstack-openai/0.1.5 -type f -name SKILL.md -print\n+ printf 'find-SKILL.exit=%s\\n' 0\nfind-SKILL.exit=0\n+ find /root/.codex/plugins/cache/created-by-me-remote/pstack-openai/0.1.5/skills -mindepth 2 -maxdepth 2 -type f -name SKILL.md -print\n+ printf 'find-root-SKILL.exit=%s\\n' 0\nfind-root-SKILL.exit=0\n+ find /root/.codex/plugins/cache/created-by-me-remote/pstack-openai/0.1.5/automations/benny/skills -type f '(' -name REFERENCE.md -o -name SKILL.md ')' -print\n+ printf 'find-benny.exit=%s\\n' 0\nfind-benny.exit=0\n+ find /root/.codex/plugins/cache/created-by-me-remote/pstack-openai/0.1.5 -type f -name policy.ts -print\n+ printf 'find-policy.exit=%s\\n' 0\nfind-policy.exit=0\n+ cp plugin.json /workspace/scratch/2b49dfc4bbdc/shell-discovery/source/plugin.json\n+ printf 'cp-root-manifest.exit=%s\\n' 0\ncp-root-manifest.exit=0\n+ cp .codex-plugin/plugin.json /workspace/scratch/2b49dfc4bbdc/shell-discovery/source/.codex-plugin/plugin.json\n+ printf 'cp-compat-manifest.exit=%s\\n' 0\ncp-compat-manifest.exit=0\n+ cp docs/parity/tested-package.json /workspace/scratch/2b49dfc4bbdc/shell-discovery/source/docs/parity/tested-package.json\n+ printf 'cp-tested-marker.exit=%s\\n' 0\ncp-tested-marker.exit=0\n+ cp skills/poteto-mode/scripts/watch-pr/policy.ts /workspace/scratch/2b49dfc4bbdc/shell-discovery/source/skills/poteto-mode/scripts/watch-pr/policy.ts\n+ printf 'cp-policy.exit=%s\\n' 0\ncp-policy.exit=0\n+ cp skills/poteto-mode/SKILL.md /workspace/scratch/2b49dfc4bbdc/shell-discovery/source/skills/poteto-mode/SKILL.md\n+ printf 'cp-poteto-source.exit=%s\\n' 0\ncp-poteto-source.exit=0\n+ wc -l /workspace/scratch/2b49dfc4bbdc/shell-discovery/checksum.stdout.txt /workspace/scratch/2b49dfc4bbdc/shell-discovery/checksum.stderr.txt /workspace/scratch/2b49dfc4bbdc/shell-discovery/all-SKILL-paths.txt /workspace/scratch/2b49dfc4bbdc/shell-discovery/benny-paths.txt\n  1513 /workspace/scratch/2b49dfc4bbdc/shell-discovery/checksum.stdout.txt\n     0 /workspace/scratch/2b49dfc4bbdc/shell-discovery/checksum.stderr.txt\n    51 /workspace/scratch/2b49dfc4bbdc/shell-discovery/all-SKILL-paths.txt\n     3 /workspace/scratch/2b49dfc4bbdc/shell-discovery/benny-paths.txt\n  1567 total\n+ printf 'wc.exit=%s\\n' 0\nwc.exit=0\n+ set +x\n",
+      "toolReceipt": "exec_command chunk 7b3dd3: utility availability and earlier artifact stat; exit 0.\nexec_command chunk fcb655: inspection commands completed with statuses captured in commands-and-exits.txt. Final display command used relative paths after cd into installed root and failed; overall tool exit 1. No inspection output was lost.\nexec_command chunk 1914df: absolute-path readback of checksum exit, list hash, Benny paths and command receipts; exit 0.\n",
+      "source": "Direct ordinary-shell reinspection, no custom serialization; earlier native registry capture reused",
+      "checksumBytesEqualEarlierAttempt": true
+    },
+    "registryToolIdentity": {
+      "note": "API provides authority/package/resource identities and pagination cursors, but no separate host tool-result IDs. Relevant entries retained unchanged; unrelated entries excluded.",
+      "pages": {
+        "cloud": [
+          {
+            "page_index": 0,
+            "request": {
+              "authority": {
+                "kind": "cloud"
+              }
+            },
+            "returned_next_cursor": "96fb481823356dca:20:524288",
+            "relevant_entry_count": 0
+          },
+          {
+            "page_index": 1,
+            "request": {
+              "authority": {
+                "kind": "cloud"
+              },
+              "cursor": "96fb481823356dca:20:524288"
+            },
+            "returned_next_cursor": "96fb481823356dca:40:524288",
+            "relevant_entry_count": 0
+          },
+          {
+            "page_index": 2,
+            "request": {
+              "authority": {
+                "kind": "cloud"
+              },
+              "cursor": "96fb481823356dca:40:524288"
+            },
+            "returned_next_cursor": "96fb481823356dca:60:524288",
+            "relevant_entry_count": 0
+          },
+          {
+            "page_index": 3,
+            "request": {
+              "authority": {
+                "kind": "cloud"
+              },
+              "cursor": "96fb481823356dca:60:524288"
+            },
+            "returned_next_cursor": "96fb481823356dca:80:524288",
+            "relevant_entry_count": 0
+          },
+          {
+            "page_index": 4,
+            "request": {
+              "authority": {
+                "kind": "cloud"
+              },
+              "cursor": "96fb481823356dca:80:524288"
+            },
+            "returned_next_cursor": "96fb481823356dca:100:524288",
+            "relevant_entry_count": 0
+          },
+          {
+            "page_index": 5,
+            "request": {
+              "authority": {
+                "kind": "cloud"
+              },
+              "cursor": "96fb481823356dca:100:524288"
+            },
+            "returned_next_cursor": "96fb481823356dca:120:524288",
+            "relevant_entry_count": 11
+          },
+          {
+            "page_index": 6,
+            "request": {
+              "authority": {
+                "kind": "cloud"
+              },
+              "cursor": "96fb481823356dca:120:524288"
+            },
+            "returned_next_cursor": "96fb481823356dca:140:524288",
+            "relevant_entry_count": 20
+          },
+          {
+            "page_index": 7,
+            "request": {
+              "authority": {
+                "kind": "cloud"
+              },
+              "cursor": "96fb481823356dca:140:524288"
+            },
+            "returned_next_cursor": "96fb481823356dca:160:524288",
+            "relevant_entry_count": 20
+          },
+          {
+            "page_index": 8,
+            "request": {
+              "authority": {
+                "kind": "cloud"
+              },
+              "cursor": "96fb481823356dca:160:524288"
+            },
+            "returned_next_cursor": null,
+            "relevant_entry_count": 0
+          }
+        ],
+        "executor": [
+          {
+            "page_index": 0,
+            "request": {
+              "authority": {
+                "kind": "executor"
+              }
+            },
+            "returned_next_cursor": "6bf12777ed63ad63:20:524288",
+            "relevant_entry_count": 0
+          },
+          {
+            "page_index": 1,
+            "request": {
+              "authority": {
+                "kind": "executor"
+              },
+              "cursor": "6bf12777ed63ad63:20:524288"
+            },
+            "returned_next_cursor": "6bf12777ed63ad63:40:524288",
+            "relevant_entry_count": 0
+          },
+          {
+            "page_index": 2,
+            "request": {
+              "authority": {
+                "kind": "executor"
+              },
+              "cursor": "6bf12777ed63ad63:40:524288"
+            },
+            "returned_next_cursor": "6bf12777ed63ad63:60:524288",
+            "relevant_entry_count": 0
+          },
+          {
+            "page_index": 3,
+            "request": {
+              "authority": {
+                "kind": "executor"
+              },
+              "cursor": "6bf12777ed63ad63:60:524288"
+            },
+            "returned_next_cursor": "6bf12777ed63ad63:80:524288",
+            "relevant_entry_count": 0
+          },
+          {
+            "page_index": 4,
+            "request": {
+              "authority": {
+                "kind": "executor"
+              },
+              "cursor": "6bf12777ed63ad63:80:524288"
+            },
+            "returned_next_cursor": "6bf12777ed63ad63:100:524288",
+            "relevant_entry_count": 8
+          },
+          {
+            "page_index": 5,
+            "request": {
+              "authority": {
+                "kind": "executor"
+              },
+              "cursor": "6bf12777ed63ad63:100:524288"
+            },
+            "returned_next_cursor": "6bf12777ed63ad63:120:524288",
+            "relevant_entry_count": 20
+          },
+          {
+            "page_index": 6,
+            "request": {
+              "authority": {
+                "kind": "executor"
+              },
+              "cursor": "6bf12777ed63ad63:120:524288"
+            },
+            "returned_next_cursor": "6bf12777ed63ad63:140:524288",
+            "relevant_entry_count": 20
+          },
+          {
+            "page_index": 7,
+            "request": {
+              "authority": {
+                "kind": "executor"
+              },
+              "cursor": "6bf12777ed63ad63:140:524288"
+            },
+            "returned_next_cursor": null,
+            "relevant_entry_count": 3
+          }
+        ]
+      }
+    },
+    "firstCaptureLimit": "Initial native capture used custom Python serialization despite the Bun-only instruction. Retained privately as an earlier attempt; direct shell reinspection supersedes file/checksum observations. No workflows ran."
+  },
+  "projection": "Only selected own-package registry entries and own-file observations retained. Full raw registry pages, unrelated metadata and native reasoning excluded."
+}

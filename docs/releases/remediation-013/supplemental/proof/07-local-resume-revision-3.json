@@ -1,0 +1,44 @@
+{
+  "kind": "historical-proof-selection",
+  "source": {
+    "path": "<private-run>/cross-host-extra/local/projects/resume-revision/outputs/continuation.readback.json",
+    "sha256": "46b669077dcc8150f0cbf5e3b95d0561e694ce67577e4c3e091b75a3f8cc04c8",
+    "bytes": 200
+  },
+  "selection": [
+    {
+      "locator": {
+        "jsonPointer": "/path"
+      },
+      "value": "outputs/continuation.json"
+    },
+    {
+      "locator": {
+        "jsonPointer": "/sha256"
+      },
+      "value": "e13907eb0d980a16d961d437613dba7a2bd24baacbd8a6639c0732c3423c14ff"
+    },
+    {
+      "locator": {
+        "jsonPointer": "/bytes"
+      },
+      "value": 2693
+    },
+    {
+      "locator": {
+        "jsonPointer": "/readbackObserved"
+      },
+      "value": true
+    },
+    {
+      "locator": {
+        "jsonPointer": "/workerTerminalPending"
+      },
+      "value": false
+    }
+  ],
+  "limits": [
+    "Selections preserve the exact source value at each locator. Truncated strings carry explicit code-unit bounds.",
+    "A producer-captured return is not a recovered native parent envelope. Missing call IDs, original capture defects and unknown model observations remain missing."
+  ]
+}

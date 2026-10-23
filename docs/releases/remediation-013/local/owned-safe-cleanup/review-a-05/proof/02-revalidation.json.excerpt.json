@@ -1,0 +1,15 @@
+{
+  "kind": "selected-fixture-result-fields",
+  "caseId": "owned-safe-cleanup",
+  "attemptId": "review-a-05",
+  "originalLocator": "remaining-local/cases/owned-safe-cleanup/outputs/revalidation.json",
+  "sourceSha256": "ea70de8bfa7a45947bd81109b6945fadd95fcbc0bf352c413de557fb145cd1a7",
+  "sourceBytes": 3286,
+  "transformation": "Named JSON fields selected by exact JSON Pointer. Task-owned absolute paths replaced with declared placeholders. Other fields omitted. These are result-artifact values, not synthesized tool execution evidence. Public selection is limited to eight short inspected fields. Longer output and unselected fields remain private.",
+  "fields": [
+    {
+      "pointer": "/status",
+      "value": ""
+    }
+  ]
+}

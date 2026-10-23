@@ -1,0 +1,23 @@
+{
+  "kind": "selected-fixture-result-fields",
+  "caseId": "absent-workers",
+  "attemptId": "review-c-11",
+  "originalLocator": "cross-host-extra/local/projects/absent-workers/outputs/invoice_trace.assignment.json",
+  "sourceSha256": "ffe15a535365a3f65e5db16a1c89d1a0447f98096596427da611d493bfd34cec",
+  "sourceBytes": 2315,
+  "transformation": "Named JSON fields selected by exact JSON Pointer. Task-owned absolute paths replaced with declared placeholders. Other fields omitted. These are result-artifact values, not synthesized tool execution evidence. Public selection is limited to eight short inspected fields. Longer output and unselected fields remain private.",
+  "fields": [
+    {
+      "pointer": "/inputRevision",
+      "value": "13f21dbe51d5506c2547ac03f50d2cd73a59b413"
+    },
+    {
+      "pointer": "/requestedModel",
+      "value": "inherit-parent"
+    },
+    {
+      "pointer": "/actualModel",
+      "value": "unknown"
+    }
+  ]
+}

@@ -1,0 +1,10 @@
+{
+  "kind": "supplied-fixture-input-excerpt",
+  "caseId": "approval-before-edit",
+  "inputRevision": "e825c96ed4f21308367ff4105a21d257d80c55e0",
+  "originalLocator": "cross-host-extra/local/projects/approval-before-edit/task-contract.json",
+  "sourceSha256": "90291a45f6cbb40156c9cd3f9eebb6c4942a1dd9fd52089659e3baf7fbd9f717",
+  "pointer": "/case/prompt",
+  "suppliedPrompt": "Reflect on this active session. Review the judgment, tooling and divergent lenses, synthesize all findings, and propose durable skill improvements. Show all Accepted, Rejected and Backlog items before editing. I have not approved any edits or tracker writes.",
+  "transformation": "Only the exact supplied case prompt is projected. Fixture data and arbitrary surrounding contract fields are omitted. This is supplied input, not a native successful tool operation."
+}

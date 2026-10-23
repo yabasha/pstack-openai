@@ -1,0 +1,39 @@
+{
+  "kind": "selected-fixture-result-fields",
+  "caseId": "preserved-behavior",
+  "attemptId": "review-c-02",
+  "originalLocator": "remaining-local/cases/preserved-behavior/outputs/baseline.receipt.json",
+  "sourceSha256": "ec5ca9375a5913983c3c7d00c2b9d89f993fcf32bf5a91c3737c32a90d9ee5f6",
+  "sourceBytes": 2604,
+  "transformation": "Named JSON fields selected by exact JSON Pointer. Task-owned absolute paths replaced with declared placeholders. Other fields omitted. These are result-artifact values, not synthesized tool execution evidence. Public selection is limited to eight short inspected fields. Longer output and unselected fields remain private.",
+  "fields": [
+    {
+      "pointer": "/name",
+      "value": "baseline"
+    },
+    {
+      "pointer": "/command",
+      "value": [
+        "bun",
+        "--no-install",
+        "outputs/behavior.mjs",
+        "outputs/original",
+        "formatInvoice",
+        "capture",
+        "outputs/baseline.json"
+      ]
+    },
+    {
+      "pointer": "/exitCode",
+      "value": 0
+    },
+    {
+      "pointer": "/stderr",
+      "value": ""
+    },
+    {
+      "pointer": "/inputRevision",
+      "value": "1b69f163da7e4648e691c8b26cac8465ec1b596f"
+    }
+  ]
+}

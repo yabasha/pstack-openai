@@ -1,0 +1,23 @@
+{
+  "kind": "historical-proof-selection",
+  "source": {
+    "path": "<private-run>/work/notes_workflow_reruns/projects/smaller-solution/outputs/baseline/pricing.mjs",
+    "sha256": "0ccb7ed0bcfcfed64e41e65af0cb5598e88852ad809a1ec05e2929eaa25413f5",
+    "bytes": 669
+  },
+  "selection": [
+    {
+      "locator": {
+        "textCodeUnits": [
+          0,
+          669
+        ]
+      },
+      "value": "export class PriceService {quote(netCents,taxBasisPoints){if(!Number.isSafeInteger(netCents)||!Number.isSafeInteger(taxBasisPoints)||netCents<0||taxBasisPoints<0)throw new Error('Invalid price');return netCents+Math.round(netCents*taxBasisPoints/10000);}}\nexport class PriceAdapter {constructor(){this.service=new PriceService();}quote(netCents,taxBasisPoints){return this.service.quote(netCents,taxBasisPoints);}}\nexport class PriceFacade {constructor(){this.adapter=new PriceAdapter();}quote(netCents,taxBasisPoints){return this.adapter.quote(netCents,taxBasisPoints);}}\nexport const quote=(netCents,taxBasisPoints)=>new PriceFacade().quote(netCents,taxBasisPoints);\n"
+    }
+  ],
+  "limits": [
+    "Selections preserve the exact source value at each locator. Truncated strings carry explicit code-unit bounds.",
+    "A producer-captured return is not a recovered native parent envelope. Missing call IDs, original capture defects and unknown model observations remain missing."
+  ]
+}

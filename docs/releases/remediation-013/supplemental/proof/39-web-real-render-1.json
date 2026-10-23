@@ -1,0 +1,44 @@
+{
+  "kind": "historical-proof-selection",
+  "source": {
+    "path": "<private-run>/web-checkpoint-3/units/real-render/outputs/real-render/005-exact-session-stop.raw.json",
+    "sha256": "e7149ed0fcfa197b59ea0c96add1ec1d483bafc7e806b12c9ac7820a8d19d5e6",
+    "bytes": 432
+  },
+  "selection": [
+    {
+      "locator": {
+        "jsonPointer": "/request/session_id"
+      },
+      "value": 68026
+    },
+    {
+      "locator": {
+        "jsonPointer": "/request/chars"
+      },
+      "value": "\u0003"
+    },
+    {
+      "locator": {
+        "jsonPointer": "/returned"
+      },
+      "value": {
+        "chunk_id": "5baf53",
+        "wall_time_seconds": 0.051155605,
+        "exit_code": 130,
+        "original_token_count": 0,
+        "output": ""
+      }
+    },
+    {
+      "locator": {
+        "jsonPointer": "/limit"
+      },
+      "value": "Target exact launch session68026 only; reported namespace PID2 not visible in separate exec, so no cross-namespace PID kill attempted."
+    }
+  ],
+  "limits": [
+    "Selections preserve the exact source value at each locator. Truncated strings carry explicit code-unit bounds.",
+    "A producer-captured return is not a recovered native parent envelope. Missing call IDs, original capture defects and unknown model observations remain missing."
+  ]
+}

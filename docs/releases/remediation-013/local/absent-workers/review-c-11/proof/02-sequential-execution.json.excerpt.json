@@ -1,0 +1,27 @@
+{
+  "kind": "selected-fixture-result-fields",
+  "caseId": "absent-workers",
+  "attemptId": "review-c-11",
+  "originalLocator": "cross-host-extra/local/projects/absent-workers/outputs/sequential-execution.json",
+  "sourceSha256": "9aeaa0addba77a08d57731749d8c2fc60b5f2480a36db40d5151b3fb824a1ab3",
+  "sourceBytes": 656,
+  "transformation": "Named JSON fields selected by exact JSON Pointer. Task-owned absolute paths replaced with declared placeholders. Other fields omitted. These are result-artifact values, not synthesized tool execution evidence. Public selection is limited to eight short inspected fields. Longer output and unselected fields remain private.",
+  "fields": [
+    {
+      "pointer": "/command",
+      "value": [
+        "bun",
+        "--no-install",
+        "<private-run>/cross-host-extra/local/projects/absent-workers/outputs/sequential-check.mjs"
+      ]
+    },
+    {
+      "pointer": "/exitCode",
+      "value": 0
+    },
+    {
+      "pointer": "/stderr",
+      "value": ""
+    }
+  ]
+}

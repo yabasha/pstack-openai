@@ -1,0 +1,15 @@
+{
+  "kind": "selected-fixture-result-fields",
+  "caseId": "history-evidence",
+  "attemptId": "review-c-09",
+  "originalLocator": "remaining-local/cases/history-evidence/outputs/verification.json",
+  "sourceSha256": "14d00604be509544a173317a66d9f702dad95fd3483722d86463047d6a918065",
+  "sourceBytes": 8179,
+  "transformation": "Named JSON fields selected by exact JSON Pointer. Task-owned absolute paths replaced with declared placeholders. Other fields omitted. These are result-artifact values, not synthesized tool execution evidence. Public selection is limited to eight short inspected fields. Longer output and unselected fields remain private.",
+  "fields": [
+    {
+      "pointer": "/failed",
+      "value": 0
+    }
+  ]
+}

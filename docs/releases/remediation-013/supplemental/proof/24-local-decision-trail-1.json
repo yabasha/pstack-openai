@@ -1,0 +1,104 @@
+{
+  "kind": "historical-proof-selection",
+  "source": {
+    "path": "<private-run>/remaining-local/cases/decision-trail/outputs/coordinator-addendum.json",
+    "sha256": "0a57ff775d847255c13992f7fa7462d2fd6cb8cce9cfb949f4232a8ca9facb82",
+    "bytes": 1208
+  },
+  "selection": [
+    {
+      "locator": {
+        "jsonPointer": "/coordinator"
+      },
+      "value": "/root"
+    },
+    {
+      "locator": {
+        "jsonPointer": "/priorOwner"
+      },
+      "value": "/root/trail"
+    },
+    {
+      "locator": {
+        "jsonPointer": "/transition"
+      },
+      "value": "Producer returned terminal blocked result. Coordinator now appends review without changing original rows or method receipts."
+    },
+    {
+      "locator": {
+        "jsonPointer": "/reviewer"
+      },
+      "value": "/root/trail_review"
+    },
+    {
+      "locator": {
+        "jsonPointer": "/requestedModel"
+      },
+      "value": "inherit-parent"
+    },
+    {
+      "locator": {
+        "jsonPointer": "/actualReviewerModel"
+      },
+      "value": "unknown"
+    },
+    {
+      "locator": {
+        "jsonPointer": "/fullTranscriptAudit"
+      },
+      "value": false
+    },
+    {
+      "locator": {
+        "jsonPointer": "/differentFamilyVerified"
+      },
+      "value": false
+    },
+    {
+      "locator": {
+        "jsonPointer": "/reviewReport"
+      },
+      "value": "<private-run>/remaining-local/actors/remaining-08/trail-review/report.md"
+    },
+    {
+      "locator": {
+        "jsonPointer": "/reviewAssignment"
+      },
+      "value": "<private-run>/remaining-local/actors/remaining-08/trail-review/assignment.json"
+    },
+    {
+      "locator": {
+        "jsonPointer": "/reviewTerminal"
+      },
+      "value": "<private-run>/remaining-local/actors/remaining-08/trail-review/terminal.json"
+    },
+    {
+      "locator": {
+        "jsonPointer": "/finding"
+      },
+      "value": "Original completion method.order and resultMethod.order list readback before correction. Actual helper-raw invocation 3 appended correction before full initial readback."
+    },
+    {
+      "locator": {
+        "jsonPointer": "/originalCompletionSha256"
+      },
+      "value": "1b7dffbb3e143a2cef2c80553c73d38e4b90c2bd911bc3eec59e7f90f802498a"
+    },
+    {
+      "locator": {
+        "jsonPointer": "/originalTsvSha256"
+      },
+      "value": "64a389411e911c44ff6e92746b8e71c2e6955f2ebcd2cea3f0f61f8cf2b43d95"
+    },
+    {
+      "locator": {
+        "jsonPointer": "/originalReceiptsPreserved"
+      },
+      "value": true
+    }
+  ],
+  "limits": [
+    "Selections preserve the exact source value at each locator. Truncated strings carry explicit code-unit bounds.",
+    "A producer-captured return is not a recovered native parent envelope. Missing call IDs, original capture defects and unknown model observations remain missing."
+  ]
+}

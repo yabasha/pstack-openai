@@ -1,0 +1,16 @@
+{
+  "kind": "task-result-file-excerpt",
+  "caseId": "units-and-proof",
+  "attemptId": "review-a-07",
+  "inputRevision": "a02b520ef6361724f19f1af96b42dd70cd8fcf9f",
+  "originalLocator": "remaining-local/cases/units-and-proof/outputs/units-and-proof.result.md",
+  "sourceSha256": "5046139b257adde91ed89c7566f3b79f7a8c5dfd12e937cf51dba40bb0dd9800",
+  "sourceWasDirectlyListedByIndependentGrade": false,
+  "characterRange": {
+    "start": 0,
+    "endExclusive": 455,
+    "total": 42068
+  },
+  "content": "# Units and proof attempt\n\nThe plan was saved and the real positional checker returned exit 0 with `2 PR sections, 0 problems`. This is structural evidence only. Implementation waits for explicit go. No producer grade is assigned.\n\nPR-1 defines the pure selection and CSV contracts. PR-2 depends on PR-1 and composes selection with export. PR-2 retains operator screenshot and video review before landing. Both retain independent code and receipt review.\n",
+  "transformation": "An inspected prefix of the actual task-result file is projected. Task-owned absolute paths use declared placeholders. The prefix may omit later qualifications. The independent assessment and its limits govern the proposed grade. This is neither a new grade nor a native callable-operation claim."
+}

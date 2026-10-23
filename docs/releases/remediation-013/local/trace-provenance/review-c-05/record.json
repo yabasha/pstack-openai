@@ -1,0 +1,61 @@
+{
+  "caseId": "trace-provenance",
+  "packageVersion": "0.1.3",
+  "packageCommit": "51f209daf83cd97d64f89881d66533bb59dc57db",
+  "host": "codex",
+  "hostMode": "Historical native Local task-scoped fixture observation",
+  "date": "2026-10-17",
+  "input": "Diagnose supplied inert cpuprofile, compressed JSON trace, heap snapshot and spindump fixtures without rerunning their processes. Include exact artifact identities, original order, timestamps and symbols mapping to fixture source. Build an authorized sqlite query artifact and inspect hot frames, a retainer chain to a GC root or a stuck thread and wait reason. Compare a supplied before/after pair separately from an unpaired capture. Repeat with absent parser, denied derived writes, inaccessible artifact, unresolved symbols and unavailable workers. No installation, upload, live capture, external write or fix. Actual task fixture revision e7380379bf90fb5a31131ef56640fde3fd2f4016.",
+  "observedOutput": "No inert CPU profile, compressed JSON trace, heap snapshot or spindump is present in the supplied input. SQLite version execution is not a trace conversion or diagnosis. All six missing-input branches preserve this gate.",
+  "status": "blocked",
+  "execution": "workers",
+  "inputRevision": "e7380379bf90fb5a31131ef56640fde3fd2f4016",
+  "sourcePaths": [
+    "skills/poteto-mode/playbooks/trace-forensics.md",
+    "skills/poteto-mode/SKILL.md",
+    "agents/poteto-agent.md",
+    "skills/principle-guard-the-context-window/SKILL.md",
+    "skills/poteto-mode/playbooks/runtime-forensics.md",
+    "skills/poteto-mode/playbooks/bug-fix.md",
+    "skills/poteto-mode/playbooks/perf-issue.md"
+  ],
+  "documentedCapabilities": [
+    "Frozen source instructions only. Current-main qualification is not established."
+  ],
+  "exposedTools": [],
+  "artifacts": [
+    "docs/releases/remediation-013/local/trace-provenance/review-c-05/assessment.json",
+    "docs/releases/remediation-013/local/trace-provenance/review-c-05/proof/01-observations.json.excerpt.json",
+    "docs/releases/remediation-013/local/trace-provenance/review-c-05/proof/supplied-input.json",
+    "docs/releases/remediation-013/local/trace-provenance/review-c-05/proof/task-result-prefix.json"
+  ],
+  "limits": [
+    "Actual intended inert capture set",
+    "Source/symbol records and compatible before/after pair",
+    "Only the actual operations listed in this record have narrow public bindings. Other operations from the independent assessment remain unprojected. No missing operation is invented.",
+    "No qualifying callable native-operation excerpt was selected for this attempt. Result fields and independent review remain available, but do not substitute for missing operation proof."
+  ],
+  "priorActionIdentities": [],
+  "permissions": {
+    "execution": "granted",
+    "writes": "granted",
+    "externalActions": "denied"
+  },
+  "models": {
+    "requested": "inherit-parent",
+    "actual": "unknown"
+  },
+  "successfulOperations": [],
+  "nativeObservations": [
+    {
+      "observation": "review-outcome",
+      "evidence": "docs/releases/remediation-013/local/trace-provenance/review-c-05/assessment.json",
+      "reviewedBy": "/root/grade_remediation_local_c"
+    },
+    {
+      "observation": "supplied-input",
+      "evidence": "docs/releases/remediation-013/local/trace-provenance/review-c-05/proof/supplied-input.json",
+      "reviewedBy": "/root/project_historical_local"
+    }
+  ]
+}

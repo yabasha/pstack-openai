@@ -1,0 +1,23 @@
+{
+  "kind": "selected-fixture-result-fields",
+  "caseId": "no-persistent-tool",
+  "attemptId": "review-a-08",
+  "originalLocator": "remaining-local/cases/no-persistent-tool/outputs/unit-negative.json",
+  "sourceSha256": "7120a512d47c3fded5624d1571e97b0958db503ad65b9eaaf5ddb4d1d1137843",
+  "sourceBytes": 355,
+  "transformation": "Named JSON fields selected by exact JSON Pointer. Task-owned absolute paths replaced with declared placeholders. Other fields omitted. These are result-artifact values, not synthesized tool execution evidence. Public selection is limited to eight short inspected fields. Longer output and unselected fields remain private.",
+  "fields": [
+    {
+      "pointer": "/exitCode",
+      "value": 0
+    },
+    {
+      "pointer": "/stdout",
+      "value": "bun test v1.4.2 (50a8a8387)\n"
+    },
+    {
+      "pointer": "/stderr",
+      "value": "\ndomain.test.mjs:\n(pass) negative counts rejected [0.07ms]\n\n 1 pass\n 1 filtered out\n 0 fail\n 1 expect() calls\nRan 1 test across 1 file. [4.00ms]\n"
+    }
+  ]
+}

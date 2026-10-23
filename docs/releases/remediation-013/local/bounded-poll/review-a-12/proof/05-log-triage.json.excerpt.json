@@ -1,0 +1,19 @@
+{
+  "kind": "selected-fixture-result-fields",
+  "caseId": "bounded-poll",
+  "attemptId": "review-a-12",
+  "originalLocator": "work/helper_workflow_reruns/projects/release-watch/deliverables/native/log-triage.json",
+  "sourceSha256": "7f5f6f89b9206e74777de6b2f87fc384c04653de882bc466327dfe37e3287e3d",
+  "sourceBytes": 727,
+  "transformation": "Named JSON fields selected by exact JSON Pointer. Task-owned absolute paths replaced with declared placeholders. Other fields omitted. These are result-artifact values, not synthesized tool execution evidence. Public selection is limited to eight short inspected fields. Longer output and unselected fields remain private.",
+  "fields": [
+    {
+      "pointer": "/stdout",
+      "value": ""
+    },
+    {
+      "pointer": "/stderr",
+      "value": ""
+    }
+  ]
+}

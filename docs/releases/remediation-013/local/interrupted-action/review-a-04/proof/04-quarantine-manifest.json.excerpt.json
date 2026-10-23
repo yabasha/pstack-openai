@@ -1,0 +1,15 @@
+{
+  "kind": "selected-fixture-result-fields",
+  "caseId": "interrupted-action",
+  "attemptId": "review-a-04",
+  "originalLocator": "remaining-local/cases/interrupted-action/outputs/quarantine-manifest.json",
+  "sourceSha256": "0c18d626fefde1246a581ce8419055b4dba7f726ada60df312cf817f944abfb0",
+  "sourceBytes": 783,
+  "transformation": "Named JSON fields selected by exact JSON Pointer. Task-owned absolute paths replaced with declared placeholders. Other fields omitted. These are result-artifact values, not synthesized tool execution evidence. Public selection is limited to eight short inspected fields. Longer output and unselected fields remain private.",
+  "fields": [
+    {
+      "pointer": "/assignmentId",
+      "value": "pause-partial-exposed-1"
+    }
+  ]
+}

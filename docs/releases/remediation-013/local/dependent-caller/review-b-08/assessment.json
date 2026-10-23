@@ -1,0 +1,133 @@
+{
+  "schemaVersion": 1,
+  "kind": "historical-independent-assessment-projection",
+  "caseId": "dependent-caller",
+  "attemptId": "review-b-08",
+  "startingMain": "4138e161c27cafffd2baaab6bf4ca53e86a57433",
+  "packageCommit": "51f209daf83cd97d64f89881d66533bb59dc57db",
+  "packageVersion": "0.1.3",
+  "inputRevision": "1adddb23d5a03b964e957118fab19000e2a1ae63",
+  "originalProposedStatus": "pass",
+  "evidenceStatus": "pass",
+  "qualifiesCurrentMain": false,
+  "sourceReview": {
+    "originalLocator": "grades/grade_remediation_local_b/result.json",
+    "sourceSha256": "d837b0c7cdea4be245b4a86ca593038cbe8b1596662a82fe6554e9d96444abd6",
+    "jsonPointer": "/rows/7",
+    "reviewer": "/root/grade_remediation_local_b",
+    "requestedModel": "inherit-parent",
+    "actualModel": "unknown"
+  },
+  "findings": [
+    "The diff and caller outside it are traced through dispose(), queueMicrotask and synchronous invalidation.",
+    "The exact fixture-v1 vendored dependency digest matches its manifest.",
+    "The actual after-state probe exits1 with teardown TypeError. A one-line reconstructed before-state comparison exits0 with disposed ready:true.",
+    "The safety fact is disproved with level4 actual code evidence. Confirmed and cleared risks, likelihood/cost and cheapest pre-merge probe are given."
+  ],
+  "limits": [],
+  "chronology": [
+    "The current task HEAD is1adddb23d5a03b964e957118fab19000e2a1ae63. Source/probe execution is observed in its actual independent owner."
+  ],
+  "predicate": [
+    {
+      "index": 1,
+      "text": "Read the diff and a real dependent caller outside it, citing file:line and following runtime timing or shared data contracts beyond symbol search.",
+      "status": "satisfied",
+      "assessment": "Detailed evidence and qualifying limits are in the exact satisfied/unmet/notApplicable predicates below."
+    },
+    {
+      "index": 2,
+      "text": "Identify the one or two safety facts and report their evidence level, separating confirmed risks from checked and cleared risks.",
+      "status": "satisfied",
+      "assessment": "Detailed evidence and qualifying limits are in the exact satisfied/unmet/notApplicable predicates below."
+    },
+    {
+      "index": 3,
+      "text": "Run an authorized script or test against the real pinned code and paste its result, or mark the fact unproven when execution is denied or unavailable.",
+      "status": "satisfied",
+      "assessment": "Detailed evidence and qualifying limits are in the exact satisfied/unmet/notApplicable predicates below."
+    },
+    {
+      "index": 4,
+      "text": "Use the prescribed output sections and give risk likelihood, cost and a cheapest pre-merge check.",
+      "status": "satisfied",
+      "assessment": "Detailed evidence and qualifying limits are in the exact satisfied/unmet/notApplicable predicates below."
+    },
+    {
+      "index": 5,
+      "text": "For a wide change, check arena and observed worker/model capabilities; disclose any sequential reduced capability or unverified diversity.",
+      "status": "not-applicable",
+      "assessment": "Detailed evidence and qualifying limits are in the exact satisfied/unmet/notApplicable predicates below."
+    }
+  ],
+  "sourceArtifactBindings": [
+    {
+      "originalLocator": "cross-host-extra/local/projects/dependent-caller/outputs/dependent-caller.result.md",
+      "sourceSha256": "a4ded320bfee3f7254bc7203c4f5c3e1275895bd9227bcbc44fb90adb50fc032",
+      "expectedSha256": "a4ded320bfee3f7254bc7203c4f5c3e1275895bd9227bcbc44fb90adb50fc032",
+      "expectedHashMatches": true,
+      "bytes": 26239,
+      "publication": "omitted",
+      "reason": "Only a narrow inspected projection may be included. Private original remains unchanged."
+    },
+    {
+      "originalLocator": "cross-host-extra/local/projects/dependent-caller/outputs/after-probe-receipt.json",
+      "sourceSha256": "d9bd116bad554eaecd6581d8dce0e0eb5848e49ad9cdb372b421ef5ff49ee025",
+      "expectedSha256": "d9bd116bad554eaecd6581d8dce0e0eb5848e49ad9cdb372b421ef5ff49ee025",
+      "expectedHashMatches": true,
+      "bytes": 377,
+      "publication": "projected-fields",
+      "reason": "Only a narrow inspected projection may be included. Private original remains unchanged.",
+      "projectedPath": "docs/releases/remediation-013/local/dependent-caller/review-b-08/proof/01-after-probe-receipt.json.excerpt.json",
+      "projectedSha256": "e56ee931db213dabaf34caa0d4503c237f00bc48fe4dfcdd851770254dd615e2"
+    },
+    {
+      "originalLocator": "cross-host-extra/local/projects/dependent-caller/outputs/before-comparison-receipt.json",
+      "sourceSha256": "b9acc72c95e5b9a2dc888c6a113981cb3987400cc4e4c1c983fe47159dae208c",
+      "expectedSha256": "b9acc72c95e5b9a2dc888c6a113981cb3987400cc4e4c1c983fe47159dae208c",
+      "expectedHashMatches": true,
+      "bytes": 350,
+      "publication": "projected-fields",
+      "reason": "Only a narrow inspected projection may be included. Private original remains unchanged.",
+      "projectedPath": "docs/releases/remediation-013/local/dependent-caller/review-b-08/proof/02-before-comparison-receipt.json.excerpt.json",
+      "projectedSha256": "a34782e43ae84d3f13da46e2d81cfc7cf6cf90b50cf63cf98bae54aad0cb2e02"
+    },
+    {
+      "originalLocator": "cross-host-extra/local/projects/dependent-caller/outputs/cache-verification.json",
+      "sourceSha256": "1ef5db1b4bfe1d967d49d286f296c00875489d2a3ea55669a8ad73130abda250",
+      "expectedSha256": "1ef5db1b4bfe1d967d49d286f296c00875489d2a3ea55669a8ad73130abda250",
+      "expectedHashMatches": true,
+      "bytes": 1644,
+      "publication": "omitted",
+      "reason": "Only a narrow inspected projection may be included. Private original remains unchanged."
+    },
+    {
+      "originalLocator": "cross-host-extra/local/projects/dependent-caller/outputs/verify-cache.mjs",
+      "sourceSha256": "f8835ebf170c12e06c829237a56ea4133c9ce04bdb657ad3e264a65795e60533",
+      "expectedSha256": "f8835ebf170c12e06c829237a56ea4133c9ce04bdb657ad3e264a65795e60533",
+      "expectedHashMatches": true,
+      "bytes": 2805,
+      "publication": "omitted",
+      "reason": "Only a narrow inspected projection may be included. Private original remains unchanged."
+    },
+    {
+      "originalLocator": "native-captures-sanitized-v2/cross-host-0/index.json",
+      "sourceSha256": "3bb4db78a8fd056ac164ea338c51fb8f67c4c7a9f6a2986e8a10b287d97edc65",
+      "expectedSha256": "3bb4db78a8fd056ac164ea338c51fb8f67c4c7a9f6a2986e8a10b287d97edc65",
+      "expectedHashMatches": true,
+      "bytes": 6766,
+      "publication": "omitted",
+      "reason": "Raw/native context, broad discovery, completion dump, or bulk source manifest is excluded. No protected payload is decoded."
+    }
+  ],
+  "projectionLimits": [
+    "This file projects the existing independent assessment and does not regrade the case.",
+    "Private source artifacts and omitted native operations remain private. Source digests bind originals, not transformed bytes.",
+    "Historical 0.1.3 observations do not qualify current main or a modified candidate."
+  ],
+  "statusMapping": {
+    "originalProposedStatus": "pass",
+    "canonicalStatus": "pass",
+    "rule": "No status alias is applied."
+  }
+}

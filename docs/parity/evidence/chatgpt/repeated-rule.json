@@ -1,42 +1,70 @@
 {
   "caseId": "repeated-rule",
-  "packageVersion": "0.1.0",
-  "packageCommit": "5d05ab2458f4cd73c44b24265a3a1920b98b8cf4",
+  "packageVersion": "0.1.3",
+  "packageCommit": "51f209daf83cd97d64f89881d66533bb59dc57db",
   "host": "chatgpt",
-  "hostMode": "personal ChatGPT not accessed; host mode unobserved",
-  "date": "2026-10-08",
+  "hostMode": "Native web-host workflows; independent retained-artifact review",
+  "date": "2026-10-16",
   "input": "We have corrected the same mistake twice: generated release records omit the source revision. Apply principle-encode-lessons-in-structure. Replace the repeated prose warning with a concrete validator or structural check, explain where it belongs, and close the correction loop within the available authorization.",
-  "observedOutput": "Not attempted. Inherited prerequisite block from package-discovery. No documented supported local plugin loading route is established for this personal ChatGPT context. No actual personal ChatGPT session or installed copy was accessed. No separate human authorization exists for loading, installation, enabling, settings changes or fresh host setup. Personal-host tool probing was not attempted. Current controller filesystem and tools are not personal ChatGPT tools.",
-  "status": "blocked",
-  "execution": "unavailable",
+  "observedOutput": "Concrete schema rejection and version-only failure example route recurring omission to strongest feasible structural layer. Authorized implementation todo saved/read back; missing release target correctly prevents invented integration or warning deletion.",
+  "status": "pass",
+  "execution": "direct",
   "sourcePaths": [
     "skills/principle-encode-lessons-in-structure/SKILL.md"
   ],
   "documentedCapabilities": [
-    "docs/setup/chatgpt.md leaves the personal loading route unsupported here; supplied source is reduced capability guidance only.",
-    "references/host-capabilities.md requires actual exposed and successful bindings."
+    "Case-specific capability observations are retained in the independent review; no capability is inferred from package validation."
   ],
-  "exposedTools": [],
+  "exposedTools": [
+    "exec_command"
+  ],
   "artifacts": [
-    "docs/parity/evidence/chatgpt/authorization-support-check.md"
+    "docs/releases/host-evaluation/chatgpt/repeated-rule.md"
   ],
   "limits": [
-    "No documented supported local plugin loading route is established for this personal ChatGPT context. No actual personal ChatGPT session or installed copy was accessed. No separate human authorization exists for loading, installation, enabling, settings changes or fresh host setup. Personal-host tool probing was not attempted. Current controller filesystem and tools are not personal ChatGPT tools.",
-    "This case input was not submitted to personal ChatGPT; no model result or expected behavioral output was observed.",
-    "Full and reduced capability are not observed. Runtime cases were not run.",
-    "Exact installed-copy identity, all 51 root names and three canonical nested Benny exclusions remain unobserved.",
-    "No history access, privacy behavior, worker lifecycle, model choice, persistence, integration or negative runtime condition was exercised.",
-    "Local evidence validation checks accounting only. Codex capabilities and results do not transfer to ChatGPT."
+    "Current installed version 0.1.3 and operative freeze 51f209daf83cd97d64f89881d66533bb59dc57db bound by external exact installed-file comparison; sandbox itself has no source Git identity.",
+    "Global current catalog lists 51 root skills; this does not upgrade case execution or reproduce unrun workflows.",
+    "Web TypeScript compiler and pinned helper dependencies absent; Bun transpilation/runtime tests never count as strict compilation.",
+    "Historical source content was accidentally read during setup, disclosed in archive limitations; no older result contributes to current grading.",
+    "Raw capture coverage and cooperative per-case clocks incomplete; unavailable/unstarted variants and failed attempts remain explicit.",
+    "Actual native models remain unknown unless independently observed; requested role/model names never become model-diversity proof.",
+    "Variants: source-availability branch inspected and blocked on missing target. No unrelated fixture or standalone validator was presented as integration proof. Case-owned todo write/readback is observed, but durable cross-session persistence is not claimed.",
+    "TypeScript compiler proof unverified; Bun transpilation is not compiler proof. No running application/browser proof.",
+    "Raw tool request/response files cover substantive operations. Logging calls do not recursively log themselves. Initial assignment discovery and rejected patch exact request remain native conversation only; rejected patch error summary is retained. This is not a complete native transcript."
   ],
   "priorActionIdentities": [],
   "permissions": {
-    "execution": "unavailable",
-    "writes": "unknown",
-    "externalActions": "unknown"
+    "execution": "granted",
+    "writes": "granted",
+    "externalActions": "denied"
   },
   "models": {
-    "requested": "unknown",
+    "requested": "inherit-parent",
     "actual": "unknown"
   },
-  "successfulOperations": []
+  "successfulOperations": [
+    {
+      "operation": "read",
+      "tool": "exec_command",
+      "evidence": "docs/releases/host-evaluation/chatgpt/repeated-rule.md"
+    }
+  ],
+  "nativeObservations": [
+    {
+      "observation": "supplied-input",
+      "evidence": "docs/releases/host-evaluation/chatgpt/repeated-rule.md",
+      "reviewedBy": "grade_local_repairs"
+    },
+    {
+      "observation": "response",
+      "evidence": "docs/releases/host-evaluation/chatgpt/repeated-rule.md",
+      "reviewedBy": "grade_local_repairs"
+    },
+    {
+      "observation": "review-outcome",
+      "evidence": "docs/releases/host-evaluation/chatgpt/repeated-rule.md",
+      "reviewedBy": "grade_local_repairs"
+    }
+  ],
+  "inputRevision": "1de5fa4ba541313c52471244a4c28002c7e67625"
 }

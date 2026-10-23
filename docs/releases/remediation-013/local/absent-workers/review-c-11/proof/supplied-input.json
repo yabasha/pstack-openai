@@ -1,0 +1,10 @@
+{
+  "kind": "supplied-fixture-input-excerpt",
+  "caseId": "absent-workers",
+  "inputRevision": "13f21dbe51d5506c2547ac03f50d2cd73a59b413",
+  "originalLocator": "cross-host-extra/local/projects/absent-workers/task-contract.json",
+  "sourceSha256": "d861525c044c45f69bed1f02b85c30dc0d33d0aeda2e87eee10394d9f54fe58a",
+  "pointer": "/case/prompt",
+  "suppliedPrompt": "No independent worker operation is available.",
+  "transformation": "Only the exact supplied case prompt is projected. Fixture data and arbitrary surrounding contract fields are omitted. This is supplied input, not a native successful tool operation."
+}

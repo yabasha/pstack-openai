@@ -1,0 +1,179 @@
+{
+  "kind": "historical-proof-selection",
+  "source": {
+    "path": "<private-run>/web-checkpoint-1/units/invalid-input/outputs/invalid-input/variant-results.json",
+    "sha256": "701b1363a8c515d5887b915257eba7c6a3cc358e72f50c9bb451b61b26a145cf",
+    "bytes": 1857
+  },
+  "selection": [
+    {
+      "locator": {
+        "jsonPointer": "/0"
+      },
+      "value": {
+        "variant": "{}",
+        "status": "attempted",
+        "observed": {
+          "status": 400,
+          "body": {
+            "error": "invalid quantity"
+          }
+        }
+      }
+    },
+    {
+      "locator": {
+        "jsonPointer": "/1"
+      },
+      "value": {
+        "variant": "{\"quantity\":null}",
+        "status": "attempted",
+        "observed": {
+          "status": 400,
+          "body": {
+            "error": "invalid quantity"
+          }
+        }
+      }
+    },
+    {
+      "locator": {
+        "jsonPointer": "/2"
+      },
+      "value": {
+        "variant": "{\"quantity\":0}",
+        "status": "attempted",
+        "observed": {
+          "status": 400,
+          "body": {
+            "error": "invalid quantity"
+          }
+        }
+      }
+    },
+    {
+      "locator": {
+        "jsonPointer": "/3"
+      },
+      "value": {
+        "variant": "{\"quantity\":-1}",
+        "status": "attempted",
+        "observed": {
+          "status": 400,
+          "body": {
+            "error": "invalid quantity"
+          }
+        }
+      }
+    },
+    {
+      "locator": {
+        "jsonPointer": "/4"
+      },
+      "value": {
+        "variant": "{\"quantity\":1.5}",
+        "status": "attempted",
+        "observed": {
+          "status": 400,
+          "body": {
+            "error": "invalid quantity"
+          }
+        }
+      }
+    },
+    {
+      "locator": {
+        "jsonPointer": "/5"
+      },
+      "value": {
+        "variant": "{\"quantity\":\"2\"}",
+        "status": "attempted",
+        "observed": {
+          "status": 400,
+          "body": {
+            "error": "invalid quantity"
+          }
+        }
+      }
+    },
+    {
+      "locator": {
+        "jsonPointer": "/6"
+      },
+      "value": {
+        "variant": "null",
+        "status": "attempted",
+        "observed": {
+          "status": 400,
+          "body": {
+            "error": "invalid order"
+          }
+        }
+      }
+    },
+    {
+      "locator": {
+        "jsonPointer": "/7"
+      },
+      "value": {
+        "variant": "[]",
+        "status": "attempted",
+        "observed": {
+          "status": 400,
+          "body": {
+            "error": "invalid order"
+          }
+        }
+      }
+    },
+    {
+      "locator": {
+        "jsonPointer": "/8"
+      },
+      "value": {
+        "variant": "\"text\"",
+        "status": "attempted",
+        "observed": {
+          "status": 400,
+          "body": {
+            "error": "invalid order"
+          }
+        }
+      }
+    },
+    {
+      "locator": {
+        "jsonPointer": "/9"
+      },
+      "value": {
+        "variant": "{",
+        "status": "attempted",
+        "observed": {
+          "status": 400,
+          "body": {
+            "error": "invalid json"
+          }
+        }
+      }
+    },
+    {
+      "locator": {
+        "jsonPointer": "/10"
+      },
+      "value": {
+        "variant": "{\"quantity\":2}",
+        "status": "attempted",
+        "observed": {
+          "status": 200,
+          "body": {
+            "total": 250
+          }
+        }
+      }
+    }
+  ],
+  "limits": [
+    "Selections preserve the exact source value at each locator. Truncated strings carry explicit code-unit bounds.",
+    "A producer-captured return is not a recovered native parent envelope. Missing call IDs, original capture defects and unknown model observations remain missing."
+  ]
+}

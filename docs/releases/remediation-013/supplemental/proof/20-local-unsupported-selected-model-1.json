@@ -1,0 +1,66 @@
+{
+  "kind": "historical-proof-selection",
+  "source": {
+    "path": "<private-run>/model-rejection/local/rejection-observation.json",
+    "sha256": "a6f4c3b51587e3d22c03e10f9e8dbe1c755760baaa641d6f68f4d64a509437e2",
+    "bytes": 707
+  },
+  "selection": [
+    {
+      "locator": {
+        "jsonPointer": "/at"
+      },
+      "value": "2026-10-17T07:55:56.810Z"
+    },
+    {
+      "locator": {
+        "jsonPointer": "/tool"
+      },
+      "value": "collaboration.spawn_agent"
+    },
+    {
+      "locator": {
+        "jsonPointer": "/requested"
+      },
+      "value": {
+        "task_name": "model_rejection_probe",
+        "fork_turns": "none",
+        "model": "pstack-eval-intentionally-unavailable"
+      }
+    },
+    {
+      "locator": {
+        "jsonPointer": "/returned"
+      },
+      "value": "Unknown model `pstack-eval-intentionally-unavailable` for spawn_agent. Available models: gpt-6.1-sol, gpt-6-astra, gpt-6-sol, gpt-6-luna, gpt-5.6-sol"
+    },
+    {
+      "locator": {
+        "jsonPointer": "/workerStarted"
+      },
+      "value": false
+    },
+    {
+      "locator": {
+        "jsonPointer": "/kind"
+      },
+      "value": "Observed root tool rejection, exact text copied; full original request/result retained in current scoped root transcript"
+    },
+    {
+      "locator": {
+        "jsonPointer": "/fallbackDisclosure"
+      },
+      "value": "Parent commentary records inherited fallback before fallback spawn"
+    },
+    {
+      "locator": {
+        "jsonPointer": "/actualModel"
+      },
+      "value": "none; request rejected before worker creation"
+    }
+  ],
+  "limits": [
+    "Selections preserve the exact source value at each locator. Truncated strings carry explicit code-unit bounds.",
+    "A producer-captured return is not a recovered native parent envelope. Missing call IDs, original capture defects and unknown model observations remain missing."
+  ]
+}

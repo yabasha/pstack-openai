@@ -1,0 +1,43 @@
+{
+  "kind": "selected-fixture-result-fields",
+  "caseId": "inherited-identical-models",
+  "attemptId": "review-c-14",
+  "originalLocator": "cross-host-extra/local/projects/inherited-identical-models/outputs/inherited_comments.inspection.json",
+  "sourceSha256": "20ec6a0d06e196a521f0c5bcc02c95ea681c33cfb41ccd0fe950a096b274f10a",
+  "sourceBytes": 801,
+  "transformation": "Named JSON fields selected by exact JSON Pointer. Task-owned absolute paths replaced with declared placeholders. Other fields omitted. These are result-artifact values, not synthesized tool execution evidence. Public selection is limited to eight short inspected fields. Longer output and unselected fields remain private.",
+  "fields": [
+    {
+      "pointer": "/assignmentId",
+      "value": "inherited-identical-models-inherited_comments-0"
+    },
+    {
+      "pointer": "/inputRevision",
+      "value": "19a60cb93e2dff5ad0240a2df847e49cc6a52aa2"
+    },
+    {
+      "pointer": "/currentHead",
+      "value": "19a60cb93e2dff5ad0240a2df847e49cc6a52aa2"
+    },
+    {
+      "pointer": "/observedTerminal",
+      "value": "completed"
+    },
+    {
+      "pointer": "/terminalEvidence",
+      "value": "collaboration FINAL_ANSWER notification"
+    },
+    {
+      "pointer": "/hashCount",
+      "value": 19
+    },
+    {
+      "pointer": "/hashMismatches",
+      "value": []
+    },
+    {
+      "pointer": "/modelObserved",
+      "value": "unknown"
+    }
+  ]
+}

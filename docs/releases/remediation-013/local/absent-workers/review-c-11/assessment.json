@@ -1,0 +1,137 @@
+{
+  "schemaVersion": 1,
+  "kind": "historical-independent-assessment-projection",
+  "caseId": "absent-workers",
+  "attemptId": "review-c-11",
+  "startingMain": "4138e161c27cafffd2baaab6bf4ca53e86a57433",
+  "packageCommit": "51f209daf83cd97d64f89881d66533bb59dc57db",
+  "packageVersion": "0.1.3",
+  "inputRevision": "13f21dbe51d5506c2547ac03f50d2cd73a59b413",
+  "originalProposedStatus": "pass",
+  "evidenceStatus": "pass",
+  "qualifiesCurrentMain": false,
+  "sourceReview": {
+    "originalLocator": "grades/grade_remediation_local_c/result.json",
+    "sourceSha256": "2582d82fe0ad256da816b168e5b242a713d134d62af8657c4f7bc255d3a7ceba",
+    "jsonPointer": "/cases/10",
+    "reviewer": "/root/grade_remediation_local_c",
+    "requestedModel": "inherit-parent",
+    "actualModel": "unknown"
+  },
+  "findings": [
+    "The original policy-withheld branch remains sequential and reduced. A separately declared later-capability variant actually spawned invoice_trace, independently verified the assigned revision, returned concrete source/runtime artifacts, and received parent result inspection. This matches the exact later-availability full predicate."
+  ],
+  "limits": [],
+  "chronology": [],
+  "predicate": "contracts absent-workers expectedFull requires discovered spawn and result inspection after capability becomes available.",
+  "sourceArtifactBindings": [
+    {
+      "originalLocator": "cross-host-extra/local/projects/absent-workers/task-contract.json",
+      "sourceSha256": "d861525c044c45f69bed1f02b85c30dc0d33d0aeda2e87eee10394d9f54fe58a",
+      "expectedSha256": "d861525c044c45f69bed1f02b85c30dc0d33d0aeda2e87eee10394d9f54fe58a",
+      "expectedHashMatches": true,
+      "bytes": 2522,
+      "publication": "omitted",
+      "reason": "Only a narrow inspected projection may be included. Private original remains unchanged."
+    },
+    {
+      "originalLocator": "cross-host-extra/local/projects/absent-workers/outputs/absent-workers.result.md",
+      "sourceSha256": "c2ab9899ccc535b208dcb7252106eca0f5117dabff056480d2ca5b3aee545492",
+      "expectedSha256": "c2ab9899ccc535b208dcb7252106eca0f5117dabff056480d2ca5b3aee545492",
+      "expectedHashMatches": true,
+      "bytes": 27329,
+      "publication": "omitted",
+      "reason": "Only a narrow inspected projection may be included. Private original remains unchanged."
+    },
+    {
+      "originalLocator": "cross-host-extra/local/projects/absent-workers/outputs/completion.json",
+      "sourceSha256": "bf93a9bd0e9b95482df1a9effc7085bcdce1bd5957416e86a65225a246091ec8",
+      "expectedSha256": "bf93a9bd0e9b95482df1a9effc7085bcdce1bd5957416e86a65225a246091ec8",
+      "expectedHashMatches": true,
+      "bytes": 200825,
+      "publication": "omitted",
+      "reason": "Raw/native context, broad discovery, completion dump, or bulk source manifest is excluded. No protected payload is decoded."
+    },
+    {
+      "originalLocator": "cross-host-extra/local/projects/absent-workers/outputs/original-no-worker.json",
+      "sourceSha256": "cece2d1c98ffd3aefdcd0c4d720668cf4468f0a0766a3ced93bc1f06b08c1474",
+      "expectedSha256": "cece2d1c98ffd3aefdcd0c4d720668cf4468f0a0766a3ced93bc1f06b08c1474",
+      "expectedHashMatches": true,
+      "bytes": 934,
+      "publication": "projected-fields",
+      "reason": "Only a narrow inspected projection may be included. Private original remains unchanged.",
+      "projectedPath": "docs/releases/remediation-013/local/absent-workers/review-c-11/proof/01-original-no-worker.json.excerpt.json",
+      "projectedSha256": "3639d1aa67ef720edebe5f34bc4210f1d603b44d88114613c2564ab7292cba4c"
+    },
+    {
+      "originalLocator": "cross-host-extra/local/projects/absent-workers/outputs/sequential-execution.json",
+      "sourceSha256": "9aeaa0addba77a08d57731749d8c2fc60b5f2480a36db40d5151b3fb824a1ab3",
+      "expectedSha256": "9aeaa0addba77a08d57731749d8c2fc60b5f2480a36db40d5151b3fb824a1ab3",
+      "expectedHashMatches": true,
+      "bytes": 656,
+      "publication": "projected-fields",
+      "reason": "Only a narrow inspected projection may be included. Private original remains unchanged.",
+      "projectedPath": "docs/releases/remediation-013/local/absent-workers/review-c-11/proof/02-sequential-execution.json.excerpt.json",
+      "projectedSha256": "461dd9a4324c064a5baf9840434e4c940e588da1a5856eb1a0385849fa99a9c8"
+    },
+    {
+      "originalLocator": "cross-host-extra/local/projects/absent-workers/outputs/invoice_trace.assignment.json",
+      "sourceSha256": "ffe15a535365a3f65e5db16a1c89d1a0447f98096596427da611d493bfd34cec",
+      "expectedSha256": "ffe15a535365a3f65e5db16a1c89d1a0447f98096596427da611d493bfd34cec",
+      "expectedHashMatches": true,
+      "bytes": 2315,
+      "publication": "projected-fields",
+      "reason": "Only a narrow inspected projection may be included. Private original remains unchanged.",
+      "projectedPath": "docs/releases/remediation-013/local/absent-workers/review-c-11/proof/03-invoice_trace.assignment.json.excerpt.json",
+      "projectedSha256": "a390ea70f279a69c772b0a37301f64339eaa28b1de6f4d0642743b9e6a351297"
+    },
+    {
+      "originalLocator": "cross-host-extra/local/projects/absent-workers/outputs/invoice_trace.events.jsonl",
+      "sourceSha256": "5709ab62b433fafa6ad846d87360105e0229602fb70316f37890a351476a0ed5",
+      "expectedSha256": "5709ab62b433fafa6ad846d87360105e0229602fb70316f37890a351476a0ed5",
+      "expectedHashMatches": true,
+      "bytes": 1140,
+      "publication": "omitted",
+      "reason": "Only a narrow inspected projection may be included. Private original remains unchanged."
+    },
+    {
+      "originalLocator": "cross-host-extra/local/projects/absent-workers/outputs/invoice_trace.inspection.json",
+      "sourceSha256": "0ca7f7ac59366e1bf62ab0b224ba5a59d99d4bf89b67e8fa64544f9690973d13",
+      "expectedSha256": "0ca7f7ac59366e1bf62ab0b224ba5a59d99d4bf89b67e8fa64544f9690973d13",
+      "expectedHashMatches": true,
+      "bytes": 864,
+      "publication": "projected-fields",
+      "reason": "Only a narrow inspected projection may be included. Private original remains unchanged.",
+      "projectedPath": "docs/releases/remediation-013/local/absent-workers/review-c-11/proof/04-invoice_trace.inspection.json.excerpt.json",
+      "projectedSha256": "34b306a68b5cae7498b259181fe2f1fd2d42c78e8e9fb123c123dac9bad64584"
+    },
+    {
+      "originalLocator": "cross-host-extra/local/projects/absent-workers/outputs/invoice_trace/result.md",
+      "sourceSha256": "0d01ff0c267908423966c87ac34d0b65e2a770f8118b649fff4d2ec6e741d1b9",
+      "expectedSha256": "0d01ff0c267908423966c87ac34d0b65e2a770f8118b649fff4d2ec6e741d1b9",
+      "expectedHashMatches": true,
+      "bytes": 5670,
+      "publication": "omitted",
+      "reason": "Only a narrow inspected projection may be included. Private original remains unchanged."
+    },
+    {
+      "originalLocator": "cross-host-extra/local/projects/absent-workers/outputs/invoice_trace/completion.json",
+      "sourceSha256": "67ae8ebf9a404e873848407fe6e81684ce0dfccf037a3a3633c822bb0190a82a",
+      "expectedSha256": "67ae8ebf9a404e873848407fe6e81684ce0dfccf037a3a3633c822bb0190a82a",
+      "expectedHashMatches": true,
+      "bytes": 37192,
+      "publication": "omitted",
+      "reason": "Raw/native context, broad discovery, completion dump, or bulk source manifest is excluded. No protected payload is decoded."
+    }
+  ],
+  "projectionLimits": [
+    "This file projects the existing independent assessment and does not regrade the case.",
+    "Private source artifacts and omitted native operations remain private. Source digests bind originals, not transformed bytes.",
+    "Historical 0.1.3 observations do not qualify current main or a modified candidate."
+  ],
+  "statusMapping": {
+    "originalProposedStatus": "pass",
+    "canonicalStatus": "pass",
+    "rule": "No status alias is applied."
+  }
+}

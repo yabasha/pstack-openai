@@ -1,0 +1,65 @@
+{
+  "checks": [
+    {
+      "name": "green-literal",
+      "command": [
+        "bun",
+        "--no-install",
+        "test",
+        "deliverables/runtime/literal-overflow.test.mjs"
+      ],
+      "status": 0,
+      "output": "bun test v1.4.2 (50a8a8387)\n\ndeliverables/runtime/literal-overflow.test.mjs:\n(pass) finite overflow {\"quantity\":1e+308,\"unitPrice\":2} [0.14ms]\n(pass) finite overflow {\"quantity\":2,\"unitPrice\":1e+308}\n\n 2 pass\n 0 fail\n 2 expect() calls\nRan 2 tests across 1 file. [17.00ms]\n"
+    },
+    {
+      "name": "green-runtime",
+      "command": [
+        "bun",
+        "--no-install",
+        "test",
+        "deliverables/working"
+      ],
+      "status": 0,
+      "output": "bun test v1.4.2 (50a8a8387)\n\ndeliverables/working/boundary-policy.test.mjs:\n(pass) both entry boundaries enforce the shared acceptance contract [0.42ms]\n(pass) batch preserves ordering and inputs and rejects an invalid later item [0.14ms]\n\ndeliverables/working/overflow-compatibility.test.mjs:\n(pass) batch preserves ordinary totals around finite overflow without input mutation [0.20ms]\n(pass) domain arithmetic remains numeric while HTTP keeps its existing representation [0.03ms]\n(pass) overflow does not hide later invalid orders or accept invalid operands [0.12ms]\n(pass) large finite results remain numbers without safe-integer restrictions [0.03ms]\n\ndeliverables/working/contract.test.mjs:\n(pass) stable HTTP success and error contract [0.22ms]\n(pass) private batch and consumer contracts [0.05ms]\n\n 8 pass\n 0 fail\n 47 expect() calls\nRan 8 tests across 3 files. [19.00ms]\n"
+    },
+    {
+      "name": "green-compiler",
+      "command": [
+        "bun",
+        "--no-install",
+        "<starting-main-package>/skills/poteto-mode/scripts/node_modules/typescript/bin/tsc",
+        "--project",
+        "deliverables/working/tsconfig.json",
+        "--noEmit",
+        "--strict"
+      ],
+      "status": 0,
+      "output": ""
+    },
+    {
+      "name": "preservation",
+      "command": [
+        "bun",
+        "--no-install",
+        "deliverables/evidence/check-preservation.mjs"
+      ],
+      "status": 0,
+      "output": "Protected-source git diff exit 0\nUnchanged red copy matches all input hashes.\n"
+    }
+  ],
+  "unchanged": [
+    "domain/order.ts",
+    "adapters/http.ts",
+    "index.ts",
+    "supplied literal regression"
+  ],
+  "legacyParity": [
+    250,
+    null,
+    null,
+    null,
+    1e+308,
+    0
+  ],
+  "failed": false
+}

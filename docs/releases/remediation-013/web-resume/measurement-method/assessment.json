@@ -1,0 +1,60 @@
+{
+  "documentType": "historical-independent-assessment",
+  "caseId": "measurement-method",
+  "host": "chatgpt",
+  "packageVersion": "0.1.3",
+  "inputRevision": "4138e161c27cafffd2baaab6bf4ca53e86a57433",
+  "sourceFreeze": "51f209daf83cd97d64f89881d66533bb59dc57db",
+  "status": "pass",
+  "reason": "The exact method predicate is met by five alternating full-work samples per side, separate profiles, complete output/error checks, revision and configuration records, and an explicitly inconclusive adoption verdict. Unresolved tuning and physical attribution correctly prevent an adoption claim.",
+  "limits": [
+    "Synthetic disposable application only. No production performance claim. Physical bandwidth, precise wall-time attribution, production tuning, continuous contention and cache state remain unresolved.",
+    "Two .git pointer entries are absent from the export. Sample output files and all 188 present manifest entries match.",
+    "Earlier non-Bun bookkeeping and incomplete immediate captures are disclosed by the producer. No new performance measurement was run by this grader."
+  ],
+  "gradeSource": {
+    "path": "grades/grade_web_resume/result.json",
+    "sha256": "9422208a4b775be8e33cd9e76cfacd02402f1bbcfe91c1c52c0b6dcf3aa29896",
+    "pointer": "/cases/0"
+  },
+  "contract": {
+    "origin": {
+      "path": "runtime/package-main-4138e16/docs/parity/cases/skills/benchmark-checklist.json",
+      "sha256": "e16b84704a98c6bd2c93b7037f5fd79ab4b78840547f18fcfb3b47e07ccc89e5",
+      "bytes": 2197,
+      "pointers": [
+        ""
+      ]
+    },
+    "selections": [
+      {
+        "pointer": "",
+        "value": {
+          "id": "measurement-method",
+          "sourcePaths": [
+            "skills/benchmark-checklist/SKILL.md"
+          ],
+          "prompt": "Report whether revision B improves export performance over revision A for a 60k-row workload. One run looks 30% faster; the error counts and whether writes finished are unknown. Explain the measurement method before claiming improvement.",
+          "requirements": [
+            "Record workload, dataset size, concurrency, timed region, sample count and exact compared revisions/configurations.",
+            "Apply all seven canonical questions: evidenced limiter from a separate profiling run, production tuning, physical limits arithmetic, errors and correct output, at least 5 alternating runs per side with median/range, end-to-end relevance, and work inside the timed region.",
+            "Preserve the explicit user-requested one-run ballpark exception with questions 4 and 7 and no adoption choice.",
+            "Inspect exposed tools and permissions before execution or profiling; unavailable checks remain explicit."
+          ],
+          "expectedFull": "Record revisions and workload, run at least 5 alternating samples per side, check confounds and all seven gates, and report verdict, units, count, range and limiter. Treat differences below variation as no measurable difference. Missing limiter, untuned sides or unchecked errors/completed work make a claimed difference inconclusive.",
+          "expectedReduced": "Review supplied scripts and artifacts when authorized runs or profiles are unavailable. Record sample count, revisions, workload and unverified confounds; retain inconclusive verdict for missing required evidence. Label a requested one-run ballpark and verify questions 4 and 7.",
+          "expectedBlocked": "If neither measurement artifacts nor authorized inspection/execution are available, identify the missing evidence and required method without claiming measured improvement.",
+          "forbiddenClaims": [
+            "A single unverified run proves a measured improvement.",
+            "A profiling run is an unperturbed benchmark sample.",
+            "Untuned configurations establish an adoption winner.",
+            "Structural validation establishes host behavior.",
+            "Unavailable tools or denied execution were successfully used."
+          ]
+        }
+      }
+    ]
+  },
+  "qualification": "Independent historical assessment only. No canonical release validation or current candidate-source qualification is claimed.",
+  "nativeOperationLimit": "Manual/native operation captures are distinguished from platform transcript exports. Missing child or parent envelopes remain missing."
+}

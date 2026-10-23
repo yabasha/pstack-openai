@@ -1,44 +1,85 @@
 {
   "caseId": "discriminating-eval",
-  "packageVersion": "0.1.0",
-  "packageCommit": "5d05ab2458f4cd73c44b24265a3a1920b98b8cf4",
+  "packageVersion": "0.1.3",
+  "packageCommit": "51f209daf83cd97d64f89881d66533bb59dc57db",
   "host": "chatgpt",
-  "hostMode": "personal ChatGPT not accessed; host mode unobserved",
-  "date": "2026-10-08",
+  "hostMode": "Fresh native web workflow attempt with independent retained-artifact review",
+  "date": "2026-10-16",
   "input": "Evaluate whether a prompt variant improves agent behavior. Use supplied known good and known bad fixture outputs to check the rubric before trusting scores. Keep candidate context organic and blind. Work only in authorized isolated local paths; do not launch external services or publish.",
-  "observedOutput": "Not attempted. Inherited prerequisite block from package-discovery. No documented supported local plugin loading route is established for this personal ChatGPT context. No actual personal ChatGPT session or installed copy was accessed. No separate human authorization exists for loading, installation, enabling, settings changes or fresh host setup. Personal-host tool probing was not attempted. Current controller filesystem and tools are not personal ChatGPT tools.",
-  "status": "blocked",
-  "execution": "unavailable",
+  "observedOutput": "Two actual independent organic repair tasks and later calibrated blind judge execute. Known fixtures discriminate and actual checks pass; judge correctly leaves read-chain unknown and ties supported criteria at 6/6, with no full /8 total or promotion. Scoped child read transcripts absent, so self-reports cannot establish chain following.",
+  "status": "reduced-pass",
+  "execution": "workers",
   "sourcePaths": [
     "skills/poteto-mode/playbooks/eval.md",
     "skills/arena/SKILL.md",
     "skills/unslop/SKILL.md"
   ],
   "documentedCapabilities": [
-    "docs/setup/chatgpt.md leaves the personal loading route unsupported here; supplied source is reduced capability guidance only.",
-    "references/host-capabilities.md requires actual exposed and successful bindings."
+    "Case-specific capability observations are retained in the independent review; no capability is inferred from package validation."
   ],
-  "exposedTools": [],
+  "exposedTools": [
+    "exec_command",
+    "collaboration.spawn_agent"
+  ],
   "artifacts": [
-    "docs/parity/evidence/chatgpt/authorization-support-check.md"
+    "docs/releases/host-evaluation/chatgpt/discriminating-eval.md"
   ],
   "limits": [
-    "No documented supported local plugin loading route is established for this personal ChatGPT context. No actual personal ChatGPT session or installed copy was accessed. No separate human authorization exists for loading, installation, enabling, settings changes or fresh host setup. Personal-host tool probing was not attempted. Current controller filesystem and tools are not personal ChatGPT tools.",
-    "This case input was not submitted to personal ChatGPT; no model result or expected behavioral output was observed.",
-    "Full and reduced capability are not observed. Runtime cases were not run.",
-    "Exact installed-copy identity, all 51 root names and three canonical nested Benny exclusions remain unobserved.",
-    "No history access, privacy behavior, worker lifecycle, model choice, persistence, integration or negative runtime condition was exercised.",
-    "Local evidence validation checks accounting only. Codex capabilities and results do not transfer to ChatGPT."
+    "No full candidate read transcripts; read-chain unverified, no schema-valid full Arena claim.",
+    "Host-global catalogs/shared filesystem visibility uncontrolled; actual models unknown.",
+    "One sample per variant cannot establish reliable guidance improvement; no promotion.",
+    "Judge gate waiting exceeded original 180-second target; explicit continuation retained.",
+    "Both outputs alter Symbol-note coercion outside specified policy domain; difference disclosed rather than scored as invented defect.",
+    "Selected source identities independently compared outside sandbox; source hashing establishes bytes, never workflow execution.",
+    "Fresh archive and baseline attempts remain separate; failed/unstarted variants and input Git index changes preserved."
   ],
   "priorActionIdentities": [],
   "permissions": {
-    "execution": "unavailable",
-    "writes": "unknown",
-    "externalActions": "unknown"
+    "execution": "granted",
+    "writes": "granted",
+    "externalActions": "denied"
   },
   "models": {
-    "requested": "unknown",
+    "requested": "inherit-parent",
     "actual": "unknown"
   },
-  "successfulOperations": []
+  "successfulOperations": [
+    {
+      "operation": "read",
+      "tool": "exec_command",
+      "evidence": "docs/releases/host-evaluation/chatgpt/discriminating-eval.md"
+    },
+    {
+      "operation": "execution",
+      "tool": "exec_command",
+      "evidence": "docs/releases/host-evaluation/chatgpt/discriminating-eval.md"
+    },
+    {
+      "operation": "spawn",
+      "tool": "collaboration.spawn_agent",
+      "evidence": "docs/releases/host-evaluation/chatgpt/discriminating-eval.md"
+    },
+    {
+      "operation": "inspect-result",
+      "tool": "exec_command",
+      "evidence": "docs/releases/host-evaluation/chatgpt/discriminating-eval.md"
+    }
+  ],
+  "nativeObservations": [
+    {
+      "observation": "supplied-input",
+      "evidence": "docs/releases/host-evaluation/chatgpt/discriminating-eval.md",
+      "reviewedBy": "grade_local_repairs"
+    },
+    {
+      "observation": "response",
+      "evidence": "docs/releases/host-evaluation/chatgpt/discriminating-eval.md",
+      "reviewedBy": "grade_local_repairs"
+    },
+    {
+      "observation": "review-outcome",
+      "evidence": "docs/releases/host-evaluation/chatgpt/discriminating-eval.md",
+      "reviewedBy": "grade_local_repairs"
+    }
+  ]
 }

@@ -1,4 +1,4 @@
-# Candidate compatibility
+# Compatibility
 
 Current [inventory](parity/inventory.json) records per-workflow verification on both hosts as not-run. Source validation and local installation/discovery are recorded separately in the [0.2.1 refresh record](releases/0.2.1.md). Historical host observations do not transfer to this package. Local source inspection, schema checks and helper fixtures do not establish full workflow behavior.
 
@@ -10,7 +10,7 @@ Current [inventory](parity/inventory.json) records per-workflow verification on 
 | Sequential supplied-source work | Possible reduced branch, not a recorded pass | Actual authorized reads and artifacts, required observations and complete discovery for package acceptance |
 | Dependency-backed helpers | Setup-required in operative candidate | Exact local dependency metadata and caller-specific execution evidence |
 | Historical helper validation | Passed only in isolated snapshot | [Helper guide](testing/helper-setup.md) identifies the exact tested source SHA and limits |
-| Optional integrations and Benny | Not-run or blocked when unavailable | [Benny readiness](testing/benny-readiness.md), actual bindings and separate action permission |
+| Optional integrations and Benny | Case-specific; unavailable adapters and integrations remain blocked | [Benny readiness](testing/benny-readiness.md), actual bindings and separate action permission |
 
 Use [host matrix](testing/host-matrix.md), [case registry](parity/case-registry.json), [case schema](parity/cases/schema.json) and [evidence schema](parity/evidence.schema.json). Required cases need actual host observations or explicit blocked records. Complete discovery needs the identical 54-root receipt in a direct pass, worker pass or validated sequential reduced-pass. Ordinary direct completion is full when it satisfies every case requirement. A reduction never proves worker independence or full orchestration.
 

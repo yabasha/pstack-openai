@@ -1,0 +1,22 @@
+{
+  "kind": "historical-proof-selection",
+  "source": {
+    "path": "<private-run>/web-checkpoint-2/units/denied-writes/outputs/denied-writes/raw-005.json",
+    "sha256": "ddadb108664245ed09ded452ba45b42d32e5150185b433960991ad1e73308567",
+    "bytes": 402
+  },
+  "selection": [
+    {
+      "locator": {
+        "jsonPointer": "/returned"
+      },
+      "value": {
+        "error": "Error: ENOENT: no such file or directory, open '/root/.codex/plugins/cache/created-by-me-remote/pstack-openai/0.1.3/skills/poteto-mode/references/agent-prompts/poteto-agent.md'"
+      }
+    }
+  ],
+  "limits": [
+    "Selections preserve the exact source value at each locator. Truncated strings carry explicit code-unit bounds.",
+    "A producer-captured return is not a recovered native parent envelope. Missing call IDs, original capture defects and unknown model observations remain missing."
+  ]
+}

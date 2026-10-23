@@ -1,0 +1,10 @@
+{
+  "kind": "supplied-fixture-input-excerpt",
+  "caseId": "shared-path-conflict",
+  "inputRevision": "5c68f1fe4b29243ed37889507222cb408af2bfef",
+  "originalLocator": "cross-host-extra/local/projects/shared-path-conflict/task-contract.json",
+  "sourceSha256": "b81e6502a2244e5b945dae614df8ef4ba596bfaeb59911798e0fadf629fdf1b0",
+  "pointer": "/case/prompt",
+  "suppliedPrompt": "Two workers request the same output path.",
+  "transformation": "Only the exact supplied case prompt is projected. Fixture data and arbitrary surrounding contract fields are omitted. This is supplied input, not a native successful tool operation."
+}

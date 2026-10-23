@@ -1,0 +1,24 @@
+{
+  "kind": "selected-fixture-result-fields",
+  "caseId": "bounded-improvement",
+  "attemptId": "review-b-02",
+  "originalLocator": "remaining-local/cases/bounded-improvement/outputs/design-method-receipt.json",
+  "sourceSha256": "f60207ae51149f8769d9b8dc3a40aecdbc42f1b9f4c13c77d5769fea0e854f0c",
+  "sourceBytes": 13068,
+  "transformation": "Named JSON fields selected by exact JSON Pointer. Task-owned absolute paths replaced with declared placeholders. Other fields omitted. These are result-artifact values, not synthesized tool execution evidence. Public selection is limited to eight short inspected fields. Longer output and unselected fields remain private.",
+  "fields": [
+    {
+      "pointer": "/inputRevision",
+      "value": "eaeece4e22e2d3fabe2b83e54116b323a32ee94e"
+    },
+    {
+      "pointer": "/limits",
+      "value": [
+        "Initial candidate assignments omitted full prospective structured method fields; method capture after dispatch is not repaired retrospectively",
+        "Candidate1 exact native resultMethod retained in correction artifact after initial prose normalization",
+        "Actual model values unknown",
+        "Judge full role supplied by message after spawn, not original request"
+      ]
+    }
+  ]
+}

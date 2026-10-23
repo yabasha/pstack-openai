@@ -1,0 +1,23 @@
+{
+  "kind": "selected-fixture-result-fields",
+  "caseId": "contiguous-verified-stack",
+  "attemptId": "review-a-13",
+  "originalLocator": "work/helper_workflow_reruns/projects/release-stack/deliverables/verifier-b/pty.json",
+  "sourceSha256": "54208d3fa344527041f4d6fef4079b4297a939992d597870b8e805e3944a7284",
+  "sourceBytes": 636,
+  "transformation": "Named JSON fields selected by exact JSON Pointer. Task-owned absolute paths replaced with declared placeholders. Other fields omitted. These are result-artifact values, not synthesized tool execution evidence. Public selection is limited to eight short inspected fields. Longer output and unselected fields remain private.",
+  "fields": [
+    {
+      "pointer": "/exit_code",
+      "value": 0
+    },
+    {
+      "pointer": "/command",
+      "value": "Nine direct bun --no-install invocations of parent.ts, head.ts, current.ts with arguments 7, 0, -3"
+    },
+    {
+      "pointer": "/limits",
+      "value": "PTY transcript merges stdout and stderr. Separate piped reruns preserve each stream in cli-raw.json."
+    }
+  ]
+}

@@ -1,0 +1,36 @@
+{
+  "kind": "historical-proof-selection",
+  "source": {
+    "path": "<private-run>/web-checkpoint-2/units/denied-writes/outputs/denied-writes/raw-016.json",
+    "sha256": "f089fc7db165e7cad5a796bcbf2c154f58a03a22d1fdf8fd475030a8b2214e5d",
+    "bytes": 388
+  },
+  "selection": [
+    {
+      "locator": {
+        "jsonPointer": "/request/command"
+      },
+      "value": [
+        "git",
+        "-C",
+        "/mnt/data/pstack-remediation-20261017/attempts-18/outputs/denied-writes/task-input",
+        "show",
+        "HEAD:agents/poteto-agent.md"
+      ]
+    },
+    {
+      "locator": {
+        "jsonPointer": "/returned"
+      },
+      "value": {
+        "stdout": "",
+        "stderr": "fatal: path 'agents/poteto-agent.md' does not exist in 'HEAD'\n",
+        "exitCode": 128
+      }
+    }
+  ],
+  "limits": [
+    "Selections preserve the exact source value at each locator. Truncated strings carry explicit code-unit bounds.",
+    "A producer-captured return is not a recovered native parent envelope. Missing call IDs, original capture defects and unknown model observations remain missing."
+  ]
+}

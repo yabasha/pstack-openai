@@ -1,0 +1,10 @@
+{
+  "kind": "supplied-fixture-input-excerpt",
+  "caseId": "repeated-failure",
+  "inputRevision": "25513453054f9ce79354b7ae6c17a3db80dd8012",
+  "originalLocator": "remaining-local/cases/repeated-failure/task-contract.json",
+  "sourceSha256": "2ab067f4fa81df64dbf695ff6e8bdbea85eb305bf9eb180d44de010cb2b9603c",
+  "pointer": "/case/prompt",
+  "suppliedPrompt": "Two fixes assume actor assignment is harmless, but both fail the same imbalance check. Before a third fix, apply Attack the Premise. Inspect actor counts across runs and consider both skewed and even census outcomes.",
+  "transformation": "Only the exact supplied case prompt is projected. Fixture data and arbitrary surrounding contract fields are omitted. This is supplied input, not a native successful tool operation."
+}

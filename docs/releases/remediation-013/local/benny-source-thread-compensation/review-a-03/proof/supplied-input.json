@@ -1,0 +1,10 @@
+{
+  "kind": "supplied-fixture-input-excerpt",
+  "caseId": "benny-source-thread-compensation",
+  "inputRevision": "0c3afc8dce70e6475ac0eb91fb3cd1e794129476",
+  "originalLocator": "remaining-local/cases/benny-source-thread-compensation/task-contract.json",
+  "sourceSha256": "3dcfc9286fd5bdf5080e33d6d01d13be15925603f436a5080815aa3874835f55",
+  "pointer": "/case/prompt",
+  "suppliedPrompt": "An authorized new ticket was created but the one source verdict failed to land.",
+  "transformation": "Only the exact supplied case prompt is projected. Fixture data and arbitrary surrounding contract fields are omitted. This is supplied input, not a native successful tool operation."
+}

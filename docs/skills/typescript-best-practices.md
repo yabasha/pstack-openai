@@ -78,7 +78,7 @@ Forbidden claims:
 
 ## Source proof and release evidence
 
-The following statuses come from the current parity inventory. Pending aggregate review remains pending. Structural catalog checks do not establish host support.
+Current host statuses and release evidence: [current parity inventory](../parity/inventory.json), [chatgpt host report](../testing/chatgpt.md), and [codex host report](../testing/codex.md). These records can advance after the source freeze. Structural catalog checks do not establish host support.
 
 ### `skills/typescript-best-practices/SKILL.md`
 
@@ -88,9 +88,6 @@ Upstream commit: `4ec7ffa173eaa70d3d9467a627baf0954645a353`. SHA-256: `ec1dac086
 
 Disposition: `runtime`. Aggregate adaptation status: `adapted-reviewed`.
 
-- chatgpt: `not-run`. Tested release evidence: none recorded.
-- codex: `not-run`. Tested release evidence: none recorded.
-
 ### `skills/typescript-best-practices/references/patterns.md`
 
 Destination: [skills/typescript-best-practices/references/patterns.md](../../skills/typescript-best-practices/references/patterns.md).
@@ -98,6 +95,3 @@ Destination: [skills/typescript-best-practices/references/patterns.md](../../ski
 Upstream commit: `4ec7ffa173eaa70d3d9467a627baf0954645a353`. SHA-256: `12e70c9419a8b3f5d6a1ab80e272c1f00a43ac0b3bbf72d68199033570e5de77`.
 
 Disposition: `runtime`. Aggregate adaptation status: `adapted-reviewed`.
-
-- chatgpt: `not-run`. Tested release evidence: none recorded.
-- codex: `not-run`. Tested release evidence: none recorded.

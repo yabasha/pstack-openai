@@ -1,0 +1,53 @@
+{
+  "kind": "historical-proof-selection",
+  "source": {
+    "path": "<private-run>/web-checkpoint-3/units/contiguous-verified-stack/outputs/contiguous-verified-stack-real-build/changed101-actual-pty.raw.json",
+    "sha256": "f60a28559128cf73c3ddec6b99999fbe2d72bf032b686d84d8247bc54dd8004d",
+    "bytes": 550
+  },
+  "selection": [
+    {
+      "locator": {
+        "jsonPointer": "/clock"
+      },
+      "value": "2026-10-17T07:44:50.272Z"
+    },
+    {
+      "locator": {
+        "jsonPointer": "/request/cmd"
+      },
+      "value": "/mnt/data/pstack-013-evaluation/runtime/bun-linux-x64/bun --no-install /mnt/data/pstack-remediation-20261017/attempts-18/outputs/contiguous-verified-stack-real-build/changed101/app.ts 7"
+    },
+    {
+      "locator": {
+        "jsonPointer": "/request/tty"
+      },
+      "value": true
+    },
+    {
+      "locator": {
+        "jsonPointer": "/result"
+      },
+      "value": {
+        "chunk_id": "370f50",
+        "wall_time_seconds": 0.000028634,
+        "exit_code": 0,
+        "original_token_count": 7,
+        "output": "{\"input\":7,\"result\":21}\r\n"
+      }
+    },
+    {
+      "locator": {
+        "jsonPointer": "/literalExpected"
+      },
+      "value": {
+        "input": 7,
+        "result": 21
+      }
+    }
+  ],
+  "limits": [
+    "Selections preserve the exact source value at each locator. Truncated strings carry explicit code-unit bounds.",
+    "A producer-captured return is not a recovered native parent envelope. Missing call IDs, original capture defects and unknown model observations remain missing."
+  ]
+}

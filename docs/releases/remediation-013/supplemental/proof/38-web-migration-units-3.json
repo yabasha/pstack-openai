@@ -1,0 +1,24 @@
+{
+  "kind": "historical-proof-selection",
+  "source": {
+    "path": "<private-run>/web-checkpoint-3/units/migration-units/outputs/migration-units/pristine-final.json",
+    "sha256": "210de72a16e54a3b5ed3e2daa67c576901594db82551710973a817c695353483",
+    "bytes": 240
+  },
+  "selection": [
+    {
+      "locator": {
+        "jsonPointer": "/return"
+      },
+      "value": {
+        "exitCode": 0,
+        "stdout": "",
+        "stderr": ""
+      }
+    }
+  ],
+  "limits": [
+    "Selections preserve the exact source value at each locator. Truncated strings carry explicit code-unit bounds.",
+    "A producer-captured return is not a recovered native parent envelope. Missing call IDs, original capture defects and unknown model observations remain missing."
+  ]
+}

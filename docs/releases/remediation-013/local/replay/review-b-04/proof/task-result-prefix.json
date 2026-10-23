@@ -1,0 +1,16 @@
+{
+  "kind": "task-result-file-excerpt",
+  "caseId": "replay",
+  "attemptId": "review-b-04",
+  "inputRevision": "f7e6173423ad93c29d7a0b352c9f9b29d9f25976",
+  "originalLocator": "remaining-local/cases/replay/outputs/replay.result.md",
+  "sourceSha256": "36f335b7a79ee4f7a11d967127e6f565566c101019b462160c27e40fa8bafe4e",
+  "sourceWasDirectlyListedByIndependentGrade": true,
+  "characterRange": {
+    "start": 0,
+    "endExclusive": 729,
+    "total": 63685
+  },
+  "content": "# Replay actual attempt receipt\n\nExternal payment replay remains blocked. The local inspection and reduced design were produced. This is an attempt receipt, not a grade or executed-recovery claim.\n\n## Actual response\n\n### Overview\n\nExternal payment replay remains blocked. The supplied original `forge.json` records a synthetic ticket creation, `fixture-ticket-create-1`, with ticket `FIX-1`. It supplies no payment identity, payment destination, provider replay semantics, or observed payment outcome.\n\nThe following recovery behavior is a design proposal. I performed source and fixture reads only. No payment, recovery implementation, crash test, deletion, scheduling operation, or configuration change ran.\n\n### Key concepts\n",
+  "transformation": "An inspected prefix of the actual task-result file is projected. Task-owned absolute paths use declared placeholders. The prefix may omit later qualifications. The independent assessment and its limits govern the proposed grade. This is neither a new grade nor a native callable-operation claim."
+}

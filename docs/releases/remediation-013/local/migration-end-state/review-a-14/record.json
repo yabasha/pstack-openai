@@ -1,0 +1,67 @@
+{
+  "caseId": "migration-end-state",
+  "packageVersion": "0.1.3",
+  "packageCommit": "51f209daf83cd97d64f89881d66533bb59dc57db",
+  "host": "codex",
+  "hostMode": "Historical native Local task-scoped fixture observation",
+  "date": "2026-10-17",
+  "input": "Historical fixture at 044264355914b6d5644c74a3f8f8ed4cb2c9781f. Independent assessment review-a-14.",
+  "observedOutput": "The supplied named target, complete consuming module and reversible pristine snapshot are present. The final domain owns Order and pure multiplication; HTTP and batch own their validation, and batch calls total directly. Consumer/facade migrate together and legacy/RawOrder disappear. Planned intermediate breakage is restricted to the owned working copy and the phase-two domain check precedes boundary writes. Actual strict static and runtime checks passed. This reviewer independently repeated strict compilation and the literal runtime contract with zero failures. The finite-overflow batch difference is explicitly consistent with this target requiring direct totals. This case is not the excluded selected finite-overflow compatibility repair. Judge first-read and template-checker failures remain workflow limitations. They do not negate this leaf case target/static/runtime predicates or establish perfect mode adherence.",
+  "status": "pass",
+  "execution": "direct",
+  "inputRevision": "044264355914b6d5644c74a3f8f8ed4cb2c9781f",
+  "sourcePaths": [
+    "skills/principle-outcome-oriented-execution/SKILL.md"
+  ],
+  "documentedCapabilities": [
+    "Frozen source instructions only. Current-main qualification is not established."
+  ],
+  "exposedTools": [
+    "exec"
+  ],
+  "artifacts": [
+    "docs/releases/remediation-013/local/migration-end-state/review-a-14/assessment.json",
+    "docs/releases/remediation-013/local/migration-end-state/review-a-14/proof/01-phase2.json.excerpt.json",
+    "docs/releases/remediation-013/local/migration-end-state/review-a-14/proof/02-check-results.json.excerpt.json",
+    "docs/releases/remediation-013/local/migration-end-state/review-a-14/proof/03-method-receipt.json.excerpt.json",
+    "docs/releases/remediation-013/local/migration-end-state/review-a-14/proof/native-source-read.json",
+    "docs/releases/remediation-013/local/migration-end-state/review-a-14/proof/fixture/working/domain/order.ts",
+    "docs/releases/remediation-013/local/migration-end-state/review-a-14/proof/fixture/working/adapters/http.ts",
+    "docs/releases/remediation-013/local/migration-end-state/review-a-14/proof/fixture/working/batch.ts",
+    "docs/releases/remediation-013/local/migration-end-state/review-a-14/proof/fixture/working/index.ts",
+    "docs/releases/remediation-013/local/migration-end-state/review-a-14/proof/fixture/working/consumer.ts",
+    "docs/releases/remediation-013/local/migration-end-state/review-a-14/proof/fixture/check-results.json"
+  ],
+  "limits": [
+    "The finite-overflow batch difference is explicitly consistent with this target requiring direct totals. This case is not the excluded selected finite-overflow compatibility repair.",
+    "Judge first-read and template-checker failures remain workflow limitations. They do not negate this leaf case target/static/runtime predicates or establish perfect mode adherence.",
+    "The public source excerpt covers the listed matched paths only. Other source reads assessed independently remain outside this narrow public excerpt.",
+    "Only the actual operations listed in this record have narrow public bindings. Other operations from the independent assessment remain unprojected. No missing operation is invented.",
+    "The exposed tool name exec is retained from the actual scoped native custom-tool call. The nested tools.exec_command call matches this public command event. command_execution remains an event type only.",
+    "Selected fixture code and prior check receipts are included for review. They are fragments of the actual owned fixture, not a newly run or self-contained build. The curation did not re-execute workflow tests."
+  ],
+  "priorActionIdentities": [],
+  "permissions": {
+    "execution": "granted",
+    "writes": "granted",
+    "externalActions": "denied"
+  },
+  "models": {
+    "requested": "inherit-parent",
+    "actual": "gpt-6.1-sol"
+  },
+  "successfulOperations": [
+    {
+      "operation": "read",
+      "tool": "exec",
+      "evidence": "docs/releases/remediation-013/local/migration-end-state/review-a-14/proof/native-source-read.json"
+    }
+  ],
+  "nativeObservations": [
+    {
+      "observation": "review-outcome",
+      "evidence": "docs/releases/remediation-013/local/migration-end-state/review-a-14/assessment.json",
+      "reviewedBy": "/root/grade_remediation_local_a"
+    }
+  ]
+}

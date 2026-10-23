@@ -1,0 +1,62 @@
+{
+  "kind": "historical-proof-selection",
+  "source": {
+    "path": "<private-run>/remaining-local/cases/guides-local-codex/outputs/probe-result.json",
+    "sha256": "8b45a617f6e96c48241b7df4257f9fba1370ec80734375016bc96ace2407c140",
+    "bytes": 312
+  },
+  "selection": [
+    {
+      "locator": {
+        "jsonPointer": "/revision"
+      },
+      "value": "5121e077a8035896fa8266714b2ea3fbd8da578c"
+    },
+    {
+      "locator": {
+        "jsonPointer": "/owner"
+      },
+      "value": "/root/guides"
+    },
+    {
+      "locator": {
+        "jsonPointer": "/sourceCount"
+      },
+      "value": 17
+    },
+    {
+      "locator": {
+        "jsonPointer": "/hashedFileCount"
+      },
+      "value": 21
+    },
+    {
+      "locator": {
+        "jsonPointer": "/readback"
+      },
+      "value": "guides-local-codex isolated write and durable readback probe\n"
+    },
+    {
+      "locator": {
+        "jsonPointer": "/execution"
+      },
+      "value": "Bun probe completed"
+    },
+    {
+      "locator": {
+        "jsonPointer": "/loadedPlugin"
+      },
+      "value": "unverified"
+    },
+    {
+      "locator": {
+        "jsonPointer": "/actualModel"
+      },
+      "value": "unknown"
+    }
+  ],
+  "limits": [
+    "Selections preserve the exact source value at each locator. Truncated strings carry explicit code-unit bounds.",
+    "A producer-captured return is not a recovered native parent envelope. Missing call IDs, original capture defects and unknown model observations remain missing."
+  ]
+}

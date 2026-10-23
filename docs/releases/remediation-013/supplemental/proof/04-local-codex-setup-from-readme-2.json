@@ -1,0 +1,289 @@
+{
+  "kind": "historical-proof-selection",
+  "source": {
+    "path": "<private-run>/remaining-local/cases/codex-setup-from-readme/outputs/completion.json",
+    "sha256": "5ee23d7cb9933144daf359e8111c8afb96946e4abfdc7af255a544ff47815873",
+    "bytes": 8225
+  },
+  "selection": [
+    {
+      "locator": {
+        "jsonPointer": "/caseId"
+      },
+      "value": "codex-setup-from-readme"
+    },
+    {
+      "locator": {
+        "jsonPointer": "/assignmentId"
+      },
+      "value": "remaining06-codex-setup-from-readme"
+    },
+    {
+      "locator": {
+        "jsonPointer": "/outputOwner"
+      },
+      "value": "/root/codex_setup_from_readme"
+    },
+    {
+      "locator": {
+        "jsonPointer": "/resultRevision"
+      },
+      "value": "19e678ddde52904601c1b877f9565b158ca2d436"
+    },
+    {
+      "locator": {
+        "jsonPointer": "/inputRevisionVerified"
+      },
+      "value": true
+    },
+    {
+      "locator": {
+        "jsonPointer": "/originalInputRevision"
+      },
+      "value": "fdbcada96209264f96aa8b881106d743b487645c"
+    },
+    {
+      "locator": {
+        "jsonPointer": "/originalInputAvailable"
+      },
+      "value": false
+    },
+    {
+      "locator": {
+        "jsonPointer": "/packageCommitSupplied"
+      },
+      "value": "51f209daf83cd97d64f89881d66533bb59dc57db"
+    },
+    {
+      "locator": {
+        "jsonPointer": "/packageCommitIndependentlyResolved"
+      },
+      "value": false
+    },
+    {
+      "locator": {
+        "jsonPointer": "/packageVersionObserved"
+      },
+      "value": "0.1.3"
+    },
+    {
+      "locator": {
+        "jsonPointer": "/requestedModel"
+      },
+      "value": "inherit-parent"
+    },
+    {
+      "locator": {
+        "jsonPointer": "/observedModel"
+      },
+      "value": "unknown"
+    },
+    {
+      "locator": {
+        "jsonPointer": "/requestedEffort"
+      },
+      "value": "inherit-parent"
+    },
+    {
+      "locator": {
+        "jsonPointer": "/observedEffort"
+      },
+      "value": "unknown"
+    },
+    {
+      "locator": {
+        "jsonPointer": "/method"
+      },
+      "value": "Independent case worker with direct read-only documentation walkthrough; how explainer independence remains unmet due capacity"
+    },
+    {
+      "locator": {
+        "jsonPointer": "/terminalStatus"
+      },
+      "value": "blocked"
+    },
+    {
+      "locator": {
+        "jsonPointer": "/completedAuthorizedWork"
+      },
+      "value": "Bounded supplied-source walkthrough and evidence artifacts"
+    },
+    {
+      "locator": {
+        "jsonPointer": "/actualResponseArtifact"
+      },
+      "value": "codex-setup-from-readme.result.md"
+    },
+    {
+      "locator": {
+        "jsonPointer": "/variants"
+      },
+      "value": [
+        {
+          "id": "read-only-without-loading",
+          "outcome": "Readable route inspected; loading POLICY withheld"
+        },
+        {
+          "id": "original-input",
+          "outcome": "Git object missing; blocked"
+        },
+        {
+          "id": "installed-discovery",
+          "outcome": "Blocked by loading policy and no observed installed-copy operation"
+        },
+        {
+          "id": "later-authorized-loading",
+          "outcome": "Not run; no later grant"
+        },
+        {
+          "id": "independent-how-explainer",
+          "outcome": "Capacity exhausted, not run; no false toolabsence"
+        },
+        {
+          "id": "later-capacity-independent-explainer",
+          "assignmentId": "remaining06-setup-later-capacity-explainer",
+          "workerId": "/root/setup_explainer",
+          "inputRevision": "19e678ddde52904601c1b877f9565b158ca2d436",
+          "method": "fresh routed read-only how explainer",
+          "terminalStatus": "completed",
+          "requestedModel": "inherit-parent",
+          "observedModel": "unknown",
+          "nativeResultLocator": "Active conversation FINAL_ANSWER from /root/setup_explainer",
+          "inspectedBy": "/root",
+          "observedOperations": "Exact case HEAD twice; frozen README/setup/full mode and routed contracts read; source digests returned. Parent inspected native result and actual README/setup sources.",
+          "limits": "Source explanation only. No loading, discovery, settings, network or external writes. Earlier capacity-blocked trial unchanged.",
+          "at": "2026-10-17T07:41:16.005Z"
+        }
+      ]
+    },
+    {
+      "locator": {
+        "jsonPointer": "/bindings"
+      },
+      "value": [
+        {
+          "operation": "read",
+          "tool": "functions.exec -> tools.exec_command",
+          "exposed": true,
+          "succeeded": true,
+          "evidence": "source-readback.json",
+          "limits": "File access only"
+        },
+        {
+          "operation": "isolated-write",
+          "tool": "functions.exec -> tools.exec_command",
+          "exposed": true,
+          "succeeded": true,
+          "evidence": "request.json",
+          "limits": "Own outputs only"
+        },
+        {
+          "operation": "execution",
+          "tool": "functions.exec -> tools.exec_command",
+          "exposed": true,
+          "succeeded": true,
+          "evidence": "revision-observations.json",
+          "limits": "Local read commands and Bun artifact writes"
+        },
+        {
+          "operation": "discover-package",
+          "tool": null,
+          "exposed": false,
+          "succeeded": false,
+          "evidence": null,
+          "limits": "No observed local desktop discovery operation; loading POLICY withheld"
+        }
+      ]
+    },
+    {
+      "locator": {
+        "jsonPointer": "/artifacts"
+      },
+      "value": [
+        {
+          "path": "request.json",
+          "sha256": "328237f0a9f1f39eb16d990b2889be52bbd87d0bd7e3dd9ec0aaedf9211f38ca"
+        },
+        {
+          "path": "source-readback.json",
+          "sha256": "96cb20df3c0ab80765a4d9ff4165f32c97134e7e35a6fe120f20290d2f27d0bf"
+        },
+        {
+          "path": "revision-observations.json",
+          "sha256": "ecfcd4c7afb16e8723e909f4d852f242a5b81dff518825240cf39a9fe638e234"
+        },
+        {
+          "path": "benny-exclusions.json",
+          "sha256": "7a87ac64fdd14faee7ce3959b17b218a272e79da87de7a8c04ba8dd28a6e4ca0"
+        },
+        {
+          "path": "checklist.md",
+          "sha256": "7726079eed4e2ac75fc00447ef608b391d3cd0bb8fd1731b30f04bd3e919cbdc"
+        },
+        {
+          "path": "codex-setup-from-readme.result.md",
+          "sha256": "2f9811483ed82ca3d74d7429ce9cbd5fa66920ffffbe83baed8f28926c59cad1"
+        }
+      ]
+    },
+    {
+      "locator": {
+        "jsonPointer": "/sideEffects"
+      },
+      "value": "Task-owned output files only"
+    },
+    {
+      "locator": {
+        "jsonPointer": "/limits"
+      },
+      "value": [
+        "Original revision object unavailable",
+        "Source cache has no Git metadata; supplied SHA distinct from actual source digests",
+        "No loading or settings authorization",
+        "No fresh chat loading discovery",
+        "No independent explainer",
+        "No observed model identity or diversity",
+        "Initial read and checklist chronology deviations retained",
+        "No second-host observation"
+      ]
+    },
+    {
+      "locator": {
+        "jsonPointer": "/producerGrade"
+      },
+      "value": null
+    },
+    {
+      "locator": {
+        "jsonPointer": "/initialCompletionSnapshot"
+      },
+      "value": "completion.initial.json"
+    },
+    {
+      "locator": {
+        "jsonPointer": "/parentAddendumArtifacts"
+      },
+      "value": [
+        "completion.later-capacity.json",
+        "later-capacity-inspection.md",
+        "later-capacity-assignment.json"
+      ]
+    },
+    {
+      "locator": {
+        "jsonPointer": "/fullBatchRequestArtifact"
+      },
+      "value": "outputs/full-batch-request.txt"
+    },
+    {
+      "locator": {
+        "jsonPointer": "/fullBatchRequestSha256"
+      },
+      "value": "79c2e61557ba732bb045d6b8c0c8d6f83a7245489552c10ebcc0da7219e8c4b1"
+    }
+  ],
+  "limits": [
+    "Selections preserve the exact source value at each locator. Truncated strings carry explicit code-unit bounds.",
+    "A producer-captured return is not a recovered native parent envelope. Missing call IDs, original capture defects and unknown model observations remain missing."
+  ]
+}

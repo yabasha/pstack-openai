@@ -1,0 +1,23 @@
+{
+  "kind": "historical-proof-selection",
+  "source": {
+    "path": "<private-run>/model-rejection/local/fallback/review.md",
+    "sha256": "01fd524f15660aa8fe53a744585d7289d36b45de7ab8708ba34a42a0350b4740",
+    "bytes": 4395
+  },
+  "selection": [
+    {
+      "locator": {
+        "textCodeUnits": [
+          0,
+          2300
+        ]
+      },
+      "value": "# Read-only comment review\n\nThe MIT license header and public API contract stay. One narration comment is removable. The tax-rounding comment has no proven keep-list exception in the permitted evidence. Its proposed deletion leaves the claimed caller constraint unresolved. No source files changed. The actual deletion count is zero.\n\nThe reviewed source is `<private-run>/cross-host-extra/local/projects/unsupported-selected-model/committed-inputs/shared/additional/legal-header/source.mjs`. Its adjacent `source.diff` reproduces the entire source. Both working files match their committed bytes at `a770be5d7e6b2d8d9ce776bf3258ae9f6f4ba24b`.\n\n| Lines | Decision | Evidence and limitation |\n| --- | --- | --- |\n| 1 | Keep. | `SPDX-License-Identifier: MIT` is a protected license statement. |\n| 2 | Keep. | The exported `cents` function has a public API contract. The implementation rejects non-integers and returns accepted values unchanged. |\n| 4 | Propose deletion. | The sentence repeats `Number.isInteger(value)` on line 5. No explanatory constraint exists in this comment. |\n| 6 | Propose deletion with an unresolved constraint. | The `IMPORTANT` comment claims prior caller tax rounding and reconciliation loss. The complete function only validates and returns its input. Neither permitted file proves the caller claim or an external dependency constraint. |\n| 10 | Skip the suppression verdict. | The comment names an upstream fixture client and contract v2. Neither the upstream type nor a rule definition is in the allowed evidence. I did not verify whether this suppression masks correctness checks or qualifies for an exception. |\n\n`MUST KILL cents`. If the claimed tax-rounding ownership matters, express that boundary in the API or its data model rather than this internal sermon. This is a proposed refactor target. Caller behavior and the need for that refactor remain unverified. No application-code refactor is authorized here.\n\n## How the permitted code works\n\n`cents(value)` checks `Number.isInteger(value)`. A failed check throws `fractional cents`. An accepted value returns unchanged. `legacyClient(api)` returns `api.retryAfter`. There is no rounding, upstream-client declaration, or reconciliation code in the permitted source.\n\n## Chec"
+    }
+  ],
+  "limits": [
+    "Selections preserve the exact source value at each locator. Truncated strings carry explicit code-unit bounds.",
+    "A producer-captured return is not a recovered native parent envelope. Missing call IDs, original capture defects and unknown model observations remain missing."
+  ]
+}

@@ -1,14 +1,14 @@
 {
   "caseId": "trace-provenance",
-  "packageVersion": "0.1.0",
-  "packageCommit": "5d05ab2458f4cd73c44b24265a3a1920b98b8cf4",
+  "packageVersion": "0.1.3",
+  "packageCommit": "51f209daf83cd97d64f89881d66533bb59dc57db",
   "host": "chatgpt",
-  "hostMode": "personal ChatGPT not accessed; host mode unobserved",
-  "date": "2026-10-08",
+  "hostMode": "Native web-host workflows; independent retained-artifact review",
+  "date": "2026-10-16",
   "input": "Diagnose supplied inert cpuprofile, compressed JSON trace, heap snapshot and spindump fixtures without rerunning their processes. Include exact artifact identities, original order, timestamps and symbols mapping to fixture source. Build an authorized sqlite query artifact and inspect hot frames, a retainer chain to a GC root or a stuck thread and wait reason. Compare a supplied before/after pair separately from an unpaired capture. Repeat with absent parser, denied derived writes, inaccessible artifact, unresolved symbols and unavailable workers. No installation, upload, live capture, external write or fix.",
-  "observedOutput": "Not attempted. Inherited prerequisite block from package-discovery. No documented supported local plugin loading route is established for this personal ChatGPT context. No actual personal ChatGPT session or installed copy was accessed. No separate human authorization exists for loading, installation, enabling, settings changes or fresh host setup. Personal-host tool probing was not attempted. Current controller filesystem and tools are not personal ChatGPT tools.",
+  "observedOutput": "No fixed cpuprofile/trace/heap/spindump or paired captures supplied. Runtime source not telemetry; no manufacturing trace, SQLite conversion, symbol diagnosis or pair confirmation.",
   "status": "blocked",
-  "execution": "unavailable",
+  "execution": "direct",
   "sourcePaths": [
     "skills/poteto-mode/playbooks/trace-forensics.md",
     "skills/poteto-mode/SKILL.md",
@@ -19,30 +19,58 @@
     "skills/poteto-mode/playbooks/perf-issue.md"
   ],
   "documentedCapabilities": [
-    "docs/setup/chatgpt.md leaves the personal loading route unsupported here; supplied source is reduced capability guidance only.",
-    "references/host-capabilities.md requires actual exposed and successful bindings."
+    "Case-specific capability observations are retained in the independent review; no capability is inferred from package validation."
   ],
-  "exposedTools": [],
+  "exposedTools": [
+    "exec_command"
+  ],
   "artifacts": [
-    "docs/parity/evidence/chatgpt/authorization-support-check.md"
+    "docs/releases/host-evaluation/chatgpt/trace-provenance.md"
   ],
   "limits": [
-    "No documented supported local plugin loading route is established for this personal ChatGPT context. No actual personal ChatGPT session or installed copy was accessed. No separate human authorization exists for loading, installation, enabling, settings changes or fresh host setup. Personal-host tool probing was not attempted. Current controller filesystem and tools are not personal ChatGPT tools.",
-    "This case input was not submitted to personal ChatGPT; no model result or expected behavioral output was observed.",
-    "Full and reduced capability are not observed. Runtime cases were not run.",
-    "Exact installed-copy identity, all 51 root names and three canonical nested Benny exclusions remain unobserved.",
-    "No history access, privacy behavior, worker lifecycle, model choice, persistence, integration or negative runtime condition was exercised.",
-    "Local evidence validation checks accounting only. Codex capabilities and results do not transfer to ChatGPT."
+    "Current installed version 0.1.3 and operative freeze 51f209daf83cd97d64f89881d66533bb59dc57db bound by external exact installed-file comparison; sandbox itself has no source Git identity.",
+    "Global current catalog lists 51 root skills; this does not upgrade case execution or reproduce unrun workflows.",
+    "Web TypeScript compiler and pinned helper dependencies absent; Bun transpilation/runtime tests never count as strict compilation.",
+    "Historical source content was accidentally read during setup, disclosed in archive limitations; no older result contributes to current grading.",
+    "Raw capture coverage and cooperative per-case clocks incomplete; unavailable/unstarted variants and failed attempts remain explicit.",
+    "Actual native models remain unknown unless independently observed; requested role/model names never become model-diversity proof.",
+    "No supplied traces; no runtime rerun",
+    "No sqlite/symbol or pair proof",
+    "No worker/model result"
   ],
   "priorActionIdentities": [],
   "permissions": {
-    "execution": "unavailable",
-    "writes": "unknown",
-    "externalActions": "unknown"
+    "execution": "granted",
+    "writes": "granted",
+    "externalActions": "denied"
   },
   "models": {
-    "requested": "unknown",
+    "requested": "inherit-parent",
     "actual": "unknown"
   },
-  "successfulOperations": []
+  "successfulOperations": [
+    {
+      "operation": "read",
+      "tool": "exec_command",
+      "evidence": "docs/releases/host-evaluation/chatgpt/trace-provenance.md"
+    }
+  ],
+  "nativeObservations": [
+    {
+      "observation": "supplied-input",
+      "evidence": "docs/releases/host-evaluation/chatgpt/trace-provenance.md",
+      "reviewedBy": "grade_local_repairs"
+    },
+    {
+      "observation": "response",
+      "evidence": "docs/releases/host-evaluation/chatgpt/trace-provenance.md",
+      "reviewedBy": "grade_local_repairs"
+    },
+    {
+      "observation": "review-outcome",
+      "evidence": "docs/releases/host-evaluation/chatgpt/trace-provenance.md",
+      "reviewedBy": "grade_local_repairs"
+    }
+  ],
+  "inputRevision": "38b10b15c85933d3ea450f0ed10adf4af4b289ae"
 }

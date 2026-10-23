@@ -1,16 +1,41 @@
 {
   "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
-  "description": "Unofficial port of pstack engineering workflows and principles.",
+  "author": {
+    "name": "yabasha"
+  },
+  "description": "Unofficial pstack port with 57 engineering skills, 24 principles, and 23 task playbooks. Published by yabasha; original skills and principles by Lauren Tan.",
   "extensions": {
     "com.openai": {
       "interface": {
+        "category": "Developer Tools",
+        "composerIcon": "./assets/logo.png",
+        "defaultPrompt": [
+          "Use poteto-help to choose an engineering workflow for my task.",
+          "Use how to explain this codebase with references to the relevant files.",
+          "Use blast-radius to review which callers and workflows this change could affect."
+        ],
+        "developerName": "yabasha",
         "displayName": "pstack-openai",
         "logo": "./assets/logo.png",
-        "shortDescription": "Engineering workflows and principles from pstack."
+        "longDescription": "pstack-openai is an unofficial, skills-only port of Lauren Tan's pstack, maintained and published by yabasha. It packages 57 skills, including 24 engineering principles, and 23 task playbooks for planning, implementation, code review, explanation, and verification. Use poteto-mode to route a task, poteto-help to choose a workflow, how and why to inspect code and decisions, or unslop to improve prose. Arena and Swarm require host support for independent workers. Model selection, history, persistence, and integrations depend on exposed host capabilities and user authorization. Some workflows have reduced or blocked results; see the bundled compatibility documentation. The plugin bundles no MCP server or app connection. Original skills and principles are credited to Lauren Tan under the MIT License.",
+        "privacyPolicyURL": "https://pstack-openai.abloommink3.chatgpt.site/privacy/",
+        "shortDescription": "Engineering skills and reviews",
+        "supportURL": "https://pstack-openai.abloommink3.chatgpt.site/support/",
+        "termsOfServiceURL": "https://pstack-openai.abloommink3.chatgpt.site/terms/",
+        "websiteURL": "https://pstack-openai.abloommink3.chatgpt.site"
+      },
+      "publication": {
+        "countries": [],
+        "release_notes": "Accepted upstream 0.15.30 with 57 root skills, rewritten-prompt sharpening and portable statechart helpers. Historical host results retain their original tested identities; verification gaps remain explicit."
+      },
+      "review": {
+        "commerce": false
       }
     }
   },
+  "homepage": "https://pstack-openai.abloommink3.chatgpt.site",
   "license": "MIT",
   "name": "pstack-openai",
+  "repository": "https://github.com/yabasha/pstack-openai",
   "version": "0.2.3"
 }

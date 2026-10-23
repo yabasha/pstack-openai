@@ -1,0 +1,378 @@
+{
+  "documentType": "selected-original-proof",
+  "caseId": "measurement-method",
+  "selections": [
+    {
+      "origin": {
+        "path": "web-checkpoint-4/units/measurement-method/outputs/measurement-method/samples.json",
+        "sha256": "94fe0b3b4d502c0e973592f57342e6dfba8b6f948f4b4379199004af52606b70",
+        "bytes": 8940,
+        "pointers": [
+          "/0",
+          "/1",
+          "/2",
+          "/3",
+          "/4",
+          "/5",
+          "/6",
+          "/7",
+          "/8",
+          "/9",
+          "/10",
+          "/11"
+        ]
+      },
+      "transform": "Top-level timing fields omitted. Retained workload/revision/completion/output data unchanged.",
+      "selections": [
+        {
+          "pointer": "/0",
+          "fields": {
+            "phase": "warmup",
+            "arm": "A",
+            "index": 0,
+            "completedRows": 60000,
+            "errors": 0,
+            "bytes": 5186671,
+            "outputSha256": "915ec50bca3a66b6394c67d7a11b569f43f80c0f24846fdabe4d869ac4940810",
+            "revision": "63b1c3a33583a4e688ecaa34099383ccddf5169d",
+            "workload": {
+              "count": 60000,
+              "concurrency": 1,
+              "data": "makeRows-v1",
+              "timedRegion": "exportRows including write, fsync and close",
+              "configuration": "Bun default, no cache",
+              "output": "/mnt/data/pstack-remediation-20261017/attempts-18/outputs/measurement-method/warmup-A-0.json"
+            },
+            "validatedRows": 60000,
+            "mismatches": 0,
+            "digestMatches": true
+          }
+        },
+        {
+          "pointer": "/1",
+          "fields": {
+            "phase": "warmup",
+            "arm": "B",
+            "index": 0,
+            "completedRows": 60000,
+            "errors": 0,
+            "bytes": 5186671,
+            "outputSha256": "915ec50bca3a66b6394c67d7a11b569f43f80c0f24846fdabe4d869ac4940810",
+            "revision": "f2312f141ab907d6d37844f7cdba2c5e2a8d5146",
+            "workload": {
+              "count": 60000,
+              "concurrency": 1,
+              "data": "makeRows-v1",
+              "timedRegion": "exportRows including write, fsync and close",
+              "configuration": "Bun default, no cache",
+              "output": "/mnt/data/pstack-remediation-20261017/attempts-18/outputs/measurement-method/warmup-B-0.json"
+            },
+            "validatedRows": 60000,
+            "mismatches": 0,
+            "digestMatches": true
+          }
+        },
+        {
+          "pointer": "/2",
+          "fields": {
+            "phase": "sample",
+            "arm": "A",
+            "index": 1,
+            "completedRows": 60000,
+            "errors": 0,
+            "bytes": 5186671,
+            "outputSha256": "915ec50bca3a66b6394c67d7a11b569f43f80c0f24846fdabe4d869ac4940810",
+            "revision": "63b1c3a33583a4e688ecaa34099383ccddf5169d",
+            "workload": {
+              "count": 60000,
+              "concurrency": 1,
+              "data": "makeRows-v1",
+              "timedRegion": "exportRows including write, fsync and close",
+              "configuration": "Bun default, no cache",
+              "output": "/mnt/data/pstack-remediation-20261017/attempts-18/outputs/measurement-method/sample-A-1.json"
+            },
+            "validatedRows": 60000,
+            "mismatches": 0,
+            "digestMatches": true
+          }
+        },
+        {
+          "pointer": "/3",
+          "fields": {
+            "phase": "sample",
+            "arm": "B",
+            "index": 1,
+            "completedRows": 60000,
+            "errors": 0,
+            "bytes": 5186671,
+            "outputSha256": "915ec50bca3a66b6394c67d7a11b569f43f80c0f24846fdabe4d869ac4940810",
+            "revision": "f2312f141ab907d6d37844f7cdba2c5e2a8d5146",
+            "workload": {
+              "count": 60000,
+              "concurrency": 1,
+              "data": "makeRows-v1",
+              "timedRegion": "exportRows including write, fsync and close",
+              "configuration": "Bun default, no cache",
+              "output": "/mnt/data/pstack-remediation-20261017/attempts-18/outputs/measurement-method/sample-B-1.json"
+            },
+            "validatedRows": 60000,
+            "mismatches": 0,
+            "digestMatches": true
+          }
+        },
+        {
+          "pointer": "/4",
+          "fields": {
+            "phase": "sample",
+            "arm": "A",
+            "index": 2,
+            "completedRows": 60000,
+            "errors": 0,
+            "bytes": 5186671,
+            "outputSha256": "915ec50bca3a66b6394c67d7a11b569f43f80c0f24846fdabe4d869ac4940810",
+            "revision": "63b1c3a33583a4e688ecaa34099383ccddf5169d",
+            "workload": {
+              "count": 60000,
+              "concurrency": 1,
+              "data": "makeRows-v1",
+              "timedRegion": "exportRows including write, fsync and close",
+              "configuration": "Bun default, no cache",
+              "output": "/mnt/data/pstack-remediation-20261017/attempts-18/outputs/measurement-method/sample-A-2.json"
+            },
+            "validatedRows": 60000,
+            "mismatches": 0,
+            "digestMatches": true
+          }
+        },
+        {
+          "pointer": "/5",
+          "fields": {
+            "phase": "sample",
+            "arm": "B",
+            "index": 2,
+            "completedRows": 60000,
+            "errors": 0,
+            "bytes": 5186671,
+            "outputSha256": "915ec50bca3a66b6394c67d7a11b569f43f80c0f24846fdabe4d869ac4940810",
+            "revision": "f2312f141ab907d6d37844f7cdba2c5e2a8d5146",
+            "workload": {
+              "count": 60000,
+              "concurrency": 1,
+              "data": "makeRows-v1",
+              "timedRegion": "exportRows including write, fsync and close",
+              "configuration": "Bun default, no cache",
+              "output": "/mnt/data/pstack-remediation-20261017/attempts-18/outputs/measurement-method/sample-B-2.json"
+            },
+            "validatedRows": 60000,
+            "mismatches": 0,
+            "digestMatches": true
+          }
+        },
+        {
+          "pointer": "/6",
+          "fields": {
+            "phase": "sample",
+            "arm": "A",
+            "index": 3,
+            "completedRows": 60000,
+            "errors": 0,
+            "bytes": 5186671,
+            "outputSha256": "915ec50bca3a66b6394c67d7a11b569f43f80c0f24846fdabe4d869ac4940810",
+            "revision": "63b1c3a33583a4e688ecaa34099383ccddf5169d",
+            "workload": {
+              "count": 60000,
+              "concurrency": 1,
+              "data": "makeRows-v1",
+              "timedRegion": "exportRows including write, fsync and close",
+              "configuration": "Bun default, no cache",
+              "output": "/mnt/data/pstack-remediation-20261017/attempts-18/outputs/measurement-method/sample-A-3.json"
+            },
+            "validatedRows": 60000,
+            "mismatches": 0,
+            "digestMatches": true
+          }
+        },
+        {
+          "pointer": "/7",
+          "fields": {
+            "phase": "sample",
+            "arm": "B",
+            "index": 3,
+            "completedRows": 60000,
+            "errors": 0,
+            "bytes": 5186671,
+            "outputSha256": "915ec50bca3a66b6394c67d7a11b569f43f80c0f24846fdabe4d869ac4940810",
+            "revision": "f2312f141ab907d6d37844f7cdba2c5e2a8d5146",
+            "workload": {
+              "count": 60000,
+              "concurrency": 1,
+              "data": "makeRows-v1",
+              "timedRegion": "exportRows including write, fsync and close",
+              "configuration": "Bun default, no cache",
+              "output": "/mnt/data/pstack-remediation-20261017/attempts-18/outputs/measurement-method/sample-B-3.json"
+            },
+            "validatedRows": 60000,
+            "mismatches": 0,
+            "digestMatches": true
+          }
+        },
+        {
+          "pointer": "/8",
+          "fields": {
+            "phase": "sample",
+            "arm": "A",
+            "index": 4,
+            "completedRows": 60000,
+            "errors": 0,
+            "bytes": 5186671,
+            "outputSha256": "915ec50bca3a66b6394c67d7a11b569f43f80c0f24846fdabe4d869ac4940810",
+            "revision": "63b1c3a33583a4e688ecaa34099383ccddf5169d",
+            "workload": {
+              "count": 60000,
+              "concurrency": 1,
+              "data": "makeRows-v1",
+              "timedRegion": "exportRows including write, fsync and close",
+              "configuration": "Bun default, no cache",
+              "output": "/mnt/data/pstack-remediation-20261017/attempts-18/outputs/measurement-method/sample-A-4.json"
+            },
+            "validatedRows": 60000,
+            "mismatches": 0,
+            "digestMatches": true
+          }
+        },
+        {
+          "pointer": "/9",
+          "fields": {
+            "phase": "sample",
+            "arm": "B",
+            "index": 4,
+            "completedRows": 60000,
+            "errors": 0,
+            "bytes": 5186671,
+            "outputSha256": "915ec50bca3a66b6394c67d7a11b569f43f80c0f24846fdabe4d869ac4940810",
+            "revision": "f2312f141ab907d6d37844f7cdba2c5e2a8d5146",
+            "workload": {
+              "count": 60000,
+              "concurrency": 1,
+              "data": "makeRows-v1",
+              "timedRegion": "exportRows including write, fsync and close",
+              "configuration": "Bun default, no cache",
+              "output": "/mnt/data/pstack-remediation-20261017/attempts-18/outputs/measurement-method/sample-B-4.json"
+            },
+            "validatedRows": 60000,
+            "mismatches": 0,
+            "digestMatches": true
+          }
+        },
+        {
+          "pointer": "/10",
+          "fields": {
+            "phase": "sample",
+            "arm": "A",
+            "index": 5,
+            "completedRows": 60000,
+            "errors": 0,
+            "bytes": 5186671,
+            "outputSha256": "915ec50bca3a66b6394c67d7a11b569f43f80c0f24846fdabe4d869ac4940810",
+            "revision": "63b1c3a33583a4e688ecaa34099383ccddf5169d",
+            "workload": {
+              "count": 60000,
+              "concurrency": 1,
+              "data": "makeRows-v1",
+              "timedRegion": "exportRows including write, fsync and close",
+              "configuration": "Bun default, no cache",
+              "output": "/mnt/data/pstack-remediation-20261017/attempts-18/outputs/measurement-method/sample-A-5.json"
+            },
+            "validatedRows": 60000,
+            "mismatches": 0,
+            "digestMatches": true
+          }
+        },
+        {
+          "pointer": "/11",
+          "fields": {
+            "phase": "sample",
+            "arm": "B",
+            "index": 5,
+            "completedRows": 60000,
+            "errors": 0,
+            "bytes": 5186671,
+            "outputSha256": "915ec50bca3a66b6394c67d7a11b569f43f80c0f24846fdabe4d869ac4940810",
+            "revision": "f2312f141ab907d6d37844f7cdba2c5e2a8d5146",
+            "workload": {
+              "count": 60000,
+              "concurrency": 1,
+              "data": "makeRows-v1",
+              "timedRegion": "exportRows including write, fsync and close",
+              "configuration": "Bun default, no cache",
+              "output": "/mnt/data/pstack-remediation-20261017/attempts-18/outputs/measurement-method/sample-B-5.json"
+            },
+            "validatedRows": 60000,
+            "mismatches": 0,
+            "digestMatches": true
+          }
+        }
+      ]
+    },
+    {
+      "origin": {
+        "path": "web-checkpoint-4/units/measurement-method/outputs/measurement-method/baseline-profile-command.json",
+        "sha256": "44bc58fc56a78c895085c1f9b4d0988f37ae67bf2fc4385065e0335399f7605a",
+        "bytes": 1034,
+        "pointers": [
+          "/request",
+          "/exit"
+        ]
+      },
+      "selections": [
+        {
+          "pointer": "/request",
+          "value": [
+            "/mnt/data/pstack-013-evaluation/runtime/bun-linux-x64/bun",
+            "--no-install",
+            "--cpu-prof-md",
+            "--cpu-prof-dir=/mnt/data/pstack-remediation-20261017/attempts-18/outputs/measurement-method",
+            "--cpu-prof-name=baseline-profile",
+            "/mnt/data/pstack-remediation-20261017/attempts-18/outputs/measurement-method/task-input/export-cli.mjs",
+            "/mnt/data/pstack-remediation-20261017/attempts-18/outputs/measurement-method/profile-baseline-output.json",
+            "60000"
+          ]
+        },
+        {
+          "pointer": "/exit",
+          "value": 0
+        }
+      ]
+    },
+    {
+      "origin": {
+        "path": "web-checkpoint-4/units/measurement-method/outputs/measurement-method/treatment-profile-command.json",
+        "sha256": "924ffa545530e2841793b50c57f6871b6084000606cd9894cb62e849d3633006",
+        "bytes": 1078,
+        "pointers": [
+          "/request",
+          "/exit"
+        ]
+      },
+      "selections": [
+        {
+          "pointer": "/request",
+          "value": [
+            "/mnt/data/pstack-013-evaluation/runtime/bun-linux-x64/bun",
+            "--no-install",
+            "--cpu-prof-md",
+            "--cpu-prof-dir=/mnt/data/pstack-remediation-20261017/attempts-18/outputs/measurement-method",
+            "--cpu-prof-name=treatment-profile",
+            "/mnt/data/pstack-remediation-20261017/attempts-18/outputs/measurement-method/working/export-cli.mjs",
+            "/mnt/data/pstack-remediation-20261017/attempts-18/outputs/measurement-method/profile-treatment-output.json",
+            "60000"
+          ]
+        },
+        {
+          "pointer": "/exit",
+          "value": 0
+        }
+      ]
+    }
+  ]
+}

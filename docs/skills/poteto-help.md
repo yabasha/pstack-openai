@@ -118,7 +118,7 @@ Forbidden claims:
 
 ## Source proof and release evidence
 
-The following statuses come from the current parity inventory. Pending aggregate review remains pending. Structural catalog checks do not establish host support.
+Current host statuses and release evidence: [current parity inventory](../parity/inventory.json), [chatgpt host report](../testing/chatgpt.md), and [codex host report](../testing/codex.md). These records can advance after the source freeze. Structural catalog checks do not establish host support.
 
 ### `skills/poteto-help/SKILL.md`
 
@@ -128,9 +128,6 @@ Upstream commit: `4ec7ffa173eaa70d3d9467a627baf0954645a353`. SHA-256: `7022e2cd0
 
 Disposition: `runtime`. Aggregate adaptation status: `adapted-reviewed`.
 
-- chatgpt: `not-run`. Tested release evidence: none recorded.
-- codex: `not-run`. Tested release evidence: none recorded.
-
 ### `skills/poteto-help/references/prompting.md`
 
 Destination: [skills/poteto-help/references/prompting.md](../../skills/poteto-help/references/prompting.md).
@@ -139,9 +136,6 @@ Upstream commit: `4ec7ffa173eaa70d3d9467a627baf0954645a353`. SHA-256: `463f450c4
 
 Disposition: `runtime`. Aggregate adaptation status: `adapted-reviewed`.
 
-- chatgpt: `not-run`. Tested release evidence: none recorded.
-- codex: `not-run`. Tested release evidence: none recorded.
-
 ### `skills/poteto-help/references/recipes.md`
 
 Destination: [skills/poteto-help/references/recipes.md](../../skills/poteto-help/references/recipes.md).
@@ -149,6 +143,3 @@ Destination: [skills/poteto-help/references/recipes.md](../../skills/poteto-help
 Upstream commit: `4ec7ffa173eaa70d3d9467a627baf0954645a353`. SHA-256: `f2d573014f72f7c798b1998b45f4360a8a83e7b8026c4ed9074e56c5a9d49338`.
 
 Disposition: `runtime`. Aggregate adaptation status: `adapted-reviewed`.
-
-- chatgpt: `not-run`. Tested release evidence: none recorded.
-- codex: `not-run`. Tested release evidence: none recorded.

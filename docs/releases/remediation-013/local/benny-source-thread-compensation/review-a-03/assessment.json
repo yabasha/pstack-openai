@@ -1,0 +1,187 @@
+{
+  "schemaVersion": 1,
+  "kind": "historical-independent-assessment-projection",
+  "caseId": "benny-source-thread-compensation",
+  "attemptId": "review-a-03",
+  "startingMain": "4138e161c27cafffd2baaab6bf4ca53e86a57433",
+  "packageCommit": "51f209daf83cd97d64f89881d66533bb59dc57db",
+  "packageVersion": "0.1.3",
+  "inputRevision": "0c3afc8dce70e6475ac0eb91fb3cd1e794129476",
+  "originalProposedStatus": "blocked",
+  "evidenceStatus": "blocked",
+  "qualifiesCurrentMain": false,
+  "sourceReview": {
+    "originalLocator": "grades/grade_remediation_local_a/result.json",
+    "sourceSha256": "9cc1f7ebfcf0f02bdaaabc03a16ca8ef1a0dcc165259e873d7be84affe57bc2f",
+    "jsonPointer": "/cases/2",
+    "reviewer": "/root/grade_remediation_local_a",
+    "requestedModel": "inherit-parent",
+    "actualModel": "unknown"
+  },
+  "findings": [
+    "The supplied synthetic created ticket and missing source verdict were inspected. The preliminary missing-identity statement was corrected after reading the fixture.",
+    "A synthetic FIX-1 and fixture URI are not configured live coordinates or destination outcomes.",
+    "No authorized configured compensation action or observed cancellation/closure exists. Root-post retry, tracker mutation and competing fix were withheld."
+  ],
+  "limits": [
+    "A synthetic FIX-1 and fixture URI are not configured live coordinates or destination outcomes."
+  ],
+  "chronology": {
+    "preserveAllEarlierAttempts": true,
+    "methodConformanceClaim": false,
+    "notes": []
+  },
+  "predicate": [
+    {
+      "id": 1,
+      "text": "Immutable channel and source-thread coordinates with fresh parent preflight.",
+      "status": "unmet",
+      "basis": [
+        "The supplied synthetic created ticket and missing source verdict were inspected. The preliminary missing-identity statement was corrected after reading the fixture.",
+        "A synthetic FIX-1 and fixture URI are not configured live coordinates or destination outcomes.",
+        "No authorized configured compensation action or observed cancellation/closure exists. Root-post retry, tracker mutation and competing fix were withheld."
+      ],
+      "source": "docs/parity/cases/benny.json",
+      "evidence": [
+        {
+          "path": "<private-run>/remaining-local/cases/benny-source-thread-compensation/outputs/attempt-event.json",
+          "line": 1,
+          "sha256": "1fba346b57d2fc6ee813c57812b238a53d2626f8c705bac648468a8afdddf21a"
+        },
+        {
+          "path": "<private-run>/remaining-local/cases/benny-source-thread-compensation/outputs/operations.raw.json",
+          "line": 1,
+          "sha256": "1afd8f97f0a51e82a7e6ba95151a5c21f0baec4d027fd78f3d580b3bff195a45"
+        },
+        {
+          "path": "<private-run>/remaining-local/cases/benny-source-thread-compensation/outputs/exposed-tools.raw.json",
+          "line": 1,
+          "sha256": "4cfacacdbc838fa5013149adef868c98d394db87f90ad9d4e12c6aff479556b4"
+        },
+        {
+          "path": "<private-run>/remaining-local/cases/benny-source-thread-compensation/outputs/completion.json",
+          "line": 1,
+          "sha256": "99c3ade93f913c8c01195032875a3c0a3499d2df4409fcb89a31b30e19350b1a"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "text": "Observed scoped connector and trigger capabilities, explicit authorization per external action.",
+      "status": "unmet",
+      "basis": [
+        "The supplied synthetic created ticket and missing source verdict were inspected. The preliminary missing-identity statement was corrected after reading the fixture.",
+        "A synthetic FIX-1 and fixture URI are not configured live coordinates or destination outcomes.",
+        "No authorized configured compensation action or observed cancellation/closure exists. Root-post retry, tracker mutation and competing fix were withheld."
+      ],
+      "source": "docs/parity/cases/benny.json",
+      "evidence": [
+        {
+          "path": "<private-run>/remaining-local/cases/benny-source-thread-compensation/outputs/attempt-event.json",
+          "line": 1,
+          "sha256": "1fba346b57d2fc6ee813c57812b238a53d2626f8c705bac648468a8afdddf21a"
+        },
+        {
+          "path": "<private-run>/remaining-local/cases/benny-source-thread-compensation/outputs/operations.raw.json",
+          "line": 1,
+          "sha256": "1afd8f97f0a51e82a7e6ba95151a5c21f0baec4d027fd78f3d580b3bff195a45"
+        },
+        {
+          "path": "<private-run>/remaining-local/cases/benny-source-thread-compensation/outputs/exposed-tools.raw.json",
+          "line": 1,
+          "sha256": "4cfacacdbc838fa5013149adef868c98d394db87f90ad9d4e12c6aff479556b4"
+        },
+        {
+          "path": "<private-run>/remaining-local/cases/benny-source-thread-compensation/outputs/completion.json",
+          "line": 1,
+          "sha256": "99c3ade93f913c8c01195032875a3c0a3499d2df4409fcb89a31b30e19350b1a"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "text": "Preserve exactly one triage verdict, at most one unprompted repro reply, ownership gates, duplicate suppression, bounded real UI proof, and draft-only PRs.",
+      "status": "satisfied",
+      "basis": [
+        "The supplied synthetic created ticket and missing source verdict were inspected. The preliminary missing-identity statement was corrected after reading the fixture.",
+        "A synthetic FIX-1 and fixture URI are not configured live coordinates or destination outcomes.",
+        "No authorized configured compensation action or observed cancellation/closure exists. Root-post retry, tracker mutation and competing fix were withheld."
+      ],
+      "source": "docs/parity/cases/benny.json",
+      "evidence": [
+        {
+          "path": "<private-run>/remaining-local/cases/benny-source-thread-compensation/outputs/attempt-event.json",
+          "line": 1,
+          "sha256": "1fba346b57d2fc6ee813c57812b238a53d2626f8c705bac648468a8afdddf21a"
+        },
+        {
+          "path": "<private-run>/remaining-local/cases/benny-source-thread-compensation/outputs/operations.raw.json",
+          "line": 1,
+          "sha256": "1afd8f97f0a51e82a7e6ba95151a5c21f0baec4d027fd78f3d580b3bff195a45"
+        },
+        {
+          "path": "<private-run>/remaining-local/cases/benny-source-thread-compensation/outputs/exposed-tools.raw.json",
+          "line": 1,
+          "sha256": "4cfacacdbc838fa5013149adef868c98d394db87f90ad9d4e12c6aff479556b4"
+        },
+        {
+          "path": "<private-run>/remaining-local/cases/benny-source-thread-compensation/outputs/completion.json",
+          "line": 1,
+          "sha256": "99c3ade93f913c8c01195032875a3c0a3499d2df4409fcb89a31b30e19350b1a"
+        }
+      ]
+    }
+  ],
+  "sourceArtifactBindings": [
+    {
+      "originalLocator": "remaining-local/cases/benny-source-thread-compensation/outputs/attempt-event.json",
+      "sourceSha256": "1fba346b57d2fc6ee813c57812b238a53d2626f8c705bac648468a8afdddf21a",
+      "expectedSha256": "1fba346b57d2fc6ee813c57812b238a53d2626f8c705bac648468a8afdddf21a",
+      "expectedHashMatches": true,
+      "bytes": 1477,
+      "publication": "projected-fields",
+      "reason": "Only a narrow inspected projection may be included. Private original remains unchanged.",
+      "projectedPath": "docs/releases/remediation-013/local/benny-source-thread-compensation/review-a-03/proof/01-attempt-event.json.excerpt.json",
+      "projectedSha256": "b798718e872e7bb04fb018b1532d84608184f0457839bf23c9c19acfacc81851"
+    },
+    {
+      "originalLocator": "remaining-local/cases/benny-source-thread-compensation/outputs/operations.raw.json",
+      "sourceSha256": "1afd8f97f0a51e82a7e6ba95151a5c21f0baec4d027fd78f3d580b3bff195a45",
+      "expectedSha256": "1afd8f97f0a51e82a7e6ba95151a5c21f0baec4d027fd78f3d580b3bff195a45",
+      "expectedHashMatches": true,
+      "bytes": 1042,
+      "publication": "projected-fields",
+      "reason": "Only a narrow inspected projection may be included. Private original remains unchanged.",
+      "projectedPath": "docs/releases/remediation-013/local/benny-source-thread-compensation/review-a-03/proof/02-operations.raw.json.excerpt.json",
+      "projectedSha256": "cb3627fa1b402b6de538bae142018ef6e25b94674f9b76d9b747a08d3f317f46"
+    },
+    {
+      "originalLocator": "remaining-local/cases/benny-source-thread-compensation/outputs/exposed-tools.raw.json",
+      "sourceSha256": "4cfacacdbc838fa5013149adef868c98d394db87f90ad9d4e12c6aff479556b4",
+      "expectedSha256": "4cfacacdbc838fa5013149adef868c98d394db87f90ad9d4e12c6aff479556b4",
+      "expectedHashMatches": true,
+      "bytes": 9544,
+      "publication": "omitted",
+      "reason": "Raw/native context, broad discovery, completion dump, or bulk source manifest is excluded. No protected payload is decoded."
+    },
+    {
+      "originalLocator": "remaining-local/cases/benny-source-thread-compensation/outputs/completion.json",
+      "sourceSha256": "99c3ade93f913c8c01195032875a3c0a3499d2df4409fcb89a31b30e19350b1a",
+      "expectedSha256": "99c3ade93f913c8c01195032875a3c0a3499d2df4409fcb89a31b30e19350b1a",
+      "expectedHashMatches": true,
+      "bytes": 115930,
+      "publication": "omitted",
+      "reason": "Raw/native context, broad discovery, completion dump, or bulk source manifest is excluded. No protected payload is decoded."
+    }
+  ],
+  "projectionLimits": [
+    "This file projects the existing independent assessment and does not regrade the case.",
+    "Private source artifacts and omitted native operations remain private. Source digests bind originals, not transformed bytes.",
+    "Historical 0.1.3 observations do not qualify current main or a modified candidate."
+  ],
+  "statusMapping": {
+    "originalProposedStatus": "blocked",
+    "canonicalStatus": "blocked",
+    "rule": "No status alias is applied."
+  }
+}

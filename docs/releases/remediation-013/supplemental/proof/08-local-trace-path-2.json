@@ -1,0 +1,106 @@
+{
+  "kind": "historical-proof-selection",
+  "source": {
+    "path": "<private-run>/cross-host-extra/local/projects/trace-path/outputs/explainer-assignment.json",
+    "sha256": "aedb10d2952f696a5911f97b9aa9faadcbb5404f6fddd6049ae9684f305adbe3",
+    "bytes": 794
+  },
+  "selection": [
+    {
+      "locator": {
+        "jsonPointer": "/id"
+      },
+      "value": "trace-path-explainer-1"
+    },
+    {
+      "locator": {
+        "jsonPointer": "/scope"
+      },
+      "value": "Read-only simple-route explanation of invoiceController through calculate in four supplied original modules; no source or artifact writes"
+    },
+    {
+      "locator": {
+        "jsonPointer": "/inputRevision"
+      },
+      "value": "e037dc212d10b3cc7c8408c14606dc5146c151f6"
+    },
+    {
+      "locator": {
+        "jsonPointer": "/outputOwner"
+      },
+      "value": "prospective worker /root/trace_path/explainer"
+    },
+    {
+      "locator": {
+        "jsonPointer": "/isolatedOutputPath"
+      },
+      "value": "<private-run>/cross-host-extra/local/projects/trace-path/outputs/explainer-return.md"
+    },
+    {
+      "locator": {
+        "jsonPointer": "/role"
+      },
+      "value": "how explainer"
+    },
+    {
+      "locator": {
+        "jsonPointer": "/retryCount"
+      },
+      "value": 0
+    },
+    {
+      "locator": {
+        "jsonPointer": "/terminalStatus"
+      },
+      "value": "pending"
+    },
+    {
+      "locator": {
+        "jsonPointer": "/evidenceLinks"
+      },
+      "value": [
+        "outputs/explainer-request.txt"
+      ]
+    },
+    {
+      "locator": {
+        "jsonPointer": "/requestedModel"
+      },
+      "value": "inherit-parent"
+    },
+    {
+      "locator": {
+        "jsonPointer": "/requestedEffort"
+      },
+      "value": "inherit-parent"
+    },
+    {
+      "locator": {
+        "jsonPointer": "/observedModel"
+      },
+      "value": "unknown"
+    },
+    {
+      "locator": {
+        "jsonPointer": "/observedEffort"
+      },
+      "value": "unknown"
+    },
+    {
+      "locator": {
+        "jsonPointer": "/complexity"
+      },
+      "value": "simple"
+    },
+    {
+      "locator": {
+        "jsonPointer": "/declaredOrder"
+      },
+      "value": 1
+    }
+  ],
+  "limits": [
+    "Selections preserve the exact source value at each locator. Truncated strings carry explicit code-unit bounds.",
+    "A producer-captured return is not a recovered native parent envelope. Missing call IDs, original capture defects and unknown model observations remain missing."
+  ]
+}

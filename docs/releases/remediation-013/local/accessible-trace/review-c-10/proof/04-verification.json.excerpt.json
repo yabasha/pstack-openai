@@ -1,0 +1,17 @@
+{
+  "kind": "selected-fixture-result-fields",
+  "caseId": "accessible-trace",
+  "attemptId": "review-c-10",
+  "originalLocator": "remaining-local/cases/accessible-trace/outputs/verification.json",
+  "sourceSha256": "6eac8ce35545eef373158b3f5deeed328ddead5509911e8ee9050c438e7ae2cd",
+  "sourceBytes": 31443,
+  "transformation": "Named JSON fields selected by exact JSON Pointer. Task-owned absolute paths replaced with declared placeholders. Other fields omitted. These are result-artifact values, not synthesized tool execution evidence. Public selection is limited to eight short inspected fields. Longer output and unselected fields remain private.",
+  "fields": [
+    {
+      "pointer": "/limits",
+      "value": [
+        "Hashes establish inspected bytes and tracked invariance only. They do not establish runtime diagnosis or either host acceptance."
+      ]
+    }
+  ]
+}

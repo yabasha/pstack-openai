@@ -1,0 +1,197 @@
+{
+  "kind": "historical-proof-selection",
+  "source": {
+    "path": "<private-run>/remaining-local/cases/poteto-walkthrough/outputs/completion.json",
+    "sha256": "9dfae0a387339a0f4a6164eda6b0f7e7f89f6544c59426a9b8c54308d6092dfd",
+    "bytes": 2609
+  },
+  "selection": [
+    {
+      "locator": {
+        "jsonPointer": "/caseId"
+      },
+      "value": "poteto-walkthrough"
+    },
+    {
+      "locator": {
+        "jsonPointer": "/assignmentId"
+      },
+      "value": "remaining05-poteto"
+    },
+    {
+      "locator": {
+        "jsonPointer": "/outputOwner"
+      },
+      "value": "/root/poteto_walkthrough"
+    },
+    {
+      "locator": {
+        "jsonPointer": "/inputRevision"
+      },
+      "value": "a4df84ebab84f61ac6194ceb0ea810e6093e8112"
+    },
+    {
+      "locator": {
+        "jsonPointer": "/originalInputRevision"
+      },
+      "value": "b4a233815b91fb55d85383f0a7216b68090e6e65"
+    },
+    {
+      "locator": {
+        "jsonPointer": "/packageCommitSupplied"
+      },
+      "value": "51f209daf83cd97d64f89881d66533bb59dc57db"
+    },
+    {
+      "locator": {
+        "jsonPointer": "/packageVersionObserved"
+      },
+      "value": "0.1.3"
+    },
+    {
+      "locator": {
+        "jsonPointer": "/requestedModel"
+      },
+      "value": "inherit-parent"
+    },
+    {
+      "locator": {
+        "jsonPointer": "/actualModel"
+      },
+      "value": "unknown"
+    },
+    {
+      "locator": {
+        "jsonPointer": "/requestedEffort"
+      },
+      "value": "inherit-parent"
+    },
+    {
+      "locator": {
+        "jsonPointer": "/actualEffort"
+      },
+      "value": "unknown"
+    },
+    {
+      "locator": {
+        "jsonPointer": "/terminalStatus"
+      },
+      "value": "blocked"
+    },
+    {
+      "locator": {
+        "jsonPointer": "/grade"
+      },
+      "value": null
+    },
+    {
+      "locator": {
+        "jsonPointer": "/producerSelfGrade"
+      },
+      "value": false
+    },
+    {
+      "locator": {
+        "jsonPointer": "/blockers"
+      },
+      "value": [
+        "Concrete architecture question absent",
+        "Architecture source target absent",
+        "Named scenario active controller absent",
+        "Original input Git tree unavailable",
+        "Installed host discovery not exercised"
+      ]
+    },
+    {
+      "locator": {
+        "jsonPointer": "/completedActions"
+      },
+      "value": [
+        "Current full SHA independently verified",
+        "Frozen README route followed",
+        "Complete source contracts read",
+        "Exact checklist steps copied",
+        "Local workflow-only response written",
+        "Evidence artifact readback"
+      ]
+    },
+    {
+      "locator": {
+        "jsonPointer": "/variants"
+      },
+      "value": [
+        {
+          "id": "full-investigation",
+          "state": "blocked",
+          "reason": "Missing starting inputs"
+        },
+        {
+          "id": "reduced-foreground",
+          "state": "blocked",
+          "reason": "Workflow explanation only; missing concrete target still blocks architecture answer"
+        },
+        {
+          "id": "inner-independent-investigation",
+          "state": "withheld",
+          "reason": "Missing starting inputs; worker tool not absent"
+        },
+        {
+          "id": "setup-external-persistence",
+          "state": "policy-withheld",
+          "reason": "No install/config/schedule/external permission; local evidence persistence only"
+        }
+      ]
+    },
+    {
+      "locator": {
+        "jsonPointer": "/actualResponse"
+      },
+      "value": "poteto-walkthrough.result.md"
+    },
+    {
+      "locator": {
+        "jsonPointer": "/actionsChecksFailures"
+      },
+      "value": "observations.json"
+    },
+    {
+      "locator": {
+        "jsonPointer": "/sourceHashes"
+      },
+      "value": "source-hashes.json"
+    },
+    {
+      "locator": {
+        "jsonPointer": "/artifacts"
+      },
+      "value": [
+        "checklist.md",
+        "preflight.json",
+        "supplied-input.json",
+        "supplied-request.txt",
+        "current-contract.snapshot.json",
+        "task-contract.snapshot.json",
+        "source-hashes.json",
+        "observations.json",
+        "poteto-walkthrough.result.md",
+        "completion.json"
+      ]
+    },
+    {
+      "locator": {
+        "jsonPointer": "/limits"
+      },
+      "value": [
+        "No producer self-grading",
+        "No independent architecture findings",
+        "No model identity or diversity observation",
+        "No automatic pickup",
+        "No real application target supplied"
+      ]
+    }
+  ],
+  "limits": [
+    "Selections preserve the exact source value at each locator. Truncated strings carry explicit code-unit bounds.",
+    "A producer-captured return is not a recovered native parent envelope. Missing call IDs, original capture defects and unknown model observations remain missing."
+  ]
+}

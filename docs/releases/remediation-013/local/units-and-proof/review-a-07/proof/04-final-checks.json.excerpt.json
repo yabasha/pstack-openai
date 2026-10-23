@@ -1,0 +1,54 @@
+{
+  "kind": "selected-fixture-result-fields",
+  "caseId": "units-and-proof",
+  "attemptId": "review-a-07",
+  "originalLocator": "remaining-local/cases/units-and-proof/outputs/final-checks.json",
+  "sourceSha256": "6ef8394ca5488c66bdee1a0548b69a6ddbd33eb032781811d39e8174bd923428",
+  "sourceBytes": 494,
+  "transformation": "Named JSON fields selected by exact JSON Pointer. Task-owned absolute paths replaced with declared placeholders. Other fields omitted. These are result-artifact values, not synthesized tool execution evidence. Public selection is limited to eight short inspected fields. Longer output and unselected fields remain private.",
+  "fields": [
+    {
+      "pointer": "/0/command",
+      "value": [
+        "git",
+        "rev-parse",
+        "HEAD"
+      ]
+    },
+    {
+      "pointer": "/0/exitCode",
+      "value": 0
+    },
+    {
+      "pointer": "/0/stdout",
+      "value": "a02b520ef6361724f19f1af96b42dd70cd8fcf9f\n"
+    },
+    {
+      "pointer": "/0/stderr",
+      "value": ""
+    },
+    {
+      "pointer": "/1/command",
+      "value": [
+        "git",
+        "diff",
+        "--exit-code",
+        "HEAD",
+        "--",
+        "committed-inputs"
+      ]
+    },
+    {
+      "pointer": "/1/exitCode",
+      "value": 0
+    },
+    {
+      "pointer": "/1/stdout",
+      "value": ""
+    },
+    {
+      "pointer": "/1/stderr",
+      "value": ""
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "kind": "task-result-file-excerpt",
+  "caseId": "boundary-design",
+  "attemptId": "review-b-10",
+  "inputRevision": "931f3a170b4f7d4b46cc2e1442d5d4268e3d1a7d",
+  "originalLocator": "work/local_compiler_cases/projects/pricing-compatibility-corrected/deliverables/report.md",
+  "sourceSha256": "779e60bd190c93c82a7faf4361cae10b97513a23b81f3274288c7441a3a0364a",
+  "sourceWasDirectlyListedByIndependentGrade": true,
+  "characterRange": {
+    "start": 0,
+    "endExclusive": 676,
+    "total": 19187
+  },
+  "content": "# Pricing compatibility repair evidence\n\nNative repair is complete in deliverables/working. Actual runtime and strict compiler checks are green. Independent architecture candidates, fresh judging, scoped comment review and independent diff review were observed. Method limitations and rejected attempts remain explicit. This is not an overall host-parity or model-diversity claim.\n\n## Scope and revision\n\nTask repository HEAD independently observed as `931f3a170b4f7d4b46cc2e1442d5d4268e3d1a7d`. Protected `input/`, `reference/`, README and supplied literal regression remain unchanged. The production deliverable is `deliverables/working/`, never the original broken module.\n",
+  "transformation": "An inspected prefix of the actual task-result file is projected. Task-owned absolute paths use declared placeholders. The prefix may omit later qualifications. The independent assessment and its limits govern the proposed grade. This is neither a new grade nor a native callable-operation claim."
+}

@@ -1,0 +1,16 @@
+{
+  "kind": "task-result-file-excerpt",
+  "caseId": "grounded-explanation",
+  "attemptId": "review-c-08",
+  "inputRevision": "fa0bdcdb3d4dd4fbe56b63229d52d4bfc4aa6fad",
+  "originalLocator": "remaining-local/cases/grounded-explanation/outputs/grounded-explanation.result.md",
+  "sourceSha256": "383df2b0cc1bab9d92630651383828d6d825199fd326d45f5e99e63d2ccbdd27",
+  "sourceWasDirectlyListedByIndependentGrade": true,
+  "characterRange": {
+    "start": 0,
+    "endExclusive": 529,
+    "total": 32385
+  },
+  "content": "# Grounded explanation actual attempt\n\nThe invoice fixture calculates a numeric total through `invoiceController` and formats display amounts separately through `formatInvoice`. [controller.mjs:2](<private-run>/remaining-local/cases/grounded-explanation/committed-inputs/shared/additional/invoice/controller.mjs:2), [formatter.mjs:3](<private-run>/remaining-local/cases/grounded-explanation/committed-inputs/shared/additional/invoice/formatter.mjs:3)\n",
+  "transformation": "An inspected prefix of the actual task-result file is projected. Task-owned absolute paths use declared placeholders. The prefix may omit later qualifications. The independent assessment and its limits govern the proposed grade. This is neither a new grade nor a native callable-operation claim."
+}

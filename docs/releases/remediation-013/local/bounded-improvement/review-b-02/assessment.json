@@ -1,0 +1,157 @@
+{
+  "schemaVersion": 1,
+  "kind": "historical-independent-assessment-projection",
+  "caseId": "bounded-improvement",
+  "attemptId": "review-b-02",
+  "startingMain": "4138e161c27cafffd2baaab6bf4ca53e86a57433",
+  "packageCommit": "51f209daf83cd97d64f89881d66533bb59dc57db",
+  "packageVersion": "0.1.3",
+  "inputRevision": "eaeece4e22e2d3fabe2b83e54116b323a32ee94e",
+  "originalProposedStatus": "reduced-pass",
+  "evidenceStatus": "reduced-pass",
+  "qualifiesCurrentMain": false,
+  "sourceReview": {
+    "originalLocator": "grades/grade_remediation_local_b/result.json",
+    "sourceSha256": "d837b0c7cdea4be245b4a86ca593038cbe8b1596662a82fe6554e9d96444abd6",
+    "jsonPointer": "/rows/1",
+    "reviewer": "/root/grade_remediation_local_b",
+    "requestedModel": "inherit-parent",
+    "actualModel": "unknown"
+  },
+  "findings": [
+    "Five independent candidate contexts and actual returned artifacts are observed.",
+    "Measured comparisons retain exact base/treatment pins, alternating five samples per side, output bytes, row/error counts, medians and ranges.",
+    "Sensitivity, changed-workload rejection and an intentionally faulty output gate are retained. All five candidates were rejected/restored.",
+    "The unchanged target and ten-attempt floor remain open at the declared12-minute measurement ceiling. No target success, final speedup or exhausted-ideas claim is made."
+  ],
+  "limits": [
+    "Only five of the agreed minimum ten optimization attempts completed.",
+    "No early target-sized lucky-win observation or exhausted-marginal-ideas observation exists.",
+    "Machine contention and an exclusive limiter remain unresolved.",
+    "The initial design exploration lacks the full prospective exact method contract. Later normalization and role supplements cannot repair original dispatch chronology."
+  ],
+  "chronology": [
+    "Native candidate dispatches and returned artifacts are genuine. The design metadata correction is post-dispatch.",
+    "One task-owned temporary-file removal is a retained boundary deviation."
+  ],
+  "predicate": [
+    {
+      "index": 1,
+      "text": "Read the complete mode, playbook, how prompts, measurement and principle leaves, poteto role prompt and decision-log helper. Missing required reads stop dependent work.",
+      "status": "partial",
+      "assessment": "Detailed evidence and qualifying limits are in the exact satisfied/unmet/notApplicable predicates below."
+    },
+    {
+      "index": 2,
+      "text": "Reproduce the complaint across realistic workload dimensions. Agree one metric, direction, target and minimum attempt floor before attempts. Prove harness sensitivity with contrasting workloads, vet the checklist, freeze command/configuration, record baseline and green gate.",
+      "status": "satisfied",
+      "assessment": "Detailed evidence and qualifying limits are in the exact satisfied/unmet/notApplicable predicates below."
+    },
+    {
+      "index": 3,
+      "text": "Use exact revisions and comparable workloads. For performance comparisons alternate at least five runs per side, retain median/range, limiter, production tuning, outputs, error and completed-work counts. Source inspection and inconclusive comparisons cannot prove gains.",
+      "status": "partial",
+      "assessment": "Detailed evidence and qualifying limits are in the exact satisfied/unmet/notApplicable predicates below."
+    },
+    {
+      "index": 4,
+      "text": "Open gitignored decision.tsv through show-me-your-work and log.sh. Preserve append-only history, per-attempt id/hypothesis/change/before/after/delta/tests/verdict/note, read before attempts, readback persistence and transcript/review limits.",
+      "status": "satisfied",
+      "assessment": "Detailed evidence and qualifying limits are in the exact satisfied/unmet/notApplicable predicates below."
+    },
+    {
+      "index": 5,
+      "text": "Ground hypotheses in how. For performance use Perf issue mantra order without its earlier-success stop rule. Delegate tightly scoped revision-matched attempts with full role prompt, supported configured or inherited selection and inspected results. Isolate concurrent hypotheses and compare each to the same base; sequential fallback stays reduced.",
+      "status": "partial",
+      "assessment": "Detailed evidence and qualifying limits are in the exact satisfied/unmet/notApplicable predicates below."
+    },
+    {
+      "index": 6,
+      "text": "Measure and gate each single change before the next. Keep only changes past noise with green tests, revert failed candidates fully without touching unrelated work, and log every verdict. Commit each accepted fix only with permission and exact staging.",
+      "status": "satisfied",
+      "assessment": "Detailed evidence and qualifying limits are in the exact satisfied/unmet/notApplicable predicates below."
+    },
+    {
+      "index": 7,
+      "text": "Pivot after a plateau, combine near-misses only as a newly verified single hypothesis, prioritize correctness/simplicity, and do not abandon cheap remaining ideas. Stop at target plus floor, marginal cost or a surfaced dead end without relaxing the predicate. Wake scheduling borrows only Autonomous run mechanism and requires explicit authorization.",
+      "status": "unmet",
+      "assessment": "Detailed evidence and qualifying limits are in the exact satisfied/unmet/notApplicable predicates below."
+    },
+    {
+      "index": 8,
+      "text": "Deliver accepted commits in order through complete Opening a PR only when authorized. Return metric/target, baseline/final/calculated percent, kept/reverted counts, each accepted fix, decision.tsv path and next idea, plus stop reason and Attention/review limits.",
+      "status": "partial",
+      "assessment": "Detailed evidence and qualifying limits are in the exact satisfied/unmet/notApplicable predicates below."
+    }
+  ],
+  "sourceArtifactBindings": [
+    {
+      "originalLocator": "remaining-local/cases/bounded-improvement/outputs/bounded-improvement.result.md",
+      "sourceSha256": "002b4bbf7d9aeaab4b39707475fb0c1400d11e1626cd58c3c8bed06c1782c4f1",
+      "expectedSha256": "002b4bbf7d9aeaab4b39707475fb0c1400d11e1626cd58c3c8bed06c1782c4f1",
+      "expectedHashMatches": true,
+      "bytes": 23660,
+      "publication": "omitted",
+      "reason": "Only a narrow inspected projection may be included. Private original remains unchanged."
+    },
+    {
+      "originalLocator": "remaining-local/cases/bounded-improvement/outputs/completion.json",
+      "sourceSha256": "d6e8aec630f2f3dc7f096197e4932985d264a748e213f4ee28987d47835749e8",
+      "expectedSha256": "d6e8aec630f2f3dc7f096197e4932985d264a748e213f4ee28987d47835749e8",
+      "expectedHashMatches": true,
+      "bytes": 144297,
+      "publication": "omitted",
+      "reason": "Raw/native context, broad discovery, completion dump, or bulk source manifest is excluded. No protected payload is decoded."
+    },
+    {
+      "originalLocator": "remaining-local/cases/bounded-improvement/outputs/design-method-receipt.json",
+      "sourceSha256": "f60207ae51149f8769d9b8dc3a40aecdbc42f1b9f4c13c77d5769fea0e854f0c",
+      "expectedSha256": "f60207ae51149f8769d9b8dc3a40aecdbc42f1b9f4c13c77d5769fea0e854f0c",
+      "expectedHashMatches": true,
+      "bytes": 13068,
+      "publication": "projected-fields",
+      "reason": "Only a narrow inspected projection may be included. Private original remains unchanged.",
+      "projectedPath": "docs/releases/remediation-013/local/bounded-improvement/review-b-02/proof/01-design-method-receipt.json.excerpt.json",
+      "projectedSha256": "b011c7a4b30ba29d5ce3f93518c86545198ee916d0f3249c47b7ff49ea473ef1"
+    },
+    {
+      "originalLocator": "remaining-local/cases/bounded-improvement/outputs/coordinator-review.json",
+      "sourceSha256": "c1dc767135c6fca7be57a988b8d53e86af7270f0d1688f06c559dfe008a56017",
+      "expectedSha256": "c1dc767135c6fca7be57a988b8d53e86af7270f0d1688f06c559dfe008a56017",
+      "expectedHashMatches": true,
+      "bytes": 6449,
+      "publication": "projected-fields",
+      "reason": "Only a narrow inspected projection may be included. Private original remains unchanged.",
+      "projectedPath": "docs/releases/remediation-013/local/bounded-improvement/review-b-02/proof/02-coordinator-review.json.excerpt.json",
+      "projectedSha256": "24d9fcb3cf253b56c480bfbabf0d03f4fa04804e0334749a4b285bb2252641de"
+    },
+    {
+      "originalLocator": "remaining-local/cases/bounded-improvement/outputs/artifact-verification.json",
+      "sourceSha256": "309d2bc045175de5b3272816b0e965812089e8849db116d88b33d7bb0711f65a",
+      "expectedSha256": "309d2bc045175de5b3272816b0e965812089e8849db116d88b33d7bb0711f65a",
+      "expectedHashMatches": true,
+      "bytes": 2865,
+      "publication": "omitted",
+      "reason": "Only a narrow inspected projection may be included. Private original remains unchanged."
+    },
+    {
+      "originalLocator": "native-captures-sanitized-v2/remaining-02/index.json",
+      "sourceSha256": "ed8f512b2ee492d54986d3f259fa216be0b13190b8d2ebf2bca4ca8a4324dfbc",
+      "expectedSha256": "ed8f512b2ee492d54986d3f259fa216be0b13190b8d2ebf2bca4ca8a4324dfbc",
+      "expectedHashMatches": true,
+      "bytes": 11523,
+      "publication": "omitted",
+      "reason": "Raw/native context, broad discovery, completion dump, or bulk source manifest is excluded. No protected payload is decoded."
+    }
+  ],
+  "projectionLimits": [
+    "This file projects the existing independent assessment and does not regrade the case.",
+    "Private source artifacts and omitted native operations remain private. Source digests bind originals, not transformed bytes.",
+    "Historical 0.1.3 observations do not qualify current main or a modified candidate."
+  ],
+  "statusMapping": {
+    "originalProposedStatus": "reduced-pass",
+    "canonicalStatus": "reduced-pass",
+    "rule": "No status alias is applied."
+  }
+}

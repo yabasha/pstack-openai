@@ -1,0 +1,16 @@
+{
+  "kind": "task-result-file-excerpt",
+  "caseId": "real-app-contract",
+  "attemptId": "review-b-12",
+  "inputRevision": "63b1c3a33583a4e688ecaa34099383ccddf5169d",
+  "originalLocator": "work/notes_workflow_reruns/projects/real-app-contract/deliverables/report.md",
+  "sourceSha256": "4e82ec698923621e08b9a68f248f157c86fc76bee640917402f2661701a08f35",
+  "sourceWasDirectlyListedByIndependentGrade": true,
+  "characterRange": {
+    "start": 0,
+    "endExclusive": 622,
+    "total": 15034
+  },
+  "content": "# Notes verification skill report\n\nA portable verification skill is authored and structurally valid. Its creation recipe ran through real browser, HTTP and CLI controls, persistence checks and cleanup. Project-local registration remains unverified. This is a portable draft with observed runtime evidence, not a registered, fully qualified host skill. No grade is assigned.\n\n## Task and source identity\n\nThe task root is `<private-run>/work/notes_workflow_reruns/projects/real-app-contract`.\n\n- Observed input and final application HEAD is `63b1c3a33583a4e688ecaa34099383ccddf5169d`.",
+  "transformation": "An inspected prefix of the actual task-result file is projected. Task-owned absolute paths use declared placeholders. The prefix may omit later qualifications. The independent assessment and its limits govern the proposed grade. This is neither a new grade nor a native callable-operation claim."
+}

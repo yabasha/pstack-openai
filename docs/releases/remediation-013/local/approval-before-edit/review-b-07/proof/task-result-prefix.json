@@ -1,0 +1,16 @@
+{
+  "kind": "task-result-file-excerpt",
+  "caseId": "approval-before-edit",
+  "attemptId": "review-b-07",
+  "inputRevision": "e825c96ed4f21308367ff4105a21d257d80c55e0",
+  "originalLocator": "cross-host-extra/local/projects/approval-before-edit/outputs/approval-before-edit.result.md",
+  "sourceSha256": "7ab787cefcfe772a9047603c72520356a15cb34b91e0ca3fa820a47e3c10e232",
+  "sourceWasDirectlyListedByIndependentGrade": true,
+  "characterRange": {
+    "start": 0,
+    "endExclusive": 506,
+    "total": 26036
+  },
+  "content": "# Approval before edit actual attempt\n\nThree fresh independent read-only reviewers ran with the complete judgment, tooling and divergent prompts. All three returned terminal results, which the coordinator captured verbatim and inspected. A fourth fresh independent synthesizer received all three full outputs inlined after their return. The coordinator inspected that full synthesis and applied the structural mechanism check. It contains no Accepted edit. The structural finding stays in unfiled Backlog.\n",
+  "transformation": "An inspected prefix of the actual task-result file is projected. Task-owned absolute paths use declared placeholders. The prefix may omit later qualifications. The independent assessment and its limits govern the proposed grade. This is neither a new grade nor a native callable-operation claim."
+}

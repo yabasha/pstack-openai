@@ -1,0 +1,23 @@
+{
+  "kind": "selected-fixture-result-fields",
+  "caseId": "unsupported-selected-model",
+  "attemptId": "review-c-13",
+  "originalLocator": "cross-host-extra/local/projects/unsupported-selected-model/outputs/unsupported_owner.assignment.json",
+  "sourceSha256": "8450c572278f0b46d0c05649b8ef4260d60b5e0dba14f815fe6ed14390d50ec4",
+  "sourceBytes": 2379,
+  "transformation": "Named JSON fields selected by exact JSON Pointer. Task-owned absolute paths replaced with declared placeholders. Other fields omitted. These are result-artifact values, not synthesized tool execution evidence. Public selection is limited to eight short inspected fields. Longer output and unselected fields remain private.",
+  "fields": [
+    {
+      "pointer": "/inputRevision",
+      "value": "a770be5d7e6b2d8d9ce776bf3258ae9f6f4ba24b"
+    },
+    {
+      "pointer": "/requestedModel",
+      "value": "inherit-parent"
+    },
+    {
+      "pointer": "/actualModel",
+      "value": "unknown"
+    }
+  ]
+}

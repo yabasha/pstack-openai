@@ -13,6 +13,20 @@ ROOT = Path(__file__).resolve().parents[1]
 COMMIT = 'a' * 40
 
 
+class CheckedInProvenanceTests(unittest.TestCase):
+    def test_current_package_matches_its_tested_freeze(self):
+        from tools.sync_upstream import committed_tree, rollback_tested_commit
+
+        head = git(ROOT, 'rev-parse', 'HEAD')
+        inventory = json.loads((ROOT / 'docs/parity/inventory.json').read_text())
+        marker = json.loads((ROOT / 'docs/parity/tested-package.json').read_text())
+        manifest = json.loads((ROOT / 'plugin.json').read_text())
+        self.assertEqual(
+            rollback_tested_commit(ROOT, head, committed_tree(ROOT, head), inventory),
+            (marker['testedCommit'], manifest['version']),
+        )
+
+
 class ReleaseSummaryTests(unittest.TestCase):
     def test_not_run_is_not_coverage(self):
         result = summarize_release([], [{'status': 'not-run', 'packageCommit': COMMIT}], COMMIT)
@@ -55,7 +69,9 @@ def fixture(root):
     inventory = json.loads((ROOT / 'docs/parity/inventory.json').read_text())
     paths = [r['upstreamPath'] for r in inventory]
     for row in inventory:
-        row['destinationPath'] = row['upstreamPath']
+        source = row['upstreamPath']
+        row['destinationPath'] = (source.removesuffix('SKILL.md')+'REFERENCE.md'
+                                  if source.startswith('automations/benny/skills/') and source.endswith('/SKILL.md') else source)
         row['dependencies'] = []
         row['adaptationStatus'] = 'adapted-reviewed'
         row['disposition'] = 'runtime'
@@ -101,7 +117,9 @@ def fixture(root):
         receipt = dict(schemaVersion=1, kind='pstack-package-discovery', host=host,
               packageVersion='0.1.0', packageCommit=frozen, installedCopy=f'fixture-only:{host}',
               rootSkills=sorted(Path(p).parent.name for p in paths if re.fullmatch(r'skills/[^/]+/SKILL\.md', p)),
-              excludedSkills=sorted(p for p in discovery_paths if p.startswith('automations/')))
+              excludedSkills=sorted(r['destinationPath'] for r in inventory
+                                    if r['upstreamPath'].startswith('automations/benny/skills/')
+                                    and r['upstreamPath'].endswith('/SKILL.md')))
         write(root, receipt_path, receipt)
         report_paths.append(receipt_path)
         for entry in entries:
@@ -299,6 +317,24 @@ class RootPolicyTests(unittest.TestCase):
         value['excludedSkills'] = []
         write(self.root, path, value)
         self.assertBlocked('exact installed-copy enumeration')
+
+    def test_discovery_exclusions_name_installed_reference_destinations(self):
+        from tools.release_report import discovery_receipt
+        inventory = self.read('docs/parity/inventory.json')
+        record = next(r for r in self.read('docs/parity/evidence/results.json')
+                      if r['host'] == 'codex' and r['caseId'] == 'package-discovery')
+        self.assertTrue(discovery_receipt(self.root, record, inventory, self.frozen, '0.1.0'))
+        path = 'docs/parity/evidence/codex.txt'
+        receipt = self.read(path)
+        self.assertEqual(len(receipt['excludedSkills']), 3)
+        self.assertTrue(all(p.endswith('/REFERENCE.md') and (self.root/p).is_file()
+                            for p in receipt['excludedSkills']))
+        receipt['excludedSkills'] = sorted(r['upstreamPath'] for r in inventory
+                                          if r['upstreamPath'].startswith('automations/benny/skills/')
+                                          and r['upstreamPath'].endswith('/SKILL.md'))
+        write(self.root, path, receipt)
+        self.assertFalse(discovery_receipt(self.root, record, inventory, self.frozen, '0.1.0'),
+                         'Canonical source paths cannot pretend to be installed destinations')
 
     def test_same_count_wrong_canonical_path_rejected(self):
         path = 'docs/parity/inventory.json'

@@ -1,14 +1,14 @@
 {
   "caseId": "preserved-behavior",
-  "packageVersion": "0.1.0",
-  "packageCommit": "5d05ab2458f4cd73c44b24265a3a1920b98b8cf4",
+  "packageVersion": "0.1.3",
+  "packageCommit": "51f209daf83cd97d64f89881d66533bb59dc57db",
   "host": "codex",
-  "hostMode": "existing delegated local implementation session; installed-plugin testing unavailable",
-  "date": "2026-10-08",
+  "hostMode": "Native host workflow with independent retained-artifact review",
+  "date": "2026-10-16",
   "input": "Refactor a fixture invoice formatter by removing a one-caller wrapper and consolidating duplicated state. Preserve literal formatted outputs, empty inputs, rounding and errors. Capture the current outputs before edits. Rename its internal API and migrate code, string references, docs and back-references together. One fixture exposes an unrelated bug, which must stay separate. A speculative abstraction adds reader load and must be reverted. Permit local edits and execution but no external writes. Repeat with workers unavailable, execution denied and behavior coverage absent. Return the changed structure, held pin, equivalence proof, reader-load delta, shipped and reverted work.",
-  "observedOutput": "Not attempted. Inherited prerequisite block from package-discovery. Installed-copy discovery is unobserved for this frozen candidate. No separate human authorization exists for package loading, installation, enabling, settings changes or a fresh host setup. The current session exposes source reads and local command execution, but no actual installed pstack copy identity or complete 51-root/3-exclusion discovery receipt was observed. Source reads cannot establish installed discovery.",
-  "status": "blocked",
-  "execution": "unavailable",
+  "observedOutput": "Actual before-edit characterization and each subtraction/state/rename step preserve literal formatter outputs, rounding, errors and empty results. A speculative class is implemented, checked and reverted; textual references move together and unrelated defects stay separate. Required independent architecture, cross-judge, mechanical delegation and review remain unmet under occupied slots; the execution-denied branch is policy-withheld rather than native denial.",
+  "status": "reduced-pass",
+  "execution": "sequential",
   "sourcePaths": [
     "skills/poteto-mode/playbooks/refactoring.md",
     "skills/poteto-mode/SKILL.md",
@@ -34,41 +34,52 @@
     "skills/architect/references/design-red-flags.md"
   ],
   "documentedCapabilities": [
-    "references/host-capabilities.md defines observations, not callable APIs.",
-    "docs/setup/codex.md requires separate loading authorization and actual installed-copy discovery."
+    "Case-specific capability observations are retained in the independent review; no capability is inferred from package validation."
   ],
   "exposedTools": [
-    "functions.exec",
-    "functions.wait",
-    "tools.exec_command",
-    "tools.clock__curr_time",
-    "collaboration.spawn_agent",
-    "collaboration.followup_task",
-    "collaboration.send_message",
-    "collaboration.wait_agent",
-    "collaboration.interrupt_agent",
-    "collaboration.list_agents",
-    "mcp__cua_repl.js",
-    "mcp__cua_repl.js_reset"
+    "exec_command"
   ],
   "artifacts": [
-    "docs/parity/evidence/codex/authorization-capability-check.md"
+    "docs/releases/host-evaluation/codex/preserved-behavior.md"
   ],
   "limits": [
-    "Installed-copy discovery is unobserved for this frozen candidate. No separate human authorization exists for package loading, installation, enabling, settings changes or a fresh host setup. The current session exposes source reads and local command execution, but no actual installed pstack copy identity or complete 51-root/3-exclusion discovery receipt was observed. Source reads cannot establish installed discovery.",
-    "This case was not attempted; its failure modes and expected outputs were not observed.",
-    "No requested model, case model output, worker independence or fresh loaded session was observed.",
-    "Local structural validation does not establish host behavior."
+    "The first replay accidentally overwrote baseline.json, then failed. The original implementation was restored and baseline recaptured before the accepted structural sequence. The failed attempt remains.",
+    "Decision trail is retrospective; no complete native transcript or cross-model review claimed.",
+    "No browser, CLI interaction or external delivery proof."
   ],
   "priorActionIdentities": [],
   "permissions": {
-    "execution": "unavailable",
+    "execution": "granted",
     "writes": "granted",
-    "externalActions": "unknown"
+    "externalActions": "denied"
   },
   "models": {
-    "requested": "unknown",
-    "actual": "unknown"
+    "requested": "inherit-parent",
+    "actual": "gpt-6.1-sol"
   },
-  "successfulOperations": []
+  "successfulOperations": [
+    {
+      "operation": "read",
+      "tool": "exec_command",
+      "evidence": "docs/releases/host-evaluation/codex/preserved-behavior.md"
+    }
+  ],
+  "nativeObservations": [
+    {
+      "observation": "supplied-input",
+      "evidence": "docs/releases/host-evaluation/codex/preserved-behavior.md",
+      "reviewedBy": "grade_local_05_12"
+    },
+    {
+      "observation": "response",
+      "evidence": "docs/releases/host-evaluation/codex/preserved-behavior.md",
+      "reviewedBy": "grade_local_05_12"
+    },
+    {
+      "observation": "review-outcome",
+      "evidence": "docs/releases/host-evaluation/codex/preserved-behavior.md",
+      "reviewedBy": "grade_local_05_12"
+    }
+  ],
+  "inputRevision": "356e4bf995a0670cb3718c118e259ecb7659d3d0"
 }

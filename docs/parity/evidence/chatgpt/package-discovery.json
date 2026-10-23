@@ -1,14 +1,14 @@
 {
   "caseId": "package-discovery",
-  "packageVersion": "0.1.0",
-  "packageCommit": "5d05ab2458f4cd73c44b24265a3a1920b98b8cf4",
+  "packageVersion": "0.1.5",
+  "packageCommit": "4513f3d706e6dfe9e396c80a74c490c3ebcec7a6",
   "host": "chatgpt",
-  "hostMode": "personal ChatGPT not accessed; host mode unobserved",
-  "date": "2026-10-08",
+  "hostMode": "Fresh private web Work chat; cloud/executor registries and installed filesystem",
+  "date": "2026-10-18",
   "input": "In each fresh host, after separately authorized supported package loading, inspect the actual installed copy and enumerate its registered root skills. Preserve the exact final frozen package identity and distinguish an unavailable discovery operation from readable local source.",
-  "observedOutput": "Not attempted. Authorization and documented-support prerequisite check only. No documented supported local plugin loading route is established for this personal ChatGPT context. No actual personal ChatGPT session or installed copy was accessed. No separate human authorization exists for loading, installation, enabling, settings changes or fresh host setup. Personal-host tool probing was not attempted. Current controller filesystem and tools are not personal ChatGPT tools.",
-  "status": "blocked",
-  "execution": "unavailable",
+  "observedOutput": "Fresh native cloud and executor registries each expose51roots; actual filesystem has51entrypoints and three Benny REFERENCE.md helpers. Actual checksum command passes all1513 nonmanifest files. Guarded archive readback verifies exact source identity with declared host manifest normalization.",
+  "status": "pass",
+  "execution": "direct",
   "sourcePaths": [
     ".cursor-plugin/plugin.json",
     "automations/benny/skills/reproduce-and-fix-issues/SKILL.md",
@@ -67,30 +67,47 @@
     "skills/why/SKILL.md"
   ],
   "documentedCapabilities": [
-    "docs/setup/chatgpt.md leaves the personal loading route unsupported here; supplied source is reduced capability guidance only.",
-    "references/host-capabilities.md requires actual exposed and successful bindings."
+    "Discovery-only verification of the exact0.1.5candidate; workflow reruns remain paused."
   ],
-  "exposedTools": [],
+  "exposedTools": [
+    "mcp__cua_repl.js",
+    "skills.list",
+    "exec_command"
+  ],
   "artifacts": [
-    "docs/parity/evidence/chatgpt/authorization-support-check.md"
+    "docs/parity/evidence/chatgpt/authorization-support-check.md",
+    "docs/releases/discovery-015.json"
   ],
   "limits": [
-    "No documented supported local plugin loading route is established for this personal ChatGPT context. No actual personal ChatGPT session or installed copy was accessed. No separate human authorization exists for loading, installation, enabling, settings changes or fresh host setup. Personal-host tool probing was not attempted. Current controller filesystem and tools are not personal ChatGPT tools.",
-    "This case input was not submitted to personal ChatGPT; no model result or expected behavioral output was observed.",
-    "Full and reduced capability are not observed. Runtime cases were not run.",
-    "Exact installed-copy identity, all 51 root names and three canonical nested Benny exclusions remain unobserved.",
-    "No history access, privacy behavior, worker lifecycle, model choice, persistence, integration or negative runtime condition was exercised.",
-    "Local evidence validation checks accounting only. Codex capabilities and results do not transfer to ChatGPT."
+    "Root manifest retains existing private presentation; generated compatibility manifest is additional. No whole-package equality is claimed.",
+    "1513actual executor file bytes and stored archive modes verified; executor mode parity is not independently claimed.",
+    "No desktop availability or workflow qualification inferred."
   ],
   "priorActionIdentities": [],
   "permissions": {
-    "execution": "unavailable",
-    "writes": "unknown",
-    "externalActions": "unknown"
+    "execution": "granted",
+    "writes": "granted",
+    "externalActions": "denied"
   },
   "models": {
     "requested": "unknown",
     "actual": "unknown"
   },
-  "successfulOperations": []
+  "successfulOperations": [
+    {
+      "operation": "discover-package",
+      "tool": "mcp__cua_repl.js",
+      "evidence": "docs/releases/discovery-015.json"
+    },
+    {
+      "operation": "enumerate-skills",
+      "tool": "skills.list",
+      "evidence": "docs/releases/discovery-015.json"
+    },
+    {
+      "operation": "inspect-installed-copy",
+      "tool": "exec_command",
+      "evidence": "docs/parity/evidence/chatgpt/authorization-support-check.md"
+    }
+  ]
 }

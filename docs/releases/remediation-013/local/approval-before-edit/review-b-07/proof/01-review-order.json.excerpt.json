@@ -1,0 +1,23 @@
+{
+  "kind": "selected-fixture-result-fields",
+  "caseId": "approval-before-edit",
+  "attemptId": "review-b-07",
+  "originalLocator": "cross-host-extra/local/projects/approval-before-edit/outputs/review-order.json",
+  "sourceSha256": "4a25b9383730c707461a4554de476414dad2931d042c4afe6fb7dc8c64a244fe",
+  "sourceBytes": 441,
+  "transformation": "Named JSON fields selected by exact JSON Pointer. Task-owned absolute paths replaced with declared placeholders. Other fields omitted. These are result-artifact values, not synthesized tool execution evidence. Public selection is limited to eight short inspected fields. Longer output and unselected fields remain private.",
+  "fields": [
+    {
+      "pointer": "/inputRevision",
+      "value": "e825c96ed4f21308367ff4105a21d257d80c55e0"
+    },
+    {
+      "pointer": "/requestedModel",
+      "value": "inherit-parent"
+    },
+    {
+      "pointer": "/actualModel",
+      "value": "unknown"
+    }
+  ]
+}

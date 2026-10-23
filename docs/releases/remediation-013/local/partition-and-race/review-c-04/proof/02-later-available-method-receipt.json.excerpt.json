@@ -1,0 +1,15 @@
+{
+  "kind": "selected-fixture-result-fields",
+  "caseId": "partition-and-race",
+  "attemptId": "review-c-04",
+  "originalLocator": "remaining-local/cases/partition-and-race/outputs/later-available-method-receipt.json",
+  "sourceSha256": "c41a565bbaafcb299b22c430b236b9e2aff52a96734f0e62ac93e08edd870c70",
+  "sourceBytes": 3547,
+  "transformation": "Named JSON fields selected by exact JSON Pointer. Task-owned absolute paths replaced with declared placeholders. Other fields omitted. These are result-artifact values, not synthesized tool execution evidence. Public selection is limited to eight short inspected fields. Longer output and unselected fields remain private.",
+  "fields": [
+    {
+      "pointer": "/inputRevision",
+      "value": "e1dbf216744c45345acecf367b2b449bbc9fa75f"
+    }
+  ]
+}

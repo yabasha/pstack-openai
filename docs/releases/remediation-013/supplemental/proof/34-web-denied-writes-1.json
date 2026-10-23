@@ -1,0 +1,36 @@
+{
+  "kind": "historical-proof-selection",
+  "source": {
+    "path": "<private-run>/web-checkpoint-2/units/denied-writes/outputs/denied-writes/raw-014.json",
+    "sha256": "7096d214814e8f5dedc2c45d620ecfc1e243fac1242af17b189f4d77164ff583",
+    "bytes": 347
+  },
+  "selection": [
+    {
+      "locator": {
+        "jsonPointer": "/request/command"
+      },
+      "value": [
+        "git",
+        "-C",
+        "/mnt/data/pstack-remediation-20261017/attempts-18/outputs/denied-writes/task-input",
+        "rev-parse",
+        "HEAD"
+      ]
+    },
+    {
+      "locator": {
+        "jsonPointer": "/returned"
+      },
+      "value": {
+        "stdout": "4997553745bf371ffd2e8ca4f19ff71a7ccf5437\n",
+        "stderr": "",
+        "exitCode": 0
+      }
+    }
+  ],
+  "limits": [
+    "Selections preserve the exact source value at each locator. Truncated strings carry explicit code-unit bounds.",
+    "A producer-captured return is not a recovered native parent envelope. Missing call IDs, original capture defects and unknown model observations remain missing."
+  ]
+}

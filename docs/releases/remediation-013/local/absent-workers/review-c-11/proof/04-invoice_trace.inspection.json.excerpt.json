@@ -1,0 +1,43 @@
+{
+  "kind": "selected-fixture-result-fields",
+  "caseId": "absent-workers",
+  "attemptId": "review-c-11",
+  "originalLocator": "cross-host-extra/local/projects/absent-workers/outputs/invoice_trace.inspection.json",
+  "sourceSha256": "0ca7f7ac59366e1bf62ab0b224ba5a59d99d4bf89b67e8fa64544f9690973d13",
+  "sourceBytes": 864,
+  "transformation": "Named JSON fields selected by exact JSON Pointer. Task-owned absolute paths replaced with declared placeholders. Other fields omitted. These are result-artifact values, not synthesized tool execution evidence. Public selection is limited to eight short inspected fields. Longer output and unselected fields remain private.",
+  "fields": [
+    {
+      "pointer": "/assignmentId",
+      "value": "absent-workers-invoice_trace-0"
+    },
+    {
+      "pointer": "/inputRevision",
+      "value": "13f21dbe51d5506c2547ac03f50d2cd73a59b413"
+    },
+    {
+      "pointer": "/currentHead",
+      "value": "13f21dbe51d5506c2547ac03f50d2cd73a59b413"
+    },
+    {
+      "pointer": "/observedTerminal",
+      "value": "completed"
+    },
+    {
+      "pointer": "/terminalEvidence",
+      "value": "collaboration FINAL_ANSWER notification"
+    },
+    {
+      "pointer": "/hashCount",
+      "value": 30
+    },
+    {
+      "pointer": "/hashMismatches",
+      "value": []
+    },
+    {
+      "pointer": "/modelObserved",
+      "value": "unknown"
+    }
+  ]
+}

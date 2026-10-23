@@ -1,0 +1,53 @@
+{
+  "kind": "selected-fixture-result-fields",
+  "caseId": "invalid-input",
+  "attemptId": "review-a-15",
+  "originalLocator": "work/local_compiler_cases/projects/order-boundary/deliverables/checks.json",
+  "sourceSha256": "50e2c68dcf059cc86ba6bf038fcef573a9e173f75dab9894a81d009fe78f658a",
+  "sourceBytes": 1754,
+  "transformation": "Named JSON fields selected by exact JSON Pointer. Task-owned absolute paths replaced with declared placeholders. Other fields omitted. These are result-artifact values, not synthesized tool execution evidence. Public selection is limited to eight short inspected fields. Longer output and unselected fields remain private.",
+  "fields": [
+    {
+      "pointer": "/0/command",
+      "value": [
+        "git",
+        "rev-parse",
+        "HEAD"
+      ]
+    },
+    {
+      "pointer": "/0/status",
+      "value": 0
+    },
+    {
+      "pointer": "/0/stdout",
+      "value": "be8f71ddae4c194ec08c22188718639fcceb7183\n"
+    },
+    {
+      "pointer": "/0/stderr",
+      "value": ""
+    },
+    {
+      "pointer": "/1/command",
+      "value": [
+        "git",
+        "diff",
+        "--exit-code",
+        "--",
+        "input"
+      ]
+    },
+    {
+      "pointer": "/1/status",
+      "value": 0
+    },
+    {
+      "pointer": "/1/stdout",
+      "value": ""
+    },
+    {
+      "pointer": "/1/stderr",
+      "value": ""
+    }
+  ]
+}

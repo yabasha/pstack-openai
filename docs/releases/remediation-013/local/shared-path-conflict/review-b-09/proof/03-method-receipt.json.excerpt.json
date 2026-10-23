@@ -1,0 +1,23 @@
+{
+  "kind": "selected-fixture-result-fields",
+  "caseId": "shared-path-conflict",
+  "attemptId": "review-b-09",
+  "originalLocator": "cross-host-extra/local/projects/shared-path-conflict/outputs/method-receipt.json",
+  "sourceSha256": "cab2fcc1aa6aa55178a815bea8ad17976ab0af433c4fe36accdc814ae9427114",
+  "sourceBytes": 3184,
+  "transformation": "Named JSON fields selected by exact JSON Pointer. Task-owned absolute paths replaced with declared placeholders. Other fields omitted. These are result-artifact values, not synthesized tool execution evidence. Public selection is limited to eight short inspected fields. Longer output and unselected fields remain private.",
+  "fields": [
+    {
+      "pointer": "/inputRevision",
+      "value": "5c68f1fe4b29243ed37889507222cb408af2bfef"
+    },
+    {
+      "pointer": "/limits",
+      "value": [
+        "Actual dispatches staggered within available slots; no simultaneous concurrency claim.",
+        "Integer order is retained in coordinator event files; native tool transcript is authoritative.",
+        "No structural evidence validator was run; this receipt is not a host grade."
+      ]
+    }
+  ]
+}

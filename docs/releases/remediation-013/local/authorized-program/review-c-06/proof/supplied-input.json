@@ -1,0 +1,10 @@
+{
+  "kind": "supplied-fixture-input-excerpt",
+  "caseId": "authorized-program",
+  "inputRevision": "66a96016bb748e93157c484234f2035d49ccb38a",
+  "originalLocator": "remaining-local/cases/authorized-program/task-contract.json",
+  "sourceSha256": "a591738302be664adf825212db7545a0143353907f83068d7a9c7e2e33aba2bd",
+  "pointer": "/case/prompt",
+  "suppliedPrompt": "State full autopilot for this independent PR queue and wait for my go. I retain one named PR. After my go, run authorized owners through verified merge, with real durable status. Do not invent an hourly scheduler if persistent wake is unavailable.",
+  "transformation": "Only the exact supplied case prompt is projected. Fixture data and arbitrary surrounding contract fields are omitted. This is supplied input, not a native successful tool operation."
+}

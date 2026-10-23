@@ -1,0 +1,28 @@
+{
+  "kind": "native-command-event-excerpt",
+  "caseId": "unavailable-persistence",
+  "attemptId": "review-a-02",
+  "inputRevision": "583a40e164fe12e8e9adf256c05bd489431c5cc3",
+  "originalLocator": "remaining-local/actors/remaining-00/events.jsonl",
+  "sourceSha256": "b34511599bc46a84e01634884ca9ec2689c39c546b9e684db6b8c4e51db6034a",
+  "itemId": "item_47",
+  "startedLine": 88,
+  "completedLine": 89,
+  "observedOperationType": "command_execution",
+  "command": "/bin/zsh -lc 'bun --no-install <starting-main-package>/skills/poteto-mode/scripts/orch/orch.ts --store <private-run>/remaining-local/cases/unavailable-persistence/outputs/orchestrate/persistence-local --json unit get attempt-unavailable-persistence'",
+  "aggregatedOutput": "{\n  \"id\": \"attempt-unavailable-persistence\",\n  \"track\": \"local-persistence\",\n  \"state\": \"local-recorded\",\n  \"branch\": \"\",\n  \"pr\": \"\",\n  \"sha\": \"583a40e164fe12e8e9adf256c05bd489431c5cc3\",\n  \"brief\": \"<private-run>/remaining-local/cases/unavailable-persistence/outputs/assignment.json\"\n}\n",
+  "exitCode": 0,
+  "status": "completed",
+  "scope": "Actual later helper process reads the already written local unit. The separate selected unit-set receipt records the earlier write. This is process-lifetime readback, not host restart or crash durability.",
+  "clock": "Public events contain no timestamps. Original line order is retained.",
+  "transformation": "Exact selected event fields. Task-owned absolute paths replaced with declared placeholders. No other event is copied. Native callable metadata is corroborated against a scoped private callsite. Protected or unrelated payload contents are not copied or decoded.",
+  "nativeCallBinding": {
+    "originalLocator": "native-captures-sanitized-v2/remaining-00/01a14895-f9d8-77e1-908b-60c8468da47d.jsonl",
+    "sourceSha256": "c433dc7d9b65748d66e19f56f8a76328b80a627656af6fc10dfef68f4ed42af9",
+    "line": 149,
+    "callId": "call_17774afa15fd4a898240a6251530d051",
+    "observedToolName": "exec",
+    "observedNestedCallsite": "tools.exec_command",
+    "corroboration": "The actual scoped native custom-tool call invokes tools.exec_command with the exact command parsed from this public command_execution event. Only the callable identity and locator are projected. Its surrounding payload remains private."
+  }
+}

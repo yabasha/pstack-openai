@@ -1,0 +1,42 @@
+{
+  "kind": "historical-proof-selection",
+  "source": {
+    "path": "<private-run>/web-checkpoint-2/units/unknown-actual-model/outputs/unknown-actual-model/result-readback.raw.json",
+    "sha256": "f32bc4a3404e9822e619545363b9e45bf4047e04f9b2f886132fc69a11f56c72",
+    "bytes": 9410
+  },
+  "selection": [
+    {
+      "locator": {
+        "jsonPointer": "/request/cmd"
+      },
+      "value": "cat /mnt/data/pstack-remediation-20261017/attempts-18/outputs/unknown-actual-model/unknown-actual-model.result.md /mnt/data/pstack-remediation-20261017/attempts-18/outputs/unknown-actual-model/result.json; sha256sum /mnt/data/pstack-remediation-20261017/attempts-18/outputs/unknown-actual-model/unknown-actual-model.result.md /mnt/data/pstack-remediation-20261017/attempts-18/outputs/unknown-actual-model/result.json; git -C /mnt/data/pstack-remediation-20261017/attempts-18/outputs/unknown-actual-model/task rev-parse HEAD"
+    },
+    {
+      "locator": {
+        "jsonPointer": "/returned/exit_code"
+      },
+      "value": 0
+    },
+    {
+      "locator": {
+        "jsonPointer": "/returned/chunk_id"
+      },
+      "value": "902440"
+    },
+    {
+      "locator": {
+        "jsonPointer": "/returned/output",
+        "stringCodeUnits": [
+          0,
+          1400
+        ]
+      },
+      "value": "# Unknown actual model\n\nThe assignment requests inherit-parent. My actual model is unknown because the session exposes no actual model metadata. My native identity is /root/r87_unknown_actual. I read the portable Poteto role, full mode and Principles index, comment reviewer role, model roles, host capabilities, workflow ownership, and Unslop. The worker role does not establish model diversity. The coordinator must inspect this returned result and its artifacts before relying on independent-worker completion.\n\nThe exact task HEAD is `5124c0c509be4c88b0b0f6bc0d4c41be0fd56dce`, observed in clone.raw.json. The installed source version is 0.1.3. The declared freeze was not verified and supplies no runtime claim. sources.json records full source paths, hashes, byte counts, and read evidence.\n\nThe primary supplied prompt was attempted in this independent worker. Conditional reduced and blocked alternatives remain unstarted because their triggering conditions were not selected. The parent must inspect this returned result and artifacts. No producer grade is assigned.\n\nProve It Works changed the verification choice. I checked the task HEAD directly and preserved unknown model metadata instead of inferring a model from the request.\n\nWrites are limited to this assigned output root. No children, network, installs, services, PRs, configuration changes, or external writes were used. No named"
+    }
+  ],
+  "limits": [
+    "Selections preserve the exact source value at each locator. Truncated strings carry explicit code-unit bounds.",
+    "A producer-captured return is not a recovered native parent envelope. Missing call IDs, original capture defects and unknown model observations remain missing."
+  ]
+}

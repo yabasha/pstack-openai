@@ -1,14 +1,14 @@
 {
   "caseId": "benny-source-thread-compensation",
-  "packageVersion": "0.1.0",
-  "packageCommit": "5d05ab2458f4cd73c44b24265a3a1920b98b8cf4",
+  "packageVersion": "0.1.3",
+  "packageCommit": "51f209daf83cd97d64f89881d66533bb59dc57db",
   "host": "chatgpt",
-  "hostMode": "personal ChatGPT not accessed; host mode unobserved",
-  "date": "2026-10-08",
+  "hostMode": "Native host workflow with independent retained-artifact review",
+  "date": "2026-10-16",
   "input": "An authorized new ticket was created but the one source verdict failed to land.",
-  "observedOutput": "Not attempted. Inherited prerequisite block from package-discovery. No documented supported local plugin loading route is established for this personal ChatGPT context. No actual personal ChatGPT session or installed copy was accessed. No separate human authorization exists for loading, installation, enabling, settings changes or fresh host setup. Personal-host tool probing was not attempted. Current controller filesystem and tools are not personal ChatGPT tools.",
+  "observedOutput": "Prior fixture action is inspected but fresh destination state, authorized compensation and verified recovery are absent. Ticket cancellation remains unknown and replay is withheld.",
   "status": "blocked",
-  "execution": "unavailable",
+  "execution": "direct",
   "sourcePaths": [
     "automations/benny/FOR_AGENTS.md",
     "automations/benny/README.md",
@@ -24,30 +24,53 @@
     "automations/benny/templates/triage-automation-prompt.md"
   ],
   "documentedCapabilities": [
-    "docs/setup/chatgpt.md leaves the personal loading route unsupported here; supplied source is reduced capability guidance only.",
-    "references/host-capabilities.md requires actual exposed and successful bindings."
+    "Case-specific capability observations are retained in the independent review; no capability is inferred from package validation."
   ],
-  "exposedTools": [],
+  "exposedTools": [
+    "exec_command"
+  ],
   "artifacts": [
-    "docs/parity/evidence/chatgpt/authorization-support-check.md"
+    "docs/releases/host-evaluation/chatgpt/benny-source-thread-compensation.md"
   ],
   "limits": [
-    "No documented supported local plugin loading route is established for this personal ChatGPT context. No actual personal ChatGPT session or installed copy was accessed. No separate human authorization exists for loading, installation, enabling, settings changes or fresh host setup. Personal-host tool probing was not attempted. Current controller filesystem and tools are not personal ChatGPT tools.",
-    "This case input was not submitted to personal ChatGPT; no model result or expected behavioral output was observed.",
-    "Full and reduced capability are not observed. Runtime cases were not run.",
-    "Exact installed-copy identity, all 51 root names and three canonical nested Benny exclusions remain unobserved.",
-    "No history access, privacy behavior, worker lifecycle, model choice, persistence, integration or negative runtime condition was exercised.",
-    "Local evidence validation checks accounting only. Codex capabilities and results do not transfer to ChatGPT."
+    "Independent assessment uses retained native artifacts and tool captures. Producer status is not a grade.",
+    "Source freeze is independently bound by root installed-byte comparison; sandbox has no source Git receipt.",
+    "Setup accidental historical-source search/read is disclosed globally and supplies no current outcomes. Setup global catalog/private context is excluded from public projections.",
+    "Raw captures are incomplete in places; original hashes and privacy filtering are preserved in projection manifests. Actual models remain unknown unless independently observed."
   ],
   "priorActionIdentities": [],
   "permissions": {
-    "execution": "unavailable",
-    "writes": "unknown",
-    "externalActions": "unknown"
+    "execution": "granted",
+    "writes": "granted",
+    "externalActions": "denied"
   },
   "models": {
-    "requested": "unknown",
+    "requested": "inherit-parent",
     "actual": "unknown"
   },
-  "successfulOperations": []
+  "successfulOperations": [
+    {
+      "operation": "read",
+      "tool": "exec_command",
+      "evidence": "docs/releases/host-evaluation/chatgpt/benny-source-thread-compensation.md"
+    }
+  ],
+  "nativeObservations": [
+    {
+      "observation": "supplied-input",
+      "evidence": "docs/releases/host-evaluation/chatgpt/benny-source-thread-compensation.md",
+      "reviewedBy": "web_baseline_first52_independent_judge"
+    },
+    {
+      "observation": "response",
+      "evidence": "docs/releases/host-evaluation/chatgpt/benny-source-thread-compensation.md",
+      "reviewedBy": "web_baseline_first52_independent_judge"
+    },
+    {
+      "observation": "review-outcome",
+      "evidence": "docs/releases/host-evaluation/chatgpt/benny-source-thread-compensation.md",
+      "reviewedBy": "web_baseline_first52_independent_judge"
+    }
+  ],
+  "inputRevision": "ad4da1be37caae7345e2e54530fe860870335f8a"
 }

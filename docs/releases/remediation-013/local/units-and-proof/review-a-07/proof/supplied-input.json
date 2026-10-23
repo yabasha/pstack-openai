@@ -1,0 +1,10 @@
+{
+  "kind": "supplied-fixture-input-excerpt",
+  "caseId": "units-and-proof",
+  "inputRevision": "a02b520ef6361724f19f1af96b42dd70cd8fcf9f",
+  "originalLocator": "remaining-local/cases/units-and-proof/task-contract.json",
+  "sourceSha256": "436477210ebe56f38be5c2c3f2b34316492e1e35e3d188970940c684699a1bd5",
+  "pointer": "/case/prompt",
+  "suppliedPrompt": "Write a multi-phase pstack plan for a two-PR change. Name file ownership and dependencies, unit tests, live regression against trunk and head, interaction review media, and applicable performance evidence. Run the adapted pstack checker. Repeat with unavailable workers, controls, scheduling, remote setup, model selection and denied writes.",
+  "transformation": "Only the exact supplied case prompt is projected. Fixture data and arbitrary surrounding contract fields are omitted. This is supplied input, not a native successful tool operation."
+}

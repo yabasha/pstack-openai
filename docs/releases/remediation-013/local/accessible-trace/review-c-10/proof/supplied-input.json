@@ -1,0 +1,10 @@
+{
+  "kind": "supplied-fixture-input-excerpt",
+  "caseId": "accessible-trace",
+  "inputRevision": "db5054b6445dffbb69e84762b25d9f3e6d2980ba",
+  "originalLocator": "remaining-local/cases/accessible-trace/task-contract.json",
+  "sourceSha256": "07365aa287c322237a1a0dba6971f08c3b6b6bd34ff6f41b2246ddbc907c4d07",
+  "pointer": "/case/prompt",
+  "suppliedPrompt": "Diagnose a fixture process with idle CPU spin, a leak or a visual glitch using matching accessible runtime telemetry. Retain a CPU profile, heap snapshot or CDP trace and map the reduced finding to fixture source. Exercise authorized live diagnostic instrumentation separately from read-only permission. Repeat with supplied telemetry only, an inaccessible artifact, absent controls, denied live mutation and unavailable workers. Use inert fixtures, no external writes or installation, and return a cited diagnosis without a fix.",
+  "transformation": "Only the exact supplied case prompt is projected. Fixture data and arbitrary surrounding contract fields are omitted. This is supplied input, not a native successful tool operation."
+}

@@ -1,0 +1,16 @@
+{
+  "kind": "task-result-file-excerpt",
+  "caseId": "guides-ordinary-chatgpt",
+  "attemptId": "review-c-07",
+  "inputRevision": "b11706abb67a1fb2ad00ac1fac7518370bcc1e9f",
+  "originalLocator": "remaining-local/cases/guides-ordinary-chatgpt/outputs/guides-ordinary-chatgpt.result.md",
+  "sourceSha256": "801c131150f8d6a92dbf74c15cd2c2aac3964e8360a1a673eb4c83c2d1192a1d",
+  "sourceWasDirectlyListedByIndependentGrade": true,
+  "characterRange": {
+    "start": 0,
+    "endExclusive": 590,
+    "total": 55418
+  },
+  "content": "# guides-ordinary-chatgpt actual attempt\n\n# Using pstack with supplied source and no execution\n\n## Overview\n\nYou can use pstack's supplied workflows to ask for explanations, compare approaches and prepare drafts in ordinary ChatGPT. This is reduced capability for the supplied case. Runnable verification stays blocked by the no-execution policy. The inspected guide states that boundary in [docs/guide/README.md](<installed-frozen-package>/docs/guide/README.md).\n\n## Key concepts\n",
+  "transformation": "An inspected prefix of the actual task-result file is projected. Task-owned absolute paths use declared placeholders. The prefix may omit later qualifications. The independent assessment and its limits govern the proposed grade. This is neither a new grade nor a native callable-operation claim."
+}

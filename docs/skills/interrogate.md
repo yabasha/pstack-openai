@@ -91,7 +91,7 @@ Forbidden claims:
 
 ## Source proof and release evidence
 
-The following statuses come from the current parity inventory. Pending aggregate review remains pending. Structural catalog checks do not establish host support.
+Current host statuses and release evidence: [current parity inventory](../parity/inventory.json), [chatgpt host report](../testing/chatgpt.md), and [codex host report](../testing/codex.md). These records can advance after the source freeze. Structural catalog checks do not establish host support.
 
 ### `skills/interrogate/SKILL.md`
 
@@ -101,9 +101,6 @@ Upstream commit: `4ec7ffa173eaa70d3d9467a627baf0954645a353`. SHA-256: `a16dfe179
 
 Disposition: `runtime`. Aggregate adaptation status: `adapted-reviewed`.
 
-- chatgpt: `not-run`. Tested release evidence: none recorded.
-- codex: `not-run`. Tested release evidence: none recorded.
-
 ### `skills/interrogate/references/code-quality-review.md`
 
 Destination: [skills/interrogate/references/code-quality-review.md](../../skills/interrogate/references/code-quality-review.md).
@@ -111,9 +108,6 @@ Destination: [skills/interrogate/references/code-quality-review.md](../../skills
 Upstream commit: `4ec7ffa173eaa70d3d9467a627baf0954645a353`. SHA-256: `79162fda183eafd40d51661fbb5e151c7ba250f89e506ba17f5bd135dcbd50a8`.
 
 Disposition: `runtime`. Aggregate adaptation status: `unchanged-reviewed`.
-
-- chatgpt: `not-run`. Tested release evidence: none recorded.
-- codex: `not-run`. Tested release evidence: none recorded.
 
 ### `skills/interrogate/references/reviewer-prompt.md`
 
@@ -123,9 +117,6 @@ Upstream commit: `4ec7ffa173eaa70d3d9467a627baf0954645a353`. SHA-256: `f6005cc2b
 
 Disposition: `runtime`. Aggregate adaptation status: `adapted-reviewed`.
 
-- chatgpt: `not-run`. Tested release evidence: none recorded.
-- codex: `not-run`. Tested release evidence: none recorded.
-
 ### `skills/interrogate/references/rubric.md`
 
 Destination: [skills/interrogate/references/rubric.md](../../skills/interrogate/references/rubric.md).
@@ -134,9 +125,6 @@ Upstream commit: `4ec7ffa173eaa70d3d9467a627baf0954645a353`. SHA-256: `0f9c6bdb0
 
 Disposition: `runtime`. Aggregate adaptation status: `adapted-reviewed`.
 
-- chatgpt: `not-run`. Tested release evidence: none recorded.
-- codex: `not-run`. Tested release evidence: none recorded.
-
 ### `skills/interrogate/references/lead-judgment.md`
 
 Destination: [skills/interrogate/references/lead-judgment.md](../../skills/interrogate/references/lead-judgment.md).
@@ -144,6 +132,3 @@ Destination: [skills/interrogate/references/lead-judgment.md](../../skills/inter
 Upstream commit: `4ec7ffa173eaa70d3d9467a627baf0954645a353`. SHA-256: `355f5195a76bc75a655125292369f2a8231a2b61fabe5188d8f1386060922b87`.
 
 Disposition: `runtime`. Aggregate adaptation status: `unchanged-reviewed`.
-
-- chatgpt: `not-run`. Tested release evidence: none recorded.
-- codex: `not-run`. Tested release evidence: none recorded.

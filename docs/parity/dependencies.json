@@ -1524,7 +1524,7 @@
         "workers-models"
       ],
       "destinationPath": "plugin.json",
-      "destinationSha256": "b74599c33127852132af8078fdd3198c9088f56ccdc6f1ba48029d4d2f73be59",
+      "destinationSha256": "48569108c13ab9fcaa2c0a6002f8f7fc94b11541dd884bc76702cb893cece236",
       "kind": "support",
       "packageDependencies": [
         "assets/logo.png"
@@ -1607,7 +1607,7 @@
         "statechart-runtime"
       ],
       "destinationPath": "README.md",
-      "destinationSha256": "317d8f3993ff3200e3383562e3373c043e1e3710a9977edab419e8f3d288345a",
+      "destinationSha256": "0b98aee0fc55c5c1eb3fee119eefc0abd37f76ed6b53529db8991fe9e75adcf5",
       "kind": "support",
       "packageDependencies": [
         "UPSTREAM.md",
@@ -1799,7 +1799,7 @@
         "repository-access"
       ],
       "destinationPath": "automations/benny/FOR_AGENTS.md",
-      "destinationSha256": "bc352a78811661147cceff87f468d171b8c17629b61a959065d14668773bebf6",
+      "destinationSha256": "099ee5b792ce47957350f7e34c06f070038b36a4cca094539ba5950364c3d7e8",
       "kind": "support",
       "packageDependencies": [
         "references/host-capabilities.md",
@@ -1987,7 +1987,7 @@
         "repository-access"
       ],
       "destinationPath": "automations/benny/README.md",
-      "destinationSha256": "c939765bd07551addd0bfa6b59b9ceed8b227272b717713c1fe15be7c3e1132c",
+      "destinationSha256": "dee82d2c8c2750a219be78ac7e67456dfe83ef86e14222411f82b908aba5af6d",
       "kind": "support",
       "packageDependencies": [
         "references/host-capabilities.md",
@@ -2077,7 +2077,7 @@
         "benny-enablement",
         "repository-access"
       ],
-      "destinationPath": "automations/benny/skills/reproduce-and-fix-issues/SKILL.md",
+      "destinationPath": "automations/benny/skills/reproduce-and-fix-issues/REFERENCE.md",
       "destinationSha256": "a80f670a073aa7a13e7501d22e346f2c6f34068073f540d1703ca1178dadd06b",
       "kind": "support",
       "packageDependencies": [
@@ -2472,8 +2472,8 @@
         "benny-enablement",
         "repository-access"
       ],
-      "destinationPath": "automations/benny/skills/setup-benny/SKILL.md",
-      "destinationSha256": "84da53798da5478488767ac1abde00489cb87675626f5ad6fc8dbd16b8cd3eea",
+      "destinationPath": "automations/benny/skills/setup-benny/REFERENCE.md",
+      "destinationSha256": "7be95406bb1c43deeb2ef5fb5ef9dc4ac603db5cc62c85cc56d7dc7a3fe62378",
       "kind": "support",
       "packageDependencies": [
         "references/host-capabilities.md",
@@ -2761,7 +2761,7 @@
         "benny-enablement",
         "repository-access"
       ],
-      "destinationPath": "automations/benny/skills/triage-issue-reports/SKILL.md",
+      "destinationPath": "automations/benny/skills/triage-issue-reports/REFERENCE.md",
       "destinationSha256": "11d9e2e705a51d7cd6881ad2ba6344eaa9c3541c2e0abbe5418691dc08dc5e06",
       "kind": "support",
       "packageDependencies": [
@@ -3037,7 +3037,7 @@
         "repository-access"
       ],
       "destinationPath": "automations/benny/templates/reproduce-automation-prompt.md",
-      "destinationSha256": "c624c2ab52acf8c15263e81d1178bed2c37c6e75eaeed867b2d636e3fbd69467",
+      "destinationSha256": "a81772aabac7fae0807aad4ad2e7722f1de59b280ba002e2a64d165bea0603aa",
       "kind": "support",
       "packageDependencies": [
         "references/host-capabilities.md",
@@ -3138,7 +3138,7 @@
         "repository-access"
       ],
       "destinationPath": "automations/benny/templates/triage-automation-prompt.md",
-      "destinationSha256": "94a9f191892ab4901da29a556a662bf6e85b0746ccb793adb07a53561f263f14",
+      "destinationSha256": "c1a330047485c3e9028428ed561e127d1875020ca2524f8c26c234dc4f05a70c",
       "kind": "support",
       "packageDependencies": [
         "references/host-capabilities.md",
@@ -4110,7 +4110,7 @@
         "workers-models"
       ],
       "destinationPath": "skills/arena/SKILL.md",
-      "destinationSha256": "28ecec523bed9d58bc044fe5abc549fc18a7c9de8e5ee6a124f7331fb0200cad",
+      "destinationSha256": "a2f87d1e10a9c8a894e5f43109993589a08f72b4a1813a6ccfc16196e90e8859",
       "kind": "root-skill",
       "packageDependencies": [
         "references/host-capabilities.md",
@@ -4135,10 +4135,13 @@
           "dependencyId": "workers-models",
           "destinationLines": [
             3,
+            9,
             11,
             13,
+            28,
             31,
             32,
+            33,
             37,
             45,
             47
@@ -5273,7 +5276,7 @@
         "image-diff"
       ],
       "destinationPath": "skills/poteto-mode/SKILL.md",
-      "destinationSha256": "4403c185075f2439575b99c80ffe77999fdc2c42350abc892d0b0130384b8244",
+      "destinationSha256": "2d8d89acd23caf0ef15c9938f58705571aa7e8aaeaf6dd6380c45cc6af74f85f",
       "kind": "root-skill",
       "packageDependencies": [
         "skills/poteto-mode/playbooks/prototype.md",
@@ -7078,7 +7081,7 @@
         "history-persistence"
       ],
       "destinationPath": "skills/poteto-mode/playbooks/worktree-cleanup.md",
-      "destinationSha256": "0954f4047c81bac8db2df6611f841fcec2171a8cbb48164917ba48d526701792",
+      "destinationSha256": "610f822cc78a222f6cf8c6cf980436e36ff58b72c820b36c840461375bb8ed10",
       "kind": "playbook",
       "packageDependencies": [
         "skills/poteto-mode/scripts/worktree-audit.sh",
@@ -7928,7 +7931,7 @@
         "repository-gates"
       ],
       "destinationPath": "skills/poteto-mode/scripts/watch-pr/policy.test.ts",
-      "destinationSha256": "b377f82cd332fd5e24be6bfe0087d7307d39c1eb27ca61dbc4b52970f41f5da6",
+      "destinationSha256": "4d1a6978639c582bbd4aa88191c50c70223350c2dad921dce1dcd3eb43405197",
       "kind": "support",
       "packageDependencies": [
         "skills/poteto-mode/scripts/bootstrap.ts",
@@ -7973,7 +7976,7 @@
         "repository-gates"
       ],
       "destinationPath": "skills/poteto-mode/scripts/watch-pr/policy.ts",
-      "destinationSha256": "6a89a4698138ce64cf5285b67ff92750cdc2a3f8ba48946fa202678c72ac37a4",
+      "destinationSha256": "52e46d779b5ba2429ae5be293e7eeb9be7ca1fced5b97a73e5545ac3c231a16c",
       "kind": "support",
       "packageDependencies": [
         "skills/poteto-mode/scripts/bootstrap.ts",
@@ -8009,19 +8012,25 @@
         {
           "dependencyId": "repository-gates",
           "destinationLines": [
-            92,
-            94,
-            95,
-            110,
-            112,
-            118,
-            120,
-            126,
-            128,
-            130,
-            144,
-            170,
+            4,
+            64,
+            68,
+            74,
+            75,
+            76,
+            82,
+            87,
+            106,
+            116,
+            124,
+            139,
+            148,
+            155,
+            162,
             171,
+            172,
+            173,
+            179,
             192,
             208,
             223,
@@ -9854,7 +9863,7 @@
         "history-persistence"
       ],
       "destinationPath": "skills/swarm/SKILL.md",
-      "destinationSha256": "e47828ec28c6d0e204a03e75dda5a3c9065b84cd3d59cefefe4ccdd32a46e919",
+      "destinationSha256": "de60ce4678336aa4f10be1e3accd4981ace00dfe776e62e6cb36ecc12ae3a3f4",
       "kind": "root-skill",
       "packageDependencies": [
         "references/host-capabilities.md",

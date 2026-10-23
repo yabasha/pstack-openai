@@ -1,0 +1,35 @@
+{
+  "schemaVersion": 1,
+  "kind": "native-command-event-excerpt",
+  "caseId": "guides-ordinary-chatgpt",
+  "attemptId": "review-c-07",
+  "inputRevision": "b11706abb67a1fb2ad00ac1fac7518370bcc1e9f",
+  "originalLocator": "remaining-local/actors/remaining-04/events.jsonl",
+  "sourceSha256": "f9ad79cc5d0439a7233ee0b78f759ebf82687fe3283651090232005dd9d53d87",
+  "itemId": "item_68",
+  "startedLine": 124,
+  "completedLine": 125,
+  "originalEventType": "item.completed",
+  "observedOperationType": "command_execution",
+  "command": "/bin/zsh -lc 'cat <installed-frozen-package>/docs/guide/README.md <installed-frozen-package>/docs/guide/01-setup.md; cat outputs/verify-receipts.mjs'",
+  "aggregatedOutputPrefix": "# The pstack guide\n## Session capabilities and ownership\n\nThese prompts name pstack workflows, not guaranteed host commands. Read [session capabilities](../../references/host-capabilities.md), [model roles](../../references/model-roles.md), [assignment and action contracts](../../references/orchestration-contract.md), and [workflow ownership](../../references/workflow-ownership.md) before acting. Keep the active controller. An explicit pstack invocation owns its workflow; an active Superpowers assignment remains with Superpowers. An unqualified request retains the active owner. If both are req",
+  "originalAggregatedOutputCharacters": 13502,
+  "exitCode": 0,
+  "status": "completed",
+  "scope": "This is a source read by the case batch coordinator. It is not represented as a child worker read or as proof of all child instructions.",
+  "clock": "The public event has no timestamp. Line order is retained. No duration or clock interval is inferred.",
+  "transformation": "Exact event fields selected. Absolute task and installed-package paths are replaced with declared placeholders. Output is a prefix, not the complete source read. No other event or browser context is included. Only these literal or explicitly loop-listed registered source names are matched. This does not prove every registered source path was read. Native callable metadata is corroborated against a scoped private callsite. Protected or unrelated payload contents are not copied or decoded.",
+  "sourceScopeMatchedByCommand": [
+    "docs/guide/01-setup.md",
+    "docs/guide/README.md"
+  ],
+  "nativeCallBinding": {
+    "originalLocator": "native-captures-v3/remaining-04/01a148ba-6d2f-7213-b3ee-e5124e8fdb44.jsonl",
+    "sourceSha256": "15584457d5f4feeca350899fe85b4852a48dd03514023024fe6eaaf81f314a51",
+    "line": 226,
+    "callId": "call_d0c38feb3b734ade8afa2916b9f0a103",
+    "observedToolName": "exec",
+    "observedNestedCallsite": "tools.exec_command",
+    "corroboration": "The actual scoped native custom-tool call invokes tools.exec_command with the exact command parsed from this public command_execution event. Only the callable identity and locator are projected. Its surrounding payload remains private."
+  }
+}

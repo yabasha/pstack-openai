@@ -20,6 +20,33 @@ def read(path):
 
 
 class InventoryClosedTests(unittest.TestCase):
+    def test_only_root_skills_have_discovery_entrypoint_filenames(self):
+        rows = read('docs/parity/inventory.json')
+        expected = {r['destinationPath'] for r in rows
+                    if re.fullmatch(r'skills/[^/]+/SKILL\.md', r['upstreamPath'])}
+        actual = {p.relative_to(ROOT).as_posix() for p in ROOT.rglob('SKILL.md')
+                  if p.relative_to(ROOT).parts[0] not in {'.git', '.superpowers', '.upstream'}}
+        self.assertEqual(len(expected), len(read('docs/parity/baseline-policy.json')['rootSkills']))
+        self.assertEqual(actual, expected)
+        for row in rows:
+            if row['upstreamPath'].startswith('automations/benny/skills/') and row['upstreamPath'].endswith('/SKILL.md'):
+                self.assertEqual(row['destinationPath'], row['upstreamPath'].removesuffix('SKILL.md')+'REFERENCE.md')
+                self.assertTrue((ROOT/row['destinationPath']).is_file())
+                self.assertFalse((ROOT/row['upstreamPath']).exists())
+
+    def test_benny_runtime_paths_follow_reference_destinations(self):
+        paths = []
+        pattern = r'(?:automations/benny/)?skills/(?:setup-benny|triage-issue-reports|reproduce-and-fix-issues)/(?:SKILL|REFERENCE)\.md'
+        for file in (ROOT/'automations/benny').rglob('*.md'):
+            for path in re.findall(pattern, file.read_text()):
+                self.assertTrue(path.endswith('/REFERENCE.md'), f'{file}: stale operational path {path}')
+                destination = path if path.startswith('automations/benny/') else 'automations/benny/'+path
+                self.assertTrue((ROOT/destination).is_file(), destination)
+                paths.append(destination)
+        self.assertEqual(set(paths), {r['destinationPath'] for r in read('docs/parity/inventory.json')
+                                     if r['upstreamPath'].startswith('automations/benny/skills/')
+                                     and r['upstreamPath'].endswith('/SKILL.md')})
+
     def test_accepted_receipt_resolves_a_unique_source_manifest(self):
         from tools.sync_upstream import accepted_baseline
         manifest, selection = accepted_baseline(ROOT)

@@ -1,0 +1,218 @@
+{
+  "documentType": "selected-original-proof",
+  "caseId": "dependent-caller",
+  "selections": [
+    {
+      "origin": {
+        "path": "web-checkpoint-4/units/dependent-caller/outputs/dependent-caller/evidence/run-summary.json",
+        "sha256": "6971c982b0e0f3fc4aa6b9e9c41f95f61d6715221e89ea8e2ff610b853a8874f",
+        "bytes": 1071,
+        "pointers": [
+          ""
+        ]
+      },
+      "selections": [
+        {
+          "pointer": "",
+          "value": {
+            "head": {
+              "order": 1,
+              "label": "verify-head",
+              "finishedAt": "2026-10-17T08:11:53.702Z",
+              "exitCode": 0,
+              "stdout": "c4ad5621587e7178ebf4dd49cd8f71f0ba557fa9\n",
+              "stderr": ""
+            },
+            "after": {
+              "order": 5,
+              "label": "after-original-probe",
+              "finishedAt": "2026-10-17T08:11:53.724Z",
+              "exitCode": 1,
+              "stdout": "teardown error: TypeError: undefined is not an object (evaluating 'get(key).ready')\n",
+              "stderr": ""
+            },
+            "before": {
+              "order": 6,
+              "label": "before-restored-probe",
+              "finishedAt": "2026-10-17T08:11:53.738Z",
+              "exitCode": 0,
+              "stdout": "disposed ready: true\nteardown completed\n",
+              "stderr": ""
+            },
+            "createdAt": "2026-10-17T08:11:53.860Z",
+            "dependency": {
+              "path": "vendor/disposer-v1.mjs",
+              "version": "fixture-v1",
+              "sha256": "d33e8d36600ad5df008657e478e39f9100a347098b4176f37923e5056cb3427f",
+              "actualSha256": "d33e8d36600ad5df008657e478e39f9100a347098b4176f37923e5056cb3427f"
+            },
+            "hashManifestSha256": "27e074f1d4c752b09460a497017f4b09e86c08f6c0ecb3f22ef9df5f8f6b75ab"
+          }
+        }
+      ]
+    },
+    {
+      "origin": {
+        "path": "web-checkpoint-4/units/dependent-caller/outputs/dependent-caller/task-input/committed-inputs/shared/additional/cache/caller.mjs",
+        "sha256": "9566a520d6763d359c4b43cd5705df6333c8bf4a4afb96aec7ac3ca2e2145490",
+        "bytes": 309,
+        "pointers": [
+          ""
+        ]
+      },
+      "selections": [
+        {
+          "pointer": "",
+          "value": "import { createDisposer } from './vendor/disposer-v1.mjs';\nimport { get, put, invalidate } from './cache.mjs';\nexport function mount(key, report) {\n  put(key, { ready: true });\n  const subscription = createDisposer(() => report(get(key).ready));\n  return () => { subscription.dispose(); invalidate(key); };\n}\n"
+        }
+      ]
+    },
+    {
+      "origin": {
+        "path": "web-checkpoint-4/units/dependent-caller/outputs/dependent-caller/task-input/committed-inputs/shared/additional/cache/vendor/disposer-v1.mjs",
+        "sha256": "d33e8d36600ad5df008657e478e39f9100a347098b4176f37923e5056cb3427f",
+        "bytes": 196,
+        "pointers": [
+          ""
+        ]
+      },
+      "selections": [
+        {
+          "pointer": "",
+          "value": "// Exact vendored fixture dependency implementation, pinned by local SHA-256 in manifest.json.\nexport function createDisposer(onDispose) {\n  return { dispose: () => queueMicrotask(onDispose) };\n}\n"
+        }
+      ]
+    },
+    {
+      "origin": {
+        "path": "web-checkpoint-4/units/dependent-caller/outputs/dependent-caller/evidence/operations.jsonl",
+        "sha256": "1549ac9d9cb133d3e2b5cc03e106d8bc8219ea08a50e6d2e962004cdfe5ecafe",
+        "bytes": 4141,
+        "pointers": [
+          "line:1",
+          "line:2",
+          "line:7",
+          "line:8",
+          "line:9",
+          "line:10",
+          "line:11",
+          "line:12"
+        ]
+      },
+      "transform": "Selected original JSONL lines for exact HEAD, runtime version, and before/after subprocess requests and returns. This is producer subprocess evidence, not an independently exported native platform envelope.",
+      "selections": [
+        {
+          "line": 1,
+          "value": {
+            "kind": "request",
+            "order": 1,
+            "label": "verify-head",
+            "tool": "Bun.spawnSync",
+            "cmd": [
+              "git",
+              "rev-parse",
+              "HEAD"
+            ],
+            "cwd": "/mnt/data/pstack-remediation-20261017/attempts-18/outputs/dependent-caller/task-input",
+            "startedAt": "2026-10-17T08:11:53.699Z"
+          }
+        },
+        {
+          "line": 2,
+          "value": {
+            "kind": "result",
+            "order": 1,
+            "label": "verify-head",
+            "finishedAt": "2026-10-17T08:11:53.702Z",
+            "exitCode": 0,
+            "stdout": "c4ad5621587e7178ebf4dd49cd8f71f0ba557fa9\n",
+            "stderr": ""
+          }
+        },
+        {
+          "line": 7,
+          "value": {
+            "kind": "request",
+            "order": 4,
+            "label": "runtime-version",
+            "tool": "Bun.spawnSync",
+            "cmd": [
+              "/mnt/data/pstack-013-evaluation/runtime/bun-linux-x64/bun",
+              "--version"
+            ],
+            "cwd": "/mnt/data/pstack-remediation-20261017/attempts-18/outputs/dependent-caller/task-input",
+            "startedAt": "2026-10-17T08:11:53.710Z"
+          }
+        },
+        {
+          "line": 8,
+          "value": {
+            "kind": "result",
+            "order": 4,
+            "label": "runtime-version",
+            "finishedAt": "2026-10-17T08:11:53.712Z",
+            "exitCode": 0,
+            "stdout": "1.4.2\n",
+            "stderr": ""
+          }
+        },
+        {
+          "line": 9,
+          "value": {
+            "kind": "request",
+            "order": 5,
+            "label": "after-original-probe",
+            "tool": "Bun.spawnSync",
+            "cmd": [
+              "/mnt/data/pstack-013-evaluation/runtime/bun-linux-x64/bun",
+              "--no-install",
+              "/mnt/data/pstack-remediation-20261017/attempts-18/outputs/dependent-caller/task-input/committed-inputs/shared/additional/cache/probe.mjs"
+            ],
+            "cwd": "/mnt/data/pstack-remediation-20261017/attempts-18/outputs/dependent-caller/task-input",
+            "startedAt": "2026-10-17T08:11:53.712Z"
+          }
+        },
+        {
+          "line": 10,
+          "value": {
+            "kind": "result",
+            "order": 5,
+            "label": "after-original-probe",
+            "finishedAt": "2026-10-17T08:11:53.724Z",
+            "exitCode": 1,
+            "stdout": "teardown error: TypeError: undefined is not an object (evaluating 'get(key).ready')\n",
+            "stderr": ""
+          }
+        },
+        {
+          "line": 11,
+          "value": {
+            "kind": "request",
+            "order": 6,
+            "label": "before-restored-probe",
+            "tool": "Bun.spawnSync",
+            "cmd": [
+              "/mnt/data/pstack-013-evaluation/runtime/bun-linux-x64/bun",
+              "--no-install",
+              "/mnt/data/pstack-remediation-20261017/attempts-18/outputs/dependent-caller/evidence/before/probe.mjs"
+            ],
+            "cwd": "/mnt/data/pstack-remediation-20261017/attempts-18/outputs/dependent-caller/task-input",
+            "startedAt": "2026-10-17T08:11:53.725Z"
+          }
+        },
+        {
+          "line": 12,
+          "value": {
+            "kind": "result",
+            "order": 6,
+            "label": "before-restored-probe",
+            "finishedAt": "2026-10-17T08:11:53.738Z",
+            "exitCode": 0,
+            "stdout": "disposed ready: true\nteardown completed\n",
+            "stderr": ""
+          }
+        }
+      ]
+    }
+  ]
+}

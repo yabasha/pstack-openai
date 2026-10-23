@@ -1,0 +1,16 @@
+{
+  "kind": "task-result-file-excerpt",
+  "caseId": "invalid-state",
+  "attemptId": "review-b-06",
+  "inputRevision": "0130572f5fdeb37cd4d1b970a3357eacdd8583ff",
+  "originalLocator": "cross-host-extra/local/projects/invalid-state/outputs/invalid-state.result.md",
+  "sourceSha256": "c791fb1094b849580afbb37e7c5fd0d707d893188a57963592fb70d7876cfc22",
+  "sourceWasDirectlyListedByIndependentGrade": true,
+  "characterRange": {
+    "start": 0,
+    "endExclusive": 689,
+    "total": 28384
+  },
+  "content": "# Invalid-state actual attempt\n\n## Overview\n\nThe proposed TypeScript model compiles. Five deliberately invalid callers fail compilation. Seventeen runtime checks confirm the current fixture weaknesses and the proposed parser behavior. The requested ORIGINAL revision is unavailable in this repository. Its byte comparison remains blocked, so this receipt claims no original-input verification or full case outcome.\n\nThe current input revision is independently verified as 0130572f5fdeb37cd4d1b970a3357eacdd8583ff. The supplied original revision is 0ce51b214e87b7f46656c3afa9238f2cfd8025df. git cat-file exits 128 for that object. No fetch or replacement history was used.\n\n## Key concepts\n",
+  "transformation": "An inspected prefix of the actual task-result file is projected. Task-owned absolute paths use declared placeholders. The prefix may omit later qualifications. The independent assessment and its limits govern the proposed grade. This is neither a new grade nor a native callable-operation claim."
+}

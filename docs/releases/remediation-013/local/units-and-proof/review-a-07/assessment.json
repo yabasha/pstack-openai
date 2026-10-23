@@ -1,0 +1,641 @@
+{
+  "schemaVersion": 1,
+  "kind": "historical-independent-assessment-projection",
+  "caseId": "units-and-proof",
+  "attemptId": "review-a-07",
+  "startingMain": "4138e161c27cafffd2baaab6bf4ca53e86a57433",
+  "packageCommit": "51f209daf83cd97d64f89881d66533bb59dc57db",
+  "packageVersion": "0.1.3",
+  "inputRevision": "a02b520ef6361724f19f1af96b42dd70cd8fcf9f",
+  "originalProposedStatus": "pass",
+  "evidenceStatus": "pass",
+  "qualifiesCurrentMain": false,
+  "sourceReview": {
+    "originalLocator": "grades/grade_remediation_local_a/result.json",
+    "sourceSha256": "9cc1f7ebfcf0f02bdaaabc03a16ca8ef1a0dcc165259e873d7be84affe57bc2f",
+    "jsonPointer": "/cases/6",
+    "reviewer": "/root/grade_remediation_local_a",
+    "requestedModel": "inherit-parent",
+    "actualModel": "unknown"
+  },
+  "findings": [
+    "The saved two-PR planning artifact preserves ordered program/PR/close/appendix sections, exact file ownership and dependencies, unit predicates, ten named future scenarios per PR, baseline/head regression and performance budgets.",
+    "All five capability declarations have evidence. Zero executable live lanes are declared because no runnable app or spare nested capacity exists. Omitted scenarios remain explicit.",
+    "Interaction screenshot/video approval and independent review remain gates. Implementation waits for explicit go. No proposed media path is claimed as an existing proof.",
+    "Actual checker initially rejected the plan, then accepted the corrected plan and policy variants. This reviewer independently reran the read-only checker and obtained two PR sections, zero problems with identical before/after bytes.",
+    "The denied-write variant returns unsaved text captured separately by the authorized evidence owner. It does not claim an OS denial.",
+    "The case explicitly permits a structurally valid plan with blocked execution to pass. This is a full planning-deliverable qualification, not implementation, UI or performance completion."
+  ],
+  "limits": [
+    "All five capability declarations have evidence. Zero executable live lanes are declared because no runnable app or spare nested capacity exists. Omitted scenarios remain explicit.",
+    "Interaction screenshot/video approval and independent review remain gates. Implementation waits for explicit go. No proposed media path is claimed as an existing proof.",
+    "Actual checker initially rejected the plan, then accepted the corrected plan and policy variants. This reviewer independently reran the read-only checker and obtained two PR sections, zero problems with identical before/after bytes.",
+    "The denied-write variant returns unsaved text captured separately by the authorized evidence owner. It does not claim an OS denial.",
+    "The case explicitly permits a structurally valid plan with blocked execution to pass. This is a full planning-deliverable qualification, not implementation, UI or performance completion."
+  ],
+  "chronology": {
+    "preserveAllEarlierAttempts": true,
+    "methodConformanceClaim": false,
+    "notes": [
+      "Actual checker initially rejected the plan, then accepted the corrected plan and policy variants. This reviewer independently reran the read-only checker and obtained two PR sections, zero problems with identical before/after bytes."
+    ]
+  },
+  "predicate": [
+    {
+      "id": 1,
+      "text": "Preserve plan-only ownership, trivial-change skip, prototype evidence and explicit execution go.",
+      "status": "satisfied",
+      "basis": [
+        "The saved two-PR planning artifact preserves ordered program/PR/close/appendix sections, exact file ownership and dependencies, unit predicates, ten named future scenarios per PR, baseline/head regression and performance budgets.",
+        "All five capability declarations have evidence. Zero executable live lanes are declared because no runnable app or spare nested capacity exists. Omitted scenarios remain explicit.",
+        "Interaction screenshot/video approval and independent review remain gates. Implementation waits for explicit go. No proposed media path is claimed as an existing proof.",
+        "Actual checker initially rejected the plan, then accepted the corrected plan and policy variants. This reviewer independently reran the read-only checker and obtained two PR sections, zero problems with identical before/after bytes.",
+        "The denied-write variant returns unsaved text captured separately by the authorized evidence owner. It does not claim an OS denial.",
+        "The case explicitly permits a structurally valid plan with blocked execution to pass. This is a full planning-deliverable qualification, not implementation, UI or performance completion."
+      ],
+      "source": "docs/parity/cases/playbooks/multi-phase-plan.json",
+      "evidence": [
+        {
+          "path": "<private-run>/remaining-local/cases/units-and-proof/outputs/export-selected-orders.plan.md",
+          "line": 1,
+          "sha256": "4a114094916cfb8dd5345a26415d99bd4b0b00b3907ebc3d4a95f52ab8d10ff1"
+        },
+        {
+          "path": "<private-run>/remaining-local/cases/units-and-proof/outputs/capabilities.json",
+          "line": 1,
+          "sha256": "40d84a1e4a3e570bc1b5c6ed2c8b1b9e14c7468e83066fe5079e1b53b6a4592a"
+        },
+        {
+          "path": "<private-run>/remaining-local/cases/units-and-proof/outputs/variants.json",
+          "line": 1,
+          "sha256": "89273e8d1c52d5c5228ad0a05be2a0f8af6f4d6b222b4c2f9cd9245bc4790835"
+        },
+        {
+          "path": "<private-run>/remaining-local/cases/units-and-proof/outputs/checker-main-initial.json",
+          "line": 1,
+          "sha256": "cce4dce7079ba4e6b330bf0de917f9428be2144d15046085b5508f7de67530f8"
+        },
+        {
+          "path": "<private-run>/remaining-local/cases/units-and-proof/outputs/checker-main.json",
+          "line": 1,
+          "sha256": "6a5cc7e539a31e39b32ab17a83e796c4bb7305a78d60e017ae55cfc79815e855"
+        },
+        {
+          "path": "<private-run>/remaining-local/cases/units-and-proof/outputs/denied-writes-response.txt",
+          "line": 1,
+          "sha256": "ec2095c12f4255e768d575f89abc2d0ce9fc374086e8980aaf28f642d427e06f"
+        },
+        {
+          "path": "<private-run>/remaining-local/cases/units-and-proof/outputs/prototype.json",
+          "line": 1,
+          "sha256": "7e5084c16ed3880f393a8be4fe7553f63a73a09c6492c4082875db675524f6cf"
+        },
+        {
+          "path": "<private-run>/remaining-local/cases/units-and-proof/outputs/final-checks.json",
+          "line": 1,
+          "sha256": "6ef8394ca5488c66bdee1a0548b69a6ddbd33eb032781811d39e8174bd923428"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "text": "Keep all ordered program, PR sub-blocks, close and appendix sections.",
+      "status": "satisfied",
+      "basis": [
+        "The saved two-PR planning artifact preserves ordered program/PR/close/appendix sections, exact file ownership and dependencies, unit predicates, ten named future scenarios per PR, baseline/head regression and performance budgets.",
+        "All five capability declarations have evidence. Zero executable live lanes are declared because no runnable app or spare nested capacity exists. Omitted scenarios remain explicit.",
+        "Interaction screenshot/video approval and independent review remain gates. Implementation waits for explicit go. No proposed media path is claimed as an existing proof.",
+        "Actual checker initially rejected the plan, then accepted the corrected plan and policy variants. This reviewer independently reran the read-only checker and obtained two PR sections, zero problems with identical before/after bytes.",
+        "The denied-write variant returns unsaved text captured separately by the authorized evidence owner. It does not claim an OS denial.",
+        "The case explicitly permits a structurally valid plan with blocked execution to pass. This is a full planning-deliverable qualification, not implementation, UI or performance completion."
+      ],
+      "source": "docs/parity/cases/playbooks/multi-phase-plan.json",
+      "evidence": [
+        {
+          "path": "<private-run>/remaining-local/cases/units-and-proof/outputs/export-selected-orders.plan.md",
+          "line": 1,
+          "sha256": "4a114094916cfb8dd5345a26415d99bd4b0b00b3907ebc3d4a95f52ab8d10ff1"
+        },
+        {
+          "path": "<private-run>/remaining-local/cases/units-and-proof/outputs/capabilities.json",
+          "line": 1,
+          "sha256": "40d84a1e4a3e570bc1b5c6ed2c8b1b9e14c7468e83066fe5079e1b53b6a4592a"
+        },
+        {
+          "path": "<private-run>/remaining-local/cases/units-and-proof/outputs/variants.json",
+          "line": 1,
+          "sha256": "89273e8d1c52d5c5228ad0a05be2a0f8af6f4d6b222b4c2f9cd9245bc4790835"
+        },
+        {
+          "path": "<private-run>/remaining-local/cases/units-and-proof/outputs/checker-main-initial.json",
+          "line": 1,
+          "sha256": "cce4dce7079ba4e6b330bf0de917f9428be2144d15046085b5508f7de67530f8"
+        },
+        {
+          "path": "<private-run>/remaining-local/cases/units-and-proof/outputs/checker-main.json",
+          "line": 1,
+          "sha256": "6a5cc7e539a31e39b32ab17a83e796c4bb7305a78d60e017ae55cfc79815e855"
+        },
+        {
+          "path": "<private-run>/remaining-local/cases/units-and-proof/outputs/denied-writes-response.txt",
+          "line": 1,
+          "sha256": "ec2095c12f4255e768d575f89abc2d0ce9fc374086e8980aaf28f642d427e06f"
+        },
+        {
+          "path": "<private-run>/remaining-local/cases/units-and-proof/outputs/prototype.json",
+          "line": 1,
+          "sha256": "7e5084c16ed3880f393a8be4fe7553f63a73a09c6492c4082875db675524f6cf"
+        },
+        {
+          "path": "<private-run>/remaining-local/cases/units-and-proof/outputs/final-checks.json",
+          "line": 1,
+          "sha256": "6ef8394ca5488c66bdee1a0548b69a6ddbd33eb032781811d39e8174bd923428"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "text": "Declare all five capability bindings with evidence and actual worker capacity.",
+      "status": "satisfied",
+      "basis": [
+        "The saved two-PR planning artifact preserves ordered program/PR/close/appendix sections, exact file ownership and dependencies, unit predicates, ten named future scenarios per PR, baseline/head regression and performance budgets.",
+        "All five capability declarations have evidence. Zero executable live lanes are declared because no runnable app or spare nested capacity exists. Omitted scenarios remain explicit.",
+        "Interaction screenshot/video approval and independent review remain gates. Implementation waits for explicit go. No proposed media path is claimed as an existing proof.",
+        "Actual checker initially rejected the plan, then accepted the corrected plan and policy variants. This reviewer independently reran the read-only checker and obtained two PR sections, zero problems with identical before/after bytes.",
+        "The denied-write variant returns unsaved text captured separately by the authorized evidence owner. It does not claim an OS denial.",
+        "The case explicitly permits a structurally valid plan with blocked execution to pass. This is a full planning-deliverable qualification, not implementation, UI or performance completion."
+      ],
+      "source": "docs/parity/cases/playbooks/multi-phase-plan.json",
+      "evidence": [
+        {
+          "path": "<private-run>/remaining-local/cases/units-and-proof/outputs/export-selected-orders.plan.md",
+          "line": 1,
+          "sha256": "4a114094916cfb8dd5345a26415d99bd4b0b00b3907ebc3d4a95f52ab8d10ff1"
+        },
+        {
+          "path": "<private-run>/remaining-local/cases/units-and-proof/outputs/capabilities.json",
+          "line": 1,
+          "sha256": "40d84a1e4a3e570bc1b5c6ed2c8b1b9e14c7468e83066fe5079e1b53b6a4592a"
+        },
+        {
+          "path": "<private-run>/remaining-local/cases/units-and-proof/outputs/variants.json",
+          "line": 1,
+          "sha256": "89273e8d1c52d5c5228ad0a05be2a0f8af6f4d6b222b4c2f9cd9245bc4790835"
+        },
+        {
+          "path": "<private-run>/remaining-local/cases/units-and-proof/outputs/checker-main-initial.json",
+          "line": 1,
+          "sha256": "cce4dce7079ba4e6b330bf0de917f9428be2144d15046085b5508f7de67530f8"
+        },
+        {
+          "path": "<private-run>/remaining-local/cases/units-and-proof/outputs/checker-main.json",
+          "line": 1,
+          "sha256": "6a5cc7e539a31e39b32ab17a83e796c4bb7305a78d60e017ae55cfc79815e855"
+        },
+        {
+          "path": "<private-run>/remaining-local/cases/units-and-proof/outputs/denied-writes-response.txt",
+          "line": 1,
+          "sha256": "ec2095c12f4255e768d575f89abc2d0ce9fc374086e8980aaf28f642d427e06f"
+        },
+        {
+          "path": "<private-run>/remaining-local/cases/units-and-proof/outputs/prototype.json",
+          "line": 1,
+          "sha256": "7e5084c16ed3880f393a8be4fe7553f63a73a09c6492c4082875db675524f6cf"
+        },
+        {
+          "path": "<private-run>/remaining-local/cases/units-and-proof/outputs/final-checks.json",
+          "line": 1,
+          "sha256": "6ef8394ca5488c66bdee1a0548b69a6ddbd33eb032781811d39e8174bd923428"
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "text": "Name per-PR files, dependencies, unit evidence, live artifacts and pass predicates.",
+      "status": "satisfied",
+      "basis": [
+        "The saved two-PR planning artifact preserves ordered program/PR/close/appendix sections, exact file ownership and dependencies, unit predicates, ten named future scenarios per PR, baseline/head regression and performance budgets.",
+        "All five capability declarations have evidence. Zero executable live lanes are declared because no runnable app or spare nested capacity exists. Omitted scenarios remain explicit.",
+        "Interaction screenshot/video approval and independent review remain gates. Implementation waits for explicit go. No proposed media path is claimed as an existing proof.",
+        "Actual checker initially rejected the plan, then accepted the corrected plan and policy variants. This reviewer independently reran the read-only checker and obtained two PR sections, zero problems with identical before/after bytes.",
+        "The denied-write variant returns unsaved text captured separately by the authorized evidence owner. It does not claim an OS denial.",
+        "The case explicitly permits a structurally valid plan with blocked execution to pass. This is a full planning-deliverable qualification, not implementation, UI or performance completion."
+      ],
+      "source": "docs/parity/cases/playbooks/multi-phase-plan.json",
+      "evidence": [
+        {
+          "path": "<private-run>/remaining-local/cases/units-and-proof/outputs/export-selected-orders.plan.md",
+          "line": 1,
+          "sha256": "4a114094916cfb8dd5345a26415d99bd4b0b00b3907ebc3d4a95f52ab8d10ff1"
+        },
+        {
+          "path": "<private-run>/remaining-local/cases/units-and-proof/outputs/capabilities.json",
+          "line": 1,
+          "sha256": "40d84a1e4a3e570bc1b5c6ed2c8b1b9e14c7468e83066fe5079e1b53b6a4592a"
+        },
+        {
+          "path": "<private-run>/remaining-local/cases/units-and-proof/outputs/variants.json",
+          "line": 1,
+          "sha256": "89273e8d1c52d5c5228ad0a05be2a0f8af6f4d6b222b4c2f9cd9245bc4790835"
+        },
+        {
+          "path": "<private-run>/remaining-local/cases/units-and-proof/outputs/checker-main-initial.json",
+          "line": 1,
+          "sha256": "cce4dce7079ba4e6b330bf0de917f9428be2144d15046085b5508f7de67530f8"
+        },
+        {
+          "path": "<private-run>/remaining-local/cases/units-and-proof/outputs/checker-main.json",
+          "line": 1,
+          "sha256": "6a5cc7e539a31e39b32ab17a83e796c4bb7305a78d60e017ae55cfc79815e855"
+        },
+        {
+          "path": "<private-run>/remaining-local/cases/units-and-proof/outputs/denied-writes-response.txt",
+          "line": 1,
+          "sha256": "ec2095c12f4255e768d575f89abc2d0ce9fc374086e8980aaf28f642d427e06f"
+        },
+        {
+          "path": "<private-run>/remaining-local/cases/units-and-proof/outputs/prototype.json",
+          "line": 1,
+          "sha256": "7e5084c16ed3880f393a8be4fe7553f63a73a09c6492c4082875db675524f6cf"
+        },
+        {
+          "path": "<private-run>/remaining-local/cases/units-and-proof/outputs/final-checks.json",
+          "line": 1,
+          "sha256": "6ef8394ca5488c66bdee1a0548b69a6ddbd33eb032781811d39e8174bd923428"
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "text": "Retain the ten independent lane full expectation; explicit reduced or blocked limits preserve omitted scenarios.",
+      "status": "satisfied",
+      "basis": [
+        "The saved two-PR planning artifact preserves ordered program/PR/close/appendix sections, exact file ownership and dependencies, unit predicates, ten named future scenarios per PR, baseline/head regression and performance budgets.",
+        "All five capability declarations have evidence. Zero executable live lanes are declared because no runnable app or spare nested capacity exists. Omitted scenarios remain explicit.",
+        "Interaction screenshot/video approval and independent review remain gates. Implementation waits for explicit go. No proposed media path is claimed as an existing proof.",
+        "Actual checker initially rejected the plan, then accepted the corrected plan and policy variants. This reviewer independently reran the read-only checker and obtained two PR sections, zero problems with identical before/after bytes.",
+        "The denied-write variant returns unsaved text captured separately by the authorized evidence owner. It does not claim an OS denial.",
+        "The case explicitly permits a structurally valid plan with blocked execution to pass. This is a full planning-deliverable qualification, not implementation, UI or performance completion."
+      ],
+      "source": "docs/parity/cases/playbooks/multi-phase-plan.json",
+      "evidence": [
+        {
+          "path": "<private-run>/remaining-local/cases/units-and-proof/outputs/export-selected-orders.plan.md",
+          "line": 1,
+          "sha256": "4a114094916cfb8dd5345a26415d99bd4b0b00b3907ebc3d4a95f52ab8d10ff1"
+        },
+        {
+          "path": "<private-run>/remaining-local/cases/units-and-proof/outputs/capabilities.json",
+          "line": 1,
+          "sha256": "40d84a1e4a3e570bc1b5c6ed2c8b1b9e14c7468e83066fe5079e1b53b6a4592a"
+        },
+        {
+          "path": "<private-run>/remaining-local/cases/units-and-proof/outputs/variants.json",
+          "line": 1,
+          "sha256": "89273e8d1c52d5c5228ad0a05be2a0f8af6f4d6b222b4c2f9cd9245bc4790835"
+        },
+        {
+          "path": "<private-run>/remaining-local/cases/units-and-proof/outputs/checker-main-initial.json",
+          "line": 1,
+          "sha256": "cce4dce7079ba4e6b330bf0de917f9428be2144d15046085b5508f7de67530f8"
+        },
+        {
+          "path": "<private-run>/remaining-local/cases/units-and-proof/outputs/checker-main.json",
+          "line": 1,
+          "sha256": "6a5cc7e539a31e39b32ab17a83e796c4bb7305a78d60e017ae55cfc79815e855"
+        },
+        {
+          "path": "<private-run>/remaining-local/cases/units-and-proof/outputs/denied-writes-response.txt",
+          "line": 1,
+          "sha256": "ec2095c12f4255e768d575f89abc2d0ce9fc374086e8980aaf28f642d427e06f"
+        },
+        {
+          "path": "<private-run>/remaining-local/cases/units-and-proof/outputs/prototype.json",
+          "line": 1,
+          "sha256": "7e5084c16ed3880f393a8be4fe7553f63a73a09c6492c4082875db675524f6cf"
+        },
+        {
+          "path": "<private-run>/remaining-local/cases/units-and-proof/outputs/final-checks.json",
+          "line": 1,
+          "sha256": "6ef8394ca5488c66bdee1a0548b69a6ddbd33eb032781811d39e8174bd923428"
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "text": "Performance uses comparable trunk/head metric, interleaved probe, baseline first and numeric fail rule, or justified non-applicability evidence.",
+      "status": "satisfied",
+      "basis": [
+        "The saved two-PR planning artifact preserves ordered program/PR/close/appendix sections, exact file ownership and dependencies, unit predicates, ten named future scenarios per PR, baseline/head regression and performance budgets.",
+        "All five capability declarations have evidence. Zero executable live lanes are declared because no runnable app or spare nested capacity exists. Omitted scenarios remain explicit.",
+        "Interaction screenshot/video approval and independent review remain gates. Implementation waits for explicit go. No proposed media path is claimed as an existing proof.",
+        "Actual checker initially rejected the plan, then accepted the corrected plan and policy variants. This reviewer independently reran the read-only checker and obtained two PR sections, zero problems with identical before/after bytes.",
+        "The denied-write variant returns unsaved text captured separately by the authorized evidence owner. It does not claim an OS denial.",
+        "The case explicitly permits a structurally valid plan with blocked execution to pass. This is a full planning-deliverable qualification, not implementation, UI or performance completion."
+      ],
+      "source": "docs/parity/cases/playbooks/multi-phase-plan.json",
+      "evidence": [
+        {
+          "path": "<private-run>/remaining-local/cases/units-and-proof/outputs/export-selected-orders.plan.md",
+          "line": 1,
+          "sha256": "4a114094916cfb8dd5345a26415d99bd4b0b00b3907ebc3d4a95f52ab8d10ff1"
+        },
+        {
+          "path": "<private-run>/remaining-local/cases/units-and-proof/outputs/capabilities.json",
+          "line": 1,
+          "sha256": "40d84a1e4a3e570bc1b5c6ed2c8b1b9e14c7468e83066fe5079e1b53b6a4592a"
+        },
+        {
+          "path": "<private-run>/remaining-local/cases/units-and-proof/outputs/variants.json",
+          "line": 1,
+          "sha256": "89273e8d1c52d5c5228ad0a05be2a0f8af6f4d6b222b4c2f9cd9245bc4790835"
+        },
+        {
+          "path": "<private-run>/remaining-local/cases/units-and-proof/outputs/checker-main-initial.json",
+          "line": 1,
+          "sha256": "cce4dce7079ba4e6b330bf0de917f9428be2144d15046085b5508f7de67530f8"
+        },
+        {
+          "path": "<private-run>/remaining-local/cases/units-and-proof/outputs/checker-main.json",
+          "line": 1,
+          "sha256": "6a5cc7e539a31e39b32ab17a83e796c4bb7305a78d60e017ae55cfc79815e855"
+        },
+        {
+          "path": "<private-run>/remaining-local/cases/units-and-proof/outputs/denied-writes-response.txt",
+          "line": 1,
+          "sha256": "ec2095c12f4255e768d575f89abc2d0ce9fc374086e8980aaf28f642d427e06f"
+        },
+        {
+          "path": "<private-run>/remaining-local/cases/units-and-proof/outputs/prototype.json",
+          "line": 1,
+          "sha256": "7e5084c16ed3880f393a8be4fe7553f63a73a09c6492c4082875db675524f6cf"
+        },
+        {
+          "path": "<private-run>/remaining-local/cases/units-and-proof/outputs/final-checks.json",
+          "line": 1,
+          "sha256": "6ef8394ca5488c66bdee1a0548b69a6ddbd33eb032781811d39e8174bd923428"
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "text": "Preserve operator screenshot/video review for interactions and independent review requirements.",
+      "status": "satisfied",
+      "basis": [
+        "The saved two-PR planning artifact preserves ordered program/PR/close/appendix sections, exact file ownership and dependencies, unit predicates, ten named future scenarios per PR, baseline/head regression and performance budgets.",
+        "All five capability declarations have evidence. Zero executable live lanes are declared because no runnable app or spare nested capacity exists. Omitted scenarios remain explicit.",
+        "Interaction screenshot/video approval and independent review remain gates. Implementation waits for explicit go. No proposed media path is claimed as an existing proof.",
+        "Actual checker initially rejected the plan, then accepted the corrected plan and policy variants. This reviewer independently reran the read-only checker and obtained two PR sections, zero problems with identical before/after bytes.",
+        "The denied-write variant returns unsaved text captured separately by the authorized evidence owner. It does not claim an OS denial.",
+        "The case explicitly permits a structurally valid plan with blocked execution to pass. This is a full planning-deliverable qualification, not implementation, UI or performance completion."
+      ],
+      "source": "docs/parity/cases/playbooks/multi-phase-plan.json",
+      "evidence": [
+        {
+          "path": "<private-run>/remaining-local/cases/units-and-proof/outputs/export-selected-orders.plan.md",
+          "line": 1,
+          "sha256": "4a114094916cfb8dd5345a26415d99bd4b0b00b3907ebc3d4a95f52ab8d10ff1"
+        },
+        {
+          "path": "<private-run>/remaining-local/cases/units-and-proof/outputs/capabilities.json",
+          "line": 1,
+          "sha256": "40d84a1e4a3e570bc1b5c6ed2c8b1b9e14c7468e83066fe5079e1b53b6a4592a"
+        },
+        {
+          "path": "<private-run>/remaining-local/cases/units-and-proof/outputs/variants.json",
+          "line": 1,
+          "sha256": "89273e8d1c52d5c5228ad0a05be2a0f8af6f4d6b222b4c2f9cd9245bc4790835"
+        },
+        {
+          "path": "<private-run>/remaining-local/cases/units-and-proof/outputs/checker-main-initial.json",
+          "line": 1,
+          "sha256": "cce4dce7079ba4e6b330bf0de917f9428be2144d15046085b5508f7de67530f8"
+        },
+        {
+          "path": "<private-run>/remaining-local/cases/units-and-proof/outputs/checker-main.json",
+          "line": 1,
+          "sha256": "6a5cc7e539a31e39b32ab17a83e796c4bb7305a78d60e017ae55cfc79815e855"
+        },
+        {
+          "path": "<private-run>/remaining-local/cases/units-and-proof/outputs/denied-writes-response.txt",
+          "line": 1,
+          "sha256": "ec2095c12f4255e768d575f89abc2d0ce9fc374086e8980aaf28f642d427e06f"
+        },
+        {
+          "path": "<private-run>/remaining-local/cases/units-and-proof/outputs/prototype.json",
+          "line": 1,
+          "sha256": "7e5084c16ed3880f393a8be4fe7553f63a73a09c6492c4082875db675524f6cf"
+        },
+        {
+          "path": "<private-run>/remaining-local/cases/units-and-proof/outputs/final-checks.json",
+          "line": 1,
+          "sha256": "6ef8394ca5488c66bdee1a0548b69a6ddbd33eb032781811d39e8174bd923428"
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "text": "Invoke Bun positional read-only checker on a pstack plan only and retain output and exit status.",
+      "status": "satisfied",
+      "basis": [
+        "The saved two-PR planning artifact preserves ordered program/PR/close/appendix sections, exact file ownership and dependencies, unit predicates, ten named future scenarios per PR, baseline/head regression and performance budgets.",
+        "All five capability declarations have evidence. Zero executable live lanes are declared because no runnable app or spare nested capacity exists. Omitted scenarios remain explicit.",
+        "Interaction screenshot/video approval and independent review remain gates. Implementation waits for explicit go. No proposed media path is claimed as an existing proof.",
+        "Actual checker initially rejected the plan, then accepted the corrected plan and policy variants. This reviewer independently reran the read-only checker and obtained two PR sections, zero problems with identical before/after bytes.",
+        "The denied-write variant returns unsaved text captured separately by the authorized evidence owner. It does not claim an OS denial.",
+        "The case explicitly permits a structurally valid plan with blocked execution to pass. This is a full planning-deliverable qualification, not implementation, UI or performance completion."
+      ],
+      "source": "docs/parity/cases/playbooks/multi-phase-plan.json",
+      "evidence": [
+        {
+          "path": "<private-run>/remaining-local/cases/units-and-proof/outputs/export-selected-orders.plan.md",
+          "line": 1,
+          "sha256": "4a114094916cfb8dd5345a26415d99bd4b0b00b3907ebc3d4a95f52ab8d10ff1"
+        },
+        {
+          "path": "<private-run>/remaining-local/cases/units-and-proof/outputs/capabilities.json",
+          "line": 1,
+          "sha256": "40d84a1e4a3e570bc1b5c6ed2c8b1b9e14c7468e83066fe5079e1b53b6a4592a"
+        },
+        {
+          "path": "<private-run>/remaining-local/cases/units-and-proof/outputs/variants.json",
+          "line": 1,
+          "sha256": "89273e8d1c52d5c5228ad0a05be2a0f8af6f4d6b222b4c2f9cd9245bc4790835"
+        },
+        {
+          "path": "<private-run>/remaining-local/cases/units-and-proof/outputs/checker-main-initial.json",
+          "line": 1,
+          "sha256": "cce4dce7079ba4e6b330bf0de917f9428be2144d15046085b5508f7de67530f8"
+        },
+        {
+          "path": "<private-run>/remaining-local/cases/units-and-proof/outputs/checker-main.json",
+          "line": 1,
+          "sha256": "6a5cc7e539a31e39b32ab17a83e796c4bb7305a78d60e017ae55cfc79815e855"
+        },
+        {
+          "path": "<private-run>/remaining-local/cases/units-and-proof/outputs/denied-writes-response.txt",
+          "line": 1,
+          "sha256": "ec2095c12f4255e768d575f89abc2d0ce9fc374086e8980aaf28f642d427e06f"
+        },
+        {
+          "path": "<private-run>/remaining-local/cases/units-and-proof/outputs/prototype.json",
+          "line": 1,
+          "sha256": "7e5084c16ed3880f393a8be4fe7553f63a73a09c6492c4082875db675524f6cf"
+        },
+        {
+          "path": "<private-run>/remaining-local/cases/units-and-proof/outputs/final-checks.json",
+          "line": 1,
+          "sha256": "6ef8394ca5488c66bdee1a0548b69a6ddbd33eb032781811d39e8174bd923428"
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "text": "External setup, scheduling, PR operations and merge require actual separate authorization.",
+      "status": "satisfied",
+      "basis": [
+        "The saved two-PR planning artifact preserves ordered program/PR/close/appendix sections, exact file ownership and dependencies, unit predicates, ten named future scenarios per PR, baseline/head regression and performance budgets.",
+        "All five capability declarations have evidence. Zero executable live lanes are declared because no runnable app or spare nested capacity exists. Omitted scenarios remain explicit.",
+        "Interaction screenshot/video approval and independent review remain gates. Implementation waits for explicit go. No proposed media path is claimed as an existing proof.",
+        "Actual checker initially rejected the plan, then accepted the corrected plan and policy variants. This reviewer independently reran the read-only checker and obtained two PR sections, zero problems with identical before/after bytes.",
+        "The denied-write variant returns unsaved text captured separately by the authorized evidence owner. It does not claim an OS denial.",
+        "The case explicitly permits a structurally valid plan with blocked execution to pass. This is a full planning-deliverable qualification, not implementation, UI or performance completion."
+      ],
+      "source": "docs/parity/cases/playbooks/multi-phase-plan.json",
+      "evidence": [
+        {
+          "path": "<private-run>/remaining-local/cases/units-and-proof/outputs/export-selected-orders.plan.md",
+          "line": 1,
+          "sha256": "4a114094916cfb8dd5345a26415d99bd4b0b00b3907ebc3d4a95f52ab8d10ff1"
+        },
+        {
+          "path": "<private-run>/remaining-local/cases/units-and-proof/outputs/capabilities.json",
+          "line": 1,
+          "sha256": "40d84a1e4a3e570bc1b5c6ed2c8b1b9e14c7468e83066fe5079e1b53b6a4592a"
+        },
+        {
+          "path": "<private-run>/remaining-local/cases/units-and-proof/outputs/variants.json",
+          "line": 1,
+          "sha256": "89273e8d1c52d5c5228ad0a05be2a0f8af6f4d6b222b4c2f9cd9245bc4790835"
+        },
+        {
+          "path": "<private-run>/remaining-local/cases/units-and-proof/outputs/checker-main-initial.json",
+          "line": 1,
+          "sha256": "cce4dce7079ba4e6b330bf0de917f9428be2144d15046085b5508f7de67530f8"
+        },
+        {
+          "path": "<private-run>/remaining-local/cases/units-and-proof/outputs/checker-main.json",
+          "line": 1,
+          "sha256": "6a5cc7e539a31e39b32ab17a83e796c4bb7305a78d60e017ae55cfc79815e855"
+        },
+        {
+          "path": "<private-run>/remaining-local/cases/units-and-proof/outputs/denied-writes-response.txt",
+          "line": 1,
+          "sha256": "ec2095c12f4255e768d575f89abc2d0ce9fc374086e8980aaf28f642d427e06f"
+        },
+        {
+          "path": "<private-run>/remaining-local/cases/units-and-proof/outputs/prototype.json",
+          "line": 1,
+          "sha256": "7e5084c16ed3880f393a8be4fe7553f63a73a09c6492c4082875db675524f6cf"
+        },
+        {
+          "path": "<private-run>/remaining-local/cases/units-and-proof/outputs/final-checks.json",
+          "line": 1,
+          "sha256": "6ef8394ca5488c66bdee1a0548b69a6ddbd33eb032781811d39e8174bd923428"
+        }
+      ]
+    }
+  ],
+  "sourceArtifactBindings": [
+    {
+      "originalLocator": "remaining-local/cases/units-and-proof/outputs/export-selected-orders.plan.md",
+      "sourceSha256": "4a114094916cfb8dd5345a26415d99bd4b0b00b3907ebc3d4a95f52ab8d10ff1",
+      "expectedSha256": "4a114094916cfb8dd5345a26415d99bd4b0b00b3907ebc3d4a95f52ab8d10ff1",
+      "expectedHashMatches": true,
+      "bytes": 23439,
+      "publication": "omitted",
+      "reason": "Only a narrow inspected projection may be included. Private original remains unchanged."
+    },
+    {
+      "originalLocator": "remaining-local/cases/units-and-proof/outputs/capabilities.json",
+      "sourceSha256": "40d84a1e4a3e570bc1b5c6ed2c8b1b9e14c7468e83066fe5079e1b53b6a4592a",
+      "expectedSha256": "40d84a1e4a3e570bc1b5c6ed2c8b1b9e14c7468e83066fe5079e1b53b6a4592a",
+      "expectedHashMatches": true,
+      "bytes": 4006,
+      "publication": "omitted",
+      "reason": "Only a narrow inspected projection may be included. Private original remains unchanged."
+    },
+    {
+      "originalLocator": "remaining-local/cases/units-and-proof/outputs/variants.json",
+      "sourceSha256": "89273e8d1c52d5c5228ad0a05be2a0f8af6f4d6b222b4c2f9cd9245bc4790835",
+      "expectedSha256": "89273e8d1c52d5c5228ad0a05be2a0f8af6f4d6b222b4c2f9cd9245bc4790835",
+      "expectedHashMatches": true,
+      "bytes": 2609,
+      "publication": "projected-fields",
+      "reason": "Only a narrow inspected projection may be included. Private original remains unchanged.",
+      "projectedPath": "docs/releases/remediation-013/local/units-and-proof/review-a-07/proof/01-variants.json.excerpt.json",
+      "projectedSha256": "32a606175898d4a493d39d15485433d9f9743afafa0afda63aef58d9cdc278c2"
+    },
+    {
+      "originalLocator": "remaining-local/cases/units-and-proof/outputs/checker-main-initial.json",
+      "sourceSha256": "cce4dce7079ba4e6b330bf0de917f9428be2144d15046085b5508f7de67530f8",
+      "expectedSha256": "cce4dce7079ba4e6b330bf0de917f9428be2144d15046085b5508f7de67530f8",
+      "expectedHashMatches": true,
+      "bytes": 860,
+      "publication": "projected-fields",
+      "reason": "Only a narrow inspected projection may be included. Private original remains unchanged.",
+      "projectedPath": "docs/releases/remediation-013/local/units-and-proof/review-a-07/proof/02-checker-main-initial.json.excerpt.json",
+      "projectedSha256": "dc218fb3e3a0f7030715be74de04dfac6d25645cd413814b8837d2a3181122e0"
+    },
+    {
+      "originalLocator": "remaining-local/cases/units-and-proof/outputs/checker-main.json",
+      "sourceSha256": "6a5cc7e539a31e39b32ab17a83e796c4bb7305a78d60e017ae55cfc79815e855",
+      "expectedSha256": "6a5cc7e539a31e39b32ab17a83e796c4bb7305a78d60e017ae55cfc79815e855",
+      "expectedHashMatches": true,
+      "bytes": 860,
+      "publication": "projected-fields",
+      "reason": "Only a narrow inspected projection may be included. Private original remains unchanged.",
+      "projectedPath": "docs/releases/remediation-013/local/units-and-proof/review-a-07/proof/03-checker-main.json.excerpt.json",
+      "projectedSha256": "8212df51af680e534e403c03ba5aad44dbc18abeb0291da28b5934ba825f8af7"
+    },
+    {
+      "originalLocator": "remaining-local/cases/units-and-proof/outputs/denied-writes-response.txt",
+      "sourceSha256": "ec2095c12f4255e768d575f89abc2d0ce9fc374086e8980aaf28f642d427e06f",
+      "expectedSha256": "ec2095c12f4255e768d575f89abc2d0ce9fc374086e8980aaf28f642d427e06f",
+      "expectedHashMatches": true,
+      "bytes": 23599,
+      "publication": "omitted",
+      "reason": "Only a narrow inspected projection may be included. Private original remains unchanged."
+    },
+    {
+      "originalLocator": "remaining-local/cases/units-and-proof/outputs/prototype.json",
+      "sourceSha256": "7e5084c16ed3880f393a8be4fe7553f63a73a09c6492c4082875db675524f6cf",
+      "expectedSha256": "7e5084c16ed3880f393a8be4fe7553f63a73a09c6492c4082875db675524f6cf",
+      "expectedHashMatches": true,
+      "bytes": 185,
+      "publication": "omitted",
+      "reason": "Only a narrow inspected projection may be included. Private original remains unchanged."
+    },
+    {
+      "originalLocator": "remaining-local/cases/units-and-proof/outputs/final-checks.json",
+      "sourceSha256": "6ef8394ca5488c66bdee1a0548b69a6ddbd33eb032781811d39e8174bd923428",
+      "expectedSha256": "6ef8394ca5488c66bdee1a0548b69a6ddbd33eb032781811d39e8174bd923428",
+      "expectedHashMatches": true,
+      "bytes": 494,
+      "publication": "projected-fields",
+      "reason": "Only a narrow inspected projection may be included. Private original remains unchanged.",
+      "projectedPath": "docs/releases/remediation-013/local/units-and-proof/review-a-07/proof/04-final-checks.json.excerpt.json",
+      "projectedSha256": "79048bc0b6157fd5ee1575c8c9065559192b118cf996a3b4d771a63b06f20c27"
+    }
+  ],
+  "projectionLimits": [
+    "This file projects the existing independent assessment and does not regrade the case.",
+    "Private source artifacts and omitted native operations remain private. Source digests bind originals, not transformed bytes.",
+    "Historical 0.1.3 observations do not qualify current main or a modified candidate."
+  ],
+  "statusMapping": {
+    "originalProposedStatus": "pass",
+    "canonicalStatus": "pass",
+    "rule": "No status alias is applied."
+  }
+}

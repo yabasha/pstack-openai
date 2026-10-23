@@ -1,0 +1,83 @@
+{
+  "caseId": "preserved-behavior",
+  "packageVersion": "0.1.3",
+  "packageCommit": "51f209daf83cd97d64f89881d66533bb59dc57db",
+  "host": "codex",
+  "hostMode": "Historical native Local task-scoped fixture observation",
+  "date": "2026-10-17",
+  "input": "Refactor a fixture invoice formatter by removing a one-caller wrapper and consolidating duplicated state. Preserve literal formatted outputs, empty inputs, rounding and errors. Capture the current outputs before edits. Rename its internal API and migrate code, string references, docs and back-references together. One fixture exposes an unrelated bug, which must stay separate. A speculative abstraction adds reader load and must be reverted. Permit local edits and execution but no external writes. Repeat with workers unavailable, execution denied and behavior coverage absent. Return the changed structure, held pin, equivalence proof, reader-load delta, shipped and reverted work. Actual task fixture revision 1b69f163da7e4648e691c8b26cac8465ec1b596f.",
+  "observedOutput": "Actual independent mechanical delegation changed isolated fixture copies. Twenty-one literal before-edit observations were replayed after each staged move. Wrapper and private state were removed, callers and textual references migrated, speculative class applied and reverted, unrelated defect preserved. Independent review found unsupported UI-history prose and the owner corrected it. Full triggered Arena method is not canonical.",
+  "status": "reduced-pass",
+  "execution": "workers",
+  "inputRevision": "1b69f163da7e4648e691c8b26cac8465ec1b596f",
+  "sourcePaths": [
+    "skills/poteto-mode/playbooks/refactoring.md",
+    "skills/poteto-mode/SKILL.md",
+    "agents/poteto-agent.md",
+    "skills/poteto-mode/playbooks/feature.md",
+    "skills/poteto-mode/playbooks/opening-a-pr.md",
+    "skills/how/SKILL.md",
+    "skills/figure-it-out/SKILL.md",
+    "skills/architect/SKILL.md",
+    "skills/principle-model-the-domain/SKILL.md",
+    "skills/principle-foundational-thinking/SKILL.md",
+    "skills/principle-redesign-from-first-principles/SKILL.md",
+    "skills/principle-subtract-before-you-add/SKILL.md",
+    "skills/principle-laziness-protocol/SKILL.md",
+    "skills/principle-migrate-callers-then-delete-legacy-apis/SKILL.md",
+    "skills/principle-prove-it-works/SKILL.md",
+    "skills/principle-minimize-reader-load/SKILL.md",
+    "skills/principle-sequence-verifiable-units/SKILL.md",
+    "skills/how/references/explorer-prompt.md",
+    "skills/how/references/explainer-prompt.md",
+    "skills/architect/references/runner-prompt.md",
+    "skills/architect/references/rationale-template.md",
+    "skills/architect/references/design-red-flags.md"
+  ],
+  "documentedCapabilities": [
+    "Frozen source instructions only. Current-main qualification is not established."
+  ],
+  "exposedTools": [],
+  "artifacts": [
+    "docs/releases/remediation-013/local/preserved-behavior/review-c-02/assessment.json",
+    "docs/releases/remediation-013/local/preserved-behavior/review-c-02/proof/01-baseline.receipt.json.excerpt.json",
+    "docs/releases/remediation-013/local/preserved-behavior/review-c-02/proof/02-primary-owner-equivalence.receipt.json.excerpt.json",
+    "docs/releases/remediation-013/local/preserved-behavior/review-c-02/proof/03-coverage-owner-equivalence.receipt.json.excerpt.json",
+    "docs/releases/remediation-013/local/preserved-behavior/review-c-02/proof/04-arena-method-receipt.json.excerpt.json",
+    "docs/releases/remediation-013/local/preserved-behavior/review-c-02/proof/05-workers-withheld-final-reviewed-equivalence.receipt.json.excerpt.json",
+    "docs/releases/remediation-013/local/preserved-behavior/review-c-02/proof/supplied-input.json",
+    "docs/releases/remediation-013/local/preserved-behavior/review-c-02/proof/task-result-prefix.json"
+  ],
+  "limits": [
+    "Arena judge has null prospective method",
+    "Arena outputPath values are directories and roles are noncanonical",
+    "Candidate grading-material exposure and boot/read chronology remain recorded",
+    "Execution-denied variant has no equivalence proof by policy",
+    "Only the actual operations listed in this record have narrow public bindings. Other operations from the independent assessment remain unprojected. No missing operation is invented.",
+    "Original independent proposed grade is reduced. reduced-pass is its declared evidence-schema alias.",
+    "No qualifying callable native-operation excerpt was selected for this attempt. Result fields and independent review remain available, but do not substitute for missing operation proof."
+  ],
+  "priorActionIdentities": [],
+  "permissions": {
+    "execution": "granted",
+    "writes": "granted",
+    "externalActions": "denied"
+  },
+  "models": {
+    "requested": "inherit-parent",
+    "actual": "unknown"
+  },
+  "successfulOperations": [],
+  "nativeObservations": [
+    {
+      "observation": "review-outcome",
+      "evidence": "docs/releases/remediation-013/local/preserved-behavior/review-c-02/assessment.json",
+      "reviewedBy": "/root/grade_remediation_local_c"
+    },
+    {
+      "observation": "supplied-input",
+      "evidence": "docs/releases/remediation-013/local/preserved-behavior/review-c-02/proof/supplied-input.json",
+      "reviewedBy": "/root/project_historical_local"
+    }
+  ]
+}

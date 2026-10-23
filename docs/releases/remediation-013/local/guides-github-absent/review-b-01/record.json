@@ -1,0 +1,72 @@
+{
+  "caseId": "guides-github-absent",
+  "packageVersion": "0.1.3",
+  "packageCommit": "51f209daf83cd97d64f89881d66533bb59dc57db",
+  "host": "codex",
+  "hostMode": "Historical native Local task-scoped fixture observation",
+  "date": "2026-10-17",
+  "input": "Open and babysit a PR when GitHub access is absent. Actual task fixture revision 0d6b88f44a2a7bc7249f06374fba22822681d153.",
+  "observedOutput": "Matching guide, complete Opening and Babysit reads and source hashes are observed. Local handoff preserves unknown repository, branch, head and product-change inputs. Actual executable discoveries are distinguished from POLICY-withheld GitHub access. No external operation or watcher outcome is invented.",
+  "status": "reduced-pass",
+  "execution": "workers",
+  "inputRevision": "0d6b88f44a2a7bc7249f06374fba22822681d153",
+  "sourcePaths": [
+    "docs/guide/01-setup.md",
+    "docs/guide/02-poteto-mode.md",
+    "docs/guide/03-understand.md",
+    "docs/guide/04-design.md",
+    "docs/guide/05-build-and-clean.md",
+    "docs/guide/06-verify-and-ship.md",
+    "docs/guide/07-overnight.md",
+    "docs/guide/08-principles.md",
+    "docs/guide/09-make-it-yours.md",
+    "docs/guide/10-recipes-and-pitfalls.md",
+    "docs/guide/README.md",
+    "docs/guide/images/design.jpg",
+    "docs/guide/images/overnight.jpg",
+    "docs/guide/images/recipes.jpg",
+    "docs/guide/images/router.jpg",
+    "docs/guide/images/understanding.jpg",
+    "docs/guide/images/verification.jpg"
+  ],
+  "documentedCapabilities": [
+    "Frozen source instructions only. Current-main qualification is not established."
+  ],
+  "exposedTools": [],
+  "artifacts": [
+    "docs/releases/remediation-013/local/guides-github-absent/review-b-01/assessment.json",
+    "docs/releases/remediation-013/local/guides-github-absent/review-b-01/proof/01-input-source-receipt.json.excerpt.json",
+    "docs/releases/remediation-013/local/guides-github-absent/review-b-01/proof/02-verification.json.excerpt.json",
+    "docs/releases/remediation-013/local/guides-github-absent/review-b-01/proof/03-coordinator-review.json.excerpt.json",
+    "docs/releases/remediation-013/local/guides-github-absent/review-b-01/proof/supplied-input.json",
+    "docs/releases/remediation-013/local/guides-github-absent/review-b-01/proof/task-result-prefix.json"
+  ],
+  "limits": [
+    "The exact case expectedReduced applies. Real PR delivery and babysitting remain unavailable under the withheld access scenario.",
+    "Only the actual operations listed in this record have narrow public bindings. Other operations from the independent assessment remain unprojected. No missing operation is invented.",
+    "No qualifying callable native-operation excerpt was selected for this attempt. Result fields and independent review remain available, but do not substitute for missing operation proof."
+  ],
+  "priorActionIdentities": [],
+  "permissions": {
+    "execution": "granted",
+    "writes": "granted",
+    "externalActions": "denied"
+  },
+  "models": {
+    "requested": "inherit-parent",
+    "actual": "unknown"
+  },
+  "successfulOperations": [],
+  "nativeObservations": [
+    {
+      "observation": "review-outcome",
+      "evidence": "docs/releases/remediation-013/local/guides-github-absent/review-b-01/assessment.json",
+      "reviewedBy": "/root/grade_remediation_local_b"
+    },
+    {
+      "observation": "supplied-input",
+      "evidence": "docs/releases/remediation-013/local/guides-github-absent/review-b-01/proof/supplied-input.json",
+      "reviewedBy": "/root/project_historical_local"
+    }
+  ]
+}

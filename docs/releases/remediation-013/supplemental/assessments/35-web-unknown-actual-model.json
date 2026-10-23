@@ -1,0 +1,125 @@
+{
+  "kind": "historical-independent-assessment-extract",
+  "qualification": {
+    "inputRevision": "4138e161c27cafffd2baaab6bf4ca53e86a57433",
+    "sourceFreeze": "51f209daf83cd97d64f89881d66533bb59dc57db",
+    "packageVersion": "0.1.3",
+    "currentSourceQualified": false
+  },
+  "source": {
+    "path": "<private-run>/grades/grade_remediation_web_b/result.json",
+    "sha256": "955cf814d92937db0da86307aca849188ae17c5ac8a0a242f21a63f0fd618369",
+    "locator": {
+      "jsonPointer": "/cases/2"
+    }
+  },
+  "originalAssessment": {
+    "caseId": "unknown-actual-model",
+    "host": "chatgpt",
+    "proposedStatus": "reduced-pass",
+    "gradeScope": "Exact registered case behavior on starting-main 4138 source qualification only. No current main or whole-mode parity claim.",
+    "reason": "The response preserves requested inheritance separately from unknown actual model and rejects diversity claims. Actual parent spawn and returned-result inspection transport is not retained in this export. The worker self-report and coordinator-inspection boolean do not independently establish the full worker gate.",
+    "inputAssignment": {
+      "path": "<private-run>/web-checkpoint-2/units/unknown-actual-model/assignments/unknown-actual-model.json",
+      "sha256": "b17b15381169e7127cc020cc9125a4e136f1c721f0750f09551a62185791205b",
+      "locator": null
+    },
+    "sourceContract": {
+      "path": "<private-run>/runtime/package-main-4138e16/docs/parity/cases/model-roles.json",
+      "sha256": "4b3ef27089159fc5eaa245916c08a2440dd9b6a7983d3b22f7e8998985fd68fd",
+      "locator": "unknown-actual-model"
+    },
+    "registry": {
+      "path": "<private-run>/runtime/package-main-4138e16/docs/parity/case-registry.json",
+      "sha256": "5b6314bc2aa30ef161318535fe8cdcf901033570083fbc8e991c7c5e3fc59e29",
+      "locator": "unknown-actual-model"
+    },
+    "requiredObservations": {
+      "pass": [
+        "read",
+        "inspect-result"
+      ],
+      "reduced-pass": [
+        "read"
+      ]
+    },
+    "satisfiedPredicates": [
+      "Exact task HEAD 5124c0c509be4c88b0b0f6bc0d4c41be0fd56dce observed in clone return.",
+      "Canonical role prompts, full mode and capability/model contracts were read and hashed.",
+      "No actual-model or model-diversity inference from requested inheritance or role names."
+    ],
+    "unmetGates": [
+      "Full observed independent spawn plus parent result-inspection proof missing from assigned exported operations.",
+      "Literal prompt names a model while actual request uses inheritance. This mismatch is explicitly retained in coordinator-inspection.json."
+    ],
+    "evidence": [
+      {
+        "path": "<private-run>/web-checkpoint-2/units/unknown-actual-model/outputs/unknown-actual-model/result.json",
+        "sha256": "63b0e03441cb62f6abc67f39f0802f8c066e7d8bd1e992b751032c309e4fea89",
+        "locator": null
+      },
+      {
+        "path": "<private-run>/web-checkpoint-2/units/unknown-actual-model/outputs/unknown-actual-model/clone.raw.json",
+        "sha256": "42074fffd4fa9a64b582f414237e155fded3581c2266b96e8f7078a8525d298d",
+        "locator": null
+      },
+      {
+        "path": "<private-run>/web-checkpoint-2/units/unknown-actual-model/outputs/unknown-actual-model/roles-and-contract.raw.json",
+        "sha256": "735b2e5c5c62b9e752a556e867f871a884bbeef9f21579b08f80569b06e24a3e",
+        "locator": null
+      },
+      {
+        "path": "<private-run>/web-checkpoint-2/units/unknown-actual-model/outputs/unknown-actual-model/result-readback.raw.json",
+        "sha256": "f32bc4a3404e9822e619545363b9e45bf4047e04f9b2f886132fc69a11f56c72",
+        "locator": null
+      },
+      {
+        "path": "<private-run>/web-checkpoint-2/units/unknown-actual-model/outputs/unknown-actual-model/bootstrap-return.json",
+        "sha256": "44b636bfbb062e2e3d9fc50f8d9076f41c7d051e679bd4c026d72ec0601fe286",
+        "locator": null
+      },
+      {
+        "path": "<private-run>/web-checkpoint-2/units/unknown-actual-model/outputs/unknown-actual-model/coordinator-inspection.json",
+        "sha256": "a0539ea409c514bedb6c58bfead3378a0516f6b47168cbab062a00697855ef94",
+        "locator": null
+      }
+    ],
+    "successfulOperationMapping": [
+      {
+        "operation": "read",
+        "tool": "functions.exec / tools.exec_command",
+        "evidence": {
+          "path": "<private-run>/web-checkpoint-2/units/unknown-actual-model/outputs/unknown-actual-model/roles-and-contract.raw.json",
+          "sha256": "735b2e5c5c62b9e752a556e867f871a884bbeef9f21579b08f80569b06e24a3e",
+          "locator": null
+        }
+      }
+    ],
+    "nativeObservationMapping": {
+      "supplied-input": {
+        "path": "<private-run>/runtime/package-main-4138e16/docs/parity/cases/model-roles.json",
+        "sha256": "4b3ef27089159fc5eaa245916c08a2440dd9b6a7983d3b22f7e8998985fd68fd",
+        "locator": "unknown-actual-model"
+      },
+      "response": {
+        "path": "<private-run>/web-checkpoint-2/units/unknown-actual-model/outputs/unknown-actual-model/result.json",
+        "sha256": "63b0e03441cb62f6abc67f39f0802f8c066e7d8bd1e992b751032c309e4fea89",
+        "locator": null
+      },
+      "review-outcome": "<private-run>/grades/grade_remediation_web_b/result.json"
+    },
+    "requestedModel": "inherit-parent",
+    "actualModel": "unknown",
+    "methodReceiptRequiredByRegistry": null
+  },
+  "selectedProof": [
+    "proof/35-web-unknown-actual-model-1.json",
+    "proof/35-web-unknown-actual-model-2.json",
+    "proof/35-web-unknown-actual-model-3.json"
+  ],
+  "publicationStatus": "proposal-only; no canonical host evidence record is constructed",
+  "publicationGaps": [
+    "This assessment format is not the canonical evidence schema. Root-relative operation bindings and any required structured method receipt require separate complete validation.",
+    "Original assessment limitations, invalid receipts and capture gaps are preserved. A behavioral pass does not qualify a different package revision."
+  ]
+}

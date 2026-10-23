@@ -1,0 +1,16 @@
+{
+  "kind": "task-result-file-excerpt",
+  "caseId": "partition-and-race",
+  "attemptId": "review-c-04",
+  "inputRevision": "e1dbf216744c45345acecf367b2b449bbc9fa75f",
+  "originalLocator": "remaining-local/cases/partition-and-race/outputs/partition-and-race.result.md",
+  "sourceSha256": "9e09a1417ca2f88eea479882669b6973911363f902e3f3cebcfc32e298b86ca3",
+  "sourceWasDirectlyListedByIndependentGrade": true,
+  "characterRange": {
+    "start": 0,
+    "endExclusive": 796,
+    "total": 38501
+  },
+  "content": "# Partition and race factual attempt receipt\n\nThe partition-and-race attempt retained actual independent workers, a separately declared later-available parallel race, a rejected missing-evidence result, an injected dropout, and observed cancellation with quarantine. Full requested coverage and retry-exhaustion remain unfulfilled. No case grade is assigned.\n\n| Assignment | Actual worker | Observed result | Coverage |\n|---|---|---|---|\n| race_a | /root/partition_and_race/race_a | Completed and inspected at order 4 | Invoice identity only. No initial parallel race. |\n| race_b | Not dispatched | Blocked at order 8 by initial slot constraint | None. |\n| missing | /root/partition_and_race/missing | Raw invalid output rejected at order 6 | Orders remains a gap. Retry/repeated miss withheld. |",
+  "transformation": "An inspected prefix of the actual task-result file is projected. Task-owned absolute paths use declared placeholders. The prefix may omit later qualifications. The independent assessment and its limits govern the proposed grade. This is neither a new grade nor a native callable-operation claim."
+}

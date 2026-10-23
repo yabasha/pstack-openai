@@ -1,67 +1,134 @@
-# Current frozen installation evidence
+# Current 0.1.5 discovery
 
 Current package: v0.2.1, with 54 root skills. See the [current validation and refresh record](../releases/0.2.1.md). The records below describe earlier package revisions; their 51-skill counts, dates and host results are historical and do not establish current workflow behavior.
 
 Observed 2026-10-08, Asia/Amman. The separately approved personal skills-only installation of pstack-openai 0.1.0 used operative SHA 5d05ab2458f4cd73c44b24265a3a1920b98b8cf4 and codex-cli 0.161.0. The supported installation CLI completed successfully. Source export /Users/digital-hawk/.codex/plugins/yabasha-local/pstack-openai and installed cache /Users/digital-hawk/.codex/plugins/cache/yabasha-local/pstack-openai/0.1.0 each matched all 726 frozen paths, bytes and modes, with zero extras. Only the approved personal marketplace entry and target enablement changed semantically; no unrelated configuration or credentials were repaired.
 
-The fresh CLI app-server registered all 51 root skills and excluded the three nested Benny skills. Only the package-discovery acceptance record is now pass/direct. The fresh installed bro invocation completed as a narrow smoke check, but its supplied user sentence did not meet the registered plain-restate case's exact seeded preceding assistant-turn contract. That acceptance case remains blocked and unrun. The durable portable transcript and independent installation review are in docs/testing/codex.md; the exact discovery JSON receipt is in the existing reserved docs/parity/evidence/codex/authorization-capability-check.md path.
+# Current 0.1.4 discovery
 
-Current validated counts are Codex 1 pass, 104 blocked and 0 reduced passes, and ChatGPT 0 passes, 105 blocked and 0 reduced passes. Exactly 209 records remain blocked; none is stale. Full parity and broad workflow acceptance remain unproven. ChatGPT ordinary Chat and Work discovery/invocation and desktop-window loading remain unobserved because CUA refused app access. This is an actual tool limitation, not missing user approval. Shared personal installation does not prove ChatGPT runtime loading.
+Exact candidate freeze `5f1c072e594bb1271139a58ed739878c3d89484c` has fresh discovery-only proof in [discovery-014.json](../releases/discovery-014.json). Both hosts expose all51 canonical roots with the three Benny helpers excluded. Version0.1.4 historical workflow qualification remains absent; reruns stay paused. Earlier results below retain their original version and SHA.
 
-Release remains false. The missing ChatGPT discovery/invocation blocker remains, and the frozen source ledger's blocked verification for the upstream manifest metadata row no longer matches its now-passing sole discovery record. That source-ledger consistency blocker does not indicate an installation failure. The report unit preserves the frozen inventory and validator instead of changing operative bytes to remove it. Independent controller review of the complete report integration remains pending.
+# Reviewed workflow results
 
-Diagnostics retain the initial unsupported install-help query, proxy initialize timeout, successful fresh stdio fallback, ignored pre-existing mcpServers key, existing local telemetry export timeouts, chronicle warning and automatic Notion OAuth refresh failures. The model executed only the installed skill read, but host background authentication attempted external contact. The root changed no credentials.
+Version 0.1.3, operative freeze 51f209daf83cd97d64f89881d66533bb59dc57db. All 104 workflow cases have retained independent reviews. Coverage does not mean full success.
 
-Prior source evidence remains scoped to its runs: 209 maintenance tests in 169.765 seconds and historical unchanged helper evidence of 92 tests with 346 assertions. This report-only update does not repeat the full source suite or create a new operative freeze. The same 217 reserved report paths, installed copies and historical report bytes remain preserved.
+```json
+{
+  "host": "chatgpt",
+  "sourceFreeze": "51f209daf83cd97d64f89881d66533bb59dc57db",
+  "counts": {
+    "pass": 21,
+    "reduced-pass": 56,
+    "blocked": 27,
+    "fail": 0,
+    "attempts": 110
+  }
+}
+```
 
----
-
-# Resumed receipt correction, independent review pending
-
-The renewed human instruction authorized this narrow local R1/R2 follow-up. The controller overrode the earlier final-wave cap for this correction and its independent review. Every external action gate remains closed. The operative source freeze is `5d05ab2458f4cd73c44b24265a3a1920b98b8cf4`, following `48254cbb6efa2a3b489b15cbaa1c78da19316599`. Independent controller review is pending; no merge or release approval is claimed.
-
-R1 now treats only partition results and the selected race winner as integrated outputs. A stopped, terminal-inspected and quarantined losing participant can pass a first-pass race. Cancelled selected outputs, missing quarantine and incomplete rank-all races still fail. R2 requires judge.rubricProvided to be exactly true, while candidates remain false. Existing independence, phase order, revision, digest, inspection, failure-exercise and permission checks remain intact.
-
-The new behavioral tests reproduced the defects before correction. The focused evidence/release suite passed 60 tests in 36.122 seconds. The full offline maintenance suite passed 209 tests in 169.765 seconds. All 35 helper/support paths match immutable F4 bytes and modes exactly. The saved F4 proof of 92 helper tests, 346 assertions, bootstrap and strict TypeScript is reused only for that unchanged helper source; it is a historical run, not a fresh execution. Its historical export directory is now absent.
-
-All 210 actual-host records remain blocked, unavailable and without successful operations. Only their packageCommit identity changed. Each host still has 105 blocked cases, zero passes, zero reduced passes and no actual package discovery. The release remains false with the two discovery blockers. No host loading, installation, dependency resolution, network, live forge, publication, installed rollback or external action occurred. Fresh actual committed-HEAD identity and rollback-provenance checks follow the report commits and are saved in the retained review workspace.
-
-The same 217 reserved report paths and separate marker exception remain. All canonical identities, source metadata, earlier reports, rulings, failed checks and incidents are preserved below. Current controller review remains pending.
-
----
-
-## Current F4 accounting
-
-The final local source freeze is `d4c05c3e619a085c06d391f45299fe81d99cd7ce`. All 105 cases for this host remain blocked and unattempted, with unavailable execution, no successful operations, unknown models and no installed-copy discovery. The relink changes package identity only; original dates, observations, permissions, limits and stable paths remain intact. F1, F2 and F3 remain history. The root scoped review of the entire final fix range is pending.
-
-## Earlier evidence and procedure record
-
-# Personal ChatGPT behavioral evidence
-
-All 105 required personal ChatGPT behavioral cases are blocked and unattempted as of 2026-10-08 in Asia/Amman. Records identify package version 0.1.0 at F3 commit `e808be2d2b03277fdb1422dd729936e6b775126d`. No documented supported local plugin loading route is established for this personal context. No actual personal ChatGPT session or installed package copy was accessed. Separate human authorization for loading, installation, enabling, settings changes or fresh host setup is absent.
-
-The [authorization and support check](../parity/evidence/chatgpt/authorization-support-check.md) separates the setup guide's documented support findings from personal-host probing, which was not attempted. Local controller tools do not establish ChatGPT capabilities. No runtime denial or case model output was observed.
-
-## Coverage and limits
-
-The [registry](../parity/case-registry.json) has 108 entries. Each of the 105 required ChatGPT behavioral entries has a record at `docs/parity/evidence/chatgpt/<caseId>.json` under the [evidence schema](../parity/evidence.schema.json). Every record preserves its registered prompt and source scope, with status blocked, execution unavailable, no exposed personal-host tools and no successful operations. Requested and actual models are unknown. Personal-host writes and external permissions are unknown.
-
-The three maintenance-only entries, pstack-plan-format, upstream-update and upstream-update-walkthrough, are structural-only and have no behavioral host records. Local validation establishes accurate accounting only.
-
-Full capability and reduced capability are NOT OBSERVED. Runtime cases are NOT RUN. Ordinary conversation, supplied-source sequential lenses, worker-enabled mode and an execution environment each need actual observations. The fresh-host README walkthrough was not run. Pure reasoning cases also lack actual outputs. Arena competition and delayed cross-review, Swarm partitions/races, Poteto coordination, cancellation, isolated artifacts and missing model choices remain unattempted. History privacy, digest fallback, reflect approval, automate-me draft preservation, missing webhook setup and unauthorized connector actions were not exercised.
-
-## Resume and validate
-
-Use the [setup guide](../setup/chatgpt.md) only when a supported personal route is exposed and its concrete setup effects receive separate authorization. A fresh enabled session must supply the actual installed-copy identity, version, frozen SHA, exact 51-root discovery and three canonical nested Benny exclusions. No receipt exists today. Source file reads and Codex results cannot supply it.
-
-Run each registered case in the actual available mode, retaining real outputs and artifacts. Complete native direct tasks may pass with reviewed input, response and outcome artifacts. Label an omitted requirement or sequential substitution for required independent work reduced capability. Arena and Swarm passes require their structured method receipts. Record missing or denied operations precisely. Do not treat a documented capability as a callable binding.
-
-Validate records through Bun with --no-install and Python -B against the exact tested commit. Inventory, registry and catalog statuses are unchanged in this unit. Both host statuses were integrated separately before F2. The controller explicitly relinked these existing blocked records to the reviewed F3 freeze and revalidated their accounting. Historical isolated helper checks remain development-only evidence.
-
-## Second freeze linkage
-
-The controller explicitly relinked these existing blocked records to second freeze F2 `1659eb6f87c2a87a308bb0d5546b937809e312de`. The original F1 `18718aa5ee8cfe63a86b2688d9d277a12925e92e` records remain in Git history. This changes the package identity for blocked accounting only. There are no passes to transfer. No fresh host observation, discovery receipt or behavioral execution was produced; all cases remain blocked and unattempted. The original observation date, blocking reasons, proof limits and empty successfulOperations arrays remain unchanged.
-
-## Third freeze linkage
-
-The controller relinked these existing blocked records to third freeze F3 `e808be2d2b03277fdb1422dd729936e6b775126d` after two reviewed dependency fixes: the README destination hash now matches the frozen README, and the dependency test requires the actual blocked registry statuses. F1 `18718aa5ee8cfe63a86b2688d9d277a12925e92e` and F2 `1659eb6f87c2a87a308bb0d5546b937809e312de` remain in Git history. This changes candidate identity for blocked accounting only. No passes were transferred, and no fresh host observation, discovery receipt or behavioral execution occurred. Original dates, observations, blocking reasons, proof limits and empty successfulOperations arrays remain unchanged.
+| Case | Latest result | Attempts |
+|---|---|---|
+| [absent-workers](../releases/host-evaluation/chatgpt/absent-workers.md) | reduced-pass | 1 |
+| [accessible-trace](../releases/host-evaluation/chatgpt/accessible-trace.md) | reduced-pass | 1 |
+| [adversarial-review](../releases/host-evaluation/chatgpt/adversarial-review.md) | pass | 1 |
+| [alternatives](../releases/host-evaluation/chatgpt/alternatives.md) | pass | 1 |
+| [approval-before-edit](../releases/host-evaluation/chatgpt/approval-before-edit.md) | blocked | 1 |
+| [arena-walkthrough](../releases/host-evaluation/chatgpt/arena-walkthrough.md) | reduced-pass | 1 |
+| [authorized-program](../releases/host-evaluation/chatgpt/authorized-program.md) | blocked | 1 |
+| [benny-duplicate-report](../releases/host-evaluation/chatgpt/benny-duplicate-report.md) | reduced-pass | 1 |
+| [benny-existing-fix-ownership](../releases/host-evaluation/chatgpt/benny-existing-fix-ownership.md) | reduced-pass | 1 |
+| [benny-existing-pr](../releases/host-evaluation/chatgpt/benny-existing-pr.md) | blocked | 1 |
+| [benny-missing-adapter](../releases/host-evaluation/chatgpt/benny-missing-adapter.md) | reduced-pass | 1 |
+| [benny-missing-coordinates](../releases/host-evaluation/chatgpt/benny-missing-coordinates.md) | reduced-pass | 1 |
+| [benny-source-thread-compensation](../releases/host-evaluation/chatgpt/benny-source-thread-compensation.md) | blocked | 1 |
+| [benny-unsupported-trigger](../releases/host-evaluation/chatgpt/benny-unsupported-trigger.md) | reduced-pass | 1 |
+| [benny-untrusted-marker](../releases/host-evaluation/chatgpt/benny-untrusted-marker.md) | blocked | 1 |
+| [boundary-design](../releases/host-evaluation/chatgpt/boundary-design.md) | reduced-pass | 2 |
+| [bounded-improvement](../releases/host-evaluation/chatgpt/bounded-improvement.md) | reduced-pass | 2 |
+| [bounded-poll](../releases/host-evaluation/chatgpt/bounded-poll.md) | blocked | 1 |
+| [caller-migration](../releases/host-evaluation/chatgpt/caller-migration.md) | pass | 1 |
+| [cancelled-worker](../releases/host-evaluation/chatgpt/cancelled-worker.md) | pass | 1 |
+| [candidate-cross-review](../releases/host-evaluation/chatgpt/candidate-cross-review.md) | reduced-pass | 1 |
+| [chatgpt-setup-from-readme](../releases/host-evaluation/chatgpt/chatgpt-setup-from-readme.md) | blocked | 1 |
+| [codex-setup-from-readme](../releases/host-evaluation/chatgpt/codex-setup-from-readme.md) | blocked | 1 |
+| [comparable-revisions](../releases/host-evaluation/chatgpt/comparable-revisions.md) | blocked | 1 |
+| [contiguous-verified-stack](../releases/host-evaluation/chatgpt/contiguous-verified-stack.md) | reduced-pass | 1 |
+| [dead-path](../releases/host-evaluation/chatgpt/dead-path.md) | pass | 1 |
+| [decision-trail](../releases/host-evaluation/chatgpt/decision-trail.md) | reduced-pass | 1 |
+| [denied-writes](../releases/host-evaluation/chatgpt/denied-writes.md) | reduced-pass | 1 |
+| [dense-doc](../releases/host-evaluation/chatgpt/dense-doc.md) | pass | 1 |
+| [dependent-caller](../releases/host-evaluation/chatgpt/dependent-caller.md) | reduced-pass | 1 |
+| [discriminating-eval](../releases/host-evaluation/chatgpt/discriminating-eval.md) | reduced-pass | 2 |
+| [draft-only-authorized](../releases/host-evaluation/chatgpt/draft-only-authorized.md) | reduced-pass | 2 |
+| [empty-function](../releases/host-evaluation/chatgpt/empty-function.md) | pass | 1 |
+| [existing-personal-mode](../releases/host-evaluation/chatgpt/existing-personal-mode.md) | blocked | 1 |
+| [false-success](../releases/host-evaluation/chatgpt/false-success.md) | reduced-pass | 1 |
+| [fresh-worker-mode](../releases/host-evaluation/chatgpt/fresh-worker-mode.md) | blocked | 1 |
+| [grounded-explanation](../releases/host-evaluation/chatgpt/grounded-explanation.md) | reduced-pass | 1 |
+| [guides-github-absent](../releases/host-evaluation/chatgpt/guides-github-absent.md) | reduced-pass | 1 |
+| [guides-local-codex](../releases/host-evaluation/chatgpt/guides-local-codex.md) | reduced-pass | 1 |
+| [guides-optional-setup-skipped](../releases/host-evaluation/chatgpt/guides-optional-setup-skipped.md) | pass | 1 |
+| [guides-ordinary-chatgpt](../releases/host-evaluation/chatgpt/guides-ordinary-chatgpt.md) | reduced-pass | 1 |
+| [guides-worker-chatgpt](../releases/host-evaluation/chatgpt/guides-worker-chatgpt.md) | blocked | 1 |
+| [history-evidence](../releases/host-evaluation/chatgpt/history-evidence.md) | reduced-pass | 1 |
+| [inherited-identical-models](../releases/host-evaluation/chatgpt/inherited-identical-models.md) | reduced-pass | 1 |
+| [interrupted-action](../releases/host-evaluation/chatgpt/interrupted-action.md) | reduced-pass | 1 |
+| [interrupted-external-write](../releases/host-evaluation/chatgpt/interrupted-external-write.md) | reduced-pass | 1 |
+| [invalid-input](../releases/host-evaluation/chatgpt/invalid-input.md) | reduced-pass | 1 |
+| [invalid-state](../releases/host-evaluation/chatgpt/invalid-state.md) | reduced-pass | 1 |
+| [large-corpus](../releases/host-evaluation/chatgpt/large-corpus.md) | blocked | 1 |
+| [legal-header](../releases/host-evaluation/chatgpt/legal-header.md) | reduced-pass | 1 |
+| [measurement-method](../releases/host-evaluation/chatgpt/measurement-method.md) | reduced-pass | 1 |
+| [migration-end-state](../releases/host-evaluation/chatgpt/migration-end-state.md) | blocked | 1 |
+| [migration-units](../releases/host-evaluation/chatgpt/migration-units.md) | reduced-pass | 1 |
+| [misleading-speedup](../releases/host-evaluation/chatgpt/misleading-speedup.md) | pass | 1 |
+| [missing-model-enumeration](../releases/host-evaluation/chatgpt/missing-model-enumeration.md) | pass | 1 |
+| [missing-webhook](../releases/host-evaluation/chatgpt/missing-webhook.md) | blocked | 1 |
+| [new-requirement](../releases/host-evaluation/chatgpt/new-requirement.md) | pass | 2 |
+| [no-persistent-tool](../releases/host-evaluation/chatgpt/no-persistent-tool.md) | reduced-pass | 1 |
+| [owned-safe-cleanup](../releases/host-evaluation/chatgpt/owned-safe-cleanup.md) | reduced-pass | 2 |
+| [package-support-contracts](../releases/host-evaluation/chatgpt/package-support-contracts.md) | reduced-pass | 1 |
+| [partition-and-race](../releases/host-evaluation/chatgpt/partition-and-race.md) | reduced-pass | 1 |
+| [plain-restate](../releases/host-evaluation/chatgpt/plain-restate.md) | reduced-pass | 1 |
+| [poteto-walkthrough](../releases/host-evaluation/chatgpt/poteto-walkthrough.md) | reduced-pass | 1 |
+| [preserved-behavior](../releases/host-evaluation/chatgpt/preserved-behavior.md) | reduced-pass | 1 |
+| [prose-rewrite](../releases/host-evaluation/chatgpt/prose-rewrite.md) | pass | 1 |
+| [read-only-answer](../releases/host-evaluation/chatgpt/read-only-answer.md) | reduced-pass | 1 |
+| [real-app-contract](../releases/host-evaluation/chatgpt/real-app-contract.md) | blocked | 1 |
+| [real-render](../releases/host-evaluation/chatgpt/real-render.md) | blocked | 1 |
+| [red-green](../releases/host-evaluation/chatgpt/red-green.md) | pass | 1 |
+| [repeatable-change](../releases/host-evaluation/chatgpt/repeatable-change.md) | pass | 1 |
+| [repeated-failure](../releases/host-evaluation/chatgpt/repeated-failure.md) | blocked | 1 |
+| [repeated-rule](../releases/host-evaluation/chatgpt/repeated-rule.md) | pass | 1 |
+| [replay](../releases/host-evaluation/chatgpt/replay.md) | blocked | 1 |
+| [reproduce-before-fix](../releases/host-evaluation/chatgpt/reproduce-before-fix.md) | blocked | 1 |
+| [resume-revision](../releases/host-evaluation/chatgpt/resume-revision.md) | reduced-pass | 1 |
+| [reversible-step](../releases/host-evaluation/chatgpt/reversible-step.md) | pass | 1 |
+| [route-recipe](../releases/host-evaluation/chatgpt/route-recipe.md) | pass | 1 |
+| [scoped-history](../releases/host-evaluation/chatgpt/scoped-history.md) | reduced-pass | 1 |
+| [shape-first](../releases/host-evaluation/chatgpt/shape-first.md) | reduced-pass | 1 |
+| [shared-path-conflict](../releases/host-evaluation/chatgpt/shared-path-conflict.md) | reduced-pass | 1 |
+| [smaller-solution](../releases/host-evaluation/chatgpt/smaller-solution.md) | blocked | 1 |
+| [stack-resume](../releases/host-evaluation/chatgpt/stack-resume.md) | blocked | 1 |
+| [stale-feature-map](../releases/host-evaluation/chatgpt/stale-feature-map.md) | blocked | 1 |
+| [state-shape](../releases/host-evaluation/chatgpt/state-shape.md) | pass | 1 |
+| [supported-authoring](../releases/host-evaluation/chatgpt/supported-authoring.md) | reduced-pass | 1 |
+| [swarm-walkthrough](../releases/host-evaluation/chatgpt/swarm-walkthrough.md) | reduced-pass | 1 |
+| [symptom-repro](../releases/host-evaluation/chatgpt/symptom-repro.md) | blocked | 1 |
+| [throwaway-probe](../releases/host-evaluation/chatgpt/throwaway-probe.md) | reduced-pass | 1 |
+| [trace-load](../releases/host-evaluation/chatgpt/trace-load.md) | pass | 1 |
+| [trace-path](../releases/host-evaluation/chatgpt/trace-path.md) | reduced-pass | 1 |
+| [trace-provenance](../releases/host-evaluation/chatgpt/trace-provenance.md) | blocked | 1 |
+| [two-writers](../releases/host-evaluation/chatgpt/two-writers.md) | pass | 1 |
+| [typed-boundary](../releases/host-evaluation/chatgpt/typed-boundary.md) | reduced-pass | 1 |
+| [unavailable-persistence](../releases/host-evaluation/chatgpt/unavailable-persistence.md) | reduced-pass | 1 |
+| [uncertain-result](../releases/host-evaluation/chatgpt/uncertain-result.md) | reduced-pass | 1 |
+| [unit-state](../releases/host-evaluation/chatgpt/unit-state.md) | blocked | 1 |
+| [units-and-proof](../releases/host-evaluation/chatgpt/units-and-proof.md) | reduced-pass | 1 |
+| [unknown-actual-model](../releases/host-evaluation/chatgpt/unknown-actual-model.md) | reduced-pass | 1 |
+| [unknown-model](../releases/host-evaluation/chatgpt/unknown-model.md) | reduced-pass | 1 |
+| [unsupported-selected-model](../releases/host-evaluation/chatgpt/unsupported-selected-model.md) | blocked | 1 |
+| [user-correction](../releases/host-evaluation/chatgpt/user-correction.md) | reduced-pass | 1 |
+| [user-tradeoff](../releases/host-evaluation/chatgpt/user-tradeoff.md) | pass | 1 |
+| [verifiable-feature](../releases/host-evaluation/chatgpt/verifiable-feature.md) | reduced-pass | 1 |
+| [dependency-readiness](../releases/host-evaluation/chatgpt/dependency-readiness.md) | reduced-pass | 1 |

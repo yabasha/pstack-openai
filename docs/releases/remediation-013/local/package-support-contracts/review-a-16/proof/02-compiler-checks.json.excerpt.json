@@ -1,0 +1,53 @@
+{
+  "kind": "selected-fixture-result-fields",
+  "caseId": "package-support-contracts",
+  "attemptId": "review-a-16",
+  "originalLocator": "work/local_compiler_cases/projects/package-support/deliverables/compiler-checks.json",
+  "sourceSha256": "7215bdd92a0d9d3c10a8f6efd39d17144f18172dbd48f129c8480754e64324d8",
+  "sourceBytes": 1330,
+  "transformation": "Named JSON fields selected by exact JSON Pointer. Task-owned absolute paths replaced with declared placeholders. Other fields omitted. These are result-artifact values, not synthesized tool execution evidence. Public selection is limited to eight short inspected fields. Longer output and unselected fields remain private.",
+  "fields": [
+    {
+      "pointer": "/0/command",
+      "value": [
+        "bun",
+        "--no-install",
+        "-e",
+        "import {ensureDependenciesInstalled} from \"./bootstrap.ts\"; ensureDependenciesInstalled()"
+      ]
+    },
+    {
+      "pointer": "/0/exitCode",
+      "value": 0
+    },
+    {
+      "pointer": "/0/stdout",
+      "value": ""
+    },
+    {
+      "pointer": "/0/stderr",
+      "value": ""
+    },
+    {
+      "pointer": "/1/command",
+      "value": [
+        "bun",
+        "--no-install",
+        "node_modules/typescript/bin/tsc",
+        "--version"
+      ]
+    },
+    {
+      "pointer": "/1/exitCode",
+      "value": 0
+    },
+    {
+      "pointer": "/1/stdout",
+      "value": "Version 7.0.2\n"
+    },
+    {
+      "pointer": "/1/stderr",
+      "value": ""
+    }
+  ]
+}

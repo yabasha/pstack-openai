@@ -1,0 +1,76 @@
+{
+  "kind": "historical-proof-selection",
+  "source": {
+    "path": "<private-run>/cross-host-extra/local/projects/unknown-actual-model/outputs/spawn-observation.json",
+    "sha256": "80492cf1077b89d744355619aa261440ba34c8e6d087402b094cbbdb021fdb95",
+    "bytes": 918
+  },
+  "selection": [
+    {
+      "locator": {
+        "jsonPointer": "/assignmentId"
+      },
+      "value": "unknown-model-role-01"
+    },
+    {
+      "locator": {
+        "jsonPointer": "/tool"
+      },
+      "value": "collaboration.spawn_agent"
+    },
+    {
+      "locator": {
+        "jsonPointer": "/fullRequestLocator"
+      },
+      "value": "This run, collaboration.spawn_agent invocation with task_name unknown_model_role. The invocation contains the complete Poteto and Comment Sicko roles and assignment instructions."
+    },
+    {
+      "locator": {
+        "jsonPointer": "/rawResult"
+      },
+      "value": {
+        "task_name": "/root/unknown_model_role"
+      }
+    },
+    {
+      "locator": {
+        "jsonPointer": "/actualWorkerId"
+      },
+      "value": "/root/unknown_model_role"
+    },
+    {
+      "locator": {
+        "jsonPointer": "/observedModel"
+      },
+      "value": "unknown"
+    },
+    {
+      "locator": {
+        "jsonPointer": "/observedEffort"
+      },
+      "value": "unknown"
+    },
+    {
+      "locator": {
+        "jsonPointer": "/modelEnumeration"
+      },
+      "value": "not exposed as an operation; current tool documentation permits explicit model choices, but user requests inherit-parent"
+    },
+    {
+      "locator": {
+        "jsonPointer": "/literalNamedModelRequest"
+      },
+      "value": "not executed because user requests inherit-parent"
+    },
+    {
+      "locator": {
+        "jsonPointer": "/order"
+      },
+      "value": 2
+    }
+  ],
+  "limits": [
+    "Selections preserve the exact source value at each locator. Truncated strings carry explicit code-unit bounds.",
+    "A producer-captured return is not a recovered native parent envelope. Missing call IDs, original capture defects and unknown model observations remain missing."
+  ]
+}

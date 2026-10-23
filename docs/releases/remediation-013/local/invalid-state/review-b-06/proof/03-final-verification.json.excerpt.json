@@ -1,0 +1,19 @@
+{
+  "kind": "selected-fixture-result-fields",
+  "caseId": "invalid-state",
+  "attemptId": "review-b-06",
+  "originalLocator": "cross-host-extra/local/projects/invalid-state/outputs/final-verification.json",
+  "sourceSha256": "800f41dffa4f73162a8530f006abd6737e8ddb4be44fce2455b849c6f5e6169d",
+  "sourceBytes": 784,
+  "transformation": "Named JSON fields selected by exact JSON Pointer. Task-owned absolute paths replaced with declared placeholders. Other fields omitted. These are result-artifact values, not synthesized tool execution evidence. Public selection is limited to eight short inspected fields. Longer output and unselected fields remain private.",
+  "fields": [
+    {
+      "pointer": "/caseId",
+      "value": "invalid-state"
+    },
+    {
+      "pointer": "/limits",
+      "value": "Actual artifact checks only. No host grade; missing ORIGINAL objects and chronology/capture limitations remain."
+    }
+  ]
+}

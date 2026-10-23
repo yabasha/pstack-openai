@@ -1,0 +1,154 @@
+{
+  "sourceSha256": "ed45fba3b8604d7eaaa800999d74323c43010d443b73a93852c369e86b561e00",
+  "transformation": "Task-owned paths replaced with declared placeholders; receipt otherwise preserved",
+  "receipt": {
+    "observedAt": "2026-10-17T15:34:21.920Z",
+    "scope": "Focused six-file source overlay validation only; zero historical workflow grades or package/freeze qualification",
+    "candidateCommitSupplied": "cf96c2dcbaea2bb8c07b649a47b5c66c51f63c13",
+    "candidateBaseSupplied": "bf91f1c00991fb2eda7541c45b6f0be08ac89be3",
+    "fullCandidateGitIdentityVerified": false,
+    "snapshotMain": "4138e161c27cafffd2baaab6bf4ca53e86a57433",
+    "snapshot": "/mnt/data/pstack-remediation-20261017/runtime/package-main-4138e16",
+    "copy": "/mnt/data/pstack-remediation-20261017/candidate-rules-cf96/package-main-4138-copy",
+    "files": [
+      {
+        "path": "references/orchestration-contract.md",
+        "candidateSha256": "a6c30f1f81da2f059e56b18a286298338a98626e422d290a935a6a81e1aed32a",
+        "snapshotBeforeSha256": "5dd740ad66d992df252754d189d0dc207900023372392a0db4309b85eb5e4ec5"
+      },
+      {
+        "path": "skills/swarm/SKILL.md",
+        "candidateSha256": "1cbc23295c26a6beab94fc9d49bce22f2b87180127e3926bf80993bdf0d8d71e",
+        "snapshotBeforeSha256": "d58ab96ae605d49ff034e96416807ba11be9997368e18c1700c00e4bb0fd74f8"
+      },
+      {
+        "path": "skills/poteto-mode/SKILL.md",
+        "candidateSha256": "22cccae02d199ab02268e6c8e1a4aebd8e6997f8df3ed8022dbda941286c3aea",
+        "snapshotBeforeSha256": "cb03eedb91cea96b570af30a7af317c6aae6a47a321cff2e82af656141ab0f14"
+      },
+      {
+        "path": "tools/validate_evidence.py",
+        "candidateSha256": "39c557259ac4b2b66fa0c1014d2beda1d3d575d7998c418552eea3ec08cbafba",
+        "snapshotBeforeSha256": "345868cc0336c899094d8f5872d48d2f68b9623fc707e544b6ad6df95311f7a6"
+      },
+      {
+        "path": "tests/evidence_fixtures.py",
+        "candidateSha256": "a1bf6a4173bd52bd50aadc16866e7a322901a2a17b3ef87b86ae7838811e6b48",
+        "snapshotBeforeSha256": "c56546204bd145a5e09d16c9253c1466ce17fc3abddc978ebfa08c2bd2d68982"
+      },
+      {
+        "path": "tests/test_validate_evidence.py",
+        "candidateSha256": "7c298bc86881b2e62c583df726d575cd010646cbccc7ed88fce9c3b2f3422039",
+        "snapshotBeforeSha256": "8edb83a234e1e456eb33bbdbe193946a3e6870c3a10942519024b0beb592e06c"
+      }
+    ],
+    "command": [
+      "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+      "-m",
+      "unittest",
+      "tests.test_validate_evidence"
+    ],
+    "executionWrapper": "/mnt/data/pstack-013-evaluation/runtime/bun-linux-x64/bun --no-install",
+    "dependencyInstalls": false,
+    "commandRequest": {
+      "args": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+        "-m",
+        "unittest",
+        "tests.test_validate_evidence"
+      ],
+      "cwd": "/mnt/data/pstack-remediation-20261017/candidate-rules-cf96/package-main-4138-copy",
+      "envOverrides": {
+        "PYTHONDONTWRITEBYTECODE": "1",
+        "PYTHONPATH": "/mnt/data/pstack-remediation-20261017/candidate-rules-cf96/package-main-4138-copy",
+        "TMPDIR": "/mnt/data/pstack-remediation-20261017/candidate-rules-cf96/tmp"
+      },
+      "startedAt": "2026-10-17T15:34:22.748Z"
+    },
+    "commandResult": {
+      "exitCode": 0,
+      "stdout": "",
+      "stderr": "..................................\n----------------------------------------------------------------------\nRan 34 tests in 1.771s\n\nOK\n",
+      "finishedAt": "2026-10-17T15:34:24.621Z"
+    },
+    "afterHashes": [
+      {
+        "path": "references/orchestration-contract.md",
+        "candidateExpected": "a6c30f1f81da2f059e56b18a286298338a98626e422d290a935a6a81e1aed32a",
+        "copyAfterSha256": "a6c30f1f81da2f059e56b18a286298338a98626e422d290a935a6a81e1aed32a",
+        "candidateMatches": true,
+        "snapshotAfterSha256": "5dd740ad66d992df252754d189d0dc207900023372392a0db4309b85eb5e4ec5",
+        "snapshotUnchanged": true
+      },
+      {
+        "path": "skills/swarm/SKILL.md",
+        "candidateExpected": "1cbc23295c26a6beab94fc9d49bce22f2b87180127e3926bf80993bdf0d8d71e",
+        "copyAfterSha256": "1cbc23295c26a6beab94fc9d49bce22f2b87180127e3926bf80993bdf0d8d71e",
+        "candidateMatches": true,
+        "snapshotAfterSha256": "d58ab96ae605d49ff034e96416807ba11be9997368e18c1700c00e4bb0fd74f8",
+        "snapshotUnchanged": true
+      },
+      {
+        "path": "skills/poteto-mode/SKILL.md",
+        "candidateExpected": "22cccae02d199ab02268e6c8e1a4aebd8e6997f8df3ed8022dbda941286c3aea",
+        "copyAfterSha256": "22cccae02d199ab02268e6c8e1a4aebd8e6997f8df3ed8022dbda941286c3aea",
+        "candidateMatches": true,
+        "snapshotAfterSha256": "cb03eedb91cea96b570af30a7af317c6aae6a47a321cff2e82af656141ab0f14",
+        "snapshotUnchanged": true
+      },
+      {
+        "path": "tools/validate_evidence.py",
+        "candidateExpected": "39c557259ac4b2b66fa0c1014d2beda1d3d575d7998c418552eea3ec08cbafba",
+        "copyAfterSha256": "39c557259ac4b2b66fa0c1014d2beda1d3d575d7998c418552eea3ec08cbafba",
+        "candidateMatches": true,
+        "snapshotAfterSha256": "345868cc0336c899094d8f5872d48d2f68b9623fc707e544b6ad6df95311f7a6",
+        "snapshotUnchanged": true
+      },
+      {
+        "path": "tests/evidence_fixtures.py",
+        "candidateExpected": "a1bf6a4173bd52bd50aadc16866e7a322901a2a17b3ef87b86ae7838811e6b48",
+        "copyAfterSha256": "a1bf6a4173bd52bd50aadc16866e7a322901a2a17b3ef87b86ae7838811e6b48",
+        "candidateMatches": true,
+        "snapshotAfterSha256": "c56546204bd145a5e09d16c9253c1466ce17fc3abddc978ebfa08c2bd2d68982",
+        "snapshotUnchanged": true
+      },
+      {
+        "path": "tests/test_validate_evidence.py",
+        "candidateExpected": "7c298bc86881b2e62c583df726d575cd010646cbccc7ed88fce9c3b2f3422039",
+        "copyAfterSha256": "7c298bc86881b2e62c583df726d575cd010646cbccc7ed88fce9c3b2f3422039",
+        "candidateMatches": true,
+        "snapshotAfterSha256": "8edb83a234e1e456eb33bbdbe193946a3e6870c3a10942519024b0beb592e06c",
+        "snapshotUnchanged": true
+      }
+    ],
+    "dependencyManifestLock": [
+      {
+        "path": "skills/poteto-mode/scripts/package.json",
+        "snapshotSha256": "a49b034b183dcb5735ed948a91eaf76b7f24d6d9ba313704721ad1be7a5f434d",
+        "copySha256": "a49b034b183dcb5735ed948a91eaf76b7f24d6d9ba313704721ad1be7a5f434d",
+        "equal": true
+      },
+      {
+        "path": "skills/poteto-mode/scripts/bun.lock",
+        "snapshotSha256": "530b7fb6cba7f0b2a6cfc862dbcfe9020c333d45e7e0f448133006583ffdc1f2",
+        "copySha256": "530b7fb6cba7f0b2a6cfc862dbcfe9020c333d45e7e0f448133006583ffdc1f2",
+        "equal": true
+      }
+    ],
+    "expectedTestCountSupplied": 34,
+    "actualTestSummary": "Ran 34 tests in 1.771s",
+    "noHistoricalGrades": true,
+    "noNewFreeze": true,
+    "limitations": [
+      "Candidate commit/base identifiers supplied, not full candidate Git metadata independently verified.",
+      "This is a six-file overlay onto approved4138, not a full current candidate package qualification.",
+      "Full original snapshot tree was not rehashed; six affected source files and dependency manifest/lock checked unchanged.",
+      "No workflow or release outcome transferred."
+    ]
+  },
+  "rootReadback": {
+    "at": "2026-10-17T16:01:01.177Z",
+    "sixCurrentSourceDigestsMatched": true,
+    "historicalWorkflowGradesAdded": 0
+  }
+}

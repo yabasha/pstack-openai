@@ -75,6 +75,49 @@ if __name__ == '__main__':
     unittest.main()
 
 class WikiAnchorTests(unittest.TestCase):
+    def test_fenced_capture_literals_are_not_operative_links(self):
+        from tools.export_wiki import validate_links
+        captures = [
+            '```json\n{"command":"printf \'```\'; [captured](/outside-root/file.md)"}\n```\n',
+            '````json\n```\n[captured](/outside-root/file.md)\n````\n',
+            '~~~json\n```\n[captured](/outside-root/file.md)\n~~~~\n',
+            '```json\n``` trailing data\n[captured](/outside-root/file.md)\n```\n',
+            '```json\n{"unclosed":"[captured](/outside-root/file.md)"}\n',
+        ]
+        for capture in captures:
+            with self.subTest(capture=capture):
+                self.assertEqual([], validate_links({'Home.md': capture.encode()}))
+                if capture.endswith(('```\n', '````\n', '~~~~\n')):
+                    self.assertTrue(validate_links({'Home.md': (capture + '\n[unsafe](/outside-root/live.md)\n').encode()}))
+
+    def test_export_preserves_captured_fences_and_rejects_unsafe_live_link(self):
+        from types import SimpleNamespace
+        with tempfile.TemporaryDirectory(dir=HERD) as directory:
+            root = Path(directory) / 'source'
+            (root / 'docs/skills').mkdir(parents=True)
+            (root / 'plugin.json').write_text(json.dumps({'version': 'fixture'}))
+            for source in (ROOT / 'docs/skills').glob('*.md'):
+                (root / 'docs/skills' / source.name).write_text('# Fixture\n')
+            (root / 'docs/troubleshooting.md').write_text('# Fixture\n')
+            (root / 'docs/safe.md').write_text('# Safe\n')
+            capture = '````json\n{"command":"printf \'```\'; [captured](/outside-root/file.md)"}\n```\n[captured](/outside-root/second.md)\n````\n'
+            page = root / 'docs/compatibility.md'
+            page.write_text('# Fixture\n' + capture + '[operative](safe.md#safe)\n')
+            output = Path(directory) / 'output'
+            output.mkdir()
+            with patch('tools.export_wiki.subprocess.run', return_value=SimpleNamespace(stdout='a' * 40)):
+                export_wiki(root, output)
+            exported = (output / 'docs--compatibility.md').read_text()
+            self.assertIn(capture, exported)
+            self.assertIn('[operative](docs--safe#safe)', exported)
+            rejected = Path(directory) / 'rejected'
+            rejected.mkdir()
+            page.write_text(page.read_text() + '[unsafe](/outside-root/live.md)\n')
+            with patch('tools.export_wiki.subprocess.run', return_value=SimpleNamespace(stdout='a' * 40)):
+                with self.assertRaisesRegex(ValueError, 'unsafe documentation link'):
+                    export_wiki(root, rejected)
+            self.assertEqual([], list(rejected.iterdir()))
+
     def test_heading_fragments_and_directory_suffix(self):
         from tools.export_wiki import validate_links
         pages = {'Home.md': b'# Home\n[a](topic#same-1) [b](#home)\n', 'topic.md': b'# Same\n## Same\n'}

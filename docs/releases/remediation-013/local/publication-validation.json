@@ -1,0 +1,957 @@
+{
+  "kind": "historical-record-publication-validation",
+  "packageCommit": "51f209daf83cd97d64f89881d66533bb59dc57db",
+  "packageVersion": "0.1.3",
+  "startingMain": "4138e161c27cafffd2baaab6bf4ca53e86a57433",
+  "qualifiesCurrentMain": false,
+  "validator": "Unchanged frozen validate_evidence(record, packageCommit, validationRoot)",
+  "sourceVerification": [
+    {
+      "path": "tools/validate_evidence.py",
+      "frozenSha256": "345868cc0336c899094d8f5872d48d2f68b9623fc707e544b6ad6df95311f7a6",
+      "snapshotSha256": "345868cc0336c899094d8f5872d48d2f68b9623fc707e544b6ad6df95311f7a6",
+      "matches": true
+    },
+    {
+      "path": "tools/validate_package.py",
+      "frozenSha256": "4ba224341810a9ff2b055be10251045893c975ac9cb4db45d5a6a346a1b18803",
+      "snapshotSha256": "4ba224341810a9ff2b055be10251045893c975ac9cb4db45d5a6a346a1b18803",
+      "matches": true
+    },
+    {
+      "path": "docs/parity/evidence.schema.json",
+      "frozenSha256": "73619482ce058e2374daa09c6c828bb3190b45e18546fec2059b3c1034847655",
+      "snapshotSha256": "73619482ce058e2374daa09c6c828bb3190b45e18546fec2059b3c1034847655",
+      "matches": true
+    },
+    {
+      "path": "docs/parity/case-registry.json",
+      "frozenSha256": "5b6314bc2aa30ef161318535fe8cdcf901033570083fbc8e991c7c5e3fc59e29",
+      "snapshotSha256": "5b6314bc2aa30ef161318535fe8cdcf901033570083fbc8e991c7c5e3fc59e29",
+      "matches": true
+    },
+    {
+      "path": "docs/parity/cases/playbooks/opening-a-pr.json",
+      "frozenSha256": "9eb62a51d748882533001cb5843d687c949f658494bcc4efdc12aae8e98b1545",
+      "snapshotSha256": "9eb62a51d748882533001cb5843d687c949f658494bcc4efdc12aae8e98b1545",
+      "matches": true
+    },
+    {
+      "path": "docs/parity/cases/contracts.json",
+      "frozenSha256": "780a524aa106768e1854ae13514867b38db52de42f6a912aa913be01b641bf3a",
+      "snapshotSha256": "780a524aa106768e1854ae13514867b38db52de42f6a912aa913be01b641bf3a",
+      "matches": true
+    },
+    {
+      "path": "docs/parity/cases/benny.json",
+      "frozenSha256": "085dd1d6cc1ce1133c601bc936a65947824855405068bd0161904b8572354953",
+      "snapshotSha256": "085dd1d6cc1ce1133c601bc936a65947824855405068bd0161904b8572354953",
+      "matches": true
+    },
+    {
+      "path": "docs/parity/cases/playbooks/pause-safely.json",
+      "frozenSha256": "1438adf27644c16d7978ae7289c465478d33dcbc66a67c7fe99ee052661d00d3",
+      "snapshotSha256": "1438adf27644c16d7978ae7289c465478d33dcbc66a67c7fe99ee052661d00d3",
+      "matches": true
+    },
+    {
+      "path": "docs/parity/cases/playbooks/worktree-cleanup.json",
+      "frozenSha256": "0b3b98cd5816e729ce30cd3a843181126a85249f6e24504e9e6b7bc80201efc2",
+      "snapshotSha256": "0b3b98cd5816e729ce30cd3a843181126a85249f6e24504e9e6b7bc80201efc2",
+      "matches": true
+    },
+    {
+      "path": "docs/parity/cases/skills/poteto-mode.json",
+      "frozenSha256": "f9c76529a80a2a38e11381904b35011bb38dac6d16b4b3621135fef9d0474c2b",
+      "snapshotSha256": "f9c76529a80a2a38e11381904b35011bb38dac6d16b4b3621135fef9d0474c2b",
+      "matches": true
+    },
+    {
+      "path": "docs/parity/cases/playbooks/multi-phase-plan.json",
+      "frozenSha256": "4e82f249466faba9f59e791c90d0783633a0debf70eef65180dfb51090740898",
+      "snapshotSha256": "4e82f249466faba9f59e791c90d0783633a0debf70eef65180dfb51090740898",
+      "matches": true
+    },
+    {
+      "path": "docs/parity/cases/playbooks/autonomous-run.json",
+      "frozenSha256": "3b85ead8328df9b929bc4964083767d4987f8865828618436bc4d12a5ac51e47",
+      "snapshotSha256": "3b85ead8328df9b929bc4964083767d4987f8865828618436bc4d12a5ac51e47",
+      "matches": true
+    },
+    {
+      "path": "docs/parity/cases/playbooks/orchestrate.json",
+      "frozenSha256": "faa7b0c0e01941bfe55a7d7bb8eca34e7e6780474eaafa8709379d61ee580a8a",
+      "snapshotSha256": "faa7b0c0e01941bfe55a7d7bb8eca34e7e6780474eaafa8709379d61ee580a8a",
+      "matches": true
+    },
+    {
+      "path": "docs/parity/cases/playbooks/babysit.json",
+      "frozenSha256": "b79ef85e36b129ca350244c669ee19b0e71a3fb58fb8fe8397730c83854a857f",
+      "snapshotSha256": "b79ef85e36b129ca350244c669ee19b0e71a3fb58fb8fe8397730c83854a857f",
+      "matches": true
+    },
+    {
+      "path": "docs/parity/cases/playbooks/shipping.json",
+      "frozenSha256": "1b158b868cc802964a1f6d22dbb2dfc097450befe6d8205bda3799ca0bb7ffe6",
+      "snapshotSha256": "1b158b868cc802964a1f6d22dbb2dfc097450befe6d8205bda3799ca0bb7ffe6",
+      "matches": true
+    },
+    {
+      "path": "docs/parity/cases/skills/principle-outcome-oriented-execution.json",
+      "frozenSha256": "a435724b1d5c4ffeeebe8c9b025dbf0a9618df838f1c14d6e068b76a7676b407",
+      "snapshotSha256": "a435724b1d5c4ffeeebe8c9b025dbf0a9618df838f1c14d6e068b76a7676b407",
+      "matches": true
+    },
+    {
+      "path": "docs/parity/cases/skills/principle-boundary-discipline.json",
+      "frozenSha256": "fe2041c21e73e3fed80297c18eea8d02ec1ab6c7d7ed71fb4bf2a4032e71d957",
+      "snapshotSha256": "fe2041c21e73e3fed80297c18eea8d02ec1ab6c7d7ed71fb4bf2a4032e71d957",
+      "matches": true
+    },
+    {
+      "path": "docs/parity/cases/package-support.json",
+      "frozenSha256": "83a8dbddedbff21d0449328c0d88a2c0288d2cf048c48d4c587aa18829b4ac71",
+      "snapshotSha256": "83a8dbddedbff21d0449328c0d88a2c0288d2cf048c48d4c587aa18829b4ac71",
+      "matches": true
+    },
+    {
+      "path": "docs/parity/cases/skills/maintain-verification-skill.json",
+      "frozenSha256": "be2d8f1b669208093d158574328361a9a69595a9c6ee2f871d8e28fdb7e8bd34",
+      "snapshotSha256": "be2d8f1b669208093d158574328361a9a69595a9c6ee2f871d8e28fdb7e8bd34",
+      "matches": true
+    },
+    {
+      "path": "docs/parity/cases/guides.json",
+      "frozenSha256": "417675c0a6b265c2e356d0c5a8633c00aa8f57217c2a3d597a176ada53596bf3",
+      "snapshotSha256": "417675c0a6b265c2e356d0c5a8633c00aa8f57217c2a3d597a176ada53596bf3",
+      "matches": true
+    },
+    {
+      "path": "docs/parity/cases/playbooks/hillclimb.json",
+      "frozenSha256": "9d86ebce706d2efc0a8bbaa8819c1f557abb42391566952e30028c915b456d20",
+      "snapshotSha256": "9d86ebce706d2efc0a8bbaa8819c1f557abb42391566952e30028c915b456d20",
+      "matches": true
+    },
+    {
+      "path": "docs/parity/cases/skills/poteto-help.json",
+      "frozenSha256": "bcee7780aa73ab566bfaac81cfd53bd51b3606427d21e6b0902b403a4ba6a261",
+      "snapshotSha256": "bcee7780aa73ab566bfaac81cfd53bd51b3606427d21e6b0902b403a4ba6a261",
+      "matches": true
+    },
+    {
+      "path": "docs/parity/cases/skills/principle-make-operations-idempotent.json",
+      "frozenSha256": "c6fa2923f5c886055d52aefd0676c91f88f48ea9a871b16cd25f7b86028d6058",
+      "snapshotSha256": "c6fa2923f5c886055d52aefd0676c91f88f48ea9a871b16cd25f7b86028d6058",
+      "matches": true
+    },
+    {
+      "path": "docs/parity/cases/skills/automate-me.json",
+      "frozenSha256": "c2dc57b63bb028fb800c557b32be9cfa0ea8fb35344e3df110450231801c1c5c",
+      "snapshotSha256": "c2dc57b63bb028fb800c557b32be9cfa0ea8fb35344e3df110450231801c1c5c",
+      "matches": true
+    },
+    {
+      "path": "docs/parity/cases/skills/principle-type-system-discipline.json",
+      "frozenSha256": "fd5996e95441e4fb2ed2e546a225513bed60d5f7a2d123431e8c8b5a00d3f6a7",
+      "snapshotSha256": "fd5996e95441e4fb2ed2e546a225513bed60d5f7a2d123431e8c8b5a00d3f6a7",
+      "matches": true
+    },
+    {
+      "path": "docs/parity/cases/skills/reflect.json",
+      "frozenSha256": "6d87d6e1a6c8fd790d26b53be7f38ffb49810ea8933212c8097df9136629ffcd",
+      "snapshotSha256": "6d87d6e1a6c8fd790d26b53be7f38ffb49810ea8933212c8097df9136629ffcd",
+      "matches": true
+    },
+    {
+      "path": "docs/parity/cases/skills/blast-radius.json",
+      "frozenSha256": "1267469c5bf20ae5fe8434a6971eb6ecc1da82f8289ddefa5ecf5fc9960c5bc6",
+      "snapshotSha256": "1267469c5bf20ae5fe8434a6971eb6ecc1da82f8289ddefa5ecf5fc9960c5bc6",
+      "matches": true
+    },
+    {
+      "path": "docs/parity/cases/skills/architect.json",
+      "frozenSha256": "8f6d793a7966352301f8ee2ebbb180680245381dc187950852a7db4644cba21d",
+      "snapshotSha256": "8f6d793a7966352301f8ee2ebbb180680245381dc187950852a7db4644cba21d",
+      "matches": true
+    },
+    {
+      "path": "docs/parity/cases/playbooks/authoring-a-skill.json",
+      "frozenSha256": "3a0d33a73880007ac571daa0bfc7220f628955ab8c04909e805a68e5149a7d1b",
+      "snapshotSha256": "3a0d33a73880007ac571daa0bfc7220f628955ab8c04909e805a68e5149a7d1b",
+      "matches": true
+    },
+    {
+      "path": "docs/parity/cases/skills/create-verification-skill.json",
+      "frozenSha256": "7e67a40f5e65773c4f417d03948d97cc3dee85fbebb33e62e9747e338a0cfa7d",
+      "snapshotSha256": "7e67a40f5e65773c4f417d03948d97cc3dee85fbebb33e62e9747e338a0cfa7d",
+      "matches": true
+    },
+    {
+      "path": "docs/parity/cases/playbooks/bug-fix.json",
+      "frozenSha256": "e630735668c5e34be6a776f2e0dd560b76f75a2e4d1945b2d43de1186c259dc9",
+      "snapshotSha256": "e630735668c5e34be6a776f2e0dd560b76f75a2e4d1945b2d43de1186c259dc9",
+      "matches": true
+    },
+    {
+      "path": "docs/parity/cases/skills/correct.json",
+      "frozenSha256": "c942363f848576815d1f72b63a01e34ac9eb778a8f7de75c00f72a5231c5b395",
+      "snapshotSha256": "c942363f848576815d1f72b63a01e34ac9eb778a8f7de75c00f72a5231c5b395",
+      "matches": true
+    },
+    {
+      "path": "docs/parity/cases/playbooks/refactoring.json",
+      "frozenSha256": "80ff55ab72a4799c65a9b677814930a157139ae6adbfccab563bf9c25dfd5df4",
+      "snapshotSha256": "80ff55ab72a4799c65a9b677814930a157139ae6adbfccab563bf9c25dfd5df4",
+      "matches": true
+    },
+    {
+      "path": "docs/parity/cases/skills/principle-attack-the-premise.json",
+      "frozenSha256": "9bdd947a3b05b9d284e9a1f8acda2576ed412b00a4d898b165ad3c945e81b1ce",
+      "snapshotSha256": "9bdd947a3b05b9d284e9a1f8acda2576ed412b00a4d898b165ad3c945e81b1ce",
+      "matches": true
+    },
+    {
+      "path": "docs/parity/cases/skills/swarm.json",
+      "frozenSha256": "deffcc9748abb0ffde6ae474055a63eb4cf42f5cbb9772e35414fed1cd6a7990",
+      "snapshotSha256": "deffcc9748abb0ffde6ae474055a63eb4cf42f5cbb9772e35414fed1cd6a7990",
+      "matches": true
+    },
+    {
+      "path": "docs/parity/cases/playbooks/trace-forensics.json",
+      "frozenSha256": "522cb1f5d019fc15f94daa8970da10f8f97234ef0aebbc207fce7bf2809e8977",
+      "snapshotSha256": "522cb1f5d019fc15f94daa8970da10f8f97234ef0aebbc207fce7bf2809e8977",
+      "matches": true
+    },
+    {
+      "path": "docs/parity/cases/playbooks/autopilot-full.json",
+      "frozenSha256": "9ef1276ebfcfa30f0f6fef5e3ba6008b503b86d9c31f63b1c153b00ece7e3b1e",
+      "snapshotSha256": "9ef1276ebfcfa30f0f6fef5e3ba6008b503b86d9c31f63b1c153b00ece7e3b1e",
+      "matches": true
+    },
+    {
+      "path": "docs/parity/cases/skills/teach.json",
+      "frozenSha256": "801d683ccecfdadd12e88516d91b32c986996de886c02e466d2a7435b0ab05da",
+      "snapshotSha256": "801d683ccecfdadd12e88516d91b32c986996de886c02e466d2a7435b0ab05da",
+      "matches": true
+    },
+    {
+      "path": "docs/parity/cases/skills/why.json",
+      "frozenSha256": "5866759eb8aa9ce2f55007db74ef462b736c39b97a7a22d201c71b456614c433",
+      "snapshotSha256": "5866759eb8aa9ce2f55007db74ef462b736c39b97a7a22d201c71b456614c433",
+      "matches": true
+    },
+    {
+      "path": "docs/parity/cases/playbooks/runtime-forensics.json",
+      "frozenSha256": "49d19fcc1bc466cc4fde13b60b75a88f806c2981d625e0bbbd62250fa3dd5709",
+      "snapshotSha256": "49d19fcc1bc466cc4fde13b60b75a88f806c2981d625e0bbbd62250fa3dd5709",
+      "matches": true
+    },
+    {
+      "path": "docs/parity/cases/model-roles.json",
+      "frozenSha256": "4b3ef27089159fc5eaa245916c08a2440dd9b6a7983d3b22f7e8998985fd68fd",
+      "snapshotSha256": "4b3ef27089159fc5eaa245916c08a2440dd9b6a7983d3b22f7e8998985fd68fd",
+      "matches": true
+    }
+  ],
+  "promptVerification": [
+    {
+      "caseId": "draft-only-authorized",
+      "path": "docs/releases/remediation-013/local/draft-only-authorized/review-a-01/proof/supplied-input.json",
+      "matchesFrozenPrompt": true
+    },
+    {
+      "caseId": "unavailable-persistence",
+      "path": "docs/releases/remediation-013/local/unavailable-persistence/review-a-02/proof/supplied-input.json",
+      "matchesFrozenPrompt": true
+    },
+    {
+      "caseId": "benny-source-thread-compensation",
+      "path": "docs/releases/remediation-013/local/benny-source-thread-compensation/review-a-03/proof/supplied-input.json",
+      "matchesFrozenPrompt": true
+    },
+    {
+      "caseId": "interrupted-action",
+      "path": "docs/releases/remediation-013/local/interrupted-action/review-a-04/proof/supplied-input.json",
+      "matchesFrozenPrompt": true
+    },
+    {
+      "caseId": "owned-safe-cleanup",
+      "path": "docs/releases/remediation-013/local/owned-safe-cleanup/review-a-05/proof/supplied-input.json",
+      "matchesFrozenPrompt": true
+    },
+    {
+      "caseId": "fresh-worker-mode",
+      "path": "docs/releases/remediation-013/local/fresh-worker-mode/review-a-06/proof/supplied-input.json",
+      "matchesFrozenPrompt": true
+    },
+    {
+      "caseId": "units-and-proof",
+      "path": "docs/releases/remediation-013/local/units-and-proof/review-a-07/proof/supplied-input.json",
+      "matchesFrozenPrompt": true
+    },
+    {
+      "caseId": "no-persistent-tool",
+      "path": "docs/releases/remediation-013/local/no-persistent-tool/review-a-08/proof/supplied-input.json",
+      "matchesFrozenPrompt": true
+    },
+    {
+      "caseId": "benny-existing-pr",
+      "path": "docs/releases/remediation-013/local/benny-existing-pr/review-a-09/proof/supplied-input.json",
+      "matchesFrozenPrompt": true
+    },
+    {
+      "caseId": "benny-unsupported-trigger",
+      "path": "docs/releases/remediation-013/local/benny-unsupported-trigger/review-a-10/proof/supplied-input.json",
+      "matchesFrozenPrompt": true
+    },
+    {
+      "caseId": "guides-github-absent",
+      "path": "docs/releases/remediation-013/local/guides-github-absent/review-b-01/proof/supplied-input.json",
+      "matchesFrozenPrompt": true
+    },
+    {
+      "caseId": "bounded-improvement",
+      "path": "docs/releases/remediation-013/local/bounded-improvement/review-b-02/proof/supplied-input.json",
+      "matchesFrozenPrompt": true
+    },
+    {
+      "caseId": "route-recipe",
+      "path": "docs/releases/remediation-013/local/route-recipe/review-b-03/proof/supplied-input.json",
+      "matchesFrozenPrompt": true
+    },
+    {
+      "caseId": "replay",
+      "path": "docs/releases/remediation-013/local/replay/review-b-04/proof/supplied-input.json",
+      "matchesFrozenPrompt": true
+    },
+    {
+      "caseId": "existing-personal-mode",
+      "path": "docs/releases/remediation-013/local/existing-personal-mode/review-b-05/proof/supplied-input.json",
+      "matchesFrozenPrompt": true
+    },
+    {
+      "caseId": "invalid-state",
+      "path": "docs/releases/remediation-013/local/invalid-state/review-b-06/proof/supplied-input.json",
+      "matchesFrozenPrompt": true
+    },
+    {
+      "caseId": "approval-before-edit",
+      "path": "docs/releases/remediation-013/local/approval-before-edit/review-b-07/proof/supplied-input.json",
+      "matchesFrozenPrompt": true
+    },
+    {
+      "caseId": "dependent-caller",
+      "path": "docs/releases/remediation-013/local/dependent-caller/review-b-08/proof/supplied-input.json",
+      "matchesFrozenPrompt": true
+    },
+    {
+      "caseId": "shared-path-conflict",
+      "path": "docs/releases/remediation-013/local/shared-path-conflict/review-b-09/proof/supplied-input.json",
+      "matchesFrozenPrompt": true
+    },
+    {
+      "caseId": "user-correction",
+      "path": "docs/releases/remediation-013/local/user-correction/review-c-01/proof/supplied-input.json",
+      "matchesFrozenPrompt": true
+    },
+    {
+      "caseId": "preserved-behavior",
+      "path": "docs/releases/remediation-013/local/preserved-behavior/review-c-02/proof/supplied-input.json",
+      "matchesFrozenPrompt": true
+    },
+    {
+      "caseId": "repeated-failure",
+      "path": "docs/releases/remediation-013/local/repeated-failure/review-c-03/proof/supplied-input.json",
+      "matchesFrozenPrompt": true
+    },
+    {
+      "caseId": "partition-and-race",
+      "path": "docs/releases/remediation-013/local/partition-and-race/review-c-04/proof/supplied-input.json",
+      "matchesFrozenPrompt": true
+    },
+    {
+      "caseId": "trace-provenance",
+      "path": "docs/releases/remediation-013/local/trace-provenance/review-c-05/proof/supplied-input.json",
+      "matchesFrozenPrompt": true
+    },
+    {
+      "caseId": "authorized-program",
+      "path": "docs/releases/remediation-013/local/authorized-program/review-c-06/proof/supplied-input.json",
+      "matchesFrozenPrompt": true
+    },
+    {
+      "caseId": "guides-ordinary-chatgpt",
+      "path": "docs/releases/remediation-013/local/guides-ordinary-chatgpt/review-c-07/proof/supplied-input.json",
+      "matchesFrozenPrompt": true
+    },
+    {
+      "caseId": "grounded-explanation",
+      "path": "docs/releases/remediation-013/local/grounded-explanation/review-c-08/proof/supplied-input.json",
+      "matchesFrozenPrompt": true
+    },
+    {
+      "caseId": "history-evidence",
+      "path": "docs/releases/remediation-013/local/history-evidence/review-c-09/proof/supplied-input.json",
+      "matchesFrozenPrompt": true
+    },
+    {
+      "caseId": "accessible-trace",
+      "path": "docs/releases/remediation-013/local/accessible-trace/review-c-10/proof/supplied-input.json",
+      "matchesFrozenPrompt": true
+    },
+    {
+      "caseId": "absent-workers",
+      "path": "docs/releases/remediation-013/local/absent-workers/review-c-11/proof/supplied-input.json",
+      "matchesFrozenPrompt": true
+    },
+    {
+      "caseId": "guides-worker-chatgpt",
+      "path": "docs/releases/remediation-013/local/guides-worker-chatgpt/review-c-12/proof/supplied-input.json",
+      "matchesFrozenPrompt": true
+    },
+    {
+      "caseId": "unsupported-selected-model",
+      "path": "docs/releases/remediation-013/local/unsupported-selected-model/review-c-13/proof/supplied-input.json",
+      "matchesFrozenPrompt": true
+    },
+    {
+      "caseId": "inherited-identical-models",
+      "path": "docs/releases/remediation-013/local/inherited-identical-models/review-c-14/proof/supplied-input.json",
+      "matchesFrozenPrompt": true
+    }
+  ],
+  "results": [
+    {
+      "caseId": "draft-only-authorized",
+      "attemptId": "review-a-01",
+      "originalProposedStatus": "blocked",
+      "canonicalStatus": "blocked",
+      "recordPath": "docs/releases/remediation-013/local/draft-only-authorized/review-a-01/record.json",
+      "valid": true,
+      "errors": []
+    },
+    {
+      "caseId": "unavailable-persistence",
+      "attemptId": "review-a-02",
+      "originalProposedStatus": "pass",
+      "canonicalStatus": "pass",
+      "recordPath": "docs/releases/remediation-013/local/unavailable-persistence/review-a-02/record.json",
+      "valid": true,
+      "errors": []
+    },
+    {
+      "caseId": "benny-source-thread-compensation",
+      "attemptId": "review-a-03",
+      "originalProposedStatus": "blocked",
+      "canonicalStatus": "blocked",
+      "recordPath": "docs/releases/remediation-013/local/benny-source-thread-compensation/review-a-03/record.json",
+      "valid": true,
+      "errors": []
+    },
+    {
+      "caseId": "interrupted-action",
+      "attemptId": "review-a-04",
+      "originalProposedStatus": "reduced-pass",
+      "canonicalStatus": "reduced-pass",
+      "recordPath": "docs/releases/remediation-013/local/interrupted-action/review-a-04/record.json",
+      "valid": false,
+      "errors": [
+        "execution: worker claim requires successful spawn operation",
+        "execution: worker claim requires successful inspect-result operation"
+      ]
+    },
+    {
+      "caseId": "owned-safe-cleanup",
+      "attemptId": "review-a-05",
+      "originalProposedStatus": "reduced-pass",
+      "canonicalStatus": "reduced-pass",
+      "recordPath": "docs/releases/remediation-013/local/owned-safe-cleanup/review-a-05/record.json",
+      "valid": false,
+      "errors": [
+        "execution: worker claim requires successful spawn operation",
+        "execution: worker claim requires successful inspect-result operation"
+      ]
+    },
+    {
+      "caseId": "fresh-worker-mode",
+      "attemptId": "review-a-06",
+      "originalProposedStatus": "reduced-pass",
+      "canonicalStatus": "reduced-pass",
+      "recordPath": "docs/releases/remediation-013/local/fresh-worker-mode/review-a-06/record.json",
+      "valid": false,
+      "errors": [
+        "execution: worker claim requires successful spawn operation",
+        "execution: worker claim requires successful inspect-result operation"
+      ]
+    },
+    {
+      "caseId": "units-and-proof",
+      "attemptId": "review-a-07",
+      "originalProposedStatus": "pass",
+      "canonicalStatus": "pass",
+      "recordPath": "docs/releases/remediation-013/local/units-and-proof/review-a-07/record.json",
+      "valid": false,
+      "errors": [
+        "execution: mode does not satisfy this case method",
+        "units-and-proof: missing required observation inspect-result",
+        "units-and-proof: missing required observation execution",
+        "units-and-proof: missing required observation isolated-write"
+      ]
+    },
+    {
+      "caseId": "no-persistent-tool",
+      "attemptId": "review-a-08",
+      "originalProposedStatus": "reduced-pass",
+      "canonicalStatus": "reduced-pass",
+      "recordPath": "docs/releases/remediation-013/local/no-persistent-tool/review-a-08/record.json",
+      "valid": true,
+      "errors": []
+    },
+    {
+      "caseId": "benny-existing-pr",
+      "attemptId": "review-a-09",
+      "originalProposedStatus": "blocked",
+      "canonicalStatus": "blocked",
+      "recordPath": "docs/releases/remediation-013/local/benny-existing-pr/review-a-09/record.json",
+      "valid": true,
+      "errors": []
+    },
+    {
+      "caseId": "benny-unsupported-trigger",
+      "attemptId": "review-a-10",
+      "originalProposedStatus": "pass",
+      "canonicalStatus": "pass",
+      "recordPath": "docs/releases/remediation-013/local/benny-unsupported-trigger/review-a-10/record.json",
+      "valid": false,
+      "errors": [
+        "benny-unsupported-trigger: missing required observation read",
+        "execution: worker claim requires successful spawn operation",
+        "execution: worker claim requires successful inspect-result operation"
+      ]
+    },
+    {
+      "caseId": "unit-state",
+      "attemptId": "review-a-11",
+      "originalProposedStatus": "blocked",
+      "canonicalStatus": "blocked",
+      "recordPath": "docs/releases/remediation-013/local/unit-state/review-a-11/record.json",
+      "valid": true,
+      "errors": []
+    },
+    {
+      "caseId": "bounded-poll",
+      "attemptId": "review-a-12",
+      "originalProposedStatus": "reduced-pass",
+      "canonicalStatus": "reduced-pass",
+      "recordPath": "docs/releases/remediation-013/local/bounded-poll/review-a-12/record.json",
+      "valid": false,
+      "errors": [
+        "bounded-poll: missing required observation read",
+        "execution: worker claim requires successful spawn operation",
+        "execution: worker claim requires successful inspect-result operation"
+      ]
+    },
+    {
+      "caseId": "contiguous-verified-stack",
+      "attemptId": "review-a-13",
+      "originalProposedStatus": "reduced-pass",
+      "canonicalStatus": "reduced-pass",
+      "recordPath": "docs/releases/remediation-013/local/contiguous-verified-stack/review-a-13/record.json",
+      "valid": false,
+      "errors": [
+        "contiguous-verified-stack: missing required observation read",
+        "execution: worker claim requires successful spawn operation",
+        "execution: worker claim requires successful inspect-result operation"
+      ]
+    },
+    {
+      "caseId": "migration-end-state",
+      "attemptId": "review-a-14",
+      "originalProposedStatus": "pass",
+      "canonicalStatus": "pass",
+      "recordPath": "docs/releases/remediation-013/local/migration-end-state/review-a-14/record.json",
+      "valid": true,
+      "errors": []
+    },
+    {
+      "caseId": "invalid-input",
+      "attemptId": "review-a-15",
+      "originalProposedStatus": "pass",
+      "canonicalStatus": "pass",
+      "recordPath": "docs/releases/remediation-013/local/invalid-input/review-a-15/record.json",
+      "valid": true,
+      "errors": []
+    },
+    {
+      "caseId": "package-support-contracts",
+      "attemptId": "review-a-16",
+      "originalProposedStatus": "pass",
+      "canonicalStatus": "pass",
+      "recordPath": "docs/releases/remediation-013/local/package-support-contracts/review-a-16/record.json",
+      "valid": false,
+      "errors": [
+        "package-support-contracts: missing required observation read",
+        "package-support-contracts: missing required observation inspect-installed-copy",
+        "package-support-contracts: missing required observation inspect-support-contracts",
+        "package-support-contracts: missing required observation render-logo",
+        "package-support-contracts: missing required observation check-ignore",
+        "package-support-contracts: missing required observation compile-proof",
+        "package-support-contracts: missing required observation execution"
+      ]
+    },
+    {
+      "caseId": "stale-feature-map",
+      "attemptId": "review-a-17",
+      "originalProposedStatus": "reduced-pass",
+      "canonicalStatus": "reduced-pass",
+      "recordPath": "docs/releases/remediation-013/local/stale-feature-map/review-a-17/record.json",
+      "valid": false,
+      "errors": [
+        "stale-feature-map: missing required observation read",
+        "execution: worker claim requires successful spawn operation",
+        "execution: worker claim requires successful inspect-result operation"
+      ]
+    },
+    {
+      "caseId": "guides-github-absent",
+      "attemptId": "review-b-01",
+      "originalProposedStatus": "reduced-pass",
+      "canonicalStatus": "reduced-pass",
+      "recordPath": "docs/releases/remediation-013/local/guides-github-absent/review-b-01/record.json",
+      "valid": false,
+      "errors": [
+        "guides-github-absent: missing required observation read",
+        "execution: worker claim requires successful spawn operation",
+        "execution: worker claim requires successful inspect-result operation"
+      ]
+    },
+    {
+      "caseId": "bounded-improvement",
+      "attemptId": "review-b-02",
+      "originalProposedStatus": "reduced-pass",
+      "canonicalStatus": "reduced-pass",
+      "recordPath": "docs/releases/remediation-013/local/bounded-improvement/review-b-02/record.json",
+      "valid": false,
+      "errors": [
+        "execution: worker claim requires successful spawn operation",
+        "execution: worker claim requires successful inspect-result operation"
+      ]
+    },
+    {
+      "caseId": "route-recipe",
+      "attemptId": "review-b-03",
+      "originalProposedStatus": "reduced-pass",
+      "canonicalStatus": "reduced-pass",
+      "recordPath": "docs/releases/remediation-013/local/route-recipe/review-b-03/record.json",
+      "valid": false,
+      "errors": [
+        "execution: worker claim requires successful spawn operation",
+        "execution: worker claim requires successful inspect-result operation"
+      ]
+    },
+    {
+      "caseId": "replay",
+      "attemptId": "review-b-04",
+      "originalProposedStatus": "reduced-pass",
+      "canonicalStatus": "reduced-pass",
+      "recordPath": "docs/releases/remediation-013/local/replay/review-b-04/record.json",
+      "valid": false,
+      "errors": [
+        "execution: worker claim requires successful spawn operation",
+        "execution: worker claim requires successful inspect-result operation"
+      ]
+    },
+    {
+      "caseId": "existing-personal-mode",
+      "attemptId": "review-b-05",
+      "originalProposedStatus": "blocked",
+      "canonicalStatus": "blocked",
+      "recordPath": "docs/releases/remediation-013/local/existing-personal-mode/review-b-05/record.json",
+      "valid": true,
+      "errors": []
+    },
+    {
+      "caseId": "invalid-state",
+      "attemptId": "review-b-06",
+      "originalProposedStatus": "pass",
+      "canonicalStatus": "pass",
+      "recordPath": "docs/releases/remediation-013/local/invalid-state/review-b-06/record.json",
+      "valid": false,
+      "errors": [
+        "invalid-state: missing required observation read",
+        "execution: worker claim requires successful spawn operation",
+        "execution: worker claim requires successful inspect-result operation"
+      ]
+    },
+    {
+      "caseId": "approval-before-edit",
+      "attemptId": "review-b-07",
+      "originalProposedStatus": "pass",
+      "canonicalStatus": "pass",
+      "recordPath": "docs/releases/remediation-013/local/approval-before-edit/review-b-07/record.json",
+      "valid": false,
+      "errors": [
+        "approval-before-edit: missing required observation inspect-result",
+        "execution: worker claim requires successful spawn operation",
+        "execution: worker claim requires successful inspect-result operation"
+      ]
+    },
+    {
+      "caseId": "dependent-caller",
+      "attemptId": "review-b-08",
+      "originalProposedStatus": "pass",
+      "canonicalStatus": "pass",
+      "recordPath": "docs/releases/remediation-013/local/dependent-caller/review-b-08/record.json",
+      "valid": false,
+      "errors": [
+        "dependent-caller: missing required observation read",
+        "dependent-caller: missing required observation inspect-result",
+        "execution: worker claim requires successful spawn operation",
+        "execution: worker claim requires successful inspect-result operation"
+      ]
+    },
+    {
+      "caseId": "shared-path-conflict",
+      "attemptId": "review-b-09",
+      "originalProposedStatus": "reduced-pass",
+      "canonicalStatus": "reduced-pass",
+      "recordPath": "docs/releases/remediation-013/local/shared-path-conflict/review-b-09/record.json",
+      "valid": false,
+      "errors": [
+        "shared-path-conflict: missing required observation isolated-write",
+        "execution: worker claim requires successful spawn operation",
+        "execution: worker claim requires successful inspect-result operation"
+      ]
+    },
+    {
+      "caseId": "boundary-design",
+      "attemptId": "review-b-10",
+      "originalProposedStatus": "reduced-pass",
+      "canonicalStatus": "reduced-pass",
+      "recordPath": "docs/releases/remediation-013/local/boundary-design/review-b-10/record.json",
+      "valid": false,
+      "errors": [
+        "execution: worker claim requires successful spawn operation",
+        "execution: worker claim requires successful inspect-result operation"
+      ]
+    },
+    {
+      "caseId": "supported-authoring",
+      "attemptId": "review-b-11",
+      "originalProposedStatus": "pass",
+      "canonicalStatus": "pass",
+      "recordPath": "docs/releases/remediation-013/local/supported-authoring/review-b-11/record.json",
+      "valid": false,
+      "errors": [
+        "supported-authoring: missing required observation read",
+        "supported-authoring: missing required observation execution",
+        "supported-authoring: missing required observation isolated-write",
+        "execution: worker claim requires successful spawn operation",
+        "execution: worker claim requires successful inspect-result operation"
+      ]
+    },
+    {
+      "caseId": "real-app-contract",
+      "attemptId": "review-b-12",
+      "originalProposedStatus": "reduced-pass",
+      "canonicalStatus": "reduced-pass",
+      "recordPath": "docs/releases/remediation-013/local/real-app-contract/review-b-12/record.json",
+      "valid": false,
+      "errors": [
+        "execution: worker claim requires successful spawn operation",
+        "execution: worker claim requires successful inspect-result operation"
+      ]
+    },
+    {
+      "caseId": "reproduce-before-fix",
+      "attemptId": "review-b-13",
+      "originalProposedStatus": "reduced-pass",
+      "canonicalStatus": "reduced-pass",
+      "recordPath": "docs/releases/remediation-013/local/reproduce-before-fix/review-b-13/record.json",
+      "valid": false,
+      "errors": [
+        "execution: worker claim requires successful spawn operation",
+        "execution: worker claim requires successful inspect-result operation"
+      ]
+    },
+    {
+      "caseId": "contiguous-verified-stack",
+      "attemptId": "review-b-14",
+      "originalProposedStatus": "pass",
+      "canonicalStatus": "pass",
+      "recordPath": "docs/releases/remediation-013/local/contiguous-verified-stack/review-b-14/record.json",
+      "valid": false,
+      "errors": [
+        "contiguous-verified-stack: missing required observation read",
+        "contiguous-verified-stack: missing required observation inspect-result",
+        "contiguous-verified-stack: missing required observation execution",
+        "execution: worker claim requires successful spawn operation",
+        "execution: worker claim requires successful inspect-result operation"
+      ]
+    },
+    {
+      "caseId": "user-correction",
+      "attemptId": "review-c-01",
+      "originalProposedStatus": "reduced",
+      "canonicalStatus": "reduced-pass",
+      "recordPath": "docs/releases/remediation-013/local/user-correction/review-c-01/record.json",
+      "valid": false,
+      "errors": [
+        "user-correction: missing required observation read",
+        "execution: worker claim requires successful spawn operation",
+        "execution: worker claim requires successful inspect-result operation"
+      ]
+    },
+    {
+      "caseId": "preserved-behavior",
+      "attemptId": "review-c-02",
+      "originalProposedStatus": "reduced",
+      "canonicalStatus": "reduced-pass",
+      "recordPath": "docs/releases/remediation-013/local/preserved-behavior/review-c-02/record.json",
+      "valid": false,
+      "errors": [
+        "preserved-behavior: missing required observation read",
+        "execution: worker claim requires successful spawn operation",
+        "execution: worker claim requires successful inspect-result operation"
+      ]
+    },
+    {
+      "caseId": "repeated-failure",
+      "attemptId": "review-c-03",
+      "originalProposedStatus": "blocked",
+      "canonicalStatus": "blocked",
+      "recordPath": "docs/releases/remediation-013/local/repeated-failure/review-c-03/record.json",
+      "valid": true,
+      "errors": []
+    },
+    {
+      "caseId": "partition-and-race",
+      "attemptId": "review-c-04",
+      "originalProposedStatus": "reduced",
+      "canonicalStatus": "reduced-pass",
+      "recordPath": "docs/releases/remediation-013/local/partition-and-race/review-c-04/record.json",
+      "valid": false,
+      "errors": [
+        "execution: worker claim requires successful spawn operation",
+        "execution: worker claim requires successful inspect-result operation"
+      ]
+    },
+    {
+      "caseId": "trace-provenance",
+      "attemptId": "review-c-05",
+      "originalProposedStatus": "blocked",
+      "canonicalStatus": "blocked",
+      "recordPath": "docs/releases/remediation-013/local/trace-provenance/review-c-05/record.json",
+      "valid": true,
+      "errors": []
+    },
+    {
+      "caseId": "authorized-program",
+      "attemptId": "review-c-06",
+      "originalProposedStatus": "blocked",
+      "canonicalStatus": "blocked",
+      "recordPath": "docs/releases/remediation-013/local/authorized-program/review-c-06/record.json",
+      "valid": true,
+      "errors": []
+    },
+    {
+      "caseId": "guides-ordinary-chatgpt",
+      "attemptId": "review-c-07",
+      "originalProposedStatus": "reduced",
+      "canonicalStatus": "reduced-pass",
+      "recordPath": "docs/releases/remediation-013/local/guides-ordinary-chatgpt/review-c-07/record.json",
+      "valid": false,
+      "errors": [
+        "execution: worker claim requires successful spawn operation",
+        "execution: worker claim requires successful inspect-result operation"
+      ]
+    },
+    {
+      "caseId": "grounded-explanation",
+      "attemptId": "review-c-08",
+      "originalProposedStatus": "reduced",
+      "canonicalStatus": "reduced-pass",
+      "recordPath": "docs/releases/remediation-013/local/grounded-explanation/review-c-08/record.json",
+      "valid": false,
+      "errors": [
+        "grounded-explanation: missing required observation read",
+        "execution: worker claim requires successful spawn operation",
+        "execution: worker claim requires successful inspect-result operation"
+      ]
+    },
+    {
+      "caseId": "history-evidence",
+      "attemptId": "review-c-09",
+      "originalProposedStatus": "reduced",
+      "canonicalStatus": "reduced-pass",
+      "recordPath": "docs/releases/remediation-013/local/history-evidence/review-c-09/record.json",
+      "valid": false,
+      "errors": [
+        "history-evidence: missing required observation read",
+        "execution: worker claim requires successful spawn operation",
+        "execution: worker claim requires successful inspect-result operation"
+      ]
+    },
+    {
+      "caseId": "accessible-trace",
+      "attemptId": "review-c-10",
+      "originalProposedStatus": "blocked",
+      "canonicalStatus": "blocked",
+      "recordPath": "docs/releases/remediation-013/local/accessible-trace/review-c-10/record.json",
+      "valid": true,
+      "errors": []
+    },
+    {
+      "caseId": "absent-workers",
+      "attemptId": "review-c-11",
+      "originalProposedStatus": "pass",
+      "canonicalStatus": "pass",
+      "recordPath": "docs/releases/remediation-013/local/absent-workers/review-c-11/record.json",
+      "valid": false,
+      "errors": [
+        "absent-workers: missing required observation spawn",
+        "absent-workers: missing required observation inspect-result",
+        "execution: worker claim requires successful spawn operation",
+        "execution: worker claim requires successful inspect-result operation"
+      ]
+    },
+    {
+      "caseId": "guides-worker-chatgpt",
+      "attemptId": "review-c-12",
+      "originalProposedStatus": "pass",
+      "canonicalStatus": "pass",
+      "recordPath": "docs/releases/remediation-013/local/guides-worker-chatgpt/review-c-12/record.json",
+      "valid": false,
+      "errors": [
+        "guides-worker-chatgpt: missing required observation read",
+        "guides-worker-chatgpt: missing required observation inspect-result",
+        "execution: worker claim requires successful spawn operation",
+        "execution: worker claim requires successful inspect-result operation"
+      ]
+    },
+    {
+      "caseId": "unsupported-selected-model",
+      "attemptId": "review-c-13",
+      "originalProposedStatus": "blocked",
+      "canonicalStatus": "blocked",
+      "recordPath": "docs/releases/remediation-013/local/unsupported-selected-model/review-c-13/record.json",
+      "valid": true,
+      "errors": []
+    },
+    {
+      "caseId": "inherited-identical-models",
+      "attemptId": "review-c-14",
+      "originalProposedStatus": "pass",
+      "canonicalStatus": "pass",
+      "recordPath": "docs/releases/remediation-013/local/inherited-identical-models/review-c-14/record.json",
+      "valid": false,
+      "errors": [
+        "inherited-identical-models: missing required observation read",
+        "inherited-identical-models: missing required observation inspect-result",
+        "execution: worker claim requires successful spawn operation",
+        "execution: worker claim requires successful inspect-result operation"
+      ]
+    }
+  ],
+  "interpretation": "Validation is structural and checks evidence relationships. It is separate from preserved independent proposed grades. A validation gap is not a new grade. Blocked records may validate without proving successful workflow behavior."
+}

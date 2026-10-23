@@ -1,0 +1,34 @@
+{
+  "schemaVersion": 1,
+  "kind": "native-command-event-excerpt",
+  "caseId": "approval-before-edit",
+  "attemptId": "review-b-07",
+  "inputRevision": "e825c96ed4f21308367ff4105a21d257d80c55e0",
+  "originalLocator": "cross-host-extra/local/actors/cross-host-0/events.jsonl",
+  "sourceSha256": "bf9146e030e58849657800703173e0efa6cc4f1c4850c83f5862e3b735a2eb95",
+  "itemId": "item_13",
+  "startedLine": 24,
+  "completedLine": 25,
+  "originalEventType": "item.completed",
+  "observedOperationType": "command_execution",
+  "command": "/bin/zsh -lc 'cat <installed-frozen-package>/skills/reflect/SKILL.md <installed-frozen-package>/skills/reflect/references/{judgment-reviewer,tooling-reviewer,divergent-reviewer,synthesizer}.md'",
+  "aggregatedOutputPrefix": "---\nname: reflect\ndescription: Spawn three parallel review subagents over the active transcript, surface learnings, and route each to a concrete edit on an existing skill. Use when the user says reflect.\ndisable-model-invocation: true\n---\n\n# Reflect\n\nMine the current conversation for durable learnings, then route them into skill edits.\n\n## When to invoke\n\nInvoke when the user says \"reflect\" or \"/reflect\". Skip when the conversation is trivial, off-topic, or already covered by an existing skill the parent followed correctly. One-offs are not learnings.\n\n## Process\n\n### 1. Locate the active tran",
+  "originalAggregatedOutputCharacters": 21916,
+  "exitCode": 0,
+  "status": "completed",
+  "scope": "This is a source read by the case batch coordinator. It is not represented as a child worker read or as proof of all child instructions.",
+  "clock": "The public event has no timestamp. Line order is retained. No duration or clock interval is inferred.",
+  "transformation": "Exact event fields selected. Absolute task and installed-package paths are replaced with declared placeholders. Output is a prefix, not the complete source read. No other event or browser context is included. Only these literal or explicitly loop-listed registered source names are matched. This does not prove every registered source path was read. Native callable metadata is corroborated against a scoped private callsite. Protected or unrelated payload contents are not copied or decoded.",
+  "sourceScopeMatchedByCommand": [
+    "skills/reflect/SKILL.md"
+  ],
+  "nativeCallBinding": {
+    "originalLocator": "native-captures-sanitized-v2/cross-host-0/01a148b5-fd72-7933-a40b-6e09f507e992.jsonl",
+    "sourceSha256": "aa6df00aa06b1294a21208d9d35dc5ac2d8bae026bb788d43791a30d1115e83d",
+    "line": 18,
+    "callId": "call_9c1c354bc4884ea7b68677cc4436ae62",
+    "observedToolName": "exec",
+    "observedNestedCallsite": "tools.exec_command",
+    "corroboration": "The actual scoped native custom-tool call invokes tools.exec_command with the exact command parsed from this public command_execution event. Only the callable identity and locator are projected. Its surrounding payload remains private."
+  }
+}

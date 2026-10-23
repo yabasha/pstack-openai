@@ -1,0 +1,62 @@
+[
+  {
+    "command": [
+      "git",
+      "rev-parse",
+      "HEAD"
+    ],
+    "status": 0,
+    "stdout": "be8f71ddae4c194ec08c22188718639fcceb7183\n",
+    "stderr": ""
+  },
+  {
+    "command": [
+      "git",
+      "diff",
+      "--exit-code",
+      "--",
+      "input"
+    ],
+    "status": 0,
+    "stdout": "",
+    "stderr": ""
+  },
+  {
+    "command": [
+      "git",
+      "status",
+      "--short",
+      "--",
+      "input"
+    ],
+    "status": 0,
+    "stdout": "",
+    "stderr": ""
+  },
+  {
+    "command": [
+      "bun",
+      "--no-install",
+      "<starting-main-package>/skills/poteto-mode/scripts/node_modules/typescript/bin/tsc",
+      "--project",
+      "deliverables/working/tsconfig.json",
+      "--noEmit",
+      "--strict"
+    ],
+    "status": 0,
+    "stdout": "",
+    "stderr": ""
+  },
+  {
+    "command": [
+      "bun",
+      "--no-install",
+      "test",
+      "deliverables/working/",
+      "deliverables/contract.test.mjs"
+    ],
+    "status": 0,
+    "stdout": "bun test v1.4.2 (50a8a8387)\n",
+    "stderr": "\ndeliverables/contract.test.mjs:\n(pass) HTTP characterization uses literal expected responses before and after [0.23ms]\n(pass) positive integer replay preserves pricing [0.62ms]\n\ndeliverables/working/domain.test.mjs:\n(pass) subtotal prices positive quantities in integer cents [0.03ms]\n(pass) priceOrder prices a trusted typed order\n\ndeliverables/working/boundary.test.mjs:\n(pass) all external invalid quantities retain boundary error [0.05ms]\n(pass) existing outer guard and parser remain necessary [0.03ms]\n(pass) valid external and typed internal consumers [0.03ms]\n\n 7 pass\n 0 fail\n 1065 expect() calls\nRan 7 tests across 3 files. [6.00ms]\n"
+  }
+]

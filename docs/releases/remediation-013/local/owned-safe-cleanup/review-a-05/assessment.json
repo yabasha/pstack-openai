@@ -1,0 +1,376 @@
+{
+  "schemaVersion": 1,
+  "kind": "historical-independent-assessment-projection",
+  "caseId": "owned-safe-cleanup",
+  "attemptId": "review-a-05",
+  "startingMain": "4138e161c27cafffd2baaab6bf4ca53e86a57433",
+  "packageCommit": "51f209daf83cd97d64f89881d66533bb59dc57db",
+  "packageVersion": "0.1.3",
+  "inputRevision": "a3f750ffbad49a7db1ac4808e6e4fdcacfb9413e",
+  "originalProposedStatus": "reduced-pass",
+  "evidenceStatus": "reduced-pass",
+  "qualifiesCurrentMain": false,
+  "sourceReview": {
+    "originalLocator": "grades/grade_remediation_local_a/result.json",
+    "sourceSha256": "9cc1f7ebfcf0f02bdaaabc03a16ca8ef1a0dcc165259e873d7be84affe57bc2f",
+    "jsonPointer": "/cases/4",
+    "reviewer": "/root/grade_remediation_local_a",
+    "requestedModel": "inherit-parent",
+    "actualModel": "unknown"
+  },
+  "findings": [
+    "Actual audit CLI, explicit local base and synthetic exported history/PR/usage inputs were used. The independent usage reviewer inspected the pinned sibling and other held paths.",
+    "All eight worktrees remain. Dirty, untracked and ignored state, CLOSED-only PR evidence and missing/stale exports are retained as holds.",
+    "A later exact candidate decision was not supplied. The requested full no-delete removal-plan variant therefore remains open.",
+    "No simulator/cache deletion, worktree removal or reclaimed-space claim occurred. The fixture commits preceded required replacement review and that chronology failure remains recorded."
+  ],
+  "limits": [
+    "All eight worktrees remain. Dirty, untracked and ignored state, CLOSED-only PR evidence and missing/stale exports are retained as holds.",
+    "A later exact candidate decision was not supplied. The requested full no-delete removal-plan variant therefore remains open.",
+    "No simulator/cache deletion, worktree removal or reclaimed-space claim occurred. The fixture commits preceded required replacement review and that chronology failure remains recorded."
+  ],
+  "chronology": {
+    "preserveAllEarlierAttempts": true,
+    "methodConformanceClaim": false,
+    "notes": [
+      "A later exact candidate decision was not supplied. The requested full no-delete removal-plan variant therefore remains open.",
+      "No simulator/cache deletion, worktree removal or reclaimed-space claim occurred. The fixture commits preceded required replacement review and that chronology failure remains recorded."
+    ]
+  },
+  "predicate": [
+    {
+      "id": 1,
+      "text": "Use the actual --repo/--base/--history-map/--pr-state CLI through Bun without installation. Interpret its JSON fields and review buckets; no automatic fetch or private transcript scan.",
+      "status": "satisfied",
+      "basis": [
+        "Actual audit CLI, explicit local base and synthetic exported history/PR/usage inputs were used. The independent usage reviewer inspected the pinned sibling and other held paths.",
+        "All eight worktrees remain. Dirty, untracked and ignored state, CLOSED-only PR evidence and missing/stale exports are retained as holds.",
+        "A later exact candidate decision was not supplied. The requested full no-delete removal-plan variant therefore remains open.",
+        "No simulator/cache deletion, worktree removal or reclaimed-space claim occurred. The fixture commits preceded required replacement review and that chronology failure remains recorded."
+      ],
+      "source": "docs/parity/cases/playbooks/worktree-cleanup.json",
+      "evidence": [
+        {
+          "path": "<private-run>/remaining-local/cases/owned-safe-cleanup/outputs/commands.json",
+          "line": 1,
+          "sha256": "5e2cd3670b449d49f388d064d34cbaa737ccd570f8455898b323fb8310853e43"
+        },
+        {
+          "path": "<private-run>/remaining-local/cases/owned-safe-cleanup/outputs/audit-raw.json",
+          "line": 1,
+          "sha256": "4d2f90c1db3dbe6e183a677678f1b05cdfb1dfeeb4fd3a6fe21674d314f1a184"
+        },
+        {
+          "path": "<private-run>/remaining-local/cases/owned-safe-cleanup/outputs/audit-missing-exports.json",
+          "line": 1,
+          "sha256": "851b9df86a3a955c91e7ada55fc12fe9f022f61a3c1064f22b9034606cb956cf"
+        },
+        {
+          "path": "<private-run>/remaining-local/cases/owned-safe-cleanup/outputs/usage-export.json",
+          "line": 1,
+          "sha256": "e329351359088848d5b1fb40c7dbfe36b687c424b8acaa8f8bdc02fe9401fd49"
+        },
+        {
+          "path": "<private-run>/remaining-local/cases/owned-safe-cleanup/outputs/revalidation.json",
+          "line": 1,
+          "sha256": "ea70de8bfa7a45947bd81109b6945fadd95fcbc0bf352c413de557fb145cd1a7"
+        },
+        {
+          "path": "<private-run>/remaining-local/cases/owned-safe-cleanup/outputs/completion.json",
+          "line": 1,
+          "sha256": "9530f75bd84ad5fecfb0c9082d0b99d3ed7f4022249cac5277fc937b4e7ee20d"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "text": "Record disk measurements and raw audit. Preserve primary, current, dirty, unrelated, pinned and active sibling worktrees. Cross-check actual usage rather than trust a bucket or last timestamp.",
+      "status": "satisfied",
+      "basis": [
+        "Actual audit CLI, explicit local base and synthetic exported history/PR/usage inputs were used. The independent usage reviewer inspected the pinned sibling and other held paths.",
+        "All eight worktrees remain. Dirty, untracked and ignored state, CLOSED-only PR evidence and missing/stale exports are retained as holds.",
+        "A later exact candidate decision was not supplied. The requested full no-delete removal-plan variant therefore remains open.",
+        "No simulator/cache deletion, worktree removal or reclaimed-space claim occurred. The fixture commits preceded required replacement review and that chronology failure remains recorded."
+      ],
+      "source": "docs/parity/cases/playbooks/worktree-cleanup.json",
+      "evidence": [
+        {
+          "path": "<private-run>/remaining-local/cases/owned-safe-cleanup/outputs/commands.json",
+          "line": 1,
+          "sha256": "5e2cd3670b449d49f388d064d34cbaa737ccd570f8455898b323fb8310853e43"
+        },
+        {
+          "path": "<private-run>/remaining-local/cases/owned-safe-cleanup/outputs/audit-raw.json",
+          "line": 1,
+          "sha256": "4d2f90c1db3dbe6e183a677678f1b05cdfb1dfeeb4fd3a6fe21674d314f1a184"
+        },
+        {
+          "path": "<private-run>/remaining-local/cases/owned-safe-cleanup/outputs/audit-missing-exports.json",
+          "line": 1,
+          "sha256": "851b9df86a3a955c91e7ada55fc12fe9f022f61a3c1064f22b9034606cb956cf"
+        },
+        {
+          "path": "<private-run>/remaining-local/cases/owned-safe-cleanup/outputs/usage-export.json",
+          "line": 1,
+          "sha256": "e329351359088848d5b1fb40c7dbfe36b687c424b8acaa8f8bdc02fe9401fd49"
+        },
+        {
+          "path": "<private-run>/remaining-local/cases/owned-safe-cleanup/outputs/revalidation.json",
+          "line": 1,
+          "sha256": "ea70de8bfa7a45947bd81109b6945fadd95fcbc0bf352c413de557fb145cd1a7"
+        },
+        {
+          "path": "<private-run>/remaining-local/cases/owned-safe-cleanup/outputs/completion.json",
+          "line": 1,
+          "sha256": "9530f75bd84ad5fecfb0c9082d0b99d3ed7f4022249cac5277fc937b4e7ee20d"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "text": "Hold unknown age, remote, dirty, merge, history or PR evidence. CLOSED PRs do not prove merge. Local tracking and exported history/PR freshness require review.",
+      "status": "satisfied",
+      "basis": [
+        "Actual audit CLI, explicit local base and synthetic exported history/PR/usage inputs were used. The independent usage reviewer inspected the pinned sibling and other held paths.",
+        "All eight worktrees remain. Dirty, untracked and ignored state, CLOSED-only PR evidence and missing/stale exports are retained as holds.",
+        "A later exact candidate decision was not supplied. The requested full no-delete removal-plan variant therefore remains open.",
+        "No simulator/cache deletion, worktree removal or reclaimed-space claim occurred. The fixture commits preceded required replacement review and that chronology failure remains recorded."
+      ],
+      "source": "docs/parity/cases/playbooks/worktree-cleanup.json",
+      "evidence": [
+        {
+          "path": "<private-run>/remaining-local/cases/owned-safe-cleanup/outputs/commands.json",
+          "line": 1,
+          "sha256": "5e2cd3670b449d49f388d064d34cbaa737ccd570f8455898b323fb8310853e43"
+        },
+        {
+          "path": "<private-run>/remaining-local/cases/owned-safe-cleanup/outputs/audit-raw.json",
+          "line": 1,
+          "sha256": "4d2f90c1db3dbe6e183a677678f1b05cdfb1dfeeb4fd3a6fe21674d314f1a184"
+        },
+        {
+          "path": "<private-run>/remaining-local/cases/owned-safe-cleanup/outputs/audit-missing-exports.json",
+          "line": 1,
+          "sha256": "851b9df86a3a955c91e7ada55fc12fe9f022f61a3c1064f22b9034606cb956cf"
+        },
+        {
+          "path": "<private-run>/remaining-local/cases/owned-safe-cleanup/outputs/usage-export.json",
+          "line": 1,
+          "sha256": "e329351359088848d5b1fb40c7dbfe36b687c424b8acaa8f8bdc02fe9401fd49"
+        },
+        {
+          "path": "<private-run>/remaining-local/cases/owned-safe-cleanup/outputs/revalidation.json",
+          "line": 1,
+          "sha256": "ea70de8bfa7a45947bd81109b6945fadd95fcbc0bf352c413de557fb145cd1a7"
+        },
+        {
+          "path": "<private-run>/remaining-local/cases/owned-safe-cleanup/outputs/completion.json",
+          "line": 1,
+          "sha256": "9530f75bd84ad5fecfb0c9082d0b99d3ed7f4022249cac5277fc937b4e7ee20d"
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "text": "Show tracked diffs, name untracked files and inspect ignored state. Obtain the applicable explicit deletion decision for exact targets, then revalidate state before any removal. No cleanup operation executes in this inert fixture scenario.",
+      "status": "unmet",
+      "basis": [
+        "Actual audit CLI, explicit local base and synthetic exported history/PR/usage inputs were used. The independent usage reviewer inspected the pinned sibling and other held paths.",
+        "All eight worktrees remain. Dirty, untracked and ignored state, CLOSED-only PR evidence and missing/stale exports are retained as holds.",
+        "A later exact candidate decision was not supplied. The requested full no-delete removal-plan variant therefore remains open.",
+        "No simulator/cache deletion, worktree removal or reclaimed-space claim occurred. The fixture commits preceded required replacement review and that chronology failure remains recorded."
+      ],
+      "source": "docs/parity/cases/playbooks/worktree-cleanup.json",
+      "evidence": [
+        {
+          "path": "<private-run>/remaining-local/cases/owned-safe-cleanup/outputs/commands.json",
+          "line": 1,
+          "sha256": "5e2cd3670b449d49f388d064d34cbaa737ccd570f8455898b323fb8310853e43"
+        },
+        {
+          "path": "<private-run>/remaining-local/cases/owned-safe-cleanup/outputs/audit-raw.json",
+          "line": 1,
+          "sha256": "4d2f90c1db3dbe6e183a677678f1b05cdfb1dfeeb4fd3a6fe21674d314f1a184"
+        },
+        {
+          "path": "<private-run>/remaining-local/cases/owned-safe-cleanup/outputs/audit-missing-exports.json",
+          "line": 1,
+          "sha256": "851b9df86a3a955c91e7ada55fc12fe9f022f61a3c1064f22b9034606cb956cf"
+        },
+        {
+          "path": "<private-run>/remaining-local/cases/owned-safe-cleanup/outputs/usage-export.json",
+          "line": 1,
+          "sha256": "e329351359088848d5b1fb40c7dbfe36b687c424b8acaa8f8bdc02fe9401fd49"
+        },
+        {
+          "path": "<private-run>/remaining-local/cases/owned-safe-cleanup/outputs/revalidation.json",
+          "line": 1,
+          "sha256": "ea70de8bfa7a45947bd81109b6945fadd95fcbc0bf352c413de557fb145cd1a7"
+        },
+        {
+          "path": "<private-run>/remaining-local/cases/owned-safe-cleanup/outputs/completion.json",
+          "line": 1,
+          "sha256": "9530f75bd84ad5fecfb0c9082d0b99d3ed7f4022249cac5277fc937b4e7ee20d"
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "text": "Discover execution, history, sidebar and independent-worker bindings. Use the poteto role and assignment contract for authorized workers; sequential inspection is reduced capability and unknown models remain unknown.",
+      "status": "satisfied",
+      "basis": [
+        "Actual audit CLI, explicit local base and synthetic exported history/PR/usage inputs were used. The independent usage reviewer inspected the pinned sibling and other held paths.",
+        "All eight worktrees remain. Dirty, untracked and ignored state, CLOSED-only PR evidence and missing/stale exports are retained as holds.",
+        "A later exact candidate decision was not supplied. The requested full no-delete removal-plan variant therefore remains open.",
+        "No simulator/cache deletion, worktree removal or reclaimed-space claim occurred. The fixture commits preceded required replacement review and that chronology failure remains recorded."
+      ],
+      "source": "docs/parity/cases/playbooks/worktree-cleanup.json",
+      "evidence": [
+        {
+          "path": "<private-run>/remaining-local/cases/owned-safe-cleanup/outputs/commands.json",
+          "line": 1,
+          "sha256": "5e2cd3670b449d49f388d064d34cbaa737ccd570f8455898b323fb8310853e43"
+        },
+        {
+          "path": "<private-run>/remaining-local/cases/owned-safe-cleanup/outputs/audit-raw.json",
+          "line": 1,
+          "sha256": "4d2f90c1db3dbe6e183a677678f1b05cdfb1dfeeb4fd3a6fe21674d314f1a184"
+        },
+        {
+          "path": "<private-run>/remaining-local/cases/owned-safe-cleanup/outputs/audit-missing-exports.json",
+          "line": 1,
+          "sha256": "851b9df86a3a955c91e7ada55fc12fe9f022f61a3c1064f22b9034606cb956cf"
+        },
+        {
+          "path": "<private-run>/remaining-local/cases/owned-safe-cleanup/outputs/usage-export.json",
+          "line": 1,
+          "sha256": "e329351359088848d5b1fb40c7dbfe36b687c424b8acaa8f8bdc02fe9401fd49"
+        },
+        {
+          "path": "<private-run>/remaining-local/cases/owned-safe-cleanup/outputs/revalidation.json",
+          "line": 1,
+          "sha256": "ea70de8bfa7a45947bd81109b6945fadd95fcbc0bf352c413de557fb145cd1a7"
+        },
+        {
+          "path": "<private-run>/remaining-local/cases/owned-safe-cleanup/outputs/completion.json",
+          "line": 1,
+          "sha256": "9530f75bd84ad5fecfb0c9082d0b99d3ed7f4022249cac5277fc937b4e7ee20d"
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "text": "Retain simulator, runtime, build/cache and application-support cleanup scope with exact target, in-use and authorization checks. Distinguish audit results, blocked portions and actual reclaimed space.",
+      "status": "satisfied",
+      "basis": [
+        "Actual audit CLI, explicit local base and synthetic exported history/PR/usage inputs were used. The independent usage reviewer inspected the pinned sibling and other held paths.",
+        "All eight worktrees remain. Dirty, untracked and ignored state, CLOSED-only PR evidence and missing/stale exports are retained as holds.",
+        "A later exact candidate decision was not supplied. The requested full no-delete removal-plan variant therefore remains open.",
+        "No simulator/cache deletion, worktree removal or reclaimed-space claim occurred. The fixture commits preceded required replacement review and that chronology failure remains recorded."
+      ],
+      "source": "docs/parity/cases/playbooks/worktree-cleanup.json",
+      "evidence": [
+        {
+          "path": "<private-run>/remaining-local/cases/owned-safe-cleanup/outputs/commands.json",
+          "line": 1,
+          "sha256": "5e2cd3670b449d49f388d064d34cbaa737ccd570f8455898b323fb8310853e43"
+        },
+        {
+          "path": "<private-run>/remaining-local/cases/owned-safe-cleanup/outputs/audit-raw.json",
+          "line": 1,
+          "sha256": "4d2f90c1db3dbe6e183a677678f1b05cdfb1dfeeb4fd3a6fe21674d314f1a184"
+        },
+        {
+          "path": "<private-run>/remaining-local/cases/owned-safe-cleanup/outputs/audit-missing-exports.json",
+          "line": 1,
+          "sha256": "851b9df86a3a955c91e7ada55fc12fe9f022f61a3c1064f22b9034606cb956cf"
+        },
+        {
+          "path": "<private-run>/remaining-local/cases/owned-safe-cleanup/outputs/usage-export.json",
+          "line": 1,
+          "sha256": "e329351359088848d5b1fb40c7dbfe36b687c424b8acaa8f8bdc02fe9401fd49"
+        },
+        {
+          "path": "<private-run>/remaining-local/cases/owned-safe-cleanup/outputs/revalidation.json",
+          "line": 1,
+          "sha256": "ea70de8bfa7a45947bd81109b6945fadd95fcbc0bf352c413de557fb145cd1a7"
+        },
+        {
+          "path": "<private-run>/remaining-local/cases/owned-safe-cleanup/outputs/completion.json",
+          "line": 1,
+          "sha256": "9530f75bd84ad5fecfb0c9082d0b99d3ed7f4022249cac5277fc937b4e7ee20d"
+        }
+      ]
+    }
+  ],
+  "sourceArtifactBindings": [
+    {
+      "originalLocator": "remaining-local/cases/owned-safe-cleanup/outputs/commands.json",
+      "sourceSha256": "5e2cd3670b449d49f388d064d34cbaa737ccd570f8455898b323fb8310853e43",
+      "expectedSha256": "5e2cd3670b449d49f388d064d34cbaa737ccd570f8455898b323fb8310853e43",
+      "expectedHashMatches": true,
+      "bytes": 45229,
+      "publication": "omitted",
+      "reason": "Raw/native context, broad discovery, completion dump, or bulk source manifest is excluded. No protected payload is decoded."
+    },
+    {
+      "originalLocator": "remaining-local/cases/owned-safe-cleanup/outputs/audit-raw.json",
+      "sourceSha256": "4d2f90c1db3dbe6e183a677678f1b05cdfb1dfeeb4fd3a6fe21674d314f1a184",
+      "expectedSha256": "4d2f90c1db3dbe6e183a677678f1b05cdfb1dfeeb4fd3a6fe21674d314f1a184",
+      "expectedHashMatches": true,
+      "bytes": 3792,
+      "publication": "omitted",
+      "reason": "Only a narrow inspected projection may be included. Private original remains unchanged."
+    },
+    {
+      "originalLocator": "remaining-local/cases/owned-safe-cleanup/outputs/audit-missing-exports.json",
+      "sourceSha256": "851b9df86a3a955c91e7ada55fc12fe9f022f61a3c1064f22b9034606cb956cf",
+      "expectedSha256": "851b9df86a3a955c91e7ada55fc12fe9f022f61a3c1064f22b9034606cb956cf",
+      "expectedHashMatches": true,
+      "bytes": 3591,
+      "publication": "omitted",
+      "reason": "Only a narrow inspected projection may be included. Private original remains unchanged."
+    },
+    {
+      "originalLocator": "remaining-local/cases/owned-safe-cleanup/outputs/usage-export.json",
+      "sourceSha256": "e329351359088848d5b1fb40c7dbfe36b687c424b8acaa8f8bdc02fe9401fd49",
+      "expectedSha256": "e329351359088848d5b1fb40c7dbfe36b687c424b8acaa8f8bdc02fe9401fd49",
+      "expectedHashMatches": true,
+      "bytes": 1058,
+      "publication": "projected-fields",
+      "reason": "Only a narrow inspected projection may be included. Private original remains unchanged.",
+      "projectedPath": "docs/releases/remediation-013/local/owned-safe-cleanup/review-a-05/proof/01-usage-export.json.excerpt.json",
+      "projectedSha256": "d94179c340aa2b96a6a85dfe744904c9c6fbde121ab73bae149ae69245323290"
+    },
+    {
+      "originalLocator": "remaining-local/cases/owned-safe-cleanup/outputs/revalidation.json",
+      "sourceSha256": "ea70de8bfa7a45947bd81109b6945fadd95fcbc0bf352c413de557fb145cd1a7",
+      "expectedSha256": "ea70de8bfa7a45947bd81109b6945fadd95fcbc0bf352c413de557fb145cd1a7",
+      "expectedHashMatches": true,
+      "bytes": 3286,
+      "publication": "projected-fields",
+      "reason": "Only a narrow inspected projection may be included. Private original remains unchanged.",
+      "projectedPath": "docs/releases/remediation-013/local/owned-safe-cleanup/review-a-05/proof/02-revalidation.json.excerpt.json",
+      "projectedSha256": "f61736869c32f8b27ffe5c9a57da267d2e68e70eaf38f200576e7059c83d447b"
+    },
+    {
+      "originalLocator": "remaining-local/cases/owned-safe-cleanup/outputs/completion.json",
+      "sourceSha256": "9530f75bd84ad5fecfb0c9082d0b99d3ed7f4022249cac5277fc937b4e7ee20d",
+      "expectedSha256": "9530f75bd84ad5fecfb0c9082d0b99d3ed7f4022249cac5277fc937b4e7ee20d",
+      "expectedHashMatches": true,
+      "bytes": 4187,
+      "publication": "omitted",
+      "reason": "Raw/native context, broad discovery, completion dump, or bulk source manifest is excluded. No protected payload is decoded."
+    }
+  ],
+  "projectionLimits": [
+    "This file projects the existing independent assessment and does not regrade the case.",
+    "Private source artifacts and omitted native operations remain private. Source digests bind originals, not transformed bytes.",
+    "Historical 0.1.3 observations do not qualify current main or a modified candidate."
+  ],
+  "statusMapping": {
+    "originalProposedStatus": "reduced-pass",
+    "canonicalStatus": "reduced-pass",
+    "rule": "No status alias is applied."
+  }
+}

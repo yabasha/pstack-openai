@@ -2,9 +2,9 @@
   "schemaVersion": 1,
   "kind": "pstack-package-discovery",
   "host": "codex",
-  "packageCommit": "5d05ab2458f4cd73c44b24265a3a1920b98b8cf4",
-  "packageVersion": "0.1.0",
-  "installedCopy": "/Users/digital-hawk/.codex/plugins/cache/yabasha-local/pstack-openai/0.1.0",
+  "packageCommit": "4513f3d706e6dfe9e396c80a74c490c3ebcec7a6",
+  "packageVersion": "0.1.5",
+  "installedCopy": "/Users/digital-hawk/Herd/pstack-provenance-20261018/015/runtime/plugins/cache/pstack-provenance-015/pstack-openai/0.1.5",
   "rootSkills": [
     "architect",
     "arena",
@@ -59,8 +59,8 @@
     "why"
   ],
   "excludedSkills": [
-    "automations/benny/skills/reproduce-and-fix-issues/SKILL.md",
-    "automations/benny/skills/setup-benny/SKILL.md",
-    "automations/benny/skills/triage-issue-reports/SKILL.md"
+    "automations/benny/skills/reproduce-and-fix-issues/REFERENCE.md",
+    "automations/benny/skills/setup-benny/REFERENCE.md",
+    "automations/benny/skills/triage-issue-reports/REFERENCE.md"
   ]
 }

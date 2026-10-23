@@ -1,0 +1,34 @@
+{
+  "schemaVersion": 1,
+  "kind": "native-command-event-excerpt",
+  "caseId": "real-app-contract",
+  "attemptId": "review-b-12",
+  "inputRevision": "63b1c3a33583a4e688ecaa34099383ccddf5169d",
+  "originalLocator": "work/notes_workflow_reruns/actors/real-app-contract/events.jsonl",
+  "sourceSha256": "e745759a37430b8fe7a58b7885244208b8a6a28cafd305767304bf56cdd8674f",
+  "itemId": "item_7",
+  "startedLine": 13,
+  "completedLine": 14,
+  "originalEventType": "item.completed",
+  "observedOperationType": "command_execution",
+  "command": "/bin/zsh -lc 'cat <installed-frozen-package>/skills/poteto-mode/playbooks/authoring-a-skill.md <installed-frozen-package>/skills/create-verification-skill/SKILL.md <local-user>/.codex/skills/.system/skill-creator/SKILL.md'",
+  "aggregatedOutputPrefix": "### Authoring or modifying a skill\n\n**You own the skill's voice.**\n\n1. Use the **create-skill** authoring skill when the session exposes it. This package does not ship that built-in dependency. Discover an available authoring workflow through [session capabilities](../../../references/host-capabilities.md), read its instructions and inspect its actual validator before using it. A supported host workflow may provide a capability-specific alternative, but is not the missing create-skill implementation. If neither workflow is available, report authoring blocked. With authorized local writes, offe",
+  "originalAggregatedOutputCharacters": 25186,
+  "exitCode": 0,
+  "status": "completed",
+  "scope": "This is a source read in the independently reviewed case actor.",
+  "clock": "The public event has no timestamp. Line order is retained. No duration or clock interval is inferred.",
+  "transformation": "Exact event fields selected. Absolute task and installed-package paths are replaced with declared placeholders. Output is a prefix, not the complete source read. No other event or browser context is included. Only these literal or explicitly loop-listed registered source names are matched. This does not prove every registered source path was read. Native callable metadata is corroborated against a scoped private callsite. Protected or unrelated payload contents are not copied or decoded.",
+  "sourceScopeMatchedByCommand": [
+    "skills/create-verification-skill/SKILL.md"
+  ],
+  "nativeCallBinding": {
+    "originalLocator": "work/notes_workflow_reruns/actors/real-app-contract/native-scoped.jsonl",
+    "sourceSha256": "9576d1fc84d5514a6cc78de70bddb337bf10cd83ca5a054b4aa32fa6cfc09fb8",
+    "line": 5,
+    "callId": "call_f41005d721244787a6815f9b848a0339",
+    "observedToolName": "exec",
+    "observedNestedCallsite": "tools.exec_command",
+    "corroboration": "The actual scoped native custom-tool call invokes tools.exec_command with the exact command parsed from this public command_execution event. Only the callable identity and locator are projected. Its surrounding payload remains private."
+  }
+}

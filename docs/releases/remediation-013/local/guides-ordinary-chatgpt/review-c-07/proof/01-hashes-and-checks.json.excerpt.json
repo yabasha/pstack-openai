@@ -1,0 +1,31 @@
+{
+  "kind": "selected-fixture-result-fields",
+  "caseId": "guides-ordinary-chatgpt",
+  "attemptId": "review-c-07",
+  "originalLocator": "remaining-local/cases/guides-ordinary-chatgpt/outputs/hashes-and-checks.json",
+  "sourceSha256": "4ae264ef97243862ba067f3aa36046d6e79c432fe04e19904b2013facaad8fdb",
+  "sourceBytes": 26091,
+  "transformation": "Named JSON fields selected by exact JSON Pointer. Task-owned absolute paths replaced with declared placeholders. Other fields omitted. These are result-artifact values, not synthesized tool execution evidence. Public selection is limited to eight short inspected fields. Longer output and unselected fields remain private.",
+  "fields": [
+    {
+      "pointer": "/caseId",
+      "value": "guides-ordinary-chatgpt"
+    },
+    {
+      "pointer": "/inputRevision",
+      "value": "b11706abb67a1fb2ad00ac1fac7518370bcc1e9f"
+    },
+    {
+      "pointer": "/status/exitCode",
+      "value": 0
+    },
+    {
+      "pointer": "/status/stdout",
+      "value": ""
+    },
+    {
+      "pointer": "/status/stderr",
+      "value": ""
+    }
+  ]
+}

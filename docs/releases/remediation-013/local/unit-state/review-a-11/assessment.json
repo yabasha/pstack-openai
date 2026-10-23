@@ -1,0 +1,573 @@
+{
+  "schemaVersion": 1,
+  "kind": "historical-independent-assessment-projection",
+  "caseId": "unit-state",
+  "attemptId": "review-a-11",
+  "startingMain": "4138e161c27cafffd2baaab6bf4ca53e86a57433",
+  "packageCommit": "51f209daf83cd97d64f89881d66533bb59dc57db",
+  "packageVersion": "0.1.3",
+  "inputRevision": "4a7dde94ab2778837e4c932e53cc3484d2e74dfd",
+  "originalProposedStatus": "blocked",
+  "evidenceStatus": "blocked",
+  "qualifiesCurrentMain": false,
+  "sourceReview": {
+    "originalLocator": "grades/grade_remediation_local_a/result.json",
+    "sourceSha256": "9cc1f7ebfcf0f02bdaaabc03a16ca8ef1a0dcc165259e873d7be84affe57bc2f",
+    "jsonPointer": "/cases/10",
+    "reviewer": "/root/grade_remediation_local_a",
+    "requestedModel": "inherit-parent",
+    "actualModel": "unknown"
+  },
+  "findings": [
+    "Two independent source read/hash units completed and seven children were reconciled. Actual helper writes and persisted drain receipts exist.",
+    "Current generation has zero of two independently verified stack heads. Historical ledger passes were not reused for changed heads; the blocked integration verifier remains blocked.",
+    "The original authoritative frontier failed through global configuration EPERM. A later isolated documented gt relocation repaired that location error, but real PR metadata is still absent, so authoritative frontier qualification remains blocked.",
+    "Some pointer inspection preceded enqueue, and complete supporting source reads followed initial work. These chronology defects remain real.",
+    "The unchanged two-current-verified-units-landed predicate remains false. Read/hash completion and helper row counts cannot substitute for current program completion."
+  ],
+  "limits": [
+    "Current generation has zero of two independently verified stack heads. Historical ledger passes were not reused for changed heads; the blocked integration verifier remains blocked.",
+    "The original authoritative frontier failed through global configuration EPERM. A later isolated documented gt relocation repaired that location error, but real PR metadata is still absent, so authoritative frontier qualification remains blocked.",
+    "Some pointer inspection preceded enqueue, and complete supporting source reads followed initial work. These chronology defects remain real.",
+    "The unchanged two-current-verified-units-landed predicate remains false. Read/hash completion and helper row counts cannot substitute for current program completion."
+  ],
+  "chronology": {
+    "preserveAllEarlierAttempts": true,
+    "methodConformanceClaim": false,
+    "notes": [
+      "The original authoritative frontier failed through global configuration EPERM. A later isolated documented gt relocation repaired that location error, but real PR metadata is still absent, so authoritative frontier qualification remains blocked.",
+      "Some pointer inspection preceded enqueue, and complete supporting source reads followed initial work. These chronology defects remain real."
+    ]
+  },
+  "predicate": [
+    {
+      "id": 1,
+      "text": "Read full mode, original program roles, playbook and direct helper/support contracts. Keep coordinator out of code; use scoped fix units and continuous authorized landing. Scale cheap units without inventing independent verifiers.",
+      "status": "unmet",
+      "basis": [
+        "Two independent source read/hash units completed and seven children were reconciled. Actual helper writes and persisted drain receipts exist.",
+        "Current generation has zero of two independently verified stack heads. Historical ledger passes were not reused for changed heads; the blocked integration verifier remains blocked.",
+        "The original authoritative frontier failed through global configuration EPERM. A later isolated documented gt relocation repaired that location error, but real PR metadata is still absent, so authoritative frontier qualification remains blocked.",
+        "Some pointer inspection preceded enqueue, and complete supporting source reads followed initial work. These chronology defects remain real.",
+        "The unchanged two-current-verified-units-landed predicate remains false. Read/hash completion and helper row counts cannot substitute for current program completion."
+      ],
+      "source": "docs/parity/cases/playbooks/orchestrate.json",
+      "evidence": [
+        {
+          "path": "<private-run>/work/helper_workflow_reruns/projects/release-program/deliverables/result.json",
+          "line": 1,
+          "sha256": "548da88df1fd0daa633d1531e4fa9e852017c1536ff085630ebc94f2c9c9b679"
+        },
+        {
+          "path": "<private-run>/work/helper_workflow_reruns/projects/release-program/deliverables/native-errors.md",
+          "line": 1,
+          "sha256": "ad95729d7bd6c5d7838682b3e5c29ef618fa31c6953ffafcd4fcbe473e4dcdb4"
+        },
+        {
+          "path": "<private-run>/work/helper_workflow_reruns/projects/release-program/deliverables/fixture-generation2.json",
+          "line": 1,
+          "sha256": "ac86a6c37d33f524d302e530f4ae7bfc999ae63bc070dfae1687ae265455b949"
+        },
+        {
+          "path": "<private-run>/work/helper_workflow_reruns/projects/release-program/deliverables/audit/report.md",
+          "line": 1,
+          "sha256": "56f8f8125bb92c33164baa5d2921ab9b8d1b49e38b2926e76a9d7acbe4d6fcbf"
+        },
+        {
+          "path": "<private-run>/work/helper_workflow_reruns/projects/release-program/deliverables/receipts/real-frontier.stderr",
+          "line": 1,
+          "sha256": "3b059e8e4cba127aa3df53365faf46b8ec04a695fde67d8f28ac7e050e80a743"
+        },
+        {
+          "path": "<private-run>/work/helper_workflow_reruns/projects/release-program/deliverables/orchestrate/release/units.tsv",
+          "line": 1,
+          "sha256": "fb0b48c1a3c2cb456d3569f5495a5899b7dd21aa4b7fd9ae8f0f7a83472089bd"
+        },
+        {
+          "path": "<private-run>/work/helper_workflow_reruns/projects/release-program/deliverables/orchestrate/release/ledger.tsv",
+          "line": 1,
+          "sha256": "8408f52cd8e2a58c3bf04cfc0f484dcd855dfcd1e30b62ba9efada125e85d8de"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "text": "Use immutable identity, exact input SHA, exclusive output owner/path, append-only attempts, complete brief fields and verbatim standing orders on each spawn/resume. Remote placement, nesting, background execution and model diversity require observed bindings.",
+      "status": "unmet",
+      "basis": [
+        "Two independent source read/hash units completed and seven children were reconciled. Actual helper writes and persisted drain receipts exist.",
+        "Current generation has zero of two independently verified stack heads. Historical ledger passes were not reused for changed heads; the blocked integration verifier remains blocked.",
+        "The original authoritative frontier failed through global configuration EPERM. A later isolated documented gt relocation repaired that location error, but real PR metadata is still absent, so authoritative frontier qualification remains blocked.",
+        "Some pointer inspection preceded enqueue, and complete supporting source reads followed initial work. These chronology defects remain real.",
+        "The unchanged two-current-verified-units-landed predicate remains false. Read/hash completion and helper row counts cannot substitute for current program completion."
+      ],
+      "source": "docs/parity/cases/playbooks/orchestrate.json",
+      "evidence": [
+        {
+          "path": "<private-run>/work/helper_workflow_reruns/projects/release-program/deliverables/result.json",
+          "line": 1,
+          "sha256": "548da88df1fd0daa633d1531e4fa9e852017c1536ff085630ebc94f2c9c9b679"
+        },
+        {
+          "path": "<private-run>/work/helper_workflow_reruns/projects/release-program/deliverables/native-errors.md",
+          "line": 1,
+          "sha256": "ad95729d7bd6c5d7838682b3e5c29ef618fa31c6953ffafcd4fcbe473e4dcdb4"
+        },
+        {
+          "path": "<private-run>/work/helper_workflow_reruns/projects/release-program/deliverables/fixture-generation2.json",
+          "line": 1,
+          "sha256": "ac86a6c37d33f524d302e530f4ae7bfc999ae63bc070dfae1687ae265455b949"
+        },
+        {
+          "path": "<private-run>/work/helper_workflow_reruns/projects/release-program/deliverables/audit/report.md",
+          "line": 1,
+          "sha256": "56f8f8125bb92c33164baa5d2921ab9b8d1b49e38b2926e76a9d7acbe4d6fcbf"
+        },
+        {
+          "path": "<private-run>/work/helper_workflow_reruns/projects/release-program/deliverables/receipts/real-frontier.stderr",
+          "line": 1,
+          "sha256": "3b059e8e4cba127aa3df53365faf46b8ec04a695fde67d8f28ac7e050e80a743"
+        },
+        {
+          "path": "<private-run>/work/helper_workflow_reruns/projects/release-program/deliverables/orchestrate/release/units.tsv",
+          "line": 1,
+          "sha256": "fb0b48c1a3c2cb456d3569f5495a5899b7dd21aa4b7fd9ae8f0f7a83472089bd"
+        },
+        {
+          "path": "<private-run>/work/helper_workflow_reruns/projects/release-program/deliverables/orchestrate/release/ledger.tsv",
+          "line": 1,
+          "sha256": "8408f52cd8e2a58c3bf04cfc0f484dcd855dfcd1e30b62ba9efada125e85d8de"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "text": "Use the actual explicit external store CLI with pinned prerequisites. Record real worker identity/results separately; arbitrary unit-state strings and evidence pointers are not checked by the helper.",
+      "status": "satisfied",
+      "basis": [
+        "Two independent source read/hash units completed and seven children were reconciled. Actual helper writes and persisted drain receipts exist.",
+        "Current generation has zero of two independently verified stack heads. Historical ledger passes were not reused for changed heads; the blocked integration verifier remains blocked.",
+        "The original authoritative frontier failed through global configuration EPERM. A later isolated documented gt relocation repaired that location error, but real PR metadata is still absent, so authoritative frontier qualification remains blocked.",
+        "Some pointer inspection preceded enqueue, and complete supporting source reads followed initial work. These chronology defects remain real.",
+        "The unchanged two-current-verified-units-landed predicate remains false. Read/hash completion and helper row counts cannot substitute for current program completion."
+      ],
+      "source": "docs/parity/cases/playbooks/orchestrate.json",
+      "evidence": [
+        {
+          "path": "<private-run>/work/helper_workflow_reruns/projects/release-program/deliverables/result.json",
+          "line": 1,
+          "sha256": "548da88df1fd0daa633d1531e4fa9e852017c1536ff085630ebc94f2c9c9b679"
+        },
+        {
+          "path": "<private-run>/work/helper_workflow_reruns/projects/release-program/deliverables/native-errors.md",
+          "line": 1,
+          "sha256": "ad95729d7bd6c5d7838682b3e5c29ef618fa31c6953ffafcd4fcbe473e4dcdb4"
+        },
+        {
+          "path": "<private-run>/work/helper_workflow_reruns/projects/release-program/deliverables/fixture-generation2.json",
+          "line": 1,
+          "sha256": "ac86a6c37d33f524d302e530f4ae7bfc999ae63bc070dfae1687ae265455b949"
+        },
+        {
+          "path": "<private-run>/work/helper_workflow_reruns/projects/release-program/deliverables/audit/report.md",
+          "line": 1,
+          "sha256": "56f8f8125bb92c33164baa5d2921ab9b8d1b49e38b2926e76a9d7acbe4d6fcbf"
+        },
+        {
+          "path": "<private-run>/work/helper_workflow_reruns/projects/release-program/deliverables/receipts/real-frontier.stderr",
+          "line": 1,
+          "sha256": "3b059e8e4cba127aa3df53365faf46b8ec04a695fde67d8f28ac7e050e80a743"
+        },
+        {
+          "path": "<private-run>/work/helper_workflow_reruns/projects/release-program/deliverables/orchestrate/release/units.tsv",
+          "line": 1,
+          "sha256": "fb0b48c1a3c2cb456d3569f5495a5899b7dd21aa4b7fd9ae8f0f7a83472089bd"
+        },
+        {
+          "path": "<private-run>/work/helper_workflow_reruns/projects/release-program/deliverables/orchestrate/release/ledger.tsv",
+          "line": 1,
+          "sha256": "8408f52cd8e2a58c3bf04cfc0f484dcd855dfcd1e30b62ba9efada125e85d8de"
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "text": "Pilot one unit end to end before a rolling window. Relay upstream context, audit briefs alongside the wave, drain only at the four named boundaries and preserve every pointer through a peek receipt and readback before destructive drain.",
+      "status": "unmet",
+      "basis": [
+        "Two independent source read/hash units completed and seven children were reconciled. Actual helper writes and persisted drain receipts exist.",
+        "Current generation has zero of two independently verified stack heads. Historical ledger passes were not reused for changed heads; the blocked integration verifier remains blocked.",
+        "The original authoritative frontier failed through global configuration EPERM. A later isolated documented gt relocation repaired that location error, but real PR metadata is still absent, so authoritative frontier qualification remains blocked.",
+        "Some pointer inspection preceded enqueue, and complete supporting source reads followed initial work. These chronology defects remain real.",
+        "The unchanged two-current-verified-units-landed predicate remains false. Read/hash completion and helper row counts cannot substitute for current program completion."
+      ],
+      "source": "docs/parity/cases/playbooks/orchestrate.json",
+      "evidence": [
+        {
+          "path": "<private-run>/work/helper_workflow_reruns/projects/release-program/deliverables/result.json",
+          "line": 1,
+          "sha256": "548da88df1fd0daa633d1531e4fa9e852017c1536ff085630ebc94f2c9c9b679"
+        },
+        {
+          "path": "<private-run>/work/helper_workflow_reruns/projects/release-program/deliverables/native-errors.md",
+          "line": 1,
+          "sha256": "ad95729d7bd6c5d7838682b3e5c29ef618fa31c6953ffafcd4fcbe473e4dcdb4"
+        },
+        {
+          "path": "<private-run>/work/helper_workflow_reruns/projects/release-program/deliverables/fixture-generation2.json",
+          "line": 1,
+          "sha256": "ac86a6c37d33f524d302e530f4ae7bfc999ae63bc070dfae1687ae265455b949"
+        },
+        {
+          "path": "<private-run>/work/helper_workflow_reruns/projects/release-program/deliverables/audit/report.md",
+          "line": 1,
+          "sha256": "56f8f8125bb92c33164baa5d2921ab9b8d1b49e38b2926e76a9d7acbe4d6fcbf"
+        },
+        {
+          "path": "<private-run>/work/helper_workflow_reruns/projects/release-program/deliverables/receipts/real-frontier.stderr",
+          "line": 1,
+          "sha256": "3b059e8e4cba127aa3df53365faf46b8ec04a695fde67d8f28ac7e050e80a743"
+        },
+        {
+          "path": "<private-run>/work/helper_workflow_reruns/projects/release-program/deliverables/orchestrate/release/units.tsv",
+          "line": 1,
+          "sha256": "fb0b48c1a3c2cb456d3569f5495a5899b7dd21aa4b7fd9ae8f0f7a83472089bd"
+        },
+        {
+          "path": "<private-run>/work/helper_workflow_reruns/projects/release-program/deliverables/orchestrate/release/ledger.tsv",
+          "line": 1,
+          "sha256": "8408f52cd8e2a58c3bf04cfc0f484dcd855dfcd1e30b62ba9efada125e85d8de"
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "text": "Classify all pointers, inspect artifacts before recording rows, preserve arrivals for the next batch, reconcile every child and late zombie against exact assignment and current frontier. Do not accept stale or cancelled partial work.",
+      "status": "unmet",
+      "basis": [
+        "Two independent source read/hash units completed and seven children were reconciled. Actual helper writes and persisted drain receipts exist.",
+        "Current generation has zero of two independently verified stack heads. Historical ledger passes were not reused for changed heads; the blocked integration verifier remains blocked.",
+        "The original authoritative frontier failed through global configuration EPERM. A later isolated documented gt relocation repaired that location error, but real PR metadata is still absent, so authoritative frontier qualification remains blocked.",
+        "Some pointer inspection preceded enqueue, and complete supporting source reads followed initial work. These chronology defects remain real.",
+        "The unchanged two-current-verified-units-landed predicate remains false. Read/hash completion and helper row counts cannot substitute for current program completion."
+      ],
+      "source": "docs/parity/cases/playbooks/orchestrate.json",
+      "evidence": [
+        {
+          "path": "<private-run>/work/helper_workflow_reruns/projects/release-program/deliverables/result.json",
+          "line": 1,
+          "sha256": "548da88df1fd0daa633d1531e4fa9e852017c1536ff085630ebc94f2c9c9b679"
+        },
+        {
+          "path": "<private-run>/work/helper_workflow_reruns/projects/release-program/deliverables/native-errors.md",
+          "line": 1,
+          "sha256": "ad95729d7bd6c5d7838682b3e5c29ef618fa31c6953ffafcd4fcbe473e4dcdb4"
+        },
+        {
+          "path": "<private-run>/work/helper_workflow_reruns/projects/release-program/deliverables/fixture-generation2.json",
+          "line": 1,
+          "sha256": "ac86a6c37d33f524d302e530f4ae7bfc999ae63bc070dfae1687ae265455b949"
+        },
+        {
+          "path": "<private-run>/work/helper_workflow_reruns/projects/release-program/deliverables/audit/report.md",
+          "line": 1,
+          "sha256": "56f8f8125bb92c33164baa5d2921ab9b8d1b49e38b2926e76a9d7acbe4d6fcbf"
+        },
+        {
+          "path": "<private-run>/work/helper_workflow_reruns/projects/release-program/deliverables/receipts/real-frontier.stderr",
+          "line": 1,
+          "sha256": "3b059e8e4cba127aa3df53365faf46b8ec04a695fde67d8f28ac7e050e80a743"
+        },
+        {
+          "path": "<private-run>/work/helper_workflow_reruns/projects/release-program/deliverables/orchestrate/release/units.tsv",
+          "line": 1,
+          "sha256": "fb0b48c1a3c2cb456d3569f5495a5899b7dd21aa4b7fd9ae8f0f7a83472089bd"
+        },
+        {
+          "path": "<private-run>/work/helper_workflow_reruns/projects/release-program/deliverables/orchestrate/release/ledger.tsv",
+          "line": 1,
+          "sha256": "8408f52cd8e2a58c3bf04cfc0f484dcd855dfcd1e30b62ba9efada125e85d8de"
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "text": "One stacker per stack and one babysitter per generation. Discover the ordered frontier from real stack-owner metadata and git SHAs; missing metadata blocks that dependency. Workers never run gt or rebase. External actions retain explicit authorization and interrupted unknown outcomes block replay.",
+      "status": "unmet",
+      "basis": [
+        "Two independent source read/hash units completed and seven children were reconciled. Actual helper writes and persisted drain receipts exist.",
+        "Current generation has zero of two independently verified stack heads. Historical ledger passes were not reused for changed heads; the blocked integration verifier remains blocked.",
+        "The original authoritative frontier failed through global configuration EPERM. A later isolated documented gt relocation repaired that location error, but real PR metadata is still absent, so authoritative frontier qualification remains blocked.",
+        "Some pointer inspection preceded enqueue, and complete supporting source reads followed initial work. These chronology defects remain real.",
+        "The unchanged two-current-verified-units-landed predicate remains false. Read/hash completion and helper row counts cannot substitute for current program completion."
+      ],
+      "source": "docs/parity/cases/playbooks/orchestrate.json",
+      "evidence": [
+        {
+          "path": "<private-run>/work/helper_workflow_reruns/projects/release-program/deliverables/result.json",
+          "line": 1,
+          "sha256": "548da88df1fd0daa633d1531e4fa9e852017c1536ff085630ebc94f2c9c9b679"
+        },
+        {
+          "path": "<private-run>/work/helper_workflow_reruns/projects/release-program/deliverables/native-errors.md",
+          "line": 1,
+          "sha256": "ad95729d7bd6c5d7838682b3e5c29ef618fa31c6953ffafcd4fcbe473e4dcdb4"
+        },
+        {
+          "path": "<private-run>/work/helper_workflow_reruns/projects/release-program/deliverables/fixture-generation2.json",
+          "line": 1,
+          "sha256": "ac86a6c37d33f524d302e530f4ae7bfc999ae63bc070dfae1687ae265455b949"
+        },
+        {
+          "path": "<private-run>/work/helper_workflow_reruns/projects/release-program/deliverables/audit/report.md",
+          "line": 1,
+          "sha256": "56f8f8125bb92c33164baa5d2921ab9b8d1b49e38b2926e76a9d7acbe4d6fcbf"
+        },
+        {
+          "path": "<private-run>/work/helper_workflow_reruns/projects/release-program/deliverables/receipts/real-frontier.stderr",
+          "line": 1,
+          "sha256": "3b059e8e4cba127aa3df53365faf46b8ec04a695fde67d8f28ac7e050e80a743"
+        },
+        {
+          "path": "<private-run>/work/helper_workflow_reruns/projects/release-program/deliverables/orchestrate/release/units.tsv",
+          "line": 1,
+          "sha256": "fb0b48c1a3c2cb456d3569f5495a5899b7dd21aa4b7fd9ae8f0f7a83472089bd"
+        },
+        {
+          "path": "<private-run>/work/helper_workflow_reruns/projects/release-program/deliverables/orchestrate/release/ledger.tsv",
+          "line": 1,
+          "sha256": "8408f52cd8e2a58c3bf04cfc0f484dcd855dfcd1e30b62ba9efada125e85d8de"
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "text": "Check ledger by current PR plus full head SHA. Inspect evidence and enforce verifier precedence outside the helper. New heads require verification, historical summary counts are not current passes, type-check-only is insufficient for behavioral work and blocked/failed verdicts are not passes.",
+      "status": "unmet",
+      "basis": [
+        "Two independent source read/hash units completed and seven children were reconciled. Actual helper writes and persisted drain receipts exist.",
+        "Current generation has zero of two independently verified stack heads. Historical ledger passes were not reused for changed heads; the blocked integration verifier remains blocked.",
+        "The original authoritative frontier failed through global configuration EPERM. A later isolated documented gt relocation repaired that location error, but real PR metadata is still absent, so authoritative frontier qualification remains blocked.",
+        "Some pointer inspection preceded enqueue, and complete supporting source reads followed initial work. These chronology defects remain real.",
+        "The unchanged two-current-verified-units-landed predicate remains false. Read/hash completion and helper row counts cannot substitute for current program completion."
+      ],
+      "source": "docs/parity/cases/playbooks/orchestrate.json",
+      "evidence": [
+        {
+          "path": "<private-run>/work/helper_workflow_reruns/projects/release-program/deliverables/result.json",
+          "line": 1,
+          "sha256": "548da88df1fd0daa633d1531e4fa9e852017c1536ff085630ebc94f2c9c9b679"
+        },
+        {
+          "path": "<private-run>/work/helper_workflow_reruns/projects/release-program/deliverables/native-errors.md",
+          "line": 1,
+          "sha256": "ad95729d7bd6c5d7838682b3e5c29ef618fa31c6953ffafcd4fcbe473e4dcdb4"
+        },
+        {
+          "path": "<private-run>/work/helper_workflow_reruns/projects/release-program/deliverables/fixture-generation2.json",
+          "line": 1,
+          "sha256": "ac86a6c37d33f524d302e530f4ae7bfc999ae63bc070dfae1687ae265455b949"
+        },
+        {
+          "path": "<private-run>/work/helper_workflow_reruns/projects/release-program/deliverables/audit/report.md",
+          "line": 1,
+          "sha256": "56f8f8125bb92c33164baa5d2921ab9b8d1b49e38b2926e76a9d7acbe4d6fcbf"
+        },
+        {
+          "path": "<private-run>/work/helper_workflow_reruns/projects/release-program/deliverables/receipts/real-frontier.stderr",
+          "line": 1,
+          "sha256": "3b059e8e4cba127aa3df53365faf46b8ec04a695fde67d8f28ac7e050e80a743"
+        },
+        {
+          "path": "<private-run>/work/helper_workflow_reruns/projects/release-program/deliverables/orchestrate/release/units.tsv",
+          "line": 1,
+          "sha256": "fb0b48c1a3c2cb456d3569f5495a5899b7dd21aa4b7fd9ae8f0f7a83472089bd"
+        },
+        {
+          "path": "<private-run>/work/helper_workflow_reruns/projects/release-program/deliverables/orchestrate/release/ledger.tsv",
+          "line": 1,
+          "sha256": "8408f52cd8e2a58c3bf04cfc0f484dcd855dfcd1e30b62ba9efada125e85d8de"
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "text": "Bound source failure retries to two while obeying the stricter assignment allowance of one retry for missing SHA/method evidence. Stop tree-wide refills on invalid upstream input, preserve terminal handoff and review stale lock ownership before force.",
+      "status": "satisfied",
+      "basis": [
+        "Two independent source read/hash units completed and seven children were reconciled. Actual helper writes and persisted drain receipts exist.",
+        "Current generation has zero of two independently verified stack heads. Historical ledger passes were not reused for changed heads; the blocked integration verifier remains blocked.",
+        "The original authoritative frontier failed through global configuration EPERM. A later isolated documented gt relocation repaired that location error, but real PR metadata is still absent, so authoritative frontier qualification remains blocked.",
+        "Some pointer inspection preceded enqueue, and complete supporting source reads followed initial work. These chronology defects remain real.",
+        "The unchanged two-current-verified-units-landed predicate remains false. Read/hash completion and helper row counts cannot substitute for current program completion."
+      ],
+      "source": "docs/parity/cases/playbooks/orchestrate.json",
+      "evidence": [
+        {
+          "path": "<private-run>/work/helper_workflow_reruns/projects/release-program/deliverables/result.json",
+          "line": 1,
+          "sha256": "548da88df1fd0daa633d1531e4fa9e852017c1536ff085630ebc94f2c9c9b679"
+        },
+        {
+          "path": "<private-run>/work/helper_workflow_reruns/projects/release-program/deliverables/native-errors.md",
+          "line": 1,
+          "sha256": "ad95729d7bd6c5d7838682b3e5c29ef618fa31c6953ffafcd4fcbe473e4dcdb4"
+        },
+        {
+          "path": "<private-run>/work/helper_workflow_reruns/projects/release-program/deliverables/fixture-generation2.json",
+          "line": 1,
+          "sha256": "ac86a6c37d33f524d302e530f4ae7bfc999ae63bc070dfae1687ae265455b949"
+        },
+        {
+          "path": "<private-run>/work/helper_workflow_reruns/projects/release-program/deliverables/audit/report.md",
+          "line": 1,
+          "sha256": "56f8f8125bb92c33164baa5d2921ab9b8d1b49e38b2926e76a9d7acbe4d6fcbf"
+        },
+        {
+          "path": "<private-run>/work/helper_workflow_reruns/projects/release-program/deliverables/receipts/real-frontier.stderr",
+          "line": 1,
+          "sha256": "3b059e8e4cba127aa3df53365faf46b8ec04a695fde67d8f28ac7e050e80a743"
+        },
+        {
+          "path": "<private-run>/work/helper_workflow_reruns/projects/release-program/deliverables/orchestrate/release/units.tsv",
+          "line": 1,
+          "sha256": "fb0b48c1a3c2cb456d3569f5495a5899b7dd21aa4b7fd9ae8f0f7a83472089bd"
+        },
+        {
+          "path": "<private-run>/work/helper_workflow_reruns/projects/release-program/deliverables/orchestrate/release/ledger.tsv",
+          "line": 1,
+          "sha256": "8408f52cd8e2a58c3bf04cfc0f484dcd855dfcd1e30b62ba9efada125e85d8de"
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "text": "Keep overview append-only, decision trail auditable, gates explicit and status derived. Close only after final drain, terminal reconciliation and predicate verification on the real artifact. Report predicate/counts, tracks/landed work, PRs/SHAs, verdicts, abandonments/reasons, gates, store/trail paths and review limits.",
+      "status": "unmet",
+      "basis": [
+        "Two independent source read/hash units completed and seven children were reconciled. Actual helper writes and persisted drain receipts exist.",
+        "Current generation has zero of two independently verified stack heads. Historical ledger passes were not reused for changed heads; the blocked integration verifier remains blocked.",
+        "The original authoritative frontier failed through global configuration EPERM. A later isolated documented gt relocation repaired that location error, but real PR metadata is still absent, so authoritative frontier qualification remains blocked.",
+        "Some pointer inspection preceded enqueue, and complete supporting source reads followed initial work. These chronology defects remain real.",
+        "The unchanged two-current-verified-units-landed predicate remains false. Read/hash completion and helper row counts cannot substitute for current program completion."
+      ],
+      "source": "docs/parity/cases/playbooks/orchestrate.json",
+      "evidence": [
+        {
+          "path": "<private-run>/work/helper_workflow_reruns/projects/release-program/deliverables/result.json",
+          "line": 1,
+          "sha256": "548da88df1fd0daa633d1531e4fa9e852017c1536ff085630ebc94f2c9c9b679"
+        },
+        {
+          "path": "<private-run>/work/helper_workflow_reruns/projects/release-program/deliverables/native-errors.md",
+          "line": 1,
+          "sha256": "ad95729d7bd6c5d7838682b3e5c29ef618fa31c6953ffafcd4fcbe473e4dcdb4"
+        },
+        {
+          "path": "<private-run>/work/helper_workflow_reruns/projects/release-program/deliverables/fixture-generation2.json",
+          "line": 1,
+          "sha256": "ac86a6c37d33f524d302e530f4ae7bfc999ae63bc070dfae1687ae265455b949"
+        },
+        {
+          "path": "<private-run>/work/helper_workflow_reruns/projects/release-program/deliverables/audit/report.md",
+          "line": 1,
+          "sha256": "56f8f8125bb92c33164baa5d2921ab9b8d1b49e38b2926e76a9d7acbe4d6fcbf"
+        },
+        {
+          "path": "<private-run>/work/helper_workflow_reruns/projects/release-program/deliverables/receipts/real-frontier.stderr",
+          "line": 1,
+          "sha256": "3b059e8e4cba127aa3df53365faf46b8ec04a695fde67d8f28ac7e050e80a743"
+        },
+        {
+          "path": "<private-run>/work/helper_workflow_reruns/projects/release-program/deliverables/orchestrate/release/units.tsv",
+          "line": 1,
+          "sha256": "fb0b48c1a3c2cb456d3569f5495a5899b7dd21aa4b7fd9ae8f0f7a83472089bd"
+        },
+        {
+          "path": "<private-run>/work/helper_workflow_reruns/projects/release-program/deliverables/orchestrate/release/ledger.tsv",
+          "line": 1,
+          "sha256": "8408f52cd8e2a58c3bf04cfc0f484dcd855dfcd1e30b62ba9efada125e85d8de"
+        }
+      ]
+    }
+  ],
+  "sourceArtifactBindings": [
+    {
+      "originalLocator": "work/helper_workflow_reruns/projects/release-program/deliverables/result.json",
+      "sourceSha256": "548da88df1fd0daa633d1531e4fa9e852017c1536ff085630ebc94f2c9c9b679",
+      "expectedSha256": "548da88df1fd0daa633d1531e4fa9e852017c1536ff085630ebc94f2c9c9b679",
+      "expectedHashMatches": true,
+      "bytes": 22910,
+      "publication": "projected-fields",
+      "reason": "Only a narrow inspected projection may be included. Private original remains unchanged.",
+      "projectedPath": "docs/releases/remediation-013/local/unit-state/review-a-11/proof/01-result.json.excerpt.json",
+      "projectedSha256": "0a558eb12015a4c0383009f5936f94dca756857a183ea31b09ab584e31affc5c"
+    },
+    {
+      "originalLocator": "work/helper_workflow_reruns/projects/release-program/deliverables/native-errors.md",
+      "sourceSha256": "ad95729d7bd6c5d7838682b3e5c29ef618fa31c6953ffafcd4fcbe473e4dcdb4",
+      "expectedSha256": "ad95729d7bd6c5d7838682b3e5c29ef618fa31c6953ffafcd4fcbe473e4dcdb4",
+      "expectedHashMatches": true,
+      "bytes": 3483,
+      "publication": "omitted",
+      "reason": "Only a narrow inspected projection may be included. Private original remains unchanged."
+    },
+    {
+      "originalLocator": "work/helper_workflow_reruns/projects/release-program/deliverables/fixture-generation2.json",
+      "sourceSha256": "ac86a6c37d33f524d302e530f4ae7bfc999ae63bc070dfae1687ae265455b949",
+      "expectedSha256": "ac86a6c37d33f524d302e530f4ae7bfc999ae63bc070dfae1687ae265455b949",
+      "expectedHashMatches": true,
+      "bytes": 946,
+      "publication": "projected-fields",
+      "reason": "Only a narrow inspected projection may be included. Private original remains unchanged.",
+      "projectedPath": "docs/releases/remediation-013/local/unit-state/review-a-11/proof/02-fixture-generation2.json.excerpt.json",
+      "projectedSha256": "99da03827c94287b5d58539233f97d4f84fbd2efc2a7b419a18ae78d6ed80779"
+    },
+    {
+      "originalLocator": "work/helper_workflow_reruns/projects/release-program/deliverables/audit/report.md",
+      "sourceSha256": "56f8f8125bb92c33164baa5d2921ab9b8d1b49e38b2926e76a9d7acbe4d6fcbf",
+      "expectedSha256": "56f8f8125bb92c33164baa5d2921ab9b8d1b49e38b2926e76a9d7acbe4d6fcbf",
+      "expectedHashMatches": true,
+      "bytes": 4926,
+      "publication": "omitted",
+      "reason": "Only a narrow inspected projection may be included. Private original remains unchanged."
+    },
+    {
+      "originalLocator": "work/helper_workflow_reruns/projects/release-program/deliverables/receipts/real-frontier.stderr",
+      "sourceSha256": "3b059e8e4cba127aa3df53365faf46b8ec04a695fde67d8f28ac7e050e80a743",
+      "expectedSha256": "3b059e8e4cba127aa3df53365faf46b8ec04a695fde67d8f28ac7e050e80a743",
+      "expectedHashMatches": true,
+      "bytes": 209,
+      "publication": "omitted",
+      "reason": "Only a narrow inspected projection may be included. Private original remains unchanged."
+    },
+    {
+      "originalLocator": "work/helper_workflow_reruns/projects/release-program/deliverables/orchestrate/release/units.tsv",
+      "sourceSha256": "fb0b48c1a3c2cb456d3569f5495a5899b7dd21aa4b7fd9ae8f0f7a83472089bd",
+      "expectedSha256": "fb0b48c1a3c2cb456d3569f5495a5899b7dd21aa4b7fd9ae8f0f7a83472089bd",
+      "expectedHashMatches": true,
+      "bytes": 2096,
+      "publication": "omitted",
+      "reason": "Only a narrow inspected projection may be included. Private original remains unchanged."
+    },
+    {
+      "originalLocator": "work/helper_workflow_reruns/projects/release-program/deliverables/orchestrate/release/ledger.tsv",
+      "sourceSha256": "8408f52cd8e2a58c3bf04cfc0f484dcd855dfcd1e30b62ba9efada125e85d8de",
+      "expectedSha256": "8408f52cd8e2a58c3bf04cfc0f484dcd855dfcd1e30b62ba9efada125e85d8de",
+      "expectedHashMatches": true,
+      "bytes": 1018,
+      "publication": "omitted",
+      "reason": "Only a narrow inspected projection may be included. Private original remains unchanged."
+    }
+  ],
+  "projectionLimits": [
+    "This file projects the existing independent assessment and does not regrade the case.",
+    "Private source artifacts and omitted native operations remain private. Source digests bind originals, not transformed bytes.",
+    "Historical 0.1.3 observations do not qualify current main or a modified candidate."
+  ],
+  "statusMapping": {
+    "originalProposedStatus": "blocked",
+    "canonicalStatus": "blocked",
+    "rule": "No status alias is applied."
+  }
+}

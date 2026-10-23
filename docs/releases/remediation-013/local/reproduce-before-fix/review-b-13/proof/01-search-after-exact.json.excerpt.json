@@ -1,0 +1,24 @@
+{
+  "kind": "selected-fixture-result-fields",
+  "caseId": "reproduce-before-fix",
+  "attemptId": "review-b-13",
+  "originalLocator": "work/notes_workflow_reruns/projects/reproduce-before-fix/outputs/search-after-exact.json",
+  "sourceSha256": "c7346771c676d93cdbac424bc59876ee7f0420abd9e4b4de0ee35c87cd143a08",
+  "sourceBytes": 123,
+  "transformation": "Named JSON fields selected by exact JSON Pointer. Task-owned absolute paths replaced with declared placeholders. Other fields omitted. These are result-artifact values, not synthesized tool execution evidence. Public selection is limited to eight short inspected fields. Longer output and unselected fields remain private.",
+  "fields": [
+    {
+      "pointer": "/command",
+      "value": [
+        "bun",
+        "--no-install",
+        "test",
+        "./tests/search-regression.test.mjs"
+      ]
+    },
+    {
+      "pointer": "/exitCode",
+      "value": 0
+    }
+  ]
+}

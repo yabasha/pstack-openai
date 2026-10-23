@@ -1,0 +1,24 @@
+{
+  "kind": "selected-fixture-result-fields",
+  "caseId": "boundary-design",
+  "attemptId": "review-b-10",
+  "originalLocator": "work/local_compiler_cases/projects/pricing-compatibility-corrected/deliverables/method-receipt.json",
+  "sourceSha256": "a8b302ddd5f487106c499c5a43c83c61f8dae3fa16a452afc0bdad50a1fb75b2",
+  "sourceBytes": 6367,
+  "transformation": "Named JSON fields selected by exact JSON Pointer. Task-owned absolute paths replaced with declared placeholders. Other fields omitted. These are result-artifact values, not synthesized tool execution evidence. Public selection is limited to eight short inspected fields. Longer output and unselected fields remain private.",
+  "fields": [
+    {
+      "pointer": "/inputRevision",
+      "value": "931f3a170b4f7d4b46cc2e1442d5d4268e3d1a7d"
+    },
+    {
+      "pointer": "/limits",
+      "value": [
+        "Actual model identities unknown; no model diversity claim",
+        "No direct slash skill invocation; full frozen workflows executed through native tools",
+        "No host parity validator or overall workflow grade claimed",
+        "Rejected full-history candidates remain quarantined"
+      ]
+    }
+  ]
+}

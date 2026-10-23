@@ -1,0 +1,23 @@
+{
+  "kind": "selected-fixture-result-fields",
+  "caseId": "unavailable-persistence",
+  "attemptId": "review-a-02",
+  "originalLocator": "remaining-local/cases/unavailable-persistence/outputs/assignment.json",
+  "sourceSha256": "c12d5d20abfa9baa85ceb0a88863574c7d6b2a42e466b6df558605812d2117b1",
+  "sourceBytes": 679,
+  "transformation": "Named JSON fields selected by exact JSON Pointer. Task-owned absolute paths replaced with declared placeholders. Other fields omitted. These are result-artifact values, not synthesized tool execution evidence. Public selection is limited to eight short inspected fields. Longer output and unselected fields remain private.",
+  "fields": [
+    {
+      "pointer": "/inputRevision",
+      "value": "583a40e164fe12e8e9adf256c05bd489431c5cc3"
+    },
+    {
+      "pointer": "/requestedModel",
+      "value": "inherit-parent"
+    },
+    {
+      "pointer": "/observedModel",
+      "value": "unknown"
+    }
+  ]
+}

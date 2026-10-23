@@ -1,0 +1,26 @@
+{
+  "kind": "historical-proof-selection",
+  "source": {
+    "path": "<private-run>/web-checkpoint-2/units/unknown-model/outputs/unknown-model/localrawcaptures/007-readback.json",
+    "sha256": "f97f936369369f5bc52ded0a6c56d586eebce66caf6b2c155fa7cfe428a8f6e9",
+    "bytes": 1730
+  },
+  "selection": [
+    {
+      "locator": {
+        "jsonPointer": "/returnedObject"
+      },
+      "value": {
+        "chunk_id": "086961",
+        "wall_time_seconds": 0.000029327,
+        "exit_code": 0,
+        "original_token_count": 101,
+        "output": "{\"readback\":\"matched actual response, 17 inherited roles, task SHA, unperformed confirmation and persistence\",\"sourceHashes\":\"all 13 match\",\"files\":[{\"path\":\"result.json\",\"sha256\":\"b34ee69de8012c45dcedaf053ed96668695e246e738327ca35e942eb8df3f875\"},{\"path\":\"unknown-model.result.md\",\"sha256\":\"8dc393af16a8f4e4a3c87d716469811047d637ed76d8e4726d5715232e58e62e\"}],\"finishedAt\":\"2026-10-17T07:19:51.326Z\"}\n"
+      }
+    }
+  ],
+  "limits": [
+    "Selections preserve the exact source value at each locator. Truncated strings carry explicit code-unit bounds.",
+    "A producer-captured return is not a recovered native parent envelope. Missing call IDs, original capture defects and unknown model observations remain missing."
+  ]
+}

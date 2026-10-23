@@ -1,0 +1,15 @@
+{
+  "kind": "selected-fixture-result-fields",
+  "caseId": "shared-path-conflict",
+  "attemptId": "review-b-09",
+  "originalLocator": "cross-host-extra/local/projects/shared-path-conflict/outputs/ownership-proposals.json",
+  "sourceSha256": "251d342f12f8c2e599288096a5efa041bb5ad5097348670819f3d09b7a22b93a",
+  "sourceBytes": 386,
+  "transformation": "Named JSON fields selected by exact JSON Pointer. Task-owned absolute paths replaced with declared placeholders. Other fields omitted. These are result-artifact values, not synthesized tool execution evidence. Public selection is limited to eight short inspected fields. Longer output and unselected fields remain private.",
+  "fields": [
+    {
+      "pointer": "/inputRevision",
+      "value": "5c68f1fe4b29243ed37889507222cb408af2bfef"
+    }
+  ]
+}

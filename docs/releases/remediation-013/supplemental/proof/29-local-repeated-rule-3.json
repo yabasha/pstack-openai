@@ -1,0 +1,23 @@
+{
+  "kind": "historical-proof-selection",
+  "source": {
+    "path": "<private-run>/work/notes_workflow_reruns/projects/repeated-rule/docs/release-policy.md",
+    "sha256": "11d7b667420ef15b9bf857995744b646f6203af9e43db7674974d0e5e65f914d",
+    "bytes": 783
+  },
+  "selection": [
+    {
+      "locator": {
+        "textCodeUnits": [
+          0,
+          783
+        ]
+      },
+      "value": "# Release generation\n\n`generateRelease({ version, sourceRevision })` returns a new record containing both input strings unchanged.\n\n| Input | Accepted value |\n| --- | --- |\n| `version` | A string containing at least one non-whitespace character. |\n| `sourceRevision` | A string containing exactly 40 lowercase hexadecimal characters. |\n\nInvalid values throw `TypeError` before a record is returned. The generator does not resolve Git objects or publish records.\n\nFor example, `generateRelease({ version: '1.0.0', sourceRevision: 'abc123' })` throws. A record containing only a version cannot identify the source used for a release.\n\n`bun --no-install run test:release` checks this contract. The default `bun --no-install run test` runs these checks and the healthy caller contracts.\n"
+    }
+  ],
+  "limits": [
+    "Selections preserve the exact source value at each locator. Truncated strings carry explicit code-unit bounds.",
+    "A producer-captured return is not a recovered native parent envelope. Missing call IDs, original capture defects and unknown model observations remain missing."
+  ]
+}

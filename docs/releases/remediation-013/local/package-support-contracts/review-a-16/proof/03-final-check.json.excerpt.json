@@ -1,0 +1,15 @@
+{
+  "kind": "selected-fixture-result-fields",
+  "caseId": "package-support-contracts",
+  "attemptId": "review-a-16",
+  "originalLocator": "work/local_compiler_cases/projects/package-support/deliverables/final-check.json",
+  "sourceSha256": "36bc6b61284c04dec78b534dd57144d1aef8f6dcd4618a80875b1e2c3514c049",
+  "sourceBytes": 548,
+  "transformation": "Named JSON fields selected by exact JSON Pointer. Task-owned absolute paths replaced with declared placeholders. Other fields omitted. These are result-artifact values, not synthesized tool execution evidence. Public selection is limited to eight short inspected fields. Longer output and unselected fields remain private.",
+  "fields": [
+    {
+      "pointer": "/status",
+      "value": "?? deliverables/\n"
+    }
+  ]
+}

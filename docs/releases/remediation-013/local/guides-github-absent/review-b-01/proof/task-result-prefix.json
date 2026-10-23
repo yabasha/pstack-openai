@@ -1,0 +1,16 @@
+{
+  "kind": "task-result-file-excerpt",
+  "caseId": "guides-github-absent",
+  "attemptId": "review-b-01",
+  "inputRevision": "0d6b88f44a2a7bc7249f06374fba22822681d153",
+  "originalLocator": "remaining-local/cases/guides-github-absent/outputs/guides-github-absent.result.md",
+  "sourceSha256": "e5b05c4ac3441af1954cba0fd5a04a5a7e0fe8dcb47c44ee79da259a228f3ae2",
+  "sourceWasDirectlyListedByIndependentGrade": true,
+  "characterRange": {
+    "start": 0,
+    "endExclusive": 592,
+    "total": 11514
+  },
+  "content": "# GitHub-absent attempt receipt\n\nThe authorized local handoff is saved in `pr-preparation.md`. PR creation and live babysitting remain blocked by POLICY. No host acceptance grade is assigned by this producer.\n\n## Supplied input and identity\n\nThe full case request is retained in `supplied-request.json`. The exact current and task contracts are retained by the input repository. The full request is \"Open and babysit a PR when GitHub access is absent.\" The original fixture contract is captured in `original-task-contract.json` with its hashes and comparisons in `input-source-receipt.json`.\n",
+  "transformation": "An inspected prefix of the actual task-result file is projected. Task-owned absolute paths use declared placeholders. The prefix may omit later qualifications. The independent assessment and its limits govern the proposed grade. This is neither a new grade nor a native callable-operation claim."
+}

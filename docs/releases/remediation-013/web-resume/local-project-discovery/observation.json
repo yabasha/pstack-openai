@@ -1,0 +1,522 @@
+{
+  "documentType": "ungraded-capability-observation",
+  "host": "codex",
+  "workflowGrade": null,
+  "inputRevision": "ebad46fdd43421e778cd84747ea211446e0f695f",
+  "observation": {
+    "origin": {
+      "path": "work/notes_workflow_reruns/proposals/project-discovery/native-project-catalog-observation.json",
+      "sha256": "e0343b8bd102ec23ecc3bb0fbdf48b3e7adca7436e3529b6b7b16c44f3115c2a",
+      "bytes": 2089,
+      "pointers": [
+        "/startedAt",
+        "/finishedAt",
+        "/args",
+        "/processPid",
+        "/inputRevision",
+        "/requests",
+        "/initializeResponseSha256",
+        "/skillsResponseSha256",
+        "/selection",
+        "/matches",
+        "/sourceSha256",
+        "/discoveryObserved",
+        "/scopeLimit",
+        "/cleanup"
+      ]
+    },
+    "selections": [
+      {
+        "pointer": "/startedAt",
+        "value": "2026-10-17T15:34:13.834Z"
+      },
+      {
+        "pointer": "/finishedAt",
+        "value": "2026-10-17T15:34:14.071Z"
+      },
+      {
+        "pointer": "/args",
+        "value": [
+          "codex",
+          "app-server",
+          "--stdio"
+        ]
+      },
+      {
+        "pointer": "/processPid",
+        "value": 70540
+      },
+      {
+        "pointer": "/inputRevision",
+        "value": "ebad46fdd43421e778cd84747ea211446e0f695f"
+      },
+      {
+        "pointer": "/requests",
+        "value": [
+          {
+            "id": 1,
+            "method": "initialize",
+            "params": {
+              "clientInfo": {
+                "name": "project-discovery-fixture",
+                "version": "1.0.0"
+              },
+              "capabilities": {
+                "experimentalApi": true
+              }
+            }
+          },
+          {
+            "method": "initialized",
+            "params": {}
+          },
+          {
+            "id": 2,
+            "method": "skills/list",
+            "params": {
+              "cwds": [
+                "<private-run>/work/notes_workflow_reruns/proposed-projects/notes-discovery-01"
+              ],
+              "forceReload": true
+            }
+          }
+        ]
+      },
+      {
+        "pointer": "/initializeResponseSha256",
+        "value": "03851eb92a244605c9f79265951428f762d0ce6b268c1b6454c212726877e03e"
+      },
+      {
+        "pointer": "/skillsResponseSha256",
+        "value": "3960afc7aa1f92e45b9deabe6490d48111f70ef7d277caf6d650c07ffd6adc1c"
+      },
+      {
+        "pointer": "/selection",
+        "value": "Only exact own verify-notes name/path metadata retained; unrelated catalog entries discarded without publication"
+      },
+      {
+        "pointer": "/matches",
+        "value": [
+          {
+            "name": "verify-notes",
+            "path": "<private-run>/work/notes_workflow_reruns/proposed-projects/notes-discovery-01/.agents/skills/verify-notes/SKILL.md",
+            "scope": "repo",
+            "enabled": true,
+            "description": "Verify this qualification Notes repository through its browser, HTTP and CLI controls, isolated data, durable save evidence and exact-process cleanup."
+          }
+        ]
+      },
+      {
+        "pointer": "/sourceSha256",
+        "value": "f388127abd403f414848477165f7d1b218a3680aa1085e19bc51976aab4b87bc"
+      },
+      {
+        "pointer": "/discoveryObserved",
+        "value": true
+      },
+      {
+        "pointer": "/scopeLimit",
+        "value": "This fresh parent-prepared target proves project catalog discovery only. It does not establish the original denied child registration, feature runtime or Web host."
+      },
+      {
+        "pointer": "/cleanup",
+        "value": {
+          "exactOwnedPid": 70540,
+          "exitCode": 0
+        }
+      }
+    ]
+  },
+  "parentPreparation": {
+    "source": {
+      "path": "work/notes_workflow_reruns/proposals/project-discovery/parent-preparation.json",
+      "sha256": "43391d4dc8dc3a765c6a78587f068e353df9919c87659ab35f228dc2ff06bec7",
+      "pointer": ""
+    },
+    "preparationOnly": true,
+    "originalDenialPreserved": true,
+    "originalFixtureRevision": "63b1c3a33583a4e688ecaa34099383ccddf5169d",
+    "headReadback": {
+      "operation": [
+        "git",
+        "-C",
+        "<private-run>/work/notes_workflow_reruns/proposed-projects/notes-discovery-01",
+        "rev-parse",
+        "HEAD"
+      ],
+      "exitCode": 0,
+      "stdout": "ebad46fdd43421e778cd84747ea211446e0f695f\n"
+    },
+    "manifestChecks": [
+      {
+        "path": ".agents/skills/verify-notes/SKILL.md",
+        "sha256": "f388127abd403f414848477165f7d1b218a3680aa1085e19bc51976aab4b87bc",
+        "match": true
+      },
+      {
+        "path": ".agents/skills/verify-notes/agents/openai.yaml",
+        "sha256": "a07d8a1d670b220ebfe9e4b9c300c39af918db702bd96e4e03ca2a6b65c42d57",
+        "match": true
+      },
+      {
+        "path": ".agents/skills/verify-notes/features/README.md",
+        "sha256": "c1e50e6f38485dd0b45836356d451ae9ae7e61e2d2c8d2331a85a3dd60748608",
+        "match": true
+      },
+      {
+        "path": ".agents/skills/verify-notes/features/components.md",
+        "sha256": "976dda7d3280f6b880db11750224b3f7a4293ce3126678525184a7cfa64af317",
+        "match": true
+      },
+      {
+        "path": ".agents/skills/verify-notes/features/create-note.md",
+        "sha256": "526d629f8670f9ae324aada6ce041ade30205af828cfb880695558d61edc5a8f",
+        "match": true
+      },
+      {
+        "path": ".agents/skills/verify-notes/features/export.md",
+        "sha256": "f50ce10342a0e03620ddd957de9a8263c2b9d2c7c3e6b47098c5b1f6ebe7fd5a",
+        "match": true
+      },
+      {
+        "path": ".agents/skills/verify-notes/features/persistence.md",
+        "sha256": "ad062782d8dbfa1a3f13935aa89e5e67d688b811194614fc5e62a9de66e8f60a",
+        "match": true
+      },
+      {
+        "path": ".agents/skills/verify-notes/features/search.md",
+        "sha256": "dda11d6930a3702a1919e63d00c8455ea7c008e379df658c5e93ad222e3eb42f",
+        "match": true
+      },
+      {
+        "path": ".agents/skills/verify-notes/references/feature-map-example/README.md",
+        "sha256": "cb7bd782cf89968a4ba3d58a5151db837430db92d19a6f52a906973b77b516ba",
+        "match": true
+      },
+      {
+        "path": ".agents/skills/verify-notes/references/feature-map-example/create-note.md",
+        "sha256": "644a44c74f35d38c2feb7cd05a0121fdebbb623e8dc376c185b565a581d1ccf7",
+        "match": true
+      },
+      {
+        "path": ".agents/skills/verify-notes/references/feature-map-example/search.md",
+        "sha256": "6e87b9e7f2791a7776ba1bb83f371cd285c306c67f19d245cc4dd6ca3015c823",
+        "match": true
+      },
+      {
+        "path": ".agents/skills/verify-notes/scripts/doctor.mjs",
+        "sha256": "1fc68c88245c0ece6796e3dfb6aa9af46c262a5767dbe9caf6953327136bca8d",
+        "match": true
+      },
+      {
+        "path": ".agents/skills/verify-notes/scripts/prepare.mjs",
+        "sha256": "79fe0779c0261c895645ee2466b2e091636e3a82b80db36e8c5ba4af82d3af65",
+        "match": true
+      },
+      {
+        "path": ".agents/skills/verify-notes/scripts/retained.mjs",
+        "sha256": "98a8bbb3a69404d01d515ddad5f51e703f3ac845a479a37b5c9cceabd5cc3059",
+        "match": true
+      },
+      {
+        "path": ".gitignore",
+        "sha256": "3af1b6b717014870f6bd15672565f8cf8f2ece9bd7bdc37d09bab5254bbe602c",
+        "match": true
+      },
+      {
+        "path": "README.md",
+        "sha256": "ac49f9db2a4cc8046b334ad9e9be1d0d849e560c0f18d3eca6b4c7181b974c54",
+        "match": true
+      },
+      {
+        "path": "benchmark-input.mjs",
+        "sha256": "1c31942223ccf8d81fb1f9cc431513149d6dfad2c445035d3f0f5ecc50b750e2",
+        "match": true
+      },
+      {
+        "path": "cli.mjs",
+        "sha256": "bf16e472c6af4e5d0052c0f723002de8d0e62bef1c8d7f339ea25185d89b4b96",
+        "match": true
+      },
+      {
+        "path": "deliverables/verify-notes/SKILL.md",
+        "sha256": "f388127abd403f414848477165f7d1b218a3680aa1085e19bc51976aab4b87bc",
+        "match": true
+      },
+      {
+        "path": "deliverables/verify-notes/agents/openai.yaml",
+        "sha256": "a07d8a1d670b220ebfe9e4b9c300c39af918db702bd96e4e03ca2a6b65c42d57",
+        "match": true
+      },
+      {
+        "path": "deliverables/verify-notes/features/README.md",
+        "sha256": "c1e50e6f38485dd0b45836356d451ae9ae7e61e2d2c8d2331a85a3dd60748608",
+        "match": true
+      },
+      {
+        "path": "deliverables/verify-notes/features/components.md",
+        "sha256": "976dda7d3280f6b880db11750224b3f7a4293ce3126678525184a7cfa64af317",
+        "match": true
+      },
+      {
+        "path": "deliverables/verify-notes/features/create-note.md",
+        "sha256": "526d629f8670f9ae324aada6ce041ade30205af828cfb880695558d61edc5a8f",
+        "match": true
+      },
+      {
+        "path": "deliverables/verify-notes/features/export.md",
+        "sha256": "f50ce10342a0e03620ddd957de9a8263c2b9d2c7c3e6b47098c5b1f6ebe7fd5a",
+        "match": true
+      },
+      {
+        "path": "deliverables/verify-notes/features/persistence.md",
+        "sha256": "ad062782d8dbfa1a3f13935aa89e5e67d688b811194614fc5e62a9de66e8f60a",
+        "match": true
+      },
+      {
+        "path": "deliverables/verify-notes/features/search.md",
+        "sha256": "dda11d6930a3702a1919e63d00c8455ea7c008e379df658c5e93ad222e3eb42f",
+        "match": true
+      },
+      {
+        "path": "deliverables/verify-notes/references/feature-map-example/README.md",
+        "sha256": "cb7bd782cf89968a4ba3d58a5151db837430db92d19a6f52a906973b77b516ba",
+        "match": true
+      },
+      {
+        "path": "deliverables/verify-notes/references/feature-map-example/create-note.md",
+        "sha256": "644a44c74f35d38c2feb7cd05a0121fdebbb623e8dc376c185b565a581d1ccf7",
+        "match": true
+      },
+      {
+        "path": "deliverables/verify-notes/references/feature-map-example/search.md",
+        "sha256": "6e87b9e7f2791a7776ba1bb83f371cd285c306c67f19d245cc4dd6ca3015c823",
+        "match": true
+      },
+      {
+        "path": "deliverables/verify-notes/scripts/doctor.mjs",
+        "sha256": "1fc68c88245c0ece6796e3dfb6aa9af46c262a5767dbe9caf6953327136bca8d",
+        "match": true
+      },
+      {
+        "path": "deliverables/verify-notes/scripts/prepare.mjs",
+        "sha256": "79fe0779c0261c895645ee2466b2e091636e3a82b80db36e8c5ba4af82d3af65",
+        "match": true
+      },
+      {
+        "path": "deliverables/verify-notes/scripts/retained.mjs",
+        "sha256": "98a8bbb3a69404d01d515ddad5f51e703f3ac845a479a37b5c9cceabd5cc3059",
+        "match": true
+      },
+      {
+        "path": "docs/acceptance.md",
+        "sha256": "ece8aa7176897db269caab00f4bb36a5eaa39c8a06ea9ba6e6614c6548f6732f",
+        "match": true
+      },
+      {
+        "path": "docs/release-policy.md",
+        "sha256": "d07f34aaf07238aafa9377c71cd7a5931f18656da90124c0e1198b14f4319911",
+        "match": true
+      },
+      {
+        "path": "docs/verify/SKILL.md",
+        "sha256": "28e32d39d366f58768f83580c941fb277941175a3ec0efac757a091a24d6d92d",
+        "match": true
+      },
+      {
+        "path": "docs/verify/features/README.md",
+        "sha256": "9ff9f238151cef16b2696635e5a47a4e2a0d9c47f443f0cf53f19a1d66dba42a",
+        "match": true
+      },
+      {
+        "path": "docs/verify/features/create-note.md",
+        "sha256": "a4a613a36aacbd3dad8a879964f1a012f7fe2350d0e054ea83a1155d621fcfc4",
+        "match": true
+      },
+      {
+        "path": "docs/verify/features/search.md",
+        "sha256": "08ed66757ec2f5e7aa003449c322bf0997f83fcbad61c5fffb0d0b8e780795e9",
+        "match": true
+      },
+      {
+        "path": "domain/jobs.mjs",
+        "sha256": "363006ca79a47e2cacfb5a2cf44ae27c35bc78b753708dad4c5f4cd80854e3b7",
+        "match": true
+      },
+      {
+        "path": "domain/legacy-state.mjs",
+        "sha256": "5fbb4a8807c27169c8e7399e1402214355600bba7f6992f05c974b1aa1e9660f",
+        "match": true
+      },
+      {
+        "path": "domain/pricing.mjs",
+        "sha256": "0ccb7ed0bcfcfed64e41e65af0cb5598e88852ad809a1ec05e2929eaa25413f5",
+        "match": true
+      },
+      {
+        "path": "domain/release.mjs",
+        "sha256": "9d72e712ee3e9a7083719b6c06974ec2b932bdf8a776ca65ee02add62f1bd2b5",
+        "match": true
+      },
+      {
+        "path": "domain/schema.mjs",
+        "sha256": "b73717931ba91bc13a40d183254ba4092cc87e0a9151495ff60d4612bf7c7b49",
+        "match": true
+      },
+      {
+        "path": "export-cli.mjs",
+        "sha256": "448274945384764736aa220f3a3f566aca39bd5c900b0eaaa4f1dd4abc188217",
+        "match": true
+      },
+      {
+        "path": "export.mjs",
+        "sha256": "164082f4fa17cc21deccd0686410eff257b66fde07f29b5d7dc51ab64b1c310f",
+        "match": true
+      },
+      {
+        "path": "package.json",
+        "sha256": "7cc5f1639efc7800eef1f1721d70190bd413dd62f7b71c1673d766efb259ef4d",
+        "match": true
+      },
+      {
+        "path": "scenario-inputs/current-state.json",
+        "sha256": "8c623d89f1ee4c9cc7933c43bc895aeb3cb066539bb1127f32e8ef6bdb8d316e",
+        "match": true
+      },
+      {
+        "path": "scenario-inputs/legacy-state.json",
+        "sha256": "6d29ff03bcd7ec42ec2c78ad087d9e8c564dbacd24706475ac2938459e91c25a",
+        "match": true
+      },
+      {
+        "path": "search-view.mjs",
+        "sha256": "1941fe80f30559d6fc407c43abcf4eef1ac4d4a80beba47973267e055dc858cd",
+        "match": true
+      },
+      {
+        "path": "server.mjs",
+        "sha256": "8c1eb1f2a1911aca0f56bed7258c9d6da25fc8b3b505da52599595a520ed4017",
+        "match": true
+      },
+      {
+        "path": "store.mjs",
+        "sha256": "bd23e4f3a8b73e99ae26ee02bfe3980c111f4b1f3a583cc2db836849588080e2",
+        "match": true
+      },
+      {
+        "path": "tests/healthy.test.mjs",
+        "sha256": "41ef267512a57bfe49996c2573e9e30b8a1ba7632bc2fc13fc34f3022d03dcda",
+        "match": true
+      },
+      {
+        "path": "tests/jobs-regression.test.mjs",
+        "sha256": "01789a9a78c08364c25f68ec31f80d694444910bf5133d956176be81dbf36eb9",
+        "match": true
+      },
+      {
+        "path": "tests/release-regression.test.mjs",
+        "sha256": "384005699cdf006f45c2c54ab3f59390809bdea1d9e90310d501e0ff9fabfb91",
+        "match": true
+      },
+      {
+        "path": "tests/restart-regression.test.mjs",
+        "sha256": "e2bc39ee4ca06d3abd7b88b5f3e6c09e7b41e00f87d106a0531e51466886ae82",
+        "match": true
+      },
+      {
+        "path": "tests/search-regression.test.mjs",
+        "sha256": "a8d73252de1c4237381bdf2541f87424dafe914f3fe99c7f205e7f92dc5fc44e",
+        "match": true
+      },
+      {
+        "path": "ui.html",
+        "sha256": "7ddb7988e2ded36dcb61094405abbf7d113fb8dbbbf374dbbc1e8209d41bc8d3",
+        "match": true
+      }
+    ],
+    "generatedPairCount": 14
+  },
+  "priorStartupObservation": {
+    "origin": {
+      "path": "work/notes_workflow_reruns/proposals/project-discovery/fresh-observation/owned-startup-catalog-observation.json",
+      "sha256": "e2ecb65bace4a4769eb70d6b67bb04b2f827da4bb401af1d161e570c0491c415",
+      "bytes": 541,
+      "pointers": [
+        "/threadId",
+        "/actualModel",
+        "/effort",
+        "/sourceSha256",
+        "/scope",
+        "/matches",
+        "/discoveryObserved",
+        "/originalDeniedAttemptUnchanged"
+      ]
+    },
+    "selections": [
+      {
+        "pointer": "/threadId",
+        "value": "01a148ed-45ff-7f41-a4da-8e18ad656da0"
+      },
+      {
+        "pointer": "/actualModel",
+        "value": "gpt-6.1-sol"
+      },
+      {
+        "pointer": "/effort",
+        "value": "medium"
+      },
+      {
+        "pointer": "/sourceSha256",
+        "value": "a14c1f766a39ddc5bc5da68e4af7e2790cfd339298a126cbf2e5dd0d699a9e41"
+      },
+      {
+        "pointer": "/scope",
+        "value": "Only exact owned verify-notes catalog line in exact native invocation; no unrelated startup content retained"
+      },
+      {
+        "pointer": "/matches",
+        "value": []
+      },
+      {
+        "pointer": "/discoveryObserved",
+        "value": false
+      },
+      {
+        "pointer": "/originalDeniedAttemptUnchanged",
+        "value": true
+      }
+    ]
+  },
+  "priorStartupSupplement": {
+    "origin": {
+      "path": "work/notes_workflow_reruns/proposals/project-discovery/fresh-observation/owned-startup-catalog-observation-supplement.json",
+      "sha256": "42da857a043a1e76240e0c2410432700a70fef4f9277d5d653e8652a1a4b9bb3",
+      "bytes": 204,
+      "pointers": [
+        ""
+      ]
+    },
+    "selections": [
+      {
+        "pointer": "",
+        "value": {
+          "threadId": "01a148ed-45ff-7f41-a4da-8e18ad656da0",
+          "scope": "Exact owned catalog entry only in startup message roles; no unrelated payload retained",
+          "matches": [],
+          "discoveryObserved": false
+        }
+      }
+    ]
+  },
+  "observerSource": {
+    "path": "observe-project-catalog.mjs",
+    "sha256": "bb1a19c04c893662ec08907b9602fe7875a633a44a60cd68c3e3917c515452f3",
+    "review": "Script launches the actual stdio app server with the earlier task runtime directory, requests skills/list for exactly the prepared target, retains only the matching owned skill metadata plus response digests, and stops the exact process. No new invocation was performed by this curator."
+  },
+  "limits": [
+    "The earlier self-report and startup catalog searches found no matching metadata. They remain preserved.",
+    "The later actual skills/list result contains the exact owned verify-notes path with repo scope and enabled true.",
+    "Parent preparation is separate from the original denied child write. This observation does not prove feature runtime, an old child registration, Web discovery, or another workflow pass.",
+    "Only exact owned metadata was inspected. Unrelated catalog entries, environment values, raw startup content, and session payloads are not copied."
+  ]
+}
