@@ -338,6 +338,6 @@ Principle in practice: Outcome-oriented execution: the release decision follows 
 
 Completion check: The user can review the release evidence and make a concrete publication decision.
 
-The [website workflow section](https://pstack-openai.abloommink3.chatgpt.site/#workflows) uses the same [workflow source](docs/workflows/examples.json). After editing it, run `bun tools/render_workflow_examples.mjs` and refresh the site with its documented sync command. Use `bun tools/render_workflow_examples.mjs --check` to detect README drift.
+The [website workflow section](https://pstack-openai.abloommink3.chatgpt.site/#workflows) uses the same [workflow source](docs/workflows/examples.json). Changes pushed to `main` automatically regenerate this README and the site feed through [GitHub Actions](.github/workflows/sync-workflows.yml). The site loads that feed on page load and checks every five minutes while open. It keeps its published snapshot if the feed is unavailable. For local edits, run `bun tools/render_workflow_examples.mjs`; use `bun tools/render_workflow_examples.mjs --check` to detect drift. See [automatic sync](docs/workflows/automatic-sync.md) for scope and recovery.
 
 <!-- workflow-examples:end -->
