@@ -58,10 +58,10 @@
       "license": "MIT",
       "sourcePath": "LICENSE"
     },
-    "rationale": "Amend unaccepted 0.2.3 for PR #729: adopt explicit rewrite-only sharpen, align caller docs and cases, preserve portable identity and permission boundaries. Reviewed 0.15.30 statechart routing and provenance while preserving the port manifest and host contracts.",
-    "upstreamCommit": "4ec7ffa173eaa70d3d9467a627baf0954645a353",
+    "rationale": "Reuse the reviewed portable adaptation and incorporate PR986 review/model/workflow semantics plus PR1043 compatibility decisions. Preserve host capability, model, ownership, fallback, persistence and user-authorization contracts. Deferred unrelated behavior remains explicit.",
+    "upstreamCommit": "c742dd61706fbacc1b95f1a20b7b988cf096ce6c",
     "upstreamPath": "skills/poteto-help/SKILL.md",
-    "upstreamSha256": "7022e2cd0d65d5964151444c4efa82a34792a6644210a0ba60d7d6cfa69c72b8",
+    "upstreamSha256": "768368881379d688c4e3bbdae55dd2d7874fde98a258324d3527de1bf09f9bd1",
     "verification": {
       "chatgpt": {
         "evidence": [],
@@ -87,7 +87,7 @@
       "sourcePath": "LICENSE"
     },
     "rationale": "Preserve the complete help routing, metadata, source invocation aliases, prompting advice and recipes. Bind source-host setup, persistence, models, workers and loop behavior to observed portable capabilities and explicit authorization. Pending local destinations remain visible. Explain source customization options before baseline acceptance, but gate acting on personal-mode drafting and custom skill edits on complete reviewed baseline dispositions and per-host supported-behavior evidence or explicit blocks, independently of authorization.",
-    "upstreamCommit": "4ec7ffa173eaa70d3d9467a627baf0954645a353",
+    "upstreamCommit": "c742dd61706fbacc1b95f1a20b7b988cf096ce6c",
     "upstreamPath": "skills/poteto-help/references/prompting.md",
     "upstreamSha256": "463f450c44a60afd001a2f69fdf8a5dea174351f339369b12ec3c41515e564d3",
     "verification": {
@@ -114,10 +114,10 @@
       "license": "MIT",
       "sourcePath": "LICENSE"
     },
-    "rationale": "Amend unaccepted 0.2.3 for PR #729: adopt explicit rewrite-only sharpen, align caller docs and cases, preserve portable identity and permission boundaries.",
-    "upstreamCommit": "4ec7ffa173eaa70d3d9467a627baf0954645a353",
+    "rationale": "Reuse the reviewed portable adaptation and incorporate PR986 review/model/workflow semantics plus PR1043 compatibility decisions. Preserve host capability, model, ownership, fallback, persistence and user-authorization contracts. Deferred unrelated behavior remains explicit.",
+    "upstreamCommit": "c742dd61706fbacc1b95f1a20b7b988cf096ce6c",
     "upstreamPath": "skills/poteto-help/references/recipes.md",
-    "upstreamSha256": "f2d573014f72f7c798b1998b45f4360a8a83e7b8026c4ed9074e56c5a9d49338",
+    "upstreamSha256": "5323aca73a39a3b607c2bb22cd33551fe893563dfd4b104df838da010e9fc702",
     "verification": {
       "chatgpt": {
         "evidence": [],

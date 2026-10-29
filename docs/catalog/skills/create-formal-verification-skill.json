@@ -14,7 +14,8 @@
     "references/workflow-ownership.md",
     "references/model-roles.md",
     "references/orchestration-contract.md",
-    "skills/maintain-formal-verification-skill/SKILL.md"
+    "skills/maintain-formal-verification-skill/SKILL.md",
+    "skills/statechart/SKILL.md"
   ],
   "inputs": [
     "Actual covered source, repository history and current check results",

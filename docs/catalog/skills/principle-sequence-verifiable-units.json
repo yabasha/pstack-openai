@@ -1,26 +1,4 @@
 {
-  "name": "principle-sequence-verifiable-units",
-  "kind": "principle",
-  "purpose": "Sequence work and delivery into small units that each end in a verified state.",
-  "triggers": [
-    "Multi-step sweeps, migrations and runs of similar edits",
-    "Stacking commits and PRs"
-  ],
-  "inputs": [
-    "Authorized work and known-good baseline",
-    "Per-unit changes, specific checks and delivery order"
-  ],
-  "outputs": [
-    "Ordered units with checks before advancement",
-    "Independently landable delivery sequence when authorized and verified"
-  ],
-  "ordinaryExample": "Migrate one schema boundary, run its concrete migration check, then begin the next unit only after green; deliver the failing test before its fix.",
-  "dependencies": [
-    "skills/principle-prove-it-works/SKILL.md",
-    "skills/principle-build-the-lever/SKILL.md",
-    "references/host-capabilities.md",
-    "references/orchestration-contract.md"
-  ],
   "capabilityLimits": [
     "Unavailable required execution blocks advancement and leaves the unit unverified.",
     "Rebase, commits and PR operations require authorization and observed capabilities.",
@@ -28,10 +6,32 @@
     "Preserve disable-model-invocation metadata without assuming host enforcement.",
     "Host behavior has not been tested."
   ],
+  "caseIds": [
+    "migration-units"
+  ],
+  "dependencies": [
+    "skills/principle-prove-it-works/SKILL.md",
+    "skills/principle-build-the-lever/SKILL.md",
+    "references/host-capabilities.md",
+    "references/orchestration-contract.md"
+  ],
+  "inputs": [
+    "Authorized work and known-good baseline",
+    "Per-unit changes, specific checks and delivery order"
+  ],
+  "kind": "principle",
+  "name": "principle-sequence-verifiable-units",
+  "ordinaryExample": "Migrate one schema boundary, run its concrete migration check, then begin the next unit only after green; deliver the failing test before its fix.",
+  "outputs": [
+    "Ordered units with checks before advancement",
+    "Independently landable delivery sequence when authorized and verified"
+  ],
+  "purpose": "Sequence work and delivery into small units that each end in a verified state.",
   "sourcePaths": [
     "skills/principle-sequence-verifiable-units/SKILL.md"
   ],
-  "caseIds": [
-    "migration-units"
+  "triggers": [
+    "Multi-step sweeps, migrations and runs of similar edits",
+    "Stacking commits and PRs"
   ]
 }

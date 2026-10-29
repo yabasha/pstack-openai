@@ -181,6 +181,6 @@ Current host statuses and release evidence: [current parity inventory](../parity
 
 Destination: [skills/poteto-mode/SKILL.md](../../skills/poteto-mode/SKILL.md).
 
-Upstream commit: `4ec7ffa173eaa70d3d9467a627baf0954645a353`. SHA-256: `2755f102e7a6d0496b429d1031a22fb353e1f3d523543367caeaae5c4ed6f544`.
+Upstream commit: `c742dd61706fbacc1b95f1a20b7b988cf096ce6c`. SHA-256: `ee1848c973a112026f09ba12ea7a13c1654006e7bf170d1c34bf5d5816bc439b`.
 
 Disposition: `runtime`. Aggregate adaptation status: `adapted-reviewed`.

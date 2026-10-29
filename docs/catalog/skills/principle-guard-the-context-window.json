@@ -1,26 +1,4 @@
 {
-  "name": "principle-guard-the-context-window",
-  "kind": "principle",
-  "purpose": "Protect the finite context window by isolating large payloads, keeping frequently used content inline and bounding phases.",
-  "triggers": [
-    "Large outputs or long files",
-    "Repeated reads",
-    "Fan-out planning or a filling context window"
-  ],
-  "inputs": [
-    "Authorized task and accessible evidence",
-    "Current evidence-access and independent-worker capabilities",
-    "Phase scope and turn budgets"
-  ],
-  "outputs": [
-    "Summaries in the main thread and bounded evidence phases",
-    "Observed delegation results or explicit reduced and blocked limits"
-  ],
-  "ordinaryExample": "For a large repository corpus, assign authorized workers bounded document groups and inspect their summaries. Without workers, read narrower groups sequentially and label reduced capability.",
-  "dependencies": [
-    "references/host-capabilities.md",
-    "references/orchestration-contract.md"
-  ],
   "capabilityLimits": [
     "Independent workers require authorization, exposed operations, observed identities and inspected results.",
     "Sequential narrowing is reduced capability and does not prove independent workers.",
@@ -28,10 +6,32 @@
     "Preserve disable-model-invocation metadata without assuming host enforcement.",
     "Host behavior has not been tested."
   ],
+  "caseIds": [
+    "large-corpus"
+  ],
+  "dependencies": [
+    "references/host-capabilities.md",
+    "references/orchestration-contract.md"
+  ],
+  "inputs": [
+    "Authorized task and accessible evidence",
+    "Current evidence-access and independent-worker capabilities",
+    "Phase scope and turn budgets"
+  ],
+  "kind": "principle",
+  "name": "principle-guard-the-context-window",
+  "ordinaryExample": "For a large repository corpus, assign authorized workers bounded document groups and inspect their summaries. Without workers, read narrower groups sequentially and label reduced capability.",
+  "outputs": [
+    "Summaries in the main thread and bounded evidence phases",
+    "Observed delegation results or explicit reduced and blocked limits"
+  ],
+  "purpose": "Protect the finite context window by isolating large payloads, keeping frequently used content inline and bounding phases.",
   "sourcePaths": [
     "skills/principle-guard-the-context-window/SKILL.md"
   ],
-  "caseIds": [
-    "large-corpus"
+  "triggers": [
+    "Large outputs or long files",
+    "Repeated reads",
+    "Fan-out planning or a filling context window"
   ]
 }

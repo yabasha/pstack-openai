@@ -1,19 +1,13 @@
 {
-  "name": "principle-attack-the-premise",
-  "kind": "principle",
-  "purpose": "Question a shared premise after repeated failed fixes, census actor imbalance and remove persistent role asymmetry.",
-  "triggers": [
-    "Two or more fixes sharing one premise fail the same gate"
+  "capabilityLimits": [
+    "Census creation requires authorized writes and execution requires an available tool.",
+    "Unavailable writes or execution allow a census proposal, with no claim it exists or ran.",
+    "Missing actor or failed-check evidence blocks diagnosis.",
+    "Invocation metadata enforcement and host behavior remain unverified."
   ],
-  "inputs": [
-    "Failed fixes and shared premise",
-    "Actor-level imbalance evidence across runs"
+  "caseIds": [
+    "repeated-failure"
   ],
-  "outputs": [
-    "Written premise and rerunnable actor census",
-    "Role-assignment diagnosis or evidence directing investigation elsewhere"
-  ],
-  "ordinaryExample": "After two balancing fixes fail, count which workers retain excess load across runs and trace the assignment that keeps selecting them.",
   "dependencies": [
     "references/host-capabilities.md",
     "skills/principle-build-the-lever/SKILL.md",
@@ -21,16 +15,22 @@
     "skills/principle-laziness-protocol/SKILL.md",
     "skills/principle-redesign-from-first-principles/SKILL.md"
   ],
-  "capabilityLimits": [
-    "Census creation requires authorized writes and execution requires an available tool.",
-    "Unavailable writes or execution allow a census proposal, with no claim it exists or ran.",
-    "Missing actor or failed-check evidence blocks diagnosis.",
-    "Invocation metadata enforcement and host behavior remain unverified."
+  "inputs": [
+    "Failed fixes and shared premise",
+    "Actor-level imbalance evidence across runs"
   ],
+  "kind": "principle",
+  "name": "principle-attack-the-premise",
+  "ordinaryExample": "After two balancing fixes fail, count which workers retain excess load across runs and trace the assignment that keeps selecting them.",
+  "outputs": [
+    "Written premise and rerunnable actor census",
+    "Role-assignment diagnosis or evidence directing investigation elsewhere"
+  ],
+  "purpose": "Question a shared premise after repeated failed fixes, census actor imbalance and remove persistent role asymmetry.",
   "sourcePaths": [
     "skills/principle-attack-the-premise/SKILL.md"
   ],
-  "caseIds": [
-    "repeated-failure"
+  "triggers": [
+    "Two or more fixes sharing one premise fail the same gate"
   ]
 }

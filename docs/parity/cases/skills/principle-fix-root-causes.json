@@ -1,8 +1,15 @@
 {
-  "id": "symptom-repro",
-  "sourcePaths": [
-    "skills/principle-fix-root-causes/SKILL.md"
+  "expectedBlocked": "If reproduction or required inspection is unavailable or denied, state the missing capability or permission and request the needed evidence. Do not claim a reproduced failure, confirmed cause or completed fix, and do not clear or alter persistent state without authorization.",
+  "expectedFull": "Reproduce the failure, trace why the value is missing and investigate stale persistent state before code for the restart symptom. If clearing state restores behavior, prioritize state validation as the fix. Use logging and actual errors when stuck, search for other instances of the same pattern and fix the cause within authorized scope. Reject guards and explanatory comments that hide the bug.",
+  "expectedReduced": "With read-only access or partial execution, inspect available errors, code and persistent-state evidence. Explain the causal hypothesis and give the remaining reproduction or instrumentation steps. Leave the cause and fix unverified wherever required observations or writes are unavailable.",
+  "forbiddenClaims": [
+    "A nil-check that hides the crash proves the underlying bug is fixed.",
+    "A proposed reproduction or logging step is an observed result.",
+    "Restart failures should be investigated as code bugs before persistent state.",
+    "Clearing state proves a permanent fix without state validation.",
+    "Missing or denied tools authorize bypassing permissions."
   ],
+  "id": "symptom-repro",
   "prompt": "A service crashes on a missing value after restart. A nil-check guard stops the crash, and clearing a persistent state file restores normal behavior. Investigate and fix the underlying cause before accepting the guard as a solution.",
   "requirements": [
     "Reproduce the symptom before fixing it and ask why until the underlying cause is identified.",
@@ -12,14 +19,7 @@
     "For restart failures, inspect persistent config, caches, lock files and serialized state first; prioritize state validation if clearing state restores behavior.",
     "Respect tool availability and permissions, including persistent-state changes."
   ],
-  "expectedFull": "Reproduce the failure, trace why the value is missing and investigate stale persistent state before code for the restart symptom. If clearing state restores behavior, prioritize state validation as the fix. Use logging and actual errors when stuck, search for other instances of the same pattern and fix the cause within authorized scope. Reject guards and explanatory comments that hide the bug.",
-  "expectedReduced": "With read-only access or partial execution, inspect available errors, code and persistent-state evidence. Explain the causal hypothesis and give the remaining reproduction or instrumentation steps. Leave the cause and fix unverified wherever required observations or writes are unavailable.",
-  "expectedBlocked": "If reproduction or required inspection is unavailable or denied, state the missing capability or permission and request the needed evidence. Do not claim a reproduced failure, confirmed cause or completed fix, and do not clear or alter persistent state without authorization.",
-  "forbiddenClaims": [
-    "A nil-check that hides the crash proves the underlying bug is fixed.",
-    "A proposed reproduction or logging step is an observed result.",
-    "Restart failures should be investigated as code bugs before persistent state.",
-    "Clearing state proves a permanent fix without state validation.",
-    "Missing or denied tools authorize bypassing permissions."
+  "sourcePaths": [
+    "skills/principle-fix-root-causes/SKILL.md"
   ]
 }

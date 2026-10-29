@@ -1,22 +1,4 @@
 {
-  "name": "principle-migrate-callers-then-delete-legacy-apis",
-  "kind": "principle",
-  "purpose": "Migrate internal callers and delete the old API in the same refactor wave.",
-  "triggers": [
-    "Introducing a new internal API while old callers still exist"
-  ],
-  "inputs": [
-    "Agreed new contract, source and caller usage evidence",
-    "Confirmed applicability and authorized task"
-  ],
-  "outputs": [
-    "Coordinated caller migration, legacy API removal and updated contract tests",
-    "Reduced proposal or explicit block when required capabilities or evidence are missing"
-  ],
-  "ordinaryExample": "Inventory callers of an internal request API, move them to the new contract, update contract tests and delete the old API in one reviewed unit.",
-  "dependencies": [
-    "references/host-capabilities.md"
-  ],
   "capabilityLimits": [
     "Applies when no external users require backward compatibility, coordinated breaking changes are acceptable and the new API simplifies a refactor.",
     "Edits require authorization and writes; actual checks require execution.",
@@ -24,10 +6,28 @@
     "Invocation metadata is preserved without assuming host enforcement.",
     "Host behavior has not been tested."
   ],
+  "caseIds": [
+    "caller-migration"
+  ],
+  "dependencies": [
+    "references/host-capabilities.md"
+  ],
+  "inputs": [
+    "Agreed new contract, source and caller usage evidence",
+    "Confirmed applicability and authorized task"
+  ],
+  "kind": "principle",
+  "name": "principle-migrate-callers-then-delete-legacy-apis",
+  "ordinaryExample": "Inventory callers of an internal request API, move them to the new contract, update contract tests and delete the old API in one reviewed unit.",
+  "outputs": [
+    "Coordinated caller migration, legacy API removal and updated contract tests",
+    "Reduced proposal or explicit block when required capabilities or evidence are missing"
+  ],
+  "purpose": "Migrate internal callers and delete the old API in the same refactor wave.",
   "sourcePaths": [
     "skills/principle-migrate-callers-then-delete-legacy-apis/SKILL.md"
   ],
-  "caseIds": [
-    "caller-migration"
+  "triggers": [
+    "Introducing a new internal API while old callers still exist"
   ]
 }

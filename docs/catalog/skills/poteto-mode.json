@@ -1,27 +1,20 @@
 {
-  "name": "poteto-mode",
-  "kind": "mode",
-  "purpose": "Apply poteto's deliberate worker routing, principle-grounded decisions, concise detailed prose, simple code and verified playbooks.",
-  "triggers": [
-    "poteto",
-    "/poteto-mode",
-    "Requests to work in this style",
-    "Matched playbook or rigor needed on a new task; exclude casual turns and opt-out"
+  "capabilityLimits": [
+    "Companion deslop, no-comments, create-skill and control tools require discovered support; missing gates remain visible.",
+    "Fresh workers and model diversity require observed capabilities; sequential fallback is reduced capability.",
+    "Metadata does not register host modes or agents.",
+    "All 23 bundled routes and original 26 local references are present. Reading and structural checks do not establish execution or host behavior.",
+    "No autonomy grant overrides authorization or permissions.",
+    "Both hosts remain not-run.",
+    "Bootstrap never installs. Missing pinned dependencies block CLI execution; isolated snapshot tests support only that snapshot.",
+    "Watcher events require kind, terminal and reason inspection at pinned heads. Helper deadlines are not hard wall-clock guarantees.",
+    "Orch bookkeeping does not enforce assignment identity, full SHA syntax, evidence existence, worker completion, verifier precedence or permissions. Callers own those gates.",
+    "A no-spawn worker returns its own scoped diff to the lead; it does not satisfy the lead independent-review gate.",
+    "Helper setup guide contains historical setup statements. Future setup needs separate exact-copy authorization."
   ],
-  "inputs": [
-    "Authorized task and active workflow owner",
-    "Full mode, chosen playbook and applied principle leaves",
-    "Observed tools, permissions, role configuration and exact assignment revision",
-    "Actual selected-playbook helper contracts, owned log or store paths, exact heads and remaining watch budget"
+  "caseIds": [
+    "fresh-worker-mode"
   ],
-  "outputs": [
-    "Selected playbook todos with explicit skipped steps",
-    "Four-item throughput checkpoint, reviewed artifacts and evidence",
-    "Decision explanation naming only principles read in this session",
-    "Explicit reduced or blocked capabilities and open decisions",
-    "Inspected helper receipts and explicit setup, delivery and independent-review gates"
-  ],
-  "ordinaryExample": "For a scoped feature, read the full mode and Feature playbook, name its data shape, write the checkpoint, assign an authorized fresh worker and inspect its resulting diff before reporting evidence.",
   "dependencies": [
     "skills/poteto-mode/playbooks/prototype.md",
     "skills/poteto-mode/playbooks/babysit.md",
@@ -95,23 +88,30 @@
     "skills/principle-never-block-on-the-human/SKILL.md",
     "skills/principle-encode-lessons-in-structure/SKILL.md"
   ],
-  "capabilityLimits": [
-    "Companion deslop, no-comments, create-skill and control tools require discovered support; missing gates remain visible.",
-    "Fresh workers and model diversity require observed capabilities; sequential fallback is reduced capability.",
-    "Metadata does not register host modes or agents.",
-    "All 23 bundled routes and original 26 local references are present. Reading and structural checks do not establish execution or host behavior.",
-    "No autonomy grant overrides authorization or permissions.",
-    "Both hosts remain not-run.",
-    "Bootstrap never installs. Missing pinned dependencies block CLI execution; isolated snapshot tests support only that snapshot.",
-    "Watcher events require kind, terminal and reason inspection at pinned heads. Helper deadlines are not hard wall-clock guarantees.",
-    "Orch bookkeeping does not enforce assignment identity, full SHA syntax, evidence existence, worker completion, verifier precedence or permissions. Callers own those gates.",
-    "A no-spawn worker returns its own scoped diff to the lead; it does not satisfy the lead independent-review gate.",
-    "Helper setup guide contains historical setup statements. Future setup needs separate exact-copy authorization."
+  "inputs": [
+    "Authorized task and active workflow owner",
+    "Full mode, chosen playbook and applied principle leaves",
+    "Observed tools, permissions, role configuration and exact assignment revision",
+    "Actual selected-playbook helper contracts, owned log or store paths, exact heads and remaining watch budget"
   ],
+  "kind": "mode",
+  "name": "poteto-mode",
+  "ordinaryExample": "For a scoped feature, read the full mode and Feature playbook, name its data shape, write the checkpoint, assign an authorized fresh worker and inspect its resulting diff before reporting evidence.",
+  "outputs": [
+    "Selected playbook todos with explicit skipped steps",
+    "Four-item throughput checkpoint, reviewed artifacts and evidence",
+    "Decision explanation naming only principles read in this session",
+    "Explicit reduced or blocked capabilities and open decisions",
+    "Inspected helper receipts and explicit setup, delivery and independent-review gates"
+  ],
+  "purpose": "Apply poteto's deliberate worker routing, principle-grounded decisions, concise detailed prose, simple code and verified playbooks.",
   "sourcePaths": [
     "skills/poteto-mode/SKILL.md"
   ],
-  "caseIds": [
-    "fresh-worker-mode"
+  "triggers": [
+    "poteto",
+    "/poteto-mode",
+    "Requests to work in this style",
+    "Matched playbook or rigor needed on a new task; exclude casual turns and opt-out"
   ]
 }

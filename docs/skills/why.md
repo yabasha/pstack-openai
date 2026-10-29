@@ -98,11 +98,11 @@ Forbidden claims:
 
 Current host statuses and release evidence: [current parity inventory](../parity/inventory.json), [chatgpt host report](../testing/chatgpt.md), and [codex host report](../testing/codex.md). These records can advance after the source freeze. Structural catalog checks do not establish host support.
 
-### `skills/why/references/investigator-prompt.md`
+### `skills/why/SKILL.md`
 
-Destination: [skills/why/references/investigator-prompt.md](../../skills/why/references/investigator-prompt.md).
+Destination: [skills/why/SKILL.md](../../skills/why/SKILL.md).
 
-Upstream commit: `4ec7ffa173eaa70d3d9467a627baf0954645a353`. SHA-256: `c44afba186f899094f3694e6c9d6de5d14ff7c4ce28b787a9f50fc789c9a7fc3`.
+Upstream commit: `c742dd61706fbacc1b95f1a20b7b988cf096ce6c`. SHA-256: `144d42e7712723d763e607bc0a969e5f1cdf83ec7228519d87677cc534571bed`.
 
 Disposition: `runtime`. Aggregate adaptation status: `adapted-reviewed`.
 
@@ -110,79 +110,15 @@ Disposition: `runtime`. Aggregate adaptation status: `adapted-reviewed`.
 
 Destination: [skills/why/references/epistemics.md](../../skills/why/references/epistemics.md).
 
-Upstream commit: `4ec7ffa173eaa70d3d9467a627baf0954645a353`. SHA-256: `d54a2361b2d5973bc3fe2edf62f446d87935974d4b40d47f23b9529f956ca758`.
+Upstream commit: `c742dd61706fbacc1b95f1a20b7b988cf096ce6c`. SHA-256: `d54a2361b2d5973bc3fe2edf62f446d87935974d4b40d47f23b9529f956ca758`.
 
 Disposition: `runtime`. Aggregate adaptation status: `adapted-reviewed`.
 
-### `skills/why/references/sources/incident-postmortem.md`
+### `skills/why/references/investigator-prompt.md`
 
-Destination: [skills/why/references/sources/incident-postmortem.md](../../skills/why/references/sources/incident-postmortem.md).
+Destination: [skills/why/references/investigator-prompt.md](../../skills/why/references/investigator-prompt.md).
 
-Upstream commit: `4ec7ffa173eaa70d3d9467a627baf0954645a353`. SHA-256: `bf2661f1a81c37700884a45b77d6289be0c802b065febced31990e6564510839`.
-
-Disposition: `runtime`. Aggregate adaptation status: `adapted-reviewed`.
-
-### `skills/why/references/sources/slack.md`
-
-Destination: [skills/why/references/sources/slack.md](../../skills/why/references/sources/slack.md).
-
-Upstream commit: `4ec7ffa173eaa70d3d9467a627baf0954645a353`. SHA-256: `3bc6309f5c7b26ace3b919dbd7f7b048861dd2020f910fe24f656cc74b3b661c`.
-
-Disposition: `runtime`. Aggregate adaptation status: `adapted-reviewed`.
-
-### `skills/why/references/sources/datadog.md`
-
-Destination: [skills/why/references/sources/datadog.md](../../skills/why/references/sources/datadog.md).
-
-Upstream commit: `4ec7ffa173eaa70d3d9467a627baf0954645a353`. SHA-256: `b139faac5dc11b8f26c8255dce6033c1a6ac143b038d3dd103f2034c5dbec9cd`.
-
-Disposition: `runtime`. Aggregate adaptation status: `adapted-reviewed`.
-
-### `skills/why/references/sources/notion.md`
-
-Destination: [skills/why/references/sources/notion.md](../../skills/why/references/sources/notion.md).
-
-Upstream commit: `4ec7ffa173eaa70d3d9467a627baf0954645a353`. SHA-256: `3bcfa695c49dfad4ac036d5d7181c12585f55ac04f1936198d16ab75a2788997`.
-
-Disposition: `runtime`. Aggregate adaptation status: `adapted-reviewed`.
-
-### `skills/why/references/sources/databricks.md`
-
-Destination: [skills/why/references/sources/databricks.md](../../skills/why/references/sources/databricks.md).
-
-Upstream commit: `4ec7ffa173eaa70d3d9467a627baf0954645a353`. SHA-256: `236ede7aab6454662a992db088a5393537a5233a4c26719c93188f9e174488f6`.
-
-Disposition: `runtime`. Aggregate adaptation status: `adapted-reviewed`.
-
-### `skills/why/references/sources/sentry.md`
-
-Destination: [skills/why/references/sources/sentry.md](../../skills/why/references/sources/sentry.md).
-
-Upstream commit: `4ec7ffa173eaa70d3d9467a627baf0954645a353`. SHA-256: `2d4f83048eac1df530b399e2aed75dd7c9c18577b7665420aaeb96d0ceb0b702`.
-
-Disposition: `runtime`. Aggregate adaptation status: `adapted-reviewed`.
-
-### `skills/why/references/sources/linear.md`
-
-Destination: [skills/why/references/sources/linear.md](../../skills/why/references/sources/linear.md).
-
-Upstream commit: `4ec7ffa173eaa70d3d9467a627baf0954645a353`. SHA-256: `01304e7f1badfcfb78babbb0edcadeb3cc8dd3f713793420cdff24ba190f907c`.
-
-Disposition: `runtime`. Aggregate adaptation status: `adapted-reviewed`.
-
-### `skills/why/references/sources/code-archaeology.md`
-
-Destination: [skills/why/references/sources/code-archaeology.md](../../skills/why/references/sources/code-archaeology.md).
-
-Upstream commit: `4ec7ffa173eaa70d3d9467a627baf0954645a353`. SHA-256: `a4a3970e9db448054aed676f3f7feeee667b4b69f0bd57c8fd72b751be687cc7`.
-
-Disposition: `runtime`. Aggregate adaptation status: `adapted-reviewed`.
-
-### `skills/why/references/synthesizer-prompt.md`
-
-Destination: [skills/why/references/synthesizer-prompt.md](../../skills/why/references/synthesizer-prompt.md).
-
-Upstream commit: `4ec7ffa173eaa70d3d9467a627baf0954645a353`. SHA-256: `11c62671aa7b7a6e3d36929ffe2b59bf95e6ca664eee4d93e6ee527dd3390ddb`.
+Upstream commit: `c742dd61706fbacc1b95f1a20b7b988cf096ce6c`. SHA-256: `c44afba186f899094f3694e6c9d6de5d14ff7c4ce28b787a9f50fc789c9a7fc3`.
 
 Disposition: `runtime`. Aggregate adaptation status: `adapted-reviewed`.
 
@@ -190,14 +126,78 @@ Disposition: `runtime`. Aggregate adaptation status: `adapted-reviewed`.
 
 Destination: [skills/why/references/source-playbook.md](../../skills/why/references/source-playbook.md).
 
-Upstream commit: `4ec7ffa173eaa70d3d9467a627baf0954645a353`. SHA-256: `9ae9dcb9d09111c9facc68510331c5aba4aed9b1b057314ff1fc0e166ad3993a`.
+Upstream commit: `c742dd61706fbacc1b95f1a20b7b988cf096ce6c`. SHA-256: `9ae9dcb9d09111c9facc68510331c5aba4aed9b1b057314ff1fc0e166ad3993a`.
 
 Disposition: `runtime`. Aggregate adaptation status: `unchanged-reviewed`.
 
-### `skills/why/SKILL.md`
+### `skills/why/references/sources/code-archaeology.md`
 
-Destination: [skills/why/SKILL.md](../../skills/why/SKILL.md).
+Destination: [skills/why/references/sources/code-archaeology.md](../../skills/why/references/sources/code-archaeology.md).
 
-Upstream commit: `4ec7ffa173eaa70d3d9467a627baf0954645a353`. SHA-256: `144d42e7712723d763e607bc0a969e5f1cdf83ec7228519d87677cc534571bed`.
+Upstream commit: `c742dd61706fbacc1b95f1a20b7b988cf096ce6c`. SHA-256: `a4a3970e9db448054aed676f3f7feeee667b4b69f0bd57c8fd72b751be687cc7`.
+
+Disposition: `runtime`. Aggregate adaptation status: `adapted-reviewed`.
+
+### `skills/why/references/sources/databricks.md`
+
+Destination: [skills/why/references/sources/databricks.md](../../skills/why/references/sources/databricks.md).
+
+Upstream commit: `c742dd61706fbacc1b95f1a20b7b988cf096ce6c`. SHA-256: `236ede7aab6454662a992db088a5393537a5233a4c26719c93188f9e174488f6`.
+
+Disposition: `runtime`. Aggregate adaptation status: `adapted-reviewed`.
+
+### `skills/why/references/sources/datadog.md`
+
+Destination: [skills/why/references/sources/datadog.md](../../skills/why/references/sources/datadog.md).
+
+Upstream commit: `c742dd61706fbacc1b95f1a20b7b988cf096ce6c`. SHA-256: `b139faac5dc11b8f26c8255dce6033c1a6ac143b038d3dd103f2034c5dbec9cd`.
+
+Disposition: `runtime`. Aggregate adaptation status: `adapted-reviewed`.
+
+### `skills/why/references/sources/incident-postmortem.md`
+
+Destination: [skills/why/references/sources/incident-postmortem.md](../../skills/why/references/sources/incident-postmortem.md).
+
+Upstream commit: `c742dd61706fbacc1b95f1a20b7b988cf096ce6c`. SHA-256: `bf2661f1a81c37700884a45b77d6289be0c802b065febced31990e6564510839`.
+
+Disposition: `runtime`. Aggregate adaptation status: `adapted-reviewed`.
+
+### `skills/why/references/sources/linear.md`
+
+Destination: [skills/why/references/sources/linear.md](../../skills/why/references/sources/linear.md).
+
+Upstream commit: `c742dd61706fbacc1b95f1a20b7b988cf096ce6c`. SHA-256: `01304e7f1badfcfb78babbb0edcadeb3cc8dd3f713793420cdff24ba190f907c`.
+
+Disposition: `runtime`. Aggregate adaptation status: `adapted-reviewed`.
+
+### `skills/why/references/sources/notion.md`
+
+Destination: [skills/why/references/sources/notion.md](../../skills/why/references/sources/notion.md).
+
+Upstream commit: `c742dd61706fbacc1b95f1a20b7b988cf096ce6c`. SHA-256: `3bcfa695c49dfad4ac036d5d7181c12585f55ac04f1936198d16ab75a2788997`.
+
+Disposition: `runtime`. Aggregate adaptation status: `adapted-reviewed`.
+
+### `skills/why/references/sources/sentry.md`
+
+Destination: [skills/why/references/sources/sentry.md](../../skills/why/references/sources/sentry.md).
+
+Upstream commit: `c742dd61706fbacc1b95f1a20b7b988cf096ce6c`. SHA-256: `2d4f83048eac1df530b399e2aed75dd7c9c18577b7665420aaeb96d0ceb0b702`.
+
+Disposition: `runtime`. Aggregate adaptation status: `adapted-reviewed`.
+
+### `skills/why/references/sources/slack.md`
+
+Destination: [skills/why/references/sources/slack.md](../../skills/why/references/sources/slack.md).
+
+Upstream commit: `c742dd61706fbacc1b95f1a20b7b988cf096ce6c`. SHA-256: `3bc6309f5c7b26ace3b919dbd7f7b048861dd2020f910fe24f656cc74b3b661c`.
+
+Disposition: `runtime`. Aggregate adaptation status: `adapted-reviewed`.
+
+### `skills/why/references/synthesizer-prompt.md`
+
+Destination: [skills/why/references/synthesizer-prompt.md](../../skills/why/references/synthesizer-prompt.md).
+
+Upstream commit: `c742dd61706fbacc1b95f1a20b7b988cf096ce6c`. SHA-256: `11c62671aa7b7a6e3d36929ffe2b59bf95e6ca664eee4d93e6ee527dd3390ddb`.
 
 Disposition: `runtime`. Aggregate adaptation status: `adapted-reviewed`.

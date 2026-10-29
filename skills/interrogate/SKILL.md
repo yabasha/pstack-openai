@@ -1,105 +1,41 @@
 ---
 name: interrogate
-description: "Use for \"interrogate\", \"adversarial review\", \"multi-model review\", \"challenge this\", \"stress test this code\", \"find blind spots\", or \"tear this apart\". Multiple LLM reviewers challenge changes from independent angles."
+description: 'Use for "interrogate", "adversarial review", "multi-model review", "challenge this", "stress test this code", "find blind spots", or "tear this apart". Adversaries try to break a change; only findings proven by a rerun survive.'
 disable-model-invocation: true
 ---
 
 # Interrogate
 
-Spawn one reviewer per configured model to adversarially review code changes. Each model gets the same prompt and rubric. The adversarial signal comes from model diversity, not assigned personas.
+Adversaries try to break a change or design. A verified finding requires a run against the real code and a lead rerun that demonstrates a failure of the stated intent. Report findings, never apply fixes.
 
-The deliverable is a synthesized verdict. Do NOT auto-apply changes.
+## Frame
 
-## Step 1, Determine Scope
+Read [session capabilities](../../references/host-capabilities.md), [model selection](../../references/model-roles.md), [assignment contract](../../references/orchestration-contract.md), and [Arena](../arena/SKILL.md). Use the scope the user names. Otherwise inspect the branch diff from its merge base through the working tree, including scoped untracked files. State the intent in your own words. Resolve uncertainty that affects the review before claiming a grounded result.
 
-Identify what to review from context:
+## Isolate and dispatch
 
-- If the user points at specific files or a diff, use that
-- If on a feature branch, run `git diff main...HEAD` (or the appropriate base branch) for the full changeset
-- If the user's message references recent work, gather the relevant files
+Use Arena's framing, runner selection and isolated output ownership, substituting authorized interrogate reviewer preferences. Every adversary receives the identical scope, intent and reproduction brief. Do not perform Arena's judging, base selection or grafting. Different adversaries can find different failures, and every verified failure belongs in the result.
 
-Package the diff (or file contents) plus any surrounding context files the reviewers need to understand the code.
+Before dispatch, identify the exact base revision and capture the scoped staged, unstaged and untracked changes without resetting, stashing or editing the user's checkout. Record the snapshot's files and hashes. Copy that reviewed scope into each task-owned isolated writable worktree or equivalent supported isolation. Verify its bytes and resulting diff before execution. Do not copy secrets, unrelated untracked files, installed dependencies or running services implicitly. Give each worker a separate immutable assignment and output path. Never let a repro mutate the original checkout or another worker's artifacts.
 
-## Step 2, State the Intent
+Use only exposed authorized worker and execution operations for this host. Host-specific agent types, background flags and model slugs are not portable capabilities. Preserve explicit model selections, track requested and observed models separately, and report unknown model diversity honestly. On unavailable workers, an authorized sequential run can be useful but is reduced capability. Missing writable isolation or execution does not grant permission to install dependencies, use a live account, contact a service or write externally.
 
-Before spawning reviewers, state the intent explicitly. Derive this from:
+Give each adversary this brief:
 
-- The user's message
-- Commit messages
-- PR description if one exists
-- The code itself
+> Break this change. Prove each finding with a run against the reviewed real code, such as a failing test, a repro script or command output that shows wrong behavior. For a design, use an authorized local prototype or probe. Keep repros inside your isolated output. Return the exact command, revision, environment, exit code, actual output and output required by the intent. Leave out anything you did not run. No findings is a valid result. Do not fix the change or modify shared state.
 
-Write one clear paragraph. If you're unsure about the intent, ask the user before proceeding.
+## Verify
 
-## Step 3, Spawn Reviewers
+Inspect each terminal worker result and artifact under the assignment contract. The lead reruns each proposed command in a separate authorized isolated copy of the same snapshot. Retain a finding only when the observed failure breaks the stated intent. Deduplicate by root cause. Record commands, outputs and dropped claims before reporting. A successful process, reviewer agreement or static code citation alone is not a reproduction. A command that passes drops that finding, with the reason.
 
-Use [session capabilities](../../references/host-capabilities.md), [model selection](../../references/model-roles.md), and the [assignment contract](../../references/orchestration-contract.md). Launch authorized independent read-only reviewers together through the exposed worker operation, one per explicitly configured reviewer selection. Extend or shrink Reviewer A/B labels to the selection count. Give each an immutable assignment, the same input revision and separate result ownership. Inspect actual results before synthesis.
+If execution or writes are denied, honor the read-only scope. Inspect supplied code and existing evidence, label the result a reduced static review, and place unrun suspicions under Unverified observations. Do not fabricate a rerun, report a full Interrogate pass, or say no bugs exist. If the required input or an indispensable safe reproduction environment is missing, leave that verification gate blocked. Existing legacy rubric references are retained for staged-source accounting and are not mandatory inputs to this revised workflow.
 
-The canonical source used a local model rule and default requests from the Claude and Grok families. The exact historical defaults are preserved as provenance in the [adaptation record](../../docs/parity/adaptations/interrogate.json). These historical requests do not establish available models. Preserve explicit session selections. With no configured selections, request two inherited reviewers and disclose that inherited or identical models do not establish model diversity. For auto or inherit-parent, omit explicit model selection. Never treat aliases as rejected model names.
+## Output
 
-Select explicit models and effort only from current exposed tool support. If a configured request is rejected, disclose it and use an authorized supported alternative, preferring the same family and reasoning tier where available. If the exact selection is required, report blocked. Record requested and observed models separately; missing observations remain unknown. Do not open a PR or change settings to repair upstream defaults without explicit authorization.
+- Intent, scope and exact snapshot identity.
+- Reviewers, requested and observed models, worker independence and capability limits.
+- Findings, each with its command, environment, actual and required output, exit code, lead rerun evidence, violated intent and adversary attribution. Say "no verified findings" when none survive, with the execution limits.
+- Dropped, per adversary, with counts and reasons. Distinguish disproven claims from unrun or blocked claims.
+- Unverified observations and missing verification when operating in reduced capability.
 
-When independent workers are unavailable, apply the same prompt and rubric sequentially with authorization and label reduced capability. Do not call repeated passes independent reviewers or consensus. Missing observed model diversity limits that claim even when worker independence succeeds. Denied review or missing source blocks grounded findings. Do not install tools or configure agents as an incidental step.
-
-Read `references/reviewer-prompt.md` and fill in the template with:
-1. The stated intent
-2. The diff or file contents
-3. The review rubric from `references/rubric.md`
-4. The code-quality lens from `references/code-quality-review.md`
-
-The same filled template goes to all reviewers, so every model applies the code-quality lens.
-
-## Step 4, Synthesize
-
-As results come back, build a unified picture:
-
-1. **Parse all findings** from the reviewers
-2. **Identify consensus**. Findings raised by 2+ models independently are highest signal.
-3. **Identify lone-model findings**. Still worth reading, but weight accordingly.
-4. **Deduplicate**. Different models may describe the same issue differently. Merge these and note which models raised it.
-5. **Note disagreements**. If one model flags something and another explicitly says the opposite, that's useful context for the verdict.
-
-## Step 5, Lead Judgment
-
-You are the lead reviewer, a pragmatic senior engineer, not a neutral aggregator.
-
-Read `references/lead-judgment.md` for the full framework.
-
-Categorize every finding using these buckets:
-
-- **Act on**. Real issues affecting correctness, security, or maintainability given the actual goals. These would block a real PR.
-- **Consider**. Legitimate points, but you're not sure they outweigh the cost of addressing them right now. Worth the user's attention.
-- **Noted**. Technically valid but not actionable. Context-dependent, premature optimization, or low-impact given the current stage.
-- **Dismissed**. Wrong, nitpicky, or missing context. Brief explanation why.
-
-For each finding, include:
-- Which model(s) raised it
-- The category (act on / consider / noted / dismissed)
-- A one-line rationale for the categorization
-
-## Output Format
-
-Present the verdict in this structure:
-
-### Intent
-> [The stated intent paragraph from Step 2]
-
-### Reviewers
-Report requested and observed models, worker independence, model diversity and capability limits. Missing observations remain unknown.
-
-- Reviewer [label]: [model name], [N findings] (one bullet per reviewer)
-
-### Act On
-[Findings that should be addressed. For each: description, which models raised it, why it matters.]
-
-### Consider
-[Findings worth thinking about. For each: description, which models raised it, tradeoff involved.]
-
-### Noted
-[Valid but low-priority. Brief list.]
-
-### Dismissed
-[Rejected findings with brief rationale.]
-
-### Agreement Map
-[Where did models agree, where did they diverge, and what does the pattern of agreement/disagreement tell us?]
+The source checkout, dependency approvals and user authorization remain unchanged. A review never authorizes fixes, publication or personal settings changes.

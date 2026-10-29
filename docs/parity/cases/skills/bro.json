@@ -1,8 +1,13 @@
 {
-  "id": "plain-restate",
-  "sourcePaths": [
-    "skills/bro/SKILL.md"
+  "expectedBlocked": "If the previous assistant message is unavailable, says it cannot restate the message and requests the missing text without inventing its contents.",
+  "expectedFull": "Restates the actual immediately preceding assistant message in plain, coherent, concise language without adding claims. For the seeded assistant turn, explains that changes should happen one at a time so writers do not overwrite each other.",
+  "expectedReduced": "If only an excerpt of the previous message is available, restates that excerpt and names the context limit without claiming it is the complete message.",
+  "forbiddenClaims": [
+    "New facts, advice, promises, or outcomes absent from the previous message.",
+    "Claims that unavailable conversation history was read.",
+    "Claims of host behavioral verification from structural validation."
   ],
+  "id": "plain-restate",
   "prompt": "Invoke bro.",
   "requirements": [
     "Before invocation, seed this exact sentence as the immediately preceding ASSISTANT turn: We should serialize mutations to the shared state to prevent concurrent writers from clobbering each other.",
@@ -10,12 +15,7 @@
     "Access to the actual previous assistant message.",
     "User invocation of bro; preserve disable-model-invocation metadata."
   ],
-  "expectedFull": "Restates the actual immediately preceding assistant message in plain, coherent, concise language without adding claims. For the seeded assistant turn, explains that changes should happen one at a time so writers do not overwrite each other.",
-  "expectedReduced": "If only an excerpt of the previous message is available, restates that excerpt and names the context limit without claiming it is the complete message.",
-  "expectedBlocked": "If the previous assistant message is unavailable, says it cannot restate the message and requests the missing text without inventing its contents.",
-  "forbiddenClaims": [
-    "New facts, advice, promises, or outcomes absent from the previous message.",
-    "Claims that unavailable conversation history was read.",
-    "Claims of host behavioral verification from structural validation."
+  "sourcePaths": [
+    "skills/bro/SKILL.md"
   ]
 }

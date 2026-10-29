@@ -1,35 +1,35 @@
 {
-  "name": "principle-exhaust-the-design-space",
-  "kind": "principle",
-  "purpose": "Explore distinct alternatives before choosing a novel interaction or architectural approach.",
-  "triggers": [
-    "Novel UI interactions without codebase precedent",
-    "Architectural choices with multiple viable approaches",
-    "Product decisions where experience depends on feel"
-  ],
-  "inputs": [
-    "Authorized task and constraints",
-    "Codebase precedent",
-    "Available prototype and evaluation tools"
-  ],
-  "outputs": [
-    "2-3 distinct prototypes or sketches compared side by side",
-    "Choice after comparison, with observed checks and untested limits"
-  ],
-  "ordinaryExample": "Compare a command palette, a direct manipulation canvas and a guided form for a novel editing interaction before choosing its implementation.",
-  "dependencies": [
-    "references/host-capabilities.md"
-  ],
   "capabilityLimits": [
     "Writes and execution require available tools and permissions.",
     "Without execution, label sketches or proposals untested; runtime behavior and interaction feel remain unverified.",
     "Required unavailable construction or evaluation remains blocked.",
     "Invocation metadata does not prove host enforcement. Host behavior has not been tested."
   ],
+  "caseIds": [
+    "alternatives"
+  ],
+  "dependencies": [
+    "references/host-capabilities.md"
+  ],
+  "inputs": [
+    "Authorized task and constraints",
+    "Codebase precedent",
+    "Available prototype and evaluation tools"
+  ],
+  "kind": "principle",
+  "name": "principle-exhaust-the-design-space",
+  "ordinaryExample": "Compare a command palette, a direct manipulation canvas and a guided form for a novel editing interaction before choosing its implementation.",
+  "outputs": [
+    "2-3 distinct prototypes or sketches compared side by side",
+    "Choice after comparison, with observed checks and untested limits"
+  ],
+  "purpose": "Explore distinct alternatives before choosing a novel interaction or architectural approach.",
   "sourcePaths": [
     "skills/principle-exhaust-the-design-space/SKILL.md"
   ],
-  "caseIds": [
-    "alternatives"
+  "triggers": [
+    "Novel UI interactions without codebase precedent",
+    "Architectural choices with multiple viable approaches",
+    "Product decisions where experience depends on feel"
   ]
 }

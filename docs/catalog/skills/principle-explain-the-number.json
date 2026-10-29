@@ -1,35 +1,35 @@
 {
-  "name": "principle-explain-the-number",
-  "kind": "principle",
-  "purpose": "Check that a measured number describes completed work and has an evidenced limiting factor before trusting, reporting or acting on it.",
-  "triggers": [
-    "Before trusting, reporting or acting on a measured speedup, regression, throughput, latency or eval result"
-  ],
-  "inputs": [
-    "Measured results, run count, spread and completed-work evidence",
-    "Profiles or system counters from a run and corresponding source",
-    "Available inspection, execution and evidence storage permissions"
-  ],
-  "outputs": [
-    "Measurement explanation with evidenced limiter and ruled-out alternative explanations",
-    "Retained run count, spread and limiter evidence, or explicit unverified checks"
-  ],
-  "ordinaryExample": "Before reporting a parser speedup, check completed requests, repeated-run spread, cache effects and the runtime limiter using benchmark-checklist.",
-  "dependencies": [
-    "references/host-capabilities.md",
-    "skills/benchmark-checklist/SKILL.md",
-    "skills/principle-prove-it-works/SKILL.md"
-  ],
   "capabilityLimits": [
     "Unavailable runs or profiles leave affected checks unverified.",
     "Source reading alone cannot establish a limiter.",
     "Preserve disable-model-invocation metadata without assuming host enforcement.",
     "Host behavior has not been tested."
   ],
+  "caseIds": [
+    "misleading-speedup"
+  ],
+  "dependencies": [
+    "references/host-capabilities.md",
+    "skills/benchmark-checklist/SKILL.md",
+    "skills/principle-prove-it-works/SKILL.md"
+  ],
+  "inputs": [
+    "Measured results, run count, spread and completed-work evidence",
+    "Profiles or system counters from a run and corresponding source",
+    "Available inspection, execution and evidence storage permissions"
+  ],
+  "kind": "principle",
+  "name": "principle-explain-the-number",
+  "ordinaryExample": "Before reporting a parser speedup, check completed requests, repeated-run spread, cache effects and the runtime limiter using benchmark-checklist.",
+  "outputs": [
+    "Measurement explanation with evidenced limiter and ruled-out alternative explanations",
+    "Retained run count, spread and limiter evidence, or explicit unverified checks"
+  ],
+  "purpose": "Check that a measured number describes completed work and has an evidenced limiting factor before trusting, reporting or acting on it.",
   "sourcePaths": [
     "skills/principle-explain-the-number/SKILL.md"
   ],
-  "caseIds": [
-    "misleading-speedup"
+  "triggers": [
+    "Before trusting, reporting or acting on a measured speedup, regression, throughput, latency or eval result"
   ]
 }

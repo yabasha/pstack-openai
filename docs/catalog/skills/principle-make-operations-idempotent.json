@@ -1,32 +1,32 @@
 {
-  "name": "principle-make-operations-idempotent",
-  "kind": "principle",
-  "purpose": "Make repeated and interrupted operations converge to the correct state through reconciliation.",
-  "triggers": [
-    "Designing commands, lifecycle steps or processing loops amid crashes, restarts and retries"
-  ],
-  "inputs": [
-    "Authorized operation and its existing state",
-    "Crash points, action identities and destination outcomes"
-  ],
-  "outputs": [
-    "Convergent operation design and repeated-run or crash checks when authorized and available"
-  ],
-  "ordinaryExample": "After an interrupted payment job, inspect its action identity and destination outcome before authorized recovery with the same idempotency key.",
-  "dependencies": [
-    "references/host-capabilities.md",
-    "references/orchestration-contract.md"
-  ],
   "capabilityLimits": [
     "Unknown external outcomes or missing permission block replay.",
     "Unavailable inspection or execution permits a reduced design with unperformed checks stated.",
     "Preserve disable-model-invocation metadata without assuming host enforcement.",
     "Host behavior has not been tested."
   ],
+  "caseIds": [
+    "replay"
+  ],
+  "dependencies": [
+    "references/host-capabilities.md",
+    "references/orchestration-contract.md"
+  ],
+  "inputs": [
+    "Authorized operation and its existing state",
+    "Crash points, action identities and destination outcomes"
+  ],
+  "kind": "principle",
+  "name": "principle-make-operations-idempotent",
+  "ordinaryExample": "After an interrupted payment job, inspect its action identity and destination outcome before authorized recovery with the same idempotency key.",
+  "outputs": [
+    "Convergent operation design and repeated-run or crash checks when authorized and available"
+  ],
+  "purpose": "Make repeated and interrupted operations converge to the correct state through reconciliation.",
   "sourcePaths": [
     "skills/principle-make-operations-idempotent/SKILL.md"
   ],
-  "caseIds": [
-    "replay"
+  "triggers": [
+    "Designing commands, lifecycle steps or processing loops amid crashes, restarts and retries"
   ]
 }

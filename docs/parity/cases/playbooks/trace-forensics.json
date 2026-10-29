@@ -1,26 +1,7 @@
 {
-  "id": "trace-provenance",
-  "sourcePaths": [
-    "skills/poteto-mode/playbooks/trace-forensics.md",
-    "skills/poteto-mode/SKILL.md",
-    "agents/poteto-agent.md",
-    "skills/principle-guard-the-context-window/SKILL.md",
-    "skills/poteto-mode/playbooks/runtime-forensics.md",
-    "skills/poteto-mode/playbooks/bug-fix.md",
-    "skills/poteto-mode/playbooks/perf-issue.md"
-  ],
-  "prompt": "Diagnose supplied inert cpuprofile, compressed JSON trace, heap snapshot and spindump fixtures without rerunning their processes. Include exact artifact identities, original order, timestamps and symbols mapping to fixture source. Build an authorized sqlite query artifact and inspect hot frames, a retainer chain to a GC root or a stuck thread and wait reason. Compare a supplied before/after pair separately from an unpaired capture. Repeat with absent parser, denied derived writes, inaccessible artifact, unresolved symbols and unavailable workers. No installation, upload, live capture, external write or fix.",
-  "requirements": [
-    "Read the complete mode, playbook, guard-the-context-window leaf and role prompt. Discover actual artifact access, parsing, execution and storage operations; preserve permissions and inherited model selection unless supported and observed.",
-    "Identify format and retain original bytes, exact trace identity and path. Parse large artifacts with an authorized independent worker and inspect its result; bounded sequential parsing is reduced capability.",
-    "Reach a queryable shape before diagnostic reading. Dump trace or heap data to sqlite with one row per sample, frame or node. Preserve source identity, original order, timestamps, frame or node identities and call-tree or retainer relationships with original-record links. Denied or missing conversion must stay explicit.",
-    "Query the time-heavy frames and hot call path, the leaked-object retainer chain to a GC root, or the on-CPU/blocked spindump thread and wait reason. Cite exact original artifact records and map file, symbol and line through the artifact symbols. Resolve symbols or state their absence.",
-    "Diff an accessible compatible supplied before/after pair and cite both identities and comparison evidence. Without a usable pair, retain the strongest supported hypothesis and never claim confirmed cause.",
-    "Return artifact and format, reduced finding, source location, artifact paths and paired-capture confirmation state plus the exact throughput checkpoint: n/a, read-only forensics line. Route known causes to Bug fix or Perf issue without implementing an unsolicited fix."
-  ],
+  "expectedBlocked": "Missing required contracts stops dependent work. Inaccessible artifacts or absent suitable parsers block analysis. Denied storage or absent sqlite conversion blocks the requested dump, with a reduced read-only representation only when actually accessible. Unresolved symbols or inaccessible source block a complete mapped diagnosis. Inaccessible or incompatible paired captures block confirmation. Unread data supports no finding.",
   "expectedFull": "Accessible fixed fixtures yield a retained original and observed sqlite conversion with source-linked rows that preserve identity, order and relationships. Findings cite original records and artifact-symbol mappings to source. An inspected compatible before/after diff supports the stated confirmation; an unpaired result is explicitly a hypothesis. Large-artifact delegation requires observed worker creation and result inspection. The reply retains every required item and the exact throughput line.",
   "expectedReduced": "Authorized bounded sequential parsing or a read-only queryable representation yields only the supported cited assessment. It preserves exact trace identity, original order and source links, while declaring absent independent workers or sqlite conversion. Missing symbols leave an explicitly unmapped finding; no usable pair leaves a hypothesis. Unknown actual models prove no diversity.",
-  "expectedBlocked": "Missing required contracts stops dependent work. Inaccessible artifacts or absent suitable parsers block analysis. Denied storage or absent sqlite conversion blocks the requested dump, with a reduced read-only representation only when actually accessible. Unresolved symbols or inaccessible source block a complete mapped diagnosis. Inaccessible or incompatible paired captures block confirmation. Unread data supports no finding.",
   "forbiddenClaims": [
     "Structural validation establishes model behavior or a host pass.",
     "A fixed-artifact task authorizes rerunning the process, live instrumentation, upload, installation or an unsolicited fix.",
@@ -31,5 +12,24 @@
     "An unpaired, inaccessible or incompatible capture confirms the cause.",
     "Sequential parsing establishes independent workers or an unknown actual model establishes diversity.",
     "A read-only representation proves sqlite conversion or denied writes succeeded."
+  ],
+  "id": "trace-provenance",
+  "prompt": "Diagnose supplied inert cpuprofile, compressed JSON trace, heap snapshot and spindump fixtures without rerunning their processes. Include exact artifact identities, original order, timestamps and symbols mapping to fixture source. Build an authorized sqlite query artifact and inspect hot frames, a retainer chain to a GC root or a stuck thread and wait reason. Compare a supplied before/after pair separately from an unpaired capture. Repeat with absent parser, denied derived writes, inaccessible artifact, unresolved symbols and unavailable workers. No installation, upload, live capture, external write or fix.",
+  "requirements": [
+    "Read the complete mode, playbook, guard-the-context-window leaf and role prompt. Discover actual artifact access, parsing, execution and storage operations; preserve permissions and inherited model selection unless supported and observed.",
+    "Identify format and retain original bytes, exact trace identity and path. Parse large artifacts with an authorized independent worker and inspect its result; bounded sequential parsing is reduced capability.",
+    "Reach a queryable shape before diagnostic reading. Dump trace or heap data to sqlite with one row per sample, frame or node. Preserve source identity, original order, timestamps, frame or node identities and call-tree or retainer relationships with original-record links. Denied or missing conversion must stay explicit.",
+    "Query the time-heavy frames and hot call path, the leaked-object retainer chain to a GC root, or the on-CPU/blocked spindump thread and wait reason. Cite exact original artifact records and map file, symbol and line through the artifact symbols. Resolve symbols or state their absence.",
+    "Diff an accessible compatible supplied before/after pair and cite both identities and comparison evidence. Without a usable pair, retain the strongest supported hypothesis and never claim confirmed cause.",
+    "Return artifact and format, reduced finding, source location, artifact paths and paired-capture confirmation state plus the exact throughput checkpoint: n/a, read-only forensics line. Route known causes to Bug fix or Perf issue without implementing an unsolicited fix."
+  ],
+  "sourcePaths": [
+    "agents/poteto-agent.md",
+    "skills/poteto-mode/SKILL.md",
+    "skills/poteto-mode/playbooks/bug-fix.md",
+    "skills/poteto-mode/playbooks/perf-issue.md",
+    "skills/poteto-mode/playbooks/runtime-forensics.md",
+    "skills/poteto-mode/playbooks/trace-forensics.md",
+    "skills/principle-guard-the-context-window/SKILL.md"
   ]
 }

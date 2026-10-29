@@ -70,6 +70,7 @@ Forbidden claims:
 - [references/model-roles.md](../../references/model-roles.md)
 - [references/orchestration-contract.md](../../references/orchestration-contract.md)
 - [skills/maintain-formal-verification-skill/SKILL.md](../../skills/maintain-formal-verification-skill/SKILL.md)
+- [skills/statechart/SKILL.md](../../skills/statechart/SKILL.md)
 
 ## Host limits
 
@@ -87,6 +88,6 @@ Current host statuses and release evidence: [current parity inventory](../parity
 
 Destination: [skills/create-formal-verification-skill/SKILL.md](../../skills/create-formal-verification-skill/SKILL.md).
 
-Upstream commit: `4ec7ffa173eaa70d3d9467a627baf0954645a353`. SHA-256: `6c934cd15a9583533ff9b7a9cad62775d7e80402d26d3ba7f74f79ea21a1d8eb`.
+Upstream commit: `c742dd61706fbacc1b95f1a20b7b988cf096ce6c`. SHA-256: `30ef0ac27612ecd16fdc081112113221d673053cef3f8603db11932193861211`.
 
 Disposition: `runtime`. Aggregate adaptation status: `adapted-reviewed`.

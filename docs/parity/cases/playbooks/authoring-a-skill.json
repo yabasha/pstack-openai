@@ -1,10 +1,15 @@
 {
-  "id": "supported-authoring",
-  "sourcePaths": [
-    "skills/poteto-mode/playbooks/authoring-a-skill.md",
-    "skills/poteto-mode/playbooks/opening-a-pr.md",
-    "skills/principle-encode-lessons-in-structure/SKILL.md"
+  "expectedBlocked": "Without an available authoring workflow and without authorization or capability for a provisional draft, report the missing create-skill dependency and unavailable operation. Unavailable validation or PR delivery remains explicitly blocked or deferred; no completion claim substitutes for it.",
+  "expectedFull": "An available supported authoring workflow runs after its instructions and validator are inspected. The authored skill passes the observed structural checks and structural test cases. Subjective tests are skipped. The reply identifies the actual workflow, states create-skill is absent unless discovered, leaves unknown trigger performance unverified and reports observed authorized PR delivery or its explicit deferral.",
+  "expectedReduced": "With authorized writes but no supported authoring workflow, produce only a provisional skill draft and manual checklist. Preserve the missing create-skill block, unexecuted validation and unknown trigger performance. If authoring and validation succeed but PR delivery is unavailable, retain the validated local skill and report the deferred PR dependency.",
+  "forbiddenClaims": [
+    "create-skill shipped or executed without discovery and observed evidence.",
+    "A provisional draft or manual checklist proves supported authoring execution or validator success.",
+    "Structural checks prove trigger performance, subjective quality or host behavioral parity.",
+    "A PR was created, commits made or external writes performed without authorization and observed results.",
+    "Path delegation to another skill proves independent worker execution."
   ],
+  "id": "supported-authoring",
   "prompt": "Author or modify a skill with this playbook. Inspect the available authoring workflow and its validator. Preserve the skill voice, validate structural contracts, and report unknown trigger performance without assuming create-skill is installed or PR writes are authorized.",
   "requirements": [
     "Inspect exposed capabilities and the available authoring workflow instructions and actual validator before use; identify the missing create-skill dependency.",
@@ -13,14 +18,9 @@
     "Apply Opening a PR only when its dependency, capabilities and authorization permit; preserve the skill artifact when PR delivery is deferred.",
     "Reply with skill summary, key design decisions and validation notes; distinguish observed results from unknown trigger performance."
   ],
-  "expectedFull": "An available supported authoring workflow runs after its instructions and validator are inspected. The authored skill passes the observed structural checks and structural test cases. Subjective tests are skipped. The reply identifies the actual workflow, states create-skill is absent unless discovered, leaves unknown trigger performance unverified and reports observed authorized PR delivery or its explicit deferral.",
-  "expectedReduced": "With authorized writes but no supported authoring workflow, produce only a provisional skill draft and manual checklist. Preserve the missing create-skill block, unexecuted validation and unknown trigger performance. If authoring and validation succeed but PR delivery is unavailable, retain the validated local skill and report the deferred PR dependency.",
-  "expectedBlocked": "Without an available authoring workflow and without authorization or capability for a provisional draft, report the missing create-skill dependency and unavailable operation. Unavailable validation or PR delivery remains explicitly blocked or deferred; no completion claim substitutes for it.",
-  "forbiddenClaims": [
-    "create-skill shipped or executed without discovery and observed evidence.",
-    "A provisional draft or manual checklist proves supported authoring execution or validator success.",
-    "Structural checks prove trigger performance, subjective quality or host behavioral parity.",
-    "A PR was created, commits made or external writes performed without authorization and observed results.",
-    "Path delegation to another skill proves independent worker execution."
+  "sourcePaths": [
+    "skills/poteto-mode/playbooks/authoring-a-skill.md",
+    "skills/poteto-mode/playbooks/opening-a-pr.md",
+    "skills/principle-encode-lessons-in-structure/SKILL.md"
   ]
 }

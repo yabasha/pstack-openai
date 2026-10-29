@@ -40,19 +40,21 @@ A fresh worker can still inherit the parent's conversation, including its rubric
 
 Each rationale names the alternatives the candidate considered and what it rejected.
 
-If a candidate fails to produce output, proceed with N-1 and note the dropout in the synthesis record. One survivor means incomplete competition, even if its artifact is useful. Zero survivors blocks synthesis. Never integrate partial or cancelled artifacts as completed candidates.
+If a configured runner is rejected, record the rejected selection and never retry it unchanged. Use only a documented supported and authorized same-family fallback, or drop the seat when none is available. Replace dropped seats up to the configured count, or the two-seat default, using an authorized surviving selection or inheritance. Disclose replacement models and preserve explicit exact-model requirements as blocked. Each replacement gets a fresh immutable assignment and output owner. Never replace a writer until its terminal state or safe quarantine is inspected. If execution leaves fewer than two completed candidates, label incomplete competition. Zero survivors blocks synthesis. Never integrate partial or cancelled artifacts as completed candidates.
 
 ## Phase C: Cross-judge
 
-After all Phase B candidates reach terminal state and their accepted artifacts are inspected, choose one model from an explicitly supplied, authorized `arena cross-judge pool` preference. Without that preference, use an inherited worker or a supported explicit selection under the model-role contract. The source pool named the same two families as the runners; it does not establish portable model availability. Prefer a different observed model family from the parent's when available. Disclose rejected choices and supported fallbacks, or block if the exact choice is required.
+After all Phase B candidates reach terminal state and their accepted artifacts are inspected, inspect the authorized cross-judge pool in preference order. A judge must use an observed model family different from the parent's. An auto or inherit-parent alias never judges. Do not infer a family from a source-host alias or invent model mappings. Try only currently supported, authorized selections and track rejected entries so no rejected model is retried. Preserve exact-model requirements.
 
-Spawn one fresh readonly judge worker. It sees the rubric and completed candidates by path label, scores each criterion, and recommends a base with rationale. It runs in parallel with the parent's reading in Phase D when observed background execution permits it, never with candidates still writing. The judge has no candidate write ownership. Unknown actual models leave diversity unverified. Unavailable fresh judging remains a reduced or blocked gate, never an invented independent verdict.
+Spawn one fresh readonly judge only when a different family is supported. Give it the rubric and completed artifacts by path label. Verify actual parent and judge model families in the result before accepting the independent cross-family claim. If the selected model resolves to the parent's family, quarantine that verdict. Unknown observed families leave that gate unverified. If no different-family judge can run, skip judging, let the parent choose alone, and label the result reduced capability. Do not replace it with an inherited or same-family judge. A required independent or cross-family gate remains blocked.
+
+The judge scores each criterion and recommends a base with rationale. It has no candidate write ownership and never starts while candidates are still writing. Its missing or unverified verdict must remain explicit in the synthesis record.
 
 ## Phase D: Pick a base
 
 Read every candidate end to end before picking.
 
-Score each candidate against the rubric criterion by criterion, not on holistic feel. Compare against the cross-judge. Agreement on the base confirms the pick. Disagreement means one of you is biased or the rubric was ambiguous. Read both rationales before deciding.
+Score each candidate against the rubric criterion by criterion, not on holistic feel. Compare against the cross-judge when a verified judge ran. Otherwise record parent-only selection and reduced capability. Agreement on the base confirms the pick. Disagreement means one of you is biased or the rubric was ambiguous. Read both rationales before deciding.
 
 Pick the base on which candidate a future maintainer can extend most easily without breaking invariants. Prefer the cleaner boundary or smaller API when two feel tied, per the [Laziness Protocol](../principle-laziness-protocol/SKILL.md).
 

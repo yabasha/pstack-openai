@@ -20,10 +20,10 @@
       "license": "MIT",
       "sourcePath": "LICENSE"
     },
-    "rationale": "Upstream changes are editorial compression or delegate-effort reminders already governed by shared mode policy. Retain explicit local host, offline audit, authorization and evidence bindings.",
-    "upstreamCommit": "4ec7ffa173eaa70d3d9467a627baf0954645a353",
+    "rationale": "Reuse the reviewed portable adaptation and incorporate PR986 review/model/workflow semantics plus PR1043 compatibility decisions. Preserve host capability, model, ownership, fallback, persistence and user-authorization contracts. Deferred unrelated behavior remains explicit.",
+    "upstreamCommit": "c742dd61706fbacc1b95f1a20b7b988cf096ce6c",
     "upstreamPath": "skills/poteto-mode/playbooks/autonomous-run.md",
-    "upstreamSha256": "6ac974fd2b09748add56493e89f578a35a6a9289e1026515878d81ef3cf129d1",
+    "upstreamSha256": "e74323411b5a760ffa7393d908d07fed420c68f8dc2aed1267505eaeadf130f2",
     "verification": {
       "chatgpt": {
         "evidence": [],

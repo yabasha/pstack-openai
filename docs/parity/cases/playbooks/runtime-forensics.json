@@ -1,24 +1,7 @@
 {
-  "id": "accessible-trace",
-  "sourcePaths": [
-    "skills/poteto-mode/playbooks/runtime-forensics.md",
-    "skills/poteto-mode/SKILL.md",
-    "agents/poteto-agent.md",
-    "skills/principle-guard-the-context-window/SKILL.md",
-    "skills/poteto-mode/playbooks/bug-fix.md",
-    "skills/poteto-mode/playbooks/perf-issue.md"
-  ],
-  "prompt": "Diagnose a fixture process with idle CPU spin, a leak or a visual glitch using matching accessible runtime telemetry. Retain a CPU profile, heap snapshot or CDP trace and map the reduced finding to fixture source. Exercise authorized live diagnostic instrumentation separately from read-only permission. Repeat with supplied telemetry only, an inaccessible artifact, absent controls, denied live mutation and unavailable workers. Use inert fixtures, no external writes or installation, and return a cited diagnosis without a fix.",
-  "requirements": [
-    "Read the full mode, playbook, guard-the-context-window leaf and complete worker prompt. Discover actual matching controls and record capture and artifact access outcomes; absent telemetry remains explicit.",
-    "Capture a real CPU profile for spin, heap snapshot for a leak or CDP trace for a glitch on the matching running process. Preserve the original artifact and capture context.",
-    "Reduce the evidence to the hot function, leaked-object retainer chain to a GC root or loop firing without input. Parse large artifacts with an authorized independent worker and inspect its result under the assignment and model contracts; bounded sequential parsing is reduced capability.",
-    "Prove the mechanism with authorized exposed CDP eval or a live hotfix without reloading. Read-only permission does not authorize these mutations. Record the intervention and result; unavailable proof keeps the diagnosis provisional.",
-    "Map evidence to the file, symbol and allocating or scheduling line. Return signal, reduced finding, mechanism proof, source location and artifact paths with the exact throughput checkpoint: n/a, read-only forensics line. Do not implement a fix unless asked; hand back to Bug fix or Perf once the cause is known."
-  ],
+  "expectedBlocked": "Missing required contracts stops dependent work. Absent controls, denied capture execution or inaccessible telemetry blocks live capture. Denied or unavailable live mutation blocks mechanism proof, even if a trace is readable. Unread artifacts cannot support findings. Unavailable source mapping blocks a complete mapped diagnosis; lack of fix authorization leaves implementation unperformed.",
   "expectedFull": "Observed matching live capture yields an accessible artifact, inspected reduction and authorized live mechanism proof. The diagnosis cites runtime evidence and the allocating or scheduling source location, returns all five reply items and the exact throughput line, and hands off without implementing a fix. Large-artifact independent parsing requires observed worker creation and result inspection.",
   "expectedReduced": "Accessible supplied traces permit a cited limited assessment with no claim of fresh capture or live mechanism proof. Authorized bounded sequential parsing retains artifact citations but does not satisfy worker independence. Missing source mapping or actual model observation stays explicit; a provisional hypothesis stays provisional.",
-  "expectedBlocked": "Missing required contracts stops dependent work. Absent controls, denied capture execution or inaccessible telemetry blocks live capture. Denied or unavailable live mutation blocks mechanism proof, even if a trace is readable. Unread artifacts cannot support findings. Unavailable source mapping blocks a complete mapped diagnosis; lack of fix authorization leaves implementation unperformed.",
   "forbiddenClaims": [
     "Source inspection or structural fixtures prove runtime behavior or either host passed.",
     "Absent or inaccessible telemetry is a captured or parsed artifact.",
@@ -28,5 +11,22 @@
     "Sequential parsing proves independent workers or unknown actual models prove model diversity.",
     "An invented source line or artifact path supports the diagnosis.",
     "The diagnosis authorizes a fix, installation or external writes."
+  ],
+  "id": "accessible-trace",
+  "prompt": "Diagnose a fixture process with idle CPU spin, a leak or a visual glitch using matching accessible runtime telemetry. Retain a CPU profile, heap snapshot or CDP trace and map the reduced finding to fixture source. Exercise authorized live diagnostic instrumentation separately from read-only permission. Repeat with supplied telemetry only, an inaccessible artifact, absent controls, denied live mutation and unavailable workers. Use inert fixtures, no external writes or installation, and return a cited diagnosis without a fix.",
+  "requirements": [
+    "Read the full mode, playbook, guard-the-context-window leaf and complete worker prompt. Discover actual matching controls and record capture and artifact access outcomes; absent telemetry remains explicit.",
+    "Capture a real CPU profile for spin, heap snapshot for a leak or CDP trace for a glitch on the matching running process. Preserve the original artifact and capture context.",
+    "Reduce the evidence to the hot function, leaked-object retainer chain to a GC root or loop firing without input. Parse large artifacts with an authorized independent worker and inspect its result under the assignment and model contracts; bounded sequential parsing is reduced capability.",
+    "Prove the mechanism with authorized exposed CDP eval or a live hotfix without reloading. Read-only permission does not authorize these mutations. Record the intervention and result; unavailable proof keeps the diagnosis provisional.",
+    "Map evidence to the file, symbol and allocating or scheduling line. Return signal, reduced finding, mechanism proof, source location and artifact paths with the exact throughput checkpoint: n/a, read-only forensics line. Do not implement a fix unless asked; hand back to Bug fix or Perf once the cause is known."
+  ],
+  "sourcePaths": [
+    "agents/poteto-agent.md",
+    "skills/poteto-mode/SKILL.md",
+    "skills/poteto-mode/playbooks/bug-fix.md",
+    "skills/poteto-mode/playbooks/perf-issue.md",
+    "skills/poteto-mode/playbooks/runtime-forensics.md",
+    "skills/principle-guard-the-context-window/SKILL.md"
   ]
 }

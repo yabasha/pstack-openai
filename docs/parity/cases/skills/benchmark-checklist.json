@@ -1,8 +1,15 @@
 {
-  "id": "measurement-method",
-  "sourcePaths": [
-    "skills/benchmark-checklist/SKILL.md"
+  "expectedBlocked": "If neither measurement artifacts nor authorized inspection/execution are available, identify the missing evidence and required method without claiming measured improvement.",
+  "expectedFull": "Record revisions and workload, run at least 5 alternating samples per side, check confounds and all seven gates, and report verdict, units, count, range and limiter. Treat differences below variation as no measurable difference. Missing limiter, untuned sides or unchecked errors/completed work make a claimed difference inconclusive.",
+  "expectedReduced": "Review supplied scripts and artifacts when authorized runs or profiles are unavailable. Record sample count, revisions, workload and unverified confounds; retain inconclusive verdict for missing required evidence. Label a requested one-run ballpark and verify questions 4 and 7.",
+  "forbiddenClaims": [
+    "A single unverified run proves a measured improvement.",
+    "A profiling run is an unperturbed benchmark sample.",
+    "Untuned configurations establish an adoption winner.",
+    "Structural validation establishes host behavior.",
+    "Unavailable tools or denied execution were successfully used."
   ],
+  "id": "measurement-method",
   "prompt": "Report whether revision B improves export performance over revision A for a 60k-row workload. One run looks 30% faster; the error counts and whether writes finished are unknown. Explain the measurement method before claiming improvement.",
   "requirements": [
     "Record workload, dataset size, concurrency, timed region, sample count and exact compared revisions/configurations.",
@@ -10,14 +17,7 @@
     "Preserve the explicit user-requested one-run ballpark exception with questions 4 and 7 and no adoption choice.",
     "Inspect exposed tools and permissions before execution or profiling; unavailable checks remain explicit."
   ],
-  "expectedFull": "Record revisions and workload, run at least 5 alternating samples per side, check confounds and all seven gates, and report verdict, units, count, range and limiter. Treat differences below variation as no measurable difference. Missing limiter, untuned sides or unchecked errors/completed work make a claimed difference inconclusive.",
-  "expectedReduced": "Review supplied scripts and artifacts when authorized runs or profiles are unavailable. Record sample count, revisions, workload and unverified confounds; retain inconclusive verdict for missing required evidence. Label a requested one-run ballpark and verify questions 4 and 7.",
-  "expectedBlocked": "If neither measurement artifacts nor authorized inspection/execution are available, identify the missing evidence and required method without claiming measured improvement.",
-  "forbiddenClaims": [
-    "A single unverified run proves a measured improvement.",
-    "A profiling run is an unperturbed benchmark sample.",
-    "Untuned configurations establish an adoption winner.",
-    "Structural validation establishes host behavior.",
-    "Unavailable tools or denied execution were successfully used."
+  "sourcePaths": [
+    "skills/benchmark-checklist/SKILL.md"
   ]
 }

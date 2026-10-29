@@ -12,7 +12,7 @@
       "sourcePath": "LICENSE"
     },
     "rationale": "Replace undefined-import heuristic with observable behavior and refactor invariance; preserve capability limits.",
-    "upstreamCommit": "4ec7ffa173eaa70d3d9467a627baf0954645a353",
+    "upstreamCommit": "c742dd61706fbacc1b95f1a20b7b988cf096ce6c",
     "upstreamPath": "skills/principle-test-behavior-not-implementation/SKILL.md",
     "upstreamSha256": "f7223698623b6a26fea49c751e466b38e6691b1f32ce841d3983e7ffbe2b74a6",
     "verification": {

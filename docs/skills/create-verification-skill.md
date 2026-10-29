@@ -92,7 +92,7 @@ Current host statuses and release evidence: [current parity inventory](../parity
 
 Destination: [skills/create-verification-skill/SKILL.md](../../skills/create-verification-skill/SKILL.md).
 
-Upstream commit: `4ec7ffa173eaa70d3d9467a627baf0954645a353`. SHA-256: `d353973547bf8ad8977eca645f4cd4feaed0d32f4b43d1448f906b0a76c4d694`.
+Upstream commit: `c742dd61706fbacc1b95f1a20b7b988cf096ce6c`. SHA-256: `d353973547bf8ad8977eca645f4cd4feaed0d32f4b43d1448f906b0a76c4d694`.
 
 Disposition: `runtime`. Aggregate adaptation status: `adapted-reviewed`.
 
@@ -100,7 +100,7 @@ Disposition: `runtime`. Aggregate adaptation status: `adapted-reviewed`.
 
 Destination: [skills/create-verification-skill/references/feature-map-example/README.md](../../skills/create-verification-skill/references/feature-map-example/README.md).
 
-Upstream commit: `4ec7ffa173eaa70d3d9467a627baf0954645a353`. SHA-256: `cb7bd782cf89968a4ba3d58a5151db837430db92d19a6f52a906973b77b516ba`.
+Upstream commit: `c742dd61706fbacc1b95f1a20b7b988cf096ce6c`. SHA-256: `cb7bd782cf89968a4ba3d58a5151db837430db92d19a6f52a906973b77b516ba`.
 
 Disposition: `runtime`. Aggregate adaptation status: `unchanged-reviewed`.
 
@@ -108,7 +108,7 @@ Disposition: `runtime`. Aggregate adaptation status: `unchanged-reviewed`.
 
 Destination: [skills/create-verification-skill/references/feature-map-example/create-note.md](../../skills/create-verification-skill/references/feature-map-example/create-note.md).
 
-Upstream commit: `4ec7ffa173eaa70d3d9467a627baf0954645a353`. SHA-256: `644a44c74f35d38c2feb7cd05a0121fdebbb623e8dc376c185b565a581d1ccf7`.
+Upstream commit: `c742dd61706fbacc1b95f1a20b7b988cf096ce6c`. SHA-256: `644a44c74f35d38c2feb7cd05a0121fdebbb623e8dc376c185b565a581d1ccf7`.
 
 Disposition: `runtime`. Aggregate adaptation status: `unchanged-reviewed`.
 
@@ -116,6 +116,6 @@ Disposition: `runtime`. Aggregate adaptation status: `unchanged-reviewed`.
 
 Destination: [skills/create-verification-skill/references/feature-map-example/search.md](../../skills/create-verification-skill/references/feature-map-example/search.md).
 
-Upstream commit: `4ec7ffa173eaa70d3d9467a627baf0954645a353`. SHA-256: `6e87b9e7f2791a7776ba1bb83f371cd285c306c67f19d245cc4dd6ca3015c823`.
+Upstream commit: `c742dd61706fbacc1b95f1a20b7b988cf096ce6c`. SHA-256: `6e87b9e7f2791a7776ba1bb83f371cd285c306c67f19d245cc4dd6ca3015c823`.
 
 Disposition: `runtime`. Aggregate adaptation status: `unchanged-reviewed`.

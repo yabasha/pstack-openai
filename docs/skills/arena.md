@@ -40,11 +40,11 @@ Arena two designs for an authorized local cache API. Produce isolated artifacts 
 
 Full capability expectation:
 
-Two or more isolated candidates finish before a fresh readonly judge receives the rubric and labelled artifact paths. Parent reads and scores all candidates, compares rationales, selects a maintainable base, grafts coherently and verifies the synthesis with an adjacent evidence note.
+Two or more isolated candidates finish before a fresh readonly judge receives the rubric and labelled artifact paths. Parent reads and scores all candidates, compares rationales, selects a maintainable base, grafts coherently and verifies the synthesis with an adjacent evidence note. The judge has inspected modelFamilyEvidence binding its actual model to a family different from the observed parent family.
 
 Reduced capability expectation:
 
-Without independent workers or a fresh judge, authorized sequential alternatives and parent comparison may produce a useful synthesis labelled reduced capability. Dropouts are recorded; one survivor is incomplete competition and does not prove competitive selection.
+Without independent workers or a fresh judge, authorized sequential alternatives and parent comparison may produce a useful synthesis labelled reduced capability. Dropouts are recorded; one survivor is incomplete competition and does not prove competitive selection. An unavailable or unverified different-family judge is skipped; inherited and same-family judges cannot fill that gate.
 
 Blocked capability expectation:
 
@@ -58,6 +58,8 @@ Required observations:
 - Parent records base, hand-adapted grafts, rejections, convergence or reframing, dropouts and verification.
 - Observe independent worker operations, result artifacts and permission-bound writes; record requested and actual models separately.
 - One survivor means incomplete competition, never a full arena pass.
+- Replace rejected seats only with supported authorized choices, fresh assignments and safe writer ownership. Never retry a rejected selection.
+- A judge must have observed model family different from the parent; inheritance aliases never judge. Skip unavailable cross-family judging and label parent-only selection reduced.
 
 Forbidden claims:
 
@@ -68,6 +70,7 @@ Forbidden claims:
 - Structural validation or a case definition establishes host pass.
 - The rubric is supplied to candidates.
 - Upstream autonomy permits external writes or implicit setup.
+- An inherited, same-family or unknown-family judge establishes cross-family verification.
 
 ## Dependencies
 
@@ -88,6 +91,7 @@ Forbidden claims:
 - Requested models do not prove actual model diversity.
 - Required missing capabilities or denied writes block their gates.
 - Host behavior has not been tested.
+- A judge must have observed family different from the parent; aliases never judge. Missing cross-family judging requires reduced parent-only selection.
 
 ## Source proof and release evidence
 
@@ -97,6 +101,6 @@ Current host statuses and release evidence: [current parity inventory](../parity
 
 Destination: [skills/arena/SKILL.md](../../skills/arena/SKILL.md).
 
-Upstream commit: `4ec7ffa173eaa70d3d9467a627baf0954645a353`. SHA-256: `ed72f6c132b1ce3974d949581d0adc5dade424fe20793ac3b4c4fae22ecb9354`.
+Upstream commit: `c742dd61706fbacc1b95f1a20b7b988cf096ce6c`. SHA-256: `d0adeca6c9b19d43d90ed8f0484f0ddd362f05006d628b8f4cc6c9b55fa4d2b3`.
 
 Disposition: `runtime`. Aggregate adaptation status: `adapted-reviewed`.

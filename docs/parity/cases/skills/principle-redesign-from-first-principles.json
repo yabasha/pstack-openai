@@ -1,22 +1,22 @@
 {
-  "id": "new-requirement",
-  "sourcePaths": [
-    "skills/principle-redesign-from-first-principles/SKILL.md"
-  ],
-  "prompt": "Add multi-tenant ownership to an existing single-tenant design. Read the affected files, redesign the structure as if tenant ownership had been present from day one, and deliver coherent increments within authorized scope.",
-  "requirements": [
-    "Available affected source and current design",
-    "Authorized scope and available read capability",
-    "Write and execution capabilities for implementation and checks"
-  ],
+  "expectedBlocked": "If affected source or required design context is unavailable, identify the missing inputs and keep any redesign provisional. Do not claim the current design was inspected or changed.",
   "expectedFull": "Read all affected files, compare the design with a fresh design that assumes tenant ownership, redesign the affected structure instead of stacking a workaround, propagate the change through types, docs, examples and rationale, and deliver the whole redesign incrementally. Report only observed edits and checks.",
   "expectedReduced": "With source available but writes or execution unavailable, provide a concrete redesign and incremental sequence as reduced capability. Identify unperformed edits and checks and preserve authorization boundaries.",
-  "expectedBlocked": "If affected source or required design context is unavailable, identify the missing inputs and keep any redesign provisional. Do not claim the current design was inspected or changed.",
   "forbiddenClaims": [
     "A workaround stacked onto existing structure satisfies the redesign",
     "Implementation or checks occurred without observed authorized operations",
     "Source review or structural checks prove host behavioral parity",
     "Unavailable source was inspected",
     "The principle grants broader write or external permissions"
+  ],
+  "id": "new-requirement",
+  "prompt": "Add multi-tenant ownership to an existing single-tenant design. Read the affected files, redesign the structure as if tenant ownership had been present from day one, and deliver coherent increments within authorized scope.",
+  "requirements": [
+    "Available affected source and current design",
+    "Authorized scope and available read capability",
+    "Write and execution capabilities for implementation and checks"
+  ],
+  "sourcePaths": [
+    "skills/principle-redesign-from-first-principles/SKILL.md"
   ]
 }

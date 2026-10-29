@@ -1,23 +1,4 @@
 {
-  "name": "principle-encode-lessons-in-structure",
-  "kind": "principle",
-  "purpose": "Encode recurring corrections in enforceable structures and close the correction loop.",
-  "triggers": [
-    "Writing the same instruction a second time",
-    "A recurring correction or unexpected outcome"
-  ],
-  "inputs": [
-    "Authorized task and relevant source",
-    "Correction pattern and rule to enforce"
-  ],
-  "outputs": [
-    "Concrete structural mechanism at the strongest feasible layer, or judgment-dependent guidance with a failure example",
-    "Correction routed to an authorized durable record, skill, lint rule or principle; applied fix or concrete todo"
-  ],
-  "ordinaryExample": "Require a source revision in the release-record schema and reject records that omit it, then remove the redundant reminder.",
-  "dependencies": [
-    "references/host-capabilities.md"
-  ],
   "capabilityLimits": [
     "Missing source or rule keeps the mechanism provisional.",
     "Unavailable writes, execution or persistence allow a reduced proposal with unperformed work stated.",
@@ -25,10 +6,29 @@
     "Preserve disable-model-invocation metadata without assuming host enforcement.",
     "Host behavior has not been tested."
   ],
+  "caseIds": [
+    "repeated-rule"
+  ],
+  "dependencies": [
+    "references/host-capabilities.md"
+  ],
+  "inputs": [
+    "Authorized task and relevant source",
+    "Correction pattern and rule to enforce"
+  ],
+  "kind": "principle",
+  "name": "principle-encode-lessons-in-structure",
+  "ordinaryExample": "Require a source revision in the release-record schema and reject records that omit it, then remove the redundant reminder.",
+  "outputs": [
+    "Concrete structural mechanism at the strongest feasible layer, or judgment-dependent guidance with a failure example",
+    "Correction routed to an authorized durable record, skill, lint rule or principle; applied fix or concrete todo"
+  ],
+  "purpose": "Encode recurring corrections in enforceable structures and close the correction loop.",
   "sourcePaths": [
     "skills/principle-encode-lessons-in-structure/SKILL.md"
   ],
-  "caseIds": [
-    "repeated-rule"
+  "triggers": [
+    "Writing the same instruction a second time",
+    "A recurring correction or unexpected outcome"
   ]
 }

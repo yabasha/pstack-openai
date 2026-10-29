@@ -1,24 +1,14 @@
 {
-  "name": "architect",
-  "kind": "workflow",
-  "purpose": "Sketch caller usage, types, signatures and module boundaries before implementation, compare whole-shape alternatives and redesign when repeated implementation friction invalidates the sketch.",
-  "triggers": [
-    "/architect",
-    "architect this",
-    "design this",
-    "non-trivial work where coding first would lock in the wrong shape"
+  "capabilityLimits": [
+    "Unavailable workers require labelled sequential alternatives as reduced capability.",
+    "Model aliases are preferences; requested or unknown models do not prove diversity.",
+    "Missing invocation uses disclosed complete-workflow execution; missing required workflows block.",
+    "Source reads, isolated writes, worktrees, commits and implementation require authorization and exposed capabilities.",
+    "Host behavior has not been tested."
   ],
-  "inputs": [
-    "Design task and authorized subsystem source reads",
-    "Grounding artifacts, runner preferences and observed capabilities",
-    "Implementation scope and optional checkpoint request"
+  "caseIds": [
+    "boundary-design"
   ],
-  "outputs": [
-    "At least two structurally distinct design candidates and synthesized sketch",
-    "Caller-first usage, ownership, module map and complete rationale",
-    "Authorized implementation, surfaced deviations and renewed design when required"
-  ],
-  "ordinaryExample": "Design a stateful cache boundary, compare two ownership models, derive types from caller usage and implement the selected sketch within authorized scope.",
   "dependencies": [
     "skills/how/SKILL.md",
     "skills/why/SKILL.md",
@@ -44,20 +34,30 @@
     "skills/principle-laziness-protocol/SKILL.md",
     "skills/principle-minimize-reader-load/SKILL.md"
   ],
-  "capabilityLimits": [
-    "Unavailable workers require labelled sequential alternatives as reduced capability.",
-    "Model aliases are preferences; requested or unknown models do not prove diversity.",
-    "Missing invocation uses disclosed complete-workflow execution; missing required workflows block.",
-    "Source reads, isolated writes, worktrees, commits and implementation require authorization and exposed capabilities.",
-    "Host behavior has not been tested."
+  "inputs": [
+    "Design task and authorized subsystem source reads",
+    "Grounding artifacts, runner preferences and observed capabilities",
+    "Implementation scope and optional checkpoint request"
   ],
+  "kind": "workflow",
+  "name": "architect",
+  "ordinaryExample": "Design a stateful cache boundary, compare two ownership models, derive types from caller usage and implement the selected sketch within authorized scope.",
+  "outputs": [
+    "At least two structurally distinct design candidates and synthesized sketch",
+    "Caller-first usage, ownership, module map and complete rationale",
+    "Authorized implementation, surfaced deviations and renewed design when required"
+  ],
+  "purpose": "Sketch caller usage, types, signatures and module boundaries before implementation, compare whole-shape alternatives and redesign when repeated implementation friction invalidates the sketch.",
   "sourcePaths": [
     "skills/architect/SKILL.md",
     "skills/architect/references/design-red-flags.md",
     "skills/architect/references/rationale-template.md",
     "skills/architect/references/runner-prompt.md"
   ],
-  "caseIds": [
-    "boundary-design"
+  "triggers": [
+    "/architect",
+    "architect this",
+    "design this",
+    "non-trivial work where coding first would lock in the wrong shape"
   ]
 }

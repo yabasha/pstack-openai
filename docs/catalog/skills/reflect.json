@@ -1,29 +1,4 @@
 {
-  "name": "reflect",
-  "kind": "workflow",
-  "purpose": "Mine an active session for durable learnings and route them into explicitly approved skill edits.",
-  "triggers": [
-    "reflect",
-    "/reflect"
-  ],
-  "inputs": [
-    "Authorized active transcript or limited session digest",
-    "Invoked skills and referenced context",
-    "Explicit approved Accepted subset"
-  ],
-  "outputs": [
-    "Judgment, tooling and divergent findings",
-    "Full Accepted, Rejected and Backlog synthesis",
-    "Approved applied edits or blocked drafts with evidence"
-  ],
-  "ordinaryExample": "Reflect on a debugging session, reject already-covered advice, route enforceable checks to Backlog and show proposed skill edits for approval.",
-  "dependencies": [
-    "references/host-capabilities.md",
-    "references/model-roles.md",
-    "references/orchestration-contract.md",
-    "references/workflow-ownership.md",
-    "skills/principle-encode-lessons-in-structure/SKILL.md"
-  ],
   "capabilityLimits": [
     "Independent parallel review requires observed authorized worker tools; sequential lenses are reduced capability.",
     "History gaps and unavailable context reads limit findings.",
@@ -31,6 +6,30 @@
     "Tracker writes require explicit authorization.",
     "Host behavior remains not-run."
   ],
+  "caseIds": [
+    "approval-before-edit"
+  ],
+  "dependencies": [
+    "references/host-capabilities.md",
+    "references/model-roles.md",
+    "references/orchestration-contract.md",
+    "references/workflow-ownership.md",
+    "skills/principle-encode-lessons-in-structure/SKILL.md"
+  ],
+  "inputs": [
+    "Authorized active transcript or limited session digest",
+    "Invoked skills and referenced context",
+    "Explicit approved Accepted subset"
+  ],
+  "kind": "workflow",
+  "name": "reflect",
+  "ordinaryExample": "Reflect on a debugging session, reject already-covered advice, route enforceable checks to Backlog and show proposed skill edits for approval.",
+  "outputs": [
+    "Judgment, tooling and divergent findings",
+    "Full Accepted, Rejected and Backlog synthesis",
+    "Approved applied edits or blocked drafts with evidence"
+  ],
+  "purpose": "Mine an active session for durable learnings and route them into explicitly approved skill edits.",
   "sourcePaths": [
     "skills/reflect/SKILL.md",
     "skills/reflect/references/divergent-reviewer.md",
@@ -38,7 +37,8 @@
     "skills/reflect/references/synthesizer.md",
     "skills/reflect/references/tooling-reviewer.md"
   ],
-  "caseIds": [
-    "approval-before-edit"
+  "triggers": [
+    "reflect",
+    "/reflect"
   ]
 }

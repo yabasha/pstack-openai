@@ -1,33 +1,33 @@
 {
-  "name": "principle-laziness-protocol",
-  "kind": "principle",
-  "purpose": "Prefer deletion and the smallest change that preserves required behavior.",
-  "triggers": [
-    "Refactoring",
-    "Evaluating diff size",
-    "Considering abstractions, layers or signal threading"
+  "capabilityLimits": [
+    "Reads need available source; edits need authorized writes; execution claims need observed checks.",
+    "No host behavior has been tested.",
+    "Preserve disable-model-invocation metadata without assuming host enforcement."
+  ],
+  "caseIds": [
+    "smaller-solution"
+  ],
+  "dependencies": [
+    "references/host-capabilities.md"
   ],
   "inputs": [
     "Authorized task",
     "Implementation and caller source",
     "Required behavior and public contracts"
   ],
+  "kind": "principle",
+  "name": "principle-laziness-protocol",
+  "ordinaryExample": "Remove a forwarding adapter that adds no behavior, preserving the service rounding and tax contract.",
   "outputs": [
     "Minimal refactor and observed checks, or explicit reduced proposal or blocked assessment"
   ],
-  "ordinaryExample": "Remove a forwarding adapter that adds no behavior, preserving the service rounding and tax contract.",
-  "dependencies": [
-    "references/host-capabilities.md"
-  ],
-  "capabilityLimits": [
-    "Reads need available source; edits need authorized writes; execution claims need observed checks.",
-    "No host behavior has been tested.",
-    "Preserve disable-model-invocation metadata without assuming host enforcement."
-  ],
+  "purpose": "Prefer deletion and the smallest change that preserves required behavior.",
   "sourcePaths": [
     "skills/principle-laziness-protocol/SKILL.md"
   ],
-  "caseIds": [
-    "smaller-solution"
+  "triggers": [
+    "Refactoring",
+    "Evaluating diff size",
+    "Considering abstractions, layers or signal threading"
   ]
 }

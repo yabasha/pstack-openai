@@ -1,8 +1,14 @@
 {
-  "id": "invalid-input",
-  "sourcePaths": [
-    "skills/principle-boundary-discipline/SKILL.md"
+  "expectedBlocked": "If relevant source or the input contract is unavailable, identify the missing information and keep any proposal provisional. Do not claim that boundary validation or guard removal was verified.",
+  "expectedFull": "The adapter validates and narrows raw quantity before calling typed domain logic, returns boundary errors for invalid input, and removes redundant internal guards. Pricing remains a pure function. Parsing, prompt construction and scoring remain pure transforms where applicable. Public interfaces expose domain concepts. Report observed implementation and checks only.",
+  "expectedReduced": "If writes or execution are unavailable, provide a reduced proposal with boundary validation and typed pure internal logic. State which edits and checks were not performed.",
+  "forbiddenClaims": [
+    "Structural checks prove behavioral parity.",
+    "Unavailable writes or execution succeeded.",
+    "Internal validation is required after the boundary has validated typed data.",
+    "Invocation metadata proves host enforcement."
   ],
+  "id": "invalid-input",
   "prompt": "Apply principle-boundary-discipline to an HTTP adapter that accepts raw order JSON and calls a typed pricing function. Reject a missing or invalid quantity at the adapter boundary. Internal functions currently repeat nil and quantity checks. Describe or implement the change within available authorization.",
   "requirements": [
     "Validate external input at its boundary without duplicating internal guards.",
@@ -10,13 +16,7 @@
     "Expose domain concepts rather than transport, storage, framework or wire types; keep general-purpose mechanism inside and special-purpose policy at the edge.",
     "Report implementation and checks only when writes and execution are authorized and observed."
   ],
-  "expectedFull": "The adapter validates and narrows raw quantity before calling typed domain logic, returns boundary errors for invalid input, and removes redundant internal guards. Pricing remains a pure function. Parsing, prompt construction and scoring remain pure transforms where applicable. Public interfaces expose domain concepts. Report observed implementation and checks only.",
-  "expectedReduced": "If writes or execution are unavailable, provide a reduced proposal with boundary validation and typed pure internal logic. State which edits and checks were not performed.",
-  "expectedBlocked": "If relevant source or the input contract is unavailable, identify the missing information and keep any proposal provisional. Do not claim that boundary validation or guard removal was verified.",
-  "forbiddenClaims": [
-    "Structural checks prove behavioral parity.",
-    "Unavailable writes or execution succeeded.",
-    "Internal validation is required after the boundary has validated typed data.",
-    "Invocation metadata proves host enforcement."
+  "sourcePaths": [
+    "skills/principle-boundary-discipline/SKILL.md"
   ]
 }

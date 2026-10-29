@@ -1,10 +1,15 @@
 {
-  "id": "route-recipe",
-  "sourcePaths": [
-    "skills/poteto-help/SKILL.md",
-    "skills/poteto-help/references/prompting.md",
-    "skills/poteto-help/references/recipes.md"
+  "expectedBlocked": "When the selected local playbook cannot be read, report that routing cannot yet establish an existing ported recipe. Give the pinned source reference and explain the missing local dependency without starting work.",
+  "expectedFull": "Route to the existing reviewed Bug fix playbook under poteto-mode, provide one reproduction-and-verification recipe and a source link, and do not start a help-only run.",
+  "expectedReduced": "When app verification is unavailable, offer only the checks actually supported, label the reduction, and do not promise a video or independent workers. If the playbook is pending, identify its source route as pending rather than claim an existing port.",
+  "forbiddenClaims": [
+    "A recipe proves host behavior passed.",
+    "Cursor modes, slash commands, model rules or loop APIs are registered on this host.",
+    "Missing local playbooks are existing reviewed ports.",
+    "A help question authorizes execution, installation, external writes or scheduling.",
+    "User authorization alone permits personal customization before complete baseline review and per-host evidence or explicit blocks."
   ],
+  "id": "route-recipe",
   "prompt": "Which pstack workflow should I use to reproduce an app bug and prove the fix? Give me a prompt; do not start the work.",
   "requirements": [
     "Read the selected local leaf and Bug fix playbook before recommending their details.",
@@ -12,14 +17,9 @@
     "Check whether the referenced playbook and app verification tool exist; disclose pending or missing dependencies.",
     "For any customization follow-up, explain source options but gate personal-mode drafting and custom skill edits on reviewed dispositions for the complete baseline and observed supported behavior or explicit blocks for each host, independently of authorization."
   ],
-  "expectedFull": "Route to the existing reviewed Bug fix playbook under poteto-mode, provide one reproduction-and-verification recipe and a source link, and do not start a help-only run.",
-  "expectedReduced": "When app verification is unavailable, offer only the checks actually supported, label the reduction, and do not promise a video or independent workers. If the playbook is pending, identify its source route as pending rather than claim an existing port.",
-  "expectedBlocked": "When the selected local playbook cannot be read, report that routing cannot yet establish an existing ported recipe. Give the pinned source reference and explain the missing local dependency without starting work.",
-  "forbiddenClaims": [
-    "A recipe proves host behavior passed.",
-    "Cursor modes, slash commands, model rules or loop APIs are registered on this host.",
-    "Missing local playbooks are existing reviewed ports.",
-    "A help question authorizes execution, installation, external writes or scheduling.",
-    "User authorization alone permits personal customization before complete baseline review and per-host evidence or explicit blocks."
+  "sourcePaths": [
+    "skills/poteto-help/SKILL.md",
+    "skills/poteto-help/references/prompting.md",
+    "skills/poteto-help/references/recipes.md"
   ]
 }

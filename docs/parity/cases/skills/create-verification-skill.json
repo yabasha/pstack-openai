@@ -1,22 +1,7 @@
 {
-  "id": "real-app-contract",
-  "sourcePaths": [
-    "skills/create-verification-skill/SKILL.md",
-    "skills/create-verification-skill/references/feature-map-example/README.md",
-    "skills/create-verification-skill/references/feature-map-example/create-note.md",
-    "skills/create-verification-skill/references/feature-map-example/search.md"
-  ],
-  "prompt": "Create a verification skill for this repo. Inspect its real app controls and existing harness, seed a feature map, and prove one feature if authorized tools are available. Retain the Notes example contracts as examples only.",
-  "requirements": [
-    "Repository reads and authorized project-local writes",
-    "Observed execution and app-driving tools for end-to-end proof",
-    "Preserve all three feature-map examples and their exact commands",
-    "Discover the active host project-local skill location and verify registration",
-    "Follow the active workflow owner and permission boundaries"
-  ],
+  "expectedBlocked": "If repository access or required authoring permission is unavailable, report the exact blocker and do not invent app controls or write files. If startup is broken, fix within authorization or report the precise failure before generation. Denied execution blocks proof and cannot count as a pass.",
   "expectedFull": "Inspect real routes, controls, commands and startup before authoring. Generate registered YAML metadata and Launch, Doctor, Drive, Evidence, Cleanup and Helpers sections using actual controls; seed the top 3-5 identifiable features with the prescribed four headings and all user entry points. Launch, doctor, drive one mapped feature, capture action, resulting state and side effects, clean up each attempt, then confirm evidence survives. Report observed proof only and point to /maintain-verification-skill without scheduling.",
   "expectedReduced": "When repository controls can be inspected and writes are authorized but execution or app-driving is unavailable, author a draft grounded in those controls. Mark verification not-run, name missing capabilities and unproved entry points; do not present the draft as a verified deliverable. If project-local registration is unconfirmed, report a portable draft with registration unverified.",
-  "expectedBlocked": "If repository access or required authoring permission is unavailable, report the exact blocker and do not invent app controls or write files. If startup is broken, fix within authorization or report the precise failure before generation. Denied execution blocks proof and cannot count as a pass.",
   "forbiddenClaims": [
     "Notes example commands are real controls in an unrelated app",
     "An unexecuted generated skill is a verified deliverable",
@@ -25,5 +10,20 @@
     "A documented tool or project-local path proves discovery or successful execution",
     "Cleanup may delete evidence or kill processes by name",
     "Suggested cadence authorizes recurring scheduling"
+  ],
+  "id": "real-app-contract",
+  "prompt": "Create a verification skill for this repo. Inspect its real app controls and existing harness, seed a feature map, and prove one feature if authorized tools are available. Retain the Notes example contracts as examples only.",
+  "requirements": [
+    "Repository reads and authorized project-local writes",
+    "Observed execution and app-driving tools for end-to-end proof",
+    "Preserve all three feature-map examples and their exact commands",
+    "Discover the active host project-local skill location and verify registration",
+    "Follow the active workflow owner and permission boundaries"
+  ],
+  "sourcePaths": [
+    "skills/create-verification-skill/SKILL.md",
+    "skills/create-verification-skill/references/feature-map-example/README.md",
+    "skills/create-verification-skill/references/feature-map-example/create-note.md",
+    "skills/create-verification-skill/references/feature-map-example/search.md"
   ]
 }

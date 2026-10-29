@@ -1,0 +1,27 @@
+[
+  {
+    "adaptationStatus": "reference-only-reviewed",
+    "dependencies": [],
+    "destinationPath": "references/upstream-deferred/ketchup-video/REFERENCE.md",
+    "disposition": "reference-only",
+    "licenseProvenance": {
+      "copyright": "Copyright (c) 2026 Lauren Tan",
+      "license": "MIT",
+      "sourcePath": "LICENSE"
+    },
+    "rationale": "Retain added canonical source only as an inert deferred REFERENCE.md outside skills. No video skill, runtime renderer, publication, upload or dependency setup is adopted.",
+    "upstreamCommit": "c742dd61706fbacc1b95f1a20b7b988cf096ce6c",
+    "upstreamPath": "skills/ketchup-video/SKILL.md",
+    "upstreamSha256": "027aed9a01adf208aeac3a134f47d12f7c1e42d6fea03095aedc2bae58cdcfd1",
+    "verification": {
+      "chatgpt": {
+        "evidence": [],
+        "status": "not-run"
+      },
+      "codex": {
+        "evidence": [],
+        "status": "not-run"
+      }
+    }
+  }
+]

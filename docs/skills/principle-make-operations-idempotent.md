@@ -77,6 +77,6 @@ Current host statuses and release evidence: [current parity inventory](../parity
 
 Destination: [skills/principle-make-operations-idempotent/SKILL.md](../../skills/principle-make-operations-idempotent/SKILL.md).
 
-Upstream commit: `4ec7ffa173eaa70d3d9467a627baf0954645a353`. SHA-256: `7aa9327cf1f1aa057e95d47a0a78bd88a8f9d556b608866fee939d455a53a019`.
+Upstream commit: `c742dd61706fbacc1b95f1a20b7b988cf096ce6c`. SHA-256: `7aa9327cf1f1aa057e95d47a0a78bd88a8f9d556b608866fee939d455a53a019`.
 
 Disposition: `runtime`. Aggregate adaptation status: `adapted-reviewed`.

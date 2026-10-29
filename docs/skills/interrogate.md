@@ -8,7 +8,7 @@ Skill: [skills/interrogate/SKILL.md](../../skills/interrogate/SKILL.md). Kind: w
 
 ## Purpose
 
-Adversarially review changes through competing reviewers and pragmatic lead judgment without automatically applying changes.
+Try to break a reviewed change in isolated copies and retain only findings proven by a lead rerun.
 
 ## Triggers
 
@@ -28,66 +28,62 @@ Adversarially review changes through competing reviewers and pragmatic lead judg
 
 ## Output contract
 
-- Intent, Reviewers, Act On, Consider, Noted, Dismissed and Agreement Map
-- Attributed findings with evidence, category and lead rationale
-- Observed worker independence, model diversity and limits
+- Intent, Reviewers, Findings and Dropped, plus capability limits
+- Exact snapshot, command, environment, output and lead rerun evidence
+- Explicit unverified observations in reduced static review
 
 ## Ordinary example
 
-Challenge a branch diff with identical reviewer prompts, then trace a disputed null-input finding to its caller before categorizing it.
+An adversary reproduces a wrong null-input result in an isolated snapshot; the lead reruns it and drops a second claim that passes.
 
 The linked cases define acceptance observations. Their prompts and expected results are not execution evidence.
 
 ### Case [adversarial-review](../parity/cases/skills/interrogate.json)
 
-Adversarially review the current changes against their stated intent. Challenge correctness and structural quality, then decide which findings warrant action.
+Review a scoped dirty branch in isolated copies. An adversary supplies a real failing repro, another claim passes on rerun, and one claim cannot run. Repeat with denied writes and unavailable workers.
 
 Full capability expectation:
 
-Authorized independent reviewers receive the same template and all rubric/code-quality lenses. The lead deduplicates findings, traces evidence and classifies every finding with attribution and rationale. The verdict includes Intent, Reviewers, Act On, Consider, Noted, Dismissed and Agreement Map, with observed model diversity or its explicit limit.
+Independent authorized adversaries reproduce against verified isolated snapshots. The lead reruns each command, retains only failures of the stated intent and reports Intent, Reviewers, Findings and Dropped with exact evidence.
 
 Reduced capability expectation:
 
-When independent workers are unavailable, an authorized sequential review applies the complete rubric and lead judgment and labels reduced capability. It does not claim independent agreement or model diversity; unknown actual models remain unknown.
+Sequential authorized reproduction or read-only static inspection is explicitly reduced. Unrun observations remain unverified. No verified findings does not prove no bugs.
 
 Blocked capability expectation:
 
-Unavailable diff or context, or denied review capability, blocks grounded findings. Report the missing source or permission without inventing findings, reviewer execution or agreement.
+Missing scope, unsafe isolation, denied required execution or unavailable reproduction inputs block that gate. Preserve the original checkout and report the missing capability.
 
 Required observations:
 
-- State intent and give every competing reviewer the identical diff, context, rubric and code-quality lens.
-- Preserve all rubric lenses, evidence-based findings and pragmatic lead judgment across act on, consider, noted and dismissed categories.
-- Report reviewer models, finding counts, independent consensus, lone findings and disagreements in the complete verdict format.
-- Verify independent worker results and observed model diversity; disclose sequential review as reduced capability.
-- Do not auto-apply changes or create external changes to fix rejected model defaults.
+- Capture and verify the exact base plus scoped staged, unstaged and untracked bytes without changing the original checkout.
+- Assign isolated authorized reproduction outputs and inspect terminal worker results; requested models never prove diversity.
+- Require actual command, environment, exit code, expected and actual output plus a lead rerun before retaining a verified finding.
+- Deduplicate verified failures by root cause and list dropped counts/reasons per adversary.
+- Honor read-only requests with a reduced static review and unverified observations, never fabricated runs or automatic fixes.
 
 Forbidden claims:
 
-- Sequential passes are independent reviewers.
-- Requested model names prove actual model diversity.
-- The rubric or code-quality lens can be omitted.
-- A review authorizes automatic fixes or an external PR.
-- Structural checks establish host behavioral parity.
+- Agreement or static citations establish a reproduced failure.
+- A read-only request authorizes repro writes.
+- Requested models prove actual diversity.
+- Structural checks establish host behavior.
+- Review authorizes automatic fixes or external changes.
 
 ## Dependencies
 
-- [skills/interrogate/references/code-quality-review.md](../../skills/interrogate/references/code-quality-review.md)
-- [skills/interrogate/references/reviewer-prompt.md](../../skills/interrogate/references/reviewer-prompt.md)
-- [skills/interrogate/references/rubric.md](../../skills/interrogate/references/rubric.md)
-- [skills/interrogate/references/lead-judgment.md](../../skills/interrogate/references/lead-judgment.md)
+- [skills/arena/SKILL.md](../../skills/arena/SKILL.md)
 - [references/host-capabilities.md](../../references/host-capabilities.md)
 - [references/model-roles.md](../../references/model-roles.md)
 - [references/orchestration-contract.md](../../references/orchestration-contract.md)
 
 ## Host limits
 
-- Independent reviewers require observed authorized spawn and result inspection.
-- Unknown or identical observed models do not establish model diversity.
-- Sequential review is reduced capability.
-- Missing source or denied review blocks grounded findings.
-- Invocation metadata is retained without claiming host enforcement.
-- Host behavior has not been tested.
+- Independent adversaries and writable repro isolation require observed authorized tools.
+- Read-only review remains reduced and unrun suspicions are not verified findings.
+- Unknown models do not establish diversity.
+- The legacy reference files remain for staged-source accounting, not required rubric inputs.
+- Neither host workflow has been observed for this overlay.
 
 ## Source proof and release evidence
 
@@ -97,38 +93,6 @@ Current host statuses and release evidence: [current parity inventory](../parity
 
 Destination: [skills/interrogate/SKILL.md](../../skills/interrogate/SKILL.md).
 
-Upstream commit: `4ec7ffa173eaa70d3d9467a627baf0954645a353`. SHA-256: `a16dfe179005abc22a4651b82f25b0c8ab953284276efe4e6dc341958fb63647`.
+Upstream commit: `c742dd61706fbacc1b95f1a20b7b988cf096ce6c`. SHA-256: `3f3c2e9b8cf6b180dba9f32a4aff85e5691b09805232468e37a0ba45437a9984`.
 
 Disposition: `runtime`. Aggregate adaptation status: `adapted-reviewed`.
-
-### `skills/interrogate/references/code-quality-review.md`
-
-Destination: [skills/interrogate/references/code-quality-review.md](../../skills/interrogate/references/code-quality-review.md).
-
-Upstream commit: `4ec7ffa173eaa70d3d9467a627baf0954645a353`. SHA-256: `79162fda183eafd40d51661fbb5e151c7ba250f89e506ba17f5bd135dcbd50a8`.
-
-Disposition: `runtime`. Aggregate adaptation status: `unchanged-reviewed`.
-
-### `skills/interrogate/references/reviewer-prompt.md`
-
-Destination: [skills/interrogate/references/reviewer-prompt.md](../../skills/interrogate/references/reviewer-prompt.md).
-
-Upstream commit: `4ec7ffa173eaa70d3d9467a627baf0954645a353`. SHA-256: `f6005cc2b535006fca97a96c5bfda49df57312eedf1ffd8d1aaaf3eb33817c25`.
-
-Disposition: `runtime`. Aggregate adaptation status: `adapted-reviewed`.
-
-### `skills/interrogate/references/rubric.md`
-
-Destination: [skills/interrogate/references/rubric.md](../../skills/interrogate/references/rubric.md).
-
-Upstream commit: `4ec7ffa173eaa70d3d9467a627baf0954645a353`. SHA-256: `0f9c6bdb0b96e26dbde5f6407f417e0c02f54080e7a1268d8994f3c3ec6c5ac0`.
-
-Disposition: `runtime`. Aggregate adaptation status: `adapted-reviewed`.
-
-### `skills/interrogate/references/lead-judgment.md`
-
-Destination: [skills/interrogate/references/lead-judgment.md](../../skills/interrogate/references/lead-judgment.md).
-
-Upstream commit: `4ec7ffa173eaa70d3d9467a627baf0954645a353`. SHA-256: `355f5195a76bc75a655125292369f2a8231a2b61fabe5188d8f1386060922b87`.
-
-Disposition: `runtime`. Aggregate adaptation status: `unchanged-reviewed`.

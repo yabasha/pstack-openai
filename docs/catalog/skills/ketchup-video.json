@@ -1,0 +1,27 @@
+{
+  "capabilityLimits": [
+    "No invocable root skill or runtime behavior."
+  ],
+  "caseIds": [
+    "ketchup-video-deferred"
+  ],
+  "dependencies": [
+    "references/upstream-deferred/ketchup-video/REFERENCE.md"
+  ],
+  "inputs": [
+    "Canonical source identity"
+  ],
+  "kind": "skill",
+  "name": "ketchup-video",
+  "ordinaryExample": "Explain that PR797 is deferred and no video workflow is installed.",
+  "outputs": [
+    "Explicit deferred disposition"
+  ],
+  "purpose": "Retain canonical source lineage for an unrequested workflow.",
+  "sourcePaths": [
+    "skills/ketchup-video/SKILL.md"
+  ],
+  "triggers": [
+    "No invocation. Reference only."
+  ]
+}

@@ -1,8 +1,14 @@
 {
-  "id": "shape-first",
-  "sourcePaths": [
-    "skills/principle-foundational-thinking/SKILL.md"
+  "expectedBlocked": "If required source or access patterns are unavailable, state the missing inputs and stop implementation claims. Any provisional design must identify its assumptions.",
+  "expectedFull": "Identify job identity, state and ownership before queue logic. Trace enqueue, claim, completion and state-list access patterns; choose structures for those paths and isolate concurrently mutable state. Remove dead code first, sequence useful infrastructure before features, and test behavior and edge cases. Report actual edits and checks.",
+  "expectedReduced": "With supplied source but unavailable writes or execution, provide a concrete shape, ownership and sequencing proposal. Label reduced capability and list edits and checks not performed.",
+  "forbiddenClaims": [
+    "Core data or ownership can be deferred until after logic.",
+    "Shared mutable state is safe without considering concurrent actors.",
+    "Edits, tests or commits completed without observed authorized operations.",
+    "Structural validation proves host behavioral parity."
   ],
+  "id": "shape-first",
   "prompt": "Apply principle-foundational-thinking before implementing a shared job queue. Producers enqueue jobs, workers claim and complete them, and a status reader lists jobs by state. Identify core data and ownership before logic, trace access patterns, and sequence the authorized work. Inspect available source and report only checks actually run.",
   "requirements": [
     "Identify core types, data shape, dominant access patterns and ownership before writing logic.",
@@ -12,13 +18,7 @@
     "Keep increments coherent and commits small and single-purpose; do not distribute a capability as special-case caller coordination.",
     "Source inspection, authorized writes and observed execution are needed for implementation and verification."
   ],
-  "expectedFull": "Identify job identity, state and ownership before queue logic. Trace enqueue, claim, completion and state-list access patterns; choose structures for those paths and isolate concurrently mutable state. Remove dead code first, sequence useful infrastructure before features, and test behavior and edge cases. Report actual edits and checks.",
-  "expectedReduced": "With supplied source but unavailable writes or execution, provide a concrete shape, ownership and sequencing proposal. Label reduced capability and list edits and checks not performed.",
-  "expectedBlocked": "If required source or access patterns are unavailable, state the missing inputs and stop implementation claims. Any provisional design must identify its assumptions.",
-  "forbiddenClaims": [
-    "Core data or ownership can be deferred until after logic.",
-    "Shared mutable state is safe without considering concurrent actors.",
-    "Edits, tests or commits completed without observed authorized operations.",
-    "Structural validation proves host behavioral parity."
+  "sourcePaths": [
+    "skills/principle-foundational-thinking/SKILL.md"
   ]
 }

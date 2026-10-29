@@ -1,8 +1,8 @@
 # pstack-openai
 
-An unofficial port of Lauren Tan's pstack v0.15.30. The source inventory includes 57 root skills, 24 principles, 23 playbooks and 184 source files. Read [UPSTREAM.md](UPSTREAM.md), [NOTICE.md](NOTICE.md) and [LICENSE](LICENSE) for lineage and attribution.
+An unofficial port of Lauren Tan's pstack. Candidate 0.2.4 adapts the combined compiler, review and orchestration changes from upstream v0.15.36. Its inventory records 573 source files and 58 canonical roots, including one deferred reference. The runtime package retains 57 skills, 24 principles and 23 playbooks. Read [UPSTREAM.md](UPSTREAM.md), [NOTICE.md](NOTICE.md) and [LICENSE](LICENSE) for lineage and attribution.
 
-Port 0.2.3 accepts upstream `4ec7ffa173eaa70d3d9467a627baf0954645a353` as its reviewed source baseline. See [source acceptance and verification limits](docs/releases/0.2.3.md). Installed discovery and workflow support remain separate gates.
+Accepted baseline 0.2.3 remains upstream `4ec7ffa173eaa70d3d9467a627baf0954645a353` as the reviewed source baseline. Candidate source `c742dd61706fbacc1b95f1a20b7b988cf096ce6c` is staged and unaccepted. See [source acceptance and verification limits](docs/releases/0.2.3.md). Installed discovery and workflow support remain separate gates.
 
 Upstream adds Claude Code packaging; this port retains its shared portable runtime and records the Claude adapter as a quoted reference only.
 
@@ -14,7 +14,7 @@ It also makes `/sharpen` return four framing answers and a rewritten prompt with
 - [Codex setup and unverified documented route](docs/setup/codex.md).
 - [Choose a workflow](docs/workflows/choosing-a-workflow.md).
 - [Workflow examples, simple to advanced](#workflow-examples).
-- [All 57 skills](docs/skills/README.md) and [all 24 principles](docs/principles/README.md).
+- [57 runtime skills and one deferred source](docs/skills/README.md) and [all 24 principles](docs/principles/README.md).
 - [Preserved guide](docs/guide/README.md).
 - [Arena walkthrough](docs/workflows/arena.md), [Swarm walkthrough](docs/workflows/swarm.md) and [Poteto mode walkthrough](docs/workflows/poteto-mode.md).
 - [Troubleshooting](docs/troubleshooting.md) and [host test matrix](docs/testing/host-matrix.md).
@@ -36,7 +36,7 @@ It also makes `/sharpen` return four framing answers and a rewritten prompt with
 
 Candidate navigation is frozen with operative content. The final handoff must keep these bytes unchanged or explicitly refreeze and relink fresh blocked observations. Evidence/report commits can follow the tested commit only under the exact [tested-package marker contract](docs/maintenance/rollback.md). After blocked host records enter the inventory and regenerate the catalog, an explicit second freeze is required. Fresh blocked discovery records must then name that final SHA. No behavioral pass transfers between freezes.
 
-Use [`/statechart`](skills/statechart/SKILL.md) to turn a TLA+ model into user-facing charts or an agreed chart into a model. [Execution prerequisites](skills/statechart/references/execution.md) are explicit; unavailable tools leave verification blocked.
+Use [`/statechart`](skills/statechart/SKILL.md) to check a TLA+ model and draw flat, parent or region charts using a reviewed view. The compiler retires automatic chart-to-spec conversion and integrated comparison flags. [Execution prerequisites](skills/statechart/references/execution.md) are explicit; unavailable tools leave verification blocked.
 
 <!-- workflow-examples:start -->
 
@@ -295,10 +295,10 @@ Expected output: A bounded verification result or an explicit block, with a runn
 **2. Explain the failure as a user story**
 
 ```text
-Use statechart on the job-processing model. Show states in terms of what the operator sees, retain invariants and code-guard citations, and turn each counterexample into a numbered story. Use an authorized local renderer and inspect every PNG. Replay the story through the real application's entry points; distinguish modeled behavior from reproduced behavior. Do not fix product code in this step.
+Use statechart on the job-processing model. Show states in terms of what the operator sees, retain invariants and code-guard citations, and turn each counterexample into a numbered story. Use an authorized local renderer and inspect every SVG. Replay the story through the real application's entry points; distinguish modeled behavior from reproduced behavior. Do not fix product code in this step.
 ```
 
-Expected output: Readable charts and bug stories with model scope and reproduction status separated.
+Expected output: Mermaid charts, compiler reports and separately rendered SVGs with model scope and reproduction status separated.
 
 **3. Recheck after an authorized fix**
 

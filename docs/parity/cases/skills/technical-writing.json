@@ -1,21 +1,21 @@
 {
-  "id": "dense-doc",
-  "sourcePaths": [
-    "skills/technical-writing/SKILL.md"
+  "expectedBlocked": "If no document text can be read or supplied, state the missing input and do not invent a rewrite or claim review completion.",
+  "expectedFull": "Remove filler, retain every named symbol and condition, and keep a clear how-to purpose. Apply Di\u00e1taxis, reader-directed sentences, STE rules, Global English, and unslop. Provide the rewrite or authorized document edit; propose any new abstract-metaphor offender with a diff without editing unslop.",
+  "expectedReduced": "If required source text is incomplete or unslop is unavailable, identify the missing input or dependency and label the review partial. Returning the requested supplied-text rewrite in conversation is full direct completion; a specifically requested saved edit still requires an observed authorized write.",
+  "forbiddenClaims": [
+    "Changing real symbol names or lower-only --write behavior.",
+    "Claiming unslop was applied without reading it.",
+    "Claiming edits were saved without observed authorized writes.",
+    "Claiming host enforcement of disable-model-invocation metadata or host parity from structural validation."
   ],
+  "id": "dense-doc",
   "prompt": "Rewrite this how-to without changing behavior: In order to configure the proto import ratchet budget script parameters, use budget.json. It is important to note that budget.mjs counts files that import protos. If the count exceeds the budget, CI fails. Run budget.mjs --write only when lowering the budget.",
   "requirements": [
     "Read the supplied document and preserve its how-to purpose.",
     "Preserve budget.mjs, budget.json, --write, CI, the count condition, and the lower-only restriction.",
     "Apply all four layers and the unslop skill; do not invent facts."
   ],
-  "expectedFull": "Remove filler, retain every named symbol and condition, and keep a clear how-to purpose. Apply Diátaxis, reader-directed sentences, STE rules, Global English, and unslop. Provide the rewrite or authorized document edit; propose any new abstract-metaphor offender with a diff without editing unslop.",
-  "expectedReduced": "If required source text is incomplete or unslop is unavailable, identify the missing input or dependency and label the review partial. Returning the requested supplied-text rewrite in conversation is full direct completion; a specifically requested saved edit still requires an observed authorized write.",
-  "expectedBlocked": "If no document text can be read or supplied, state the missing input and do not invent a rewrite or claim review completion.",
-  "forbiddenClaims": [
-    "Changing real symbol names or lower-only --write behavior.",
-    "Claiming unslop was applied without reading it.",
-    "Claiming edits were saved without observed authorized writes.",
-    "Claiming host enforcement of disable-model-invocation metadata or host parity from structural validation."
+  "sourcePaths": [
+    "skills/technical-writing/SKILL.md"
   ]
 }

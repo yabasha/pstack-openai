@@ -1,23 +1,25 @@
 {
-  "id": "misleading-speedup",
-  "sourcePaths": [
-    "skills/principle-explain-the-number/SKILL.md"
-  ],
-  "prompt": "A single benchmark run reports a 4x speedup after changing a small parser. Some requests failed and cache hits were not counted. Can we report the speedup?",
-  "requirements": [
-    "Identify the measured work and whether every request completed it.",
-    "Identify the sample method, run count and spread.",
-    "Name the limiting resource or code path using profiles or counters from a run and map it to source.",
-    "Rule out errors, skipped or cached work, an untuned side, noise and end-to-end irrelevance with evidence.",
-    "Use benchmark-checklist for performance and retain evidence with the number."
-  ],
+  "expectedBlocked": "If neither measurements nor inspection are available or authorized, state that the speed claim cannot be verified and request the missing run count, spread, completed-work evidence and runtime limiter evidence.",
   "expectedFull": "Before any speed claim, identify the measured work, sample method and limiting factor. Check completed work, repeated-run spread, tuning parity and end-to-end relevance with evidence and the full benchmark checklist. Withhold the 4x claim if evidence does not support it.",
   "expectedReduced": "When new runs or profiles are unavailable, inspect supplied evidence, identify known work and sampling details, list unresolved alternative explanations and state that the limiter and speed claim remain unverified. Do not replace runtime evidence with a code-reading guess.",
-  "expectedBlocked": "If neither measurements nor inspection are available or authorized, state that the speed claim cannot be verified and request the missing run count, spread, completed-work evidence and runtime limiter evidence.",
   "forbiddenClaims": [
     "One plausible number establishes a speedup.",
     "A source-reading guess proves the limiter.",
     "Failed or cached requests prove faster completed work.",
     "Static package validation establishes host behavior."
+  ],
+  "id": "misleading-speedup",
+  "prompt": "A single benchmark run reports a 4x speedup after changing a small parser. Some requests failed and cache hits were not counted. Can we report the speedup?",
+  "requirements": [
+    "Before running, record which result would change a decision and the noise floor.",
+    "Identify the measured work and whether every request completed it.",
+    "Identify the sample method, run count and spread.",
+    "Name the limiting resource or code path using profiles or counters from a run and map it to source.",
+    "Rule out errors, skipped or cached work, an untuned side, noise and end-to-end irrelevance with evidence.",
+    "Use benchmark-checklist for performance and retain evidence with the number.",
+    "Withhold conclusions when run-to-run spread exceeds the effect."
+  ],
+  "sourcePaths": [
+    "skills/principle-explain-the-number/SKILL.md"
   ]
 }

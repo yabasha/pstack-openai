@@ -13,10 +13,10 @@
       "license": "MIT",
       "sourcePath": "LICENSE"
     },
-    "rationale": "Retain explicit-base offline Python adapter and task-supplied exports; upstream fetch, automatic Cursor-history scan and safe labels violate local constraints.",
-    "upstreamCommit": "4ec7ffa173eaa70d3d9467a627baf0954645a353",
+    "rationale": "Reuse the reviewed portable adaptation and incorporate PR986 review/model/workflow semantics plus PR1043 compatibility decisions. Preserve host capability, model, ownership, fallback, persistence and user-authorization contracts. Deferred unrelated behavior remains explicit.",
+    "upstreamCommit": "c742dd61706fbacc1b95f1a20b7b988cf096ce6c",
     "upstreamPath": "skills/poteto-mode/scripts/worktree-audit.sh",
-    "upstreamSha256": "e0a94e5e5b1ff60638916e440600e15851f7b79bc1a1d1f602fde05d465e2ec0",
+    "upstreamSha256": "06be04b38346ded24ce761d373726f98cd9b9737f20ec98214e88b5f08f521b8",
     "verification": {
       "chatgpt": {
         "evidence": [],

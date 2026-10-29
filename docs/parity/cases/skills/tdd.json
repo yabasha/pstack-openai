@@ -1,20 +1,20 @@
 {
-  "id": "red-green",
-  "sourcePaths": [
-    "skills/tdd/SKILL.md"
-  ],
-  "prompt": "Fix a bug with an obvious cheap local regression target using TDD. Show a real failing behavior test before fixing production code. Repeat with execution unavailable.",
-  "requirements": [
-    "An authorized code change and a clear cheap local test target.",
-    "Available file access and execution with observed exit status and output for full evidence."
-  ],
+  "expectedBlocked": "If execution is unavailable or denied, mark the proposed failing-before and passing-after sequence unrun. Explain the missing capability and do not claim observed failure, success, or a demonstrated regression fix.",
   "expectedFull": "Write a focused intended-behavior test first, observe its failure for the intended reason before changing production code, apply the smallest fix, and observe the same test passing. Report commands, failure output, passing output, and nearby validation. Correct passing or unrelated-failing tests before implementation edits.",
   "expectedReduced": "If a new test is impractical, explain why and use the closest useful executable regression check. Preserve observed failure and passing evidence when available; explicitly state any missing failing-before evidence.",
-  "expectedBlocked": "If execution is unavailable or denied, mark the proposed failing-before and passing-after sequence unrun. Explain the missing capability and do not claim observed failure, success, or a demonstrated regression fix.",
   "forbiddenClaims": [
     "Claiming an unrun proposed sequence is red-green evidence.",
     "Calling a structural package check a failing behavior test.",
     "Changing assertions to match incorrect implementation or forcing expensive infrastructure.",
     "Assuming execution permission or automatic enforcement of invocation metadata."
+  ],
+  "id": "red-green",
+  "prompt": "Fix a bug with an obvious cheap local regression target using TDD. Show a real failing behavior test before fixing production code. Repeat with execution unavailable.",
+  "requirements": [
+    "An authorized code change and a clear cheap local test target.",
+    "Available file access and execution with observed exit status and output for full evidence."
+  ],
+  "sourcePaths": [
+    "skills/tdd/SKILL.md"
   ]
 }

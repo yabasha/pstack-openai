@@ -25,10 +25,10 @@
       "license": "MIT",
       "sourcePath": "LICENSE"
     },
-    "rationale": "Adopt bounded review cadence, explicit leases, trunk impact checks, durable root-readable records, gate countersigns and ketchup reporting without waiving independent or installation/merge gates.",
-    "upstreamCommit": "4ec7ffa173eaa70d3d9467a627baf0954645a353",
+    "rationale": "Reuse the reviewed portable adaptation and incorporate PR986 review/model/workflow semantics plus PR1043 compatibility decisions. Preserve host capability, model, ownership, fallback, persistence and user-authorization contracts. Deferred unrelated behavior remains explicit.",
+    "upstreamCommit": "c742dd61706fbacc1b95f1a20b7b988cf096ce6c",
     "upstreamPath": "skills/poteto-mode/playbooks/autopilot-full.md",
-    "upstreamSha256": "acf4f4a58c11045f9d3e8807d907a877e61ca6432b079f1087d7d30fc931566f",
+    "upstreamSha256": "2da35982565c6cf1dbe25f7a05ccae28f7729389aefc6dbb3e010eb883abdd19",
     "verification": {
       "chatgpt": {
         "evidence": [],

@@ -81,3 +81,8 @@ PRs #741, #776 and #779 amend the unaccepted 0.2.3 source to `4ec7ffa173eaa70d3d
 ## Source acceptance for 0.2.3
 
 The user explicitly accepted source `4ec7ffa173eaa70d3d9467a627baf0954645a353` on 2026-10-23, Asia/Amman. The [immutable source evidence](docs/releases/0.2.3.md) and strict accepted receipt bind the reviewed manifest and package ancestor. This supersedes the earlier unaccepted-candidate status while preserving its history. Linux PID-namespace coverage and full ChatGPT candidate loading/workflow verification remain incomplete. Integration, refresh and installed discovery are observed separately.
+
+## Unaccepted candidate c742dd61706fbacc1b95f1a20b7b988cf096ce6c
+
+Candidate version 0.2.4. Archive SHA-256 4f899c71d737afe7662ff515df0518b193562e4f9ec370ffb2d7d837aaf436ef. Review SHA-256 e3f1da4285004f7f6c189115f0340afa07b501efdfa336ec7e2e39151dc5a1c6.
+The inventory stages this candidate. The accepted baseline above remains historical evidence. Structural checks, helper regression tests, and affected host cases must run before separate acceptance.

@@ -1,8 +1,15 @@
 {
-  "id": "user-tradeoff",
-  "sourcePaths": [
-    "skills/principle-experience-first/SKILL.md"
+  "expectedBlocked": "If essential user or workflow context is missing, identify the missing input before committing to a design. If prototype execution is denied or unavailable, record that operation as blocked without claiming a completed prototype.",
+  "expectedFull": "Choose three polished controls because they let users complete and recover from imports with clear feedback. Justify the controls against the core loop, consider API consumers and maintainers, and use an authorized throwaway prototype before production commitment. Explain relevant details and actual checks.",
+  "expectedReduced": "With enough supplied context but unavailable prototype writes or execution, recommend the scope and describe a concrete prototype and feedback/error-state design. Label reduced capability and identify operations not performed.",
+  "forbiddenClaims": [
+    "Implementation convenience alone justifies worse user outcomes.",
+    "More rough features necessarily provide a better experience.",
+    "Library consumers or maintainers do not count as users.",
+    "A prototype or test completed without observed authorized operations.",
+    "Structural validation establishes host behavioral parity."
   ],
+  "id": "user-tradeoff",
   "prompt": "Apply principle-experience-first to an import workflow. The team can ship ten controls with rough feedback or three polished controls covering the core import loop. Recommend a scope and explain the user outcome rather than implementation convenience. Consider end users, library consumers and future maintainers. Prototype only with authorized available tools.",
   "requirements": [
     "Choose the user outcome with a concrete reason rather than implementation convenience.",
@@ -12,14 +19,7 @@
     "Foundational thinking governs work sequence; experience governs the target.",
     "Discover tools and permissions before inspection, prototype writes or execution; report only observed operations."
   ],
-  "expectedFull": "Choose three polished controls because they let users complete and recover from imports with clear feedback. Justify the controls against the core loop, consider API consumers and maintainers, and use an authorized throwaway prototype before production commitment. Explain relevant details and actual checks.",
-  "expectedReduced": "With enough supplied context but unavailable prototype writes or execution, recommend the scope and describe a concrete prototype and feedback/error-state design. Label reduced capability and identify operations not performed.",
-  "expectedBlocked": "If essential user or workflow context is missing, identify the missing input before committing to a design. If prototype execution is denied or unavailable, record that operation as blocked without claiming a completed prototype.",
-  "forbiddenClaims": [
-    "Implementation convenience alone justifies worse user outcomes.",
-    "More rough features necessarily provide a better experience.",
-    "Library consumers or maintainers do not count as users.",
-    "A prototype or test completed without observed authorized operations.",
-    "Structural validation establishes host behavioral parity."
+  "sourcePaths": [
+    "skills/principle-experience-first/SKILL.md"
   ]
 }

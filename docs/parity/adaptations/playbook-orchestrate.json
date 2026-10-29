@@ -32,10 +32,10 @@
       "license": "MIT",
       "sourcePath": "LICENSE"
     },
-    "rationale": "Replace Graphite-specific frontier contract with proposed forge-based --forge gh|origin helper and explicit topology ownership, retaining local ref pinning and all authorization/evidence boundaries.",
-    "upstreamCommit": "4ec7ffa173eaa70d3d9467a627baf0954645a353",
+    "rationale": "Reuse the reviewed portable adaptation and incorporate PR986 review/model/workflow semantics plus PR1043 compatibility decisions. Preserve host capability, model, ownership, fallback, persistence and user-authorization contracts. Deferred unrelated behavior remains explicit.",
+    "upstreamCommit": "c742dd61706fbacc1b95f1a20b7b988cf096ce6c",
     "upstreamPath": "skills/poteto-mode/playbooks/orchestrate.md",
-    "upstreamSha256": "08dce6c9e7be1d13bc6944ab9b51665f935c531437f5e088bc53d2a62099ef05",
+    "upstreamSha256": "dfd7e53e7ef844ae11394672b2f8e22ced47b977ff6e947fef837953cc95bb86",
     "verification": {
       "chatgpt": {
         "evidence": [],
