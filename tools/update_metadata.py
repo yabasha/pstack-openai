@@ -69,7 +69,7 @@ def closure_writes(root, review, decisions, inventory, writes):
     for entry in bundle['files']:
         if set(entry) != {'path','contentPath','sha256'}: raise ValueError('Invalid closure file entry')
         path = entry['path']
-        allowed = path in ('docs/parity/dependencies.json','docs/parity/case-registry.json','docs/parity/remnant-dispositions.json','docs/parity/support-map.md','docs/parity/baseline-policy.json') or re.fullmatch(r'docs/(?:catalog/skills/[a-z0-9-]+\.json|skills/[a-z0-9A-Z-]+\.md|principles/README\.md|parity/cases/(?:[a-z0-9-]+/)*[a-z0-9-]+\.json)',path)
+        allowed = path in ('docs/parity/dependencies.json','docs/parity/case-registry.json','docs/parity/remnant-dispositions.json','docs/parity/support-map.md','docs/parity/baseline-policy.json','docs/site/content.json','docs/workflows/site-feed.json') or re.fullmatch(r'docs/(?:catalog/skills/[a-z0-9-]+\.json|skills/[a-z0-9A-Z-]+\.md|principles/README\.md|parity/cases/(?:[a-z0-9-]+/)*[a-z0-9-]+\.json)',path)
         if not allowed or path.endswith('/schema.json') or path in supplied or path in writes:
             raise ValueError('Unowned or duplicate metadata closure path: '+path)
         supplied.add(path)

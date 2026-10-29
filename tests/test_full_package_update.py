@@ -180,3 +180,28 @@ class FullPackageUpdateTests(unittest.TestCase):
         def fail(stage): raise RuntimeError('inert transaction interruption')
         with self.assertRaises(RuntimeError): self.apply(failure_hook=fail)
         self.assertEqual(before,self.snapshot())
+
+    def test_generated_site_metadata_is_hash_bound_without_allowing_runtime_writes(self):
+        bundle = self.metadata()
+        for name in ('docs/site/content.json', 'docs/workflows/site-feed.json'):
+            content = 'resolved/metadata/' + name
+            target = self.review / content
+            target.parent.mkdir(parents=True, exist_ok=True)
+            target.write_bytes(b'{"schemaVersion":1,"fixture":"reviewed generated metadata"}\n')
+            bundle['files'].append(dict(path=name, contentPath=content, sha256=digest(target.read_bytes())))
+        self.metadata_path.write_bytes(sync.json_bytes(bundle))
+        self.resolutions['packageMetadata']['reviewedSha256'] = digest(self.metadata_path.read_bytes())
+        self.save_resolutions()
+        before = self.snapshot()
+        with patch.object(sync, 'ARCHIVE_SHA256', self.baseline_hash):
+            writes, state = sync.review_plan(self.review, self.resolution_path, self.root, owner=self.owner)
+        self.assertEqual(before, self.snapshot())
+        self.assertIn('docs/site/content.json', writes)
+        self.assertIn('docs/workflows/site-feed.json', writes)
+        bundle['files'][-1]['path'] = 'tools/runtime-injection.py'
+        self.metadata_path.write_bytes(sync.json_bytes(bundle))
+        self.resolutions['packageMetadata']['reviewedSha256'] = digest(self.metadata_path.read_bytes())
+        self.save_resolutions()
+        with patch.object(sync, 'ARCHIVE_SHA256', self.baseline_hash), self.assertRaisesRegex(ValueError, 'Unowned'):
+            sync.review_plan(self.review, self.resolution_path, self.root, owner=self.owner)
+        self.assertEqual(before, self.snapshot())
