@@ -65,6 +65,56 @@ class UpstreamApplyTests(unittest.TestCase):
             self.apply()
         self.assertEqual(before, self.snapshot())
 
+    def test_added_reference_relocates_without_creating_runtime_root(self):
+        entry = next(e for e in self.resolutions['entries'] if e['path'] == 'skills/new/SKILL.md')
+        entry.update(disposition='reference-only', referenceDestinationPath='references/upstream-deferred/new/REFERENCE.md')
+        self.save_resolutions()
+        self.apply()
+        self.assertFalse((self.root / 'skills/new/SKILL.md').exists())
+        self.assertEqual((self.root / entry['referenceDestinationPath']).read_bytes(), self.proposed[entry['path']])
+        inventory = json.loads((self.root / 'docs/parity/inventory.json').read_text())
+        row = next(r for r in inventory if r['upstreamPath'] == entry['path'])
+        self.assertEqual(row['destinationPath'], entry['referenceDestinationPath'])
+        manifest = json.loads((self.root / f'docs/parity/upstream-manifests/{self.candidate}.json').read_text())
+        self.assertEqual(next(r for r in manifest['files'] if r['upstreamPath'] == entry['path'])['destinationPath'], entry['referenceDestinationPath'])
+
+    def test_reference_relocation_rejects_runtime_existing_and_unsafe_paths(self):
+        entry = next(e for e in self.resolutions['entries'] if e['path'] == 'skills/new/SKILL.md')
+        for destination in ('skills/other/SKILL.md', '../escape', 'references/upstream-deferred/new/SKILL.md'):
+            entry.update(disposition='reference-only', referenceDestinationPath=destination)
+            self.save_resolutions()
+            before = self.snapshot()
+            with self.subTest(destination=destination), self.assertRaises(ValueError): self.apply()
+            self.assertEqual(before, self.snapshot())
+        destination = 'references/upstream-deferred/new/REFERENCE.md'
+        target = self.root / destination
+        target.parent.mkdir(parents=True)
+        target.write_text('Unrelated existing reference')
+        entry['referenceDestinationPath'] = destination; self.save_resolutions()
+        # Exercise collision handling after the independently tested clean-tree gate.
+        with patch.object(sync, 'verify_owned_worktree'), self.assertRaisesRegex(ValueError, 'already exists'):
+            self.apply()
+        target.unlink(); target.parent.rmdir()
+        target.parent.symlink_to(self.root)
+        with patch.object(sync, 'verify_owned_worktree'), self.assertRaises(ValueError): self.apply()
+
+    def test_managed_owner_root_preserves_marker_commit_and_realpath_checks(self):
+        import shutil
+        import tempfile
+        managed = Path.home() / '.codex/worktrees'
+        managed.mkdir(parents=True, exist_ok=True)
+        container = Path(tempfile.mkdtemp(prefix='pstack-owner-fixture-', dir=managed))
+        owned = container / 'owned'
+        self.git_at(self.original_root, 'worktree', 'add', '-q', '--detach', str(owned))
+        self.addCleanup(lambda: shutil.rmtree(container, ignore_errors=True))
+        admin = Path(self.git_at(owned, 'rev-parse', '--absolute-git-dir').strip())
+        marker = dict(schemaVersion=1, owner=self.owner, worktree=str(owned), packageCommit=self.bundle['packageCommit'])
+        (admin / 'pstack-update-owner.json').write_text(json.dumps(marker))
+        sync.verify_owned_worktree(owned, self.owner, self.bundle['packageCommit'])
+        with self.assertRaises(ValueError): sync.verify_owned_worktree(owned, 'other', self.bundle['packageCommit'])
+        alias = container / 'alias'; alias.symlink_to(owned)
+        with self.assertRaises(ValueError): sync.verify_owned_worktree(alias, self.owner, self.bundle['packageCommit'])
+
     def test_unresolved_conflict_no_write(self):
         self.resolutions['entries'][0]['disposition'] = 'pending'
         self.save_resolutions()
@@ -244,3 +294,90 @@ class UpstreamApplyTests(unittest.TestCase):
         self.assertEqual(self.proposed[self.leaf], (self.root / self.leaf).read_bytes())
         self.assertTrue((self.root / manifest_path).exists())
         self.assertEqual(receipt, json.loads((self.root / 'docs/parity/upstream-manifests/accepted.json').read_text()))
+
+    def preview(self, output):
+        with patch.object(sync, 'ARCHIVE_SHA256', self.baseline_hash):
+            return sync.preview_review(self.review, self.resolution_path, self.root,
+                owner=self.owner, output=output)
+
+    def preview_output(self):
+        import tempfile
+        temporary = tempfile.TemporaryDirectory(prefix='pstack-preview-fixture-', dir=Path.home() / 'Herd')
+        self.addCleanup(temporary.cleanup)
+        return Path(temporary.name) / 'new-preview'
+
+    def test_preview_materializes_without_apply_receipt_or_source_writes(self):
+        output = self.preview_output()
+        before = self.snapshot()
+        plan = self.preview(output)
+        self.assertFalse(plan['applied'])
+        self.assertEqual(plan['resolutionsSha256'], digest(self.resolution_path.read_bytes()))
+        self.assertEqual(before, self.snapshot())
+        package = output / 'package'
+        self.assertEqual((package / self.leaf).read_bytes(), self.proposed[self.leaf])
+        self.assertFalse((package / plan['omittedApplyReceipt']).exists())
+        self.assertFalse((self.root / plan['omittedApplyReceipt']).exists())
+        self.assertTrue((output / 'planned-transaction.json').is_file())
+        self.assertIn('not execution evidence', (output / 'README.md').read_text())
+
+    def test_preview_rejects_existing_symlink_and_repository_outputs(self):
+        output = self.preview_output()
+        output.mkdir()
+        sentinel = output / 'preserve.txt'
+        sentinel.write_text('keep')
+        before = self.snapshot()
+        for bad in (output, self.root / 'preview', self.root.parent, self.review / 'preview'):
+            with self.subTest(output=str(bad)), self.assertRaises(ValueError):
+                self.preview(bad)
+        self.assertEqual(sentinel.read_text(), 'keep')
+        linked = output.parent / 'linked'
+        linked.symlink_to(output, target_is_directory=True)
+        with self.assertRaises(ValueError):
+            self.preview(linked / 'nested')
+        self.assertEqual(before, self.snapshot())
+
+    def test_preview_rejects_stale_review_digest_and_source_baseline(self):
+        output = self.preview_output()
+        before = self.snapshot()
+        self.resolutions['reviewSha256'] = '0' * 64
+        self.save_resolutions()
+        with self.assertRaises(ValueError):
+            self.preview(output)
+        self.assertFalse(output.exists())
+        self.resolutions['reviewSha256'] = self.report_hash
+        self.save_resolutions()
+        inventory = self.root / 'docs/parity/inventory.json'
+        rows = json.loads(inventory.read_text())
+        rows[0]['upstreamCommit'] = 'f' * 40
+        inventory.write_text(json.dumps(rows))
+        altered = self.snapshot()
+        with self.assertRaises(ValueError):
+            self.preview(output)
+        self.assertFalse(output.exists())
+        self.assertEqual(altered, self.snapshot())
+
+    def test_apply_rejects_resolution_change_between_approval_and_plan(self):
+        original_plan = sync.review_plan
+        before = self.snapshot()
+        def changed_plan(*args, **kwargs):
+            changed = json.loads(self.resolution_path.read_text())
+            changed['entries'][0]['rationale'] += ' changed after approval'
+            self.resolution_path.write_text(json.dumps(changed))
+            return original_plan(*args, **kwargs)
+        with patch.object(sync, 'review_plan', changed_plan), self.assertRaisesRegex(ValueError, 'changed after approval'):
+            self.apply()
+        self.assertEqual(before, self.snapshot())
+
+    def test_preview_does_not_adopt_or_remove_concurrent_output(self):
+        output = self.preview_output()
+        original_mkdir = Path.mkdir
+        def competing_mkdir(path, *args, **kwargs):
+            if path == output:
+                original_mkdir(path)
+                (path / 'sentinel.txt').write_text('belongs to another invocation')
+            return original_mkdir(path, *args, **kwargs)
+        before = self.snapshot()
+        with patch.object(Path, 'mkdir', competing_mkdir), self.assertRaises(FileExistsError):
+            self.preview(output)
+        self.assertEqual((output / 'sentinel.txt').read_text(), 'belongs to another invocation')
+        self.assertEqual(before, self.snapshot())

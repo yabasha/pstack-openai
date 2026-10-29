@@ -37,14 +37,14 @@ bun --no-install -e 'const r=Bun.spawnSync(["python3","-B","-m","tools.validate_
 bun --no-install -e 'const r=Bun.spawnSync(["python3","-B","-m","tools.release_report","--root","<owned-worktree>","--commit","<tested-package-sha>","--version","<actual-package-version>"],{stdout:"inherit",stderr:"inherit"});process.exit(r.exitCode)'
 ```
 
-Release report exits 0 only when root evidence gates establish readiness; exit 1 prints blockers. Full installed discovery requires an actual receipt with all 57 roots, three Benny exclusions, installed identity, version, frozen SHA and three observed discovery operations. A validated sequential reduced-pass can carry complete discovery but never proves independent workers. Link checks and fixture positives are structural only.
+Release report exits 0 only when root evidence gates establish readiness; exit 1 prints blockers. Full installed discovery requires an actual receipt with all actual runtime roots declared by destination paths, three Benny exclusions, installed identity, version, frozen SHA and three observed discovery operations. A validated sequential reduced-pass can carry complete discovery but never proves independent workers. Link checks and fixture positives are structural only.
 
 7. Separate reviewed acceptance decides whether the candidate becomes the next baseline. Only after validation, evidence review and explicit acceptance authorization, record the strict accepted.json receipt with exact manifest/evidence digests and ancestor package identity. The receipt is a review assertion, not authenticated permission. No CLI or passing structural check automatically accepts. Keep the original canonical manifest. Then check/prepare the next candidate binds that receipt and its digests; unaccepted or tampered baselines stop before proposals.
 8. If validation fails, retain the candidate and evidence as unaccepted. Use [rollback](rollback.md) after a separately authorized clean local snapshot commit. Review exhaustive package ownership, preserved personal paths and runtime-state compatibility. Preview the exact rollback plan, approve its digest and recompute before writes. No destructive reset, install or acceptance follows rollback.
 
 ## Freeze and observations
 
-For a statechart change, run `bun test skills/statechart/scripts/test/` after reviewing the adapted helpers. This carries the upstream CI helper-test intent into the port's Bun workflow. Tests requiring Java/TLC must run with a reviewed local jar and Java runtime; skipped tests remain unverified. Renderer fixtures test argument handling and failure behavior, not actual PNG rendering. Both-host completion also requires observed execution, image inspection, real-code reproduction and surviving artifacts under the [statechart execution contract](../../skills/statechart/references/execution.md).
+For a statechart change, run `bun --no-install test --timeout 120000 skills/statechart/scripts/test/` after reviewing the adapted helpers. This carries the upstream CI helper-test intent into the port's Bun workflow. Tests requiring Java/TLC must run with a reviewed local jar and Java runtime; skipped tests remain unverified. Renderer tests require separately reviewed local Pele 1.9.0, Mermaid 11.16.0 and jsdom 26.1.0; they never install packages. Missing dependencies are explicit skips. Inspect actual SVGs separately. Both-host completion also requires observed execution, image inspection, real-code reproduction and surviving artifacts under the [statechart execution contract](../../skills/statechart/references/execution.md).
 
 Freeze operative bytes, catalog and navigation together. Later reports must identify that tested ancestor through the exact [tested-package marker contract](rollback.md). Named narrow report exceptions and inventory verification may differ; setup, helpers and navigation may not. Record an explicit second freeze after blocked host inventory merge/catalog regeneration, then fresh blocked discovery at that final SHA. Preserve both freeze identities and prior records in Git history. The final handoff must keep final navigation byte-identical or explicitly refreeze.
 
@@ -89,3 +89,15 @@ bun --no-install -e 'const {createHash}=await import("node:crypto"); const bytes
 ```
 
 No automatic draft is an approved metadata bundle. Missing new cases, removed case scopes, catalog membership, dependency callers or regenerated outputs fail the projected closure check before writes.
+
+## Non-mutating combined preview
+
+Prepare a combined update from the accepted source receipt, never by accepting an intermediate staged candidate to unlock the tool. Port-owned prerequisite tooling and execution contracts may be committed separately in the isolated implementation worktree. Keep its source inventory and accepted receipt unchanged. Bind prepare to that exact prerequisite commit and retain the separate prerequisite diff.
+
+Before approval, use the preview command with the exact review, reviewed resolutions and ownership marker. It shares the apply preflight and metadata validation, but requires no approval and never writes the implementation package. Supply a new real output directory outside existing repositories and the review tree, with an existing task-owned parent. The command refuses existing outputs and ancestor overlap. Its package projection omits the future apply receipt. The separate preview plan and planned transaction record are proposals, never execution or acceptance evidence.
+
+```sh
+bun --no-install -e 'const r=Bun.spawnSync(["python3","-B","-m","tools.sync_upstream","preview","--review","<review>","--resolutions","<reviewed-json>","--worktree","<owned-worktree>","--owner","<task-owner>","--output","<new-external-output>"],{stdout:"inherit",stderr:"inherit"});process.exit(r.exitCode)'
+```
+
+Review the prerequisite and complete projected diff, validate the projection, then obtain approval of the reported exact resolution digest and implementation worktree before formal apply. Preview never authorizes apply, setup, baseline acceptance, integration, installation or refresh. Apply rejects any resolution change between approval validation and plan construction.

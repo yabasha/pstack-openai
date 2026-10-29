@@ -540,3 +540,34 @@ class DirectAndMethodTests(unittest.TestCase):
         self.select('plain-restate')
         self.record.update(execution='direct',successfulOperations=[dict(operation=o,tool='observed.spawn',evidence='result.txt') for o in ('supplied-input','response','review-outcome')])
         self.assertTrue(any('native text' in e for e in self.check()))
+
+    def test_arena_rejects_same_unknown_inherited_or_unbound_judge_family(self):
+        from tests.evidence_fixtures import method_fixture
+        import copy
+        self.select('candidate-cross-review')
+        receipt = method_fixture(self.root, self.record, 'arena')
+        self.assertEqual([], self.check())
+        mutations = [
+            lambda r: r['modelFamilyEvidence'].update(judgeFamily='synthetic-family-a'),
+            lambda r: r['modelFamilyEvidence'].update(parentFamily='unknown'),
+            lambda r: r['modelFamilyEvidence'].update(judgeModel='unbound-model'),
+            lambda r: r['modelFamilyEvidence'].update(evidence='missing.txt'),
+            lambda r: r['assignments'][2].update(requestedModel='inherit-parent'),
+            lambda r: r['assignments'][2].update(requestedModel='auto'),
+        ]
+        for mutate in mutations:
+            broken = copy.deepcopy(receipt)
+            mutate(broken)
+            (self.root / self.record['methodReceipt']).write_text(json.dumps(broken))
+            self.assertTrue(self.check())
+
+    def test_interrogate_full_requires_reproduction_writes_and_lead_rerun(self):
+        self.select('adversarial-review')
+        self.record['successfulOperations'] = [dict(operation=op, tool='observed.spawn', evidence='result.txt') for op in ('read', 'spawn', 'inspect-result', 'isolated-write', 'execution', 'lead-rerun')]
+        self.assertEqual([], self.check())
+        self.record['successfulOperations'] = [o for o in self.record['successfulOperations'] if o['operation'] != 'lead-rerun']
+        self.assertTrue(self.check())
+        self.record.update(status='reduced-pass', execution='direct', limits=['Execution and isolated writes denied; static review only.'])
+        self.record['permissions'].update(execution='denied', writes='denied')
+        self.record['successfulOperations'] = [dict(operation='read', tool='observed.spawn', evidence='result.txt')]
+        self.assertEqual([], self.check())

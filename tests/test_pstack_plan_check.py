@@ -19,7 +19,7 @@ def plan(capabilities='Independent workers available. Evidence `workers.log`. Ca
 class PlanCheckTests(unittest.TestCase):
     def call(self, text):
         scratch = ROOT / '.superpowers/sdd/2026-10-07-pstack-openai/task-17-fixtures'
-        scratch.mkdir(exist_ok=True)
+        scratch.mkdir(parents=True, exist_ok=True)
         with tempfile.TemporaryDirectory(dir=scratch) as folder:
             path = Path(folder) / 'plan.md'
             path.write_text(text)

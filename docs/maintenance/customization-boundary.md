@@ -1,12 +1,12 @@
 # Personal customization boundary
 
-Preserve the complete shared baseline before adding personal customizations. The baseline is the accepted pstack v0.15.25 source pinned in [UPSTREAM.md](../../UPSTREAM.md), with 169 source files, 54 root skills, 24 principles, 115 support files and 23 playbooks. The principles are part of the root skills and the playbooks are part of the support files; these counts do not describe additional files.
+Preserve the complete shared baseline before adding personal customizations. The accepted baseline remains pstack v0.15.30, port 0.2.3, recorded in [UPSTREAM.md](../../UPSTREAM.md). The unaccepted 0.2.4 compiler candidate tracks 580 source files and 58 canonical roots, with 57 runtime skills, 24 principles and 23 playbooks. One unrequested root is an inert relocated reference. The principles are part of the root skills and the playbooks are part of the support files; these counts do not describe additional files.
 
 ## Baseline gate
 
 Personal customization begins only after every baseline inventory record has a reviewed disposition and dependency closure, and each host has evidence for supported behavior or an explicit block. Review the [inventory](../parity/inventory.json), [support map](../parity/support-map.md), [case registry](../parity/case-registry.json), [compatibility summary](../compatibility.md) and [host matrix](../testing/host-matrix.md) together.
 
-The current candidate has no installed discovery or behavioral passes on either host. Its registry contains 108 cases, with 105 behavioral cases and three structural maintenance cases. Case definitions, local package checks and isolated helper fixtures are not host observations. Both hosts remain unverified and undiscovered, so the baseline is not release-ready. An explicit blocked disposition records a limit; it does not establish support. A sequential reduced-pass never establishes independent workers.
+The current candidate has no installed discovery or behavioral passes on either host. Its registry and source membership are recorded in the candidate metadata; every behavioral host status remains not-run. Case definitions, local package checks and isolated helper fixtures are not host observations. Both hosts remain unverified and undiscovered, so the baseline is not release-ready. An explicit blocked disposition records a limit; it does not establish support. A sequential reduced-pass never establishes independent workers.
 
 Complete baseline accounting is required even when a useful reduced workflow exists. Release readiness is a separate evidence gate evaluated by the [release report CLI](../../tools/release_report.py). Keep blocked branches and separately required setup visible. A later final report must use actual observations and the frozen tested revision.
 

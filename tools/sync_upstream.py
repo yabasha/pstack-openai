@@ -357,6 +357,7 @@ APPLY_RESOLUTION_SCHEMA = {'$schema': 'https://json-schema.org/draft/2020-12/sch
 
 
 # Optional for inventory-only development fixtures, mandatory for full packages.
+APPLY_RESOLUTION_SCHEMA['properties']['entries']['items']['properties']['referenceDestinationPath'] = PATH_SCHEMA
 APPLY_RESOLUTION_SCHEMA['properties']['packageMetadata'] = object_schema({'contentPath': PATH_SCHEMA, 'reviewedSha256': HASH_SCHEMA})
 
 
@@ -395,7 +396,7 @@ def validate_shape(value, schema):
             raise ValueError('Invalid contract string')
 
 
-def read_json(path):
+def read_json_bytes(data):
     def unique(pairs):
         result = {}
         for key, value in pairs:
@@ -403,7 +404,11 @@ def read_json(path):
                 raise ValueError('Duplicate JSON key: ' + key)
             result[key] = value
         return result
-    return json.loads(path.read_bytes(), object_pairs_hook=unique)
+    return json.loads(data, object_pairs_hook=unique)
+
+
+def read_json(path):
+    return read_json_bytes(path.read_bytes())
 
 
 def git_read(root, *args):
@@ -412,8 +417,9 @@ def git_read(root, *args):
 
 def verify_owned_worktree(root, owner, package_commit):
     herd = Path.home() / 'Herd'
-    if not root.is_absolute() or root != root.resolve() or not root.is_relative_to(herd.resolve()):
-        raise ValueError('Apply requires a real owned worktree beneath ~/Herd')
+    managed = Path.home() / '.codex/worktrees'
+    if not root.is_absolute() or root != root.resolve() or not any(root.is_relative_to(p.resolve()) for p in (herd, managed)):
+        raise ValueError('Apply requires a real owned linked worktree beneath ~/Herd or the native managed worktree root')
     safe_path(root, 'plugin.json')
     if not (root / '.git').is_file() or (root / '.git').is_symlink():
         raise ValueError('Apply refuses original repositories; use a linked implementation worktree')
@@ -433,27 +439,20 @@ def verify_owned_worktree(root, owner, package_commit):
         raise ValueError('Implementation worktree must be clean')
 
 
-def apply_review(review, resolutions, worktree, *, owner, approval, failure_hook=None):
-    """Stage a reviewed candidate with recovery. Never accept or release it.
-
-    The caller must obtain explicit user approval for the exact resolution-file
-    digest, then pass that digest as approval. A resolution document alone does
-    not grant authorization. Ownership is established by the task coordinator
-    in the linked worktree Git administration directory before invoking apply.
-    """
+def review_plan(review, resolutions, worktree, *, owner):
+    """Validate exact reviewed bytes and return a write plan without applying it."""
     from tools.compare_upstream import adapted_path
     root, review, resolution_file = Path(worktree).absolute(), Path(review).absolute(), Path(resolutions).absolute()
     safe_path(review, 'report.json')
     safe_path(resolution_file.parent, resolution_file.name)
     resolution_bytes = resolution_file.read_bytes()
-    if not approval or approval != sha256(resolution_bytes):
-        raise ValueError('Explicit approval must match the exact reviewed resolution file SHA-256')
-    decisions = read_json(resolution_file)
+    resolution_digest = sha256(resolution_bytes)
+    decisions = read_json_bytes(resolution_bytes)
     validate_shape(decisions, APPLY_RESOLUTION_SCHEMA)
     report_bytes = (review / 'report.json').read_bytes()
     if sha256(report_bytes) != decisions['reviewSha256']:
         raise ValueError('Review report hash mismatch')
-    report = read_json(review / 'report.json')
+    report = read_json_bytes(report_bytes)
     validate_shape(report, REVIEW_SCHEMA)
     candidate, commit = report['candidate'], report['packageCommit']
     if decisions['candidate'] != candidate or decisions['packageCommit'] != commit:
@@ -503,8 +502,20 @@ def apply_review(review, resolutions, worktree, *, owner, approval, failure_hook
         if not decision['rationale'].strip() or sorted(decision['reviewedCallers']) != change['dependentCallers']:
             raise ValueError('Resolution requires rationale and exact dependent caller review')
         destination = change['destinationPath']
-        target = adapted_path(root, destination)
+        relocation = decision.get('referenceDestinationPath')
         action = decision['disposition']
+        if relocation is not None:
+            if (action != 'reference-only' or change['oldSha256'] is not None or
+                    change['newSha256'] is None or not re.fullmatch(r'references/upstream-deferred/(?:[a-zA-Z0-9_-]+/)+REFERENCE\.md', relocation)):
+                raise ValueError('Only added reference-only sources may relocate to an inert deferred reference')
+            if (any(r['destinationPath'] == relocation for r in current.values()) or relocation in writes
+                    or any(p != path and r['destinationPath'] == relocation for p, r in new.items())):
+                raise ValueError('Reference destination collision')
+            if adapted_path(root, relocation).exists():
+                raise ValueError('Reference destination already exists')
+            destination = relocation
+            new[path] = dict(new[path], destinationPath=destination)
+        target = adapted_path(root, destination)
         generated = destination in metadata_paths or destination.startswith('docs/parity/')
         if generated and action != 'retain-adaptation':
             raise ValueError('Generated metadata must retain its adaptation: ' + destination)
@@ -555,7 +566,7 @@ def apply_review(review, resolutions, worktree, *, owner, approval, failure_hook
         row.update(upstreamCommit=candidate, upstreamSha256=source['upstreamSha256'])
         if path in entries:
             decision = entries[path]
-            row.update(destinationPath=decision['destinationPath'], rationale=decision['rationale'],
+            row.update(destinationPath=decision.get('referenceDestinationPath', decision['destinationPath']), rationale=decision['rationale'],
                 disposition='reference-only' if decision['disposition'] == 'reference-only' else row.get('disposition', 'runtime'),
                 adaptationStatus='reference-only-reviewed' if decision['disposition'] == 'reference-only' else 'adapted-reviewed')
             row.setdefault('dependencies', decision['dependencies'])
@@ -572,7 +583,7 @@ def apply_review(review, resolutions, worktree, *, owner, approval, failure_hook
     manifest_path = f'docs/parity/upstream-manifests/{candidate}.json'
     if candidate == baseline or safe_path(root, manifest_path).exists():
         raise ValueError('Candidate manifest must be new; old manifests are retained')
-    writes[manifest_path] = json_bytes(dict(schemaVersion=1, repository=identity['repository'], subtree=identity['subtree'], commit=candidate, archiveSha256=identity['candidateArchiveSha256'], files=proposed))
+    writes[manifest_path] = json_bytes(dict(schemaVersion=1, repository=identity['repository'], subtree=identity['subtree'], commit=candidate, archiveSha256=identity['candidateArchiveSha256'], files=[new[r['upstreamPath']] for r in proposed]))
     writes['plugin.json'] = json_bytes(plugin)
     writes['docs/parity/baseline-paths.txt'] = ('\n'.join(sorted(new)) + '\n').encode()
     writes['UPSTREAM.md'] = safe_path(root, 'UPSTREAM.md').read_bytes() + (f'\n## Unaccepted candidate {candidate}\n\nCandidate version {version}. Archive SHA-256 {identity["candidateArchiveSha256"]}. Review SHA-256 {decisions["reviewSha256"]}.\nThe inventory stages this candidate. The accepted baseline above remains historical evidence. Structural checks, helper regression tests, and affected host cases must run before separate acceptance.\n').encode()
@@ -587,7 +598,7 @@ def apply_review(review, resolutions, worktree, *, owner, approval, failure_hook
     if safe_path(root, state_path).exists():
         raise ValueError('Existing apply evidence must be retained')
     state = dict(schemaVersion=1, candidate=candidate, packageCommit=commit, acceptanceReady=False, releasable=False,
-        reviewSha256=decisions['reviewSha256'], resolutionsSha256=approval, invalidatedSources=sorted(affected),
+        reviewSha256=decisions['reviewSha256'], resolutionsSha256=resolution_digest, invalidatedSources=sorted(affected),
         checks={'structural': 'not-run', 'helperRegression': 'not-run', 'affectedHostCases': {'chatgpt': 'not-run', 'codex': 'not-run'}}, resolutions=decisions)
     writes[state_path] = json_bytes(state)
     from tools.update_metadata import closure_writes
@@ -595,6 +606,73 @@ def apply_review(review, resolutions, worktree, *, owner, approval, failure_hook
     # Inventory is last so fault injection proves all metadata and pin recovery.
     writes.pop('docs/parity/inventory.json', None)
     writes['docs/parity/inventory.json'] = json_bytes(result_inventory)
+    return writes, state
+
+
+def preview_review(review, resolutions, worktree, *, owner, output):
+    """Materialize an isolated review projection. Never write the implementation tree."""
+    import shutil
+    root = Path(worktree).absolute()
+    destination = Path(output).absolute()
+    if destination != destination.resolve() or destination.exists() or not destination.parent.is_dir():
+        raise ValueError('Preview requires a new real output directory with an existing parent')
+    protected = [root.resolve(), Path(review).resolve(), Path(git_read(root, 'rev-parse', '--path-format=absolute', '--git-common-dir'))]
+    if any(destination == p or destination.is_relative_to(p) or p.is_relative_to(destination) for p in protected):
+        raise ValueError('Preview output overlaps repository or review ownership')
+    if any((p / '.git').exists() for p in destination.parents):
+        raise ValueError('Preview output must be outside existing repositories')
+    writes, state = review_plan(review, resolutions, root, owner=owner)
+    projection = destination / 'package'
+    state_path = f"docs/parity/upstream-manifests/{state['candidate']}.apply.json"
+    manifest = []
+    created = False
+    try:
+        destination.mkdir(mode=0o700, exist_ok=False)
+        created = True
+        projection.mkdir()
+        for path in git_read(root, 'ls-files').splitlines():
+            source = safe_path(root, path)
+            if not source.is_file() or source.is_symlink():
+                raise ValueError('Preview refuses non-regular tracked inputs: ' + path)
+            target = safe_path(projection, path)
+            target.parent.mkdir(parents=True, exist_ok=True)
+            shutil.copy2(source, target)
+        for path, data in writes.items():
+            manifest.append(dict(path=path, sha256=sha256(data) if data is not None else None))
+            if path == state_path:
+                continue
+            target = safe_path(projection, path)
+            if data is None:
+                if target.exists(): target.unlink()
+            else:
+                target.parent.mkdir(parents=True, exist_ok=True)
+                target.write_bytes(data)
+                if sha256(target.read_bytes()) != sha256(data):
+                    raise ValueError('Preview readback mismatch: ' + path)
+        plan = dict(schemaVersion=1, kind='pstack-update-preview', applied=False,
+            packageCommit=state['packageCommit'], candidate=state['candidate'],
+            reviewSha256=state['reviewSha256'], resolutionsSha256=state['resolutionsSha256'],
+            projection=str(projection), writes=manifest, omittedApplyReceipt=state_path)
+        (destination / 'preview-plan.json').write_bytes(json_bytes(plan))
+        (destination / 'planned-transaction.json').write_bytes(json_bytes(state))
+        (destination / 'README.md').write_text('Read-only update preview. No formal apply, source acceptance or plugin refresh occurred.\nThe package omits the future apply receipt. planned-transaction.json is a plan, not execution evidence.\n')
+        return plan
+    except BaseException:
+        if created and destination.exists(): shutil.rmtree(destination)
+        raise
+
+
+def apply_review(review, resolutions, worktree, *, owner, approval, failure_hook=None):
+    """Apply only after explicit approval of this exact digest and owned worktree."""
+    from tools.compare_upstream import adapted_path
+    root = Path(worktree).absolute()
+    resolution_file = Path(resolutions).absolute()
+    resolution_bytes = safe_path(resolution_file.parent, resolution_file.name).read_bytes()
+    if not approval or approval != sha256(resolution_bytes):
+        raise ValueError('Explicit approval must match the exact reviewed resolution file SHA-256')
+    writes, state = review_plan(review, resolutions, root, owner=owner)
+    if state['resolutionsSha256'] != approval:
+        raise ValueError('Resolution bytes changed after approval validation')
     backup, modes, created_dirs = {}, {}, []
     for path in writes:
         target = adapted_path(root, path)
@@ -916,7 +994,7 @@ def rollback_release(release, worktree, *, ownership, owner, approval, failure_h
 
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument("command", choices=("check", "prepare", "apply", "rollback"))
+    parser.add_argument("command", choices=("check", "prepare", "preview", "apply", "rollback"))
     parser.add_argument("--candidate")
     parser.add_argument("--root", type=Path, default=Path.cwd())
     parser.add_argument("--review", type=Path)
@@ -924,6 +1002,7 @@ def main():
     parser.add_argument("--worktree", type=Path)
     parser.add_argument("--owner", help="Task owner from the linked worktree Git-admin ownership marker")
     parser.add_argument("--approve-resolutions-sha256", help="Supply only after explicit user approval of this exact resolution digest and worktree")
+    parser.add_argument("--output", type=Path, help="New external directory for a non-mutating review preview")
     parser.add_argument("--release", help="Exact previous package commit")
     parser.add_argument("--ownership", type=Path, help="Reviewed exhaustive rollback ownership JSON")
     parser.add_argument("--approve-plan-sha256", help="Explicit approval of preview plan digest; omit for read-only preview")
@@ -939,6 +1018,11 @@ def main():
             if args.approve_plan_sha256:
                 plan = rollback_release(args.release, args.worktree, ownership=ownership, owner=args.owner, approval=args.approve_plan_sha256)
             print(json.dumps({"plan": plan, "planSha256": sha256(json_bytes(plan))}, indent=2))
+        elif args.command == "preview":
+            if not all((args.review, args.resolutions, args.worktree, args.owner, args.output)):
+                raise ValueError("Preview requires --review, --resolutions, --worktree, --owner and --output")
+            plan = preview_review(args.review, args.resolutions, args.worktree, owner=args.owner, output=args.output)
+            print(json.dumps(plan, indent=2))
         elif args.command == "apply":
             if not all((args.review, args.resolutions, args.worktree, args.owner, args.approve_resolutions_sha256)):
                 raise ValueError("Apply requires --review, --resolutions, --worktree, --owner and --approve-resolutions-sha256")

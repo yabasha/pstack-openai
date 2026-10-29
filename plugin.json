@@ -26,7 +26,7 @@
       },
       "publication": {
         "countries": [],
-        "release_notes": "Accepted upstream 0.15.30 with 57 root skills, rewritten-prompt sharpening and portable statechart helpers. Historical host results retain their original tested identities; verification gaps remain explicit."
+        "release_notes": "Combined 0.2.4 sync is prepared for review from accepted 0.2.3: portable compiler fixes, run-proven review and orchestration adaptations. Source acceptance, installation and both-host workflow verification remain separate; dependency approvals remain explicit."
       },
       "review": {
         "commerce": false

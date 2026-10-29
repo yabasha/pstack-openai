@@ -23,10 +23,17 @@ class InventoryClosedTests(unittest.TestCase):
     def test_only_root_skills_have_discovery_entrypoint_filenames(self):
         rows = read('docs/parity/inventory.json')
         expected = {r['destinationPath'] for r in rows
-                    if re.fullmatch(r'skills/[^/]+/SKILL\.md', r['upstreamPath'])}
+                    if re.fullmatch(r'skills/[^/]+/SKILL\.md', r['destinationPath'])}
         actual = {p.relative_to(ROOT).as_posix() for p in ROOT.rglob('SKILL.md')
                   if p.relative_to(ROOT).parts[0] not in {'.git', '.superpowers', '.upstream'}}
-        self.assertEqual(len(expected), len(read('docs/parity/baseline-policy.json')['rootSkills']))
+        deferred = [r for r in rows if re.fullmatch(r'skills/[^/]+/SKILL\.md', r['upstreamPath'])
+                    and not re.fullmatch(r'skills/[^/]+/SKILL\.md', r['destinationPath'])]
+        self.assertEqual(len(expected) + len(deferred), len(read('docs/parity/baseline-policy.json')['rootSkills']))
+        for row in deferred:
+            self.assertEqual(row['disposition'], 'reference-only')
+            self.assertTrue(row['destinationPath'].endswith('/REFERENCE.md'))
+            self.assertTrue((ROOT / row['destinationPath']).is_file())
+            self.assertFalse((ROOT / row['upstreamPath']).exists())
         self.assertEqual(actual, expected)
         for row in rows:
             if row['upstreamPath'].startswith('automations/benny/skills/') and row['upstreamPath'].endswith('/SKILL.md'):

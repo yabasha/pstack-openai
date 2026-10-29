@@ -84,7 +84,9 @@ def build_catalog(root: Path, inventory: list[dict], entries: list[dict]) -> dic
         lines = [f'# {name}', '',
                  'Generated from the reviewed catalog record. Regenerate with `python3 -B tools/build_catalog.py --root .`.', '',
                  f'Catalog record: {link(f"docs/catalog/skills/{name}.json")}.', '',
-                 f'Skill: {link(f"skills/{name}/SKILL.md")}. Kind: {entry["kind"]}.', '',
+                 (f'Skill: {link(f"skills/{name}/SKILL.md")}. Kind: {entry["kind"]}.'
+                  if sources[f'skills/{name}/SKILL.md']['destinationPath'] == f'skills/{name}/SKILL.md'
+                  else f'Reference only: {link(sources[f"skills/{name}/SKILL.md"]["destinationPath"])}. This source is not an invocable skill.'), '',
                  '## Purpose', '', entry['purpose'], '', '## Triggers', '', bullets(entry['triggers']), '',
                  '## Required input', '', bullets(entry['inputs']), '', '## Output contract', '', bullets(entry['outputs']), '',
                  '## Ordinary example', '', entry['ordinaryExample'], '',

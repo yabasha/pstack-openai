@@ -203,8 +203,8 @@ def identity_checks(root, commit, version, inventory):
 
 def discovery_receipt(root, record, inventory, commit, version):
     """Require the installed-copy observation to carry exact enumeration data."""
-    names = sorted(Path(r['upstreamPath']).parent.name for r in inventory
-                   if re.fullmatch(r'skills/[^/]+/SKILL\.md', r['upstreamPath']))
+    names = sorted(Path(r['destinationPath']).parent.name for r in inventory
+                   if re.fullmatch(r'skills/[^/]+/SKILL\.md', r['destinationPath']))
     excluded = sorted(r['destinationPath'] for r in inventory
                       if r['upstreamPath'].startswith('automations/benny/skills/')
                       and r['upstreamPath'].endswith('/SKILL.md'))
@@ -268,7 +268,7 @@ def assess_release(root: Path, commit: str, version: str) -> dict:
                     errors.append('conflicting adaptation fragment: ' + str(path.relative_to(root)))
         errors += validate_package(root, inventory)
         expected_skills = {r['destinationPath'] for r in inventory
-                           if re.fullmatch(r'skills/[^/]+/SKILL\.md', r['upstreamPath'])}
+                           if re.fullmatch(r'skills/[^/]+/SKILL\.md', r['destinationPath'])}
         actual_skills = {p.relative_to(root).as_posix() for p in (root / 'skills').glob('*/SKILL.md')}
         if actual_skills != expected_skills:
             errors.append('actual root skill discovery differs from inventoried leaves')
