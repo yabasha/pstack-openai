@@ -1,10 +1,10 @@
 {
   "schemaVersion": 1,
   "kind": "pstack-accepted-baseline",
-  "commit": "4ec7ffa173eaa70d3d9467a627baf0954645a353",
-  "manifestPath": "docs/parity/upstream-manifests/4ec7ffa173eaa70d3d9467a627baf0954645a353.json",
-  "manifestSha256": "1b5d0f4dd1ef50c87d36a2eb07100a40184f125359ea324dbf3e3f9ab122a16c",
-  "packageCommit": "bec3a17ea71b6bcfa6543817e40f07e64477cd1a",
-  "evidencePath": "docs/releases/0.2.3.md",
-  "evidenceSha256": "89253f63efd35103096580e6031492c480c215b8e6bc173f9c52e020a952c713"
+  "commit": "c742dd61706fbacc1b95f1a20b7b988cf096ce6c",
+  "manifestPath": "docs/parity/upstream-manifests/c742dd61706fbacc1b95f1a20b7b988cf096ce6c.json",
+  "manifestSha256": "e318cee4e0ae012d1c8e185b7ef6a06003f62380e591c50d00e25e5b394a96dc",
+  "packageCommit": "f64d3acb11c885a60f6adf1de597751d4cb7c09b",
+  "evidencePath": "docs/releases/0.2.4.md",
+  "evidenceSha256": "400478bd801cb73443770077f5b88bc48e940c7a4e668774d85de738ca93096e"
 }
