@@ -19,6 +19,18 @@ def inputs():
 
 
 class CatalogTests(unittest.TestCase):
+    def test_deferred_canonical_root_links_only_its_inert_destination(self):
+        from tools.build_catalog import build_catalog
+        inventory, entries = inputs()
+        pages = build_catalog(ROOT, inventory, entries)
+        for row in inventory:
+            source = row['upstreamPath']
+            if re.fullmatch(r'skills/[^/]+/SKILL.md', source) and row['destinationPath'] != source:
+                page = pages[f'docs/skills/{source.split("/")[1]}.md']
+                self.assertIn('This source is not an invocable skill.', page)
+                self.assertIn(row['destinationPath'], page)
+                self.assertNotIn(f'](../../{source})', page)
+
     def test_catalog_exact_name_sets(self):
         from tools.build_catalog import build_catalog
         inventory, entries = inputs()

@@ -1,23 +1,4 @@
 {
-  "name": "correct",
-  "kind": "workflow",
-  "purpose": "Find repeated repository mistake classes and prevent recurrence through architecture, types, lint or CI, tests, then judgment rules.",
-  "triggers": [
-    "/correct",
-    "An operator correction to a repeated repository mistake"
-  ],
-  "inputs": [
-    "Recent commits, reverts, review comments, agent instruction files and workaround comments",
-    "Current correction and authorized repository scope"
-  ],
-  "outputs": [
-    "Repository enforcement changes and real past-mistake checks when authorized",
-    "Rule/enforcement table changes after review and explicit permission",
-    "Each class with evidence, chosen enforcement level and why higher levels did not work"
-  ],
-  "dependencies": [
-    "references/host-capabilities.md"
-  ],
   "capabilityLimits": [
     "Missing history limits class evidence",
     "Unavailable or unauthorized writes, execution or CI reduce the workflow to findings and proposals",
@@ -25,11 +6,30 @@
     "Host behavior has not been tested",
     "Preserve disable-model-invocation metadata without assuming host enforcement."
   ],
-  "sourcePaths": [
-    "skills/correct/SKILL.md"
-  ],
   "caseIds": [
     "user-correction"
   ],
-  "ordinaryExample": "Use /correct to investigate two reverted changes that copied the same unsafe state owner, then propose one owner and prove the old mistake fails."
+  "dependencies": [
+    "references/host-capabilities.md"
+  ],
+  "inputs": [
+    "Recent commits, reverts, review comments, agent instruction files and workaround comments",
+    "Current correction and authorized repository scope"
+  ],
+  "kind": "workflow",
+  "name": "correct",
+  "ordinaryExample": "Use /correct to investigate two reverted changes that copied the same unsafe state owner, then propose one owner and prove the old mistake fails.",
+  "outputs": [
+    "Repository enforcement changes and real past-mistake checks when authorized",
+    "Rule/enforcement table changes after review and explicit permission",
+    "Each class with evidence, chosen enforcement level and why higher levels did not work"
+  ],
+  "purpose": "Find repeated repository mistake classes and prevent recurrence through architecture, types, lint or CI, tests, then judgment rules.",
+  "sourcePaths": [
+    "skills/correct/SKILL.md"
+  ],
+  "triggers": [
+    "/correct",
+    "An operator correction to a repeated repository mistake"
+  ]
 }

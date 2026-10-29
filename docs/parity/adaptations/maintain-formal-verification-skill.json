@@ -16,7 +16,7 @@
       "sourcePath": "LICENSE"
     },
     "rationale": "Adopt bounded verification and drift maintenance with capability discovery, real-code testing fallback labels, isolated negative controls and explicit blocked execution.",
-    "upstreamCommit": "4ec7ffa173eaa70d3d9467a627baf0954645a353",
+    "upstreamCommit": "c742dd61706fbacc1b95f1a20b7b988cf096ce6c",
     "upstreamPath": "skills/maintain-formal-verification-skill/SKILL.md",
     "upstreamSha256": "0c96f54293542d3818b68754562b338073958781a9684454611dca37592e2d2c",
     "verification": {

@@ -12,7 +12,7 @@
       "sourcePath": "LICENSE"
     },
     "rationale": "Preserve canonical metadata, purpose, six-step test sequence, impractical-test alternatives, guardrails and final evidence report. Add session tool/permission binding and explicit unrun reporting when execution is unavailable; no test behavior is claimed.",
-    "upstreamCommit": "4ec7ffa173eaa70d3d9467a627baf0954645a353",
+    "upstreamCommit": "c742dd61706fbacc1b95f1a20b7b988cf096ce6c",
     "upstreamPath": "skills/tdd/SKILL.md",
     "upstreamSha256": "eeb868e2dfebee528d730a67d7b17498fac4bb85dec2e38bc5c5176aca4d5d2f",
     "verification": {

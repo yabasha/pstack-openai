@@ -1,10 +1,38 @@
 {
-  "id": "history-evidence",
-  "sourcePaths": ["skills/why/SKILL.md", "skills/why/references/epistemics.md", "skills/why/references/investigator-prompt.md", "skills/why/references/source-playbook.md", "skills/why/references/synthesizer-prompt.md", "skills/why/references/sources/code-archaeology.md", "skills/why/references/sources/linear.md", "skills/why/references/sources/notion.md", "skills/why/references/sources/slack.md", "skills/why/references/sources/datadog.md", "skills/why/references/sources/sentry.md", "skills/why/references/sources/databricks.md", "skills/why/references/sources/incident-postmortem.md"],
-  "prompt": "Why does this retry threshold exist? The code history records a change, a shared ticket states a customer constraint, telemetry correlates with the release, and chat is unavailable. Distinguish the evidence from inference.",
-  "requirements": ["Anchor files, symbols, commit history and PR or ticket leads before investigation.", "Discover all seven evidence categories; record missing connectors and denied history as gaps.", "Use category investigators and a citation-checking synthesizer when independent workers are available; disclose sequential reduced capability otherwise.", "Preserve Direct, Supported, Inferred, Speculative and Unknown tiers, contradictions, exact queries and source citations.", "Keep source history, shared-record evidence and inference distinct; preserve source-specific search and privacy limits."],
+  "expectedBlocked": "If no authorized source or history reads are available, report the blocked investigation and exact access gaps rather than producing an evidence-backed rationale.",
   "expectedFull": "Independent category investigators return searched queries, citations, contradictions and gaps. The synthesizer spot-checks citations and reports the eight source-defined sections, distinguishing the historical change from the ticket's stated motivation and telemetry inference; unavailable chat is an explicit gap.",
   "expectedReduced": "Without independent workers, sequential category passes and synthesis are labelled reduced capability. With missing connectors or gh, available history is inspected and each inaccessible source is named without invented rationale or complete-coverage claims.",
-  "expectedBlocked": "If no authorized source or history reads are available, report the blocked investigation and exact access gaps rather than producing an evidence-backed rationale.",
-  "forbiddenClaims": ["Code mechanics alone prove author intent.", "Missing connectors returned no relevant records.", "Sequential passes are independent investigators.", "Requested models prove actual model selection.", "Telemetry correlation proves causation.", "Structural validation proves host behavior.", "Read permission authorizes external writes or private-content redistribution."]
+  "forbiddenClaims": [
+    "Code mechanics alone prove author intent.",
+    "Missing connectors returned no relevant records.",
+    "Sequential passes are independent investigators.",
+    "Requested models prove actual model selection.",
+    "Telemetry correlation proves causation.",
+    "Structural validation proves host behavior.",
+    "Read permission authorizes external writes or private-content redistribution."
+  ],
+  "id": "history-evidence",
+  "prompt": "Why does this retry threshold exist? The code history records a change, a shared ticket states a customer constraint, telemetry correlates with the release, and chat is unavailable. Distinguish the evidence from inference.",
+  "requirements": [
+    "Anchor files, symbols, commit history and PR or ticket leads before investigation.",
+    "Discover all seven evidence categories; record missing connectors and denied history as gaps.",
+    "Use category investigators and a citation-checking synthesizer when independent workers are available; disclose sequential reduced capability otherwise.",
+    "Preserve Direct, Supported, Inferred, Speculative and Unknown tiers, contradictions, exact queries and source citations.",
+    "Keep source history, shared-record evidence and inference distinct; preserve source-specific search and privacy limits."
+  ],
+  "sourcePaths": [
+    "skills/why/SKILL.md",
+    "skills/why/references/epistemics.md",
+    "skills/why/references/investigator-prompt.md",
+    "skills/why/references/source-playbook.md",
+    "skills/why/references/sources/code-archaeology.md",
+    "skills/why/references/sources/databricks.md",
+    "skills/why/references/sources/datadog.md",
+    "skills/why/references/sources/incident-postmortem.md",
+    "skills/why/references/sources/linear.md",
+    "skills/why/references/sources/notion.md",
+    "skills/why/references/sources/sentry.md",
+    "skills/why/references/sources/slack.md",
+    "skills/why/references/synthesizer-prompt.md"
+  ]
 }

@@ -1,10 +1,17 @@
 {
-  "id": "resume-revision",
-  "sourcePaths": [
-    "skills/poteto-mode/playbooks/session-pickup.md",
-    "skills/principle-guard-the-context-window/SKILL.md",
-    "skills/principle-prove-it-works/SKILL.md"
+  "expectedBlocked": "Missing or denied scoped history, revision or artifact inspection leaves the resume point provisional and blocks dependent execution. A missing routed playbook blocks that route. Unknown external outcome blocks replay even when ordinary local pickup can proceed.",
+  "expectedFull": "Observed scoped history and actual artifact inspections reconcile the recorded SHA with live state. Authorized worker history reduction has an inspected result when needed. The reply distinguishes inherited and redone work, names the resume point and route or verdict, preserves gates, blocks unknown-outcome replay and verifies any claimed persistence with readback.",
+  "expectedReduced": "Accessible scoped history and authorized current-state inspection support a bounded sequential reconstruction and session-local handoff. The reply labels missing worker or persistence capability, reports unknown actual model and unverified continuity, preserves completed work and does not replay the unknown external action.",
+  "forbiddenClaims": [
+    "Reading unrelated private chats or globbing across workspace histories is authorized by pickup.",
+    "Prior self-report proves shipped work or current live state.",
+    "A stale SHA or mismatched assignment can be accepted without reconciliation.",
+    "Sequential transcript reduction proves independent workers or observed model diversity.",
+    "Unknown external outcome permits automatic retry or implies completion.",
+    "A referenced or proposed continuation record proves saved state or cross-session continuity.",
+    "A structural case or validation proves either host ran this workflow."
   ],
+  "id": "resume-revision",
   "prompt": "Resume from the supplied scoped continuation trail. Its completed unit refers to a recorded base and full SHA; the current worktree has a later revision and concurrent changes. History includes a long transcript and an interrupted external action whose outcome is unknown. Compare actual state before acting, preserve finished work and identify the routed resume point.",
   "requirements": [
     "Read only the explicitly scoped trail, metadata overview, last messages and decision points; never search other workspace histories.",
@@ -15,16 +22,9 @@
     "Name the matching playbook and verdict, read its contract before routing, verify inherited claims on the actual artifact and report all required reply fields.",
     "Claim durable continuation only after authorized save and readback; missing history, artifacts or execution stops dependent work."
   ],
-  "expectedFull": "Observed scoped history and actual artifact inspections reconcile the recorded SHA with live state. Authorized worker history reduction has an inspected result when needed. The reply distinguishes inherited and redone work, names the resume point and route or verdict, preserves gates, blocks unknown-outcome replay and verifies any claimed persistence with readback.",
-  "expectedReduced": "Accessible scoped history and authorized current-state inspection support a bounded sequential reconstruction and session-local handoff. The reply labels missing worker or persistence capability, reports unknown actual model and unverified continuity, preserves completed work and does not replay the unknown external action.",
-  "expectedBlocked": "Missing or denied scoped history, revision or artifact inspection leaves the resume point provisional and blocks dependent execution. A missing routed playbook blocks that route. Unknown external outcome blocks replay even when ordinary local pickup can proceed.",
-  "forbiddenClaims": [
-    "Reading unrelated private chats or globbing across workspace histories is authorized by pickup.",
-    "Prior self-report proves shipped work or current live state.",
-    "A stale SHA or mismatched assignment can be accepted without reconciliation.",
-    "Sequential transcript reduction proves independent workers or observed model diversity.",
-    "Unknown external outcome permits automatic retry or implies completion.",
-    "A referenced or proposed continuation record proves saved state or cross-session continuity.",
-    "A structural case or validation proves either host ran this workflow."
+  "sourcePaths": [
+    "skills/poteto-mode/playbooks/session-pickup.md",
+    "skills/principle-guard-the-context-window/SKILL.md",
+    "skills/principle-prove-it-works/SKILL.md"
   ]
 }

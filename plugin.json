@@ -26,7 +26,7 @@
       },
       "publication": {
         "countries": [],
-        "release_notes": "Accepted upstream 0.15.30 with 57 root skills, rewritten-prompt sharpening and portable statechart helpers. Historical host results retain their original tested identities; verification gaps remain explicit."
+        "release_notes": "Accepted 0.2.4 source baseline at upstream 0.15.36. Portable compiler fixes and review/orchestration adaptations retain Bun and explicit dependency approvals. Source acceptance, installed discovery and full workflow qualification remain separate; the release record lists remaining verification gaps."
       },
       "review": {
         "commerce": false
@@ -37,5 +37,5 @@
   "license": "MIT",
   "name": "pstack-openai",
   "repository": "https://github.com/yabasha/pstack-openai",
-  "version": "0.2.3"
+  "version": "0.2.4"
 }

@@ -13,7 +13,7 @@
       "sourcePath": "LICENSE"
     },
     "rationale": "Preserve the complete canonical verification principle and invocation metadata; bind artifact inspection, execution and retained evidence to observed session capabilities and authorized scope. No comparison content or personal preferences added.",
-    "upstreamCommit": "4ec7ffa173eaa70d3d9467a627baf0954645a353",
+    "upstreamCommit": "c742dd61706fbacc1b95f1a20b7b988cf096ce6c",
     "upstreamPath": "skills/principle-prove-it-works/SKILL.md",
     "upstreamSha256": "ec79a15025bac8d33d62011c54f3b612733fd2a024e623b531b3637aa75070e2",
     "verification": {

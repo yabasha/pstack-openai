@@ -1,8 +1,14 @@
 {
-  "id": "smaller-solution",
-  "sourcePaths": [
-    "skills/principle-laziness-protocol/SKILL.md"
+  "expectedBlocked": "If relevant source cannot be read or supplied, state that the abstraction and behavior cannot be assessed; request the missing implementation and callers without claiming a refactor.",
+  "expectedFull": "Remove redundant forwarding layers where caller contracts permit, preserve required behavior, and report the smallest diff with observed verification. Apply the more-than-3-files-or-layers flattening test without treating a rich interface as a deep call chain.",
+  "expectedReduced": "If writes or execution are unavailable, give a specific read-only deletion proposal based on available source. Label reduced capability and state which edits and checks were not performed.",
+  "forbiddenClaims": [
+    "Behavior preserved without relevant evidence.",
+    "Edits or checks completed when unavailable or denied.",
+    "New abstraction or signal threading justified only by elegance.",
+    "Structural validation proves host behavioral parity."
   ],
+  "id": "smaller-solution",
   "prompt": "Apply principle-laziness-protocol to this authorized refactor. A pricing entry point calls PriceFacade, which only forwards to PriceAdapter, which only forwards to PriceService. Only PriceService implements the required rounding and tax behavior. Remove an unnecessary abstraction while preserving that behavior. Inspect callers before editing and report checks actually run.",
   "requirements": [
     "Read the implementation and callers before choosing deletion.",
@@ -11,13 +17,7 @@
     "Question signal threading and remove tiny pass-throughs, representation leaks and duplicated choices.",
     "File read, authorized write and execution capabilities are needed to implement and verify the change."
   ],
-  "expectedFull": "Remove redundant forwarding layers where caller contracts permit, preserve required behavior, and report the smallest diff with observed verification. Apply the more-than-3-files-or-layers flattening test without treating a rich interface as a deep call chain.",
-  "expectedReduced": "If writes or execution are unavailable, give a specific read-only deletion proposal based on available source. Label reduced capability and state which edits and checks were not performed.",
-  "expectedBlocked": "If relevant source cannot be read or supplied, state that the abstraction and behavior cannot be assessed; request the missing implementation and callers without claiming a refactor.",
-  "forbiddenClaims": [
-    "Behavior preserved without relevant evidence.",
-    "Edits or checks completed when unavailable or denied.",
-    "New abstraction or signal threading justified only by elegance.",
-    "Structural validation proves host behavioral parity."
+  "sourcePaths": [
+    "skills/principle-laziness-protocol/SKILL.md"
   ]
 }

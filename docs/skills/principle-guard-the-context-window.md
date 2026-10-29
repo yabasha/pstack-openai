@@ -85,6 +85,6 @@ Current host statuses and release evidence: [current parity inventory](../parity
 
 Destination: [skills/principle-guard-the-context-window/SKILL.md](../../skills/principle-guard-the-context-window/SKILL.md).
 
-Upstream commit: `4ec7ffa173eaa70d3d9467a627baf0954645a353`. SHA-256: `af0b9dd70b43628ce4a59a4d332e9d9ad055084e460f430e7a757495c627e81a`.
+Upstream commit: `c742dd61706fbacc1b95f1a20b7b988cf096ce6c`. SHA-256: `af0b9dd70b43628ce4a59a4d332e9d9ad055084e460f430e7a757495c627e81a`.
 
 Disposition: `runtime`. Aggregate adaptation status: `adapted-reviewed`.

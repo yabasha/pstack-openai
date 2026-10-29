@@ -1,23 +1,15 @@
 {
-  "name": "arena",
-  "kind": "workflow",
-  "purpose": "Compare isolated attempts at the same artifact, pick a maintainable base, graft the strongest rejected-candidate ideas coherently and verify the synthesis.",
-  "triggers": [
-    "/arena",
-    "arena this",
-    "throw it in the arena",
-    "one attempt at a non-trivial artifact would lock in the wrong shape"
+  "capabilityLimits": [
+    "Independent candidates and fresh judging require exposed authorized workers and inspected artifacts.",
+    "Sequential alternatives are reduced capability; one survivor is incomplete competition.",
+    "Requested models do not prove actual model diversity.",
+    "Required missing capabilities or denied writes block their gates.",
+    "Host behavior has not been tested.",
+    "A judge must have observed family different from the parent; aliases never judge. Missing cross-family judging requires reduced parent-only selection."
   ],
-  "inputs": [
-    "Authorized artifact task and shared grounding",
-    "Parent-only 3-6 criterion rubric",
-    "Runner and cross-judge preferences, observed capabilities and isolated output paths"
+  "caseIds": [
+    "candidate-cross-review"
   ],
-  "outputs": [
-    "One synthesized artifact",
-    "Adjacent synthesis note with base, judge verdict, graft sources, rejections, dropouts and verification"
-  ],
-  "ordinaryExample": "Compare two cache API designs in isolated directories, judge completed candidates, select the cleaner boundary and adapt one useful idea from the other design.",
   "dependencies": [
     "references/host-capabilities.md",
     "references/model-roles.md",
@@ -29,17 +21,26 @@
     "skills/principle-prove-it-works/SKILL.md",
     "skills/unslop/SKILL.md"
   ],
-  "capabilityLimits": [
-    "Independent candidates and fresh judging require exposed authorized workers and inspected artifacts.",
-    "Sequential alternatives are reduced capability; one survivor is incomplete competition.",
-    "Requested models do not prove actual model diversity.",
-    "Required missing capabilities or denied writes block their gates.",
-    "Host behavior has not been tested."
+  "inputs": [
+    "Authorized artifact task and shared grounding",
+    "Parent-only 3-6 criterion rubric",
+    "Runner and cross-judge preferences, observed capabilities and isolated output paths"
   ],
+  "kind": "workflow",
+  "name": "arena",
+  "ordinaryExample": "Compare two cache API designs in isolated directories, judge completed candidates, select the cleaner boundary and adapt one useful idea from the other design.",
+  "outputs": [
+    "One synthesized artifact",
+    "Adjacent synthesis note with base, judge verdict, graft sources, rejections, dropouts and verification"
+  ],
+  "purpose": "Compare isolated attempts at the same artifact, pick a maintainable base, graft the strongest rejected-candidate ideas coherently and verify the synthesis.",
   "sourcePaths": [
     "skills/arena/SKILL.md"
   ],
-  "caseIds": [
-    "candidate-cross-review"
+  "triggers": [
+    "/arena",
+    "arena this",
+    "throw it in the arena",
+    "one attempt at a non-trivial artifact would lock in the wrong shape"
   ]
 }

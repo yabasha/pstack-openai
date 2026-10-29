@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "kind": "pstack-tested-package",
-  "testedCommit": "2ef42fc146834e5693b49d05026d4a23717c76ee",
+  "testedCommit": "8e96b9006fe343040ce83a382dcd62636dbde831",
   "reportPaths": [
     "docs/parity/evidence/chatgpt/absent-workers.json",
     "docs/parity/evidence/chatgpt/accessible-trace.json",
@@ -215,7 +215,9 @@
     "docs/parity/evidence/codex/user-correction.json",
     "docs/parity/evidence/codex/user-tradeoff.json",
     "docs/parity/evidence/codex/verifiable-feature.json",
+    "docs/parity/upstream-manifests/accepted.json",
     "docs/releases/0.1.0.md",
+    "docs/releases/0.2.4.md",
     "docs/releases/discovery-014.json",
     "docs/releases/discovery-015.json",
     "docs/releases/historical-discovery-013.json",

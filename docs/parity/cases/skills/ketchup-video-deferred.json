@@ -1,0 +1,17 @@
+{
+  "expectedBlocked": "No source access leaves this accounting check blocked.",
+  "expectedFull": "Report PR797 deferred and canonical58 versus runtime57 roots. The reference is provenance only.",
+  "expectedReduced": "Name missing source access and leave verification not-run.",
+  "forbiddenClaims": [
+    "The video workflow was adopted or tested."
+  ],
+  "id": "ketchup-video-deferred",
+  "prompt": "Inspect the deferred ketchup-video source disposition.",
+  "requirements": [
+    "Read the inert reference and canonical inventory.",
+    "Do not invoke or advertise a runtime skill."
+  ],
+  "sourcePaths": [
+    "skills/ketchup-video/SKILL.md"
+  ]
+}

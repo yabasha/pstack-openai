@@ -150,7 +150,7 @@ def validate_method(record, kind, root, artifact, required_slice_count=None):
     try:
         receipt = json.loads((root / path).read_text())
         common = {'schemaVersion', 'kind', 'inputRevision', 'assignments', 'reviewArtifact', 'reviewedBy', 'declaredOrder'}
-        extra = {'candidates', 'judge', 'rubricArtifact', 'synthesis'} if kind == 'arena' else {'partition', 'race', 'cancelled', 'quarantined', 'failureExercises'}
+        extra = {'candidates', 'judge', 'rubricArtifact', 'synthesis', 'modelFamilyEvidence'} if kind == 'arena' else {'partition', 'race', 'cancelled', 'quarantined', 'failureExercises'}
         require(set(receipt) == common | extra and receipt['schemaVersion'] == 1 and receipt['kind'] == kind, 'invalid method shape or identity')
         require(re.fullmatch('[0-9a-f]{40}', record.get('inputRevision', '')) is not None and receipt['inputRevision'] == record.get('inputRevision'), 'exact assigned input revision required')
         require(inspected(receipt['reviewArtifact']) and bool(receipt['reviewedBy'].strip()), 'qualitative outcome needs an explicit reviewed artifact')
@@ -188,6 +188,14 @@ def validate_method(record, kind, root, artifact, required_slice_count=None):
             judge = by_id[receipt['judge']]
             require(judge['id'] not in ids and judge['role'] == 'judge' and judge['status'] == 'completed', 'fresh completed judge required')
             require(judge['rubricProvided'] is True, 'judge must receive the rubric')
+            families = receipt['modelFamilyEvidence']
+            require(set(families) == {'parentModel', 'parentFamily', 'judgeModel', 'judgeFamily', 'evidence'}, 'invalid model family evidence shape')
+            require(inspected(families['evidence']), 'observed model family evidence must be inspected')
+            unknown = {'unknown', 'unavailable', 'auto', 'inherit-parent', ''}
+            require(all(isinstance(families[k], str) and families[k].strip().lower() not in unknown for k in ('parentModel', 'parentFamily', 'judgeModel', 'judgeFamily')), 'observed parent and judge model families required')
+            require(judge['requestedModel'].strip().lower() not in {'auto', 'inherit-parent'}, 'inherited aliases never judge')
+            require(families['judgeModel'] == judge['actualModel'], 'judge family evidence must bind its actual model')
+            require(families['parentModel'].strip().lower() != families['judgeModel'].strip().lower() and families['parentFamily'].strip().lower() != families['judgeFamily'].strip().lower(), 'judge must differ from parent model family')
             require(all(a['role'] == 'candidate' and a['status'] == 'completed' and a['rubricProvided'] is False for a in candidates), 'completed candidates must not receive the rubric')
             require(len({a['taskArtifact'] for a in candidates}) == 1, 'candidates need the same task artifact')
             require(all(a['completedOrder'] < judge['startedOrder'] for a in candidates), 'judge started before candidates completed')

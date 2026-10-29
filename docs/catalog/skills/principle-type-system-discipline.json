@@ -1,36 +1,36 @@
 {
-  "name": "principle-type-system-discipline",
-  "kind": "principle",
-  "purpose": "Use types to exclude invalid states, distinguish semantic IDs and require complete handling of variants.",
-  "triggers": [
-    "Designing types",
-    "Reviewing function signatures",
-    "Writing code in a statically typed language"
-  ],
-  "inputs": [
-    "Authorized task, source model and invariants",
-    "Language constraints and authoritative schemas"
-  ],
-  "outputs": [
-    "Types and interfaces that exclude invalid states, with boundary parsers, exhaustive handling and observed compiler checks when available"
-  ],
-  "ordinaryExample": "Replace completed plus optional completedAt with open and done variants, where done carries its timestamp.",
-  "dependencies": [
-    "references/host-capabilities.md",
-    "skills/typescript-best-practices/SKILL.md",
-    "skills/principle-boundary-discipline/SKILL.md",
-    "skills/principle-encode-lessons-in-structure/SKILL.md"
-  ],
   "capabilityLimits": [
     "Some invariants require runtime validation because the language cannot encode them.",
     "Unavailable access, writes or compiler execution permit only a reduced proposal with unperformed checks stated.",
     "Preserve disable-model-invocation metadata without assuming host enforcement.",
     "Host behavior has not been tested."
   ],
+  "caseIds": [
+    "invalid-state"
+  ],
+  "dependencies": [
+    "references/host-capabilities.md",
+    "skills/typescript-best-practices/SKILL.md",
+    "skills/principle-boundary-discipline/SKILL.md",
+    "skills/principle-encode-lessons-in-structure/SKILL.md"
+  ],
+  "inputs": [
+    "Authorized task, source model and invariants",
+    "Language constraints and authoritative schemas"
+  ],
+  "kind": "principle",
+  "name": "principle-type-system-discipline",
+  "ordinaryExample": "Replace completed plus optional completedAt with open and done variants, where done carries its timestamp.",
+  "outputs": [
+    "Types and interfaces that exclude invalid states, with boundary parsers, exhaustive handling and observed compiler checks when available"
+  ],
+  "purpose": "Use types to exclude invalid states, distinguish semantic IDs and require complete handling of variants.",
   "sourcePaths": [
     "skills/principle-type-system-discipline/SKILL.md"
   ],
-  "caseIds": [
-    "invalid-state"
+  "triggers": [
+    "Designing types",
+    "Reviewing function signatures",
+    "Writing code in a statically typed language"
   ]
 }

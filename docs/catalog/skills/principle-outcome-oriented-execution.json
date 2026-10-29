@@ -1,32 +1,32 @@
 {
-  "name": "principle-outcome-oriented-execution",
-  "kind": "principle",
-  "purpose": "Converge on the intended verifiable migration end state without retaining throwaway compatibility states.",
-  "triggers": [
-    "Planned rewrites and migrations with explicit phase boundaries"
-  ],
-  "inputs": [
-    "Named target architecture",
-    "Migration phases and authorized scope",
-    "Relevant source and available verification tools"
-  ],
-  "outputs": [
-    "Migration with declared reversible breakage boundaries, checks for touched areas and full static and runtime verification at completion, or an explicit reduced plan"
-  ],
-  "ordinaryExample": "Migrate a module to the agreed interface in phases, declare temporary caller breakage, check touched code during migration and verify the completed target after removing temporary adapters.",
-  "dependencies": [
-    "references/host-capabilities.md"
-  ],
   "capabilityLimits": [
     "Source inspection, authorized writes and observed execution are required for full implementation and verification.",
     "Missing writes or execution permit a reduced migration plan; missing source or target blocks grounded implementation.",
     "Preserved disable-model-invocation metadata does not prove host enforcement.",
     "Host behavior has not been tested."
   ],
+  "caseIds": [
+    "migration-end-state"
+  ],
+  "dependencies": [
+    "references/host-capabilities.md"
+  ],
+  "inputs": [
+    "Named target architecture",
+    "Migration phases and authorized scope",
+    "Relevant source and available verification tools"
+  ],
+  "kind": "principle",
+  "name": "principle-outcome-oriented-execution",
+  "ordinaryExample": "Migrate a module to the agreed interface in phases, declare temporary caller breakage, check touched code during migration and verify the completed target after removing temporary adapters.",
+  "outputs": [
+    "Migration with declared reversible breakage boundaries, checks for touched areas and full static and runtime verification at completion, or an explicit reduced plan"
+  ],
+  "purpose": "Converge on the intended verifiable migration end state without retaining throwaway compatibility states.",
   "sourcePaths": [
     "skills/principle-outcome-oriented-execution/SKILL.md"
   ],
-  "caseIds": [
-    "migration-end-state"
+  "triggers": [
+    "Planned rewrites and migrations with explicit phase boundaries"
   ]
 }

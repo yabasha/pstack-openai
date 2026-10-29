@@ -1,8 +1,15 @@
 {
-  "id": "grounded-explanation",
-  "sourcePaths": [
-    "skills/teach/SKILL.md"
+  "expectedBlocked": "With no authorized source reads, explain the access gap and request the relevant files instead of inventing subsystem names, mechanisms or rationale. An unavailable required workflow remains an explicit dependency block.",
+  "expectedFull": "The explanation names the real subsystem, grounds its mechanism in inspected files and combines observed how and why results. It preserves confidence language, starts with one or two complete sentences, follows the learner pace and builds applicable diagrams one part at a time.",
+  "expectedReduced": "When direct skill invocation is unavailable, disclose the missing invocation mechanism and read and follow the complete how and why workflows as reduced capability, independently of worker availability. With authorized source reads but unavailable independent workers, perform the how and why workflows sequentially and disclose reduced capability without claiming independent work. If spatial image generation or a display tool is unavailable, disclose that missing capability and use a clearly labelled textual or Mermaid approximation only where it helps. Preserve uncertainty and teaching pace.",
+  "forbiddenClaims": [
+    "Invented file names, mechanisms, rationale or citations.",
+    "Sequential work described as independent workers or full parallel capability.",
+    "Hedges from why removed or inferred rationale presented as confirmed.",
+    "Unavailable image generation, source access or workflow invocation claimed as successful.",
+    "Source changes or host behavioral passes claimed from structural checks."
   ],
+  "id": "grounded-explanation",
   "prompt": "Teach me the supplied subsystem so I understand what it is, how it works and why it was built this way. Use its real names and inspected files. Begin with the smallest complete explanation and deepen it only as the conversation calls for it.",
   "requirements": [
     "Read authorized subsystem files and preserve actual names and source evidence.",
@@ -11,14 +18,7 @@
     "Preserve the definition-first conversational teaching sequence, no quizzes or pacing theater, and incremental diagrams where appropriate.",
     "Use unslop and deliver the explanation itself without changing the subsystem."
   ],
-  "expectedFull": "The explanation names the real subsystem, grounds its mechanism in inspected files and combines observed how and why results. It preserves confidence language, starts with one or two complete sentences, follows the learner pace and builds applicable diagrams one part at a time.",
-  "expectedReduced": "When direct skill invocation is unavailable, disclose the missing invocation mechanism and read and follow the complete how and why workflows as reduced capability, independently of worker availability. With authorized source reads but unavailable independent workers, perform the how and why workflows sequentially and disclose reduced capability without claiming independent work. If spatial image generation or a display tool is unavailable, disclose that missing capability and use a clearly labelled textual or Mermaid approximation only where it helps. Preserve uncertainty and teaching pace.",
-  "expectedBlocked": "With no authorized source reads, explain the access gap and request the relevant files instead of inventing subsystem names, mechanisms or rationale. An unavailable required workflow remains an explicit dependency block.",
-  "forbiddenClaims": [
-    "Invented file names, mechanisms, rationale or citations.",
-    "Sequential work described as independent workers or full parallel capability.",
-    "Hedges from why removed or inferred rationale presented as confirmed.",
-    "Unavailable image generation, source access or workflow invocation claimed as successful.",
-    "Source changes or host behavioral passes claimed from structural checks."
+  "sourcePaths": [
+    "skills/teach/SKILL.md"
   ]
 }

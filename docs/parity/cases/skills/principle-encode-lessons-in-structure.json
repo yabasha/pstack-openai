@@ -1,6 +1,16 @@
 {
+  "expectedBlocked": "If the record format or required revision rule is unavailable, identify those missing inputs and keep any validator proposal provisional. Do not claim implemented enforcement or saved corrections.",
+  "expectedFull": "The response proposes or implements an enforceable source-revision requirement at the strongest feasible layer, with a specific rejection condition and failure example. It routes the recurring correction to a validator or skill, closes the loop through authorized implementation or a concrete todo, and removes the redundant prose warning once enforcement exists. It reports only observed implementation and checks.",
+  "expectedReduced": "If writes, execution or durable persistence are unavailable, provide the concrete validator condition, its integration point and a specific implementation todo as a reduced proposal. State which changes, checks or saves remain unperformed.",
+  "forbiddenClaims": [
+    "Repeating the prose warning alone closes a recurring correction.",
+    "An unimplemented validator enforces the rule.",
+    "A claimed save without write and readback proves persistence.",
+    "Structural package validation proves behavioral parity.",
+    "Invocation metadata proves host enforcement.",
+    "The principle grants authorization for global settings, installs or external actions."
+  ],
   "id": "repeated-rule",
-  "sourcePaths": ["skills/principle-encode-lessons-in-structure/SKILL.md"],
   "prompt": "We have corrected the same mistake twice: generated release records omit the source revision. Apply principle-encode-lessons-in-structure. Replace the repeated prose warning with a concrete validator or structural check, explain where it belongs, and close the correction loop within the available authorization.",
   "requirements": [
     "Propose a concrete validator or structural check that rejects a release record without its source revision instead of repeating a prose warning.",
@@ -9,15 +19,7 @@
     "Delete redundant instructions when a structural fix enforces the rule; retain a prominent instruction and failure example when enforcement requires judgment.",
     "Report implementation, persistence and checks only when authorized and observed."
   ],
-  "expectedFull": "The response proposes or implements an enforceable source-revision requirement at the strongest feasible layer, with a specific rejection condition and failure example. It routes the recurring correction to a validator or skill, closes the loop through authorized implementation or a concrete todo, and removes the redundant prose warning once enforcement exists. It reports only observed implementation and checks.",
-  "expectedReduced": "If writes, execution or durable persistence are unavailable, provide the concrete validator condition, its integration point and a specific implementation todo as a reduced proposal. State which changes, checks or saves remain unperformed.",
-  "expectedBlocked": "If the record format or required revision rule is unavailable, identify those missing inputs and keep any validator proposal provisional. Do not claim implemented enforcement or saved corrections.",
-  "forbiddenClaims": [
-    "Repeating the prose warning alone closes a recurring correction.",
-    "An unimplemented validator enforces the rule.",
-    "A claimed save without write and readback proves persistence.",
-    "Structural package validation proves behavioral parity.",
-    "Invocation metadata proves host enforcement.",
-    "The principle grants authorization for global settings, installs or external actions."
+  "sourcePaths": [
+    "skills/principle-encode-lessons-in-structure/SKILL.md"
   ]
 }

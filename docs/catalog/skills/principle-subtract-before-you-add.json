@@ -1,33 +1,33 @@
 {
-  "name": "principle-subtract-before-you-add",
-  "kind": "principle",
-  "purpose": "Remove obsolete behavior and redundant complexity before adding its replacement, then build on the simpler base.",
-  "triggers": [
-    "Sequencing an addition, refactor or rewrite",
-    "Removing dead code, redundant validators or stub references"
-  ],
-  "inputs": [
-    "Authorized task and inspected source",
-    "Observed usage and specified requirements"
-  ],
-  "outputs": [
-    "Removal before construction, simpler prompts and references, and observed implementation checks when available",
-    "Ordered proposal with explicit limits when writes or execution are unavailable"
-  ],
-  "ordinaryExample": "Inspect callers of an obsolete handler, remove that handler and its redundant validator, then add the specified replacement without speculative guards.",
-  "dependencies": [
-    "references/host-capabilities.md"
-  ],
   "capabilityLimits": [
     "Removal requires source and usage evidence, authorization and writes; checks require observed execution.",
     "Missing writes or execution permit a reduced proposal; missing source blocks safety and completion claims.",
     "Invocation metadata is preserved without assuming host enforcement.",
     "Host behavior has not been tested."
   ],
+  "caseIds": [
+    "dead-path"
+  ],
+  "dependencies": [
+    "references/host-capabilities.md"
+  ],
+  "inputs": [
+    "Authorized task and inspected source",
+    "Observed usage and specified requirements"
+  ],
+  "kind": "principle",
+  "name": "principle-subtract-before-you-add",
+  "ordinaryExample": "Inspect callers of an obsolete handler, remove that handler and its redundant validator, then add the specified replacement without speculative guards.",
+  "outputs": [
+    "Removal before construction, simpler prompts and references, and observed implementation checks when available",
+    "Ordered proposal with explicit limits when writes or execution are unavailable"
+  ],
+  "purpose": "Remove obsolete behavior and redundant complexity before adding its replacement, then build on the simpler base.",
   "sourcePaths": [
     "skills/principle-subtract-before-you-add/SKILL.md"
   ],
-  "caseIds": [
-    "dead-path"
+  "triggers": [
+    "Sequencing an addition, refactor or rewrite",
+    "Removing dead code, redundant validators or stub references"
   ]
 }

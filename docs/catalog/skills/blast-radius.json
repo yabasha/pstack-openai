@@ -1,23 +1,14 @@
 {
-  "name": "blast-radius",
-  "kind": "workflow",
-  "purpose": "Find what a change can break outside the diff and prove the safety fact by running real code.",
-  "triggers": [
-    "blast radius of X",
-    "what could this break",
-    "Reviewing a small diff you do not trust"
+  "capabilityLimits": [
+    "Unavailable diff or caller source blocks a grounded consequence assessment.",
+    "Denied or unavailable execution leaves runtime proof unproven.",
+    "Missing arena workers or model diversity requires disclosed reduced capability.",
+    "Invocation metadata is preserved without claiming host enforcement.",
+    "Host behavior has not been tested."
   ],
-  "inputs": [
-    "Diff and codebase",
-    "Real dependent callers, pinned library source and local patches",
-    "Available history, execution and arena review capabilities"
+  "caseIds": [
+    "dependent-caller"
   ],
-  "outputs": [
-    "What it does; the one fact it is safe because of; risks; cleared; before you merge",
-    "Safety-fact evidence level and runtime proof or explicit unproven status",
-    "Caller citations, risk likelihood and cost, proof output and cheapest test"
-  ],
-  "ordinaryExample": "Review cache invalidation and trace a caller outside the diff through teardown timing, then run the real pinned library to test the safety fact.",
   "dependencies": [
     "skills/how/SKILL.md",
     "skills/why/SKILL.md",
@@ -27,17 +18,26 @@
     "references/model-roles.md",
     "references/orchestration-contract.md"
   ],
-  "capabilityLimits": [
-    "Unavailable diff or caller source blocks a grounded consequence assessment.",
-    "Denied or unavailable execution leaves runtime proof unproven.",
-    "Missing arena workers or model diversity requires disclosed reduced capability.",
-    "Invocation metadata is preserved without claiming host enforcement.",
-    "Host behavior has not been tested."
+  "inputs": [
+    "Diff and codebase",
+    "Real dependent callers, pinned library source and local patches",
+    "Available history, execution and arena review capabilities"
   ],
+  "kind": "workflow",
+  "name": "blast-radius",
+  "ordinaryExample": "Review cache invalidation and trace a caller outside the diff through teardown timing, then run the real pinned library to test the safety fact.",
+  "outputs": [
+    "What it does; the one fact it is safe because of; risks; cleared; before you merge",
+    "Safety-fact evidence level and runtime proof or explicit unproven status",
+    "Caller citations, risk likelihood and cost, proof output and cheapest test"
+  ],
+  "purpose": "Find what a change can break outside the diff and prove the safety fact by running real code.",
   "sourcePaths": [
     "skills/blast-radius/SKILL.md"
   ],
-  "caseIds": [
-    "dependent-caller"
+  "triggers": [
+    "blast radius of X",
+    "what could this break",
+    "Reviewing a small diff you do not trust"
   ]
 }

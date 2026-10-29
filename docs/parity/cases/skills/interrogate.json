@@ -1,28 +1,24 @@
 {
-  "id": "adversarial-review",
-  "sourcePaths": [
-    "skills/interrogate/SKILL.md",
-    "skills/interrogate/references/code-quality-review.md",
-    "skills/interrogate/references/lead-judgment.md",
-    "skills/interrogate/references/reviewer-prompt.md",
-    "skills/interrogate/references/rubric.md"
-  ],
-  "prompt": "Adversarially review the current changes against their stated intent. Challenge correctness and structural quality, then decide which findings warrant action.",
-  "requirements": [
-    "State intent and give every competing reviewer the identical diff, context, rubric and code-quality lens.",
-    "Preserve all rubric lenses, evidence-based findings and pragmatic lead judgment across act on, consider, noted and dismissed categories.",
-    "Report reviewer models, finding counts, independent consensus, lone findings and disagreements in the complete verdict format.",
-    "Verify independent worker results and observed model diversity; disclose sequential review as reduced capability.",
-    "Do not auto-apply changes or create external changes to fix rejected model defaults."
-  ],
-  "expectedFull": "Authorized independent reviewers receive the same template and all rubric/code-quality lenses. The lead deduplicates findings, traces evidence and classifies every finding with attribution and rationale. The verdict includes Intent, Reviewers, Act On, Consider, Noted, Dismissed and Agreement Map, with observed model diversity or its explicit limit.",
-  "expectedReduced": "When independent workers are unavailable, an authorized sequential review applies the complete rubric and lead judgment and labels reduced capability. It does not claim independent agreement or model diversity; unknown actual models remain unknown.",
-  "expectedBlocked": "Unavailable diff or context, or denied review capability, blocks grounded findings. Report the missing source or permission without inventing findings, reviewer execution or agreement.",
+  "expectedBlocked": "Missing scope, unsafe isolation, denied required execution or unavailable reproduction inputs block that gate. Preserve the original checkout and report the missing capability.",
+  "expectedFull": "Independent authorized adversaries reproduce against verified isolated snapshots. The lead reruns each command, retains only failures of the stated intent and reports Intent, Reviewers, Findings and Dropped with exact evidence.",
+  "expectedReduced": "Sequential authorized reproduction or read-only static inspection is explicitly reduced. Unrun observations remain unverified. No verified findings does not prove no bugs.",
   "forbiddenClaims": [
-    "Sequential passes are independent reviewers.",
-    "Requested model names prove actual model diversity.",
-    "The rubric or code-quality lens can be omitted.",
-    "A review authorizes automatic fixes or an external PR.",
-    "Structural checks establish host behavioral parity."
+    "Agreement or static citations establish a reproduced failure.",
+    "A read-only request authorizes repro writes.",
+    "Requested models prove actual diversity.",
+    "Structural checks establish host behavior.",
+    "Review authorizes automatic fixes or external changes."
+  ],
+  "id": "adversarial-review",
+  "prompt": "Review a scoped dirty branch in isolated copies. An adversary supplies a real failing repro, another claim passes on rerun, and one claim cannot run. Repeat with denied writes and unavailable workers.",
+  "requirements": [
+    "Capture and verify the exact base plus scoped staged, unstaged and untracked bytes without changing the original checkout.",
+    "Assign isolated authorized reproduction outputs and inspect terminal worker results; requested models never prove diversity.",
+    "Require actual command, environment, exit code, expected and actual output plus a lead rerun before retaining a verified finding.",
+    "Deduplicate verified failures by root cause and list dropped counts/reasons per adversary.",
+    "Honor read-only requests with a reduced static review and unverified observations, never fabricated runs or automatic fixes."
+  ],
+  "sourcePaths": [
+    "skills/interrogate/SKILL.md"
   ]
 }

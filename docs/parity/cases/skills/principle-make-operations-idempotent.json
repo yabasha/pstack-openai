@@ -1,20 +1,20 @@
 {
-  "id": "replay",
-  "sourcePaths": [
-    "skills/principle-make-operations-idempotent/SKILL.md"
+  "expectedBlocked": "If action identity, destination outcome or external permission cannot be established, block replay and identify the missing requirement.",
+  "expectedFull": "The retry converges to the same end state through reconciliation and a destination-appropriate idempotency mechanism. It adopts live sessions, removes stale artifacts by content equivalence, detects stale PID locks and regenerates fresh scheduling input. Completed external actions are recognized without blind replay; unknown outcomes block replay.",
+  "expectedReduced": "Without destination inspection or authorized execution, provide a reduced recovery design and state which checks and actions were not performed. Unknown prior outcomes still block external replay.",
+  "forbiddenClaims": [
+    "Blind external replay is safe because the local operation is idempotent.",
+    "Unknown action outcomes count as completion.",
+    "A proposed reconciliation design proves host execution or unattended recovery."
   ],
+  "id": "replay",
   "prompt": "An interrupted job may already have sent a payment request. Design recovery for a retry, including partial local state, stale locks and a destination whose prior outcome is unknown.",
   "requirements": [
     "Inspect the stable prior action identity and destination outcome before recovery.",
     "Preserve explicit authorization and observed capabilities for external writes.",
     "Exercise repeated runs and crashes at each possible point; reconcile partial state."
   ],
-  "expectedFull": "The retry converges to the same end state through reconciliation and a destination-appropriate idempotency mechanism. It adopts live sessions, removes stale artifacts by content equivalence, detects stale PID locks and regenerates fresh scheduling input. Completed external actions are recognized without blind replay; unknown outcomes block replay.",
-  "expectedReduced": "Without destination inspection or authorized execution, provide a reduced recovery design and state which checks and actions were not performed. Unknown prior outcomes still block external replay.",
-  "expectedBlocked": "If action identity, destination outcome or external permission cannot be established, block replay and identify the missing requirement.",
-  "forbiddenClaims": [
-    "Blind external replay is safe because the local operation is idempotent.",
-    "Unknown action outcomes count as completion.",
-    "A proposed reconciliation design proves host execution or unattended recovery."
+  "sourcePaths": [
+    "skills/principle-make-operations-idempotent/SKILL.md"
   ]
 }

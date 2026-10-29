@@ -86,18 +86,18 @@ Forbidden claims:
 
 Current host statuses and release evidence: [current parity inventory](../parity/inventory.json), [chatgpt host report](../testing/chatgpt.md), and [codex host report](../testing/codex.md). These records can advance after the source freeze. Structural catalog checks do not establish host support.
 
-### `skills/no-comments/SKILL.md`
-
-Destination: [skills/no-comments/SKILL.md](../../skills/no-comments/SKILL.md).
-
-Upstream commit: `4ec7ffa173eaa70d3d9467a627baf0954645a353`. SHA-256: `078ecfe224eafbb017f6476870612838bf6dbe38c0b697e12f0c887d0313f17e`.
-
-Disposition: `runtime`. Aggregate adaptation status: `adapted-reviewed`.
-
 ### `agents/comment-sicko.md`
 
 Destination: [references/agent-prompts/comment-sicko.md](../../references/agent-prompts/comment-sicko.md).
 
-Upstream commit: `4ec7ffa173eaa70d3d9467a627baf0954645a353`. SHA-256: `3e239e40b7b4b9beb2cf7f3ccc57f2388eb8b69bd1ba8ae888ef87ef6e0e2116`.
+Upstream commit: `c742dd61706fbacc1b95f1a20b7b988cf096ce6c`. SHA-256: `3e239e40b7b4b9beb2cf7f3ccc57f2388eb8b69bd1ba8ae888ef87ef6e0e2116`.
 
 Disposition: `relocated`. Aggregate adaptation status: `adapted-reviewed`.
+
+### `skills/no-comments/SKILL.md`
+
+Destination: [skills/no-comments/SKILL.md](../../skills/no-comments/SKILL.md).
+
+Upstream commit: `c742dd61706fbacc1b95f1a20b7b988cf096ce6c`. SHA-256: `078ecfe224eafbb017f6476870612838bf6dbe38c0b697e12f0c887d0313f17e`.
+
+Disposition: `runtime`. Aggregate adaptation status: `adapted-reviewed`.

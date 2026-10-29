@@ -1,11 +1,15 @@
 {
-  "id": "boundary-design",
-  "sourcePaths": [
-    "skills/architect/SKILL.md",
-    "skills/architect/references/design-red-flags.md",
-    "skills/architect/references/rationale-template.md",
-    "skills/architect/references/runner-prompt.md"
+  "expectedBlocked": "Missing required workflow or authorized source reads block grounded design. Missing exact required model selection or implementation permission remains explicit; do not claim a runner, checkpoint approval or implementation succeeded.",
+  "expectedFull": "Observed authorized independent runners produce two structurally distinct candidates using the runner prompt. Synthesis compares depth and all red flags, records state ownership, selected base, grafts and rejections. Caller usage precedes types and the complete rationale accompanies the sketch. Implementation follows the sketch within authorization; explicit checkpoint pauses before implementation.",
+  "expectedReduced": "Without workers, label sequential alternatives as reduced capability, use the complete arena workflow and runner discipline for two distinct alternatives and preserve comparison, ownership and full rationale. Missing direct invocation uses disclosed complete-workflow execution. Unverified or identical observed models cannot support model diversity. Denied writes permit a read-only sketch with an explicit implementation block.",
+  "forbiddenClaims": [
+    "Sequential alternatives described as independent workers.",
+    "Requested models or upstream defaults described as observed model diversity.",
+    "Unsupported runner aliases or tool names claimed usable.",
+    "Invented grounding, rationale, approvals or implementation success.",
+    "Structural checks described as host behavioral pass."
   ],
+  "id": "boundary-design",
   "prompt": "Architect a supplied stateful subsystem change. Compare at least two structurally distinct designs, show caller usage before types, ownership and rationale. Then implement within my authorized scope; with unavailable workers label sequential alternatives.",
   "requirements": [
     "Ground with how and why when ownership or layering changes; skip only genuine greenfield.",
@@ -14,14 +18,10 @@
     "Honor opt-in checkpoint, authorized implementation, deviation signals and scrap/reground/re-explore cycle.",
     "Observe independent workers and actual model diversity or disclose their limits; preserve model selection rejections and aliases."
   ],
-  "expectedFull": "Observed authorized independent runners produce two structurally distinct candidates using the runner prompt. Synthesis compares depth and all red flags, records state ownership, selected base, grafts and rejections. Caller usage precedes types and the complete rationale accompanies the sketch. Implementation follows the sketch within authorization; explicit checkpoint pauses before implementation.",
-  "expectedReduced": "Without workers, label sequential alternatives as reduced capability, use the complete arena workflow and runner discipline for two distinct alternatives and preserve comparison, ownership and full rationale. Missing direct invocation uses disclosed complete-workflow execution. Unverified or identical observed models cannot support model diversity. Denied writes permit a read-only sketch with an explicit implementation block.",
-  "expectedBlocked": "Missing required workflow or authorized source reads block grounded design. Missing exact required model selection or implementation permission remains explicit; do not claim a runner, checkpoint approval or implementation succeeded.",
-  "forbiddenClaims": [
-    "Sequential alternatives described as independent workers.",
-    "Requested models or upstream defaults described as observed model diversity.",
-    "Unsupported runner aliases or tool names claimed usable.",
-    "Invented grounding, rationale, approvals or implementation success.",
-    "Structural checks described as host behavioral pass."
+  "sourcePaths": [
+    "skills/architect/SKILL.md",
+    "skills/architect/references/design-red-flags.md",
+    "skills/architect/references/rationale-template.md",
+    "skills/architect/references/runner-prompt.md"
   ]
 }

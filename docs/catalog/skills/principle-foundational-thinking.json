@@ -1,34 +1,34 @@
 {
-  "name": "principle-foundational-thinking",
-  "kind": "principle",
-  "purpose": "Choose core data, access patterns and ownership before logic; sequence foundations so later work stays simple.",
-  "triggers": [
-    "Choosing core types and data structures before logic",
-    "Sequencing infrastructure and feature work",
-    "Considering state shared by concurrent actors"
-  ],
-  "inputs": [
-    "Authorized task and relevant source",
-    "Required behavior and dominant access patterns",
-    "Concurrent actors and state ownership"
-  ],
-  "outputs": [
-    "Core data and ownership design, coherent work sequence, and actual implementation checks when authorized and available"
-  ],
-  "ordinaryExample": "Before building a job queue, define job state and worker ownership, trace claim and status queries, and isolate concurrently mutable state.",
-  "dependencies": [
-    "references/host-capabilities.md"
-  ],
   "capabilityLimits": [
     "Source inspection requires available inputs; edits require authorization and writes; checks require observed execution.",
     "Unavailable writes or execution permit a reduced design proposal; missing source keeps designs provisional.",
     "Preserve disable-model-invocation metadata without assuming host enforcement.",
     "Host behavior has not been tested."
   ],
+  "caseIds": [
+    "shape-first"
+  ],
+  "dependencies": [
+    "references/host-capabilities.md"
+  ],
+  "inputs": [
+    "Authorized task and relevant source",
+    "Required behavior and dominant access patterns",
+    "Concurrent actors and state ownership"
+  ],
+  "kind": "principle",
+  "name": "principle-foundational-thinking",
+  "ordinaryExample": "Before building a job queue, define job state and worker ownership, trace claim and status queries, and isolate concurrently mutable state.",
+  "outputs": [
+    "Core data and ownership design, coherent work sequence, and actual implementation checks when authorized and available"
+  ],
+  "purpose": "Choose core data, access patterns and ownership before logic; sequence foundations so later work stays simple.",
   "sourcePaths": [
     "skills/principle-foundational-thinking/SKILL.md"
   ],
-  "caseIds": [
-    "shape-first"
+  "triggers": [
+    "Choosing core types and data structures before logic",
+    "Sequencing infrastructure and feature work",
+    "Considering state shared by concurrent actors"
   ]
 }

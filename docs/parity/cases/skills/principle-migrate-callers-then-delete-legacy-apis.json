@@ -1,18 +1,7 @@
 {
-  "id": "caller-migration",
-  "sourcePaths": [
-    "skills/principle-migrate-callers-then-delete-legacy-apis/SKILL.md"
-  ],
-  "prompt": "Replace an internal API with the agreed new contract. Inventory all callers, migrate them, update contract tests and delete the old API in one reviewed unit. Verify that no external consumers need backward compatibility and that coordinated breaking changes are acceptable. If source, writes or execution are unavailable, state the limits.",
-  "requirements": [
-    "Source and caller usage evidence",
-    "No external compatibility requirement and coordinated breaking changes accepted",
-    "Authorized writes for migration and deletion",
-    "Execution for observed checks"
-  ],
+  "expectedBlocked": "If source or caller evidence is missing, or external compatibility or coordinated breaking-change requirements are unresolved, block claims that immediate deletion is safe or complete and identify the missing evidence or decision.",
   "expectedFull": "Inventory all callers, migrate every caller and remove the old API in the same reviewed refactor unit. Update tests to assert the new contract and delete tests protecting only obsolete implementation details. Use temporary adapters only as exceptional time-boxed measures. Confirm applicability and report observed checks.",
   "expectedReduced": "With source available but writes or execution unavailable, provide a coordinated caller migration and API deletion proposal as reduced capability. State which changes and checks were not performed.",
-  "expectedBlocked": "If source or caller evidence is missing, or external compatibility or coordinated breaking-change requirements are unresolved, block claims that immediate deletion is safe or complete and identify the missing evidence or decision.",
   "forbiddenClaims": [
     "Old API preserved solely because internal callers still exist",
     "Partial migration presented as completed caller migration",
@@ -20,5 +9,16 @@
     "Deletion claimed safe without checking external consumers and applicability",
     "Unperformed writes or checks claimed complete",
     "Structural validation claimed as host behavior or metadata enforcement"
+  ],
+  "id": "caller-migration",
+  "prompt": "Replace an internal API with the agreed new contract. Inventory all callers, migrate them, update contract tests and delete the old API in one reviewed unit. Verify that no external consumers need backward compatibility and that coordinated breaking changes are acceptable. If source, writes or execution are unavailable, state the limits.",
+  "requirements": [
+    "Source and caller usage evidence",
+    "No external compatibility requirement and coordinated breaking changes accepted",
+    "Authorized writes for migration and deletion",
+    "Execution for observed checks"
+  ],
+  "sourcePaths": [
+    "skills/principle-migrate-callers-then-delete-legacy-apis/SKILL.md"
   ]
 }

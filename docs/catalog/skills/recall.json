@@ -1,26 +1,14 @@
 {
-  "name": "recall",
-  "kind": "workflow",
-  "purpose": "Reconstruct scoped recent working context from history, shared records and independently checked live state.",
-  "triggers": [
-    "recall my work on X",
-    "catch me up",
-    "what have I been working on",
-    "where did I leave off",
-    "before starting or resuming work"
+  "capabilityLimits": [
+    "History layout and UUID availability depend on observed host tools.",
+    "Independent parallel mining requires authorized exposed workers; sequential passes are reduced capability.",
+    "Unavailable live reads block affected status claims even with a complete capsule.",
+    "session-pickup and automate-me are present and reviewed. Actual history access and baseline acceptance gates still apply.",
+    "Host behavior has not been tested."
   ],
-  "inputs": [
-    "Topic, workspace and exact time range",
-    "Complete or partial supplied capsule",
-    "Authorized history, shared sources and current-state reads"
+  "caseIds": [
+    "scoped-history"
   ],
-  "outputs": [
-    "Capsule with at most five bullets",
-    "Every evidenced thread with one permitted status tag",
-    "At most five recurring problems and one concrete next action",
-    "Cited history and shared records with explicit access gaps"
-  ],
-  "ordinaryExample": "Recall seven days of cache work in the active workspace, use a complete supplied capsule first, sweep prior incidents and verify the current branch and PR state.",
   "dependencies": [
     "references/host-capabilities.md",
     "references/model-roles.md",
@@ -31,17 +19,29 @@
     "skills/poteto-mode/playbooks/session-pickup.md",
     "skills/automate-me/SKILL.md"
   ],
-  "capabilityLimits": [
-    "History layout and UUID availability depend on observed host tools.",
-    "Independent parallel mining requires authorized exposed workers; sequential passes are reduced capability.",
-    "Unavailable live reads block affected status claims even with a complete capsule.",
-    "session-pickup and automate-me are present and reviewed. Actual history access and baseline acceptance gates still apply.",
-    "Host behavior has not been tested."
+  "inputs": [
+    "Topic, workspace and exact time range",
+    "Complete or partial supplied capsule",
+    "Authorized history, shared sources and current-state reads"
   ],
+  "kind": "workflow",
+  "name": "recall",
+  "ordinaryExample": "Recall seven days of cache work in the active workspace, use a complete supplied capsule first, sweep prior incidents and verify the current branch and PR state.",
+  "outputs": [
+    "Capsule with at most five bullets",
+    "Every evidenced thread with one permitted status tag",
+    "At most five recurring problems and one concrete next action",
+    "Cited history and shared records with explicit access gaps"
+  ],
+  "purpose": "Reconstruct scoped recent working context from history, shared records and independently checked live state.",
   "sourcePaths": [
     "skills/recall/SKILL.md"
   ],
-  "caseIds": [
-    "scoped-history"
+  "triggers": [
+    "recall my work on X",
+    "catch me up",
+    "what have I been working on",
+    "where did I leave off",
+    "before starting or resuming work"
   ]
 }

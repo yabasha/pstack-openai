@@ -1,33 +1,33 @@
 {
-  "name": "principle-model-the-domain",
-  "kind": "principle",
-  "purpose": "Encode domain rules in concrete structures that remove invalid states, repeated assumptions and scattered branches.",
-  "triggers": [
-    "Writing stateful logic",
-    "Branches or repeated shape assumptions spread across files",
-    "Phase-named modules repeat domain rules"
-  ],
-  "inputs": [
-    "Authorized task and relevant source",
-    "Domain invariants, transitions and access patterns"
-  ],
-  "outputs": [
-    "Concrete domain structure and valid state transitions with explained invariants; implementation and observed checks when authorized and available"
-  ],
-  "ordinaryExample": "Replace queued, running and completed job booleans with states carrying worker IDs or results and explicit allowed transitions.",
-  "dependencies": [
-    "references/host-capabilities.md"
-  ],
   "capabilityLimits": [
     "Missing source or domain rules keep the design provisional.",
     "Unavailable writes or execution allow a reduced proposal with unperformed checks stated.",
     "Preserve disable-model-invocation metadata without assuming host enforcement.",
     "Host behavior has not been tested."
   ],
+  "caseIds": [
+    "state-shape"
+  ],
+  "dependencies": [
+    "references/host-capabilities.md"
+  ],
+  "inputs": [
+    "Authorized task and relevant source",
+    "Domain invariants, transitions and access patterns"
+  ],
+  "kind": "principle",
+  "name": "principle-model-the-domain",
+  "ordinaryExample": "Replace queued, running and completed job booleans with states carrying worker IDs or results and explicit allowed transitions.",
+  "outputs": [
+    "Concrete domain structure and valid state transitions with explained invariants; implementation and observed checks when authorized and available"
+  ],
+  "purpose": "Encode domain rules in concrete structures that remove invalid states, repeated assumptions and scattered branches.",
   "sourcePaths": [
     "skills/principle-model-the-domain/SKILL.md"
   ],
-  "caseIds": [
-    "state-shape"
+  "triggers": [
+    "Writing stateful logic",
+    "Branches or repeated shape assumptions spread across files",
+    "Phase-named modules repeat domain rules"
   ]
 }

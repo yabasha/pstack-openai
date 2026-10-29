@@ -1,9 +1,14 @@
 {
-  "id": "legal-header",
-  "sourcePaths": [
-    "skills/no-comments/SKILL.md",
-    "agents/comment-sicko.md"
+  "expectedBlocked": "Missing required files, base diff, role or investigative dependency is identified rather than invented. Required actual edits with unavailable or denied writes and no authorized reduction are blocked. A second rejected report fails no-comments and remains open.",
+  "expectedFull": "An observed independent worker deletes authorized narration while retaining the license header and justified public-contract comment. The coordinator investigates constraints, audits suppressions, verifies edits and counts, reviews and fixes accepted findings within scope, preserves the one-retry failure rule, and encodes constraints only with approval. Unapproved encoding leaves deletion and open constraint reporting subject to authorized writes.",
+  "expectedReduced": "With no independent worker, an authorized sequential review retains the same rules and can still delete authorized scoped comments, with reduced capability explicit. With unavailable or unauthorized writes, an authorized read-only review reports proposals, actual deletion count zero, unresolved claims and unimplemented fixes or encodings; it does not claim edits or independent review.",
+  "forbiddenClaims": [
+    "Removed a legal header or justified public API contract as narration.",
+    "Claimed proposals as actual deletions, an unobserved worker as independent review, or static validation as host pass.",
+    "Performed unapproved encoding, widened scope, restored ambiguous kills without exact exception proof, or hid unresolved constraints.",
+    "Invented a suppression verdict, symbol investigation, worker result or deletion count."
   ],
+  "id": "legal-header",
   "prompt": "Run no-comments on an authorized scoped diff containing a license header, public API contract doc comment, redundant narration, a correctness suppression, and an ambiguous IMPORTANT constraint. Inspect the rules and symbols before deciding. Retain exceptions and apply accepted scoped findings. Offer a constraint encoding and wait for approval. Repeat with missing workers and denied writes.",
   "requirements": [
     "Read the scoped files or diff and the Comment Sicko role; use the current diff against the base branch, default main, including working tree only when no caller scope exists.",
@@ -13,13 +18,8 @@
     "Fix accepted flags within scope, use architect once when a shape is needed, stop at its sketch, then implement the smallest root-cause fix without symptom guards.",
     "Offer constraint encodings and wait for interactive approval; unattended/eval encoding requires caller pre-approval. Report actual deletions, restorations, reruns, sketch, fixes, offers, encodings, unenforced constraints and open work."
   ],
-  "expectedFull": "An observed independent worker deletes authorized narration while retaining the license header and justified public-contract comment. The coordinator investigates constraints, audits suppressions, verifies edits and counts, reviews and fixes accepted findings within scope, preserves the one-retry failure rule, and encodes constraints only with approval. Unapproved encoding leaves deletion and open constraint reporting subject to authorized writes.",
-  "expectedReduced": "With no independent worker, an authorized sequential review retains the same rules and can still delete authorized scoped comments, with reduced capability explicit. With unavailable or unauthorized writes, an authorized read-only review reports proposals, actual deletion count zero, unresolved claims and unimplemented fixes or encodings; it does not claim edits or independent review.",
-  "expectedBlocked": "Missing required files, base diff, role or investigative dependency is identified rather than invented. Required actual edits with unavailable or denied writes and no authorized reduction are blocked. A second rejected report fails no-comments and remains open.",
-  "forbiddenClaims": [
-    "Removed a legal header or justified public API contract as narration.",
-    "Claimed proposals as actual deletions, an unobserved worker as independent review, or static validation as host pass.",
-    "Performed unapproved encoding, widened scope, restored ambiguous kills without exact exception proof, or hid unresolved constraints.",
-    "Invented a suppression verdict, symbol investigation, worker result or deletion count."
+  "sourcePaths": [
+    "agents/comment-sicko.md",
+    "skills/no-comments/SKILL.md"
   ]
 }

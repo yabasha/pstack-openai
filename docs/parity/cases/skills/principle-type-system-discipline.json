@@ -1,20 +1,20 @@
 {
-  "id": "invalid-state",
-  "sourcePaths": [
-    "skills/principle-type-system-discipline/SKILL.md"
-  ],
-  "prompt": "Review a typed task model { completed: boolean; completedAt?: Date }, interchangeable UserId and OrderId strings, an unchecked JSON payload, and a switch over task states. Make invalid typed states unrepresentable or identify the actual language limit. Explain where a non-empty list is needed for head and why sum can keep a plain list.",
-  "requirements": [
-    "Inspect the model and relevant language/compiler constraints.",
-    "Use authorized file access and compiler execution when available; do not install tools incidentally."
-  ],
+  "expectedBlocked": "If the relevant language or source cannot be established sufficiently to assess the invariant, report the missing inputs or denied capability and leave the result unverified.",
   "expectedFull": "Replace contradictory optional fields with explicit open and done variants or one authoritative completion value. Construct constrained values, brand semantic IDs, parse external data at boundaries, avoid unsupported casts, require exhaustive handling, and derive types from owned schemas where available. Strengthen types where an operation is partial, keeping total sum on plain lists. Verify with the available compiler that an invalid state or missing variant fails, or identify the actual language limit and the remaining validation requirement.",
   "expectedReduced": "When source, writes, or compiler execution are unavailable, provide the proposed typed model and explain actual language limits. State which invalid states the construction excludes, which checks remain runtime checks, and which edits or compiler checks were not performed.",
-  "expectedBlocked": "If the relevant language or source cannot be established sufficiently to assess the invariant, report the missing inputs or denied capability and leave the result unverified.",
   "forbiddenClaims": [
     "An unchecked cast proves validity.",
     "Every language can encode every invariant.",
     "A proposed type model or structural package check proves compiler rejection or host behavior.",
     "Unavailable writes or checks succeeded."
+  ],
+  "id": "invalid-state",
+  "prompt": "Review a typed task model { completed: boolean; completedAt?: Date }, interchangeable UserId and OrderId strings, an unchecked JSON payload, and a switch over task states. Make invalid typed states unrepresentable or identify the actual language limit. Explain where a non-empty list is needed for head and why sum can keep a plain list.",
+  "requirements": [
+    "Inspect the model and relevant language/compiler constraints.",
+    "Use authorized file access and compiler execution when available; do not install tools incidentally."
+  ],
+  "sourcePaths": [
+    "skills/principle-type-system-discipline/SKILL.md"
   ]
 }

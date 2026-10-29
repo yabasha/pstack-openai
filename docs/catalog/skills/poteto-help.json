@@ -1,21 +1,15 @@
 {
-  "name": "poteto-help",
-  "kind": "skill",
-  "purpose": "Answer pstack setup and workflow questions with one usable prompt and its source.",
-  "triggers": [
-    "/poteto-help",
-    "A question about pstack setup, skills, playbooks, principles or run recovery"
+  "capabilityLimits": [
+    "Pending playbooks require final integration review.",
+    "Cursor installation, modes, rule files and loop facilities do not register portable runtime behavior.",
+    "Workers, model panels, history and proof require observed support.",
+    "Help questions do not authorize execution.",
+    "Both hosts remain not-run.",
+    "Explain source customization options when asked, but do not act on personal-mode drafting or custom skill edits until every baseline inventory disposition is reviewed and each host has observed evidence for supported behavior or an explicit block. User authorization is a separate requirement and does not satisfy this baseline prerequisite."
   ],
-  "inputs": [
-    "User question and conversation context",
-    "Selected local route and observed host capabilities"
+  "caseIds": [
+    "route-recipe"
   ],
-  "outputs": [
-    "Direct answer",
-    "At most one example prompt and a source link",
-    "Explicit missing or pending capability and dependency limits"
-  ],
-  "ordinaryExample": "For a question about reproducing an app bug, read the Bug fix playbook, provide its reproduction and verification recipe, and disclose missing app verification support without starting work.",
   "dependencies": [
     "skills/poteto-mode/SKILL.md",
     "references/host-capabilities.md",
@@ -59,20 +53,26 @@
     "docs/guide/09-make-it-yours.md",
     "skills/poteto-help/references/recipes.md"
   ],
-  "capabilityLimits": [
-    "Pending playbooks require final integration review.",
-    "Cursor installation, modes, rule files and loop facilities do not register portable runtime behavior.",
-    "Workers, model panels, history and proof require observed support.",
-    "Help questions do not authorize execution.",
-    "Both hosts remain not-run.",
-    "Explain source customization options when asked, but do not act on personal-mode drafting or custom skill edits until every baseline inventory disposition is reviewed and each host has observed evidence for supported behavior or an explicit block. User authorization is a separate requirement and does not satisfy this baseline prerequisite."
+  "inputs": [
+    "User question and conversation context",
+    "Selected local route and observed host capabilities"
   ],
+  "kind": "skill",
+  "name": "poteto-help",
+  "ordinaryExample": "For a question about reproducing an app bug, read the Bug fix playbook, provide its reproduction and verification recipe, and disclose missing app verification support without starting work.",
+  "outputs": [
+    "Direct answer",
+    "At most one example prompt and a source link",
+    "Explicit missing or pending capability and dependency limits"
+  ],
+  "purpose": "Answer pstack setup and workflow questions with one usable prompt and its source.",
   "sourcePaths": [
     "skills/poteto-help/SKILL.md",
     "skills/poteto-help/references/prompting.md",
     "skills/poteto-help/references/recipes.md"
   ],
-  "caseIds": [
-    "route-recipe"
+  "triggers": [
+    "/poteto-help",
+    "A question about pstack setup, skills, playbooks, principles or run recovery"
   ]
 }

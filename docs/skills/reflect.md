@@ -90,7 +90,7 @@ Current host statuses and release evidence: [current parity inventory](../parity
 
 Destination: [skills/reflect/SKILL.md](../../skills/reflect/SKILL.md).
 
-Upstream commit: `4ec7ffa173eaa70d3d9467a627baf0954645a353`. SHA-256: `1f5a8c246cdee8251f8667d85bd5d97f6c2801f505843c26ddbd6c621632519b`.
+Upstream commit: `c742dd61706fbacc1b95f1a20b7b988cf096ce6c`. SHA-256: `9648df23cabaae99b78ed59cd93b6f35ebbf02105d228e3d0b5c3a3b3419d753`.
 
 Disposition: `runtime`. Aggregate adaptation status: `adapted-reviewed`.
 
@@ -98,7 +98,7 @@ Disposition: `runtime`. Aggregate adaptation status: `adapted-reviewed`.
 
 Destination: [skills/reflect/references/divergent-reviewer.md](../../skills/reflect/references/divergent-reviewer.md).
 
-Upstream commit: `4ec7ffa173eaa70d3d9467a627baf0954645a353`. SHA-256: `f6030d88e20e906ef5e2d9ba44cb013ce610c49c2fe2ef74c377d32e0dc9e939`.
+Upstream commit: `c742dd61706fbacc1b95f1a20b7b988cf096ce6c`. SHA-256: `f6030d88e20e906ef5e2d9ba44cb013ce610c49c2fe2ef74c377d32e0dc9e939`.
 
 Disposition: `runtime`. Aggregate adaptation status: `adapted-reviewed`.
 
@@ -106,7 +106,7 @@ Disposition: `runtime`. Aggregate adaptation status: `adapted-reviewed`.
 
 Destination: [skills/reflect/references/judgment-reviewer.md](../../skills/reflect/references/judgment-reviewer.md).
 
-Upstream commit: `4ec7ffa173eaa70d3d9467a627baf0954645a353`. SHA-256: `38f917619fbf346062d643e0ad6b12fc952d58678dfcbbf42ffcf6d8b9c08307`.
+Upstream commit: `c742dd61706fbacc1b95f1a20b7b988cf096ce6c`. SHA-256: `38f917619fbf346062d643e0ad6b12fc952d58678dfcbbf42ffcf6d8b9c08307`.
 
 Disposition: `runtime`. Aggregate adaptation status: `adapted-reviewed`.
 
@@ -114,7 +114,7 @@ Disposition: `runtime`. Aggregate adaptation status: `adapted-reviewed`.
 
 Destination: [skills/reflect/references/synthesizer.md](../../skills/reflect/references/synthesizer.md).
 
-Upstream commit: `4ec7ffa173eaa70d3d9467a627baf0954645a353`. SHA-256: `6af816963de74d1a1aef4070273c1ff533d2072732e488e159ddc0b299fec3cd`.
+Upstream commit: `c742dd61706fbacc1b95f1a20b7b988cf096ce6c`. SHA-256: `6af816963de74d1a1aef4070273c1ff533d2072732e488e159ddc0b299fec3cd`.
 
 Disposition: `runtime`. Aggregate adaptation status: `adapted-reviewed`.
 
@@ -122,6 +122,6 @@ Disposition: `runtime`. Aggregate adaptation status: `adapted-reviewed`.
 
 Destination: [skills/reflect/references/tooling-reviewer.md](../../skills/reflect/references/tooling-reviewer.md).
 
-Upstream commit: `4ec7ffa173eaa70d3d9467a627baf0954645a353`. SHA-256: `f81b8697e7366fbbc18feba52c6e3253a101f751091364ebc4396a1d9b5753b4`.
+Upstream commit: `c742dd61706fbacc1b95f1a20b7b988cf096ce6c`. SHA-256: `f81b8697e7366fbbc18feba52c6e3253a101f751091364ebc4396a1d9b5753b4`.
 
 Disposition: `runtime`. Aggregate adaptation status: `adapted-reviewed`.

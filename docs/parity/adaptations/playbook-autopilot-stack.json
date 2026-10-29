@@ -27,10 +27,10 @@
       "license": "MIT",
       "sourcePath": "LICENSE"
     },
-    "rationale": "Adopt dependency branching, root-only topology, explicit lease handoff, shared review cadence, frozen landing chain and ketchup without granting merge authority.",
-    "upstreamCommit": "4ec7ffa173eaa70d3d9467a627baf0954645a353",
+    "rationale": "Reuse the reviewed portable adaptation and incorporate PR986 review/model/workflow semantics plus PR1043 compatibility decisions. Preserve host capability, model, ownership, fallback, persistence and user-authorization contracts. Deferred unrelated behavior remains explicit.",
+    "upstreamCommit": "c742dd61706fbacc1b95f1a20b7b988cf096ce6c",
     "upstreamPath": "skills/poteto-mode/playbooks/autopilot-stack.md",
-    "upstreamSha256": "c6bcb18b2ce605e77a2a2225854590a4b9a687911f79331746d91a4fe9a52e60",
+    "upstreamSha256": "34de4bb101dd56524d8067c73bba5988ead6f93d3ab8f96ac13a6adcb43696cb",
     "verification": {
       "chatgpt": {
         "evidence": [],

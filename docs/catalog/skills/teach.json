@@ -1,30 +1,4 @@
 {
-  "name": "teach",
-  "kind": "workflow",
-  "purpose": "Explain what a body of work is, how it works and why it was built that way at the learner pace, grounded in inspected files.",
-  "triggers": [
-    "teach me this",
-    "help me really understand X",
-    "explain this change or subsystem to me"
-  ],
-  "inputs": [
-    "Supplied subsystem or change and authorized source reads",
-    "Conversation context about intent and existing knowledge",
-    "Observed workflow, worker, display and image-generation capabilities"
-  ],
-  "outputs": [
-    "The explanation itself, starting with the smallest complete answer",
-    "Actual subsystem names and evidence, preserved why confidence language and conversational deeper layers",
-    "Incremental diagrams when useful, explicit capability and source gaps"
-  ],
-  "ordinaryExample": "Explain a supplied chat virtualization subsystem using its actual rendering and loading code, then layer in the reasons and edge cases as requested.",
-  "dependencies": [
-    "skills/how/SKILL.md",
-    "skills/why/SKILL.md",
-    "skills/unslop/SKILL.md",
-    "references/host-capabilities.md",
-    "references/orchestration-contract.md"
-  ],
   "capabilityLimits": [
     "Unavailable direct invocation requires disclosed complete-workflow execution as reduced capability, even with independent workers available.",
     "Unavailable independent workers require sequential reduced capability.",
@@ -33,10 +7,36 @@
     "Invocation metadata is retained without assuming host enforcement.",
     "Host behavior has not been tested."
   ],
+  "caseIds": [
+    "grounded-explanation"
+  ],
+  "dependencies": [
+    "skills/how/SKILL.md",
+    "skills/why/SKILL.md",
+    "skills/unslop/SKILL.md",
+    "references/host-capabilities.md",
+    "references/orchestration-contract.md"
+  ],
+  "inputs": [
+    "Supplied subsystem or change and authorized source reads",
+    "Conversation context about intent and existing knowledge",
+    "Observed workflow, worker, display and image-generation capabilities"
+  ],
+  "kind": "workflow",
+  "name": "teach",
+  "ordinaryExample": "Explain a supplied chat virtualization subsystem using its actual rendering and loading code, then layer in the reasons and edge cases as requested.",
+  "outputs": [
+    "The explanation itself, starting with the smallest complete answer",
+    "Actual subsystem names and evidence, preserved why confidence language and conversational deeper layers",
+    "Incremental diagrams when useful, explicit capability and source gaps"
+  ],
+  "purpose": "Explain what a body of work is, how it works and why it was built that way at the learner pace, grounded in inspected files.",
   "sourcePaths": [
     "skills/teach/SKILL.md"
   ],
-  "caseIds": [
-    "grounded-explanation"
+  "triggers": [
+    "teach me this",
+    "help me really understand X",
+    "explain this change or subsystem to me"
   ]
 }

@@ -1,25 +1,4 @@
 {
-  "name": "technical-writing",
-  "kind": "skill",
-  "purpose": "Write or review clear technical documents using Diátaxis, Google developer style, STE instruction rules, and Global English syntax.",
-  "triggers": [
-    "/technical-writing",
-    "Writing or reviewing docs, RFCs, readmes, PR descriptions, or commit messages."
-  ],
-  "inputs": [
-    "The actual document text and its intended purpose.",
-    "Real codebase symbols, paths, flags, commands, and facts.",
-    "The unslop skill."
-  ],
-  "outputs": [
-    "A document or review that preserves named symbols and facts, removes filler, and applies all four layers. PR descriptions and commit messages skip Diátaxis as the leaf requires.",
-    "A proposed diff for any new abstract-metaphor offender and replacement; do not edit unslop."
-  ],
-  "ordinaryExample": "Rewrite a how-to about budget.mjs and budget.json while keeping the lower-only --write rule and CI failure condition.",
-  "dependencies": [
-    "skills/unslop/SKILL.md",
-    "references/host-capabilities.md"
-  ],
   "capabilityLimits": [
     "Missing document input blocks review; unavailable unslop makes the review partial.",
     "Unavailable or denied document writes allow a proposed rewrite in the conversation without a save claim.",
@@ -27,10 +6,31 @@
     "Preserve disable-model-invocation metadata without assuming host enforcement.",
     "Host behavior has not been tested."
   ],
+  "caseIds": [
+    "dense-doc"
+  ],
+  "dependencies": [
+    "skills/unslop/SKILL.md",
+    "references/host-capabilities.md"
+  ],
+  "inputs": [
+    "The actual document text and its intended purpose.",
+    "Real codebase symbols, paths, flags, commands, and facts.",
+    "The unslop skill."
+  ],
+  "kind": "skill",
+  "name": "technical-writing",
+  "ordinaryExample": "Rewrite a how-to about budget.mjs and budget.json while keeping the lower-only --write rule and CI failure condition.",
+  "outputs": [
+    "A document or review that preserves named symbols and facts, removes filler, and applies all four layers. PR descriptions and commit messages skip Di\u00e1taxis as the leaf requires.",
+    "A proposed diff for any new abstract-metaphor offender and replacement; do not edit unslop."
+  ],
+  "purpose": "Write or review clear technical documents using Di\u00e1taxis, Google developer style, STE instruction rules, and Global English syntax.",
   "sourcePaths": [
     "skills/technical-writing/SKILL.md"
   ],
-  "caseIds": [
-    "dense-doc"
+  "triggers": [
+    "/technical-writing",
+    "Writing or reviewing docs, RFCs, readmes, PR descriptions, or commit messages."
   ]
 }

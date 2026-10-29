@@ -32,7 +32,7 @@ These labels are targets, not a claim that the host supports those efforts. Set 
 
 Show every role and its requested model and effort. Mark unsupported choices as needing a choice; actual values remain unknown until observed. Show retired lines removed from the proposal. Ask whether to accept the table or change specific roles, offering only verified models plus the inherited aliases.
 
-Panel roles are lists: arena runners, architect runners, and interrogate reviewers run one worker per entry, including aliases, so list length sets fan-out. The arena cross-judge pool is a list from which Arena chooses one entry whose family differs from the parent when possible. Unknown families leave diversity unverified. Swarm workers is the default for each worker unless a race or comparison assigns a model per arm. Worker count and independence still require observed host dispatch under the assignment contract.
+Panel roles are lists: arena runners, architect runners, and interrogate reviewers run one worker per entry, including aliases, so list length sets fan-out. Omit the arena cross-judge pool line when no supported explicit choices are available. Add it only with verified real entries, ordered by preference. Arena uses only a family different from the parent's. An auto or inherit-parent alias never judges. If no supported different-family selection runs, Arena skips the judge and reports parent-only selection as reduced capability. Unknown observed families leave the family gate unverified. Swarm workers is the default for each worker unless a race or comparison assigns a model per arm. Worker count and independence still require observed host dispatch under the assignment contract.
 
 ## 4. Validate
 
@@ -60,7 +60,6 @@ why synthesizer: inherit-parent
 reflect tooling: inherit-parent
 reflect judgment, divergent, synthesizer: inherit-parent
 arena runners: inherit-parent, inherit-parent
-arena cross-judge pool: inherit-parent, inherit-parent
 swarm workers: inherit-parent
 architect runners: inherit-parent, inherit-parent
 interrogate reviewers: inherit-parent, inherit-parent

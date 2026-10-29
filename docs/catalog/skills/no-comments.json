@@ -1,19 +1,13 @@
 {
-  "name": "no-comments",
-  "kind": "skill",
-  "purpose": "Spawn Comment Sicko, fix accepted findings, and offer encodings for claimed constraints.",
-  "triggers": [
-    "Explicit no-comments invocation; disable-model-invocation metadata is retained without assuming host enforcement."
+  "capabilityLimits": [
+    "Missing independent workers allows authorized sequential review as reduced capability, including authorized scoped edits.",
+    "Unavailable or unauthorized writes allows an authorized read-only proposal report with actual deletion count zero; required edits otherwise block.",
+    "Required investigation needs scoped code, rules and how or why; unavailable evidence remains a skip.",
+    "Unattended/eval encoding requires caller pre-approval. Host behavior has not been tested."
   ],
-  "inputs": [
-    "Caller-scoped files or diff, otherwise current diff against the base branch, default main, including working tree.",
-    "Authorization for scoped comment deletions and accepted fixes; separate approval for constraint encodings."
+  "caseIds": [
+    "legal-header"
   ],
-  "outputs": [
-    "Scoped comment deletions and accepted root-cause fixes when authorized.",
-    "Report deletion count, restored comments, reruns, architect sketch, fixes, encoding offers, encodings, unenforced constraints and other open work."
-  ],
-  "ordinaryExample": "Invoke no-comments on an authorized diff to remove redundant narration while retaining its license header and justified public API contract.",
   "dependencies": [
     "references/agent-prompts/comment-sicko.md",
     "references/host-capabilities.md",
@@ -26,17 +20,23 @@
     "skills/principle-fix-root-causes/SKILL.md",
     "skills/principle-redesign-from-first-principles/SKILL.md"
   ],
-  "capabilityLimits": [
-    "Missing independent workers allows authorized sequential review as reduced capability, including authorized scoped edits.",
-    "Unavailable or unauthorized writes allows an authorized read-only proposal report with actual deletion count zero; required edits otherwise block.",
-    "Required investigation needs scoped code, rules and how or why; unavailable evidence remains a skip.",
-    "Unattended/eval encoding requires caller pre-approval. Host behavior has not been tested."
+  "inputs": [
+    "Caller-scoped files or diff, otherwise current diff against the base branch, default main, including working tree.",
+    "Authorization for scoped comment deletions and accepted fixes; separate approval for constraint encodings."
   ],
+  "kind": "skill",
+  "name": "no-comments",
+  "ordinaryExample": "Invoke no-comments on an authorized diff to remove redundant narration while retaining its license header and justified public API contract.",
+  "outputs": [
+    "Scoped comment deletions and accepted root-cause fixes when authorized.",
+    "Report deletion count, restored comments, reruns, architect sketch, fixes, encoding offers, encodings, unenforced constraints and other open work."
+  ],
+  "purpose": "Spawn Comment Sicko, fix accepted findings, and offer encodings for claimed constraints.",
   "sourcePaths": [
-    "skills/no-comments/SKILL.md",
-    "agents/comment-sicko.md"
+    "agents/comment-sicko.md",
+    "skills/no-comments/SKILL.md"
   ],
-  "caseIds": [
-    "legal-header"
+  "triggers": [
+    "Explicit no-comments invocation; disable-model-invocation metadata is retained without assuming host enforcement."
   ]
 }

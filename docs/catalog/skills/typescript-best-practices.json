@@ -1,27 +1,4 @@
 {
-  "name": "typescript-best-practices",
-  "kind": "skill",
-  "purpose": "Apply the canonical concrete TypeScript typing, boundary validation, testing and telemetry practices when reading or editing TypeScript.",
-  "triggers": [
-    "/typescript-best-practices",
-    "Reading or editing any .ts or .tsx file."
-  ],
-  "inputs": [
-    "Provided TypeScript or readable repository files.",
-    "Existing runtime schemas and generated types.",
-    "The type-system-discipline and boundary-discipline principles, and the complete patterns reference."
-  ],
-  "outputs": [
-    "A review or authorized refactor that applies the source rules and preserves total operations and hot-path exceptions.",
-    "Observed check results, or explicit missing capabilities and unperformed checks."
-  ],
-  "ordinaryExample": "Replace a JSON.parse cast and optional-field state bag with schema parsing and a kind-discriminated union; keep number[] for a total sum and strengthen a partial newest-session input.",
-  "dependencies": [
-    "skills/typescript-best-practices/references/patterns.md",
-    "skills/principle-type-system-discipline/SKILL.md",
-    "skills/principle-boundary-discipline/SKILL.md",
-    "references/host-capabilities.md"
-  ],
   "capabilityLimits": [
     "Missing input blocks review; missing principle or patterns reference makes it partial.",
     "Denied or unavailable writes allow an unsaved proposed refactor.",
@@ -29,11 +6,34 @@
     "Preserve paths and disable-model-invocation metadata without assuming host enforcement.",
     "Host behavior has not been tested."
   ],
+  "caseIds": [
+    "typed-boundary"
+  ],
+  "dependencies": [
+    "skills/typescript-best-practices/references/patterns.md",
+    "skills/principle-type-system-discipline/SKILL.md",
+    "skills/principle-boundary-discipline/SKILL.md",
+    "references/host-capabilities.md"
+  ],
+  "inputs": [
+    "Provided TypeScript or readable repository files.",
+    "Existing runtime schemas and generated types.",
+    "The type-system-discipline and boundary-discipline principles, and the complete patterns reference."
+  ],
+  "kind": "skill",
+  "name": "typescript-best-practices",
+  "ordinaryExample": "Replace a JSON.parse cast and optional-field state bag with schema parsing and a kind-discriminated union; keep number[] for a total sum and strengthen a partial newest-session input.",
+  "outputs": [
+    "A review or authorized refactor that applies the source rules and preserves total operations and hot-path exceptions.",
+    "Observed check results, or explicit missing capabilities and unperformed checks."
+  ],
+  "purpose": "Apply the canonical concrete TypeScript typing, boundary validation, testing and telemetry practices when reading or editing TypeScript.",
   "sourcePaths": [
     "skills/typescript-best-practices/SKILL.md",
     "skills/typescript-best-practices/references/patterns.md"
   ],
-  "caseIds": [
-    "typed-boundary"
+  "triggers": [
+    "/typescript-best-practices",
+    "Reading or editing any .ts or .tsx file."
   ]
 }

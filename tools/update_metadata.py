@@ -10,7 +10,7 @@ from tools.baseline_policy import validate_policy
 
 def closure_writes(root, review, decisions, inventory, writes):
     """Bind exact reviewed metadata; validate a projection without executing it."""
-    from tools.sync_upstream import read_json, json_bytes, git_read
+    from tools.sync_upstream import read_json, read_json_bytes, json_bytes, git_read
     from tools.validate_package import validate_package, schema_errors
     from tools.release_report import registry_checks
     from tools.build_catalog import build_catalog
@@ -26,7 +26,7 @@ def closure_writes(root, review, decisions, inventory, writes):
     content = safe_path(review,reference['contentPath']).read_bytes()
     if not reference['contentPath'].startswith('resolved/') or sha256(content) != reference['reviewedSha256']:
         raise ValueError('Reviewed metadata closure digest or path mismatch')
-    bundle = read_json(safe_path(review,reference['contentPath']))
+    bundle = read_json_bytes(content)
     if set(bundle) != {'schemaVersion','kind','inventory','fragmentOwners','files'} or bundle['schemaVersion'] != 1 or bundle['kind'] != 'pstack-package-metadata':
         raise ValueError('Invalid metadata closure contract')
     proposed = bundle['inventory']
@@ -69,7 +69,7 @@ def closure_writes(root, review, decisions, inventory, writes):
     for entry in bundle['files']:
         if set(entry) != {'path','contentPath','sha256'}: raise ValueError('Invalid closure file entry')
         path = entry['path']
-        allowed = path in ('docs/parity/dependencies.json','docs/parity/case-registry.json','docs/parity/remnant-dispositions.json','docs/parity/support-map.md','docs/parity/baseline-policy.json') or re.fullmatch(r'docs/(?:catalog/skills/[a-z0-9-]+\.json|skills/[a-z0-9A-Z-]+\.md|principles/README\.md|parity/cases/(?:[a-z0-9-]+/)*[a-z0-9-]+\.json)',path)
+        allowed = path in ('docs/parity/dependencies.json','docs/parity/case-registry.json','docs/parity/remnant-dispositions.json','docs/parity/support-map.md','docs/parity/baseline-policy.json','docs/site/content.json','docs/workflows/site-feed.json') or re.fullmatch(r'docs/(?:catalog/skills/[a-z0-9-]+\.json|skills/[a-z0-9A-Z-]+\.md|principles/README\.md|parity/cases/(?:[a-z0-9-]+/)*[a-z0-9-]+\.json)',path)
         if not allowed or path.endswith('/schema.json') or path in supplied or path in writes:
             raise ValueError('Unowned or duplicate metadata closure path: '+path)
         supplied.add(path)

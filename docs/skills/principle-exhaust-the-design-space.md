@@ -81,6 +81,6 @@ Current host statuses and release evidence: [current parity inventory](../parity
 
 Destination: [skills/principle-exhaust-the-design-space/SKILL.md](../../skills/principle-exhaust-the-design-space/SKILL.md).
 
-Upstream commit: `4ec7ffa173eaa70d3d9467a627baf0954645a353`. SHA-256: `2de83d99f93f60ec6313455b0bc9aa9f0bfb93dd59f414f403691322db00d4db`.
+Upstream commit: `c742dd61706fbacc1b95f1a20b7b988cf096ce6c`. SHA-256: `2de83d99f93f60ec6313455b0bc9aa9f0bfb93dd59f414f403691322db00d4db`.
 
 Disposition: `runtime`. Aggregate adaptation status: `adapted-reviewed`.

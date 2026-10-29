@@ -49,11 +49,13 @@ If neither measurements nor inspection are available or authorized, state that t
 
 Required observations:
 
+- Before running, record which result would change a decision and the noise floor.
 - Identify the measured work and whether every request completed it.
 - Identify the sample method, run count and spread.
 - Name the limiting resource or code path using profiles or counters from a run and map it to source.
 - Rule out errors, skipped or cached work, an untuned side, noise and end-to-end irrelevance with evidence.
 - Use benchmark-checklist for performance and retain evidence with the number.
+- Withhold conclusions when run-to-run spread exceeds the effect.
 
 Forbidden claims:
 
@@ -83,6 +85,6 @@ Current host statuses and release evidence: [current parity inventory](../parity
 
 Destination: [skills/principle-explain-the-number/SKILL.md](../../skills/principle-explain-the-number/SKILL.md).
 
-Upstream commit: `4ec7ffa173eaa70d3d9467a627baf0954645a353`. SHA-256: `cd5a25f9e7cf023627ccb470dc5faa97542f29b4319496a32b839a8e1e988047`.
+Upstream commit: `c742dd61706fbacc1b95f1a20b7b988cf096ce6c`. SHA-256: `3c84fbf9a7d9842abcfcd134010782b32092ac3d3fb4aaf9ed5732dca83aa58c`.
 
 Disposition: `runtime`. Aggregate adaptation status: `adapted-reviewed`.

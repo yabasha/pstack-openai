@@ -1,23 +1,15 @@
 {
-  "name": "figure-it-out",
-  "kind": "workflow",
-  "purpose": "Design and execute an auditable playbook when no narrower workflow fits, with task-scaled rigor and hypothesis loops.",
-  "triggers": [
-    "/figure-it-out",
-    "figure it out",
-    "A large migration",
-    "No narrower playbook applies"
+  "capabilityLimits": [
+    "Missing inspection or execution leaves results NOT VERIFIED or INCONCLUSIVE",
+    "Unavailable independent workers permit explicitly reduced sequential work",
+    "Unavailable persistence prevents a durable-trail claim",
+    "Missing supporting skills remain explicit dependencies",
+    "Authorization bounds commits, external actions and setup",
+    "Host behavior is not-run; invocation metadata enforcement is not assumed"
   ],
-  "inputs": [
-    "task scope and accessible grounding evidence",
-    "Falsifiable definition of done, authorized scope and available capabilities"
+  "caseIds": [
+    "uncertain-result"
   ],
-  "outputs": [
-    "Designed playbook before code and rigor rationale",
-    "Decision trail recorded as units land",
-    "Verified results against the predicate and open limits"
-  ],
-  "ordinaryExample": "Use /figure-it-out for a large migration, capture the old behavior, verify atomic units and record an inconclusive measurement as an open limit.",
   "dependencies": [
     "references/host-capabilities.md",
     "references/orchestration-contract.md",
@@ -34,18 +26,26 @@
     "skills/principle-sequence-verifiable-units/SKILL.md",
     "skills/principle-encode-lessons-in-structure/SKILL.md"
   ],
-  "capabilityLimits": [
-    "Missing inspection or execution leaves results NOT VERIFIED or INCONCLUSIVE",
-    "Unavailable independent workers permit explicitly reduced sequential work",
-    "Unavailable persistence prevents a durable-trail claim",
-    "Missing supporting skills remain explicit dependencies",
-    "Authorization bounds commits, external actions and setup",
-    "Host behavior is not-run; invocation metadata enforcement is not assumed"
+  "inputs": [
+    "task scope and accessible grounding evidence",
+    "Falsifiable definition of done, authorized scope and available capabilities"
   ],
+  "kind": "workflow",
+  "name": "figure-it-out",
+  "ordinaryExample": "Use /figure-it-out for a large migration, capture the old behavior, verify atomic units and record an inconclusive measurement as an open limit.",
+  "outputs": [
+    "Designed playbook before code and rigor rationale",
+    "Decision trail recorded as units land",
+    "Verified results against the predicate and open limits"
+  ],
+  "purpose": "Design and execute an auditable playbook when no narrower workflow fits, with task-scaled rigor and hypothesis loops.",
   "sourcePaths": [
     "skills/figure-it-out/SKILL.md"
   ],
-  "caseIds": [
-    "uncertain-result"
+  "triggers": [
+    "/figure-it-out",
+    "figure it out",
+    "A large migration",
+    "No narrower playbook applies"
   ]
 }

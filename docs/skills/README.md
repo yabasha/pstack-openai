@@ -1,6 +1,6 @@
 # Skill catalog
 
-Generated from 57 reviewed leaf records, including 24 principles. No additional root skill is registered.
+Generated from 58 reviewed leaf records, including 24 principles. No additional root skill is registered.
 
 Host support depends on capabilities, permissions and observed evidence. Inventory review may remain pending, and a not-run result remains untested.
 
@@ -20,8 +20,9 @@ Source inventory: [docs/parity/inventory.json](../parity/inventory.json). Catalo
 | [figure-it-out](figure-it-out.md) | Design and execute an auditable playbook when no narrower workflow fits, with task-scaled rigor and hypothesis loops. |
 | [how](how.md) | Explain subsystem architecture and runtime flow for a senior engineer using inspected code. |
 | [in-your-own-words](in-your-own-words.md) | Restate the user goals and problem while keeping assumptions explicit. |
-| [interrogate](interrogate.md) | Adversarially review changes through competing reviewers and pragmatic lead judgment without automatically applying changes. |
+| [interrogate](interrogate.md) | Try to break a reviewed change in isolated copies and retain only findings proven by a lead rerun. |
 | [ketchup](ketchup.md) | Catch up on changes in this chat since the previous user message, with checked status and existing evidence. |
+| [ketchup-video](ketchup-video.md) | Retain canonical source lineage for an unrequested workflow. |
 | [maintain-formal-verification-skill](maintain-formal-verification-skill.md) | Keep a property check aligned with covered code and distinguish stale verification from product bugs. |
 | [maintain-verification-skill](maintain-verification-skill.md) | Keep a project verification skill and feature map honest through source review and live coverage of every feature. |
 | [make-bot-ui](make-bot-ui.md) | Build a custom page whose local server wakes a bot routine over a webhook and optionally serves it on Tailscale. |
@@ -57,7 +58,7 @@ Source inventory: [docs/parity/inventory.json](../parity/inventory.json). Catalo
 | [setup-pstack](setup-pstack.md) | Configure pstack model choices per role and reasoning budget with confirmed availability and an explicit persistence gate. |
 | [sharpen](sharpen.md) | Make a prompt deeper without expanding scope, return four expert-framing answers and its rewrite, then stop. |
 | [show-me-your-work](show-me-your-work.md) | Keep a reviewable local decision trail for long-running or unattended work. |
-| [statechart](statechart.md) | Draw user-facing charts and counterexample stories from a TLA+ model, or check an agreed chart. |
+| [statechart](statechart.md) | Check a TLA+ model and draw flat, parent or region statecharts with truthful rule scope. |
 | [swarm](swarm.md) | Fan out N workers over slices, identical race briefs or a mixture, then return one evidenced report. |
 | [tdd](tdd.md) | Make broken behavior executable before fixing a bug with a clear cheap test path, then prove the focused regression test passes. |
 | [teach](teach.md) | Explain what a body of work is, how it works and why it was built that way at the learner pace, grounded in inspected files. |

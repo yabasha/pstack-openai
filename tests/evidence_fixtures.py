@@ -17,7 +17,7 @@ def method_fixture(root, record, kind):
         a = dict(id=f'assignment-{i}', workerId=worker, inputRevision='c'*40,
                  outputOwner=worker, outputPath=output, role=role, status='cancelled' if role == 'cancelled' else 'failed' if role in ('invalid','dropout') else 'completed',
                  startedOrder=10+i if role != 'judge' else 30, completedOrder=20+i if role != 'judge' else 40,
-                 requestedModel='inherit-parent', actualModel='unknown', retryCount=1 if role=='invalid' else 0,
+                 requestedModel='synthetic-judge' if role == 'judge' else 'inherit-parent', actualModel='synthetic-judge' if role == 'judge' else 'unknown', retryCount=1 if role=='invalid' else 0,
                  method=dict(sampleCount=2, sampleDefinition='two fixed synthetic inputs', order='input order'),
                  taskArtifact='result.txt', rubricProvided=role == 'judge')
         a.update(resultRevision=a['inputRevision'],resultMethod=dict(a['method']),outputSha256=__import__('hashlib').sha256(target.read_bytes()).hexdigest())
@@ -32,6 +32,7 @@ def method_fixture(root, record, kind):
                    reviewArtifact='result.txt', reviewedBy='synthetic-reviewer', declaredOrder=1)
     if kind == 'arena':
         receipt.update(candidates=['assignment-0', 'assignment-1'], judge='assignment-2', rubricArtifact='result.txt',
+                       modelFamilyEvidence=dict(parentModel='synthetic-parent', parentFamily='synthetic-family-a', judgeModel='synthetic-judge', judgeFamily='synthetic-family-b', evidence='result.txt'),
                        synthesis=dict(order=50, inspectedCandidates=['assignment-0', 'assignment-1'], artifact='result.txt', verificationArtifact='result.txt'))
     elif not partition_only:
         failures = []

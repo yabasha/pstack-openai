@@ -16,10 +16,10 @@
       "license": "MIT",
       "sourcePath": "LICENSE"
     },
-    "rationale": "Review cumulative canonical change against accepted 0.2.2; retain portable host, model, permission and evidence contracts.",
-    "upstreamCommit": "4ec7ffa173eaa70d3d9467a627baf0954645a353",
+    "rationale": "Reuse the reviewed portable adaptation and incorporate PR986 review/model/workflow semantics plus PR1043 compatibility decisions. Preserve host capability, model, ownership, fallback, persistence and user-authorization contracts. Deferred unrelated behavior remains explicit.",
+    "upstreamCommit": "c742dd61706fbacc1b95f1a20b7b988cf096ce6c",
     "upstreamPath": "skills/setup-pstack/SKILL.md",
-    "upstreamSha256": "b45512f6ca5e96e81681984683b7472bfe892581da3a89a73cca4159438f29ed",
+    "upstreamSha256": "df8ad3638a4dca31fb4b43d58056f0299f23ad0530614166d55ef989062b41ec",
     "verification": {
       "chatgpt": {
         "evidence": [],
