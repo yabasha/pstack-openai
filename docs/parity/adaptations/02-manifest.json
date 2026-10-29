@@ -11,7 +11,7 @@
       "license": "MIT",
       "sourcePath": "LICENSE"
     },
-    "rationale": "Retain package identity and reviewed host metadata. The transaction alone updates candidate version, source manifest, notices and lineage; acceptance remains separate.",
+    "rationale": "Reflect the accepted 0.2.4 source baseline while keeping source acceptance, installed discovery and full workflow qualification separate. Preserve prior candidate history and immutable source evidence; this correction changes acceptance-facing prose only.",
     "upstreamCommit": "c742dd61706fbacc1b95f1a20b7b988cf096ce6c",
     "upstreamPath": ".cursor-plugin/plugin.json",
     "upstreamSha256": "d9e56eed06fc8f8920ff532873a403355d35f2905d2c86d1968ec4da0d1a5191",

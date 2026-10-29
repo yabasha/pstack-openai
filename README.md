@@ -1,8 +1,8 @@
 # pstack-openai
 
-An unofficial port of Lauren Tan's pstack. Candidate 0.2.4 adapts the combined compiler, review and orchestration changes from upstream v0.15.36. Its inventory records 573 source files and 58 canonical roots, including one deferred reference. The runtime package retains 57 skills, 24 principles and 23 playbooks. Read [UPSTREAM.md](UPSTREAM.md), [NOTICE.md](NOTICE.md) and [LICENSE](LICENSE) for lineage and attribution.
+An unofficial port of Lauren Tan's pstack. Version 0.2.4 adapts the combined compiler, review and orchestration changes from upstream v0.15.36. Its inventory records 573 source files and 58 canonical roots, including one deferred reference. The runtime package retains 57 skills, 24 principles and 23 playbooks. Read [UPSTREAM.md](UPSTREAM.md), [NOTICE.md](NOTICE.md) and [LICENSE](LICENSE) for lineage and attribution.
 
-Accepted baseline 0.2.3 remains upstream `4ec7ffa173eaa70d3d9467a627baf0954645a353` as the reviewed source baseline. Candidate source `c742dd61706fbacc1b95f1a20b7b988cf096ce6c` is staged and unaccepted. See [source acceptance and verification limits](docs/releases/0.2.3.md). Installed discovery and workflow support remain separate gates.
+The accepted 0.2.4 source baseline is upstream `c742dd61706fbacc1b95f1a20b7b988cf096ce6c`, official version 0.15.36. The [source acceptance record](docs/releases/0.2.4.md) states the completed checks and remaining verification limits. Source acceptance, installed discovery and full workflow qualification are separate gates.
 
 Upstream adds Claude Code packaging; this port retains its shared portable runtime and records the Claude adapter as a quoted reference only.
 

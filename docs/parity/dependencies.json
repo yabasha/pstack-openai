@@ -1892,7 +1892,7 @@
         "workers-models"
       ],
       "destinationPath": "plugin.json",
-      "destinationSha256": "ba201217aeedc6243207030e790d5b865a6b9eb6ab4b71c62924f9f3ec297eb3",
+      "destinationSha256": "b2f78bd20c270826a8943404d458ad5eb0856e231ca2a5429bb80ee9a0a6861c",
       "kind": "support",
       "packageDependencies": [
         "assets/logo.png"
@@ -1978,7 +1978,7 @@
         "statechart-runtime"
       ],
       "destinationPath": "README.md",
-      "destinationSha256": "6290365a1e0982d243996182d5a6ca11ebfe9d7f87feef4177914ed1298e32f9",
+      "destinationSha256": "827f5417373195d25f4f70527fb791471773c2376d3c8413d21cf1c437ab8d07",
       "kind": "support",
       "packageDependencies": [
         "UPSTREAM.md",

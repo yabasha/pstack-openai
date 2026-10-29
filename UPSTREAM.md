@@ -86,3 +86,7 @@ The user explicitly accepted source `4ec7ffa173eaa70d3d9467a627baf0954645a353` o
 
 Candidate version 0.2.4. Archive SHA-256 4f899c71d737afe7662ff515df0518b193562e4f9ec370ffb2d7d837aaf436ef. Review SHA-256 e3f1da4285004f7f6c189115f0340afa07b501efdfa336ec7e2e39151dc5a1c6.
 The inventory stages this candidate. The accepted baseline above remains historical evidence. Structural checks, helper regression tests, and affected host cases must run before separate acceptance.
+
+## Source acceptance for 0.2.4
+
+The user accepted source `c742dd61706fbacc1b95f1a20b7b988cf096ce6c`, upstream 0.15.36, on 2026-10-29, Asia/Amman. The [strict accepted receipt](docs/parity/upstream-manifests/accepted.json) binds its exact manifest in package ancestor `f64d3acb11c885a60f6adf1de597751d4cb7c09b` and the [immutable source evidence](docs/releases/0.2.4.md). This supersedes the preceding unaccepted-candidate status while preserving its history. Installation and discovery have separate evidence. The 75 dependency-blocked checks, Linux qualification of the new compiler, personal chat plugin loading and full host workflows remain open.

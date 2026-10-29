@@ -1055,7 +1055,7 @@
     "path": "UPSTREAM.md",
     "rationale": "Reviewed provenance link to the canonical source or reference-only host adapter; this documentation does not grant execution capability.",
     "reviewed": true,
-    "sha256": "f0e6ba2c9a449395e5a1f47cfc6d6762c9727fb8f71aefabe615f96543dfec91",
+    "sha256": "b342fd4f8902a07d09487ef418da581f9c24480845d041ad846d09f9cba9a0ec",
     "startLine": 23,
     "token": ".cursor-plugin/plugin.json"
   },
