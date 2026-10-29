@@ -101,3 +101,5 @@ bun --no-install -e 'const r=Bun.spawnSync(["python3","-B","-m","tools.sync_upst
 ```
 
 Review the prerequisite and complete projected diff, validate the projection, then obtain approval of the reported exact resolution digest and implementation worktree before formal apply. Preview never authorizes apply, setup, baseline acceptance, integration, installation or refresh. Apply rejects any resolution change between approval validation and plan construction.
+
+A version 2 reviewed resolution may declare reviewedMode as 100644 or 100755 for a retained file, and null only for deletion. The digest binds that permission mode as well as the content. Retain-adaptation preserves the original mode. Preview and apply share the same mode interpretation and preview verifies byte and mode readback. Without an explicit mode, existing permissions are preserved and new files default to 0644. Review new executable helpers explicitly; otherwise replay fixtures and command launchers may fail before reaching their intended phase. Apply failure recovery restores the prior bytes and permissions.

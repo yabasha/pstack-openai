@@ -358,6 +358,7 @@ APPLY_RESOLUTION_SCHEMA = {'$schema': 'https://json-schema.org/draft/2020-12/sch
 
 # Optional for inventory-only development fixtures, mandatory for full packages.
 APPLY_RESOLUTION_SCHEMA['properties']['entries']['items']['properties']['referenceDestinationPath'] = PATH_SCHEMA
+APPLY_RESOLUTION_SCHEMA['properties']['entries']['items']['properties']['reviewedMode'] = {'enum': ['100644', '100755', None]}
 APPLY_RESOLUTION_SCHEMA['properties']['packageMetadata'] = object_schema({'contentPath': PATH_SCHEMA, 'reviewedSha256': HASH_SCHEMA})
 
 
@@ -551,6 +552,12 @@ def review_plan(review, resolutions, worktree, *, owner):
                 raise ValueError('New source needs an explicit addition disposition')
         if old_hash is None and target.exists():
             raise ValueError('New source cannot overwrite a destination-only file')
+        if 'reviewedMode' in decision:
+            mode = decision['reviewedMode']
+            if deleting and mode is not None or not deleting and mode is None:
+                raise ValueError('Reviewed mode must match reviewed presence or deletion')
+            if action == 'retain-adaptation' and (not target.exists() or int(mode, 8) & 0o777 != target.stat().st_mode & 0o777):
+                raise ValueError('Retention must preserve existing permission mode')
         if not generated:
             writes[destination] = data
         affected.update([path, *change['dependentCallers']])
@@ -609,6 +616,14 @@ def review_plan(review, resolutions, worktree, *, owner):
     return writes, state
 
 
+def planned_modes(root, writes, state):
+    """Explicit reviewed modes override preservation; new files otherwise use 0644."""
+    explicit = {entry.get('referenceDestinationPath', entry['destinationPath']): int(entry['reviewedMode'], 8) & 0o777
+        for entry in state['resolutions']['entries'] if entry.get('reviewedMode') is not None}
+    return {path: explicit.get(path, (safe_path(root, path).stat().st_mode & 0o777) if safe_path(root, path).exists() else 0o644)
+        for path, data in writes.items() if data is not None}
+
+
 def preview_review(review, resolutions, worktree, *, owner, output):
     """Materialize an isolated review projection. Never write the implementation tree."""
     import shutil
@@ -622,6 +637,7 @@ def preview_review(review, resolutions, worktree, *, owner, output):
     if any((p / '.git').exists() for p in destination.parents):
         raise ValueError('Preview output must be outside existing repositories')
     writes, state = review_plan(review, resolutions, root, owner=owner)
+    modes = planned_modes(root, writes, state)
     projection = destination / 'package'
     state_path = f"docs/parity/upstream-manifests/{state['candidate']}.apply.json"
     manifest = []
@@ -638,7 +654,7 @@ def preview_review(review, resolutions, worktree, *, owner, output):
             target.parent.mkdir(parents=True, exist_ok=True)
             shutil.copy2(source, target)
         for path, data in writes.items():
-            manifest.append(dict(path=path, sha256=sha256(data) if data is not None else None))
+            manifest.append(dict(path=path, sha256=sha256(data) if data is not None else None, mode=f'100{modes[path]:03o}' if data is not None else None))
             if path == state_path:
                 continue
             target = safe_path(projection, path)
@@ -647,7 +663,8 @@ def preview_review(review, resolutions, worktree, *, owner, output):
             else:
                 target.parent.mkdir(parents=True, exist_ok=True)
                 target.write_bytes(data)
-                if sha256(target.read_bytes()) != sha256(data):
+                target.chmod(modes[path])
+                if sha256(target.read_bytes()) != sha256(data) or target.stat().st_mode & 0o777 != modes[path]:
                     raise ValueError('Preview readback mismatch: ' + path)
         plan = dict(schemaVersion=1, kind='pstack-update-preview', applied=False,
             packageCommit=state['packageCommit'], candidate=state['candidate'],
@@ -673,6 +690,7 @@ def apply_review(review, resolutions, worktree, *, owner, approval, failure_hook
     writes, state = review_plan(review, resolutions, root, owner=owner)
     if state['resolutionsSha256'] != approval:
         raise ValueError('Resolution bytes changed after approval validation')
+    reviewed_modes = planned_modes(root, writes, state)
     backup, modes, created_dirs = {}, {}, []
     for path in writes:
         target = adapted_path(root, path)
@@ -700,6 +718,7 @@ def apply_review(review, resolutions, worktree, *, owner, approval, failure_hook
                     target.unlink()
             else:
                 target.write_bytes(data)
+                target.chmod(reviewed_modes[path])
     except BaseException:
         for path, data in backup.items():
             target = adapted_path(root, path)

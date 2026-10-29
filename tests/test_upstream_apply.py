@@ -381,3 +381,33 @@ class UpstreamApplyTests(unittest.TestCase):
             self.preview(output)
         self.assertEqual((output / 'sentinel.txt').read_text(), 'belongs to another invocation')
         self.assertEqual(before, self.snapshot())
+
+    def test_reviewed_executable_mode_matches_preview_and_apply(self):
+        entry = next(e for e in self.resolutions['entries'] if e['path'] == 'skills/new/SKILL.md')
+        entry['reviewedMode'] = '100755'
+        self.save_resolutions()
+        output = self.preview_output()
+        before = self.snapshot()
+        plan = self.preview(output)
+        self.assertEqual(before, self.snapshot())
+        path = entry['destinationPath']
+        self.assertEqual((output / 'package' / path).stat().st_mode & 0o777, 0o755)
+        self.assertEqual(next(w for w in plan['writes'] if w['path'] == path)['mode'], '100755')
+        self.apply()
+        self.assertEqual((self.root / path).stat().st_mode & 0o777, 0o755)
+
+    def test_reviewed_mode_rejects_unsafe_values_and_preserves_failure_modes(self):
+        entry = self.resolutions['entries'][0]
+        before = self.snapshot()
+        for mode in ('100777', None):
+            entry['reviewedMode'] = mode
+            self.save_resolutions()
+            with self.assertRaises(ValueError): self.preview(self.preview_output())
+            self.assertEqual(before, self.snapshot())
+        entry['reviewedMode'] = '100755'
+        self.save_resolutions()
+        modes = {p: p.stat().st_mode & 0o777 for p in self.root.rglob('*') if p.is_file() and '.upstream' not in p.parts and p.name != '.git'}
+        def fail(stage): raise RuntimeError('synthetic failure after mode change')
+        with self.assertRaises(RuntimeError): self.apply(failure_hook=fail)
+        self.assertEqual(before, self.snapshot())
+        self.assertTrue(all(p.stat().st_mode & 0o777 == mode for p, mode in modes.items()))
