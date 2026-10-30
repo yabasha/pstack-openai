@@ -8,7 +8,7 @@ Upstream adds Claude Code packaging; this port retains its shared portable runti
 
 It also makes `/sharpen` return four framing answers and a rewritten prompt without executing its task. It adds create-formal-verification-skill and maintain-formal-verification-skill, including bounded claims, safe mutation trials and explicit testing fallbacks. Source validation and installed discovery are tracked separately from full workflow behavior. The [0.2.2 source validation record](docs/releases/0.2.2.md) identifies the reviewed snapshot, checks and remaining host limits. Earlier release records retain their historical scope. See [compatibility](docs/compatibility.md) before relying on a workflow.
 
-[Website and examples](https://pstack-openai.abloommink3.chatgpt.site) · [Get started](docs/guide/01-setup.md) · [Choose a skill](docs/skills/README.md) · [Compatibility](docs/compatibility.md) · [Documentation](docs/guide/README.md)
+[Website and examples](https://pstack-openai.yabasha.chatgpt.site) · [Get started](docs/guide/01-setup.md) · [Choose a skill](docs/skills/README.md) · [Compatibility](docs/compatibility.md) · [Documentation](docs/guide/README.md)
 
 - [Personal ChatGPT setup and blocked route](docs/setup/chatgpt.md).
 - [Codex setup and unverified documented route](docs/setup/codex.md).
@@ -338,6 +338,6 @@ Principle in practice: Outcome-oriented execution: the release decision follows 
 
 Completion check: The user can review the release evidence and make a concrete publication decision.
 
-The [website workflow section](https://pstack-openai.abloommink3.chatgpt.site/#workflows) uses the same [workflow source](docs/workflows/examples.json). Changes pushed to `main` automatically regenerate this README and the site feed through [GitHub Actions](.github/workflows/sync-workflows.yml). The site loads that feed on page load and checks every five minutes while open. It keeps its published snapshot if the feed is unavailable. For local edits, run `bun tools/render_workflow_examples.mjs`; use `bun tools/render_workflow_examples.mjs --check` to detect drift. See [automatic sync](docs/workflows/automatic-sync.md) for scope and recovery.
+The [website workflow section](https://pstack-openai.yabasha.chatgpt.site/#workflows) uses the same [workflow source](docs/workflows/examples.json). Changes pushed to `main` automatically regenerate this README and the site feed through [GitHub Actions](.github/workflows/sync-workflows.yml). The site loads that feed on page load and checks every five minutes while open. It keeps its published snapshot if the feed is unavailable. For local edits, run `bun tools/render_workflow_examples.mjs`; use `bun tools/render_workflow_examples.mjs --check` to detect drift. See [automatic sync](docs/workflows/automatic-sync.md) for scope and recovery.
 
 <!-- workflow-examples:end -->

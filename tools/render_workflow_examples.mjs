@@ -28,7 +28,7 @@ for (const level of levels) {
   }
 }
 if (ids.size !== workflows.length) throw new Error('Every workflow must have a supported difficulty level.');
-lines.push('The [website workflow section](https://pstack-openai.abloommink3.chatgpt.site/#workflows) uses the same [workflow source](docs/workflows/examples.json). Changes pushed to `main` automatically regenerate this README and the site feed through [GitHub Actions](.github/workflows/sync-workflows.yml). The site loads that feed on page load and checks every five minutes while open. It keeps its published snapshot if the feed is unavailable. For local edits, run `bun tools/render_workflow_examples.mjs`; use `bun tools/render_workflow_examples.mjs --check` to detect drift. See [automatic sync](docs/workflows/automatic-sync.md) for scope and recovery.', '', end);
+lines.push('The [website workflow section](https://pstack-openai.yabasha.chatgpt.site/#workflows) uses the same [workflow source](docs/workflows/examples.json). Changes pushed to `main` automatically regenerate this README and the site feed through [GitHub Actions](.github/workflows/sync-workflows.yml). The site loads that feed on page load and checks every five minutes while open. It keeps its published snapshot if the feed is unavailable. For local edits, run `bun tools/render_workflow_examples.mjs`; use `bun tools/render_workflow_examples.mjs --check` to detect drift. See [automatic sync](docs/workflows/automatic-sync.md) for scope and recovery.', '', end);
 const block = lines.join('\n');
 const path = resolve(root, 'README.md');
 const current = readFileSync(path, 'utf8');

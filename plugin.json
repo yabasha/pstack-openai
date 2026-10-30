@@ -18,11 +18,11 @@
         "displayName": "pstack-openai",
         "logo": "./assets/logo.png",
         "longDescription": "pstack-openai is an unofficial, skills-only port of Lauren Tan's pstack, maintained and published by yabasha. It packages 57 skills, including 24 engineering principles, and 23 task playbooks for planning, implementation, code review, explanation, and verification. Use poteto-mode to route a task, poteto-help to choose a workflow, how and why to inspect code and decisions, or unslop to improve prose. Arena and Swarm require host support for independent workers. Model selection, history, persistence, and integrations depend on exposed host capabilities and user authorization. Some workflows have reduced or blocked results; see the bundled compatibility documentation. The plugin bundles no MCP server or app connection. Original skills and principles are credited to Lauren Tan under the MIT License.",
-        "privacyPolicyURL": "https://pstack-openai.abloommink3.chatgpt.site/privacy/",
+        "privacyPolicyURL": "https://pstack-openai.yabasha.chatgpt.site/privacy/",
         "shortDescription": "Engineering skills and reviews",
-        "supportURL": "https://pstack-openai.abloommink3.chatgpt.site/support/",
-        "termsOfServiceURL": "https://pstack-openai.abloommink3.chatgpt.site/terms/",
-        "websiteURL": "https://pstack-openai.abloommink3.chatgpt.site"
+        "supportURL": "https://pstack-openai.yabasha.chatgpt.site/support/",
+        "termsOfServiceURL": "https://pstack-openai.yabasha.chatgpt.site/terms/",
+        "websiteURL": "https://pstack-openai.yabasha.chatgpt.site"
       },
       "publication": {
         "countries": [],
@@ -33,7 +33,7 @@
       }
     }
   },
-  "homepage": "https://pstack-openai.abloommink3.chatgpt.site",
+  "homepage": "https://pstack-openai.yabasha.chatgpt.site",
   "license": "MIT",
   "name": "pstack-openai",
   "repository": "https://github.com/yabasha/pstack-openai",
